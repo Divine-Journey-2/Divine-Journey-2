@@ -1,0 +1,6 @@
+
+{
+  "Name": "bewitchment.toad",
+  "Registry ID": "bewitchment:toad",
+  "Class": "com.bewitchment.common.entity.living.EntityToad"
+}

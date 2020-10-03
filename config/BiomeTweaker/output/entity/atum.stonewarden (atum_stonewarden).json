@@ -1,0 +1,6 @@
+
+{
+  "Name": "atum.stonewarden",
+  "Registry ID": "atum:stonewarden",
+  "Class": "com.teammetallurgy.atum.entity.stone.EntityStonewarden"
+}

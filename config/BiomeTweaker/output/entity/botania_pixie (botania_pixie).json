@@ -1,0 +1,6 @@
+
+{
+  "Name": "botania:pixie",
+  "Registry ID": "botania:pixie",
+  "Class": "vazkii.botania.common.entity.EntityPixie"
+}

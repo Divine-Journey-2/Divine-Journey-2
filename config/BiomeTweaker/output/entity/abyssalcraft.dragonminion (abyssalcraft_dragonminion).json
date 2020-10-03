@@ -1,0 +1,6 @@
+
+{
+  "Name": "abyssalcraft.dragonminion",
+  "Registry ID": "abyssalcraft:dragonminion",
+  "Class": "com.shinoow.abyssalcraft.common.entity.EntityDragonMinion"
+}

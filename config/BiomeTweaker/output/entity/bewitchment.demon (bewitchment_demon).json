@@ -1,0 +1,6 @@
+
+{
+  "Name": "bewitchment.demon",
+  "Registry ID": "bewitchment:demon",
+  "Class": "com.bewitchment.common.entity.spirit.demon.EntityDemon"
+}
