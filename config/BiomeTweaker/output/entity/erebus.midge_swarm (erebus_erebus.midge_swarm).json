@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.midge_swarm",
+  "Registry ID": "erebus:erebus.midge_swarm",
+  "Class": "erebus.entity.EntityMidgeSwarm"
+}

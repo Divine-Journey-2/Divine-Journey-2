@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.zelus",
+  "Registry ID": "divinerpg:zelus",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityZelus"
+}

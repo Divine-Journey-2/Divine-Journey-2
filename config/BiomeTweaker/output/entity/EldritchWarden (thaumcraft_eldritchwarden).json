@@ -1,0 +1,6 @@
+
+{
+  "Name": "EldritchWarden",
+  "Registry ID": "thaumcraft:eldritchwarden",
+  "Class": "thaumcraft.common.entities.monster.boss.EntityEldritchWarden"
+}

@@ -1,0 +1,10 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "pillar",
+	"layer": "SOLID",
+        "textures": [
+            "contenttweaker:blocks/skythern_pillar-ctm"
+        ]
+    }
+}

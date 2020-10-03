@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.roamer",
+  "Registry ID": "divinerpg:roamer",
+  "Class": "divinerpg.objects.entities.entity.arcana.EntityRoamer"
+}

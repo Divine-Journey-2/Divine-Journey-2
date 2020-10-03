@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.bed_bug",
+  "Registry ID": "erebus:erebus.bed_bug",
+  "Class": "erebus.entity.EntityBedBug"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "entity_frog",
+  "Registry ID": "mysticalworld:entity_frog",
+  "Class": "epicsquid.mysticalworld.entity.EntityFrog"
+}

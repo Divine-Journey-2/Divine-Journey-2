@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.wildwood_golem",
+  "Registry ID": "divinerpg:wildwood_golem",
+  "Class": "divinerpg.objects.entities.entity.wildwood.EntityWildwoodGolem"
+}

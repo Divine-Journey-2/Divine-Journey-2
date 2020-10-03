@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.the_hunger",
+  "Registry ID": "divinerpg:the_hunger",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityTheHunger"
+}

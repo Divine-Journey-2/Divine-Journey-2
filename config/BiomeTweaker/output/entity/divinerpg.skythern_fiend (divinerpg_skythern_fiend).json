@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.skythern_fiend",
+  "Registry ID": "divinerpg:skythern_fiend",
+  "Class": "divinerpg.objects.entities.entity.skythern.EntitySkythernFiend"
+}

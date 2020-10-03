@@ -1,0 +1,6 @@
+
+{
+  "Name": "ebwizardry:zombie_minion",
+  "Registry ID": "ebwizardry:zombie_minion",
+  "Class": "electroblob.wizardry.entity.living.EntityZombieMinion"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.fly",
+  "Registry ID": "erebus:erebus.fly",
+  "Class": "erebus.entity.EntityFly"
+}

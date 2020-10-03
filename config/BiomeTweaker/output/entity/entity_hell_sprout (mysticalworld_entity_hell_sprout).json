@@ -1,0 +1,6 @@
+
+{
+  "Name": "entity_hell_sprout",
+  "Registry ID": "mysticalworld:entity_hell_sprout",
+  "Class": "epicsquid.mysticalworld.entity.EntityHellSprout"
+}

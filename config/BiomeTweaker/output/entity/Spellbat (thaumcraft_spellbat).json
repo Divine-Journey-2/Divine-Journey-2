@@ -1,0 +1,6 @@
+
+{
+  "Name": "Spellbat",
+  "Registry ID": "thaumcraft:spellbat",
+  "Class": "thaumcraft.common.entities.monster.EntitySpellBat"
+}

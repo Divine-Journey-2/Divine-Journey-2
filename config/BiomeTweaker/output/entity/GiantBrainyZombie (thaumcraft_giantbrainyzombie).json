@@ -1,0 +1,6 @@
+
+{
+  "Name": "GiantBrainyZombie",
+  "Registry ID": "thaumcraft:giantbrainyzombie",
+  "Class": "thaumcraft.common.entities.monster.EntityGiantBrainyZombie"
+}

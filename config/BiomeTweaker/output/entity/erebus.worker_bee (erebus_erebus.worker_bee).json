@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.worker_bee",
+  "Registry ID": "erebus:erebus.worker_bee",
+  "Class": "erebus.entity.EntityWorkerBee"
+}

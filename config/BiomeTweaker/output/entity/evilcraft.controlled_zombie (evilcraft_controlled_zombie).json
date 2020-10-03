@@ -1,0 +1,6 @@
+
+{
+  "Name": "evilcraft.controlled_zombie",
+  "Registry ID": "evilcraft:controlled_zombie",
+  "Class": "org.cyclops.evilcraft.entity.monster.ControlledZombie"
+}

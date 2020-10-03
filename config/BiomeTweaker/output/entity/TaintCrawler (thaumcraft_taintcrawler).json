@@ -1,0 +1,6 @@
+
+{
+  "Name": "TaintCrawler",
+  "Registry ID": "thaumcraft:taintcrawler",
+  "Class": "thaumcraft.common.entities.monster.tainted.EntityTaintCrawler"
+}

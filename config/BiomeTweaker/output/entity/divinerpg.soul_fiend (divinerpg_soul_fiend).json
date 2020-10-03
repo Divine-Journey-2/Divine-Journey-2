@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.soul_fiend",
+  "Registry ID": "divinerpg:soul_fiend",
+  "Class": "divinerpg.objects.entities.entity.boss.EntitySoulFiend"
+}

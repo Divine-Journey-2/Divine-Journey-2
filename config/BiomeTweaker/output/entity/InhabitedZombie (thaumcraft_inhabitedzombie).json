@@ -1,0 +1,6 @@
+
+{
+  "Name": "InhabitedZombie",
+  "Registry ID": "thaumcraft:inhabitedzombie",
+  "Class": "thaumcraft.common.entities.monster.EntityInhabitedZombie"
+}

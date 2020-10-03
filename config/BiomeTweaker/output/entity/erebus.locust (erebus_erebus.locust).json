@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.locust",
+  "Registry ID": "erebus:erebus.locust",
+  "Class": "erebus.entity.EntityLocust"
+}

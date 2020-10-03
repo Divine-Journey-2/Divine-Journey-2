@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.wildfire",
+  "Registry ID": "divinerpg:wildfire",
+  "Class": "divinerpg.objects.entities.entity.nether.EntityWildfire"
+}

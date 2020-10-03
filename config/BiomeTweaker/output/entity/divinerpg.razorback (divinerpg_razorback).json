@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.razorback",
+  "Registry ID": "divinerpg:razorback",
+  "Class": "divinerpg.objects.entities.entity.arcana.EntityRazorback"
+}

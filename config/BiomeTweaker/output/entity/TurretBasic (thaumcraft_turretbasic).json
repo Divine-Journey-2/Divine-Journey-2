@@ -1,0 +1,6 @@
+
+{
+  "Name": "TurretBasic",
+  "Registry ID": "thaumcraft:turretbasic",
+  "Class": "thaumcraft.common.entities.construct.EntityTurretCrossbow"
+}

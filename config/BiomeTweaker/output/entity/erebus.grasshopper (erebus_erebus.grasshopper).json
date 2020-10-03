@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.grasshopper",
+  "Registry ID": "erebus:erebus.grasshopper",
+  "Class": "erebus.entity.EntityGrasshopper"
+}
