@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.eternal_archer",
+  "Registry ID": "divinerpg:eternal_archer",
+  "Class": "divinerpg.objects.entities.entity.boss.EntityEternalArcher"
+}

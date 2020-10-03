@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.apalachia_golem",
+  "Registry ID": "divinerpg:apalachia_golem",
+  "Class": "divinerpg.objects.entities.entity.apalachia.EntityApalachiaGolem"
+}

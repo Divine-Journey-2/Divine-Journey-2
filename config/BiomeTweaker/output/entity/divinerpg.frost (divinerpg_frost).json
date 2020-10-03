@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.frost",
+  "Registry ID": "divinerpg:frost",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityFrost"
+}

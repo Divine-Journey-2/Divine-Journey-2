@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.death_hound",
+  "Registry ID": "divinerpg:death_hound",
+  "Class": "divinerpg.objects.entities.entity.arcana.EntityDeathHound"
+}

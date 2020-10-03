@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.hell_pig",
+  "Registry ID": "divinerpg:hell_pig",
+  "Class": "divinerpg.objects.entities.entity.nether.EntityHellPig"
+}
