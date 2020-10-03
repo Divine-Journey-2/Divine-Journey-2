@@ -1,0 +1,7 @@
+{
+	"parent": "item/handheld",
+	"textures": {"layer0": "item/titanium_dust"},
+	"overrides": [
+		{"predicate": {"damage":0.62},"model":"item/titanium_dust"}
+	]
+}

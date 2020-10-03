@@ -1,0 +1,32 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "bedrock"
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 56
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "AE2 Atum Underground Meteor",
+    "description": [
+      ""
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "bedrock"
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 5
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 47,
+                "weight": 1.0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Underground Placer",
+    "description": [
+      ""
+    ]
+  }
+}
