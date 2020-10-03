@@ -1,0 +1,38 @@
+# Use this file to tell Mekanism which blocks should not be picked up by a cardboard box.
+# Proper syntax is "NAME META". Example (for stone):
+# minecraft:stone 0
+contenttweaker:eden_stone 0
+contenttweaker:eden_bricks 0
+contenttweaker:eden_pillar 0
+contenttweaker:eden_floor 0
+contenttweaker:eden_roof 0
+contenttweaker:eden_glass 0
+contenttweaker:eden_door 0
+contenttweaker:wildwood_stone 0
+contenttweaker:wildwood_bricks 0
+contenttweaker:wildwood_pillar 0
+contenttweaker:wildwood_floor 0
+contenttweaker:wildwood_roof 0
+contenttweaker:wildwood_glass 0
+contenttweaker:wildwood_door 0
+contenttweaker:apalachia_stone 0
+contenttweaker:apalachia_bricks 0
+contenttweaker:apalachia_pillar 0
+contenttweaker:apalachia_floor 0
+contenttweaker:apalachia_roof 0
+contenttweaker:apalachia_glass 0
+contenttweaker:apalachia_door 0
+contenttweaker:skythern_stone 0
+contenttweaker:skythern_bricks 0
+contenttweaker:skythern_pillar 0
+contenttweaker:skythern_floor 0
+contenttweaker:skythern_roof 0
+contenttweaker:skythern_glass 0
+contenttweaker:skythern_door 0
+contenttweaker:mortum_stone 0
+contenttweaker:mortum_bricks 0
+contenttweaker:mortum_pillar 0
+contenttweaker:mortum_floor 0
+contenttweaker:mortum_roof 0
+contenttweaker:mortum_glass 0
+contenttweaker:mortum_door 0

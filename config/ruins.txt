@@ -1,0 +1,214 @@
+# Global Options for the Ruins mod
+#
+# tries_per_chunk is the number of times, per chunk, that the generator will
+#     attempt to create a ruin.
+#
+# chance_to_spawn is the chance, out of 100, that a ruin will be generated per
+#     try in this chunk.  This may still fail if the ruin does not have a
+#     suitable place to generate.
+#
+# specific_<biome name> is the chance, out of 100, that a ruin spawning in the
+#     specified biome will be chosen from the biome specific folder.  If not,
+#     it will choose a generic ruin from the folder of the same name.
+#
+tries_per_chunk_normal=6
+chance_to_spawn_normal=10
+tries_per_chunk_nether=6
+chance_to_spawn_nether=10
+#
+# prevent a message from being logged every time a ruin is built
+disableRuinSpawnCoordsLogging=true
+#
+# minimum distance a template must have from instances of itself
+templateInstancesMinDistance=256
+#
+# minimum distance a template must have from any other template
+anyRuinsMinDistance=64
+#
+# min/max distances overworld templates can have from world spawn (0 = no limit)
+anySpawnMinDistance=32
+anySpawnMaxDistance=0
+#
+# allow displaying a block's data by hitting it with a stick
+enableStick=true
+#
+# dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
+allowedDimensions=0,-1,7
+#
+# make /parseruin rule IDs line up nicely in template files
+# note: overworld (i.e., dimension 0) setting applies to all dimensions
+enableFixedWidthRuleIds=false
+#
+# tileentity blocks, those (nonvanilla)blocks which cannot function without storing their nbt data, full name as stick dictates, seperated by commata
+teblocks=
+
+specific_fungi_forest=75
+specific_frozen_ocean=75
+specific_enchanted_forest=75
+specific_mutated_mesa=75
+specific_deadwood_forest=75
+specific_runebush_grove=75
+specific_badlands=75
+specific_twilight_clearing=75
+specific_darklands_mountains=75
+specific_mushroom_forest=75
+specific_void=75
+specific_autumnal_wooded_hills=75
+specific_extreme_hills_with_trees=75
+specific_limestone_mountains=75
+specific_desert_hills=75
+specific_beaches=75
+specific_mutated_mesa_clear_rock=75
+specific_twilight_highlands=75
+specific_hilly_fungi_forest=75
+specific_jungle_hills=75
+specific_mushroom_island_shore=75
+specific_sand_hills=75
+specific_frozen_river=75
+specific_outer space=75
+specific_obscured_plateau=75
+specific_mutated_extreme_hills=75
+specific_deep_ocean=75
+specific_wizardry_torikkisea=75
+specific_dark_realm=75
+specific_eerie=75
+specific_ulterior_outback=75
+specific_mutated_savanna_rock=75
+specific_birch_forested_hills=75
+specific_river=75
+specific_mutated_redwood_taiga=75
+specific_cold_beach=75
+specific_iceika=75
+specific_deceitful_bog=75
+specific_ice_mountains=75
+specific_mutated_forest=75
+specific_limestone_crags=75
+specific_vigilant_forest=75
+specific_mutated_extreme_hills_with_trees=75
+specific_mutated_roofed_forest=75
+specific_sky=75
+specific_purified_dreadlands=75
+specific_eden=75
+specific_darklands=75
+specific_wildwood=75
+specific_mushroom_island=75
+specific_mutated_swampland=75
+specific_abyssal_wastelands=75
+specific_plains=75
+specific_mutated_savanna=75
+specific_mutated_redwood_taiga_hills=75
+specific_thornlands=75
+specific_birch_forest_hills=75
+specific_mutated_desert=75
+specific_mesa=75
+specific_dried_river=75
+specific_dead_oasis=75
+specific_ice_flats=75
+specific_darklands_hills=75
+specific_glacier=75
+specific_arksiane=75
+specific_phantasmal_valley=75
+specific_jungle=75
+specific_eldritch=75
+specific_desert_shrubland=75
+specific_ocean=75
+specific_forested_hills=75
+specific_night_plains=75
+specific_sand_plains=75
+specific_taiga_cold=75
+specific_dark_forest=75
+specific_oak_savannah=75
+specific_red_desert=75
+specific_storage_biome=75
+specific_underground_jungle=75
+specific_hilly_vigilant_forest=75
+specific_mutated_ice_flats=75
+specific_elysian_fields=75
+specific_dreadlands=75
+specific_snowy_coniferous_forest=75
+specific_dreadlands_mountains=75
+specific_outer space 2=75
+specific_temperate_rainforest=75
+specific_woodlands=75
+specific_outer space 1=75
+specific_redwood_taiga_hills=75
+specific_taiga=75
+specific_taiga_hills=75
+specific_darklands_plains=75
+specific_jungle_edge=75
+specific_savanna=75
+specific_redwood_taiga=75
+specific_coralium_infested_swamp=75
+specific_error_biome=75
+specific_mesa_clear_rock=75
+specific_savanna_rock=75
+specific_twilight_lake=75
+specific_fire_swamp=75
+specific_wizardry_torikki=75
+specific_submerged_swamp=75
+specific_mountainous_desert=75
+specific_forest=75
+specific_lush_hills=75
+specific_mortum=75
+specific_autumnal_woods=75
+specific_extreme_hills=75
+specific_purged=75
+specific_rocky_plains=75
+specific_twilight_stream=75
+specific_smaller_extreme_hills=75
+specific_volcanic_desert=75
+specific_mini_jungle=75
+specific_twilight_forest=75
+specific_rocky_plateau=75
+specific_biome_degraded=75
+specific_magical_forest=75
+specific_desert=75
+specific_hell=75
+specific_stone_beach=75
+specific_dreadlands_forest=75
+specific_skythern=75
+specific_obscured_peaks=75
+specific_warped_fields=75
+specific_green_swamp=75
+specific_twilight_swamp=75
+specific_sand_dunes=75
+specific_darklands_forest=75
+specific_thicket=75
+specific_omothol=75
+specific_subterranean_savannah=75
+specific_roofed_forest=75
+specific_mesa_rock=75
+specific_wizardry_underworld=75
+specific_firefly_forest=75
+specific_highlands_center=75
+specific_arcana=75
+specific_deep_mushroom_forest=75
+specific_spooky_forest=75
+specific_mutated_jungle=75
+specific_fungal_forest=75
+specific_arid_highland=75
+specific_dense_twilight_forest=75
+specific_mutated_birch_forest_hills=75
+specific_meadow=75
+specific_apalachia=75
+specific_cliffs=75
+specific_forest_hills=75
+specific_glacier_spikes=75
+specific_mutated_mesa_rock=75
+specific_taiga_cold_hills=75
+specific_mutated_taiga_cold=75
+specific_crystal_spires=75
+specific_mutated_jungle_edge=75
+specific_dark_forest_center=75
+specific_petrified_forest=75
+specific_birch_forest=75
+specific_swampland=75
+specific_mutated_plains=75
+specific_snowy_forest=75
+specific_black_ridge=75
+specific_aether_highlands=75
+specific_oasis=75
+specific_fields_sub_forest=75
+specific_twilight_glacier=75
+specific_mutated_taiga=75
+specific_mutated_birch_forest=75
