@@ -1,0 +1,6 @@
+
+{
+  "Name": "corrupted_zombie",
+  "Registry ID": "bloodmagic:corrupted_zombie",
+  "Class": "WayofTime.bloodmagic.entity.mob.EntityCorruptedZombie"
+}

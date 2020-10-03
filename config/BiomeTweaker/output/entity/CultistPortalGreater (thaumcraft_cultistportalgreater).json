@@ -1,0 +1,6 @@
+
+{
+  "Name": "CultistPortalGreater",
+  "Registry ID": "thaumcraft:cultistportalgreater",
+  "Class": "thaumcraft.common.entities.monster.boss.EntityCultistPortalGreater"
+}

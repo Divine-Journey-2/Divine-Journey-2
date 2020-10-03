@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.jack_o_man",
+  "Registry ID": "divinerpg:jack_o_man",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityJackOMan"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "creeper_boss",
+  "Registry ID": "galacticraftplanets:creeper_boss",
+  "Class": "micdoodle8.mods.galacticraft.planets.mars.entities.EntityCreeperBoss"
+}

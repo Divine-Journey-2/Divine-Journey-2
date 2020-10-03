@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.leorna",
+  "Registry ID": "divinerpg:leorna",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityLeorna"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.arid_warrior",
+  "Registry ID": "divinerpg:arid_warrior",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityAridWarrior"
+}
