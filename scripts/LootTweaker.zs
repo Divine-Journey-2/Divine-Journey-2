@@ -148,7 +148,21 @@ for table_name in vanilla_eb_wizardry_injected_tables {
 }
 
 # Astral Sorcery Constellation Papers
-remove_entry("astralsorcery/chest_shrine", "astralsorcery:chest_shrine", "astralsorcery:itemconstellationpaper");
+remove_entry("astralsorcery:chest_shrine", "astralsorcery:chest_shrine", "astralsorcery:itemconstellationpaper");
 
+# Orange Heart from bosses
+val bosses = ["minecraft:entities/ender_dragon", "abyssalcraft:entities/asorah", "abyssalcraft:entities/chagaroth", "abyssalcraft:entities/jzahar",
+				"abyssalcraft:entities/sacthoth", "bewitchment:entities/leonard", "botania:gaia_guardian", "botania:gaia_guardian_2",
+				"divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers", 
+				"totemic:entities/baykok", "twilightforest:entities/giant_miner", "twilightforest:entities/hydra", "twilightforest:entities/lich",
+				"twilightforest:entities/minoshroom", "twilightforest:entities/naga", "twilightforest:entities/snow_queen",
+				"twilightforest:entities/yeti_alpha", "twilightforest:structures/darktower_boss/darktower_boss"] as string[];
+for boss in bosses {
+	add_entry(boss, "heart", <bhc:orange_heart>, 1, 1, 0, 0, 100);
+}
+
+# Electroblob's mobs
+remove_entry("ebwizardry:entities/mob_additions", "wizardry", "ebwizardry:spell_book");
+clear_pool("ebwizardry:subsets/wizard_armour", "armour");
 
 print("ENDING LootTweaker.zs");

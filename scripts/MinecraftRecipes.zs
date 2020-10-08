@@ -193,5 +193,6 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 
 # Additional Wither Skeleton Skull recipe
 recipes.addShaped(<minecraft:skull:1>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:skull>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
+recipes.removeShapeless(<minecraft:skull:1> * 3, [<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]);
 
 print("ENDING MinecraftRecipes.zs");

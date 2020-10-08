@@ -10,9 +10,10 @@ recipes.remove(<quantumflux:magnet>);
 recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<enderio:block_alloy_endergy:6>],[<enderio:item_alloy_ingot>,<actuallyadditions:item_suction_ring>,<enderio:item_alloy_ingot>],[<quantumflux:craftingpiece:2>,<enderio:block_alloy>,<quantumflux:craftingpiece:2>]]);
 recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<enderio:block_alloy_endergy:6>],[<enderio:item_alloy_ingot>,<actuallyadditions:magnet_ring_bauble>,<enderio:item_alloy_ingot>],[<quantumflux:craftingpiece:2>,<enderio:block_alloy>,<quantumflux:craftingpiece:2>]]);
 
-# Ender Shard
+# Ender Crystal
 recipes.remove(<quantumflux:craftingpiece:3>);
 recipes.addShapedMirrored(<quantumflux:craftingpiece:3>, [[null,<thermalfoundation:material:295>,<thermalfoundation:material:295>],[<thermalfoundation:material:167>,<thermalfoundation:material:295>,null],[<thermalfoundation:material:167>,null,null]]);
+mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <quantumflux:craftingpiece:3>);
 
 # Amplification Crystal
 recipes.remove(<quantumflux:craftingpiece:2>);
