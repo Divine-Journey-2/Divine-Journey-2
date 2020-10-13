@@ -294,30 +294,13 @@
 					"name": "emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"cluster-size": 4
 			},
-			"cluster-count": {
-				"min": 3,
-				"max": 6
-			},
-			"min-height": 4,
-			"max-height": 28,
+			"cluster-count": 1,
+			"min-height": 0,
+			"max-height": 32,
 			"retrogen": false,
-			"biome": {
-				"restriction": "whitelist",
-				"value": [
-					{
-						"type": "id",
-						"entry": [
-							"extreme_hills",
-							"smaller_extreme_hills",
-							"extreme_hills_with_trees",
-							"mutated_extreme_hills",
-							"mutated_extreme_hills_with_trees"
-						]
-					}
-				]
-			},
+			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [
@@ -375,6 +358,29 @@
 				"cluster-size": 14
 			},
 			"cluster-count": 16,
+			"min-height": 10,
+			"max-height": 118,
+			"retrogen": false,
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "NETHER"
+					}
+				]
+			},
+			"dimension": "all"
+		},
+
+		"glowstone": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "glowstone",
+				"material": "minecraft:netherrack",
+				"cluster-size": 40
+			},
+			"cluster-count": 18,
 			"min-height": 10,
 			"max-height": 118,
 			"retrogen": false,
