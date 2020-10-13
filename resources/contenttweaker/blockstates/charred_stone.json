@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/charred_stone",
+      "all": "contenttweaker:blocks/charred_stone",
       "particle": "contenttweaker:blocks/charred_stone"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

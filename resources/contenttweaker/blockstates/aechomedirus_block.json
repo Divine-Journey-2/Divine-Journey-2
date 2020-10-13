@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/aechomedirus_block",
+      "all": "contenttweaker:blocks/aechomedirus_block",
       "particle": "contenttweaker:blocks/aechomedirus_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

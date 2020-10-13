@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/mixed_mushroom_compound_block",
+      "all": "contenttweaker:blocks/mixed_mushroom_compound_block",
       "particle": "contenttweaker:blocks/mixed_mushroom_compound_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

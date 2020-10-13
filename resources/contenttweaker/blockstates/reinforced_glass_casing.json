@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/reinforced_glass_casing",
+      "all": "contenttweaker:blocks/reinforced_glass_casing",
       "particle": "contenttweaker:blocks/reinforced_glass_casing"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

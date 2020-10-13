@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/wildwood_roof",
+      "all": "contenttweaker:blocks/wildwood_roof",
       "particle": "contenttweaker:blocks/wildwood_roof"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

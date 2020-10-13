@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/eden_glass",
+      "all": "contenttweaker:blocks/eden_glass",
       "particle": "contenttweaker:blocks/eden_glass"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },
