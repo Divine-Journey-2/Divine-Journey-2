@@ -71,7 +71,7 @@ recipes.remove(<simplyjetpacks:metaitem:4>);
 recipes.addShaped(<simplyjetpacks:metaitem:4>, [[<contenttweaker:industrial_leather>,<thermalfoundation:material:290>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<thermalfoundation:material:354>,<contenttweaker:industrial_leather>]]);
 
 # Leadstone Flux Pack
-recipes.remove(<simplyjetpacks:itemfluxpack:7>);
+recipes.removeShaped(<simplyjetpacks:itemfluxpack:7>, [[null,<*>,null],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade1", <simplyjetpacks:itemfluxpack:7>, [[<thermalfoundation:material:161>,<thermalfoundation:material:323>,<thermalfoundation:material:161>],[<thermalfoundation:material:323>,<thermalexpansion:cell>.withTag({Recv: 1000, Level: 0 as byte, Send: 1000}).marked("cell"),<thermalfoundation:material:323>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	if(ins.cell.tag has "Energy") {
@@ -86,7 +86,7 @@ function(out,ins,cInfo) {
 }, null);
 
 # Hardened Flux Pack
-recipes.remove(<simplyjetpacks:itemfluxpack:8>);
+recipes.removeShaped(<simplyjetpacks:itemfluxpack:8>, [[null,<*>,null],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:354>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:354>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 12000000) {
