@@ -28,7 +28,7 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:23>, [[<thermalfoundation:storage
 
 # Fluxed Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:24>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:24>, [[<thermalfoundation:storage_alloy:5>,<simplyjetpacks:metaitemmods:16>,<thermalfoundation:storage_alloy:5>],[<simplyjetpacks:metaitemmods:19>,<simplyjetpacks:metaitemmods:16>,<simplyjetpacks:metaitemmods:19>],[<simplyjetpacks:metaitemmods:29>,<enderio:block_alloy:3>,<simplyjetpacks:metaitemmods:29>]]);
+recipes.addShaped(<simplyjetpacks:metaitemmods:24>, [[<thermalfoundation:storage_alloy:5>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:storage_alloy:5>],[<simplyjetpacks:metaitemmods:28>,<simplyjetpacks:metaitemmods:30>,<simplyjetpacks:metaitemmods:28>],[<simplyjetpacks:metaitemmods:23>,<enderio:block_alloy:3>,<simplyjetpacks:metaitemmods:23>]]);
 
 # Conductive Iron Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:7>);
@@ -48,7 +48,7 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:10>, [[<enderio:block_alloy:2>,<e
 
 # Dark Soularium Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:11>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:11>, [[<simplyjetpacks:metaitemmods:3>,<simplyjetpacks:metaitemmods:6>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_capacitor_melodic>,<enderio:item_material:54>,<enderio:item_capacitor_melodic>],[<simplyjetpacks:metaitemmods:10>,<enderio:block_alloy:3>,<simplyjetpacks:metaitemmods:10>]]);
+recipes.addShaped(<simplyjetpacks:metaitemmods:11>, [[<simplyjetpacks:metaitemmods:12>,<simplyjetpacks:metaitemmods:15>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_capacitor_melodic>,<enderio:item_material:54>,<enderio:item_capacitor_melodic>],[<simplyjetpacks:metaitemmods:10>,<enderio:block_alloy:3>,<simplyjetpacks:metaitemmods:10>]]);
 
 # Iron Armor Plating
 recipes.remove(<simplyjetpacks:metaitemmods:16>);
@@ -85,9 +85,9 @@ function(out,ins,cInfo) {
 	}
 }, null);
 
-# Reinforced Flux Pack
-recipes.removeShaped(<simplyjetpacks:itemfluxpack:8>, [[null,<*>,null],[<thermalfoundation:material:161>,<*>,<thermalfoundation:material:161>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:353>,<simplyjetpacks:itemfluxpack:6>.marked("pack"),<thermalfoundation:material:353>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+# Hardened Flux Pack
+recipes.remove(<simplyjetpacks:itemfluxpack:8>);
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:354>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:354>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 12000000) {
 		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
@@ -96,14 +96,25 @@ function(out,ins,cInfo) {
 	}
 }, null);
 
-# Resonant Flux Pack
-recipes.removeShaped(<simplyjetpacks:itemfluxpack:9>, [[null,<*>,null],[<thermalfoundation:material:167>,<*>,<thermalfoundation:material:167>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade3", <simplyjetpacks:itemfluxpack:9>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:359>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:359>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+# Reinforced Flux Pack
+recipes.removeShaped(<simplyjetpacks:itemfluxpack:9>, [[null,<*>,null],[<thermalfoundation:material:161>,<*>,<thermalfoundation:material:161>],[<*>,<*>,<*>]]);
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade3", <simplyjetpacks:itemfluxpack:9>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:353>,<simplyjetpacks:itemfluxpack:8>.marked("pack"),<thermalfoundation:material:353>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 40000000) {
 		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
 	} else {
 		return out.withTag({Energy: 40000000});
+	}
+}, null);
+
+# Resonant Flux Pack
+recipes.removeShaped(<simplyjetpacks:itemfluxpack:10>, [[null,<*>,null],[<thermalfoundation:material:167>,<*>,<thermalfoundation:material:167>],[<*>,<*>,<*>]]);
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade4", <simplyjetpacks:itemfluxpack:10>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:359>,<simplyjetpacks:itemfluxpack:9>.marked("pack"),<thermalfoundation:material:359>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+function(out,ins,cInfo) {
+	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 80000000) {
+		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
+	} else {
+		return out.withTag({Energy: 80000000});
 	}
 }, null);
 

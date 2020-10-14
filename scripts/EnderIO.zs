@@ -672,6 +672,6 @@ recipes.addShaped(<enderio:item_coord_selector>, [[<enderio:item_alloy_ingot>,<e
 
 # Powered Spawner
 recipes.remove(<enderio:block_powered_spawner>);
-recipes.addShaped(<enderio:block_powered_spawner>, [[<enderio:block_alloy:7>,<enderio:item_material:18>,<enderio:block_alloy:7>],[<simplyjetpacks:metaitemmods:30>,<rftools:spawner>,<simplyjetpacks:metaitemmods:30>],[<simplyjetpacks:metaitemmods:11>,<enderio:block_franken_zombie_generator>,<simplyjetpacks:metaitemmods:11>]]);
+recipes.addShaped(<enderio:block_powered_spawner>, [[<enderio:block_alloy:7>,<enderio:item_material:18>,<enderio:block_alloy:7>],[<simplyjetpacks:metaitemmods:24>,<rftools:spawner>,<simplyjetpacks:metaitemmods:24>],[<simplyjetpacks:metaitemmods:11>,<enderio:block_franken_zombie_generator>,<simplyjetpacks:metaitemmods:11>]]);
 
 print("ENDING EnderIO.zs");
