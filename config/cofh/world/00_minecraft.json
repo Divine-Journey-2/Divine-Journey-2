@@ -378,7 +378,7 @@
 			"generator": {
 				"block": "glowstone",
 				"material": "minecraft:netherrack",
-				"cluster-size": 40
+				"cluster-size": 32
 			},
 			"cluster-count": 18,
 			"min-height": 10,
