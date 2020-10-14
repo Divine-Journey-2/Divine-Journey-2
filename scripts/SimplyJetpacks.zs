@@ -118,6 +118,10 @@ function(out,ins,cInfo) {
 	}
 }, null);
 
+# Flight Control Unit
+recipes.remove(<simplyjetpacks:metaitemmods:14>);
+recipes.addShaped(<simplyjetpacks:metaitemmods:14>, [[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_ingot>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_alloy_ingot>,<thermalfoundation:glass_alloy:7>,<enderio:item_alloy_ingot>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_ingot>,<simplyjetpacks:metaitemmods:12>]]);
+
 # Fluxed Armor Plating
 recipes.remove(<simplyjetpacks:metaitemmods:26>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:26>, [[<contenttweaker:fluxed_electrum_ingot>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_ingot>],[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:flux_crystal>,<contenttweaker:fluxed_electrum_plate>],[<contenttweaker:fluxed_electrum_ingot>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_ingot>]]);

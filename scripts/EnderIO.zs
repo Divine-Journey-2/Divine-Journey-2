@@ -10,6 +10,7 @@ import mods.enderio.SoulBinder;
 import mods.tconstruct.Casting;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
+import mods.thermalexpansion.Compactor;
 
 print("STARTING EnderIO.zs");
 
@@ -187,6 +188,7 @@ recipes.addShaped(<enderio:item_material:13>, [[null,<enderio:item_alloy_ingot:2
 # Dark Bimetal Gear
 recipes.remove(<enderio:item_material:73>);
 recipes.addShaped(<enderio:item_material:73>, [[null,<enderio:item_alloy_ingot:6>,null],[<enderio:item_alloy_ingot:6>,<enderio:item_material:11>,<enderio:item_alloy_ingot:6>],[null,<enderio:item_alloy_ingot:6>,null]]);
+mods.thermalexpansion.Compactor.removeGearRecipe(<evilcraft:dark_gem> * 4);
 
 # Simple Powered Furnace
 recipes.remove(<enderio:block_simple_furnace>);
@@ -595,7 +597,7 @@ recipes.addShaped(<enderio:item_capacitor_crystalline>, [[null,<enderio:item_all
 
 # Melodic Capacitor
 recipes.remove(<enderio:item_capacitor_melodic>);
-recipes.addShaped(<enderio:item_capacitor_melodic>, [[null,<enderio:item_alloy_endergy_ingot:2>,null],[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:2>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_capacitor_crystalline>,null,<enderio:item_capacitor_crystalline>]]);
+recipes.addShaped(<enderio:item_capacitor_melodic>, [[null,<enderio:item_alloy_endergy_ingot:2>,null],[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:2>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_capacitor_crystalline>,null,<enderio:item_capacitor_crystalline>]]);
 
 # Stellar Capacitor
 recipes.remove(<enderio:item_capacitor_stellar>);
@@ -607,11 +609,11 @@ recipes.addShaped(<enderio:block_wireless_charger>, [[<enderio:block_alloy:6>,<e
 
 # Travel Anchor
 recipes.remove(<enderio:block_travel_anchor>);
-recipes.addShaped(<enderio:block_travel_anchor>, [[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_material:44>,<enderio:item_alloy_endergy_ingot:1>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:3>]]);
+recipes.addShaped(<enderio:block_travel_anchor>, [[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_material:44>,<enderio:item_alloy_endergy_ingot:1>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:12>]]);
 
 # Infinity Rod
 recipes.remove(<enderio:item_material:71>);
-recipes.addShaped(<enderio:item_material:71>, [[null,<simplyjetpacks:metaitemmods:3>,<enderio:item_material:20>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_material:20>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_material:20>,<simplyjetpacks:metaitemmods:3>,null]]);
+recipes.addShaped(<enderio:item_material:71>, [[null,<simplyjetpacks:metaitemmods:12>,<enderio:item_material:20>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_material:20>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_material:20>,<simplyjetpacks:metaitemmods:12>,null]]);
 
 # Staff of Travelling
 recipes.remove(<enderio:item_travel_staff>);
@@ -623,7 +625,7 @@ recipes.addShaped(<enderio:block_tele_pad>, [[<enderio:item_alloy_endergy_ingot:
 
 # Dimensional Tranciever
 recipes.remove(<enderio:block_transceiver>);
-recipes.addShaped(<enderio:block_transceiver>, [[<simplyjetpacks:metaitemmods:3>,<enderio:item_material:44>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_material:18>,<actuallyadditions:block_misc:8>,<enderio:item_material:18>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_capacitor_melodic>,<simplyjetpacks:metaitemmods:3>]]);
+recipes.addShaped(<enderio:block_transceiver>, [[<simplyjetpacks:metaitemmods:12>,<enderio:item_material:44>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_material:18>,<actuallyadditions:block_misc:8>,<enderio:item_material:18>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_capacitor_melodic>,<simplyjetpacks:metaitemmods:12>]]);
 
 # Dialing Device
 recipes.remove(<enderio:block_dialing_device>);

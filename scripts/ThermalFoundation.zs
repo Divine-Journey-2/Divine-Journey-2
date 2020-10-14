@@ -49,7 +49,7 @@ recipes.addShaped(<thermalfoundation:upgrade>, [[null,<thermalfoundation:materia
 
 # Reinforced Upgrade Kit
 recipes.remove(<thermalfoundation:upgrade:1>);
-recipes.addShaped(<thermalfoundation:upgrade:1>, [[<ore:blockGlassHardened>,<thermalfoundation:material:289>,<ore:blockGlassHardened>],[<thermalfoundation:material:289>,<thermalfoundation:material:258>,<thermalfoundation:material:289>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
+recipes.addShaped(<thermalfoundation:upgrade:1>, [[<thermalfoundation:glass:3>,<thermalfoundation:material:289>,<thermalfoundation:glass:3>],[<thermalfoundation:material:289>,<thermalfoundation:material:258>,<thermalfoundation:material:289>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
 
 # Signalum Upgrade Kit
 recipes.remove(<thermalfoundation:upgrade:2>);
@@ -90,5 +90,13 @@ recipes.addShapeless(<thermalfoundation:material:1028>, [<contenttweaker:rf_powd
 # Mithril Ingot
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:1028>, null, 200, 512, [<contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>]);
 mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalfoundation:material:1028>, <contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>], 24000);
+
+# Regular Hardened Glass recipes should only require regular Hardened Glass, otherwise it's impossible to figure out which one you need from JEI
+val processedHardenedGlass = [<enderio:block_fused_quartz:*>, <thermalfoundation:glass>, <thermalfoundation:glass:1>, <thermalfoundation:glass:2>,
+							<thermalfoundation:glass:4>, <thermalfoundation:glass:5>, <thermalfoundation:glass:6>, <thermalfoundation:glass:7>,
+							<thermalfoundation:glass:8>, <thermalfoundation:glass_alloy>, <thermalfoundation:glass_alloy:*>] as IItemStack[];
+
+<ore:blockGlassHardened>.removeItems(processedHardenedGlass);
+recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 
 print("ENDING ThermalFoundation.zs");

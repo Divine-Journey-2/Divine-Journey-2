@@ -14,7 +14,7 @@ recipes.addShaped(<thermaldynamics:duct_0:1> * 3, [[<ore:ingotInvar>,<minecraft:
 
 # Redstone Energy Fluxduct (Empty)
 recipes.remove(<thermaldynamics:duct_0:6>);
-recipes.addShaped(<thermaldynamics:duct_0:6> * 3, [[<ore:ingotElectrum>,<ore:blockGlassHardened>,<ore:ingotElectrum>],[<thermaldynamics:duct_0:1>,<thermaldynamics:duct_0:1>,<thermaldynamics:duct_0:1>],[<ore:ingotElectrum>,<ore:blockGlassHardened>,<ore:ingotElectrum>]]);
+recipes.addShaped(<thermaldynamics:duct_0:6> * 3, [[<ore:ingotElectrum>,<thermalfoundation:glass:3>,<ore:ingotElectrum>],[<thermaldynamics:duct_0:1>,<thermaldynamics:duct_0:1>,<thermaldynamics:duct_0:1>],[<ore:ingotElectrum>,<thermalfoundation:glass:3>,<ore:ingotElectrum>]]);
 
 # Redstone Energy Fluxduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_0:6>, <liquid:redstone>);
@@ -72,12 +72,12 @@ recipes.addShapeless(<thermaldynamics:duct_16:5> * 6, [<thermaldynamics:duct_16:
 
 # Super-Laminar Fluiduct
 recipes.remove(<thermaldynamics:duct_16:6>);
-recipes.addShaped(<thermaldynamics:duct_16:6>, [[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>],[<ore:blockGlassHardened>,<thermaldynamics:duct_16:2>,<ore:blockGlassHardened>],[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>]]);
+recipes.addShaped(<thermaldynamics:duct_16:6>, [[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>],[<thermalfoundation:glass:3>,<thermaldynamics:duct_16:2>,<thermalfoundation:glass:3>],[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>]]);
 recipes.addShapeless(<thermaldynamics:duct_16:6> * 6, [<thermaldynamics:duct_16:7>,<thermaldynamics:duct_16:7>,<thermaldynamics:duct_16:7>,<thermaldynamics:duct_16:7>,<thermaldynamics:duct_16:7>,<thermaldynamics:duct_16:7>,<ore:blockGlassColorless>,<ore:blockGlassColorless>]);
 
 # Super-Laminar Fluiduct (Opaque)
 recipes.remove(<thermaldynamics:duct_16:7>);
-recipes.addShaped(<thermaldynamics:duct_16:7>, [[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>],[<ore:blockGlassHardened>,<thermaldynamics:duct_16:3>,<ore:blockGlassHardened>],[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>]]);
+recipes.addShaped(<thermaldynamics:duct_16:7>, [[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>],[<thermalfoundation:glass:3>,<thermaldynamics:duct_16:3>,<thermalfoundation:glass:3>],[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>]]);
 recipes.addShapeless(<thermaldynamics:duct_16:7> * 6, [<thermaldynamics:duct_16:6>,<thermaldynamics:duct_16:6>,<thermaldynamics:duct_16:6>,<thermaldynamics:duct_16:6>,<thermaldynamics:duct_16:6>,<thermaldynamics:duct_16:6>,<thermalfoundation:material:323>,<thermalfoundation:material:323>]);
 
 # Itemduct
@@ -178,7 +178,7 @@ recipes.addShaped(<thermaldynamics:duct_48> * 6, [[<thermalfoundation:material:3
 
 # Viaduct (Untreated)
 recipes.remove(<thermaldynamics:duct_64:3>);
-recipes.addShaped(<thermaldynamics:duct_64:3> * 4, [[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>],[<ore:blockGlassHardened>,<contenttweaker:rf_powder>,<ore:blockGlassHardened>],[<thermalfoundation:material:355>,<ore:blockGlassHardened>,<thermalfoundation:material:355>]]);
+recipes.addShaped(<thermaldynamics:duct_64:3> * 4, [[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>],[<thermalfoundation:glass:3>,<contenttweaker:rf_powder>,<thermalfoundation:glass:3>],[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>]]);
 
 # Viaduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_64:3>, <liquid:aerotheum>);
@@ -186,7 +186,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_64>, <therm
 
 # Long Range Viaduct
 recipes.remove(<thermaldynamics:duct_64:1>);
-recipes.addShaped(<thermaldynamics:duct_64:1> * 4, [[<thermalfoundation:material:323>,<ore:blockGlassHardened>,<thermalfoundation:material:323>],[<ore:blockGlassHardened>,<contenttweaker:rf_powder>,<ore:blockGlassHardened>],[<thermalfoundation:material:323>,<ore:blockGlassHardened>,<thermalfoundation:material:323>]]);
+recipes.addShaped(<thermaldynamics:duct_64:1> * 4, [[<thermalfoundation:material:323>,<thermalfoundation:glass:3>,<thermalfoundation:material:323>],[<thermalfoundation:glass:3>,<contenttweaker:rf_powder>,<thermalfoundation:glass:3>],[<thermalfoundation:material:323>,<thermalfoundation:glass:3>,<thermalfoundation:material:323>]]);
 
 # Long Range Linking Viaduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_64>, <liquid:ender>);

@@ -195,4 +195,8 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 recipes.addShaped(<minecraft:skull:1>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:skull>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
 recipes.removeShapeless(<minecraft:skull:1> * 3, [<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]);
 
+# Hay Bale can no longer be converted into Wheat
+recipes.removeShaped(<minecraft:wheat> * 9, [[<minecraft:hay_block>]]);
+<minecraft:hay_block>.addTooltip(format.red(format.bold("Cannot be converted back into Wheat.")));
+
 print("ENDING MinecraftRecipes.zs");
