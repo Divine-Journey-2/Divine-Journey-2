@@ -92,11 +92,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>,
 mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalfoundation:material:1028>, <contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>], 24000);
 
 # Regular Hardened Glass recipes should only require regular Hardened Glass, otherwise it's impossible to figure out which one you need from JEI
-val processedHardenedGlass = [<enderio:block_fused_quartz:*>, <thermalfoundation:glass>, <thermalfoundation:glass:1>, <thermalfoundation:glass:2>,
-							<thermalfoundation:glass:4>, <thermalfoundation:glass:5>, <thermalfoundation:glass:6>, <thermalfoundation:glass:7>,
-							<thermalfoundation:glass:8>, <thermalfoundation:glass_alloy>, <thermalfoundation:glass_alloy:*>] as IItemStack[];
-
-<ore:blockGlassHardened>.removeItems(processedHardenedGlass);
+<ore:blockGlassHardened>.removeItems([<enderio:block_fused_quartz:*>, <thermalfoundation:glass:*>, <thermalfoundation:glass_alloy:*>]);
+<ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 
 print("ENDING ThermalFoundation.zs");

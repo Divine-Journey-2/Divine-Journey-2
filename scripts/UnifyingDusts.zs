@@ -402,5 +402,6 @@ furnace.remove(<minecraft:bread>, <roots:flour>);
 # Electrum Dust
 <ore:dustElectrum>.remove(<immersiveengineering:metal:16>);
 recipes.remove(<immersiveengineering:metal:16>);
+furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>);
 
 print("ENDING UnifyingDusts.zs");

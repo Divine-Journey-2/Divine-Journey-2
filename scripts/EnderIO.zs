@@ -180,15 +180,18 @@ mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:11>);
 # Energized Bimetal Gear
 recipes.remove(<enderio:item_material:12>);
 recipes.addShaped(<enderio:item_material:12>, [[null,<enderio:item_alloy_ingot:1>,null],[<enderio:item_alloy_ingot:1>,<enderio:item_material:11>,<enderio:item_alloy_ingot:1>],[null,<enderio:item_alloy_ingot:1>,null]]);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:12>);
 
 # Vibrant Bimetal Gear
 recipes.remove(<enderio:item_material:13>);
 recipes.addShaped(<enderio:item_material:13>, [[null,<enderio:item_alloy_ingot:2>,null],[<enderio:item_alloy_ingot:2>,<enderio:item_material:12>,<enderio:item_alloy_ingot:2>],[null,<enderio:item_alloy_ingot:2>,null]]);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:13>);
 
 # Dark Bimetal Gear
 recipes.remove(<enderio:item_material:73>);
 recipes.addShaped(<enderio:item_material:73>, [[null,<enderio:item_alloy_ingot:6>,null],[<enderio:item_alloy_ingot:6>,<enderio:item_material:11>,<enderio:item_alloy_ingot:6>],[null,<enderio:item_alloy_ingot:6>,null]]);
 mods.thermalexpansion.Compactor.removeGearRecipe(<evilcraft:dark_gem> * 4);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:73>);
 
 # Simple Powered Furnace
 recipes.remove(<enderio:block_simple_furnace>);
@@ -337,7 +340,7 @@ recipes.addShaped(<enderio:item_material:53>, [[<enderio:item_alloy_ingot:7>,<en
 
 # Endervoir
 recipes.remove(<enderio:block_reservoir>);
-recipes.addShaped(<enderio:block_reservoir> * 4, [[<ore:blockGlassHardened>,<ore:blockGlassHardened>,<ore:blockGlassHardened>],[<ore:blockGlassHardened>,<roots:unending_bowl>,<ore:blockGlassHardened>],[<ore:blockGlassHardened>,<ore:blockGlassHardened>,<ore:blockGlassHardened>]]);
+recipes.addShaped(<enderio:block_reservoir> * 4, [[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<roots:unending_bowl>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>]]);
 
 # Slice'n'Splice
 recipes.remove(<enderio:block_slice_and_splice>);
