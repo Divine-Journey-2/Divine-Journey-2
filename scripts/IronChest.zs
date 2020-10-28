@@ -101,33 +101,33 @@ for i in 0 to 16 {
 	}, null);
 	
 	# Copper Shulker Box
-	recipes.remove(shulker_box_names[i].withDamage(3));
-	recipes.addShaped("ironchest_copper_shulker_box_" + num_strings[i], shulker_box_names[i].withDamage(3), [[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>],[<thermalfoundation:material:320>,shulker_box_names[i].marked("box"),<thermalfoundation:material:320>],[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>]],
+	recipes.remove(iron_shulker_box_names[i].withDamage(3));
+	recipes.addShaped("ironchest_copper_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(3), [[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>],[<thermalfoundation:material:320>,shulker_box_names[i].marked("box"),<thermalfoundation:material:320>],[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 45);
 	}, null);
 	
 	# Silver Shulker Box
-	recipes.remove(shulker_box_names[i].withDamage(4));
-	recipes.addShaped("ironchest_silver_shulker_box_" + num_strings[i], shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]],
+	recipes.remove(iron_shulker_box_names[i].withDamage(4));
+	recipes.addShaped("ironchest_silver_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 72);
 	}, null);
-	recipes.addShaped("ironchest_silver_shulker_box_from_copper_" + num_strings[i], shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,iron_shulker_box_names[i].withDamage(3).marked("box"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]],
+	recipes.addShaped("ironchest_silver_shulker_box_from_copper_" + num_strings[i], iron_shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,iron_shulker_box_names[i].withDamage(3).marked("box"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 72);
 	}, null);
 	
 	# Obsidian Shulker Box
-	recipes.remove(shulker_box_names[i].withDamage(6));
-	recipes.addShaped("ironchest_obsidian_shulker_box_" + num_strings[i], shulker_box_names[i].withDamage(6), [[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,iron_shulker_box_names[i].withDamage(2).marked("box"),<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]],
+	recipes.remove(iron_shulker_box_names[i].withDamage(6));
+	recipes.addShaped("ironchest_obsidian_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(6), [[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,iron_shulker_box_names[i].withDamage(2).marked("box"),<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
 	}, null);
 	
 	# Crystal Shulker Box
-	recipes.remove(shulker_box_names[i].withDamage(5));
-	recipes.addShaped("ironchest_crystal_shulker_box_" + num_strings[i], shulker_box_names[i].withDamage(5), [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<ore:blockGlass>,iron_shulker_box_names[i].withDamage(2).marked("box"),<ore:blockGlass>],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>]],
+	recipes.remove(iron_shulker_box_names[i].withDamage(5));
+	recipes.addShaped("ironchest_crystal_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(5), [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<ore:blockGlass>,iron_shulker_box_names[i].withDamage(2).marked("box"),<ore:blockGlass>],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
 	}, null);
