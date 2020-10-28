@@ -57,5 +57,8 @@ val gravel_tooltip2 = "2 of them together in a horizontal line." as string;
 
 # UB Stone to materialStoneTool OreDict
 <ore:materialStoneTool>.addAll(<ore:stone>);
+<ore:materialStoneTool>.addAll(<ore:stoneIgneous>);
+<ore:materialStoneTool>.addAll(<ore:stoneMetamorphic>);
+<ore:materialStoneTool>.addAll(<ore:stoneSedimentary>);
 
 print("ENDING UndergroundBiomes.zs");
