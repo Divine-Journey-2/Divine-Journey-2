@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "SPOOKY",
     "DENSE",
-    "BIRCH_TREES",
     "FOREST",
+    "BIRCH_TREES",
     "THEMED_TREES"
   ],
   "BiomeManager Entries": {
@@ -193,12 +193,6 @@
     {
       "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityEvilWizard",
-      "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

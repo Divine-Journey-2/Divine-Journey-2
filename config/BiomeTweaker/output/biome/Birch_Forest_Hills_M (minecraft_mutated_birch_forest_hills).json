@@ -20,11 +20,11 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DENSE",
-    "SUPER_BIRCH_TREES",
-    "FOREST",
-    "RARE",
     "MOUNTAIN",
+    "SUPER_BIRCH_TREES",
+    "DENSE",
+    "RARE",
+    "FOREST",
     "THEMED_TREES"
   ],
   "BiomeManager Entries": {},
@@ -196,12 +196,6 @@
     {
       "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityEvilWizard",
-      "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

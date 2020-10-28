@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": true,
   "Dictionary Types": [
+    "MOUNTAIN",
+    "COLD",
     "CONIFEROUS",
-    "FOREST",
     "RARE",
     "SNOWY",
-    "COLD",
-    "MOUNTAIN"
+    "FOREST"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -220,12 +220,6 @@
     {
       "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityEvilWizard",
-      "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 1
     },
