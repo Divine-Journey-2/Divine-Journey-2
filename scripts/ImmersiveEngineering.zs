@@ -369,4 +369,8 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 140, <mys
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <natura:overworld_seeds>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 20, <natura:overworld_seeds:1>, 6400);
 
+# Conveyor fix
+recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);
+<immersiveengineering:conveyor>.addShiftTooltip(format.darkGray(format.italic("If you obtained a broken/bugged Conveyor, put you can craft it into a regular one.")));
+
 print("ENDING ImmersiveEngineering.zs");

@@ -1,5 +1,7 @@
 # Author: Atricos
 
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
 import mods.enderio.AlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 
@@ -70,6 +72,19 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:29>, [[<thermalfoundation:materia
 recipes.remove(<simplyjetpacks:metaitem:4>);
 recipes.addShaped(<simplyjetpacks:metaitem:4>, [[<contenttweaker:industrial_leather>,<thermalfoundation:material:290>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<thermalfoundation:material:354>,<contenttweaker:industrial_leather>]]);
 
+# Flux Pack upgrade function
+function simplyjetpacks_upgrade_fluxpack(input_cell_tag as IData, input_pack_tag as IData, out as IItemStack, energy_value as int) as IItemStack {
+	if(input_cell_tag has "Energy") {
+		if(input_cell_tag.Energy + input_pack_tag.Energy < energy_value) {
+			return out.withTag({Energy: input_cell_tag.Energy + input_pack_tag.Energy});
+		} else {
+			return out.withTag({Energy: energy_value});
+		}
+	} else {
+		return out.withTag({Energy: 0});
+	}
+}
+
 # Leadstone Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:7>, [[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade1", <simplyjetpacks:itemfluxpack:7>, [[<thermalfoundation:material:161>,<thermalfoundation:material:323>,<thermalfoundation:material:161>],[<thermalfoundation:material:323>,<thermalexpansion:cell>.withTag({Recv: 1000, Level: 0 as byte, Send: 1000}).marked("cell"),<thermalfoundation:material:323>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
@@ -89,33 +104,21 @@ function(out,ins,cInfo) {
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:8>, [[null,<*>,null],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:354>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:354>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
-	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 12000000) {
-		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
-	} else {
-		return out.withTag({Energy: 12000000});
-	}
+	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 12000000);
 }, null);
 
 # Reinforced Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:9>, [[null,<*>,null],[<thermalfoundation:material:161>,<*>,<thermalfoundation:material:161>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade3", <simplyjetpacks:itemfluxpack:9>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:353>,<simplyjetpacks:itemfluxpack:8>.marked("pack"),<thermalfoundation:material:353>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
-	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 40000000) {
-		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
-	} else {
-		return out.withTag({Energy: 40000000});
-	}
+	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 40000000);
 }, null);
 
 # Resonant Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:10>, [[null,<*>,null],[<thermalfoundation:material:167>,<*>,<thermalfoundation:material:167>],[<*>,<*>,<*>]]);
 recipes.addShaped("simplyjetpacks_fluxpack_upgrade4", <simplyjetpacks:itemfluxpack:10>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:359>,<simplyjetpacks:itemfluxpack:9>.marked("pack"),<thermalfoundation:material:359>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
-	if(ins.cell.tag.Energy + ins.pack.tag.Energy < 80000000) {
-		return out.withTag({Energy: ins.cell.tag.Energy + ins.pack.tag.Energy});
-	} else {
-		return out.withTag({Energy: 80000000});
-	}
+	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 80000000);
 }, null);
 
 # Flight Control Unit
