@@ -1,1 +1,1701 @@
-{"name":"Exploration I","description":" Exploration I\nFight through the Nether, which has significant new challenges from Better Nether, and decide if you want to venture into the Twilight Forest.","quests":[{"uuid":"206a620c-6e3c-4358-92ee-a45be385ad33","name":"Boing","description":"Obtain some Barrel Cacti and one stem of Nether Cactus! They are spread out through the whole Nether, but are more common on Gravel fields! It shouldn\u0027t be difficult to find \u0027em!","x":90,"y":129,"icon":{"id":"betternether:barrel_cactus"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:barrel_cactus"},"required":3},{"item":{"id":"betternether:nether_cactus"}}]}],"reward":[{"id":"divinerpg:molten_shards","amount":8}],"commandrewards":[]},{"uuid":"7de265ed-a4cb-44a7-86bb-b775e22e5f01","name":"Shroomz","description":"Obtain the 3 different kinds of Better Nether Mushrooms!\n\n- Lucis Spores are commonly found near Egg Plant fields, they\u0027re large 6-block yellow mushrooms on the side of Nether walls.\n\n- Orange Mushrooms confuse you with their name, because they\u0027re actually purple, large 1-block models.\n\n- Bone Mushroom Spores can be found growing from Bone Blocks usually near Soul Sand fields.","x":46,"y":55,"icon":{"id":"betternether:lucis_spore"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:lucis_spore"},"required":3},{"item":{"id":"betternether:orange_mushroom"},"required":3},{"item":{"id":"betternether:bone_mushroom"},"required":3}]}],"rewardchoice":[{"id":"natura:soups","damage":1,"amount":3},{"id":"natura:soups","damage":2,"amount":3},{"id":"natura:soups","damage":3,"amount":3}],"commandrewards":[]},{"uuid":"77600df8-1a4a-43cd-bda5-a18316d1ce2a","name":"With Dare (you) Fight","description":"Slay the Wither and obtain its precious Nether Star!","x":116,"y":128,"icon":{"id":"minecraft:nether_star"},"prerequisites":["0b422058-d373-4baf-8aa9-d42f2e101964"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:nether_star"}}]}],"reward":[{"id":"minecraft:diamond","amount":16},{"id":"minecraft:ender_pearl","amount":8},{"id":"actuallyadditions:item_solidified_experience","amount":48}],"rewardchoice":[{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:1s,id:36s}]}"},{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:1s,id:70s}]}"}],"commandrewards":[]},{"uuid":"655df24e-0667-4ee7-b06e-417263f4cc39","name":"Where to go?","description":"Craft a Blank Magic Map and use it in the Twilight Fores to reveal boss locations!","x":215,"y":52,"icon":{"id":"twilightforest:magic_map_empty"},"prerequisites":["b8dbff54-5a90-4a72-aaee-4597dbc2b700"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:magic_map_empty"}}]}],"reward":[{"id":"minecraft:compass","nbt":"{\"quark:compass_calculated\":1b,\"quark:compass_in_nether\":0b}"},{"id":"thermalfoundation:material","damage":160,"amount":8}],"commandrewards":[]},{"uuid":"1330b0da-b1f1-40d4-b4e4-25d1ae1bcee5","name":"Large floaty thing","description":"Enter the Dark Tower found in the middle of the Dark Forest! Climb to the top to find the Ur-ghast! This boss won\u0027t take damage from meelee hits, so you must damage it with ranged weapons. Once defeated, obtain its Trophy and some Carminite!","x":248,"y":100,"icon":{"id":"twilightforest:trophy","damage":3},"prerequisites":["09c64e1f-5690-4e00-8fbe-4ca0d6d4b072"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:trophy","damage":3}},{"item":{"id":"twilightforest:carminite"},"required":2}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"thermalfoundation:ore","damage":3,"amount":20},{"id":"thermalfoundation:ore","damage":2,"amount":20}],"commandrewards":[]},{"uuid":"098da298-8905-4a62-9b32-03698dbca8d0","name":"Nearing the end","description":"Enter the snowy biome and find the Alpha Yeti Cave! Defeat the Yeti packs and the boss to obtain some Alpha Yeti Fur!","x":232,"y":125,"icon":{"id":"twilightforest:alpha_fur"},"prerequisites":["1330b0da-b1f1-40d4-b4e4-25d1ae1bcee5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:alpha_fur"},"required":4}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"mekanism:oreblock","amount":20},{"id":"appliedenergistics2:quartz_ore","amount":20}],"commandrewards":[]},{"uuid":"15048130-2670-49d7-96f1-0afd236f1ff5","name":"Mystery of the Scarab III","description":"Once you\u0027ve completed Roots, Immersive Engineering and the Twilight Forest, you can craft a Flawless Scarab Body and a pair of Flawless Scarab Wings! ...But what for?","x":245,"y":172,"bigicon":true,"icon":{"id":"contenttweaker:flawless_scarab_body"},"prerequisites":["2bb3bfee-bbac-40c1-af75-86e030b341f9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:flawless_scarab_body"}},{"item":{"id":"contenttweaker:flawless_scarab_wings"}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"minecraft:leather","amount":20},{"id":"minecraft:slime_ball","amount":32}],"commandrewards":[]},{"uuid":"ff1881e2-c6d7-44e6-8764-0abaf24869db","name":"Plasma Fire","description":"Find one of the rare Scorchers that can spawn in the Nether! Slay it for its Purple Blaze!","x":32,"y":32,"icon":{"id":"divinerpg:purple_blaze"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:purple_blaze"}}]}],"reward":[{"id":"bhc:red_heart_canister"}],"commandrewards":[]},{"uuid":"967ad6cb-a38c-47d5-8f1d-4c266093d548","name":"They can grow here too","description":"Find a platform of Nether Reed and obtain some! It can be used as a replacement for Sugar Cane in the Paper and Sugar recipe, and Nether Reed Blocks can be used as a replacement for Wood Logs.","x":33,"y":126,"icon":{"id":"betternether:nether_reed"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:nether_reed"},"required":10}]}],"commandrewards":[]},{"uuid":"9dbeadc2-9dc6-4a00-90ca-b361fcc1c7db","name":"Hell\u0027s Blazes!","description":"Find a Stronghold or an Underground Blaze Dungeon to obtain some Blaze Rods!","x":32,"y":175,"icon":{"id":"minecraft:blaze_rod"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:blaze_rod"},"required":5}]}],"reward":[{"id":"bhc:red_heart_canister"}],"commandrewards":[]},{"uuid":"6c3ceaef-a578-4951-aaf2-6514d039a0aa","name":"Ore-derly Ore-naments","description":"Find the 2 types of DivineRPG Nether Ores and mine up some of them!","x":118,"y":79,"icon":{"id":"divinerpg:netherite_ingot"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:netherite_ingot"},"required":6},{"item":{"id":"divinerpg:bloodgem"},"required":4}]}],"rewardchoice":[{"id":"tconstruct:ore","amount":3},{"id":"tconstruct:ore","damage":1,"amount":3}],"commandrewards":[]},{"uuid":"ffac494c-fc3c-42a8-a37e-80951bec9367","name":"Impeccable Implications","description":"Find some cute orange Imps roaming around in the Nether! Then mercilessly slaughter them for their hide! D:","x":102,"y":153,"icon":{"id":"natura:materials","damage":6},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"natura:materials","damage":6},"required":3}]}],"reward":[{"id":"minecraft:potion","nbt":"{Potion:\"quark:long_resilience\"}"}],"commandrewards":[]},{"uuid":"68f42d8d-9c89-4cb9-a9ce-d408709def07","name":"Skipping Twilight...?","description":"During the creation of the pack, a vote was held on the Divine Journey 2 Discord server about the inclusion of Twilight Forest into the main progression line. The result was: Implement an item that lets you skip the Twilight Forest, since many of us players have already completed it, and there is nothing new to see.\n\nIf you wish to skip the Twilight Forest, craft a Twilight Key. This will allow you to craft the Lamp of Cinders, which would otherwise be the final item obtained in the Forest, and allow you to progress further into the pack.\n\nHowever, if you haven\u0027t played through Twilight Forest yet, I highly encourage you to try it out, since it\u0027s most likely the single best exploration mod in Minecraft - especially if OP flight methods aren\u0027t available. The best way to travel through Twilight in this pack is with the Roots Sky Soarer spell, as well as Tinkers\u0027 Slime Boots and Slimestring.\n\nDue to Twilight\u0027s popularity though, it\u0027s incredibly overused: it\u0027s included in a large portion of packs, which is understandably why people get bored of it.\n\nSo if you wish to follow this route, you don\u0027t have to enter the Twilight Forest to go on.","x":274,"y":52,"icon":{"id":"contenttweaker:twilight_key"},"prerequisites":["db9eed7a-7a42-4df3-b9fd-4b4759c8d31d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:twilight_key"}}]}],"commandrewards":[]},{"uuid":"e92cfa12-0f13-4275-a7d2-b819c66db0a8","name":"On Scorched Ground","description":"Summon and defeat the King of Scorchers in the Nether! It\u0027s recommended to fight it in an enclosed area so it can\u0027t fly away and shoot your down with fireballs. Once defeated, obtain its Statue and Fury Fire!","x":88,"y":32,"icon":{"id":"divinerpg:king_of_scorchers_statue"},"prerequisites":["ab844894-2703-4c6c-9ef3-8d87e9d6ba37"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:king_of_scorchers_statue"}},{"item":{"id":"divinerpg:fury_fire"}}]}],"reward":[{"id":"bhc:orange_heart_canister"},{"id":"actuallyadditions:item_solidified_experience","amount":32},{"id":"minecraft:diamond","amount":10}],"commandrewards":[]},{"uuid":"7d0a05ef-8221-46ee-9b25-b0a58d4cfa30","name":"A-MAZE-ing dungeon design","description":"Now that you have defeated the Lich, entering the Twilight Swamp won\u0027t cause bad Hunger effect on the player. So go there, and find the entrance of the Minoshroom Labyrinth! Get to the end to fight Minoshroom himself! He won\u0027t give you a warm welcome though... Slay it to obtain the Meef Stroganoff!","x":200,"y":77,"icon":{"id":"twilightforest:meef_stroganoff"},"prerequisites":["80fc7898-6e92-4ba1-ae62-da8531980b76"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:meef_stroganoff"}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":16}],"rewardchoice":[{"id":"minecraft:lapis_ore","amount":20},{"id":"minecraft:redstone_ore","amount":20}],"commandrewards":[]},{"uuid":"e57ab7e9-0452-46e6-9bed-041e8116ec54","name":"Three headed monstrosity","description":"Once you\u0027ve defeated the Minoshroom, keep heading deeper inside the Swamp, all the way to the Fire Swamp! Right in the dead center you\u0027ll find the Hydra. Defeat all of its heads to obtain its Trophy, Hydra Chops and some Fiery Blood!","x":183,"y":101,"icon":{"id":"twilightforest:trophy","damage":2},"prerequisites":["7d0a05ef-8221-46ee-9b25-b0a58d4cfa30"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:trophy","damage":2}},{"item":{"id":"twilightforest:hydra_chop"},"required":3},{"item":{"id":"twilightforest:fiery_blood"},"required":2}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"minecraft:gold_ore","amount":20},{"id":"thermalfoundation:ore","damage":5,"amount":20}],"commandrewards":[]},{"uuid":"b8dbff54-5a90-4a72-aaee-4597dbc2b700","name":"Playing Twilight!","description":"Once you\u0027ve entered the Twilight Forest, collect some Torchberries from underground and slay some Ravens for their Feather! ","x":186,"y":52,"icon":{"id":"twilightforest:torchberries"},"prerequisites":["db9eed7a-7a42-4df3-b9fd-4b4759c8d31d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:torchberries"}},{"item":{"id":"twilightforest:raven_feather"}}]}],"reward":[{"id":"bibliocraft:bell"}],"commandrewards":[]},{"uuid":"028ccb13-8816-4752-9bcf-bb10c7726461","name":"Hot Candy","description":"Use some Cincinncasite, Steel, Constantan and Lava to create a Forged Cincinnasite Block! You can obtain Constantan by mixing Copper and Nickel in the Smeltery or Crushing them with the Immersive Engineering Crusher, then combining the Dusts.","x":103,"y":55,"icon":{"id":"betternether:cincinnasite_forged"},"prerequisites":["c7bdd546-d9fb-49c8-85fc-3769ee0f95ae"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:cincinnasite_forged"},"required":4}]}],"reward":[{"id":"betternether:cincinnasite_ore","amount":8}],"commandrewards":[]},{"uuid":"89dde955-bda1-4ee5-b09a-7e9bae3a57ee","name":"It\u0027s getting real cloudy","description":"Once the Hydra, Ur-Ghast and Snow Queen have been defeated, you will no longer take damage from Acid Rain in the Highlands biome! So enter it and find the Giant Cloud floating above the biome! Climb up to fight Giant You and obtain the Giant\u0027s Pickaxe!","x":217,"y":150,"icon":{"id":"twilightforest:giant_pickaxe"},"prerequisites":["e4b694a4-1572-4b5c-a652-fef5ab09fdb2"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:giant_pickaxe"}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"minecraft:iron_ore","amount":40},{"id":"minecraft:gold_ore","amount":20},{"id":"thermalfoundation:ore","damage":5,"amount":20},{"id":"minecraft:diamond_ore","amount":16}],"commandrewards":[]},{"uuid":"9f2e124b-fa12-42ce-80e7-b135739b7dee","name":"Watch your step!","description":"Mine up some Egg Plants! Watch out if you\u0027re in a field of them - they will poison you when you set foot on them!","x":75,"y":54,"icon":{"id":"betternether:egg_plant"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:egg_plant"},"required":4}]}],"reward":[{"id":"minecraft:milk_bucket"}],"commandrewards":[]},{"uuid":"80fc7898-6e92-4ba1-ae62-da8531980b76","name":"Spooky Scary Skeleton","description":"Now that you have defeated the Naga, the barrier around the Lich\u0027s Tower will disappear. Enter the Tower, climb to the top, and fight the Twilight Lich!\n\nIf you\u0027re having trouble with the fight, know that you have to knock back its projectiles to break its sheilds. Once all of its shields are broken, you can start to damage it!","x":230,"y":76,"icon":{"id":"twilightforest:trophy","damage":1},"prerequisites":["10506201-a868-453f-aa8f-338f4df0df47"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:trophy","damage":1}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":16}],"rewardchoice":[{"id":"thermalfoundation:ore","damage":1,"amount":20},{"id":"minecraft:iron_ore","amount":20}],"commandrewards":[]},{"uuid":"673307a8-3eb7-4fd4-8619-2fb382c1bff3","name":"From Fire to Water","description":"Use your Brewing Stand to create some Extended Water Breathing Potions! You will need to fish up a Pufferfish for this.","x":87,"y":175,"icon":{"id":"minecraft:potion","nbt":"{Potion:\"minecraft:long_water_breathing\"}"},"prerequisites":["60c21526-fd4f-4aed-8172-bcafcfc88b2e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:potion","nbt":"{Potion:\"minecraft:long_water_breathing\"}"}}]}],"reward":[{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:3s,id:5s}]}"}],"commandrewards":[]},{"uuid":"e4b694a4-1572-4b5c-a652-fef5ab09fdb2","name":"Elsa\u0027s long lost sister","description":"Enter the Glacier biome! In the middle, you\u0027ll find the Aurora Palace. Climb up to the top to fight the Snow Queen and obtain its Trophy!","x":200,"y":125,"icon":{"id":"twilightforest:trophy","damage":5},"prerequisites":["098da298-8905-4a62-9b32-03698dbca8d0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:trophy","damage":5}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":20}],"rewardchoice":[{"id":"bewitchment:amethyst_ore","amount":16},{"id":"appliedenergistics2:charged_quartz_ore","amount":16}],"commandrewards":[]},{"uuid":"2103390c-a24c-4387-9c03-7f67d0a9ef68","name":"Monumental!","description":"Find an Underwater Monument and raid it using your Water Breathing Potions to obtain some Prismarine Shards and Prismarine Crystals! Later you\u0027ll be able to craft them from Quartz with an Atomic Reconstructor and some kind of a Crusher.","x":115,"y":175,"icon":{"id":"minecraft:prismarine_shard"},"prerequisites":["673307a8-3eb7-4fd4-8619-2fb382c1bff3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:prismarine_shard"},"required":6},{"item":{"id":"minecraft:prismarine_crystals"},"required":3}]}],"reward":[{"id":"minecraft:gold_block","amount":4}],"commandrewards":[]},{"uuid":"09bf2e53-a8b9-4a82-a076-ff26ba56dd73","name":"Snow White\u0027s demise","description":"Find some ominous-looking Black Apple plants in the Nether! They commonly spawn in Egg Plant fields. Break them for a couple Black Apples!","x":74,"y":153,"icon":{"id":"betternether:black_apple"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:black_apple"},"required":2}]}],"reward":[{"id":"betternether:stalagnate_bowl","amount":3}],"commandrewards":[]},{"uuid":"028c8b76-c366-4aac-b5bf-689e56dbbaa9","name":"Eye see-d you!","description":"Break some Eyeballs hanging from the Nether ceiling to obtain some Eye Seeds!","x":47,"y":102,"icon":{"id":"betternether:eye_seed"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:eye_seed"},"required":3}]}],"reward":[{"id":"minecraft:potion","nbt":"{Potion:\"quark:long_danger_sight\"}"}],"commandrewards":[]},{"uuid":"a3e3cbde-e6da-4706-9e1f-e899ce5834dc","name":"Pretty!","description":"Use your Nether Star to craft a Magical Snow Globe! Then enter at least 7 of the biome types listed to activate it!","x":133,"y":147,"bigicon":true,"icon":{"id":"extrautils2:snowglobe"},"prerequisites":["77600df8-1a4a-43cd-bda5-a18316d1ce2a","2103390c-a24c-4387-9c03-7f67d0a9ef68"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extrautils2:snowglobe"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"quark:rune","damage":16},{"id":"minecraft:emerald","amount":12}],"rewardchoice":[{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:3s,id:34s}]}"},{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:4s,id:0s}]}"},{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:3s,id:43s}]}"}],"commandrewards":[]},{"uuid":"aaadc391-c428-48a2-b85b-68257bb5ebda","name":"Forged in Lava","description":"Craft a Cincinnasite Forge! This machine functions like a vanilla Furnace, except smelts twice as fast. It can also be used in combination with the External Heater from Immersive Engineering to have it use power instead of fuel to smelt!","x":130,"y":54,"icon":{"id":"betternether:cincinnasite_forge"},"prerequisites":["028ccb13-8816-4752-9bcf-bb10c7726461"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:cincinnasite_forge"}}]}],"rewardchoice":[{"id":"betternether:cincinnasite_pickaxe_diamond"},{"id":"betternether:cincinnasite_axe_diamond"}],"commandrewards":[]},{"uuid":"77b35138-c3e7-441f-9bd8-69011dda6417","name":"Golden Mass Destruction","description":"Craft a Golden Fury! It\u0027s a weapon with infnite durability that uses Gold Nuggets to rapidfire. If you\u0027re out of Gold Nuggets in the Nether, know that Cincinnasite can be crafted into them.","x":117,"y":32,"icon":{"id":"divinerpg:golden_fury"},"prerequisites":["e92cfa12-0f13-4275-a7d2-b819c66db0a8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:golden_fury"}}]}],"reward":[{"id":"minecraft:gold_nugget","amount":64}],"commandrewards":[]},{"uuid":"cfa5ddba-6cc9-468e-a50a-8c43b51dfce5","name":"Into the Depths!","description":"Create a portal to the Nether and enter it! When you enter the first time, the loading time might take a while, because custom Better Nether terrain is being generated. Once you enter, make sure to create a waypoint with Journey Map so you can find your way back!","x":76,"y":103,"icon":{"id":"minecraft:netherrack"},"prerequisites":["b1252241-c1ba-4d0b-b57c-1c698a3d727d"],"tasks":[{"type":"LOCATION","locations":[{"name":"New","icon":{"id":"minecraft:netherrack"},"x":0,"y":0,"z":0,"dim":-1,"radius":-1}]}],"reward":[{"id":"minecraft:potion","nbt":"{Potion:\"minecraft:fire_resistance\"}"}],"commandrewards":[]},{"uuid":"ab844894-2703-4c6c-9ef3-8d87e9d6ba37","name":"INFERNOOO!!!","description":"Craft an Infernal Flame! This item can be used to summon the King of Scorchers in the Nether.","x":60,"y":32,"icon":{"id":"divinerpg:infernal_flame"},"prerequisites":["ff1881e2-c6d7-44e6-8764-0abaf24869db"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:infernal_flame"}}]}],"reward":[{"id":"minecraft:cauldron"},{"id":"minecraft:water_bucket"}],"commandrewards":[]},{"uuid":"2bb3bfee-bbac-40c1-af75-86e030b341f9","name":"Light the way!","description":"Climb down from the Giant Cloud and enter the caves below the Highlands biome! Find the Giant Obsidian structure and break it with your Giant\u0027s Pickaxe to find the Lamp of Cinders inside a Chest!\n\nGG, you have completed the Twilight Forest!\n\n\n\nOr have you skipped it...? Either way, I hope you had fun and made the right decision!","x":276,"y":150,"icon":{"id":"twilightforest:lamp_of_cinders"},"prerequisites":["89dde955-bda1-4ee5-b09a-7e9bae3a57ee","68f42d8d-9c89-4cb9-a9ce-d408709def07"],"parentrequirement":1,"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:lamp_of_cinders"}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":16}],"rewardchoice":[{"id":"minecraft:glowstone","amount":16},{"id":"minecraft:quartz_ore","amount":16}],"commandrewards":[]},{"uuid":"09c64e1f-5690-4e00-8fbe-4ca0d6d4b072","name":"Underground... yet again!","description":"Enter the Dark Forest and find the entrance to the Goblin Knight Stronghold! Before you can enter however, you\u0027ll need to place at least 1 Trophy yoU\u0027ve collected on a Trophy Pedestal near the entrance. Once inside, fight some Knights, Goblins or Helmet Crabs to obtain some Armor Shards! Then find the central room with the four Knight Phantoms inside! Defeat them to be able to move on!\n\nNote: There is no sure drop the Knight Phantoms give, so the quest only asks for Armor Shards.","x":216,"y":101,"icon":{"id":"twilightforest:armor_shard"},"prerequisites":["e57ab7e9-0452-46e6-9bed-041e8116ec54"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:armor_shard"},"required":5}]}],"reward":[{"id":"ironbackpacks:backpack","nbt":"{packInfo:{upgrade:[],own:\"06056b62-0756-4759-bd14-09e8cb079ad1\",type:\"ironbackpacks:iron\",spec:\"STORAGE\"},packInv:[{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s}]}"},{"id":"actuallyadditions:item_solidified_experience","amount":16}],"rewardchoice":[{"id":"minecraft:diamond_ore","amount":8},{"id":"minecraft:emerald_ore","amount":8}],"commandrewards":[]},{"uuid":"10506201-a868-453f-aa8f-338f4df0df47","name":"Big snake thing","description":"Find the Naga Fortress and defeat the Naga to obtain its Trophy and some of its Scales! To defeat it, keep hitting it while its tail keeps getting shorter, all the way until it\u0027s basically only a head!","x":245,"y":52,"icon":{"id":"twilightforest:trophy"},"prerequisites":["655df24e-0667-4ee7-b06e-417263f4cc39"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"twilightforest:trophy"}},{"item":{"id":"twilightforest:naga_scale"},"required":3}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":16}],"rewardchoice":[{"id":"thermalfoundation:ore","amount":20},{"id":"thermalfoundation:ore","damage":4,"amount":20}],"commandrewards":[]},{"uuid":"0b422058-d373-4baf-8aa9-d42f2e101964","name":"With Daring Skill-eton!","description":"Find a Nether Fortress and slay some Wither Skeletons for their Bones and Skulls! Make a Tinkers\u0027 Cleaver if you\u0027re having trouble obtaining Skulls! The Cleaver has built-in Beahadding functionality.","x":130,"y":104,"icon":{"id":"minecraft:skull","damage":1},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:skull","damage":1}},{"item":{"id":"tconstruct:materials","damage":17},"required":3}]}],"reward":[{"id":"minecraft:skull","damage":1},{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:5s,id:17s}]}"}],"commandrewards":[]},{"uuid":"1d513113-63ca-4195-b8ab-b0096eaf7726","name":"Don\u0027t get caught in the spikes","description":"Use some Shears to obtain some Thornvines! If you wanna get a lot, make sure to break them from the bottom, since blocks that pop off and are not broken by Shears will just disappear.","x":46,"y":151,"icon":{"id":"natura:nether_thorn_vines"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"natura:nether_thorn_vines"},"required":5}]}],"reward":[{"id":"minecraft:quartz_ore","amount":12}],"commandrewards":[]},{"uuid":"82cc57e3-5a8c-437e-927f-2fd2466da06a","name":"Respawn Anchor but cooler","description":"Find an Altar built out of Cincinnasite and Bone Blocks! It will contain a Respawner Statue! Mine it up to complete this quest! You can offer it Glowstone Dust to set a spawn point, even in the Nether or End!","x":103,"y":104,"icon":{"id":"betternether:pig_statue_01"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:pig_statue_01"}}]}],"reward":[{"id":"minecraft:glowstone_dust","amount":6}],"commandrewards":[]},{"uuid":"db9eed7a-7a42-4df3-b9fd-4b4759c8d31d","name":"Enter the Twilight","description":"Craft a Twilight Rock! It is used to enter the Twilight Forest. Sourround a 2x2 pool of Water with Dirt or Grass blocks, and place any kind of Flowers all the way around (even on the corners). Then throw in the Twilight Rock to create a Twilight Forest Portal!\n\nThis quest will unlock once you\u0027ve completed the Stalicripe quest in Chapter 3 and the HOP Graphite Dust quest in Chapter 4.","x":229,"y":24,"icon":{"id":"contenttweaker:twilight_rock"},"prerequisites":["3b8a1b48-8019-41d6-a201-72ef0cc2e5f2","48dae6a8-5fe1-4b50-b8da-8a4c9e234770"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:twilight_rock"}}]}],"reward":[{"id":"bibliocraft:biblioclipboard","nbt":"{page1:{title:\"\",taskStates:[I;0,0,0,0,0,0,0,0,0],tasks:{task5:\"\",task6:\"\",task7:\"\",task8:\"\",task9:\"\",task1:\"\",task2:\"\",task3:\"\",task4:\"\"}},totalPages:1,currentPage:1}"}],"commandrewards":[]},{"uuid":"c7bdd546-d9fb-49c8-85fc-3769ee0f95ae","name":"Cin- cinna- citcin... whatever.","description":"Mine up some Cincinnasite Ore from the Nether! It can be affected by Fortune.","x":90,"y":78,"icon":{"id":"betternether:cincinnasite"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:cincinnasite"},"required":10}]}],"reward":[{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:1s,id:33s}]}"}],"commandrewards":[]},{"uuid":"60c21526-fd4f-4aed-8172-bcafcfc88b2e","name":"Blub-blubba-blub","description":"Craft a Brewing Stand!","x":59,"y":175,"icon":{"id":"minecraft:brewing_stand"},"prerequisites":["9dbeadc2-9dc6-4a00-90ca-b361fcc1c7db"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:brewing_stand"}}]}],"reward":[{"id":"minecraft:blaze_powder","amount":16},{"id":"minecraft:potion","nbt":"{Potion:\"cofhcore:luck2\"}"}],"rewardchoice":[{"id":"thermalfoundation:tool.fishing_rod_constantan"},{"id":"thermalfoundation:tool.fishing_rod_electrum"}],"commandrewards":[]},{"uuid":"442fdb35-f830-41dc-9a12-648a5fb6d966","name":"Green an chewy","description":"Obtain some Stalagnate commonly found near Thornvines! Simply chop them with an Axe, you can\u0027t obtain the leafy version, but you can obtain Stagnuite Seeds to regrow the plant.","x":60,"y":77,"icon":{"id":"betternether:stalagnate_stem"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:stalagnate_stem"},"required":4}]}],"reward":[{"id":"thermalfoundation:material","damage":771,"amount":8}],"commandrewards":[]},{"uuid":"75e16942-beaa-4bd2-8559-75d5d4379bde","name":"Feels no pain in Forest Fires","description":"Obtain some Magma Flower Seeds commonly found near Lava Lakes and on Magma Blocks! It\u0027s one of the most difficult Flowers to find in the Nether, but don\u0027t give up!","x":60,"y":129,"icon":{"id":"betternether:magma_flower"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:magma_flower"},"required":3}]}],"reward":[{"id":"enderio:item_dark_steel_shears","damage":790}],"commandrewards":[]},{"uuid":"e1e8f6f0-7b70-44ef-ba60-63808665e3fd","name":"What A-GAVE it away?","description":"Use some Shears to obtain some Agave plants scattered around in the Nether.","x":34,"y":78,"icon":{"id":"betternether:agave"},"prerequisites":["cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"betternether:agave"},"required":3}]}],"reward":[{"id":"draconicevolution:draconium_ore","damage":1,"amount":3}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "Exploration I",
+  "description": " Exploration I\nFight through the Nether, which has significant new challenges from Better Nether, and decide if you want to venture into the Twilight Forest.",
+  "quests": [
+    {
+      "uuid": "206a620c-6e3c-4358-92ee-a45be385ad33",
+      "name": "Boing",
+      "description": "Obtain some Barrel Cacti and one stem of Nether Cactus! They are spread out through the whole Nether, but are more common on Gravel fields! It shouldn't be difficult to find 'em!",
+      "x": 90,
+      "y": 129,
+      "icon": {
+        "id": "betternether:barrel_cactus"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:barrel_cactus"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "betternether:nether_cactus"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "divinerpg:molten_shards",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7de265ed-a4cb-44a7-86bb-b775e22e5f01",
+      "name": "Shroomz",
+      "description": "Obtain the 3 different kinds of Better Nether Mushrooms!\n\n- Lucis Spores are commonly found near Egg Plant fields, they're large 6-block yellow mushrooms on the side of Nether walls.\n\n- Orange Mushrooms confuse you with their name, because they're actually purple, large 1-block models.\n\n- Bone Mushroom Spores can be found growing from Bone Blocks usually near Soul Sand fields.",
+      "x": 46,
+      "y": 55,
+      "icon": {
+        "id": "betternether:lucis_spore"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:lucis_spore"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "betternether:orange_mushroom"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "betternether:bone_mushroom"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "natura:soups",
+          "damage": 1,
+          "amount": 3
+        },
+        {
+          "id": "natura:soups",
+          "damage": 2,
+          "amount": 3
+        },
+        {
+          "id": "natura:soups",
+          "damage": 3,
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "77600df8-1a4a-43cd-bda5-a18316d1ce2a",
+      "name": "With Dare (you) Fight",
+      "description": "Slay the Wither and obtain its precious Nether Star!",
+      "x": 116,
+      "y": 128,
+      "icon": {
+        "id": "minecraft:nether_star"
+      },
+      "prerequisites": [
+        "0b422058-d373-4baf-8aa9-d42f2e101964"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:nether_star"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "amount": 8
+        },
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 48
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:1s,id:36s}]}"
+        },
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:1s,id:70s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "655df24e-0667-4ee7-b06e-417263f4cc39",
+      "name": "Where to go?",
+      "description": "Craft a Blank Magic Map and use it in the Twilight Fores to reveal boss locations!",
+      "x": 215,
+      "y": 52,
+      "icon": {
+        "id": "twilightforest:magic_map_empty"
+      },
+      "prerequisites": [
+        "b8dbff54-5a90-4a72-aaee-4597dbc2b700"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:magic_map_empty"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:compass",
+          "nbt": "{\"quark:compass_calculated\":1b,\"quark:compass_in_nether\":0b}"
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1330b0da-b1f1-40d4-b4e4-25d1ae1bcee5",
+      "name": "Large floaty thing",
+      "description": "Enter the Dark Tower found in the middle of the Dark Forest! Climb to the top to find the Ur-ghast! This boss won't take damage from meelee hits, so you must damage it with ranged weapons. Once defeated, obtain its Trophy and some Carminite!",
+      "x": 248,
+      "y": 100,
+      "icon": {
+        "id": "twilightforest:trophy",
+        "damage": 3
+      },
+      "prerequisites": [
+        "09c64e1f-5690-4e00-8fbe-4ca0d6d4b072"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:trophy",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "twilightforest:carminite"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 3,
+          "amount": 20
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 2,
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "098da298-8905-4a62-9b32-03698dbca8d0",
+      "name": "Nearing the end",
+      "description": "Enter the snowy biome and find the Alpha Yeti Cave! Defeat the Yeti packs and the boss to obtain some Alpha Yeti Fur!",
+      "x": 232,
+      "y": 125,
+      "icon": {
+        "id": "twilightforest:alpha_fur"
+      },
+      "prerequisites": [
+        "1330b0da-b1f1-40d4-b4e4-25d1ae1bcee5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:alpha_fur"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "mekanism:oreblock",
+          "amount": 20
+        },
+        {
+          "id": "appliedenergistics2:quartz_ore",
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "15048130-2670-49d7-96f1-0afd236f1ff5",
+      "name": "Mystery of the Scarab III",
+      "description": "Once you've completed Roots, Immersive Engineering and the Twilight Forest, you can craft a Flawless Scarab Body and a pair of Flawless Scarab Wings! ...But what for?",
+      "x": 245,
+      "y": 172,
+      "bigicon": true,
+      "icon": {
+        "id": "contenttweaker:flawless_scarab_body"
+      },
+      "prerequisites": [
+        "2bb3bfee-bbac-40c1-af75-86e030b341f9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:flawless_scarab_body"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:flawless_scarab_wings"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:leather",
+          "amount": 20
+        },
+        {
+          "id": "minecraft:slime_ball",
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ff1881e2-c6d7-44e6-8764-0abaf24869db",
+      "name": "Plasma Fire",
+      "description": "Find one of the rare Scorchers that can spawn in the Nether! Slay it for its Purple Blaze!",
+      "x": 32,
+      "y": 32,
+      "icon": {
+        "id": "divinerpg:purple_blaze"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:purple_blaze"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bhc:red_heart_canister"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "967ad6cb-a38c-47d5-8f1d-4c266093d548",
+      "name": "They can grow here too",
+      "description": "Find a platform of Nether Reed and obtain some! It can be used as a replacement for Sugar Cane in the Paper and Sugar recipe, and Nether Reed Blocks can be used as a replacement for Wood Logs.",
+      "x": 33,
+      "y": 126,
+      "icon": {
+        "id": "betternether:nether_reed"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:nether_reed"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9dbeadc2-9dc6-4a00-90ca-b361fcc1c7db",
+      "name": "Hell's Blazes!",
+      "description": "Find a Stronghold or an Underground Blaze Dungeon to obtain some Blaze Rods!",
+      "x": 32,
+      "y": 175,
+      "icon": {
+        "id": "minecraft:blaze_rod"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:blaze_rod"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bhc:red_heart_canister"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6c3ceaef-a578-4951-aaf2-6514d039a0aa",
+      "name": "Ore-derly Ore-naments",
+      "description": "Find the 2 types of DivineRPG Nether Ores and mine up some of them!",
+      "x": 118,
+      "y": 79,
+      "icon": {
+        "id": "divinerpg:netherite_ingot"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:netherite_ingot"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "divinerpg:bloodgem"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "tconstruct:ore",
+          "amount": 3
+        },
+        {
+          "id": "tconstruct:ore",
+          "damage": 1,
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ffac494c-fc3c-42a8-a37e-80951bec9367",
+      "name": "Impeccable Implications",
+      "description": "Find some cute orange Imps roaming around in the Nether! Then mercilessly slaughter them for their hide! D:",
+      "x": 102,
+      "y": 153,
+      "icon": {
+        "id": "natura:materials",
+        "damage": 6
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "natura:materials",
+                "damage": 6
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "nbt": "{Potion:\"quark:long_resilience\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "68f42d8d-9c89-4cb9-a9ce-d408709def07",
+      "name": "Skipping Twilight...?",
+      "description": "During the creation of the pack, a vote was held on the Divine Journey 2 Discord server about the inclusion of Twilight Forest into the main progression line. The result was: Implement an item that lets you skip the Twilight Forest, since many of us players have already completed it, and there is nothing new to see.\n\nIf you wish to skip the Twilight Forest, craft a Twilight Key. This will allow you to craft the Lamp of Cinders, which would otherwise be the final item obtained in the Forest, and allow you to progress further into the pack.\n\nHowever, if you haven't played through Twilight Forest yet, I highly encourage you to try it out, since it's most likely the single best exploration mod in Minecraft - especially if OP flight methods aren't available. The best way to travel through Twilight in this pack is with the Roots Sky Soarer spell, as well as Tinkers' Slime Boots and Slimestring.\n\nDue to Twilight's popularity though, it's incredibly overused: it's included in a large portion of packs, which is understandably why people get bored of it.\n\nSo if you wish to follow this route, you don't have to enter the Twilight Forest to go on.",
+      "x": 274,
+      "y": 52,
+      "icon": {
+        "id": "contenttweaker:twilight_key"
+      },
+      "prerequisites": [
+        "db9eed7a-7a42-4df3-b9fd-4b4759c8d31d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:twilight_key"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e92cfa12-0f13-4275-a7d2-b819c66db0a8",
+      "name": "On Scorched Ground",
+      "description": "Summon and defeat the King of Scorchers in the Nether! It's recommended to fight it in an enclosed area so it can't fly away and shoot your down with fireballs. Once defeated, obtain its Statue and Fury Fire!",
+      "x": 88,
+      "y": 32,
+      "icon": {
+        "id": "divinerpg:king_of_scorchers_statue"
+      },
+      "prerequisites": [
+        "ab844894-2703-4c6c-9ef3-8d87e9d6ba37"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:king_of_scorchers_statue"
+              }
+            },
+            {
+              "item": {
+                "id": "divinerpg:fury_fire"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bhc:orange_heart_canister"
+        },
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 32
+        },
+        {
+          "id": "minecraft:diamond",
+          "amount": 10
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7d0a05ef-8221-46ee-9b25-b0a58d4cfa30",
+      "name": "A-MAZE-ing dungeon design",
+      "description": "Now that you have defeated the Lich, entering the Twilight Swamp won't cause bad Hunger effect on the player. So go there, and find the entrance of the Minoshroom Labyrinth! Get to the end to fight Minoshroom himself! He won't give you a warm welcome though... Slay it to obtain the Meef Stroganoff!",
+      "x": 200,
+      "y": 77,
+      "icon": {
+        "id": "twilightforest:meef_stroganoff"
+      },
+      "prerequisites": [
+        "80fc7898-6e92-4ba1-ae62-da8531980b76"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:meef_stroganoff"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:lapis_ore",
+          "amount": 20
+        },
+        {
+          "id": "minecraft:redstone_ore",
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e57ab7e9-0452-46e6-9bed-041e8116ec54",
+      "name": "Three headed monstrosity",
+      "description": "Once you've defeated the Minoshroom, keep heading deeper inside the Swamp, all the way to the Fire Swamp! Right in the dead center you'll find the Hydra. Defeat all of its heads to obtain its Trophy, Hydra Chops and some Fiery Blood!",
+      "x": 183,
+      "y": 101,
+      "icon": {
+        "id": "twilightforest:trophy",
+        "damage": 2
+      },
+      "prerequisites": [
+        "7d0a05ef-8221-46ee-9b25-b0a58d4cfa30"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:trophy",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "twilightforest:hydra_chop"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "twilightforest:fiery_blood"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 20
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 5,
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b8dbff54-5a90-4a72-aaee-4597dbc2b700",
+      "name": "Playing Twilight!",
+      "description": "Once you've entered the Twilight Forest, collect some Torchberries from underground and slay some Ravens for their Feather! ",
+      "x": 186,
+      "y": 52,
+      "icon": {
+        "id": "twilightforest:torchberries"
+      },
+      "prerequisites": [
+        "db9eed7a-7a42-4df3-b9fd-4b4759c8d31d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:torchberries"
+              }
+            },
+            {
+              "item": {
+                "id": "twilightforest:raven_feather"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bibliocraft:bell"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "028ccb13-8816-4752-9bcf-bb10c7726461",
+      "name": "Hot Candy",
+      "description": "Use some Cincinncasite, Steel, Constantan and Lava to create a Forged Cincinnasite Block! You can obtain Constantan by mixing Copper and Nickel in the Smeltery or Crushing them with the Immersive Engineering Crusher, then combining the Dusts.",
+      "x": 103,
+      "y": 55,
+      "icon": {
+        "id": "betternether:cincinnasite_forged"
+      },
+      "prerequisites": [
+        "c7bdd546-d9fb-49c8-85fc-3769ee0f95ae"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:cincinnasite_forged"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "betternether:cincinnasite_ore",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "89dde955-bda1-4ee5-b09a-7e9bae3a57ee",
+      "name": "It's getting real cloudy",
+      "description": "Once the Hydra, Ur-Ghast and Snow Queen have been defeated, you will no longer take damage from Acid Rain in the Highlands biome! So enter it and find the Giant Cloud floating above the biome! Climb up to fight Giant You and obtain the Giant's Pickaxe!",
+      "x": 217,
+      "y": 150,
+      "icon": {
+        "id": "twilightforest:giant_pickaxe"
+      },
+      "prerequisites": [
+        "e4b694a4-1572-4b5c-a652-fef5ab09fdb2"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:giant_pickaxe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 40
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 20
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 5,
+          "amount": 20
+        },
+        {
+          "id": "minecraft:diamond_ore",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9f2e124b-fa12-42ce-80e7-b135739b7dee",
+      "name": "Watch your step!",
+      "description": "Mine up some Egg Plants! Watch out if you're in a field of them - they will poison you when you set foot on them!",
+      "x": 75,
+      "y": 54,
+      "icon": {
+        "id": "betternether:egg_plant"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:egg_plant"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:milk_bucket"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "80fc7898-6e92-4ba1-ae62-da8531980b76",
+      "name": "Spooky Scary Skeleton",
+      "description": "Now that you have defeated the Naga, the barrier around the Lich's Tower will disappear. Enter the Tower, climb to the top, and fight the Twilight Lich!\n\nIf you're having trouble with the fight, know that you have to knock back its projectiles to break its sheilds. Once all of its shields are broken, you can start to damage it!",
+      "x": 230,
+      "y": 76,
+      "icon": {
+        "id": "twilightforest:trophy",
+        "damage": 1
+      },
+      "prerequisites": [
+        "10506201-a868-453f-aa8f-338f4df0df47"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:trophy",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 1,
+          "amount": 20
+        },
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "673307a8-3eb7-4fd4-8619-2fb382c1bff3",
+      "name": "From Fire to Water",
+      "description": "Use your Brewing Stand to create some Extended Water Breathing Potions! You will need to fish up a Pufferfish for this.",
+      "x": 87,
+      "y": 175,
+      "icon": {
+        "id": "minecraft:potion",
+        "nbt": "{Potion:\"minecraft:long_water_breathing\"}"
+      },
+      "prerequisites": [
+        "60c21526-fd4f-4aed-8172-bcafcfc88b2e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:potion",
+                "nbt": "{Potion:\"minecraft:long_water_breathing\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:3s,id:5s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e4b694a4-1572-4b5c-a652-fef5ab09fdb2",
+      "name": "Elsa's long lost sister",
+      "description": "Enter the Glacier biome! In the middle, you'll find the Aurora Palace. Climb up to the top to fight the Snow Queen and obtain its Trophy!",
+      "x": 200,
+      "y": 125,
+      "icon": {
+        "id": "twilightforest:trophy",
+        "damage": 5
+      },
+      "prerequisites": [
+        "098da298-8905-4a62-9b32-03698dbca8d0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:trophy",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 20
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "bewitchment:amethyst_ore",
+          "amount": 16
+        },
+        {
+          "id": "appliedenergistics2:charged_quartz_ore",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2103390c-a24c-4387-9c03-7f67d0a9ef68",
+      "name": "Monumental!",
+      "description": "Find an Underwater Monument and raid it using your Water Breathing Potions to obtain some Prismarine Shards and Prismarine Crystals! Later you'll be able to craft them from Quartz with an Atomic Reconstructor and some kind of a Crusher.",
+      "x": 115,
+      "y": 175,
+      "icon": {
+        "id": "minecraft:prismarine_shard"
+      },
+      "prerequisites": [
+        "673307a8-3eb7-4fd4-8619-2fb382c1bff3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:prismarine_shard"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "minecraft:prismarine_crystals"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_block",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "09bf2e53-a8b9-4a82-a076-ff26ba56dd73",
+      "name": "Snow White's demise",
+      "description": "Find some ominous-looking Black Apple plants in the Nether! They commonly spawn in Egg Plant fields. Break them for a couple Black Apples!",
+      "x": 74,
+      "y": 153,
+      "icon": {
+        "id": "betternether:black_apple"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:black_apple"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "betternether:stalagnate_bowl",
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "028c8b76-c366-4aac-b5bf-689e56dbbaa9",
+      "name": "Eye see-d you!",
+      "description": "Break some Eyeballs hanging from the Nether ceiling to obtain some Eye Seeds!",
+      "x": 47,
+      "y": 102,
+      "icon": {
+        "id": "betternether:eye_seed"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:eye_seed"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "nbt": "{Potion:\"quark:long_danger_sight\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a3e3cbde-e6da-4706-9e1f-e899ce5834dc",
+      "name": "Pretty!",
+      "description": "Use your Nether Star to craft a Magical Snow Globe! Then enter at least 7 of the biome types listed to activate it!",
+      "x": 133,
+      "y": 147,
+      "bigicon": true,
+      "icon": {
+        "id": "extrautils2:snowglobe"
+      },
+      "prerequisites": [
+        "77600df8-1a4a-43cd-bda5-a18316d1ce2a",
+        "2103390c-a24c-4387-9c03-7f67d0a9ef68"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extrautils2:snowglobe"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "quark:rune",
+          "damage": 16
+        },
+        {
+          "id": "minecraft:emerald",
+          "amount": 12
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:3s,id:34s}]}"
+        },
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:4s,id:0s}]}"
+        },
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:3s,id:43s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "aaadc391-c428-48a2-b85b-68257bb5ebda",
+      "name": "Forged in Lava",
+      "description": "Craft a Cincinnasite Forge! This machine functions like a vanilla Furnace, except smelts twice as fast. It can also be used in combination with the External Heater from Immersive Engineering to have it use power instead of fuel to smelt!",
+      "x": 130,
+      "y": 54,
+      "icon": {
+        "id": "betternether:cincinnasite_forge"
+      },
+      "prerequisites": [
+        "028ccb13-8816-4752-9bcf-bb10c7726461"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:cincinnasite_forge"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "betternether:cincinnasite_pickaxe_diamond"
+        },
+        {
+          "id": "betternether:cincinnasite_axe_diamond"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "77b35138-c3e7-441f-9bd8-69011dda6417",
+      "name": "Golden Mass Destruction",
+      "description": "Craft a Golden Fury! It's a weapon with infnite durability that uses Gold Nuggets to rapidfire. If you're out of Gold Nuggets in the Nether, know that Cincinnasite can be crafted into them.",
+      "x": 117,
+      "y": 32,
+      "icon": {
+        "id": "divinerpg:golden_fury"
+      },
+      "prerequisites": [
+        "e92cfa12-0f13-4275-a7d2-b819c66db0a8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:golden_fury"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_nugget",
+          "amount": 64
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5",
+      "name": "Into the Depths!",
+      "description": "Create a portal to the Nether and enter it! When you enter the first time, the loading time might take a while, because custom Better Nether terrain is being generated. Once you enter, make sure to create a waypoint with Journey Map so you can find your way back!",
+      "x": 76,
+      "y": 103,
+      "icon": {
+        "id": "minecraft:netherrack"
+      },
+      "prerequisites": [
+        "b1252241-c1ba-4d0b-b57c-1c698a3d727d"
+      ],
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "locations": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "minecraft:netherrack"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": -1,
+              "radius": -1
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "nbt": "{Potion:\"minecraft:fire_resistance\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ab844894-2703-4c6c-9ef3-8d87e9d6ba37",
+      "name": "INFERNOOO!!!",
+      "description": "Craft an Infernal Flame! This item can be used to summon the King of Scorchers in the Nether.",
+      "x": 60,
+      "y": 32,
+      "icon": {
+        "id": "divinerpg:infernal_flame"
+      },
+      "prerequisites": [
+        "ff1881e2-c6d7-44e6-8764-0abaf24869db"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:infernal_flame"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:cauldron"
+        },
+        {
+          "id": "minecraft:water_bucket"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2bb3bfee-bbac-40c1-af75-86e030b341f9",
+      "name": "Light the way!",
+      "description": "Climb down from the Giant Cloud and enter the caves below the Highlands biome! Find the Giant Obsidian structure and break it with your Giant's Pickaxe to find the Lamp of Cinders inside a Chest!\n\nGG, you have completed the Twilight Forest!\n\n\n\nOr have you skipped it...? Either way, I hope you had fun and made the right decision!",
+      "x": 276,
+      "y": 150,
+      "icon": {
+        "id": "twilightforest:lamp_of_cinders"
+      },
+      "prerequisites": [
+        "89dde955-bda1-4ee5-b09a-7e9bae3a57ee",
+        "68f42d8d-9c89-4cb9-a9ce-d408709def07"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:lamp_of_cinders"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:glowstone",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:quartz_ore",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "09c64e1f-5690-4e00-8fbe-4ca0d6d4b072",
+      "name": "Underground... yet again!",
+      "description": "Enter the Dark Forest and find the entrance to the Goblin Knight Stronghold! Before you can enter however, you'll need to place at least 1 Trophy yoU've collected on a Trophy Pedestal near the entrance. Once inside, fight some Knights, Goblins or Helmet Crabs to obtain some Armor Shards! Then find the central room with the four Knight Phantoms inside! Defeat them to be able to move on!\n\nNote: There is no sure drop the Knight Phantoms give, so the quest only asks for Armor Shards.",
+      "x": 216,
+      "y": 101,
+      "icon": {
+        "id": "twilightforest:armor_shard"
+      },
+      "prerequisites": [
+        "e57ab7e9-0452-46e6-9bed-041e8116ec54"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:armor_shard"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ironbackpacks:backpack",
+          "nbt": "{packInfo:{upgrade:[],own:\"06056b62-0756-4759-bd14-09e8cb079ad1\",type:\"ironbackpacks:iron\",spec:\"STORAGE\"},packInv:[{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s},{id:\"minecraft:air\",Count:2b,Damage:0s}]}"
+        },
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:diamond_ore",
+          "amount": 8
+        },
+        {
+          "id": "minecraft:emerald_ore",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "10506201-a868-453f-aa8f-338f4df0df47",
+      "name": "Big snake thing",
+      "description": "Find the Naga Fortress and defeat the Naga to obtain its Trophy and some of its Scales! To defeat it, keep hitting it while its tail keeps getting shorter, all the way until it's basically only a head!",
+      "x": 245,
+      "y": 52,
+      "icon": {
+        "id": "twilightforest:trophy"
+      },
+      "prerequisites": [
+        "655df24e-0667-4ee7-b06e-417263f4cc39"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "twilightforest:trophy"
+              }
+            },
+            {
+              "item": {
+                "id": "twilightforest:naga_scale"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 16
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "amount": 20
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 4,
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0b422058-d373-4baf-8aa9-d42f2e101964",
+      "name": "With Daring Skill-eton!",
+      "description": "Find a Nether Fortress and slay some Wither Skeletons for their Bones and Skulls! Make a Tinkers' Cleaver if you're having trouble obtaining Skulls! The Cleaver has built-in Beahadding functionality.",
+      "x": 130,
+      "y": 104,
+      "icon": {
+        "id": "minecraft:skull",
+        "damage": 1
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:skull",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "tconstruct:materials",
+                "damage": 17
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:skull",
+          "damage": 1
+        },
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:5s,id:17s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1d513113-63ca-4195-b8ab-b0096eaf7726",
+      "name": "Don't get caught in the spikes",
+      "description": "Use some Shears to obtain some Thornvines! If you wanna get a lot, make sure to break them from the bottom, since blocks that pop off and are not broken by Shears will just disappear.",
+      "x": 46,
+      "y": 151,
+      "icon": {
+        "id": "natura:nether_thorn_vines"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "natura:nether_thorn_vines"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:quartz_ore",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "82cc57e3-5a8c-437e-927f-2fd2466da06a",
+      "name": "Respawn Anchor but cooler",
+      "description": "Find an Altar built out of Cincinnasite and Bone Blocks! It will contain a Respawner Statue! Mine it up to complete this quest! You can offer it Glowstone Dust to set a spawn point, even in the Nether or End!",
+      "x": 103,
+      "y": 104,
+      "icon": {
+        "id": "betternether:pig_statue_01"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:pig_statue_01"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:glowstone_dust",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "db9eed7a-7a42-4df3-b9fd-4b4759c8d31d",
+      "name": "Enter the Twilight",
+      "description": "Craft a Twilight Rock! It is used to enter the Twilight Forest. Sourround a 2x2 pool of Water with Dirt or Grass blocks, and place any kind of Flowers all the way around (even on the corners). Then throw in the Twilight Rock to create a Twilight Forest Portal!\n\nThis quest will unlock once you've completed the Stalicripe quest in Chapter 3 and the HOP Graphite Dust quest in Chapter 4.",
+      "x": 229,
+      "y": 24,
+      "icon": {
+        "id": "contenttweaker:twilight_rock"
+      },
+      "prerequisites": [
+        "3b8a1b48-8019-41d6-a201-72ef0cc2e5f2",
+        "48dae6a8-5fe1-4b50-b8da-8a4c9e234770"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:twilight_rock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bibliocraft:biblioclipboard",
+          "nbt": "{page1:{title:\"\",taskStates:[I;0,0,0,0,0,0,0,0,0],tasks:{task5:\"\",task6:\"\",task7:\"\",task8:\"\",task9:\"\",task1:\"\",task2:\"\",task3:\"\",task4:\"\"}},totalPages:1,currentPage:1}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c7bdd546-d9fb-49c8-85fc-3769ee0f95ae",
+      "name": "Cin- cinna- citcin... whatever.",
+      "description": "Mine up some Cincinnasite Ore from the Nether! It can be affected by Fortune.",
+      "x": 90,
+      "y": 78,
+      "icon": {
+        "id": "betternether:cincinnasite"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:cincinnasite"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:1s,id:33s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "60c21526-fd4f-4aed-8172-bcafcfc88b2e",
+      "name": "Blub-blubba-blub",
+      "description": "Craft a Brewing Stand!",
+      "x": 59,
+      "y": 175,
+      "icon": {
+        "id": "minecraft:brewing_stand"
+      },
+      "prerequisites": [
+        "9dbeadc2-9dc6-4a00-90ca-b361fcc1c7db"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:brewing_stand"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:blaze_powder",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:potion",
+          "nbt": "{Potion:\"cofhcore:luck2\"}"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:tool.fishing_rod_constantan"
+        },
+        {
+          "id": "thermalfoundation:tool.fishing_rod_electrum"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "442fdb35-f830-41dc-9a12-648a5fb6d966",
+      "name": "Green an chewy",
+      "description": "Obtain some Stalagnate commonly found near Thornvines! Simply chop them with an Axe, you can't obtain the leafy version, but you can obtain Stagnuite Seeds to regrow the plant.",
+      "x": 60,
+      "y": 77,
+      "icon": {
+        "id": "betternether:stalagnate_stem"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:stalagnate_stem"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 771,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "75e16942-beaa-4bd2-8559-75d5d4379bde",
+      "name": "Feels no pain in Forest Fires",
+      "description": "Obtain some Magma Flower Seeds commonly found near Lava Lakes and on Magma Blocks! It's one of the most difficult Flowers to find in the Nether, but don't give up!",
+      "x": 60,
+      "y": 129,
+      "icon": {
+        "id": "betternether:magma_flower"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:magma_flower"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_dark_steel_shears",
+          "damage": 790
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e1e8f6f0-7b70-44ef-ba60-63808665e3fd",
+      "name": "What A-GAVE it away?",
+      "description": "Use some Shears to obtain some Agave plants scattered around in the Nether.",
+      "x": 34,
+      "y": 78,
+      "icon": {
+        "id": "betternether:agave"
+      },
+      "prerequisites": [
+        "cfa5ddba-6cc9-468e-a50a-8c43b51dfce5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "betternether:agave"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "draconicevolution:draconium_ore",
+          "damage": 1,
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

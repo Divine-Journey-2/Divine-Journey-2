@@ -1,1 +1,2864 @@
-{"name":"Machines go Brr Brr","description":" Machines go Brr Brr\nCrank your way through Thermal Expansion, unlock the End, unlock fluid storage, and progress through EnderIO.\n\nAlso beat the game with the Crafting Terminal.","quests":[{"uuid":"1c3fb0c4-ab66-4328-914b-095102dbd1f4","name":"Cinnabar Ore\u0027s finally useful","description":"Use Cinnabar Ore with Liquid Cryotheum in the Fluid Transposer to get a bunch of Cinnabar!","x":29,"y":128,"icon":{"id":"thermalfoundation:material","damage":866},"prerequisites":["2e3d7970-f208-4518-bac0-3d945844e1d3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":866},"required":8}]}],"reward":[{"id":"thermalfoundation:ore","damage":5,"amount":12}],"commandrewards":[]},{"uuid":"0d70e950-fd76-47ce-9d35-6abf313fa62c","name":"Processor overload","description":"Use Mithril Ingots to create Operator Processors! These are used in Fluid Storage related AE2 items.","x":111,"y":176,"icon":{"id":"contenttweaker:operation_processor"},"prerequisites":["a7b54992-ff0b-4d70-b6f6-6026aa2ff1b0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:operation_processor"}}]}],"rewardchoice":[{"id":"plustic:osgloglasingot","amount":12},{"id":"thermalfoundation:material","damage":134,"amount":12}],"commandrewards":[]},{"uuid":"a25b9f78-b501-4f22-a53a-32838483c138","name":"More energy storage options","description":"Craft a regular Energy Cell Frame and make it into an Energy Cell! You can upgrade them with Upgrade Kits, but it might be easier to craft them directly.","x":16,"y":61,"icon":{"id":"thermalexpansion:cell","nbt":"{Recv:1000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:0b,Send:1000}"},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:frame","damage":128}},{"item":{"id":"thermalexpansion:cell","nbt":"{Recv:1000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:0b,Send:1000}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermalfoundation:material","damage":289,"amount":6}],"commandrewards":[]},{"uuid":"cd8170d0-149d-47c5-a8fb-fe974dc44f25","name":"Dark and Energetic","description":"Create Refined Fuel using your Fractionating Still, then Fluid Transpose it onto some Dark Ingots to create Energized Dark Ingots!","x":134,"y":39,"icon":{"id":"contenttweaker:energized_dark_ingot"},"prerequisites":["b57020b5-b13d-4dd2-aa87-73b0730273c6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:energized_dark_ingot"},"required":8}]}],"reward":[{"id":"thermalexpansion:tank","nbt":"{RSControl:0b,Creative:0b,Fluid:{FluidName:\"refined_oil\",Amount:8000},Level:0b,Lock:0b}"}],"commandrewards":[]},{"uuid":"e7fdbb34-ce5d-44b1-8be9-61192088c3d8","name":"Strengthen up!","description":"Upgrade an Extra Utilities Machine Block to a Thermal Expansion one!\n\nApply your various wrenches to the rewarded Morphing Tool to easily swap between them.","x":68,"y":106,"icon":{"id":"thermalexpansion:frame"},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:frame"}}]}],"reward":[{"id":"morphtool:tool"}],"commandrewards":[]},{"uuid":"53f07e86-8555-43d2-86bd-b2535337d920","name":"More Processing time!","description":"Use some Coated Clathrate to create some Estimation Processors!","x":120,"y":150,"icon":{"id":"contenttweaker:estimation_processor"},"prerequisites":["467d065f-ace2-442f-91d9-e6a0165b9122"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:estimation_processor"}}]}],"reward":[{"id":"projectred-core:resource_item","damage":103,"amount":12}],"commandrewards":[]},{"uuid":"6d92fc83-2adc-4d6f-9a53-2c24ec89b755","name":"It\u0027s so... shiny!","description":"Use Cinnabar and Nickel Ore in your Induction Smelter to get Platinum with 100% chance!","x":16,"y":106,"icon":{"id":"thermalfoundation:material","damage":134},"prerequisites":["1c3fb0c4-ab66-4328-914b-095102dbd1f4","61e05308-a57b-4e2d-b011-da6fb1f65690"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":134},"required":4}]}],"reward":[{"id":"contenttweaker:osglolapis","amount":12}],"commandrewards":[]},{"uuid":"db173e20-f0b8-4732-a452-cb06f6cfb6ad","name":"Call yourself Bob Rosin","description":"Craft some Rosin in a Fractionating Still! To get Resin, use either an Arborial Extractor (recommended, since it\u0027s free and will generate passively), or a Sawmill with a Resin Funnel Augment.","x":107,"y":128,"icon":{"id":"thermalfoundation:material","damage":832},"prerequisites":["647266d6-e68b-4738-865e-e560f6f3afa9","7fe5177a-f86b-4178-b32c-02b7880f65fa"],"parentrequirement":1,"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":832},"required":4}]}],"reward":[{"id":"forge:bucketfilled","amount":2,"nbt":"{FluidName:\"tree_oil\",Amount:1000}"}],"commandrewards":[]},{"uuid":"ff28e381-175a-4754-8fc3-1b67fb7d14f3","name":"Auto Crop Farms!","description":"Craft a Farming Station! Place it in the center of a crop field, give it power and a hoe, set its output, and watch it work! Auto cropfarms, hurray!","x":221,"y":109,"icon":{"id":"enderio:block_farm_station"},"prerequisites":["5b049dc5-e24f-43e3-af1a-86037065706e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_farm_station"}}]}],"reward":[{"id":"tconstruct:mattock","nbt":"{StatsOriginal:{AttackSpeedMultiplier:1.0f,HarvestLevelAxe:4,MiningSpeed:7.125f,FreeModifiers:3,HarvestLevelShovel:4,Durability:602,HarvestLevel:4,Attack:6.7875f},Stats:{AttackSpeedMultiplier:1.0f,HarvestLevelAxe:4,MiningSpeed:7.125f,FreeModifiers:0,HarvestLevelShovel:4,Durability:602,HarvestLevel:4,Attack:6.7875f},Special:{Categories:[\"aoe\",\"tool\",\"harvest\"]},TinkerData:{UsedModifiers:3,Materials:[\"alumite\",\"cobalt\",\"dark_steel\"],Modifiers:[\"reinforced\"]},Modifiers:[{identifier:\"global\",color:-43691,level:1},{identifier:\"momentum\",color:-14122284,level:1},{identifier:\"enderference\",color:-9671572,level:1},{identifier:\"reinforced\",color:5254787,level:3}],Traits:[\"global\",\"momentum\",\"enderference\",\"reinforced\"]}"}],"commandrewards":[]},{"uuid":"24cbdefd-3fc5-4bae-87d1-76c90f2f9de4","name":"It never blinks","description":"Craft some Eye of Enders in your Induction Smelter. Use them to find the End Portal!\n\nThe End Exploration related quests are located in Exploration III.","x":28,"y":84,"icon":{"id":"minecraft:ender_eye"},"prerequisites":["61e05308-a57b-4e2d-b011-da6fb1f65690"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:ender_eye"},"required":8}]}],"reward":[{"id":"minecraft:ender_eye","amount":4}],"commandrewards":[]},{"uuid":"217b41ad-9231-4e7d-9eb9-a5dd390273f3","name":"See you Plater!","description":"Craft a Compactor! This is the best way to automatically make all the various types of Plates. You can also create Gears for slightly cheaper.","x":93,"y":106,"icon":{"id":"thermalexpansion:machine","damage":5,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":5,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermalexpansion:augment","damage":337}],"commandrewards":[]},{"uuid":"505d8f79-dd6f-4b16-b61f-7a959af0b528","name":"Reinforce up!","description":"Craft a Device Frame! This is used in all the Thermal Expansion Devices (surprise-surprise), which are Machines that usually don\u0027t need any power to function.","x":94,"y":62,"icon":{"id":"thermalexpansion:frame","damage":64},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:frame","damage":64}}]}],"reward":[{"id":"thermalfoundation:material","damage":134,"amount":8}],"commandrewards":[]},{"uuid":"44c44ec8-1f16-4401-af88-5e0c6479e1f4","name":"Items \u0026 energy both needed?","description":"Combine Hardened Fluxducts and Itemducts to obtain some Signalum-Plated Itemducts. These pipes can transmit both power and items at the same time. You\u0027ll need to use Servos if you want to transmit items.","x":68,"y":16,"icon":{"id":"thermaldynamics:duct_32","damage":4},"prerequisites":["c3b76bd0-676d-4f81-9a5f-2568f517ea11"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_32","damage":4},"required":3}]}],"reward":[{"id":"thermalfoundation:material","damage":165,"amount":4}],"commandrewards":[]},{"uuid":"a7b54992-ff0b-4d70-b6f6-6026aa2ff1b0","name":"It takes everything","description":"Use your Arc Furnace or Alloy Smelter to craft some Mithril Ingots! It takes 1 Mana Dust, 1 Demonlord Ingot and 1 Platinum Ingot to craft one.","x":52,"y":173,"bigicon":true,"icon":{"id":"thermalfoundation:material","damage":136},"prerequisites":["8e089667-8db2-4245-a068-c7b24891ddea","6d92fc83-2adc-4d6f-9a53-2c24ec89b755"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":136},"required":4}]}],"rewardchoice":[{"id":"minecraft:diamond","amount":16},{"id":"minecraft:glowstone","amount":32}],"commandrewards":[]},{"uuid":"6c7fcc8b-7467-4f89-9ca1-41af9354fcd6","name":"Rigidify up!","description":"You haven\u0027t crafted enough Machine Frames yet, so for that reason, craft another. Lovely, isn\u0027t it!?","x":222,"y":62,"icon":{"id":"enderio:item_material","damage":1},"prerequisites":["45cbb8f0-f009-41d5-bddc-c855261da45d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_material","damage":1}}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":6,"amount":8}],"commandrewards":[]},{"uuid":"ca0188b7-72fb-4bcf-95bc-f936b700d310","name":"Up-up-up-uppppgraaaade!!!","description":"Craft all 4 upgrade kits! Use them to upgrade a Basic machine to Resonant tier by Right Clicking on it! The advantages of Resonant tier is that your can apply Augments to the machine. The most useful Augment is likely the Auxiliary Reception Coil, which speeds up the machine.","x":55,"y":39,"icon":{"id":"thermalfoundation:upgrade","damage":3},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:upgrade"}},{"item":{"id":"thermalfoundation:upgrade","damage":1}},{"item":{"id":"thermalfoundation:upgrade","damage":2}},{"item":{"id":"thermalfoundation:upgrade","damage":3}}]}],"reward":[{"id":"thermalfoundation:material","damage":167,"amount":8}],"commandrewards":[]},{"uuid":"21fd5c13-7e64-4e36-b149-01454e21b189","name":"Can\u0027t turn off the tap!","description":"Upgrade your Fluid Conduits into Ender Fluid Conduits! These are one of the best types of Fluid Conduits available.","x":251,"y":16,"icon":{"id":"enderio:item_liquid_conduit","damage":2},"prerequisites":["9c4edff1-af91-4c6e-b7d9-da3fe986d99a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_liquid_conduit","damage":2},"required":6}]}],"reward":[{"id":"enderio:item_liquid_conduit","damage":2,"amount":6}],"commandrewards":[]},{"uuid":"b429f18f-0a79-4218-a023-207fc8509352","name":"4th way to crush","description":"Craft a Pulverizer! It\u0027s probably the best crushing machine you\u0027ll get, especially when fully upgraded to Resonant tier, and provided with 9 Auxiliary Reception Coil upgrades.\n\nYou can also easily setup its side configurations to input and output items from/to your storage.","x":54,"y":84,"icon":{"id":"thermalexpansion:machine","damage":1,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":1,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"contenttweaker:rf_powder","amount":4}],"commandrewards":[]},{"uuid":"66cd6dd8-837d-4236-bf57-d1b74faf6188","name":"Slicin\u0027, Splicin\u0027 and Sacrificin\u0027","description":"Enticing pricing you have there... It\u0027s an Icing to the cake! Consider Slice\u0027n\u0027Splicing? If so, craft a Slice\u0027n\u0027Splice! Give it an Axe and some Shears (a good option is the Dark Steel variant for both), and sacrifice some mob skulls to craft some items with it! If you haven\u0027t made a Beheading Upgrade from Mob Grinding Utils yet, now would be a great time!","x":249,"y":109,"icon":{"id":"enderio:block_slice_and_splice"},"prerequisites":["5b049dc5-e24f-43e3-af1a-86037065706e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_slice_and_splice"}}]}],"reward":[{"id":"enderio:item_dark_steel_axe"},{"id":"enderio:item_dark_steel_shears"}],"commandrewards":[]},{"uuid":"3c01f98b-6c19-44c0-9893-43f2d91e4730","name":"A lot of energy needed?","description":"Upgrade your Fluxducts all the way to the Resonant variant! This type of Fluxduct can transmit of lot of power!","x":42,"y":16,"icon":{"id":"thermaldynamics:duct_0","damage":4},"prerequisites":["c3b76bd0-676d-4f81-9a5f-2568f517ea11"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_0","damage":4},"required":3}]}],"reward":[{"id":"thermalfoundation:material","damage":167,"amount":4}],"commandrewards":[]},{"uuid":"3a22bd00-c515-43ca-a506-4f5d5f2a6b90","name":"HP from Mana","description":"Craft a Red Heart Canister! Your player can equip at most 10 of these and get 1 extra full Heart of health per Canister!","x":85,"y":176,"icon":{"id":"bhc:red_heart_canister"},"prerequisites":["8e089667-8db2-4245-a068-c7b24891ddea"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bhc:red_heart_canister"}}]}],"commandrewards":[]},{"uuid":"2e3d7970-f208-4518-bac0-3d945844e1d3","name":"Bring the vacuum cleaner","description":"Craft all 4 types of Thermal Expansion Dusts!\n\n- To obtain Blizz Powder for Cryotheum, use your Fluid Transposer with Snowballs and Liquid XP.\n\n- To obtain Blitz Powder for Aerotheum, use your Fluid Transposer with Niter and Liquid XP. To get Niter, simply Pulverize Sandstone.\n\n- To get Basaltz Powder for Pethroteum, use your Fluid Transposer with Pulverized Obsidian and Liquid XP.","x":42,"y":152,"icon":{"id":"thermalfoundation:material","damage":1024},"prerequisites":["19910080-ecb8-4b9f-a91b-9d259592c872"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":1024},"required":2},{"item":{"id":"thermalfoundation:material","damage":1025},"required":2},{"item":{"id":"thermalfoundation:material","damage":1026},"required":2},{"item":{"id":"thermalfoundation:material","damage":1027},"required":2}]}],"rewardchoice":[{"id":"minecraft:blaze_powder","amount":16},{"id":"thermalfoundation:material","damage":2049,"amount":16},{"id":"thermalfoundation:material","damage":2051,"amount":16},{"id":"thermalfoundation:material","damage":2053,"amount":16}],"commandrewards":[]},{"uuid":"24c5e686-0af6-4608-b98e-96c552b19258","name":"Fluids on the way!","description":"Craft some Hardened Fluiducts to be able to transport Fluids easily!","x":122,"y":15,"icon":{"id":"thermaldynamics:duct_16","damage":2},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_16","damage":2},"required":6}]}],"reward":[{"id":"thermalfoundation:material","damage":162,"amount":8}],"commandrewards":[]},{"uuid":"3d80a442-f394-46c5-9cb6-955eec9fd344","name":"Rapid access!","description":"Craft some Signalum-Plated Impulse Itemducts by filling up the previous tier with Glowstone! Items travel more rapidly through Glowstone and you can still transmit power through this cable as well.","x":95,"y":15,"icon":{"id":"thermaldynamics:duct_32","damage":6},"prerequisites":["44c44ec8-1f16-4401-af88-5e0c6479e1f4"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_32","damage":6},"required":3}]}],"reward":[{"id":"minecraft:glowstone","amount":12}],"commandrewards":[]},{"uuid":"f16ad429-389c-4533-9b93-fd18d8e07425","name":"Capped off for more power","description":"Craft an Enhanced SAG Mill for even more crushing power!","x":291,"y":179,"icon":{"id":"enderio:block_enhanced_sag_mill"},"prerequisites":["73f62892-f18b-48dd-bb2c-c785a3276474"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_enhanced_sag_mill"},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"enderio:block_alloy","damage":6,"amount":4},{"id":"enderio:block_alloy","damage":2,"amount":4}],"commandrewards":[]},{"uuid":"4dac50b8-4f37-48f8-855e-5b22d1268522","name":"I saw. I milled. I conquered.","description":"Craft a Sawmill! This machine is capable of turning Wood into more Planks than simply crafting them in your Crafting Window, and is also capable of making Sawdust, used in some recipes.","x":82,"y":129,"icon":{"id":"thermalexpansion:machine","damage":2,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":2,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"extrautils2:decorativesolidwood","damage":1,"amount":6}],"commandrewards":[]},{"uuid":"3aebb415-2355-4331-8c0d-ebaddd7d6b62","name":"Emperor of Empowerer","description":"Craft four of all 5 tiers of Empowered Dark Steel Upgrades! They can be applied to Dark Steel Armor one after another. These are needed for other upgrades and to make your armor set take energy instead of durability on hit.\n\nTo apply these upgrades, you need to use a Dark Steel Anvil. Simply have the armor piece equipped and use the tabs in the GUI of the Anvil to be able to apply them.","x":293,"y":39,"icon":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade3\"}"},"prerequisites":["fd096cbe-fd75-40b8-aeb8-6d236a318421"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade\"}"},"required":4},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade1\"}"},"required":4},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade2\"}"},"required":4},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade3\"}"},"required":4},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:energyupgrade4\"}"},"required":4}]}],"reward":[{"id":"enderio:block_wired_charger"}],"commandrewards":[]},{"uuid":"61e05308-a57b-4e2d-b011-da6fb1f65690","name":"Induction intentions","description":"Craft an Induction Smelter! With this machine, you can create alloys that only take 2 inputs. For these types (like Bronze, Electrum, Invar or Vibrant Alloy), the Induction Smelter will do the best job, as it\u0027s really fast when fully upgraded.","x":42,"y":106,"icon":{"id":"thermalexpansion:machine","damage":3,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":3,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermalexpansion:augment","damage":303}],"commandrewards":[]},{"uuid":"b5c8a8dd-abb0-4200-b32d-3c5278dfaf2c","name":"Better than tanks","description":"Craft an 1k ME Fluid Storage Component! Making this into a Cell will allow you to store liquids in your ME System. You can access these with a Fluid Terminal.","x":179,"y":177,"icon":{"id":"appliedenergistics2:material","damage":54},"prerequisites":["0d70e950-fd76-47ce-9d35-6abf313fa62c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":54}}]}],"reward":[{"id":"thermalfoundation:material","damage":1028,"amount":4}],"commandrewards":[]},{"uuid":"87dc306c-4ae2-4a4d-b0ff-59489d8ecf0f","name":"Best way to enchant","description":"Craft an Enchanter! To see the available recipes, click the Paper icon on the top right of its GUI. You can now get any Enchantment with the appropriate payment! No longer do you need to get lucky in the Enchantment Table.","x":180,"y":86,"icon":{"id":"enderio:block_enchanter"},"prerequisites":["45cbb8f0-f009-41d5-bddc-c855261da45d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_enchanter"}}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":2,"amount":12}],"commandrewards":[]},{"uuid":"c7684bdb-3aaf-4242-86bc-f9acce17b574","name":"Much better than tanks","description":"Craft a 4k ME Fluid Storage Component!","x":194,"y":155,"icon":{"id":"appliedenergistics2:material","damage":55},"prerequisites":["b5c8a8dd-abb0-4200-b32d-3c5278dfaf2c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":55}}]}],"reward":[{"id":"thermalfoundation:material","damage":136,"amount":4}],"commandrewards":[]},{"uuid":"45cbb8f0-f009-41d5-bddc-c855261da45d","name":"When Inducting doesn\u0027t cut it","description":"Craft a Basic Alloy Smelter! This is a cheaper version of the Arc Furnace in multiple cases, but it can only handle 3 inputs. But hey, 3 is more than what the Induction Smelter could handle!","x":194,"y":62,"icon":{"id":"enderio:block_simple_alloy_smelter"},"prerequisites":["cab58245-8aff-4170-a713-58e9e13ab4f5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_simple_alloy_smelter"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"contenttweaker:energized_dark_ingot","amount":6}],"commandrewards":[]},{"uuid":"69f01af3-6886-4c20-b6d5-6cf434d6fde0","name":"One item after another","description":"Craft some Item Conduits! They are the EnderIO way to transport items, and probably one of the best ways in general, since they can be used in the same blockspace as other EnderIO Conduits. You can also use Extraction Speed Uprades and Item Filters in them. You can also simple toggle Round Robin mode on to distrubute items equally between outputs and turn Self Feed mode on be able to push items back into the container you were pulling them from.","x":208,"y":39,"icon":{"id":"enderio:item_item_conduit"},"prerequisites":["cd8170d0-149d-47c5-a8fb-fe974dc44f25"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_item_conduit"},"required":6}]}],"reward":[{"id":"enderio:item_item_conduit","amount":6}],"commandrewards":[]},{"uuid":"3931cff9-0a70-415b-9a1a-047cbb48cc7e","name":"Tanks? Pfwah, get them out...","description":"Craft a 64k ME Fluid Storage Component!","x":251,"y":155,"icon":{"id":"appliedenergistics2:material","damage":57},"prerequisites":["83bbc92d-b95f-4382-8603-1d3fca88c2b3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":57}}]}],"reward":[{"id":"contenttweaker:operation_processor","amount":12}],"commandrewards":[]},{"uuid":"25a660ba-e1e8-4cf9-b21d-51c276ab364f","name":"Hoarding and sorting","description":"Craft a Basic Item Filter then upgrade it to an Advanced Item Filter. Apply them to your Item Conduits and guess what they do...!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo, I\u0027m not gonna tell you. You really have to guess.","x":223,"y":16,"icon":{"id":"enderio:item_advanced_item_filter"},"prerequisites":["69f01af3-6886-4c20-b6d5-6cf434d6fde0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_advanced_item_filter"}}]}],"reward":[{"id":"enderio:item_big_item_filter"}],"commandrewards":[]},{"uuid":"8f344bdb-289a-4124-a3bd-086dbe91e028","name":"I\u0027ll Swallow Your Soul!","description":"Craft a Soul Binder! Use Soul Vials with mob souls inside the Soul into an item! Spooky!","x":293,"y":128,"bigicon":true,"icon":{"id":"enderio:block_soul_binder"},"prerequisites":["1bcb4a4b-94bd-4e4c-9e51-eb4f6b5d37fd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_soul_binder"}}]}],"reward":[{"id":"enderio:item_material","damage":15,"amount":2}],"commandrewards":[]},{"uuid":"8e089667-8db2-4245-a068-c7b24891ddea","name":"The Ultimate Dust","description":"Craft together RF Powder, Pyrotheum Dust, Cryotheum Dust, Aeotheum Dust \u0026 Pethroteum Dust to obtain some Mana Dust!","x":27,"y":174,"icon":{"id":"thermalfoundation:material","damage":1028},"prerequisites":["2e3d7970-f208-4518-bac0-3d945844e1d3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":1028},"required":4}]}],"reward":[{"id":"contenttweaker:rf_powder","amount":8}],"commandrewards":[]},{"uuid":"c3b76bd0-676d-4f81-9a5f-2568f517ea11","name":"Some energy needed?","description":"Craft some of the most basic Fluxducts Thermal Expansion has to offer: The Leadstone Fluxducts! They can transmit RF Power, but not a lot of it.","x":16,"y":16,"icon":{"id":"thermaldynamics:duct_0"},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_0"},"required":6}]}],"reward":[{"id":"minecraft:redstone","amount":24}],"commandrewards":[]},{"uuid":"73b58d1f-30dc-4de3-b0ed-2bfd3b8369bc","name":"4th way to smelt","description":"Craft a Redstone Furnace! It\u0027s probably the best smelting machine you\u0027ll get, especially when fully upgraded to Resonant tier, and provided with 9 Auxiliary Reception Coil upgrades.\n\nYou can also easily setup its side configurations to input and output items from/to your storage.","x":81,"y":84,"icon":{"id":"thermalexpansion:machine","nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"tconstruct:materials","amount":32}],"commandrewards":[]},{"uuid":"9c4edff1-af91-4c6e-b7d9-da3fe986d99a","name":"Turn on the tap!","description":"Craft some Fluid Conduits! Though not the best without upgrading them to the next tier, they can still be used in the same blockspace as Item \u0026 Energy Conduits.","x":237,"y":39,"icon":{"id":"enderio:item_liquid_conduit"},"prerequisites":["cd8170d0-149d-47c5-a8fb-fe974dc44f25"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_liquid_conduit"},"required":6}]}],"reward":[{"id":"enderio:item_material","damage":4,"amount":8}],"commandrewards":[]},{"uuid":"2ea27429-19f6-4499-840f-f8161d5ee39f","name":"External Fluid Storage","description":"Instead of crafting Fluid Storage Cells, you can choose to store your Fluids in external tanks or drums that might have a largeer capacity. For this purpose, you can use an ME Fluid Storage Bus.","x":264,"y":178,"icon":{"id":"appliedenergistics2:part","damage":221},"prerequisites":["0d70e950-fd76-47ce-9d35-6abf313fa62c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":221}}]}],"reward":[{"id":"contenttweaker:operation_processor","amount":2}],"commandrewards":[]},{"uuid":"9eb1b9f7-500e-4f9a-b17e-47acdaccf1f2","name":"Like a stewpot, but hotter","description":"Craft a Magma Crucible! This machine can turn many solid items into its liquid form. You\u0027ll mostly need to use it to provide various liquids for the Fluid Transposer.","x":69,"y":151,"icon":{"id":"thermalexpansion:machine","damage":6,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":6,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermalexpansion:augment","damage":352}],"commandrewards":[]},{"uuid":"535851ac-3584-4273-be91-e248f143ce27","name":"Incapacitate","description":"Craft all 3 tiers of regular EnderIO Capacitors! They can be used in all non-basic EnderIO machines to increase their production speed. Even higher tier Capacitors will be available later.","x":208,"y":86,"icon":{"id":"enderio:item_basic_capacitor","damage":1},"prerequisites":["6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_basic_capacitor"}},{"item":{"id":"enderio:item_basic_capacitor","damage":1}},{"item":{"id":"enderio:item_basic_capacitor","damage":2}}]}],"reward":[{"id":"contenttweaker:energized_dark_ingot","amount":8}],"commandrewards":[]},{"uuid":"144b9811-1bcc-4bb7-a28a-5bd2337cf245","name":"Bigger and better","description":"You thought the Alloy Smelter was gonna be that slow?! Well, no longer! Introducing: The Enhanced Alloy Smelter, which is more than twice as fast.","x":278,"y":155,"icon":{"id":"enderio:block_enhanced_alloy_smelter"},"prerequisites":["73f62892-f18b-48dd-bb2c-c785a3276474"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_enhanced_alloy_smelter"},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"enderio:block_alloy","damage":6,"amount":4},{"id":"enderio:block_alloy","damage":2,"amount":4}],"commandrewards":[]},{"uuid":"e9a62916-6f27-40eb-9b0b-952cfc0b6016","name":"Accessing your fluids","description":"Craft a Fluid Terminal! Through this you can see all stored Fluids in your ME System, and manually import and export a couple of buckets at once. Through I recommend Fluid Export and Import Buses for this job, especially if you\u0027re working with larger amounts.","x":208,"y":178,"icon":{"id":"appliedenergistics2:part","damage":520},"prerequisites":["0d70e950-fd76-47ce-9d35-6abf313fa62c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":520}}]}],"reward":[{"id":"contenttweaker:operation_processor","amount":2}],"commandrewards":[]},{"uuid":"88080dbd-99a4-4081-90fe-37facef72925","name":"Upgraded and stronger","description":"Smelt some Dark Steel in your Basic Alloy Smelter to be able to craft an actual Alloy Smelter! This machine can be upgraded with Capacitors for faster production.","x":251,"y":62,"icon":{"id":"enderio:block_alloy_smelter"},"prerequisites":["6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_alloy_smelter"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":6,"amount":16}],"commandrewards":[]},{"uuid":"73f62892-f18b-48dd-bb2c-c785a3276474","name":"Fortificate up!","description":"I heard you like Machine Chassis\u0027, so I put some Machine Chassis\u0027 in your Machine Chassis\u0027 so you can enjoy more Machine Chassis\u0027 along the way!","x":263,"y":132,"icon":{"id":"enderio:item_material","damage":54},"prerequisites":["5b049dc5-e24f-43e3-af1a-86037065706e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_material","damage":54}}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":8,"amount":8}],"commandrewards":[]},{"uuid":"cab58245-8aff-4170-a713-58e9e13ab4f5","name":"Stiffen up!","description":"Dig down to the bottom of the overworld and light up some of the Bedrock! Once the fire extinguishes, some Grains of Infinity will pop off. Collect them!\n\nI wonder if you\u0027ll have to automate this process... Hmmm... (Yes, yes you do.)\n\nThen use the grains you\u0027ve obtained to craft a Simple Machine Chassis from EnderIO!","x":180,"y":39,"icon":{"id":"enderio:item_material"},"prerequisites":["cd8170d0-149d-47c5-a8fb-fe974dc44f25"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_material","damage":20},"required":4},{"item":{"id":"enderio:item_material"}}]}],"reward":[{"id":"enderio:item_material","damage":20,"amount":10}],"commandrewards":[]},{"uuid":"5e403f6f-77c5-42fd-9f28-92a4348820df","name":"Got a cold","description":"Craft a Glacial Precipitator! With this machine, you can automatically create Snow, Ice or Packed Ice out of Water! Simply feed it Water with an Aqueous Acumulator, an Unending Bowl or an Endervoir, give it some power and watch it work!","x":68,"y":62,"icon":{"id":"thermalexpansion:machine","damage":14,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":14,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"}}]}],"reward":[{"id":"thermalfoundation:material","damage":25,"amount":6}],"commandrewards":[]},{"uuid":"83bbc92d-b95f-4382-8603-1d3fca88c2b3","name":"A lot better than tanks","description":"Craft a 16k ME Fluid Storage Component!","x":223,"y":155,"icon":{"id":"appliedenergistics2:material","damage":56},"prerequisites":["c7684bdb-3aaf-4242-86bc-f9acce17b574"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":56}}]}],"reward":[{"id":"thermalfoundation:storage","damage":8}],"commandrewards":[]},{"uuid":"1bcb4a4b-94bd-4e4c-9e51-eb4f6b5d37fd","name":"Caught you!","description":"Craft a Soul Vial! Use it to catch mobs. You can later use them for crafting with the Soul Binder, or soon enough - to automatically spawn more of them... See Chapter 13: Ender Upgrades.","x":277,"y":110,"icon":{"id":"enderio:item_soul_vial"},"prerequisites":["66cd6dd8-837d-4236-bf57-d1b74faf6188"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_soul_vial"}}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":7,"amount":8}],"commandrewards":[]},{"uuid":"8795986b-0a71-45f6-a064-18994998e7cd","name":"Banking the power","description":"Craft a Basic Capacitor Bank. It can store some power, but you likely want to upgrade it further!","x":194,"y":110,"icon":{"id":"enderio:block_cap_bank","damage":1},"prerequisites":["535851ac-3584-4273-be91-e248f143ce27"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_cap_bank","damage":1},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"enderio:item_basic_capacitor","amount":8}],"commandrewards":[]},{"uuid":"1d097780-cb92-41ed-9ef4-23b026333252","name":"Thirsty? I have the solution!","description":"Craft an Aqueous Acumulator! Place at least 2 Water Source blocks next to it. This is a fast way to generate a lot of Water for a couple of your machines.","x":120,"y":62,"icon":{"id":"thermalexpansion:device","nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;0B,1B,0B,0B,0B,0B]}"},"prerequisites":["505d8f79-dd6f-4b16-b61f-7a959af0b528"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:device","nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;0B,1B,0B,0B,0B,0B]}"}}]}],"reward":[{"id":"minecraft:water_bucket","amount":2}],"commandrewards":[]},{"uuid":"b57020b5-b13d-4dd2-aa87-73b0730273c6","name":"Beats Psychic types","description":"Craft some Dark Ingots! You can find Bitumen underground to obtain Tar, you can either\n\n- Use a Fractionating Still with Oil (found underground), Crude Oil (obtained from Bitumen) or Liquifacted Coal (obtained from Pulverized Coal); or\n\n- Use DivineRPG Tar and Slimeballs in a Fluid Transposer.","x":134,"y":83,"icon":{"id":"contenttweaker:dark_ingot"},"prerequisites":["2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:dark_ingot"},"required":4}]}],"reward":[{"id":"thermalexpansion:tank","nbt":"{RSControl:0b,Creative:0b,Fluid:{FluidName:\"smoldering_tar\",Amount:20000},Level:0b,Lock:0b}"}],"commandrewards":[]},{"uuid":"6ef092ad-1fc9-4c69-96f5-dc723bffc35c","name":"The Best XP Storage","description":"Craft an Experience Obelisk! You can pump Liquid XP in and out from it, or simply use the ingame GUI to store or gain XP with some simple button presses.","x":208,"y":132,"icon":{"id":"enderio:block_experience_obelisk"},"prerequisites":["5b049dc5-e24f-43e3-af1a-86037065706e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_experience_obelisk"}}]}],"rewardchoice":[{"id":"enderio:item_alloy_ingot","damage":2,"amount":12},{"id":"enderio:item_alloy_ingot","damage":7,"amount":32}],"commandrewards":[]},{"uuid":"069f8dbc-5cef-4720-918b-5a70998c8dfb","name":"Velocity: acquired!","description":"Craft some Extract Speed Upgrades. You can apply these to your Item Conduits for faster extraction. (Incredible, I know!)","x":194,"y":16,"icon":{"id":"enderio:item_extract_speed_upgrade"},"prerequisites":["69f01af3-6886-4c20-b6d5-6cf434d6fde0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_extract_speed_upgrade"}}]}],"reward":[{"id":"enderio:item_extract_speed_upgrade","amount":3}],"commandrewards":[]},{"uuid":"7fe5177a-f86b-4178-b32c-02b7880f65fa","name":"Tree fluid, we glooin\u0027","description":"Craft an Arboreal Extractor! To use it, place it next to the bottom of a naturally grown tree. Different tree types will provide different types of fluids, you are looking for Resin. To see which tree type gives which fluid, you can check the usages for the \"Augment: Resin Funnel\" item, since the same types of trees yield Resin in a Sawmill. However, I recommend this method for obtaining large amounts of Resin, since this is free and will passively generate.","x":107,"y":84,"icon":{"id":"thermalexpansion:device","damage":3,"nbt":"{RSControl:0b,Facing:2b,Creative:0b,Level:0b,SideCache:[B;1B,1B,0B,2B,2B,2B]}"},"prerequisites":["505d8f79-dd6f-4b16-b61f-7a959af0b528"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:device","damage":3,"nbt":"{RSControl:0b,Facing:2b,Creative:0b,Level:0b,SideCache:[B;1B,1B,0B,2B,2B,2B]}"}}]}],"reward":[{"id":"natura:overworld_sapling2","amount":8},{"id":"minecraft:dye","damage":15,"amount":64}],"commandrewards":[]},{"uuid":"49aed2e5-16a5-447f-b24a-6c126dcca4e0","name":"Most important upgrades","description":"I laid out the most important Dark Steel Upgrades: the ones that make this armor set pretty powerful. Craft them and apply them in a Dark Steel Anvil!","x":292,"y":86,"icon":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:elytra\"}"},"prerequisites":["fd096cbe-fd75-40b8-aeb8-6d236a318421"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:elytra\"}"}},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:nightvision\"}"}},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:inv2\"}"}},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:jumpboost3\"}"}},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:speedboost3\"}"}},{"item":{"id":"enderio:item_dark_steel_upgrade","damage":1,"nbt":"{\"enderio:dsu\":\"enderio:step_assist\"}"}}]}],"reward":[{"id":"enderio:block_alloy","damage":6,"amount":3}],"commandrewards":[]},{"uuid":"19910080-ecb8-4b9f-a91b-9d259592c872","name":"Fluidic Relocation","description":"Craft a Fluid Transposer! When used in conjuction with a Magma Crucible, you can use some kind of an input item and some kind of fluid provided by the Crucible to craft new items. This machine will be heavily used from now on, so make sure to at least semi-automate it. You can also craft Treated Wood and Coated Clathrate cheaper with this machine.","x":55,"y":129,"icon":{"id":"thermalexpansion:machine","damage":8,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":8,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"forge:bucketfilled","nbt":"{FluidName:\"creosote\",Amount:1000}"},{"id":"minecraft:planks","amount":10}],"commandrewards":[]},{"uuid":"2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f","name":"Favorite operation: Division","description":"Craft a Fractionating Still! This machine is used for multiple progression-related crafts. It can turn various liquids into solids and other liquids.","x":121,"y":106,"icon":{"id":"thermalexpansion:machine","damage":7,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,2B,3B,3B,3B,3B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":7,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,2B,3B,3B,3B,3B],Level:0b}"}}]}],"reward":[{"id":"thermalfoundation:material","damage":292,"amount":6}],"commandrewards":[]},{"uuid":"1727403f-b551-4ed0-bcb2-ed2c03939e7c","name":"Just don\u0027t Vat yourself!","description":"Craft an Enhanced Vat! You\u0027ll many of the EnderIO Liquids crafted by this machine to continue in the following chapters.","x":236,"y":132,"icon":{"id":"enderio:block_enhanced_vat"},"prerequisites":["73f62892-f18b-48dd-bb2c-c785a3276474"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_enhanced_vat"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"enderio:block_tank","damage":1,"amount":2},{"id":"enderio:item_alloy_ingot","damage":6,"amount":16}],"commandrewards":[]},{"uuid":"cdb03ba9-e03f-4ab9-98ed-0075522756c9","name":"Hot stuff","description":"Craft an Igneous Extruder! Using this machine you can mix Lava and Water to create various stone like Cobblestone, Obsidian, Basalt, or many of the Underground Biomes Stone variants! Simply feed it Lava and Water and watch it work! Note: For Obsidian, Lava does get consumed. For the others, it doesn\u0027t.","x":42,"y":62,"icon":{"id":"thermalexpansion:machine","damage":15,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"},"prerequisites":["e7fdbb34-ce5d-44b1-8be9-61192088c3d8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:machine","damage":15,"nbt":"{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"}}]}],"rewardchoice":[{"id":"thermalexpansion:augment","damage":496},{"id":"thermalexpansion:augment","damage":497}],"commandrewards":[]},{"uuid":"52ec545f-f740-4e0f-91e2-ba37a8926fd6","name":"Zwoom..! - goes the power.","description":"Craft some Ender Energy Conduits! These are the highest tier Energy Conduits that are available to you currently, and the best ones for the job! Later you\u0027ll be able to make even better Energy Conduits from EnderIO Endergy.","x":280,"y":16,"icon":{"id":"enderio:item_power_conduit","damage":2},"prerequisites":["1ab0c84c-0027-491e-98af-3f9d115c49c4"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_power_conduit","damage":2},"required":6}]}],"reward":[{"id":"enderio:item_power_conduit","damage":2,"amount":6}],"commandrewards":[]},{"uuid":"467d065f-ace2-442f-91d9-e6a0165b9122","name":"It\u0027s a gem, it\u0027s a pebble!","description":"Craft some Coated Clathrate either in the Induction Smelter or the Fluid Transposer!\n\nYou need to have visited the End for Resonant Clathrate.","x":133,"y":128,"icon":{"id":"contenttweaker:coated_clathrate"},"prerequisites":["2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f","db173e20-f0b8-4732-a452-cb06f6cfb6ad"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:coated_clathrate"},"required":4}]}],"reward":[{"id":"contenttweaker:coated_clathrate","amount":4}],"commandrewards":[]},{"uuid":"2ad509b2-d097-4400-bde2-525521c87be0","name":"New settings \u003d Old settings","description":"Craft a Redprint! You can use it to copy a machine\u0027s side configurations to a new machine. It can save you a lot of time.","x":81,"y":39,"icon":{"id":"thermalfoundation:diagram_redprint"},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:diagram_redprint"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"contenttweaker:rf_powder"}],"commandrewards":[]},{"uuid":"1ab0c84c-0027-491e-98af-3f9d115c49c4","name":"Plugging in","description":"Craft some Energy Conduits! Use them as an upgrade base for higher tier EnderIO Energy Conduits.","x":265,"y":39,"icon":{"id":"enderio:item_power_conduit"},"prerequisites":["cd8170d0-149d-47c5-a8fb-fe974dc44f25"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_power_conduit"},"required":6}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":1,"amount":2}],"commandrewards":[]},{"uuid":"73e3b3be-b6d7-4146-9444-59edee431956","name":"Crafting Time!","description":"Make an ME Crafting Terminal! Upgrade your old ME Terminal to be able to directly craft using your items in your ME System!","x":137,"y":176,"icon":{"id":"appliedenergistics2:part","damage":360},"prerequisites":["53f07e86-8555-43d2-86bd-b2535337d920"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":360}}]}],"reward":[{"id":"appliedenergistics2:view_cell"}],"commandrewards":[]},{"uuid":"fd096cbe-fd75-40b8-aeb8-6d236a318421","name":"Riches get a great armor set","description":"Once you\u0027ve accumulated a lot of Dark Steel and Enderium, you can make the best midgame armor set: The Dark Steel Set!\n\nNow, without upgrades you might not think this set is that powerful, but just type \"Dark Steel Upgrade\" into JEI to see the sheer amount of upgrade options available. Pretty much all of them are useful, so get on with the crafting!\n\nAlso, don\u0027t forget that this armor is still enchantable besides being upgradable.","x":278,"y":63,"icon":{"id":"enderio:item_dark_steel_chestplate"},"prerequisites":["88080dbd-99a4-4081-90fe-37facef72925"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_dark_steel_helmet"}},{"item":{"id":"enderio:item_dark_steel_chestplate"}},{"item":{"id":"enderio:item_dark_steel_leggings"}},{"item":{"id":"enderio:item_dark_steel_boots"}}]}],"reward":[{"id":"thermalfoundation:material","damage":167,"amount":12},{"id":"minecraft:diamond","amount":12}],"commandrewards":[]},{"uuid":"0033b556-0115-4aaf-90c0-4c04a6f5649c","name":"Ocean currents on the way!","description":"Upgrade your Hardened Fluidcuts to Super-Laminar Fluiducts for limitless fluid transfer!","x":108,"y":39,"icon":{"id":"thermaldynamics:duct_16","damage":6},"prerequisites":["24c5e686-0af6-4608-b98e-96c552b19258"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_16","damage":6},"required":3}]}],"reward":[{"id":"thermalfoundation:material","damage":163,"amount":8}],"commandrewards":[]},{"uuid":"647266d6-e68b-4738-865e-e560f6f3afa9","name":"Ressin\u0027 around","description":"Craft a Ressin Funnel Augment! Apply it to your Sawmill to be able to create Resin. Check which Wood types give Resin in JEI (simply check the usages for this Augment), since that\u0027s the type of fluid you\u0027ll need in the future.","x":95,"y":151,"icon":{"id":"thermalexpansion:augment","damage":288},"prerequisites":["4dac50b8-4f37-48f8-855e-5b22d1268522"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:augment","damage":288}}]}],"rewardchoice":[{"id":"thermalfoundation:material","damage":162,"amount":12},{"id":"thermalfoundation:material","damage":161,"amount":12}],"commandrewards":[]},{"uuid":"10649f8e-50f7-4ff1-a920-8f381a0b6a8c","name":"5th way to crush","description":"Craft a SAG Mill! Though the Pulverizer might be the best when fully upgraded, this machine isn\u0027t far behind! Later the Enhanced version with higher tier Capacitors can do the job pretty much as good as a fully upgraded Pulverizer.","x":264,"y":86,"icon":{"id":"enderio:block_sag_mill"},"prerequisites":["6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_sag_mill"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"e59e62bf-4c67-4856-8a59-ff1c7380c123","name":"Huge power banking!","description":"Craft some Capacitor Banks together to obtain a Vibrant Capacitor Bank! The advantage of using them over any other mod\u0027s power storage options, is that you can create a huge multiblock of Capacitor Banks that can store even more power!","x":180,"y":132,"icon":{"id":"enderio:block_cap_bank","damage":3},"prerequisites":["8795986b-0a71-45f6-a064-18994998e7cd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:block_cap_bank","damage":3},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"plustic:osgloglasingot","amount":32},{"id":"enderio:item_alloy_ingot","damage":2,"amount":32}],"commandrewards":[]},{"uuid":"2e0d6ef0-6b2c-492b-93ce-9e1367afabf2","name":"Stockpilin\u0027 the energy!","description":"Craft a Resonant Energy Cell Frame, fill it up, and craft it into a Resonant Energy Cell! To find Energy Cell recipes, look up the usages of the Invar Gear, Electrum Gear, Signalum Gear, (or in this case) the Enderium Gear. It might be easier to craft them directly rather than upgrading them.","x":29,"y":39,"icon":{"id":"thermalexpansion:cell","nbt":"{Recv:25000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:4b,Send:25000}"},"prerequisites":["ef3305a9-e858-4b20-96bf-3f8674530197"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:frame","damage":132}},{"item":{"id":"thermalexpansion:frame","damage":148}},{"item":{"id":"thermalexpansion:cell","nbt":"{Recv:25000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:4b,Send:25000}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermalfoundation:material","damage":295,"amount":6}],"commandrewards":[]},{"uuid":"96e9171c-05e0-4872-b096-001ececb7558","name":"Speed is key","description":"Craft 4 Auxiliary Reception Coil Augments. This is the maximum amount you can apply to a Resonant machine! 1 upgrade per tier.","x":15,"y":152,"icon":{"id":"thermalexpansion:augment","damage":128},"prerequisites":["1c3fb0c4-ab66-4328-914b-095102dbd1f4"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:augment","damage":128},"required":4}]}],"rewardchoice":[{"id":"thermalfoundation:material","damage":289,"amount":8},{"id":"thermalfoundation:material","damage":293,"amount":6}],"commandrewards":[]},{"uuid":"21cc2707-2e64-4540-ad56-becc0500f288","name":"Fluid in, fluid out!","description":"Craft an ME Fluid Import Bus and an ME Fluid Export Bus! They work just like their item counterparts, except for Fluids.","x":236,"y":178,"icon":{"id":"appliedenergistics2:part","damage":241},"prerequisites":["0d70e950-fd76-47ce-9d35-6abf313fa62c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":241}},{"item":{"id":"appliedenergistics2:part","damage":261}}]}],"reward":[{"id":"contenttweaker:operation_processor","amount":2}],"commandrewards":[]},{"uuid":"5b049dc5-e24f-43e3-af1a-86037065706e","name":"Coarsen up!","description":"Soulificate your Machine Chassis to gain access to more machines from EnderIO!","x":236,"y":86,"icon":{"id":"enderio:item_material","damage":53},"prerequisites":["6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_material","damage":53}}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":7,"amount":8}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "Machines go Brr Brr",
+  "description": " Machines go Brr Brr\nCrank your way through Thermal Expansion, unlock the End, unlock fluid storage, and progress through EnderIO.\n\nAlso beat the game with the Crafting Terminal.",
+  "quests": [
+    {
+      "uuid": "1c3fb0c4-ab66-4328-914b-095102dbd1f4",
+      "name": "Cinnabar Ore's finally useful",
+      "description": "Use Cinnabar Ore with Liquid Cryotheum in the Fluid Transposer to get a bunch of Cinnabar!",
+      "x": 29,
+      "y": 128,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 866
+      },
+      "prerequisites": [
+        "2e3d7970-f208-4518-bac0-3d945844e1d3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 866
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 5,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0d70e950-fd76-47ce-9d35-6abf313fa62c",
+      "name": "Processor overload",
+      "description": "Use Mithril Ingots to create Operator Processors! These are used in Fluid Storage related AE2 items.",
+      "x": 111,
+      "y": 176,
+      "icon": {
+        "id": "contenttweaker:operation_processor"
+      },
+      "prerequisites": [
+        "a7b54992-ff0b-4d70-b6f6-6026aa2ff1b0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:operation_processor"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plustic:osgloglasingot",
+          "amount": 12
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 134,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a25b9f78-b501-4f22-a53a-32838483c138",
+      "name": "More energy storage options",
+      "description": "Craft a regular Energy Cell Frame and make it into an Energy Cell! You can upgrade them with Upgrade Kits, but it might be easier to craft them directly.",
+      "x": 16,
+      "y": 61,
+      "icon": {
+        "id": "thermalexpansion:cell",
+        "nbt": "{Recv:1000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:0b,Send:1000}"
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:frame",
+                "damage": 128
+              }
+            },
+            {
+              "item": {
+                "id": "thermalexpansion:cell",
+                "nbt": "{Recv:1000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:0b,Send:1000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 289,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cd8170d0-149d-47c5-a8fb-fe974dc44f25",
+      "name": "Dark and Energetic",
+      "description": "Create Refined Fuel using your Fractionating Still, then Fluid Transpose it onto some Dark Ingots to create Energized Dark Ingots!",
+      "x": 134,
+      "y": 39,
+      "icon": {
+        "id": "contenttweaker:energized_dark_ingot"
+      },
+      "prerequisites": [
+        "b57020b5-b13d-4dd2-aa87-73b0730273c6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:energized_dark_ingot"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalexpansion:tank",
+          "nbt": "{RSControl:0b,Creative:0b,Fluid:{FluidName:\"refined_oil\",Amount:8000},Level:0b,Lock:0b}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e7fdbb34-ce5d-44b1-8be9-61192088c3d8",
+      "name": "Strengthen up!",
+      "description": "Upgrade an Extra Utilities Machine Block to a Thermal Expansion one!\n\nApply your various wrenches to the rewarded Morphing Tool to easily swap between them.",
+      "x": 68,
+      "y": 106,
+      "icon": {
+        "id": "thermalexpansion:frame"
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:frame"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "morphtool:tool"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "53f07e86-8555-43d2-86bd-b2535337d920",
+      "name": "More Processing time!",
+      "description": "Use some Coated Clathrate to create some Estimation Processors!",
+      "x": 120,
+      "y": 150,
+      "icon": {
+        "id": "contenttweaker:estimation_processor"
+      },
+      "prerequisites": [
+        "467d065f-ace2-442f-91d9-e6a0165b9122"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:estimation_processor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "projectred-core:resource_item",
+          "damage": 103,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6d92fc83-2adc-4d6f-9a53-2c24ec89b755",
+      "name": "It's so... shiny!",
+      "description": "Use Cinnabar and Nickel Ore in your Induction Smelter to get Platinum with 100% chance!",
+      "x": 16,
+      "y": 106,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 134
+      },
+      "prerequisites": [
+        "1c3fb0c4-ab66-4328-914b-095102dbd1f4",
+        "61e05308-a57b-4e2d-b011-da6fb1f65690"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 134
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:osglolapis",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "db173e20-f0b8-4732-a452-cb06f6cfb6ad",
+      "name": "Call yourself Bob Rosin",
+      "description": "Craft some Rosin in a Fractionating Still! To get Resin, use either an Arborial Extractor (recommended, since it's free and will generate passively), or a Sawmill with a Resin Funnel Augment.",
+      "x": 107,
+      "y": 128,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 832
+      },
+      "prerequisites": [
+        "647266d6-e68b-4738-865e-e560f6f3afa9",
+        "7fe5177a-f86b-4178-b32c-02b7880f65fa"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 832
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "forge:bucketfilled",
+          "amount": 2,
+          "nbt": "{FluidName:\"tree_oil\",Amount:1000}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ff28e381-175a-4754-8fc3-1b67fb7d14f3",
+      "name": "Auto Crop Farms!",
+      "description": "Craft a Farming Station! Place it in the center of a crop field, give it power and a hoe, set its output, and watch it work! Auto cropfarms, hurray!",
+      "x": 221,
+      "y": 109,
+      "icon": {
+        "id": "enderio:block_farm_station"
+      },
+      "prerequisites": [
+        "5b049dc5-e24f-43e3-af1a-86037065706e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_farm_station"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:mattock",
+          "nbt": "{StatsOriginal:{AttackSpeedMultiplier:1.0f,HarvestLevelAxe:4,MiningSpeed:7.125f,FreeModifiers:3,HarvestLevelShovel:4,Durability:602,HarvestLevel:4,Attack:6.7875f},Stats:{AttackSpeedMultiplier:1.0f,HarvestLevelAxe:4,MiningSpeed:7.125f,FreeModifiers:0,HarvestLevelShovel:4,Durability:602,HarvestLevel:4,Attack:6.7875f},Special:{Categories:[\"aoe\",\"tool\",\"harvest\"]},TinkerData:{UsedModifiers:3,Materials:[\"alumite\",\"cobalt\",\"dark_steel\"],Modifiers:[\"reinforced\"]},Modifiers:[{identifier:\"global\",color:-43691,level:1},{identifier:\"momentum\",color:-14122284,level:1},{identifier:\"enderference\",color:-9671572,level:1},{identifier:\"reinforced\",color:5254787,level:3}],Traits:[\"global\",\"momentum\",\"enderference\",\"reinforced\"]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24cbdefd-3fc5-4bae-87d1-76c90f2f9de4",
+      "name": "It never blinks",
+      "description": "Craft some Eye of Enders in your Induction Smelter. Use them to find the End Portal!\n\nThe End Exploration related quests are located in Exploration III.",
+      "x": 28,
+      "y": 84,
+      "icon": {
+        "id": "minecraft:ender_eye"
+      },
+      "prerequisites": [
+        "61e05308-a57b-4e2d-b011-da6fb1f65690"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:ender_eye"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:ender_eye",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "217b41ad-9231-4e7d-9eb9-a5dd390273f3",
+      "name": "See you Plater!",
+      "description": "Craft a Compactor! This is the best way to automatically make all the various types of Plates. You can also create Gears for slightly cheaper.",
+      "x": 93,
+      "y": 106,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 5,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 5,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalexpansion:augment",
+          "damage": 337
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "505d8f79-dd6f-4b16-b61f-7a959af0b528",
+      "name": "Reinforce up!",
+      "description": "Craft a Device Frame! This is used in all the Thermal Expansion Devices (surprise-surprise), which are Machines that usually don't need any power to function.",
+      "x": 94,
+      "y": 62,
+      "icon": {
+        "id": "thermalexpansion:frame",
+        "damage": 64
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:frame",
+                "damage": 64
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 134,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "44c44ec8-1f16-4401-af88-5e0c6479e1f4",
+      "name": "Items & energy both needed?",
+      "description": "Combine Hardened Fluxducts and Itemducts to obtain some Signalum-Plated Itemducts. These pipes can transmit both power and items at the same time. You'll need to use Servos if you want to transmit items.",
+      "x": 68,
+      "y": 16,
+      "icon": {
+        "id": "thermaldynamics:duct_32",
+        "damage": 4
+      },
+      "prerequisites": [
+        "c3b76bd0-676d-4f81-9a5f-2568f517ea11"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_32",
+                "damage": 4
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 165,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a7b54992-ff0b-4d70-b6f6-6026aa2ff1b0",
+      "name": "It takes everything",
+      "description": "Use your Arc Furnace or Alloy Smelter to craft some Mithril Ingots! It takes 1 Mana Dust, 1 Demonlord Ingot and 1 Platinum Ingot to craft one.",
+      "x": 52,
+      "y": 173,
+      "bigicon": true,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 136
+      },
+      "prerequisites": [
+        "8e089667-8db2-4245-a068-c7b24891ddea",
+        "6d92fc83-2adc-4d6f-9a53-2c24ec89b755"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 136
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:glowstone",
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6c7fcc8b-7467-4f89-9ca1-41af9354fcd6",
+      "name": "Rigidify up!",
+      "description": "You haven't crafted enough Machine Frames yet, so for that reason, craft another. Lovely, isn't it!?",
+      "x": 222,
+      "y": 62,
+      "icon": {
+        "id": "enderio:item_material",
+        "damage": 1
+      },
+      "prerequisites": [
+        "45cbb8f0-f009-41d5-bddc-c855261da45d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_material",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 6,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ca0188b7-72fb-4bcf-95bc-f936b700d310",
+      "name": "Up-up-up-uppppgraaaade!!!",
+      "description": "Craft all 4 upgrade kits! Use them to upgrade a Basic machine to Resonant tier by Right Clicking on it! The advantages of Resonant tier is that your can apply Augments to the machine. The most useful Augment is likely the Auxiliary Reception Coil, which speeds up the machine.",
+      "x": 55,
+      "y": 39,
+      "icon": {
+        "id": "thermalfoundation:upgrade",
+        "damage": 3
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:upgrade"
+              }
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:upgrade",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:upgrade",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:upgrade",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 167,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "21fd5c13-7e64-4e36-b149-01454e21b189",
+      "name": "Can't turn off the tap!",
+      "description": "Upgrade your Fluid Conduits into Ender Fluid Conduits! These are one of the best types of Fluid Conduits available.",
+      "x": 251,
+      "y": 16,
+      "icon": {
+        "id": "enderio:item_liquid_conduit",
+        "damage": 2
+      },
+      "prerequisites": [
+        "9c4edff1-af91-4c6e-b7d9-da3fe986d99a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_liquid_conduit",
+                "damage": 2
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_liquid_conduit",
+          "damage": 2,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b429f18f-0a79-4218-a023-207fc8509352",
+      "name": "4th way to crush",
+      "description": "Craft a Pulverizer! It's probably the best crushing machine you'll get, especially when fully upgraded to Resonant tier, and provided with 9 Auxiliary Reception Coil upgrades.\n\nYou can also easily setup its side configurations to input and output items from/to your storage.",
+      "x": 54,
+      "y": 84,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 1,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 1,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:rf_powder",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "66cd6dd8-837d-4236-bf57-d1b74faf6188",
+      "name": "Slicin', Splicin' and Sacrificin'",
+      "description": "Enticing pricing you have there... It's an Icing to the cake! Consider Slice'n'Splicing? If so, craft a Slice'n'Splice! Give it an Axe and some Shears (a good option is the Dark Steel variant for both), and sacrifice some mob skulls to craft some items with it! If you haven't made a Beheading Upgrade from Mob Grinding Utils yet, now would be a great time!",
+      "x": 249,
+      "y": 109,
+      "icon": {
+        "id": "enderio:block_slice_and_splice"
+      },
+      "prerequisites": [
+        "5b049dc5-e24f-43e3-af1a-86037065706e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_slice_and_splice"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_dark_steel_axe"
+        },
+        {
+          "id": "enderio:item_dark_steel_shears"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3c01f98b-6c19-44c0-9893-43f2d91e4730",
+      "name": "A lot of energy needed?",
+      "description": "Upgrade your Fluxducts all the way to the Resonant variant! This type of Fluxduct can transmit of lot of power!",
+      "x": 42,
+      "y": 16,
+      "icon": {
+        "id": "thermaldynamics:duct_0",
+        "damage": 4
+      },
+      "prerequisites": [
+        "c3b76bd0-676d-4f81-9a5f-2568f517ea11"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_0",
+                "damage": 4
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 167,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3a22bd00-c515-43ca-a506-4f5d5f2a6b90",
+      "name": "HP from Mana",
+      "description": "Craft a Red Heart Canister! Your player can equip at most 10 of these and get 1 extra full Heart of health per Canister!",
+      "x": 85,
+      "y": 176,
+      "icon": {
+        "id": "bhc:red_heart_canister"
+      },
+      "prerequisites": [
+        "8e089667-8db2-4245-a068-c7b24891ddea"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bhc:red_heart_canister"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2e3d7970-f208-4518-bac0-3d945844e1d3",
+      "name": "Bring the vacuum cleaner",
+      "description": "Craft all 4 types of Thermal Expansion Dusts!\n\n- To obtain Blizz Powder for Cryotheum, use your Fluid Transposer with Snowballs and Liquid XP.\n\n- To obtain Blitz Powder for Aerotheum, use your Fluid Transposer with Niter and Liquid XP. To get Niter, simply Pulverize Sandstone.\n\n- To get Basaltz Powder for Pethroteum, use your Fluid Transposer with Pulverized Obsidian and Liquid XP.",
+      "x": 42,
+      "y": 152,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 1024
+      },
+      "prerequisites": [
+        "19910080-ecb8-4b9f-a91b-9d259592c872"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 1024
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 1025
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 1026
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 1027
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:blaze_powder",
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 2049,
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 2051,
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 2053,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24c5e686-0af6-4608-b98e-96c552b19258",
+      "name": "Fluids on the way!",
+      "description": "Craft some Hardened Fluiducts to be able to transport Fluids easily!",
+      "x": 122,
+      "y": 15,
+      "icon": {
+        "id": "thermaldynamics:duct_16",
+        "damage": 2
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_16",
+                "damage": 2
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 162,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3d80a442-f394-46c5-9cb6-955eec9fd344",
+      "name": "Rapid access!",
+      "description": "Craft some Signalum-Plated Impulse Itemducts by filling up the previous tier with Glowstone! Items travel more rapidly through Glowstone and you can still transmit power through this cable as well.",
+      "x": 95,
+      "y": 15,
+      "icon": {
+        "id": "thermaldynamics:duct_32",
+        "damage": 6
+      },
+      "prerequisites": [
+        "44c44ec8-1f16-4401-af88-5e0c6479e1f4"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_32",
+                "damage": 6
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:glowstone",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f16ad429-389c-4533-9b93-fd18d8e07425",
+      "name": "Capped off for more power",
+      "description": "Craft an Enhanced SAG Mill for even more crushing power!",
+      "x": 291,
+      "y": 179,
+      "icon": {
+        "id": "enderio:block_enhanced_sag_mill"
+      },
+      "prerequisites": [
+        "73f62892-f18b-48dd-bb2c-c785a3276474"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_enhanced_sag_mill"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "enderio:block_alloy",
+          "damage": 6,
+          "amount": 4
+        },
+        {
+          "id": "enderio:block_alloy",
+          "damage": 2,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4dac50b8-4f37-48f8-855e-5b22d1268522",
+      "name": "I saw. I milled. I conquered.",
+      "description": "Craft a Sawmill! This machine is capable of turning Wood into more Planks than simply crafting them in your Crafting Window, and is also capable of making Sawdust, used in some recipes.",
+      "x": 82,
+      "y": 129,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 2,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 2,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "extrautils2:decorativesolidwood",
+          "damage": 1,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3aebb415-2355-4331-8c0d-ebaddd7d6b62",
+      "name": "Emperor of Empowerer",
+      "description": "Craft four of all 5 tiers of Empowered Dark Steel Upgrades! They can be applied to Dark Steel Armor one after another. These are needed for other upgrades and to make your armor set take energy instead of durability on hit.\n\nTo apply these upgrades, you need to use a Dark Steel Anvil. Simply have the armor piece equipped and use the tabs in the GUI of the Anvil to be able to apply them.",
+      "x": 293,
+      "y": 39,
+      "icon": {
+        "id": "enderio:item_dark_steel_upgrade",
+        "damage": 1,
+        "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade3\"}"
+      },
+      "prerequisites": [
+        "fd096cbe-fd75-40b8-aeb8-6d236a318421"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade\"}"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade1\"}"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade2\"}"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade3\"}"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:energyupgrade4\"}"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:block_wired_charger"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "61e05308-a57b-4e2d-b011-da6fb1f65690",
+      "name": "Induction intentions",
+      "description": "Craft an Induction Smelter! With this machine, you can create alloys that only take 2 inputs. For these types (like Bronze, Electrum, Invar or Vibrant Alloy), the Induction Smelter will do the best job, as it's really fast when fully upgraded.",
+      "x": 42,
+      "y": 106,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 3,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 3,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalexpansion:augment",
+          "damage": 303
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b5c8a8dd-abb0-4200-b32d-3c5278dfaf2c",
+      "name": "Better than tanks",
+      "description": "Craft an 1k ME Fluid Storage Component! Making this into a Cell will allow you to store liquids in your ME System. You can access these with a Fluid Terminal.",
+      "x": 179,
+      "y": 177,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 54
+      },
+      "prerequisites": [
+        "0d70e950-fd76-47ce-9d35-6abf313fa62c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 54
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 1028,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "87dc306c-4ae2-4a4d-b0ff-59489d8ecf0f",
+      "name": "Best way to enchant",
+      "description": "Craft an Enchanter! To see the available recipes, click the Paper icon on the top right of its GUI. You can now get any Enchantment with the appropriate payment! No longer do you need to get lucky in the Enchantment Table.",
+      "x": 180,
+      "y": 86,
+      "icon": {
+        "id": "enderio:block_enchanter"
+      },
+      "prerequisites": [
+        "45cbb8f0-f009-41d5-bddc-c855261da45d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_enchanter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 2,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c7684bdb-3aaf-4242-86bc-f9acce17b574",
+      "name": "Much better than tanks",
+      "description": "Craft a 4k ME Fluid Storage Component!",
+      "x": 194,
+      "y": 155,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 55
+      },
+      "prerequisites": [
+        "b5c8a8dd-abb0-4200-b32d-3c5278dfaf2c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 55
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 136,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "45cbb8f0-f009-41d5-bddc-c855261da45d",
+      "name": "When Inducting doesn't cut it",
+      "description": "Craft a Basic Alloy Smelter! This is a cheaper version of the Arc Furnace in multiple cases, but it can only handle 3 inputs. But hey, 3 is more than what the Induction Smelter could handle!",
+      "x": 194,
+      "y": 62,
+      "icon": {
+        "id": "enderio:block_simple_alloy_smelter"
+      },
+      "prerequisites": [
+        "cab58245-8aff-4170-a713-58e9e13ab4f5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_simple_alloy_smelter"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:energized_dark_ingot",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "69f01af3-6886-4c20-b6d5-6cf434d6fde0",
+      "name": "One item after another",
+      "description": "Craft some Item Conduits! They are the EnderIO way to transport items, and probably one of the best ways in general, since they can be used in the same blockspace as other EnderIO Conduits. You can also use Extraction Speed Uprades and Item Filters in them. You can also simple toggle Round Robin mode on to distrubute items equally between outputs and turn Self Feed mode on be able to push items back into the container you were pulling them from.",
+      "x": 208,
+      "y": 39,
+      "icon": {
+        "id": "enderio:item_item_conduit"
+      },
+      "prerequisites": [
+        "cd8170d0-149d-47c5-a8fb-fe974dc44f25"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_item_conduit"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_item_conduit",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3931cff9-0a70-415b-9a1a-047cbb48cc7e",
+      "name": "Tanks? Pfwah, get them out...",
+      "description": "Craft a 64k ME Fluid Storage Component!",
+      "x": 251,
+      "y": 155,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 57
+      },
+      "prerequisites": [
+        "83bbc92d-b95f-4382-8603-1d3fca88c2b3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 57
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:operation_processor",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "25a660ba-e1e8-4cf9-b21d-51c276ab364f",
+      "name": "Hoarding and sorting",
+      "description": "Craft a Basic Item Filter then upgrade it to an Advanced Item Filter. Apply them to your Item Conduits and guess what they do...!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo, I'm not gonna tell you. You really have to guess.",
+      "x": 223,
+      "y": 16,
+      "icon": {
+        "id": "enderio:item_advanced_item_filter"
+      },
+      "prerequisites": [
+        "69f01af3-6886-4c20-b6d5-6cf434d6fde0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_advanced_item_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_big_item_filter"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8f344bdb-289a-4124-a3bd-086dbe91e028",
+      "name": "I'll Swallow Your Soul!",
+      "description": "Craft a Soul Binder! Use Soul Vials with mob souls inside the Soul into an item! Spooky!",
+      "x": 293,
+      "y": 128,
+      "bigicon": true,
+      "icon": {
+        "id": "enderio:block_soul_binder"
+      },
+      "prerequisites": [
+        "1bcb4a4b-94bd-4e4c-9e51-eb4f6b5d37fd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_soul_binder"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_material",
+          "damage": 15,
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8e089667-8db2-4245-a068-c7b24891ddea",
+      "name": "The Ultimate Dust",
+      "description": "Craft together RF Powder, Pyrotheum Dust, Cryotheum Dust, Aeotheum Dust & Pethroteum Dust to obtain some Mana Dust!",
+      "x": 27,
+      "y": 174,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 1028
+      },
+      "prerequisites": [
+        "2e3d7970-f208-4518-bac0-3d945844e1d3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 1028
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:rf_powder",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c3b76bd0-676d-4f81-9a5f-2568f517ea11",
+      "name": "Some energy needed?",
+      "description": "Craft some of the most basic Fluxducts Thermal Expansion has to offer: The Leadstone Fluxducts! They can transmit RF Power, but not a lot of it.",
+      "x": 16,
+      "y": 16,
+      "icon": {
+        "id": "thermaldynamics:duct_0"
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_0"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:redstone",
+          "amount": 24
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "73b58d1f-30dc-4de3-b0ed-2bfd3b8369bc",
+      "name": "4th way to smelt",
+      "description": "Craft a Redstone Furnace! It's probably the best smelting machine you'll get, especially when fully upgraded to Resonant tier, and provided with 9 Auxiliary Reception Coil upgrades.\n\nYou can also easily setup its side configurations to input and output items from/to your storage.",
+      "x": 81,
+      "y": 84,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:materials",
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9c4edff1-af91-4c6e-b7d9-da3fe986d99a",
+      "name": "Turn on the tap!",
+      "description": "Craft some Fluid Conduits! Though not the best without upgrading them to the next tier, they can still be used in the same blockspace as Item & Energy Conduits.",
+      "x": 237,
+      "y": 39,
+      "icon": {
+        "id": "enderio:item_liquid_conduit"
+      },
+      "prerequisites": [
+        "cd8170d0-149d-47c5-a8fb-fe974dc44f25"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_liquid_conduit"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_material",
+          "damage": 4,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2ea27429-19f6-4499-840f-f8161d5ee39f",
+      "name": "External Fluid Storage",
+      "description": "Instead of crafting Fluid Storage Cells, you can choose to store your Fluids in external tanks or drums that might have a largeer capacity. For this purpose, you can use an ME Fluid Storage Bus.",
+      "x": 264,
+      "y": 178,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 221
+      },
+      "prerequisites": [
+        "0d70e950-fd76-47ce-9d35-6abf313fa62c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 221
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:operation_processor",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9eb1b9f7-500e-4f9a-b17e-47acdaccf1f2",
+      "name": "Like a stewpot, but hotter",
+      "description": "Craft a Magma Crucible! This machine can turn many solid items into its liquid form. You'll mostly need to use it to provide various liquids for the Fluid Transposer.",
+      "x": 69,
+      "y": 151,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 6,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 6,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalexpansion:augment",
+          "damage": 352
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "535851ac-3584-4273-be91-e248f143ce27",
+      "name": "Incapacitate",
+      "description": "Craft all 3 tiers of regular EnderIO Capacitors! They can be used in all non-basic EnderIO machines to increase their production speed. Even higher tier Capacitors will be available later.",
+      "x": 208,
+      "y": 86,
+      "icon": {
+        "id": "enderio:item_basic_capacitor",
+        "damage": 1
+      },
+      "prerequisites": [
+        "6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_basic_capacitor"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_basic_capacitor",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_basic_capacitor",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:energized_dark_ingot",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "144b9811-1bcc-4bb7-a28a-5bd2337cf245",
+      "name": "Bigger and better",
+      "description": "You thought the Alloy Smelter was gonna be that slow?! Well, no longer! Introducing: The Enhanced Alloy Smelter, which is more than twice as fast.",
+      "x": 278,
+      "y": 155,
+      "icon": {
+        "id": "enderio:block_enhanced_alloy_smelter"
+      },
+      "prerequisites": [
+        "73f62892-f18b-48dd-bb2c-c785a3276474"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_enhanced_alloy_smelter"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "enderio:block_alloy",
+          "damage": 6,
+          "amount": 4
+        },
+        {
+          "id": "enderio:block_alloy",
+          "damage": 2,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e9a62916-6f27-40eb-9b0b-952cfc0b6016",
+      "name": "Accessing your fluids",
+      "description": "Craft a Fluid Terminal! Through this you can see all stored Fluids in your ME System, and manually import and export a couple of buckets at once. Through I recommend Fluid Export and Import Buses for this job, especially if you're working with larger amounts.",
+      "x": 208,
+      "y": 178,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 520
+      },
+      "prerequisites": [
+        "0d70e950-fd76-47ce-9d35-6abf313fa62c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 520
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:operation_processor",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "88080dbd-99a4-4081-90fe-37facef72925",
+      "name": "Upgraded and stronger",
+      "description": "Smelt some Dark Steel in your Basic Alloy Smelter to be able to craft an actual Alloy Smelter! This machine can be upgraded with Capacitors for faster production.",
+      "x": 251,
+      "y": 62,
+      "icon": {
+        "id": "enderio:block_alloy_smelter"
+      },
+      "prerequisites": [
+        "6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_alloy_smelter"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 6,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "73f62892-f18b-48dd-bb2c-c785a3276474",
+      "name": "Fortificate up!",
+      "description": "I heard you like Machine Chassis', so I put some Machine Chassis' in your Machine Chassis' so you can enjoy more Machine Chassis' along the way!",
+      "x": 263,
+      "y": 132,
+      "icon": {
+        "id": "enderio:item_material",
+        "damage": 54
+      },
+      "prerequisites": [
+        "5b049dc5-e24f-43e3-af1a-86037065706e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_material",
+                "damage": 54
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 8,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cab58245-8aff-4170-a713-58e9e13ab4f5",
+      "name": "Stiffen up!",
+      "description": "Dig down to the bottom of the overworld and light up some of the Bedrock! Once the fire extinguishes, some Grains of Infinity will pop off. Collect them!\n\nI wonder if you'll have to automate this process... Hmmm... (Yes, yes you do.)\n\nThen use the grains you've obtained to craft a Simple Machine Chassis from EnderIO!",
+      "x": 180,
+      "y": 39,
+      "icon": {
+        "id": "enderio:item_material"
+      },
+      "prerequisites": [
+        "cd8170d0-149d-47c5-a8fb-fe974dc44f25"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_material",
+                "damage": 20
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "enderio:item_material"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_material",
+          "damage": 20,
+          "amount": 10
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5e403f6f-77c5-42fd-9f28-92a4348820df",
+      "name": "Got a cold",
+      "description": "Craft a Glacial Precipitator! With this machine, you can automatically create Snow, Ice or Packed Ice out of Water! Simply feed it Water with an Aqueous Acumulator, an Unending Bowl or an Endervoir, give it some power and watch it work!",
+      "x": 68,
+      "y": 62,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 14,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 14,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 25,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "83bbc92d-b95f-4382-8603-1d3fca88c2b3",
+      "name": "A lot better than tanks",
+      "description": "Craft a 16k ME Fluid Storage Component!",
+      "x": 223,
+      "y": 155,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 56
+      },
+      "prerequisites": [
+        "c7684bdb-3aaf-4242-86bc-f9acce17b574"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 56
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:storage",
+          "damage": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1bcb4a4b-94bd-4e4c-9e51-eb4f6b5d37fd",
+      "name": "Caught you!",
+      "description": "Craft a Soul Vial! Use it to catch mobs. You can later use them for crafting with the Soul Binder, or soon enough - to automatically spawn more of them... See Chapter 13: Ender Upgrades.",
+      "x": 277,
+      "y": 110,
+      "icon": {
+        "id": "enderio:item_soul_vial"
+      },
+      "prerequisites": [
+        "66cd6dd8-837d-4236-bf57-d1b74faf6188"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_soul_vial"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 7,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8795986b-0a71-45f6-a064-18994998e7cd",
+      "name": "Banking the power",
+      "description": "Craft a Basic Capacitor Bank. It can store some power, but you likely want to upgrade it further!",
+      "x": 194,
+      "y": 110,
+      "icon": {
+        "id": "enderio:block_cap_bank",
+        "damage": 1
+      },
+      "prerequisites": [
+        "535851ac-3584-4273-be91-e248f143ce27"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_cap_bank",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_basic_capacitor",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1d097780-cb92-41ed-9ef4-23b026333252",
+      "name": "Thirsty? I have the solution!",
+      "description": "Craft an Aqueous Acumulator! Place at least 2 Water Source blocks next to it. This is a fast way to generate a lot of Water for a couple of your machines.",
+      "x": 120,
+      "y": 62,
+      "icon": {
+        "id": "thermalexpansion:device",
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;0B,1B,0B,0B,0B,0B]}"
+      },
+      "prerequisites": [
+        "505d8f79-dd6f-4b16-b61f-7a959af0b528"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:device",
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;0B,1B,0B,0B,0B,0B]}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:water_bucket",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b57020b5-b13d-4dd2-aa87-73b0730273c6",
+      "name": "Beats Psychic types",
+      "description": "Craft some Dark Ingots! You can find Bitumen underground to obtain Tar, you can either\n\n- Use a Fractionating Still with Oil (found underground), Crude Oil (obtained from Bitumen) or Liquifacted Coal (obtained from Pulverized Coal); or\n\n- Use DivineRPG Tar and Slimeballs in a Fluid Transposer.",
+      "x": 134,
+      "y": 83,
+      "icon": {
+        "id": "contenttweaker:dark_ingot"
+      },
+      "prerequisites": [
+        "2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:dark_ingot"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalexpansion:tank",
+          "nbt": "{RSControl:0b,Creative:0b,Fluid:{FluidName:\"smoldering_tar\",Amount:20000},Level:0b,Lock:0b}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6ef092ad-1fc9-4c69-96f5-dc723bffc35c",
+      "name": "The Best XP Storage",
+      "description": "Craft an Experience Obelisk! You can pump Liquid XP in and out from it, or simply use the ingame GUI to store or gain XP with some simple button presses.",
+      "x": 208,
+      "y": 132,
+      "icon": {
+        "id": "enderio:block_experience_obelisk"
+      },
+      "prerequisites": [
+        "5b049dc5-e24f-43e3-af1a-86037065706e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_experience_obelisk"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 2,
+          "amount": 12
+        },
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 7,
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "069f8dbc-5cef-4720-918b-5a70998c8dfb",
+      "name": "Velocity: acquired!",
+      "description": "Craft some Extract Speed Upgrades. You can apply these to your Item Conduits for faster extraction. (Incredible, I know!)",
+      "x": 194,
+      "y": 16,
+      "icon": {
+        "id": "enderio:item_extract_speed_upgrade"
+      },
+      "prerequisites": [
+        "69f01af3-6886-4c20-b6d5-6cf434d6fde0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_extract_speed_upgrade"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_extract_speed_upgrade",
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7fe5177a-f86b-4178-b32c-02b7880f65fa",
+      "name": "Tree fluid, we glooin'",
+      "description": "Craft an Arboreal Extractor! To use it, place it next to the bottom of a naturally grown tree. Different tree types will provide different types of fluids, you are looking for Resin. To see which tree type gives which fluid, you can check the usages for the \"Augment: Resin Funnel\" item, since the same types of trees yield Resin in a Sawmill. However, I recommend this method for obtaining large amounts of Resin, since this is free and will passively generate.",
+      "x": 107,
+      "y": 84,
+      "icon": {
+        "id": "thermalexpansion:device",
+        "damage": 3,
+        "nbt": "{RSControl:0b,Facing:2b,Creative:0b,Level:0b,SideCache:[B;1B,1B,0B,2B,2B,2B]}"
+      },
+      "prerequisites": [
+        "505d8f79-dd6f-4b16-b61f-7a959af0b528"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:device",
+                "damage": 3,
+                "nbt": "{RSControl:0b,Facing:2b,Creative:0b,Level:0b,SideCache:[B;1B,1B,0B,2B,2B,2B]}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "natura:overworld_sapling2",
+          "amount": 8
+        },
+        {
+          "id": "minecraft:dye",
+          "damage": 15,
+          "amount": 64
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "49aed2e5-16a5-447f-b24a-6c126dcca4e0",
+      "name": "Most important upgrades",
+      "description": "I laid out the most important Dark Steel Upgrades: the ones that make this armor set pretty powerful. Craft them and apply them in a Dark Steel Anvil!",
+      "x": 292,
+      "y": 86,
+      "icon": {
+        "id": "enderio:item_dark_steel_upgrade",
+        "damage": 1,
+        "nbt": "{\"enderio:dsu\":\"enderio:elytra\"}"
+      },
+      "prerequisites": [
+        "fd096cbe-fd75-40b8-aeb8-6d236a318421"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:elytra\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:nightvision\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:inv2\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:jumpboost3\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:speedboost3\"}"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_upgrade",
+                "damage": 1,
+                "nbt": "{\"enderio:dsu\":\"enderio:step_assist\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:block_alloy",
+          "damage": 6,
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "19910080-ecb8-4b9f-a91b-9d259592c872",
+      "name": "Fluidic Relocation",
+      "description": "Craft a Fluid Transposer! When used in conjuction with a Magma Crucible, you can use some kind of an input item and some kind of fluid provided by the Crucible to craft new items. This machine will be heavily used from now on, so make sure to at least semi-automate it. You can also craft Treated Wood and Coated Clathrate cheaper with this machine.",
+      "x": 55,
+      "y": 129,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 8,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 8,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;3B,1B,2B,2B,2B,2B],Level:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "forge:bucketfilled",
+          "nbt": "{FluidName:\"creosote\",Amount:1000}"
+        },
+        {
+          "id": "minecraft:planks",
+          "amount": 10
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f",
+      "name": "Favorite operation: Division",
+      "description": "Craft a Fractionating Still! This machine is used for multiple progression-related crafts. It can turn various liquids into solids and other liquids.",
+      "x": 121,
+      "y": 106,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 7,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,2B,3B,3B,3B,3B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 7,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,2B,3B,3B,3B,3B],Level:0b}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 292,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1727403f-b551-4ed0-bcb2-ed2c03939e7c",
+      "name": "Just don't Vat yourself!",
+      "description": "Craft an Enhanced Vat! You'll many of the EnderIO Liquids crafted by this machine to continue in the following chapters.",
+      "x": 236,
+      "y": 132,
+      "icon": {
+        "id": "enderio:block_enhanced_vat"
+      },
+      "prerequisites": [
+        "73f62892-f18b-48dd-bb2c-c785a3276474"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_enhanced_vat"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:block_tank",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 6,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cdb03ba9-e03f-4ab9-98ed-0075522756c9",
+      "name": "Hot stuff",
+      "description": "Craft an Igneous Extruder! Using this machine you can mix Lava and Water to create various stone like Cobblestone, Obsidian, Basalt, or many of the Underground Biomes Stone variants! Simply feed it Lava and Water and watch it work! Note: For Obsidian, Lava does get consumed. For the others, it doesn't.",
+      "x": 42,
+      "y": 62,
+      "icon": {
+        "id": "thermalexpansion:machine",
+        "damage": 15,
+        "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+      },
+      "prerequisites": [
+        "e7fdbb34-ce5d-44b1-8be9-61192088c3d8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:machine",
+                "damage": 15,
+                "nbt": "{RSControl:0b,Facing:3b,Energy:0,SideCache:[B;1B,1B,2B,2B,2B,2B],Level:0b}"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalexpansion:augment",
+          "damage": 496
+        },
+        {
+          "id": "thermalexpansion:augment",
+          "damage": 497
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "52ec545f-f740-4e0f-91e2-ba37a8926fd6",
+      "name": "Zwoom..! - goes the power.",
+      "description": "Craft some Ender Energy Conduits! These are the highest tier Energy Conduits that are available to you currently, and the best ones for the job! Later you'll be able to make even better Energy Conduits from EnderIO Endergy.",
+      "x": 280,
+      "y": 16,
+      "icon": {
+        "id": "enderio:item_power_conduit",
+        "damage": 2
+      },
+      "prerequisites": [
+        "1ab0c84c-0027-491e-98af-3f9d115c49c4"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_power_conduit",
+                "damage": 2
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_power_conduit",
+          "damage": 2,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "467d065f-ace2-442f-91d9-e6a0165b9122",
+      "name": "It's a gem, it's a pebble!",
+      "description": "Craft some Coated Clathrate either in the Induction Smelter or the Fluid Transposer!\n\nYou need to have visited the End for Resonant Clathrate.",
+      "x": 133,
+      "y": 128,
+      "icon": {
+        "id": "contenttweaker:coated_clathrate"
+      },
+      "prerequisites": [
+        "2fbe5c73-1ef9-4e8e-b1cb-eab65e307c9f",
+        "db173e20-f0b8-4732-a452-cb06f6cfb6ad"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:coated_clathrate"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:coated_clathrate",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2ad509b2-d097-4400-bde2-525521c87be0",
+      "name": "New settings = Old settings",
+      "description": "Craft a Redprint! You can use it to copy a machine's side configurations to a new machine. It can save you a lot of time.",
+      "x": 81,
+      "y": 39,
+      "icon": {
+        "id": "thermalfoundation:diagram_redprint"
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:diagram_redprint"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:rf_powder"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1ab0c84c-0027-491e-98af-3f9d115c49c4",
+      "name": "Plugging in",
+      "description": "Craft some Energy Conduits! Use them as an upgrade base for higher tier EnderIO Energy Conduits.",
+      "x": 265,
+      "y": 39,
+      "icon": {
+        "id": "enderio:item_power_conduit"
+      },
+      "prerequisites": [
+        "cd8170d0-149d-47c5-a8fb-fe974dc44f25"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_power_conduit"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 1,
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "73e3b3be-b6d7-4146-9444-59edee431956",
+      "name": "Crafting Time!",
+      "description": "Make an ME Crafting Terminal! Upgrade your old ME Terminal to be able to directly craft using your items in your ME System!",
+      "x": 137,
+      "y": 176,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 360
+      },
+      "prerequisites": [
+        "53f07e86-8555-43d2-86bd-b2535337d920"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 360
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:view_cell"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fd096cbe-fd75-40b8-aeb8-6d236a318421",
+      "name": "Riches get a great armor set",
+      "description": "Once you've accumulated a lot of Dark Steel and Enderium, you can make the best midgame armor set: The Dark Steel Set!\n\nNow, without upgrades you might not think this set is that powerful, but just type \"Dark Steel Upgrade\" into JEI to see the sheer amount of upgrade options available. Pretty much all of them are useful, so get on with the crafting!\n\nAlso, don't forget that this armor is still enchantable besides being upgradable.",
+      "x": 278,
+      "y": 63,
+      "icon": {
+        "id": "enderio:item_dark_steel_chestplate"
+      },
+      "prerequisites": [
+        "88080dbd-99a4-4081-90fe-37facef72925"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_helmet"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_chestplate"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_leggings"
+              }
+            },
+            {
+              "item": {
+                "id": "enderio:item_dark_steel_boots"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 167,
+          "amount": 12
+        },
+        {
+          "id": "minecraft:diamond",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0033b556-0115-4aaf-90c0-4c04a6f5649c",
+      "name": "Ocean currents on the way!",
+      "description": "Upgrade your Hardened Fluidcuts to Super-Laminar Fluiducts for limitless fluid transfer!",
+      "x": 108,
+      "y": 39,
+      "icon": {
+        "id": "thermaldynamics:duct_16",
+        "damage": 6
+      },
+      "prerequisites": [
+        "24c5e686-0af6-4608-b98e-96c552b19258"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_16",
+                "damage": 6
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 163,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "647266d6-e68b-4738-865e-e560f6f3afa9",
+      "name": "Ressin' around",
+      "description": "Craft a Ressin Funnel Augment! Apply it to your Sawmill to be able to create Resin. Check which Wood types give Resin in JEI (simply check the usages for this Augment), since that's the type of fluid you'll need in the future.",
+      "x": 95,
+      "y": 151,
+      "icon": {
+        "id": "thermalexpansion:augment",
+        "damage": 288
+      },
+      "prerequisites": [
+        "4dac50b8-4f37-48f8-855e-5b22d1268522"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:augment",
+                "damage": 288
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 162,
+          "amount": 12
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 161,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "10649f8e-50f7-4ff1-a920-8f381a0b6a8c",
+      "name": "5th way to crush",
+      "description": "Craft a SAG Mill! Though the Pulverizer might be the best when fully upgraded, this machine isn't far behind! Later the Enhanced version with higher tier Capacitors can do the job pretty much as good as a fully upgraded Pulverizer.",
+      "x": 264,
+      "y": 86,
+      "icon": {
+        "id": "enderio:block_sag_mill"
+      },
+      "prerequisites": [
+        "6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_sag_mill"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e59e62bf-4c67-4856-8a59-ff1c7380c123",
+      "name": "Huge power banking!",
+      "description": "Craft some Capacitor Banks together to obtain a Vibrant Capacitor Bank! The advantage of using them over any other mod's power storage options, is that you can create a huge multiblock of Capacitor Banks that can store even more power!",
+      "x": 180,
+      "y": 132,
+      "icon": {
+        "id": "enderio:block_cap_bank",
+        "damage": 3
+      },
+      "prerequisites": [
+        "8795986b-0a71-45f6-a064-18994998e7cd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:block_cap_bank",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plustic:osgloglasingot",
+          "amount": 32
+        },
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 2,
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2e0d6ef0-6b2c-492b-93ce-9e1367afabf2",
+      "name": "Stockpilin' the energy!",
+      "description": "Craft a Resonant Energy Cell Frame, fill it up, and craft it into a Resonant Energy Cell! To find Energy Cell recipes, look up the usages of the Invar Gear, Electrum Gear, Signalum Gear, (or in this case) the Enderium Gear. It might be easier to craft them directly rather than upgrading them.",
+      "x": 29,
+      "y": 39,
+      "icon": {
+        "id": "thermalexpansion:cell",
+        "nbt": "{Recv:25000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:4b,Send:25000}"
+      },
+      "prerequisites": [
+        "ef3305a9-e858-4b20-96bf-3f8674530197"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:frame",
+                "damage": 132
+              }
+            },
+            {
+              "item": {
+                "id": "thermalexpansion:frame",
+                "damage": 148
+              }
+            },
+            {
+              "item": {
+                "id": "thermalexpansion:cell",
+                "nbt": "{Recv:25000,RSControl:0b,Facing:3b,Energy:0,SideCache:[B;2B,1B,1B,1B,1B,1B],Level:4b,Send:25000}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 295,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "96e9171c-05e0-4872-b096-001ececb7558",
+      "name": "Speed is key",
+      "description": "Craft 4 Auxiliary Reception Coil Augments. This is the maximum amount you can apply to a Resonant machine! 1 upgrade per tier.",
+      "x": 15,
+      "y": 152,
+      "icon": {
+        "id": "thermalexpansion:augment",
+        "damage": 128
+      },
+      "prerequisites": [
+        "1c3fb0c4-ab66-4328-914b-095102dbd1f4"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:augment",
+                "damage": 128
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 289,
+          "amount": 8
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 293,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "21cc2707-2e64-4540-ad56-becc0500f288",
+      "name": "Fluid in, fluid out!",
+      "description": "Craft an ME Fluid Import Bus and an ME Fluid Export Bus! They work just like their item counterparts, except for Fluids.",
+      "x": 236,
+      "y": 178,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 241
+      },
+      "prerequisites": [
+        "0d70e950-fd76-47ce-9d35-6abf313fa62c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 241
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 261
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:operation_processor",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5b049dc5-e24f-43e3-af1a-86037065706e",
+      "name": "Coarsen up!",
+      "description": "Soulificate your Machine Chassis to gain access to more machines from EnderIO!",
+      "x": 236,
+      "y": 86,
+      "icon": {
+        "id": "enderio:item_material",
+        "damage": 53
+      },
+      "prerequisites": [
+        "6c7fcc8b-7467-4f89-9ca1-41af9354fcd6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_material",
+                "damage": 53
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 7,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

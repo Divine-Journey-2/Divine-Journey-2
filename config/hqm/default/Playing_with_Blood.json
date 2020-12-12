@@ -1,1 +1,1685 @@
-{"name":"Playing with Blood","description":" Playing with Blood\nUnlock Blood Magic: Alchemical Wizardy and EvilCraft, featuring the return of 1.7.10 Essences.","quests":[{"uuid":"3d027bf2-3df0-4401-b4d7-ba421f02c493","name":"Tier 3 Essences","x":120,"y":140,"icon":{"id":"contenttweaker:offensa"},"prerequisites":["d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f","74d43960-ccef-49e0-9e42-c9b916c8851e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:crepitous"}},{"item":{"id":"contenttweaker:tempestas"}},{"item":{"id":"contenttweaker:offensa"}},{"item":{"id":"contenttweaker:virtus"}}]}],"commandrewards":[]},{"uuid":"b813ff38-f724-43fd-ba0d-caa02f8a8dd2","name":"Smelling Stones","x":46,"y":166,"icon":{"id":"bloodmagic:path","damage":2},"prerequisites":["1a991779-8e78-4034-8701-8717c97d4a18"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:path","damage":2},"required":24}]}],"commandrewards":[]},{"uuid":"2603b8a4-0a50-4a66-be4f-f436016da80e","name":"Reinforce the Altar","x":76,"y":115,"icon":{"id":"bloodmagic:blood_rune","damage":4},"prerequisites":["9acc7bcb-675f-41d2-8663-23a19beb0716"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_rune","damage":4},"required":2},{"item":{"id":"bloodmagic:blood_rune","damage":1},"required":2}]}],"commandrewards":[]},{"uuid":"f78fc8b9-ab30-4d7c-8123-8d2f48a3d7de","name":"Red and Ready","x":177,"y":114,"icon":{"id":"contenttweaker:frozen_blood_core"},"prerequisites":["48ff0643-2cbd-4859-9658-f407a6d381c5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:frozen_blood_core"}}]}],"commandrewards":[]},{"uuid":"b615d889-499d-4773-bb1d-ad2521fc6dba","name":"A Fresh Slate","x":170,"y":184,"bigicon":true,"icon":{"id":"contenttweaker:clean_runic_plate"},"prerequisites":["068b161e-098d-4d2a-95f1-5d1194dd5073","825ee17e-3502-448e-acd8-a3ef5d9af7eb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:clean_runic_plate"},"required":5}]}],"commandrewards":[]},{"uuid":"be8c987f-4023-4ccd-8dd4-b8ab8a3bf554","name":"Maintaining in Despite","x":231,"y":114,"icon":{"id":"evilcraft:promise","damage":1},"prerequisites":["7867902b-2ac6-43d8-be1e-69598cd35571"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise","damage":1}}]}],"commandrewards":[]},{"uuid":"367be285-f1e3-4efb-8b3e-4d80e33f23e8","name":"Gleaming red","description":"Place down five sources of blood, and toss a Dark Gem into it. It will consume all 5 buckets of blood to produce a single Dark Power Gem.","x":193,"y":41,"icon":{"id":"evilcraft:dark_power_gem"},"prerequisites":["714c5e19-f922-4d24-9218-ae3081133a7d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:dark_power_gem"}}]}],"commandrewards":[]},{"uuid":"222c7084-0b7e-4f34-b35e-60ee43185bda","name":"Soul Smith","x":49,"y":66,"icon":{"id":"bloodmagic:soul_forge"},"prerequisites":["0f00a71c-5e74-4446-a40f-4c0fd5587ebd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:soul_forge"}}]}],"commandrewards":[]},{"uuid":"48ff0643-2cbd-4859-9658-f407a6d381c5","name":"Blood doesn\u0027t grow on trees!","description":"It grows in them.","x":204,"y":114,"icon":{"id":"evilcraft:undead_sapling"},"prerequisites":["75eee77f-0e96-435e-b170-c3d1bbf39951"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:undead_sapling"}}]}],"commandrewards":[]},{"uuid":"714c5e19-f922-4d24-9218-ae3081133a7d","name":"Gork","description":"When killing mobs with a Blood Extractor in your inventory, it will gain blood. The Blood Extractor can be used like a bucket to place down the blood into the world, and can also auto-supply any tank that can hold blood in your inventory.","x":178,"y":17,"icon":{"id":"evilcraft:blood_extractor"},"prerequisites":["15771283-477a-44ca-9e9a-a0824ab3b003"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:blood_extractor"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"enderio:item_soul_vial","amount":4}],"commandrewards":[]},{"uuid":"74d43960-ccef-49e0-9e42-c9b916c8851e","name":"The Magician will suffer","x":134,"y":114,"icon":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:magician\"}"},"prerequisites":["f78fc8b9-ab30-4d7c-8123-8d2f48a3d7de"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:magician\"}"}}]}],"commandrewards":[]},{"uuid":"a15afe86-8bb7-42c6-9a84-b7219fe2d4f0","name":"Mork","description":"The Blood Altar consumes Life Essence to convert items. It has multiple tiers, and some recipes are locked behind higher tiers. ","x":137,"y":17,"icon":{"id":"bloodmagic:altar"},"prerequisites":["15771283-477a-44ca-9e9a-a0824ab3b003"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:altar"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"thermaldynamics:filter","damage":4},{"id":"thermaldynamics:retriever","damage":4},{"id":"guideapi:bloodmagic-guide"}],"commandrewards":[]},{"uuid":"b589395c-1b08-4ace-a840-5d9e58f82c29","name":"They Merge into a Common Soul","x":48,"y":115,"icon":{"id":"bloodmagic:soul_gem","damage":2},"prerequisites":["33ea0a7a-4fe2-47a4-9cb8-df38076ded8f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:soul_gem","damage":2},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"072b589c-6008-4681-ad57-ebd34f099691","name":"Unnamed","x":78,"y":66,"icon":{"id":"bloodmagic:alchemy_table"},"prerequisites":["0f00a71c-5e74-4446-a40f-4c0fd5587ebd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:alchemy_table"}}]}],"commandrewards":[]},{"uuid":"ff4cf175-afb0-4086-b940-5f5df7b7a803","name":"They see you","x":219,"y":191,"icon":{"id":"evilcraft:vengeance_ring"},"prerequisites":["b9edfda9-a714-4c2f-8b4a-8cee03c0807b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:vengeance_ring"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"c3998f64-3e55-4582-8d75-688c3e07597f","name":"Running Red","x":249,"y":41,"icon":{"id":"evilcraft:blood_infuser"},"prerequisites":["164cd53f-7d3d-4191-bb12-26b64adc4f94"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:blood_infuser"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"0f4cf6a5-c294-401a-b20b-ff9e29daf506","name":"A Bite of Darkness","description":"WARNING: DO NOT EAT","x":207,"y":17,"icon":{"id":"evilcraft:darkened_apple"},"prerequisites":["714c5e19-f922-4d24-9218-ae3081133a7d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:darkened_apple"}}]}],"commandrewards":[]},{"uuid":"843f75f7-bb49-4f6a-9f48-cf9b3c407957","name":"THE LAST CRAFTING*","description":"*Not actually the last crafting. Terms and conditions may apply. Extended use may cause excessive particles. Please consult a doctor to see if Ender Crafting is right for you.","x":291,"y":184,"bigicon":true,"icon":{"id":"extendedcrafting:ender_alternator"},"prerequisites":["5fddb7b7-7680-4793-8d5b-78b7b9683146"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:ender_crafter"}},{"item":{"id":"extendedcrafting:ender_alternator"}}]}],"commandrewards":[]},{"uuid":"d8232abf-1e00-440a-8023-2564442fe14f","name":"The Apprentice will bleed","x":135,"y":65,"icon":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:apprentice\"}"},"prerequisites":["2ca1d337-08e7-44bd-bc17-b38bf3ec4659","685207c0-9337-4b85-ad25-af1e245a1c7f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:apprentice\"}"}}]}],"commandrewards":[]},{"uuid":"59bc3b19-98f8-4635-bc68-b7e8002d9f77","name":"Bloodomation","x":261,"y":64,"icon":{"id":"evilcraft:sanguinary_pedestal"},"prerequisites":["0f45e89a-c338-4631-be5d-85119e9c0478"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:spiked_plate"}},{"item":{"id":"evilcraft:sanguinary_pedestal"}}]}],"commandrewards":[]},{"uuid":"164cd53f-7d3d-4191-bb12-26b64adc4f94","name":"Bloody Heart","x":221,"y":41,"icon":{"id":"evilcraft:blood_infusion_core"},"prerequisites":["367be285-f1e3-4efb-8b3e-4d80e33f23e8","0f00a71c-5e74-4446-a40f-4c0fd5587ebd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:blood_infusion_core"}}]}],"commandrewards":[]},{"uuid":"33ea0a7a-4fe2-47a4-9cb8-df38076ded8f","name":"Meets a Slightly Larger Soul","x":62,"y":90,"icon":{"id":"bloodmagic:soul_gem","damage":1},"prerequisites":["dbdc8c74-c70b-41d1-8aed-0596fefd2e95","2afb8cb0-353c-4b5a-bf34-1174de7a31e3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:soul_gem","damage":1},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"9acc7bcb-675f-41d2-8663-23a19beb0716","name":"Reinforced","x":105,"y":115,"icon":{"id":"bloodmagic:slate","damage":1},"prerequisites":["685207c0-9337-4b85-ad25-af1e245a1c7f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:slate","damage":1}}]}],"commandrewards":[]},{"uuid":"995935db-f1ff-4df7-b737-5d4f9ccc970b","name":"The Weak will die","description":"Tier 1 Blood Orb\nUsed to craft all tier 1 Cores.\nAll Blood Orbs can also be used in the Alchemy Table to provide blood for its recipes.","x":121,"y":40,"icon":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:weak\"}"},"prerequisites":["a15afe86-8bb7-42c6-9a84-b7219fe2d4f0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_orb","nbt":"{orb:\"bloodmagic:weak\"}"}}]}],"commandrewards":[]},{"uuid":"7867902b-2ac6-43d8-be1e-69598cd35571","name":"Glod\u0027s Guarantee","x":218,"y":140,"icon":{"id":"evilcraft:promise_acceptor","damage":1},"prerequisites":["75eee77f-0e96-435e-b170-c3d1bbf39951"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise_acceptor","damage":1}}]}],"commandrewards":[]},{"uuid":"5fddb7b7-7680-4793-8d5b-78b7b9683146","name":"When will it end?","x":259,"y":166,"icon":{"id":"extendedcrafting:storage","damage":5},"prerequisites":["5eec5f44-7f95-4c18-9659-53201110b807","5ce52748-e026-4e31-83ea-1e3424d0bfeb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:storage","damage":5}}]}],"commandrewards":[]},{"uuid":"2fb1a5a5-1529-4fcd-bb25-795235a1fa9a","name":"When Small Soul","x":35,"y":40,"icon":{"id":"bloodmagic:soul_gem"},"prerequisites":["7ae15c3d-42e8-40d4-ac0e-531596ef72ff"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:soul_gem"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"685207c0-9337-4b85-ad25-af1e245a1c7f","name":"Runes for the Altar","x":105,"y":65,"icon":{"id":"bloodmagic:blood_rune"},"prerequisites":["995935db-f1ff-4df7-b737-5d4f9ccc970b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_rune"},"required":8}]}],"commandrewards":[]},{"uuid":"b4ef59e3-2a02-49f2-b9b7-0458a1d1727c","name":"Do it Tomorrow","x":272,"y":89,"icon":{"id":"evilcraft:promise","damage":4},"prerequisites":["a6b26bf6-2043-4df1-a175-b8f8d283c182"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise","damage":4}}]}],"commandrewards":[]},{"uuid":"a5dfdbd4-dbca-499b-bf04-b80abe453bae","name":"Tier 2 Reagents","x":34,"y":91,"icon":{"id":"bloodmagic:component","damage":5},"prerequisites":["dbdc8c74-c70b-41d1-8aed-0596fefd2e95"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:component","damage":13}},{"item":{"id":"contenttweaker:wizards_reagent"}},{"item":{"id":"bloodmagic:component","damage":32}},{"item":{"id":"bloodmagic:component","damage":5}}]}],"commandrewards":[]},{"uuid":"d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f","name":"Tier 2 Essences","x":120,"y":90,"icon":{"id":"contenttweaker:magicales"},"prerequisites":["2afb8cb0-353c-4b5a-bf34-1174de7a31e3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:sanctus"}},{"item":{"id":"contenttweaker:magicales"}},{"item":{"id":"contenttweaker:crystallos"}},{"item":{"id":"contenttweaker:orbis_terrae"}}]}],"commandrewards":[]},{"uuid":"0f00a71c-5e74-4446-a40f-4c0fd5587ebd","name":"Red \"Meat\"","description":"Using Coagulated Blood from Tinkers Construct, make a Hardened Blood Droplet.","x":93,"y":40,"icon":{"id":"contenttweaker:hardened_blood_droplet"},"prerequisites":["aba8a76b-4b3c-4d5e-ab4a-7de6b12aad6c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:hardened_blood_droplet"}}]}],"commandrewards":[]},{"uuid":"aba8a76b-4b3c-4d5e-ab4a-7de6b12aad6c","name":"To gain, lose","description":"Using the Sacrifical Dagger near a Blood Altar will reduce your life, and fill up the Blood Altar in exchange.","x":107,"y":17,"icon":{"id":"bloodmagic:sacrificial_dagger","nbt":"{sacrifice:0b}"},"prerequisites":["a15afe86-8bb7-42c6-9a84-b7219fe2d4f0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:sacrificial_dagger","nbt":"{sacrifice:0b}"},"precision":"NBT_FUZZY"}]}],"reward":[{"id":"contenttweaker:empowered_crystal_bundle","amount":4}],"commandrewards":[]},{"uuid":"5eec5f44-7f95-4c18-9659-53201110b807","name":"Locked Away","x":272,"y":138,"icon":{"id":"evilcraft:box_of_eternal_closure","nbt":"{spiritTag:{playerName:\"\",innerEntity:\"\",remainingLife:0,isSwarm:1b,swarmTier:4,buildupDuration:0,frozenDuration:0,playerId:\"\"}}"},"prerequisites":["b9edfda9-a714-4c2f-8b4a-8cee03c0807b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:box_of_eternal_closure","nbt":"{spiritTag:{playerName:\"\",innerEntity:\"\",remainingLife:0,isSwarm:1b,swarmTier:4,buildupDuration:0,frozenDuration:0,playerId:\"\"}}"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"01f0c58b-83a2-4a69-9531-a5475955355e","name":"Burnt Out","x":49,"y":17,"icon":{"id":"bloodmagic:arcane_ashes"},"prerequisites":["2fb1a5a5-1529-4fcd-bb25-795235a1fa9a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:arcane_ashes"}}]}],"commandrewards":[]},{"uuid":"d9eb34c5-0632-4cab-93b9-c6d1edd1d040","name":"Tier 3 Reagents","x":20,"y":115,"icon":{"id":"contenttweaker:strength_reagent"},"prerequisites":["33ea0a7a-4fe2-47a4-9cb8-df38076ded8f","a5dfdbd4-dbca-499b-bf04-b80abe453bae"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:neutral_reagent"}},{"item":{"id":"contenttweaker:tempest_reagent"}},{"item":{"id":"contenttweaker:damage_reagent"}},{"item":{"id":"contenttweaker:strength_reagent"}}]}],"commandrewards":[]},{"uuid":"df24f8f4-ed36-4aaa-b822-6bacc57088e3","name":"Know Thy God","x":78,"y":17,"icon":{"id":"bloodmagic:sigil_divination"},"prerequisites":["01f0c58b-83a2-4a69-9531-a5475955355e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:sigil_divination"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"75eee77f-0e96-435e-b170-c3d1bbf39951","name":"Barely Hanging On","x":218,"y":90,"icon":{"id":"evilcraft:promise"},"prerequisites":["26cd0034-a9ff-47ea-b1a8-18c3f550102a","6be6b0c3-92ef-4ec0-8cea-a88884ff62eb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise"}}]}],"commandrewards":[]},{"uuid":"5ce52748-e026-4e31-83ea-1e3424d0bfeb","name":"You shoot them","x":246,"y":191,"icon":{"id":"evilcraft:vengeance_focus"},"prerequisites":["ff4cf175-afb0-4086-b940-5f5df7b7a803"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:vengeance_focus"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"1a991779-8e78-4034-8701-8717c97d4a18","name":"Sniff the Wood","x":62,"y":140,"icon":{"id":"bloodmagic:path"},"prerequisites":["abbd1130-8b17-4eee-b82f-0f8dbfccae70"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:path"},"required":36}]}],"commandrewards":[]},{"uuid":"b9edfda9-a714-4c2f-8b4a-8cee03c0807b","name":"Diamatine\u0027s Duty","x":232,"y":167,"icon":{"id":"evilcraft:promise_acceptor","damage":2},"prerequisites":["be8c987f-4023-4ccd-8dd4-b8ab8a3bf554"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise_acceptor","damage":2}}]}],"commandrewards":[]},{"uuid":"dbdc8c74-c70b-41d1-8aed-0596fefd2e95","name":"Tier 1 Reagents","x":23,"y":66,"icon":{"id":"bloodmagic:component"},"prerequisites":["2fb1a5a5-1529-4fcd-bb25-795235a1fa9a","222c7084-0b7e-4f34-b35e-60ee43185bda"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:component","damage":2}},{"item":{"id":"bloodmagic:component"}},{"item":{"id":"bloodmagic:component","damage":1}},{"item":{"id":"contenttweaker:dirty_reagent"}}]}],"commandrewards":[]},{"uuid":"2ca1d337-08e7-44bd-bc17-b38bf3ec4659","name":"Hung with Madness","x":206,"y":65,"icon":{"id":"contenttweaker:coralium_decorated_blood_star"},"prerequisites":["164cd53f-7d3d-4191-bb12-26b64adc4f94"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:coralium_decorated_blood_star"}}]}],"commandrewards":[]},{"uuid":"ae5ba6b7-7bc0-4de8-896a-b672fe6cc155","name":"S P E E D W A L K E R","x":287,"y":65,"icon":{"id":"evilcraft:effortless_ring"},"prerequisites":["b4ef59e3-2a02-49f2-b9b7-0458a1d1727c","24bfc920-cfab-4fad-82bd-7858ba07710d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:effortless_ring"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"9c4a3293-c87b-45ba-b6d0-0328a2cbaa41","name":"From Snow White","description":"After feeding the apple to an animal, let it die and throw a Book onto the resulting particles. This is the guidebook for Evilcraft.","x":236,"y":17,"icon":{"id":"evilcraft:origins_of_darkness"},"prerequisites":["0f4cf6a5-c294-401a-b20b-ff9e29daf506"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:origins_of_darkness"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"825ee17e-3502-448e-acd8-a3ef5d9af7eb","name":"Enduring Eternally","x":245,"y":140,"icon":{"id":"evilcraft:promise","damage":2},"prerequisites":["b9edfda9-a714-4c2f-8b4a-8cee03c0807b"],"commandrewards":[]},{"uuid":"abbd1130-8b17-4eee-b82f-0f8dbfccae70","name":"Burning Candles","x":91,"y":140,"icon":{"id":"bloodmagic:incense_altar"},"prerequisites":["7867902b-2ac6-43d8-be1e-69598cd35571"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:incense_altar"}}]}],"commandrewards":[]},{"uuid":"7ae15c3d-42e8-40d4-ac0e-531596ef72ff","name":"Snared","description":"Right click to throw a Rudimentary Snare. Any mob it hits will have a chance to gain a particle effect, which will cause the mob to drop Demonic Will.\nThe value of Demonic Will increases with the health of the mob.","x":63,"y":40,"icon":{"id":"bloodmagic:soul_snare"},"prerequisites":["0f00a71c-5e74-4446-a40f-4c0fd5587ebd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:soul_snare"},"required":2}]}],"reward":[{"id":"bloodmagic:soul_snare","amount":2}],"commandrewards":[]},{"uuid":"35535bd3-ed2a-4ab1-b6f7-6d0f9825b5b6","name":"Imbue the Altar","x":77,"y":166,"icon":{"id":"bloodmagic:blood_rune","damage":3},"prerequisites":["4e646a1a-803c-48c4-b576-b588de76a77a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:blood_rune","damage":3},"required":2},{"item":{"id":"bloodmagic:blood_rune","damage":6},"required":2}]}],"commandrewards":[]},{"uuid":"1a07a7f7-8662-4768-b94b-63f3fccfebff","name":"It thirsts for souls","x":22,"y":17,"icon":{"id":"bloodmagic:sentient_sword"},"prerequisites":["2fb1a5a5-1529-4fcd-bb25-795235a1fa9a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:sentient_sword"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"4e646a1a-803c-48c4-b576-b588de76a77a","name":"Imbued","x":105,"y":166,"icon":{"id":"bloodmagic:slate","damage":2},"prerequisites":["9acc7bcb-675f-41d2-8663-23a19beb0716"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"bloodmagic:slate","damage":2}}]}],"commandrewards":[]},{"uuid":"2afb8cb0-353c-4b5a-bf34-1174de7a31e3","name":"Tier 1 Essences","x":90,"y":90,"icon":{"id":"contenttweaker:aether"},"prerequisites":["072b589c-6008-4681-ad57-ebd34f099691"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:aether"}},{"item":{"id":"contenttweaker:aquasalus"}},{"item":{"id":"contenttweaker:incendium"}},{"item":{"id":"contenttweaker:terrae"}}]}],"commandrewards":[]},{"uuid":"24bfc920-cfab-4fad-82bd-7858ba07710d","name":"Any%","x":287,"y":114,"icon":{"id":"evilcraft:promise","damage":3},"prerequisites":["a6b26bf6-2043-4df1-a175-b8f8d283c182"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise","damage":3}}]}],"commandrewards":[]},{"uuid":"a6b26bf6-2043-4df1-a175-b8f8d283c182","name":"Overflowing Oaths","x":258,"y":114,"icon":{"id":"evilcraft:bowl_of_promises","damage":5},"prerequisites":["825ee17e-3502-448e-acd8-a3ef5d9af7eb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:bowl_of_promises","damage":5}}]}],"commandrewards":[]},{"uuid":"6be6b0c3-92ef-4ec0-8cea-a88884ff62eb","name":"Enori\u0027s Esimorp","x":233,"y":65,"icon":{"id":"evilcraft:promise_acceptor"},"prerequisites":["c3998f64-3e55-4582-8d75-688c3e07597f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:promise_acceptor"}}]}],"commandrewards":[]},{"uuid":"068b161e-098d-4d2a-95f1-5d1194dd5073","name":"Rock versus Hammer","x":121,"y":187,"icon":{"id":"contenttweaker:cracked_runic_plate"},"prerequisites":["3d027bf2-3df0-4401-b4d7-ba421f02c493","4e646a1a-803c-48c4-b576-b588de76a77a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:cracked_runic_plate"},"required":5}]}],"commandrewards":[]},{"uuid":"26cd0034-a9ff-47ea-b1a8-18c3f550102a","name":"Absent Assurances","x":190,"y":90,"icon":{"id":"evilcraft:bowl_of_promises","damage":2},"prerequisites":["d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:bowl_of_promises","damage":2}}]}],"commandrewards":[]},{"uuid":"0f45e89a-c338-4631-be5d-85119e9c0478","name":"Dull as Dust","description":"Blooded Dust","x":245,"y":89,"icon":{"id":"evilcraft:dull_dust"},"prerequisites":["be8c987f-4023-4ccd-8dd4-b8ab8a3bf554"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"evilcraft:dull_dust"},"required":4}]}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "Playing with Blood",
+  "description": " Playing with Blood\nUnlock Blood Magic: Alchemical Wizardy and EvilCraft, featuring the return of 1.7.10 Essences.",
+  "quests": [
+    {
+      "uuid": "3d027bf2-3df0-4401-b4d7-ba421f02c493",
+      "name": "Tier 3 Essences",
+      "x": 120,
+      "y": 140,
+      "icon": {
+        "id": "contenttweaker:offensa"
+      },
+      "prerequisites": [
+        "d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f",
+        "74d43960-ccef-49e0-9e42-c9b916c8851e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:crepitous"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:tempestas"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:offensa"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:virtus"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b813ff38-f724-43fd-ba0d-caa02f8a8dd2",
+      "name": "Smelling Stones",
+      "x": 46,
+      "y": 166,
+      "icon": {
+        "id": "bloodmagic:path",
+        "damage": 2
+      },
+      "prerequisites": [
+        "1a991779-8e78-4034-8701-8717c97d4a18"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:path",
+                "damage": 2
+              },
+              "required": 24
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2603b8a4-0a50-4a66-be4f-f436016da80e",
+      "name": "Reinforce the Altar",
+      "x": 76,
+      "y": 115,
+      "icon": {
+        "id": "bloodmagic:blood_rune",
+        "damage": 4
+      },
+      "prerequisites": [
+        "9acc7bcb-675f-41d2-8663-23a19beb0716"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_rune",
+                "damage": 4
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "bloodmagic:blood_rune",
+                "damage": 1
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f78fc8b9-ab30-4d7c-8123-8d2f48a3d7de",
+      "name": "Red and Ready",
+      "x": 177,
+      "y": 114,
+      "icon": {
+        "id": "contenttweaker:frozen_blood_core"
+      },
+      "prerequisites": [
+        "48ff0643-2cbd-4859-9658-f407a6d381c5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:frozen_blood_core"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b615d889-499d-4773-bb1d-ad2521fc6dba",
+      "name": "A Fresh Slate",
+      "x": 170,
+      "y": 184,
+      "bigicon": true,
+      "icon": {
+        "id": "contenttweaker:clean_runic_plate"
+      },
+      "prerequisites": [
+        "068b161e-098d-4d2a-95f1-5d1194dd5073",
+        "825ee17e-3502-448e-acd8-a3ef5d9af7eb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:clean_runic_plate"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "be8c987f-4023-4ccd-8dd4-b8ab8a3bf554",
+      "name": "Maintaining in Despite",
+      "x": 231,
+      "y": 114,
+      "icon": {
+        "id": "evilcraft:promise",
+        "damage": 1
+      },
+      "prerequisites": [
+        "7867902b-2ac6-43d8-be1e-69598cd35571"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "367be285-f1e3-4efb-8b3e-4d80e33f23e8",
+      "name": "Gleaming red",
+      "description": "Place down five sources of blood, and toss a Dark Gem into it. It will consume all 5 buckets of blood to produce a single Dark Power Gem.",
+      "x": 193,
+      "y": 41,
+      "icon": {
+        "id": "evilcraft:dark_power_gem"
+      },
+      "prerequisites": [
+        "714c5e19-f922-4d24-9218-ae3081133a7d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:dark_power_gem"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "222c7084-0b7e-4f34-b35e-60ee43185bda",
+      "name": "Soul Smith",
+      "x": 49,
+      "y": 66,
+      "icon": {
+        "id": "bloodmagic:soul_forge"
+      },
+      "prerequisites": [
+        "0f00a71c-5e74-4446-a40f-4c0fd5587ebd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:soul_forge"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "48ff0643-2cbd-4859-9658-f407a6d381c5",
+      "name": "Blood doesn't grow on trees!",
+      "description": "It grows in them.",
+      "x": 204,
+      "y": 114,
+      "icon": {
+        "id": "evilcraft:undead_sapling"
+      },
+      "prerequisites": [
+        "75eee77f-0e96-435e-b170-c3d1bbf39951"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:undead_sapling"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "714c5e19-f922-4d24-9218-ae3081133a7d",
+      "name": "Gork",
+      "description": "When killing mobs with a Blood Extractor in your inventory, it will gain blood. The Blood Extractor can be used like a bucket to place down the blood into the world, and can also auto-supply any tank that can hold blood in your inventory.",
+      "x": 178,
+      "y": 17,
+      "icon": {
+        "id": "evilcraft:blood_extractor"
+      },
+      "prerequisites": [
+        "15771283-477a-44ca-9e9a-a0824ab3b003"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:blood_extractor"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_soul_vial",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "74d43960-ccef-49e0-9e42-c9b916c8851e",
+      "name": "The Magician will suffer",
+      "x": 134,
+      "y": 114,
+      "icon": {
+        "id": "bloodmagic:blood_orb",
+        "nbt": "{orb:\"bloodmagic:magician\"}"
+      },
+      "prerequisites": [
+        "f78fc8b9-ab30-4d7c-8123-8d2f48a3d7de"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_orb",
+                "nbt": "{orb:\"bloodmagic:magician\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a15afe86-8bb7-42c6-9a84-b7219fe2d4f0",
+      "name": "Mork",
+      "description": "The Blood Altar consumes Life Essence to convert items. It has multiple tiers, and some recipes are locked behind higher tiers. ",
+      "x": 137,
+      "y": 17,
+      "icon": {
+        "id": "bloodmagic:altar"
+      },
+      "prerequisites": [
+        "15771283-477a-44ca-9e9a-a0824ab3b003"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:altar"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermaldynamics:filter",
+          "damage": 4
+        },
+        {
+          "id": "thermaldynamics:retriever",
+          "damage": 4
+        },
+        {
+          "id": "guideapi:bloodmagic-guide"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b589395c-1b08-4ace-a840-5d9e58f82c29",
+      "name": "They Merge into a Common Soul",
+      "x": 48,
+      "y": 115,
+      "icon": {
+        "id": "bloodmagic:soul_gem",
+        "damage": 2
+      },
+      "prerequisites": [
+        "33ea0a7a-4fe2-47a4-9cb8-df38076ded8f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:soul_gem",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "072b589c-6008-4681-ad57-ebd34f099691",
+      "name": "Unnamed",
+      "x": 78,
+      "y": 66,
+      "icon": {
+        "id": "bloodmagic:alchemy_table"
+      },
+      "prerequisites": [
+        "0f00a71c-5e74-4446-a40f-4c0fd5587ebd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:alchemy_table"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ff4cf175-afb0-4086-b940-5f5df7b7a803",
+      "name": "They see you",
+      "x": 219,
+      "y": 191,
+      "icon": {
+        "id": "evilcraft:vengeance_ring"
+      },
+      "prerequisites": [
+        "b9edfda9-a714-4c2f-8b4a-8cee03c0807b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:vengeance_ring"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c3998f64-3e55-4582-8d75-688c3e07597f",
+      "name": "Running Red",
+      "x": 249,
+      "y": 41,
+      "icon": {
+        "id": "evilcraft:blood_infuser"
+      },
+      "prerequisites": [
+        "164cd53f-7d3d-4191-bb12-26b64adc4f94"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:blood_infuser"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0f4cf6a5-c294-401a-b20b-ff9e29daf506",
+      "name": "A Bite of Darkness",
+      "description": "WARNING: DO NOT EAT",
+      "x": 207,
+      "y": 17,
+      "icon": {
+        "id": "evilcraft:darkened_apple"
+      },
+      "prerequisites": [
+        "714c5e19-f922-4d24-9218-ae3081133a7d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:darkened_apple"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "843f75f7-bb49-4f6a-9f48-cf9b3c407957",
+      "name": "THE LAST CRAFTING*",
+      "description": "*Not actually the last crafting. Terms and conditions may apply. Extended use may cause excessive particles. Please consult a doctor to see if Ender Crafting is right for you.",
+      "x": 291,
+      "y": 184,
+      "bigicon": true,
+      "icon": {
+        "id": "extendedcrafting:ender_alternator"
+      },
+      "prerequisites": [
+        "5fddb7b7-7680-4793-8d5b-78b7b9683146"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:ender_crafter"
+              }
+            },
+            {
+              "item": {
+                "id": "extendedcrafting:ender_alternator"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d8232abf-1e00-440a-8023-2564442fe14f",
+      "name": "The Apprentice will bleed",
+      "x": 135,
+      "y": 65,
+      "icon": {
+        "id": "bloodmagic:blood_orb",
+        "nbt": "{orb:\"bloodmagic:apprentice\"}"
+      },
+      "prerequisites": [
+        "2ca1d337-08e7-44bd-bc17-b38bf3ec4659",
+        "685207c0-9337-4b85-ad25-af1e245a1c7f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_orb",
+                "nbt": "{orb:\"bloodmagic:apprentice\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "59bc3b19-98f8-4635-bc68-b7e8002d9f77",
+      "name": "Bloodomation",
+      "x": 261,
+      "y": 64,
+      "icon": {
+        "id": "evilcraft:sanguinary_pedestal"
+      },
+      "prerequisites": [
+        "0f45e89a-c338-4631-be5d-85119e9c0478"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:spiked_plate"
+              }
+            },
+            {
+              "item": {
+                "id": "evilcraft:sanguinary_pedestal"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "164cd53f-7d3d-4191-bb12-26b64adc4f94",
+      "name": "Bloody Heart",
+      "x": 221,
+      "y": 41,
+      "icon": {
+        "id": "evilcraft:blood_infusion_core"
+      },
+      "prerequisites": [
+        "367be285-f1e3-4efb-8b3e-4d80e33f23e8",
+        "0f00a71c-5e74-4446-a40f-4c0fd5587ebd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:blood_infusion_core"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "33ea0a7a-4fe2-47a4-9cb8-df38076ded8f",
+      "name": "Meets a Slightly Larger Soul",
+      "x": 62,
+      "y": 90,
+      "icon": {
+        "id": "bloodmagic:soul_gem",
+        "damage": 1
+      },
+      "prerequisites": [
+        "dbdc8c74-c70b-41d1-8aed-0596fefd2e95",
+        "2afb8cb0-353c-4b5a-bf34-1174de7a31e3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:soul_gem",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9acc7bcb-675f-41d2-8663-23a19beb0716",
+      "name": "Reinforced",
+      "x": 105,
+      "y": 115,
+      "icon": {
+        "id": "bloodmagic:slate",
+        "damage": 1
+      },
+      "prerequisites": [
+        "685207c0-9337-4b85-ad25-af1e245a1c7f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:slate",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "995935db-f1ff-4df7-b737-5d4f9ccc970b",
+      "name": "The Weak will die",
+      "description": "Tier 1 Blood Orb\nUsed to craft all tier 1 Cores.\nAll Blood Orbs can also be used in the Alchemy Table to provide blood for its recipes.",
+      "x": 121,
+      "y": 40,
+      "icon": {
+        "id": "bloodmagic:blood_orb",
+        "nbt": "{orb:\"bloodmagic:weak\"}"
+      },
+      "prerequisites": [
+        "a15afe86-8bb7-42c6-9a84-b7219fe2d4f0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_orb",
+                "nbt": "{orb:\"bloodmagic:weak\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7867902b-2ac6-43d8-be1e-69598cd35571",
+      "name": "Glod's Guarantee",
+      "x": 218,
+      "y": 140,
+      "icon": {
+        "id": "evilcraft:promise_acceptor",
+        "damage": 1
+      },
+      "prerequisites": [
+        "75eee77f-0e96-435e-b170-c3d1bbf39951"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise_acceptor",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5fddb7b7-7680-4793-8d5b-78b7b9683146",
+      "name": "When will it end?",
+      "x": 259,
+      "y": 166,
+      "icon": {
+        "id": "extendedcrafting:storage",
+        "damage": 5
+      },
+      "prerequisites": [
+        "5eec5f44-7f95-4c18-9659-53201110b807",
+        "5ce52748-e026-4e31-83ea-1e3424d0bfeb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:storage",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2fb1a5a5-1529-4fcd-bb25-795235a1fa9a",
+      "name": "When Small Soul",
+      "x": 35,
+      "y": 40,
+      "icon": {
+        "id": "bloodmagic:soul_gem"
+      },
+      "prerequisites": [
+        "7ae15c3d-42e8-40d4-ac0e-531596ef72ff"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:soul_gem"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "685207c0-9337-4b85-ad25-af1e245a1c7f",
+      "name": "Runes for the Altar",
+      "x": 105,
+      "y": 65,
+      "icon": {
+        "id": "bloodmagic:blood_rune"
+      },
+      "prerequisites": [
+        "995935db-f1ff-4df7-b737-5d4f9ccc970b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_rune"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b4ef59e3-2a02-49f2-b9b7-0458a1d1727c",
+      "name": "Do it Tomorrow",
+      "x": 272,
+      "y": 89,
+      "icon": {
+        "id": "evilcraft:promise",
+        "damage": 4
+      },
+      "prerequisites": [
+        "a6b26bf6-2043-4df1-a175-b8f8d283c182"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a5dfdbd4-dbca-499b-bf04-b80abe453bae",
+      "name": "Tier 2 Reagents",
+      "x": 34,
+      "y": 91,
+      "icon": {
+        "id": "bloodmagic:component",
+        "damage": 5
+      },
+      "prerequisites": [
+        "dbdc8c74-c70b-41d1-8aed-0596fefd2e95"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:component",
+                "damage": 13
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:wizards_reagent"
+              }
+            },
+            {
+              "item": {
+                "id": "bloodmagic:component",
+                "damage": 32
+              }
+            },
+            {
+              "item": {
+                "id": "bloodmagic:component",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f",
+      "name": "Tier 2 Essences",
+      "x": 120,
+      "y": 90,
+      "icon": {
+        "id": "contenttweaker:magicales"
+      },
+      "prerequisites": [
+        "2afb8cb0-353c-4b5a-bf34-1174de7a31e3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:sanctus"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:magicales"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:crystallos"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:orbis_terrae"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0f00a71c-5e74-4446-a40f-4c0fd5587ebd",
+      "name": "Red \"Meat\"",
+      "description": "Using Coagulated Blood from Tinkers Construct, make a Hardened Blood Droplet.",
+      "x": 93,
+      "y": 40,
+      "icon": {
+        "id": "contenttweaker:hardened_blood_droplet"
+      },
+      "prerequisites": [
+        "aba8a76b-4b3c-4d5e-ab4a-7de6b12aad6c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:hardened_blood_droplet"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "aba8a76b-4b3c-4d5e-ab4a-7de6b12aad6c",
+      "name": "To gain, lose",
+      "description": "Using the Sacrifical Dagger near a Blood Altar will reduce your life, and fill up the Blood Altar in exchange.",
+      "x": 107,
+      "y": 17,
+      "icon": {
+        "id": "bloodmagic:sacrificial_dagger",
+        "nbt": "{sacrifice:0b}"
+      },
+      "prerequisites": [
+        "a15afe86-8bb7-42c6-9a84-b7219fe2d4f0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:sacrificial_dagger",
+                "nbt": "{sacrifice:0b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:empowered_crystal_bundle",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5eec5f44-7f95-4c18-9659-53201110b807",
+      "name": "Locked Away",
+      "x": 272,
+      "y": 138,
+      "icon": {
+        "id": "evilcraft:box_of_eternal_closure",
+        "nbt": "{spiritTag:{playerName:\"\",innerEntity:\"\",remainingLife:0,isSwarm:1b,swarmTier:4,buildupDuration:0,frozenDuration:0,playerId:\"\"}}"
+      },
+      "prerequisites": [
+        "b9edfda9-a714-4c2f-8b4a-8cee03c0807b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:box_of_eternal_closure",
+                "nbt": "{spiritTag:{playerName:\"\",innerEntity:\"\",remainingLife:0,isSwarm:1b,swarmTier:4,buildupDuration:0,frozenDuration:0,playerId:\"\"}}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "01f0c58b-83a2-4a69-9531-a5475955355e",
+      "name": "Burnt Out",
+      "x": 49,
+      "y": 17,
+      "icon": {
+        "id": "bloodmagic:arcane_ashes"
+      },
+      "prerequisites": [
+        "2fb1a5a5-1529-4fcd-bb25-795235a1fa9a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:arcane_ashes"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d9eb34c5-0632-4cab-93b9-c6d1edd1d040",
+      "name": "Tier 3 Reagents",
+      "x": 20,
+      "y": 115,
+      "icon": {
+        "id": "contenttweaker:strength_reagent"
+      },
+      "prerequisites": [
+        "33ea0a7a-4fe2-47a4-9cb8-df38076ded8f",
+        "a5dfdbd4-dbca-499b-bf04-b80abe453bae"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:neutral_reagent"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:tempest_reagent"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:damage_reagent"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:strength_reagent"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "df24f8f4-ed36-4aaa-b822-6bacc57088e3",
+      "name": "Know Thy God",
+      "x": 78,
+      "y": 17,
+      "icon": {
+        "id": "bloodmagic:sigil_divination"
+      },
+      "prerequisites": [
+        "01f0c58b-83a2-4a69-9531-a5475955355e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:sigil_divination"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "75eee77f-0e96-435e-b170-c3d1bbf39951",
+      "name": "Barely Hanging On",
+      "x": 218,
+      "y": 90,
+      "icon": {
+        "id": "evilcraft:promise"
+      },
+      "prerequisites": [
+        "26cd0034-a9ff-47ea-b1a8-18c3f550102a",
+        "6be6b0c3-92ef-4ec0-8cea-a88884ff62eb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5ce52748-e026-4e31-83ea-1e3424d0bfeb",
+      "name": "You shoot them",
+      "x": 246,
+      "y": 191,
+      "icon": {
+        "id": "evilcraft:vengeance_focus"
+      },
+      "prerequisites": [
+        "ff4cf175-afb0-4086-b940-5f5df7b7a803"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:vengeance_focus"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1a991779-8e78-4034-8701-8717c97d4a18",
+      "name": "Sniff the Wood",
+      "x": 62,
+      "y": 140,
+      "icon": {
+        "id": "bloodmagic:path"
+      },
+      "prerequisites": [
+        "abbd1130-8b17-4eee-b82f-0f8dbfccae70"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:path"
+              },
+              "required": 36
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b9edfda9-a714-4c2f-8b4a-8cee03c0807b",
+      "name": "Diamatine's Duty",
+      "x": 232,
+      "y": 167,
+      "icon": {
+        "id": "evilcraft:promise_acceptor",
+        "damage": 2
+      },
+      "prerequisites": [
+        "be8c987f-4023-4ccd-8dd4-b8ab8a3bf554"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise_acceptor",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "dbdc8c74-c70b-41d1-8aed-0596fefd2e95",
+      "name": "Tier 1 Reagents",
+      "x": 23,
+      "y": 66,
+      "icon": {
+        "id": "bloodmagic:component"
+      },
+      "prerequisites": [
+        "2fb1a5a5-1529-4fcd-bb25-795235a1fa9a",
+        "222c7084-0b7e-4f34-b35e-60ee43185bda"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:component",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "bloodmagic:component"
+              }
+            },
+            {
+              "item": {
+                "id": "bloodmagic:component",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:dirty_reagent"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2ca1d337-08e7-44bd-bc17-b38bf3ec4659",
+      "name": "Hung with Madness",
+      "x": 206,
+      "y": 65,
+      "icon": {
+        "id": "contenttweaker:coralium_decorated_blood_star"
+      },
+      "prerequisites": [
+        "164cd53f-7d3d-4191-bb12-26b64adc4f94"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:coralium_decorated_blood_star"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ae5ba6b7-7bc0-4de8-896a-b672fe6cc155",
+      "name": "S P E E D W A L K E R",
+      "x": 287,
+      "y": 65,
+      "icon": {
+        "id": "evilcraft:effortless_ring"
+      },
+      "prerequisites": [
+        "b4ef59e3-2a02-49f2-b9b7-0458a1d1727c",
+        "24bfc920-cfab-4fad-82bd-7858ba07710d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:effortless_ring"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9c4a3293-c87b-45ba-b6d0-0328a2cbaa41",
+      "name": "From Snow White",
+      "description": "After feeding the apple to an animal, let it die and throw a Book onto the resulting particles. This is the guidebook for Evilcraft.",
+      "x": 236,
+      "y": 17,
+      "icon": {
+        "id": "evilcraft:origins_of_darkness"
+      },
+      "prerequisites": [
+        "0f4cf6a5-c294-401a-b20b-ff9e29daf506"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:origins_of_darkness"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "825ee17e-3502-448e-acd8-a3ef5d9af7eb",
+      "name": "Enduring Eternally",
+      "x": 245,
+      "y": 140,
+      "icon": {
+        "id": "evilcraft:promise",
+        "damage": 2
+      },
+      "prerequisites": [
+        "b9edfda9-a714-4c2f-8b4a-8cee03c0807b"
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "abbd1130-8b17-4eee-b82f-0f8dbfccae70",
+      "name": "Burning Candles",
+      "x": 91,
+      "y": 140,
+      "icon": {
+        "id": "bloodmagic:incense_altar"
+      },
+      "prerequisites": [
+        "7867902b-2ac6-43d8-be1e-69598cd35571"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:incense_altar"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7ae15c3d-42e8-40d4-ac0e-531596ef72ff",
+      "name": "Snared",
+      "description": "Right click to throw a Rudimentary Snare. Any mob it hits will have a chance to gain a particle effect, which will cause the mob to drop Demonic Will.\nThe value of Demonic Will increases with the health of the mob.",
+      "x": 63,
+      "y": 40,
+      "icon": {
+        "id": "bloodmagic:soul_snare"
+      },
+      "prerequisites": [
+        "0f00a71c-5e74-4446-a40f-4c0fd5587ebd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:soul_snare"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bloodmagic:soul_snare",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "35535bd3-ed2a-4ab1-b6f7-6d0f9825b5b6",
+      "name": "Imbue the Altar",
+      "x": 77,
+      "y": 166,
+      "icon": {
+        "id": "bloodmagic:blood_rune",
+        "damage": 3
+      },
+      "prerequisites": [
+        "4e646a1a-803c-48c4-b576-b588de76a77a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:blood_rune",
+                "damage": 3
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "bloodmagic:blood_rune",
+                "damage": 6
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1a07a7f7-8662-4768-b94b-63f3fccfebff",
+      "name": "It thirsts for souls",
+      "x": 22,
+      "y": 17,
+      "icon": {
+        "id": "bloodmagic:sentient_sword"
+      },
+      "prerequisites": [
+        "2fb1a5a5-1529-4fcd-bb25-795235a1fa9a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:sentient_sword"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4e646a1a-803c-48c4-b576-b588de76a77a",
+      "name": "Imbued",
+      "x": 105,
+      "y": 166,
+      "icon": {
+        "id": "bloodmagic:slate",
+        "damage": 2
+      },
+      "prerequisites": [
+        "9acc7bcb-675f-41d2-8663-23a19beb0716"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "bloodmagic:slate",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2afb8cb0-353c-4b5a-bf34-1174de7a31e3",
+      "name": "Tier 1 Essences",
+      "x": 90,
+      "y": 90,
+      "icon": {
+        "id": "contenttweaker:aether"
+      },
+      "prerequisites": [
+        "072b589c-6008-4681-ad57-ebd34f099691"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:aether"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:aquasalus"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:incendium"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:terrae"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24bfc920-cfab-4fad-82bd-7858ba07710d",
+      "name": "Any%",
+      "x": 287,
+      "y": 114,
+      "icon": {
+        "id": "evilcraft:promise",
+        "damage": 3
+      },
+      "prerequisites": [
+        "a6b26bf6-2043-4df1-a175-b8f8d283c182"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a6b26bf6-2043-4df1-a175-b8f8d283c182",
+      "name": "Overflowing Oaths",
+      "x": 258,
+      "y": 114,
+      "icon": {
+        "id": "evilcraft:bowl_of_promises",
+        "damage": 5
+      },
+      "prerequisites": [
+        "825ee17e-3502-448e-acd8-a3ef5d9af7eb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:bowl_of_promises",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6be6b0c3-92ef-4ec0-8cea-a88884ff62eb",
+      "name": "Enori's Esimorp",
+      "x": 233,
+      "y": 65,
+      "icon": {
+        "id": "evilcraft:promise_acceptor"
+      },
+      "prerequisites": [
+        "c3998f64-3e55-4582-8d75-688c3e07597f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise_acceptor"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "068b161e-098d-4d2a-95f1-5d1194dd5073",
+      "name": "Rock versus Hammer",
+      "x": 121,
+      "y": 187,
+      "icon": {
+        "id": "contenttweaker:cracked_runic_plate"
+      },
+      "prerequisites": [
+        "3d027bf2-3df0-4401-b4d7-ba421f02c493",
+        "4e646a1a-803c-48c4-b576-b588de76a77a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:cracked_runic_plate"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "26cd0034-a9ff-47ea-b1a8-18c3f550102a",
+      "name": "Absent Assurances",
+      "x": 190,
+      "y": 90,
+      "icon": {
+        "id": "evilcraft:bowl_of_promises",
+        "damage": 2
+      },
+      "prerequisites": [
+        "d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:bowl_of_promises",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0f45e89a-c338-4631-be5d-85119e9c0478",
+      "name": "Dull as Dust",
+      "description": "Blooded Dust",
+      "x": 245,
+      "y": 89,
+      "icon": {
+        "id": "evilcraft:dull_dust"
+      },
+      "prerequisites": [
+        "be8c987f-4023-4ccd-8dd4-b8ab8a3bf554"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:dull_dust"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

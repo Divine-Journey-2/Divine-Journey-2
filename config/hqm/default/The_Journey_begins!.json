@@ -1,1 +1,1673 @@
-{"name":"The Journey begins!","description":" The Journey begins!\nStarting off with Tinker\u0027s Construct and some tweaked Vanilla progression.","quests":[{"uuid":"17599f70-819e-4700-af9b-07a214f72bf9","name":"Excavating Obsidian","description":"Use your Alumite Pickaxe to Ore Excavate a field of Obsidian! You can easily get stacks of Obsidian in a couple minutes with this method.","x":206,"y":160,"icon":{"id":"minecraft:obsidian"},"prerequisites":["a2342f93-805a-4d51-84f3-3749392cdda3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:obsidian"},"required":128}]}],"rewardchoice":[{"id":"minecraft:ender_pearl","amount":8},{"id":"extrautils2:enderlilly","amount":2}],"commandrewards":[]},{"uuid":"2db833ab-db42-4eaa-9ca5-cc9a4e9b0d1f","name":"I am GROUT!","description":"Craft a lot of Grout! You\u0027ll need it.","x":196,"y":39,"icon":{"id":"tconstruct:soil"},"prerequisites":["5f28172d-2d1c-4d42-bc61-077a6d8d223a","b90813de-bc60-46d5-a8f6-747e7556952e","baa19be6-f519-44cb-a517-91403af58ac5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:soil"},"required":128}]}],"reward":[{"id":"minecraft:sand","amount":20},{"id":"minecraft:gravel","amount":20},{"id":"minecraft:clay_ball","amount":20}],"commandrewards":[]},{"uuid":"021b732a-f745-4926-be3c-0c9203ede013","name":"Very Metallic!","description":"\"Smelt\" your Rough Iron Mesh using the Burning Essence you\u0027ve created! Just drop the two Essences into water and voil?! You got youself an Iron Ingot!","x":96,"y":86,"icon":{"id":"minecraft:iron_ingot"},"prerequisites":["6c13862d-77fc-454e-8e4b-3bbdd39b9490","2ee1da4a-6b2f-4a02-a742-a788a05aff92"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:iron_ingot"},"required":2}]}],"reward":[{"id":"minecraft:coal","amount":2}],"commandrewards":[]},{"uuid":"9508d90d-ea1e-4316-9944-8de71d87366b","name":"Mine it up!","description":"Obtain 15 pieces of Cobblestone or any base stone material you find underground! DON\u0027T FORGET ABOUT ORE EXCAVATOR!","x":53,"y":15,"icon":{"id":"minecraft:cobblestone"},"prerequisites":["69b4e7a8-a49c-4226-b6d8-578265a650fe"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:cobblestone"},"required":15,"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"minecraft:experience_bottle","amount":3}],"commandrewards":[]},{"uuid":"f73aff10-2180-41b5-82a0-962f3f4cdddf","name":"Even more upgrades!","description":"Upgrade the Tier 1 Drawer upgrades all to way to Tier 4! Lots of storage capacity! :O\n\n[Note: Tiers 2 \u0026 3 have been skipped in the Quest Book, as they should be very easily accessible at this point.]","x":251,"y":187,"icon":{"id":"storagedrawers:upgrade_storage","damage":3},"prerequisites":["3acd144b-d9f9-46fb-b82d-cfcd2b42dd75"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"storagedrawers:upgrade_storage","damage":3},"required":4}]}],"reward":[{"id":"storagedrawers:tape"},{"id":"bibliocraft:tapemeasure","nbt":"{distance:0}"}],"commandrewards":[]},{"uuid":"847deb3a-bd61-493c-8280-8c7c423f81da","name":"TOOL-7","description":"Tool-7? What does that mean? Well, it\u0027s not Tool-8, not too late to create cool new Tinkers\u0027 Tools! \u003e:D","x":98,"y":135,"icon":{"id":"tconstruct:tooltables","damage":3},"prerequisites":["b4263a76-58af-4543-9c93-dcef45a14829"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:tooltables","damage":3}}]}],"rewardchoice":[{"id":"natura:overworld_sapling","amount":4},{"id":"natura:overworld_sapling","damage":3,"amount":4}],"commandrewards":[]},{"uuid":"412fab19-10b4-46d6-861f-fa24850779eb","name":"\"Blub-blob\"","description":"- says the molten metal when it\u0027s being poured into a Casting Basin, of which you need to craft two to complete this quest. You can use this block to pour out entire blocks at once!","x":208,"y":109,"icon":{"id":"tconstruct:casting","damage":1},"prerequisites":["5b25d66c-bcc4-4c5a-8917-fefeaa626a73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:casting","damage":1},"required":2}]}],"reward":[{"id":"projectred-integration:gate","damage":17},{"id":"projectred-transmission:wire","amount":10}],"commandrewards":[]},{"uuid":"2ee1da4a-6b2f-4a02-a742-a788a05aff92","name":"Mesh it up!","description":"Smack your Iron Ore you\u0027ve gathered with your Rough Hammer to create some Rough Iron Mesh.","x":82,"y":63,"icon":{"id":"contenttweaker:rough_iron_mesh"},"prerequisites":["33b38a6f-2b12-46d0-9b52-e13910f581d4","d942ad24-c6dc-4baf-b88f-1878cd1afd25"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:rough_iron_mesh"},"required":2}]}],"reward":[{"id":"minecraft:mushroom_stew","amount":2}],"commandrewards":[]},{"uuid":"9ce50e7e-a892-44f2-a7bb-a85aab25983a","name":"Spartan Shields","description":"Check out the Spartan Shields mod in JEI, and create one of the basic Diamond-level shields available. You can use these shields to bash enemies while blocking: Just hold right click like you would usually do to block, then press left click for a bashing attack!","x":71,"y":182,"icon":{"id":"spartanshields:shield_basic_diamond"},"prerequisites":["b44fb3cf-a861-4cfe-be73-57de270ef496"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"spartanshields:shield_basic_diamond"}}]}],"reward":[{"id":"minecraft:enchanted_book","nbt":"{StoredEnchantments:[{lvl:3s,id:46s}]}"}],"commandrewards":[]},{"uuid":"f81539af-ac5b-4668-bb83-9e940c97184c","name":"Wannabe Sethbling","description":"Mine up some Redstone! It\u0027s found on low elevations underground, near lava-level!","x":125,"y":133,"icon":{"id":"minecraft:redstone"},"prerequisites":["021b732a-f745-4926-be3c-0c9203ede013"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:redstone"},"required":16}]}],"rewardchoice":[{"id":"divinerpg:arlemite_ore","amount":4},{"id":"divinerpg:rupee_ore","amount":4}],"commandrewards":[]},{"uuid":"38a2d8d5-10ce-46f1-ac0e-6cbb44479c7c","name":"Pattern Overflow","description":"Having too many Patterns? Scientists have long been working on a potential solution, and only recently have they found one: For only $9.99 a month and a life-long subscription, an all-new Pattern Chest can be YOURS to own! Just sign here and add your Credit Card number with the 3 digits on the back, and this wonderful new creation is in YOUR hands!\n...\nJust kidding, it\u0027s free (as long as you have the materials for it)...!","x":54,"y":110,"icon":{"id":"tconstruct:tooltables","damage":4},"prerequisites":["b4263a76-58af-4543-9c93-dcef45a14829"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:tooltables","damage":4}}]}],"rewardchoice":[{"id":"minecraft:red_mushroom","amount":4},{"id":"minecraft:brown_mushroom","amount":4}],"commandrewards":[]},{"uuid":"b4263a76-58af-4543-9c93-dcef45a14829","name":"_____ Patterns","description":"Craft some Blank Patterns which let you create Tinkers\u0027 Parts!","x":82,"y":109,"icon":{"id":"tconstruct:pattern"},"prerequisites":["021b732a-f745-4926-be3c-0c9203ede013"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:pattern"},"required":8}]}],"reward":[{"id":"tconstruct:pattern","amount":4}],"commandrewards":[]},{"uuid":"c21f6cce-1c09-41c9-9fc7-ae4fc7722461","name":"Don\u0027t burn your fingers","description":"Craft some Casting Tables to be able to pour out your molten metals into casts! The most important cast is the Ingot Cast, using which you can create (you guessed it) ingots!","x":235,"y":109,"icon":{"id":"tconstruct:casting"},"prerequisites":["5b25d66c-bcc4-4c5a-8917-fefeaa626a73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:casting"},"required":2}]}],"rewardchoice":[{"id":"tconstruct:cast_custom"},{"id":"tconstruct:cast","nbt":"{PartType:\"tconstruct:pick_head\"}"},{"id":"tconstruct:cast","nbt":"{PartType:\"tconstruct:tool_rod\"}"}],"commandrewards":[]},{"uuid":"ea68ab62-4cb1-47fb-97af-9f0025ec9bcd","name":"The core of your Smeltery","description":"Mine some Redstone, using which you can create a Smeltery Controller!","x":249,"y":87,"icon":{"id":"tconstruct:smeltery_controller"},"prerequisites":["5b25d66c-bcc4-4c5a-8917-fefeaa626a73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:smeltery_controller"}}]}],"reward":[{"id":"enderio:item_item_conduit","amount":8}],"commandrewards":[]},{"uuid":"6f2f4feb-b39c-456f-b194-30a3324d6f9d","name":"Iron Backpacks","description":"Check out the Iron Backpacks mod and work your way up to a Diamond Backpack! You can store a lot of items in it and bring it with you on your journey!","x":127,"y":182,"icon":{"id":"ironbackpacks:backpack","nbt":"{packInfo:{upgrade:[],type:\"ironbackpacks:diamond\",spec:\"STORAGE\"}}"},"prerequisites":["b44fb3cf-a861-4cfe-be73-57de270ef496"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"ironbackpacks:backpack","nbt":"{packInfo:{upgrade:[],type:\"ironbackpacks:diamond\",spec:\"STORAGE\"}}"},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"thermalfoundation:ore","damage":5,"amount":40},{"id":"minecraft:gold_ore","amount":40}],"commandrewards":[]},{"uuid":"b90813de-bc60-46d5-a8f6-747e7556952e","name":"Gravel Collector","description":"Collect some Gravel with Ore Excavator!","x":197,"y":11,"icon":{"id":"minecraft:gravel"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:gravel"},"required":40,"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"tconstruct:binding","nbt":"{Material:\"cactus\"}"}],"commandrewards":[]},{"uuid":"3acd144b-d9f9-46fb-b82d-cfcd2b42dd75","name":"Drawer upgrades","description":"Use your Obisidian you\u0027ve just gathered to create some basic Drawer Upgrades! You can use these to upgrade the capacity of your Drawers!","x":224,"y":187,"icon":{"id":"storagedrawers:upgrade_storage"},"prerequisites":["17599f70-819e-4700-af9b-07a214f72bf9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"storagedrawers:upgrade_storage"},"required":8}]}],"reward":[{"id":"storagedrawers:drawer_key"}],"commandrewards":[]},{"uuid":"33b38a6f-2b12-46d0-9b52-e13910f581d4","name":"Rough Hammer","description":"Craft a Rough Hammer! This tool is used to create Rough Iron Mesh out of Iron Ore.","x":67,"y":39,"icon":{"id":"contenttweaker:rough_hammer"},"prerequisites":["9508d90d-ea1e-4316-9944-8de71d87366b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:rough_hammer"}}]}],"reward":[{"id":"natura:soups","damage":9}],"commandrewards":[]},{"uuid":"75835d7e-e27b-49ec-bead-56bc47626b4d","name":"Time to start the PART-y!","description":"Use various materials to form Parts using Patterns from the Stencil Table! For example, 3 pieces of Cobblestone with a Pickaxe Head Pattern will create a Stone Pickaxe Head! For Parts made out of metal however, you\u0027ll need to use the Smeltery, melt the metal and pour it out into a Cast, e.g. a Pickaxe Head Cast!","x":84,"y":158,"icon":{"id":"tconstruct:tooltables","damage":2,"nbt":"{textureBlock:{id:\"minecraft:log\",Count:1b,Damage:0s}}"},"prerequisites":["b4263a76-58af-4543-9c93-dcef45a14829"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:tooltables","damage":2,"nbt":"{textureBlock:{id:\"minecraft:log\",Count:1b,Damage:0s}}"},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"minecraft:cactus","amount":4},{"id":"minecraft:pumpkin","amount":4}],"commandrewards":[]},{"uuid":"a96b8373-fd12-4914-afc5-1afa29f9e34f","name":"It all starts the same way...","description":"You know what to do: Get wood!","x":26,"y":15,"icon":{"id":"minecraft:log"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:log"},"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"minecraft:apple","amount":3}],"commandrewards":[]},{"uuid":"38cdb6e8-626a-49be-963f-76d059836e45","name":"Oh no, it\u0027s leaking!","description":"Craft some Seared Drains to pour your liquid out through Seared Faucets! If you wish to route the liquid further, you can use Casting Channels!","x":193,"y":86,"icon":{"id":"tconstruct:smeltery_io"},"prerequisites":["5b25d66c-bcc4-4c5a-8917-fefeaa626a73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:smeltery_io"},"required":2},{"item":{"id":"tconstruct:faucet"},"required":2}]}],"rewardchoice":[{"id":"tconstruct:faucet","amount":4},{"id":"tconstruct:channel","amount":4}],"commandrewards":[]},{"uuid":"a2342f93-805a-4d51-84f3-3749392cdda3","name":"Hello? Maybe. Alu? Might!","description":"Use Lava Buckets on Smeltery Drains to insert Lava into your Smeltery! You can insert Water the same way to craete Obsidian inside the Smeltery. Now create Alumite inside the Smeltery by alloying Obsidian with Aluminum and Iron! Then pour out some of the resulting Alumite into a Pickaxe Head Cast! Using this you can create an Alumite Pickaxe capable of mining anything up to Obisdian level!\n\nNote: You can automate the insertion of Lava and Water using Fluiducts, which you have access to right now.","x":192,"y":134,"icon":{"id":"tconstruct:pick_head","nbt":"{Material:\"alumite\"}"},"prerequisites":["38cdb6e8-626a-49be-963f-76d059836e45","43b52dd6-7f17-4bee-880d-1f1ef80ba8bd"],"parentrequirement":1,"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:pick_head","nbt":"{Material:\"alumite\"}"}}]}],"reward":[{"id":"minecraft:gold_ore","amount":6}],"commandrewards":[]},{"uuid":"e64700c4-1c77-4ea0-a80e-8406774cde4a","name":"A Crafting Table!","description":"Use your 2x2 crafting grid to create an undamaged Stone Axe, Stone Pickaxe and 2 Crafting Bases, then combine them to create a Crafting Table!","x":109,"y":16,"icon":{"id":"minecraft:crafting_table"},"prerequisites":["cdc6438c-95e5-4623-9c35-8f35c774eba7"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:crafting_table"}}]}],"rewardchoice":[{"id":"minecraft:sapling","damage":3,"amount":4},{"id":"minecraft:sapling","damage":5,"amount":4}],"commandrewards":[]},{"uuid":"e092860e-10c4-4167-977f-c4b3d52a7c05","name":"Chests are lame","description":"Craft any kind of Drawer from the Storage Drawers mod! You can store a lot of one specific type of item in it! It\u0027s useful if you have a lot of Cobblestone, Dirt, Gravel, etc. piling up in your Chests!","x":124,"y":39,"icon":{"id":"storagedrawers:basicdrawers","nbt":"{material:\"oak\"}"},"prerequisites":["e64700c4-1c77-4ea0-a80e-8406774cde4a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"storagedrawers:basicdrawers","nbt":"{material:\"oak\"}"},"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"storagedrawers:upgrade_storage","damage":1}],"commandrewards":[]},{"uuid":"d942ad24-c6dc-4baf-b88f-1878cd1afd25","name":"How Ironic","description":"(Not very.)","x":94,"y":39,"icon":{"id":"minecraft:iron_ore"},"prerequisites":["cdc6438c-95e5-4623-9c35-8f35c774eba7"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:iron_ore"},"required":4,"precision":"ORE_DICTIONARY"}]}],"rewardchoice":[{"id":"thermalfoundation:ore","amount":2},{"id":"thermalfoundation:ore","damage":1,"amount":2}],"commandrewards":[]},{"uuid":"8eed4222-7a17-4d1e-b9b8-1137dcd28005","name":"Stone Torches","description":"No longer will you need to bring excess wood with you for Sticks to craft Torches! Just put together 2 pieces of Cobblestone to get Stone Rods, and use them to create Stone Torches!","x":27,"y":62,"icon":{"id":"tconstruct:stone_torch"},"prerequisites":["0d83cc32-1897-4b55-a6bf-24b172aafc73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:stone_torch"},"required":10}]}],"reward":[{"id":"divinerpg:hot_pumpkin_pie"}],"commandrewards":[]},{"uuid":"8b422b25-7e09-4cee-9937-5cd3efcd2db6","name":"Partially stored","description":"You can store your tools here. Well, partially.\n\n...By that I mean, you can\u0027t store your tools here at all, only its parts.","x":42,"y":134,"icon":{"id":"tconstruct:tooltables","damage":5},"prerequisites":["b4263a76-58af-4543-9c93-dcef45a14829"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:tooltables","damage":5},"precision":"ORE_DICTIONARY"}]}],"rewardchoice":[{"id":"minecraft:carrot","amount":4},{"id":"minecraft:potato","amount":4}],"commandrewards":[]},{"uuid":"cdc6438c-95e5-4623-9c35-8f35c774eba7","name":"Stone Pickaxe","description":"Craft a Stone Pickaxe Head and use it to craft a Stone Pickaxe!","x":80,"y":16,"icon":{"id":"contenttweaker:stone_pickaxe_head"},"prerequisites":["9508d90d-ea1e-4316-9944-8de71d87366b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:stone_pickaxe_head"}},{"item":{"id":"contenttweaker:tool_rod"}}]}],"reward":[{"id":"minecraft:leather","amount":2}],"commandrewards":[]},{"uuid":"a21dd6e5-fc06-4a3f-9ea3-54ecdbc1cbaf","name":"Photosynthesis","description":"Harvest some Yellow Flowers (Dandelions, Sunflowers, Yellow Botania Flowers, etc.), and turn them into Yellow Dye!\n\nIn the case of Botania Flowers, you can craft a Pestle and Mortar in order to do this!","x":40,"y":88,"icon":{"id":"minecraft:dye","damage":11},"tasks":[{"type":"DETECT","items":[{"item":{"id":"erebus:giant_flower","damage":9},"required":4,"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"minecraft:log","amount":4}],"commandrewards":[]},{"uuid":"bdaced05-3090-440c-bdb1-0a47ffdfc9fd","name":"Hard as a Rock","description":"Use your Obsidian you\u0027ve just gathered to craft a full set of Obsidian Armor! This is slightly weaker than Iron Armor, however, Obisidian is easily available to Ore Excavate at any time!","x":250,"y":134,"icon":{"id":"actuallyadditions:item_chest_obsidian"},"prerequisites":["17599f70-819e-4700-af9b-07a214f72bf9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"actuallyadditions:item_helm_obsidian"}},{"item":{"id":"actuallyadditions:item_chest_obsidian"}},{"item":{"id":"actuallyadditions:item_pants_obsidian"}},{"item":{"id":"actuallyadditions:item_boots_obsidian"}}]}],"rewardchoice":[{"id":"minecraft:slime_ball","amount":10},{"id":"minecraft:gunpowder","amount":16}],"commandrewards":[]},{"uuid":"0d83cc32-1897-4b55-a6bf-24b172aafc73","name":"Something to smelt with","description":"Mine up some Coal! Don\u0027t forget about Ore Excavator!","x":54,"y":62,"icon":{"id":"minecraft:coal"},"prerequisites":["69b4e7a8-a49c-4226-b6d8-578265a650fe"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:coal"},"required":4,"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"minecraft:bow","damage":364},{"id":"minecraft:arrow","amount":6}],"commandrewards":[]},{"uuid":"69b4e7a8-a49c-4226-b6d8-578265a650fe","name":"Pick before Crafting?","description":"That\u0027s right! The Crafting Table ain\u0027t so easy to create! You first need to make a Wooden Pickaxe Head and a Tool Rod, then combine them!","x":40,"y":38,"icon":{"id":"contenttweaker:wooden_pickaxe_head"},"prerequisites":["a96b8373-fd12-4914-afc5-1afa29f9e34f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:wooden_pickaxe_head"}},{"item":{"id":"contenttweaker:tool_rod"}}]}],"reward":[{"id":"minecraft:log","amount":4}],"commandrewards":[]},{"uuid":"449a5f0a-6861-4682-8893-639676733921","name":"Totally!","description":"Create a Totem Whittling Knife to unlock Chapter 2: Dancing on a Totem Pole!","x":261,"y":156,"bigicon":true,"icon":{"id":"totemic:totem_whittling_knife"},"prerequisites":["17599f70-819e-4700-af9b-07a214f72bf9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"totemic:totem_whittling_knife"}}]}],"reward":[{"id":"totemic:totempedia"}],"commandrewards":[]},{"uuid":"f25af910-26e8-4575-984c-5895c34dd8eb","name":"Fuel it up!","description":"Your Smeltery requires one Seared Tank constantly fueled with Lava to keep it running. Later on you\u0027ll be able to use Liquid Pyrotheum to speed up the entire multiblock by a lot!","x":236,"y":63,"icon":{"id":"tconstruct:seared_tank"},"prerequisites":["5b25d66c-bcc4-4c5a-8917-fefeaa626a73"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:seared_tank"}}]}],"reward":[{"id":"minecraft:lava_bucket"}],"commandrewards":[]},{"uuid":"b44fb3cf-a861-4cfe-be73-57de270ef496","name":"Shiny Blue Rock! :O","description":"Mine up some DIAMONDS!","x":43,"y":182,"icon":{"id":"minecraft:diamond"},"prerequisites":["021b732a-f745-4926-be3c-0c9203ede013"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:diamond"},"required":4}]}],"reward":[{"id":"thermalfoundation:material","damage":134,"amount":2}],"commandrewards":[]},{"uuid":"3a1741e8-186e-4d60-9a07-6ce1d6a90993","name":"Fully upgraded!","description":"Obtain some Tier 5 Storage Upgrades! Villager trading is disabled, but to compensate for that, Emerald Ore generation has been added to each biome (and i\u0027s slightly more common in Extreme Hills).","x":278,"y":186,"icon":{"id":"storagedrawers:upgrade_storage","damage":4},"prerequisites":["f73aff10-2180-41b5-82a0-962f3f4cdddf"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"storagedrawers:upgrade_storage","damage":4},"required":4}]}],"reward":[{"id":"storagedrawers:compdrawers","amount":2}],"commandrewards":[]},{"uuid":"5b25d66c-bcc4-4c5a-8917-fefeaa626a73","name":"Say hello to Tinkers\u0027!","description":"Smelt your Grout into Seared Bricks and enter Tinkers\u0027 Construct!","x":208,"y":63,"icon":{"id":"tconstruct:materials"},"prerequisites":["2db833ab-db42-4eaa-9ca5-cc9a4e9b0d1f","7a9d406b-333f-434b-ab8e-91e42915634c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:materials"},"required":20}]}],"rewardchoice":[{"id":"thermalfoundation:ore","damage":2,"amount":4},{"id":"thermalfoundation:ore","damage":3,"amount":4}],"commandrewards":[]},{"uuid":"7a9d406b-333f-434b-ab8e-91e42915634c","name":"Smelting capabilities","description":"Use your Iron you\u0027ve obtained to create 2 Iron Rods, Then mine up a lot of Cobblestone with Ore Excavator to compress them into Compressed Cobblestone! If you can\u0027t find regular Cobblestone, note that you can craft 4 pieces of any Underground Biomes Cobblestone type into 4 pieces of Cobblestone by forming a square shape in the Crafting Window. Using these materials you can finally create a Furnace!","x":109,"y":62,"icon":{"id":"minecraft:furnace"},"prerequisites":["021b732a-f745-4926-be3c-0c9203ede013","e64700c4-1c77-4ea0-a80e-8406774cde4a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:furnace"}}]}],"reward":[{"id":"minecraft:iron_ore","amount":2}],"commandrewards":[]},{"uuid":"6c13862d-77fc-454e-8e4b-3bbdd39b9490","name":"Power of the Sun!","description":"Combine some Coal with Yellow Dye to create an essence which is surprisingly reactive!","x":68,"y":86,"icon":{"id":"contenttweaker:burning_essence"},"prerequisites":["0d83cc32-1897-4b55-a6bf-24b172aafc73","a21dd6e5-fc06-4a3f-9ea3-54ecdbc1cbaf"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:burning_essence"},"required":4}]}],"reward":[{"id":"minecraft:wheat_seeds","amount":3}],"commandrewards":[]},{"uuid":"baa19be6-f519-44cb-a517-91403af58ac5","name":"Clay Collector","description":"Collect some Clay with Ore Excavator!","x":222,"y":16,"icon":{"id":"minecraft:clay_ball"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:clay_ball"},"required":40}]}],"reward":[{"id":"tconstruct:shovel_head","nbt":"{Material:\"flint\"}"}],"commandrewards":[]},{"uuid":"ee03a475-f5ef-4c4d-b0d8-ab59a27732d0","name":"Iron Chests","description":"Check out the Iron Chests mod in JEI, and work your way up to creating a Diamond Chest, which has a lot more storage space than a regular Chest!","x":99,"y":182,"icon":{"id":"ironchest:iron_chest","damage":2},"prerequisites":["b44fb3cf-a861-4cfe-be73-57de270ef496"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"ironchest:iron_chest","damage":2}}]}],"rewardchoice":[{"id":"minecraft:iron_ore","amount":64},{"id":"divinerpg:realmite_ore","amount":64}],"commandrewards":[]},{"uuid":"5f28172d-2d1c-4d42-bc61-077a6d8d223a","name":"Sand Collector","description":"Collect some Sand with Ore Excavator!","x":172,"y":16,"icon":{"id":"minecraft:sand"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"minecraft:sand"},"required":40,"precision":"ORE_DICTIONARY"}]}],"reward":[{"id":"tconstruct:tool_rod","nbt":"{Material:\"bronze\"}"}],"commandrewards":[]},{"uuid":"78c7941d-0f8a-42b7-ace4-222ede93f447","name":"Copernicus would be proud","description":"Mine up some Copper from underground! It\u0027s found on higher elevations, sometimes even on exposed Stone on the surface! Then smelt it or ore-double it in the Smeltery!","x":110,"y":110,"icon":{"id":"thermalfoundation:material","damage":128},"prerequisites":["021b732a-f745-4926-be3c-0c9203ede013"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalfoundation:material","damage":128},"required":10,"precision":"ORE_DICTIONARY"}]}],"rewardchoice":[{"id":"thermalfoundation:ore","damage":1,"amount":4},{"id":"mekanism:oreblock","amount":4}],"commandrewards":[]},{"uuid":"f9f4fc4d-fdc8-4e34-9dea-49b44f1ad03a","name":"The start of Tool Creation","description":"Make a Stencil Table! You can use it to transform your Blank Patterns into various Patterns for Tools! This is where all Tool Creation in Tinkers\u0027 Construct starts.","x":58,"y":157,"icon":{"id":"tconstruct:tooltables","damage":1,"nbt":"{textureBlock:{id:\"minecraft:planks\",Count:1b,Damage:0s}}"},"prerequisites":["b4263a76-58af-4543-9c93-dcef45a14829"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"tconstruct:tooltables","damage":1,"nbt":"{textureBlock:{id:\"minecraft:planks\",Count:1b,Damage:0s}}"},"precision":"NBT_FUZZY"}]}],"rewardchoice":[{"id":"minecraft:reeds","amount":4},{"id":"minecraft:melon","amount":4}],"commandrewards":[]},{"uuid":"d1c9a7ed-aa58-451d-a012-a80919566551","name":"Experience Storage","description":"Craft a bunch of OpenBlocks Tanks and an XP Drain! You can store your Experience by standing on the XP Drain with a Tank below. Tanks also connect to each other nicely. To regain your XP, simply right click any of the connected Tanks!\n\n[Pro Tip: If you craft 4 XP Drains, place them down in a 2x2 square on top of some Tanks, you can drain you XP much faster than you would with only 1 Drain!]","x":221,"y":134,"icon":{"id":"openblocks:tank"},"prerequisites":["17599f70-819e-4700-af9b-07a214f72bf9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"openblocks:tank"},"required":12},{"item":{"id":"openblocks:xp_drain"}}]}],"reward":[{"id":"actuallyadditions:item_solidified_experience","amount":32}],"commandrewards":[]},{"uuid":"43b52dd6-7f17-4bee-880d-1f1ef80ba8bd","name":"Lava filled Tank","description":"[This is an optional quest. You can use any other Fluid Tank available to you a this point, however, the Thermal Expansion Portable Tank is a good option.]\n\nCraft and fill up the Tank with Lava! You\u0027ll use it to create obisidian inside the Smeltery!","x":177,"y":110,"icon":{"id":"thermalexpansion:tank","nbt":"{RSControl:0b,Creative:0b,Fluid:{FluidName:\"lava\",Amount:20000},Level:0b,Lock:0b}"},"prerequisites":["38cdb6e8-626a-49be-963f-76d059836e45","78c7941d-0f8a-42b7-ace4-222ede93f447"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermalexpansion:tank","nbt":"{RSControl:0b,Creative:0b,Fluid:{FluidName:\"lava\",Amount:20000},Level:0b,Lock:0b}"}}]}],"reward":[{"id":"thermalfoundation:wrench"}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "The Journey begins!",
+  "description": " The Journey begins!\nStarting off with Tinker's Construct and some tweaked Vanilla progression.",
+  "quests": [
+    {
+      "uuid": "17599f70-819e-4700-af9b-07a214f72bf9",
+      "name": "Excavating Obsidian",
+      "description": "Use your Alumite Pickaxe to Ore Excavate a field of Obsidian! You can easily get stacks of Obsidian in a couple minutes with this method.",
+      "x": 206,
+      "y": 160,
+      "icon": {
+        "id": "minecraft:obsidian"
+      },
+      "prerequisites": [
+        "a2342f93-805a-4d51-84f3-3749392cdda3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:obsidian"
+              },
+              "required": 128
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:ender_pearl",
+          "amount": 8
+        },
+        {
+          "id": "extrautils2:enderlilly",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2db833ab-db42-4eaa-9ca5-cc9a4e9b0d1f",
+      "name": "I am GROUT!",
+      "description": "Craft a lot of Grout! You'll need it.",
+      "x": 196,
+      "y": 39,
+      "icon": {
+        "id": "tconstruct:soil"
+      },
+      "prerequisites": [
+        "5f28172d-2d1c-4d42-bc61-077a6d8d223a",
+        "b90813de-bc60-46d5-a8f6-747e7556952e",
+        "baa19be6-f519-44cb-a517-91403af58ac5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:soil"
+              },
+              "required": 128
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sand",
+          "amount": 20
+        },
+        {
+          "id": "minecraft:gravel",
+          "amount": 20
+        },
+        {
+          "id": "minecraft:clay_ball",
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "021b732a-f745-4926-be3c-0c9203ede013",
+      "name": "Very Metallic!",
+      "description": "\"Smelt\" your Rough Iron Mesh using the Burning Essence you've created! Just drop the two Essences into water and voil?! You got youself an Iron Ingot!",
+      "x": 96,
+      "y": 86,
+      "icon": {
+        "id": "minecraft:iron_ingot"
+      },
+      "prerequisites": [
+        "6c13862d-77fc-454e-8e4b-3bbdd39b9490",
+        "2ee1da4a-6b2f-4a02-a742-a788a05aff92"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ingot"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:coal",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9508d90d-ea1e-4316-9944-8de71d87366b",
+      "name": "Mine it up!",
+      "description": "Obtain 15 pieces of Cobblestone or any base stone material you find underground! DON'T FORGET ABOUT ORE EXCAVATOR!",
+      "x": 53,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:cobblestone"
+      },
+      "prerequisites": [
+        "69b4e7a8-a49c-4226-b6d8-578265a650fe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 15,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:experience_bottle",
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f73aff10-2180-41b5-82a0-962f3f4cdddf",
+      "name": "Even more upgrades!",
+      "description": "Upgrade the Tier 1 Drawer upgrades all to way to Tier 4! Lots of storage capacity! :O\n\n[Note: Tiers 2 & 3 have been skipped in the Quest Book, as they should be very easily accessible at this point.]",
+      "x": 251,
+      "y": 187,
+      "icon": {
+        "id": "storagedrawers:upgrade_storage",
+        "damage": 3
+      },
+      "prerequisites": [
+        "3acd144b-d9f9-46fb-b82d-cfcd2b42dd75"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "storagedrawers:upgrade_storage",
+                "damage": 3
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "storagedrawers:tape"
+        },
+        {
+          "id": "bibliocraft:tapemeasure",
+          "nbt": "{distance:0}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "847deb3a-bd61-493c-8280-8c7c423f81da",
+      "name": "TOOL-7",
+      "description": "Tool-7? What does that mean? Well, it's not Tool-8, not too late to create cool new Tinkers' Tools! >:D",
+      "x": 98,
+      "y": 135,
+      "icon": {
+        "id": "tconstruct:tooltables",
+        "damage": 3
+      },
+      "prerequisites": [
+        "b4263a76-58af-4543-9c93-dcef45a14829"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tooltables",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "natura:overworld_sapling",
+          "amount": 4
+        },
+        {
+          "id": "natura:overworld_sapling",
+          "damage": 3,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "412fab19-10b4-46d6-861f-fa24850779eb",
+      "name": "\"Blub-blob\"",
+      "description": "- says the molten metal when it's being poured into a Casting Basin, of which you need to craft two to complete this quest. You can use this block to pour out entire blocks at once!",
+      "x": 208,
+      "y": 109,
+      "icon": {
+        "id": "tconstruct:casting",
+        "damage": 1
+      },
+      "prerequisites": [
+        "5b25d66c-bcc4-4c5a-8917-fefeaa626a73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:casting",
+                "damage": 1
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "projectred-integration:gate",
+          "damage": 17
+        },
+        {
+          "id": "projectred-transmission:wire",
+          "amount": 10
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2ee1da4a-6b2f-4a02-a742-a788a05aff92",
+      "name": "Mesh it up!",
+      "description": "Smack your Iron Ore you've gathered with your Rough Hammer to create some Rough Iron Mesh.",
+      "x": 82,
+      "y": 63,
+      "icon": {
+        "id": "contenttweaker:rough_iron_mesh"
+      },
+      "prerequisites": [
+        "33b38a6f-2b12-46d0-9b52-e13910f581d4",
+        "d942ad24-c6dc-4baf-b88f-1878cd1afd25"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:rough_iron_mesh"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:mushroom_stew",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9ce50e7e-a892-44f2-a7bb-a85aab25983a",
+      "name": "Spartan Shields",
+      "description": "Check out the Spartan Shields mod in JEI, and create one of the basic Diamond-level shields available. You can use these shields to bash enemies while blocking: Just hold right click like you would usually do to block, then press left click for a bashing attack!",
+      "x": 71,
+      "y": 182,
+      "icon": {
+        "id": "spartanshields:shield_basic_diamond"
+      },
+      "prerequisites": [
+        "b44fb3cf-a861-4cfe-be73-57de270ef496"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "spartanshields:shield_basic_diamond"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_book",
+          "nbt": "{StoredEnchantments:[{lvl:3s,id:46s}]}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f81539af-ac5b-4668-bb83-9e940c97184c",
+      "name": "Wannabe Sethbling",
+      "description": "Mine up some Redstone! It's found on low elevations underground, near lava-level!",
+      "x": 125,
+      "y": 133,
+      "icon": {
+        "id": "minecraft:redstone"
+      },
+      "prerequisites": [
+        "021b732a-f745-4926-be3c-0c9203ede013"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "divinerpg:arlemite_ore",
+          "amount": 4
+        },
+        {
+          "id": "divinerpg:rupee_ore",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "38a2d8d5-10ce-46f1-ac0e-6cbb44479c7c",
+      "name": "Pattern Overflow",
+      "description": "Having too many Patterns? Scientists have long been working on a potential solution, and only recently have they found one: For only $9.99 a month and a life-long subscription, an all-new Pattern Chest can be YOURS to own! Just sign here and add your Credit Card number with the 3 digits on the back, and this wonderful new creation is in YOUR hands!\n...\nJust kidding, it's free (as long as you have the materials for it)...!",
+      "x": 54,
+      "y": 110,
+      "icon": {
+        "id": "tconstruct:tooltables",
+        "damage": 4
+      },
+      "prerequisites": [
+        "b4263a76-58af-4543-9c93-dcef45a14829"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tooltables",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:red_mushroom",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:brown_mushroom",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b4263a76-58af-4543-9c93-dcef45a14829",
+      "name": "_____ Patterns",
+      "description": "Craft some Blank Patterns which let you create Tinkers' Parts!",
+      "x": 82,
+      "y": 109,
+      "icon": {
+        "id": "tconstruct:pattern"
+      },
+      "prerequisites": [
+        "021b732a-f745-4926-be3c-0c9203ede013"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pattern"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:pattern",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c21f6cce-1c09-41c9-9fc7-ae4fc7722461",
+      "name": "Don't burn your fingers",
+      "description": "Craft some Casting Tables to be able to pour out your molten metals into casts! The most important cast is the Ingot Cast, using which you can create (you guessed it) ingots!",
+      "x": 235,
+      "y": 109,
+      "icon": {
+        "id": "tconstruct:casting"
+      },
+      "prerequisites": [
+        "5b25d66c-bcc4-4c5a-8917-fefeaa626a73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:casting"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "tconstruct:cast_custom"
+        },
+        {
+          "id": "tconstruct:cast",
+          "nbt": "{PartType:\"tconstruct:pick_head\"}"
+        },
+        {
+          "id": "tconstruct:cast",
+          "nbt": "{PartType:\"tconstruct:tool_rod\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ea68ab62-4cb1-47fb-97af-9f0025ec9bcd",
+      "name": "The core of your Smeltery",
+      "description": "Mine some Redstone, using which you can create a Smeltery Controller!",
+      "x": 249,
+      "y": 87,
+      "icon": {
+        "id": "tconstruct:smeltery_controller"
+      },
+      "prerequisites": [
+        "5b25d66c-bcc4-4c5a-8917-fefeaa626a73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:smeltery_controller"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_item_conduit",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6f2f4feb-b39c-456f-b194-30a3324d6f9d",
+      "name": "Iron Backpacks",
+      "description": "Check out the Iron Backpacks mod and work your way up to a Diamond Backpack! You can store a lot of items in it and bring it with you on your journey!",
+      "x": 127,
+      "y": 182,
+      "icon": {
+        "id": "ironbackpacks:backpack",
+        "nbt": "{packInfo:{upgrade:[],type:\"ironbackpacks:diamond\",spec:\"STORAGE\"}}"
+      },
+      "prerequisites": [
+        "b44fb3cf-a861-4cfe-be73-57de270ef496"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ironbackpacks:backpack",
+                "nbt": "{packInfo:{upgrade:[],type:\"ironbackpacks:diamond\",spec:\"STORAGE\"}}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 5,
+          "amount": 40
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 40
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b90813de-bc60-46d5-a8f6-747e7556952e",
+      "name": "Gravel Collector",
+      "description": "Collect some Gravel with Ore Excavator!",
+      "x": 197,
+      "y": 11,
+      "icon": {
+        "id": "minecraft:gravel"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gravel"
+              },
+              "required": 40,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:binding",
+          "nbt": "{Material:\"cactus\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3acd144b-d9f9-46fb-b82d-cfcd2b42dd75",
+      "name": "Drawer upgrades",
+      "description": "Use your Obisidian you've just gathered to create some basic Drawer Upgrades! You can use these to upgrade the capacity of your Drawers!",
+      "x": 224,
+      "y": 187,
+      "icon": {
+        "id": "storagedrawers:upgrade_storage"
+      },
+      "prerequisites": [
+        "17599f70-819e-4700-af9b-07a214f72bf9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "storagedrawers:upgrade_storage"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "storagedrawers:drawer_key"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "33b38a6f-2b12-46d0-9b52-e13910f581d4",
+      "name": "Rough Hammer",
+      "description": "Craft a Rough Hammer! This tool is used to create Rough Iron Mesh out of Iron Ore.",
+      "x": 67,
+      "y": 39,
+      "icon": {
+        "id": "contenttweaker:rough_hammer"
+      },
+      "prerequisites": [
+        "9508d90d-ea1e-4316-9944-8de71d87366b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:rough_hammer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "natura:soups",
+          "damage": 9
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "75835d7e-e27b-49ec-bead-56bc47626b4d",
+      "name": "Time to start the PART-y!",
+      "description": "Use various materials to form Parts using Patterns from the Stencil Table! For example, 3 pieces of Cobblestone with a Pickaxe Head Pattern will create a Stone Pickaxe Head! For Parts made out of metal however, you'll need to use the Smeltery, melt the metal and pour it out into a Cast, e.g. a Pickaxe Head Cast!",
+      "x": 84,
+      "y": 158,
+      "icon": {
+        "id": "tconstruct:tooltables",
+        "damage": 2,
+        "nbt": "{textureBlock:{id:\"minecraft:log\",Count:1b,Damage:0s}}"
+      },
+      "prerequisites": [
+        "b4263a76-58af-4543-9c93-dcef45a14829"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tooltables",
+                "damage": 2,
+                "nbt": "{textureBlock:{id:\"minecraft:log\",Count:1b,Damage:0s}}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:cactus",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:pumpkin",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a96b8373-fd12-4914-afc5-1afa29f9e34f",
+      "name": "It all starts the same way...",
+      "description": "You know what to do: Get wood!",
+      "x": 26,
+      "y": 15,
+      "icon": {
+        "id": "minecraft:log"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:log"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:apple",
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "38cdb6e8-626a-49be-963f-76d059836e45",
+      "name": "Oh no, it's leaking!",
+      "description": "Craft some Seared Drains to pour your liquid out through Seared Faucets! If you wish to route the liquid further, you can use Casting Channels!",
+      "x": 193,
+      "y": 86,
+      "icon": {
+        "id": "tconstruct:smeltery_io"
+      },
+      "prerequisites": [
+        "5b25d66c-bcc4-4c5a-8917-fefeaa626a73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:smeltery_io"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "tconstruct:faucet"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "tconstruct:faucet",
+          "amount": 4
+        },
+        {
+          "id": "tconstruct:channel",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a2342f93-805a-4d51-84f3-3749392cdda3",
+      "name": "Hello? Maybe. Alu? Might!",
+      "description": "Use Lava Buckets on Smeltery Drains to insert Lava into your Smeltery! You can insert Water the same way to craete Obsidian inside the Smeltery. Now create Alumite inside the Smeltery by alloying Obsidian with Aluminum and Iron! Then pour out some of the resulting Alumite into a Pickaxe Head Cast! Using this you can create an Alumite Pickaxe capable of mining anything up to Obisdian level!\n\nNote: You can automate the insertion of Lava and Water using Fluiducts, which you have access to right now.",
+      "x": 192,
+      "y": 134,
+      "icon": {
+        "id": "tconstruct:pick_head",
+        "nbt": "{Material:\"alumite\"}"
+      },
+      "prerequisites": [
+        "38cdb6e8-626a-49be-963f-76d059836e45",
+        "43b52dd6-7f17-4bee-880d-1f1ef80ba8bd"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:pick_head",
+                "nbt": "{Material:\"alumite\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e64700c4-1c77-4ea0-a80e-8406774cde4a",
+      "name": "A Crafting Table!",
+      "description": "Use your 2x2 crafting grid to create an undamaged Stone Axe, Stone Pickaxe and 2 Crafting Bases, then combine them to create a Crafting Table!",
+      "x": 109,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:crafting_table"
+      },
+      "prerequisites": [
+        "cdc6438c-95e5-4623-9c35-8f35c774eba7"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:crafting_table"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:sapling",
+          "damage": 3,
+          "amount": 4
+        },
+        {
+          "id": "minecraft:sapling",
+          "damage": 5,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e092860e-10c4-4167-977f-c4b3d52a7c05",
+      "name": "Chests are lame",
+      "description": "Craft any kind of Drawer from the Storage Drawers mod! You can store a lot of one specific type of item in it! It's useful if you have a lot of Cobblestone, Dirt, Gravel, etc. piling up in your Chests!",
+      "x": 124,
+      "y": 39,
+      "icon": {
+        "id": "storagedrawers:basicdrawers",
+        "nbt": "{material:\"oak\"}"
+      },
+      "prerequisites": [
+        "e64700c4-1c77-4ea0-a80e-8406774cde4a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "storagedrawers:basicdrawers",
+                "nbt": "{material:\"oak\"}"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "storagedrawers:upgrade_storage",
+          "damage": 1
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d942ad24-c6dc-4baf-b88f-1878cd1afd25",
+      "name": "How Ironic",
+      "description": "(Not very.)",
+      "x": 94,
+      "y": 39,
+      "icon": {
+        "id": "minecraft:iron_ore"
+      },
+      "prerequisites": [
+        "cdc6438c-95e5-4623-9c35-8f35c774eba7"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ore"
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "amount": 2
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 1,
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8eed4222-7a17-4d1e-b9b8-1137dcd28005",
+      "name": "Stone Torches",
+      "description": "No longer will you need to bring excess wood with you for Sticks to craft Torches! Just put together 2 pieces of Cobblestone to get Stone Rods, and use them to create Stone Torches!",
+      "x": 27,
+      "y": 62,
+      "icon": {
+        "id": "tconstruct:stone_torch"
+      },
+      "prerequisites": [
+        "0d83cc32-1897-4b55-a6bf-24b172aafc73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:stone_torch"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "divinerpg:hot_pumpkin_pie"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8b422b25-7e09-4cee-9937-5cd3efcd2db6",
+      "name": "Partially stored",
+      "description": "You can store your tools here. Well, partially.\n\n...By that I mean, you can't store your tools here at all, only its parts.",
+      "x": 42,
+      "y": 134,
+      "icon": {
+        "id": "tconstruct:tooltables",
+        "damage": 5
+      },
+      "prerequisites": [
+        "b4263a76-58af-4543-9c93-dcef45a14829"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tooltables",
+                "damage": 5
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:carrot",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:potato",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cdc6438c-95e5-4623-9c35-8f35c774eba7",
+      "name": "Stone Pickaxe",
+      "description": "Craft a Stone Pickaxe Head and use it to craft a Stone Pickaxe!",
+      "x": 80,
+      "y": 16,
+      "icon": {
+        "id": "contenttweaker:stone_pickaxe_head"
+      },
+      "prerequisites": [
+        "9508d90d-ea1e-4316-9944-8de71d87366b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:stone_pickaxe_head"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:tool_rod"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:leather",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a21dd6e5-fc06-4a3f-9ea3-54ecdbc1cbaf",
+      "name": "Photosynthesis",
+      "description": "Harvest some Yellow Flowers (Dandelions, Sunflowers, Yellow Botania Flowers, etc.), and turn them into Yellow Dye!\n\nIn the case of Botania Flowers, you can craft a Pestle and Mortar in order to do this!",
+      "x": 40,
+      "y": 88,
+      "icon": {
+        "id": "minecraft:dye",
+        "damage": 11
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:giant_flower",
+                "damage": 9
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:log",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "bdaced05-3090-440c-bdb1-0a47ffdfc9fd",
+      "name": "Hard as a Rock",
+      "description": "Use your Obsidian you've just gathered to craft a full set of Obsidian Armor! This is slightly weaker than Iron Armor, however, Obisidian is easily available to Ore Excavate at any time!",
+      "x": 250,
+      "y": 134,
+      "icon": {
+        "id": "actuallyadditions:item_chest_obsidian"
+      },
+      "prerequisites": [
+        "17599f70-819e-4700-af9b-07a214f72bf9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "actuallyadditions:item_helm_obsidian"
+              }
+            },
+            {
+              "item": {
+                "id": "actuallyadditions:item_chest_obsidian"
+              }
+            },
+            {
+              "item": {
+                "id": "actuallyadditions:item_pants_obsidian"
+              }
+            },
+            {
+              "item": {
+                "id": "actuallyadditions:item_boots_obsidian"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:slime_ball",
+          "amount": 10
+        },
+        {
+          "id": "minecraft:gunpowder",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0d83cc32-1897-4b55-a6bf-24b172aafc73",
+      "name": "Something to smelt with",
+      "description": "Mine up some Coal! Don't forget about Ore Excavator!",
+      "x": 54,
+      "y": 62,
+      "icon": {
+        "id": "minecraft:coal"
+      },
+      "prerequisites": [
+        "69b4e7a8-a49c-4226-b6d8-578265a650fe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:coal"
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:bow",
+          "damage": 364
+        },
+        {
+          "id": "minecraft:arrow",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "69b4e7a8-a49c-4226-b6d8-578265a650fe",
+      "name": "Pick before Crafting?",
+      "description": "That's right! The Crafting Table ain't so easy to create! You first need to make a Wooden Pickaxe Head and a Tool Rod, then combine them!",
+      "x": 40,
+      "y": 38,
+      "icon": {
+        "id": "contenttweaker:wooden_pickaxe_head"
+      },
+      "prerequisites": [
+        "a96b8373-fd12-4914-afc5-1afa29f9e34f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:wooden_pickaxe_head"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:tool_rod"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:log",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "449a5f0a-6861-4682-8893-639676733921",
+      "name": "Totally!",
+      "description": "Create a Totem Whittling Knife to unlock Chapter 2: Dancing on a Totem Pole!",
+      "x": 261,
+      "y": 156,
+      "bigicon": true,
+      "icon": {
+        "id": "totemic:totem_whittling_knife"
+      },
+      "prerequisites": [
+        "17599f70-819e-4700-af9b-07a214f72bf9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "totemic:totem_whittling_knife"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "totemic:totempedia"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f25af910-26e8-4575-984c-5895c34dd8eb",
+      "name": "Fuel it up!",
+      "description": "Your Smeltery requires one Seared Tank constantly fueled with Lava to keep it running. Later on you'll be able to use Liquid Pyrotheum to speed up the entire multiblock by a lot!",
+      "x": 236,
+      "y": 63,
+      "icon": {
+        "id": "tconstruct:seared_tank"
+      },
+      "prerequisites": [
+        "5b25d66c-bcc4-4c5a-8917-fefeaa626a73"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:seared_tank"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:lava_bucket"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b44fb3cf-a861-4cfe-be73-57de270ef496",
+      "name": "Shiny Blue Rock! :O",
+      "description": "Mine up some DIAMONDS!",
+      "x": 43,
+      "y": 182,
+      "icon": {
+        "id": "minecraft:diamond"
+      },
+      "prerequisites": [
+        "021b732a-f745-4926-be3c-0c9203ede013"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 134,
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3a1741e8-186e-4d60-9a07-6ce1d6a90993",
+      "name": "Fully upgraded!",
+      "description": "Obtain some Tier 5 Storage Upgrades! Villager trading is disabled, but to compensate for that, Emerald Ore generation has been added to each biome (and i's slightly more common in Extreme Hills).",
+      "x": 278,
+      "y": 186,
+      "icon": {
+        "id": "storagedrawers:upgrade_storage",
+        "damage": 4
+      },
+      "prerequisites": [
+        "f73aff10-2180-41b5-82a0-962f3f4cdddf"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "storagedrawers:upgrade_storage",
+                "damage": 4
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "storagedrawers:compdrawers",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5b25d66c-bcc4-4c5a-8917-fefeaa626a73",
+      "name": "Say hello to Tinkers'!",
+      "description": "Smelt your Grout into Seared Bricks and enter Tinkers' Construct!",
+      "x": 208,
+      "y": 63,
+      "icon": {
+        "id": "tconstruct:materials"
+      },
+      "prerequisites": [
+        "2db833ab-db42-4eaa-9ca5-cc9a4e9b0d1f",
+        "7a9d406b-333f-434b-ab8e-91e42915634c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:materials"
+              },
+              "required": 20
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 2,
+          "amount": 4
+        },
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 3,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7a9d406b-333f-434b-ab8e-91e42915634c",
+      "name": "Smelting capabilities",
+      "description": "Use your Iron you've obtained to create 2 Iron Rods, Then mine up a lot of Cobblestone with Ore Excavator to compress them into Compressed Cobblestone! If you can't find regular Cobblestone, note that you can craft 4 pieces of any Underground Biomes Cobblestone type into 4 pieces of Cobblestone by forming a square shape in the Crafting Window. Using these materials you can finally create a Furnace!",
+      "x": 109,
+      "y": 62,
+      "icon": {
+        "id": "minecraft:furnace"
+      },
+      "prerequisites": [
+        "021b732a-f745-4926-be3c-0c9203ede013",
+        "e64700c4-1c77-4ea0-a80e-8406774cde4a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:furnace"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6c13862d-77fc-454e-8e4b-3bbdd39b9490",
+      "name": "Power of the Sun!",
+      "description": "Combine some Coal with Yellow Dye to create an essence which is surprisingly reactive!",
+      "x": 68,
+      "y": 86,
+      "icon": {
+        "id": "contenttweaker:burning_essence"
+      },
+      "prerequisites": [
+        "0d83cc32-1897-4b55-a6bf-24b172aafc73",
+        "a21dd6e5-fc06-4a3f-9ea3-54ecdbc1cbaf"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:burning_essence"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:wheat_seeds",
+          "amount": 3
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "baa19be6-f519-44cb-a517-91403af58ac5",
+      "name": "Clay Collector",
+      "description": "Collect some Clay with Ore Excavator!",
+      "x": 222,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:clay_ball"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:clay_ball"
+              },
+              "required": 40
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:shovel_head",
+          "nbt": "{Material:\"flint\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ee03a475-f5ef-4c4d-b0d8-ab59a27732d0",
+      "name": "Iron Chests",
+      "description": "Check out the Iron Chests mod in JEI, and work your way up to creating a Diamond Chest, which has a lot more storage space than a regular Chest!",
+      "x": 99,
+      "y": 182,
+      "icon": {
+        "id": "ironchest:iron_chest",
+        "damage": 2
+      },
+      "prerequisites": [
+        "b44fb3cf-a861-4cfe-be73-57de270ef496"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ironchest:iron_chest",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 64
+        },
+        {
+          "id": "divinerpg:realmite_ore",
+          "amount": 64
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5f28172d-2d1c-4d42-bc61-077a6d8d223a",
+      "name": "Sand Collector",
+      "description": "Collect some Sand with Ore Excavator!",
+      "x": 172,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:sand"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:sand"
+              },
+              "required": 40,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "tconstruct:tool_rod",
+          "nbt": "{Material:\"bronze\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "78c7941d-0f8a-42b7-ace4-222ede93f447",
+      "name": "Copernicus would be proud",
+      "description": "Mine up some Copper from underground! It's found on higher elevations, sometimes even on exposed Stone on the surface! Then smelt it or ore-double it in the Smeltery!",
+      "x": 110,
+      "y": 110,
+      "icon": {
+        "id": "thermalfoundation:material",
+        "damage": 128
+      },
+      "prerequisites": [
+        "021b732a-f745-4926-be3c-0c9203ede013"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalfoundation:material",
+                "damage": 128
+              },
+              "required": 10,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:ore",
+          "damage": 1,
+          "amount": 4
+        },
+        {
+          "id": "mekanism:oreblock",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f9f4fc4d-fdc8-4e34-9dea-49b44f1ad03a",
+      "name": "The start of Tool Creation",
+      "description": "Make a Stencil Table! You can use it to transform your Blank Patterns into various Patterns for Tools! This is where all Tool Creation in Tinkers' Construct starts.",
+      "x": 58,
+      "y": 157,
+      "icon": {
+        "id": "tconstruct:tooltables",
+        "damage": 1,
+        "nbt": "{textureBlock:{id:\"minecraft:planks\",Count:1b,Damage:0s}}"
+      },
+      "prerequisites": [
+        "b4263a76-58af-4543-9c93-dcef45a14829"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:tooltables",
+                "damage": 1,
+                "nbt": "{textureBlock:{id:\"minecraft:planks\",Count:1b,Damage:0s}}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:reeds",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:melon",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d1c9a7ed-aa58-451d-a012-a80919566551",
+      "name": "Experience Storage",
+      "description": "Craft a bunch of OpenBlocks Tanks and an XP Drain! You can store your Experience by standing on the XP Drain with a Tank below. Tanks also connect to each other nicely. To regain your XP, simply right click any of the connected Tanks!\n\n[Pro Tip: If you craft 4 XP Drains, place them down in a 2x2 square on top of some Tanks, you can drain you XP much faster than you would with only 1 Drain!]",
+      "x": 221,
+      "y": 134,
+      "icon": {
+        "id": "openblocks:tank"
+      },
+      "prerequisites": [
+        "17599f70-819e-4700-af9b-07a214f72bf9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "openblocks:tank"
+              },
+              "required": 12
+            },
+            {
+              "item": {
+                "id": "openblocks:xp_drain"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "actuallyadditions:item_solidified_experience",
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "43b52dd6-7f17-4bee-880d-1f1ef80ba8bd",
+      "name": "Lava filled Tank",
+      "description": "[This is an optional quest. You can use any other Fluid Tank available to you a this point, however, the Thermal Expansion Portable Tank is a good option.]\n\nCraft and fill up the Tank with Lava! You'll use it to create obisidian inside the Smeltery!",
+      "x": 177,
+      "y": 110,
+      "icon": {
+        "id": "thermalexpansion:tank",
+        "nbt": "{RSControl:0b,Creative:0b,Fluid:{FluidName:\"lava\",Amount:20000},Level:0b,Lock:0b}"
+      },
+      "prerequisites": [
+        "38cdb6e8-626a-49be-963f-76d059836e45",
+        "78c7941d-0f8a-42b7-ace4-222ede93f447"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermalexpansion:tank",
+                "nbt": "{RSControl:0b,Creative:0b,Fluid:{FluidName:\"lava\",Amount:20000},Level:0b,Lock:0b}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:wrench"
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

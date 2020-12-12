@@ -1,1 +1,2524 @@
-{"name":"Mechanized!","description":" Mechanized!\nJump into Mekanism, and unlock Applied Energistics 2 with its ME storage system.","quests":[{"uuid":"3bd0af0c-2421-4a80-ae17-0202830a02e5","name":"Part of the Elite","description":"Upgrade your Energy Cube even further into the Elite variant!","x":46,"y":116,"icon":{"id":"mekanism:energycube","nbt":"{tier:2}"},"prerequisites":["687446ce-a3b5-4c33-9003-87b4b8a076bd","3118b314-be8f-4af2-a965-2f95be43ae3a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:energycube","nbt":"{tier:2}"},"precision":"NBT_SUBSET"}]}],"reward":[{"id":"enderio:item_alloy_endergy_ingot","damage":5,"amount":8}],"commandrewards":[]},{"uuid":"28fe1158-8571-4ced-9179-c4cf51929397","name":"I accept with no payback","description":"Craft an Energy Acceptor! You ME System needs power through this machine. Use Glass, Covered or Smart cables to route the energy from the Acceptor to your Controller, or simply place it next to the Controller.","x":269,"y":25,"icon":{"id":"appliedenergistics2:energy_acceptor"},"prerequisites":["5a07d029-a3e7-4d6f-8e9b-e122636adcfb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:energy_acceptor"}}]}],"reward":[{"id":"contenttweaker:energized_certus_quartz_crystal","amount":8}],"commandrewards":[]},{"uuid":"6e512667-3e2c-4d18-8508-4cc128bf247d","name":"Fast and Furious","description":"Okay, now what could possibly require more energy than this!?\n\n*Insert another warning about FPS issues.*","x":100,"y":115,"icon":{"id":"mekanism:transmitter","nbt":"{tier:3}"},"prerequisites":["e62957a0-65d7-4791-be93-2fd6d471c45c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","nbt":"{tier:3}"},"required":3}]}],"rewardchoice":[{"id":"minecraft:obsidian","amount":16},{"id":"minecraft:redstone","amount":24}],"commandrewards":[]},{"uuid":"4cd95ba7-0853-4942-94eb-1fd2148b79d6","name":"Charrrrrgin\u0027 up","description":"Craft a Charger! Use it to create some Charged Certus Quartz Crystals! Make sure to automate it as soon as possible with 2 Itemducts on the side: one pushing regular Certus into the Charger, one pulling Charged Certus out! Make sure to setup a filter for Charged Certus Quartz. The Charger can accept both regular power and transformed power through Glass Cables placed after an Energy Acceptor. However it\u0027ll most likely work faster with regular power.","x":178,"y":93,"icon":{"id":"appliedenergistics2:charger"},"prerequisites":["5a07d029-a3e7-4d6f-8e9b-e122636adcfb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:charger"}},{"item":{"id":"appliedenergistics2:material","damage":1},"required":8}]}],"reward":[{"id":"thermaldynamics:duct_32","amount":2},{"id":"thermaldynamics:servo","amount":2},{"id":"appliedenergistics2:material","damage":1,"amount":6}],"commandrewards":[]},{"uuid":"dffcc34e-53ef-4f9c-a0f5-059bef2c0788","name":"We\u0027re gonna be rich!","description":"Make some Enriched Alloy in your Metallurgic Infuser!","x":33,"y":49,"icon":{"id":"mekanism:enrichedalloy"},"prerequisites":["69663368-d68c-43a6-8fb2-a8eb0f4d945c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:enrichedalloy"},"required":4}]}],"reward":[{"id":"minecraft:gold_ingot","amount":12}],"commandrewards":[]},{"uuid":"64ca213a-0304-4490-8c64-001f530d419d","name":"Toughen up","description":"Craft a Steel Casing! It\u0027s used as a basis of all Mekanism machines.","x":20,"y":27,"icon":{"id":"mekanism:basicblock","damage":8},"prerequisites":["35a83d54-67a6-446b-bf84-32fd0ac47767"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:basicblock","damage":8}}]}],"reward":[{"id":"thermalfoundation:material","damage":160,"amount":12}],"commandrewards":[]},{"uuid":"f8973c25-606c-47a9-8cf0-738f43103788","name":"At your Service","description":"Craft some Servos! Attach them onto an Itemduct to have it automatically pull items out of a container. Right Click on the Servo to turn Redstone Control to Ignored mode and have them always run! You can also craft Hardened Servos at this stage, which pull slightly faster.","x":20,"y":115,"icon":{"id":"thermaldynamics:servo"},"prerequisites":["1aa4ded8-e980-423c-ab5c-6fd6672c0ebd"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:servo"},"required":2}]}],"reward":[{"id":"thermalfoundation:material","damage":162,"amount":8}],"commandrewards":[]},{"uuid":"16515fdb-1e0d-469f-ac65-328a913292d7","name":"It\u0027s watching you","description":"Craft the Eye of Gaea...!\n\n\n\n...Just don\u0027t let it SEE you..... D:","x":44,"y":163,"icon":{"id":"contenttweaker:eye_of_gaea"},"prerequisites":["d96d6705-0b84-4be1-bc16-256526bc16de"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:eye_of_gaea"}}]}],"rewardchoice":[{"id":"minecraft:glowstone","amount":24},{"id":"minecraft:gold_ore","amount":24}],"commandrewards":[]},{"uuid":"a34ef5bf-aaca-4f38-b14e-1a1493a3d3e9","name":"Crushin\u0027 it even more","description":"Craft a Mekanism Crusher! It works alongside the Enrichment Chamber, but instead of grinding Ores, it can grind down Ingots into their Dust form.","x":140,"y":48,"icon":{"id":"mekanism:machineblock","damage":3},"prerequisites":["2f365bd4-7a3b-45a2-81db-34feb714678a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock","damage":3}}]}],"rewardchoice":[{"id":"thermalfoundation:material","damage":129,"amount":16},{"id":"thermalfoundation:material","damage":132,"amount":16}],"commandrewards":[]},{"uuid":"687446ce-a3b5-4c33-9003-87b4b8a076bd","name":"Tiering up","description":"Craft an Advanced Energy Cube! You can craft Energetic Alloy in the Arc Furnace or alloy it in the Smeltery.","x":73,"y":116,"icon":{"id":"mekanism:energycube","nbt":"{tier:1}"},"prerequisites":["6a272e15-dc2d-428b-856c-f4d08011b881"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:energycube","nbt":"{tier:1}"},"precision":"NBT_SUBSET"}]}],"reward":[{"id":"contenttweaker:energized_osmium_ingot","amount":8}],"commandrewards":[]},{"uuid":"f010b7b3-c435-492c-af69-0414fa6281b3","name":"Drive me crazy","description":"Craft an ME Drive! This is where you can store all your Storage Cells with items inside.","x":217,"y":71,"icon":{"id":"appliedenergistics2:drive"},"prerequisites":["3a66cde5-35f6-4ed3-ba60-c33c68bbd304","b783298d-c309-4b20-93d5-abdf6698a90b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:drive"}}]}],"reward":[{"id":"appliedenergistics2:material","damage":7,"amount":16},{"id":"thermalfoundation:material","damage":160,"amount":16}],"commandrewards":[]},{"uuid":"c4a4aaa6-cba4-463a-a436-45b4d72d14ab","name":"Oh no!","description":"It needs power... a lot of power... to awaken...","x":71,"y":161,"bigicon":true,"icon":{"id":"contenttweaker:eye_of_gaea_awakened"},"prerequisites":["16515fdb-1e0d-469f-ac65-328a913292d7"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:eye_of_gaea_awakened"}}]}],"reward":[{"id":"minecraft:sapling","damage":3,"amount":4}],"rewardchoice":[{"id":"mekanism:atomicalloy","amount":8},{"id":"plustic:osgloglasingot","amount":8}],"commandrewards":[]},{"uuid":"2e7e1ad3-6571-436b-8f7e-dca54bb7c542","name":"Useful green square thingy","description":"Craft 4 Basic Control Circuits! These are heavily used in the creation of more machines.","x":74,"y":27,"icon":{"id":"mekanism:controlcircuit"},"prerequisites":["69663368-d68c-43a6-8fb2-a8eb0f4d945c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:controlcircuit"},"required":4}]}],"reward":[{"id":"minecraft:redstone","amount":16}],"commandrewards":[]},{"uuid":"a436bdb6-37d0-4b50-aa65-18458cd64a6f","name":"Too pricy?","description":"If your machines consume a lot of energy, it might be worth upgrading them with Energy Upgrades! Each machien can accept 8 of them. Use the top right icon on the UI of any machine to apply them!","x":128,"y":70,"icon":{"id":"mekanism:energyupgrade"},"prerequisites":["16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:energyupgrade"},"required":8}]}],"reward":[{"id":"mekanism:energyupgrade","amount":8}],"commandrewards":[]},{"uuid":"d96d6705-0b84-4be1-bc16-256526bc16de","name":"Allowy me to introduce...","description":"...the Atomic Alloy! Such impecable purity! Such magnificent beauty! It\u0027s the highest tier Alloy from Mekanism.","x":31,"y":139,"icon":{"id":"mekanism:atomicalloy"},"prerequisites":["3118b314-be8f-4af2-a965-2f95be43ae3a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:atomicalloy"},"required":4}]}],"reward":[{"id":"minecraft:obsidian","amount":40}],"commandrewards":[]},{"uuid":"5c63ecfa-8954-465a-a1a2-1776f96b15b4","name":"The Heart of your ME System","description":"Craft an ME Controller and power it through the Energy Acceptor! Each side can provide 32 channels that your AE2 machines can use. If you\u0027re running low on channels, extend the Controller! It can only take the shape of a rectangular frame, so no four Controllers can touch eachother in a 2x2 shape!","x":230,"y":93,"icon":{"id":"appliedenergistics2:controller"},"prerequisites":["3a66cde5-35f6-4ed3-ba60-c33c68bbd304","b783298d-c309-4b20-93d5-abdf6698a90b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:controller"}}]}],"reward":[{"id":"appliedenergistics2:material","damage":24,"amount":6}],"commandrewards":[]},{"uuid":"1c428225-93bc-4247-b49d-8e0fbfb7b019","name":"Additional Presses","description":"Find the additional five custom Presses inside of Sky Stone Chests in the middle of Meteorites! It\u0027s not too important to find all of them right now, since you\u0027ll only need them once you revisit AE2 with Autocrafting, Autoprocessing, Fluid/Gas Storage, higher tier Storage Cells, Wireless Terminals and Spatial Storage. These are what custom Presses and Processors are used for.","x":204,"y":48,"icon":{"id":"contenttweaker:inscriber_operation_press"},"prerequisites":["f738266a-f952-4a39-820e-f326f21bd37f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:inscriber_operation_press"}},{"item":{"id":"contenttweaker:inscriber_estimation_press"}},{"item":{"id":"contenttweaker:inscriber_methodology_press"}},{"item":{"id":"contenttweaker:inscriber_clearance_press"}},{"item":{"id":"contenttweaker:inscriber_scheduling_press"}}]}],"rewardchoice":[{"id":"appliedenergistics2:material","damage":19},{"id":"appliedenergistics2:material","damage":15},{"id":"appliedenergistics2:material","damage":14},{"id":"appliedenergistics2:material","damage":13}],"commandrewards":[]},{"uuid":"966a5609-8042-4189-9c46-f9780aa50212","name":"Connect up your Drawers!","description":"Craft a Storage Bus and connect it to your Drawer Controller to have access to all those items in your ME Network! You can also connect it to various Chests and other storage devices for the same functionality. Also make sure to Right Click on it and set its priority higher than your ME Drive\u0027s, because otherwise all your items will get sent back to your Drive, not your Drawers.","x":175,"y":138,"icon":{"id":"appliedenergistics2:part","damage":220},"prerequisites":["d96d6705-0b84-4be1-bc16-256526bc16de","4ae6ee1a-79c4-4928-9174-fc521bca1482","09e0588e-7d50-452a-bc6d-b324a1614774"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":220}}]}],"rewardchoice":[{"id":"appliedenergistics2:material","damage":43,"amount":4},{"id":"appliedenergistics2:material","damage":44,"amount":4}],"commandrewards":[]},{"uuid":"fa2d5130-cc15-477b-8b41-16ac0337208b","name":"Print-print, bzz-bzoo!","description":"Use your Inscriber to create some Logic, Engineering and Silicon Presses!","x":230,"y":48,"icon":{"id":"appliedenergistics2:material","damage":18},"prerequisites":["11b099f5-a59b-4b59-92f8-8f648c9914b8","20485849-cc43-423f-b5f5-8cff23104c2a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":18},"required":4},{"item":{"id":"appliedenergistics2:material","damage":17},"required":2},{"item":{"id":"appliedenergistics2:material","damage":20},"required":6}]}],"rewardchoice":[{"id":"minecraft:gold_ingot","amount":16},{"id":"minecraft:diamond","amount":6}],"commandrewards":[]},{"uuid":"52ec7372-7621-4700-bed5-4a224a7b9810","name":"Channel the channels","description":"A Dense Cable only has a 32-channel capacity, but if you want to route more channels to a faraway location, you can use a P2P tunnel. With this, you can transform your Smart or Dense Cable to route 32 channels per cable-channel, then on the other end use another P2P tunnel to turn it back into regular functionality. To connect the two P2P tunnels at each end, use a Memory Card.\n\nThis will save you many Dense Cables. Instead of having to run 16 Dense Cables at once, you can run just 1, and have 16-16 P2P Tunnels at each end, with pairs joined by Memory Cards.","x":191,"y":71,"icon":{"id":"appliedenergistics2:part","damage":460},"prerequisites":["3a66cde5-35f6-4ed3-ba60-c33c68bbd304"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":460},"required":2}]}],"reward":[{"id":"appliedenergistics2:memory_card"}],"commandrewards":[]},{"uuid":"db9762f2-574b-413e-abbd-6d6198401b2a","name":"Giga Storage","description":"Wanna go further? Craft a 1024k Storage Component!","x":282,"y":137,"icon":{"id":"extracells:storage.component","damage":1},"prerequisites":["c3facd0e-b87b-47c7-958d-4aa92b1b4f44"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extracells:storage.component","damage":1}}]}],"reward":[{"id":"contenttweaker:steaming_restonia_crystal","amount":4}],"commandrewards":[]},{"uuid":"63d2cb9d-e7de-46ab-9f1a-3ae058f3c895","name":"Zwoooooosh!","description":"Craft some Acceleration Cards! This can speed up your Import/Export Buses, or the crafting speed of your Inscribers.","x":215,"y":161,"icon":{"id":"appliedenergistics2:material","damage":30},"prerequisites":["09e0588e-7d50-452a-bc6d-b324a1614774"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":30},"required":4}]}],"rewardchoice":[{"id":"thermalfoundation:material","damage":165,"amount":8},{"id":"mekanism:reinforcedalloy","amount":8}],"commandrewards":[]},{"uuid":"ecb72c84-4a28-4070-ab87-8a6e6f535b76","name":"Purity is key","description":"Craft 5 Crystal Growth Accelerators and place them around a block of Water! Provide energy to them through Glass Cables and throw Certus Quartz Seeds inside. Watch as they turn into Pure Certus Quartz Crystals! Note that this machine requires a lot of power. It\u0027s recommended that you break up your line of Glass Cables with a Toggle Bus, place a Lever next to it, and only turn it on when you need the Crystal Growth Accelerators to be active.","x":256,"y":48,"icon":{"id":"appliedenergistics2:quartz_growth_accelerator"},"prerequisites":["28fe1158-8571-4ced-9179-c4cf51929397"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:quartz_growth_accelerator"},"required":5}]}],"reward":[{"id":"appliedenergistics2:part","damage":16,"amount":16},{"id":"appliedenergistics2:part","damage":80},{"id":"minecraft:lever"}],"commandrewards":[]},{"uuid":"e62957a0-65d7-4791-be93-2fd6d471c45c","name":"Even faster, if possible!","description":"Still need more energy transfer? Well, craft some Elite Universal Cables, they might do the job! But again, use them sparingly because of FPS issues.","x":127,"y":115,"icon":{"id":"mekanism:transmitter","nbt":"{tier:2}"},"prerequisites":["8017a927-173f-4eee-aae1-9afce8c848d5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","nbt":"{tier:2}"},"required":3}]}],"rewardchoice":[{"id":"minecraft:diamond","amount":4},{"id":"thermalfoundation:material","damage":160,"amount":8}],"commandrewards":[]},{"uuid":"7fc3d088-972f-48a2-94b7-3401c8ae22f5","name":"More Core Galore!","description":"Craft two Formation and Annihilation Cores! They are used as Crafting Components for AE2.","x":216,"y":116,"icon":{"id":"appliedenergistics2:material","damage":43},"prerequisites":["3a66cde5-35f6-4ed3-ba60-c33c68bbd304"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":43},"required":2},{"item":{"id":"appliedenergistics2:material","damage":44},"required":2}]}],"reward":[{"id":"appliedenergistics2:material","damage":22,"amount":8}],"commandrewards":[]},{"uuid":"3faa4217-618f-4e57-832d-656a184e7cc7","name":"Where my items at?!","description":"Craft an ME Terminal and connect it to your Network through a Glass or Smart Cable! You can view your items stored in the Network, search for specific items and sort them in numerous ways.","x":202,"y":138,"icon":{"id":"appliedenergistics2:part","damage":380},"prerequisites":["7fc3d088-972f-48a2-94b7-3401c8ae22f5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":380}}]}],"reward":[{"id":"appliedenergistics2:view_cell"},{"id":"minecraft:redstone","amount":32}],"commandrewards":[]},{"uuid":"c3facd0e-b87b-47c7-958d-4aa92b1b4f44","name":"Mega Storage","description":"Once you have access to higher tier materials from other Chapters, come back to craft a 256k Storage Component!","x":296,"y":115,"icon":{"id":"extracells:storage.component"},"prerequisites":["06b116bc-9908-49d2-a0cb-4b604cc7e756"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extracells:storage.component"}}]}],"reward":[{"id":"thermalfoundation:material","damage":136,"amount":4}],"commandrewards":[]},{"uuid":"60160f6c-8003-4b83-b193-ca9a1b8aeecc","name":"Ultimate Energy Storage","description":"Craft an Ultimate Energy Cube! For now, this will be your best way of storing energy! ...But wait until you get into EnderIO or Draconic.","x":59,"y":139,"icon":{"id":"mekanism:energycube","nbt":"{tier:3}"},"prerequisites":["d96d6705-0b84-4be1-bc16-256526bc16de","3bd0af0c-2421-4a80-ae17-0202830a02e5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:energycube","nbt":"{tier:3}"},"precision":"NBT_SUBSET"}]}],"reward":[{"id":"mekanism:reinforcedalloy","amount":8}],"commandrewards":[]},{"uuid":"6a272e15-dc2d-428b-856c-f4d08011b881","name":"Like a Capacitor","description":"Craft a Basic Energy Cube! This is the Mekanism way to store energy for later use. You can configure its sides to select where the energy should be inputted or outputted. You can also charge items by placing it into the slot marked with a Plus, and remove charge from an item by placing it into the slot marked with a Minus (granted there is space in the Energy Cube). You can move this machine and all other Mekanism machines with a Crescent Hammer (Shift+Right Click). But by  breaking it, it will still retain its energy.","x":87,"y":92,"icon":{"id":"mekanism:energycube","nbt":"{tier:0}"},"prerequisites":["16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:energycube","nbt":"{tier:0}"},"precision":"NBT_SUBSET"}]}],"reward":[{"id":"plustic:osgloglasingot","amount":8}],"commandrewards":[]},{"uuid":"11b099f5-a59b-4b59-92f8-8f648c9914b8","name":"The OG four","description":"Find the original four Applied Energistics Presses located inside Sky Stone Chests in the middle of Meteorites! These are the Presses you\u0027ll need first.","x":217,"y":25,"icon":{"id":"appliedenergistics2:material","damage":19},"prerequisites":["f738266a-f952-4a39-820e-f326f21bd37f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":19}},{"item":{"id":"appliedenergistics2:material","damage":15}},{"item":{"id":"appliedenergistics2:material","damage":14}},{"item":{"id":"appliedenergistics2:material","damage":13}}]}],"rewardchoice":[{"id":"contenttweaker:inscriber_operation_press"},{"id":"contenttweaker:inscriber_estimation_press"},{"id":"contenttweaker:inscriber_methodology_press"},{"id":"contenttweaker:inscriber_clearance_press"}],"commandrewards":[]},{"uuid":"f939ead9-eceb-4eb7-8807-6443a5356571","name":"Plumber Pack++","description":"Not being able to route your Liquids fast enough? Craft some Advanced Mechanical Pipes, maybe they\u0027ll do the job!","x":104,"y":163,"icon":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:1}"},"prerequisites":["f6f1df57-93fa-4ec5-a525-f620115deea3"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:1}"},"required":3}]}],"reward":[{"id":"enderio:item_alloy_ingot","damage":1,"amount":8}],"commandrewards":[]},{"uuid":"2a353ab3-6f89-4a65-ac31-107fb71fb905","name":"Overflow? No problemo!","description":"Craft the required materials for a 3x3x3 Dynamic Tank multiblock! The frame has to be made out of Dynamic Tank blocks, and the faces out of Structural Glass. Finally, place a Dynamic Valve on one of the sides (while leaving the middle empty). Note that you can make a larger tank all the way up to an 18x18x18 if you need to store a lot of Liquid. Use a Mechanical Pipe to push or pull the Liquid in/out. Each block (including the frame) can hold 64 Buckets, so a 3x3x3 Tank can hold 1728 Buckets of a given Liquid, and this scales up rapidy. For example a 5x5x5 Tank can hold 8000 Buckets.","x":113,"y":48,"icon":{"id":"mekanism:basicblock","damage":10},"prerequisites":["dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:basicblock","damage":9},"required":20},{"item":{"id":"mekanism:basicblock","damage":10},"required":6},{"item":{"id":"mekanism:basicblock","damage":11}}]}],"reward":[{"id":"enderio:block_tank","nbt":"{\"enderio:data\":{faceModes-:1b,voidMode:2,outputQueue:{size:0},tank:{FluidName:\"ethanol\",Capacity:16000,Amount:16000},inventory:{size:5,4+:1b,3+:1b,2+:1b,1+:1b,0+:1b},redstoneControlMode:0}}"}],"commandrewards":[]},{"uuid":"b783298d-c309-4b20-93d5-abdf6698a90b","name":"Shiny purple gems","description":"Throw some Charged Certus Quartz Crystals, Redstone, and regular Quartz into a puddle of water and watch as they all transform into Fluix Crystals!","x":204,"y":94,"icon":{"id":"appliedenergistics2:material","damage":7},"prerequisites":["4cd95ba7-0853-4942-94eb-1fd2148b79d6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":7},"required":16}]}],"reward":[{"id":"minecraft:quartz_ore","amount":12}],"commandrewards":[]},{"uuid":"4855d908-fdeb-4685-856e-a6a2ab97bc57","name":"Storage!","description":"Craft a 1k ME Storage Component. You can either choose to craft a Storage Cell out of it or further upgrade it into a 4k Storage Component.","x":256,"y":93,"icon":{"id":"appliedenergistics2:material","damage":35},"prerequisites":["3a66cde5-35f6-4ed3-ba60-c33c68bbd304"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":35}}]}],"reward":[{"id":"appliedenergistics2:material","damage":39}],"commandrewards":[]},{"uuid":"2f365bd4-7a3b-45a2-81db-34feb714678a","name":"Ore Doubling, but faster","description":"Craft an Enrichment Chamber! You can power it and automate it just like the Metallurgic Infuser. This machine doubles ores, just like the Tinkers\u0027 Smeltery. However it\u0027s much simpler to automate, as it only takes up 1 block of space. Once you ground up your Ores, simply transfer them into an Energized Smelter to turn them into Ingots! And voil?, ore doubling!","x":101,"y":26,"icon":{"id":"mekanism:machineblock"},"prerequisites":["2e7e1ad3-6571-436b-8f7e-dca54bb7c542"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock"}}]}],"rewardchoice":[{"id":"minecraft:iron_ore","amount":16},{"id":"mekanism:oreblock","amount":16}],"commandrewards":[]},{"uuid":"cd125dbc-9bfb-420f-8637-68cb980bac6e","name":"Hypernet! It works!","description":"Craft some Glass Cables! They can transfer AE2 power and up to 8 channels.","x":243,"y":115,"icon":{"id":"appliedenergistics2:part","damage":16},"prerequisites":["b783298d-c309-4b20-93d5-abdf6698a90b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":16},"required":6}]}],"reward":[{"id":"appliedenergistics2:part","damage":16,"amount":6},{"id":"minecraft:wool","amount":6}],"commandrewards":[]},{"uuid":"3a66cde5-35f6-4ed3-ba60-c33c68bbd304","name":"Print-proont, bzaa-bzee!","description":"Combine your previously created Printed Circuits in the Inscriber to create some Processors! It\u0027s recommended to craft and automate multiple Inscribers, as you\u0027ll need many Processors from now on.","x":243,"y":71,"icon":{"id":"appliedenergistics2:material","damage":22},"prerequisites":["fa2d5130-cc15-477b-8b41-16ac0337208b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":22},"required":4},{"item":{"id":"appliedenergistics2:material","damage":24},"required":2}]}],"reward":[{"id":"appliedenergistics2:material","damage":20,"amount":12}],"commandrewards":[]},{"uuid":"b988ba1b-cd85-4a28-8041-f606cb364707","name":"Advancing","description":"Craft 4 Energetic Alloy in the Arc Furnace or by melting Gold, Redstone and Glowstone in the Smeltery! Then using these materials, craft an Advanced Control Circuit!","x":60,"y":49,"icon":{"id":"mekanism:controlcircuit","damage":1},"prerequisites":["2e7e1ad3-6571-436b-8f7e-dca54bb7c542","dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"enderio:item_alloy_ingot","damage":1},"required":4},{"item":{"id":"mekanism:controlcircuit","damage":1}}]}],"reward":[{"id":"thermalfoundation:material","damage":802,"amount":20}],"commandrewards":[]},{"uuid":"09e0588e-7d50-452a-bc6d-b324a1614774","name":"Collect all the items!","description":"Craft an Import Bus! Use it to send items from an outside source into your ME System!","x":189,"y":161,"icon":{"id":"appliedenergistics2:part","damage":240},"prerequisites":["7fc3d088-972f-48a2-94b7-3401c8ae22f5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":240}}]}],"reward":[{"id":"minecraft:quartz","amount":20}],"commandrewards":[]},{"uuid":"20485849-cc43-423f-b5f5-8cff23104c2a","name":"Precision Press","description":"Craft an Inscriber! Use AE2 Presses found in Atum and basic materials to create Printed Circuits and Processors! To automate it, push items into the machine from different sides. The top side will accept items that go in the top slot, the side will accept the central items, and guess what the bottom does. And pull out items from the other side. The Inscriber takes regular power, but can also work using the power from an Energy Acceptor through Glass Cables.","x":243,"y":25,"icon":{"id":"appliedenergistics2:inscriber"},"prerequisites":["5a07d029-a3e7-4d6f-8e9b-e122636adcfb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:inscriber"}}]}],"reward":[{"id":"thermaldynamics:duct_32","amount":4},{"id":"thermaldynamics:servo","amount":4}],"commandrewards":[]},{"uuid":"e577b40c-02f4-4897-9069-40b46ac15ec9","name":"It\u0027s a me, Mario!","description":"Craft some Elite Mechanical Pipes, if you\u0027re still not satisfied with the speed of your liquid transfer! For now, this is the highest tier available.","x":131,"y":163,"icon":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:2}"},"prerequisites":["f939ead9-eceb-4eb7-8807-6443a5356571"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:2}"}}]}],"reward":[{"id":"enderio:item_alloy_endergy_ingot","damage":5,"amount":8}],"commandrewards":[]},{"uuid":"2ad30597-31b2-44dc-9a1c-d7e9c7ece6fd","name":"Channel overflow","description":"Craft some smart Cables! They can transmit 32 channels, but can\u0027t connect to machines. Use Smart Cable lines coming out of a line of Dense Cables for large scale automation!","x":242,"y":161,"icon":{"id":"appliedenergistics2:part","damage":76},"prerequisites":["ac4a5d5e-e1b1-4767-9a84-43f629a5e27f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":76},"required":4}]}],"reward":[{"id":"appliedenergistics2:network_tool"}],"commandrewards":[]},{"uuid":"a843dea9-3ff3-471a-b29d-dc86fa9d9bd1","name":"Ultra Storage","description":"This is getting ridicolous... Craft a 4096k Storage Component!","x":269,"y":160,"icon":{"id":"extracells:storage.component","damage":2},"prerequisites":["db9762f2-574b-413e-abbd-6d6198401b2a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extracells:storage.component","damage":2}}]}],"commandrewards":[]},{"uuid":"e5195de7-f044-4905-9b8a-a66393ece26c","name":"Extreme Storage","description":"You\u0027ve made it! This is the highest tier Item Storage Component available...! Craft a 16384k Storage Component, also known as a 16M Storage Component!","x":296,"y":160,"icon":{"id":"extracells:storage.component","damage":3},"prerequisites":["a843dea9-3ff3-471a-b29d-dc86fa9d9bd1"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extracells:storage.component","damage":3}}]}],"commandrewards":[]},{"uuid":"05508d5c-f811-49ad-9049-26beca5cd5cc","name":"Calculating, calculating?","description":"Use your Inscriber with Pure Certus Quartz Crystals to create some Calculation Processors!","x":296,"y":71,"icon":{"id":"appliedenergistics2:material","damage":23},"prerequisites":["ac72e2cd-09ba-44fa-8ac1-6243b07de2ff"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":23},"required":2}]}],"reward":[{"id":"appliedenergistics2:material","damage":20,"amount":8}],"commandrewards":[]},{"uuid":"1e8cbde6-6fdb-4e85-bf85-021d0cb27b46","name":"From small to large cells","description":"If you have a bunch of smaller Storage Cells full of items, but you want to upgrade to larger Cells, it\u0027s worth crafting an ME IO Port. Using this your can empty your items from a smaller Cell into your Storage Network. If the Network only consists of larger Cells, this will effectively transfer items from smaller to larger Cells.","x":255,"y":138,"icon":{"id":"appliedenergistics2:io_port"},"prerequisites":["06b116bc-9908-49d2-a0cb-4b604cc7e756"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:io_port"}}]}],"reward":[{"id":"thermalfoundation:material","damage":160,"amount":32},{"id":"minecraft:diamond","amount":16}],"commandrewards":[]},{"uuid":"1aa4ded8-e980-423c-ab5c-6fd6672c0ebd","name":"Better than Hoppers","description":"Craft some Itemducts from Thermal Expansion! To use them, place one next to a container or machine, and apply a Servo if you want to pull items out of it. Servos can be Right Clicked on to change them to Always On mode.","x":33,"y":93,"icon":{"id":"thermaldynamics:duct_32"},"prerequisites":["dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"thermaldynamics:duct_32"},"required":6,"precision":"FUZZY"}]}],"reward":[{"id":"projectred-core:resource_item","damage":103,"amount":8}],"commandrewards":[]},{"uuid":"869d2a91-893c-45e5-bf55-ac1e12286d6d","name":"STORAGE!!! \u003e:O","description":"Craft a 16k Storage Component! You might wanna consider storing your items in this or slightly larger Cells if you\u0027re starting to run some Quarries.","x":282,"y":93,"icon":{"id":"appliedenergistics2:material","damage":37},"prerequisites":["4d6696dc-a7c9-49b3-8f18-bbc9376c9583"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":37}}]}],"reward":[{"id":"appliedenergistics2:material","damage":23,"amount":4}],"commandrewards":[]},{"uuid":"8017a927-173f-4eee-aae1-9afce8c848d5","name":"Faster! Faster!!","description":"If your Basic Universal Cables can\u0027t transfer enough energy, craft some Advanced ones! However, use these ones sparingly as well, since they cause FPS lag too due to inefficient rendering.","x":141,"y":92,"icon":{"id":"mekanism:transmitter","nbt":"{tier:1}"},"prerequisites":["99b9a0c7-fe78-4578-b1f3-ed295d99e4c5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","nbt":"{tier:1}"},"required":3}]}],"rewardchoice":[{"id":"minecraft:redstone","amount":24},{"id":"thermalfoundation:material","damage":160,"amount":8}],"commandrewards":[]},{"uuid":"f6f1df57-93fa-4ec5-a525-f620115deea3","name":"Wannabe Plumber","description":"Craft some Basic Mechanical Pipes to be able to move Fluids around easily!","x":115,"y":139,"icon":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:0}"},"prerequisites":["35a83d54-67a6-446b-bf84-32fd0ac47767"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","damage":1,"nbt":"{tier:0}"},"required":6}]}],"reward":[{"id":"immersiveengineering:material","damage":18,"amount":12}],"commandrewards":[]},{"uuid":"6729c9a2-6c71-469d-881f-91f98f5b9139","name":"Pump it (louder)!","description":"Turn up the radio! Blast the stereo! Riiiiiiiight noooowwww...! And craft an Electric Pump! Use this if you need a large amount of Lava from the Nether. It\u0027s easier than using individual Buckets for each Lava source block. Simply set it up above a source block of a fluid, power it from the side and place some kind of a fluid container on top. Later you\u0027ll be able to use it in conjuction with the Quantum Entagloporter to transfer your Fluids wirelessly.","x":87,"y":49,"icon":{"id":"mekanism:machineblock","damage":12},"prerequisites":["b988ba1b-cd85-4a28-8041-f606cb364707"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock","damage":12}}]}],"reward":[{"id":"enderio:block_tank","nbt":"{\"enderio:data\":{faceModes-:1b,voidMode:2,outputQueue:{size:0},tank:{FluidName:\"plantoil\",Capacity:16000,Amount:16000},inventory:{size:5,4+:1b,3+:1b,2+:1b,1+:1b,0+:1b},redstoneControlMode:0}}"}],"commandrewards":[]},{"uuid":"ac4a5d5e-e1b1-4767-9a84-43f629a5e27f","name":"Channel entanglement","description":"Craft some Smart Cables! Adding to the functionality of Glass Cables, they also show how many channels run through the given Cable, and how many are left available. Different colors of Smart Cables don\u0027t connect to eachother, they only connect to colorless Smart Cables.","x":229,"y":138,"icon":{"id":"appliedenergistics2:part","damage":56},"prerequisites":["cd125dbc-9bfb-420f-8637-68cb980bac6e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":56},"required":8}]}],"reward":[{"id":"appliedenergistics2:material","damage":7,"amount":8},{"id":"minecraft:wool","amount":12}],"commandrewards":[]},{"uuid":"69663368-d68c-43a6-8fb2-a8eb0f4d945c","name":"Heavy Metal","description":"Craft a Metallurgic Infuser! This is the main machine you\u0027ll use to create all the various Mekanism components. Like for all Mekanism machines, you can simply connect an Immersive Engineering Wire Coil to it by placing a Wire Connector on any side. Once it\u0027s powered, place the main material in the second slot from the left, and the infusing material in the first slot from the left. Note that the machine can only hold and use one type of infusing material at once, meaning you\u0027re most likely better off creating multiple Metallurgic Infusers for maximum efficiency. To automate the machine, click on the Side Config button on the left. You can select which side you want items, infusion materials and energy to be input on, and which side you want to use as output. Make sure to push and pull items in/out with a Hopper or an Itemduct with an active Servo on it. And one more thing: All Mekanism machines can be picked up and moved by a Crescent Hammer from Thermal Expansion, so you don\u0027t need to worry about energy loss.","x":47,"y":26,"icon":{"id":"mekanism:machineblock","damage":8},"prerequisites":["64ca213a-0304-4490-8c64-001f530d419d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock","damage":8}}]}],"reward":[{"id":"immersiveengineering:connector","damage":4,"amount":2},{"id":"immersiveengineering:wirecoil","damage":2},{"id":"thermaldynamics:duct_32","amount":2},{"id":"thermaldynamics:servo","amount":2}],"commandrewards":[]},{"uuid":"54690db3-de68-48c8-b25e-043553ea0717","name":"Press Pressentor","description":"Craft an Osmium Compressor! This machine can create more crafting materials for Mekanism. You can automate it the same way as the Metallurgic Infuser.","x":73,"y":70,"icon":{"id":"mekanism:machineblock","damage":1},"prerequisites":["b988ba1b-cd85-4a28-8041-f606cb364707"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock","damage":1}}]}],"rewardchoice":[{"id":"minecraft:glowstone_dust","amount":36},{"id":"minecraft:obsidian","amount":36}],"commandrewards":[]},{"uuid":"06b116bc-9908-49d2-a0cb-4b604cc7e756","name":"S-T-O-R-A-G-E-!-!-! \u003e:OOO","description":"Craft a 64k Storage Cell. This is the final Storage Cell available before getting into Thermal Expansion.","x":269,"y":115,"icon":{"id":"appliedenergistics2:material","damage":38},"prerequisites":["869d2a91-893c-45e5-bf55-ac1e12286d6d"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":38}}]}],"reward":[{"id":"appliedenergistics2:material","damage":24,"amount":6}],"commandrewards":[]},{"uuid":"16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f","name":"Swear it\u0027s not Uranium","description":"Use your Osmium Compressor to create some Infused Obsidian and Infused Glowstone Ingots! Then combine them in the Arc Furnace or the Smeltery to create some Osgloglas Ingots!","x":101,"y":70,"icon":{"id":"plustic:osgloglasingot"},"prerequisites":["54690db3-de68-48c8-b25e-043553ea0717"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:ingot"},"required":4},{"item":{"id":"mekanism:ingot","damage":3},"required":4},{"item":{"id":"plustic:osgloglasingot"},"required":4}]}],"rewardchoice":[{"id":"mekanism:oreblock","amount":16},{"id":"minecraft:diamond_ore","amount":6}],"commandrewards":[]},{"uuid":"a2556e53-541f-40c6-9af7-809273da0f93","name":"1x1 Fluid Storage","description":"Work your way up to an Ultimate Fluid Tank! Right now this is your best way of storing Fluids in a 1x1 area, although for more storage you can make the Dynamic Tank multiblock. Like all Mekanism machines and blocks, this can also be picked up and moved with a Crescent Hammer (Shift+Right Click), and it\u0027ll still retain its stored fluid. This is also true when upgrading to a higher tier Tank.","x":88,"y":138,"icon":{"id":"mekanism:machineblock2","damage":11,"nbt":"{tier:3}"},"prerequisites":["d96d6705-0b84-4be1-bc16-256526bc16de"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock2","damage":11,"nbt":"{tier:3}"}}]}],"reward":[{"id":"mekanism:ingot","damage":1,"amount":16},{"id":"thermalfoundation:material","damage":160,"amount":16}],"commandrewards":[]},{"uuid":"f738266a-f952-4a39-820e-f326f21bd37f","name":"A Desert where Dinos died","description":"Craft a Meteorite Compass and use it in Atum! That\u0027s right, AE2 Meteorites don\u0027t generate in the overwold, they only generate inside Atum! This compass will point you to the nearest chunk with a Meteorite inside. It will start spinning as soon as you\u0027ve entered such a chunk. Make sure the Meteorite isn\u0027t on a Chunk boarder, or if it is, start digging in the correct spot! Meteorites have a Sky Stone Chest in the middle which holds all the Presses you\u0027ll need.","x":191,"y":25,"icon":{"id":"appliedenergistics2:sky_compass"},"prerequisites":["5a07d029-a3e7-4d6f-8e9b-e122636adcfb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:sky_compass"}}]}],"reward":[{"id":"minecraft:potion","amount":3,"nbt":"{Potion:\"cofhcore:swiftness3+\"}"}],"commandrewards":[]},{"uuid":"c2936f5f-b1b6-45d6-afbc-12442a430662","name":"Huh, get buuuurned!","description":"Craft an Energized Smelter! You can smelt your Dusts into Ingots or simply use it as a Furnace powered by energy.","x":127,"y":26,"icon":{"id":"mekanism:machineblock","damage":10},"prerequisites":["69663368-d68c-43a6-8fb2-a8eb0f4d945c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:machineblock","damage":10}}]}],"rewardchoice":[{"id":"thermalfoundation:material","damage":64,"amount":20},{"id":"thermalfoundation:material","damage":1,"amount":12}],"commandrewards":[]},{"uuid":"3118b314-be8f-4af2-a965-2f95be43ae3a","name":"A strong piece of metal","description":"Craft some Reinforced Alloy! This component is used in higher tier machines.","x":61,"y":93,"icon":{"id":"mekanism:reinforcedalloy"},"prerequisites":["dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:reinforcedalloy"},"required":4}]}],"rewardchoice":[{"id":"minecraft:diamond_ore","amount":4},{"id":"minecraft:emerald_ore","amount":4}],"commandrewards":[]},{"uuid":"99b9a0c7-fe78-4578-b1f3-ed295d99e4c5","name":"Mek-wires ac-quired!","description":"Craft some Basic Universal Cables! They can be used to easily transfer energy between two spots! However, I still encourage you to use Immersive Engineering Wires, since in 1.12 Mekanism Universal Cables tend to cause FPS lag due to inefficient rendering. So use them sparingly!","x":114,"y":92,"icon":{"id":"mekanism:transmitter","nbt":"{tier:0}"},"prerequisites":["35a83d54-67a6-446b-bf84-32fd0ac47767"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:transmitter","nbt":"{tier:0}"},"required":6}]}],"reward":[{"id":"contenttweaker:energized_osmium_ingot","amount":8}],"commandrewards":[]},{"uuid":"dd7b2482-25e0-4f04-9924-ba4a68e536ee","name":"Too loud?","description":"Craft 4 Muffling Upgrades! You can apply these via the top right button of the UI of any machine, and with each upgrade it\u0027ll make the machine considerably quieter.","x":47,"y":71,"icon":{"id":"mekanism:mufflingupgrade"},"prerequisites":["dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:mufflingupgrade"},"required":4}]}],"reward":[{"id":"mekanism:mufflingupgrade","amount":4}],"commandrewards":[]},{"uuid":"eeb09452-5935-444a-b9f2-8455d7ed0d2b","name":"Too slow?","description":"Craft 8 Speed Upgrades! This is the maximum that a Mekanism Machine can accept. Simply click on the Upgrades slot in the top right of the UI of any machine, and place the upgrades in the top right slot. But watch out, with each upgrade, the machine will require more and more power!","x":19,"y":72,"icon":{"id":"mekanism:speedupgrade"},"prerequisites":["dffcc34e-53ef-4f9c-a0f5-059bef2c0788"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"mekanism:speedupgrade"},"required":8}]}],"reward":[{"id":"mekanism:speedupgrade","amount":8}],"commandrewards":[]},{"uuid":"4d6696dc-a7c9-49b3-8f18-bbc9376c9583","name":"Storage! :O","description":"Craft a 4k ME Storage Component! These might be enough for the early game. They have plenty of space to store your items.","x":270,"y":71,"icon":{"id":"appliedenergistics2:material","damage":36},"prerequisites":["4855d908-fdeb-4685-856e-a6a2ab97bc57","05508d5c-f811-49ad-9049-26beca5cd5cc"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":36}}]}],"reward":[{"id":"appliedenergistics2:material","damage":22,"amount":4}],"commandrewards":[]},{"uuid":"4ae6ee1a-79c4-4928-9174-fc521bca1482","name":"Need items elsewhere!","description":"Craft an Export Bus! Use it to send items to different locations from your ME System!","x":190,"y":116,"icon":{"id":"appliedenergistics2:part","damage":260},"prerequisites":["7fc3d088-972f-48a2-94b7-3401c8ae22f5"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:part","damage":260}}]}],"reward":[{"id":"appliedenergistics2:material","damage":7,"amount":20}],"commandrewards":[]},{"uuid":"ac72e2cd-09ba-44fa-8ac1-6243b07de2ff","name":"It\u0027s Pure!","description":"Craft some Certus Quartz Seed and grow them into Pure Certus Quartz in the Crystal Growth Accelerator!","x":283,"y":48,"icon":{"id":"appliedenergistics2:material","damage":10},"prerequisites":["ecb72c84-4a28-4070-ab87-8a6e6f535b76"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"appliedenergistics2:material","damage":10},"required":8}]}],"reward":[{"id":"appliedenergistics2:material","damage":10,"amount":8}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "Mechanized!",
+  "description": " Mechanized!\nJump into Mekanism, and unlock Applied Energistics 2 with its ME storage system.",
+  "quests": [
+    {
+      "uuid": "3bd0af0c-2421-4a80-ae17-0202830a02e5",
+      "name": "Part of the Elite",
+      "description": "Upgrade your Energy Cube even further into the Elite variant!",
+      "x": 46,
+      "y": 116,
+      "icon": {
+        "id": "mekanism:energycube",
+        "nbt": "{tier:2}"
+      },
+      "prerequisites": [
+        "687446ce-a3b5-4c33-9003-87b4b8a076bd",
+        "3118b314-be8f-4af2-a965-2f95be43ae3a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:energycube",
+                "nbt": "{tier:2}"
+              },
+              "precision": "NBT_SUBSET"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_endergy_ingot",
+          "damage": 5,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "28fe1158-8571-4ced-9179-c4cf51929397",
+      "name": "I accept with no payback",
+      "description": "Craft an Energy Acceptor! You ME System needs power through this machine. Use Glass, Covered or Smart cables to route the energy from the Acceptor to your Controller, or simply place it next to the Controller.",
+      "x": 269,
+      "y": 25,
+      "icon": {
+        "id": "appliedenergistics2:energy_acceptor"
+      },
+      "prerequisites": [
+        "5a07d029-a3e7-4d6f-8e9b-e122636adcfb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:energy_acceptor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:energized_certus_quartz_crystal",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6e512667-3e2c-4d18-8508-4cc128bf247d",
+      "name": "Fast and Furious",
+      "description": "Okay, now what could possibly require more energy than this!?\n\n*Insert another warning about FPS issues.*",
+      "x": 100,
+      "y": 115,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "nbt": "{tier:3}"
+      },
+      "prerequisites": [
+        "e62957a0-65d7-4791-be93-2fd6d471c45c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "nbt": "{tier:3}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:obsidian",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 24
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4cd95ba7-0853-4942-94eb-1fd2148b79d6",
+      "name": "Charrrrrgin' up",
+      "description": "Craft a Charger! Use it to create some Charged Certus Quartz Crystals! Make sure to automate it as soon as possible with 2 Itemducts on the side: one pushing regular Certus into the Charger, one pulling Charged Certus out! Make sure to setup a filter for Charged Certus Quartz. The Charger can accept both regular power and transformed power through Glass Cables placed after an Energy Acceptor. However it'll most likely work faster with regular power.",
+      "x": 178,
+      "y": 93,
+      "icon": {
+        "id": "appliedenergistics2:charger"
+      },
+      "prerequisites": [
+        "5a07d029-a3e7-4d6f-8e9b-e122636adcfb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:charger"
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 1
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermaldynamics:duct_32",
+          "amount": 2
+        },
+        {
+          "id": "thermaldynamics:servo",
+          "amount": 2
+        },
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 1,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "dffcc34e-53ef-4f9c-a0f5-059bef2c0788",
+      "name": "We're gonna be rich!",
+      "description": "Make some Enriched Alloy in your Metallurgic Infuser!",
+      "x": 33,
+      "y": 49,
+      "icon": {
+        "id": "mekanism:enrichedalloy"
+      },
+      "prerequisites": [
+        "69663368-d68c-43a6-8fb2-a8eb0f4d945c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:enrichedalloy"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:gold_ingot",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "64ca213a-0304-4490-8c64-001f530d419d",
+      "name": "Toughen up",
+      "description": "Craft a Steel Casing! It's used as a basis of all Mekanism machines.",
+      "x": 20,
+      "y": 27,
+      "icon": {
+        "id": "mekanism:basicblock",
+        "damage": 8
+      },
+      "prerequisites": [
+        "35a83d54-67a6-446b-bf84-32fd0ac47767"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:basicblock",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f8973c25-606c-47a9-8cf0-738f43103788",
+      "name": "At your Service",
+      "description": "Craft some Servos! Attach them onto an Itemduct to have it automatically pull items out of a container. Right Click on the Servo to turn Redstone Control to Ignored mode and have them always run! You can also craft Hardened Servos at this stage, which pull slightly faster.",
+      "x": 20,
+      "y": 115,
+      "icon": {
+        "id": "thermaldynamics:servo"
+      },
+      "prerequisites": [
+        "1aa4ded8-e980-423c-ab5c-6fd6672c0ebd"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:servo"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 162,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "16515fdb-1e0d-469f-ac65-328a913292d7",
+      "name": "It's watching you",
+      "description": "Craft the Eye of Gaea...!\n\n\n\n...Just don't let it SEE you..... D:",
+      "x": 44,
+      "y": 163,
+      "icon": {
+        "id": "contenttweaker:eye_of_gaea"
+      },
+      "prerequisites": [
+        "d96d6705-0b84-4be1-bc16-256526bc16de"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:eye_of_gaea"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:glowstone",
+          "amount": 24
+        },
+        {
+          "id": "minecraft:gold_ore",
+          "amount": 24
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a34ef5bf-aaca-4f38-b14e-1a1493a3d3e9",
+      "name": "Crushin' it even more",
+      "description": "Craft a Mekanism Crusher! It works alongside the Enrichment Chamber, but instead of grinding Ores, it can grind down Ingots into their Dust form.",
+      "x": 140,
+      "y": 48,
+      "icon": {
+        "id": "mekanism:machineblock",
+        "damage": 3
+      },
+      "prerequisites": [
+        "2f365bd4-7a3b-45a2-81db-34feb714678a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 129,
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 132,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "687446ce-a3b5-4c33-9003-87b4b8a076bd",
+      "name": "Tiering up",
+      "description": "Craft an Advanced Energy Cube! You can craft Energetic Alloy in the Arc Furnace or alloy it in the Smeltery.",
+      "x": 73,
+      "y": 116,
+      "icon": {
+        "id": "mekanism:energycube",
+        "nbt": "{tier:1}"
+      },
+      "prerequisites": [
+        "6a272e15-dc2d-428b-856c-f4d08011b881"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:energycube",
+                "nbt": "{tier:1}"
+              },
+              "precision": "NBT_SUBSET"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:energized_osmium_ingot",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f010b7b3-c435-492c-af69-0414fa6281b3",
+      "name": "Drive me crazy",
+      "description": "Craft an ME Drive! This is where you can store all your Storage Cells with items inside.",
+      "x": 217,
+      "y": 71,
+      "icon": {
+        "id": "appliedenergistics2:drive"
+      },
+      "prerequisites": [
+        "3a66cde5-35f6-4ed3-ba60-c33c68bbd304",
+        "b783298d-c309-4b20-93d5-abdf6698a90b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:drive"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 7,
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c4a4aaa6-cba4-463a-a436-45b4d72d14ab",
+      "name": "Oh no!",
+      "description": "It needs power... a lot of power... to awaken...",
+      "x": 71,
+      "y": 161,
+      "bigicon": true,
+      "icon": {
+        "id": "contenttweaker:eye_of_gaea_awakened"
+      },
+      "prerequisites": [
+        "16515fdb-1e0d-469f-ac65-328a913292d7"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:eye_of_gaea_awakened"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:sapling",
+          "damage": 3,
+          "amount": 4
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "mekanism:atomicalloy",
+          "amount": 8
+        },
+        {
+          "id": "plustic:osgloglasingot",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2e7e1ad3-6571-436b-8f7e-dca54bb7c542",
+      "name": "Useful green square thingy",
+      "description": "Craft 4 Basic Control Circuits! These are heavily used in the creation of more machines.",
+      "x": 74,
+      "y": 27,
+      "icon": {
+        "id": "mekanism:controlcircuit"
+      },
+      "prerequisites": [
+        "69663368-d68c-43a6-8fb2-a8eb0f4d945c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:controlcircuit"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:redstone",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a436bdb6-37d0-4b50-aa65-18458cd64a6f",
+      "name": "Too pricy?",
+      "description": "If your machines consume a lot of energy, it might be worth upgrading them with Energy Upgrades! Each machien can accept 8 of them. Use the top right icon on the UI of any machine to apply them!",
+      "x": 128,
+      "y": 70,
+      "icon": {
+        "id": "mekanism:energyupgrade"
+      },
+      "prerequisites": [
+        "16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:energyupgrade"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mekanism:energyupgrade",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d96d6705-0b84-4be1-bc16-256526bc16de",
+      "name": "Allowy me to introduce...",
+      "description": "...the Atomic Alloy! Such impecable purity! Such magnificent beauty! It's the highest tier Alloy from Mekanism.",
+      "x": 31,
+      "y": 139,
+      "icon": {
+        "id": "mekanism:atomicalloy"
+      },
+      "prerequisites": [
+        "3118b314-be8f-4af2-a965-2f95be43ae3a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:atomicalloy"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:obsidian",
+          "amount": 40
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5c63ecfa-8954-465a-a1a2-1776f96b15b4",
+      "name": "The Heart of your ME System",
+      "description": "Craft an ME Controller and power it through the Energy Acceptor! Each side can provide 32 channels that your AE2 machines can use. If you're running low on channels, extend the Controller! It can only take the shape of a rectangular frame, so no four Controllers can touch eachother in a 2x2 shape!",
+      "x": 230,
+      "y": 93,
+      "icon": {
+        "id": "appliedenergistics2:controller"
+      },
+      "prerequisites": [
+        "3a66cde5-35f6-4ed3-ba60-c33c68bbd304",
+        "b783298d-c309-4b20-93d5-abdf6698a90b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:controller"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 24,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1c428225-93bc-4247-b49d-8e0fbfb7b019",
+      "name": "Additional Presses",
+      "description": "Find the additional five custom Presses inside of Sky Stone Chests in the middle of Meteorites! It's not too important to find all of them right now, since you'll only need them once you revisit AE2 with Autocrafting, Autoprocessing, Fluid/Gas Storage, higher tier Storage Cells, Wireless Terminals and Spatial Storage. These are what custom Presses and Processors are used for.",
+      "x": 204,
+      "y": 48,
+      "icon": {
+        "id": "contenttweaker:inscriber_operation_press"
+      },
+      "prerequisites": [
+        "f738266a-f952-4a39-820e-f326f21bd37f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:inscriber_operation_press"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:inscriber_estimation_press"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:inscriber_methodology_press"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:inscriber_clearance_press"
+              }
+            },
+            {
+              "item": {
+                "id": "contenttweaker:inscriber_scheduling_press"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 19
+        },
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 15
+        },
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 14
+        },
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 13
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "966a5609-8042-4189-9c46-f9780aa50212",
+      "name": "Connect up your Drawers!",
+      "description": "Craft a Storage Bus and connect it to your Drawer Controller to have access to all those items in your ME Network! You can also connect it to various Chests and other storage devices for the same functionality. Also make sure to Right Click on it and set its priority higher than your ME Drive's, because otherwise all your items will get sent back to your Drive, not your Drawers.",
+      "x": 175,
+      "y": 138,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 220
+      },
+      "prerequisites": [
+        "d96d6705-0b84-4be1-bc16-256526bc16de",
+        "4ae6ee1a-79c4-4928-9174-fc521bca1482",
+        "09e0588e-7d50-452a-bc6d-b324a1614774"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 220
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 43,
+          "amount": 4
+        },
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 44,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fa2d5130-cc15-477b-8b41-16ac0337208b",
+      "name": "Print-print, bzz-bzoo!",
+      "description": "Use your Inscriber to create some Logic, Engineering and Silicon Presses!",
+      "x": 230,
+      "y": 48,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 18
+      },
+      "prerequisites": [
+        "11b099f5-a59b-4b59-92f8-8f648c9914b8",
+        "20485849-cc43-423f-b5f5-8cff23104c2a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 18
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 17
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 20
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:gold_ingot",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:diamond",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "52ec7372-7621-4700-bed5-4a224a7b9810",
+      "name": "Channel the channels",
+      "description": "A Dense Cable only has a 32-channel capacity, but if you want to route more channels to a faraway location, you can use a P2P tunnel. With this, you can transform your Smart or Dense Cable to route 32 channels per cable-channel, then on the other end use another P2P tunnel to turn it back into regular functionality. To connect the two P2P tunnels at each end, use a Memory Card.\n\nThis will save you many Dense Cables. Instead of having to run 16 Dense Cables at once, you can run just 1, and have 16-16 P2P Tunnels at each end, with pairs joined by Memory Cards.",
+      "x": 191,
+      "y": 71,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 460
+      },
+      "prerequisites": [
+        "3a66cde5-35f6-4ed3-ba60-c33c68bbd304"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 460
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:memory_card"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "db9762f2-574b-413e-abbd-6d6198401b2a",
+      "name": "Giga Storage",
+      "description": "Wanna go further? Craft a 1024k Storage Component!",
+      "x": 282,
+      "y": 137,
+      "icon": {
+        "id": "extracells:storage.component",
+        "damage": 1
+      },
+      "prerequisites": [
+        "c3facd0e-b87b-47c7-958d-4aa92b1b4f44"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:storage.component",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:steaming_restonia_crystal",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "63d2cb9d-e7de-46ab-9f1a-3ae058f3c895",
+      "name": "Zwoooooosh!",
+      "description": "Craft some Acceleration Cards! This can speed up your Import/Export Buses, or the crafting speed of your Inscribers.",
+      "x": 215,
+      "y": 161,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 30
+      },
+      "prerequisites": [
+        "09e0588e-7d50-452a-bc6d-b324a1614774"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 30
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 165,
+          "amount": 8
+        },
+        {
+          "id": "mekanism:reinforcedalloy",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ecb72c84-4a28-4070-ab87-8a6e6f535b76",
+      "name": "Purity is key",
+      "description": "Craft 5 Crystal Growth Accelerators and place them around a block of Water! Provide energy to them through Glass Cables and throw Certus Quartz Seeds inside. Watch as they turn into Pure Certus Quartz Crystals! Note that this machine requires a lot of power. It's recommended that you break up your line of Glass Cables with a Toggle Bus, place a Lever next to it, and only turn it on when you need the Crystal Growth Accelerators to be active.",
+      "x": 256,
+      "y": 48,
+      "icon": {
+        "id": "appliedenergistics2:quartz_growth_accelerator"
+      },
+      "prerequisites": [
+        "28fe1158-8571-4ced-9179-c4cf51929397"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:quartz_growth_accelerator"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:part",
+          "damage": 16,
+          "amount": 16
+        },
+        {
+          "id": "appliedenergistics2:part",
+          "damage": 80
+        },
+        {
+          "id": "minecraft:lever"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e62957a0-65d7-4791-be93-2fd6d471c45c",
+      "name": "Even faster, if possible!",
+      "description": "Still need more energy transfer? Well, craft some Elite Universal Cables, they might do the job! But again, use them sparingly because of FPS issues.",
+      "x": 127,
+      "y": 115,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "nbt": "{tier:2}"
+      },
+      "prerequisites": [
+        "8017a927-173f-4eee-aae1-9afce8c848d5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "nbt": "{tier:2}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:diamond",
+          "amount": 4
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7fc3d088-972f-48a2-94b7-3401c8ae22f5",
+      "name": "More Core Galore!",
+      "description": "Craft two Formation and Annihilation Cores! They are used as Crafting Components for AE2.",
+      "x": 216,
+      "y": 116,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 43
+      },
+      "prerequisites": [
+        "3a66cde5-35f6-4ed3-ba60-c33c68bbd304"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 43
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 44
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 22,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3faa4217-618f-4e57-832d-656a184e7cc7",
+      "name": "Where my items at?!",
+      "description": "Craft an ME Terminal and connect it to your Network through a Glass or Smart Cable! You can view your items stored in the Network, search for specific items and sort them in numerous ways.",
+      "x": 202,
+      "y": 138,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 380
+      },
+      "prerequisites": [
+        "7fc3d088-972f-48a2-94b7-3401c8ae22f5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 380
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:view_cell"
+        },
+        {
+          "id": "minecraft:redstone",
+          "amount": 32
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c3facd0e-b87b-47c7-958d-4aa92b1b4f44",
+      "name": "Mega Storage",
+      "description": "Once you have access to higher tier materials from other Chapters, come back to craft a 256k Storage Component!",
+      "x": 296,
+      "y": 115,
+      "icon": {
+        "id": "extracells:storage.component"
+      },
+      "prerequisites": [
+        "06b116bc-9908-49d2-a0cb-4b604cc7e756"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:storage.component"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 136,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "60160f6c-8003-4b83-b193-ca9a1b8aeecc",
+      "name": "Ultimate Energy Storage",
+      "description": "Craft an Ultimate Energy Cube! For now, this will be your best way of storing energy! ...But wait until you get into EnderIO or Draconic.",
+      "x": 59,
+      "y": 139,
+      "icon": {
+        "id": "mekanism:energycube",
+        "nbt": "{tier:3}"
+      },
+      "prerequisites": [
+        "d96d6705-0b84-4be1-bc16-256526bc16de",
+        "3bd0af0c-2421-4a80-ae17-0202830a02e5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:energycube",
+                "nbt": "{tier:3}"
+              },
+              "precision": "NBT_SUBSET"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mekanism:reinforcedalloy",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6a272e15-dc2d-428b-856c-f4d08011b881",
+      "name": "Like a Capacitor",
+      "description": "Craft a Basic Energy Cube! This is the Mekanism way to store energy for later use. You can configure its sides to select where the energy should be inputted or outputted. You can also charge items by placing it into the slot marked with a Plus, and remove charge from an item by placing it into the slot marked with a Minus (granted there is space in the Energy Cube). You can move this machine and all other Mekanism machines with a Crescent Hammer (Shift+Right Click). But by  breaking it, it will still retain its energy.",
+      "x": 87,
+      "y": 92,
+      "icon": {
+        "id": "mekanism:energycube",
+        "nbt": "{tier:0}"
+      },
+      "prerequisites": [
+        "16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:energycube",
+                "nbt": "{tier:0}"
+              },
+              "precision": "NBT_SUBSET"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "plustic:osgloglasingot",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "11b099f5-a59b-4b59-92f8-8f648c9914b8",
+      "name": "The OG four",
+      "description": "Find the original four Applied Energistics Presses located inside Sky Stone Chests in the middle of Meteorites! These are the Presses you'll need first.",
+      "x": 217,
+      "y": 25,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 19
+      },
+      "prerequisites": [
+        "f738266a-f952-4a39-820e-f326f21bd37f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 19
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 15
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 13
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "contenttweaker:inscriber_operation_press"
+        },
+        {
+          "id": "contenttweaker:inscriber_estimation_press"
+        },
+        {
+          "id": "contenttweaker:inscriber_methodology_press"
+        },
+        {
+          "id": "contenttweaker:inscriber_clearance_press"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f939ead9-eceb-4eb7-8807-6443a5356571",
+      "name": "Plumber Pack++",
+      "description": "Not being able to route your Liquids fast enough? Craft some Advanced Mechanical Pipes, maybe they'll do the job!",
+      "x": 104,
+      "y": 163,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "damage": 1,
+        "nbt": "{tier:1}"
+      },
+      "prerequisites": [
+        "f6f1df57-93fa-4ec5-a525-f620115deea3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "damage": 1,
+                "nbt": "{tier:1}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_ingot",
+          "damage": 1,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2a353ab3-6f89-4a65-ac31-107fb71fb905",
+      "name": "Overflow? No problemo!",
+      "description": "Craft the required materials for a 3x3x3 Dynamic Tank multiblock! The frame has to be made out of Dynamic Tank blocks, and the faces out of Structural Glass. Finally, place a Dynamic Valve on one of the sides (while leaving the middle empty). Note that you can make a larger tank all the way up to an 18x18x18 if you need to store a lot of Liquid. Use a Mechanical Pipe to push or pull the Liquid in/out. Each block (including the frame) can hold 64 Buckets, so a 3x3x3 Tank can hold 1728 Buckets of a given Liquid, and this scales up rapidy. For example a 5x5x5 Tank can hold 8000 Buckets.",
+      "x": 113,
+      "y": 48,
+      "icon": {
+        "id": "mekanism:basicblock",
+        "damage": 10
+      },
+      "prerequisites": [
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:basicblock",
+                "damage": 9
+              },
+              "required": 20
+            },
+            {
+              "item": {
+                "id": "mekanism:basicblock",
+                "damage": 10
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "mekanism:basicblock",
+                "damage": 11
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:block_tank",
+          "nbt": "{\"enderio:data\":{faceModes-:1b,voidMode:2,outputQueue:{size:0},tank:{FluidName:\"ethanol\",Capacity:16000,Amount:16000},inventory:{size:5,4+:1b,3+:1b,2+:1b,1+:1b,0+:1b},redstoneControlMode:0}}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b783298d-c309-4b20-93d5-abdf6698a90b",
+      "name": "Shiny purple gems",
+      "description": "Throw some Charged Certus Quartz Crystals, Redstone, and regular Quartz into a puddle of water and watch as they all transform into Fluix Crystals!",
+      "x": 204,
+      "y": 94,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 7
+      },
+      "prerequisites": [
+        "4cd95ba7-0853-4942-94eb-1fd2148b79d6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 7
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:quartz_ore",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4855d908-fdeb-4685-856e-a6a2ab97bc57",
+      "name": "Storage!",
+      "description": "Craft a 1k ME Storage Component. You can either choose to craft a Storage Cell out of it or further upgrade it into a 4k Storage Component.",
+      "x": 256,
+      "y": 93,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 35
+      },
+      "prerequisites": [
+        "3a66cde5-35f6-4ed3-ba60-c33c68bbd304"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 35
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 39
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2f365bd4-7a3b-45a2-81db-34feb714678a",
+      "name": "Ore Doubling, but faster",
+      "description": "Craft an Enrichment Chamber! You can power it and automate it just like the Metallurgic Infuser. This machine doubles ores, just like the Tinkers' Smeltery. However it's much simpler to automate, as it only takes up 1 block of space. Once you ground up your Ores, simply transfer them into an Energized Smelter to turn them into Ingots! And voil?, ore doubling!",
+      "x": 101,
+      "y": 26,
+      "icon": {
+        "id": "mekanism:machineblock"
+      },
+      "prerequisites": [
+        "2e7e1ad3-6571-436b-8f7e-dca54bb7c542"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:iron_ore",
+          "amount": 16
+        },
+        {
+          "id": "mekanism:oreblock",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cd125dbc-9bfb-420f-8637-68cb980bac6e",
+      "name": "Hypernet! It works!",
+      "description": "Craft some Glass Cables! They can transfer AE2 power and up to 8 channels.",
+      "x": 243,
+      "y": 115,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 16
+      },
+      "prerequisites": [
+        "b783298d-c309-4b20-93d5-abdf6698a90b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 16
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:part",
+          "damage": 16,
+          "amount": 6
+        },
+        {
+          "id": "minecraft:wool",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3a66cde5-35f6-4ed3-ba60-c33c68bbd304",
+      "name": "Print-proont, bzaa-bzee!",
+      "description": "Combine your previously created Printed Circuits in the Inscriber to create some Processors! It's recommended to craft and automate multiple Inscribers, as you'll need many Processors from now on.",
+      "x": 243,
+      "y": 71,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 22
+      },
+      "prerequisites": [
+        "fa2d5130-cc15-477b-8b41-16ac0337208b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 22
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 24
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 20,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b988ba1b-cd85-4a28-8041-f606cb364707",
+      "name": "Advancing",
+      "description": "Craft 4 Energetic Alloy in the Arc Furnace or by melting Gold, Redstone and Glowstone in the Smeltery! Then using these materials, craft an Advanced Control Circuit!",
+      "x": 60,
+      "y": 49,
+      "icon": {
+        "id": "mekanism:controlcircuit",
+        "damage": 1
+      },
+      "prerequisites": [
+        "2e7e1ad3-6571-436b-8f7e-dca54bb7c542",
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "enderio:item_alloy_ingot",
+                "damage": 1
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "mekanism:controlcircuit",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 802,
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "09e0588e-7d50-452a-bc6d-b324a1614774",
+      "name": "Collect all the items!",
+      "description": "Craft an Import Bus! Use it to send items from an outside source into your ME System!",
+      "x": 189,
+      "y": 161,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 240
+      },
+      "prerequisites": [
+        "7fc3d088-972f-48a2-94b7-3401c8ae22f5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 240
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:quartz",
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "20485849-cc43-423f-b5f5-8cff23104c2a",
+      "name": "Precision Press",
+      "description": "Craft an Inscriber! Use AE2 Presses found in Atum and basic materials to create Printed Circuits and Processors! To automate it, push items into the machine from different sides. The top side will accept items that go in the top slot, the side will accept the central items, and guess what the bottom does. And pull out items from the other side. The Inscriber takes regular power, but can also work using the power from an Energy Acceptor through Glass Cables.",
+      "x": 243,
+      "y": 25,
+      "icon": {
+        "id": "appliedenergistics2:inscriber"
+      },
+      "prerequisites": [
+        "5a07d029-a3e7-4d6f-8e9b-e122636adcfb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:inscriber"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermaldynamics:duct_32",
+          "amount": 4
+        },
+        {
+          "id": "thermaldynamics:servo",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e577b40c-02f4-4897-9069-40b46ac15ec9",
+      "name": "It's a me, Mario!",
+      "description": "Craft some Elite Mechanical Pipes, if you're still not satisfied with the speed of your liquid transfer! For now, this is the highest tier available.",
+      "x": 131,
+      "y": 163,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "damage": 1,
+        "nbt": "{tier:2}"
+      },
+      "prerequisites": [
+        "f939ead9-eceb-4eb7-8807-6443a5356571"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "damage": 1,
+                "nbt": "{tier:2}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:item_alloy_endergy_ingot",
+          "damage": 5,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2ad30597-31b2-44dc-9a1c-d7e9c7ece6fd",
+      "name": "Channel overflow",
+      "description": "Craft some smart Cables! They can transmit 32 channels, but can't connect to machines. Use Smart Cable lines coming out of a line of Dense Cables for large scale automation!",
+      "x": 242,
+      "y": 161,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 76
+      },
+      "prerequisites": [
+        "ac4a5d5e-e1b1-4767-9a84-43f629a5e27f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 76
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:network_tool"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a843dea9-3ff3-471a-b29d-dc86fa9d9bd1",
+      "name": "Ultra Storage",
+      "description": "This is getting ridicolous... Craft a 4096k Storage Component!",
+      "x": 269,
+      "y": 160,
+      "icon": {
+        "id": "extracells:storage.component",
+        "damage": 2
+      },
+      "prerequisites": [
+        "db9762f2-574b-413e-abbd-6d6198401b2a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:storage.component",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e5195de7-f044-4905-9b8a-a66393ece26c",
+      "name": "Extreme Storage",
+      "description": "You've made it! This is the highest tier Item Storage Component available...! Craft a 16384k Storage Component, also known as a 16M Storage Component!",
+      "x": 296,
+      "y": 160,
+      "icon": {
+        "id": "extracells:storage.component",
+        "damage": 3
+      },
+      "prerequisites": [
+        "a843dea9-3ff3-471a-b29d-dc86fa9d9bd1"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:storage.component",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "05508d5c-f811-49ad-9049-26beca5cd5cc",
+      "name": "Calculating, calculating?",
+      "description": "Use your Inscriber with Pure Certus Quartz Crystals to create some Calculation Processors!",
+      "x": 296,
+      "y": 71,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 23
+      },
+      "prerequisites": [
+        "ac72e2cd-09ba-44fa-8ac1-6243b07de2ff"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 23
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 20,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1e8cbde6-6fdb-4e85-bf85-021d0cb27b46",
+      "name": "From small to large cells",
+      "description": "If you have a bunch of smaller Storage Cells full of items, but you want to upgrade to larger Cells, it's worth crafting an ME IO Port. Using this your can empty your items from a smaller Cell into your Storage Network. If the Network only consists of larger Cells, this will effectively transfer items from smaller to larger Cells.",
+      "x": 255,
+      "y": 138,
+      "icon": {
+        "id": "appliedenergistics2:io_port"
+      },
+      "prerequisites": [
+        "06b116bc-9908-49d2-a0cb-4b604cc7e756"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:io_port"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 32
+        },
+        {
+          "id": "minecraft:diamond",
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1aa4ded8-e980-423c-ab5c-6fd6672c0ebd",
+      "name": "Better than Hoppers",
+      "description": "Craft some Itemducts from Thermal Expansion! To use them, place one next to a container or machine, and apply a Servo if you want to pull items out of it. Servos can be Right Clicked on to change them to Always On mode.",
+      "x": 33,
+      "y": 93,
+      "icon": {
+        "id": "thermaldynamics:duct_32"
+      },
+      "prerequisites": [
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "thermaldynamics:duct_32"
+              },
+              "required": 6,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "projectred-core:resource_item",
+          "damage": 103,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "869d2a91-893c-45e5-bf55-ac1e12286d6d",
+      "name": "STORAGE!!! >:O",
+      "description": "Craft a 16k Storage Component! You might wanna consider storing your items in this or slightly larger Cells if you're starting to run some Quarries.",
+      "x": 282,
+      "y": 93,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 37
+      },
+      "prerequisites": [
+        "4d6696dc-a7c9-49b3-8f18-bbc9376c9583"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 37
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 23,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8017a927-173f-4eee-aae1-9afce8c848d5",
+      "name": "Faster! Faster!!",
+      "description": "If your Basic Universal Cables can't transfer enough energy, craft some Advanced ones! However, use these ones sparingly as well, since they cause FPS lag too due to inefficient rendering.",
+      "x": 141,
+      "y": 92,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "nbt": "{tier:1}"
+      },
+      "prerequisites": [
+        "99b9a0c7-fe78-4578-b1f3-ed295d99e4c5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "nbt": "{tier:1}"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:redstone",
+          "amount": 24
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f6f1df57-93fa-4ec5-a525-f620115deea3",
+      "name": "Wannabe Plumber",
+      "description": "Craft some Basic Mechanical Pipes to be able to move Fluids around easily!",
+      "x": 115,
+      "y": 139,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "damage": 1,
+        "nbt": "{tier:0}"
+      },
+      "prerequisites": [
+        "35a83d54-67a6-446b-bf84-32fd0ac47767"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "damage": 1,
+                "nbt": "{tier:0}"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "immersiveengineering:material",
+          "damage": 18,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6729c9a2-6c71-469d-881f-91f98f5b9139",
+      "name": "Pump it (louder)!",
+      "description": "Turn up the radio! Blast the stereo! Riiiiiiiight noooowwww...! And craft an Electric Pump! Use this if you need a large amount of Lava from the Nether. It's easier than using individual Buckets for each Lava source block. Simply set it up above a source block of a fluid, power it from the side and place some kind of a fluid container on top. Later you'll be able to use it in conjuction with the Quantum Entagloporter to transfer your Fluids wirelessly.",
+      "x": 87,
+      "y": 49,
+      "icon": {
+        "id": "mekanism:machineblock",
+        "damage": 12
+      },
+      "prerequisites": [
+        "b988ba1b-cd85-4a28-8041-f606cb364707"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock",
+                "damage": 12
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "enderio:block_tank",
+          "nbt": "{\"enderio:data\":{faceModes-:1b,voidMode:2,outputQueue:{size:0},tank:{FluidName:\"plantoil\",Capacity:16000,Amount:16000},inventory:{size:5,4+:1b,3+:1b,2+:1b,1+:1b,0+:1b},redstoneControlMode:0}}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ac4a5d5e-e1b1-4767-9a84-43f629a5e27f",
+      "name": "Channel entanglement",
+      "description": "Craft some Smart Cables! Adding to the functionality of Glass Cables, they also show how many channels run through the given Cable, and how many are left available. Different colors of Smart Cables don't connect to eachother, they only connect to colorless Smart Cables.",
+      "x": 229,
+      "y": 138,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 56
+      },
+      "prerequisites": [
+        "cd125dbc-9bfb-420f-8637-68cb980bac6e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 56
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 7,
+          "amount": 8
+        },
+        {
+          "id": "minecraft:wool",
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "69663368-d68c-43a6-8fb2-a8eb0f4d945c",
+      "name": "Heavy Metal",
+      "description": "Craft a Metallurgic Infuser! This is the main machine you'll use to create all the various Mekanism components. Like for all Mekanism machines, you can simply connect an Immersive Engineering Wire Coil to it by placing a Wire Connector on any side. Once it's powered, place the main material in the second slot from the left, and the infusing material in the first slot from the left. Note that the machine can only hold and use one type of infusing material at once, meaning you're most likely better off creating multiple Metallurgic Infusers for maximum efficiency. To automate the machine, click on the Side Config button on the left. You can select which side you want items, infusion materials and energy to be input on, and which side you want to use as output. Make sure to push and pull items in/out with a Hopper or an Itemduct with an active Servo on it. And one more thing: All Mekanism machines can be picked up and moved by a Crescent Hammer from Thermal Expansion, so you don't need to worry about energy loss.",
+      "x": 47,
+      "y": 26,
+      "icon": {
+        "id": "mekanism:machineblock",
+        "damage": 8
+      },
+      "prerequisites": [
+        "64ca213a-0304-4490-8c64-001f530d419d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "immersiveengineering:connector",
+          "damage": 4,
+          "amount": 2
+        },
+        {
+          "id": "immersiveengineering:wirecoil",
+          "damage": 2
+        },
+        {
+          "id": "thermaldynamics:duct_32",
+          "amount": 2
+        },
+        {
+          "id": "thermaldynamics:servo",
+          "amount": 2
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "54690db3-de68-48c8-b25e-043553ea0717",
+      "name": "Press Pressentor",
+      "description": "Craft an Osmium Compressor! This machine can create more crafting materials for Mekanism. You can automate it the same way as the Metallurgic Infuser.",
+      "x": 73,
+      "y": 70,
+      "icon": {
+        "id": "mekanism:machineblock",
+        "damage": 1
+      },
+      "prerequisites": [
+        "b988ba1b-cd85-4a28-8041-f606cb364707"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:glowstone_dust",
+          "amount": 36
+        },
+        {
+          "id": "minecraft:obsidian",
+          "amount": 36
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "06b116bc-9908-49d2-a0cb-4b604cc7e756",
+      "name": "S-T-O-R-A-G-E-!-!-! >:OOO",
+      "description": "Craft a 64k Storage Cell. This is the final Storage Cell available before getting into Thermal Expansion.",
+      "x": 269,
+      "y": 115,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 38
+      },
+      "prerequisites": [
+        "869d2a91-893c-45e5-bf55-ac1e12286d6d"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 38
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 24,
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "16d2dbd7-0c08-4a2b-a0c2-bc659a0ceb7f",
+      "name": "Swear it's not Uranium",
+      "description": "Use your Osmium Compressor to create some Infused Obsidian and Infused Glowstone Ingots! Then combine them in the Arc Furnace or the Smeltery to create some Osgloglas Ingots!",
+      "x": 101,
+      "y": 70,
+      "icon": {
+        "id": "plustic:osgloglasingot"
+      },
+      "prerequisites": [
+        "54690db3-de68-48c8-b25e-043553ea0717"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:ingot"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "mekanism:ingot",
+                "damage": 3
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "plustic:osgloglasingot"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "mekanism:oreblock",
+          "amount": 16
+        },
+        {
+          "id": "minecraft:diamond_ore",
+          "amount": 6
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a2556e53-541f-40c6-9af7-809273da0f93",
+      "name": "1x1 Fluid Storage",
+      "description": "Work your way up to an Ultimate Fluid Tank! Right now this is your best way of storing Fluids in a 1x1 area, although for more storage you can make the Dynamic Tank multiblock. Like all Mekanism machines and blocks, this can also be picked up and moved with a Crescent Hammer (Shift+Right Click), and it'll still retain its stored fluid. This is also true when upgrading to a higher tier Tank.",
+      "x": 88,
+      "y": 138,
+      "icon": {
+        "id": "mekanism:machineblock2",
+        "damage": 11,
+        "nbt": "{tier:3}"
+      },
+      "prerequisites": [
+        "d96d6705-0b84-4be1-bc16-256526bc16de"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock2",
+                "damage": 11,
+                "nbt": "{tier:3}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mekanism:ingot",
+          "damage": 1,
+          "amount": 16
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 160,
+          "amount": 16
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f738266a-f952-4a39-820e-f326f21bd37f",
+      "name": "A Desert where Dinos died",
+      "description": "Craft a Meteorite Compass and use it in Atum! That's right, AE2 Meteorites don't generate in the overwold, they only generate inside Atum! This compass will point you to the nearest chunk with a Meteorite inside. It will start spinning as soon as you've entered such a chunk. Make sure the Meteorite isn't on a Chunk boarder, or if it is, start digging in the correct spot! Meteorites have a Sky Stone Chest in the middle which holds all the Presses you'll need.",
+      "x": 191,
+      "y": 25,
+      "icon": {
+        "id": "appliedenergistics2:sky_compass"
+      },
+      "prerequisites": [
+        "5a07d029-a3e7-4d6f-8e9b-e122636adcfb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:sky_compass"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "amount": 3,
+          "nbt": "{Potion:\"cofhcore:swiftness3+\"}"
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c2936f5f-b1b6-45d6-afbc-12442a430662",
+      "name": "Huh, get buuuurned!",
+      "description": "Craft an Energized Smelter! You can smelt your Dusts into Ingots or simply use it as a Furnace powered by energy.",
+      "x": 127,
+      "y": 26,
+      "icon": {
+        "id": "mekanism:machineblock",
+        "damage": 10
+      },
+      "prerequisites": [
+        "69663368-d68c-43a6-8fb2-a8eb0f4d945c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:machineblock",
+                "damage": 10
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 64,
+          "amount": 20
+        },
+        {
+          "id": "thermalfoundation:material",
+          "damage": 1,
+          "amount": 12
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3118b314-be8f-4af2-a965-2f95be43ae3a",
+      "name": "A strong piece of metal",
+      "description": "Craft some Reinforced Alloy! This component is used in higher tier machines.",
+      "x": 61,
+      "y": 93,
+      "icon": {
+        "id": "mekanism:reinforcedalloy"
+      },
+      "prerequisites": [
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:reinforcedalloy"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:diamond_ore",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:emerald_ore",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "99b9a0c7-fe78-4578-b1f3-ed295d99e4c5",
+      "name": "Mek-wires ac-quired!",
+      "description": "Craft some Basic Universal Cables! They can be used to easily transfer energy between two spots! However, I still encourage you to use Immersive Engineering Wires, since in 1.12 Mekanism Universal Cables tend to cause FPS lag due to inefficient rendering. So use them sparingly!",
+      "x": 114,
+      "y": 92,
+      "icon": {
+        "id": "mekanism:transmitter",
+        "nbt": "{tier:0}"
+      },
+      "prerequisites": [
+        "35a83d54-67a6-446b-bf84-32fd0ac47767"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:transmitter",
+                "nbt": "{tier:0}"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:energized_osmium_ingot",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "dd7b2482-25e0-4f04-9924-ba4a68e536ee",
+      "name": "Too loud?",
+      "description": "Craft 4 Muffling Upgrades! You can apply these via the top right button of the UI of any machine, and with each upgrade it'll make the machine considerably quieter.",
+      "x": 47,
+      "y": 71,
+      "icon": {
+        "id": "mekanism:mufflingupgrade"
+      },
+      "prerequisites": [
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:mufflingupgrade"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mekanism:mufflingupgrade",
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "eeb09452-5935-444a-b9f2-8455d7ed0d2b",
+      "name": "Too slow?",
+      "description": "Craft 8 Speed Upgrades! This is the maximum that a Mekanism Machine can accept. Simply click on the Upgrades slot in the top right of the UI of any machine, and place the upgrades in the top right slot. But watch out, with each upgrade, the machine will require more and more power!",
+      "x": 19,
+      "y": 72,
+      "icon": {
+        "id": "mekanism:speedupgrade"
+      },
+      "prerequisites": [
+        "dffcc34e-53ef-4f9c-a0f5-059bef2c0788"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "mekanism:speedupgrade"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mekanism:speedupgrade",
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4d6696dc-a7c9-49b3-8f18-bbc9376c9583",
+      "name": "Storage! :O",
+      "description": "Craft a 4k ME Storage Component! These might be enough for the early game. They have plenty of space to store your items.",
+      "x": 270,
+      "y": 71,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 36
+      },
+      "prerequisites": [
+        "4855d908-fdeb-4685-856e-a6a2ab97bc57",
+        "05508d5c-f811-49ad-9049-26beca5cd5cc"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 36
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 22,
+          "amount": 4
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4ae6ee1a-79c4-4928-9174-fc521bca1482",
+      "name": "Need items elsewhere!",
+      "description": "Craft an Export Bus! Use it to send items to different locations from your ME System!",
+      "x": 190,
+      "y": 116,
+      "icon": {
+        "id": "appliedenergistics2:part",
+        "damage": 260
+      },
+      "prerequisites": [
+        "7fc3d088-972f-48a2-94b7-3401c8ae22f5"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:part",
+                "damage": 260
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 7,
+          "amount": 20
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ac72e2cd-09ba-44fa-8ac1-6243b07de2ff",
+      "name": "It's Pure!",
+      "description": "Craft some Certus Quartz Seed and grow them into Pure Certus Quartz in the Crystal Growth Accelerator!",
+      "x": 283,
+      "y": 48,
+      "icon": {
+        "id": "appliedenergistics2:material",
+        "damage": 10
+      },
+      "prerequisites": [
+        "ecb72c84-4a28-4070-ab87-8a6e6f535b76"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:material",
+                "damage": 10
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "appliedenergistics2:material",
+          "damage": 10,
+          "amount": 8
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}

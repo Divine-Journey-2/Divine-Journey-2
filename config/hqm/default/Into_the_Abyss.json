@@ -1,1 +1,1641 @@
-{"name":"Into the Abyss","description":" Into the Abyss\nFight 3 bosses from DivineRPG, venture into Eden and the Wildwoods, gain 5x5 crafting from Extended Crafting, and go insane with AbyssalCraft.","quests":[{"uuid":"6d56a86a-7e19-4acd-a3d1-54f2f865fa2e","name":"\u003d Necronomicon + 1","description":"Using the various materials you\u0027ve gathered so far, upgrade your Necronomicon to its Abyssal Wastelands version. This will unlock new chapters and allow it to store more Potential Energy.","x":199,"y":179,"icon":{"id":"abyssalcraft:necronomicon_cor","nbt":"{PotEnergy:0.0f}"},"prerequisites":["f06fd67f-2015-468a-a316-101a10cc4ae7"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:necronomicon_cor","nbt":"{PotEnergy:0.0f}"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"d180599c-acb0-4813-8609-de641b50b20a","name":"Don\u0027t like where this is going.","description":"Its a 5x5 crafting table, oh so full of joy, why don\u0027t you try it - this is no sinister ploy!","x":276,"y":88,"icon":{"id":"extendedcrafting:table_advanced"},"prerequisites":["9f4bba32-3b6c-481a-91b4-2ba3cd3ef439"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:table_advanced"}}]}],"commandrewards":[]},{"uuid":"27aa9d23-c1ed-4caa-b50a-18fad1b29f82","name":"Rip \u0027Em","description":"Now that you\u0027ve killed The Watcher, rip out its eye.","x":57,"y":44,"icon":{"id":"contenttweaker:eye_of_the_watcher"},"prerequisites":["03aa404d-5271-4e11-9136-43a27318d09b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:eye_of_the_watcher"}}]}],"commandrewards":[]},{"uuid":"03aa404d-5271-4e11-9136-43a27318d09b","name":"That ain\u0027t Batman!","description":"The second Boss of DivineRPG, The Watcher is powerful flying boss that is spawned in the Nether by Right Clicking with the Call of the Watcher.","x":30,"y":44,"icon":{"id":"divinerpg:call_of_the_watcher"},"prerequisites":["09238052-57a7-4ce7-b401-6f71b3f48385"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:call_of_the_watcher"}}]}],"commandrewards":[]},{"uuid":"f6d45926-e80d-4006-9b63-c832842de910","name":"Overworld Potential","description":"Simply better versions of the normal Potential Energy manipulators.","x":264,"y":111,"icon":{"id":"abyssalcraft:tieredenergypedestal","nbt":"{PotEnergy:0.0f}"},"prerequisites":["11fbf3a4-b6dd-47b1-b862-7d1c4f5bd227","1a8dda32-b407-4ef2-b465-40309c3c9a6f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:tieredenergycollector","nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:tieredenergyrelay","nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:tieredenergypedestal","nbt":"{PotEnergy:0.0f}"}}]}],"commandrewards":[]},{"uuid":"d4bef1e3-3628-415f-9cad-a6f0248356ed","name":"Into the boring plain","description":"After crafting the gateway key, right clicking on the ground with it will generate a portal that will take you to the Abyssal Wasteland.","x":238,"y":156,"icon":{"id":"abyssalcraft:gatewaykey"},"prerequisites":["b2d5a56e-b06b-42bb-963a-06bc37571d65"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:gatewaykey"}}]}],"commandrewards":[]},{"uuid":"42b89bf1-e69c-4d2a-8fce-16f8e5562c86","name":"Enter: Wildwood","description":"Craft up 14 Eden Blocks. Make a Nether Portal shape out of them. Light with the Twilight Clock.\nWelcome to the Wildwood.","x":138,"y":159,"icon":{"id":"divinerpg:eden_block"},"prerequisites":["c6a376eb-9dbb-4d81-bd4d-05bb52e52a36","fbb1f03f-f1d8-45d1-9e6f-551f0d33fdac","33baf8e7-2951-46e2-836e-774f828e4e2b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:eden_block"},"required":14}]}],"commandrewards":[]},{"uuid":"a3761dea-e19a-4474-864f-daa1503bc83e","name":"Wildwood1","description":"Wildwood dungeon stuff","x":110,"y":159,"prerequisites":["42b89bf1-e69c-4d2a-8fce-16f8e5562c86"],"commandrewards":[]},{"uuid":"28db9b12-0889-488a-9958-239d289c4e8a","name":"Can Oh LAAAAAAAAAAAAAA","description":"Atomically Reconstruct Canola Seeds, and then toss it into Refined Canola in an In-World Fluid Crafting operation.","x":263,"y":20,"icon":{"id":"actuallyadditions:item_misc","damage":23},"prerequisites":["2c095134-dfb4-4799-9abf-be511bf69b2a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"actuallyadditions:item_misc","damage":23}},{"item":{"id":"forge:bucketfilled","nbt":"{FluidName:\"crystaloil\",Amount:1000}"}}]}],"commandrewards":[]},{"uuid":"9f4bba32-3b6c-481a-91b4-2ba3cd3ef439","name":"Don\u0027t I already have this?","description":"Its a 3x3 crafting table that won\u0027t let you craft anything new, ask your doctor if \"Basic Crafting Table\" is right for you.","x":291,"y":65,"icon":{"id":"extendedcrafting:table_basic"},"prerequisites":["580eaf99-aea2-4422-a57d-0a82a3e9f2c8"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:table_basic"}}]}],"commandrewards":[]},{"uuid":"3000b420-ec57-4d38-b6bf-dc4fd35d9847","name":"Eden2","description":"Eden dungeon stuff","x":138,"y":45,"prerequisites":["eca85b4f-b533-45f9-aedf-1ee61893c8f7"],"commandrewards":[]},{"uuid":"3f648780-2276-4535-be95-0764846bc298","name":"Sliver of Nothing","description":"The Shard of Oblivion captures just a bit of madness within its glowing red surface. Sometimes you can see the madness writhe.\n\n\nMake 4 of them.","x":210,"y":112,"icon":{"id":"abyssalcraft:oblivionshard"},"prerequisites":["f561fa84-f66c-4488-aa4e-2dc9f01b6d51"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:oblivionshard"},"required":4}]}],"commandrewards":[]},{"uuid":"fef0f016-85ab-4933-b7fc-30bf4bf94961","name":"Wildwood2","description":"Wildwood Dungeon stuff","x":82,"y":159,"prerequisites":["a3761dea-e19a-4474-864f-daa1503bc83e"],"commandrewards":[]},{"uuid":"abb3710e-718b-4a79-bd64-5a7b8cb85fce","name":"Resident Ingot","description":"After alloying up a Chunk of Coralium, smelt it down into two Refined Coralium Ingots.","x":223,"y":134,"icon":{"id":"abyssalcraft:cingot"},"prerequisites":["d4bef1e3-3628-415f-9cad-a6f0248356ed"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:cchunk"}},{"item":{"id":"abyssalcraft:cingot"},"required":2}]}],"commandrewards":[]},{"uuid":"f06fd67f-2015-468a-a316-101a10cc4ae7","name":"Essense of Madness","description":"Rend them down, get an Abyssal Wasteland Essence.","x":226,"y":179,"icon":{"id":"abyssalcraft:essence"},"prerequisites":["ec5f417a-0c41-45f8-8fb4-3659c5ecfc41"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:essence"}}]}],"commandrewards":[]},{"uuid":"d3646e97-5744-406f-a3e0-1553a609c7c8","name":"Really? Again?","description":"The Abyssal Stronghold that these lead too functions similarly to the normal Stronghold in the overworld, and these special eyes will lead you there. Make 6 of them.\n\nNote that the reward can only be gained through a harvest level 5 pickaxe, so you will need to find a way to get that.","x":197,"y":135,"icon":{"id":"abyssalcraft:powerstonetracker"},"prerequisites":["d4bef1e3-3628-415f-9cad-a6f0248356ed"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:powerstonetracker"},"required":6}]}],"commandrewards":[]},{"uuid":"ffe8b552-43fe-4090-b287-73cf6830af9c","name":"Wildwood3","x":96,"y":135,"icon":{"id":"contenttweaker:feather_of_the_wild_woods"},"prerequisites":["fef0f016-85ab-4933-b7fc-30bf4bf94961"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:feather_of_the_wild_woods"},"required":4}]}],"commandrewards":[]},{"uuid":"11fbf3a4-b6dd-47b1-b862-7d1c4f5bd227","name":"Pure Potential","description":"Potential Energy manipulation. Both useless without a Necronomicon AND actually explained there.\nCheck Potential Energy/Special Materials.","x":250,"y":89,"icon":{"id":"abyssalcraft:energypedestal","nbt":"{PotEnergy:0.0f}"},"prerequisites":["bed07e75-c03c-4fe4-a0c0-a4612b01502f","82c6546b-b76c-4950-9534-7dfb728cec67","d180599c-acb0-4813-8609-de641b50b20a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:energypedestal","nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:energycollector","nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:energyrelay","nbt":"{PotEnergy:0.0f}"}}]}],"commandrewards":[]},{"uuid":"21f866b7-8f89-446e-8c3b-de94fc312c84","name":"Gotta catch em all","description":"Gather up one of each of the Abyssal Statues - check to be sure you\u0027re making the real ones and not just the decorative ones.\n\nOnce you have the Necronomicon, the Potential Energy chapter will be of use, as it describes it with pictures!","x":209,"y":66,"icon":{"id":"abyssalcraft:statue","damage":1},"prerequisites":["35671644-7659-4561-a0c8-5a139bd3da5a","fe590951-40c3-47f2-95fe-b7c015a13de1"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:statue"}},{"item":{"id":"abyssalcraft:statue","damage":1}},{"item":{"id":"abyssalcraft:statue","damage":2}},{"item":{"id":"abyssalcraft:statue","damage":3}},{"item":{"id":"abyssalcraft:statue","damage":4}},{"item":{"id":"abyssalcraft:statue","damage":6}},{"item":{"id":"abyssalcraft:statue","damage":5}}]}],"commandrewards":[]},{"uuid":"82c6546b-b76c-4950-9534-7dfb728cec67","name":"Potential Pillars","description":"Make 4 Monolith Stone Pillars. These increase the range your statues can transmit Potential Energy from.","x":263,"y":65,"icon":{"id":"abyssalcraft:energycollector","nbt":"{PotEnergy:0.0f}"},"prerequisites":["d4b34ab4-c2b7-4953-a7b9-e1146fa62021"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:monolithpillar"},"required":4}]}],"commandrewards":[]},{"uuid":"fe35df9e-fad3-49a6-a20c-5f1f934ed6b6","name":"Necronomicon +\u003d 1","description":"Using the various materials you\u0027ve gathered so far, upgrade your Necronomicon to its Dreadlands version. This will unlock new chapters and allow it to store more Potential Energy.","x":43,"y":135,"icon":{"id":"abyssalcraft:necronomicon_dre","nbt":"{PotEnergy:0.0f}"},"prerequisites":["59794db5-69a6-41f3-aaaf-4061cd39b556","e97dd043-3dc3-4f41-a250-03ebcd9ca8eb"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:necronomicon_dre","nbt":"{PotEnergy:0.0f}"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"ee10ff53-c726-4f5f-bb00-10a9a904af2f","name":"The Wild Side","description":"Craft up a Wildwood Chunk. When used on a Termasect Spawner, it will summon the Termasect, a 1050 health flying ranged boss. Note that this will not remove the spawner, so you can use the same location multiple times - just be sure not to break it!","x":124,"y":134,"icon":{"id":"divinerpg:wildwood_chunk"},"prerequisites":["42b89bf1-e69c-4d2a-8fce-16f8e5562c86"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:wildwood_chunk"}}]}],"commandrewards":[]},{"uuid":"59794db5-69a6-41f3-aaaf-4061cd39b556","name":"EssENce oF madnESS","description":"Rend them down, get a Dreadlands Essence.","x":57,"y":111,"icon":{"id":"abyssalcraft:essence","damage":1},"prerequisites":["96c29de3-0058-4204-bff1-6d5ce3d4a87a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:essence","damage":1}}]}],"commandrewards":[]},{"uuid":"f5800c56-0676-44d4-bfc4-d6ca2b571b97","name":"Heart of the Wilds","description":"I\u0027m sure you\u0027ve got the hang of it by now. Just get the heart.","x":111,"y":111,"icon":{"id":"divinerpg:wildwood_heart"},"prerequisites":["ee10ff53-c726-4f5f-bb00-10a9a904af2f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:wildwood_heart"},"required":5}]}],"commandrewards":[]},{"uuid":"66b4827a-617f-4395-8eb1-cf673a7ff4b1","name":"BHWOOOOOOOOOHNNNNNN","description":"The first multiboss of DivineRPG, The Ayeraco Horde is 5 boss-like creatures, all spawned in the End at the same time by the Horde Horn.","x":44,"y":66,"icon":{"id":"divinerpg:horde_horn"},"prerequisites":["09238052-57a7-4ce7-b401-6f71b3f48385"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:horde_horn"}}]}],"commandrewards":[]},{"uuid":"2fd2b630-37ca-4d96-827a-65721386b98e","name":"Time of what now?","description":"The first Boss of DivineRPG, The Ancient Entity is powerful melee boss. Spawned in the Overworld by Right Clicking with the Mysterious Clock.","x":43,"y":22,"icon":{"id":"divinerpg:mysterious_clock"},"prerequisites":["09238052-57a7-4ce7-b401-6f71b3f48385"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:mysterious_clock"}}]}],"commandrewards":[]},{"uuid":"26ec72d7-47d9-40b0-a700-7a7eada154cd","name":"The last tick of light","description":"The Twilight Clock is used to light portals for the DivineRPG dimensions of: Eden, Wildwood, Apalachia, Skythern, and Mortum.\nUsed like Flint and Steel.","x":98,"y":21,"icon":{"id":"divinerpg:twilight_clock"},"prerequisites":["d491c34e-9689-4edb-8cc4-c4f60e61dc8b"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:twilight_clock"}}]}],"commandrewards":[]},{"uuid":"316fd1f3-c93b-4185-9cf3-3d6109800bf2","name":"Necronominominominomicon","description":"Using your Abyssal Statues, craft the Necronomicon, the guidebook to madness.\n\nWhen holding the Necronomicon near Abyssal Statues, potential energy will burst out of the statues and into the book.\nNOTE: The destructive effects have been removed, and it is now entirely safe.\n\nTo find Shadow Gems and Shadow Fragments, visit a Darklands Plains, Hills or Forest biome at night. Capture a Shadow Beast or Shadow Creature and Powered Spawn them for more.","x":236,"y":66,"icon":{"id":"abyssalcraft:necronomicon","nbt":"{PotEnergy:0.0f}"},"prerequisites":["21f866b7-8f89-446e-8c3b-de94fc312c84"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:necronomicon","nbt":"{PotEnergy:0.0f}"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"fe590951-40c3-47f2-95fe-b7c015a13de1","name":"On Questioning Sanity","description":"I\u0027m not going insane... am I? Who was that man with the shadowed face? What was that sound from my neighbor\u0027s attic? What leaves those scars on my door? What are those eyes that aren\u0027t eyes that move and writhe I see when I dream? Shoggoths aren\u0027t real... right?","x":223,"y":44,"icon":{"id":"abyssalcraft:shoggothflesh"},"prerequisites":["ed141421-b838-47d3-812d-90ac8c0e4e0a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:shoggothflesh"},"required":7}]}],"reward":[{"id":"abyssalcraft:shoggothflesh","amount":13}],"commandrewards":[]},{"uuid":"35671644-7659-4561-a0c8-5a139bd3da5a","name":"Eden3","description":"asd","x":194,"y":45,"icon":{"id":"contenttweaker:unholy_essence"},"prerequisites":["3000b420-ec57-4d38-b6bf-dc4fd35d9847"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:unholy_essence"}}]}],"commandrewards":[]},{"uuid":"580eaf99-aea2-4422-a57d-0a82a3e9f2c8","name":"Framing Black Iron","description":"Craft a Black Iron Frame!\n\n\nYou\u0027re totally going to use it for lighting.","x":278,"y":42,"icon":{"id":"extendedcrafting:frame"},"prerequisites":["b3663587-c352-476d-ab4e-8f695a47bcf0"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:frame"}}]}],"commandrewards":[]},{"uuid":"d4b34ab4-c2b7-4953-a7b9-e1146fa62021","name":"To the Lair of the Beast","description":"Scattered around the world you will find Shoggoth Lairs, which you will need to mine up for Monolith Stone to progress.\nThese lairs are often found in more damp areas, like a swamp or a river.\nIf you don\u0027t seem to find enough, you can also craft them.","x":250,"y":43,"icon":{"id":"abyssalcraft:stone","damage":7},"prerequisites":["09238052-57a7-4ce7-b401-6f71b3f48385"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:stone","damage":7},"required":4}]}],"commandrewards":[]},{"uuid":"4a7f8336-1a2a-4bba-88e3-1331b00bbdc9","name":"Not your father\u0027s stone","description":"Pour Liquid Antimatter (found underground in Coralium Infested Swamps) on top of Liquid Coralium (found in the Abyssal Wastelands), and mine up 10 of the Coralium Stone that results from this.","x":265,"y":156,"icon":{"id":"abyssalcraft:stone","damage":4},"prerequisites":["d4bef1e3-3628-415f-9cad-a6f0248356ed"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:stone","damage":4},"required":10}]}],"commandrewards":[]},{"uuid":"ac9ef5cb-a475-4141-a9c5-975b44ed8458","name":"Tear \u0027Em","description":"Now that you\u0027ve beaten The Ayeraco Horde, tear off their wings.","x":70,"y":66,"icon":{"id":"contenttweaker:ayeraco_wing"},"prerequisites":["66b4827a-617f-4395-8eb1-cf673a7ff4b1"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:ayeraco_wing"},"required":4}]}],"commandrewards":[]},{"uuid":"ec265c0a-e194-4df0-b669-5867310a0380","name":"Welcome to paradise","description":"The world is a wonderful yellow shade. I wonder how much your eyes hurt?","x":110,"y":44,"icon":{"id":"divinerpg:eden_grass"},"prerequisites":["cad6a315-bf1e-4ea6-ae42-9a786b9b9c2e","26ec72d7-47d9-40b0-a700-7a7eada154cd"],"tasks":[{"type":"LOCATION","locations":[{"name":"New","icon":{"id":"divinerpg:eden_grass"},"x":0,"y":0,"z":0,"dim":420,"radius":-1}]}],"commandrewards":[]},{"uuid":"f561fa84-f66c-4488-aa4e-2dc9f01b6d51","name":"EpiGEMetics","description":"Most notable for being able to make the Shard of Oblivion, the Transmutation Gem is a 10-use crafting item.","x":196,"y":89,"icon":{"id":"abyssalcraft:transmutationgem"},"prerequisites":["bed07e75-c03c-4fe4-a0c0-a4612b01502f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:transmutationgem"}}]}],"commandrewards":[]},{"uuid":"1ce2bdc1-ea0f-454f-85cb-1556fa81b633","name":"8R1CK5","description":"Carefully placing 4 Coralium Bricks around a Monolith Stone will give you Coralium Bricks. Make 10 of them.","x":277,"y":134,"icon":{"id":"abyssalcraft:cstonebrick"},"prerequisites":["4a7f8336-1a2a-4bba-88e3-1331b00bbdc9"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:cstonebrick"},"required":10}]}],"commandrewards":[]},{"uuid":"1a8dda32-b407-4ef2-b465-40309c3c9a6f","name":"From me to you, with magic","description":"The Transmutor is a furnace style machine, requiring unique fuel and transmuting one item into another at a slow pace.","x":252,"y":134,"icon":{"id":"abyssalcraft:transmutator"},"prerequisites":["abb3710e-718b-4a79-bd64-5a7b8cb85fce","1ce2bdc1-ea0f-454f-85cb-1556fa81b633"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:transmutator"}}]}],"commandrewards":[]},{"uuid":"b3663587-c352-476d-ab4e-8f695a47bcf0","name":"Extendingot","description":"Black Iron Ingots are used for almost everything Extended Crafting. Craft 4 to get started!","x":292,"y":20,"icon":{"id":"extendedcrafting:material"},"prerequisites":["09238052-57a7-4ce7-b401-6f71b3f48385"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"extendedcrafting:material"},"required":4}]}],"commandrewards":[]},{"uuid":"c6a376eb-9dbb-4d81-bd4d-05bb52e52a36","name":"Why is everything infused?","description":"Mine up the Dreadlands Infused Powerstone found where you would find the End Portal in a normal Stronghold.","x":171,"y":135,"icon":{"id":"abyssalcraft:psdl"},"prerequisites":["d3646e97-5744-406f-a3e0-1553a609c7c8","6b109277-53fc-4d7e-bd02-df753b2509dc"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:psdl"}}]}],"commandrewards":[]},{"uuid":"14916015-efc6-49b4-b2ea-20099743498e","name":"Wasteland Potential","description":"Even better than the overworld Potential Energy blocks.","x":291,"y":111,"icon":{"id":"abyssalcraft:tieredenergypedestal","damage":1,"nbt":"{PotEnergy:0.0f}"},"prerequisites":["1ce2bdc1-ea0f-454f-85cb-1556fa81b633","f6d45926-e80d-4006-9b63-c832842de910"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:tieredenergycollector","damage":1,"nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:tieredenergyrelay","damage":1,"nbt":"{PotEnergy:0.0f}"}},{"item":{"id":"abyssalcraft:tieredenergypedestal","damage":1,"nbt":"{PotEnergy:0.0f}"}}]}],"commandrewards":[]},{"uuid":"ed141421-b838-47d3-812d-90ac8c0e4e0a","name":"Powerful Cans","description":"Empower Canola Seeds, and then toss them into Crystallized Oil in an In-World Fluid Crafting operation.","x":237,"y":20,"icon":{"id":"actuallyadditions:item_misc","damage":24},"prerequisites":["28db9b12-0889-488a-9958-239d289c4e8a","d301cf69-f27a-480b-b8a1-809efca13b80"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"actuallyadditions:item_misc","damage":24}},{"item":{"id":"forge:bucketfilled","nbt":"{FluidName:\"empoweredoil\",Amount:1000}"}}]}],"commandrewards":[]},{"uuid":"ec5f417a-0c41-45f8-8fb4-3659c5ecfc41","name":"From their flesh","description":"Hold Right click while looking at an Abyssal mob to rend it and generate Energy based on the type of mob. When you reach the cap, your Staff will helpfully convert that into an essence item based on what you were rending.","x":252,"y":179,"icon":{"id":"abyssalcraft:drainstaff"},"prerequisites":["d4bef1e3-3628-415f-9cad-a6f0248356ed"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:drainstaff"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"b2d5a56e-b06b-42bb-963a-06bc37571d65","name":"Shattered into Something","description":"Combining 4 Shards of Oblivion and 4 fully powered Vibrant Capacitor Banks into an Active Ender Core (Advanced), at the cost of 5000 Potential Energy and the sacrifice of an animal will gain you the Oblivion Catalyst.\n\nAlso multiple headaches and visions of eldrich gods. Don\u0027t worry about those.","x":238,"y":112,"icon":{"id":"abyssalcraft:oc"},"prerequisites":["3f648780-2276-4535-be95-0764846bc298"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:oc"}}]}],"commandrewards":[]},{"uuid":"fbb1f03f-f1d8-45d1-9e6f-551f0d33fdac","name":"Ain\u0027t no Ender \"Dragon\"","description":"Using the full power of your recently upgraded Necronomicon, summon and beat Asorah, The Fallen.","x":171,"y":179,"icon":{"id":"abyssalcraft:eoa"},"prerequisites":["6d56a86a-7e19-4acd-a3d1-54f2f865fa2e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:eoa"}}]}],"commandrewards":[]},{"uuid":"33baf8e7-2951-46e2-836e-774f828e4e2b","name":"Beating heart of paradise","description":"After killing the Sunstorm, make sure to surgically remove its heart.\n\n\nAll you need is love!","x":138,"y":88,"icon":{"id":"divinerpg:eden_heart"},"prerequisites":["24fc48cc-99e0-41d3-a4a4-093157dfaebc"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:eden_heart"},"required":5}]}],"commandrewards":[]},{"uuid":"38e9d09e-a608-4d34-9ac1-452a66c7528d","name":"Flay their bodies","description":"The Dreadlands Staff of Rending generates 3 Energy per rend.\n\nNote that your held Energy will be lost when upgrading your Staff.","x":31,"y":112,"icon":{"id":"abyssalcraft:drainstaff","damage":2},"prerequisites":["fe35df9e-fad3-49a6-a20c-5f1f934ed6b6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:drainstaff","damage":2},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"6b109277-53fc-4d7e-bd02-df753b2509dc","name":"Pretty Powerful Pickaxe","description":"Many things in Abyssalcraft require a high mining level. The Refined Coralium Pickaxe provides a harvest level 5 pickaxe, which is required for the next quest, the Dreadlands Infused Powerstone.","x":211,"y":157,"icon":{"id":"abyssalcraft:corpick"},"prerequisites":["abb3710e-718b-4a79-bd64-5a7b8cb85fce"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:corpick"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"15771283-477a-44ca-9e9a-a0824ab3b003","name":"And on his neck","description":"Craft a Dread Crystal, infused with blood, craft it quickly \u0027fore he comes!","x":41,"y":183,"bigicon":true,"icon":{"id":"contenttweaker:dread_crystal"},"prerequisites":["fe35df9e-fad3-49a6-a20c-5f1f934ed6b6"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:dread_crystal"}}]}],"commandrewards":[]},{"uuid":"eca85b4f-b533-45f9-aedf-1ee61893c8f7","name":"Eden1","description":"Eden dungeon stuff","x":125,"y":23,"prerequisites":["ec265c0a-e194-4df0-b669-5867310a0380"],"commandrewards":[]},{"uuid":"e97dd043-3dc3-4f41-a250-03ebcd9ca8eb","name":"And around, his guards","description":"Kill some Dreadguards and get their Dreaded Shards of Abyssalnite, then transmute them into Dreadium Ingots.\n\nYou\u0027ll want Fire Resistance.","x":69,"y":135,"icon":{"id":"abyssalcraft:dreadiumingot"},"prerequisites":["96c29de3-0058-4204-bff1-6d5ce3d4a87a"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:dreadshard"},"required":4},{"item":{"id":"abyssalcraft:dreadiumingot"},"required":4}]}],"commandrewards":[]},{"uuid":"bed07e75-c03c-4fe4-a0c0-a4612b01502f","name":"Plauge \u003e Silverfish","description":"Craft up 4 Coralium Infused Stone and smelt them down into 4 Coralium Pearls. These will be used to craft a large number of things.","x":223,"y":89,"icon":{"id":"abyssalcraft:coraliumstone"},"prerequisites":["316fd1f3-c93b-4185-9cf3-3d6109800bf2"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:coraliumstone"},"required":4},{"item":{"id":"abyssalcraft:cpearl"},"required":4}]}],"commandrewards":[]},{"uuid":"75abe28e-c4f4-4afc-b8d2-607d3fb197c1","name":"To their bone","description":"The Abyssal Wastelands Staff of Rending generates 2 Energy per rend instead of just 1.\n\nNote that your held Energy will be lost when upgrading your Staff.","x":184,"y":157,"icon":{"id":"abyssalcraft:drainstaff","damage":1},"prerequisites":["6d56a86a-7e19-4acd-a3d1-54f2f865fa2e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:drainstaff","damage":1},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"cad6a315-bf1e-4ea6-ae42-9a786b9b9c2e","name":"Stick \u0027Em in a stone","description":"Build it like a nether portal and light it with The Twilight Clock.","x":84,"y":44,"icon":{"id":"divinerpg:divine_rock"},"prerequisites":["f04f1470-8a10-4773-a02e-826bd63d995f","27aa9d23-c1ed-4caa-b50a-18fad1b29f82","ac9ef5cb-a475-4141-a9c5-975b44ed8458"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:divine_rock"},"required":14}]}],"commandrewards":[]},{"uuid":"24fc48cc-99e0-41d3-a4a4-093157dfaebc","name":"A little bite of paradise","description":"Craft up an Eden Chunk. When used on a Sunstorm Spawner, it will summon the Sunstorm, a 1000 health ranged boss. Note that this will not remove the spawner, so you can use the same location multiple times - just be sure not to break it!","x":124,"y":66,"icon":{"id":"divinerpg:eden_chunk"},"prerequisites":["ec265c0a-e194-4df0-b669-5867310a0380"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"divinerpg:eden_chunk"}}]}],"commandrewards":[]},{"uuid":"f04f1470-8a10-4773-a02e-826bd63d995f","name":"Break \u0027Em","description":"Now that you\u0027ve killed The Ancient Entity, break off its legs.","x":71,"y":22,"icon":{"id":"contenttweaker:ancient_leg"},"prerequisites":["2fd2b630-37ca-4d96-827a-65721386b98e"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"contenttweaker:ancient_leg"},"required":2}]}],"commandrewards":[]},{"uuid":"96c29de3-0058-4204-bff1-6d5ce3d4a87a","name":"And his name, Dread","description":"Asorah\u0027s Dreaded Gateway Key will give you access to the Dreadlands, but only if used in the Abyssal Wastelands.","x":84,"y":111,"icon":{"id":"abyssalcraft:gatewaykeydl"},"prerequisites":["f5800c56-0676-44d4-bfc4-d6ca2b571b97","ffe8b552-43fe-4090-b287-73cf6830af9c"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"abyssalcraft:gatewaykeydl"},"precision":"NBT_FUZZY"}]}],"commandrewards":[]},{"uuid":"0da5b5ce-1c44-46c4-ac98-2667c4e9ed03","name":"It\u0027s Dock O\u0027Clock","description":"Craft a Docking Station! This machine lets you place your Dank Nulls on the ground, and lets you use them as a container. The Emerald (Mk. VI) Dank Null can be used as a 54-slot Black Hole Unit this way!","x":98,"y":87,"icon":{"id":"danknull:danknull_dock"},"prerequisites":["ee10ff53-c726-4f5f-bb00-10a9a904af2f"],"tasks":[{"type":"DETECT","items":[{"item":{"id":"danknull:danknull_dock"}}]}],"commandrewards":[]}],"reputationBar":[]}
+{
+  "name": "Into the Abyss",
+  "description": " Into the Abyss\nFight 3 bosses from DivineRPG, venture into Eden and the Wildwoods, gain 5x5 crafting from Extended Crafting, and go insane with AbyssalCraft.",
+  "quests": [
+    {
+      "uuid": "6d56a86a-7e19-4acd-a3d1-54f2f865fa2e",
+      "name": "= Necronomicon + 1",
+      "description": "Using the various materials you've gathered so far, upgrade your Necronomicon to its Abyssal Wastelands version. This will unlock new chapters and allow it to store more Potential Energy.",
+      "x": 199,
+      "y": 179,
+      "icon": {
+        "id": "abyssalcraft:necronomicon_cor",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "f06fd67f-2015-468a-a316-101a10cc4ae7"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:necronomicon_cor",
+                "nbt": "{PotEnergy:0.0f}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d180599c-acb0-4813-8609-de641b50b20a",
+      "name": "Don't like where this is going.",
+      "description": "Its a 5x5 crafting table, oh so full of joy, why don't you try it - this is no sinister ploy!",
+      "x": 276,
+      "y": 88,
+      "icon": {
+        "id": "extendedcrafting:table_advanced"
+      },
+      "prerequisites": [
+        "9f4bba32-3b6c-481a-91b4-2ba3cd3ef439"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:table_advanced"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "27aa9d23-c1ed-4caa-b50a-18fad1b29f82",
+      "name": "Rip 'Em",
+      "description": "Now that you've killed The Watcher, rip out its eye.",
+      "x": 57,
+      "y": 44,
+      "icon": {
+        "id": "contenttweaker:eye_of_the_watcher"
+      },
+      "prerequisites": [
+        "03aa404d-5271-4e11-9136-43a27318d09b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:eye_of_the_watcher"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "03aa404d-5271-4e11-9136-43a27318d09b",
+      "name": "That ain't Batman!",
+      "description": "The second Boss of DivineRPG, The Watcher is powerful flying boss that is spawned in the Nether by Right Clicking with the Call of the Watcher.",
+      "x": 30,
+      "y": 44,
+      "icon": {
+        "id": "divinerpg:call_of_the_watcher"
+      },
+      "prerequisites": [
+        "09238052-57a7-4ce7-b401-6f71b3f48385"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:call_of_the_watcher"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f6d45926-e80d-4006-9b63-c832842de910",
+      "name": "Overworld Potential",
+      "description": "Simply better versions of the normal Potential Energy manipulators.",
+      "x": 264,
+      "y": 111,
+      "icon": {
+        "id": "abyssalcraft:tieredenergypedestal",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "11fbf3a4-b6dd-47b1-b862-7d1c4f5bd227",
+        "1a8dda32-b407-4ef2-b465-40309c3c9a6f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergycollector",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergyrelay",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergypedestal",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d4bef1e3-3628-415f-9cad-a6f0248356ed",
+      "name": "Into the boring plain",
+      "description": "After crafting the gateway key, right clicking on the ground with it will generate a portal that will take you to the Abyssal Wasteland.",
+      "x": 238,
+      "y": 156,
+      "icon": {
+        "id": "abyssalcraft:gatewaykey"
+      },
+      "prerequisites": [
+        "b2d5a56e-b06b-42bb-963a-06bc37571d65"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:gatewaykey"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "42b89bf1-e69c-4d2a-8fce-16f8e5562c86",
+      "name": "Enter: Wildwood",
+      "description": "Craft up 14 Eden Blocks. Make a Nether Portal shape out of them. Light with the Twilight Clock.\nWelcome to the Wildwood.",
+      "x": 138,
+      "y": 159,
+      "icon": {
+        "id": "divinerpg:eden_block"
+      },
+      "prerequisites": [
+        "c6a376eb-9dbb-4d81-bd4d-05bb52e52a36",
+        "fbb1f03f-f1d8-45d1-9e6f-551f0d33fdac",
+        "33baf8e7-2951-46e2-836e-774f828e4e2b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:eden_block"
+              },
+              "required": 14
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "a3761dea-e19a-4474-864f-daa1503bc83e",
+      "name": "Wildwood1",
+      "description": "Wildwood dungeon stuff",
+      "x": 110,
+      "y": 159,
+      "prerequisites": [
+        "42b89bf1-e69c-4d2a-8fce-16f8e5562c86"
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "28db9b12-0889-488a-9958-239d289c4e8a",
+      "name": "Can Oh LAAAAAAAAAAAAAA",
+      "description": "Atomically Reconstruct Canola Seeds, and then toss it into Refined Canola in an In-World Fluid Crafting operation.",
+      "x": 263,
+      "y": 20,
+      "icon": {
+        "id": "actuallyadditions:item_misc",
+        "damage": 23
+      },
+      "prerequisites": [
+        "2c095134-dfb4-4799-9abf-be511bf69b2a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "actuallyadditions:item_misc",
+                "damage": 23
+              }
+            },
+            {
+              "item": {
+                "id": "forge:bucketfilled",
+                "nbt": "{FluidName:\"crystaloil\",Amount:1000}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9f4bba32-3b6c-481a-91b4-2ba3cd3ef439",
+      "name": "Don't I already have this?",
+      "description": "Its a 3x3 crafting table that won't let you craft anything new, ask your doctor if \"Basic Crafting Table\" is right for you.",
+      "x": 291,
+      "y": 65,
+      "icon": {
+        "id": "extendedcrafting:table_basic"
+      },
+      "prerequisites": [
+        "580eaf99-aea2-4422-a57d-0a82a3e9f2c8"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:table_basic"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3000b420-ec57-4d38-b6bf-dc4fd35d9847",
+      "name": "Eden2",
+      "description": "Eden dungeon stuff",
+      "x": 138,
+      "y": 45,
+      "prerequisites": [
+        "eca85b4f-b533-45f9-aedf-1ee61893c8f7"
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3f648780-2276-4535-be95-0764846bc298",
+      "name": "Sliver of Nothing",
+      "description": "The Shard of Oblivion captures just a bit of madness within its glowing red surface. Sometimes you can see the madness writhe.\n\n\nMake 4 of them.",
+      "x": 210,
+      "y": 112,
+      "icon": {
+        "id": "abyssalcraft:oblivionshard"
+      },
+      "prerequisites": [
+        "f561fa84-f66c-4488-aa4e-2dc9f01b6d51"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:oblivionshard"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fef0f016-85ab-4933-b7fc-30bf4bf94961",
+      "name": "Wildwood2",
+      "description": "Wildwood Dungeon stuff",
+      "x": 82,
+      "y": 159,
+      "prerequisites": [
+        "a3761dea-e19a-4474-864f-daa1503bc83e"
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "abb3710e-718b-4a79-bd64-5a7b8cb85fce",
+      "name": "Resident Ingot",
+      "description": "After alloying up a Chunk of Coralium, smelt it down into two Refined Coralium Ingots.",
+      "x": 223,
+      "y": 134,
+      "icon": {
+        "id": "abyssalcraft:cingot"
+      },
+      "prerequisites": [
+        "d4bef1e3-3628-415f-9cad-a6f0248356ed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:cchunk"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:cingot"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f06fd67f-2015-468a-a316-101a10cc4ae7",
+      "name": "Essense of Madness",
+      "description": "Rend them down, get an Abyssal Wasteland Essence.",
+      "x": 226,
+      "y": 179,
+      "icon": {
+        "id": "abyssalcraft:essence"
+      },
+      "prerequisites": [
+        "ec5f417a-0c41-45f8-8fb4-3659c5ecfc41"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:essence"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d3646e97-5744-406f-a3e0-1553a609c7c8",
+      "name": "Really? Again?",
+      "description": "The Abyssal Stronghold that these lead too functions similarly to the normal Stronghold in the overworld, and these special eyes will lead you there. Make 6 of them.\n\nNote that the reward can only be gained through a harvest level 5 pickaxe, so you will need to find a way to get that.",
+      "x": 197,
+      "y": 135,
+      "icon": {
+        "id": "abyssalcraft:powerstonetracker"
+      },
+      "prerequisites": [
+        "d4bef1e3-3628-415f-9cad-a6f0248356ed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:powerstonetracker"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ffe8b552-43fe-4090-b287-73cf6830af9c",
+      "name": "Wildwood3",
+      "x": 96,
+      "y": 135,
+      "icon": {
+        "id": "contenttweaker:feather_of_the_wild_woods"
+      },
+      "prerequisites": [
+        "fef0f016-85ab-4933-b7fc-30bf4bf94961"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:feather_of_the_wild_woods"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "11fbf3a4-b6dd-47b1-b862-7d1c4f5bd227",
+      "name": "Pure Potential",
+      "description": "Potential Energy manipulation. Both useless without a Necronomicon AND actually explained there.\nCheck Potential Energy/Special Materials.",
+      "x": 250,
+      "y": 89,
+      "icon": {
+        "id": "abyssalcraft:energypedestal",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "bed07e75-c03c-4fe4-a0c0-a4612b01502f",
+        "82c6546b-b76c-4950-9534-7dfb728cec67",
+        "d180599c-acb0-4813-8609-de641b50b20a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:energypedestal",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:energycollector",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:energyrelay",
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "21f866b7-8f89-446e-8c3b-de94fc312c84",
+      "name": "Gotta catch em all",
+      "description": "Gather up one of each of the Abyssal Statues - check to be sure you're making the real ones and not just the decorative ones.\n\nOnce you have the Necronomicon, the Potential Energy chapter will be of use, as it describes it with pictures!",
+      "x": 209,
+      "y": 66,
+      "icon": {
+        "id": "abyssalcraft:statue",
+        "damage": 1
+      },
+      "prerequisites": [
+        "35671644-7659-4561-a0c8-5a139bd3da5a",
+        "fe590951-40c3-47f2-95fe-b7c015a13de1"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:statue"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 6
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:statue",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "82c6546b-b76c-4950-9534-7dfb728cec67",
+      "name": "Potential Pillars",
+      "description": "Make 4 Monolith Stone Pillars. These increase the range your statues can transmit Potential Energy from.",
+      "x": 263,
+      "y": 65,
+      "icon": {
+        "id": "abyssalcraft:energycollector",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "d4b34ab4-c2b7-4953-a7b9-e1146fa62021"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:monolithpillar"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fe35df9e-fad3-49a6-a20c-5f1f934ed6b6",
+      "name": "Necronomicon += 1",
+      "description": "Using the various materials you've gathered so far, upgrade your Necronomicon to its Dreadlands version. This will unlock new chapters and allow it to store more Potential Energy.",
+      "x": 43,
+      "y": 135,
+      "icon": {
+        "id": "abyssalcraft:necronomicon_dre",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "59794db5-69a6-41f3-aaaf-4061cd39b556",
+        "e97dd043-3dc3-4f41-a250-03ebcd9ca8eb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:necronomicon_dre",
+                "nbt": "{PotEnergy:0.0f}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ee10ff53-c726-4f5f-bb00-10a9a904af2f",
+      "name": "The Wild Side",
+      "description": "Craft up a Wildwood Chunk. When used on a Termasect Spawner, it will summon the Termasect, a 1050 health flying ranged boss. Note that this will not remove the spawner, so you can use the same location multiple times - just be sure not to break it!",
+      "x": 124,
+      "y": 134,
+      "icon": {
+        "id": "divinerpg:wildwood_chunk"
+      },
+      "prerequisites": [
+        "42b89bf1-e69c-4d2a-8fce-16f8e5562c86"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:wildwood_chunk"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "59794db5-69a6-41f3-aaaf-4061cd39b556",
+      "name": "EssENce oF madnESS",
+      "description": "Rend them down, get a Dreadlands Essence.",
+      "x": 57,
+      "y": 111,
+      "icon": {
+        "id": "abyssalcraft:essence",
+        "damage": 1
+      },
+      "prerequisites": [
+        "96c29de3-0058-4204-bff1-6d5ce3d4a87a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:essence",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f5800c56-0676-44d4-bfc4-d6ca2b571b97",
+      "name": "Heart of the Wilds",
+      "description": "I'm sure you've got the hang of it by now. Just get the heart.",
+      "x": 111,
+      "y": 111,
+      "icon": {
+        "id": "divinerpg:wildwood_heart"
+      },
+      "prerequisites": [
+        "ee10ff53-c726-4f5f-bb00-10a9a904af2f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:wildwood_heart"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "66b4827a-617f-4395-8eb1-cf673a7ff4b1",
+      "name": "BHWOOOOOOOOOHNNNNNN",
+      "description": "The first multiboss of DivineRPG, The Ayeraco Horde is 5 boss-like creatures, all spawned in the End at the same time by the Horde Horn.",
+      "x": 44,
+      "y": 66,
+      "icon": {
+        "id": "divinerpg:horde_horn"
+      },
+      "prerequisites": [
+        "09238052-57a7-4ce7-b401-6f71b3f48385"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:horde_horn"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2fd2b630-37ca-4d96-827a-65721386b98e",
+      "name": "Time of what now?",
+      "description": "The first Boss of DivineRPG, The Ancient Entity is powerful melee boss. Spawned in the Overworld by Right Clicking with the Mysterious Clock.",
+      "x": 43,
+      "y": 22,
+      "icon": {
+        "id": "divinerpg:mysterious_clock"
+      },
+      "prerequisites": [
+        "09238052-57a7-4ce7-b401-6f71b3f48385"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:mysterious_clock"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "26ec72d7-47d9-40b0-a700-7a7eada154cd",
+      "name": "The last tick of light",
+      "description": "The Twilight Clock is used to light portals for the DivineRPG dimensions of: Eden, Wildwood, Apalachia, Skythern, and Mortum.\nUsed like Flint and Steel.",
+      "x": 98,
+      "y": 21,
+      "icon": {
+        "id": "divinerpg:twilight_clock"
+      },
+      "prerequisites": [
+        "d491c34e-9689-4edb-8cc4-c4f60e61dc8b"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:twilight_clock"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "316fd1f3-c93b-4185-9cf3-3d6109800bf2",
+      "name": "Necronominominominomicon",
+      "description": "Using your Abyssal Statues, craft the Necronomicon, the guidebook to madness.\n\nWhen holding the Necronomicon near Abyssal Statues, potential energy will burst out of the statues and into the book.\nNOTE: The destructive effects have been removed, and it is now entirely safe.\n\nTo find Shadow Gems and Shadow Fragments, visit a Darklands Plains, Hills or Forest biome at night. Capture a Shadow Beast or Shadow Creature and Powered Spawn them for more.",
+      "x": 236,
+      "y": 66,
+      "icon": {
+        "id": "abyssalcraft:necronomicon",
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "21f866b7-8f89-446e-8c3b-de94fc312c84"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:necronomicon",
+                "nbt": "{PotEnergy:0.0f}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fe590951-40c3-47f2-95fe-b7c015a13de1",
+      "name": "On Questioning Sanity",
+      "description": "I'm not going insane... am I? Who was that man with the shadowed face? What was that sound from my neighbor's attic? What leaves those scars on my door? What are those eyes that aren't eyes that move and writhe I see when I dream? Shoggoths aren't real... right?",
+      "x": 223,
+      "y": 44,
+      "icon": {
+        "id": "abyssalcraft:shoggothflesh"
+      },
+      "prerequisites": [
+        "ed141421-b838-47d3-812d-90ac8c0e4e0a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:shoggothflesh"
+              },
+              "required": 7
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "abyssalcraft:shoggothflesh",
+          "amount": 13
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "35671644-7659-4561-a0c8-5a139bd3da5a",
+      "name": "Eden3",
+      "description": "asd",
+      "x": 194,
+      "y": 45,
+      "icon": {
+        "id": "contenttweaker:unholy_essence"
+      },
+      "prerequisites": [
+        "3000b420-ec57-4d38-b6bf-dc4fd35d9847"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:unholy_essence"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "580eaf99-aea2-4422-a57d-0a82a3e9f2c8",
+      "name": "Framing Black Iron",
+      "description": "Craft a Black Iron Frame!\n\n\nYou're totally going to use it for lighting.",
+      "x": 278,
+      "y": 42,
+      "icon": {
+        "id": "extendedcrafting:frame"
+      },
+      "prerequisites": [
+        "b3663587-c352-476d-ab4e-8f695a47bcf0"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:frame"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d4b34ab4-c2b7-4953-a7b9-e1146fa62021",
+      "name": "To the Lair of the Beast",
+      "description": "Scattered around the world you will find Shoggoth Lairs, which you will need to mine up for Monolith Stone to progress.\nThese lairs are often found in more damp areas, like a swamp or a river.\nIf you don't seem to find enough, you can also craft them.",
+      "x": 250,
+      "y": 43,
+      "icon": {
+        "id": "abyssalcraft:stone",
+        "damage": 7
+      },
+      "prerequisites": [
+        "09238052-57a7-4ce7-b401-6f71b3f48385"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:stone",
+                "damage": 7
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4a7f8336-1a2a-4bba-88e3-1331b00bbdc9",
+      "name": "Not your father's stone",
+      "description": "Pour Liquid Antimatter (found underground in Coralium Infested Swamps) on top of Liquid Coralium (found in the Abyssal Wastelands), and mine up 10 of the Coralium Stone that results from this.",
+      "x": 265,
+      "y": 156,
+      "icon": {
+        "id": "abyssalcraft:stone",
+        "damage": 4
+      },
+      "prerequisites": [
+        "d4bef1e3-3628-415f-9cad-a6f0248356ed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:stone",
+                "damage": 4
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ac9ef5cb-a475-4141-a9c5-975b44ed8458",
+      "name": "Tear 'Em",
+      "description": "Now that you've beaten The Ayeraco Horde, tear off their wings.",
+      "x": 70,
+      "y": 66,
+      "icon": {
+        "id": "contenttweaker:ayeraco_wing"
+      },
+      "prerequisites": [
+        "66b4827a-617f-4395-8eb1-cf673a7ff4b1"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:ayeraco_wing"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ec265c0a-e194-4df0-b669-5867310a0380",
+      "name": "Welcome to paradise",
+      "description": "The world is a wonderful yellow shade. I wonder how much your eyes hurt?",
+      "x": 110,
+      "y": 44,
+      "icon": {
+        "id": "divinerpg:eden_grass"
+      },
+      "prerequisites": [
+        "cad6a315-bf1e-4ea6-ae42-9a786b9b9c2e",
+        "26ec72d7-47d9-40b0-a700-7a7eada154cd"
+      ],
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "locations": [
+            {
+              "name": "New",
+              "icon": {
+                "id": "divinerpg:eden_grass"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": 420,
+              "radius": -1
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f561fa84-f66c-4488-aa4e-2dc9f01b6d51",
+      "name": "EpiGEMetics",
+      "description": "Most notable for being able to make the Shard of Oblivion, the Transmutation Gem is a 10-use crafting item.",
+      "x": 196,
+      "y": 89,
+      "icon": {
+        "id": "abyssalcraft:transmutationgem"
+      },
+      "prerequisites": [
+        "bed07e75-c03c-4fe4-a0c0-a4612b01502f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:transmutationgem"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1ce2bdc1-ea0f-454f-85cb-1556fa81b633",
+      "name": "8R1CK5",
+      "description": "Carefully placing 4 Coralium Bricks around a Monolith Stone will give you Coralium Bricks. Make 10 of them.",
+      "x": 277,
+      "y": 134,
+      "icon": {
+        "id": "abyssalcraft:cstonebrick"
+      },
+      "prerequisites": [
+        "4a7f8336-1a2a-4bba-88e3-1331b00bbdc9"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:cstonebrick"
+              },
+              "required": 10
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1a8dda32-b407-4ef2-b465-40309c3c9a6f",
+      "name": "From me to you, with magic",
+      "description": "The Transmutor is a furnace style machine, requiring unique fuel and transmuting one item into another at a slow pace.",
+      "x": 252,
+      "y": 134,
+      "icon": {
+        "id": "abyssalcraft:transmutator"
+      },
+      "prerequisites": [
+        "abb3710e-718b-4a79-bd64-5a7b8cb85fce",
+        "1ce2bdc1-ea0f-454f-85cb-1556fa81b633"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:transmutator"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b3663587-c352-476d-ab4e-8f695a47bcf0",
+      "name": "Extendingot",
+      "description": "Black Iron Ingots are used for almost everything Extended Crafting. Craft 4 to get started!",
+      "x": 292,
+      "y": 20,
+      "icon": {
+        "id": "extendedcrafting:material"
+      },
+      "prerequisites": [
+        "09238052-57a7-4ce7-b401-6f71b3f48385"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "extendedcrafting:material"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c6a376eb-9dbb-4d81-bd4d-05bb52e52a36",
+      "name": "Why is everything infused?",
+      "description": "Mine up the Dreadlands Infused Powerstone found where you would find the End Portal in a normal Stronghold.",
+      "x": 171,
+      "y": 135,
+      "icon": {
+        "id": "abyssalcraft:psdl"
+      },
+      "prerequisites": [
+        "d3646e97-5744-406f-a3e0-1553a609c7c8",
+        "6b109277-53fc-4d7e-bd02-df753b2509dc"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:psdl"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "14916015-efc6-49b4-b2ea-20099743498e",
+      "name": "Wasteland Potential",
+      "description": "Even better than the overworld Potential Energy blocks.",
+      "x": 291,
+      "y": 111,
+      "icon": {
+        "id": "abyssalcraft:tieredenergypedestal",
+        "damage": 1,
+        "nbt": "{PotEnergy:0.0f}"
+      },
+      "prerequisites": [
+        "1ce2bdc1-ea0f-454f-85cb-1556fa81b633",
+        "f6d45926-e80d-4006-9b63-c832842de910"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergycollector",
+                "damage": 1,
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergyrelay",
+                "damage": 1,
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:tieredenergypedestal",
+                "damage": 1,
+                "nbt": "{PotEnergy:0.0f}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ed141421-b838-47d3-812d-90ac8c0e4e0a",
+      "name": "Powerful Cans",
+      "description": "Empower Canola Seeds, and then toss them into Crystallized Oil in an In-World Fluid Crafting operation.",
+      "x": 237,
+      "y": 20,
+      "icon": {
+        "id": "actuallyadditions:item_misc",
+        "damage": 24
+      },
+      "prerequisites": [
+        "28db9b12-0889-488a-9958-239d289c4e8a",
+        "d301cf69-f27a-480b-b8a1-809efca13b80"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "actuallyadditions:item_misc",
+                "damage": 24
+              }
+            },
+            {
+              "item": {
+                "id": "forge:bucketfilled",
+                "nbt": "{FluidName:\"empoweredoil\",Amount:1000}"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ec5f417a-0c41-45f8-8fb4-3659c5ecfc41",
+      "name": "From their flesh",
+      "description": "Hold Right click while looking at an Abyssal mob to rend it and generate Energy based on the type of mob. When you reach the cap, your Staff will helpfully convert that into an essence item based on what you were rending.",
+      "x": 252,
+      "y": 179,
+      "icon": {
+        "id": "abyssalcraft:drainstaff"
+      },
+      "prerequisites": [
+        "d4bef1e3-3628-415f-9cad-a6f0248356ed"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:drainstaff"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b2d5a56e-b06b-42bb-963a-06bc37571d65",
+      "name": "Shattered into Something",
+      "description": "Combining 4 Shards of Oblivion and 4 fully powered Vibrant Capacitor Banks into an Active Ender Core (Advanced), at the cost of 5000 Potential Energy and the sacrifice of an animal will gain you the Oblivion Catalyst.\n\nAlso multiple headaches and visions of eldrich gods. Don't worry about those.",
+      "x": 238,
+      "y": 112,
+      "icon": {
+        "id": "abyssalcraft:oc"
+      },
+      "prerequisites": [
+        "3f648780-2276-4535-be95-0764846bc298"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:oc"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fbb1f03f-f1d8-45d1-9e6f-551f0d33fdac",
+      "name": "Ain't no Ender \"Dragon\"",
+      "description": "Using the full power of your recently upgraded Necronomicon, summon and beat Asorah, The Fallen.",
+      "x": 171,
+      "y": 179,
+      "icon": {
+        "id": "abyssalcraft:eoa"
+      },
+      "prerequisites": [
+        "6d56a86a-7e19-4acd-a3d1-54f2f865fa2e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:eoa"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "33baf8e7-2951-46e2-836e-774f828e4e2b",
+      "name": "Beating heart of paradise",
+      "description": "After killing the Sunstorm, make sure to surgically remove its heart.\n\n\nAll you need is love!",
+      "x": 138,
+      "y": 88,
+      "icon": {
+        "id": "divinerpg:eden_heart"
+      },
+      "prerequisites": [
+        "24fc48cc-99e0-41d3-a4a4-093157dfaebc"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:eden_heart"
+              },
+              "required": 5
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "38e9d09e-a608-4d34-9ac1-452a66c7528d",
+      "name": "Flay their bodies",
+      "description": "The Dreadlands Staff of Rending generates 3 Energy per rend.\n\nNote that your held Energy will be lost when upgrading your Staff.",
+      "x": 31,
+      "y": 112,
+      "icon": {
+        "id": "abyssalcraft:drainstaff",
+        "damage": 2
+      },
+      "prerequisites": [
+        "fe35df9e-fad3-49a6-a20c-5f1f934ed6b6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:drainstaff",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6b109277-53fc-4d7e-bd02-df753b2509dc",
+      "name": "Pretty Powerful Pickaxe",
+      "description": "Many things in Abyssalcraft require a high mining level. The Refined Coralium Pickaxe provides a harvest level 5 pickaxe, which is required for the next quest, the Dreadlands Infused Powerstone.",
+      "x": 211,
+      "y": 157,
+      "icon": {
+        "id": "abyssalcraft:corpick"
+      },
+      "prerequisites": [
+        "abb3710e-718b-4a79-bd64-5a7b8cb85fce"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:corpick"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "15771283-477a-44ca-9e9a-a0824ab3b003",
+      "name": "And on his neck",
+      "description": "Craft a Dread Crystal, infused with blood, craft it quickly 'fore he comes!",
+      "x": 41,
+      "y": 183,
+      "bigicon": true,
+      "icon": {
+        "id": "contenttweaker:dread_crystal"
+      },
+      "prerequisites": [
+        "fe35df9e-fad3-49a6-a20c-5f1f934ed6b6"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:dread_crystal"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "eca85b4f-b533-45f9-aedf-1ee61893c8f7",
+      "name": "Eden1",
+      "description": "Eden dungeon stuff",
+      "x": 125,
+      "y": 23,
+      "prerequisites": [
+        "ec265c0a-e194-4df0-b669-5867310a0380"
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e97dd043-3dc3-4f41-a250-03ebcd9ca8eb",
+      "name": "And around, his guards",
+      "description": "Kill some Dreadguards and get their Dreaded Shards of Abyssalnite, then transmute them into Dreadium Ingots.\n\nYou'll want Fire Resistance.",
+      "x": 69,
+      "y": 135,
+      "icon": {
+        "id": "abyssalcraft:dreadiumingot"
+      },
+      "prerequisites": [
+        "96c29de3-0058-4204-bff1-6d5ce3d4a87a"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:dreadshard"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:dreadiumingot"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "bed07e75-c03c-4fe4-a0c0-a4612b01502f",
+      "name": "Plauge > Silverfish",
+      "description": "Craft up 4 Coralium Infused Stone and smelt them down into 4 Coralium Pearls. These will be used to craft a large number of things.",
+      "x": 223,
+      "y": 89,
+      "icon": {
+        "id": "abyssalcraft:coraliumstone"
+      },
+      "prerequisites": [
+        "316fd1f3-c93b-4185-9cf3-3d6109800bf2"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:coraliumstone"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "abyssalcraft:cpearl"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "75abe28e-c4f4-4afc-b8d2-607d3fb197c1",
+      "name": "To their bone",
+      "description": "The Abyssal Wastelands Staff of Rending generates 2 Energy per rend instead of just 1.\n\nNote that your held Energy will be lost when upgrading your Staff.",
+      "x": 184,
+      "y": 157,
+      "icon": {
+        "id": "abyssalcraft:drainstaff",
+        "damage": 1
+      },
+      "prerequisites": [
+        "6d56a86a-7e19-4acd-a3d1-54f2f865fa2e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:drainstaff",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "cad6a315-bf1e-4ea6-ae42-9a786b9b9c2e",
+      "name": "Stick 'Em in a stone",
+      "description": "Build it like a nether portal and light it with The Twilight Clock.",
+      "x": 84,
+      "y": 44,
+      "icon": {
+        "id": "divinerpg:divine_rock"
+      },
+      "prerequisites": [
+        "f04f1470-8a10-4773-a02e-826bd63d995f",
+        "27aa9d23-c1ed-4caa-b50a-18fad1b29f82",
+        "ac9ef5cb-a475-4141-a9c5-975b44ed8458"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:divine_rock"
+              },
+              "required": 14
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "24fc48cc-99e0-41d3-a4a4-093157dfaebc",
+      "name": "A little bite of paradise",
+      "description": "Craft up an Eden Chunk. When used on a Sunstorm Spawner, it will summon the Sunstorm, a 1000 health ranged boss. Note that this will not remove the spawner, so you can use the same location multiple times - just be sure not to break it!",
+      "x": 124,
+      "y": 66,
+      "icon": {
+        "id": "divinerpg:eden_chunk"
+      },
+      "prerequisites": [
+        "ec265c0a-e194-4df0-b669-5867310a0380"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "divinerpg:eden_chunk"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f04f1470-8a10-4773-a02e-826bd63d995f",
+      "name": "Break 'Em",
+      "description": "Now that you've killed The Ancient Entity, break off its legs.",
+      "x": 71,
+      "y": 22,
+      "icon": {
+        "id": "contenttweaker:ancient_leg"
+      },
+      "prerequisites": [
+        "2fd2b630-37ca-4d96-827a-65721386b98e"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "contenttweaker:ancient_leg"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "96c29de3-0058-4204-bff1-6d5ce3d4a87a",
+      "name": "And his name, Dread",
+      "description": "Asorah's Dreaded Gateway Key will give you access to the Dreadlands, but only if used in the Abyssal Wastelands.",
+      "x": 84,
+      "y": 111,
+      "icon": {
+        "id": "abyssalcraft:gatewaykeydl"
+      },
+      "prerequisites": [
+        "f5800c56-0676-44d4-bfc4-d6ca2b571b97",
+        "ffe8b552-43fe-4090-b287-73cf6830af9c"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "abyssalcraft:gatewaykeydl"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0da5b5ce-1c44-46c4-ac98-2667c4e9ed03",
+      "name": "It's Dock O'Clock",
+      "description": "Craft a Docking Station! This machine lets you place your Dank Nulls on the ground, and lets you use them as a container. The Emerald (Mk. VI) Dank Null can be used as a 54-slot Black Hole Unit this way!",
+      "x": 98,
+      "y": 87,
+      "icon": {
+        "id": "danknull:danknull_dock"
+      },
+      "prerequisites": [
+        "ee10ff53-c726-4f5f-bb00-10a9a904af2f"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "danknull:danknull_dock"
+              }
+            }
+          ]
+        }
+      ],
+      "commandrewards": []
+    }
+  ],
+  "reputationBar": []
+}
