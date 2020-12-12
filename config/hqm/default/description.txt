@@ -8,14 +8,14 @@ In Divine Journey 2, you need to progress through all the available mods in orde
 
 To succeed in this pack, you need to have a good understanding of Modded Minecraft in general, or at least have played some other modpacks that give you a feel on how to autocraft, autoprocess, automate every aspect of any tech or magic mod, and so on.
 
-Don't be discouraged however, since along the way, you'll be exploring wonderous dimensions added by DivineRPG, Twilight Forest, Aether, Atum 2, AbyssalCraft, The Erebus, Galacticraft, and more. There is plenty of fun to be had with those, especially that you'll have access to them quite early on.
+Don't be discouraged however, since along the way, you'll be exploring wondrous dimensions added by DivineRPG, Twilight Forest, Aether, Atum 2, AbyssalCraft, The Erebus, Galacticraft, and more. There is plenty of fun to be had with those, especially that you'll have access to them quite early on.
 
 The main progression line consists of the following:
 
 1. Early Exploration with Tinkers' Tools and Totemic / Roots spells and gadgets.
 2. Tech Mods for all your automation needs.
 3. Magic Mods (in order): Blood Magic, EvilCraft, AbyssalCraft, Botania, Thaumcraft, Electroblob's Wizardry, Astral Sorcery, Bewitchment.
-4. Lategame OPness: Mystical Agriculture, RFTools Dimensions, Draconic Evolution, Alchemystry, Project E & Avaritia.
+4. Lategame OPness: Mystical Agriculture, RFTools Dimensions, Draconic Evolution, Alchemistry, Project E & Avaritia.
 
 Note: This pack is different from Divine Journey 1 in many aspects. If you want to play a port of Divine Journey 1 in 1.12.2, I highly suggest checking out Celestial Journey by unhook1.
 
