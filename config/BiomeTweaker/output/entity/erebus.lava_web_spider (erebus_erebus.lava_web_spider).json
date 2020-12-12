@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.lava_web_spider",
+  "Registry ID": "erebus:erebus.lava_web_spider",
+  "Class": "erebus.entity.EntityLavaWebSpider"
+}

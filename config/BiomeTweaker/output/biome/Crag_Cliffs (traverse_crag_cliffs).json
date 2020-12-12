@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DEAD",
-    "COLD"
+    "COLD",
+    "DEAD"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -88,12 +88,6 @@
     {
       "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityEvilWizard",
-      "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

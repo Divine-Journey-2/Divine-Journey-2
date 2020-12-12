@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.skythern_golem",
+  "Registry ID": "divinerpg:skythern_golem",
+  "Class": "divinerpg.objects.entities.entity.skythern.EntitySkythernGolem"
+}

@@ -10,6 +10,7 @@ import mods.enderio.SoulBinder;
 import mods.tconstruct.Casting;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
+import mods.thermalexpansion.Compactor;
 
 print("STARTING EnderIO.zs");
 
@@ -179,14 +180,18 @@ mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:11>);
 # Energized Bimetal Gear
 recipes.remove(<enderio:item_material:12>);
 recipes.addShaped(<enderio:item_material:12>, [[null,<enderio:item_alloy_ingot:1>,null],[<enderio:item_alloy_ingot:1>,<enderio:item_material:11>,<enderio:item_alloy_ingot:1>],[null,<enderio:item_alloy_ingot:1>,null]]);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:12>);
 
 # Vibrant Bimetal Gear
 recipes.remove(<enderio:item_material:13>);
 recipes.addShaped(<enderio:item_material:13>, [[null,<enderio:item_alloy_ingot:2>,null],[<enderio:item_alloy_ingot:2>,<enderio:item_material:12>,<enderio:item_alloy_ingot:2>],[null,<enderio:item_alloy_ingot:2>,null]]);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:13>);
 
 # Dark Bimetal Gear
 recipes.remove(<enderio:item_material:73>);
 recipes.addShaped(<enderio:item_material:73>, [[null,<enderio:item_alloy_ingot:6>,null],[<enderio:item_alloy_ingot:6>,<enderio:item_material:11>,<enderio:item_alloy_ingot:6>],[null,<enderio:item_alloy_ingot:6>,null]]);
+mods.thermalexpansion.Compactor.removeGearRecipe(<evilcraft:dark_gem> * 4);
+mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:73>);
 
 # Simple Powered Furnace
 recipes.remove(<enderio:block_simple_furnace>);
@@ -335,7 +340,7 @@ recipes.addShaped(<enderio:item_material:53>, [[<enderio:item_alloy_ingot:7>,<en
 
 # Endervoir
 recipes.remove(<enderio:block_reservoir>);
-recipes.addShaped(<enderio:block_reservoir> * 4, [[<ore:blockGlassHardened>,<ore:blockGlassHardened>,<ore:blockGlassHardened>],[<ore:blockGlassHardened>,<roots:unending_bowl>,<ore:blockGlassHardened>],[<ore:blockGlassHardened>,<ore:blockGlassHardened>,<ore:blockGlassHardened>]]);
+recipes.addShaped(<enderio:block_reservoir> * 4, [[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<roots:unending_bowl>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>]]);
 
 # Slice'n'Splice
 recipes.remove(<enderio:block_slice_and_splice>);
@@ -595,7 +600,7 @@ recipes.addShaped(<enderio:item_capacitor_crystalline>, [[null,<enderio:item_all
 
 # Melodic Capacitor
 recipes.remove(<enderio:item_capacitor_melodic>);
-recipes.addShaped(<enderio:item_capacitor_melodic>, [[null,<enderio:item_alloy_endergy_ingot:2>,null],[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:2>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_capacitor_crystalline>,null,<enderio:item_capacitor_crystalline>]]);
+recipes.addShaped(<enderio:item_capacitor_melodic>, [[null,<enderio:item_alloy_endergy_ingot:2>,null],[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:2>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_capacitor_crystalline>,null,<enderio:item_capacitor_crystalline>]]);
 
 # Stellar Capacitor
 recipes.remove(<enderio:item_capacitor_stellar>);
@@ -607,11 +612,11 @@ recipes.addShaped(<enderio:block_wireless_charger>, [[<enderio:block_alloy:6>,<e
 
 # Travel Anchor
 recipes.remove(<enderio:block_travel_anchor>);
-recipes.addShaped(<enderio:block_travel_anchor>, [[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_material:44>,<enderio:item_alloy_endergy_ingot:1>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:3>]]);
+recipes.addShaped(<enderio:block_travel_anchor>, [[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_material:44>,<enderio:item_alloy_endergy_ingot:1>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_endergy_ingot:1>,<simplyjetpacks:metaitemmods:12>]]);
 
 # Infinity Rod
 recipes.remove(<enderio:item_material:71>);
-recipes.addShaped(<enderio:item_material:71>, [[null,<simplyjetpacks:metaitemmods:3>,<enderio:item_material:20>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_material:20>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_material:20>,<simplyjetpacks:metaitemmods:3>,null]]);
+recipes.addShaped(<enderio:item_material:71>, [[null,<simplyjetpacks:metaitemmods:12>,<enderio:item_material:20>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_material:20>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_material:20>,<simplyjetpacks:metaitemmods:12>,null]]);
 
 # Staff of Travelling
 recipes.remove(<enderio:item_travel_staff>);
@@ -623,7 +628,7 @@ recipes.addShaped(<enderio:block_tele_pad>, [[<enderio:item_alloy_endergy_ingot:
 
 # Dimensional Tranciever
 recipes.remove(<enderio:block_transceiver>);
-recipes.addShaped(<enderio:block_transceiver>, [[<simplyjetpacks:metaitemmods:3>,<enderio:item_material:44>,<simplyjetpacks:metaitemmods:3>],[<enderio:item_material:18>,<actuallyadditions:block_misc:8>,<enderio:item_material:18>],[<simplyjetpacks:metaitemmods:3>,<enderio:item_capacitor_melodic>,<simplyjetpacks:metaitemmods:3>]]);
+recipes.addShaped(<enderio:block_transceiver>, [[<simplyjetpacks:metaitemmods:12>,<enderio:item_material:44>,<simplyjetpacks:metaitemmods:12>],[<enderio:item_material:18>,<actuallyadditions:block_misc:8>,<enderio:item_material:18>],[<simplyjetpacks:metaitemmods:12>,<enderio:item_capacitor_melodic>,<simplyjetpacks:metaitemmods:12>]]);
 
 # Dialing Device
 recipes.remove(<enderio:block_dialing_device>);
@@ -672,6 +677,6 @@ recipes.addShaped(<enderio:item_coord_selector>, [[<enderio:item_alloy_ingot>,<e
 
 # Powered Spawner
 recipes.remove(<enderio:block_powered_spawner>);
-recipes.addShaped(<enderio:block_powered_spawner>, [[<enderio:block_alloy:7>,<enderio:item_material:18>,<enderio:block_alloy:7>],[<simplyjetpacks:metaitemmods:30>,<rftools:spawner>,<simplyjetpacks:metaitemmods:30>],[<simplyjetpacks:metaitemmods:11>,<enderio:block_franken_zombie_generator>,<simplyjetpacks:metaitemmods:11>]]);
+recipes.addShaped(<enderio:block_powered_spawner>, [[<enderio:block_alloy:7>,<enderio:item_material:18>,<enderio:block_alloy:7>],[<simplyjetpacks:metaitemmods:24>,<rftools:spawner>,<simplyjetpacks:metaitemmods:24>],[<simplyjetpacks:metaitemmods:11>,<enderio:block_franken_zombie_generator>,<simplyjetpacks:metaitemmods:11>]]);
 
 print("ENDING EnderIO.zs");

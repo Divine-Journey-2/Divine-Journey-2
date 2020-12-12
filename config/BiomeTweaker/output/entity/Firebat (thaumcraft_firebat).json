@@ -1,0 +1,6 @@
+
+{
+  "Name": "Firebat",
+  "Registry ID": "thaumcraft:firebat",
+  "Class": "thaumcraft.common.entities.monster.EntityFireBat"
+}

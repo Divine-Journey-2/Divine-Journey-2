@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/compressed_perfectium_block",
+      "all": "contenttweaker:blocks/compressed_perfectium_block",
       "particle": "contenttweaker:blocks/compressed_perfectium_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

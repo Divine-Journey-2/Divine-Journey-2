@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.punchroom",
+  "Registry ID": "erebus:erebus.punchroom",
+  "Class": "erebus.entity.EntityPunchroom"
+}

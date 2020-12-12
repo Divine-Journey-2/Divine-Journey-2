@@ -1,0 +1,6 @@
+
+{
+  "Name": "entity_beetle",
+  "Registry ID": "mysticalworld:entity_beetle",
+  "Class": "epicsquid.mysticalworld.entity.EntityBeetle"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.lord_vatticus",
+  "Registry ID": "divinerpg:lord_vatticus",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityLordVatticus"
+}

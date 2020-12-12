@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/mortum_door",
+      "all": "contenttweaker:blocks/mortum_door",
       "particle": "contenttweaker:blocks/mortum_door"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

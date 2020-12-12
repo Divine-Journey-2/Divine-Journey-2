@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.animated_block",
+  "Registry ID": "erebus:erebus.animated_block",
+  "Class": "erebus.entity.EntityAnimatedBlock"
+}

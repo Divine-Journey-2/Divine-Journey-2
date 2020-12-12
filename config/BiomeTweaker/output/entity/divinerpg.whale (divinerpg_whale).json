@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.whale",
+  "Registry ID": "divinerpg:whale",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityWhale"
+}

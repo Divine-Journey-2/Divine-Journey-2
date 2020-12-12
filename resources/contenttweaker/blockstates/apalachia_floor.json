@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/apalachia_floor",
+      "all": "contenttweaker:blocks/apalachia_floor",
       "particle": "contenttweaker:blocks/apalachia_floor"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

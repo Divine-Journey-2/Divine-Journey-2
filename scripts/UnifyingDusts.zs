@@ -399,4 +399,9 @@ furnace.remove(<minecraft:bread>, <enderio:item_material:21>);
 furnace.remove(<minecraft:bread>, <roots:flour>);
 # More recipes in OreProcessingAdditions.zs
 
+# Electrum Dust
+<ore:dustElectrum>.remove(<immersiveengineering:metal:16>);
+recipes.remove(<immersiveengineering:metal:16>);
+furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>);
+
 print("ENDING UnifyingDusts.zs");

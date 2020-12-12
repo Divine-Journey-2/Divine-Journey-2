@@ -1,0 +1,6 @@
+
+{
+  "Name": "entity_endermini",
+  "Registry ID": "mysticalworld:entity_endermini",
+  "Class": "epicsquid.mysticalworld.entity.EntityEndermini"
+}

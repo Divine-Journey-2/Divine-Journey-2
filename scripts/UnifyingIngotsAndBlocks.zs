@@ -284,4 +284,11 @@ recipes.removeShaped(<minecraft:nether_star>, [[<extendedcrafting:material:140>,
 recipes.remove(<bewitchment:amethyst>);
 recipes.remove(<bewitchment:block_of_amethyst>);
 
+# Emerald Nugget
+<ore:nuggetEmerald>.removeItems([<agricraft:agri_nugget>,<thermalfoundation:material:17>]);
+recipes.remove(<thermalfoundation:material:17>);
+recipes.removeShaped(<minecraft:emerald>, [[<ore:nuggetEmerald>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
+recipes.addShaped(<minecraft:emerald>, [[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>]]);
+mods.tconstruct.Melting.removeRecipe(<liquid:emerald>, <thermalfoundation:material:17>);
+
 print("ENDING UnifyingIngotsAndBlocks.zs");

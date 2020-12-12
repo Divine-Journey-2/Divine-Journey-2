@@ -1,0 +1,6 @@
+
+{
+  "Name": "lightningcraft:helper_zombie",
+  "Registry ID": "lightningcraft:helper_zombie",
+  "Class": "sblectric.lightningcraft.entities.EntityLCZombie"
+}

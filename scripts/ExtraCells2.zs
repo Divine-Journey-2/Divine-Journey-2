@@ -22,19 +22,19 @@ recipes.remove(<extracells:storage.casing>);
 recipes.addShaped(<extracells:storage.casing>, [[<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:material:8>,<appliedenergistics2:quartz_vibrant_glass>],[<appliedenergistics2:material:8>,null,<appliedenergistics2:material:8>],[<enderio:item_material:14>,<enderio:item_material:14>,<enderio:item_material:14>]]);
 
 # 256k Storage Cell
-recipes.removeShaped(<extracells:storage.physical>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}));
+recipes.removeShaped(<extracells:storage.physical>);
 recipes.addShaped(<extracells:storage.physical>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}), [[<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:material:8>,<appliedenergistics2:quartz_vibrant_glass>],[<appliedenergistics2:material:8>,<extracells:storage.component>,<appliedenergistics2:material:8>],[<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>]]);
 
 # 1024k Storage Cell
-recipes.removeShaped(<extracells:storage.physical:1>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}));
+recipes.removeShaped(<extracells:storage.physical:1>);
 recipes.addShaped(<extracells:storage.physical:1>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}), [[<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:material:8>,<appliedenergistics2:quartz_vibrant_glass>],[<appliedenergistics2:material:8>,<extracells:storage.component:1>,<appliedenergistics2:material:8>],[<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>]]);
 
 # 4096k Storage Cell
-recipes.removeShaped(<extracells:storage.physical:2>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}));
+recipes.removeShaped(<extracells:storage.physical:2>);
 recipes.addShaped(<extracells:storage.physical:2>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}), [[<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:material:8>,<appliedenergistics2:quartz_vibrant_glass>],[<appliedenergistics2:material:8>,<extracells:storage.component:2>,<appliedenergistics2:material:8>],[<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>]]);
 
 # 16384k Storage Cell
-recipes.removeShaped(<extracells:storage.physical:3>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}));
+recipes.removeShaped(<extracells:storage.physical:3>);
 recipes.addShaped(<extracells:storage.physical:3>.withTag({upgrades: {}, config: {}, fuzzyMode: "IGNORE_ALL"}), [[<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:material:8>,<appliedenergistics2:quartz_vibrant_glass>],[<appliedenergistics2:material:8>,<extracells:storage.component:3>,<appliedenergistics2:material:8>],[<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>,<ore:itemPulsatingCrystal>]]);
 
 # Certus Quartz Tank

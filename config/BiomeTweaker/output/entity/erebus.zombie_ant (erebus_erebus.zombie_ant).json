@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.zombie_ant",
+  "Registry ID": "erebus:erebus.zombie_ant",
+  "Class": "erebus.entity.EntityZombieAnt"
+}

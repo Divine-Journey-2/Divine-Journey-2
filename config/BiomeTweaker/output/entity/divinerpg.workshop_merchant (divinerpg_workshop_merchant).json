@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.workshop_merchant",
+  "Registry ID": "divinerpg:workshop_merchant",
+  "Class": "divinerpg.objects.entities.entity.npc.EntityWorkshopMerchant"
+}

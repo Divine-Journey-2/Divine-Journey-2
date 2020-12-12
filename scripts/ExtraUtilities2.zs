@@ -442,4 +442,16 @@ recipes.addShaped(<extrautils2:passivegenerator:8>, [[<extrautils2:decorativesol
 recipes.remove(<extrautils2:ingredients:2>);
 recipes.addShaped(<extrautils2:ingredients:2>, [[<extrautils2:ingredients>,<contenttweaker:redstone_star>,<extrautils2:ingredients>],[<contenttweaker:redstone_star>,<contenttweaker:steaming_restonia_crystal>,<contenttweaker:redstone_star>],[<extrautils2:ingredients>,<contenttweaker:redstone_star>,<extrautils2:ingredients>]]);
 
+# Compressed Cobblestone
+recipes.removeShaped(<extrautils2:compressedcobblestone>);
+recipes.addShaped(<extrautils2:compressedcobblestone>, [[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]]);
+
+# Compressed Sand
+recipes.removeShaped(<extrautils2:compressedsand>);
+recipes.addShaped(<extrautils2:compressedsand>, [[<ore:sand>,<ore:sand>,<ore:sand>],[<ore:sand>,<ore:sand>,<ore:sand>],[<ore:sand>,<ore:sand>,<ore:sand>]]);
+
+# Compressed Gravel
+recipes.removeShaped(<extrautils2:compressedgravel>);
+recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>]]);
+
 print("ENDING ExtraUtilities2.zs");

@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.wraith",
+  "Registry ID": "divinerpg:wraith",
+  "Class": "divinerpg.objects.entities.entity.arcana.EntityWraith"
+}

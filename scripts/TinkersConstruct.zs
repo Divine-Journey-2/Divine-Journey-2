@@ -44,4 +44,7 @@ recipes.addShaped(<tconstruct:slimesling:2>, [[<ore:string>,<tconstruct:slime_co
 recipes.addShaped(<tconstruct:slimesling:3>, [[<ore:string>,<tconstruct:slime_congealed:3>,<contenttweaker:industrial_slime_ball>],[<tconstruct:edible:3>,<tconstruct:edible:3>,<tconstruct:edible:3>],[null,<contenttweaker:industrial_slime_ball>,null]]);
 recipes.addShaped(<tconstruct:slimesling:4>, [[<ore:string>,<tconstruct:slime_congealed:4>,<contenttweaker:industrial_slime_ball>],[<tconstruct:edible:4>,<tconstruct:edible:4>,<tconstruct:edible:4>],[null,<contenttweaker:industrial_slime_ball>,null]]);
 
+# Additional Necrotic Bone recipe
+recipes.addShaped(<tconstruct:materials:17>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:bone>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
+
 print("ENDING TinkersConstruct.zs");

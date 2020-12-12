@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/block_of_elevation",
+      "all": "contenttweaker:blocks/block_of_elevation",
       "particle": "contenttweaker:blocks/block_of_elevation"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

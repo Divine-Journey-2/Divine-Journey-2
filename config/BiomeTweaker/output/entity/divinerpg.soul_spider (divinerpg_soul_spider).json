@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.soul_spider",
+  "Registry ID": "divinerpg:soul_spider",
+  "Class": "divinerpg.objects.entities.entity.mortum.EntitySoulSpider"
+}

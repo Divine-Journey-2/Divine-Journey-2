@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.soul_stealer",
+  "Registry ID": "divinerpg:soul_stealer",
+  "Class": "divinerpg.objects.entities.entity.mortum.EntitySoulStealer"
+}

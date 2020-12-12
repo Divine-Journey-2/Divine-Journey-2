@@ -89,20 +89,20 @@
 				"link" : "changelog will go here"
             }
         },         
-        "question_mark":
+        "discord":
         {
             "text" : "",
             "posX" : -336,
             "posY" : 295,
             "width" : 78,
             "height" : 79,
-			"tooltip": "Modpack Info",
+			"tooltip": "Join the Divine Journey 2 Discord Server!",
 			"alignment" : "top_right",
-			"texture" : "mainmenu:question_mark.png",
+			"texture" : "mainmenu:discord.png",
             "action" : 
             {
                 "type" : "openLink",
-				"link" : "modpack info will go here"
+				"link" : "https://discord.gg/rH9pyS7"
             }
         },	 
         "language":

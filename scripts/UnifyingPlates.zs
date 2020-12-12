@@ -1,5 +1,7 @@
 # Author: Atricos
 
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import mods.immersiveengineering.MetalPress;
 import mods.thermalexpansion.Compactor;
 import mods.thermalexpansion.InductionSmelter;
@@ -194,5 +196,12 @@ recipes.addShapeless(<lightningcraft:plate:8>, [<contenttweaker:iron_hammer>.any
 # Mystic Plate
 recipes.remove(<lightningcraft:plate:9>);
 recipes.addShapeless(<lightningcraft:plate:9>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<lightningcraft:ingot:2>,<lightningcraft:ingot:2>]);
+
+# Removing TC Casting recipes
+val noCastPlates = [<thermalfoundation:material:32>,<thermalfoundation:material:33>,<thermalfoundation:material:320>,<thermalfoundation:material:321>,<thermalfoundation:material:322>,<thermalfoundation:material:323>,<thermalfoundation:material:324>,<thermalfoundation:material:325>,<thermalfoundation:material:326>,<thermalfoundation:material:327>,<thermalfoundation:material:328>,<thermalfoundation:material:352>,<thermalfoundation:material:353>,<thermalfoundation:material:354>,<thermalfoundation:material:355>,<thermalfoundation:material:356>,<thermalfoundation:material:357>,<thermalfoundation:material:358>,<thermalfoundation:material:359>,<immersiveengineering:metal:35>,<lightningcraft:plate:7>,<lightningcraft:plate:8>,<lightningcraft:plate:9>,<thaumcraft:plate>,<thaumcraft:plate:2>] as IItemStack[];
+val respLiquids = [<liquid:iron>,<liquid:gold>,<liquid:copper>,<liquid:tin>,<liquid:silver>,<liquid:lead>,<liquid:aluminum>,<liquid:nickel>,<liquid:platinum>,<liquid:iridium>,<liquid:mithril>,<liquid:steel>,<liquid:electrum>,<liquid:invar>,<liquid:bronze>,<liquid:constantan>,<liquid:signalum>,<liquid:lumium>,<liquid:enderium>,<liquid:uranium>,<liquid:electricium>,<liquid:skyfather>,<liquid:mystic>,<liquid:brass>,<liquid:thaumium>] as ILiquidStack[];
+for i, plate in noCastPlates {
+	mods.tconstruct.Casting.removeTableRecipe(plate, respLiquids[i]);
+}
 
 print("ENDING Plates.zs");

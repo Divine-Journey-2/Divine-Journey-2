@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.raglok",
+  "Registry ID": "divinerpg:raglok",
+  "Class": "divinerpg.objects.entities.entity.boss.EntityRaglok"
+}

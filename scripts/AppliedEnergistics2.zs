@@ -100,19 +100,19 @@ recipes.remove(<appliedenergistics2:material:39>);
 recipes.addShaped(<appliedenergistics2:material:39>, [[<appliedenergistics2:quartz_glass>,<minecraft:redstone>,<appliedenergistics2:quartz_glass>],[<minecraft:redstone>,null,<minecraft:redstone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
 
 # 1k ME Storage Cell
-recipes.removeShaped(<appliedenergistics2:storage_cell_1k>.withTag({}));
+recipes.removeShaped(<appliedenergistics2:storage_cell_1k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_1k>.withTag({}), [[<appliedenergistics2:quartz_glass>,<minecraft:redstone>,<appliedenergistics2:quartz_glass>],[<minecraft:redstone>,<appliedenergistics2:material:35>,<minecraft:redstone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
 
 # 4k ME Storage Cell
-recipes.removeShaped(<appliedenergistics2:storage_cell_4k>.withTag({}));
+recipes.removeShaped(<appliedenergistics2:storage_cell_4k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_4k>.withTag({}), [[<appliedenergistics2:quartz_glass>,<minecraft:redstone>,<appliedenergistics2:quartz_glass>],[<minecraft:redstone>,<appliedenergistics2:material:36>,<minecraft:redstone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
 
 # 16k ME Storage Cell
-recipes.removeShaped(<appliedenergistics2:storage_cell_16k>.withTag({}));
+recipes.removeShaped(<appliedenergistics2:storage_cell_16k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_16k>.withTag({}), [[<appliedenergistics2:quartz_glass>,<minecraft:redstone>,<appliedenergistics2:quartz_glass>],[<minecraft:redstone>,<appliedenergistics2:material:37>,<minecraft:redstone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
 
 # 64k ME Storage Cell
-recipes.removeShaped(<appliedenergistics2:storage_cell_64k>.withTag({}));
+recipes.removeShaped(<appliedenergistics2:storage_cell_64k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_64k>.withTag({}), [[<appliedenergistics2:quartz_glass>,<minecraft:redstone>,<appliedenergistics2:quartz_glass>],[<minecraft:redstone>,<appliedenergistics2:material:38>,<minecraft:redstone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
 
 # ME Level Emitter

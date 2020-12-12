@@ -12,10 +12,6 @@ recipes.remove(<divinerpg:ghast_pumpkin>);
 recipes.addShaped(<divinerpg:ghast_pumpkin>, [[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>],[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>],[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>]]);
 recipes.addShapeless(<minecraft:ghast_tear> * 9, [<divinerpg:ghast_pumpkin>]);
 
-# Slabs are buggy
-val allSlabs = <ore:slabWood>;
-#allSlabs.removeItems([<divinerpg:eden_double_slab>, <divinerpg:wildwood_double_slab>, <divinerpg:apalachia_double_slab>, <divinerpg:skythern_double_slab>, <divinerpg:mortum_double_slab>, <divinerpg:divine_double_slab>, <divinerpg:frozen_double_slab>, <divinerpg:eucalyptus_double_slab>]);
-
 # Snowflake Shurikens into Snowflakes
 mods.immersiveengineering.ArcFurnace.addRecipe(<divinerpg:snowflake>, <divinerpg:snowflake_shuriken> * 16, null, 40, 100, [<minecraft:ice> * 4]);
 mods.enderio.AlloySmelter.addRecipe(<divinerpg:snowflake>, [<divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4], 2500);

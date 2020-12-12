@@ -537,5 +537,7 @@ var cracked_runic_plate = VanillaFactory.createItem("cracked_runic_plate");
 cracked_runic_plate.register();
 var clean_runic_plate = VanillaFactory.createItem("clean_runic_plate");
 clean_runic_plate.register();
+var arboreal_essence = VanillaFactory.createItem("arboreal_essence");
+arboreal_essence.register();
 
 print("ENDING ContentTweakerItems.zs");

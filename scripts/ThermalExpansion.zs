@@ -98,8 +98,8 @@ recipes.addShaped(igneous_extruder, [[<thermalfoundation:material:321>,<thermalf
 
 # Device Frame
 recipes.remove(<thermalexpansion:frame:64>);
-recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>,<ore:blockGlassHardened>,<thermalfoundation:material:321>],[<thermalfoundation:material:262>,<thermalexpansion:frame>,<thermalfoundation:material:262>],[<thermalfoundation:material:321>,<ore:blockGlassHardened>,<thermalfoundation:material:321>]]);
-recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>,<thermalfoundation:material:262>,<thermalfoundation:material:321>],[<ore:blockGlassHardened>,<thermalexpansion:frame>,<ore:blockGlassHardened>],[<thermalfoundation:material:321>,<thermalfoundation:material:262>,<thermalfoundation:material:321>]]);
+recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>,<thermalfoundation:glass:3>,<thermalfoundation:material:321>],[<thermalfoundation:material:262>,<thermalexpansion:frame>,<thermalfoundation:material:262>],[<thermalfoundation:material:321>,<thermalfoundation:glass:3>,<thermalfoundation:material:321>]]);
+recipes.addShaped(<thermalexpansion:frame:64>, [[<thermalfoundation:material:321>,<thermalfoundation:material:262>,<thermalfoundation:material:321>],[<thermalfoundation:glass:3>,<thermalexpansion:frame>,<thermalfoundation:glass:3>],[<thermalfoundation:material:321>,<thermalfoundation:material:262>,<thermalfoundation:material:321>]]);
 
 # Aqueous Accumulator
 val aqueous_accumulator = <thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]});
@@ -217,7 +217,7 @@ recipes.addShaped("thermal_capacitor_upgrade1", <thermalexpansion:capacitor:1>.w
 
 # Flux Capacitor (Reinforced)
 recipes.removeShaped(<thermalexpansion:capacitor:2>);
-recipes.addShaped("thermal_capacitor_upgrade2", <thermalexpansion:capacitor:2>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<ore:blockGlassHardened>,<ore:ingotRedAlloy>],[<thermalfoundation:material:353>,<thermalexpansion:capacitor:1>.marked("capacitor"),<thermalfoundation:material:353>],[<thermalfoundation:material:353>,<ore:ingotRedAlloy>,<thermalfoundation:material:353>]],
+recipes.addShaped("thermal_capacitor_upgrade2", <thermalexpansion:capacitor:2>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<thermalfoundation:glass:3>,<ore:ingotRedAlloy>],[<thermalfoundation:material:353>,<thermalexpansion:capacitor:1>.marked("capacitor"),<thermalfoundation:material:353>],[<thermalfoundation:material:353>,<ore:ingotRedAlloy>,<thermalfoundation:material:353>]],
 	function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
 
 # Flux Capacitor (Signalum)
@@ -236,12 +236,12 @@ recipes.addShaped(<thermalexpansion:reservoir>.withTag({}), [[null,<thermalfound
 
 # Reservoir (Hardened)
 recipes.removeShaped(<thermalexpansion:reservoir:1>);
-recipes.addShaped("thermal_reservoir_upgrade1", <thermalexpansion:reservoir:1>.withTag({}), [[null,<ore:blockGlassHardened>,null],[<thermalfoundation:material:354>,<thermalexpansion:reservoir>.marked("reservoir"),<thermalfoundation:material:354>],[null,<thermalfoundation:material:257>,null]],
+recipes.addShaped("thermal_reservoir_upgrade1", <thermalexpansion:reservoir:1>.withTag({}), [[null,<thermalfoundation:glass:3>,null],[<thermalfoundation:material:354>,<thermalexpansion:reservoir>.marked("reservoir"),<thermalfoundation:material:354>],[null,<thermalfoundation:material:257>,null]],
 	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 # Reservoir (Reinforced)
 recipes.removeShaped(<thermalexpansion:reservoir:2>);
-recipes.addShaped("thermal_reservoir_upgrade2", <thermalexpansion:reservoir:2>.withTag({}), [[null,<ore:blockGlassHardened>,null],[<thermalfoundation:material:353>,<thermalexpansion:reservoir:1>.marked("reservoir"),<thermalfoundation:material:353>],[null,<thermalfoundation:material:290>,null]],
+recipes.addShaped("thermal_reservoir_upgrade2", <thermalexpansion:reservoir:2>.withTag({}), [[null,<thermalfoundation:glass:3>,null],[<thermalfoundation:material:353>,<thermalexpansion:reservoir:1>.marked("reservoir"),<thermalfoundation:material:353>],[null,<thermalfoundation:material:290>,null]],
 	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 # Reservoir (Reinforced)
@@ -452,5 +452,13 @@ recipes.addShaped(<thermalexpansion:augment:273>, [[<thermalfoundation:material:
 # Augment: Pyro-Concentrator
 recipes.remove(<thermalexpansion:augment:304>);
 recipes.addShaped(<thermalexpansion:augment:304>, [[<thermalfoundation:material:322>,<enderio:item_alloy_ingot:1>,<thermalfoundation:material:322>],[<enderio:item_alloy_ingot:1>,<contenttweaker:cosmic_alloy>,<enderio:item_alloy_ingot:1>],[<thermalfoundation:material:322>,<enderio:item_alloy_ingot:1>,<thermalfoundation:material:322>]]);
+
+# Change cycling Hardened Glass recipes to use regular Hardened Glass:
+recipes.remove(<thermalexpansion:augment:303>);
+recipes.addShaped(<thermalexpansion:augment:303>, [[null,<thermalfoundation:material:258>,null],[<thermalfoundation:material:865>,<thermalfoundation:material:512>,<thermalfoundation:material:865>],[null,<thermalfoundation:glass:3>,null]]);
+recipes.remove(<thermalexpansion:augment:368>);
+recipes.addShaped(<thermalexpansion:augment:368>, [[null,<thermalfoundation:material:292>,null],[<thermalfoundation:glass:3>,<thermalfoundation:material:515>,<thermalfoundation:glass:3>],[null,<minecraft:blaze_rod>,null]]);
+recipes.remove(<thermalexpansion:augment:576>);
+recipes.addShaped(<thermalexpansion:augment:576>, [[null,<thermalfoundation:material:24>,null],[<thermalfoundation:material:320>,<minecraft:bucket>,<thermalfoundation:material:320>],[null,<thermalfoundation:glass:3>,null]]);
 
 print("ENDING ThermalExpansion.zs");

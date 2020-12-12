@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/apalachia_glass",
+      "all": "contenttweaker:blocks/apalachia_glass",
       "particle": "contenttweaker:blocks/apalachia_glass"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

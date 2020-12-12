@@ -1,4 +1,7 @@
 #priority 10
+
+import crafttweaker.item.IItemStack;
+
 # Author: Atricos
 print("STARTING UndergroundBiomes.zs");
 
@@ -15,21 +18,47 @@ for i in 0 to 8 {
 	mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:metamorphic_cobble>.withDamage(i));
 }
 
-# Renaming Mana Infused to Mithril
 val igneousStoneNames = ["Red Granite", "Black Granite", "Rhyolite", "Andesite", "Gabbro", "Basalt", "Komatiite", "Dacite"] as string[];
 val metamorphicStoneNames = ["Gneiss", "Eclogite", "Marble", "Quartzite", "Blue Schist", "Green Schist", "Soapstone", "Migmatite"] as string[];
 val sedimentaryStoneNames = ["Limestone", "Chalk", "Shale", "Siltstone", "Lignite", "Dolomite", "Greywacke", "Chert"] as string[];
+val allNames = [igneousStoneNames, metamorphicStoneNames, sedimentaryStoneNames] as string[][];
 
+# Renaming Mana Infused to Mithril
 for i, name in igneousStoneNames {
 	<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
 }
-
 for i, name in metamorphicStoneNames {
 	<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
 }
-
 for i, name in sedimentaryStoneNames {
 	<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
 }
+
+val sand_tooltip1 = "Can be converted into vanilla Sand by crafting" as string;
+val sand_tooltip2 = "2 of them together in a horizontal line." as string;
+val gravel_tooltip1 = "Can be converted into vanilla Gravel by crafting" as string;
+val gravel_tooltip2 = "2 of them together in a horizontal line." as string;
+
+# Sand conversion tooltips
+<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
+<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
+
+# Gravel conversion tooltips
+<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
+<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
+
+# UB Stone to materialStoneTool OreDict
+<ore:materialStoneTool>.addAll(<ore:stone>);
+<ore:materialStoneTool>.addAll(<ore:stoneIgneous>);
+<ore:materialStoneTool>.addAll(<ore:stoneMetamorphic>);
+<ore:materialStoneTool>.addAll(<ore:stoneSedimentary>);
 
 print("ENDING UndergroundBiomes.zs");

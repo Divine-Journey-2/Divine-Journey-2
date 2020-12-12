@@ -185,7 +185,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:transmutator>,
 [<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>,<abyssalcraft:transmutationgem>.noReturn(),<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>],
 [<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>,<enderutilities:enderpart:17>,<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>]]);
 
-# Abyssal Waasteland Necronomicon
+# Abyssal Wasteland Necronomicon
 recipes.remove(<abyssalcraft:necronomicon_cor>);
 recipes.addShaped("abyssalcraft_necronomicon_upgrade1", <abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>.marked("necronomicon"),<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]],
 function(out, ins, cInfo) {

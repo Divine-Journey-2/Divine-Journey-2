@@ -30,6 +30,7 @@ remove_entry("aether_legacy:chests/bronze_dungeon_reward", "main", "aether_legac
 remove_entry("aether_legacy:chests/silver_dungeon_reward", "main", "aether_legacy:invisibility_cape");
 remove_entry("aether_legacy:chests/silver_dungeon_reward", "main", "aether_legacy:regeneration_stone");
 remove_entry("aether_legacy:chests/gold_dungeon_reward", "main", "aether_legacy:iron_bubble");
+remove_entry("aether_legacy:chests/gold_dungeon_reward", "main", "aether_legacy:life_shard");
 
 # Custom loot in Aether Chests
 add_entry("aether_legacy:chests/bronze_dungeon_reward", "custom_bronze_loot", <contenttweaker:bronze_aether_coin>, 1, 1, 0, 0, 100);
@@ -83,14 +84,12 @@ for table in tables {
 	}
 }
 
-val abandoned_mineshaft_pools_to_clear = ["bewitchment_materials_pool", "evilcraft:inject/chests/origins_of_darkness", "evilcraft:inject/chests/condensed_blood",
-					"evilcraft:inject/chests/box_of_eternal_closure", "AE2 Crystals", "AE2 DUSTS", "botania_inject_pool"] as string[];
+val abandoned_mineshaft_pools_to_clear = ["bewitchment_materials_pool", "AE2 Crystals", "AE2 DUSTS", "botania_inject_pool"] as string[];
 for pool in abandoned_mineshaft_pools_to_clear {
 	clear_pool("minecraft:chests/abandoned_mineshaft", pool);
 }
 
-val jungle_temple_pools_to_clear = ["bewitchment_materials_pool", "evilcraft:inject/chests/origins_of_darkness", "evilcraft:inject/chests/condensed_blood",
-					"botania_inject_pool"] as string[];
+val jungle_temple_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in jungle_temple_pools_to_clear {
 	clear_pool("minecraft:chests/jungle_temple", pool);
 }
@@ -98,42 +97,39 @@ for pool in jungle_temple_pools_to_clear {
 clear_pool("minecraft:chests/jungle_temple_dispenser", "ebwizardry_ebwizardry_additional_dispenser_loot");
 
 remove_entry("minecraft:chests/nether_bridge", "main", "rftoolsdim:parcel");
-val nether_bridge_pools_to_clear = ["xuLootDropOfEvil", "bewitchment_nether_materials_pool", "bewitchment_materials_pool", "evilcraft:inject/chests/condensed_blood"] as string[];
+val nether_bridge_pools_to_clear = ["xuLootDropOfEvil", "bewitchment_nether_materials_pool", "bewitchment_materials_pool"] as string[];
 for pool in nether_bridge_pools_to_clear {
 	clear_pool("minecraft:chests/nether_bridge", pool);
 }
 
 remove_entry("minecraft:chests/simple_dungeon", "main", "rftoolsdim:parcel");
 
-val simple_dungeon_pools_to_clear = ["bewitchment_materials_pool", "evilcraft:inject/chests/origins_of_darkness", "evilcraft:inject/chests/condensed_blood",
-					"evilcraft:inject/chests/box_of_eternal_closure", "botania_inject_pool"] as string[];
+val simple_dungeon_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in simple_dungeon_pools_to_clear {
 	clear_pool("minecraft:chests/simple_dungeon", pool);
 }
 
-val spawn_bonus_chest_pools_to_clear = ["evilcraft:inject/chests/origins_of_darkness", "evilcraft:inject/chests/condensed_blood", "botania_inject_pool"] as string[];
-for pool in spawn_bonus_chest_pools_to_clear {
-	clear_pool("minecraft:chests/spawn_bonus_chest", pool);
-}
+clear_pool("minecraft:chests/spawn_bonus_chest", "botania_inject_pool");
 
 clear_pool("minecraft:chests/stronghold_crossing", "bewitchment_materials_pool");
 
 remove_entry("minecraft:chests/stronghold_library", "main", "astralsorcery:constellation_paper");
 remove_entry("minecraft:chests/stronghold_library", "main", "blueprint_electrode");
 clear_pool("minecraft:chests/stronghold_library", "bewitchment_materials_pool");
-clear_pool("minecraft:chests/stronghold_library", "evilcraft:inject/chests/box_of_eternal_closure");
 
 remove_entry("minecraft:chests/village_blacksmith", "main", "rftoolsdim:parcel");
 remove_entry("minecraft:chests/village_blacksmith", "main", "blueprint_electrode");
-val village_blacksmith_pools_to_clear = ["bewitchment_materials_pool", "evilcraft:inject/chests/origins_of_darkness", "evilcraft:inject/chests/condensed_blood",
-					"botania_inject_pool"] as string[];
-for pool in spawn_bonus_chest_pools_to_clear {
+val village_blacksmith_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
+for pool in village_blacksmith_pools_to_clear {
 	clear_pool("minecraft:chests/village_blacksmith", pool);
 }
 
 clear_pool("minecraft:chests/woodland_mansion", "bewitchment_materials_pool");
+clear_pool("minecraft:chests/igloo_chest", "bewitchment_materials_pool");
 
-val tables_with_general_injected_loot = ["desert_pyramid", "end_city_treasure", "igloo_chest", "stronghold_corridor"] as string[];
+clear_pool("minecraft:chests/end_city_treasure", "bewitchment_materials_pool");
+
+val tables_with_general_injected_loot = ["desert_pyramid", "stronghold_corridor"] as string[];
 val general_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for table in tables_with_general_injected_loot {
 	for pool in general_pools_to_clear {
@@ -143,5 +139,30 @@ for table in tables_with_general_injected_loot {
 
 # Vanilla mob Loot Tables
 
+var vanilla_eb_wizardry_injected_tables = ["blaze", "cave_spider", "creeper", "elder_guardian", "enderman", "endermite", 
+										"evocation_illager", "ghast", "giant", "guardian", "husk", "magma_cube", "shulker",
+										"silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager", 
+										"witch", "wither_skeleton", "zombie", "zombie_pigman", "zombie_villager"] as string[];
+for table_name in vanilla_eb_wizardry_injected_tables {
+	clear_pool("minecraft:entities/" + table_name, "ebwizardry_ebwizardry_additional_mob_drops");
+}
+
+# Astral Sorcery Constellation Papers
+remove_entry("astralsorcery:chest_shrine", "astralsorcery:chest_shrine", "astralsorcery:itemconstellationpaper");
+
+# Orange Heart from bosses
+val bosses = ["minecraft:entities/ender_dragon", "abyssalcraft:entities/asorah", "abyssalcraft:entities/chagaroth", "abyssalcraft:entities/jzahar",
+				"abyssalcraft:entities/sacthoth", "bewitchment:entities/leonard", "botania:gaia_guardian", "botania:gaia_guardian_2",
+				"divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers", 
+				"totemic:entities/baykok", "twilightforest:entities/giant_miner", "twilightforest:entities/hydra", "twilightforest:entities/lich",
+				"twilightforest:entities/minoshroom", "twilightforest:entities/naga", "twilightforest:entities/snow_queen",
+				"twilightforest:entities/yeti_alpha", "twilightforest:structures/darktower_boss/darktower_boss"] as string[];
+for boss in bosses {
+	add_entry(boss, "heart", <bhc:orange_heart>, 1, 1, 0, 0, 100);
+}
+
+# Electroblob's mobs
+remove_entry("ebwizardry:entities/mob_additions", "wizardry", "ebwizardry:spell_book");
+clear_pool("ebwizardry:subsets/wizard_armour", "armour");
 
 print("ENDING LootTweaker.zs");

@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/crystalline_brown_slime_block",
+      "all": "contenttweaker:blocks/crystalline_brown_slime_block",
       "particle": "contenttweaker:blocks/crystalline_brown_slime_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

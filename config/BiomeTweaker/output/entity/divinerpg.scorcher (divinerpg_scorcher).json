@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.scorcher",
+  "Registry ID": "divinerpg:scorcher",
+  "Class": "divinerpg.objects.entities.entity.nether.EntityScorcher"
+}

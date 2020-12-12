@@ -1,0 +1,6 @@
+
+{
+  "Name": "entity_silkworm",
+  "Registry ID": "mysticalworld:entity_silkworm",
+  "Class": "epicsquid.mysticalworld.entity.EntitySilkworm"
+}

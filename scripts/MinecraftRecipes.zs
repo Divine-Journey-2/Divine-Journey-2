@@ -191,4 +191,12 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 # Dragon's Breath tooltip
 <minecraft:dragon_breath>.addTooltip(format.bold(format.white("If you're having trouble collecting this item because of Botania's ")) + format.bold(format.gray("Ender Air Bottles")) + format.bold(format.white(", try the following: Do ")) + format.bold(format.red("NOT")) + format.bold(format.white(" Right Click on blocks, instead, angle your clicks so you only reach the purple ")) + format.bold(format.lightPurple("Dragon's Breath particles")) + format.bold(format.white(", and ")) + format.bold(format.red("NOT")) + format.bold(format.white(" the blocks below.")));
 
+# Additional Wither Skeleton Skull recipe
+recipes.addShaped(<minecraft:skull:1>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:skull>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
+recipes.removeShapeless(<minecraft:skull:1> * 3, [<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]);
+
+# Hay Bale can no longer be converted into Wheat
+recipes.removeShaped(<minecraft:wheat> * 9, [[<minecraft:hay_block>]]);
+<minecraft:hay_block>.addTooltip(format.red(format.bold("Cannot be converted back into Wheat.")));
+
 print("ENDING MinecraftRecipes.zs");

@@ -1,0 +1,6 @@
+
+{
+  "Name": "TaintSeedPrime",
+  "Registry ID": "thaumcraft:taintseedprime",
+  "Class": "thaumcraft.common.entities.monster.tainted.EntityTaintSeedPrime"
+}

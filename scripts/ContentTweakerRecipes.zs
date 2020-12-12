@@ -25,6 +25,7 @@ import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.thermalexpansion.Sawmill;
 import mods.bloodmagic.BloodAltar;
+import mods.roots.Pyre;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -453,7 +454,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:crystallos>, [<contenttwe
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:magicales>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:incendium>,<divinerpg:cyclops_eye_shards>,<divinerpg:ender_shards>,<draconicevolution:draconium_ingot>,<roots:pereskia>], 3000, 100, 2);
 
 # Orbis Terrae
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:orbis_terrae>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:terrae>,<actuallyadditions:item_crystal:4>,<ore:ingotOsgloglas>,<natura:overworld_sapling2:2>,<natura:overworld_sapling2>], 3000, 100, 2);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:orbis_terrae>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:terrae>,<actuallyadditions:item_crystal:4>,<ore:ingotOsgloglas>,<contenttweaker:arboreal_essence>,<contenttweaker:arboreal_essence>], 3000, 100, 2);
 
 # Coralium Decorated Blood Star
 recipes.addShaped(<contenttweaker:coralium_decorated_blood_star>, [[<abyssalcraft:cingot>,<evilcraft:dark_power_gem>,<abyssalcraft:cingot>],[<evilcraft:dark_power_gem>,<evilcraft:blood_infusion_core>,<evilcraft:dark_power_gem>],[<abyssalcraft:cingot>,<evilcraft:dark_power_gem>,<abyssalcraft:cingot>]]);
@@ -586,5 +587,8 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:cracked_runic_plate>, [<b
 
 # Clean Runic Plate
 mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:cracked_runic_plate>, <liquid:evilcraftblood> * 200000, 3, <contenttweaker:clean_runic_plate>, 400, 0);
+
+# Arboreal Essence
+Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence>, [<natura:overworld_sapling:1>,<natura:overworld_sapling2:2>,<natura:overworld_sapling2>,<natura:overworld_sapling:3>,<contenttweaker:hardened_blood_droplet>]);
 
 print("ENDING ContentTweakerRecipes.zs");

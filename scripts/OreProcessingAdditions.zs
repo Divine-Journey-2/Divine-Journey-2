@@ -363,4 +363,7 @@ for amethyst_ore in <ore:oreAmethyst>.items {
 IECrusher.removeRecipe(<bewitchment:amethyst>);
 IECrusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <ore:oreAmethyst>, 4000, null, 0.15);
 
+# Magic Crystal
+addOreToGemProcessing(<ebwizardry:crystal_ore>, <ebwizardry:magic_crystal>, null, 2, 4);
+
 print("ENDING OreProcessingAdditions.zs");

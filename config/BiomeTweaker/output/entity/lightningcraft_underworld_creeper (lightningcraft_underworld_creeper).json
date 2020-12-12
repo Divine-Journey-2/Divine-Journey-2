@@ -1,0 +1,6 @@
+
+{
+  "Name": "lightningcraft:underworld_creeper",
+  "Registry ID": "lightningcraft:underworld_creeper",
+  "Class": "sblectric.lightningcraft.entities.EntityUnderworldCreeper"
+}

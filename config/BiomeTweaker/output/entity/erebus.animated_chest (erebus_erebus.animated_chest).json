@@ -1,0 +1,6 @@
+
+{
+  "Name": "erebus.animated_chest",
+  "Registry ID": "erebus:erebus.animated_chest",
+  "Class": "erebus.entity.EntityAnimatedChest"
+}

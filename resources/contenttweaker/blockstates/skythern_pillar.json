@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/skythern_pillar",
+      "all": "contenttweaker:blocks/skythern_pillar",
       "particle": "contenttweaker:blocks/skythern_pillar"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },
