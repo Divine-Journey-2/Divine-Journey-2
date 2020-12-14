@@ -5,6 +5,7 @@
     {
       "uuid": "3d027bf2-3df0-4401-b4d7-ba421f02c493",
       "name": "Tier 3 Essences",
+      "description": "Craft one of each of the Tier 3 Essences. This requires at least the Magician Blood Orb, although higher tiers can be used.",
       "x": 120,
       "y": 140,
       "icon": {
@@ -41,11 +42,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:concentrated_catalyst",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "b813ff38-f724-43fd-ba0d-caa02f8a8dd2",
       "name": "Smelling Stones",
+      "description": "Craft 24 Stone Brick Paths, and place them down in 2x3s extending from the Wooden Paths. They are valid up to one block above or below the level of the Wooden Paths. In the new 64 blocks of valid space, place various crops and other natural things to increase the amount of Tranquility, up to a maximum of 120. Remember that variation is important, as there is diminishing value from the same type of block.",
       "x": 46,
       "y": 166,
       "icon": {
@@ -69,11 +77,29 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "minecraft:potato",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:sapling",
+          "amount": 4
+        },
+        {
+          "id": "minecraft:lava_bucket"
+        },
+        {
+          "id": "minecraft:dirt",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "2603b8a4-0a50-4a66-be4f-f436016da80e",
       "name": "Reinforce the Altar",
+      "description": "Runes can be used interchangably with Blank Runes to form a Blood Altar structure.\nThe Rune of Self Sacrifice increases the amount of LP the player supplies when using a dagger by 10%, additively.\nThe Speed Rune increases the speed of crafting and filling Blood Orbs happens at by 20%, additively.",
       "x": 76,
       "y": 115,
       "icon": {
@@ -104,11 +130,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:blood_rune",
+          "amount": 3
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "f78fc8b9-ab30-4d7c-8123-8d2f48a3d7de",
       "name": "Red and Ready",
+      "description": "Craft the Frozen Blood Core, and weep for what you have wrought.",
       "x": 177,
       "y": 114,
       "icon": {
@@ -129,11 +162,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:undead_plank",
+          "amount": 13
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "b615d889-499d-4773-bb1d-ad2521fc6dba",
-      "name": "A Fresh Slate",
+      "name": "#375",
+      "description": "Did not break, must investigate further.",
       "x": 170,
       "y": 184,
       "bigicon": true,
@@ -157,11 +197,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:dread_crystal"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "be8c987f-4023-4ccd-8dd4-b8ab8a3bf554",
       "name": "Maintaining in Despite",
+      "description": "Craft a Promise of Tenacity II. This can be used in a couple EvilCraft machines, but most importantly in the Blood Infuser, where it unlocks new recipes. Replaces the Promise of Tenacity I.",
       "x": 231,
       "y": 114,
       "icon": {
@@ -182,6 +228,13 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "bloodmagic:component",
+          "damage": 13,
+          "amount": 3
         }
       ],
       "commandrewards": []
@@ -210,11 +263,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "forge:bucketfilled",
+          "nbt": "{FluidName:\"evilcraftblood\",Amount:1000}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "222c7084-0b7e-4f34-b35e-60ee43185bda",
       "name": "Soul Smith",
+      "description": "Create a Soul Forge. It has 4 slots for items to craft, a slot in the center for the crafting result, a bar to display crafting progress, and a space for a Tartaric Gem.",
       "x": 49,
       "y": 66,
       "icon": {
@@ -235,12 +295,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "thermalfoundation:storage",
+          "damage": 8,
+          "amount": 13
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "48ff0643-2cbd-4859-9658-f407a6d381c5",
       "name": "Blood doesn't grow on trees!",
-      "description": "It grows in them.",
+      "description": "It grows in them. And it hungers.",
       "x": 204,
       "y": 114,
       "icon": {
@@ -261,12 +328,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:undead_sapling",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "714c5e19-f922-4d24-9218-ae3081133a7d",
       "name": "Gork",
-      "description": "When killing mobs with a Blood Extractor in your inventory, it will gain blood. The Blood Extractor can be used like a bucket to place down the blood into the world, and can also auto-supply any tank that can hold blood in your inventory.",
+      "description": "When killing mobs with a Blood Extractor in your inventory, it will gain blood. The Blood Extractor can be used like a bucket to place down the blood into the world, and can also auto-supply any tank that can hold blood in your inventory. If you combine it with itself it will increase its internal tank.",
       "x": 178,
       "y": 17,
       "icon": {
@@ -299,6 +372,7 @@
     {
       "uuid": "74d43960-ccef-49e0-9e42-c9b916c8851e",
       "name": "The Magician will suffer",
+      "description": "The Magician's Blood Orb fills your personal network up to 150,000 LP.",
       "x": 134,
       "y": 114,
       "icon": {
@@ -319,6 +393,12 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "evilcraft:undead_plank",
+          "amount": 13
         }
       ],
       "commandrewards": []
@@ -366,6 +446,7 @@
     {
       "uuid": "b589395c-1b08-4ace-a840-5d9e58f82c29",
       "name": "They Merge into a Common Soul",
+      "description": "Craft a Common Tartaric Gem, which can hold up to 1024 Demonic Will, unlocking the ability to craft more expensive recipes with it.",
       "x": 48,
       "y": 115,
       "icon": {
@@ -389,11 +470,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:soul_gem",
+          "damage": 1
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "072b589c-6008-4681-ad57-ebd34f099691",
-      "name": "Unnamed",
+      "name": "Funky Potions",
+      "description": "Craft an Alchemy Table. The size of two blocks, this has 6 input slots, 1 output slot, and a Blood Orb slot. It requires a bound Blood Orb, and consumes LP from the bound player to craft items. The tier of the Blood Orb affects what items can be crafted.",
       "x": 78,
       "y": 66,
       "icon": {
@@ -414,13 +502,33 @@
           ]
         }
       ],
+      "rewardchoice": [
+        {
+          "id": "thermalfoundation:material",
+          "damage": 99,
+          "amount": 64
+        },
+        {
+          "id": "minecraft:sugar",
+          "amount": 64
+        },
+        {
+          "id": "minecraft:glowstone_dust",
+          "amount": 64
+        },
+        {
+          "id": "minecraft:gunpowder",
+          "amount": 64
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "ff4cf175-afb0-4086-b940-5f5df7b7a803",
       "name": "They see you",
-      "x": 219,
-      "y": 191,
+      "description": "This will allow you to see Vengeance Spirits, but also allow them to see - and attack - you. If you enable the ring, you get multiple positive effects, but Vengeance Spirits will constantly spawn around you.",
+      "x": 259,
+      "y": 162,
       "icon": {
         "id": "evilcraft:vengeance_ring"
       },
@@ -440,11 +548,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:gem_stone_torch",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "c3998f64-3e55-4582-8d75-688c3e07597f",
       "name": "Running Red",
+      "description": "Craft a Blood Infuser. This is the fundamental machine in EvilCraft. It can craft more items and store more blood at higher tiers, which are gained through Promises of Tenacity.",
       "x": 249,
       "y": 41,
       "icon": {
@@ -466,12 +581,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:dark_tank",
+          "nbt": "{capacity:16000}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "0f4cf6a5-c294-401a-b20b-ff9e29daf506",
       "name": "A Bite of Darkness",
-      "description": "WARNING: DO NOT EAT",
+      "description": "WARNING: DO NOT EAT. Enjoyed by animals about to read a book.",
       "x": 207,
       "y": 17,
       "icon": {
@@ -492,13 +613,23 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "minecraft:apple",
+          "amount": 64
+        },
+        {
+          "id": "evilcraft:darkened_apple",
+          "nbt": "{RepairCost:1,display:{Name:\"Just in Case\"}}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "843f75f7-bb49-4f6a-9f48-cf9b3c407957",
       "name": "THE LAST CRAFTING*",
-      "description": "*Not actually the last crafting. Terms and conditions may apply. Extended use may cause excessive particles. Please consult a doctor to see if Ender Crafting is right for you.",
-      "x": 291,
+      "description": "*Not actually the last crafting. Terms and conditions may apply. Extended use may cause excessive particles. Please consult a doctor to see if Ender Crafting is right for you. If crafting lasts longer than 3 minutes contact a doctor and install more Ender Alternators.",
+      "x": 206,
       "y": 184,
       "bigicon": true,
       "icon": {
@@ -524,11 +655,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:dread_crystal"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "d8232abf-1e00-440a-8023-2564442fe14f",
       "name": "The Apprentice will bleed",
+      "description": "The Apprentice's Blood Orb fills your personal network up to 25,000 LP.",
       "x": 135,
       "y": 65,
       "icon": {
@@ -552,11 +689,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:hardened_blood_shard",
+          "amount": 13
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "59bc3b19-98f8-4635-bc68-b7e8002d9f77",
       "name": "Bloodomation",
+      "description": "Sucks up Blood from the ground in puts it into nearby tanks, or, more usefully, when the Spiked Plate does damage to a mob. ",
       "x": 261,
       "y": 64,
       "icon": {
@@ -582,11 +726,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:dark_tank",
+          "amount": 8,
+          "nbt": "{capacity:16000}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "164cd53f-7d3d-4191-bb12-26b64adc4f94",
       "name": "Bloody Heart",
+      "description": "Light Hardened Blood on fire to get Hardened Blood Shards, and use these to craft a Blood Infusion Core, the throbbing heart of many EvilCraft machines.",
       "x": 221,
       "y": 41,
       "icon": {
@@ -608,11 +760,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "divinerpg:healing_stone",
+          "amount": 2
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "33ea0a7a-4fe2-47a4-9cb8-df38076ded8f",
       "name": "Meets a Slightly Larger Soul",
+      "description": "Craft a Lesser Tartaric Gem, which can hold up to 256 Demonic Will, unlocking the ability to craft more expensive recipes with it.",
       "x": 62,
       "y": 90,
       "icon": {
@@ -637,11 +796,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:soul_gem"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "9acc7bcb-675f-41d2-8663-23a19beb0716",
       "name": "Reinforced",
+      "description": "Craft a Reinfoced Slate in your tier 2 Blood Altar.",
       "x": 105,
       "y": 115,
       "icon": {
@@ -664,12 +829,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:slate",
+          "amount": 16
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "995935db-f1ff-4df7-b737-5d4f9ccc970b",
       "name": "The Weak will die",
-      "description": "Tier 1 Blood Orb\nUsed to craft all tier 1 Cores.\nAll Blood Orbs can also be used in the Alchemy Table to provide blood for its recipes.",
+      "description": "The Weak Blood Orb fills your personal network up to 5,000 LP. Bind to you by right clicking with it.",
       "x": 121,
       "y": 40,
       "icon": {
@@ -692,11 +863,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "tconstruct:edible",
+          "damage": 3
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "7867902b-2ac6-43d8-be1e-69598cd35571",
       "name": "Glod's Guarantee",
+      "description": "Using a Promise of Tenacity I, use an Empowered Glod Block with a full tank of Blood to get a Gold Promise Acceptor.",
       "x": 218,
       "y": 140,
       "icon": {
@@ -719,13 +897,21 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:empowered_glod_crystal_block",
+          "amount": 4,
+          "nbt": "{display:{Name:\"\ufffd6Empowered Glod Crystal Block\"}}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "5fddb7b7-7680-4793-8d5b-78b7b9683146",
       "name": "When will it end?",
-      "x": 259,
-      "y": 166,
+      "description": "Kill an Enderman and have him spawn a Vengeance Spirit, and then use the Vengeance Focus and a Box of Eternal Closure to trap an Enderman to make a Block of Ender.",
+      "x": 246,
+      "y": 187,
       "icon": {
         "id": "extendedcrafting:storage",
         "damage": 5
@@ -747,11 +933,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:promise",
+          "damage": 2
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "2fb1a5a5-1529-4fcd-bb25-795235a1fa9a",
       "name": "When Small Soul",
+      "description": "Craft a Petty Tartaric Gem (I suggest two or three). The Petty Tartaric Gem holds up to 64 Demonic Will, and will automatically absorb Demonic Will you pick up. You can transfer will between Tartaric Gems by holding right click with it in your hand.",
       "x": 35,
       "y": 40,
       "icon": {
@@ -773,11 +966,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:soul_gem"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "685207c0-9337-4b85-ad25-af1e245a1c7f",
       "name": "Runes for the Altar",
+      "description": "Craft 8 Blood Runes, which are used to increase the tier of the Blood Altar. I suggest using the Inspectoris Scandalum to see where to place the blocks. Right click to change the tier it displays, and shift+right click on a Blood Altar to display it.",
       "x": 105,
       "y": 65,
       "icon": {
@@ -799,12 +998,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:sanguine_book"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "b4ef59e3-2a02-49f2-b9b7-0458a1d1727c",
       "name": "Do it Tomorrow",
-      "x": 272,
+      "description": "Can stack up to 3 slots of 4 in a single Promise of Tenacity III machine, allowing for incredibly efficient operations.",
+      "x": 273,
       "y": 89,
       "icon": {
         "id": "evilcraft:promise",
@@ -826,11 +1031,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "actuallyadditions:block_crystal_empowered",
+          "damage": 1,
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "a5dfdbd4-dbca-499b-bf04-b80abe453bae",
       "name": "Tier 2 Reagents",
+      "description": "Craft one of each of the Tier 2 Reagents.",
       "x": 34,
       "y": 91,
       "icon": {
@@ -870,18 +1083,68 @@
           ]
         }
       ],
+      "rewardchoice": [
+        {
+          "id": "bloodmagic:component",
+          "damage": 13
+        },
+        {
+          "id": "contenttweaker:wizards_reagent"
+        },
+        {
+          "id": "bloodmagic:component",
+          "damage": 32
+        },
+        {
+          "id": "bloodmagic:component",
+          "damage": 5
+        }
+      ],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ccd59e88-58d8-494b-ae2f-2435e2ac4247",
+      "name": "True Vengeance",
+      "description": "At long last, you can kill the Vengeance Spirits. They drop extra goodies too!",
+      "x": 274,
+      "y": 187,
+      "icon": {
+        "id": "evilcraft:piercing_vengeance_focus"
+      },
+      "prerequisites": [
+        "5ce52748-e026-4e31-83ea-1e3424d0bfeb"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:piercing_vengeance_focus"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "evilcraft:spectral_glasses"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "d1ed1c3b-9dd3-47b4-96aa-ddffd0ecf74f",
       "name": "Tier 2 Essences",
+      "description": "Craft one of each of the Tier 2 Essences. This requires at least the Apprentice Blood Orb, although higher tiers can be used.",
       "x": 120,
       "y": 90,
       "icon": {
         "id": "contenttweaker:magicales"
       },
       "prerequisites": [
-        "2afb8cb0-353c-4b5a-bf34-1174de7a31e3"
+        "2afb8cb0-353c-4b5a-bf34-1174de7a31e3",
+        "d8232abf-1e00-440a-8023-2564442fe14f"
       ],
       "tasks": [
         {
@@ -910,6 +1173,12 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:strengthened_catalyst",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
@@ -936,12 +1205,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "tconstruct:edible",
+          "damage": 33,
+          "amount": 16
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "aba8a76b-4b3c-4d5e-ab4a-7de6b12aad6c",
       "name": "To gain, lose",
-      "description": "Using the Sacrifical Dagger near a Blood Altar will reduce your life, and fill up the Blood Altar in exchange.",
+      "description": "Using the Sacrificial Dagger near a Blood Altar will reduce your life, and fill up the Blood Altar in exchange.",
       "x": 107,
       "y": 17,
       "icon": {
@@ -976,8 +1252,9 @@
     {
       "uuid": "5eec5f44-7f95-4c18-9659-53201110b807",
       "name": "Locked Away",
-      "x": 272,
-      "y": 138,
+      "description": "Craft a Box of Eternal Closure. By default, it comes with a Vengeance Spirit inside. Place it down and right click on it to open it. Shoot a spirit with a Vengeance Focus to trap it inside the box.",
+      "x": 232,
+      "y": 163,
       "icon": {
         "id": "evilcraft:box_of_eternal_closure",
         "nbt": "{spiritTag:{playerName:\"\",innerEntity:\"\",remainingLife:0,isSwarm:1b,swarmTier:4,buildupDuration:0,frozenDuration:0,playerId:\"\"}}"
@@ -999,11 +1276,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:burning_gem_stone"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "01f0c58b-83a2-4a69-9531-a5475955355e",
       "name": "Burnt Out",
+      "description": "Craft Arcane Ashes. This 10 durability tool will create an special crafting location when right clicked on the ground. Place two items in it and it will make some cool effects and craft an item, typically a Sigil, for you. Some items will cause it to become an Alchemy Array, which give unique and special effects (look in the guidebook).",
       "x": 49,
       "y": 17,
       "icon": {
@@ -1024,11 +1307,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "enderio:item_material",
+          "damage": 16,
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "d9eb34c5-0632-4cab-93b9-c6d1edd1d040",
       "name": "Tier 3 Reagents",
+      "description": "Craft one of each of the Tier 3 Reagets.",
       "x": 20,
       "y": 115,
       "icon": {
@@ -1065,11 +1356,26 @@
           ]
         }
       ],
+      "rewardchoice": [
+        {
+          "id": "contenttweaker:neutral_reagent"
+        },
+        {
+          "id": "contenttweaker:tempest_reagent"
+        },
+        {
+          "id": "contenttweaker:damage_reagent"
+        },
+        {
+          "id": "contenttweaker:strength_reagent"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "df24f8f4-ed36-4aaa-b822-6bacc57088e3",
       "name": "Know Thy God",
+      "description": "The Sigil of Divination will allow you to view new information about various Blood Magic blocks when held. Its main uses are finding out how much LP is in your personal network by right clicking, how much Blood is in the Blood Altar, and the Tranquility of an Incense Altar.",
       "x": 78,
       "y": 17,
       "icon": {
@@ -1091,11 +1397,31 @@
           ]
         }
       ],
+      "rewardchoice": [
+        {
+          "id": "openblocks:technicolor_glasses"
+        },
+        {
+          "id": "botania:cosmetic",
+          "damage": 2,
+          "nbt": "{playerHashcode:220}"
+        },
+        {
+          "id": "botania:cosmetic",
+          "damage": 25,
+          "nbt": "{playerHashcode:220}"
+        },
+        {
+          "id": "botania:cosmetic",
+          "damage": 27
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "75eee77f-0e96-435e-b170-c3d1bbf39951",
       "name": "Barely Hanging On",
+      "description": "Craft a Promise of Tenacity I. This can be used in a couple EvilCraft machines, but most importantly in the Blood Infuser, where it unlocks new recipes.",
       "x": 218,
       "y": 90,
       "icon": {
@@ -1117,18 +1443,26 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:cosmic_alloy",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "5ce52748-e026-4e31-83ea-1e3424d0bfeb",
       "name": "You shoot them",
-      "x": 246,
-      "y": 191,
+      "description": "Shooting a Vengeance Spirit won't kill it, but it will weaken it enough that a nearby open Box of Eternal Closure can suck them in.",
+      "x": 287,
+      "y": 162,
       "icon": {
         "id": "evilcraft:vengeance_focus"
       },
       "prerequisites": [
-        "ff4cf175-afb0-4086-b940-5f5df7b7a803"
+        "ff4cf175-afb0-4086-b940-5f5df7b7a803",
+        "24bfc920-cfab-4fad-82bd-7858ba07710d"
       ],
       "tasks": [
         {
@@ -1143,11 +1477,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:dark_power_gem",
+          "amount": 39
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "1a991779-8e78-4034-8701-8717c97d4a18",
       "name": "Sniff the Wood",
+      "description": "Craft 36 Wooden Paths, and place them down in 3x3s in each cardinal direction from the Incense Altar, up to one block above or below the original level. In the diagonal 3x3 areas, place various crops and other natural things to increase the amount of Tranquility, up to a maximum of 60. Note that variation is important, as there is diminishing value from the same type of block.",
       "x": 62,
       "y": 140,
       "icon": {
@@ -1169,13 +1510,21 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:blood_rune",
+          "damage": 4,
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "b9edfda9-a714-4c2f-8b4a-8cee03c0807b",
       "name": "Diamatine's Duty",
-      "x": 232,
-      "y": 167,
+      "description": "Using a Promise of Tenacity II, use an Empowered Diamantine Block with a full tank of Blood to get a Diamond Promise Acceptor.",
+      "x": 259,
+      "y": 114,
       "icon": {
         "id": "evilcraft:promise_acceptor",
         "damage": 2
@@ -1196,11 +1545,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "actuallyadditions:block_crystal_empowered",
+          "damage": 2,
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "dbdc8c74-c70b-41d1-8aed-0596fefd2e95",
       "name": "Tier 1 Reagents",
+      "description": "Craft one of each of the Tier 1 Reagents.",
       "x": 23,
       "y": 66,
       "icon": {
@@ -1239,11 +1596,28 @@
           ]
         }
       ],
+      "rewardchoice": [
+        {
+          "id": "bloodmagic:component",
+          "damage": 2
+        },
+        {
+          "id": "bloodmagic:component"
+        },
+        {
+          "id": "bloodmagic:component",
+          "damage": 1
+        },
+        {
+          "id": "contenttweaker:dirty_reagent"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "2ca1d337-08e7-44bd-bc17-b38bf3ec4659",
       "name": "Hung with Madness",
+      "description": "Craft the Coralium Decorated Blood Star, and scream the madness you hath seen.",
       "x": 206,
       "y": 65,
       "icon": {
@@ -1264,13 +1638,20 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:dark_power_gem",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "ae5ba6b7-7bc0-4de8-896a-b672fe6cc155",
       "name": "S P E E D W A L K E R",
-      "x": 287,
-      "y": 65,
+      "description": "The Effortless Ring gives auto-step, makes your hunger reduce slower, and makes you walk a bit faster. It can be equipped as a bauble.",
+      "x": 299,
+      "y": 89,
       "icon": {
         "id": "evilcraft:effortless_ring"
       },
@@ -1289,6 +1670,18 @@
               "precision": "NBT_FUZZY"
             }
           ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "evilcraft:promise",
+          "damage": 3,
+          "amount": 4
+        },
+        {
+          "id": "evilcraft:promise",
+          "damage": 4,
+          "amount": 4
         }
       ],
       "commandrewards": []
@@ -1318,13 +1711,21 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "natura:edibles",
+          "damage": 10,
+          "amount": 64
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "825ee17e-3502-448e-acd8-a3ef5d9af7eb",
       "name": "Enduring Eternally",
+      "description": "Craft a Promise of Tenacity III. This can be used in a couple EvilCraft machines, but most importantly in the Blood Infuser, where it unlocks new recipes. Replaces the Promise of Tenacity II.",
       "x": 245,
-      "y": 140,
+      "y": 139,
       "icon": {
         "id": "evilcraft:promise",
         "damage": 2
@@ -1332,12 +1733,32 @@
       "prerequisites": [
         "b9edfda9-a714-4c2f-8b4a-8cee03c0807b"
       ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "evilcraft:promise",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:tempest_reagent",
+          "amount": 3
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "abbd1130-8b17-4eee-b82f-0f8dbfccae70",
       "name": "Burning Candles",
-      "x": 91,
+      "description": "Place the Incense Altar on a 3x3 square. By default, it has 20 Tranquility, which will give you a 20% bonus to the value of blood sacrificed when nearby. Your Sacrificial Dagger will become enhanced when this is active, and will take 90% of your health. This has a cooldown of 20 seconds due the Soul Fray effect.",
+      "x": 89,
       "y": 140,
       "icon": {
         "id": "bloodmagic:incense_altar"
@@ -1355,6 +1776,13 @@
               }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "contenttweaker:empowered_glod_crystal_block",
+          "amount": 4,
+          "nbt": "{display:{Name:\"\ufffd6Empowered Glod Crystal Block\"}}"
         }
       ],
       "commandrewards": []
@@ -1395,7 +1823,8 @@
     {
       "uuid": "35535bd3-ed2a-4ab1-b6f7-6d0f9825b5b6",
       "name": "Imbue the Altar",
-      "x": 77,
+      "description": "Runes can be used interchangably with Blank Runes to form a Blood Altar structure.\nThe Rune of Sacrifice increases the amount of LP the Dagger of Sacrifice (or Well of Suffering later on) supplies by 10%, additively.\nThe Rune of Capacity increases the capacity of your Blood Altar by 2,000 LP, additively.",
+      "x": 75,
       "y": 166,
       "icon": {
         "id": "bloodmagic:blood_rune",
@@ -1425,11 +1854,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:blood_rune",
+          "amount": 7
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "1a07a7f7-8662-4768-b94b-63f3fccfebff",
       "name": "It thirsts for souls",
+      "description": "Craft the Sentient Sword. Mobs killed by the Sentient Sword will always drop Demonic Will. The Sentient Sword, and other Sentient Tools, increase in power the more Demonic Will you have in your largest Tartaric Gem.",
       "x": 22,
       "y": 17,
       "icon": {
@@ -1451,11 +1887,17 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:soul_gem"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "4e646a1a-803c-48c4-b576-b588de76a77a",
       "name": "Imbued",
+      "description": "Create Imbued Slates using your tier 3 Blood Altar",
       "x": 105,
       "y": 166,
       "icon": {
@@ -1478,18 +1920,27 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:slate",
+          "damage": 1,
+          "amount": 8
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "2afb8cb0-353c-4b5a-bf34-1174de7a31e3",
       "name": "Tier 1 Essences",
+      "description": "Craft one of each of the Tier 1 Essences. This requires at least the Weak Blood Orb, although higher tiers can be used.",
       "x": 90,
       "y": 90,
       "icon": {
         "id": "contenttweaker:aether"
       },
       "prerequisites": [
-        "072b589c-6008-4681-ad57-ebd34f099691"
+        "072b589c-6008-4681-ad57-ebd34f099691",
+        "995935db-f1ff-4df7-b737-5d4f9ccc970b"
       ],
       "tasks": [
         {
@@ -1518,11 +1969,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "contenttweaker:simple_catalyst",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "24bfc920-cfab-4fad-82bd-7858ba07710d",
       "name": "Any%",
+      "description": "Can stack up to 3 slots of 4 in a single Promise of Tenacity III machine, allowing for incredibly fast operations.",
       "x": 287,
       "y": 114,
       "icon": {
@@ -1545,13 +2003,20 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "actuallyadditions:block_crystal_empowered",
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "a6b26bf6-2043-4df1-a175-b8f8d283c182",
       "name": "Overflowing Oaths",
-      "x": 258,
-      "y": 114,
+      "description": "Your every word a vow, your every breath a promise.",
+      "x": 273,
+      "y": 139,
       "icon": {
         "id": "evilcraft:bowl_of_promises",
         "damage": 5
@@ -1572,11 +2037,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:bowl_of_promises",
+          "amount": 3
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "6be6b0c3-92ef-4ec0-8cea-a88884ff62eb",
       "name": "Enori's Esimorp",
+      "description": "Using the Blood Infuser, use an Empowered Enori Block with a full tank of Blood to get an Iron Promise Acceptor.",
       "x": 233,
       "y": 65,
       "icon": {
@@ -1597,11 +2069,19 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "actuallyadditions:block_crystal_empowered",
+          "damage": 5,
+          "amount": 4
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "068b161e-098d-4d2a-95f1-5d1194dd5073",
-      "name": "Rock versus Hammer",
+      "name": "Wheel Attempt #374",
+      "description": "Response when fall from big cliff same as #369, #370, #371, #372, and #373. Further investigations still needed.",
       "x": 121,
       "y": 187,
       "icon": {
@@ -1624,11 +2104,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "bloodmagic:blood_orb",
+          "nbt": "{orb:\"bloodmagic:magician\"}"
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "26cd0034-a9ff-47ea-b1a8-18c3f550102a",
       "name": "Absent Assurances",
+      "description": "You vaugely gesture at the possibility of you following up.",
       "x": 190,
       "y": 90,
       "icon": {
@@ -1651,12 +2138,18 @@
           ]
         }
       ],
+      "reward": [
+        {
+          "id": "evilcraft:bowl_of_promises",
+          "damage": 1
+        }
+      ],
       "commandrewards": []
     },
     {
       "uuid": "0f45e89a-c338-4631-be5d-85119e9c0478",
       "name": "Dull as Dust",
-      "description": "Blooded Dust",
+      "description": "Create Dull Dust, and then Infuse it to get Bloodied Dust, an essential crafting component.",
       "x": 245,
       "y": 89,
       "icon": {
@@ -1674,8 +2167,19 @@
                 "id": "evilcraft:dull_dust"
               },
               "required": 4
+            },
+            {
+              "item": {
+                "id": "contenttweaker:bloodied_dust"
+              }
             }
           ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "mob_grinding_utils:spikes",
+          "amount": 4
         }
       ],
       "commandrewards": []
