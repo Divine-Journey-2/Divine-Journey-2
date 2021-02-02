@@ -7,7 +7,7 @@ import crafttweaker.item.IItemStack;
 
 print("STARTING LootTweaker.zs");
 
-function remove_entry(tableName as string, poolName as string, entryName as string){
+function remove_entry(tableName as string, poolName as string, entryName as string) {
 	val table = LootTweaker.getTable(tableName);
 	val pool = table.getPool(poolName);
 	pool.removeEntry(entryName);
@@ -164,5 +164,34 @@ for boss in bosses {
 # Electroblob's mobs
 remove_entry("ebwizardry:entities/mob_additions", "wizardry", "ebwizardry:spell_book");
 clear_pool("ebwizardry:subsets/wizard_armour", "armour");
+
+# Desert Crawler
+remove_entry("divinerpg:entities/vanilla/desert_crawler", "divinerpg:desert_crawler", "minecraft:sandstone");
+add_entry("divinerpg:entities/vanilla/desert_crawler", "custom_sandstone_amount", <minecraft:sandstone>, 0, 2, 0, 0, 100);
+
+# Abyssalcraft Loot
+remove_entry("abyssalcraft:chests/mineshaft", "main", "abyssalcraft:abyingot");
+remove_entry("abyssalcraft:chests/mineshaft", "main", "abyssalcraft:dreadshard");
+remove_entry("abyssalcraft:chests/mineshaft", "main", "abyssalcraft:corpick");
+remove_entry("abyssalcraft:chests/mineshaft", "main", "abyssalcraft:transmutationgem");
+remove_entry("abyssalcraft:chests/mineshaft", "main", "abyssalcraft:crystal");
+remove_entry("abyssalcraft:chests/mineshaft", "pool1", "abyssalcraft:abyingot");
+remove_entry("abyssalcraft:chests/mineshaft", "pool1", "abyssalcraft:abychunk");
+remove_entry("abyssalcraft:chests/mineshaft", "pool1", "abyssalcraft:dreadchunk");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:transmutationgem");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:abyingot");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:cingot");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:apick");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:aplate");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:ahelmet");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:alegs");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:aboots");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:oc");
+remove_entry("abyssalcraft:chests/stronghold_corridor", "main", "abyssalcraft:crystal");
+remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:abyingot");
+remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:cingot");
+remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:cpearl");
+remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:apick");
+remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:crystal");
 
 print("ENDING LootTweaker.zs");

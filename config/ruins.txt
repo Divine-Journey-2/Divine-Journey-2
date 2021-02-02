@@ -11,29 +11,29 @@
 #     specified biome will be chosen from the biome specific folder.  If not,
 #     it will choose a generic ruin from the folder of the same name.
 #
-tries_per_chunk_normal=6
+tries_per_chunk_normal=2
 chance_to_spawn_normal=10
-tries_per_chunk_nether=6
+tries_per_chunk_nether=2
 chance_to_spawn_nether=10
 #
 # prevent a message from being logged every time a ruin is built
 disableRuinSpawnCoordsLogging=true
 #
 # minimum distance a template must have from instances of itself
-templateInstancesMinDistance=256
+templateInstancesMinDistance=1024
 #
 # minimum distance a template must have from any other template
-anyRuinsMinDistance=64
+anyRuinsMinDistance=128
 #
 # min/max distances overworld templates can have from world spawn (0 = no limit)
-anySpawnMinDistance=32
+anySpawnMinDistance=64
 anySpawnMaxDistance=0
 #
 # allow displaying a block's data by hitting it with a stick
-enableStick=true
+enableStick=false
 #
 # dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
-allowedDimensions=0,-1,7
+allowedDimensions=0,7
 #
 # make /parseruin rule IDs line up nicely in template files
 # note: overworld (i.e., dimension 0) setting applies to all dimensions
@@ -86,7 +86,7 @@ specific_limestone_crags=75
 specific_vigilant_forest=75
 specific_mutated_extreme_hills_with_trees=75
 specific_mutated_roofed_forest=75
-specific_sky=75
+specific_sky=0
 specific_purified_dreadlands=75
 specific_eden=75
 specific_darklands=75
@@ -163,7 +163,7 @@ specific_rocky_plateau=75
 specific_biome_degraded=75
 specific_magical_forest=75
 specific_desert=75
-specific_hell=75
+specific_hell=0
 specific_stone_beach=75
 specific_dreadlands_forest=75
 specific_skythern=75

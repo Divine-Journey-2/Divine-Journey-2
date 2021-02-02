@@ -143,6 +143,7 @@ recipes.addShaped(<actuallyadditions:block_enervator>, [[<thermalfoundation:mate
 # Item Laser Relay
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_laser_relay_item>);
 recipes.addShaped(<actuallyadditions:block_laser_relay_item>, [[null,<actuallyadditions:item_crystal_empowered:4>,null],[<actuallyadditions:item_crystal>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal>]]);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_laser_relay_item>);
 
 # Advanced Item Laser Relay
 recipes.remove(<actuallyadditions:block_laser_relay_item_whitelist>);
@@ -151,11 +152,13 @@ recipes.addShaped(<actuallyadditions:block_laser_relay_item_whitelist>, [[null,<
 # Fluid Laser Relay
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_laser_relay_fluids>);
 recipes.addShaped(<actuallyadditions:block_laser_relay_fluids>, [[null,<actuallyadditions:item_crystal_empowered:1>,null],[<actuallyadditions:item_crystal>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal>]]);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_laser_relay_fluids>);
 
 # Energy Laser Relay
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_laser_relay>);
 recipes.remove(<actuallyadditions:block_laser_relay>);
 recipes.addShaped(<actuallyadditions:block_laser_relay>, [[null,<actuallyadditions:item_crystal_empowered>,null],[<actuallyadditions:item_crystal>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal>]]);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block_laser_relay>);
 
 # Advanced Energy Laser Relay
 recipes.remove(<actuallyadditions:block_laser_relay_advanced>);
@@ -536,5 +539,11 @@ recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower>, [[<actuallyaddit
 # Advanced Leaf Blower
 recipes.remove(<actuallyadditions:item_leaf_blower_advanced>);
 recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower_advanced>, [[<actuallyadditions:item_crystal_empowered:3>,empowered_glod_crystal,null],[<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_leaf_blower>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:2>]]);
+
+# Removing Shards
+for i in 0 to 6 {
+	recipes.removeShapeless(<actuallyadditions:item_crystal_shard>.withDamage(i) * 9, [<actuallyadditions:item_crystal>.withDamage(i)]);
+	recipes.removeShaped(<actuallyadditions:item_crystal>.withDamage(i), [[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)]]);
+}
 
 print("ENDING ActuallyAdditions.zs");

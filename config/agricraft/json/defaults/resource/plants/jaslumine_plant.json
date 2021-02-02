@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/jaslumine_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:jaslumine_plant",
   "plant_name": "Jaslumine",
   "seed_name": "Jaslumine Seeds",

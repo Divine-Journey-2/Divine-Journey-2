@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/lapender_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:lapender_plant",
   "plant_name": "Lapender",
   "seed_name": "Lapender Seeds",

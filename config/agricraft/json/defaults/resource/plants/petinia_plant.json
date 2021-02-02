@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/petinia_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:petinia_plant",
   "plant_name": "Petinia",
   "seed_name": "Petinia Seeds",

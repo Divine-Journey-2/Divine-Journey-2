@@ -1,4 +1,7 @@
 # Author: Atricos
+
+import mods.thermalexpansion.Transposer;
+
 print("STARTING AetherLegacy.zs");
 
 # Golden Feather shouldn't be in the Feather OreDict
@@ -32,5 +35,10 @@ recipes.addShaped(<aether_legacy:iron_pendant>, [[<atum:linen_thread>,<atum:line
 # Golden Pendant
 recipes.remove(<aether_legacy:golden_pendant>);
 recipes.addShaped(<aether_legacy:golden_pendant>, [[<atum:linen_thread>,<atum:linen_thread>,<lightningcraft:rod:5>],[<atum:linen_thread>,null,<lightningcraft:rod:5>],[<lightningcraft:rod:5>,<lightningcraft:rod:5>,<thermalfoundation:material:33>]]);
+
+# Skyroot Poison Bucket fill recipes (buggy)
+#mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:water>);
+#mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:milk>);
+#mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:remedy>);
 
 print("ENDING AetherLegacy.zs");

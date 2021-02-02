@@ -5,6 +5,9 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.SoundType;
 import crafttweaker.item.IItemStack;
+import mods.contenttweaker.DropHandler;
+import mods.contenttweaker.ItemList;
+import crafttweaker.item.WeightedItemStack;
 
 print("STARTING ContentTweakerBlocks.zs");
 
@@ -354,5 +357,44 @@ for dim in divinerpg_dimension_names_lower {
 	dim_door.register();
 
 }
+
+var livingmatter = VanillaFactory.createBlock("livingmatter", <blockmaterial:ground>);
+livingmatter.setBlockHardness(1.0);
+livingmatter.setBlockResistance(1.0);
+livingmatter.setToolClass("shovel");
+livingmatter.setToolLevel(0);
+livingmatter.setBlockSoundType(<soundtype:ground>);
+livingmatter.register();
+
+var hybrid_abyssalium_block = VanillaFactory.createBlock("hybrid_abyssalium_block", <blockmaterial:iron>);
+hybrid_abyssalium_block.setBlockHardness(10.0);
+hybrid_abyssalium_block.setBlockResistance(12.0);
+hybrid_abyssalium_block.setToolClass("pickaxe");
+hybrid_abyssalium_block.setToolLevel(2);
+hybrid_abyssalium_block.setBlockSoundType(<soundtype:metal>);
+hybrid_abyssalium_block.register();
+
+var electrotine = VanillaFactory.createItem("electrotine");
+electrotine.register();
+
+var electrotine_ore = VanillaFactory.createBlock("electrotine_ore", <blockmaterial:rock>);
+electrotine_ore.setBlockHardness(3.0);
+electrotine_ore.setBlockResistance(3.0);
+electrotine_ore.setToolClass("pickaxe");
+electrotine_ore.setToolLevel(1);
+electrotine_ore.setBlockSoundType(<soundtype:stone>);
+electrotine_ore.register();
+electrotine_ore.setDropHandler(function(drops, world, position, state, fortune) {
+	
+	drops.clear();
+	drops.add(<item:contenttweaker:electrotine> * 2);
+	drops.add(<item:contenttweaker:electrotine> % 50);
+	drops.add(<item:contenttweaker:electrotine> % 50);
+	if(fortune > 0) {
+		drops.add(<item:contenttweaker:electrotine> * fortune);
+	}
+	
+	return;
+});
 
 print("ENDING ContentTweakerBlocks.zs");

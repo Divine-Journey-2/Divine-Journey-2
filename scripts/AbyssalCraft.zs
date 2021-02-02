@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import mods.thermalexpansion.Transposer;
 
 print("STARTING AbyssalCraft.zs");
 
@@ -11,8 +12,12 @@ print("STARTING AbyssalCraft.zs");
 recipes.removeShaped(<abyssalcraft:ironp>, [[<ore:ingotIron>],[<ore:ingotIron>]]);
 recipes.addShapeless(<abyssalcraft:ironp>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1), <thermalfoundation:material:32>]);
 
+# Wooden Crate
+recipes.remove(<abyssalcraft:crate>);
+recipes.addShaped(<abyssalcraft:crate>, [[<ore:logWood>,<ore:plankWood>,<ore:logWood>],[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],[<ore:logWood>,<ore:plankWood>,<ore:logWood>]]);
+
 # Monolith Stone
-recipes.addShaped(<abyssalcraft:stone:7> * 4, [[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>],[<quantumflux:darkstone>,<extrautils2:decorativesolid:8>,<quantumflux:darkstone>],[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShaped(<abyssalcraft:stone:7> * 32, [[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>],[<quantumflux:darkstone>,<extrautils2:decorativesolid:8>,<quantumflux:darkstone>],[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>]]);
 <abyssalcraft:stone:7>.addTooltip(format.gray("Can be obtained by mining the walls of "));
 <abyssalcraft:stone:7>.addTooltip(format.gray("Shoggoth dens, but can also be crafted."));
 
@@ -63,6 +68,9 @@ recipes.addShaped(<abyssalcraft:coraliumstone>, [[<quantumflux:darkstone>,<abyss
 # Monolith Stone Pillar
 recipes.remove(<abyssalcraft:monolithpillar>);
 recipes.addShaped(<abyssalcraft:monolithpillar>, [[<abyssalcraft:stone:7>],[<abyssalcraft:stone:7>],[<abyssalcraft:stone:7>]]);
+
+# Shoggoth Flesh
+mods.thermalexpansion.Transposer.addFillRecipe(<abyssalcraft:shoggothflesh>, <minecraft:rotten_flesh>, <liquid:empoweredoil> * 500, 8000);
 
 # Energy Collector
 recipes.remove(<abyssalcraft:energycollector>);
@@ -118,7 +126,7 @@ recipes.addShaped(<abyssalcraft:oblivionshard>, [[<abyssalcraft:shadowgem>,<cont
 
 # Oblivion Catalyst
 mods.abyssalcraft.InfusionRitual.removeRitual(<abyssalcraft:oc>);
-mods.abyssalcraft.InfusionRitual.addRitual("oblivionCatalyst", 0, -1, 5000, true, <abyssalcraft:oc>, <enderutilities:enderpart:17>, [<enderio:block_cap_bank:3>.withTag({"enderio:energy": 25000000}),<abyssalcraft:oblivionshard>,<enderio:block_cap_bank:3>.withTag({"enderio:energy": 25000000}),<abyssalcraft:oblivionshard>,<enderio:block_cap_bank:3>.withTag({"enderio:energy": 25000000}),<abyssalcraft:oblivionshard>,<enderio:block_cap_bank:3>.withTag({"enderio:energy": 25000000}),<abyssalcraft:oblivionshard>], true);
+mods.abyssalcraft.InfusionRitual.addRitual("oblivionCatalyst", 0, -1, 5000, true, <abyssalcraft:oc>, <enderutilities:enderpart:17>, [<enderio:item_capacitor_melodic>,<abyssalcraft:oblivionshard>,<enderio:item_capacitor_melodic>,<abyssalcraft:oblivionshard>,<enderio:item_capacitor_melodic>,<abyssalcraft:oblivionshard>,<enderio:item_capacitor_melodic>,<abyssalcraft:oblivionshard>], true);
 
 # Gateway Key
 recipes.remove(<abyssalcraft:gatewaykey>);
@@ -173,8 +181,8 @@ recipes.removeShaped(<abyssalcraft:cstonebrick>);
 recipes.addShaped(<abyssalcraft:cstonebrick>, [[null,<abyssalcraft:cbrick>,null],[<abyssalcraft:cbrick>,<abyssalcraft:stone:7>,<abyssalcraft:cbrick>],[null,<abyssalcraft:cbrick>,null]]);
 
 # Coralium Stone
-<abyssalcraft:stone:4>.addTooltip(format.white("To obtain, dump Liquid Antimatter over "));
-<abyssalcraft:stone:4>.addTooltip(format.aqua("Liquid Coralium") + format.white(", and mine up the resulting Stone!"));
+<abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter over "));
+<abyssalcraft:stone:4>.addTooltip(format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
 
 # Transmutator
 recipes.remove(<abyssalcraft:transmutator>);
@@ -189,19 +197,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:transmutator>,
 recipes.remove(<abyssalcraft:necronomicon_cor>);
 recipes.addShaped("abyssalcraft_necronomicon_upgrade1", <abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>.marked("necronomicon"),<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]],
 function(out, ins, cInfo) {
-	if(ins.necronomicon.tag has "PotEnergy") {
-		return out.withTag(ins.necronomicon.tag);
-	} else {
-		return out;
-	}
+	return out.withTag(ins.necronomicon.tag);
 }, null);
 
 # Eye of the Abyss
-<abyssalcraft:eoa>.addTooltip(format.white("To obtain, summon and defeat Asorah, the Fallen "));
-<abyssalcraft:eoa>.addTooltip(format.white("in the ") + format.darkGreen("Abyssal Wasteland") + format.white("."));
+<abyssalcraft:eoa>.addTooltip(format.white("To obtain, summon and defeat Asorah,"));
+<abyssalcraft:eoa>.addTooltip(format.white("the Fallen in the ") + format.darkGreen("Abyssal Wasteland") + format.white("."));
 <abyssalcraft:eoa>.addTooltip(format.white("(You first need an Abyssal Wasteland  "));
-<abyssalcraft:eoa>.addTooltip(format.white("Necronomicon. Open it, and read the )"));
-<abyssalcraft:eoa>.addTooltip(format.white("Rituals/Abyssal Wasteland/Ritual of )"));
+<abyssalcraft:eoa>.addTooltip(format.white("Necronomicon. Open it, and read the "));
+<abyssalcraft:eoa>.addTooltip(format.white("Rituals/Abyssal Wasteland/Ritual of "));
 <abyssalcraft:eoa>.addTooltip(format.white("The Sleeper section.)"));
 
 # Asorah, the Fallen
@@ -237,7 +241,7 @@ add_abyssalcraft_overworld_PE_transfer_item_recipe(<abyssalcraft:tieredenergycon
 
 function add_abyssalcraft_abyssal_wasteland_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
 	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
-	mods.abyssalcraft.InfusionRitual.addRitual(name, 1, 1, 2400 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>,<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>] as IIngredient[], false, ["PotEnergy"]);
+	mods.abyssalcraft.InfusionRitual.addRitual(name, 1, 50, 2400 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>,<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>] as IIngredient[], false, ["PotEnergy"]);
 }
 
 # Abyssal Wasteland Energy Collector
@@ -257,7 +261,7 @@ add_abyssalcraft_abyssal_wasteland_PE_transfer_item_recipe(<abyssalcraft:tierede
 
 # Asorah's Dreaded Gateway Key
 mods.abyssalcraft.InfusionRitual.removeRitual(<abyssalcraft:gatewaykeydl>);
-mods.abyssalcraft.InfusionRitual.addRitual("asorahGatewayKey", 1, 1, 10000, false, <abyssalcraft:gatewaykeydl>, <abyssalcraft:gatewaykey>, [<divinerpg:wildwood_heart>,<abyssalcraft:powerstonetracker>,<divinerpg:wildwood_heart>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>]);
+mods.abyssalcraft.InfusionRitual.addRitual("asorahGatewayKey", 1, 50, 10000, false, <abyssalcraft:gatewaykeydl>, <abyssalcraft:gatewaykey>, [<divinerpg:wildwood_heart>,<abyssalcraft:powerstonetracker>,<divinerpg:wildwood_heart>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>]);
 
 # Dreaded Shard of Abyssalnite
 <abyssalcraft:dreadshard>.addTooltip(format.white("Dropped by ") + format.red("Dreadguards") + format.white(" in the Dreadlands."));
@@ -273,11 +277,7 @@ recipes.addShaped(<abyssalcraft:dreadcloth>, [[<ore:string>,<abyssalcraft:dreadf
 recipes.remove(<abyssalcraft:necronomicon_dre>);
 recipes.addShaped("abyssalcraft_necronomicon_upgrade2", <abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>.marked("necronomicon"),<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]],
 function(out, ins, cInfo) {
-	if(ins.necronomicon.tag has "PotEnergy") {
-		return out.withTag(ins.necronomicon.tag);
-	} else {
-		return out;
-	}
+	return out.withTag(ins.necronomicon.tag);
 }, null);
 
 # Dreadium Sword
@@ -299,5 +299,40 @@ recipes.addShaped(<abyssalcraft:dreadiumshovel>, [[<abyssalcraft:dreadiumingot>]
 # Dreadium Hoe
 recipes.remove(<abyssalcraft:dreadiumhoe>);
 recipes.addShapedMirrored(<abyssalcraft:dreadiumhoe>, [[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>],[null,<abyssalcraft:corhoe>],[null,<immersiveengineering:material:2>]]);
+
+# Removing Materializer Sapling recipes
+val non_materializable_saplings = [<totemic:cedar_sapling>,<traverse:red_autumnal_sapling>,<traverse:brown_autumnal_sapling>,<traverse:orange_autumnal_sapling>,<traverse:yellow_autumnal_sapling>] as IItemStack[];
+for sapling in <ore:treeSapling>.items {
+	if(!(non_materializable_saplings has sapling)) {
+		mods.abyssalcraft.Materializer.removeMaterialization(sapling);
+	}
+}
+
+# Dreadlands Infused Powerstone tooltip
+<abyssalcraft:psdl>.addTooltip(format.white("To obtain, craft a ") + format.darkAqua("Refined Coralium Pickaxe") + format.white(" and about 6"));
+<abyssalcraft:psdl>.addTooltip(format.darkAqua("Powerstone Trackers") + format.white(", then enter the ") + format.darkAqua("Abyssal Wasteland") + format.white(", find"));
+<abyssalcraft:psdl>.addTooltip(format.white("the ") + format.darkAqua("Abyssal Stronghold") + format.white(" with your ") + format.darkAqua("Powerstone Trackers") + format.white(","));
+<abyssalcraft:psdl>.addTooltip(format.white("and in the center mine up your ") + format.red("Dreadlands Infused Powerstone") + format.white("!"));
+
+# Ethaxium
+#<abyssalcraft:stone:5>.addTooltip(format.white("To obtain, use Liquid Coralium with End Stone in a Fluid Transposer."));
+#<abyssalcraft:ethaxiumbrick>.addTooltip(format.white("To obtain, first use Liquid Coralium with End Stone in a Fluid Transposer,"));
+#<abyssalcraft:ethaxiumbrick>.addTooltip(format.white("then smelt the result, and combine it in a 2x2 in your crafting window."));
+
+# Chunk of Abyssalnite
+<abyssalcraft:abychunk>.addTooltip(format.white("Dropped by ") + format.red("Abyssalnite Golems") + format.white(" in the Dreadlands."));
+
+# Dreaded Chunk of Abyssalnite
+<abyssalcraft:dreadchunk>.addTooltip(format.white("Dropped by ") + format.red("Dreaded Abyssalnite Golems") + format.white(" in the Dreadlands."));
+
+# Altar of Cha'garoth (bottom)
+mods.abyssalcraft.CreationRitual.removeRitual(<abyssalcraft:dreadaltarbottom>);
+mods.abyssalcraft.InfusionRitual.addRitual("altarOfChagarothBottom", 2, 51, 20000, true, <abyssalcraft:dreadaltarbottom>, <divinerpg:apalachia_heart>, [<contenttweaker:effulgent_apalachian_spike_crown>,<contenttweaker:hybrid_abyssalium_block>,<contenttweaker:dark_core>,<contenttweaker:hybrid_abyssalium_block>,<abyssalcraft:gatewaykeydl>,<contenttweaker:hybrid_abyssalium_block>,<contenttweaker:suppression_core>,<contenttweaker:hybrid_abyssalium_block>], false);
+
+# Altar of Cha'garoth (top)
+mods.abyssalcraft.CreationRitual.removeRitual(<abyssalcraft:dreadaltartop>);
+mods.abyssalcraft.InfusionRitual.addRitual("altarOfChagarothTop", 2, 51, 20000, true, <abyssalcraft:dreadaltartop>, <divinerpg:apalachia_heart>, [<divinerpg:apalachia_chunk>,<divinerpg:apalachia_chunk>,<contenttweaker:hybrid_abyssalium_block>,<abyssalcraft:dreadcloth>,<abyssalcraft:dreadcloth>,<abyssalcraft:dreadcloth>,<contenttweaker:hybrid_abyssalium_block>,<divinerpg:apalachia_chunk>], false);
+
+# 
 
 print("ENDING AbyssalCraft.zs");

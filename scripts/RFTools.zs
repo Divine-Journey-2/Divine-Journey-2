@@ -116,14 +116,17 @@ recipes.addShaped(<rftools:shape_card:1>, [[<contenttweaker:compressed_obsidian1
 # Shape Card (Quarry)
 recipes.remove(<rftools:shape_card:2>);
 recipes.addShaped(<rftools:shape_card:2>, [[<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>],[<industrialforegoing:block_destroyer>,<rftools:shape_card>,<industrialforegoing:block_destroyer>],[<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<rftools:shape_card:2>, [[<ore:dirt>,<ore:dirt>,<ore:dirt>],[<ore:dirt>,<rftools:shape_card:5>,<ore:dirt>],[<ore:dirt>,<ore:dirt>,<ore:dirt>]]);
 
 # Shape Card (Silk Quarry)
 recipes.remove(<rftools:shape_card:3>);
 recipes.addShaped(<rftools:shape_card:3>, [[<enderio:item_alloy_ingot>,<minecraft:nether_star>,<enderio:item_alloy_ingot>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]}),<rftools:shape_card:2>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]})],[<enderio:item_alloy_ingot>,<minecraft:nether_star>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<rftools:shape_card:3>, [[<ore:dirt>,<ore:dirt>,<ore:dirt>],[<ore:dirt>,<rftools:shape_card:6>,<ore:dirt>],[<ore:dirt>,<ore:dirt>,<ore:dirt>]]);
 
 # Shape Card (Fortune Quarry)
 recipes.remove(<rftools:shape_card:4>);
 recipes.addShaped(<rftools:shape_card:4>, [[<enderio:item_alloy_ingot>,<minecraft:nether_star>,<enderio:item_alloy_ingot>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 35 as short}]}),<rftools:shape_card:2>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 35 as short}]})],[<enderio:item_alloy_ingot>,<minecraft:nether_star>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<rftools:shape_card:4>, [[<ore:dirt>,<ore:dirt>,<ore:dirt>],[<ore:dirt>,<rftools:shape_card:7>,<ore:dirt>],[<ore:dirt>,<ore:dirt>,<ore:dirt>]]);
 
 # Shape Card (Clearing Quarry)
 recipes.remove(<rftools:shape_card:5>);

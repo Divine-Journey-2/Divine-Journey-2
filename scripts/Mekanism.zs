@@ -33,6 +33,9 @@ recipes.addShaped(<mekanism:controlcircuit:1>, [[<ore:ingotEnergeticAlloy>,<meka
 recipes.remove(<mekanism:machineblock:1>);
 recipes.addShaped(<mekanism:machineblock:1>, [[<contenttweaker:enriched_gum>,<mekanism:controlcircuit:1>,<contenttweaker:enriched_gum>],[<minecraft:bucket>,<mekanism:basicblock:8>,<minecraft:bucket>],[<contenttweaker:enriched_gum>,<mekanism:controlcircuit:1>,<contenttweaker:enriched_gum>]]);
 
+# Refined Obsidian only in Osmium Compressor, not in the Arc Furnace
+mods.immersiveengineering.ArcFurnace.removeRecipe(<mekanism:ingot:0>);
+
 # Precision Sawmill
 recipes.remove(<mekanism:machineblock2:5>);
 recipes.addShaped(<mekanism:machineblock2:5>, [[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>],[<chiselsandbits:bitsaw_diamond:0>.noReturn(),<mekanism:basicblock:8>,<chiselsandbits:bitsaw_diamond:0>.noReturn()],[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>]]);
@@ -133,9 +136,16 @@ recipes.addShaped(<mekanism:transmitter:4>.withTag({tier: 0}), [[null,<thermalfo
 recipes.remove(<mekanism:transmitter:5>.withTag({tier: 0}));
 recipes.addShaped(<mekanism:transmitter:5>.withTag({tier: 0}), [[null,<minecraft:redstone>,null],[<minecraft:iron_bars>,<mekanism:transmitter:3>.withTag({tier: 0}),<minecraft:iron_bars>],[null,<minecraft:redstone>,null]]);
 
+# Function to upgrade Caches and Strongboxes while keeping their contents, locked state, owner ID, etc.
+function thermalUpgrade(input_tag as IData, out as IItemStack, new_level as byte) as IItemStack {
+	val new_level_tag = {Level: new_level as byte} as IData;
+	val new_tag = input_tag + new_level_tag;
+	return out.withTag(new_tag);
+}
+
 # Basic Energy Cube
 recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
-recipes.addShaped("mek_energycube", <mekanism:energycube>.withTag({tier: 0}), [[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet1"),<ore:ingotOsgloglas>],[<thermalfoundation:material:160>,<mekanism:basicblock:8>,<thermalfoundation:material:160>],[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet2"),<ore:ingotOsgloglas>]],
+recipes.addShaped("mek_energycube", <mekanism:energycube>.withTag({tier: 0}), [[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet1"),<ore:ingotOsgloglas>],[<thermalfoundation:material:160>,<immersiveengineering:metal_device0:2>,<thermalfoundation:material:160>],[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet2"),<ore:ingotOsgloglas>]],
 function(out, ins, cInfo) {
 	if(ins.tablet1.tag has "mekData") {
 		if(ins.tablet2.tag has "mekData") {
@@ -147,7 +157,7 @@ function(out, ins, cInfo) {
 		if(ins.tablet2.tag has "mekData") {
 			return out.withTag({tier: 0, mekData: {energyStored: ins.tablet2.tag.mekData.energyStored}});
 		} else {
-			return out.withTag({tier: 0});
+			return out;
 		}
 	}
 }, null);
@@ -171,15 +181,15 @@ function mekEnergyCellUpgrade(tag_cube as IData, tag_tablet1 as IData, tag_table
 	} else {
 		if(tag_tablet1 has "mekData") {
 			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: 1, mekData: {energyStored: tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
+				return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
 			} else {
-				return out.withTag({tier: 1, mekData: {energyStored: tag_tablet1.mekData.energyStored}});
+				return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored}});
 			}
 		} else {
 			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: 1, mekData: {energyStored: tag_tablet2.mekData.energyStored}});
+				return out.withTag({tier: level, mekData: {energyStored: tag_tablet2.mekData.energyStored}});
 			} else {
-				return out.withTag({tier: 1});
+				return out.withTag({tier: level});
 			}
 		}
 	}
@@ -499,7 +509,7 @@ recipes.addShaped(<mekanism:machineblock2:15>, [[null,<ore:ingotOsgloglas>,null]
 
 # Digital Miner
 recipes.remove(<mekanism:machineblock:4>);
-recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:teleportationcore>,<mekanism:robit>,<mekanism:teleportationcore>],[<contenttweaker:cosmic_alloy>,<rftools:builder>,<contenttweaker:cosmic_alloy>],[<mekanism:machineblock:15>,<contenttweaker:steaming_restonia_crystal_block>,<mekanism:machineblock:15>]]);
+recipes.addShaped(<mekanism:machineblock:4>, [[<mekanism:teleportationcore>,<mekanism:robit>,<mekanism:teleportationcore>],[<contenttweaker:cosmic_alloy>,<rftools:builder>,<contenttweaker:cosmic_alloy>],[<mekanism:machineblock:15>,<contenttweaker:dread_crystal>,<mekanism:machineblock:15>]]);
 
 # Quantum Entagloporter
 recipes.remove(<mekanism:machineblock3>);
@@ -579,5 +589,16 @@ mods.mekanism.chemical.oxidizer.removeRecipe(<gas:brine>, <mekanism:salt>);
 
 # Removing Sawmill Bed recipes
 mods.mekanism.sawmill.removeRecipe(<minecraft:bed:*>);
+
+# Atomic Disassembler
+recipes.remove(<mekanism:atomicdisassembler>);
+recipes.addShaped("mekanism_atomic_disassembler", <mekanism:atomicdisassembler>, [[<contenttweaker:cosmic_alloy>,<mekanism:energytablet>.marked("tablet"),<contenttweaker:cosmic_alloy>],[<contenttweaker:cosmic_alloy>,<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:cosmic_alloy>],[null,<enderio:item_alloy_endergy_ingot:3>,null]],
+function(out,ins,cInfo) {
+	if(ins.tablet.tag has "mekData") {
+		return out.withTag({mekData: {energyStored: ins.tablet.tag.mekData.energyStored}});
+	} else {
+		return out;
+	}
+}, null);
 
 print("ENDING Mekanism.zs");

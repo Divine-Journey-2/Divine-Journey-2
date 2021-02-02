@@ -26,6 +26,8 @@ import mods.actuallyadditions.Empowerer;
 import mods.thermalexpansion.Sawmill;
 import mods.bloodmagic.BloodAltar;
 import mods.roots.Pyre;
+import mods.botania.Apothecary;
+import mods.botania.PureDaisy;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -341,14 +343,17 @@ mods.actuallyadditions.AtomicReconstructor.addRecipe(glod_crystal, <minecraft:go
 mods.actuallyadditions.AtomicReconstructor.addRecipe(glod_crystal_block, <minecraft:gold_block>, 800);
 recipes.addShaped(glod_crystal_block, [[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal]]);
 recipes.addShapeless(glod_crystal * 9, [glod_crystal_block]);
+recipes.addShapeless(glod_crystal_block, [<contenttweaker:glod_crystal_block>]);
 
 # Empowered Glod Crystal & Block
 mods.actuallyadditions.Empowerer.addRecipe(empowered_glod_crystal, glod_crystal, <enderio:item_material:12>, <thermalfoundation:material:294>, <roots:wildewheet>, <minecraft:blaze_rod>, 3000, 100, [0.976, 0.972, 0.184]);
 recipes.addShaped(empowered_glod_crystal_block, [[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal]]);
 recipes.addShapeless(empowered_glod_crystal * 9, [empowered_glod_crystal_block]);
+recipes.addShapeless(empowered_glod_crystal_block, [<contenttweaker:empowered_glod_crystal_block>]);
 
 # Crystal Bundle
-mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:crystal_bundle>, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:2>, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:4>, empowered_glod_crystal, 6000, 160, [0.894, 0.933, 0.325]);
+EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 3, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 3, empowered_glod_crystal * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
 
 # Empowered Crystal Bundle
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_crystal_bundle>, <contenttweaker:crystal_bundle>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, 8000, 200, [0.596, 0.835, 0.403]);
@@ -478,10 +483,10 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:virtus>, [<contenttweaker
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:intensive_catalyst>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:concentrated_catalyst>,<mekanism:crystal>,<mekanism:crystal:4>,<thermalfoundation:material:1028>,<thermalfoundation:material:1028>], 12000, 200, 4);
 
 # Reductus
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:reductus>, [<contenttweaker:intensive_catalyst>,<contenttweaker:orbis_terrae>,<contenttweaker:magicales>,<actuallyadditions:item_crystal_empowered:4>,<alchemistry:ingot:3>,<enderutilities:enderpart:1>], 24000, 200, 4);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:reductus>, [<contenttweaker:intensive_catalyst>,<contenttweaker:orbis_terrae>,<contenttweaker:magicales>,<actuallyadditions:item_crystal_empowered:4>,<alchemistry:ingot:3>,<contenttweaker:livingmatter>], 24000, 200, 4);
 
 # Tenebrae
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:tenebrae>, [<contenttweaker:intensive_catalyst>,<contenttweaker:crepitous>,<contenttweaker:magicales>,<contenttweaker:compressed_obsidian2>,<enderio:block_alloy:6>,<ore:dyeBlack>], 24000, 200, 4);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:tenebrae>, [<contenttweaker:intensive_catalyst>,<contenttweaker:crepitous>,<contenttweaker:magicales>,<contenttweaker:compressed_obsidian1>,<enderio:block_alloy:6>,<ore:dyeBlack>], 24000, 200, 4);
 
 # Praesidium
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:praesidium>, [<contenttweaker:intensive_catalyst>,<contenttweaker:crepitous>,<contenttweaker:sanctus>,<minecraft:splash_potion>.withTag({Potion: "minecraft:long_strength"}),<abyssalcraft:coraliumstone>,<thermalfoundation:glass_alloy:2>], 24000, 200, 4);
@@ -497,25 +502,25 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:blood_infused_leather>, <co
 mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:industrial_leather>, <liquid:evilcraftblood> * 8000, 1, <contenttweaker:blood_infused_leather>, 160, 0);
 
 # Dirty Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 32, 12);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 8, 2);
 
 # Wizard's Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 16, 6);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 16, 4);
 
 # Neutral Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 80, 40);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 32, 8);
 
 # Tempest Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 80, 40);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 32, 8);
 
 # Damage Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 80, 40);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 32, 8);
 
 # Strength Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 80, 40);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 32, 8);
 
 # Potent Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 200, 100);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 64, 16);
 
 # Empty Core
 recipes.addShaped(<contenttweaker:empty_core>, [[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>],[<contenttweaker:simple_catalyst>,<enderio:item_material:14>,<contenttweaker:simple_catalyst>],[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>]]);
@@ -590,5 +595,66 @@ mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:cracked_runic_plate>, <liq
 
 # Arboreal Essence
 Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence>, [<natura:overworld_sapling:1>,<natura:overworld_sapling2:2>,<natura:overworld_sapling2>,<natura:overworld_sapling:3>,<contenttweaker:hardened_blood_droplet>]);
+
+# Custom AE2 Press duping and crafting
+val custom_ae2_presses = [<contenttweaker:inscriber_estimation_press>,<contenttweaker:inscriber_operation_press>,<contenttweaker:inscriber_methodology_press>,<contenttweaker:inscriber_clearance_press>,<contenttweaker:inscriber_scheduling_press>] as IItemStack[];
+val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<divinerpg:apalachia_chunk>,<divinerpg:mortum_chunk>] as IItemStack[];
+for i in 0 to 5 {
+	Inscriber.addRecipe(custom_ae2_presses[i], <thermalfoundation:storage_alloy>, true, custom_ae2_presses[i]);
+	recipes.addShaped(custom_ae2_presses[i], [[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,custom_ae2_press_materials[i],<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>]]);
+}
+
+# Petal of the Daisy
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_daisy>, [<ore:petalWhite>,<ore:petalWhite>,<ore:petalWhite>,<ore:petalYellow>]);
+
+# Hydrating Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:hydrating_petal>, [<ore:petalLightBlue>,<ore:petalLightBlue>,<ore:petalCyan>,<ore:petalBlue>]);
+
+# Petal of the Inner Flame
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_inner_flame>, [<ore:petalBrown>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalYellow>]);
+
+# Livingmatter
+val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:abyssalsand>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
+for dim_dirt in dimensionalDirts {
+	mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
+}
+<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("It seems only certain Dimensional Dirts")));
+<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("have the ability to be transformed")));
+<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("into Livingmatter... How peculiar.")));
+
+# Hydrid Abyssalium Ingot & Block
+EIOAlloySmelter.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, [<abyssalcraft:abychunk>, <abyssalcraft:abyingot>, <abyssalcraft:dreadiumingot>], 16000);
+EIOAlloySmelter.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, [<abyssalcraft:dreadchunk>, <abyssalcraft:abyingot>, <abyssalcraft:dreadiumingot>], 16000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, <abyssalcraft:abychunk>, null, 120, 200, [<abyssalcraft:abyingot>, <abyssalcraft:dreadiumingot>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, <abyssalcraft:dreadchunk>, null, 120, 200, [<abyssalcraft:abyingot>, <abyssalcraft:dreadiumingot>]);
+recipes.addShaped(<contenttweaker:hybrid_abyssalium_block>, [[<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>],[<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>],[<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>,<contenttweaker:hybrid_abyssalium_ingot>]]);
+recipes.addShapeless(<contenttweaker:hybrid_abyssalium_ingot> * 9, [<contenttweaker:hybrid_abyssalium_block>]);
+
+# Effulgent Spike of Apalachia
+<contenttweaker:effulgent_spike_of_apalachia>.addTooltip(format.lightPurple("Found in Apalachia Dungeons."));
+
+# Effulgent Apalachian Spike Crown
+recipes.addShaped(<contenttweaker:effulgent_apalachian_spike_crown>, [[null,<contenttweaker:effulgent_spike_of_apalachia>,null],[<contenttweaker:effulgent_spike_of_apalachia>,<contenttweaker:effulgent_spike_of_apalachia>,<contenttweaker:effulgent_spike_of_apalachia>]]);
+
+# Electrotine Ore
+<ore:oreElectrotine>.add(<contenttweaker:electrotine_ore>);
+
+# Electrotine
+<ore:dustElectrotine>.add(<contenttweaker:electrotine>);
+<ore:dustElectrotine>.remove(<projectred-core:resource_item:105>);
+recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>]]);
+
+<contenttweaker:electrotine_ore>.addTooltip(format.white("Use the Blood Magic ") + format.red("Mark of the Fallen Tower") + format.white("Ritual"));
+<contenttweaker:electrotine_ore>.addTooltip(format.white("to summon a Meteor containing") + format.aqua("Electrotine Ore") + format.white("."));
+<contenttweaker:electrotine_ore>.addTooltip(format.darkGray(format.italic("<Hold Shift for more info>")));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("1) Get a Master Ritual Stone and an additional 100 Ritual Stones."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("2) Use a ") + format.gray("Ritual Diviner [Dusk]") + format.white(" to setup the Ritual."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("3) Place an Obsidian Block about 10-11 blocks above the Master"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   Ritual Stone to catch the falling Meteor, so your Ritual Stones"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   aren't ruined."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("4) Have at least ") + format.red("1,000,000 LP") + format.white(" in your Life Network."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("5) Activate the Ritual with an ") + format.darkAqua("Awakened Activation Crystal") + format.white("."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("6) Throw a ") + format.blue("Potency Core") + format.white(" on top of the Master Ritual Stone."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. You can automate the process with a Builder."));
 
 print("ENDING ContentTweakerRecipes.zs");

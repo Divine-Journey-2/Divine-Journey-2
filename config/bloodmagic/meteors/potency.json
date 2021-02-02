@@ -1,0 +1,24 @@
+{
+  "catalystStack": {
+    "registryName": {
+      "domain": "contenttweaker",
+      "path": "potency_core"
+    },
+    "meta": 0
+  },
+  "components": [
+    {
+      "weight": 20,
+      "oreName": "stone"
+    },
+    {
+      "weight": 100,
+      "oreName": "oreElectrotine"
+    }
+  ],
+  "explosionStrength": 10.0,
+  "radius": 5,
+  "maxWeight": 1040,
+  "version": 4,
+  "cost": 1000000
+}

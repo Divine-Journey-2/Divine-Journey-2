@@ -20,5 +20,6 @@ mods.jei.JEI.hideCategory("thermalexpansion.charger");
 mods.jei.JEI.hideCategory("EIOWC");
 mods.jei.JEI.hideCategory("EIOTank");
 mods.jei.JEI.hideCategory("mysticalagriculture:reprocessor_jei");
+mods.jei.JEI.hideCategory("moretweaker.erebus.compost.recipes");
 
 print("ENDING JEICategories.zs");

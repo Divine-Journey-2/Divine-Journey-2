@@ -105,7 +105,7 @@ recipes.remove(<bewitchment:silver_hoe>);
 <thermalfoundation:tool.shovel_copper>.maxDamage = 180;
 <thermalfoundation:tool.sword_copper>.maxDamage = 180;
 
-# Thermal Tin Tools
+# Thermal Silver Tools
 <thermalfoundation:tool.pickaxe_silver>.maxDamage = 180;
 <thermalfoundation:tool.axe_silver>.maxDamage = 180;
 <thermalfoundation:tool.shovel_silver>.maxDamage = 180;
@@ -160,12 +160,34 @@ recipes.remove(<bewitchment:silver_hoe>);
 <thermalfoundation:tool.sword_constantan>.maxDamage = 260;
 
 # Hoes
-val hoes = [<minecraft:wooden_hoe>,<minecraft:stone_hoe>,<minecraft:iron_hoe>,<minecraft:golden_hoe>,<minecraft:diamond_hoe>,<abyssalcraft:dhoe>,<actuallyadditions:item_hoe_emerald>,<actuallyadditions:item_hoe_quartz>,<actuallyadditions:item_hoe_obsidian>,<atum:limestone_hoe>,<appliedenergistics2:nether_quartz_hoe>,<appliedenergistics2:certus_quartz_hoe>,<divinerpg:arlemite_hoe>,<divinerpg:rupee_hoe>,<divinerpg:realmite_hoe>,<thermalfoundation:tool.hoe_copper>,<thermalfoundation:tool.hoe_silver>,<thermalfoundation:tool.hoe_lead>,<thermalfoundation:tool.hoe_aluminum>,<thermalfoundation:tool.hoe_nickel>,<thermalfoundation:tool.hoe_platinum>,<thermalfoundation:tool.hoe_electrum>,<thermalfoundation:tool.hoe_invar>,<thermalfoundation:tool.hoe_bronze>,<thermalfoundation:tool.hoe_constantan>] as IItemStack[];
+val hoes = [<minecraft:wooden_hoe>,<minecraft:stone_hoe>,<minecraft:iron_hoe>,<minecraft:golden_hoe>,<minecraft:diamond_hoe>,<abyssalcraft:dhoe>,<actuallyadditions:item_hoe_emerald>,<actuallyadditions:item_hoe_quartz>,<actuallyadditions:item_hoe_obsidian>,<atum:limestone_hoe>,<appliedenergistics2:nether_quartz_hoe>,<appliedenergistics2:certus_quartz_hoe>,<divinerpg:arlemite_hoe>,<divinerpg:rupee_hoe>,<divinerpg:realmite_hoe>,<thermalfoundation:tool.hoe_copper>,<thermalfoundation:tool.hoe_tin>,<thermalfoundation:tool.hoe_silver>,<thermalfoundation:tool.hoe_lead>,<thermalfoundation:tool.hoe_aluminum>,<thermalfoundation:tool.hoe_nickel>,<thermalfoundation:tool.hoe_platinum>,<thermalfoundation:tool.hoe_electrum>,<thermalfoundation:tool.hoe_invar>,<thermalfoundation:tool.hoe_bronze>,<thermalfoundation:tool.hoe_constantan>] as IItemStack[];
 for tool in hoes {
 	tool.maxDamage = 10;
 	tool.addTooltip(format.red(format.bold("Warning: ")) + format.white("Very low base durability item!"));
 	tool.addTooltip(format.white("Use a Tinkers' Construct Mattock instead!"));
 }
+
+# Sickles
+recipes.remove(<extrautils2:sickle_wood>);
+recipes.remove(<extrautils2:sickle_stone>);
+recipes.remove(<extrautils2:sickle_iron>);
+recipes.remove(<extrautils2:sickle_gold>);
+recipes.remove(<extrautils2:sickle_diamond>);
+<thermalfoundation:tool.sickle_copper>.maxDamage = 180;
+<thermalfoundation:tool.sickle_tin>.maxDamage = 150;
+<thermalfoundation:tool.sickle_silver>.maxDamage = 180;
+<thermalfoundation:tool.sickle_lead>.maxDamage = 180;
+<thermalfoundation:tool.sickle_aluminum>.maxDamage = 180;
+<thermalfoundation:tool.sickle_nickel>.maxDamage = 280;
+<thermalfoundation:tool.sickle_platinum>.maxDamage = 1000;
+<thermalfoundation:tool.sickle_steel>.maxDamage = 641;
+<thermalfoundation:tool.sickle_electrum>.maxDamage = 64;
+<thermalfoundation:tool.sickle_invar>.maxDamage = 240;
+<thermalfoundation:tool.sickle_bronze>.maxDamage = 200;
+<thermalfoundation:tool.sickle_constantan>.maxDamage = 260;
+<thermalfoundation:tool.sickle_iron>.maxDamage = 180;
+<thermalfoundation:tool.sickle_diamond>.maxDamage = 400;
+<thermalfoundation:tool.sickle_gold>.maxDamage = 12;
 
 # AIOTS
 <actuallyadditions:wooden_paxel>.maxDamage = 20;
@@ -181,5 +203,11 @@ for tool in hoes {
 <actuallyadditions:item_paxel_crystal_black>.maxDamage = 280;
 <actuallyadditions:item_paxel_crystal_green>.maxDamage = 2200;
 <actuallyadditions:item_paxel_crystal_white>.maxDamage = 280;
+
+# Shickaxes
+recipes.remove(<divinerpg:rupee_shickaxe>);
+recipes.remove(<divinerpg:divine_shickaxe>);
+recipes.remove(<divinerpg:arlemite_shickaxe>);
+
 
 print("ENDING Tools.zs");

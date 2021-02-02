@@ -1,4 +1,8 @@
 # Author: Atricos
+
+import crafttweaker.item.IItemStack;
+import mods.appliedenergistics2.Inscriber;
+
 print("STARTING AppliedEnergistics2.zs");
 
 # Quartz Grindstone
@@ -371,5 +375,12 @@ recipes.addShaped(<appliedenergistics2:part:340>, [[null,<contenttweaker:methodo
 # Interface Terminal
 recipes.remove(<appliedenergistics2:part:480>);
 recipes.addShaped(<appliedenergistics2:part:480>, [[null,<contenttweaker:methodology_processor>,null],[<appliedenergistics2:interface>,<appliedenergistics2:part:360>,<appliedenergistics2:interface>],[null,<contenttweaker:methodology_processor>,null]]);
+
+# Press Duplication recipes
+val ae2_presses = [<appliedenergistics2:material:13>,<appliedenergistics2:material:14>,<appliedenergistics2:material:15>,<appliedenergistics2:material:19>] as IItemStack[];
+for i in 0 to 4 {
+	Inscriber.removeRecipe(ae2_presses[i]);
+	Inscriber.addRecipe(ae2_presses[i], <thermalfoundation:storage_alloy>, true, ae2_presses[i]);
+}
 
 print("ENDING AppliedEnergistics2.zs");

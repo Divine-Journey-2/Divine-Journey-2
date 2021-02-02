@@ -45,6 +45,9 @@ for item in atumNecklaceArtifactOreDict.items {
 	item.addTooltip(format.darkRed(format.bold("Considered as an Atum Necklace Artifact.")));
 }
 
+<atum:relic_ore>.addTooltip(format.white("Mine it up regularly for ") + format.darkRed(format.bold("Dirty Idols, ")) + format.white("or use "));
+<atum:relic_ore>.addTooltip(format.blue(format.bold("Silk Touch")) + format.white(" to obtain the Ore for further processing."));
+
 # Atum Equipment
 recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumRangedArtifactOreDict, atumArmorArtifactOreDict, atumNecklaceArtifactOreDict]);
 
@@ -93,5 +96,23 @@ recipes.remove(<atum:golden_date_enchanted>);
 
 # Linen Bandage
 recipes.remove(<atum:linen_bandage>);
+
+# Separate Linens and Wools
+<ore:woolWhite>.remove(<atum:linen_white>);
+<ore:woolOrange>.remove(<atum:linen_orange>);
+<ore:woolMagenta>.remove(<atum:linen_magenta>);
+<ore:woolLightBlue>.remove(<atum:linen_light_blue>);
+<ore:woolYellow>.remove(<atum:linen_yellow>);
+<ore:woolLime>.remove(<atum:linen_lime>);
+<ore:woolPink>.remove(<atum:linen_pink>);
+<ore:woolGray>.remove(<atum:linen_gray>);
+<ore:woolSilver>.remove(<atum:linen_silver>);
+<ore:woolCyan>.remove(<atum:linen_cyan>);
+<ore:woolPurple>.remove(<atum:linen_purple>);
+<ore:woolBlue>.remove(<atum:linen_blue>);
+<ore:woolBrown>.remove(<atum:linen_brown>);
+<ore:woolGreen>.remove(<atum:linen_green>);
+<ore:woolRed>.remove(<atum:linen_red>);
+<ore:woolBlack>.remove(<atum:linen_black>);
 
 print("ENDING Atum2.zs");

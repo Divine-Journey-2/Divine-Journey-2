@@ -54,4 +54,48 @@ recipes.addShaped(<erebus:jump_boots>, [[<erebus:materials:16>,null,<erebus:mate
 recipes.remove(<erebus:umber_furnace>);
 recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:bucket>,<erebus:umberstone:1>],[<immersiveengineering:material:1>,allCoalBlocks,<immersiveengineering:material:1>],[<erebus:umberstone:1>,<minecraft:bucket>,<erebus:umberstone:1>]]);
 
+# Gneiss Tooltip
+<erebus:gneiss>.addTooltip(format.white("Mining this transforms the block into Lava."));
+<erebus:gneiss>.addTooltip(format.white("To obtain, mine it with flowing Water all around,"));
+<erebus:gneiss>.addTooltip(format.white("to minimize the chance for the drop to burn."));
+
+# Bio-Velocity Tooltip
+<erebus:materials:8>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:8>.addTooltip(format.white("- Solifuges (in the Ulterior Outback biome)"));
+<erebus:materials:8>.addTooltip(format.white("- Centipedes (in most biomes)"));
+
+# Supernatural Velocity Tooltip
+<erebus:materials:13>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:13>.addTooltip(format.white("- Solifuges (in the Ulterior Outback biome)"));
+<erebus:materials:13>.addTooltip(format.white("- Centipedes (in most biomes)"));
+
+# Exoskeleton Plate Tooltip
+<erebus:materials>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials>.addTooltip(format.white("- Bettles (in Underground Jungles,"));
+<erebus:materials>.addTooltip(format.white("           Subterranean Savannahs and Elysian Fields)"));
+<erebus:materials>.addTooltip(format.white("- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)"));
+
+# Magma Crawler Eye Tooltip
+<erebus:materials:60>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:60>.addTooltip(format.white("- Magma Crawlers (in Antlion Overlord Pyramids)"));
+
+# Tarantula Leg Tooltip
+<erebus:erebus_food:4>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:erebus_food:4>.addTooltip(format.white("- Tarantulas (in most biomes)"));
+
+# Fly Wing Tooltip
+<erebus:materials:6>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:6>.addTooltip(format.white("- Flies (in all biomes)"));
+<erebus:materials:6>.addTooltip(format.white("- Botflies (in most biomes)"));
+
+# Dragonfly Wing Tooltip
+<erebus:materials:24>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:24>.addTooltip(format.white("- Dragonflies (on Dragonfly Lilypads in"));
+<erebus:materials:24>.addTooltip(format.white("large water bodies within Submerged Swamps)"));
+
+# Elastic Fibre Tooltip
+<erebus:materials:9>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
+<erebus:materials:9>.addTooltip(format.white("- Locusts (in Elysian Fields and Subterranean Savannahs)"));
+<erebus:materials:9>.addTooltip(format.white("- Punchrooms (in Fungal Forests as an uncommon drop)"));
+
 print("ENDING Erebus.zs");

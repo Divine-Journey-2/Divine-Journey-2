@@ -61,4 +61,12 @@ val gravel_tooltip2 = "2 of them together in a horizontal line." as string;
 <ore:materialStoneTool>.addAll(<ore:stoneMetamorphic>);
 <ore:materialStoneTool>.addAll(<ore:stoneSedimentary>);
 
+# UB Marble <-> Chisel Marble
+recipes.addShaped(<chisel:marble2:7> * 9, [[<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>],[<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>],[<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>,<undergroundbiomes:metamorphic_stone:2>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_stone:2> * 9, [[<chisel:marble2:7>,<chisel:marble2:7>,<chisel:marble2:7>],[<chisel:marble2:7>,<chisel:marble2:7>,<chisel:marble2:7>],[<chisel:marble2:7>,<chisel:marble2:7>,<chisel:marble2:7>]]);
+
+# UB Limestone <-> Chisel Limestone
+recipes.addShaped(<chisel:limestone2:7> * 9, [[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>],[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>],[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_stone> * 9, [[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>],[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>],[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>]]);
+
 print("ENDING UndergroundBiomes.zs");

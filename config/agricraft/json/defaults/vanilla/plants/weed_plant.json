@@ -1,6 +1,6 @@
 {
   "path": "vanilla/plants/weed_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "vanilla:weed_plant",
   "plant_name": "Weed",
   "seed_name": "Weed Seeds",
@@ -15,8 +15,8 @@
   "tier": 1,
   "weedable": true,
   "aggressive": true,
-  "spread_chance": 0.1,
-  "spawn_chance": 0.1,
+  "spread_chance": 0.0,
+  "spawn_chance": 0.0,
   "grass_drop_chance": 0.0,
   "seed_drop_chance": 1.0,
   "seed_drop_bonus": 0.0,

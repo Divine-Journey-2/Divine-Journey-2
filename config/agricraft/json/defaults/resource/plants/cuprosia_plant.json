@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/cuprosia_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:cuprosia_plant",
   "plant_name": "Cuprosia",
   "seed_name": "Cuprosia Seeds",

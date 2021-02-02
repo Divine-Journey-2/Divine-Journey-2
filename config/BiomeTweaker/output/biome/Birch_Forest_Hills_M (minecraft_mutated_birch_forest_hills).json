@@ -23,9 +23,9 @@
     "MOUNTAIN",
     "SUPER_BIRCH_TREES",
     "DENSE",
-    "RARE",
     "FOREST",
-    "THEMED_TREES"
+    "THEMED_TREES",
+    "RARE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

@@ -334,7 +334,7 @@ recipes.addShaped(<extrautils2:teleporter:1>, [[<enderio:block_alloy:6>,<extraut
 
 # Wireless RF Transmitter
 recipes.remove(<extrautils2:powertransmitter>);
-recipes.addShaped(<extrautils2:powertransmitter>, [[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>],[<enderio:item_power_conduit:2>,<quantumflux:craftingpiece>,<enderio:item_power_conduit:2>],[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShaped(<extrautils2:powertransmitter>, [[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>],[<enderio:item_capacitor_melodic>,<quantumflux:craftingpiece>,<enderio:item_capacitor_melodic>],[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>]]);
 
 # Climopgraph Base Unit
 recipes.remove(<extrautils2:terraformer:9>);

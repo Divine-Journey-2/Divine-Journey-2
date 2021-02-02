@@ -46,4 +46,8 @@ recipes.addShaped(<totemic:eagle_bone_whistle>, [[null,<ore:string>,<ore:ingotOs
 # Baykok's Bow Tooltip
 <totemic:baykok_bow>.addTooltip(format.red("Uses up 1 durability point per craft."));
 
+# Totempedia Tooltip
+<totemic:totempedia>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Recipes shown may be incorrect."));
+<totemic:totempedia>.addTooltip(format.white("Always refer to JEI when crafting!"));
+
 print("ENDING Totemic.zs");

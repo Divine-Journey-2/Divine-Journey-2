@@ -1,5 +1,4 @@
 [
-  "Everything below this line will be regenerated from defaults every time. Remove this line if you do not want that",
   {
     "filter": {
       "name": "owner",
@@ -703,6 +702,17 @@
       "ticks": 100,
       "worldgen": true,
       "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "enderio",
+      "name": "block_fluid_construction_alloy",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
     }
   },
   {

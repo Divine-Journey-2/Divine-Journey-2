@@ -30,11 +30,6 @@ function addMaterialToDustCrushing(ingot as IItemStack, dust as IItemStack) {
 	mods.enderio.SagMill.addRecipe([dust], [100], ingot);
 	LightningCrusher.add(dust, ingot);
 	mods.mekanism.crusher.addRecipe(ingot, dust);
-	Mortar.addRecipe(dust, [ingot, null, null, null, null]);
-	Mortar.addRecipe(dust * 2, [ingot, ingot, null, null, null]);
-	Mortar.addRecipe(dust * 3, [ingot, ingot, ingot, null, null]);
-	Mortar.addRecipe(dust * 4, [ingot, ingot, ingot, ingot, null]);
-	Mortar.addRecipe(dust * 5, [ingot, ingot, ingot, ingot, ingot]);
 }
 
 # Ore -> 2x Dust
@@ -222,6 +217,11 @@ Grinder.removeRecipe(<thermalfoundation:material:895>);
 
 # Wheat to Flour
 addMaterialToDustCrushing(<minecraft:wheat>, <natura:materials:2>);
+Mortar.addRecipe(<natura:materials:2>, [<minecraft:wheat>, null, null, null, null]);
+Mortar.addRecipe(<natura:materials:2> * 2, [<minecraft:wheat>, <minecraft:wheat>, null, null, null]);
+Mortar.addRecipe(<natura:materials:2> * 3, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, null, null]);
+Mortar.addRecipe(<natura:materials:2> * 4, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, null]);
+Mortar.addRecipe(<natura:materials:2> * 5, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]);
 
 # QuantumFlux Industrial Grade Graphite Ore to Graphite Dust
 addOreToIngotSmelting(<quantumflux:graphiteore>, <quantumflux:graphitedust>);
@@ -249,18 +249,28 @@ LightningCrusher.add(<mekanism:otherdust:4>, <alchemistry:ingot:3>);
 mods.mekanism.crusher.addRecipe(<alchemistry:ingot:3>, <mekanism:otherdust:4>);
 
 # Eden Ore -> Eden Fragments
+mods.thermalexpansion.Pulverizer.removeRecipe(<divinerpg:eden_ore>);
+mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:eden_gem>);
 addGemToDustProcessing(<divinerpg:eden_ore>, <divinerpg:eden_fragments>, null, 3);
 
 # Wildwood Ore -> Wildwood Fragments
+mods.thermalexpansion.Pulverizer.removeRecipe(<divinerpg:wildwood_ore>);
+mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:wildwood_gem>);
 addGemToDustProcessing(<divinerpg:wildwood_ore>, <divinerpg:wildwood_fragments>, null, 3);
 
 # Apalachia Ore -> Apalachia Fragments
+mods.thermalexpansion.Pulverizer.removeRecipe(<divinerpg:apalachia_ore>);
+mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:apalachia_gem>);
 addGemToDustProcessing(<divinerpg:apalachia_ore>, <divinerpg:apalachia_fragments>, null, 3);
 
 # Skythern Ore -> Skythern Fragments
+mods.thermalexpansion.Pulverizer.removeRecipe(<divinerpg:skythern_ore>);
+mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:skythern_gem>);
 addGemToDustProcessing(<divinerpg:skythern_ore>, <divinerpg:skythern_fragments>, null, 3);
 
 # Mortum Ore -> Mortum Fragments
+mods.thermalexpansion.Pulverizer.removeRecipe(<divinerpg:mortum_ore>);
+mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:mortum_gem>);
 addGemToDustProcessing(<divinerpg:mortum_ore>, <divinerpg:mortum_fragments>, null, 3);
 
 function divinerpg_gem_to_dust(gem as IItemStack, dust as IItemStack) {
@@ -365,5 +375,140 @@ IECrusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <ore:oreAmethyst>, 4000, n
 
 # Magic Crystal
 addOreToGemProcessing(<ebwizardry:crystal_ore>, <ebwizardry:magic_crystal>, null, 2, 4);
+
+# Erebus Gneiss -> Gneiss Rock
+addOreToGemProcessing(<erebus:gneiss>, <erebus:materials:47>, null, 4, 4);
+
+# Fluix Dust
+recipes.addShapeless(<appliedenergistics2:material:8>, [<appliedenergistics2:material:7>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>, 4000);
+AACrusher.addRecipe(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>);
+EUCrusher.add(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>);
+LightningCrusher.add(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>);
+
+# Hay Bale -> 9x Wheat
+IECrusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>, 4000);
+AACrusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>, 2000);
+EUCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
+mods.enderio.SagMill.addRecipe([<minecraft:wheat> * 9], [100], <minecraft:hay_block>);
+LightningCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
+mods.mekanism.crusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
+
+# Nether Ore fixes & additions
+<ore:oreEmerald>.remove(<bno:ore_netheremerald>);
+<ore:oreNetherEmerald>.add(<bno:ore_netheremerald>);
+<ore:oreDiamond>.remove(<bno:ore_netherdiamond>);
+<ore:oreNetherDiamond>.add(<bno:ore_netherdiamond>);
+<ore:oreRedstone>.remove(<bno:ore_netherredstone>);
+<ore:oreNetherRedstone>.add(<bno:ore_netherredstone>);
+<ore:oreLapis>.remove(<bno:ore_netherlapis>);
+<ore:oreNetherLapis>.add(<bno:ore_netherlapis>);
+<ore:oreCoal>.remove(<bno:ore_nethercoal>);
+<ore:oreNetherCoal>.add(<bno:ore_nethercoal>);
+<ore:oreGold>.remove(<bno:ore_nethergold>);
+<ore:oreNetherGold>.add(<bno:ore_nethergold>);
+<ore:oreIron>.remove(<bno:ore_netheriron>);
+<ore:oreNetherIron>.add(<bno:ore_netheriron>);
+<ore:oreCopper>.remove(<bno:ore_nethercopper>);
+<ore:oreNetherCopper>.add(<bno:ore_nethercopper>);
+<ore:oreTin>.remove(<bno:ore_nethertin>);
+<ore:oreNetherTin>.add(<bno:ore_nethertin>);
+
+mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:64>);
+AACrusher.addRecipe(<thermalfoundation:material:64>, <thermalfoundation:material:128>);
+AACrusher.addRecipe(<thermalfoundation:material:64> * 4, <bno:ore_nethercopper>, <thermalfoundation:material:1>, 20);
+for copper_ore in <ore:oreCopper>.items {
+	AACrusher.addRecipe(<thermalfoundation:material:64> * 2, copper_ore, <thermalfoundation:material:1>, 20);
+}
+
+mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:65>);
+AACrusher.addRecipe(<thermalfoundation:material:65>, <thermalfoundation:material:129>);
+AACrusher.addRecipe(<thermalfoundation:material:65> * 4, <bno:ore_nethertin>, <thermalfoundation:material>, 20);
+for tin_ore in <ore:oreTin>.items {
+	AACrusher.addRecipe(<thermalfoundation:material:65> * 2, tin_ore, <thermalfoundation:material>, 20);
+}
+
+mods.actuallyadditions.Crusher.removeRecipe(<minecraft:redstone>);
+AACrusher.addRecipe(<minecraft:redstone> * 6, <bno:ore_netherredstone>, <thermalfoundation:material:866>, 25);
+for redstone_ore in <ore:oreRedstone>.items {
+	AACrusher.addRecipe(<minecraft:redstone> * 6, redstone_ore, <thermalfoundation:material:866>, 25);
+}
+
+function addNetherOreToGemProcessing(ore as IItemStack, dust as IItemStack, gem as IItemStack, dustAmount as int, gemAmount as int, secondaryOutput as IItemStack) {
+	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.1);
+	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
+	EUCrusher.add(gem * gemAmount, ore, gem, 0.2f);
+	LightningCrusher.add(dust * dustAmount, ore);
+	mods.astralsorcery.StarlightInfusion.addInfusion(ore, gem * gemAmount, false, 1, 200);
+}
+
+function addNetherOreToIngotProcessing(ore as IItemStack, dust as IItemStack, ingot as IItemStack, secondaryOutput as IItemStack) {
+	IECrusher.addRecipe(dust * 2, ore, 4000, secondaryOutput, 0.1);
+	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
+	EUCrusher.add(dust * 2, ore, secondaryOutput, 0.1f);
+	LightningCrusher.add(dust * 2, ore);
+	mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
+}
+
+addNetherOreToGemProcessing(<bno:ore_netheremerald>, <actuallyadditions:item_dust:3>, <minecraft:emerald>, 3, 2, null);
+addNetherOreToGemProcessing(<bno:ore_netherdiamond>, <mekanism:otherdust>, <minecraft:diamond>, 3, 2, null);
+addNetherOreToGemProcessing(<bno:ore_netherlapis>, <actuallyadditions:item_dust:4>, <minecraft:dye:4>, 12, 9, <thermalfoundation:material:771>);
+addNetherOreToGemProcessing(<bno:ore_nethercoal>, <thermalfoundation:material:768>, <minecraft:coal>, 4, 4, null);
+addNetherOreToGemProcessing(<bno:ore_netherredstone>, <minecraft:redstone>, <minecraft:redstone>, 8, 8, <thermalfoundation:material:866>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<bno:ore_netherredstone>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:redstone> * 6, <bno:ore_netherredstone>, 4000, <thermalfoundation:material:866>, 25);
+mods.enderio.SagMill.removeRecipe(<bno:ore_netherredstone>);
+mods.enderio.SagMill.addRecipe([<minecraft:redstone> * 6, <thermalfoundation:material:866>, <minecraft:netherrack>, <extrautils2:ingredients>], [1,0.25,0.1,0.01], <bno:ore_netherredstone>, "NONE", 3600);
+
+addNetherOreToIngotProcessing(<bno:ore_nethergold>, <thermalfoundation:material:1>, <minecraft:gold_ingot>, <thermalfoundation:material:866>);
+addNetherOreToIngotProcessing(<bno:ore_netheriron>, <thermalfoundation:material>, <minecraft:iron_ingot>, <thermalfoundation:material:69>);
+addNetherOreToIngotProcessing(<bno:ore_nethercopper>, <thermalfoundation:material:64>, <thermalfoundation:material:128>, <thermalfoundation:material:1>);
+addNetherOreToIngotProcessing(<bno:ore_nethertin>, <thermalfoundation:material:65>, <thermalfoundation:material:129>, null);
+
+function addAdditionalNetherGemProcessing(ore as IItemStack, gem as IItemStack, gemAmount as int, secondaryOutput as IItemStack) {
+	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.4);
+	AACrusher.addRecipe(gem * gemAmount, ore, secondaryOutput, 0.4);
+	mods.astralsorcery.Grindstone.addRecipe(ore, gem);
+	Grinder.addRecipe(gem, ore, 4, gem, 0.9);
+	EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.4f);
+	LightningCrusher.add(gem * gemAmount, ore);
+	mods.mekanism.enrichment.addRecipe(ore, gem * gemAmount);
+}
+
+addAdditionalNetherGemProcessing(<thermalfoundation:ore_fluid:3>,<thermalfoundation:material:894>,3,<thermalfoundation:material:771>);
+mods.mekanism.enrichment.removeRecipe(<mysticalagriculture:nether_inferium_ore>);
+addAdditionalNetherGemProcessing(<mysticalagriculture:nether_inferium_ore>,<mysticalagriculture:crafting>,5,null);
+mods.mekanism.enrichment.removeRecipe(<mysticalagriculture:nether_prosperity_ore>);
+addAdditionalNetherGemProcessing(<mysticalagriculture:nether_prosperity_ore>,<mysticalagriculture:crafting:5>,5,null);
+
+# Redstone Ore SAG Milling can produce a Resonating Redstone Crystal
+mods.enderio.SagMill.removeRecipe(<minecraft:redstone_ore>);
+mods.enderio.SagMill.addRecipe([<minecraft:redstone> * 6, <thermalfoundation:material:866>, <minecraft:cobblestone>, <extrautils2:ingredients>], [1,0.25,0.1,0.01], <minecraft:redstone_ore>, "NONE", 3600);
+
+# Sky Stone Dust
+recipes.addShapeless(<appliedenergistics2:material:45>, [<appliedenergistics2:sky_stone_block>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 4000);
+AACrusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
+EUCrusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
+mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>], [100], <appliedenergistics2:sky_stone_block>);
+LightningCrusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
+mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
+
+# Pulverized Iridium
+Grinder.addRecipe(<thermalfoundation:material:71>, <thermalfoundation:material:135>, 4);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:71>], [100], <thermalfoundation:material:135>);
+
+# Crushed Black Quartz
+recipes.addShapeless(<actuallyadditions:item_dust:7>, [<actuallyadditions:item_misc:5>, <ore:dustPetrotheum>]);
+Grinder.addRecipe(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>, 4);
+mods.enderio.SagMill.addRecipe([<actuallyadditions:item_dust:7>], [100], <actuallyadditions:item_misc:5>);
+
+# Resonating Redstone Crystal
+mods.thermalexpansion.Pulverizer.removeRecipe(<extrautils2:ingredients>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<extrautils2:ingredients>);
+LightningCrusher.remove(<minecraft:redstone>);
+LightningCrusher.add(<minecraft:redstone> * 6, <ore:oreRedstone>);
+LightningCrusher.add(<minecraft:redstone> * 6, <bno:ore_netherredstone>);
 
 print("ENDING OreProcessingAdditions.zs");

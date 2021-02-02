@@ -7,6 +7,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
+import mods.industrialforegoing.LaserDrill;
 
 print("STARTING IndustrialForegoing.zs");
 
@@ -287,5 +288,8 @@ recipes.addShaped(<industrialforegoing:laser_base>, [[<industrialforegoing:plast
 # Laser Drill
 recipes.remove(<industrialforegoing:laser_drill>);
 recipes.addShaped(<industrialforegoing:laser_drill>, [[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>],[<contenttweaker:steaming_restonia_crystal>,<teslacorelib:machine_case>,<contenttweaker:steaming_restonia_crystal>],[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>]]);
+
+# Pink Slime OreDict
+<ore:slimeball>.remove(<industrialforegoing:pink_slime>);
 
 print("ENDING IndustrialForegoing.zs");

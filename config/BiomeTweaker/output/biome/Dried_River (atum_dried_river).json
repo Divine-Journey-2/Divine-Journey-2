@@ -20,13 +20,13 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "RIVER",
-    "SANDY",
-    "WATER",
-    "SPARSE",
     "ATUM",
+    "SANDY",
+    "SPARSE",
     "HOT",
-    "DRY"
+    "WATER",
+    "DRY",
+    "RIVER"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -108,6 +108,12 @@
       "Weight": 20,
       "Min Group Count": 1,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBasalz",
+      "Weight": 120,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     }
   ],
   "Spawnable Water Creatures": [],
@@ -120,5 +126,5 @@
     }
   ],
   "Spawn Biome": false,
-  "Tweaked": false
+  "Tweaked": true
 }

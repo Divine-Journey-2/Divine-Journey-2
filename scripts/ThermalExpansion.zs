@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
+import mods.thermalexpansion.Crucible;
 
 print("STARTING ThermalExpansion.zs");
 
@@ -460,5 +461,35 @@ recipes.remove(<thermalexpansion:augment:368>);
 recipes.addShaped(<thermalexpansion:augment:368>, [[null,<thermalfoundation:material:292>,null],[<thermalfoundation:glass:3>,<thermalfoundation:material:515>,<thermalfoundation:glass:3>],[null,<minecraft:blaze_rod>,null]]);
 recipes.remove(<thermalexpansion:augment:576>);
 recipes.addShaped(<thermalexpansion:augment:576>, [[null,<thermalfoundation:material:24>,null],[<thermalfoundation:material:320>,<minecraft:bucket>,<thermalfoundation:material:320>],[null,<thermalfoundation:glass:3>,null]]);
+
+# Tier III-IV Potion tooltips
+val all_tier_iii_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leaping3"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness3"}),<minecraft:potion>.withTag({Potion: "cofhcore:healing3"}),<minecraft:potion>.withTag({Potion: "cofhcore:harming3"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison3"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration3"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength3"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste3"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance3"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption3"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck3"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck3"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither3"}),<minecraft:potion>.withTag({Potion: "cofhcore:leaping3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither3+"})] as IItemStack[];
+val all_tier_iv_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<minecraft:potion>.withTag({Potion: "cofhcore:healing4"}),<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison4"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance4"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither4"})] as IItemStack[];
+
+for p in all_tier_iii_potions {
+	p.addTooltip(format.white("To obtain, create the Tier III liquid potion in a"));
+	p.addTooltip(format.white("Fractionating Still with an Alchemical Retort Augment."));
+}
+
+for p in all_tier_iv_potions {
+	p.addTooltip(format.white("To obtain, create the Tier III then the Tier IV liquid potion"));
+	p.addTooltip(format.white("in a Fractionating Still with an Alchemical Retort Augment."));
+}
+
+# Fluxed Phyto-Gro tooltip
+<thermalfoundation:fertilizer:2>.addTooltip(format.white("To obtain, charge ") + format.green("Rich Phyto-Grow") + format.white(" in an Energetic Infuser."));
+
+# Magma Crucible should accept any Cobblestone variant
+mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
+for cobble in <ore:cobblestone>.items {
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, cobble, 300000);
+}
+mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:red_rock_cobblestone>, 300000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:blue_rock_cobblestone>, 300000);
+for i in 0 to 8 {
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:igneous_cobble>.withDamage(i), 300000);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:metamorphic_cobble>.withDamage(i), 300000);
+}
+mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 
 print("ENDING ThermalExpansion.zs");

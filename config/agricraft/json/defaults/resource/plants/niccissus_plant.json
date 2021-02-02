@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/niccissus_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:niccissus_plant",
   "plant_name": "Niccissus",
   "seed_name": "Niccissus Seeds",

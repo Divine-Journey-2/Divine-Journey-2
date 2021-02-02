@@ -11,6 +11,7 @@ import mods.tconstruct.Casting;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.thermalexpansion.Compactor;
+import mods.roots.Fey;
 
 print("STARTING EnderIO.zs");
 
@@ -146,7 +147,7 @@ recipes.addShaped(<enderio:item_endergy_conduit> * 6, [[<enderio:item_material:4
 
 # Iron Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:1>);
-recipes.addShaped(<enderio:item_endergy_conduit:1> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_alloy_ingot:9>,<enderio:item_material:75>,<enderio:item_alloy_ingot:9>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+recipes.addShaped(<enderio:item_endergy_conduit:1> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<minecraft:iron_ingot>,<enderio:item_material:75>,<minecraft:iron_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Aluminum Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:2>);
@@ -340,7 +341,7 @@ recipes.addShaped(<enderio:item_material:53>, [[<enderio:item_alloy_ingot:7>,<en
 
 # Endervoir
 recipes.remove(<enderio:block_reservoir>);
-recipes.addShaped(<enderio:block_reservoir> * 4, [[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<roots:unending_bowl>,<thermalfoundation:glass:3>],[<thermalfoundation:glass:3>,<thermalfoundation:glass:3>,<thermalfoundation:glass:3>]]);
+Fey.addRecipe("enderio:block_reservoir", <enderio:block_reservoir>, [<minecraft:water_bucket>, <roots:dewgonia>, <roots:dewgonia>, <roots:terra_moss>, <roots:mortar>]);
 
 # Slice'n'Splice
 recipes.remove(<enderio:block_slice_and_splice>);
@@ -678,5 +679,23 @@ recipes.addShaped(<enderio:item_coord_selector>, [[<enderio:item_alloy_ingot>,<e
 # Powered Spawner
 recipes.remove(<enderio:block_powered_spawner>);
 recipes.addShaped(<enderio:block_powered_spawner>, [[<enderio:block_alloy:7>,<enderio:item_material:18>,<enderio:block_alloy:7>],[<simplyjetpacks:metaitemmods:24>,<rftools:spawner>,<simplyjetpacks:metaitemmods:24>],[<simplyjetpacks:metaitemmods:11>,<enderio:block_franken_zombie_generator>,<simplyjetpacks:metaitemmods:11>]]);
+
+# Removing Iron Alloy Ingot, Nugget & Block, and related recipes
+recipes.remove(<enderio:item_alloy_ingot:9>);
+recipes.remove(<enderio:block_alloy:9>);
+recipes.remove(<enderio:item_alloy_nugget:9>);
+recipes.remove(<enderio:item_alloy_ball:9>);
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:9>);
+recipes.remove(<enderio:block_electric_light:2>);
+recipes.addShaped(<enderio:block_electric_light:2>, [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<minecraft:iron_ingot>,<ore:glowstone>,<minecraft:iron_ingot>]]);
+recipes.remove(<enderio:block_exit_rail>);
+recipes.addShaped(<enderio:block_exit_rail>, [[<minecraft:iron_ingot>,<minecraft:piston>,<minecraft:iron_ingot>],[<minecraft:iron_ingot>,<minecraft:stone_pressure_plate>,<minecraft:iron_ingot>],[<minecraft:iron_ingot>,<minecraft:redstone_torch>,<minecraft:iron_ingot>]]);
+recipes.remove(<enderio:item_dark_steel_shield>);
+recipes.addShaped(<enderio:item_dark_steel_shield>, [[<enderio:item_alloy_ingot:6>,<minecraft:iron_ingot>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,null,<enderio:item_alloy_ingot:6>],[null,<enderio:item_alloy_ingot:6>,null]]);
+
+# Organic Black Dye
+EIOAlloySmelter.removeRecipe(<enderio:item_material:50>);
+EIOAlloySmelter.addRecipe(<enderio:item_material:50> * 2, [<ore:allCoalDusts> * 6, <ore:slimeball>, <minecraft:coal:*>], 2000);
+EIOAlloySmelter.addRecipe(<enderio:item_material:50>, [<ore:allCoalDusts> * 3, <minecraft:egg>, <minecraft:coal:*>], 1500);
 
 print("ENDING EnderIO.zs");

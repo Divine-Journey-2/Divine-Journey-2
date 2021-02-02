@@ -1,6 +1,6 @@
 {
   "path": "resource/plants/diamahlia_plant.json",
-  "enabled": true,
+  "enabled": false,
   "id": "resource:diamahlia_plant",
   "plant_name": "Diamahlia",
   "seed_name": "Diamahlia Seeds",

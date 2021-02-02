@@ -206,26 +206,6 @@
 		]
 	},
 	{
-		"item": "oreGalena",
-		"color": 10,
-		"rarity": [
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 15,
-				"depth_max": 30,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
 		"item": "oreIridium",
 		"color": 0,
 		"rarity": [
@@ -246,112 +226,6 @@
 		]
 	},
 	{
-		"item": "oreRuby",
-		"color": 14,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "oreSapphire",
-		"color": 11,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "orePeridot",
-		"color": 13,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "oreSodalite",
-		"color": 11,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "oreBauxite",
-		"color": 12,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 50,
-				"depth_max": 100,
-				"weight": 6
-			}
-		]
-	},
-	{
-		"item": "orePyrite",
-		"color": 12,
-		"rarity": [
-			{
-				"whitelist": "minecraft:taiga, minecraft:taiga_hills, minecraft:taiga_mountains",
-				"blacklist": "",
-				"depth_min": 50,
-				"depth_max": 100,
-				"weight": 6
-			}
-		]
-	},
-	{
 		"item": "oreCinnabar",
 		"color": 14,
 		"rarity": [
@@ -365,32 +239,6 @@
 		]
 	},
 	{
-		"item": "oreTungsten",
-		"color": 15,
-		"rarity": [
-			{
-				"whitelist": "minecraft:sky",
-				"blacklist": "",
-				"depth_min": 20,
-				"depth_max": 70,
-				"weight": 6
-			}
-		]
-	},
-	{
-		"item": "oreSheldonite",
-		"color": 0,
-		"rarity": [
-			{
-				"whitelist": "minecraft:sky",
-				"blacklist": "",
-				"depth_min": 20,
-				"depth_max": 70,
-				"weight": 2
-			}
-		]
-	},
-	{
 		"item": "orePlatinum",
 		"color": 3,
 		"rarity": [
@@ -400,19 +248,6 @@
 				"depth_min": 5,
 				"depth_max": 16,
 				"weight": 2
-			}
-		]
-	},
-	{
-		"item": "oreTetrahedrite",
-		"color": 14,
-		"rarity": [
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 60,
-				"depth_max": 90,
-				"weight": 4
 			}
 		]
 	},
@@ -530,21 +365,21 @@
 				"whitelist": "minecraft:sky",
 				"blacklist": "",
 				"depth_min": 5,
-				"depth_max": 68,
-				"weight": 10
+				"depth_max": 12,
+				"weight": 4
 			},
 			{
 				"whitelist": "minecraft:hell",
 				"blacklist": "",
 				"depth_min": 5,
-				"depth_max": 68,
-				"weight": 4
+				"depth_max": 12,
+				"weight": 2
 			},
 			{
 				"whitelist": "",
 				"blacklist": "minecraft:hell, minecraft:sky",
 				"depth_min": 5,
-				"depth_max": 68,
+				"depth_max": 12,
 				"weight": 1
 			}
 		]
@@ -598,6 +433,240 @@
 				"depth_min": 35,
 				"depth_max": 65,
 				"weight": 6
+			}
+		]
+	},
+	{
+		"item": "thermalfoundation:ore_fluid:1",
+		"color": 15,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "traverse:arid_highland, traverse:red_desert, traverse:mountainous_desert, traverse:desert_shrubland, atum:dead_oasis, atum:deadwood_forest, atum:dried_river, atum:limestone_crags, atum:limestone_mountains, atum:sand_dunes, atum:sand_hills, atum:sand_plains, atum:oasis, minecraft:hell, minecraft:sky",
+				"depth_min": 1,
+				"depth_max": 24,
+				"weight": 10
+			}
+		]
+	},
+	{
+		"item": "thermalfoundation:ore_fluid:0",
+		"color": 15,
+		"rarity": [
+			{
+				"whitelist": "traverse:arid_highland, traverse:red_desert, traverse:mountainous_desert, traverse:desert_shrubland, atum:dead_oasis, atum:deadwood_forest, atum:dried_river, atum:limestone_crags, atum:limestone_mountains, atum:sand_dunes, atum:sand_hills, atum:sand_plains, atum:oasis",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 24,
+				"weight": 10
+			}
+		]
+	},
+	{
+		"item": "appliedenergistics2:material",
+		"color": 3,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 16,
+				"depth_max": 64,
+				"weight": 16
+			}
+		]
+	},
+	{
+		"item": "appliedenergistics2:material:1",
+		"color": 3,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 16,
+				"depth_max": 64,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "mekanism:oreblock",
+		"color": 7,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 6
+			}
+		]
+	},
+	{
+		"item": "abyssalcraft:coraliumore",
+		"color": 9,
+		"rarity": [
+			{
+				"whitelist": "abyssalcraft:coralium_infested_swamp",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 64,
+				"weight": 10
+			}
+		]
+	},
+	{
+		"item": "mysticalworld:amethyst_ore",
+		"color": 10,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 6,
+				"depth_max": 16,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "bewitchment:opal_ore",
+		"color": 8,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 6,
+				"depth_max": 16,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "bewitchment:garnet_ore",
+		"color": 2,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 6,
+				"depth_max": 16,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "aether_legacy:ambrosium_ore",
+		"color": 4,
+		"rarity": [
+			{
+				"whitelist": "aether_legacy:aether_highlands",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 16
+			}
+		]
+	},
+	{
+		"item": "aether_legacy:zanite_ore",
+		"color": 10,
+		"rarity": [
+			{
+				"whitelist": "aether_legacy:aether_highlands",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 8
+			}
+		]
+	},
+	{
+		"item": "aether_legacy:gravitite_ore",
+		"color": 6,
+		"rarity": [
+			{
+				"whitelist": "aether_legacy:aether_highlands",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "atum:bone_ore",
+		"color": 0,
+		"rarity": [
+			{
+				"whitelist": "atum:dead_oasis, atum:deadwood_forest, atum:dried_river, atum:limestone_crags, atum:limestone_mountains, atum:sand_dunes, atum:sand_hills, atum:sand_plains, atum:oasis",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 12
+			}
+		]
+	},
+	{
+		"item": "atum:relic_ore",
+		"color": 12,
+		"rarity": [
+			{
+				"whitelist": "atum:dead_oasis, atum:deadwood_forest, atum:dried_river, atum:limestone_crags, atum:limestone_mountains, atum:sand_dunes, atum:sand_hills, atum:sand_plains, atum:oasis",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 68,
+				"weight": 8
+			}
+		]
+	},
+	{
+		"item": "erebus:ore_jade",
+		"color": 13,
+		"rarity": [
+			{
+				"whitelist": "erebus:underground_jungle, erebus:volcanic_desert, erebus:subterranean_savannah, erebus:elysian_fields, erebus:ulterior_outback, erebus:fungal_forest, erebus:submerged_swamp, erebus:fields_sub_forest, erebus:petrified_forest",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 32,
+				"weight": 10
+			}
+		]
+	},
+	{
+		"item": "erebus:ore_gneiss",
+		"color": 2,
+		"rarity": [
+			{
+				"whitelist": "erebus:underground_jungle, erebus:volcanic_desert, erebus:subterranean_savannah, erebus:elysian_fields, erebus:ulterior_outback, erebus:fungal_forest, erebus:submerged_swamp, erebus:fields_sub_forest, erebus:petrified_forest",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 32,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "erebus:ore_fossil",
+		"color": 0,
+		"rarity": [
+			{
+				"whitelist": "erebus:underground_jungle, erebus:volcanic_desert, erebus:subterranean_savannah, erebus:elysian_fields, erebus:ulterior_outback, erebus:fungal_forest, erebus:submerged_swamp, erebus:fields_sub_forest, erebus:petrified_forest",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 32,
+				"weight": 4
+			}
+		]
+	},
+	{
+		"item": "erebus:ore_petrified_wood",
+		"color": 12,
+		"rarity": [
+			{
+				"whitelist": "erebus:underground_jungle, erebus:volcanic_desert, erebus:subterranean_savannah, erebus:elysian_fields, erebus:ulterior_outback, erebus:fungal_forest, erebus:submerged_swamp, erebus:fields_sub_forest, erebus:petrified_forest",
+				"blacklist": "",
+				"depth_min": 1,
+				"depth_max": 32,
+				"weight": 4
 			}
 		]
 	}

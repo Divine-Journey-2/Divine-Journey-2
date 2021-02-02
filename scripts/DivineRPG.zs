@@ -109,4 +109,66 @@ recipes.addShapedMirrored(<divinerpg:kraken_skin>, [[<contenttweaker:treated_lea
 recipes.remove(<divinerpg:aqua_ball>);
 recipes.addShaped(<divinerpg:aqua_ball>, [[<minecraft:water_bucket>,<ore:slimeball>,<minecraft:water_bucket>],[<minecraft:water_bucket>,<divinerpg:kraken_skin>,<minecraft:water_bucket>],[<minecraft:water_bucket>,<ore:slimeball>,<minecraft:water_bucket>]]);
 
+# Arlemite Armor
+recipes.remove(<divinerpg:arlemite_helmet>);
+recipes.addShaped(<divinerpg:arlemite_helmet>, [[<divinerpg:arlemite_block>,<thermalfoundation:material:136>,<divinerpg:arlemite_block>],[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>]]);
+recipes.remove(<divinerpg:arlemite_chestplate>);
+recipes.addShaped(<divinerpg:arlemite_chestplate>, [[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:arlemite_block>,<thermalfoundation:material:136>,<divinerpg:arlemite_block>],[<thermalfoundation:material:136>,<divinerpg:arlemite_block>,<thermalfoundation:material:136>]]);
+recipes.remove(<divinerpg:arlemite_leggings>);
+recipes.addShaped(<divinerpg:arlemite_leggings>, [[<thermalfoundation:material:136>,<divinerpg:arlemite_block>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:arlemite_block>,null,<divinerpg:arlemite_block>]]);
+recipes.remove(<divinerpg:arlemite_boots>);
+recipes.addShaped(<divinerpg:arlemite_boots>, [[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:arlemite_block>,null,<divinerpg:arlemite_block>]]);
+
+# Rupee Armor
+recipes.remove(<divinerpg:rupee_helmet>);
+recipes.addShaped(<divinerpg:rupee_helmet>, [[<divinerpg:rupee_block>,<thermalfoundation:material:136>,<divinerpg:rupee_block>],[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>]]);
+recipes.remove(<divinerpg:rupee_chestplate>);
+recipes.addShaped(<divinerpg:rupee_chestplate>, [[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:rupee_block>,<thermalfoundation:material:136>,<divinerpg:rupee_block>],[<thermalfoundation:material:136>,<divinerpg:rupee_block>,<thermalfoundation:material:136>]]);
+recipes.remove(<divinerpg:rupee_leggings>);
+recipes.addShaped(<divinerpg:rupee_leggings>, [[<thermalfoundation:material:136>,<divinerpg:rupee_block>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:rupee_block>,null,<divinerpg:rupee_block>]]);
+recipes.remove(<divinerpg:rupee_boots>);
+recipes.addShaped(<divinerpg:rupee_boots>, [[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:rupee_block>,null,<divinerpg:rupee_block>]]);
+
+function add_DivineRPG_dimensional_armor_recipes(cur_helmet as IItemStack, cur_chestplate as IItemStack, cur_leggings as IItemStack, cur_boots as IItemStack,
+												prev_helmet as IItemStack, prev_chestplate as IItemStack, prev_leggings as IItemStack, prev_boots as IItemStack,
+												drpg_chunk as IItemStack, extra_material as IItemStack) {
+recipes.remove(cur_helmet);
+recipes.addShaped(cur_helmet, [[extra_material,drpg_chunk,extra_material],[drpg_chunk,prev_helmet,drpg_chunk]]);
+recipes.remove(cur_chestplate);
+recipes.addShaped(cur_chestplate, [[drpg_chunk,prev_chestplate,drpg_chunk],[extra_material,drpg_chunk,extra_material],[drpg_chunk,extra_material,drpg_chunk]]);
+recipes.remove(cur_leggings);
+recipes.addShaped(cur_leggings, [[drpg_chunk,extra_material,drpg_chunk],[drpg_chunk,prev_leggings,drpg_chunk],[extra_material,null,extra_material]]);
+recipes.remove(cur_boots);
+recipes.addShaped(cur_boots, [[drpg_chunk,null,drpg_chunk],[extra_material,prev_boots,extra_material]]);
+}
+
+# Wildwood Armor
+add_DivineRPG_dimensional_armor_recipes(<divinerpg:wildwood_helmet>,<divinerpg:wildwood_chestplate>,<divinerpg:wildwood_leggings>,<divinerpg:wildwood_boots>,
+										<divinerpg:eden_helmet>,<divinerpg:eden_chestplate>,<divinerpg:eden_leggings>,<divinerpg:eden_boots>,
+										<divinerpg:wildwood_chunk>,<botania:storage>);
+
+# Apalachia Armor
+add_DivineRPG_dimensional_armor_recipes(<divinerpg:apalachia_helmet>,<divinerpg:apalachia_chestplate>,<divinerpg:apalachia_leggings>,<divinerpg:apalachia_boots>,
+										<divinerpg:wildwood_helmet>,<divinerpg:wildwood_chestplate>,<divinerpg:wildwood_leggings>,<divinerpg:wildwood_boots>,
+										<divinerpg:apalachia_chunk>,<botania:storage:2>);
+
+# Skythern Armor
+add_DivineRPG_dimensional_armor_recipes(<divinerpg:skythern_helmet>,<divinerpg:skythern_chestplate>,<divinerpg:skythern_leggings>,<divinerpg:skythern_boots>,
+										<divinerpg:apalachia_helmet>,<divinerpg:apalachia_chestplate>,<divinerpg:apalachia_leggings>,<divinerpg:apalachia_boots>,
+										<divinerpg:skythern_chunk>,<thaumcraft:plate:3>);
+
+# Mortum Armor
+add_DivineRPG_dimensional_armor_recipes(<divinerpg:mortum_helmet>,<divinerpg:mortum_chestplate>,<divinerpg:mortum_leggings>,<divinerpg:mortum_boots>,
+										<divinerpg:skythern_helmet>,<divinerpg:skythern_chestplate>,<divinerpg:skythern_leggings>,<divinerpg:skythern_boots>,
+										<divinerpg:mortum_chunk>,<bewitchment:cold_iron_ingot>);
+
+# Wildwood Block
+recipes.remove(<divinerpg:wildwood_block>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:wildwood_block> * 14,
+[[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>],
+[<divinerpg:wildwood_chunk>,<botania:spellcloth>.noReturn(),<botania:managlass>,<botania:spellcloth>.noReturn(),<divinerpg:wildwood_chunk>],
+[<botania:storage:3>,<botania:managlass>,<botania:managlass>,<botania:managlass>,<botania:storage:3>],
+[<divinerpg:wildwood_chunk>,<botania:spellcloth>.noReturn(),<botania:managlass>,<botania:spellcloth>.noReturn(),<divinerpg:wildwood_chunk>],
+[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>]]);
+							
 print("ENDING DivineRPG.zs");

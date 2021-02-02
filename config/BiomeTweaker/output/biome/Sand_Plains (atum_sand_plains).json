@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
+    "ATUM",
     "SANDY",
     "SPARSE",
-    "PLAINS",
-    "ATUM",
     "HOT",
+    "PLAINS",
     "DRY"
   ],
   "BiomeManager Entries": {},
@@ -202,6 +202,12 @@
     {
       "Entity Class": "divinerpg.objects.entities.entity.vanilla.EntitySaguaroWorm",
       "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "cofh.thermalfoundation.entity.monster.EntityBasalz",
+      "Weight": 120,
       "Min Group Count": 1,
       "Max Group Count": 1
     }

@@ -23,4 +23,8 @@ recipes.addShaped(<storagedrawers:controller>, [[<ore:ingotSteel>,<ore:ingotStee
 recipes.remove(<storagedrawers:controllerslave>);
 recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<ore:dustDraconium>,<ore:drawerBasic>,<ore:dustDraconium>],[<ore:stone>,<minecraft:diamond>,<ore:stone>]]);
 
+# Ore Dictionaries
+<ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
+<ore:drawerTrim>.add(<storagedrawersextra:extra_trim_0:*>);
+
 print("ENDING StorageDrawers.zs");

@@ -134,6 +134,14 @@ Fey.addRecipe("living_axe", <roots:living_axe>, [<immersiveengineering:axe_steel
 Fey.removeRecipe(<roots:living_hoe>);
 Fey.addRecipe("living_hoe", <roots:living_hoe>, [<immersiveengineering:hoe_steel>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 
+# Sure-Footed Stone
+recipes.remove(<roots:runestone_trample>);
+recipes.addShaped(<roots:runestone_trample>, [[<roots:chiseled_runestone>,<roots:terra_moss>,<roots:chiseled_runestone>],[<roots:terra_moss>,<roots:dewgonia>,<roots:terra_moss>],[<roots:chiseled_runestone>,<roots:terra_moss>,<roots:chiseled_runestone>]]);
+
+# Unending Bowl
+Fey.removeRecipe(<roots:unending_bowl>);
+recipes.addShaped(<roots:unending_bowl>, [[<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>],[<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>]]);
+
 # Apothecary Pouch
 Fey.removeRecipe(<roots:apothecary_pouch>);
 Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:component_pouch>, <roots:stalicripe>, <roots:moonglow_leaf>, <roots:spirit_herb>, <minecraft:gold_block>]);
@@ -152,7 +160,7 @@ Mortar.changeSpell("spell_sense_animals", [<minecraft:lead>, <roots:baffle_cap_m
 Mortar.changeSpell("spell_dandelion_winds", [<minecraft:yellow_flower>, <roots:cloud_berry>, <roots:runic_dust>, <minecraft:piston>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_growth_infusion", [<roots:spirit_herb>, <ore:treeSapling>, <minecraft:dye:15>, <minecraft:golden_hoe>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_harvest", [<roots:wildewheet>, <betternether:nether_cactus>, <minecraft:diamond_hoe>, <minecraft:water_bucket>, <ore:blockAmethyst>]);
-Mortar.changeSpell("spell_petal_shell", [<roots:petals>, <spartanshields:shield_tower_steel>, <roots:spirit_herb>, <natura:nether_thorn_vines>, <ore:blockAmethyst>]);
+Mortar.changeSpell("spell_petal_shell", [<roots:petals>, <spartanshields:shield_riot_enderio>.withTag({Energy: 1000000}), <roots:spirit_herb>, <natura:nether_thorn_vines>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_radiance", [<minecraft:glowstone>, <roots:stalicripe>, <roots:cloud_berry>, <betternether:black_apple>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_time_stop", [<minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), <actuallyadditions:block_misc:6>, <roots:moonglow_leaf>, <minecraft:splash_potion>.withTag({Potion: "minecraft:long_slowness"}), <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_sense_danger", [<minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), <betternether:black_apple>, <thaumcraft:flesh_block>, <roots:stalicripe>, <ore:blockAmethyst>]);
@@ -185,5 +193,17 @@ Ritual.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry>
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);
+
+# UB Gravel -> Flint in the Mortar
+Mortar.removeRecipe(<minecraft:flint>);
+Mortar.removeRecipe(<minecraft:flint> * 2);
+Mortar.removeRecipe(<minecraft:flint> * 3);
+Mortar.removeRecipe(<minecraft:flint> * 4);
+Mortar.removeRecipe(<minecraft:flint> * 5);
+Mortar.addRecipe(<minecraft:flint>, [<ore:gravel>,null,null,null,null]);
+Mortar.addRecipe(<minecraft:flint> * 2, [<ore:gravel>,<ore:gravel>,null,null,null]);
+Mortar.addRecipe(<minecraft:flint> * 3, [<ore:gravel>,<ore:gravel>,<ore:gravel>,null,null]);
+Mortar.addRecipe(<minecraft:flint> * 4, [<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>,null]);
+Mortar.addRecipe(<minecraft:flint> * 5, [<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>]);
 
 print("ENDING Roots.zs");

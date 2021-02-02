@@ -32,11 +32,46 @@ recipes.addShaped(<immersiveengineering:stone_decoration> * 2, [[<ore:ingotOsmiu
 recipes.remove(<immersiveengineering:stone_decoration:1>);
 recipes.addShaped(<immersiveengineering:stone_decoration:1> * 2, [[<ore:ingotInvar>,<minecraft:brick>,<ore:ingotInvar>],[<minecraft:brick>,<contenttweaker:baykoks_bloodied_stone>,<minecraft:brick>],[<ore:ingotInvar>,<minecraft:brick>,<ore:ingotInvar>]]);
 
-# Treated Wood Planks (Using an Ore Dictionary gives an error)
-val allPlanks =  <ore:plankWood>;
-for plank in allPlanks.items {
-	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 125, 2500);
+# Treated Wood Planks (Using an Ore Dictionary gives an error, and it's buggy and doesn't nearly add all types of planks...)
+for plank in <ore:plankWood>.items {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, plank, <liquid:creosote> * 100, 2500);
 }
+for i in 0 to 6 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <minecraft:planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:divine_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:frozen_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:eden_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:wildwood_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:apalachia_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:skythern_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:mortum_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <divinerpg:eucalyptus_planks>, <liquid:creosote> * 100, 2500);
+for i in 1 to 13 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <erebus:planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <extrautils2:ironwood_planks:1>, <liquid:creosote> * 100, 2500);
+for i in 0 to 9 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <natura:overworld_planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+for i in 0 to 4 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <natura:nether_planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+for i in 0 to 16 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <quark:stained_planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+for i in 0 to 6 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <quark:vertical_planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+for i in 0 to 16 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <quark:vertical_stained_planks>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+for i in 0 to 5 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <twilightforest:tower_wood>.withDamage(i), <liquid:creosote> * 100, 2500);
+}
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <totemic:cedar_plank>, <liquid:creosote> * 100, 2500);
+mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <traverse:fir_planks>, <liquid:creosote> * 100, 2500);
 
 # Engineer's Workbench
 recipes.remove(<immersiveengineering:wooden_device0:2>);
@@ -229,11 +264,25 @@ recipes.addShaped(<immersiveengineering:metal_device0:0>, [[<thermalfoundation:m
 
 # MV Capacitor
 recipes.remove(<immersiveengineering:metal_device0:1>);
-recipes.addShaped(<immersiveengineering:metal_device0:1>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:353>,<immersiveengineering:metal_decoration0>,<thermalfoundation:material:353>],[<immersiveengineering:treated_wood>,<ore:blockRedstone>,<immersiveengineering:treated_wood>]]);
+recipes.addShaped("immersive_capacitor_upgrade1", <immersiveengineering:metal_device0:1>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:353>,<immersiveengineering:metal_device0>.marked("capacitor"),<thermalfoundation:material:353>],[<immersiveengineering:treated_wood>,<ore:blockRedstone>,<immersiveengineering:treated_wood>]],
+function(out,ins,cInfo) {
+	if(ins.capacitor.tag has "energyStorage") {
+		return out.withTag({energyStorage: ins.capacitor.tag.energyStorage});
+	} else {
+		return out;
+	}
+}, null);
 
 # HV Capacitor
 recipes.remove(<immersiveengineering:metal_device0:2>);
-recipes.addShaped(<immersiveengineering:metal_device0:2>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:322>,<immersiveengineering:metal_decoration0>,<thermalfoundation:material:322>],[<ore:blockLead>,<ore:blockRedstone>,<ore:blockLead>]]);
+recipes.addShaped("immersive_capacitor_upgrade2", <immersiveengineering:metal_device0:2>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:322>,<immersiveengineering:metal_device0:1>.marked("capacitor"),<thermalfoundation:material:322>],[<ore:blockLead>,<ore:blockRedstone>,<ore:blockLead>]],
+function(out,ins,cInfo) {
+	if(ins.capacitor.tag has "energyStorage") {
+		return out.withTag({energyStorage: ins.capacitor.tag.energyStorage});
+	} else {
+		return out;
+	}
+}, null);
 
 # Thermoelectric Generator
 recipes.remove(<immersiveengineering:metal_device1:3>);
@@ -372,5 +421,9 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 20, <natu
 # Conveyor fix
 recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);
 <immersiveengineering:conveyor>.addShiftTooltip(format.darkGray(format.italic("If you obtained a broken/bugged Conveyor, put you can craft it into a regular one.")));
+
+# Engineer's Manual tooltip
+<immersiveengineering:tool:3>.addTooltip(format.italic("Some text for custom recipes have"));
+<immersiveengineering:tool:3>.addTooltip(format.italic("overflown, use JEI to look those up!"));
 
 print("ENDING ImmersiveEngineering.zs");

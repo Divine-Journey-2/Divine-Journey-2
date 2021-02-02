@@ -3,6 +3,11 @@
 import mods.thermalexpansion.InductionSmelter;
 import mods.enderio.AlloySmelter;
 import moretweaker.lightningcraft.LightningCrusher;
+import mods.actuallyadditions.Crusher as AACrusher;
+import mods.thermalexpansion.Pulverizer;
+import mods.immersiveengineering.Crusher as IECrusher;
+import mods.extrautils2.Crusher as EUCrusher;
+import mods.enderio.SagMill;
 
 print("STARTING MinecraftRecipes.zs");
 
@@ -195,8 +200,52 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 recipes.addShaped(<minecraft:skull:1>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:skull>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
 recipes.removeShapeless(<minecraft:skull:1> * 3, [<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]);
 
-# Hay Bale can no longer be converted into Wheat
+# Hay Bale needs to be Pulverized to be converted back into Wheat
 recipes.removeShaped(<minecraft:wheat> * 9, [[<minecraft:hay_block>]]);
-<minecraft:hay_block>.addTooltip(format.red(format.bold("Cannot be converted back into Wheat.")));
+# Crushing recipes in OreProcessingAdditions.zs
+
+# Snowball, Enderpearl max stack size
+<minecraft:snowball>.maxStackSize = 64;
+<minecraft:ender_pearl>.maxStackSize = 64;
+
+# Iron Horse Armor
+AACrusher.removeRecipe(<thermalfoundation:material>);
+AACrusher.addRecipe(<thermalfoundation:material>, <minecraft:iron_ingot>);
+AACrusher.addRecipe(<thermalfoundation:material> * 4, <bno:ore_netheriron>);
+for iron_ore in <ore:oreIron>.items {
+	AACrusher.addRecipe(<thermalfoundation:material> * 2, iron_ore, <thermalfoundation:material:1>, 20);
+}
+AACrusher.addRecipe(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>);
+IECrusher.addRecipe(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>, 6000);
+EUCrusher.add(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material> * 4], [100], <minecraft:iron_horse_armor>, "NONE", 6000);
+mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>, 6000);
+
+# Gold Horse Armor
+AACrusher.removeRecipe(<thermalfoundation:material:1>);
+AACrusher.addRecipe(<thermalfoundation:material:1>, <minecraft:gold_ingot>);
+AACrusher.addRecipe(<thermalfoundation:material:1> * 4, <bno:ore_nethergold>);
+for gold_ore in <ore:oreGold>.items {
+	AACrusher.addRecipe(<thermalfoundation:material:1> * 2, gold_ore);
+}
+AACrusher.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>);
+IECrusher.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>, 6000);
+EUCrusher.add(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 4], [100], <minecraft:golden_horse_armor>, "NONE", 6000);
+mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>, 6000);
+
+# Diamond Horse Armor
+AACrusher.removeRecipe(<mekanism:otherdust>);
+AACrusher.addRecipe(<mekanism:otherdust>, <minecraft:diamond>);
+AACrusher.addRecipe(<minecraft:diamond> * 4, <bno:ore_netherdiamond>);
+AACrusher.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>);
+IECrusher.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>, 6000);
+EUCrusher.add(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>);
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 4], [100], <minecraft:diamond_horse_armor>, "NONE", 6000);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:diamond_horse_armor>);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>, 6000);
+
+# Lilipad
+<minecraft:waterlily>.addTooltip(format.white(format.italic("A Resources Fisher can occasionally fish this up.")));
 
 print("ENDING MinecraftRecipes.zs");

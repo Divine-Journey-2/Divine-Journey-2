@@ -193,4 +193,15 @@ recipes.addShaped(<evilcraft:vengeance_focus>, [[<contenttweaker:magical_core>,<
 recipes.remove(<evilcraft:piercing_vengeance_focus>);
 recipes.addShaped(<evilcraft:piercing_vengeance_focus>, [[<contenttweaker:potency_core>,<minecraft:end_crystal>,<contenttweaker:potency_core>],[<minecraft:end_crystal>,<evilcraft:vengeance_focus>,<minecraft:end_crystal>],[<contenttweaker:potency_core>,<minecraft:end_crystal>,<contenttweaker:potency_core>]]);
 
+# Golden String
+recipes.remove(<evilcraft:golden_string>);
+recipes.addShaped(<evilcraft:golden_string>, [[glod_crystal,<ore:string>,glod_crystal],[<ore:string>,<ore:string>,<ore:string>],[glod_crystal,<ore:string>,glod_crystal]]);
+
+# Spirit Reanimator
+recipes.remove(<evilcraft:spirit_reanimator>);
+
+# Sceptre of Thunder
+recipes.remove(<evilcraft:sceptre_of_thunder>);
+recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<botania:rune:6>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
+
 print("ENDING EvilCraft.zs");

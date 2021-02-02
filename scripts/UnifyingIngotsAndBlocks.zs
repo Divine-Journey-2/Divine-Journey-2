@@ -107,6 +107,7 @@ recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item
 recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
 #recipes.replaceAllOccurences(<ore:blockCopper>, <thermalfoundation:storage>);
 <ore:blockCopper>.removeItems([<mekanism:basicblock:12>, <bno:block_copper>, <immersiveengineering:storage>]);
+recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 
 # Tin
 val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <libvulpes:productingot:5>, <projectred-core:resource_item:101>, <erebus:materials:46>] as IItemStack[];
@@ -290,5 +291,15 @@ recipes.remove(<thermalfoundation:material:17>);
 recipes.removeShaped(<minecraft:emerald>, [[<ore:nuggetEmerald>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped(<minecraft:emerald>, [[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>]]);
 mods.tconstruct.Melting.removeRecipe(<liquid:emerald>, <thermalfoundation:material:17>);
+
+# Iridium
+<ore:ingotIridium>.remove(<libvulpes:productingot:10>);
+<ore:dustIridium>.remove(<libvulpes:productdust:10>);
+mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:71>, <libvulpes:productingot:10>);
+
+# Diamond Nugget
+<ore:nuggetDiamond>.removeItems([<agricraft:agri_nugget:1>,<extendedcrafting:material:128>]);
+recipes.remove(<extendedcrafting:material:128>);
+recipes.removeShaped(<minecraft:diamond>, [[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>]]);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");
