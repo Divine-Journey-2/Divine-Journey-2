@@ -48,6 +48,7 @@ allOres.addAll(<ore:oreDiamond>);
 allOres.addAll(<ore:oreQuartzBlack>);
 allOres.addAll(<ore:oreEmerald>);
 allOres.addAll(<ore:oreCoal>);
+allOres.addAll(<ore:orePlatinum>);
 allOres.addAll(<ore:oreNetherEmerald>);
 allOres.addAll(<ore:oreNetherDiamond>);
 allOres.addAll(<ore:oreNetherRedstone>);
@@ -77,6 +78,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:altar>,
 recipes.remove(<bloodmagic:sacrificial_dagger>);
 recipes.addShapedMirrored(<bloodmagic:sacrificial_dagger>.withTag({sacrifice: 0 as byte}), [[null,null,<abyssalcraft:oblivionshard>],[<abyssalcraft:abyingot>,<abyssalcraft:oblivionshard>,null],[<actuallyadditions:item_crystal_empowered:1>,<abyssalcraft:abyingot>,null]]);
 
+# Dagger of Sacrifice
+mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:iron_sword>);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, <abyssalcraft:dreadiumsword>, 1, 5000, 100, 100);
+
 # Rudimentary Snare
 recipes.remove(<bloodmagic:soul_snare>);
 recipes.addShapedMirrored(<bloodmagic:soul_snare> * 2, [[null,<thermalfoundation:material:136>,<thermalfoundation:material:200>],[<thermalfoundation:material:136>,<contenttweaker:hardened_blood_droplet>,<ore:string>],[<thermalfoundation:material:136>,<ore:string>,<ore:string>]]);
@@ -91,11 +96,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:soul_forge>,
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
 
 # Petty Tartaric Gem
-for glass in <ore:blockGlass>.items {
-	for blue_dye in <ore:dyeBlue>.items {
-		mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:gold_ingot>,glass,blue_dye]);
-	}
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:redstone>,<minecraft:gold_ingot>,<ore:blockGlass>.firstItem,<ore:dyeBlue>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem>.withTag({}), [<thermalfoundation:material:136>,<abyssalcraft:shadowshard>,<abyssalcraft:coralium>,<evilcraft:dark_gem>], 1, 1);
 
 # Sanguine Scientiem
@@ -119,20 +120,24 @@ mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>,<minecraft:iro
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_axe>.withTag({}), [<bloodmagic:soul_gem>,<abyssalcraft:dreadiumaxe>], 32, 4);
 
 # Sentient Bow
-for s in <ore:string>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bow>,<bloodmagic:soul_gem:1>,s,s]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bow>,<bloodmagic:soul_gem:1>,<ore:string>.firstItem,<ore:string>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_bow>.withTag({}), [<abyssalcraft:corbow>,<bloodmagic:soul_gem:1>,<minecraft:string>,<minecraft:string>], 75, 4);
 
 # Arcane Ashes
-for white_dye in <ore:dyeWhite>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:redstone>,white_dye,<minecraft:gunpowder>,<minecraft:coal:*>]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:redstone>,<ore:dyeWhite>.firstItem,<minecraft:gunpowder>,<minecraft:coal:*>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:arcane_ashes>, [<appliedenergistics2:material:45>,<enderio:item_material:37>,<natura:bonemeal_bag>,<thermalfoundation:fertilizer:2>], 1, 1);
 
+function addBloodMagicSigilRecipeJustSwap(sigil as IItemStack, origInput1 as IItemStack, origInput2 as IItemStack) {
+	addBloodMagicSigilRecipe(sigil, origInput1, origInput2, origInput2, origInput1);
+}
+
+function addBloodMagicSigilRecipe(sigil as IItemStack, origInput1 as IItemStack, origInput2 as IItemStack, newInput1 as IItemStack, newInput2 as IItemStack) {
+	mods.bloodmagic.AlchemyArray.removeRecipe(origInput1, origInput2);
+	mods.bloodmagic.AlchemyArray.addRecipe(sigil, newInput1, newInput2, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+}
+
 # Divination Sigil
-mods.bloodmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate>);
-mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:sigil_divination>, <bloodmagic:slate>, <actuallyadditions:item_engineer_goggles>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+addBloodMagicSigilRecipe(<bloodmagic:sigil_divination>, <minecraft:redstone>, <bloodmagic:slate>, <bloodmagic:slate>, <actuallyadditions:item_engineer_goggles>);
 
 # Blank Slate
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
@@ -173,10 +178,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:alchemy_table>,
 [null,<abyssalcraft:ingotblock:2>,<enderio:block_alloy:6>,<abyssalcraft:ingotblock:2>,null],
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
 
-function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, input2 as IIngredient) {
+function blood_magic_add_rune_recipe_with_unique_input(rune as IItemStack, runeInput as IItemStack, input1 as IIngredient, input2 as IIngredient) {
 	recipes.remove(rune);
-	mods.immersiveengineering.ArcFurnace.addRecipe(rune, <bloodmagic:blood_rune>, null, 160, 512, [input1, input2], "Alloying");
-	EIOAlloySmelter.addRecipe(rune, [<bloodmagic:blood_rune>, input1, input2], 24000);
+	mods.immersiveengineering.ArcFurnace.addRecipe(rune, runeInput, null, 160, 512, [input1, input2], "Alloying");
+	EIOAlloySmelter.addRecipe(rune, [runeInput, input1, input2], 24000);
+}
+
+function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, input2 as IIngredient) {
+	blood_magic_add_rune_recipe_with_unique_input(rune, <bloodmagic:blood_rune>, input1, input2);
 }
 
 # Speed Rune
@@ -201,23 +210,15 @@ mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:sugar>,<minecraft:water_b
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component>, [<minecraft:water_bucket>,<minecraft:water_bucket>,<quark:sugar_block>,<mekanism:saltblock>], 8, 2);
 
 # Lava Reagent
-for cobble in <ore:cobblestone>.items {
-	for coal_block in <ore:blockCoal>.items {
-		mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:lava_bucket>,<minecraft:redstone>,cobble,coal_block]);
-	}
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:lava_bucket>,<minecraft:redstone>,<ore:cobblestone>.firstItem,<ore:blockCoal>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:1>, [<minecraft:lava_bucket>,<minecraft:lava_bucket>,<contenttweaker:fluxed_electrum_block>,<minecraft:coal_block>], 8, 2);
 
 # Air Reagent
-for feather in <ore:feather>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,feather,feather]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<ore:feather>.firstItem,<ore:feather>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:2>, [<minecraft:glass_bottle>,<minecraft:glass_bottle>,<immersiveengineering:toolupgrade>,<immersiveengineering:wooden_device1:1>], 8, 2);
 
 # Haste Reagent
-for stone in <ore:stone>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:cookie>,<minecraft:sugar>,<minecraft:cookie>,stone]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:cookie>,<minecraft:sugar>,<minecraft:cookie>,<ore:stone>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:13>, [<bibliocraft:cookiejar>,<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:glowstone>,<quark:sugar_block>], 16, 4);
 
 # Frost Reagent
@@ -225,23 +226,15 @@ mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ice>,<minecraft:snowball>
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:32>, [<minecraft:packed_ice>,<minecraft:snow>,<enderio:item_alloy_endergy_ingot:6>,<thermalfoundation:material:1025>], 16, 4);
 
 # Growth Reagent
-for sapling in <ore:treeSapling>.items {
-	for sugarcane in <ore:sugarcane>.items {
-		mods.bloodmagic.TartaricForge.removeRecipe([sapling,sapling,sugarcane,<minecraft:sugar>]);
-	}
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<ore:treeSapling>.firstItem,<ore:treeSapling>.firstItem,<ore:sugarcane>.firstItem,<minecraft:sugar>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:5>, [<minecraft:bone_block>,<natura:overworld_sapling>,<natura:overworld_sapling2:1>,<minecraft:melon>], 16, 4);
 
 # Elasticity Reagent
-for s in <ore:string>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:slime>,<minecraft:slime>,<minecraft:leather>,s]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:slime>,<minecraft:slime>,<minecraft:leather>,<ore:string>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:31>, [<minecraft:slime>,<minecraft:slime>,<contenttweaker:blood_infused_leather>,<erebus:silk>], 64, 16);
 
 # Void Reagent
-for s in <ore:string>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bucket>,s,s,<minecraft:gunpowder>]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bucket>,<ore:string>.firstItem,<ore:string>.firstItem,<minecraft:gunpowder>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:4>, [<quantumflux:voidbucket>,<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:mobgrindium_block>], 64, 16);
 
 # Suppression Reagent
@@ -249,11 +242,7 @@ mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:teleposer>,<minecraft:wa
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:9>, [<actuallyadditions:block_misc:8>,<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "vapor_of_levity", Amount: 1000}),<enderio:item_material:44>], 64, 16);
 
 # Lesser Tartaric Gem
-for redstone_block in <ore:blockRedstone>.items {
-	for lapis_block in <ore:blockLapis>.items {
-		mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>,<minecraft:diamond>,redstone_block,lapis_block]);
-	}
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>,<minecraft:diamond>,<ore:blockRedstone>.firstItem,<ore:blockLapis>.firstItem]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:1>.withTag({}), [<bloodmagic:soul_gem>,<contenttweaker:gusty_core>,<contenttweaker:aquatic_core>,<contenttweaker:fire_core>], 64, 32);
 
 # Rune of Capacity
@@ -273,23 +262,19 @@ recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:
 
 # Binding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:8>, [<botania:rune>,<botania:rune:1>,<botania:rune:2>,<botania:rune:3>], 64, 64);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<botania:rune>,<botania:rune:1>,<botania:rune:2>,<botania:rune:3>], 64, 64);
 
 # Bound Blade
-mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:8>, <minecraft:diamond_sword:0>);
-mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelsword>, <bloodmagic:component:8>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelsword>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 
 # Bound Pickaxe
-mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:8>, <minecraft:diamond_pickaxe:0>);
-mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_pickaxe>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelpick>, <bloodmagic:component:8>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_pickaxe>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelpick>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 
 # Bound Shovel
-mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:8>, <minecraft:diamond_shovel:0>);
-mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_shovel>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelshovel>, <bloodmagic:component:8>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_shovel>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelshovel>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 
 # Bound Axe
-mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:8>, <minecraft:diamond_axe:0>);
-mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_axe>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelaxe>, <bloodmagic:component:8>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_axe>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelaxe>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 
 # Large Bloodstone Tile
 recipes.remove(<bloodmagic:decorative_brick>);
@@ -309,7 +294,7 @@ recipes.addShaped(<bloodmagic:ritual_controller>, [[<contenttweaker:compressed_o
 
 # Lava Crystal
 recipes.remove(<bloodmagic:lava_crystal>);
-recipes.addShaped(<bloodmagic:ritual_controller>, [[<abyssalcraft:crystalcluster:3>,<abyssalcraft:crystalcluster:15>,<abyssalcraft:crystalcluster:3>],[<abyssalcraft:crystalcluster:15>,<botania:rune:1>,<abyssalcraft:crystalcluster:15>],[<abyssalcraft:crystalcluster:3>,blood_orb_at_least_tier_4.reuse(),<abyssalcraft:crystalcluster:3>]]);
+recipes.addShaped(<bloodmagic:lava_crystal>, [[<abyssalcraft:crystalcluster:3>,<abyssalcraft:crystalcluster:15>,<abyssalcraft:crystalcluster:3>],[<abyssalcraft:crystalcluster:15>,<botania:rune:1>,<abyssalcraft:crystalcluster:15>],[<abyssalcraft:crystalcluster:3>,blood_orb_at_least_tier_4.reuse(),<abyssalcraft:crystalcluster:3>]]);
 
 # Weak Activation Crystal
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:lava_crystal>);
@@ -359,39 +344,156 @@ mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:1>,<minecraft:d
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:2>.withTag({}), [<bloodmagic:soul_gem:1>,<contenttweaker:magical_core>,<contenttweaker:holy_core>,<contenttweaker:environmental_core>], 256, 128);
 
 # Demon Crystallizer
-for s in <ore:stone>.items {
-	for g in <ore:blockGlass>.items {
-		mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_forge>,s,<minecraft:dye:4>,g]);
-	}
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_forge>,<ore:stone>.firstItem,<minecraft:dye:4>,<ore:blockGlass>.firstItem]);
 recipes.addShaped(<bloodmagic:demon_crystallizer>, [[<enderio:block_alloy:6>,<contenttweaker:potency_core>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<bloodmagic:soul_forge>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<extendedcrafting:frame>,<enderio:block_alloy:6>]]);
 
 # Demon Crucible
-for s in <ore:stone>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:cauldron>,s,<minecraft:dye:4>,<minecraft:diamond>]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:cauldron>,<ore:stone>.firstItem,<minecraft:dye:4>,<minecraft:diamond>]);
 recipes.addShaped(<bloodmagic:demon_crucible>, [[<enderio:block_alloy:6>,<contenttweaker:defensive_core>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<bloodmagic:soul_forge>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<extendedcrafting:frame>,<enderio:block_alloy:6>]]);
 
 # Demon Pylon
-for s in <ore:stone>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:iron_block>,<minecraft:dye:4>,s,<bloodmagic:item_demon_crystal:*>]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:iron_block>,<minecraft:dye:4>,<ore:stone>.firstItem,<bloodmagic:item_demon_crystal:*>]);
 recipes.addShaped(<bloodmagic:demon_pylon>, [[<enderio:block_alloy:6>,<bloodmagic:item_demon_crystal:*>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<bloodmagic:soul_forge>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<extendedcrafting:frame>,<enderio:block_alloy:6>]]);
 
 # Demon Will Aura Gauge
-for g in <ore:blockGlass>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:gold_ingot>,<minecraft:redstone>,g,<bloodmagic:item_demon_crystal:*>]);
-}
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:gold_ingot>,<minecraft:redstone>,<ore:blockGlass>.firstItem,<bloodmagic:item_demon_crystal:*>]);
 recipes.addShaped(<bloodmagic:demon_will_gauge>, [[null,<contenttweaker:praesidium>,null],[<contenttweaker:potentia>,<enderio:item_conduit_probe>,<contenttweaker:potentia>],[null,<contenttweaker:praesidium>,null]]);
 
+# Rune of Augmented Capacity
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:7>, <bloodmagic:blood_rune:6>, <extrautils2:drum:3>, <bloodmagic:slate:3> * 2);
+
+# Efficiency Rune
+blood_magic_add_rune_recipe(<bloodmagic:blood_rune:2>, <botania:rune:8>, <bloodmagic:slate:3> * 2);
+
+# Charging Rune
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:10>, <bloodmagic:blood_rune:1>, <botania:manaresource:8> * 3, <bloodmagic:slate:4> * 2);
+
+# Displacement Rune
+blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <botania:rune>, <bloodmagic:slate:4> * 2);
+
+# Acceleration Rune
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
+
+# Rune of the Orb
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <bloodmagic:blood_orb>, <bloodmagic:slate:4> * 2);
+
+# Air Sigil
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_air>, <bloodmagic:component:2>, <bloodmagic:slate:1>);
+
+# Water Sigil
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_water>, <bloodmagic:component>, <bloodmagic:slate>);
+
+# Lava Sigil
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_lava>, <bloodmagic:component:1>, <bloodmagic:slate>);
+
+# Void Sigil
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_void>, <bloodmagic:component:4>, <bloodmagic:slate:1>);
+
+# Sigil of the Green Grove
+addBloodMagicSigilRecipe(<bloodmagic:sigil_green_grove>, <bloodmagic:component:5>, <bloodmagic:slate:1>, <bloodmagic:slate:2>, <bloodmagic:component:5>);
+
+# Blood Lamp Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<ore:glowstone>.firstItem,<minecraft:torch>,<minecraft:redstone>,<minecraft:redstone>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:11>, [<torchmaster:dread_lamp>,<bibliocraft:lampgold>,<thermalfoundation:storage_alloy:6>,<botania:rune:4>], 64, 32);
+
+# Sigil of the Blood Lamp
+addBloodMagicSigilRecipe(<bloodmagic:sigil_blood_light>, <bloodmagic:component:11>, <bloodmagic:slate:2>, <bloodmagic:slate:3>, <bloodmagic:component:11>);
+
+# Sigil of Elemental Affinity
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_elemental_affinity>, <bloodmagic:component:6>, <bloodmagic:slate:2>);
+
+# Magnetism Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<ore:string>.firstItem,<minecraft:gold_ingot>,<minecraft:iron_block>,<minecraft:gold_ingot>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:12>, [<quantumflux:magnet:*>,<contenttweaker:power_core>,<simplyjetpacks:metaitemmods:12>,<simplyjetpacks:metaitemmods:12>], 64, 32);
+
+# Sigil of Magnetism
+addBloodMagicSigilRecipe(<bloodmagic:sigil_magnetism>, <bloodmagic:component:12>, <bloodmagic:slate:2>, <bloodmagic:slate:3>, <bloodmagic:component:12>);
+
+# Sigil of Suppression
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_suppression>, <bloodmagic:component:9>, <bloodmagic:slate:3>);
+
+# Sigil of Haste
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_haste>, <bloodmagic:component:13>, <bloodmagic:slate:3>);
+
+# Mining Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:iron_pickaxe>,<minecraft:iron_axe>,<minecraft:iron_shovel>,<minecraft:gunpowder>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:3>, [<botania:manasteelpick>,<botania:manasteelshovel>,<bloodmagic:component:13>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 32 as short}]})], 32, 16);
+
+# Sigil of the Fast Miner
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_fast_miner>, <bloodmagic:component:3>, <bloodmagic:slate:1>);
+
+# Sight Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:sigil_divination>,<ore:blockGlass>.firstItem,<ore:blockGlass>.firstItem,<minecraft:glowstone_dust>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:7>, [<bloodmagic:sigil_divination>,<botania:monocle>,<actuallyadditions:item_engineer_goggles_advanced>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 69 as short}]})], 32, 16);
+
+# Seer's Sigil
+addBloodMagicSigilRecipe(<bloodmagic:sigil_seer>, <bloodmagic:component:7>, <bloodmagic:slate:1>, <bloodmagic:slate:3>, <bloodmagic:component:7>);
+
 # Phantom Bridge Reagent
-for s in <ore:stone>.items {
-	mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:soul_sand>,<minecraft:soul_sand>,s,<minecraft:obsidian>]);
-}
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:15>, [<actuallyadditions:block_phantomface>,<enderutilities:draw_bridge>,<contenttweaker:compressed_obsidian1>,<botania:manaresource>], 64, 64);
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:soul_sand>,<minecraft:soul_sand>,<ore:stone>.firstItem,<minecraft:obsidian>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:15>, [<actuallyadditions:block_phantomface>,<enderutilities:draw_bridge>,<contenttweaker:compressed_obsidian1>,<botania:manaresource>], 32, 16);
+
+# Sigil of the Phantom Bridge
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_phantom_bridge>, <bloodmagic:component:15>, <bloodmagic:slate:3>);
+
+# Sigil of the Whirlwind
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:sigil_whirlwind>, <bloodmagic:slate:2>, <contenttweaker:tempest_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+
+# Compression Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:iron_block>,<minecraft:gold_block>,<minecraft:obsidian>,<ore:cobblestone>.firstItem]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:14>, [<avaritia:compressed_crafting_table>,<thermalexpansion:machine:5>,<contenttweaker:reductus>,<contenttweaker:blood_infused_leather>], 32, 16);
+
+# Sigil of Compression
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_compression>, <bloodmagic:component:14>, <bloodmagic:slate:3>);
+
+# Severance Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ender_eye>,<minecraft:ender_pearl>,<minecraft:gold_ingot>,<minecraft:gold_ingot>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:16>, [<mob_grinding_utils:ender_inhibitor_on>,<mob_grinding_utils:ender_inhibitor_on>,<minecraft:ender_eye>,<minecraft:ender_eye>], 32, 16);
+
+# Sigil of Ender Severance
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_ender_severance>, <bloodmagic:component:16>, <bloodmagic:slate:3>);
+
+# Holding Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<ore:chestWood>.firstItem,<ore:leather>.firstItem,<ore:string>.firstItem,<ore:string>.firstItem]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:27>, [<mob_grinding_utils:ender_inhibitor_on>,<mob_grinding_utils:ender_inhibitor_on>,<minecraft:ender_eye>,<minecraft:ender_eye>], 32, 16);
+
+# Sigil of Holding
+addBloodMagicSigilRecipe(<bloodmagic:sigil_holding>, <bloodmagic:component:27>, <bloodmagic:slate:2>, <bloodmagic:slate:3>, <bloodmagic:component:27>);
+
+# Claw Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:flint>,<minecraft:flint>,<bloodmagic:cutting_fluid>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:30>, [<minecraft:flint>,<minecraft:flint>,<divinerpg:crab_claw>,<divinerpg:crab_claw>], 16, 4);
+
+# Sigil of the Claw
+addBloodMagicSigilRecipe(<bloodmagic:sigil_claw>, <bloodmagic:component:30>, <bloodmagic:slate:2>, <bloodmagic:slate:1>, <bloodmagic:component:30>);
+
+# Sigil of Elasticity
+addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_bounce>, <bloodmagic:component:31>, <bloodmagic:slate:1>);
+
+# Sigil of Winter's Breath
+addBloodMagicSigilRecipe(<bloodmagic:sigil_frost>, <bloodmagic:component:32>, <bloodmagic:slate:1>, <bloodmagic:slate:2>, <bloodmagic:component:32>);
+
+# Ritual Tinkerer
+recipes.remove(<bloodmagic:ritual_reader>);
+recipes.addShapedMirrored(<bloodmagic:ritual_reader>, [[null,<contenttweaker:virtus>,null],[null,<bloodmagic:ritual_controller>,<contenttweaker:virtus>],[blood_orb_at_least_tier_4,null,null]]);
+
+# Blood Letter's Pack
+recipes.remove(<bloodmagic:pack_self_sacrifice>);
+recipes.addShaped(<bloodmagic:pack_self_sacrifice>, [[<contenttweaker:hybrid_abyssalium_ingot>,<enderio:block_tank:1>,<contenttweaker:hybrid_abyssalium_ingot>],[<contenttweaker:hybrid_abyssalium_ingot>,<abyssalcraft:dreadiumplate>,<contenttweaker:hybrid_abyssalium_ingot>],[<bloodmagic:slate>,null,<bloodmagic:slate>]]);
+
+# Coat of Arms
+recipes.remove(<bloodmagic:pack_sacrifice>);
+recipes.addShaped(<bloodmagic:pack_sacrifice>, [[<abyssalcraft:dreadiumingot>,<enderio:block_tank:1>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumplate>,<abyssalcraft:dreadiumingot>],[<bloodmagic:slate>,null,<bloodmagic:slate>]]);
 
 # Greater Tartaric Gem
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:2>,<bloodmagic:slate:3>,<bloodmagic:blood_shard>,<bloodmagic:item_demon_crystal>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:3>.withTag({}), [<bloodmagic:soul_gem:2>,<bloodmagic:decorative_brick>,<bloodmagic:item_demon_crystal>,<contenttweaker:potency_core>], 1024, 512);
 
 # Grand Tartaric Gem
+
+# Living Armor
+
+# Sentient Armor
+
 
 print("ENDING BloodMagic.zs");

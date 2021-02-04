@@ -72,7 +72,7 @@ mods.thermalexpansion.Factorizer.removeRecipeSplit(<galacticraftplanets:item_bas
 mods.thermalexpansion.Factorizer.removeRecipeCombine(<libvulpes:productnugget:7>);
 
 # Copper
-val wrongCopperIngots = [<libvulpes:productingot:4>, <galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>] as IItemStack[];
+val wrongCopperIngots = [<libvulpes:productingot:4>, <galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>, <projectred-core:resource_item:100>] as IItemStack[];
 <ore:ingotCopper>.removeItems(wrongCopperIngots);
 #recipes.replaceAllOccurences(<ore:ingotCopper>, <thermalfoundation:material:128>);
 for copper in wrongCopperIngots {
@@ -301,5 +301,24 @@ mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:71>, <libvulpes:p
 <ore:nuggetDiamond>.removeItems([<agricraft:agri_nugget:1>,<extendedcrafting:material:128>]);
 recipes.remove(<extendedcrafting:material:128>);
 recipes.removeShaped(<minecraft:diamond>, [[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>]]);
+
+# Iron Nugget
+recipes.remove(<immersiveengineering:metal:29>);
+<ore:nuggetIron>.removeItems([<immersiveengineering:metal:29>,<agricraft:agri_nugget:3>,<thaumcraft:nugget>]);
+
+# Tin Block
+<ore:blockTin>.remove(<libvulpes:metal0:5>);
+
+# Tin Nugget
+<ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<libvulpes:productnugget:5>,<agricraft:agri_nugget:5>]);
+
+# Bronze Nugget
+<ore:nuggetBronze>.remove(<mekanism:nugget:2>);
+
+# Copper Block
+<ore:blockCopper>.removeItems([<libvulpes:metal0:4>,<galacticraftcore:basic_block_core:9>]);
+
+# Copper Nugget
+<ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<libvulpes:productnugget:4>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>]);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

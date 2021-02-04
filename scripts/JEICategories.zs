@@ -21,5 +21,7 @@ mods.jei.JEI.hideCategory("EIOWC");
 mods.jei.JEI.hideCategory("EIOTank");
 mods.jei.JEI.hideCategory("mysticalagriculture:reprocessor_jei");
 mods.jei.JEI.hideCategory("moretweaker.erebus.compost.recipes");
+mods.jei.JEI.hideCategory("bloodmagic:binding");
+mods.jei.JEI.hideCategory("abyssalcraft.materialization");
 
 print("ENDING JEICategories.zs");

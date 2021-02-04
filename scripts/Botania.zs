@@ -30,8 +30,7 @@ Fey.addRecipe("endoflame", <botania:specialflower>.withTag({type: "endoflame"}),
 
 # Livingrock
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
-val dimensionalStones = [<divinerpg:frozen_stone>,<divinerpg:twilight_stone>,<minecraft:end_stone>,<aether_legacy:holystone:*>,<atum:limestone>,<erebus:umberstone>,<abyssalcraft:stone:1>,<abyssalcraft:stone:2>,<abyssalcraft:stone:3>] as IItemStack[];
-for dim_stone in dimensionalStones {
+for dim_stone in dimensional_stones {
 	mods.botania.PureDaisy.addRecipe(dim_stone, <botania:livingrock>, 75);
 }
 <botania:livingrock>.addTooltip(format.white(format.italic("It seems only certain Dimensional Stones")));
@@ -151,5 +150,8 @@ mods.botania.RuneAltar.addRecipe(<botania:rune:6>, [<botania:rune:1>,<botania:ru
 # Rune of Winter
 mods.botania.RuneAltar.removeRecipe(<botania:rune:7>);
 mods.botania.RuneAltar.addRecipe(<botania:rune:7>, [<botania:rune:0>,<botania:rune:2>,<contenttweaker:livingmatter>,<contenttweaker:icy_core>], 15000);
+
+# Manastorm Charge
+recipes.remove(<botania:manabomb>);
 
 print("ENDING Botania.zs");

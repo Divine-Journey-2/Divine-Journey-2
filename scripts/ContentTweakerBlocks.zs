@@ -397,4 +397,12 @@ electrotine_ore.setDropHandler(function(drops, world, position, state, fortune) 
 	return;
 });
 
+var angelic_silicon_crystal_block = VanillaFactory.createBlock("angelic_silicon_crystal_block", <blockmaterial:rock>);
+angelic_silicon_crystal_block.setBlockHardness(4.0);
+angelic_silicon_crystal_block.setBlockResistance(4.0);
+angelic_silicon_crystal_block.setToolClass("pickaxe");
+angelic_silicon_crystal_block.setToolLevel(2);
+angelic_silicon_crystal_block.setBlockSoundType(<soundtype:glass>);
+angelic_silicon_crystal_block.register();
+
 print("ENDING ContentTweakerBlocks.zs");

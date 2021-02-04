@@ -404,4 +404,21 @@ furnace.remove(<minecraft:bread>, <roots:flour>);
 recipes.remove(<immersiveengineering:metal:16>);
 furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>);
 
+# Crushed Coal -> Pulverized Coal
+mods.actuallyadditions.Crusher.removeRecipe(<actuallyadditions:item_dust:6>);
+mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:768>, <minecraft:coal>);
+<ore:dustCoal>.removeItems([<actuallyadditions:item_dust:6>,<enderio:item_material:23>,<bloodmagic:component:21>]);
+
+# Pulverized Charcoal
+mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:769>, <minecraft:coal:1>);
+
+# Iron Dust
+<ore:dustIron>.removeItems([<enderio:item_material:24>,<bloodmagic:component:19>,<libvulpes:productdust:1>,<immersiveengineering:metal:18>,<actuallyadditions:item_dust>]);
+
+# Gold Dust
+<ore:dustGold>.removeItems([<libvulpes:productdust:2>,<actuallyadditions:item_dust:1>,<immersiveengineering:metal:19>,<enderio:item_material:25>,<appliedenergistics2:material:51>,<bloodmagic:component:20>]);
+
+# Tin Dust
+<ore:dustTin>.remove(<libvulpes:productdust:5>);
+
 print("ENDING UnifyingDusts.zs");

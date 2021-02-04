@@ -644,8 +644,8 @@ recipes.addShaped(<contenttweaker:effulgent_apalachian_spike_crown>, [[null,<con
 <ore:dustElectrotine>.remove(<projectred-core:resource_item:105>);
 recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>]]);
 
-<contenttweaker:electrotine_ore>.addTooltip(format.white("Use the Blood Magic ") + format.red("Mark of the Fallen Tower") + format.white("Ritual"));
-<contenttweaker:electrotine_ore>.addTooltip(format.white("to summon a Meteor containing") + format.aqua("Electrotine Ore") + format.white("."));
+<contenttweaker:electrotine_ore>.addTooltip(format.white("Use the Blood Magic ") + format.red("Mark of the Fallen Tower") + format.white(" Ritual"));
+<contenttweaker:electrotine_ore>.addTooltip(format.white("to summon a Meteor containing ") + format.aqua("Electrotine Ore") + format.white("."));
 <contenttweaker:electrotine_ore>.addTooltip(format.darkGray(format.italic("<Hold Shift for more info>")));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("1) Get a Master Ritual Stone and an additional 100 Ritual Stones."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("2) Use a ") + format.gray("Ritual Diviner [Dusk]") + format.white(" to setup the Ritual."));
@@ -655,6 +655,33 @@ recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:elec
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("4) Have at least ") + format.red("1,000,000 LP") + format.white(" in your Life Network."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("5) Activate the Ritual with an ") + format.darkAqua("Awakened Activation Crystal") + format.white("."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("6) Throw a ") + format.blue("Potency Core") + format.white(" on top of the Master Ritual Stone."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. You can automate the process with a Builder."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. Yoau can automate the process with a Builder."));
+
+# Angelic Silicon/Crystal Mixture
+recipes.addShaped(<contenttweaker:angelic_silicon_crystal_mixture>, [[<bloodmagic:item_demon_crystal:2>,<projectred-core:resource_item:341>,<bloodmagic:item_demon_crystal:2>],[<bloodmagic:item_demon_crystal:3>,<projectred-core:resource_item:320>,<bloodmagic:item_demon_crystal:3>],[<bloodmagic:item_demon_crystal:4>,<projectred-core:resource_item:342>,<bloodmagic:item_demon_crystal:4>]]);
+recipes.addShapeless(<contenttweaker:angelic_silicon_crystal_mixture> * 9, [<contenttweaker:angelic_silicon_crystal_block>]);
+
+# Angelic Silicon Crystal Block
+recipes.addShaped(<contenttweaker:angelic_silicon_crystal_block>, [[<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>],[<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>],[<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>,<contenttweaker:angelic_silicon_crystal_mixture>]]);
+
+# Crystallized Mana Cluster
+recipes.addShaped(<contenttweaker:crystallized_mana_cluster>, [[<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>],[<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>],[<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>,<contenttweaker:crystallized_mana>]]);
+
+# Crystallized Mana
+recipes.addShaped(<contenttweaker:crystallized_mana>, [[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>],[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>],[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>]]);
+recipes.addShapeless(<contenttweaker:crystallized_mana> * 9, [<contenttweaker:crystallized_mana_cluster>]);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:rune:8>, <contenttweaker:crystallized_mana> * 3, 1.0);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:storage:3>, <contenttweaker:crystallized_mana>, 0.5);
+
+# Crystallized Mana Shard
+recipes.addShaped(<contenttweaker:crystallized_mana_shard>, [[<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>],[<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>],[<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>,<contenttweaker:crystallized_mana_fragment>]]);
+recipes.addShapeless(<contenttweaker:crystallized_mana_shard> * 9, [<contenttweaker:crystallized_mana>]);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:storage>, <contenttweaker:crystallized_mana_shard> * 3, 0.5);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource:2>, <contenttweaker:crystallized_mana_shard>, 0.2);
+
+# Crystallized Mana Fragment
+recipes.addShapeless(<contenttweaker:crystallized_mana_fragment> * 9, [<contenttweaker:crystallized_mana_shard>]);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource:1>, <contenttweaker:crystallized_mana_fragment>, 0.1);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource>, <contenttweaker:crystallized_mana_fragment> * 3, 0.1);
 
 print("ENDING ContentTweakerRecipes.zs");

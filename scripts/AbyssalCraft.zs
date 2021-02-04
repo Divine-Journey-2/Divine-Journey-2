@@ -5,6 +5,7 @@ import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.Transposer;
+import mods.bloodmagic.TartaricForge;
 
 print("STARTING AbyssalCraft.zs");
 
@@ -333,6 +334,106 @@ mods.abyssalcraft.InfusionRitual.addRitual("altarOfChagarothBottom", 2, 51, 2000
 mods.abyssalcraft.CreationRitual.removeRitual(<abyssalcraft:dreadaltartop>);
 mods.abyssalcraft.InfusionRitual.addRitual("altarOfChagarothTop", 2, 51, 20000, true, <abyssalcraft:dreadaltartop>, <divinerpg:apalachia_heart>, [<divinerpg:apalachia_chunk>,<divinerpg:apalachia_chunk>,<contenttweaker:hybrid_abyssalium_block>,<abyssalcraft:dreadcloth>,<abyssalcraft:dreadcloth>,<abyssalcraft:dreadcloth>,<contenttweaker:hybrid_abyssalium_block>,<divinerpg:apalachia_chunk>], false);
 
-# 
+# Crystallizer
+recipes.remove(<abyssalcraft:crystallizer>);
+mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:crystallizer>,
+[[<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>],
+[<abyssalcraft:ingotblock:2>,<bloodmagic:item_demon_crystal:3>,<bloodmagic:item_demon_crystal:2>,<bloodmagic:item_demon_crystal:3>,<abyssalcraft:ingotblock:2>],
+[<abyssalcraft:ingotblock:2>,<extrautils2:drum:3>,<bloodmagic:demon_crystallizer>,<extrautils2:drum:3>,<abyssalcraft:ingotblock:2>],
+[<abyssalcraft:ingotblock:2>,<bloodmagic:item_demon_crystal:3>,<bloodmagic:item_demon_crystal:2>,<bloodmagic:item_demon_crystal:3>,<abyssalcraft:ingotblock:2>],
+[<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>,<abyssalcraft:ingotblock:2>]]);
+
+# Dread-plagued Gateway Key
+<abyssalcraft:dreadkey>.maxStackSize = 1;
+<abyssalcraft:dreadkey>.addTooltip(format.white("Dropped by ") + format.red("Cha'goroth") + format.white(" at the end of the ") + format.red("Dreadlands"));
+<abyssalcraft:dreadkey>.addTooltip(format.white("dungeon. You can enter it by placing down the "));
+<abyssalcraft:dreadkey>.addTooltip(format.red("Altar of Cha'goroth (bottom & top)") + format.white(" at Y=40 in"));
+<abyssalcraft:dreadkey>.addTooltip(format.white("in a Dreadlands Mountains biome."));
+
+# Cha'goroth's R'lyehian Gateway Key
+mods.abyssalcraft.Transmutator.removeTransmutationInput(<abyssalcraft:dreadkey>);
+mods.bloodmagic.TartaricForge.addRecipe(<abyssalcraft:gatewaykeyjzh>, [<abyssalcraft:dreadkey>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:crystallized_mana_cluster>,<abyssalcraft:platec>], 2048, 2048);
+
+# Fixing some Crystallizer recipes
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:nitreore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<minecraft:lapis_ore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<minecraft:coal_ore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<minecraft:redstone_ore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:abynitore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:abycorore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:abylcorore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:coraliumore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:cchunk>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:cchunk>, <abyssalcraft:crystal:13>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:coralium>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:corbone>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:corbone>, <abyssalcraft:crystalshard:7> * 12, 0.2);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:shoggothflesh:1>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:shoggothflesh:1>, <abyssalcraft:crystalshard:7> * 8, 0.2);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:corflesh>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:corflesh>, <abyssalcraft:crystalshard:7> * 8, 0.2);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:dreadore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:charcoal>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:shoggothflesh:2>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:shoggothflesh:2>, <abyssalcraft:crystalshard:7> * 8, 0.2);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:abydreadore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:abyore>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<agricraft:agri_nugget:3>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:metal:29>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<enderio:item_material:23>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<actuallyadditions:item_dust:6>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<bloodmagic:component:21>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<actuallyadditions:block_misc:5>, <abyssalcraft:crystalcluster:3>, 0.9);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<minecraft:blaze_rod>, <abyssalcraft:crystalshard:15> * 20, 0.5);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:blazeblock>, <abyssalcraft:crystal:15> * 20, 1.0);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:129>, <abyssalcraft:crystal:16>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:6>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:2>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:productnugget:5>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<agricraft:agri_nugget:5>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:2>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:metal0:4>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<galacticraftcore:basic_block_core:9>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:1>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:productnugget:4>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:5>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<agricraft:agri_nugget:4>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<galacticraftcore:basic_block_core:13>, <abyssalcraft:crystalcluster2:2>, 0.9);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<appliedenergistics2:material:5>, <abyssalcraft:crystal:18>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:ore0:9>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<galacticraftcore:basic_block_core:7>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:ore:1>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thermalfoundation:ore:4>);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<erebus:ore_aluminium>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:storage:4>, <abyssalcraft:crystalcluster2:4>, 0.9);
+mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:3>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:128>, <abyssalcraft:crystal:17>, 0.1);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:64>, <abyssalcraft:crystal:17>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<minecraft:iron_ingot>, <abyssalcraft:crystal>, 0.1);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material>, <abyssalcraft:crystal>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:1>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:1>, <abyssalcraft:crystal:1>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:4>);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:65>, <abyssalcraft:crystal:16>, 0.1);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:storage_alloy:3>, <abyssalcraft:crystalfragment:17>, 0.9);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:ingot:2>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:24> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:8>);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:nugget:8>, <abyssalcraft:crystalfragment:17> * 6, <abyssalcraft:crystalfragment:24> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:163>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:16> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:99>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:16> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thermalfoundation:material:227>);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:227>, <abyssalcraft:crystalfragment:17> * 6, <abyssalcraft:crystalfragment:16> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<alchemistry:ingot:4>, <abyssalcraft:crystal:26>, 0.1);
+
+# Materializer
+recipes.remove(<abyssalcraft:materializer>);
+
+# OP Transmutator recipes
+mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:12>);
+mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:20>);
+mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:30>);
+mods.abyssalcraft.Transmutator.removeTransmutationOutput(<minecraft:ice>);
 
 print("ENDING AbyssalCraft.zs");

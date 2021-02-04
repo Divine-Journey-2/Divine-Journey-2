@@ -65,12 +65,6 @@
       "Max Group Count": 4
     },
     {
-      "Entity Class": "erebus.entity.EntityBlackWidow",
-      "Weight": 100,
-      "Min Group Count": 2,
-      "Max Group Count": 5
-    },
-    {
       "Entity Class": "sblectric.lightningcraft.entities.EntityDemonSoldier",
       "Weight": 15,
       "Min Group Count": 1,

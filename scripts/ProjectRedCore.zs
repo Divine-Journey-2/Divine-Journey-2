@@ -1,7 +1,9 @@
 #priority -10
 # Author: Atricos
 
-import mods.immersiveengineering.AlloySmelter;
+import crafttweaker.item.IItemStack;
+import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
+import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.Pulverizer;
 import mods.actuallyadditions.Crusher as AACrusher;
@@ -19,7 +21,7 @@ import mods.roots.Mortar;
 print("STARTING ProjectRedCore.zs");
 
 # Red Alloy Ingot
-mods.immersiveengineering.AlloySmelter.removeRecipe(<projectred-core:resource_item:103>);
+IEAlloySmelter.removeRecipe(<projectred-core:resource_item:103>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<projectred-core:resource_item:103>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:103>, <projectred-core:resource_item:251>, null,  200, 128);
 
@@ -47,5 +49,32 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:electrotine_ore
 furnace.addRecipe(<contenttweaker:electrotine>, <contenttweaker:electrotine_ore>);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<contenttweaker:electrotine>, <contenttweaker:electrotine_ore>, 2000);
 mods.enderio.AlloySmelter.addRecipe(<contenttweaker:electrotine>, [<contenttweaker:electrotine_ore>], 2000);
-	
+
+# Sandy Coal Compound -> Sandy Silicon Compound
+<projectred-core:resource_item:250>.displayName = "Sandy Silicon Compound";
+recipes.remove(<projectred-core:resource_item:250>);
+recipes.addShaped(<projectred-core:resource_item:250>, [[<extrautils2:compressedsand>,<galacticraftcore:basic_block_core:13>,<extrautils2:compressedsand>],[<galacticraftcore:basic_block_core:13>,<extrautils2:compressedsand>,<galacticraftcore:basic_block_core:13>],[<extrautils2:compressedsand>,<galacticraftcore:basic_block_core:13>,<extrautils2:compressedsand>]]);
+
+# Silicon
+recipes.remove(<projectred-core:resource_item:301>);
+recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<microblockcbe:saw_diamond>.anyDamage().transformDamage(),<projectred-core:resource_item:300>]);
+recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<chiselsandbits:bitsaw_diamond>.anyDamage().transformDamage(),<projectred-core:resource_item:300>]);
+
+function addProjectRedSiliconCompoundRecipe(output as IItemStack, input_material as IItemStack) {
+	recipes.remove(output);
+	mods.immersiveengineering.ArcFurnace.addRecipe(output, <projectred-core:resource_item:301>, null, 160, 240, [input_material], "Alloying");
+	EIOAlloySmelter.addRecipe(output, [<projectred-core:resource_item:301>, input_material], 10000);
+	IEAlloySmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 400);
+	mods.thermalexpansion.InductionSmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 10000);
+}
+
+# Glowing Silicon Compound
+addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:311>, <minecraft:glowstone_dust> * 24);
+
+# Red Silicon Compound
+addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:310>, <minecraft:redstone> * 24);
+
+# Electrotine Silicon Compound
+addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:312>, <contenttweaker:electrotine> * 24);
+
 print("ENDING ProjectRedCore.zs");

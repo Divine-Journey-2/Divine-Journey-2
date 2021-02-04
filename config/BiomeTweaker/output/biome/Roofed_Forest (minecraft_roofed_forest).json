@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "BIRCH_TREES",
-    "DENSE",
     "FOREST",
     "SPOOKY",
+    "BIRCH_TREES",
+    "DENSE",
     "THEMED_TREES"
   ],
   "BiomeManager Entries": {
