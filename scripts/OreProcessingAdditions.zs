@@ -511,4 +511,60 @@ LightningCrusher.remove(<minecraft:redstone>);
 LightningCrusher.add(<minecraft:redstone> * 6, <ore:oreRedstone>);
 LightningCrusher.add(<minecraft:redstone> * 6, <bno:ore_netherredstone>);
 
+# Prosperity Ore
+recipes.addShapeless(<mysticalagriculture:crafting:5> * 4, [<mysticalagriculture:prosperity_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:prosperity_ore>, <mysticalagriculture:crafting:5> * 6, false, 1, 200);
+AACrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <mysticalagriculture:prosperity_ore>);
+IECrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <mysticalagriculture:prosperity_ore>, 4000);
+EUCrusher.add(<mysticalagriculture:crafting:5> * 4, <mysticalagriculture:prosperity_ore>);
+LightningCrusher.add(<mysticalagriculture:crafting:5> * 4, <mysticalagriculture:prosperity_ore>);
+mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:prosperity_ore>, <mysticalagriculture:crafting:5>);
+
+# Nether Prosperity Ore
+recipes.addShapeless(<mysticalagriculture:crafting:5> * 5, [<mysticalagriculture:nether_prosperity_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:nether_prosperity_ore>, <mysticalagriculture:crafting:5> * 6, false, 1, 200);
+
+# End Prosperity Ore
+recipes.addShapeless(<mysticalagriculture:crafting:5> * 5, [<mysticalagriculture:end_prosperity_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:end_prosperity_ore>, <mysticalagriculture:crafting:5> * 6, false, 1, 200);
+AACrusher.addRecipe(<mysticalagriculture:crafting:5> * 5, <mysticalagriculture:end_prosperity_ore>);
+IECrusher.addRecipe(<mysticalagriculture:crafting:5> * 5, <mysticalagriculture:end_prosperity_ore>, 4000);
+EUCrusher.add(<mysticalagriculture:crafting:5> * 5, <mysticalagriculture:end_prosperity_ore>);
+LightningCrusher.add(<mysticalagriculture:crafting:5> * 5, <mysticalagriculture:end_prosperity_ore>);
+mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:end_prosperity_ore>, <mysticalagriculture:crafting:5>);
+mods.mekanism.enrichment.removeRecipe(<mysticalagriculture:end_prosperity_ore>);
+mods.mekanism.enrichment.addRecipe(<mysticalagriculture:end_prosperity_ore>, <mysticalagriculture:crafting:5> * 5);
+mods.thermalexpansion.Pulverizer.removeRecipe(<mysticalagriculture:end_prosperity_ore>);
+mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:crafting:5> * 5, <mysticalagriculture:end_prosperity_ore>, 4000);
+mods.enderio.SagMill.removeRecipe(<mysticalagriculture:end_prosperity_ore>);
+mods.enderio.SagMill.addRecipe([<mysticalagriculture:crafting:5> * 5, <minecraft:end_stone>], [1, 0.15], <mysticalagriculture:end_prosperity_ore>, "MULTIPLY_OUTPUT");
+
+# Inferium Ore
+recipes.addShapeless(<mysticalagriculture:crafting> * 4, [<mysticalagriculture:inferium_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:inferium_ore>, <mysticalagriculture:crafting> * 6, false, 1, 200);
+AACrusher.addRecipe(<mysticalagriculture:crafting> * 4, <mysticalagriculture:inferium_ore>);
+IECrusher.addRecipe(<mysticalagriculture:crafting> * 4, <mysticalagriculture:inferium_ore>, 4000);
+EUCrusher.add(<mysticalagriculture:crafting> * 4, <mysticalagriculture:inferium_ore>);
+LightningCrusher.add(<mysticalagriculture:crafting> * 4, <mysticalagriculture:inferium_ore>);
+mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:inferium_ore>, <mysticalagriculture:crafting>);
+
+# Nether Inferium Ore
+recipes.addShapeless(<mysticalagriculture:crafting> * 5, [<mysticalagriculture:nether_inferium_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:nether_inferium_ore>, <mysticalagriculture:crafting> * 6, false, 1, 200);
+
+# End Inferium Ore
+recipes.addShapeless(<mysticalagriculture:crafting> * 5, [<mysticalagriculture:end_inferium_ore>,<ore:dustPetrotheum>]);
+mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:end_inferium_ore>, <mysticalagriculture:crafting> * 6, false, 1, 200);
+AACrusher.addRecipe(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>);
+IECrusher.addRecipe(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>, 4000);
+EUCrusher.add(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>);
+LightningCrusher.add(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>);
+mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:end_inferium_ore>, <mysticalagriculture:crafting>);
+mods.mekanism.enrichment.removeRecipe(<mysticalagriculture:end_inferium_ore>);
+mods.mekanism.enrichment.addRecipe(<mysticalagriculture:end_inferium_ore>, <mysticalagriculture:crafting> * 5);
+mods.thermalexpansion.Pulverizer.removeRecipe(<mysticalagriculture:end_inferium_ore>);
+mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>, 4000);
+mods.enderio.SagMill.removeRecipe(<mysticalagriculture:end_inferium_ore>);
+mods.enderio.SagMill.addRecipe([<mysticalagriculture:crafting> * 5, <minecraft:end_stone>], [1, 0.15], <mysticalagriculture:end_inferium_ore>, "MULTIPLY_OUTPUT");
+
 print("ENDING OreProcessingAdditions.zs");

@@ -407,16 +407,26 @@ furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>
 # Crushed Coal -> Pulverized Coal
 mods.actuallyadditions.Crusher.removeRecipe(<actuallyadditions:item_dust:6>);
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:768>, <minecraft:coal>);
-<ore:dustCoal>.removeItems([<actuallyadditions:item_dust:6>,<enderio:item_material:23>,<bloodmagic:component:21>]);
 
 # Pulverized Charcoal
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:769>, <minecraft:coal:1>);
 
 # Iron Dust
 <ore:dustIron>.removeItems([<enderio:item_material:24>,<bloodmagic:component:19>,<libvulpes:productdust:1>,<immersiveengineering:metal:18>,<actuallyadditions:item_dust>]);
+furnace.remove(<minecraft:iron_ingot>, <bloodmagic:component:19>);
+furnace.remove(<minecraft:iron_ingot>, <enderio:item_material:24>);
+furnace.remove(<minecraft:iron_ingot>, <libvulpes:productdust:1>);
+furnace.remove(<minecraft:iron_ingot>, <actuallyadditions:item_dust>);
+furnace.remove(<minecraft:iron_ingot>, <immersiveengineering:metal:18>);
 
 # Gold Dust
 <ore:dustGold>.removeItems([<libvulpes:productdust:2>,<actuallyadditions:item_dust:1>,<immersiveengineering:metal:19>,<enderio:item_material:25>,<appliedenergistics2:material:51>,<bloodmagic:component:20>]);
+furnace.remove(<minecraft:gold_ingot>, <bloodmagic:component:20>);
+furnace.remove(<minecraft:gold_ingot>, <appliedenergistics2:material:51>);
+furnace.remove(<minecraft:gold_ingot>, <enderio:item_material:25>);
+furnace.remove(<minecraft:gold_ingot>, <immersiveengineering:metal:19>);
+furnace.remove(<minecraft:gold_ingot>, <actuallyadditions:item_dust:1>);
+furnace.remove(<minecraft:gold_ingot>, <libvulpes:productdust:2>);
 
 # Tin Dust
 <ore:dustTin>.remove(<libvulpes:productdust:5>);

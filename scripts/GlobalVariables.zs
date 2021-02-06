@@ -17,6 +17,7 @@ global allCoalBlocks as IOreDictEntry = <ore:allCoalBlocks>;
 allCoalBlocks.addAll(<ore:blockCoal>);
 allCoalBlocks.addAll(<ore:blockCharcoal>);
 
+<ore:dustCoal>.removeItems([<actuallyadditions:item_dust:6>,<enderio:item_material:23>,<bloodmagic:component:21>]);
 global allCoalDusts as IOreDictEntry = <ore:allCoalDusts>;
 allCoalDusts.addAll(<ore:dustCoal>);
 allCoalDusts.addAll(<ore:dustCharcoal>);

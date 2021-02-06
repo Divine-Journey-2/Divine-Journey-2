@@ -655,7 +655,7 @@ recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:elec
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("4) Have at least ") + format.red("1,000,000 LP") + format.white(" in your Life Network."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("5) Activate the Ritual with an ") + format.darkAqua("Awakened Activation Crystal") + format.white("."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("6) Throw a ") + format.blue("Potency Core") + format.white(" on top of the Master Ritual Stone."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. Yoau can automate the process with a Builder."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. You can automate the process with a Builder."));
 
 # Angelic Silicon/Crystal Mixture
 recipes.addShaped(<contenttweaker:angelic_silicon_crystal_mixture>, [[<bloodmagic:item_demon_crystal:2>,<projectred-core:resource_item:341>,<bloodmagic:item_demon_crystal:2>],[<bloodmagic:item_demon_crystal:3>,<projectred-core:resource_item:320>,<bloodmagic:item_demon_crystal:3>],[<bloodmagic:item_demon_crystal:4>,<projectred-core:resource_item:342>,<bloodmagic:item_demon_crystal:4>]]);
@@ -683,5 +683,63 @@ mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource:2>
 recipes.addShapeless(<contenttweaker:crystallized_mana_fragment> * 9, [<contenttweaker:crystallized_mana_shard>]);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource:1>, <contenttweaker:crystallized_mana_fragment>, 0.1);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource>, <contenttweaker:crystallized_mana_fragment> * 3, 0.1);
+
+# Manastar Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:manastar_petal>, [<ore:petalBlue>,<ore:petalBlue>,<ore:petalRed>,<ore:petalWhite>]);
+
+# Thermal Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:thermal_petal>, [<ore:petalOrange>,<ore:petalOrange>,<ore:petalRed>,<ore:petalRed>]);
+
+# Petal of the Arcane Rose
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_arcane_rose>, [<ore:petalPink>,<ore:petalMagenta>,<ore:petalMagenta>,<ore:petalPurple>]);
+
+# Petal of the Gourmaryllis
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_gourmaryllis>, [<ore:petalYellow>,<ore:petalYellow>,<ore:petalYellow>,<ore:petalLightGray>]);
+
+# Petal of the Narslimmus
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_narslimmus>, [<ore:petalLime>,<ore:petalLime>,<ore:petalGreen>,<ore:petalGray>]);
+
+# Jaded Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:jaded_petal>, [<ore:petalRed>,<ore:petalPurple>,<ore:petalLime>,<ore:petalBlack>]);
+<contenttweaker:jaded_petal>.addTooltip(format.green(format.italic("A certain server owner's favorite Petal!")));
+
+# Thorny Belle Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:thorny_belle_petal>, [<ore:petalRed>,<ore:petalRed>,<ore:petalRed>,<ore:petalBlack>]);
+
+# Thorny Dread Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:thorny_dread_petal>, [<ore:petalBlack>,<ore:petalBlack>,<ore:petalBlack>,<ore:petalRed>]);
+
+# Tigerseye Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:tigerseye_petal>, [<ore:petalYellow>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalBlack>]);
+
+# Petal of the Exoflame
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_exoflame>, [<ore:petalOrange>,<ore:petalRed>,<ore:petalBrown>,<ore:petalBlack>]);
+
+# Agricarnatic Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:agricarnatic_petal>, [<ore:petalLime>,<ore:petalLime>,<ore:petalLime>,<ore:petalGreen>]);
+
+# Hopping Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:hopping_petal>, [<ore:petalGray>,<ore:petalGray>,<ore:petalLightGray>,<ore:petalLightGray>]);
+
+# Petal of the Rannuncarpus
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_rannuncarpus>, [<ore:petalYellow>,<ore:petalYellow>,<ore:petalOrange>,<ore:petalPink>]);
+
+# Tangled Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:tangled_petals>, [<ore:petalGreen>,<ore:petalLightBlue>,<ore:petalCyan>,<ore:petalGray>]);
+
+# Petal of the Jiyuulia
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_jiyuulia>, [<ore:petalMagenta>,<ore:petalMagenta>,<ore:petalPurple>,<ore:petalLightGray>]);
+
+# Clay Cone Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:clay_cone_petal>, [<ore:petalLightGray>,<ore:petalLightGray>,<ore:petalLightGray>,<ore:petalGreen>]);
+
+# Daffomill Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:daffomill_petal>, [<ore:petalYellow>,<ore:petalYellow>,<ore:petalOrange>,<ore:petalBrown>]);
+
+# Petal of the Solegnolia
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_solegnolia>, [<ore:petalYellow>,<ore:petalOrange>,<ore:petalRed>,<ore:petalBrown>]);
+
+# Petal of the Bergamute
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_bergamute>, [<ore:petalYellow>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalOrange>]);
 
 print("ENDING ContentTweakerRecipes.zs");

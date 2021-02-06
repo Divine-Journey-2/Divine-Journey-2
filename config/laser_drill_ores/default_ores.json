@@ -463,7 +463,7 @@
 		]
 	},
 	{
-		"item": "appliedenergistics2:material",
+		"item": "appliedenergistics2:quartz_ore",
 		"color": 3,
 		"rarity": [
 			{
@@ -476,7 +476,7 @@
 		]
 	},
 	{
-		"item": "appliedenergistics2:material:1",
+		"item": "appliedenergistics2:charged_quartz_ore",
 		"color": 3,
 		"rarity": [
 			{

@@ -123669,71 +123669,6 @@
         }
       },
       "rewards:9": {}
-    },
-    "1700:10": {
-      "questID:3": 1700,
-      "preRequisites:11": [
-        1525
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {
-                "AS_Amulet_HolderLeast:4": -4822218405563622703,
-                "AS_Amulet_HolderMost:4": 433871007885182809
-              }
-            },
-            "id:8": "bloodmagic:sigil_magnetism",
-            "Count:3": 1,
-            "tag:10": {},
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Upgrade? Hmm.",
-          "desc:8": "Craft a Sigil of Magnetism! This isn\u0027t a straight upgrade over your previous Magnet, but it\u0027s going to be used to make Botania Magnets, which are even better than the QuantumFlux one."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {
-                  "AS_Amulet_HolderLeast:4": -4822218405563622703,
-                  "AS_Amulet_HolderMost:4": 433871007885182809
-                }
-              },
-              "id:8": "bloodmagic:sigil_magnetism",
-              "Count:3": 1,
-              "tag:10": {},
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -129358,13 +129293,6 @@
           "x:3": 147,
           "y:3": 41,
           "id:3": 1644,
-          "sizeY:3": 24
-        },
-        "61:10": {
-          "sizeX:3": 24,
-          "x:3": 135,
-          "y:3": 166,
-          "id:3": 1700,
           "sizeY:3": 24
         }
       },

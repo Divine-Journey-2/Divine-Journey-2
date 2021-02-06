@@ -1,0 +1,38 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_elemental_soil",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "extrautils2:compresseddirt"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "extrautils2:compressedgravel"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:bone_block"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:petals"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:terra_moss"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "roots:elemental_soil",
+            "amount": 4
+        }
+    ]
+}

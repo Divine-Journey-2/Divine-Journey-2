@@ -417,7 +417,7 @@ mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:1>)
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:1>, <abyssalcraft:crystal:1>, 0.1);
 mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:4>);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:65>, <abyssalcraft:crystal:16>, 0.1);
-mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:storage_alloy:3>, <abyssalcraft:crystalfragment:17>, 0.9);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:storage_alloy:3>, <abyssalcraft:crystal:17> * 6, <abyssalcraft:crystal:16> * 2, 0.9);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:ingot:2>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:24> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:8>);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:nugget:8>, <abyssalcraft:crystalfragment:17> * 6, <abyssalcraft:crystalfragment:24> * 2, 0.1);
@@ -435,5 +435,37 @@ mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:12>)
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:20>);
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<alchemistry:ingot:30>);
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<minecraft:ice>);
+
+# Refined Coralium Helmet
+recipes.remove(<abyssalcraft:corhelmet>);
+recipes.addShaped(<abyssalcraft:corhelmet>, [[<abyssalcraft:cingot>,<abyssalcraft:cingot>,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,<actuallyadditions:item_helm_crystal_green>,<abyssalcraft:cingot>]]);
+
+# Refined Coralium Chestplate
+recipes.remove(<abyssalcraft:corplate>);
+recipes.addShaped(<abyssalcraft:corplate>, [[<abyssalcraft:cingot>,<actuallyadditions:item_chest_crystal_green>,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,<abyssalcraft:cingot>,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,<abyssalcraft:cingot>,<abyssalcraft:cingot>]]);
+
+# Refined Coralium Leggings
+recipes.remove(<abyssalcraft:corlegs>);
+recipes.addShaped(<abyssalcraft:corlegs>, [[<abyssalcraft:cingot>,<abyssalcraft:cingot>,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,<actuallyadditions:item_pants_crystal_green>,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,null,<abyssalcraft:cingot>]]);
+
+# Refined Coralium Boots
+recipes.remove(<abyssalcraft:corboots>);
+recipes.addShaped(<abyssalcraft:corboots>, [[<abyssalcraft:cingot>,null,<abyssalcraft:cingot>],[<abyssalcraft:cingot>,<actuallyadditions:item_boots_crystal_green>,<abyssalcraft:cingot>]]);
+
+# Dreadium Helmet
+recipes.remove(<abyssalcraft:dreadiumhelmet>);
+recipes.addShaped(<abyssalcraft:dreadiumhelmet>, [[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:corhelmet>,<abyssalcraft:dreadiumingot>]]);
+
+# Dreadium Chestplate
+recipes.remove(<abyssalcraft:dreadiumplate>);
+recipes.addShaped(<abyssalcraft:dreadiumplate>, [[<abyssalcraft:dreadiumingot>,<abyssalcraft:corplate>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>]]);
+
+# Dreadium Leggings
+recipes.remove(<abyssalcraft:dreadiumlegs>);
+recipes.addShaped(<abyssalcraft:dreadiumlegs>, [[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:corlegs>,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,null,<abyssalcraft:dreadiumingot>]]);
+
+# Dreadium Boots
+recipes.remove(<abyssalcraft:dreadiumboots>);
+recipes.addShaped(<abyssalcraft:dreadiumboots>, [[<abyssalcraft:dreadiumingot>,null,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:corboots>,<abyssalcraft:dreadiumingot>]]);
 
 print("ENDING AbyssalCraft.zs");

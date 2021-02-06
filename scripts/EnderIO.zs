@@ -12,6 +12,8 @@ import crafttweaker.recipes.IRecipeFunction;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.thermalexpansion.Compactor;
 import mods.roots.Fey;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import mods.enderio.Enchanter;
 
 print("STARTING EnderIO.zs");
 
@@ -697,5 +699,10 @@ recipes.addShaped(<enderio:item_dark_steel_shield>, [[<enderio:item_alloy_ingot:
 EIOAlloySmelter.removeRecipe(<enderio:item_material:50>);
 EIOAlloySmelter.addRecipe(<enderio:item_material:50> * 2, [<ore:allCoalDusts> * 6, <ore:slimeball>, <minecraft:coal:*>], 2000);
 EIOAlloySmelter.addRecipe(<enderio:item_material:50>, [<ore:allCoalDusts> * 3, <minecraft:egg>, <minecraft:coal:*>], 1500);
+
+# Life Stealing Enchantment in the Enchanter
+mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);
+#mods.enderio.Enchanter.addRecipe(<enchantment:evilcraft:life_stealing>, <evilcraft:dark_power_gem>, 4, 12);
+# wish this didn't crash my game :(
 
 print("ENDING EnderIO.zs");

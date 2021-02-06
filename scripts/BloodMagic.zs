@@ -333,7 +333,7 @@ recipes.addShaped(<bloodmagic:ritual_diviner>, [[<botania:spellcloth>.noReturn()
 
 # Ritual Diviner [Dusk]
 recipes.remove(<bloodmagic:ritual_diviner:1>);
-recipes.addShaped(<bloodmagic:ritual_diviner:1>, [[<botania:spellcloth>.noReturn(),<abyssalcraft:crystalcluster:12>,<botania:spellcloth>.noReturn()],[<bloodmagic:inscription_tool:5>.noReturn(),blood_orb_at_least_tier_4.reuse(),<bloodmagic:inscription_tool:5>.noReturn()],[<botania:spellcloth>.noReturn(),<contenttweaker:suppression_core>,<botania:spellcloth>.noReturn()]]);
+recipes.addShaped(<bloodmagic:ritual_diviner:1>, [[<botania:spellcloth>.noReturn(),<abyssalcraft:crystalcluster:12>,<botania:spellcloth>.noReturn()],[<bloodmagic:inscription_tool:5>.noReturn(),<bloodmagic:ritual_diviner>,<bloodmagic:inscription_tool:5>.noReturn()],[<botania:spellcloth>.noReturn(),<contenttweaker:suppression_core>,<botania:spellcloth>.noReturn()]]);
 
 # Ritual Dismantler
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:item_demon_crystal:2>,<bloodmagic:item_demon_crystal:2>,<bloodmagic:ritual_diviner>,<bloodmagic:blood_shard>]);
@@ -375,7 +375,7 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <botania:rune>, <bloodmag
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
 
 # Rune of the Orb
-blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <bloodmagic:blood_orb>, <bloodmagic:slate:4> * 2);
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <enderutilities:enderpart:12>, <bloodmagic:slate:4> * 2);
 
 # Air Sigil
 addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_air>, <bloodmagic:component:2>, <bloodmagic:slate:1>);
@@ -455,7 +455,7 @@ addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_ender_severance>, <bloodmagic
 
 # Holding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<ore:chestWood>.firstItem,<ore:leather>.firstItem,<ore:string>.firstItem,<ore:string>.firstItem]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:27>, [<mob_grinding_utils:ender_inhibitor_on>,<mob_grinding_utils:ender_inhibitor_on>,<minecraft:ender_eye>,<minecraft:ender_eye>], 32, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:27>, [<appliedenergistics2:drive>,<contenttweaker:reduction_core>,<contenttweaker:blood_infused_leather>,<botania:manaresource:22>], 32, 16);
 
 # Sigil of Holding
 addBloodMagicSigilRecipe(<bloodmagic:sigil_holding>, <bloodmagic:component:27>, <bloodmagic:slate:2>, <bloodmagic:slate:3>, <bloodmagic:component:27>);
@@ -489,11 +489,42 @@ recipes.addShaped(<bloodmagic:pack_sacrifice>, [[<abyssalcraft:dreadiumingot>,<e
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:2>,<bloodmagic:slate:3>,<bloodmagic:blood_shard>,<bloodmagic:item_demon_crystal>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:3>.withTag({}), [<bloodmagic:soul_gem:2>,<bloodmagic:decorative_brick>,<bloodmagic:item_demon_crystal>,<contenttweaker:potency_core>], 1024, 512);
 
+# Sentient Armour Gem
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:diamond_chestplate>,<bloodmagic:soul_gem:1>,<minecraft:iron_block>,<minecraft:obsidian>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:sentient_armour_gem>, [<bloodmagic:soul_gem:1>,<botania:manasteelchest>,<enderio:item_material:44>,<contenttweaker:defensive_core>], 512, 256);
+
+# Living Helmet
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_helmet>, <botania:manasteelhelm>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+
+# Living Chestplate
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_chest>.withTag({}), <botania:manasteelchest>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+
+# Living Leggings
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_leggings>, <botania:manasteellegs>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+
+# Living Boots
+mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:living_armour_boots>, <botania:manasteelboots>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+
+# Tome of Peritia
+recipes.remove(<bloodmagic:experience_tome>);
+
+# Potion Flask
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:potion>.withTag({Potion: "minecraft:water"}),<ore:cropNetherWart>.firstItem,<minecraft:redstone>,<minecraft:glowstone_dust>]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:potion_flask>, [<minecraft:potion>.withTag({Potion: "minecraft:water"}),<minecraft:nether_wart>,<actuallyadditions:item_crystal>,<mekanism:ingot:3>], 1000, 200, 1);
+
+# Simple Lengthening Catalyst
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:gunpowder>,<ore:cropNetherWart>.firstItem,<minecraft:dye:4>]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:28>, [<minecraft:nether_wart>,<actuallyadditions:item_crystal>,<contenttweaker:aquasalus>], 2000, 200, 1);
+
+# Simple Power Catalyst
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:gunpowder>,<ore:cropNetherWart>.firstItem,<minecraft:redstone>]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:28>, [<minecraft:nether_wart>,<mekanism:ingot:3>,<contenttweaker:incendium>], 2000, 200, 1);
+
+# Living Armor Training Bracelet
+recipes.remove(<bloodmagic:upgrade_trainer>);
+recipes.addShaped(<bloodmagic:upgrade_trainer>, [[null,<contenttweaker:power_core>,null],[<contenttweaker:power_core>,blood_orb_at_least_tier_4,<contenttweaker:power_core>],[null,<contenttweaker:power_core>,null]]);
+
 # Grand Tartaric Gem
-
-# Living Armor
-
-# Sentient Armor
 
 
 print("ENDING BloodMagic.zs");

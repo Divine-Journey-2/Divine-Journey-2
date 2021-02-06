@@ -305,20 +305,33 @@ recipes.removeShaped(<minecraft:diamond>, [[<extendedcrafting:material:128>,<ext
 # Iron Nugget
 recipes.remove(<immersiveengineering:metal:29>);
 <ore:nuggetIron>.removeItems([<immersiveengineering:metal:29>,<agricraft:agri_nugget:3>,<thaumcraft:nugget>]);
+recipes.removeShapeless(<minecraft:iron_nugget>, [<thaumcraft:nugget>]);
 
 # Tin Block
 <ore:blockTin>.remove(<libvulpes:metal0:5>);
 
 # Tin Nugget
-<ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<libvulpes:productnugget:5>,<agricraft:agri_nugget:5>]);
+<ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<libvulpes:productnugget:5>,<agricraft:agri_nugget:5>,<bno:nugget_tin>]);
+recipes.remove(<thaumcraft:nugget:2>);
+recipes.remove(<mekanism:nugget:6>);
+recipes.remove(<bno:nugget_tin>);
+recipes.removeShaped(<thermalfoundation:material:129>, [[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>],[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>],[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>]]);
+recipes.addShaped(<thermalfoundation:material:129>, [[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>],[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>],[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>]]);
 
 # Bronze Nugget
 <ore:nuggetBronze>.remove(<mekanism:nugget:2>);
+recipes.remove(<mekanism:nugget:2>);
 
 # Copper Block
 <ore:blockCopper>.removeItems([<libvulpes:metal0:4>,<galacticraftcore:basic_block_core:9>]);
+recipes.remove(<galacticraftcore:basic_block_core:9>);
 
 # Copper Nugget
-<ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<libvulpes:productnugget:4>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>]);
+<ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<libvulpes:productnugget:4>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>,<bno:nugget_copper>]);
+recipes.remove(<mekanism:nugget:5>);
+recipes.remove(<thaumcraft:nugget:1>);
+recipes.remove(<bno:nugget_copper>);
+recipes.removeShaped(<thermalfoundation:material:128>, [[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>]]);
+recipes.addShaped(<thermalfoundation:material:128>, [[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>]]);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

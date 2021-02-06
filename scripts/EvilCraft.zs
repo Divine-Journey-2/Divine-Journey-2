@@ -204,4 +204,100 @@ recipes.remove(<evilcraft:spirit_reanimator>);
 recipes.remove(<evilcraft:sceptre_of_thunder>);
 recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<botania:rune:6>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
 
+# Kineticator
+#recipes.remove(<evilcraft:kineticator>);
+#recipes.addShapedMirrored(<evilcraft:kineticator>.withTag({}), [[null,<evilcraft:dark_stick>,<evilcraft:blood_infusion_core>],[<evilcraft:dark_stick>,glod_crystal,<evilcraft:dark_stick>],[glod_crystal,<evilcraft:dark_stick>,null]]);
+
+# Repelling Kineticator
+#recipes.remove(<evilcraft:kineticator:1>);
+#recipes.addShapedMirrored(<evilcraft:kineticator:1>.withTag({}), [[null,<evilcraft:dark_stick>,glod_crystal],[<evilcraft:dark_stick>,glod_crystal,<evilcraft:dark_stick>],[<evilcraft:blood_infusion_core>,<evilcraft:dark_stick>,null]]);
+
+# Empty Orb
+recipes.remove(<evilcraft:blood_orb>);
+recipes.addShaped(<evilcraft:blood_orb>, [[<contenttweaker:bloodied_dust>,<contenttweaker:empty_core>,<contenttweaker:bloodied_dust>],[<contenttweaker:empty_core>,<botania:manaresource:5>,<contenttweaker:empty_core>],[<contenttweaker:bloodied_dust>,<contenttweaker:empty_core>,<contenttweaker:bloodied_dust>]]);
+
+# Blood Orb
+mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:blood_orb:1>);
+mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:blood_orb>, <liquid:evilcraftblood> * 640000, 3, <evilcraft:blood_orb:1>, 600, 2);
+
+# Materialized Vengeance Essence
+recipes.remove(<evilcraft:vengeance_essence:1>);
+EIOAlloySmelter.addRecipe(<evilcraft:vengeance_essence:1>, [<evilcraft:vengeance_essence> * 4, <contenttweaker:magicales> * 4, <contenttweaker:praesidium> * 4], 20000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:vengeance_essence:1>, <evilcraft:vengeance_essence> * 4, null, 120, 400, [<contenttweaker:magicales> * 4, <contenttweaker:praesidium> * 4]);
+
+# Garmonbozia
+mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:garmonbozia>);
+mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:vengeance_essence:1>, <liquid:evilcraftblood> * 160000, 3, <evilcraft:garmonbozia>, 150, 1);
+
+# Eternal Water Bucket
+recipes.remove(<evilcraft:bucket_eternal_water>);
+recipes.addShaped(<evilcraft:bucket_eternal_water>, [[null,<contenttweaker:aquasalus>,null],[<evilcraft:dark_power_gem_block>,<evilcraft:weather_container:2>,<evilcraft:dark_power_gem_block>],[null,<evilcraft:dark_power_gem_block>,null]]);
+
+# Sanguinary Environmental Accumulator
+recipes.remove(<evilcraft:sanguinary_environmental_accumulator>);
+mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:sanguinary_environmental_accumulator>,
+[[<bloodmagic:decorative_brick>,<botania:manaresource:9>,<botania:manaresource:9>,<botania:manaresource:9>,<bloodmagic:decorative_brick>],
+[<botania:manaresource:9>,<contenttweaker:coralium_decorated_blood_star>,<contenttweaker:coralium_decorated_blood_star>,<contenttweaker:coralium_decorated_blood_star>,<botania:manaresource:9>],
+[<botania:manaresource:9>,<evilcraft:garmonbozia>,<evilcraft:environmental_accumulation_core>,<evilcraft:garmonbozia>,<botania:manaresource:9>],
+[<botania:manaresource:9>,<contenttweaker:coralium_decorated_blood_star>,<contenttweaker:coralium_decorated_blood_star>,<contenttweaker:coralium_decorated_blood_star>,<botania:manaresource:9>],
+[<bloodmagic:decorative_brick>,<botania:manaresource:9>,<botania:manaresource:9>,<botania:manaresource:9>,<bloodmagic:decorative_brick>]]);
+
+# Eternal Water Block
+recipes.remove(<evilcraft:eternal_water_block>);
+recipes.addShaped(<evilcraft:eternal_water_block>, [[<ore:paneGlassBlue>,<contenttweaker:aquasalus>,<ore:paneGlassBlue>],[<ore:paneGlassBlue>,<roots:unending_bowl>,<ore:paneGlassBlue>],[<evilcraft:dark_block>,<evilcraft:weather_container:2>,<evilcraft:dark_block>]]);
+
+# Lightning Bomb
+recipes.remove(<evilcraft:lightning_bomb>);
+
+# Potentia Sphere
+recipes.remove(<evilcraft:potentia_sphere>);
+EIOAlloySmelter.addRecipe(<evilcraft:potentia_sphere>, [<contenttweaker:potency_core>, <contenttweaker:orbis_terrae> * 4, <minecraft:slime_ball> * 12], 10000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:potentia_sphere>, <contenttweaker:potency_core>, null, 120, 200, [<contenttweaker:orbis_terrae> * 4, <minecraft:slime_ball> * 12]);
+
+# Ender Pearl from Potentia Sphere
+mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<minecraft:ender_pearl>);
+
+# Inverted Potentia
+recipes.remove(<evilcraft:inverted_potentia>);
+EIOAlloySmelter.addRecipe(<evilcraft:inverted_potentia>, [<evilcraft:potentia_sphere>, <contenttweaker:suppression_core>, <minecraft:redstone_torch>], 10000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:inverted_potentia>, <evilcraft:potentia_sphere>, null, 120, 200, [<contenttweaker:suppression_core>, <minecraft:redstone_torch>]);
+
+# Mace of Destruction
+recipes.remove(<evilcraft:mace_of_destruction>);
+
+# Sanguinary Pedestal (Efficiency I)
+recipes.remove(<evilcraft:sanguinary_pedestal:1>);
+recipes.addShaped(<evilcraft:sanguinary_pedestal:1>, [[<evilcraft:dark_power_gem_block>,<evilcraft:dark_power_gem_block>,<evilcraft:dark_power_gem_block>],[null,<evilcraft:sanguinary_pedestal>,null],[<evilcraft:dark_power_gem_block>,<botania:storage:2>,<evilcraft:dark_power_gem_block>]]);
+
+# Invigoration Pendant
+recipes.remove(<evilcraft:invigorating_pendant>);
+recipes.addShaped(<evilcraft:invigorating_pendant>.withTag({}), [[null,<evilcraft:golden_string>,null],[<evilcraft:golden_string>,<contenttweaker:suppression_core>,<evilcraft:golden_string>],[<botania:manaresource:7>,<evilcraft:blood_infusion_core>,<botania:manaresource:7>]]);
+
+# Blood Pearl of Teleportation
+recipes.remove(<evilcraft:blood_pearl_of_teleportation>);
+recipes.addShaped(<evilcraft:blood_pearl_of_teleportation>.withTag({}), [[<evilcraft:dark_power_gem_block>,<enderutilities:enderpearlreusable>,<evilcraft:dark_power_gem_block>],[<enderutilities:enderpearlreusable>,<botania:storage:2>,<enderutilities:enderpearlreusable>],[<evilcraft:dark_power_gem_block>,<enderutilities:enderpearlreusable>,<evilcraft:dark_power_gem_block>]]);
+
+# Vengeance Pickaxe
+recipes.remove(<evilcraft:vengeance_pickaxe>);
+recipes.addShaped(<evilcraft:vengeance_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 35 as short}, {lvl: 3 as short, id: 58 as short}]}), [[<contenttweaker:offensive_core>,<minecraft:diamond_block>,<contenttweaker:offensive_core>],[<minecraft:diamond_block>,<evilcraft:dark_stick>,<minecraft:diamond_block>],[null,<evilcraft:dark_stick>,null]]);
+
+# Burning GemStone
+furnace.remove(<evilcraft:burning_gem_stone>);
+furnace.addRecipe(<evilcraft:burning_gem_stone>, <evilcraft:dark_power_gem_block>);
+
+# Wooden Exalted Crafter
+recipes.remove(<evilcraft:exalted_crafter:1>);
+recipes.addShaped(<evilcraft:exalted_crafter:1>, [[<evilcraft:undead_log>,<tconstruct:tooltables>,<evilcraft:undead_log>],[<tconstruct:tooltables>,<enderutilities:enderbag>,<tconstruct:tooltables>],[<evilcraft:undead_log>,<tconstruct:tooltables>,<evilcraft:undead_log>]]);
+
+# Exalted Crafter
+recipes.remove(<evilcraft:exalted_crafter>);
+recipes.addShaped(<evilcraft:exalted_crafter>, [[<evilcraft:dark_power_gem_block>,<minecraft:ender_chest>,<evilcraft:dark_power_gem_block>],[<minecraft:ender_chest>,<enderutilities:enderbag>,<minecraft:ender_chest>],[<evilcraft:dark_power_gem_block>,<minecraft:ender_chest>,<evilcraft:dark_power_gem_block>]]);
+
+# Spirit Furnace
+recipes.remove(<evilcraft:spirit_furnace>);
+
+# Spikey Claws
+recipes.remove(<evilcraft:spikey_claws>);
+recipes.addShaped(<evilcraft:spikey_claws>, [[<evilcraft:dark_spike>,<evilcraft:dark_spike>,<evilcraft:dark_spike>],[null,<evilcraft:dark_power_gem>,null]]);
+
 print("ENDING EvilCraft.zs");
