@@ -8,6 +8,7 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.botania.Apothecary;
 
 print("STARTING BloodMagic.zs");
 
@@ -518,13 +519,19 @@ mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:28>, [<minecraft:ne
 
 # Simple Power Catalyst
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:gunpowder>,<ore:cropNetherWart>.firstItem,<minecraft:redstone>]);
-mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:28>, [<minecraft:nether_wart>,<mekanism:ingot:3>,<contenttweaker:incendium>], 2000, 200, 1);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:29>, [<minecraft:nether_wart>,<mekanism:ingot:3>,<contenttweaker:incendium>], 2000, 200, 1);
 
 # Living Armor Training Bracelet
 recipes.remove(<bloodmagic:upgrade_trainer>);
 recipes.addShaped(<bloodmagic:upgrade_trainer>, [[null,<contenttweaker:power_core>,null],[<contenttweaker:power_core>,blood_orb_at_least_tier_4,<contenttweaker:power_core>],[null,<contenttweaker:power_core>,null]]);
 
-# Grand Tartaric Gem
+# Demon Blood Shard
+mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<botania:rune:13>,<botania:rune:11>,<botania:rune:15>,<contenttweaker:rune_of_deception>], 50000);
 
+# Archmage Blood Orb
+mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodmagic:blood_shard:1>, 4, 120000, 80, 80);
+
+# Grand Tartaric Gem
 
 print("ENDING BloodMagic.zs");

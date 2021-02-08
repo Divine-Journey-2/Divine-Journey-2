@@ -332,4 +332,63 @@ recipes.addShaped(<botania:manasteelboots>, [[<botania:manaresource>,null,<botan
 recipes.remove(<botania:magnetring>);
 recipes.addShapedMirrored(<botania:magnetring>.withTag({}), [[<botania:storage:2>,<botania:storage>,null],[<botania:storage>,<bloodmagic:sigil_magnetism>,<botania:storage>],[null,<botania:storage>,null]]);
 
+# Terrestrial Agglomeration Plate
+recipes.remove(<botania:terraplate>);
+recipes.addShapedMirrored(<botania:terraplate>, [[<contenttweaker:potency_core>,<contenttweaker:potency_core>,<contenttweaker:potency_core>],[<botania:rune:4>,<contenttweaker:dark_realm_soul_block>,<botania:rune:7>],[<botania:rune:5>,<contenttweaker:dark_realm_soul_block>,<botania:rune:6>]]);
+
+# Spark
+recipes.remove(<botania:spark>);
+recipes.addShaped(<botania:spark>, [[null,<abyssalcraft:methane>,null],[<abyssalcraft:methane>,<contenttweaker:soul_of_the_dark_realm>,<abyssalcraft:methane>],[null,<abyssalcraft:methane>,null]]);
+
+# Terrasteel
+<botania:manaresource:4>.addShiftTooltip(format.white("To obtain, setup a ") + format.blue("Terrestrial Agglomeration Plate"));
+<botania:manaresource:4>.addShiftTooltip(format.white("according to your ") + format.yellow("Lexica Botania") + format.white(" on top of ") + format.blue("Lapis Blocks"));
+<botania:manaresource:4>.addShiftTooltip(format.white("and Livingrock, place a ") + format.yellow("Spark") + format.white(" on top and also on a"));
+<botania:manaresource:4>.addShiftTooltip(format.white("nearby Mana Pool, then throw or Right Click a piece of"));
+<botania:manaresource:4>.addShiftTooltip(format.aqua("Manasteel, Mana Pearl") + format.white(" and ") + format.aqua("Mana Diamond") + format.white(" on top of the"));
+<botania:manaresource:4>.addShiftTooltip(format.white("Plate! The Spark will take a half a pool of Mana and"));
+<botania:manaresource:4>.addShiftTooltip(format.white("create an Ingot of ") + format.green("Terrasteel") + format.white("."));
+
+# Glimmering Livingwood
+recipes.remove(<botania:livingwood:5>);
+recipes.addShaped(<botania:livingwood:5>, [[null,<contenttweaker:sanctus>,null],[<botania:manaresource:18>,<botania:livingwood>,<botania:manaresource:18>],[null,<contenttweaker:sanctus>,null]]);
+
+# Elven Gateway Core
+recipes.remove(<botania:alfheimportal>);
+recipes.addShaped(<botania:alfheimportal>, [[<botania:livingwood>,<botania:livingwood:5>,<botania:livingwood>],[<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>],[<botania:livingwood>,<botania:livingwood:5>,<botania:livingwood>]]);
+
+# Mana Pylon
+recipes.remove(<botania:pylon>);
+recipes.addShaped(<botania:pylon>, [[<actuallyadditions:item_crystal_empowered:2>,null,<actuallyadditions:item_crystal_empowered:2>],[empowered_glod_crystal,<botania:storage:3>,empowered_glod_crystal],[<actuallyadditions:item_crystal_empowered:2>,null,<actuallyadditions:item_crystal_empowered:2>]]);
+
+# Natura Pylon
+recipes.remove(<botania:pylon:1>);
+recipes.addShaped(<botania:pylon:1>, [[<botania:manaresource:18>,null,<botania:manaresource:18>],[<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>],[<botania:livingwood>,<botania:pylon>,<botania:livingwood>]]);
+
+function addBotaniaTier3RuneRecipe(output as IItemStack, input_rune1 as IItemStack, input_rune2 as IItemStack) {
+	mods.botania.RuneAltar.removeRecipe(output);
+	mods.botania.RuneAltar.addRecipe(output, [input_rune1, input_rune2, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
+}
+
+# Rune of Lust
+addBotaniaTier3RuneRecipe(<botania:rune:9>,<botania:rune:4>,<botania:rune:1>);
+
+# Rune of Gluttony
+addBotaniaTier3RuneRecipe(<botania:rune:10>,<botania:rune:6>,<botania:rune:2>);
+
+# Rune of Greed
+addBotaniaTier3RuneRecipe(<botania:rune:11>,<botania:rune:7>,<botania:rune:3>);
+
+# Rune of Sloth
+addBotaniaTier3RuneRecipe(<botania:rune:12>,<botania:rune:7>,<botania:rune:2>);
+
+# Rune of Wrath
+addBotaniaTier3RuneRecipe(<botania:rune:13>,<botania:rune:5>,<botania:rune:1>);
+
+# Rune of Envy
+addBotaniaTier3RuneRecipe(<botania:rune:14>,<botania:rune:5>,<botania:rune:0>);
+
+# Rune of Pride
+addBotaniaTier3RuneRecipe(<botania:rune:15>,<botania:rune:6>,<botania:rune:3>);
+
 print("ENDING Botania.zs");

@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_wildwood_chestplate",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:sylvan_chestplate"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:wildwood_log"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:bark_wildwood"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:diamond"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalworld:pelt"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "roots:wildwood_chestplate"
+        }
+    ]
+}

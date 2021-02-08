@@ -193,5 +193,18 @@ remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:ci
 remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:cpearl");
 remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:apick");
 remove_entry("abyssalcraft:chests/stronghold_crossing", "main", "abyssalcraft:crystal");
+remove_entry("abyssalcraft:chests/omothol/blacksmith", "main", "abyssalcraft:tiningot");
+remove_entry("abyssalcraft:chests/omothol/blacksmith", "main", "abyssalcraft:copperingot");
+remove_entry("abyssalcraft:chests/omothol/storage_treasure", "main", "abyssalcraft:configurator_shard");
+add_entry("abyssalcraft:entities/jzahar", "essence", <abyssalcraft:gatekeeperessence>, 1, 1, 0, 0, 100);
+
+# Rotatick Diamond drop
+remove_entry("divinerpg:entities/vanilla/rotatick", "divinerpg:rotatick", "minecraft:diamond");
+add_entry("divinerpg:entities/vanilla/rotatick", "terran_shards", <divinerpg:terran_shards>, 1, 2, 0, 0, 100);
+
+# Undead Miner Diamond & Diamond Pickaxe drop
+clear_pool("divinerpg:entities/vanilla/miner", "divinerpg:miner");
+add_entry("divinerpg:entities/vanilla/miner", "custom_loot", <minecraft:rotten_flesh>, 1, 3, 0, 0, 90);
+add_entry("divinerpg:entities/vanilla/miner", "custom_loot", <minecraft:iron_ingot>, 1, 1, 0, 0, 10);
 
 print("ENDING LootTweaker.zs");

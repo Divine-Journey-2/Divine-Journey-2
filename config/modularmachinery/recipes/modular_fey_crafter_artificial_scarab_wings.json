@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_artificial_scarab_wings",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:moonglow_leaf"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:wildewheet"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:stalicripe"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:fey_leather"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:spirit_herb"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:artificial_scarab_wings"
+        }
+    ]
+}

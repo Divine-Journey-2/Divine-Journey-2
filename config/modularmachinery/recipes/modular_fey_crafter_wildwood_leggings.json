@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_wildwood_leggings",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:sylvan_leggings"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:wildwood_log"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:bark_wildwood"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:diamond"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalworld:carapace"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "roots:wildwood_leggings"
+        }
+    ]
+}

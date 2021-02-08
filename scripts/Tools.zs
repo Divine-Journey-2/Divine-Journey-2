@@ -32,6 +32,11 @@ print("STARTING Tools.zs");
 <minecraft:golden_sword>.maxDamage = 12;
 <minecraft:diamond_sword>.maxDamage = 400;
 
+# Vanilla material Excavators
+<thermalfoundation:tool.excavator_iron>.maxDamage = 180;
+<thermalfoundation:tool.excavator_gold>.maxDamage = 12;
+<thermalfoundation:tool.excavator_diamond>.maxDamage = 400;
+
 # Abyssalcraft Darkstone Tools
 <abyssalcraft:dpick>.maxDamage = 60;
 <abyssalcraft:daxe>.maxDamage = 60;
@@ -104,60 +109,73 @@ recipes.remove(<bewitchment:silver_hoe>);
 <thermalfoundation:tool.axe_copper>.maxDamage = 180;
 <thermalfoundation:tool.shovel_copper>.maxDamage = 180;
 <thermalfoundation:tool.sword_copper>.maxDamage = 180;
+<thermalfoundation:tool.excavator_copper>.maxDamage = 180;
 
 # Thermal Silver Tools
 <thermalfoundation:tool.pickaxe_silver>.maxDamage = 180;
 <thermalfoundation:tool.axe_silver>.maxDamage = 180;
 <thermalfoundation:tool.shovel_silver>.maxDamage = 180;
 <thermalfoundation:tool.sword_silver>.maxDamage = 180;
+<thermalfoundation:tool.excavator_silver>.maxDamage = 180;
 
 # Thermal Lead Tools
 <thermalfoundation:tool.pickaxe_lead>.maxDamage = 180;
 <thermalfoundation:tool.axe_lead>.maxDamage = 180;
 <thermalfoundation:tool.shovel_lead>.maxDamage = 180;
 <thermalfoundation:tool.sword_lead>.maxDamage = 180;
+<thermalfoundation:tool.excavator_lead>.maxDamage = 180;
 
 # Thermal Aluminum Tools
 <thermalfoundation:tool.pickaxe_aluminum>.maxDamage = 180;
 <thermalfoundation:tool.axe_aluminum>.maxDamage = 180;
 <thermalfoundation:tool.shovel_aluminum>.maxDamage = 180;
 <thermalfoundation:tool.sword_aluminum>.maxDamage = 180;
+<thermalfoundation:tool.excavator_aluminum>.maxDamage = 180;
 
 # Thermal Nickel Tools
 <thermalfoundation:tool.pickaxe_nickel>.maxDamage = 280;
 <thermalfoundation:tool.axe_nickel>.maxDamage = 280;
 <thermalfoundation:tool.shovel_nickel>.maxDamage = 280;
 <thermalfoundation:tool.sword_nickel>.maxDamage = 280;
+<thermalfoundation:tool.excavator_nickel>.maxDamage = 280;
 
 # Thermal Platinum Tools
 <thermalfoundation:tool.pickaxe_platinum>.maxDamage = 1000;
 <thermalfoundation:tool.axe_platinum>.maxDamage = 1000;
 <thermalfoundation:tool.shovel_platinum>.maxDamage = 1000;
 <thermalfoundation:tool.sword_platinum>.maxDamage = 1000;
+<thermalfoundation:tool.excavator_platinum>.maxDamage = 1000;
 
 # Thermal Electrum Tools
 <thermalfoundation:tool.pickaxe_electrum>.maxDamage = 64;
 <thermalfoundation:tool.axe_electrum>.maxDamage = 64;
 <thermalfoundation:tool.shovel_electrum>.maxDamage = 64;
 <thermalfoundation:tool.sword_electrum>.maxDamage = 64;
+<thermalfoundation:tool.excavator_electrum>.maxDamage = 64;
 
 # Thermal Invar Tools
 <thermalfoundation:tool.pickaxe_invar>.maxDamage = 240;
 <thermalfoundation:tool.axe_invar>.maxDamage = 240;
 <thermalfoundation:tool.shovel_invar>.maxDamage = 240;
 <thermalfoundation:tool.sword_invar>.maxDamage = 240;
+<thermalfoundation:tool.excavator_invar>.maxDamage = 240;
 
 # Thermal Bronze Tools
 <thermalfoundation:tool.pickaxe_bronze>.maxDamage = 200;
 <thermalfoundation:tool.axe_bronze>.maxDamage = 200;
 <thermalfoundation:tool.shovel_bronze>.maxDamage = 200;
 <thermalfoundation:tool.sword_bronze>.maxDamage = 200;
+<thermalfoundation:tool.excavator_bronze>.maxDamage = 200;
 
 # Thermal Constantan Tools
 <thermalfoundation:tool.pickaxe_constantan>.maxDamage = 260;
 <thermalfoundation:tool.axe_constantan>.maxDamage = 260;
 <thermalfoundation:tool.shovel_constantan>.maxDamage = 260;
 <thermalfoundation:tool.sword_constantan>.maxDamage = 260;
+<thermalfoundation:tool.excavator_constantan>.maxDamage = 260;
+
+# Thermal Steel Tools
+<thermalfoundation:tool.excavator_steel>.maxDamage = 320;
 
 # Hoes
 val hoes = [<minecraft:wooden_hoe>,<minecraft:stone_hoe>,<minecraft:iron_hoe>,<minecraft:golden_hoe>,<minecraft:diamond_hoe>,<abyssalcraft:dhoe>,<actuallyadditions:item_hoe_emerald>,<actuallyadditions:item_hoe_quartz>,<actuallyadditions:item_hoe_obsidian>,<atum:limestone_hoe>,<appliedenergistics2:nether_quartz_hoe>,<appliedenergistics2:certus_quartz_hoe>,<divinerpg:arlemite_hoe>,<divinerpg:rupee_hoe>,<divinerpg:realmite_hoe>,<thermalfoundation:tool.hoe_copper>,<thermalfoundation:tool.hoe_tin>,<thermalfoundation:tool.hoe_silver>,<thermalfoundation:tool.hoe_lead>,<thermalfoundation:tool.hoe_aluminum>,<thermalfoundation:tool.hoe_nickel>,<thermalfoundation:tool.hoe_platinum>,<thermalfoundation:tool.hoe_electrum>,<thermalfoundation:tool.hoe_invar>,<thermalfoundation:tool.hoe_bronze>,<thermalfoundation:tool.hoe_constantan>] as IItemStack[];
@@ -208,6 +226,5 @@ recipes.remove(<extrautils2:sickle_diamond>);
 recipes.remove(<divinerpg:rupee_shickaxe>);
 recipes.remove(<divinerpg:divine_shickaxe>);
 recipes.remove(<divinerpg:arlemite_shickaxe>);
-
 
 print("ENDING Tools.zs");

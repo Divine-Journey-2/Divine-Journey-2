@@ -28,6 +28,8 @@ import mods.bloodmagic.BloodAltar;
 import mods.roots.Pyre;
 import mods.botania.Apothecary;
 import mods.botania.PureDaisy;
+import crafttweaker.player.IPlayer;
+import crafttweaker.recipes.ICraftingInventory;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -415,7 +417,7 @@ for i in 0 to 5 {
 }
 
 # Dread Crystal
-mods.abyssalcraft.InfusionRitual.addRitual("dread_crystal", 2, 2, 20000, false, <contenttweaker:dread_crystal>, <abyssalcraft:oc>, [<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>]);
+mods.abyssalcraft.InfusionRitual.addRitual("dread_crystal", 2, 51, 20000, false, <contenttweaker:dread_crystal>, <abyssalcraft:oc>, [<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:ingotblock:2>]);
 game.setLocalization("ac.ritual.dread_crystal", "Power of the Dread");
 game.setLocalization("ac.ritual.dread_crystal.desc", "Convert the power of the Dreadlands into a single crystal!");
 
@@ -701,7 +703,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_narslimmus>, [<or
 
 # Jaded Petal
 mods.botania.Apothecary.addRecipe(<contenttweaker:jaded_petal>, [<ore:petalRed>,<ore:petalPurple>,<ore:petalLime>,<ore:petalBlack>]);
-<contenttweaker:jaded_petal>.addTooltip(format.green(format.italic("A certain server owner's favorite Petal!")));
+<contenttweaker:jaded_petal>.addTooltip(format.darkGreen(format.italic("A certain server owner's favorite Petal!")));
 
 # Thorny Belle Petal
 mods.botania.Apothecary.addRecipe(<contenttweaker:thorny_belle_petal>, [<ore:petalRed>,<ore:petalRed>,<ore:petalRed>,<ore:petalBlack>]);
@@ -741,5 +743,100 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_solegnolia>, [<or
 
 # Petal of the Bergamute
 mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_bergamute>, [<ore:petalYellow>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalOrange>]);
+
+# Omothol Soul
+recipes.addShaped(<contenttweaker:omothol_soul>, [[<abyssalcraft:omotholflesh>,<abyssalcraft:eldritchscale>,<abyssalcraft:omotholflesh>],[<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>],[<abyssalcraft:omotholflesh>,<abyssalcraft:eldritchscale>,<abyssalcraft:omotholflesh>]]);
+
+# Soul Extractor
+recipes.addShapedMirrored(<contenttweaker:soul_extractor>, [[<contenttweaker:dark_core>,<contenttweaker:dark_core>,null],[<contenttweaker:dark_core>,<contenttweaker:omothol_soul>,<contenttweaker:magical_core>],[null,<contenttweaker:magical_core>,<contenttweaker:omothol_soul>]]);
+
+# Soul of the Dark Realm
+
+/*
+
+recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.marked("sword").transform( function(item, player) {
+	return item.withTag({souls: item.tag.souls - 1});
+})],
+function(out, ins, cInfo) {
+	if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
+		return out;
+	} else {
+		return null;
+	}
+}, null);
+*/
+/*
+recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [ <contenttweaker:soul_extractor>.anyDamage().transformDamage(1), <abyssalcraft:soulreaper:*>.only( function(item) { 
+	return item.tag has "souls" && item.tag.souls >= 1; 
+} ).transform( function(item, player) {
+	return item.withTag({souls: item.tag.souls - 1});
+} ).reuse() ]);
+
+
+recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.reuse().marked("sword")],
+function(out, ins, cInfo) {
+	if(ins.sword.tag has "souls") {
+		if(ins.sword.tag.souls > 0) {
+			return out;
+		} else {
+			return null;
+		}
+	} else {
+		return null;
+	}
+},
+function(out, cInfo, player){
+	var sword_position = 0 as int;
+	for i in 0 to cInfo.inventory.size {
+		if(!isNull(cInfo.inventory.getStack(i))) {
+			if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
+				sword_position = i;
+				break;
+			}
+		}
+	}
+	val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
+	val sword_damage = cInfo.inventory.getStack(sword_position).damage;
+	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag({souls: number_of_souls - 1}));
+});
+*/
+
+recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.reuse().marked("sword")],
+function(out, ins, cInfo) {
+	if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
+		return out;
+	} else {
+		return null;
+	}
+},
+function(out, cInfo, player){
+	var sword_position = 0 as int;
+	for i in 0 to cInfo.inventory.size {
+		if(!isNull(cInfo.inventory.getStack(i))) {
+			if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
+				sword_position = i;
+				break;
+			}
+		}
+	}
+	val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
+	val sword_damage = cInfo.inventory.getStack(sword_position).damage;
+	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag({souls: number_of_souls - 1}));
+});
+
+
+recipes.addShapeless(<contenttweaker:soul_of_the_dark_realm> * 9, [<contenttweaker:dark_realm_soul_block>]);
+<contenttweaker:soul_of_the_dark_realm>.addTooltip(format.white("Obtained by removing Souls from ") + format.gray("Sacthoth's Soul Reaper Blade") + format.white("."));
+<contenttweaker:soul_of_the_dark_realm>.addTooltip(format.white("To obtain Souls, slay monsters with the sword."));
+
+# Dark Realm Soul Block
+recipes.addShaped(<contenttweaker:dark_realm_soul_block>, [[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>],[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>],[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>]]);
+
+# Dreammatter
+mods.botania.ElvenTrade.addRecipe([<contenttweaker:dreammatter>], [<contenttweaker:livingmatter>]);
+
+# Rune of Deception
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<botania:rune:4>, <botania:rune:0>, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
+<ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
 
 print("ENDING ContentTweakerRecipes.zs");

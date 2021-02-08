@@ -405,4 +405,20 @@ angelic_silicon_crystal_block.setToolLevel(2);
 angelic_silicon_crystal_block.setBlockSoundType(<soundtype:glass>);
 angelic_silicon_crystal_block.register();
 
+var dark_realm_soul_block = VanillaFactory.createBlock("dark_realm_soul_block", <blockmaterial:rock>);
+dark_realm_soul_block.setBlockHardness(6.0);
+dark_realm_soul_block.setBlockResistance(5.0);
+dark_realm_soul_block.setToolClass("pickaxe");
+dark_realm_soul_block.setToolLevel(2);
+dark_realm_soul_block.setBlockSoundType(<soundtype:glass>);
+dark_realm_soul_block.register();
+
+var dreammatter = VanillaFactory.createBlock("dreammatter", <blockmaterial:ground>);
+dreammatter.setBlockHardness(2.0);
+dreammatter.setBlockResistance(2.0);
+dreammatter.setToolClass("shovel");
+dreammatter.setToolLevel(0);
+dreammatter.setBlockSoundType(<soundtype:ground>);
+dreammatter.register();
+
 print("ENDING ContentTweakerBlocks.zs");

@@ -1,0 +1,33 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_runic_shears",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:shears"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:runestone",
+			"amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:pereskia"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:compressed_obsidian1"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "roots:runic_shears"
+        }
+    ]
+}

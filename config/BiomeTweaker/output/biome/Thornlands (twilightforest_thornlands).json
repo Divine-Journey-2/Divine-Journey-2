@@ -23,8 +23,8 @@
     "DEAD",
     "WASTELAND",
     "HILLS",
-    "DRY",
-    "TWILIGHT"
+    "TWILIGHT",
+    "DRY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],

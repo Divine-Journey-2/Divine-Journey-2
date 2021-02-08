@@ -16,6 +16,7 @@ import mods.actuallyadditions.Crusher as AACrusher;
 import mods.enderio.SagMill;
 import mods.extrautils2.Crusher as EUCrusher;
 import mods.roots.Mortar;
+import mods.bloodmagic.AlchemyTable;
 
 print("STARTING UnifyingDusts.zs");
 
@@ -404,9 +405,14 @@ furnace.remove(<minecraft:bread>, <roots:flour>);
 recipes.remove(<immersiveengineering:metal:16>);
 furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>);
 
-# Crushed Coal -> Pulverized Coal
+# Crushed Coal -> Pulverized Coal, other Coal Dust removals
 mods.actuallyadditions.Crusher.removeRecipe(<actuallyadditions:item_dust:6>);
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:768>, <minecraft:coal>);
+mods.mekanism.enrichment.removeRecipe(<actuallyadditions:item_dust:6>, <minecraft:coal>);
+mods.mekanism.enrichment.removeRecipe(<enderio:item_material:23>, <minecraft:coal>);
+mods.mekanism.enrichment.removeRecipe(<bloodmagic:component:21>, <minecraft:coal>);
+furnace.remove(<minecraft:coal>, <actuallyadditions:item_dust:6>);
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:coal>,<minecraft:coal>,<minecraft:flint>]);
 
 # Pulverized Charcoal
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:769>, <minecraft:coal:1>);

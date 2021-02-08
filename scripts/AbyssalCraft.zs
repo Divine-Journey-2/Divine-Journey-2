@@ -211,7 +211,7 @@ function(out, ins, cInfo) {
 
 # Asorah, the Fallen
 mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:dragonboss");
-mods.abyssalcraft.SummonRitual.addRitual("summonAsorah", 1, 1, 10000 as float, true, "abyssalcraft:dragonboss", [<enderutilities:enderpart:17>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>,<abyssalcraft:transmutationgem>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>] as IIngredient[], true);
+mods.abyssalcraft.SummonRitual.addRitual("summonAsorah", 1, 50, 10000 as float, true, "abyssalcraft:dragonboss", [<enderutilities:enderpart:17>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>,<abyssalcraft:transmutationgem>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>] as IIngredient[], true);
 game.setLocalization("ac.ritual.summonAsorah", "Ritual of The Sleeper");
 game.setLocalization("ac.ritual.summonAsorah.desc", "Summons Asorah, The Fallen, from the Dark Realm. The afterlife is commonly referred to as an eternal slumber, in which a sleeper is an entity beyond life and death. Requires a pristine Transmutation Gem.");
 
@@ -314,11 +314,6 @@ for sapling in <ore:treeSapling>.items {
 <abyssalcraft:psdl>.addTooltip(format.darkAqua("Powerstone Trackers") + format.white(", then enter the ") + format.darkAqua("Abyssal Wasteland") + format.white(", find"));
 <abyssalcraft:psdl>.addTooltip(format.white("the ") + format.darkAqua("Abyssal Stronghold") + format.white(" with your ") + format.darkAqua("Powerstone Trackers") + format.white(","));
 <abyssalcraft:psdl>.addTooltip(format.white("and in the center mine up your ") + format.red("Dreadlands Infused Powerstone") + format.white("!"));
-
-# Ethaxium
-#<abyssalcraft:stone:5>.addTooltip(format.white("To obtain, use Liquid Coralium with End Stone in a Fluid Transposer."));
-#<abyssalcraft:ethaxiumbrick>.addTooltip(format.white("To obtain, first use Liquid Coralium with End Stone in a Fluid Transposer,"));
-#<abyssalcraft:ethaxiumbrick>.addTooltip(format.white("then smelt the result, and combine it in a 2x2 in your crafting window."));
 
 # Chunk of Abyssalnite
 <abyssalcraft:abychunk>.addTooltip(format.white("Dropped by ") + format.red("Abyssalnite Golems") + format.white(" in the Dreadlands."));
@@ -467,5 +462,137 @@ recipes.addShaped(<abyssalcraft:dreadiumlegs>, [[<abyssalcraft:dreadiumingot>,<a
 # Dreadium Boots
 recipes.remove(<abyssalcraft:dreadiumboots>);
 recipes.addShaped(<abyssalcraft:dreadiumboots>, [[<abyssalcraft:dreadiumingot>,null,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:corboots>,<abyssalcraft:dreadiumingot>]]);
+
+# Eldritch Scale
+<abyssalcraft:eldritchscale>.addTooltip(format.white("Dropped by ") + format.gray("Remnants") + format.white(" and ") + format.gray("Minions of The Gatekeeper") + format.white(" in ") + format.gray("Omothol") + format.white("."));
+
+# Omothol Ghoul Flesh
+<abyssalcraft:omotholflesh>.addTooltip(format.white("Dropped by Omothol Ghouls in... Omothol."));
+<abyssalcraft:omotholflesh>.addTooltip(format.white(format.italic("Incredible, I know.")));
+
+# Ethaxium <-> End Stone conversion removal
+mods.abyssalcraft.Transmutator.removeTransmutationOutput(<minecraft:end_stone>);
+mods.abyssalcraft.Transmutator.removeTransmutationInput(<minecraft:end_stone>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:end_stone>, <liquid:liquidcoralium>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<abyssalcraft:stone:5>, <liquid:liquidcoralium>);
+
+# Blank Coin Engraving
+recipes.remove(<abyssalcraft:engraving_blank>);
+recipes.addShaped(<abyssalcraft:engraving_blank>, [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],[<minecraft:paper>,<contenttweaker:neutral_reagent>,<minecraft:paper>],[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);
+
+# Engraver
+recipes.remove(<abyssalcraft:engraver>);
+recipes.addShapedMirrored(<abyssalcraft:engraver>, [[<abyssalcraft:stone:5>,<abyssalcraft:engraving_blank>,null],[<abyssalcraft:stone:5>,<abyssalcraft:engraving_blank>,null],[<enderio:block_dark_steel_anvil>,<abyssalcraft:stone:5>,<abyssalcraft:stone:5>]]);
+
+# C'thulu Coin Engraving
+recipes.remove(<abyssalcraft:engraving_cthulhu>);
+recipes.addShaped(<abyssalcraft:engraving_cthulhu>, [[<abyssalcraft:shoggothflesh>,<abyssalcraft:shoggothflesh>,<abyssalcraft:shoggothflesh>],[<abyssalcraft:shoggothflesh>,<abyssalcraft:engraving_blank>,<abyssalcraft:shoggothflesh>],[<abyssalcraft:shoggothflesh>,<abyssalcraft:shoggothflesh>,<abyssalcraft:shoggothflesh>]]);
+
+# Elder Coin Engraving
+recipes.remove(<abyssalcraft:engraving_elder>);
+recipes.addShaped(<abyssalcraft:engraving_elder>, [[<abyssalcraft:ethaxiumingot>,<abyssalcraft:ethaxiumingot>,<abyssalcraft:ethaxiumingot>],[<abyssalcraft:ethaxiumingot>,<abyssalcraft:engraving_blank>,<abyssalcraft:ethaxiumingot>],[<abyssalcraft:ethaxiumingot>,<abyssalcraft:ethaxiumingot>,<abyssalcraft:ethaxiumingot>]]);
+
+# J'zahar Coin Engraving
+recipes.remove(<abyssalcraft:engraving_jzahar>);
+recipes.addShaped(<abyssalcraft:engraving_jzahar>, [[<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>],[<abyssalcraft:eldritchscale>,<abyssalcraft:engraving_blank>,<abyssalcraft:eldritchscale>],[<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>]]);
+
+# Hastur Coin Engraving
+recipes.remove(<abyssalcraft:engraving_hastur>);
+recipes.addShaped(<abyssalcraft:engraving_hastur>, [[<abyssalcraft:shoggothflesh:1>,<abyssalcraft:shoggothflesh:1>,<abyssalcraft:shoggothflesh:1>],[<abyssalcraft:shoggothflesh:1>,<abyssalcraft:engraving_blank>,<abyssalcraft:shoggothflesh:1>],[<abyssalcraft:shoggothflesh:1>,<abyssalcraft:shoggothflesh:1>,<abyssalcraft:shoggothflesh:1>]]);
+
+# Azathoth Coin Engraving
+recipes.remove(<abyssalcraft:engraving_azathoth>);
+recipes.addShaped(<abyssalcraft:engraving_azathoth>, [[<abyssalcraft:shadowgem>,<abyssalcraft:shadowgem>,<abyssalcraft:shadowgem>],[<abyssalcraft:shadowgem>,<abyssalcraft:engraving_blank>,<abyssalcraft:shadowgem>],[<abyssalcraft:shadowgem>,<abyssalcraft:shadowgem>,<abyssalcraft:shadowgem>]]);
+
+# Nyralothep Coin Engraving
+recipes.remove(<abyssalcraft:engraving_nyarlathotep>);
+recipes.addShaped(<abyssalcraft:engraving_nyarlathotep>, [[<abyssalcraft:shoggothflesh:2>,<abyssalcraft:shoggothflesh:2>,<abyssalcraft:shoggothflesh:2>],[<abyssalcraft:shoggothflesh:2>,<abyssalcraft:engraving_blank>,<abyssalcraft:shoggothflesh:2>],[<abyssalcraft:shoggothflesh:2>,<abyssalcraft:shoggothflesh:2>,<abyssalcraft:shoggothflesh:2>]]);
+
+# Yog-Sothoth Coin Engraving
+recipes.remove(<abyssalcraft:engraving_yogsothoth>);
+recipes.addShaped(<abyssalcraft:engraving_yogsothoth>, [[<abyssalcraft:shoggothflesh:3>,<abyssalcraft:shoggothflesh:3>,<abyssalcraft:shoggothflesh:3>],[<abyssalcraft:shoggothflesh:3>,<abyssalcraft:engraving_blank>,<abyssalcraft:shoggothflesh:3>],[<abyssalcraft:shoggothflesh:3>,<abyssalcraft:shoggothflesh:3>,<abyssalcraft:shoggothflesh:3>]]);
+
+# Sub-Niggurath Coin Engraving
+recipes.remove(<abyssalcraft:engraving_shubniggurath>);
+recipes.addShaped(<abyssalcraft:engraving_shubniggurath>, [[<abyssalcraft:shoggothflesh:4>,<abyssalcraft:shoggothflesh:4>,<abyssalcraft:shoggothflesh:4>],[<abyssalcraft:shoggothflesh:4>,<abyssalcraft:engraving_blank>,<abyssalcraft:shoggothflesh:4>],[<abyssalcraft:shoggothflesh:4>,<abyssalcraft:shoggothflesh:4>,<abyssalcraft:shoggothflesh:4>]]);
+
+# Coin
+recipes.remove(<abyssalcraft:coin>);
+recipes.addShaped(<abyssalcraft:coin> * 4, [[null,<thermalfoundation:coin:*>,null],[<thermalfoundation:coin:*>,<contenttweaker:praesidium>,<thermalfoundation:coin:*>],[null,<thermalfoundation:coin:*>,null]]);
+
+# Remove Coin -> Iron in Furnace
+furnace.remove(<minecraft:iron_ingot> * 4, <abyssalcraft:coin>);
+
+# Small Crystal bag
+recipes.remove(<abyssalcraft:crystalbag_small>);
+recipes.addShaped(<abyssalcraft:crystalbag_small>, [[<evilcraft:golden_string>,<contenttweaker:blood_infused_leather>,<evilcraft:golden_string>],[<contenttweaker:blood_infused_leather>,glod_crystal_block,<contenttweaker:blood_infused_leather>],[<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>]]);
+
+# Essence of The Gatekeeper
+<abyssalcraft:gatekeeperessence>.addTooltip(format.white("Dropped by ") + format.gray("J'zahar") + format.white(", the final boss of Omothol."));
+
+function add_abyssalcraft_dreadlands_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
+	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+	mods.abyssalcraft.InfusionRitual.addRitual(name, 2, 51, 3600 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>,<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>] as IIngredient[], false, ["PotEnergy"]);
+}
+
+# Dreadlands Energy Collector
+add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergycollector:2>, <abyssalcraft:tieredenergycollector:1>, "ecolDLupgrade");
+
+# Dreadlands Energy Pedestal
+add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergypedestal:2>, <abyssalcraft:tieredenergypedestal:1>, "epDLupgrade");
+
+# Dreadlands Energy Relay
+add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergyrelay:2>, <abyssalcraft:tieredenergyrelay:1>, "erDLupgrade");
+
+# Dreadlands Sacrificial Altar
+add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredsacrificialaltar:2>, <abyssalcraft:tieredsacrificialaltar:1>, "saDLupgrade");
+
+# Dreadlands Energy Container
+add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer:2>, <abyssalcraft:tieredenergycontainer:1>, "econDLupgrade");
+
+<ore:engravedAbyssalCoin>.addItems([<abyssalcraft:cthulhucoin>,<abyssalcraft:eldercoin>,<abyssalcraft:jzaharcoin>,<abyssalcraft:hasturcoin>,<abyssalcraft:azathothcoin>,<abyssalcraft:nyarlathotepcoin>,<abyssalcraft:yogsothothcoin>,<abyssalcraft:shubniggurathcoin>]);
+
+# Omothol Necronomicon
+recipes.remove(<abyssalcraft:necronomicon_omt>);
+recipes.addShaped("abyssalcraft_necronomicon_upgrade3", <abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>.marked("necronomicon"),<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]],
+function(out, ins, cInfo) {
+	return out.withTag(ins.necronomicon.tag);
+}, null);
+
+function add_abyssalcraft_omothol_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
+	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+	mods.abyssalcraft.InfusionRitual.addRitual(name, 3, 52, 4800 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>,<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>] as IIngredient[], false, ["PotEnergy"]);
+}
+
+# Omothol Energy Collector
+add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredenergycollector:3>, <abyssalcraft:tieredenergycollector:2>, "ecolOMTupgrade");
+
+# Omothol Energy Pedestal
+add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredenergypedestal:3>, <abyssalcraft:tieredenergypedestal:2>, "epOMTupgrade");
+
+# Omothol Energy Relay
+add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredenergyrelay:3>, <abyssalcraft:tieredenergyrelay:2>, "erOMTupgrade");
+
+# Omothol Sacrificial Altar
+add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredsacrificialaltar:3>, <abyssalcraft:tieredsacrificialaltar:2>, "saOMTupgrade");
+
+# Omothol Energy Container
+add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer:3>, <abyssalcraft:tieredenergycontainer:2>, "econOMTupgrade");
+
+# Abyssalnomicon
+recipes.remove(<abyssalcraft:abyssalnomicon>);
+recipes.addShaped("abyssalcraft_necronomicon_upgrade4", <abyssalcraft:abyssalnomicon>, [[<abyssalcraft:ingotblock:3>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:ingotblock:3>],[<abyssalcraft:eldritchscale>,<abyssalcraft:necronomicon_omt>.marked("necronomicon"),<abyssalcraft:eldritchscale>],[<abyssalcraft:ingotblock:3>,<abyssalcraft:eldritchscale>,<abyssalcraft:ingotblock:3>]],
+function(out, ins, cInfo) {
+	return out.withTag(ins.necronomicon.tag);
+}, null);
+
+# Ritual of Shadows
+mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:shadowboss");
+mods.abyssalcraft.SummonRitual.addRitual("summonSacthoth", 4, 53, 100000 as float, false, "abyssalcraft:shadowboss", [<abyssalcraft:oc>,<bloodmagic:item_demon_crystal:1>,<evilcraft:inverted_potentia:1>,<bloodmagic:item_demon_crystal:1>,<botania:rune:7>,<bloodmagic:item_demon_crystal:1>,<abyssalcraft:ingotblock:3>,<bloodmagic:item_demon_crystal:1>] as IIngredient[], false);
+game.setLocalization("ac.ritual.summonSacthoth", "Ritual of Shadows");
+game.setLocalization("ac.ritual.summonSacthoth.desc", "Summons Sacthoth, Harbinger of Doom, from the Dark Realm. Offer him your most valuable items and as much PE as you can hold... Maybe he'll appear...");
+
+# Sacthoth's Soul Reaper Blade
+<abyssalcraft:soulreaper>.addTooltip(format.white("Dropped by ") + format.gray("Sacthoth, Harbinger of Doom") + format.white(", the final boss of AbyssalCraft."));
 
 print("ENDING AbyssalCraft.zs");

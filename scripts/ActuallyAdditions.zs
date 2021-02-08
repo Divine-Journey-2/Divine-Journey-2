@@ -9,6 +9,10 @@ import crafttweaker.data.IData;
 
 print("STARTING ActuallyAdditions.zs");
 
+# Crafting Table on a Stick
+recipes.remove(<actuallyadditions:item_crafter_on_a_stick>);
+recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<minecraft:crafting_table>],[<enderutilities:enderpart:20>,null]]);
+
 # Wood Casing
 recipes.remove(<actuallyadditions:block_misc:4>);
 recipes.addShaped(<actuallyadditions:block_misc:4> * 3, [[<ore:logWood>,<ore:logWood>,<ore:logWood>],[<ore:logWood>,<rftools:machine_frame>,<ore:logWood>],[<ore:logWood>,<ore:logWood>,<ore:logWood>]]);

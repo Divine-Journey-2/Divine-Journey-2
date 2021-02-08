@@ -8,6 +8,9 @@ import mods.thermalexpansion.Transposer;
 
 print("STARTING ExtendedCrafting.zs");
 
+# Handheld Crafting Table
+recipes.remove(<extendedcrafting:handheld_table>);
+
 # Black Iron Ingot
 recipes.removeShapeless(<extendedcrafting:material>, [<minecraft:iron_ingot>,<*>]);
 mods.immersiveengineering.ArcFurnace.addRecipe(<extendedcrafting:material> * 4, <ore:ingot_dark_soularium>, null, 1200, 512, [<quantumflux:darkstone> * 3], "Alloying");

@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_jadedAmaranthus",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:jaded_petal",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@4"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:fertilizer"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:fertilizer"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "botania:specialflower",
+            "nbt":
+            {
+                "type": "jadedAmaranthus"
+            }
+        }
+    ]
+}

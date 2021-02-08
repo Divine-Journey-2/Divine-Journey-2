@@ -29,4 +29,8 @@ recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:green_heart_canister>,<bhc
 # Orange Heart
 recipes.addShaped(<bhc:orange_heart>, [[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>],[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>],[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]]);
 
+# Heart Amulet
+recipes.remove(<bhc:heart_amulet>);
+recipes.addShaped(<bhc:heart_amulet>, [[<ore:string>,<ore:string>,<ore:string>],[<thermalfoundation:material:33>,null,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<bhc:red_heart>,<thermalfoundation:material:33>]]);
+
 print("ENDING BaubleyHeartCanisters.zs");

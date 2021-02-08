@@ -605,5 +605,14 @@ var petal_of_the_solegnolia = VanillaFactory.createItem("petal_of_the_solegnolia
 petal_of_the_solegnolia.register();
 var petal_of_the_bergamute = VanillaFactory.createItem("petal_of_the_bergamute");
 petal_of_the_bergamute.register();
+var soul_extractor = VanillaFactory.createItem("soul_extractor");
+soul_extractor.maxStackSize = 1;
+soul_extractor.maxDamage = 1024;
+soul_extractor.register();
+var soul_of_the_dark_realm = VanillaFactory.createItem("soul_of_the_dark_realm");
+soul_of_the_dark_realm.rarity = "EPIC";
+soul_of_the_dark_realm.register();
+var rune_of_deception = VanillaFactory.createItem("rune_of_deception");
+rune_of_deception.register();
 
 print("ENDING ContentTweakerItems.zs");
