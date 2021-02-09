@@ -204,7 +204,10 @@ add_entry("divinerpg:entities/vanilla/rotatick", "terran_shards", <divinerpg:ter
 
 # Undead Miner Diamond & Diamond Pickaxe drop
 clear_pool("divinerpg:entities/vanilla/miner", "divinerpg:miner");
-add_entry("divinerpg:entities/vanilla/miner", "custom_loot", <minecraft:rotten_flesh>, 1, 3, 0, 0, 90);
-add_entry("divinerpg:entities/vanilla/miner", "custom_loot", <minecraft:iron_ingot>, 1, 1, 0, 0, 10);
+clear_pool("divinerpg:entities/vanilla/miner", "divinerpg:miner0");
+val undead_miner_table = LootTweaker.getTable("divinerpg:entities/vanilla/miner");
+val undead_miner_pool = undead_miner_table.addPool("custom_loot", 1, 3, 0, 0);
+undead_miner_pool.addItemEntry(<minecraft:rotten_flesh>, 90);
+undead_miner_pool.addItemEntry(<minecraft:iron_ingot>, 10);
 
 print("ENDING LootTweaker.zs");

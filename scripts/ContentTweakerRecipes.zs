@@ -507,22 +507,22 @@ mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:industrial_leather>, <liqu
 mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 8, 2);
 
 # Wizard's Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 16, 4);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 72, 6);
 
 # Neutral Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 32, 8);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 300, 16);
 
 # Tempest Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 32, 8);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 300, 16);
 
 # Damage Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 32, 8);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 300, 16);
 
 # Strength Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 32, 8);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 300, 16);
 
 # Potent Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 64, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 500, 32);
 
 # Empty Core
 recipes.addShaped(<contenttweaker:empty_core>, [[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>],[<contenttweaker:simple_catalyst>,<enderio:item_material:14>,<contenttweaker:simple_catalyst>],[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>]]);

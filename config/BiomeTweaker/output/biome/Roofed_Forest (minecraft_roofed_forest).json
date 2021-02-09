@@ -23,8 +23,8 @@
     "FOREST",
     "SPOOKY",
     "BIRCH_TREES",
-    "THEMED_TREES",
-    "DENSE"
+    "DENSE",
+    "THEMED_TREES"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

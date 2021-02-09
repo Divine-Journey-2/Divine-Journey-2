@@ -120499,7 +120499,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Manamana",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Mana Pool... or a couple! This is where you store all your Mana! (Not too surprising.)"
         }
       },
       "tasks:9": {
@@ -120550,7 +120550,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Get Stone(d)!",
-          "desc:8": "No Description"
+          "desc:8": "Place any 8 Dimensional Stone types near your Daisy and wait 30 seconds to obtain Livingrock!\n\nYou definitely want to automate this with ME Annihilation and Formation Planes."
         }
       },
       "tasks:9": {
@@ -120721,7 +120721,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Rune Saloon",
-          "desc:8": "No Description"
+          "desc:8": "Craft one of each basic Rune!\n\nYou definitely want to automate these and the Runic Altar in general."
         }
       },
       "tasks:9": {
@@ -120789,8 +120789,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Altar Collector",
-          "desc:8": "No Description"
+          "name:8": "If I had to Rune, it would be guess.",
+          "desc:8": "Craft a Runic Altar! Shoot it with some Mana \u0027cause it likes being shot by Mana (don\u0027t judge).\n\nTo craft with it, drop or Right Click the ingredients on the Altar, and once the progress bar fills up, throw a piece of Livingrock on it and hit it with your Wand.\n\nWARNING! WARNING! You want to automate this ASAP! Use an Item Dropper or Precision Dropper and an Auto Clicker with your Wand of the Forest. WARNING OVER. WARNING OVER."
         }
       },
       "tasks:9": {
@@ -120851,7 +120851,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "WRootnch",
-          "desc:8": "No Description"
+          "desc:8": "Make a Wand of the Forest! This is your wrench for Botania. You can check the Mana contents of Mana Pools, link Mana Spreaders to Pools and Flowers to Mana Spreaders, and also use it as a toothpick...! Buuuut that last one might not be as important."
         }
       },
       "tasks:9": {
@@ -120912,7 +120912,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Wood you make some of this?",
-          "desc:8": "No Description"
+          "desc:8": "Place any 8 Dimensional Wood types upright near your Daisy and wait 30 seconds to obtain Livingwood! Warning: The logs can only be transformed in their original rotation.\n\nYou definitely want to automate this with ME Annihilation and Formation Planes."
         }
       },
       "tasks:9": {
@@ -121015,7 +121015,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Rite way",
-          "desc:8": "No Description"
+          "desc:8": "Craft some Ritual Stones! You\u0027ll definitely need more than the quest suggests, but this is just to guide you towards the right direction!\n\nTo setup a Blood Magic Ritual, place a Master Ritual Stone in the center, and use either a regular Ritual Diviner or a Ritual Diviner [Dusk] for more complex Rituals. Hold Right Click until you either run out of Ritual Stones or you\u0027ve completed the Ritual. You can also color Ritual Stones yourself with Elemental Inscription Tools if you know the exact shape to set them up in.\n\nTo activate them, use either a Weak or (more likely) an Awakened Activation Crystal. This will cost some amount of LP from your Life Network.\n\nOne of the most important Rituals for Blood Magic is the Well of Suffering. Setting this up above or below your Blood Altar will constantly damage mobs around and transfer their Life Esence into the Blood Altar. Blood automation! The best mob to use are Witches, because they naturally regenerate, but you can also try any of the following:\n   - Any mob + The Ritual of Regeneration,\n   - A Powered Spawner constantly spawning mobs,\n   - Cursed Earth constantly spawning mobs."
         }
       },
       "tasks:9": {
@@ -121066,7 +121066,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "In the depths of the dungeon...",
-          "desc:8": "No Description"
+          "desc:8": "While exploring the Dungeon of Cha\u0027goroth, collect the Crystallizer found inside! You\u0027ll need to wait a little bit before you can craft the machine itself though..."
         }
       },
       "tasks:9": {
@@ -121178,8 +121178,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Baby you hot like a Thermalily",
+          "desc:8": "Now that you have some Runes, why not use them? One of the better early game Mana Generating Flowers is the Thermalily. It sucks up nearby blocks of Lava to generate a large amount of Mana! Just pump some from the Nether or use a Lava Fabricator to get it going."
         }
       },
       "tasks:9": {
@@ -121296,7 +121296,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The start of something... peaceful",
-          "desc:8": "No Description"
+          "desc:8": "Use your Ender Crafter with some Ender Alternators to craft a Petal Apothecary! You might want to immediately automate this.\n\nDrop a Water Bucket on it to fill it, filter Empty Buckets on a Vancuum Chest to pick it up, then dispense the required colored petals for a Botania Flower Petal! A Formation Plane with a small subnet is perfect for this."
         }
       },
       "tasks:9": {
@@ -121348,7 +121348,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Man...! A rune!",
-          "desc:8": "No Description"
+          "desc:8": "Craft the last Tier 1 Rune: The Rune of Mana!\n\nYou also definitely want to automate this."
         }
       },
       "tasks:9": {
@@ -121401,7 +121401,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Manathon",
-          "desc:8": "No Description"
+          "desc:8": "Craft a couple of all the various Mana items!"
         }
       },
       "tasks:9": {
@@ -121642,7 +121642,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Don\u0027t get lazy, make a daisy!",
-          "desc:8": "No Description"
+          "desc:8": "If the daisy\nMakes you crazy,\nBe more hasty\nBiosafety!\n\n"
         }
       },
       "tasks:9": {
@@ -121834,7 +121834,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Optionally bind them too!",
-          "desc:8": "No Description"
+          "desc:8": "Craft some Bound Tools! The only one you\u0027ll need for progression is the Bound Pickaxe which will let you break and collect Ethaxium in Omothol - right after finishing this Chapter... So no need to hurry with this one!\n\nTo activate one of these tools, simply press Shift+Right Click. Each tool drains LP from your Soul Network while it\u0027s active and consumes additional LP on use. Be careful!"
         }
       },
       "tasks:9": {
@@ -121920,8 +121920,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Fool\u0027s Tools",
-          "desc:8": "No Description"
+          "name:8": "Kling! Swoop! Chop!",
+          "desc:8": "Craft some Manasteel Tools. These will later be upgraded into Bound Tools, which have a high Mining level and can break Ehtaxium in Omothol. However, you won\u0027t necessarily need them before finishing this chapter."
         }
       },
       "tasks:9": {
@@ -122453,8 +122453,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Finally! Its light shines through!",
+          "desc:8": "Craft a Beacon! You\u0027ll eventually need 4 of them to upgrade your Blood Magic Altar to Tier 5! No need to hurry though. Kill some Withers and explore more of Atum in your freetime to get more of its crafting ingredients!"
         }
       },
       "tasks:9": {
@@ -122526,6 +122526,7 @@
               },
               "id:8": "bloodmagic:soul_gem",
               "Count:3": 1,
+              "tag:10": {},
               "Damage:2": 3,
               "OreDict:8": ""
             }
@@ -122563,7 +122564,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "One\u0027s June, the other\u0027s Rune!",
-          "desc:8": "No Description"
+          "desc:8": "Create all 4 Tier 2 Runes!\n\nIt\u0027s getting complicated...."
         }
       },
       "tasks:9": {
@@ -122632,7 +122633,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Get Wild in Apalachia",
-          "desc:8": "No Description"
+          "desc:8": "Craft a batch of Wildwood Blocks! You know the drill at this point: set them up in a Nether Portal shape, light it with a Twilight Clock and enter Apalachia!"
         }
       },
       "tasks:9": {
@@ -122683,7 +122684,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "What\u0027s the matter? (This.)",
-          "desc:8": "No Description"
+          "desc:8": "Place any 8 Dimensional Dirt types near your Daisy and wait 30 seconds to obtain Livingmatter!\n\nYou definitely want to automate this with ME Annihilation and Formation Planes."
         }
       },
       "tasks:9": {
@@ -122908,7 +122909,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "My blood for your blood!",
-          "desc:8": "No Description"
+          "desc:8": "Bind a Blade to your Soul! (I\u0027m suuuure you\u0027ll Soul will be fiiiine after so don\u0027t worry about it!)\n\nTo activate it, press Shift+Right Click. But be aware, that while its active, it will drain LP from your Soul Network. Ouch!"
         }
       },
       "tasks:9": {
@@ -122969,7 +122970,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "It stays sharp forever!",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Manasteel Sword! It\u0027s the most imporant tool for progression at this point."
         }
       },
       "tasks:9": {
@@ -123198,7 +123199,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Get in the Flow(er)!",
-          "desc:8": "No Description"
+          "desc:8": "Make some Endoflames! Provide them with Coal for Mana Generation. Check if they\u0027re connected to a nearby Mana Spreader using your Wand of the Forest.\n\nYou definitely want to automate this with Droppers on a Timer dropping Coal Blocks."
         }
       },
       "tasks:9": {
@@ -123388,7 +123389,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Will you do this for me?",
-          "desc:8": "No Description"
+          "desc:8": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n      AUTOMATING WILL GENERATION\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nIn this quest, I will provide you with information on how to setup automatic Will generation. You can choose to either read on, or watch this incredible tutorial video:\n\nhttps://www.youtube.com/watch?v\u003dK25QmSmfTRA\u0026ab_channel\u003dMarzuleStreams\n\n(If §ryou can\u0027t copy the link, simply search for the title of the video: \"Blood Magic - Demon Will Automation Tutorial\" by Marzule Streams.)\n\nIf you chose to read on, here is a step by step breakdown on how to create infinite Blood Magic Will and Will Crystals:\n\n§lSTEP 1.§r Obtain a couple Common Tartaric Gems with at least a couple thousand Will overall, and have at least 1,000,000 LP in your Life Network. Make sure to have every step of Ritual Stone crafting fully automated, except for automatic Will collection for Reagents. (This means you need to fully automate Tenebrae and Void Reagent creation. After this setup, you won\u0027t need to worry about your Tartaric Gems running out either.)\n\n§lSTEP 2.§r Press F9 to see the chunk boarders. Make this build entirely in ONE chunk, because Will is stored in Minecraft\u0027s chunks separately.\n\n§lSTEP 3.§r You have 2 options here: Use a couple Powered Spawners to spawn passive animals in the chunk; or place a Master Ritual Stone in the center of the chunk and setup the Ritual of Peaceful Souls with your Ritual Diviner [Dusk] and activate it with your Awakened Activation Crystal.\n\n§lSTEP 4.§r Go up about 4-5 blocks from your Master Ritual Stone or the floor of your Powered Spawner room and place another Master Ritual Stone. Setup the Gathering of Forsaken Souls Ritual with your Ritual Diviner [Dusk] here. Activate it with your Awakened Activation Crystal.\n\n§lSTEP 5.§r Place a solid block on top of your previous Master Ritual Stone, and place another Master Ritual Stone on top. Setup the Resonance of the Faceted Crystal Ritual with your Ritual Diviner [Dusk] on this one. Also activate it with your Awakened Activation Crystal. This will interlock wi§tth the Ritual below.\n\n§lSTEP 6.§r Place a Demon Crystallizer on top of the most recent Master Ritual Stone.\n\n§lSTEP 7.§r Build a platform out of solid blocks on the highest level of Ritual Stones, so that your Demon Crystallizer is the only thing poking out.\n\n§lSTEP 8.§r Place 5 Demon Crucibles somewhere on your platform. Place some Tartaric Gems that contain at least a couple hundred points of Will into some of the Demon Crucibles.\n\n§lSTEP 9.§r (Optinal, but recommended.) Make a Demon Will Aura Gauge. It shows you the amount of Will stored in the Chunk (on the first bar, because we\u0027re creating regular Will for now). A Chunk can only hold up to 100 Will. The Demon Crucibles keep this filled up while the Resonance of the Faceted Crystal Ritual drains this and creates Will crystals.\n\n§lSTEP 10.§r It\u0027s a waiting game now! Wait until a regular Demon Crystal forms on top of your Demon Crystallizer, then splits, then creates 4 types of colored Demon Will Crystals nearby, then those split as well. If you see a total of 5 clusters of crystals with 6 spikes each, you\u0027re done. If you have to wait for a long time but still see no results, check your Demon Will Aura Gauge to see if you have ran out of Will. If so, refill your Tartaric Gem(s) in the Demon Crucible(s).\n\n§lSTEP 11.§r Collect your crystal clusters and break your Demon Crystallizer. Use a Ritual Dismantler to also get rid of the topmost Ritual (Resonance of the Faceted Crystal). Simply Right Click twice, but don\u0027t accidentally hit the Rituals below. If parts of your platform are missing, replace those.\n\n§lSTEP 12.§r Place 5 Drawers or Barrels nearby. Place each type of Will Crystal you just collected in its own separate Drawer/Barrel, then lock them with a Drawer Key / Storage Key.\n\n§lSTEP 13.§r Now you can reclaim your Tartaric Gem(s) from the Demon Crucible(s). Then place a Hellfire Forge somewhere on your platform (in the same chunk). Place a Tartaric Gem inside (into the right slot) with a fair amount of Will. This can also suck up any excess Will you have in the chunk (up to 100). Then remove your Tartaric Gem from your Hellfire Forge, so it no longer sucks up the regular Demon Will from the chunk.\n\n§lSTEP 14.§r Take 4 pieces of each of the Will Crystals from your Drawers / Barrels and use your Tartaric Forge to create a placable Crystal Cluster of each type.\n\n§lSTEP 15.§r Place down all 5 Crystal Clusters you just crafted somehwere on your platform (still in the same chunk).\n\n§lSTEP 16.§r Connect your Drawers / Barrels to your Demon Crucibles the following way: Each Drawer / Barrel should be connected to its own Crucible, and the Drawers / Barrels should be able to accept additional items. You can do this with a single line of EnderIO Item Conduits and 5 unique channel colors. Don\u0027t forget to set the Drawer / Barrel side to Extract (Always Active) on a specific channel and Insert on Green, and the Crucible side to Insert on the corresponding channel.\n\n§lSTEP 17.§r Hop down below your platform and and place yet another Master Ritual Stone below the one that\u0027s doing the  the Gathering of Forsaken Souls Ritual (built in STEP 4 - right below your platform). Use a Ritual Diviner [Dusk] to build the Crack of the Fractured Crystal Ritual, which interlocks with the previous Rituals. Activate it with your Awakened Activation Crystal.\n\n§lSTEP 18.§r Place a Vacuum Chest with an Item Filter right above your Crystal Clusters somewhere. Set the Item Filter to collect the Demon Crystals that are popping off right now.\n\n§lSTEP 19.§r Extract your Vacuum Chest\u0027s inventory to your Drawers / Barrels.\n\n§lSTEP 20.§r Congratulations! Your setup is now self-sustaining. Each type of Will Crystal will slowly move to a Demon Crucible, which fills up the Chunk with a particular type of Will, which let your placed down Crystal Clusters grow. Of course this is a farm, so Crystal growth is faster than the Crystals being used up. However be careful not to use up ALL your Crystals of a certain type. If you do so, Crystal generation of that type will stop. If you also don\u0027t have a Tartaric Gem of the specific type of will, then you\u0027ll unfortunately have to start again from STEP 5, building the Resonance of the Faceted Crystal Ritual. Otherwise, simply stick your Tartaric Gem of the correct type in the Demon Crucible that\u0027s missing its Crysal and wait for the Will in the chunk to regenerate.\n\n§lSTEP 21.§r Once you have a fully self-sustaining setup (probably around 100 Crystals of each type), you can place your Tartaric Gem back into your Hellfire Forge to automatically keep it filled up with Will. You might want to automate Hellfire Forge recipes in this Chunk, so you\u0027ll never have to refill your Tartaric Gems again.\n\n§lSTEP 22. (OPTIONAL)§r You can create the same exact setup in multiple chunks, or even the same chunk (and I recommend it). Just watch your Will levels with your Demon Will Aura Gauge. If they start decreasing, it\u0027s probably best to move to another chunk."
         }
       },
       "tasks:9": {
@@ -123454,7 +123455,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Shoot!",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Mana Spreader! This is the block you use to transfer Mana from your generating Flowers to your Mana Pools. Use your Wand of the Forest to bind it to each.\n\nMana for you, and for you; mana for everybody!"
         }
       },
       "tasks:9": {
@@ -129559,8 +129560,8 @@
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 35,
-          "y:3": 124,
+          "x:3": 59,
+          "y:3": 125,
           "id:3": 1651,
           "sizeY:3": 24
         },

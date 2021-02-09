@@ -6,6 +6,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 print("STARTING ModularMachinery.zs");
 
 # Modularium
+recipes.remove(<modularmachinery:itemmodularium>);
 EIOAlloySmelter.addRecipe(<modularmachinery:itemmodularium> * 6, [<plustic:mirioningot>,<enderutilities:enderpart:2>,<botania:quartz> * 4], 24000);
 mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium> * 6, <plustic:mirioningot>, null, 120, 400, [<enderutilities:enderpart:2>,<botania:quartz> * 4]);
 

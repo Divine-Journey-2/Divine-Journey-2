@@ -20,12 +20,12 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HOT",
-    "ATUM",
+    "SANDY",
     "PLAINS",
-    "DRY",
     "SPARSE",
-    "SANDY"
+    "DRY",
+    "HOT",
+    "ATUM"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
