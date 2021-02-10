@@ -839,4 +839,14 @@ mods.botania.ElvenTrade.addRecipe([<contenttweaker:dreammatter>], [<contenttweak
 mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<botania:rune:4>, <botania:rune:0>, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
 <ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
 
+# Purified Slate
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_slate>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<botania:rune:12>], 60000, 400, 5);
+
+# Hyper Diamond Block
+recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>]]);
+recipes.addShapeless(<quantumflux:craftingpiece:6> * 9, [<contenttweaker:hyper_diamond_block>]);
+
+# Magical Slate
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_slate>, [<contenttweaker:purified_slate>,<botania:quartztypelavender>,<botania:storage:2>,<botania:manaresource:9>], 256, 256);
+
 print("ENDING ContentTweakerRecipes.zs");

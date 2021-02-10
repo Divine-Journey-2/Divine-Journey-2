@@ -532,6 +532,11 @@ mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodmagic:blood_shard:1>, 4, 120000, 80, 80);
 
+# Weak Blood Shard duplication
+recipes.addShaped(<bloodmagic:blood_shard> * 8, [[null,<bloodmagic:blood_shard>,null],[<bloodmagic:blood_shard>,<bloodmagic:slate:3>,<bloodmagic:blood_shard>],[null,<bloodmagic:blood_shard>,null]]);
+
 # Grand Tartaric Gem
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:3>,<minecraft:nether_star>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:4>.withTag({}), [<bloodmagic:soul_gem:3>,<botania:manaresource:5>], 4096, 2048);
 
 print("ENDING BloodMagic.zs");

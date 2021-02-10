@@ -1,10 +1,17 @@
 # Author: Atricos
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.bloodmagic.TartaricForge;
 import mods.botania.Apothecary;
 import mods.roots.Fey;
 import mods.botania.PureDaisy;
+import mods.thermalexpansion.Transposer;
+import mods.immersiveengineering.ArcFurnace;
+import mods.thermalexpansion.InductionSmelter;
+import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
+import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import mods.botania.ElvenTrade;
 
 print("STARTING Botania.zs");
 
@@ -63,9 +70,13 @@ function(out, ins, cInfo) {
 }, null);
 
 # Manasteel Ingot
-# 100% =? 1,000,000
+# 100% = 1,000,000
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource>, <thermalfoundation:material:136>, 5000);
+
+# Block of Manasteel
+mods.botania.ManaInfusion.removeRecipe(<botania:storage>);
+mods.botania.ManaInfusion.addInfusion(<botania:storage>, <thermalfoundation:storage:8>, 45000);
 
 # Mana Pearl
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource:1>);
@@ -74,6 +85,10 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:1>, <appliedenergist
 # Mana Diamond
 mods.botania.ManaInfusion.removeRecipe(<botania:manaresource:2>);
 mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <quantumflux:craftingpiece:6>, 15000);
+
+# Block of Mana Diamond
+mods.botania.ManaInfusion.removeRecipe(<botania:storage:3>);
+mods.botania.ManaInfusion.addInfusion(<botania:storage:3>, <contenttweaker:hyper_diamond_block>, 135000);
 
 # Managlass
 mods.botania.ManaInfusion.removeRecipe(<botania:managlass>);
@@ -390,5 +405,250 @@ addBotaniaTier3RuneRecipe(<botania:rune:14>,<botania:rune:5>,<botania:rune:0>);
 
 # Rune of Pride
 addBotaniaTier3RuneRecipe(<botania:rune:15>,<botania:rune:6>,<botania:rune:3>);
+
+# Mana Tablet
+recipes.remove(<botania:manatablet>);
+recipes.addShaped(<botania:manatablet>.withTag({}), [[<botania:livingrock>,<contenttweaker:purified_slate>,<botania:livingrock>],[<contenttweaker:purified_slate>,<botania:storage:3>,<contenttweaker:purified_slate>],[<botania:livingrock>,<contenttweaker:purified_slate>,<botania:livingrock>]]);
+
+# Greater Ring of Magnetization
+recipes.remove(<botania:magnetringgreater>);
+recipes.addShapedMirrored(<botania:magnetringgreater>.withTag({}), [[<contenttweaker:purified_slate>,<botania:manaresource:4>,null],[<botania:manaresource:4>,<botania:magnetring>,<botania:manaresource:4>],[null,<botania:manaresource:4>,null]]);
+
+# Mana Blaster
+recipes.remove(<botania:managun>);
+recipes.addShapedMirrored(<botania:managun>.withTag({}), [[<botania:rune:13>,<contenttweaker:purified_slate>,<botania:manaresource:4>],[<botania:livingwood>,<botania:livingwood>,<botania:manaresource:4>],[null,null,<botania:livingwood>]]);
+
+# Mana Mirror
+recipes.remove(<botania:manamirror>);
+recipes.addShaped(<botania:manamirror>.withTag({mana: 0}), [[<contenttweaker:purified_slate>,<botania:manatablet>,<contenttweaker:purified_slate>],[null,<contenttweaker:purified_slate>,null],[null,<botania:manaresource:3>,null]]);
+
+# Band of Mana
+recipes.remove(<botania:manaring>);
+recipes.addShapedMirrored("band_of_mana", <botania:manaring>, [[<botania:manatablet>.marked("tablet"),<botania:storage>,null],[<botania:storage>,<contenttweaker:purified_slate>,<botania:storage>],[null,<botania:storage>,null]],
+	function(out,ins,cInfo) {
+			if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
+				return out.withTag({mana: ins.tablet.tag.mana});
+			} else {
+				return out.withTag({});
+			}
+		}, null);
+
+# Greater Band of Mana
+recipes.remove(<botania:manaringgreater>);
+recipes.addShaped("greater_ring_of_mana", <botania:manaringgreater>, [[<contenttweaker:purified_slate>,<botania:manaresource:4>,null],[<botania:manaresource:4>,<botania:manaring>.marked("ring"),<botania:manaresource:4>],[null,<botania:manaresource:4>,null]],
+	function(out,ins,cInfo) {
+			if(ins.ring.tag has "mana" && ins.ring.tag.mana > 0) {
+				return out.withTag({mana: ins.ring.tag.mana});
+			} else {
+				return out.withTag({});
+			}
+		}, null);
+
+# Soujourner's Sash
+recipes.remove(<botania:travelbelt>);
+recipes.addShapedMirrored(<botania:travelbelt>, [[<botania:rune:11>,<contenttweaker:blood_infused_leather>,<botania:manaresource:4>],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<botania:manaresource:4>,<contenttweaker:blood_infused_leather>,<botania:rune:3>]]);
+
+# Elementium Sword
+recipes.remove(<botania:elementiumsword>);
+recipes.addShaped(<botania:elementiumsword>, [[<botania:manaresource:7>],[<botania:manaresource:7>],[<bloodmagic:bound_sword>]]);
+
+# Elementium Pickaxe
+recipes.remove(<botania:elementiumpick>);
+recipes.addShaped(<botania:elementiumpick>, [[<botania:manaresource:7>,<botania:manaresource:7>,<botania:manaresource:7>],[null,<bloodmagic:bound_pickaxe>,null],[null,<botania:manaresource:13>,null]]);
+
+# Elementium Shovel
+recipes.remove(<botania:elementiumshovel>);
+recipes.addShaped(<botania:elementiumshovel>, [[<botania:manaresource:7>],[<bloodmagic:bound_shovel>],[<botania:manaresource:13>]]);
+
+# Elementium Axe
+recipes.remove(<botania:elementiumaxe>);
+recipes.addShapedMirrored(<botania:elementiumaxe>, [[<botania:manaresource:7>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:bound_axe>],[null,<botania:manaresource:13>]]);
+
+# Terra Blade
+recipes.remove(<botania:terrasword>);
+recipes.addShaped(<botania:terrasword>, [[<botania:manaresource:4>],[<botania:manaresource:4>],[<botania:elementiumsword>]]);
+
+# Terra Truncator
+recipes.remove(<botania:terraaxe>);
+recipes.addShapedMirrored(<botania:terraaxe>, [[<botania:manaresource:4>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumaxe>],[null,<botania:manaresource:3>]]);
+
+# Terra Shatterer
+recipes.removeShaped(<botania:terrapick>);
+recipes.addShaped("terra_shatterer", <botania:terrapick>, [[<botania:manaresource:4>,<botania:manatablet>.marked("tablet"),<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumpick>,<botania:manaresource:4>],[null,<botania:manaresource:3>,null]],
+	function(out,ins,cInfo) {
+			if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
+				return out.withTag({mana: ins.tablet.tag.mana});
+			} else {
+				return out.withTag({});
+			}
+		}, null);
+
+# Elementium Helmet
+recipes.remove(<botania:elementiumhelm>);
+recipes.addShaped(<botania:elementiumhelm>, [[<botania:manaresource:7>,<contenttweaker:rune_of_deception>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_helmet>,<botania:manaresource:7>]]);
+
+# Elementium Chestplate
+recipes.remove(<botania:elementiumchest>);
+recipes.addShaped(<botania:elementiumchest>, [[<botania:manaresource:7>,<botania:rune:10>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_chest>,<botania:manaresource:7>],[<botania:manaresource:7>,<botania:manaresource:7>,<botania:manaresource:7>]]);
+
+# Elementium Leggings
+recipes.remove(<botania:elementiumlegs>);
+recipes.addShaped(<botania:elementiumlegs>, [[<botania:manaresource:7>,<botania:rune:9>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_leggings>,<botania:manaresource:7>],[<botania:manaresource:7>,null,<botania:manaresource:7>]]);
+
+# Elementium Boots
+recipes.remove(<botania:elementiumboots>);
+recipes.addShaped(<botania:elementiumboots>, [[<botania:manaresource:7>,<botania:rune:15>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_boots>,<botania:manaresource:7>]]);
+
+# Terrasteel Helmet
+recipes.removeShaped(<botania:terrasteelhelm>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[null,<*>,null]]);
+recipes.addShaped(<botania:terrasteelhelm>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumhelm>,<botania:manaresource:4>]]);
+recipes.removeShaped(<botania:terrasteelhelmreveal>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[null,<*>,null]]);
+
+# Terrasteel Chestplate
+recipes.remove(<botania:terrasteelchest>);
+recipes.addShaped(<botania:terrasteelchest>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumchest>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
+
+# Terrasteel Leggings
+recipes.remove(<botania:terrasteellegs>);
+recipes.addShaped(<botania:terrasteellegs>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumlegs>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>]]);
+
+# Terrasteel Boots
+recipes.remove(<botania:terrasteelboots>);
+recipes.addShaped(<botania:terrasteelboots>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumboots>,<botania:manaresource:4>]]);
+
+# Tectonic Girdle
+recipes.remove(<botania:knockbackbelt>);
+recipes.addShapedMirrored(<botania:knockbackbelt>, [[<contenttweaker:purified_slate>,<contenttweaker:blood_infused_leather>,null],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<botania:rune:12>,<contenttweaker:blood_infused_leather>,<contenttweaker:purified_slate>]]);
+
+# Tiny Planet
+recipes.remove(<botania:tinyplanet>);
+recipes.addShaped(<botania:tinyplanet>.withTag({}), [[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>],[<botania:livingrock>,<contenttweaker:purified_slate>,<botania:livingrock>],[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>]]);
+
+# Charm of the Diva
+recipes.remove(<botania:divacharm>);
+recipes.addShaped(<botania:divacharm>, [[<botania:manaresource:5>,<botania:manaresource:5>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<botania:tinyplanet>.withTag({}),<contenttweaker:holy_core>],[<contenttweaker:holy_core>,<contenttweaker:holy_core>,<botania:rune:15>]]);
+
+# Flügel Tiara
+recipes.remove(<botania:flighttiara>);
+recipes.addShapedMirrored(<botania:flighttiara>, [[<botania:manaresource:5>,<botania:manaresource:5>,<botania:manaresource:5>],[<bloodmagic:decorative_brick:2>,<contenttweaker:perfect_slate>,<bloodmagic:decorative_brick:2>],[<simplyjetpacks:itemjetpack:24>,<botania:manaresource:5>,<simplyjetpacks:itemjetpack:15>]]);
+
+# Smokey Quartz
+recipes.remove(<botania:quartz>);
+furnace.addRecipe(<botania:quartz>, <botania:quartz:1>);
+
+# Mana Quartz
+mods.botania.ManaInfusion.removeRecipe(<botania:quartz:1>);
+mods.botania.ManaInfusion.addInfusion(<botania:quartz:1>, <minecraft:quartz>, 2500);
+mods.botania.ManaInfusion.addInfusion(<botania:quartztypemana>, <minecraft:quartz_block>, 10000);
+
+# Blaze Quartz
+recipes.remove(<botania:quartz:2>);
+mods.thermalexpansion.Transposer.addFillRecipe(<botania:quartz:2>, <botania:quartz:1>, <liquid:fire_water> * 200, 2400);
+mods.thermalexpansion.Transposer.addFillRecipe(<botania:quartztypeblaze>, <botania:quartztypemana:0>, <liquid:fire_water> * 800, 9600);
+
+# Red Quartz
+recipes.remove(<botania:quartz:4>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<botania:quartz:4>, <botania:quartz:2>, null, 80, 256, [<contenttweaker:virtus>], "Alloying");
+EIOAlloySmelter.addRecipe(<botania:quartz:4>, [<botania:quartz:2>, <contenttweaker:virtus>], 4000);
+IEAlloySmelter.addRecipe(<botania:quartz:4>, <botania:quartz:2>, <contenttweaker:virtus>, 160);
+mods.thermalexpansion.InductionSmelter.addRecipe(<botania:quartz:4>, <botania:quartz:2>, <contenttweaker:virtus>, 4000);
+
+# Sunny Quartz
+recipes.remove(<botania:quartz:6>);
+mods.thermalexpansion.Transposer.addFillRecipe(<botania:quartz:6>, <botania:quartz:4>, <liquid:liquid_sunshine> * 200, 2400);
+mods.thermalexpansion.Transposer.addFillRecipe(<botania:quartztypesunny>, <botania:quartztypered:0>, <liquid:liquid_sunshine> * 800, 9600);
+
+# Elven Quartz
+mods.botania.ElvenTrade.removeRecipe(<botania:quartz:5>);
+mods.botania.ElvenTrade.addRecipe([<botania:quartz:5>], [<botania:quartz:6>,<botania:manaresource:18>]);
+
+# Lavender Quartz
+recipes.remove(<botania:quartz:3>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<botania:quartz:3>, <botania:quartz:5>, null, 80, 256, [<minecraft:red_flower:2>], "Alloying");
+EIOAlloySmelter.addRecipe(<botania:quartz:3>, [<botania:quartz:5>, <minecraft:red_flower:2>], 4000);
+IEAlloySmelter.addRecipe(<botania:quartz:3>, <botania:quartz:5>, <minecraft:red_flower:2>, 160);
+mods.thermalexpansion.InductionSmelter.addRecipe(<botania:quartz:3>, <botania:quartz:5>, <minecraft:red_flower:2>, 4000);
+
+# Gaia Pylon
+recipes.remove(<botania:pylon:2>);
+recipes.addShaped(<botania:pylon:2>, [[<botania:storage:4>,null,<botania:storage:4>],[<contenttweaker:magical_slate>,<botania:pylon:1>,<contenttweaker:magical_slate>],[<contenttweaker:magical_slate>,<botania:rune:14>,<contenttweaker:magical_slate>]]);
+
+# Extrapolated Bucket
+recipes.remove(<botania:openbucket>);
+recipes.addShaped(<botania:openbucket>, [[<botania:manaresource:7>,<quantumflux:voidbucket>,<botania:manaresource:7>],[null,<botania:manaresource:7>,null]]);
+
+# Life Aggregator
+recipes.remove(<botania:spawnermover>);
+
+# Great Fairy Ring
+recipes.remove(<botania:pixiering>);
+recipes.addShapedMirrored(<botania:pixiering>, [[<botania:manaresource:8>,<botania:manaresource:7>,null],[<botania:manaresource:7>,<botania:spark>,<botania:manaresource:7>],[null,<botania:manaresource:7>,null]]);
+
+# Globetrotter's Sash
+recipes.remove(<botania:supertravelbelt>);
+recipes.addShapedMirrored(<botania:supertravelbelt>, [[<botania:manaresource:7>,<botania:manaresource:7>,<botania:manaresource:5>],[<botania:manaresource:7>,<botania:travelbelt>,<botania:manaresource:7>],[<botania:manaresource:4>,<botania:manaresource:7>,<botania:manaresource:7>]]);
+
+# Ring of Far Reach
+recipes.remove(<botania:reachring>);
+recipes.addShapedMirrored(<botania:reachring>, [[<botania:rune:11>,<botania:manaresource:7>,<botania:manaresource:5>],[<botania:manaresource:7>,null,<botania:manaresource:7>],[<botania:manaresource:5>,<botania:manaresource:7>,<contenttweaker:rune_of_deception>]]);
+
+# The Spectator
+recipes.remove(<botania:itemfinder>);
+recipes.addShaped(<botania:itemfinder>, [[<botania:manaresource>,<botania:manaresource:8>,<botania:manaresource>],[<botania:manaresource>,<minecraft:ender_eye>,<botania:manaresource>]]);
+
+# Hand of Ender
+recipes.remove(<botania:enderhand>);
+
+function addBotaniaSparkAugmentRecipe(output as IItemStack, input_rune as IItemStack) {
+	recipes.remove(output);
+	recipes.addShaped(output, [[null,<botania:manaresource>,null],[<botania:manaresource>,<botania:manaresource:8>,<botania:manaresource>],[null,input_rune,null]]);
+}
+
+# Spark Augment: Dispersive
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:0>, <botania:rune:4>);
+
+# Spark Augment: Dominant
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:1>, <botania:rune:5>);
+
+# Spark Augment: Recessive
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:2>, <botania:rune:6>);
+
+# Spark Augment: Isolated
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:3>, <botania:rune:7>);
+
+# Cloak of Virtue
+recipes.remove(<botania:holycloak>);
+recipes.addShaped(<botania:holycloak>.withTag({}), [[<contenttweaker:holy_core>,<botania:rune:15>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>]]);
+
+# Cloak of Sin
+recipes.remove(<botania:unholycloak>);
+recipes.addShaped(<botania:unholycloak>.withTag({}), [[<contenttweaker:offensive_core>,<botania:rune:13>,<contenttweaker:offensive_core>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>]]);
+
+# Cloak of Balance
+recipes.remove(<botania:balancecloak>);
+recipes.addShaped(<botania:balancecloak>.withTag({}), [[<contenttweaker:gusty_core>,<contenttweaker:rune_of_deception>,<contenttweaker:gusty_core>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_slate>,<botania:manaresource:5>]]);
+
+# Assembly Halo
+recipes.remove(<botania:craftinghalo>);
+recipes.addShaped(<botania:craftinghalo>, [[<botania:manaresource>,<botania:manaresource>,<botania:manaresource>],[<botania:manaresource>,<actuallyadditions:item_crafter_on_a_stick>,<botania:manaresource>],[<botania:manaresource>,<botania:manaresource>,<botania:manaresource>]]);
+
+# Manufactory Halo
+recipes.remove(<botania:autocraftinghalo>);
+recipes.addShaped(<botania:autocraftinghalo>, [[null,<botania:manaresource:4>,null],[<botania:storage:3>,<botania:craftinghalo>,<botania:storage:3>],[null,<botania:manaresource:4>,null]]);
+
+# Manaseer Monocle
+recipes.remove(<botania:monocle>);
+recipes.addShaped(<botania:monocle>, [[null,<botania:manaresource>,null],[<botania:manaresource>,<actuallyadditions:item_engineer_goggles_advanced>,<botania:manaresource>],[null,empowered_glod_crystal,null]]);
+
+# Lens Clip
+recipes.remove(<botania:clip>);
+recipes.addShapedMirrored(<botania:clip>, [[null,<botania:dreamwood>,<botania:dreamwood>],[<botania:dreamwood>,<contenttweaker:purified_slate>,<botania:dreamwood>],[<botania:dreamwood>,<botania:dreamwood>,null]]);
+
+# World Seed
+recipes.remove(<botania:worldseed>);
+recipes.addShaped(<botania:worldseed> * 4, [[null,<minecraft:grass>,null],[<botania:manaresource:9>,<enderutilities:enderpart:17>,<botania:manaresource:9>],[null,<botania:manaresource:9>,null]]);
+
+# Overgrowth Seed
+recipes.addShapeless(<botania:overgrowthseed>, [<minecraft:wheat_seeds>,<botania:manaresource:5>,<mysticalagriculture:mystical_fertilizer>]);
 
 print("ENDING Botania.zs");

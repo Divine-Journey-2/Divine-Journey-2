@@ -614,5 +614,9 @@ soul_of_the_dark_realm.rarity = "EPIC";
 soul_of_the_dark_realm.register();
 var rune_of_deception = VanillaFactory.createItem("rune_of_deception");
 rune_of_deception.register();
+var purified_slate = VanillaFactory.createItem("purified_slate");
+purified_slate.register();
+var magical_slate = VanillaFactory.createItem("magical_slate");
+magical_slate.register();
 
 print("ENDING ContentTweakerItems.zs");

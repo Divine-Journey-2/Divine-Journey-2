@@ -421,4 +421,12 @@ dreammatter.setToolLevel(0);
 dreammatter.setBlockSoundType(<soundtype:ground>);
 dreammatter.register();
 
+var hyper_diamond_block = VanillaFactory.createBlock("hyper_diamond_block", <blockmaterial:iron>);
+hyper_diamond_block.setBlockHardness(6.0);
+hyper_diamond_block.setBlockResistance(5.0);
+hyper_diamond_block.setToolClass("pickaxe");
+hyper_diamond_block.setToolLevel(2);
+hyper_diamond_block.setBlockSoundType(<soundtype:metal>);
+hyper_diamond_block.register();
+
 print("ENDING ContentTweakerBlocks.zs");

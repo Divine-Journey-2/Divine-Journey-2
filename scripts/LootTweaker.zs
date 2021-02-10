@@ -210,4 +210,11 @@ val undead_miner_pool = undead_miner_table.addPool("custom_loot", 1, 3, 0, 0);
 undead_miner_pool.addItemEntry(<minecraft:rotten_flesh>, 90);
 undead_miner_pool.addItemEntry(<minecraft:iron_ingot>, 10);
 
+# Gaia Guardian II no Rune drops
+clear_pool("botania/gaia_guardian_2", "runes");
+
+# Extra Gaia Spirits
+add_entry("botania/gaia_guardian", "extra_gaia_spirits", <botania:manaresource:5>, 6, 10, 0, 0, 100);
+add_entry("botania/gaia_guardian_2", "extra_gaia_spirits", <botania:manaresource:5>, 12, 20, 0, 0, 100);
+
 print("ENDING LootTweaker.zs");
