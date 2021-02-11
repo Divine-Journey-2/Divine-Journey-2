@@ -1,6 +1,6 @@
 
 {
-  "ID": 99,
+  "ID": 100,
   "Name": "Red Desert",
   "Resource Location": "traverse:red_desert",
   "Class": "prospector.traverse.world.biomes.BiomeRedDesert",

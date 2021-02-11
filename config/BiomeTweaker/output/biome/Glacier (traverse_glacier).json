@@ -1,6 +1,6 @@
 
 {
-  "ID": 108,
+  "ID": 109,
   "Name": "Glacier",
   "Resource Location": "traverse:glacier",
   "Class": "prospector.traverse.world.biomes.BiomeGlacier",

@@ -1,6 +1,6 @@
 
 {
-  "ID": 117,
+  "ID": 118,
   "Name": "Rocky Plains",
   "Resource Location": "traverse:rocky_plains",
   "Class": "prospector.traverse.world.biomes.BiomeRockyPlains",
@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "PLAINS",
     "HILLS",
-    "SPARSE",
-    "PLAINS"
+    "SPARSE"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

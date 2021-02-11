@@ -1,6 +1,6 @@
 
 {
-  "ID": 100,
+  "ID": 101,
   "Name": "Temperate Rainforest",
   "Resource Location": "traverse:temperate_rainforest",
   "Class": "prospector.traverse.world.biomes.BiomeConiferousForest",

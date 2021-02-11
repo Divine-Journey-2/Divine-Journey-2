@@ -1,6 +1,6 @@
 
 {
-  "ID": 95,
+  "ID": 96,
   "Name": "Woodlands",
   "Resource Location": "traverse:woodlands",
   "Class": "prospector.traverse.world.biomes.BiomeWoodlands",

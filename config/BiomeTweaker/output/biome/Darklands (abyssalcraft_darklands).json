@@ -1,6 +1,6 @@
 
 {
-  "ID": 118,
+  "ID": 119,
   "Name": "Darklands",
   "Resource Location": "abyssalcraft:darklands",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklands",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPOOKY",
-    "WASTELAND"
+    "WASTELAND",
+    "SPOOKY"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

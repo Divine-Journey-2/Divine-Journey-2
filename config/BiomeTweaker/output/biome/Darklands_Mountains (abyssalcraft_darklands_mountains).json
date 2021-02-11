@@ -1,6 +1,6 @@
 
 {
-  "ID": 122,
+  "ID": 123,
   "Name": "Darklands Mountains",
   "Resource Location": "abyssalcraft:darklands_mountains",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklandsMountains",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPOOKY",
-    "MOUNTAIN"
+    "MOUNTAIN",
+    "SPOOKY"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

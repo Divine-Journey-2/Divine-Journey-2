@@ -1,6 +1,6 @@
 
 {
-  "ID": 113,
+  "ID": 114,
   "Name": "Crag Cliffs",
   "Resource Location": "traverse:crag_cliffs",
   "Class": "prospector.traverse.world.biomes.BiomeCragCliffs",

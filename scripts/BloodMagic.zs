@@ -208,39 +208,39 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "blood
 
 # Water Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:sugar>,<minecraft:water_bucket>,<minecraft:water_bucket>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component>, [<minecraft:water_bucket>,<minecraft:water_bucket>,<quark:sugar_block>,<mekanism:saltblock>], 8, 2);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component>, [<minecraft:water_bucket>,<minecraft:water_bucket>,<quark:sugar_block>,<mekanism:saltblock>], 8, 4);
 
 # Lava Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:lava_bucket>,<minecraft:redstone>,<ore:cobblestone>.firstItem,<ore:blockCoal>.firstItem]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:1>, [<minecraft:lava_bucket>,<minecraft:lava_bucket>,<contenttweaker:fluxed_electrum_block>,<minecraft:coal_block>], 8, 2);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:1>, [<minecraft:lava_bucket>,<minecraft:lava_bucket>,<contenttweaker:fluxed_electrum_block>,<minecraft:coal_block>], 8, 4);
 
 # Air Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<ore:feather>.firstItem,<ore:feather>.firstItem]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:2>, [<minecraft:glass_bottle>,<minecraft:glass_bottle>,<immersiveengineering:toolupgrade>,<immersiveengineering:wooden_device1:1>], 8, 2);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:2>, [<minecraft:glass_bottle>,<minecraft:glass_bottle>,<immersiveengineering:toolupgrade>,<immersiveengineering:wooden_device1:1>], 8, 4);
 
 # Haste Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:cookie>,<minecraft:sugar>,<minecraft:cookie>,<ore:stone>.firstItem]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:13>, [<bibliocraft:cookiejar>,<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:glowstone>,<quark:sugar_block>], 72, 6);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:13>, [<bibliocraft:cookiejar>,<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:glowstone>,<quark:sugar_block>], 80, 12);
 
 # Frost Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ice>,<minecraft:snowball>,<minecraft:snowball>,<minecraft:redstone>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:32>, [<minecraft:packed_ice>,<minecraft:snow>,<enderio:item_alloy_endergy_ingot:6>,<thermalfoundation:material:1025>], 72, 6);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:32>, [<minecraft:packed_ice>,<minecraft:snow>,<enderio:item_alloy_endergy_ingot:6>,<thermalfoundation:material:1025>], 80, 12);
 
 # Growth Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<ore:treeSapling>.firstItem,<ore:treeSapling>.firstItem,<ore:sugarcane>.firstItem,<minecraft:sugar>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:5>, [<minecraft:bone_block>,<natura:overworld_sapling>,<natura:overworld_sapling2:1>,<minecraft:melon>], 72, 6);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:5>, [<minecraft:bone_block>,<natura:overworld_sapling>,<natura:overworld_sapling2:1>,<minecraft:melon>], 80, 12);
 
 # Elasticity Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:slime>,<minecraft:slime>,<minecraft:leather>,<ore:string>.firstItem]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:31>, [<minecraft:slime>,<minecraft:slime>,<contenttweaker:blood_infused_leather>,<erebus:silk>], 500, 32);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:31>, [<minecraft:slime>,<minecraft:slime>,<contenttweaker:blood_infused_leather>,<erebus:silk>], 500, 72);
 
 # Void Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bucket>,<ore:string>.firstItem,<ore:string>.firstItem,<minecraft:gunpowder>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:4>, [<quantumflux:voidbucket>,<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:mobgrindium_block>], 500, 32);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:4>, [<quantumflux:voidbucket>,<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:mobgrindium_block>], 500, 72);
 
 # Suppression Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:teleposer>,<minecraft:water_bucket>,<minecraft:lava_bucket>,<minecraft:blaze_rod>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:9>, [<actuallyadditions:block_misc:8>,<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "vapor_of_levity", Amount: 1000}),<enderio:item_material:44>], 500, 32);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:9>, [<actuallyadditions:block_misc:8>,<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "vapor_of_levity", Amount: 1000}),<enderio:item_material:44>], 500, 72);
 
 # Lesser Tartaric Gem
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>,<minecraft:diamond>,<ore:blockRedstone>.firstItem,<ore:blockLapis>.firstItem]);
@@ -287,7 +287,7 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "blood
 
 # Ritual Stone
 recipes.removeShaped(<bloodmagic:ritual_stone>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
-recipes.addShaped(<bloodmagic:ritual_stone> * 4, [[<minecraft:obsidian>,<bloodmagic:slate:2>,<minecraft:obsidian>],[<bloodmagic:slate:2>,<contenttweaker:dark_core>,<bloodmagic:slate:2>],[<minecraft:obsidian>,blood_orb_at_least_tier_4.reuse(),<minecraft:obsidian>]]);
+recipes.addShaped(<bloodmagic:ritual_stone> * 16, [[<minecraft:obsidian>,<bloodmagic:slate:2>,<minecraft:obsidian>],[<bloodmagic:slate:2>,<contenttweaker:dark_core>,<bloodmagic:slate:2>],[<minecraft:obsidian>,blood_orb_at_least_tier_4.reuse(),<minecraft:obsidian>]]);
 
 # Master Ritual Stone
 recipes.removeShaped(<bloodmagic:ritual_controller>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
@@ -538,5 +538,15 @@ recipes.addShaped(<bloodmagic:blood_shard> * 8, [[null,<bloodmagic:blood_shard>,
 # Grand Tartaric Gem
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:3>,<minecraft:nether_star>]);
 mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:4>.withTag({}), [<bloodmagic:soul_gem:3>,<botania:manaresource:5>], 4096, 2048);
+
+# Ritual Stone of Dawn
+recipes.removeShapeless(<bloodmagic:ritual_stone>, [<bloodmagic:ritual_stone:6>]);
+
+# Crystal Cluster
+recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_slate>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_slate>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_slate>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_slate>,<bloodmagic:blood_shard:1>]]);
+
+# Obsidian Brick Path
+recipes.remove(<bloodmagic:path:6>);
+recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>],[<contenttweaker:compressed_obsidian1>,blood_orb_at_least_tier_4,<contenttweaker:compressed_obsidian1>],[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>]]);
 
 print("ENDING BloodMagic.zs");

@@ -504,25 +504,25 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:blood_infused_leather>, <co
 mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:industrial_leather>, <liquid:evilcraftblood> * 8000, 1, <contenttweaker:blood_infused_leather>, 160, 0);
 
 # Dirty Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 8, 2);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 8, 4);
 
 # Wizard's Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 72, 6);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 80, 12);
 
 # Neutral Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 300, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 300, 36);
 
 # Tempest Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 300, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:tempest_reagent>, [<extrautils2:passivegenerator:4>,<totemic:wind_chime>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<mekanism:speedupgrade>], 300, 36);
 
 # Damage Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 300, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:damage_reagent>, [<abyssalcraft:dreadiumsword>,<spartanshields:shield_abyssalcraft_dreadium>,<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:lava_bucket>], 300, 36);
 
 # Strength Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 300, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:strength_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<immersiveengineering:toolupgrade:12>,<contenttweaker:steaming_restonia_crystal>,<quantumflux:craftingpiece:2>], 300, 36);
 
 # Potent Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 500, 32);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:potent_reagent>, [<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<actuallyadditions:item_crystal_empowered:1>,<appliedenergistics2:material:12>,<thermalfoundation:material:514>], 500, 72);
 
 # Empty Core
 recipes.addShaped(<contenttweaker:empty_core>, [[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>],[<contenttweaker:simple_catalyst>,<enderio:item_material:14>,<contenttweaker:simple_catalyst>],[<thermalfoundation:glass:7>,<contenttweaker:simple_catalyst>,<thermalfoundation:glass:7>]]);
@@ -848,5 +848,8 @@ recipes.addShapeless(<quantumflux:craftingpiece:6> * 9, [<contenttweaker:hyper_d
 
 # Magical Slate
 mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_slate>, [<contenttweaker:purified_slate>,<botania:quartztypelavender>,<botania:storage:2>,<botania:manaresource:9>], 256, 256);
+
+# Mystical Slate
+mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_slate>, <contenttweaker:magical_slate>, 50000);
 
 print("ENDING ContentTweakerRecipes.zs");

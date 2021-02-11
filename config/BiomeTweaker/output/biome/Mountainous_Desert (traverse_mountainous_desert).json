@@ -1,6 +1,6 @@
 
 {
-  "ID": 102,
+  "ID": 103,
   "Name": "Mountainous Desert",
   "Resource Location": "traverse:mountainous_desert",
   "Class": "prospector.traverse.world.biomes.BiomeMountainousDesert",
@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "HOT",
-    "DRY",
     "MOUNTAIN",
+    "DRY",
     "SANDY"
   ],
   "BiomeManager Entries": {

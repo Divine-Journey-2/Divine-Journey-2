@@ -1,6 +1,6 @@
 
 {
-  "ID": 101,
+  "ID": 102,
   "Name": "Badlands",
   "Resource Location": "traverse:badlands",
   "Class": "prospector.traverse.world.biomes.BiomeBadlands",
@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPARSE",
     "HOT",
+    "PLAINS",
     "DRY",
-    "PLAINS"
+    "SPARSE"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

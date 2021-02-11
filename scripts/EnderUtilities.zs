@@ -169,6 +169,12 @@ recipes.addShapedMirrored(<enderutilities:builderswand>, [[null,null,<enderutili
 recipes.remove(<enderutilities:chairwand>);
 recipes.addShapedMirrored(<enderutilities:chairwand>, [[null,null,<ore:stairWood>],[null,<enderutilities:enderpart:20>,null],[<enderutilities:enderpart:20>,null,null]]);
 
+# Chair Wand
+<enderutilities:chairwand>.addTooltip("1. Right Click on the Ground to add location to sit.");
+<enderutilities:chairwand>.addTooltip("2. Place a Stair with Shift+Right Click");
+<enderutilities:chairwand>.addTooltip("3. Right Click to sit in the Chair!");
+<enderutilities:chairwand>.addTooltip("(4. Left Click with the Wand to remove sit location.)");
+
 # Dolly
 recipes.remove(<enderutilities:dolly>);
 recipes.addShapedMirrored(<enderutilities:dolly>, [[null,null,<enderutilities:enderpart:2>],[null,<enderutilities:enderpart:2>,null],[<contenttweaker:compressed_obsidian2>,<enderutilities:enderpart:2>,null]]);

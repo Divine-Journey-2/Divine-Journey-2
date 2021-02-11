@@ -1,6 +1,6 @@
 
 {
-  "ID": 120,
+  "ID": 121,
   "Name": "Darklands Plains",
   "Resource Location": "abyssalcraft:darklands_plains",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklandsPlains",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPOOKY",
-    "PLAINS"
+    "PLAINS",
+    "SPOOKY"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
