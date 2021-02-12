@@ -108,6 +108,10 @@ recipes.addShaped(<evilcraft:promise>, [[<actuallyadditions:item_crystal_empower
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:undead_sapling>);
 mods.evilcraft.BloodInfuser.addRecipe(<minecraft:deadbush>, <liquid:evilcraftblood> * 25000, 1, <evilcraft:undead_sapling>, 200, 2);
 
+# Undead Log & Plank Oredict removals
+<ore:logWood>.remove(<evilcraft:undead_log>);
+<ore:plankWood>.remove(<evilcraft:undead_plank>);
+
 # Bloody Cobblestone
 mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:mossy_cobblestone>, <liquid:evilcraftblood>);
 
@@ -244,7 +248,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:sanguinary_environmenta
 
 # Eternal Water Block
 recipes.remove(<evilcraft:eternal_water_block>);
-recipes.addShaped(<evilcraft:eternal_water_block>, [[<ore:paneGlassBlue>,<contenttweaker:aquasalus>,<ore:paneGlassBlue>],[<ore:paneGlassBlue>,<roots:unending_bowl>,<ore:paneGlassBlue>],[<evilcraft:dark_block>,<evilcraft:weather_container:2>,<evilcraft:dark_block>]]);
+#recipes.addShaped(<evilcraft:eternal_water_block>, [[<ore:paneGlassBlue>,<contenttweaker:aquasalus>,<ore:paneGlassBlue>],[<ore:paneGlassBlue>,<roots:unending_bowl>,<ore:paneGlassBlue>],[<evilcraft:dark_block>,<evilcraft:weather_container:2>,<evilcraft:dark_block>]]);
 
 # Lightning Bomb
 recipes.remove(<evilcraft:lightning_bomb>);

@@ -158,4 +158,8 @@ for i in 0 to 16 {
 	recipes.addShapeless(<openblocks:elevator_rotating>.withDamage(i), [<openblocks:elevator:5>.withDamage(i), <minecraft:piston>]);
 }
 
+# /dev/null
+recipes.remove(<openblocks:dev_null>);
+recipes.addShaped(<openblocks:dev_null>.withTag({}), [[null,<contenttweaker:open_ingot>,null],[<contenttweaker:open_ingot>,<danknull:dank_null_panel_0>,<contenttweaker:open_ingot>],[null,<contenttweaker:open_ingot>,null]]);
+
 print("ENDING OpenBlocks.zs");

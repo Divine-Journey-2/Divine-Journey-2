@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_spectrolus",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:spectacular_petal",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:manaresource@8"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:quartz@3"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:rune_of_deception"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "botania:specialflower",
+            "nbt":
+            {
+                "type": "spectrolus"
+            }
+        }
+    ]
+}

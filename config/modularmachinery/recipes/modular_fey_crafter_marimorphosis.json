@@ -1,0 +1,37 @@
+{
+    "machine": "modular_fey_crafter",
+    "registryName": "modular_fey_crafter_marimorphosis",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:morphing_petal",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@11"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:quartz@3"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "botania:specialflower",
+            "nbt":
+            {
+                "type": "marimorphosis"
+            }
+        }
+    ]
+}

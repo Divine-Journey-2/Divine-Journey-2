@@ -319,6 +319,8 @@ recipes.addShaped(<appliedenergistics2:crafting_storage_64k>, [[<enderio:item_al
 # Crafting Card
 recipes.remove(<appliedenergistics2:material:53>);
 recipes.addShapedMirrored(<appliedenergistics2:material:53>, [[<thermalfoundation:material:160>,<contenttweaker:methodology_processor>,null],[<appliedenergistics2:crafting_unit>,<appliedenergistics2:material:25>,<thermalfoundation:material:160>],[<thermalfoundation:material:160>,<contenttweaker:methodology_processor>,null]]);
+<appliedenergistics2:material:53>.addTooltip(format.white("Use it sparingly! If you use it a lot, it could"));
+<appliedenergistics2:material:53>.addTooltip(format.white("cause your ME Network to completely lag out!"));
 
 # Fluix Pearl
 recipes.remove(<appliedenergistics2:material:9>);

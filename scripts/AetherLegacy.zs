@@ -41,4 +41,15 @@ recipes.addShaped(<aether_legacy:golden_pendant>, [[<atum:linen_thread>,<atum:li
 #mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:milk>);
 #mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:remedy>);
 
+# Disable bugged slabs
+recipes.remove(<aether_legacy:skyroot_slab>);
+recipes.remove(<aether_legacy:carved_slab>);
+recipes.remove(<aether_legacy:angelic_slab>);
+recipes.remove(<aether_legacy:hellfire_slab>);
+recipes.remove(<aether_legacy:holystone_slab>);
+recipes.remove(<aether_legacy:mossy_holystone_slab>);
+recipes.remove(<aether_legacy:holystone_brick_slab>);
+recipes.remove(<aether_legacy:aerogel_slab>);
+<ore:slabWood>.remove(<aether_legacy:skyroot_slab>);
+
 print("ENDING AetherLegacy.zs");

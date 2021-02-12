@@ -543,10 +543,15 @@ mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:4>.withTag({}), [<b
 recipes.removeShapeless(<bloodmagic:ritual_stone>, [<bloodmagic:ritual_stone:6>]);
 
 # Crystal Cluster
-recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_slate>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_slate>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_slate>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_slate>,<bloodmagic:blood_shard:1>]]);
+recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_tablet>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_tablet>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>]]);
 
 # Obsidian Brick Path
 recipes.remove(<bloodmagic:path:6>);
 recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>],[<contenttweaker:compressed_obsidian1>,blood_orb_at_least_tier_4,<contenttweaker:compressed_obsidian1>],[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>]]);
+
+# Weak Blood Shard tooltip
+<bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));
+<bloodmagic:blood_shard>.addTooltip(format.white("to obtain. Be wary though. While it's active,"));
+<bloodmagic:blood_shard>.addTooltip(format.white("it constantly drains LP from your Life Network!"));
 
 print("ENDING BloodMagic.zs");

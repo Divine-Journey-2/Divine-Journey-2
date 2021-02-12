@@ -11,7 +11,7 @@ print("STARTING ThermalExpansion.zs");
 
 # Redstone Servo
 recipes.remove(<thermalfoundation:material:512>);
-recipes.addShaped(<thermalfoundation:material:512>, [[<minecraft:redstone>,<thermalfoundation:material:160>,<minecraft:redstone>],[null,<thermalfoundation:material:160>,null],[<minecraft:redstone>,<thermalfoundation:material:160>,<minecraft:redstone>]]);
+recipes.addShaped(<thermalfoundation:material:512>, [[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>],[null,<minecraft:iron_ingot>,null],[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>]]);
 
 # Portable Tank
 recipes.remove(<thermalexpansion:tank>);

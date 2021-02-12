@@ -614,10 +614,10 @@ soul_of_the_dark_realm.rarity = "EPIC";
 soul_of_the_dark_realm.register();
 var rune_of_deception = VanillaFactory.createItem("rune_of_deception");
 rune_of_deception.register();
-var purified_slate = VanillaFactory.createItem("purified_slate");
-purified_slate.register();
-var magical_slate = VanillaFactory.createItem("magical_slate");
-magical_slate.register();
+var purified_tablet = VanillaFactory.createItem("purified_tablet");
+purified_tablet.register();
+var magical_tablet = VanillaFactory.createItem("magical_tablet");
+magical_tablet.register();
 var munching_petal = VanillaFactory.createItem("munching_petal");
 munching_petal.register();
 var petal_of_the_entropinnyum = VanillaFactory.createItem("petal_of_the_entropinnyum");
@@ -632,6 +632,8 @@ var petal_of_the_game_of_life = VanillaFactory.createItem("petal_of_the_game_of_
 petal_of_the_game_of_life.register();
 var morphing_petal = VanillaFactory.createItem("morphing_petal");
 morphing_petal.register();
+var orechid_petallius = VanillaFactory.createItem("orechid_petallius");
+orechid_petallius.register();
 var orechid_ignem_petallius = VanillaFactory.createItem("orechid_ignem_petallius");
 orechid_ignem_petallius.register();
 var petal_of_the_fallen_kanade = VanillaFactory.createItem("petal_of_the_fallen_kanade");
@@ -654,7 +656,9 @@ var petal_of_a_slice_o_cake = VanillaFactory.createItem("petal_of_a_slice_o_cake
 petal_of_a_slice_o_cake.register();
 var dreaming_petal = VanillaFactory.createItem("dreaming_petal");
 dreaming_petal.register();
-var mystical_slate = VanillaFactory.createItem("mystical_slate");
-mystical_slate.register();
+var mystical_tablet = VanillaFactory.createItem("mystical_tablet");
+mystical_tablet.register();
+var rainbow_tablet = VanillaFactory.createItem("rainbow_tablet");
+rainbow_tablet.register();
 
 print("ENDING ContentTweakerItems.zs");

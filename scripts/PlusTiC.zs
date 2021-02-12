@@ -5,6 +5,7 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.InductionSmelter;
+import mods.actuallyadditions.Empowerer;
 
 print("STARTING PlusTiC.zs");
 
@@ -17,5 +18,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<plustic:osmiridiumingot> * 2, <m
 EIOAlloySmelter.addRecipe(<plustic:osmiridiumingot> * 2, [<mekanism:ingot:1>, <thermalfoundation:material:135>], 4000);
 IEAlloySmelter.addRecipe(<plustic:osmiridiumingot> * 2, <mekanism:ingot:1>, <thermalfoundation:material:135>, 160);
 mods.thermalexpansion.InductionSmelter.addRecipe(<plustic:osmiridiumingot> * 2, <mekanism:ingot:1>, <thermalfoundation:material:135>, 4000);
+
+# Mirion Ingot
+mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot>, <minecraft:glass>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
 
 print("ENDING PlusTiC.zs");

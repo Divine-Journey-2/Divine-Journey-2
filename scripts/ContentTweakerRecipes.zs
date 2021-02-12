@@ -744,6 +744,63 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_solegnolia>, [<or
 # Petal of the Bergamute
 mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_bergamute>, [<ore:petalYellow>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalOrange>]);
 
+# Muching Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:munching_petal>, [<ore:petalGreen>,<ore:petalLime>,<ore:petalLime>,<ore:petalRed>]);
+
+# Petal of the Entropinnyum
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_entropinnyum>, [<ore:petalRed>,<ore:petalRed>,<ore:petalBlack>,<ore:petalGray>]);
+
+# Spectacular Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:spectacular_petal>, [<ore:petalWhite>,<ore:petalBlue>,<ore:petalRed>,<ore:petalGreen>]);
+
+# Petal of the Rafflowsia
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_rafflowsia>, [<ore:petalPurple>,<ore:petalPurple>,<ore:petalYellow>,<ore:petalGreen>]);
+
+# Petal of the Game of Life
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_game_of_life>, [<ore:petalYellow>,<ore:petalLime>,<ore:petalLime>,<ore:petalPink>]);
+
+# Petal of a Slice o' Cake
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_a_slice_o_cake>, [<ore:petalWhite>,<ore:petalOrange>,<ore:petalBrown>,<ore:petalBrown>]);
+
+# Petal Me Not
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_me_not>, [<ore:petalLightGray>,<ore:petalYellow>,<ore:petalMagenta>,<ore:petalPurple>]);
+
+# Dreaming Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:dreaming_petal>, [<ore:petalPurple>,<ore:petalPurple>,<ore:petalPink>,<ore:petalMagenta>]);
+
+# Morphing Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:morphing_petal>, [<ore:petalLightGray>,<ore:petalCyan>,<ore:petalGreen>,<ore:petalRed>]);
+
+# Orechid Petallius
+mods.botania.Apothecary.addRecipe(<contenttweaker:morphing_petal>, [<ore:petalLightGray>,<ore:petalCyan>,<ore:petalGreen>,<ore:petalRed>]);
+
+# Orechid Ignem Petallius
+mods.botania.Apothecary.addRecipe(<contenttweaker:orechid_ignem_petallius>, [<ore:petalRed>,<ore:petalLightBlue>,<ore:petalBrown>,<ore:petalRed>]);
+
+# Petal of the Hyacidus
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_hyacidus>, [<ore:petalPurple>,<ore:petalPurple>,<ore:petalPurple>,<ore:petalMagenta>]);
+
+# Pollinating Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:pollinating_petal>, [<ore:petalRed>,<ore:petalRed>,<ore:petalPink>,<ore:petalYellow>]);
+
+# Medomune Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:medumone_petal>, [<ore:petalBrown>,<ore:petalBrown>,<ore:petalBrown>,<ore:petalGray>]);
+
+# Petal of the Fallen Kanade
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_fallen_kanade>, [<ore:petalWhite>,<ore:petalWhite>,<ore:petalWhite>,<ore:petalLime>]);
+
+# Loonium Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:loonium_petal>, [<ore:petalGreen>,<ore:petalGreen>,<ore:petalBrown>,<ore:petalWhite>]);
+
+# Petal of the Vinculotus
+mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_vinculotus>, [<ore:petalWhite>,<ore:petalLightBlue>,<ore:petalLightBlue>,<ore:petalGreen>]);
+
+# Spectralight Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:spectralight_petal>, [<ore:petalWhite>,<ore:petalWhite>,<ore:petalLightGray>,<ore:petalLime>]);
+
+# Blubbing Petal
+mods.botania.Apothecary.addRecipe(<contenttweaker:blubbing_petal>, [<ore:petalLime>,<ore:petalCyan>,<ore:petalLightBlue>,<ore:petalGreen>]);
+
 # Omothol Soul
 recipes.addShaped(<contenttweaker:omothol_soul>, [[<abyssalcraft:omotholflesh>,<abyssalcraft:eldritchscale>,<abyssalcraft:omotholflesh>],[<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>,<abyssalcraft:eldritchscale>],[<abyssalcraft:omotholflesh>,<abyssalcraft:eldritchscale>,<abyssalcraft:omotholflesh>]]);
 
@@ -847,9 +904,9 @@ recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingp
 recipes.addShapeless(<quantumflux:craftingpiece:6> * 9, [<contenttweaker:hyper_diamond_block>]);
 
 # Magical Slate
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_slate>, [<contenttweaker:purified_slate>,<botania:quartztypelavender>,<botania:storage:2>,<botania:manaresource:9>], 256, 256);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_tablet>, [<contenttweaker:purified_slate>,<botania:quartztypelavender>,<botania:storage:2>,<ore:stoneMetamorphic>], 256, 256);
 
 # Mystical Slate
-mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_slate>, <contenttweaker:magical_slate>, 50000);
+mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contenttweaker:magical_tablet>, 50000);
 
 print("ENDING ContentTweakerRecipes.zs");
