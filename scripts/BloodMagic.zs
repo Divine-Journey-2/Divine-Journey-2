@@ -255,11 +255,11 @@ recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,nul
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);
-recipes.addShaped(<bloodmagic:path>, [[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>],[<evilcraft:undead_plank>,blood_orb_at_least_tier_2,<evilcraft:undead_plank>],[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>]]);
+recipes.addShaped(<bloodmagic:path>, [[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>],[<evilcraft:undead_plank>,blood_orb_at_least_tier_2.reuse(),<evilcraft:undead_plank>],[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>]]);
 
 # Stone Brick Path
 recipes.remove(<bloodmagic:path:2>);
-recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>],[<bloodmagic:path>,blood_orb_at_least_tier_3,<bloodmagic:path>],[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>]]);
+recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>],[<bloodmagic:path>,blood_orb_at_least_tier_3.reuse(),<bloodmagic:path>],[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>]]);
 
 # Binding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
@@ -476,7 +476,7 @@ addBloodMagicSigilRecipe(<bloodmagic:sigil_frost>, <bloodmagic:component:32>, <b
 
 # Ritual Tinkerer
 recipes.remove(<bloodmagic:ritual_reader>);
-recipes.addShapedMirrored(<bloodmagic:ritual_reader>, [[null,<contenttweaker:virtus>,null],[null,<bloodmagic:ritual_controller>,<contenttweaker:virtus>],[blood_orb_at_least_tier_4,null,null]]);
+recipes.addShapedMirrored(<bloodmagic:ritual_reader>, [[null,<contenttweaker:virtus>,null],[null,<bloodmagic:ritual_controller>,<contenttweaker:virtus>],[blood_orb_at_least_tier_4.reuse(),null,null]]);
 
 # Blood Letter's Pack
 recipes.remove(<bloodmagic:pack_self_sacrifice>);
@@ -523,7 +523,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:29>, [<minecraft:ne
 
 # Living Armor Training Bracelet
 recipes.remove(<bloodmagic:upgrade_trainer>);
-recipes.addShaped(<bloodmagic:upgrade_trainer>, [[null,<contenttweaker:power_core>,null],[<contenttweaker:power_core>,blood_orb_at_least_tier_4,<contenttweaker:power_core>],[null,<contenttweaker:power_core>,null]]);
+recipes.addShaped(<bloodmagic:upgrade_trainer>, [[null,<contenttweaker:power_core>,null],[<contenttweaker:power_core>,blood_orb_at_least_tier_4.reuse(),<contenttweaker:power_core>],[null,<contenttweaker:power_core>,null]]);
 
 # Demon Blood Shard
 mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<botania:rune:13>,<botania:rune:11>,<botania:rune:15>,<contenttweaker:rune_of_deception>], 50000);
@@ -547,7 +547,7 @@ recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,
 
 # Obsidian Brick Path
 recipes.remove(<bloodmagic:path:6>);
-recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>],[<contenttweaker:compressed_obsidian1>,blood_orb_at_least_tier_4,<contenttweaker:compressed_obsidian1>],[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>]]);
+recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>],[<contenttweaker:compressed_obsidian1>,blood_orb_at_least_tier_4.reuse(),<contenttweaker:compressed_obsidian1>],[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>]]);
 
 # Weak Blood Shard tooltip
 <bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));

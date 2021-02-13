@@ -40,10 +40,11 @@ global divinerpg_dimension_names_upper as string[] = ["Eden", "Wildwood", "Apala
 global dimensional_stones as IItemStack[] = [<divinerpg:frozen_stone>,<divinerpg:twilight_stone>,<aether_legacy:holystone:*>,<atum:limestone>,<erebus:umberstone>,<abyssalcraft:stone:1>,<abyssalcraft:stone:2>,<abyssalcraft:stone:3>];
 
 # Blood Orb Variables
-global blood_orb_at_least_tier_1 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
-global blood_orb_at_least_tier_2 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
-global blood_orb_at_least_tier_3 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
-global blood_orb_at_least_tier_4 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
-global blood_orb_at_least_tier_5 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"});
+global blood_orb_at_least_tier_1 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
+global blood_orb_at_least_tier_2 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
+global blood_orb_at_least_tier_3 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
+global blood_orb_at_least_tier_4 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
+global blood_orb_at_least_tier_5 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
+global blood_orb_at_least_tier_6 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
 
 print("ENDING GlobalVariables.zs");
