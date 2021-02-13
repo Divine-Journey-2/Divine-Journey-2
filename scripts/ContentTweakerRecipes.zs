@@ -897,14 +897,14 @@ mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<botania:r
 <ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
 
 # Purified Slate
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_slate>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<botania:rune:12>], 60000, 400, 5);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_tablet>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<botania:rune:12>], 60000, 400, 5);
 
 # Hyper Diamond Block
 recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>]]);
 recipes.addShapeless(<quantumflux:craftingpiece:6> * 9, [<contenttweaker:hyper_diamond_block>]);
 
 # Magical Slate
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_tablet>, [<contenttweaker:purified_slate>,<botania:quartztypelavender>,<botania:storage:2>,<ore:stoneMetamorphic>], 256, 256);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_tablet>, [<contenttweaker:purified_tablet>,<botania:quartztypelavender>,<botania:storage:2>,<ore:stoneMetamorphic>], 256, 256);
 
 # Mystical Slate
 mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contenttweaker:magical_tablet>, 50000);
