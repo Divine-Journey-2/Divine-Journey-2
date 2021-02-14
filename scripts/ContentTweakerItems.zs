@@ -5,6 +5,9 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.IItemRightClick;
 import mods.contenttweaker.Commands;
+import mods.contenttweaker.ItemFood;
+import mods.contenttweaker.IItemFoodEaten;
+import mods.contenttweaker.MutableItemStack;
 
 print("STARTING ContentTweakerItems.zs");
 
@@ -660,5 +663,15 @@ var mystical_tablet = VanillaFactory.createItem("mystical_tablet");
 mystical_tablet.register();
 var rainbow_tablet = VanillaFactory.createItem("rainbow_tablet");
 rainbow_tablet.register();
+var omothol_teleporter = VanillaFactory.createItem("omothol_teleporter");
+omothol_teleporter.rarity = "RARE";
+omothol_teleporter.maxStackSize = 1;
+omothol_teleporter.itemRightClick = function(stack, world, player, hand) {
+	player.executeCommand("tpx @p 0 128 0 52");
+	#stack.noReturn();
+	stack.transformReplace(null);
+    return "Pass";
+};
+omothol_teleporter.register();
 
 print("ENDING ContentTweakerItems.zs");

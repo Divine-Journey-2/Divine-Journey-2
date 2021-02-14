@@ -47,4 +47,12 @@ global blood_orb_at_least_tier_4 as IIngredient = <bloodmagic:blood_orb>.withTag
 global blood_orb_at_least_tier_5 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
 global blood_orb_at_least_tier_6 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});
 
+# Custom Quartz Dust & Fluix OreDict's
+global oreAE2Dust as IOreDictEntry = <ore:dustAE2>;
+oreAE2Dust.addItems([<appliedenergistics2:material:2>, <appliedenergistics2:material:3>]);
+global allFluix as IOreDictEntry = <ore:allFluix>;
+allFluix.addItems([<appliedenergistics2:material:7>, <appliedenergistics2:material:12>]);
+global allCertus as IOreDictEntry = <ore:allCertus>;
+allCertus.addItems([<appliedenergistics2:material>, <appliedenergistics2:material:1>, <appliedenergistics2:material:10>]);
+
 print("ENDING GlobalVariables.zs");

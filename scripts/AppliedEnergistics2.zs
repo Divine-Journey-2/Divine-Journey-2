@@ -26,14 +26,6 @@ recipes.remove(<appliedenergistics2:tiny_tnt>);
 recipes.addShapeless(<appliedenergistics2:tiny_tnt> * 4, [<minecraft:tnt>]);
 recipes.addShaped(<minecraft:tnt>, [[<appliedenergistics2:tiny_tnt>,<appliedenergistics2:tiny_tnt>],[<appliedenergistics2:tiny_tnt>,<appliedenergistics2:tiny_tnt>]]);
 
-# Custom Quartz Dust & Fluix OreDict's
-val oreAE2Dust = <ore:dustAE2>;
-oreAE2Dust.addItems([<appliedenergistics2:material:2>, <appliedenergistics2:material:3>]);
-val allFluix = <ore:allFluix>;
-allFluix.addItems([<appliedenergistics2:material:7>, <appliedenergistics2:material:12>]);
-var allCertus = <ore:allCertus>;
-allCertus.addItems([<appliedenergistics2:material>, <appliedenergistics2:material:1>, <appliedenergistics2:material:10>]);
-
 # Quartz Fiber
 recipes.remove(<appliedenergistics2:part:140>);
 recipes.addShaped(<appliedenergistics2:part:140> * 2, [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[oreAE2Dust,oreAE2Dust,oreAE2Dust],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>]]);
@@ -377,6 +369,10 @@ recipes.addShaped(<appliedenergistics2:part:340>, [[null,<contenttweaker:methodo
 # Interface Terminal
 recipes.remove(<appliedenergistics2:part:480>);
 recipes.addShaped(<appliedenergistics2:part:480>, [[null,<contenttweaker:methodology_processor>,null],[<appliedenergistics2:interface>,<appliedenergistics2:part:360>,<appliedenergistics2:interface>],[null,<contenttweaker:methodology_processor>,null]]);
+
+# ME Fluid Level Emitter
+recipes.remove(<appliedenergistics2:part:281>);
+recipes.addShaped(<appliedenergistics2:part:281>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:operation_processor>]]);
 
 # Press Duplication recipes
 val ae2_presses = [<appliedenergistics2:material:13>,<appliedenergistics2:material:14>,<appliedenergistics2:material:15>,<appliedenergistics2:material:19>] as IItemStack[];

@@ -1220,7 +1220,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Dark cover? Must be a thriller!",
-          "desc:8": "No Description"
+          "desc:8": "Use any 4 Engraved Coins to upgrade your Necronomicon to the Omothol version!"
         }
       },
       "tasks:9": {
@@ -1248,11 +1248,54 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 10,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -4822218405563622703,
+                  "AS_Amulet_HolderMost:4": 433871007885182809
+                }
+              },
+              "id:8": "thermalexpansion:satchel",
+              "Count:3": 1,
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "§r§9Omothol Multiplayer Pack"
+                },
+                "Inventory:10": {
+                  "Slot4:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "contenttweaker:omothol_teleporter",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  }
+                },
+                "Accessible:3": 1
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "21:10": {
       "questID:3": 21,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        22
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -1275,7 +1318,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The writing\u0027s on the wall",
-          "desc:8": "No Description"
+          "desc:8": "Craft an Engraver! Place some kind of a Coin Engraving in the bottom slot and a (blank) Coin in the top slot to engrave it with the face of one of the Evil Gods! Lovely."
         }
       },
       "tasks:9": {
@@ -1324,7 +1367,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Compressed Obsidian\u0027s got nothin\u0027 on this!",
-          "desc:8": "No Description"
+          "desc:8": "Mine up some Ethaxium! ... Which to be fair, is easier said than done. Why? Weeeelll, you\u0027ll find out.\n\nReminder: you might want to use your Blood Magic Bound Pickaxe. That\u0027s the only tool at this point that can mine it up."
         }
       },
       "tasks:9": {
@@ -1373,7 +1416,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tear it off!",
-          "desc:8": "No Description"
+          "desc:8": "Use your previous Staff of Rending and collect some Omothol Ghoul Flesh to craft a Skin of Omothol!"
         }
       },
       "tasks:9": {
@@ -1427,7 +1470,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "From the depths... Rise!",
-          "desc:8": "No Description"
+          "desc:8": "Fill up your Abyssalnomicon entirely! Once you\u0027ve done so, jump down into the void in Omothol to enter the final AbyssalCraft dimension, the Dark Realm! To get back, simply Right Click with your Key in the air, or Right Click on the ground to make a portal.\n\nYou have one final objective in AbyssalCraft: Summon and defeat Sacthoth, Harbinger of Doom!\n\nTo do so, open your Abyssalnomicon, go to the Abyssalnomicon section, then Rituals, and scroll all the way to the last page (page 21), and perform the Ritual described there: the Ritual of Shadows in the Dark Realm!\n\nAfter succesfully summoning and defeating Sacthoth, he will drop his sword, Sacthoth\u0027s Soul Reaper Blade. By slaying mosters with this sword, it\u0027ll collect Souls and get stronger and stronger.\n\nThough you might want to remove these souls and see what effect that\u0027ll have..."
         }
       },
       "tasks:9": {
@@ -1487,7 +1530,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The collection\u0027s complete",
-          "desc:8": "No Description"
+          "desc:8": "Upgrade your Necronomicon to the final tier: The Abyssalnomicon!\n\nAll dark knowledge is unlocked...\n\nWhat have you done?"
         }
       },
       "tasks:9": {
@@ -2477,7 +2520,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Rend-ezvous with Omothol\u0027s creatures",
-          "desc:8": "No Description"
+          "desc:8": "Craft the final AbyssalCraft Staff of Rending, the Omothol variant!"
         }
       },
       "tasks:9": {
@@ -3008,7 +3051,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Gatekeeper\u0027s Promise",
-          "desc:8": "No Description"
+          "desc:8": "Fly to the center of the world (x\u003d0, z\u003d0) in Omothol to find the Omothol Dungeon! If you\u0027re on a large Multiplayer server and your portal is very far away, feel free to use the Omothol Teleporter provided in the last quest!\n\nEnter the Dungeon. You\u0027ll find a room where you can perform Rituals if you wish. Once you\u0027re ready, go up to the second floor and find J\u0027zahar, the Gatekeeper. Fight him!\n\nOnce he dies, he\u0027ll pull you in and EXPLODE! It probably goes without saying, but... STAY AWAY from the explosion! Then he\u0027ll drop the required item for this quest, the Essence of the Gatekeeper."
         }
       },
       "tasks:9": {
@@ -75274,15 +75317,15 @@
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 26,
-          "y:3": 22,
+          "x:3": 55,
+          "y:3": 23,
           "id:3": 21,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 54,
-          "y:3": 21,
+          "x:3": 26,
+          "y:3": 23,
           "id:3": 22,
           "sizeY:3": 24
         },
@@ -75302,8 +75345,8 @@
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 82,
-          "y:3": 21,
+          "x:3": 83,
+          "y:3": 23,
           "id:3": 25,
           "sizeY:3": 24
         },

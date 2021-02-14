@@ -157,10 +157,10 @@ Inscriber.addRecipe(<contenttweaker:printed_estimation_circuit>, <contenttweaker
 Inscriber.addRecipe(<contenttweaker:printed_methodolgy_circuit>, <plustic:osmiridiumingot>, true, <contenttweaker:inscriber_methodology_press>);
 
 # Printed Clearance Circuit
-Inscriber.addRecipe(<contenttweaker:printed_clearance_circuit>, <divinerpg:apalachia_chunk>, true, <contenttweaker:inscriber_clearance_press>);
+Inscriber.addRecipe(<contenttweaker:printed_clearance_circuit>, <botania:manaresource:7>, true, <contenttweaker:inscriber_clearance_press>);
 
 # Printed Scheduling Circuit
-Inscriber.addRecipe(<contenttweaker:printed_scheduling_circuit>, <divinerpg:mortum_chunk>, true, <contenttweaker:inscriber_scheduling_press>);
+Inscriber.addRecipe(<contenttweaker:printed_scheduling_circuit>, <draconicevolution:draconic_ingot>, true, <contenttweaker:inscriber_scheduling_press>);
 
 # Operation Processor
 Inscriber.addRecipe(<contenttweaker:operation_processor>, <minecraft:redstone>, false, <contenttweaker:printed_operation_circuit>, <appliedenergistics2:material:20>);
@@ -912,4 +912,17 @@ mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contentt
 # Rainbow Tablet
 recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbow_slate>,null],[<contenttweaker:mystical_tablet>,blood_orb_at_least_tier_6.reuse(),<contenttweaker:mystical_tablet>],[null,<contenttweaker:rainbow_slate>,null]]);
 
+# Omothol Teleporter
+<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("For multiplayer purposes:")));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("you'd have to fly a long way to reach the Omothol "));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("Dungeon, then simply Right Click with this item"));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("to teleport to (0,128,0)."));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("or Hang Glider equipped before you do this."));
+/*
+<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("* May or may not cause horrible nightmares from")));
+<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  this point on in your life. Please consult your")));
+<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  local psychiatrist for further information.")));
+*/
 print("ENDING ContentTweakerRecipes.zs");
