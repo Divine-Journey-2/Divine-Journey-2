@@ -295,6 +295,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_stone.setToolClass(null);
 	dim_stone.setToolLevel(100);
 	dim_stone.setWitherProof(true);
+	dim_stone.setToolLevel(16777215);
 	dim_stone.setBlockSoundType(<soundtype:stone>);
 	dim_stone.register();
 
@@ -304,6 +305,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_bricks.setToolClass(null);
 	dim_bricks.setToolLevel(100);
 	dim_bricks.setWitherProof(true);
+	dim_bricks.setToolLevel(16777215);
 	dim_bricks.setBlockSoundType(<soundtype:stone>);
 	dim_bricks.register();
 
@@ -313,6 +315,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_pillar.setToolClass(null);
 	dim_pillar.setToolLevel(100);
 	dim_pillar.setWitherProof(true);
+	dim_pillar.setToolLevel(16777215);
 	dim_pillar.setBlockSoundType(<soundtype:stone>);
 	dim_pillar.register();
 
@@ -322,6 +325,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_floor.setToolClass(null);
 	dim_floor.setToolLevel(100);
 	dim_floor.setWitherProof(true);
+	dim_floor.setToolLevel(16777215);
 	dim_floor.setBlockSoundType(<soundtype:stone>);
 	dim_floor.register();
 
@@ -331,6 +335,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_roof.setToolClass(null);
 	dim_roof.setToolLevel(100);
 	dim_roof.setWitherProof(true);
+	dim_roof.setToolLevel(16777215);
 	dim_roof.setBlockSoundType(<soundtype:stone>);
 	dim_roof.register();
 
@@ -344,6 +349,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_glass.setFullBlock(false);
 	dim_glass.setToolLevel(100);
 	dim_glass.setWitherProof(true);
+	dim_glass.setToolLevel(16777215);
 	dim_glass.setBlockSoundType(<soundtype:glass>);
 	dim_glass.register();
 
@@ -353,6 +359,7 @@ for dim in divinerpg_dimension_names_lower {
 	dim_door.setToolClass(null);
 	dim_door.setToolLevel(100);
 	dim_door.setWitherProof(true);
+	dim_door.setToolLevel(16777215);
 	dim_door.setBlockSoundType(<soundtype:metal>);
 	dim_door.register();
 

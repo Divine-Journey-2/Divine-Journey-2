@@ -8,6 +8,8 @@ import mods.contenttweaker.Commands;
 import mods.contenttweaker.ItemFood;
 import mods.contenttweaker.IItemFoodEaten;
 import mods.contenttweaker.MutableItemStack;
+import mods.contenttweaker.Hand;
+import mods.contenttweaker.World;
 
 print("STARTING ContentTweakerItems.zs");
 
@@ -397,35 +399,35 @@ unholy_essence.register();
 var eden_door_key = VanillaFactory.createItem("eden_door_key");
 eden_door_key.maxStackSize = 1;
 eden_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:eden_door", player, world);
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:eden_door", player, world, false, true);
     return "Pass";
 };
 eden_door_key.register();
 var wildwood_door_key = VanillaFactory.createItem("wildwood_door_key");
 wildwood_door_key.maxStackSize = 1;
 wildwood_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:wildwood_door", player, world);
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:wildwood_door", player, world, false, true);
     return "Pass";
 };
 wildwood_door_key.register();
 var apalachia_door_key = VanillaFactory.createItem("apalachia_door_key");
 apalachia_door_key.maxStackSize = 1;
 apalachia_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door", player, world);
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door", player, world, false, true);
     return "Pass";
 };
 apalachia_door_key.register();
 var skythern_door_key = VanillaFactory.createItem("skythern_door_key");
 skythern_door_key.maxStackSize = 1;
 skythern_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:skythern_door", player, world);
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:skythern_door", player, world, false, true);
     return "Pass";
 };
 skythern_door_key.register();
 var mortum_door_key = VanillaFactory.createItem("mortum_door_key");
 mortum_door_key.maxStackSize = 1;
 mortum_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:mortum_door", player, world);
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:mortum_door", player, world, false, true);
     return "Pass";
 };
 mortum_door_key.register();
@@ -666,11 +668,14 @@ rainbow_tablet.register();
 var omothol_teleporter = VanillaFactory.createItem("omothol_teleporter");
 omothol_teleporter.rarity = "RARE";
 omothol_teleporter.maxStackSize = 1;
+omothol_teleporter.maxDamage = 1;
 omothol_teleporter.itemRightClick = function(stack, world, player, hand) {
-	player.executeCommand("tpx @p 0 128 0 52");
-	#stack.noReturn();
-	stack.transformReplace(null);
-    return "Pass";
+    if(world.remote) {
+        return "PASS";
+    }
+    stack.damage(2, player);
+	player.executeCommand("tpx @p 0 80 0 52");
+    return "SUCCESS";
 };
 omothol_teleporter.register();
 

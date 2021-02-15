@@ -78,6 +78,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:blood_infuser>.withTag(
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:dark_power_gem>);
 mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:dark_gem>, <liquid:evilcraftblood> * 1000, 0, <evilcraft:dark_power_gem>, 100, 1);
 mods.thermalexpansion.Transposer.removeFillRecipe(<evilcraft:dark_gem>, <liquid:evilcraftblood>);
+<evilcraft:dark_power_gem>.maxStackSize = 64;
 
 # Dark Power Gem Block
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:dark_power_gem_block>);

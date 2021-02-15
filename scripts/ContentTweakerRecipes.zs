@@ -904,7 +904,7 @@ recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingp
 recipes.addShapeless(<quantumflux:craftingpiece:6> * 9, [<contenttweaker:hyper_diamond_block>]);
 
 # Magical Tablet
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_tablet>, [<contenttweaker:purified_tablet>,<botania:quartztypelavender>,<botania:storage:2>,<ore:stoneMetamorphic>], 256, 256);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:magical_tablet>, [<contenttweaker:purified_tablet>,<botania:quartztypelavender>,<botania:storage:2>,<ore:stoneBotaniaMetamorphic>], 256, 256);
 
 # Mystical Tablet
 mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contenttweaker:magical_tablet>, 50000);
@@ -913,11 +913,11 @@ mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contentt
 recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbow_slate>,null],[<contenttweaker:mystical_tablet>,blood_orb_at_least_tier_6.reuse(),<contenttweaker:mystical_tablet>],[null,<contenttweaker:rainbow_slate>,null]]);
 
 # Omothol Teleporter
-<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("For multiplayer purposes:")));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("you'd have to fly a long way to reach the Omothol "));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("Dungeon, then simply Right Click with this item"));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("to teleport to (0,128,0)."));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("to teleport to (0,80,0)."));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("or Hang Glider equipped before you do this."));
 /*

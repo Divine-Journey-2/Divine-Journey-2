@@ -31,6 +31,6 @@ recipes.addShapeless(<integratedtunnels:part_exporter_world_fluid_item>, [<integ
 
 # Player Simulator
 recipes.remove(<integratedtunnels:part_player_simulator_item>);
-recipes.addShaped(<integratedtunnels:part_player_simulator_item>, [[<alchemistry:ingot:3>,<integratedtunnels:part_importer_world_block_item>,<alchemistry:ingot:3>],[<integratedtunnels:part_importer_world_item_item>,<extrautils2:user>,<integratedtunnels:part_exporter_world_item_item>],[<alchemistry:ingot:3>,<integratedtunnels:part_exporter_world_block_item>,<alchemistry:ingot:3>]]);
+recipes.addShapedMirrored(<integratedtunnels:part_player_simulator_item>, [[<alchemistry:ingot:3>,<integratedtunnels:part_importer_world_block_item>,<alchemistry:ingot:3>],[<integratedtunnels:part_importer_world_item_item>,<extrautils2:user>,<integratedtunnels:part_exporter_world_item_item>],[<alchemistry:ingot:3>,<integratedtunnels:part_exporter_world_block_item>,<alchemistry:ingot:3>]]);
 
 print("ENDING IntegratedTunnels.zs");

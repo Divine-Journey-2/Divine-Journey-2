@@ -20,6 +20,6 @@ IEAlloySmelter.addRecipe(<plustic:osmiridiumingot> * 2, <mekanism:ingot:1>, <the
 mods.thermalexpansion.InductionSmelter.addRecipe(<plustic:osmiridiumingot> * 2, <mekanism:ingot:1>, <thermalfoundation:material:135>, 4000);
 
 # Mirion Ingot
-mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot>, <minecraft:glass>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
+mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot> * 4, <minecraft:glass>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
 
 print("ENDING PlusTiC.zs");
