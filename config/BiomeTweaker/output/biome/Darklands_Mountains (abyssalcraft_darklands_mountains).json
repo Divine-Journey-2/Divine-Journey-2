@@ -1,6 +1,6 @@
 
 {
-  "ID": 123,
+  "ID": 126,
   "Name": "Darklands Mountains",
   "Resource Location": "abyssalcraft:darklands_mountains",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklandsMountains",
@@ -130,12 +130,6 @@
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityShadowBeast",
       "Weight": 40,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

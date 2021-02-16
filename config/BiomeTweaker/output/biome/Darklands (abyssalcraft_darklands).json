@@ -1,6 +1,6 @@
 
 {
-  "ID": 119,
+  "ID": 122,
   "Name": "Darklands",
   "Resource Location": "abyssalcraft:darklands",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklands",
@@ -130,12 +130,6 @@
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityShadowBeast",
       "Weight": 20,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

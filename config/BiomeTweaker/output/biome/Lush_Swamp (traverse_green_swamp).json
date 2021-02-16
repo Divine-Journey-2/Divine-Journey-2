@@ -1,6 +1,6 @@
 
 {
-  "ID": 99,
+  "ID": 102,
   "Name": "Lush Swamp",
   "Resource Location": "traverse:green_swamp",
   "Class": "prospector.traverse.world.biomes.BiomeLushSwamp",
@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "WET",
-    "SWAMP",
-    "LUSH"
+    "LUSH",
+    "SWAMP"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -112,12 +112,6 @@
     },
     {
       "Entity Class": "net.minecraft.entity.monster.EntitySlime",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1

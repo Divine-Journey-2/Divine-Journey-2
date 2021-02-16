@@ -1,6 +1,6 @@
 
 {
-  "ID": 108,
+  "ID": 111,
   "Name": "Cliffs",
   "Resource Location": "traverse:cliffs",
   "Class": "prospector.traverse.world.biomes.BiomeCliffs",
@@ -20,9 +20,9 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
+    "MOUNTAIN",
     "COLD",
-    "MOUNTAIN"
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -76,12 +76,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

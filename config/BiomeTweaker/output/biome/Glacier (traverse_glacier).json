@@ -1,6 +1,6 @@
 
 {
-  "ID": 109,
+  "ID": 112,
   "Name": "Glacier",
   "Resource Location": "traverse:glacier",
   "Class": "prospector.traverse.world.biomes.BiomeGlacier",
@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": true,
   "Dictionary Types": [
+    "MOUNTAIN",
     "COLD",
-    "SNOWY",
-    "MOUNTAIN"
+    "SNOWY"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [
@@ -103,18 +103,6 @@
       "Weight": 80,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityIceWraith",
-      "Weight": 3,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "thaumcraft.common.entities.monster.EntityBrainyZombie",

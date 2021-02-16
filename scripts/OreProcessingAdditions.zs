@@ -374,7 +374,7 @@ IECrusher.removeRecipe(<bewitchment:amethyst>);
 IECrusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <ore:oreAmethyst>, 4000, null, 0.15);
 
 # Magic Crystal
-addOreToGemProcessing(<ebwizardry:crystal_ore>, <ebwizardry:magic_crystal>, null, 2, 4);
+#addOreToGemProcessing(<ebwizardry:crystal_ore>, <ebwizardry:magic_crystal>, null, 2, 4);
 
 # Erebus Gneiss -> Gneiss Rock
 addOreToGemProcessing(<erebus:gneiss>, <erebus:materials:47>, null, 4, 4);
@@ -566,5 +566,8 @@ mods.thermalexpansion.Pulverizer.removeRecipe(<mysticalagriculture:end_inferium_
 mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:crafting> * 5, <mysticalagriculture:end_inferium_ore>, 4000);
 mods.enderio.SagMill.removeRecipe(<mysticalagriculture:end_inferium_ore>);
 mods.enderio.SagMill.addRecipe([<mysticalagriculture:crafting> * 5, <minecraft:end_stone>], [1, 0.15], <mysticalagriculture:end_inferium_ore>, "MULTIPLY_OUTPUT");
+
+# Salis Mundus
+addMaterialToDustCrushing(<contenttweaker:rainbow_tablet>, <thaumcraft:salis_mundus>);
 
 print("ENDING OreProcessingAdditions.zs");

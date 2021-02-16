@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DRY",
+    "MOUNTAIN",
+    "SPARSE",
     "RARE",
     "HOT",
-    "SPARSE",
-    "MOUNTAIN"
+    "DRY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -107,12 +107,6 @@
       "Weight": 30,
       "Min Group Count": 1,
       "Max Group Count": 2
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "divinerpg.objects.entities.entity.vanilla.EntityMiner",

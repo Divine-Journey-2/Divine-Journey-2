@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": true,
   "Dictionary Types": [
-    "FOREST",
-    "RARE",
-    "COLD",
-    "SNOWY",
     "MOUNTAIN",
-    "CONIFEROUS"
+    "COLD",
+    "CONIFEROUS",
+    "RARE",
+    "FOREST",
+    "SNOWY"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -215,12 +215,6 @@
       "Entity Class": "com.bewitchment.common.entity.spirit.demon.EntityDruden",
       "Weight": 1,
       "Min Group Count": 0,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
       "Max Group Count": 1
     },
     {

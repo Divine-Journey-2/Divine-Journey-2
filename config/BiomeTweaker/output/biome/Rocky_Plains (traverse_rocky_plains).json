@@ -1,6 +1,6 @@
 
 {
-  "ID": 118,
+  "ID": 121,
   "Name": "Rocky Plains",
   "Resource Location": "traverse:rocky_plains",
   "Class": "prospector.traverse.world.biomes.BiomeRockyPlains",
@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "SPARSE",
     "PLAINS",
-    "HILLS",
-    "SPARSE"
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -125,12 +125,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

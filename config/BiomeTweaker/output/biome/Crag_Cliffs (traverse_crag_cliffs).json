@@ -1,6 +1,6 @@
 
 {
-  "ID": 114,
+  "ID": 117,
   "Name": "Crag Cliffs",
   "Resource Location": "traverse:crag_cliffs",
   "Class": "prospector.traverse.world.biomes.BiomeCragCliffs",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "COLD",
-    "DEAD"
+    "DEAD",
+    "COLD"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -82,12 +82,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

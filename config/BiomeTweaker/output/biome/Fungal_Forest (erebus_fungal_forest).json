@@ -26,14 +26,7 @@
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
-  "Spawnable Monsters": [
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    }
-  ],
+  "Spawnable Monsters": [],
   "Spawnable Water Creatures": [],
   "Spawnable Cave Creatures": [],
   "Spawn Biome": false,

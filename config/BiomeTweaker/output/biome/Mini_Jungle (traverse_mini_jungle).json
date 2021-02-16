@@ -1,6 +1,6 @@
 
 {
-  "ID": 97,
+  "ID": 100,
   "Name": "Mini Jungle",
   "Resource Location": "traverse:mini_jungle",
   "Class": "prospector.traverse.world.biomes.BiomeMiniJungle",
@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "WET",
-    "HOT",
+    "JUNGLE",
     "DENSE",
-    "JUNGLE"
+    "WET",
+    "HOT"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -125,12 +125,6 @@
     },
     {
       "Entity Class": "net.minecraft.entity.passive.EntityOcelot",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1

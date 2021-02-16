@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "ATUM",
-    "DRY",
-    "HOT",
-    "SPARSE",
     "MOUNTAIN",
+    "SPARSE",
+    "ATUM",
+    "HOT",
+    "DRY",
     "SANDY"
   ],
   "BiomeManager Entries": {},
@@ -108,12 +108,6 @@
       "Weight": 20,
       "Min Group Count": 1,
       "Max Group Count": 3
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "divinerpg.objects.entities.entity.vanilla.EntityMiner",

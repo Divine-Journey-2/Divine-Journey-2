@@ -340,12 +340,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:crystallizer>,
 
 # Dread-plagued Gateway Key
 <abyssalcraft:dreadkey>.maxStackSize = 1;
-<abyssalcraft:dreadkey>.addTooltip(format.white("Dropped by ") + format.red("Cha'goroth") + format.white(" at the end of the ") + format.red("Dreadlands"));
+<abyssalcraft:dreadkey>.addTooltip(format.white("Dropped by ") + format.red("Cha'garoth") + format.white(" at the end of the ") + format.red("Dreadlands"));
 <abyssalcraft:dreadkey>.addTooltip(format.white("dungeon. You can enter it by placing down the "));
-<abyssalcraft:dreadkey>.addTooltip(format.red("Altar of Cha'goroth (bottom & top)") + format.white(" at Y=40 in"));
+<abyssalcraft:dreadkey>.addTooltip(format.red("Altar of Cha'garoth (bottom & top)") + format.white(" at Y=40 in"));
 <abyssalcraft:dreadkey>.addTooltip(format.white("in a Dreadlands Mountains biome."));
 
-# Cha'goroth's R'lyehian Gateway Key
+# Cha'garoth's R'lyehian Gateway Key
 mods.abyssalcraft.Transmutator.removeTransmutationInput(<abyssalcraft:dreadkey>);
 mods.bloodmagic.TartaricForge.addRecipe(<abyssalcraft:gatewaykeyjzh>, [<abyssalcraft:dreadkey>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:crystallized_mana_cluster>,<abyssalcraft:platec>], 2048, 2048);
 

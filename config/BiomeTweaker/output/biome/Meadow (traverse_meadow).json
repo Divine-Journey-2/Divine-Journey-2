@@ -1,6 +1,6 @@
 
 {
-  "ID": 98,
+  "ID": 101,
   "Name": "Meadow",
   "Resource Location": "traverse:meadow",
   "Class": "prospector.traverse.world.biomes.BiomeMeadow",
@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "WET",
-    "PLAINS",
-    "LUSH"
+    "LUSH",
+    "PLAINS"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -113,12 +113,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

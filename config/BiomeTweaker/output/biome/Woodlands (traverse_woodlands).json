@@ -1,6 +1,6 @@
 
 {
-  "ID": 96,
+  "ID": 99,
   "Name": "Woodlands",
   "Resource Location": "traverse:woodlands",
   "Class": "prospector.traverse.world.biomes.BiomeWoodlands",
@@ -105,12 +105,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

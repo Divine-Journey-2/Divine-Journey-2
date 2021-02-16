@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "END",
-    "MAGICAL",
-    "SPOOKY"
+    "SPOOKY",
+    "MAGICAL"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
@@ -35,12 +35,6 @@
     },
     {
       "Entity Class": "thaumcraft.common.entities.monster.EntityEldritchGuardian",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
       "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1

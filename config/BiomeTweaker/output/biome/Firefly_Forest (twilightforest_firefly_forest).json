@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "TWILIGHT",
-    "FOREST",
-    "LUSH"
+    "LUSH",
+    "FOREST"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -82,12 +82,6 @@
     }
   ],
   "Spawnable Monsters": [
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
     {
       "Entity Class": "divinerpg.objects.entities.entity.vanilla.EntityMiner",
       "Weight": 5,

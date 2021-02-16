@@ -21,8 +21,8 @@
   "Enable Snow": true,
   "Dictionary Types": [
     "WATER",
-    "OCEAN",
     "COLD",
+    "OCEAN",
     "SNOWY"
   ],
   "BiomeManager Entries": {},
@@ -130,18 +130,6 @@
       "Weight": 6,
       "Min Group Count": 1,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityIceWraith",
-      "Weight": 3,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityDepthsGhoul",

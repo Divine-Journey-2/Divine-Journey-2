@@ -1,6 +1,6 @@
 
 {
-  "ID": 115,
+  "ID": 118,
   "Name": "Desert Shrubland",
   "Resource Location": "traverse:desert_shrubland",
   "Class": "prospector.traverse.world.biomes.BiomeDesertShrubland",
@@ -20,10 +20,10 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DRY",
+    "DEAD",
     "HOT",
-    "SANDY",
-    "DEAD"
+    "DRY",
+    "SANDY"
   ],
   "BiomeManager Entries": {
     "DESERT Weights": [
@@ -98,12 +98,6 @@
       "Weight": 80,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "thaumcraft.common.entities.monster.EntityBrainyZombie",

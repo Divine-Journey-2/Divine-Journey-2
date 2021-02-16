@@ -1,6 +1,6 @@
 
 {
-  "ID": 95,
+  "ID": 98,
   "Name": "Autumnal Woods",
   "Resource Location": "traverse:autumnal_woods",
   "Class": "prospector.traverse.world.biomes.BiomeAutumnalWoods",
@@ -111,12 +111,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

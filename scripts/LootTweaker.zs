@@ -94,7 +94,7 @@ for pool in jungle_temple_pools_to_clear {
 	clear_pool("minecraft:chests/jungle_temple", pool);
 }
 
-clear_pool("minecraft:chests/jungle_temple_dispenser", "ebwizardry_ebwizardry_additional_dispenser_loot");
+#clear_pool("minecraft:chests/jungle_temple_dispenser", "ebwizardry_ebwizardry_additional_dispenser_loot");
 
 remove_entry("minecraft:chests/nether_bridge", "main", "rftoolsdim:parcel");
 val nether_bridge_pools_to_clear = ["xuLootDropOfEvil", "bewitchment_nether_materials_pool", "bewitchment_materials_pool"] as string[];
@@ -143,9 +143,11 @@ var vanilla_eb_wizardry_injected_tables = ["blaze", "cave_spider", "creeper", "e
 										"evocation_illager", "ghast", "giant", "guardian", "husk", "magma_cube", "shulker",
 										"silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager", 
 										"witch", "wither_skeleton", "zombie", "zombie_pigman", "zombie_villager"] as string[];
+/*
 for table_name in vanilla_eb_wizardry_injected_tables {
 	clear_pool("minecraft:entities/" + table_name, "ebwizardry_ebwizardry_additional_mob_drops");
 }
+*/
 
 # Astral Sorcery Constellation Papers
 remove_entry("astralsorcery:chest_shrine", "astralsorcery:chest_shrine", "astralsorcery:itemconstellationpaper");
@@ -161,9 +163,11 @@ for boss in bosses {
 	add_entry(boss, "heart", <bhc:orange_heart>, 1, 1, 0, 0, 100);
 }
 
+/*
 # Electroblob's mobs
 remove_entry("ebwizardry:entities/mob_additions", "wizardry", "ebwizardry:spell_book");
 clear_pool("ebwizardry:subsets/wizard_armour", "armour");
+*/
 
 # Desert Crawler
 remove_entry("divinerpg:entities/vanilla/desert_crawler", "divinerpg:desert_crawler", "minecraft:sandstone");

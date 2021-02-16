@@ -1,6 +1,6 @@
 
 {
-  "ID": 106,
+  "ID": 109,
   "Name": "Birch Forested Hills",
   "Resource Location": "traverse:birch_forested_hills",
   "Class": "prospector.traverse.world.biomes.BiomeForestedHills",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
-    "FOREST"
+    "FOREST",
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [
@@ -100,12 +100,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

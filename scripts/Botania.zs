@@ -952,4 +952,8 @@ for i in 0 to 8 {
 # Orechid Mithril Ore removal
 mods.botania.Orechid.removeOre("oreMithril");
 
+# Lexica Botania tooltip
+<botania:lexicon>.addTooltip(format.red(format.bold("Warninrg:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
+<botania:lexicon>.addTooltip(format.white(format.bold("Always refer to JEI when crafting.")));
+
 print("ENDING Botania.zs");

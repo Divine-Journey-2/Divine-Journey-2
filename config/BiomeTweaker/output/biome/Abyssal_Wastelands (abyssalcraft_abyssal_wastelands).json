@@ -1,6 +1,6 @@
 
 {
-  "ID": 125,
+  "ID": 135,
   "Name": "Abyssal Wastelands",
   "Resource Location": "abyssalcraft:abyssal_wastelands",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenAbywasteland",
@@ -59,12 +59,6 @@
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityDragonMinion",
       "Weight": 1,
       "Min Group Count": 0,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
       "Max Group Count": 1
     },
     {

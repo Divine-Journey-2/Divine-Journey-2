@@ -1,6 +1,6 @@
 
 {
-  "ID": 116,
+  "ID": 119,
   "Name": "Thicket",
   "Resource Location": "traverse:thicket",
   "Class": "prospector.traverse.world.biomes.BiomeThicket",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
-    "DENSE"
+    "DENSE",
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -106,12 +106,6 @@
     {
       "Entity Class": "net.minecraft.entity.monster.EntityWitch",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

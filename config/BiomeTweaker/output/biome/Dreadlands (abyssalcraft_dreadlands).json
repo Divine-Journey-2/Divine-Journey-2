@@ -1,6 +1,6 @@
 
 {
-  "ID": 126,
+  "ID": 136,
   "Name": "Dreadlands",
   "Resource Location": "abyssalcraft:dreadlands",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDreadlands",
@@ -103,12 +103,6 @@
       "Weight": 100,
       "Min Group Count": 1,
       "Max Group Count": 5
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     },
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityLesserShoggoth",

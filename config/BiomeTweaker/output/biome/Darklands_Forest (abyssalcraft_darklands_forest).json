@@ -1,6 +1,6 @@
 
 {
-  "ID": 120,
+  "ID": 123,
   "Name": "Darklands Forest",
   "Resource Location": "abyssalcraft:darklands_forest",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenDarklandsForest",
@@ -20,8 +20,8 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
-    "SPOOKY"
+    "SPOOKY",
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
@@ -130,12 +130,6 @@
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityShadowBeast",
       "Weight": 20,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

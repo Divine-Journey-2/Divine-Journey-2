@@ -1,6 +1,6 @@
 
 {
-  "ID": 142,
+  "ID": 145,
   "Name": "Underworld",
   "Resource Location": "lightningcraft:underworld",
   "Class": "sblectric.lightningcraft.biomes.BiomeUnderworld",
@@ -52,12 +52,6 @@
     {
       "Entity Class": "sblectric.lightningcraft.entities.EntityUnderworldGhast",
       "Weight": 20,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

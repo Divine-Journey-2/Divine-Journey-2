@@ -1,6 +1,6 @@
 
 {
-  "ID": 137,
+  "ID": 141,
   "Name": "Omothol",
   "Resource Location": "abyssalcraft:omothol",
   "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomeGenOmothol",
@@ -58,12 +58,6 @@
     {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.EntityShadowBeast",
       "Weight": 3,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
     },

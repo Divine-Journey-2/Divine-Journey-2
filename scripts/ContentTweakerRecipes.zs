@@ -507,7 +507,7 @@ mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:industrial_leather>, <liqu
 mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:dirty_reagent>, [<minecraft:dirt:1>,<roots:elemental_soil_air>,<roots:elemental_soil_water>,<roots:elemental_soil_fire>], 8, 4);
 
 # Wizard's Reagent
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<ebwizardry:magic_crystal>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 80, 12);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:wizards_reagent>, [<mysticalworld:amethyst_gem>,<bewitchment:garnet>,<bewitchment:opal>,<thaumcraft:amber>], 80, 12);
 
 # Neutral Reagent
 mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:neutral_reagent>, [<minecraft:clay>,<minecraft:quartz_block>,<minecraft:concrete:8>,<minecraft:glass>], 300, 36);

@@ -172,12 +172,6 @@
       "Max Group Count": 8
     },
     {
-      "Entity Class": "electroblob.wizardry.entity.living.EntityLightningWraith",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
       "Entity Class": "com.shinoow.abyssalcraft.common.entity.demon.EntityEvilpig",
       "Weight": 20,
       "Min Group Count": 1,
