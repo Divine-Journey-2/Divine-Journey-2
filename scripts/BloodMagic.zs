@@ -554,4 +554,8 @@ recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compre
 <bloodmagic:blood_shard>.addTooltip(format.white("to obtain. Be wary though. While it's active,"));
 <bloodmagic:blood_shard>.addTooltip(format.white("it constantly drains LP from your Life Network!"));
 
+# Transcendent Blood Orb
+mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:decorative_brick:2>);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}), <evilcraft:blood_orb:1>, 5, 240000, 120, 120);
+
 print("ENDING BloodMagic.zs");

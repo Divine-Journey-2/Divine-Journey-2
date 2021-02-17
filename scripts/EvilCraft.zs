@@ -305,4 +305,7 @@ recipes.remove(<evilcraft:spirit_furnace>);
 recipes.remove(<evilcraft:spikey_claws>);
 recipes.addShaped(<evilcraft:spikey_claws>, [[<evilcraft:dark_spike>,<evilcraft:dark_spike>,<evilcraft:dark_spike>],[null,<evilcraft:dark_power_gem>,null]]);
 
+# Blood Orb -> Evil Blood Orb
+<evilcraft:blood_orb:1>.displayName = "Evil Blood Orb";
+
 print("ENDING EvilCraft.zs");

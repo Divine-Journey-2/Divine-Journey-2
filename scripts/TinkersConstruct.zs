@@ -1,4 +1,7 @@
 # Author: Atricos
+
+import mods.tconstruct.Casting;
+
 print("STARTING TinkersConstruct.zs");
 
 # Blank Pattern
@@ -46,5 +49,8 @@ recipes.addShaped(<tconstruct:slimesling:4>, [[<ore:string>,<tconstruct:slime_co
 
 # Additional Necrotic Bone recipe
 recipes.addShaped(<tconstruct:materials:17>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:bone>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);
+
+# Plate Cast
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 
 print("ENDING TinkersConstruct.zs");

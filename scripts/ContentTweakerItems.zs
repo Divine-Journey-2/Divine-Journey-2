@@ -678,5 +678,11 @@ omothol_teleporter.itemRightClick = function(stack, world, player, hand) {
     return "SUCCESS";
 };
 omothol_teleporter.register();
+var infused_magical_core = VanillaFactory.createItem("infused_magical_core");
+infused_magical_core.rarity = "EPIC";
+infused_magical_core.glowing = true;
+infused_magical_core.register();
+var base_focal_sphere = VanillaFactory.createItem("base_focal_sphere");
+base_focal_sphere.register();
 
 print("ENDING ContentTweakerItems.zs");

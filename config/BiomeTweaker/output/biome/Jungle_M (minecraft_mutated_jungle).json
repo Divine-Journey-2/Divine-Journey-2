@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "MOUNTAIN",
-    "JUNGLE",
-    "RARE",
     "DENSE",
+    "JUNGLE",
+    "MOUNTAIN",
+    "RARE",
     "WET",
     "HOT"
   ],

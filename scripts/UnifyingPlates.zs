@@ -161,7 +161,6 @@ mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:titanium_plate>, 
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_plate>, <tconstruct:cast_custom:3>, <liquid:titanium>, 144, false);
 mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productplate:7>);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_plate>, false, 1, [[100, <alchemistry:element:22> * 144]]);
-mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <contenttweaker:titanium_plate>, 984);
 
 # Black Iron Slate
 recipes.remove(<extendedcrafting:material:2>);

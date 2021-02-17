@@ -22,6 +22,11 @@ print("STARTING OreProcessingAdditions.zs");
 # Ingot/Gem -> Dust
 function addMaterialToDustCrushing(ingot as IItemStack, dust as IItemStack) {
 	recipes.addShapeless(dust, [ingot, <ore:dustPetrotheum>]);
+	addMaterialToDustCrushingWOPetrotheum(ingot, dust);
+}
+
+# Ingot/Gem -> Dust, w/o Petrotheum
+function addMaterialToDustCrushingWOPetrotheum(ingot as IItemStack, dust as IItemStack) {
 	IECrusher.addRecipe(dust, ingot, 4000);
 	AACrusher.addRecipe(dust, ingot);
 	Grinder.addRecipe(dust, ingot, 4);
@@ -568,6 +573,9 @@ mods.enderio.SagMill.removeRecipe(<mysticalagriculture:end_inferium_ore>);
 mods.enderio.SagMill.addRecipe([<mysticalagriculture:crafting> * 5, <minecraft:end_stone>], [1, 0.15], <mysticalagriculture:end_inferium_ore>, "MULTIPLY_OUTPUT");
 
 # Salis Mundus
-addMaterialToDustCrushing(<contenttweaker:rainbow_tablet>, <thaumcraft:salis_mundus>);
+addMaterialToDustCrushingWOPetrotheum(<contenttweaker:rainbow_tablet>, <thaumcraft:salis_mundus>);
+
+# Quartz Sliver
+addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> * 16);
 
 print("ENDING OreProcessingAdditions.zs");

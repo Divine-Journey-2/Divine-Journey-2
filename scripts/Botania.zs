@@ -102,6 +102,7 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>, <evilcraft:gold
 
 # Spellbinding Cloth
 <botania:spellcloth>.maxStackSize = 64;
+<botania:spellcloth>.maxDamage = 1;
 
 # Runic Altar
 recipes.remove(<botania:runealtar>);

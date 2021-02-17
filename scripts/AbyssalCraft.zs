@@ -182,8 +182,10 @@ recipes.removeShaped(<abyssalcraft:cstonebrick>);
 recipes.addShaped(<abyssalcraft:cstonebrick>, [[null,<abyssalcraft:cbrick>,null],[<abyssalcraft:cbrick>,<abyssalcraft:stone:7>,<abyssalcraft:cbrick>],[null,<abyssalcraft:cbrick>,null]]);
 
 # Coralium Stone
-<abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter over "));
-<abyssalcraft:stone:4>.addTooltip(format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
+<abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter"));
+<abyssalcraft:stone:4>.addTooltip(format.white("over ") + format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
+<abyssalcraft:stone:4>.addTooltip(format.white("(If you can't find any Liquid Antimatter, use the"));
+<abyssalcraft:stone:4>.addTooltip(format.white("Anti Milking Ritual in the Abyssal Wasteland.)"));
 
 # Transmutator
 recipes.remove(<abyssalcraft:transmutator>);
@@ -594,5 +596,10 @@ game.setLocalization("ac.ritual.summonSacthoth.desc", "Summons Sacthoth, Harbing
 
 # Sacthoth's Soul Reaper Blade
 <abyssalcraft:soulreaper>.addTooltip(format.white("Dropped by ") + format.gray("Sacthoth, Harbinger of Doom") + format.white(", the final boss of AbyssalCraft."));
+
+# Summoning an Anti Cow in the Abyssal Wasteland
+mods.abyssalcraft.SummonRitual.addRitual("summonAntiCow", 1, 50, 2500, false, "abyssalcraft:anticow", [<abyssalcraft:ingotblock:1>,<minecraft:beef>,<forge:bucketfilled>.withTag({FluidName: "liquidcoralium", Amount: 1000}),<minecraft:leather>,<abyssalcraft:powerstonetracker>,<minecraft:beef>,<forge:bucketfilled>.withTag({FluidName: "liquidcoralium", Amount: 1000}),<minecraft:leather>]);
+game.setLocalization("ac.ritual.summonAntiCow", "Anti Milking");
+game.setLocalization("ac.ritual.summonAntiCow.desc", "Summon an Anti Cow in the Abyssal Wasteland. Milking this Cow will yield a bucket of Antimatter.");
 
 print("ENDING AbyssalCraft.zs");

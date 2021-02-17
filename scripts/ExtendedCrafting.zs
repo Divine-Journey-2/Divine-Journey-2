@@ -5,6 +5,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.Transposer;
+import mods.thaumcraft.Crucible;
 
 print("STARTING ExtendedCrafting.zs");
 
@@ -50,5 +51,17 @@ recipes.addShaped(<extendedcrafting:ender_crafter>, [[<enderutilities:enderpart:
 # Ender Alternator
 recipes.remove(<extendedcrafting:ender_alternator>);
 recipes.addShaped(<extendedcrafting:ender_alternator>, [[<enderutilities:enderpart:1>,<contenttweaker:power_core>,<enderutilities:enderpart:1>],[null,<extendedcrafting:material:36>,null],[<extendedcrafting:material:36>,<extendedcrafting:material:36>,<extendedcrafting:material:36>]]);
+
+# Enhanced Ender Alloy
+mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:48>);
+mods.thaumcraft.Crucible.registerRecipe("extendedcrafting:enhanced_ender_ingot", "", <extendedcrafting:material:48>, <extendedcrafting:material:36>, [<aspect:spiritus> * 20, <aspect:metallum> * 15, <aspect:alienis> * 15, <aspect:sol> * 5]);
+
+# Pedestal
+recipes.remove(<extendedcrafting:pedestal>);
+mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:pedestal>, [[null,<contenttweaker:clean_runic_plate>,null],[null,<extendedcrafting:material>,null],[<extendedcrafting:material>,<extendedcrafting:material:48>,<extendedcrafting:material>]]);
+
+# Crafting Core
+recipes.remove(<extendedcrafting:crafting_core>);
+mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:crafting_core>, [[<extendedcrafting:material:48>,<extendedcrafting:material:48>,<extendedcrafting:material:48>],[<contenttweaker:clean_runic_plate>,<extendedcrafting:frame>,<contenttweaker:clean_runic_plate>],[<contenttweaker:clean_runic_plate>,<extendedcrafting:pedestal>,<contenttweaker:clean_runic_plate>]]);
 
 print("ENDING ExtendedCrafting.zs");

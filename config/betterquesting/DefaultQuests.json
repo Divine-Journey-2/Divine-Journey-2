@@ -4093,7 +4093,8 @@
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
+              "astralsorcery:cap_item_amulet_holder:10": {},
+              "thaumicaugmentation:elytra_harness_augment:10": {}
             },
             "id:8": "botania:flighttiara",
             "Count:3": 1,
@@ -4121,7 +4122,8 @@
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
+                "astralsorcery:cap_item_amulet_holder:10": {},
+                "thaumicaugmentation:elytra_harness_augment:10": {}
               },
               "id:8": "botania:flighttiara",
               "Count:3": 1,
@@ -9096,7 +9098,7 @@
     "126:10": {
       "questID:3": 873,
       "preRequisites:11": [
-        868
+        889
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10497,7 +10499,7 @@
     "142:10": {
       "questID:3": 889,
       "preRequisites:11": [
-        873
+        868
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -57768,7 +57770,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "They see you",
-          "desc:8": "This will allow you to see Vengeance Spirits, but also allow them to see - and attack - you. If you enable the ring, you get multiple positive effects, but Vengeance Spirits will constantly spawn around you."
+          "desc:8": "This will allow you to see Vengeance Spirits, but also allow them to see - and attack - you. If you enable the ring, you get multiple positive effects, but Vengeance Spirits will constantly spawn around you. Great for farming Vengeance Spirits though!"
         }
       },
       "tasks:9": {
@@ -70149,7 +70151,7 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 55,
+          "x:3": 56,
           "y:3": 63,
           "id:3": 868,
           "sizeY:3": 24
@@ -70184,8 +70186,8 @@
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 41,
-          "y:3": 86,
+          "x:3": 42,
+          "y:3": 133,
           "id:3": 873,
           "sizeY:3": 24
         },
@@ -70296,8 +70298,8 @@
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 26,
-          "y:3": 111,
+          "x:3": 42,
+          "y:3": 87,
           "id:3": 889,
           "sizeY:3": 24
         },
@@ -70401,8 +70403,8 @@
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": 26,
-          "y:3": 64,
+          "x:3": 28,
+          "y:3": 63,
           "id:3": 904,
           "sizeY:3": 24
         },
@@ -70485,8 +70487,8 @@
         },
         "49:10": {
           "sizeX:3": 24,
-          "x:3": 41,
-          "y:3": 133,
+          "x:3": 27,
+          "y:3": 110,
           "id:3": 916,
           "sizeY:3": 24
         },
@@ -70541,15 +70543,15 @@
         },
         "57:10": {
           "sizeX:3": 24,
-          "x:3": 25,
+          "x:3": 27,
           "y:3": 156,
           "id:3": 925,
           "sizeY:3": 24
         },
         "58:10": {
           "sizeX:3": 32,
-          "x:3": 284,
-          "y:3": 85,
+          "x:3": 286,
+          "y:3": 84,
           "id:3": 926,
           "sizeY:3": 32
         },
@@ -76049,11 +76051,12 @@
           "visibility:8": "ALWAYS",
           "name:8": "Wizards belong here!",
           "icon:10": {
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
-            "id:8": "ebwizardry:wizard_hat",
+            "id:8": "betterquesting:placeholder",
             "Count:3": 1,
+            "tag:10": {
+              "orig_meta:3": 0,
+              "orig_id:8": "ebwizardry:wizard_hat"
+            },
             "Damage:2": 0,
             "OreDict:8": ""
           },

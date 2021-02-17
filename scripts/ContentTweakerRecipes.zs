@@ -925,4 +925,14 @@ recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbo
 <contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  this point on in your life. Please consult your")));
 <contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  local psychiatrist for further information.")));
 */
+
+# Infused Magical Core
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:infused_magical_core>, 2000000, <contenttweaker:magical_core>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>]);
+
+# Base Focal Sphere
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:base_focal_sphere>, 400000, <evilcraft:blood_orb>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>]);
+
+# Magical Leather
+mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <contenttweaker:magical_leather>, <contenttweaker:blood_infused_leather>, [<aspect:praecantatio> * 40, <aspect:bestia> * 15, <aspect:auram> * 10, <aspect:spiritus> * 5]);
+
 print("ENDING ContentTweakerRecipes.zs");
