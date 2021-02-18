@@ -23,8 +23,8 @@
     "MEGA_TAIGA_TREES",
     "COLD",
     "FOREST",
-    "CONIFEROUS",
-    "THEMED_TREES"
+    "THEMED_TREES",
+    "CONIFEROUS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

@@ -34,11 +34,29 @@ recipes.remove(<solarflux:solar_panel_5>);
 recipes.addShaped(<solarflux:solar_panel_5>, [[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>]]);
 
 # Photovoltaic Cell IV
+recipes.remove(<solarflux:photovoltaic_cell_4>);
+recipes.addShaped(<solarflux:photovoltaic_cell_4> * 3, [[<ore:blockGlassBlue>,<ore:blockGlassBlue>,<ore:blockGlassBlue>],[<contenttweaker:potentia>,<contenttweaker:potentia>,<contenttweaker:potentia>],[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>]]);
+
 # Solar Panel VI
+recipes.remove(<solarflux:solar_panel_6>);
+recipes.addShaped(<solarflux:solar_panel_6>, [[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>]]);
+
 # Photovoltaic Cell V
+recipes.remove(<solarflux:photovoltaic_cell_5>);
+recipes.addShaped(<solarflux:photovoltaic_cell_5> * 3, [[<ore:blockGlassLime>,<ore:blockGlassLime>,<ore:blockGlassLime>],[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>]]);
+
 # Solar Panel VII
+recipes.remove(<solarflux:solar_panel_7>);
+recipes.addShaped(<solarflux:solar_panel_7>, [[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>]]);
+
 # Photovoltaic Cell VI
+recipes.remove(<solarflux:photovoltaic_cell_6>);
+recipes.addShaped(<solarflux:photovoltaic_cell_6> * 3, [[<ore:blockGlassGreen>,<ore:blockGlassGreen>,<ore:blockGlassGreen>],[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>],[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>]]);
+
 # Solar Panel VIII
+recipes.remove(<solarflux:solar_panel_8>);
+recipes.addShaped(<solarflux:solar_panel_8>, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>]]);
+
 # Wyvern Solar Panel
 # Draconic Solar Panel
 # Neutronium Solar Panel

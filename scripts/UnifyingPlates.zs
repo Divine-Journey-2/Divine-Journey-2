@@ -158,7 +158,6 @@ mods.tconstruct.Casting.removeTableRecipe(<libvulpes:productplate:7>);
 recipes.addShapeless(<contenttweaker:titanium_plate>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, 3000);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, <immersiveengineering:mold>, 3000);
-mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_plate>, <tconstruct:cast_custom:3>, <liquid:titanium>, 144, false);
 mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productplate:7>);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_plate>, false, 1, [[100, <alchemistry:element:22> * 144]]);
 

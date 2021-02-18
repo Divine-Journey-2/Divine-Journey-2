@@ -9,6 +9,8 @@ import crafttweaker.block.IBlock;
 import mods.thaumcraft.Crucible;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
+import mods.thermalexpansion.InductionSmelter;
+import mods.tconstruct.Alloy;
 
 print("STARTING Thaumcraft.zs");
 
@@ -36,9 +38,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:thaumometer", "
 
 # Crucible
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
-mods.thaumcraft.SalisMundus.addSingleConversion(<integrateddynamics:mechanical_drying_basin>.asBlock(), <thaumcraft:crucible>, "UNLOCKALCHEMY@1");
-<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an Integrated Dynamics"));
-<thaumcraft:crucible>.addTooltip(format.white("Mechanical Drying Basin with some ") + format.lightPurple("Salis Mundus") + format.white("."));
+mods.thaumcraft.SalisMundus.addSingleConversion(<evilcraft:purifier>.asBlock(), <thaumcraft:crucible>, "UNLOCKALCHEMY@1");
+<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an EvilCraft"));
+<thaumcraft:crucible>.addTooltip(format.white("Crucible with some ") + format.lightPurple("Salis Mundus") + format.white("."));
 
 # Wood Table
 recipes.remove(<thaumcraft:table_wood>);
@@ -66,7 +68,7 @@ recipes.removeShaped(<minecraft:quartz>, [[<thaumcraft:nugget:9>,<thaumcraft:nug
 
 # Vis Resonator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:vis_resonator", "UNLOCKAUROMANCY@2", 50, [<aspect:aer> * 2,<aspect:aqua> * 2], <thaumcraft:vis_resonator>, [[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>],[<botania:shimmerrock>,<botania:conjurationcatalyst>,<botania:shimmerrock>],[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:vis_resonator", "UNLOCKAUROMANCY@2", 50, [<aspect:aer> * 2,<aspect:aqua> * 2], <thaumcraft:vis_resonator>, [[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>],[<botania:shimmerrock>,<contenttweaker:reduction_core>,<botania:shimmerrock>],[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>]]);
 
 # Caster's Gauntlet
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:caster_basic>);
@@ -82,7 +84,7 @@ mods.thaumcraft.Crucible.registerRecipe("thaumcraft:alumentum", "INFUSION", <tha
 
 # Enchanted Fabric
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:fabric>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "MINDBIOTHAUMIC", 5, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[null,<thaumcraft:salis_mundus>,null],[<thaumcraft:alumentum>,<botania:spellcloth>.noReturn(),<thaumcraft:alumentum>],[null,<thaumcraft:salis_mundus>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "MINDBIOTHAUMIC", 5, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[null,<thaumcraft:salis_mundus>,null],[<thaumcraft:alumentum>,<botania:spellcloth>,<thaumcraft:alumentum>],[null,<thaumcraft:salis_mundus>,null]]);
 
 # Thaumaturge's Robe
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:cloth_chest>);
@@ -110,5 +112,55 @@ EIOAlloySmelter.addRecipe(<thaumcraft:stone_arcane> * 3, [<bloodmagic:blood_rune
 # Focal Manipulator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:wand_workbench>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:wand_workbench", "BASEAUROMANCY@2", 100, [<aspect:terra> * 10,<aspect:ignis> * 5], <thaumcraft:wand_workbench>, [[<thaumcraft:slab_arcane_stone>,<thaumcraft:slab_arcane_stone>,<thaumcraft:slab_arcane_stone>],[<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>],[<thaumcraft:stone_arcane>,<thaumcraft:table_stone>,<thaumcraft:stone_arcane>]]);
+
+# Alchemical Brass Ingot
+mods.thermalexpansion.InductionSmelter.removeRecipe(<alchemistry:ingot:30>, <thermalfoundation:material:64> * 3);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<alchemistry:ingot:30>, <thermalfoundation:material:128> * 3);
+mods.tconstruct.Alloy.removeRecipe(<liquid:brass>);
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot:2>);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:brassingot", "METALLURGY@1", <thaumcraft:ingot:2>, <botania:manaresource:7>, [<aspect:instrumentum> * 10, <aspect:cognitio> * 10]);
+
+# Mundane Amulet
+recipes.remove(<thaumcraft:baubles:0>);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<thaumcraft:baubles:0>, 12000, <botania:cloudpendant>, [<thaumcraft:ingot:2>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>]);
+
+# Mundane Ring
+recipes.remove(<thaumcraft:baubles:1>);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<thaumcraft:baubles:1>, 12000, <botania:dodgering>, [<thaumcraft:ingot:2>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>]);
+
+# Mundane Belt
+recipes.remove(<thaumcraft:baubles:2>);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<thaumcraft:baubles:2>, 12000, <botania:travelbelt>, [<thaumcraft:ingot:2>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>]);
+
+# Focus Pouch
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:focus_pouch>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:FocusPouch", "FOCUSPOUCH", 40, [<aspect:ordo> * 10,<aspect:aer> * 5], <thaumcraft:focus_pouch>, [[<contenttweaker:magical_leather>,<thaumcraft:ingot:2>,<contenttweaker:magical_leather>],[<contenttweaker:magical_leather>,<thaumcraft:baubles:2>,<contenttweaker:magical_leather>],[<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>]]);
+
+# Recharge Pedestal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:recharge_pedestal>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:rechargepedestal", "RECHARGEPEDESTAL", 350, [<aspect:ordo> * 5,<aspect:aer> * 5,<aspect:aqua> * 5], <thaumcraft:recharge_pedestal>, [[null,<thaumcraft:vis_resonator>,null],[<thaumcraft:plank_greatwood>,null,<thaumcraft:plank_greatwood>],[<thaumcraft:ingot:2>,null,<thaumcraft:ingot:2>]]);
+
+# Glass Phial
+recipes.remove(<thaumcraft:phial>);
+recipes.addShaped(<thaumcraft:phial> * 4, [[<botania:elfglass>,<contenttweaker:intensive_catalyst>,<botania:elfglass>],[null,<botania:elfglass>,null]]);
+
+# Mirrored Glass
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mirrored_glass>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mirrorglass", "BASEARTIFICE", 60, [<aspect:aqua> * 2,<aspect:ordo> * 2,<aspect:aer> * 2], <thaumcraft:mirrored_glass>, [[<thaumcraft:quicksilver>,<thaumcraft:quicksilver>,<thaumcraft:quicksilver>],[<thaumcraft:quicksilver>,<contenttweaker:purified_tablet>,<thaumcraft:quicksilver>],[<thaumcraft:quicksilver>,<thaumcraft:quicksilver>,<thaumcraft:quicksilver>]]);
+
+# Sanity Checker
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:sanity_checker>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:sanitychecker", "WARP", 100, [<aspect:ordo> * 10,<aspect:perditio> * 10], <thaumcraft:sanity_checker>, [[<thaumcraft:brain>,<thaumcraft:ingot:2>,null],[<thaumcraft:mirrored_glass>,<contenttweaker:rune_of_deception>,<thaumcraft:ingot:2>],[<thaumcraft:brain>,<thaumcraft:ingot:2>,null]]);
+
+# Essentia Filter
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "TUBES", 15, [<aspect:aqua> * 2], <thaumcraft:filter>, [[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal],[empowered_glod_crystal,<botania:rune>,empowered_glod_crystal],[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal]]);
+<thaumcraft:nugget:10>.addTooltip(format.gray(format.italic("<Hold Shift for info on how to acquire>")));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("Dropped rarely by any of the following Ores:"));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("Coal, Redstone, Quartz. Amber, Diamond;"));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("in ascending order or drop rate."));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("Alternatively, smelt any of the following Ores"));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("in the Infernal Furnace: Oron, Gold, Silver,"));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("Copper, Tin, Lead, Cinnabar."));
 
 print("ENDING Thaumcraft.zs");

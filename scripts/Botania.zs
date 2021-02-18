@@ -102,7 +102,7 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:16>, <evilcraft:gold
 
 # Spellbinding Cloth
 <botania:spellcloth>.maxStackSize = 64;
-<botania:spellcloth>.maxDamage = 1;
+<botania:spellcloth>.maxDamage = 0;
 
 # Runic Altar
 recipes.remove(<botania:runealtar>);
@@ -668,6 +668,10 @@ recipes.addShapedMirrored(<botania:supertravelbelt>, [[<botania:manaresource:7>,
 # Ring of Far Reach
 recipes.remove(<botania:reachring>);
 recipes.addShapedMirrored(<botania:reachring>, [[<botania:rune:11>,<botania:manaresource:7>,<botania:manaresource:5>],[<botania:manaresource:7>,null,<botania:manaresource:7>],[<botania:manaresource:5>,<botania:manaresource:7>,<contenttweaker:rune_of_deception>]]);
+
+# Ring of Dexterous Motion
+recipes.remove(<botania:dodgering>);
+recipes.addShapedMirrored(<botania:dodgering>, [[<actuallyadditions:item_crystal_empowered:4>,<botania:manaresource>,null],[<botania:manaresource>,null,<botania:manaresource>],[null,<botania:manaresource>,<botania:rune:3>]]);
 
 # The Spectator
 recipes.remove(<botania:itemfinder>);

@@ -93,6 +93,9 @@ Fey.addRecipe("runic_shears", <roots:runic_shears>, [<minecraft:shears>, <roots:
 Pyre.removeRecipe(<roots:stalicripe>);
 Pyre.addRecipe("stalicripe", <roots:stalicripe>, [<roots:infernal_bulb>, <roots:wildewheet>, <roots:wildwood_log>, <roots:runestone>, <betternether:stalagnate_stem>]);
 
+# Fey Leather
+<ore:leather>.remove(<roots:fey_leather>);
+
 # Sylvan Armor
 Fey.removeRecipe(<roots:sylvan_helmet>);
 Fey.addRecipe("sylvan_helmet", <roots:sylvan_helmet>, [<thermalfoundation:armor.helmet_steel>, <roots:fey_leather>, <contenttweaker:treated_leather>, <roots:bark_birch>, <ore:gemAmethyst>]);
