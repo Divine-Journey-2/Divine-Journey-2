@@ -927,12 +927,18 @@ recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbo
 */
 
 # Infused Magical Core
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:infused_magical_core>, 2000000, <contenttweaker:magical_core>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:infused_magical_core>, 2000000, 5000, <contenttweaker:magical_core>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>]);
 
 # Base Focal Sphere
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:base_focal_sphere>, 400000, <evilcraft:blood_orb>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:base_focal_sphere>, 400000, 5000, <evilcraft:blood_orb>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>]);
 
 # Magical Leather
 mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <contenttweaker:magical_leather>, <contenttweaker:blood_infused_leather>, [<aspect:praecantatio> * 40, <aspect:bestia> * 15, <aspect:auram> * 10, <aspect:spiritus> * 5]);
+
+# Knowledge of the Sky
+<contenttweaker:knowledge_of_the_sky>.addTooltip(format.white("Found in Skythern Dungeons."));
+
+# Matrix Multiplication Unit
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:matrix_multiplication_unit> * 8, 2500000, 5000, <industrialforegoing:black_hole_unit>, [<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>]);
 
 print("ENDING ContentTweakerRecipes.zs");

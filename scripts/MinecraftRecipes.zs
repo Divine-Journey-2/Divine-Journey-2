@@ -8,6 +8,7 @@ import mods.thermalexpansion.Pulverizer;
 import mods.immersiveengineering.Crusher as IECrusher;
 import mods.extrautils2.Crusher as EUCrusher;
 import mods.enderio.SagMill;
+import crafttweaker.item.WeightedItemStack;
 
 print("STARTING MinecraftRecipes.zs");
 
@@ -247,5 +248,8 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, <minecraft:d
 
 # Lilipad
 <minecraft:waterlily>.addTooltip(format.white(format.italic("A Resources Fisher can occasionally fish this up.")));
+
+# Beetroot as Seed drop
+vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);
 
 print("ENDING MinecraftRecipes.zs");

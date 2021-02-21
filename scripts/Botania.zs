@@ -580,20 +580,20 @@ recipes.addShaped(<botania:elementiumboots>, [[<botania:manaresource:7>,<botania
 
 # Terrasteel Helmet
 recipes.removeShaped(<botania:terrasteelhelm>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[null,<*>,null]]);
-recipes.addShaped(<botania:terrasteelhelm>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumhelm>,<botania:manaresource:4>]]);
+recipes.addShaped(<botania:terrasteelhelm>, [[<botania:manaresource:4>,<botania:livingwood:5>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumhelm>,<botania:manaresource:4>]]);
 recipes.removeShaped(<botania:terrasteelhelmreveal>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[null,<*>,null]]);
 
 # Terrasteel Chestplate
 recipes.remove(<botania:terrasteelchest>);
-recipes.addShaped(<botania:terrasteelchest>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumchest>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
+recipes.addShaped(<botania:terrasteelchest>, [[<botania:manaresource:4>,<botania:livingwood:5>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumchest>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>]]);
 
 # Terrasteel Leggings
 recipes.remove(<botania:terrasteellegs>);
-recipes.addShaped(<botania:terrasteellegs>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumlegs>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>]]);
+recipes.addShaped(<botania:terrasteellegs>, [[<botania:manaresource:4>,<botania:livingwood:5>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumlegs>,<botania:manaresource:4>],[<botania:manaresource:4>,null,<botania:manaresource:4>]]);
 
 # Terrasteel Boots
 recipes.remove(<botania:terrasteelboots>);
-recipes.addShaped(<botania:terrasteelboots>, [[<botania:manaresource:4>,<botania:livingwood>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumboots>,<botania:manaresource:4>]]);
+recipes.addShaped(<botania:terrasteelboots>, [[<botania:manaresource:4>,<botania:livingwood:5>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumboots>,<botania:manaresource:4>]]);
 
 # Tectonic Girdle
 recipes.remove(<botania:knockbackbelt>);

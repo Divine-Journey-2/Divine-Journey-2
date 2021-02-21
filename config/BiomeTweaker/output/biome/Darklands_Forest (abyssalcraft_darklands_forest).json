@@ -20,12 +20,12 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "FOREST",
-    "SPOOKY"
+    "SPOOKY",
+    "FOREST"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
-      5
+      4
     ]
   },
   "Spawnable Creatures": [
@@ -140,12 +140,6 @@
       "Max Group Count": 3
     },
     {
-      "Entity Class": "mekanism.common.entity.EntityBabySkeleton",
-      "Weight": 40,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
       "Entity Class": "thaumcraft.common.entities.monster.EntityBrainyZombie",
       "Weight": 10,
       "Min Group Count": 1,
@@ -234,6 +228,6 @@
       "Max Group Count": 1
     }
   ],
-  "Spawn Biome": true,
+  "Spawn Biome": false,
   "Tweaked": false
 }

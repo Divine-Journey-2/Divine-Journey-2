@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "SPARSE",
     "HOT",
-    "ATUM",
-    "DRY",
     "SANDY",
+    "DRY",
+    "ATUM",
     "PLAINS"
   ],
   "BiomeManager Entries": {},

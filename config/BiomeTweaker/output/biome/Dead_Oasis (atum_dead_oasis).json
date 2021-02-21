@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "SPARSE",
     "HOT",
-    "ATUM",
-    "DRY",
-    "DEAD",
     "SANDY",
+    "DEAD",
+    "DRY",
+    "ATUM",
     "RARE"
   ],
   "BiomeManager Entries": {},

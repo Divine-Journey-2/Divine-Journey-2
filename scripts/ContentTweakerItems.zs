@@ -684,5 +684,13 @@ infused_magical_core.glowing = true;
 infused_magical_core.register();
 var base_focal_sphere = VanillaFactory.createItem("base_focal_sphere");
 base_focal_sphere.register();
+var knowledge_of_the_sky = VanillaFactory.createItem("knowledge_of_the_sky");
+knowledge_of_the_sky.rarity = "EPIC";
+knowledge_of_the_sky.glowing = true;
+knowledge_of_the_sky.register();
+var matrix_multiplication_unit = VanillaFactory.createItem("matrix_multiplication_unit");
+matrix_multiplication_unit.rarity = "EPIC";
+matrix_multiplication_unit.glowing = true;
+matrix_multiplication_unit.register();
 
 print("ENDING ContentTweakerItems.zs");

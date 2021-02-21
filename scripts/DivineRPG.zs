@@ -170,5 +170,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:wildwood_block> * 14,
 [<botania:storage:3>,<botania:managlass>,<botania:managlass>,<botania:managlass>,<botania:storage:3>],
 [<divinerpg:wildwood_chunk>,<botania:spellcloth>.noReturn(),<botania:managlass>,<botania:spellcloth>.noReturn(),<divinerpg:wildwood_chunk>],
 [<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>]]);
-							
+
+# Apalachia Block
+recipes.remove(<divinerpg:apalachia_block>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:apalachia_block> * 14,
+[[<thaumcraft:plate:2>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:plate:2>],
+[<thaumcraft:salis_mundus>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:salis_mundus>],
+[<thaumcraft:salis_mundus>,<thaumcraft:morphic_resonator>,<botania:manaresource:14>,<thaumcraft:morphic_resonator>,<thaumcraft:salis_mundus>],
+[<thaumcraft:salis_mundus>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:salis_mundus>],
+[<thaumcraft:plate:2>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:plate:2>]]);
+
 print("ENDING DivineRPG.zs");
