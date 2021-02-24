@@ -293,7 +293,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_stone.setBlockHardness(18000000);
 	dim_stone.setBlockResistance(3600000);
 	dim_stone.setToolClass(null);
-	dim_stone.setToolLevel(100);
 	dim_stone.setWitherProof(true);
 	dim_stone.setToolLevel(16777215);
 	dim_stone.setBlockSoundType(<soundtype:stone>);
@@ -303,7 +302,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_bricks.setBlockHardness(18000000);
 	dim_bricks.setBlockResistance(3600000);
 	dim_bricks.setToolClass(null);
-	dim_bricks.setToolLevel(100);
 	dim_bricks.setWitherProof(true);
 	dim_bricks.setToolLevel(16777215);
 	dim_bricks.setBlockSoundType(<soundtype:stone>);
@@ -313,7 +311,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_pillar.setBlockHardness(18000000);
 	dim_pillar.setBlockResistance(3600000);
 	dim_pillar.setToolClass(null);
-	dim_pillar.setToolLevel(100);
 	dim_pillar.setWitherProof(true);
 	dim_pillar.setToolLevel(16777215);
 	dim_pillar.setBlockSoundType(<soundtype:stone>);
@@ -323,7 +320,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_floor.setBlockHardness(18000000);
 	dim_floor.setBlockResistance(3600000);
 	dim_floor.setToolClass(null);
-	dim_floor.setToolLevel(100);
 	dim_floor.setWitherProof(true);
 	dim_floor.setToolLevel(16777215);
 	dim_floor.setBlockSoundType(<soundtype:stone>);
@@ -333,7 +329,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_roof.setBlockHardness(18000000);
 	dim_roof.setBlockResistance(3600000);
 	dim_roof.setToolClass(null);
-	dim_roof.setToolLevel(100);
 	dim_roof.setWitherProof(true);
 	dim_roof.setToolLevel(16777215);
 	dim_roof.setBlockSoundType(<soundtype:stone>);
@@ -347,7 +342,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_glass.setLightOpacity(0);
 	dim_glass.setTranslucent(true);
 	dim_glass.setFullBlock(false);
-	dim_glass.setToolLevel(100);
 	dim_glass.setWitherProof(true);
 	dim_glass.setToolLevel(16777215);
 	dim_glass.setBlockSoundType(<soundtype:glass>);
@@ -357,7 +351,6 @@ for dim in divinerpg_dimension_names_lower {
 	dim_door.setBlockHardness(18000000);
 	dim_door.setBlockResistance(3600000);
 	dim_door.setToolClass(null);
-	dim_door.setToolLevel(100);
 	dim_door.setWitherProof(true);
 	dim_door.setToolLevel(16777215);
 	dim_door.setBlockSoundType(<soundtype:metal>);
@@ -435,5 +428,17 @@ hyper_diamond_block.setToolClass("pickaxe");
 hyper_diamond_block.setToolLevel(2);
 hyper_diamond_block.setBlockSoundType(<soundtype:metal>);
 hyper_diamond_block.register();
+
+var stabilized_end_crystal = VanillaFactory.createBlock("stabilized_end_crystal", <blockmaterial:glass>);
+stabilized_end_crystal.setBlockHardness(2.0);
+stabilized_end_crystal.setBlockResistance(2.0);
+stabilized_end_crystal.setBlockLayer("TRANSLUCENT");
+stabilized_end_crystal.setToolClass("pickaxe");
+stabilized_end_crystal.setLightOpacity(0);
+stabilized_end_crystal.setTranslucent(true);
+stabilized_end_crystal.setFullBlock(false);
+stabilized_end_crystal.setToolLevel(1);
+stabilized_end_crystal.setBlockSoundType(<soundtype:glass>);
+stabilized_end_crystal.register();
 
 print("ENDING ContentTweakerBlocks.zs");

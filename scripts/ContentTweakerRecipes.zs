@@ -30,6 +30,8 @@ import mods.botania.Apothecary;
 import mods.botania.PureDaisy;
 import crafttweaker.player.IPlayer;
 import crafttweaker.recipes.ICraftingInventory;
+import mods.thaumcraft.Infusion;
+import thaumcraft.aspect.CTAspectStack;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -940,5 +942,17 @@ mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <c
 
 # Matrix Multiplication Unit
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:matrix_multiplication_unit> * 8, 2500000, 5000, <industrialforegoing:black_hole_unit>, [<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>]);
+
+# Condensed Vis Crystals
+var aspect_counter = 0 as int;
+val allThaumcraftCTAspectStacks = [<aspect:aer>, <aspect:terra>, <aspect:ignis>, <aspect:aqua>, <aspect:ordo>, <aspect:perditio>, <aspect:vacuos>, <aspect:lux>, <aspect:motus>, <aspect:gelum>, <aspect:vitreus>, <aspect:metallum>, <aspect:victus>, <aspect:mortuus>, <aspect:potentia>, <aspect:permutatio>, <aspect:praecantatio>, <aspect:auram>, <aspect:alkimia>, <aspect:vitium>, <aspect:tenebrae>, <aspect:alienis>, <aspect:volatus>, <aspect:herba>, <aspect:instrumentum>, <aspect:fabrico>, <aspect:machina>, <aspect:vinculum>, <aspect:spiritus>, <aspect:cognitio>, <aspect:sensus>, <aspect:aversio>, <aspect:praemunio>, <aspect:desiderium>, <aspect:exanimis>, <aspect:bestia>, <aspect:humanus>, <aspect:sol>, <aspect:luna>, <aspect:stellae>, <aspect:diabolus>] as CTAspectStack[];
+for aspect in allThaumcraftAspects {
+	var cur_vis_crystal = <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]});
+	mods.thaumcraft.Infusion.registerRecipe("condensed_vis_crystal_" + aspect + "_crafting", "", itemUtils.getItem("contenttweaker:condensed_vis_crystal_" + aspect), 2, [allThaumcraftCTAspectStacks[aspect_counter] * 30], <thaumcraft:salis_mundus>, [cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal]);
+	aspect_counter += 1;
+}
+
+# Stabilized End Crystal
+mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal", "", <contenttweaker:stabilized_end_crystal>, 4, [<aspect:alienis> * 100,<aspect:auram> * 100,<aspect:sol> * 80,<aspect:lux> * 40,<aspect:fabrico> * 40], <minecraft:end_crystal>, [<thaumcraft:plate:2>,<thaumcraft:vis_resonator>,<thaumcraft:plate:2>,<enderutilities:enderpart:17>]);
 
 print("ENDING ContentTweakerRecipes.zs");

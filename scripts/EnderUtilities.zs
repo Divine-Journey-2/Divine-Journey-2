@@ -49,14 +49,20 @@ recipes.addShaped(<enderutilities:machine_1:2>, [[<enderutilities:enderpart:1>,<
 # Inactive Ender Core (Basic)
 recipes.remove(<enderutilities:enderpart:10>);
 recipes.addShaped(<enderutilities:enderpart:10>, [[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>],[<enderutilities:enderpart>,<quantumflux:craftingpiece:3>,<enderutilities:enderpart>],[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>]]);
+<enderutilities:enderpart:15>.addTooltip(format.white("Before being able to automate this, you have to"));
+<enderutilities:enderpart:15>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
 
 # Inactive Ender Core (Enhanced)
 recipes.remove(<enderutilities:enderpart:11>);
 recipes.addShaped(<enderutilities:enderpart:11>, [[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>],[<enderutilities:enderpart:1>,<enderutilities:enderpart:10>,<enderutilities:enderpart:1>],[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>]]);
+<enderutilities:enderpart:16>.addTooltip(format.white("Before being able to automate this, you have to"));
+<enderutilities:enderpart:16>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
 
 # Inactive Ender Core (Advanced)
 recipes.remove(<enderutilities:enderpart:12>);
 recipes.addShaped(<enderutilities:enderpart:12>, [[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>],[<enderutilities:enderpart:2>,<enderutilities:enderpart:11>,<enderutilities:enderpart:2>],[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>]]);
+<enderutilities:enderpart:17>.addTooltip(format.white("Before being able to automate this, you have to"));
+<enderutilities:enderpart:17>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
 
 # Ender Capacitor (Basic)
 recipes.remove(<enderutilities:endercapacitor>);

@@ -692,5 +692,10 @@ var matrix_multiplication_unit = VanillaFactory.createItem("matrix_multiplicatio
 matrix_multiplication_unit.rarity = "EPIC";
 matrix_multiplication_unit.glowing = true;
 matrix_multiplication_unit.register();
+val allThaumcraftAspects_ = ["aer", "terra", "ignis", "aqua", "ordo", "perditio", "vacuos", "lux", "motus", "gelum", "vitreus", "metallum", "victus", "mortuus", "potentia", "permutatio", "praecantatio", "auram", "alkimia", "vitium", "tenebrae", "alienis", "volatus", "herba", "instrumentum", "fabrico", "machina", "vinculum", "spiritus", "cognitio", "sensus", "aversio", "praemunio", "desiderium", "exanimis", "bestia", "humanus", "sol", "luna", "stellae", "diabolus"] as string[];
+for aspect in allThaumcraftAspects_ {
+	var condensed_vis_crystal = VanillaFactory.createItem("condensed_vis_crystal_" + aspect);
+	condensed_vis_crystal.register();
+}
 
 print("ENDING ContentTweakerItems.zs");

@@ -55,4 +55,7 @@ allFluix.addItems([<appliedenergistics2:material:7>, <appliedenergistics2:materi
 global allCertus as IOreDictEntry = <ore:allCertus>;
 allCertus.addItems([<appliedenergistics2:material>, <appliedenergistics2:material:1>, <appliedenergistics2:material:10>]);
 
+# Thaumcraft aspects
+global allThaumcraftAspects as string[] = ["aer", "terra", "ignis", "aqua", "ordo", "perditio", "vacuos", "lux", "motus", "gelum", "vitreus", "metallum", "victus", "mortuus", "potentia", "permutatio", "praecantatio", "auram", "alkimia", "vitium", "tenebrae", "alienis", "volatus", "herba", "instrumentum", "fabrico", "machina", "vinculum", "spiritus", "cognitio", "sensus", "aversio", "praemunio", "desiderium", "exanimis", "bestia", "humanus", "sol", "luna", "stellae", "diabolus"];
+
 print("ENDING GlobalVariables.zs");

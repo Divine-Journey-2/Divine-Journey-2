@@ -13,6 +13,9 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium>
 # Modular Fey Crafter Machine Blueprint
 recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:modular_fey_crafter"}), [<roots:fey_crafter>,<modularmachinery:itemmodularium>,<minecraft:paper>]);
 
+# Tender Ender Blender Machine Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tender_ender_blender"}), [[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>],[<minecraft:paper>,<botania:endereyeblock>,<minecraft:paper>],[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
@@ -42,5 +45,19 @@ recipes.addShaped(<modularmachinery:blockinputbus:2>, [[<modularmachinery:itemmo
 
 # Normal Item Output
 recipes.addShaped(<modularmachinery:blockoutputbus:2>, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<bloodmagic:blood_rune:6>,<modularmachinery:blockoutputbus:1>,<bloodmagic:blood_rune:6>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
+
+# Tiny Energy Input Hatch
+recipes.remove(<modularmachinery:blockenergyinputhatch>);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch>, [[null,<mekanism:energyupgrade>,null],[<mekanism:energyupgrade>,<modularmachinery:blockcasing>,<mekanism:energyupgrade>],[null,<mekanism:energyupgrade>,null]]);
+
+# Small Energy Input Hatch
+recipes.remove(<modularmachinery:blockenergyinputhatch:1>);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:1>, [[null,<teslacorelib:energy_tier1>,null],[<teslacorelib:energy_tier1>,<modularmachinery:blockenergyinputhatch>,<teslacorelib:energy_tier1>],[null,<teslacorelib:energy_tier1>,null]]);
+
+# Normal Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, [[null,<teslacorelib:energy_tier2>,null],[<teslacorelib:energy_tier2>,<modularmachinery:blockenergyinputhatch:1>,<teslacorelib:energy_tier2>],[null,<teslacorelib:energy_tier2>,null]]);
+
+# Reinforced Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, [[null,<contenttweaker:virtus>,null],[<contenttweaker:virtus>,<modularmachinery:blockenergyinputhatch:2>,<contenttweaker:virtus>],[null,<contenttweaker:virtus>,null]]);
 
 print("ENDING ModularMachinery.zs");

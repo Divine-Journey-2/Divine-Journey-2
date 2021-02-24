@@ -27,7 +27,7 @@ recipes.addShaped(<actuallyadditions:block_misc:8>, [[<thermalfoundation:storage
 
 # Atomic Reconstructor
 recipes.remove(<actuallyadditions:block_atomic_reconstructor>);
-recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<enderio:item_alloy_ingot:6>,<quantumflux:craftingpiece:4>,<enderio:item_alloy_ingot:6>],[<enderio:item_material:73>,<actuallyadditions:block_misc:9>,<mekanism:atomicdisassembler>],[<enderio:item_alloy_ingot:6>,<quantumflux:craftingpiece:4>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShapedMirrored(<actuallyadditions:block_atomic_reconstructor>, [[<enderio:item_alloy_ingot:6>,<quantumflux:craftingpiece:4>,<enderio:item_alloy_ingot:6>],[<enderio:item_material:73>,<actuallyadditions:block_misc:9>,<integrateddynamics:materializer>],[<enderio:item_alloy_ingot:6>,<quantumflux:craftingpiece:4>,<enderio:item_alloy_ingot:6>]]);
 
 # Basic Coil
 recipes.remove(<actuallyadditions:item_misc:7>);

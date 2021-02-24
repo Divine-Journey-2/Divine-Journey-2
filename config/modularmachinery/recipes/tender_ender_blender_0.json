@@ -1,0 +1,22 @@
+{
+    "machine": "tender_ender_blender",
+    "registryName": "tender_ender_blender_0",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderutilities:enderpart@10"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "enderutilities:enderpart@15"
+        }
+    ]
+}

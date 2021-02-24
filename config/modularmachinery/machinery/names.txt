@@ -1,0 +1,3 @@
+Tender Ender Blender - automating Ender Utilities crystal charging thingies
+Modular Mob Farm - outputs mob drops for power
+Modular Infusion Matrix - automates the Infusion Matrix

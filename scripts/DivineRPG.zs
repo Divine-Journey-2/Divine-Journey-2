@@ -180,4 +180,13 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:apalachia_block> * 14,
 [<thaumcraft:salis_mundus>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:salis_mundus>],
 [<thaumcraft:plate:2>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:salis_mundus>,<thaumcraft:plate:2>]]);
 
+# Skythern Block
+recipes.remove(<divinerpg:skythern_block>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:skythern_block> * 14,
+[[<contenttweaker:condensed_vis_crystal_auram>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_auram>],
+[<contenttweaker:condensed_vis_crystal_spiritus>,<thaumcraft:plate:2>,<divinerpg:skythern_heart>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_spiritus>],
+[<thaumcraft:morphic_resonator>,<thaumcraft:metal_alchemical>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_alchemical>,<thaumcraft:morphic_resonator>],
+[<contenttweaker:condensed_vis_crystal_spiritus>,<thaumcraft:plate:2>,<divinerpg:skythern_heart>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_spiritus>],
+[<contenttweaker:condensed_vis_crystal_auram>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_auram>]]);
+
 print("ENDING DivineRPG.zs");

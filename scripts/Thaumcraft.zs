@@ -11,6 +11,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 import mods.tconstruct.Alloy;
+import mods.thaumcraft.Infusion;
 
 print("STARTING Thaumcraft.zs");
 
@@ -343,6 +344,208 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:ArcaneSpa", "AR
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:infusion_matrix>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:InfusionMatrix", "INFUSION@2", 150, [<aspect:aer> * 64,<aspect:aqua> * 64,<aspect:ordo> * 64,<aspect:perditio> * 64,<aspect:terra> * 64,<aspect:ignis> * 64], <thaumcraft:infusion_matrix>, [[<thaumcraft:stone_arcane>,<contenttweaker:matrix_multiplication_unit>,<thaumcraft:stone_arcane>],[<thaumcraft:metal_thaumium>,<botania:dice>,<thaumcraft:metal_thaumium>],[<thaumcraft:stone_arcane>,<alchemistry:ingot:30>,<thaumcraft:stone_arcane>]]);
 
+# Essentia Resonator
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:resonator>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Resonator", "TUBES", 50, [<aspect:aer> * 5,<aspect:aqua> * 5,<aspect:ordo> * 2], <thaumcraft:resonator>, [[null,<immersiveengineering:material:1>,null],[null,<thaumcraft:vis_resonator>,<immersiveengineering:material:1>],[<thaumcraft:ingot:2>,null,null]]);
 
+# Arcane Pedestal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_arcane>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:ArcanePedestal", "INFUSION", 20, [<aspect:ordo> * 8,<aspect:terra> * 6], <thaumcraft:pedestal_arcane>, [[<bloodmagic:ritual_stone>,<bloodmagic:ritual_stone>,<bloodmagic:ritual_stone>],[null,<extendedcrafting:pedestal>,null],[<bloodmagic:ritual_stone>,<bloodmagic:ritual_stone>,<bloodmagic:ritual_stone>]]);
+
+# Alchemical Construct
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:AlchemicalConstruct", "TUBES", <thaumcraft:metal_alchemical>, 0, [<aspect:alkimia> * 20, <aspect:machina> * 20], <contenttweaker:cosmic_alloy>, [<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>,<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>]);
+
+# Auxillary Slurry Pump
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_aux>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:SmelterAux", "IMPROVEDSMELTING", 40, [<aspect:aer> * 5,<aspect:ignis> * 5], <thaumcraft:smelter_aux>, [[<thaumcraft:plank_greatwood>,<thaumcraft:tube_filter>,<thaumcraft:plank_greatwood>],[<thaumcraft:bellows>,<thaumcraft:metal_alchemical>,<thaumcraft:bellows>],[<thaumcraft:plank_greatwood>,<industrialforegoing:fluid_pump>,<thaumcraft:plank_greatwood>]]);
+
+# Auxillary Venting Port
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_vent>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:SmelterVent", "IMPROVEDSMELTING2", 40, [<aspect:aer> * 5,<aspect:perditio> * 5], <thaumcraft:smelter_vent>, [[<thaumcraft:plank_greatwood>,<thaumcraft:plate>,<thaumcraft:plank_greatwood>],[<thaumcraft:filter>,<thaumcraft:metal_alchemical>,<thaumcraft:filter>],[<thaumcraft:plank_greatwood>,<thaumcraft:plate>,<thaumcraft:plank_greatwood>]]);
+
+# Essentia Centrifuge
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:centrifuge>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Centrifuge", "CENTRIFUGE", 80, [<aspect:ordo> * 16,<aspect:perditio> * 16], <thaumcraft:centrifuge>, [[<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_simple>,<thaumcraft:plank_greatwood>],[<thaumcraft:morphic_resonator>,<thaumcraft:metal_alchemical>,<thaumcraft:morphic_resonator>],[<thaumcraft:plank_greatwood>,<thaumcraft:mechanism_complex>,<thaumcraft:plank_greatwood>]]);
+
+# Thaumium Essentia Smeltery
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_thaumium>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaSmelterThaumium", "ESSENTIASMELTERTHAUMIUM", 160, [<aspect:ignis> * 40,<aspect:aer> * 8], <thaumcraft:smelter_thaumium>, [[<thaumcraft:plate>,<thaumcraft:smelter_basic>,<thaumcraft:plate>],[<thaumcraft:plate:2>,<thaumcraft:metal_alchemical>,<thaumcraft:plate:2>],[<thaumcraft:plate:2>,<thaumcraft:metal_alchemical>,<thaumcraft:plate:2>]]);
+
+# Clockwork Mind
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mind>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:MindClockwork", "MINDCLOCKWORK@2", 20, [<aspect:ordo> * 4,<aspect:ignis> * 2,<aspect:terra> * 2], <thaumcraft:mind>, [[<botania:elfglass>,<thaumcraft:mechanism_simple>,<botania:elfglass>],[<botania:elfglass>,<botania:rune:1>,<botania:elfglass>],[<thaumcraft:plate>,<thaumcraft:plate>,<thaumcraft:plate>]]);
+
+# Mnemonic Matrix
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:brain_box>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:MnemonicMatrix", "THAUMATORIUM", 40, [<aspect:ordo> * 4,<aspect:terra> * 4], <thaumcraft:brain_box>, [[<thaumcraft:stone_arcane>,<thaumcraft:amber_block>,<thaumcraft:stone_arcane>],[<thaumcraft:amber_block>,<thaumcraft:mind>,<thaumcraft:amber_block>],[<thaumcraft:stone_arcane>,<thaumcraft:amber_block>,<thaumcraft:stone_arcane>]]);
+
+# Potion Sprayer
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:potion_sprayer>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:PotionSprayer", "POTIONSPRAYER", 60, [<aspect:aqua> * 5,<aspect:ignis> * 5], <thaumcraft:potion_sprayer>, [[<thaumcraft:plate>,<thaumcraft:plank_greatwood>,<thaumcraft:plate>],[<thaumcraft:plank_greatwood>,<thaumcraft:metal_alchemical>,<thaumcraft:plank_greatwood>],[<thaumcraft:plate>,<bloodmagic:alchemy_table>,<thaumcraft:plate>]]);
+
+# Filling Essentia Transfuser
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportIn", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_input>, [[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:30>],[<thaumcraft:smelter_aux>,<thaumcraft:metal_alchemical>,<thaumcraft:tube_buffer>],[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:30>]]);
+
+# Emptying Essentia Transfuser
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportOut", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_output>, [[<alchemistry:ingot:30>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>],[<thaumcraft:tube_buffer>,<thaumcraft:metal_alchemical>,<thaumcraft:smelter_vent>],[<alchemistry:ingot:30>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>]]);
+
+# Fancy Amulet
+recipes.remove(<thaumcraft:baubles:4>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyAmulet", "", <thaumcraft:baubles:4>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+
+# Fancy Ring
+recipes.remove(<thaumcraft:baubles:5>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyRing", "", <thaumcraft:baubles:5>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:1>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+
+# Fancy Belt
+recipes.remove(<thaumcraft:baubles:6>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyBelt", "", <thaumcraft:baubles:6>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:2>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+
+# Blank Advanced Focus
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_2", "FOCUSADVANCED@1", <thaumcraft:focus_2>, 1, [<aspect:vitreus> * 80,<aspect:praecantatio> * 40,<aspect:ordo> * 40,<aspect:instrumentum> * 40,<aspect:auram> * 20], <thaumcraft:focus_1>, [<alchemistry:ingot:30>,<thaumcraft:alumentum>,<thaumcraft:ingot>,<thaumcraft:vis_resonator>,<thaumcraft:alumentum>,<thaumcraft:ingot>]);
+
+# Arcane Lamp
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:lamp_arcane>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:ArcaneLamp", "ARCANELAMP", 20, [<aspect:ignis> * 8,<aspect:aer> * 4], <thaumcraft:lamp_arcane>, [[<thaumcraft:plate>,<thaumcraft:amber_block>,<thaumcraft:plate>],[<thaumcraft:amber_block>,<thaumcraft:nitor_yellow>,<thaumcraft:amber_block>],[<thaumcraft:plate>,<thaumcraft:amber_block>,<thaumcraft:plate>]]);
+
+# Lamp of Fertility
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:lamp_fertility>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:LampFertility", "LAMPFERTILITY", <thaumcraft:lamp_fertility>, 2, [<aspect:lux> * 40,<aspect:sol> * 20,<aspect:desiderium> * 20,<aspect:victus> * 20,<aspect:bestia> * 20], <thaumcraft:lamp_arcane>, [<thaumcraft:ingot>,<botania:quartz:3>,<thaumcraft:ingot>,<botania:rune:4>]);
+
+# Lamp of Growth
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:lamp_growth>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:LampGrowth", "LAMPGROWTH", <thaumcraft:lamp_growth>, 2, [<aspect:lux> * 40,<aspect:sol> * 20,<aspect:desiderium> * 20,<aspect:victus> * 20,<aspect:herba> * 20], <thaumcraft:lamp_arcane>, [<thaumcraft:ingot>,<botania:quartz:3>,<thaumcraft:ingot>,<botania:rune:5>]);
+
+# Magic Mirror
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Mirror", "MIRROR", <thaumcraft:mirror>, 1, [<aspect:permutatio> * 40,<aspect:motus> * 30,<aspect:desiderium> * 30,<aspect:vacuos> * 20], <thaumcraft:mirrored_glass>, [<contenttweaker:holy_core>,<contenttweaker:rune_of_deception>,<contenttweaker:holy_core>,<alchemistry:ingot:30>]);
+
+# Magic Hand Mirror
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:hand_mirror>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:MirrorHand", "MIRRORHAND", <thaumcraft:hand_mirror>, 2, [<aspect:instrumentum> * 60,<aspect:motus> * 60,<aspect:humanus> * 20], <thaumcraft:mirror>, [<thaumcraft:ingot>,<botania:rune:11>,<thaumcraft:ingot>,<botania:autocraftinghalo>]);
+
+# Essentia Mirror
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror_essentia>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:MirrorEssentia", "MIRRORESSENTIA", <thaumcraft:mirror_essentia>, 1, [<aspect:motus> * 40,<aspect:aqua> * 40,<aspect:permutatio> * 30,<aspect:auram> * 20,<aspect:ordo> * 10], <thaumcraft:mirror>, [<thaumcraft:ingot>,<thaumcraft:ingot>,<thaumcraft:ingot>,<botania:rune:9>]);
+
+# Automated Crossbow
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:AutomatedCrossbow", "BASICTURRET", 60, [<aspect:aer> * 5], <thaumcraft:turret>, [[<botania:crystalbow>,<thaumcraft:mechanism_simple>,<thaumcraft:plate>],[<thaumcraft:plank_greatwood>,<thaumcraft:mind>,<thaumcraft:plank_greatwood>],[<thaumcraft:plank_greatwood>,null,<thaumcraft:plank_greatwood>]]);
+
+# Advanced Automated Crossbow
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret:1>);
+<thaumcraft:turret:1>.addTooltip(format.white("Item disabled. unmodifiable loot table."));
+
+# Biothaumic Mind
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mind:1>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:MindBiothaumic", "MINDBIOTHAUMIC", <thaumcraft:mind:1>, 3, [<aspect:cognitio> * 60,<aspect:machina> * 40,<aspect:herba> * 30,<aspect:bestia> * 10], <thaumcraft:mind>, [<thaumcraft:brain>,<botania:rune:2>,<thaumcraft:brain>,<thaumcraft:mechanism_complex>]);
+
+# Arcane Bore
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:turret:2>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ArcaneBore", "ARCANEBORE", <thaumcraft:turret:2>, 3, [<aspect:machina> * 120,<aspect:potentia> * 80,<aspect:ignis> * 60,<aspect:terra> * 60,<aspect:vacuos> * 40,<aspect:motus> * 40], <thaumcraft:turret>, [<thaumcraft:mechanism_complex>,<thaumcraft:morphic_resonator>,<thaumcraft:plate>,<thaumcraft:nugget:10>,<industrialforegoing:laser_drill>,<thaumcraft:mechanism_complex>,<thaumcraft:morphic_resonator>,<thaumcraft:plate>,<thaumcraft:nugget:10>,<industrialforegoing:laser_base>]);
+
+# Headband of Curiosity
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:curiosity_band>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CuriosityBand", "CURIOSITYBAND", <thaumcraft:curiosity_band>, 3, [<aspect:cognitio> * 200,<aspect:vinculum> * 150,<aspect:humanus> * 50,<aspect:volatus> * 50,<aspect:vacuos> * 50], <thaumcraft:baubles:6>, [<thaumcraft:scribing_tools>,<actuallyadditions:block_crystal_empowered:4>,<thaumcraft:scribing_tools>,<actuallyadditions:block_xp_solidifier>]);
+
+# Infusion Speed Stone
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:matrix_speed>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:MatrixMotion", "INFUSIONBOOST", 500, [<aspect:aer> * 16,<aspect:ordo> * 16], <thaumcraft:matrix_speed>, [[<thaumcraft:stone_arcane>,<thaumcraft:nitor_white>,<thaumcraft:stone_arcane>],[<thaumcraft:nitor_white>,<botania:rune:12>,<thaumcraft:nitor_white>],[<thaumcraft:stone_arcane>,<thaumcraft:nitor_white>,<thaumcraft:stone_arcane>]]);
+
+# Infusion Cost Stone
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:matrix_cost>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:MatrixCost", "INFUSIONBOOST", 500, [<aspect:aer> * 16,<aspect:perditio> * 16], <thaumcraft:matrix_cost>, [[<thaumcraft:stone_arcane>,<thaumcraft:nitor_white>,<thaumcraft:stone_arcane>],[<thaumcraft:nitor_white>,<botania:rune:11>,<thaumcraft:nitor_white>],[<thaumcraft:stone_arcane>,<thaumcraft:nitor_white>,<thaumcraft:stone_arcane>]]);
+
+# Flux Condenser
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:condenser>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Condenser", "FLUXCLEANUP", 500, [<aspect:aer> * 32,<aspect:aqua> * 32,<aspect:perditio> * 32], <thaumcraft:condenser>, [[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>],[<thaumcraft:morphic_resonator>,<contenttweaker:condensed_vis_crystal_vitium>,<thaumcraft:morphic_resonator>],[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>]]);
+
+# Flux Condenser Lattice
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:condenser_lattice>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:CondenserLattice", "FLUXCLEANUP", 200, [<aspect:aer> * 16,<aspect:terra> * 16], <thaumcraft:condenser_lattice>, [[<botania:quartz:6>,<thaumcraft:plate:2>,<botania:quartz:6>],[<contenttweaker:condensed_vis_crystal_vitreus>,<thaumcraft:filter>,<contenttweaker:condensed_vis_crystal_vitreus>],[<botania:quartz:6>,<thaumcraft:plate:2>,<botania:quartz:6>]]);
+
+# Boots of the Traveller
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:traveller_boots>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:BootsTraveller", "BOOTSTRAVELLER", <thaumcraft:traveller_boots>, 5, [<aspect:motus> * 120,<aspect:volatus> * 120,<aspect:praemunio> * 20], <thaumcraft:cloth_boots>, [<thaumcraft:fabric>,<contenttweaker:magical_leather>,<botania:supertravelbelt>,<contenttweaker:magical_leather>,<thaumcraft:fabric>,<botania:terrasteelboots>]);
+
+# Axe of the Stream
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_axe>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalAxe", "ELEMENTALTOOLS", <thaumcraft:elemental_axe>.withTag({infench: [{lvl: 1 as short, id: 2 as short}, {lvl: 1 as short, id: 0 as short}]}), 2, [<aspect:aqua> * 100,<aspect:instrumentum> * 80,<aspect:herba> * 60,<aspect:aversio> * 40], <thaumcraft:thaumium_axe>, [<thaumcraft:ingot>,<thaumcraft:ingot>,<thaumcraft:ingot>,<enderutilities:enderpart:20>,<thaumcraft:nugget:10>,<contenttweaker:condensed_vis_crystal_aqua>,<contenttweaker:condensed_vis_crystal_aqua>,<thaumcraft:ingot>]);
+
+# Pickaxe of the Core
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_pick>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalPick", "ELEMENTALTOOLS", <thaumcraft:elemental_pick>.withTag({infench: [{lvl: 1 as short, id: 4 as short}, {lvl: 2 as short, id: 3 as short}]}), 2, [<aspect:ignis> * 100,<aspect:instrumentum> * 80,<aspect:aversio> * 40,<aspect:metallum> * 30,<aspect:sensus> * 30], <thaumcraft:thaumium_pick>, [<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_ignis>,<thaumcraft:ingot>,<thaumcraft:nugget:10>,<enderutilities:enderpart:20>,<thaumcraft:nugget:10>,<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_ignis>]);
+
+# Sword of the Zephyr
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_sword>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalSword", "ELEMENTALTOOLS", <thaumcraft:elemental_sword>.withTag({infench: [{lvl: 2 as short, id: 5 as short}]}), 2, [<aspect:aer> * 100,<aspect:aversio> * 80,<aspect:motus> * 60,<aspect:instrumentum> * 40], <thaumcraft:thaumium_sword>, [<thaumcraft:ingot>,<thaumcraft:nugget:10>,<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_aer>,<enderutilities:enderpart:20>,<contenttweaker:condensed_vis_crystal_aer>,<thaumcraft:ingot>,<thaumcraft:nugget:10>]);
+
+# Shovel of the Eathmover
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_shovel>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalShovel", "ELEMENTALTOOLS", <thaumcraft:elemental_shovel>.withTag({infench: [{lvl: 1 as short, id: 1 as short}]}), 2, [<aspect:terra> * 100,<aspect:instrumentum> * 80,<aspect:fabrico> * 60,<aspect:herba> * 40], <thaumcraft:thaumium_shovel>, [<thaumcraft:ingot>,<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:nugget:10>,<enderutilities:enderpart:20>,<thaumcraft:nugget:10>,<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:ingot>]);
+
+# Hoe of Growth
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_hoe>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalHoe", "ELEMENTALTOOLS", <thaumcraft:elemental_hoe>, 2, [<aspect:ordo> * 100,<aspect:instrumentum> * 80,<aspect:herba> * 60,<aspect:perditio> * 40], <thaumcraft:thaumium_hoe>, [<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<thaumcraft:nugget:10>,<enderutilities:enderpart:20>,<thaumcraft:nugget:10>,<thaumcraft:ingot>,<thaumcraft:ingot>]);
+
+# Thaumium Fortress Helm
+mods.thaumcraft.Infusion.removeRecipe("thaumcraft:ThaumiumFortressHelm");
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ThaumiumFortressHelm", "ARMORFORTRESS", <thaumcraft:fortress_helm>, 3, [<aspect:praemunio> * 100,<aspect:metallum> * 60,<aspect:potentia> * 40], <thaumcraft:thaumium_helm>, [<thaumcraft:plate>,<thaumcraft:plate:2>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<thaumcraft:plate:2>,<thaumcraft:plate>,<thaumcraft:plate>]);
+
+# Thaumium Fortress Cuirass
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_chest>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ThaumiumFortressChest", "ARMORFORTRESS", <thaumcraft:fortress_chest>, 3, [<aspect:praemunio> * 100,<aspect:metallum> * 60,<aspect:potentia> * 40], <thaumcraft:thaumium_chest>, [<contenttweaker:magical_leather>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:magical_leather>,<thaumcraft:plate>]);
+
+# Thaumium Fortress Thigh Guards
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_legs>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ThaumiumFortressLegs", "ARMORFORTRESS", <thaumcraft:fortress_legs>, 3, [<aspect:praemunio> * 100,<aspect:metallum> * 60,<aspect:potentia> * 40], <thaumcraft:thaumium_legs>, [<contenttweaker:magical_leather>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:magical_leather>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:magical_leather>,<thaumcraft:plate>]);
+
+# Blank Seal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:seal>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:SealBlank", "CONTROLSEALS", 20, [<aspect:ignis> * 4,<aspect:ordo> * 2,<aspect:terra> * 2,<aspect:aer>], <thaumcraft:seal>, [[<mekanism:plasticblock:1>,<thaumcraft:nitor_red>,<mekanism:plasticblock:1>],[<thaumcraft:tallow>,<botania:rune:13>,<thaumcraft:tallow>],[<mekanism:plasticblock:1>,<thaumcraft:nitor_red>,<mekanism:plasticblock:1>]]);
+
+# Control Seal: Harvest
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:7>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:SealHarvest", "SEALHARVEST", <thaumcraft:seal:7>, 1, [<aspect:herba> * 30,<aspect:humanus> * 30,<aspect:sensus> * 20], <thaumcraft:seal>, [<mysticalagriculture:crafting:6>,<mysticalagriculture:crafting:6>,<enderio:block_farm_station>]);
+
+# Control Seal: Butcher
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:8>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:SealButcher", "SEALBUTCHER", <thaumcraft:seal:8>, 1, [<aspect:bestia> * 30,<aspect:humanus> * 30,<aspect:sensus> * 20], <thaumcraft:seal>, [<contenttweaker:condensed_vis_crystal_bestia>,<thaumcraft:thaumium_sword>,<industrialforegoing:animal_byproduct_recolector>]);
+
+# Control Seal: Block Breaker
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:SealBreak", "SEALBREAK", <thaumcraft:seal:12>, 1, [<aspect:instrumentum> * 30,<aspect:perditio> * 30,<aspect:sensus> * 20], <thaumcraft:seal>, [<thaumcraft:thaumium_pick>,<thaumcraft:thaumium_shovel>,<openblocks:block_breaker>]);
+
+# Golemancer's Bell
+recipes.remove(<thaumcraft:golem_bell>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("GolemBell", "", 50, [<aspect:ordo> * 10,<aspect:perditio> * 10,<aspect:terra> * 5], <thaumcraft:golem_bell>, [[null,<thaumcraft:plate:2>,<thaumcraft:vis_resonator>],[null,<thaumcraft:mechanism_simple>,<thaumcraft:plate:2>],[<enderutilities:enderpart:20>,null,null]]);
+
+# Brain in a Jar
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:jar_brain>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:JarBrain", "JARBRAIN", <thaumcraft:jar_brain>, 5, [<aspect:cognitio> * 60,<aspect:exanimis> * 50,<aspect:sensus> * 30], <thaumcraft:jar_normal>, [<botania:rune:15>,<thaumcraft:brain>,<botania:rune:11>,<thaumcraft:ingot>]);
+
+# Vision Module
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:module>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:modvision", "GOLEMVISION", 50, [<aspect:aqua> * 6], <thaumcraft:module>, [[<thaumcraft:phial>,null,<thaumcraft:phial>],[<botania:quartz:4>,null,<botania:quartz:4>],[<thaumcraft:plate>,<thaumcraft:mechanism_simple>,<thaumcraft:plate>]]);
+
+# Aggression Module
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:module:1>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:modaggression", "SEALGUARD", 50, [<aspect:ignis> * 6], <thaumcraft:module:1>, [[null,<thaumcraft:phial>,null],[<thaumcraft:phial>,<botania:quartz:4>,<thaumcraft:phial>],[<thaumcraft:plate>,<thaumcraft:mechanism_simple>,<thaumcraft:plate>]]);
+
+# Redstone Inlay
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:inlay>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTABLE", <thaumcraft:inlay>, 2, [<aspect:potentia> * 20,<aspect:ignis> * 10], <thermaldynamics:relay>, [<contenttweaker:fire_core>,<thaumcraft:ingot>,<enderio:block_alloy:3>]);
+
+# Stabilizer
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Stabilizer", "INFUSIONSTABLE", <thaumcraft:stabilizer>, 4, [<aspect:machina> * 100,<aspect:ordo> * 100,<aspect:potentia> * 60,<aspect:vacuos> * 30], <thaumcraft:mechanism_complex>, [<thaumcraft:inlay>,<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>,<thaumcraft:plate:2>,<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:inlay>]);
+
+# Void Seed
+<thaumcraft:void_seed>.addTooltip(format.white("Obtained by throwing a Causality Collapser on a"));
+<thaumcraft:void_seed>.addTooltip(format.white("Flux Rift, or using a Void Siphon in the same chunk."));
 
 print("ENDING Thaumcraft.zs");
