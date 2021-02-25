@@ -578,4 +578,7 @@ addMaterialToDustCrushingWOPetrotheum(<contenttweaker:rainbow_tablet>, <thaumcra
 # Quartz Sliver
 addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> * 16);
 
+# Tier 1 Mob Chunk
+addMaterialToDustCrushingWOPetrotheum(<openblocks:trophy:*>, <mysticalagriculture:chunk>);
+
 print("ENDING OreProcessingAdditions.zs");

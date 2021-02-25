@@ -493,7 +493,7 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:elemental_hoe>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ElementalHoe", "ELEMENTALTOOLS", <thaumcraft:elemental_hoe>, 2, [<aspect:ordo> * 100,<aspect:instrumentum> * 80,<aspect:herba> * 60,<aspect:perditio> * 40], <thaumcraft:thaumium_hoe>, [<thaumcraft:ingot>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<thaumcraft:nugget:10>,<enderutilities:enderpart:20>,<thaumcraft:nugget:10>,<thaumcraft:ingot>,<thaumcraft:ingot>]);
 
 # Thaumium Fortress Helm
-mods.thaumcraft.Infusion.removeRecipe("thaumcraft:ThaumiumFortressHelm");
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_helm>.withTag(null));
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:ThaumiumFortressHelm", "ARMORFORTRESS", <thaumcraft:fortress_helm>, 3, [<aspect:praemunio> * 100,<aspect:metallum> * 60,<aspect:potentia> * 40], <thaumcraft:thaumium_helm>, [<thaumcraft:plate>,<thaumcraft:plate:2>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<thaumcraft:plate:2>,<thaumcraft:plate>,<thaumcraft:plate>]);
 
 # Thaumium Fortress Cuirass
@@ -542,7 +542,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTA
 
 # Stabilizer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Stabilizer", "INFUSIONSTABLE", <thaumcraft:stabilizer>, 4, [<aspect:machina> * 100,<aspect:ordo> * 100,<aspect:potentia> * 60,<aspect:vacuos> * 30], <thaumcraft:mechanism_complex>, [<thaumcraft:inlay>,<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>,<thaumcraft:plate:2>,<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:inlay>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Stabilizer", "INFUSIONSTABLE", <thaumcraft:stabilizer>, 4, [<aspect:machina> * 100,<aspect:ordo> * 100,<aspect:potentia> * 60,<aspect:vacuos> * 30], <thaumcraft:mechanism_complex>, [<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>,<thaumcraft:plate:2>,<thaumcraft:inlay>,<thaumcraft:plate:2>,<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:inlay>]);
 
 # Void Seed
 <thaumcraft:void_seed>.addTooltip(format.white("Obtained by throwing a Causality Collapser on a"));
