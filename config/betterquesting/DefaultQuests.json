@@ -244,7 +244,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Cleaning up EnderIO...",
-          "desc:8": "Craft a Stellar Alloy Ingot, the highest tier EnderIO material!\n\nIf you have enough, you can craft one of the best types of Armor sets: The Stellar Armor set. It\u0027s similarly upgradable as the Dark Steel Armor set, but gives even more protection!"
+          "desc:8": "Craft a Stellar Alloy Ingot, the highest tier EnderIO material!"
         }
       },
       "tasks:9": {
@@ -4323,7 +4323,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:menril_sapling",
@@ -4390,7 +4390,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:crystalized_menril_chunk",
@@ -4460,7 +4460,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:variable",
@@ -4524,7 +4524,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:squeezer",
@@ -4594,7 +4594,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:cable",
@@ -4658,7 +4658,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:mechanical_squeezer",
@@ -4728,7 +4728,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integratedtunnels:part_importer_world_item_item",
@@ -4804,7 +4804,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -4876,7 +4876,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:part_inventory_reader_item",
@@ -4939,7 +4939,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:logic_programmer",
@@ -5009,7 +5009,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:variablestore",
@@ -5079,7 +5079,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:materializer",
@@ -5143,7 +5143,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integrateddynamics:logic_director",
@@ -5207,7 +5207,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "integratedtunnels:part_importer_world_block_item",
@@ -5277,7 +5277,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:pedestal_arcane",
@@ -5330,7 +5330,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:infusion_matrix",
@@ -5381,7 +5381,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:stabilized_end_crystal",
@@ -5477,7 +5477,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumicaugmentation:material",
@@ -5528,7 +5528,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "extendedcrafting:crafting_core",
@@ -5585,7 +5585,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "extendedcrafting:material",
@@ -5637,7 +5637,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:crucible",
@@ -5688,7 +5688,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:smelter_vent",
@@ -5740,7 +5740,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:metal_alchemical",
@@ -5791,7 +5791,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:knowledge_of_the_sky",
@@ -5842,7 +5842,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "divinerpg:apalachia_block",
@@ -5893,7 +5893,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:smelter_aux",
@@ -5944,7 +5944,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:salis_mundus",
@@ -5993,7 +5993,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "minecraft:nether_star",
@@ -6027,7 +6027,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:research_table",
@@ -6078,7 +6078,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -6135,7 +6135,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:table_wood",
@@ -6186,7 +6186,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "divinerpg:skythern_block",
@@ -6237,7 +6237,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:tube",
@@ -6288,7 +6288,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:smelter_basic",
@@ -6339,7 +6339,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:matrix_multiplication_unit",
@@ -6390,7 +6390,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:arcane_workbench",
@@ -6442,7 +6442,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -6499,7 +6499,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:magical_leather",
@@ -6550,7 +6550,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:mechanism_simple",
@@ -6601,7 +6601,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:ingot",
@@ -6652,7 +6652,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:spa",
@@ -6716,7 +6716,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:mechanism_complex",
@@ -6767,7 +6767,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:jar_brain",
@@ -6818,7 +6818,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:brain_box",
@@ -6869,7 +6869,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "alchemistry:ingot",
@@ -6920,7 +6920,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:jar_void",
@@ -6971,7 +6971,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:jar_normal",
@@ -7028,7 +7028,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:ingot",
@@ -7079,7 +7079,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -7136,7 +7136,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:table_stone",
@@ -7187,7 +7187,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:tube_buffer",
@@ -7238,7 +7238,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:tube_valve",
@@ -7307,7 +7307,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -7364,7 +7364,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -7421,7 +7421,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:smelter_thaumium",
@@ -7472,7 +7472,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:centrifuge",
@@ -7523,7 +7523,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -7580,7 +7580,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -7637,7 +7637,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "contenttweaker:base_focal_sphere",
@@ -7688,7 +7688,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:essentia_input",
@@ -7740,7 +7740,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:arcane_workbench_charger",
@@ -7791,7 +7791,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:vis_resonator",
@@ -7843,7 +7843,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:wand_workbench",
@@ -7894,7 +7894,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:alembic",
@@ -7945,7 +7945,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:label",
@@ -8002,7 +8002,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "id:8": "thaumcraft:matrix_speed",
@@ -8187,7 +8187,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -8205,7 +8205,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "New outfit? Fancy!",
-          "desc:8": "Craft a set of Thaumaturge Armor! Using this you\u0027ll get a fair amount of Vis cost reduction on Arcane Workbench crafts.\n\nBy placing a set of Armor on a BiblioCraft Armor Stand with a Redstone Block below, you can easily swap between the set displayed and the set you\u0027re currently wearing. Handy!"
+          "desc:8": "Craft a set of Thaumaturge Armor! Using this you\u0027ll get a fair amount of Vis cost reduction on Arcane Workbench crafts.\n\nBy placing a set of Armor on a BiblioCraft Armor Stand with a Redstone Block below, you can easily swap between the set displayed and the set you\u0027re currently wearing. Handy!\n\n(To obtain Crystallzed Alumina for Alumentum, combine Crystallized Aluminum and Oxygen Shards, and combine them into Crystallized Alumina.)"
         }
       },
       "tasks:9": {
@@ -8281,7 +8281,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -11862,7 +11862,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "I CAN BARELY HEAR YOU!!!",
-          "desc:8": "Craft the required components for the Diesel Generator! This is a great source of energy when Biodiesel is fully automated. You can easily run a medium sized ME System with a couple Biodiesel Generators.\n\nCheck your Engineer\u0027s Manual -\u003e Powers, Wires, Generators -\u003e Diesel Generator to see how to create the multiblock. To form it, click on the central Generator Block.\n\nTo provide it with fuel, place a Biodiesel Tank or Fluid Pipes pushing into the front corner. Then connect some Wires to one of the 3 connectors on the top. This will distribute 4096 IF/tick between all connectors. Once you\u0027ve routed the power, you\u0027ll notice that THE MACHINE IS INCREDIBLY LOUD AND OH MY GOSH I CAN\u0027T HEAR MY FOOTSTEPS AND IT\u0027S NOT EVEN POSSIBLE TO MUFFLE IT WITH EXTRA UTILITIES SOUND MUFFLERS, AND I WISH I HAD BUILT IT FARTHER AWAY FROM MY BASE, TIME TO TEAR IT DOWN.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required components for the Diesel Generator! This is a great source of energy when Biodiesel is fully automated. You can easily run a medium sized ME System with a couple Biodiesel Generators.\n\nCheck your Engineer\u0027s Manual -\u003e Powers, Wires, Generators -\u003e Diesel Generator to see how to create the multiblock. To form it, click on the central Generator Block.\n\nTo provide it with fuel, place a Biodiesel Tank or Fluid Pipes pushing into the front corner. Then connect some Wires to one of the 3 connectors on the top. This will distribute 4096 IF/tick between all connectors. Once you\u0027ve routed the power, you\u0027ll notice that THE MACHINE IS INCREDIBLY LOUD AND OH MY GOSH I CAN\u0027T HEAR MY FOOTSTEPS AND IT\u0027S NOT EVEN POSSIBLE TO MUFFLE IT WITH EXTRA UTILITIES SOUND MUFFLERS, AND I WISH I HAD BUILT IT FARTHER AWAY FROM MY BASE, TIME TO TEAR IT DOWN.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -12347,7 +12347,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Beep-Boop, Sqee-Sqoo!",
-          "desc:8": "Craft the required components for a Sqeezer! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Squeezer on how it\u0027s formed. Then click on the central Barrel from the side to complete the multiblock!\n\nPower\u0027s supplied from the top through the orange dot. Input items from the back through the blue dots (use Hoppers or push item with Item Ducts and Servos), and output Fluids on the lower front, Items on the upper front.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required components for a Sqeezer! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Squeezer on how it\u0027s formed. Then click on the central Barrel from the side to complete the multiblock!\n\nPower\u0027s supplied from the top through the orange dot. Input items from the back through the blue dots (use Hoppers or push item with Item Ducts and Servos), and output Fluids on the lower front, Items on the upper front.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -12385,7 +12385,7 @@
             },
             "4:10": {
               "id:8": "immersiveengineering:wooden_device0",
-              "Count:3": 1,
+              "Count:3": 4,
               "Damage:2": 1,
               "OreDict:8": ""
             },
@@ -12533,7 +12533,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Automate all the things!",
-          "desc:8": "Like the Engineer\u0027s Workbench! So craft the required components for one (though you might want to craft more, for different Blueprints and outputs), and check your Engineer\u0027s Manual -\u003e Simple Machines -\u003e Automated Workbench on how to create the multiblock. To form it, click on the slab closer to the center from the side. Now you can input a Blueprint, and select the item you wish to craft. Item input is on the back (where the conveyors are running from, you\u0027ll need to use a Hopper or push items into it), output is on the front (where the conveyors are running to).\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Like the Engineer\u0027s Workbench! So craft the required components for one (though you might want to craft more, for different Blueprints and outputs), and check your Engineer\u0027s Manual -\u003e Simple Machines -\u003e Automated Workbench on how to create the multiblock. To form it, click on the slab closer to the center from the side. Now you can input a Blueprint, and select the item you wish to craft. Item input is on the back (where the conveyors are running from, you\u0027ll need to use a Hopper or push items into it), output is on the front (where the conveyors are running to).\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -12749,7 +12749,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Pressing Matters",
-          "desc:8": "Craft the required materials for a Metal Press. Then check your Engineer\u0027s Manual on Heavy Machinery -\u003e Metal Press to find out how to construct it. Once you\u0027ve placed down the blocks, right click on the central Piston to form the Multiblock! You can also rotate the Piston with your Engineer\u0027s Hammer to make it face down.\n\nOnce formed, Right Click on the face of the Press with a Mold! Provide Power from the top using a Wire Connector, provide inputs from a Chest or Conveyor Belt on the front, and obtain outputs from the back!\n\nPlates, Rods and Wires crafted through the Metal Press are half as expensive as crafting them in the Crafting Table.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required materials for a Metal Press. Then check your Engineer\u0027s Manual on Heavy Machinery -\u003e Metal Press to find out how to construct it. Once you\u0027ve placed down the blocks, right click on the central Piston to form the Multiblock! You can also rotate the Piston with your Engineer\u0027s Hammer to make it face down.\n\nOnce formed, Right Click on the face of the Press with a Mold! Provide Power from the top using a Wire Connector, provide inputs from a Chest or Conveyor Belt on the front, and obtain outputs from the back!\n\nPlates, Rods and Wires crafted through the Metal Press are half as expensive as crafting them in the Crafting Table.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -13204,7 +13204,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Is this how wine is made?",
-          "desc:8": "Craft the required components for a Fermenter! Check your Engineer\u0027s Manual on how the multiblock is formed at Heavy Machinery -\u003e Fermenter.\n\nTo form the multiblock, click on the central Cauldron from the side. Once formed, Item Input will be on the back or side (blue dots, use Hoppers or push items with Itemducts and Servos) and Fluid output will be on the lower front (orange dot). Of course you\u0027ll need to provide power for the machine through the orange dot on the back (facing up).\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required components for a Fermenter! Check your Engineer\u0027s Manual on how the multiblock is formed at Heavy Machinery -\u003e Fermenter.\n\nTo form the multiblock, click on the central Cauldron from the side. Once formed, Item Input will be on the back or side (blue dots, use Hoppers or push items with Itemducts and Servos) and Fluid output will be on the lower front (orange dot). Of course you\u0027ll need to provide power for the machine through the orange dot on the back (facing up).\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -13435,7 +13435,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Coke\u0027s not just a drink",
-          "desc:8": "Craft 27 Coke Bricks! JEI shows some Coke Bricks from Chisel, so make sure to craft the right one: the one from Immersive Engineering.\n\nThen set them up in a 3x3x3 cube! Finally, right click on one of the faces with your Enginner\u0027s Hammer to create a Coke Oven!\n\nInsert some Coal in the left slot and some kind of liquid storage in the top right slot (Buckets, various Tanks, etc.)! The Oven will automatically transform the Coal into Coal Coke, and fill the Bucket/Tank with Creosote Oil.\n\nMake sure to keep emptying the Creosote, otherwise the Oven will stop functioning.\n\nIt\u0027s also possible (and recommended) to automate extraction and insertion of Coal, Coal Coke, and Creosote Oil using Hoppers and Pipes. Feed Coal from the top, remove Coal Coke from the bottom, and pipe out Creosite Oil from one of the sides (in this case, Buckets/Tanks aren\u0027t even needed).\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft 27 Coke Bricks! JEI shows some Coke Bricks from Chisel, so make sure to craft the right one: the one from Immersive Engineering.\n\nThen set them up in a 3x3x3 cube! Finally, right click on one of the faces with your Enginner\u0027s Hammer to create a Coke Oven!\n\nInsert some Coal in the left slot and some kind of liquid storage in the top right slot (Buckets, various Tanks, etc.)! The Oven will automatically transform the Coal into Coal Coke, and fill the Bucket/Tank with Creosote Oil.\n\nMake sure to keep emptying the Creosote, otherwise the Oven will stop functioning.\n\nIt\u0027s also possible (and recommended) to automate extraction and insertion of Coal, Coal Coke, and Creosote Oil using Hoppers and Pipes. Feed Coal from the top, remove Coal Coke from the bottom, and pipe out Creosite Oil from one of the sides (in this case, Buckets/Tanks aren\u0027t even needed).\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -13766,7 +13766,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "#BLASST",
-          "desc:8": "Craft 27 Blast Bricks! Then set them up in a 3x3x3 cube and Right Click on one of the faces with your Engineer\u0027s Hammer!\n\nThis machine creates Steel and Slag when provided with Iron Ingots and Coal Coke.\n\nUnlike the Coke Oven however, it\u0027s not possible to automate it. You\u0027ll need to craft an Improved Blast Furnace, Arc Furnace or progress far enough until your reach Thermal Expansion if you want to automate Steel production."
+          "desc:8": "Craft 27 Blast Bricks! Then set them up in a 3x3x3 cube and Right Click on one of the faces with your Engineer\u0027s Hammer!\n\nThis machine creates Steel and Slag when provided with Iron Ingots and Coal Coke.\n\nUnlike the Coke Oven however, it\u0027s not possible to automate it. You\u0027ll need to craft an Improved Blast Furnace, Arc Furnace or progress far enough until your reach Thermal Expansion if you want to automate Steel production.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -14205,7 +14205,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Even more #BLASST",
-          "desc:8": "Craft the components for an Imrpoved Blast Furnace! Set up the Reinforced Blast Bricks in a 3x3x3 cube, then place a Hopper on the top center. Right click on the central block on the side with your Engineer\u0027s Hammer to form the multiblock!\n\nYou can automatically import Iron Ingots, Coal Coke through yet another Hopper (or Item Conduit, Transfer Node, etc.) on the top, and export Steel and Slag by placing a Chest on the front and back, respectively.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the components for an Imrpoved Blast Furnace! Set up the Reinforced Blast Bricks in a 3x3x3 cube, then place a Hopper on the top center. Right click on the central block on the side with your Engineer\u0027s Hammer to form the multiblock!\n\nYou can automatically import Iron Ingots, Coal Coke through yet another Hopper (or Item Conduit, Transfer Node, etc.) on the top, and export Steel and Slag by placing a Chest on the front and back, respectively.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -14707,7 +14707,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Big Boi",
-          "desc:8": "Craft the required components for an Arc Furnace! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Arc Furnace on how to construct it. Once formed, click on the central Cauldron to create the multiblock!\n\nProvide power to one of the 3 black squares on the back. Inputs are on the top. When facing the front of the machine, the left slot inputs the main items, and the right slot inputs the additional items. Output is on the front bottom, where the Cauldron used tobe during construction pull items out of there. The Arc Furnace can be used to smelt, alloy, or create Steel, so additional outputs (a.k.a Slag) can and should be removed, and are automatically pushed out on the pack, below the power input.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required components for an Arc Furnace! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Arc Furnace on how to construct it. Once formed, click on the central Cauldron to create the multiblock!\n\nProvide power to one of the 3 black squares on the back. Inputs are on the top. When facing the front of the machine, the left slot inputs the main items, and the right slot inputs the additional items. Output is on the front bottom, where the Cauldron used tobe during construction pull items out of there. The Arc Furnace can be used to smelt, alloy, or create Steel, so additional outputs (a.k.a Slag) can and should be removed, and are automatically pushed out on the pack, below the power input.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -15085,7 +15085,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Water you doin\u0027!?",
-          "desc:8": "Trying to generate some power, that\u0027s what! Craft a Water Wheel, and attach it to a Kinetic Dynamo to generate IF power! Make sure to have at least 2 blocks cleared in each direction to be able to place down the Water Wheel. By placing a Water source block up at the top, and letting it flow down on the sides and on the bottom, the Wheel will start spinning, and generating power.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Trying to generate some power, that\u0027s what! Craft a Water Wheel, and attach it to a Kinetic Dynamo to generate IF power! Make sure to have at least 2 blocks cleared in each direction to be able to place down the Water Wheel. By placing a Water source block up at the top, and letting it flow down on the sides and on the bottom, the Wheel will start spinning, and generating power.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -15249,7 +15249,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Crushin\u0027 it",
-          "desc:8": "Crafter the required components of a Crusher! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Crusher to see how to build the multiblock. Once built, click on one of the central Fence blocks on a longer side with your Engineer\u0027s Hammer to form the multiblock.\n\nThe Crusher doesn\u0027t have an interface. Instead, when provided with power (through the orange dot on the center back) and throwing materials inside, it will try to crush it into dust form granted there exsits a crushed form of the given item. It will gladly eat up items that don\u0027t, so be careful what you throw in it. To output items, simply place a Chest next to the black dot on the side.\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Crafter the required components of a Crusher! Check your Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Crusher to see how to build the multiblock. Once built, click on one of the central Fence blocks on a longer side with your Engineer\u0027s Hammer to form the multiblock.\n\nThe Crusher doesn\u0027t have an interface. Instead, when provided with power (through the orange dot on the center back) and throwing materials inside, it will try to crush it into dust form granted there exsits a crushed form of the given item. It will gladly eat up items that don\u0027t, so be careful what you throw in it. To output items, simply place a Chest next to the black dot on the side.\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -15584,7 +15584,7 @@
             "0:10": {
               "ForgeCaps:10": {
                 "Parent:10": {
-                  "Size:3": 1,
+                  "Size:3": 5,
                   "Items:9": {}
                 },
                 "astralsorcery:cap_item_amulet_holder:10": {}
@@ -16591,7 +16591,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "No more mining!",
-          "desc:8": "Craft the required components for an Excavator and a Bucket Wheel! Check the Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Excavator to see how to set both of them up. Before you do so though, make sure to set it up in the right area. Craft a Core Sample Drill (see the quest besides this one). Once you found a suitable location, power it from the side (one of 3 black dots), and place an output chest (or preferably Item Ducts connected to 2-3 Drawers) as an output. Be aware, that this machine uses 4096 RF/tick, so you need good power generation to keep it going. (1 Diesel generator can keep it up exactly.)\n\nWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
+          "desc:8": "Craft the required components for an Excavator and a Bucket Wheel! Check the Engineer\u0027s Manual -\u003e Heavy Machinery -\u003e Excavator to see how to set both of them up. Before you do so though, make sure to set it up in the right area. Craft a Core Sample Drill (see the quest besides this one). Once you found a suitable location, power it from the side (one of 3 black dots), and place an output chest (or preferably Item Ducts connected to 2-3 Drawers) as an output. Be aware, that this machine uses 4096 RF/tick, so you need good power generation to keep it going. (1 Diesel generator can keep it up exactly.)\n\n§cWARNING: Do NOT build this on a chunk border. Press F9 twice to show them. If built on a chunk border, eventually the machine could get corrupted and crash your world."
         }
       },
       "tasks:9": {
@@ -57381,7 +57381,49 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:stone",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -4822218405563622703,
+                  "AS_Amulet_HolderMost:4": 433871007885182809
+                }
+              },
+              "id:8": "thermalexpansion:satchel",
+              "Count:3": 1,
+              "tag:10": {
+                "RepairCost:3": 0,
+                "display:10": {
+                  "Name:8": "§r§9Multiplayer Pack"
+                },
+                "Inventory:10": {
+                  "Slot4:10": {
+                    "ForgeCaps:10": {
+                      "astralsorcery:cap_item_amulet_holder:10": {}
+                    },
+                    "id:8": "contenttweaker:abyssal_wasteland_teleporter",
+                    "Count:1": 1,
+                    "Damage:2": 0
+                  }
+                },
+                "Accessible:1": 1
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "800:10": {
       "questID:3": 1493,
@@ -79419,7 +79461,7 @@
       "lineID:3": 15,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "NORMAL",
+          "visibility:8": "ALWAYS",
           "name:8": "Thauma-drama!",
           "icon:10": {
             "ForgeCaps:10": {

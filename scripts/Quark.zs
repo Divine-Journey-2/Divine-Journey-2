@@ -12,4 +12,7 @@ recipes.addShapedMirrored(<quark:pickarang>, [[<thermalfoundation:material:26>,<
 # Rusty Iron Plate recipe conflict
 recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],[<minecraft:iron_ingot>,<minecraft:water_bucket>,<minecraft:iron_ingot>],[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]]);
 
+# Tallow: Only the Bewitchment one should be used.
+<ore:tallow>.remove(<quark:tallow>);
+
 print("ENDING Quark.zs");

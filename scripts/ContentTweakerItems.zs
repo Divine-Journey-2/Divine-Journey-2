@@ -697,5 +697,36 @@ for aspect in allThaumcraftAspects_ {
 	var condensed_vis_crystal = VanillaFactory.createItem("condensed_vis_crystal_" + aspect);
 	condensed_vis_crystal.register();
 }
+var woodland_mansion_locator_token = VanillaFactory.createItem("woodland_mansion_locator_token");
+woodland_mansion_locator_token.maxStackSize = 1;
+woodland_mansion_locator_token.maxDamage = 1;
+woodland_mansion_locator_token.itemRightClick = function(stack, world, player, hand) {
+    if(world.remote) {
+        return "PASS";
+    }
+    stack.damage(2, player);
+	player.executeCommand("locate Mansion");
+    return "SUCCESS";
+};
+woodland_mansion_locator_token.register();
+var abyssal_wasteland_teleporter = VanillaFactory.createItem("abyssal_wasteland_teleporter");
+abyssal_wasteland_teleporter.rarity = "RARE";
+abyssal_wasteland_teleporter.maxStackSize = 1;
+abyssal_wasteland_teleporter.maxDamage = 2;
+abyssal_wasteland_teleporter.itemRightClick = function(stack, world, player, hand) {
+    if(world.remote) {
+        return "PASS";
+    }
+    stack.damage(1, player);
+	player.executeCommand("tpx @p 0 80 0 50");
+    return "SUCCESS";
+};
+abyssal_wasteland_teleporter.register();
+var mysterious_leaking_soul = VanillaFactory.createItem("mysterious_leaking_soul");
+mysterious_leaking_soul.rarity = "EPIC";
+mysterious_leaking_soul.glowing = true;
+mysterious_leaking_soul.register();
+var brew_of_the_void = VanillaFactory.createItem("brew_of_the_void");
+brew_of_the_void.register();
 
 print("ENDING ContentTweakerItems.zs");

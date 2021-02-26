@@ -334,4 +334,8 @@ recipes.remove(<bno:nugget_copper>);
 recipes.removeShaped(<thermalfoundation:material:128>, [[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>]]);
 recipes.addShaped(<thermalfoundation:material:128>, [[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>]]);
 
+# Silver Ingot
+<ore:ingotSilver>.remove(<bewitchment:silver_ingot>);
+recipes.remove(<bewitchment:silver_ingot>);
+
 print("ENDING UnifyingIngotsAndBlocks.zs");

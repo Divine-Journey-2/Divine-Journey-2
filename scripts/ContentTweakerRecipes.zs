@@ -914,14 +914,25 @@ mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contentt
 # Rainbow Tablet
 recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbow_slate>,null],[<contenttweaker:mystical_tablet>,blood_orb_at_least_tier_6.reuse(),<contenttweaker:mystical_tablet>],[null,<contenttweaker:rainbow_slate>,null]]);
 
+# Abyssal Wasteland Teleporter
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("you'd have to fly a long way to find any Abyssal"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("Wasteland Strongholds, then simply Right Click with"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("this item to teleport to (0,80,0)."));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold("Has 3 uses.")));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("or Hang Glider equipped before you teleport."));
+
 # Omothol Teleporter
 <contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("you'd have to fly a long way to reach the Omothol "));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("Dungeon, then simply Right Click with this item"));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white("to teleport to (0,80,0)."));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("One time use.")));
 <contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("or Hang Glider equipped before you do this."));
+<contenttweaker:omothol_teleporter>.addTooltip(format.white("or Hang Glider equipped before you teleport."));
 /*
 <contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("* May or may not cause horrible nightmares from")));
 <contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  this point on in your life. Please consult your")));
@@ -954,5 +965,14 @@ for aspect in allThaumcraftAspects {
 
 # Stabilized End Crystal
 mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal", "", <contenttweaker:stabilized_end_crystal>, 4, [<aspect:alienis> * 100,<aspect:auram> * 100,<aspect:sol> * 80,<aspect:lux> * 40,<aspect:fabrico> * 40], <minecraft:end_crystal>, [<thaumcraft:plate:2>,<thaumcraft:vis_resonator>,<thaumcraft:plate:2>,<enderutilities:enderpart:17>]);
+
+# Mysterious Leaking Soul
+<contenttweaker:mysterious_leaking_soul>.addTooltip(format.darkGray("Found in Mortum Dungeons."));
+
+# Woodland Mansion Locator Token
+mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, empowered_glod_crystal_block, 10000, 100, [0.222, 0.1641, 0.0508]);
+<contenttweaker:woodland_mansion_locator_token>.addTooltip(format.white(format.bold("One time use!")));
+<minecraft:totem_of_undying>.addTooltip(format.white("No luck findng a Woodland Mansion?"));
+<minecraft:totem_of_undying>.addTooltip(format.white("Craft a ") + format.white(format.bold("Woodland Mansion Locator Token")) + format.white("!"));
 
 print("ENDING ContentTweakerRecipes.zs");

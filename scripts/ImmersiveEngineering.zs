@@ -190,6 +190,10 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:ingotSteel>
 # Redstone Engineering Block
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3>, [[<minecraft:iron_ingot>,<projectred-core:resource_item:1>,<minecraft:iron_ingot>],[<projectred-core:resource_item:1>,<thermalfoundation:material:320>,<projectred-core:resource_item:1>],[<minecraft:iron_ingot>,<projectred-core:resource_item:1>,<minecraft:iron_ingot>]]);
+<immersiveengineering:metal_decoration0:3>.addTooltip(format.red("Warning: ") + format.white("Do NOT build Immersive Engineering "));
+<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("multiblocks on a chunk border. Press F9 twice"));
+<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("to show them. Otherwise the machine could get"));
+<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("corrupted and eventually crash your world."));
 
 # Iron Sheetmetal
 recipes.remove(<immersiveengineering:sheetmetal:9>);

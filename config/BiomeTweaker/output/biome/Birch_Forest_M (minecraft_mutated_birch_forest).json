@@ -20,11 +20,11 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "FOREST",
+    "RARE",
+    "THEMED_TREES",
     "DENSE",
     "HILLS",
-    "THEMED_TREES",
-    "RARE",
-    "FOREST",
     "SUPER_BIRCH_TREES"
   ],
   "BiomeManager Entries": {},
