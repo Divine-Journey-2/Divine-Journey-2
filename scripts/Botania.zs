@@ -11,6 +11,7 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import mods.botania.RuneAltar;
 import mods.botania.ElvenTrade;
 import mods.bloodmagic.AlchemyTable;
 import mods.botania.Orechid;

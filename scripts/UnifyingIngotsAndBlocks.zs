@@ -335,7 +335,8 @@ recipes.removeShaped(<thermalfoundation:material:128>, [[<thaumcraft:nugget:1>,<
 recipes.addShaped(<thermalfoundation:material:128>, [[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>]]);
 
 # Silver Ingot
-<ore:ingotSilver>.remove(<bewitchment:silver_ingot>);
+<ore:ingotSilver>.removeItems([<bewitchment:silver_ingot>,<immersiveengineering:metal:3>,<projectred-core:resource_item:102>,<erebus:materials:45>]);
 recipes.remove(<bewitchment:silver_ingot>);
+furnace.remove(<bewitchment:silver_ingot>);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

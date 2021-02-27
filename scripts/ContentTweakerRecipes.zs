@@ -32,6 +32,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.recipes.ICraftingInventory;
 import mods.thaumcraft.Infusion;
 import thaumcraft.aspect.CTAspectStack;
+import moretweaker.bewitchment.WitchesCauldron;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -974,5 +975,8 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_loca
 <contenttweaker:woodland_mansion_locator_token>.addTooltip(format.white(format.bold("One time use!")));
 <minecraft:totem_of_undying>.addTooltip(format.white("No luck findng a Woodland Mansion?"));
 <minecraft:totem_of_undying>.addTooltip(format.white("Craft a ") + format.white(format.bold("Woodland Mansion Locator Token")) + format.white("!"));
+
+# Brew of the Void
+WitchesCauldron.addRecipe([<contenttweaker:brew_of_the_void>], [<bewitchment:bottle_of_blood>,<bewitchment:belladonna>,<bewitchment:aconitum>,<bewitchment:wormwood>,<thaumcraft:ingot>,<thaumcraft:ingot>,<minecraft:mycelium>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})]);
 
 print("ENDING ContentTweakerRecipes.zs");

@@ -5314,7 +5314,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_alloy",
+              "Count:3": 24,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "74:10": {
       "questID:3": 74,
@@ -5367,7 +5380,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "75:10": {
       "questID:3": 75,
@@ -5463,7 +5489,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 10,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "76:10": {
       "questID:3": 76,
@@ -5514,7 +5553,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "77:10": {
       "questID:3": 77,
@@ -5571,7 +5623,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "78:10": {
       "questID:3": 78,
@@ -5622,7 +5687,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 3,
+              "Damage:2": 36,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "79:10": {
       "questID:3": 79,
@@ -5652,7 +5730,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Better than a Cauldron",
-          "desc:8": "Sprinkle some more Salis Mundus, this time on an EvilCraft Purifier to convert it into a Crucible!\n\nIf you\u0027ve never played Thaumcraft before, it\u0027s best to set this up in a chunk where you don\u0027t have many important machines - so preferably slightly away from your base.\n\nTo use it, fill it up with Water (piping systems work), and light a fire below it (later you can use a piece of Nitor as well). Once it starts bubbling, throw in items to break them down into Essentia. Be wary though, Essentia slowly evaporates, creating bad magical energy in the chunk called \"Flux\". You want to avoid creating Flux as much as possible, so do your recipes quickly: Throw in exact (or almost exact) amounts to create sufficient Essentia, then throw in the catalyst - the upper item in JEI recipes.\n\nIf it doesn\u0027t work, check if you still have the correct amounts of Essentia using your Thaumometer or Goggles of Revealing. If not, throw in some additional ingredients.\n\nYou can observe the Flux in a given chunk. If levels get higher than confortable, simply move to different chunk. Keep in mind, a small amount of Flux doesn\u0027t hurt, but if you accidentally throw in multiple stacks of an item and/or accidentally Shift+Right Click the Crucible to empty it, then you\u0027ll release all the Flux and you can say goodbye to the chunk you were doing your alchemy in - until a bit later on, when you obtain the tools to deal with Flux. Hopefully that chunk happens to NOT be in your base... Seriously, did you listen to me? I hope so..."
+          "desc:8": "Sprinkle some more Salis Mundus, this time on an EvilCraft Purifier to convert it into a Crucible!\n\nIf you\u0027ve never played Thaumcraft before, it\u0027s best to set this up in a chunk where you don\u0027t have many important machines - so preferably slightly away from your base.\n\nTo use it, fill it up with Water (piping systems work), and light a fire below it (later you can use a piece of Nitor as well). Once it starts bubbling, throw in items to break them down into Essentia. Be wary though, Essentia slowly evaporates, creating bad magical energy in the chunk called \"Flux\". You want to avoid creating Flux as much as possible, so do your recipes quickly: Throw in exact (or almost exact) amounts to create sufficient Essentia, then throw in the catalyst - the upper item in JEI recipes.\n\nIf it doesn\u0027t work, check if you still have the correct amounts of Essentia using your Thaumometer or Goggles of Revealing. If not, throw in some additional ingredients.\n\nWarning: Do NOT accidentally Right Click an item onto the Crucible! This most often occurs with the Thaumometer. Don\u0027t try to scan the Cauldron while it\u0027s active! You can scan it in item form or a block form without Water inside.\n\nTo clean up the mess you\u0027ve made, use Quartz Slivers! Throwing in one piece of them will suck up 2 units of Essentia and create a Vis Crystal. You should definitely make good use of this!\n\nYou can observe the Flux in a given chunk. If levels get higher than confortable, simply move to different chunk. Keep in mind, a small amount of Flux doesn\u0027t hurt, but if you accidentally throw in multiple stacks of an item and/or accidentally Shift+Right Click the Crucible to empty it, then you\u0027ll release all the Flux and you can say goodbye to the chunk you were doing your alchemy in - until a bit later on, when you obtain the tools to deal with Flux. Hopefully that chunk happens to NOT be in your base... Seriously, did you listen to me? I hope so..."
         }
       },
       "tasks:9": {
@@ -5674,7 +5752,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:aquasalus",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thaumcraft:nugget",
+              "Count:3": 12,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "80:10": {
       "questID:3": 80,
@@ -5725,7 +5822,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:filter",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "81:10": {
       "questID:3": 81,
@@ -5777,7 +5887,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "82:10": {
       "questID:3": 82,
@@ -5828,7 +5951,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:vis_resonator",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "83:10": {
       "questID:3": 83,
@@ -5879,7 +6015,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nugget",
+              "Count:3": 10,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 4,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "84:10": {
       "questID:3": 84,
@@ -5930,7 +6085,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:tube",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "85:10": {
       "questID:3": 85,
@@ -5981,7 +6149,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "botania:quartz",
+              "Count:3": 4,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "abyssalcraft:methane",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "86:10": {
       "questID:3": 86,
@@ -6064,7 +6251,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:paper",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "88:10": {
       "questID:3": 88,
@@ -6121,7 +6321,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:dye",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "89:10": {
       "questID:3": 89,
@@ -6172,7 +6385,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "90:10": {
       "questID:3": 90,
@@ -6223,7 +6449,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:salis_mundus",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "91:10": {
       "questID:3": 91,
@@ -6274,7 +6513,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "92:10": {
       "questID:3": 92,
@@ -6325,7 +6577,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 6,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "93:10": {
       "questID:3": 93,
@@ -6376,7 +6641,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:morphic_resonator",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "94:10": {
       "questID:3": 94,
@@ -6427,7 +6705,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 5,
+              "Damage:2": 36,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "95:10": {
       "questID:3": 95,
@@ -6485,7 +6776,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:magical_leather",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "96:10": {
       "questID:3": 96,
@@ -6536,7 +6840,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:quartz",
+              "Count:3": 4,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "97:10": {
       "questID:3": 97,
@@ -6587,7 +6904,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ingot_of_elevation",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "98:10": {
       "questID:3": 98,
@@ -6638,7 +6968,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "99:10": {
       "questID:3": 99,
@@ -6701,7 +7044,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 2,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "100:10": {
       "questID:3": 100,
@@ -6753,7 +7109,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:incendium",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "101:10": {
       "questID:3": 101,
@@ -6804,7 +7173,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:aquasalus",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "102:10": {
       "questID:3": 102,
@@ -6855,7 +7237,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:stone_arcane",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "103:10": {
       "questID:3": 103,
@@ -6906,7 +7301,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 12,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "104:10": {
       "questID:3": 104,
@@ -6957,7 +7365,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "105:10": {
       "questID:3": 105,
@@ -7014,7 +7435,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:intensive_catalyst",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "106:10": {
       "questID:3": 106,
@@ -7065,7 +7499,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 2,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "107:10": {
       "questID:3": 107,
@@ -7122,7 +7569,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:sanctus",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "108:10": {
       "questID:3": 108,
@@ -7173,7 +7633,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:praesidium",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "109:10": {
       "questID:3": 109,
@@ -7224,7 +7697,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:tube",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "110:10": {
       "questID:3": 110,
@@ -7293,7 +7779,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "111:10": {
       "questID:3": 111,
@@ -7350,7 +7849,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 6,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "contenttweaker:crystallized_mana_shard",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "112:10": {
       "questID:3": 112,
@@ -7407,7 +7925,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:tenebrae",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "113:10": {
       "questID:3": 113,
@@ -7458,7 +7989,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:cosmic_alloy",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "114:10": {
       "questID:3": 114,
@@ -7509,7 +8053,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:mechanism_simple",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "115:10": {
       "questID:3": 115,
@@ -7566,7 +8123,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "116:10": {
       "questID:3": 116,
@@ -7623,7 +8193,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "117:10": {
       "questID:3": 117,
@@ -7674,7 +8257,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:magicales",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "118:10": {
       "questID:3": 118,
@@ -7725,7 +8321,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 2,
+              "Damage:2": 30,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "119:10": {
       "questID:3": 119,
@@ -7777,7 +8386,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 2,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "120:10": {
       "questID:3": 120,
@@ -7828,7 +8450,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:reductus",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "121:10": {
       "questID:3": 121,
@@ -7880,7 +8515,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_alloy",
+              "Count:3": 12,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "122:10": {
       "questID:3": 122,
@@ -7931,7 +8579,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:virtus",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "123:10": {
       "questID:3": 123,
@@ -7988,7 +8649,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:curio",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "124:10": {
       "questID:3": 124,
@@ -8045,7 +8719,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:nitor_yellow",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "125:10": {
       "questID:3": 125,
@@ -8103,7 +8790,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 2,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "126:10": {
       "questID:3": 126,
@@ -8330,7 +9030,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:terrae",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "129:10": {
       "questID:3": 655,
@@ -56074,7 +56787,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:cingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "775:10": {
       "questID:3": 1468,
@@ -56125,7 +56851,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ingot_of_elevation",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "776:10": {
       "questID:3": 1469,
@@ -56176,7 +56915,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ingot_of_elevation",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "777:10": {
       "questID:3": 1470,
@@ -56227,7 +56979,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "778:10": {
       "questID:3": 1471,
@@ -56278,7 +57043,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "divinerpg:bluefire_stone",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "779:10": {
       "questID:3": 1472,
@@ -56335,7 +57113,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 4,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "780:10": {
       "questID:3": 1473,
@@ -56411,7 +57202,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extrautils2:decorativesolid",
+              "Count:3": 4,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "781:10": {
       "questID:3": 1474,
@@ -56488,7 +57292,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 32,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "782:10": {
       "questID:3": 1475,
@@ -56540,7 +57357,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:abylcorore",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "783:10": {
       "questID:3": 1476,
@@ -56597,7 +57427,31 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:block_crystal_empowered",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "contenttweaker:empowered_glod_crystal_block",
+              "Count:3": 16,
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "§6Empowered Glod Crystal Block"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "784:10": {
       "questID:3": 1477,
@@ -56626,7 +57480,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Shattered into Something",
-          "desc:8": "Combining 4 Shards of Oblivion and 4 fully powered Vibrant Capacitor Banks into an Active Ender Core (Advanced), at the cost of 5000 Potential Energy and the sacrifice of an animal will gain you the Oblivion Catalyst.\n\nAlso multiple headaches and visions of eldrich gods. Don\u0027t worry about those."
+          "desc:8": "Combining 4 Shards of Oblivion and 4 Melodic Capacitors into an Active Ender Core (Advanced), at the cost of 5000 Potential Energy and the sacrifice of an animal will gain you the Oblivion Catalyst.\n\nAlso multiple headaches and visions of eldrich gods. Don\u0027t worry about those."
         }
       },
       "tasks:9": {
@@ -56648,7 +57502,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "simplyjetpacks:metaitemmods",
+              "Count:3": 8,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "785:10": {
       "questID:3": 1478,
@@ -56701,7 +57568,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 12,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "786:10": {
       "questID:3": 1479,
@@ -56753,7 +57633,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "simplyjetpacks:metaitemmods",
+              "Count:3": 8,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "787:10": {
       "questID:3": 1480,
@@ -56785,7 +57678,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Ain\u0027t no Ender \"Dragon\"",
-          "desc:8": "Using the full power of your recently upgraded Necronomicon, summon and beat Asorah, The Fallen."
+          "desc:8": "Using the full power of your recently upgraded Necronomicon, summon and beat Asorah, The Fallen.\n\nYou can find the Ritual in your Abyssal Wasteland Necronomicon, under the Rituals / Abyssal Wasteland section, named Ritual of the Sleeper."
         }
       },
       "tasks:9": {
@@ -56810,7 +57703,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 2,
+              "Damage:2": 17,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "788:10": {
       "questID:3": 1481,
@@ -56958,7 +57864,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:item_canola_seed",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "791:10": {
       "questID:3": 1484,
@@ -57009,7 +57928,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "792:10": {
       "questID:3": 1485,
@@ -57126,7 +58058,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:steaming_restonia_crystal",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "795:10": {
       "questID:3": 1488,
@@ -57183,7 +58128,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:empowered_crystal_bundle",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "796:10": {
       "questID:3": 1489,
@@ -57273,7 +58231,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "798:10": {
       "questID:3": 1491,
@@ -57330,7 +58301,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:oblivionshard",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "799:10": {
       "questID:3": 1492,
@@ -57387,8 +58371,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "minecraft:stone",
-              "Count:3": 1,
+              "id:8": "abyssalcraft:coralium",
+              "Count:3": 32,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -57474,7 +58458,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "divinerpg:wildwood_soul",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "801:10": {
       "questID:3": 1494,
@@ -57531,7 +58528,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:coraliumore",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "802:10": {
       "questID:3": 1495,
@@ -57585,7 +58595,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 8,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "803:10": {
       "questID:3": 1496,
@@ -57673,7 +58696,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:coraliumore",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "804:10": {
       "questID:3": 1497,
@@ -57724,7 +58760,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 3,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "805:10": {
       "questID:3": 1498,
@@ -57839,7 +58888,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:item_alloy_ingot",
+              "Count:3": 32,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "807:10": {
       "questID:3": 1500,
@@ -57903,7 +58965,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:dreadiumingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "808:10": {
       "questID:3": 1501,
@@ -58011,7 +59086,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:dreadiumingot",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "810:10": {
       "questID:3": 1503,
@@ -58062,7 +59150,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "divinerpg:wildwood_chunk",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "811:10": {
       "questID:3": 1504,
@@ -58120,7 +59221,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:item_alloy_endergy_ingot",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "812:10": {
       "questID:3": 1505,
@@ -58171,7 +59285,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "divinerpg:wildwood_ore",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "813:10": {
       "questID:3": 1506,
@@ -58228,7 +59355,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thermalfoundation:material",
+              "Count:3": 16,
+              "Damage:2": 135,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "814:10": {
       "questID:3": 1507,
@@ -58285,7 +59425,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extrautils2:decorativesolid",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "815:10": {
       "questID:3": 1508,
@@ -58342,7 +59495,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 32,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "816:10": {
       "questID:3": 1509,
@@ -58377,7 +59543,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Necronominominominomicon",
-          "desc:8": "Using your Abyssal Statues, craft the Necronomicon, the guidebook to madness.\n\nWhen holding the Necronomicon near Abyssal Statues, potential energy will burst out of the statues and into the book.\nNOTE: The destructive effects have been removed, and it is now entirely safe.\n\nTo find Shadow Gems and Shadow Fragments, visit a Darklands Plains, Hills or Forest biome at night. Capture a Shadow Beast or Shadow Creature and Powered Spawn them for more."
+          "desc:8": "Using your Abyssal Statues, craft the Necronomicon, the guidebook to madness. This won\u0027t consume the input statues!\n\nWhen holding the Necronomicon near Abyssal Statues, potential energy will burst out of the statues and into the book.\nNOTE: The destructive effects have been removed, and it is now entirely safe.\n\nTo find Shadow Gems and Shadow Fragments, visit a Darklands Plains, Hills or Forest biome at night. Capture a Shadow Beast or Shadow Creature and Powered Spawn them for more."
         }
       },
       "tasks:9": {
@@ -58405,7 +59571,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:shadowshard",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "817:10": {
       "questID:3": 1510,
@@ -58470,7 +59649,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "actuallyadditions:item_battery_triple",
+              "Count:3": 1,
+              "tag:10": {
+                "Energy:3": 600000
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "818:10": {
       "questID:3": 1511,
@@ -58521,7 +59719,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "simplyjetpacks:metaitemmods",
+              "Count:3": 2,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "819:10": {
       "questID:3": 1512,
@@ -58550,7 +59761,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Not your father\u0027s stone",
-          "desc:8": "Pour Liquid Antimatter (found underground in Coralium Infested Swamps) on top of Liquid Coralium (found in the Abyssal Wastelands), and mine up 10 of the Coralium Stone that results from this."
+          "desc:8": "Pour Liquid Antimatter (found underground in Coralium Infested Swamps) on top of Liquid Coralium (found in the Abyssal Wastelands), and mine up 10 of the Coralium Stone that results from this.\n\nIf you can\u0027t find Liquid Antimatter, you can summon an Anti Cow using the Anti Milking Ritual in the Abyssal Wasteland."
         }
       },
       "tasks:9": {
@@ -58572,7 +59783,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 8,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "820:10": {
       "questID:3": 1513,
@@ -58623,7 +59847,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "divinerpg:divine_shards",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "821:10": {
       "questID:3": 1514,
@@ -58674,7 +59911,20 @@
           "taskID:8": "bq_standard:location"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 32,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "822:10": {
       "questID:3": 1515,
@@ -58727,7 +59977,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thermalfoundation:material",
+              "Count:3": 32,
+              "Damage:2": 167,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "823:10": {
       "questID:3": 1516,
@@ -58778,7 +60041,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 8,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "824:10": {
       "questID:3": 1517,
@@ -58835,7 +60111,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:cingot",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "825:10": {
       "questID:3": 1518,
@@ -58911,7 +60200,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:cbrick",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "826:10": {
       "questID:3": 1519,
@@ -59019,7 +60321,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:dreadfragment",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "828:10": {
       "questID:3": 1521,
@@ -59070,7 +60385,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "contenttweaker:steaming_restonia_crystal",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "abyssalcraft:dreadiumingot",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "829:10": {
       "questID:3": 1522,
@@ -59127,7 +60461,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:stone",
+              "Count:3": 32,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "830:10": {
       "questID:3": 1523,
@@ -59178,7 +60525,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "plustic:osmiridiumingot",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "831:10": {
       "questID:3": 1524,
@@ -59229,7 +60589,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "actuallyadditions:item_crystal_empowered",
+              "Count:3": 4,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "832:10": {
       "questID:3": 1525,
@@ -77866,7 +79239,7 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 263,
+          "x:3": 264,
           "y:3": 20,
           "id:3": 1483,
           "sizeY:3": 24

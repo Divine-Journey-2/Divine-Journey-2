@@ -5,6 +5,8 @@ import moretweaker.bewitchment.WitchesOven;
 import mods.thaumcraft.Crucible;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import moretweaker.bewitchment.WitchesCauldron;
+import moretweaker.bewitchment.Distillery;
 
 print("STARTING Bewitchment.zs");
 
@@ -66,15 +68,15 @@ addBewitchmentWitchesAltarRecipe(<bewitchment:scorned_brick_witches_altar>,<bewi
 
 # Aconitum Seeds
 vanilla.seeds.removeSeed(<bewitchment:aconitum_seeds>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:aconitum_seeds", "", <bewitchment:aconitum_seeds>, 6, [<aspect:herba> * 200,<aspect:exanimis> * 160,<aspect:bestia> * 40,<aspect:motus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:lithium_seeds>, [<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<thaumcraft:mind:1>,<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<contenttweaker:mysterious_leaking_soul>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:aconitum_seeds", "", <bewitchment:aconitum_seeds>, 5, [<aspect:herba> * 200,<aspect:exanimis> * 160,<aspect:bestia> * 40,<aspect:motus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:lithium_seeds>, [<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<thaumcraft:mind:1>,<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<contenttweaker:mysterious_leaking_soul>]);
 
 # Belladonna Seeds
 vanilla.seeds.removeSeed(<bewitchment:belladonna_seeds>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:belladonna_seeds", "", <bewitchment:belladonna_seeds>, 6, [<aspect:herba> * 200,<aspect:vinculum> * 160,<aspect:sensus> * 40,<aspect:humanus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:guardian_seeds>, [<bewitchment:essence_of_vitality>,<thaumcraft:nitor_green>,<thaumcraft:mind:1>,<bewitchment:essence_of_vitality>,<thaumcraft:nitor_green>,<contenttweaker:mysterious_leaking_soul>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:belladonna_seeds", "", <bewitchment:belladonna_seeds>, 5, [<aspect:herba> * 200,<aspect:vinculum> * 160,<aspect:sensus> * 40,<aspect:humanus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:guardian_seeds>, [<bewitchment:essence_of_vitality>,<thaumcraft:nitor_green>,<thaumcraft:mind:1>,<bewitchment:essence_of_vitality>,<thaumcraft:nitor_green>,<contenttweaker:mysterious_leaking_soul>]);
 
 # Wormwood Seeds
 vanilla.seeds.removeSeed(<bewitchment:wormwood_seeds>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:wormwood_seeds", "", <bewitchment:wormwood_seeds>, 6, [<aspect:herba> * 200,<aspect:tenebrae> * 120,<aspect:aversio> * 40,<aspect:vitium> * 20,<aspect:diabolus> * 10], <mysticalagriculture:rubber_seeds>, [<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<thaumcraft:mind:1>,<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<contenttweaker:mysterious_leaking_soul>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:wormwood_seeds", "", <bewitchment:wormwood_seeds>, 5, [<aspect:herba> * 200,<aspect:tenebrae> * 120,<aspect:aversio> * 40,<aspect:vitium> * 20,<aspect:diabolus> * 10], <mysticalagriculture:rubber_seeds>, [<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<thaumcraft:mind:1>,<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<contenttweaker:mysterious_leaking_soul>]);
 
 # Silver Candelabra
 recipes.remove(<bewitchment:candelabra_silver>);
@@ -84,11 +86,38 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_silver", "", <be
 recipes.remove(<bewitchment:candelabra_iron>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_iron", "", <bewitchment:candelabra_iron>, 4, [<aspect:lux> * 100,<aspect:auram> * 50,<aspect:stellae> * 10], <minecraft:iron_block>, [<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>]);
 
+# Witches' Cauldron
+recipes.remove(<bewitchment:witches_cauldron>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_cauldron", "", <bewitchment:witches_cauldron>, 4, [<aspect:alkimia> * 250,<aspect:metallum> * 200,<aspect:machina> * 100,<aspect:fabrico> * 100], <thaumcraft:crucible>, [<bewitchment:liquid_witchcraft>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>,<bewitchment:droplet_of_wisdom>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>]);
+
 # Distillery
 recipes.remove(<bewitchment:distillery>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchment:distillery>, 6, [<aspect:machina> * 250,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <bewitchment:witches_oven>, [<bewitchment:block_of_opal>,<thaumcraft:metal_alchemical>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<thaumcraft:metal_alchemical>,<bewitchment:block_of_opal>,<bewitchment:block_of_opal>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchment:distillery>, 6, [<aspect:machina> * 250,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <bewitchment:witches_oven>, [<bewitchment:block_of_opal>,<thaumcraft:essentia_input>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<thaumcraft:essentia_input>,<bewitchment:block_of_opal>,<bewitchment:block_of_opal>]);
 
-# Witches' Cauldron
+# White Sage Seeds
+<bewitchment:white_sage_seeds>.addTooltip(format.white("Sometimes dropped by a Dead Bush."));
 
+# Garlic Seeds
+<bewitchment:garlic_seeds>.addTooltip(format.white("Sometimes dropped by an Allium."));
+
+# Ritualistic Salt
+<bewitchment:salt>.displayName = "Ritualistic Salt";
+WitchesCauldron.addRecipe([<bewitchment:salt> * 3], [<mekanism:salt>,<mekanism:salt>,<mekanism:salt>,<bloodmagic:ritual_stone>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]);
+
+# Cleansing Balm
+Distillery.removeRecipe(<bewitchment:cleansing_balm>);
+Distillery.addRecipe([<bewitchment:cleansing_balm>], [<bewitchment:acacia_resin>,<bewitchment:white_sage>,<bewitchment:salt>,<bewitchment:garlic>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]})]);
+
+# Tallow
+WitchesCauldron.removeRecipe(<bewitchment:tallow>);
+WitchesCauldron.addRecipe([<bewitchment:tallow> * 3], [<thaumcraft:tallow>,<thaumcraft:tallow>,<thaumcraft:tallow>,<contenttweaker:crystallos>,<contenttweaker:praesidium>]);
+
+# Fiery Unguent
+Distillery.removeRecipe(<bewitchment:fiery_unguent>);
+Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<contenttweaker:incendium>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
+
+# Swirl of the Depths
+Distillery.removeRecipe(<bewitchment:swirl_of_depths>);
+Distillery.addRecipe([<bewitchment:swirl_of_depths>], [<bewitchment:ebb_of_death>,<contenttweaker:omothol_soul>,<bewitchment:coquina>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]})]);
 
 print("ENDING Bewitchment.zs");

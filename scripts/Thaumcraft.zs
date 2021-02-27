@@ -544,6 +544,10 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTA
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Stabilizer", "INFUSIONSTABLE", <thaumcraft:stabilizer>, 4, [<aspect:machina> * 100,<aspect:ordo> * 100,<aspect:potentia> * 60,<aspect:vacuos> * 30], <thaumcraft:mechanism_complex>, [<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>,<thaumcraft:plate:2>,<thaumcraft:inlay>,<thaumcraft:plate:2>,<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:inlay>]);
 
+# Causaility Collapsor
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CausalityCollapser", "RIFTCLOSER", <thaumcraft:causality_collapser>, 7, [<aspect:perditio> * 40,<aspect:potentia> * 30,<aspect:alienis> * 30,<aspect:vitium> * 30], <mekanism:obsidiantnt>, [<thaumcraft:vis_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>,<thaumcraft:morphic_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>]);
+
 # Void Seed
 <thaumcraft:void_seed>.addTooltip(format.white("Obtained by throwing a Causality Collapser on a"));
 <thaumcraft:void_seed>.addTooltip(format.white("Flux Rift, or using a Void Siphon in the same chunk."));
