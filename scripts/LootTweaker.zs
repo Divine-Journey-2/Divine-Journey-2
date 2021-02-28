@@ -221,4 +221,7 @@ clear_pool("botania:gaia_guardian_2", "runes");
 add_entry("botania:gaia_guardian", "extra_gaia_spirits", <botania:manaresource:5>, 6, 10, 0, 0, 100);
 add_entry("botania:gaia_guardian_2", "extra_gaia_spirits", <botania:manaresource:5>, 12, 20, 0, 0, 100);
 
+# Owlet's Wing from MysticalWorld Owls (not just Bewitchment ones)
+add_entry("mysticalworld:entity/owl", "bewitchment:owlets_wing", <bewitchment:owlets_wing>, 0, 2, 0, 0, 100);
+
 print("ENDING LootTweaker.zs");

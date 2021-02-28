@@ -581,4 +581,7 @@ addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> 
 # Tier 1 Mob Chunk
 addMaterialToDustCrushingWOPetrotheum(<openblocks:trophy:*>, <mysticalagriculture:chunk>);
 
+# Bewitchment Silver Ore removal
+<ore:oreSilver>.remove(<bewitchment:silver_ore>);
+
 print("ENDING OreProcessingAdditions.zs");

@@ -1,4 +1,5 @@
 # Author: Atricos
+# Ritual names can be found in bewitchment-1.12.2-0.0.22.62.jar/com/bewitchment/registry/ModRecipes.class
 
 import mods.thaumcraft.Infusion;
 import moretweaker.bewitchment.WitchesOven;
@@ -7,6 +8,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import moretweaker.bewitchment.WitchesCauldron;
 import moretweaker.bewitchment.Distillery;
+import moretweaker.bewitchment.WitchesRitual;
+import moretweaker.bewitchment.FrostFire;
 
 print("STARTING Bewitchment.zs");
 
@@ -86,6 +89,9 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_silver", "", <be
 recipes.remove(<bewitchment:candelabra_iron>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_iron", "", <bewitchment:candelabra_iron>, 4, [<aspect:lux> * 100,<aspect:auram> * 50,<aspect:stellae> * 10], <minecraft:iron_block>, [<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>]);
 
+# Candelabra OreDict
+<ore:bewitchmentCandelabra>.addItems([<bewitchment:candelabra_silver>,<bewitchment:candelabra_iron>]);
+
 # Witches' Cauldron
 recipes.remove(<bewitchment:witches_cauldron>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_cauldron", "", <bewitchment:witches_cauldron>, 4, [<aspect:alkimia> * 250,<aspect:metallum> * 200,<aspect:machina> * 100,<aspect:fabrico> * 100], <thaumcraft:crucible>, [<bewitchment:liquid_witchcraft>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>,<bewitchment:droplet_of_wisdom>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>]);
@@ -119,5 +125,81 @@ Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<c
 # Swirl of the Depths
 Distillery.removeRecipe(<bewitchment:swirl_of_depths>);
 Distillery.addRecipe([<bewitchment:swirl_of_depths>], [<bewitchment:ebb_of_death>,<contenttweaker:omothol_soul>,<bewitchment:coquina>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]})]);
+
+# Dragon's Blood Resin
+mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <liquid:evilcraftblood>, [<contenttweaker:dragon_resin>], true);
+<bewitchment:dragons_blood_resin>.addTooltip(format.white("After initially crafting this, obtain it by"));
+<bewitchment:dragons_blood_resin>.addTooltip(format.white("Right Clicking on a Dragon's Blood Tree with"));
+<bewitchment:dragons_blood_resin>.addTooltip(format.white("a Boline, and waiting for it to bleed!"));
+
+# Dragon's Blood Sapling
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 250,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);
+
+# Ritual Chalk
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:ritual_chalk", "", <bewitchment:ritual_chalk>, 1, [<aspect:terra> * 20,<aspect:cognitio> * 10,<aspect:praecantatio> * 10], <undergroundbiomes:sedimentary_stone:1>, [<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>]);
+
+# Focal Chalk
+WitchesCauldron.removeRecipe(<bewitchment:focal_chalk>);
+WitchesCauldron.addRecipe([<bewitchment:focal_chalk>], [<bewitchment:ritual_chalk>,<thaumcraft:focus_2>,<bewitchment:swirl_of_depths>,<evilcraft:promise_acceptor:1>]);
+
+# Boline
+recipes.remove(<bewitchment:boline>);
+recipes.addShaped(<bewitchment:boline>, [[<thermalfoundation:storage:2>,<bewitchment:dragons_blood_wood>,<thermalfoundation:storage:2>],[null,<thaumcraft:resonator>,<bewitchment:dragons_blood_wood>],[<thaumcraft:ingot>,null,<thermalfoundation:storage:2>]]);
+
+# Oil of Vitriol
+Distillery.removeRecipe(<bewitchment:oil_of_vitriol>);
+Distillery.addRecipe([<bewitchment:oil_of_vitriol>], [<bewitchment:cloudy_oil>,<thermalexpansion:florb>.withTag({Fluid: "empoweredoil"}),<bewitchment:dragons_blood_resin>,<bewitchment:aconitum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]})]);
+
+# Stone Ichor
+Distillery.removeRecipe(<bewitchment:stone_ichor>);
+Distillery.addRecipe([<bewitchment:stone_ichor>], [<bewitchment:oil_of_vitriol>,<extrautils2:compressedcobblestone:2>,<bewitchment:ectoplasm>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})]);
+
+# Spinning Wheel
+recipes.remove(<bewitchment:spinning_wheel>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:spinning_wheel", "", <bewitchment:spinning_wheel>, 6, [<aspect:machina> * 250,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <atum:spinning_wheel>, [<bewitchment:stone_ichor>,<bewitchment:wormwood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:wormwood>,<bewitchment:stone_ichor>,<immersiveengineering:wooden_device1>]);
+
+# Athame
+recipes.remove(<bewitchment:athame>);
+recipes.addShapedMirrored(<bewitchment:athame>, [[null,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<bewitchment:pure_filament>,<contenttweaker:gypsum>,<thermalfoundation:material:130>],[<bloodmagic:dagger_of_sacrifice>,<bewitchment:pure_filament>,null]]);
+
+# Dimensional Sand: Only form the Athame
+WitchesOven.removeRecipe(<minecraft:blaze_powder>);
+WitchesOven.removeRecipe(<minecraft:chorus_fruit_popped>);
+<bewitchment:dimensional_sand>.addTooltip(format.white("Dropped by Enderman and Endermite slain with an Athame."));
+
+# Heart
+<bewitchment:heart>.addTooltip(format.white("Dropped by Players, Villagers, Witches, Evokers,"));
+<bewitchment:heart>.addTooltip(format.white("Illusioners & Vindicators when slain with a Athame."));
+
+# Hoof
+<bewitchment:hoof>.addTooltip(format.white("Dropped by Pigs, Sheep, Cows, Horses, Zombie Pigmen,"));
+<bewitchment:hoof>.addTooltip(format.white("Mooshrooms, Llamas, Donkeys & Mules when slain with a Athame."));
+
+# Spectral Dust
+<bewitchment:spectral_dust>.addTooltip(format.white("Dropped by all Undead mobs when slain with an Athame."));
+
+# Heaven Extract
+Distillery.removeRecipe(<bewitchment:heaven_extract>);
+Distillery.addRecipe([<bewitchment:heaven_extract>,<bewitchment:empty_jar>], [<bewitchment:cleansing_balm>,<bewitchment:essence_of_vitality>,<bewitchment:heart>,<bewitchment:owlets_wing>,<contenttweaker:holy_core>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]})]);
+
+# Otherworldy Tears
+Distillery.removeRecipe(<bewitchment:otherworldly_tears>);
+Distillery.addRecipe([<bewitchment:otherworldly_tears>,<bewitchment:empty_jar>], [<bewitchment:swirl_of_depths>,<bewitchment:liquid_witchcraft>,<bewitchment:dimensional_sand>,<enderutilities:enderpart:17>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})]);
+
+# Bone Needle
+recipes.remove(<bewitchment:bone_needle>);
+recipes.addShapedMirrored(<bewitchment:bone_needle>, [[null,null,<minecraft:bone>],[null,<minecraft:bone>,null],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),null,null]]);
+
+# Poppet
+recipes.remove(<bewitchment:poppet>);
+recipes.addShapedMirrored(<bewitchment:poppet>, [[<contenttweaker:magical_leather>,<thaumcraft:mind>,<contenttweaker:magical_leather>],[<bewitchment:bone_needle>,<contenttweaker:gypsum>,<bewitchment:spirit_string>],[<contenttweaker:magical_leather>,<contenttweaker:gypsum>,<contenttweaker:magical_leather>]]);
+
+# Bottled Frostfire
+Distillery.removeRecipe(<bewitchment:bottled_frostfire>);
+Distillery.addRecipe([<bewitchment:bottled_frostfire>,<bewitchment:empty_jar> * 2], [<bewitchment:heaven_extract>,<bewitchment:fiery_unguent>,<bewitchment:perpetual_ice>,<botania:rune:7>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:mystical_tablet>]);
+
+# Cold Iron Ingot
+FrostFire.removeAll();
+FrostFire.addRecipe(<bewitchment:cold_iron_ingot>, <thaumcraft:ingot>);
 
 print("ENDING Bewitchment.zs");

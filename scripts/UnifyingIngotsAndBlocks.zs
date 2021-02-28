@@ -335,8 +335,22 @@ recipes.removeShaped(<thermalfoundation:material:128>, [[<thaumcraft:nugget:1>,<
 recipes.addShaped(<thermalfoundation:material:128>, [[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>]]);
 
 # Silver Ingot
-<ore:ingotSilver>.removeItems([<bewitchment:silver_ingot>,<immersiveengineering:metal:3>,<projectred-core:resource_item:102>,<erebus:materials:45>]);
+<ore:ingotSilver>.removeItems([<bewitchment:silver_ingot>,<immersiveengineering:metal:3>,<projectred-core:resource_item:102>,<erebus:materials:45>,<alchemistry:ingot:47>]);
 recipes.remove(<bewitchment:silver_ingot>);
 furnace.remove(<bewitchment:silver_ingot>);
+furnace.remove(<erebus:materials:45>);
+furnace.remove(<immersiveengineering:metal:3>);
+recipes.remove(<immersiveengineering:metal:3>);
+furnace.addRecipe(<thermalfoundation:material:130>, <erebus:ore_silver>);
+Grinder.removeRecipe(<projectred-core:resource_item:102>);
+Grinder.removeRecipe(<erebus:materials:45>);
+Grinder.removeRecipe(<bewitchment:silver_ingot>);
+Grinder.removeRecipe(<alchemistry:ingot:47>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
+
+# Silver Nugget
+<ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
+recipes.remove(<bewitchment:silver_nugget>);
+recipes.remove(<immersiveengineering:metal:23>);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

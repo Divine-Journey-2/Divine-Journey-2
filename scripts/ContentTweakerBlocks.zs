@@ -441,4 +441,12 @@ stabilized_end_crystal.setToolLevel(1);
 stabilized_end_crystal.setBlockSoundType(<soundtype:glass>);
 stabilized_end_crystal.register();
 
+var tough_purified_paste = VanillaFactory.createBlock("tough_purified_paste", <blockmaterial:ground>);
+tough_purified_paste.setBlockHardness(9.0);
+tough_purified_paste.setBlockResistance(5.0);
+tough_purified_paste.setToolClass("shovel");
+tough_purified_paste.setToolLevel(3);
+tough_purified_paste.setBlockSoundType(<soundtype:ground>);
+tough_purified_paste.register();
+
 print("ENDING ContentTweakerBlocks.zs");

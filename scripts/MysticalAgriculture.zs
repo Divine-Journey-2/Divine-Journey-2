@@ -326,7 +326,7 @@ recipes.remove(<mysticalagriculture:chunk:23>);
 recipes.addShaped(<mysticalagriculture:chunk:23>, [[<thermalfoundation:material:2052>,<thermalfoundation:material:2052>,<thermalfoundation:material:2052>],[<thermalfoundation:material:2052>,<mysticalagriculture:chunk:2>,<thermalfoundation:material:2052>],[<thermalfoundation:material:2052>,<thermalfoundation:material:2052>,<thermalfoundation:material:2052>]]);
 
 # Basalz Seeds
-addTier3MysticalAgricultureSeed(<mysticalagriculture:chunk:23>, <mysticalagriculture:chunk:23>, <contenttweaker:condensed_vis_crystal_perditio>, <aspect:perditio>);
+addTier3MysticalAgricultureSeed(<mysticalagriculture:basalz_seeds>, <mysticalagriculture:chunk:23>, <contenttweaker:condensed_vis_crystal_perditio>, <aspect:perditio>);
 
 # Lumium Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:lumium_seeds>, <thermalfoundation:storage_alloy:6>, <contenttweaker:condensed_vis_crystal_potentia>, <aspect:potentia>, <mysticalagriculture:glowstone_seeds>);
@@ -375,5 +375,7 @@ addTier3MysticalAgricultureSeed(<mysticalagriculture:certus_quartz_seeds>, <appl
 
 # Fluix Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:fluix_seeds>, <appliedenergistics2:fluix_block>, <contenttweaker:condensed_vis_crystal_potentia>, <aspect:potentia>, <mysticalagriculture:certus_quartz_seeds>);
+
+# Iridium, Lithium -> Tier 4
 
 print("ENDING MysticalAgriculture.zs");

@@ -728,5 +728,9 @@ mysterious_leaking_soul.glowing = true;
 mysterious_leaking_soul.register();
 var brew_of_the_void = VanillaFactory.createItem("brew_of_the_void");
 brew_of_the_void.register();
+var dragon_resin = VanillaFactory.createItem("dragon_resin");
+dragon_resin.register();
+var gypsum = VanillaFactory.createItem("gypsum");
+gypsum.register();
 
 print("ENDING ContentTweakerItems.zs");

@@ -33,6 +33,8 @@ import crafttweaker.recipes.ICraftingInventory;
 import mods.thaumcraft.Infusion;
 import thaumcraft.aspect.CTAspectStack;
 import moretweaker.bewitchment.WitchesCauldron;
+import moretweaker.bewitchment.Distillery;
+import moretweaker.bewitchment.WitchesRitual;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -968,7 +970,7 @@ for aspect in allThaumcraftAspects {
 mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal", "", <contenttweaker:stabilized_end_crystal>, 4, [<aspect:alienis> * 100,<aspect:auram> * 100,<aspect:sol> * 80,<aspect:lux> * 40,<aspect:fabrico> * 40], <minecraft:end_crystal>, [<thaumcraft:plate:2>,<thaumcraft:vis_resonator>,<thaumcraft:plate:2>,<enderutilities:enderpart:17>]);
 
 # Mysterious Leaking Soul
-<contenttweaker:mysterious_leaking_soul>.addTooltip(format.darkGray("Found in Mortum Dungeons."));
+<contenttweaker:mysterious_leaking_soul>.addTooltip(format.white("Found in ") + format.darkGray("Mortum") + format.white(" Dungeons."));
 
 # Woodland Mansion Locator Token
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, empowered_glod_crystal_block, 10000, 100, [0.222, 0.1641, 0.0508]);
@@ -978,5 +980,14 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_loca
 
 # Brew of the Void
 WitchesCauldron.addRecipe([<contenttweaker:brew_of_the_void>], [<bewitchment:bottle_of_blood>,<bewitchment:belladonna>,<bewitchment:aconitum>,<bewitchment:wormwood>,<thaumcraft:ingot>,<thaumcraft:ingot>,<minecraft:mycelium>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})]);
+
+# Tough Purified Paste
+WitchesRitual.addRecipe("Rite of the Tough and Pure", [<contenttweaker:tough_purified_paste> * 4], [<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<bewitchment:salt>,<bewitchment:salt>,<thaumcraft:bath_salts>,<thaumcraft:bath_salts>,<contenttweaker:purified_tablet>], null, null, 200, WitchesRitual.RITUAL, WitchesRitual.RITUAL, WitchesRitual.NONE);
+
+# Dragon Resin
+WitchesCauldron.addRecipe([<contenttweaker:dragon_resin> * 8], [<minecraft:dragon_breath>,<botania:storage:4>,<draconicevolution:draconium_block>,<contenttweaker:tough_purified_paste>,<quark:enderdragon_scale>,<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_bestia>,<bewitchment:fiery_unguent>]);
+
+# Gypsum
+Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bewitchment:wood_ash>,<bewitchment:tallow>,<bewitchment:swirl_of_depths>,<ore:slimeball>,<bewitchment:white_sage>]);
 
 print("ENDING ContentTweakerRecipes.zs");
