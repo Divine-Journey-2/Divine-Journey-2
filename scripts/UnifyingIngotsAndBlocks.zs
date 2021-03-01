@@ -352,5 +352,6 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>
 <ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
 recipes.remove(<bewitchment:silver_nugget>);
 recipes.remove(<immersiveengineering:metal:23>);
+recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials:45>]);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

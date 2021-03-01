@@ -136,6 +136,7 @@ mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <l
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 250,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);
 
 # Ritual Chalk
+recipes.remove(<bewitchment:ritual_chalk>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:ritual_chalk", "", <bewitchment:ritual_chalk>, 1, [<aspect:terra> * 20,<aspect:cognitio> * 10,<aspect:praecantatio> * 10], <undergroundbiomes:sedimentary_stone:1>, [<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>]);
 
 # Focal Chalk
@@ -182,7 +183,7 @@ WitchesOven.removeRecipe(<minecraft:chorus_fruit_popped>);
 Distillery.removeRecipe(<bewitchment:heaven_extract>);
 Distillery.addRecipe([<bewitchment:heaven_extract>,<bewitchment:empty_jar>], [<bewitchment:cleansing_balm>,<bewitchment:essence_of_vitality>,<bewitchment:heart>,<bewitchment:owlets_wing>,<contenttweaker:holy_core>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "lux"}]})]);
 
-# Otherworldy Tears
+# Otherworldly Tears
 Distillery.removeRecipe(<bewitchment:otherworldly_tears>);
 Distillery.addRecipe([<bewitchment:otherworldly_tears>,<bewitchment:empty_jar>], [<bewitchment:swirl_of_depths>,<bewitchment:liquid_witchcraft>,<bewitchment:dimensional_sand>,<enderutilities:enderpart:17>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]})]);
 
@@ -201,5 +202,118 @@ Distillery.addRecipe([<bewitchment:bottled_frostfire>,<bewitchment:empty_jar> * 
 # Cold Iron Ingot
 FrostFire.removeAll();
 FrostFire.addRecipe(<bewitchment:cold_iron_ingot>, <thaumcraft:ingot>);
+
+# Perpetual Ice
+<bewitchment:perpetual_ice>.addTooltip(format.white("Created by throwing an Iceworld Potion on Stone,"));
+<bewitchment:perpetual_ice>.addTooltip(format.white("Granite or Diorite. To create the Potion, place a"));
+<bewitchment:perpetual_ice>.addTooltip(format.white("Witches' Cauldron near a Witches' Altar, fill it"));
+<bewitchment:perpetual_ice>.addTooltip(format.white("with Water, and throw a Mandrake Root, Ice OR Snow,"));
+<bewitchment:perpetual_ice>.addTooltip(format.white("Glowstone Dust, then Gunpowder in, and Right Click"));
+<bewitchment:perpetual_ice>.addTooltip(format.white("with an empty Bottle three times!"));
+
+# Pentacle
+recipes.remove(<bewitchment:pentacle>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:pentacle", "", <bewitchment:pentacle>, 5, [<aspect:instrumentum> * 200,<aspect:diabolus> * 200], <contenttweaker:coralium_decorated_blood_star>, [<bewitchment:block_of_cold_iron_pentacle>,<bewitchment:diabolical_vein>,<bewitchment:stone_ichor>,<bewitchment:block_of_cold_iron_pentacle>,<bewitchment:diabolical_vein>,<bewitchment:stone_ichor>]);
+
+# Goblet
+recipes.remove(<bewitchment:goblet>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:goblet", "", <bewitchment:goblet>, 5, [<aspect:metallum> * 150,<aspect:aqua> * 150,<aspect:diabolus> * 100], <thaumcraft:jar_normal>, [<bewitchment:cold_iron_plate>,<bewitchment:cold_iron_plate>,<bewitchment:pure_filament>,<bewitchment:cold_iron_plate>,<bewitchment:pure_filament>,<bewitchment:cold_iron_plate>,<bewitchment:cold_iron_plate>,<bewitchment:swirl_of_depths>]);
+
+# Codex Infernalis
+recipes.addShapeless(<patchouli:guide_book>.withTag({"patchouli:book": "bewitchment:codex_infernalis"}), [<minecraft:book>,<bewitchment:heart>,<bewitchment:spectral_dust>]);
+
+# Iron Gall Ink
+WitchesCauldron.removeRecipe(<bewitchment:iron_gall_ink>);
+WitchesCauldron.addRecipe([<bewitchment:iron_gall_ink>], [<bewitchment:cold_iron_ingot>,<bewitchment:oak_apple_gall>,<bewitchment:oak_apple_gall>,<minecraft:dye>]);
+
+function addBewitchmentPoppetRecipe(output as IItemStack, sides as IIngredient, bottom_sides as IIngredient, bottom as IIngredient) {
+	recipes.remove(output);
+	recipes.addShaped(output, [[<contenttweaker:magical_leather>,<abyssalcraft:lifecrystal>,<contenttweaker:magical_leather>],[sides,<bewitchment:poppet>,sides],[bottom_sides,bottom,bottom_sides]]);
+}
+
+# Poppet of Binding
+addBewitchmentPoppetRecipe(<bewitchment:poppet_binding>, <contenttweaker:binding_reagent>, <bewitchment:iron_gall_ink>, <bewitchment:stone_ichor>.noReturn());
+
+# Poppet of Clumsiness
+addBewitchmentPoppetRecipe(<bewitchment:poppet_clumsy>, <botania:rune:12>, <contenttweaker:gypsum>, <bewitchment:oil_of_vitriol>.noReturn());
+
+# Death Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_deathprotection>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <botania:rune:11>, <bewitchment:heaven_extract>.noReturn());
+
+# Earth Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_earthprotection>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}), <bewitchment:toe_of_frog>, <contenttweaker:travellers_tenacity>);
+
+# Flame Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_flameprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <botania:rune:5>, <bewitchment:fiery_unguent>.noReturn());
+
+# Hunger Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_hungerprotection>, <abyssalcraft:mre>, <botania:rune:10>, <bewitchment:cleansing_balm>.noReturn());
+
+# Poppet of Spirit's Bane
+addBewitchmentPoppetRecipe(<bewitchment:poppet_spiritbane>, <botania:rune:13>, <extendedcrafting:material:48>, <bewitchment:otherworldly_tears>.noReturn());
+
+# Tool Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_tool>, <enderio:block_alloy_endergy:1>, <botania:rune:11>, <bewitchment:cleansing_balm>.noReturn());
+
+# Vampiric Poppet
+recipes.remove(<bewitchment:poppet_vampiric>);
+<bewitchment:poppet_vampiric>.addTooltip(format.white("Item removed. Deemed too OP."));
+
+# Woodoo Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_voodoo>, <botania:rune:13>, <thermalexpansion:florb>.withTag({Fluid: "liquid_death"}), <bewitchment:otherworldly_tears>.noReturn());
+
+# Woodoo Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_voodooprotection>, <botania:rune:14>, <spartanshields:shield_tc_thaumium>, <bewitchment:heaven_extract>.noReturn());
+
+# Poppet of Wasting
+addBewitchmentPoppetRecipe(<bewitchment:poppet_wasting>, <abyssalcraft:essence>, <botania:rune:10>, <bewitchment:fiery_unguent>.noReturn());
+
+# Water Protection Poppet
+addBewitchmentPoppetRecipe(<bewitchment:poppet_waterprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_water_breathing"}), <botania:rune:10>, <bewitchment:swirl_of_depths>.noReturn());
+
+# Taglock
+recipes.remove(<bewitchment:taglock>);
+recipes.addShapeless(<bewitchment:taglock>, [<thaumcraft:phial>,<bewitchment:bone_needle>,<bewitchment:cold_iron_nugget>]);
+
+# Bottled Hellfire
+Distillery.removeRecipe(<bewitchment:bottled_hellfire>);
+Distillery.addRecipe([<bewitchment:bottled_hellfire>], [<bewitchment:fiery_unguent>,<bewitchment:hellebore>,<bewitchment:dragons_blood_resin_block>,<contenttweaker:gypsum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]})]);
+
+# Fiery Chalk
+WitchesCauldron.removeRecipe(<bewitchment:fiery_chalk>);
+WitchesCauldron.addRecipe([<bewitchment:fiery_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:bottled_hellfire>,<bewitchment:diabolical_vein>,<botania:rune:1>]);
+
+# Demonic Elixir
+Distillery.removeRecipe(<bewitchment:demonic_elixir>);
+Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_unguent>,<contenttweaker:travellers_tenacity>,<bewitchment:demon_heart>,<botania:rune:15>,<bewitchment:empty_jar>,<bewitchment:empty_jar>]);
+
+# Flying Ointment
+recipes.remove(<bewitchment:flying_ointment>);
+Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travellers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
+
+# Caduceus
+<bewitchment:caduceus>.addTooltip(format.white("Dropped by Baphomet. Consult your"));
+<bewitchment:caduceus>.addTooltip(format.white("Codex Infernalis on how to summon him."));
+
+# Leonard's Wand
+<bewitchment:leonards_wand>.addTooltip(format.white("Dropped by Leonard. Consult your"));
+<bewitchment:leonards_wand>.addTooltip(format.white("Codex Infernalis on how to summon him."));
+
+# Brazier
+recipes.remove(<bewitchment:brazier>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:brazier", "", <bewitchment:brazier>, 7, [<aspect:machina> * 200,<aspect:ignis> * 200,<aspect:diabolus> * 150], <bewitchment:witches_oven>, [<bewitchment:demonic_elixir>,<bewitchment:caduceus>,<bewitchment:otherworldly_tears>,<bewitchment:bottled_hellfire>]);
+
+# Sigil Table
+recipes.remove(<bewitchment:sigil_table>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:sigil_table", "", <bewitchment:sigil_table>, 7, [<aspect:machina> * 200,<aspect:vinculum> * 150,<aspect:diabolus> * 100,<aspect:cognitio> * 50,<aspect:fabrico> * 50], <bewitchment:witches_oven>, [<bloodmagic:sigil_suppression>,<bewitchment:block_of_cold_iron>,<bloodmagic:sigil_phantom_bridge>,<extendedcrafting:table_advanced>]);
+
+# Phasing Chalk
+WitchesCauldron.removeRecipe(<bewitchment:phasing_chalk>);
+WitchesCauldron.addRecipe([<bewitchment:phasing_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:otherworldly_tears>,<bewitchment:spectral_dust>,<botania:rune:14>]);
+
+# Stew of the Grotesque
+WitchesCauldron.removeRecipe(<bewitchment:stew_of_the_grotesque>);
+WitchesCauldron.addRecipe([<bewitchment:stew_of_the_grotesque>], [<bewitchment:demonic_elixir>,<contenttweaker:death_core>,<contenttweaker:shard_of_the_grotesque>,<contenttweaker:shard_of_the_grotesque>,<bewitchment:lizard_leg>,<bewitchment:toe_of_frog>,<bewitchment:adders_fork>,<bewitchment:hellebore>,<bewitchment:belladonna>]);
+
 
 print("ENDING Bewitchment.zs");

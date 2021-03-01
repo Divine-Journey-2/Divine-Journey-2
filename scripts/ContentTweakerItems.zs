@@ -732,5 +732,39 @@ var dragon_resin = VanillaFactory.createItem("dragon_resin");
 dragon_resin.register();
 var gypsum = VanillaFactory.createItem("gypsum");
 gypsum.register();
+var travellers_tenacity = VanillaFactory.createItem("travellers_tenacity");
+travellers_tenacity.register();
+var ignition = VanillaFactory.createItem("ignition");
+ignition.glowing = true;
+ignition.register();
+var flame_devourer_pendant = VanillaFactory.createItem("flame_devourer_pendant");
+flame_devourer_pendant.rarity = "EPIC";
+flame_devourer_pendant.maxStackSize = 1;
+flame_devourer_pendant.maxDamage = 15;
+flame_devourer_pendant.itemRightClick = function(stack, world, player, hand) {
+    if(world.remote) {
+        return "PASS";
+    }
+    var found = false as bool;
+    for p in player.activePotionEffects {
+		#Commands.call("say " + p.effectName, player, world);
+    	if(p.effectName == "bewitchment.hellfire") {
+    		found = true;
+    	}
+    }
+    if(found) {
+	    stack.damage(1, player);
+		Commands.call("give @p contenttweaker:ignition 1 0", player, world, false, true);
+    	return "SUCCESS";
+    }
+    return "FAIL";
+};
+flame_devourer_pendant.register();
+var death_core = VanillaFactory.createItem("death_core");
+death_core.rarity = "RARE";
+death_core.register();
+var shard_of_the_grotesque = VanillaFactory.createItem("shard_of_the_grotesque");
+shard_of_the_grotesque.glowing = true;
+shard_of_the_grotesque.register();
 
 print("ENDING ContentTweakerItems.zs");

@@ -9,6 +9,7 @@ import mods.immersiveengineering.Crusher as IECrusher;
 import mods.extrautils2.Crusher as EUCrusher;
 import mods.enderio.SagMill;
 import crafttweaker.item.WeightedItemStack;
+import moretweaker.bewitchment.WitchesRitual;
 
 print("STARTING MinecraftRecipes.zs");
 
@@ -251,5 +252,8 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, <minecraft:d
 
 # Beetroot as Seed drop
 vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);
+
+# Spawn Villager
+WitchesRitual.addRecipe("Rite of the Haaaaah", [<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:villager"}})], [<minecraft:egg>,<bewitchment:heaven_extract>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})], null, null, 2200, WitchesRitual.RITUAL, WitchesRitual.FIERY, WitchesRitual.RITUAL);
 
 print("ENDING MinecraftRecipes.zs");

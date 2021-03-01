@@ -970,7 +970,7 @@ for aspect in allThaumcraftAspects {
 mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal", "", <contenttweaker:stabilized_end_crystal>, 4, [<aspect:alienis> * 100,<aspect:auram> * 100,<aspect:sol> * 80,<aspect:lux> * 40,<aspect:fabrico> * 40], <minecraft:end_crystal>, [<thaumcraft:plate:2>,<thaumcraft:vis_resonator>,<thaumcraft:plate:2>,<enderutilities:enderpart:17>]);
 
 # Mysterious Leaking Soul
-<contenttweaker:mysterious_leaking_soul>.addTooltip(format.white("Found in ") + format.darkGray("Mortum") + format.white(" Dungeons."));
+<contenttweaker:mysterious_leaking_soul>.addTooltip(format.darkGray("Found in Mortum Dungeons."));
 
 # Woodland Mansion Locator Token
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, empowered_glod_crystal_block, 10000, 100, [0.222, 0.1641, 0.0508]);
@@ -989,5 +989,25 @@ WitchesCauldron.addRecipe([<contenttweaker:dragon_resin> * 8], [<minecraft:drago
 
 # Gypsum
 Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bewitchment:wood_ash>,<bewitchment:tallow>,<bewitchment:swirl_of_depths>,<ore:slimeball>,<bewitchment:white_sage>]);
+
+# Traveler's Tenacity
+Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<botania:rune:9>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
+
+# Flame Devourer Pendant
+recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>,<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>],[<botania:rune:13>,<contenttweaker:travelers_tenacity>,<botania:rune:13>]]);
+
+# Ignition
+<contenttweaker:ignition>.addTooltip(format.white("Obtained by using a Flame Devourer Pendant"));
+<contenttweaker:ignition>.addTooltip(format.white("while the Hellfire Curse is on the user."));
+<contenttweaker:ignition>.addTooltip(format.white("Check Codex Infernalis / Curses / Conflagration,"));
+<contenttweaker:ignition>.addTooltip(format.white("and use it with your own Taglock!"));
+
+# Death Core
+recipes.addShaped(<contenttweaker:death_core>, [[<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>],[<bewitchment:poppet_deathprotection>,<thermalexpansion:florb>.withTag({Fluid: "liquid_death"}),<bewitchment:poppet_deathprotection>],[<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>]]);
+
+# Shard of the Grotesque
+<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Obtained by slaying Ghosts spawned by"));
+<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("the Spiritual Rift Ritual. Consult your"));
+<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Book of Shadows for more info."));
 
 print("ENDING ContentTweakerRecipes.zs");

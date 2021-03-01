@@ -224,4 +224,13 @@ add_entry("botania:gaia_guardian_2", "extra_gaia_spirits", <botania:manaresource
 # Owlet's Wing from MysticalWorld Owls (not just Bewitchment ones)
 add_entry("mysticalworld:entity/owl", "bewitchment:owlets_wing", <bewitchment:owlets_wing>, 0, 2, 0, 0, 100);
 
+# Removing Hoof drop from Cleavers
+remove_entry("bewitchment:entities/cleaver", "cleaver", "bewitchment:hoof");
+
+# Removing Heart drop from Drudens
+remove_entry("bewitchment:entities/druden", "druden", "bewitchment:heart");
+
+# Shard of the Grotesque
+add_entry("bewitchment:entities/ghost", "custom_loot", <contenttweaker:shard_of_the_grotesque>, 1, 2, 0, 0, 100);
+
 print("ENDING LootTweaker.zs");

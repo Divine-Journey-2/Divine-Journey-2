@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
+    "LUSH",
     "WET",
-    "SWAMP",
-    "LUSH"
+    "SWAMP"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
