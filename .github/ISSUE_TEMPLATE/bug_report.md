@@ -12,7 +12,7 @@ First check if your problem has been submitted before, or if it's a Known Issue.
 **Modpack version:**
 2.X.X
 
-**Describe the bug**
+**Description:**
 A clear and concise description of what the bug is.
 
 **Steps to reproduce:**
