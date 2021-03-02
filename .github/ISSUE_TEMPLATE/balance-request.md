@@ -3,7 +3,7 @@ name: Balance request
 about: Requesting something because something's too easy / difficult to craft, easy
   / difficult to fight against, etc.
 title: ''
-labels: ''
+labels: Balance Request
 assignees: ''
 
 ---
