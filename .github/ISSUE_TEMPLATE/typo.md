@@ -1,6 +1,6 @@
 ---
 name: Typo
-about: There is a typo / misspelling somewhere.
+about: There is a typo / misspelling / grammatical error somewhere.
 title: ''
 labels: Typo
 assignees: ''
