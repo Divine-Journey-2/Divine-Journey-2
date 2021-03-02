@@ -1,8 +1,6 @@
 ---
 name: Bug report
-about: 'Check if you''re on the latest Divine Journey 2 version. If not, please update
-  first and see if your issue''s been fixed. If not, fill out the form below by REWRITING
-  the text below the titles:'
+about: There is a bug that needs to be fixed.
 title: ''
 labels: ''
 assignees: ''
