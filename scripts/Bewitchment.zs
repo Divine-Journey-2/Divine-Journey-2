@@ -10,6 +10,8 @@ import moretweaker.bewitchment.WitchesCauldron;
 import moretweaker.bewitchment.Distillery;
 import moretweaker.bewitchment.WitchesRitual;
 import moretweaker.bewitchment.FrostFire;
+import mods.immersiveengineering.ArcFurnace;
+import mods.enderio.AlloySmelter as EIOAlloySmelter;
 
 print("STARTING Bewitchment.zs");
 
@@ -241,7 +243,7 @@ addBewitchmentPoppetRecipe(<bewitchment:poppet_clumsy>, <botania:rune:12>, <cont
 addBewitchmentPoppetRecipe(<bewitchment:poppet_deathprotection>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <botania:rune:11>, <bewitchment:heaven_extract>.noReturn());
 
 # Earth Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_earthprotection>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}), <bewitchment:toe_of_frog>, <contenttweaker:travellers_tenacity>);
+addBewitchmentPoppetRecipe(<bewitchment:poppet_earthprotection>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}), <bewitchment:toe_of_frog>, <contenttweaker:travelers_tenacity>);
 
 # Flame Protection Poppet
 addBewitchmentPoppetRecipe(<bewitchment:poppet_flameprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <botania:rune:5>, <bewitchment:fiery_unguent>.noReturn());
@@ -285,11 +287,11 @@ WitchesCauldron.addRecipe([<bewitchment:fiery_chalk>], [<bewitchment:ritual_chal
 
 # Demonic Elixir
 Distillery.removeRecipe(<bewitchment:demonic_elixir>);
-Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_unguent>,<contenttweaker:travellers_tenacity>,<bewitchment:demon_heart>,<botania:rune:15>,<bewitchment:empty_jar>,<bewitchment:empty_jar>]);
+Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_unguent>,<contenttweaker:travelers_tenacity>,<bewitchment:demon_heart>,<botania:rune:15>,<bewitchment:empty_jar>,<bewitchment:empty_jar>]);
 
 # Flying Ointment
 recipes.remove(<bewitchment:flying_ointment>);
-Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travellers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
+Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travelers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
 
 # Caduceus
 <bewitchment:caduceus>.addTooltip(format.white("Dropped by Baphomet. Consult your"));
@@ -315,5 +317,102 @@ WitchesCauldron.addRecipe([<bewitchment:phasing_chalk>], [<bewitchment:ritual_ch
 WitchesCauldron.removeRecipe(<bewitchment:stew_of_the_grotesque>);
 WitchesCauldron.addRecipe([<bewitchment:stew_of_the_grotesque>], [<bewitchment:demonic_elixir>,<contenttweaker:death_core>,<contenttweaker:shard_of_the_grotesque>,<contenttweaker:shard_of_the_grotesque>,<bewitchment:lizard_leg>,<bewitchment:toe_of_frog>,<bewitchment:adders_fork>,<bewitchment:hellebore>,<bewitchment:belladonna>]);
 
+# Demon Heart
+<bewitchment:demon_heart>.addTooltip(format.white("Dropped by Lesser and Higher Demons. Check"));
+<bewitchment:demon_heart>.addTooltip(format.white("your Codex Infernalis on how to summon them."));
+
+# Broom
+recipes.remove(<bewitchment:broom>);
+recipes.addShapedMirrored(<bewitchment:broom>, [[null,null,<ore:stickWood>],[<thaumcraft:ingot:2>,<bewitchment:liquid_witchcraft>.noReturn(),null],[<thaumcraft:ingot:2>,<thaumcraft:ingot:2>,null]]);
+
+# Silver Helmet
+recipes.remove(<bewitchment:silver_helmet>);
+recipes.addShaped(<bewitchment:silver_helmet>, [[<thermalfoundation:storage:2>,<thermalfoundation:storage:2>,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,<thaumcraft:fortress_helm>,<thermalfoundation:storage:2>]]);
+
+# Silver Chestplate
+recipes.remove(<bewitchment:silver_chestplate>);
+recipes.addShaped(<bewitchment:silver_chestplate>, [[<thermalfoundation:storage:2>,<thaumcraft:fortress_chest>,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,<thermalfoundation:storage:2>,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,<thermalfoundation:storage:2>,<thermalfoundation:storage:2>]]);
+
+# Silver Leggings
+recipes.remove(<bewitchment:silver_leggings>);
+recipes.addShaped(<bewitchment:silver_leggings>, [[<thermalfoundation:storage:2>,<thermalfoundation:storage:2>,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,<thaumcraft:fortress_legs>,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,null,<thermalfoundation:storage:2>]]);
+
+# Silver Boots
+recipes.remove(<bewitchment:silver_boots>);
+recipes.addShaped(<bewitchment:silver_boots>, [[<thermalfoundation:storage:2>,null,<thermalfoundation:storage:2>],[<thermalfoundation:storage:2>,<thaumcraft:thaumium_boots>,<thermalfoundation:storage:2>]]);
+
+# Cold Iron Helmet
+recipes.remove(<bewitchment:cold_iron_helmet>);
+recipes.addShaped(<bewitchment:cold_iron_helmet>, [[<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,<bewitchment:silver_helmet>,<bewitchment:block_of_cold_iron>]]);
+
+# Cold Iron Chestplate
+recipes.remove(<bewitchment:cold_iron_chestplate>);
+recipes.addShaped(<bewitchment:cold_iron_chestplate>, [[<bewitchment:block_of_cold_iron>,<bewitchment:silver_chestplate>,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>]]);
+
+# Cold Iron Leggings
+recipes.remove(<bewitchment:cold_iron_leggings>);
+recipes.addShaped(<bewitchment:cold_iron_leggings>, [[<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,<bewitchment:silver_leggings>,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,null,<bewitchment:block_of_cold_iron>]]);
+
+# Cold Iron Boots
+recipes.remove(<bewitchment:cold_iron_boots>);
+recipes.addShaped(<bewitchment:cold_iron_boots>, [[<bewitchment:block_of_cold_iron>,null,<bewitchment:block_of_cold_iron>],[<bewitchment:block_of_cold_iron>,<bewitchment:silver_boots>,<bewitchment:block_of_cold_iron>]]);
+
+# Witches' Cowl
+recipes.remove(<bewitchment:witches_cowl>);
+recipes.addShaped(<bewitchment:witches_cowl>, [[<contenttweaker:magical_leather>,<quark:witch_hat>,<contenttweaker:magical_leather>],[<bewitchment:diabolical_vein>,<botania:manaweavehelm>,<bewitchment:diabolical_vein>],[<bewitchment:diabolical_vein>,null,<bewitchment:diabolical_vein>]]);
+
+# Witches' Hat
+recipes.remove(<bewitchment:witches_hat>);
+recipes.addShaped(<bewitchment:witches_hat>, [[<bewitchment:diabolical_vein>,<quark:witch_hat>,<bewitchment:diabolical_vein>],[<bewitchment:diabolical_vein>,<botania:manaweavehelm>,<bewitchment:diabolical_vein>],[<contenttweaker:magical_leather>,null,<contenttweaker:magical_leather>]]);
+
+# Witches' Robes
+recipes.remove(<bewitchment:witches_robes>);
+recipes.addShaped(<bewitchment:witches_robes>, [[<bewitchment:diabolical_vein>,null,<bewitchment:diabolical_vein>],[<contenttweaker:magical_leather>,<thaumcraft:cloth_chest>,<contenttweaker:magical_leather>],[<contenttweaker:magical_leather>,<contenttweaker:magical_leather>,<contenttweaker:magical_leather>]]);
+
+# Witches' Pants
+recipes.remove(<bewitchment:witches_pants>);
+recipes.addShaped(<bewitchment:witches_pants>, [[null,<contenttweaker:magical_leather>,null],[<contenttweaker:magical_leather>,<thaumcraft:cloth_legs>,<contenttweaker:magical_leather>],[<bewitchment:diabolical_vein>,null,<bewitchment:diabolical_vein>]]);
+
+# Filled Goblet
+WitchesCauldron.removeRecipe(<bewitchment:filled_goblet>);
+WitchesCauldron.addRecipe([<bewitchment:filled_goblet>,<bewitchment:empty_jar>], [<bewitchment:goblet>,<bewitchment:demonic_elixir>,<thermalexpansion:florb>.withTag({Fluid: "moltendreadium"}),<bewitchment:dragons_blood_resin_block>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]})]);
+
+# Nazar
+recipes.remove(<bewitchment:nazar>);
+recipes.addShapedMirrored(<bewitchment:nazar>, [[<bewitchment:pure_filament>,<bewitchment:pure_filament>,<bewitchment:pure_filament>],[<bewitchment:pure_filament>,null,<contenttweaker:travelers_tenacity>],[<bewitchment:pure_filament>.noReturn(),<bewitchment:heaven_extract>,null]]);
+
+# Token of Remedies
+recipes.remove(<bewitchment:token_of_remedies>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:token_of_remedies", "", <bewitchment:token_of_remedies>, 5, [<aspect:instrumentum> * 150,<aspect:luna> * 100,<aspect:ordo> * 100,<aspect:desiderium> * 50], <evilcraft:invigorating_pendant>, [<bewitchment:block_of_cold_iron>,<mysticalworld:amethyst_block>,<bewitchment:block_of_cold_iron>,<mysticalworld:amethyst_block>,<bewitchment:block_of_cold_iron>,<mysticalworld:amethyst_block>,<bewitchment:block_of_cold_iron>,<mysticalworld:amethyst_block>]);
+
+# Triskelion Amulet
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:triskelion", "", <bewitchment:triskelion>, 5, [<aspect:instrumentum> * 150,<aspect:desiderium> * 100,<aspect:aversio> * 100,<aspect:diabolus> * 50], <evilcraft:promise_acceptor:1>, [<bewitchment:stone_ichor>,<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<contenttweaker:travelers_tenacity>,<contenttweaker:condensed_vis_crystal_desiderium>]);
+
+# Girdle of the Dryads
+recipes.remove(<bewitchment:girdle_of_the_dryads>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:girdle_of_the_dryads", "", <bewitchment:girdle_of_the_dryads>, 5, [<aspect:praemunio> * 150,<aspect:instrumentum> * 100,<aspect:herba> * 100,<aspect:luna> * 50], <bewitchment:block_of_garnet>, [<bewitchment:stone_ichor>,<bewitchment:oak_spirit>,<contenttweaker:magical_leather>,<contenttweaker:condensed_vis_crystal_herba>,<contenttweaker:magical_leather>,<bewitchment:stone_ichor>,<bewitchment:oak_spirit>,<bewitchment:pure_filament>]);
+
+# Horseshoe
+recipes.remove(<bewitchment:horseshoe>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:horseshoe", "", <bewitchment:horseshoe>, 5, [<aspect:motus> * 100,<aspect:metallum> * 50,<aspect:praemunio> * 50], <bewitchment:hoof>, [<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<contenttweaker:travelers_tenacity>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:pure_filament>]);
+
+# Hecate's Visage
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:hecates_visage", "", <bewitchment:hecates_visage>, 5, [<aspect:ordo> * 100,<aspect:ignis> * 50,<aspect:desiderium> * 50,<aspect:cognitio> * 50], <bewitchment:bottled_hellfire>, [<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:pure_filament>,<bewitchment:oil_of_vitriol>,<bewitchment:pure_filament>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:ritual_chalk>]);
+
+# Nethersteel
+recipes.removeShapeless(<bewitchment:nethersteel> * 4, [<minecraft:iron_ingot>,<*>,<*>,<*>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<bewitchment:nethersteel> * 4, <simplyjetpacks:metaitemmods:12>, null, 240, 1000, [<minecraft:nether_brick>,<bewitchment:cold_iron_ingot>]);
+EIOAlloySmelter.addRecipe(<bewitchment:nethersteel> * 4, [<simplyjetpacks:metaitemmods:12>, <minecraft:nether_brick>,<bewitchment:cold_iron_ingot>], 60000);
+
+# Demonic Horn
+<bewitchment:hellhound_horn>.addTooltip(format.white("Dropped by various Bewitchment Demons."));
+
+# Hellish Bauble
+recipes.remove(<bewitchment:hellish_bauble>);
+recipes.addShaped(<bewitchment:hellish_bauble>, [[<bewitchment:hellhound_horn>,<bewitchment:diabolical_vein>,<bewitchment:hellhound_horn>],[<bewitchment:nethersteel>,<botania:rune:15>,<bewitchment:nethersteel>],[<bewitchment:nethersteel>,<bewitchment:demonic_elixir>.noReturn(),<bewitchment:nethersteel>]]);
+
+# Waystone
+recipes.remove(<bewitchment:waystone>);
+recipes.addShaped(<bewitchment:waystone>, [[<bewitchment:cold_iron_ingot>,<bewitchment:pentacle>,<bewitchment:cold_iron_ingot>],[<bewitchment:cold_iron_ingot>,<bewitchment:otherworldly_tears>.noReturn(),<bewitchment:cold_iron_ingot>],[null,<bewitchment:cold_iron_ingot>,null]]);
 
 print("ENDING Bewitchment.zs");

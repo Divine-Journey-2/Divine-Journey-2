@@ -994,7 +994,7 @@ Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bew
 Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<botania:rune:9>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
 
 # Flame Devourer Pendant
-recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>,<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>],[<botania:rune:13>,<contenttweaker:travelers_tenacity>,<botania:rune:13>]]);
+recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<botania:rune:13>,<contenttweaker:travelers_tenacity>,<botania:rune:13>]]);
 
 # Ignition
 <contenttweaker:ignition>.addTooltip(format.white("Obtained by using a Flame Devourer Pendant"));

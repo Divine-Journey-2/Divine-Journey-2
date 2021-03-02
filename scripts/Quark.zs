@@ -15,4 +15,7 @@ recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecr
 # Tallow: Only the Bewitchment one should be used.
 <ore:tallow>.remove(<quark:tallow>);
 
+# Witch Hat
+<quark:witch_hat>.addTooltip(format.white("Dropped rarely by Witches."));
+
 print("ENDING Quark.zs");

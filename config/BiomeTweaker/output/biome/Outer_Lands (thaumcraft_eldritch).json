@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "MAGICAL",
-    "END",
-    "SPOOKY"
+    "SPOOKY",
+    "END"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [],
