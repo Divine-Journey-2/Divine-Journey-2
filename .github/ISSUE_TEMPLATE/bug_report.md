@@ -34,5 +34,5 @@ If applicable, add screenshots to help explain your problem. If not, this part c
 **Java version:**
 If your bug report is a crash or the modpack/world not loading, your Java version might be necessary. Otherwise you can remove this part.
 
-**Additional context**
+**Additional context:**
 Add any other context about the problem here.

@@ -25,6 +25,6 @@ Ex. "The automation setup comes too late ..." / "There is nothing to do in the m
 A clear and concise description of any alternative solutions you've considered.
 Ex. "If the proposed recipe isn't added, then ..." / "Setting up automation differently would be ..."
 
-**Additional context**
+**Additional context:**
 Add any other context or screenshots about the feature request here.
 Ex. "This mainly occurs when ..." / "It's not an issue in Singleplayer, because ..."
