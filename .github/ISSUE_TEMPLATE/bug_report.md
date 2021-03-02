@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Check if you're on the latest Divine Journey 2 version. If not, please update first and see if your issue's been fixed. If not, fill out the form below by REWRITING the text below the titles, and delete this text as well.
+First check if your problem has been submitted before, or if it's a Known Issue. If it already exists, please don't submit. Then check if you're on the latest Divine Journey 2 version. If not, please update first and see if your issue's been fixed. If not, fill out the form below by REWRITING the text below the titles, and delete this text as well.
 
 **Modpack version:**
 2.X.X
