@@ -1,8 +1,8 @@
 ---
-name: Bug report
-about: There is a bug that needs to be fixed.
+name: Crash report
+about: The game crashed on a certain action.
 title: ''
-labels: Bug
+labels: Crash
 assignees: ''
 
 ---
@@ -12,20 +12,24 @@ First check if your problem has been submitted before, or if it's a Known Issue.
 **Modpack version:**
 2.X.X
 
+**Java version:**
+X.X.X (e.g. 11.0.8)
+
 **Description:**
-A clear and concise description of what the bug is.
+A clear and concise description of how the crash happened.
 
 **Steps to reproduce:**
 1. Open the game / Start the modpack / Get into a world / ...
 2. Get the item ... / Go to ... / Open the ... / Place a ... / Break a ... / ...
 3. ...
-4. ... doesn't craft correctly. / Can't get the ... / ... can't be completed. / ...
+4. The game crashes. / The server crashes. / ...
 
-**Expected behavior:**
-A clear and concise description of what you expected to happen.
+**Minecraft crash report:**
+https://pastebin.com/asd ...
+(You can attach any number of them, but please describe when each of them occured.)
 
 **Screenshots:**
-If applicable, add screenshots to help explain your problem. These can also be atteched to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
+If applicable, add screenshots to help explain how your crash happened. These can also be atteched to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
 
 **Additional context:**
-Add any other context about the problem here.
+Add any other context about the crash here.
