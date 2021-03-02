@@ -8,7 +8,7 @@ assignees: ''
 
 ---
 
-*First check if you're on the latest Divine Journey 2 version. If not, please update first and see if your request has been added. If not, fill out the form below by REWRITING the text below the titles, and delete this text as well:*
+First check if you're on the latest Divine Journey 2 version. If not, please update first and see if your request has been added. If not, fill out the form below by REWRITING the text below the titles, and delete this text as well
 
 **Modpack version:**
 2.X.X
