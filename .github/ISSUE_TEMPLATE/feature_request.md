@@ -18,7 +18,7 @@ Ex. "I would like to see ... in the modpack." / "... should be enabled." / "A ne
 
 **Reasons why this should be added:**
 Sensible points on why the modpack would be "better" if this was added.
-Ex. "The automation setup comes too late ... / There is nothing to do in the meantime ..."
+Ex. "The automation setup comes too late ..." / "There is nothing to do in the meantime ..."
 
 **Describe alternatives you've considered:**
 A clear and concise description of any alternative solutions you've considered.

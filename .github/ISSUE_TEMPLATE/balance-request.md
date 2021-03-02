@@ -19,7 +19,7 @@ Ex. "I think ... is too expensive/grindy ..., the recipe should instead be ..."
 
 **Reasons why this should be changed:**
 Sensible points on why the modpack would be "better" if this was added.
-Ex. "The automation setup comes too late ... / There is nothing to do in the meantime ..."
+Ex. "The automation setup comes too late ..." / "There is nothing to do in the meantime ..."
 
 **Describe alternatives you've considered:**
 A clear and concise description of any alternative solutions you've considered.
