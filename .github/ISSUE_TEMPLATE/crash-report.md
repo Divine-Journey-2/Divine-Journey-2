@@ -18,6 +18,9 @@ X.X.X (e.g. 11.0.8)
 **Description:**
 A clear and concise description of how the crash happened.
 
+**When did the crash happen?**
+During loadup (at which phase?) / when entering the world / when joining the server/ when placing a certain block / ...
+
 **Steps to reproduce:**
 1. Open the game / Start the modpack / Get into a world / ...
 2. Get the item ... / Go to ... / Open the ... / Place a ... / Break a ... / ...
