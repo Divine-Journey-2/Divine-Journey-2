@@ -1,0 +1,62 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_warding_sigil",
+    "recipeTime": 220,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:seal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:tallow"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:infused_magical_core"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@2",
+            "amount": 4
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vinculum",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:material@1"
+        }
+    ]
+}

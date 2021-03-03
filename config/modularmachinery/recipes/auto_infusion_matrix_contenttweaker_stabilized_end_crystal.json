@@ -1,0 +1,68 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_contenttweaker_stabilized_end_crystal",
+    "recipeTime": 360,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderutilities:enderpart@17"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@2",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:end_crystal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:vis_resonator"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sol",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "lux",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "fabrico",
+            "amount": 40
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:stabilized_end_crystal"
+        }
+    ]
+}

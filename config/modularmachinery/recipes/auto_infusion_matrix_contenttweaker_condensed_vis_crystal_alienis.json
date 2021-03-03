@@ -1,0 +1,35 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_contenttweaker_condensed_vis_crystal_alienis",
+    "recipeTime": 30,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:salis_mundus"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"alienis"}]},
+            "amount": 8
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 30
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:condensed_vis_crystal_alienis"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_horseshoe",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:pure_filament"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:travelers_tenacity"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:cold_iron_ingot",
+            "amount": 6
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:hoof"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "metallum",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:horseshoe"
+        }
+    ]
+}

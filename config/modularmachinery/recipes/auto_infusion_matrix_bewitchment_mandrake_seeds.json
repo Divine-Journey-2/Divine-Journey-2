@@ -1,0 +1,84 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_mandrake_seeds",
+    "recipeTime": 540,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:cinderpearl"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nugget@10"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:creeper_seeds"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:mysterious_leaking_soul"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nitor_brown",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "victus",
+            "amount": 120
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aversio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:mandrake_seeds"
+        }
+    ]
+}

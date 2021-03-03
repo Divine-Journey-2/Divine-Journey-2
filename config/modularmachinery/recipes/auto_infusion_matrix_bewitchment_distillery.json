@@ -1,0 +1,70 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_distillery",
+    "recipeTime": 800,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 4000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:block_of_opal",
+            "amount": 3
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderio:block_enhanced_vat",
+            "amount": 3
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:witches_oven"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:essentia_input",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aqua",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alkimia",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 100
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:distillery"
+        }
+    ]
+}

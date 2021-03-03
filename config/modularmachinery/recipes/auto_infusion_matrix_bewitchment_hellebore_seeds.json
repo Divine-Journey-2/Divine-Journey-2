@@ -1,0 +1,66 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_hellebore_seeds",
+    "recipeTime": 420,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:nether_seeds"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nugget@10"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nitor_lime",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:shimmerleaf"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:mysterious_leaking_soul"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 160
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 60
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:hellebore_seeds"
+        }
+    ]
+}

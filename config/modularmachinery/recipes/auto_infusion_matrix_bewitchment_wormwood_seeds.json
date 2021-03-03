@@ -1,0 +1,74 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_wormwood_seeds",
+    "recipeTime": 390,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:rubber_seeds"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nitor_black",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:acacia_resin",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:mysterious_leaking_soul"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "tenebrae",
+            "amount": 120
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aversio",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitium",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:wormwood_seeds"
+        }
+    ]
+}

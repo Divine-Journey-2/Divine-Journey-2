@@ -1,0 +1,52 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_ritual_chalk",
+    "recipeTime": 40,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "undergroundbiomes:sedimentary_stone@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:gypsum",
+            "amount": 3
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:salt",
+            "amount": 3
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "terra",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 10
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:ritual_chalk"
+        }
+    ]
+}

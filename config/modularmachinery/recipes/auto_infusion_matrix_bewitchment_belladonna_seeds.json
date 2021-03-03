@@ -1,0 +1,74 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_bewitchment_belladonna_seeds",
+    "recipeTime": 430,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nitor_green",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:guardian_seeds"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:essence_of_vitality",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:mysterious_leaking_soul"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vinculum",
+            "amount": 160
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "humanus",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:belladonna_seeds"
+        }
+    ]
+}

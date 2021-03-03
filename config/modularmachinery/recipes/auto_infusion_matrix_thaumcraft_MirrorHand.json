@@ -1,0 +1,56 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_MirrorHand",
+    "recipeTime": 140,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@11"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:autocraftinghalo"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mirror"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:ingot",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "humanus",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:hand_mirror"
+        }
+    ]
+}

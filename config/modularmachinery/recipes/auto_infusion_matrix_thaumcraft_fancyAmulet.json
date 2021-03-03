@@ -1,0 +1,57 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_fancyAmulet",
+    "recipeTime": 60,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:empowered_glod_crystal",
+            "nbt": {"display":{"Name":"§6Empowered Glod Crystal"}}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:ingot@2",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_crystal_empowered@2"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "desiderium",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 10
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitreus",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:baubles@4"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_JarBrain",
+    "recipeTime": 140,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@11"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@15"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:jar_normal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:ingot"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:brain"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "exanimis",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 30
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:jar_brain"
+        }
+    ]
+}
