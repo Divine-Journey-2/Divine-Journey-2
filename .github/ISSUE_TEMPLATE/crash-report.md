@@ -29,7 +29,7 @@ During loadup (at which phase?) / when entering the world / when joining the ser
 
 **Minecraft crash report:**
 https://pastebin.com/asd ...
-(You can attach any number of them, but please describe when each of them occured.)
+(You can attach any number of them, but please describe when each of them occurred.)
 
 **Screenshots:**
 If applicable, add screenshots to help explain how your crash happened. These can also be atteched to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
