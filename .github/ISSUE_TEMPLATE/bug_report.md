@@ -25,7 +25,7 @@ A clear and concise description of what the bug is.
 A clear and concise description of what you expected to happen.
 
 **Screenshots:**
-If applicable, add screenshots to help explain your problem. These can also be atteched to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
+If applicable, add screenshots to help explain your problem. These can also be attached to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
 
 **Additional context:**
 Add any other context about the problem here.

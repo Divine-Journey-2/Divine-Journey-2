@@ -13,7 +13,7 @@ First check if your problem has been submitted before, or if it's a Known Issue.
 2.X.X
 
 **Java version:**
-X.X.X (e.g. 11.0.8)
+X.X.X (ex. "11.0.8")
 
 **Description:**
 A clear and concise description of how the crash happened.
@@ -31,8 +31,11 @@ During loadup (at which phase?) / when entering the world / when joining the ser
 https://pastebin.com/asd ...
 (You can attach any number of them, but please describe when each of them occurred.)
 
+**How much RAM did you dedicate to your client and how much RAM does your PC have?**
+Ex. "I dedicated 6 GBs and my PC has 8 GBs of RAM." [This is the bare minimum - if you have less, that might be the cause of the crash.]
+
 **Screenshots:**
-If applicable, add screenshots to help explain how your crash happened. These can also be atteched to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
+If applicable, add screenshots to help explain how your crash happened. These can also be attached to the "Description" or "Step to reproduce" sections. If you have no screenshots, this part can be removed.
 
 **Additional context:**
 Add any other context about the crash here.
