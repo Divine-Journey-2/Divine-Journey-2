@@ -21,11 +21,11 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "ATUM",
-    "SPARSE",
-    "HOT",
     "HILLS",
+    "SPARSE",
+    "DRY",
     "SANDY",
-    "DRY"
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

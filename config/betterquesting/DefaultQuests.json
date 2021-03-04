@@ -9071,8 +9071,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Loot!",
+          "desc:8": "Obtain the following loot by sayling certain mobs with your Athame:\n\n- Heart from Players, Villagers, Witches, Evokers, Illusioners or Vindicators. (Witches are probably you best choice.)\n- Dimensional Sand from Endermen or Endermites.\n- Hoof from Pigs, Sheep, Cows, Horses, Zombie Pigman, Mooshrooms, Llamas, Donkeys or Mules.\n- Spectral Dust from any Undead mob like Skeletons or Zombies."
         }
       },
       "tasks:9": {
@@ -9143,8 +9143,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Arthana 2.0",
+          "desc:8": "Craft an Athame! Killing various mobs with this might make them drop some special loot! (See: next quest.)"
         }
       },
       "tasks:9": {
@@ -9198,8 +9198,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Hot from inside out",
+          "desc:8": "Brew up some Fiery Unguent and automate it as best as you can!"
         }
       },
       "tasks:9": {
@@ -9249,8 +9249,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Hello, fellow Tallow!",
+          "desc:8": "Craft some Tallow!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt\u0027s Swellow\u0027s pre-evolution... or is it?"
         }
       },
       "tasks:9": {
@@ -9300,12 +9300,43 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s like a sieve... but for liquids!",
+          "desc:8": "Make a Distillery! Make sure to place it near a Witches\u0027 Altar.\n\nTo automate this machine, you\u0027ll need to insert the ingredients from the top, Blaze Powder from the sides, and pull out the results from the bottom.\n\nHowever, you might come across some difficulties:\n\n- Items might end up in the wrong slots, for example 2 stacks of the same item get sent into the Distillery, instead of 2 stacks of unique ingredients.\n\n- Some recipes take fewer than 6 inputs, and the 6th slot also gets filled up - stopping the crafting process.\n\n- Some recipes take multiple stacks of the same item, and when they enter the machine, they don\u0027t spread out correctly.\n\nBut there is a fix for all of these!\n\nIntroducing (or more like revisiting a Chapter you\u0027ve completed a long time ago): THE IMPULSE HOPPER! Simply setup a filter in the middle row, and the Impulse Hopper will only let a set of items through if all of the ones in the Filter have arrived.\n\nThis still poses an issue for crafts that take multiple of the same ingredients. The solution is rather simple though: Set the filters to be 64 of each item, and only let them through once multiple stack have arrived. They are surely going to go in the correct spot!\n\nIf you\u0027re still having trouble because your input slots are filling up, use an Integrated Dynamics Block Reader on the Distillery or a buffer chest that checks if the target block is empty, and if so, emits a redstone signal to the Impulse Hopper (in Redstone Mode: Active with signal) which will let some items through."
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bewitchment:distillery",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_impulse_hopper",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "134:10": {
       "questID:3": 134,
@@ -9333,8 +9364,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Oilin\u0027 up those Tiers and Tierin\u0027 up those Oils",
+          "desc:8": "Craft some Heaven Extract and Otherworldly Tears. One tastes like meshed potatoes except instead of potatoes it\u0027s more like clouds, and the other one tastes like scorched Ender Dragon wings. None of them are my favorite though."
         }
       },
       "tasks:9": {
@@ -9391,8 +9422,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Sun is down, freezin\u0027 cold",
+          "desc:8": "Woo, made this here with all the ice on in the booth,\nAll the gating in the pack can\u0027t stop me that\u0027s the truth,\nYeah, jump on into Bewitchment it\u0027s like I\u0027m a sleuth,\nThis is way too big, when we end this give me the loot!"
         }
       },
       "tasks:9": {
@@ -9442,8 +9473,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "It never melts!",
+          "desc:8": "Throw some Splash Iceworld Potions on a field of Stone, Granite or Diorite to convert it to Perpetual Ice! The Potion has a large spread range, it even goes underground a bit."
         }
       },
       "tasks:9": {
@@ -9494,7 +9525,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tough Purified Paste",
-          "desc:8": "No Description"
+          "desc:8": "It\u0027s time to perform your first Circle Rite.\n\nMake some Tough Purified Paste! You\u0027ll need to Right Click the ingredients on the Golden Rune in the center, then Right Click with an empty hand. If your Circle layout is correct and you have sufficient Altar Power, you\u0027ll be able to perform it."
         }
       },
       "tasks:9": {
@@ -9548,7 +9579,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Rich Witch",
-          "desc:8": "No Description"
+          "desc:8": "And here is the Golden Chalk I promised in the previous quest!"
         }
       },
       "tasks:9": {
@@ -9601,8 +9632,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Going deeper... into insanity",
+          "desc:8": "Brew up some of the nothingness, vacuum, manifestation of the realization of our mortal lives being insignificant in the wastness of the universe, the Brew of the Void!\n\n...\n\nUuhhhh, ...nyeheheh, it\u0027s great to be a Witch...?\n\n..."
         }
       },
       "tasks:9": {
@@ -9652,8 +9683,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Now THAT\u0027s witchy...!",
+          "desc:8": "Brew up a Bottle of Blood from Adder\u0027s Forks or Tongues of the Dog! Nyeeehehehehehehehheeeee....!"
         }
       },
       "tasks:9": {
@@ -9703,8 +9734,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Speed Potions would be jelous*",
+          "desc:8": "* Doesn\u0027t actually give you Speed.\n* Not for human consumption.\n* Consult a doctor if you\u0027ve accidentally inhaled or touched it... or worse."
         }
       },
       "tasks:9": {
@@ -9754,8 +9785,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Shine a light on it!",
+          "desc:8": "Craft either a Silver or Iron Candelabra! Placing this on top of your Altar will boost its Altar Power."
         }
       },
       "tasks:9": {
@@ -9805,8 +9836,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Yet another Altar! Yay!",
+          "desc:8": "Craft any 6 pieces of Witches\u0027 Altars! Place them in a 2x3 formation and place any piece of Carpet on top to form the multiblock.\n\nThis structure provides power for all your Bewitchment machines to function. Witches\u0027 Cauldrons, Distilleries, Spinning Wheels, Braziers and Circle Rites wouldn\u0027t function without sufficient Altar power in a 16 block radius.\n\nTo boost the power stored by your Altar, you need to spice up the immediate area with a bunch of wildlife! Trees, crops, growables, grass, flowers, fungi, anything you can think of. And variety helps! Two different types of crops will boost the power of your Altar more than two of the same type.\n\nTo boost the power further, you can also place any of the following items on of of the top 6 slots (in increasing order of effectiveness):\n\n- Cups: Flower Pot / Glass Bottle, Goblet, Flying Ointment, or Filled Goblet\n\n- Vanilla Swords or Athame (with the Diamond Sword and the Athame being the best).\n\n- Wands or lighting: Torch / Redstone Torch, Candles, Blaze Rod, Candelabra, End Rod, Leonard\u0027s Wand, Caduceus.\n\n- Pentacles: Head / Skeleton Skull, Redstone / Nether Quartz / Lapis Lazuli / Opal, Wither Skeleton Skull, Amethyst / Diamond / Emerald / Garnet / Prismarine Shard, Grimoire Magia, Idols, Pentacle, Demon Heart, any Statue, Dragon Head.\n\nMore information on the Bewitchment Wiki:\nhttps://bewitchment.fandom.com/wiki/Witches%27_Altar\n"
         }
       },
       "tasks:9": {
@@ -9867,8 +9898,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Can\u0027t capture - can summon!",
+          "desc:8": "Use the Rite shown in JEI to obtain a Villager Egg.\n\nSummoning any Demon requires a sacrifice of a Player or a Villager, and this is the best way to have them \u0027ready\u0027. Yayx!"
         }
       },
       "tasks:9": {
@@ -9926,8 +9957,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Ouch! Hot hot hot hot hot!!!",
+          "desc:8": "Craft a Fiery Chalk!\n\nOven mitts recommended."
         }
       },
       "tasks:9": {
@@ -9983,11 +10014,32 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Slaying the Master",
+          "desc:8": "Read the Codex Infernalis / Higher Demons / Master Leonard section to summon the Lord, the Master, the One who\u0027s behind all of this.\n\nReluctantly, but challenge him to a fight. In order to progress, there is only one way that fight should end..."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bewitchment:leonards_wand",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "147:10": {
@@ -10018,8 +10070,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "The final dish",
+          "desc:8": "Craft a Stew of the Grotesque!\n\n...Buuut I\u0027d recommend NOT eating it.\n\nYou\u0027ll need it for the next quest in un-eaten form, and it might not be too beneficial for your health anyway."
         }
       },
       "tasks:9": {
@@ -10069,8 +10121,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "HWHWEEL",
+          "desc:8": "Craft a Bewitchment Spinning Hwheel.\n\nWhat did you say...?\n\nUhh, to craft a Bewitchment Spinning Hwheel?\n\nSpinning Hwheel?\n\nSpinning Hwheel, yeah.\n\nYou mean Spinning Wheel.\n\nYeah, Spinning Hwheel.\n\nSpinning Wheel.\n\nSpinning Hwheel.\n\nSpinning Wheel.\n\nSpinning Hwheel.\n\nYou\u0027re saying it weird, why are you putting so much emphasis on the \u0027H\u0027?\n\nWhat are you talking about, just saying it: \u0027Spinning Hwheel\u0027. Craft a Spinning Hwheel. That\u0027s how you progress.\n\nSay \u0027wheel\u0027.\n\nWheel.\n\nNow say \u0027Spinning Wheel\u0027.\n\nSpinning Hwheel.\n\nSpinning Wheel.\n\nSpinning Hwheel.\n\nSPINNING WHEEL. D:\u003c\n\nSpinning Hwheel.\n\nFINE. WHATEVER. YOU WIN. By the way, you need altar power for it... Now go.\n\nAltar Wpower."
         }
       },
       "tasks:9": {
@@ -10120,8 +10172,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "A strong scent",
+          "desc:8": "Distill some Stone Ichor!"
         }
       },
       "tasks:9": {
@@ -10171,8 +10223,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Purity",
+          "desc:8": "Craft a Sigil of Purity. It burns like pure fire in your hands, reflecting your inner soul... I\u0027m sure it\u0027s nothing to worry about!"
         }
       },
       "tasks:9": {
@@ -10222,8 +10274,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s not a table you preach from..",
+          "desc:8": "Craft a Sigil Table! With this, you can (unsurprisingly) create ... Sigils! (Who would have thought.)"
         }
       },
       "tasks:9": {
@@ -10273,8 +10325,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "Custom loot dropped by Shadow People and Ghosts"
+          "name:8": "Anti-Ghostbusters",
+          "desc:8": "Perform the Spiritual Rift Rite at night! You can find it under the Circles Rites section of your Book of Shadows.\n\nSometimes (not always) Ghosts will end up spawning. Defeat them to obtain some Shards of the Grotesque!"
         }
       },
       "tasks:9": {
@@ -10324,8 +10376,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Death Core",
-          "desc:8": "No Description"
+          "name:8": "A type of Heavy Metal",
+          "desc:8": "You can delay this quest for a bit, it doesn\u0027t need to be immediately completed.\n\nWhy?\n\nWell, for two reasons:\n1) It\u0027s not an easy task,\n2) You won\u0027t need the items directly available after this one... for a bit anyway.\n\nOh, you want to move on anyway? Well, good luck. Craft a Death Core and keep an eye out for fully automating it... eventually."
         }
       },
       "tasks:9": {
@@ -10375,8 +10427,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Power of the Underworld",
+          "desc:8": "Distill some Demon Heart combined with some of your previous Oils, and add a pinch of Pride... for an interesting result."
         }
       },
       "tasks:9": {
@@ -10426,8 +10478,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Slightly less Essential",
+          "desc:8": "Create the listed Essential Oils using your Witches\u0027 Oven! These ones aren\u0027t as frequently used as the ones in the \"These are Essential!\" quest, you only need to batch craft a few."
         }
       },
       "tasks:9": {
@@ -10493,8 +10545,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Chock full of Chalk",
+          "desc:8": "Craft a piece of Ritual Chalk!\n\nYou can draw Bewitchment Circles with this tool. All Circles have to have a Golden Rune drawn in the center.\n\nThere are 3 layers of Circles you can draw:\n\n            ███████\n         █                 █\n      █      █████      █\n   █      █             █      █\n█      █      ███      █     ⠀█\n█   █      █        █      █   █\n█   █   █             █    █   █\n█   █   █      §6█⠀§r    █    █   █\n█   █   █             █    █   █\n█   █      █        █      █   █\n█      █      ███      █     ⠀█\n   █      █             █      █\n      █      █████      █\n         █                 █\n            ███████\n\nThe white squares represent White Chalk - but some Rites later will require Red or Purple Chalk to be used for one or more of the circles.\n\nif you want to conserve Chalk, you can recolor your existing Circles with the Rite shown in your Book of Shadows / Rituals / Circle Drawing."
         }
       },
       "tasks:9": {
@@ -10547,8 +10599,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Stich, Thread and File",
+          "desc:8": "Weave up some woven, and wave when you\u0027re done."
         }
       },
       "tasks:9": {
@@ -10610,8 +10662,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "-273 °C",
+          "desc:8": "Freeze some Thaumium for Cold Iron. Don\u0027t worry, Frostfire never goes out, and you can even pick it back up!"
         }
       },
       "tasks:9": {
@@ -10664,11 +10716,32 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Never gonna die anymore!",
+          "desc:8": "Craft a Death Protection Poppet. When bound to yourself with your own Taglock and held in your inventory or on a Poppet Shelf, it\u0027ll prevent a lethal blow by reincarnating you instantly using its own woven body.\n\nIf that\u0027s not witchy enough for you, then I don\u0027t know what is.\n\nYou may want to fully automate these... For your own well-being, and also... for what\u0027s to come."
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "bewitchment:poppet_deathprotection",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "160:10": {
@@ -10698,7 +10771,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Itching for more Witching",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Witches\u0027 Cauldron! Nyaaaahahahahahahahaaaaaa!\n\nThis machine functions very similarly to the Thaumcraft Crucible. You need to light a fire beneith it, fill it up with some Water, then throw in the required ingredients shown in JEI. However there are some key differences:\n\n- You need Altar power for each recipe. A Cauldron more than 16 blocks away from an Altar won\u0027t function.\n\n- You can\u0027t directly pipe Water into it. Instead, to automate it, you\u0027ll have to use a Mechanical User with a Water bucket inside. You can detect whether or not the Cauldron is empty with an Integrated Dynamics Block Reader, and have the Mechanical User in \u0027Redstone On\u0027 mode to fill the Cauldron exactly when it\u0027s empty.\n\n- You can also brew Bewtichment Potions in the Witches\u0027 Cauldron. Simply start with a piece of Mandrake Root, add an additional ingredient (listed in JEI), and eitehr Redstone or Glowstone, and optinally Gunpowder for the splash effect. Once done, Right Clicking with Empty Bottles will create the desired Potion."
         }
       },
       "tasks:9": {
@@ -10751,8 +10824,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Magical Chalk!",
+          "desc:8": "Craft some Phasing Chalk, and hold it strongly, otherwise it may slip out and phase away into another reality."
         }
       },
       "tasks:9": {
@@ -10805,8 +10878,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "These are Essential!",
+          "desc:8": "Create the listed types of Essentia Oils with your Witches\u0027 Oven! All of these will be heavily used later, so make sure to constantly produce them!"
         }
       },
       "tasks:9": {
@@ -10870,7 +10943,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Witch\u0027s necessary machine",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Witches\u0027 Oven! Supply it with Empty Jars to get a chance to obtain the various Essential Oils from Bewitchment!\n\n\nTo automate the machine, insert Coal, Empty Jars and the required intput ingredient from the top and the sides, and extract the results from the bottom."
         }
       },
       "tasks:9": {
@@ -10927,8 +11000,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Ground Dragon",
+          "desc:8": "Perform one of the most difficult Cauldron recipes to create  some Dragon Resin. Fortunately you\u0027ll only need to do this once. Good luck!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIs this how your get a Ground Dragon? Like, a Garchomp?! No. No it isn\u0027t. (That\u0027s it for the Pokemon references.)"
         }
       },
       "tasks:9": {
@@ -10978,8 +11051,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Stronger Stringer",
+          "desc:8": "If the input Spirit is strong, the output String will be strong too, they say..."
         }
       },
       "tasks:9": {
@@ -11029,8 +11102,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Helium would be jelous...",
+          "desc:8": "It magically floats. Wingardium Leviosa or somethin\u0027?"
         }
       },
       "tasks:9": {
@@ -11265,7 +11338,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Pulling the Strings",
-          "desc:8": "No Description"
+          "desc:8": "Craft a Poppet! This definitely isn\u0027t a toy that whicked Witches abuse in any way... Nonononono... Of course not."
         }
       },
       "tasks:9": {
@@ -11319,8 +11392,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "666",
+          "desc:8": "Open your Codex Infernalis and read the Higher Demons / Lord Baphomet section on how to summon this creature of nightmares, God of the Underworld.\n\nBeat him."
         }
       },
       "tasks:9": {
@@ -11373,11 +11446,29 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Dwelled deep enough...",
+          "desc:8": "A new book, containing more demonic knowledge is now available to you... the Codex Infernalis!\n\nLookup the Lesser Demons / Demon and Demones category on how to summon them. They\u0027ll require 3 entirely red circles and a sacrifice of a Player or a Villager.\n\nOnce summoned, fight them to obtain their Heart!"
         }
       },
-      "tasks:9": {},
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "bewitchment:demon_heart",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
       "rewards:9": {}
     },
     "174:10": {
@@ -11407,8 +11498,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Demons! Rise!",
+          "desc:8": "Craft a Pentacle.\n\n\n... I don\u0027t like where this is going."
         }
       },
       "tasks:9": {
@@ -11458,8 +11549,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Pulling the Strings...",
+          "desc:8": "Craft some Diabolical Vein..\n\nAnd realize, you\u0027ve already gone down on a devilish path... But there is no more turning back..."
         }
       },
       "tasks:9": {
@@ -11510,8 +11601,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Baby Ender Dragons\u0027 natural habitat",
+          "desc:8": "Craft your first Dragon\u0027s Blood Sapling, then grow it to get more!"
         }
       },
       "tasks:9": {
@@ -11562,8 +11653,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s like taking a shower in heaven",
+          "desc:8": "Ahh, so pure!"
         }
       },
       "tasks:9": {
@@ -11616,8 +11707,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Yummie! Flames!",
+          "desc:8": "Craft a Flame Devourer Pendant. When the user\u0027s inflicted with the Hell Fire status effect, Right Clicking this item will yield a piece of Ignition."
         }
       },
       "tasks:9": {
@@ -11670,8 +11761,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Oilin\u0027 up",
+          "desc:8": "Craft some Oil of Vitriol.\n\nThere is nothing more to say.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI said there is nothing more!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThere is definitely not a meme or a reference down here, stop looking!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFINE...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSon: \"Dad, why is my sister called \u0027Peace\u0027?\"\nDad: \"Well, son, your mom thought there was not enough peace in the world...!\"\nSon: \"Ah, that\u0027s interesting. Thanks, Dad!\"\nDad: \"No problem, Oil.\"\n\n\n\n\n\n\n\n\n\n\n...\n\n\n\n\n\n\n\n\n\n\n\n\nI told you not to look, it way bad anyway. :I"
         }
       },
       "tasks:9": {
@@ -11723,7 +11814,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Gypsum",
-          "desc:8": "No Description"
+          "desc:8": "Even though Gypsum is missing from 1.12 Bewitchment, it makes a return in the form of a custom item! Hurray!"
         }
       },
       "tasks:9": {
@@ -11824,8 +11915,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Don\u0027t get too Salty",
+          "desc:8": "Craft some Ritualistic Salt!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI heard sprinkling this on some undead on Thriller Bark will release their captured shadows... Or wait, that\u0027s not in this game...!"
         }
       },
       "tasks:9": {
@@ -11875,8 +11966,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Mmmm, marvelous!",
+          "desc:8": "Wanna be fancy and drink from a Goblet? Now is your chance! Not only will your wine taste better, but it this will also give you an exquisite amount of Altar Power! Nice."
         }
       },
       "tasks:9": {
@@ -11949,8 +12040,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Brrrrrrrrr... Icy!",
+          "desc:8": "Use your Witches\u0027 Cauldron to create an Iceworld II Splash Potion. You\u0027ll need to throw in the following ingredients in order:\n\n- Mandrake Root\n- Ice OR Snow block\n- Glowstone Dust\n- Gunpowder\n\nThen Right Click on the Cauldron three times with an Empty Bottle to get 3 of them!"
         }
       },
       "tasks:9": {
@@ -12024,8 +12115,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "There is only one way out...",
+          "desc:8": "All this dark magic has messed with your brain... The only way out... The only way to end this... Is to go away with it... Go into the hellish Underworld by sacrificing yourself to a Curse... The Curse of Conflagration will be perfect...\n\nHow? Well, it\u0027s quite simple actually:\n\nFill a Taglock with your own juices by Shift+Right Clicking on a Bed you\u0027ve slept in. (Don\u0027t try to think about it more than that.)\n\nHaving this, inflict yourself with the Curse of Conflagration using your Brazier. The ingredients can be found in your Codex Infernalis, under Curses / Conflagration.\n\nOnce under the Hell Fire status effect, use your Flame Devourer Pendant to obtain some Ignition!"
         }
       },
       "tasks:9": {
@@ -12076,8 +12167,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Curse them!",
+          "desc:8": "Craft a Brazier!\n\nTo use it, lookup the Curses section in your Codex Infernalis. Place it input items on top, and light it with a Flint and Steel. The Curse will be cast of the player whose Taglock you\u0027ve used."
         }
       },
       "tasks:9": {
@@ -12128,8 +12219,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Oilin\u0027 up",
+          "desc:8": "Create some Liquid Witchcraft and a Droplet of Wisdom! Mmmm... smells good! Smells a bit... witchy and knowledgy..."
         }
       },
       "tasks:9": {
@@ -12188,8 +12279,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Make it bleed!",
+          "desc:8": "Craft a Boline and use it on the logs of a Dragonsblood Tree. It will eventually bleed Dragon\u0027s Blood Resin. Collect it using an Absorption Hopper!"
         }
       },
       "tasks:9": {
@@ -12311,8 +12402,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "No Goblet without a Drink",
+          "desc:8": "Fill it up! In what other way did you plan to drink from it, huh?\n\nBesides the superb taste, it\u0027ll also serve you as the best \"Cup\" type item for Altar Power. Magnificent!"
         }
       },
       "tasks:9": {
@@ -20954,8 +21045,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Into the Depths!",
-          "desc:8": "Create a portal to the Nether and enter it! When you enter the first time, the loading time might take a while, because custom Better Nether terrain is being generated. Once you enter, make sure to create a waypoint with Journey Map so you can find your way back!"
+          "name:8": "Going down low, low, low, low, low, low, low, low",
+          "desc:8": "Create a portal to the Nether and enter it! When you enter the first time, the loading time might take a while, because custom Better Nether terrain is being generated. Once you enter, make sure to create a waypoint with Journey Map so you can find your way back!\n\n\n\n\nPlayer had them Iron Leggin\u0027s on (on),\nBoots with the Plate (with the Plate),\nThe whole world is lookin\u0027 at sir!\nThey hit the floor (they hit the floor),\nNext thing you know,\nPlayer went low, low, low, low, low, low, low, low!\n"
         }
       },
       "tasks:9": {
@@ -23293,7 +23384,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Watch your step!",
-          "desc:8": "Mine up some Egg Plants! Watch out if you\u0027re in a field of them - they will poison you when you set foot on them!"
+          "desc:8": "Mine up some Egg Plants! Watch out if you\u0027re in a field of them - they will poison you when you set foot on them, because they have\n\nVENOMMMM, got that poisonous VENOMMMM,\nAnd I\u0027m not knowin\u0027 when I\u0027mmmm\nEver gonna step in themmmm\nReady to step any moment and I\u0027mmm\nThinkin\u0027 it\u0027s time to go get \u0027em\nThey ain\u0027t gonna know what him \u0027em\nW-W-When they get collected -\n\nVENOMMMM, got that poisonous VENOMMMM,\nAnd I\u0027m not knowin\u0027 when I\u0027mmmm\nEver gonna step in themmmm\nReady to step any moment and I\u0027mmm\nThinkin\u0027 it\u0027s time to go get \u0027em\nThey ain\u0027t gonna know what him \u0027em\nW-W-When they get collected."
         }
       },
       "tasks:9": {
@@ -48907,8 +48998,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Such a mean Zookeeper",
-          "desc:8": "Setup a automatic Cow or Pig farm with the machines listed on the right!\n\n- Have a pen of some fully grown animals with an Animal Baby Separator on one of the walls. Use an Animal Feeder on this pen.\n\n- The babies will enter another chamber. Use an Animal Grower on this pen. Create an exit from this chamber through another Animal Baby Separator, but this time with an Adult Filter.\n\n- Lasty, setup a third pen where newly grown adult animals will go. This is your killing chamber. Go ham. Literally."
+          "name:8": "All I do is breed",
+          "desc:8": "Setup a automatic Cow or Pig farm with the machines listed on the right!\n\n- Have a pen of some fully grown animals with an Animal Baby Separator on one of the walls. Use an Animal Feeder on this pen.\n\n- The babies will enter another chamber. Use an Animal Grower on this pen. Create an exit from this chamber through another Animal Baby Separator, but this time with an Adult Filter.\n\n- Lasty, setup a third pen where newly grown adult animals will go. This is your killing chamber. Go ham. Literally.\n\n\n\n\n\nAll I do is breed, breed, breed no matter what!\nGot porkchops on my mind, I can never get enough!\nAnd every time I step up in my base then,\nRF Machines let\u0027s go up!\n\n...\n\nAnd they work there (there), and they work there (there),\nAnd there work there, buzz-zwoom, buzz-zwoom, buzz-zwoom!\n\u0027Cause all I do is breed, breed, breed,\nAnd if you checking in, check my gear, is it cool, say so please, yeah!"
         }
       },
       "tasks:9": {
@@ -60836,8 +60927,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Enter: Wildwood",
-          "desc:8": "Craft up 14 Eden Blocks. Make a Nether Portal shape out of them. Light with the Twilight Clock.\nWelcome to the Wildwood."
+          "name:8": "Two Time",
+          "desc:8": "Craft up 14 Eden Blocks. Make a Nether Portal shape out of them. Light with the Twilight Clock.\nWelcome to the Wildwood.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI\u0027m out the portal again,\nSo hopped up to the wild ahead.\nTwo time!\nStay friends,\nProblem that I\u0027m not prepared!\n\nHands up, feel okay,\nWhich mob should I slay today?\nTwo time!\nStay frends,\nProblem that I can\u0027t defend!"
         }
       },
       "tasks:9": {
@@ -62760,8 +62851,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "The last tick of light",
-          "desc:8": "The Twilight Clock is used to light portals for the DivineRPG dimensions of: Eden, Wildwood, Apalachia, Skythern, and Mortum.\nUsed like Flint and Steel."
+          "name:8": "Tik Tok",
+          "desc:8": "The Twilight Clock is used to light portals for the DivineRPG dimensions of: Eden, Wildwood, Apalachia, Skythern, and Mortum.\nUsed like Flint and Steel.\n\n\n\n\nDon\u0027t stop, make it pop,\nDJ2, I\u0027ll beat you now,\nTonight, I\u0027mma fight,\n\u0027Till we see the sunlight,\nTick tock!\nOn the clock,\nBut the modpack don\u0027t stop, no\n\nOuh, ouh-ouh, oh!\nOuh, ouh-ouh, oh!\n"
         }
       },
       "tasks:9": {
@@ -63653,8 +63744,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "And on his neck",
-          "desc:8": "Craft a Dread Crystal, infused with blood, craft it quickly \u0027fore he comes!"
+          "name:8": "All the crazy things I did in this Chapter...",
+          "desc:8": "All the crazy things I did tonight...\nLead up to crafting a Dread Crystal.\nI just wanna let it go for the night...\nBefore it comes and my armhairs bristle."
         }
       },
       "tasks:9": {
@@ -69114,7 +69205,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Shiny Flute",
-          "desc:8": "Now you are tasked to perform the Serenade of Syrinx. This will infuse any Flute in your inventory with magical powers and turn them into Pan\u0027s Flute. Using Pan\u0027s Flute you can more easily complete Ceremonies."
+          "desc:8": "Now you are tasked to perform the Serenade of Syrinx. This will infuse any Flute in your inventory with magical powers and turn them into Pan\u0027s Flute. Using Pan\u0027s Flute you can more easily complete Ceremonies.\n\n\n\n\n\nShiny\u0027s like a melody in my head\nThat I can\u0027t keep out, got my singin\u0027 like:\nNa na na na everday\nI\u0027m gonna play my flute if I may\nI may-ay-ay-ay!"
         }
       },
       "tasks:9": {
@@ -85658,7 +85749,7 @@
       "home_anchor_x:5": 0.5,
       "editmode:1": 1,
       "hardcore:1": 0,
-      "home_image:8": "betterquesting:textures/gui/default_title.png",
+      "home_image:8": "midnight:textures/gui/title_card.png",
       "party_enable:1": 1,
       "pack_version:3": 0,
       "home_offset_x:3": -128,

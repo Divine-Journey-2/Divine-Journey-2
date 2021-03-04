@@ -117,6 +117,11 @@ Distillery.removeRecipe(<bewitchment:cleansing_balm>);
 Distillery.addRecipe([<bewitchment:cleansing_balm>], [<bewitchment:acacia_resin>,<bewitchment:white_sage>,<bewitchment:salt>,<bewitchment:garlic>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]})]);
 
 # Tallow
+WitchesOven.removeRecipe(<minecraft:cooked_beef>);
+WitchesOven.removeRecipe(<minecraft:cooked_porkchop>);
+WitchesOven.removeRecipe(<minecraft:cooked_mutton>);
+WitchesOven.removeRecipe(<minecraft:cooked_chicken>);
+WitchesOven.removeRecipe(<minecraft:cooked_rabbit>);
 WitchesCauldron.removeRecipe(<bewitchment:tallow>);
 WitchesCauldron.addRecipe([<bewitchment:tallow> * 3], [<thaumcraft:tallow>,<thaumcraft:tallow>,<thaumcraft:tallow>,<contenttweaker:crystallos>,<contenttweaker:praesidium>]);
 

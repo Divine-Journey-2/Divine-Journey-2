@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "ATUM",
     "SPARSE",
-    "HOT",
-    "SANDY",
     "MOUNTAIN",
-    "DRY"
+    "DRY",
+    "SANDY",
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
