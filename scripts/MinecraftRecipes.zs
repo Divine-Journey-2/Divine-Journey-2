@@ -256,4 +256,10 @@ vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);
 # Spawn Villager
 WitchesRitual.addRecipe("Rite of the Haaaaah", [<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:villager"}})], [<minecraft:egg>,<bewitchment:heaven_extract>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})], null, null, 2200, WitchesRitual.RITUAL, WitchesRitual.FIERY, WitchesRitual.RITUAL);
 
+# Firework Star (basic)
+recipes.addShapeless(<minecraft:firework_charge>, [<minecraft:fire_charge>,<minecraft:gunpowder>]);
+
+# Firework (basic)
+recipes.addShapeless(<minecraft:fireworks>, [<minecraft:firework_charge>,<minecraft:paper>,<immersiveengineering:material:4>]);
+
 print("ENDING MinecraftRecipes.zs");

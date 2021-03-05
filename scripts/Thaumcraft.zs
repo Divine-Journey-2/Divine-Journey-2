@@ -168,8 +168,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "T
 # Rare Earths
 <thaumcraft:nugget:10>.addTooltip(format.gray(format.italic("<Hold Shift for info on how to acquire>")));
 <thaumcraft:nugget:10>.addShiftTooltip(format.white("Dropped rarely by any of the following Ores:"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("Coal, Redstone, Quartz. Amber, Diamond;"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("in ascending order or drop rate."));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("Coal, Redstone, Quartz, Amber, Diamond;"));
+<thaumcraft:nugget:10>.addShiftTooltip(format.white("in ascending order of drop rate."));
 <thaumcraft:nugget:10>.addShiftTooltip(format.white("Alternatively, smelt any of the following Ores"));
 <thaumcraft:nugget:10>.addShiftTooltip(format.white("in the Infernal Furnace: Iron, Gold, Silver,"));
 <thaumcraft:nugget:10>.addShiftTooltip(format.white("Copper, Tin, Lead, Cinnabar."));

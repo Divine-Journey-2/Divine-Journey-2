@@ -27,6 +27,9 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:mandrake_seeds", "", <bewit
 recipes.remove(<bewitchment:witches_oven>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_oven", "", <bewitchment:witches_oven>, 6, [<aspect:machina> * 250,<aspect:ignis> * 150,<aspect:sensus> * 150,<aspect:alkimia> * 100,<aspect:fabrico> * 30,<aspect:herba> * 30], <thaumcraft:smelter_thaumium>, [<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>,<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>]);
 
+# Wood Ash (only in Witches' Oven)
+furnace.remove(<bewitchment:wood_ash>);
+
 # Unfired Jar
 recipes.remove(<bewitchment:unfired_jar>);
 mods.thaumcraft.Crucible.registerRecipe("bewitchment:unfired_jar", "", <bewitchment:unfired_jar>, <thaumcraft:phial>, [<aspect:terra> * 10, <aspect:aqua> * 10,<aspect:permutatio> * 8, <aspect:luna> * 4]);
@@ -419,5 +422,8 @@ recipes.addShaped(<bewitchment:hellish_bauble>, [[<bewitchment:hellhound_horn>,<
 # Waystone
 recipes.remove(<bewitchment:waystone>);
 recipes.addShaped(<bewitchment:waystone>, [[<bewitchment:cold_iron_ingot>,<bewitchment:pentacle>,<bewitchment:cold_iron_ingot>],[<bewitchment:cold_iron_ingot>,<bewitchment:otherworldly_tears>.noReturn(),<bewitchment:cold_iron_ingot>],[null,<bewitchment:cold_iron_ingot>,null]]);
+
+# Spanish Moss
+<bewitchment:spanish_moss>.addTooltip(format.white("Found in Swamp Biomes. Use Shears to harvest."));
 
 print("ENDING Bewitchment.zs");

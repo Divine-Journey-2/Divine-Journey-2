@@ -376,7 +376,7 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <botania:rune>, <bloodmag
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
 
 # Rune of the Orb
-blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <enderutilities:enderpart:12>, <bloodmagic:slate:4> * 2);
+blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <enderutilities:enderpart:17>, <bloodmagic:slate:4> * 2);
 
 # Air Sigil
 addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_air>, <bloodmagic:component:2>, <bloodmagic:slate:1>);
