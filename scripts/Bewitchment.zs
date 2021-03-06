@@ -426,4 +426,24 @@ recipes.addShaped(<bewitchment:waystone>, [[<bewitchment:cold_iron_ingot>,<bewit
 # Spanish Moss
 <bewitchment:spanish_moss>.addTooltip(format.white("Found in Swamp Biomes. Use Shears to harvest."));
 
+# Cold Iron Sword
+recipes.remove(<bewitchment:cold_iron_sword>);
+recipes.addShaped(<bewitchment:cold_iron_sword>, [[<bewitchment:cold_iron_ingot>],[<bewitchment:cold_iron_ingot>],[<thaumcraft:elemental_sword>]]);
+
+# Cold Iron Pickaxe
+recipes.remove(<bewitchment:cold_iron_pickaxe>);
+recipes.addShaped(<bewitchment:cold_iron_pickaxe>, [[<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>],[null,<thaumcraft:elemental_pick>,null],[null,<bewitchment:pure_filament>,null]]);
+
+# Cold Iron Shovel
+recipes.remove(<bewitchment:cold_iron_shovel>);
+recipes.addShaped(<bewitchment:cold_iron_shovel>, [[<bewitchment:cold_iron_ingot>],[<thaumcraft:elemental_shovel>],[<bewitchment:pure_filament>]]);
+
+# Cold Iron Axe
+recipes.remove(<bewitchment:cold_iron_axe>);
+recipes.addShapedMirrored(<bewitchment:cold_iron_axe>, [[<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>],[<bewitchment:cold_iron_ingot>,<thaumcraft:elemental_axe>],[null,<bewitchment:pure_filament>]]);
+
+# Cold Iron Hoe
+recipes.remove(<bewitchment:cold_iron_hoe>);
+recipes.addShapedMirrored(<bewitchment:cold_iron_hoe>, [[<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>],[null,<thaumcraft:elemental_hoe>],[null,<bewitchment:pure_filament>]]);
+
 print("ENDING Bewitchment.zs");

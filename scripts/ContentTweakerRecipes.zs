@@ -35,6 +35,9 @@ import thaumcraft.aspect.CTAspectStack;
 import moretweaker.bewitchment.WitchesCauldron;
 import moretweaker.bewitchment.Distillery;
 import moretweaker.bewitchment.WitchesRitual;
+import mods.thermalexpansion.Crucible as MagmaCrucible;
+import mods.tconstruct.Melting;
+import mods.thaumcraft.Crucible as TCCrucible;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1009,5 +1012,23 @@ recipes.addShaped(<contenttweaker:death_core>, [[<bewitchment:poppet_deathprotec
 <contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Obtained by slaying Ghosts spawned by"));
 <contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("the Spiritual Rift Ritual. Consult your"));
 <contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Book of Shadows for more info."));
+
+# Molten Cold Iron
+MagmaCrucible.addRecipe(<liquid:cold_iron> * 144, <bewitchment:cold_iron_ingot>, 4000);
+MagmaCrucible.addRecipe(<liquid:cold_iron> * 1296, <bewitchment:block_of_cold_iron>, 36000);
+MagmaCrucible.addRecipe(<liquid:cold_iron> * 16, <bewitchment:cold_iron_nugget>, 450);
+mods.tconstruct.Melting.addRecipe(<liquid:cold_iron> * 144,<bewitchment:cold_iron_ingot>);
+mods.tconstruct.Melting.addRecipe(<liquid:cold_iron> * 1296,<bewitchment:block_of_cold_iron>);
+mods.tconstruct.Melting.addRecipe(<liquid:cold_iron> * 16,<bewitchment:cold_iron_nugget>);
+
+# Cold Void Seed
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:cold_void_seed>, <thaumcraft:void_seed>, <liquid:cold_iron> * 576, 16000);
+mods.tconstruct.Casting.addTableRecipe(<contenttweaker:cold_void_seed>, <thaumcraft:void_seed>, <liquid:cold_iron>, 576, true, 400);
+
+# Cold Void Metal Ingot
+TCCrucible.registerRecipe("contenttweaker:cold_void_metal_ingot", "BASEELDRITCH", <contenttweaker:cold_void_metal_ingot>, <contenttweaker:cold_void_seed>, [<aspect:metallum> * 50, <aspect:vitium> * 20, <aspect:tenebrae> * 10]);
+
+# Impetus Crystal
+recipes.addShapeless(<contenttweaker:impetus_crystal>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>,<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
 
 print("ENDING ContentTweakerRecipes.zs");

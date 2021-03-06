@@ -395,3 +395,7 @@ item.contenttweaker.flame_devourer_pendant.name=Flame Devourer Pendant
 item.contenttweaker.ignition.name=Ignition
 item.contenttweaker.death_core.name=Death Core
 item.contenttweaker.shard_of_the_grotesque.name=Shard of the Grotesque
+item.contenttweaker.cold_void_seed.name=Cold Void Seed
+item.contenttweaker.cold_void_metal_ingot.name=Cold Void Metal Ingot
+fluid.cold_iron=Molten Cold Iron
+item.contenttweaker.impetus_crystal.name=Impetus Crystal

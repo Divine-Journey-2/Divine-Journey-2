@@ -14,4 +14,12 @@ remedyFluid.temperature = 350;
 remedyFluid.material = <blockmaterial:lava>;
 remedyFluid.register();
 
+var coldIronFluid = VanillaFactory.createFluid("cold_iron", Color.fromHex("6F7475"));
+coldIronFluid.density = 2500;
+coldIronFluid.luminosity = 10;
+coldIronFluid.temperature = 769;
+coldIronFluid.viscosity = 10000;
+coldIronFluid.material = <blockmaterial:lava>;
+coldIronFluid.register();
+
 print("ENDING ContentTweakerFluids.zs");

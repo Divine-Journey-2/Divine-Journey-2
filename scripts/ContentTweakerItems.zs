@@ -766,5 +766,13 @@ death_core.register();
 var shard_of_the_grotesque = VanillaFactory.createItem("shard_of_the_grotesque");
 shard_of_the_grotesque.glowing = true;
 shard_of_the_grotesque.register();
+var cold_void_seed = VanillaFactory.createItem("cold_void_seed");
+cold_void_seed.register();
+var cold_void_metal_ingot = VanillaFactory.createItem("cold_void_metal_ingot");
+cold_void_metal_ingot.register();
+var impetus_crystal = VanillaFactory.createItem("impetus_crystal");
+impetus_crystal.rarity = "EPIC";
+impetus_crystal.glowing = true;
+impetus_crystal.register();
 
 print("ENDING ContentTweakerItems.zs");

@@ -466,7 +466,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Condenser", "FL
 
 # Flux Condenser Lattice
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:condenser_lattice>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:CondenserLattice", "FLUXCLEANUP", 200, [<aspect:aer> * 16,<aspect:terra> * 16], <thaumcraft:condenser_lattice>, [[<botania:quartz:6>,<thaumcraft:plate:2>,<botania:quartz:6>],[<contenttweaker:condensed_vis_crystal_vitreus>,<thaumcraft:filter>,<contenttweaker:condensed_vis_crystal_vitreus>],[<botania:quartz:6>,<thaumcraft:plate:2>,<botania:quartz:6>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:CondenserLattice", "FLUXCLEANUP", 200, [<aspect:aer> * 16,<aspect:terra> * 16], <thaumcraft:condenser_lattice>, [[<botania:quartz:6>,<thaumcraft:void_seed>,<botania:quartz:6>],[<contenttweaker:condensed_vis_crystal_vitreus>,<thaumcraft:filter>,<contenttweaker:condensed_vis_crystal_vitreus>],[<botania:quartz:6>,<thaumcraft:void_seed>,<botania:quartz:6>]]);
 
 # Boots of the Traveller
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:traveller_boots>);
@@ -551,5 +551,62 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CausalityCollapser", "RIFTCL
 # Void Seed
 <thaumcraft:void_seed>.addTooltip(format.white("Obtained by throwing a Causality Collapser on a"));
 <thaumcraft:void_seed>.addTooltip(format.white("Flux Rift, or using a Void Siphon in the same chunk."));
+
+# Void Metal Ingot
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot:1>);
+recipes.addShaped(<thaumcraft:ingot:1> * 8, [[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<bewitchment:fiery_unguent>,<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>]]);
+
+# Void Siphon
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_siphon>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidSiphon", "VOIDSIPHON", <thaumcraft:void_siphon>, 7, [<aspect:vacuos> * 200,<aspect:alienis> * 100,<aspect:perditio> * 100,<aspect:fabrico> * 100, <aspect:vitium> * 50], <thaumcraft:centrifuge>, [<bewitchment:swirl_of_depths>,<thaumcraft:plate>,<thaumcraft:plate>,<bewitchment:stone_ichor>,<thaumcraft:plate>,<thaumcraft:plate>,<bewitchment:swirl_of_depths>,<thaumcraft:metal_void>]);
+
+# Void Metal Essentia Smeltery
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_void>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaSmelterVoid", "ESSENTIASMELTERVOID", 750, [<aspect:ignis> * 64,<aspect:aer> * 16], <thaumcraft:smelter_void>, [[<thaumcraft:plate>,<thaumcraft:smelter_thaumium>,<thaumcraft:plate>],[<thaumcraft:plate:3>,<thaumcraft:metal_alchemical_advanced>,<thaumcraft:plate:3>],[<thaumcraft:plate:3>,<thaumcraft:metal_alchemical_advanced>,<thaumcraft:plate:3>]]);
+
+# Void Sword
+recipes.remove(<thaumcraft:void_sword>);
+recipes.addShaped(<thaumcraft:void_sword>, [[<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>],[<bewitchment:cold_iron_sword>]]);
+
+# Void Pickaxe
+recipes.remove(<thaumcraft:void_pick>);
+recipes.addShaped(<thaumcraft:void_pick>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[null,<bewitchment:cold_iron_pickaxe>,null],[null,<thaumcraft:vis_resonator>,null]]);
+
+# Void Shovel
+recipes.remove(<thaumcraft:void_shovel>);
+recipes.addShaped(<thaumcraft:void_shovel>, [[<thaumcraft:ingot:1>],[<bewitchment:cold_iron_shovel>],[<thaumcraft:vis_resonator>]]);
+
+# Void Axe
+recipes.remove(<thaumcraft:void_axe>);
+recipes.addShapedMirrored(<thaumcraft:void_axe>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_axe>],[null,<thaumcraft:vis_resonator>]]);
+
+# Void Hoe
+recipes.remove(<thaumcraft:void_hoe>);
+recipes.addShapedMirrored(<thaumcraft:void_hoe>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[null,<bewitchment:cold_iron_hoe>],[null,<thaumcraft:vis_resonator>]]);
+
+# Void Helm
+recipes.remove(<thaumcraft:void_helm>);
+recipes.addShaped(<thaumcraft:void_helm>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_helmet>,<thaumcraft:ingot:1>]]);
+
+# Void Chestplate
+recipes.remove(<thaumcraft:void_chest>);
+recipes.addShaped(<thaumcraft:void_chest>, [[<thaumcraft:ingot:1>,<bewitchment:cold_iron_chestplate>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>]]);
+
+# Void Leggings
+recipes.remove(<bewitchment:cold_iron_leggings>);
+recipes.addShaped(<bewitchment:cold_iron_leggings>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_leggings>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,null,<thaumcraft:ingot:1>]]);
+
+# Void Boots
+recipes.remove(<thaumcraft:void_boots>);
+recipes.addShaped(<thaumcraft:void_boots>, [[<thaumcraft:ingot:1>,null,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_boots>,<thaumcraft:ingot:1>]]);
+
+# Void Thaumaturge Robes
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_chest>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeChest", "VOIDROBEARMOR", <thaumcraft:void_robe_chest>, 7, [<aspect:metallum> * 60,<aspect:praemunio> * 60,<aspect:vacuos> * 60,<aspect:potentia> * 40,<aspect:alienis> * 40], <thaumcraft:void_chest>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<contenttweaker:magical_leather>,<thaumcraft:cloth_chest>]);
+
+# Void Thaumaturge Leggings
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_legs>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeLegs", "VOIDROBEARMOR", <thaumcraft:void_robe_legs>, 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35], <thaumcraft:void_legs>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<contenttweaker:magical_leather>,<thaumcraft:cloth_legs>]);
+
 
 print("ENDING Thaumcraft.zs");
