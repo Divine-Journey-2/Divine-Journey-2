@@ -544,7 +544,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTA
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Stabilizer", "INFUSIONSTABLE", <thaumcraft:stabilizer>, 4, [<aspect:machina> * 100,<aspect:ordo> * 100,<aspect:potentia> * 60,<aspect:vacuos> * 30], <thaumcraft:mechanism_complex>, [<thaumcraft:vis_resonator>,<thaumcraft:stone_arcane>,<thaumcraft:plate:2>,<thaumcraft:inlay>,<thaumcraft:plate:2>,<thaumcraft:stone_arcane>,<thaumcraft:vis_resonator>,<thaumcraft:inlay>]);
 
-# Causaility Collapsor
+# Causaility Collapser
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CausalityCollapser", "RIFTCLOSER", <thaumcraft:causality_collapser>, 7, [<aspect:perditio> * 40,<aspect:potentia> * 30,<aspect:alienis> * 30,<aspect:vitium> * 30], <mekanism:obsidiantnt>, [<thaumcraft:vis_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>,<thaumcraft:morphic_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>]);
 
@@ -554,7 +554,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CausalityCollapser", "RIFTCL
 
 # Void Metal Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot:1>);
-recipes.addShaped(<thaumcraft:ingot:1> * 8, [[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<bewitchment:fiery_unguent>,<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>]]);
+recipes.addShaped(<thaumcraft:ingot:1> * 8, [[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<bewitchment:fiery_unguent>.noReturn(),<contenttweaker:cold_void_metal_ingot>],[<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>,<contenttweaker:cold_void_metal_ingot>]]);
 
 # Void Siphon
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_siphon>);
@@ -593,8 +593,8 @@ recipes.remove(<thaumcraft:void_chest>);
 recipes.addShaped(<thaumcraft:void_chest>, [[<thaumcraft:ingot:1>,<bewitchment:cold_iron_chestplate>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>]]);
 
 # Void Leggings
-recipes.remove(<bewitchment:cold_iron_leggings>);
-recipes.addShaped(<bewitchment:cold_iron_leggings>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_leggings>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,null,<thaumcraft:ingot:1>]]);
+recipes.remove(<thaumcraft:void_legs>);
+recipes.addShaped(<thaumcraft:void_legs>, [[<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:cold_iron_leggings>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,null,<thaumcraft:ingot:1>]]);
 
 # Void Boots
 recipes.remove(<thaumcraft:void_boots>);
@@ -608,5 +608,24 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeChest", "VOIDROBEARM
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_legs>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeLegs", "VOIDROBEARMOR", <thaumcraft:void_robe_legs>, 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35], <thaumcraft:void_legs>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<contenttweaker:magical_leather>,<thaumcraft:cloth_legs>]);
 
+# Primordial Pearl repair
+recipes.addShapeless("thaumcraft_primordial_pearl_repair", <thaumcraft:primordial_pearl>, [<thaumcraft:primordial_pearl>.anyDamage().noReturn().marked("pearl"),<bewitchment:poppet_tool>],
+	function(out,ins,cInfo) {
+		if(ins.pearl.damage != 0) {
+			return out.withDamage(ins.pearl.damage - 1);
+		} else {
+			return out;
+		}
+	}, null);
+<thaumcraft:primordial_pearl>.addTooltip(format.white("Dropped rarely by Void Rifts when"));
+<thaumcraft:primordial_pearl>.addTooltip(format.white("closed by a Causality Collapser."));
+
+# Ancient Pedestal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_ancient>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:AncientPedestal", "INFUSIONANCIENT", 100, [<aspect:ordo> * 16,<aspect:terra> * 16,<aspect:perditio> * 8], <thaumcraft:pedestal_ancient>, [[<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>],[null,<thaumcraft:pedestal_arcane>,null],[<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>]]);
+
+# Eldritch Pedestal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_eldritch>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EldritchPedestal", "INFUSIONELDRITCH", 150, [<aspect:perditio> * 32,<aspect:terra> * 16], <thaumcraft:pedestal_eldritch>, [[<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>],[null,<thaumcraft:pedestal_ancient>,null],[<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>]]);
 
 print("ENDING Thaumcraft.zs");

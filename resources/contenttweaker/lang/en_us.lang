@@ -399,3 +399,5 @@ item.contenttweaker.cold_void_seed.name=Cold Void Seed
 item.contenttweaker.cold_void_metal_ingot.name=Cold Void Metal Ingot
 fluid.cold_iron=Molten Cold Iron
 item.contenttweaker.impetus_crystal.name=Impetus Crystal
+item.contenttweaker.thaumium_processor.name=Thaumium Processor
+item.contenttweaker.printed_thaumium_circuit.name=Printed Thaumium Circuit

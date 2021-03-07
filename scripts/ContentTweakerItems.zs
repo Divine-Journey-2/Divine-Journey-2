@@ -774,5 +774,9 @@ var impetus_crystal = VanillaFactory.createItem("impetus_crystal");
 impetus_crystal.rarity = "EPIC";
 impetus_crystal.glowing = true;
 impetus_crystal.register();
+var thaumium_processor = VanillaFactory.createItem("thaumium_processor");
+thaumium_processor.register();
+var printed_thaumium_circuit = VanillaFactory.createItem("printed_thaumium_circuit");
+printed_thaumium_circuit.register();
 
 print("ENDING ContentTweakerItems.zs");
