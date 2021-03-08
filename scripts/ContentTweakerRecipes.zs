@@ -38,6 +38,8 @@ import moretweaker.bewitchment.WitchesRitual;
 import mods.thermalexpansion.Crucible as MagmaCrucible;
 import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible as TCCrucible;
+import crafttweaker.world.IWorld;
+import crafttweaker.world.IBiome;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -608,7 +610,7 @@ Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence>, [<natura:o
 
 # Custom AE2 Press duping and crafting
 val custom_ae2_presses = [<contenttweaker:inscriber_estimation_press>,<contenttweaker:inscriber_operation_press>,<contenttweaker:inscriber_methodology_press>,<contenttweaker:inscriber_clearance_press>,<contenttweaker:inscriber_scheduling_press>] as IItemStack[];
-val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<divinerpg:apalachia_chunk>,<divinerpg:mortum_chunk>] as IItemStack[];
+val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<botania:manaresource:7>,<draconicevolution:draconic_ingot>] as IItemStack[];
 for i in 0 to 5 {
 	Inscriber.addRecipe(custom_ae2_presses[i], <thermalfoundation:storage_alloy>, true, custom_ae2_presses[i]);
 	recipes.addShaped(custom_ae2_presses[i], [[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,custom_ae2_press_materials[i],<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>]]);
@@ -1036,5 +1038,31 @@ Inscriber.addRecipe(<contenttweaker:printed_thaumium_circuit>, <thaumcraft:ingot
 
 # Thaumium Processor
 Inscriber.addRecipe(<contenttweaker:thaumium_processor>, <minecraft:redstone>, false, <contenttweaker:printed_thaumium_circuit>, <appliedenergistics2:material:20>);
+
+# Conducted Impetus
+recipes.addShapeless("conducted_impetus", <contenttweaker:conducted_impetus>, [<thaumicaugmentation:augment_caster_rift_energy_storage>.reuse().marked("conductor"),<contenttweaker:impetus_crystal>],
+function(out, ins, cInfo) {
+	if(ins.conductor.getCapNBT() has "Parent" && ins.conductor.getCapNBT().Parent has "energy" && ins.conductor.getCapNBT().Parent.energy has "energy" && ins.conductor.getCapNBT().Parent.energy.energy == 300) {
+		return out;
+	} else {
+		return null;
+	}
+}, null);
+<contenttweaker:conducted_impetus>.addTooltip(format.white("Requires an ") + format.lightPurple("Impetus Conductor") + format.white(" with"));
+<contenttweaker:conducted_impetus>.addTooltip(format.white("Impetus Level: ") + format.darkGreen("Maximum") + format.white("."));
+
+# Arcanium Base
+recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<enderio:block_alloy_endergy:1>,<contenttweaker:condensed_vis_crystal_stellae>,<enderio:block_alloy_endergy:1>],[<thaumcraft:mechanism_complex>,<contenttweaker:conducted_impetus>,<thaumcraft:mechanism_complex>],[<enderio:block_alloy_endergy:1>,<contenttweaker:condensed_vis_crystal_praecantatio>,<enderio:block_alloy_endergy:1>]],
+	function(out, ins, cInfo) {
+		val biomeName = cInfo.player.world.getBiome(cInfo.player.position).name as string;
+		if(cInfo.player.world.getBiome(cInfo.player.position).name == "Arcana") {
+			return out;
+		} else {
+			return null;
+		}
+	}, null);
+<contenttweaker:arcanium_base>.addTooltip(format.white("Can only be crafted in an ") + format.aqua("Arcana") + format.white(" biome."));
+<contenttweaker:arcanium_base>.addTooltip(format.white("Use an ") + format.lightPurple("Arcane Terraformer") + format.white(" to transform"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("an area into it!"));
 
 print("ENDING ContentTweakerRecipes.zs");

@@ -45,7 +45,7 @@ mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cast_
 
 # Impetus Cell
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:material:3>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_cell", "", <thaumicaugmentation:material:3>, 8, [<aspect:alienis> * 250,<aspect:vacuos> * 250,<aspect:potentia> * 250], <bewitchment:stone_ichor>, [<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_vacuos>,<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_alienis>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_cell", "", <thaumicaugmentation:material:3>, 8, [<aspect:alienis> * 250,<aspect:vacuos> * 250,<aspect:potentia> * 250], <enderutilities:enderpart:17>, [<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_vacuos>,<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_alienis>]);
 
 # Impetus Conductor
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:augment_caster_rift_energy_storage>);
@@ -71,19 +71,22 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:fracture_locator", 
 <thaumicaugmentation:stone>.addTooltip(format.white("Base Stone of the Emptiness dimension."));
 
 # Ancient Stone
-<thaumcraft:stone_ancient>.addTooltip(format.white("Found in Eldritch Spires on the Emptiness dimension."));
+<thaumcraft:stone_ancient>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
 
 # Ancient Pedestal
-<thaumcraft:pedestal_ancient>.addTooltip(format.white("Found in Eldritch Spires on the Emptiness dimension."));
+<thaumcraft:pedestal_ancient>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
 
 # Crusted Stone
-<thaumicaugmentation:stone:6>.addTooltip(format.white("Found in Eldritch Spires on the Emptiness dimension."));
+<thaumicaugmentation:stone:6>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
 
 # Glowing Crusted Stone
-<thaumicaugmentation:stone:7>.addTooltip(format.white("Found in Eldritch Spires on the Emptiness dimension."));
+<thaumicaugmentation:stone:7>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
 
 # Glyphed Stone
-<thaumcraft:stone_ancient_glyphed>.addTooltip(format.white("Found in Eldritch Spires on the Emptiness dimension."));
+<thaumcraft:stone_ancient_glyphed>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+
+# Ancient Bars
+<thaumicaugmentation:bars>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
 
 # Eldritch Stone
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:stone_eldritch_tile>);
@@ -94,7 +97,7 @@ mods.thaumcraft.Crucible.removeRecipe(<thaumicaugmentation:material:5>);
 mods.thaumcraft.Crucible.registerRecipe("thaumicaugmentation:impetus_jewel", "", <thaumicaugmentation:material:5>, <contenttweaker:impetus_crystal>, [<aspect:ordo> * 40, <aspect:potentia> * 40,<aspect:stellae> * 10]);
 
 # Impetus Drainer
-mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:impetus_drainer>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_drainer>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_drainer", "", <thaumicaugmentation:impetus_drainer>, 7, [<aspect:alienis> * 200,<aspect:machina> * 200,<aspect:potentia> * 100,<aspect:metallum> * 100,<aspect:auram> * 50], <thaumicaugmentation:material:5>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:stone_eldritch_tile>,<thaumicaugmentation:bars>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:metal_void>]);
 
 # Impetus Relay
@@ -106,7 +109,7 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_linker
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impetus_linker", "", 150, [<aspect:ordo> * 8,<aspect:perditio> * 8,<aspect:ignis> * 4,<aspect:terra> * 4,<aspect:aer> * 4], <thaumicaugmentation:impetus_linker>, [[null,<thaumicaugmentation:material:5>,<thaumcraft:ingot:1>],[<thaumcraft:ingot:1>,<bewitchment:boline>,<thaumcraft:ingot:1>],[null,<thaumcraft:ingot:1>,null]]);
 
 # Impetus Diffuser
-mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:impetus_diffuser>);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_diffuser>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_diffuser", "", <thaumicaugmentation:impetus_diffuser>, 8, [<aspect:alienis> * 200,<aspect:machina> * 200,<aspect:permutatio> * 100,<aspect:metallum> * 100,<aspect:auram> * 50], <thaumicaugmentation:material:5>, [<thaumcraft:morphic_resonator>,<thaumcraft:plate:3>,<thaumcraft:stone_eldritch_tile>,<botania:hourglass>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:plate:3>,<thaumcraft:morphic_resonator>,<thaumcraft:plate:3>]);
 
 # Ancient Lantern
@@ -133,5 +136,58 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:rift_mover_output",
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:rift_mover_input>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:rift_mover_input", "RIFT_MOVING", <thaumicaugmentation:rift_mover_input>, 8, [<aspect:vinculum> * 150,<aspect:machina> * 150,<aspect:vacuos> * 100,<aspect:vitium> * 100,<aspect:alienis> * 100,<aspect:permutatio> * 100], <thaumicaugmentation:material:5>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_praecantatio>,<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_machina>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:mechanism_complex>]);
 
+# Impetus Matrix
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_matrix", "IMPETUS_MATRIX", <thaumicaugmentation:impetus_matrix>, 8, [<aspect:machina> * 150,<aspect:vitium> * 120,<aspect:alienis> * 120,<aspect:tenebrae> * 100,<aspect:ordo> * 50,<aspect:perditio> * 50], <thaumcraft:infusion_matrix>, [<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumicaugmentation:material:5>,<contenttweaker:condensed_vis_crystal_vitium>,<thaumcraft:mechanism_complex>]);
+
+# Stability Field Generator
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:stability_field_generator>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:stability_field_generator", "", <thaumicaugmentation:stability_field_generator>, 7, [<aspect:machina> * 200,<aspect:ordo> * 200,<aspect:potentia> * 120,<aspect:vacuos> * 60,<aspect:auram> * 60], <thaumicaugmentation:material:5>, [<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_auram>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_auram>,<thaumcraft:plate>,<thaumcraft:stabilizer>]);
+
+# Extradimensional Monitor
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:rift_monitor>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:rift_monitor", "", 100, [<aspect:aer> * 10,<aspect:terra> * 10], <thaumicaugmentation:rift_monitor>, [[<thaumcraft:slab_eldritch>,<thaumcraft:thaumometer>,<thaumcraft:slab_eldritch>],[<thaumcraft:stone_eldritch_tile>,<thaumicaugmentation:material:5>,<thaumcraft:stone_eldritch_tile>],[<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>]]);
+
+# Void Recharge Pedestal
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:void_recharge_pedestal>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:void_recharge_pedestal", "", <thaumicaugmentation:void_recharge_pedestal>, 8, [<aspect:machina> * 200,<aspect:alienis> * 200,<aspect:potentia> * 150,<aspect:permutatio> * 120,<aspect:auram> * 120], <thaumicaugmentation:material:5>, [<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_alienis>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_alienis>,<thaumcraft:plate:3>,<thaumcraft:recharge_pedestal>]);
+
+# Impetus Generator
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_generator>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impetus_generator", "", 100, [<aspect:ignis> * 8,<aspect:perditio> * 8], <thaumicaugmentation:impetus_generator>, [[<thaumcraft:stone_eldritch_tile>,<enderio:item_alloy_ingot:3>,<thaumcraft:stone_eldritch_tile>],[<thaumcraft:morphic_resonator>,<thaumicaugmentation:material:5>,<thaumcraft:morphic_resonator>],[<thaumcraft:stone_eldritch_tile>,<enderio:item_alloy_ingot:3>,<thaumcraft:stone_eldritch_tile>]]);
+
+# Arcane Terraformer
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:arcane_terraformer>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:arcane_terraformer", "", <thaumicaugmentation:arcane_terraformer>, 8, [<aspect:machina> * 250,<aspect:terra> * 250,<aspect:permutatio> * 200,<aspect:potentia> * 150,<aspect:auram> * 150,<aspect:sensus> * 100], <thaumicaugmentation:impetus_diffuser>, [<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:metal_thaumium>,<thaumcraft:mechanism_complex>,<thaumcraft:potion_sprayer>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_thaumium>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicaugmentation:material:5>]);
+
+# Biome Focus: Arcana
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:biome_focus_arcana", "", <thaumicaugmentation:biome_selector>.withTag({cap: {biome: "divinerpg:arcana"}}), 5, [<aspect:motus> * 100,<aspect:terra> * 100,<aspect:tenebrae> * 60,<aspect:praecantatio> * 30], <thaumicaugmentation:biome_selector>, [<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:stone_arcane>,<contenttweaker:travelers_tenacity>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:stone_arcane>,<thaumcraft:lamp_arcane>]);
+
+# Vis Regenerator Lattice
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:material>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:vis_regenerator_lattice", "", 100, [<aspect:aer> * 12,<aspect:aqua> * 12], <thaumicaugmentation:material>, [[<thaumcraft:log_silverwood>,<thaumcraft:leaves_silverwood>,<thaumcraft:log_silverwood>],[<thaumcraft:leaves_silverwood>,<thaumcraft:condenser_lattice>,<thaumcraft:leaves_silverwood>],[<thaumcraft:log_silverwood>,<thaumcraft:leaves_silverwood>,<thaumcraft:log_silverwood>]]);
+
+# Vis Regenerator
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:vis_regenerator>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:vis_regenerator", "", <thaumicaugmentation:vis_regenerator>, 7, [<aspect:machina> * 50,<aspect:aer> * 50,<aspect:ordo> * 50,<aspect:auram> * 30,<aspect:potentia> * 30], <thaumicaugmentation:material>, [<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_aer>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:mechanism_complex>,<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_aer>,<thaumcraft:stone_eldritch_tile>,<thaumicaugmentation:bars>]);
+
+# Impetus Gate
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_gate>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impetus_gate", "", 50, [<aspect:terra> * 10,<aspect:aer> * 10,<aspect:perditio> * 10], <thaumicaugmentation:impetus_gate>, [[null,<thaumicaugmentation:material:1>,null],[<thaumcraft:plate:3>,<thaumicaugmentation:impetus_relay>,<thaumcraft:plate:3>],[null,<botania:manaresource:12>,null]]);
+
+# Impetus Mirror
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:impetus_mirror>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_mirror", "IMPETUS_MIRROR", <thaumicaugmentation:impetus_mirror>, 8, [<aspect:vitreus> * 100,<aspect:permutatio> * 150,<aspect:motus> * 150,<aspect:potentia> * 100], <thaumcraft:mirror_essentia>, [<thaumcraft:stone_eldritch_tile>,<thaumcraft:plate:3>,<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_vitreus>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:plate:3>,<thaumcraft:stone_eldritch_tile>,<thaumicaugmentation:material:5>]);
+
+# Impulse Cannon
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:impulse_cannon>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impulse_cannon", "IMPULSE_CANNON", <thaumicaugmentation:impulse_cannon>, 9, [<aspect:alienis> * 150,<aspect:aversio> * 150,<aspect:potentia> * 150,<aspect:machina> * 100,<aspect:mortuus> * 100,<aspect:vacuos> * 60,<aspect:tenebrae> * 50], <thaumicaugmentation:material:3>, [<thaumcraft:morphic_resonator>,<thaumicaugmentation:material:5>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_aversio>,<thaumcraft:inlay>,<thaumicaugmentation:stability_field_generator>,<thaumcraft:inlay>,<contenttweaker:condensed_vis_crystal_aversio>,<thaumcraft:plate:3>,<thaumicaugmentation:material:5>,<thaumcraft:morphic_resonator>,<thaumcraft:focus_3>]);
+
+# Railgun Conversion
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impulse_cannon_augment>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impulse_cannon_augment", "", 150, [<aspect:ordo> * 20,<aspect:perditio> * 20,<aspect:terra> * 20], <thaumicaugmentation:impulse_cannon_augment>, [[null,<thaumcraft:plate:3>,null],[<thaumcraft:plate:3>,<thaumicaugmentation:material:5>,<thaumcraft:plate:3>],[null,<thaumcraft:plate:3>,null]]);
+
+# Burst Fire Conversion
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impulse_cannon_augment:1>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impulse_cannon_augment:1", "", 150, [<aspect:ordo> * 20,<aspect:perditio> * 20,<aspect:terra> * 20], <thaumicaugmentation:impulse_cannon_augment:1>, [[<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>],[<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>],[<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>]]);
 
 print("ENDING ThaumicAugmentation.zs");

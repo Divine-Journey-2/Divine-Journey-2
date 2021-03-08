@@ -189,4 +189,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:skythern_block> * 14,
 [<contenttweaker:condensed_vis_crystal_spiritus>,<thaumcraft:plate:2>,<divinerpg:skythern_heart>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_spiritus>],
 [<contenttweaker:condensed_vis_crystal_auram>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_spiritus>,<contenttweaker:condensed_vis_crystal_auram>]]);
 
+# Arcana Portal Frame
+recipes.remove(<divinerpg:arcana_portal_frame>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:arcana_portal_frame> * 12,
+[[<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>],
+[<contenttweaker:arcanium_base>,<contenttweaker:condensed_vis_crystal_stellae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:arcanium_base>],
+[<contenttweaker:arcanium_base>,<thaumcraft:plate:3>,<bewitchment:demonic_elixir>.noReturn(),<thaumicaugmentation:material:5>,<bewitchment:demonic_elixir>.noReturn(),<thaumcraft:plate:3>,<contenttweaker:arcanium_base>],
+[<divinerpg:bluefire_stone>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumicaugmentation:material:5>,<bewitchment:leonards_wand>,<thaumicaugmentation:material:5>,<contenttweaker:condensed_vis_crystal_tenebrae>,<divinerpg:bluefire_stone>],
+[<contenttweaker:arcanium_base>,<thaumcraft:plate:3>,<bewitchment:demonic_elixir>.noReturn(),<thaumicaugmentation:material:5>,<bewitchment:demonic_elixir>.noReturn(),<thaumcraft:plate:3>,<contenttweaker:arcanium_base>],
+[<contenttweaker:arcanium_base>,<contenttweaker:condensed_vis_crystal_stellae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:arcanium_base>],
+[<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>]]);
+
 print("ENDING DivineRPG.zs");

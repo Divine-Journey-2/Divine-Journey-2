@@ -64,4 +64,12 @@ mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:pedestal>, [[nul
 recipes.remove(<extendedcrafting:crafting_core>);
 mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:crafting_core>, [[<extendedcrafting:material:48>,<extendedcrafting:material:48>,<extendedcrafting:material:48>],[<contenttweaker:clean_runic_plate>,<extendedcrafting:frame>,<contenttweaker:clean_runic_plate>],[<contenttweaker:clean_runic_plate>,<extendedcrafting:pedestal>,<contenttweaker:clean_runic_plate>]]);
 
+# Elite Crafting Table
+mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:table_elite>,
+[[<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:condensed_vis_crystal_vitreus>],
+[<contenttweaker:crystallized_mana_cluster>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:crystallized_mana_cluster>,<extendedcrafting:table_advanced>,<thaumicaugmentation:material:5>,<extendedcrafting:table_advanced>,<contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:crystallized_mana_cluster>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:condensed_vis_crystal_vitreus>]]);
+
 print("ENDING ExtendedCrafting.zs");

@@ -16,19 +16,19 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:coalesc
 
 # 1k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_1k>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k", "ESSENTIASTORAGE1k", 10, null, <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,allCertus,<thaumcraft:stone_eldritch_tile>],[allCertus,<contenttweaker:thaumium_processor>,allCertus],[<thaumcraft:stone_eldritch_tile>,allCertus,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k", "ESSENTIASTORAGE1k", 10, [], <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,allCertus,<thaumcraft:stone_eldritch_tile>],[allCertus,<contenttweaker:thaumium_processor>,allCertus],[<thaumcraft:stone_eldritch_tile>,allCertus,<thaumcraft:salis_mundus>]]);
 
 # 4k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_4k>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_4k", "ESSENTIASTORAGE4k", 10, null, <thaumicenergistics:essentia_component_4k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_1k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_1k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_1k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_1k>,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_4k", "ESSENTIASTORAGE4k", 10, [], <thaumicenergistics:essentia_component_4k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_1k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_1k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_1k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_1k>,<thaumcraft:salis_mundus>]]);
 
 # 16k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_16k>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_16k", "ESSENTIASTORAGE16k", 10, null, <thaumicenergistics:essentia_component_16k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_4k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_4k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_4k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_4k>,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_16k", "ESSENTIASTORAGE16k", 10, [], <thaumicenergistics:essentia_component_16k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_4k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_4k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_4k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_4k>,<thaumcraft:salis_mundus>]]);
 
 # 64k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_64k>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_64k", "ESSENTIASTORAGE64k", 10, null, <thaumicenergistics:essentia_component_64k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_16k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_16k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_16k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_16k>,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_64k", "ESSENTIASTORAGE64k", 10, [], <thaumicenergistics:essentia_component_64k>, [[<thaumcraft:salis_mundus>,<thaumicenergistics:essentia_component_16k>,<thaumcraft:stone_eldritch_tile>],[<thaumicenergistics:essentia_component_16k>,<contenttweaker:thaumium_processor>,<thaumicenergistics:essentia_component_16k>],[<thaumcraft:stone_eldritch_tile>,<thaumicenergistics:essentia_component_16k>,<thaumcraft:salis_mundus>]]);
 
 # 1k ME Essentia Storage Cell
 recipes.removeShaped(<thaumicenergistics:essentia_cell_1k>);

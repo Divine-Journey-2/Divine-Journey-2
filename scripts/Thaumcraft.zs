@@ -538,7 +538,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:modaggression",
 
 # Redstone Inlay
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:inlay>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTABLE", <thaumcraft:inlay>, 2, [<aspect:potentia> * 20,<aspect:ignis> * 10], <thermaldynamics:relay>, [<contenttweaker:fire_core>,<thaumcraft:ingot>,<enderio:block_alloy:3>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTABLE", <thaumcraft:inlay> * 4, 2, [<aspect:potentia> * 20,<aspect:ignis> * 10], <thermaldynamics:relay>, [<contenttweaker:fire_core>,<thaumcraft:ingot>,<enderio:block_alloy:3>]);
 
 # Stabilizer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);
@@ -617,8 +617,8 @@ recipes.addShapeless("thaumcraft_primordial_pearl_repair", <thaumcraft:primordia
 			return out;
 		}
 	}, null);
-<thaumcraft:primordial_pearl>.addTooltip(format.white("Dropped rarely by Void Rifts when"));
-<thaumcraft:primordial_pearl>.addTooltip(format.white("closed by a Causality Collapser."));
+<thaumcraft:primordial_pearl>.addTooltip(format.white("Dropped rarely by ") + format.darkPurple("Void Rifts") + format.white(" when"));
+<thaumcraft:primordial_pearl>.addTooltip(format.white("closed by a ") + format.lightPurple("Causality Collapser") + format.white("."));
 
 # Ancient Pedestal
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_ancient>);

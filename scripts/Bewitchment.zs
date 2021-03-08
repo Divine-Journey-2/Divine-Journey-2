@@ -141,6 +141,8 @@ mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <l
 <bewitchment:dragons_blood_resin>.addTooltip(format.white("After initially crafting this, obtain it by"));
 <bewitchment:dragons_blood_resin>.addTooltip(format.white("Right Clicking on a Dragon's Blood Tree with"));
 <bewitchment:dragons_blood_resin>.addTooltip(format.white("a Boline, and waiting for it to bleed!"));
+<ore:dye>.remove(<bewitchment:dragons_blood_resin>);
+<ore:dyeRed>.remove(<bewitchment:dragons_blood_resin>);
 
 # Dragon's Blood Sapling
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 250,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);

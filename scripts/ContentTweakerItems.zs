@@ -778,5 +778,12 @@ var thaumium_processor = VanillaFactory.createItem("thaumium_processor");
 thaumium_processor.register();
 var printed_thaumium_circuit = VanillaFactory.createItem("printed_thaumium_circuit");
 printed_thaumium_circuit.register();
+var conducted_impetus = VanillaFactory.createItem("conducted_impetus");
+conducted_impetus.rarity = "EPIC";
+conducted_impetus.glowing = true;
+conducted_impetus.register();
+var arcanium_base = VanillaFactory.createItem("arcanium_base");
+conducted_impetus.rarity = "RARE";
+arcanium_base.register();
 
 print("ENDING ContentTweakerItems.zs");

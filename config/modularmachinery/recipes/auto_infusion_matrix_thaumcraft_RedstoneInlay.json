@@ -43,7 +43,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "thaumcraft:inlay"
+            "item": "thaumcraft:inlay",
+            "amount": 4
         }
     ]
 }

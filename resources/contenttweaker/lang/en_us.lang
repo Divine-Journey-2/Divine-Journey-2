@@ -401,3 +401,5 @@ fluid.cold_iron=Molten Cold Iron
 item.contenttweaker.impetus_crystal.name=Impetus Crystal
 item.contenttweaker.thaumium_processor.name=Thaumium Processor
 item.contenttweaker.printed_thaumium_circuit.name=Printed Thaumium Circuit
+item.contenttweaker.conducted_impetus.name=Conducted Impetus
+item.contenttweaker.arcanium_base.name=Arcanium Base

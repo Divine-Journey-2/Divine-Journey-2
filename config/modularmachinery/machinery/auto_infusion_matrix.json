@@ -265,7 +265,7 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmachinery:blockcasing@0"
             ]
         },
         {
@@ -281,7 +281,7 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
@@ -289,7 +289,7 @@
             "y": 4,
             "z": 1,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
@@ -721,7 +721,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
@@ -745,7 +745,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
@@ -769,7 +769,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmachinery:blockcasing@0"
             ]
         },
         {
@@ -943,7 +943,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
@@ -959,7 +959,7 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "modularmagic:blockaspectproviderinput@0"
+                "modularmagic:blockcasing@0"
             ]
         },
         {
