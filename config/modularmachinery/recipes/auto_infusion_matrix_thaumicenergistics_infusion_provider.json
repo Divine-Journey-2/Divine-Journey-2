@@ -1,0 +1,78 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicenergistics_infusion_provider",
+    "recipeTime": 700,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@3"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "appliedenergistics2:interface",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_machina"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicenergistics:coalescence_core"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:salis_mundus",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:impetus_mirror"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicenergistics:diffusion_core"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "permutatio",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aqua",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicenergistics:infusion_provider"
+        }
+    ]
+}

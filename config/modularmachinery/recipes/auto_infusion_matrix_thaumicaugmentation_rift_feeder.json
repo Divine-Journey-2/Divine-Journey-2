@@ -1,0 +1,76 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_rift_feeder",
+    "recipeTime": 600,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@3",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:essentia_input"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:morphic_resonator",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mechanism_simple",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:tube_filter",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitium",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:rift_feeder"
+        }
+    ]
+}

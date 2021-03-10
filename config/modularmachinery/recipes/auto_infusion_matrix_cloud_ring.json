@@ -1,0 +1,39 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_cloud_ring",
+    "recipeTime": 50,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"aer"}]}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:feather"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:cloud_ring"
+        }
+    ]
+}

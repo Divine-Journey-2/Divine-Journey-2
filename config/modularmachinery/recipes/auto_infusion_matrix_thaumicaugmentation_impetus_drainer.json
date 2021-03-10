@@ -1,0 +1,74 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_impetus_drainer",
+    "recipeTime": 650,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@3",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:stone_eldritch_tile",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:bars"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:metal_void"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "metallum",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:impetus_drainer"
+        }
+    ]
+}

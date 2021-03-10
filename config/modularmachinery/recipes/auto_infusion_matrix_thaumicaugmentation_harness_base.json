@@ -1,0 +1,73 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_harness_base",
+    "recipeTime": 300,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:leather_chestplate"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@2"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:heaven_extract"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:magical_leather",
+            "amount": 3
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:travelers_tenacity"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "volatus",
+            "amount": 75
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 75
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:material@4"
+        }
+    ]
+}

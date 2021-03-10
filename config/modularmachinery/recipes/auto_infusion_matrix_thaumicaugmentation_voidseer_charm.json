@@ -1,0 +1,78 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_voidseer_charm",
+    "recipeTime": 1000,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:primordial_fragment"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:ingot@30",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@15"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:void_seed",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:rune@11"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@4"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 250
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:voidseer_charm"
+        }
+    ]
+}

@@ -23,9 +23,9 @@
     "DRY",
     "SPARSE",
     "HOT",
+    "SANDY",
     "ATUM",
-    "HILLS",
-    "SANDY"
+    "HILLS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

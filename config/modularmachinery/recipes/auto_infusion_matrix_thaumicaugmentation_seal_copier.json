@@ -1,0 +1,74 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_seal_copier",
+    "recipeTime": 85,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_cognitio",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:seal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@2",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:golem_bell"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:resonator"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "evilcraft:dark_stick",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 30
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 30
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 15
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "humanus",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:seal_copier"
+        }
+    ]
+}

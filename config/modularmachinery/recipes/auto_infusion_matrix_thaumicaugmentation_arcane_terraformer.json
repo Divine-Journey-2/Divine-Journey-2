@@ -1,0 +1,86 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_arcane_terraformer",
+    "recipeTime": 1100,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_terra",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:potion_sprayer"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mechanism_complex",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:impetus_diffuser"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:metal_thaumium",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "terra",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "permutatio",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 100
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:arcane_terraformer"
+        }
+    ]
+}

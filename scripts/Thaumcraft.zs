@@ -406,7 +406,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyBelt", "", <thaumcraft:
 
 # Blank Advanced Focus
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_2", "FOCUSADVANCED@1", <thaumcraft:focus_2>, 1, [<aspect:vitreus> * 80,<aspect:praecantatio> * 40,<aspect:ordo> * 40,<aspect:instrumentum> * 40,<aspect:auram> * 20], <thaumcraft:focus_1>, [<alchemistry:ingot:30>,<thaumcraft:alumentum>,<thaumcraft:ingot>,<thaumcraft:vis_resonator>,<thaumcraft:alumentum>,<thaumcraft:ingot>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_2", "FOCUSADVANCED@1", <thaumcraft:focus_2>, 3, [<aspect:vitreus> * 80,<aspect:praecantatio> * 40,<aspect:ordo> * 40,<aspect:instrumentum> * 40,<aspect:auram> * 20], <thaumcraft:focus_1>, [<alchemistry:ingot:30>,<thaumcraft:alumentum>,<thaumcraft:ingot>,<thaumcraft:vis_resonator>,<thaumcraft:alumentum>,<thaumcraft:ingot>]);
 
 # Arcane Lamp
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:lamp_arcane>);
@@ -627,5 +627,13 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:AncientPedestal
 # Eldritch Pedestal
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_eldritch>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EldritchPedestal", "INFUSIONELDRITCH", 150, [<aspect:perditio> * 32,<aspect:terra> * 16], <thaumcraft:pedestal_eldritch>, [[<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>],[null,<thaumcraft:pedestal_ancient>,null],[<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:stone_eldritch_tile>]]);
+
+# Blank Greater Focus
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_3", "FOCUSGREATER@1", <thaumcraft:focus_3>, 8, [<aspect:vacuos> * 150,<aspect:vitreus> * 150,<aspect:ordo> * 100,<aspect:praecantatio> * 100,<aspect:instrumentum> * 50,<aspect:auram> * 50], <thaumcraft:focus_2>, [<alchemistry:ingot:30>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:30>,<contenttweaker:primordial_fragment>,<alchemistry:ingot:30>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:30>,<minecraft:nether_star>]);
+
+# Void Thaumaturge Hood
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_helm>);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeHelm", "VOIDROBEARMOR", <thaumcraft:void_robe_helm>, 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35,<aspect:sensus> * 35], <thaumcraft:void_helm>, [<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumcraft:salis_mundus>,<thaumcraft:plate:3>,<thaumcraft:fabric>,<thaumcraft:goggles>]);
 
 print("ENDING Thaumcraft.zs");

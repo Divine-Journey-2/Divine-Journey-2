@@ -1,0 +1,58 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_fracture_locator",
+    "recipeTime": 550,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:impetus_crystal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_vacuos",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nugget@10",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 100
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:fracture_locator"
+        }
+    ]
+}

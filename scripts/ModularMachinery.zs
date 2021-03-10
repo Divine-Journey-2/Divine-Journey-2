@@ -7,14 +7,17 @@ print("STARTING ModularMachinery.zs");
 
 # Modularium
 recipes.remove(<modularmachinery:itemmodularium>);
-EIOAlloySmelter.addRecipe(<modularmachinery:itemmodularium> * 6, [<plustic:mirioningot>,<enderutilities:enderpart:2>,<botania:quartz> * 4], 24000);
-mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium> * 6, <plustic:mirioningot>, null, 120, 400, [<enderutilities:enderpart:2>,<botania:quartz> * 4]);
+EIOAlloySmelter.addRecipe(<modularmachinery:itemmodularium> * 16, [<plustic:mirioningot>,<enderutilities:enderpart:2>,<botania:quartz> * 4], 24000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium> * 16, <plustic:mirioningot>, null, 120, 400, [<enderutilities:enderpart:2>,<botania:quartz> * 4]);
 
 # Modular Fey Crafter Machine Blueprint
 recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:modular_fey_crafter"}), [<roots:fey_crafter>,<modularmachinery:itemmodularium>,<minecraft:paper>]);
 
 # Tender Ender Blender Machine Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tender_ender_blender"}), [[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>],[<minecraft:paper>,<botania:endereyeblock>,<minecraft:paper>],[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>]]);
+
+# Auto Infusion Matrix Machine Blueprint
+recipes.addShapedMirrored(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:auto_infusion_matrix"}), [[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>],[<thaumcraft:matrix_speed>,<thaumicaugmentation:material:3>,<thaumcraft:matrix_cost>],[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>]]);
 
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
@@ -59,5 +62,8 @@ recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, [[null,<teslacorel
 
 # Reinforced Energy Input Hatch
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, [[null,<contenttweaker:virtus>,null],[<contenttweaker:virtus>,<modularmachinery:blockenergyinputhatch:2>,<contenttweaker:virtus>],[null,<contenttweaker:virtus>,null]]);
+
+# Big Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:4>, [[<thaumcraft:plate:2>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<thaumcraft:plate:2>],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<modularmachinery:blockenergyinputhatch:3>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]})],[<thaumcraft:plate:2>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<thaumcraft:plate:2>]]);
 
 print("ENDING ModularMachinery.zs");

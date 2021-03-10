@@ -23,8 +23,8 @@
     "COLD",
     "DRY",
     "VOID",
-    "MAGICAL",
-    "PLAINS"
+    "PLAINS",
+    "MAGICAL"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

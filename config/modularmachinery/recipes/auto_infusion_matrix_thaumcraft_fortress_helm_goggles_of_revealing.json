@@ -1,0 +1,51 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_fortress_helm_goggles_of_revealing",
+    "recipeTime": 80,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:fortress_helm"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:goggles"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:slime_ball"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:fortress_helm",
+            "nbt": {"goggles":"1b"}
+        }
+    ]
+}

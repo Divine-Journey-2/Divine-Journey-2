@@ -1,0 +1,78 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_elytra_harness_augment",
+    "recipeTime": 750,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 7000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@3"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@3",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_vacuos"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_alienis"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:magical_leather",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@6"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "volatus",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 150
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:elytra_harness_augment"
+        }
+    ]
+}

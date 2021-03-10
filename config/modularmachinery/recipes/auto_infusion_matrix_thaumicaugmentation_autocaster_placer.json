@@ -1,0 +1,80 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_autocaster_placer",
+    "recipeTime": 650,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:morphic_resonator",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:gauntlet@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mechanism_complex"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:vis_resonator",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aversio",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:autocaster_placer"
+        }
+    ]
+}

@@ -113,7 +113,7 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_diffus
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_diffuser", "", <thaumicaugmentation:impetus_diffuser>, 8, [<aspect:alienis> * 200,<aspect:machina> * 200,<aspect:permutatio> * 100,<aspect:metallum> * 100,<aspect:auram> * 50], <thaumicaugmentation:material:5>, [<thaumcraft:morphic_resonator>,<thaumcraft:plate:3>,<thaumcraft:stone_eldritch_tile>,<botania:hourglass>,<thaumcraft:stone_eldritch_tile>,<thaumcraft:plate:3>,<thaumcraft:morphic_resonator>,<thaumcraft:plate:3>]);
 
 # Ancient Lantern
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:stone:11>);
+recipes.remove(<thaumicaugmentation:stone:11>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:ancient_lantern", "", 25, [<aspect:ignis> * 12,<aspect:perditio> * 6], <thaumicaugmentation:stone:11>, [[<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>],[<thaumcraft:stone_ancient>,<thaumicaugmentation:material:5>,<thaumcraft:stone_ancient>],[<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>,<thaumcraft:stone_ancient>]]);
 
 # Autocaster
@@ -136,9 +136,6 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:rift_mover_output",
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:rift_mover_input>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:rift_mover_input", "RIFT_MOVING", <thaumicaugmentation:rift_mover_input>, 8, [<aspect:vinculum> * 150,<aspect:machina> * 150,<aspect:vacuos> * 100,<aspect:vitium> * 100,<aspect:alienis> * 100,<aspect:permutatio> * 100], <thaumicaugmentation:material:5>, [<thaumcraft:plate:3>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_praecantatio>,<thaumcraft:stone_eldritch_tile>,<contenttweaker:condensed_vis_crystal_machina>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:mechanism_complex>]);
 
-# Impetus Matrix
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_matrix", "IMPETUS_MATRIX", <thaumicaugmentation:impetus_matrix>, 8, [<aspect:machina> * 150,<aspect:vitium> * 120,<aspect:alienis> * 120,<aspect:tenebrae> * 100,<aspect:ordo> * 50,<aspect:perditio> * 50], <thaumcraft:infusion_matrix>, [<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumicaugmentation:material:5>,<contenttweaker:condensed_vis_crystal_vitium>,<thaumcraft:mechanism_complex>]);
-
 # Stability Field Generator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:stability_field_generator>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:stability_field_generator", "", <thaumicaugmentation:stability_field_generator>, 7, [<aspect:machina> * 200,<aspect:ordo> * 200,<aspect:potentia> * 120,<aspect:vacuos> * 60,<aspect:auram> * 60], <thaumicaugmentation:material:5>, [<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_auram>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_auram>,<thaumcraft:plate>,<thaumcraft:stabilizer>]);
@@ -160,7 +157,7 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:arcane_terrafo
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:arcane_terraformer", "", <thaumicaugmentation:arcane_terraformer>, 8, [<aspect:machina> * 250,<aspect:terra> * 250,<aspect:permutatio> * 200,<aspect:potentia> * 150,<aspect:auram> * 150,<aspect:sensus> * 100], <thaumicaugmentation:impetus_diffuser>, [<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:metal_thaumium>,<thaumcraft:mechanism_complex>,<thaumcraft:potion_sprayer>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_thaumium>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicaugmentation:material:5>]);
 
 # Biome Focus: Arcana
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:biome_focus_arcana", "", <thaumicaugmentation:biome_selector>.withTag({cap: {biome: "divinerpg:arcana"}}), 5, [<aspect:motus> * 100,<aspect:terra> * 100,<aspect:tenebrae> * 60,<aspect:praecantatio> * 30], <thaumicaugmentation:biome_selector>, [<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:stone_arcane>,<contenttweaker:travelers_tenacity>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:stone_arcane>,<thaumcraft:lamp_arcane>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:biome_focus_arcana", "", <thaumicaugmentation:biome_selector>.withCapNBT({Parent: {biome: "divinerpg:arcana"}}), 5, [<aspect:motus> * 100,<aspect:terra> * 100,<aspect:tenebrae> * 60,<aspect:praecantatio> * 30], <thaumicaugmentation:biome_selector>, [<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:stone_arcane>,<contenttweaker:travelers_tenacity>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:stone_arcane>,<thaumcraft:lamp_arcane>]);
 
 # Vis Regenerator Lattice
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:material>);
@@ -189,5 +186,25 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impuls
 # Burst Fire Conversion
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impulse_cannon_augment:1>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impulse_cannon_augment:1", "", 150, [<aspect:ordo> * 20,<aspect:perditio> * 20,<aspect:terra> * 20], <thaumicaugmentation:impulse_cannon_augment:1>, [[<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>],[<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>],[<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>]]);
+
+# Elytra Harness
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:elytra_harness>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:elytra_harness", "", <thaumicaugmentation:elytra_harness>, 7, [<aspect:volatus> * 150,<aspect:motus> * 100,<aspect:potentia> * 100], <thaumicaugmentation:material:4>, [<contenttweaker:condensed_vis_crystal_volatus>,<thaumcraft:plate:3>,<thaumcraft:vis_resonator>,<contenttweaker:condensed_vis_crystal_volatus>,<thaumcraft:plate:3>,<minecraft:elytra>]);
+
+# Impetus Thruster Upgrade
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:elytra_harness_augment>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:elytra_harness_augment", "", <thaumicaugmentation:elytra_harness_augment>, 9, [<aspect:volatus> * 200,<aspect:motus> * 200,<aspect:potentia> * 200,<aspect:alienis> * 150], <thaumcraft:baubles:6>, [<contenttweaker:magical_leather>,<contenttweaker:condensed_vis_crystal_alienis>,<thaumcraft:plate:3>,<thaumicaugmentation:material:5>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_vacuos>,<contenttweaker:magical_leather>,<thaumicaugmentation:material:3>]);
+
+# Voidseer's Pearl
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:voidseer_charm>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:voidseer_charm", "", <thaumcraft:voidseer_charm>, 8, [<aspect:cognitio> * 250,<aspect:vacuos> * 250,<aspect:praecantatio> * 250,<aspect:alienis> * 250], <thaumcraft:baubles:4>, [<alchemistry:ingot:30>,<botania:rune:15>,<thaumcraft:void_seed>,<thaumicaugmentation:material:5>,<thaumcraft:void_seed>,<botania:rune:11>,<alchemistry:ingot:30>,<contenttweaker:primordial_fragment>]);
+
+# Seal Copier
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:seal_copier>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:seal_copier", "SEAL_COPIER", <thaumicaugmentation:seal_copier>, 1, [<aspect:cognitio> * 30,<aspect:instrumentum> * 30,<aspect:machina> * 15,<aspect:humanus> * 10], <thaumcraft:golem_bell>, [<thaumcraft:seal>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_cognitio>,<evilcraft:dark_stick>,<thaumcraft:resonator>,<evilcraft:dark_stick>,<contenttweaker:condensed_vis_crystal_cognitio>,<thaumcraft:plate:2>]);
+
+# Void Thaumaturge Boots
+mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:void_boots>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:void_boots", "BOOTS_VOID", <thaumicaugmentation:void_boots>.withTag({color: 6961280}), 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35,<aspect:motus> * 35], <thaumcraft:traveller_boots>, [<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumicaugmentation:material:5>,<thaumcraft:plate:3>,<thaumcraft:fabric>,<contenttweaker:primordial_fragment>]);
 
 print("ENDING ThaumicAugmentation.zs");

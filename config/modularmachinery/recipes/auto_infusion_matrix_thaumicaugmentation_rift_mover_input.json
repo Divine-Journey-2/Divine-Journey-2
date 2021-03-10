@@ -1,0 +1,84 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_rift_mover_input",
+    "recipeTime": 700,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@3",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_praecantatio"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_machina"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:stone_eldritch_tile"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mechanism_complex"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vinculum",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitium",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "permutatio",
+            "amount": 100
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:rift_mover_input"
+        }
+    ]
+}

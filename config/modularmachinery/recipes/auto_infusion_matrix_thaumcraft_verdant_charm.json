@@ -1,0 +1,62 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_verdant_charm",
+    "recipeTime": 150,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@4"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:nugget@10"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"victus"}]}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:milk_bucket"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"herba"}]}
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "victus",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ordo",
+            "amount": 30
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:verdant_charm"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_void_boots",
+    "recipeTime": 255,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@3",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:primordial_fragment"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:material@5"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:fabric",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:traveller_boots"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "metallum",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 35
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 35
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 35
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:void_boots",
+            "nbt": {"color":"6961280"}
+        }
+    ]
+}

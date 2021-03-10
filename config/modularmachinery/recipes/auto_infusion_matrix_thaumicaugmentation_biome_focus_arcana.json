@@ -1,0 +1,73 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_biome_focus_arcana",
+    "recipeTime": 290,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:biome_selector"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_tenebrae"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:stone_arcane",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:travelers_tenacity"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_motus"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:lamp_arcane"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "terra",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "tenebrae",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 30
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:biome_selector@0",
+            "nbt": {"cap":{"biome":"divinerpg:arcana"}}
+        }
+    ]
+}

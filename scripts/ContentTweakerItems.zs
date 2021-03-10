@@ -783,7 +783,11 @@ conducted_impetus.rarity = "EPIC";
 conducted_impetus.glowing = true;
 conducted_impetus.register();
 var arcanium_base = VanillaFactory.createItem("arcanium_base");
-conducted_impetus.rarity = "RARE";
+arcanium_base.rarity = "RARE";
 arcanium_base.register();
+var primordial_fragment = VanillaFactory.createItem("primordial_fragment");
+primordial_fragment.rarity = "EPIC";
+primordial_fragment.glowing = true;
+primordial_fragment.register();
 
 print("ENDING ContentTweakerItems.zs");

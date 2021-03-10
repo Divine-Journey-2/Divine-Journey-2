@@ -1,0 +1,56 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_thaumostatic_harness_augment_1",
+    "recipeTime": 225,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:magical_leather",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_volatus"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:travelers_tenacity"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:baubles@6"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 75
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "volatus",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicaugmentation:thaumostatic_harness_augment@1"
+        }
+    ]
+}

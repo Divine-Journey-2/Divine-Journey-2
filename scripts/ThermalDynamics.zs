@@ -1,6 +1,7 @@
 # Author: Atricos
 
 import mods.thermalexpansion.Transposer;
+import mods.thaumcraft.Infusion;
 
 print("STARTING ThermalDynamics.zs");
 
@@ -255,5 +256,13 @@ recipes.addShaped(<thermaldynamics:retriever:4>, [[<thermalfoundation:material:3
 # Redstone Relay
 recipes.remove(<thermaldynamics:relay>);
 recipes.addShaped(<thermaldynamics:relay>, [[<thermalfoundation:material:357>,<contenttweaker:rf_powder>,<thermalfoundation:material:357>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
+
+# Cryo-Stabilized Fluxduct (Empty)
+recipes.remove(<thermaldynamics:duct_0:9>);
+mods.thaumcraft.Infusion.registerRecipe("thermaldynamics:cryo_stabilized_fluxduct_empty", "", <thermaldynamics:duct_0:9>, 5, [<aspect:gelum> * 100,<aspect:potentia> * 100,<aspect:motus> * 50,<aspect:machina> * 20], <thermaldynamics:duct_0:4>, [<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<evilcraft:potentia_sphere>,<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<alchemistry:ingot:30>]);
+
+# Cryo-Stabilized Fluxduct
+mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_0:9>, <liquid:cryotheum>);
+mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_0:5>, <thermaldynamics:duct_0:9>, <liquid:cryotheum> * 10000, 40000);
 
 print("ENDING ThermalDynamics.zs");

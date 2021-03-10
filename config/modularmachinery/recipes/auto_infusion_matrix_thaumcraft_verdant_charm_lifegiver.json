@@ -1,0 +1,58 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_verdant_charm_lifegiver",
+    "recipeTime": 160,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:verdant_charm"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:golden_apple@0"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"victus"}]}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:potion",
+            "nbt": {"Potion":"minecraft:strong_healing"}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"humanus"}]}
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "victus",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "humanus",
+            "amount": 80
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:verdant_charm",
+            "nbt": {"type":"1b"}
+        }
+    ]
+}

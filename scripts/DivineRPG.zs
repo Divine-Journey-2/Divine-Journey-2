@@ -200,4 +200,42 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:arcana_portal_frame> * 
 [<contenttweaker:arcanium_base>,<contenttweaker:condensed_vis_crystal_stellae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:plate:3>,<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:arcanium_base>],
 [<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>]]);
 
+# Dungeon Bookshelf
+<divinerpg:dungeon_bookshelf>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white("."));
+<divinerpg:dungeon_bookshelf>.addTooltip(format.white("Use Silk Touch to obtain."));
+
+# Acceleron
+<divinerpg:acceleron>.addTooltip(format.white("Bought from ") + format.aqua("Datticon") + format.white(" in the ") + format.blue("Dungeon of Arcana") + format.white("."));
+
+# Raw Arcanium
+<divinerpg:raw_arcanium>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white(","));
+<divinerpg:raw_arcanium>.addTooltip(format.white("behind closed doors."));
+
+# Molten Furnace
+<divinerpg:molten_furnace>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white(","));
+<divinerpg:molten_furnace>.addTooltip(format.white("in special NPC rooms."));
+
+# Dungeon Tokens
+<divinerpg:dungeon_tokens>.addTooltip(format.white("Dropped by Parasecta and Dramix in the ") + format.blue("Dungeon"));
+<divinerpg:dungeon_tokens>.addTooltip(format.blue("of Arcana") + format.white(". They're summoned at their respective"));
+<divinerpg:dungeon_tokens>.addTooltip(format.white("Altars by placing a Wizards Book on top."));
+
+# Wizards Book
+<divinerpg:wizards_book>.addTooltip(format.white("Bought from ") + format.darkRed("Lord Vatticus") + format.white(" in the ") + format.blue("Dungeon of Arcana") + format.white("."));
+
+# Mortum Block
+recipes.remove(<divinerpg:mortum_block>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:mortum_block> * 3,
+[[<contenttweaker:condensed_vis_crystal_tenebrae>,<contenttweaker:conducted_impetus>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_tenebrae>],
+[<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>,<divinerpg:mortum_chunk>,<divinerpg:mortum_soul>,<divinerpg:mortum_chunk>,<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>],
+[<thaumcraft:plate:3>,<divinerpg:mortum_chunk>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<divinerpg:mortum_chunk>,<thaumcraft:plate:3>],
+[<thaumcraft:plate:3>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<divinerpg:mortum_heart>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<thaumcraft:plate:3>],
+[<thaumcraft:plate:3>,<divinerpg:mortum_chunk>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<divinerpg:mortum_soul>,<divinerpg:mortum_chunk>,<thaumcraft:plate:3>],
+[<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>,<divinerpg:mortum_chunk>,<divinerpg:mortum_soul>,<divinerpg:mortum_chunk>,<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>],
+[<contenttweaker:condensed_vis_crystal_tenebrae>,<contenttweaker:conducted_impetus>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_tenebrae>]]);
+
+# Nightmare Bed
+recipes.remove(<divinerpg:nightmare_bed>);
+recipes.addShaped(<divinerpg:nightmare_bed>, [[<divinerpg:acceleron>,<divinerpg:acceleron>,<divinerpg:acceleron>],[<divinerpg:mortum_block>,<divinerpg:mortum_block>,<divinerpg:mortum_block>]]);
+
 print("ENDING DivineRPG.zs");

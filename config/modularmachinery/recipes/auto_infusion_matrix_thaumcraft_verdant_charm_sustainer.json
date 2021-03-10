@@ -1,0 +1,58 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumcraft_verdant_charm_sustainer",
+    "recipeTime": 160,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:verdant_charm"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:triple_meat_treat"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"desiderium"}]}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:potion",
+            "nbt": {"Potion":"minecraft:strong_regeneration"}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:crystal_essence",
+            "nbt": {"Aspects":[{"amount":"1","key":"aer"}]}
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "desiderium",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
+            "amount": 80
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumcraft:verdant_charm",
+            "nbt": {"type":"2b"}
+        }
+    ]
+}

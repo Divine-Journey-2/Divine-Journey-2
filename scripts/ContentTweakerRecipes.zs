@@ -1052,7 +1052,7 @@ function(out, ins, cInfo) {
 <contenttweaker:conducted_impetus>.addTooltip(format.white("Impetus Level: ") + format.darkGreen("Maximum") + format.white("."));
 
 # Arcanium Base
-recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<enderio:block_alloy_endergy:1>,<contenttweaker:condensed_vis_crystal_stellae>,<enderio:block_alloy_endergy:1>],[<thaumcraft:mechanism_complex>,<contenttweaker:conducted_impetus>,<thaumcraft:mechanism_complex>],[<enderio:block_alloy_endergy:1>,<contenttweaker:condensed_vis_crystal_praecantatio>,<enderio:block_alloy_endergy:1>]],
+recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft:stone_ancient_glyphed>,<enderio:block_alloy_endergy:1>,<thaumcraft:stone_ancient_glyphed>],[<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_praecantatio>],[<thaumcraft:mechanism_complex>,<enderio:block_alloy_endergy:1>,<thaumcraft:mechanism_complex>]],
 	function(out, ins, cInfo) {
 		val biomeName = cInfo.player.world.getBiome(cInfo.player.position).name as string;
 		if(cInfo.player.world.getBiome(cInfo.player.position).name == "Arcana") {
@@ -1064,5 +1064,9 @@ recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<enderio:bl
 <contenttweaker:arcanium_base>.addTooltip(format.white("Can only be crafted in an ") + format.aqua("Arcana") + format.white(" biome."));
 <contenttweaker:arcanium_base>.addTooltip(format.white("Use an ") + format.lightPurple("Arcane Terraformer") + format.white(" to transform"));
 <contenttweaker:arcanium_base>.addTooltip(format.white("an area into it!"));
+
+# Primordial Fragment
+recipes.addShapeless(<contenttweaker:primordial_fragment>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1)]);
+<contenttweaker:primordial_fragment>.addTooltip(format.white("Takes 1 durability of a ") + format.gold("Primordial Pearl") + format.white(" to craft."));
 
 print("ENDING ContentTweakerRecipes.zs");
