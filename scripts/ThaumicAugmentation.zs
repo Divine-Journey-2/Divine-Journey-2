@@ -156,9 +156,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impetu
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:arcane_terraformer>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:arcane_terraformer", "", <thaumicaugmentation:arcane_terraformer>, 8, [<aspect:machina> * 250,<aspect:terra> * 250,<aspect:permutatio> * 200,<aspect:potentia> * 150,<aspect:auram> * 150,<aspect:sensus> * 100], <thaumicaugmentation:impetus_diffuser>, [<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:metal_thaumium>,<thaumcraft:mechanism_complex>,<thaumcraft:potion_sprayer>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_thaumium>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicaugmentation:material:5>]);
 
-# Biome Focus: Arcana
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:biome_focus_arcana", "", <thaumicaugmentation:biome_selector>.withCapNBT({Parent: {biome: "divinerpg:arcana"}}), 5, [<aspect:motus> * 100,<aspect:terra> * 100,<aspect:tenebrae> * 60,<aspect:praecantatio> * 30], <thaumicaugmentation:biome_selector>, [<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_tenebrae>,<thaumcraft:stone_arcane>,<contenttweaker:travelers_tenacity>,<thaumcraft:stone_arcane>,<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:stone_arcane>,<thaumcraft:lamp_arcane>]);
-
 # Vis Regenerator Lattice
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:material>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:vis_regenerator_lattice", "", 100, [<aspect:aer> * 12,<aspect:aqua> * 12], <thaumicaugmentation:material>, [[<thaumcraft:log_silverwood>,<thaumcraft:leaves_silverwood>,<thaumcraft:log_silverwood>],[<thaumcraft:leaves_silverwood>,<thaumcraft:condenser_lattice>,<thaumcraft:leaves_silverwood>],[<thaumcraft:log_silverwood>,<thaumcraft:leaves_silverwood>,<thaumcraft:log_silverwood>]]);

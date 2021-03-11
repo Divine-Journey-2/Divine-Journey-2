@@ -14224,8 +14224,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Arcane to Arcana",
-          "desc:8": "Craft 12 Arcanium Bases. You can only do this MANUALLY, and only when your Player is inside an Arcana biome.\n\nNote: There is sometimes a bug where the item can be crafted in an Arcana biome, even though the crafting output is empty. This is due to the recipe detecting Player location, not the Crafting Table\u0027s location."
+          "name:8": "Ritual of the Arcane",
+          "desc:8": "Craft 12 Arcanium Bases. You can only craft this while standing inside a concenrtic square of biomes of this shape:\n\n\n§5███████\n█§c█████§5█\n█§c█§a███§c§█§c█§5█\n█§c█§a█§b█§a█§c█§5█\n█§c█§a███§c█§5█\n█§c█████§5█\n███████§r\n\nWith\n\n§5█§r \u003d Mortum biome\n§c█§r \u003d Hell (Nether) biome\n§a█§r \u003d Magical Forest biome\n§b█§r \u003d Ocean biome\n\n\nTo set this up, you need to use an Arcane Terraformer on top of where the Ocean biome is, with the following steps:\n\n1. Transform a Square area with Range \u003d 4 into a Mortum biome.\n2. Transform a Square area with Range \u003d 3 into a Hell biome.\n3. Transform a Square area with Range \u003d 2 into a Magical Forest biome.\n4. Transform a Square area with Range \u003d 1 into an Ocean biome.\n\nIf you\u0027re unsure if you\u0027ve transformed the area correctly, you can craft a Ritualistic Biome Checker. by standing in the middle and Right Clicking the item, it\u0027ll tell you how many blocks you have correctly transformed into the required biome.\n\nYOU DON\u0027T HAVE TO BE PERFECT THOUGH! There is some leeway. The recipe will still work if you only transformed:\n\n- 22 of the 24 Mortum biome blocks,\n- 15 of the 16 Hell biome blocks,\n- 7 of the 8 Magical Forest biome blocks.\n\nYou can only do this MANUALLY, and only your Player needs to stand in the central Ocean biome block, the Crafting Table can be further away (as long as you can still reach it).\n\nNote: There is sometimes a bug where the biome layout is entirely correct, and item can be crafted in an Arcana biome, even though the crafting output is empty. Then you\u0027ll need to click the empty output slot to get the item. This is due to the recipe detecting Player location, not the Crafting Table\u0027s location."
         }
       },
       "tasks:9": {
@@ -14238,6 +14238,18 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {
+                  "AS_Amulet_HolderLeast:4": -4822218405563622703,
+                  "AS_Amulet_HolderMost:4": 433871007885182809
+                }
+              },
+              "id:8": "contenttweaker:ritualistic_biome_checker",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
               "id:8": "contenttweaker:arcanium_base",
               "Count:3": 12,
               "Damage:2": 0,
@@ -14289,7 +14301,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Shaping the world",
-          "desc:8": "Craft an Arcane Terraformer and a regular Biome Focus in an Arcane Workbench, then upgrade the Focus into the Arcana version in your Infusion Altar.\n\nWARNING: Do NOT Shift+Right Click the Arcana Focus, since that will clear it and turn it back into a regular version.\n\nNormally you can obtain these Biome Foci by Right Clicking in a specific biome, but now we\u0027ll do the opposite: We want to go to Arcana so we transform an area into an Arcana biome to get a special item gating the Dungeon of Arcana!\n\nTo do this, place down your Arcan Terraformer near a Flux Rift, place an Arcana Biome Focus inside, and shrink down the range a lot. Place a Jar of Permutatio Essentia BELOW the Terraformer and connect a source of Impetus to it.\n\nThe Terraformer will use the previously mentioned two resources: Essentia and Impetus, as well as Vis from the area, to transform the all blocks in the desired range into an Arcana biome.\n\nCheck your F3 menu, left side, second section, fifth row from the top, to see which biome you\u0027re standing in. Once it says \"Arcana\", you\u0027ve won!"
+          "desc:8": "Craft an Arcane Terraformer and 4 regular Biome Foci in an Arcane Workbench, them use each one in the 4 biomes listed the right: Ocean, Magical Forest, Hell (Nether) \u0026 Mortum.\n\nWARNING: If you Shift+Right Click an Arcana Focus, it will get cleared and turn it back into a regular version.\n\nThe Arcane Terraformer can take any of these Foci and turn a circular or square area around it into the wanted biome.\n\nFor this, it\u0027ll require 3 key ingredients:\n- Vis, drawn from the air.\n- Essentia, drawn from the 5 input hatches located on the sides and on the bottom. These are specifically for Terra, Aer, Ignis, Aqua and Permuatatio, with Permutatio being drawn from the bottom. The rest should be routed into their respective colored input plug using Essentia Tubes or ME Essentia Export Buses.\n- Impetus, drawn from an Impetus Relay, Impetus Matrix or Impetus Drainer - routed by an Impetus Resonator.\n\nThese materials will only be used while the machine is active. To activate it, select the desired area in the GUI, then Right Click it with your Gauntlet."
         }
       },
       "tasks:9": {
@@ -14310,14 +14322,62 @@
             "1:10": {
               "ForgeCaps:10": {
                 "Parent:10": {
-                  "biome:8": "thaumicaugmentation:biome_empty"
+                  "biome:8": "minecraft:ocean"
                 }
               },
               "id:8": "thaumicaugmentation:biome_selector",
               "Count:3": 1,
               "tag:10": {
                 "cap:10": {
-                  "biome:8": "divinerpg:arcana"
+                  "biome:8": "minecraft:ocean"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "biome:8": "thaumcraft:magical_forest"
+                }
+              },
+              "id:8": "thaumicaugmentation:biome_selector",
+              "Count:3": 1,
+              "tag:10": {
+                "cap:10": {
+                  "biome:8": "thaumcraft:magical_forest"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "biome:8": "minecraft:hell"
+                }
+              },
+              "id:8": "thaumicaugmentation:biome_selector",
+              "Count:3": 1,
+              "tag:10": {
+                "cap:10": {
+                  "biome:8": "minecraft:hell"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "biome:8": "divinerpg:mortum"
+                }
+              },
+              "id:8": "thaumicaugmentation:biome_selector",
+              "Count:3": 1,
+              "tag:10": {
+                "cap:10": {
+                  "biome:8": "divinerpg:mortum"
                 }
               },
               "Damage:2": 0,

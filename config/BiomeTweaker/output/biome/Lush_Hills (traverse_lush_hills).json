@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "LUSH",
     "SPARSE",
-    "WET",
-    "HILLS"
+    "HILLS",
+    "WET"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

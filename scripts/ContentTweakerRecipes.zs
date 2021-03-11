@@ -40,6 +40,8 @@ import mods.tconstruct.Melting;
 import mods.thaumcraft.Crucible as TCCrucible;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBiome;
+import crafttweaker.recipes.ICraftingInfo;
+import crafttweaker.util.Position3f;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1051,22 +1053,71 @@ function(out, ins, cInfo) {
 <contenttweaker:conducted_impetus>.addTooltip(format.white("Requires an ") + format.lightPurple("Impetus Conductor") + format.white(" with"));
 <contenttweaker:conducted_impetus>.addTooltip(format.white("Impetus Level: ") + format.darkGreen("Maximum") + format.white("."));
 
+function checkBiomesAtPositions(biomeName as string, player_pos as Position3f, biomeLocations as int[][], cInfo as ICraftingInfo) as int {
+	var numOfMatches = 0 as int;
+	var check_pos as Position3f;
+	var add_x = 0 as int;
+	var add_z = 0 as int;
+	for coord_pair in biomeLocations {
+		add_x = coord_pair[0];
+		add_z = coord_pair[1];
+		check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
+		if(cInfo.player.world.getBiome(check_pos).name == biomeName) {
+			numOfMatches += 1;
+		}
+	}
+	return numOfMatches;
+}
+
 # Arcanium Base
 recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft:stone_ancient_glyphed>,<enderio:block_alloy_endergy:1>,<thaumcraft:stone_ancient_glyphed>],[<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_praecantatio>],[<thaumcraft:mechanism_complex>,<enderio:block_alloy_endergy:1>,<thaumcraft:mechanism_complex>]],
 	function(out, ins, cInfo) {
-		val biomeName = cInfo.player.world.getBiome(cInfo.player.position).name as string;
-		if(cInfo.player.world.getBiome(cInfo.player.position).name == "Arcana") {
+		val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
+		val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
+		val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
+		val oceanBiomeLocations = [[0,0]] as int[][];
+		var cur_pos = cInfo.player.position as Position3f;
+
+		var mortumMatches = 0 as int;
+		var hellMatches = 0 as int;
+		var magicalForestMatches = 0 as int;
+		var oceanMatches = 0 as int;
+
+		mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, cInfo);
+		hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, cInfo);
+		magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, cInfo);
+		oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, cInfo);
+
+		/*
+		cInfo.player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
+		cInfo.player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
+		cInfo.player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
+		cInfo.player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
+		*/
+
+		if(mortumMatches >= 22 && hellMatches >= 15 && magicalForestMatches >= 7 && oceanMatches == 1 && cInfo.player.getDimension() == 0) {
+			#cInfo.player.sendChat("OUTPUT");
 			return out;
 		} else {
+			#cInfo.player.sendChat("NULL");
 			return null;
 		}
 	}, null);
-<contenttweaker:arcanium_base>.addTooltip(format.white("Can only be crafted in an ") + format.aqua("Arcana") + format.white(" biome."));
-<contenttweaker:arcanium_base>.addTooltip(format.white("Use an ") + format.lightPurple("Arcane Terraformer") + format.white(" to transform"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("an area into it!"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("This item is only craftable if you stand in a 7x7"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("concentric square of the following biomes (from"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("the outermost layer to the innermost square):"));
+<contenttweaker:arcanium_base>.addTooltip(format.darkPurple("Mortum") + format.white(" biome, ") + format.red("Hell (Nether)") + format.white(" biome, ") + format.green("Magical Forest"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("biome, and ") + format.aqua("Ocean") + format.white(" biome. To do this, use an Arcane"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("Terraformer. Check the quest book -> Chapter 21:"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("'Ritual of the Arcane' quest a better explanation!"));
 
 # Primordial Fragment
 recipes.addShapeless(<contenttweaker:primordial_fragment>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1)]);
 <contenttweaker:primordial_fragment>.addTooltip(format.white("Takes 1 durability of a ") + format.gold("Primordial Pearl") + format.white(" to craft."));
+
+# Ritualistic Biome Checker
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:ritualistic_biome_checker", "", 25, [<aspect:terra> * 5,<aspect:aer> * 3], <contenttweaker:ritualistic_biome_checker>, [[<botania:managlasspane>,<thaumicaugmentation:material:5>,<botania:managlasspane>],[<thaumcraft:plate>,<thaumcraft:morphic_resonator>,<thaumcraft:plate>],[null,<thaumcraft:plate>,null]]);
+<contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("Used for the Ritual of the Arcane,"));
+<contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("detailed in Chapter 21 of the quest book."));
 
 print("ENDING ContentTweakerRecipes.zs");

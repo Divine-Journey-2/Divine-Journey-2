@@ -790,4 +790,52 @@ primordial_fragment.rarity = "EPIC";
 primordial_fragment.glowing = true;
 primordial_fragment.register();
 
+function checkBiomesAtPositions(biomeName as string, player_pos as crafttweaker.util.Position3f, biomeLocations as int[][], world as crafttweaker.world.IWorld) as int {
+	var numOfMatches = 0 as int;
+	var check_pos as crafttweaker.util.Position3f;
+	var add_x = 0 as int;
+	var add_z = 0 as int;
+	for coord_pair in biomeLocations {
+		add_x = coord_pair[0];
+		add_z = coord_pair[1];
+		check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
+		if(world.getBiome(check_pos).name == biomeName) {
+			numOfMatches += 1;
+		}
+	}
+	return numOfMatches;
+}
+
+var ritualistic_biome_checker = VanillaFactory.createItem("ritualistic_biome_checker");
+ritualistic_biome_checker.rarity = "RARE";
+ritualistic_biome_checker.maxStackSize = 1;
+ritualistic_biome_checker.itemRightClick = function(stack, world, player, hand) {
+	if(world.remote) {
+        return "PASS";
+    }
+	val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
+	val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
+	val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
+	val oceanBiomeLocations = [[0,0]] as int[][];
+	var cur_pos = player.position as crafttweaker.util.Position3f;
+	
+	val mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, world) as int;
+	val hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, world) as int;
+	val magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, world) as int;
+	val oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, world) as int;
+
+	player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
+	player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
+	player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
+	player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
+
+	return "SUCCESS";
+};
+ritualistic_biome_checker.register();
+var essence_of_space = VanillaFactory.createItem("essence_of_space");
+essence_of_space.rarity = "EPIC";
+essence_of_space.register();
+var perfect_vacuum = VanillaFactory.createItem("perfect_vacuum");
+perfect_vacuum.register();
+
 print("ENDING ContentTweakerItems.zs");
