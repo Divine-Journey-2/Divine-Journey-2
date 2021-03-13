@@ -448,4 +448,8 @@ recipes.addShapedMirrored(<bewitchment:cold_iron_axe>, [[<bewitchment:cold_iron_
 recipes.remove(<bewitchment:cold_iron_hoe>);
 recipes.addShapedMirrored(<bewitchment:cold_iron_hoe>, [[<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>],[null,<thaumcraft:elemental_hoe>],[null,<bewitchment:pure_filament>]]);
 
+# Scorned Bricks
+recipes.removeShapeless(<bewitchment:scorned_bricks>, [<ore:obsidian>,<ore:obsidian>,<ore:netherrack>,<ore:netherrack>]);
+recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>],[<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>],[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>]]);
+
 print("ENDING Bewitchment.zs");

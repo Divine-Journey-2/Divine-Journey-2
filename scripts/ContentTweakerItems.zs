@@ -837,5 +837,10 @@ essence_of_space.rarity = "EPIC";
 essence_of_space.register();
 var perfect_vacuum = VanillaFactory.createItem("perfect_vacuum");
 perfect_vacuum.register();
+var dungeon_token = VanillaFactory.createItem("dungeon_token");
+dungeon_token.register();
+var lightning_charge = VanillaFactory.createItem("lightning_charge");
+lightning_charge.glowing = true;
+lightning_charge.register();
 
 print("ENDING ContentTweakerItems.zs");

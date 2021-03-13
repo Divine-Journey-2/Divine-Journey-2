@@ -21,9 +21,9 @@
   "Enable Snow": true,
   "Dictionary Types": [
     "TWILIGHT",
-    "FOREST",
     "SNOWY",
     "CONIFEROUS",
+    "FOREST",
     "COLD"
   ],
   "BiomeManager Entries": {},

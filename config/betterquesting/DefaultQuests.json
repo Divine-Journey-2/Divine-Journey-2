@@ -13744,7 +13744,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Roar! More Core for sure!",
-          "desc:8": "Craft a Diffusion Core and a Coalescence Core to get into Thaumic Energistics!"
+          "desc:8": "Craft a Diffusion Core and a Coalescence Core to get into Thaumic Energistics!\n\nTo unlock the Thaumic Energistics tab in your Thaumonomicon, simply scan any Applied Energistics item or block."
         }
       },
       "tasks:9": {

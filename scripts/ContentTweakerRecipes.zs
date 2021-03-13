@@ -1120,4 +1120,10 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:ritualistic
 <contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("Used for the Ritual of the Arcane,"));
 <contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("detailed in Chapter 21 of the quest book."));
 
+# Dungeon Token
+recipes.addShapeless(<contenttweaker:dungeon_token> * 5, [<divinerpg:dungeon_tokens>]);
+
+# Lightning Charge
+recipes.addShapeless(<contenttweaker:lightning_charge> * 4, [<contenttweaker:dungeon_token>,<contenttweaker:ignition>,<divinerpg:clean_pearls>,<thaumicaugmentation:material:5>,<evilcraft:lightning_grenade>]);
+
 print("ENDING ContentTweakerRecipes.zs");
