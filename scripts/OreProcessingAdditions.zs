@@ -584,4 +584,22 @@ addMaterialToDustCrushingWOPetrotheum(<openblocks:trophy:*>, <mysticalagricultur
 # Bewitchment Silver Ore removal
 <ore:oreSilver>.remove(<bewitchment:silver_ore>);
 
+# Electricium Dust
+Grinder.addRecipe(<lightningcraft:dust>, <lightningcraft:ingot>, 4);
+EUCrusher.add(<lightningcraft:dust>, <lightningcraft:ingot>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust>], [100], <lightningcraft:ingot>);
+mods.mekanism.crusher.addRecipe(<lightningcraft:ingot>, <lightningcraft:dust>);
+
+# Skyfather Dust
+Grinder.addRecipe(<lightningcraft:dust:1>, <lightningcraft:ingot:1>, 4);
+EUCrusher.add(<lightningcraft:dust:1>, <lightningcraft:ingot:1>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust:1>], [100], <lightningcraft:ingot:1>);
+mods.mekanism.crusher.addRecipe(<lightningcraft:ingot:1>, <lightningcraft:dust:1>);
+
+# Mystic Dust
+Grinder.addRecipe(<lightningcraft:dust:2>, <lightningcraft:ingot:2>, 4);
+EUCrusher.add(<lightningcraft:dust:2>, <lightningcraft:ingot:2>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust:2>], [100], <lightningcraft:ingot:2>);
+mods.mekanism.crusher.addRecipe(<lightningcraft:ingot:2>, <lightningcraft:dust:2>);
+
 print("ENDING OreProcessingAdditions.zs");

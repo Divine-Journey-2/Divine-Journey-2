@@ -842,5 +842,8 @@ dungeon_token.register();
 var lightning_charge = VanillaFactory.createItem("lightning_charge");
 lightning_charge.glowing = true;
 lightning_charge.register();
+var mystical_iron_ingot = VanillaFactory.createItem("mystical_iron_ingot");
+mystical_iron_ingot.glowing = true;
+mystical_iron_ingot.register();
 
 print("ENDING ContentTweakerItems.zs");

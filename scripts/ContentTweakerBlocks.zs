@@ -449,4 +449,20 @@ tough_purified_paste.setToolLevel(3);
 tough_purified_paste.setBlockSoundType(<soundtype:ground>);
 tough_purified_paste.register();
 
+var undermeld = VanillaFactory.createBlock("undermeld", <blockmaterial:rock>);
+undermeld.setBlockHardness(4.0);
+undermeld.setBlockResistance(4.0);
+undermeld.setToolClass("pickaxe");
+undermeld.setToolLevel(1);
+undermeld.setBlockSoundType(<soundtype:stone>);
+undermeld.register();
+
+var mystical_iron_block = VanillaFactory.createBlock("mystical_iron_block", <blockmaterial:iron>);
+mystical_iron_block.setBlockHardness(6.0);
+mystical_iron_block.setBlockResistance(5.0);
+mystical_iron_block.setToolClass("pickaxe");
+mystical_iron_block.setToolLevel(1);
+mystical_iron_block.setBlockSoundType(<soundtype:metal>);
+mystical_iron_block.register();
+
 print("ENDING ContentTweakerBlocks.zs");

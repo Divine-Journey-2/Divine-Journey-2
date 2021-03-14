@@ -204,4 +204,8 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:seal_copier", "SEAL
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:void_boots>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:void_boots", "BOOTS_VOID", <thaumicaugmentation:void_boots>.withTag({color: 6961280}), 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35,<aspect:motus> * 35], <thaumcraft:traveller_boots>, [<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumicaugmentation:material:5>,<thaumcraft:plate:3>,<thaumcraft:fabric>,<contenttweaker:primordial_fragment>]);
 
+# Warded Chest
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:warded_chest>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:warded_chest", "WARDED_ARCANA", 50, [<aspect:aer> * 8,<aspect:ordo> * 8,<aspect:terra> * 5], <thaumicaugmentation:warded_chest>, [[null,<thaumcraft:plate:3>,null],[<thaumcraft:plate:2>,<ironchest:iron_chest:6>,<thaumcraft:plate:2>],[<thaumcraft:plate:2>,<thaumcraft:plate:2>,<thaumcraft:plate:2>]]);
+
 print("ENDING ThaumicAugmentation.zs");

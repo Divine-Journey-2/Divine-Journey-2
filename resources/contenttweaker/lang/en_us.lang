@@ -409,3 +409,6 @@ item.contenttweaker.essence_of_space.name=Essence of Space
 item.contenttweaker.perfect_vacuum.name=Perfect Vacuum
 item.contenttweaker.dungeon_token.name=Dungeon Token
 item.contenttweaker.lightning_charge.name=Lightning Charge
+tile.contenttweaker.undermeld.name=Undermeld
+item.contenttweaker.mystical_iron_ingot.name=Mystical Iron Ingot
+tile.contenttweaker.mystical_iron_block.name=Mystical Iron Block

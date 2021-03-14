@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import moretweaker.lightningcraft.LightningInfusion;
 import mods.thaumcraft.Infusion;
+import moretweaker.lightningcraft.LightningCrusher;
 
 print("STARTING LightningCraft.zs");
 
@@ -147,7 +148,129 @@ mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", 
 <lightningcraft:material:7>.addTooltip(format.white("Dropped by Skeleton Guards in the Underworld."));
 
 # Mystic Ingot
-LightningInfusion.remove(<lightningcraft:material:6>);
-LightningInfusion.add(<lightningcraft:ingot:6>, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+LightningInfusion.remove(<lightningcraft:ingot:2>);
+LightningInfusion.add(<lightningcraft:ingot:2>, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+
+# Lightning Furnace
+recipes.remove(<lightningcraft:lightning_furnace>);
+recipes.addShaped(<lightningcraft:lightning_furnace>, [[<contenttweaker:undermeld>,<lightningcraft:plate:7>,<contenttweaker:undermeld>],[<lightningcraft:plate:7>,<enderio:block_simple_furnace>,<lightningcraft:plate:7>],[<contenttweaker:undermeld>,<lightningcraft:plate:7>,<contenttweaker:undermeld>]]);
+
+# Lightning Crusher
+recipes.remove(<lightningcraft:lightning_crusher>);
+mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:lightning_crusher>,
+[[<lightningcraft:plate:8>,<contenttweaker:undermeld>,<contenttweaker:undermeld>,<contenttweaker:lightning_charge>,<contenttweaker:undermeld>,<contenttweaker:undermeld>,<lightningcraft:plate:8>],
+[<contenttweaker:undermeld>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_perditio>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:undermeld>],
+[<contenttweaker:undermeld>,<thaumcraft:plate:2>,<lightningcraft:lightning_furnace>,<lightningcraft:lightning_furnace>,<lightningcraft:lightning_furnace>,<thaumcraft:plate:2>,<contenttweaker:undermeld>],
+[<contenttweaker:lightning_charge>,<contenttweaker:condensed_vis_crystal_perditio>,<lightningcraft:lightning_furnace>,<lightningcraft:metal_block:1>,<lightningcraft:lightning_furnace>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:lightning_charge>],
+[<contenttweaker:undermeld>,<thaumcraft:plate:2>,<lightningcraft:lightning_furnace>,<lightningcraft:lightning_furnace>,<lightningcraft:lightning_furnace>,<thaumcraft:plate:2>,<contenttweaker:undermeld>],
+[<contenttweaker:undermeld>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:condensed_vis_crystal_perditio>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:undermeld>],
+[<lightningcraft:plate:8>,<contenttweaker:undermeld>,<contenttweaker:undermeld>,<contenttweaker:lightning_charge>,<contenttweaker:undermeld>,<contenttweaker:undermeld>,<lightningcraft:plate:8>]]);
+
+# Guard's Bonemeal
+recipes.remove(<lightningcraft:material:8>);
+LightningCrusher.remove(<lightningcraft:material:8>);
+LightningCrusher.add(<lightningcraft:material:8> * 3, <lightningcraft:material:7>);
+
+# Empowered Underpowder
+LightningInfusion.remove(<lightningcraft:material:13>);
+LightningInfusion.add(<lightningcraft:material:13>, <lightningcraft:material:12>, 50, [<lightningcraft:material:8>,<lightningcraft:dust>,<lightningcraft:material:8>,<lightningcraft:dust>]);
+
+# Divine Underpowder
+LightningInfusion.remove(<lightningcraft:material:14>);
+LightningInfusion.add(<lightningcraft:material:14> * 2, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
+
+# Mystic Lightning Cell
+recipes.remove(<lightningcraft:lightning_cell:2>);
+recipes.addShaped(<lightningcraft:lightning_cell:2>, [[<lightningcraft:plate:9>,<lightningcraft:plate:9>,<lightningcraft:plate:9>],[<lightningcraft:plate:9>,<lightningcraft:lightning_cell:1>,<lightningcraft:plate:9>],[<lightningcraft:plate:9>,<lightningcraft:plate:9>,<lightningcraft:plate:9>]]);
+
+# LE Transmitter (Tier 2)
+recipes.remove(<lightningcraft:wireless_block:1>);
+recipes.addShaped(<lightningcraft:wireless_block:1>, [[null,<lightningcraft:air_terminal:8>,null],[<lightningcraft:material:4>,<lightningcraft:wireless_block>,<lightningcraft:material:4>],[<minecraft:iron_block>,<thaumicaugmentation:impetus_generator>,<minecraft:iron_block>]]);
+
+# LE Receiver (Tier 2)
+recipes.remove(<lightningcraft:wireless_block:4>);
+recipes.addShaped(<lightningcraft:wireless_block:4>, [[null,<lightningcraft:air_terminal:8>,null],[<lightningcraft:material:4>,<lightningcraft:wireless_block:3>,<lightningcraft:material:4>],[<minecraft:gold_block>,<thaumicaugmentation:impetus_generator>,<minecraft:gold_block>]]);
+
+# LE Transmitter (Tier 3)
+recipes.remove(<lightningcraft:wireless_block:2>);
+recipes.addShaped(<lightningcraft:wireless_block:2>, [[null,<lightningcraft:air_terminal:9>,null],[<lightningcraft:material:4>,<lightningcraft:wireless_block:1>,<lightningcraft:material:4>],[<minecraft:iron_block>,<contenttweaker:mystical_iron_block>,<minecraft:iron_block>]]);
+
+# LE Receiver (Tier 3)
+recipes.remove(<lightningcraft:wireless_block:5>);
+recipes.addShaped(<lightningcraft:wireless_block:5>, [[null,<lightningcraft:air_terminal:9>,null],[<lightningcraft:material:4>,<lightningcraft:wireless_block:4>,<lightningcraft:material:4>],[<minecraft:gold_block>,<contenttweaker:mystical_iron_block>,<minecraft:gold_block>]]);
+
+# LE to RF Export Bus
+recipes.remove(<lightningcraft:rf_provider>);
+recipes.addShaped(<lightningcraft:rf_provider>, [[<lightningcraft:plate:7>,<minecraft:iron_block>,<lightningcraft:plate:7>],[<minecraft:iron_block>,<lightningcraft:lightning_cell:2>,<minecraft:iron_block>],[<lightningcraft:plate:7>,<minecraft:iron_block>,<lightningcraft:plate:7>]]);
+
+# Underworld Electrocannon
+recipes.remove(<lightningcraft:lightning_cannon>);
+
+# Lightning Cannon
+recipes.remove(<lightningcraft:lightning_cannon:1>);
+
+# Elite Lightning Cannon
+recipes.remove(<lightningcraft:lightning_cannon:2>);
+
+# Rampart TNT
+recipes.remove(<lightningcraft:under_tnt>);
+
+# Lightning TNT
+recipes.remove(<lightningcraft:under_tnt:1>);
+
+# Mystic TNT
+recipes.remove(<lightningcraft:under_tnt:2>);
+
+# Tx/Rx Link Tag
+recipes.remove(<lightningcraft:wireless_marker>);
+recipes.addShaped(<lightningcraft:wireless_marker>, [[<lightningcraft:dust>,<lightningcraft:dust>,<lightningcraft:dust>],[<minecraft:paper>,<lightningcraft:material:4>,<minecraft:paper>],[<lightningcraft:dust>,<lightningcraft:dust>,<lightningcraft:dust>]]);
+
+# Lightning Battery (Tier 1)
+recipes.remove(<lightningcraft:battery>);
+recipes.addShaped(<lightningcraft:battery>, [[<lightningcraft:ingot:1>,<lightningcraft:material:4>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<contenttweaker:lightning_charge>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<actuallyadditions:item_battery>,<lightningcraft:ingot:1>]]);
+
+# Lightning Battery (Tier 2)
+recipes.remove(<lightningcraft:battery:1>);
+recipes.addShaped(<lightningcraft:battery:1>, [[<lightningcraft:ingot:1>,<lightningcraft:material:4>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<lightningcraft:battery>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<actuallyadditions:item_battery_double>,<lightningcraft:ingot:1>]]);
+
+# Lightning Battery (Tier 3)
+recipes.remove(<lightningcraft:battery:2>);
+recipes.addShaped(<lightningcraft:battery:2>, [[<lightningcraft:ingot:1>,<lightningcraft:material:4>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<lightningcraft:battery:1>,<lightningcraft:ingot:1>],[<lightningcraft:ingot:1>,<actuallyadditions:item_battery_triple>,<lightningcraft:ingot:1>]]);
+
+# Item Magnet (Tier 1)
+recipes.remove(<lightningcraft:item_magnet>);
+recipes.addShapedMirrored(<lightningcraft:item_magnet>, [[<contenttweaker:lightning_charge>,<enderio:block_alloy:3>,<enderio:block_alloy:3>],[null,<enderio:item_magnet>,<enderio:block_alloy:3>],[<contenttweaker:lightning_charge>,<enderio:block_alloy:3>,<enderio:block_alloy:3>]]);
+
+# Item Magnet (Tier 2)
+recipes.remove(<lightningcraft:item_magnet:1>);
+recipes.addShapedMirrored(<lightningcraft:item_magnet:1>, [[<lightningcraft:ingot>,<lightningcraft:ingot:1>,<lightningcraft:ingot:1>],[null,<lightningcraft:item_magnet>,<lightningcraft:ingot:1>],[<lightningcraft:ingot>,<lightningcraft:ingot:1>,<lightningcraft:ingot:1>]]);
+
+# Item Magnet (Tier 3)
+recipes.remove(<lightningcraft:item_magnet:2>);
+recipes.addShapedMirrored(<lightningcraft:item_magnet:2>, [[<lightningcraft:ingot:1>,<lightningcraft:material:11>,<lightningcraft:material:11>],[null,<lightningcraft:item_magnet:1>,<lightningcraft:material:11>],[<lightningcraft:ingot:1>,<lightningcraft:material:11>,<lightningcraft:material:11>]]);
+
+# Item Magnet (Tier 4)
+recipes.remove(<lightningcraft:item_magnet:3>);
+recipes.addShapedMirrored(<lightningcraft:item_magnet:3>, [[<lightningcraft:ingot:2>,<lightningcraft:metal_block>,<lightningcraft:metal_block>],[null,<lightningcraft:item_magnet:2>,<lightningcraft:metal_block>],[<lightningcraft:ingot:2>,<lightningcraft:metal_block>,<lightningcraft:metal_block>]]);
+
+# Lightning Block Breaker
+recipes.remove(<lightningcraft:lightning_breaker>);
+recipes.addShaped(<lightningcraft:lightning_breaker>, [[<minecraft:iron_block>,<contenttweaker:lightning_charge>,<minecraft:iron_block>],[<openblocks:block_breaker>,<extendedcrafting:frame>,<openblocks:block_breaker>],[<minecraft:iron_block>,<contenttweaker:lightning_charge>,<minecraft:iron_block>]]);
+
+# Lightning Miner
+recipes.remove(<lightningcraft:lightning_miner>);
+recipes.addShaped(<lightningcraft:lightning_miner>, [[<minecraft:gold_block>,<thaumcraft:turret:2>,<minecraft:gold_block>],[<lightningcraft:lightning_breaker>,<extendedcrafting:frame>,<lightningcraft:lightning_breaker>],[<minecraft:gold_block>,<lightningcraft:elec_pick>,<minecraft:gold_block>]]);
+
+# Ensorcelled Core
+LightningInfusion.remove(<lightningcraft:material:9>);
+LightningInfusion.add(<lightningcraft:material:9>, <lightningcraft:material:4>, 250, [<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>,<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>]);
+
+# Enchantment Reallocator
+recipes.remove(<lightningcraft:ench_reallocator>);
+recipes.addShaped(<lightningcraft:ench_reallocator>, [[<lightningcraft:plate:9>,<enderio:block_enchanter>,<lightningcraft:plate:9>],[<lightningcraft:stone_block:3>,<lightningcraft:material:9>,<lightningcraft:stone_block:3>],[<lightningcraft:stone_block:3>,<contenttweaker:mystical_iron_block>,<lightningcraft:stone_block:3>]]);
+
+# Lightning Charging Plate
+recipes.remove(<lightningcraft:charging_plate>);
+recipes.addShaped(<lightningcraft:charging_plate>, [[<lightningcraft:plate:7>,<lightningcraft:plate:7>,<lightningcraft:plate:7>],[<lightningcraft:ingot:1>,<minecraft:heavy_weighted_pressure_plate>,<lightningcraft:ingot:1>]]);
 
 print("ENDING LightningCraft.zs");

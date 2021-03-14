@@ -1126,4 +1126,16 @@ recipes.addShapeless(<contenttweaker:dungeon_token> * 5, [<divinerpg:dungeon_tok
 # Lightning Charge
 recipes.addShapeless(<contenttweaker:lightning_charge> * 4, [<contenttweaker:dungeon_token>,<contenttweaker:ignition>,<divinerpg:clean_pearls>,<thaumicaugmentation:material:5>,<evilcraft:lightning_grenade>]);
 
+# Undermeld
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:undermeld>, <lightningcraft:corrupt_stone>, null, 200, 500, [<lightningcraft:light_block>, <lightningcraft:under_sand>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:undermeld>, [<lightningcraft:corrupt_stone>, <lightningcraft:light_block>, <lightningcraft:under_sand>], 36000);
+
+# Mystical Iron Ingot
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:mystical_iron_ingot>, <lightningcraft:material:14>, null, 200, 400, [<extendedcrafting:material>, <bewitchment:cold_iron_ingot>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:mystical_iron_ingot>, [<lightningcraft:material:14>, <extendedcrafting:material>, <bewitchment:cold_iron_ingot>], 24000);
+recipes.addShapeless(<contenttweaker:mystical_iron_ingot> * 9, [<contenttweaker:mystical_iron_block>]);
+
+# Mystical Iron Block
+recipes.addShaped(<contenttweaker:mystical_iron_block>, [[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>],[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>],[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>]]);
+
 print("ENDING ContentTweakerRecipes.zs");

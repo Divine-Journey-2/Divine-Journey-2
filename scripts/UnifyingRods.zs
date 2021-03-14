@@ -63,8 +63,6 @@ recipes.addShaped(<immersiveengineering:material:3>, [[<ore:ingotAluminum>],[<or
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:3>, <ore:ingotAluminum>, <immersiveengineering:mold:2>, 2400, 1);
 #recipes.replaceAllOccurences(<ore:stickAluminum>, <immersiveengineering:material:3>, <*>);
 #recipes.replaceAllOccurences(<ore:rodAluminum>, <immersiveengineering:material:3>, <*>);
-recipes.remove(<lightningcraft:air_terminal:4>);
-recipes.addShaped(<lightningcraft:air_terminal:4>, [[null,<thermalfoundation:material:324>,null],[null,<immersiveengineering:material:3>,null],[<thermalfoundation:material:324>,<thermalfoundation:material:132>,<thermalfoundation:material:324>]]);
 recipes.remove(<lightningcraft:rod:4>);
 mods.tconstruct.Melting.removeRecipe(<liquid:aluminum>, <immersiveengineering:material:3>);
 mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <immersiveengineering:material:3>, 318);
@@ -76,8 +74,6 @@ recipes.addShaped(<immersiveengineering:material:2>, [[<ore:ingotSteel>],[<ore:i
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:2>, <ore:ingotSteel>, <immersiveengineering:mold:2>, 2400, 1);
 #recipes.replaceAllOccurences(<ore:stickSteel>, <immersiveengineering:material:2>, <*>);
 #recipes.replaceAllOccurences(<ore:rodSteel>, <immersiveengineering:material:2>, <*>);
-recipes.remove(<lightningcraft:air_terminal:1>);
-recipes.addShaped(<lightningcraft:air_terminal:1>, [[null,<thermalfoundation:material:352>,null],[null,<immersiveengineering:material:2>,null],[<thermalfoundation:material:352>,<thermalfoundation:material:160>,<thermalfoundation:material:352>]]);
 recipes.remove(<lightningcraft:rod:1>);
 mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <immersiveengineering:material:2>);
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <immersiveengineering:material:2>, 537);
