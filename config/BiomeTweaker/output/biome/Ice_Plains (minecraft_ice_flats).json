@@ -21,8 +21,8 @@
   "Enable Snow": true,
   "Dictionary Types": [
     "SNOWY",
-    "WASTELAND",
-    "COLD"
+    "COLD",
+    "WASTELAND"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [

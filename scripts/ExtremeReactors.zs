@@ -60,4 +60,43 @@ EIOAlloySmelter.addRecipe(<bigreactors:ingotblutonium>, [<bigreactors:ingotcyani
 IEAlloySmelter.addRecipe(<bigreactors:ingotblutonium>, <bigreactors:ingotcyanite> * 8, <contenttweaker:mystical_iron_ingot>, 160);
 mods.thermalexpansion.InductionSmelter.addRecipe(<bigreactors:ingotblutonium>, <bigreactors:ingotcyanite> * 8, <contenttweaker:mystical_iron_ingot>, 4000);
 
+# Turbine Housing Core (Legacy)
+recipes.remove(<bigreactors:turbinehousingcores>);
+recipes.addShaped(<bigreactors:turbinehousingcores>, [[<bigreactors:ingotyellorium>,<contenttweaker:mystical_iron_ingot>,<bigreactors:ingotyellorium>],[<plustic:mirioningot>,<contenttweaker:mystical_iron_ingot>,<plustic:mirioningot>],[<bigreactors:ingotyellorium>,<contenttweaker:mystical_iron_ingot>,<bigreactors:ingotyellorium>]]);
+
+# Turbine Rotor Blade (Legacy)
+recipes.remove(<bigreactors:turbinerotorblade>);
+recipes.addShapedMirrored(<bigreactors:turbinerotorblade>, [[<bigreactors:ingotcyanite>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>]]);
+
+# Turbine Rotor Shaft (Legacy)
+recipes.remove(<bigreactors:turbinerotorshaft>);
+recipes.addShaped(<bigreactors:turbinerotorshaft>, [[null,<contenttweaker:mystical_iron_ingot>,null],[<contenttweaker:mystical_iron_ingot>,<bigreactors:ingotcyanite>,<contenttweaker:mystical_iron_ingot>],[null,<contenttweaker:mystical_iron_ingot>,null]]);
+
+# Turbine Housing (Legacy)
+recipes.remove(<bigreactors:turbinehousing>);
+recipes.addShaped(<bigreactors:turbinehousing> * 4, [[<bigreactors:ingotcyanite>,<contenttweaker:mystical_iron_ingot>,<bigreactors:ingotcyanite>],[<contenttweaker:mystical_iron_ingot>,<bigreactors:turbinehousingcores>,<contenttweaker:mystical_iron_ingot>],[<bigreactors:ingotcyanite>,<contenttweaker:mystical_iron_ingot>,<bigreactors:ingotcyanite>]]);
+
+# Turbine Controller (Legacy)
+recipes.remove(<bigreactors:turbinecontroller>);
+mods.extendedcrafting.TableCrafting.addShaped(<bigreactors:turbinecontroller>,
+[[<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:blockcyanite>,<thaumicaugmentation:material:3>,<contenttweaker:condensed_vis_crystal_aer>,<thaumicaugmentation:material:3>,<bigreactors:blockcyanite>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:blockcyanite>,<contenttweaker:condensed_vis_crystal_aer>,<evilcraft:inverted_potentia:1>,<contenttweaker:condensed_vis_crystal_aer>,<bigreactors:blockcyanite>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:blockcyanite>,<thaumicaugmentation:material:3>,<contenttweaker:condensed_vis_crystal_aer>,<thaumicaugmentation:material:3>,<bigreactors:blockcyanite>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:blockcyanite>,<bigreactors:turbinehousing>],
+[<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>,<bigreactors:turbinehousing>]]);
+
+# Turbine Rotor Bearing (Legacy)
+recipes.remove(<bigreactors:turbinebearing>);
+recipes.addShaped(<bigreactors:turbinebearing>, [[<bigreactors:turbinehousing>,<bigreactors:turbinerotorshaft>,<bigreactors:turbinehousing>],[<bigreactors:blockcyanite>,<mekanism:machineblock2>,<bigreactors:blockcyanite>],[<bigreactors:turbinehousing>,<bigreactors:turbinerotorshaft>,<bigreactors:turbinehousing>]]);
+
+# Turbine Fluid Port (Legacy)
+recipes.remove(<bigreactors:turbinefluidport>);
+recipes.addShaped(<bigreactors:turbinefluidport>, [[<bigreactors:turbinehousing>,<lightningcraft:ingot:2>,<bigreactors:turbinehousing>],[<lightningcraft:ingot:2>,<integratedtunnels:part_importer_world_fluid_item>,<lightningcraft:ingot:2>],[<bigreactors:turbinehousing>,<lightningcraft:ingot:2>,<bigreactors:turbinehousing>]]);
+
+# Turbine Redstone Flux Power Tap (Legacy)
+recipes.remove(<bigreactors:turbinepowertaprf>);
+recipes.addShaped(<bigreactors:turbinepowertaprf>, [[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>],[<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>],[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>]]);
+
 print("ENDING ExtremeReactors.zs");

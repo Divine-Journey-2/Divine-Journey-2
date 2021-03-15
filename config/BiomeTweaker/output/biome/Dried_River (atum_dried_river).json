@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "SPARSE",
     "ATUM",
+    "WATER",
     "DRY",
     "RIVER",
     "HOT",
-    "WATER",
     "SANDY"
   ],
   "BiomeManager Entries": {},

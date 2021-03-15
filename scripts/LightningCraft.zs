@@ -125,6 +125,7 @@ recipes.remove(<lightningcraft:wireless_block:3>);
 recipes.addShaped(<lightningcraft:wireless_block:3>, [[null,<lightningcraft:air_terminal:7>,null],[<lightningcraft:material:4>,<extendedcrafting:frame>,<lightningcraft:material:4>],[<minecraft:gold_block>,<enderutilities:energy_bridge:1>,<minecraft:gold_block>]]);
 
 # Demon Blood
+LightningInfusion.remove(<lightningcraft:material:5>);
 <lightningcraft:material:5>.addTooltip(format.white("Dropped by Demon Soliders spawning"));
 <lightningcraft:material:5>.addTooltip(format.white("naturally in the Nether."));
 
@@ -272,5 +273,95 @@ recipes.addShaped(<lightningcraft:ench_reallocator>, [[<lightningcraft:plate:9>,
 # Lightning Charging Plate
 recipes.remove(<lightningcraft:charging_plate>);
 recipes.addShaped(<lightningcraft:charging_plate>, [[<lightningcraft:plate:7>,<lightningcraft:plate:7>,<lightningcraft:plate:7>],[<lightningcraft:ingot:1>,<minecraft:heavy_weighted_pressure_plate>,<lightningcraft:ingot:1>]]);
+
+# Electricium Sword
+recipes.remove(<lightningcraft:elec_sword>);
+recipes.addShaped(<lightningcraft:elec_sword>, [[<lightningcraft:ingot>],[<lightningcraft:ingot>],[<bewitchment:cold_iron_sword>]]);
+
+# Electricium Pickaxe
+recipes.remove(<lightningcraft:elec_pick>);
+recipes.addShaped(<lightningcraft:elec_pick>, [[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_pickaxe>,null],[null,<lightningcraft:rod:7>,null]]);
+
+# Electricium Shovel
+recipes.remove(<lightningcraft:elec_shovel>);
+recipes.addShaped(<lightningcraft:elec_shovel>, [[<lightningcraft:ingot>],[<bewitchment:cold_iron_shovel>],[<lightningcraft:rod:7>]]);
+
+# Electricium Axe
+recipes.remove(<lightningcraft:elec_axe>);
+recipes.addShapedMirrored(<lightningcraft:elec_axe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_axe>],[null,<lightningcraft:rod:7>]]);
+
+# Electricium Hoe
+recipes.remove(<lightningcraft:elec_hoe>);
+recipes.addShapedMirrored(<lightningcraft:elec_hoe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_hoe>],[null,<lightningcraft:rod:7>]]);
+
+# Electricium Hammer
+recipes.remove(<lightningcraft:elec_hammer>);
+recipes.addShaped(<lightningcraft:elec_hammer>, [[<lightningcraft:plate:7>,<lightningcraft:plate:7>,<lightningcraft:plate:7>],[<lightningcraft:plate:7>,<lightningcraft:elec_sword>,<lightningcraft:plate:7>],[null,<lightningcraft:rod:7>,null]]);
+
+# Electricium Helmet
+recipes.remove(<lightningcraft:elec_helm>);
+recipes.addShaped(<lightningcraft:elec_helm>, [[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_helmet>,<lightningcraft:ingot>]]);
+
+# Electricium Chestplate
+recipes.remove(<lightningcraft:elec_chest>);
+recipes.addShaped(<lightningcraft:elec_chest>, [[<lightningcraft:ingot>,<bewitchment:cold_iron_chestplate>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>]]);
+
+# Electricium Leggings
+recipes.remove(<lightningcraft:elec_legs>);
+recipes.addShaped(<lightningcraft:elec_legs>, [[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_leggings>,<lightningcraft:ingot>],[<lightningcraft:ingot>,null,<lightningcraft:ingot>]]);
+
+# Electricium Boots
+recipes.remove(<lightningcraft:elec_boots>);
+recipes.addShaped(<lightningcraft:elec_boots>, [[<lightningcraft:ingot>,null,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_boots>,<lightningcraft:ingot>]]);
+
+function addLightningCraftToolAndArmorRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient, new_rod as IIngredient, new_plate as IIngredient) {
+	
+	# Skyfather & Mystic Sword
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"), [[new_material],[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_sword")]]);
+
+	# Skyfather & Mystic Pickaxe
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"), [[new_material,new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_pick"),null],[null,new_rod,null]]);
+
+	# Skyfather & Mystic Shovel
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"), [[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_shovel")],[new_rod]]);
+
+	# Skyfather & Mystic Axe
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"));
+	recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"), [[new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_axe")],[null,new_rod]]);
+
+	# Skyfather & Mystic Hoe
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"));
+	recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"), [[new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_hoe")],[null,new_rod]]);
+
+	# Skyfather & Mystic Hammer
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
+
+	# Skyfather & Mystic Helmet
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_helm"),new_material]]);
+
+	# Skyfather & Mystic Chestplate
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"), [[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_chest"),new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
+
+	# Skyfather & Mystic Leggings
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_legs"),new_material],[new_material,null,new_material]]);
+
+	# Skyfather & Mystic Boots
+	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"));
+	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"), [[new_material,null,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_boots"),new_material]]);
+
+}
+
+# Skyfather Tools & Armor
+addLightningCraftToolAndArmorRecipes("sky", "elec", <lightningcraft:ingot:1>, <lightningcraft:rod:8>, <lightningcraft:plate:8>);
+
+# Skyfather Tools & Armor
+addLightningCraftToolAndArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>, <lightningcraft:rod:9>, <lightningcraft:plate:9>);
 
 print("ENDING LightningCraft.zs");

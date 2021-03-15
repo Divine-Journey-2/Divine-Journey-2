@@ -336,41 +336,45 @@ recipes.addShaped(<extrautils2:teleporter:1>, [[<enderio:block_alloy:6>,<extraut
 recipes.remove(<extrautils2:powertransmitter>);
 recipes.addShaped(<extrautils2:powertransmitter>, [[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>],[<enderio:item_capacitor_melodic>,<quantumflux:craftingpiece>,<enderio:item_capacitor_melodic>],[<enderio:item_alloy_ingot:6>,<contenttweaker:rf_powder>,<enderio:item_alloy_ingot:6>]]);
 
-# Climopgraph Base Unit
+# Climograph Base Unit
 recipes.remove(<extrautils2:terraformer:9>);
-recipes.addShaped(<extrautils2:terraformer:9>, [[<ore:ingotOsmiridium>,<ore:ingotOsmiridium>,<ore:ingotOsmiridium>],[<ore:ingotOsmiridium>,<extrautils2:machine>,<ore:ingotOsmiridium>],[<ore:ingotOsmiridium>,<ore:ingotOsmiridium>,<ore:ingotOsmiridium>]]);
+recipes.addShaped(<extrautils2:terraformer:9>, [[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>],[<astralsorcery:itemcraftingcomponent:1>,<extrautils2:machine>,<astralsorcery:itemcraftingcomponent:1>],[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>]]);
 
 # Terraformer
 recipes.remove(<extrautils2:terraformer>);
-recipes.addShaped(<extrautils2:terraformer>, [[<enderio:item_alloy_ingot>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_ingot>],[<minecraft:dirt:2>,<extrautils2:terraformer:9>,<minecraft:dirt:2>],[<enderio:item_alloy_ingot>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_terra>,<enderio:item_alloy_endergy_ingot:3>],[<minecraft:dirt:2>,<extrautils2:terraformer:9>,<minecraft:dirt:2>],[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_terra>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Heater
 recipes.remove(<extrautils2:terraformer:4>);
-recipes.addShaped(<extrautils2:terraformer:4>, [[<enderio:item_alloy_ingot>,<minecraft:lava_bucket>.noReturn(),<enderio:item_alloy_ingot>],[<minecraft:lava_bucket>.noReturn(),<extrautils2:terraformer:9>,<minecraft:lava_bucket>.noReturn()],[<enderio:item_alloy_ingot>,<actuallyadditions:block_heat_collector>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:4>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_ignis>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_ignis>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_ignis>],[<enderio:item_alloy_endergy_ingot:3>,<actuallyadditions:block_heat_collector>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Cooler
 recipes.remove(<extrautils2:terraformer:5>);
-recipes.addShaped(<extrautils2:terraformer:5>, [[<enderio:item_alloy_ingot>,<minecraft:packed_ice>,<enderio:item_alloy_ingot>],[<minecraft:packed_ice>,<extrautils2:terraformer:9>,<minecraft:packed_ice>],[<enderio:item_alloy_ingot>,<minecraft:packed_ice>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:5>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_gelum>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_gelum>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_gelum>],[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_gelum>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Humidifier
 recipes.remove(<extrautils2:terraformer:2>);
-recipes.addShaped(<extrautils2:terraformer:2>, [[<enderio:item_alloy_ingot>,<minecraft:water_bucket>.noReturn(),<enderio:item_alloy_ingot>],[<minecraft:water_bucket>.noReturn(),<extrautils2:terraformer:9>,<minecraft:water_bucket>.noReturn()],[<enderio:item_alloy_ingot>,<industrialforegoing:water_condensator>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:2>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_aqua>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_aqua>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_aqua>],[<enderio:item_alloy_endergy_ingot:3>,<industrialforegoing:water_condensator>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Dehumidifier
 recipes.remove(<extrautils2:terraformer:3>);
-recipes.addShaped(<extrautils2:terraformer:3>, [[<enderio:item_alloy_ingot>,<minecraft:bucket>,<enderio:item_alloy_ingot>],[<minecraft:bucket>,<extrautils2:terraformer:9>,<minecraft:bucket>],[<enderio:item_alloy_ingot>,<enderio:block_niard>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:3>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_vacuos>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_vacuos>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_vacuos>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:block_niard>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Magic Absorbtion
 recipes.remove(<extrautils2:terraformer:7>);
-recipes.addShaped(<extrautils2:terraformer:7>, [[<enderio:item_alloy_ingot>,<actuallyadditions:item_crystal_empowered:4>,<enderio:item_alloy_ingot>],[<actuallyadditions:item_crystal_empowered:4>,<extrautils2:terraformer:9>,<actuallyadditions:item_crystal_empowered:4>],[<enderio:item_alloy_ingot>,<industrialforegoing:potion_enervator>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:7>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_praecantatio>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_praecantatio>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_praecantatio>],[<enderio:item_alloy_endergy_ingot:3>,<industrialforegoing:potion_enervator>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Dehostilifier
 recipes.remove(<extrautils2:terraformer:6>);
-recipes.addShaped(<extrautils2:terraformer:6>, [[<enderio:item_alloy_ingot>,<actuallyadditions:item_crystal_empowered>,<enderio:item_alloy_ingot>],[<actuallyadditions:item_crystal_empowered>,<extrautils2:terraformer:9>,<actuallyadditions:item_crystal_empowered>],[<enderio:item_alloy_ingot>,<enderio:block_soul_binder>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:6>, [[<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:condensed_vis_crystal_ordo>,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_ordo>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_ordo>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:block_soul_binder>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Magic Infuser
 recipes.remove(<extrautils2:terraformer:8>);
-recipes.addShaped(<extrautils2:terraformer:8>, [[<enderio:item_alloy_ingot>,<evilcraft:biome_extract:1>.withTag({biomeKey: "thaumcraft:magical_forest"}),<enderio:item_alloy_ingot>],[<minecraft:enchanting_table>,<extrautils2:terraformer:9>,<minecraft:enchanting_table>],[<enderio:item_alloy_ingot>,<evilcraft:biome_extract:1>.withTag({biomeKey: "thaumcraft:magical_forest"}),<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extrautils2:terraformer:8>, [[<enderio:item_alloy_endergy_ingot:3>,<evilcraft:biome_extract:1>.withTag({biomeKey: "thaumcraft:magical_forest"}),<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:condensed_vis_crystal_auram>,<extrautils2:terraformer:9>,<contenttweaker:condensed_vis_crystal_auram>],[<enderio:item_alloy_endergy_ingot:3>,<evilcraft:biome_extract:1>.withTag({biomeKey: "thaumcraft:magical_forest"}),<enderio:item_alloy_endergy_ingot:3>]]);
+
+# Antenna
+recipes.remove(<extrautils2:terraformer:1>);
+recipes.addShaped(<extrautils2:terraformer:1>, [[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>],[<contenttweaker:hyper_diamond_block>,<extrautils2:terraformer:9>,<contenttweaker:hyper_diamond_block>],[<contenttweaker:hyper_diamond_block>,<enderio:block_enhanced_wireless_charger>,<contenttweaker:hyper_diamond_block>]]);
 
 # Wireless RF Battery
 recipes.remove(<extrautils2:powerbattery>);

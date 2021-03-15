@@ -308,4 +308,8 @@ recipes.addShaped(<evilcraft:spikey_claws>, [[<evilcraft:dark_spike>,<evilcraft:
 # Blood Orb -> Evil Blood Orb
 <evilcraft:blood_orb:1>.displayName = "Evil Blood Orb";
 
+# Biome Extract Bottle
+recipes.remove(<evilcraft:biome_extract>);
+recipes.addShaped(<evilcraft:biome_extract>, [[null,<evilcraft:dark_gem>,null],[<astralsorcery:itemcraftingcomponent:3>,null,<astralsorcery:itemcraftingcomponent:3>],[<astralsorcery:itemcraftingcomponent:3>,<thaumcraft:jar_normal>,<astralsorcery:itemcraftingcomponent:3>]]);
+
 print("ENDING EvilCraft.zs");
