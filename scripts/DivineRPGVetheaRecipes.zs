@@ -78,7 +78,7 @@ recipes.addShaped(<minecraft:sand> * 2, [[null,<divinerpg:dream_dirt>,null],[<di
 recipes.addShaped(<minecraft:gravel> * 2, [[<divinerpg:dream_dirt>,<divinerpg:dream_stone>,<divinerpg:dream_dirt>],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>],[<divinerpg:dream_dirt>,<divinerpg:dream_stone>,<divinerpg:dream_dirt>]]);
 
 # Clay
-recipes.addShaped(<minecraft:clay_ball> * 8, [[<divinerpg:dream_dirt>,<divinerpg:dream_dirt>,<divinerpg:dream_dirt>],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[<divinerpg:dream_dirt>,<divinerpg:dream_dirt>,<divinerpg:dream_dirt>]]);
+recipes.addShaped(<minecraft:clay_ball> * 8, [[null,<divinerpg:dream_dirt>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<divinerpg:dream_dirt>,null]]);
 
 # Water Bucket
 recipes.addShaped(<minecraft:water_bucket>, [[null,<divinerpg:firelight>,null],[<divinerpg:firelight>,<minecraft:bucket>,<divinerpg:firelight>],[null,<divinerpg:firelight>,null]]);
@@ -93,16 +93,16 @@ recipes.addShaped(<minecraft:glowstone> * 2, [[<divinerpg:fire_crystal>,<diviner
 recipes.addShaped(<minecraft:brown_mushroom> * 4, [[null,<contenttweaker:planks_mintwood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_mintwood>,null]]);
 
 # Red Mushroom
-recipes.addShaped(<minecraft:red_mushroom> * 4, [[null,<contenttweaker:planks_mintwood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_mintwood>,null]]);
+recipes.addShaped(<minecraft:red_mushroom> * 4, [[null,<contenttweaker:planks_firewood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_firewood>,null]]);
 
 # Biodiesel Bucket
 recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}), [[null,<divinerpg:crypt_wall>,null],[<divinerpg:clean_pearls>,<minecraft:water_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:crypt_wall>,null]]);
 
 # Blast Brick
-recipes.addShaped(<immersiveengineering:stone_decoration:1>, [[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:1> * 2, [[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>]]);
 
 # Coke Brick
-recipes.addShaped(<immersiveengineering:stone_decoration>, [[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration> * 2, [[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>]]);
 
 # Blaze Rod
 recipes.addShaped(<minecraft:blaze_rod> * 9, [[null,<divinerpg:clean_pearls>,null],[<divinerpg:clean_pearls>,<minecraft:lava_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:clean_pearls>,null]]);
@@ -127,5 +127,41 @@ var all_pearls = [<divinerpg:dirty_pearls>,<divinerpg:clean_pearls>,<divinerpg:p
 for p in all_pearls {
 	recipes.addShaped(<enderio:item_soul_vial>, [[<minecraft:soul_sand>,<minecraft:soul_sand>,<minecraft:soul_sand>],[<minecraft:glass>,p,<minecraft:glass>],[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>]]);
 }
+
+# Red Pigment
+recipes.addShapeless(<thermalfoundation:dye:1>, [<divinerpg:polished_pearls>,<divinerpg:acid>]);
+recipes.addShapeless(<thermalfoundation:dye:1>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<divinerpg:acid>]);
+
+# Yellow Pigment
+recipes.addShapeless(<thermalfoundation:dye:11>, [<divinerpg:clean_pearls>,<divinerpg:acid>]);
+recipes.addShapeless(<thermalfoundation:dye:11>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}),<divinerpg:acid>]);
+
+# Black Pigment
+recipes.addShapeless(<thermalfoundation:dye:0>, [<minecraft:obsidian>,<divinerpg:acid>]);
+recipes.addShapeless(<thermalfoundation:dye:0>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}),<divinerpg:acid>]);
+
+# White Pigment
+recipes.addShapeless(<thermalfoundation:dye:15>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}),<divinerpg:acid>]);
+
+# Brown Pigment
+recipes.addShapeless(<thermalfoundation:dye:3>, [<minecraft:soul_sand>,<divinerpg:acid>]);
+
+# Green Pigment
+recipes.addShapeless(<thermalfoundation:dye:2>, [<divinerpg:dirty_pearls>,<divinerpg:acid>]);
+
+# Purple Pigment
+recipes.addShapeless(<thermalfoundation:dye:5>, [<divinerpg:shiny_pearls>,<divinerpg:acid>]);
+
+# Light Blue Pigment
+recipes.addShapeless(<thermalfoundation:dye:12>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<divinerpg:acid>]);
+
+# Lime Pigment
+recipes.addShapeless(<thermalfoundation:dye:10>, [<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),<divinerpg:acid>]);
+
+# Blue Pigment
+recipes.addShapeless(<thermalfoundation:dye:4>, [<divinerpg:luna_bricks>,<divinerpg:acid>]);
+
+# Engineer's Hammer
+recipes.addShapedMirrored(<immersiveengineering:tool>, [[null,<divinerpg:luna_bricks>,<thermalfoundation:material:32>],[null,<lightningcraft:rod:6>,<divinerpg:luna_bricks>],[<lightningcraft:rod:6>,null,null]]);
 
 print("ENDING DivineRPGVetheaRecipes.zs");

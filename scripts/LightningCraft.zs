@@ -125,7 +125,7 @@ recipes.remove(<lightningcraft:wireless_block:3>);
 recipes.addShaped(<lightningcraft:wireless_block:3>, [[null,<lightningcraft:air_terminal:7>,null],[<lightningcraft:material:4>,<extendedcrafting:frame>,<lightningcraft:material:4>],[<minecraft:gold_block>,<enderutilities:energy_bridge:1>,<minecraft:gold_block>]]);
 
 # Demon Blood
-LightningInfusion.remove(<lightningcraft:material:5>);
+LightningCrusher.remove(<lightningcraft:material:5>);
 <lightningcraft:material:5>.addTooltip(format.white("Dropped by Demon Soliders spawning"));
 <lightningcraft:material:5>.addTooltip(format.white("naturally in the Nether."));
 
@@ -314,7 +314,7 @@ recipes.addShaped(<lightningcraft:elec_legs>, [[<lightningcraft:ingot>,<lightnin
 recipes.remove(<lightningcraft:elec_boots>);
 recipes.addShaped(<lightningcraft:elec_boots>, [[<lightningcraft:ingot>,null,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_boots>,<lightningcraft:ingot>]]);
 
-function addLightningCraftToolAndArmorRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient, new_rod as IIngredient, new_plate as IIngredient) {
+function addLightningCraftToolRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient, new_rod as IIngredient, new_plate as IIngredient) {
 	
 	# Skyfather & Mystic Sword
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"));
@@ -340,28 +340,37 @@ function addLightningCraftToolAndArmorRecipes(new_item_str as string, old_item_s
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
 
-	# Skyfather & Mystic Helmet
+}
+
+function addLightningCraftArmorRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient) {
+
+	# Mystic Helmet
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_helm"),new_material]]);
 
-	# Skyfather & Mystic Chestplate
+	# Mystic Chestplate
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"), [[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_chest"),new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
 
-	# Skyfather & Mystic Leggings
+	# Mystic Leggings
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_legs"),new_material],[new_material,null,new_material]]);
 
-	# Skyfather & Mystic Boots
+	# Mystic Boots
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"), [[new_material,null,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_boots"),new_material]]);
 
 }
 
 # Skyfather Tools & Armor
-addLightningCraftToolAndArmorRecipes("sky", "elec", <lightningcraft:ingot:1>, <lightningcraft:rod:8>, <lightningcraft:plate:8>);
+addLightningCraftToolRecipes("sky", "elec", <lightningcraft:ingot:1>, <lightningcraft:rod:8>, <lightningcraft:plate:8>);
+addLightningCraftArmorRecipes("sky", "elec", <lightningcraft:ingot:1>);
 
-# Skyfather Tools & Armor
-addLightningCraftToolAndArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>, <lightningcraft:rod:9>, <lightningcraft:plate:9>);
+# Mystic Armor
+LightningInfusion.remove(<lightningcraft:mystic_helm>);
+LightningInfusion.remove(<lightningcraft:mystic_chest>);
+LightningInfusion.remove(<lightningcraft:mystic_legs>);
+LightningInfusion.remove(<lightningcraft:mystic_boots>);
+addLightningCraftArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>);
 
 print("ENDING LightningCraft.zs");

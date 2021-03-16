@@ -97,6 +97,6 @@ recipes.addShaped(<bigreactors:turbinefluidport>, [[<bigreactors:turbinehousing>
 
 # Turbine Redstone Flux Power Tap (Legacy)
 recipes.remove(<bigreactors:turbinepowertaprf>);
-recipes.addShaped(<bigreactors:turbinepowertaprf>, [[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>],[<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>],[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>]]);
+recipes.addShaped(<bigreactors:turbinepowertaprf>, [[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>],[<contenttweaker:fluxed_electrum_block>,<thermaldynamics:duct_0:5>,<contenttweaker:fluxed_electrum_block>],[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>]]);
 
 print("ENDING ExtremeReactors.zs");
