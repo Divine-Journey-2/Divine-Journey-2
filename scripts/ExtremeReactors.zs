@@ -46,6 +46,10 @@ recipes.addShaped(<bigreactors:reactorfuelrod>, [[<bigreactors:reactorcasing>,<l
 recipes.remove(<bigreactors:reactorredstoneport>);
 recipes.addShaped(<bigreactors:reactorredstoneport>, [[<bigreactors:reactorcasing>,<enderio:block_alloy:3>,<bigreactors:reactorcasing>],[<enderio:block_alloy:3>,<lightningcraft:ingot:2>,<enderio:block_alloy:3>],[<bigreactors:reactorcasing>,<enderio:block_alloy:3>,<bigreactors:reactorcasing>]]);
 
+# Reactor Control Rod (Legacy)
+recipes.remove(<bigreactors:reactorcontrolrod>);
+recipes.addShaped(<bigreactors:reactorcontrolrod>, [[<bigreactors:reactorcasing>,<lightningcraft:ingot>,<bigreactors:reactorcasing>],[<integrateddynamics:logic_programmer>,<enderio:block_alloy:3>,<integrateddynamics:logic_programmer>],[<bigreactors:reactorcasing>,<lightningcraft:ingot>,<bigreactors:reactorcasing>]]);
+
 # Extreme Wrench
 recipes.remove(<bigreactors:wrench>);
 recipes.addShapedMirrored(<bigreactors:wrench>, [[null,<contenttweaker:mystical_iron_ingot>,null],[null,<botania:manaresource:4>,<contenttweaker:mystical_iron_ingot>],[<botania:manaresource:4>,null,null]]);

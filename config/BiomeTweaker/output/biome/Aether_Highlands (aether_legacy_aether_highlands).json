@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "COLD",
     "DRY",
-    "VOID",
     "MAGICAL",
-    "PLAINS"
+    "PLAINS",
+    "VOID"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "SPOOKY",
     "BIRCH_TREES",
-    "FOREST",
     "DENSE",
+    "FOREST",
     "THEMED_TREES"
   ],
   "BiomeManager Entries": {

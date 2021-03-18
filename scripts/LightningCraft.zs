@@ -225,6 +225,7 @@ recipes.remove(<lightningcraft:under_tnt:2>);
 # Tx/Rx Link Tag
 recipes.remove(<lightningcraft:wireless_marker>);
 recipes.addShaped(<lightningcraft:wireless_marker>, [[<lightningcraft:dust>,<lightningcraft:dust>,<lightningcraft:dust>],[<minecraft:paper>,<lightningcraft:material:4>,<minecraft:paper>],[<lightningcraft:dust>,<lightningcraft:dust>,<lightningcraft:dust>]]);
+recipes.addShapeless(<lightningcraft:wireless_marker>, [<lightningcraft:wireless_marker>]);
 
 # Lightning Battery (Tier 1)
 recipes.remove(<lightningcraft:battery>);

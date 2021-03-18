@@ -96,7 +96,7 @@ recipes.addShaped(<minecraft:brown_mushroom> * 4, [[null,<contenttweaker:planks_
 recipes.addShaped(<minecraft:red_mushroom> * 4, [[null,<contenttweaker:planks_firewood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_firewood>,null]]);
 
 # Biodiesel Bucket
-recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}), [[null,<divinerpg:crypt_wall>,null],[<divinerpg:clean_pearls>,<minecraft:water_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:crypt_wall>,null]]);
+recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}), [[null,<divinerpg:crypt_wall>,null],[<divinerpg:clean_pearls>,<minecraft:water_bucket>.noReturn(),<divinerpg:clean_pearls>],[null,<divinerpg:crypt_wall>,null]]);
 
 # Blast Brick
 recipes.addShaped(<immersiveengineering:stone_decoration:1> * 2, [[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<thermalfoundation:material:162>,<minecraft:brick>,<thermalfoundation:material:162>]]);
@@ -105,7 +105,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1> * 2, [[<thermalfound
 recipes.addShaped(<immersiveengineering:stone_decoration> * 2, [[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>]]);
 
 # Blaze Rod
-recipes.addShaped(<minecraft:blaze_rod> * 9, [[null,<divinerpg:clean_pearls>,null],[<divinerpg:clean_pearls>,<minecraft:lava_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:clean_pearls>,null]]);
+recipes.addShaped(<minecraft:blaze_rod> * 8, [[null,<divinerpg:clean_pearls>,null],[<divinerpg:clean_pearls>,<minecraft:lava_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:clean_pearls>,null]]);
 
 # Ender Pearl
 recipes.addShapeless(<minecraft:ender_pearl>, [<divinerpg:dirty_pearls>,<divinerpg:acid>,<minecraft:emerald>]);
@@ -113,11 +113,10 @@ recipes.addShapeless(<minecraft:ender_pearl>, [<divinerpg:dirty_pearls>,<diviner
 # Melon
 recipes.addShapeless(<minecraft:melon>, [<divinerpg:dream_melon>]);
 
-# Eye of Ender
-recipes.addShapeless(<minecraft:ender_eye>, [<minecraft:ender_pearl>,<minecraft:blaze_powder>,<minecraft:speckled_melon>,<divinerpg:shiny_pearls>]);
+# Eye of the Nightmare recipe is in ContentTweakerRecipes.zs
 
 # Ender Chest (EnderStorage)
-recipes.addShaped(<enderstorage:ender_storage>, [[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>],[<minecraft:ender_chest>,<mekanism:basicblock:8>,<minecraft:ender_chest>],[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>]]);
+recipes.addShaped(<enderstorage:ender_storage>, [[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>],[<contenttweaker:eye_of_the_nightmare>,<mekanism:basicblock:8>,<contenttweaker:eye_of_the_nightmare>],[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>]]);
 
 # Soul Sand
 recipes.addShaped(<minecraft:soul_sand> * 3, [[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>],[<minecraft:sand>,<minecraft:lava_bucket>,<minecraft:sand>],[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>]]);
@@ -163,5 +162,17 @@ recipes.addShapeless(<thermalfoundation:dye:4>, [<divinerpg:luna_bricks>,<divine
 
 # Engineer's Hammer
 recipes.addShapedMirrored(<immersiveengineering:tool>, [[null,<divinerpg:luna_bricks>,<thermalfoundation:material:32>],[null,<lightningcraft:rod:6>,<divinerpg:luna_bricks>],[<lightningcraft:rod:6>,null,null]]);
+
+# Crypt Wall
+<divinerpg:crypt_wall>.addTooltip(format.white("Found on all layers on Vethea. Simply"));
+<divinerpg:crypt_wall>.addTooltip(format.white("mine up the walls of these brown dungeons."));
+
+# Heliosis Lump
+<divinerpg:heliosis_lump>.addTooltip(format.white("Found on the top layer on Vethea,"));
+<divinerpg:heliosis_lump>.addTooltip(format.white("in special (brown) dungeons."));
+
+# Dream Melon
+<divinerpg:dream_melon>.addTooltip(format.white("Found inside Chests in small Crypts"));
+<divinerpg:dream_melon>.addTooltip(format.white("on the bottom layer of Vethea."));
 
 print("ENDING DivineRPGVetheaRecipes.zs");

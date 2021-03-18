@@ -845,5 +845,7 @@ lightning_charge.register();
 var mystical_iron_ingot = VanillaFactory.createItem("mystical_iron_ingot");
 mystical_iron_ingot.glowing = true;
 mystical_iron_ingot.register();
+var eye_of_the_nightmare = VanillaFactory.createItem("eye_of_the_nightmare");
+eye_of_the_nightmare.register();
 
 print("ENDING ContentTweakerItems.zs");

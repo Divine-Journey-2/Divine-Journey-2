@@ -1138,4 +1138,7 @@ recipes.addShapeless(<contenttweaker:mystical_iron_ingot> * 9, [<contenttweaker:
 # Mystical Iron Block
 recipes.addShaped(<contenttweaker:mystical_iron_block>, [[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>],[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>],[<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>,<contenttweaker:mystical_iron_ingot>]]);
 
+# Eye of the Nightmare
+recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pearl>,<minecraft:blaze_powder>,<minecraft:speckled_melon>,<divinerpg:shiny_pearls>]);
+
 print("ENDING ContentTweakerRecipes.zs");
