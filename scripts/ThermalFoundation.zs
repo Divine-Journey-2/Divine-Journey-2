@@ -105,4 +105,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> 
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:165>); 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:165> * 4, <thermalfoundation:material:128> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:redstone> * 10], "Alloying");
 
+# Fluxed Aqua-Chow
+<thermalfoundation:bait:2>.addTooltip(format.white("To obtain, charge Rich Aqua-Chow in an Energetic Infuser."));
+
 print("ENDING ThermalFoundation.zs");

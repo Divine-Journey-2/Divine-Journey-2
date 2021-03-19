@@ -847,5 +847,8 @@ mystical_iron_ingot.glowing = true;
 mystical_iron_ingot.register();
 var eye_of_the_nightmare = VanillaFactory.createItem("eye_of_the_nightmare");
 eye_of_the_nightmare.register();
+var antimatter_cluster = VanillaFactory.createItem("antimatter_cluster");
+antimatter_cluster.glowing = true;
+antimatter_cluster.register();
 
 print("ENDING ContentTweakerItems.zs");

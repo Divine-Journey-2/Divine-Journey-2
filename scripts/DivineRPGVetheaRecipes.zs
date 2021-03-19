@@ -175,4 +175,8 @@ recipes.addShapedMirrored(<immersiveengineering:tool>, [[null,<divinerpg:luna_br
 <divinerpg:dream_melon>.addTooltip(format.white("Found inside Chests in small Crypts"));
 <divinerpg:dream_melon>.addTooltip(format.white("on the bottom layer of Vethea."));
 
+# Luna Brick
+<divinerpg:luna_bricks>.addTooltip(format.white("Found on the top layer of Vethea,"));
+<divinerpg:luna_bricks>.addTooltip(format.white("in small rectangular arenas."));
+
 print("ENDING DivineRPGVetheaRecipes.zs");
