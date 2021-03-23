@@ -847,8 +847,10 @@ mystical_iron_ingot.glowing = true;
 mystical_iron_ingot.register();
 var eye_of_the_nightmare = VanillaFactory.createItem("eye_of_the_nightmare");
 eye_of_the_nightmare.register();
-var antimatter_cluster = VanillaFactory.createItem("antimatter_cluster");
-antimatter_cluster.glowing = true;
-antimatter_cluster.register();
+var shattered_mystical_iron_crystal = VanillaFactory.createItem("shattered_mystical_iron_crystal");
+shattered_mystical_iron_crystal.glowing = true;
+shattered_mystical_iron_crystal.register();
+var sparkling_aquamarine = VanillaFactory.createItem("sparkling_aquamarine");
+sparkling_aquamarine.register();
 
 print("ENDING ContentTweakerItems.zs");

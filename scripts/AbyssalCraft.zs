@@ -552,8 +552,6 @@ add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredsacrific
 # Dreadlands Energy Container
 add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer:2>, <abyssalcraft:tieredenergycontainer:1>, "econDLupgrade");
 
-<ore:engravedAbyssalCoin>.addItems([<abyssalcraft:cthulhucoin>,<abyssalcraft:eldercoin>,<abyssalcraft:jzaharcoin>,<abyssalcraft:hasturcoin>,<abyssalcraft:azathothcoin>,<abyssalcraft:nyarlathotepcoin>,<abyssalcraft:yogsothothcoin>,<abyssalcraft:shubniggurathcoin>]);
-
 # Omothol Necronomicon
 recipes.remove(<abyssalcraft:necronomicon_omt>);
 recipes.addShaped("abyssalcraft_necronomicon_upgrade3", <abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>.marked("necronomicon"),<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]],

@@ -42,6 +42,7 @@ import crafttweaker.world.IWorld;
 import crafttweaker.world.IBiome;
 import crafttweaker.recipes.ICraftingInfo;
 import crafttweaker.util.Position3f;
+import mods.inworldcrafting.ExplosionCrafting;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1131,8 +1132,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:undermeld>, <ligh
 EIOAlloySmelter.addRecipe(<contenttweaker:undermeld>, [<lightningcraft:corrupt_stone>, <lightningcraft:light_block>, <lightningcraft:under_sand>], 36000);
 
 # Mystical Iron Ingot
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:mystical_iron_ingot>, <lightningcraft:material:14>, null, 200, 400, [<extendedcrafting:material>, <bewitchment:cold_iron_ingot>]);
-EIOAlloySmelter.addRecipe(<contenttweaker:mystical_iron_ingot>, [<lightningcraft:material:14>, <extendedcrafting:material>, <bewitchment:cold_iron_ingot>], 24000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:mystical_iron_ingot> * 3, <lightningcraft:material:14>, null, 200, 400, [<extendedcrafting:material>, <bewitchment:cold_iron_ingot>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:mystical_iron_ingot> * 3, [<lightningcraft:material:14>, <extendedcrafting:material>, <bewitchment:cold_iron_ingot>], 24000);
 recipes.addShapeless(<contenttweaker:mystical_iron_ingot> * 9, [<contenttweaker:mystical_iron_block>]);
 
 # Mystical Iron Block
@@ -1140,5 +1141,12 @@ recipes.addShaped(<contenttweaker:mystical_iron_block>, [[<contenttweaker:mystic
 
 # Eye of the Nightmare
 recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pearl>,<minecraft:blaze_powder>,<minecraft:speckled_melon>,<divinerpg:shiny_pearls>]);
+
+# Shattered Mystical Iron Crystal
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal>, <contenttweaker:mystical_iron_ingot>);
+ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
+
+# Sparkling Aquamarine
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sparkling_aquamarine>, <astralsorcery:itemcraftingcomponent>, <liquid:blutonium> * 72, 6000);
 
 print("ENDING ContentTweakerRecipes.zs");

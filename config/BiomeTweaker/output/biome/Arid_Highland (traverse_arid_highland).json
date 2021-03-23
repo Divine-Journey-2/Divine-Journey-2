@@ -20,11 +20,11 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
     "DRY",
-    "MOUNTAIN",
+    "SPARSE",
     "HOT",
-    "SPARSE"
+    "MOUNTAIN",
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "DESERT Weights": [

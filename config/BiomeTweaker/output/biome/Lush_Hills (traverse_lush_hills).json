@@ -21,9 +21,9 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "LUSH",
-    "HILLS",
+    "SPARSE",
     "WET",
-    "SPARSE"
+    "HILLS"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

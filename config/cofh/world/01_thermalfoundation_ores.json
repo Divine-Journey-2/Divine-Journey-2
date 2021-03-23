@@ -386,8 +386,9 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
-					7
-					-11325
+					7,
+					-11325,
+					-9999
 				]
 			}
 		},
@@ -409,8 +410,9 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
-					7
-					-11325
+					7,
+					-11325,
+					-9999
 				]
 			}
 		},
@@ -432,8 +434,9 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
-					7
-					-11325
+					7,
+					-11325,
+					-9999
 				]
 			}
 		},
@@ -455,9 +458,35 @@
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
-					0
-					7
-					-11325
+					0,
+					7,
+					-11325,
+					-9999
+				]
+			}
+		},
+		"aquamarine": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "astralsorcery:blockcustomsandore"
+				},
+				"material": "minecraft:sand",
+				"cluster-size": 8
+			},
+			"cluster-count": 12,
+			"min-height": 1,
+			"max-height": 64,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0,
+					7,
+					-11325,
+					-9999
 				]
 			}
 		}

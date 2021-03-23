@@ -58,4 +58,7 @@ allCertus.addItems([<appliedenergistics2:material>, <appliedenergistics2:materia
 # Thaumcraft aspects
 global allThaumcraftAspects as string[] = ["aer", "terra", "ignis", "aqua", "ordo", "perditio", "vacuos", "lux", "motus", "gelum", "vitreus", "metallum", "victus", "mortuus", "potentia", "permutatio", "praecantatio", "auram", "alkimia", "vitium", "tenebrae", "alienis", "volatus", "herba", "instrumentum", "fabrico", "machina", "vinculum", "spiritus", "cognitio", "sensus", "aversio", "praemunio", "desiderium", "exanimis", "bestia", "humanus", "sol", "luna", "stellae", "diabolus"];
 
+# AbyssalCraft Engraved Coins
+<ore:engravedAbyssalCoin>.addItems([<abyssalcraft:cthulhucoin>,<abyssalcraft:eldercoin>,<abyssalcraft:jzaharcoin>,<abyssalcraft:hasturcoin>,<abyssalcraft:azathothcoin>,<abyssalcraft:nyarlathotepcoin>,<abyssalcraft:yogsothothcoin>,<abyssalcraft:shubniggurathcoin>]);
+
 print("ENDING GlobalVariables.zs");
