@@ -61,4 +61,7 @@ global allThaumcraftAspects as string[] = ["aer", "terra", "ignis", "aqua", "ord
 # AbyssalCraft Engraved Coins
 <ore:engravedAbyssalCoin>.addItems([<abyssalcraft:cthulhucoin>,<abyssalcraft:eldercoin>,<abyssalcraft:jzaharcoin>,<abyssalcraft:hasturcoin>,<abyssalcraft:azathothcoin>,<abyssalcraft:nyarlathotepcoin>,<abyssalcraft:yogsothothcoin>,<abyssalcraft:shubniggurathcoin>]);
 
+# Astral Sorcery Crystals
+global as_crystal as IIngredient = <astralsorcery:itemrockcrystalsimple> | <astralsorcery:itemtunedrockcrystal> | <astralsorcery:itemcelestialcrystal> | <astralsorcery:itemtunedcelestialcrystal>;
+
 print("ENDING GlobalVariables.zs");

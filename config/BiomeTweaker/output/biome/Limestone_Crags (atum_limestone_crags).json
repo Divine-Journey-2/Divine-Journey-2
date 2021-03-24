@@ -20,10 +20,10 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DRY",
-    "SPARSE",
-    "HOT",
     "ATUM",
+    "SPARSE",
+    "DRY",
+    "HOT",
     "RARE",
     "HILLS",
     "SANDY"
