@@ -22,9 +22,9 @@
   "Dictionary Types": [
     "THEMED_TREES",
     "SUPER_BIRCH_TREES",
-    "DENSE",
-    "RARE",
     "FOREST",
+    "RARE",
+    "DENSE",
     "HILLS"
   ],
   "BiomeManager Entries": {},

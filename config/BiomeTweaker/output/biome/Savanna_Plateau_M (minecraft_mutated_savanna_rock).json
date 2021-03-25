@@ -20,9 +20,9 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPARSE",
-    "DRY",
     "SAVANNA",
+    "DRY",
+    "SPARSE",
     "HOT",
     "RARE",
     "HILLS"

@@ -7,6 +7,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Transposer;
 import mods.astralsorcery.Lightwell;
 import mods.astralsorcery.Utils;
+import mods.astralsorcery.LightTransmutation;
 
 print("STARTING AstralSorcery.zs");
 
@@ -130,14 +131,14 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:sparkling_aquamarine>, <liquid:astralsorcery.liquidstarlight>, 0.4, 1.0, 33737);
 
 # Fosic Resonator
-#mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:itemskyresonator>.withTag({astralsorcery: {}}), 0);
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator");
 mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:itemskyresonator>.withTag({astralsorcery: {}}),
 [[null,null,null,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,null,null],
 [null,null,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,null,null],
 [null,null,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,null,null,null],
 [null,null,null,null,null,null,null],
-[null,<astralsorcery:blockmarble:4>,<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}),<astralsorcery:blockmarble:4>,null],
-[null,<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}),<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,null],
+[null,<astralsorcery:blockmarble:4>,<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}).noReturn(),<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}).noReturn(),<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}).noReturn(),<astralsorcery:blockmarble:4>,null],
+[null,<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,<forge:bucketfilled>.withTag({FluidName: "astralsorcery.liquidstarlight", Amount: 1000}).noReturn(),<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,null],
 [null,null,<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:4>,null,null]]);
 
 # Glass Lens
@@ -149,18 +150,18 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 
 # Looking Glass
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope");
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope", <astralsorcery:itemcraftingcomponent:3>, 350, 100,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope", <astralsorcery:itemhandtelescope>, 350, 100,
 [<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:blockinfusedwood:4>,null,
 <astralsorcery:blockinfusedwood:4>,<thaumcraft:goggles>,<astralsorcery:blockinfusedwood:4>,
 null,<astralsorcery:blockinfusedwood:4>,<contenttweaker:condensed_vis_crystal_desiderium>]);
 
 # Infused Wood Arch
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/infused_wood_arch");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_arch");
 recipes.remove(<astralsorcery:blockinfusedwood:3>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:3> * 3, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<botania:rune:4>,<astralsorcery:blockinfusedwood>]]);
 
 # Engraved Infused Wood
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/infused_wood_engraved");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_engraved");
 recipes.remove(<astralsorcery:blockinfusedwood:4>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:4> * 4, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<ore:engravedAbyssalCoin>,<astralsorcery:blockinfusedwood>],[null,<astralsorcery:blockinfusedwood>,null]]);
 
@@ -172,7 +173,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 <contenttweaker:enriched_gum>,<astralsorcery:blockinfusedwood>,<contenttweaker:enriched_gum>]);
 
 # Infused Wood Column
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/infused_wood_column");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_column");
 recipes.remove(<astralsorcery:blockinfusedwood:2>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:2> * 2, [[<astralsorcery:blockinfusedwood>],[<thaumicaugmentation:stone:8>],[<astralsorcery:blockinfusedwood>]]);
 
@@ -210,5 +211,48 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 [<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,
 <astralsorcery:itemusabledust>,<torchmaster:feral_flare_lantern>,<astralsorcery:itemusabledust>,
 <astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
+
+# Starlight Crafting Altar
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2", <astralsorcery:blockworldilluminator>, 850, 100,
+[<astralsorcery:blockmarble:2>,null,<astralsorcery:blockmarble:2>,
+<astralsorcery:blockmarble:6>,<contenttweaker:mystical_iron_block>,<astralsorcery:blockmarble:6>,
+<astralsorcery:blockmarble:2>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:blockmarble:2>]);
+
+# Telescope
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/telescope");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/telescope", <astralsorcery:blockmachine>, 800, 300,
+[<contenttweaker:condensed_vis_crystal_sol>,<astralsorcery:blockinfusedwood:5>,<lightningcraft:rod:9>,
+<astralsorcery:blockinfusedwood:5>,<contenttweaker:condensed_vis_crystal_fabrico>,<astralsorcery:blockinfusedwood:5>,
+<lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:5>,<astralsorcery:itemusabledust>,
+<astralsorcery:itemhandtelescope>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
+
+# Linking Tool
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/tool_linking", <astralsorcery:blockmachine>, 950, 300,
+[<astralsorcery:blockinfusedwood:3>,null,<contenttweaker:sparkling_aquamarine>,
+<astralsorcery:blockinfusedwood:3>,Utils.getCrystalORIngredient(false, false),null,
+<lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,
+null,<contenttweaker:sparkling_aquamarine>,<astralsorcery:blockinfusedwood:4>,null]);
+
+# Lens
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/crystallens");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/crystallens", <astralsorcery:blockmachine>, 400, 300,
+[<astralsorcery:blockinfusedwood:4>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:blockinfusedwood:4>,
+<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
+null,null,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]);
+
+# Starmetal Ore
+mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
+mods.astralsorcery.LightTransmutation.addTransmutation(<contenttweaker:ludicrous_ore>, <astralsorcery:blockcustomore:1>, 20);
+
+# Scroll of Written Expertise
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/knowledgeshare");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/knowledgeshare", <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {}}), 400, 800,
+[<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:5>,<astralsorcery:itemcraftingcomponent:2>,
+<astralsorcery:itemcraftingcomponent:5>,<contenttweaker:condensed_vis_crystal_volatus>,<astralsorcery:itemcraftingcomponent:5>,
+<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:5>,<astralsorcery:itemcraftingcomponent:2>,
+<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
 print("ENDING AstralSorcery.zs");

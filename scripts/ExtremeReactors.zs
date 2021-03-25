@@ -103,4 +103,8 @@ recipes.addShaped(<bigreactors:turbinefluidport>, [[<bigreactors:turbinehousing>
 recipes.remove(<bigreactors:turbinepowertaprf>);
 recipes.addShaped(<bigreactors:turbinepowertaprf>, [[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>],[<contenttweaker:fluxed_electrum_block>,<thermaldynamics:duct_0:5>,<contenttweaker:fluxed_electrum_block>],[<bigreactors:turbinehousing>,<contenttweaker:fluxed_electrum_block>,<bigreactors:turbinehousing>]]);
 
+# Ludicrite Block
+recipes.removeShaped(<bigreactors:blockludicrite>);
+recipes.addShaped(<bigreactors:blockludicrite>, [[<bigreactors:ingotblutonium>,<botania:manaresource:7>,<bigreactors:ingotblutonium>],[<botania:manaresource:7>,<enderutilities:enderpart:17>,<botania:manaresource:7>],[<bigreactors:ingotblutonium>,<botania:manaresource:7>,<bigreactors:ingotblutonium>]]);
+
 print("ENDING ExtremeReactors.zs");

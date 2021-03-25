@@ -1149,4 +1149,7 @@ ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_cry
 # Sparkling Aquamarine
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sparkling_aquamarine>, <astralsorcery:itemcraftingcomponent>, <liquid:blutonium> * 72, 6000);
 
+# Ludicrous Ore
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ludicrous_ore>, <minecraft:stone>, <bigreactors:ingotludicrite> * 3, 8000);
+
 print("ENDING ContentTweakerRecipes.zs");

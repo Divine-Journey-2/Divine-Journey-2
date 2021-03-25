@@ -465,4 +465,12 @@ mystical_iron_block.setToolLevel(1);
 mystical_iron_block.setBlockSoundType(<soundtype:metal>);
 mystical_iron_block.register();
 
+var ludicrous_ore = VanillaFactory.createBlock("ludicrous_ore", <blockmaterial:rock>);
+ludicrous_ore.setBlockHardness(3.0);
+ludicrous_ore.setBlockResistance(3.0);
+ludicrous_ore.setToolClass("pickaxe");
+ludicrous_ore.setToolLevel(2);
+ludicrous_ore.setBlockSoundType(<soundtype:stone>);
+ludicrous_ore.register();
+
 print("ENDING ContentTweakerBlocks.zs");
