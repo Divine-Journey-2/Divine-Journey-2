@@ -8,6 +8,7 @@ import mods.thermalexpansion.Transposer;
 import mods.astralsorcery.Lightwell;
 import mods.astralsorcery.Utils;
 import mods.astralsorcery.LightTransmutation;
+import mods.astralsorcery.StarlightInfusion;
 
 print("STARTING AstralSorcery.zs");
 
@@ -65,7 +66,9 @@ recipes.addShaped(<astralsorcery:blockmarble:6> * 4, [[null,<ore:stoneMarble>,nu
 mods.chisel.Carving.removeGroup("sooty_marble");
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_black_raw");
 recipes.remove(<astralsorcery:blockblackmarble>);
-mods.thermalexpansion.Transposer.addFillRecipe(<astralsorcery:blockblackmarble>, <ore:stoneMarble>.firstItem, <liquid:skyfather> * 18, 2000);
+for m in <ore:stoneMarble>.items {
+	mods.thermalexpansion.Transposer.addFillRecipe(<astralsorcery:blockblackmarble>, m, <liquid:skyfather> * 18, 2000);
+}
 
 # Sooty Marble Bricks
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/black_marble_bricks");
@@ -147,6 +150,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 [<ore:paneGlassWhite>,<mekanism:polyethene:2>,<ore:paneGlassWhite>,
 <mekanism:polyethene:2>,<contenttweaker:sparkling_aquamarine>,<mekanism:polyethene:2>,
 <ore:paneGlassWhite>,<mekanism:polyethene:2>,<ore:paneGlassWhite>]);
+mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:itemcraftingcomponent:3>);
 
 # Looking Glass
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope");
@@ -156,12 +160,12 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 null,<astralsorcery:blockinfusedwood:4>,<contenttweaker:condensed_vis_crystal_desiderium>]);
 
 # Infused Wood Arch
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_arch");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/infused_wood_arch");
 recipes.remove(<astralsorcery:blockinfusedwood:3>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:3> * 3, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<botania:rune:4>,<astralsorcery:blockinfusedwood>]]);
 
 # Engraved Infused Wood
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_engraved");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/infused_wood_engraved");
 recipes.remove(<astralsorcery:blockinfusedwood:4>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:4> * 4, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<ore:engravedAbyssalCoin>,<astralsorcery:blockinfusedwood>],[null,<astralsorcery:blockinfusedwood>,null]]);
 
@@ -173,7 +177,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 <contenttweaker:enriched_gum>,<astralsorcery:blockinfusedwood>,<contenttweaker:enriched_gum>]);
 
 # Infused Wood Column
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/infused_wood_column");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/infused_wood_column");
 recipes.remove(<astralsorcery:blockinfusedwood:2>);
 recipes.addShaped(<astralsorcery:blockinfusedwood:2> * 2, [[<astralsorcery:blockinfusedwood>],[<thaumicaugmentation:stone:8>],[<astralsorcery:blockinfusedwood>]]);
 
@@ -186,7 +190,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 
 # Spectral Relay
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/attunementrelay");
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/attunementrelay", <astralsorcery:blockmachine:1>, 250, 100,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/attunementrelay", <astralsorcery:blockattunementrelay>, 250, 100,
 [null,<astralsorcery:itemcraftingcomponent:3>,null,
 <bewitchment:spectral_dust>,<actuallyadditions:block_laser_relay_extreme>,<bewitchment:spectral_dust>,
 <astralsorcery:blockinfusedwood>,<astralsorcery:blockinfusedwood>,<astralsorcery:blockinfusedwood>]);
@@ -214,14 +218,14 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 
 # Starlight Crafting Altar
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2");
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2", <astralsorcery:blockworldilluminator>, 850, 100,
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier2", <astralsorcery:blockaltar:1>, 850, 100,
 [<astralsorcery:blockmarble:2>,null,<astralsorcery:blockmarble:2>,
 <astralsorcery:blockmarble:6>,<contenttweaker:mystical_iron_block>,<astralsorcery:blockmarble:6>,
 <astralsorcery:blockmarble:2>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:blockmarble:2>]);
 
 # Telescope
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/telescope");
-mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/telescope", <astralsorcery:blockmachine>, 800, 300,
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/telescope", <astralsorcery:blockmachine>, 850, 100,
 [<contenttweaker:condensed_vis_crystal_sol>,<astralsorcery:blockinfusedwood:5>,<lightningcraft:rod:9>,
 <astralsorcery:blockinfusedwood:5>,<contenttweaker:condensed_vis_crystal_fabrico>,<astralsorcery:blockinfusedwood:5>,
 <lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:5>,<astralsorcery:itemusabledust>,
@@ -229,7 +233,7 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/al
 
 # Linking Tool
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking");
-mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/tool_linking", <astralsorcery:blockmachine>, 950, 300,
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking", <astralsorcery:itemlinkingtool>, 950, 100,
 [<astralsorcery:blockinfusedwood:3>,null,<contenttweaker:sparkling_aquamarine>,
 <astralsorcery:blockinfusedwood:3>,Utils.getCrystalORIngredient(false, false),null,
 <lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,
@@ -237,7 +241,7 @@ null,<contenttweaker:sparkling_aquamarine>,<astralsorcery:blockinfusedwood:4>,nu
 
 # Lens
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/crystallens");
-mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/crystallens", <astralsorcery:blockmachine>, 400, 300,
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/crystallens", <astralsorcery:blocklens>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}), 400, 100,
 [<astralsorcery:blockinfusedwood:4>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:blockinfusedwood:4>,
 <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
 <astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
@@ -249,10 +253,94 @@ mods.astralsorcery.LightTransmutation.addTransmutation(<contenttweaker:ludicrous
 
 # Scroll of Written Expertise
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/knowledgeshare");
-mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/knowledgeshare", <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {}}), 400, 800,
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/knowledgeshare", <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {}}), 400, 100,
 [<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:5>,<astralsorcery:itemcraftingcomponent:2>,
 <astralsorcery:itemcraftingcomponent:5>,<contenttweaker:condensed_vis_crystal_volatus>,<astralsorcery:itemcraftingcomponent:5>,
 <astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:5>,<astralsorcery:itemcraftingcomponent:2>,
 <astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
+
+# Conversion Wand
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_exchange");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_exchange", <astralsorcery:itemexchangewand>, 1000, 100,
+[null,<alchemistry:ingot:30>,<botania:manaresource:22>,
+<astralsorcery:blockmarble:6>,<botania:manaresource:22>,<alchemistry:ingot:30>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,null,
+<astralsorcery:itemcraftingcomponent:1>,<alchemistry:ingot:30>,<lightningcraft:rod:9>,<astralsorcery:itemcraftingcomponent:1>]);
+
+# Formation Wand
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_architect");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_architect", <astralsorcery:itemarchitectwand>, 1000, 100,
+[<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_praecantatio>,<astralsorcery:itemusabledust:1>,
+<astralsorcery:blockmarble:6>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_praecantatio>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<contenttweaker:conducted_impetus>,
+<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust:1>,<lightningcraft:rod:9>,<astralsorcery:itemcraftingcomponent:1>]);
+
+# Impulsion Wand
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_grapple");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_grapple", <astralsorcery:itemgrapplewand>, 1000, 100,
+[null,<astralsorcery:itemcraftingcomponent:1>,<contenttweaker:condensed_vis_crystal_motus>,
+<astralsorcery:blockmarble:6>,<thaumicaugmentation:material:5>,<astralsorcery:itemcraftingcomponent:1>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,null,
+<astralsorcery:itemcraftingcomponent:1>,<contenttweaker:condensed_vis_crystal_motus>,<lightningcraft:rod:9>,<astralsorcery:itemcraftingcomponent:1>]);
+
+# Celestial Gateway
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/gateway");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/gateway", <astralsorcery:blockcelestialgateway>, 1250, 100,
+[<enderio:block_tele_pad>,<astralsorcery:itemcraftingcomponent:1>,<enderio:block_tele_pad>,
+<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemusabledust:1>,<astralsorcery:itemcraftingcomponent:3>,
+<enderio:block_tele_pad>,<astralsorcery:itemcraftingcomponent:1>,<enderio:block_tele_pad>,
+<enderio:block_tele_pad>,<enderio:block_tele_pad>,<enderio:block_tele_pad>,<enderio:block_tele_pad>]);
+
+# Celestial Altar
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier3");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier3", <astralsorcery:blockaltar:2>, 1500, 100,
+[<astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
+<astralsorcery:itemcraftingcomponent:1>,<contenttweaker:condensed_vis_crystal_stellae>,<astralsorcery:itemcraftingcomponent:1>,
+<astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
+<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>]);
+
+# Attunement Altar
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/attunementaltar");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/attunementaltar", <astralsorcery:blockattunementaltar>, 1650, 100,
+[<astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
+<astralsorcery:itemcraftingcomponent:1>,<bigreactors:blockludicrite>,<astralsorcery:itemcraftingcomponent:1>,
+<astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
+<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>,<contenttweaker:conducted_impetus>,
+<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>]);
+
+# Shifting Star
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_shiftstar");
+mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_shiftstar", <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 450, 100,
+[<astralsorcery:itemcraftingcomponent:2>,<contenttweaker:condensed_vis_crystal_luna>,<astralsorcery:itemcraftingcomponent:2>,
+<astralsorcery:itemusabledust>,<minecraft:nether_star>,<astralsorcery:itemusabledust>,
+<astralsorcery:itemcraftingcomponent:2>,<contenttweaker:condensed_vis_crystal_luna>,<astralsorcery:itemcraftingcomponent:2>,
+<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>]);
+
+# Ritual Pedestal
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/ritualpedestal");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/ritualpedestal", <astralsorcery:blockritualpedestal>, 1000, 100,
+[Utils.getCrystalORIngredient(false, false),<astralsorcery:blockmarble:4>,Utils.getCrystalORIngredient(false, false),
+<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<thaumcraft:pedestal_eldritch>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),
+Utils.getCrystalORIngredient(false, false),<astralsorcery:blockmarble:4>,Utils.getCrystalORIngredient(false, false),
+<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>]);
+
+# Starlight Infuser
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/starlightinfuser");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/starlightinfuser", <astralsorcery:blockstarlightinfuser>, 1200, 100,
+[<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>,
+<astralsorcery:blockmarble:6>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:blockmarble:6>,
+<contenttweaker:condensed_vis_crystal_stellae>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:condensed_vis_crystal_stellae>,
+<alchemistry:ingot:30>,<alchemistry:ingot:30>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,
+<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>]);
+
+# Resonating Gem
+mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:itemcraftingcomponent:4>);
+mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:sparkling_aquamarine>, <astralsorcery:itemcraftingcomponent:4>, false, 1.0, 30);
+
+# Vibrant Infused Wood
+mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:blockinfusedwood:6>);
+mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:blockinfusedwood:5>, <astralsorcery:blockinfusedwood:6>, false, 1.0, 30);
+
 
 print("ENDING AstralSorcery.zs");

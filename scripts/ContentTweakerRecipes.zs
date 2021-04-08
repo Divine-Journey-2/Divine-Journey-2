@@ -1152,4 +1152,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sparkling_aquamar
 # Ludicrous Ore
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ludicrous_ore>, <minecraft:stone>, <bigreactors:ingotludicrite> * 3, 8000);
 
+# Star Leather
+mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:magical_leather>, <contenttweaker:star_leather>, false, 1.0, 30);
+
 print("ENDING ContentTweakerRecipes.zs");

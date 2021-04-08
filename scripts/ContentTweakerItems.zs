@@ -855,5 +855,40 @@ shattered_mystical_iron_crystal.glowing = true;
 shattered_mystical_iron_crystal.register();
 var sparkling_aquamarine = VanillaFactory.createItem("sparkling_aquamarine");
 sparkling_aquamarine.register();
+var essence_of_enclosement = VanillaFactory.createItem("essence_of_enclosement");
+essence_of_enclosement.rarity = "EPIC";
+essence_of_enclosement.register();
+var essence_of_length = VanillaFactory.createItem("essence_of_length");
+essence_of_length.rarity = "EPIC";
+essence_of_length.register();
+var essence_of_extension = VanillaFactory.createItem("essence_of_extension");
+essence_of_extension.rarity = "EPIC";
+essence_of_extension.register();
+var essence_of_foundation = VanillaFactory.createItem("essence_of_foundation");
+essence_of_foundation.glowing = true;
+essence_of_foundation.rarity = "EPIC";
+essence_of_foundation.register();
+var essence_of_thought = VanillaFactory.createItem("essence_of_thought");
+essence_of_thought.glowing = true;
+essence_of_thought.rarity = "EPIC";
+essence_of_thought.register();
+var essence_of_motion = VanillaFactory.createItem("essence_of_motion");
+essence_of_motion.rarity = "EPIC";
+essence_of_motion.register();
+var debug = VanillaFactory.createItem("debug");
+debug.itemRightClick = function(stack, world, player, hand) {
+	if(world.remote) {
+        return "PASS";
+    }
+
+    for t in player.tags{
+    	player.sendChat(t);
+    }
+    player.sendChat("-----");
+    player.sendChat(player.getNBT().asString());
+
+    return "SUCCESS";
+};
+debug.register();
 
 print("ENDING ContentTweakerItems.zs");

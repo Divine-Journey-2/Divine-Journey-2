@@ -3,8 +3,10 @@
 
 import mods.extrautils2.Resonator;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Melting;
+import mods.astralsorcery.Altar;
 
 print("STARTING ExtraUtilities2.zs");
 
@@ -457,5 +459,37 @@ recipes.addShaped(<extrautils2:compressedsand>, [[<ore:sand>,<ore:sand>,<ore:san
 # Compressed Gravel
 recipes.removeShaped(<extrautils2:compressedgravel>);
 recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>]]);
+
+# Chicken Wing Ring
+recipes.remove(<extrautils2:chickenring>);
+recipes.addShaped(<extrautils2:chickenring>, [[<contenttweaker:condensed_vis_crystal_volatus>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}, No_Place: 1 as byte}),<contenttweaker:condensed_vis_crystal_volatus>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}),<thaumcraft:baubles:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]})],[null,<thaumcraft:mirrored_glass>,null]]);
+
+# Ring of the Flying Squid
+recipes.remove(<extrautils2:chickenring:1>);
+recipes.addShaped(<extrautils2:chickenring:1>, [[<mysticalworld:raw_squid>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}, No_Place: 1 as byte}),<mysticalworld:raw_squid>],[<contenttweaker:condensed_vis_crystal_motus>,<extrautils2:chickenring>,<contenttweaker:condensed_vis_crystal_motus>],[<mysticalworld:raw_squid>,<contenttweaker:mystical_tablet>,<mysticalworld:raw_squid>]]);
+
+# Angel Rings
+function addExtraUtilsAngelRingRecipe(output as IItemStack, input_item as IIngredient) {
+	recipes.removeShaped(output);
+	recipes.removeShapeless(output, [<*>,<*>,<*>]);
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring0", <extrautils2:angelring>, 2500, 100,
+	[<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:rainbow_tablet>,<astralsorcery:itemcraftingcomponent:4>,
+	<contenttweaker:rainbow_tablet>,<extrautils2:chickenring:1>,<contenttweaker:rainbow_tablet>,
+	<astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara>,<astralsorcery:itemcraftingcomponent:4>,
+	input_item,input_item,input_item,input_item,
+	<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>]);
+	recipes.addShapeless(output, [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);
+}
+
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring>,<ore:blockGlassColorless>);
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring:1>,<minecraft:feather>);
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring:2>,<contenttweaker:star_leather>);
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring:3>,<bloodmagic:item_demon_crystal:3>);
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring:4>,<simplyjetpacks:metaitemmods:24>);
+addExtraUtilsAngelRingRecipe(<extrautils2:angelring:5>,<lightningcraft:ingot:1>);
+
+# Chunk Loading Ward
+recipes.remove(<extrautils2:chunkloader>);
+recipes.addShaped(<extrautils2:chunkloader>, [[<astralsorcery:blockinfusedwood:6>,<extrautils2:ingredients:2>,<astralsorcery:blockinfusedwood:6>],[<astralsorcery:blockinfusedwood:6>,<enderio:item_capacitor_totemic>,<astralsorcery:blockinfusedwood:6>],[null,<lightningcraft:rod:9>,null]]);
 
 print("ENDING ExtraUtilities2.zs");
