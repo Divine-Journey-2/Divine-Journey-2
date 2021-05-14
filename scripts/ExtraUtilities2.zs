@@ -469,24 +469,24 @@ recipes.remove(<extrautils2:chickenring:1>);
 recipes.addShaped(<extrautils2:chickenring:1>, [[<mysticalworld:raw_squid>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}, No_Place: 1 as byte}),<mysticalworld:raw_squid>],[<contenttweaker:condensed_vis_crystal_motus>,<extrautils2:chickenring>,<contenttweaker:condensed_vis_crystal_motus>],[<mysticalworld:raw_squid>,<contenttweaker:mystical_tablet>,<mysticalworld:raw_squid>]]);
 
 # Angel Rings
-function addExtraUtilsAngelRingRecipe(output as IItemStack, input_item as IIngredient) {
-	recipes.removeShaped(output);
-	recipes.removeShapeless(output, [<*>,<*>,<*>]);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring0", <extrautils2:angelring>, 2500, 100,
+function addExtraUtilsAngelRingRecipe(dam as int, input_item as IIngredient) {
+	recipes.removeShaped(<extrautils2:angelring>.withDamage(dam));
+	recipes.removeShapeless(<extrautils2:angelring>.withDamage(dam), [<*>,<*>,<*>]);
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring" + dam, <extrautils2:angelring>.withDamage(dam), 2500, 100,
 	[<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:rainbow_tablet>,<astralsorcery:itemcraftingcomponent:4>,
 	<contenttweaker:rainbow_tablet>,<extrautils2:chickenring:1>,<contenttweaker:rainbow_tablet>,
 	<astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara>,<astralsorcery:itemcraftingcomponent:4>,
 	input_item,input_item,input_item,input_item,
 	<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>]);
-	recipes.addShapeless(output, [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);
+	recipes.addShapeless(<extrautils2:angelring>.withDamage(dam), [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);
 }
 
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring>,<ore:blockGlassColorless>);
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring:1>,<minecraft:feather>);
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring:2>,<contenttweaker:star_leather>);
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring:3>,<bloodmagic:item_demon_crystal:3>);
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring:4>,<simplyjetpacks:metaitemmods:24>);
-addExtraUtilsAngelRingRecipe(<extrautils2:angelring:5>,<lightningcraft:ingot:1>);
+addExtraUtilsAngelRingRecipe(0,<ore:blockGlassColorless>);
+addExtraUtilsAngelRingRecipe(1,<minecraft:feather>);
+addExtraUtilsAngelRingRecipe(2,<contenttweaker:star_leather>);
+addExtraUtilsAngelRingRecipe(3,<bloodmagic:item_demon_crystal:3>);
+addExtraUtilsAngelRingRecipe(4,<simplyjetpacks:metaitemmods:24>);
+addExtraUtilsAngelRingRecipe(5,<lightningcraft:ingot:1>);
 
 # Chunk Loading Ward
 recipes.remove(<extrautils2:chunkloader>);

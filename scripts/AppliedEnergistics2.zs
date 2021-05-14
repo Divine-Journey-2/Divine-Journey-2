@@ -381,4 +381,8 @@ for i in 0 to 4 {
 	Inscriber.addRecipe(ae2_presses[i], <thermalfoundation:storage_alloy>, true, ae2_presses[i]);
 }
 
+# Entropy Manipulator
+recipes.remove(<appliedenergistics2:entropy_manipulator>);
+recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}), [[null,<appliedenergistics2:energy_cell>,<appliedenergistics2:fluix_block>],[null,<enderio:item_alloy_ingot:6>,<contenttweaker:operation_processor>],[<enderio:item_alloy_ingot:6>,null,null]]);
+
 print("ENDING AppliedEnergistics2.zs");

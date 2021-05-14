@@ -3,6 +3,8 @@
 import crafttweaker.formatting.IFormattedText;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.data.IData;
+import crafttweaker.enchantments.IEnchantment;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.Transposer;
 import mods.appliedenergistics2.Inscriber;
@@ -1154,5 +1156,8 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ludicrous_ore>,
 
 # Star Leather
 mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:magical_leather>, <contenttweaker:star_leather>, false, 1.0, 30);
+
+# Enchanter's PhD
+recipes.addShapedMirrored(<contenttweaker:enchanters_phd>, [[null,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 70 as short}]}),null],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 7 as short, id: 16 as short}]}),<astralsorcery:itemcraftingcomponent:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 7 as short, id: 48 as short}]})],[null,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 2 as short}]}),null]]);
 
 print("ENDING ContentTweakerRecipes.zs");

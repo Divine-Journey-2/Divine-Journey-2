@@ -881,14 +881,27 @@ debug.itemRightClick = function(stack, world, player, hand) {
         return "PASS";
     }
 
-    for t in player.tags{
-    	player.sendChat(t);
-    }
-    player.sendChat("-----");
-    player.sendChat(player.getNBT().asString());
+    #for t in player.tags{
+    #	player.sendChat(t);
+    #}
+    #player.sendChat("-----");
+    print('Player NBT starts here');
+    print(player.getNBT().asString());
+    #player.sendChat(player.getNBT().asString());
 
     return "SUCCESS";
 };
 debug.register();
+var essence_of_cycles = VanillaFactory.createItem("essence_of_cycles");
+essence_of_cycles.rarity = "EPIC";
+essence_of_cycles.register();
+var essence_of_opening = VanillaFactory.createItem("essence_of_opening");
+essence_of_opening.rarity = "EPIC";
+essence_of_opening.register();
+var enchanters_phd = VanillaFactory.createItem("enchanters_phd");
+enchanters_phd.rarity = "EPIC";
+enchanters_phd.maxStackSize = 1;
+enchanters_phd.glowing = true;
+enchanters_phd.register();
 
 print("ENDING ContentTweakerItems.zs");

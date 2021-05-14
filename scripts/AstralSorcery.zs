@@ -9,6 +9,8 @@ import mods.astralsorcery.Lightwell;
 import mods.astralsorcery.Utils;
 import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 print("STARTING AstralSorcery.zs");
 
@@ -342,5 +344,99 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:sparkling_aquam
 mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:blockinfusedwood:6>);
 mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:blockinfusedwood:5>, <astralsorcery:blockinfusedwood:6>, false, 1.0, 30);
 
+# Colored Lenses
+function addAstralSorceryLensRecipe(recipeName as string, output as IItemStack, input_item as IIngredient) {
+	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName);
+	mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName, output, 600, 100,
+	[<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+	<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+	<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+	input_item,input_item,input_item,input_item,
+	<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>]);
+}
+
+# Colored Lens: Ignition
+addAstralSorceryLensRecipe("lens_fire", <astralsorcery:itemcoloredlens>, <botania:rune:1>);
+
+# Colored Lens: Break
+addAstralSorceryLensRecipe("lens_break", <astralsorcery:itemcoloredlens:1>, <lightningcraft:lightning_breaker>);
+
+# Colored Lens: Growth
+addAstralSorceryLensRecipe("lens_grow", <astralsorcery:itemcoloredlens:2>, <botania:rune:4>);
+
+# Colored Lens: Damage
+addAstralSorceryLensRecipe("lens_damage", <astralsorcery:itemcoloredlens:3>, <botania:rune:13>);
+
+# Colored Lens: Regeneration
+addAstralSorceryLensRecipe("lens_regen", <astralsorcery:itemcoloredlens:4>, <thaumicaugmentation:vis_regenerator>);
+
+# Colored Lens: Push
+addAstralSorceryLensRecipe("lens_push", <astralsorcery:itemcoloredlens:5>, <enderio:block_relocator_obelisk>);
+
+# Colored Lens: Spectral
+addAstralSorceryLensRecipe("lens_spectral", <astralsorcery:itemcoloredlens:6>, <contenttweaker:travelers_tenacity>);
+
+# Ritual Anchor
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/rituallink");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/rituallink", <astralsorcery:blockrituallink>, 1000, 100,
+[<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:2>,<astralsorcery:blockmarble:4>,
+<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<thaumcraft:pedestal_eldritch>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),
+<astralsorcery:blockmarble:4>,<astralsorcery:blockmarble:2>,<astralsorcery:blockmarble:4>,
+null,null,null,null,
+<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,null,null,null,null,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>]);
+
+# PrismLens
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/crystalprism");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/crystalprism", <astralsorcery:blockprism>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}}}), 1250, 100,
+[<astralsorcery:itemcraftingcomponent:4>,Utils.getCrystalORIngredient(false,false),<astralsorcery:itemcraftingcomponent:4>,
+<astralsorcery:itemcraftingcomponent:3>,Utils.getCrystalORIngredient(false,false),<astralsorcery:itemcraftingcomponent:3>,
+<astralsorcery:itemcraftingcomponent:3>,<contenttweaker:condensed_vis_crystal_sol>,<astralsorcery:itemcraftingcomponent:3>,
+<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>,
+<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<contenttweaker:condensed_vis_crystal_sol>,<contenttweaker:condensed_vis_crystal_sol>,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]);
+
+# Illumination Wand
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination", <astralsorcery:itemilluminationwand>.withTag({astralsorcery: {}}), 1000, 100,
+[null,<alchemistry:ingot:30>,<astralsorcery:itemusabledust>,
+null,<astralsorcery:itemcraftingcomponent:4>,<alchemistry:ingot:30>,
+<lightningcraft:rod:9>,null,null,
+null,<astralsorcery:itemusabledust>,<astralsorcery:blockmarble:6>,null,
+null,<astralsorcery:itemusabledust>,null,<astralsorcery:itemusabledust>,<astralsorcery:blockmarble:6>,null,<astralsorcery:blockmarble:6>,null]);
+
+# Tree Beacon
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/treebeacon");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/treebeacon", <astralsorcery:blocktreebeacon>, 800, 100,
+[<astralsorcery:itemcraftingcomponent:4>,<divinerpg:firewood_log>,<astralsorcery:itemcraftingcomponent:4>,
+<astralsorcery:itemcraftingcomponent:4>,<divinerpg:firewood_log>,<astralsorcery:itemcraftingcomponent:4>,
+null,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),null,
+<divinerpg:mintwood_leaves>,<divinerpg:mintwood_leaves>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
+<divinerpg:mintwood_leaves>,<divinerpg:mintwood_leaves>,<divinerpg:mintwood_leaves>,<divinerpg:mintwood_leaves>,null,null,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>]);
+
+# Stellar Refraction Table
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/drawingtable");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/drawingtable", <astralsorcery:blockmapdrawingtable>, 2000, 100,
+[<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,
+<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
+<astralsorcery:blockinfusedwood:2>,<astralsorcery:blockinfusedwood:2>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
+null,null,<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:condensed_vis_crystal_stellae>,<astralsorcery:blockinfusedwood:2>,<astralsorcery:blockinfusedwood:2>,null,null]);
+
+# Infused Glass
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/infusedglass");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/infusedglass", <astralsorcery:iteminfusedglass>.withTag({astralsorcery: {}}), 500, 100,
+[<astralsorcery:itemcraftingcomponent:2>,<solarflux:photovoltaic_cell_4>,<astralsorcery:itemcraftingcomponent:2>,
+<solarflux:photovoltaic_cell_4>,<astralsorcery:itemusabledust:1>,<solarflux:photovoltaic_cell_4>,
+<astralsorcery:itemcraftingcomponent:2>,<solarflux:photovoltaic_cell_4>,<astralsorcery:itemcraftingcomponent:2>,
+<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,
+<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>]);
+
+# Iridescent Altar
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier4");
+mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/upgrade_tier4", <astralsorcery:blockaltar:3>, 2250, 100,
+[<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:enchanters_phd>,<contenttweaker:condensed_vis_crystal_stellae>,
+<astralsorcery:blockmarble:6>,Utils.getCrystalORIngredient(true,true),<astralsorcery:blockmarble:6>,
+<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,
+<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,
+<astralsorcery:itemcoloredlens:6>,<astralsorcery:itemcoloredlens:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,null,null,null,null]);
 
 print("ENDING AstralSorcery.zs");
