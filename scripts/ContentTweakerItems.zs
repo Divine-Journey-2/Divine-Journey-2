@@ -903,5 +903,15 @@ enchanters_phd.rarity = "EPIC";
 enchanters_phd.maxStackSize = 1;
 enchanters_phd.glowing = true;
 enchanters_phd.register();
+var astral_core = VanillaFactory.createItem("astral_core");
+astral_core.rarity = "EPIC";
+astral_core.maxStackSize = 16;
+astral_core.glowing = true;
+astral_core.register();
+var star_of_revelation = VanillaFactory.createItem("star_of_revelation");
+star_of_revelation.rarity = "EPIC";
+star_of_revelation.maxStackSize = 1;
+star_of_revelation.glowing = true;
+star_of_revelation.register();
 
 print("ENDING ContentTweakerItems.zs");

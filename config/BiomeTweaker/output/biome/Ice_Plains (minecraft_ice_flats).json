@@ -20,9 +20,9 @@
   "Enable Rain": true,
   "Enable Snow": true,
   "Dictionary Types": [
+    "COLD",
     "WASTELAND",
-    "SNOWY",
-    "COLD"
+    "SNOWY"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [

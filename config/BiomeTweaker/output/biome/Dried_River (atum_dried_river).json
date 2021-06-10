@@ -20,12 +20,12 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "DRY",
-    "SPARSE",
-    "WATER",
     "SANDY",
     "HOT",
+    "SPARSE",
     "ATUM",
+    "DRY",
+    "WATER",
     "RIVER"
   ],
   "BiomeManager Entries": {},

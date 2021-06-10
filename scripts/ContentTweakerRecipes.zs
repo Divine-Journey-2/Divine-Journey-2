@@ -1160,4 +1160,49 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<contenttweaker:magical_leather
 # Enchanter's PhD
 recipes.addShapedMirrored(<contenttweaker:enchanters_phd>, [[null,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 70 as short}]}),null],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 7 as short, id: 16 as short}]}),<astralsorcery:itemcraftingcomponent:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 7 as short, id: 48 as short}]})],[null,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 2 as short}]}),null]]);
 
+# Astral Core
+recipes.addShapedMirrored("contenttweaker_astral_core", <contenttweaker:astral_core>, [[<astralsorcery:itemtunedcelestialcrystal>.marked("c1"),null,<astralsorcery:itemtunedcelestialcrystal>.marked("c2")],[null,<astralsorcery:itemenchantmentamulet>,null],[<astralsorcery:itemtunedcelestialcrystal>.marked("c3"),null,<astralsorcery:itemtunedcelestialcrystal>.marked("c4")]],
+function(out, ins, cInfo) {
+	if(ins.c1.tag has "astralsorcery" && ins.c2.tag has "astralsorcery" && ins.c3.tag has "astralsorcery" && ins.c4.tag has "astralsorcery") {
+		if(ins.c1.tag.astralsorcery has "constellationName" && ins.c2.tag.astralsorcery has "constellationName" && ins.c3.tag.astralsorcery has "constellationName" && ins.c4.tag.astralsorcery has "constellationName") {
+			if(ins.c1.tag.astralsorcery has "trait" && ins.c2.tag.astralsorcery has "trait" && ins.c3.tag.astralsorcery has "trait" && ins.c4.tag.astralsorcery has "trait") {
+
+				val traits = [ins.c1.tag.astralsorcery.trait,ins.c2.tag.astralsorcery.trait,ins.c3.tag.astralsorcery.trait,ins.c4.tag.astralsorcery.trait] as string[];
+				if(traits has "astralsorcery.constellation.alcara" && traits has "astralsorcery.constellation.gelu" && traits has "astralsorcery.constellation.ulteria" && traits has "astralsorcery.constellation.vorux") {
+					return out;
+				} else {
+					return null;
+				}
+
+
+			} else {
+				return null;
+			}
+		} else {
+			return null;
+		}
+	} else {
+		return null;
+	}
+
+}, null);
+<contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.darkBlue("Attuned Celestial Crystals"));
+<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Dim Constellation:"));
+<contenttweaker:astral_core>.addTooltip(format.lightPurple("Alcara") + format.white(", ") + format.gray("Gelu") + format.white(", ") + format.green("Ulteria") + format.white(", and ") + format.gold("Vorux") + format.white(". To add a trait to a Crystal:"));
+<contenttweaker:astral_core>.addTooltip(format.white("1. Attune it to any Constellation."));
+<contenttweaker:astral_core>.addTooltip(format.white("2. Wait until a Dim Constellation is available at night."));
+<contenttweaker:astral_core>.addTooltip(format.white("3. Attune it again to the Dim Constellation (this will add a"));
+<contenttweaker:astral_core>.addTooltip(format.white("   ") + format.darkBlue("Trait") + format.white(" modifier to it)."));
+
+# Star of Revelation
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation>,
+[[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>],
+[<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
+[null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
+[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemusabledust>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemcraftingcomponent:1>],
+[null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
+[<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
+[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>]]);
+
+
 print("ENDING ContentTweakerRecipes.zs");
