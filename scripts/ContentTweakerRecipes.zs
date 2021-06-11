@@ -1186,20 +1186,21 @@ function(out, ins, cInfo) {
 	}
 
 }, null);
-<contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.darkBlue("Attuned Celestial Crystals"));
+<contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.blue("Attuned Celestial Crystals"));
 <contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Dim Constellation:"));
 <contenttweaker:astral_core>.addTooltip(format.lightPurple("Alcara") + format.white(", ") + format.gray("Gelu") + format.white(", ") + format.green("Ulteria") + format.white(", and ") + format.gold("Vorux") + format.white(". To add a trait to a Crystal:"));
 <contenttweaker:astral_core>.addTooltip(format.white("1. Attune it to any Constellation."));
 <contenttweaker:astral_core>.addTooltip(format.white("2. Wait until a Dim Constellation is available at night."));
 <contenttweaker:astral_core>.addTooltip(format.white("3. Attune it again to the Dim Constellation (this will add a"));
-<contenttweaker:astral_core>.addTooltip(format.white("   ") + format.darkBlue("Trait") + format.white(" modifier to it)."));
+<contenttweaker:astral_core>.addTooltip(format.white("   ") + format.blue("Trait") + format.white(" modifier to it)."));
+<contenttweaker:astral_core>.addTooltip(format.white(format.bold("CANNOT BE AUTOCRAFTED.")));
 
 # Star of Revelation
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation>,
 [[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>],
 [<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
 [null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
-[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemusabledust>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemcraftingcomponent:1>],
+[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemusabledust>,<contenttweaker:astral_core>,<astralsorcery:itemusabledust>,<astralsorcery:blockcelestialgateway>,<astralsorcery:itemcraftingcomponent:1>],
 [null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
 [<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
 [<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>]]);

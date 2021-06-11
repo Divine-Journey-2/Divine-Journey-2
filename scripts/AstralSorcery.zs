@@ -481,7 +481,7 @@ addAstralSorceryIrridescentAltarRecipe("astralsorcery:shaped/internal/altar/cape
 [<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<bewitchment:hecates_visage>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>],
 [<astralsorcery:itemcraftingcomponent:1>,Utils.getCrystalORIngredient(true,true),<lightningcraft:mystic_chest>,Utils.getCrystalORIngredient(true,true),<astralsorcery:itemcraftingcomponent:1>],
 [null,<astralsorcery:itemcraftingcomponent:1>,<thaumcraft:baubles:6>,<astralsorcery:itemcraftingcomponent:1>,null],
-[null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemcraftingcomponent:1>,null]], null);
+[null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemcraftingcomponent:1>,null]], []);
 
 # Resonating Wand Upgrades
 function addAstralSorceryResonatingWandUpgradeRecipe(name as string, output as IItemStack, special_input as IIngredient) {
@@ -490,7 +490,7 @@ function addAstralSorceryResonatingWandUpgradeRecipe(name as string, output as I
 		[null,null,special_input,<astralsorcery:itemwand>,null],
 		[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
 		[null,<lightningcraft:ingot:2>,null,null,null],
-		[<astralsorcery:blockmarble:5>,null,null,null,null]], null, "astralsorcery.constellation." + name);
+		[<astralsorcery:blockmarble:5>,null,null,null,null]], [], "astralsorcery.constellation." + name);
 
 }
 
@@ -515,7 +515,7 @@ addAstralSorceryIrridescentAltarRecipe("astralsorcery:shaped/internal/altar/bore
 [<astralsorcery:blockinfusedwood:5>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockinfusedwood:5>],
 [<contenttweaker:condensed_vis_crystal_aer>,<astralsorcery:blockmarble:6>,<industrialforegoing:fluid_pump>,<astralsorcery:blockmarble:6>,<contenttweaker:condensed_vis_crystal_aer>],
 [null,<astralsorcery:blockmarble:6>,<astralsorcery:blockchalice>,<astralsorcery:blockmarble:6>,null],
-[<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>]], null);
+[<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>]], []);
 
 # Ichosic Resonator
 addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/resonator/liquid", <astralsorcery:itemskyresonator>.withTag({astralsorcery: {enhanced: 1 as byte, selected_upgrade: 1, upgrades: [0, 1]}}), 2600,
@@ -523,7 +523,7 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/in
 [null,null,null,null,null],
 [<astralsorcery:blockinfusedwood:3>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemskyresonator>.withTag({astralsorcery: {}}),<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:blockinfusedwood:3>],
 [<astralsorcery:blockinfusedwood:3>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockinfusedwood:3>],
-[null,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,null]], null, "astralsorcery.constellation.octans");
+[null,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,<astralsorcery:blockinfusedwood:3>,null]], [], "astralsorcery.constellation.octans");
 
 # Sextant
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/sextant");
@@ -538,15 +538,15 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/in
 [null,null,<astralsorcery:itemcoloredlens:6>,null,null],
 [<astralsorcery:itemusabledust>,<contenttweaker:condensed_vis_crystal_desiderium>,<astralsorcery:blockinfusedwood:6>,<contenttweaker:condensed_vis_crystal_desiderium>,<astralsorcery:itemusabledust>],
 [<contenttweaker:condensed_vis_crystal_desiderium>,<astralsorcery:blockinfusedwood:6>,<astralsorcery:itemsextant>,<astralsorcery:blockinfusedwood:6>,<contenttweaker:condensed_vis_crystal_desiderium>],
-[<astralsorcery:blockinfusedwood:6>,null,null,null,<astralsorcery:blockinfusedwood:6>]], null, "astralsorcery.constellation.pelotrio");
+[<astralsorcery:blockinfusedwood:6>,null,null,null,<astralsorcery:blockinfusedwood:6>]], [], "astralsorcery.constellation.pelotrio");
 
 # Resplendent Prism
 addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/enchantment_amulet_craft", <astralsorcery:itemenchantmentamulet>, 3600,
-[[null,<astralsorcery:itemshiftingstar>,<astralsorcery:blockprism>,<astralsorcery:itemshiftingstar>,null],
+[[null,<contenttweaker:star_leather>,<astralsorcery:blockprism>,<contenttweaker:star_leather>,null],
 [<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<thaumicaugmentation:material:3>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>],
 [<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>],
 [null,<contenttweaker:conducted_impetus>,<astralsorcery:iteminfusedglass>,<contenttweaker:conducted_impetus>,null],
-[null,<contenttweaker:conducted_impetus>,<astralsorcery:iteminfusedglass>,<contenttweaker:conducted_impetus>,null]], null, "astralsorcery.constellation.bootes");
+[null,<contenttweaker:conducted_impetus>,<astralsorcery:iteminfusedglass>,<contenttweaker:conducted_impetus>,null]], [], "astralsorcery.constellation.bootes");
 
 # Observatory
 addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/observatory", <astralsorcery:blockobservatory>, 4000,
@@ -554,7 +554,7 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/in
 [null,null,<astralsorcery:blockmarble:6>,<astralsorcery:blockmachine>,<astralsorcery:blockmarble:6>],
 [null,<astralsorcery:blockmarble:6>,<astralsorcery:blockmachine>,<astralsorcery:blockmarble:6>,null],
 [<bibliocraft:seatback5>,<lightningcraft:material:9>,<astralsorcery:blockmarble:6>,null,null],
-[<bibliocraft:seat>,<astralsorcery:blockritualpedestal>,<astralsorcery:blockmapdrawingtable>,null,null]], null, "astralsorcery.constellation.lucerna");
+[<bibliocraft:seat>,<astralsorcery:blockritualpedestal>,<astralsorcery:blockmapdrawingtable>,null,null]], [], "astralsorcery.constellation.lucerna");
 
 function addAstralSorceryIrradiantStarRecipe(name as string, output as IItemStack, special_input as IIngredient) {
 	addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/shiftingstar/enhanced/" + name, output, 3300,
@@ -562,7 +562,7 @@ function addAstralSorceryIrradiantStarRecipe(name as string, output as IItemStac
 	[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
 	[special_input,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}),<astralsorcery:itemcraftingcomponent:1>,special_input],
 	[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
-	[<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>]], null, "astralsorcery.constellation." + name);
+	[<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>]], [], "astralsorcery.constellation." + name);
 
 }
 
