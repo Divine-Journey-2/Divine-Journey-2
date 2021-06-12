@@ -24,6 +24,9 @@ mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/cc_parchment");
 recipes.remove(<astralsorcery:itemcraftingcomponent:5>);
 recipes.addShaped(<astralsorcery:itemcraftingcomponent:5> * 8, [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],[<minecraft:paper>,<bigreactors:ingotblutonium>,<minecraft:paper>],[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);
 
+# Constellation Paper
+recipes.addShapedMirrored(<astralsorcery:itemconstellationpaper>.withTag({astralsorcery: {}}), [[null,<contenttweaker:condensed_vis_crystal_stellae>,null],[<contenttweaker:gypsum>,<astralsorcery:itemcraftingcomponent:5>,<lightningcraft:material:14>],[null,<thaumcraft:scribing_tools>,null]]);
+
 # Rock Crystal Ore
 mods.thermalexpansion.InductionSmelter.addRecipe(<astralsorcery:blockcustomore>, <minecraft:stone>, <contenttweaker:shattered_mystical_iron_crystal>, 8000);
 
@@ -104,6 +107,8 @@ recipes.addShaped(<astralsorcery:blockblackmarble:6> * 4, [[null,<astralsorcery:
 
 # Luminous Crafting Table
 recipes.remove(<astralsorcery:blockaltar>);
+recipes.addShaped(<astralsorcery:blockaltar>, [[<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>],[<astralsorcery:blockmarble:6>,<bigreactors:blockblutonium>,<astralsorcery:blockmarble:6>],[<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>]]);
+/*
 mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockaltar>,
 [[<astralsorcery:blockmarble:6>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<astralsorcery:blockmarble:6>],
 [<astralsorcery:blockmarble:6>,<bigreactors:ingotblutonium>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<bigreactors:ingotblutonium>,<astralsorcery:blockmarble:6>],
@@ -112,6 +117,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockaltar>,
 [null,null,<bigreactors:ingotblutonium>,<contenttweaker:condensed_vis_crystal_stellae>,<bigreactors:ingotblutonium>,null,null],
 [null,null,<bigreactors:ingotblutonium>,<contenttweaker:condensed_vis_crystal_stellae>,<bigreactors:ingotblutonium>,null,null],
 [<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>]]);
+*/
 
 # Resonating Wand
 recipes.remove(<astralsorcery:itemwand>);
@@ -133,7 +139,10 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 <astralsorcery:blockmarble:3>,<bewitchment:witches_cauldron>,<astralsorcery:blockmarble:3>]);
 
 # Starlight from Sparkling Aquamarine
-mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:sparkling_aquamarine>, <liquid:astralsorcery.liquidstarlight>, 0.4, 1.0, 33737);
+mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:sparkling_aquamarine>, <liquid:astralsorcery.liquidstarlight>, 0.4, 12.0, 33737);
+
+# No Starlight from regular Aquamarine
+mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent>, null);
 
 # Fosic Resonator
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator");
@@ -248,6 +257,62 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal
 <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
 <astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,
 null,null,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]);
+
+# <astralsorcery:blockcollectorcrystal>.withCapNBT({astralsorcery: {cap_item_amulet_holder: {AS_Amulet_HolderLeast: -4822218405563622703, AS_Amulet_HolderMost: 433871007885182809}}})
+/*
+<astralsorcery:blockcollectorcrystal>.withTag(
+	{
+		astralsorcery: 
+		{
+			constellationName: "astralsorcery.constellation.discidia",
+			crystalProperties:
+			{
+				collectiveCapability: 50,
+				size: 150,
+				fract: 0,
+				purity: 50,
+				sizeOverride: -1
+			},
+			collectorType: 0
+		},
+		BlockEntityTag:
+		{
+			ticksExisted: 0,
+			purity: 50,
+			sizeOverride: -1,
+			doesSeeSky: 1 as byte,
+			multiBlockPresent: 0 as byte,
+			collectorType: 0,
+			size: 150,
+			fract: 0,
+			playerRefMost: 433871007885182809 as long,
+			ForgeCaps:
+			{
+				"abyssalcraft:itemtransfer":
+				{
+					isRunning: 0 as byte,
+					configurations: []
+				}
+			},
+			constellationName: "astralsorcery.constellation.discidia",
+			id: "astralsorcery:tilecollectorcrystal",
+			playerRefLeast: -4822218405563622703 as long,
+			wasLinkedBefore: 0 as byte,
+			collect: 50,
+			linked: []
+		}
+	})
+*/
+
+# Collector Crystal (more difficult, one-time recipe)
+mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", crystalProperties: {collectiveCapability: 50, size: 150, fract: 0, purity: 50, sizeOverride: -1}, collectorType: 0}, BlockEntityTag: {ticksExisted: 0, purity: 50, sizeOverride: -1, doesSeeSky: 1 as byte, multiBlockPresent: 0 as byte, collectorType: 0, size: 150, fract: 0, playerRefMost: 433871007885182809 as long, ForgeCaps: {"abyssalcraft:itemtransfer": {isRunning: 0 as byte, configurations: []}}, constellationName: "astralsorcery.constellation.discidia", id: "astralsorcery:tilecollectorcrystal", playerRefLeast: -4822218405563622703 as long, wasLinkedBefore: 0 as byte, collect: 50,linked: []}}),
+[[null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null],
+[null,null,<astralsorcery:itemcraftingcomponent:3>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:itemcraftingcomponent:3>,null,null],
+[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
+[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
+[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
+[null,null,<astralsorcery:itemcraftingcomponent:3>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:itemcraftingcomponent:3>,null,null],
+[null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null]]);  
 
 # Starmetal Ore
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);

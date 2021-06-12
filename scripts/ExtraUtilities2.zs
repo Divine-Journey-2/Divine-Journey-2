@@ -488,6 +488,10 @@ addExtraUtilsAngelRingRecipe(3,<bloodmagic:item_demon_crystal:3>);
 addExtraUtilsAngelRingRecipe(4,<simplyjetpacks:metaitemmods:24>);
 addExtraUtilsAngelRingRecipe(5,<lightningcraft:ingot:1>);
 
+for i in 0 to 6 {
+	<ore:angelring>.add(<extrautils2:angelring>.withDamage(i));
+}
+
 # Chunk Loading Ward
 recipes.remove(<extrautils2:chunkloader>);
 recipes.addShaped(<extrautils2:chunkloader>, [[<astralsorcery:blockinfusedwood:6>,<extrautils2:ingredients:2>,<astralsorcery:blockinfusedwood:6>],[<astralsorcery:blockinfusedwood:6>,<enderio:item_capacitor_totemic>,<astralsorcery:blockinfusedwood:6>],[null,<lightningcraft:rod:9>,null]]);

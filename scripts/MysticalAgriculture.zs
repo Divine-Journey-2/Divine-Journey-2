@@ -7,6 +7,7 @@ import mods.thermalexpansion.Transposer;
 import mods.botania.RuneAltar;
 import thaumcraft.aspect.CTAspectStack;
 import mods.thaumcraft.Infusion;
+import mods.astralsorcery.Altar;
 
 print("STARTING MysticalAgriculture.zs");
 
@@ -17,6 +18,10 @@ mods.extendedcrafting.EnderCrafting.addShaped(<mysticalagriculture:crafting:16>,
 # Tier 1 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:17>);
 mods.extendedcrafting.EnderCrafting.addShaped(<mysticalagriculture:crafting:17>, [[<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>], [<mysticalagriculture:crafting>,<mysticalagriculture:crafting:16>,<mysticalagriculture:crafting>], [<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]]);
+
+# Inferium Seeds: Tier 1
+recipes.remove(<mysticalagriculture:tier1_inferium_seeds>);
+mods.extendedcrafting.EnderCrafting.addShaped(<mysticalagriculture:tier1_inferium_seeds>, [[<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>],[<mysticalagriculture:crafting>,<minecraft:wheat_seeds>,<mysticalagriculture:crafting>],[<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]]);
 
 function addTier1MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient) {
 	recipes.remove(output);
@@ -64,6 +69,10 @@ mods.thermalexpansion.Transposer.addFillRecipe(<mysticalagriculture:water_seeds>
 # Tier 2 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:18>);
 mods.botania.RuneAltar.addRecipe(<mysticalagriculture:crafting:18>, [<mysticalagriculture:crafting:17>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
+
+# Inferium Seeds: Tier 2
+recipes.remove(<mysticalagriculture:tier2_inferium_seeds>);
+mods.botania.RuneAltar.addRecipe(<mysticalagriculture:tier2_inferium_seeds>, [<mysticalagriculture:tier1_inferium_seeds>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
 
 function addTier2MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient) {
 	addTier2MysticalAgricultureSeedWithInput(output,input_material,<mysticalagriculture:crafting:18>);
@@ -168,11 +177,14 @@ addTier2MysticalAgricultureSeed(<mysticalagriculture:sky_stone_seeds>,<applieden
 recipes.remove(<mysticalagriculture:crafting:19>);
 mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:tier3_crafting_seed", "", <mysticalagriculture:crafting:19>, 3, [<aspect:herba> * 100,<aspect:praecantatio> * 50], <mysticalagriculture:crafting:18>, [<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>]);
 
+# Inferium Seeds: Tier 3
+recipes.remove(<mysticalagriculture:tier3_inferium_seeds>);
+mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:tier3_inferium_seeds", "", <mysticalagriculture:tier3_inferium_seeds>, 3, [<aspect:herba> * 100,<aspect:praecantatio> * 50], <mysticalagriculture:tier2_inferium_seeds>, [<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>]);
+
 function addTier3MysticalAgricultureSeedWithInput(output as IItemStack, input_material as IIngredient, input_vis_crystal as IItemStack, input_aspect as CTAspectStack, input_seed as IItemStack) {
 	recipes.remove(output);
 	mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 4, [<aspect:herba> * 100,input_aspect * 100], input_seed, [input_material,input_material,input_material,input_material,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,input_vis_crystal]);
 }
-
 
 function addTier3MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient, input_vis_crystal as IItemStack, input_aspect as CTAspectStack) {
 	addTier3MysticalAgricultureSeedWithInput(output, input_material, input_vis_crystal, input_aspect, <mysticalagriculture:crafting:19>);
@@ -301,9 +313,6 @@ addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:invar_seeds>, <the
 # Platinum Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:platinum_seeds>, <thermalfoundation:storage:6>, <contenttweaker:condensed_vis_crystal_praemunio>, <aspect:praemunio>, <mysticalagriculture:nickel_seeds>);
 
-# Iridium Seeds
-addTier3MysticalAgricultureSeed(<mysticalagriculture:iridium_seeds>, <thermalfoundation:storage:7>, <contenttweaker:condensed_vis_crystal_luna>, <aspect:luna>);
-
 # Amber Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:amber_seeds>, <thaumcraft:amber_block>, <contenttweaker:condensed_vis_crystal_vinculum>, <aspect:vinculum>);
 
@@ -352,9 +361,6 @@ addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:glowstone_ingot_se
 # Refined Obsidian Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:refined_obsidian_seeds>, <mekanism:basicblock:2>, <contenttweaker:condensed_vis_crystal_potentia>, <aspect:potentia>, <mysticalagriculture:obsidian_seeds>);
 
-# Lithium Seeds
-addTier3MysticalAgricultureSeed(<mysticalagriculture:lithium_seeds>, <alchemistry:ingot:3>, <contenttweaker:condensed_vis_crystal_alkimia>, <aspect:alkimia>);
-
 # Black Quartz Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:black_quartz_seeds>, <actuallyadditions:block_misc:2>, <contenttweaker:condensed_vis_crystal_tenebrae>, <aspect:tenebrae>);
 
@@ -376,6 +382,232 @@ addTier3MysticalAgricultureSeed(<mysticalagriculture:certus_quartz_seeds>, <appl
 # Fluix Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:fluix_seeds>, <appliedenergistics2:fluix_block>, <contenttweaker:condensed_vis_crystal_potentia>, <aspect:potentia>, <mysticalagriculture:certus_quartz_seeds>);
 
-# Iridium, Lithium -> Tier 4
+# Tier 4 Crafting Seed
+recipes.remove(<mysticalagriculture:crafting:20>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/tier4craftingseed", <mysticalagriculture:crafting:20>, 3000, 100,
+[null,null,null,
+null,<mysticalagriculture:crafting:19>,null,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
+
+# Inferium Seeds: Tier 4
+recipes.remove(<mysticalagriculture:tier4_inferium_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/tier4_inferium_seeds", <mysticalagriculture:tier4_inferium_seeds>, 3000, 100,
+[null,null,null,
+null,<mysticalagriculture:tier3_inferium_seeds>,null,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
+
+function addTier4MysticalAgricultureSeedWithInput(output as IItemStack, input_material as IIngredient, constellation as string, input_seed as IItemStack) {
+	recipes.remove(output);
+	mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/" + output.name, output, 3000, 100,
+	[null,null,null,
+	null,input_seed,null,
+	null,null,null,
+	<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+	null,null,null,null,null,null,null,null,
+	input_material,input_material,input_material,input_material], "astralsorcery.constellation." + constellation);
+}
+
+function addTier4MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient, constellation as string) {
+	addTier4MysticalAgricultureSeedWithInput(output, input_material, constellation, <mysticalagriculture:crafting:20>);
+}
+
+# Diamond Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:diamond_seeds>, <actuallyadditions:block_crystal_empowered:2>, "vicio");
+
+# Emerald Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:emerald_seeds>, <actuallyadditions:block_crystal_empowered:4>, "aevitas");
+
+# Tier 4 mob chunk
+recipes.remove(<mysticalagriculture:chunk:3>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/tier4mobchunk", <mysticalagriculture:chunk:3>, 2500, 100,
+[null,null,null,
+null,<mysticalagriculture:chunk:2>,null,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
+
+# Ghast Chunk
+recipes.remove(<mysticalagriculture:chunk:18>);
+recipes.addShaped(<mysticalagriculture:chunk:18>, [[null,<divinerpg:ghast_pumpkin>,null],[<divinerpg:ghast_pumpkin>,<mysticalagriculture:chunk:3>,<divinerpg:ghast_pumpkin>],[null,<divinerpg:ghast_pumpkin>,null]]);
+
+# Ghast Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:ghast_seeds>, <mysticalagriculture:chunk:18>, "gelu");
+
+# Enderman Chunk
+recipes.remove(<mysticalagriculture:chunk:19>);
+recipes.addShaped(<mysticalagriculture:chunk:19>, [[<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,],[<actuallyadditions:block_misc:6>,<mysticalagriculture:chunk:3>,<actuallyadditions:block_misc:6>],[<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>]]);
+
+# Enderman Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:enderman_seeds>, <mysticalagriculture:chunk:19>, "ulteria");
+
+# Signalum Seeds
+recipes.remove(<mysticalagriculture:signalum_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/signalum_seeds", <mysticalagriculture:signalum_seeds>, 3000, 100,
+[null,<mysticalagriculture:redstone_seeds>,null,
+null,null,null,
+<mysticalagriculture:copper_seeds>,null,<mysticalagriculture:silver_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<thermalfoundation:storage_alloy:5>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:storage_alloy:5>], "astralsorcery.constellation.fornax");
+
+# Enderium Seeds
+recipes.remove(<mysticalagriculture:enderium_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/enderium_seeds", <mysticalagriculture:enderium_seeds>, 3000, 100,
+[null,<mysticalagriculture:enderman_seeds>,null,
+null,null,null,
+<mysticalagriculture:lead_seeds>,null,<mysticalagriculture:platinum_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<thermalfoundation:storage_alloy:7>,<thermalfoundation:storage_alloy:7>,<thermalfoundation:storage_alloy:7>,<thermalfoundation:storage_alloy:7>], "astralsorcery.constellation.aevitas");
+
+# Fluxed Electrum Seeds
+recipes.remove(<mysticalagriculture:fluxed_electrum_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/fluxed_electrum_seeds", <mysticalagriculture:fluxed_electrum_seeds>, 3000, 100,
+[null,<mysticalagriculture:electrum_seeds>,null,
+null,null,null,
+<mysticalagriculture:redstone_alloy_seeds>,null,<mysticalagriculture:blaze_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>], "astralsorcery.constellation.vorux");
+
+# Fluxed Electum Essence -> Fluxed Electrum Ingot
+recipes.addShaped(<contenttweaker:fluxed_electrum_ingot> * 3, [[<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>],[<mysticalagriculture:fluxed_electrum_essence>,null,<mysticalagriculture:fluxed_electrum_essence>],[<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>]]);
+
+# Knightslime Seeds
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:knightslime_seeds>, <tconstruct:metal:3>, "bootes", <mysticalagriculture:slime_seeds>);
+
+# Ardite Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:ardite_seeds>, <tconstruct:metal:1>, "mineralis");
+
+# Cobalt Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:cobalt_seeds>, <tconstruct:metal>, "octans");
+
+# Manyullyn Seeds
+recipes.remove(<mysticalagriculture:manyullyn_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/manyullin_seeds", <mysticalagriculture:manyullyn_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:cobalt_seeds>,null,<mysticalagriculture:ardite_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>], "astralsorcery.constellation.horologium");
+
+# Electrical Steel Seeds
+recipes.remove(<mysticalagriculture:electrical_steel_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/electrical_steel_seeds", <mysticalagriculture:electrical_steel_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:steel_seeds>,null,<mysticalagriculture:silicon_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<enderio:block_alloy>,<enderio:block_alloy>,<enderio:block_alloy>,<enderio:block_alloy>], "astralsorcery.constellation.armara");
+
+# Conductive Iron Seeds
+recipes.remove(<mysticalagriculture:conductive_iron_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/conductive_iron_seeds", <mysticalagriculture:conductive_iron_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:iron_seeds>,null,<mysticalagriculture:redstone_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>], "astralsorcery.constellation.bootes");
+
+# Dark Steel Seeds
+recipes.remove(<mysticalagriculture:dark_steel_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/dark_steel_seeds", <mysticalagriculture:dark_steel_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:steel_seeds>,null,<mysticalagriculture:refined_obsidian_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>], "astralsorcery.constellation.vorux");
+
+# Pulsating Iron Seeds
+recipes.remove(<mysticalagriculture:pulsating_iron_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/pulsating_iron_seeds", <mysticalagriculture:pulsating_iron_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:iron_seeds>,null,<mysticalagriculture:enderman_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<enderio:block_alloy:5>,<enderio:block_alloy:5>,<enderio:block_alloy:5>,<enderio:block_alloy:5>], "astralsorcery.constellation.aevitas");
+
+# Energetic Alloy Seeds
+recipes.remove(<mysticalagriculture:energetic_alloy_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/energetic_alloy_seeds", <mysticalagriculture:energetic_alloy_seeds>, 3000, 100,
+[null,<mysticalagriculture:gold_seeds>,null,
+null,null,null,
+<mysticalagriculture:redstone_seeds>,null,<mysticalagriculture:glowstone_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<enderio:block_alloy:1>,<enderio:block_alloy:1>,<enderio:block_alloy:1>,<enderio:block_alloy:1>], "astralsorcery.constellation.fornax");
+
+# Vibrant Alloy Seeds
+recipes.remove(<mysticalagriculture:vibrant_alloy_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/vibrant_alloy_seeds", <mysticalagriculture:vibrant_alloy_seeds>, 3000, 100,
+[null,null,null,
+<mysticalagriculture:energetic_alloy_seeds>,null,<mysticalagriculture:enderman_seeds>,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<enderio:block_alloy:2>,<enderio:block_alloy:2>,<enderio:block_alloy:2>,<enderio:block_alloy:2>], "astralsorcery.constellation.mineralis");
+
+# Manasteel Seeds
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:manasteel_seeds>, <botania:storage>, "octans", <mysticalagriculture:mithril_seeds>);
+
+# Elementium Seeds
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:elementium_seeds>, <botania:storage:2>, "alcara", <mysticalagriculture:manasteel_seeds>);
+
+# Electrotine Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:electrotine_seeds>, <projectred-core:resource_item:342>, "vicio");
+
+# Alumite Seeds
+recipes.remove(<mysticalagriculture:alumite_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/alumite_seeds", <mysticalagriculture:alumite_seeds>, 3000, 100,
+[null,<mysticalagriculture:aluminum_seeds>,null,
+null,null,null,
+<mysticalagriculture:iron_seeds>,null,<mysticalagriculture:obsidian_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>], "astralsorcery.constellation.alcara");
+
+# Coralium Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:coralium_seeds>, <abyssalcraft:ingotblock:1>, "ulteria");
+
+# Abyssalnite Seeds
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:abyssalnite_seeds>, <abyssalcraft:ingotblock>, "bootes", <mysticalagriculture:coralium_seeds>);
+
+# Dreaduium Seeds
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:dreadium_seeds>, <abyssalcraft:ingotblock:2>, "discidia", <mysticalagriculture:abyssalnite_seeds>);
+
+# Mithril Seeds
+recipes.remove(<mysticalagriculture:mithril_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/mithril_seeds", <mysticalagriculture:mithril_seeds>, 3000, 100,
+[<mysticalagriculture:platinum_seeds>,<mysticalagriculture:blaze_seeds>,<mysticalagriculture:blizz_seeds>,
+<mysticalagriculture:gold_seeds>,null,<mysticalagriculture:blitz_seeds>,
+<mysticalagriculture:osmium_seeds>,<mysticalagriculture:bronze_seeds>,<mysticalagriculture:basalz_seeds>,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<thermalfoundation:storage:8>,<thermalfoundation:storage:8>,<thermalfoundation:storage:8>,<thermalfoundation:storage:8>], "astralsorcery.constellation.horologium");
+
+# Iridium Seeds
+addTier4MysticalAgricultureSeed(<mysticalagriculture:iridium_seeds>, <thermalfoundation:storage:7>, "armara");
+
+# Lithium Seeds
+recipes.remove(<mysticalagriculture:lithium_seeds>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/lithium_seeds", <mysticalagriculture:lithium_seeds>, 3000, 100,
+[null,null,null,
+null,<mysticalagriculture:crafting:20>,null,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,
+<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>], "astralsorcery.constellation.vicio");
 
 print("ENDING MysticalAgriculture.zs");

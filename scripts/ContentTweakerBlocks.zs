@@ -290,8 +290,10 @@ val divinerpg_dimension_names_lower = ["eden", "wildwood", "apalachia", "skyther
 for dim in divinerpg_dimension_names_lower {
 
 	var dim_stone = VanillaFactory.createBlock(dim + "_stone", <blockmaterial:rock>);
-	dim_stone.setBlockHardness(18000000);
-	dim_stone.setBlockResistance(3600000);
+	#dim_stone.setBlockHardness(18000000);
+	#dim_stone.setBlockResistance(3600000);
+	dim_stone.setBlockHardness(-1);
+	dim_stone.setBlockResistance(-1);
 	dim_stone.setToolClass(null);
 	dim_stone.setWitherProof(true);
 	dim_stone.setToolLevel(16777215);
@@ -299,8 +301,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_stone.register();
 
 	var dim_bricks = VanillaFactory.createBlock(dim + "_bricks", <blockmaterial:rock>);
-	dim_bricks.setBlockHardness(18000000);
-	dim_bricks.setBlockResistance(3600000);
+	dim_bricks.setBlockHardness(-1);
+	dim_bricks.setBlockResistance(-1);
 	dim_bricks.setToolClass(null);
 	dim_bricks.setWitherProof(true);
 	dim_bricks.setToolLevel(16777215);
@@ -308,8 +310,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_bricks.register();
 
 	var dim_pillar = VanillaFactory.createBlock(dim + "_pillar", <blockmaterial:rock>);
-	dim_pillar.setBlockHardness(18000000);
-	dim_pillar.setBlockResistance(3600000);
+	dim_pillar.setBlockHardness(-1);
+	dim_pillar.setBlockResistance(-1);
 	dim_pillar.setToolClass(null);
 	dim_pillar.setWitherProof(true);
 	dim_pillar.setToolLevel(16777215);
@@ -317,8 +319,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_pillar.register();
 
 	var dim_floor = VanillaFactory.createBlock(dim + "_floor", <blockmaterial:rock>);
-	dim_floor.setBlockHardness(18000000);
-	dim_floor.setBlockResistance(3600000);
+	dim_floor.setBlockHardness(-1);
+	dim_floor.setBlockResistance(-1);
 	dim_floor.setToolClass(null);
 	dim_floor.setWitherProof(true);
 	dim_floor.setToolLevel(16777215);
@@ -326,8 +328,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_floor.register();
 
 	var dim_roof = VanillaFactory.createBlock(dim + "_roof", <blockmaterial:rock>);
-	dim_roof.setBlockHardness(18000000);
-	dim_roof.setBlockResistance(3600000);
+	dim_roof.setBlockHardness(-1);
+	dim_roof.setBlockResistance(-1);
 	dim_roof.setToolClass(null);
 	dim_roof.setWitherProof(true);
 	dim_roof.setToolLevel(16777215);
@@ -335,8 +337,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_roof.register();
 
 	var dim_glass = VanillaFactory.createBlock(dim + "_glass", <blockmaterial:glass>);
-	dim_glass.setBlockHardness(18000000);
-	dim_glass.setBlockResistance(3600000);
+	dim_glass.setBlockHardness(-1);
+	dim_glass.setBlockResistance(-1);
 	dim_glass.setBlockLayer("TRANSLUCENT");
 	dim_glass.setToolClass(null);
 	dim_glass.setLightOpacity(0);
@@ -348,8 +350,8 @@ for dim in divinerpg_dimension_names_lower {
 	dim_glass.register();
 
 	var dim_door = VanillaFactory.createBlock(dim + "_door", <blockmaterial:iron>);
-	dim_door.setBlockHardness(18000000);
-	dim_door.setBlockResistance(3600000);
+	dim_door.setBlockHardness(-1);
+	dim_door.setBlockResistance(-1);
 	dim_door.setToolClass(null);
 	dim_door.setWitherProof(true);
 	dim_door.setToolLevel(16777215);
@@ -472,5 +474,13 @@ ludicrous_ore.setToolClass("pickaxe");
 ludicrous_ore.setToolLevel(2);
 ludicrous_ore.setBlockSoundType(<soundtype:stone>);
 ludicrous_ore.register();
+
+var galactic_block = VanillaFactory.createBlock("galactic_block", <blockmaterial:iron>);
+galactic_block.setBlockHardness(12.0);
+galactic_block.setBlockResistance(16.0);
+galactic_block.setToolClass("pickaxe");
+galactic_block.setToolLevel(3);
+galactic_block.setBlockSoundType(<soundtype:metal>);
+galactic_block.register();
 
 print("ENDING ContentTweakerBlocks.zs");

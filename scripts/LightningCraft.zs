@@ -374,4 +374,14 @@ LightningInfusion.remove(<lightningcraft:mystic_legs>);
 LightningInfusion.remove(<lightningcraft:mystic_boots>);
 addLightningCraftArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>);
 
+# Kinetic Armor and Tools (don't work)
+recipes.remove(<lightningcraft:kinetic_helm>);
+recipes.remove(<lightningcraft:kinetic_chest>);
+recipes.remove(<lightningcraft:kinetic_legs>);
+recipes.remove(<lightningcraft:kinetic_boots>);
+recipes.remove(<lightningcraft:kinetic_sword>);
+recipes.remove(<lightningcraft:kinetic_pick>);
+recipes.remove(<lightningcraft:kinetic_axe>);
+recipes.remove(<lightningcraft:kinetic_shovel>);
+
 print("ENDING LightningCraft.zs");

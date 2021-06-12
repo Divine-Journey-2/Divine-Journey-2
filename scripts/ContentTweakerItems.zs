@@ -913,5 +913,8 @@ star_of_revelation.rarity = "EPIC";
 star_of_revelation.maxStackSize = 1;
 star_of_revelation.glowing = true;
 star_of_revelation.register();
+var galactic_ingot = VanillaFactory.createItem("galactic_ingot");
+galactic_ingot.rarity = "RARE";
+galactic_ingot.register();
 
 print("ENDING ContentTweakerItems.zs");

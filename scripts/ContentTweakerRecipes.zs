@@ -1204,6 +1204,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation
 [null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
 [<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
 [<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>]]);
+<contenttweaker:star_of_revelation>.addTooltip(format.red("Does not get consumed by regular crafting."));
+<contenttweaker:star_of_revelation>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
+# Galactic Ingot
+recipes.addShapeless(<contenttweaker:galactic_ingot> * 5, [<contenttweaker:star_of_revelation>.reuse(),<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:4>]);
+recipes.addShapeless(<contenttweaker:galactic_ingot> * 9, [<contenttweaker:galactic_block>]);
+
+# Galactic Block
+recipes.addShaped(<contenttweaker:galactic_block>, [[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>],[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>],[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>]]);
 
 print("ENDING ContentTweakerRecipes.zs");

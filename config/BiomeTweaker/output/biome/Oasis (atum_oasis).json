@@ -20,10 +20,10 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "RARE",
-    "OASIS",
     "LUSH",
-    "WET"
+    "WET",
+    "OASIS",
+    "RARE"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
