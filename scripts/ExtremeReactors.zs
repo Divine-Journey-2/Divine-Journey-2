@@ -4,6 +4,7 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import mods.thermalexpansion.Crucible;
 
 print("STARTING ExtremeReactors.zs");
 
@@ -106,5 +107,10 @@ recipes.addShaped(<bigreactors:turbinepowertaprf>, [[<bigreactors:turbinehousing
 # Ludicrite Block
 recipes.removeShaped(<bigreactors:blockludicrite>);
 recipes.addShaped(<bigreactors:blockludicrite>, [[<bigreactors:ingotblutonium>,<botania:manaresource:7>,<bigreactors:ingotblutonium>],[<botania:manaresource:7>,<enderutilities:enderpart:17>,<botania:manaresource:7>],[<bigreactors:ingotblutonium>,<botania:manaresource:7>,<bigreactors:ingotblutonium>]]);
+
+# Molten Blutonium in the Magma Crucible
+mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 144, <bigreactors:ingotblutonium>, 4000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 1296, <bigreactors:blockblutonium>, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 144, <bigreactors:dustblutonium>, 4000);
 
 print("ENDING ExtremeReactors.zs");

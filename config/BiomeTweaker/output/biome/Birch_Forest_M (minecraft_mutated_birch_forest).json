@@ -22,10 +22,10 @@
   "Dictionary Types": [
     "SUPER_BIRCH_TREES",
     "RARE",
-    "HILLS",
     "THEMED_TREES",
-    "FOREST",
-    "DENSE"
+    "DENSE",
+    "HILLS",
+    "FOREST"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

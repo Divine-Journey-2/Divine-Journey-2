@@ -21940,7 +21940,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "astralsorcery:itemcraftingcomponent",
+              "Count:3": 4,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "314:10": {
       "questID:3": 314,
@@ -21992,7 +22005,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "315:10": {
       "questID:3": 315,
@@ -22043,7 +22069,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:ingot",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "316:10": {
       "questID:3": 316,
@@ -22100,7 +22139,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bigreactors:ingotblutonium",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "317:10": {
       "questID:3": 317,
@@ -22182,7 +22234,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:cold_iron_ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "319:10": {
       "questID:3": 319,
@@ -22234,7 +22299,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:ingot",
+              "Count:3": 3,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "320:10": {
       "questID:3": 320,
@@ -22307,7 +22385,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:condensed_vis_crystal_sol",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "321:10": {
       "questID:3": 321,
@@ -22358,7 +22449,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:sparkling_aquamarine",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "322:10": {
       "questID:3": 322,
@@ -22409,7 +22513,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:cold_iron_ingot",
+              "Count:3": 24,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "323:10": {
       "questID:3": 323,
@@ -22472,7 +22589,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 8,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "324:10": {
       "questID:3": 324,
@@ -22559,7 +22689,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bloodmagic:slate",
+              "Count:3": 8,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "lightningcraft:stone_block",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "325:10": {
       "questID:3": 325,
@@ -22610,7 +22759,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 6,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "326:10": {
       "questID:3": 326,
@@ -22667,7 +22829,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "327:10": {
       "questID:3": 327,
@@ -22718,7 +22893,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:ingot",
+              "Count:3": 24,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "328:10": {
       "questID:3": 328,
@@ -22799,7 +22987,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:stone_block",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "329:10": {
       "questID:3": 329,
@@ -22857,7 +23058,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:fiery_unguent",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "330:10": {
       "questID:3": 330,
@@ -23020,7 +23234,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:lightning_charge",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "332:10": {
       "questID:3": 332,
@@ -23077,7 +23304,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bigreactors:ingotblutonium",
+              "Count:3": 24,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "333:10": {
       "questID:3": 333,
@@ -23141,7 +23381,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:potentia",
+              "Count:3": 24,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "334:10": {
       "questID:3": 334,
@@ -23198,7 +23451,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 3,
+              "Damage:2": 30,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "335:10": {
       "questID:3": 335,
@@ -23226,7 +23492,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "ROCK ON, DUDE",
+          "name:8": "What an Ore-deal!",
           "desc:8": "After exploding some Mystical Iron Ingots into Shattered Mystical Iron Crystals, alloy it into Stone to create Rock Crystal Ore. This will give Rock Crystals when broken by a player.\n\nRock Crystals have a random Size, Cutting, and Purity when obtained. Its not going to be relevant until later, but higher stats are always better.\n\n(PS. Rock Crystal Ore does NOT generate normally, this is the only way to obtain it.)"
         }
       },
@@ -23249,7 +23515,23 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "astralsorcery:itemjournal",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "336:10": {
       "questID:3": 336,
@@ -23302,7 +23584,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bloodmagic:slate",
+              "Count:3": 2,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "337:10": {
       "questID:3": 337,
@@ -23365,7 +23660,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:shattered_mystical_iron_crystal",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "338:10": {
       "questID:3": 338,
@@ -23430,7 +23738,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:sparkling_aquamarine",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "339:10": {
       "questID:3": 339,
@@ -23513,7 +23834,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "astralsorcery:itemcraftingcomponent",
+              "Count:3": 4,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "340:10": {
       "questID:3": 340,
@@ -23576,7 +23910,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:nether_star",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "contenttweaker:magical_leather",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "341:10": {
       "questID:3": 341,
@@ -23627,7 +23980,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 3,
+              "Damage:2": 30,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "342:10": {
       "questID:3": 342,
@@ -23727,7 +24093,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:condensed_vis_crystal_stellae",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "enderutilities:enderpart",
+              "Count:3": 8,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "343:10": {
       "questID:3": 343,
@@ -23780,7 +24165,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:stone_block",
+              "Count:3": 6,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "344:10": {
       "questID:3": 344,
@@ -23853,7 +24251,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:item_alloy_endergy_ingot",
+              "Count:3": 24,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "345:10": {
       "questID:3": 345,
@@ -23910,7 +24321,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:sparkling_aquamarine",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "346:10": {
       "questID:3": 346,
@@ -23967,7 +24391,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:otherworldly_tears",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "347:10": {
       "questID:3": 347,
@@ -24030,7 +24467,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:ingot",
+              "Count:3": 2,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "348:10": {
       "questID:3": 348,
@@ -24109,7 +24559,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ludicrous_ore",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "349:10": {
       "questID:3": 349,
@@ -24172,7 +24635,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "astralsorcery:itemusabledust",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "350:10": {
       "questID:3": 350,
@@ -24205,7 +24681,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Revealing the Stars!",
-          "desc:8": "Use your Astral Core to craft a Star of Revelation! This Star reveals the truth about the universe for you... Is there something outside?\n\nYou ponder.\n\nMaybe we can visit it....\n\n...Personally."
+          "desc:8": "Use your Astral Core to craft a Star of Revelation! This Star reveals the truth about the universe for you... Is there something outside? All this time you\u0027ve been looking up at the night sky, finding Constallations, using the power of Moonlight, and being truly mesmerized... Is it a place you could some day reach?\n\n...\n\nYou ponder.\n\nMaybe we can visit it....\n\n...Personally."
         }
       },
       "tasks:9": {
@@ -24230,7 +24706,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 12,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "351:10": {
       "questID:3": 351,
@@ -24282,7 +24771,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:condensed_vis_crystal_sol",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "352:10": {
       "questID:3": 352,
@@ -24410,7 +24912,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:mystical_iron_ingot",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "353:10": {
       "questID:3": 353,
@@ -24502,7 +25017,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 12,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "354:10": {
       "questID:3": 354,
@@ -24519,7 +25047,7 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:stone",
+            "id:8": "contenttweaker:galactic_ingot",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -24530,12 +25058,43 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Going Galactic!",
+          "desc:8": "Craft some Galactic Ingots with your Star of Revelation to unlock Galacticraft!\n\nNote: This does NOT use up the Star of Revelation, however AE2 is not too well-informed, and it eats up the Star anyway. Use an external crafter (like an RFTools Crafter) if you want to automate the creation of Galactic Ingots!"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "contenttweaker:galactic_ingot",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "astralsorcery:itemcraftingcomponent",
+              "Count:3": 3,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "355:10": {
       "questID:3": 355,
@@ -24612,7 +25171,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "astralsorcery:itemcraftingcomponent",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "356:10": {
       "questID:3": 356,
@@ -24675,7 +25247,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:condensed_vis_crystal_desiderium",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "357:10": {
       "questID:3": 357,
@@ -24726,7 +25311,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:ingot",
+              "Count:3": 3,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "358:10": {
       "questID:3": 358,
@@ -24863,7 +25461,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:mystical_iron_ingot",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "359:10": {
       "questID:3": 359,
@@ -24932,7 +25543,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "astralsorcery:itemconstellationpaper",
+              "Count:3": 2,
+              "tag:10": {
+                "astralsorcery:10": {}
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "360:10": {
       "questID:3": 360,
@@ -24992,7 +25622,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:condensed_vis_crystal_sol",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "361:10": {
       "questID:3": 361,
@@ -25098,7 +25741,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:demonic_elixir",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "363:10": {
       "questID:3": 655,

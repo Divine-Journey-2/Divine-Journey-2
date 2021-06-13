@@ -20,10 +20,10 @@
   "Enable Rain": true,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SPARSE",
     "LUSH",
-    "WET",
-    "HILLS"
+    "SPARSE",
+    "HILLS",
+    "WET"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

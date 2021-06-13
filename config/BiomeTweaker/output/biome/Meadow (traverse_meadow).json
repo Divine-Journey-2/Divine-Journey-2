@@ -21,8 +21,8 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "LUSH",
-    "WET",
-    "PLAINS"
+    "PLAINS",
+    "WET"
   ],
   "BiomeManager Entries": {
     "COOL Weights": [

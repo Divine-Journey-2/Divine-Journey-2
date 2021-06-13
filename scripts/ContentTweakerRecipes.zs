@@ -1005,6 +1005,12 @@ Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of
 
 # Flame Devourer Pendant
 recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<botania:rune:13>,<contenttweaker:travelers_tenacity>,<botania:rune:13>]]);
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("When you are inflicted with the ") + format.red("Hell Fire") + format.white(" status"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("effect by the Brazier, Right Clicking this item"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("will yield a piece of ") + format.gold("Ignition") + format.white(", which is used to"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("unlock ") + format.gold("LightningCraft") + format.white("."));
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("Check Codex Infernalis / Curses / Conflagration,"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("and use it with your own Taglock!"));
 
 # Ignition
 <contenttweaker:ignition>.addTooltip(format.white("Obtained by using a Flame Devourer Pendant"));
