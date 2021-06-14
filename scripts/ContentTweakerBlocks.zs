@@ -483,4 +483,12 @@ galactic_block.setToolLevel(3);
 galactic_block.setBlockSoundType(<soundtype:metal>);
 galactic_block.register();
 
+var tin_sheetmetal = VanillaFactory.createBlock("tin_sheetmetal", <blockmaterial:iron>);
+tin_sheetmetal.setBlockHardness(2.0);
+tin_sheetmetal.setBlockResistance(2.0);
+tin_sheetmetal.setToolClass("pickaxe");
+tin_sheetmetal.setToolLevel(1);
+tin_sheetmetal.setBlockSoundType(<soundtype:metal>);
+tin_sheetmetal.register();
+
 print("ENDING ContentTweakerBlocks.zs");

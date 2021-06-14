@@ -384,4 +384,15 @@ recipes.remove(<lightningcraft:kinetic_pick>);
 recipes.remove(<lightningcraft:kinetic_axe>);
 recipes.remove(<lightningcraft:kinetic_shovel>);
 
+# RF Lightning Generator
+recipes.remove(<lightningcraft:rf_receiver>);
+mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:rf_receiver>,
+[[<galacticraftcore:basic_item:14>,<galacticraftplanets:basic_item_venus:6>,null,null,null,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:basic_item:14>],
+[<galacticraftplanets:basic_item_venus:6>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<galacticraftplanets:basic_item_venus:6>],
+[null,<contenttweaker:tough_galactic_plating>,<quantumflux:craftingpiece:4>,<mekanism:basicblock2:5>,<quantumflux:craftingpiece:4>,<contenttweaker:tough_galactic_plating>,null],
+[null,<contenttweaker:tough_galactic_plating>,<mekanism:basicblock2:5>,<lightningcraft:static_generator>,<mekanism:basicblock2:5>,<contenttweaker:tough_galactic_plating>,null],
+[null,<contenttweaker:tough_galactic_plating>,<quantumflux:craftingpiece:4>,<mekanism:basicblock2:5>,<quantumflux:craftingpiece:4>,<contenttweaker:tough_galactic_plating>,null],
+[<galacticraftplanets:basic_item_venus:6>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<galacticraftplanets:basic_item_venus:6>],
+[<galacticraftcore:basic_item:14>,<galacticraftplanets:basic_item_venus:6>,null,null,null,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:basic_item:14>]]);
+
 print("ENDING LightningCraft.zs");

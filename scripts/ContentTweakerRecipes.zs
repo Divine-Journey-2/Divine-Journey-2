@@ -1220,4 +1220,52 @@ recipes.addShapeless(<contenttweaker:galactic_ingot> * 9, [<contenttweaker:galac
 # Galactic Block
 recipes.addShaped(<contenttweaker:galactic_block>, [[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>],[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>],[<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>,<contenttweaker:galactic_ingot>]]);
 
+# Tough Galactic Plating
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:tough_galactic_plating>, <thermalfoundation:material:327> * 4, null, 300, 1000, [<thermalfoundation:material:325> * 4, <thermalfoundation:material:328> * 4]);
+EIOAlloySmelter.addRecipe(<contenttweaker:tough_galactic_plating>, [<thermalfoundation:material:327> * 4, <thermalfoundation:material:325> * 4, <thermalfoundation:material:328> * 4], 60000);
+
+# Galactic Machine Frame
+recipes.addShaped(<contenttweaker:galactic_machine_frame>, [[<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>],[<contenttweaker:galactic_ingot>,<extendedcrafting:frame>,<contenttweaker:galactic_ingot>],[<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>]]);
+
+# Tin Sheetmetal
+recipes.addShaped(<contenttweaker:tin_sheetmetal> * 4, [[<thermalfoundation:material:321>,<thermalfoundation:material:129>,<thermalfoundation:material:321>],[<thermalfoundation:material:129>,null,<thermalfoundation:material:129>],[<thermalfoundation:material:321>,<thermalfoundation:material:129>,<thermalfoundation:material:321>]]);
+
+# Essence of Logic ingredients
+# craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
+
+val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];
+val logic_puzzle_modifiers = [<contenttweaker:age_modifier>,<contenttweaker:friends_modifier>,<contenttweaker:height_modifier>] as IItemStack[];
+val logic_puzzle_adders = [<contenttweaker:modifier_1>,<contenttweaker:modifier_m1>,<contenttweaker:modifier_10>,<contenttweaker:modifier_m10>,<contenttweaker:modifier_100>,<contenttweaker:modifier_m100>,<contenttweaker:modifier_1000>,<contenttweaker:modifier_m1000>] as IItemStack[];
+val logic_puzzle_adder_vals = [1, -1, 10, -10, 100, -100, 1000, -1000] as int[];
+#<minecraft:stone>.withTag({display: {Lore: ["Lore example", "Lore2"]}})
+for c in logic_puzzle_characters {
+	for m in 0 to 3 { # modifiers
+		for a in 0 to 8 { # adders
+			recipes.addShapeless(c.name + (m as string) + (a as string), c, [c.marked("input"),logic_puzzle_modifiers[m],logic_puzzle_adders[a]],
+				function(out,ins,cInfo) {
+
+					var age = ins.input.tag.Age as int;
+					var friends = ins.input.tag.Friends as int;
+					var height = ins.input.tag.Height as int;
+
+					if(m == 0) {
+						age += logic_puzzle_adder_vals[a];
+						age = max(0,age);
+					}
+					if(m == 1) {
+						friends += logic_puzzle_adder_vals[a];
+						friends = max(0,friends);
+					}
+					if(m == 2) {
+						height += logic_puzzle_adder_vals[a];
+						height = max(0,height);
+					}
+
+					return out.withTag({"Age": age, "Friends": friends, "Height": height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
+
+				}, null);
+		}
+	}
+}
+
 print("ENDING ContentTweakerRecipes.zs");
