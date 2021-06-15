@@ -1,0 +1,41 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_oil",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "empoweredoil",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "tree_oil",
+            "amount": 1000
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftcore:basic_item@13"
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "oil",
+            "amount": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "projectred-core:resource_item@301",
+            "amount": 2
+        }
+    ]
+}

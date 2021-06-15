@@ -875,23 +875,6 @@ essence_of_thought.register();
 var essence_of_motion = VanillaFactory.createItem("essence_of_motion");
 essence_of_motion.rarity = "EPIC";
 essence_of_motion.register();
-var debug = VanillaFactory.createItem("debug");
-debug.itemRightClick = function(stack, world, player, hand) {
-	if(world.remote) {
-        return "PASS";
-    }
-
-    #for t in player.tags{
-    #	player.sendChat(t);
-    #}
-    #player.sendChat("-----");
-    print('Player NBT starts here');
-    print(player.getNBT().asString());
-    #player.sendChat(player.getNBT().asString());
-
-    return "SUCCESS";
-};
-debug.register();
 var essence_of_cycles = VanillaFactory.createItem("essence_of_cycles");
 essence_of_cycles.rarity = "EPIC";
 essence_of_cycles.register();

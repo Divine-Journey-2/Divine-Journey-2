@@ -46,8 +46,6 @@ var recipe_list = [i[1][1], i[1][2], i[1][3], i[2][1], i[2][2], i[2][3], i[3][1]
 for item in additionals {
 	recipe_list += item;
 }
-
-mods.astralsorcery.Altar.removeAltarRecipe(name);
 mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starlight, 100, recipe_list, constellation);
 
 }
