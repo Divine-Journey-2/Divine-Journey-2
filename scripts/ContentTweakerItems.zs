@@ -933,7 +933,20 @@ modifier_m1000.register();
 var tough_galactic_plating = VanillaFactory.createItem("tough_galactic_plating");
 tough_galactic_plating.register();
 var galactic_machine_frame = VanillaFactory.createItem("galactic_machine_frame");
+galactic_machine_frame.rarity = "RARE";
 galactic_machine_frame.register();
-
+var cheesy_silicon_compound = VanillaFactory.createItem("cheesy_silicon_compound");
+cheesy_silicon_compound.register();
+var cheesy_silicon = VanillaFactory.createItem("cheesy_silicon");
+cheesy_silicon.register();
+var cheesy_wafer = VanillaFactory.createItem("cheesy_wafer");
+cheesy_wafer.rarity = "RARE";
+cheesy_wafer.register();
+var sapphire_accelerator = VanillaFactory.createItem("sapphire_accelerator");
+sapphire_accelerator.register();
+var spacerock = VanillaFactory.createItem("spacerock");
+spacerock.rarity = "RARE";
+spacerock.glowing = true;
+spacerock.register();
 
 print("ENDING ContentTweakerItems.zs");

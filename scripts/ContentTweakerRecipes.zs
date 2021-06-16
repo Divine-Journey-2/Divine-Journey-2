@@ -45,6 +45,7 @@ import crafttweaker.world.IBiome;
 import crafttweaker.recipes.ICraftingInfo;
 import crafttweaker.util.Position3f;
 import mods.inworldcrafting.ExplosionCrafting;
+import moretweaker.galacticraft.CircuitFabricator;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1230,9 +1231,26 @@ recipes.addShaped(<contenttweaker:galactic_machine_frame>, [[<contenttweaker:tou
 # Tin Sheetmetal
 recipes.addShaped(<contenttweaker:tin_sheetmetal> * 4, [[<thermalfoundation:material:321>,<thermalfoundation:material:129>,<thermalfoundation:material:321>],[<thermalfoundation:material:129>,null,<thermalfoundation:material:129>],[<thermalfoundation:material:321>,<thermalfoundation:material:129>,<thermalfoundation:material:321>]]);
 
+# Cheesy Silicon Compound
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, null, 160, 240, [<galacticraftcore:cheese_curd> * 12], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, [<projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12], 10000);
+IEAlloySmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12, 400);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12, 10000);
+
+# Cheesy Silicon
+furnace.addRecipe(<contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon_compound>);
+
+# Cheesy Wafer
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer> * 5, <quantumflux:craftingpiece:4>, <contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon>, <contenttweaker:rainbow_tablet>, <botania:rune:12>);
+
+# Sapphire Accelerator
+recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>],[<galacticraftcore:item_basic_moon:2>,<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:2>],[<galacticraftcore:item_basic_moon:2>,<simplyjetpacks:metaitemmods:11>,<galacticraftcore:item_basic_moon:2>]]);
+
+# Spacerock
+<contenttweaker:spacerock>.addTooltip(format.white("Found in custom ") + format.gray("Moon") + format.white(" Dungeons."));
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
-
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];
 val logic_puzzle_modifiers = [<contenttweaker:age_modifier>,<contenttweaker:friends_modifier>,<contenttweaker:height_modifier>] as IItemStack[];
 val logic_puzzle_adders = [<contenttweaker:modifier_1>,<contenttweaker:modifier_m1>,<contenttweaker:modifier_10>,<contenttweaker:modifier_m10>,<contenttweaker:modifier_100>,<contenttweaker:modifier_m100>,<contenttweaker:modifier_1000>,<contenttweaker:modifier_m1000>] as IItemStack[];

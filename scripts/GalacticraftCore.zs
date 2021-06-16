@@ -4,6 +4,8 @@ import mods.enderio.SliceNSplice;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import moretweaker.galacticraft.CircuitFabricator;
+import mods.immersiveengineering.ArcFurnace;
+import mods.enderio.AlloySmelter as EIOAlloySmelter;
 
 print("STARTING GalacticraftCore.zs");
 
@@ -196,7 +198,7 @@ recipes.addShaped(<galacticraftcore:space_glass_strong> * 5, [[<galacticraftcore
 
 # Oxygen Mask
 recipes.remove(<galacticraftcore:oxygen_mask>);
-recipes.addShaped(<galacticraftcore:oxygen_mask>, [[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<lightningcraft:mystic_helm>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>]]);
+recipes.addShaped(<galacticraftcore:oxygen_mask>, [[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<bewitchment:cold_iron_helmet>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>]]);
 
 # Oxygen Concentrator
 recipes.remove(<galacticraftcore:oxygen_concentrator>);
@@ -208,6 +210,93 @@ recipes.addShaped(<galacticraftcore:fluid_pipe> * 2, [[null,<galacticraftcore:ba
 
 # Oxygen Gear
 recipes.remove(<galacticraftcore:oxygen_gear>);
-recipes.addShaped(<galacticraftcore:oxygen_gear>, [[<galacticraftcore:oxygen_concentrator>,<lightningcraft:mystic_chest>,<galacticraftcore:oxygen_concentrator>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_legs>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:14>,<lightningcraft:mystic_boots>,<galacticraftcore:basic_item:14>]]);
+recipes.addShaped(<galacticraftcore:oxygen_gear>, [[null,<galacticraftcore:oxygen_concentrator>,null],[<galacticraftcore:heavy_plating>,<bewitchment:cold_iron_chestplate>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:14>,null,<galacticraftcore:basic_item:14>]]);
+
+# Canvas
+recipes.remove(<galacticraftcore:canvas>);
+recipes.addShapedMirrored(<galacticraftcore:canvas> * 2, [[null,<thaumcraft:fabric>,<lightningcraft:rod:9>],[<thaumcraft:fabric>,<thaumcraft:fabric>,<thaumcraft:fabric>],[<lightningcraft:rod:9>,<thaumcraft:fabric>,null]]);
+
+# Parachute
+recipes.remove(<galacticraftcore:parachute>);
+recipes.addShaped(<galacticraftcore:parachute>, [[<galacticraftcore:canvas>,<galacticraftcore:canvas>,<galacticraftcore:canvas>],[<lightningcraft:rod:9>,null,<lightningcraft:rod:9>],[null,<galacticraftcore:basic_item:13>,null]]);
+
+# Oxygen Collector
+recipes.remove(<galacticraftcore:collector>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:collector>,
+[[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<quantumflux:craftingpiece:4>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
+
+# Oxygen Compressor
+recipes.remove(<galacticraftcore:oxygen_compressor>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:oxygen_compressor>,
+[[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister:1>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister:1>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister:1>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:canister:1>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:machine:12>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister:1>,<quantumflux:craftingpiece:4>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister:1>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister:1>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister:1>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
+
+# Light Oxygen Tank
+recipes.removeShaped(<galacticraftcore:oxygen_tank_light_full:900>);
+recipes.addShaped(<galacticraftcore:oxygen_tank_light_full:900>, [[<botania:manaresource:4>,<botania:manaresource:4>,<botania:manaresource:4>],[<galacticraftcore:canister>,<mekanism:gastank>.withTag({tier: 3}),<galacticraftcore:canister>],[<galacticraftcore:basic_item:7>,<contenttweaker:condensed_vis_crystal_aer>,<galacticraftcore:basic_item:7>]]);
+
+# Medium Oxygen Tank
+recipes.removeShaped(<galacticraftcore:oxygen_tank_med_full:1800>);
+recipes.addShaped("galacticraft_medium_oxygen_tank", <galacticraftcore:oxygen_tank_med_full:1800>, [[<thaumcraft:metal_brass>,<thaumcraft:metal_brass>,<thaumcraft:metal_brass>],[<galacticraftcore:canister>,<galacticraftcore:oxygen_tank_light_full:*>.marked("tank"),<galacticraftcore:canister>],[<galacticraftcore:basic_item:9>,<contenttweaker:condensed_vis_crystal_aer>,<galacticraftcore:basic_item:9>]],
+function(out,ins,cInfo) { return out.withDamage(ins.tank.damage+900); }, null);
+
+# Heavy Oxygen Tank
+recipes.removeShaped(<galacticraftcore:oxygen_tank_heavy_full:2700>);
+recipes.addShaped("galacticraft_heavy_oxygen_tank", <galacticraftcore:oxygen_tank_heavy_full:2700>, [[<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>],[<galacticraftcore:canister>,<galacticraftcore:oxygen_tank_med_full:*>.marked("tank"),<galacticraftcore:canister>],[<galacticraftcore:heavy_plating>,<contenttweaker:condensed_vis_crystal_aer>,<galacticraftcore:heavy_plating>]],
+function(out,ins,cInfo) { return out.withDamage(ins.tank.damage+900); }, null);
+
+# Heavy Duty Helmet
+recipes.remove(<galacticraftcore:steel_helmet>);
+recipes.addShaped(<galacticraftcore:steel_helmet>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_helm>,<galacticraftcore:heavy_plating>]]);
+
+# Heavy Duty Chestplate
+recipes.remove(<galacticraftcore:steel_chestplate>);
+recipes.addShaped(<galacticraftcore:steel_chestplate>, [[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_chest>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
+
+# Heavy Duty Leggings
+recipes.remove(<galacticraftcore:steel_leggings>);
+recipes.addShaped(<galacticraftcore:steel_leggings>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_legs>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,null,<galacticraftcore:heavy_plating>]]);
+
+# Heavy Duty Boots
+recipes.remove(<galacticraftcore:steel_boots>);
+recipes.addShaped(<galacticraftcore:steel_boots>, [[<galacticraftcore:heavy_plating>,null,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_boots>,<galacticraftcore:heavy_plating>]]);
+
+# Raw Meteoric Iron (alt. recipe)
+mods.immersiveengineering.ArcFurnace.addRecipe(<galacticraftcore:meteoric_iron_raw>, <galacticraftcore:basic_block_moon:4> * 24, null, 240, 320, [<galacticraftcore:basic_block_moon:5> * 24, <contenttweaker:cheesy_wafer>]);
+EIOAlloySmelter.addRecipe(<galacticraftcore:meteoric_iron_raw>, [<galacticraftcore:basic_block_moon:4> * 24, <galacticraftcore:basic_block_moon:5> * 24, <contenttweaker:cheesy_wafer>], 16000);
+<galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("Obtained by mining Meteors on any Galacticraft Planet."));
+<galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("They're pretty rare, so an alternative recipe was also added."));
+
+# Compressed Meteoric Iron
+addGalacticraftBasicCompressedRecipe(<galacticraftcore:item_basic_moon:1>, <galacticraftcore:item_basic_moon>);
+
+# Heavy-Duty Plate (Tier 2)
+mods.GalacticraftTweaker.removeCompressorRecipe(<galacticraftplanets:item_basic_mars:3>);
+mods.GalacticraftTweaker.addCompressorShapelessRecipe(<galacticraftplanets:item_basic_mars:3> * 3, <galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>);
+
+# Tier 1 Booster
+recipes.remove(<galacticraftcore:engine:1>);
+recipes.addShaped(<galacticraftcore:engine:1>, [[<contenttweaker:sapphire_accelerator>,<contenttweaker:sapphire_accelerator>,<contenttweaker:sapphire_accelerator>],[<galacticraftcore:item_basic_moon:1>,<contenttweaker:spacerock>,<galacticraftcore:item_basic_moon:1>],[<simplyjetpacks:metaitemmods:24>,<galacticraftcore:air_vent>,<simplyjetpacks:metaitemmods:24>]]);
+
+# NASA Workbench Schematic (Moon Buggy)
+recipes.addShapeless(<galacticraftcore:schematic>, [<galacticraftcore:schematic:1>]);
+<galacticraftcore:schematic>.addTooltip(format.white("Can be found in underground ") + format.gray("Moon") + format.white(" Dungeons."));
+<galacticraftcore:schematic>.addTooltip(format.white("Can also be converted from the ") + format.blue("Tier 2 Rocket Schematic") + format.white("."));
+
+# NASA Workbench Schematic (Tier 2 Rocket)
+recipes.addShapeless(<galacticraftcore:schematic:1>, [<galacticraftcore:schematic>]);
+<galacticraftcore:schematic:1>.addTooltip(format.white("Can be found in underground ") + format.gray("Moon") + format.white(" Dungeons."));
+<galacticraftcore:schematic:1>.addTooltip(format.white("Can also be converted from the ") + format.blue("Moon Buggy") + format.white("."));
 
 print("ENDING GalacticraftCore.zs");

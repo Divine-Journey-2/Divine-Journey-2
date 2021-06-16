@@ -35,4 +35,8 @@ recipes.addShaped(<planetprogression:dish_keycard>, [[<galacticraftcore:basic_it
 recipes.remove(<planetprogression:telescope>);
 recipes.addShapedMirrored(<planetprogression:telescope>, [[null,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>],[<galacticraftcore:basic_item:9>,<astralsorcery:blockobservatory>,<galacticraftcore:basic_item:8>],[<lightningcraft:rod:9>,null,<lightningcraft:rod:9>]]);
 
+# Satellite Rocket Launch Pad
+recipes.remove(<planetprogression:advanced_launch_pad>);
+recipes.addShaped(<planetprogression:advanced_launch_pad> * 5, [[<galacticraftcore:basic_item>,<galacticraftcore:basic_item>,<galacticraftcore:basic_item>],[<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>]]);
+
 print("ENDING PlanetProgression.zs");

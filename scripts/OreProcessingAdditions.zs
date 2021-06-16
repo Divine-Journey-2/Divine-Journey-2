@@ -611,4 +611,10 @@ furnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcr
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>, 2000);
 mods.enderio.AlloySmelter.addRecipe(<astralsorcery:itemcraftingcomponent:1>, [<astralsorcery:itemcraftingcomponent:2>], 2000);
 
+# Lunar Sapphire
+addOreToGemProcessing(<galacticraftcore:basic_block_moon:6>, <galacticraftcore:item_basic_moon:2>, null, 2, 3);
+
+# Cheese Curd
+addOreToGemProcessing(<galacticraftcore:basic_block_moon:2>, <galacticraftcore:cheese_curd>, null, 2, 3);
+
 print("ENDING OreProcessingAdditions.zs");
