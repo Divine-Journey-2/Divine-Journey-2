@@ -39,4 +39,15 @@ recipes.addShapedMirrored(<planetprogression:telescope>, [[null,<galacticraftcor
 recipes.remove(<planetprogression:advanced_launch_pad>);
 recipes.addShaped(<planetprogression:advanced_launch_pad> * 5, [[<galacticraftcore:basic_item>,<galacticraftcore:basic_item>,<galacticraftcore:basic_item>],[<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>]]);
 
+# Satellite Rocket Launch Module
+recipes.remove(<planetprogression:satellite_launcher>);
+mods.extendedcrafting.TableCrafting.addShaped(<planetprogression:satellite_launcher>,
+[[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<galacticraftcore:basic_item:19>,<galacticraftcore:basic_item:19>,<galacticraftcore:basic_item:19>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<quantumflux:craftingpiece:4>,<contenttweaker:cheesy_wafer>,<galacticraftcore:basic_item:13>,<galacticraftplanets:mars_machine:8>,<galacticraftcore:basic_item:13>,<contenttweaker:cheesy_wafer>,<quantumflux:craftingpiece:4>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
 print("ENDING PlanetProgression.zs");

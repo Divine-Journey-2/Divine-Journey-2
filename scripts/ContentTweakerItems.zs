@@ -948,5 +948,7 @@ var spacerock = VanillaFactory.createItem("spacerock");
 spacerock.rarity = "RARE";
 spacerock.glowing = true;
 spacerock.register();
+var desh_dust = VanillaFactory.createItem("desh_dust");
+desh_dust.register();
 
 print("ENDING ContentTweakerItems.zs");

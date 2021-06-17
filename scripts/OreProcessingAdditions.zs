@@ -617,4 +617,9 @@ addOreToGemProcessing(<galacticraftcore:basic_block_moon:6>, <galacticraftcore:i
 # Cheese Curd
 addOreToGemProcessing(<galacticraftcore:basic_block_moon:2>, <galacticraftcore:cheese_curd>, null, 2, 3);
 
+# Desh Ore -> Desh Dust -> Desh Ingot
+addMaterialToDustCrushing(<galacticraftplanets:item_basic_mars:2>, <contenttweaker:desh_dust>);
+addOreDoubling(<galacticraftplanets:mars:2>, <contenttweaker:desh_dust>, <galacticraftplanets:item_basic_mars:2>);
+addDustSmelting(<contenttweaker:desh_dust>, <galacticraftplanets:item_basic_mars:2>);
+
 print("ENDING OreProcessingAdditions.zs");

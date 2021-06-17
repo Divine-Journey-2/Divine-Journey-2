@@ -297,6 +297,194 @@ recipes.addShapeless(<galacticraftcore:schematic>, [<galacticraftcore:schematic:
 # NASA Workbench Schematic (Tier 2 Rocket)
 recipes.addShapeless(<galacticraftcore:schematic:1>, [<galacticraftcore:schematic>]);
 <galacticraftcore:schematic:1>.addTooltip(format.white("Can be found in underground ") + format.gray("Moon") + format.white(" Dungeons."));
-<galacticraftcore:schematic:1>.addTooltip(format.white("Can also be converted from the ") + format.blue("Moon Buggy") + format.white("."));
+<galacticraftcore:schematic:1>.addTooltip(format.white("Can also be converted from the ") + format.blue("Moon Buggy Schematic") + format.white("."));
+
+# Dungeon Locator
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:dungeonfinder>,
+[[null,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,null],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<thaumcraft:ingot:2>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<contenttweaker:woodland_mansion_locator_token>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<botania:magnetringgreater>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[null,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,null]]);
+
+# Advanced Compressor
+recipes.remove(<galacticraftcore:machine4>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:machine4>,
+[[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<mekanism:basicblock2:5>,<mekanism:basicblock2:6>,<contenttweaker:cheesy_wafer>,<mekanism:basicblock2:6>,<mekanism:basicblock2:5>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<mekanism:basicblock2:6>,<contenttweaker:cheesy_wafer>,<galacticraftcore:item_basic_moon:1>,<contenttweaker:cheesy_wafer>,<mekanism:basicblock2:6>,<galacticraftcore:heavy_plating>],
+[<quantumflux:craftingpiece:4>,<contenttweaker:cheesy_wafer>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:machine2>,<galacticraftcore:item_basic_moon:1>,<contenttweaker:cheesy_wafer>,<quantumflux:craftingpiece:4>],
+[<galacticraftcore:heavy_plating>,<mekanism:basicblock2:6>,<contenttweaker:cheesy_wafer>,<galacticraftcore:item_basic_moon:1>,<contenttweaker:cheesy_wafer>,<mekanism:basicblock2:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<mekanism:basicblock2:5>,<mekanism:basicblock2:6>,<contenttweaker:cheesy_wafer>,<mekanism:basicblock2:6>,<mekanism:basicblock2:5>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
+
+# Hidden Redstone Wire
+recipes.remove(<galacticraftcore:concealed_redstone>);
+recipes.addShaped(<galacticraftcore:concealed_redstone> * 4, [[null,<galacticraftcore:basic_block_core:4>,null],[<galacticraftcore:basic_block_core:4>,<projectred-transmission:wire>,<galacticraftcore:basic_block_core:4>],[null,<galacticraftcore:basic_block_core:4>,null]]);
+
+# Heavy Duty Sword
+recipes.remove(<galacticraftcore:steel_sword>);
+recipes.addShaped(<galacticraftcore:steel_sword>, [[<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>],[<lightningcraft:mystic_sword>]]);
+
+# Heavy Duty Pickaxe
+recipes.remove(<galacticraftcore:steel_pickaxe>);
+recipes.addShaped(<galacticraftcore:steel_pickaxe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<lightningcraft:mystic_pick>,null],[null,<contenttweaker:galactic_ingot>,null]]);
+
+# Heavy Duty Shovel
+recipes.remove(<galacticraftcore:steel_shovel>);
+recipes.addShaped(<galacticraftcore:steel_shovel>, [[<galacticraftcore:heavy_plating>],[<lightningcraft:mystic_shovel>],[<contenttweaker:galactic_ingot>]]);
+
+# Heavy Duty Axe
+recipes.remove(<galacticraftcore:steel_axe>);
+recipes.addShapedMirrored(<galacticraftcore:steel_axe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_axe>],[null,<contenttweaker:galactic_ingot>]]);
+
+# Heavy Duty Hoe
+recipes.remove(<galacticraftcore:steel_hoe>);
+recipes.addShapedMirrored(<galacticraftcore:steel_hoe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<lightningcraft:mystic_hoe>],[null,<contenttweaker:galactic_ingot>]]);
+
+# Pre-Launch Checklist
+recipes.remove(<galacticraftcore:prelaunch_checklist>);
+recipes.addShapeless(<galacticraftcore:prelaunch_checklist>, [<minecraft:book>,<galacticraftcore:canvas>]);
+
+# Coal Generator
+recipes.remove(<galacticraftcore:machine>);
+recipes.addShaped(<galacticraftcore:machine>, [[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>],[<enderio:block_stirling_generator>,<contenttweaker:galactic_machine_frame>,<enderio:block_stirling_generator>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>]]);
+
+# Tier 1 Dungeon Key
+<galacticraftcore:key>.addTooltip(format.white("Dropped by the ") + format.gray("Evolved Skeleton Boss"));
+<galacticraftcore:key>.addTooltip(format.white("in the underground ") + format.gray("Moon Dungeon."));
+
+# Basic Solar Panel
+recipes.remove(<galacticraftcore:solar>);
+recipes.addShaped(<galacticraftcore:solar>, [[<galacticraftcore:basic_item:1>,<galacticraftcore:basic_item:1>,<galacticraftcore:basic_item:1>],[<galacticraftcore:basic_item:9>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:basic_item:9>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:13>,<galacticraftcore:basic_item:9>]]);
+
+# Advanced Solar Panel
+recipes.remove(<galacticraftcore:solar:4>);
+recipes.addShaped(<galacticraftcore:solar:4>, [[<galacticraftcore:basic_item:1>,<galacticraftcore:basic_item:1>,<galacticraftcore:basic_item:1>],[<galacticraftcore:heavy_plating>,<galacticraftcore:solar>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:14>,<galacticraftcore:heavy_plating>]]);
+
+# Energy Storage Module
+recipes.remove(<galacticraftcore:machine_tiered>);
+recipes.addShaped(<galacticraftcore:machine_tiered>, [[<galacticraftcore:basic_item:9>,<galacticraftcore:battery:100>,<galacticraftcore:basic_item:9>],[<galacticraftcore:battery:100>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:battery:100>],[<galacticraftcore:basic_item:9>,<plustic:osgloglasblock>,<galacticraftcore:basic_item:9>]]);
+
+# Tin Wall Block
+recipes.remove(<galacticraftcore:basic_block_core:4>);
+recipes.addShaped(<galacticraftcore:basic_block_core:4> * 4, [[<ore:stone>,<galacticraftcore:basic_item:7>,<ore:stone>],[<galacticraftcore:basic_item:7>,null,<galacticraftcore:basic_item:7>],[<ore:stone>,<galacticraftcore:basic_item:7>,<ore:stone>]]);
+
+# Oxygen Bubble Distributor
+recipes.remove(<galacticraftcore:distributor>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:distributor>,
+[[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:air_fan>,<galacticraftcore:air_fan>,<galacticraftcore:air_fan>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:air_vent>,<galacticraftcore:air_fan>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:air_fan>,<galacticraftcore:air_vent>,<quantumflux:craftingpiece:4>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:air_fan>,<galacticraftcore:air_fan>,<galacticraftcore:air_fan>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Oxygen Decompressor
+recipes.remove(<galacticraftcore:oxygen_compressor:4>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:oxygen_compressor:4>,
+[[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:machine:12>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<quantumflux:craftingpiece:4>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftcore:oxygen_concentrator>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:canister>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:heavy_plating>],
+[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
+
+# Oxygen Sealer
+recipes.remove(<galacticraftcore:sealer>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:sealer>,
+[[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:8>,<galacticraftcore:air_vent>,<galacticraftcore:air_fan>,<galacticraftcore:air_vent>,<galacticraftcore:basic_item:8>,<galacticraftplanets:item_basic_mars:3>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:basic_item:8>,<galacticraftcore:air_fan>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:air_fan>,<galacticraftcore:basic_item:8>,<quantumflux:craftingpiece:4>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:8>,<galacticraftcore:air_vent>,<galacticraftcore:air_fan>,<galacticraftcore:air_vent>,<galacticraftcore:basic_item:8>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftcore:basic_item:8>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Oxygen Detector
+recipes.remove(<galacticraftcore:oxygen_detector>);
+recipes.addShaped(<galacticraftcore:oxygen_detector>, [[<galacticraftplanets:item_basic_mars:3>,<enderio:block_detector_block>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:air_vent>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:air_vent>],[<galacticraftplanets:item_basic_mars:3>,<enderio:block_detector_block>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Hidden Redstone Repeater
+recipes.remove(<galacticraftcore:concealed_repeater>);
+recipes.addShaped(<galacticraftcore:concealed_repeater>, [[null,<galacticraftcore:basic_block_core:4>,null],[<galacticraftcore:basic_block_core:4>,<projectred-integration:gate:10>,<galacticraftcore:basic_block_core:4>],[null,<galacticraftcore:basic_block_core:4>,null]]);
+
+# Air Lock Controller
+recipes.remove(<galacticraftcore:air_lock_frame:1>);
+recipes.addShaped(<galacticraftcore:air_lock_frame:1>, [[<galacticraftcore:air_lock_frame>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:air_lock_frame>],[<galacticraftcore:item_basic_moon:1>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:item_basic_moon:1>],[<galacticraftcore:air_lock_frame>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:air_lock_frame>]]);
+
+# Oxygen Storage Module
+recipes.remove(<galacticraftcore:machine2:8>);
+recipes.addShaped(<galacticraftcore:machine2:8>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:oxygen_tank_heavy_full:*>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:oxygen_tank_heavy_full:*>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Deconstructor
+recipes.remove(<galacticraftcore:machine2:12>);
+recipes.addShapedMirrored(<galacticraftcore:machine2:12>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>],[<lightningcraft:lightning_breaker>,<contenttweaker:galactic_machine_frame>,<actuallyadditions:block_atomic_reconstructor>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Chromatic Applicator
+recipes.remove(<galacticraftcore:machine3>);
+recipes.addShaped(<galacticraftcore:machine3>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:heavy_plating>],[<enderio:block_painter>,<contenttweaker:galactic_machine_frame>,<enderio:block_painter>],[<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:1>,<galacticraftcore:heavy_plating>]]);
+
+# Electric Furnace
+recipes.remove(<galacticraftcore:machine_tiered:4>);
+recipes.addShaped(<galacticraftcore:machine_tiered:4>, [[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>],[<enderio:block_simple_furnace>,<contenttweaker:galactic_machine_frame>,<enderio:block_simple_furnace>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>]]);
+
+# Magnetic Crafting Table
+recipes.remove(<galacticraftcore:magnetic_table>);
+recipes.addShaped(<galacticraftcore:magnetic_table>, [[null,<galacticraftcore:basic_item:11>,null],[<galacticraftcore:basic_item:11>,<ore:workbench>,<galacticraftcore:basic_item:11>],[null,<quantumflux:magnet>,null]]);
+
+# Display Screen
+recipes.remove(<galacticraftcore:view_screen>);
+recipes.addShaped(<galacticraftcore:view_screen>, [[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:13>,<galacticraftcore:basic_item:9>],[<galacticraftcore:basic_item:13>,<rftools:screen>,<galacticraftcore:basic_item:13>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:13>,<galacticraftcore:basic_item:9>]]);
+
+# Telemetry Unit
+recipes.remove(<galacticraftcore:telemetry>);
+recipes.addShaped(<galacticraftcore:telemetry>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:9>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:basic_item:9>],[<galacticraftplanets:item_basic_mars:3>,<extrautils2:scanner>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Electric Arc Furnace
+recipes.remove(<galacticraftcore:machine_tiered:12>);
+recipes.addShaped(<galacticraftcore:machine_tiered:12>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:machine_tiered:4>,<galacticraftcore:basic_item:14>,<galacticraftcore:machine_tiered:4>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Hydraulic Platform
+recipes.remove(<galacticraftcore:platform>);
+recipes.addShaped(<galacticraftcore:platform> * 4, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:9>,<contenttweaker:galactic_machine_frame>,<galacticraftcore:basic_item:9>],[<galacticraftplanets:item_basic_mars:3>,<rftools:elevator>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Buggy Fueling Pad
+recipes.remove(<galacticraftcore:landing_pad:1>);
+recipes.addShaped(<galacticraftcore:landing_pad:1> * 3, [[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>],[<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>,<galacticraftcore:landing_pad>]]);
+
+# Buggy Wheel
+recipes.remove(<galacticraftcore:buggymat>);
+recipes.addShaped(<galacticraftcore:buggymat>, [[<galacticraftcore:basic_item:14>,<contenttweaker:star_leather>,<galacticraftcore:basic_item:14>],[<contenttweaker:star_leather>,<galacticraftcore:basic_item:9>,<contenttweaker:star_leather>],[<galacticraftcore:basic_item:14>,<contenttweaker:star_leather>,<galacticraftcore:basic_item:14>]]);
+
+# Buggy Seat
+recipes.remove(<galacticraftcore:buggymat:1>);
+recipes.addShaped(<galacticraftcore:buggymat:1>, [[<galacticraftplanets:item_basic_mars:3>,null,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<bibliocraft:seatback5>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:14>,<bibliocraft:seat>,<galacticraftcore:basic_item:14>]]);
+
+# Buggy Storage Box
+recipes.remove(<galacticraftcore:buggymat:2>);
+recipes.addShaped(<galacticraftcore:buggymat:2>, [[<galacticraftcore:basic_item:9>,<contenttweaker:cheesy_wafer>,<galacticraftcore:basic_item:9>],[<galacticraftcore:basic_item:9>,<actuallyadditions:block_giant_chest_large>,<galacticraftcore:basic_item:9>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>]]);
+
+# Fluid Tank
+recipes.remove(<galacticraftcore:fluid_tank>);
+recipes.addShaped(<galacticraftcore:fluid_tank>, [[<ore:paneGlassColorless>,<galacticraftcore:basic_item:13>,<ore:paneGlassColorless>],[<ore:paneGlassColorless>,<enderio:block_tank>,<ore:paneGlassColorless>],[<ore:paneGlassColorless>,<ore:paneGlassColorless>,<ore:paneGlassColorless>]]);
+
+# Cargo Loader
+recipes.remove(<galacticraftcore:cargo>);
+recipes.addShapedMirrored(<galacticraftcore:cargo>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:9>,<galacticraftcore:heavy_plating>],[<actuallyadditions:block_giant_chest_large>,<contenttweaker:galactic_machine_frame>,<enderutilities:inserter>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:9>,<galacticraftcore:heavy_plating>]]);
+
+# Cargo Unloader
+recipes.remove(<galacticraftcore:cargo:4>);
+recipes.addShapedMirrored(<galacticraftcore:cargo:4>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:9>,<galacticraftcore:heavy_plating>],[<actuallyadditions:block_giant_chest_large>,<contenttweaker:galactic_machine_frame>,<thermaldynamics:servo:4>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:9>,<galacticraftcore:heavy_plating>]]);
+
+# Sensor Lens
+recipes.remove(<galacticraftcore:sensor_lens>);
+recipes.addShaped(<galacticraftcore:sensor_lens>, [[<galacticraftcore:item_basic_moon:1>,null,<galacticraftcore:item_basic_moon:1>],[null,<astralsorcery:itemcoloredlens:5>,null],[<galacticraftcore:item_basic_moon:1>,<rftools:sensor_block>,<galacticraftcore:item_basic_moon:1>]]);
+
+# Sensor Glasses
+recipes.remove(<galacticraftcore:sensor_glasses>);
+recipes.addShaped(<galacticraftcore:sensor_glasses>, [[null,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<galacticraftcore:sensor_lens>,<actuallyadditions:item_engineer_goggles_advanced>,<galacticraftcore:sensor_lens>]]);
 
 print("ENDING GalacticraftCore.zs");
