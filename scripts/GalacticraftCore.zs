@@ -487,4 +487,8 @@ recipes.addShaped(<galacticraftcore:sensor_lens>, [[<galacticraftcore:item_basic
 recipes.remove(<galacticraftcore:sensor_glasses>);
 recipes.addShaped(<galacticraftcore:sensor_glasses>, [[null,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<galacticraftcore:sensor_lens>,<actuallyadditions:item_engineer_goggles_advanced>,<galacticraftcore:sensor_lens>]]);
 
+# Ambient Thermal Controller
+recipes.remove(<galacticraftcore:basic_item:20>);
+recipes.addShapedMirrored(<galacticraftcore:basic_item:20>, [[<contenttweaker:cheesy_wafer>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],[<mekanism:basicblock:14>,<projectred-core:resource_item:410>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>]]);
+
 print("ENDING GalacticraftCore.zs");

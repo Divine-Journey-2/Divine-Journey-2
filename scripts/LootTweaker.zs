@@ -234,14 +234,14 @@ remove_entry("bewitchment:entities/druden", "druden", "bewitchment:heart");
 add_entry("bewitchment:entities/ghost", "custom_loot", <contenttweaker:shard_of_the_grotesque>, 1, 2, 0, 0, 100);
 
 # Galacticraft Dungeon removals
-remove_entry("galacticraftcore/dungeon_tier_1", "dungeon_tier_1", "galacticraftcore:steel_shovel");
-remove_entry("galacticraftcore/dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_boots");
-remove_entry("galacticraftcore/dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_chestplate");
-remove_entry("galacticraftcore/dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_helmet");
-remove_entry("galacticraftcore/dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_leggings");
-remove_entry("galacticraftcore/dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_boots");
-remove_entry("galacticraftcore/dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_chestplate");
-remove_entry("galacticraftcore/dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_helmet");
-remove_entry("galacticraftcore/dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_leggings");
+remove_entry("galacticraftcore:dungeon_tier_1", "dungeon_tier_1", "galacticraftcore:steel_shovel");
+remove_entry("galacticraftcore:dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_boots");
+remove_entry("galacticraftcore:dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_chestplate");
+remove_entry("galacticraftcore:dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_helmet");
+remove_entry("galacticraftcore:dungeon_tier_2", "dungeon_tier_2", "galacticraftplanets:desh_leggings");
+remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_boots");
+remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_chestplate");
+remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_helmet");
+remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_leggings");
 
 print("ENDING LootTweaker.zs");

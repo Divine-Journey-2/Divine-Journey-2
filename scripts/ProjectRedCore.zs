@@ -77,4 +77,8 @@ addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:310>, <minecra
 # Electrotine Silicon Compound
 addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:312>, <contenttweaker:electrotine> * 24);
 
+# Motor
+recipes.remove(<projectred-core:resource_item:410>);
+recipes.addShaped(<projectred-core:resource_item:410>, [[null,<galacticraftcore:air_vent>,null],[<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:engine>,<galacticraftplanets:item_basic_mars:3>]]);
+
 print("ENDING ProjectRedCore.zs");

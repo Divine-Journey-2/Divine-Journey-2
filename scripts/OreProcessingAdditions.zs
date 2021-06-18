@@ -622,4 +622,16 @@ addMaterialToDustCrushing(<galacticraftplanets:item_basic_mars:2>, <contenttweak
 addOreDoubling(<galacticraftplanets:mars:2>, <contenttweaker:desh_dust>, <galacticraftplanets:item_basic_mars:2>);
 addDustSmelting(<contenttweaker:desh_dust>, <galacticraftplanets:item_basic_mars:2>);
 
+# Solar Ore -> Solar Dust
+recipes.addShapeless(<galacticraftplanets:basic_item_venus:4> * 2, [<galacticraftplanets:venus:13>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>, 4000);
+AACrusher.addRecipe(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
+mods.astralsorcery.Grindstone.addRecipe(<galacticraftplanets:venus:13>, <galacticraftplanets:basic_item_venus:4>);
+Grinder.addRecipe(<galacticraftplanets:basic_item_venus:4>, <galacticraftplanets:venus:13>, 4, <galacticraftplanets:basic_item_venus:4>, 0.9);
+mods.thermalexpansion.Pulverizer.addRecipe(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>, 4000);
+EUCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
+mods.enderio.SagMill.addRecipe([<galacticraftplanets:basic_item_venus:4> * 2], [100], <galacticraftplanets:venus:13>);
+LightningCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
+mods.mekanism.enrichment.addRecipe(<galacticraftplanets:venus:13>, <galacticraftplanets:basic_item_venus:4> * 2);
+
 print("ENDING OreProcessingAdditions.zs");

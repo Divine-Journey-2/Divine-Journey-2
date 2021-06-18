@@ -1,0 +1,39 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_empowered_thermal_controller",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "bacterialsludge",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "rocket_fuel",
+            "amount": 1000
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftcore:basic_item@20"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:secret_alien_technology"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:empowered_thermal_controller"
+        }
+    ]
+}

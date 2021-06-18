@@ -109,11 +109,11 @@
           "invert_shade": false
         },
         "thick_borders": false,
-        "colour": -1,
-        "hover": -1,
-        "border": 0,
-        "border_hover": 0,
-        "text_colour": 14737632,
+        "colour": -3801089,
+        "hover": -3801089,
+        "border": -11842741,
+        "border_hover": -11842741,
+        "text_colour": 16777215,
         "text_hover": 16777120,
         "text_shadow": true,
         "icon_subs": {

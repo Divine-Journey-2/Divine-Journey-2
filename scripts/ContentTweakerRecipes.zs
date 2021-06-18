@@ -1249,6 +1249,15 @@ recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:chees
 # Spacerock
 <contenttweaker:spacerock>.addTooltip(format.white("Found in custom ") + format.gray("Moon") + format.white(" Dungeons."));
 
+# Secret Alien Technology
+<contenttweaker:secret_alien_technology>.addTooltip(format.white("Fouund in custom ") + format.red("Mars") + format.white(" dungeons."));
+
+# Chunk of the Meteor that ended the Era of Dinosaurs
+<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>.addTooltip(format.white("Found in custom dungeons in the ") + format.gray("Asteroid Belt") + format.white("."));
+
+# Fragment of the Sun
+<contenttweaker:fragment_of_the_sun>.addTooltip(format.white("Found in custom ") + format.gold("Venus") + format.white(" dungeons."));
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

@@ -2,7 +2,7 @@
     "registryname": "laser_printer",
     "localizedname": "Laser Printer",
     "requires-blueprint": true,
-    "color": "D5DADB",
+    "color": "E9F4F5",
     "parts": [
         {
             "x": -1,

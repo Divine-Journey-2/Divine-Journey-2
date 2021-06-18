@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/chunk_of_the_meteor_that_ended_the_era_of_dinosaurs"
+  }
+}

@@ -78,7 +78,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftplanets:mars_machine_
 [[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
 [<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:6>,<galacticraftcore:air_vent>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftplanets:item_basic_mars:3>],
 [<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:machine_tiered:4>,<mekanism:machineblock2>,<galacticraftcore:machine_tiered:4>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
-[<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:6>,<mekanism:machineblock2>,<galacticraftcore:oxygen_compressor>,<mekanism:machineblock2>,<galacticraftplanets:item_basic_mars:6>,<quantumflux:craftingpiece:4>],
+[<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:6>,<mekanism:machineblock2>,<galacticraftcore:oxygen_compressor:4>,<mekanism:machineblock2>,<galacticraftplanets:item_basic_mars:6>,<quantumflux:craftingpiece:4>],
 [<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:air_vent>,<galacticraftcore:machine_tiered:4>,<mekanism:machineblock2>,<galacticraftcore:machine_tiered:4>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],
 [<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:6>,<galacticraftcore:air_vent>,<galacticraftcore:oxygen_tank_heavy_full:*>,<galacticraftplanets:item_basic_mars:3>],
 [<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
@@ -198,11 +198,11 @@ recipes.addShaped(<galacticraftplanets:heavy_nose_cone>, [[null,<galacticraftcor
 
 # Heavy Rocket Fins
 recipes.remove(<galacticraftplanets:item_basic_asteroids:2>);
-recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>, [[null,<galacticraftcore:rocket_fins>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:rocket_fins>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>, [[null,<galacticraftcore:rocket_fins>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:rocket_fins>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:empowered_thermal_controller>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Heavy Rocket Engine
 recipes.remove(<galacticraftplanets:item_basic_asteroids:1>);
-recipes.addShaped(<galacticraftplanets:item_basic_asteroids:1>, [[null,<galacticraftcore:oxygen_concentrator>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:engine>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids:1>, [[null,<contenttweaker:empowered_thermal_controller>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:oxygen_concentrator>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Solar Array Panel
 recipes.remove(<galacticraftplanets:basic_item_venus:5>);
@@ -219,5 +219,39 @@ recipes.addShaped(<galacticraftplanets:solar_array_controller>, [[<galacticraftc
 # Slimeling Inventory Bag
 recipes.remove(<galacticraftplanets:item_basic_mars:4>);
 recipes.addShaped(<galacticraftplanets:item_basic_mars:4>, [[<contenttweaker:star_leather>,null,<contenttweaker:star_leather>],[<galacticraftcore:item_basic_moon:1>,<actuallyadditions:block_giant_chest_large>,<galacticraftcore:item_basic_moon:1>]]);
+
+# Terraformer
+recipes.remove(<galacticraftplanets:mars_machine>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftplanets:mars_machine>,
+[[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftcore:canister>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<galacticraftcore:canister>,<thaumicaugmentation:arcane_terraformer>,<galacticraftcore:canister>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<quantumflux:craftingpiece:4>,<galacticraftcore:canister>,<thaumicaugmentation:arcane_terraformer>,<contenttweaker:galactic_machine_frame>,<thaumicaugmentation:arcane_terraformer>,<galacticraftcore:canister>,<quantumflux:craftingpiece:4>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<galacticraftcore:canister>,<thaumicaugmentation:arcane_terraformer>,<galacticraftcore:canister>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftcore:canister>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Cryogenic Chamber
+recipes.remove(<galacticraftplanets:mars_machine:4>);
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftplanets:mars_machine:4>,
+[[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:12>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:condensed_vis_crystal_gelum>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:condensed_vis_crystal_gelum>,<bigreactors:reactorcoolantport>,<bigreactors:reactorcoolantport>,<bigreactors:reactorcoolantport>,<contenttweaker:condensed_vis_crystal_gelum>,<galacticraftplanets:item_basic_mars:3>],
+[<quantumflux:craftingpiece:4>,<contenttweaker:condensed_vis_crystal_gelum>,<bigreactors:reactorcoolantport>,<contenttweaker:galactic_machine_frame>,<bigreactors:reactorcoolantport>,<contenttweaker:condensed_vis_crystal_gelum>,<quantumflux:craftingpiece:4>],
+[<galacticraftplanets:item_basic_mars:3>,<contenttweaker:condensed_vis_crystal_gelum>,<bigreactors:reactorcoolantport>,<bigreactors:reactorcoolantport>,<bigreactors:reactorcoolantport>,<contenttweaker:condensed_vis_crystal_gelum>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:12>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:condensed_vis_crystal_gelum>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_mars:3>],
+[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Energy Beam Reflector
+recipes.remove(<galacticraftplanets:beam_reflector>);
+recipes.addShaped(<galacticraftplanets:beam_reflector>, [[null,<galacticraftplanets:item_basic_asteroids:8>,null],[null,<thaumcraft:hand_mirror>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Energy Beam Receiver
+recipes.remove(<galacticraftplanets:beam_receiver>);
+recipes.addShapedMirrored(<galacticraftplanets:beam_receiver>, [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,null],[<enderutilities:energy_bridge:1>,<lightningcraft:material:9>,<galacticraftplanets:item_basic_asteroids:8>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,null]]);
+
+# Grapple
+recipes.remove(<galacticraftplanets:grapple>);
+recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering:skyhook>,null,null],[null,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:1>],[null,<galacticraftplanets:item_basic_mars:1>,<galacticraftcore:basic_item:13>]]);
 
 print("ENDING GalacticraftPlanets.zs");
