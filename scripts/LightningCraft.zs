@@ -6,6 +6,7 @@ import crafttweaker.item.IIngredient;
 import moretweaker.lightningcraft.LightningInfusion;
 import mods.thaumcraft.Infusion;
 import moretweaker.lightningcraft.LightningCrusher;
+import mods.thermalexpansion.Crucible;
 
 print("STARTING LightningCraft.zs");
 
@@ -394,5 +395,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:rf_receiver>,
 [null,<contenttweaker:tough_galactic_plating>,<quantumflux:craftingpiece:4>,<mekanism:basicblock2:5>,<quantumflux:craftingpiece:4>,<contenttweaker:tough_galactic_plating>,null],
 [<galacticraftplanets:basic_item_venus:6>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<galacticraftplanets:basic_item_venus:6>],
 [<galacticraftcore:basic_item:14>,<galacticraftplanets:basic_item_venus:6>,null,null,null,<galacticraftplanets:basic_item_venus:6>,<galacticraftcore:basic_item:14>]]);
+
+# Molten Mystic
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 1296, <lightningcraft:metal_block:2>, 32000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:ingot:2>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:dust:2>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:rod:9>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:plate:9>, 8000);
 
 print("ENDING LightningCraft.zs");

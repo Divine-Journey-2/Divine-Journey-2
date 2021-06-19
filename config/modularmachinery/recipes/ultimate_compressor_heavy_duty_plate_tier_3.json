@@ -1,0 +1,30 @@
+{
+    "machine": "ultimate_compressor",
+    "registryName": "ultimate_compressor_heavy_duty_plate_tier_3",
+    "recipeTime": 10,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:item_basic_mars@3",
+            "amount": 6
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:item_basic_mars@5",
+            "amount": 3
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "galacticraftplanets:item_basic_asteroids@5",
+            "amount": 3
+        }
+    ]
+}

@@ -21,10 +21,10 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "ATUM",
-    "HOT",
     "DRY",
-    "SANDY",
+    "HOT",
     "SPARSE",
+    "SANDY",
     "MOUNTAIN"
   ],
   "BiomeManager Entries": {},
