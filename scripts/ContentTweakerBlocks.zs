@@ -491,4 +491,30 @@ tin_sheetmetal.setToolLevel(0);
 tin_sheetmetal.setBlockSoundType(<soundtype:metal>);
 tin_sheetmetal.register();
 
+var titanium_box = VanillaFactory.createBlock("titanium_box", <blockmaterial:iron>);
+titanium_box.setBlockHardness(15.0);
+titanium_box.setBlockResistance(1500);
+titanium_box.setToolClass("pickaxe");
+titanium_box.setToolLevel(3);
+titanium_box.setBlockSoundType(<soundtype:metal>);
+titanium_box.register();
+
+var portion_of_the_sun = VanillaFactory.createBlock("portion_of_the_sun", <blockmaterial:rock>);
+portion_of_the_sun.setBlockHardness(2.0);
+portion_of_the_sun.setBlockResistance(0.5);
+portion_of_the_sun.setToolClass("pickaxe");
+portion_of_the_sun.setToolLevel(0);
+portion_of_the_sun.setBlockSoundType(<soundtype:glass>);
+portion_of_the_sun.setLightValue(1);
+portion_of_the_sun.setFullBlock(false);
+portion_of_the_sun.register();
+
+var hyperglued_meteoric_casing = VanillaFactory.createBlock("hyperglued_meteoric_casing", <blockmaterial:iron>);
+hyperglued_meteoric_casing.setBlockHardness(20.0);
+hyperglued_meteoric_casing.setBlockResistance(2000);
+hyperglued_meteoric_casing.setToolClass("pickaxe");
+hyperglued_meteoric_casing.setToolLevel(3);
+hyperglued_meteoric_casing.setBlockSoundType(<soundtype:metal>);
+hyperglued_meteoric_casing.register();
+
 print("ENDING ContentTweakerBlocks.zs");

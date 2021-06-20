@@ -1,0 +1,40 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_empowered_solar_dust",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "sulphuricacid",
+            "amount": 500
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "purifying_fluid",
+            "amount": 500
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:basic_item_venus@4"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:venus@2",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:empowered_solar_dust"
+        }
+    ]
+}

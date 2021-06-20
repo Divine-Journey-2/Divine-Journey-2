@@ -22,6 +22,9 @@ recipes.addShapedMirrored(<modularmachinery:itemblueprint>.withTag({dynamicmachi
 # Liquicrafter Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:liquicrafter"}), [[<galacticraftcore:heavy_plating>,<minecraft:paper>,<galacticraftcore:heavy_plating>],[<industrialforegoing:fluid_crafter>,<lightningcraft:material:9>,<industrialforegoing:fluid_crafter>],[<galacticraftcore:heavy_plating>,<minecraft:paper>,<galacticraftcore:heavy_plating>]]);
 
+# Ultimate Compressor Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_compressor"}), [[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:14>,<minecraft:paper>,<galacticraftcore:basic_item:14>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);

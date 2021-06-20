@@ -459,3 +459,6 @@ item.contenttweaker.chunk_of_the_meteor_that_ended_the_era_of_dinosaurs.name=Chu
 item.contenttweaker.fragment_of_the_sun.name=Fragment of the Sun
 item.contenttweaker.empowered_solar_dust.name=Empowered Solar Dust
 item.contenttweaker.solar_ingot.name=Solar Ingot
+tile.contenttweaker.titanium_box.name=Titanium Box
+tile.contenttweaker.portion_of_the_sun.name=Portion of the Sun
+tile.contenttweaker.hyperglued_meteoric_casing.name=Hyperglued Meteoric Casing

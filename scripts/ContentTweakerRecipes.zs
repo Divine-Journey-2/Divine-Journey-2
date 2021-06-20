@@ -1258,6 +1258,20 @@ recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:chees
 # Fragment of the Sun
 <contenttweaker:fragment_of_the_sun>.addTooltip(format.white("Found in custom ") + format.gold("Venus") + format.white(" dungeons."));
 
+# Titanium Box
+recipes.addShaped(<contenttweaker:titanium_box>, [[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>],[<galacticraftplanets:item_basic_asteroids:6>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:6>],[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>]]);
+
+# Portion of the Sun
+recipes.addShaped(<contenttweaker:portion_of_the_sun>, [[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>],[<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>],[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>]]);
+
+# Hyperglued Meteoric Casing
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:hyperglued_meteoric_casing>,
+[[<contenttweaker:titanium_box>,<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>,<contenttweaker:titanium_box>],
+[<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>],
+[<galacticraftplanets:web_torch:*>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<galacticraftplanets:web_torch:*>],
+[<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>],
+[<contenttweaker:titanium_box>,<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>,<contenttweaker:titanium_box>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

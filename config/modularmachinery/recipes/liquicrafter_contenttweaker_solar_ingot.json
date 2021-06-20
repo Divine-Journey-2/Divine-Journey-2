@@ -1,0 +1,58 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_solar_ingot",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "if.protein",
+            "amount": 300
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "creosote",
+            "amount": 1000
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 5000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:empowered_solar_dust",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:bottled_hellfire",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:angelic_silicon_crystal_mixture",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_ignis"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:basic_item_venus@5"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:solar_ingot",
+            "amount": 8
+        }
+    ]
+}

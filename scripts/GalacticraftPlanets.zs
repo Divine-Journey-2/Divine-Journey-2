@@ -139,24 +139,24 @@ function addGalacticraftPlanetsArmorRecipes(old_helmet as IItemStack, old_chestp
 }
 
 # Thermal Padding Armor
-addGalacticraftPlanetsArmorRecipes(<galacticraftcore:steel_helmet>,<galacticraftcore:steel_chestplate>,<galacticraftcore:steel_leggings>,<galacticraftcore:steel_boots>,<galacticraftplanets:thermal_padding>,<galacticraftplanets:thermal_padding:1>,<galacticraftplanets:thermal_padding:2>,<galacticraftplanets:thermal_padding:3>,<galacticraftplanets:item_basic_asteroids:7>);
+addGalacticraftPlanetsArmorRecipes(<divinerpg:netherite_helmet>,<divinerpg:netherite_chestplate>,<divinerpg:netherite_leggings>,<divinerpg:netherite_boots>,<galacticraftplanets:thermal_padding>,<galacticraftplanets:thermal_padding:1>,<galacticraftplanets:thermal_padding:2>,<galacticraftplanets:thermal_padding:3>,<galacticraftplanets:item_basic_asteroids:7>);
 
 # Desh Armor
-addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:thermal_padding>,<galacticraftplanets:thermal_padding:1>,<galacticraftplanets:thermal_padding:2>,<galacticraftplanets:thermal_padding:3>,<galacticraftplanets:desh_helmet>,<galacticraftplanets:desh_chestplate>,<galacticraftplanets:desh_leggings>,<galacticraftplanets:desh_boots>,<galacticraftplanets:item_basic_mars:5>);
+addGalacticraftPlanetsArmorRecipes(<galacticraftcore:steel_helmet>,<galacticraftcore:steel_chestplate>,<galacticraftcore:steel_leggings>,<galacticraftcore:steel_boots>,<galacticraftplanets:desh_helmet>,<galacticraftplanets:desh_chestplate>,<galacticraftplanets:desh_leggings>,<galacticraftplanets:desh_boots>,<galacticraftplanets:item_basic_mars:5>);
 
 # Isothermal Fabric
 recipes.remove(<galacticraftplanets:basic_item_venus:3>);
 recipes.addShaped(<galacticraftplanets:basic_item_venus:3> * 4, [[null,<galacticraftplanets:item_basic_asteroids:7>,null],[<galacticraftplanets:item_basic_asteroids:7>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:7>],[null,<galacticraftplanets:item_basic_asteroids:7>,null]]);
 
 # Isothermal Armor
-addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:desh_helmet>,<galacticraftplanets:desh_chestplate>,<galacticraftplanets:desh_leggings>,<galacticraftplanets:desh_boots>,<galacticraftplanets:thermal_padding_t2>,<galacticraftplanets:thermal_padding_t2:1>,<galacticraftplanets:thermal_padding_t2:2>,<galacticraftplanets:thermal_padding_t2:3>,<galacticraftplanets:basic_item_venus:3>);
+addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:thermal_padding>,<galacticraftplanets:thermal_padding:1>,<galacticraftplanets:thermal_padding:2>,<galacticraftplanets:thermal_padding:3>,<galacticraftplanets:thermal_padding_t2>,<galacticraftplanets:thermal_padding_t2:1>,<galacticraftplanets:thermal_padding_t2:2>,<galacticraftplanets:thermal_padding_t2:3>,<galacticraftplanets:basic_item_venus:3>);
 
 # Compressed Titanium
 mods.GalacticraftTweaker.removeCompressorRecipe(<galacticraftplanets:item_basic_asteroids:6>);
 mods.GalacticraftTweaker.addCompressorShapelessRecipe(<galacticraftplanets:item_basic_asteroids:6>, <galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>,<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>,<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>);
 
 # Titanium Armor
-addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:thermal_padding_t2>,<galacticraftplanets:thermal_padding_t2:1>,<galacticraftplanets:thermal_padding_t2:2>,<galacticraftplanets:thermal_padding_t2:3>,<galacticraftplanets:titanium_helmet>,<galacticraftplanets:titanium_chestplate>,<galacticraftplanets:titanium_leggings>,<galacticraftplanets:titanium_boots>,<galacticraftplanets:item_basic_asteroids:6>);
+addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:desh_helmet>,<galacticraftplanets:desh_chestplate>,<galacticraftplanets:desh_leggings>,<galacticraftplanets:desh_boots>,<galacticraftplanets:titanium_helmet>,<galacticraftplanets:titanium_chestplate>,<galacticraftplanets:titanium_leggings>,<galacticraftplanets:titanium_boots>,<galacticraftplanets:item_basic_asteroids:6>);
 
 function addGalacticraftPlanetsToolRecipes(old_sword as IItemStack, old_pickaxe as IItemStack, old_shovel as IItemStack, old_axe as IItemStack, old_hoe as IItemStack, new_sword as IItemStack, new_pickaxe as IItemStack, new_shovel as IItemStack, new_axe as IItemStack, new_hoe as IItemStack, new_material as IIngredient, new_stick as IIngredient) {
 

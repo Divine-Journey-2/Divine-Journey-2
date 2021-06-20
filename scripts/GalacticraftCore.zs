@@ -198,7 +198,7 @@ recipes.addShaped(<galacticraftcore:space_glass_strong> * 5, [[<galacticraftcore
 
 # Oxygen Mask
 recipes.remove(<galacticraftcore:oxygen_mask>);
-recipes.addShaped(<galacticraftcore:oxygen_mask>, [[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<bewitchment:cold_iron_helmet>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>]]);
+recipes.addShaped(<galacticraftcore:oxygen_mask>, [[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<mekanism:gasmask>,<galacticraftcore:space_glass_clear>],[<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>,<galacticraftcore:space_glass_clear>]]);
 
 # Oxygen Concentrator
 recipes.remove(<galacticraftcore:oxygen_concentrator>);
@@ -210,7 +210,7 @@ recipes.addShaped(<galacticraftcore:fluid_pipe> * 2, [[null,<galacticraftcore:ba
 
 # Oxygen Gear
 recipes.remove(<galacticraftcore:oxygen_gear>);
-recipes.addShaped(<galacticraftcore:oxygen_gear>, [[null,<galacticraftcore:oxygen_concentrator>,null],[<galacticraftcore:heavy_plating>,<bewitchment:cold_iron_chestplate>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:14>,null,<galacticraftcore:basic_item:14>]]);
+recipes.addShaped(<galacticraftcore:oxygen_gear>, [[null,<galacticraftcore:oxygen_concentrator>,null],[<galacticraftcore:heavy_plating>,<enderio:item_stellar_alloy_chestplate>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:14>,null,<galacticraftcore:basic_item:14>]]);
 
 # Canvas
 recipes.remove(<galacticraftcore:canvas>);
