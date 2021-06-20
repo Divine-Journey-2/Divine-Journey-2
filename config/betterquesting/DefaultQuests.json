@@ -25770,6 +25770,7 @@
           "repeattime:3": -1,
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
+          "icon:10": {
             "id:8": "galacticraftcore:basic_item",
             "Count:3": 1,
             "Damage:2": 20,
