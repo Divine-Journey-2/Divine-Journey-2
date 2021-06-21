@@ -25,6 +25,9 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Ultimate Compressor Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:ultimate_compressor"}), [[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:14>,<minecraft:paper>,<galacticraftcore:basic_item:14>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
 
+# Laser Focus Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:laser_focus"}), [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],[<minecraft:paper>,<mekanism:machineblock2:14>,<mekanism:machineblock2:13>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
@@ -78,6 +81,9 @@ recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, [[null,<contenttwe
 # Big Energy Input Hatch
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:4>, [[<thaumcraft:plate:2>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<thaumcraft:plate:2>],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<modularmachinery:blockenergyinputhatch:3>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]})],[<thaumcraft:plate:2>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "potentia"}]}),<thaumcraft:plate:2>]]);
 
+# Huge Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, [[<contenttweaker:lightning_charge>,<contenttweaker:travelers_tenacity>,<contenttweaker:lightning_charge>],[<contenttweaker:travelers_tenacity>,<modularmachinery:blockenergyinputhatch:4>,<contenttweaker:travelers_tenacity>],[<contenttweaker:lightning_charge>,<contenttweaker:travelers_tenacity>,<contenttweaker:lightning_charge>]]);
+
 # Reinforced Machine Casing
 recipes.remove(<modularmachinery:blockcasing:4>);
 recipes.addShaped(<modularmachinery:blockcasing:4>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockcasing>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
@@ -113,5 +119,9 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch:2>, [[<modularmachiner
 
 # Reinforced Fluid Output Hatch
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockfluidoutputhatch:2>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
+
+# Firebox Casing
+recipes.remove(<modularmachinery:blockcasing:2>);
+recipes.addShaped(<modularmachinery:blockcasing:2>, [[<galacticraftplanets:item_basic_asteroids:5>,<botania:quartztypeblaze>,<galacticraftplanets:item_basic_asteroids:5>],[<actuallyadditions:block_shock_suppressor>,<modularmachinery:blockcasing>,<actuallyadditions:block_shock_suppressor>],[<galacticraftplanets:item_basic_asteroids:5>,<botania:quartztypeblaze>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 print("ENDING ModularMachinery.zs");

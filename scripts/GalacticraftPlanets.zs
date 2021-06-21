@@ -202,7 +202,7 @@ recipes.addShaped(<galacticraftplanets:item_basic_asteroids:2>, [[null,<galactic
 
 # Heavy Rocket Engine
 recipes.remove(<galacticraftplanets:item_basic_asteroids:1>);
-recipes.addShaped(<galacticraftplanets:item_basic_asteroids:1>, [[null,<contenttweaker:empowered_thermal_controller>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:oxygen_concentrator>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids:1>, [[null,<contenttweaker:empowered_thermal_controller>,null],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:engine>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Solar Array Panel
 recipes.remove(<galacticraftplanets:basic_item_venus:5>);
@@ -253,5 +253,12 @@ recipes.addShapedMirrored(<galacticraftplanets:beam_receiver>, [[<galacticraftpl
 # Grapple
 recipes.remove(<galacticraftplanets:grapple>);
 recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering:skyhook>,null,null],[null,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:1>],[null,<galacticraftplanets:item_basic_mars:1>,<galacticraftcore:basic_item:13>]]);
+
+# Web Strings
+<galacticraftplanets:web_torch>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
+<galacticraftplanets:web_torch:1>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
+
+# Shield Controller
+<galacticraftplanets:basic_item_venus>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
 
 print("ENDING GalacticraftPlanets.zs");

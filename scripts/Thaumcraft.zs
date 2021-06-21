@@ -636,4 +636,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_3", "FOCUSGREATER@1", 
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_helm>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeHelm", "VOIDROBEARMOR", <thaumcraft:void_robe_helm>, 7, [<aspect:metallum> * 50,<aspect:praemunio> * 50,<aspect:vacuos> * 50,<aspect:potentia> * 35,<aspect:alienis> * 35,<aspect:sensus> * 35], <thaumcraft:void_helm>, [<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumcraft:salis_mundus>,<thaumcraft:plate:3>,<thaumcraft:fabric>,<thaumcraft:goggles>]);
 
+# Brass Block -> Alchemical Brass Block
+<thaumcraft:metal_brass>.displayName = "Alchemical Brass Block";
+
 print("ENDING Thaumcraft.zs");

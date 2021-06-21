@@ -43,11 +43,11 @@ mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item
 
 # Tin Canister
 recipes.remove(<galacticraftcore:canister>);
-mods.enderio.SliceNSplice.addRecipe(<galacticraftcore:canister> * 4, [<contenttweaker:galactic_ingot>,<bewitchment:stone_ichor>,<contenttweaker:galactic_ingot>,<thermalfoundation:storage:1>,<thaumcraft:everfull_urn>,<thermalfoundation:storage:1>], 40000);
+mods.enderio.SliceNSplice.addRecipe(<galacticraftcore:canister> * 4, [<contenttweaker:galactic_ingot>,<bewitchment:stone_ichor>,<contenttweaker:galactic_ingot>,<galacticraftcore:basic_item:7>,<thaumcraft:everfull_urn>,<galacticraftcore:basic_item:7>], 40000);
 
 # Copper Canister
 recipes.remove(<galacticraftcore:canister:1>);
-mods.enderio.SliceNSplice.addRecipe(<galacticraftcore:canister:1> * 4, [<contenttweaker:galactic_ingot>,<bewitchment:otherworldly_tears>,<contenttweaker:galactic_ingot>,<thermalfoundation:storage>,<thaumcraft:everfull_urn>,<thermalfoundation:storage>], 40000);
+mods.enderio.SliceNSplice.addRecipe(<galacticraftcore:canister:1> * 4, [<contenttweaker:galactic_ingot>,<bewitchment:otherworldly_tears>,<contenttweaker:galactic_ingot>,<galacticraftcore:basic_item:6>,<thaumcraft:everfull_urn>,<galacticraftcore:basic_item:6>], 40000);
 
 # Compressor
 recipes.remove(<galacticraftcore:machine:12>);
@@ -94,7 +94,7 @@ mods.GalacticraftTweaker.addCompressorShapelessRecipe(<galacticraftcore:heavy_pl
 
 # Single Solar Module
 recipes.remove(<galacticraftcore:basic_item>);
-recipes.addShaped(<galacticraftcore:basic_item>, [[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>],[<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>],[<galacticraftcore:basic_item:7>,<galacticraftcore:basic_item:7>,<galacticraftcore:basic_item:7>]]);
+recipes.addShaped(<galacticraftcore:basic_item> * 3, [[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>],[<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>],[<galacticraftcore:basic_item:7>,<galacticraftcore:basic_item:7>,<galacticraftcore:basic_item:7>]]);
 
 # Full Solar Panel
 recipes.remove(<galacticraftcore:basic_item:1>);

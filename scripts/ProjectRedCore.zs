@@ -17,6 +17,7 @@ import mods.enderio.SagMill;
 import moretweaker.lightningcraft.LightningCrusher;
 import mods.thermalexpansion.InductionSmelter;
 import mods.roots.Mortar;
+import mods.thermalexpansion.Sawmill;
 
 print("STARTING ProjectRedCore.zs");
 
@@ -59,6 +60,8 @@ recipes.addShaped(<projectred-core:resource_item:250>, [[<extrautils2:compressed
 recipes.remove(<projectred-core:resource_item:301>);
 recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<microblockcbe:saw_diamond>.anyDamage().transformDamage(),<projectred-core:resource_item:300>]);
 recipes.addShapeless(<projectred-core:resource_item:301> * 4, [<chiselsandbits:bitsaw_diamond>.anyDamage().transformDamage(),<projectred-core:resource_item:300>]);
+mods.thermalexpansion.Sawmill.addRecipe(<projectred-core:resource_item:301> * 4, <projectred-core:resource_item:300>, 4000);
+mods.mekanism.sawmill.addRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 4);
 
 function addProjectRedSiliconCompoundRecipe(output as IItemStack, input_material as IItemStack) {
 	recipes.remove(output);

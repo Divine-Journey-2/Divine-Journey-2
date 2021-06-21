@@ -517,4 +517,12 @@ hyperglued_meteoric_casing.setToolLevel(3);
 hyperglued_meteoric_casing.setBlockSoundType(<soundtype:metal>);
 hyperglued_meteoric_casing.register();
 
+var draconic_machine_frame = VanillaFactory.createBlock("draconic_machine_frame", <blockmaterial:iron>);
+draconic_machine_frame.setBlockHardness(5.0);
+draconic_machine_frame.setBlockResistance(5.0);
+draconic_machine_frame.setToolClass("pickaxe");
+draconic_machine_frame.setToolLevel(2);
+draconic_machine_frame.setBlockSoundType(<soundtype:metal>);
+draconic_machine_frame.register();
+
 print("ENDING ContentTweakerBlocks.zs");

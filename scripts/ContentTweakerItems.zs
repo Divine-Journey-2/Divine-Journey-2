@@ -975,5 +975,11 @@ empowered_solar_dust.register();
 var solar_ingot = VanillaFactory.createItem("solar_ingot");
 solar_ingot.rarity = "RARE";
 solar_ingot.register();
+var corrupted_light_ingot = VanillaFactory.createItem("corrupted_light_ingot");
+corrupted_light_ingot.rarity = "RARE";
+corrupted_light_ingot.register();
+var plasma_core = VanillaFactory.createItem("plasma_core");
+plasma_core.rarity = "EPIC";
+plasma_core.register();
 
 print("ENDING ContentTweakerItems.zs");

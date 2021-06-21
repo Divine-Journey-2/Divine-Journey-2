@@ -1,0 +1,22 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_plasma_core",
+    "recipeTime": 400,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:empty_core"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:plasma_core"
+        }
+    ]
+}

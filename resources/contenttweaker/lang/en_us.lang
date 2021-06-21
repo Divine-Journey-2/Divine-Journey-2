@@ -462,3 +462,6 @@ item.contenttweaker.solar_ingot.name=Solar Ingot
 tile.contenttweaker.titanium_box.name=Titanium Box
 tile.contenttweaker.portion_of_the_sun.name=Portion of the Sun
 tile.contenttweaker.hyperglued_meteoric_casing.name=Hyperglued Meteoric Casing
+item.contenttweaker.corrupted_light_ingot.name=Corrupted Light Ingot
+item.contenttweaker.plasma_core.name=Plasma Core
+tile.contenttweaker.draconic_machine_frame.name=Draconic Machine Frame

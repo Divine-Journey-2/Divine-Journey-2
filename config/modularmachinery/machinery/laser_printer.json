@@ -1,8 +1,8 @@
 {
-    "registryname": "laser_printer",
-    "localizedname": "Laser Printer",
+    "registryname": "laser_focus",
+    "localizedname": "Laser Focus",
     "requires-blueprint": true,
-    "color": "E9F4F5",
+    "color": "4779A1",
     "parts": [
         {
             "x": -1,
@@ -61,7 +61,7 @@
             "y": 4,
             "z": 6,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -93,7 +93,7 @@
             "y": 0,
             "z": 8,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -197,7 +197,7 @@
             "y": -1,
             "z": 3,
             "elements": [
-                "contenttweaker:galactic_block@0"
+                "contenttweaker:hyperglued_meteoric_casing@0"
             ]
         },
         {
@@ -237,7 +237,7 @@
             "y": 1,
             "z": 8,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -293,7 +293,7 @@
             "y": 2,
             "z": 8,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -333,7 +333,7 @@
             "y": 5,
             "z": 5,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -373,7 +373,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "minecraft:end_rod@0"
+                "mekanism:machineblock2@13"
             ]
         },
         {
@@ -517,7 +517,7 @@
             "y": 5,
             "z": 4,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -613,7 +613,7 @@
             "y": 3,
             "z": 7,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
@@ -701,7 +701,7 @@
             "y": 4,
             "z": 3,
             "elements": [
-                "lightningcraft:molten_mystic@0"
+                "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {

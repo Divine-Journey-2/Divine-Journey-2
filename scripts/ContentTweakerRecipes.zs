@@ -1250,7 +1250,7 @@ recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:chees
 <contenttweaker:spacerock>.addTooltip(format.white("Found in custom ") + format.gray("Moon") + format.white(" Dungeons."));
 
 # Secret Alien Technology
-<contenttweaker:secret_alien_technology>.addTooltip(format.white("Fouund in custom ") + format.red("Mars") + format.white(" dungeons."));
+<contenttweaker:secret_alien_technology>.addTooltip(format.white("Found in custom ") + format.red("Mars") + format.white(" dungeons."));
 
 # Chunk of the Meteor that ended the Era of Dinosaurs
 <contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>.addTooltip(format.white("Found in custom dungeons in the ") + format.gray("Asteroid Belt") + format.white("."));
@@ -1262,7 +1262,7 @@ recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:chees
 recipes.addShaped(<contenttweaker:titanium_box>, [[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>],[<galacticraftplanets:item_basic_asteroids:6>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:6>],[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>]]);
 
 # Portion of the Sun
-recipes.addShaped(<contenttweaker:portion_of_the_sun>, [[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>],[<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>],[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>]]);
+recipes.addShaped(<contenttweaker:portion_of_the_sun> * 4, [[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>],[<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>],[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>]]);
 
 # Hyperglued Meteoric Casing
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:hyperglued_meteoric_casing>,
@@ -1271,6 +1271,13 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:hyperglued_meteori
 [<galacticraftplanets:web_torch:*>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<galacticraftplanets:web_torch:*>],
 [<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>],
 [<contenttweaker:titanium_box>,<contenttweaker:titanium_box>,<galacticraftplanets:web_torch:*>,<contenttweaker:titanium_box>,<contenttweaker:titanium_box>]]);
+
+# Corrupted Light Ingot
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:corrupted_light_ingot>, <plustic:mirioningot>, null, 240, 720, [<contenttweaker:dark_core>, <contenttweaker:star_leather>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:corrupted_light_ingot>, [<plustic:mirioningot>, <contenttweaker:dark_core>, <contenttweaker:star_leather>], 32000);
+
+# Draconic Machine Frame
+recipes.addShaped(<contenttweaker:draconic_machine_frame>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<contenttweaker:galactic_machine_frame>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

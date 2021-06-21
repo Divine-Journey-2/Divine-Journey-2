@@ -1,0 +1,29 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_sulfuric_acid",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "sulphuricacid",
+            "amount": 500
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 200
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "abyssalcraft:crystalcluster@2"
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "sulphuricacid",
+            "amount": 1000
+        }
+    ]
+}
