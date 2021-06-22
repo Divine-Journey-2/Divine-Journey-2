@@ -1,0 +1,62 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_draconicadditions_infused_potato_leggings",
+    "recipeTime": 230,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicadditions:inert_potato_legs"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:draconic_core"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:wyvern_energy_core"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:draconium_ingot",
+            "amount": 6
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "terra",
+            "amount": 30
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "draconicadditions:infused_potato_legs"
+        }
+    ]
+}

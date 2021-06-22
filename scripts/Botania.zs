@@ -247,7 +247,7 @@ Fey.addRecipe("solegnolia", <botania:specialflower>.withTag({type: "solegnolia"}
 
 # Bergamute
 mods.botania.Apothecary.removeRecipe("bergamute");
-Fey.addRecipe("bergamute", <botania:specialflower>.withTag({type: "bergamute"}), [<contenttweaker:petal_of_the_bergamute>,<contenttweaker:petal_of_the_bergamute>,<botania:rune:3>,<extrautils2:soundmuffler>,<betternether:agave>]);
+Fey.addRecipe("bergamute", <botania:specialflower>.withTag({type: "bergamute"}), [<contenttweaker:petal_of_the_bergamute>,<contenttweaker:petal_of_the_bergamute>,<botania:rune:3>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<betternether:agave>]);
 
 # Munchdew
 mods.botania.Apothecary.removeRecipe("munchdew");

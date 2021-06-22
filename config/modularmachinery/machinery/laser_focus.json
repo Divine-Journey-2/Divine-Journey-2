@@ -2,16 +2,189 @@
     "registryname": "laser_focus",
     "localizedname": "Laser Focus",
     "requires-blueprint": true,
-    "color": "4779A1",
+    "color": "2C404D",
     "parts": [
         {
             "x": -1,
             "y": 0,
             "z": 0,
             "elements": [
-                "modularmachinery:blockoutputbus@0",
-                "modularmachinery:blockoutputbus@1",
-                "modularmachinery:blockoutputbus@2",
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "contenttweaker:portion_of_the_sun@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "thaumicaugmentation:fortified_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "contenttweaker:portion_of_the_sun@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "thaumicaugmentation:fortified_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
                 "modularmachinery:blockoutputbus@3",
                 "modularmachinery:blockoutputbus@4",
                 "modularmachinery:blockoutputbus@5",
@@ -20,12 +193,49 @@
         },
         {
             "x": 1,
-            "y": 0,
-            "z": 0,
+            "y": 5,
+            "z": 6,
             "elements": [
-                "modularmachinery:blockinputbus@0",
-                "modularmachinery:blockinputbus@1",
-                "modularmachinery:blockinputbus@2",
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
                 "modularmachinery:blockinputbus@3",
                 "modularmachinery:blockinputbus@4",
                 "modularmachinery:blockinputbus@5",
@@ -33,48 +243,8 @@
             ]
         },
         {
-            "x": -2,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
             "x": -1,
-            "y": 4,
-            "z": 6,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 2,
-            "y": 0,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 6,
-            "elements": [
-                "contenttweaker:portion_of_the_sun@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 4,
-            "z": 6,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 0,
+            "y": 1,
             "z": 8,
             "elements": [
                 "thaumicaugmentation:fortified_glass@0"
@@ -82,242 +252,178 @@
         },
         {
             "x": 0,
-            "y": 2,
+            "y": 3,
             "z": 9,
             "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 7,
+            "elements": [
                 "modularmachinery:blockcasing@4"
             ]
         },
         {
             "x": 0,
-            "y": 0,
+            "y": 1,
             "z": 8,
             "elements": [
                 "contenttweaker:portion_of_the_sun@0"
             ]
         },
         {
+            "x": 0,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
             "x": 1,
-            "y": 0,
+            "y": 1,
             "z": 8,
             "elements": [
                 "thaumicaugmentation:fortified_glass@0"
             ]
         },
         {
+            "x": 1,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
             "x": 2,
             "y": -1,
-            "z": 0,
+            "z": 7,
             "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": -1,
-            "y": 1,
-            "z": 0,
+            "y": 4,
+            "z": 5,
             "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": 0,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -2,
-            "y": -1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 0,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 5,
+            "y": 6,
             "z": 6,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": -2,
-            "y": -1,
+            "y": 0,
             "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 5,
             "elements": [
                 "modularmachinery:blockcasing@4"
             ]
         },
         {
-            "x": -1,
-            "y": -1,
-            "z": 3,
+            "x": 1,
+            "y": 4,
+            "z": 5,
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": 0,
-            "y": -1,
+            "y": 0,
             "z": 3,
             "elements": [
                 "contenttweaker:hyperglued_meteoric_casing@0"
             ]
         },
         {
-            "x": 1,
-            "y": -1,
+            "x": 2,
+            "y": 0,
             "z": 3,
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:portion_of_the_sun@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
             ]
         },
         {
             "x": 2,
-            "y": -1,
-            "z": 3,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 1,
-            "z": 8,
-            "elements": [
-                "thaumicaugmentation:fortified_glass@0"
-            ]
-        },
-        {
-            "x": -1,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 8,
-            "elements": [
-                "contenttweaker:portion_of_the_sun@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 8,
-            "elements": [
-                "thaumicaugmentation:fortified_glass@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 5,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 8,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
             "y": 0,
             "z": 7,
             "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 8,
-            "elements": [
-                "contenttweaker:portion_of_the_sun@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 8,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 0,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:metal_decoration1@0"
             ]
         },
         {
@@ -353,14 +459,6 @@
             ]
         },
         {
-            "x": 0,
-            "y": 3,
-            "z": 4,
-            "elements": [
-                "thaumicaugmentation:bars@0"
-            ]
-        },
-        {
             "x": -1,
             "y": -1,
             "z": 2,
@@ -370,39 +468,199 @@
         },
         {
             "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": -2,
             "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
             "z": 3,
             "elements": [
                 "mekanism:machineblock2@13"
             ]
         },
         {
-            "x": 0,
-            "y": -1,
-            "z": 2,
+            "x": 1,
+            "y": 4,
+            "z": 4,
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
-            "x": 1,
-            "y": -1,
-            "z": 2,
+            "x": -2,
+            "y": 2,
+            "z": 7,
             "elements": [
-                "modularmachinery:blockcasing@2"
+                "immersiveengineering:metal_decoration1@0"
             ]
         },
         {
             "x": 2,
-            "y": -1,
+            "y": 0,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": -1,
-            "y": 1,
+            "y": 2,
             "z": 7,
             "elements": [
                 "modularmachinery:blockcasing@4"
@@ -410,82 +668,18 @@
         },
         {
             "x": 0,
-            "y": 3,
+            "y": 4,
             "z": 8,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
             "x": -1,
-            "y": -1,
+            "y": 0,
             "z": 6,
             "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 1,
-            "y": -1,
-            "z": 6,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 6,
-            "z": 5,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 4,
-            "z": 4,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 7,
-            "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -493,7 +687,15 @@
             "y": 2,
             "z": 7,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -502,6 +704,22 @@
             "z": 7,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
             ]
         },
         {
@@ -510,6 +728,14 @@
             "z": 4,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -521,19 +747,19 @@
             ]
         },
         {
-            "x": -1,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "thaumicaugmentation:bars@0"
-            ]
-        },
-        {
             "x": -2,
             "y": -1,
             "z": 1,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "modulardiversity:blockmeklaseracceptor@0"
             ]
         },
         {
@@ -545,14 +771,6 @@
             ]
         },
         {
-            "x": 0,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
             "x": -1,
             "y": -1,
             "z": 1,
@@ -561,19 +779,19 @@
             ]
         },
         {
-            "x": 1,
-            "y": 3,
-            "z": 3,
-            "elements": [
-                "thaumicaugmentation:bars@0"
-            ]
-        },
-        {
             "x": 0,
             "y": -1,
             "z": 1,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "thaumicaugmentation:bars@0"
             ]
         },
         {
@@ -588,6 +806,14 @@
             "x": -1,
             "y": 3,
             "z": 7,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 5,
             "elements": [
                 "modularmachinery:blockcasing@4"
             ]
@@ -601,22 +827,6 @@
             ]
         },
         {
-            "x": -2,
-            "y": -1,
-            "z": 5,
-            "elements": [
-                "modularmachinery:blockcasing@4"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 3,
-            "z": 7,
-            "elements": [
-                "contenttweaker:portion_of_the_sun@0"
-            ]
-        },
-        {
             "x": -1,
             "y": -1,
             "z": 5,
@@ -641,11 +851,27 @@
             ]
         },
         {
+            "x": 2,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "thaumicaugmentation:bars@0"
+            ]
+        },
+        {
             "x": 1,
             "y": -1,
             "z": 5,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -681,11 +907,19 @@
             ]
         },
         {
-            "x": 0,
+            "x": 2,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
             "y": 6,
             "z": 4,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -698,10 +932,34 @@
         },
         {
             "x": 0,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
             "y": 4,
             "z": 3,
             "elements": [
                 "contenttweaker:portion_of_the_sun@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -713,11 +971,59 @@
             ]
         },
         {
+            "x": -1,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
             "x": 0,
             "y": 4,
             "z": 7,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -747,6 +1053,30 @@
             ]
         },
         {
+            "x": 2,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
             "x": 0,
             "y": 5,
             "z": 3,
@@ -755,11 +1085,27 @@
             ]
         },
         {
-            "x": 0,
-            "y": 3,
-            "z": 2,
+            "x": 1,
+            "y": 5,
+            "z": 3,
             "elements": [
-                "thaumicaugmentation:bars@0"
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -787,6 +1133,14 @@
             ]
         },
         {
+            "x": 1,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
             "x": 0,
             "y": -1,
             "z": 4,
@@ -800,6 +1154,22 @@
             "z": 4,
             "elements": [
                 "modularmachinery:blockcasing@2"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "thaumicaugmentation:bars@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {
@@ -856,6 +1226,30 @@
             "z": 8,
             "elements": [
                 "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "thaumicaugmentation:bars@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal_slab@2"
             ]
         },
         {

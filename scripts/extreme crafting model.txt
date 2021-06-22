@@ -8,3 +8,14 @@ mods.avaritia.ExtremeCrafting.addShaped(,
 [,,,,,,,,],
 [,,,,,,,,],
 [,,,,,,,,]]);
+
+mods.extendedcrafting.TableCrafting.addShaped(,
+[[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,],
+[,,,,,,,,]]);

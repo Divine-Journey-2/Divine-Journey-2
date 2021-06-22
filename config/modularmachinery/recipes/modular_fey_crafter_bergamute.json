@@ -17,7 +17,8 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "extrautils2:soundmuffler"
+            "item": "enderio:item_dark_steel_upgrade@1",
+            "nbt": {"enderio:dsu":"enderio:sounddetector"}
         },
         {
             "type": "item",

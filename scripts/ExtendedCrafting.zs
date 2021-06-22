@@ -73,4 +73,36 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:table_elite>,
 [<contenttweaker:crystallized_mana_cluster>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<extendedcrafting:table_advanced>,<contenttweaker:crystallized_mana_cluster>],
 [<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:crystallized_mana_cluster>,<contenttweaker:condensed_vis_crystal_vitreus>]]);
 
+# Ultimate Crafting Table
+recipes.remove(<extendedcrafting:table_ultimate>);
+mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:table_ultimate>,
+[[<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftplanets:item_basic_asteroids:8>,<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn()],
+[<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),<extendedcrafting:table_elite>,<extendedcrafting:table_elite>,<extendedcrafting:table_elite>,<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn()],
+[null,<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),<appliedenergistics2:crafting_storage_16k>.noReturn(),null],
+[null,null,<enderutilities:machine_1:2>,<contenttweaker:plasma_core>,<enderutilities:machine_1:2>,null,null],
+[null,null,<enderutilities:machine_1:2>,<enderutilities:machine_1:2>,<enderutilities:machine_1:2>,null,null],
+[null,null,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,null,null],
+[<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>]]);
+
+# Crystaltine Ingot
+mods.extendedcrafting.TableCrafting.remove(<extendedcrafting:material:24>);
+mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:material:24>,
+[[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>],
+[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:star_leather>,<contenttweaker:star_leather>,<contenttweaker:plasma_core>,<contenttweaker:star_leather>,<contenttweaker:star_leather>,<enderio:item_alloy_endergy_ingot:1>],
+[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:star_leather>,<contenttweaker:star_leather>,<contenttweaker:plasma_core>,<contenttweaker:star_leather>,<contenttweaker:star_leather>,<enderio:item_alloy_endergy_ingot:1>],
+[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>]]);
+
+# Automation Interface
+recipes.remove(<extendedcrafting:interface>);
+mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:interface>,
+[[<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<actuallyadditions:block_dropper>,<actuallyadditions:block_dropper>,<actuallyadditions:block_dropper>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<actuallyadditions:block_dropper>,<actuallyadditions:block_dropper>,<actuallyadditions:block_dropper>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<integratedtunnels:part_interface_item_item>,<galacticraftcore:basic_item:20>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:20>,<integratedtunnels:part_interface_item_item>,<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<actuallyadditions:block_placer>,<extendedcrafting:material:24>,<extendedcrafting:storage:3>,<extendedcrafting:frame>,<extendedcrafting:storage:3>,<extendedcrafting:material:24>,<actuallyadditions:block_placer>,<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<integratedtunnels:part_interface_item_item>,<galacticraftcore:basic_item:20>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:20>,<integratedtunnels:part_interface_item_item>,<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<galacticraftcore:basic_item:20>,<galacticraftcore:basic_item:20>,<galacticraftcore:basic_item:20>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<appliedenergistics2:crafting_storage_64k>.noReturn(),<extendedcrafting:storage>],
+[<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>],
+[<extendedcrafting:storage>,null,null,null,null,null,null,null,<extendedcrafting:storage>]]);
+
 print("ENDING ExtendedCrafting.zs");
