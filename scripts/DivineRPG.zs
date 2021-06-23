@@ -1,6 +1,7 @@
 # Author: Atricos
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 
@@ -237,5 +238,26 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:mortum_block> * 3,
 # Nightmare Bed
 recipes.remove(<divinerpg:nightmare_bed>);
 recipes.addShaped(<divinerpg:nightmare_bed>, [[<divinerpg:acceleron>,<divinerpg:acceleron>,<divinerpg:acceleron>],[<divinerpg:mortum_block>,<divinerpg:mortum_block>,<divinerpg:mortum_block>]]);
+
+# Eden to Mortum Bows
+function addDivineRPGBowRecipe(new_bow as IItemStack, old_bow as IItemStack, new_material as IIngredient) {
+	recipes.remove(new_bow);
+	recipes.addShapedMirrored(new_bow, [[null,new_material,<botania:manaresource:16>],[new_material,old_bow,<botania:manaresource:16>],[null,new_material,<botania:manaresource:16>]]);
+}
+
+# Eden Bow
+addDivineRPGBowRecipe(<divinerpg:eden_bow>,<minecraft:bow>,<divinerpg:eden_chunk>);
+
+# Wildwood Bow
+addDivineRPGBowRecipe(<divinerpg:wildwood_bow>,<divinerpg:eden_bow>,<divinerpg:wildwood_chunk>);
+
+# Apalachia Bow
+addDivineRPGBowRecipe(<divinerpg:apalachia_bow>,<divinerpg:wildwood_bow>,<divinerpg:apalachia_chunk>);
+
+# Skythern Bow
+addDivineRPGBowRecipe(<divinerpg:skythern_bow>,<divinerpg:apalachia_bow>,<divinerpg:skythern_chunk>);
+
+# Mortum Bow
+addDivineRPGBowRecipe(<divinerpg:mortum_bow>,<divinerpg:skythern_bow>,<divinerpg:mortum_chunk>);
 
 print("ENDING DivineRPG.zs");

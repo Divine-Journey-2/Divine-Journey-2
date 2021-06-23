@@ -6,7 +6,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "draconicevolution:particle_generator@2"
+            "item": "draconicevolution:particle_generator@0"
         },
         {
             "type": "item",
@@ -27,7 +27,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "draconicevolution:particle_generator@0"
+            "item": "draconicevolution:particle_generator@2"
         }
     ]
 }

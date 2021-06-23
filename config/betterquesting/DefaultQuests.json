@@ -29302,7 +29302,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "IMA FIRIN\u0027 MAH LAZER",
-          "desc:8": "Craft all the components for the Laser Focus multiblock listed on the right! You can use larger Input, Output and Energy input Hatches.\n\nThis machine focuses a laser beam at the input item to plasmafy it, charging it with a LOT of power... Good thing Portions of the Sun can transfer such energy, and Hyperglued Meteoric Casing can sustain it...!"
+          "desc:8": "Craft all the components for the Laser Focus multiblock listed on the right! You can use larger Input, Output and Energy input Hatches.\n\nThis machine focuses a laser beam at the input item to plasmafy it, charging it with a LOT of power... Good thing Portions of the Sun can transfer such energy, and Hyperglued Meteoric Casing can sustain it...!\n\nYou\u0027ll also need Mekanism Laser Energy, inputted near the tip of the Focus. You can easily convert RF into Mekansim Laser Energy using a Mekanism Laser. To charge the Mekanism Laser Acceptor faster, you can use all 4 sides. To make it EVEN faster, you can combine up to 5 Mekanism Laser beams into 1 stronger one using a Laser Amplifier."
         }
       },
       "tasks:9": {
@@ -29330,60 +29330,87 @@
               "OreDict:8": ""
             },
             "2:10": {
-              "id:8": "modularmachinery:blockinputbus",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "id:8": "modularmachinery:blockoutputbus",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "4:10": {
               "id:8": "modularmachinery:blockcasing",
-              "Count:3": 77,
+              "Count:3": 65,
               "Damage:2": 4,
               "OreDict:8": ""
             },
-            "5:10": {
+            "3:10": {
+              "id:8": "immersiveengineering:sheetmetal_slab",
+              "Count:3": 50,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "4:10": {
               "id:8": "contenttweaker:portion_of_the_sun",
-              "Count:3": 8,
+              "Count:3": 7,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "6:10": {
+            "5:10": {
               "id:8": "thaumicaugmentation:fortified_glass",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
+            "6:10": {
+              "id:8": "modularmachinery:blockinputbus",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
             "7:10": {
-              "id:8": "modularmachinery:blockcasing",
-              "Count:3": 8,
-              "Damage:2": 2,
+              "id:8": "modularmachinery:blockoutputbus",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             },
             "8:10": {
+              "id:8": "modularmachinery:blockcasing",
+              "Count:3": 9,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "9:10": {
               "id:8": "contenttweaker:hyperglued_meteoric_casing",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "9:10": {
+            "10:10": {
+              "id:8": "immersiveengineering:metal_decoration1",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "11:10": {
               "id:8": "thaumicaugmentation:bars",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "10:10": {
-              "id:8": "minecraft:end_rod",
+            "12:10": {
+              "id:8": "immersiveengineering:sheetmetal",
+              "Count:3": 3,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "13:10": {
+              "id:8": "modulardiversity:blockmeklaseracceptor",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "11:10": {
+            "14:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            },
+            "15:10": {
               "id:8": "modularmachinery:blockenergyinputhatch",
               "Count:3": 1,
               "Damage:2": 5,
@@ -30016,8 +30043,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Unnamed",
-          "desc:8": "No Description"
+          "name:8": "Beamer presentation",
+          "desc:8": "Craft an Energy Beam Reflector and an Energy Beam Receiver to unlock Draconic Evolution Fusion Crafting!"
         }
       },
       "tasks:9": {
@@ -30045,7 +30072,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftplanets:item_basic_asteroids",
+              "Count:3": 2,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "419:10": {
       "questID:3": 428,
@@ -60149,8 +60189,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:energized_dark_ingot",
-              "Count:3": 6,
+              "id:8": "draconicevolution:info_tablet",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -86343,8 +86383,12 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "extrautils2:soundmuffler",
+              "id:8": "betterquesting:placeholder",
               "Count:3": 2,
+              "tag:10": {
+                "orig_meta:3": 0,
+                "orig_id:8": "extrautils2:soundmuffler"
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }

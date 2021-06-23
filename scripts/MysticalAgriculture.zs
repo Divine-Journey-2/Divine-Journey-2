@@ -610,4 +610,25 @@ null,null,null,
 <alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,
 <alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>], "astralsorcery.constellation.vicio");
 
+# Inferium to Supremium Bows
+function addMysticalAgricultureBowRecipe(new_bow as IItemStack, old_bow as IItemStack, new_material as IIngredient, tool_core as IIngredient) {
+	recipes.remove(new_bow);
+	recipes.addShapedMirrored(new_bow, [[null,new_material,<mysticalagriculture:crafting:23>],[tool_core,old_bow,<mysticalagriculture:crafting:23>],[null,new_material,<mysticalagriculture:crafting:23>]]);
+}
+
+# Inferium Bow
+addMysticalAgricultureBowRecipe(<mysticalagriculture:inferium_bow>,<minecraft:bow>,<mysticalagriculture:crafting:33>,<mysticalagriculture:gear>);
+
+# Prudentium Bow
+addMysticalAgricultureBowRecipe(<mysticalagriculture:prudentium_bow>,<mysticalagriculture:inferium_bow>,<mysticalagriculture:crafting:34>,<mysticalagriculture:gear:1>);
+
+# Intermedium Bow
+addMysticalAgricultureBowRecipe(<mysticalagriculture:intermedium_bow>,<mysticalagriculture:prudentium_bow>,<mysticalagriculture:crafting:35>,<mysticalagriculture:gear:2>);
+
+# Superium Bow
+addMysticalAgricultureBowRecipe(<mysticalagriculture:superium_bow>,<mysticalagriculture:intermedium_bow>,<mysticalagriculture:crafting:36>,<mysticalagriculture:gear:3>);
+
+# Supremium Bow
+addMysticalAgricultureBowRecipe(<mysticalagriculture:supremium_bow>.withTag({}),<mysticalagriculture:superium_bow>,<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:4>);
+
 print("ENDING MysticalAgriculture.zs");

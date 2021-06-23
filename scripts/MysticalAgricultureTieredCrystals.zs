@@ -2,6 +2,7 @@
 
 import mods.botania.RuneAltar;
 import mods.thaumcraft.Infusion;
+import mods.astralsorcery.Altar;
 
 print("STARTING MysticalAgricultureTieredCrystals.zs");
 
@@ -16,5 +17,19 @@ mods.botania.RuneAltar.addRecipe(<matc:prudentiumcrystal>, [<matc:inferiumcrysta
 # Intermedium Infusion Crystal
 recipes.remove(<matc:intermediumcrystal>);
 mods.thaumcraft.Infusion.registerRecipe("matc:intermediumcrystal", "", <matc:intermediumcrystal>, 7, [<aspect:vitreus> * 100, <aspect:alkimia> * 70, <aspect:herba> * 70, <aspect:praecantatio> * 50, <aspect:instrumentum> * 50, <aspect:ignis> * 50], <matc:prudentiumcrystal>, [<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>,<astralsorcery:itemcraftingcomponent:2>]);
+
+# Superium Infusion Crystal
+recipes.remove(<matc:superiumcrystal>);
+mods.astralsorcery.Altar.addTraitAltarRecipe("matc:superiumcrystal", <matc:superiumcrystal>, 8000, 100,
+[null,null,null,
+null,<matc:intermediumcrystal>,null,
+null,null,null,
+<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,null,null,null,null,
+<draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>]);
+
+# Supremium Infusion Crystal
+# later:
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculturetieredcrystals_supremium_infusion_crystal.json
 
 print("ENDING MysticalAgricultureTieredCrystals.zs");

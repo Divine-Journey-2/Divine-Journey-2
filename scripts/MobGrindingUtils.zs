@@ -67,11 +67,11 @@ recipes.addShaped(<mob_grinding_utils:ender_inhibitor_on>, [[<ore:ingotRedAlloy>
 
 # Ender Dragon Death Muffler
 recipes.remove(<mob_grinding_utils:dragon_muffler>);
-recipes.addShaped(<mob_grinding_utils:dragon_muffler>, [[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>],[<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<minecraft:dragon_egg>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"})],[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>]]);
+recipes.addShaped(<mob_grinding_utils:dragon_muffler>, [[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>],[<supersoundmuffler:sound_muffler>,<minecraft:dragon_egg>,<supersoundmuffler:sound_muffler>],[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>]]);
 
 # Wither Boss Death Muffler
 recipes.remove(<mob_grinding_utils:wither_muffler>);
-recipes.addShaped(<mob_grinding_utils:wither_muffler>, [[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>],[<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<minecraft:nether_star>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"})],[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>]]);
+recipes.addShaped(<mob_grinding_utils:wither_muffler>, [[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>],[<supersoundmuffler:sound_muffler>,<minecraft:nether_star>,<supersoundmuffler:sound_muffler>],[<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>,<contenttweaker:mobgrindium_ingot>]]);
 
 # Mob Swab
 recipes.remove(<mob_grinding_utils:mob_swab>);

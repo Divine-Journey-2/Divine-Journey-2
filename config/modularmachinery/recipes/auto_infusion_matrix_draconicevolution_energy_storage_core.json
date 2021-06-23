@@ -1,0 +1,70 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_draconicevolution_energy_storage_core",
+    "recipeTime": 610,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 7000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:wyvern_core"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:wyvern_energy_core",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderio:block_cap_bank@3",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:basic_item_venus@6",
+            "amount": 4
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 120
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "lux",
+            "amount": 120
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "auram",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 40
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "draconicevolution:energy_storage_core"
+        }
+    ]
+}

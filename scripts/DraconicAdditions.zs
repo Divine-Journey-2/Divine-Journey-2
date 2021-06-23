@@ -1,4 +1,7 @@
 # Author: Atricos
+
+import mods.thaumcraft.Infusion;
+
 print("STARTING DraconicAdditions.zs");
 
 # Inert Potato Helmet
@@ -32,5 +35,11 @@ mods.thaumcraft.Infusion.registerRecipe("infused_potato_legs", "", <draconicaddi
 # Infused Potato Boots
 recipes.remove(<draconicadditions:infused_potato_boots>);
 mods.thaumcraft.Infusion.registerRecipe("infused_potato_boots", "", <draconicadditions:infused_potato_boots>, 8, [<aspect:praemunio> * 100, <aspect:herba> * 80, <aspect:terra> * 30, <aspect:praecantatio> * 20], <draconicadditions:inert_potato_boots>, [<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:wyvern_energy_core>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconic_core>]);
+
+# Energized Potato Armor tooltip
+<draconicadditions:potato_helm>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Helmet."));
+<draconicadditions:potato_chest>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Chestplate."));
+<draconicadditions:potato_legs>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Leggings."));
+<draconicadditions:potato_boots>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Boots."));
 
 print("ENDING DraconicAdditions.zs");

@@ -80,4 +80,224 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:energy_infuser>
 [<galacticraftplanets:item_basic_asteroids:5>,<thermalexpansion:machine:9>,<thermalexpansion:machine:9>,<thermalexpansion:machine:9>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Dislocator Receptacle
+recipes.remove(<draconicevolution:dislocator_receptacle>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:dislocator_receptacle>,
+[[<contenttweaker:titanium_box>,<draconicevolution:infused_obsidian>,<contenttweaker:titanium_box>,<draconicevolution:infused_obsidian>,<contenttweaker:titanium_box>],
+[<draconicevolution:infused_obsidian>,<draconicevolution:infused_obsidian>,<draconicevolution:draconic_core>,<draconicevolution:infused_obsidian>,<draconicevolution:infused_obsidian>],
+[<contenttweaker:titanium_box>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<contenttweaker:titanium_box>],
+[<draconicevolution:infused_obsidian>,<draconicevolution:infused_obsidian>,<draconicevolution:draconic_core>,<draconicevolution:infused_obsidian>,<draconicevolution:infused_obsidian>],
+[<contenttweaker:titanium_box>,<draconicevolution:infused_obsidian>,<contenttweaker:titanium_box>,<draconicevolution:infused_obsidian>,<contenttweaker:titanium_box>]]);
+
+# Dislocator Pedestal
+recipes.remove(<draconicevolution:dislocator_pedestal>);
+recipes.addShaped(<draconicevolution:dislocator_pedestal>, [[null,<enderio:block_tele_pad>,null],[null,<enderio:block_tele_pad>,null],[<thaumcraft:pedestal_eldritch>,<contenttweaker:draconic_machine_frame>,<thaumcraft:pedestal_eldritch>]]);
+
+# Rain Sensor
+recipes.remove(<draconicevolution:rain_sensor>);
+recipes.addShaped(<draconicevolution:rain_sensor>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>],[<contenttweaker:tempestas>,<draconicevolution:draconic_core>,<contenttweaker:tempestas>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Disenchanter
+recipes.remove(<draconicevolution:diss_enchanter>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:diss_enchanter>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<industrialforegoing:enchantment_extractor>,<actuallyadditions:item_disenchanting_lens>,<lightningcraft:ench_reallocator>,<actuallyadditions:item_disenchanting_lens>,<industrialforegoing:enchantment_aplicator>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:draconic_core>,<contenttweaker:condensed_vis_crystal_instrumentum>,<industrialforegoing:enchantment_extractor>,<contenttweaker:draconic_machine_frame>,<industrialforegoing:enchantment_aplicator>,<contenttweaker:condensed_vis_crystal_instrumentum>,<draconicevolution:draconic_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<industrialforegoing:enchantment_extractor>,<contenttweaker:condensed_vis_crystal_praecantatio>,<lightningcraft:ench_reallocator>,<contenttweaker:condensed_vis_crystal_praecantatio>,<industrialforegoing:enchantment_aplicator>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Entity Detector
+recipes.remove(<draconicevolution:entity_detector>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:entity_detector>,
+[[null,null,<minecraft:ender_eye>,null,null],
+[null,<integrateddynamics:part_entity_reader_item>,<integrateddynamics:part_entity_reader_item>,<integrateddynamics:part_entity_reader_item>,null],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:13>,<contenttweaker:draconic_machine_frame>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Advanced Entity Detector
+recipes.remove(<draconicevolution:entity_detector:1>);
+recipes.addShaped(<draconicevolution:entity_detector:1>, [[null,<minecraft:skull:1>,null],[<draconicevolution:entity_detector>,<contenttweaker:draconic_machine_frame>,<draconicevolution:entity_detector>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Energy Core
+recipes.remove(<draconicevolution:energy_storage_core>);
+mods.thaumcraft.Infusion.registerRecipe("draconic_energy_storage_core", "", <draconicevolution:energy_storage_core>, 9, [<aspect:potentia> * 250, <aspect:ignis> * 120, <aspect:lux> * 120, <aspect:auram> * 80, <aspect:diabolus> * 40], <draconicevolution:wyvern_core>, [<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>]);
+
+# Energy Pylon
+recipes.remove(<draconicevolution:energy_pylon>);
+mods.thaumcraft.Infusion.registerRecipe("draconic_energy_pylon", "", <draconicevolution:energy_pylon>, 8, [<aspect:potentia> * 150, <aspect:permutatio> * 150, <aspect:auram> * 80], <draconicevolution:wyvern_energy_core>, [<draconicevolution:draconic_core>,<galacticraftcore:basic_item:20>,<draconicevolution:draconic_core>,<galacticraftcore:basic_item:20>]);
+
+# Fusion Crafting Core
+recipes.remove(<draconicevolution:fusion_crafting_core>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:fusion_crafting_core>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:12>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:beam_receiver>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:beam_reflector>,<draconicevolution:wyvern_energy_core>,<galacticraftplanets:beam_reflector>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,<galacticraftplanets:beam_receiver>,<draconicevolution:wyvern_energy_core>,<contenttweaker:draconic_machine_frame>,<draconicevolution:wyvern_energy_core>,<galacticraftplanets:beam_receiver>,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:beam_reflector>,<draconicevolution:wyvern_energy_core>,<galacticraftplanets:beam_reflector>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:12>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftplanets:beam_receiver>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<galacticraftcore:basic_item:12>,<galacticraftcore:basic_item:12>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Basic Fusion Crafting Injector
+recipes.remove(<draconicevolution:crafting_injector>);
+recipes.addShaped(<draconicevolution:crafting_injector>, [[<extendedcrafting:material:24>,<contenttweaker:draconic_machine_frame>,<extendedcrafting:material:24>],[<mekanism:machineblock2:3>,<galacticraftplanets:beam_receiver>,<mekanism:machineblock2:3>],[null,<galacticraftplanets:beam_reflector>,null]]);
+
+# Basic Energy Relay Crystal
+recipes.removeShaped(<draconicevolution:energy_crystal>);
+# recipe in config/modularmachinery/recipes/laser_focus_draconicevolution_basic_energy_relay_crystal.json
+
+# Wyvern Energy Relay Crystal
+recipes.removeShaped(<draconicevolution:energy_crystal:1>);
+# recipe in config/modularmachinery/recipes/laser_focus_draconicevolution_wyvern_energy_relay_crystal.json
+
+# Basic Wireless Energy Crystal
+recipes.remove(<draconicevolution:energy_crystal:6>);
+recipes.addShaped(<draconicevolution:energy_crystal:6>, [[<enderio:block_normal_wireless_charger>,<draconicevolution:particle_generator>,<enderio:block_normal_wireless_charger>],[<draconicevolution:draconic_core>,<draconicevolution:energy_crystal>,<draconicevolution:draconic_core>],[<enderio:block_normal_wireless_charger>,<draconicevolution:particle_generator>,<enderio:block_normal_wireless_charger>]]);
+
+# Wyvern Wireless Energy Crystal
+recipes.remove(<draconicevolution:energy_crystal:7>);
+recipes.addShaped(<draconicevolution:energy_crystal:7>, [[<enderio:block_enhanced_wireless_charger>,<draconicevolution:particle_generator>,<enderio:block_enhanced_wireless_charger>],[<draconicevolution:wyvern_core>,<draconicevolution:energy_crystal:1>,<draconicevolution:wyvern_core>],[<enderio:block_enhanced_wireless_charger>,<draconicevolution:particle_generator>,<enderio:block_enhanced_wireless_charger>]]);
+
+# Flux Gate
+recipes.remove(<draconicevolution:flow_gate>);
+recipes.addShaped(<draconicevolution:flow_gate>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:potentiometer>,<galacticraftplanets:item_basic_asteroids:5>],[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:draconic_machine_frame>,<contenttweaker:steaming_restonia_crystal>],[<galacticraftplanets:item_basic_asteroids:5>,<rftools:logic_block>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Fluid Gate
+recipes.remove(<draconicevolution:flow_gate:8>);
+recipes.addShaped(<draconicevolution:flow_gate:8>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:potentiometer>,<galacticraftplanets:item_basic_asteroids:5>],[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:draconic_machine_frame>,<enderio:item_alloy_endergy_ingot:1>],[<galacticraftplanets:item_basic_asteroids:5>,<rftools:logic_block>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Dislocator
+recipes.remove(<draconicevolution:dislocator>);
+recipes.addShaped(<draconicevolution:dislocator>, [[null,<draconicevolution:wyvern_energy_core>,null],[<draconicevolution:wyvern_energy_core>,<mekanism:portableteleporter>,<draconicevolution:wyvern_energy_core>],[null,<draconicevolution:wyvern_energy_core>,null]]);
+
+# Item Dislocator
+recipes.remove(<draconicevolution:magnet>);
+recipes.addShaped(<draconicevolution:magnet>, [[<draconicevolution:draconium_ingot>,null,<draconicevolution:draconium_ingot>],[<draconicevolution:draconium_ingot>,<botania:magnetringgreater>,<draconicevolution:draconium_ingot>],[<draconicevolution:wyvern_core>,<draconicevolution:dislocator>,<draconicevolution:wyvern_core>]]);
+
+# Wyvern Helm
+recipes.remove(<draconicevolution:wyvern_helm>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_helm", <draconicevolution:wyvern_helm>,
+[[null,null,null,null,null,null,null,null,null],
+[null,null,null,<mysticalagriculture:ingot_storage:5>,null,<mysticalagriculture:ingot_storage:5>,null,null,null],
+[null,null,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>,<extendedcrafting:material:24>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:draconium_block>,null,null],
+[null,null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null,null],
+[null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,<draconicadditions:potato_helm>,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null],
+[<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>],
+[<draconicevolution:draconium_block>,null,null,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null,null,<draconicevolution:draconium_block>],
+[<draconicevolution:draconium_block>,null,null,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null,null,<draconicevolution:draconium_block>],
+[null,null,null,null,null,null,null,null,null]]);
+
+# Wyvern Chestplate
+recipes.remove(<draconicevolution:wyvern_chest>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_chest", <draconicevolution:wyvern_chest>,
+[[null,null,<extendedcrafting:material:24>,null,null,null,<extendedcrafting:material:24>,null,null],
+[<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null,null,null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>],
+[null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<mysticalagriculture:ingot_storage:5>,<mysticalagriculture:ingot_storage:5>,<mysticalagriculture:ingot_storage:5>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicadditions:potato_chest>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null],
+[null,null,null,null,null,null,null,null,null]]);
+
+# Wyvern Leggings
+recipes.remove(<draconicevolution:wyvern_legs>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_legs", <draconicevolution:wyvern_chest>,
+[[null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null],
+[<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>],
+[null,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,<mysticalagriculture:ingot_storage:5>,<draconicadditions:potato_legs>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null],
+[null,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,null],
+[null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null]]);
+
+# Wyvern Boots
+recipes.remove(<draconicevolution:wyvern_boots>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_boots", <draconicevolution:wyvern_boots>,
+[[null,null,null,null,null,null,null,null,null],
+[null,null,null,null,null,null,null,null,null],
+[null,null,null,null,null,null,null,null,null],
+[<extendedcrafting:material:24>,null,<mysticalagriculture:ingot_storage:5>,<mysticalagriculture:ingot_storage:5>,null,<mysticalagriculture:ingot_storage:5>,<mysticalagriculture:ingot_storage:5>,null,<extendedcrafting:material:24>],
+[null,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,<draconicadditions:potato_boots>,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,null],
+[null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<extendedcrafting:material:24>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null]]);
+
+# Wyvern Flux Capacitor
+recipes.remove(<draconicevolution:draconium_capacitor>);
+# recipe in config/modularmachinery/recipes/laser_focus_draconicevolution_wyvern_flux_capacitor.json
+
+# Crystal Binder
+recipes.remove(<draconicevolution:crystal_binder>);
+recipes.addShapedMirrored(<draconicevolution:crystal_binder>, [[null,<draconicevolution:draconium_ingot>,null],[null,<contenttweaker:solar_ingot>,<draconicevolution:draconium_ingot>],[<draconicevolution:draconic_core>,null,null]]);
+
+# Sword of the Wyvern
+recipes.remove(<draconicevolution:wyvern_sword>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_sword", <draconicevolution:wyvern_sword>,
+[[null,null,null,null,<draconicevolution:draconium_block>,null,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>,<galacticraftplanets:titanium_sword>,<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,null,null],
+[null,null,null,<extendedcrafting:material:24>,<mysticalagriculture:ingot_storage:5>,<extendedcrafting:material:24>,null,null,null],
+[null,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,null]]);
+
+# Pickaxe of the Wyvern
+recipes.remove(<draconicevolution:wyvern_pick>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_pick", <draconicevolution:wyvern_pick>,
+[[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null],
+[null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null],
+[<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,<draconicevolution:wyvern_core>,<galacticraftplanets:titanium_pickaxe>,<draconicevolution:wyvern_core>,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>],
+[<draconicevolution:draconium_block>,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,<draconicevolution:draconium_block>],
+[null,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<draconicevolution:draconium_block>,null,null,null,null]]);
+
+# Shovel of the Wyvern
+recipes.remove(<draconicevolution:wyvern_shovel>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_shovel" ,<draconicevolution:wyvern_shovel>,
+[[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:wyvern_core>,<galacticraftplanets:titanium_shovel>,<draconicevolution:wyvern_core>,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:draconium_block>,null,null,null]]);
+
+# Axe of the Wyvern
+recipes.remove(<draconicevolution:wyvern_axe>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_axe", <draconicevolution:wyvern_axe>,
+[[null,null,<draconicevolution:draconium_block>,null,null,null,null,null,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,null,null,null,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<galacticraftplanets:titanium_axe>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,null,null,null,null],
+[null,null,<draconicevolution:draconium_block>,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<extendedcrafting:material:24>,null,null,null,null],
+[null,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:draconium_block>,null,null,null]]);
+
+# Bow of the Wyvern
+recipes.remove(<draconicevolution:wyvern_bow>);
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_bow", <draconicevolution:wyvern_bow>,
+[[null,null,<extendedcrafting:material:24>,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,],
+[null,null,null,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null,null,null,<mysticalagriculture:ingot_storage:5>],
+[<extendedcrafting:material:24>,null,<thaumcraft:turret>,<draconicevolution:draconium_block>,<mysticalagriculture:supremium_bow>,null,null,<botania:manaresource:12>,null],
+[null,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,<bloodmagic:sentient_bow>,null,null,<botania:manaresource:12>,null,null],
+[null,<draconicevolution:draconium_block>,<divinerpg:mortum_bow>,null,null,<botania:manaresource:12>,null,null,null],
+[<draconicevolution:draconium_block>,null,null,null,<botania:manaresource:12>,null,null,null,null],
+[<draconicevolution:draconium_block>,null,null,<botania:manaresource:12>,null,null,null,null,null],
+[<draconicevolution:draconium_block>,null,<botania:manaresource:12>,null,null,null,null,null,null],
+[<mysticalagriculture:ingot_storage:5>,<botania:manaresource:12>,null,null,null,null,null,null,null]]);
+
 print("ENDING DraconicEvolution.zs");
