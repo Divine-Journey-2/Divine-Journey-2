@@ -105,4 +105,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:interface>,
 [<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>,<extendedcrafting:storage>],
 [<extendedcrafting:storage>,null,null,null,null,null,null,null,<extendedcrafting:storage>]]);
 
+# Quantum Compressor
+recipes.remove(<extendedcrafting:compressor>);
+mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:compressor>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:awakened_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:rainbow_tablet>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<contenttweaker:rainbow_tablet>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftcore:machine4>,<galacticraftplanets:item_basic_asteroids:8>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:awakened_core>,<extendedcrafting:material:24>,<galacticraftcore:machine4>,<contenttweaker:draconic_machine_frame>,<galacticraftcore:machine4>,<extendedcrafting:material:24>,<draconicevolution:awakened_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftcore:machine4>,<galacticraftplanets:item_basic_asteroids:8>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:rainbow_tablet>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<contenttweaker:rainbow_tablet>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:awakened_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
 print("ENDING ExtendedCrafting.zs");

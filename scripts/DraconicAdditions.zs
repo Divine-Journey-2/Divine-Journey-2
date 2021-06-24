@@ -42,4 +42,26 @@ mods.thaumcraft.Infusion.registerRecipe("infused_potato_boots", "", <draconicadd
 <draconicadditions:potato_legs>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Leggings."));
 <draconicadditions:potato_boots>.addTooltip(format.white("Obtained by Right Clicking with an Infused Potato Boots."));
 
+# Armor Generator
+recipes.remove(<draconicadditions:armor_generator>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicadditions:armor_generator>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_praemunio>,<simplyjetpacks:metaitemmods:25>,<contenttweaker:condensed_vis_crystal_praemunio>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:wyvern_core>,<simplyjetpacks:metaitemmods:25>,<draconicevolution:generator>,<simplyjetpacks:metaitemmods:25>,<draconicevolution:wyvern_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_praemunio>,<simplyjetpacks:metaitemmods:25>,<contenttweaker:condensed_vis_crystal_praemunio>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Item Drainer
+recipes.remove(<draconicadditions:item_drainer>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicadditions:item_drainer>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_potentia>,<thermalexpansion:machine:9>,<contenttweaker:condensed_vis_crystal_potentia>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:wyvern_core>,<thermalexpansion:machine:9>,<draconicevolution:generator>,<thermalexpansion:machine:9>,<draconicevolution:wyvern_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_potentia>,<thaumicaugmentation:impetus_drainer>,<contenttweaker:condensed_vis_crystal_potentia>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:wyvern_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Capacitor Supplier
+recipes.remove(<draconicadditions:capacitor_supplier>);
+recipes.addShaped(<draconicadditions:capacitor_supplier>, [[<immersiveengineering:material:1>,null,<immersiveengineering:material:1>],[null,<thermalexpansion:machine:9>,null],[<thermalfoundation:material:32>,<draconicevolution:dislocator_pedestal>,<thermalfoundation:material:32>]]);
+
 print("ENDING DraconicAdditions.zs");

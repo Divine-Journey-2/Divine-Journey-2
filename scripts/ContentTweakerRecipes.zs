@@ -1279,6 +1279,12 @@ EIOAlloySmelter.addRecipe(<contenttweaker:corrupted_light_ingot>, [<plustic:miri
 # Draconic Machine Frame
 recipes.addShaped(<contenttweaker:draconic_machine_frame>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<contenttweaker:galactic_machine_frame>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Dragon Token
+recipes.addShaped(<contenttweaker:dragon_token>, [[<contenttweaker:compressed_obsidian3>,<draconicevolution:wyvern_core>,<contenttweaker:compressed_obsidian3>],[<draconicevolution:wyvern_core>,<minecraft:dragon_egg>,<draconicevolution:wyvern_core>],[<contenttweaker:compressed_obsidian3>,<draconicevolution:wyvern_core>,<contenttweaker:compressed_obsidian3>]]);
+
+# Awakened Dragon Token
+recipes.addShaped(<contenttweaker:awakened_dragon_token>, [[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>],[<mysticalagriculture:crafting:37>,<draconicevolution:draconic_block>,<mysticalagriculture:crafting:37>],[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

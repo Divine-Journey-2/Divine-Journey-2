@@ -1,4 +1,5 @@
 # Author: Atricos
+# FUSION RECIPES IN config/brandon3055/CustomFusionRecipes.json
 
 import mods.botania.RuneAltar;
 import mods.thaumcraft.Infusion;
@@ -203,7 +204,7 @@ mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_chest", <draco
 
 # Wyvern Leggings
 recipes.remove(<draconicevolution:wyvern_legs>);
-mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_legs", <draconicevolution:wyvern_chest>,
+mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_legs", <draconicevolution:wyvern_legs>,
 [[null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,null],
 [<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>],
 [null,<draconicevolution:draconium_block>,<draconicevolution:wyvern_core>,<mysticalagriculture:ingot_storage:5>,<draconicadditions:potato_legs>,<mysticalagriculture:ingot_storage:5>,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null],
@@ -290,8 +291,8 @@ mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_axe", <draconi
 # Bow of the Wyvern
 recipes.remove(<draconicevolution:wyvern_bow>);
 mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_bow", <draconicevolution:wyvern_bow>,
-[[null,null,<extendedcrafting:material:24>,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,],
-[null,null,null,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null,null,null,<mysticalagriculture:ingot_storage:5>],
+[[null,null,<extendedcrafting:material:24>,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<mysticalagriculture:ingot_storage:5>],
+[null,null,null,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,null,null,null,<botania:manaresource:12>],
 [<extendedcrafting:material:24>,null,<thaumcraft:turret>,<draconicevolution:draconium_block>,<mysticalagriculture:supremium_bow>,null,null,<botania:manaresource:12>,null],
 [null,<draconicevolution:wyvern_core>,<draconicevolution:draconium_block>,<bloodmagic:sentient_bow>,null,null,<botania:manaresource:12>,null,null],
 [null,<draconicevolution:draconium_block>,<divinerpg:mortum_bow>,null,null,<botania:manaresource:12>,null,null,null],
@@ -299,5 +300,69 @@ mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_bow", <draconi
 [<draconicevolution:draconium_block>,null,null,<botania:manaresource:12>,null,null,null,null,null],
 [<draconicevolution:draconium_block>,null,<botania:manaresource:12>,null,null,null,null,null,null],
 [<mysticalagriculture:ingot_storage:5>,<botania:manaresource:12>,null,null,null,null,null,null,null]]);
+
+# Upgrade Key (RF Capacity)
+recipes.remove(<draconicevolution:tool_upgrade>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade", "", <draconicevolution:tool_upgrade>, 8, [<aspect:potentia> * 80, <aspect:instrumentum> * 60], <draconicevolution:wyvern_energy_core>, [<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<draconicevolution:draconium_block>,<draconicevolution:draconic_core>,<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<draconicevolution:draconium_block>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Dig Speed)
+recipes.remove(<draconicevolution:tool_upgrade:1>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:1", "", <draconicevolution:tool_upgrade:1>, 8, [<aspect:motus> * 80, <aspect:instrumentum> * 60], <minecraft:golden_pickaxe>, [<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Dig AOE)
+recipes.remove(<draconicevolution:tool_upgrade:2>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:2", "", <draconicevolution:tool_upgrade:2>, 8, [<aspect:perditio> * 80, <aspect:instrumentum> * 60], <mysticalagradditions:charm>, [<actuallyadditions:block_miner>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<thaumcraft:turret:2>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Attack Damage)
+recipes.remove(<draconicevolution:tool_upgrade:3>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:3", "", <draconicevolution:tool_upgrade:3>, 8, [<aspect:aversio> * 80, <aspect:instrumentum> * 60], <mysticalagriculture:charm:8>, [<minecraft:potion>.withTag({Potion: "cofhcore:strength3+"}),<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:strength3+"}),<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Attack AOE)
+recipes.remove(<draconicevolution:tool_upgrade:4>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:4", "", <draconicevolution:tool_upgrade:4>, 8, [<aspect:aversio> * 80, <aspect:instrumentum> * 60], <mysticalagriculture:charm:16>, [<immersiveengineering:metal_device1:11>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<immersiveengineering:metal_device1:11>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Arrow Damage)
+recipes.remove(<draconicevolution:tool_upgrade:5>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:5", "", <draconicevolution:tool_upgrade:5>, 8, [<aspect:aversio> * 80, <aspect:volatus> * 60], <mysticalagriculture:charm:14>, [<mysticalagriculture:supremium_arrow>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<mysticalagriculture:supremium_arrow>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Draw Speed)
+recipes.remove(<draconicevolution:tool_upgrade:6>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:6", "", <draconicevolution:tool_upgrade:6>, 8, [<aspect:motus> * 80, <aspect:volatus> * 60], <mysticalagriculture:charm:13>, [<mysticalagriculture:supremium_arrow>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<mysticalagriculture:supremium_arrow>,<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Arrow Speed)
+recipes.remove(<draconicevolution:tool_upgrade:7>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:7", "", <draconicevolution:tool_upgrade:7>, 8, [<aspect:motus> * 80, <aspect:volatus> * 60], <mysticalagriculture:supremium_arrow>, [<minecraft:tipped_arrow>.withTag({Potion: "cofhcore:swiftness4"}),<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>,<minecraft:tipped_arrow>.withTag({Potion: "cofhcore:swiftness4"}),<draconicevolution:draconic_core>,<lightningcraft:plate:9>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Shield Capacity)
+recipes.remove(<draconicevolution:tool_upgrade:8>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:8", "", <draconicevolution:tool_upgrade:8>, 8, [<aspect:praemunio> * 80, <aspect:potentia> * 60], <mysticalagriculture:charm:6>, [<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<spartanshields:shield_tower_platinum>,<draconicevolution:draconic_core>,<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<spartanshields:shield_tower_platinum>,<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Shield Recovery)
+recipes.remove(<draconicevolution:tool_upgrade:9>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:9", "", <draconicevolution:tool_upgrade:9>, 8, [<aspect:praemunio> * 80, <aspect:potentia> * 60], <mysticalagriculture:charm:2>, [<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<draconicevolution:draconic_core>,<enderio:block_cap_bank:3>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Movement Speed)
+recipes.remove(<draconicevolution:tool_upgrade:10>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:10", "", <draconicevolution:tool_upgrade:10>, 8, [<aspect:motus> * 80, <aspect:praemunio> * 60], <mysticalagriculture:charm:9>, [<teslacorelib:speed_tier2>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<draconicevolution:draconic_core>,<teslacorelib:speed_tier2>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<draconicevolution:draconic_core>]);
+
+# Upgrade Key (Jump Boost)
+recipes.remove(<draconicevolution:tool_upgrade:11>);
+mods.thaumcraft.Infusion.registerRecipe("draconicevolution:tool_upgrade:11", "", <draconicevolution:tool_upgrade:11>, 8, [<aspect:motus> * 80, <aspect:volatus> * 60], <mysticalagriculture:charm:10>, [<tconstruct:slime_boots:*>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<draconicevolution:draconic_core>,<tconstruct:slime_boots:*>,<draconicevolution:draconic_core>,<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<draconicevolution:draconic_core>]);
+
+# Draconic Wireless Energy Crystal
+recipes.remove(<draconicevolution:energy_crystal:8>);
+recipes.addShaped(<draconicevolution:energy_crystal:8>, [[<enderio:block_enhanced_wireless_charger>,<draconicevolution:particle_generator:2>,<enderio:block_enhanced_wireless_charger>],[<draconicevolution:awakened_core>,<draconicevolution:energy_crystal:2>,<draconicevolution:awakened_core>],[<enderio:block_enhanced_wireless_charger>,<draconicevolution:particle_generator:2>,<enderio:block_enhanced_wireless_charger>]]);
+
+# Awakened Item Dislocator
+recipes.remove(<draconicevolution:magnet:1>);
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
+# Draconic Flux Capacitor
+recipes.remove(<draconicevolution:draconium_capacitor:1>);
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
+# Dragon Heart from Mystical Agriaddons
+recipes.remove(<draconicevolution:dragon_heart>);
+recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>],[<mysticalagradditions:stuff:2>,<bhc:green_heart>,<mysticalagradditions:stuff:2>],[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>]]);
 
 print("ENDING DraconicEvolution.zs");

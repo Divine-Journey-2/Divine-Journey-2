@@ -1,0 +1,53 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_draconicevolution_tool_upgrade_11",
+    "recipeTime": 140,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:draconic_core",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:charm@10"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "tconstruct:slime_boots",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:potion",
+            "nbt": {"Potion": "cofhcore:leaping4"},
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "volatus",
+            "amount": 60
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "draconicevolution:tool_upgrade@11"
+        }
+    ]
+}

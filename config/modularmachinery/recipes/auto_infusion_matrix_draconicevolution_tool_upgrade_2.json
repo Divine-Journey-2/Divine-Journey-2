@@ -1,0 +1,56 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_draconicevolution_tool_upgrade_2",
+    "recipeTime": 140,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:charm"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:turret@2"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "lightningcraft:plate@9",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:draconic_core",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:block_miner"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 60
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "draconicevolution:tool_upgrade@2"
+        }
+    ]
+}

@@ -629,6 +629,15 @@ addMysticalAgricultureBowRecipe(<mysticalagriculture:intermedium_bow>,<mysticala
 addMysticalAgricultureBowRecipe(<mysticalagriculture:superium_bow>,<mysticalagriculture:intermedium_bow>,<mysticalagriculture:crafting:36>,<mysticalagriculture:gear:3>);
 
 # Supremium Bow
+recipes.remove(<mysticalagriculture:supremium_bow>);
 addMysticalAgricultureBowRecipe(<mysticalagriculture:supremium_bow>.withTag({}),<mysticalagriculture:superium_bow>,<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:4>);
+
+# Tier 5 Crafting Seed
+recipes.remove(<mysticalagriculture:crafting:21>);
+# recipe in config/modularmachinery/laser_focus_mysticalagriculture_tier_5_crafting_seed.json
+
+# Dragon Egg Seeds
+recipes.remove(<mysticalagradditions:dragon_egg_seeds>);
+# recipes in config/modularmachinery/laser_focus_mysticalagriculture_dragon_egg_seeds.json
 
 print("ENDING MysticalAgriculture.zs");
