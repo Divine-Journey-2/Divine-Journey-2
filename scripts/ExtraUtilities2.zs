@@ -496,4 +496,20 @@ for i in 0 to 6 {
 recipes.remove(<extrautils2:chunkloader>);
 recipes.addShaped(<extrautils2:chunkloader>, [[<astralsorcery:blockinfusedwood:6>,<extrautils2:ingredients:2>,<astralsorcery:blockinfusedwood:6>],[<astralsorcery:blockinfusedwood:6>,<enderio:item_capacitor_totemic>,<astralsorcery:blockinfusedwood:6>],[null,<lightningcraft:rod:9>,null]]);
 
+# Lux Sabers
+val luxSaberGlasses = [<ore:blockGlassBlue>,<ore:blockGlassPink>,<ore:blockGlassRed>,<ore:blockGlassYellow>,<ore:blockGlassGreen>,<ore:blockGlassCyan>,<ore:blockGlassWhite>,<ore:blockGlassBlack>] as IIngredient[];
+for i in 0 to 8 {
+	recipes.remove(<extrautils2:luxsaber>.withDamage(i));
+	mods.avaritia.ExtremeCrafting.addShaped("extrautils2:luxsaber" + i, <extrautils2:luxsaber>.withDamage(i),
+	[[null,null,null,null,luxSaberGlasses[i],null,null,null,null],
+	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+	[null,null,<extrautils2:ingredients:17>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:2>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:17>,null,null],
+	[null,null,null,<extrautils2:ingredients:17>,<extrautils2:ingredients:2>,<extrautils2:ingredients:17>,null,null,null],
+	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
+}
+
 print("ENDING ExtraUtilities2.zs");

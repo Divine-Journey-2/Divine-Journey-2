@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "COLD",
     "FOREST",
-    "SNOWY",
-    "CONIFEROUS"
+    "CONIFEROUS",
+    "SNOWY"
   ],
   "BiomeManager Entries": {
     "ICY Weights": [

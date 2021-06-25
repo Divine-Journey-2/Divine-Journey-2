@@ -64,6 +64,19 @@ recipes.addShaped(<modularmachinery:blockinputbus:3>, [[<galacticraftcore:heavy_
 # Reinforced Item Output
 recipes.addShaped(<modularmachinery:blockoutputbus:3>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockoutputbus:2>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
 
+# Big Item Input
+recipes.addShaped(<modularmachinery:blockinputbus:4>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:13>,<modularmachinery:blockinputbus:3>,<galacticraftcore:basic_item:13>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Big Item Output
+recipes.addShaped(<modularmachinery:blockoutputbus:4>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:13>,<modularmachinery:blockoutputbus:3>,<galacticraftcore:basic_item:13>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Huge Item Input
+recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockinputbus:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Huge Item Output
+recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockoutputbus:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+
 # Tiny Energy Input Hatch
 recipes.remove(<modularmachinery:blockenergyinputhatch>);
 recipes.addShaped(<modularmachinery:blockenergyinputhatch>, [[null,<mekanism:energyupgrade>,null],[<mekanism:energyupgrade>,<modularmachinery:blockcasing>,<mekanism:energyupgrade>],[null,<mekanism:energyupgrade>,null]]);

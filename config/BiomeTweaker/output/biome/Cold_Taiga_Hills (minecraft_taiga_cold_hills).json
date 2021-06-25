@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "COLD",
     "FOREST",
-    "SNOWY",
     "CONIFEROUS",
+    "SNOWY",
     "HILLS"
   ],
   "BiomeManager Entries": {},

@@ -64,4 +64,26 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicadditions:item_drainer>,
 recipes.remove(<draconicadditions:capacitor_supplier>);
 recipes.addShaped(<draconicadditions:capacitor_supplier>, [[<immersiveengineering:material:1>,null,<immersiveengineering:material:1>],[null,<thermalexpansion:machine:9>,null],[<thermalfoundation:material:32>,<draconicevolution:dislocator_pedestal>,<thermalfoundation:material:32>]]);
 
+# Basic Necklace of Shielding
+recipes.remove(<draconicadditions:basic_shield_necklace>);
+# recipe in config/modularmachinery/recipes/laser_focus_draconicadditions_basic_necklace_of_shielding.json
+
+# Draconic Belt of Overloading
+recipes.remove(<draconicadditions:overload_belt>);
+recipes.addShaped(<draconicadditions:overload_belt>, [[<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>],[<draconicevolution:draconium_ingot>,<thaumcraft:baubles:6>,<draconicevolution:draconium_ingot>],[<contenttweaker:star_leather>,<draconicevolution:awakened_core>,<contenttweaker:star_leather>]]);
+
+# Draconic Undershirt of Self-Siphoning
+recipes.remove(<draconicadditions:vampiric_shirt>);
+recipes.addShaped(<draconicadditions:vampiric_shirt>, [[<draconicevolution:draconic_ingot>,null,<draconicevolution:draconic_ingot>],[<draconicevolution:awakened_core>,<actuallyadditions:item_chest_crystal_light_blue>,<draconicevolution:awakened_core>],[<draconicevolution:draconic_ingot>,<actuallyadditions:item_chest_crystal_green>,<draconicevolution:draconic_ingot>]]);
+
+# Ring of Inertia Cancellation
+recipes.remove(<draconicadditions:inertia_cancel_ring>);
+recipes.addShaped(<draconicadditions:inertia_cancel_ring>, [[<draconicevolution:wyvern_energy_core>,<contenttweaker:condensed_vis_crystal_motus>,<draconicevolution:wyvern_energy_core>],[<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:baubles:5>,<contenttweaker:condensed_vis_crystal_motus>],[<draconicevolution:wyvern_energy_core>,<contenttweaker:condensed_vis_crystal_motus>,<draconicevolution:wyvern_energy_core>]]);
+
+# Portable Wired Chargers
+recipes.remove(<draconicadditions:portable_wired_charger>);
+recipes.remove(<draconicadditions:portable_wired_charger:1>);
+recipes.remove(<draconicadditions:portable_wired_charger:2>);
+recipes.remove(<draconicadditions:portable_wired_charger:3>);
+
 print("ENDING DraconicAdditions.zs");

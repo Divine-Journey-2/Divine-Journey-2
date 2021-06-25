@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "DRY",
     "SPARSE",
-    "PLAINS",
-    "HOT"
+    "HOT",
+    "PLAINS"
   ],
   "BiomeManager Entries": {
     "WARM Weights": [

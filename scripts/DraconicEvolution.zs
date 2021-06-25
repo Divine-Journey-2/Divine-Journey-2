@@ -3,6 +3,7 @@
 
 import mods.botania.RuneAltar;
 import mods.thaumcraft.Infusion;
+import mods.enderio.Enchanter;
 
 print("STARTING DraconicEvolution.zs");
 
@@ -31,11 +32,11 @@ recipes.remove(<draconicevolution:grinder>);
 mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:grinder>,
 [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<evilcraft:potentia_sphere>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
-[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<mob_grinding_utils:saw>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
-[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<mob_grinding_utils:saw>,<industrialforegoing:mob_relocator>,<mob_grinding_utils:saw>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<galacticraftplanets:item_basic_asteroids:5>],
-[<draconicevolution:draconic_core>,<evilcraft:potentia_sphere>,<mob_grinding_utils:saw>,<industrialforegoing:mob_relocator>,<contenttweaker:draconic_machine_frame>,<industrialforegoing:mob_relocator>,<mob_grinding_utils:saw>,<evilcraft:potentia_sphere>,<evilcraft:potentia_sphere>,<draconicevolution:draconic_core>],
-[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<mob_grinding_utils:saw>,<industrialforegoing:mob_relocator>,<mob_grinding_utils:saw>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<galacticraftplanets:item_basic_asteroids:5>],
-[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<mob_grinding_utils:saw>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<industrialforegoing:mob_relocator>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<industrialforegoing:mob_relocator>,<contenttweaker:death_core>,<industrialforegoing:mob_relocator>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<galacticraftplanets:item_basic_asteroids:5>],
+[<draconicevolution:draconic_core>,<evilcraft:potentia_sphere>,<industrialforegoing:mob_relocator>,<contenttweaker:death_core>,<contenttweaker:draconic_machine_frame>,<contenttweaker:death_core>,<industrialforegoing:mob_relocator>,<evilcraft:potentia_sphere>,<draconicevolution:draconic_core>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<industrialforegoing:mob_relocator>,<contenttweaker:death_core>,<industrialforegoing:mob_relocator>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:condensed_vis_crystal_aversio>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<industrialforegoing:mob_relocator>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<contenttweaker:condensed_vis_crystal_aversio>,<evilcraft:potentia_sphere>,<contenttweaker:condensed_vis_crystal_aversio>,<contenttweaker:offensive_core>,<contenttweaker:offensive_core>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
@@ -244,7 +245,7 @@ mods.avaritia.ExtremeCrafting.addShaped("draconicevolution:wyvern_sword", <draco
 [null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
 [null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
 [null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
-[null,null,null,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,<draconicevolution:draconium_block>,null,null,null],
+[null,null,null,<draconicevolution:draconium_block>,<extrautils2:luxsaber:*>,<draconicevolution:draconium_block>,null,null,null],
 [null,null,<extendedcrafting:material:24>,<draconicevolution:wyvern_core>,<galacticraftplanets:titanium_sword>,<draconicevolution:wyvern_core>,<extendedcrafting:material:24>,null,null],
 [null,null,null,<extendedcrafting:material:24>,<mysticalagriculture:ingot_storage:5>,<extendedcrafting:material:24>,null,null,null],
 [null,null,null,null,<mysticalagriculture:ingot_storage:5>,null,null,null,null]]);
@@ -364,5 +365,10 @@ recipes.remove(<draconicevolution:draconium_capacitor:1>);
 # Dragon Heart from Mystical Agriaddons
 recipes.remove(<draconicevolution:dragon_heart>);
 recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>],[<mysticalagradditions:stuff:2>,<bhc:green_heart>,<mysticalagradditions:stuff:2>],[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>]]);
+
+# Reaper enchantment
+# mods.enderio.Enchanter.removeRecipe(<enchantment:draconicevolution:enchant_reaper>);
+# mods.enderio.Enchanter.addRecipe(<enchantment:draconicevolution:enchant_reaper>, <draconicevolution:draconic_core>, 3, 60);
+# causes a crash
 
 print("ENDING DraconicEvolution.zs");

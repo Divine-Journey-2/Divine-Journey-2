@@ -431,5 +431,70 @@
             "draconicevolution:awakened_core",
             "draconicevolution:draconic_energy_core"
         ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:chaotic_core",
+        "catalyst": "draconicevolution:chaos_shard,1,0"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:chaotic_core",
+        "catalyst": "draconicevolution:chaos_shard,1,0",
+        "energy": 150000000,
+        "tier": 2,
+        "ingredients": [
+            "contenttweaker:awakened_dragon_token",
+            "galacticraftplanets:item_basic_asteroids,1,5",
+            "draconicevolution:draconic_ingot",
+            "galacticraftplanets:item_basic_asteroids,1,5",
+            "draconicevolution:draconic_ingot",
+            "galacticraftplanets:item_basic_asteroids,1,5",
+            "draconicevolution:draconic_ingot"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_energy_core",
+        "catalyst": "draconicevolution:draconic_energy_core"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_energy_core",
+        "catalyst": "draconicevolution:awakened_core",
+        "energy": 1000000000,
+        "tier": 2,
+        "ingredients": [
+            "draconicevolution:draconic_energy_core",
+            "draconicevolution:draconic_energy_core",
+            "draconicevolution:draconic_energy_core",
+            "draconicevolution:draconic_energy_core",
+            "draconicevolution:chaos_shard,1,1",
+            "draconicevolution:chaos_shard,1,1",
+            "draconicevolution:chaos_shard,1,1",
+            "draconicevolution:chaos_shard,1,1"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:crafting_injector,1,3",
+        "catalyst": "draconicevolution:crafting_injector,1,2"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:crafting_injector,1,3",
+        "catalyst": "draconicevolution:crafting_injector,1,2",
+        "energy": 300000000,
+        "tier": 2,
+        "ingredients": [
+            "extendedcrafting:material,1,24",
+            "extendedcrafting:material,1,24",
+            "draconicevolution:chaotic_core",
+            "draconicevolution:chaotic_core",
+            "draconicevolution:awakened_core",
+            "draconicevolution:awakened_core",
+            "extrautils2:simpledecorative,1,2",
+            "extrautils2:simpledecorative,1,2"
+        ]
     }
 ]

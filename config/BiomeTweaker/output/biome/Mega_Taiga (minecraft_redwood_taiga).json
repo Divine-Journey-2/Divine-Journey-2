@@ -21,10 +21,10 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "COLD",
-    "MEGA_TAIGA_TREES",
     "THEMED_TREES",
     "FOREST",
-    "CONIFEROUS"
+    "CONIFEROUS",
+    "MEGA_TAIGA_TREES"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

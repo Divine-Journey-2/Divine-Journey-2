@@ -22,8 +22,8 @@
   "Dictionary Types": [
     "THEMED_TREES",
     "FOREST",
-    "RARE",
     "MEGA_TAIGA_SPRUCE_TREES",
+    "RARE",
     "DENSE"
   ],
   "BiomeManager Entries": {},
