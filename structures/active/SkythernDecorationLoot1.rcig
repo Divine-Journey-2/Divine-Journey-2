@@ -1,0 +1,347 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "SkythernDecorationLoot",
+  "items": [
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "thaumcraft:salis_mundus",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "abyssalcraft:methane",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.7249209880828857,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "botania:quartz",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 3,
+      "item": {
+        "id": "thaumcraft:ingot",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.540874481201172,
+      "min": 1,
+      "max": 5,
+      "item": {
+        "id": "botania:manaresource",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:power_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:magical_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:offensive_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:dark_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:potency_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:suppression_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:fire_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:holy_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:gusty_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:environmental_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:earthen_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:defensive_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:reduction_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:aquatic_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:tempest_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:tempest_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:icy_core",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.18405085802078247,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "divinerpg:skythern_blade",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.18405085802078247,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "divinerpg:skythern_bow",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.12706157565116882,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "divinerpg:skythern_slicer",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.08515378087759018,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "divinerpg:skythern_blitz",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.12706157565116882,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "divinerpg:skythern_phaser",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "contenttweaker:knowledge_of_the_sky",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 5,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "thaumcraft:curio",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

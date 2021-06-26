@@ -429,7 +429,7 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/tier4mob
 [null,null,null,
 null,<mysticalagriculture:chunk:2>,null,
 null,null,null,
-<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+null,null,null,null,
 null,null,null,null,null,null,null,null,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
 
@@ -634,10 +634,83 @@ addMysticalAgricultureBowRecipe(<mysticalagriculture:supremium_bow>.withTag({}),
 
 # Tier 5 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:21>);
-# recipe in config/modularmachinery/laser_focus_mysticalagriculture_tier_5_crafting_seed.json
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_tier_5_crafting_seed.json
 
-# Dragon Egg Seeds
-recipes.remove(<mysticalagradditions:dragon_egg_seeds>);
-# recipes in config/modularmachinery/laser_focus_mysticalagriculture_dragon_egg_seeds.json
+# Inferium Seeds: Tier 5
+recipes.remove(<mysticalagriculture:tier5_inferium_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_inferium_seeds_tier_5.json
+
+# Tier 5 Mob Chunk
+recipes.remove(<mysticalagriculture:chunk:4>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_tier_5_mob_chunk.json
+
+# Wither Skeleton Chunk
+recipes.remove(<mysticalagriculture:chunk:20>);
+recipes.addShaped(<mysticalagriculture:chunk:20>, [[<minecraft:skull:1>,<extrautils2:ingredients:10>,<minecraft:skull:1>],[<extrautils2:ingredients:10>,<mysticalagriculture:chunk:4>,<extrautils2:ingredients:10>],[<minecraft:skull:1>,<extrautils2:ingredients:10>,<minecraft:skull:1>]]);
+
+# Wither Skeleton Seeds
+recipes.remove(<mysticalagriculture:wither_skeleton_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_wither_skeleton_seeds.json
+
+# Zinc Seeds
+recipes.remove(<mysticalagriculture:zinc_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_zinc_seeds.json
+
+# Alchemical Brass Seeds
+<mysticalagriculture:brass_seeds>.displayName = "Alchemical Brass Seeds";
+<mysticalagriculture:brass_essence>.displayName = "Alchemical Brass Essence";
+recipes.remove(<mysticalagriculture:brass_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_alchemical_brass_seeds.json
+
+# Titanium Seeds
+recipes.remove(<mysticalagriculture:titanium_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_titanium_seeds.json
+
+# End Steel Seeds
+recipes.remove(<mysticalagriculture:end_steel_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_end_steel_seeds.json
+
+# Terrasteel Seeds
+recipes.remove(<mysticalagriculture:terrasteel_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_terrasteel_seeds.json
+
+# Thaumium Seeds
+recipes.remove(<mysticalagriculture:thaumium_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_thaumium_seeds.json
+
+# Void Metal Seeds
+recipes.remove(<mysticalagriculture:void_metal_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_void_metal_seeds.json
+
+# Cold-Iron Seeds
+recipes.remove(<mysticalagriculture:cold_iron_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_cold_iron_seeds.json
+
+# Cold Iron from Cold-Iron Essence
+recipes.addShaped(<bewitchment:cold_iron_ingot> * 3, [[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,null,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>]]);
+
+# Meteoric Iron Seeds
+recipes.remove(<mysticalagriculture:meteoric_iron_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_meteoric_iron_seeds.json
+
+# Desh Seeds
+recipes.remove(<mysticalagriculture:desh_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_desh_seeds.json
+
+# Aquamarine Seeds
+recipes.remove(<mysticalagriculture:aquamarine_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_aquamarine_seeds.json
+
+# Starmetal Seeds
+recipes.remove(<mysticalagriculture:starmetal_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_starmetal_seeds.json
+
+# Draconium Seeds
+recipes.remove(<mysticalagriculture:draconium_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_draconium_seeds.json
+
+# Yellorium Seeds
+recipes.remove(<mysticalagriculture:yellorium_seeds>);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_yellorium_seeds.json
 
 print("ENDING MysticalAgriculture.zs");

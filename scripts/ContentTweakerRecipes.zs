@@ -1285,6 +1285,25 @@ recipes.addShaped(<contenttweaker:dragon_token>, [[<contenttweaker:compressed_ob
 # Awakened Dragon Token
 recipes.addShaped(<contenttweaker:awakened_dragon_token>, [[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>],[<mysticalagriculture:crafting:37>,<draconicevolution:draconic_block>,<mysticalagriculture:crafting:37>],[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>]]);
 
+# Crystal Core
+recipes.addShaped("crystal_core", <contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<astralsorcery:itemrockcrystalsimple>.marked("rock_crystal"),<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]],
+function(out,ins,cInfo) {
+	if(ins.rock_crystal.tag has "astralsorcery") {
+		if(ins.rock_crystal.tag.astralsorcery has "crystalProperties") {
+			if(ins.rock_crystal.tag.astralsorcery.crystalProperties has "size" && ins.rock_crystal.tag.astralsorcery.crystalProperties has "purity") {
+				if(ins.rock_crystal.tag.astralsorcery.crystalProperties.size >= 300 && ins.rock_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
+					return out;
+				}
+			}
+		}
+	}
+	return null;
+}, null);
+<contenttweaker:crystal_core>.addTooltip(format.white("Can only be crafted if the input"));
+<contenttweaker:crystal_core>.addTooltip(format.white("Rock Crystal has:"));
+<contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
+<contenttweaker:crystal_core>.addTooltip(format.white("Can only be ") + format.red("manually crafted") + format.white("."));
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

@@ -525,4 +525,12 @@ draconic_machine_frame.setToolLevel(2);
 draconic_machine_frame.setBlockSoundType(<soundtype:metal>);
 draconic_machine_frame.register();
 
+var crystal_core = VanillaFactory.createBlock("crystal_core", <blockmaterial:rock>);
+crystal_core.setBlockHardness(2.0);
+crystal_core.setBlockResistance(1.0);
+crystal_core.setToolClass("pickaxe");
+crystal_core.setToolLevel(1);
+crystal_core.setBlockSoundType(<soundtype:glass>);
+crystal_core.register();
+
 print("ENDING ContentTweakerBlocks.zs");

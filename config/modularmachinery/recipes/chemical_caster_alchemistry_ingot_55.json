@@ -1,0 +1,28 @@
+{
+    "machine": "chemical_caster",
+    "registryName": "chemical_caster_alchemistry_ingot_55",
+    "recipeTime": 10,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:element@55",
+            "amount": 16
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 100000
+        },
+        {
+            "type": "mekheat",
+            "io-type": "input",
+            "temperatureRequiredMin": 500
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "alchemistry:ingot@55"
+        }
+    ]
+}
