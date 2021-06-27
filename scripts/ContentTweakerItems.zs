@@ -981,5 +981,9 @@ corrupted_light_ingot.register();
 var plasma_core = VanillaFactory.createItem("plasma_core");
 plasma_core.rarity = "EPIC";
 plasma_core.register();
+var photovoltaic_cell_vii = VanillaFactory.createItem("photovoltaic_cell_vii");
+photovoltaic_cell_vii.register();
+var photovoltaic_cell_viii = VanillaFactory.createItem("photovoltaic_cell_viii");
+photovoltaic_cell_viii.register();
 
 print("ENDING ContentTweakerItems.zs");

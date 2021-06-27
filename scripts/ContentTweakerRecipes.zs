@@ -1304,6 +1304,12 @@ function(out,ins,cInfo) {
 <contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
 <contenttweaker:crystal_core>.addTooltip(format.white("Can only be ") + format.red("manually crafted") + format.white("."));
 
+# Photovoltaic Cell VII
+recipes.addShaped(<contenttweaker:photovoltaic_cell_vii> * 3, [[<ore:blockGlassMagenta>,<ore:blockGlassMagenta>,<ore:blockGlassMagenta>],[<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>],[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>]]);
+
+# Photovoltaic Cell VIII
+recipes.addShaped(<contenttweaker:photovoltaic_cell_viii> * 3, [[<ore:blockGlassRed>,<ore:blockGlassRed>,<ore:blockGlassRed>],[<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>],[<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

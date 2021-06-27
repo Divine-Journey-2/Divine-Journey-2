@@ -1,0 +1,27 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_draconicevolution_charged_draconium_block",
+    "recipeTime": 800,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "draconicevolution:draconium_block@0"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 25600000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "draconicevolution:draconium_block@1"
+        }
+    ]
+}

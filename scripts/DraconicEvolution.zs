@@ -365,10 +365,16 @@ recipes.remove(<draconicevolution:draconium_capacitor:1>);
 # Dragon Heart from Mystical Agriaddons
 recipes.remove(<draconicevolution:dragon_heart>);
 recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>],[<mysticalagradditions:stuff:2>,<bhc:green_heart>,<mysticalagradditions:stuff:2>],[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>]]);
+<draconicevolution:dragon_heart>.addTooltip(format.white("Obtained after slaying the Ender Dragon."));
+<draconicevolution:dragon_heart>.addTooltip(format.white("Can also be crafted using Mystical Agriculture."));
 
 # Reaper enchantment
 # mods.enderio.Enchanter.removeRecipe(<enchantment:draconicevolution:enchant_reaper>);
 # mods.enderio.Enchanter.addRecipe(<enchantment:draconicevolution:enchant_reaper>, <draconicevolution:draconic_core>, 3, 60);
 # causes a crash
+
+# Chaos Shard
+<draconicevolution:chaos_shard>.addTooltip(format.white("Obtained after slaying the Chaos Guardian."));
+<draconicevolution:chaos_shard>.addTooltip(format.white("Can also be crafted using Alchemistry."));
 
 print("ENDING DraconicEvolution.zs");

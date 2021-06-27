@@ -58,7 +58,13 @@ recipes.remove(<solarflux:solar_panel_8>);
 recipes.addShaped(<solarflux:solar_panel_8>, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>]]);
 
 # Wyvern Solar Panel
+recipes.remove(<solarflux:solar_panel_wyvern>);
+recipes.addShaped(<solarflux:solar_panel_wyvern>, [[<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>]]);
+
 # Draconic Solar Panel
+recipes.remove(<solarflux:solar_panel_draconic>);
+recipes.addShaped(<solarflux:solar_panel_draconic>, [[<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>]]);
+
 # Neutronium Solar Panel
 # Solar Panel of Infinity
 
