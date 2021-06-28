@@ -533,4 +533,12 @@ crystal_core.setToolLevel(1);
 crystal_core.setBlockSoundType(<soundtype:glass>);
 crystal_core.register();
 
+var alchemical_machine_frame = VanillaFactory.createBlock("alchemical_machine_frame", <blockmaterial:iron>);
+alchemical_machine_frame.setBlockHardness(6.0);
+alchemical_machine_frame.setBlockResistance(6.0);
+alchemical_machine_frame.setToolClass("pickaxe");
+alchemical_machine_frame.setToolLevel(2);
+alchemical_machine_frame.setBlockSoundType(<soundtype:metal>);
+alchemical_machine_frame.register();
+
 print("ENDING ContentTweakerBlocks.zs");
