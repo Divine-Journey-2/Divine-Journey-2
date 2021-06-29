@@ -8,6 +8,7 @@ import mods.botania.RuneAltar;
 import thaumcraft.aspect.CTAspectStack;
 import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
+import mods.alchemistry.Combiner;
 
 print("STARTING MysticalAgriculture.zs");
 
@@ -712,5 +713,9 @@ recipes.remove(<mysticalagriculture:draconium_seeds>);
 # Yellorium Seeds
 recipes.remove(<mysticalagriculture:yellorium_seeds>);
 # recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_yellorium_seeds.json
+
+# Mystical Fertilizer
+recipes.remove(<mysticalagriculture:mystical_fertilizer>);
+mods.alchemistry.Combiner.addRecipe(<mysticalagriculture:mystical_fertilizer> * 3, [<alchemistry:fertilizer>,<alchemistry:compound:53>]);
 
 print("ENDING MysticalAgriculture.zs");

@@ -91308,7 +91308,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "actuallyadditions:item_food",
-              "Count:3": 64,
+              "Count:3": 16,
               "Damage:2": 17,
               "OreDict:8": ""
             }
@@ -91442,7 +91442,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "actuallyadditions:item_food",
-              "Count:3": 64,
+              "Count:3": 16,
               "Damage:2": 15,
               "OreDict:8": ""
             }
@@ -92802,7 +92802,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "roots:terra_moss",
-              "Count:3": 64,
+              "Count:3": 24,
               "Damage:2": 0,
               "OreDict:8": ""
             }

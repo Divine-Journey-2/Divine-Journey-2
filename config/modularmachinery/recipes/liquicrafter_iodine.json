@@ -1,0 +1,35 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_iodine",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@41",
+            "amount": 16
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "impure_mercury_iodine_mixture",
+            "amount": 500
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "liquid_iodine",
+            "amount": 500
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@69"
+        }
+    ]
+}

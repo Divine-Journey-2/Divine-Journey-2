@@ -18,6 +18,7 @@ import moretweaker.lightningcraft.LightningCrusher;
 import mods.thermalexpansion.InductionSmelter;
 import mods.roots.Mortar;
 import mods.thermalexpansion.Sawmill;
+import mods.alchemistry.Combiner;
 
 print("STARTING ProjectRedCore.zs");
 
@@ -83,5 +84,8 @@ addProjectRedSiliconCompoundRecipe(<projectred-core:resource_item:312>, <content
 # Motor
 recipes.remove(<projectred-core:resource_item:410>);
 recipes.addShaped(<projectred-core:resource_item:410>, [[null,<galacticraftcore:air_vent>,null],[<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:engine>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Peridot
+mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:39>, [<alchemistry:compound:43>,<alchemistry:compound:4>,<alchemistry:compound:39>]);
 
 print("ENDING ProjectRedCore.zs");

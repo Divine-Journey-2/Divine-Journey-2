@@ -1310,6 +1310,23 @@ recipes.addShaped(<contenttweaker:photovoltaic_cell_vii> * 3, [[<ore:blockGlassM
 # Photovoltaic Cell VIII
 recipes.addShaped(<contenttweaker:photovoltaic_cell_viii> * 3, [[<ore:blockGlassRed>,<ore:blockGlassRed>,<ore:blockGlassRed>],[<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>,<draconicevolution:draconic_energy_core>],[<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>]]);
 
+# Corrupted Core
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:corrupted_core>,
+[[<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>],
+[<alchemistry:compound:21>,<draconicevolution:chaotic_core>,<alchemistry:compound:8>,<draconicevolution:chaotic_core>,<alchemistry:compound:21>],
+[<alchemistry:ingot:56>,<alchemistry:compound:8>,<draconicadditions:chaotic_energy_core>,<alchemistry:compound:8>,<alchemistry:ingot:56>],
+[<alchemistry:compound:21>,<draconicevolution:chaotic_core>,<alchemistry:compound:8>,<draconicevolution:chaotic_core>,<alchemistry:compound:21>],
+[<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>]]);
+
+# Cadmium Arsenic Compound
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, null, 200, 1024, [<alchemistry:ingot:33> * 8], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, [<alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8, 32000);
+
+# Corrupted Dragon Token
+recipes.addShaped(<contenttweaker:corrupted_dragon_token>, [[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>],[<projectred-core:resource_item:202>,<contenttweaker:cadmium_arsenic_compound>,<projectred-core:resource_item:202>],[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

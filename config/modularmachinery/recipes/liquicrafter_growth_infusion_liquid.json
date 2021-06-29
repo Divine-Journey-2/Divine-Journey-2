@@ -1,0 +1,48 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_growth_infusion_liquid",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@31",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@54",
+            "amount": 2
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "mercury",
+            "amount": 250
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "vapor_of_levity",
+            "amount": 250
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "growth_infusion_liquid",
+            "amount": 500
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "alchemistry:element@19",
+            "amount": 32
+        }
+    ]
+}
