@@ -73,7 +73,7 @@
             "y": 0,
             "z": 8,
             "elements": [
-                "thaumicaugmentation:fortified_glass@0"
+                "contenttweaker:reinforced_glass_casing@0"
             ]
         },
         {
@@ -105,7 +105,7 @@
             "y": 0,
             "z": 8,
             "elements": [
-                "thaumicaugmentation:fortified_glass@0"
+                "contenttweaker:reinforced_glass_casing@0"
             ]
         },
         {
@@ -247,7 +247,7 @@
             "y": 1,
             "z": 8,
             "elements": [
-                "thaumicaugmentation:fortified_glass@0"
+                "contenttweaker:reinforced_glass_casing@0"
             ]
         },
         {
@@ -287,7 +287,7 @@
             "y": 1,
             "z": 8,
             "elements": [
-                "thaumicaugmentation:fortified_glass@0"
+                "contenttweaker:reinforced_glass_casing@0"
             ]
         },
         {

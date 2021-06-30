@@ -46,6 +46,7 @@ import crafttweaker.recipes.ICraftingInfo;
 import crafttweaker.util.Position3f;
 import mods.inworldcrafting.ExplosionCrafting;
 import moretweaker.galacticraft.CircuitFabricator;
+import mods.alchemistry.Liquifier;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1326,6 +1327,24 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cadmium_arsenic
 
 # Corrupted Dragon Token
 recipes.addShaped(<contenttweaker:corrupted_dragon_token>, [[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>],[<projectred-core:resource_item:202>,<contenttweaker:cadmium_arsenic_compound>,<projectred-core:resource_item:202>],[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>]]);
+
+# Mercury (other recipes in config/modualrmachinery/recipes/liquicrafter_ ... .json)
+mods.alchemistry.Liquifier.addRecipe(<liquid:mercury>, <alchemistry:element:80> * 16);
+
+# Chromium Barium Compound
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, null, 200, 1024, [<alchemistry:ingot:56> * 8], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, [<alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8, 32000);
+
+# Antimony Strontium Compound
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, null, 200, 1024, [<alchemistry:ingot:51> * 8], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, [<alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8, 32000);
+
+# Reinforced Glass Casing
+recipes.addShaped(<contenttweaker:reinforced_glass_casing>, [[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>],[<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>],[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>]]);
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

@@ -76,7 +76,6 @@ recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<galacticraftplanets:ite
 # Huge Item Output
 recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockoutputbus:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
-
 # Tiny Energy Input Hatch
 recipes.remove(<modularmachinery:blockenergyinputhatch>);
 recipes.addShaped(<modularmachinery:blockenergyinputhatch>, [[null,<mekanism:energyupgrade>,null],[<mekanism:energyupgrade>,<modularmachinery:blockcasing>,<mekanism:energyupgrade>],[null,<mekanism:energyupgrade>,null]]);
@@ -96,6 +95,9 @@ recipes.addShaped(<modularmachinery:blockenergyinputhatch:4>, [[<thaumcraft:plat
 
 # Huge Energy Input Hatch
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, [[<contenttweaker:lightning_charge>,<contenttweaker:travelers_tenacity>,<contenttweaker:lightning_charge>],[<contenttweaker:travelers_tenacity>,<modularmachinery:blockenergyinputhatch:4>,<contenttweaker:travelers_tenacity>],[<contenttweaker:lightning_charge>,<contenttweaker:travelers_tenacity>,<contenttweaker:lightning_charge>]]);
+
+# Ludicrous Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:6>, [[<draconicadditions:chaotic_energy_core>,<avaritia:resource:1>,<draconicadditions:chaotic_energy_core>],[<avaritia:resource:1>,<modularmachinery:blockenergyinputhatch:5>,<avaritia:resource:1>],[<draconicadditions:chaotic_energy_core>,<avaritia:resource:1>,<draconicadditions:chaotic_energy_core>]]);
 
 # Reinforced Machine Casing
 recipes.remove(<modularmachinery:blockcasing:4>);

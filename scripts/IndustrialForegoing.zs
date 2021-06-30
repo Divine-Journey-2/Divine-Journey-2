@@ -148,7 +148,8 @@ addIFMachineRecipeAsymmetrical(<industrialforegoing:protein_reactor>, <thermalfo
 addIFMachineRecipeAsymmetrical(<industrialforegoing:protein_generator>, <thermalfoundation:material:26>, <minecraft:porkchop>, <minecraft:beef>, <industrialforegoing:biofuel_generator>);
 
 # Hydrator
-addIFMachineRecipe(<industrialforegoing:hydrator>, <minecraft:water_bucket>.noReturn(), <openblocks:sprinkler>, <industrialforegoing:crop_enrich_material_injector>);
+recipes.remove(<industrialforegoing:hydrator>);
+recipes.addShaped(<industrialforegoing:hydrator>, [[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>],[<industrialforegoing:crop_enrich_material_injector>,<contenttweaker:draconic_machine_frame>,<industrialforegoing:crop_enrich_material_injector>],[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>]]);
 
 # Wither Builder
 addIFMachineRecipe(<industrialforegoing:wither_builder>, <minecraft:skull:1>, <minecraft:soul_sand>, <industrialforegoing:block_placer>);

@@ -6,6 +6,7 @@ import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.Transposer;
 import mods.bloodmagic.TartaricForge;
+import mods.appliedenergistics2.Grinder;
 
 print("STARTING AbyssalCraft.zs");
 
@@ -423,6 +424,27 @@ mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:99
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thermalfoundation:material:227>);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:227>, <abyssalcraft:crystalfragment:17> * 6, <abyssalcraft:crystalfragment:16> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<alchemistry:ingot:4>, <abyssalcraft:crystal:26>, 0.1);
+mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:methane>);
+mods.abyssalcraft.Crystallizer.addCrystallization(<abyssalcraft:methane>, <abyssalcraft:crystal:3> * 9, <abyssalcraft:crystal:5> * 36, 0.1);
+
+# Transmutator recipes
+mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:2>, <thermalfoundation:material:771>, 0.1);
+mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:3>, <minecraft:coal>, 0.1);
+mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystalcluster:3>, <minecraft:coal_block>, 0.9);
+mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:18>, <appliedenergistics2:material:5>, 0.1);
+mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystalcluster2:2>, <galacticraftcore:basic_block_core:13>, 0.9);
+
+# Quartz Gindstone Crystal output removal
+Grinder.removeRecipe(<abyssalcraft:crystal>);
+Grinder.removeRecipe(<abyssalcraft:crystal:1>);
+Grinder.removeRecipe(<abyssalcraft:crystal:17>);
+Grinder.removeRecipe(<abyssalcraft:crystal:20>);
+
+# Chemical Injection Chamber output removal
+mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard>, <abyssalcraft:crystal>);
+mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:1>, <abyssalcraft:crystal:1>);
+mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:4>, <abyssalcraft:crystal:16>);
+mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:3>, <abyssalcraft:crystal:17>);
 
 # Materializer
 recipes.remove(<abyssalcraft:materializer>);

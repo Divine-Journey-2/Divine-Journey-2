@@ -2,6 +2,10 @@
 
 import mods.alchemistry.Dissolver;
 import mods.alchemistry.Combiner;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import mods.alchemistry.Liquifier;
+import mods.alchemistry.Atomizer;
 
 print("STARTING Alchemistry.zs");
 
@@ -60,10 +64,10 @@ mods.alchemistry.Dissolver.addRecipe(<botania:rune:8>, true, 1, [[100, <alchemis
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:crystallized_mana_cluster>, true, 1, [[100, <alchemistry:compound:29> * 64,<alchemistry:compound:29> * 8]]);
 
 # Methane <- Crystallized Methane, AbyssalCraft Methane
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalshard:10>, true, 1, [[100, <alchemistry:compound:34>]]);
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:10>, true, 1, [[100, <alchemistry:compound:34> * 9]]);
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:10>, true, 1, [[100, <alchemistry:compound:34> * 64, <alchemistry:compound:34> * 17]]);
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:methane>, true, 1, [[100, <alchemistry:compound:34> * 64, <alchemistry:compound:34> * 17]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:10>, true, 1, [[100, <alchemistry:compound:34>]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:10>, true, 1, [[100, <alchemistry:compound:34> * 9]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:methane>, true, 1, [[100, <alchemistry:compound:34> * 9]]);
+mods.alchemistry.Combiner.addRecipe(<abyssalcraft:methane>, [<alchemistry:compound:34> * 9]);
 
 # Cucurbitacin <- Bottled Hellfire
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:pumpkin>);
@@ -145,8 +149,8 @@ mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:3>, true, 1, 
 
 # Potassium Dichromate <- Solar Array Wafer, Advanced Wafer, plus other Wafers
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:basic_item_venus:6>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
-mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:14>, true, 1, [[100, <alchemistry:element:7> * 16, <alchemistry:compound:1> * 4, <alchemistry:element:24> * 3]]);
-mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:12>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:12>, true, 1, [[100, <alchemistry:element:7> * 16, <alchemistry:compound:1> * 4, <alchemistry:element:24> * 3]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:14>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:cheesy_wafer>, true, 1, [[100, <alchemistry:compound:9>, <alchemistry:compound:11>, <alchemistry:compound:1> * 2, <alchemistry:element:24> * 2]]);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:13>, true, 1, [[100, <alchemistry:compound:33>, <alchemistry:compound:43>, <alchemistry:compound:1>, <alchemistry:element:24>]]);
 
@@ -206,7 +210,7 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:ender_pearl>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:ender_pearl>, true, 1, [[100, <alchemistry:element:14> * 2, <alchemistry:element:3>]]);
 
 # Fertilizer
-mods.alchemistry.Combiner.removeRecipe(<alchemistry:fertilizer>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:fertilizer> * 8);
 mods.alchemistry.Combiner.addRecipe(<alchemistry:fertilizer>, [<alchemistry:compound:30>,<alchemistry:compound:27>,<alchemistry:compound:42>]);
 
 # Ethane
@@ -228,5 +232,149 @@ mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:38>, [<alchemistry:com
 # Hexane
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:39>);
 mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:39>, [<alchemistry:compound:38>,<alchemistry:element:6>,<alchemistry:element:1> * 2]);
+
+# AbyssalCraft -> Alchemistry Iron
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal>, true, 1, [[100, <alchemistry:element:26> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster>, true, 1, [[100, <alchemistry:element:26> * 64, <alchemistry:element:26> * 64, <alchemistry:element:26> * 16]]);
+
+# AbyssalCraft -> Alchemistry Gold
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:1>, true, 1, [[100, <alchemistry:element:79> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:1>, true, 1, [[100, <alchemistry:element:79> * 64, <alchemistry:element:79> * 64, <alchemistry:element:79> * 16]]);
+
+# AbyssalCraft -> Alchemistry Sulfur
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:2>, true, 1, [[100, <alchemistry:element:16> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:2>, true, 1, [[100, <alchemistry:element:16> * 64, <alchemistry:element:16> * 64, <alchemistry:element:16> * 16]]);
+
+# AbyssalCraft -> Alchemistry Carbon
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:3>, true, 1, [[100, <alchemistry:element:6> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:3>, true, 1, [[100, <alchemistry:element:6> * 64, <alchemistry:element:6> * 8]]);
+
+# AbyssalCraft -> Alchemistry Oxygen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:4>, true, 1, [[100, <alchemistry:element:8> * 3]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:4>, true, 1, [[100, <alchemistry:element:8> * 27]]);
+
+# AbyssalCraft -> Alchemistry Hydrogen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:5>, true, 1, [[100, <alchemistry:element:1> * 3]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:5>, true, 1, [[100, <alchemistry:element:1> * 27]]);
+
+# AbyssalCraft -> Alchemistry Nitrogen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:6>, true, 1, [[100, <alchemistry:element:7> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:6>, true, 1, [[100, <alchemistry:element:7> * 64, <alchemistry:element:7> * 8]]);
+
+# AbyssalCraft -> Alchemistry Phosphorus
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:7>, true, 1, [[100, <alchemistry:element:15> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:7>, true, 1, [[100, <alchemistry:element:15> * 64, <alchemistry:element:15> * 8]]);
+
+# AbyssalCraft -> Alchemistry Potassium
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:8>, true, 1, [[100, <alchemistry:element:19> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:8>, true, 1, [[100, <alchemistry:element:19> * 64, <alchemistry:element:19> * 8]]);
+
+# AbyssalCraft Nitrate -> Alchemistry Nitrogen & Oxygen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:9>, true, 1, [[100, <alchemistry:element:7> * 8, <alchemistry:element:8> * 24]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster:9>, true, 1, [[100, <alchemistry:element:7> * 64, <alchemistry:element:7> * 8, <alchemistry:element:8> * 64, <alchemistry:element:8> * 64, <alchemistry:element:8> * 64, <alchemistry:element:8> * 24]]);
+
+# AbyssalCraft -> Alchemistry Tin
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:16>, true, 1, [[100, <alchemistry:element:50> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:0>, true, 1, [[100, <alchemistry:element:50> * 64, <alchemistry:element:50> * 64, <alchemistry:element:50> * 16]]);
+
+# AbyssalCraft -> Alchemistry Copper
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:17>, true, 1, [[100, <alchemistry:element:29> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:1>, true, 1, [[100, <alchemistry:element:29> * 64, <alchemistry:element:29> * 64, <alchemistry:element:29> * 16]]);
+
+# AbyssalCraft -> Alchemistry Silicon
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:18>, true, 1, [[100, <alchemistry:element:14> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:2>, true, 1, [[100, <alchemistry:element:14> * 64, <alchemistry:element:14> * 64, <alchemistry:element:14> * 16]]);
+
+# AbyssalCraft -> Alchemistry Magnesium
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:19>, true, 1, [[100, <alchemistry:element:12> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:3>, true, 1, [[100, <alchemistry:element:12> * 64, <alchemistry:element:12> * 64, <alchemistry:element:12> * 16]]);
+
+# AbyssalCraft -> Alchemistry Aluminum
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:20>, true, 1, [[100, <alchemistry:element:13> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:4>, true, 1, [[100, <alchemistry:element:13> * 64, <alchemistry:element:13> * 64, <alchemistry:element:13> * 16]]);
+
+# AbyssalCraft Silica -> Alchemistry Silicon & Oxygen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:21>, true, 1, [[100, <alchemistry:element:14> * 16, <alchemistry:element:8> * 6]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:5>, true, 1, [[100, <alchemistry:element:14> * 64, <alchemistry:element:14> * 64, <alchemistry:element:14> * 16, <alchemistry:element:8> * 54]]);
+
+# AbyssalCraft Alumina -> Alchemistry Aluminum & Oxygen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:22>, true, 1, [[100, <alchemistry:element:13> * 32, <alchemistry:element:8> * 9]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:6>, true, 1, [[100, <alchemistry:element:13> * 64, <alchemistry:element:13> * 64, <alchemistry:element:13> * 64, <alchemistry:element:13> * 64, <alchemistry:element:13> * 64, <alchemistry:element:8> * 64, <alchemistry:element:8> * 8]]);
+
+# AbyssalCraft Magnesia -> Alchemistry Magnesium & Oxygen
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:23>, true, 1, [[100, <alchemistry:element:12> * 16, <alchemistry:element:8> * 3]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:7>, true, 1, [[100, <alchemistry:element:12> * 64, <alchemistry:element:12> * 64, <alchemistry:element:12> * 16, <alchemistry:element:8> * 27]]);
+
+# AbyssalCraft -> Alchemistry Zinc
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:24>, true, 1, [[100, <alchemistry:element:30> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:8>, true, 1, [[100, <alchemistry:element:30> * 64, <alchemistry:element:30> * 64, <alchemistry:element:30> * 16]]);
+
+# AbyssalCraft -> Alchemistry Calcium
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:25>, true, 1, [[100, <alchemistry:element:20> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:9>, true, 1, [[100, <alchemistry:element:20> * 64, <alchemistry:element:20> * 64, <alchemistry:element:20> * 16]]);
+
+# AbyssalCraft -> Alchemistry Beryllium
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:26>, true, 1, [[100, <alchemistry:element:4> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:10>, true, 1, [[100, <alchemistry:element:4> * 64, <alchemistry:element:4> * 64, <alchemistry:element:4> * 16]]);
+
+# Chemical Combiner
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:chemical_combiner>,
+[[<contenttweaker:chromium_barium_compound>,null,null,null,<contenttweaker:chromium_barium_compound>],
+[null,<contenttweaker:chromium_barium_compound>,<contenttweaker:corrupted_core>,<contenttweaker:chromium_barium_compound>,null],
+[null,<rftools:machine_base>,<draconicevolution:fusion_crafting_core>,<rftools:machine_base>,null],
+[<rftools:machine_base>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:alchemical_machine_frame>,<contenttweaker:antimony_strontium_compound>,<rftools:machine_base>],
+[<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>]]);
+
+# Mercury from Mercury liquid
+mods.alchemistry.Atomizer.addRecipe(<alchemistry:element:80> * 16, <liquid:mercury> * 1000);
+
+# Atomizer
+recipes.remove(<alchemistry:atomizer>);
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:atomizer>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:24>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[null,null,<enderutilities:molecular_exciter>,null,null],
+[null,<enderutilities:molecular_exciter>,<draconicevolution:fusion_crafting_core>,<enderutilities:molecular_exciter>,null],
+[null,<enderutilities:molecular_exciter>,<contenttweaker:alchemical_machine_frame>,<enderutilities:molecular_exciter>,null],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Liquifier
+recipes.remove(<alchemistry:liquifier>);
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:liquifier>,
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:24>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[null,null,<enderutilities:machine_1>,null,null],
+[null,<enderutilities:machine_1>,<draconicevolution:fusion_crafting_core>,<enderutilities:machine_1>,null],
+[null,<enderutilities:machine_1>,<contenttweaker:alchemical_machine_frame>,<enderutilities:machine_1>,null],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:chromium_barium_compound>,<contenttweaker:chromium_barium_compound>,<contenttweaker:chromium_barium_compound>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Electrolyzer
+recipes.remove(<alchemistry:electrolyzer>);
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:electrolyzer>,
+[[<galacticraftplanets:item_basic_asteroids:5>,null,null,null,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,null,null,null,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:compound:51>,<contenttweaker:alchemical_machine_frame>,<alchemistry:compound:51>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<projectred-core:resource_item:410>,<galacticraftplanets:mars_machine_t2:8>,<projectred-core:resource_item:410>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:chromium_barium_compound>,<contenttweaker:chromium_barium_compound>,<contenttweaker:chromium_barium_compound>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Han Calcite
+mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:1005>, [<alchemistry:compound:49>,<alchemistry:compound:13> * 4]);
+
+# Beryl Zincite
+mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:1006>, [<alchemistry:compound:18> * 2,<alchemistry:compound:22>]);
+
+# Barium Calcite, recipe in AlchemistryCustomCompounds.zs
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:1001>);
+
+# Copper Carbonate, recipe in AlchemistryCustomCompounds.zs
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:1002>);
+
+# Beryllium Alumide, recipe in AlchemistryCustomCompounds.zs
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:1003>);
+
+# Silicon Trioxide, recipe in AlchemistryCustomCompounds.zs
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:1004>);
+
+# Slot Filler
+recipes.remove(<alchemistry:slot_filler>);
+recipes.addShapeless(<alchemistry:slot_filler>, [<alchemistry:element:6>]);
 
 print("ENDING Alchemistry.zs");

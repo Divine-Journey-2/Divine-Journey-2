@@ -284,10 +284,10 @@ steaming_restonia_crystal_block.setToolLevel(1);
 steaming_restonia_crystal_block.setBlockSoundType(<soundtype:stone>);
 steaming_restonia_crystal_block.register();
 
-val divinerpg_dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum"] as string[];
+val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon"] as string[];
 # itemUtils.getItem("minecraft:apple");
 
-for dim in divinerpg_dimension_names_lower {
+for dim in dimension_names_lower {
 
 	var dim_stone = VanillaFactory.createBlock(dim + "_stone", <blockmaterial:rock>);
 	#dim_stone.setBlockHardness(18000000);

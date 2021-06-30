@@ -19,6 +19,7 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.roots.Mortar;
 import mods.thermalexpansion.Sawmill;
 import mods.alchemistry.Combiner;
+import mods.alchemistry.Dissolver;
 
 print("STARTING ProjectRedCore.zs");
 
@@ -86,6 +87,17 @@ recipes.remove(<projectred-core:resource_item:410>);
 recipes.addShaped(<projectred-core:resource_item:410>, [[null,<galacticraftcore:air_vent>,null],[<galacticraftplanets:item_basic_mars:3>,<quantumflux:craftingpiece:4>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:engine>,<galacticraftplanets:item_basic_mars:3>]]);
 
 # Peridot
-mods.alchemistry.Combiner.addRecipe(<alchemistry:compound:39>, [<alchemistry:compound:43>,<alchemistry:compound:4>,<alchemistry:compound:39>]);
+mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:202>, [<alchemistry:compound:43>,<alchemistry:compound:4>,<alchemistry:compound:39>]);
+mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:202>, true, 1, [[100, <alchemistry:compound:43>,<alchemistry:compound:4>,<alchemistry:compound:39>]]);
+
+# Sapphire
+mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:201>, [<alchemistry:compound:23>,<alchemistry:compound:42>,<alchemistry:compound:3>]);
+mods.alchemistry.Dissolver.removeRecipe(<projectred-core:resource_item:201>);
+mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:201>, true, 1, [[100, <alchemistry:compound:23>,<alchemistry:compound:42>,<alchemistry:compound:3>]]);
+
+# Ruby
+mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:200>, [<alchemistry:compound:17>,<alchemistry:compound:20>,<alchemistry:compound:52>]);
+mods.alchemistry.Dissolver.removeRecipe(<projectred-core:resource_item:200>);
+mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:200>, true, 1, [[100, <alchemistry:compound:17>,<alchemistry:compound:20>,<alchemistry:compound:52>]]);
 
 print("ENDING ProjectRedCore.zs");

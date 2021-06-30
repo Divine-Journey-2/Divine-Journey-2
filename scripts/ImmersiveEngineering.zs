@@ -430,4 +430,8 @@ recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conve
 <immersiveengineering:tool:3>.addTooltip(format.italic("Some text for custom recipes have"));
 <immersiveengineering:tool:3>.addTooltip(format.italic("overflown, use JEI to look those up!"));
 
+# Garden Cloche
+recipes.remove(<immersiveengineering:metal_device1:13>);
+recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagriculture:soul_glass>,<immersiveengineering:material:26>,<mysticalagriculture:soul_glass>],[<mysticalagriculture:soul_glass>,<mysticalagriculture:crafting:34>,<mysticalagriculture:soul_glass>],[<ore:plankTreatedWood>,<immersiveengineering:material:8>,<ore:plankTreatedWood>]]);
+
 print("ENDING ImmersiveEngineering.zs");

@@ -987,5 +987,9 @@ var photovoltaic_cell_viii = VanillaFactory.createItem("photovoltaic_cell_viii")
 photovoltaic_cell_viii.register();
 var cadmium_arsenic_compound = VanillaFactory.createItem("cadmium_arsenic_compound");
 cadmium_arsenic_compound.register();
+var chromium_barium_compound = VanillaFactory.createItem("chromium_barium_compound");
+chromium_barium_compound.register();
+var antimony_strontium_compound = VanillaFactory.createItem("antimony_strontium_compound");
+antimony_strontium_compound.register();
 
 print("ENDING ContentTweakerItems.zs");
