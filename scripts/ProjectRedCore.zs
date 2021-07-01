@@ -91,11 +91,13 @@ mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:202>, [<alche
 mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:202>, true, 1, [[100, <alchemistry:compound:43>,<alchemistry:compound:4>,<alchemistry:compound:39>]]);
 
 # Sapphire
+mods.alchemistry.Combiner.removeRecipe(<projectred-core:resource_item:201>);
 mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:201>, [<alchemistry:compound:23>,<alchemistry:compound:42>,<alchemistry:compound:3>]);
 mods.alchemistry.Dissolver.removeRecipe(<projectred-core:resource_item:201>);
 mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:201>, true, 1, [[100, <alchemistry:compound:23>,<alchemistry:compound:42>,<alchemistry:compound:3>]]);
 
 # Ruby
+mods.alchemistry.Combiner.removeRecipe(<projectred-core:resource_item:200>);
 mods.alchemistry.Combiner.addRecipe(<projectred-core:resource_item:200>, [<alchemistry:compound:17>,<alchemistry:compound:20>,<alchemistry:compound:52>]);
 mods.alchemistry.Dissolver.removeRecipe(<projectred-core:resource_item:200>);
 mods.alchemistry.Dissolver.addRecipe(<projectred-core:resource_item:200>, true, 1, [[100, <alchemistry:compound:17>,<alchemistry:compound:20>,<alchemistry:compound:52>]]);

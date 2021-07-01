@@ -1346,6 +1346,15 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:antimony_stront
 # Reinforced Glass Casing
 recipes.addShaped(<contenttweaker:reinforced_glass_casing>, [[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>],[<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>],[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>]]);
 
+# Copper Bismid Carbonate Sheet
+recipes.addShaped(<contenttweaker:copper_bismid_carbonate_sheet>, [[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>],[<alchemistry:compound:1002>,<alchemistry:ingot:83>,<alchemistry:compound:1002>],[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>]]);
+
+# Ruby Rubidium
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, null, 200, 1024, [<alchemistry:ingot:37> * 8], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, [<projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 32000);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

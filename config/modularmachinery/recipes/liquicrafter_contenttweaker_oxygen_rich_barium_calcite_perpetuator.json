@@ -1,0 +1,57 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_oxygen_rich_barium_calcite_perpetuator",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftcore:canister@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@1001"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@1004",
+            "amount": 12
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "galacticraftplanets:dense_ice",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "projectred-core:resource_item@201",
+            "amount": 3
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "tungsten",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "nitrogen",
+            "amount": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:oxygen_rich_barium_calcite_perpetuator"
+        }
+    ]
+}

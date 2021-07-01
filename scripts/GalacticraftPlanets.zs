@@ -261,4 +261,7 @@ recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering
 # Shield Controller
 <galacticraftplanets:basic_item_venus>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
 
+# Dense Ice
+<galacticraftplanets:dense_ice>.addTooltip(format.white("Found in the ") + format.blue("Asteroids") + format.white(" dimension."));
+
 print("ENDING GalacticraftPlanets.zs");

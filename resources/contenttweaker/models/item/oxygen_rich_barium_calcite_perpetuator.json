@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/oxygen_rich_barium_calcite_perpetuator"
+  }
+}

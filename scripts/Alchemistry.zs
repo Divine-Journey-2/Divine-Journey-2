@@ -173,13 +173,13 @@ mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids:6
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_box>, true, 1, [[100, <alchemistry:compound:48> * 4, <alchemistry:element:22> * 32]]);
 
 # Han Purple <- Wyvern Core
-mods.alchemistry.Dissolver.addRecipe(<draconicevolution:wyvern_core>, true, 1, [[100, <alchemistry:compound:49>, <alchemistry:compound:8> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<draconicevolution:wyvern_core>, true, 1, [[100, <alchemistry:compound:49> * 8, <alchemistry:compound:8> * 2]]);
 
 # Arsenic Sulfide <- Rainbow Tablet
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rainbow_tablet>, true, 1, [[100, <alchemistry:compound:50>, <alchemistry:compound:1> * 2, <alchemistry:element:6> * 8, <alchemistry:element:24> * 2]]);
 
 # Barium Sulfate, Copper Chloride <- Crystaltine Ingot
-mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:24>, true, 1, [[100, <alchemistry:compound:51>, <alchemistry:compound:54> * 10, <alchemistry:compound:44> * 10]]);
+mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:24>, true, 1, [[100, <alchemistry:compound:51> * 8, <alchemistry:compound:54> * 10, <alchemistry:compound:44> * 10]]);
 
 # Copper Chloride <- Crystalline Ingot & Block
 mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_endergy_ingot:1>, true, 1, [[100, <alchemistry:compound:54>, <alchemistry:compound:44>]]);
@@ -318,6 +318,7 @@ mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystal:26>, true, 1, [[100, 
 mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:crystalcluster2:10>, true, 1, [[100, <alchemistry:element:4> * 64, <alchemistry:element:4> * 64, <alchemistry:element:4> * 16]]);
 
 # Chemical Combiner
+recipes.remove(<alchemistry:chemical_combiner>);
 mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:chemical_combiner>,
 [[<contenttweaker:chromium_barium_compound>,null,null,null,<contenttweaker:chromium_barium_compound>],
 [null,<contenttweaker:chromium_barium_compound>,<contenttweaker:corrupted_core>,<contenttweaker:chromium_barium_compound>,null],
@@ -326,7 +327,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:chemical_combiner>,
 [<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>]]);
 
 # Mercury from Mercury liquid
-mods.alchemistry.Atomizer.addRecipe(<alchemistry:element:80> * 16, <liquid:mercury> * 1000);
+#mods.alchemistry.Atomizer.addRecipe(<alchemistry:element:80> * 16, <liquid:mercury> * 1000);
 
 # Atomizer
 recipes.remove(<alchemistry:atomizer>);
@@ -376,5 +377,170 @@ mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:1004>);
 # Slot Filler
 recipes.remove(<alchemistry:slot_filler>);
 recipes.addShapeless(<alchemistry:slot_filler>, [<alchemistry:element:6>]);
+
+# Chemical Dissolver removals
+mods.alchemistry.Dissolver.removeRecipe(<ore:blockGlass>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:purpur_block>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:purpur_pillar>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:lapis_ore>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:lapis_block>);
+
+# Chemical Dissolved changes
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:flint>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:flint>, true, 1, [[100, <alchemistry:compound:1>]]);
+for i in 0 to 16 {
+	mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete_powder>.withDamage(i));
+	mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete_powder>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
+	mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete>.withDamage(i));
+	mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
+}
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:soul_sand>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:soul_sand>, true, 1, [[100, <alchemistry:compound:1>, <alchemistry:element:14> * 2]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:cobblestone>);
+mods.alchemistry.Dissolver.addRecipe(<ore:cobblestone>, true, 1, [[90, null],[5, <alchemistry:compound:1>],[5, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneGranite>);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneGranitePolished>);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneGranite>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneGranitePolished>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneDiorite>);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneDioritePolished>);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneDiorite>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneDioritePolished>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneAndesite>);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stoneAndesitePolished>);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneAndesite>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.addRecipe(<ore:stoneAndesitePolished>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:stone>);
+mods.alchemistry.Dissolver.addRecipe(<ore:stone>, true, 1, [[80, null],[10, <alchemistry:compound:1>],[10, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:sand>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:sand>, true, 1, [[60, <alchemistry:compound:1>],[40, <alchemistry:element:14>]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:sand:1>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:sand:1>, true, 1, [[50, <alchemistry:compound:1>],[30, <alchemistry:element:14>],[20, <alchemistry:compound:10>]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:red_sandstone>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:red_sandstone>, true, 1, [[50, <alchemistry:compound:1> * 4],[30, <alchemistry:element:14> * 4],[20, <alchemistry:compound:10> * 4]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:red_sandstone:1>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:red_sandstone:1>, true, 1, [[50, <alchemistry:compound:1> * 4],[30, <alchemistry:element:14> * 4],[20, <alchemistry:compound:10> * 4]]);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:sandstone>, true, 1, [[60, <alchemistry:compound:1> * 4],[40, <alchemistry:element:14> * 4]]);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:sandstone:1>, true, 1, [[60, <alchemistry:compound:1> * 4],[40, <alchemistry:element:14> * 4]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:oreIron>);
+mods.alchemistry.Dissolver.addRecipe(<ore:oreIron>, true, 1, [[100, <alchemistry:element:26> * 2]]);
+mods.alchemistry.Dissolver.removeRecipe(<ore:oreGold>);
+mods.alchemistry.Dissolver.addRecipe(<ore:oreGold>, true, 1, [[100, <alchemistry:element:79> * 2]]);
+
+# Chemical Combiner removals
+mods.alchemistry.Combiner.removeRecipe(<minecraft:quartz>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:quartz_ore>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:quartz_block>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:quartz_block:1>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:quartz_block:2>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:flint>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:cobblestone> * 2);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:stone:1>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:stone:3>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:stone:5>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:stone>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:sand>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:sand:1> * 8);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:sand:1> * 8);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:4> * 4);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:prismarine_shard>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dirt>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:mycelium> * 4);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:grass> * 4);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:1>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:2>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:5>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:6>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:7>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:8>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:9>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:10>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:11>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:12>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:13>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:14>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:4>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:13>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:14>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:21>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:22>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:23>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:27>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:29>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:31>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:32>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:34>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:40>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:41>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:42>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:43>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:44>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:46>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:48>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:53>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:54>);
+
+# Chemical Combiner changes
+mods.alchemistry.Combiner.removeRecipe(<minecraft:soul_sand>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:soul_sand>, [<alchemistry:compound:1>,null,<alchemistry:element:14> * 2]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:sponge>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:sponge>, [<alchemistry:compound:13> * 4, <alchemistry:compound:22> * 2]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:emerald>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:emerald>, [<alchemistry:compound:1>, <alchemistry:element:3>]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:emerald_block>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:emerald_block>, [null,<alchemistry:compound:1> * 9, <alchemistry:element:3> * 9]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:redstone>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>, [<alchemistry:compound:10>]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:redstone_block>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:redstone_block>, [null,<alchemistry:compound:10> * 9]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:clay_ball>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:clay_ball>, [<alchemistry:compound:1>,<alchemistry:compound:7>]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:clay>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:clay>, [null,null,null,<alchemistry:compound:1> * 4,<alchemistry:compound:7> * 4]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:egg>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:egg>, [<alchemistry:element:20> * 8, <alchemistry:compound:9> * 2]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:ender_pearl>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:ender_pearl>, [null,<alchemistry:element:14> * 2, <alchemistry:element:3>]);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:obsidian>);
+mods.alchemistry.Combiner.addRecipe(<minecraft:obsidian>, [<alchemistry:compound:5> * 8, <alchemistry:compound:3> * 8, <alchemistry:compound:1> * 24]);
+
+# Hydroxylapatite, Mendelevium <- Nether Star
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:skull:1>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:bone>);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:bone_block>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_star>, true, 1, [[100, <alchemistry:compound:16> * 8, <alchemistry:element:101> * 32]]);
+
+# Bismuth <- Demonic Elixir
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:demonic_elixir>, true, 1, [[50, <alchemistry:element:83> * 32, <alchemistry:compound:5> * 4, <alchemistry:compound:7> * 24],[50, <alchemistry:element:83> * 16, <alchemistry:compound:5> * 4, <alchemistry:compound:7> * 32]]);
+
+# Tungsten <- Stone Ichor
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:stone_ichor>, true, 1, [[50, <alchemistry:element:74> * 32, <alchemistry:compound:1> * 8, <alchemistry:compound:7> * 24],[50, <alchemistry:element:74> * 16, <alchemistry:compound:1> * 8, <alchemistry:compound:7> * 32]]);
+
+# Fission Casing
+recipes.remove(<alchemistry:fission_casing>);
+recipes.addShaped(<alchemistry:fission_casing> * 4, [[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>],[<alchemistry:ingot:4>,<contenttweaker:copper_bismid_carbonate_sheet>,<alchemistry:ingot:4>],[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>]]);
+
+# Fission Controller
+recipes.remove(<alchemistry:fission_controller>);
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:fission_controller>,
+[[<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:chromium_barium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<bigreactors:reactoraccessport>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:chromium_barium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:chromium_barium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:chromium_barium_compound>,<contenttweaker:antimony_strontium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<bigreactors:reactorpowertaprf>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:alchemical_machine_frame>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:copper_bismid_carbonate_sheet>,<bigreactors:reactorpowertaprf>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:chromium_barium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:chromium_barium_compound>,<contenttweaker:antimony_strontium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<contenttweaker:chromium_barium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<bigreactors:reactoraccessport>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:antimony_strontium_compound>,<contenttweaker:chromium_barium_compound>,<alchemistry:fission_casing>],
+[<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>,<alchemistry:fission_casing>]]);
+
+# Fission Core
+recipes.remove(<alchemistry:fission_core>);
+mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:fission_core>,
+[[<alchemistry:fission_casing>,<alchemistry:fission_casing>,<bigreactors:reactorfuelrod>,<alchemistry:fission_casing>,<alchemistry:fission_casing>],
+[<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<bigreactors:reactorfuelrod>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>],
+[<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:alchemical_machine_frame>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>],
+[<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<bigreactors:reactorfuelrod>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>],
+[<alchemistry:fission_casing>,<alchemistry:fission_casing>,<bigreactors:reactorfuelrod>,<alchemistry:fission_casing>,<alchemistry:fission_casing>]]);
 
 print("ENDING Alchemistry.zs");

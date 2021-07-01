@@ -30,13 +30,13 @@
             "type": "fluid",
             "io-type": "output",
             "fluid": "mercury",
-            "amount": 250
+            "amount": 36
         },
         {
             "type": "fluid",
             "io-type": "output",
             "fluid": "impure_mercury_iodine_mixture",
-            "amount": 250
+            "amount": 36
         },
         {
             "type": "item",
