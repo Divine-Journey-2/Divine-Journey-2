@@ -244,4 +244,7 @@ remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftp
 remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_helmet");
 remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftplanets:desh_leggings");
 
+# Vamacheron -> Mortum Key
+add_entry("divinerpg:entities/boss/vamacheron", "mortum_key", <contenttweaker:mortum_door_key>, 1, 1, 0, 0, 100);
+
 print("ENDING LootTweaker.zs");

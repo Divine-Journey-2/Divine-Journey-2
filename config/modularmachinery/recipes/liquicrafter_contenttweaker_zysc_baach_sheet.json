@@ -1,0 +1,45 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_zysc_baach_sheet",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "helium",
+            "amount": 250
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "argon",
+            "amount": 50
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 6000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:copper_bismid_carbonate_sheet"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:compound@1007"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:ingot@21",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:zysc_baach_sheet"
+        }
+    ]
+}

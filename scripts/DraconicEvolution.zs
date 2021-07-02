@@ -377,4 +377,7 @@ recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:craft
 <draconicevolution:chaos_shard>.addTooltip(format.white("Obtained after slaying the Chaos Guardian."));
 <draconicevolution:chaos_shard>.addTooltip(format.white("Can also be crafted using Alchemistry."));
 
+# Draconic Reactor Core
+
+
 print("ENDING DraconicEvolution.zs");

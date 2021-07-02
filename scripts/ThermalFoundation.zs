@@ -108,4 +108,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:165> 
 # Fluxed Aqua-Chow
 <thermalfoundation:bait:2>.addTooltip(format.white("To obtain, charge Rich Aqua-Chow in an Energetic Infuser."));
 
+# Resonant Clathrate from Mystical Agriculture Essences
+recipes.addShaped(<thermalfoundation:material:895>, [[null,<mysticalagriculture:enderium_essence>,null],[<mysticalagriculture:enderium_essence>,<minecraft:flint>,<mysticalagriculture:enderium_essence>],[null,<mysticalagriculture:enderium_essence>,null]]);
+
 print("ENDING ThermalFoundation.zs");

@@ -1355,6 +1355,10 @@ EIOAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, [<projectred-core:reso
 IEAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 320);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 32000);
 
+# V.M.B. Compund
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:vmb_compound>, <alchemistry:ingot:23> * 8, null, 200, 2048, [<alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:vmb_compound>, [<alchemistry:ingot:23> * 8, <alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], 64000);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

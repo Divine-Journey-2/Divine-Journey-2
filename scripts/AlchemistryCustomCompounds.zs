@@ -12,6 +12,6 @@ mods.alchemistry.Util.createCompound(1004, "silicon_trioxide", 99, 105, 83, [["s
 mods.alchemistry.Util.createCompound(1005, "han_calcite", 166, 36, 84, [["barium_calcite", 1],["copper_carbonate", 1],["silicon", 2],["oxygen", 4]]);
 mods.alchemistry.Util.createCompound(1006, "beryl_zincite", 176, 186, 125, [["beryllium_alumide", 4],["silicon_trioxide", 6],["zinc_oxide", 1],["beryllium", 2],["silicon", 6],["oxygen", 18]]);
 
-
+mods.alchemistry.Util.createCompound(1007, "zircyttrid_beryllium_alumide", 204, 190, 122, [["zirconium", 32],["yttrium", 32],["beryllium_alumide", 4]]);
 
 print("ENDING AlchemistryCustomCompounds.zs");

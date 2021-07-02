@@ -1055,5 +1055,9 @@ var copper_bismid_carbonate_sheet = VanillaFactory.createItem("copper_bismid_car
 copper_bismid_carbonate_sheet.register();
 var ruby_rubidium = VanillaFactory.createItem("ruby_rubidium");
 ruby_rubidium.register();
+var vmb_compound = VanillaFactory.createItem("vmb_compound");
+vmb_compound.register();
+var zysc_baach_sheet = VanillaFactory.createItem("zysc_baach_sheet");
+zysc_baach_sheet.register();
 
 print("ENDING ContentTweakerItems.zs");

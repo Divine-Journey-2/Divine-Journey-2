@@ -260,4 +260,13 @@ addDivineRPGBowRecipe(<divinerpg:skythern_bow>,<divinerpg:apalachia_bow>,<divine
 # Mortum Bow
 addDivineRPGBowRecipe(<divinerpg:mortum_bow>,<divinerpg:skythern_bow>,<divinerpg:mortum_chunk>);
 
+# Spawn Crystals
+recipes.remove(<divinerpg:base_spawn_crystal>);
+recipes.remove(<divinerpg:vamacheron_crystal>);
+recipes.remove(<divinerpg:twilight_demon_crystal>);
+recipes.remove(<divinerpg:soul_fiend_crystal>);
+recipes.remove(<divinerpg:reyvor_crystal>);
+recipes.remove(<divinerpg:karot_crystal>);
+recipes.remove(<divinerpg:densos_crystal>);
+
 print("ENDING DivineRPG.zs");

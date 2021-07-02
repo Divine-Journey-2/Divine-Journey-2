@@ -28,6 +28,12 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Laser Focus Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:laser_focus"}), [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],[<minecraft:paper>,<mekanism:machineblock2:14>,<mekanism:machineblock2:13>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Weak Fusion Plant Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:weak_fusion_plant"}), [[<alchemistry:ingot:42>,<minecraft:paper>,<alchemistry:ingot:42>],[<contenttweaker:ruby_rubidium>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:ruby_rubidium>],[<alchemistry:ingot:42>,<minecraft:paper>,<alchemistry:ingot:42>]]);
+
+# Mass Inscriber Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mass_inscriber"}), [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],[<contenttweaker:scheduling_processor>,<minecraft:paper>,<contenttweaker:scheduling_processor>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
@@ -99,6 +105,9 @@ recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, [[<contenttweaker:
 # Ludicrous Energy Input Hatch
 recipes.addShaped(<modularmachinery:blockenergyinputhatch:6>, [[<draconicadditions:chaotic_energy_core>,<avaritia:resource:1>,<draconicadditions:chaotic_energy_core>],[<avaritia:resource:1>,<modularmachinery:blockenergyinputhatch:5>,<avaritia:resource:1>],[<draconicadditions:chaotic_energy_core>,<avaritia:resource:1>,<draconicadditions:chaotic_energy_core>]]);
 
+# Ultimate Energy Input Hatch
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, [[<contenttweaker:corrupted_dragon_token>,<contenttweaker:ruby_rubidium>,<contenttweaker:corrupted_dragon_token>],[<contenttweaker:ruby_rubidium>,<modularmachinery:blockenergyinputhatch:6>,<contenttweaker:ruby_rubidium>],[<contenttweaker:corrupted_dragon_token>,<contenttweaker:ruby_rubidium>,<contenttweaker:corrupted_dragon_token>]]);
+
 # Reinforced Machine Casing
 recipes.remove(<modularmachinery:blockcasing:4>);
 recipes.addShaped(<modularmachinery:blockcasing:4>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockcasing>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
@@ -138,5 +147,11 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[<galacticraftcor
 # Firebox Casing
 recipes.remove(<modularmachinery:blockcasing:2>);
 recipes.addShaped(<modularmachinery:blockcasing:2>, [[<galacticraftplanets:item_basic_asteroids:5>,<botania:quartztypeblaze>,<galacticraftplanets:item_basic_asteroids:5>],[<actuallyadditions:block_shock_suppressor>,<modularmachinery:blockcasing>,<actuallyadditions:block_shock_suppressor>],[<galacticraftplanets:item_basic_asteroids:5>,<botania:quartztypeblaze>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Machine Circuitry
+recipes.addShaped(<modularmachinery:blockcasing:5>, [[<modularmachinery:blockcasing:4>,<contenttweaker:zysc_baach_sheet>,<modularmachinery:blockcasing:4>],[<contenttweaker:zysc_baach_sheet>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:zysc_baach_sheet>],[<modularmachinery:blockcasing:4>,<contenttweaker:zysc_baach_sheet>,<modularmachinery:blockcasing:4>]]);
+
+# Machine Gearbox
+recipes.addShaped(<modularmachinery:blockcasing:3>, [[<modularmachinery:blockcasing:4>,<contenttweaker:vmb_compound>,<modularmachinery:blockcasing:4>],[<contenttweaker:vmb_compound>,<contenttweaker:titanium_gear>,<contenttweaker:vmb_compound>],[<modularmachinery:blockcasing:4>,<contenttweaker:vmb_compound>,<modularmachinery:blockcasing:4>]]);
 
 print("ENDING ModularMachinery.zs");
