@@ -31,7 +31,8 @@
             "y": 4,
             "z": 4,
             "elements": [
-                "roots:grove_stone@1"
+                "roots:grove_stone@1",
+                "roots:grove_stone@9"
             ]
         },
         {
@@ -39,7 +40,8 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "roots:grove_stone@1"
+                "roots:grove_stone@1",
+                "roots:grove_stone@9"
             ]
         },
         {
@@ -71,7 +73,8 @@
             "y": 2,
             "z": 4,
             "elements": [
-                "roots:grove_stone@5"
+                "roots:grove_stone@5",
+                "roots:grove_stone@13"
             ]
         },
         {
@@ -79,7 +82,8 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "roots:grove_stone@5"
+                "roots:grove_stone@5",
+                "roots:grove_stone@13"
             ]
         },
         {
@@ -131,7 +135,8 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "roots:grove_stone@3"
+                "roots:grove_stone@3",
+                "roots:grove_stone@11"
             ]
         },
         {
@@ -139,7 +144,8 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "roots:grove_stone@3"
+                "roots:grove_stone@3",
+                "roots:grove_stone@11"
             ]
         },
         {
@@ -171,7 +177,8 @@
             "y": 3,
             "z": 4,
             "elements": [
-                "roots:grove_stone@3"
+                "roots:grove_stone@3",
+                "roots:grove_stone@11"
             ]
         },
         {
@@ -179,7 +186,8 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "roots:grove_stone@3"
+                "roots:grove_stone@3",
+                "roots:grove_stone@11"
             ]
         },
         {
@@ -203,7 +211,8 @@
             "y": 4,
             "z": 2,
             "elements": [
-                "roots:grove_stone@1"
+                "roots:grove_stone@1",
+                "roots:grove_stone@9"
             ]
         },
         {
@@ -211,7 +220,8 @@
             "y": 4,
             "z": 0,
             "elements": [
-                "roots:grove_stone@1"
+                "roots:grove_stone@1",
+                "roots:grove_stone@9"
             ]
         },
         {
@@ -219,7 +229,8 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "roots:grove_stone@5"
+                "roots:grove_stone@5",
+                "roots:grove_stone@13"
             ]
         },
         {
@@ -227,7 +238,8 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "roots:grove_stone@5"
+                "roots:grove_stone@5",
+                "roots:grove_stone@13"
             ]
         }
     ]}

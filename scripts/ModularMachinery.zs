@@ -28,6 +28,9 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Laser Focus Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:laser_focus"}), [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],[<minecraft:paper>,<mekanism:machineblock2:14>,<mekanism:machineblock2:13>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Chemical Caster Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:chemical_caster"}), [[<draconicevolution:chaos_shard:1>,<draconicevolution:chaos_shard:1>,<draconicevolution:chaos_shard:1>],[<minecraft:paper>,<alchemistry:compound:13>,<minecraft:paper>],[<draconicevolution:chaos_shard:1>,<draconicevolution:chaos_shard:1>,<draconicevolution:chaos_shard:1>]]);
+
 # Weak Fusion Plant Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:weak_fusion_plant"}), [[<alchemistry:ingot:42>,<minecraft:paper>,<alchemistry:ingot:42>],[<contenttweaker:ruby_rubidium>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:ruby_rubidium>],[<alchemistry:ingot:42>,<minecraft:paper>,<alchemistry:ingot:42>]]);
 

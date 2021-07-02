@@ -143,9 +143,9 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:redstone_ore>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:redstone_ore>, true, 1, [[100, <alchemistry:compound:10> * 3, <alchemistry:compound:1>]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:redstone_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:redstone_block>, true, 1, [[100, <alchemistry:compound:10> * 9]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:impetus_crystal>, true, 1, [[100, <alchemistry:compound:17> * 2, <alchemistry:compound:32> * 2]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:5>, true, 1, [[100, <alchemistry:compound:17> * 3, <alchemistry:compound:32> * 2]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:3>, true, 1, [[100, <alchemistry:compound:17> * 12, <alchemistry:compound:32> * 10]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:impetus_crystal>, true, 1, [[100, <alchemistry:compound:17> * 16, <alchemistry:compound:32> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:5>, true, 1, [[100, <alchemistry:compound:17> * 24, <alchemistry:compound:32> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:3>, true, 1, [[100, <alchemistry:compound:17> * 64, <alchemistry:compound:17> * 32, <alchemistry:compound:32> * 10]]);
 
 # Potassium Dichromate <- Solar Array Wafer, Advanced Wafer, plus other Wafers
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:basic_item_venus:6>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
@@ -159,7 +159,7 @@ mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, t
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_block>, true, 1, [[100, <alchemistry:compound:42> * 9, <alchemistry:compound:21> * 9, <alchemistry:element:25> * 36]]);
 
 # Cadmium Sulfide, Magnesium Sulfate <- Flying Ointment
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45>,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45> * 16,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
 
 # Chromium Oxide, Magnesium Sulfate <- Bottled Frostfire
 mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_frostfire>, true, 1, [[50, <alchemistry:compound:46>,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
@@ -176,7 +176,7 @@ mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_box>, true, 1, [[1
 mods.alchemistry.Dissolver.addRecipe(<draconicevolution:wyvern_core>, true, 1, [[100, <alchemistry:compound:49> * 8, <alchemistry:compound:8> * 2]]);
 
 # Arsenic Sulfide <- Rainbow Tablet
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rainbow_tablet>, true, 1, [[100, <alchemistry:compound:50>, <alchemistry:compound:1> * 2, <alchemistry:element:6> * 8, <alchemistry:element:24> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rainbow_tablet>, true, 1, [[100, <alchemistry:compound:50> * 8, <alchemistry:compound:1> * 2, <alchemistry:element:6> * 8, <alchemistry:element:24> * 2]]);
 
 # Barium Sulfate, Copper Chloride <- Crystaltine Ingot
 mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:24>, true, 1, [[100, <alchemistry:compound:51> * 8, <alchemistry:compound:54> * 10, <alchemistry:compound:44> * 10]]);
@@ -444,7 +444,7 @@ mods.alchemistry.Combiner.removeRecipe(<minecraft:sand:1> * 8);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:sand:1> * 8);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:4> * 4);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:prismarine_shard>);
-mods.alchemistry.Combiner.removeRecipe(<minecraft:dirt>);
+mods.alchemistry.Combiner.removeRecipe(<minecraft:dirt> * 4);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:mycelium> * 4);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:grass> * 4);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:dye>);
