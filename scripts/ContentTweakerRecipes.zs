@@ -1359,6 +1359,9 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ruby_rubidium>,
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:vmb_compound>, <alchemistry:ingot:23> * 8, null, 200, 2048, [<alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], "Alloying");
 EIOAlloySmelter.addRecipe(<contenttweaker:vmb_compound>, [<alchemistry:ingot:23> * 8, <alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], 64000);
 
+# Fission Coolant Unit
+recipes.addShaped(<contenttweaker:fission_coolant> * 16, [[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>],[<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>],[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

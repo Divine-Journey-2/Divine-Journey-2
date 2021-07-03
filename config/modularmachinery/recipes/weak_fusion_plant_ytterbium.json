@@ -1,0 +1,35 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_ytterbium",
+    "recipeTime": 1200,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:element@33",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:element@37",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_coolant"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "alchemistry:element@70",
+            "amount": 16
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "machine": "liquicrafter",
+    "registryName": "liquicrafter_contenttweaker_highly_radioactive_dimension_splitting_compound",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "uranium",
+            "amount": 1000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "bromine",
+            "amount": 360
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 200000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:ingot@94",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:ingot@45",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:highly_radioactive_dimension_splitting_compound"
+        }
+    ]
+}

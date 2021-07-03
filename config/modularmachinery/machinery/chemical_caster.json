@@ -154,6 +154,9 @@
             "y": 1,
             "z": 2,
             "elements": [
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
                 "tconstruct:smeltery_io@12"
             ]
         },
@@ -162,7 +165,10 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "tconstruct:smeltery_io@0"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -226,7 +232,10 @@
             "y": 1,
             "z": 4,
             "elements": [
-                "tconstruct:smeltery_io@8"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -234,7 +243,10 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "tconstruct:smeltery_io@4"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -258,6 +270,9 @@
             "y": 2,
             "z": 2,
             "elements": [
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
                 "tconstruct:smeltery_io@12"
             ]
         },
@@ -266,7 +281,10 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "tconstruct:smeltery_io@0"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -355,7 +373,10 @@
             "y": 2,
             "z": 4,
             "elements": [
-                "tconstruct:smeltery_io@8"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -363,7 +384,10 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "tconstruct:smeltery_io@4"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -396,6 +420,9 @@
             "y": 3,
             "z": 2,
             "elements": [
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
                 "tconstruct:smeltery_io@12"
             ]
         },
@@ -404,7 +431,10 @@
             "y": 3,
             "z": 0,
             "elements": [
-                "tconstruct:smeltery_io@0"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -476,7 +506,10 @@
             "y": 3,
             "z": 4,
             "elements": [
-                "tconstruct:smeltery_io@8"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {
@@ -484,7 +517,10 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "tconstruct:smeltery_io@4"
+                "tconstruct:smeltery_io@0",
+                "tconstruct:smeltery_io@4",
+                "tconstruct:smeltery_io@8",
+                "tconstruct:smeltery_io@12"
             ]
         },
         {

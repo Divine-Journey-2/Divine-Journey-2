@@ -52,4 +52,10 @@ FluidGrowthInfusion.temperature = 350;
 FluidGrowthInfusion.viscosity = 1500;
 FluidGrowthInfusion.register();
 
+var FluidBromine = VanillaFactory.createFluid("bromine", Color.fromHex("B54A26"));
+FluidBromine.density = 100;
+FluidBromine.temperature = 350;
+FluidBromine.viscosity = 600;
+FluidBromine.register();
+
 print("ENDING ContentTweakerFluids.zs");

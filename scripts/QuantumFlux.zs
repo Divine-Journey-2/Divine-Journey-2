@@ -114,4 +114,8 @@ recipes.addShaped(<quantumflux:telepad>, [[<quantumflux:craftingpiece:5>,<quantu
 recipes.remove(<quantumflux:linkingcard>);
 recipes.addShaped(<quantumflux:linkingcard>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:item_coord_selector>,<enderio:item_alloy_ingot:6>],[<quantumflux:craftingpiece:5>,<quantumflux:craftingpiece:5>,<quantumflux:craftingpiece:5>]]);
 
+# Imaginary Time Block
+recipes.remove(<quantumflux:imaginarytime>);
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
 print("ENDING QuantumFlux.zs");

@@ -325,6 +325,30 @@
             ]
         },
         {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:reinforced_glass_casing@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:reinforced_glass_casing@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:reinforced_glass_casing@0"
+            ]
+        },
+        {
             "x": -2,
             "y": 0,
             "z": 3,

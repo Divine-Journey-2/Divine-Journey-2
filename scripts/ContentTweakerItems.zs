@@ -10,6 +10,9 @@ import mods.contenttweaker.IItemFoodEaten;
 import mods.contenttweaker.MutableItemStack;
 import mods.contenttweaker.Hand;
 import mods.contenttweaker.World;
+import mods.contenttweaker.IItemUpdate;
+import mods.contenttweaker.Player;
+import crafttweaker.player.IPlayer;
 
 print("STARTING ContentTweakerItems.zs");
 
@@ -1059,5 +1062,25 @@ var vmb_compound = VanillaFactory.createItem("vmb_compound");
 vmb_compound.register();
 var zysc_baach_sheet = VanillaFactory.createItem("zysc_baach_sheet");
 zysc_baach_sheet.register();
+var fission_coolant = VanillaFactory.createItem("fission_coolant");
+fission_coolant.register();
+var highly_radioactive_dimension_splitting_compound = VanillaFactory.createItem("highly_radioactive_dimension_splitting_compound");
+highly_radioactive_dimension_splitting_compound.rarity = "EPIC";
+highly_radioactive_dimension_splitting_compound.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+	if (owner instanceof IPlayer) {
+	    val player as IPlayer = owner;
+
+	    Commands.call("effect @p minecraft:poison 5 3 true", player, world, false, true);
+	    Commands.call("effect @p minecraft:wither 5 2 true", player, world, false, true);
+		player.setFire(5);
+
+		if(isSelected) {
+	    	Commands.call("effect @p minecraft:blindness 5 1 true", player, world, false, true);
+	    	Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
+		}
+	}
+	return;
+};
+highly_radioactive_dimension_splitting_compound.register();
 
 print("ENDING ContentTweakerItems.zs");

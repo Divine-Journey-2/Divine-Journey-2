@@ -496,5 +496,262 @@
             "extrautils2:simpledecorative,1,2",
             "extrautils2:simpledecorative,1,2"
         ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:reactor_component,1,0",
+        "catalyst": "draconicevolution:reactor_part,1,0"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:reactor_component,1,0",
+        "catalyst": "draconicevolution:reactor_part,1,0",
+        "energy": 1000000000,
+        "tier": 3,
+        "ingredients": [
+            "draconicadditions:chaotic_energy_core",
+            "draconicadditions:chaotic_energy_core",
+            "draconicevolution:reactor_part,1,4",
+            "draconicevolution:reactor_part,1,3",
+            "contenttweaker:corrupted_dragon_token",
+            "alchemistry:ingot,1,94",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:reactor_component,1,1",
+        "catalyst": "draconicevolution:wyvern_core"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:reactor_component,1,1",
+        "catalyst": "contenttweaker:draconic_machine_frame,1,0",
+        "energy": 250000000,
+        "tier": 3,
+        "ingredients": [
+            "draconicevolution:reactor_part,1,1",
+            "draconicevolution:reactor_part,1,1",
+            "draconicevolution:reactor_part,1,1",
+            "draconicevolution:reactor_part,1,1",
+            "modularmachinery:blockenergyinputhatch,1,7",
+            "alchemistry:ingot,1,94",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:reactor_core",
+        "catalyst": "draconicevolution:chaos_shard,1,0"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:reactor_core",
+        "catalyst": "alchemistry:fission_controller",
+        "energy": 250000000,
+        "tier": 3,
+        "ingredients": [
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "immersiveengineering:metal,1,5",
+            "alchemistry:ingot,1,70",
+            "alchemistry:ingot,1,70",
+            "alchemistry:ingot,1,88",
+            "alchemistry:ingot,1,88"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaos_liquefier",
+        "catalyst": "draconicevolution:generator"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaos_liquefier",
+        "catalyst": "alchemistry:liquifier",
+        "energy": 100000000,
+        "tier": 3,
+        "ingredients": [
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "contenttweaker:corrupted_core",
+            "contenttweaker:corrupted_core",
+            "contenttweaker:draconic_machine_frame,1,0",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaos_stabilizer_core",
+        "catalyst": "draconicevolution:reactor_core"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaos_stabilizer_core",
+        "catalyst": "draconicevolution:reactor_core",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "draconicevolution:chaotic_core",
+            "draconicevolution:chaotic_core",
+            "contenttweaker:corrupted_core",
+            "contenttweaker:corrupted_core",
+            "draconicevolution:reactor_component,1,0",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,45",
+            "alchemistry:ingot,1,45"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_staff_of_power",
+        "catalyst": "draconicevolution:draconic_staff_of_power"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_staff_of_power",
+        "catalyst": "draconicevolution:draconic_staff_of_power",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "contenttweaker:corrupted_dragon_token",
+            "contenttweaker:corrupted_dragon_token",
+            "draconicevolution:reactor_core",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_helm",
+        "catalyst": "draconicevolution:draconic_helm"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_helm",
+        "catalyst": "draconicevolution:draconic_helm",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "contenttweaker:corrupted_dragon_token",
+            "contenttweaker:corrupted_dragon_token",
+            "draconicevolution:reactor_core",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_chest",
+        "catalyst": "draconicevolution:draconic_chest"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_chest",
+        "catalyst": "draconicevolution:draconic_chest",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "contenttweaker:corrupted_dragon_token",
+            "contenttweaker:corrupted_dragon_token",
+            "draconicevolution:reactor_core",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_legs",
+        "catalyst": "draconicevolution:draconic_legs"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_legs",
+        "catalyst": "draconicevolution:draconic_legs",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "contenttweaker:corrupted_dragon_token",
+            "contenttweaker:corrupted_dragon_token",
+            "draconicevolution:reactor_core",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicadditions:chaotic_boots",
+        "catalyst": "draconicevolution:draconic_boots"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicadditions:chaotic_boots",
+        "catalyst": "draconicevolution:draconic_boots",
+        "energy": 2000000000,
+        "tier": 3,
+        "ingredients": [
+            "contenttweaker:corrupted_dragon_token",
+            "contenttweaker:corrupted_dragon_token",
+            "draconicevolution:reactor_core",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,94",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90",
+            "alchemistry:ingot,1,90"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "quantumflux:imaginarytime",
+        "catalyst": "industrialforegoing:hydrator",
+        "energy": 50000000,
+        "tier": 1,
+        "ingredients": [
+            "alchemistry:ingot,1,24",
+            "alchemistry:ingot,1,24",
+            "draconicevolution:awakened_core",
+            "draconicevolution:awakened_core",
+            "contenttweaker:cadmium_arsenic_compound",
+            "contenttweaker:cadmium_arsenic_compound",
+            "mysticalagriculture:mystical_fertilizer",
+            "mysticalagriculture:mystical_fertilizer",
+            "alchemistry:ingot,1,24",
+            "alchemistry:ingot,1,24"
+        ]
     }
 ]

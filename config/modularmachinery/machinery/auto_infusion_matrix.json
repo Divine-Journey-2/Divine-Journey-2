@@ -337,7 +337,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "thaumcraft:stabilizer@0"
+                "thaumicenergistics:infusion_provider@0"
             ]
         },
         {
@@ -433,7 +433,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "thaumicenergistics:infusion_provider@0"
+                "thaumcraft:stabilizer@0"
             ]
         },
         {
@@ -513,7 +513,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "thaumcraft:stabilizer@0"
+                "thaumicenergistics:infusion_provider@0"
             ]
         },
         {
@@ -545,7 +545,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "thaumcraft:stabilizer@0"
+                "thaumicenergistics:infusion_provider@0"
             ]
         },
         {
@@ -609,7 +609,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "thaumicenergistics:infusion_provider@0"
+                "thaumcraft:stabilizer@0"
             ]
         },
         {
@@ -649,7 +649,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "thaumicenergistics:infusion_provider@0"
+                "thaumcraft:stabilizer@0"
             ]
         },
         {
@@ -777,7 +777,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "thaumcraft:stabilizer@0"
+                "thaumicenergistics:infusion_provider@0"
             ]
         },
         {
@@ -887,7 +887,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "thaumicenergistics:infusion_provider@0"
+                "thaumcraft:stabilizer@0"
             ]
         },
         {

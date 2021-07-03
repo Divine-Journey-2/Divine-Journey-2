@@ -377,7 +377,29 @@ recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:craft
 <draconicevolution:chaos_shard>.addTooltip(format.white("Obtained after slaying the Chaos Guardian."));
 <draconicevolution:chaos_shard>.addTooltip(format.white("Can also be crafted using Alchemistry."));
 
-# Draconic Reactor Core
+# Reactor Stabilizer Inner Rotor
+recipes.remove(<draconicevolution:reactor_part:1>);
+recipes.addShapedMirrored(<draconicevolution:reactor_part:1>, [[<contenttweaker:corrupted_core>,<alchemistry:ingot:44>,<alchemistry:ingot:44>],[null,<bigreactors:turbinerotorblade>,<bigreactors:turbinerotorblade>]]);
 
+# Reactor Stabilizer Outer Rotor
+recipes.remove(<draconicevolution:reactor_part:1>);
+recipes.addShapedMirrored(<draconicevolution:reactor_part:1>, [[<contenttweaker:corrupted_core>,<alchemistry:ingot:44>,<alchemistry:ingot:44>],[null,<bigreactors:turbinerotorblade>,<bigreactors:turbinerotorblade>]]);
+
+# Reactor Stabilizer Rotor Assembly
+recipes.remove(<draconicevolution:reactor_part:3>);
+recipes.addShapedMirrored(<draconicevolution:reactor_part:3>, [[null,<draconicevolution:reactor_part:1>,<draconicevolution:reactor_part:2>],[<contenttweaker:corrupted_core>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],[null,<draconicevolution:reactor_part:1>,<draconicevolution:reactor_part:2>]]);
+
+# Reactor Stabilizer Focus Ring
+recipes.remove(<draconicevolution:reactor_part:4>);
+recipes.addShaped(<draconicevolution:reactor_part:4>, [[<alchemistry:ingot:44>,<alchemistry:ingot:41>,<alchemistry:ingot:44>],[<alchemistry:ingot:41>,<contenttweaker:corrupted_core>,<alchemistry:ingot:41>],[<alchemistry:ingot:44>,<alchemistry:ingot:41>,<alchemistry:ingot:44>]]);
+
+# Reactor Stabilizer Frame
+recipes.remove(<draconicevolution:reactor_part>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:reactor_part>,
+[[<immersiveengineering:metal:5>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<immersiveengineering:metal:5>],
+[<immersiveengineering:metal:5>,null,null,null,<immersiveengineering:metal:5>],
+[<contenttweaker:corrupted_core>,<bigreactors:turbinerotorshaft>,<contenttweaker:draconic_machine_frame>,<bigreactors:turbinerotorshaft>,<contenttweaker:corrupted_core>],
+[<immersiveengineering:metal:5>,null,null,null,<immersiveengineering:metal:5>],
+[<immersiveengineering:metal:5>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<immersiveengineering:metal:5>]]);
 
 print("ENDING DraconicEvolution.zs");

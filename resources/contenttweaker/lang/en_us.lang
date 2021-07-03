@@ -515,3 +515,6 @@ item.contenttweaker.copper_bismid_carbonate_sheet.name=Copper Bismid Carbonate S
 item.contenttweaker.ruby_rubidium.name=Ruby Rubidium
 item.contenttweaker.vmb_compound.name=V.M.B. Compound
 item.contenttweaker.zysc_baach_sheet.name=Zysc-Baach Sheet
+item.contenttweaker.fission_coolant.name=Fission Coolant Unit
+fluid.bromine=Bromine
+item.contenttweaker.highly_radioactive_dimension_splitting_compound.name=Highly Radioactive Dimension-Splitting Compound
