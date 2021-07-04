@@ -9,6 +9,7 @@ import thaumcraft.aspect.CTAspectStack;
 import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
 import mods.alchemistry.Combiner;
+import moretweaker.lightningcraft.LightningInfusion;
 
 print("STARTING MysticalAgriculture.zs");
 
@@ -717,5 +718,93 @@ recipes.remove(<mysticalagriculture:yellorium_seeds>);
 # Mystical Fertilizer
 recipes.remove(<mysticalagriculture:mystical_fertilizer>);
 mods.alchemistry.Combiner.addRecipe(<mysticalagriculture:mystical_fertilizer> * 3, [<alchemistry:fertilizer>,<alchemistry:compound:53>]);
+
+# Base Eseence Ingot
+recipes.remove(<mysticalagriculture:crafting:32>);
+recipes.addShaped(<mysticalagriculture:crafting:32>, [[null,<mysticalagriculture:crafting:5>,null],[<mysticalagriculture:crafting:5>,<botania:manaresource>,<mysticalagriculture:crafting:5>],[null,<mysticalagriculture:crafting:5>,null]]);
+
+# Mystical Machine Frame
+recipes.remove(<mysticalagriculture:mystical_machine_frame>);
+recipes.addShaped(<mysticalagriculture:mystical_machine_frame>, [[<contenttweaker:clean_runic_plate>,<mysticalagriculture:crafting:32>,<contenttweaker:clean_runic_plate>],[<mysticalagriculture:crafting:32>,<extendedcrafting:frame>,<mysticalagriculture:crafting:32>],[<contenttweaker:clean_runic_plate>,<mysticalagriculture:crafting:32>,<contenttweaker:clean_runic_plate>]]);
+
+# Seed Reprocessor
+recipes.remove(<mysticalagriculture:seed_reprocessor>);
+recipes.addShaped(<mysticalagriculture:seed_reprocessor>, [[<thermalfoundation:material:327>,<mysticalagriculture:tier2_inferium_seeds>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<mysticalagriculture:mystical_machine_frame>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<mysticalagriculture:ingot_storage:6>,<thermalfoundation:material:327>]]);
+
+# Ultimate Seed Reprocessor
+recipes.remove(<mysticalagriculture:ultimate_reprocessor>);
+recipes.addShaped(<mysticalagriculture:ultimate_reprocessor>, [[null,<mysticalagradditions:insanium>,null],[<mysticalagradditions:insanium>,<mysticalagriculture:supremium_reprocessor>,<mysticalagradditions:insanium>],[null,<mysticalagradditions:storage>,null]]);
+
+# Witherproof Block
+recipes.remove(<mysticalagriculture:witherproof_block>);
+recipes.addShaped(<mysticalagriculture:witherproof_block>, [[<enderio:block_dark_iron_bars>,<mysticalagriculture:wither_skeleton_essence>,<enderio:block_dark_iron_bars>],[<mysticalagriculture:wither_skeleton_essence>,<mysticalagriculture:soulstone>,<mysticalagriculture:wither_skeleton_essence>],[<enderio:block_dark_iron_bars>,<mysticalagriculture:wither_skeleton_essence>,<enderio:block_dark_iron_bars>]]);
+
+# Witherproof Glass
+recipes.remove(<mysticalagriculture:witherproof_glass>);
+recipes.addShaped(<mysticalagriculture:witherproof_glass>, [[<enderio:block_dark_iron_bars>,<mysticalagriculture:wither_skeleton_essence>,<enderio:block_dark_iron_bars>],[<mysticalagriculture:wither_skeleton_essence>,<mysticalagriculture:soul_glass>,<mysticalagriculture:wither_skeleton_essence>],[<enderio:block_dark_iron_bars>,<mysticalagriculture:wither_skeleton_essence>,<enderio:block_dark_iron_bars>]]);
+
+# Prudentium Ingot
+recipes.removeShapeless(<mysticalagriculture:crafting:34>, [<*>,<*>,<*>]);
+mods.botania.RuneAltar.addRecipe(<mysticalagriculture:crafting:34>, [<mysticalagriculture:crafting:33>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 10000);
+
+# Intermedium Ingot
+recipes.removeShapeless(<mysticalagriculture:crafting:35>, [<*>,<*>,<*>]);
+mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:intermedium_seed", "", <mysticalagriculture:crafting:35>, 1, [<aspect:metallum> * 10,<aspect:praecantatio> * 10], <mysticalagriculture:crafting:34>, [<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>]);
+
+# Superium Ingot
+recipes.removeShapeless(<mysticalagriculture:crafting:36>, [<*>,<*>,<*>]);
+LightningInfusion.add(<mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:35>, 10, [<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
+
+# Supremium Ingot
+recipes.removeShapeless(<mysticalagriculture:crafting:37>, [<*>,<*>,<*>]);
+# recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_supremium_ingot.json
+
+# Inferium Fertilization Core
+recipes.remove(<mysticalagriculture:crafting:50>);
+recipes.addShaped(<mysticalagriculture:crafting:50>, [[<mysticalagriculture:crafting>,<botania:manaresource:7>,<mysticalagriculture:crafting>],[<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:32>,<mysticalagriculture:fertilized_essence>],[<mysticalagriculture:crafting>,<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting>]]);
+
+# Prudentium Fertilization Core
+recipes.remove(<mysticalagriculture:crafting:51>);
+recipes.addShaped(<mysticalagriculture:crafting:51>, [[<mysticalagriculture:crafting:1>,<thaumcraft:ingot>,<mysticalagriculture:crafting:1>],[<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:50>,<mysticalagriculture:fertilized_essence>],[<mysticalagriculture:crafting:1>,<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:1>]]);
+
+# Intermedium Fertilization Core
+recipes.remove(<mysticalagriculture:crafting:52>);
+recipes.addShaped(<mysticalagriculture:crafting:52>, [[<mysticalagriculture:crafting:2>,<contenttweaker:gypsum>,<mysticalagriculture:crafting:2>],[<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:51>,<mysticalagriculture:fertilized_essence>],[<mysticalagriculture:crafting:2>,<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:2>]]);
+
+# Superium Fertilization Core
+recipes.remove(<mysticalagriculture:crafting:53>);
+recipes.addShaped(<mysticalagriculture:crafting:53>, [[<mysticalagriculture:crafting:3>,<astralsorcery:itemcraftingcomponent:1>,<mysticalagriculture:crafting:3>],[<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:52>,<mysticalagriculture:fertilized_essence>],[<mysticalagriculture:crafting:3>,<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:3>]]);
+
+# Supremium Fertilization Core
+recipes.remove(<mysticalagriculture:crafting:54>);
+recipes.addShaped(<mysticalagriculture:crafting:54>, [[<mysticalagriculture:crafting:4>,<contenttweaker:solar_ingot>,<mysticalagriculture:crafting:4>],[<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:53>,<mysticalagriculture:fertilized_essence>],[<mysticalagriculture:crafting:4>,<mysticalagriculture:fertilized_essence>,<mysticalagriculture:crafting:4>]]);
+
+# Theoretical Infinite Water Source
+recipes.remove(<mysticalagriculture:crafting:48>);
+recipes.addShaped(<mysticalagriculture:crafting:48>, [[<extendedcrafting:material>,<botania:rune>,<extendedcrafting:material>],[<botania:rune>,<roots:unending_bowl>,<botania:rune>],[<extendedcrafting:material>,<botania:rune>,<extendedcrafting:material>]]);
+
+# Prudentium Watering Can
+recipes.remove(<mysticalagriculture:watering_can:1>);
+recipes.addShapedMirrored(<mysticalagriculture:watering_can:1>, [[<mysticalagriculture:crafting:34>,<mysticalagriculture:crafting:51>,null],[<mysticalagriculture:crafting:34>,<mysticalagriculture:watering_can>,<mysticalagriculture:crafting:34>],[null,<mysticalagriculture:crafting:34>,null]]);
+
+# Intermedium Watering Can
+recipes.remove(<mysticalagriculture:watering_can:2>);
+recipes.addShapedMirrored(<mysticalagriculture:watering_can:2>, [[<mysticalagriculture:crafting:35>,<mysticalagriculture:crafting:52>,null],[<mysticalagriculture:crafting:35>,<mysticalagriculture:watering_can:1>,<mysticalagriculture:crafting:35>],[null,<mysticalagriculture:crafting:35>,null]]);
+
+# Superium Watering Can
+recipes.remove(<mysticalagriculture:watering_can:3>);
+recipes.addShapedMirrored(<mysticalagriculture:watering_can:3>, [[<mysticalagriculture:crafting:36>,<mysticalagriculture:crafting:53>,null],[<mysticalagriculture:crafting:36>,<mysticalagriculture:watering_can:2>,<mysticalagriculture:crafting:36>],[null,<mysticalagriculture:crafting:36>,null]]);
+
+# Supremium Watering Can
+recipes.remove(<mysticalagriculture:watering_can:4>);
+recipes.addShapedMirrored(<mysticalagriculture:watering_can:4>, [[<mysticalagriculture:crafting:37>,<mysticalagriculture:crafting:54>,null],[<mysticalagriculture:crafting:37>,<mysticalagriculture:watering_can:3>,<mysticalagriculture:crafting:37>],[null,<mysticalagriculture:crafting:37>,null]]);
+
+# Core Remover
+recipes.remove(<mysticalagriculture:core_remover>);
+recipes.addShaped(<mysticalagriculture:core_remover>, [[null,<mysticalagriculture:fertilized_essence>,null],[<mysticalagriculture:fertilized_essence>,<contenttweaker:suppression_core>,<mysticalagriculture:fertilized_essence>],[null,<mysticalagriculture:fertilized_essence>,null]]);
+
+# Growth Accelerator
+recipes.remove(<mysticalagriculture:growth_accelerator>);
+recipes.addShaped(<mysticalagriculture:growth_accelerator> * 4, [[<appliedenergistics2:quartz_growth_accelerator>,<mysticalagriculture:ingot_storage:1>,<appliedenergistics2:quartz_growth_accelerator>],[<mysticalagriculture:ingot_storage:1>,<mysticalagriculture:mystical_machine_frame>,<mysticalagriculture:ingot_storage:1>],[<appliedenergistics2:quartz_growth_accelerator>,<mysticalagriculture:ingot_storage:1>,<appliedenergistics2:quartz_growth_accelerator>]]);
 
 print("ENDING MysticalAgriculture.zs");

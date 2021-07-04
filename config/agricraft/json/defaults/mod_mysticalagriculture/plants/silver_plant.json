@@ -26,7 +26,7 @@
   "tier": 1,
   "weedable": false,
   "aggressive": false,
-  "spread_chance": 0.0,
+  "spread_chance": 0.1,
   "spawn_chance": 0.0,
   "grass_drop_chance": 0.0,
   "seed_drop_chance": 1.0,

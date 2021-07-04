@@ -461,6 +461,7 @@ mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:12>);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:13>);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:dye:14>);
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:4>);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:8>);
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:13>);
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:14>);
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:compound:21>);

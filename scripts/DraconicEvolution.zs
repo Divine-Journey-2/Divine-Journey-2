@@ -382,8 +382,8 @@ recipes.remove(<draconicevolution:reactor_part:1>);
 recipes.addShapedMirrored(<draconicevolution:reactor_part:1>, [[<contenttweaker:corrupted_core>,<alchemistry:ingot:44>,<alchemistry:ingot:44>],[null,<bigreactors:turbinerotorblade>,<bigreactors:turbinerotorblade>]]);
 
 # Reactor Stabilizer Outer Rotor
-recipes.remove(<draconicevolution:reactor_part:1>);
-recipes.addShapedMirrored(<draconicevolution:reactor_part:1>, [[<contenttweaker:corrupted_core>,<alchemistry:ingot:44>,<alchemistry:ingot:44>],[null,<bigreactors:turbinerotorblade>,<bigreactors:turbinerotorblade>]]);
+recipes.remove(<draconicevolution:reactor_part:2>);
+recipes.addShapedMirrored(<draconicevolution:reactor_part:2>, [[<contenttweaker:corrupted_core>,<alchemistry:ingot:41>,<alchemistry:ingot:41>],[null,<bigreactors:turbinerotorblade>,<bigreactors:turbinerotorblade>]]);
 
 # Reactor Stabilizer Rotor Assembly
 recipes.remove(<draconicevolution:reactor_part:3>);

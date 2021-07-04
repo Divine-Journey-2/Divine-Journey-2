@@ -34196,8 +34196,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Beam Core",
-          "desc:8": "No Description"
+          "name:8": "Beam Core? Huh, more like Be-gone Core!",
+          "desc:8": "Break down some Beam Cores into Nickel Chloride and Polyvinyl Chloride!"
         }
       },
       "tasks:9": {
@@ -34225,7 +34225,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftplanets:item_basic_asteroids",
+              "Count:3": 6,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "477:10": {
       "questID:3": 477,
@@ -34288,8 +34301,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Corrupted Core",
-          "desc:8": "No Description"
+          "name:8": "I though it was over... But alas, more Cores!",
+          "desc:8": "Obtain some Kaolnite from Draconic or Wyvern Cores, and combine it with Barium, Psyllium and Chaotic Cores to get the actual final tier of Draconic Evolution Cores: The Corrupted Core!"
         }
       },
       "tasks:9": {
@@ -34311,7 +34324,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:chaotic_core",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "479:10": {
       "questID:3": 479,
@@ -34339,8 +34365,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Trippy",
-          "desc:8": "No Description"
+          "name:8": "The Abyss is trippy",
+          "desc:8": "Break down Refined Coralium into Psyllium, or use some Hybrid Abyssalium to also get Potassium Permaganate."
         }
       },
       "tasks:9": {
@@ -34368,7 +34394,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:hybrid_abyssalium_ingot",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "480:10": {
       "questID:3": 480,
@@ -34396,8 +34435,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Barium",
-          "desc:8": "No Description"
+          "name:8": "Bury \u0027em!",
+          "desc:8": "Get some Hand Purple from Wyvern Cores or Barium Sulfate from Crystaltine Ingots, and break them down further into elemental Barium.\n\n...\n\n- Why are Helium, Curium and Barium called the medical elements?\n\n- Because if you can\u0027t Helium or Curium, you Barium!"
         }
       },
       "tasks:9": {
@@ -34431,7 +34470,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:wyvern_core",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "481:10": {
       "questID:3": 481,
@@ -34460,7 +34512,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Chemical Caster",
-          "desc:8": "It is highly recommended that you do the \"Growing Chaos\" quest at the top of this Chapter before doing this quest, so you won\u0027t have to kill another Chaos Guardian... unless... you\u0027d LIKE to do that. Then go ahead.\n\nMultiblock req\u0027s\n\n+Resistive Heater\n\nCasting Tables require an Ingot Cast; Drains need to be rotated correctly"
+          "desc:8": "It is highly recommended that you do the \"Growing Chaos\" quest at the top of this Chapter before doing this quest, so you won\u0027t have to kill another Chaos Guardian... unless... you\u0027d LIKE to do that. Then go ahead.\n\nBuild the Chemical Caster multiblock! Note that all 4 Casting Tables require an Ingot Cast to be placed in them.\n\nThe quest requires an additional Resistive Heater, which you\u0027ll use to provde heat for the machine. You can use any Mekanism Heat Acceptor on the top. Simply power the Resistive Heater, and set its power usage high first (to a couple thousand RF/tick), to have it heat up. Once it\u0027s sufficiently hot, you can bring its power usage down to only about 200 RF/tick. It takes a little while to have the heat transfered to the multiblock, so be patient.\n\nUsing this machine, you can cast any solid Alchemistry element into its Ingot form. It\u0027s fast, and it\u0027s available earlier than the Chemical Combiner, which is also capable of doing this. However the Combiner can create a bunch of Compounds as well.\n\nYou\u0027ll likely end up using both of the machines later on.\n"
         }
       },
       "tasks:9": {
@@ -34593,7 +34645,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "modularmachinery:blockcasing",
+              "Count:3": 20,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "482:10": {
       "questID:3": 482,
@@ -34621,8 +34686,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Rub it in",
-          "desc:8": "No Description"
+          "name:8": "Rubbing it in",
+          "desc:8": "Break down Tungsten into Rubidium in the Fission multiblock!"
         }
       },
       "tasks:9": {
@@ -34644,7 +34709,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:oil_of_vitriol",
+              "Count:3": 40,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "483:10": {
       "questID:3": 483,
@@ -34674,8 +34752,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Fissioned",
-          "desc:8": "No Description"
+          "name:8": "Why didn\u0027t you tell Alphonse Elric about this?!",
+          "desc:8": "Build the Fission Controller multiblock!\n\nYou can check your Alchemistry Guidebook to see how to constuct it, but it\u0027s a simple 5x5x5 hollow cube of Fission Casing blocks, with a 3-tall pillar of Fission Cores in the center. Then make sure to place the Fission Controller while looking AT the multiblock. (Sometimes the Guidebook shows its orientation incorrectly.)\n\nThen power the Controller, and you can input and output items from any side."
         }
       },
       "tasks:9": {
@@ -34709,7 +34787,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:antimony_strontium_compound",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "484:10": {
       "questID:3": 484,
@@ -34737,8 +34828,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Holy Moly!",
-          "desc:8": "No Description"
+          "name:8": "Holy Molybdenium!",
+          "desc:8": "Break down Bismuth into Molybdenium in the Fission multiblock!"
         }
       },
       "tasks:9": {
@@ -34760,7 +34851,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 20,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "485:10": {
       "questID:3": 485,
@@ -34788,8 +34892,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Chromium",
-          "desc:8": "No Description"
+          "name:8": "10^100 Chrome",
+          "desc:8": "Use Potassium Dichromate, Chromium Oxide, Wafers or Rainbow Plates to get some Chromium!"
         }
       },
       "tasks:9": {
@@ -34811,7 +34915,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftplanets:basic_item_venus",
+              "Count:3": 16,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "486:10": {
       "questID:3": 486,
@@ -34839,8 +34956,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Antimony",
-          "desc:8": "No Description"
+          "name:8": "The oppsite of Pokemony",
+          "desc:8": "Get some Antimony Trioxide from End Steel, and break it down further into pure Antimony!"
         }
       },
       "tasks:9": {
@@ -34868,7 +34985,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_alloy",
+              "Count:3": 5,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "487:10": {
       "questID:3": 487,
@@ -34898,8 +35028,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "2 million to first person to pronounce this correctly",
-          "desc:8": "No Description"
+          "name:8": "Good luck pronouncing this!",
+          "desc:8": "Combine some Zirconium, Yttrium and some Beryllium Alimude into Zircyttrid Beryllium Alumide!"
         }
       },
       "tasks:9": {
@@ -34921,7 +35051,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 40,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "488:10": {
       "questID:3": 488,
@@ -34949,8 +35092,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Breakout",
-          "desc:8": "No Description"
+          "name:8": "Breakout on Acid",
+          "desc:8": "Break down Beryl Zincite to get Beryllium Alumide and Silicon Trioxide!\n\n\n...Oh, the wonders of Alchemy!"
         }
       },
       "tasks:9": {
@@ -34978,7 +35121,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "489:10": {
       "questID:3": 489,
@@ -35006,8 +35162,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "and Yet",
-          "desc:8": "No Description"
+          "name:8": "Yeet-rium",
+          "desc:8": "Break down some Platinum, Iridium or Gold in the Fission Multiblock to obtain some Yttrium!"
         }
       },
       "tasks:9": {
@@ -35029,7 +35185,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:cadmium_arsenic_compound",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "490:10": {
       "questID:3": 490,
@@ -35058,7 +35227,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Old nightmares",
-          "desc:8": "No Description"
+          "desc:8": "Break down some Gold or Mercury in the Fission multiblock to obtain some Zirconium!"
         }
       },
       "tasks:9": {
@@ -35080,7 +35249,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 80,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "491:10": {
       "questID:3": 491,
@@ -35110,7 +35292,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Atomizer",
-          "desc:8": "No Description"
+          "desc:8": "Make an Atomizer to turn any Fluid into atoms and molecules! It\u0027s the easiest way to get H20 or any other molecule that has a liquid form in room temperature."
         }
       },
       "tasks:9": {
@@ -35132,7 +35314,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 24,
+              "Damage:2": 24,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "492:10": {
       "questID:3": 492,
@@ -35162,8 +35357,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Anti-strob compound",
-          "desc:8": "No Description"
+          "name:8": "Anti-Strong Compound... Weak Compound?",
+          "desc:8": "No, it\u0027s pretty stong. Make some!"
         }
       },
       "tasks:9": {
@@ -35185,7 +35380,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 51,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 38,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "493:10": {
       "questID:3": 493,
@@ -35216,8 +35430,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "a what now?",
-          "desc:8": "No Description"
+          "name:8": "Heat resistant AND allows for circuits",
+          "desc:8": "Zirconium\nYttrium\nScandium\nCopper\n- \nBeryllium\nAlumide\nArgon\nCarbonate\nHelium\n\nSheet.\n\nOr, a Zysc-Baach Sheet, for short.\n\nCraft it in the Liquicrafter!\n\nRemember than Helium and Argon are considered liquids right now, so use liquid transporting Tanks or Fluid Conduits."
         }
       },
       "tasks:9": {
@@ -35239,7 +35453,43 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:block_tank",
+              "Count:3": 1,
+              "tag:10": {
+                "enderio:data:10": {
+                  "faceModes-:1": 1,
+                  "voidMode:3": 2,
+                  "outputQueue:10": {
+                    "size:3": 0
+                  },
+                  "tank:10": {
+                    "FluidName:8": "helium",
+                    "Capacity:3": 32000,
+                    "Amount:3": 32000
+                  },
+                  "inventory:10": {
+                    "size:3": 5,
+                    "4+:1": 1,
+                    "3+:1": 1,
+                    "2+:1": 1,
+                    "1+:1": 1,
+                    "0+:1": 1
+                  },
+                  "redstoneControlMode:3": 0
+                }
+              },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "494:10": {
       "questID:3": 494,
@@ -35267,8 +35517,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Scandal",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s a Scandal!",
+          "desc:8": "Break down Niobium further into Scandium!"
         }
       },
       "tasks:9": {
@@ -35290,7 +35540,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:otherworldly_tears",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "495:10": {
       "questID:3": 495,
@@ -35319,7 +35582,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Chipmunk Voice",
-          "desc:8": "No Description"
+          "desc:8": "Break down some Lithium or Beryllium in the Fission multiblock into Helium!"
         }
       },
       "tasks:9": {
@@ -35341,7 +35604,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:copper_bismid_carbonate_sheet",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "496:10": {
       "questID:3": 496,
@@ -35370,7 +35646,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Where have all the flowers gon",
-          "desc:8": "No Description"
+          "desc:8": "Break down Rubidium further into Argon!"
         }
       },
       "tasks:9": {
@@ -35392,7 +35668,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 32,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "497:10": {
       "questID:3": 497,
@@ -35420,8 +35709,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Lumi",
-          "desc:8": "No Description"
+          "name:8": "Am I D.?",
+          "desc:8": "Break down Luminessence to get Urea, then break it down further into Amide!"
         }
       },
       "tasks:9": {
@@ -35449,7 +35738,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:block_of_elevation",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "498:10": {
       "questID:3": 498,
@@ -35478,8 +35780,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Crop Sticks",
-          "desc:8": "No Description"
+          "name:8": "Millions and millions of Seeds",
+          "desc:8": "Combine liquid Mercury, Potassium Carbonate and Potassium Cyanide in your Liquicrafter to obtain some Growth Infusion Liquid!\n\nThe easiest way to get liquid Mercury is in the Alchemistry Liquifier, which you can craft right after you obtain some Chromium-Barium Compounds. Its quest is located near the center of this Chapter, called \"Melting Atoms\".\n\nFinally, use your Growth Infusion Liquid to obtain some Crop Sticks!\n\nThese sticks are way more powerful than they look like - they allow you to duplicate any Mystical Agriculture Seed planted on them, either through spreading or using the Clipper.\n\nYou cna also mutate the same type of crop with itself by planting 2 of them on a Crop Stick placed diagonally from each other, and placing a double-Crop Stick in the corner. The Seeds will eventially mutate (which you can speed up a lot with the Imaginary Time Block), creating a potentially better one.\n\nEach AgriCraft Seed has 3 stats, and maxing them out is commonly referred to as \"10/10/10\u0027ing the Seed\". The last 10 doesn\u0027t matter for this pack, as weeds as disabled, but the first two increase the rate at which the crop grows and the second one increases the average yield of the crop.\n\nYou can check the 10/10/10\u0027ing progress in a Seed Analyzer.\n\nYou\u0027ll need a bunch of Seeds in one of the later Chapters, so definitely take advantage of AgriCraft!"
         }
       },
       "tasks:9": {
@@ -35514,7 +35816,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:item_alloy_endergy_ingot",
+              "Count:3": 32,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "499:10": {
       "questID:3": 499,
@@ -35542,8 +35857,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Potassium",
-          "desc:8": "No Description"
+          "name:8": "Potassium Compounds",
+          "desc:8": "Break down some material crafted from Elevatium Ingots or Elevatium itself to obtain Potassium Cyanide. Also break down specifically the green, Corrosive Will Crystals to obtain Potassium Carbonate."
         }
       },
       "tasks:9": {
@@ -35571,7 +35886,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:ingot_of_elevation",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "500:10": {
       "questID:3": 500,
@@ -35600,7 +35928,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Salty",
-          "desc:8": "Craft an evaporator. When a fluid is placed in it, it will slowly evaporate into an item. You\u0027ll want to passive this, as you\u0027ll need a large amount of Mineral Salt."
+          "desc:8": "Craft an Evaporator. When a fluid is placed in it, it will slowly evaporate into an item. You\u0027ll want to passively automate this, as you\u0027ll need a large amount of Mineral Salt.\n\nYou can push fluids from any side and pull items from any side as well."
         }
       },
       "tasks:9": {
@@ -35628,7 +35956,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:draconic_ingot",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "501:10": {
       "questID:3": 501,
@@ -35657,7 +35998,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Gone, Reduced to Elements",
-          "desc:8": "Toss a material in and it will dissolve down into elements.\nYou may notice that the next section of the questbook does not have any lines connecting this quest to them. Instead of requiring this quest, they require an off-page quest named exactly the same as this, but with no tasks, and will instantly complete upon this quest completing. \nNote that if you have for some reason enabled edit mode, you must disable it to continue. "
+          "desc:8": "Craft a Chemical Dissolver! Give it some power and toss in a material and it will dissolve down into elements. You can push inputs and pull outputs from any side.\n\nIf you\u0027d like to craft more Dissolvers but you don\u0027t have enough Chaos Shards, try to move towards the quest near the top of this Chapter called \"Growing Chaos\" that allows you to craft Tiny Chaos Fragments!\n\nThis quest also unlocks a lot of other quests on this page that aren\u0027t connected to it. This is because the connections would get really messy otherwise!\n\n§6(Note that if you have for some reason enabled edit mode, you must disable it to continue.)"
         }
       },
       "tasks:9": {
@@ -35679,7 +36020,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:material",
+              "Count:3": 12,
+              "Damage:2": 24,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "502:10": {
       "questID:3": 502,
@@ -35708,7 +36062,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Machine Frame ^who knows",
-          "desc:8": "The Alchemical Machine Frame will be used to craft machines from Alchemistry. das\nsadasdas ad as asd asd as das da\nd asd asd asd asd asd asd asd asadsas dasd asda "
+          "desc:8": "Okay I might have lied when I said the Draconic Machine Frame was the highest tier... but I swear this time there is no more... no more Machine Frame tiers... nah-ah, not at all. Nada. Yup. Definitely."
         }
       },
       "tasks:9": {
@@ -35730,7 +36084,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "patchouli:guide_book",
+              "Count:3": 1,
+              "tag:10": {
+                "patchouli:book:8": "alchemistry:alchemistry_book"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "503:10": {
       "questID:3": 503,
@@ -35759,7 +36132,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Calcium Carbs",
-          "desc:8": "Dissolve Meteoric Iron to gain some Calcium Carbonate. Your immediate use for them is to craft Mekanism Heat Input blocks from Modular Diversity."
+          "desc:8": "Dissolve Meteoric Iron to gain some Calcium Carbonate. Your immediate use for them is to craft Mekanism Heat Input blocks from Modular Diversity.\n\nHowever you might need more Chaos Shards for the upcoming multiblock, some check out the quest near the top of this Chapter called \"Growing Chaos\" to get more!"
         }
       },
       "tasks:9": {
@@ -35781,7 +36154,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:cheesy_wafer",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "504:10": {
       "questID:3": 504,
@@ -35809,8 +36195,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Ammonium",
-          "desc:8": "No Description"
+          "name:8": "So THAT\u0027s what Mana tastes like",
+          "desc:8": "Break down AbyssalCraft Crystallized Mana or Runes of Mana into Ammonium. Your best bet is to use the highest tier AbyssalCraft Crystallized Mana Clusters."
         }
       },
       "tasks:9": {
@@ -35832,7 +36218,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 16,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "505:10": {
       "questID:3": 505,
@@ -35860,8 +36259,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Berry, Berry, ZINC!",
-          "desc:8": "No Description"
+          "name:8": "Never before seen reactions",
+          "desc:8": "Obtain some Beryl from Mirion Ingots and Zinc Oxide from Alchemical Brass, and combine them into Beryl Zincite!"
         }
       },
       "tasks:9": {
@@ -35895,7 +36294,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumcraft:ingot",
+              "Count:3": 48,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "506:10": {
       "questID:3": 506,
@@ -35925,8 +36337,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Combining",
-          "desc:8": "No Description"
+          "name:8": "Feelin\u0027 like a real Alchemist",
+          "desc:8": "Craft a Chemical Combiner! This machie allows you to create a bunch of Compounds as well as any Alchemistry Ingot. You can also create some basic materials with it.\n\nSimilarly to the Dissolver, you can input and output from any side.\n\nYou can combine up to 9 inputs, and each input slot can have any number of items. Sometimes putting elements into different slots will yield different results, for example both a Copper Ingot and a piece of Copper Dust takes 16 Copper elements, and placing the input into slot 1 or 2 will determine what the output is going to be.\n\nThis machine is 4x slower than the Chemical Caster multiblock, however it\u0027s still an essential block.\n\nIn order to automate it, it\u0027s best to set a target recipe by looking at a Combiner recipe in JEI, and pressing the \"+\" button to import it into the machine. This way, all the input ingredients will land in the correct slot.\n\nTo create AE2 Patterns for the machine, use Alchemistry Slot Fillers wherever you don\u0027t want an item to be placed. These Slot Fillers are incredibly cheap, but get consumed upon crafting, so you\u0027ll want a lot of them."
         }
       },
       "tasks:9": {
@@ -35943,12 +36355,34 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "alchemistry:slot_filler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftcore:basic_item",
+              "Count:3": 16,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "507:10": {
       "questID:3": 507,
@@ -35976,8 +36410,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Methane",
-          "desc:8": "No Description"
+          "name:8": "From the Abyss, into Alchemy",
+          "desc:8": "Break down AbyssalCraft Methane into Alchemistry Methane!"
         }
       },
       "tasks:9": {
@@ -35999,7 +36433,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "abyssalcraft:crystal",
+              "Count:3": 16,
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "508:10": {
       "questID:3": 508,
@@ -36027,8 +36474,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Strontium",
-          "desc:8": "No Description"
+          "name:8": "Strongium",
+          "desc:8": "Use one of the main Impetus items to get Strontium Carbonate and break it down further into regular Strontium!\n\nYou might want to semi-automate the creation of some of these Impetus items. You can use an External Crafter to keep your Primordial Pearl repaired.\n\nHowever, once you get to Fission, you\u0027ll be able to break down regular old Osmium into Strontium, so it\u0027s not hugely important to automate it now."
         }
       },
       "tasks:9": {
@@ -36056,7 +36503,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "thaumicaugmentation:material",
+              "Count:3": 4,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "509:10": {
       "questID:3": 509,
@@ -36087,8 +36547,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Fertilized",
-          "desc:8": "No Description"
+          "name:8": "Nice and fertilized",
+          "desc:8": "Combine some materials in your Chemical Combiner into some  Alchemistry Fertilizer, then into some Mystical Fertilizer!\n\nYou can use the latter to Bone Meal your Mystical Agriculture crops."
         }
       },
       "tasks:9": {
@@ -36116,7 +36576,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 12,
+              "Damage:2": 28,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "510:10": {
       "questID:3": 510,
@@ -36146,8 +36619,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Diamond Phosphate",
-          "desc:8": "No Description"
+          "name:8": "Diamonds!? Nah, just Di - ammonium...",
+          "desc:8": "Combine some Ammonium, Hydrogen and Phosphate in your Chemical Combiner into Diammonium Phosphate!"
         }
       },
       "tasks:9": {
@@ -36169,7 +36642,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:antimony_strontium_compound",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "511:10": {
       "questID:3": 511,
@@ -36198,7 +36684,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Electrolyzer",
-          "desc:8": "(optional)"
+          "desc:8": "The Electrolyzer is an optional machine, but it\u0027s the easiest way to get Chlorine using only Water and Salt as the inputs."
         }
       },
       "tasks:9": {
@@ -36220,7 +36706,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extendedcrafting:singularity",
+              "Count:3": 2,
+              "Damage:2": 24,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "512:10": {
       "questID:3": 512,
@@ -36250,8 +36749,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Chromium Barium Compound",
-          "desc:8": "No Description"
+          "name:8": "Chromatic Barry",
+          "desc:8": "Make some Chromium Barium Compound!"
         }
       },
       "tasks:9": {
@@ -36273,7 +36772,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 24,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 56,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "513:10": {
       "questID:3": 513,
@@ -36301,8 +36819,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Titanium Oxide",
-          "desc:8": "No Description"
+          "name:8": "Tight -anium",
+          "desc:8": "While regular Titanium does yield Titanium elements, you can only get Titanium Oxide from Compressed Titanium or Titanium Boxes. The Boxes reliably yield more, not just with a 50% chance."
         }
       },
       "tasks:9": {
@@ -36324,7 +36842,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftplanets:item_basic_asteroids",
+              "Count:3": 20,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "514:10": {
       "questID:3": 514,
@@ -36352,8 +36883,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Iodine",
-          "desc:8": "No Description"
+          "name:8": "I\u0027m Elemental",
+          "desc:8": "Break down some Evil Infused Iron into Lead Iodide, and break it down further into regular Iodine!"
         }
       },
       "tasks:9": {
@@ -36381,7 +36912,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "extrautils2:simpledecorative",
+              "Count:3": 3,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "515:10": {
       "questID:3": 515,
@@ -36410,7 +36954,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Melted Stars",
-          "desc:8": "No Description"
+          "desc:8": "Melt some Nether Stars to get Hydroxylapatite, and break it down further into Phosphate.\n\nThis might be the perfect time to upgrade your Wither farm as well!"
         }
       },
       "tasks:9": {
@@ -36438,7 +36982,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:nether_star",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "516:10": {
       "questID:3": 516,
@@ -36466,8 +37023,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Tungsten",
-          "desc:8": "No Description"
+          "name:8": "So that\u0027s why your Tung Stanks when you bite this",
+          "desc:8": "Dissolve some Stone Ichor ingot Tungsten!"
         }
       },
       "tasks:9": {
@@ -36489,7 +37046,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:stone_ichor",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "517:10": {
       "questID:3": 517,
@@ -36523,7 +37093,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Growing Chaos",
-          "desc:8": "No Description"
+          "desc:8": "1. First use Iodine, Mercury and Copper Chloride in your Liquicrafter multiblock to get a little bit of Impure Mercury-Iodine Mixture.\n\n2. Then purify this liquid with some Nickel Chloride to get pure Liquid Iodine.\n\n3. Finally, combine 10mB of Liquid Iodine with some Mesquite and Titanium Oxide to get 6 Tiny Chaos Fragments!\n\nIt might not be a bad idea to automate this entire process. I recommend using 3 separate Liquicrafters for it."
         }
       },
       "tasks:9": {
@@ -36558,7 +37128,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 80,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "518:10": {
       "questID:3": 518,
@@ -36586,8 +37169,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Mercury",
-          "desc:8": "No Description"
+          "name:8": "We can\u0027t GO to Mercury, but we can GET some Mercury",
+          "desc:8": "Break down Supremium Ingots into Mercury Sulfide, and break it down further into elemental Mercury."
         }
       },
       "tasks:9": {
@@ -36615,7 +37198,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 16,
+              "Damage:2": 37,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "519:10": {
       "questID:3": 519,
@@ -36645,8 +37241,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Compounded",
-          "desc:8": "No Description"
+          "name:8": "It is nature green or poison green...?",
+          "desc:8": "Alloy up some Cadmium and Arsenic! What could POSSIBLY go wrong?!"
         }
       },
       "tasks:9": {
@@ -36668,7 +37264,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 48,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 33,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "520:10": {
       "questID:3": 520,
@@ -36696,8 +37311,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Cadium",
-          "desc:8": "No Description"
+          "name:8": "Chad-mium",
+          "desc:8": "Break down some Flying Ointment into Cadmium Sulfide, and break it down further into Cadmium elements."
         }
       },
       "tasks:9": {
@@ -36725,7 +37340,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:flying_ointment",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "521:10": {
       "questID:3": 521,
@@ -36753,8 +37381,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Arsenic",
-          "desc:8": "No Description"
+          "name:8": "Taste the rainbow... Or don\u0027t, actually, DON\u0027T!!!",
+          "desc:8": "Break down Rainbow Plates into Arsenic Sulfide and further into pure Arsenic.\n\nSo yeah, DON\u0027T taste the Rainbow. For your own safety."
         }
       },
       "tasks:9": {
@@ -36782,7 +37410,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:rainbow_tablet",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "522:10": {
       "questID:3": 522,
@@ -36811,8 +37452,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Sapphire",
-          "desc:8": "No Description"
+          "name:8": "\"Sap Hire\" - is what a gemotoligist would call \"Free Honey\".",
+          "desc:8": "Combine some Cobalt Aluminate, Potassium Permanganate and Aluminum Oxide to get your first Sapphire Gem!"
         }
       },
       "tasks:9": {
@@ -36834,7 +37475,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 16,
+              "Damage:2": 23,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "523:10": {
       "questID:3": 523,
@@ -36862,8 +37516,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Cobalt",
-          "desc:8": "No Description"
+          "name:8": "CoAl, not Coal...!",
+          "desc:8": "Break down some Mirion Ingots or Blocks into Cobalt Aluminate!"
         }
       },
       "tasks:9": {
@@ -36885,7 +37539,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "plustic:mirioningot",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "524:10": {
       "questID:3": 524,
@@ -36913,8 +37580,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Shot First",
-          "desc:8": "No Description"
+          "name:8": "Purpler and Calcer",
+          "desc:8": "Combine some Han Purple and Calcium Carbonate into Han Calcite!"
         }
       },
       "tasks:9": {
@@ -36936,7 +37603,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftcore:item_basic_moon",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "525:10": {
       "questID:3": 525,
@@ -36965,7 +37645,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Vandalism",
-          "desc:8": "No Description"
+          "desc:8": "Break down Silver into some Vanadium!"
         }
       },
       "tasks:9": {
@@ -36987,7 +37667,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 40,
+              "Damage:2": 24,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "526:10": {
       "questID:3": 526,
@@ -36995,7 +37688,8 @@
         522,
         527,
         516,
-        528
+        528,
+        488
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -37018,8 +37712,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Oxygen-Rich Barium Calcite Perpetuator",
-          "desc:8": "No Description"
+          "name:8": "Barium Circuitry",
+          "desc:8": "1. Melt your elemental Tungsten in your Liquifier.\n\n2. Then also melt some Nitrogen. Even though Nitrogen is a gas, this time it can only be picked up in Fluid tanks! Low on Nitrogen? Well, there are several ways to get it. Check out all the possiblities in JEI!\n\n3. The combine the above two liquids with a Copper Canister, some Barium Calcite, some Silicon Trioxide, some Dense Ice from the Asteroid Belt and some Sapphire to obtain an Oxxygen-Rich Barium Calcite Perpetuator!"
         }
       },
       "tasks:9": {
@@ -37041,7 +37735,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 24,
+              "Damage:2": 1004,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "527:10": {
       "questID:3": 527,
@@ -37069,8 +37776,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Breakdown",
-          "desc:8": "No Description"
+          "name:8": "Repeated Breakdown",
+          "desc:8": "Break down Han Calcite into Barium Calcite and Copper Carbonate!\n\nTake a minute to appreciate Alchemy... This is what Han Purple and Calcium Carbonate became...!"
         }
       },
       "tasks:9": {
@@ -37098,7 +37805,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "lightningcraft:metal_block",
+              "Count:3": 10,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "528:10": {
       "questID:3": 528,
@@ -37126,8 +37846,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Liquidifier",
-          "desc:8": "No Description"
+          "name:8": "Melting Atoms",
+          "desc:8": "Craft a Liquifier! Input 16 of certain elements to obtain their liquid form. You can use an side as item input and any side as fluid output."
         }
       },
       "tasks:9": {
@@ -37149,7 +37869,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 20,
+              "Damage:2": 56,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "529:10": {
       "questID:3": 529,
@@ -37178,7 +37911,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Boring",
-          "desc:8": "No Description"
+          "desc:8": "Break down Fluorine, Neon or Sodium into Boron!\n\nSodium comes from regular old Salt, so that\u0027s probably your best choice."
         }
       },
       "tasks:9": {
@@ -37200,7 +37933,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 16,
+              "Damage:2": 50,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "530:10": {
       "questID:3": 530,
@@ -37228,8 +37974,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Hellfire",
-          "desc:8": "No Description"
+          "name:8": "Queue-queue the Hellfire",
+          "desc:8": "Break down Bottled Hellfire into Cucurbitacin!"
         }
       },
       "tasks:9": {
@@ -37251,7 +37997,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:bottled_hellfire",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "531:10": {
       "questID:3": 531,
@@ -37280,7 +38039,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Rubying it in",
-          "desc:8": "No Description"
+          "desc:8": "Alloy up some Ruby and Rubidium into Ruby Rubidium. Fun!"
         }
       },
       "tasks:9": {
@@ -37302,7 +38061,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "projectred-core:resource_item",
+              "Count:3": 12,
+              "Damage:2": 200,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "532:10": {
       "questID:3": 532,
@@ -37331,8 +38103,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Ruby",
-          "desc:8": "No Description"
+          "name:8": "Rube Goldberg would be proud",
+          "desc:8": "Combine some Strontium Carbonate, Cucurbitacin and beta-Carotine into your first piece of Ruby!"
         }
       },
       "tasks:9": {
@@ -37354,7 +38126,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 8,
+              "Damage:2": 20,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "533:10": {
       "questID:3": 533,
@@ -37384,7 +38169,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "V-M-B",
-          "desc:8": "No Description"
+          "desc:8": "Obtain some Mendelevium from Nether Stars and alloy up some Vanadium, Mendelevium and Boron into some V.M.B. Compound!"
         }
       },
       "tasks:9": {
@@ -37412,7 +38197,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:nether_star",
+              "Count:3": 40,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "534:10": {
       "questID:3": 534,
@@ -37441,8 +38239,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "ane",
-          "desc:8": "No Description"
+          "name:8": "Adding Carbon and Hydrogen... many many times.",
+          "desc:8": "Upgrade Methane into Ethane, Propane, Butane, Pentane and finally, Hexane!"
         }
       },
       "tasks:9": {
@@ -37488,7 +38286,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "535:10": {
       "questID:3": 535,
@@ -37518,7 +38329,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Slot Machine",
-          "desc:8": "No Description"
+          "desc:8": "It\u0027s only a piece of Peridot and $49.99 to upgrade your Token to the last tier! Call now - 01/66/420-DR4G0N!"
         }
       },
       "tasks:9": {
@@ -37569,8 +38380,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Peridot",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s even on the Peridotic Table",
+          "desc:8": "Combine some Magnesium Sulfate, Magnesium Oxide and Hexane to obtain your first Peridot!"
         }
       },
       "tasks:9": {
@@ -37592,7 +38403,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 20,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "537:10": {
       "questID:3": 537,
@@ -37620,8 +38444,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Copper Chloride",
-          "desc:8": "No Description"
+          "name:8": "Blue on the outside, Cyan in the inside",
+          "desc:8": "Break down Crystalline Ingots or Crystaltine Ingots to get some Copper Chloride!"
         }
       },
       "tasks:9": {
@@ -37643,7 +38467,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "enderio:item_alloy_endergy_ingot",
+              "Count:3": 20,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "538:10": {
       "questID:3": 538,
@@ -37671,8 +38508,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Mesquite",
-          "desc:8": "No Description"
+          "name:8": "Mmm...(th)at\u0027s quite nice",
+          "desc:8": "Break down Void Metal or any base Impetus item to obtain Mesquite! Remember that Void Metal Seeds are now available to craft."
         }
       },
       "tasks:9": {
@@ -37694,7 +38531,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:rune",
+              "Count:3": 32,
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "539:10": {
       "questID:3": 539,
@@ -37724,7 +38574,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Copper Bismid Sheet",
-          "desc:8": "No Description"
+          "desc:8": "Combine some Copper Carbonate and Bismuth into a Sheetmetal shape!"
         }
       },
       "tasks:9": {
@@ -37746,7 +38596,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 83,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "540:10": {
       "questID:3": 540,
@@ -37775,7 +38638,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Bismuth",
-          "desc:8": "No Description"
+          "desc:8": "Obtain some Bismuth from Demonic Elixirs!"
         }
       },
       "tasks:9": {
@@ -37797,7 +38660,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "bewitchment:demon_heart",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "541:10": {
       "questID:3": 541,
@@ -37825,8 +38701,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Willless",
-          "desc:8": "No Description"
+          "name:8": "Magnesium Compounds",
+          "desc:8": "Break down Basic Wafers, some Flying Ointment or some Bottled Frostfire to obtain Magnesium Sulfate.\n\nAlso break down any of the Will Crystals to get Magnesium Oxide. The best yield comes from Destructive, Vengeful and Steadfast Will Crystals."
         }
       },
       "tasks:9": {
@@ -37854,7 +38730,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftcore:basic_item",
+              "Count:3": 12,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "542:10": {
       "questID:3": 542,
@@ -37882,8 +38771,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Niob",
-          "desc:8": "No Description"
+          "name:8": "What Lead to this?!",
+          "desc:8": "Break down some Lead in the Fission mutliblock into Niobium!"
         }
       },
       "tasks:9": {
@@ -37905,7 +38794,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 32,
+              "Damage:2": 83,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "543:10": {
       "questID:3": 543,
@@ -37936,8 +38838,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Weak Fusion",
-          "desc:8": "No Description"
+          "name:8": "Weak Fusion Plant",
+          "desc:8": "Gather up the materials listed on the right and build a Weak Fusion Plant! This machine is capable of combining certain elements by adding their atomic numbers. It\u0027s not as strong as Alchemistry\u0027s Fusion multiblock though, but we gotta work with what we got.\n\nThis machine requires a lot of power to use though, so definitely use appropriate Conduits. Melodic ones will do!"
         }
       },
       "tasks:9": {
@@ -38010,7 +38912,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:corrupted_core",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "544:10": {
       "questID:3": 544,
@@ -38038,8 +38953,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Easier-to-get materials using Fusion",
-          "desc:8": "No Description"
+          "name:8": "Fission makes these easier!",
+          "desc:8": "Using Fission, now you can simply get Strontium from Osmium, Chromium from Silver and Manganese from Tin!"
         }
       },
       "tasks:9": {
@@ -38073,7 +38988,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "galacticraftcore:basic_item",
+              "Count:3": 12,
+              "Damage:2": 14,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "545:10": {
       "questID:3": 545,
@@ -38211,7 +39139,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Neon",
-          "desc:8": "No Description"
+          "desc:8": "Break down Calcium or Scandium into Neon!\n\nYou can use Condensed Milk or Eggs for Calcium, and you can get Scandium from Niobium, and Niobium from Lead."
         }
       },
       "tasks:9": {
@@ -38239,7 +39167,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:compound",
+              "Count:3": 32,
+              "Damage:2": 44,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "547:10": {
       "questID:3": 547,
@@ -38267,8 +39208,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Heating up and Cooling down",
+          "desc:8": "Fission requires some sturdy coolants! Cadmium Arsenic provides appropriate casing and Neon can cool the machine. Unfortunately these break after each infusion though."
         }
       },
       "tasks:9": {
@@ -38290,7 +39231,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 64,
+              "Damage:2": 48,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "548:10": {
       "questID:3": 548,
@@ -38319,8 +39273,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Handle it with care...!",
+          "desc:8": "Fuse up some Uranium from Niobium and Antimony. As long as the tube is sealed, it shouldn\u0027t case any harm..."
         }
       },
       "tasks:9": {
@@ -38342,7 +39296,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 51,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "549:10": {
       "questID:3": 549,
@@ -38370,8 +39337,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "A Paladin living in a Palace made of...",
+          "desc:8": "Break down Uranium into Palladium!"
         }
       },
       "tasks:9": {
@@ -38393,7 +39360,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 51,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "550:10": {
       "questID:3": 550,
@@ -38421,8 +39401,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "A tube separates us from certain death",
+          "desc:8": "Fuse up some Palladium and Cadmium into Plutonium!"
         }
       },
       "tasks:9": {
@@ -38444,7 +39424,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "immersiveengineering:metal",
+              "Count:3": 8,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "551:10": {
       "questID:3": 551,
@@ -38473,7 +39466,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "New Quest",
-          "desc:8": "No Description"
+          "desc:8": "Fuse up Molbdenium and Palladium into Radium!\n\nUse it quickly so it won\u0027t radiate away...!"
         }
       },
       "tasks:9": {
@@ -38495,7 +39488,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 42,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "552:10": {
       "questID:3": 552,
@@ -38523,8 +39529,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Routinely doing this now!",
+          "desc:8": "Break down some Radium into Ruthenium!\n\n...Phew, you use it quickly enough so it didn\u0027t radiate away!"
         }
       },
       "tasks:9": {
@@ -38546,7 +39552,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 88,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "553:10": {
       "questID:3": 553,
@@ -38575,8 +39594,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Thor\u0027s favorite element",
+          "desc:8": "Fuse up Ruthenium and Palladium into Thorium!"
         }
       },
       "tasks:9": {
@@ -38598,7 +39617,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:fission_coolant",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "554:10": {
       "questID:3": 554,
@@ -38626,8 +39658,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "The Road leads here...",
+          "desc:8": "Break down Thorium into Rhodium!"
         }
       },
       "tasks:9": {
@@ -38649,7 +39681,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 90,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "555:10": {
       "questID:3": 555,
@@ -38678,8 +39723,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "The next Ytter-ation",
+          "desc:8": "Fuse up some Ytterbium from Arsenic and Rubidium!"
         }
       },
       "tasks:9": {
@@ -38701,7 +39746,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 33,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "556:10": {
       "questID:3": 556,
@@ -38729,8 +39787,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Bro, mine it up! ...Or I mean fuse it up!",
+          "desc:8": "Break down some Ytterbium into Bromine!"
         }
       },
       "tasks:9": {
@@ -38752,7 +39810,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:element",
+              "Count:3": 64,
+              "Damage:2": 70,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "557:10": {
       "questID:3": 557,
@@ -38783,7 +39854,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "MELTDOWN",
-          "desc:8": "No Description"
+          "desc:8": "1. Create some Liquid Bromine in the Liquifier.\n\n2. Also create some Molten Uranium from its elemental form in the Liquifier.\n\n3. Cast some Plutonium and Rhodium Ingots.\n\n4. Combine them... But watch out. This element is no longer in a safely contained flask.\n\nPick it up to complete the quest, but §cimmediately put it away into a container§f, otherwise really bad things will happen!"
         }
       },
       "tasks:9": {
@@ -38805,7 +39876,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:corrupted_dragon_token",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "558:10": {
       "questID:3": 558,
@@ -38833,8 +39917,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Never before seen power",
+          "desc:8": "Craft the items listed to the right to setup a Draconic Reactor.\n\nMany people avoid using this awesome multiblock because of its known downside: It can go boom. Well, no longer. In this pack, I\u0027ve decided to §6disable the Draconic Reactor explosion§r, so that more people would be interested in using this machine.\n\nI\u0027ve also §6increased its power output by 500x§r, but §6increased its fuel usage by 10x§r as well.\n\nOn a detailed guide on how to construct the multiblock, check your Draconic Evolution Information Tablet -\u003e Draconic Evolution -\u003e Draconic Reactor section."
         }
       },
       "tasks:9": {
@@ -38874,7 +39958,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 24,
+              "Damage:2": 94,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "559:10": {
       "questID:3": 559,
@@ -38902,8 +39999,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "A power of Chaos, compressed into a ball",
+          "desc:8": "Craft a Draconic Reactor Core! This is the central piece of the Draconic Reactor multiblock, but it\u0027s also used as a crafting ingredient."
         }
       },
       "tasks:9": {
@@ -38925,7 +40022,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 8,
+              "Damage:2": 70,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "560:10": {
       "questID:3": 560,
@@ -38953,8 +40063,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Stabilizing Chaos",
+          "desc:8": "Craft the required items for the Chaos Stabilization ritual listed to the right. You\u0027ll need to recraft the Awakened Draconium Blocks every time you perform the Ritual.\n\nOpen your Draconic Evolution Information Tablet, go to Draconic Additions -\u003e Chaos Stabilizer to learn more. This multiblock allows your to stabilize the highest tier Armor and Omnitool, the Chaotic ones."
         }
       },
       "tasks:9": {
@@ -38988,7 +40098,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 8,
+              "Damage:2": 45,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "561:10": {
       "questID:3": 561,
@@ -39020,7 +40143,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "New Quest",
-          "desc:8": "No Description"
+          "desc:8": "Craft a full set of Chaotic Armor. They\u0027re an even better version of the Draconic Armor, with one catch, you\u0027ll need to stabilize them first.\n\n§c§lWARNING:§r Before you equip any of these armor pieces, you\u0027ll need to stabilize them. Read the Draconic Information Tablet -\u003e Draconic Additions -\u003e Chaos Stabilizer section on how to perform the Stabilization Ritual."
         }
       },
       "tasks:9": {
@@ -39072,7 +40195,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:corrupted_dragon_token",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "562:10": {
       "questID:3": 562,
@@ -39108,8 +40244,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "It\u0027s pure Chaos",
+          "desc:8": "Craft a Chaotic Staff of Power.\n\n§c§lWARNING:§r Before you use this tool, you\u0027ll need to stabilize it. Read the Draconic Information Tablet -\u003e Draconic Additions -\u003e Chaos Stabilizer section on how to perform the Stabilization Ritual."
         }
       },
       "tasks:9": {
@@ -39139,7 +40275,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 16,
+              "Damage:2": 90,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "563:10": {
       "questID:3": 563,
@@ -39167,8 +40316,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "Imagine if time passed faster...",
+          "desc:8": "Craft an Imaginary Time Block! This machine speeds up the tickrate of nearby blocks, making it ideal for a large crop farm. It just requires power and nothing else!"
         }
       },
       "tasks:9": {
@@ -39190,7 +40339,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "draconicevolution:awakened_core",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "564:10": {
       "questID:3": 564,
@@ -39218,8 +40380,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "New Quest",
-          "desc:8": "No Description"
+          "name:8": "The tools of AgriCraft",
+          "desc:8": "Craft a Seed Analyzer and place an Agricultural Journal inside to keep track of analyzed plants. You can use this machine to check your 10/10/10\u0027ing progress for each Seed.\n\nThe Gardening Trowel is an easy way to move plants.\n\nThe Clipper is a very powerful tool that lets you duplicate Seeds. Though you could always just use more Crop Sticks to mutate more."
         }
       },
       "tasks:9": {
@@ -39268,7 +40430,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "agricraft:crop_sticks",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "565:10": {
       "questID:3": 655,
@@ -113871,15 +115046,15 @@
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 320,
-          "y:3": 96,
+          "x:3": 303,
+          "y:3": 72,
           "id:3": 487,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 304,
-          "y:3": 72,
+          "x:3": 288,
+          "y:3": 48,
           "id:3": 488,
           "sizeY:3": 24
         },
@@ -113913,7 +115088,7 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 368,
+          "x:3": 366,
           "y:3": 120,
           "id:3": 493,
           "sizeY:3": 24
@@ -114137,8 +115312,8 @@
         },
         "48:10": {
           "sizeX:3": 24,
-          "x:3": 288,
-          "y:3": 240,
+          "x:3": 303,
+          "y:3": 216,
           "id:3": 525,
           "sizeY:3": 24
         },
@@ -114165,8 +115340,8 @@
         },
         "52:10": {
           "sizeX:3": 24,
-          "x:3": 304,
-          "y:3": 216,
+          "x:3": 288,
+          "y:3": 241,
           "id:3": 529,
           "sizeY:3": 24
         },
@@ -114334,7 +115509,7 @@
         "76:10": {
           "sizeX:3": 24,
           "x:3": 477,
-          "y:3": 267,
+          "y:3": 266,
           "id:3": 554,
           "sizeY:3": 24
         },
