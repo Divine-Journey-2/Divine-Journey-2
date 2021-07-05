@@ -1362,6 +1362,22 @@ EIOAlloySmelter.addRecipe(<contenttweaker:vmb_compound>, [<alchemistry:ingot:23>
 # Fission Coolant Unit
 recipes.addShaped(<contenttweaker:fission_coolant> * 16, [[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>],[<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>],[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>]]);
 
+# Perfectium Essence
+recipes.addShaped(<contenttweaker:perfectium_essence>, [[null,<mysticalagradditions:insanium>,null],[<mysticalagradditions:insanium>,<mysticalagriculture:master_infusion_crystal>.reuse(),<mysticalagradditions:insanium>],[null,<mysticalagradditions:insanium>,null]]);
+recipes.addShapeless(<contenttweaker:perfectium_essence> * 5, [<contenttweaker:perfectium_ball>]);
+recipes.addShapeless(<mysticalagradditions:insanium> * 4, [<contenttweaker:perfectium_essence>]);
+
+# Perfectium Ball
+recipes.addShaped(<contenttweaker:perfectium_ball>, [[null,<contenttweaker:perfectium_essence>,null],[<contenttweaker:perfectium_essence>,<contenttweaker:perfectium_essence>,<contenttweaker:perfectium_essence>],[null,<contenttweaker:perfectium_essence>,null]]);
+recipes.addShapeless(<contenttweaker:perfectium_ball> * 9, [<contenttweaker:perfectium_block>]);
+
+# Perfectium Block
+recipes.addShaped(<contenttweaker:perfectium_block>, [[<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>],[<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>],[<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>,<contenttweaker:perfectium_ball>]]);
+recipes.addShapeless(<contenttweaker:perfectium_block> * 9, [<contenttweaker:compressed_perfectium_block>]);
+
+# Compressed Perfectium Block
+recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>],[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>],[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

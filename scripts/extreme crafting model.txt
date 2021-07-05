@@ -1,4 +1,4 @@
-mods.avaritia.ExtremeCrafting.addShaped(,
+mods.avaritia.ExtremeCrafting.addShaped("", ,
 [[,,,,,,,,],
 [,,,,,,,,],
 [,,,,,,,,],

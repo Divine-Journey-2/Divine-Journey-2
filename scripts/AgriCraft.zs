@@ -26,4 +26,8 @@ recipes.addShapedMirrored(<agricraft:trowel>, [[null,null,<ore:stickWood>],[<alc
 recipes.remove(<agricraft:clipper>);
 recipes.addShapedMirrored(<agricraft:clipper>, [[<alchemistry:ingot:4>,null,null],[null,<alchemistry:ingot:4>,<alchemistry:ingot:51>],[null,<alchemistry:ingot:51>,null]]);
 
+# Computer Controlled Seed Analyzer
+recipes.remove(<agricraft:peripheral>);
+recipes.addShaped(<agricraft:peripheral>, [[<galacticraftplanets:item_basic_asteroids:5>,<agricraft:seed_analyzer>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftplanets:item_basic_asteroids:5>,<agricraft:seed_analyzer>,<galacticraftplanets:item_basic_asteroids:5>],[<appliedenergistics2:controller>,<modularmachinery:blockcontroller>,<appliedenergistics2:controller>]]);
+
 print("ENDING AgriCraft.zs");

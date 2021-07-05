@@ -541,4 +541,12 @@ alchemical_machine_frame.setToolLevel(2);
 alchemical_machine_frame.setBlockSoundType(<soundtype:metal>);
 alchemical_machine_frame.register();
 
+var stabilized_dimensional_machine_frame = VanillaFactory.createBlock("stabilized_dimensional_machine_frame", <blockmaterial:iron>);
+stabilized_dimensional_machine_frame.setBlockHardness(7.5);
+stabilized_dimensional_machine_frame.setBlockResistance(7.5);
+stabilized_dimensional_machine_frame.setToolClass("pickaxe");
+stabilized_dimensional_machine_frame.setToolLevel(2);
+stabilized_dimensional_machine_frame.setBlockSoundType(<soundtype:metal>);
+stabilized_dimensional_machine_frame.register();
+
 print("ENDING ContentTweakerBlocks.zs");

@@ -190,7 +190,7 @@ recipes.addShaped(<rftools:liquid_monitor>, [[<thermalfoundation:material:352>,<
 
 # Environmental Controller
 recipes.remove(<rftools:environmental_controller>);
-recipes.addShaped(<rftools:environmental_controller>, [[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>],[<minecraft:beacon>,<rftools:machine_frame>,<minecraft:beacon>],[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
+recipes.addShaped(<rftools:environmental_controller>, [[<botania:manaresource:14>,<rftools:booster>,<botania:manaresource:14>],[<contenttweaker:environmental_core>,<rftools:machine_frame>,<contenttweaker:environmental_core>],[<extendedcrafting:storage>,<rftools:booster>,<extendedcrafting:storage>]]);
 
 # Spawner
 recipes.remove(<rftools:spawner>);
@@ -251,5 +251,33 @@ recipes.addShaped(<rftools:storage_terminal>, [[<enderio:item_alloy_ingot:6>,<th
 # Level Emitter
 recipes.remove(<rftools:level_emitter>);
 recipes.addShaped(<rftools:level_emitter>, [[<enderio:item_alloy_ingot:6>,<appliedenergistics2:part:280>,<enderio:item_alloy_ingot:6>],[<ironchest:iron_chest>,<rftools:machine_base>,<ironchest:iron_chest>],[<enderio:item_alloy_ingot:6>,<appliedenergistics2:part:280>,<enderio:item_alloy_ingot:6>]]);
+
+# Matter Transmitter
+recipes.remove(<rftools:matter_transmitter>);
+recipes.addShaped(<rftools:matter_transmitter>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>],[<enderutilities:energy_bridge:2>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:2>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Matter Receiver
+recipes.remove(<rftools:matter_receiver>);
+recipes.addShaped(<rftools:matter_receiver>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>],[<enderutilities:energy_bridge:1>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:1>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Dialing Device
+recipes.remove(<rftools:dialing_device>);
+recipes.addShaped(<rftools:dialing_device>, [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>],[<enderio:block_dialing_device>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderio:block_dialing_device>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Simple Dialer
+recipes.remove(<rftools:simple_dialer>);
+recipes.addShaped(<rftools:simple_dialer>, [[<projectred-core:resource_item:103>,<rftools:dialing_device>,<projectred-core:resource_item:103>]]);
+
+# Destination Analyzer
+recipes.remove(<rftools:destination_analyzer>);
+recipes.addShaped(<rftools:destination_analyzer>, [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>],[<agricraft:peripheral>,<contenttweaker:stabilized_dimensional_machine_frame>,<agricraft:peripheral>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Booster
+recipes.remove(<rftools:booster>);
+recipes.addShaped(<rftools:booster>, [[<enderio:item_alloy_ingot:6>,<contenttweaker:magical_core>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<rftools:machine_frame>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<minecraft:beacon>,<enderio:item_alloy_ingot:6>]]);
+
+# Matter Booster
+recipes.remove(<rftools:matter_booster>);
+recipes.addShaped(<rftools:matter_booster>, [[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftcore:engine:1>,<rftools:destination_analyzer>,<galacticraftcore:engine:1>],[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 print("ENDING RFTools.zs");

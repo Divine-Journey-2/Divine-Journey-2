@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_contenttweaker_alchemical_machine_frame",
-    "recipeTime": 1600,
+    "recipeTime": 800,
     "requirements": [
         {
             "type": "item",
@@ -42,7 +42,7 @@
         {
             "type": "meklaser",
             "io-type": "input",
-            "energy": 51200000
+            "energy": 25600000
         },
         {
             "type": "item",
