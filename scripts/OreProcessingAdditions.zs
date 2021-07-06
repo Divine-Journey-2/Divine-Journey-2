@@ -41,7 +41,7 @@ function addMaterialToDustCrushingWOPetrotheum(ingot as IItemStack, dust as IIte
 function addOreDoubling(ore as IItemStack, dust as IItemStack, ingot as IItemStack) {
 	recipes.addShapeless(dust * 2, [ore, <ore:dustPetrotheum>]);
 	recipes.addShapeless(ingot * 2, [ore, <ore:dustPetrotheum>, <ore:dustPyrotheum>]);
-	recipes.addShapeless(ingot * 2, [ore, <ore:dustPetrotheum>, <ore:dustPyrotheum>]);
+	recipes.addShapeless(ingot, [ore, <ore:dustPyrotheum>]);
 	IECrusher.addRecipe(dust * 2, ore, 4000);
 	AACrusher.addRecipe(dust * 2, ore);
 	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
@@ -633,5 +633,19 @@ EUCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets
 mods.enderio.SagMill.addRecipe([<galacticraftplanets:basic_item_venus:4> * 2], [100], <galacticraftplanets:venus:13>);
 LightningCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
 mods.mekanism.enrichment.addRecipe(<galacticraftplanets:venus:13>, <galacticraftplanets:basic_item_venus:4> * 2);
+
+# Dimensional Shard Ore -> Dimensional Shards
+recipes.addShapeless(<rftools:dimensional_shard> * 4, [<ore:oreDimensionalShard>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>, 4000);
+AACrusher.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>);
+mods.astralsorcery.Grindstone.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard>);
+Grinder.addRecipe(<rftools:dimensional_shard>, <ore:oreDimensionalShard>, 4, <rftools:dimensional_shard>, 0.9);
+/*for ds in <ore:oreDimensionalShard>.items {
+	mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>, 4000, <rftools:dimensional_shard> * 4, 50);
+}*/
+mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>.firstItem, 4000, <rftools:dimensional_shard> * 4, 50);
+EUCrusher.add(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>.firstItem);
+LightningCrusher.add(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>);
+mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard> * 4);
 
 print("ENDING OreProcessingAdditions.zs");

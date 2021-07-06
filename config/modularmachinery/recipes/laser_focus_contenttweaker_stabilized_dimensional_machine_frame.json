@@ -29,7 +29,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "draconicadditions:chaos_stabilizer_core"
+            "item": "draconicevolution:reactor_component@0"
         },
         {
             "type": "energy",

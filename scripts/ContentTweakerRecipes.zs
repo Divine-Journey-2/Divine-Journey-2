@@ -1305,10 +1305,12 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
-<contenttweaker:crystal_core>.addTooltip(format.white("Can only be crafted if the input"));
-<contenttweaker:crystal_core>.addTooltip(format.white("Rock Crystal has:"));
+recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<rftools:infused_diamond>,<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]]);
+<contenttweaker:crystal_core>.addTooltip(format.white("If using the Rock Crystal recipe,"));
+<contenttweaker:crystal_core>.addTooltip(format.white("the input Rock Crystal has to have:"));
 <contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
-<contenttweaker:crystal_core>.addTooltip(format.white("Can only be ") + format.red("manually crafted") + format.white("."));
+<contenttweaker:crystal_core>.addTooltip(format.white("Before unlocking the Infused Diamond recipe,"));
+<contenttweaker:crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
 
 # Photovoltaic Cell VII
 recipes.addShaped(<contenttweaker:photovoltaic_cell_vii> * 3, [[<ore:blockGlassMagenta>,<ore:blockGlassMagenta>,<ore:blockGlassMagenta>],[<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>],[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>]]);

@@ -255,15 +255,15 @@ recipes.addShaped(<rftools:level_emitter>, [[<enderio:item_alloy_ingot:6>,<appli
 
 # Matter Transmitter
 recipes.remove(<rftools:matter_transmitter>);
-recipes.addShaped(<rftools:matter_transmitter>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>],[<enderutilities:energy_bridge:2>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:2>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<rftools:matter_transmitter>, [[<alchemistry:ingot:90>,<draconicevolution:energy_crystal:8>,<alchemistry:ingot:90>],[<enderutilities:energy_bridge:2>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:2>],[<alchemistry:ingot:90>,<draconicevolution:energy_crystal:8>,<alchemistry:ingot:90>]]);
 
 # Matter Receiver
 recipes.remove(<rftools:matter_receiver>);
-recipes.addShaped(<rftools:matter_receiver>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>],[<enderutilities:energy_bridge:1>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:1>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:energy_crystal:8>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<rftools:matter_receiver>, [[<alchemistry:ingot:90>,<draconicevolution:energy_crystal:8>,<alchemistry:ingot:90>],[<enderutilities:energy_bridge:1>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderutilities:energy_bridge:1>],[<alchemistry:ingot:90>,<draconicevolution:energy_crystal:8>,<alchemistry:ingot:90>]]);
 
 # Dialing Device
 recipes.remove(<rftools:dialing_device>);
-recipes.addShaped(<rftools:dialing_device>, [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>],[<enderio:block_dialing_device>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderio:block_dialing_device>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<rftools:dialing_device>, [[<alchemistry:ingot:90>,<galacticraftcore:basic_item:19>,<alchemistry:ingot:90>],[<enderio:block_dialing_device>,<contenttweaker:stabilized_dimensional_machine_frame>,<enderio:block_dialing_device>],[<alchemistry:ingot:90>,<galacticraftcore:basic_item:19>,<alchemistry:ingot:90>]]);
 
 # Simple Dialer
 recipes.remove(<rftools:simple_dialer>);
@@ -271,7 +271,7 @@ recipes.addShaped(<rftools:simple_dialer>, [[<projectred-core:resource_item:103>
 
 # Destination Analyzer
 recipes.remove(<rftools:destination_analyzer>);
-recipes.addShaped(<rftools:destination_analyzer>, [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>],[<agricraft:peripheral>,<contenttweaker:stabilized_dimensional_machine_frame>,<agricraft:peripheral>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftcore:basic_item:19>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<rftools:destination_analyzer>, [[<alchemistry:ingot:90>,<galacticraftcore:basic_item:19>,<alchemistry:ingot:90>],[<agricraft:peripheral>,<contenttweaker:stabilized_dimensional_machine_frame>,<agricraft:peripheral>],[<alchemistry:ingot:90>,<galacticraftcore:basic_item:19>,<alchemistry:ingot:90>]]);
 
 # Booster
 recipes.remove(<rftools:booster>);
@@ -279,19 +279,59 @@ recipes.addShaped(<rftools:booster>, [[<enderio:item_alloy_ingot:6>,<contenttwea
 
 # Matter Booster
 recipes.remove(<rftools:matter_booster>);
-recipes.addShaped(<rftools:matter_booster>, [[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftcore:engine:1>,<rftools:destination_analyzer>,<galacticraftcore:engine:1>],[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>]]);
+recipes.addShaped(<rftools:matter_booster>, [[<alchemistry:ingot:90>,<rftools:booster>,<alchemistry:ingot:90>],[<galacticraftcore:engine:1>,<rftools:destination_analyzer>,<galacticraftcore:engine:1>],[<alchemistry:ingot:90>,<rftools:booster>,<alchemistry:ingot:90>]]);
 
 # Infused Diamond
 recipes.remove(<rftools:infused_diamond>);
 mods.thaumcraft.Infusion.registerRecipe("infused_diamond", "", <rftools:infused_diamond>, 9, [<aspect:vitreus> * 100,<aspect:auram> * 100,<aspect:desiderium> * 50,<aspect:sol> * 20,<aspect:praecantatio> * 20], <botania:manaresource:2>, [<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>,<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>]);
 
 # Infused Ender Pearl
-recipes.remove(<rftools:infused_diamond>);
+recipes.remove(<rftools:infused_enderpearl>);
 mods.thaumcraft.Infusion.registerRecipe("infused_enderpearl", "", <rftools:infused_enderpearl>, 9, [<aspect:vitreus> * 100,<aspect:auram> * 100,<aspect:alienis> * 50,<aspect:sol> * 20,<aspect:praecantatio> * 20], <botania:manaresource:1>, [<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>,<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>]);
 <rftools:infused_enderpearl>.maxStackSize = "64";
 
 # Advanced Charged Porter
 recipes.remove(<rftools:advanced_charged_porter>);
 recipes.addShaped(<rftools:advanced_charged_porter>, [[<alchemistry:ingot:44>,<rftools:infused_diamond>,<alchemistry:ingot:44>],[<rftools:infused_diamond>,<rftools:charged_porter>,<rftools:infused_diamond>],[<alchemistry:ingot:44>,<rftools:infused_diamond>,<alchemistry:ingot:44>]]);
+
+# Shield Projector Tier 1
+recipes.remove(<rftools:shield_block1>);
+recipes.addShaped(<rftools:shield_block1>, [[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>],[<rftools:infused_diamond>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>]]);
+
+# Shield Projector Tier 2
+recipes.remove(<rftools:shield_block2>);
+recipes.addShaped(<rftools:shield_block2>, [[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>],[<rftools:infused_diamond>,<rftools:shield_block1>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>]]);
+
+# Shield Projector Tier 3
+recipes.remove(<rftools:shield_block3>);
+recipes.addShaped(<rftools:shield_block3>, [[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>],[<rftools:infused_diamond>,<rftools:shield_block2>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>]]);
+
+# Shield Projector Tier 4
+recipes.remove(<rftools:shield_block4>);
+recipes.addShaped(<rftools:shield_block4>, [[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>],[<rftools:infused_diamond>,<rftools:shield_block3>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<rftools:infused_diamond>,<alchemistry:ingot:90>]]);
+
+# Machine Infuser
+recipes.remove(<rftools:machine_infuser>);
+recipes.addShapedMirrored(<rftools:machine_infuser>, [[<alchemistry:ingot:90>,<rftools:infused_diamond>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_diamond>],[<alchemistry:ingot:90>,<rftools:infused_diamond>,<rftools:infused_diamond>]]);
+
+# Scanner
+recipes.remove(<rftools:scanner>);
+recipes.addShaped(<rftools:scanner>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<rftools:shape_card>,<rftools:machine_frame>,<rftools:shape_card>],[<thermalfoundation:material:352>,<extrautils2:scanner>,<thermalfoundation:material:352>]]);
+
+# Locator
+recipes.remove(<rftools:locator>);
+recipes.addShaped(<rftools:locator>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<thermalexpansion:device:5>,<rftools:machine_frame>,<thermalexpansion:device:5>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
+
+# Projector
+recipes.remove(<rftools:projector>);
+recipes.addShaped(<rftools:projector>, [[<thermalfoundation:material:352>,<openblocks:projector>,<thermalfoundation:material:352>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
+
+# Remote Scanner
+recipes.remove(<rftools:remote_scanner>);
+recipes.addShaped(<rftools:remote_scanner>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<extrautils2:powerbattery>,<rftools:scanner>,<extrautils2:powerbattery>],[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>]]);
+
+# Block Protector
+recipes.remove(<rftools:block_protector>);
+recipes.addShaped(<rftools:block_protector>, [[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>],[<rftools:infused_enderpearl>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>]]);
 
 print("ENDING RFTools.zs");
