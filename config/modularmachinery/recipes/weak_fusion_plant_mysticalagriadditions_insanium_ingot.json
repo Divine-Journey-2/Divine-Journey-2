@@ -1,0 +1,33 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_mysticalagriadditions_insanium_ingot",
+    "recipeTime": 1200,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:crafting@37"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:insanium@0",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_coolant"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "mysticalagradditions:insanium@2"
+        }
+    ]
+}
