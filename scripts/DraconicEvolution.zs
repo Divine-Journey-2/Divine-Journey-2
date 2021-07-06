@@ -402,4 +402,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:reactor_part>,
 [<immersiveengineering:metal:5>,null,null,null,<immersiveengineering:metal:5>],
 [<immersiveengineering:metal:5>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<immersiveengineering:metal:5>]]);
 
+# Bound Dislocator (Point to Point)
+recipes.remove(<draconicevolution:dislocator_bound:1>);
+recipes.addShaped(<draconicevolution:dislocator_bound:1>, [[<alchemistry:ingot:44>,<quantumflux:zeropointextractor>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<rftools:advanced_charged_porter>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<draconicevolution:dislocator>,<alchemistry:ingot:44>]]);
+
+# Bound Dislocator (Player)
+recipes.remove(<draconicevolution:dislocator_bound:2>);
+recipes.addShaped(<draconicevolution:dislocator_bound:2>, [[<alchemistry:ingot:44>,<actuallyadditions:block_player_interface>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<rftools:advanced_charged_porter>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<draconicevolution:dislocator>,<alchemistry:ingot:44>]]);
+
 print("ENDING DraconicEvolution.zs");

@@ -12,13 +12,13 @@
             "type": "item",
             "io-type": "input",
             "item": "alchemistry:element@53",
-            "amount": 4
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "alchemistry:element@80",
-            "amount": 4
+            "amount": 16
         },
         {
             "type": "item",
@@ -30,13 +30,13 @@
             "type": "fluid",
             "io-type": "output",
             "fluid": "mercury",
-            "amount": 36
+            "amount": 144
         },
         {
             "type": "fluid",
             "io-type": "output",
             "fluid": "impure_mercury_iodine_mixture",
-            "amount": 36
+            "amount": 144
         },
         {
             "type": "item",

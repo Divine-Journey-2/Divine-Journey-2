@@ -76,7 +76,7 @@ addBewitchmentWitchesAltarRecipe(<bewitchment:scorned_brick_witches_altar>,<bewi
 
 # Aconitum Seeds
 vanilla.seeds.removeSeed(<bewitchment:aconitum_seeds>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:aconitum_seeds", "", <bewitchment:aconitum_seeds>, 5, [<aspect:herba> * 200,<aspect:exanimis> * 160,<aspect:bestia> * 40,<aspect:motus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:lithium_seeds>, [<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<thaumcraft:mind:1>,<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<contenttweaker:mysterious_leaking_soul>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:aconitum_seeds", "", <bewitchment:aconitum_seeds>, 5, [<aspect:herba> * 200,<aspect:exanimis> * 160,<aspect:bestia> * 40,<aspect:motus> * 20,<aspect:diabolus> * 10], <mysticalagriculture:nether_quartz_seeds>, [<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<thaumcraft:mind:1>,<bewitchment:ebb_of_death>,<thaumcraft:nitor_silver>,<contenttweaker:mysterious_leaking_soul>]);
 
 # Belladonna Seeds
 vanilla.seeds.removeSeed(<bewitchment:belladonna_seeds>);

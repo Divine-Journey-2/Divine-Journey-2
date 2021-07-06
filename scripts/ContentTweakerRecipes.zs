@@ -381,6 +381,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_crystal_bun
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:ingot_of_elevation>, <contenttweaker:empowered_crystal_bundle>, 100000);
 recipes.addShaped(<contenttweaker:block_of_elevation>, [[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>]]);
 recipes.addShapeless(<contenttweaker:ingot_of_elevation> * 9, [<contenttweaker:block_of_elevation>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 6, 100000, 5000, <actuallyadditions:item_solidified_experience>, [empowered_glod_crystal, empowered_glod_crystal, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
 
 function addVetheaPlankRecipes(log as IItemStack, plank as IItemStack) {
 	recipes.addShaped(plank * 4, [[log]]);
@@ -1242,7 +1243,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cheesy_silicon_
 furnace.addRecipe(<contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon_compound>);
 
 # Cheesy Wafer
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer> * 5, <quantumflux:craftingpiece:4>, <contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon>, <contenttweaker:rainbow_tablet>, <botania:rune:12>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer> * 16, <quantumflux:craftingpiece:4>, <contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon>, <contenttweaker:rainbow_tablet>, <botania:rune:12>);
 
 # Sapphire Accelerator
 recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>],[<galacticraftcore:item_basic_moon:2>,<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:2>],[<galacticraftcore:item_basic_moon:2>,<simplyjetpacks:metaitemmods:11>,<galacticraftcore:item_basic_moon:2>]]);
@@ -1280,11 +1281,15 @@ EIOAlloySmelter.addRecipe(<contenttweaker:corrupted_light_ingot>, [<plustic:miri
 # Draconic Machine Frame
 recipes.addShaped(<contenttweaker:draconic_machine_frame>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<contenttweaker:galactic_machine_frame>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconium_ingot>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Slice of Dragon Egg
+mods.thermalexpansion.Sawmill.addRecipe(<contenttweaker:slice_of_dragon_egg> * 8, <minecraft:dragon_egg>, 8000);
+mods.mekanism.sawmill.addRecipe(<minecraft:dragon_egg>, <contenttweaker:slice_of_dragon_egg> * 8);
+
 # Dragon Token
-recipes.addShaped(<contenttweaker:dragon_token>, [[<contenttweaker:compressed_obsidian3>,<draconicevolution:wyvern_core>,<contenttweaker:compressed_obsidian3>],[<draconicevolution:wyvern_core>,<minecraft:dragon_egg>,<draconicevolution:wyvern_core>],[<contenttweaker:compressed_obsidian3>,<draconicevolution:wyvern_core>,<contenttweaker:compressed_obsidian3>]]);
+recipes.addShaped(<contenttweaker:dragon_token>, [[<contenttweaker:compressed_obsidian3>,<contenttweaker:slice_of_dragon_egg>,<contenttweaker:compressed_obsidian3>],[<contenttweaker:slice_of_dragon_egg>,<draconicevolution:wyvern_core>,<contenttweaker:slice_of_dragon_egg>],[<contenttweaker:compressed_obsidian3>,<contenttweaker:slice_of_dragon_egg>,<contenttweaker:compressed_obsidian3>]]);
 
 # Awakened Dragon Token
-recipes.addShaped(<contenttweaker:awakened_dragon_token>, [[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>],[<mysticalagriculture:crafting:37>,<draconicevolution:draconic_block>,<mysticalagriculture:crafting:37>],[<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>]]);
+recipes.addShaped(<contenttweaker:awakened_dragon_token>, [[<draconicevolution:draconic_ingot>,<mysticalagriculture:crafting:37>,<draconicevolution:draconic_ingot>],[<mysticalagriculture:crafting:37>,<draconicevolution:awakened_core>,<mysticalagriculture:crafting:37>],[<draconicevolution:draconic_ingot>,<mysticalagriculture:crafting:37>,<draconicevolution:draconic_ingot>]]);
 
 # Crystal Core
 recipes.addShaped("crystal_core", <contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<astralsorcery:itemrockcrystalsimple>.marked("rock_crystal"),<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]],
@@ -1314,40 +1319,40 @@ recipes.addShaped(<contenttweaker:photovoltaic_cell_viii> * 3, [[<ore:blockGlass
 # Corrupted Core
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:corrupted_core>,
 [[<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>],
-[<alchemistry:compound:21>,<draconicevolution:chaotic_core>,<alchemistry:compound:8>,<draconicevolution:chaotic_core>,<alchemistry:compound:21>],
-[<alchemistry:ingot:56>,<alchemistry:compound:8>,<draconicadditions:chaotic_energy_core>,<alchemistry:compound:8>,<alchemistry:ingot:56>],
-[<alchemistry:compound:21>,<draconicevolution:chaotic_core>,<alchemistry:compound:8>,<draconicevolution:chaotic_core>,<alchemistry:compound:21>],
+[<alchemistry:compound:21>,<alchemistry:compound:8>,<alchemistry:compound:21>,<alchemistry:compound:8>,<alchemistry:compound:21>],
+[<alchemistry:ingot:56>,<alchemistry:compound:21>,<draconicevolution:chaotic_core>,<alchemistry:compound:21>,<alchemistry:ingot:56>],
+[<alchemistry:compound:21>,<alchemistry:compound:8>,<alchemistry:compound:21>,<alchemistry:compound:8>,<alchemistry:compound:21>],
 [<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>,<alchemistry:compound:21>,<alchemistry:ingot:56>]]);
 
 # Cadmium Arsenic Compound
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, null, 200, 1024, [<alchemistry:ingot:33> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, [<alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8], 32000);
-IEAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8, 320);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 8, <alchemistry:ingot:33> * 8, 32000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, null, 200, 1024, [<alchemistry:ingot:33> * 4], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, [<alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4, 32000);
 
 # Corrupted Dragon Token
-recipes.addShaped(<contenttweaker:corrupted_dragon_token>, [[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>],[<projectred-core:resource_item:202>,<contenttweaker:cadmium_arsenic_compound>,<projectred-core:resource_item:202>],[<contenttweaker:corrupted_core>,<projectred-core:resource_item:202>,<contenttweaker:corrupted_core>]]);
+recipes.addShaped(<contenttweaker:corrupted_dragon_token>, [[<projectred-core:resource_item:202>,<contenttweaker:cadmium_arsenic_compound>,<projectred-core:resource_item:202>],[<contenttweaker:cadmium_arsenic_compound>,<contenttweaker:corrupted_core>,<contenttweaker:cadmium_arsenic_compound>],[<projectred-core:resource_item:202>,<contenttweaker:cadmium_arsenic_compound>,<projectred-core:resource_item:202>]]);
 
 # Mercury (other recipes in config/modualrmachinery/recipes/liquicrafter_ ... .json)
 mods.alchemistry.Liquifier.addRecipe(<liquid:mercury>, <alchemistry:element:80> * 16);
 
 # Chromium Barium Compound
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, null, 200, 1024, [<alchemistry:ingot:56> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, [<alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8], 32000);
-IEAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8, 320);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 8, <alchemistry:ingot:56> * 8, 32000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, null, 200, 1024, [<alchemistry:ingot:56> * 4], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, [<alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4, 32000);
 
 # Antimony Strontium Compound
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, null, 200, 1024, [<alchemistry:ingot:51> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, [<alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8], 32000);
-IEAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8, 320);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 8, <alchemistry:ingot:51> * 8, 32000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, null, 200, 1024, [<alchemistry:ingot:51> * 4], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, [<alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4], 32000);
+IEAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4, 320);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4, 32000);
 
 # Reinforced Glass Casing
 recipes.addShaped(<contenttweaker:reinforced_glass_casing>, [[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>],[<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>,<galacticraftcore:space_glass_strong>],[<modularmachinery:blockcasing:4>,<galacticraftcore:space_glass_strong>,<modularmachinery:blockcasing:4>]]);
 
 # Copper Bismid Carbonate Sheet
-recipes.addShaped(<contenttweaker:copper_bismid_carbonate_sheet>, [[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>],[<alchemistry:compound:1002>,<alchemistry:ingot:83>,<alchemistry:compound:1002>],[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>]]);
+recipes.addShaped(<contenttweaker:copper_bismid_carbonate_sheet> * 2, [[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>],[<alchemistry:compound:1002>,<alchemistry:ingot:83>,<alchemistry:compound:1002>],[<alchemistry:ingot:83>,<alchemistry:compound:1002>,<alchemistry:ingot:83>]]);
 
 # Ruby Rubidium
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, null, 200, 1024, [<alchemistry:ingot:37> * 8], "Alloying");

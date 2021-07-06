@@ -603,8 +603,8 @@ mods.enderio.SagMill.addRecipe([<lightningcraft:dust:2>], [100], <lightningcraft
 mods.mekanism.crusher.addRecipe(<lightningcraft:ingot:2>, <lightningcraft:dust:2>);
 
 # Stardust from Starmetal
-Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2> * 2, <astralsorcery:itemcraftingcomponent:1>, 4);
-mods.mekanism.crusher.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2> * 2);
+Grinder.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>, 4);
+mods.mekanism.crusher.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>);
 
 # Starmetal from Stardust
 furnace.addRecipe(<astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:2>);

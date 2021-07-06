@@ -12,7 +12,7 @@
             "type": "item",
             "io-type": "input",
             "item": "abyssalcraft:crystalcluster@11",
-            "amount": 128
+            "amount": 16
         },
         {
             "type": "energy",

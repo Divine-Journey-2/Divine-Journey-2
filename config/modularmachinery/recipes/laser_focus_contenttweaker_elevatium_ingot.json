@@ -103,7 +103,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:ingot_of_elevation",
-            "amount": 3
+            "amount": 12
         }
     ]
 }

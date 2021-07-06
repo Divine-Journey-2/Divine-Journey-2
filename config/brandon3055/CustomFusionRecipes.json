@@ -467,8 +467,6 @@
         "ingredients": [
             "draconicevolution:draconic_energy_core",
             "draconicevolution:draconic_energy_core",
-            "draconicevolution:draconic_energy_core",
-            "draconicevolution:draconic_energy_core",
             "draconicevolution:chaos_shard,1,1",
             "draconicevolution:chaos_shard,1,1",
             "draconicevolution:chaos_shard,1,1",
@@ -752,6 +750,28 @@
             "mysticalagriculture:mystical_fertilizer",
             "alchemistry:ingot,1,24",
             "alchemistry:ingot,1,24"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:dislocator_advanced",
+        "catalyst": "draconicevolution:dislocator"
+    },
+    {
+        "mode": "ADD",
+        "result": "draconicevolution:dislocator_advanced",
+        "catalyst": "rftools:infused_diamond",
+        "energy": 3000000000,
+        "tier": 3,
+        "ingredients": [
+            "alchemistry:ingot,1,44",
+            "alchemistry:ingot,1,44",
+            "draconicevolution:dislocator_bound,1,1",
+            "draconicevolution:dislocator_bound,1,2",
+            "draconicadditions:chaos_stabilizer_core",
+            "draconicadditions:chaos_stabilizer_core",
+            "alchemistry:ingot,1,44",
+            "alchemistry:ingot,1,44"
         ]
     }
 ]

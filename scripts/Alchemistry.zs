@@ -43,7 +43,7 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:clay>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:clay>, true, 1, [[50, <alchemistry:compound:7> * 4],[50, <alchemistry:compound:1> * 4]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:clay_ball>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:clay_ball>, true, 1, [[50, <alchemistry:compound:7>],[50, <alchemistry:compound:1>]]);
-mods.alchemistry.Dissolver.addRecipe(<draconicevolution:draconic_core>, true, 1, [[40, <alchemistry:compound:8>],[20, <alchemistry:element:6> * 16],[20, <alchemistry:element:26> * 16],[20, <alchemistry:element:16> * 12]]);
+mods.alchemistry.Dissolver.addRecipe(<draconicevolution:draconic_core>, true, 1, [[40, <alchemistry:compound:8> * 8],[20, <alchemistry:element:6> * 64],[20, <alchemistry:element:26> * 64],[20, <alchemistry:element:16> * 48]]);
 
 # Magnesium Oxide <- Will Crystals, Potassium Carbonate <- Corrosive Will Crystal
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:obsidian>);
@@ -76,13 +76,13 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:melon_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:melon_block>, true, 1, [[45, <alchemistry:compound>],[45, <alchemistry:compound:7>],[10, <alchemistry:compound:11>]]);
 mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_hellfire>, true, 1, [[50, <alchemistry:compound:20>, <alchemistry:element:6> * 16],[50, <alchemistry:compound:5>, <alchemistry:element:6> * 16]]);
 
-# Psilocybin <- Refined Coralium Ingot
+# Psyllium <- Refined Coralium Ingot
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:brown_mushroom>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:brown_mushroom>, true, 1, [[100, <alchemistry:compound>]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:red_mushroom>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:red_mushroom>, true, 1, [[100, <alchemistry:compound>]]);
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:cingot>, true, 1, [[50, <alchemistry:compound:21>, <alchemistry:element:26> * 2],[50, <alchemistry:compound:10>, <alchemistry:element:26> * 4]]);
-mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:ingotblock:1>, true, 1, [[50, <alchemistry:compound:21> * 9, <alchemistry:element:26> * 18],[50, <alchemistry:compound:10> * 9, <alchemistry:element:26> * 36]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:cingot>, true, 1, [[50, <alchemistry:compound:21> * 4, <alchemistry:element:26> * 8],[50, <alchemistry:compound:10> * 4, <alchemistry:element:26> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<abyssalcraft:ingotblock:1>, true, 1, [[50, <alchemistry:compound:21> * 36, <alchemistry:element:26> * 72],[50, <alchemistry:compound:10> * 36, <alchemistry:element:26> * 144]]);
 
 # Zinc Oxide <- Alchemical Brass Ingot & Block
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:netherrack>);
@@ -91,21 +91,21 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:netherbrick>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:netherbrick>, true, 1, [[50, <alchemistry:compound:1>],[10, <alchemistry:element:6>],[10, <alchemistry:element:15>],[10, <alchemistry:element:14>],[10, <alchemistry:element:16>],[10, <alchemistry:element:79>]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:nether_brick>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_brick>, true, 1, [[50, <alchemistry:compound:1>],[10, <alchemistry:element:6>],[10, <alchemistry:element:15>],[10, <alchemistry:element:14>],[10, <alchemistry:element:16>],[10, <alchemistry:element:79>]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumcraft:ingot:2>, true, 1, [[40, <alchemistry:compound:22>, <alchemistry:element:26> * 6, <alchemistry:element:6> * 6],[30, <alchemistry:compound:10>, <alchemistry:element:26> * 6, <alchemistry:element:6> * 6],[30, <alchemistry:element:79>* 6, <alchemistry:element:26> * 6, <alchemistry:element:6> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumcraft:metal_brass>, true, 1, [[40, <alchemistry:compound:22> * 9, <alchemistry:element:26> * 54, <alchemistry:element:6> * 54],[30, <alchemistry:compound:10> * 9, <alchemistry:element:26> * 54, <alchemistry:element:6> * 54],[30, <alchemistry:element:79>* 54, <alchemistry:element:26> * 54, <alchemistry:element:6> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumcraft:ingot:2>, true, 1, [[40, <alchemistry:compound:22> * 4, <alchemistry:element:26> * 24, <alchemistry:element:6> * 24],[30, <alchemistry:compound:10> * 4, <alchemistry:element:26> * 24, <alchemistry:element:6> * 24],[30, <alchemistry:element:79>* 24, <alchemistry:element:26> * 24, <alchemistry:element:6> * 24]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumcraft:metal_brass>, true, 1, [[40, <alchemistry:compound:22> * 36, <alchemistry:element:26> * 216, <alchemistry:element:6> * 216],[30, <alchemistry:compound:10> * 36, <alchemistry:element:26> * 216, <alchemistry:element:6> * 216],[30, <alchemistry:element:79>* 216, <alchemistry:element:26> * 216, <alchemistry:element:6> * 216]]);
 
 # Lead Iodide <- Evil Infused Iron Ingot & Block
 mods.alchemistry.Dissolver.removeRecipe(<ore:dyeYellow>);
-mods.alchemistry.Dissolver.addRecipe(<extrautils2:ingredients:17>, true, 1, [[50, <alchemistry:compound:25> * 4, <alchemistry:element:26> * 6],[50, <alchemistry:compound:10> * 4, <alchemistry:element:26> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<extrautils2:simpledecorative:2>, true, 1, [[50, <alchemistry:compound:25> * 36, <alchemistry:element:26> * 54],[50, <alchemistry:compound:10> * 36, <alchemistry:element:26> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<extrautils2:ingredients:17>, true, 1, [[50, <alchemistry:compound:25> * 32, <alchemistry:element:26> * 48],[50, <alchemistry:compound:10> * 32, <alchemistry:element:26> * 48]]);
+mods.alchemistry.Dissolver.addRecipe(<extrautils2:simpledecorative:2>, true, 1, [[50, <alchemistry:compound:25> * 288, <alchemistry:element:26> * 432],[50, <alchemistry:compound:10> * 288, <alchemistry:element:26> * 432]]);
 
 # Urea <- Luminessence
-mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:7>, true, 1, [[50, <alchemistry:compound:28>, <alchemistry:element:1> * 16],[50, <alchemistry:compound:54>, <alchemistry:element:1> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:7>, true, 1, [[50, <alchemistry:compound:28>, <alchemistry:element:1> * 32],[50, <alchemistry:compound:54> * 8, <alchemistry:element:1> * 32]]);
 
 # Potassium Cyanide <- Elevaium Ingot & Block
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:fish:3>);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:ingot_of_elevation>, true, 1, [[50, <alchemistry:compound:54>, <alchemistry:element:79> * 16],[50, <alchemistry:compound:54>, <alchemistry:element:6> * 16]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:block_of_elevation>, true, 1, [[50, <alchemistry:compound:54> * 9, <alchemistry:element:79> * 64, <alchemistry:element:79> * 64, <alchemistry:element:79> * 16],[50, <alchemistry:compound:54> * 9, <alchemistry:element:6> * 64, <alchemistry:element:6> * 64, <alchemistry:element:6> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:ingot_of_elevation>, true, 1, [[50, <alchemistry:compound:54> * 8, <alchemistry:element:79> * 16],[50, <alchemistry:compound:54> * 8, <alchemistry:element:6> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:block_of_elevation>, true, 1, [[50, <alchemistry:compound:54> * 72, <alchemistry:element:79> * 144],[50, <alchemistry:compound:54> * 72, <alchemistry:element:6> * 144]]);
 
 # Calcium Carbonate <- Meteoric Iron Ingot & Block
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:egg>);
@@ -127,14 +127,14 @@ mods.alchemistry.Dissolver.addRecipe(<minecraft:emerald_block>, true, 1, [[60, <
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:emerald_ore>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:emerald_ore>, true, 1, [[70, <alchemistry:compound:1>],[30, <alchemistry:element:3> * 2]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:prismarine_shard>);
-mods.alchemistry.Dissolver.addRecipe(<plustic:mirioningot>, true, 1, [[25, <alchemistry:compound:23>, <alchemistry:compound:10>, <alchemistry:element:6> * 6],[25, <alchemistry:compound:18>, <alchemistry:compound:10>, <alchemistry:element:6> * 6],[25, <alchemistry:compound:23>, <alchemistry:element:26> * 6, <alchemistry:element:6> * 6],[25, <alchemistry:compound:18>, <alchemistry:element:26> * 6, <alchemistry:element:6> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<plustic:mirionblock>, true, 1, [[25, <alchemistry:compound:23> * 9, <alchemistry:compound:10> * 9, <alchemistry:element:6> * 54],[25, <alchemistry:compound:18> * 9, <alchemistry:compound:10> * 9, <alchemistry:element:6> * 54],[25, <alchemistry:compound:23> * 9, <alchemistry:element:26> * 54, <alchemistry:element:6> * 54],[25, <alchemistry:compound:18> * 9, <alchemistry:element:26> * 54, <alchemistry:element:6> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<plustic:mirioningot>, true, 1, [[25, <alchemistry:compound:23> * 4, <alchemistry:compound:10> * 8, <alchemistry:element:6> * 16],[25, <alchemistry:compound:18> * 8, <alchemistry:compound:10> * 8, <alchemistry:element:6> * 16],[25, <alchemistry:compound:23> * 4, <alchemistry:element:26> * 32, <alchemistry:element:6> * 16],[25, <alchemistry:compound:18> * 8, <alchemistry:element:26> * 32, <alchemistry:element:6> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<plustic:mirionblock>, true, 1, [[25, <alchemistry:compound:23> * 36, <alchemistry:compound:10> * 72, <alchemistry:element:6> * 144],[25, <alchemistry:compound:18> * 72, <alchemistry:compound:10> * 72, <alchemistry:element:6> * 144],[25, <alchemistry:compound:23> * 36, <alchemistry:element:26> * 288, <alchemistry:element:6> * 144],[25, <alchemistry:compound:18> * 72, <alchemistry:element:26> * 288, <alchemistry:element:6> * 144]]);
 
-# Mescaline <- Void Metal Ingot & Block
+# Mesquite <- Void Metal Ingot & Block
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:cactus>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:cactus>, true, 1, [[100, <alchemistry:compound>]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumcraft:ingot:1>, true, 1, [[50, <alchemistry:compound:32>, <alchemistry:element:26> * 6],[50, <alchemistry:compound:10>, <alchemistry:element:26> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumcraft:metal_void>, true, 1, [[50, <alchemistry:compound:32> * 9, <alchemistry:element:26> * 54],[50, <alchemistry:compound:10> * 9, <alchemistry:element:26> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumcraft:ingot:1>, true, 1, [[50, <alchemistry:compound:32> * 4, <alchemistry:element:26> * 24],[50, <alchemistry:compound:10> * 4, <alchemistry:element:26> * 24]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumcraft:metal_void>, true, 1, [[50, <alchemistry:compound:32> * 36, <alchemistry:element:26> * 216],[50, <alchemistry:compound:10> * 36, <alchemistry:element:26> * 216]]);
 
 # Strontium Carbonate
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:redstone>);
@@ -143,51 +143,51 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:redstone_ore>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:redstone_ore>, true, 1, [[100, <alchemistry:compound:10> * 3, <alchemistry:compound:1>]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:redstone_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:redstone_block>, true, 1, [[100, <alchemistry:compound:10> * 9]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:impetus_crystal>, true, 1, [[100, <alchemistry:compound:17> * 16, <alchemistry:compound:32> * 2]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:5>, true, 1, [[100, <alchemistry:compound:17> * 24, <alchemistry:compound:32> * 2]]);
-mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:3>, true, 1, [[100, <alchemistry:compound:17> * 64, <alchemistry:compound:17> * 32, <alchemistry:compound:32> * 10]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:impetus_crystal>, true, 1, [[100, <alchemistry:compound:17> * 64, <alchemistry:compound:32> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:5>, true, 1, [[100, <alchemistry:compound:17> * 96, <alchemistry:compound:32> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<thaumicaugmentation:material:3>, true, 1, [[100, <alchemistry:compound:17> * 256, <alchemistry:compound:32> * 40]]);
 
 # Potassium Dichromate <- Solar Array Wafer, Advanced Wafer, plus other Wafers
-mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:basic_item_venus:6>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
-mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:12>, true, 1, [[100, <alchemistry:element:7> * 16, <alchemistry:compound:1> * 4, <alchemistry:element:24> * 3]]);
-mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:14>, true, 1, [[100, <alchemistry:compound:40>, <alchemistry:compound:1> * 3, <alchemistry:element:24> * 4]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:cheesy_wafer>, true, 1, [[100, <alchemistry:compound:9>, <alchemistry:compound:11>, <alchemistry:compound:1> * 2, <alchemistry:element:24> * 2]]);
-mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:13>, true, 1, [[100, <alchemistry:compound:33>, <alchemistry:compound:43>, <alchemistry:compound:1>, <alchemistry:element:24>]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:basic_item_venus:6>, true, 1, [[100, <alchemistry:compound:40> * 40, <alchemistry:compound:1> * 30, <alchemistry:element:24> * 320]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:12>, true, 1, [[100, <alchemistry:element:7> * 64, <alchemistry:compound:1> * 40, <alchemistry:element:24> * 240]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:14>, true, 1, [[100, <alchemistry:compound:40> * 40, <alchemistry:compound:1> * 30, <alchemistry:element:24> * 320]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:cheesy_wafer>, true, 1, [[100, <alchemistry:compound:9> * 10, <alchemistry:compound:11> * 10, <alchemistry:compound:1> * 20, <alchemistry:element:24> * 160]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftcore:basic_item:13>, true, 1, [[100, <alchemistry:compound:33> * 10, <alchemistry:compound:43> * 10, <alchemistry:compound:1> * 10, <alchemistry:element:24> * 80]]);
 
 # Potassium Permanganate <- Hybrid Abyssalium Ingot & Block
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, true, 1, [[100, <alchemistry:compound:42>, <alchemistry:compound:21>, <alchemistry:element:25> * 4]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_block>, true, 1, [[100, <alchemistry:compound:42> * 9, <alchemistry:compound:21> * 9, <alchemistry:element:25> * 36]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, true, 1, [[100, <alchemistry:compound:42> * 2, <alchemistry:compound:21> * 4, <alchemistry:element:25> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_block>, true, 1, [[100, <alchemistry:compound:42> * 18, <alchemistry:compound:21> * 36, <alchemistry:element:25> * 144]]);
 
 # Cadmium Sulfide, Magnesium Sulfate <- Flying Ointment
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45> * 16,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45> * 96,<alchemistry:compound:43> * 3,<alchemistry:element:8> * 32,<alchemistry:element:7> * 32],[50, <alchemistry:compound:43> * 6,<alchemistry:element:8> * 64,<alchemistry:element:7> * 64]]);
 
 # Chromium Oxide, Magnesium Sulfate <- Bottled Frostfire
 mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_frostfire>, true, 1, [[50, <alchemistry:compound:46>,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
 
 # Antimony Trioxide <- End Steel Ingot & Block
-mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_ingot:8>, true, 1, [[50, <alchemistry:compound:47>, <alchemistry:element:26> * 6],[50, <alchemistry:compound:10>, <alchemistry:element:26> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<enderio:block_alloy:8>, true, 1, [[50, <alchemistry:compound:47> * 9, <alchemistry:element:26> * 54],[50, <alchemistry:compound:10> * 9, <alchemistry:element:26> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_ingot:8>, true, 1, [[50, <alchemistry:compound:47> * 16, <alchemistry:element:26> * 32],[50, <alchemistry:compound:10> * 16, <alchemistry:element:26> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<enderio:block_alloy:8>, true, 1, [[50, <alchemistry:compound:47> * 144, <alchemistry:element:26> * 288],[50, <alchemistry:compound:10> * 144, <alchemistry:element:26> * 288]]);
 
 # Titanium Oxide <- Compressed Titanium & Titanium Box
-mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids:6>, true, 1, [[50, <alchemistry:compound:48>, <alchemistry:element:22> * 8],[50, <alchemistry:element:22> * 16]]);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_box>, true, 1, [[100, <alchemistry:compound:48> * 4, <alchemistry:element:22> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids:6>, true, 1, [[50, <alchemistry:compound:48> * 8, <alchemistry:element:22> * 64],[50, <alchemistry:element:22> * 128]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_box>, true, 1, [[100, <alchemistry:compound:48> * 32, <alchemistry:element:22> * 256]]);
 
 # Han Purple <- Wyvern Core
-mods.alchemistry.Dissolver.addRecipe(<draconicevolution:wyvern_core>, true, 1, [[100, <alchemistry:compound:49> * 8, <alchemistry:compound:8> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<draconicevolution:wyvern_core>, true, 1, [[100, <alchemistry:compound:49> * 128, <alchemistry:compound:8> * 16]]);
 
 # Arsenic Sulfide <- Rainbow Tablet
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rainbow_tablet>, true, 1, [[100, <alchemistry:compound:50> * 8, <alchemistry:compound:1> * 2, <alchemistry:element:6> * 8, <alchemistry:element:24> * 2]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rainbow_tablet>, true, 1, [[100, <alchemistry:compound:50> * 32, <alchemistry:compound:1> * 20, <alchemistry:element:6> * 64, <alchemistry:element:24> * 160]]);
 
 # Barium Sulfate, Copper Chloride <- Crystaltine Ingot
-mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:24>, true, 1, [[100, <alchemistry:compound:51> * 8, <alchemistry:compound:54> * 10, <alchemistry:compound:44> * 10]]);
+mods.alchemistry.Dissolver.addRecipe(<extendedcrafting:material:24>, true, 1, [[100, <alchemistry:compound:51> * 64, <alchemistry:compound:54> * 80, <alchemistry:compound:44> * 80]]);
 
 # Copper Chloride <- Crystalline Ingot & Block
-mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_endergy_ingot:1>, true, 1, [[100, <alchemistry:compound:54>, <alchemistry:compound:44>]]);
-mods.alchemistry.Dissolver.addRecipe(<enderio:block_alloy_endergy:1>, true, 1, [[100, <alchemistry:compound:54> * 9, <alchemistry:compound:44> * 9]]);
+mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_endergy_ingot:1>, true, 1, [[100, <alchemistry:compound:54> * 8, <alchemistry:compound:44> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<enderio:block_alloy_endergy:1>, true, 1, [[100, <alchemistry:compound:54> * 72, <alchemistry:compound:44> * 72]]);
 
 # Mercury Sulfide <- Supremium Ingot & Block
-mods.alchemistry.Dissolver.addRecipe(<mysticalagriculture:crafting:37>, true, 1, [[100, <alchemistry:compound:60> * 12, <alchemistry:element:50> * 6, <alchemistry:element:47> * 6, <alchemistry:element:82> * 6]]);
-mods.alchemistry.Dissolver.addRecipe(<mysticalagriculture:ingot_storage:5>, true, 1, [[100, <alchemistry:compound:60> * 64, <alchemistry:compound:60> * 44, <alchemistry:element:50> * 54, <alchemistry:element:47> * 54, <alchemistry:element:82> * 54]]);
+mods.alchemistry.Dissolver.addRecipe(<mysticalagriculture:crafting:37>, true, 1, [[100, <alchemistry:compound:60> * 48, <alchemistry:element:50> * 24, <alchemistry:element:47> * 24, <alchemistry:element:82> * 24]]);
+mods.alchemistry.Dissolver.addRecipe(<mysticalagriculture:ingot_storage:5>, true, 1, [[100, <alchemistry:compound:60> * 432, <alchemistry:element:50> * 216, <alchemistry:element:47> * 216, <alchemistry:element:82> * 216]]);
 
 # Quartz -/> Barium
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:quartz>);
@@ -513,14 +513,14 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:bone_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_star>, true, 1, [[100, <alchemistry:compound:16> * 8, <alchemistry:element:101> * 32]]);
 
 # Bismuth <- Demonic Elixir
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:demonic_elixir>, true, 1, [[50, <alchemistry:element:83> * 32, <alchemistry:compound:5> * 4, <alchemistry:compound:7> * 24],[50, <alchemistry:element:83> * 16, <alchemistry:compound:5> * 4, <alchemistry:compound:7> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:demonic_elixir>, true, 1, [[50, <alchemistry:element:83> * 256, <alchemistry:compound:5> * 24, <alchemistry:compound:7> * 24],[50, <alchemistry:element:83> * 128, <alchemistry:compound:5> * 48, <alchemistry:compound:7> * 48]]);
 
 # Tungsten <- Stone Ichor
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:stone_ichor>, true, 1, [[50, <alchemistry:element:74> * 32, <alchemistry:compound:1> * 8, <alchemistry:compound:7> * 24],[50, <alchemistry:element:74> * 16, <alchemistry:compound:1> * 8, <alchemistry:compound:7> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:stone_ichor>, true, 1, [[50, <alchemistry:element:74> * 256, <alchemistry:compound:1> * 64, <alchemistry:compound:7> * 32],[50, <alchemistry:element:74> * 128, <alchemistry:compound:1> * 64, <alchemistry:compound:7> * 64]]);
 
 # Fission Casing
 recipes.remove(<alchemistry:fission_casing>);
-recipes.addShaped(<alchemistry:fission_casing> * 4, [[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>],[<alchemistry:ingot:4>,<contenttweaker:copper_bismid_carbonate_sheet>,<alchemistry:ingot:4>],[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>]]);
+recipes.addShaped(<alchemistry:fission_casing> * 8, [[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>],[<alchemistry:ingot:4>,<contenttweaker:copper_bismid_carbonate_sheet>,<alchemistry:ingot:4>],[<contenttweaker:chromium_barium_compound>,<alchemistry:ingot:4>,<contenttweaker:chromium_barium_compound>]]);
 
 # Fission Controller
 recipes.remove(<alchemistry:fission_controller>);

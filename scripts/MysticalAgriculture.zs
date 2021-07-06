@@ -612,6 +612,7 @@ null,null,null,
 <alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,
 <alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>,<alchemistry:ingot:3>], "astralsorcery.constellation.vicio");
 
+/*
 # Inferium to Supremium Bows
 function addMysticalAgricultureBowRecipe(new_bow as IItemStack, old_bow as IItemStack, new_material as IIngredient, tool_core as IIngredient) {
 	recipes.remove(new_bow);
@@ -633,6 +634,7 @@ addMysticalAgricultureBowRecipe(<mysticalagriculture:superium_bow>,<mysticalagri
 # Supremium Bow
 recipes.remove(<mysticalagriculture:supremium_bow>);
 addMysticalAgricultureBowRecipe(<mysticalagriculture:supremium_bow>.withTag({}),<mysticalagriculture:superium_bow>,<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:4>);
+*/
 
 # Tier 5 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:21>);
@@ -667,6 +669,7 @@ recipes.remove(<mysticalagriculture:brass_seeds>);
 # Titanium Seeds
 recipes.remove(<mysticalagriculture:titanium_seeds>);
 # recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_titanium_seeds.json
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids> * 3, [[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,null,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>]]);
 
 # End Steel Seeds
 recipes.remove(<mysticalagriculture:end_steel_seeds>);
@@ -884,6 +887,10 @@ addMysticalAgricultureArmorRecipes([<mysticalagriculture:prudentium_helmet>,<mys
 addMysticalAgricultureArmorRecipes([<mysticalagriculture:intermedium_helmet>,<mysticalagriculture:intermedium_chestplate>,<mysticalagriculture:intermedium_leggings>,<mysticalagriculture:intermedium_boots>],[<mysticalagriculture:superium_helmet>,<mysticalagriculture:superium_chestplate>,<mysticalagriculture:superium_leggings>,<mysticalagriculture:superium_boots>],<mysticalagriculture:crafting:36>,<mysticalagriculture:gear:8>);
 
 # Supremium Armor
+recipes.remove(<mysticalagriculture:supremium_helmet>);
+recipes.remove(<mysticalagriculture:supremium_chestplate>);
+recipes.remove(<mysticalagriculture:supremium_leggings>);
+recipes.remove(<mysticalagriculture:supremium_boots>);
 addMysticalAgricultureArmorRecipes([<mysticalagriculture:superium_helmet>,<mysticalagriculture:superium_chestplate>,<mysticalagriculture:superium_leggings>,<mysticalagriculture:superium_boots>],[<mysticalagriculture:supremium_helmet>.withTag({}),<mysticalagriculture:supremium_chestplate>.withTag({}),<mysticalagriculture:supremium_leggings>.withTag({}),<mysticalagriculture:supremium_boots>.withTag({})],<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:9>);
 
 # Blank Charm
@@ -1006,6 +1013,14 @@ addMysticalAgricultureToolRecipes([<mysticalagriculture:prudentium_sword>,<mysti
 addMysticalAgricultureToolRecipes([<mysticalagriculture:intermedium_sword>,<mysticalagriculture:intermedium_pickaxe>,<mysticalagriculture:intermedium_shovel>,<mysticalagriculture:intermedium_axe>,<mysticalagriculture:intermedium_hoe>,<mysticalagriculture:intermedium_bow>,<mysticalagriculture:intermedium_sickle>,<mysticalagriculture:intermedium_scythe>,<mysticalagriculture:intermedium_fishing_rod>],[<mysticalagriculture:superium_sword>,<mysticalagriculture:superium_pickaxe>,<mysticalagriculture:superium_shovel>,<mysticalagriculture:superium_axe>,<mysticalagriculture:superium_hoe>,<mysticalagriculture:superium_bow>,<mysticalagriculture:superium_sickle>,<mysticalagriculture:superium_scythe>,<mysticalagriculture:superium_fishing_rod>],<mysticalagriculture:crafting:36>,<mysticalagriculture:gear:3>);
 
 # Supremium Tools
+recipes.remove(<mysticalagriculture:supremium_sword>);
+recipes.remove(<mysticalagriculture:supremium_pickaxe>);
+recipes.remove(<mysticalagriculture:supremium_shovel>);
+recipes.remove(<mysticalagriculture:supremium_axe>);
+recipes.remove(<mysticalagriculture:supremium_hoe>);
+recipes.remove(<mysticalagriculture:supremium_bow>);
+recipes.remove(<mysticalagriculture:supremium_sickle>);
+recipes.remove(<mysticalagriculture:supremium_scythe>);
 addMysticalAgricultureToolRecipes([<mysticalagriculture:superium_sword>,<mysticalagriculture:superium_pickaxe>,<mysticalagriculture:superium_shovel>,<mysticalagriculture:superium_axe>,<mysticalagriculture:superium_hoe>,<mysticalagriculture:superium_bow>,<mysticalagriculture:superium_sickle>,<mysticalagriculture:superium_scythe>,<mysticalagriculture:superium_fishing_rod>],[<mysticalagriculture:supremium_sword>.withTag({}),<mysticalagriculture:supremium_pickaxe>.withTag({}),<mysticalagriculture:supremium_shovel>.withTag({}),<mysticalagriculture:supremium_axe>.withTag({}),<mysticalagriculture:supremium_hoe>.withTag({}),<mysticalagriculture:supremium_bow>.withTag({}),<mysticalagriculture:supremium_sickle>.withTag({}),<mysticalagriculture:supremium_scythe>.withTag({}),<mysticalagriculture:supremium_fishing_rod>],<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:4>);
 
 function addMysticalAgricultureTinkeringTableRecipe(input as IItemStack, output as IItemStack, input_material as IIngredient) {

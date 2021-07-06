@@ -17,8 +17,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "quark:enderdragon_scale",
-            "amount": 4
+            "item": "quark:enderdragon_scale"
         },
         {
             "type": "item",

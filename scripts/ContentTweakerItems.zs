@@ -1082,5 +1082,7 @@ highly_radioactive_dimension_splitting_compound.onItemUpdate = function(itemStac
 	return;
 };
 highly_radioactive_dimension_splitting_compound.register();
+var slice_of_dragon_egg = VanillaFactory.createItem("slice_of_dragon_egg");
+slice_of_dragon_egg.register();
 
 print("ENDING ContentTweakerItems.zs");

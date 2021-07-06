@@ -61,6 +61,27 @@ addRFToolsDimensionsAbsorberRecipe(<rftoolsdim:feature_absorber>,<contenttweaker
 # Time Absorber
 addRFToolsDimensionsAbsorberRecipe(<rftoolsdim:time_absorber>,<divinerpg:twilight_clock>);
 
+# Energy Extractor
+recipes.remove(<rftoolsdim:energy_extractor>);
+recipes.addShaped(<rftoolsdim:energy_extractor>, [[<galacticraftplanets:item_basic_asteroids:5>,<quantumflux:zeropointextractor>,<galacticraftplanets:item_basic_asteroids:5>],[<rftools:infused_diamond>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_diamond>],[<galacticraftplanets:item_basic_asteroids:5>,<quantumflux:zeropointextractor>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Activity Probe
+recipes.remove(<rftoolsdim:activity_probe>);
+recipes.addShaped(<rftoolsdim:activity_probe>, [[<galacticraftplanets:item_basic_asteroids:5>,<enderutilities:enderpart:17>,<galacticraftplanets:item_basic_asteroids:5>],[<rftools:infused_enderpearl>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<galacticraftplanets:item_basic_asteroids:5>,<enderutilities:enderpart:17>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Dimension Monitor
+recipes.remove(<rftoolsdim:dimension_monitor>);
+recipes.addShaped(<rftoolsdim:dimension_monitor>, [[<alchemistry:ingot:41>,<rftools:infused_enderpearl>,<alchemistry:ingot:41>],[<appliedenergistics2:material:28>,<enderio:block_advanced_power_monitor>,<appliedenergistics2:material:28>],[<alchemistry:ingot:41>,<rftools:infused_enderpearl>,<alchemistry:ingot:41>]]);
+
+# Phased Field Generator
+recipes.remove(<rftoolsdim:phased_field_generator>);
+recipes.addShaped(<rftoolsdim:phased_field_generator>, [[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>],[<rftools:infused_enderpearl>,<draconicevolution:dislocator_advanced>.withTag({}),<rftools:infused_enderpearl>],[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>]]);
+<rftoolsdim:phased_field_generator>.addTooltip(format.white("Max Power storage: ") + format.red("100,000,000 RF"));
+<rftoolsdim:phased_field_generator>.addTooltip(format.white("RF/tick usage: ") + format.red("10,000"));
+<rftoolsdim:phased_field_generator>.addTooltip(format.white("Lasts ") + format.red("500 seconds") + format.white(" when fully charged."));
+
+# Dimlet Parcel
+recipes.remove(<rftoolsdim:dimlet_parcel>);
+recipes.addShaped(<rftoolsdim:dimlet_parcel> * 4, [[<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],[<rftools:infused_diamond>,<rftoolsdim:dimlet_base>,<rftools:infused_diamond>],[<appliedenergistics2:material:28>,<rftoolsdim:known_dimlet:7>.withTag({dkey: "None"}),<appliedenergistics2:material:28>]]);
 
 print("ENDING RFToolsDimensions.zs");

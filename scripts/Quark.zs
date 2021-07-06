@@ -18,4 +18,7 @@ recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecr
 # Witch Hat
 <quark:witch_hat>.addTooltip(format.white("Dropped rarely by Witches."));
 
+# Dragon Scale from Mystical Agriculture
+recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysticalagradditions:stuff:2>]);
+
 print("ENDING Quark.zs");

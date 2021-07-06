@@ -2,6 +2,7 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import mods.thaumcraft.Infusion;
 
 print("STARTING RFTools.zs");
 
@@ -279,5 +280,18 @@ recipes.addShaped(<rftools:booster>, [[<enderio:item_alloy_ingot:6>,<contenttwea
 # Matter Booster
 recipes.remove(<rftools:matter_booster>);
 recipes.addShaped(<rftools:matter_booster>, [[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>],[<galacticraftcore:engine:1>,<rftools:destination_analyzer>,<galacticraftcore:engine:1>],[<galacticraftplanets:item_basic_asteroids:5>,<rftools:booster>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Infused Diamond
+recipes.remove(<rftools:infused_diamond>);
+mods.thaumcraft.Infusion.registerRecipe("infused_diamond", "", <rftools:infused_diamond>, 9, [<aspect:vitreus> * 100,<aspect:auram> * 100,<aspect:desiderium> * 50,<aspect:sol> * 20,<aspect:praecantatio> * 20], <botania:manaresource:2>, [<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>,<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>]);
+
+# Infused Ender Pearl
+recipes.remove(<rftools:infused_diamond>);
+mods.thaumcraft.Infusion.registerRecipe("infused_enderpearl", "", <rftools:infused_enderpearl>, 9, [<aspect:vitreus> * 100,<aspect:auram> * 100,<aspect:alienis> * 50,<aspect:sol> * 20,<aspect:praecantatio> * 20], <botania:manaresource:1>, [<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>,<rftools:dimensional_shard>,<avaritia:resource:1>,<rftools:dimensional_shard>,<avaritia:resource:1>,<extendedcrafting:material:24>]);
+<rftools:infused_enderpearl>.maxStackSize = "64";
+
+# Advanced Charged Porter
+recipes.remove(<rftools:advanced_charged_porter>);
+recipes.addShaped(<rftools:advanced_charged_porter>, [[<alchemistry:ingot:44>,<rftools:infused_diamond>,<alchemistry:ingot:44>],[<rftools:infused_diamond>,<rftools:charged_porter>,<rftools:infused_diamond>],[<alchemistry:ingot:44>,<rftools:infused_diamond>,<alchemistry:ingot:44>]]);
 
 print("ENDING RFTools.zs");

@@ -290,7 +290,8 @@ recipes.addShaped(<industrialforegoing:laser_base>, [[<industrialforegoing:plast
 recipes.remove(<industrialforegoing:laser_drill>);
 recipes.addShaped(<industrialforegoing:laser_drill>, [[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>],[<contenttweaker:steaming_restonia_crystal>,<teslacorelib:machine_case>,<contenttweaker:steaming_restonia_crystal>],[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>]]);
 
-# Pink Slime OreDict
+# Pink Slime 
 <ore:slimeball>.remove(<industrialforegoing:pink_slime>);
+recipes.addShaped(<industrialforegoing:pink_slime> * 8, [[<mysticalagriculture:slime_essence>,<ore:dyePink>,<mysticalagriculture:slime_essence>],[<ore:dyePink>,<mysticalagriculture:slime_essence>,<ore:dyePink>],[<mysticalagriculture:slime_essence>,<ore:dyePink>,<mysticalagriculture:slime_essence>]]);
 
 print("ENDING IndustrialForegoing.zs");

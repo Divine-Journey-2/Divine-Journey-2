@@ -29,10 +29,12 @@ null,null,null,null,null,null,null,null,
 <draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>,<draconicevolution:wyvern_core>]);
 
 # Supremium Infusion Crystal
+recipes.remove(<matc:supremiumcrystal>);
 # recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculturetieredcrystals_supremium_infusion_crystal.json
 
 # Master Infusion Crystal
-mods.avaritia.ExtremeCrafting.addShaped("master_infusion_crystal", <mysticalagriculture:master_infusion_crystal>,
+recipes.remove(<mysticalagriculture:master_infusion_crystal>);
+mods.extendedcrafting.TableCrafting.addShaped(<mysticalagriculture:master_infusion_crystal>,
 [[null,null,null,null,<alchemistry:ingot:45>,null,null,null,null],
 [null,null,null,<alchemistry:ingot:45>,<alchemistry:ingot:45>,<alchemistry:ingot:45>,null,null,null],
 [null,null,<alchemistry:ingot:45>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:zysc_baach_sheet>,<alchemistry:ingot:45>,null,null],
@@ -42,5 +44,7 @@ mods.avaritia.ExtremeCrafting.addShaped("master_infusion_crystal", <mysticalagri
 [null,null,<alchemistry:ingot:45>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:zysc_baach_sheet>,<alchemistry:ingot:45>,null,null],
 [null,null,null,<alchemistry:ingot:45>,<alchemistry:ingot:45>,<alchemistry:ingot:45>,null,null,null],
 [null,null,null,null,<alchemistry:ingot:45>,null,null,null,null]]);
+
+# .transformDamage(16385)
 
 print("ENDING MysticalAgricultureTieredCrystals.zs");

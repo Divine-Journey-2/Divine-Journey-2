@@ -151,7 +151,7 @@ mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", 
 
 # Mystic Ingot
 LightningInfusion.remove(<lightningcraft:ingot:2>);
-LightningInfusion.add(<lightningcraft:ingot:2>, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+LightningInfusion.add(<lightningcraft:ingot:2> * 8, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
 
 # Lightning Furnace
 recipes.remove(<lightningcraft:lightning_furnace>);
