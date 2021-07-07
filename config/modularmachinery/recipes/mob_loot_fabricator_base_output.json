@@ -1,5 +1,5 @@
 {
-    "machine": "weak_fusion_plant",
+    "machine": "mob_loot_fabricator",
     "registryName": "mob_loot_fabricator_base_output",
     "recipeTime": 2,
     "requirements": [
@@ -390,6 +390,30 @@
             "io-type": "output",
             "item": "contenttweaker:soul_of_the_dark_realm",
             "chance": 0.0001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:shadowshard",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:shadowgem",
+            "chance": 0.00025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "natura:materials@6",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "totemic:buffalo_items@0",
+            "chance": 0.01
         }
     ]
 }

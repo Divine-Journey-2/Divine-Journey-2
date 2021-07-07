@@ -2,13 +2,14 @@
     "registryname": "mob_loot_fabricator",
     "localizedname": "Mob Loot Fabricator",
     "requires-blueprint": true,
-    "color": "F23F4E",
+    "color": "EB2132",
     "parts": [
         {
             "x": -1,
             "y": 0,
             "z": 0,
             "elements": [
+                "modularmachinery:blockcasing@4",
                 "modularmachinery:blockoutputbus@3",
                 "modularmachinery:blockoutputbus@4",
                 "modularmachinery:blockoutputbus@5",
@@ -528,7 +529,11 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
@@ -536,7 +541,11 @@
             "y": 0,
             "z": 5,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
@@ -744,7 +753,11 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
@@ -840,7 +853,11 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
@@ -992,7 +1009,11 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
@@ -1128,7 +1149,11 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "modularmachinery:blockcasing@4"
+                "modularmachinery:blockcasing@4",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
             ]
         },
         {
