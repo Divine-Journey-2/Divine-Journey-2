@@ -3,7 +3,7 @@ print("STARTING ExtraCPUs.zs");
 
 # 256k Crafting Storage
 recipes.remove(<extracpus:crafting_storage_256k>);
-recipes.addShaped(<extracpus:crafting_storage_256k>, [[<enderio:item_alloy_ingot>,<botania:rune:8>,<enderio:item_alloy_ingot>],[<botania:rune:8>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<botania:rune:8>],[<enderio:item_alloy_ingot>,<extracells:storage.component>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<extracpus:crafting_storage_256k>, [[<enderio:item_alloy_ingot>,<contenttweaker:rune_of_mana>,<enderio:item_alloy_ingot>],[<contenttweaker:rune_of_mana>,<appliedenergistics2:crafting_storage_64k>.noReturn(),<contenttweaker:rune_of_mana>],[<enderio:item_alloy_ingot>,<extracells:storage.component>,<enderio:item_alloy_ingot>]]);
 
 # 1024k Crafting Storage
 recipes.remove(<extracpus:crafting_storage_1024k>);

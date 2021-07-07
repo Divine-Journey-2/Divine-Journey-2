@@ -60,7 +60,7 @@ mods.alchemistry.Dissolver.addRecipe(<bloodmagic:item_demon_crystal:4>, true, 1,
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:crystallized_mana_fragment>, true, 1, [[10, <alchemistry:compound:29>],[80, <alchemistry:compound:7>],[10, <alchemistry:element:7>]]);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:crystallized_mana_shard>, true, 1, [[45, <alchemistry:compound:29> * 2],[35, <alchemistry:compound:7> * 2],[20, <alchemistry:element:7> * 2]]);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:crystallized_mana>, true, 1, [[67.5, <alchemistry:compound:29> * 12],[20, <alchemistry:compound:7> * 12],[12.5, <alchemistry:element:7> * 12]]);
-mods.alchemistry.Dissolver.addRecipe(<botania:rune:8>, true, 1, [[100, <alchemistry:compound:29> * 24]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:rune_of_mana>, true, 1, [[100, <alchemistry:compound:29> * 24]]);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:crystallized_mana_cluster>, true, 1, [[100, <alchemistry:compound:29> * 64,<alchemistry:compound:29> * 8]]);
 
 # Methane <- Crystallized Methane, AbyssalCraft Methane
@@ -74,7 +74,7 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:pumpkin>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:pumpkin>, true, 1, [[45, <alchemistry:compound>],[45, <alchemistry:compound:7>],[10, <alchemistry:compound:11>]]);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:melon_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:melon_block>, true, 1, [[45, <alchemistry:compound>],[45, <alchemistry:compound:7>],[10, <alchemistry:compound:11>]]);
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_hellfire>, true, 1, [[50, <alchemistry:compound:20>, <alchemistry:element:6> * 16],[50, <alchemistry:compound:5>, <alchemistry:element:6> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_hellfire>, true, 1, [[50, <alchemistry:compound:20> * 2, <alchemistry:element:6> * 16],[50, <alchemistry:compound:5> * 8, <alchemistry:element:6> * 16]]);
 
 # Psyllium <- Refined Coralium Ingot
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:brown_mushroom>);
@@ -162,7 +162,7 @@ mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_block>, t
 mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45> * 96,<alchemistry:compound:43> * 3,<alchemistry:element:8> * 32,<alchemistry:element:7> * 32],[50, <alchemistry:compound:43> * 6,<alchemistry:element:8> * 64,<alchemistry:element:7> * 64]]);
 
 # Chromium Oxide, Magnesium Sulfate <- Bottled Frostfire
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_frostfire>, true, 1, [[50, <alchemistry:compound:46>,<alchemistry:compound:43>,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43>,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_frostfire>, true, 1, [[50, <alchemistry:compound:46> * 24,<alchemistry:compound:43> * 24,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43> * 32,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);
 
 # Antimony Trioxide <- End Steel Ingot & Block
 mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_ingot:8>, true, 1, [[50, <alchemistry:compound:47> * 16, <alchemistry:element:26> * 32],[50, <alchemistry:compound:10> * 16, <alchemistry:element:26> * 32]]);

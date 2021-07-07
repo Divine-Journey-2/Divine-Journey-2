@@ -50,7 +50,7 @@ recipes.addShaped(<astralsorcery:blockmarble:2> * 2, [[<ore:stoneMarble>],[<thau
 # Marble Arch
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_arch");
 recipes.remove(<astralsorcery:blockmarble:3>);
-recipes.addShaped(<astralsorcery:blockmarble:3> * 3, [[null,<ore:stoneMarble>,null],[<ore:stoneMarble>,<botania:rune:4>,<ore:stoneMarble>]]);
+recipes.addShaped(<astralsorcery:blockmarble:3> * 3, [[null,<ore:stoneMarble>,null],[<ore:stoneMarble>,<contenttweaker:rune_of_spring>,<ore:stoneMarble>]]);
 
 # Chiseled Marble
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_chiseled");
@@ -88,7 +88,7 @@ recipes.addShaped(<astralsorcery:blockblackmarble:2> * 2, [[<astralsorcery:block
 # Sooty Marble Arch
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/black_marble_arch");
 recipes.remove(<astralsorcery:blockblackmarble:3>);
-recipes.addShaped(<astralsorcery:blockblackmarble:3> * 3, [[null,<astralsorcery:blockblackmarble>,null],[<astralsorcery:blockblackmarble>,<botania:rune:4>,<astralsorcery:blockblackmarble>]]);
+recipes.addShaped(<astralsorcery:blockblackmarble:3> * 3, [[null,<astralsorcery:blockblackmarble>,null],[<astralsorcery:blockblackmarble>,<contenttweaker:rune_of_spring>,<astralsorcery:blockblackmarble>]]);
 
 # Chiseled Sooty Marble
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/black_marble_chiseled");
@@ -173,7 +173,7 @@ null,<astralsorcery:blockinfusedwood:4>,<contenttweaker:condensed_vis_crystal_de
 # Infused Wood Arch
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/infused_wood_arch");
 recipes.remove(<astralsorcery:blockinfusedwood:3>);
-recipes.addShaped(<astralsorcery:blockinfusedwood:3> * 3, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<botania:rune:4>,<astralsorcery:blockinfusedwood>]]);
+recipes.addShaped(<astralsorcery:blockinfusedwood:3> * 3, [[null,<astralsorcery:blockinfusedwood>,null],[<astralsorcery:blockinfusedwood>,<contenttweaker:rune_of_spring>,<astralsorcery:blockinfusedwood>]]);
 
 # Engraved Infused Wood
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/infused_wood_engraved");
@@ -421,16 +421,16 @@ function addAstralSorceryLensRecipe(recipeName as string, output as IItemStack, 
 }
 
 # Colored Lens: Ignition
-addAstralSorceryLensRecipe("lens_fire", <astralsorcery:itemcoloredlens>, <botania:rune:1>);
+addAstralSorceryLensRecipe("lens_fire", <astralsorcery:itemcoloredlens>, <contenttweaker:rune_of_fire>);
 
 # Colored Lens: Break
 addAstralSorceryLensRecipe("lens_break", <astralsorcery:itemcoloredlens:1>, <lightningcraft:lightning_breaker>);
 
 # Colored Lens: Growth
-addAstralSorceryLensRecipe("lens_grow", <astralsorcery:itemcoloredlens:2>, <botania:rune:4>);
+addAstralSorceryLensRecipe("lens_grow", <astralsorcery:itemcoloredlens:2>, <contenttweaker:rune_of_spring>);
 
 # Colored Lens: Damage
-addAstralSorceryLensRecipe("lens_damage", <astralsorcery:itemcoloredlens:3>, <botania:rune:13>);
+addAstralSorceryLensRecipe("lens_damage", <astralsorcery:itemcoloredlens:3>, <contenttweaker:rune_of_wrath>);
 
 # Colored Lens: Regeneration
 addAstralSorceryLensRecipe("lens_regen", <astralsorcery:itemcoloredlens:4>, <thaumicaugmentation:vis_regenerator>);

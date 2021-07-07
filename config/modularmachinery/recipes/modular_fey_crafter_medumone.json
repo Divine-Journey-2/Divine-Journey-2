@@ -21,7 +21,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@2"
+            "item": "contenttweaker:rune_of_earth"
         },
         {
             "type": "item",

@@ -112,9 +112,10 @@ addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:7>.withTag({dkey: "Non
 addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:3>.withTag({dkey: "Default"}),<contenttweaker:mobgrindium_ingot>,true);
 
 # Liquid Dimlet (Water)
-addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:1>.withTag({dkey: "minecraft:water@0"}),<botania:rune>,false);
+addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:1>.withTag({dkey: "minecraft:water@0"}),<contenttweaker:rune_of_water>,false);
 
 # Sky Dimlet (Normal night)
+recipes.remove(<rftoolsdim:known_dimlet:4>);
 addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:4>.withTag({dkey: "normal.night"}),<contenttweaker:dark_core>,false);
 
 # Controller Dimlet (Single)
@@ -160,7 +161,7 @@ recipes.addShaped(<rftoolsdim:mediocre_efficiency_essence>, [[<contenttweaker:zy
 
 # Efficiency Essence
 recipes.remove(<rftoolsdim:efficiency_essence>);
-recipes.addShaped(<rftoolsdim:efficiency_essence>, [[<alchemistry:ingot:45>,<rftoolsdim:efficiency_essence>,<alchemistry:ingot:45>],[<rftoolsdim:efficiency_essence>,<rftools:infused_diamond>,<rftoolsdim:efficiency_essence>],[<alchemistry:ingot:45>,<rftoolsdim:efficiency_essence>,<alchemistry:ingot:45>]]);
+recipes.addShaped(<rftoolsdim:efficiency_essence>, [[<alchemistry:ingot:45>,<rftoolsdim:mediocre_efficiency_essence>,<alchemistry:ingot:45>],[<rftoolsdim:mediocre_efficiency_essence>,<rftools:infused_diamond>,<rftoolsdim:mediocre_efficiency_essence>],[<alchemistry:ingot:45>,<rftoolsdim:mediocre_efficiency_essence>,<alchemistry:ingot:45>]]);
 
 # Dimension Screen Module
 recipes.remove(<rftoolsdim:dimension_module>);

@@ -8,7 +8,7 @@ print("STARTING GalacticraftPlanets.zs");
 
 # Solar Array Wafer
 CircuitFabricator.remove(<galacticraftplanets:basic_item_venus:6> * 3);
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftplanets:basic_item_venus:6> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:341>, <projectred-core:resource_item:341>, <contenttweaker:rainbow_tablet>, <botania:rune:11>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftplanets:basic_item_venus:6> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:341>, <projectred-core:resource_item:341>, <contenttweaker:rainbow_tablet>, <contenttweaker:rune_of_greed>);
 
 # NASA Workbench Schematic (Automatic Cargo Rocket)
 recipes.addShapeless(<galacticraftplanets:schematic:1>, [<galacticraftplanets:schematic>]);

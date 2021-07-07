@@ -529,6 +529,7 @@
             "y": 0,
             "z": 2,
             "elements": [
+                "thaumcraft:pedestal_arcane@0",
                 "thaumcraft:pedestal_arcane@15"
             ]
         },

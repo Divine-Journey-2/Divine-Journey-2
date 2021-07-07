@@ -98,6 +98,10 @@ addTier2MysticalAgricultureSeedWithInput(<mysticalagriculture:nether_seeds>,<mys
 # Coal Seeds
 addTier2MysticalAgricultureSeed(<mysticalagriculture:coal_seeds>,<minecraft:coal_block>);
 
+# Bitumen and Tar from Coal and Basalt Essence
+recipes.addShaped(<thermalfoundation:material:892> * 3, [[<mysticalagriculture:basalt_essence>,<mysticalagriculture:coal_essence>,<mysticalagriculture:basalt_essence>],[<mysticalagriculture:coal_essence>,<minecraft:flint>,<mysticalagriculture:coal_essence>],[<mysticalagriculture:basalt_essence>,<mysticalagriculture:coal_essence>,<mysticalagriculture:basalt_essence>]]);
+recipes.addShaped(<thermalfoundation:material:833> * 3, [[<mysticalagriculture:basalt_essence>,<mysticalagriculture:coal_essence>,<mysticalagriculture:basalt_essence>],[<mysticalagriculture:coal_essence>,<ore:slimeball>,<mysticalagriculture:coal_essence>],[<mysticalagriculture:basalt_essence>,<mysticalagriculture:coal_essence>,<mysticalagriculture:basalt_essence>]]);
+
 # Obsidian Seeds
 addTier2MysticalAgricultureSeed(<mysticalagriculture:obsidian_seeds>,<contenttweaker:compressed_obsidian2>);
 
@@ -784,7 +788,7 @@ recipes.addShaped(<mysticalagriculture:crafting:54>, [[<mysticalagriculture:craf
 
 # Theoretical Infinite Water Source
 recipes.remove(<mysticalagriculture:crafting:48>);
-recipes.addShaped(<mysticalagriculture:crafting:48>, [[<extendedcrafting:material>,<botania:rune>,<extendedcrafting:material>],[<botania:rune>,<roots:unending_bowl>,<botania:rune>],[<extendedcrafting:material>,<botania:rune>,<extendedcrafting:material>]]);
+recipes.addShaped(<mysticalagriculture:crafting:48>, [[<extendedcrafting:material>,<contenttweaker:rune_of_water>,<extendedcrafting:material>],[<contenttweaker:rune_of_water>,<roots:unending_bowl>,<contenttweaker:rune_of_water>],[<extendedcrafting:material>,<contenttweaker:rune_of_water>,<extendedcrafting:material>]]);
 
 # Prudentium Watering Can
 recipes.remove(<mysticalagriculture:watering_can:1>);

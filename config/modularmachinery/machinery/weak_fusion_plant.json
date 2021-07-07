@@ -2,7 +2,7 @@
     "registryname": "weak_fusion_plant",
     "localizedname": "Weak Fusion Plant",
     "requires-blueprint": true,
-    "color": "CF0606",
+    "color": "C96100",
     "parts": [
         {
             "x": -1,

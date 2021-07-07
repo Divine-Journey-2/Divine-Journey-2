@@ -120,19 +120,19 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:23>, <enderio:item_m
 
 # Rune of Water
 mods.botania.RuneAltar.removeRecipe(<botania:rune>);
-mods.botania.RuneAltar.addRecipe(<botania:rune>, [<contenttweaker:aquatic_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:1>,<botania:manaresource:23>], 10000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_water>, [<contenttweaker:aquatic_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:1>,<botania:manaresource:23>], 10000);
 
 # Rune of Fire
 mods.botania.RuneAltar.removeRecipe(<botania:rune:1>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:1>, [<contenttweaker:fire_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered>,<botania:manaresource:23>], 10000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_fire>, [<contenttweaker:fire_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered>,<botania:manaresource:23>], 10000);
 
 # Rune of Earth
 mods.botania.RuneAltar.removeRecipe(<botania:rune:2>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:2>, [<contenttweaker:earthen_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:4>,<botania:manaresource:23>], 10000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_earth>, [<contenttweaker:earthen_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:4>,<botania:manaresource:23>], 10000);
 
 # Rune of Air
 mods.botania.RuneAltar.removeRecipe(<botania:rune:3>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:3>, [<contenttweaker:gusty_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:2>,<botania:manaresource:23>], 10000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_air>, [<contenttweaker:gusty_core>,<botania:manaresource>,<actuallyadditions:item_crystal_empowered:2>,<botania:manaresource:23>], 10000);
 
 # Manasteel Sword
 recipes.remove(<botania:manasteelsword>);
@@ -152,23 +152,23 @@ recipes.addShapedMirrored(<botania:manasteelaxe>, [[<botania:manaresource>,<bota
 
 # Rune of Mana
 mods.botania.RuneAltar.removeRecipe(<botania:rune:8>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:8>, [<botania:storage>,<botania:storage>,<botania:storage:3>,<botania:storage:3>], 25000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_mana>, [<botania:storage>,<botania:storage>,<botania:storage:3>,<botania:storage:3>], 25000);
 
 # Rune of Spring
 mods.botania.RuneAltar.removeRecipe(<botania:rune:4>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:4>, [<botania:rune:3>,<botania:rune:2>,<contenttweaker:livingmatter>,<contenttweaker:environmental_core>], 15000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_spring>, [<contenttweaker:rune_of_air>,<contenttweaker:rune_of_earth>,<contenttweaker:livingmatter>,<contenttweaker:environmental_core>], 15000);
 
 # Rune of Summer
 mods.botania.RuneAltar.removeRecipe(<botania:rune:5>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:5>, [<botania:rune:1>,<botania:rune:3>,<contenttweaker:livingmatter>,<contenttweaker:power_core>], 15000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_summer>, [<contenttweaker:rune_of_fire>,<contenttweaker:rune_of_air>,<contenttweaker:livingmatter>,<contenttweaker:power_core>], 15000);
 
 # Rune of Autumn
 mods.botania.RuneAltar.removeRecipe(<botania:rune:6>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:6>, [<botania:rune:1>,<botania:rune:0>,<contenttweaker:livingmatter>,<contenttweaker:tempest_core>], 15000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_autumn>, [<contenttweaker:rune_of_fire>,<contenttweaker:rune_of_water>,<contenttweaker:livingmatter>,<contenttweaker:tempest_core>], 15000);
 
 # Rune of Winter
 mods.botania.RuneAltar.removeRecipe(<botania:rune:7>);
-mods.botania.RuneAltar.addRecipe(<botania:rune:7>, [<botania:rune:0>,<botania:rune:2>,<contenttweaker:livingmatter>,<contenttweaker:icy_core>], 15000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_winter>, [<contenttweaker:rune_of_water>,<contenttweaker:rune_of_earth>,<contenttweaker:livingmatter>,<contenttweaker:icy_core>], 15000);
 
 # Manastorm Charge
 recipes.remove(<botania:manabomb>);
@@ -179,27 +179,27 @@ Fey.addRecipe("manastar", <botania:specialflower>.withTag({type: "manastar"}), [
 
 # Thermalily
 mods.botania.Apothecary.removeRecipe("thermalily");
-Fey.addRecipe("thermalily", <botania:specialflower>.withTag({type: "thermalily"}), [<contenttweaker:thermal_petal>,<contenttweaker:thermal_petal>,<botania:rune:1>,<botania:rune:2>,<contenttweaker:strength_reagent>]);
+Fey.addRecipe("thermalily", <botania:specialflower>.withTag({type: "thermalily"}), [<contenttweaker:thermal_petal>,<contenttweaker:thermal_petal>,<contenttweaker:rune_of_fire>,<contenttweaker:rune_of_earth>,<contenttweaker:strength_reagent>]);
 
 # Rosa Arcana
 mods.botania.Apothecary.removeRecipe("arcanerose");
-Fey.addRecipe("arcanerose", <botania:specialflower>.withTag({type: "arcanerose"}), [<contenttweaker:petal_of_the_arcane_rose>,<contenttweaker:petal_of_the_arcane_rose>,<botania:rune:8>,<actuallyadditions:block_xp_solidifier>,<enderio:item_material:18>]);
+Fey.addRecipe("arcanerose", <botania:specialflower>.withTag({type: "arcanerose"}), [<contenttweaker:petal_of_the_arcane_rose>,<contenttweaker:petal_of_the_arcane_rose>,<contenttweaker:rune_of_mana>,<actuallyadditions:block_xp_solidifier>,<enderio:item_material:18>]);
 
 # Gourmaryllis
 mods.botania.Apothecary.removeRecipe("gourmaryllis");
-Fey.addRecipe("gourmaryllis", <botania:specialflower>.withTag({type: "gourmaryllis"}), [<contenttweaker:petal_of_the_gourmaryllis>,<contenttweaker:petal_of_the_gourmaryllis>,<botania:rune:10>,<abyssalcraft:mre>,<botania:manaresource:9>]);
+Fey.addRecipe("gourmaryllis", <botania:specialflower>.withTag({type: "gourmaryllis"}), [<contenttweaker:petal_of_the_gourmaryllis>,<contenttweaker:petal_of_the_gourmaryllis>,<contenttweaker:rune_of_gluttony>,<abyssalcraft:mre>,<botania:manaresource:9>]);
 
 # Narslimmus
 mods.botania.Apothecary.removeRecipe("narslimmus");
-Fey.addRecipe("narslimmus", <botania:specialflower>.withTag({type: "narslimmus"}), [<contenttweaker:petal_of_the_narslimmus>,<contenttweaker:petal_of_the_narslimmus>,<botania:rune:5>,<minecraft:slime>,<minecraft:slime>]);
+Fey.addRecipe("narslimmus", <botania:specialflower>.withTag({type: "narslimmus"}), [<contenttweaker:petal_of_the_narslimmus>,<contenttweaker:petal_of_the_narslimmus>,<contenttweaker:rune_of_summer>,<minecraft:slime>,<minecraft:slime>]);
 
 # Jaded Amaranthus
 mods.botania.Apothecary.removeRecipe("jadedAmaranthus");
-Fey.addRecipe("jadedAmaranthus", <botania:specialflower>.withTag({type: "jadedAmaranthus"}), [<contenttweaker:jaded_petal>,<contenttweaker:jaded_petal>,<botania:rune:4>,<botania:fertilizer>,<botania:fertilizer>]);
+Fey.addRecipe("jadedAmaranthus", <botania:specialflower>.withTag({type: "jadedAmaranthus"}), [<contenttweaker:jaded_petal>,<contenttweaker:jaded_petal>,<contenttweaker:rune_of_spring>,<botania:fertilizer>,<botania:fertilizer>]);
 
 # Bellethorne
 mods.botania.Apothecary.removeRecipe("bellethorn");
-Fey.addRecipe("bellethorn", <botania:specialflower>.withTag({type: "bellethorn"}), [<contenttweaker:thorny_belle_petal>,<contenttweaker:thorny_belle_petal>,<contenttweaker:damage_reagent>,<botania:rune:1>,<extrautils2:spike_iron>]);
+Fey.addRecipe("bellethorn", <botania:specialflower>.withTag({type: "bellethorn"}), [<contenttweaker:thorny_belle_petal>,<contenttweaker:thorny_belle_petal>,<contenttweaker:damage_reagent>,<contenttweaker:rune_of_fire>,<extrautils2:spike_iron>]);
 
 # Dreadthorn
 mods.botania.Apothecary.removeRecipe("dreadthorn");
@@ -207,55 +207,55 @@ Fey.addRecipe("dreadthorn", <botania:specialflower>.withTag({type: "dreadthorn"}
 
 # Tigerseye
 mods.botania.Apothecary.removeRecipe("tigerseye");
-Fey.addRecipe("tigerseye", <botania:specialflower>.withTag({type: "tigerseye"}), [<contenttweaker:tigerseye_petal>,<contenttweaker:tigerseye_petal>,<botania:rune:6>,<contenttweaker:sanctus>,<contenttweaker:neutral_reagent>]);
+Fey.addRecipe("tigerseye", <botania:specialflower>.withTag({type: "tigerseye"}), [<contenttweaker:tigerseye_petal>,<contenttweaker:tigerseye_petal>,<contenttweaker:rune_of_autumn>,<contenttweaker:sanctus>,<contenttweaker:neutral_reagent>]);
 
 # Exoflame
 mods.botania.Apothecary.removeRecipe("exoflame");
-Fey.addRecipe("exoflame", <botania:specialflower>.withTag({type: "exoflame"}), [<contenttweaker:petal_of_the_exoflame>,<contenttweaker:petal_of_the_exoflame>,<botania:rune:1>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>]);
+Fey.addRecipe("exoflame", <botania:specialflower>.withTag({type: "exoflame"}), [<contenttweaker:petal_of_the_exoflame>,<contenttweaker:petal_of_the_exoflame>,<contenttweaker:rune_of_fire>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>]);
 
 # Agricarnation
 mods.botania.Apothecary.removeRecipe("agricarnation");
-Fey.addRecipe("agricarnation", <botania:specialflower>.withTag({type: "agricarnation"}), [<contenttweaker:agricarnatic_petal>,<contenttweaker:agricarnatic_petal>,<botania:rune:4>,<botania:rune:5>,<mysticalagriculture:growth_accelerator>]);
+Fey.addRecipe("agricarnation", <botania:specialflower>.withTag({type: "agricarnation"}), [<contenttweaker:agricarnatic_petal>,<contenttweaker:agricarnatic_petal>,<contenttweaker:rune_of_spring>,<contenttweaker:rune_of_summer>,<mysticalagriculture:growth_accelerator>]);
 
 # Hopperhock
 mods.botania.Apothecary.removeRecipe("hopperhock");
-Fey.addRecipe("hopperhock", <botania:specialflower>.withTag({type: "hopperhock"}), [<contenttweaker:hopping_petal>,<contenttweaker:hopping_petal>,<botania:rune:3>,<openblocks:vacuum_hopper>,<bloodmagic:component:31>]);
+Fey.addRecipe("hopperhock", <botania:specialflower>.withTag({type: "hopperhock"}), [<contenttweaker:hopping_petal>,<contenttweaker:hopping_petal>,<contenttweaker:rune_of_air>,<openblocks:vacuum_hopper>,<bloodmagic:component:31>]);
 
 # Rannuncarpus
 mods.botania.Apothecary.removeRecipe("rannuncarpus");
-Fey.addRecipe("rannuncarpus", <botania:specialflower>.withTag({type: "rannuncarpus"}), [<contenttweaker:petal_of_the_rannuncarpus>,<contenttweaker:petal_of_the_rannuncarpus>,<botania:rune:2>,<openblocks:block_breaker>,<contenttweaker:damage_reagent>]);
+Fey.addRecipe("rannuncarpus", <botania:specialflower>.withTag({type: "rannuncarpus"}), [<contenttweaker:petal_of_the_rannuncarpus>,<contenttweaker:petal_of_the_rannuncarpus>,<contenttweaker:rune_of_earth>,<openblocks:block_breaker>,<contenttweaker:damage_reagent>]);
 
 # Tangleberry
 mods.botania.Apothecary.removeRecipe("tangleberrie");
-Fey.addRecipe("tangleberrie", <botania:specialflower>.withTag({type: "tangleberrie"}), [<contenttweaker:tangled_petals>,<contenttweaker:tangled_petals>,<botania:rune:2>,<enderio:item_material:17>,<contenttweaker:crepitous>]);
+Fey.addRecipe("tangleberrie", <botania:specialflower>.withTag({type: "tangleberrie"}), [<contenttweaker:tangled_petals>,<contenttweaker:tangled_petals>,<contenttweaker:rune_of_earth>,<enderio:item_material:17>,<contenttweaker:crepitous>]);
 
 # Jiyuulia
 mods.botania.Apothecary.removeRecipe("jiyuulia");
-Fey.addRecipe("jiyuulia", <botania:specialflower>.withTag({type: "jiyuulia"}), [<contenttweaker:petal_of_the_jiyuulia>,<contenttweaker:petal_of_the_jiyuulia>,<botania:rune:3>,<mob_grinding_utils:fan>,<contenttweaker:aether>]);
+Fey.addRecipe("jiyuulia", <botania:specialflower>.withTag({type: "jiyuulia"}), [<contenttweaker:petal_of_the_jiyuulia>,<contenttweaker:petal_of_the_jiyuulia>,<contenttweaker:rune_of_air>,<mob_grinding_utils:fan>,<contenttweaker:aether>]);
 
 # Clayconia
 mods.botania.Apothecary.removeRecipe("clayconia");
-Fey.addRecipe("clayconia", <botania:specialflower>.withTag({type: "clayconia"}), [<contenttweaker:clay_cone_petal>,<contenttweaker:clay_cone_petal>,<botania:rune:2>,<contenttweaker:neutral_reagent>,<minecraft:clay>]);
+Fey.addRecipe("clayconia", <botania:specialflower>.withTag({type: "clayconia"}), [<contenttweaker:clay_cone_petal>,<contenttweaker:clay_cone_petal>,<contenttweaker:rune_of_earth>,<contenttweaker:neutral_reagent>,<minecraft:clay>]);
 
 # Daffomill
 mods.botania.Apothecary.removeRecipe("daffomill");
-Fey.addRecipe("daffomill", <botania:specialflower>.withTag({type: "daffomill"}), [<contenttweaker:daffomill_petal>,<contenttweaker:daffomill_petal>,<botania:rune:3>,<openblocks:fan>,<contenttweaker:aether>]);
+Fey.addRecipe("daffomill", <botania:specialflower>.withTag({type: "daffomill"}), [<contenttweaker:daffomill_petal>,<contenttweaker:daffomill_petal>,<contenttweaker:rune_of_air>,<openblocks:fan>,<contenttweaker:aether>]);
 
 # Solegnolia
 mods.botania.Apothecary.removeRecipe("solegnolia");
-Fey.addRecipe("solegnolia", <botania:specialflower>.withTag({type: "solegnolia"}), [<contenttweaker:petal_of_the_solegnolia>,<contenttweaker:petal_of_the_solegnolia>,<botania:rune:3>,<enderio:item_material:15>,<enderio:block_alloy:1>]);
+Fey.addRecipe("solegnolia", <botania:specialflower>.withTag({type: "solegnolia"}), [<contenttweaker:petal_of_the_solegnolia>,<contenttweaker:petal_of_the_solegnolia>,<contenttweaker:rune_of_air>,<enderio:item_material:15>,<enderio:block_alloy:1>]);
 
 # Bergamute
 mods.botania.Apothecary.removeRecipe("bergamute");
-Fey.addRecipe("bergamute", <botania:specialflower>.withTag({type: "bergamute"}), [<contenttweaker:petal_of_the_bergamute>,<contenttweaker:petal_of_the_bergamute>,<botania:rune:3>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<betternether:agave>]);
+Fey.addRecipe("bergamute", <botania:specialflower>.withTag({type: "bergamute"}), [<contenttweaker:petal_of_the_bergamute>,<contenttweaker:petal_of_the_bergamute>,<contenttweaker:rune_of_air>,<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:sounddetector"}),<betternether:agave>]);
 
 # Munchdew
 mods.botania.Apothecary.removeRecipe("munchdew");
-Fey.addRecipe("munchdew", <botania:specialflower>.withTag({type: "munchdew"}), [<contenttweaker:munching_petal>,<contenttweaker:munching_petal>,<botania:rune:10>,<botania:rune:4>,<botania:grasshorn:1>]);
+Fey.addRecipe("munchdew", <botania:specialflower>.withTag({type: "munchdew"}), [<contenttweaker:munching_petal>,<contenttweaker:munching_petal>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_spring>,<botania:grasshorn:1>]);
 
 # Entropinnyum
 mods.botania.Apothecary.removeRecipe("entropinnyum");
-Fey.addRecipe("entropinnyum", <botania:specialflower>.withTag({type: "entropinnyum"}), [<contenttweaker:petal_of_the_entropinnyum>,<contenttweaker:petal_of_the_entropinnyum>,<botania:rune:13>,<botania:rune:1>,<minecraft:tnt>]);
+Fey.addRecipe("entropinnyum", <botania:specialflower>.withTag({type: "entropinnyum"}), [<contenttweaker:petal_of_the_entropinnyum>,<contenttweaker:petal_of_the_entropinnyum>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_fire>,<minecraft:tnt>]);
 
 # Spectrolus
 mods.botania.Apothecary.removeRecipe("spectrolus");
@@ -263,67 +263,67 @@ Fey.addRecipe("spectrolus", <botania:specialflower>.withTag({type: "spectrolus"}
 
 # Rafflowsia
 mods.botania.Apothecary.removeRecipe("rafflowsia");
-Fey.addRecipe("rafflowsia", <botania:specialflower>.withTag({type: "rafflowsia"}), [<contenttweaker:petal_of_the_rafflowsia>,<contenttweaker:petal_of_the_rafflowsia>,<botania:rune:15>,<botania:rune:10>,<botania:quartz:3>]);
+Fey.addRecipe("rafflowsia", <botania:specialflower>.withTag({type: "rafflowsia"}), [<contenttweaker:petal_of_the_rafflowsia>,<contenttweaker:petal_of_the_rafflowsia>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_gluttony>,<botania:quartz:3>]);
 
 # Dandelifeon
 mods.botania.Apothecary.removeRecipe("dandelifeon");
-Fey.addRecipe("dandelifeon", <botania:specialflower>.withTag({type: "dandelifeon"}), [<contenttweaker:petal_of_the_game_of_life>,<contenttweaker:petal_of_the_game_of_life>,<botania:manaresource:5>,<abyssalcraft:lifecrystal>,<botania:rune:11>]);
+Fey.addRecipe("dandelifeon", <botania:specialflower>.withTag({type: "dandelifeon"}), [<contenttweaker:petal_of_the_game_of_life>,<contenttweaker:petal_of_the_game_of_life>,<botania:manaresource:5>,<abyssalcraft:lifecrystal>,<contenttweaker:rune_of_greed>]);
 
 # Kekimurus
 mods.botania.Apothecary.removeRecipe("kekimurus");
-Fey.addRecipe("kekimurus", <botania:specialflower>.withTag({type: "kekimurus"}), [<contenttweaker:petal_of_a_slice_o_cake>,<contenttweaker:petal_of_a_slice_o_cake>,<minecraft:cake>,<botania:rune:10>,<botania:manaresource:8>]);
+Fey.addRecipe("kekimurus", <botania:specialflower>.withTag({type: "kekimurus"}), [<contenttweaker:petal_of_a_slice_o_cake>,<contenttweaker:petal_of_a_slice_o_cake>,<minecraft:cake>,<contenttweaker:rune_of_gluttony>,<botania:manaresource:8>]);
 
 # Shulk Me Not
 mods.botania.Apothecary.removeRecipe("shulk_me_not");
-Fey.addRecipe("shulk_me_not", <botania:specialflower>.withTag({type: "shulk_me_not"}), [<contenttweaker:petal_me_not>,<contenttweaker:petal_me_not>,<minecraft:shulker_shell>,<botania:rune:13>,<botania:rune:14>]);
+Fey.addRecipe("shulk_me_not", <botania:specialflower>.withTag({type: "shulk_me_not"}), [<contenttweaker:petal_me_not>,<contenttweaker:petal_me_not>,<minecraft:shulker_shell>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_envy>]);
 
 # Heisei Dream
 mods.botania.Apothecary.removeRecipe("heiseiDream");
-Fey.addRecipe("heiseiDream", <botania:specialflower>.withTag({type: "heiseiDream"}), [<contenttweaker:dreaming_petal>,<contenttweaker:dreaming_petal>,<botania:rune:13>,<contenttweaker:rune_of_deception>,<contenttweaker:dreammatter>]);
+Fey.addRecipe("heiseiDream", <botania:specialflower>.withTag({type: "heiseiDream"}), [<contenttweaker:dreaming_petal>,<contenttweaker:dreaming_petal>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_deception>,<contenttweaker:dreammatter>]);
 
 # Marimorphosis
 mods.botania.Apothecary.removeRecipe("marimorphosis");
-Fey.addRecipe("marimorphosis", <botania:specialflower>.withTag({type: "marimorphosis"}), [<contenttweaker:morphing_petal>,<contenttweaker:morphing_petal>,<botania:rune:11>,<botania:rune:5>,<botania:quartz:3>]);
+Fey.addRecipe("marimorphosis", <botania:specialflower>.withTag({type: "marimorphosis"}), [<contenttweaker:morphing_petal>,<contenttweaker:morphing_petal>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_summer>,<botania:quartz:3>]);
 
 # Orechid
 mods.botania.Apothecary.removeRecipe("orechid");
-Fey.addRecipe("orechid", <botania:specialflower>.withTag({type: "orechid"}), [<contenttweaker:orechid_petallius>,<contenttweaker:orechid_petallius>,<botania:rune:15>,<botania:rune:11>,<botania:manaresource:6>]);
+Fey.addRecipe("orechid", <botania:specialflower>.withTag({type: "orechid"}), [<contenttweaker:orechid_petallius>,<contenttweaker:orechid_petallius>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_greed>,<botania:manaresource:6>]);
 
 # Orechid Inglem
 mods.botania.Apothecary.removeRecipe("orechidIgnem");
-Fey.addRecipe("orechidIgnem", <botania:specialflower>.withTag({type: "orechidIgnem"}), [<contenttweaker:orechid_ignem_petallius>,<contenttweaker:orechid_ignem_petallius>,<botania:rune:15>,<botania:rune:11>,<botania:manaresource:6>]);
+Fey.addRecipe("orechidIgnem", <botania:specialflower>.withTag({type: "orechidIgnem"}), [<contenttweaker:orechid_ignem_petallius>,<contenttweaker:orechid_ignem_petallius>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_greed>,<botania:manaresource:6>]);
 
 # Hyacidus
 mods.botania.Apothecary.removeRecipe("hyacidus");
-Fey.addRecipe("hyacidus", <botania:specialflower>.withTag({type: "hyacidus"}), [<contenttweaker:petal_of_the_hyacidus>,<contenttweaker:petal_of_the_hyacidus>,<minecraft:splash_potion>.withTag({Potion: "cofhcore:poison4"}),<minecraft:poisonous_potato>,<botania:rune:13>]);
+Fey.addRecipe("hyacidus", <botania:specialflower>.withTag({type: "hyacidus"}), [<contenttweaker:petal_of_the_hyacidus>,<contenttweaker:petal_of_the_hyacidus>,<minecraft:splash_potion>.withTag({Potion: "cofhcore:poison4"}),<minecraft:poisonous_potato>,<contenttweaker:rune_of_wrath>]);
 
 # Pollidisiac
 mods.botania.Apothecary.removeRecipe("pollidisiac");
-Fey.addRecipe("pollidisiac", <botania:specialflower>.withTag({type: "pollidisiac"}), [<contenttweaker:pollinating_petal>,<contenttweaker:pollinating_petal>,<botania:rune:9>,<botania:rune:1>,<botania:quartz:4>]);
+Fey.addRecipe("pollidisiac", <botania:specialflower>.withTag({type: "pollidisiac"}), [<contenttweaker:pollinating_petal>,<contenttweaker:pollinating_petal>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_fire>,<botania:quartz:4>]);
 
 # Medomune
 mods.botania.Apothecary.removeRecipe("medumone");
-Fey.addRecipe("medumone", <botania:specialflower>.withTag({type: "medumone"}), [<contenttweaker:medumone_petal>,<contenttweaker:medumone_petal>,<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_slowness"}),<botania:rune:2>,<botania:manaresource:6>]);
+Fey.addRecipe("medumone", <botania:specialflower>.withTag({type: "medumone"}), [<contenttweaker:medumone_petal>,<contenttweaker:medumone_petal>,<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_slowness"}),<contenttweaker:rune_of_earth>,<botania:manaresource:6>]);
 
 # Fallen Kanade
 mods.botania.Apothecary.removeRecipe("fallenKanade");
-Fey.addRecipe("fallenKanade", <botania:specialflower>.withTag({type: "fallenKanade"}), [<contenttweaker:petal_of_the_fallen_kanade>,<contenttweaker:petal_of_the_fallen_kanade>,<minecraft:lingering_potion>.withTag({Potion: "minecraft:strong_regeneration"}),<botania:rune:9>,<botania:rune:4>]);
+Fey.addRecipe("fallenKanade", <botania:specialflower>.withTag({type: "fallenKanade"}), [<contenttweaker:petal_of_the_fallen_kanade>,<contenttweaker:petal_of_the_fallen_kanade>,<minecraft:lingering_potion>.withTag({Potion: "minecraft:strong_regeneration"}),<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_spring>]);
 
 # Loonium
 mods.botania.Apothecary.removeRecipe("loonium");
-Fey.addRecipe("loonium", <botania:specialflower>.withTag({type: "loonium"}), [<contenttweaker:loonium_petal>,<contenttweaker:loonium_petal>,<botania:rune:13>,<botania:rune:14>,<botania:manaresource:5>]);
+Fey.addRecipe("loonium", <botania:specialflower>.withTag({type: "loonium"}), [<contenttweaker:loonium_petal>,<contenttweaker:loonium_petal>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_envy>,<botania:manaresource:5>]);
 
 # Vinculotus
 mods.botania.Apothecary.removeRecipe("vinculotus");
-Fey.addRecipe("vinculotus", <botania:specialflower>.withTag({type: "vinculotus"}), [<contenttweaker:petal_of_the_vinculotus>,<contenttweaker:petal_of_the_vinculotus>,<mob_grinding_utils:ender_inhibitor_on>,<botania:rune:11>,<botania:manaresource:6>]);
+Fey.addRecipe("vinculotus", <botania:specialflower>.withTag({type: "vinculotus"}), [<contenttweaker:petal_of_the_vinculotus>,<contenttweaker:petal_of_the_vinculotus>,<mob_grinding_utils:ender_inhibitor_on>,<contenttweaker:rune_of_greed>,<botania:manaresource:6>]);
 
 # Spectranthemum
 mods.botania.Apothecary.removeRecipe("spectranthemum");
-Fey.addRecipe("spectranthemum", <botania:specialflower>.withTag({type: "spectranthemum"}), [<contenttweaker:spectralight_petal>,<contenttweaker:spectralight_petal>,<thermalexpansion:device:5>,<botania:rune:14>,<botania:manaresource:6>]);
+Fey.addRecipe("spectranthemum", <botania:specialflower>.withTag({type: "spectranthemum"}), [<contenttweaker:spectralight_petal>,<contenttweaker:spectralight_petal>,<thermalexpansion:device:5>,<contenttweaker:rune_of_envy>,<botania:manaresource:6>]);
 
 # Bubbell
 mods.botania.Apothecary.removeRecipe("bubbell");
-Fey.addRecipe("bubbell", <botania:specialflower>.withTag({type: "bubbell"}), [<contenttweaker:blubbing_petal>,<contenttweaker:blubbing_petal>,<contenttweaker:suppression_core>,<botania:rune:14>,<botania:manaresource:8>]);
+Fey.addRecipe("bubbell", <botania:specialflower>.withTag({type: "bubbell"}), [<contenttweaker:blubbing_petal>,<contenttweaker:blubbing_petal>,<contenttweaker:suppression_core>,<contenttweaker:rune_of_envy>,<botania:manaresource:8>]);
 
 # Mushrooms
 <ore:petalWhite>.remove(<botania:mushroom>);
@@ -349,23 +349,23 @@ recipes.addShaped(<botania:lens>.withTag({}), [[<botania:manaresource>,<botania:
 
 # Mana Lens: Bore
 recipes.remove(<botania:lens:7>);
-recipes.addShapeless(<botania:lens:7>.withTag({}), [<botania:lens>,<openblocks:block_breaker>,<extrautils2:interactionproxy>,<botania:rune:13>]);
+recipes.addShapeless(<botania:lens:7>.withTag({}), [<botania:lens>,<openblocks:block_breaker>,<extrautils2:interactionproxy>,<contenttweaker:rune_of_wrath>]);
 
 # Mana Lens: Phantom
 recipes.remove(<botania:lens:9>);
-recipes.addShapeless(<botania:lens:9>.withTag({}), [<botania:lens>,<actuallyadditions:block_phantomface>,<botania:platform>,<botania:rune:9>]);
+recipes.addShapeless(<botania:lens:9>.withTag({}), [<botania:lens>,<actuallyadditions:block_phantomface>,<botania:platform>,<contenttweaker:rune_of_lust>]);
 
 # Mana Lens: Magnetizing
 recipes.remove(<botania:lens:10>);
-recipes.addShapeless(<botania:lens:10>.withTag({}), [<botania:lens>,<botania:magnetring>,<enderio:item_material:17>,<botania:rune:12>]);
+recipes.addShapeless(<botania:lens:10>.withTag({}), [<botania:lens>,<botania:magnetring>,<enderio:item_material:17>,<contenttweaker:rune_of_sloth>]);
 
 # Mana Lens: Kindle
 recipes.remove(<botania:lens:15>);
-recipes.addShapeless(<botania:lens:15>.withTag({}), [<botania:lens>,<minecraft:fire_charge>,<abyssalcraft:crystalcluster:15>,<botania:rune:13>]);
+recipes.addShapeless(<botania:lens:15>.withTag({}), [<botania:lens>,<minecraft:fire_charge>,<abyssalcraft:crystalcluster:15>,<contenttweaker:rune_of_wrath>]);
 
 # Mana Lens: Messenger
 recipes.remove(<botania:lens:22>);
-recipes.addShapeless(<botania:lens:22>.withTag({}), [<botania:lens>,<extrautils2:interactionproxy>,<ore:bookshelf>,<botania:rune:11>]);
+recipes.addShapeless(<botania:lens:22>.withTag({}), [<botania:lens>,<extrautils2:interactionproxy>,<ore:bookshelf>,<contenttweaker:rune_of_greed>]);
 
 # Pasture Seeds
 mods.botania.ManaInfusion.removeRecipe(<botania:grassseeds>);
@@ -397,7 +397,7 @@ recipes.addShaped(<botania:grassseeds:8>, [[null,<roots:baffle_cap_mushroom>,nul
 
 # Horn of the Wild
 recipes.remove(<botania:grasshorn>);
-recipes.addShaped(<botania:grasshorn>, [[null,<botania:livingwood>,null],[<botania:livingwood>,<botania:rune:6>,<botania:livingwood>],[<botania:livingwood>,<botania:livingwood>,null]]);
+recipes.addShaped(<botania:grasshorn>, [[null,<botania:livingwood>,null],[<botania:livingwood>,<contenttweaker:rune_of_autumn>,<botania:livingwood>],[<botania:livingwood>,<botania:livingwood>,null]]);
 
 # Horn of the Canopy
 recipes.remove(<botania:grasshorn:1>);
@@ -429,7 +429,7 @@ recipes.addShapedMirrored(<botania:magnetring>.withTag({}), [[<botania:storage:2
 
 # Terrestrial Agglomeration Plate
 recipes.remove(<botania:terraplate>);
-recipes.addShapedMirrored(<botania:terraplate>, [[<contenttweaker:potency_core>,<contenttweaker:potency_core>,<contenttweaker:potency_core>],[<botania:rune:4>,<contenttweaker:dark_realm_soul_block>,<botania:rune:7>],[<botania:rune:5>,<contenttweaker:dark_realm_soul_block>,<botania:rune:6>]]);
+recipes.addShapedMirrored(<botania:terraplate>, [[<contenttweaker:potency_core>,<contenttweaker:potency_core>,<contenttweaker:potency_core>],[<contenttweaker:rune_of_spring>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:rune_of_winter>],[<contenttweaker:rune_of_summer>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:rune_of_autumn>]]);
 
 # Spark
 recipes.remove(<botania:spark>);
@@ -460,31 +460,31 @@ recipes.addShaped(<botania:pylon>, [[<actuallyadditions:item_crystal_empowered:2
 recipes.remove(<botania:pylon:1>);
 recipes.addShaped(<botania:pylon:1>, [[<botania:manaresource:18>,null,<botania:manaresource:18>],[<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>],[<botania:livingwood>,<botania:pylon>,<botania:livingwood>]]);
 
-function addBotaniaTier3RuneRecipe(output as IItemStack, input_rune1 as IItemStack, input_rune2 as IItemStack) {
+function addBotaniaTier3RuneRecipe(output as IItemStack, new_rune as IItemStack, input_rune1 as IItemStack, input_rune2 as IItemStack) {
 	mods.botania.RuneAltar.removeRecipe(output);
-	mods.botania.RuneAltar.addRecipe(output, [input_rune1, input_rune2, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
+	mods.botania.RuneAltar.addRecipe(new_rune, [input_rune1, input_rune2, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
 }
 
 # Rune of Lust
-addBotaniaTier3RuneRecipe(<botania:rune:9>,<botania:rune:4>,<botania:rune:1>);
+addBotaniaTier3RuneRecipe(<botania:rune:9>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_spring>,<contenttweaker:rune_of_fire>);
 
 # Rune of Gluttony
-addBotaniaTier3RuneRecipe(<botania:rune:10>,<botania:rune:6>,<botania:rune:2>);
+addBotaniaTier3RuneRecipe(<botania:rune:10>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_autumn>,<contenttweaker:rune_of_earth>);
 
 # Rune of Greed
-addBotaniaTier3RuneRecipe(<botania:rune:11>,<botania:rune:7>,<botania:rune:3>);
+addBotaniaTier3RuneRecipe(<botania:rune:11>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_winter>,<contenttweaker:rune_of_air>);
 
 # Rune of Sloth
-addBotaniaTier3RuneRecipe(<botania:rune:12>,<botania:rune:7>,<botania:rune:2>);
+addBotaniaTier3RuneRecipe(<botania:rune:12>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_winter>,<contenttweaker:rune_of_earth>);
 
 # Rune of Wrath
-addBotaniaTier3RuneRecipe(<botania:rune:13>,<botania:rune:5>,<botania:rune:1>);
+addBotaniaTier3RuneRecipe(<botania:rune:13>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_summer>,<contenttweaker:rune_of_fire>);
 
 # Rune of Envy
-addBotaniaTier3RuneRecipe(<botania:rune:14>,<botania:rune:5>,<botania:rune:0>);
+addBotaniaTier3RuneRecipe(<botania:rune:14>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_summer>,<contenttweaker:rune_of_water>);
 
 # Rune of Pride
-addBotaniaTier3RuneRecipe(<botania:rune:15>,<botania:rune:6>,<botania:rune:3>);
+addBotaniaTier3RuneRecipe(<botania:rune:15>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_autumn>,<contenttweaker:rune_of_air>);
 
 # Mana Tablet
 recipes.remove(<botania:manatablet>);
@@ -496,7 +496,7 @@ recipes.addShapedMirrored(<botania:magnetringgreater>.withTag({}), [[<contenttwe
 
 # Mana Blaster
 recipes.remove(<botania:managun>);
-recipes.addShapedMirrored(<botania:managun>.withTag({}), [[<botania:rune:13>,<contenttweaker:purified_tablet>,<botania:manaresource:4>],[<botania:livingwood>,<botania:livingwood>,<botania:manaresource:4>],[null,null,<botania:livingwood>]]);
+recipes.addShapedMirrored(<botania:managun>.withTag({}), [[<contenttweaker:rune_of_wrath>,<contenttweaker:purified_tablet>,<botania:manaresource:4>],[<botania:livingwood>,<botania:livingwood>,<botania:manaresource:4>],[null,null,<botania:livingwood>]]);
 
 # Mana Mirror
 recipes.remove(<botania:manamirror>);
@@ -526,7 +526,7 @@ recipes.addShaped("greater_ring_of_mana", <botania:manaringgreater>, [[<contentt
 
 # Soujourner's Sash
 recipes.remove(<botania:travelbelt>);
-recipes.addShapedMirrored(<botania:travelbelt>, [[<botania:rune:11>,<contenttweaker:blood_infused_leather>,<botania:manaresource:4>],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<botania:manaresource:4>,<contenttweaker:blood_infused_leather>,<botania:rune:3>]]);
+recipes.addShapedMirrored(<botania:travelbelt>, [[<contenttweaker:rune_of_greed>,<contenttweaker:blood_infused_leather>,<botania:manaresource:4>],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<botania:manaresource:4>,<contenttweaker:blood_infused_leather>,<contenttweaker:rune_of_air>]]);
 
 # Elementium Sword
 recipes.remove(<botania:elementiumsword>);
@@ -569,15 +569,15 @@ recipes.addShaped(<botania:elementiumhelm>, [[<botania:manaresource:7>,<contentt
 
 # Elementium Chestplate
 recipes.remove(<botania:elementiumchest>);
-recipes.addShaped(<botania:elementiumchest>, [[<botania:manaresource:7>,<botania:rune:10>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_chest>,<botania:manaresource:7>],[<botania:manaresource:7>,<botania:manaresource:7>,<botania:manaresource:7>]]);
+recipes.addShaped(<botania:elementiumchest>, [[<botania:manaresource:7>,<contenttweaker:rune_of_gluttony>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_chest>,<botania:manaresource:7>],[<botania:manaresource:7>,<botania:manaresource:7>,<botania:manaresource:7>]]);
 
 # Elementium Leggings
 recipes.remove(<botania:elementiumlegs>);
-recipes.addShaped(<botania:elementiumlegs>, [[<botania:manaresource:7>,<botania:rune:9>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_leggings>,<botania:manaresource:7>],[<botania:manaresource:7>,null,<botania:manaresource:7>]]);
+recipes.addShaped(<botania:elementiumlegs>, [[<botania:manaresource:7>,<contenttweaker:rune_of_lust>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_leggings>,<botania:manaresource:7>],[<botania:manaresource:7>,null,<botania:manaresource:7>]]);
 
 # Elementium Boots
 recipes.remove(<botania:elementiumboots>);
-recipes.addShaped(<botania:elementiumboots>, [[<botania:manaresource:7>,<botania:rune:15>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_boots>,<botania:manaresource:7>]]);
+recipes.addShaped(<botania:elementiumboots>, [[<botania:manaresource:7>,<contenttweaker:rune_of_pride>,<botania:manaresource:7>],[<botania:manaresource:7>,<bloodmagic:living_armour_boots>,<botania:manaresource:7>]]);
 
 # Terrasteel Helmet
 recipes.removeShaped(<botania:terrasteelhelm>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[null,<*>,null]]);
@@ -598,7 +598,7 @@ recipes.addShaped(<botania:terrasteelboots>, [[<botania:manaresource:4>,<botania
 
 # Tectonic Girdle
 recipes.remove(<botania:knockbackbelt>);
-recipes.addShapedMirrored(<botania:knockbackbelt>, [[<contenttweaker:purified_tablet>,<contenttweaker:blood_infused_leather>,null],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<botania:rune:12>,<contenttweaker:blood_infused_leather>,<contenttweaker:purified_tablet>]]);
+recipes.addShapedMirrored(<botania:knockbackbelt>, [[<contenttweaker:purified_tablet>,<contenttweaker:blood_infused_leather>,null],[<contenttweaker:blood_infused_leather>,null,<contenttweaker:blood_infused_leather>],[<contenttweaker:rune_of_sloth>,<contenttweaker:blood_infused_leather>,<contenttweaker:purified_tablet>]]);
 
 # Tiny Planet
 recipes.remove(<botania:tinyplanet>);
@@ -606,7 +606,7 @@ recipes.addShaped(<botania:tinyplanet>.withTag({}), [[<botania:livingrock>,<bota
 
 # Charm of the Diva
 recipes.remove(<botania:divacharm>);
-recipes.addShaped(<botania:divacharm>, [[<botania:manaresource:5>,<botania:manaresource:5>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<botania:tinyplanet>.withTag({}),<contenttweaker:holy_core>],[<contenttweaker:holy_core>,<contenttweaker:holy_core>,<botania:rune:15>]]);
+recipes.addShaped(<botania:divacharm>, [[<botania:manaresource:5>,<botania:manaresource:5>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<botania:tinyplanet>.withTag({}),<contenttweaker:holy_core>],[<contenttweaker:holy_core>,<contenttweaker:holy_core>,<contenttweaker:rune_of_pride>]]);
 
 # Flügel Tiara
 recipes.remove(<botania:flighttiara>);
@@ -649,7 +649,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<botania:quartz:3>, <botania:qu
 
 # Gaia Pylon
 recipes.remove(<botania:pylon:2>);
-recipes.addShaped(<botania:pylon:2>, [[<botania:storage:4>,null,<botania:storage:4>],[<contenttweaker:magical_tablet>,<botania:pylon:1>,<contenttweaker:magical_tablet>],[<contenttweaker:magical_tablet>,<botania:rune:14>,<contenttweaker:magical_tablet>]]);
+recipes.addShaped(<botania:pylon:2>, [[<botania:storage:4>,null,<botania:storage:4>],[<contenttweaker:magical_tablet>,<botania:pylon:1>,<contenttweaker:magical_tablet>],[<contenttweaker:magical_tablet>,<contenttweaker:rune_of_envy>,<contenttweaker:magical_tablet>]]);
 
 # Extrapolated Bucket
 recipes.remove(<botania:openbucket>);
@@ -668,11 +668,11 @@ recipes.addShapedMirrored(<botania:supertravelbelt>, [[<botania:manaresource:7>,
 
 # Ring of Far Reach
 recipes.remove(<botania:reachring>);
-recipes.addShapedMirrored(<botania:reachring>, [[<botania:rune:11>,<botania:manaresource:7>,<botania:manaresource:5>],[<botania:manaresource:7>,null,<botania:manaresource:7>],[<botania:manaresource:5>,<botania:manaresource:7>,<contenttweaker:rune_of_deception>]]);
+recipes.addShapedMirrored(<botania:reachring>, [[<contenttweaker:rune_of_greed>,<botania:manaresource:7>,<botania:manaresource:5>],[<botania:manaresource:7>,null,<botania:manaresource:7>],[<botania:manaresource:5>,<botania:manaresource:7>,<contenttweaker:rune_of_deception>]]);
 
 # Ring of Dexterous Motion
 recipes.remove(<botania:dodgering>);
-recipes.addShapedMirrored(<botania:dodgering>, [[<actuallyadditions:item_crystal_empowered:4>,<botania:manaresource>,null],[<botania:manaresource>,null,<botania:manaresource>],[null,<botania:manaresource>,<botania:rune:3>]]);
+recipes.addShapedMirrored(<botania:dodgering>, [[<actuallyadditions:item_crystal_empowered:4>,<botania:manaresource>,null],[<botania:manaresource>,null,<botania:manaresource>],[null,<botania:manaresource>,<contenttweaker:rune_of_air>]]);
 
 # The Spectator
 recipes.remove(<botania:itemfinder>);
@@ -687,28 +687,28 @@ function addBotaniaSparkAugmentRecipe(output as IItemStack, input_rune as IItemS
 }
 
 # Spark Augment: Dispersive
-addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:0>, <botania:rune:4>);
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:0>, <contenttweaker:rune_of_spring>);
 
 # Spark Augment: Dominant
-addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:1>, <botania:rune:5>);
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:1>, <contenttweaker:rune_of_summer>);
 
 # Spark Augment: Recessive
-addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:2>, <botania:rune:6>);
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:2>, <contenttweaker:rune_of_autumn>);
 
 # Spark Augment: Isolated
-addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:3>, <botania:rune:7>);
+addBotaniaSparkAugmentRecipe(<botania:sparkupgrade:3>, <contenttweaker:rune_of_winter>);
 
 # Cloak of Virtue
 recipes.remove(<botania:holycloak>);
-recipes.addShaped(<botania:holycloak>.withTag({}), [[<contenttweaker:holy_core>,<botania:rune:15>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
+recipes.addShaped(<botania:holycloak>.withTag({}), [[<contenttweaker:holy_core>,<contenttweaker:rune_of_pride>,<contenttweaker:holy_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
 
 # Cloak of Sin
 recipes.remove(<botania:unholycloak>);
-recipes.addShaped(<botania:unholycloak>.withTag({}), [[<contenttweaker:offensive_core>,<botania:rune:13>,<contenttweaker:offensive_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
+recipes.addShaped(<botania:unholycloak>.withTag({}), [[<contenttweaker:offensive_core>,<contenttweaker:rune_of_wrath>,<contenttweaker:offensive_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
 
 # Cloak of Balance
 recipes.remove(<botania:balancecloak>);
-recipes.addShaped(<botania:balancecloak>.withTag({}), [[<contenttweaker:gusty_core>,<botania:rune:11>,<contenttweaker:gusty_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
+recipes.addShaped(<botania:balancecloak>.withTag({}), [[<contenttweaker:gusty_core>,<contenttweaker:rune_of_greed>,<contenttweaker:gusty_core>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>],[<botania:manaresource:5>,<contenttweaker:magical_tablet>,<botania:manaresource:5>]]);
 
 # Assembly Halo
 recipes.remove(<botania:craftinghalo>);
@@ -735,7 +735,7 @@ recipes.addShapeless(<botania:overgrowthseed>, [<minecraft:wheat_seeds>,<botania
 
 # Livingwood Bow
 recipes.remove(<botania:livingwoodbow>);
-recipes.addShapedMirrored(<botania:livingwoodbow>, [[null,<botania:manaresource:3>,<botania:manaresource:16>],[<botania:rune:1>,<minecraft:bow>,<botania:manaresource:16>],[null,<botania:manaresource:3>,<botania:manaresource:16>]]);
+recipes.addShapedMirrored(<botania:livingwoodbow>, [[null,<botania:manaresource:3>,<botania:manaresource:16>],[<contenttweaker:rune_of_fire>,<minecraft:bow>,<botania:manaresource:16>],[null,<botania:manaresource:3>,<botania:manaresource:16>]]);
 
 # Crystal Bow
 recipes.remove(<botania:crystalbow>);
@@ -767,11 +767,11 @@ recipes.addShapedMirrored(<botania:cacophonium>.withTag({}), [[null,glod_crystal
 
 # Rod of the Shifting Crust
 recipes.remove(<botania:exchangerod>);
-recipes.addShapedMirrored(<botania:exchangerod>.withTag({}), [[null,<botania:manaresource:5>,<botania:rune:12>],[null,<botania:manaresource:3>,<botania:manaresource:5>],[<botania:manaresource:3>,null,null]]);
+recipes.addShapedMirrored(<botania:exchangerod>.withTag({}), [[null,<botania:manaresource:5>,<contenttweaker:rune_of_sloth>],[null,<botania:manaresource:3>,<botania:manaresource:5>],[<botania:manaresource:3>,null,null]]);
 
 # Planetstirder's Sash
 recipes.remove(<botania:speedupbelt>);
-recipes.addShapedMirrored(<botania:speedupbelt>.withTag({}), [[<contenttweaker:blood_infused_leather>,<bloodmagic:slate:2>,<contenttweaker:blood_infused_leather>],[<bloodmagic:slate:2>,<botania:travelbelt>,<bloodmagic:slate:2>],[<botania:rune:12>,<bloodmagic:slate:2>,<contenttweaker:blood_infused_leather>]]);
+recipes.addShapedMirrored(<botania:speedupbelt>.withTag({}), [[<contenttweaker:blood_infused_leather>,<bloodmagic:slate:2>,<contenttweaker:blood_infused_leather>],[<bloodmagic:slate:2>,<botania:travelbelt>,<bloodmagic:slate:2>],[<contenttweaker:rune_of_sloth>,<bloodmagic:slate:2>,<contenttweaker:blood_infused_leather>]]);
 
 # Bauble Case
 recipes.remove(<botania:baublebox>);
@@ -795,7 +795,7 @@ recipes.addShaped(<botania:spreader:1>, [[<enderio:item_alloy_ingot:3>,<enderio:
 
 # Elven Mana Spreader
 recipes.remove(<botania:spreader:2>);
-recipes.addShapedMirrored(<botania:spreader:2>, [[<botania:dreamwood>,<botania:dreamwood>,<botania:dreamwood>],[<botania:dreamwood>,<botania:spreader>,<botania:rune:9>],[<botania:dreamwood>,<botania:dreamwood>,<botania:dreamwood>]]);
+recipes.addShapedMirrored(<botania:spreader:2>, [[<botania:dreamwood>,<botania:dreamwood>,<botania:dreamwood>],[<botania:dreamwood>,<botania:spreader>,<contenttweaker:rune_of_lust>],[<botania:dreamwood>,<botania:dreamwood>,<botania:dreamwood>]]);
 
 # Gaia Mana Spreader
 recipes.remove(<botania:spreader:3>);
@@ -823,15 +823,15 @@ recipes.addShaped(<botania:manavoid>, [[<botania:livingrock>,<botania:livingrock
 
 # Spreader Turntable
 recipes.remove(<botania:turntable>);
-recipes.addShaped(<botania:turntable>, [[<botania:livingwood>,<thermalfoundation:material:263>,<botania:livingwood>],[<thermalfoundation:material:263>,<botania:rune:12>,<thermalfoundation:material:263>],[<botania:livingwood>,<thermalfoundation:material:263>,<botania:livingwood>]]);
+recipes.addShaped(<botania:turntable>, [[<botania:livingwood>,<thermalfoundation:material:263>,<botania:livingwood>],[<thermalfoundation:material:263>,<contenttweaker:rune_of_sloth>,<thermalfoundation:material:263>],[<botania:livingwood>,<thermalfoundation:material:263>,<botania:livingwood>]]);
 
 # Alchemy Catalyst
 recipes.remove(<botania:alchemycatalyst>);
-recipes.addShaped(<botania:alchemycatalyst>, [[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>],[<botania:livingrock>,<bloodmagic:alchemy_table>,<botania:livingrock>],[<botania:livingrock>,<botania:rune:14>,<botania:livingrock>]]);
+recipes.addShaped(<botania:alchemycatalyst>, [[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>],[<botania:livingrock>,<bloodmagic:alchemy_table>,<botania:livingrock>],[<botania:livingrock>,<contenttweaker:rune_of_envy>,<botania:livingrock>]]);
 
 # Conjuration Catalyst
 recipes.remove(<botania:conjurationcatalyst>);
-recipes.addShaped(<botania:conjurationcatalyst>, [[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>],[<botania:livingrock>,<botania:alchemycatalyst>,<botania:livingrock>],[<botania:livingrock>,<botania:rune:11>,<botania:livingrock>]]);
+recipes.addShaped(<botania:conjurationcatalyst>, [[<botania:livingrock>,<botania:livingrock>,<botania:livingrock>],[<botania:livingrock>,<botania:alchemycatalyst>,<botania:livingrock>],[<botania:livingrock>,<contenttweaker:rune_of_greed>,<botania:livingrock>]]);
 
 # Gaia Spirit Ingot
 recipes.remove(<botania:manaresource:14>);
@@ -899,7 +899,7 @@ recipes.addShaped(<botania:manaresource:12>, [[<enderio:item_alloy_ingot:3>,<bot
 
 # Manatide Bellows
 recipes.remove(<botania:bellows>);
-recipes.addShaped(<botania:bellows>, [[<botania:livingwood0slab>,<botania:livingwood0slab>,<botania:livingwood0slab>],[<contenttweaker:blood_infused_leather>,<botania:rune:3>,<contenttweaker:blood_infused_leather>],[<botania:livingwood0slab>,<botania:livingwood0slab>,<botania:livingwood0slab>]]);
+recipes.addShaped(<botania:bellows>, [[<botania:livingwood0slab>,<botania:livingwood0slab>,<botania:livingwood0slab>],[<contenttweaker:blood_infused_leather>,<contenttweaker:rune_of_air>,<contenttweaker:blood_infused_leather>],[<botania:livingwood0slab>,<botania:livingwood0slab>,<botania:livingwood0slab>]]);
 
 # Cellular Block
 recipes.remove(<botania:cellblock>);
@@ -907,11 +907,11 @@ recipes.addShaped(<botania:cellblock> * 4, [[<mysticalagriculture:nature_essence
 
 # Botanical Brewery
 recipes.remove(<botania:brewery>);
-recipes.addShaped(<botania:brewery>, [[<contenttweaker:purified_tablet>,null,<contenttweaker:purified_tablet>],[<botania:livingrock>,<botania:rune:8>,<botania:livingrock>],[<botania:livingrock>,<botania:storage:4>,<botania:livingrock>]]);
+recipes.addShaped(<botania:brewery>, [[<contenttweaker:purified_tablet>,null,<contenttweaker:purified_tablet>],[<botania:livingrock>,<contenttweaker:rune_of_mana>,<botania:livingrock>],[<botania:livingrock>,<botania:storage:4>,<botania:livingrock>]]);
 
 # Tainted Blood Pendant
 recipes.remove(<botania:bloodpendant>);
-recipes.addShapedMirrored(<botania:bloodpendant>.withTag({}), [[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>],[<botania:manaresource:16>,<botania:rune:14>,<botania:manaresource:16>],[<botania:manaresource:16>,<botania:manaresource:16>,<contenttweaker:steaming_restonia_crystal_block>]]);
+recipes.addShapedMirrored(<botania:bloodpendant>.withTag({}), [[<botania:manaresource:16>,<botania:manaresource:16>,<botania:manaresource:16>],[<botania:manaresource:16>,<contenttweaker:rune_of_envy>,<botania:manaresource:16>],[<botania:manaresource:16>,<botania:manaresource:16>,<contenttweaker:steaming_restonia_crystal_block>]]);
 
 # Incense Stick
 recipes.remove(<botania:incensestick>);
@@ -961,5 +961,121 @@ mods.botania.Orechid.removeOre("oreMithril");
 # Lexica Botania tooltip
 <botania:lexicon>.addTooltip(format.red(format.bold("Warninrg:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
 <botania:lexicon>.addTooltip(format.white(format.bold("Always refer to JEI when crafting.")));
+
+# Rod of the Seas
+recipes.remove(<botania:waterrod>);
+recipes.addShapedMirrored(<botania:waterrod>, [[null,null,<minecraft:potion>.withTag({Potion: "minecraft:water"})],[null,<botania:manaresource:3>,null],[<contenttweaker:rune_of_water>,null,null]]);
+
+# Ring of Chordata
+recipes.remove(<botania:waterring>);
+recipes.addShapedMirrored(<botania:waterring>.withTag({}), [[<contenttweaker:rune_of_water>,<botania:manaresource>,<minecraft:fish:3>],[<botania:manaresource>,null,<botania:manaresource>],[<minecraft:fish:3>,<botania:manaresource>,null]]);
+
+# Mana Lens: Efficiency
+recipes.removeShapeless(<botania:lens:4>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:4>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_water>]);
+
+# Mana Lens: Weight
+recipes.remove(<botania:lens:13>);
+recipes.addShaped(<botania:lens:13>.withTag({}), [[<minecraft:prismarine_shard>,<minecraft:prismarine_shard>,<minecraft:prismarine_shard>],[<minecraft:prismarine_shard>,<botania:lens>,<minecraft:prismarine_shard>],[<minecraft:prismarine_shard>,<contenttweaker:rune_of_water>,<minecraft:prismarine_shard>]]);
+
+# Snowflake Pendant
+recipes.remove(<botania:icependant>);
+recipes.addShaped(<botania:icependant>, [[<contenttweaker:rune_of_winter>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource>,<botania:manaresource:16>,<contenttweaker:rune_of_water>]]);
+
+# Benevolent Goddess' Charm
+recipes.remove(<botania:goddesscharm>);
+recipes.addShapedMirrored(<botania:goddesscharm>, [[null,<botania:petal:6>,null],[null,<botania:petal:6>,null],[<contenttweaker:rune_of_water>,<botania:manaresource:2>,<contenttweaker:rune_of_fire>]]);
+
+# Rod of the Depths
+recipes.remove(<botania:cobblerod>);
+recipes.addShapedMirrored(<botania:cobblerod>, [[null,<contenttweaker:rune_of_fire>,<extrautils2:compressedcobblestone>],[null,<extrautils2:compressedcobblestone>,<contenttweaker:rune_of_water>],[<extrautils2:compressedcobblestone>,null,null]]);
+
+# Rod the the Molten Core
+recipes.remove(<botania:smeltrod>);
+recipes.addShapedMirrored(<botania:smeltrod>, [[null,<contenttweaker:incendium>,<contenttweaker:rune_of_fire>],[null,<botania:manaresource:3>,<contenttweaker:incendium>],[<botania:manaresource:3>,null,null]]);
+
+# Mana Lens: Potency
+recipes.removeShapeless(<botania:lens:2>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:2>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_fire>]);
+
+# Rod of the Hells
+recipes.remove(<botania:firerod>);
+recipes.addShapedMirrored(<botania:firerod>, [[null,null,<contenttweaker:incendium>],[null,<botania:manaresource:3>,null],[<contenttweaker:rune_of_fire>,null,null]]);
+
+# Pyroclast Pendant
+recipes.remove(<botania:lavapendant>);
+recipes.addShapedMirrored(<botania:lavapendant>, [[<contenttweaker:rune_of_summer>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource>,<botania:manaresource:16>,<contenttweaker:rune_of_fire>]]);
+
+# Third Eye
+recipes.remove(<botania:thirdeye>);
+recipes.addShaped(<botania:thirdeye>, [[<contenttweaker:sanctus>,<contenttweaker:rune_of_earth>,<contenttweaker:sanctus>],[<minecraft:quartz_block>,<minecraft:ender_eye>,<minecraft:quartz_block>],[<contenttweaker:sanctus>,<botania:manaresource:2>,<contenttweaker:sanctus>]]);
+
+# Stone Temperance
+recipes.remove(<botania:temperancestone>);
+recipes.addShaped(<botania:temperancestone>, [[null,<ore:stone>,null],[<ore:stone>,<contenttweaker:rune_of_earth>,<ore:stone>],[null,<ore:stone>,null]]);
+
+# Ring of the Mantle
+recipes.remove(<botania:miningring>);
+recipes.addShapedMirrored(<botania:miningring>.withTag({}), [[<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<botania:manaresource>,<contenttweaker:rune_of_earth>],[<botania:manaresource>,null,<botania:manaresource>],[null,<botania:manaresource>,null]]);
+
+# Mana Lens: Resistance
+recipes.removeShapeless(<botania:lens:3>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:3>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_earth>]);
+
+# Shard of Laputa I
+recipes.remove(<botania:laputashard>);
+recipes.addShapedMirrored(<botania:laputashard>, [[<botania:manaresource:5>,<botania:miniisland:*>,<botania:manaresource:5>],[<minecraft:prismarine_shard>,<botania:manaresource:9>,<minecraft:prismarine_shard>],[<contenttweaker:rune_of_earth>,<botania:manaresource:5>,<contenttweaker:rune_of_air>]]);
+
+# Rod of the Lands
+recipes.remove(<botania:dirtrod>);
+recipes.addShapedMirrored(<botania:dirtrod>, [[null,null,<extrautils2:compresseddirt>],[null,<botania:manaresource:3>,null],[<contenttweaker:rune_of_earth>,null,null]]);
+
+# Rod of the Skies
+recipes.remove(<botania:tornadorod>);
+recipes.addShapedMirrored(<botania:tornadorod>.withTag({}), [[null,null,<contenttweaker:aether>],[null,<botania:manaresource:3>,null],[<contenttweaker:rune_of_air>,null,null]]);
+
+# Livingwood Slingshot
+recipes.remove(<botania:slingshot>);
+recipes.addShapedMirrored(<botania:slingshot>, [[null,<botania:manaresource:3>,<contenttweaker:rune_of_air>],[null,<botania:manaresource:3>,<botania:manaresource:3>],[<botania:manaresource:3>,null,null]]);
+
+# Rod of the Highlands
+recipes.remove(<botania:skydirtrod>);
+recipes.addShapeless(<botania:skydirtrod>, [<botania:dirtrod>,<botania:manaresource:8>,<contenttweaker:rune_of_air>]);
+
+# Mana Lens: Influence
+recipes.removeShaped(<botania:lens:12>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
+recipes.addShaped(<botania:lens:12>.withTag({}), [[<minecraft:prismarine_shard>,<contenttweaker:rune_of_air>,<minecraft:prismarine_shard>],[<minecraft:prismarine_shard>,<botania:lens>,<minecraft:prismarine_shard>],[<minecraft:prismarine_shard>,<minecraft:prismarine_shard>,<minecraft:prismarine_shard>]]);
+
+# Cirrus Amulet
+recipes.remove(<botania:cloudpendant>);
+recipes.addShapedMirrored(<botania:cloudpendant>.withTag({}), [[<contenttweaker:rune_of_autumn>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource:16>,<botania:manaresource>,<contenttweaker:rune_of_air>]]);
+
+# Mana Lens: Velocity
+recipes.removeShapeless(<botania:lens:1>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:1>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_air>]);
+
+# Rod of the Terra Firma
+recipes.remove(<botania:terraformrod>);
+recipes.addShapedMirrored(<botania:terraformrod>, [[null,<contenttweaker:rune_of_winter>,<botania:manaresource:4>],[<contenttweaker:rune_of_autumn>,<botania:dirtrod>,<contenttweaker:rune_of_spring>],[<botania:grassseeds>,<contenttweaker:rune_of_summer>,null]]);
+
+# Mana Lens: Bounce
+recipes.removeShapeless(<botania:lens:5>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:5>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_summer>]);
+
+# Mana Lens: Gravity
+recipes.removeShapeless(<botania:lens:6>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:6>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_winter>]);
+
+# Band of Aura
+recipes.remove(<botania:auraring>);
+recipes.addShapedMirrored(<botania:auraring>, [[<contenttweaker:rune_of_mana>,<botania:manaresource>,null],[<botania:manaresource>,null,<botania:manaresource>],[null,<botania:manaresource>,null]]);
+
+# Mana Lens: Damaging
+recipes.removeShapeless(<botania:lens:8>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:8>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_wrath>]);
+
+# Mana Lens: Entropic
+recipes.removeShapeless(<botania:lens:11>, [<*>,<*>]);
+recipes.addShapeless(<botania:lens:11>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_envy>]);
 
 print("ENDING Botania.zs");

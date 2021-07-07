@@ -12,7 +12,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@8"
+            "item": "contenttweaker:rune_of_mana"
         },
         {
             "type": "item",

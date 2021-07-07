@@ -644,8 +644,8 @@ Grinder.addRecipe(<rftools:dimensional_shard>, <ore:oreDimensionalShard>, 4, <rf
 	mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>, 4000, <rftools:dimensional_shard> * 4, 50);
 }*/
 mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>.firstItem, 4000, <rftools:dimensional_shard> * 4, 50);
-EUCrusher.add(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>.firstItem);
-LightningCrusher.add(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>);
+EUCrusher.add(<rftools:dimensional_shard> * 4, <rftools:dimensional_shard_ore>);
+LightningCrusher.add(<rftools:dimensional_shard> * 4, <rftools:dimensional_shard_ore>);
 mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard> * 4);
 
 print("ENDING OreProcessingAdditions.zs");

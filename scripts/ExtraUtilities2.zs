@@ -66,7 +66,7 @@ recipes.addShaped(<extrautils2:unstableingots:1>, [[<minecraft:iron_nugget>],[<c
 
 # Moon Stone
 recipes.remove(<extrautils2:ingredients:5>);
-recipes.addShaped(<extrautils2:ingredients:5> * 3, [[<extrautils2:ingredients:3>,<extrautils2:ingredients:3>,<extrautils2:ingredients:3>],[<extrautils2:ingredients:3>,<ore:ingotUnstable>,<extrautils2:ingredients:3>],[<extrautils2:ingredients:3>,<extrautils2:ingredients:3>,<extrautils2:ingredients:3>]]);
+recipes.addShaped(<extrautils2:ingredients:5> * 6, [[<extrautils2:ingredients:3>,<extrautils2:ingredients:3>,<extrautils2:ingredients:3>],[<extrautils2:ingredients:3>,<ore:ingotUnstable>,<extrautils2:ingredients:3>],[<extrautils2:ingredients:3>,<extrautils2:ingredients:3>,<extrautils2:ingredients:3>]]);
 
 # Watering Can
 recipes.remove(<extrautils2:wateringcan:1000>);

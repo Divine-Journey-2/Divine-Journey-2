@@ -239,7 +239,7 @@ recipes.addShaped(<rftools:ender_monitor>, [[<enderio:item_alloy_ingot:3>,<therm
 
 # Storage Scanner
 recipes.remove(<rftools:storage_scanner>);
-recipes.addShaped(<rftools:storage_scanner>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<thermalfoundation:material:352>,<thermalfoundation:material:295>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<rftools:storage_scanner>, [[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<alchemistry:ingot:90>,<thermalfoundation:material:295>,<alchemistry:ingot:90>]]);
 
 # Elevator
 recipes.remove(<rftools:elevator>);
@@ -316,7 +316,7 @@ recipes.addShapedMirrored(<rftools:machine_infuser>, [[<alchemistry:ingot:90>,<r
 
 # Scanner
 recipes.remove(<rftools:scanner>);
-recipes.addShaped(<rftools:scanner>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<rftools:shape_card>,<rftools:machine_frame>,<rftools:shape_card>],[<thermalfoundation:material:352>,<extrautils2:scanner>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<rftools:scanner>, [[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>],[<rftools:shape_card>,<rftools:machine_frame>,<rftools:shape_card>],[<alchemistry:ingot:90>,<extrautils2:scanner>,<alchemistry:ingot:90>]]);
 
 # Locator
 recipes.remove(<rftools:locator>);
@@ -328,10 +328,83 @@ recipes.addShaped(<rftools:projector>, [[<thermalfoundation:material:352>,<openb
 
 # Remote Scanner
 recipes.remove(<rftools:remote_scanner>);
-recipes.addShaped(<rftools:remote_scanner>, [[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>],[<extrautils2:powerbattery>,<rftools:scanner>,<extrautils2:powerbattery>],[<thermalfoundation:material:352>,<appliedenergistics2:wireless_access_point>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<rftools:remote_scanner>, [[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>],[<extrautils2:powerbattery>,<rftools:scanner>,<extrautils2:powerbattery>],[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>]]);
 
 # Block Protector
 recipes.remove(<rftools:block_protector>);
 recipes.addShaped(<rftools:block_protector>, [[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>],[<rftools:infused_enderpearl>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>]]);
+
+function addRFToolsEnvironmentalModualeRecipe(output as IItemStack, input_syringe as IItemStack, input_potion as IItemStack) {
+	recipes.remove(output);
+	recipes.addShaped(output, [[null,input_syringe,null],[<evilcraft:golden_string>,<immersiveengineering:sheetmetal:10>,<evilcraft:golden_string>],[input_potion,input_potion,input_potion]]);
+}
+
+function addRFToolsEnvironmentalModualePlusRecipe(output as IItemStack, input_module as IItemStack, input_potion as IItemStack, input_vis_crystal as IItemStack) {
+	recipes.remove(output);
+	recipes.addShaped(output, [[input_potion,input_potion,input_potion],[input_vis_crystal,input_module,input_vis_crystal],[input_potion,input_potion,input_potion]]);
+}
+
+# Regeneration Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:regeneration_module>,<rftools:syringe>.withTag({mobName: "Iron Golem", level: 10, mobId: "minecraft:villager_golem"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}));
+
+# Regeneration Plus Environmental Module
+addRFToolsEnvironmentalModualePlusRecipe(<rftools:regenerationplus_module>,<rftools:regeneration_module>,<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<contenttweaker:condensed_vis_crystal_auram>);
+
+# Speed Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:speed_module>,<rftools:syringe>.withTag({mobName: "Horse", level: 10, mobId: "minecraft:horse"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}));
+
+# Speed Plus Environmental Module
+addRFToolsEnvironmentalModualePlusRecipe(<rftools:speedplus_module>,<rftools:speed_module>,<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<contenttweaker:condensed_vis_crystal_motus>);
+
+# Haste Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:haste_module>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 32 as short}]}),<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}));
+
+# Haste Plus Environmental Module
+addRFToolsEnvironmentalModualePlusRecipe(<rftools:hasteplus_module>,<rftools:haste_module>,<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<contenttweaker:condensed_vis_crystal_humanus>);
+
+# Saturation Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:saturation_module>,<abyssalcraft:mre>,<contenttweaker:rune_of_greed>);
+
+# Saturation Plus Environmental Module
+addRFToolsEnvironmentalModualePlusRecipe(<rftools:saturationplus_module>,<rftools:saturation_module>,<contenttweaker:rune_of_greed>,<contenttweaker:condensed_vis_crystal_humanus>);
+
+# Feather Falling Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:featherfalling_module>,<rftools:syringe>.withTag({mobName: "Chicken", level: 10, mobId: "minecraft:chicken"}),<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}));
+
+# Feather Falling Plus Environmental Module
+addRFToolsEnvironmentalModualePlusRecipe(<rftools:featherfallingplus_module>,<rftools:featherfalling_module>,<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<contenttweaker:condensed_vis_crystal_volatus>);
+
+# Flight Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:flight_module>,<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<extrautils2:chickenring:1>);
+
+# Peaceful Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:peaceful_module>,<rftools:peace_essence>,<torchmaster:mega_torch>);
+
+# Water Breathing Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:waterbreathing_module>,<rftools:syringe>.withTag({mobName: "Elder Guardian", level: 10, mobId: "minecraft:elder_guardian"}),<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_water_breathing"}));
+
+# Night Vision Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:nightvision_module>,<rftools:syringe>.withTag({mobName: "Cave Spider", level: 10, mobId: "minecraft:cave_spider"}),<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_night_vision"}));
+
+# Blindness Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:blindness_module>,<rftools:syringe>.withTag({mobName: "Squid", level: 10, mobId: "minecraft:squid"}),<contenttweaker:dark_core>);
+
+# Weakness Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:weakness_module>,<rftools:syringe>.withTag({mobName: "Bat", level: 10, mobId: "minecraft:bat"}),<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_weakness"}));
+
+# Poison Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:poison_module>,<rftools:syringe>.withTag({mobName: "Cave Spider", level: 10, mobId: "minecraft:cave_spider"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison4"}));
+
+# Slowness Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:slowness_module>,<rftools:syringe>.withTag({mobName: "Husk", level: 10, mobId: "minecraft:husk"}),<minecraft:lingering_potion>.withTag({Potion: "minecraft:long_slowness"}));
+
+# Glowing Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:glowing_module>,<rftools:syringe>.withTag({mobName: "Blaze", level: 10, mobId: "minecraft:blaze"}),<thermalfoundation:storage_alloy:6>);
+
+# Luck Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:luck_module>,<rftools:syringe>.withTag({mobName: "Shulker", level: 10, mobId: "minecraft:shulker"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck4"}));
+
+# No Teleport Environmental Module
+addRFToolsEnvironmentalModualeRecipe(<rftools:noteleport_module>,<rftools:syringe>.withTag({mobName: "Enderman", level: 10, mobId: "minecraft:enderman"}),<enderio:block_inhibitor_obelisk>);
 
 print("ENDING RFTools.zs");

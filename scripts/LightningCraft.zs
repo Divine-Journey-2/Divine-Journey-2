@@ -88,7 +88,7 @@ addLightningCraftTerminalRecipe(<lightningcraft:air_terminal:9>, <lightningcraft
 
 # Thunderstone
 recipes.remove(<lightningcraft:stone_block>);
-recipes.addShaped(<lightningcraft:stone_block> * 4, [[<bewitchment:scorned_bricks>,<lightningcraft:ingot>,<bewitchment:scorned_bricks>],[<lightningcraft:ingot>,<bloodmagic:slate:4>,<lightningcraft:ingot>],[<bewitchment:scorned_bricks>,<lightningcraft:ingot>,<bewitchment:scorned_bricks>]]);
+recipes.addShaped(<lightningcraft:stone_block> * 16, [[<bewitchment:scorned_bricks>,<lightningcraft:ingot>,<bewitchment:scorned_bricks>],[<lightningcraft:ingot>,<bloodmagic:slate:4>,<lightningcraft:ingot>],[<bewitchment:scorned_bricks>,<lightningcraft:ingot>,<bewitchment:scorned_bricks>]]);
 
 # Lightning Infusion Table
 recipes.remove(<lightningcraft:lightning_infuser>);

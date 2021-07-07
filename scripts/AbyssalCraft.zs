@@ -610,7 +610,7 @@ function(out, ins, cInfo) {
 
 # Ritual of Shadows
 mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:shadowboss");
-mods.abyssalcraft.SummonRitual.addRitual("summonSacthoth", 4, 53, 100000 as float, false, "abyssalcraft:shadowboss", [<abyssalcraft:oc>,<bloodmagic:item_demon_crystal:1>,<evilcraft:inverted_potentia:1>,<bloodmagic:item_demon_crystal:1>,<botania:rune:7>,<bloodmagic:item_demon_crystal:1>,<abyssalcraft:ingotblock:3>,<bloodmagic:item_demon_crystal:1>] as IIngredient[], false);
+mods.abyssalcraft.SummonRitual.addRitual("summonSacthoth", 4, 53, 100000 as float, false, "abyssalcraft:shadowboss", [<abyssalcraft:oc>,<bloodmagic:item_demon_crystal:1>,<evilcraft:inverted_potentia:1>,<bloodmagic:item_demon_crystal:1>,<contenttweaker:rune_of_winter>,<bloodmagic:item_demon_crystal:1>,<abyssalcraft:ingotblock:3>,<bloodmagic:item_demon_crystal:1>] as IIngredient[], false);
 game.setLocalization("ac.ritual.summonSacthoth", "Ritual of Shadows");
 game.setLocalization("ac.ritual.summonSacthoth.desc", "Summons Sacthoth, Harbinger of Doom, from the Dark Realm. Offer him your most valuable items and as much PE as you can hold... Maybe he'll appear...");
 

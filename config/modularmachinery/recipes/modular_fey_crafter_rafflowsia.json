@@ -12,12 +12,12 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@15"
+            "item": "contenttweaker:rune_of_pride"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@10"
+            "item": "contenttweaker:rune_of_gluttony"
         },
         {
             "type": "item",

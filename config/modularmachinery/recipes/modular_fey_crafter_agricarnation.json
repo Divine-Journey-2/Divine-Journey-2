@@ -12,12 +12,12 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@4"
+            "item": "contenttweaker:rune_of_spring"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:rune@5"
+            "item": "contenttweaker:rune_of_summer"
         },
         {
             "type": "item",

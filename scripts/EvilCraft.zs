@@ -207,7 +207,7 @@ recipes.remove(<evilcraft:spirit_reanimator>);
 
 # Sceptre of Thunder
 recipes.remove(<evilcraft:sceptre_of_thunder>);
-recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<botania:rune:6>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
+recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<contenttweaker:rune_of_autumn>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
 
 # Kineticator
 #recipes.remove(<evilcraft:kineticator>);

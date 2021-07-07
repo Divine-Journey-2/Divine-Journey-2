@@ -1,0 +1,395 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "mob_loot_fabricator_base_output",
+    "recipeTime": 2,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000
+        },
+        {
+            "type": "mana",
+            "io-type": "input",
+            "mana": 4
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:rotten_flesh",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:bone",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:arrow",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:string",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:spider_eye",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:iron_ingot",
+            "chance": 0.001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:gunpowder",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:potato",
+            "chance": 0.001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:redstone",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:glowstone_dust",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:feather",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:chicken",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:porkchop",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:beef",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:leather",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:rabbit_hide",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:rabbit_foot",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:rabbit",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:dye@0",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:mutton",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:wool@0",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:ender_pearl",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@772",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@2050",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@770",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@2052",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:snowball",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@2048",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thermalfoundation:material@771",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:blaze_rod",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "actuallyadditions:item_solidified_experience",
+            "chance": 0.035
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:fish@0",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:prismarine_shard",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:prismarine_crystals",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:magma_cream",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:gold_nugget",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:gold_ingot",
+            "chance": 0.0025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:ghast_tear",
+            "chance": 0.0025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:slime_ball",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:skull@1",
+            "chance": 0.00025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "tconstruct:materials@17",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:coal@0",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:shulker_shell",
+            "chance": 0.0025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:emerald",
+            "chance": 0.0025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:totem_of_undying",
+            "chance": 0.0001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "twilightforest:armor_shard",
+            "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:eden_fragments",
+            "chance": 0.025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:wildwood_fragments",
+            "chance": 0.025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:apalachia_fragments",
+            "chance": 0.025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:skythern_fragments",
+            "chance": 0.025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:mortum_fragments",
+            "chance": 0.025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:purple_blaze",
+            "chance": 0.0025
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "quark:witch_hat",
+            "chance": 0.0001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "lightningcraft:material@5",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "lightningcraft:material@7",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "lightningcraft:material@12",
+            "chance": 0.02
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:dreadshard",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:dreadchunk",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:abychunk",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:dreadfragment",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:eldritchscale",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "abyssalcraft:omotholflesh",
+            "chance": 0.015
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:soul_of_the_dark_realm",
+            "chance": 0.0001
+        }
+    ]
+}

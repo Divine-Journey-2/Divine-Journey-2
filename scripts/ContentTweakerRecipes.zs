@@ -371,17 +371,17 @@ recipes.addShapeless(empowered_glod_crystal * 9, [empowered_glod_crystal_block])
 recipes.addShapeless(empowered_glod_crystal_block, [<contenttweaker:empowered_glod_crystal_block>]);
 
 # Crystal Bundle
-EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 3, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 3, empowered_glod_crystal * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 6, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 6, empowered_glod_crystal * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
 
 # Empowered Crystal Bundle
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_crystal_bundle>, <contenttweaker:crystal_bundle>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, 8000, 200, [0.596, 0.835, 0.403]);
 
-# Ingot & Block of Elevation
+# Elevatium Ingot & Block
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:ingot_of_elevation>, <contenttweaker:empowered_crystal_bundle>, 100000);
 recipes.addShaped(<contenttweaker:block_of_elevation>, [[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>]]);
 recipes.addShapeless(<contenttweaker:ingot_of_elevation> * 9, [<contenttweaker:block_of_elevation>]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 6, 100000, 5000, <actuallyadditions:item_solidified_experience>, [empowered_glod_crystal, empowered_glod_crystal, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 12, 100000, 5000, <actuallyadditions:item_solidified_experience>, [empowered_glod_crystal, empowered_glod_crystal, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
 
 function addVetheaPlankRecipes(log as IItemStack, plank as IItemStack) {
 	recipes.addShaped(plank * 4, [[log]]);
@@ -690,7 +690,7 @@ recipes.addShaped(<contenttweaker:crystallized_mana_cluster>, [[<contenttweaker:
 # Crystallized Mana
 recipes.addShaped(<contenttweaker:crystallized_mana>, [[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>],[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>],[<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>,<contenttweaker:crystallized_mana_shard>]]);
 recipes.addShapeless(<contenttweaker:crystallized_mana> * 9, [<contenttweaker:crystallized_mana_cluster>]);
-mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:rune:8>, <contenttweaker:crystallized_mana> * 3, 1.0);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<contenttweaker:rune_of_mana>, <contenttweaker:crystallized_mana> * 3, 1.0);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:storage:3>, <contenttweaker:crystallized_mana>, 0.5);
 
 # Crystallized Mana Shard
@@ -911,11 +911,11 @@ recipes.addShaped(<contenttweaker:dark_realm_soul_block>, [[<contenttweaker:soul
 mods.botania.ElvenTrade.addRecipe([<contenttweaker:dreammatter>], [<contenttweaker:livingmatter>]);
 
 # Rune of Deception
-mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<botania:rune:4>, <botania:rune:0>, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
-<ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<contenttweaker:rune_of_spring>, <contenttweaker:rune_of_water>, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
+#<ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
 
 # Purified Tablet
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_tablet>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<botania:rune:12>], 60000, 400, 5);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_tablet>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<contenttweaker:rune_of_sloth>], 60000, 400, 5);
 
 # Hyper Diamond Block
 recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>]]);
@@ -1004,10 +1004,10 @@ WitchesCauldron.addRecipe([<contenttweaker:dragon_resin> * 8], [<minecraft:drago
 Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bewitchment:wood_ash>,<bewitchment:tallow>,<bewitchment:swirl_of_depths>,<ore:slimeball>,<bewitchment:white_sage>]);
 
 # Traveler's Tenacity
-Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<botania:rune:9>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
+Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<contenttweaker:rune_of_lust>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
 
 # Flame Devourer Pendant
-recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<botania:rune:13>,<contenttweaker:travelers_tenacity>,<botania:rune:13>]]);
+recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<contenttweaker:rune_of_wrath>,<contenttweaker:travelers_tenacity>,<contenttweaker:rune_of_wrath>]]);
 <contenttweaker:flame_devourer_pendant>.addTooltip(format.white("When you are inflicted with the ") + format.red("Hell Fire") + format.white(" status"));
 <contenttweaker:flame_devourer_pendant>.addTooltip(format.white("effect by the Brazier, Right Clicking this item"));
 <contenttweaker:flame_devourer_pendant>.addTooltip(format.white("will yield a piece of ") + format.gold("Ignition") + format.white(", which is used to"));
@@ -1243,7 +1243,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cheesy_silicon_
 furnace.addRecipe(<contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon_compound>);
 
 # Cheesy Wafer
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer> * 16, <quantumflux:craftingpiece:4>, <contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon>, <contenttweaker:rainbow_tablet>, <botania:rune:12>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer> * 16, <quantumflux:craftingpiece:4>, <contenttweaker:cheesy_silicon>, <contenttweaker:cheesy_silicon>, <contenttweaker:rainbow_tablet>, <contenttweaker:rune_of_sloth>);
 
 # Sapphire Accelerator
 recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>],[<galacticraftcore:item_basic_moon:2>,<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:2>],[<galacticraftcore:item_basic_moon:2>,<simplyjetpacks:metaitemmods:11>,<galacticraftcore:item_basic_moon:2>]]);

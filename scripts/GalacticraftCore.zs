@@ -31,15 +31,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:machine2:4>,
 
 # Basic Wafer
 CircuitFabricator.remove(<galacticraftcore:basic_item:13> * 3);
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:13> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:301>, <projectred-core:resource_item:301>, <contenttweaker:rainbow_tablet>, <botania:rune:10>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:13> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:301>, <projectred-core:resource_item:301>, <contenttweaker:rainbow_tablet>, <contenttweaker:rune_of_gluttony>);
 
 # Advanced Wafer
 CircuitFabricator.remove(<galacticraftcore:basic_item:14>);
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:14> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:320>, <projectred-core:resource_item:320>, <contenttweaker:rainbow_tablet>, <botania:rune:9>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:14> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:320>, <projectred-core:resource_item:320>, <contenttweaker:rainbow_tablet>, <contenttweaker:rune_of_lust>);
 
 # Blue Solar Wafer
 CircuitFabricator.remove(<galacticraftcore:basic_item:12> * 9);
-mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:12> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:342>, <projectred-core:resource_item:342>, <contenttweaker:rainbow_tablet>, <botania:rune:14>);
+mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftcore:basic_item:12> * 16, <quantumflux:craftingpiece:4>, <projectred-core:resource_item:342>, <projectred-core:resource_item:342>, <contenttweaker:rainbow_tablet>, <contenttweaker:rune_of_envy>);
 
 # Tin Canister
 recipes.remove(<galacticraftcore:canister>);

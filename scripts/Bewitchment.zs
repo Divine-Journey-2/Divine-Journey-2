@@ -209,7 +209,7 @@ recipes.addShapedMirrored(<bewitchment:poppet>, [[<contenttweaker:magical_leathe
 
 # Bottled Frostfire
 Distillery.removeRecipe(<bewitchment:bottled_frostfire>);
-Distillery.addRecipe([<bewitchment:bottled_frostfire>,<bewitchment:empty_jar> * 2], [<bewitchment:heaven_extract>,<bewitchment:fiery_unguent>,<bewitchment:perpetual_ice>,<botania:rune:7>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:mystical_tablet>]);
+Distillery.addRecipe([<bewitchment:bottled_frostfire>,<bewitchment:empty_jar> * 2], [<bewitchment:heaven_extract>,<bewitchment:fiery_unguent>,<bewitchment:perpetual_ice>,<contenttweaker:rune_of_winter>,<contenttweaker:condensed_vis_crystal_gelum>,<contenttweaker:mystical_tablet>]);
 
 # Cold Iron Ingot
 FrostFire.removeAll();
@@ -247,41 +247,41 @@ function addBewitchmentPoppetRecipe(output as IItemStack, sides as IIngredient, 
 addBewitchmentPoppetRecipe(<bewitchment:poppet_binding>, <contenttweaker:binding_reagent>, <bewitchment:iron_gall_ink>, <bewitchment:stone_ichor>.noReturn());
 
 # Poppet of Clumsiness
-addBewitchmentPoppetRecipe(<bewitchment:poppet_clumsy>, <botania:rune:12>, <contenttweaker:gypsum>, <bewitchment:oil_of_vitriol>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_clumsy>, <contenttweaker:rune_of_sloth>, <contenttweaker:gypsum>, <bewitchment:oil_of_vitriol>.noReturn());
 
 # Death Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_deathprotection>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <botania:rune:11>, <bewitchment:heaven_extract>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_deathprotection>, <minecraft:potion>.withTag({Potion: "extrautils2:xu2.second.chance"}), <contenttweaker:rune_of_greed>, <bewitchment:heaven_extract>.noReturn());
 
 # Earth Protection Poppet
 addBewitchmentPoppetRecipe(<bewitchment:poppet_earthprotection>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}), <bewitchment:toe_of_frog>, <contenttweaker:travelers_tenacity>);
 
 # Flame Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_flameprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <botania:rune:5>, <bewitchment:fiery_unguent>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_flameprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_fire_resistance"}), <contenttweaker:rune_of_summer>, <bewitchment:fiery_unguent>.noReturn());
 
 # Hunger Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_hungerprotection>, <abyssalcraft:mre>, <botania:rune:10>, <bewitchment:cleansing_balm>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_hungerprotection>, <abyssalcraft:mre>, <contenttweaker:rune_of_gluttony>, <bewitchment:cleansing_balm>.noReturn());
 
 # Poppet of Spirit's Bane
-addBewitchmentPoppetRecipe(<bewitchment:poppet_spiritbane>, <botania:rune:13>, <extendedcrafting:material:48>, <bewitchment:otherworldly_tears>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_spiritbane>, <contenttweaker:rune_of_wrath>, <extendedcrafting:material:48>, <bewitchment:otherworldly_tears>.noReturn());
 
 # Tool Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_tool>, <enderio:block_alloy_endergy:1>, <botania:rune:11>, <bewitchment:cleansing_balm>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_tool>, <enderio:block_alloy_endergy:1>, <contenttweaker:rune_of_greed>, <bewitchment:cleansing_balm>.noReturn());
 
 # Vampiric Poppet
 recipes.remove(<bewitchment:poppet_vampiric>);
 <bewitchment:poppet_vampiric>.addTooltip(format.white("Item removed. Deemed too OP."));
 
 # Woodoo Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_voodoo>, <botania:rune:13>, <thermalexpansion:florb>.withTag({Fluid: "liquid_death"}), <bewitchment:otherworldly_tears>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_voodoo>, <contenttweaker:rune_of_wrath>, <thermalexpansion:florb>.withTag({Fluid: "liquid_death"}), <bewitchment:otherworldly_tears>.noReturn());
 
 # Woodoo Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_voodooprotection>, <botania:rune:14>, <spartanshields:shield_tc_thaumium>, <bewitchment:heaven_extract>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_voodooprotection>, <contenttweaker:rune_of_envy>, <spartanshields:shield_tc_thaumium>, <bewitchment:heaven_extract>.noReturn());
 
 # Poppet of Wasting
-addBewitchmentPoppetRecipe(<bewitchment:poppet_wasting>, <abyssalcraft:essence>, <botania:rune:10>, <bewitchment:fiery_unguent>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_wasting>, <abyssalcraft:essence>, <contenttweaker:rune_of_gluttony>, <bewitchment:fiery_unguent>.noReturn());
 
 # Water Protection Poppet
-addBewitchmentPoppetRecipe(<bewitchment:poppet_waterprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_water_breathing"}), <botania:rune:10>, <bewitchment:swirl_of_depths>.noReturn());
+addBewitchmentPoppetRecipe(<bewitchment:poppet_waterprotection>, <minecraft:potion>.withTag({Potion: "minecraft:long_water_breathing"}), <contenttweaker:rune_of_gluttony>, <bewitchment:swirl_of_depths>.noReturn());
 
 # Taglock
 recipes.remove(<bewitchment:taglock>);
@@ -293,11 +293,11 @@ Distillery.addRecipe([<bewitchment:bottled_hellfire>], [<bewitchment:fiery_ungue
 
 # Fiery Chalk
 WitchesCauldron.removeRecipe(<bewitchment:fiery_chalk>);
-WitchesCauldron.addRecipe([<bewitchment:fiery_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:bottled_hellfire>,<bewitchment:diabolical_vein>,<botania:rune:1>]);
+WitchesCauldron.addRecipe([<bewitchment:fiery_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:bottled_hellfire>,<bewitchment:diabolical_vein>,<contenttweaker:rune_of_fire>]);
 
 # Demonic Elixir
 Distillery.removeRecipe(<bewitchment:demonic_elixir>);
-Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_unguent>,<contenttweaker:travelers_tenacity>,<bewitchment:demon_heart>,<botania:rune:15>,<bewitchment:empty_jar>,<bewitchment:empty_jar>]);
+Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_unguent>,<contenttweaker:travelers_tenacity>,<bewitchment:demon_heart>,<contenttweaker:rune_of_pride>,<bewitchment:empty_jar>,<bewitchment:empty_jar>]);
 
 # Flying Ointment
 recipes.remove(<bewitchment:flying_ointment>);
@@ -321,7 +321,7 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:sigil_table", "", <bewitchm
 
 # Phasing Chalk
 WitchesCauldron.removeRecipe(<bewitchment:phasing_chalk>);
-WitchesCauldron.addRecipe([<bewitchment:phasing_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:otherworldly_tears>,<bewitchment:spectral_dust>,<botania:rune:14>]);
+WitchesCauldron.addRecipe([<bewitchment:phasing_chalk>], [<bewitchment:ritual_chalk>,<bewitchment:otherworldly_tears>,<bewitchment:spectral_dust>,<contenttweaker:rune_of_envy>]);
 
 # Stew of the Grotesque
 WitchesCauldron.removeRecipe(<bewitchment:stew_of_the_grotesque>);
@@ -419,7 +419,7 @@ EIOAlloySmelter.addRecipe(<bewitchment:nethersteel> * 4, [<simplyjetpacks:metait
 
 # Hellish Bauble
 recipes.remove(<bewitchment:hellish_bauble>);
-recipes.addShaped(<bewitchment:hellish_bauble>, [[<bewitchment:hellhound_horn>,<bewitchment:diabolical_vein>,<bewitchment:hellhound_horn>],[<bewitchment:nethersteel>,<botania:rune:15>,<bewitchment:nethersteel>],[<bewitchment:nethersteel>,<bewitchment:demonic_elixir>.noReturn(),<bewitchment:nethersteel>]]);
+recipes.addShaped(<bewitchment:hellish_bauble>, [[<bewitchment:hellhound_horn>,<bewitchment:diabolical_vein>,<bewitchment:hellhound_horn>],[<bewitchment:nethersteel>,<contenttweaker:rune_of_pride>,<bewitchment:nethersteel>],[<bewitchment:nethersteel>,<bewitchment:demonic_elixir>.noReturn(),<bewitchment:nethersteel>]]);
 
 # Waystone
 recipes.remove(<bewitchment:waystone>);

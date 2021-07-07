@@ -194,7 +194,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:elytra_harness_augm
 
 # Voidseer's Pearl
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:voidseer_charm>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:voidseer_charm", "", <thaumcraft:voidseer_charm>, 8, [<aspect:cognitio> * 250,<aspect:vacuos> * 250,<aspect:praecantatio> * 250,<aspect:alienis> * 250], <thaumcraft:baubles:4>, [<alchemistry:ingot:30>,<botania:rune:15>,<thaumcraft:void_seed>,<thaumicaugmentation:material:5>,<thaumcraft:void_seed>,<botania:rune:11>,<alchemistry:ingot:30>,<contenttweaker:primordial_fragment>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:voidseer_charm", "", <thaumcraft:voidseer_charm>, 8, [<aspect:cognitio> * 250,<aspect:vacuos> * 250,<aspect:praecantatio> * 250,<aspect:alienis> * 250], <thaumcraft:baubles:4>, [<alchemistry:ingot:30>,<contenttweaker:rune_of_pride>,<thaumcraft:void_seed>,<thaumicaugmentation:material:5>,<thaumcraft:void_seed>,<contenttweaker:rune_of_greed>,<alchemistry:ingot:30>,<contenttweaker:primordial_fragment>]);
 
 # Seal Copier
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:seal_copier>);

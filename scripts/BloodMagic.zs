@@ -263,7 +263,7 @@ recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:
 
 # Binding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
-mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<botania:rune>,<botania:rune:1>,<botania:rune:2>,<botania:rune:3>], 64, 64);
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<contenttweaker:rune_of_water>,<contenttweaker:rune_of_fire>,<contenttweaker:rune_of_earth>,<contenttweaker:rune_of_air>], 64, 64);
 
 # Bound Blade
 mods.bloodmagic.AlchemyArray.addRecipe(<bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 0 as byte}), <botania:manasteelsword>, <contenttweaker:binding_reagent>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
@@ -295,7 +295,7 @@ recipes.addShaped(<bloodmagic:ritual_controller>, [[<contenttweaker:compressed_o
 
 # Lava Crystal
 recipes.remove(<bloodmagic:lava_crystal>);
-recipes.addShaped(<bloodmagic:lava_crystal>, [[<abyssalcraft:crystalcluster:3>,<abyssalcraft:crystalcluster:15>,<abyssalcraft:crystalcluster:3>],[<abyssalcraft:crystalcluster:15>,<botania:rune:1>,<abyssalcraft:crystalcluster:15>],[<abyssalcraft:crystalcluster:3>,blood_orb_at_least_tier_4.reuse(),<abyssalcraft:crystalcluster:3>]]);
+recipes.addShaped(<bloodmagic:lava_crystal>, [[<abyssalcraft:crystalcluster:3>,<abyssalcraft:crystalcluster:15>,<abyssalcraft:crystalcluster:3>],[<abyssalcraft:crystalcluster:15>,<contenttweaker:rune_of_fire>,<abyssalcraft:crystalcluster:15>],[<abyssalcraft:crystalcluster:3>,blood_orb_at_least_tier_4.reuse(),<abyssalcraft:crystalcluster:3>]]);
 
 # Weak Activation Crystal
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:lava_crystal>);
@@ -303,27 +303,27 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:activation_crystal>, <bloodmagi
 
 # Awakened Activation Crystal
 recipes.remove(<bloodmagic:activation_crystal:1>);
-recipes.addShaped(<bloodmagic:activation_crystal:1>, [[null,<evilcraft:weather_container:3>,null],[<minecraft:nether_star>,<bloodmagic:activation_crystal>,<abyssalcraft:lifecrystal>],[null,<botania:rune:8>,null]]);
+recipes.addShaped(<bloodmagic:activation_crystal:1>, [[null,<evilcraft:weather_container:3>,null],[<minecraft:nether_star>,<bloodmagic:activation_crystal>,<abyssalcraft:lifecrystal>],[null,<contenttweaker:rune_of_mana>,null]]);
 
 # Elemental Inscription Tool: Water
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:lapis_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>.withTag({uses: 10}), <botania:rune>, 3, 40000, 60, 60);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>.withTag({uses: 10}), <contenttweaker:rune_of_water>, 3, 40000, 60, 60);
 
 # Elemental Inscription Tool: Fire
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:magma_cream>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>.withTag({uses: 10}), <botania:rune:1>, 3, 40000, 60, 60);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>.withTag({uses: 10}), <contenttweaker:rune_of_fire>, 3, 40000, 60, 60);
 
 # Elemental Inscription Tool: Earth
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:obsidian>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>.withTag({uses: 10}), <botania:rune:2>, 3, 40000, 60, 60);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>.withTag({uses: 10}), <contenttweaker:rune_of_earth>, 3, 40000, 60, 60);
 
 # Elemental Inscription Tool: Air
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ghast_tear>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>.withTag({uses: 10}), <botania:rune:3>, 3, 40000, 60, 60);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>.withTag({uses: 10}), <contenttweaker:rune_of_air>, 3, 40000, 60, 60);
 
 # Elemental Inscription Tool: Dusk
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:coal_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <botania:rune:8>, 3, 40000, 60, 60);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <contenttweaker:rune_of_mana>, 3, 40000, 60, 60);
 
 # Elemental Inscription Tool: Dawn
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:glowstone>);
@@ -364,13 +364,13 @@ recipes.addShaped(<bloodmagic:demon_will_gauge>, [[null,<contenttweaker:praesidi
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:7>, <bloodmagic:blood_rune:6>, <extrautils2:drum:3>, <bloodmagic:slate:3> * 2);
 
 # Efficiency Rune
-blood_magic_add_rune_recipe(<bloodmagic:blood_rune:2>, <botania:rune:8>, <bloodmagic:slate:3> * 2);
+blood_magic_add_rune_recipe(<bloodmagic:blood_rune:2>, <contenttweaker:rune_of_mana>, <bloodmagic:slate:3> * 2);
 
 # Charging Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:10>, <bloodmagic:blood_rune:1>, <botania:manaresource:8> * 3, <bloodmagic:slate:4> * 2);
 
 # Displacement Rune
-blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <botania:rune>, <bloodmagic:slate:4> * 2);
+blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <contenttweaker:rune_of_water>, <bloodmagic:slate:4> * 2);
 
 # Acceleration Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
@@ -395,7 +395,7 @@ addBloodMagicSigilRecipe(<bloodmagic:sigil_green_grove>, <bloodmagic:component:5
 
 # Blood Lamp Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<ore:glowstone>.firstItem,<minecraft:torch>,<minecraft:redstone>,<minecraft:redstone>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:11>, [<torchmaster:dread_lamp>,<bibliocraft:lampgold>,<thermalfoundation:storage_alloy:6>,<botania:rune:4>], 64, 32);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:11>, [<torchmaster:dread_lamp>,<bibliocraft:lampgold>,<thermalfoundation:storage_alloy:6>,<contenttweaker:rune_of_spring>], 64, 32);
 
 # Sigil of the Blood Lamp
 addBloodMagicSigilRecipe(<bloodmagic:sigil_blood_light>, <bloodmagic:component:11>, <bloodmagic:slate:2>, <bloodmagic:slate:3>, <bloodmagic:component:11>);
@@ -526,8 +526,8 @@ recipes.remove(<bloodmagic:upgrade_trainer>);
 recipes.addShaped(<bloodmagic:upgrade_trainer>, [[null,<contenttweaker:power_core>,null],[<contenttweaker:power_core>,blood_orb_at_least_tier_4.reuse(),<contenttweaker:power_core>],[null,<contenttweaker:power_core>,null]]);
 
 # Demon Blood Shard
-mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<botania:rune:13>,<botania:rune:11>,<botania:rune:15>,<contenttweaker:rune_of_deception>], 50000);
-mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<botania:rune:13>,<botania:rune:11>,<botania:rune:15>,<contenttweaker:rune_of_deception>], 50000);
+mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_deception>], 50000);
+mods.botania.RuneAltar.addRecipe(<bloodmagic:blood_shard:1>, [<bloodmagic:blood_shard>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_deception>], 50000);
 
 # Archmage Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:nether_star>);
