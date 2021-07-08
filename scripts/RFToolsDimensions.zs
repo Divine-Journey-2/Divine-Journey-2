@@ -16,15 +16,15 @@ recipes.addShaped(<rftoolsdim:empty_dimension_tab>, [[<projectred-core:resource_
 # Dimension Builder
 recipes.remove(<rftoolsdim:dimension_builder>);
 mods.extendedcrafting.TableCrafting.addShaped(<rftoolsdim:dimension_builder>,
-[[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftools:builder>,<rftoolsdim:empty_dimension_tab>,<rftools:builder>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftoolsdim:empty_dimension_tab>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftoolsdim:empty_dimension_tab>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftools:builder>,<rftoolsdim:empty_dimension_tab>,<rftools:builder>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>],
-[<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>]]);
+[[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftools:builder>,<rftoolsdim:empty_dimension_tab>,<rftools:builder>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftoolsdim:empty_dimension_tab>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftoolsdim:empty_dimension_tab>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<rftools:builder>,<rftoolsdim:empty_dimension_tab>,<rftools:builder>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<alchemistry:ingot:90>,<galacticraftplanets:item_basic_asteroids:5>],
+[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Dimension Enscriber
 recipes.remove(<rftoolsdim:dimension_enscriber>);
@@ -152,7 +152,7 @@ addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:13>.withTag({dkey: "De
 addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:2>.withTag({dkey: "minecraft:stone@0"}),<minecraft:stone>,false);
 
 # Digit Dimlet (0)
-addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:9>.withTag({dkey: "0"}),<rftools:digit_block>,false);
+addRFToolsDimensionsDimletRecipe(<rftoolsdim:known_dimlet:9>.withTag({dkey: "0"}),<enderio:item_alloy_ingot:3>,false);
 recipes.addShaped(<rftoolsdim:known_dimlet:9>.withTag({dkey: "0"}), [[<rftoolsdim:known_dimlet:9>.withTag({dkey: "9"})]]);
 
 # Mediocre Efficiency Essence

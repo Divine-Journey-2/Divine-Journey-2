@@ -37,6 +37,9 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Mass Inscriber Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mass_inscriber"}), [[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>],[<contenttweaker:scheduling_processor>,<minecraft:paper>,<contenttweaker:scheduling_processor>],[<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
+# Mob Loot Fabricator Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mob_loot_fabricator"}), [[<alchemistry:helium_light>,<evilcraft:vein_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}),<alchemistry:helium_light>],[<mob_grinding_utils:saw>,<minecraft:paper>,<mob_grinding_utils:saw>],[<alchemistry:helium_light>,<evilcraft:vein_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}),<alchemistry:helium_light>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
@@ -84,6 +87,12 @@ recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<galacticraftplanets:ite
 
 # Huge Item Output
 recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockoutputbus:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Ludicrous Item Input
+recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockinputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
+
+# udicrous Item Output
+recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockoutputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
 
 # Tiny Energy Input Hatch
 recipes.remove(<modularmachinery:blockenergyinputhatch>);

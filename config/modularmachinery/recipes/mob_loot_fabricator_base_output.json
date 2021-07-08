@@ -233,7 +233,7 @@
             "type": "item",
             "io-type": "output",
             "item": "minecraft:gold_ingot",
-            "chance": 0.0025
+            "chance": 0.001
         },
         {
             "type": "item",
@@ -251,7 +251,7 @@
             "type": "item",
             "io-type": "output",
             "item": "minecraft:skull@1",
-            "chance": 0.00025
+            "chance": 0.0005
         },
         {
             "type": "item",
@@ -389,7 +389,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:soul_of_the_dark_realm",
-            "chance": 0.0001
+            "chance": 0.001
         },
         {
             "type": "item",

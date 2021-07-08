@@ -380,4 +380,12 @@ recipes.addShaped(<enderutilities:storage_0:6>, [[<enderutilities:enderpart:2>,<
 recipes.remove(<enderutilities:storage_0:7>);
 recipes.addShaped(<enderutilities:storage_0:7>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>],[<contenttweaker:methodology_processor>,<enderutilities:storage_0:5>,<contenttweaker:methodology_processor>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>]]);
 
+# Portal Frame
+recipes.remove(<enderutilities:frame>);
+recipes.addShaped(<enderutilities:frame> * 3, [[<botania:storage>,<quantumflux:telepad>,<botania:storage>],[<botania:storage>,<contenttweaker:rune_of_deception>,<botania:storage>],[<botania:storage>,<thaumicaugmentation:material:3>,<botania:storage>]]);
+
+# Portal Control Panel
+recipes.remove(<enderutilities:portal_panel>);
+recipes.addShaped(<enderutilities:portal_panel>, [[<enderutilities:frame>,<enderutilities:enderpart:17>,<enderutilities:frame>],[<enderutilities:frame>,<thaumicaugmentation:material:3>,<enderutilities:frame>],[<enderutilities:frame>,<enderutilities:enderpart:17>,<enderutilities:frame>]]);
+
 print("ENDING EnderUtilities.zs");

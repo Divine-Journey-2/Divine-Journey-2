@@ -559,4 +559,38 @@ recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compre
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:decorative_brick:2>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}), <evilcraft:blood_orb:1>, 5, 240000, 120, 120);
 
+# Teleposition Focus
+mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ender_pearl>);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:teleposition_focus>, <draconicevolution:dislocator_bound:1>, 5, 500000, 500, 500);
+
+# Enhanced Teleposition Focus
+mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:teleposition_focus>);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:teleposition_focus:1>, <bloodmagic:teleposition_focus>, 5, 1000000, 500, 500);
+
+# Reinforced Teleposition Focus
+recipes.remove(<bloodmagic:teleposition_focus:2>);
+recipes.addShaped(<bloodmagic:teleposition_focus:2>, [[<galacticraftplanets:item_basic_asteroids:5>,<bloodmagic:decorative_brick>,<galacticraftplanets:item_basic_asteroids:5>],[<bloodmagic:decorative_brick>,<bloodmagic:teleposition_focus:1>,<bloodmagic:decorative_brick>],[<galacticraftplanets:item_basic_asteroids:5>,<bloodmagic:decorative_brick>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Demonic Teleposition Focus
+recipes.remove(<bloodmagic:teleposition_focus:3>);
+recipes.addShaped(<bloodmagic:teleposition_focus:3>, [[<bloodmagic:decorative_brick:2>,<bloodmagic:blood_shard:1>,<bloodmagic:decorative_brick:2>],[<bloodmagic:blood_shard:1>,<bloodmagic:teleposition_focus:2>,<bloodmagic:blood_shard:1>],[<bloodmagic:decorative_brick:2>,<bloodmagic:blood_shard:1>,<bloodmagic:decorative_brick:2>]]);
+
+# Teleposer
+recipes.remove(<bloodmagic:teleposer>);
+recipes.addShaped(<bloodmagic:teleposer>, [[<bloodmagic:decorative_brick:2>,<alchemistry:ingot:44>,<bloodmagic:decorative_brick:2>],[<alchemistry:ingot:44>,<bloodmagic:teleposition_focus>,<alchemistry:ingot:44>],[<bloodmagic:decorative_brick:2>,<alchemistry:ingot:44>,<bloodmagic:decorative_brick:2>]]);
+
+# Transposition Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:teleposer>,<minecraft:diamond>,<minecraft:ender_pearl>,<minecraft:obsidian>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:18>, [<bloodmagic:teleposer>,<rftools:infused_enderpearl>,<alchemistry:ingot:40>,<alchemistry:ingot:40>], 1000, 144);
+
+# Teleposition Reagent
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:teleposer>,<ore:glowstone>.firstItem,<ore:blockRedstone>.firstItem,<minecraft:gold_ingot>]);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:17>, [<bloodmagic:teleposer>,<rftools:infused_enderpearl>,<alchemistry:ingot:45>,<alchemistry:ingot:45>], 1000, 144);
+
+# Transposition Sigil
+addBloodMagicSigilRecipe(<bloodmagic:sigil_transposition>, <bloodmagic:component:18>, <bloodmagic:slate:3>, <contenttweaker:perfect_slate>, <bloodmagic:component:18>);
+
+# Teleposition Sigil
+addBloodMagicSigilRecipe(<bloodmagic:sigil_teleposition>, <bloodmagic:component:17>, <bloodmagic:slate:3>, <contenttweaker:perfect_slate>, <bloodmagic:component:17>);
+
 print("ENDING BloodMagic.zs");

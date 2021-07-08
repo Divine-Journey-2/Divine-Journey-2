@@ -336,7 +336,7 @@ recipes.addShaped(<rftools:block_protector>, [[<alchemistry:ingot:90>,<bewitchme
 
 function addRFToolsEnvironmentalModualeRecipe(output as IItemStack, input_syringe as IItemStack, input_potion as IItemStack) {
 	recipes.remove(output);
-	recipes.addShaped(output, [[null,input_syringe,null],[<evilcraft:golden_string>,<immersiveengineering:sheetmetal:10>,<evilcraft:golden_string>],[input_potion,input_potion,input_potion]]);
+	recipes.addShaped(output, [[null,input_syringe.noReturn(),null],[<evilcraft:golden_string>,<immersiveengineering:sheetmetal:10>,<evilcraft:golden_string>],[input_potion,input_potion,input_potion]]);
 }
 
 function addRFToolsEnvironmentalModualePlusRecipe(output as IItemStack, input_module as IItemStack, input_potion as IItemStack, input_vis_crystal as IItemStack) {

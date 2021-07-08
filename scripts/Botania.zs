@@ -980,7 +980,7 @@ recipes.addShaped(<botania:lens:13>.withTag({}), [[<minecraft:prismarine_shard>,
 
 # Snowflake Pendant
 recipes.remove(<botania:icependant>);
-recipes.addShaped(<botania:icependant>, [[<contenttweaker:rune_of_winter>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource>,<botania:manaresource:16>,<contenttweaker:rune_of_water>]]);
+recipes.addShapedMirrored(<botania:icependant>, [[<contenttweaker:rune_of_winter>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource>,<botania:manaresource:16>,<contenttweaker:rune_of_water>]]);
 
 # Benevolent Goddess' Charm
 recipes.remove(<botania:goddesscharm>);
@@ -988,7 +988,7 @@ recipes.addShapedMirrored(<botania:goddesscharm>, [[null,<botania:petal:6>,null]
 
 # Rod of the Depths
 recipes.remove(<botania:cobblerod>);
-recipes.addShapedMirrored(<botania:cobblerod>, [[null,<contenttweaker:rune_of_fire>,<extrautils2:compressedcobblestone>],[null,<extrautils2:compressedcobblestone>,<contenttweaker:rune_of_water>],[<extrautils2:compressedcobblestone>,null,null]]);
+recipes.addShapedMirrored(<botania:cobblerod>, [[null,<contenttweaker:rune_of_fire>,<extrautils2:compressedcobblestone>],[null,<botania:manaresource:3>,<contenttweaker:rune_of_water>],[<botania:manaresource:3>,null,null]]);
 
 # Rod the the Molten Core
 recipes.remove(<botania:smeltrod>);
@@ -1048,7 +1048,7 @@ recipes.addShaped(<botania:lens:12>.withTag({}), [[<minecraft:prismarine_shard>,
 
 # Cirrus Amulet
 recipes.remove(<botania:cloudpendant>);
-recipes.addShapedMirrored(<botania:cloudpendant>.withTag({}), [[<contenttweaker:rune_of_autumn>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource:16>,<botania:manaresource>,<contenttweaker:rune_of_air>]]);
+recipes.addShapedMirrored(<botania:cloudpendant>.withTag({}), [[<contenttweaker:rune_of_autumn>,<botania:manaresource:16>,null],[<botania:manaresource:16>,null,<botania:manaresource:16>],[<botania:manaresource>,<botania:manaresource:16>,<contenttweaker:rune_of_air>]]);
 
 # Mana Lens: Velocity
 recipes.removeShapeless(<botania:lens:1>, [<*>,<*>]);
