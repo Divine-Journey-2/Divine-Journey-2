@@ -1,0 +1,39 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_mysticalagriadditions_inferium_seeds_tier_6",
+    "recipeTime": 1200,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:tier5_inferium_seeds"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:insanium@0",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "rftools:infused_enderpearl",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_coolant"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "mysticalagradditions:tier6_inferium_seeds"
+        }
+    ]
+}

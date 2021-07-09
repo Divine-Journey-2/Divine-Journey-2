@@ -1116,5 +1116,14 @@ var rune_of_autumn = VanillaFactory.createItem("rune_of_autumn");
 rune_of_autumn.register();
 var rune_of_winter = VanillaFactory.createItem("rune_of_winter");
 rune_of_winter.register();
+var apalachia_key_fragment = VanillaFactory.createItem("apalachia_key_fragment");
+apalachia_key_fragment.register();
+var apalachia_door_key2 = VanillaFactory.createItem("apalachia_door_key2");
+apalachia_door_key2.maxStackSize = 1;
+apalachia_door_key2.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door2", player, world, false, true);
+    return "Pass";
+};
+apalachia_door_key2.register();
 
 print("ENDING ContentTweakerItems.zs");

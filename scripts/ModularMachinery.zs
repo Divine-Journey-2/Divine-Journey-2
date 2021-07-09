@@ -89,10 +89,10 @@ recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<galacticraftplanets:ite
 recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockoutputbus:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Ludicrous Item Input
-recipes.addShaped(<modularmachinery:blockinputbus:5>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockinputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
+recipes.addShaped(<modularmachinery:blockinputbus:6>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockinputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
 
-# udicrous Item Output
-recipes.addShaped(<modularmachinery:blockoutputbus:5>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockoutputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
+# Ludicrous Item Output
+recipes.addShaped(<modularmachinery:blockoutputbus:6>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockoutputbus:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
 
 # Tiny Energy Input Hatch
 recipes.remove(<modularmachinery:blockenergyinputhatch>);

@@ -247,4 +247,11 @@ remove_entry("galacticraftcore:dungeon_tier_3", "dungeon_tier_3", "galacticraftp
 # Vamacheron -> Mortum Key
 add_entry("divinerpg:entities/boss/vamacheron", "mortum_key", <contenttweaker:mortum_door_key>, 1, 1, 0, 0, 100);
 
+# Twilight Demon -> Apalachia Boss Key, and other drops
+remove_entry("divinerpg:entities/boss/twilight_demon", "divinerpg:twilight_demon", "divinerpg:halite_boots");
+remove_entry("divinerpg:entities/boss/twilight_demon", "divinerpg:twilight_demon", "divinerpg:halite_helmet");
+add_entry("divinerpg:entities/boss/twilight_demon", "apalachia_boss_key", <contenttweaker:apalachia_door_key2>, 1, 1, 0, 0, 100);
+add_entry("divinerpg:entities/boss/twilight_demon", "apalachia_heart", <divinerpg:apalachia_heart>, 1, 1, 0, 0, 100);
+
+
 print("ENDING LootTweaker.zs");

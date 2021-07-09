@@ -542,3 +542,6 @@ item.contenttweaker.rune_of_spring.name=Rune of Spring
 item.contenttweaker.rune_of_summer.name=Rune of Summer
 item.contenttweaker.rune_of_autumn.name=Rune of Autumn
 item.contenttweaker.rune_of_winter.name=Rune of Winter
+item.contenttweaker.apalachia_key_fragment.name=Apalachian Key Fragment
+tile.contenttweaker.apalachia_door2.name=Apalachia Boss Door
+item.contenttweaker.apalachia_door_key2.name=Apalachia Boss Door Key

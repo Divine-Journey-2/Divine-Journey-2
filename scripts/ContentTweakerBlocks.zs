@@ -360,6 +360,15 @@ for dim in dimension_names_lower {
 
 }
 
+var apalachia_door2 = VanillaFactory.createBlock("apalachia_door2", <blockmaterial:iron>);
+apalachia_door2.setBlockHardness(-1);
+apalachia_door2.setBlockResistance(-1);
+apalachia_door2.setToolClass(null);
+apalachia_door2.setWitherProof(true);
+apalachia_door2.setToolLevel(16777215);
+apalachia_door2.setBlockSoundType(<soundtype:metal>);
+apalachia_door2.register();
+
 var livingmatter = VanillaFactory.createBlock("livingmatter", <blockmaterial:ground>);
 livingmatter.setBlockHardness(1.0);
 livingmatter.setBlockResistance(1.0);

@@ -1199,6 +1199,27 @@
     }
   },
   {
+    "filter": {
+      "name": "infinity",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "mod": "plustic",
+      "name": "plustic.molten_infinity",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
     "settings": {
       "rarity": 0,
       "create": 10,

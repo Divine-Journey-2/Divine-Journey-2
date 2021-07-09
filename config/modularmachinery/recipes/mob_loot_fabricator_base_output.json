@@ -414,6 +414,12 @@
             "io-type": "output",
             "item": "totemic:buffalo_items@0",
             "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:cyclops_eye_shards",
+            "chance": 0.01
         }
     ]
 }

@@ -1050,4 +1050,37 @@ addMysticalAgricultureTinkeringTableRecipe(<mysticalagriculture:tinkering_table:
 # Tinkering Table (Insanium)
 addMysticalAgricultureTinkeringTableRecipe(<mysticalagriculture:tinkering_table:4>,<mysticalagradditions:tinkering_table>,<mysticalagradditions:insanium:2>);
 
+# Tungsten Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_tungsten_seeds.json
+
+# Uranium Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_uranium_seeds.json
+
+# Chrome Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_chrome_seeds.json
+
+# Chrome Essence into Chromium
+recipes.addShaped(<alchemistry:ingot:24> * 3, [[<mysticalagriculture:chrome_essence>,<mysticalagriculture:chrome_essence>,<mysticalagriculture:chrome_essence>],[<mysticalagriculture:chrome_essence>,null,<mysticalagriculture:chrome_essence>],[<mysticalagriculture:chrome_essence>,<mysticalagriculture:chrome_essence>,<mysticalagriculture:chrome_essence>]]);
+
+# Ruby Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_ruby_seeds.json
+
+# Sapphire Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_sapphire_seeds.json
+
+# Peridot Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_peridot_seeds.json
+
+# Thorium Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_thorium_seeds.json
+
+# Boron Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_boron_seeds.json
+
+# Magnesium Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_magnesium_seeds.json
+
+# Rock Crystal Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_rock_crystal_seeds.json
+
 print("ENDING MysticalAgriculture.zs");
