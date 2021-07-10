@@ -1305,12 +1305,27 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
-recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<rftools:infused_diamond>,<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]]);
-<contenttweaker:crystal_core>.addTooltip(format.white("If using the Rock Crystal recipe,"));
-<contenttweaker:crystal_core>.addTooltip(format.white("the input Rock Crystal has to have:"));
-<contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
-<contenttweaker:crystal_core>.addTooltip(format.white("Before unlocking the Infused Diamond recipe,"));
-<contenttweaker:crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
+
+# Celestial Crystal Core
+recipes.addShaped("celestial_crystal_core", <contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<astralsorcery:itemcelestialcrystal>.marked("celestial_crystal"),<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]],
+function(out,ins,cInfo) {
+	if(ins.celestial_crystal.tag has "astralsorcery") {
+		if(ins.celestial_crystal.tag.astralsorcery has "crystalProperties") {
+			if(ins.celestial_crystal.tag.astralsorcery.crystalProperties has "size" && ins.celestial_crystal.tag.astralsorcery.crystalProperties has "purity") {
+				if(ins.celestial_crystal.tag.astralsorcery.crystalProperties.size >= 700 && ins.celestial_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
+					return out;
+				}
+			}
+		}
+	}
+	return null;
+}, null);
+#recipes.addShaped(<contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,???,<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]]);
+<contenttweaker:celestial_crystal_core>.addTooltip(format.white("If using the Celestial Crystal recipe,"));
+<contenttweaker:celestial_crystal_core>.addTooltip(format.white("the input Celestial Crystal has to have:"));
+<contenttweaker:celestial_crystal_core>.addTooltip(format.blue("Size >= 700") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
+<contenttweaker:celestial_crystal_core>.addTooltip(format.white("Before unlocking the ??? recipe,"));
+<contenttweaker:celestial_crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
 
 # Photovoltaic Cell VII
 recipes.addShaped(<contenttweaker:photovoltaic_cell_vii> * 3, [[<ore:blockGlassMagenta>,<ore:blockGlassMagenta>,<ore:blockGlassMagenta>],[<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>],[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>]]);
@@ -1388,6 +1403,10 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 # Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
 <contenttweaker:apalachia_door_key2>.addTooltip(format.red("Use it the same way as the previous key to ascend further."));
+
+# G.E.R.C. Crystal Block <-> Gerbutil Erbid Radiqvatic Curiopolychloriphosphate
+recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>]]);
+recipes.addShapeless(<alchemistry:compound:1010> * 9, [<contenttweaker:gerc_crystal>]);
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

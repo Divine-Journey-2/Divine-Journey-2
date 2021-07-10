@@ -14,4 +14,9 @@ mods.alchemistry.Util.createCompound(1006, "beryl_zincite", 176, 186, 125, [["be
 
 mods.alchemistry.Util.createCompound(1007, "zircyttrid_beryllium_alumide", 204, 190, 122, [["zirconium", 32],["yttrium", 32],["beryllium_alumide", 4]]);
 
+mods.alchemistry.Util.createCompound(1008, "erbid_gallium_telluride_polychlorid_phosphate", 176, 184, 64, [["erbium", 48],["gallium", 4],["tellurium", 2],["polyvinyl_chloride", 2],["diammonium_phosphate", 4]]);
+mods.alchemistry.Util.createCompound(1009, "neptunit_germanium_butamide", 17, 178, 184, [["neptunium", 1],["germanium", 4],["butane", 8],["amide", 1]]);
+mods.alchemistry.Util.createCompound(1010, "gerbutil_erbid_radiqvatic_curiopolychloriphosphate", 252, 151, 236, [["curium", 1],["erbid_gallium_telluride_polychlorid_phosphate", 1],["neptunit_germanium_butamide", 1]]);
+
+
 print("ENDING AlchemistryCustomCompounds.zs");

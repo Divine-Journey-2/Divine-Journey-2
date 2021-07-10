@@ -388,6 +388,12 @@ addTier3MysticalAgricultureSeed(<mysticalagriculture:certus_quartz_seeds>, <appl
 # Fluix Seeds
 addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:fluix_seeds>, <appliedenergistics2:fluix_block>, <contenttweaker:condensed_vis_crystal_potentia>, <aspect:potentia>, <mysticalagriculture:certus_quartz_seeds>);
 
+# Moon Stone Seeds & Moon Stone Essence -> Moon Stone
+addTier3MysticalAgricultureSeedWithInput(<mysticalagriculture:moonstone_seeds>, <extrautils2:ingredients:5>, <contenttweaker:condensed_vis_crystal_luna>, <aspect:luna>, <mysticalagriculture:lapis_lazuli_seeds>);
+<mysticalagriculture:moonstone_seeds>.displayName = "Moon Stone Seeds";
+<mysticalagriculture:moonstone_essence>.displayName = "Moon Stone Essence";
+recipes.addShaped(<extrautils2:ingredients:5>, [[<mysticalagriculture:moonstone_essence>,<mysticalagriculture:moonstone_essence>,<mysticalagriculture:moonstone_essence>],[<mysticalagriculture:moonstone_essence>,null,<mysticalagriculture:moonstone_essence>],[<mysticalagriculture:moonstone_essence>,<mysticalagriculture:moonstone_essence>,<mysticalagriculture:moonstone_essence>]]);
+
 # Tier 4 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:20>);
 mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/tier4craftingseed", <mysticalagriculture:crafting:20>, 3000, 100,

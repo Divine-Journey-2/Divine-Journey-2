@@ -264,4 +264,8 @@ recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering
 # Dense Ice
 <galacticraftplanets:dense_ice>.addTooltip(format.white("Found in the ") + format.blue("Asteroids") + format.white(" dimension."));
 
+# Solar Essence -> Solar Dust, Venus Volcanic Rock
+recipes.addShaped(<galacticraftplanets:basic_item_venus:4> * 3, [[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,null,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>]]);
+recipes.addShaped(<galacticraftplanets:venus:2> * 3, [[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>],[<contenttweaker:solar_essence>,<minecraft:lava_bucket>,<contenttweaker:solar_essence>],[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>]]);
+
 print("ENDING GalacticraftPlanets.zs");

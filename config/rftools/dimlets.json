@@ -140,6 +140,27 @@
   },
   {
     "filter": {
+      "name": "infinity",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "mod": "plustic",
+      "name": "plustic.molten_infinity",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
       "mod": "tconstruct",
       "name": [
         "ore",
@@ -1196,27 +1217,6 @@
       "ticks": 1,
       "worldgen": true,
       "dimlet": true
-    }
-  },
-  {
-    "filter": {
-      "name": "infinity",
-      "type": "liquid"
-    },
-    "settings": {
-      "worldgen": false,
-      "dimlet": false
-    }
-  },
-  {
-    "filter": {
-      "mod": "plustic",
-      "name": "plustic.molten_infinity",
-      "type": "liquid"
-    },
-    "settings": {
-      "worldgen": false,
-      "dimlet": false
     }
   },
   {

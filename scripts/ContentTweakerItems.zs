@@ -1125,5 +1125,9 @@ apalachia_door_key2.itemRightClick = function(stack, world, player, hand) {
     return "Pass";
 };
 apalachia_door_key2.register();
+var solar_seeds = VanillaFactory.createItem("solar_seeds");
+solar_seeds.register();
+var solar_essence = VanillaFactory.createItem("solar_essence");
+solar_essence.register();
 
 print("ENDING ContentTweakerItems.zs");

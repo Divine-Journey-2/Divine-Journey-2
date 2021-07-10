@@ -558,4 +558,20 @@ stabilized_dimensional_machine_frame.setToolLevel(2);
 stabilized_dimensional_machine_frame.setBlockSoundType(<soundtype:metal>);
 stabilized_dimensional_machine_frame.register();
 
+var gerc_crystal = VanillaFactory.createBlock("gerc_crystal", <blockmaterial:rock>);
+gerc_crystal.setBlockHardness(2.5);
+gerc_crystal.setBlockResistance(2.5);
+gerc_crystal.setToolClass("pickaxe");
+gerc_crystal.setToolLevel(2);
+gerc_crystal.setBlockSoundType(<soundtype:glass>);
+gerc_crystal.register();
+
+var celestial_crystal_core = VanillaFactory.createBlock("celestial_crystal_core", <blockmaterial:rock>);
+celestial_crystal_core.setBlockHardness(4.0);
+celestial_crystal_core.setBlockResistance(2.0);
+celestial_crystal_core.setToolClass("pickaxe");
+celestial_crystal_core.setToolLevel(2);
+celestial_crystal_core.setBlockSoundType(<soundtype:glass>);
+celestial_crystal_core.register();
+
 print("ENDING ContentTweakerBlocks.zs");

@@ -544,4 +544,29 @@ mods.extendedcrafting.TableCrafting.addShaped(<alchemistry:fission_core>,
 [<contenttweaker:antimony_strontium_compound>,<contenttweaker:copper_bismid_carbonate_sheet>,<bigreactors:reactorfuelrod>,<contenttweaker:copper_bismid_carbonate_sheet>,<contenttweaker:antimony_strontium_compound>],
 [<alchemistry:fission_casing>,<alchemistry:fission_casing>,<bigreactors:reactorfuelrod>,<alchemistry:fission_casing>,<alchemistry:fission_casing>]]);
 
+# Europium <- Dimensional Shard Ore, Dimensional Shard
+mods.alchemistry.Dissolver.addRecipe(<ore:oreDimensionalShard>, true, 1, [[100, <alchemistry:element:63> * 128, <alchemistry:compound:14> * 128]]);
+mods.alchemistry.Dissolver.addRecipe(<rftools:dimensional_shard>, true, 1, [[100, <alchemistry:element:63> * 16, <alchemistry:compound:14> * 16]]);
+
+# Europium, Barium Sulfate, Potassium Cyanide, Copper Chloride, Ammonium <- Infused Diamond, Infused Enderpearl
+mods.alchemistry.Dissolver.addRecipe(<rftools:infused_diamond>, true, 1, [[100, <alchemistry:element:63> * 64, <alchemistry:compound:51> * 128, <alchemistry:compound:54> * 60, <alchemistry:compound:44> * 60, <alchemistry:compound:29> * 2, <alchemistry:compound:14> * 64]]);
+mods.alchemistry.Dissolver.addRecipe(<rftools:infused_enderpearl>, true, 1, [[100, <alchemistry:element:63> * 64, <alchemistry:compound:51> * 128, <alchemistry:compound:54> * 60, <alchemistry:compound:44> * 60, <alchemistry:compound:14> * 64]]);
+
+# Erbium Potassium Cyanide, Copper Chloride <- Stellar Alloy
+mods.alchemistry.Dissolver.addRecipe(<enderio:item_alloy_endergy_ingot:3>, true, 1, [[100, <alchemistry:element:68> * 1, <alchemistry:compound:54> * 8, <alchemistry:compound:44> * 8]]);
+mods.alchemistry.Dissolver.addRecipe(<enderio:block_alloy_endergy:3>, true, 1, [[100, <alchemistry:element:68> * 9, <alchemistry:compound:54> * 72, <alchemistry:compound:44> * 72]]);
+
+# Rutherfordium, Curium, Neptunium <- Highly Radioactive Dimension-Splitting Compound
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:highly_radioactive_dimension_splitting_compound>, true, 1, [[100, <alchemistry:element:104> * 8, <alchemistry:element:96> * 8, <alchemistry:element:93> * 8, <alchemistry:element:94> * 2, <alchemistry:element:45>]]);
+
+# Germanium
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:blaze_powder>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:blaze_powder>, true, 1, [[100, <alchemistry:element:6> * 8, <alchemistry:element:16> * 8]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:nether_wart>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_wart>, true, 1, [[100, <alchemistry:compound>, <alchemistry:element:34> * 4]]);
+mods.alchemistry.Dissolver.removeRecipe(<minecraft:nether_wart_block>);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_wart_block>, true, 1, [[100, <alchemistry:compound> * 9, <alchemistry:element:34> * 36]]);
+
+
+
 print("ENDING Alchemistry.zs");

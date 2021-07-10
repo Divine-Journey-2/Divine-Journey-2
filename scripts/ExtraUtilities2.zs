@@ -512,4 +512,9 @@ for i in 0 to 8 {
 	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
+# Sun Crystal filling with Mystical Agriculture essences
+recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
+<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground."));
+<extrautils2:suncrystal>.addTooltip(format.white("Later you can use Glowstone Essence to fill it."));
+
 print("ENDING ExtraUtilities2.zs");
