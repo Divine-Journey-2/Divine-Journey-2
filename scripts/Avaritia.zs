@@ -21,4 +21,8 @@ mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:6>);
 recipes.remove(<avaritia:extreme_crafting_table>);
 # addition in config/modularmachinery/recipes/laser_focus_avaritia_extreme_crafting_table.json
 
+# Singularities
+mods.avaritia.Compressor.removeAll();
+# recipes in extendedcrafting.zs
+
 print("ENDING Avaritia.zs");

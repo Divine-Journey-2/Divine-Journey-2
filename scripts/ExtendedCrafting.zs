@@ -6,6 +6,8 @@ import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.Transposer;
 import mods.thaumcraft.Crucible;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 print("STARTING ExtendedCrafting.zs");
 
@@ -115,5 +117,17 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:compressor>,
 [<galacticraftplanets:item_basic_asteroids:5>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:8>,<galacticraftcore:machine4>,<galacticraftplanets:item_basic_asteroids:8>,<extendedcrafting:material:24>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<contenttweaker:rainbow_tablet>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<extendedcrafting:material:24>,<contenttweaker:rainbow_tablet>,<galacticraftplanets:item_basic_asteroids:5>],
 [<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:awakened_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Fluxed Electrum Singularity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:12>, <contenttweaker:fluxed_electrum_ingot>, 1000, null, 100000000);
+
+# Titanium Singularity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:31>, <galacticraftplanets:item_basic_asteroids>, 1000, null, 100000000);
+
+# Alchemical Brass Singularity
+<extendedcrafting:singularity:21>.displayName = "Alchemical Brass Singularity";
+
+# Chome Singualrity
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1000, null, 100000000);
 
 print("ENDING ExtendedCrafting.zs");

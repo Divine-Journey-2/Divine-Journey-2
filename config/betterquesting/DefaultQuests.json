@@ -1516,7 +1516,6 @@
       "questID:3": 20,
       "preRequisites:11": [
         21,
-        22,
         23
       ],
       "properties:10": {
@@ -25470,7 +25469,8 @@
     "355:10": {
       "questID:3": 355,
       "preRequisites:11": [
-        326
+        326,
+        337
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -34010,7 +34010,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "What is BQ?",
-          "desc:8": "BQ, short for Better Questing, allows pack makers to create a detailed quest system for players, as both guide and goal. It can be opened by a keybind (default: K).\n\nQuests are broken up into small Chapters. You don\u0027t have to completely finish one to begin working on the next, but you could if you wanted to. \nIn this pack we have made the major points, which unlock real progression through the next Chapter, larger and distinct.\n\nQuests have a requirement to complete, located on the right side. On the top left, they have a description of what the quest is (or a pun). On the bottom left, they will typically have a reward, which can be claimed by clicking the \"Claim\" button at the bottom. Some quests are \"Choice Quests\", meaning you must choose between one of several rewards before claiming.\n\nQuests have different forms as you unlock them and progress through them:\nWhen you cannot access a quest and thus cannot complete it, it has a gray background.\n- Unlocked quests are indicated by a glowing red background.\n- Completed, but with quest rewards still unclaimed quests are indicated by a glowing blue background.\n- When you have completed a quest and claimed its reward (if any), it turns into a static green background.\n\nAdditionally, there are 6 buttons on the left side of the screen.\nFrom top to bottom, they are:\n- Toggle the visibility of Questlines, or Chapters.\n- Display the description of the Chapter you are on.\n- Claim all quest on the page (note that Choice Quests will not be claimed).\n- Adjust the viewing size so all quests are displayed.\n- Lock the tray, which keeps the chapter selection open.\n- Back, which returns to the home page.\n"
+          "desc:8": "BQ, short for Better Questing, allows pack makers to create a detailed quest system for players, as both guide and goal. It can be opened by a keybind (default: K).\n\nQuests are broken up into small Chapters. You don\u0027t have to completely finish one to begin working on the next, but you could if you wanted to. \nIn this pack we have made the major points, which unlock real progression through the next Chapter, larger and distinct.\n\nQuests have a requirement to complete, located on the right side. On the top left, they have a description of what the quest is (or a pun). On the bottom left, they will typically have a reward, which can be claimed by clicking the \"Claim\" button at the bottom. Some quests are \"Choice Quests\", meaning you must choose between one of several rewards before claiming.\n\nQuests have different forms as you unlock them and progress through them:\nWhen you cannot access a quest and thus cannot complete it, it has a gray background.\n- Unlocked quests are indicated by a glowing red background.\n- Completed, but with quest rewards still unclaimed quests are indicated by a glowing blue background.\n- When you have completed a quest and claimed its reward (if any), it turns into a static green background.\n\nAdditionally, there are 6 buttons on the left side of the screen.\nFrom top to bottom, they are:\n- Toggle the visibility of Questlines, or Chapters.\n- Display the description of the Chapter you are on.\n- Claim all quest on the page (note that Choice Quests will not be claimed).\n- Adjust the viewing size so all quests are displayed.\n- Lock the tray, which keeps the chapter selection open.\n- Back, which returns to the home page.\n\nLastly, you can see the requed quests to unlock a quest by enabling \"Advanced Tooltips\" by pressing F3+H. "
         }
       },
       "tasks:9": {
@@ -34085,7 +34085,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Multiplayer?",
-          "desc:8": "Note: This is not for setting up servers.\n\nWant to play with a team? There are only a few steps you need to do.\n\nFor questing:\n\nStep 1: Go to the home page of the questbook by clicking the back button in the bottom left.\nStep 2: Click on Party, and invite the person you want with you.\nStep 3: Have them accept quickly, as invitations are time sensitive.\n\nNow they have joined your questbook party, and all quest progress will advance ALL players on the team.\n\nFor claimed chunks:\n\nStep 1: Open your inventory and click \"My Team\" in the top left.\nStep 2: Click on Members and add them.\nOptional: Click on settings and change the display name.\nNow they have joined your FTB Team, and can interact with things in your claimed chunks.\n\nLater on, with the mod Extra Utilities 2:\nTo share Grid Power, do §c/xu_powersharing§r and select your teammates. They must do the same for it to work.\n\nThat\u0027s about it!\n"
+          "desc:8": "Note: This is not for setting up servers, ask on the Discord for that. This is only for players when playing as a team.\n\nWant to play with a team? There are only a few steps you need to do.\n\nFor questing:\n\nStep 1: Go to the home page of the questbook by clicking the back button in the bottom left.\nStep 2: Click on Party, and invite the person you want with you.\nStep 3: Have them accept quickly, as invitations are time sensitive.\n\nNow they have joined your questbook party, and all quest progress will advance ALL players on the team.\n\nFor claimed chunks:\n\nStep 1: Open your inventory and click \"My Team\" in the top left.\nStep 2: Click on Members and add them.\nOptional: Click on settings and change the display name.\nNow they have joined your FTB Team, and can interact with things in your claimed chunks.\n\nLater on, with the mod Extra Utilities 2:\nTo share Grid Power, do §c/xu_powersharing§r and select your teammates. They must do the same to you for Grid Power to be shared.\n\nThat\u0027s about it!\n"
         }
       },
       "tasks:9": {
@@ -34159,7 +34159,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "What is Divine Joruney 2?",
+          "name:8": "What is Divine Journey 2?",
           "desc:8": "Divine Journey 2, often shortened as \"DJ2\" is an expert pack oriented around DivineRPG and automating Magic Mods.\nDJ1, typically known as Divine Journey, was a pack with similar goals made for 1.7.10 in 2017. You do not have to play DJ1 to understand DJ2.\n\nDJ2 is an Expert Pack. This means different things to different people, but here we are using it to mean:\n\n1. The pack will take a long time to complete.\n\n2. The pack is structured around progression - most things are gated, many recipes are changed from their default.\n\n3. The recipes will be expensive, and will require automation - sometimes minimal, sometimes extreme. Fortunately, there are a lot of tools that help you in this endeavor, and they\u0027ll slowly get unlocked through the first half of the pack. Applied Energistics is going to be your friend, you\u0027ll need to autocraft or autoprocess almost everything that there is a quest for.\n\n\nThe goal of the modpack is to \"Find the Meaning of Life\", already located inside a convenient bag in your inventory upon startup, so it shouldn\u0027t be that hard to.... Oh. Oh hold on a second. It needs some sort of a Key to open... The \"Key to Infinity?\" Oh. Oh no. That\u0027s gonna be hard.\n\nSimilarly to Divine Journey, you\u0027ll need \"Infinite Infinity Ingots\", while not truely \"infinite\" this time, you\u0027ll need a LOT to craft the Key to Infinity, and it\u0027ll be best done using a Creative Chest.\n\nSoooo the goal of the pack is basically to get to Creative items... Not so original, I know.\n\n\nBut what IS original is the progression. Over 450 custom items and over 3000 changed recipes will guide you towards the end... Good luck!\n\n\nThe structure of the modpack is the following:\n\n1. Early game: Vanilla Minecraft, Tinker\u0027 Construct, Totemic, Roots, Immersive Engineering, Early game Mekanism, AE2 Item Storage.\n\n2. Big Exploration Block: Better Nether, Twilight Forest (optional), Atum 2, Erebus, Aether I, Iceika.\n\n3. Big Tech Block:\n   - Stage 1: Extra Utilities Pt.1, Open Blocks, Mob Grinding Utils\n   - Stage 2: Thermal Expansion, EnderIO Pt.1, AE2 Crafting Terminal \u0026 Fluid Storage\n   - Stage 3: Industrial Foregoing, some RFTools, SolarFlux Reborn, QuantumFlux\n   - Stage 4: Actually Additions, EnderIO Pt. 2, Simply Jetpacks\n   - Stage 5: Mekanism Pt. 2, Extra Utilities Pt. 2, AE2 Autocrafting \u0026 Autoprocessing, Wireless AE2, Ender Utilities, Ender Storage.\n\n4. Big Magic Block:\n   - Stage 1: AbyssalCraft Pt. 1, DivineRPG start, Blood Magic Pt. 1, EvilCrat Pt. 1\n   - Stage 2: AbyssalCraft Pt. 2, Botania Pt. 1\n   - Stage 3: Botania Pt. 2, Blood Magic Pt. 2, EvilCraft Pt. 2\n   - Stage 4: Thaumcraft\n   - Stage 5: Bewitchment\n   - Stage 6: Thaumic Augmentation, Thaumic Energistics\n   - Stage 7: DivineRPG end, LightningCraft, Extreme Reactors\n   - Stage 8: Astral Sorcery. lategame Extra Utilities, Galacticraft\n\n5. Lategame: Draconic Evolution, Alchemistry, AgriCraft, RFTools Dimensions, Avaritia, Creative Items, Unlocking the Meaning of Life."
         }
       },
@@ -38829,7 +38829,8 @@
         493,
         531,
         533,
-        484
+        484,
+        546
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -44622,7 +44623,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Fr33 L00T!",
-          "desc:8": "Build the Mob Loot Fabricator Modular Machine structure! The quest doesn\u0027t ask for Bromine, but you\u0027ll need 8 Buckets of it.\n\nThis machine uses a bit of energy and mana to output a MASSIVE amount of useful mob loot. No longer will you need laggy Spawners!\n\nThe maintenance cost is also very low - it requires 2 units of Mana per tick, and since a Mana Pool can hold 1,000,000 units of Mana, you\u0027ll be able to use the machine for 25,000 seconds or almost 7 IRL hours on just 1 full Mana Pool.\n\nThe machine works on percentages, every 2 ticks it rolls a die for each and every single possible output, and if it lands on a certain number, it outputs the given mob loot. So technically it\u0027s possible to output ALL types of mob loots AT ONCE, although astronomically unlikely. But, because of this, §6you\u0027ll need a large output buffer§r. The machine can generate 68 unique items, so to avoid clutter, I recommend 3 Ludicrous Item Output Hatches (which you can craft now), or multiple smaller Output Hatches. §6There are 7 locations you can place Output Hatches on the machine, make sure their total capacity exceeds §c67 slots§6 for the machine to function."
+          "desc:8": "Build the Mob Loot Fabricator Modular Machine structure! The quest doesn\u0027t ask for Bromine, but you\u0027ll need 8 Buckets of it.\n\nThis machine uses a bit of energy and mana to output a MASSIVE amount of useful mob loot. No longer will you need laggy Spawners!\n\nThe maintenance cost is also very low - it requires 2 units of Mana per tick, and since a Mana Pool can hold 1,000,000 units of Mana, you\u0027ll be able to use the machine for 25,000 seconds or almost 7 IRL hours on just 1 full Mana Pool.\n\nThe machine works on percentages, every 2 ticks it rolls a die for each and every single possible output, and if it lands on a certain number, it outputs the given mob loot. So technically it\u0027s possible to output ALL types of mob loots AT ONCE, although astronomically unlikely. But, because of this, §6you\u0027ll need a large output buffer§r. The machine can generate 70 unique items, so to avoid clutter, I recommend 3 Ludicrous Item Output Hatches (which you can craft now), or multiple smaller Output Hatches. §6There are 7 locations you can place Output Hatches on the machine, make sure their total capacity is at least §c70 slots§6 for the machine to function."
         }
       },
       "tasks:9": {
@@ -44851,7 +44852,8 @@
     "625:10": {
       "questID:3": 625,
       "preRequisites:11": [
-        557
+        557,
+        619
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -45777,7 +45779,8 @@
     "639:10": {
       "questID:3": 639,
       "preRequisites:11": [
-        642
+        642,
+        640
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -46474,7 +46477,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Gaia fights? Pwah, dimensions!",
-          "desc:8": "Craft a Liquid Stellar Alloy Dimlet and create a Dimension of Stellar Alloy oceans! Pump it up and make blocks upon blocks of it."
+          "desc:8": "Craft a Liquid Stellar Alloy Dimlet and create a Dimension of Stellar Alloy oceans! Pump it up and make blocks upon blocks of it.\n\nNote that Gaia Spirits can be gotten from the Mob Loot Fabricator Modular Machine."
         }
       },
       "tasks:9": {
@@ -46602,7 +46605,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Crafting chains? Pwah, dimensions!",
-          "desc:8": "Craft a Molten Starmetal Alloy Dimlet and create a Dimension of Molten Starmetal oceans! Pump it up and make blocks upon blocks of it."
+          "desc:8": "Craft a Molten Starmetal Alloy Dimlet and create a Dimension of Molten Starmetal oceans! Pump it up and make boatloads of Starmetal."
         }
       },
       "tasks:9": {
@@ -47257,7 +47260,20 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "alchemistry:ingot",
+              "Count:3": 12,
+              "Damage:2": 42,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "661:10": {
       "questID:3": 661,
@@ -47504,7 +47520,26 @@
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "id:8": "rftools:infused_diamond",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "rftools:infused_enderpearl",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "665:10": {
       "questID:3": 665,
@@ -117890,8 +117925,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 120,
+          "x:3": 112,
+          "y:3": 144,
           "id:3": 1482,
           "sizeY:3": 24
         },
@@ -117939,8 +117974,8 @@
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 64,
-          "y:3": 120,
+          "x:3": 80,
+          "y:3": 144,
           "id:3": 1489,
           "sizeY:3": 24
         },
@@ -118184,8 +118219,8 @@
         },
         "58:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 48,
+          "x:3": 96,
+          "y:3": 120,
           "id:3": 1524,
           "sizeY:3": 24
         }
@@ -119820,22 +119855,22 @@
         },
         "41:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 48,
+          "x:3": 208,
+          "y:3": 72,
           "id:3": 115,
           "sizeY:3": 24
         },
         "42:10": {
           "sizeX:3": 24,
-          "x:3": 175,
-          "y:3": 23,
+          "x:3": 176,
+          "y:3": 72,
           "id:3": 116,
           "sizeY:3": 24
         },
         "43:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 24,
+          "x:3": 160,
+          "y:3": 48,
           "id:3": 117,
           "sizeY:3": 24
         },
@@ -119911,8 +119946,8 @@
         },
         "54:10": {
           "sizeX:3": 24,
-          "x:3": 160,
-          "y:3": 49,
+          "x:3": 144,
+          "y:3": 24,
           "id:3": 620,
           "sizeY:3": 24
         }
@@ -121359,8 +121394,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 128,
-          "y:3": 144,
+          "x:3": 144,
+          "y:3": 120,
           "id:3": 330,
           "sizeY:3": 24
         },
@@ -121429,8 +121464,8 @@
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 160,
-          "y:3": 144,
+          "x:3": 176,
+          "y:3": 120,
           "id:3": 340,
           "sizeY:3": 24
         },
@@ -121457,15 +121492,15 @@
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 72,
+          "x:3": 192,
+          "y:3": 96,
           "id:3": 344,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 192,
-          "y:3": 96,
+          "x:3": 144,
+          "y:3": 72,
           "id:3": 345,
           "sizeY:3": 24
         },
@@ -121485,8 +121520,8 @@
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 144,
-          "y:3": 120,
+          "x:3": 128,
+          "y:3": 144,
           "id:3": 348,
           "sizeY:3": 24
         },
@@ -121513,8 +121548,8 @@
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": 176,
-          "y:3": 120,
+          "x:3": 160,
+          "y:3": 144,
           "id:3": 352,
           "sizeY:3": 24
         },
@@ -123094,269 +123129,276 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": 167,
-          "y:3": 65,
-          "id:3": 623,
+          "x:3": 48,
+          "y:3": 0,
+          "id:3": 619,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": 83,
-          "y:3": 65,
-          "id:3": 624,
+          "x:3": 96,
+          "y:3": 24,
+          "id:3": 623,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": 82,
-          "y:3": 20,
-          "id:3": 625,
+          "x:3": 48,
+          "y:3": 48,
+          "id:3": 624,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": 213,
-          "y:3": 41,
-          "id:3": 627,
+          "x:3": 64,
+          "y:3": 24,
+          "id:3": 625,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": 134,
-          "y:3": 65,
-          "id:3": 628,
+          "x:3": 144,
+          "y:3": 0,
+          "id:3": 627,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": 118,
-          "y:3": 90,
-          "id:3": 629,
+          "x:3": 80,
+          "y:3": 48,
+          "id:3": 628,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": 38,
-          "y:3": 116,
-          "id:3": 630,
+          "x:3": 48,
+          "y:3": 96,
+          "id:3": 629,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 54,
-          "y:3": 91,
-          "id:3": 631,
+          "x:3": 16,
+          "y:3": 96,
+          "id:3": 630,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 70,
-          "y:3": 116,
-          "id:3": 632,
+          "x:3": 0,
+          "y:3": 72,
+          "id:3": 631,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 151,
-          "y:3": 40,
-          "id:3": 633,
+          "x:3": 32,
+          "y:3": 72,
+          "id:3": 632,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 227,
-          "y:3": 116,
-          "id:3": 634,
+          "x:3": 80,
+          "y:3": 0,
+          "id:3": 633,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 197,
-          "y:3": 115,
-          "id:3": 635,
-          "sizeY:3": 26
+          "x:3": 176,
+          "y:3": 48,
+          "id:3": 634,
+          "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": 134,
-          "y:3": 116,
-          "id:3": 636,
+          "x:3": 112,
+          "y:3": 48,
+          "id:3": 635,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": 243,
-          "y:3": 91,
-          "id:3": 637,
+          "x:3": 96,
+          "y:3": 72,
+          "id:3": 636,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 38,
-          "y:3": 65,
-          "id:3": 638,
+          "x:3": 160,
+          "y:3": 72,
+          "id:3": 637,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": 290,
-          "y:3": 116,
-          "id:3": 639,
+          "x:3": 32,
+          "y:3": 24,
+          "id:3": 638,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 166,
-          "y:3": 116,
-          "id:3": 640,
-          "sizeY:3": 25
+          "x:3": 144,
+          "y:3": 96,
+          "id:3": 639,
+          "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": 181,
-          "y:3": 91,
-          "id:3": 641,
+          "x:3": 112,
+          "y:3": 96,
+          "id:3": 640,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": 259,
-          "y:3": 116,
-          "id:3": 642,
+          "x:3": 144,
+          "y:3": 48,
+          "id:3": 641,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": 244,
-          "y:3": 142,
-          "id:3": 643,
+          "x:3": 176,
+          "y:3": 96,
+          "id:3": 642,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 212,
-          "y:3": 91,
-          "id:3": 644,
+          "x:3": 192,
+          "y:3": 72,
+          "id:3": 643,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 102,
-          "y:3": 116,
-          "id:3": 645,
+          "x:3": 128,
+          "y:3": 72,
+          "id:3": 644,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 182,
-          "y:3": 40,
-          "id:3": 646,
+          "x:3": 64,
+          "y:3": 72,
+          "id:3": 645,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 23,
-          "y:3": 91,
-          "id:3": 647,
+          "x:3": 112,
+          "y:3": 0,
+          "id:3": 646,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": 5,
-          "y:3": 65,
-          "id:3": 648,
+          "x:3": 16,
+          "y:3": 48,
+          "id:3": 647,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": 151,
-          "y:3": 91,
-          "id:3": 649,
+          "x:3": 0,
+          "y:3": 24,
+          "id:3": 648,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 65,
-          "id:3": 650,
+          "x:3": 224,
+          "y:3": 24,
+          "id:3": 649,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": 258,
-          "y:3": 65,
-          "id:3": 651,
+          "x:3": 160,
+          "y:3": 24,
+          "id:3": 650,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": 197,
-          "y:3": 65,
-          "id:3": 652,
+          "x:3": 192,
+          "y:3": 24,
+          "id:3": 651,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": 118,
-          "y:3": 143,
-          "id:3": 657,
+          "x:3": 128,
+          "y:3": 24,
+          "id:3": 652,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 25,
-          "y:3": 143,
-          "id:3": 658,
+          "x:3": 80,
+          "y:3": 96,
+          "id:3": 657,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 86,
-          "y:3": 143,
-          "id:3": 659,
+          "x:3": 160,
+          "y:3": 120,
+          "id:3": 658,
           "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": 150,
-          "y:3": 142,
-          "id:3": 660,
+          "x:3": 96,
+          "y:3": 120,
+          "id:3": 659,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": 56,
-          "y:3": 143,
-          "id:3": 661,
+          "x:3": 224,
+          "y:3": 144,
+          "id:3": 660,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": 103,
-          "y:3": 167,
-          "id:3": 662,
+          "x:3": 128,
+          "y:3": 120,
+          "id:3": 661,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": 73,
-          "y:3": 167,
-          "id:3": 663,
+          "x:3": 112,
+          "y:3": 144,
+          "id:3": 662,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": 88,
-          "y:3": 191,
-          "id:3": 664,
+          "x:3": 144,
+          "y:3": 144,
+          "id:3": 663,
           "sizeY:3": 24
         },
         "37:10": {
-          "sizeX:3": 36,
-          "x:3": 144,
-          "y:3": 185,
+          "sizeX:3": 24,
+          "x:3": 128,
+          "y:3": 168,
+          "id:3": 664,
+          "sizeY:3": 24
+        },
+        "38:10": {
+          "sizeX:3": 40,
+          "x:3": 176,
+          "y:3": 160,
           "id:3": 665,
-          "sizeY:3": 36
+          "sizeY:3": 40
         }
       },
       "lineID:3": 23,
@@ -123372,7 +123414,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": " "
+          "desc:8": "Exploit brand new worlds with RFTools Dimensions."
         }
       },
       "order:3": 26

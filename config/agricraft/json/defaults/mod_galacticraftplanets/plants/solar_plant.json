@@ -39,7 +39,7 @@
         "chance": 0.9,
         "required": true,
         "item": "contenttweaker:solar_essence",
-        "meta": 4,
+        "meta": 0,
         "tags": "",
         "ignoreMeta": false,
         "ignoreTags": [],

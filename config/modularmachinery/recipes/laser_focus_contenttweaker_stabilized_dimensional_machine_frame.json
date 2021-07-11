@@ -23,13 +23,12 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "draconicadditions:chaotic_energy_core",
-            "amount": 8
+            "item": "draconicadditions:chaotic_energy_core"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "draconicevolution:reactor_component@0"
+            "item": "draconicevolution:reactor_part@4"
         },
         {
             "type": "energy",

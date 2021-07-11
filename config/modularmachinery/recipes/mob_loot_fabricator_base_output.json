@@ -292,31 +292,31 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "divinerpg:eden_fragments",
+            "item": "divinerpg:eden_soul",
             "chance": 0.025
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "divinerpg:wildwood_fragments",
+            "item": "divinerpg:wildwood_soul",
             "chance": 0.025
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "divinerpg:apalachia_fragments",
+            "item": "divinerpg:apalachia_soul",
             "chance": 0.025
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "divinerpg:skythern_fragments",
+            "item": "divinerpg:skythern_soul",
             "chance": 0.025
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "divinerpg:mortum_fragments",
+            "item": "divinerpg:mortum_soul",
             "chance": 0.025
         },
         {
@@ -420,6 +420,18 @@
             "io-type": "output",
             "item": "divinerpg:cyclops_eye_shards",
             "chance": 0.01
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "botania:manaresource@5",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "quantumflux:craftingpiece@3",
+            "chance": 0.001
         }
     ]
 }

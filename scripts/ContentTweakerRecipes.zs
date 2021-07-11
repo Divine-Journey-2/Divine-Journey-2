@@ -1408,6 +1408,69 @@ recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalach
 recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>]]);
 recipes.addShapeless(<alchemistry:compound:1010> * 9, [<contenttweaker:gerc_crystal>]);
 
+# Minecraft Singularity
+recipes.addShapeless(<contenttweaker:minecraft_singularity>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity:101>,<extendedcrafting:singularity:4>]);
+
+# Thermal Singularity
+recipes.addShapeless(<contenttweaker:thermal_singularity>, [<extendedcrafting:singularity:16>,<extendedcrafting:singularity:17>,<extendedcrafting:singularity:18>,<extendedcrafting:singularity:22>,<extendedcrafting:singularity:23>,<extendedcrafting:singularity:25>,<extendedcrafting:singularity:35>,<extendedcrafting:singularity:34>]);
+
+# Mixed Thermal Singularity
+recipes.addShapeless(<contenttweaker:mixed_thermal_singularity>, [<extendedcrafting:singularity:19>,<extendedcrafting:singularity:27>,<extendedcrafting:singularity:28>,<extendedcrafting:singularity:26>,<extendedcrafting:singularity:24>,<extendedcrafting:singularity:48>,<extendedcrafting:singularity:49>,<extendedcrafting:singularity:50>,<extendedcrafting:singularity:29>]);
+
+# Tinkers Singularity
+recipes.addShapeless(<contenttweaker:tinkers_singularity>, [<extendedcrafting:singularity:64>,<extendedcrafting:singularity:65>,<extendedcrafting:singularity:66>]);
+
+# EnderIO Singularity
+recipes.addShapeless(<contenttweaker:enderio_singularity>, [<extendedcrafting:singularity_custom:119>,<extendedcrafting:singularity_custom:103>,<extendedcrafting:singularity_custom:104>,<extendedcrafting:singularity_custom:105>,<extendedcrafting:singularity_custom:106>,<extendedcrafting:singularity_custom:107>,<extendedcrafting:singularity_custom:108>,<extendedcrafting:singularity_custom:109>,<extendedcrafting:singularity_custom:110>]);
+
+# Endergy Singularity
+recipes.addShapeless(<contenttweaker:endergy_singularity>, [<extendedcrafting:singularity_custom:111>,<extendedcrafting:singularity_custom:112>,<extendedcrafting:singularity_custom:113>,<extendedcrafting:singularity_custom:114>,<extendedcrafting:singularity_custom:115>,<extendedcrafting:singularity_custom:116>,<extendedcrafting:singularity_custom:117>]);
+
+# ProjectRed Singularity
+recipes.addShapeless(<contenttweaker:projectred_singularity>, [<extendedcrafting:singularity_custom:120>,<extendedcrafting:singularity_custom:121>,<extendedcrafting:singularity_custom:122>,<extendedcrafting:singularity_custom:123>]);
+
+# Mekanism Singularity
+recipes.addShapeless(<contenttweaker:mekanism_singularity>, [<extendedcrafting:singularity_custom:124>,<extendedcrafting:singularity_custom:125>,<extendedcrafting:singularity_custom:126>]);
+
+# Abyssal Singularity
+recipes.addShapeless(<contenttweaker:abyssal_singularity>, [<extendedcrafting:singularity_custom:127>,<extendedcrafting:singularity_custom:128>,<extendedcrafting:singularity_custom:129>,<extendedcrafting:singularity_custom:130>]);
+
+# Divine Singularity
+recipes.addShapeless(<contenttweaker:divine_singularity>, [<extendedcrafting:singularity_custom:131>,<extendedcrafting:singularity_custom:132>,<extendedcrafting:singularity_custom:133>,<extendedcrafting:singularity_custom:134>,<extendedcrafting:singularity_custom:135>]);
+
+# Dusty Thermal Singularity
+recipes.addShapeless(<contenttweaker:dusty_thermal_singularity>, [<extendedcrafting:singularity_custom:139>,<extendedcrafting:singularity_custom:140>,<extendedcrafting:singularity_custom:141>,<extendedcrafting:singularity_custom:142>,<extendedcrafting:singularity_custom:138>,<extendedcrafting:singularity_custom:144>,<extendedcrafting:singularity_custom:145>,<avaritia:singularity:12>]);
+
+# Botanic Singualrity
+recipes.addShapeless(<contenttweaker:botanic_singularity>, [<extendedcrafting:singularity_custom:147>,<extendedcrafting:singularity_custom:148>,<extendedcrafting:singularity_custom:149>]);
+
+# Thaumic Singularity
+recipes.addShapeless(<contenttweaker:thaumic_singularity>, [<extendedcrafting:singularity_custom:158>,<extendedcrafting:singularity_custom:157>,<extendedcrafting:singularity:21>,<extendedcrafting:singularity_custom:150>,<extendedcrafting:singularity_custom:152>]);
+
+# Alchemical Singularity
+recipes.addShapeless(<contenttweaker:alchemic_singularity>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
+
+# Draglactic Singularity
+recipes.addShapeless(<contenttweaker:draglactic_singularity>, [<extendedcrafting:singularity_custom:102>,<extendedcrafting:singularity:31>,<extendedcrafting:singularity_custom:155>]);
+
+# Extra Tech Singularity
+recipes.addShapeless(<contenttweaker:extra_tech_singularity>, [<extendedcrafting:singularity_custom:118>,<extendedcrafting:singularity_custom:143>,<extendedcrafting:singularity_custom:136>,<extendedcrafting:singularity_custom:137>,<extendedcrafting:singularity_custom:153>]);
+
+# Extra Magic Singularity
+recipes.addShapeless(<contenttweaker:extra_magic_singularity>, [<extendedcrafting:singularity_custom:156>,<extendedcrafting:singularity_custom:146>,<extendedcrafting:singularity_custom:154>]);
+
+# Magical Singularity
+recipes.addShapeless(<contenttweaker:magical_singularity>, [<contenttweaker:abyssal_singularity>,<contenttweaker:divine_singularity>,<contenttweaker:botanic_singularity>,<contenttweaker:thaumic_singularity>,<contenttweaker:extra_magic_singularity>]);
+
+# Techy Singualrity
+recipes.addShapeless(<contenttweaker:techy_singularity>, [<contenttweaker:thermal_singularity>,<contenttweaker:mixed_thermal_singularity>,<contenttweaker:dusty_thermal_singularity>,<contenttweaker:enderio_singularity>,<contenttweaker:endergy_singularity>,<contenttweaker:mekanism_singularity>,<contenttweaker:extra_tech_singularity>]);
+
+# Powerful Singularity
+recipes.addShapeless(<contenttweaker:powerful_singularity>, [<contenttweaker:projectred_singularity>,<contenttweaker:alchemic_singularity>,<contenttweaker:draglactic_singularity>]);
+
+# Beginner's Singularity
+recipes.addShapeless(<contenttweaker:beginners_singularity>, [<contenttweaker:minecraft_singularity>,<contenttweaker:tinkers_singularity>]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];
