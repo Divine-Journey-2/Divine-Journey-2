@@ -1471,6 +1471,9 @@ recipes.addShapeless(<contenttweaker:powerful_singularity>, [<contenttweaker:pro
 # Beginner's Singularity
 recipes.addShapeless(<contenttweaker:beginners_singularity>, [<contenttweaker:minecraft_singularity>,<contenttweaker:tinkers_singularity>]);
 
+# Penultimate Machine Frame
+recipes.addShapedMirrored(<contenttweaker:penultimate_machine_frame>, [[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>],[<rftools:infused_diamond>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>]]);
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

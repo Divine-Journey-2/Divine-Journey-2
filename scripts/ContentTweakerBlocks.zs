@@ -574,4 +574,12 @@ celestial_crystal_core.setToolLevel(2);
 celestial_crystal_core.setBlockSoundType(<soundtype:glass>);
 celestial_crystal_core.register();
 
+var penultimate_machine_frame = VanillaFactory.createBlock("penultimate_machine_frame", <blockmaterial:rock>);
+penultimate_machine_frame.setBlockHardness(8.0);
+penultimate_machine_frame.setBlockResistance(6.0);
+penultimate_machine_frame.setToolClass("pickaxe");
+penultimate_machine_frame.setToolLevel(2);
+penultimate_machine_frame.setBlockSoundType(<soundtype:glass>);
+penultimate_machine_frame.register();
+
 print("ENDING ContentTweakerBlocks.zs");
