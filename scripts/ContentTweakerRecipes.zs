@@ -1409,7 +1409,7 @@ recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<
 recipes.addShapeless(<alchemistry:compound:1010> * 9, [<contenttweaker:gerc_crystal>]);
 
 # Minecraft Singularity
-recipes.addShapeless(<contenttweaker:minecraft_singularity>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity:101>,<extendedcrafting:singularity:4>]);
+recipes.addShapeless(<contenttweaker:minecraft_singularity>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity_custom:101>,<extendedcrafting:singularity:4>]);
 
 # Thermal Singularity
 recipes.addShapeless(<contenttweaker:thermal_singularity>, [<extendedcrafting:singularity:16>,<extendedcrafting:singularity:17>,<extendedcrafting:singularity:18>,<extendedcrafting:singularity:22>,<extendedcrafting:singularity:23>,<extendedcrafting:singularity:25>,<extendedcrafting:singularity:35>,<extendedcrafting:singularity:34>]);
@@ -1477,7 +1477,7 @@ recipes.addShapedMirrored(<contenttweaker:penultimate_machine_frame>, [[<content
 # Corrupted Draconium Block & Ingot
 mods.projecte.WorldTransmutation.add(<contenttweaker:corrupted_draconium_block>, <draconicevolution:draconic_block>);
 recipes.addShaped(<contenttweaker:corrupted_draconium_block>, [[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>]]);
-recipes.addShapeless(<contenttweaker:corrupted_draconium_ingot> * 9, [<contenttweaker:corrupted_draconium_block>])
+recipes.addShapeless(<contenttweaker:corrupted_draconium_ingot> * 9, [<contenttweaker:corrupted_draconium_block>]);
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

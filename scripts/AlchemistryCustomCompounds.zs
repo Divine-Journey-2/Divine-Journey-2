@@ -18,5 +18,7 @@ mods.alchemistry.Util.createCompound(1008, "erbid_gallium_telluride_polychlorid_
 mods.alchemistry.Util.createCompound(1009, "neptunit_germanium_butamide", 17, 178, 184, [["neptunium", 1],["germanium", 4],["butane", 8],["amide", 1]]);
 mods.alchemistry.Util.createCompound(1010, "gerbutil_erbid_radiqvatic_curiopolychloriphosphate", 252, 151, 236, [["curium", 1],["erbid_gallium_telluride_polychlorid_phosphate", 1],["neptunit_germanium_butamide", 1]]);
 
+mods.alchemistry.Util.createCompound(1011, "neodymit_calcium_carbonate", 238, 245, 42, [["neodymium", 2],["calcium_carbonate", 4]]);
+mods.alchemistry.Util.createCompound(1012, "hafnium_sulfate", 238, 245, 42, [["hafnium", 4],["sulfur", 2]]);
 
 print("ENDING AlchemistryCustomCompounds.zs");

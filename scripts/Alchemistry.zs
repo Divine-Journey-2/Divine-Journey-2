@@ -567,6 +567,11 @@ mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_wart>, true, 1, [[100, <a
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:nether_wart_block>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:nether_wart_block>, true, 1, [[100, <alchemistry:compound> * 9, <alchemistry:element:34> * 36]]);
 
+# Neodymium, Dysprosium, Hafnium <- Low Covalence Dust, Medium Covalence Dust, High Covalence Dust
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust>, true, 1, [[100, <alchemistry:compound:1011> * 8, <alchemistry:compound:14> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust:1>, true, 1, [[100, <alchemistry:compound:1011> * 8, <alchemistry:compound:14> * 8, <alchemistry:element:66> * 16, <alchemistry:compound:54> * 32, <alchemistry:compound:44> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust:2>, true, 1, [[100, <alchemistry:compound:1011> * 8, <alchemistry:compound:14> * 8, <alchemistry:compound:1012> * 8, <alchemistry:element:66> * 16, <alchemistry:compound:54> * 32, <alchemistry:compound:44> * 32]]);
+
 
 
 print("ENDING Alchemistry.zs");
