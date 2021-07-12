@@ -60,8 +60,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:alchemical_chest>,
 [<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>,<contenttweaker:corrupted_draconium_block>]]);
 
 # Transmutation Tablet
-recipes.remove(<projecte:transmutation_table>);
-mods.extendedcrafting.TableCrafting.addShaped(<projecte:transmutation_table>,
+recipes.remove(<projecte:item.pe_transmutation_tablet>);
+mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_transmutation_tablet>,
 [[<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:techy_singularity>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
