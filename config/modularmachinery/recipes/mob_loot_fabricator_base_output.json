@@ -64,6 +64,12 @@
         {
             "type": "item",
             "io-type": "output",
+            "item": "minecraft:carrot",
+            "chance": 0.001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
             "item": "minecraft:redstone",
             "chance": 0.005
         },

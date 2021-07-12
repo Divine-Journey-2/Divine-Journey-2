@@ -284,7 +284,7 @@ steaming_restonia_crystal_block.setToolLevel(1);
 steaming_restonia_crystal_block.setBlockSoundType(<soundtype:stone>);
 steaming_restonia_crystal_block.register();
 
-val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon", "mars"] as string[];
+val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon", "mars", "venus"] as string[];
 # itemUtils.getItem("minecraft:apple");
 
 for dim in dimension_names_lower {

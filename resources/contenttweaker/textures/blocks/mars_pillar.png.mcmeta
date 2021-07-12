@@ -4,7 +4,7 @@
         "type": "pillar",
 	"layer": "SOLID",
         "textures": [
-            "contenttweaker:blocks/moon_pillar-ctm"
+            "contenttweaker:blocks/mars_pillar-ctm"
         ]
     }
 }

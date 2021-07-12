@@ -1474,6 +1474,11 @@ recipes.addShapeless(<contenttweaker:beginners_singularity>, [<contenttweaker:mi
 # Penultimate Machine Frame
 recipes.addShapedMirrored(<contenttweaker:penultimate_machine_frame>, [[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>],[<rftools:infused_diamond>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>]]);
 
+# Corrupted Draconium Block & Ingot
+mods.projecte.WorldTransmutation.add(<contenttweaker:corrupted_draconium_block>, <draconicevolution:draconic_block>);
+recipes.addShaped(<contenttweaker:corrupted_draconium_block>, [[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>]]);
+recipes.addShapeless(<contenttweaker:corrupted_draconium_ingot> * 9, [<contenttweaker:corrupted_draconium_block>])
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

@@ -1171,5 +1171,7 @@ var powerful_singularity = VanillaFactory.createItem("powerful_singularity");
 powerful_singularity.register();
 var beginners_singularity = VanillaFactory.createItem("beginners_singularity");
 beginners_singularity.register();
+var corrupted_draconium_dust = VanillaFactory.createItem("corrupted_draconium_dust");
+corrupted_draconium_dust.register();
 
 print("ENDING ContentTweakerItems.zs");

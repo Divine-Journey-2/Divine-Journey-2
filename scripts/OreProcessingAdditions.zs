@@ -648,4 +648,7 @@ EUCrusher.add(<rftools:dimensional_shard> * 4, <rftools:dimensional_shard_ore>);
 LightningCrusher.add(<rftools:dimensional_shard> * 4, <rftools:dimensional_shard_ore>);
 mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard> * 4);
 
+# Corrupted Draconium Dust
+addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>, <contenttweaker:corrupted_draconium_dust>);
+
 print("ENDING OreProcessingAdditions.zs");

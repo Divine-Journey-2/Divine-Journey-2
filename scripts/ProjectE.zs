@@ -1,6 +1,9 @@
 # Author: Atricos
 print("STARTING ProjectE.zs");
 
+# No randomized entities
+mods.projecte.EntityRandomizer.clearMobs();
+
 # Disabling Armor sets, because wearing them causes Ticking World errors (infinite crash loops & world corruption)
 /*
 recipes.remove(<projecte:item.pe_gem_armor_3>);
@@ -35,5 +38,13 @@ mods.avaritia.ExtremeCrafting.addShaped("pe_philosophers_stone", <projecte:item.
 [null,null,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,null,null]]);
 <projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple("It's said that the main ingredient for a"));
 <projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple("Philosphers's Stone ... is human soul."));
+
+# Low Covalence Dust
+recipes.remove(<projecte:item.pe_covalence_dust>);
+recipes.addShaped(<projecte:item.pe_covalence_dust> * 16, [[<enderio:item_material:35>,<lightningcraft:material:14>,<enderio:item_material:35>],[<contenttweaker:corrupted_draconium_dust>,<contenttweaker:dusty_thermal_singularity>,<contenttweaker:corrupted_draconium_dust>],[<enderio:item_material:35>,<lightningcraft:material:14>,<enderio:item_material:35>]]);
+
+# Medium Covalence Dust
+recipes.remove(<projecte:item.pe_covalence_dust:1>);
+recipes.remove(<projecte:item.pe_covalence_dust:1> * 16, [[<rftools:infused_diamond>,<projecte:item.pe_covalence_dust>,<rftools:infused_diamond>],[<projecte:item.pe_covalence_dust>,<contenttweaker:endergy_singularity>,<projecte:item.pe_covalence_dust>],[<rftools:infused_diamond>,<projecte:item.pe_covalence_dust>,<rftools:infused_diamond>]]);
 
 print("ENDING ProjectE.zs");
