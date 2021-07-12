@@ -1675,5 +1675,21 @@
             "elements": [
                 "modularmachinery:blockcasing@4"
             ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "alchemistry:helium_light@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "alchemistry:helium_light@0"
+            ]
         }
     ]}

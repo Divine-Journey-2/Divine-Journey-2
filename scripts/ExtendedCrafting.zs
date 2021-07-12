@@ -122,7 +122,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:compressor>,
 mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:12>, <contenttweaker:fluxed_electrum_ingot>, 1000, null, 100000000);
 
 # Titanium Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:31>, <galacticraftplanets:item_basic_asteroids>, 1000, null, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:31>, <galacticraftplanets:item_basic_asteroids>, 1000, null, 100000000);
 
 # Alchemical Brass Singularity
 <extendedcrafting:singularity:21>.displayName = "Alchemical Brass Singularity";
