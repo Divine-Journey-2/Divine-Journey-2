@@ -1,0 +1,44 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_contenttweaker_proton_electron",
+    "recipeTime": 10,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:element@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:element@84",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_catalyst"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "alchemistry:element@42",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:proton"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:electron"
+        }
+    ]
+}

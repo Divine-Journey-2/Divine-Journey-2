@@ -1,0 +1,35 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_contenttweaker_anti_hydrogen",
+    "recipeTime": 10,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:anti_proton",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:anti_electron",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_coolant"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:anti_hydrogen",
+            "amount": 16
+        }
+    ]
+}

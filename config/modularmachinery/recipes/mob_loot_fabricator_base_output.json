@@ -438,6 +438,12 @@
             "io-type": "output",
             "item": "quantumflux:craftingpiece@3",
             "chance": 0.001
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "quantumflux:craftingpiece@3",
+            "chance": 0.005
         }
     ]
 }

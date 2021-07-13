@@ -69,7 +69,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_transmutation_ta
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:techy_singularity>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>]]);
-<projecte:transmutation_table>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Crafting uses up this input Philosppher's Stone."));
+<projecte:item.pe_transmutation_tablet>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Crafting uses up the input Philosopher's Stone."));
 
 # Energy Condenser
 recipes.remove(<projecte:condenser_mk1>);
@@ -117,5 +117,46 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:transmutation_table>,
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:60>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>]]);
 
+# Dark Matter Furnace
+recipes.remove(<projecte:dm_furnace>);
+recipes.addShaped(<projecte:dm_furnace>, [[<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>],[<projecte:matter_block>,<galacticraftcore:machine_tiered:4>,<projecte:matter_block>],[<projecte:matter_block>,<projecte:matter_block>,<projecte:matter_block>]]);
+
+# Red Matter Furnace
+recipes.remove(<projecte:rm_furnace>);
+recipes.addShaped(<projecte:rm_furnace>, [[<projecte:matter_block:1>,<projecte:matter_block:1>,<projecte:matter_block:1>],[<projecte:matter_block:1>,<projecte:dm_furnace>,<projecte:matter_block:1>],[<projecte:matter_block:1>,<projecte:matter_block:1>,<projecte:matter_block:1>]]);
+
+# Energy Collector MK1
+recipes.remove(<projecte:collector_mk1>);
+recipes.addShaped(<projecte:collector_mk1>, [[<extendedcrafting:singularity:4>,<contenttweaker:perfectium_block>,<extendedcrafting:singularity:4>],[<extendedcrafting:singularity_custom:126>,<contenttweaker:penultimate_machine_frame>,<extendedcrafting:singularity_custom:126>],[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>]]);
+
+# Energy Collector MK2
+recipes.remove(<projecte:collector_mk2>);
+recipes.addShaped(<projecte:collector_mk2>, [[<extendedcrafting:singularity:4>,<projecte:item.pe_matter>,<extendedcrafting:singularity:4>],[<extendedcrafting:singularity_custom:126>,<projecte:collector_mk1>,<extendedcrafting:singularity_custom:126>],[<alchemistry:ingot:66>,<alchemistry:ingot:66>,<alchemistry:ingot:66>]]);
+
+# Energy Collector MK3
+recipes.remove(<projecte:collector_mk3>);
+recipes.addShaped(<projecte:collector_mk3>, [[<extendedcrafting:singularity:4>,<projecte:item.pe_matter:1>,<extendedcrafting:singularity:4>],[<extendedcrafting:singularity_custom:126>,<projecte:collector_mk2>,<extendedcrafting:singularity_custom:126>],[<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>]]);
+
+# Anti-Matter Relay MK1
+recipes.remove(<projecte:relay_mk1>);
+recipes.addShaped(<projecte:relay_mk1>, [[<contenttweaker:antimatter_cluster>,<contenttweaker:perfectium_block>,<contenttweaker:antimatter_cluster>],[<contenttweaker:antimatter_cluster>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:antimatter_cluster>],[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>]]);
+
+# Anti-Matter Relay MK2
+recipes.remove(<projecte:relay_mk2>);
+recipes.addShaped(<projecte:relay_mk2>, [[<contenttweaker:antimatter_cluster>,<projecte:item.pe_matter>,<contenttweaker:antimatter_cluster>],[<contenttweaker:antimatter_cluster>,<projecte:relay_mk1>,<contenttweaker:antimatter_cluster>],[<alchemistry:ingot:66>,<alchemistry:ingot:66>,<alchemistry:ingot:66>]]);
+
+# Anti-Matter Relay MK3
+recipes.remove(<projecte:relay_mk3>);
+recipes.addShaped(<projecte:relay_mk3>, [[<contenttweaker:antimatter_cluster>,<projecte:item.pe_matter:1>,<contenttweaker:antimatter_cluster>],[<contenttweaker:antimatter_cluster>,<projecte:relay_mk2>,<contenttweaker:antimatter_cluster>],[<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>]]);
+
+# Nova Catalyst
+recipes.remove(<projecte:nova_catalyst>);
+
+# Nova Cataclysm
+recipes.remove(<projecte:nova_cataclysm>);
+
+# Interdiction Torch
+recipes.remove(<projecte:interdiction_torch>);
+recipes.addShaped(<projecte:interdiction_torch>, [[<torchmaster:mega_torch>],[<alchemistry:ingot:43>],[<mob_grinding_utils:fan>]]);
 
 print("ENDING ProjectE.zs");

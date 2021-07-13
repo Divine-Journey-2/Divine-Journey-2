@@ -42317,6 +42317,12 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "11:10": {
+              "id:8": "mysticalagriculture:moonstone_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -44623,7 +44629,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Fr33 L00T!",
-          "desc:8": "Build the Mob Loot Fabricator Modular Machine structure! The quest doesn\u0027t ask for Bromine, but you\u0027ll need 8 Buckets of it.\n\nThis machine uses a bit of energy and mana to output a MASSIVE amount of useful mob loot. No longer will you need laggy Spawners!\n\nThe maintenance cost is also very low - it requires 2 units of Mana per tick, and since a Mana Pool can hold 1,000,000 units of Mana, you\u0027ll be able to use the machine for 25,000 seconds or almost 7 IRL hours on just 1 full Mana Pool.\n\nThe machine works on percentages, every 2 ticks it rolls a die for each and every single possible output, and if it lands on a certain number, it outputs the given mob loot. So technically it\u0027s possible to output ALL types of mob loots AT ONCE, although astronomically unlikely. But, because of this, §6you\u0027ll need a large output buffer§r. The machine can generate 71 unique items, so to avoid clutter, I recommend 3 Ludicrous Item Output Hatches (which you can craft now), or multiple smaller Output Hatches. §6There are 7 locations you can place Output Hatches on the machine, make sure their total capacity is at least §c71 slots§6 for the machine to function."
+          "desc:8": "Build the Mob Loot Fabricator Modular Machine structure! The quest doesn\u0027t ask for Bromine, but you\u0027ll need 8 Buckets of it.\n\nThis machine uses a bit of energy and mana to output a MASSIVE amount of useful mob loot. No longer will you need laggy Spawners!\n\nThe maintenance cost is also very low - it requires 2 units of Mana per tick, and since a Mana Pool can hold 1,000,000 units of Mana, you\u0027ll be able to use the machine for 25,000 seconds or almost 7 IRL hours on just 1 full Mana Pool.\n\nThe machine works on percentages, every 2 ticks it rolls a die for each and every single possible output, and if it lands on a certain number, it outputs the given mob loot. So technically it\u0027s possible to output ALL types of mob loots AT ONCE, although astronomically unlikely. But, because of this, §6you\u0027ll need a large output buffer§r. The machine can generate 72 unique items, so to avoid clutter, I recommend 3 Ludicrous Item Output Hatches (which you can craft now), or multiple smaller Output Hatches. §6There are 7 locations you can place Output Hatches on the machine, make sure their total capacity is at least §c72 slots§6 for the machine to function."
         }
       },
       "tasks:9": {
@@ -123445,7 +123451,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
-          "name:8": "28. Project Codename E",
+          "name:8": "28. Projecting your inner E",
           "icon:10": {
             "id:8": "projecte:item.pe_matter",
             "Count:3": 1,

@@ -2,7 +2,7 @@
     "ctm": {
         "ctm_version": 1,
         "type": "ctm",
-	"layer": "TRANSLUCENT",
+		"layer": "TRANSLUCENT",
         "textures": [
             "contenttweaker:blocks/mars_glass-ctm"
         ]

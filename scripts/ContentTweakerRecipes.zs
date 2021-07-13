@@ -1305,6 +1305,11 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
+<contenttweaker:crystal_core>.addTooltip(format.white("If using the Rock Crystal recipe,"));
+<contenttweaker:crystal_core>.addTooltip(format.white("the input Rock Crystal has to have:"));
+<contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
+<contenttweaker:crystal_core>.addTooltip(format.white("Before unlocking the Infused Diamond recipe,"));
+<contenttweaker:crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
 
 # Celestial Crystal Core
 recipes.addShaped("celestial_crystal_core", <contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<astralsorcery:itemcelestialcrystal>.marked("celestial_crystal"),<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]],
@@ -1478,6 +1483,21 @@ recipes.addShapedMirrored(<contenttweaker:penultimate_machine_frame>, [[<content
 mods.projecte.WorldTransmutation.add(<contenttweaker:corrupted_draconium_block>, <draconicevolution:draconic_block>);
 recipes.addShaped(<contenttweaker:corrupted_draconium_block>, [[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>]]);
 recipes.addShapeless(<contenttweaker:corrupted_draconium_ingot> * 9, [<contenttweaker:corrupted_draconium_block>]);
+
+# Fission Catalyst
+recipes.addShaped(<contenttweaker:fission_catalyst> * 4, [[<alchemistry:krypton_light>,<alchemistry:ingot:43>,<alchemistry:krypton_light>],[<alchemistry:ingot:43>,<contenttweaker:fission_coolant>,<alchemistry:ingot:43>],[<alchemistry:krypton_light>,<alchemistry:ingot:43>,<alchemistry:krypton_light>]]);
+
+# Anti Proton
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:anti_proton>, <contenttweaker:proton>, <liquid:liquidantimatter> * 200, 8000);
+
+# Anti Electron
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:anti_electron>, <contenttweaker:electron>, <liquid:liquidantimatter> * 200, 8000);
+
+# Antimatter Cluster
+mods.avaritia.Compressor.add("anti_hydrogen", <contenttweaker:antimatter_cluster>, 100, <contenttweaker:anti_hydrogen>, true);
+
+# Singularification Catalyst
+recipes.addShaped(<contenttweaker:singularification_catalyst>, [[<extendedcrafting:storage>,<appliedenergistics2:quantum_link>,<extendedcrafting:storage>],[<appliedenergistics2:quantum_link>,<draconicevolution:awakened_core>,<appliedenergistics2:quantum_link>],[<extendedcrafting:storage>,<appliedenergistics2:quantum_link>,<extendedcrafting:storage>]]);
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

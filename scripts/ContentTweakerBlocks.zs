@@ -284,7 +284,7 @@ steaming_restonia_crystal_block.setToolLevel(1);
 steaming_restonia_crystal_block.setBlockSoundType(<soundtype:stone>);
 steaming_restonia_crystal_block.register();
 
-val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon", "mars", "venus"] as string[];
+val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon", "mars", "venus", "asteroids"] as string[];
 # itemUtils.getItem("minecraft:apple");
 
 for dim in dimension_names_lower {
@@ -293,7 +293,7 @@ for dim in dimension_names_lower {
 	#dim_stone.setBlockHardness(18000000);
 	#dim_stone.setBlockResistance(3600000);
 	dim_stone.setBlockHardness(-1);
-	dim_stone.setBlockResistance(-1);
+	dim_stone.setBlockResistance(16777215);
 	dim_stone.setToolClass(null);
 	dim_stone.setWitherProof(true);
 	dim_stone.setToolLevel(16777215);
@@ -302,7 +302,7 @@ for dim in dimension_names_lower {
 
 	var dim_bricks = VanillaFactory.createBlock(dim + "_bricks", <blockmaterial:rock>);
 	dim_bricks.setBlockHardness(-1);
-	dim_bricks.setBlockResistance(-1);
+	dim_bricks.setBlockResistance(16777215);
 	dim_bricks.setToolClass(null);
 	dim_bricks.setWitherProof(true);
 	dim_bricks.setToolLevel(16777215);
@@ -311,7 +311,7 @@ for dim in dimension_names_lower {
 
 	var dim_pillar = VanillaFactory.createBlock(dim + "_pillar", <blockmaterial:rock>);
 	dim_pillar.setBlockHardness(-1);
-	dim_pillar.setBlockResistance(-1);
+	dim_pillar.setBlockResistance(16777215);
 	dim_pillar.setToolClass(null);
 	dim_pillar.setWitherProof(true);
 	dim_pillar.setToolLevel(16777215);
@@ -320,7 +320,7 @@ for dim in dimension_names_lower {
 
 	var dim_floor = VanillaFactory.createBlock(dim + "_floor", <blockmaterial:rock>);
 	dim_floor.setBlockHardness(-1);
-	dim_floor.setBlockResistance(-1);
+	dim_floor.setBlockResistance(16777215);
 	dim_floor.setToolClass(null);
 	dim_floor.setWitherProof(true);
 	dim_floor.setToolLevel(16777215);
@@ -329,7 +329,7 @@ for dim in dimension_names_lower {
 
 	var dim_roof = VanillaFactory.createBlock(dim + "_roof", <blockmaterial:rock>);
 	dim_roof.setBlockHardness(-1);
-	dim_roof.setBlockResistance(-1);
+	dim_roof.setBlockResistance(16777215);
 	dim_roof.setToolClass(null);
 	dim_roof.setWitherProof(true);
 	dim_roof.setToolLevel(16777215);
@@ -338,7 +338,7 @@ for dim in dimension_names_lower {
 
 	var dim_glass = VanillaFactory.createBlock(dim + "_glass", <blockmaterial:glass>);
 	dim_glass.setBlockHardness(-1);
-	dim_glass.setBlockResistance(-1);
+	dim_glass.setBlockResistance(16777215);
 	dim_glass.setBlockLayer("TRANSLUCENT");
 	dim_glass.setToolClass(null);
 	dim_glass.setLightOpacity(0);
@@ -351,7 +351,7 @@ for dim in dimension_names_lower {
 
 	var dim_door = VanillaFactory.createBlock(dim + "_door", <blockmaterial:iron>);
 	dim_door.setBlockHardness(-1);
-	dim_door.setBlockResistance(-1);
+	dim_door.setBlockResistance(16777215);
 	dim_door.setToolClass(null);
 	dim_door.setWitherProof(true);
 	dim_door.setToolLevel(16777215);
@@ -362,7 +362,7 @@ for dim in dimension_names_lower {
 
 var apalachia_door2 = VanillaFactory.createBlock("apalachia_door2", <blockmaterial:iron>);
 apalachia_door2.setBlockHardness(-1);
-apalachia_door2.setBlockResistance(-1);
+apalachia_door2.setBlockResistance(16777215);
 apalachia_door2.setToolClass(null);
 apalachia_door2.setWitherProof(true);
 apalachia_door2.setToolLevel(16777215);

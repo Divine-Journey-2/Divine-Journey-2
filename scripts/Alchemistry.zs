@@ -572,6 +572,11 @@ mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust>, true, 1,
 mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust:1>, true, 1, [[100, <alchemistry:compound:1011> * 8, <alchemistry:compound:14> * 8, <alchemistry:element:66> * 16, <alchemistry:compound:54> * 32, <alchemistry:compound:44> * 32]]);
 mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust:2>, true, 1, [[100, <alchemistry:compound:1011> * 8, <alchemistry:compound:14> * 8, <alchemistry:compound:1012> * 8, <alchemistry:element:66> * 16, <alchemistry:compound:54> * 32, <alchemistry:compound:44> * 32]]);
 
+# Polonium, Radon, Americium <- Dark Matter & Red Matter
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter>, true, 1, [[100, <alchemistry:element:66> * 4, <alchemistry:compound:1012> * 2, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32]]);
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter:1>, true, 1, [[100, <alchemistry:element:66> * 2, <alchemistry:compound:1012> * 1, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32, <alchemistry:element:95> * 16]]);
+
+
 
 
 print("ENDING Alchemistry.zs");
