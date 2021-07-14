@@ -1,25 +1,12 @@
 # Author: Atricos
+
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
 print("STARTING ProjectE.zs");
 
 # No randomized entities
 mods.projecte.EntityRandomizer.clearMobs();
-
-# Disabling Armor sets, because wearing them causes Ticking World errors (infinite crash loops & world corruption)
-/*
-recipes.remove(<projecte:item.pe_gem_armor_3>);
-recipes.remove(<projecte:item.pe_gem_armor_2>);
-recipes.remove(<projecte:item.pe_gem_armor_1>);
-recipes.remove(<projecte:item.pe_gem_armor_0>);
-recipes.remove(<projecte:item.pe_gem_armor_0>);
-recipes.remove(<projecte:item.pe_dm_armor_3>);
-recipes.remove(<projecte:item.pe_dm_armor_2>);
-recipes.remove(<projecte:item.pe_dm_armor_1>);
-recipes.remove(<projecte:item.pe_dm_armor_0>);
-recipes.remove(<projecte:item.pe_rm_armor_3>);
-recipes.remove(<projecte:item.pe_rm_armor_2>);
-recipes.remove(<projecte:item.pe_rm_armor_1>);
-recipes.remove(<projecte:item.pe_rm_armor_0>);
-*/
 
 # Book of the Alchemist [WIP]
 recipes.addShapeless(<projecte:item.pe_manual>, [<minecraft:book>,<alchemistry:compound:1010>,<contenttweaker:soul_of_the_dark_realm>]);
@@ -158,5 +145,124 @@ recipes.remove(<projecte:nova_cataclysm>);
 # Interdiction Torch
 recipes.remove(<projecte:interdiction_torch>);
 recipes.addShaped(<projecte:interdiction_torch>, [[<torchmaster:mega_torch>],[<alchemistry:ingot:43>],[<mob_grinding_utils:fan>]]);
+
+# Repair Talisman
+recipes.remove(<projecte:item.pe_repair_talisman>);
+recipes.addShapedMirrored(<projecte:item.pe_repair_talisman>, [[<contenttweaker:magical_singularity>,<projecte:item.pe_matter:1>,<projecte:item.pe_covalence_dust:1>],[<projecte:item.pe_matter:1>,<draconicadditions:chaos_stabilizer_core>,<projecte:item.pe_matter:1>],[<projecte:item.pe_covalence_dust>,<projecte:item.pe_matter:1>,<projecte:item.pe_covalence_dust:2>]]);
+
+# Dark Matter Sword
+recipes.remove(<projecte:item.pe_dm_sword>);
+recipes.addShaped(<projecte:item.pe_dm_sword>.withTag({}), [[<projecte:item.pe_matter>],[<draconicevolution:draconic_sword>],[<extendedcrafting:singularity:6>]]);
+
+# Dark Matter Hammer
+recipes.remove(<projecte:item.pe_dm_hammer>);
+recipes.addShaped(<projecte:item.pe_dm_hammer>.withTag({}), [[<projecte:item.pe_matter>,<draconicevolution:draconic_pick>,<projecte:item.pe_matter>],[null,<extendedcrafting:singularity:6>,null],[null,<extendedcrafting:singularity:6>,null]]);
+
+# Dark Matter Pickaxe
+recipes.remove(<projecte:item.pe_dm_pick>);
+recipes.addShaped(<projecte:item.pe_dm_pick>.withTag({}), [[<projecte:item.pe_matter>,<projecte:item.pe_matter>,<projecte:item.pe_matter>],[null,<draconicevolution:draconic_pick>,null],[null,<extendedcrafting:singularity:6>,null]]);
+
+# Dark Matter Hoe
+recipes.remove(<projecte:item.pe_dm_hoe>);
+recipes.addShapedMirrored(<projecte:item.pe_dm_hoe>.withTag({}), [[<projecte:item.pe_matter>,<projecte:item.pe_matter>],[null,<draconicevolution:draconic_hoe>],[null,<extendedcrafting:singularity:6>]]);
+
+# Dark Matter Shovel
+recipes.remove(<projecte:item.pe_dm_shovel>);
+recipes.addShaped(<projecte:item.pe_dm_shovel>.withTag({}), [[<projecte:item.pe_matter>],[<draconicevolution:draconic_shovel>],[<extendedcrafting:singularity:6>]]);
+
+# Dark Matter Axe
+recipes.remove(<projecte:item.pe_dm_axe>);
+recipes.addShapedMirrored(<projecte:item.pe_dm_axe>.withTag({}), [[<projecte:item.pe_matter>,<projecte:item.pe_matter>],[<projecte:item.pe_matter>,<draconicevolution:draconic_axe>],[null,<extendedcrafting:singularity:6>]]);
+
+# Dark Matter Shears
+recipes.remove(<projecte:item.pe_dm_shears>);
+recipes.addShaped(<projecte:item.pe_dm_shears>.withTag({}), [[null,<projecte:item.pe_matter:0>,null],[<ore:plankWood>,<extendedcrafting:singularity:6>,<projecte:item.pe_matter:0>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
+
+# Red Matter Shears
+recipes.remove(<projecte:item.pe_rm_shears>);
+recipes.addShaped(<projecte:item.pe_rm_shears>.withTag({}), [[null,<projecte:item.pe_matter:1>,null],[<ore:plankWood>,<projecte:item.pe_dm_shears>.withTag({}),<projecte:item.pe_matter:1>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
+
+# Dark Matter Armor
+recipes.remove(<projecte:item.pe_dm_armor_3>);
+recipes.remove(<projecte:item.pe_dm_armor_2>);
+recipes.remove(<projecte:item.pe_dm_armor_1>);
+recipes.remove(<projecte:item.pe_dm_armor_0>);
+
+# Red Matter Armor
+recipes.remove(<projecte:item.pe_rm_armor_3>);
+recipes.remove(<projecte:item.pe_rm_armor_2>);
+recipes.remove(<projecte:item.pe_rm_armor_1>);
+recipes.remove(<projecte:item.pe_rm_armor_0>);
+
+# Gem Armor
+recipes.remove(<projecte:item.pe_gem_armor_3>);
+recipes.remove(<projecte:item.pe_gem_armor_2>);
+recipes.remove(<projecte:item.pe_gem_armor_1>);
+recipes.remove(<projecte:item.pe_gem_armor_0>);
+
+# Iron Band
+recipes.remove(<projecte:item.pe_ring_iron_band>);
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
+function addProjectERingRecipe(output as IItemStack, top_bottom_material as IIngredient, corner_material as IIngredient) {
+	recipes.remove(output);
+	recipes.addShaped(output.withTag({}), [[corner_material,top_bottom_material,corner_material],[<projecte:item.pe_matter>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter>],[corner_material,top_bottom_material,corner_material]]);
+}
+
+# Black Hole Band
+addProjectERingRecipe(<projecte:item.pe_black_hole>, <draconicevolution:magnet:1>, <botania:blackholetalisman>);
+
+# Archangel's Smite
+addProjectERingRecipe(<projecte:item.pe_archangel_smite>, <contenttweaker:angelic_silicon_crystal_mixture>, <mysticalagriculture:supremium_arrow>);
+
+# Harvest Goddess Band
+addProjectERingRecipe(<projecte:item.pe_harvest_god>, <botania:goddesscharm>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_harvest", selectedSlot: 0, lastCooldown: 0, cooldown: 0}}));
+
+# Ignition Ring
+addProjectERingRecipe(<projecte:item.pe_ignition>, <astralsorcery:itemcoloredlens>, <bloodmagic:lava_crystal>);
+
+# Zero Ring
+addProjectERingRecipe(<projecte:item.pe_zero_ring>, <bewitchment:bottled_frostfire>, <contenttweaker:rune_of_winter>);
+
+# Swiftwolf's Rending Gale
+recipes.remove(<projecte:item.pe_swrg>);
+addProjectERingRecipe(<projecte:item.pe_swrg>.withTag({Mode: 0, UnprocessedEMC: 0.5999992489814758, StoredEMC: 31 as long}), <extrautils2:angelring:*>, <draconicevolution:tool_upgrade:5>);
+
+# Gem of Eternal Density
+recipes.remove(<projecte:item.pe_gem_density>);
+recipes.addShaped(<projecte:item.pe_gem_density>.withTag({}), [[<extendedcrafting:singularity_custom:146>,<abyssalcraft:transmutationgem>.noReturn(),<extendedcrafting:singularity_custom:146>],[<projecte:item.pe_matter>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter>],[<extendedcrafting:singularity_custom:146>,<abyssalcraft:transmutationgem>.noReturn(),<extendedcrafting:singularity_custom:146>]]);
+
+# Mercurial Eye
+recipes.remove(<projecte:item.pe_mercurial_eye>);
+recipes.addShaped(<projecte:item.pe_mercurial_eye>.withTag({}), [[null,<rftools:builder>,null],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<forge:bucketfilled>.withTag({FluidName: "mercury", Amount: 1000}),<projecte:item.pe_matter:1>]]);
+
+# Body Stone
+recipes.remove(<projecte:item.pe_body_stone>);
+recipes.addShapedMirrored(<projecte:item.pe_body_stone>.withTag({}), [[<bewitchment:poppet_hungerprotection>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<bewitchment:poppet_hungerprotection>]]);
+
+# Soul Stone
+recipes.remove(<projecte:item.pe_soul_stone>);
+recipes.addShapedMirrored(<projecte:item.pe_soul_stone>.withTag({}), [[<bewitchment:poppet_voodooprotection>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<bewitchment:poppet_voodooprotection>]]);
+
+# Mind Stone
+recipes.remove(<projecte:item.pe_mind_stone>);
+recipes.addShapedMirrored(<projecte:item.pe_mind_stone>.withTag({}), [[<enderio:block_experience_obelisk>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<enderio:block_experience_obelisk>]]);
+
+# Volcanite Amulet
+recipes.remove(<projecte:item.pe_volcanite_amulet>);
+recipes.addShapedMirrored(<projecte:item.pe_volcanite_amulet>, [[<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<bloodmagic:sigil_lava>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>]]);
+
+# Evertide Amulet
+recipes.remove(<projecte:item.pe_evertide_amulet>);
+recipes.addShapedMirrored(<projecte:item.pe_evertide_amulet>, [[<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>],[<projecte:item.pe_matter:1>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter:1>],[<bloodmagic:sigil_water>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>]]);
+
+# Hyperkinetic Lens
+recipes.remove(<projecte:item.pe_hyperkinetic_lens>);
+
+# Catalytic Lens
+recipes.remove(<projecte:item.pe_hyperkinetic_lens>);
+
+# Destruction Catalyst
+# ...
 
 print("ENDING ProjectE.zs");

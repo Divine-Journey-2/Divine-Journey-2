@@ -651,4 +651,9 @@ mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimension
 # Corrupted Draconium Dust
 addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>, <contenttweaker:corrupted_draconium_dust>);
 
+# Jade
+mods.enderio.SagMill.removeRecipe(<erebus:ore_jade>);
+mods.enderio.SagMill.addRecipe([<erebus:materials:1> * 2, <erebus:materials:1>, <erebus:umberstone:1>], [100, 50, 15], <erebus:ore_jade>, "CHANCE_ONLY");
+
+
 print("ENDING OreProcessingAdditions.zs");

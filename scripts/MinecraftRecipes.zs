@@ -144,19 +144,9 @@ recipes.remove(<minecraft:paper>);
 recipes.addShaped(<minecraft:paper>, [[<ore:sugarcane>,<ore:sugarcane>,<ore:sugarcane>]]);
 recipes.addShaped(<minecraft:paper>, [[<roots:wildroot>,<roots:wildroot>,<roots:wildroot>]]);
 
-# All the Shears
+#Shears
 recipes.remove(<minecraft:shears>);
 recipes.addShaped(<minecraft:shears>, [[null,<minecraft:iron_ingot>,null],[<ore:plankWood>,<minecraft:string>,<minecraft:iron_ingot>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-recipes.remove(<botania:manasteelshears>);
-recipes.addShaped(<botania:manasteelshears>, [[null,<botania:manaresource:0>,null],[<ore:plankWood>,<minecraft:string>,<botania:manaresource:0>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-recipes.remove(<botania:elementiumshears>);
-recipes.addShaped(<botania:elementiumshears>, [[null,<botania:manaresource:7>,null],[<ore:plankWood>,<minecraft:string>,<botania:manaresource:7>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-recipes.remove(<enderio:item_dark_steel_shears>);
-recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_ingot:6>,null],[<ore:plankWood>,<minecraft:string>,<enderio:item_alloy_ingot:6>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-recipes.remove(<projecte:item.pe_dm_shears>);
-recipes.addShaped(<projecte:item.pe_dm_shears>.withTag({}), [[null,<projecte:item.pe_matter:0>,null],[<ore:plankWood>,<minecraft:string>,<projecte:item.pe_matter:0>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-recipes.remove(<projecte:item.pe_rm_shears>);
-recipes.addShaped(<projecte:item.pe_rm_shears>.withTag({}), [[null,<projecte:item.pe_matter:1>,null],[<ore:plankWood>,<projecte:item.pe_dm_shears>.withTag({}),<projecte:item.pe_matter:1>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
 
 # Lead
 recipes.remove(<minecraft:lead>);

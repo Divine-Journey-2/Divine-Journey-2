@@ -1078,4 +1078,10 @@ recipes.addShapeless(<botania:lens:8>.withTag({}), [<botania:lens>,<contenttweak
 recipes.removeShapeless(<botania:lens:11>, [<*>,<*>]);
 recipes.addShapeless(<botania:lens:11>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_envy>]);
 
+# Shears
+recipes.remove(<botania:manasteelshears>);
+recipes.addShaped(<botania:manasteelshears>, [[null,<botania:manaresource:0>,null],[<ore:plankWood>,<minecraft:string>,<botania:manaresource:0>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
+recipes.remove(<botania:elementiumshears>);
+recipes.addShaped(<botania:elementiumshears>, [[null,<botania:manaresource:7>,null],[<ore:plankWood>,<minecraft:string>,<botania:manaresource:7>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
+
 print("ENDING Botania.zs");

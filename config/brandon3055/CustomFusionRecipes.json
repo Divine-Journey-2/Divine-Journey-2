@@ -771,5 +771,18 @@
             "alchemistry:ingot,1,44",
             "alchemistry:ingot,1,44"
         ]
+    },
+    {
+        "mode": "ADD",
+        "result": "projecte:item.pe_ring_iron_band",
+        "catalyst": "thaumcraft:baubles,1,5",
+        "energy": 3000000000,
+        "tier": 3,
+        "ingredients": [
+            "extendedcrafting:singularity_custom,1,152",
+            "extendedcrafting:singularity_custom,1,152",
+            "projecte:item.pe_matter,1,0",
+            "projecte:item.pe_matter,1,0"
+        ]
     }
 ]
