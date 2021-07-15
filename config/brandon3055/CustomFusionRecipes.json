@@ -784,5 +784,20 @@
             "projecte:item.pe_matter,1,0",
             "projecte:item.pe_matter,1,0"
         ]
+    },
+    {
+        "mode": "ADD",
+        "result": "contenttweaker:essence_of_atomic_fusion",
+        "catalyst": "draconicadditions:chaos_stabilizer_core",
+        "energy": 20000000000,
+        "tier": 3,
+        "ingredients": [
+            "draconicevolution:fusion_crafting_core",
+            "draconicevolution:fusion_crafting_core",
+            "contenttweaker:tnt_singularity",
+            "contenttweaker:tnt_singularity",
+            "projecte:matter_block,1,1",
+            "projecte:matter_block,1,1"
+        ]
     }
 ]

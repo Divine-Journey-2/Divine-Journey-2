@@ -1187,5 +1187,9 @@ var anti_hydrogen = VanillaFactory.createItem("anti_hydrogen");
 anti_hydrogen.register();
 var singularification_catalyst = VanillaFactory.createItem("singularification_catalyst");
 singularification_catalyst.register();
+var tnt_singularity = VanillaFactory.createItem("tnt_singularity");
+tnt_singularity.register();
+var white_matter = VanillaFactory.createItem("white_matter");
+white_matter.register();
 
 print("ENDING ContentTweakerItems.zs");

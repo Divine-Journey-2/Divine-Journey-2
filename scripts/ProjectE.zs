@@ -260,9 +260,21 @@ recipes.addShapedMirrored(<projecte:item.pe_evertide_amulet>, [[<projecte:item.p
 recipes.remove(<projecte:item.pe_hyperkinetic_lens>);
 
 # Catalytic Lens
-recipes.remove(<projecte:item.pe_hyperkinetic_lens>);
+recipes.remove(<projecte:item.pe_catalitic_lens>);
 
 # Destruction Catalyst
-# ...
+recipes.remove(<projecte:item.pe_destruction_catalyst>);
+recipes.addShaped(<projecte:item.pe_destruction_catalyst>.withTag({}), [[<bloodmagic:item_demon_crystal:2>,<contenttweaker:essence_of_atomic_fusion>,<bloodmagic:item_demon_crystal:2>],[<bloodmagic:item_demon_crystal:2>,<projecte:item.pe_ring_iron_band>,<bloodmagic:item_demon_crystal:2>],[<bloodmagic:item_demon_crystal:2>,<contenttweaker:essence_of_atomic_fusion>,<bloodmagic:item_demon_crystal:2>]]);
+
+# Watch of Flowing Time
+recipes.remove(<projecte:item.pe_time_watch>);
+mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_time_watch>.withTag({}),
+[[<projecte:matter_block>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<projecte:matter_block>],
+[<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:72>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<rftoolsdim:time_absorber>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<alchemistry:ingot:72>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:72>,<rftoolsdim:time_absorber>,<thermalfoundation:meter>,<rftoolsdim:time_absorber>,<alchemistry:ingot:72>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:72>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<rftoolsdim:time_absorber>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<alchemistry:ingot:72>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>],
+[<projecte:matter_block>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<projecte:matter_block>]]);
 
 print("ENDING ProjectE.zs");

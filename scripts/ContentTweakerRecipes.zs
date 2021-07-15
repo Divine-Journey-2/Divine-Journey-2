@@ -1499,6 +1499,12 @@ mods.avaritia.Compressor.add("anti_hydrogen", <contenttweaker:antimatter_cluster
 # Singularification Catalyst
 recipes.addShaped(<contenttweaker:singularification_catalyst>, [[<extendedcrafting:storage>,<appliedenergistics2:quantum_link>,<extendedcrafting:storage>],[<appliedenergistics2:quantum_link>,<draconicevolution:awakened_core>,<appliedenergistics2:quantum_link>],[<extendedcrafting:storage>,<appliedenergistics2:quantum_link>,<extendedcrafting:storage>]]);
 
+# TNT Singularity
+mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>, 300, <minecraft:tnt>, true);
+
+# Essence of Atomic Fusion
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];

@@ -285,10 +285,6 @@
       "emc": 8192
     },
     {
-      "item": "minecraft:obsidian|0",
-      "emc": 8
-    },
-    {
       "item": "minecraft:dye|3",
       "emc": 8
     },
@@ -1475,6 +1471,274 @@
     {
       "item": "projecte:item.pe_fuel|2",
       "emc": 1024
+    },
+    {
+      "item": "OD|endstone",
+      "emc": 1
+    },
+    {
+      "item": "thermalfoundation:material|162",
+      "emc": 85
+    },
+    {
+      "item": "thermalfoundation:material|164",
+      "emc": 96
+    },
+    {
+      "item": "thermalfoundation:material|160",
+      "emc": 128
+    },
+    {
+      "item": "bigreactors:ingotgraphite|0",
+      "emc": 16
+    },
+    {
+      "item": "mekanism:ingot|3",
+      "emc": 132
+    },
+    {
+      "item": "mekanism:ingot|0",
+      "emc": 1154
+    },
+    {
+      "item": "mekanism:otherdust|5",
+      "emc": 1026
+    },
+    {
+      "item": "plustic:osgloglasingot|0",
+      "emc": 1414
+    },
+    {
+      "item": "contenttweaker:osglolapis|0",
+      "emc": 1446
+    },
+    {
+      "item": "extrautils2:ingredients|3",
+      "emc": 1446
+    },
+    {
+      "item": "extrautils2:ingredients|11",
+      "emc": 256
+    },
+    {
+      "item": "contenttweaker:demonlord_ingot|0",
+      "emc": 1702
+    },
+    {
+      "item": "thermalfoundation:material|163",
+      "emc": 64
+    },
+    {
+      "item": "thermalfoundation:material|136",
+      "emc": 2718
+    },
+    {
+      "item": "botania:manaresource|0",
+      "emc": 2718
+    },
+    {
+      "item": "botania:manaresource|7",
+      "emc": 5434
+    },
+    {
+      "item": "thaumcraft:ingot|2",
+      "emc": 5556
+    },
+    {
+      "item": "thaumcraft:ingot|0",
+      "emc": 5992
+    },
+    {
+      "item": "bewitchment:cold_iron_ingot|0",
+      "emc": 5992
+    },
+    {
+      "item": "appliedenergistics2:material|7",
+      "emc": 50
+    },
+    {
+      "item": "botania:manaresource|4",
+      "emc": 5414
+    },
+    {
+      "item": "extrautils2:ingredients|5",
+      "emc": 5136
+    },
+    {
+      "item": "thermalfoundation:material|892",
+      "emc": 36
+    },
+    {
+      "item": "enderio:item_alloy_ingot|6",
+      "emc": 1362
+    },
+    {
+      "item": "enderio:item_alloy_ingot|7",
+      "emc": 260
+    },
+    {
+      "item": "thermalfoundation:material|166",
+      "emc": 112
+    },
+    {
+      "item": "enderio:item_alloy_ingot|1",
+      "emc": 324
+    },
+    {
+      "item": "enderio:item_alloy_ingot|2",
+      "emc": 452
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|5",
+      "emc": 132
+    },
+    {
+      "item": "enderio:item_alloy_endergy_ingot|6",
+      "emc": 260
+    },
+    {
+      "item": "astralsorcery:itemcraftingcomponent|1",
+      "emc": 23916
+    },
+    {
+      "item": "enderio:item_alloy_ingot|4",
+      "emc": 128
+    },
+    {
+      "item": "enderio:item_alloy_ingot|5",
+      "emc": 192
+    },
+    {
+      "item": "thermalfoundation:material|167",
+      "emc": 240
+    },
+    {
+      "item": "thermalfoundation:material|165",
+      "emc": 107
+    },
+    {
+      "item": "appliedenergistics2:material|5",
+      "emc": 1
+    },
+    {
+      "item": "enderio:item_alloy_ingot|3",
+      "emc": 577
+    },
+    {
+      "item": "enderio:item_alloy_ingot|0",
+      "emc": 81
+    },
+    {
+      "item": "tconstruct:ingots|5",
+      "emc": 64
+    },
+    {
+      "item": "enderio:item_alloy_ingot|8",
+      "emc": 1371
+    },
+    {
+      "item": "astralsorcery:blockcustomore|0",
+      "emc": 5615
+    },
+    {
+      "item": "OD|stoneMarble",
+      "emc": 1
+    },
+    {
+      "item": "OD|stoneLimestone",
+      "emc": 1
+    },
+    {
+      "item": "OD|stoneBasalt",
+      "emc": 1
+    },
+    {
+      "item": "OD|obsidian",
+      "emc": 8
+    },
+    {
+      "item": "thaumcraft:ingot|1",
+      "emc": 26460
+    },
+    {
+      "item": "thermalfoundation:material|161",
+      "emc": 160
+    },
+    {
+      "item": "contenttweaker:fluxed_electrum_ingot|0",
+      "emc": 789
+    },
+    {
+      "item": "tconstruct:ingots|1",
+      "emc": 1024
+    },
+    {
+      "item": "tconstruct:ingots|0",
+      "emc": 1024
+    },
+    {
+      "item": "tconstruct:ingots|2",
+      "emc": 2048
+    },
+    {
+      "item": "immersiveengineering:material|19",
+      "emc": 16
+    },
+    {
+      "item": "galacticraftcore:item_basic_moon|0",
+      "emc": 1024
+    },
+    {
+      "item": "tconstruct:ingots|3",
+      "emc": 82
+    },
+    {
+      "item": "plustic:alumiteingot|0",
+      "emc": 155
+    },
+    {
+      "item": "alchemistry:ingot|3",
+      "emc": 16
+    },
+    {
+      "item": "alchemistry:ingot|12",
+      "emc": 16
+    },
+    {
+      "item": "alchemistry:ingot|5",
+      "emc": 8
+    },
+    {
+      "item": "alchemistry:ingot|24",
+      "emc": 32
+    },
+    {
+      "item": "immersiveengineering:metal|5",
+      "emc": 118
+    },
+    {
+      "item": "alchemistry:ingot|74",
+      "emc": 100
+    },
+    {
+      "item": "alchemistry:ingot|90",
+      "emc": 1332
+    },
+    {
+      "item": "projectred-core:resource_item|202",
+      "emc": 8192
+    },
+    {
+      "item": "projectred-core:resource_item|201",
+      "emc": 8192
+    },
+    {
+      "item": "projectred-core:resource_item|200",
+      "emc": 8192
+    },
+    {
+      "item": "contenttweaker:white_matter|0",
+      "emc": 67108864
     }
   ]
 }

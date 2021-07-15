@@ -517,4 +517,32 @@ recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_ess
 <extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground."));
 <extrautils2:suncrystal>.addTooltip(format.white("Later you can use Glowstone Essence to fill it."));
 
+# Opinium Core (Pathetic)
+recipes.remove(<extrautils2:opinium>);
+recipes.addShaped(<extrautils2:opinium>, [[null,<minecraft:iron_ingot>,null],[<projecte:item.pe_matter>,<minecraft:iron_block>,<projecte:item.pe_matter>],[null,<minecraft:iron_ingot>,null]]);
+
+# Opinium Core (Good)
+recipes.remove(<extrautils2:opinium:4>);
+recipes.addShaped(<extrautils2:opinium:4>, [[null,<extrautils2:opinium:3>,null],[<minecraft:emerald_block>,<projecte:item.pe_matter:1>,<minecraft:emerald_block>],[null,<extrautils2:opinium:3>,null]]);
+
+# Opinium Core (Damn Good)
+recipes.remove(<extrautils2:opinium:5>);
+recipes.addShaped(<extrautils2:opinium:5>, [[null,<extrautils2:opinium:4>,null],[<projecte:item.pe_matter:1>,<minecraft:dragon_egg>,<projecte:item.pe_matter:1>],[null,<extrautils2:opinium:4>,null]]);
+
+# Opinium Core (Amazing)
+recipes.remove(<extrautils2:opinium:6>);
+recipes.addShaped(<extrautils2:opinium:6>, [[null,<extrautils2:opinium:5>,null],[<minecraft:dragon_egg>,<rftools:infused_diamond>,<minecraft:dragon_egg>],[null,<extrautils2:opinium:5>,null]]);
+
+# Opinium Core (Inspiring)
+recipes.remove(<extrautils2:opinium:7>);
+recipes.addShaped(<extrautils2:opinium:7>, [[null,<extrautils2:opinium:6>,null],[<rftools:infused_diamond>,<extendedcrafting:storage:2>,<rftools:infused_diamond>],[null,<extrautils2:opinium:6>,null]]);
+
+# Opinium Core (Perfected)
+recipes.remove(<extrautils2:opinium:8>);
+recipes.addShaped(<extrautils2:opinium:8>, [[null,<extrautils2:opinium:7>,null],[<extendedcrafting:storage:2>,<contenttweaker:essence_of_atomic_fusion>,<extendedcrafting:storage:2>],[null,<extrautils2:opinium:7>,null]]);
+
+# Kikoku
+recipes.remove(<extrautils2:lawsword>);
+recipes.addShapedMirrored(<extrautils2:lawsword>, [[null,<extrautils2:opinium:8>,null],[null,<extrautils2:opinium:8>,null],[<projecte:item.pe_rm_katar>,<contenttweaker:white_matter>,<projecte:item.pe_rm_morning_star>]]);
+
 print("ENDING ExtraUtilities2.zs");
