@@ -45,6 +45,4 @@ mods.extendedcrafting.TableCrafting.addShaped(<mysticalagriculture:master_infusi
 [null,null,null,<alchemistry:ingot:45>,<alchemistry:ingot:45>,<alchemistry:ingot:45>,null,null,null],
 [null,null,null,null,<alchemistry:ingot:45>,null,null,null,null]]);
 
-# .transformDamage(16385)
-
 print("ENDING MysticalAgricultureTieredCrystals.zs");

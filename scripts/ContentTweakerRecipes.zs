@@ -1305,6 +1305,7 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
+recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<rftools:infused_diamond>,<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]]);
 <contenttweaker:crystal_core>.addTooltip(format.white("If using the Rock Crystal recipe,"));
 <contenttweaker:crystal_core>.addTooltip(format.white("the input Rock Crystal has to have:"));
 <contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
@@ -1504,6 +1505,10 @@ mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>
 
 # Essence of Atomic Fusion
 # recipe in config/brandon3055/CustomFusionRecipes.json
+
+# White Matter
+<contenttweaker:white_matter>.addTooltip("Can only be created from EMC.");
+<contenttweaker:white_matter>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

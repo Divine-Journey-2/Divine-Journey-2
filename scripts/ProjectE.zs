@@ -74,9 +74,13 @@ recipes.addShaped(<projecte:item.pe_tome>, [[<alchemistry:ingot:66>,<contenttwea
 
 # Dark Matter
 recipes.removeShaped(<projecte:item.pe_matter>);
+<projecte:item.pe_matter>.addTooltip("Can only be created from EMC.");
+<projecte:item.pe_matter>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
 
 # Red Matter
 recipes.removeShaped(<projecte:item.pe_matter:1>);
+<projecte:item.pe_matter:1>.addTooltip("Can only be created from EMC.");
+<projecte:item.pe_matter:1>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
 
 # High Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust:2>);
