@@ -410,4 +410,15 @@ recipes.addShaped(<draconicevolution:dislocator_bound:1>, [[<alchemistry:ingot:4
 recipes.remove(<draconicevolution:dislocator_bound:2>);
 recipes.addShaped(<draconicevolution:dislocator_bound:2>, [[<alchemistry:ingot:44>,<actuallyadditions:block_player_interface>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<rftools:advanced_charged_porter>,<alchemistry:ingot:44>],[<alchemistry:ingot:44>,<draconicevolution:dislocator>,<alchemistry:ingot:44>]]);
 
+# Celestial Manipulator
+recipes.remove(<draconicevolution:celestial_manipulator>);
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:celestial_manipulator>,
+[[<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:celestial_crystal_core>],
+[<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<astralsorcery:blockcelestialgateway>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<contenttweaker:corrupted_dragon_token>,<astralsorcery:blockcelestialgateway>,<contenttweaker:penultimate_machine_frame>,<astralsorcery:blockcelestialgateway>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<astralsorcery:blockcelestialgateway>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],
+[<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:celestial_crystal_core>]]);
+
 print("ENDING DraconicEvolution.zs");

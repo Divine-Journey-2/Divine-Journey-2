@@ -7,7 +7,7 @@ import mods.contenttweaker.Color;
 
 print("STARTING ContentTweakerFluids.zs");
 
-var remedyFluid = VanillaFactory.createFluid("remedy", Color.fromHex("07D3FF"));
+var remedyFluid = VanillaFactory.createFluid("remedy", Color.fromHex("F7EA34"));
 remedyFluid.density = 2200;
 remedyFluid.luminosity = 3;
 remedyFluid.temperature = 350;

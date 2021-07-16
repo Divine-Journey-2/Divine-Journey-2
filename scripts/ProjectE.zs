@@ -74,13 +74,13 @@ recipes.addShaped(<projecte:item.pe_tome>, [[<alchemistry:ingot:66>,<contenttwea
 
 # Dark Matter
 recipes.removeShaped(<projecte:item.pe_matter>);
-<projecte:item.pe_matter>.addTooltip("Can only be created from EMC.");
-<projecte:item.pe_matter>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
+<projecte:item.pe_matter>.addTooltip(format.white("Can only be created from EMC."));
+<projecte:item.pe_matter>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
 
 # Red Matter
 recipes.removeShaped(<projecte:item.pe_matter:1>);
-<projecte:item.pe_matter:1>.addTooltip("Can only be created from EMC.");
-<projecte:item.pe_matter:1>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
+<projecte:item.pe_matter:1>.addTooltip(format.white("Can only be created from EMC."));
+<projecte:item.pe_matter:1>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
 
 # High Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust:2>);
@@ -276,9 +276,13 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_time_watch>.with
 [[<projecte:matter_block>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<projecte:matter_block>],
 [<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:72>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<rftoolsdim:time_absorber>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<alchemistry:ingot:72>,<alchemistry:ingot:60>],
-[<alchemistry:ingot:60>,<alchemistry:ingot:72>,<rftoolsdim:time_absorber>,<thermalfoundation:meter>,<rftoolsdim:time_absorber>,<alchemistry:ingot:72>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:72>,<rftoolsdim:time_absorber>,<draconicevolution:celestial_manipulator>,<rftoolsdim:time_absorber>,<alchemistry:ingot:72>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:72>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<rftoolsdim:time_absorber>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_overclock"}),<alchemistry:ingot:72>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<alchemistry:ingot:72>,<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>],
 [<projecte:matter_block>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<projecte:matter_block>]]);
+
+# Dark Matter Pedestal
+recipes.remove(<projecte:dm_pedestal>);
+recipes.addShaped(<projecte:dm_pedestal>, [[null,<projecte:matter_block>,null],[<contenttweaker:white_matter>,<projecte:matter_block>,<contenttweaker:white_matter>],[<projecte:matter_block>,<draconicevolution:dislocator_pedestal>,<projecte:matter_block>]]);
 
 print("ENDING ProjectE.zs");

@@ -1507,8 +1507,8 @@ mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>
 # recipe in config/brandon3055/CustomFusionRecipes.json
 
 # White Matter
-<contenttweaker:white_matter>.addTooltip("Can only be created from EMC.");
-<contenttweaker:white_matter>.addTooltip("Use the Tome of Knowledge to learn all transmutations.");
+<contenttweaker:white_matter>.addTooltip(format.white("Can only be created from EMC."));
+<contenttweaker:white_matter>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
 
 # Essence of Logic ingredients
 # craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}

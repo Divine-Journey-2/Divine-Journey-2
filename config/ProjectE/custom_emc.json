@@ -282,7 +282,7 @@
     },
     {
       "item": "minecraft:dragon_egg|0",
-      "emc": 8192
+      "emc": 12288
     },
     {
       "item": "minecraft:dye|3",
@@ -1738,7 +1738,15 @@
     },
     {
       "item": "contenttweaker:white_matter|0",
-      "emc": 67108864
+      "emc": 268435456
+    },
+    {
+      "item": "mysticalagradditions:stuff|2",
+      "emc": 4096
+    },
+    {
+      "item": "minecraft:dragon_breath|0",
+      "emc": 3642
     }
   ]
 }

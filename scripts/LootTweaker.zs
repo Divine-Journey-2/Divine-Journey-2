@@ -27,8 +27,10 @@ function clear_pool(tableName as string, poolName as string) {
 
 # Removing broken Aether loot
 remove_entry("aether_legacy:chests/bronze_dungeon_reward", "main", "aether_legacy:sentry_boots");
+remove_entry("aether_legacy:chests/bronze_dungeon_reward", "main", "aether_legacy:lightning_knife");
 remove_entry("aether_legacy:chests/silver_dungeon_reward", "main", "aether_legacy:invisibility_cape");
 remove_entry("aether_legacy:chests/silver_dungeon_reward", "main", "aether_legacy:regeneration_stone");
+remove_entry("aether_legacy:chests/silver_dungeon_reward", "main", "aether_legacy:lightning_sword");
 remove_entry("aether_legacy:chests/gold_dungeon_reward", "main", "aether_legacy:iron_bubble");
 remove_entry("aether_legacy:chests/gold_dungeon_reward", "main", "aether_legacy:life_shard");
 
