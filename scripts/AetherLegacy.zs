@@ -52,4 +52,7 @@ recipes.remove(<aether_legacy:holystone_brick_slab>);
 recipes.remove(<aether_legacy:aerogel_slab>);
 <ore:slabWood>.remove(<aether_legacy:skyroot_slab>);
 
+# Moa Egg removal from Egg OreDict
+<ore:egg>.remove(<aether_legacy:moa_egg>);
+
 print("ENDING AetherLegacy.zs");
