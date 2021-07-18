@@ -51,4 +51,7 @@ recipes.addShaped(<danknull:dank_null_panel_5>, [[<extendedcrafting:singularity:
 recipes.remove(<danknull:danknull_dock>);
 recipes.addShaped(<danknull:danknull_dock>, [[<actuallyadditions:item_crystal_empowered:4>,<contenttweaker:cosmic_alloy>,<actuallyadditions:item_crystal_empowered:4>],[<contenttweaker:cosmic_alloy>,<divinerpg:wildwood_chunk>,<contenttweaker:cosmic_alloy>],[<actuallyadditions:item_crystal_empowered:4>,<contenttweaker:cosmic_alloy>,<actuallyadditions:item_crystal_empowered:4>]]);
 
+# /dank/null/Creative
+recipes.addShaped(<danknull:dank_null_6>, [[<danknull:dank_null_5>,<bibliocraft:bookcasecreative>,<danknull:dank_null_5>],[<storagedrawers:upgrade_creative>,<contenttweaker:essence_of_enlargement>,<storagedrawers:upgrade_creative>],[<danknull:dank_null_5>,<bibliocraft:bookcasecreative>,<danknull:dank_null_5>]]);
+
 print("ENDING DankNull.zs");

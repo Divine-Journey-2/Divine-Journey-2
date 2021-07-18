@@ -1,0 +1,53 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_contenttweaker_perfect_vacuum",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:glass_bottle"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:anti_air"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:manaresource@15"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:dragon_breath"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:perfect_slate"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_vacuos"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:fission_catalyst"
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 300000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:perfect_vacuum",
+            "amount": 3
+        }
+    ]
+}

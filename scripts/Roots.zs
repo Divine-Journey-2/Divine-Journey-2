@@ -209,4 +209,7 @@ Mortar.addRecipe(<minecraft:flint> * 3, [<ore:gravel>,<ore:gravel>,<ore:gravel>,
 Mortar.addRecipe(<minecraft:flint> * 4, [<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>,null]);
 Mortar.addRecipe(<minecraft:flint> * 5, [<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>,<ore:gravel>]);
 
+# Creative Component Pouch
+recipes.addShaped(<roots:creative_pouch>, [[<contenttweaker:beginners_singularity>,<roots:component_pouch>,<contenttweaker:beginners_singularity>],[<roots:component_pouch>,<storagedrawers:upgrade_creative>,<roots:component_pouch>],[<contenttweaker:beginners_singularity>,<roots:component_pouch>,<contenttweaker:beginners_singularity>]]);
+
 print("ENDING Roots.zs");

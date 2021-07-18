@@ -58,4 +58,12 @@ FluidBromine.temperature = 350;
 FluidBromine.viscosity = 600;
 FluidBromine.register();
 
+var LiquidSpaceFluid = VanillaFactory.createFluid("space", Color.fromHex("010014"));
+LiquidSpaceFluid.density = 50;
+LiquidSpaceFluid.luminosity = 0;
+LiquidSpaceFluid.temperature = 0;
+LiquidSpaceFluid.viscosity = 50;
+LiquidSpaceFluid.material = <blockmaterial:lava>;
+LiquidSpaceFluid.register();
+
 print("ENDING ContentTweakerFluids.zs");

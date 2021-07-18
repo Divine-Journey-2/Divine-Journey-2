@@ -50,4 +50,10 @@ recipes.addShaped(<totemic:eagle_bone_whistle>, [[null,<ore:string>,<ore:ingotOs
 <totemic:totempedia>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Recipes shown may be incorrect."));
 <totemic:totempedia>.addTooltip(format.white("Always refer to JEI when crafting!"));
 
+# Creative Medicine Bag
+recipes.addShaped(<totemic:medicine_bag>.withTag({charge: -1}), [[<mysticalagriculture:charm:12>,<totemic:medicine_bag>,<mysticalagriculture:charm:12>],[<totemic:medicine_bag>,<storagedrawers:upgrade_creative>,<totemic:medicine_bag>],[<mysticalagriculture:charm:12>,<totemic:medicine_bag>,<mysticalagriculture:charm:12>]]);
+
+# Creative Ceremony Cheat
+recipes.addShapedMirrored(<totemic:ceremony_cheat>, [[<contenttweaker:taste_the_rainbow>,<contenttweaker:taste_the_rainbow>,<totemic:medicine_bag>.withTag({charge: -1})],[null,<totemic:totemic_staff>,<contenttweaker:taste_the_rainbow>],[<alchemistry:ingot:72>,null,<contenttweaker:taste_the_rainbow>]]);
+
 print("ENDING Totemic.zs");

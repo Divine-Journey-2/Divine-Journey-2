@@ -407,4 +407,7 @@ addRFToolsEnvironmentalModualeRecipe(<rftools:luck_module>,<rftools:syringe>.wit
 # No Teleport Environmental Module
 addRFToolsEnvironmentalModualeRecipe(<rftools:noteleport_module>,<rftools:syringe>.withTag({mobName: "Enderman", level: 10, mobId: "minecraft:enderman"}),<enderio:block_inhibitor_obelisk>);
 
+# Creative Screen
+recipes.addShaped(<rftools:creative_screen>, [[<rftools:screen>,<projecte:item.pe_matter>,<rftools:screen>],[<projecte:item.pe_matter>,<contenttweaker:white_matter>,<projecte:item.pe_matter>],[<rftools:screen>,<projecte:item.pe_matter>,<rftools:screen>]]);
+
 print("ENDING RFTools.zs");

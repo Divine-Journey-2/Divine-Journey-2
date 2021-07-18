@@ -1191,5 +1191,18 @@ var tnt_singularity = VanillaFactory.createItem("tnt_singularity");
 tnt_singularity.register();
 var white_matter = VanillaFactory.createItem("white_matter");
 white_matter.register();
+var anti_air = VanillaFactory.createItem("anti_air");
+anti_air.register();
+var taste_the_rainbow = VanillaFactory.createItem("taste_the_rainbow");
+taste_the_rainbow.rarity = "EPIC";
+taste_the_rainbow.register();
+var corruption_core = VanillaFactory.createItem("corruption_core");
+corruption_core.register();
+var essence_of_life = VanillaFactory.createItem("essence_of_life");
+essence_of_life.rarity = "EPIC";
+essence_of_life.register();
+var essence_of_death = VanillaFactory.createItem("essence_of_death");
+essence_of_death.rarity = "EPIC";
+essence_of_death.register();
 
 print("ENDING ContentTweakerItems.zs");

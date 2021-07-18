@@ -574,9 +574,9 @@ mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_covalence_dust:2>, true, 
 
 # Polonium, Radon, Americium <- Dark Matter & Red Matter
 mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter>, true, 1, [[100, <alchemistry:element:66> * 4, <alchemistry:compound:1012> * 2, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32]]);
-mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter:1>, true, 1, [[100, <alchemistry:element:66> * 2, <alchemistry:compound:1012> * 1, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32, <alchemistry:element:95> * 16]]);
+mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter:1>, true, 1, [[100, <alchemistry:element:66> * 2, <alchemistry:compound:1012>, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32, <alchemistry:element:95> * 16]]);
 
-
-
+# Protactinum <- White Matter
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:white_matter>, true, 1, [[100, <alchemistry:element:66>, <alchemistry:compound:1012>, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32, <alchemistry:element:95> * 16, <alchemistry:element:91> * 4]]);
 
 print("ENDING Alchemistry.zs");

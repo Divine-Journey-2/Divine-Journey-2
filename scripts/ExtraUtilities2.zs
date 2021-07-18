@@ -545,4 +545,7 @@ recipes.addShaped(<extrautils2:opinium:8>, [[null,<extrautils2:opinium:7>,null],
 recipes.remove(<extrautils2:lawsword>);
 recipes.addShapedMirrored(<extrautils2:lawsword>, [[null,<extrautils2:opinium:8>,null],[null,<extrautils2:opinium:8>,null],[<projecte:item.pe_rm_katar>,<contenttweaker:white_matter>,<projecte:item.pe_rm_morning_star>]]);
 
+# Creative Mill
+recipes.addShaped(<extrautils2:passivegenerator:6>, [[<extrautils2:passivegenerator:8>,<contenttweaker:white_matter>,<extrautils2:passivegenerator:8>],[<contenttweaker:white_matter>,<danknull:dank_null_6>,<contenttweaker:white_matter>],[<extrautils2:passivegenerator:8>,<contenttweaker:white_matter>,<extrautils2:passivegenerator:8>]]);
+
 print("ENDING ExtraUtilities2.zs");

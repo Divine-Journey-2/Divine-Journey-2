@@ -27,4 +27,7 @@ recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>,<ore:stone>,<o
 <ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
 <ore:drawerTrim>.add(<storagedrawersextra:extra_trim_0:*>);
 
+# Creative Storage Upgrade
+recipes.addShaped(<storagedrawers:upgrade_creative>, [[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>],[<tconstruct:materials:50>,<projecte:condenser_mk2>,<tconstruct:materials:50>],[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>]]);
+
 print("ENDING StorageDrawers.zs");

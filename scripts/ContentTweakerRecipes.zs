@@ -1510,13 +1510,75 @@ mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>
 <contenttweaker:white_matter>.addTooltip(format.white("Can only be created from EMC."));
 <contenttweaker:white_matter>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
 
+# Anti Air
+mods.abyssalcraft.InfusionRitual.addRitual("anti_air", 4, 53, 20000, false, <contenttweaker:anti_air>, <contenttweaker:white_matter>, [<extendedcrafting:singularity_custom:141>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>,<contenttweaker:condensed_vis_crystal_aer>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>], false);
+game.setLocalization("ac.ritual.anti_air", "Anti Air");
+game.setLocalization("ac.ritual.anti_air.desc", "The environment in the Dark Realm makes it perfect to infuse Anti Hydrogen into Anti Air. Make sure not to breath it in!");
+
+# Essence of Enlargement
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_enlargement>,
+[[<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<thermalfoundation:fertilizer:2>,<thermalfoundation:fertilizer:2>,<botania:overgrowthseed>,<thermalfoundation:fertilizer:2>,<thermalfoundation:fertilizer:2>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<thermalfoundation:fertilizer:2>,<actuallyadditions:block_giant_chest_large>,<mysticalagriculture:growth_accelerator>,<actuallyadditions:block_giant_chest_large>,<thermalfoundation:fertilizer:2>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<botania:overgrowthseed>,<mysticalagriculture:growth_accelerator>,<draconicadditions:chaos_stabilizer_core>,<mysticalagriculture:growth_accelerator>,<botania:overgrowthseed>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<thermalfoundation:fertilizer:2>,<actuallyadditions:block_giant_chest_large>,<mysticalagriculture:growth_accelerator>,<actuallyadditions:block_giant_chest_large>,<thermalfoundation:fertilizer:2>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<thermalfoundation:fertilizer:2>,<thermalfoundation:fertilizer:2>,<botania:overgrowthseed>,<thermalfoundation:fertilizer:2>,<thermalfoundation:fertilizer:2>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<projecte:item.pe_matter:1>,<alchemistry:ingot:104>],
+[<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>,<alchemistry:ingot:104>]]);
+
+# Taste the Rainbow
+recipes.addShaped(<contenttweaker:taste_the_rainbow>, [[<extrautils2:decorativesolid:8>,<contenttweaker:rainbow_slate>,<extrautils2:decorativesolid:8>],[<contenttweaker:rainbow_slate>,<contenttweaker:rainbow_tablet>,<contenttweaker:rainbow_slate>],[<extrautils2:decorativesolid:8>,<contenttweaker:rainbow_slate>,<extrautils2:decorativesolid:8>]]);
+
+# Corruption Core
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:corruption_core>,
+[[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>],
+[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:corrupted_draconium_ingot>],
+[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:death_core>,<contenttweaker:corrupted_core>,<contenttweaker:death_core>,<contenttweaker:corrupted_draconium_ingot>],
+[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:corrupted_draconium_ingot>],
+[<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>]]);
+
+# Essence of Life
+mods.avaritia.Compressor.add("essence_of_life", <contenttweaker:essence_of_life>, 100, <contenttweaker:condensed_vis_crystal_victus>, true);
+
+# Essence of Death
+mods.avaritia.Compressor.add("essence_of_death", <contenttweaker:essence_of_death>, 100, <contenttweaker:condensed_vis_crystal_mortuus>, true);
+
+# Essence of Cycles
+WitchesRitual.addRecipe("cycles", [<contenttweaker:essence_of_cycles>], [<contenttweaker:essence_of_life>,<botania:specialflower>.withTag({type: "dandelifeon"}),<contenttweaker:essence_of_death>,<contenttweaker:death_core>], null, null, 8000, WitchesRitual.FIERY, WitchesRitual.RITUAL, WitchesRitual.PHASING);
+
+# Essence of Enclosement
+mods.avaritia.Compressor.add("essence_of_enclosement", <contenttweaker:essence_of_enclosement>, 100, <mekanism:cardboardbox>, true);
+
+# Essence of Space
+mods.botania.ElvenTrade.addRecipe([<contenttweaker:essence_of_space>], [<contenttweaker:perfect_vacuum>,<contenttweaker:essence_of_enclosement>]);
+
+# Liquid Space
+MagmaCrucible.addRecipe(<liquid:space> * 200, <contenttweaker:essence_of_space>, 8000);
+
+# DivineRPG Statues OreDict
+<ore:DRPGStatues>.addItems([<divinerpg:ancient_entity_statue>,<divinerpg:ayeraco_statue_blue>,<divinerpg:ayeraco_statue_red>,<divinerpg:ayeraco_statue_yellow>,<divinerpg:ayeraco_statue_green>,<divinerpg:ayeraco_statue_purple>,<divinerpg:densos_statue>,<divinerpg:dramix_statue>,<divinerpg:eternal_archer_statue>,<divinerpg:karot_statue>,<divinerpg:king_of_scorchers_statue>,<divinerpg:parasecta_statue>,<divinerpg:reyvor_statue>,<divinerpg:soul_fiend_statue>,<divinerpg:the_watcher_statue>,<divinerpg:twilight_demon_statue>,<divinerpg:vamacheron_statue>,<divinerpg:termasect_statue>,<divinerpg:sunstorm_statue>,<divinerpg:experienced_cori_statue>]);
+
+# Essence of Foundation
+recipes.addShaped(<contenttweaker:essence_of_foundation>, [[null,<bewitchment:stone_leonard_statue>,null],[<ore:DRPGStatues>,<ore:DRPGStatues>,<ore:DRPGStatues>],[<contenttweaker:white_matter>,<wrcbe:material:5>,<contenttweaker:white_matter>]]);
+
+# Essence of Thought
+# recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_essence_of_thought.json
+
+# Steve
+recipes.addShapeless(<contenttweaker:steve>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeBrown>]);
+
+# Alex
+recipes.addShapeless(<contenttweaker:alex>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeOrange>]);
+
+# Herobine
+recipes.addShapeless(<contenttweaker:herobrine>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeWhite>]);
+
 # Essence of Logic ingredients
-# craft Steve, Alex and Herobrine with NBT of {"Age": 0, "Friends": 0, "Height": 0}
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];
 val logic_puzzle_modifiers = [<contenttweaker:age_modifier>,<contenttweaker:friends_modifier>,<contenttweaker:height_modifier>] as IItemStack[];
 val logic_puzzle_adders = [<contenttweaker:modifier_1>,<contenttweaker:modifier_m1>,<contenttweaker:modifier_10>,<contenttweaker:modifier_m10>,<contenttweaker:modifier_100>,<contenttweaker:modifier_m100>,<contenttweaker:modifier_1000>,<contenttweaker:modifier_m1000>] as IItemStack[];
 val logic_puzzle_adder_vals = [1, -1, 10, -10, 100, -100, 1000, -1000] as int[];
-#<minecraft:stone>.withTag({display: {Lore: ["Lore example", "Lore2"]}})
 for c in logic_puzzle_characters {
 	for m in 0 to 3 { # modifiers
 		for a in 0 to 8 { # adders
@@ -1540,11 +1602,72 @@ for c in logic_puzzle_characters {
 						height = max(0,height);
 					}
 
-					return out.withTag({"Age": age, "Friends": friends, "Height": height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
+					return out.withTag({Age: age, Friends: friends, Height: height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
 
 				}, null);
 		}
 	}
 }
+
+# Book of Logic
+recipes.addShapeless(<minecraft:written_book>.withTag({pages: ["{\"text\":\"What is the §c§lAge§r, §c§lNumber of friends§r \\u0026 §c§lHeight (in cm)§r of §lSteve§r, §lAlex§r and §lHerobine§r?\\n\\nUse the following 9 statements to figure it out:\"}", "{\"text\":\"1) Herobrine\\u0027s only got one friend, Notch.\\n\\n2) Steve is one year older than Alex.\\n\\n3) Steve and Herobrine are the same height.\"}", "{\"text\":\"4) 20 years ago, Herobrine was twice as old as the combined age of Steve and Alex.\\n\\n5) Steve is accumulating 61 friends every year. Impressive!\"}","{\"text\":\"6) The difference between the number of friends of Alex and Steve is exactly Herobrine\\u0027s height.\\n\\n7) Alex was born 66 cm tall. She gained 4 cm of height every year since then.\"}", "{\"text\":\"8) If every year, starting from now, Herobrine were to double his friend count, then in 11 years he would have 331 fewer friends than Steve. (Remember, Steve also gains friends every year!)\"}", "{\"text\":\"9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\\n\\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an\"}", "{\"text\":\"Essence of Thought in the Crafting Table!\\n\\nGood luck!\"}"], author: "Atricos", title: "§lBook of Logic", resolved: 1 as byte}), [<contenttweaker:essence_of_foundation>,<minecraft:book>]);
+
+# Essence of Logic
+# If you're here because you're a dirty cheater, feel really-really ashamed of yourself!
+recipes.addShapeless("essence_of_logic", <contenttweaker:essence_of_logic>, [<contenttweaker:essence_of_thought>,<contenttweaker:steve>.marked("steve"),<contenttweaker:alex>.marked("alex"),<contenttweaker:herobrine>.marked("herobrine")],
+function(out,ins,cInfo) {
+	if(ins.steve.tag has "Age" && ins.steve.tag has "Friends" && ins.steve.tag has "Height" && ins.alex.tag has "Age" && ins.alex.tag has "Friends" && ins.alex.tag has "Height" && ins.herobrine.tag has "Age" && ins.herobrine.tag has "Friends" && ins.herobrine.tag has "Height") {
+		if(ins.steve.tag.Age == 28 && ins.steve.tag.Friends == 1708 && ins.steve.tag.Height == 181 && ins.alex.tag.Age == 27 && ins.alex.tag.Friends == 1889 && ins.alex.tag.Height == 174 && ins.herobrine.tag.Age == 50 && ins.herobrine.tag.Friends == 1 && ins.herobrine.tag.Height == 181) {
+			return out;
+		}
+	}
+	return null;
+}, null);
+<contenttweaker:essence_of_logic>.addTooltip(format.white("Craft the Book of Logic and solve the puzzle!"));
+<contenttweaker:essence_of_logic>.addTooltip(format.white("Use Steve, Alex and Herobrine with the correct"));
+<contenttweaker:essence_of_logic>.addTooltip(format.white("Age, Number of friends and Height to craft this item!"));
+<contenttweaker:essence_of_logic>.addTooltip(format.white(format.bold("It can only be manually crated!")));
+
+# Age Modifier
+recipes.addShapeless(<contenttweaker:age_modifier>, [<extrautils2:ingredients:9>,<minecraft:bone>]);
+
+# Height Modifier
+recipes.addShapeless(<contenttweaker:height_modifier>, [<extrautils2:ingredients:9>,<minecraft:ladder>]);
+
+# Friends Modifier
+recipes.addShapeless(<contenttweaker:friends_modifier>, [<extrautils2:ingredients:9>,<minecraft:red_flower>]);
+
+# Modifier +1
+recipes.addShapeless(<contenttweaker:modifier_1>, [<extrautils2:ingredients:9>,<ore:stickWood>]);
+recipes.addShapeless(<contenttweaker:modifier_1>, [<contenttweaker:modifier_1000>]);
+recipes.addShapeless(<contenttweaker:modifier_1>, [<contenttweaker:modifier_m1>,<minecraft:redstone_torch>]);
+
+# Modifier -1
+recipes.addShapeless(<contenttweaker:modifier_m1>, [<contenttweaker:modifier_1>,<minecraft:redstone_torch>]);
+recipes.addShapeless(<contenttweaker:modifier_m1>, [<contenttweaker:modifier_m1000>]);
+
+# Modifier +10
+recipes.addShapeless(<contenttweaker:modifier_10>, [<contenttweaker:modifier_1>]);
+recipes.addShapeless(<contenttweaker:modifier_10>, [<contenttweaker:modifier_m10>,<minecraft:redstone_torch>]);
+
+# Modifier -10
+recipes.addShapeless(<contenttweaker:modifier_m10>, [<contenttweaker:modifier_10>,<minecraft:redstone_torch>]);
+recipes.addShapeless(<contenttweaker:modifier_m10>, [<contenttweaker:modifier_m1>]);
+
+# Modifier +100
+recipes.addShapeless(<contenttweaker:modifier_100>, [<contenttweaker:modifier_10>]);
+recipes.addShapeless(<contenttweaker:modifier_100>, [<contenttweaker:modifier_m100>,<minecraft:redstone_torch>]);
+
+# Modifier -100
+recipes.addShapeless(<contenttweaker:modifier_m100>, [<contenttweaker:modifier_100>,<minecraft:redstone_torch>]);
+recipes.addShapeless(<contenttweaker:modifier_m100>, [<contenttweaker:modifier_m10>]);
+
+# Modifier +1000
+recipes.addShapeless(<contenttweaker:modifier_1000>, [<contenttweaker:modifier_100>]);
+recipes.addShapeless(<contenttweaker:modifier_1000>, [<contenttweaker:modifier_m1000>,<minecraft:redstone_torch>]);
+
+# Modifier -1000
+recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_1000>,<minecraft:redstone_torch>]);
+recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_m100>]);
 
 print("ENDING ContentTweakerRecipes.zs");

@@ -53,4 +53,12 @@ recipes.addShaped(<tconstruct:materials:17>, [[<quark:black_ash>,<quark:black_as
 # Plate Cast
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 
+# Creative Modifier
+mods.extendedcrafting.TableCrafting.addShaped(<tconstruct:materials:50>,
+[[<extendedcrafting:singularity:5>,<alchemistry:ingot:91>,<divinerpg:golden_fury>,<alchemistry:ingot:91>,<extendedcrafting:singularity:5>],
+[<alchemistry:ingot:91>,<divinerpg:golden_fury>,<tconstruct:materials:16>,<divinerpg:golden_fury>,<alchemistry:ingot:91>],
+[<divinerpg:golden_fury>,<tconstruct:materials:16>,<extendedcrafting:singularity_custom:104>,<tconstruct:materials:16>,<divinerpg:golden_fury>],
+[<alchemistry:ingot:91>,<divinerpg:golden_fury>,<tconstruct:materials:16>,<divinerpg:golden_fury>,<alchemistry:ingot:91>],
+[<extendedcrafting:singularity:5>,<alchemistry:ingot:91>,<divinerpg:golden_fury>,<alchemistry:ingot:91>,<extendedcrafting:singularity:5>]]);
+
 print("ENDING TinkersConstruct.zs");
