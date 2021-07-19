@@ -11,12 +11,12 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:essence_of_continuity"
+            "item": "contenttweaker:essence_of_logic"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:essence_of_logic"
+            "item": "contenttweaker:contenttweaker:essence_of_movement"
         },
         {
             "type": "item",
