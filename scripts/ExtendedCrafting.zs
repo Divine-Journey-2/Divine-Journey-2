@@ -130,4 +130,8 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularit
 # Chome Singualrity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1000, null, 100000000);
 
+#  Ender Star
+mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
+mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:40>, [[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>],[<extendedcrafting:singularity_custom:154>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}),<extendedcrafting:singularity_custom:154>],[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>]], 10);  
+
 print("ENDING ExtendedCrafting.zs");

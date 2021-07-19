@@ -47,6 +47,9 @@ import crafttweaker.util.Position3f;
 import mods.inworldcrafting.ExplosionCrafting;
 import moretweaker.galacticraft.CircuitFabricator;
 import mods.alchemistry.Liquifier;
+import mods.astralsorcery.Altar;
+import mods.roots.Fey;
+import mods.inworldcrafting.FluidToItem;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1415,67 +1418,67 @@ recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<
 recipes.addShapeless(<alchemistry:compound:1010> * 9, [<contenttweaker:gerc_crystal>]);
 
 # Minecraft Singularity
-recipes.addShapeless(<contenttweaker:minecraft_singularity>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity_custom:101>,<extendedcrafting:singularity:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:minecraft_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity_custom:101>,<extendedcrafting:singularity:4>]);
 
 # Thermal Singularity
-recipes.addShapeless(<contenttweaker:thermal_singularity>, [<extendedcrafting:singularity:16>,<extendedcrafting:singularity:17>,<extendedcrafting:singularity:18>,<extendedcrafting:singularity:22>,<extendedcrafting:singularity:23>,<extendedcrafting:singularity:25>,<extendedcrafting:singularity:35>,<extendedcrafting:singularity:34>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thermal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:16>,<extendedcrafting:singularity:17>,<extendedcrafting:singularity:18>,<extendedcrafting:singularity:22>,<extendedcrafting:singularity:23>,<extendedcrafting:singularity:25>,<extendedcrafting:singularity:35>,<extendedcrafting:singularity:34>]);
 
 # Mixed Thermal Singularity
-recipes.addShapeless(<contenttweaker:mixed_thermal_singularity>, [<extendedcrafting:singularity:19>,<extendedcrafting:singularity:27>,<extendedcrafting:singularity:28>,<extendedcrafting:singularity:26>,<extendedcrafting:singularity:24>,<extendedcrafting:singularity:48>,<extendedcrafting:singularity:49>,<extendedcrafting:singularity:50>,<extendedcrafting:singularity:29>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:mixed_thermal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:19>,<extendedcrafting:singularity:27>,<extendedcrafting:singularity:28>,<extendedcrafting:singularity:26>,<extendedcrafting:singularity:24>,<extendedcrafting:singularity:48>,<extendedcrafting:singularity:49>,<extendedcrafting:singularity:50>,<extendedcrafting:singularity:29>]);
 
 # Tinkers Singularity
-recipes.addShapeless(<contenttweaker:tinkers_singularity>, [<extendedcrafting:singularity:64>,<extendedcrafting:singularity:65>,<extendedcrafting:singularity:66>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:tinkers_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:64>,<extendedcrafting:singularity:65>,<extendedcrafting:singularity:66>]);
 
 # EnderIO Singularity
-recipes.addShapeless(<contenttweaker:enderio_singularity>, [<extendedcrafting:singularity_custom:119>,<extendedcrafting:singularity_custom:103>,<extendedcrafting:singularity_custom:104>,<extendedcrafting:singularity_custom:105>,<extendedcrafting:singularity_custom:106>,<extendedcrafting:singularity_custom:107>,<extendedcrafting:singularity_custom:108>,<extendedcrafting:singularity_custom:109>,<extendedcrafting:singularity_custom:110>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:enderio_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:119>,<extendedcrafting:singularity_custom:103>,<extendedcrafting:singularity_custom:104>,<extendedcrafting:singularity_custom:105>,<extendedcrafting:singularity_custom:106>,<extendedcrafting:singularity_custom:107>,<extendedcrafting:singularity_custom:108>,<extendedcrafting:singularity_custom:109>,<extendedcrafting:singularity_custom:110>]);
 
 # Endergy Singularity
-recipes.addShapeless(<contenttweaker:endergy_singularity>, [<extendedcrafting:singularity_custom:111>,<extendedcrafting:singularity_custom:112>,<extendedcrafting:singularity_custom:113>,<extendedcrafting:singularity_custom:114>,<extendedcrafting:singularity_custom:115>,<extendedcrafting:singularity_custom:116>,<extendedcrafting:singularity_custom:117>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:endergy_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:111>,<extendedcrafting:singularity_custom:112>,<extendedcrafting:singularity_custom:113>,<extendedcrafting:singularity_custom:114>,<extendedcrafting:singularity_custom:115>,<extendedcrafting:singularity_custom:116>,<extendedcrafting:singularity_custom:117>]);
 
 # ProjectRed Singularity
-recipes.addShapeless(<contenttweaker:projectred_singularity>, [<extendedcrafting:singularity_custom:120>,<extendedcrafting:singularity_custom:121>,<extendedcrafting:singularity_custom:122>,<extendedcrafting:singularity_custom:123>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:projectred_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:120>,<extendedcrafting:singularity_custom:121>,<extendedcrafting:singularity_custom:122>,<extendedcrafting:singularity_custom:123>]);
 
 # Mekanism Singularity
-recipes.addShapeless(<contenttweaker:mekanism_singularity>, [<extendedcrafting:singularity_custom:124>,<extendedcrafting:singularity_custom:125>,<extendedcrafting:singularity_custom:126>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:mekanism_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:124>,<extendedcrafting:singularity_custom:125>,<extendedcrafting:singularity_custom:126>]);
 
 # Abyssal Singularity
-recipes.addShapeless(<contenttweaker:abyssal_singularity>, [<extendedcrafting:singularity_custom:127>,<extendedcrafting:singularity_custom:128>,<extendedcrafting:singularity_custom:129>,<extendedcrafting:singularity_custom:130>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:abyssal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:127>,<extendedcrafting:singularity_custom:128>,<extendedcrafting:singularity_custom:129>,<extendedcrafting:singularity_custom:130>]);
 
 # Divine Singularity
-recipes.addShapeless(<contenttweaker:divine_singularity>, [<extendedcrafting:singularity_custom:131>,<extendedcrafting:singularity_custom:132>,<extendedcrafting:singularity_custom:133>,<extendedcrafting:singularity_custom:134>,<extendedcrafting:singularity_custom:135>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:divine_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:131>,<extendedcrafting:singularity_custom:132>,<extendedcrafting:singularity_custom:133>,<extendedcrafting:singularity_custom:134>,<extendedcrafting:singularity_custom:135>]);
 
 # Dusty Thermal Singularity
-recipes.addShapeless(<contenttweaker:dusty_thermal_singularity>, [<extendedcrafting:singularity_custom:139>,<extendedcrafting:singularity_custom:140>,<extendedcrafting:singularity_custom:141>,<extendedcrafting:singularity_custom:142>,<extendedcrafting:singularity_custom:138>,<extendedcrafting:singularity_custom:144>,<extendedcrafting:singularity_custom:145>,<avaritia:singularity:12>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:dusty_thermal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:139>,<extendedcrafting:singularity_custom:140>,<extendedcrafting:singularity_custom:141>,<extendedcrafting:singularity_custom:142>,<extendedcrafting:singularity_custom:138>,<extendedcrafting:singularity_custom:144>,<extendedcrafting:singularity_custom:145>,<avaritia:singularity:12>]);
 
 # Botanic Singualrity
-recipes.addShapeless(<contenttweaker:botanic_singularity>, [<extendedcrafting:singularity_custom:147>,<extendedcrafting:singularity_custom:148>,<extendedcrafting:singularity_custom:149>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:botanic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:147>,<extendedcrafting:singularity_custom:148>,<extendedcrafting:singularity_custom:149>]);
 
 # Thaumic Singularity
-recipes.addShapeless(<contenttweaker:thaumic_singularity>, [<extendedcrafting:singularity_custom:158>,<extendedcrafting:singularity_custom:157>,<extendedcrafting:singularity:21>,<extendedcrafting:singularity_custom:150>,<extendedcrafting:singularity_custom:152>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thaumic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:158>,<extendedcrafting:singularity_custom:157>,<extendedcrafting:singularity:21>,<extendedcrafting:singularity_custom:150>,<extendedcrafting:singularity_custom:152>]);
 
 # Alchemical Singularity
-recipes.addShapeless(<contenttweaker:alchemic_singularity>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:alchemic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
 
 # Draglactic Singularity
-recipes.addShapeless(<contenttweaker:draglactic_singularity>, [<extendedcrafting:singularity_custom:102>,<extendedcrafting:singularity:31>,<extendedcrafting:singularity_custom:155>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:draglactic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:102>,<extendedcrafting:singularity:31>,<extendedcrafting:singularity_custom:155>]);
 
 # Extra Tech Singularity
-recipes.addShapeless(<contenttweaker:extra_tech_singularity>, [<extendedcrafting:singularity_custom:118>,<extendedcrafting:singularity_custom:143>,<extendedcrafting:singularity_custom:136>,<extendedcrafting:singularity_custom:137>,<extendedcrafting:singularity_custom:153>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:extra_tech_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:118>,<extendedcrafting:singularity_custom:143>,<extendedcrafting:singularity_custom:136>,<extendedcrafting:singularity_custom:137>,<extendedcrafting:singularity_custom:153>]);
 
 # Extra Magic Singularity
-recipes.addShapeless(<contenttweaker:extra_magic_singularity>, [<extendedcrafting:singularity_custom:156>,<extendedcrafting:singularity_custom:146>,<extendedcrafting:singularity_custom:154>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:extra_magic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:156>,<extendedcrafting:singularity_custom:146>,<extendedcrafting:singularity_custom:154>]);
 
 # Magical Singularity
-recipes.addShapeless(<contenttweaker:magical_singularity>, [<contenttweaker:abyssal_singularity>,<contenttweaker:divine_singularity>,<contenttweaker:botanic_singularity>,<contenttweaker:thaumic_singularity>,<contenttweaker:extra_magic_singularity>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:magical_singularity>, 400000, 10000, <contenttweaker:plasma_core>, [<contenttweaker:abyssal_singularity>,<contenttweaker:divine_singularity>,<contenttweaker:botanic_singularity>,<contenttweaker:thaumic_singularity>,<contenttweaker:extra_magic_singularity>]);
 
 # Techy Singualrity
-recipes.addShapeless(<contenttweaker:techy_singularity>, [<contenttweaker:thermal_singularity>,<contenttweaker:mixed_thermal_singularity>,<contenttweaker:dusty_thermal_singularity>,<contenttweaker:enderio_singularity>,<contenttweaker:endergy_singularity>,<contenttweaker:mekanism_singularity>,<contenttweaker:extra_tech_singularity>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:techy_singularity>, 400000, 10000, <contenttweaker:plasma_core>, [<contenttweaker:thermal_singularity>,<contenttweaker:mixed_thermal_singularity>,<contenttweaker:dusty_thermal_singularity>,<contenttweaker:enderio_singularity>,<contenttweaker:endergy_singularity>,<contenttweaker:mekanism_singularity>,<contenttweaker:extra_tech_singularity>]);
 
 # Powerful Singularity
-recipes.addShapeless(<contenttweaker:powerful_singularity>, [<contenttweaker:projectred_singularity>,<contenttweaker:alchemic_singularity>,<contenttweaker:draglactic_singularity>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:powerful_singularity>, 400000, 10000, <contenttweaker:plasma_core>, [<contenttweaker:projectred_singularity>,<contenttweaker:alchemic_singularity>,<contenttweaker:draglactic_singularity>]);
 
 # Beginner's Singularity
-recipes.addShapeless(<contenttweaker:beginners_singularity>, [<contenttweaker:minecraft_singularity>,<contenttweaker:tinkers_singularity>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:beginners_singularity>, 400000, 10000, <contenttweaker:plasma_core>, [<contenttweaker:minecraft_singularity>,<contenttweaker:tinkers_singularity>]);
 
 # Penultimate Machine Frame
 recipes.addShapedMirrored(<contenttweaker:penultimate_machine_frame>, [[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>],[<rftools:infused_diamond>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<contenttweaker:gerc_crystal>,<contenttweaker:dark_realm_soul_block>,<contenttweaker:gerc_crystal>]]);
@@ -1669,5 +1672,104 @@ recipes.addShapeless(<contenttweaker:modifier_1000>, [<contenttweaker:modifier_m
 # Modifier -1000
 recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_1000>,<minecraft:redstone_torch>]);
 recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_m100>]);
+
+# Essence of Destruction
+mods.thaumcraft.Infusion.registerRecipe("essence_of_destruction", "", <contenttweaker:essence_of_destruction>, 10, [<aspect:perditio> * 250,<aspect:diabolus> * 100,<aspect:motus> * 100,<aspect:tenebrae> * 50,<aspect:praecantatio> * 50,<aspect:luna> * 20], <projecte:item.pe_destruction_catalyst>, [<contenttweaker:antimatter_cluster>,<thaumcraft:primal_crusher>,<contenttweaker:antimatter_cluster>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:antimatter_cluster>]);
+
+# Essence of Peace
+mods.astralsorcery.Altar.addTraitAltarRecipe("astralsorcery:shaped/internal/altar/essence_of_peace", <contenttweaker:essence_of_peace>, 7500, 100,
+[<rftools:peaceful_module>,<contenttweaker:condensed_vis_crystal_sensus>,<rftools:peaceful_module>,
+<contenttweaker:taste_the_rainbow>,<rftoolsdim:known_dimlet:11>.withTag({dkey: "Peaceful"}),<contenttweaker:taste_the_rainbow>,
+<contenttweaker:condensed_vis_crystal_sensus>,<contenttweaker:taste_the_rainbow>,<contenttweaker:condensed_vis_crystal_sensus>,
+null,null,<contenttweaker:condensed_vis_crystal_sensus>,<contenttweaker:condensed_vis_crystal_sensus>,
+<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,<contenttweaker:condensed_vis_crystal_ordo>,
+<contenttweaker:condensed_vis_crystal_sensus>,<projecte:item.pe_covalence_dust>,<projecte:item.pe_covalence_dust>,<projecte:item.pe_covalence_dust>], "astralsorcery.constellation.aevitas");
+
+# Essence of Order
+Fey.addRecipe("essence_of_order", <contenttweaker:essence_of_order>, [<contenttweaker:essence_of_peace>,<contenttweaker:perfect_vacuum>,<contenttweaker:condensed_vis_crystal_ordo>,<thaumcraft:vis_resonator>,<bewitchment:token_of_remedies>]);
+
+# Essence of Inversion
+# recipe in config/brandon3055/CustomFusionRecipes.json
+
+# Essence of the Contrary
+mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:essence_of_the_contrary>, [<contenttweaker:essence_of_inversion>,<contenttweaker:essence_of_enlargement>,<bloodmagic:decorative_brick:2>,<bewitchment:hellish_bauble>], 12288, 8192);
+
+# Essence of Breaking
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_breaking>,
+[[<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumpillar>,<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumbrick:1>],
+[null,<contenttweaker:offensive_core>,<abyssalcraft:ethaxiumpillar>,<contenttweaker:offensive_core>,null],
+[<contenttweaker:offensive_core>,<astralsorcery:itemcoloredlens:1>,<projecte:item.pe_rm_morning_star>,<astralsorcery:itemcoloredlens:1>,<contenttweaker:offensive_core>],
+[null,<contenttweaker:offensive_core>,<abyssalcraft:ethaxiumpillar>,<contenttweaker:offensive_core>,null],
+[<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumpillar>,<abyssalcraft:ethaxiumbrick:1>,<abyssalcraft:ethaxiumbrick:1>]]);
+
+# Essence of the Unbroken
+mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:essence_of_the_unbroken>, <contenttweaker:essence_of_breaking>, <abyssalcraft:ethaxiumpillar>, <contenttweaker:essence_of_the_contrary>, <abyssalcraft:ethaxiumpillar>, <abyssalcraft:ethaxiumpillar>, 10000, 100, [0.3594, 0.2656, 0.2461]);
+
+# Essence of Ways
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_ways>,
+[[null,<galacticraftplanets:walkway>,<bewitchment:waystone>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<bewitchment:waystone>,<galacticraftplanets:walkway>],
+[null,<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>,<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<botania:alfheimportal>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>,<galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>,null],
+[<galacticraftplanets:walkway>,<bewitchment:waystone>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<bewitchment:waystone>,<galacticraftplanets:walkway>,null]]);
+
+# Essence of Length
+mods.avaritia.Compressor.add("essence_of_length", <contenttweaker:essence_of_length>, 200, <enderutilities:ruler>, true);
+
+# Essence of Extension
+FluidToItem.transform(<contenttweaker:essence_of_extension>, <liquid:growth_infusion_liquid>, [<contenttweaker:essence_of_length>,<contenttweaker:essence_of_enlargement>,<minecraft:piston> * 64], true);
+
+# Essence of Motion
+Distillery.addRecipe([<contenttweaker:essence_of_motion>], [<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<projectred-core:resource_item:410>,<contenttweaker:electron>,<contenttweaker:white_matter>,<contenttweaker:white_matter>]);
+
+# Essence of Movement
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("contenttweaker:essence_of_movement", "", 1500, [<aspect:aer> * 64,<aspect:aqua> * 64,<aspect:ordo> * 64,<aspect:perditio> * 64,<aspect:terra> * 64,<aspect:ignis> * 64], <contenttweaker:essence_of_movement>, [<contenttweaker:essence_of_motion>,<contenttweaker:essence_of_cycles>,<contenttweaker:essence_of_ways>]);
+
+# Essence of Additivity
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_additivity>,
+[[null,null,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,null,null],
+[null,null,<alchemistry:ingot:60>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:60>,null,null],
+[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:63>,<appliedenergistics2:material:23>,<alchemistry:ingot:63>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:63>,<appliedenergistics2:material:23>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<extendedcrafting:material:40>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<appliedenergistics2:material:23>,<alchemistry:ingot:63>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<contenttweaker:oxygen_rich_barium_calcite_perpetuator>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:63>,<appliedenergistics2:material:23>,<alchemistry:ingot:63>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>],
+[null,null,<alchemistry:ingot:60>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:63>,<alchemistry:ingot:60>,null,null],
+[null,null,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,null,null]]);
+
+# Essence of Dimensionality
+# recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_essence_of_dimensionality.json
+
+# Essence of Continuity
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:essence_of_continuity>, <contenttweaker:essence_of_ways>, null, 200, 10000, [<contenttweaker:essence_of_the_unbroken>,<contenttweaker:condensed_vis_crystal_auram> * 2,<bewitchment:nazar>,<astralsorcery:itemcoloredlens:5> * 2]);
+
+# Ultimate Singularity
+mods.extendedcrafting.CombinationCrafting.addRecipe(<extendedcrafting:singularity_ultimate>, 1200000, 30000, <contenttweaker:plasma_core>, [<contenttweaker:techy_singularity>,<contenttweaker:magical_singularity>,<contenttweaker:beginners_singularity>,<contenttweaker:powerful_singularity>]);
+
+# Essence of Matter
+# recipe in config/modularmachinery/recipes/high_voltage_plasmafier_contenttweaker_essence_of_matter.json
+
+# Essence of Time
+# recipe in config/modularmachinery/recipes/high_voltage_plasmafier_contenttweaker_essence_of_time.json
+
+# Essence of Repetition
+# recipe in config/modularmachinery/recipes/high_voltage_plasmafier_contenttweaker_essence_of_repetition.json
+
+# Essence of Infinity
+mods.botania.RuneAltar.addRecipe(<contenttweaker:essence_of_infinity>, [<contenttweaker:essence_of_matter>,<contenttweaker:essence_of_time>,<contenttweaker:essence_of_repetition>], 50000000);
+<contenttweaker:essence_of_infinity>.addTooltip(format.white(format.bold("Requires 50 full Mana Pools to craft.")));
+
+# Photovoltaic Cell IX
+recipes.addShaped(<contenttweaker:photovoltaic_cell_ix> * 3, [[<ore:blockGlassBlack>,<ore:blockGlassBlack>,<ore:blockGlassBlack>],[<draconicadditions:chaotic_energy_core>,<draconicadditions:chaotic_energy_core>,<draconicadditions:chaotic_energy_core>],[<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>]]);
+
+# Photovoltaic Cell X
+recipes.addShaped(<contenttweaker:photovoltaic_cell_x> * 3, [[<ore:blockGlassGray>,<ore:blockGlassGray>,<ore:blockGlassGray>],[<avaritia:resource:4>,<avaritia:resource:4>,<avaritia:resource:4>],[<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>]]);
+
+# Photovoltaic Cell XI
+recipes.addShaped(<contenttweaker:photovoltaic_cell_xi> * 3, [[<ore:blockGlassWhite>,<ore:blockGlassWhite>,<ore:blockGlassWhite>],[<contenttweaker:essence_of_infinity>,<contenttweaker:essence_of_infinity>,<contenttweaker:essence_of_infinity>],[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>]]);
+
+
 
 print("ENDING ContentTweakerRecipes.zs");

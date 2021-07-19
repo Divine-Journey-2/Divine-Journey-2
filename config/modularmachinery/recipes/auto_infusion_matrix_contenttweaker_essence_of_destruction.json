@@ -1,0 +1,74 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_contenttweaker_essence_of_destruction",
+    "recipeTime": 570,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 8000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "projecte:item.pe_destruction_catalyst"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:antimatter_cluster",
+            "amount": 3
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:primal_crusher"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:condensed_vis_crystal_perditio"
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 250
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "tenebrae",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "luna",
+            "amount": 20
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:essence_of_destruction"
+        }
+    ]
+}

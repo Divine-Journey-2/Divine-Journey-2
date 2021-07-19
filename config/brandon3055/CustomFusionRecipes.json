@@ -799,5 +799,36 @@
             "projecte:matter_block,1,1",
             "projecte:matter_block,1,1"
         ]
+    },
+    {
+        "mode": "ADD",
+        "result": "contenttweaker:essence_of_inversion",
+        "catalyst": "evilcraft:inverted_potentia,1,1",
+        "energy": 2000000000000,
+        "tier": 3,
+        "ingredients": [
+            "projecte:item.pe_matter,1,1",
+            "projecte:item.pe_matter,1,1",
+            "contenttweaker:gerc_crystal,1,0",
+            "contenttweaker:gerc_crystal,1,0",
+            "projectred-integration:gate,1,24",
+            "projectred-integration:gate,1,24",
+            "appliedenergistics2:material,1,31",
+            "appliedenergistics2:material,1,31",
+            "contenttweaker:gerc_crystal,1,0",
+            "contenttweaker:gerc_crystal,1,0",
+            "projecte:item.pe_matter,1,1",
+            "projecte:item.pe_matter,1,1"
+        ]
+    },
+    {
+        "mode": "REMOVE",
+        "result": "draconicevolution:chaotic_core",
+        "catalyst": "solarflux:solar_panel_chaotic"
+    },
+    {
+        "mode": "REMOVE",
+        "result": "solarflux:solar_panel_chaotic",
+        "catalyst": "draconicevolution:chaotic_core"
     }
 ]

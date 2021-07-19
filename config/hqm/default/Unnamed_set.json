@@ -1,1 +1,0 @@
-{"name":"Unnamed set","quests":[{"uuid":"bade303e-c1f2-4c29-8104-300819cb8999","name":"Unnamed","x":62,"y":55,"icon":{"id":"extrautils2:angelring"},"tasks":[{"type":"DETECT","items":[{"item":{"id":"extrautils2:angelring"},"precision":"FUZZY"}]}],"commandrewards":[]}],"reputationBar":[]}

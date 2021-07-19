@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/reinforced_starlight_infused_machine_block",
+      "particle": "contenttweaker:blocks/reinforced_starlight_infused_machine_block"
+    },
+    "model": "base:storage",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

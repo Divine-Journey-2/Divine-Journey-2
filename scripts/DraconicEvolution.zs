@@ -421,4 +421,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:celestial_manip
 [<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<contenttweaker:corrupted_dragon_token>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:celestial_crystal_core>]]);
 
+# Creative Flux Capacitor
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:draconium_capacitor:2>, 
+[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>], 
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <extrautils2:passivegenerator:6>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
+[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>]]);
+
 print("ENDING DraconicEvolution.zs");

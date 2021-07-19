@@ -354,4 +354,8 @@ recipes.remove(<bewitchment:silver_nugget>);
 recipes.remove(<immersiveengineering:metal:23>);
 recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials:45>]);
 
+# Lead Ignot
+recipes.remove(<galacticraftplanets:atomic_battery>);
+<ore:ingotLead>.remove(<galacticraftplanets:basic_item_venus:1>);
+
 print("ENDING UnifyingIngotsAndBlocks.zs");

@@ -142,6 +142,18 @@ recipes.addShaped(<modularmachinery:blockfluidinputhatch:2>, [[<modularmachinery
 # Reinforced Fluid Input Hatch
 recipes.addShaped(<modularmachinery:blockfluidinputhatch:3>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockfluidinputhatch:2>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
 
+# Big Fluid Input hatch
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:4>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:13>,<modularmachinery:blockfluidinputhatch:3>,<galacticraftcore:basic_item:13>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Huge Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockfluidinputhatch:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Ludicrous Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:6>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockfluidinputhatch:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
+
+# Vacuum Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:7>, [[<alchemistry:ingot:91>,<projecte:item.pe_matter>,<alchemistry:ingot:91>],[<projecte:item.pe_matter>,<modularmachinery:blockfluidinputhatch:6>,<projecte:item.pe_matter>],[<alchemistry:ingot:91>,<projecte:item.pe_matter>,<alchemistry:ingot:91>]]);
+
 # Tiny Fluid Output Hatch
 recipes.remove(<modularmachinery:blockfluidoutputhatch>);
 recipes.addShapeless(<modularmachinery:blockfluidoutputhatch>, [<modularmachinery:blockcasing>,<appliedenergistics2:part:261>]);
@@ -155,6 +167,18 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch:2>, [[<modularmachiner
 
 # Reinforced Fluid Output Hatch
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>],[<galacticraftcore:basic_item:11>,<modularmachinery:blockfluidoutputhatch:2>,<galacticraftcore:basic_item:11>],[<galacticraftcore:heavy_plating>,<galacticraftcore:basic_item:11>,<galacticraftcore:heavy_plating>]]);
+
+# Big Fluid Input hatch
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:4>, [[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftcore:basic_item:13>,<modularmachinery:blockfluidoutputhatch:3>,<galacticraftcore:basic_item:13>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:3>]]);
+
+# Huge Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, [[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>],[<draconicevolution:draconic_core>,<modularmachinery:blockfluidoutputhatch:4>,<draconicevolution:draconic_core>],[<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:draconic_core>,<galacticraftplanets:item_basic_asteroids:5>]]);
+
+# Ludicrous Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:6>, [[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>],[<contenttweaker:perfectium_ball>,<modularmachinery:blockfluidoutputhatch:5>,<contenttweaker:perfectium_ball>],[<alchemistry:ingot:90>,<contenttweaker:perfectium_ball>,<alchemistry:ingot:90>]]);
+
+# Vacuum Fluid Input Hatch
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:7>, [[<alchemistry:ingot:91>,<projecte:item.pe_matter>,<alchemistry:ingot:91>],[<projecte:item.pe_matter>,<modularmachinery:blockfluidoutputhatch:6>,<projecte:item.pe_matter>],[<alchemistry:ingot:91>,<projecte:item.pe_matter>,<alchemistry:ingot:91>]]);
 
 # Firebox Casing
 recipes.remove(<modularmachinery:blockcasing:2>);

@@ -129,4 +129,12 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:14>, [[<simplyjetpacks:metaitemmo
 recipes.remove(<simplyjetpacks:metaitemmods:26>);
 recipes.addShaped(<simplyjetpacks:metaitemmods:26>, [[<contenttweaker:fluxed_electrum_ingot>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_ingot>],[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:flux_crystal>,<contenttweaker:fluxed_electrum_plate>],[<contenttweaker:fluxed_electrum_ingot>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_ingot>]]);
 
+# Creative Fluxpack
+mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemfluxpack>.withTag({Energy: 200000}),
+[[<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>], 
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <extrautils2:passivegenerator:6>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
+[<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>]]);
+
 print("ENDING SimplyJetpacks.zs");

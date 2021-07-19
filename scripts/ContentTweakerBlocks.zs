@@ -104,7 +104,7 @@ reinforced_glass_casing.setTranslucent(true);
 reinforced_glass_casing.setFullBlock(false);
 reinforced_glass_casing.setToolClass("pickaxe");
 reinforced_glass_casing.setToolLevel(2);
-reinforced_glass_casing.setBlockSoundType(<soundtype:stone>);
+reinforced_glass_casing.setBlockSoundType(<soundtype:metal>);
 reinforced_glass_casing.register();
 
 var charred_stone = VanillaFactory.createBlock("charred_stone", <blockmaterial:rock>);
@@ -581,5 +581,37 @@ penultimate_machine_frame.setToolClass("pickaxe");
 penultimate_machine_frame.setToolLevel(2);
 penultimate_machine_frame.setBlockSoundType(<soundtype:glass>);
 penultimate_machine_frame.register();
+
+var reinforced_starlight_infused_machine_block = VanillaFactory.createBlock("reinforced_starlight_infused_machine_block", <blockmaterial:iron>);
+reinforced_starlight_infused_machine_block.setBlockHardness(2.5);
+reinforced_starlight_infused_machine_block.setBlockResistance(5.0);
+reinforced_starlight_infused_machine_block.setToolClass("pickaxe");
+reinforced_starlight_infused_machine_block.setToolLevel(2);
+reinforced_starlight_infused_machine_block.setBlockSoundType(<soundtype:metal>);
+reinforced_starlight_infused_machine_block.register();
+
+var reinforced_machine_stabilizer = VanillaFactory.createBlock("reinforced_machine_stabilizer", <blockmaterial:iron>);
+reinforced_machine_stabilizer.setBlockHardness(2.5);
+reinforced_machine_stabilizer.setBlockResistance(5.0);
+reinforced_machine_stabilizer.setToolClass("pickaxe");
+reinforced_machine_stabilizer.setToolLevel(2);
+reinforced_machine_stabilizer.setBlockSoundType(<soundtype:metal>);
+reinforced_machine_stabilizer.register();
+
+var reinforced_machine_electrolyzer = VanillaFactory.createBlock("reinforced_machine_electrolyzer", <blockmaterial:iron>);
+reinforced_machine_electrolyzer.setBlockHardness(2.5);
+reinforced_machine_electrolyzer.setBlockResistance(5.0);
+reinforced_machine_electrolyzer.setToolClass("pickaxe");
+reinforced_machine_electrolyzer.setToolLevel(2);
+reinforced_machine_electrolyzer.setBlockSoundType(<soundtype:metal>);
+reinforced_machine_electrolyzer.register();
+
+var reinforced_machine_accelerator = VanillaFactory.createBlock("reinforced_machine_accelerator", <blockmaterial:iron>);
+reinforced_machine_accelerator.setBlockHardness(2.5);
+reinforced_machine_accelerator.setBlockResistance(5.0);
+reinforced_machine_accelerator.setToolClass("pickaxe");
+reinforced_machine_accelerator.setToolLevel(2);
+reinforced_machine_accelerator.setBlockSoundType(<soundtype:metal>);
+reinforced_machine_accelerator.register();
 
 print("ENDING ContentTweakerBlocks.zs");

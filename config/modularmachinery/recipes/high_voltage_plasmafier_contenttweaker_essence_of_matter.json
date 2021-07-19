@@ -1,0 +1,32 @@
+{
+    "machine": "high_voltage_plasmafier",
+    "registryName": "high_voltage_plasmafier_contenttweaker_essence_of_matter",
+    "recipeTime": 600,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 16000000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "extendedcrafting:singularity_ultimate"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:essence_of_order"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:essence_of_destruction"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:essence_of_matter"
+        }
+    ]
+}

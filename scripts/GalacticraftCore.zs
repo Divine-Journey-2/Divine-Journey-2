@@ -491,4 +491,12 @@ recipes.addShaped(<galacticraftcore:sensor_glasses>, [[null,<botania:manaresourc
 recipes.remove(<galacticraftcore:basic_item:20>);
 recipes.addShapedMirrored(<galacticraftcore:basic_item:20>, [[<contenttweaker:cheesy_wafer>,<galacticraftcore:air_vent>,<galacticraftplanets:item_basic_mars:3>],[<mekanism:basicblock:14>,<projectred-core:resource_item:410>,<galacticraftplanets:item_basic_mars:3>],[<galacticraftplanets:item_basic_mars:3>,<galacticraftcore:basic_item:14>,<galacticraftplanets:item_basic_mars:3>]]);
 
+# Infinite Battery
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_battery>,
+[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>], 
+[<projecte:item.pe_matter:1>, <galacticraftcore:battery>, <galacticraftcore:battery>, <galacticraftcore:battery>, <projecte:item.pe_matter:1>], 
+[<contenttweaker:white_matter>, <galacticraftcore:battery>, <extrautils2:passivegenerator:6>, <galacticraftcore:battery>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <galacticraftcore:battery>, <galacticraftcore:battery>, <galacticraftcore:battery>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
+
 print("ENDING GalacticraftCore.zs");

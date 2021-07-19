@@ -1204,5 +1204,11 @@ essence_of_life.register();
 var essence_of_death = VanillaFactory.createItem("essence_of_death");
 essence_of_death.rarity = "EPIC";
 essence_of_death.register();
+var photovoltaic_cell_ix = VanillaFactory.createItem("photovoltaic_cell_ix");
+photovoltaic_cell_ix.register();
+var photovoltaic_cell_x = VanillaFactory.createItem("photovoltaic_cell_x");
+photovoltaic_cell_x.register();
+var photovoltaic_cell_xi = VanillaFactory.createItem("photovoltaic_cell_xi");
+photovoltaic_cell_xi.register();
 
 print("ENDING ContentTweakerItems.zs");
