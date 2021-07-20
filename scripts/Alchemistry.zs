@@ -579,4 +579,16 @@ mods.alchemistry.Dissolver.addRecipe(<projecte:item.pe_matter:1>, true, 1, [[100
 # Protactinum <- White Matter
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:white_matter>, true, 1, [[100, <alchemistry:element:66>, <alchemistry:compound:1012>, <alchemistry:element:84> * 32, <alchemistry:element:86> * 32, <alchemistry:element:95> * 16, <alchemistry:element:91> * 4]]);
 
+# Fusion Casing
+recipes.remove(<alchemistry:fusion_casing>);
+recipes.addShaped(<alchemistry:fusion_casing>, [[<alchemistry:ingot:60>,<alchemistry:ingot:90>,<alchemistry:ingot:60>],[<alchemistry:ingot:90>,<alchemistry:fission_casing>,<alchemistry:ingot:90>],[<alchemistry:ingot:60>,<alchemistry:ingot:90>,<alchemistry:ingot:60>]]);
+
+# Fusion Core
+recipes.remove(<alchemistry:fusion_core>);
+recipes.addShaped(<alchemistry:fusion_core>, [[<alchemistry:fusion_casing>,<avaritia:resource:4>,<alchemistry:fusion_casing>],[<alchemistry:ingot:104>,<alchemistry:fission_core>,<alchemistry:ingot:104>],[<alchemistry:fusion_casing>,<avaritia:resource:4>,<alchemistry:fusion_casing>]]);
+
+# Fusion Controller
+recipes.remove(<alchemistry:fusion_controller>);
+recipes.addShaped(<alchemistry:fusion_controller>, [[<alchemistry:fusion_casing>,<contenttweaker:essence_of_matter>,<alchemistry:fusion_casing>],[<avaritia:resource:4>,<contenttweaker:ultimate_machine_frame>,<avaritia:resource:4>],[<alchemistry:fusion_casing>,<alchemistry:fission_controller>,<alchemistry:fusion_casing>]]);
+
 print("ENDING Alchemistry.zs");

@@ -410,4 +410,12 @@ addRFToolsEnvironmentalModualeRecipe(<rftools:noteleport_module>,<rftools:syring
 # Creative Screen
 recipes.addShaped(<rftools:creative_screen>, [[<rftools:screen>,<projecte:item.pe_matter>,<rftools:screen>],[<projecte:item.pe_matter>,<contenttweaker:white_matter>,<projecte:item.pe_matter>],[<rftools:screen>,<projecte:item.pe_matter>,<rftools:screen>]]);
 
+# Creative Powercell
+mods.extendedcrafting.TableCrafting.addShaped(<rftools:powercell_creative>,
+[[<enderio:block_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <enderio:block_alloy:6>], 
+[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <divinerpg:molten_furnace>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>], 
+[<thermalfoundation:storage_alloy:6>, <divinerpg:molten_furnace>, <contenttweaker:ultimate_machine_frame>, <divinerpg:molten_furnace>, <thermalfoundation:storage_alloy:6>], 
+[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <galacticraftcore:infinite_battery>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>], 
+[<enderio:block_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <enderio:block_alloy:6>]]);
+
 print("ENDING RFTools.zs");

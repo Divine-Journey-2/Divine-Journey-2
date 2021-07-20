@@ -614,4 +614,12 @@ reinforced_machine_accelerator.setToolLevel(2);
 reinforced_machine_accelerator.setBlockSoundType(<soundtype:metal>);
 reinforced_machine_accelerator.register();
 
+var ultimate_machine_frame = VanillaFactory.createBlock("ultimate_machine_frame", <blockmaterial:rock>);
+ultimate_machine_frame.setBlockHardness(10.0);
+ultimate_machine_frame.setBlockResistance(8.0);
+ultimate_machine_frame.setToolClass("pickaxe");
+ultimate_machine_frame.setToolLevel(3);
+ultimate_machine_frame.setBlockSoundType(<soundtype:glass>);
+ultimate_machine_frame.register();
+
 print("ENDING ContentTweakerBlocks.zs");

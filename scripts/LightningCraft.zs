@@ -403,4 +403,12 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:
 mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:rod:9>, 8000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:plate:9>, 8000);
 
+# Creative Lightning Cell
+mods.extendedcrafting.TableCrafting.addShaped(0, <lightningcraft:lightning_cell:3>,
+[[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:material:9>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>], 
+[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>], 
+[<lightningcraft:material:9>, <lightningcraft:lightning_cell:2>, <integrateddynamics:creative_energy_battery>, <lightningcraft:lightning_cell:2>, <lightningcraft:material:9>], 
+[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>], 
+[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:material:9>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>]]);
+
 print("ENDING LightningCraft.zs");

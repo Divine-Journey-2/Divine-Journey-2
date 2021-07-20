@@ -601,4 +601,28 @@ function(out,ins,cInfo) {
 	}
 }, null);
 
+# Creative Energy Cube
+mods.extendedcrafting.TableCrafting.addShaped(<mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}),
+[[<alchemistry:ingot:108>, <plustic:osgloglasblock>, <alchemistry:ingot:100>, <plustic:osgloglasblock>, <alchemistry:ingot:108>], 
+[<plustic:osgloglasblock>, <mekanism:energycube>, <mekanism:energycube>, <mekanism:energycube>, <plustic:osgloglasblock>], 
+[<alchemistry:ingot:100>, <mekanism:energycube>, <immersiveengineering:metal_device0:3>, <mekanism:energycube>, <alchemistry:ingot:100>], 
+[<plustic:osgloglasblock>, <mekanism:energycube>, <mekanism:energycube>, <mekanism:energycube>, <plustic:osgloglasblock>], 
+[<alchemistry:ingot:108>, <plustic:osgloglasblock>, <alchemistry:ingot:100>, <plustic:osgloglasblock>, <alchemistry:ingot:108>]]);
+
+# Creative Fluid Tank
+mods.extendedcrafting.TableCrafting.addShaped(<mekanism:machineblock2:11>.withTag({tier: 4}),
+[[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>], 
+[<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>], 
+[<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <draconicevolution:creative_rf_source>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>], 
+[<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>], 
+[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>]]);
+
+# Creative Gas Tank
+mods.extendedcrafting.TableCrafting.addShaped(<mekanism:gastank>.withTag({tier: 4}),
+[[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
+[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
+[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <draconicevolution:creative_rf_source>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
+[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
+[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>]]);
+
 print("ENDING Mekanism.zs");

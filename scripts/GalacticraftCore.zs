@@ -494,9 +494,19 @@ recipes.addShapedMirrored(<galacticraftcore:basic_item:20>, [[<contenttweaker:ch
 # Infinite Battery
 mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_battery>,
 [[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>], 
-[<projecte:item.pe_matter:1>, <galacticraftcore:battery>, <galacticraftcore:battery>, <galacticraftcore:battery>, <projecte:item.pe_matter:1>], 
-[<contenttweaker:white_matter>, <galacticraftcore:battery>, <extrautils2:passivegenerator:6>, <galacticraftcore:battery>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <galacticraftcore:battery>, <galacticraftcore:battery>, <galacticraftcore:battery>, <contenttweaker:white_matter>], 
+[<projecte:item.pe_matter:1>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <projecte:item.pe_matter:1>], 
+[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <extrautils2:passivegenerator:6>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>], 
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
+
+# Infinite Oxygen Supply
+mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>,
+[[<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>], 
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:infinite_battery>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
+[<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
+
+
 
 print("ENDING GalacticraftCore.zs");

@@ -709,4 +709,12 @@ mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);
 recipes.remove(<enderio:item_dark_steel_shears>);
 recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_ingot:6>,null],[<ore:plankWood>,<minecraft:string>,<enderio:item_alloy_ingot:6>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
 
+# Creative Capacitor Bank
+mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
+[[<enderio:block_alloy:6>, <enderio:block_alloy:6>, <solarflux:solar_panel_draconic>, <enderio:block_alloy:6>, <enderio:block_alloy:6>], 
+[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>], 
+[<enderio:item_material:44>, <enderio:item_capacitor_stellar>, <quantumflux:quibitcluster>, <enderio:item_capacitor_stellar>, <enderio:item_material:44>], 
+[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>], 
+[<enderio:block_alloy:6>, <enderio:block_alloy:6>, <ore:skullSentientEnder>, <enderio:block_alloy:6>, <enderio:block_alloy:6>]]);
+
 print("ENDING EnderIO.zs");

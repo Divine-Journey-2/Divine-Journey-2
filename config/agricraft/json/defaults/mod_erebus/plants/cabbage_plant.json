@@ -1,0 +1,68 @@
+{
+  "path": "mod_erebus/plants/cabbage_plant.json",
+  "enabled": true,
+  "id": "erebus:cabbage_plant",
+  "plant_name": "Cabbage",
+  "seed_name": "Cabbage Seeds",
+  "seed_items": [
+    {
+      "item": "erebus:cabbage_seeds",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "Cabbage Seeds."
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": false,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.1,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 2,
+        "chance": 0.9,
+        "required": true,
+        "item": "erebus:erebus_food",
+        "meta": 15,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "farmland_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "hash",
+    "seed_texture": "erebus:items/cabbage_seeds",
+    "plant_textures": [
+      "erebus:blocks/crop_cabbage_0",
+      "erebus:blocks/crop_cabbage_1",
+      "erebus:blocks/crop_cabbage_2",
+      "erebus:blocks/crop_cabbage_3"
+    ]
+  }
+}

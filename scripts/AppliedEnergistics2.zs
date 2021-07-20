@@ -385,4 +385,14 @@ for i in 0 to 4 {
 recipes.remove(<appliedenergistics2:entropy_manipulator>);
 recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}), [[null,<appliedenergistics2:energy_cell>,<appliedenergistics2:fluix_block>],[null,<enderio:item_alloy_ingot:6>,<contenttweaker:operation_processor>],[<enderio:item_alloy_ingot:6>,null,null]]);
 
+# Creative Energy Cell
+mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_energy_cell>,
+[[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
+[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <solarflux:solar_panel_chaotic>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <draconicevolution:draconium_capacitor:2>, <projecte:item.pe_klein_star:5>, <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}), <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
+[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
+[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>]]);
+
 print("ENDING AppliedEnergistics2.zs");

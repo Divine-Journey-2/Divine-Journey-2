@@ -98,4 +98,8 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 <erebus:materials:9>.addTooltip(format.white("- Locusts (in Elysian Fields and Subterranean Savannahs)"));
 <erebus:materials:9>.addTooltip(format.white("- Punchrooms (in Fungal Forests as an uncommon drop)"));
 
+# Cabbage Seeds Tooltip
+<erebus:cabbage_seeds>.addTooltip(format.white("Break any tallgrass in Erebus to obtain."));
+<erebus:cabbage_seeds>.addTooltip(format.white("Swamp Plants always drop these."));
+
 print("ENDING Erebus.zs");

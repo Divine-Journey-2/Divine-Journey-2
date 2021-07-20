@@ -113,4 +113,10 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 144, <bigreactors:
 mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 1296, <bigreactors:blockblutonium>, 32000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:blutonium> * 144, <bigreactors:dustblutonium>, 4000);
 
+# Reactor Creative Coolant Port
+recipes.addShaped(<bigreactors:reactorcreativecoolantport>, [[<bigreactors:reactorcasing>,<alchemistry:ingot:118>,<bigreactors:reactorcasing>],[<tconstruct:materials:50>,<bigreactors:reactorcoolantport>,<tconstruct:materials:50>],[<bigreactors:reactorcasing>,<alchemistry:ingot:118>,<bigreactors:reactorcasing>]]);
+
+# Turbine Creative Steam Generator
+recipes.addShaped(<bigreactors:turbinecreativesteamgenerator>, [[<bigreactors:turbinehousing>,<alchemistry:ingot:118>,<bigreactors:turbinehousing>],[<tconstruct:materials:50>,<bigreactors:turbinefluidport>,<tconstruct:materials:50>],[<bigreactors:turbinehousing>,<alchemistry:ingot:118>,<bigreactors:turbinehousing>]]);
+
 print("ENDING ExtremeReactors.zs");

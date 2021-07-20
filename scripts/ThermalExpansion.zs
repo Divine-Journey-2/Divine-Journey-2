@@ -500,4 +500,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>
 [<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
 
+# Reservoir (Creative)
+mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>.withTag({}),
+[[null, null, <alchemistry:ingot:110>, null, null], 
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null], 
+[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}), null], 
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null], 
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
+
 print("ENDING ThermalExpansion.zs");

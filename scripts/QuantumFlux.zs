@@ -118,4 +118,12 @@ recipes.addShaped(<quantumflux:linkingcard>, [[<enderio:item_alloy_ingot:6>,<end
 recipes.remove(<quantumflux:imaginarytime>);
 # recipe in config/brandon3055/CustomFusionRecipes.json
 
+# Creative Quibit Cluster
+mods.extendedcrafting.TableCrafting.addShaped(<quantumflux:quibitcluster>,
+[[<quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>], 
+[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>], 
+[<quantumflux:darkstone>, <quantumflux:quibitcluster:5>, <rftools:powercell_creative>, <quantumflux:quibitcluster:5>, <quantumflux:darkstone>], 
+[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>], 
+[<quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>]]);
+
 print("ENDING QuantumFlux.zs");

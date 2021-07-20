@@ -434,4 +434,12 @@ recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conve
 recipes.remove(<immersiveengineering:metal_device1:13>);
 recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagriculture:soul_glass>,<immersiveengineering:material:26>,<mysticalagriculture:soul_glass>],[<mysticalagriculture:soul_glass>,<mysticalagriculture:crafting:36>,<mysticalagriculture:soul_glass>],[<ore:plankTreatedWood>,<immersiveengineering:material:8>,<ore:plankTreatedWood>]]);
 
+# Creative Capacitor
+mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,
+[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>], 
+[<alchemistry:ingot:114>, <immersiveengineering:metal_device0:2>, <lightningcraft:lightning_cell:3>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:114>], 
+[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>]]);
+
 print("ENDING ImmersiveEngineering.zs");

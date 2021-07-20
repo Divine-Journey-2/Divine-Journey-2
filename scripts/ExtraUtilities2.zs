@@ -548,4 +548,32 @@ recipes.addShapedMirrored(<extrautils2:lawsword>, [[null,<extrautils2:opinium:8>
 # Creative Mill
 recipes.addShaped(<extrautils2:passivegenerator:6> * 4, [[<extrautils2:passivegenerator:8>,<contenttweaker:white_matter>,<extrautils2:passivegenerator:8>],[<contenttweaker:white_matter>,<danknull:dank_null_6>,<contenttweaker:white_matter>],[<extrautils2:passivegenerator:8>,<contenttweaker:white_matter>,<extrautils2:passivegenerator:8>]]);
 
+# Creative Energy Source
+mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>,
+[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>], 
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
+[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>]]);
+
+# Creative Drum
+mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:drum:4>,
+[[<alchemistry:ingot:112>, <extrautils2:drum:3>, <extrautils2:drum:3>, <extrautils2:drum:3>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:reactorcreativecoolantport>, <extrautils2:drum:3>, <alchemistry:ingot:57>], 
+[<alchemistry:ingot:112>, <extrautils2:drum:3>, <draconicevolution:creative_rf_source>, <extrautils2:drum:3>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:turbinecreativesteamgenerator>, <extrautils2:drum:3>, <alchemistry:ingot:57>], 
+[<alchemistry:ingot:112>, <extrautils2:drum:3>, <extrautils2:drum:3>, <extrautils2:drum:3>, <alchemistry:ingot:112>]]);
+
+# Creative Chest
+mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativechest>,
+[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:116>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <alchemistry:ingot:116>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <draconicadditions:chaos_stabilizer_core>, <extrautils2:lawsword>, <draconicadditions:chaos_stabilizer_core>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <avaritia:block_resource>, <botania:pool:1>, <avaritia:block_resource>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_order>, <avaritia:resource:6>, <contenttweaker:essence_of_order>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:116>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <alchemistry:ingot:116>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>], 
+[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>]]);
+
 print("ENDING ExtraUtilities2.zs");

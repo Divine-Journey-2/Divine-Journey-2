@@ -1329,11 +1329,11 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
-#recipes.addShaped(<contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,???,<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]]);
+recipes.addShaped(<contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<avaritia:resource:3>,<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]]);
 <contenttweaker:celestial_crystal_core>.addTooltip(format.white("If using the Celestial Crystal recipe,"));
 <contenttweaker:celestial_crystal_core>.addTooltip(format.white("the input Celestial Crystal has to have:"));
 <contenttweaker:celestial_crystal_core>.addTooltip(format.blue("Size >= 700") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
-<contenttweaker:celestial_crystal_core>.addTooltip(format.white("Before unlocking the ??? recipe,"));
+<contenttweaker:celestial_crystal_core>.addTooltip(format.white("Before unlocking the Neutronium Nugget recipe,"));
 <contenttweaker:celestial_crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
 
 # Photovoltaic Cell VII
@@ -1554,7 +1554,7 @@ WitchesRitual.addRecipe("cycles", [<contenttweaker:essence_of_cycles>], [<conten
 mods.avaritia.Compressor.add("essence_of_enclosement", <contenttweaker:essence_of_enclosement>, 100, <mekanism:cardboardbox>, true);
 
 # Essence of Space
-mods.botania.ElvenTrade.addRecipe([<contenttweaker:essence_of_space>], [<contenttweaker:perfect_vacuum>,<contenttweaker:essence_of_enclosement>]);
+mods.botania.ElvenTrade.addRecipe([<contenttweaker:essence_of_space>], [<contenttweaker:perfect_vacuum>,<contenttweaker:essence_of_enclosement>, <contenttweaker:essence_of_opening>]);
 
 # Liquid Space
 MagmaCrucible.addRecipe(<liquid:space> * 200, <contenttweaker:essence_of_space>, 8000);
@@ -1674,7 +1674,7 @@ recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_
 recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_m100>]);
 
 # Essence of Destruction
-mods.thaumcraft.Infusion.registerRecipe("essence_of_destruction", "", <contenttweaker:essence_of_destruction>, 10, [<aspect:perditio> * 250,<aspect:diabolus> * 100,<aspect:motus> * 100,<aspect:tenebrae> * 50,<aspect:praecantatio> * 50,<aspect:luna> * 20], <projecte:item.pe_destruction_catalyst>, [<contenttweaker:antimatter_cluster>,<thaumcraft:primal_crusher>,<contenttweaker:antimatter_cluster>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:antimatter_cluster>]);
+mods.thaumcraft.Infusion.registerRecipe("essence_of_destruction", "", <contenttweaker:essence_of_destruction>, 10, [<aspect:perditio> * 250,<aspect:diabolus> * 100,<aspect:motus> * 100,<aspect:tenebrae> * 50,<aspect:praecantatio> * 50,<aspect:luna> * 20], <projecte:item.pe_destruction_catalyst>, [<thaumcraft:primal_crusher>,<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:antimatter_cluster>]);
 
 # Essence of Peace
 mods.astralsorcery.Altar.addTraitAltarRecipe("astralsorcery:shaped/internal/altar/essence_of_peace", <contenttweaker:essence_of_peace>, 7500, 100,
@@ -1770,6 +1770,41 @@ recipes.addShaped(<contenttweaker:photovoltaic_cell_x> * 3, [[<ore:blockGlassGra
 # Photovoltaic Cell XI
 recipes.addShaped(<contenttweaker:photovoltaic_cell_xi> * 3, [[<ore:blockGlassWhite>,<ore:blockGlassWhite>,<ore:blockGlassWhite>],[<contenttweaker:essence_of_infinity>,<contenttweaker:essence_of_infinity>,<contenttweaker:essence_of_infinity>],[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>]]);
 
+# Chicken Nugget
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, null, 80, 256, [<ore:foodFlour>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, [<minecraft:chicken>, <ore:foodFlour>], 4000);
+IEAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>, 160);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>.firstItem, 4000);
 
+# Burger
+val cheeses = [<actuallyadditions:item_food>,<galacticraftcore:food:4>,<divinerpg:cheese>,<galacticraftcore:cheese_curd>] as IItemStack[];
+for c in cheeses {
+	recipes.addShapedMirrored(<contenttweaker:burger>, [[null,<actuallyadditions:item_food:10>,null],[<erebus:erebus_food:15>,<minecraft:cooked_beef>,c],[null,<actuallyadditions:item_food:10>,null]]);
+}
+
+# Taco
+val doughs = [<actuallyadditions:item_misc:4>,<actuallyadditions:item_misc:9>] as IItemStack[];
+for d in doughs {
+	recipes.addShapedMirrored(<contenttweaker:taco>, [[<erebus:erebus_food:15>,<minecraft:beetroot>,d],[<minecraft:cooked_porkchop>,<minecraft:cooked_chicken>,d],[d,d,d]]);
+}
+
+# Cosmic Neutronium Nugget
+recipes.addShaped(<contenttweaker:cosmic_neutronium_nugget>, [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],[<avaritia:resource:3>,<contenttweaker:chicken_nugget>,<avaritia:resource:3>],[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>]]);
+
+# Cosmic Neutronium Burger
+recipes.addShaped(<contenttweaker:cosmic_neutronium_burger>, [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],[<avaritia:resource:3>,<contenttweaker:burger>,<avaritia:resource:3>],[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>]]);
+
+# Cosmic Neutronium Taco
+recipes.addShaped(<contenttweaker:cosmic_neutronium_taco>, [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],[<avaritia:resource:3>,<contenttweaker:taco>,<avaritia:resource:3>],[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>]]);
+
+# Essence of Opening
+mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_opening>, 1000, <minecraft:wooden_door>, true);
+
+# Ultiamte Machine Frame
+recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:3>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:3>,<rftools:creative_screen>]]);
+
+# Nature's Blessing
+mods.botania.RuneAltar.addRecipe(<contenttweaker:natures_blessing>, [<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_mana>,<contenttweaker:rune_of_deception>], 1000000);
+<contenttweaker:natures_blessing>.addTooltip(format.white("Requires 1 full Mana Pool to craft."));
 
 print("ENDING ContentTweakerRecipes.zs");

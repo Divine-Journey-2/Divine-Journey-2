@@ -48252,7 +48252,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Krypton-currencies",
-          "desc:8": "Break down Hafnium into Krypton and make some Kypton Lights!\n\n\nAnd just to be saf, don\u0027t let Superman touch these."
+          "desc:8": "Break down Hafnium into Krypton and make some Kypton Lights!\n\n\nAnd just to be safe, don\u0027t let Superman touch these."
         }
       },
       "tasks:9": {
@@ -48386,7 +48386,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "No more problEMC",
-          "desc:8": "Craft n Energy Collector MK2! This machine can generate a passive maximum of 12 EMC per second up to a maximum of 30,000 EMC at a light level of 15."
+          "desc:8": "Craft an Energy Collector MK2! This machine can generate a passive maximum of 12 EMC per second up to a maximum of 30,000 EMC at a light level of 15."
         }
       },
       "tasks:9": {
@@ -48450,7 +48450,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "How to avoid an EMCistential crisis",
-          "desc:8": "Craft n Energy Collector MK1 to convert light directly into EMC! It passively generates 4 EMC every 1 second up to a maximum of 10,000 EMC depending on the highest light level. When placed adjacent to an Energy Condenser or an Anti-Matter Relay MK it will transfer the EMC into that machine."
+          "desc:8": "Craft an Energy Collector MK1 to convert light directly into EMC! It passively generates 4 EMC every 1 second up to a maximum of 10,000 EMC depending on the highest light level. When placed adjacent to an Energy Condenser or an Anti-Matter Relay MK it will transfer the EMC into that machine."
         }
       },
       "tasks:9": {
@@ -49192,7 +49192,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Setup the SystEMC",
-          "desc:8": "Craft n Energy Collector MK3! In strong lighting, or if placed in the Nether, it will generate a passive 40 EMC per second up to a maximum of 60,000 EMC."
+          "desc:8": "Craft an Energy Collector MK3! In strong lighting, or if placed in the Nether, it will generate a passive 40 EMC per second up to a maximum of 60,000 EMC."
         }
       },
       "tasks:9": {
@@ -49396,7 +49396,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Lightspeed, squared",
-          "desc:8": "Upgrade your Anti-Matter Relayall the way to MK3! When transferring, it gives a 10 EMC per second bonus, making it really viable in a power-flower setup. It can transfer up to 640 EMC/s and can store up to 10,000,000 EMC.\n\nA power-flower setup consists of an Energy Condenser MK2 in the center, Anti-Matter Relays on 5 sides except the top (so it can still be accessed), Energy Collectors around the whole thing, and Glowstone around them.\n\nThis will produce and provide EMC for the central Energy Condenser to create any item you specify out of just light! Wonderful."
+          "desc:8": "Upgrade your Anti-Matter Relay all the way to MK3! When transferring, it gives a 10 EMC per second bonus, making it really viable in a power-flower setup. It can transfer up to 640 EMC/s and can store up to 10,000,000 EMC.\n\nA power-flower setup consists of an Energy Condenser MK2 in the center, Anti-Matter Relays on 5 sides except the top (so it can still be accessed), Energy Collectors around the whole thing, and Glowstone around them.\n\nThis will produce and provide EMC for the central Energy Condenser to create any item you specify out of just light! Wonderful."
         }
       },
       "tasks:9": {
@@ -49731,7 +49731,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "STUFF IT ALL IN",
-          "desc:8": "The Energy Condenser MK2 is an upgraded version of the Energy Condenser. In addition to being substantially faster than the Energy Condenser, the MK2 also has a separate inventory for output. This separate inventory Item Conduits push into and extract from the machine."
+          "desc:8": "The Energy Condenser MK2 is an upgraded version of the Energy Condenser. In addition to being substantially faster than the Energy Condenser, the MK2 also has a separate inventory for output. Items can only be extracted from the output side, and inputed on the input side."
         }
       },
       "tasks:9": {
@@ -50000,7 +50000,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "But in the end it doesn\u0027t even Matter",
-          "desc:8": "Charge it up with the \u0027V\u0027 key by default and destroy all the Matter! It doesn\u0027t even Matter!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI TRIED SO HARD AND GOT SO FAR!\nBUT IN THE END IT DOESN\u0027T EVEN MATTER!\nI HAD TO FALL TO LOSE IT ALLLL!\nBUT IN THE END IT DOESN\u0027T EVEN MATTER-ER-eeer!"
+          "desc:8": "Charge it up with the ProjectE Charge key, which defaults to \u0027V\u0027, and destroy all the Matter! It doesn\u0027t even Matter!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nI TRIED SO HARD AND GOT SO FAR!\nBUT IN THE END IT DOESN\u0027T EVEN MATTER!\nI HAD TO FALL TO LOSE IT ALLLL!\nBUT IN THE END IT DOESN\u0027T EVEN MATTER-ER-eeer!"
         }
       },
       "tasks:9": {
@@ -50072,7 +50072,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "WayOfTime\u0027s inspiration",
-          "desc:8": "Create all the Red Matter Tools listed to the right!\n\nYou can charge any of these tools with the \u0027V\u0027 key by default for a special effect:\n\n- The Red Matter Pickaxe will also break up to 32 ore blocks of the same type with a Right Click. If it is used on a block that is not an Ore, it will scan the area for an ore, and use its ability on the nearest one.\n\n- The Red Matter Shovel will dig a larger area, proportional to its charge level. It requires EMC supplied from a Klein Star or Alchemical Fuel.\n\n- The Red Matter Hammer will destroy blocks in a larger area, but it can only be used on Stone-like blocks. It requires EMC from a Klein Star, or Alchemical Fuel to function."
+          "desc:8": "Create all the Red Matter Tools listed to the right!\n\nYou can charge any of these tools with the ProjectE Charge key, which defaults to \u0027V\u0027, for a special effect:\n\n- The Red Matter Pickaxe will also break up to 32 ore blocks of the same type with a Right Click. If it is used on a block that is not an Ore, it will scan the area for an ore, and use its ability on the nearest one.\n\n- The Red Matter Shovel will dig a larger area, proportional to its charge level. It requires EMC supplied from a Klein Star or Alchemical Fuel.\n\n- The Red Matter Hammer will destroy blocks in a larger area, but it can only be used on Stone-like blocks. It requires EMC from a Klein Star, or Alchemical Fuel to function."
         }
       },
       "tasks:9": {
@@ -50164,7 +50164,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Ethics of Pacifism",
-          "desc:8": "Create all the Red Matter Tools listed on the right!\n\nYou can charge any of these tools with the \u0027V\u0027 key by default for a special effect:\n\n- The Red Matter Sword will cast an Area of Effect attack and consume Glowstone Dust from the player\u0027s inventory.\n\n- The Red Matter Axe will break all wood in a range proportional to its charge level and consume Redstone Dust from the player\u0027s inventory.\n\n- The Red Matter Hoe will till a larger area.\n\n- The Red Matter Shears will make Sheep that are sheared drop about 8 wool, rather than 1-3. Unfortunately this will also deal damage to the Sheep. However it will also rarely clone the Sheep! It can also be used near trees, which will drop all Leaf blocks in the area.\n\n\n\n"
+          "desc:8": "Create all the Red Matter Tools listed on the right!\n\nYou can charge any of these tools with the ProjectE Charge key, which defaults to \u0027V\u0027, for a special effect:\n\n- The Red Matter Sword will cast an Area of Effect attack and consume Glowstone Dust from the player\u0027s inventory.\n\n- The Red Matter Axe will break all wood in a range proportional to its charge level and consume Redstone Dust from the player\u0027s inventory.\n\n- The Red Matter Hoe will till a larger area.\n\n- The Red Matter Shears will make Sheep that are sheared drop about 8 wool, rather than 1-3. Unfortunately this will also deal damage to the Sheep. However it will also rarely clone the Sheep! It can also be used near trees, which will drop all Leaf blocks in the area.\n\n\n\n"
         }
       },
       "tasks:9": {
@@ -50485,7 +50485,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "It\u0027s a Matter of Time",
-          "desc:8": "The Watch of Flowing Time is a really powerful item that can speed up machines around you at a set rate and slow down mobs at the same time. Press \u0027V\u0027 to charge it up, and while it\u0027s in your hotbar, it will speed up machines around you in a 9x9x9 area. You can also place it in a Dark Matter Pedestal to have the same effect.\n\nAnd there is one other thing it\u0027s capable of... Speeding up or even reversing time! Right Click to toggle between \"Off\", \"Fast-Forward\" and \"Rewind\" modes!\n\nIf you\u0027re playing on a server, don\u0027t be surprised if it\u0027s disabled because of this..."
+          "desc:8": "The Watch of Flowing Time is a really powerful item that can speed up the tick rate of nearby blocks. Press the ProjectE Charge key, which defaults to \u0027V\u0027, to charge it up, and while it\u0027s in your hotbar, it will speed up the passing of the day.\n\nIt has two modes, too - speeding up or reversing the day! Right Click to toggle between \"Off\", \"Fast-Forward\" and \"Rewind\" modes.\n\nMore importantly, while placed it in an activated Dark Matter Pedestal it will increase the tick rate by +18 for all blocks within a 4 block radius! The pedestal is activated by right clicking it with an open hand.\nIf you\u0027re playing on a server, don\u0027t be surprised if it\u0027s disabled because of this..."
         }
       },
       "tasks:9": {
@@ -126522,7 +126522,7 @@
         "21:10": {
           "sizeX:3": 24,
           "x:3": 160,
-          "y:3": 112,
+          "y:3": 160,
           "id:3": 687,
           "sizeY:3": 24
         },
@@ -126647,8 +126647,8 @@
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": 158,
-          "y:3": 64,
+          "x:3": 160,
+          "y:3": 112,
           "id:3": 705,
           "sizeY:3": 24
         }

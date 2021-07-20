@@ -312,4 +312,14 @@ recipes.addShaped(<evilcraft:spikey_claws>, [[<evilcraft:dark_spike>,<evilcraft:
 recipes.remove(<evilcraft:biome_extract>);
 recipes.addShaped(<evilcraft:biome_extract>, [[null,<evilcraft:dark_gem>,null],[<astralsorcery:itemcraftingcomponent:3>,null,<astralsorcery:itemcraftingcomponent:3>],[<astralsorcery:itemcraftingcomponent:3>,<thaumcraft:jar_normal>,<astralsorcery:itemcraftingcomponent:3>]]);
 
+# Creative Blood Droplet
+mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:creative_blood_drop>.withTag({}),
+[[null, null, null, <bloodmagic:decorative_brick>, null, null, null], 
+[null, null, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, null, null], 
+[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null], 
+[null, <evilcraft:blood_orb:1>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <thermalexpansion:reservoir:32000>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <evilcraft:blood_orb:1>, null], 
+[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null], 
+[null, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, null], 
+[null, null, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, null, null]]);
+
 print("ENDING EvilCraft.zs");

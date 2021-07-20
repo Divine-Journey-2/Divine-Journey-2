@@ -192,4 +192,13 @@ mods.integrateddynamics.MechanicalSqueezer.removeRecipe(<minecraft:diamond_ore>)
 mods.integrateddynamics.MechanicalSqueezer.removeRecipe(<minecraft:emerald_ore>);
 mods.integrateddynamics.MechanicalSqueezer.removeRecipe(<minecraft:coal_ore>);
 */
+
+# Creative Energy Battery
+mods.extendedcrafting.TableCrafting.addShaped(<integrateddynamics:creative_energy_battery>,
+[[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log_filled>, <integrateddynamics:crystalized_menril_block>], 
+[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>, <integrateddynamics:energy_battery>, <integrateddynamics:energy_battery>, <integrateddynamics:crystalized_menril_block>], 
+[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>, <appliedenergistics2:creative_energy_cell>, <integrateddynamics:energy_battery>, <integrateddynamics:crystalized_menril_block>], 
+[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:energy_battery>, <integrateddynamics:energy_battery>, <integrateddynamics:energy_battery>, <integrateddynamics:crystalized_menril_block>], 
+[<integrateddynamics:crystalized_menril_block>, <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log_filled>, <integrateddynamics:menril_log_filled>, <integrateddynamics:crystalized_menril_block>]]);
+
 print("ENDING IntegratedDynamics.zs");

@@ -1,0 +1,32 @@
+{
+    "machine": "high_voltage_plasmafier",
+    "registryName": "high_voltage_plasmafier_avaritia_cosmic_meatballs",
+    "recipeTime": 600,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 16000000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:cosmic_neutronium_nugget"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:cosmic_neutronium_burger"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:cosmic_neutronium_taco"
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "avaritia:cosmic_meatballs"
+        }
+    ]
+}

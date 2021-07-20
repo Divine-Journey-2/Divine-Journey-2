@@ -51,11 +51,11 @@ recipes.addShaped(<solarflux:solar_panel_7>, [[<solarflux:photovoltaic_cell_5>,<
 
 # Photovoltaic Cell VI
 recipes.remove(<solarflux:photovoltaic_cell_6>);
-recipes.addShaped(<solarflux:photovoltaic_cell_6> * 3, [[<ore:blockGlassGreen>,<ore:blockGlassGreen>,<ore:blockGlassGreen>],[<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>],[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>]]);
+recipes.addShaped(<solarflux:photovoltaic_cell_6> * 3, [[<ore:blockGlassGreen>,<ore:blockGlassGreen>,<ore:blockGlassGreen>],[<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>,<contenttweaker:sparkling_aquamarine>],[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>]]);
 
 # Solar Panel VIII
 recipes.remove(<solarflux:solar_panel_8>);
-recipes.addShaped(<solarflux:solar_panel_8>, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:iteminfusedglass>,<solarflux:solar_panel_7>]]);
+recipes.addShaped(<solarflux:solar_panel_8>, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>]]);
 
 # Wyvern Solar Panel
 recipes.remove(<solarflux:solar_panel_wyvern>);

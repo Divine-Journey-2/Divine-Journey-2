@@ -452,4 +452,17 @@ recipes.addShapedMirrored(<bewitchment:cold_iron_hoe>, [[<bewitchment:cold_iron_
 recipes.removeShapeless(<bewitchment:scorned_bricks>, [<ore:obsidian>,<ore:obsidian>,<ore:netherrack>,<ore:netherrack>]);
 recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>],[<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>],[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>]]);
 
+# Blessed Stone
+mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
+[[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bloodmagic:sacrificial_dagger:1>, <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>]]);
+
+
 print("ENDING Bewitchment.zs");

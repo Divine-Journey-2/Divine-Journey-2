@@ -137,4 +137,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemfluxpack>.with
 [<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
 [<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>]]);
 
+# Creative Jetpack
+mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemjetpack>.withTag({Energy: 200000, JetpackParticle: 0}),
+[[null, <botania:storage:2>, null, <botania:storage:2>, null], 
+[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, null, <thermalfoundation:storage_alloy:6>, <botania:storage:2>], 
+[<botania:storage:2>, <tconstruct:metal:2>, <simplyjetpacks:itemfluxpack>, <tconstruct:metal:2>, <botania:storage:2>], 
+[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, <projecte:item.pe_arcana_ring>.noReturn(), <thermalfoundation:storage_alloy:6>, <botania:storage:2>], 
+[null, <botania:storage:2>, null, <botania:storage:2>, null]]);
+
 print("ENDING SimplyJetpacks.zs");

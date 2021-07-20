@@ -186,7 +186,7 @@
     },
     {
       "item": "minecraft:fish|0",
-      "emc": 0
+      "emc": 16
     },
     {
       "item": "OD|fish",
@@ -1747,6 +1747,46 @@
     {
       "item": "minecraft:dragon_breath|0",
       "emc": 3642
+    },
+    {
+      "item": "minecraft:ice|0",
+      "emc": 1
+    },
+    {
+      "item": "mysticalagriculture:dye_essence|0",
+      "emc": 32
+    },
+    {
+      "item": "draconicevolution:draconic_ingot|0",
+      "emc": 8192
+    },
+    {
+      "item": "alchemistry:ingot|30",
+      "emc": 512
+    },
+    {
+      "item": "contenttweaker:electrotine|0",
+      "emc": 64
+    },
+    {
+      "item": "tconstruct:materials|0",
+      "emc": 3
+    },
+    {
+      "item": "tinkersaether:valkyrie_ingot|0",
+      "emc": 1024
+    },
+    {
+      "item": "twilightforest:knightmetal_ingot|0",
+      "emc": 128
+    },
+    {
+      "item": "twilightforest:fiery_ingot|0",
+      "emc": 256
+    },
+    {
+      "item": "contenttweaker:relic_ingot|0",
+      "emc": 64
     }
   ]
 }

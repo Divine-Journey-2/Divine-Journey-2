@@ -354,8 +354,20 @@ recipes.remove(<bewitchment:silver_nugget>);
 recipes.remove(<immersiveengineering:metal:23>);
 recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials:45>]);
 
-# Lead Ignot
+# Lead Ingot
 recipes.remove(<galacticraftplanets:atomic_battery>);
-<ore:ingotLead>.remove(<galacticraftplanets:basic_item_venus:1>);
+<ore:ingotLead>.removeItems([<galacticraftplanets:basic_item_venus:1>,<erebus:materials:44>,<alchemistry:ingot:82>,<immersiveengineering:metal:2>]);
+mods.appliedenergistics2.Grinder.removeRecipe(<galacticraftplanets:basic_item_venus:1>);
+mods.appliedenergistics2.Grinder.removeRecipe(<erebus:materials:44>);
+mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:82>);
+mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:2>);
+
+# Electrum Ingot
+<ore:ingotLead>.remove(<immersiveengineering:metal:7>);
+mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:7>);
+
+# Nickel Ingot
+<ore:ingotNickel>.remove(<alchemistry:ingot:28>);
+mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

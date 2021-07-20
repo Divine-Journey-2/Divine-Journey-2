@@ -654,6 +654,17 @@ addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>
 # Jade
 mods.enderio.SagMill.removeRecipe(<erebus:ore_jade>);
 mods.enderio.SagMill.addRecipe([<erebus:materials:1> * 2, <erebus:materials:1>, <erebus:umberstone:1>], [100, 50, 15], <erebus:ore_jade>, "CHANCE_ONLY");
+# more Erebus Ore fixes necessary
+
+# Ultimate Ingot
+IECrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4000);
+AACrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
+Grinder.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 2000);
+EUCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
+mods.enderio.SagMill.addRecipe([<extendedcrafting:material:32> * 64], [100], <extendedcrafting:singularity_ultimate>);
+LightningCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
+mods.mekanism.crusher.addRecipe(<extendedcrafting:singularity_ultimate>, <extendedcrafting:material:32> * 64);
 
 
 print("ENDING OreProcessingAdditions.zs");

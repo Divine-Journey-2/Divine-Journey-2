@@ -429,4 +429,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:draconium_capac
 [<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
 [<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>]]);
 
+# Creative RF Source
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:creative_rf_source>,
+[[<draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>, <draconicevolution:energy_crystal:8>, <draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>], 
+[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>], 
+[<draconicevolution:energy_crystal:8>, <contenttweaker:corrupted_dragon_token>, <extrautils2:creativeenergy>, <contenttweaker:corrupted_dragon_token>, <draconicevolution:energy_crystal:8>], 
+[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>], 
+[<draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>, <draconicevolution:energy_crystal:8>, <draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>]]);
+
 print("ENDING DraconicEvolution.zs");
