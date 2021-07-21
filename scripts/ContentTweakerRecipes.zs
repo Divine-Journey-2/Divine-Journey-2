@@ -1822,12 +1822,12 @@ recipes.addShaped(<contenttweaker:reinforced_machine_stabilizer>, [[<alchemistry
 mods.astralsorcery.StarlightInfusion.addInfusion(<modularmachinery:blockcasing:4>, <contenttweaker:reinforced_starlight_infused_machine_block>, false, 1.0, 30);
 
 # Neutronium Singularity
-mods.avaritia.Compressor.add("neutronium_singularity", <contenttweaker:neutronium_singularity>, 1000, <avaritia:block_resource>, true);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:block_resource>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Infinite Singularity
-mods.avaritia.Compressor.add("infinite_singularity", <contenttweaker:infinite_singularity>, 1000000000, <avaritia:block_resource:1>, true);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:infinite_singularity>, <avaritia:block_resource:1>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Singularity Singularity
-mods.avaritia.Compressor.add("singularity_singularity", <contenttweaker:singularity_singularity>, 1000000000, <extendedcrafting:singularity_ultimate>, true);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:singularity_singularity>, <extendedcrafting:singularity_ultimate>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
 
 print("ENDING ContentTweakerRecipes.zs");
