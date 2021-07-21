@@ -1231,5 +1231,15 @@ cosmic_neutronium_nugget.register();
 var natures_blessing = VanillaFactory.createItem("natures_blessing");
 natures_blessing.rarity = "RARE";
 natures_blessing.register();
+var neutronium_singularity = VanillaFactory.createItem("neutronium_singularity");
+neutronium_singularity.glowing = true;
+neutronium_singularity.register();
+var infinite_singularity = VanillaFactory.createItem("infinite_singularity");
+infinite_singularity.glowing = true;
+infinite_singularity.register();
+var singularity_singularity = VanillaFactory.createItem("singularity_singularity");
+singularity_singularity.rarity = "EPIC";
+singularity_singularity.glowing = true;
+singularity_singularity.register();
 
 print("ENDING ContentTweakerItems.zs");

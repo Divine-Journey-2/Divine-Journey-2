@@ -596,7 +596,7 @@ addBloodMagicSigilRecipe(<bloodmagic:sigil_teleposition>, <bloodmagic:component:
 # Creative Activation Crystal
 mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:activation_crystal:2>,
 [[null, <alchemistry:ingot:118>, <alchemistry:ingot:118>, null, null], 
-[<alchemistry:ingot:118>, <alchemistry:ingot:118>, <alchemistry:ingot:118>, <alchemistry:ingot:118>, null], 
+[<alchemistry:ingot:118>, <totemic:ceremony_cheat>, <alchemistry:ingot:118>, <alchemistry:ingot:118>, null], 
 [<alchemistry:ingot:118>, <bloodmagic:activation_crystal:1>, <evilcraft:creative_blood_drop>, <bloodmagic:activation_crystal:1>, null], 
 [null, <alchemistry:ingot:118>, <alchemistry:ingot:118>, <alchemistry:ingot:118>, null], 
 [null, null, null, <alchemistry:ingot:118>, <alchemistry:ingot:118>]]);

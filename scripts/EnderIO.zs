@@ -717,4 +717,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({
 [<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>], 
 [<enderio:block_alloy:6>, <enderio:block_alloy:6>, <ore:skullSentientEnder>, <enderio:block_alloy:6>, <enderio:block_alloy:6>]]);
 
+# Creative Buffer
+mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_buffer:3>,
+[[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <solarflux:solar_panel_chaotic>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>], 
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_cap_bank>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
+[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>]]);
+
 print("ENDING EnderIO.zs");

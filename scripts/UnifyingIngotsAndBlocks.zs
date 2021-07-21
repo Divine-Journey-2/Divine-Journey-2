@@ -363,7 +363,7 @@ mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:82>);
 mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:2>);
 
 # Electrum Ingot
-<ore:ingotLead>.remove(<immersiveengineering:metal:7>);
+<ore:ingotElectrum>.remove(<immersiveengineering:metal:7>);
 mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:7>);
 
 # Nickel Ingot

@@ -40,5 +40,12 @@ recipes.remove(<mysticalagradditions:awakened_draconium_seeds>);
 recipes.remove(<mysticalagradditions:special:4>);
 recipes.addShaped(<mysticalagradditions:special:4>, [[<draconicevolution:draconic_block>,<draconicevolution:dragon_heart>,<draconicevolution:draconic_block>],[<draconicevolution:dragon_heart>,<contenttweaker:corrupted_dragon_token>,<draconicevolution:dragon_heart>],[<draconicevolution:draconic_block>,<draconicevolution:dragon_heart>,<draconicevolution:draconic_block>]]);
 
+# Neutronium Seeds
+recipes.remove(<mysticalagradditions:neutronium_seeds>);
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriadditions_neutronium_seeds.json
+
+# Neutronium Crux
+recipes.remove(<mysticalagradditions:special:5>);
+recipes.addShaped(<mysticalagradditions:special:5>, [[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>],[<avaritia:block_resource>,<contenttweaker:white_matter>,<avaritia:block_resource>],[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>]]);
 
 print("ENDING MysticalAgriadditions.zs");

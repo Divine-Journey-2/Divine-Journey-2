@@ -496,7 +496,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:comp
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), 
 [[<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>], 
 [<projecte:item.pe_matter:1>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <projecte:item.pe_matter:1>], 
-[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <simplyjetpacks:itemjetpack>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
 [<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
 

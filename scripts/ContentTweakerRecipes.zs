@@ -1613,7 +1613,9 @@ for c in logic_puzzle_characters {
 }
 
 # Book of Logic
-recipes.addShapeless(<minecraft:written_book>.withTag({pages: ["{\"text\":\"What is the §c§lAge§r, §c§lNumber of friends§r \\u0026 §c§lHeight (in cm)§r of §lSteve§r, §lAlex§r and §lHerobine§r?\\n\\nUse the following 9 statements to figure it out:\"}", "{\"text\":\"1) Herobrine\\u0027s only got one friend, Notch.\\n\\n2) Steve is one year older than Alex.\\n\\n3) Steve and Herobrine are the same height.\"}", "{\"text\":\"4) 20 years ago, Herobrine was twice as old as the combined age of Steve and Alex.\\n\\n5) Steve is accumulating 61 friends every year. Impressive!\"}","{\"text\":\"6) The difference between the number of friends of Alex and Steve is exactly Herobrine\\u0027s height.\\n\\n7) Alex was born 66 cm tall. She gained 4 cm of height every year since then.\"}", "{\"text\":\"8) If every year, starting from now, Herobrine were to double his friend count, then in 11 years he would have 331 fewer friends than Steve. (Remember, Steve also gains friends every year!)\"}", "{\"text\":\"9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\\n\\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an\"}", "{\"text\":\"Essence of Thought in the Crafting Table!\\n\\nGood luck!\"}"], author: "Atricos", title: "§lBook of Logic", resolved: 1 as byte}), [<contenttweaker:essence_of_foundation>,<minecraft:book>]);
+val book_of_logic = <minecraft:written_book>.withTag({pages: ["{\"text\":\"What is the §c§lAge§r, §c§lNumber of friends§r \\u0026 §c§lHeight (in cm)§r of §lSteve§r, §lAlex§r and §lHerobine§r?\\n\\nUse the following 9 statements to figure it out:\"}", "{\"text\":\"1) Herobrine\\u0027s only got one friend, Notch.\\n\\n2) Steve is one year older than Alex.\\n\\n3) Steve and Herobrine are the same height.\"}", "{\"text\":\"4) 20 years ago, Herobrine was twice as old as the combined age of Steve and Alex.\\n\\n5) Steve is accumulating 61 friends every year. Impressive!\"}","{\"text\":\"6) The difference between the number of friends of Alex and Steve is exactly Herobrine\\u0027s height.\\n\\n7) Alex was born 66 cm tall. She gained 4 cm of height every year since then.\"}", "{\"text\":\"8) If every year, starting from now, Herobrine were to double his friend count, then in 11 years he would have 331 fewer friends than Steve. (Remember, Steve also gains friends every year!)\"}", "{\"text\":\"9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\\n\\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an\"}", "{\"text\":\"Essence of Thought in the Crafting Table!\\n\\nGood luck!\"}"], author: "Atricos", title: "§lBook of Logic", resolved: 1 as byte}) as IItemStack;
+recipes.addShapeless(book_of_logic, [<contenttweaker:essence_of_foundation>,<minecraft:book>]);
+mods.jei.JEI.addItem(book_of_logic);
 
 # Essence of Logic
 # If you're here because you're a dirty cheater, feel really-really ashamed of yourself!
@@ -1806,5 +1808,26 @@ recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_s
 # Nature's Blessing
 mods.botania.RuneAltar.addRecipe(<contenttweaker:natures_blessing>, [<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_mana>,<contenttweaker:rune_of_deception>], 1000000);
 <contenttweaker:natures_blessing>.addTooltip(format.white("Requires 1 full Mana Pool to craft."));
+
+# Reinforced Machine Accelerator
+recipes.addShaped(<contenttweaker:reinforced_machine_accelerator>, [[<alchemistry:ingot:104>,<bloodmagic:blood_rune:9>,<alchemistry:ingot:104>],[<bloodmagic:blood_rune:9>,<modularmachinery:blockcasing:4>,<bloodmagic:blood_rune:9>],[<alchemistry:ingot:104>,<bloodmagic:blood_rune:9>,<alchemistry:ingot:104>]]);
+
+# Reinforced Machine Electolyzer
+recipes.addShaped(<contenttweaker:reinforced_machine_electrolyzer>, [[<extendedcrafting:singularity:27>,<mekanism:electrolyticcore>,<extendedcrafting:singularity:27>],[<mekanism:electrolyticcore>,<modularmachinery:blockcasing:4>,<mekanism:electrolyticcore>],[<extendedcrafting:singularity:27>,<mekanism:electrolyticcore>,<extendedcrafting:singularity:27>]]);
+
+# Reinforced Machine Stabilizer
+recipes.addShaped(<contenttweaker:reinforced_machine_stabilizer>, [[<alchemistry:ingot:90>,<draconicevolution:particle_generator:2>,<alchemistry:ingot:90>],[<draconicevolution:particle_generator:2>,<modularmachinery:blockcasing:4>,<draconicevolution:particle_generator:2>],[<alchemistry:ingot:90>,<draconicevolution:particle_generator:2>,<alchemistry:ingot:90>]]);
+
+# Reinforced Starlight Infused Machine Block
+mods.astralsorcery.StarlightInfusion.addInfusion(<modularmachinery:blockcasing:4>, <contenttweaker:reinforced_starlight_infused_machine_block>, false, 1.0, 30);
+
+# Neutronium Singularity
+mods.avaritia.Compressor.add("neutronium_singularity", <contenttweaker:neutronium_singularity>, 1000, <avaritia:block_resource>, true);
+
+# Infinite Singularity
+mods.avaritia.Compressor.add("infinite_singularity", <contenttweaker:infinite_singularity>, 1000000000, <avaritia:block_resource:1>, true);
+
+# Singularity Singularity
+mods.avaritia.Compressor.add("singularity_singularity", <contenttweaker:singularity_singularity>, 1000000000, <extendedcrafting:singularity_ultimate>, true);
 
 print("ENDING ContentTweakerRecipes.zs");

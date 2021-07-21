@@ -243,6 +243,9 @@ recipes.addShapeless(<minecraft:firework_charge>, [<minecraft:fire_charge>,<mine
 # Firework (basic)
 recipes.addShapeless(<minecraft:fireworks>, [<minecraft:firework_charge>,<minecraft:paper>,<immersiveengineering:material:4>]);
 
-
+# OreDict cleanup
+<ore:paper>.remove(<atum:scroll>);
+<ore:sugarcane>.remove(<betternether:nether_reed>);
+<ore:string>.removeItems([<atum:linen_thread>,<mysticalworld:silk_thread>]);
 
 print("ENDING MinecraftRecipes.zs");

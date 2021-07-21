@@ -40,6 +40,9 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Mob Loot Fabricator Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:mob_loot_fabricator"}), [[<alchemistry:helium_light>,<evilcraft:vein_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}),<alchemistry:helium_light>],[<mob_grinding_utils:saw>,<minecraft:paper>,<mob_grinding_utils:saw>],[<alchemistry:helium_light>,<evilcraft:vein_sword>.withTag({ench: [{lvl: 2 as short, id: 21 as short}]}),<alchemistry:helium_light>]]);
 
+# High Voltage Plasmafier Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:high_voltage_plasmafier"}), [[<alchemistry:ingot:90>,<contenttweaker:essence_of_atomic_fusion>,<alchemistry:ingot:90>],[<contenttweaker:plasma_core>,<minecraft:paper>,<contenttweaker:plasma_core>],[<alchemistry:ingot:90>,<contenttweaker:essence_of_atomic_fusion>,<alchemistry:ingot:90>]]);
+
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
 recipes.addShaped(<modularmachinery:blockcasing> * 4, [[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<mekanism:basicblock:8>,<modularmachinery:itemmodularium>],[<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>,<modularmachinery:itemmodularium>]]);
