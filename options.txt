@@ -284,7 +284,7 @@ key_key.journeymap.zoom_in:0
 key_key.journeymap.zoom_out:0
 key_key.journeymap.minimap_type:0
 key_key.journeymap.minimap_preset:43
-key_key.journeymap.create_waypoint:51
+key_key.journeymap.create_waypoint:49
 key_key.journeymap.toggle_waypoints:0
 key_key.journeymap.fullscreen_create_waypoint:0
 key_key.journeymap.fullscreen_chat_position:0

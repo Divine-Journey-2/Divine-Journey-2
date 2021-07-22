@@ -124,7 +124,7 @@ key_key.jei.showUses:22:NONE
 key_key.jei.recipeBack:14:NONE
 key_key.jei.previousPage:201:NONE
 key_key.jei.nextPage:209:NONE
-key_key.jei.bookmark:31:NONE
+key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_key.cofh.multimode:0:NONE
 key_key.placeItem:-97:NONE
