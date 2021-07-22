@@ -7,7 +7,7 @@
             "type": "fluid",
             "io-type": "input",
             "fluid": "space",
-            "amount": 32000
+            "amount": 64000
         },
         {
             "type": "energy",

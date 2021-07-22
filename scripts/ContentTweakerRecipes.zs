@@ -1535,7 +1535,7 @@ mods.avaritia.Compressor.add("essence_of_enclosement", <contenttweaker:essence_o
 mods.botania.ElvenTrade.addRecipe([<contenttweaker:essence_of_space>], [<contenttweaker:perfect_vacuum>,<contenttweaker:essence_of_enclosement>, <contenttweaker:essence_of_opening>]);
 
 # Liquid Space
-MagmaCrucible.addRecipe(<liquid:space> * 200, <contenttweaker:essence_of_space>, 8000);
+MagmaCrucible.addRecipe(<liquid:space> * 10, <contenttweaker:essence_of_space>, 8000);
 
 # DivineRPG Statues OreDict
 <ore:DRPGStatues>.addItems([<divinerpg:ancient_entity_statue>,<divinerpg:ayeraco_statue_blue>,<divinerpg:ayeraco_statue_red>,<divinerpg:ayeraco_statue_yellow>,<divinerpg:ayeraco_statue_green>,<divinerpg:ayeraco_statue_purple>,<divinerpg:densos_statue>,<divinerpg:dramix_statue>,<divinerpg:eternal_archer_statue>,<divinerpg:karot_statue>,<divinerpg:king_of_scorchers_statue>,<divinerpg:parasecta_statue>,<divinerpg:reyvor_statue>,<divinerpg:soul_fiend_statue>,<divinerpg:the_watcher_statue>,<divinerpg:twilight_demon_statue>,<divinerpg:vamacheron_statue>,<divinerpg:termasect_statue>,<divinerpg:sunstorm_statue>,<divinerpg:experienced_cori_statue>]);
@@ -1807,5 +1807,18 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:infinite_sin
 
 # Singularity Singularity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:singularity_singularity>, <extendedcrafting:singularity_ultimate>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
+
+# DJ2 logo
+mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:singularity_singularity>,
+[[<contenttweaker:puzzle_tile_gbbgr>, <contenttweaker:puzzle_tile_gbggr>, <contenttweaker:puzzle_tile_gbgog>, <contenttweaker:puzzle_tile_obgoo>, <contenttweaker:puzzle_tile_obooo>, <contenttweaker:puzzle_tile_obokr>, <contenttweaker:puzzle_tile_kbokk>, <contenttweaker:puzzle_tile_kbkkr>, <contenttweaker:puzzle_tile_kbkbk>], 
+[<contenttweaker:puzzle_tile_rgbrr>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_ggror>, <contenttweaker:puzzle_tile_oogoo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rookr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_kkrbr>], 
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rggor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkk>, <contenttweaker:puzzle_tile_krrrk>, <contenttweaker:puzzle_tile_rkkbr>], 
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkrr>, <contenttweaker:puzzle_tile_rrkbk>], 
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_krrbk>], 
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkbk>], 
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrr>, <contenttweaker:puzzle_tile_rrgog>, <contenttweaker:puzzle_tile_ooror>, <contenttweaker:puzzle_tile_ooorr>, <contenttweaker:puzzle_tile_rroro>, <contenttweaker:puzzle_tile_rrrkr>, <contenttweaker:puzzle_tile_kkrkr>, <contenttweaker:puzzle_tile_kkkbr>], 
+[<contenttweaker:puzzle_tile_rrbrg>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rogro>, <contenttweaker:puzzle_tile_roroo>, <contenttweaker:puzzle_tile_orrro>, <contenttweaker:puzzle_tile_rrork>, <contenttweaker:puzzle_tile_rkrrk>, <contenttweaker:puzzle_tile_rkrbk>], 
+[<contenttweaker:puzzle_tile_grbgb>, <contenttweaker:puzzle_tile_grggb>, <contenttweaker:puzzle_tile_gggob>, <contenttweaker:puzzle_tile_orgob>, <contenttweaker:puzzle_tile_oroob>, <contenttweaker:puzzle_tile_oookb>, <contenttweaker:puzzle_tile_krokb>, <contenttweaker:puzzle_tile_krkkb>, <contenttweaker:puzzle_tile_krkbb>]]);
+<contenttweaker:singularity_singularity>.addTooltip(format.white("temp recipe"));
 
 print("ENDING ContentTweakerRecipes.zs");
