@@ -60,32 +60,6 @@ print("STARTING ContentTweakerRecipes.zs");
 recipes.addShaped(<contenttweaker:iron_hammer>, [[<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>],[<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>],[null,<ore:stickWood>,null]]);
 recipes.addShapeless(<contenttweaker:rough_iron_mesh>, [<contenttweaker:rough_hammer>.anyDamage().transformDamage(1), <ore:oreIron>, <ore:oreIron>]);
 
-# Encoded Bag of Truth (No spoilers here!)
-recipes.addShapeless(<extrautils2:bagofholding>.withTag({display: {Lore: ["§c§lUNLOCKED"], Name:"§d§lBag of Truth"}, Items: {m: [10, 12, 119, 114, 105, 116, 116, 101, 110, 95, 98, 111, 111, 107, 1, -111, 31, -117, 8, 0, 0, 0, 0, 0, 0, 0, 93, 81, -69, 110, 20, 49, 20, 117, 16, 33, 67, 26, 106, -70, -61, 118, 72, -53, 40, 65, -111, -112, -46, 81, 80, 68, 2, -102, 32, -47, 108, -29, -20, -100, 89, 59, -15, -40, 35, -5, 122, 55, 35, -108, -17, -55, 127, -28, 31, -8, 16, -2, 0, 123, -78, 9, 18, -19, 61, -9, -68, -18, 61, 86, -22, -75, 58, 28, -11, -122, -87, 81, 74, -67, 80, 127, 126, 45, -124, -73, -78, 56, 95, -4, 48, -60, 64, -19, -83, -33, 32, -12, 112, -74, 39, 108, -126, 4, -12, -42, 119, -80, -110, -98, -32, 22, 63, -83, 24, -92, -68, 54, 101, 109, -80, -62, 14, 98, 7, 98, 71, 24, -67, 37, -126, -57, 23, 29, -59, 44, -111, 19, 33, -90, -54, 84, -68, 104, -115, 57, -90, 92, 54, -115, 22, 110, 25, 49, -24, 27, 38, 76, 33, 23, -26, 56, 78, -48, -59, -86, -49, -82, -73, -50, -79, 107, 87, 126, -27, 47, 100, -107, 79, 78, 62, 126, 74, -48, 87, 33, 75, -111, 35, -82, 67, -114, -98, -45, 18, 62, 60, 14, 58, 38, -79, 94, -117, 13, -66, -59, 101, -104, 101, 81, 13, 38, 12, 97, -96, -105, 50, 17, 97, 108, 23, 119, -22, -9, 115, -27, 11, -104, 48, 18, 87, 44, -60, -46, 122, 14, 58, -22, -11, 13, 118, -70, -72, -107, 28, -2, 57, 79, 118, -82, -82, -16, 118, 100, -76, -12, 107, 46, 103, 104, -81, 80, 34, 68, 62, -78, 4, -114, 58, 73, -71, 1, -97, -84, 107, 59, 49, 33, -122, -68, 49, 110, 2, -3, 117, -104, -10, -27, 46, -55, 25, -74, 30, -89, -19, -23, 25, 66, -124, 43, -105, -119, -40, -43, 11, -41, 102, -66, 68, -83, 98, -17, 112, -2, -66, 50, 62, -32, -77, 68, -69, 14, 105, 89, -28, -69, 57, 109, -57, -19, -30, -82, 81, -81, 116, -82, 46, -22, 104, -65, 112, -84, -114, 58, -101, 70, -89, -89, 70, -67, -4, -82, 7, -86, -73, 15, -9, 103, 15, -9, -82, 126, -6, -37, -65, 79, 127, 45, -97, 86, -115, 58, 20, 43, -114, -22, -51, 127, -56, -127, 106, 34, 83, 112, 91, 118, 7, -22, 47, -34, -85, 39, 91, 63, 2, 0, 0] as byte[] as byte[]}}), [<contenttweaker:bag_of_truth_locked>, <contenttweaker:key_to_infinity>]);
-
-# Bag of Truth (Locked), in case the player loses it
-recipes.addShaped(<contenttweaker:bag_of_truth_locked>.withTag({display: {Name:"§d§lBag of Truth (Locked)"}}), [[null,<enderio:item_material:20>,null],[<enderio:item_material:20>,<extrautils2:bagofholding>,<enderio:item_material:20>],[null,<thermalfoundation:security>,null]]);
-
-# Key to Infinity
-mods.avaritia.ExtremeCrafting.addShaped("Key to Infinity", <contenttweaker:key_to_infinity>.withTag({display: {Name:"§d§lKey to Infinity"}}),
-[[null,null,null,null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null],
-[null,null,null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>],
-[null,null,null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>],
-[null,null,null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>],
-[null,null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null],
-[null,null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,null,null,null],
-[null,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,null,null,null,null],
-[<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,null,null,null],
-[<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,<avaritia:block_resource:1>,null,null,null,null,null]]);
-
-# Bag of Truth and Key to Infinity tooltips
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red(format.bold("LOCKED")));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red("Requires a ") + format.lightPurple(format.bold("Key to Infinity")) + format.red(" to open."));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red("(This is the entire goal of the modpack.)"));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.darkRed(format.italic("This is craftable, if you ever lose it.")));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.darkRed(format.italic("Warning: Crafting deletes the input bag's inventory.")));
-<contenttweaker:key_to_infinity>.addTooltip(format.red("Craft together with a ") + format.lightPurple(format.bold("Bag of Truth (Locked)")) + format.red(" to open it!"));
-
 # Compressed Obsidian
 recipes.addShaped(<contenttweaker:compressed_obsidian1>, [[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
 recipes.addShapeless(<minecraft:obsidian> * 9, [<contenttweaker:compressed_obsidian1>]);
@@ -366,12 +340,16 @@ mods.actuallyadditions.AtomicReconstructor.addRecipe(glod_crystal_block, <minecr
 recipes.addShaped(glod_crystal_block, [[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal]]);
 recipes.addShapeless(glod_crystal * 9, [glod_crystal_block]);
 recipes.addShapeless(glod_crystal_block, [<contenttweaker:glod_crystal_block>]);
+mods.jei.JEI.addItem(glod_crystal);
+mods.jei.JEI.addItem(glod_crystal_block);
 
 # Empowered Glod Crystal & Block
 mods.actuallyadditions.Empowerer.addRecipe(empowered_glod_crystal, glod_crystal, <enderio:item_material:12>, <thermalfoundation:material:294>, <roots:wildewheet>, <minecraft:blaze_rod>, 3000, 100, [0.976, 0.972, 0.184]);
 recipes.addShaped(empowered_glod_crystal_block, [[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal]]);
 recipes.addShapeless(empowered_glod_crystal * 9, [empowered_glod_crystal_block]);
 recipes.addShapeless(empowered_glod_crystal_block, [<contenttweaker:empowered_glod_crystal_block>]);
+mods.jei.JEI.addItem(empowered_glod_crystal);
+mods.jei.JEI.addItem(empowered_glod_crystal_block);
 
 # Crystal Bundle
 EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 6, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
@@ -1802,8 +1780,8 @@ recipes.addShaped(<contenttweaker:cosmic_neutronium_taco>, [[<avaritia:resource:
 # Essence of Opening
 mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_opening>, 1000, <minecraft:wooden_door>, true);
 
-# Ultiamte Machine Frame
-recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:3>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:3>,<rftools:creative_screen>]]);
+# Ultimate Machine Frame
+recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>]]);
 
 # Nature's Blessing
 mods.botania.RuneAltar.addRecipe(<contenttweaker:natures_blessing>, [<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_mana>,<contenttweaker:rune_of_deception>], 1000000);

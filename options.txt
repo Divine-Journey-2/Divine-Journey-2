@@ -6,7 +6,7 @@ gamma:1.0
 saturation:0.0
 renderDistance:12
 guiScale:2
-particles:0
+particles:2
 bobView:false
 anaglyph3d:false
 maxFps:120
@@ -95,15 +95,13 @@ key_key.configurator_path.desc:0
 key_roots.keybinds.pouch:0
 key_roots.keybinds.quiver:0
 key_roots.keybinds.spell_slot_previous:0
-key_roots.keybinds.spell_slot_4:0
-key_roots.keybinds.spell_slot_2:0
-key_roots.keybinds.spell_slot_1:0
-key_roots.keybinds.spell_slot_5:0
-key_roots.keybinds.spell_slot_3:0
 key_roots.keybinds.spell_slot_next:0
+key_roots.keybinds.spell_slot_5:0
+key_roots.keybinds.spell_slot_4:0
+key_roots.keybinds.spell_slot_1:0
+key_roots.keybinds.spell_slot_2:0
+key_roots.keybinds.spell_slot_3:0
 key_keybind.baublesinventory:48
-key_quark.keybind.toggleAutojump:0
-key_quark.keybind.lockBuilding:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -122,15 +120,16 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.toggleAutojump:0
 key_quark.keybind.dropoff:0
 key_quark.keybind.changeHotbar:0
+key_quark.keybind.lockBuilding:0
 key_pe.key.armor_toggle:0
 key_pe.key.charge:47
 key_pe.key.extra_function:0
 key_pe.key.fire_projectile:0
-key_pe.key.mode:0
+key_pe.key.mode:47:SHIFT
 key_key.toggle_shaders:0
-key_key.xu2.searchforitems:20
 key_key.betterquesting.quests:37
 key_bloodmagic.keybind.open_holding:0
 key_bloodmagic.keybind.cycle_holding_pos:0
@@ -140,15 +139,16 @@ key_key.previous_item.desc:0
 key_key.open_danknull.desc:0
 key_key.togglehud.desc:0
 key_enderutilities.key.activate_unselected:0
-key_enderutilities.key.togglemode:0
+key_enderutilities.key.togglemode:41
 key_key.erebus.glide:0
 key_key.erebus.poweredglide:0
 key_key.erebus.beetleram:0
 key_key.erebus.beetlemine:0
+key_key.xu2.searchforitems:20
 key_key.ftbutilities.nbt:0
 key_key.ftbutilities.trash:211
 key_[GC] Galaxy Map:0
-key_[GC] Open Spaceship Inventory:0
+key_[GC] Open Spaceship Inventory:30
 key_[GC] Toggle Sensor Goggles Mode:0
 key_keybind.hammercorerenderstack:77
 key_key.ironbackpacks.equip:0
@@ -191,6 +191,7 @@ key_key.cycleDigAOE:0
 key_key.cycleAttackAOE:0
 key_key.toggleShields:0
 key_key.toggle_focus.desc:15
+key_key.aether.accessory_menu:23
 key_bbw.key.mode:0
 key_bbw.key.fluidmode:0
 key_nei.options.keys.gui.botania_corporea_request:0
@@ -278,11 +279,12 @@ key_key.porterNextDestination:27
 key_key.porterPrevDestination:26
 key_key.debugDumpNBTItem:0
 key_key.debugDumpNBTBlock:0
+key_bqtweaker.key.pageback:14
 key_key.journeymap.zoom_in:0
 key_key.journeymap.zoom_out:0
 key_key.journeymap.minimap_type:0
 key_key.journeymap.minimap_preset:43
-key_key.journeymap.create_waypoint:49
+key_key.journeymap.create_waypoint:51
 key_key.journeymap.toggle_waypoints:0
 key_key.journeymap.fullscreen_create_waypoint:0
 key_key.journeymap.fullscreen_chat_position:0
@@ -316,15 +318,15 @@ key_enderio.keybind.fovplus:0
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovplusfast:0
 key_enderio.keybind.fovminusfast:0
-soundCategory_master:0.24172185
-soundCategory_music:0.1056338
+soundCategory_master:0.25
+soundCategory_music:0.1
 soundCategory_record:0.5
-soundCategory_weather:0.1056338
-soundCategory_block:0.30985916
-soundCategory_hostile:0.2535211
-soundCategory_neutral:0.2535211
-soundCategory_player:0.2535211
-soundCategory_ambient:0.30985916
+soundCategory_weather:0.1
+soundCategory_block:0.3
+soundCategory_hostile:0.25
+soundCategory_neutral:0.25
+soundCategory_player:0.25
+soundCategory_ambient:0.3
 soundCategory_voice:0.5
 modelPart_cape:true
 modelPart_jacket:true

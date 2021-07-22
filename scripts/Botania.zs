@@ -1089,7 +1089,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<botania:manatablet>.withTag({mana
 [[<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>], 
 [<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <botania:manatablet>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
 [<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <thaumicenergistics:essentia_cell_creative>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
-[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <botania:manatablet>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
+[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <avaritia:resource:6>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
 [<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>]]);
 
 # Everlasting Guilty Mana Pool
@@ -1098,7 +1098,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<botania:pool:1>,
 [null, null, null, null, null, null, null, null, null], 
 [null, null, null, null, null, null, null, null, null], 
 [<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
-[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <avaritia:resource:6>, <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
+[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <contenttweaker:neutronium_singularity>, <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
 [<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
 [<botania:pool:3>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <botania:pool:3>], 
 [<botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>], 

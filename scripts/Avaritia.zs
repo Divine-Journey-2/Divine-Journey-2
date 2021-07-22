@@ -56,7 +56,7 @@ mods.avaritia.ExtremeCrafting.addShaped("neutron_collector2",<avaritia:neutron_c
 [<extendedcrafting:material:32>,<contenttweaker:white_matter>,<contenttweaker:white_matter>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<contenttweaker:white_matter>,<contenttweaker:white_matter>,<extendedcrafting:material:32>],
 [<extendedcrafting:material:32>,<contenttweaker:white_matter>,<avaritia:resource:1>,<contenttweaker:antimatter_cluster>,<avaritia:resource:1>,<contenttweaker:antimatter_cluster>,<avaritia:resource:1>,<contenttweaker:white_matter>,<extendedcrafting:material:32>],
 [<extendedcrafting:material:32>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<galacticraftcore:collector>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<extendedcrafting:material:32>],
-[<extendedcrafting:material:32>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<projecte:collector_mk3>,<avaritia:resource:3>,<projecte:collector_mk3>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<extendedcrafting:material:32>],
+[<extendedcrafting:material:32>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<projecte:collector_mk3>,<avaritia:resource:4>,<projecte:collector_mk3>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<extendedcrafting:material:32>],
 [<extendedcrafting:material:32>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<galacticraftcore:collector>,<avaritia:resource:1>,<actuallyadditions:block_ranged_collector>,<avaritia:resource:1>,<extendedcrafting:material:32>],
 [<extendedcrafting:material:32>,<contenttweaker:white_matter>,<avaritia:resource:1>,<contenttweaker:antimatter_cluster>,<avaritia:resource:1>,<contenttweaker:antimatter_cluster>,<avaritia:resource:1>,<contenttweaker:white_matter>,<extendedcrafting:material:32>],
 [<extendedcrafting:material:32>,<contenttweaker:white_matter>,<contenttweaker:white_matter>,<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,<contenttweaker:white_matter>,<contenttweaker:white_matter>,<extendedcrafting:material:32>],
@@ -65,9 +65,8 @@ mods.avaritia.ExtremeCrafting.addShaped("neutron_collector2",<avaritia:neutron_c
 # Pile of Neutrons
 <avaritia:resource:2>.addTooltip(format.white("Created by the Neutron Collector every"));
 <avaritia:resource:2>.addTooltip(format.white("7111 ticks, or ~355 seconds/~6 minutes."));
-
-# Neutronium Nugget alternative recipe
-recipes.addShaped(<avaritia:resource:3>, [[<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>],[<contenttweaker:antimatter_cluster>,<avaritia:resource:2>,<contenttweaker:antimatter_cluster>],[<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>]]);
+<avaritia:resource:2>.addTooltip(format.white("You can speed this up significantly"));
+<avaritia:resource:2>.addTooltip(format.white("with Watches of Flowing Time."));
 
 # Cosmic Meatballs
 mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);

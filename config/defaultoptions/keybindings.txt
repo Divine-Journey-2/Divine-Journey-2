@@ -40,13 +40,13 @@ key_key.configurator_filter.desc:0:NONE
 key_key.configurator_path.desc:0:NONE
 key_roots.keybinds.pouch:0:NONE
 key_roots.keybinds.quiver:0:NONE
-key_roots.keybinds.spell_slot_1:0:NONE
 key_roots.keybinds.spell_slot_previous:0:NONE
-key_roots.keybinds.spell_slot_3:0:NONE
-key_roots.keybinds.spell_slot_5:0:NONE
-key_roots.keybinds.spell_slot_2:0:NONE
 key_roots.keybinds.spell_slot_next:0:NONE
+key_roots.keybinds.spell_slot_5:0:NONE
 key_roots.keybinds.spell_slot_4:0:NONE
+key_roots.keybinds.spell_slot_1:0:NONE
+key_roots.keybinds.spell_slot_2:0:NONE
+key_roots.keybinds.spell_slot_3:0:NONE
 key_keybind.baublesinventory:48:NONE
 key_quark.emote.no:0:NONE
 key_quark.emote.yes:0:NONE
@@ -66,17 +66,16 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_quark.keybind.lockBuilding:0:NONE
+key_quark.keybind.toggleAutojump:0:NONE
 key_quark.keybind.dropoff:0:NONE
 key_quark.keybind.changeHotbar:0:NONE
-key_quark.keybind.toggleAutojump:0:NONE
+key_quark.keybind.lockBuilding:0:NONE
 key_pe.key.armor_toggle:0:NONE
 key_pe.key.charge:47:NONE
 key_pe.key.extra_function:0:NONE
 key_pe.key.fire_projectile:0:NONE
-key_pe.key.mode:0:NONE
+key_pe.key.mode:47:SHIFT
 key_key.toggle_shaders:0:NONE
-key_key.xu2.searchforitems:20:NONE
 key_key.betterquesting.quests:37:NONE
 key_bloodmagic.keybind.open_holding:0:NONE
 key_bloodmagic.keybind.cycle_holding_pos:0:NONE
@@ -86,15 +85,16 @@ key_key.previous_item.desc:0:NONE
 key_key.open_danknull.desc:0:NONE
 key_key.togglehud.desc:0:NONE
 key_enderutilities.key.activate_unselected:0:NONE
-key_enderutilities.key.togglemode:0:NONE
+key_enderutilities.key.togglemode:41:NONE
 key_key.erebus.glide:0:NONE
 key_key.erebus.poweredglide:0:NONE
 key_key.erebus.beetleram:0:NONE
 key_key.erebus.beetlemine:0:NONE
+key_key.xu2.searchforitems:20:NONE
 key_key.ftbutilities.nbt:0:NONE
 key_key.ftbutilities.trash:211:NONE
 key_[GC] Galaxy Map:0:NONE
-key_[GC] Open Spaceship Inventory:0:NONE
+key_[GC] Open Spaceship Inventory:18:NONE
 key_[GC] Toggle Sensor Goggles Mode:0:NONE
 key_keybind.hammercorerenderstack:77:NONE
 key_key.ironbackpacks.equip:0:NONE
@@ -105,7 +105,7 @@ key_neat.keybind.toggle:0:NONE
 key_openblocks.keybind.vario_switch:0:NONE
 key_openblocks.keybind.vario_vol_up:0:NONE
 key_openblocks.keybind.vario_vol_down:0:NONE
-key_oreexcavation.key.excavate:11:NONE
+key_oreexcavation.key.excavate:41:NONE
 key_oreexcavation.key.shape:0:NONE
 key_AutoRun:69:NONE
 key_key.toastcontrol.clear:0:NONE
@@ -124,7 +124,7 @@ key_key.jei.showUses:22:NONE
 key_key.jei.recipeBack:14:NONE
 key_key.jei.previousPage:201:NONE
 key_key.jei.nextPage:209:NONE
-key_key.jei.bookmark:30:NONE
+key_key.jei.bookmark:31:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_key.cofh.multimode:0:NONE
 key_key.placeItem:-97:NONE
@@ -137,6 +137,7 @@ key_key.cycleDigAOE:0:NONE
 key_key.cycleAttackAOE:0:NONE
 key_key.toggleShields:0:NONE
 key_key.toggle_focus.desc:15:NONE
+key_key.aether.accessory_menu:23:NONE
 key_bbw.key.mode:0:NONE
 key_bbw.key.fluidmode:0:NONE
 key_nei.options.keys.gui.botania_corporea_request:0:NONE
@@ -189,6 +190,7 @@ key_waila.keybind.liquid:80:NONE
 key_waila.keybind.recipe:81:NONE
 key_waila.keybind.usage:75:NONE
 key_key.overload:0:NONE
+key_key.chaosInjection:34:SHIFT
 key_Toggle Farting:0:NONE
 key_Open Exalted Crafter:0:NONE
 key_mekanism.key.mode:50:NONE
@@ -223,11 +225,12 @@ key_key.porterNextDestination:27:NONE
 key_key.porterPrevDestination:26:NONE
 key_key.debugDumpNBTItem:0:NONE
 key_key.debugDumpNBTBlock:0:NONE
+key_bqtweaker.key.pageback:14:NONE
 key_key.journeymap.zoom_in:0:NONE
 key_key.journeymap.zoom_out:0:NONE
 key_key.journeymap.minimap_type:0:NONE
 key_key.journeymap.minimap_preset:43:NONE
-key_key.journeymap.create_waypoint:51:NONE
+key_key.journeymap.create_waypoint:49:NONE
 key_key.journeymap.toggle_waypoints:0:NONE
 key_key.journeymap.fullscreen_create_waypoint:0:NONE
 key_key.journeymap.fullscreen_chat_position:0:NONE
