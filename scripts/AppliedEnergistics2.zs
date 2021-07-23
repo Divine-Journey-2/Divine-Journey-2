@@ -395,4 +395,16 @@ mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_ener
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>]]);
 
+# Creative ME Storage Cell
+mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_storage_cell>.withTag({}),
+[[<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:58>, <extracells:storage.component:10>, <extracells:storage.component:17>, <thaumicenergistics:essentia_component_64k>, <erebus:wand_of_animation>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:17>, <extracells:storage.component:10>, <alchemistry:ingot:58>], 
+[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:58>], 
+[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>], 
+[<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>]]);
+
 print("ENDING AppliedEnergistics2.zs");

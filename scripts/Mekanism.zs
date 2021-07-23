@@ -625,4 +625,16 @@ mods.extendedcrafting.TableCrafting.addShaped(<mekanism:gastank>.withTag({tier: 
 [<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
 [<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>]]);
 
+# Creative Bin
+mods.extendedcrafting.TableCrafting.addShaped(<mekanism:basicblock:6>.withTag({tier: 4}),
+[[<alchemistry:ingot:116>, <alchemistry:ingot:116>, <alchemistry:ingot:116>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <alchemistry:ingot:116>, <alchemistry:ingot:116>, <alchemistry:ingot:116>], 
+[<alchemistry:ingot:116>, <mekanism:gastank>.withTag({tier: 4}), <mekanism:gastank>.withTag({tier: 4}), <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <mekanism:gastank>.withTag({tier: 4}), <mekanism:gastank>.withTag({tier: 4}), <alchemistry:ingot:116>], 
+[<alchemistry:ingot:116>, <mekanism:machineblock2:11>.withTag({tier: 4}), <mekanism:machineblock2:11>.withTag({tier: 4}), <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mekanism:machineblock2:11>.withTag({tier: 4}), <mekanism:machineblock2:11>.withTag({tier: 4}), <alchemistry:ingot:116>], 
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>], 
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <extrautils2:creativechest>, <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>], 
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>], 
+[<alchemistry:ingot:111>, <storagedrawers:upgrade_creative:1>, <storagedrawers:upgrade_creative:1>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <storagedrawers:upgrade_creative:1>, <storagedrawers:upgrade_creative:1>, <alchemistry:ingot:111>], 
+[<alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>], 
+[<alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>]]);
+
 print("ENDING Mekanism.zs");

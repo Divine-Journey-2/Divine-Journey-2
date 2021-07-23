@@ -508,4 +508,28 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null], 
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
 
+# Satchel (Creative)
+mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:satchel:32000>.withTag({Accessible: 1 as byte}),
+[[<alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:65>, <alchemistry:ingot:87>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>], 
+[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>], 
+[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>], 
+[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>], 
+[<alchemistry:ingot:65>, <solarflux:solar_panel_infinity>, <contenttweaker:infinite_singularity>, <thermalexpansion:satchel:4>, <mekanism:basicblock:6>.withTag({tier: 4}), <thermalexpansion:satchel:4>, <contenttweaker:infinite_singularity>, <solarflux:solar_panel_infinity>, <alchemistry:ingot:65>], 
+[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>], 
+[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>], 
+[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>], 
+[<alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:65>, <alchemistry:ingot:87>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>]]);
+
+# Creative Conversion Kit
+mods.extendedcrafting.TableCrafting.addShaped(<thermalfoundation:upgrade:256>,
+[[<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <thermalfoundation:upgrade:35>, <thermalexpansion:satchel:32000>, <thermalfoundation:upgrade:35>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>], 
+[<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>]]);
+
 print("ENDING ThermalExpansion.zs");

@@ -30,4 +30,16 @@ recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>,<ore:stone>,<o
 # Creative Storage Upgrade
 recipes.addShaped(<storagedrawers:upgrade_creative>, [[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>],[<tconstruct:materials:50>,<projecte:condenser_mk2>,<tconstruct:materials:50>],[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>]]);
 
+# Creative Vending Upgrade
+mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1>,
+[[<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>], 
+[<storagedrawers:upgrade_creative>, <thaumicenergistics:essentia_cell_64k>, <thaumicenergistics:essentia_cell_64k>, <thaumicenergistics:essentia_cell_64k>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
+[<storagedrawers:upgrade_creative>, <enderio:block_buffer:3>, <enderio:block_buffer:3>, <enderio:block_buffer:3>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
+[<storagedrawers:upgrade_creative>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <alchemistry:ingot:71>], 
+[<storagedrawers:upgrade_creative>, <rftools:powercell_creative>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <extrautils2:creativechest>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <rftools:powercell_creative>, <storagedrawers:upgrade_creative>], 
+[<storagedrawers:upgrade_creative>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <storagedrawers:upgrade_creative>], 
+[<storagedrawers:upgrade_creative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <contenttweaker:singularity_singularity>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <storagedrawers:upgrade_creative>], 
+[<storagedrawers:upgrade_creative>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <storagedrawers:upgrade_creative>], 
+[<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>]]);
+
 print("ENDING StorageDrawers.zs");

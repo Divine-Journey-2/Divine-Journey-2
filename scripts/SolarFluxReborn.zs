@@ -70,11 +70,11 @@ recipes.addShaped(<solarflux:solar_panel_chaotic>, [[<contenttweaker:photovoltai
 
 # Neutronium Solar Panel
 mods.avaritia.ExtremeCrafting.remove(<solarflux:solar_panel_neutronium>);
-recipes.addShaped(<solarflux:solar_panel_neutronium>, [[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>],[<solarflux:solar_panel_chaotic>,<avaritia:block_resource>,<solarflux:solar_panel_chaotic>],[<solarflux:solar_panel_chaotic>,<avaritia:block_resource>,<solarflux:solar_panel_chaotic>]]);
+recipes.addShaped(<solarflux:solar_panel_neutronium>, [[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>]]);
 
 # Solar Panel of Infinity
 mods.avaritia.ExtremeCrafting.remove(<solarflux:solar_panel_infinity>);
-recipes.addShaped(<solarflux:solar_panel_infinity>, [[<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>],[<solarflux:solar_panel_neutronium>,<avaritia:resource:6>,<solarflux:solar_panel_neutronium>],[<solarflux:solar_panel_neutronium>,<avaritia:resource:6>,<solarflux:solar_panel_neutronium>]]);
+recipes.addShaped(<solarflux:solar_panel_infinity>, [[<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>]]);
 
 # Blank Upgrade
 recipes.remove(<solarflux:blank_upgrade>);

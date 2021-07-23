@@ -102,4 +102,16 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 <erebus:cabbage_seeds>.addTooltip(format.white("Break any tallgrass in Erebus to obtain."));
 <erebus:cabbage_seeds>.addTooltip(format.white("Swamp Plants always drop these."));
 
+# Wand of Animation
+mods.extendedcrafting.TableCrafting.addShaped(<erebus:wand_of_animation>,
+[[null, null, null, null, null, null, null, null, <extrautils2:itemdestructionwand>], 
+[null, null, null, null, null, null, <astralsorcery:itemilluminationwand>, <extrautils2:itembuilderswand>, null], 
+[null, null, null, null, <betterbuilderswands:wandstone>, <betterbuilderswands:wandiron>, <chisel:offsettool>, <enderutilities:icemelter>, null], 
+[null, null, null, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wanddiamond>, null, null], 
+[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:256>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wandunbreakable>, null, null], 
+[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, null, null, null], 
+[null, <astralsorcery:itemarchitectwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, null, null, null, null], 
+[<enderutilities:builderswand>, <astralsorcery:itemexchangewand>, <astralsorcery:itemgrapplewand>, null, null, null, null, null, null], 
+[<bewitchment:leonards_wand>, <botania:twigwand>, null, null, null, null, null, null, null]]);
+
 print("ENDING Erebus.zs");

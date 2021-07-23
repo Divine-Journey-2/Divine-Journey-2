@@ -48,4 +48,7 @@ recipes.remove(<mysticalagradditions:neutronium_seeds>);
 recipes.remove(<mysticalagradditions:special:5>);
 recipes.addShaped(<mysticalagradditions:special:5>, [[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>],[<avaritia:block_resource>,<contenttweaker:white_matter>,<avaritia:block_resource>],[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>]]);
 
+# Creative Essence
+recipes.addShapedMirrored(<mysticalagradditions:stuff:69>, [[<mysticalagriculture:fertilized_essence>,<mysticalagradditions:neutronium_essence>,<mysticalagriculture:fertilized_essence>],[<mysticalagradditions:awakened_draconium_essence>,<contenttweaker:infinite_singularity>,<mysticalagradditions:nether_star_essence>,],[<mysticalagriculture:fertilized_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagriculture:fertilized_essence>]]);
+
 print("ENDING MysticalAgriadditions.zs");
