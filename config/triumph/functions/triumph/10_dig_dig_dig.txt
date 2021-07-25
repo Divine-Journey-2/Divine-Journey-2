@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Digger's Trophy",TrophyVariant:"neon",TrophyItem:{id:"rftools:builder",Count:1b,Damage:0s},TrophyColorRed:128,TrophyColorGreen:128,TrophyColorBlue:128}

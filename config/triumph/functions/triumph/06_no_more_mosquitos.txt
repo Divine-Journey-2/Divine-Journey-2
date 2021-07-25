@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Escaper of Bugs Trophy",TrophyVariant:"neon",TrophyItem:{id:"contenttweaker:crown_of_skies",Count:1b,Damage:0s},TrophyColorRed:255,TrophyColorGreen:236,TrophyColorBlue:86}

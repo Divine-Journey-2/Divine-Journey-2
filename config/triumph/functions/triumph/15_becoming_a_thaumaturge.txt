@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Thaumaturge's Trophy",TrophyVariant:"neon",TrophyItem:{id:"thaumcraft:thaumonomicon",Count:1b,Damage:0s},TrophyColorRed:103,TrophyColorGreen:58,TrophyColorBlue:35}

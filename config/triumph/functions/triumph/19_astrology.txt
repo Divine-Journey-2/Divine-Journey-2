@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Astral Trophy",TrophyVariant:"neon",TrophyItem:{id:"astralsorcery:itemjournal",Count:1b,Damage:0s},TrophyColorRed:92,TrophyColorGreen:50,TrophyColorBlue:10}

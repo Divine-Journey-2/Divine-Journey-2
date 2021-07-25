@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Dimensional Trophy",TrophyVariant:"neon",TrophyItem:{id:"rftoolsdim:empty_dimension_tab",Count:1b,Damage:0s},TrophyColorRed:109,TrophyColorGreen:109,TrophyColorBlue:109}

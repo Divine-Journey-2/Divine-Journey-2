@@ -1,0 +1,14 @@
+setIcon(<projecte:item.pe_philosophers_stone>)
+setTitle("Philosophy")
+setDescription("Make a Philosopher's Stone and unlock ProjectE!")
+
+addParent("triumph:dj2/root")
+setPos(105,284)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasPhilosophersStone", "minecraft:inventory_changed")
+criteria.addItem(<projecte:item.pe_philosophers_stone>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:24_philosophy")

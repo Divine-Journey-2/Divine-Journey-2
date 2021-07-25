@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Alchemist's Trophy",TrophyVariant:"neon",TrophyItem:{id:"alchemistry:chemical_dissolver",Count:1b,Damage:0s},TrophyColorRed:164,TrophyColorGreen:62,TrophyColorBlue:33}

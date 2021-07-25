@@ -1,0 +1,14 @@
+setIcon(<roots:bonfire>)
+setTitle("Root 3")
+setDescription("Open up the third Chapter, Roots, and craft a Pyre!")
+
+addParent("triumph:dj2/root")
+setPos(3,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasPyre", "minecraft:inventory_changed")
+criteria.addItem(<roots:bonfire>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:03_root_3")

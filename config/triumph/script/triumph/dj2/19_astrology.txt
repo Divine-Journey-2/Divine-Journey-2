@@ -1,0 +1,14 @@
+setIcon(<astralsorcery:itemjournal>)
+setTitle("Astrology")
+setDescription("Unlock Astral Sorcery by crafting an Astral Tome!")
+
+addParent("triumph:dj2/root")
+setPos(-65,284)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasAstralTome", "minecraft:inventory_changed")
+criteria.addItem(<astralsorcery:itemjournal>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:19_astrology")

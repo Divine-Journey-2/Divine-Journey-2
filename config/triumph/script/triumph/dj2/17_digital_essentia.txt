@@ -1,0 +1,14 @@
+setIcon(<thaumicenergistics:essentia_component_1k>)
+setTitle("Digital Essentia")
+setDescription("Craft a 1k ME Essentia Storage Component and unlock Thaumic Energistics!")
+
+addParent("triumph:dj2/root")
+setPos(71,250)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasEssentiaStorageComponent", "minecraft:inventory_changed")
+criteria.addItem(<thaumicenergistics:essentia_component_1k>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:17_digital_essentia")

@@ -1,0 +1,14 @@
+setIcon(<botania:specialflower, meta:0, count:1, nbt:{type:"puredaisy"}>)
+setTitle("Manamana")
+setDescription("Craft a Pure Daisy to enter Botania!")
+
+addParent("triumph:dj2/root")
+setPos(-31,250)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasPureDaisy", "minecraft:inventory_changed")
+criteria.addItem(<botania:specialflower, meta:0, count:1, nbt:{type:"puredaisy"}>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:14_manamana")

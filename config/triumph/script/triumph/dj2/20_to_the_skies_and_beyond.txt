@@ -1,0 +1,14 @@
+setIcon(<galacticraftcore:rocket_t1>)
+setTitle("To the skies and beyond")
+setDescription("Craft a Tier 1 Rocket to visit the Moon!")
+
+addParent("triumph:dj2/root")
+setPos(-31,284)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasTier1Rocket", "minecraft:inventory_changed")
+criteria.addItem(<galacticraftcore:rocket_t1, meta:0~3, count:1>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:20_to_the_skies_and_beyond")

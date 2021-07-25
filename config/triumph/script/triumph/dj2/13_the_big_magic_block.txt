@@ -1,0 +1,14 @@
+setIcon(<bloodmagic:altar>)
+setTitle("The Big Magic Block")
+setDescription("Craft a Blood Altar to enter the Big Magic Block!")
+
+addParent("triumph:dj2/root")
+setPos(-65,250)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasBloodAltar", "minecraft:inventory_changed")
+criteria.addItem(<bloodmagic:altar>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:13_the_big_magic_block")

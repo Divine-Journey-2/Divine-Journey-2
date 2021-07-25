@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Botanist's Trophy",TrophyVariant:"neon",TrophyItem:{id:"botania:specialflower",Count:1b,tag:{type:"puredaisy"},Damage:0s},TrophyColorRed:221,TrophyColorGreen:221,TrophyColorBlue:221}

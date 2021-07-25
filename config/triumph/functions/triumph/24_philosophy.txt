@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Philosopher's Trophy",TrophyVariant:"neon",TrophyItem:{id:"projecte:item.pe_philosophers_stone",Count:1b,Damage:0s},TrophyColorRed:181,TrophyColorGreen:47,TrophyColorBlue:109}

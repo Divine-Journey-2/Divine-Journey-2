@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:crown_of_skies>)
+setTitle("No more mosquitos")
+setDescription("Complete Erebus by crafting a Crown of Skies to unlock The Aether!")
+
+addParent("triumph:dj2/root")
+setPos(105,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasCrownOfSkies", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:crown_of_skies>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:06_no_more_mosquitos")

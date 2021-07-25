@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:atum_warrior>)
+setTitle("Surviving the Sands")
+setDescription("Survive the Sands of Atum!")
+
+addParent("triumph:dj2/root")
+setPos(71,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasAtumWarrior", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:atum_warrior>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:05_surviving_the_sands")

@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:resonating_orb>)
+setTitle("Sky Soarer")
+setDescription("Defeat all Aether bosses and complete all Aether activities for the Resonating Orb!")
+
+addParent("triumph:dj2/root")
+setPos(-65,216)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasResonatingOrb", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:resonating_orb>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:07_sky_soarer")

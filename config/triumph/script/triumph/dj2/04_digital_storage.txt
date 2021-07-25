@@ -1,0 +1,14 @@
+setIcon(<appliedenergistics2:energy_acceptor>)
+setTitle("Digital Storage")
+setDescription("Start Applied Energistics by crafting an Energy Acceptor!")
+
+addParent("triumph:dj2/root")
+setPos(37,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasEnergyAcceptor", "minecraft:inventory_changed")
+criteria.addItem(<appliedenergistics2:energy_acceptor>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:04_digital_storage")

@@ -1,0 +1,14 @@
+setIcon(<totemic:totem_whittling_knife>)
+setTitle("Divin' into DJ2!")
+setDescription("Craft a Totem Whittling Knife to jump into the mods!")
+
+addParent("triumph:dj2/root")
+setPos(-65,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasTotemCarverKnife", "minecraft:inventory_changed")
+criteria.addItem(<totemic:totem_whittling_knife>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:01_divin_into_dj2")

@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Totem Carver's Trophy",TrophyVariant:"neon",TrophyItem:{id:"totemic:totem_whittling_knife",Count:1b,Damage:0s},TrophyColorRed:175,TrophyColorGreen:121,TrophyColorBlue:0}

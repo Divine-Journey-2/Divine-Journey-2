@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "MoonDecorationFood",
+  "items": [
+    {
+      "weight": 3.3419337272644043,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:food",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.3419337272644043,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:food",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.3419337272644043,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:food",
+        "damage": 2,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.8119313716888428,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:food",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.9194812774658203,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:food",
+        "damage": 9,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:water"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

@@ -1,0 +1,367 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "MarsDungeonLoot",
+  "items": [
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 7,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 8,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.763644814491272,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 9,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.763644814491272,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 10,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 11,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.39763605594635,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:heavy_plating",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7755888104438782,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:item_basic_moon",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "galacticraftplanets:item_basic_mars",
+        "damage": 3,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.124999523162842,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "quantumflux:craftingpiece",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.9194812774658203,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "contenttweaker:rainbow_tablet",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.763644814491272,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "galacticraftcore:item_basic_moon",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:rune_of_sloth",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:rune_of_envy",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:rune_of_lust",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:rune_of_greed",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:rune_of_gluttony",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "projectred-core:resource_item",
+        "damage": 301,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "projectred-core:resource_item",
+        "damage": 320,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "projectred-core:resource_item",
+        "damage": 341,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "projectred-core:resource_item",
+        "damage": 342,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.366908550262451,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "contenttweaker:cheesy_silicon",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.1894346475601196,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 13,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.1894346475601196,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 14,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftplanets:basic_item_venus",
+        "damage": 6,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "galacticraftcore:basic_item",
+        "damage": 12,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 2,
+      "item": {
+        "id": "contenttweaker:cheesy_wafer",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 3.5707483291625977,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "contenttweaker:tough_galactic_plating",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "astralsorcery:itemcraftingcomponent",
+        "damage": 1,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 6,
+      "item": {
+        "id": "astralsorcery:itemcraftingcomponent",
+        "damage": 4,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.6340234279632568,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "contenttweaker:galactic_ingot",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "contenttweaker:galactic_machine_frame",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "mekanism:filterupgrade",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.4858947992324829,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "galacticraftcore:air_vent",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "galacticraftcore:air_fan",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.23224952816963196,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "galacticraftcore:oxygen_concentrator",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

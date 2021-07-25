@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Meaning of Life Trophy",TrophyVariant:"gold",TrophyItem:{id:"contenttweaker:key_to_infinity",Count:1b,Damage:0s},TrophyColorRed:118,TrophyColorGreen:81,TrophyColorBlue:41}

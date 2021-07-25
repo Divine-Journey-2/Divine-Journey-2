@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:heavenly_key_to_infinity>)
+setTitle("THE TRUE ENDING")
+setDescription("Find out the Truth!")
+
+addParent("triumph:dj2/root")
+setPos(157,250)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasHeavenlyKeyToInfinity", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:heavenly_key_to_infinity>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:26_THE_TRUE_ENDING")

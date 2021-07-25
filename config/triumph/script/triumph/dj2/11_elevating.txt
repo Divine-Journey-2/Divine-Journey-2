@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:ingot_of_elevation>)
+setTitle("Elevating...")
+setDescription("Craft some Elevatium Ingots! These are a crucial material that'll be used a lot in the pack.")
+
+addParent("triumph:dj2/root")
+setPos(71,217)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasElevatium", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:ingot_of_elevation>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:11_elevating")

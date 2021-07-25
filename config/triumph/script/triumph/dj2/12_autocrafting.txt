@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:methodology_processor>)
+setTitle("Autocrafting!")
+setDescription("Make an Methodology Processor to unlock AE2 Autocrafting!")
+
+addParent("triumph:dj2/root")
+setPos(105,216)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasMethodologyProcessor", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:methodology_processor>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:12_autocrafting")

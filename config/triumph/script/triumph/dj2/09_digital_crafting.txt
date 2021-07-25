@@ -1,0 +1,14 @@
+setIcon(<appliedenergistics2:part:360>)
+setTitle("Digital Crafting")
+setDescription("Make a Crafting Terminal so you can directly use the items in your ME System to craft!")
+
+addParent("triumph:dj2/root")
+setPos(3,216)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasCraftingTerminal", "minecraft:inventory_changed")
+criteria.addItem(<appliedenergistics2:part:360>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:09_digital_crafting")

@@ -1,0 +1,14 @@
+setIcon(<rftools:builder>)
+setTitle("Dig dig dig")
+setDescription("Make a Builder as your first Quarry!")
+
+addParent("triumph:dj2/root")
+setPos(37,216)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasBuilder", "minecraft:inventory_changed")
+criteria.addItem(<rftools:builder>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:10_dig_dig_dig")

@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:key_to_infinity>)
+setTitle("Discovering the Meaning of Life")
+setDescription("Obtain the Key to Infinity and unlock the Bag of Truth!")
+
+addParent("triumph:dj2/root")
+setPos(157,216)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasKeyToInfinity", "minecraft:inventory_changed")
+criteria.addItem(<contenttweaker:key_to_infinity>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:25_discovering_the_meaning_of_life")

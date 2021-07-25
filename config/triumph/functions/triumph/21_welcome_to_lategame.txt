@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Draconic Trophy",TrophyVariant:"neon",TrophyItem:{id:"draconicevolution:draconic_core",Count:1b,Damage:0s},TrophyColorRed:59,TrophyColorGreen:68,TrophyColorBlue:199}

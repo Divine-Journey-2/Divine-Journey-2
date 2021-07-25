@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Elevating Trophy",TrophyVariant:"neon",TrophyItem:{id:"contenttweaker:ingot_of_elevation",Count:1b,Damage:0s},TrophyColorRed:152,TrophyColorGreen:238,TrophyColorBlue:150}

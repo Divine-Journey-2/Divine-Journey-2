@@ -1,0 +1,15 @@
+setIcon(<contenttweaker:corrupted_dragon_token>)
+
+setTitle("Divine Journey 2 challenges")
+
+setDescription("Make your friends proud (or jelous) by completing these progression related advancements!")
+
+setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+setHidden(true)
+
+addCriteria("impossible", "minecraft:impossible")

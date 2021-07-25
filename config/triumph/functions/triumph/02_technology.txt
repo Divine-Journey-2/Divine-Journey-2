@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Engineer's Trophy",TrophyVariant:"neon",TrophyItem:{id:"immersiveengineering:tool",Count:1b,Damage:0s},TrophyColorRed:117,TrophyColorGreen:117,TrophyColorBlue:117}

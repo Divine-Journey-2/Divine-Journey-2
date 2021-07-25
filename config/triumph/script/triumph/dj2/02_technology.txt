@@ -1,0 +1,14 @@
+setIcon(<immersiveengineering:tool>)
+setTitle("Technology!")
+setDescription("Obtain an Engineer's Hammer to start Immersive Engineering!")
+
+addParent("triumph:dj2/root")
+setPos(-31,182)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasEngineersHammer", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:tool>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:02_technology")

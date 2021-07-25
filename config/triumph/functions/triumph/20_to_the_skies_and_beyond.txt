@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Galactic Trophy",TrophyVariant:"neon",TrophyItem:{id:"galacticraftcore:rocket_t1",Count:1b,Damage:0s},TrophyColorRed:117,TrophyColorGreen:117,TrophyColorBlue:117}

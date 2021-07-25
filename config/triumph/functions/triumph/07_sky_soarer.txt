@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Explorer of the Skies Trophy",TrophyVariant:"neon",TrophyItem:{id:"contenttweaker:resonating_orb",Count:1b,Damage:0s},TrophyColorRed:191,TrophyColorGreen:87,TrophyColorBlue:206}

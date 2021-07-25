@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Witches' Trophy",TrophyVariant:"neon",TrophyItem:{id:"bewitchment:witches_oven",Count:1b,Damage:0s},TrophyColorRed:58,TrophyColorGreen:58,TrophyColorBlue:58}

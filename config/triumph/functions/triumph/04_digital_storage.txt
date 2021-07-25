@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Applicibly Energized Trophy",TrophyVariant:"neon",TrophyItem:{id:"appliedenergistics2:energy_acceptor",Count:1b,Damage:0s},TrophyColorRed:189,TrophyColorGreen:189,TrophyColorBlue:189}

@@ -82,9 +82,11 @@ for i in 0 to 26 {
 
 # IT1
 recipes.addHiddenShaped("it1", <contenttweaker:it1>, [[<contenttweaker:glyph_fork>, <contenttweaker:glyph_lash>, <contenttweaker:glyph_lash>],[<contenttweaker:glyph_fish>, <contenttweaker:glyph_pair>, <contenttweaker:glyph_scythe>],[<contenttweaker:glyph_tent>, <contenttweaker:glyph_wave>, null]]);
+mods.jei.JEI.hide(<contenttweaker:it1>);
 
 # IT2
 recipes.addHiddenShaped("it2", <contenttweaker:it2>, [[<contenttweaker:glyph_tongue>, <contenttweaker:glyph_shield>, <contenttweaker:glyph_fish>],[<contenttweaker:glyph_fish>, <contenttweaker:glyph_waterfall>, null],[null, null, null]]);
+mods.jei.JEI.hide(<contenttweaker:it2>);
 
 # IT3
 /*mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:it3>,
@@ -117,9 +119,11 @@ mods.jei.JEI.addItem(puzzle_pieces_backpack);
 
 # IT3
 recipes.addHiddenShaped("it3", <contenttweaker:it3>, [[<contenttweaker:glyph_wave>,<contenttweaker:glyph_fork>,<contenttweaker:glyph_mirror>],[<contenttweaker:glyph_wave>,<contenttweaker:glyph_fork>,<contenttweaker:glyph_mirror>],[<contenttweaker:glyph_wave>,<contenttweaker:glyph_fork>,<contenttweaker:glyph_mirror>]]);
+mods.jei.JEI.hide(<contenttweaker:it3>);
 
 # IT4
 recipes.addHiddenShaped("it4", <contenttweaker:it4>, [[<contenttweaker:glyph_tent>,<contenttweaker:glyph_shield>,<contenttweaker:glyph_lash>],[<contenttweaker:glyph_lash>,<contenttweaker:glyph_shield>,<contenttweaker:glyph_tent>],[<contenttweaker:glyph_tent>,<contenttweaker:glyph_shield>,<contenttweaker:glyph_lash>]]);
+mods.jei.JEI.hide(<contenttweaker:it4>);
 
 # Corrupted Key to Infinity
 recipes.addHiddenShaped("ckoi", <contenttweaker:corrupted_key_to_infinity>, [[<contenttweaker:creative_singularity>,<contenttweaker:it4>,<contenttweaker:creative_singularity>],[<contenttweaker:it3>,<contenttweaker:key_to_infinity>,<contenttweaker:it2>],[<contenttweaker:creative_singularity>,<contenttweaker:it1>,<contenttweaker:creative_singularity>]]);

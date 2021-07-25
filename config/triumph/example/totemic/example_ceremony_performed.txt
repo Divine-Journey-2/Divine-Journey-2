@@ -1,0 +1,27 @@
+
+//This tells the script parser that the script requires Totemic. If the mod is not loaded, the script will be canceled.
+Parser.addRequiredMod("totemic")
+
+//Set the icon item
+setIcon(<totemic:buffalo_items>)
+
+//Set the title String
+setTitle("Ceremony")
+
+//Set the description String
+setDescription("Perform the buffalo dance ceremony")
+
+//Add a parent advancement. The syntax is "modid:folder/path/to/the/advancement/then/filename"
+addParent("triumph:example/root")
+
+//Set the position
+setPos(172,17)
+
+//Hide the connection lines, so I can have a pretty shape
+hideLines()
+
+//Adds criteria named "performed" with the trigger type "totemic:perform_ceremony". This function returns the criteria as an object
+criteria = addCriteria("performed", "totemic:perform_ceremony")
+
+//Sets the ceremony that must be performed.
+criteria.setCeremony("totemic:buffalo_dance")

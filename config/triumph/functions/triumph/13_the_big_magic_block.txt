@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Bloodmage's Trophy",TrophyVariant:"neon",TrophyItem:{id:"bloodmagic:altar",Count:1b,Damage:0s},TrophyColorRed:177,TrophyColorGreen:56,TrophyColorBlue:55}

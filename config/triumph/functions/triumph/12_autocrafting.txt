@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Automater's Trophy",TrophyVariant:"neon",TrophyItem:{id:"contenttweaker:methodology_processor",Count:1b,Damage:0s},TrophyColorRed:167,TrophyColorGreen:166,TrophyColorBlue:254}

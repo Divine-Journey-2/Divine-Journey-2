@@ -1,0 +1,14 @@
+setIcon(<alchemistry:chemical_dissolver>)
+setTitle("In my Element")
+setDescription("Craft a Chemical Dissolver to unlock Alchemistry!")
+
+addParent("triumph:dj2/root")
+setPos(37,284)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasChemicalDissolver", "minecraft:inventory_changed")
+criteria.addItem(<alchemistry:chemical_dissolver>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:22_in_my_element")

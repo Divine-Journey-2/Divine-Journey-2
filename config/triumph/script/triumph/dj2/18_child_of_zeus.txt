@@ -1,0 +1,14 @@
+setIcon(<lightningcraft:lightning_infuser>)
+setTitle("Child of Zeus")
+setDescription("Craft a Lightning Infusion Table to enter LightninCraft!")
+
+addParent("triumph:dj2/root")
+setPos(105,250)
+hideLines()
+alwaysVisible()
+
+criteria = addCriteria("hasLightningInfusionTable", "minecraft:inventory_changed")
+criteria.addItem(<lightningcraft:lightning_infuser>)
+
+addRewardFunction("triumph:fireworks")
+addRewardFunction("triumph:18_child_of_zeus")

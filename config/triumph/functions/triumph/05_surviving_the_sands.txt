@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Survivor of the Sands Trophy",TrophyVariant:"neon",TrophyItem:{id:"contenttweaker:atum_warrior",Count:1b,Damage:0s},TrophyColorRed:38,TrophyColorGreen:44,TrophyColorBlue:163}

@@ -1,0 +1,1 @@
+give @p simple_trophies:trophy 1 0 {TrophyName:"Lightning Trophy",TrophyVariant:"neon",TrophyItem:{id:"lightningcraft:lightning_infuser",Count:1b,Damage:0s},TrophyColorRed:202,TrophyColorGreen:178,TrophyColorBlue:0}
