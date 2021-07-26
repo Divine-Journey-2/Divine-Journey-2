@@ -1405,5 +1405,21 @@ si.itemRightClick = function(stack, world, player, hand) {
 };
 si.rarity = "EPIC";
 si.register();
+var asteroids_door_key = VanillaFactory.createItem("asteroids_door_key");
+asteroids_door_key.maxStackSize = 1;
+asteroids_door_key.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:asteroids_door", player, world, false, true);
+    return "Pass";
+};
+var asteroids_key_fragment = VanillaFactory.createItem("asteroids_key_fragment");
+asteroids_key_fragment.register();
+var moon_door_key = VanillaFactory.createItem("moon_door_key");
+moon_door_key.maxStackSize = 1;
+moon_door_key.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:moon_door", player, world, false, true);
+    return "Pass";
+};
+var moon_key_fragment = VanillaFactory.createItem("moon_key_fragment");
+moon_key_fragment.register();
 
 print("ENDING ContentTweakerItems.zs");

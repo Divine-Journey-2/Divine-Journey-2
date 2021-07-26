@@ -407,4 +407,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_stor
 [<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>], 
 [<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>]]);
 
+# Pattern Expansion Card
+recipes.remove(<appliedenergistics2:material:58>);
+recipes.addShapedMirrored(<appliedenergistics2:material:58>, [[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null],[<appliedenergistics2:interface>,<appliedenergistics2:material:28>,<thermalfoundation:material:160>],[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null]]);
+
 print("ENDING AppliedEnergistics2.zs");

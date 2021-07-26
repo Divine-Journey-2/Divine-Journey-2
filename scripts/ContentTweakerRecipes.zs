@@ -408,11 +408,11 @@ recipes.addShapedMirrored(<contenttweaker:redstone_star>, [[<minecraft:redstone>
 # Unholy Token
 recipes.addShaped(<contenttweaker:unholy_token>, [[<contenttweaker:ayeraco_wing>,<contenttweaker:eye_of_the_watcher>,<contenttweaker:ayeraco_wing>],[<contenttweaker:ayeraco_wing>,<contenttweaker:ancient_leg>,<contenttweaker:ayeraco_wing>],[null,<contenttweaker:ancient_leg>,null]]);
 
-# Eden, Wildwood, Apalachia, Skythern & Mortum Door Key Tooltips
-val divinerpg_keys = [<contenttweaker:eden_door_key>,<contenttweaker:wildwood_door_key>,<contenttweaker:apalachia_door_key>,<contenttweaker:skythern_door_key>,<contenttweaker:mortum_door_key>] as IItemStack[];
-for i in 0 to 5 {
-	divinerpg_keys[i].addTooltip(format.red("Right Click to clear any " + divinerpg_dimension_names_upper[i] + " Door Blocks in a 5 block radius."));
-	divinerpg_keys[i].addTooltip(format.red("If none are found, it shows an error message in chat."));
+# Eden, Wildwood, Apalachia, Skythern, Mortum & Asteroids Door Key Tooltips
+val divinerpg_galacticraft_keys = [<contenttweaker:eden_door_key>,<contenttweaker:wildwood_door_key>,<contenttweaker:apalachia_door_key>,<contenttweaker:skythern_door_key>,<contenttweaker:mortum_door_key>,<contenttweaker:moon_door_key>,<contenttweaker:asteroids_door_key>] as IItemStack[];
+for i in 0 to 6 {
+	divinerpg_galacticraft_keys[i].addTooltip(format.red("Right Click to clear any " + divinerpg_galacticraft_dimension_names_upper[i] + " Door Blocks in a 5 block radius."));
+	divinerpg_galacticraft_keys[i].addTooltip(format.red("If none are found, it shows an error message in chat."));
 }
 
 # Dread Crystal
@@ -1390,6 +1390,12 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 # Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
 <contenttweaker:apalachia_door_key2>.addTooltip(format.red("Use it the same way as the previous key to ascend further."));
+
+# Moon Door Key from Fragments
+recipes.addShaped(<contenttweaker:moon_door_key>, [[<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>]]);
+
+# Asteroids Door Key from Fragments
+recipes.addShaped(<contenttweaker:asteroids_door_key>, [[<contenttweaker:asteroids_key_fragment>,<contenttweaker:asteroids_key_fragment>],[<contenttweaker:asteroids_key_fragment>,<contenttweaker:asteroids_key_fragment>]]);
 
 # G.E.R.C. Crystal Block <-> Gerbutil Erbid Radiqvatic Curiopolychloriphosphate
 recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>],[<alchemistry:compound:1010>,<alchemistry:compound:1010>,<alchemistry:compound:1010>]]);

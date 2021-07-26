@@ -5987,7 +5987,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Finally! Crucible automation!",
-          "desc:8": "Craft some Alchemical Constructs! Although this quest only requires one, you\u0027ll definitely need more if you want to automate Crucible recipes. By placing 2 of these above a single Crucible, then Right Clicking the structure with a Salis Mundus, you\u0027ll transform it into a Thaumatorium! You can simply pump Essentia into the sides of this machine to automate any Crucible recipe."
+          "desc:8": "Craft some Alchemical Constructs! Although this quest only requires one, you\u0027ll definitely need more if you want to automate Crucible recipes. By placing 2 of these above a single Crucible, then Right Clicking the structure with a Salis Mundus, you\u0027ll transform it into a Thaumatorium! You can simply pump Essentia into the sides of this machine to automate any Crucible recipe.\n\nNote that each side only accepts 1 type of Essentia at once. Also if you put a Chest in front of the machine, the outputs will end up in there."
         }
       },
       "tasks:9": {

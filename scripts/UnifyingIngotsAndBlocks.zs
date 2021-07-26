@@ -344,6 +344,7 @@ recipes.remove(<immersiveengineering:metal:3>);
 furnace.addRecipe(<thermalfoundation:material:130>, <erebus:ore_silver>);
 Grinder.removeRecipe(<projectred-core:resource_item:102>);
 Grinder.removeRecipe(<erebus:materials:45>);
+Grinder.removeRecipe(<immersiveengineering:metal:3>);
 Grinder.removeRecipe(<bewitchment:silver_ingot>);
 Grinder.removeRecipe(<alchemistry:ingot:47>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
@@ -354,6 +355,10 @@ recipes.remove(<bewitchment:silver_nugget>);
 recipes.remove(<immersiveengineering:metal:23>);
 recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials:45>]);
 
+# Silver Block
+recipes.removeShaped(<thermalfoundation:storage:2>, [[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]]);
+recipes.addShaped(<thermalfoundation:storage:2>, [[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>]]);
+
 # Lead Ingot
 recipes.remove(<galacticraftplanets:atomic_battery>);
 <ore:ingotLead>.removeItems([<galacticraftplanets:basic_item_venus:1>,<erebus:materials:44>,<alchemistry:ingot:82>,<immersiveengineering:metal:2>]);
@@ -361,6 +366,22 @@ mods.appliedenergistics2.Grinder.removeRecipe(<galacticraftplanets:basic_item_ve
 mods.appliedenergistics2.Grinder.removeRecipe(<erebus:materials:44>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:82>);
 mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:2>);
+furnace.remove(<erebus:materials:44>, <erebus:ore_lead>);
+furnace.addRecipe(<thermalfoundation:material:131>, <erebus:ore_lead>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:2>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:67>, <thermalfoundation:material:131>, null, 100, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:67> * 2, <ore:oreLead>, <immersiveengineering:material:7>, 200, 512);
+furnace.remove(<immersiveengineering:metal:2>);
+furnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>);
+furnace.addRecipe(<thermalfoundation:material:131>, <ore:oreLead>);
+mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:67>);
+mods.thermalexpansion.RedstoneFurnace.removeRecipe(<ore:oreLead>.firstItem);
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:67>, <thermalfoundation:material:131>, 3600);
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:67>, <ore:oreLead>.firstItem, 3600);
+
+# Lead Block
+recipes.removeShaped(<thermalfoundation:storage:3>, [[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>]]);
+recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>]]);
 
 # Electrum Ingot
 <ore:ingotElectrum>.remove(<immersiveengineering:metal:7>);

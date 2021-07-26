@@ -697,3 +697,7 @@ item.contenttweaker.creative_mesh.name=Creative Mesh
 item.contenttweaker.creative_singularity.name=Creative Singularity
 item.contenttweaker.call_of_the_underworld.name=Call of the Underworld
 item.contenttweaker.heavens_cleansing.name=Heaven's Cleansing
+item.contenttweaker.asteroids_door_key.name=Asteroids Door Key
+item.contenttweaker.asteroids_key_fragment.name=Asteroids Key Fragment
+item.contenttweaker.moon_door_key.name=Moon Door Key
+item.contenttweaker.moon_key_fragment.name=Moon Key Fragment

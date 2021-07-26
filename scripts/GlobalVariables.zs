@@ -34,7 +34,7 @@ global vetheaPlanks as IOreDictEntry = <ore:vetheaPlankWood>;
 vetheaPlanks.addItems([<contenttweaker:planks_hyrewood>, <contenttweaker:planks_mintwood>, <contenttweaker:planks_firewood>]);
 
 global divinerpg_dimension_names_lower as string[] = ["eden", "wildwood", "apalachia", "skythern", "mortum"];
-global divinerpg_dimension_names_upper as string[] = ["Eden", "Wildwood", "Apalachia", "Skythern", "Mortum"];
+global divinerpg_galacticraft_dimension_names_upper as string[] = ["Eden", "Wildwood", "Apalachia", "Skythern", "Mortum", "Moon", "Asteroids"];
 # itemUtils.getItem("minecraft:apple");
 
 global dimensional_stones as IItemStack[] = [<divinerpg:frozen_stone>,<divinerpg:twilight_stone>,<aether_legacy:holystone:*>,<atum:limestone>,<erebus:umberstone>,<abyssalcraft:stone:1>,<abyssalcraft:stone:2>,<abyssalcraft:stone:3>];
