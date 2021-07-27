@@ -18,7 +18,8 @@ recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecr
 # Witch Hat
 <quark:witch_hat>.addTooltip(format.white("Dropped rarely by Witches."));
 
-# Dragon Scale from Mystical Agriculture
+# Dragon Scale tooltip & recipe from Mystical Agriculture Essences
+<quark:enderdragon_scale>.addTooltip(format.white("Obtained after defeating the Ender Dragon for the second or more time."));
 recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysticalagradditions:stuff:2>]);
 
 print("ENDING Quark.zs");

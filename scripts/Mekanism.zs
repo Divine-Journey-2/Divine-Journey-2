@@ -611,19 +611,19 @@ mods.extendedcrafting.TableCrafting.addShaped(<mekanism:energycube>.withTag({tie
 
 # Creative Fluid Tank
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:machineblock2:11>.withTag({tier: 4}),
-[[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>], 
+[[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>], 
 [<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>], 
 [<alchemistry:ingot:73>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:73>], 
 [<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>], 
-[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>]]);
+[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>]]);
 
 # Creative Gas Tank
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:gastank>.withTag({tier: 4}),
-[[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
+[[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
 [<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
 [<alchemistry:ingot:62>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:62>], 
 [<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>], 
-[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>]]);
+[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>]]);
 
 # Creative Bin
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:basicblock:6>.withTag({tier: 4}),

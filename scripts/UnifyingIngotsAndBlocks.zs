@@ -386,6 +386,17 @@ recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:1
 # Electrum Ingot
 <ore:ingotElectrum>.remove(<immersiveengineering:metal:7>);
 mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:7>);
+mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:7>);
+mods.immersiveengineering.AlloySmelter.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, <thermalfoundation:material:130>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, <thermalfoundation:material:66>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, <thermalfoundation:material:66>, 200);
+mods.immersiveengineering.AlloySmelter.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, <thermalfoundation:material:130>, 200);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:7>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, null, 100, 512, [<thermalfoundation:material:130>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, null, 100, 512, [<thermalfoundation:material:66>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, null, 100, 512, [<thermalfoundation:material:66>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, null, 100, 512, [<thermalfoundation:material:130>], "Alloying");
+
 
 # Nickel Ingot
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);

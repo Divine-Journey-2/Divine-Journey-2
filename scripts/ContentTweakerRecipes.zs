@@ -1402,7 +1402,7 @@ recipes.addShaped(<contenttweaker:gerc_crystal>, [[<alchemistry:compound:1010>,<
 recipes.addShapeless(<alchemistry:compound:1010> * 9, [<contenttweaker:gerc_crystal>]);
 
 # Minecraft Singularity
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:minecraft_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity_custom:101>,<extendedcrafting:singularity:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:minecraft_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:100>,<extendedcrafting:singularity>,<extendedcrafting:singularity:1>,<extendedcrafting:singularity:2>,<extendedcrafting:singularity:3>,<extendedcrafting:singularity:5>,<extendedcrafting:singularity:6>,<extendedcrafting:singularity:7>,<extendedcrafting:singularity_custom:101>,<extendedcrafting:singularity:4>]);
 
 # Thermal Singularity
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thermal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:16>,<extendedcrafting:singularity:17>,<extendedcrafting:singularity:18>,<extendedcrafting:singularity:22>,<extendedcrafting:singularity:23>,<extendedcrafting:singularity:25>,<extendedcrafting:singularity:35>,<extendedcrafting:singularity:34>]);
@@ -1693,14 +1693,13 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:essence_of_the_unbrok
 
 # Essence of Ways
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_ways>,
-[[null,<galacticraftplanets:walkway>,<bewitchment:waystone>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<bewitchment:waystone>,<galacticraftplanets:walkway>],
-[null,<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
-[<galacticraftplanets:walkway>,<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<astralsorcery:blockcelestialgateway>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
-[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<botania:alfheimportal>,<botania:alfheimportal>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>],
-[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>,<galacticraftplanets:walkway>],
-[<galacticraftplanets:walkway>,<projecte:item.pe_matter>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<projecte:item.pe_matter>,<galacticraftplanets:walkway>,null],
-[<galacticraftplanets:walkway>,<bewitchment:waystone>,<botania:alfheimportal>,<astralsorcery:blockcelestialgateway>,<bewitchment:waystone>,<galacticraftplanets:walkway>,null]]);
-
+[[<galacticraftplanets:walkway>, <contenttweaker:clay>, <bewitchment:waystone>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <bewitchment:waystone>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <botania:alfheimportal>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>], 
+[<galacticraftplanets:walkway>, <bewitchment:waystone>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <bewitchment:waystone>, <contenttweaker:clay>, <galacticraftplanets:walkway>]]);
 # Essence of Length
 mods.avaritia.Compressor.add("essence_of_length", <contenttweaker:essence_of_length>, 200, <enderutilities:ruler>, true);
 
@@ -1788,6 +1787,10 @@ mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_op
 
 # Ultimate Machine Frame
 recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>]]);
+
+# Colored Light Antigelatinous Yielding (C.L.A.Y.)
+# recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_clay.json
+<contenttweaker:clay>.addTooltip(format.darkPurple(format.italic("Finally balanced!")));
 
 # Nature's Blessing
 mods.botania.RuneAltar.addRecipe(<contenttweaker:natures_blessing>, [<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_mana>,<contenttweaker:rune_of_deception>], 1000000);

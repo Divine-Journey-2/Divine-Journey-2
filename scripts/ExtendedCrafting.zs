@@ -137,4 +137,18 @@ mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:40>, [[
 # Ultimate Ingot
 # recipe in OreProcessingAdditions.zs
 
+# Removing unused components
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:8>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:9>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:10>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:11>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:12>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:13>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:14>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:15>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:16>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:17>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:18>);
+mods.jei.JEI.removeAndHide(<extendedcrafting:material:19>);
+
 print("ENDING ExtendedCrafting.zs");

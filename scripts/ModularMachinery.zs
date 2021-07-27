@@ -193,4 +193,8 @@ recipes.addShaped(<modularmachinery:blockcasing:5>, [[<modularmachinery:blockcas
 # Machine Gearbox
 recipes.addShaped(<modularmachinery:blockcasing:3>, [[<modularmachinery:blockcasing:4>,<contenttweaker:vmb_compound>,<modularmachinery:blockcasing:4>],[<contenttweaker:vmb_compound>,<contenttweaker:titanium_gear>,<contenttweaker:vmb_compound>],[<modularmachinery:blockcasing:4>,<contenttweaker:vmb_compound>,<modularmachinery:blockcasing:4>]]);
 
+# Removing unused components
+recipes.remove(<modularmachinery:blockenergyoutputhatch>);
+recipes.remove(<modularmachinery:blockenergyoutputhatch:1>);
+
 print("ENDING ModularMachinery.zs");

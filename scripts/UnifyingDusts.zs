@@ -117,6 +117,7 @@ unifyMekanismDust(<mekanism:dust:4>, <thermalfoundation:material:65>, tinOres, u
 val silverOres = [<bewitchment:silver_ore>,<immersiveengineering:ore:3>,<erebus:ore_silver>,<thermalfoundation:ore:2>] as IItemStack[];
 val undergroundBiomesSilverOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.silver.name:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:5>, <thermalfoundation:material:66>, silverOres, undergroundBiomesSilverOres, <mekanism:dirtydust:5>, <thermalfoundation:material:130>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130>, <thermalfoundation:material:66>, null, 100, 512);
 
 # Lead Dust
 #recipes.replaceAllOccurences(<ore:dustLead>, <thermalfoundation:material:67>, <*>);
@@ -124,6 +125,7 @@ unifyMekanismDust(<mekanism:dust:5>, <thermalfoundation:material:66>, silverOres
 val leadOres = [<erebus:ore_lead>,<immersiveengineering:ore:2>,<thermalfoundation:ore:3>] as IItemStack[];
 val undergroundBiomesLeadOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:6>, <thermalfoundation:material:67>, leadOres, undergroundBiomesLeadOres, <mekanism:dirtydust:6>, <thermalfoundation:material:131>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>, null, 100, 512);
 
 # Aluminum Dust
 #recipes.replaceAllOccurences(<ore:dustAluminum>, <thermalfoundation:material:68>, <*>);

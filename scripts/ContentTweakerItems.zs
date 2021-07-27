@@ -1203,6 +1203,9 @@ taste_the_rainbow.rarity = "EPIC";
 taste_the_rainbow.register();
 var corruption_core = VanillaFactory.createItem("corruption_core");
 corruption_core.register();
+var clay = VanillaFactory.createItem("clay");
+clay.rarity = "RARE";
+clay.register();
 var essence_of_life = VanillaFactory.createItem("essence_of_life");
 essence_of_life.rarity = "EPIC";
 essence_of_life.register();
@@ -1411,6 +1414,7 @@ asteroids_door_key.itemRightClick = function(stack, world, player, hand) {
     Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:asteroids_door", player, world, false, true);
     return "Pass";
 };
+asteroids_door_key.register();
 var asteroids_key_fragment = VanillaFactory.createItem("asteroids_key_fragment");
 asteroids_key_fragment.register();
 var moon_door_key = VanillaFactory.createItem("moon_door_key");
@@ -1419,6 +1423,7 @@ moon_door_key.itemRightClick = function(stack, world, player, hand) {
     Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:moon_door", player, world, false, true);
     return "Pass";
 };
+moon_door_key.register();
 var moon_key_fragment = VanillaFactory.createItem("moon_key_fragment");
 moon_key_fragment.register();
 

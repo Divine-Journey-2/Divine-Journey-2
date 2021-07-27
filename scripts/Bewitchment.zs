@@ -206,6 +206,8 @@ recipes.addShapedMirrored(<bewitchment:bone_needle>, [[null,null,<minecraft:bone
 # Poppet
 recipes.remove(<bewitchment:poppet>);
 recipes.addShapedMirrored(<bewitchment:poppet>, [[<contenttweaker:magical_leather>,<thaumcraft:mind>,<contenttweaker:magical_leather>],[<bewitchment:bone_needle>,<contenttweaker:gypsum>,<bewitchment:spirit_string>],[<contenttweaker:magical_leather>,<contenttweaker:gypsum>,<contenttweaker:magical_leather>]]);
+recipes.addShapedMirrored(<bewitchment:poppet>, [[<contenttweaker:magical_leather>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:magical_leather>],[<bewitchment:bone_needle>,<contenttweaker:gypsum>,<alchemistry:compound:24>],[<contenttweaker:magical_leather>,<contenttweaker:gypsum>,<contenttweaker:magical_leather>]]);
+
 
 # Bottled Frostfire
 Distillery.removeRecipe(<bewitchment:bottled_frostfire>);
