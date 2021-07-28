@@ -147,6 +147,10 @@ mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <l
 # Dragon's Blood Sapling
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 250,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);
 
+# Dragon's Blood Chest
+recipes.remove(<bewitchment:dragons_blood_chest>);
+recipes.addShaped(<bewitchment:dragons_blood_chest>, [[<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_planks>,<bewitchment:dragons_blood_wood>],[<bewitchment:dragons_blood_planks>,<bewitchment:dragons_blood_resin>,<bewitchment:dragons_blood_planks>],[<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_planks>,<bewitchment:dragons_blood_wood>]]);
+
 # Ritual Chalk
 recipes.remove(<bewitchment:ritual_chalk>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:ritual_chalk", "", <bewitchment:ritual_chalk>, 1, [<aspect:terra> * 20,<aspect:cognitio> * 10,<aspect:praecantatio> * 10], <undergroundbiomes:sedimentary_stone:1>, [<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>,<contenttweaker:gypsum>,<bewitchment:salt>]);
@@ -465,6 +469,5 @@ mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 [<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
 [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
 [<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>]]);
-
 
 print("ENDING Bewitchment.zs");

@@ -230,7 +230,7 @@ recipes.addShapedMirrored(<industrialforegoing:meat_feeder>, [[null,<enderio:ite
 
 # Mob Imprisonment Tool
 recipes.remove(<industrialforegoing:mob_imprisonment_tool>);
-recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [[<industrialforegoing:plastic>,<minecraft:ghast_tear>,<industrialforegoing:plastic>],[<minecraft:ghast_tear>,<enderio:item_soul_vial>,<minecraft:ghast_tear>],[<industrialforegoing:plastic>,<minecraft:ghast_tear>,<industrialforegoing:plastic>]]);
+recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [[<industrialforegoing:plastic>,<draconicevolution:wyvern_core>,<industrialforegoing:plastic>],[<draconicevolution:wyvern_core>,<enderio:item_soul_vial>,<draconicevolution:wyvern_core>],[<industrialforegoing:plastic>,<draconicevolution:wyvern_core>,<industrialforegoing:plastic>]]);
 
 function addIFLaserLensRecipe(output as IItemStack, input_glass_pane as IIngredient) {
 	recipes.remove(output);

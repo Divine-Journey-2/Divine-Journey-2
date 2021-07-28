@@ -651,10 +651,62 @@ mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimension
 # Corrupted Draconium Dust
 addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>, <contenttweaker:corrupted_draconium_dust>);
 
-# Jade
+# Jade Ore
 mods.enderio.SagMill.removeRecipe(<erebus:ore_jade>);
 mods.enderio.SagMill.addRecipe([<erebus:materials:1> * 2, <erebus:materials:1>, <erebus:umberstone:1>], [100, 50, 15], <erebus:ore_jade>, "CHANCE_ONLY");
-# more Erebus Ore fixes necessary
+
+# Erebus Iron Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_iron>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material> * 2, <thermalfoundation:material:65>, <thermalfoundation:material:69>, <erebus:umberstone:1>], [100, 5, 10, 15], <erebus:ore_iron>, "CHANCE_ONLY");
+
+# Erebus Gold Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_gold>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:64>, <erebus:umberstone:1>], [100, 20, 15], <erebus:ore_gold>, "CHANCE_ONLY");
+
+# Erebus Coal Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_coal>);
+mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>, <erebus:umberstone:1>], [100, 60, 0.1, 15], <erebus:ore_coal>, "CHANCE_ONLY");
+
+# Erebus Diamond Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_diamond>);
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:umberstone:1>], [100, 25, 5, 15], <erebus:ore_diamond>, "CHANCE_ONLY");
+
+# Erebus Emerald Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_emerald>);
+mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>, <erebus:umberstone:1>], [100, 25, 15], <erebus:ore_emerald>, "CHANCE_ONLY");
+
+# Erebus Lapis Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_lapis>);
+mods.enderio.SagMill.addRecipe([<minecraft:dye:4> * 8, <minecraft:dye:4>, <erebus:umberstone:1>], [100, 20, 15], <erebus:ore_lapis>, "CHANCE_ONLY");
+
+# Erebus Quartz Ore
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_quartz>, "CHANCE_ONLY");
+
+# Petrified Quartz Ore
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:petrified_log_inner>], [100, 10, 15], <erebus:ore_petrified_quartz>, "CHANCE_ONLY");
+
+# Erebus Copper Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_copper>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64> * 2, <thermalfoundation:material:1>, <erebus:umberstone:1>], [100, 12, 15], <erebus:ore_copper>, "CHANCE_ONLY");
+
+# Erebus Silver Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_silver>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2, <thermalfoundation:material:67>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_silver>, "CHANCE_ONLY");
+
+# Erebus Tin Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_tin>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:65> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_tin>, "CHANCE_ONLY");
+
+# Erebus Lead Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_lead>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:67> * 2, <thermalfoundation:material:66>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_lead>, "CHANCE_ONLY");
+
+# Erebus Alumium Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_aluminium>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_aluminium>, "CHANCE_ONLY");
+
+# Volcanic Diamond Ore
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:volcanic_rock>], [100, 25, 5, 15], <erebus:ore_encrusted_diamond>, "CHANCE_ONLY");
 
 # Ultimate Ingot
 IECrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4000);
@@ -665,6 +717,5 @@ EUCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity
 mods.enderio.SagMill.addRecipe([<extendedcrafting:material:32> * 64], [100], <extendedcrafting:singularity_ultimate>);
 LightningCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
 mods.mekanism.crusher.addRecipe(<extendedcrafting:singularity_ultimate>, <extendedcrafting:material:32> * 64);
-
 
 print("ENDING OreProcessingAdditions.zs");

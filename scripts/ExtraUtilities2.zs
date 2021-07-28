@@ -438,7 +438,6 @@ recipes.addShaped(<extrautils2:goldenlasso>, [[<minecraft:gold_block>,<thermalfo
 
 # Cursed Lasso
 recipes.remove(<extrautils2:goldenlasso:1>);
-recipes.addShaped(<extrautils2:goldenlasso:1>, [[<enderio:block_alloy:6>,<thermalfoundation:material:135>,<enderio:block_alloy:6>],[<thermalfoundation:material:135>,<enderio:item_soul_vial>,<thermalfoundation:material:135>],[<enderio:block_alloy:6>,<thermalfoundation:material:135>,<enderio:block_alloy:6>]]);
 
 # Dragon Egg Mill
 recipes.remove(<extrautils2:passivegenerator:8>);

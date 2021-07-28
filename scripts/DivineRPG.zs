@@ -85,6 +85,14 @@ divinerpg_new_gem_and_chunk_recipes(<divinerpg:skythern_fragments>, <divinerpg:s
 # Mortum Gem & Chunk
 divinerpg_new_gem_and_chunk_recipes(<divinerpg:mortum_fragments>, <divinerpg:mortum_gem>, <divinerpg:mortum_chunk>);
 
+# Eden Chest
+recipes.remove(<divinerpg:eden_chest>);
+recipes.addShaped(<divinerpg:eden_chest>, [[<divinerpg:eden_gem>,<divinerpg:eden_gem>,<divinerpg:eden_gem>],[<divinerpg:eden_gem>,<minecraft:iron_nugget>,<divinerpg:eden_gem>],[<divinerpg:eden_gem>,<divinerpg:eden_gem>,<divinerpg:eden_gem>]]);
+
+# Bone Chest
+recipes.remove(<divinerpg:bone_chest>);
+recipes.addShaped(<divinerpg:bone_chest>, [[<minecraft:bone_block>,<minecraft:bone>,<minecraft:bone_block>],[<minecraft:bone>,<minecraft:iron_nugget>,<minecraft:bone>],[<minecraft:bone_block>,<minecraft:bone>,<minecraft:bone_block>]]);
+
 # Heart of the Sunstorm
 <divinerpg:eden_heart>.addTooltip(format.white("To obtain, find a Sun Altar in Eden!"));
 <divinerpg:eden_heart>.addTooltip(format.white("Offer an Eden Chunk and defeat the Sunstorm!"));

@@ -22,4 +22,12 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<plustic:osmiridiumingot> * 2, 
 # Mirion Ingot
 mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot> * 4, <minecraft:glass>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
 
+# Centrifuge Core
+recipes.remove(<plustic:centrifuge:1>);
+recipes.addShaped(<plustic:centrifuge:1>, [[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,<tconstruct:seared_tank>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,<thermalexpansion:machine:10>,<thermalfoundation:material:136>]]);
+
+# Centrifuge Tank
+recipes.remove(<plustic:centrifuge>);
+recipes.addShaped(<plustic:centrifuge>, [[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,<tconstruct:seared_tank>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,<thermalfoundation:material:136>,<thermalfoundation:material:136>]]);
+
 print("ENDING PlusTiC.zs");

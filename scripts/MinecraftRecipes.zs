@@ -247,5 +247,7 @@ recipes.addShapeless(<minecraft:fireworks>, [<minecraft:firework_charge>,<minecr
 <ore:paper>.remove(<atum:scroll>);
 <ore:sugarcane>.remove(<betternether:nether_reed>);
 <ore:string>.removeItems([<atum:linen_thread>,<mysticalworld:silk_thread>]);
+<ore:chestWood>.removeItems([<atum:palm_crate>,<atum:deadwood_crate>]);
+<ore:rodBlaze>.remove(<atum:efreet_heart>);
 
 print("ENDING MinecraftRecipes.zs");

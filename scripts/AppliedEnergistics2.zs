@@ -5,6 +5,14 @@ import mods.appliedenergistics2.Inscriber;
 
 print("STARTING AppliedEnergistics2.zs");
 
+# Sky Stone Chest
+recipes.remove(<appliedenergistics2:sky_stone_chest>);
+recipes.addShaped(<appliedenergistics2:sky_stone_chest>, [[<appliedenergistics2:sky_stone_block>,<appliedenergistics2:sky_stone_block>,<appliedenergistics2:sky_stone_block>],[<appliedenergistics2:sky_stone_block>,<minecraft:iron_nugget>,<appliedenergistics2:sky_stone_block>],[<appliedenergistics2:sky_stone_block>,<appliedenergistics2:sky_stone_block>,<appliedenergistics2:sky_stone_block>]]);
+
+# Sky Stone Block Chest
+recipes.remove(<appliedenergistics2:smooth_sky_stone_chest>);
+recipes.addShaped(<appliedenergistics2:smooth_sky_stone_chest>, [[<appliedenergistics2:smooth_sky_stone_block>,<appliedenergistics2:smooth_sky_stone_block>,<appliedenergistics2:smooth_sky_stone_block>],[<appliedenergistics2:smooth_sky_stone_block>,<minecraft:iron_nugget>,<appliedenergistics2:smooth_sky_stone_block>],[<appliedenergistics2:smooth_sky_stone_block>,<appliedenergistics2:smooth_sky_stone_block>,<appliedenergistics2:smooth_sky_stone_block>]]);
+
 # Quartz Grindstone
 recipes.remove(<appliedenergistics2:grindstone>);
 recipes.addShaped(<appliedenergistics2:grindstone>, [[<ore:stone>,<ore:gearWood>,<ore:stone>],[<ore:cobblestone>,<contenttweaker:energized_certus_quartz_crystal>,<ore:cobblestone>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);

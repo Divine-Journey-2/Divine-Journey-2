@@ -20,4 +20,8 @@ furnace.addRecipe(<chisel:stonebrick2:9>, <chisel:stonebrick2:8>);
 recipes.removeShapeless(<minecraft:stone>, [<minecraft:stone_slab>, <minecraft:stone_slab>]);
 recipes.addShaped(<chisel:stonebrick2:8>, [[<minecraft:stone_slab>],[<minecraft:stone_slab>]]);
 
+# Auto Chisel
+recipes.remove(<chisel:auto_chisel>);
+recipes.addShaped(<chisel:auto_chisel>, [[<enderio:block_fused_quartz>,<enderio:block_fused_quartz>,<enderio:block_fused_quartz>],[<chisel:chisel_iron>,<thermalexpansion:frame>,<chisel:chisel_iron>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
+
 print("ENDING Chisel.zs");

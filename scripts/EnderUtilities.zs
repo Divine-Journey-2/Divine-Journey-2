@@ -114,7 +114,7 @@ recipes.remove(<enderutilities:enderpart:40>);
 
 # Jailer Module
 recipes.remove(<enderutilities:enderpart:45>);
-recipes.addShaped(<enderutilities:enderpart:45>, [[<enderutilities:enderpart:1>,<enderio:block_dark_iron_bars>,<enderutilities:enderpart:1>],[<enderio:block_dark_iron_bars>,<industrialforegoing:mob_imprisonment_tool>,<enderio:block_dark_iron_bars>],[<enderutilities:enderpart:1>,<enderio:block_dark_iron_bars>,<enderutilities:enderpart:1>]]);
+recipes.addShaped(<enderutilities:enderpart:45>, [[<enderutilities:enderpart:1>,<enderio:block_dark_iron_bars>,<enderutilities:enderpart:1>],[<enderio:block_dark_iron_bars>,<enderio:item_soul_vial>,<enderio:block_dark_iron_bars>],[<enderutilities:enderpart:1>,<enderio:block_dark_iron_bars>,<enderutilities:enderpart:1>]]);
 
 # Memory Card (misc)
 recipes.remove(<enderutilities:enderpart:50>);
@@ -129,7 +129,7 @@ recipes.removeShaped(<enderutilities:enderpart:53>, [[null,<minecraft:gold_ingot
 
 # Ender Lasso
 recipes.remove(<enderutilities:enderlasso>);
-recipes.addShaped(<enderutilities:enderlasso>, [[<divinerpg:ghast_pumpkin>,<extrautils2:goldenlasso:1>,<divinerpg:ghast_pumpkin>],[<extrautils2:goldenlasso:1>,<enderutilities:enderpart:17>,<extrautils2:goldenlasso:1>],[<divinerpg:ghast_pumpkin>,<extrautils2:goldenlasso:1>,<divinerpg:ghast_pumpkin>]]);
+recipes.addShaped(<enderutilities:enderlasso>, [[<divinerpg:ghast_pumpkin>,<extrautils2:goldenlasso>,<divinerpg:ghast_pumpkin>],[<extrautils2:goldenlasso>,<enderutilities:enderpart:17>,<extrautils2:goldenlasso>],[<divinerpg:ghast_pumpkin>,<extrautils2:goldenlasso>,<divinerpg:ghast_pumpkin>]]);
 
 # Barrel
 recipes.remove(<enderutilities:barrel>);
@@ -239,7 +239,7 @@ recipes.addShaped(<enderutilities:inventoryswapper>, [[<enderutilities:enderpart
 
 # Living Matter Manipulator
 recipes.remove(<enderutilities:livingmanipulator>);
-recipes.addShapedMirrored(<enderutilities:livingmanipulator>, [[<enderutilities:enderpart:17>,<industrialforegoing:mob_imprisonment_tool>,<industrialforegoing:mob_imprisonment_tool>],[null,<enderutilities:enderpart:2>,<enderutilities:enderpart:2>],[null,null,<enderutilities:enderpart:2>]]);
+recipes.addShapedMirrored(<enderutilities:livingmanipulator>, [[<enderutilities:enderpart:17>,<enderio:item_soul_vial>,<enderio:item_soul_vial>],[null,<enderutilities:enderpart:2>,<enderutilities:enderpart:2>],[null,null,<enderutilities:enderpart:2>]]);
 
 # Mob Harness
 recipes.remove(<enderutilities:mobharness>);

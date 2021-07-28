@@ -6051,26 +6051,13 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Getting them Smarts",
-          "desc:8": "Loot at least 4 pieces of Knowledge of the Sky from Skythern dungeons!"
+          "desc:8": "§lTHIS IS A TEMPORARY QUEST UNTIL A SKYTHERN DUNGEON GETS IMPLEMENTED.\n\n§rYou\u0027re given the rewards for completing 2 of these Dungeons."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "contenttweaker:knowledge_of_the_sky",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {
@@ -6079,8 +6066,8 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "thaumcraft:vis_resonator",
-              "Count:3": 2,
+              "id:8": "contenttweaker:knowledge_of_the_sky",
+              "Count:3": 8,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -11815,7 +11802,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Don\u0027t let it burst!",
-          "desc:8": "Find some Mysterious Leaking Souls in Mortum\u0027s Dungeons! You\u0027ll need 2 to complete this quest, but eventually you\u0027ll need 5 to delve deeper into Bewitchment!\n\nOh yeah... Welcome to Bewitchment, by the way."
+          "desc:8": "Enter the Mortum Tower! Climb it up and defeat Vamacheron at the end to be able to climb to the highest floor.\n\nLoot some Mysterious Leaking Souls! You\u0027ll need 2 to complete this quest, but eventually you\u0027ll need 5 to delve deeper into Bewitchment!\n\nOh yeah... Welcome to Bewitchment, by the way."
         }
       },
       "tasks:9": {
@@ -27877,7 +27864,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Wait WHAT? Aliens?!",
-          "desc:8": "Find some Secret Aliens Technology in above ground Mars Dungeons, and obtain some Bacterial Sludge from underground. Although the quest only asks for one, you\u0027ll need 5 Buckets of it to upgrade your Ambient Thermal Controllers."
+          "desc:8": "Find a red structure poking out on the Martian surface and head down further into its corridors! You\u0027ll need some kind of teleportation like Ender Pearls or a Staff of Travelling to get to the final loot room. Loot some Secret Aliens Technology!\n\nThen and obtain some Bacterial Sludge from underground. Although the quest only asks for one, you\u0027ll need 5 Buckets of it to upgrade your Ambient Thermal Controllers."
         }
       },
       "tasks:9": {
@@ -28018,26 +28005,13 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "It\u0027s always sunny in Phila- I mean on Venus",
-          "desc:8": "Obtain some Fragments of the Sun from above ground Venus Dungeons!"
+          "desc:8": "§lTHIS IS A TEMPORARY QUEST BEFORE A VENUS DUNGEON GETS IMPLEMENTED.\n\n§rThe rewards grant you 2 times the number of Fragments of the Sun you gain from a single dungeon."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "contenttweaker:fragment_of_the_sun",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:checkbox"
         }
       },
       "rewards:9": {
@@ -28046,7 +28020,7 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:cheesy_wafer",
+              "id:8": "contenttweaker:fragment_of_the_sun",
               "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -28574,7 +28548,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Above Ground Moon Dungeon",
-          "desc:8": "Find a couple Spacerocks hidden inside the above ground custom Moon Dungeons!"
+          "desc:8": "Find an Abandoned Moon Facility!\n\nObtain 3 Key Fragments from 3 of its rooms then go down from the center to defeat the Highly Evolved Zombie! Obtain a couple Spacerocks it drops!"
         }
       },
       "tasks:9": {
@@ -30675,7 +30649,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Parts of it still orbit the Sun to this day...",
-          "desc:8": "Find 5 Chunks of Meteor that Ended the Era of Dinosaurs! They\u0027re located in custom Dungeon in the Asteroid Belt."
+          "desc:8": "Find a special Meteor that\u0027s lit up from the top and built of unbreakable blue rocks! Head inside and discover that this is actually a Puzzle Meteor. Solve the 4 puzzles inside to gain 4 Key Fragments and head down to defeat the Asteroid Keeper! It drops 5 Chunks of Meteor that Ended the Era of Dinosaurs!"
         }
       },
       "tasks:9": {
@@ -34166,7 +34140,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "What is Divine Journey 2?",
-          "desc:8": "Divine Journey 2, often shortened as \"DJ2\" is an expert pack oriented around DivineRPG and automating Magic Mods.\nDJ1, typically known as Divine Journey, was a pack with similar goals made for 1.7.10 in 2017. You do not have to play DJ1 to understand DJ2.\n\nDJ2 is an Expert Pack. This means different things to different people, but here we are using it to mean:\n\n1. The pack will take a long time to complete.\n\n2. The pack is structured around progression - most things are gated, many recipes are changed from their default.\n\n3. The recipes will be expensive, and will require automation - sometimes minimal, sometimes extreme. Fortunately, there are a lot of tools that help you in this endeavor, and they\u0027ll slowly get unlocked through the first half of the pack. Applied Energistics is going to be your friend, you\u0027ll need to autocraft or autoprocess almost everything that there is a quest for.\n\n\nThe goal of the modpack is to \"Find the Meaning of Life\", already located inside a convenient bag in your inventory upon startup, so it shouldn\u0027t be that hard to.... Oh. Oh hold on a second. It needs some sort of a Key to open... The \"Key to Infinity?\" Oh. Oh no. That\u0027s gonna be hard.\n\nSimilarly to Divine Journey, you\u0027ll need \"Infinite Infinity Ingots\", while not truely \"infinite\" this time, you\u0027ll need a LOT to craft the Key to Infinity, and it\u0027ll be best done using a Creative Chest.\n\nSoooo the goal of the pack is basically to get to Creative items... Not so original, I know.\n\n\nBut what IS original is the progression. Over 450 custom items and over 3000 changed recipes will guide you towards the end... Good luck!\n\n\nThe structure of the modpack is the following:\n\n1. Early game: Vanilla Minecraft, Tinker\u0027 Construct, Totemic, Roots, Immersive Engineering, Early game Mekanism, AE2 Item Storage.\n\n2. Big Exploration Block: Better Nether, Twilight Forest (optional), Atum 2, Erebus, Aether I, Iceika.\n\n3. Big Tech Block:\n   - Stage 1: Extra Utilities Pt.1, Open Blocks, Mob Grinding Utils\n   - Stage 2: Thermal Expansion, EnderIO Pt.1, AE2 Crafting Terminal \u0026 Fluid Storage\n   - Stage 3: Industrial Foregoing, some RFTools, SolarFlux Reborn, QuantumFlux\n   - Stage 4: Actually Additions, EnderIO Pt. 2, Simply Jetpacks\n   - Stage 5: Mekanism Pt. 2, Extra Utilities Pt. 2, AE2 Autocrafting \u0026 Autoprocessing, Wireless AE2, Ender Utilities, Ender Storage.\n\n4. Big Magic Block:\n   - Stage 1: AbyssalCraft Pt. 1, DivineRPG start, Blood Magic Pt. 1, EvilCrat Pt. 1\n   - Stage 2: AbyssalCraft Pt. 2, Botania Pt. 1\n   - Stage 3: Botania Pt. 2, Blood Magic Pt. 2, EvilCraft Pt. 2\n   - Stage 4: Thaumcraft\n   - Stage 5: Bewitchment\n   - Stage 6: Thaumic Augmentation, Thaumic Energistics\n   - Stage 7: DivineRPG end, LightningCraft, Extreme Reactors\n   - Stage 8: Astral Sorcery. lategame Extra Utilities, Galacticraft\n\n5. Lategame: Draconic Evolution, Alchemistry, AgriCraft, RFTools Dimensions, Avaritia, Creative Items, Unlocking the Meaning of Life."
+          "desc:8": "Divine Journey 2, often shortened as \"DJ2\" is an expert pack oriented around DivineRPG and automating Magic Mods.\nDJ1, typically known as Divine Journey, was a pack with similar goals made for 1.7.10 in 2017. You do not have to play DJ1 to understand DJ2.\n\nDJ2 is an Expert Pack. This means different things to different people, but here we are using it to mean:\n\n1. The pack will take a long time to complete.\n\n2. The pack is structured around progression - most things are gated, many recipes are changed from their default.\n\n3. The recipes will be expensive, and will require automation - sometimes minimal, sometimes extreme. Fortunately, there are a lot of tools that help you in this endeavor, and they\u0027ll slowly get unlocked through the first half of the pack. Applied Energistics is going to be your friend, you\u0027ll need to autocraft or autoprocess almost everything that there is a quest for.\n\n\nThe goal of the modpack is to \"Find the Meaning of Life\", already located inside a convenient bag in your inventory upon startup, so it shouldn\u0027t be that hard to.... Oh. Oh hold on a second. It needs some sort of a Key to open... The \"Key to Infinity?\" Oh. Oh no. That\u0027s gonna be hard.\n\nSimilarly to Divine Journey, you\u0027ll need \"Infinite Infinity Ingots\", while not truely \"infinite\" this time, you\u0027ll need a LOT to craft the Key to Infinity, and it\u0027ll be best done using a Creative Chest.\n\nSoooo the goal of the pack is basically to get to Creative items... Not so original, I know.\n\n\nBut what IS original is the progression. Over 600 unique custom items and over 5000 changed recipes will guide you towards the end... Good luck!\n\n\nThe structure of the modpack is the following:\n\n1. Early game: Vanilla Minecraft, Tinkers\u0027 Construct, Totemic, Roots, Immersive Engineering, Early game Mekanism, AE2 Item Storage.\n\n2. Big Exploration Block: Better Nether, Twilight Forest (optional), Atum 2, Erebus, Aether I, Iceika.\n\n3. Big Tech Block:\n   - Stage 1: Extra Utilities Pt.1, Open Blocks, Mob Grinding Utils\n   - Stage 2: Thermal Expansion, EnderIO Pt.1, AE2 Crafting Terminal \u0026 Fluid Storage\n   - Stage 3: Industrial Foregoing, some RFTools, SolarFlux Reborn, QuantumFlux\n   - Stage 4: Actually Additions, EnderIO Pt. 2, Simply Jetpacks\n   - Stage 5: Mekanism Pt. 2, Extra Utilities Pt. 2, AE2 Autocrafting \u0026 Autoprocessing, Wireless AE2, Ender Utilities, Ender Storage.\n\n4. Big Magic Block:\n   - Stage 1: AbyssalCraft Pt. 1, DivineRPG start, Blood Magic Pt. 1, EvilCrat Pt. 1\n   - Stage 2: AbyssalCraft Pt. 2, Botania Pt. 1\n   - Stage 3: Botania Pt. 2, Blood Magic Pt. 2, EvilCraft Pt. 2\n   - Stage 4: Thaumcraft\n   - Stage 5: Bewitchment\n   - Stage 6: Thaumic Augmentation, Thaumic Energistics\n   - Stage 7: DivineRPG end, LightningCraft, Extreme Reactors\n   - Stage 8: Astral Sorcery. lategame Extra Utilities, Galacticraft\n\n5. Lategame: Draconic Evolution, Alchemistry, AgriCraft, RFTools Dimensions, Avaritia, Creative Items, Unlocking the Meaning of Life."
         }
       },
       "tasks:9": {
@@ -54083,7 +54057,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "contenttweaker:clay",
-              "Count:3": 4,
+              "Count:3": 6,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -54104,7 +54078,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "rftools:infused_enderpearl",
-              "Count:3": 16,
+              "Count:3": 64,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -111329,39 +111303,6 @@
       }
     },
     "1470:10": {
-      "questID:3": 1482,
-      "preRequisites:11": [
-        1478
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:stone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Wildwood1",
-          "desc:8": "Wildwood dungeon stuff"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "1471:10": {
       "questID:3": 1483,
       "preRequisites:11": [
         1345
@@ -111438,7 +111379,7 @@
         }
       }
     },
-    "1472:10": {
+    "1471:10": {
       "questID:3": 1484,
       "preRequisites:11": [
         1511
@@ -111502,41 +111443,8 @@
         }
       }
     },
-    "1473:10": {
+    "1472:10": {
       "questID:3": 1485,
-      "preRequisites:11": [
-        1486
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:stone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Eden2",
-          "desc:8": "Eden dungeon stuff"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "1474:10": {
-      "questID:3": 1486,
       "preRequisites:11": [
         1514
       ],
@@ -111550,7 +111458,10 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:stone",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "contenttweaker:eden_door_key",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -111561,14 +111472,32 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Eden1",
-          "desc:8": "Eden dungeon stuff"
+          "name:8": "Eden-tually there will be a real quest here",
+          "desc:8": "§lTHIS IS A TEMPORARY QUEST BEFORE THE EDEN DUNGEON GETS FINISHED. The rewards hopefully give way more than enough Unholy Essence.\n\n§rAlso check out some structures in Eden, do you think they generate with the right frequency?"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:unholy_essence",
+              "Count:3": 14,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
-    "1475:10": {
+    "1473:10": {
       "questID:3": 1487,
       "preRequisites:11": [
         1488
@@ -111632,7 +111561,7 @@
         }
       }
     },
-    "1476:10": {
+    "1474:10": {
       "questID:3": 1488,
       "preRequisites:11": [
         1494
@@ -111702,40 +111631,7 @@
         }
       }
     },
-    "1477:10": {
-      "questID:3": 1489,
-      "preRequisites:11": [
-        1482
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "minecraft:stone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Wildwood2",
-          "desc:8": "Wildwood Dungeon stuff"
-        }
-      },
-      "tasks:9": {},
-      "rewards:9": {}
-    },
-    "1478:10": {
+    "1475:10": {
       "questID:3": 1490,
       "preRequisites:11": [
         1476
@@ -111805,7 +111701,7 @@
         }
       }
     },
-    "1479:10": {
+    "1476:10": {
       "questID:3": 1491,
       "preRequisites:11": [
         1476
@@ -111875,7 +111771,7 @@
         }
       }
     },
-    "1480:10": {
+    "1477:10": {
       "questID:3": 1492,
       "preRequisites:11": [
         1476
@@ -111968,10 +111864,10 @@
         }
       }
     },
-    "1481:10": {
+    "1478:10": {
       "questID:3": 1493,
       "preRequisites:11": [
-        1489
+        1478
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -111994,8 +111890,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Wildwood3",
-          "desc:8": "No Description"
+          "name:8": "I(s)-landed here!",
+          "desc:8": "Find the Floating Island Dungeon in Wildwood!\n\nGo inside and solve the puzzles. You\u0027ll need find two rooms that require you to match an Andesite structure and build it on the other side again. It doesn\u0027t have to be mirrored or rotated.\n\nYou\u0027ll also need to find a certain number of digits scattered throughout the Dungeon and enter them into the lever puzzle. Make sure not to get killed by the creatures in the corridors in the meantime!\n\nFinally, spawn and defeat the Soul Fiend boss that drops 4 Feathers of the Wild Woods!"
         }
       },
       "tasks:9": {
@@ -112032,7 +111928,7 @@
         }
       }
     },
-    "1482:10": {
+    "1479:10": {
       "questID:3": 1494,
       "preRequisites:11": [
         1509
@@ -112102,7 +111998,7 @@
         }
       }
     },
-    "1483:10": {
+    "1480:10": {
       "questID:3": 1495,
       "preRequisites:11": [
         1499
@@ -112169,7 +112065,7 @@
         }
       }
     },
-    "1484:10": {
+    "1481:10": {
       "questID:3": 1496,
       "preRequisites:11": [
         1497,
@@ -112270,7 +112166,7 @@
         }
       }
     },
-    "1485:10": {
+    "1482:10": {
       "questID:3": 1497,
       "preRequisites:11": [
         1485
@@ -112296,8 +112192,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Eden3",
-          "desc:8": "asd"
+          "name:8": "Ignore this quest",
+          "desc:8": "Just move on, nothing to see here yet."
         }
       },
       "tasks:9": {
@@ -112334,7 +112230,7 @@
         }
       }
     },
-    "1486:10": {
+    "1483:10": {
       "questID:3": 1498,
       "preRequisites:11": [
         1510
@@ -112398,7 +112294,7 @@
         }
       }
     },
-    "1487:10": {
+    "1484:10": {
       "questID:3": 1499,
       "preRequisites:11": [
         1435
@@ -112462,7 +112358,7 @@
         }
       }
     },
-    "1488:10": {
+    "1485:10": {
       "questID:3": 1500,
       "preRequisites:11": [
         1501,
@@ -112539,7 +112435,7 @@
         }
       }
     },
-    "1489:10": {
+    "1486:10": {
       "questID:3": 1501,
       "preRequisites:11": [
         1504
@@ -112603,7 +112499,7 @@
         }
       }
     },
-    "1490:10": {
+    "1487:10": {
       "questID:3": 1502,
       "preRequisites:11": [
         1504
@@ -112673,7 +112569,7 @@
         }
       }
     },
-    "1491:10": {
+    "1488:10": {
       "questID:3": 1503,
       "preRequisites:11": [
         1478
@@ -112737,7 +112633,7 @@
         }
       }
     },
-    "1492:10": {
+    "1489:10": {
       "questID:3": 1504,
       "preRequisites:11": [
         1505,
@@ -112808,7 +112704,7 @@
         }
       }
     },
-    "1493:10": {
+    "1490:10": {
       "questID:3": 1505,
       "preRequisites:11": [
         1503
@@ -112872,7 +112768,7 @@
         }
       }
     },
-    "1494:10": {
+    "1491:10": {
       "questID:3": 1506,
       "preRequisites:11": [
         1435
@@ -112942,7 +112838,7 @@
         }
       }
     },
-    "1495:10": {
+    "1492:10": {
       "questID:3": 1507,
       "preRequisites:11": [
         1435
@@ -113012,7 +112908,7 @@
         }
       }
     },
-    "1496:10": {
+    "1493:10": {
       "questID:3": 1508,
       "preRequisites:11": [
         1454
@@ -113082,7 +112978,7 @@
         }
       }
     },
-    "1497:10": {
+    "1494:10": {
       "questID:3": 1509,
       "preRequisites:11": [
         1496
@@ -113158,7 +113054,7 @@
         }
       }
     },
-    "1498:10": {
+    "1495:10": {
       "questID:3": 1510,
       "preRequisites:11": [
         1483,
@@ -113242,7 +113138,7 @@
         }
       }
     },
-    "1499:10": {
+    "1496:10": {
       "questID:3": 1511,
       "preRequisites:11": [
         1435
@@ -113317,7 +113213,7 @@
         }
       }
     },
-    "1500:10": {
+    "1497:10": {
       "questID:3": 1512,
       "preRequisites:11": [
         1476
@@ -113381,7 +113277,7 @@
         }
       }
     },
-    "1501:10": {
+    "1498:10": {
       "questID:3": 1513,
       "preRequisites:11": [
         1506
@@ -113445,7 +113341,7 @@
         }
       }
     },
-    "1502:10": {
+    "1499:10": {
       "questID:3": 1514,
       "preRequisites:11": [
         1515,
@@ -113509,7 +113405,7 @@
         }
       }
     },
-    "1503:10": {
+    "1500:10": {
       "questID:3": 1515,
       "preRequisites:11": [
         1523,
@@ -113575,7 +113471,7 @@
         }
       }
     },
-    "1504:10": {
+    "1501:10": {
       "questID:3": 1516,
       "preRequisites:11": [
         1512
@@ -113639,7 +113535,7 @@
         }
       }
     },
-    "1505:10": {
+    "1502:10": {
       "questID:3": 1517,
       "preRequisites:11": [
         1490
@@ -113709,7 +113605,7 @@
         }
       }
     },
-    "1506:10": {
+    "1503:10": {
       "questID:3": 1518,
       "preRequisites:11": [
         1516,
@@ -113798,7 +113694,7 @@
         }
       }
     },
-    "1507:10": {
+    "1504:10": {
       "questID:3": 1519,
       "preRequisites:11": [
         1514
@@ -113862,7 +113758,7 @@
         }
       }
     },
-    "1508:10": {
+    "1505:10": {
       "questID:3": 1520,
       "preRequisites:11": [
         1500
@@ -113932,7 +113828,7 @@
         }
       }
     },
-    "1509:10": {
+    "1506:10": {
       "questID:3": 1521,
       "preRequisites:11": [
         1500
@@ -114002,7 +113898,7 @@
         }
       }
     },
-    "1510:10": {
+    "1507:10": {
       "questID:3": 1522,
       "preRequisites:11": [
         1467
@@ -114072,7 +113968,7 @@
         }
       }
     },
-    "1511:10": {
+    "1508:10": {
       "questID:3": 1523,
       "preRequisites:11": [
         1507
@@ -114136,7 +114032,7 @@
         }
       }
     },
-    "1512:10": {
+    "1509:10": {
       "questID:3": 1524,
       "preRequisites:11": [
         1503
@@ -114200,7 +114096,7 @@
         }
       }
     },
-    "1513:10": {
+    "1510:10": {
       "questID:3": 1525,
       "preRequisites:11": [
         1526,
@@ -114283,7 +114179,7 @@
         }
       }
     },
-    "1514:10": {
+    "1511:10": {
       "questID:3": 1526,
       "preRequisites:11": [
         1561,
@@ -114366,7 +114262,7 @@
         }
       }
     },
-    "1515:10": {
+    "1512:10": {
       "questID:3": 1527,
       "preRequisites:11": [
         1532
@@ -114442,7 +114338,7 @@
         }
       }
     },
-    "1516:10": {
+    "1513:10": {
       "questID:3": 1528,
       "preRequisites:11": [
         1529
@@ -114527,7 +114423,7 @@
         }
       }
     },
-    "1517:10": {
+    "1514:10": {
       "questID:3": 1529,
       "preRequisites:11": [
         1578
@@ -114591,7 +114487,7 @@
         }
       }
     },
-    "1518:10": {
+    "1515:10": {
       "questID:3": 1530,
       "preRequisites:11": [
         1531
@@ -114661,7 +114557,7 @@
         }
       }
     },
-    "1519:10": {
+    "1516:10": {
       "questID:3": 1531,
       "preRequisites:11": [
         1557
@@ -114725,7 +114621,7 @@
         }
       }
     },
-    "1520:10": {
+    "1517:10": {
       "questID:3": 1532,
       "preRequisites:11": [
         1533
@@ -114789,7 +114685,7 @@
         }
       }
     },
-    "1521:10": {
+    "1518:10": {
       "questID:3": 1533,
       "preRequisites:11": [
         1543
@@ -114853,7 +114749,7 @@
         }
       }
     },
-    "1522:10": {
+    "1519:10": {
       "questID:3": 1534,
       "preRequisites:11": [
         1535,
@@ -114918,7 +114814,7 @@
         }
       }
     },
-    "1523:10": {
+    "1520:10": {
       "questID:3": 1535,
       "preRequisites:11": [
         1525,
@@ -114989,7 +114885,7 @@
         }
       }
     },
-    "1524:10": {
+    "1521:10": {
       "questID:3": 1536,
       "preRequisites:11": [
         1549
@@ -115059,7 +114955,7 @@
         }
       }
     },
-    "1525:10": {
+    "1522:10": {
       "questID:3": 1537,
       "preRequisites:11": [
         1538
@@ -115129,7 +115025,7 @@
         }
       }
     },
-    "1526:10": {
+    "1523:10": {
       "questID:3": 1538,
       "preRequisites:11": [
         1543
@@ -115198,7 +115094,7 @@
         }
       }
     },
-    "1527:10": {
+    "1524:10": {
       "questID:3": 1539,
       "preRequisites:11": [
         1540
@@ -115269,7 +115165,7 @@
         }
       }
     },
-    "1528:10": {
+    "1525:10": {
       "questID:3": 1540,
       "preRequisites:11": [
         1521
@@ -115340,7 +115236,7 @@
         }
       }
     },
-    "1529:10": {
+    "1526:10": {
       "questID:3": 1541,
       "preRequisites:11": [
         1542
@@ -115404,7 +115300,7 @@
         }
       }
     },
-    "1530:10": {
+    "1527:10": {
       "questID:3": 1542,
       "preRequisites:11": [
         1571
@@ -115468,7 +115364,7 @@
         }
       }
     },
-    "1531:10": {
+    "1528:10": {
       "questID:3": 1543,
       "preRequisites:11": [
         1575,
@@ -115539,7 +115435,7 @@
         }
       }
     },
-    "1532:10": {
+    "1529:10": {
       "questID:3": 1544,
       "preRequisites:11": [
         1521
@@ -115618,7 +115514,7 @@
         }
       }
     },
-    "1533:10": {
+    "1530:10": {
       "questID:3": 1545,
       "preRequisites:11": [
         1546
@@ -115693,7 +115589,7 @@
         }
       }
     },
-    "1534:10": {
+    "1531:10": {
       "questID:3": 1546,
       "preRequisites:11": [
         1560,
@@ -115769,7 +115665,7 @@
         }
       }
     },
-    "1535:10": {
+    "1532:10": {
       "questID:3": 1547,
       "preRequisites:11": [
         1542
@@ -115857,7 +115753,7 @@
         }
       }
     },
-    "1536:10": {
+    "1533:10": {
       "questID:3": 1548,
       "preRequisites:11": [
         1549
@@ -115927,7 +115823,7 @@
         }
       }
     },
-    "1537:10": {
+    "1534:10": {
       "questID:3": 1549,
       "preRequisites:11": [
         1537
@@ -115991,7 +115887,7 @@
         }
       }
     },
-    "1538:10": {
+    "1535:10": {
       "questID:3": 1550,
       "preRequisites:11": [
         1551
@@ -116068,7 +115964,7 @@
         }
       }
     },
-    "1539:10": {
+    "1536:10": {
       "questID:3": 1551,
       "preRequisites:11": [
         1539,
@@ -116133,7 +116029,7 @@
         }
       }
     },
-    "1540:10": {
+    "1537:10": {
       "questID:3": 1552,
       "preRequisites:11": [
         1540
@@ -116209,7 +116105,7 @@
         }
       }
     },
-    "1541:10": {
+    "1538:10": {
       "questID:3": 1553,
       "preRequisites:11": [
         1554
@@ -116279,7 +116175,7 @@
         }
       }
     },
-    "1542:10": {
+    "1539:10": {
       "questID:3": 1554,
       "preRequisites:11": [
         1563,
@@ -116347,7 +116243,7 @@
         }
       }
     },
-    "1543:10": {
+    "1540:10": {
       "questID:3": 1555,
       "preRequisites:11": [
         1556,
@@ -116424,7 +116320,7 @@
         }
       }
     },
-    "1544:10": {
+    "1541:10": {
       "questID:3": 1556,
       "preRequisites:11": [
         1551
@@ -116488,7 +116384,7 @@
         }
       }
     },
-    "1545:10": {
+    "1542:10": {
       "questID:3": 1557,
       "preRequisites:11": [
         1562
@@ -116555,7 +116451,7 @@
         }
       }
     },
-    "1546:10": {
+    "1543:10": {
       "questID:3": 1558,
       "preRequisites:11": [
         1559
@@ -116631,7 +116527,7 @@
         }
       }
     },
-    "1547:10": {
+    "1544:10": {
       "questID:3": 1559,
       "preRequisites:11": [
         1537
@@ -116701,7 +116597,7 @@
         }
       }
     },
-    "1548:10": {
+    "1545:10": {
       "questID:3": 1560,
       "preRequisites:11": [
         1565,
@@ -116802,7 +116698,7 @@
         }
       }
     },
-    "1549:10": {
+    "1546:10": {
       "questID:3": 1561,
       "preRequisites:11": [
         1547,
@@ -116885,7 +116781,7 @@
         }
       }
     },
-    "1550:10": {
+    "1547:10": {
       "questID:3": 1562,
       "preRequisites:11": [
         1544
@@ -116961,7 +116857,7 @@
         }
       }
     },
-    "1551:10": {
+    "1548:10": {
       "questID:3": 1563,
       "preRequisites:11": [
         1549
@@ -117058,7 +116954,7 @@
         }
       }
     },
-    "1552:10": {
+    "1549:10": {
       "questID:3": 1564,
       "preRequisites:11": [
         1548,
@@ -117123,7 +117019,7 @@
         }
       }
     },
-    "1553:10": {
+    "1550:10": {
       "questID:3": 1565,
       "preRequisites:11": [
         1566
@@ -117198,7 +117094,7 @@
         }
       }
     },
-    "1554:10": {
+    "1551:10": {
       "questID:3": 1566,
       "preRequisites:11": [
         1542
@@ -117262,7 +117158,7 @@
         }
       }
     },
-    "1555:10": {
+    "1552:10": {
       "questID:3": 1567,
       "preRequisites:11": [
         1568
@@ -117326,7 +117222,7 @@
         }
       }
     },
-    "1556:10": {
+    "1553:10": {
       "questID:3": 1568,
       "preRequisites:11": [
         1536
@@ -117390,7 +117286,7 @@
         }
       }
     },
-    "1557:10": {
+    "1554:10": {
       "questID:3": 1569,
       "preRequisites:11": [
         1560
@@ -117490,7 +117386,7 @@
         }
       }
     },
-    "1558:10": {
+    "1555:10": {
       "questID:3": 1570,
       "preRequisites:11": [
         1564
@@ -117557,7 +117453,7 @@
         }
       }
     },
-    "1559:10": {
+    "1556:10": {
       "questID:3": 1571,
       "preRequisites:11": [
         1544
@@ -117633,7 +117529,7 @@
         }
       }
     },
-    "1560:10": {
+    "1557:10": {
       "questID:3": 1572,
       "preRequisites:11": [
         1565
@@ -117703,7 +117599,7 @@
         }
       }
     },
-    "1561:10": {
+    "1558:10": {
       "questID:3": 1573,
       "preRequisites:11": [
         1569,
@@ -117804,7 +117700,7 @@
         }
       }
     },
-    "1562:10": {
+    "1559:10": {
       "questID:3": 1574,
       "preRequisites:11": [
         1572
@@ -117910,7 +117806,7 @@
         }
       }
     },
-    "1563:10": {
+    "1560:10": {
       "questID:3": 1575,
       "preRequisites:11": [
         1526
@@ -117974,7 +117870,7 @@
         }
       }
     },
-    "1564:10": {
+    "1561:10": {
       "questID:3": 1576,
       "preRequisites:11": [
         1550
@@ -118038,7 +117934,7 @@
         }
       }
     },
-    "1565:10": {
+    "1562:10": {
       "questID:3": 1577,
       "preRequisites:11": [
         1568
@@ -118102,7 +117998,7 @@
         }
       }
     },
-    "1566:10": {
+    "1563:10": {
       "questID:3": 1578,
       "preRequisites:11": [
         1538
@@ -118171,7 +118067,7 @@
         }
       }
     },
-    "1567:10": {
+    "1564:10": {
       "questID:3": 1579,
       "preRequisites:11": [
         1567,
@@ -118248,7 +118144,7 @@
         }
       }
     },
-    "1568:10": {
+    "1565:10": {
       "questID:3": 1580,
       "preRequisites:11": [
         1552
@@ -118318,7 +118214,7 @@
         }
       }
     },
-    "1569:10": {
+    "1566:10": {
       "questID:3": 1581,
       "preRequisites:11": [
         1582
@@ -118388,7 +118284,7 @@
         }
       }
     },
-    "1570:10": {
+    "1567:10": {
       "questID:3": 1582,
       "preRequisites:11": [
         1531
@@ -118452,7 +118348,7 @@
         }
       }
     },
-    "1571:10": {
+    "1568:10": {
       "questID:3": 1583,
       "preRequisites:11": [
         1565
@@ -118527,7 +118423,7 @@
         }
       }
     },
-    "1572:10": {
+    "1569:10": {
       "questID:3": 1584,
       "preRequisites:11": [
         1585
@@ -118603,7 +118499,7 @@
         }
       }
     },
-    "1573:10": {
+    "1570:10": {
       "questID:3": 1585,
       "preRequisites:11": [
         1597
@@ -118673,7 +118569,7 @@
         }
       }
     },
-    "1574:10": {
+    "1571:10": {
       "questID:3": 1586,
       "preRequisites:11": [
         1587
@@ -118737,7 +118633,7 @@
         }
       }
     },
-    "1575:10": {
+    "1572:10": {
       "questID:3": 1587,
       "preRequisites:11": [
         1591
@@ -118801,7 +118697,7 @@
         }
       }
     },
-    "1576:10": {
+    "1573:10": {
       "questID:3": 1588,
       "preRequisites:11": [
         1589
@@ -118895,7 +118791,7 @@
         }
       }
     },
-    "1577:10": {
+    "1574:10": {
       "questID:3": 1589,
       "preRequisites:11": [
         1586
@@ -118971,7 +118867,7 @@
         }
       }
     },
-    "1578:10": {
+    "1575:10": {
       "questID:3": 1590,
       "preRequisites:11": [
         1585
@@ -119047,7 +118943,7 @@
         }
       }
     },
-    "1579:10": {
+    "1576:10": {
       "questID:3": 1591,
       "preRequisites:11": [
         1585
@@ -119126,7 +119022,7 @@
         }
       }
     },
-    "1580:10": {
+    "1577:10": {
       "questID:3": 1592,
       "preRequisites:11": [
         1588
@@ -119223,7 +119119,7 @@
         }
       }
     },
-    "1581:10": {
+    "1578:10": {
       "questID:3": 1593,
       "preRequisites:11": [
         1589
@@ -119293,7 +119189,7 @@
         }
       }
     },
-    "1582:10": {
+    "1579:10": {
       "questID:3": 1594,
       "preRequisites:11": [
         1592
@@ -119385,7 +119281,7 @@
         }
       }
     },
-    "1583:10": {
+    "1580:10": {
       "questID:3": 1595,
       "preRequisites:11": [
         1588
@@ -119483,7 +119379,7 @@
         }
       }
     },
-    "1584:10": {
+    "1581:10": {
       "questID:3": 1596,
       "preRequisites:11": [
         1589
@@ -119553,7 +119449,7 @@
         }
       }
     },
-    "1585:10": {
+    "1582:10": {
       "questID:3": 1597,
       "preRequisites:11": [
         859
@@ -119602,7 +119498,7 @@
         }
       }
     },
-    "1586:10": {
+    "1583:10": {
       "questID:3": 1598,
       "preRequisites:11": [
         923
@@ -119681,7 +119577,7 @@
         }
       }
     },
-    "1587:10": {
+    "1584:10": {
       "questID:3": 1599,
       "preRequisites:11": [
         1637
@@ -119745,7 +119641,7 @@
         }
       }
     },
-    "1588:10": {
+    "1585:10": {
       "questID:3": 1600,
       "preRequisites:11": [
         1614
@@ -119809,7 +119705,7 @@
         }
       }
     },
-    "1589:10": {
+    "1586:10": {
       "questID:3": 1601,
       "preRequisites:11": [
         1619
@@ -119879,7 +119775,7 @@
         }
       }
     },
-    "1590:10": {
+    "1587:10": {
       "questID:3": 1602,
       "preRequisites:11": [
         923
@@ -119949,7 +119845,7 @@
         }
       }
     },
-    "1591:10": {
+    "1588:10": {
       "questID:3": 1603,
       "preRequisites:11": [
         1604
@@ -120035,7 +119931,7 @@
         }
       }
     },
-    "1592:10": {
+    "1589:10": {
       "questID:3": 1604,
       "preRequisites:11": [
         1624
@@ -120120,7 +120016,7 @@
         }
       }
     },
-    "1593:10": {
+    "1590:10": {
       "questID:3": 1605,
       "preRequisites:11": [
         1615
@@ -120196,7 +120092,7 @@
         }
       }
     },
-    "1594:10": {
+    "1591:10": {
       "questID:3": 1606,
       "preRequisites:11": [
         1615,
@@ -120273,7 +120169,7 @@
         }
       }
     },
-    "1595:10": {
+    "1592:10": {
       "questID:3": 1607,
       "preRequisites:11": [
         1608
@@ -120343,7 +120239,7 @@
         }
       }
     },
-    "1596:10": {
+    "1593:10": {
       "questID:3": 1608,
       "preRequisites:11": [
         1604,
@@ -120433,7 +120329,7 @@
         }
       }
     },
-    "1597:10": {
+    "1594:10": {
       "questID:3": 1609,
       "preRequisites:11": [
         1604
@@ -120525,7 +120421,7 @@
         }
       }
     },
-    "1598:10": {
+    "1595:10": {
       "questID:3": 1610,
       "preRequisites:11": [
         1604
@@ -120601,7 +120497,7 @@
         }
       }
     },
-    "1599:10": {
+    "1596:10": {
       "questID:3": 1611,
       "preRequisites:11": [
         1604
@@ -120671,7 +120567,7 @@
         }
       }
     },
-    "1600:10": {
+    "1597:10": {
       "questID:3": 1612,
       "preRequisites:11": [
         1604
@@ -120763,7 +120659,7 @@
         }
       }
     },
-    "1601:10": {
+    "1598:10": {
       "questID:3": 1613,
       "preRequisites:11": [
         1614
@@ -120908,7 +120804,7 @@
         }
       }
     },
-    "1602:10": {
+    "1599:10": {
       "questID:3": 1614,
       "preRequisites:11": [
         1619
@@ -120978,7 +120874,7 @@
         }
       }
     },
-    "1603:10": {
+    "1600:10": {
       "questID:3": 1615,
       "preRequisites:11": [
         1616
@@ -121048,7 +120944,7 @@
         }
       }
     },
-    "1604:10": {
+    "1601:10": {
       "questID:3": 1616,
       "preRequisites:11": [
         1602,
@@ -121113,7 +121009,7 @@
         }
       }
     },
-    "1605:10": {
+    "1602:10": {
       "questID:3": 1617,
       "preRequisites:11": [
         1615
@@ -121177,7 +121073,7 @@
         }
       }
     },
-    "1606:10": {
+    "1603:10": {
       "questID:3": 1618,
       "preRequisites:11": [
         1615,
@@ -121242,7 +121138,7 @@
         }
       }
     },
-    "1607:10": {
+    "1604:10": {
       "questID:3": 1619,
       "preRequisites:11": [
         1618,
@@ -121367,7 +121263,7 @@
         }
       }
     },
-    "1608:10": {
+    "1605:10": {
       "questID:3": 1620,
       "preRequisites:11": [
         1604
@@ -121465,7 +121361,7 @@
         }
       }
     },
-    "1609:10": {
+    "1606:10": {
       "questID:3": 1621,
       "preRequisites:11": [
         1604
@@ -121578,7 +121474,7 @@
         }
       }
     },
-    "1610:10": {
+    "1607:10": {
       "questID:3": 1622,
       "preRequisites:11": [
         1623
@@ -121654,7 +121550,7 @@
         }
       }
     },
-    "1611:10": {
+    "1608:10": {
       "questID:3": 1623,
       "preRequisites:11": [
         1610
@@ -121724,7 +121620,7 @@
         }
       }
     },
-    "1612:10": {
+    "1609:10": {
       "questID:3": 1624,
       "preRequisites:11": [
         1616
@@ -121788,7 +121684,7 @@
         }
       }
     },
-    "1613:10": {
+    "1610:10": {
       "questID:3": 1625,
       "preRequisites:11": [
         1608
@@ -121858,7 +121754,7 @@
         }
       }
     },
-    "1614:10": {
+    "1611:10": {
       "questID:3": 1626,
       "preRequisites:11": [
         1604
@@ -121944,7 +121840,7 @@
         }
       }
     },
-    "1615:10": {
+    "1612:10": {
       "questID:3": 1627,
       "preRequisites:11": [
         1625
@@ -122032,7 +121928,7 @@
         }
       }
     },
-    "1616:10": {
+    "1613:10": {
       "questID:3": 1628,
       "preRequisites:11": [
         1604
@@ -122121,7 +122017,7 @@
         }
       }
     },
-    "1617:10": {
+    "1614:10": {
       "questID:3": 1629,
       "preRequisites:11": [
         1604
@@ -122219,7 +122115,7 @@
         }
       }
     },
-    "1618:10": {
+    "1615:10": {
       "questID:3": 1630,
       "preRequisites:11": [
         1631
@@ -122364,7 +122260,7 @@
         }
       }
     },
-    "1619:10": {
+    "1616:10": {
       "questID:3": 1631,
       "preRequisites:11": [
         1619
@@ -122584,7 +122480,7 @@
         }
       }
     },
-    "1620:10": {
+    "1617:10": {
       "questID:3": 1632,
       "preRequisites:11": [
         1598
@@ -122651,7 +122547,7 @@
         }
       }
     },
-    "1621:10": {
+    "1618:10": {
       "questID:3": 1633,
       "preRequisites:11": [
         1624
@@ -122715,7 +122611,7 @@
         }
       }
     },
-    "1622:10": {
+    "1619:10": {
       "questID:3": 1634,
       "preRequisites:11": [
         1614
@@ -122857,7 +122753,7 @@
         }
       }
     },
-    "1623:10": {
+    "1620:10": {
       "questID:3": 1635,
       "preRequisites:11": [
         1630
@@ -123002,7 +122898,7 @@
         }
       }
     },
-    "1624:10": {
+    "1621:10": {
       "questID:3": 1636,
       "preRequisites:11": [
         1604
@@ -123100,7 +122996,7 @@
         }
       }
     },
-    "1625:10": {
+    "1622:10": {
       "questID:3": 1637,
       "preRequisites:11": [
         1618
@@ -123176,7 +123072,7 @@
         }
       }
     },
-    "1626:10": {
+    "1623:10": {
       "questID:3": 1638,
       "preRequisites:11": [
         1617
@@ -123258,7 +123154,7 @@
         }
       }
     },
-    "1627:10": {
+    "1624:10": {
       "questID:3": 1639,
       "preRequisites:11": [
         1604
@@ -123374,7 +123270,7 @@
         }
       }
     },
-    "1628:10": {
+    "1625:10": {
       "questID:3": 1640,
       "preRequisites:11": [
         1638,
@@ -123453,7 +123349,7 @@
         }
       }
     },
-    "1629:10": {
+    "1626:10": {
       "questID:3": 1641,
       "preRequisites:11": [
         1604
@@ -123542,7 +123438,7 @@
         }
       }
     },
-    "1630:10": {
+    "1627:10": {
       "questID:3": 1642,
       "preRequisites:11": [
         1199
@@ -123606,7 +123502,7 @@
         }
       }
     },
-    "1631:10": {
+    "1628:10": {
       "questID:3": 1643,
       "preRequisites:11": [
         1569
@@ -123676,7 +123572,7 @@
         }
       }
     },
-    "1632:10": {
+    "1629:10": {
       "questID:3": 1644,
       "preRequisites:11": [
         1562
@@ -123746,7 +123642,7 @@
         }
       }
     },
-    "1633:10": {
+    "1630:10": {
       "questID:3": 1645,
       "preRequisites:11": [
         1646
@@ -123810,7 +123706,7 @@
         }
       }
     },
-    "1634:10": {
+    "1631:10": {
       "questID:3": 1646,
       "preRequisites:11": [
         1664
@@ -123874,7 +123770,7 @@
         }
       }
     },
-    "1635:10": {
+    "1632:10": {
       "questID:3": 1647,
       "preRequisites:11": [
         1648
@@ -123956,7 +123852,7 @@
         }
       }
     },
-    "1636:10": {
+    "1633:10": {
       "questID:3": 1648,
       "preRequisites:11": [
         1658
@@ -124020,7 +123916,7 @@
         }
       }
     },
-    "1637:10": {
+    "1634:10": {
       "questID:3": 1649,
       "preRequisites:11": [
         1650
@@ -124120,7 +124016,7 @@
         }
       }
     },
-    "1638:10": {
+    "1635:10": {
       "questID:3": 1650,
       "preRequisites:11": [
         1646,
@@ -124191,7 +124087,7 @@
         }
       }
     },
-    "1639:10": {
+    "1636:10": {
       "questID:3": 1651,
       "preRequisites:11": [
         1652
@@ -124275,7 +124171,7 @@
         }
       }
     },
-    "1640:10": {
+    "1637:10": {
       "questID:3": 1652,
       "preRequisites:11": [
         1664
@@ -124339,7 +124235,7 @@
         }
       }
     },
-    "1641:10": {
+    "1638:10": {
       "questID:3": 1653,
       "preRequisites:11": [
         1654,
@@ -124410,7 +124306,7 @@
         }
       }
     },
-    "1642:10": {
+    "1639:10": {
       "questID:3": 1654,
       "preRequisites:11": [
         1647,
@@ -124475,7 +124371,7 @@
         }
       }
     },
-    "1643:10": {
+    "1640:10": {
       "questID:3": 1655,
       "preRequisites:11": [
         1656
@@ -124539,7 +124435,7 @@
         }
       }
     },
-    "1644:10": {
+    "1641:10": {
       "questID:3": 1656,
       "preRequisites:11": [
         1674,
@@ -124617,7 +124513,7 @@
         }
       }
     },
-    "1645:10": {
+    "1642:10": {
       "questID:3": 1657,
       "preRequisites:11": [
         1649
@@ -124687,7 +124583,7 @@
         }
       }
     },
-    "1646:10": {
+    "1643:10": {
       "questID:3": 1658,
       "preRequisites:11": [
         1669
@@ -124763,7 +124659,7 @@
         }
       }
     },
-    "1647:10": {
+    "1644:10": {
       "questID:3": 1659,
       "preRequisites:11": [
         1534
@@ -124845,7 +124741,7 @@
         }
       }
     },
-    "1648:10": {
+    "1645:10": {
       "questID:3": 1660,
       "preRequisites:11": [
         1661,
@@ -124910,7 +124806,7 @@
         }
       }
     },
-    "1649:10": {
+    "1646:10": {
       "questID:3": 1661,
       "preRequisites:11": [
         1645,
@@ -125012,7 +124908,7 @@
         }
       }
     },
-    "1650:10": {
+    "1647:10": {
       "questID:3": 1662,
       "preRequisites:11": [
         1663
@@ -125082,7 +124978,7 @@
         }
       }
     },
-    "1651:10": {
+    "1648:10": {
       "questID:3": 1663,
       "preRequisites:11": [
         1649,
@@ -125213,7 +125109,7 @@
         }
       }
     },
-    "1652:10": {
+    "1649:10": {
       "questID:3": 1664,
       "preRequisites:11": [
         1659
@@ -125287,7 +125183,7 @@
         }
       }
     },
-    "1653:10": {
+    "1650:10": {
       "questID:3": 1665,
       "preRequisites:11": [
         1666,
@@ -125370,7 +125266,7 @@
         }
       }
     },
-    "1654:10": {
+    "1651:10": {
       "questID:3": 1666,
       "preRequisites:11": [
         1670,
@@ -125442,7 +125338,7 @@
         }
       }
     },
-    "1655:10": {
+    "1652:10": {
       "questID:3": 1667,
       "preRequisites:11": [
         1668,
@@ -125560,7 +125456,7 @@
         }
       }
     },
-    "1656:10": {
+    "1653:10": {
       "questID:3": 1668,
       "preRequisites:11": [
         1661
@@ -125648,7 +125544,7 @@
         }
       }
     },
-    "1657:10": {
+    "1654:10": {
       "questID:3": 1669,
       "preRequisites:11": [
         1686
@@ -125712,7 +125608,7 @@
         }
       }
     },
-    "1658:10": {
+    "1655:10": {
       "questID:3": 1670,
       "preRequisites:11": [
         1660,
@@ -125789,7 +125685,7 @@
         }
       }
     },
-    "1659:10": {
+    "1656:10": {
       "questID:3": 1671,
       "preRequisites:11": [
         1696
@@ -125871,7 +125767,7 @@
         }
       }
     },
-    "1660:10": {
+    "1657:10": {
       "questID:3": 1672,
       "preRequisites:11": [
         1673
@@ -125886,7 +125782,10 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:stone",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "contenttweaker:apalachia_door_key2",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -125897,14 +125796,48 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Apalachia shenanigans 2",
-          "desc:8": "asd"
+          "name:8": "Even further beyond",
+          "desc:8": "Defeat the Twilight Demon boss to obtain the second Key that lets you go even higher!"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "contenttweaker:apalachia_door_key2",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 8,
+              "Damage:2": 16,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
-    "1661:10": {
+    "1658:10": {
       "questID:3": 1673,
       "preRequisites:11": [
         1681
@@ -125919,7 +125852,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "minecraft:stone",
+            "id:8": "contenttweaker:apalachia_key_fragment",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -125930,14 +125863,54 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Apalachia shenanigans 1",
-          "desc:8": "asd"
+          "name:8": "A \"Find the button\" map?!",
+          "desc:8": "Locate the cube-like Apalachia Dungeon, go inside, and find 8 buttons scattered around 8 rooms that each give you an Apalachia Key Fragment.\n\nThen combine them into an Apalachia Key to get higher up into the boss room!"
         }
       },
-      "tasks:9": {},
-      "rewards:9": {}
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "contenttweaker:apalachia_key_fragment",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "contenttweaker:apalachia_door_key",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "botania:manaresource",
+              "Count:3": 8,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
-    "1662:10": {
+    "1659:10": {
       "questID:3": 1674,
       "preRequisites:11": [
         1672
@@ -125964,7 +125937,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Ouchy! Don\u0027t put this on your head.",
-          "desc:8": "Find four Effulgent Apalachian Spikes and combine them... Now what could this yield?"
+          "desc:8": "Loot four Effulgent Apalachian Spikes and combine them... Now what could this yield?"
         }
       },
       "tasks:9": {
@@ -126001,7 +125974,7 @@
         }
       }
     },
-    "1663:10": {
+    "1660:10": {
       "questID:3": 1675,
       "preRequisites:11": [
         1658
@@ -126083,7 +126056,7 @@
         }
       }
     },
-    "1664:10": {
+    "1661:10": {
       "questID:3": 1676,
       "preRequisites:11": [
         1677,
@@ -126166,7 +126139,7 @@
         }
       }
     },
-    "1665:10": {
+    "1662:10": {
       "questID:3": 1677,
       "preRequisites:11": [
         1694
@@ -126260,7 +126233,7 @@
         }
       }
     },
-    "1666:10": {
+    "1663:10": {
       "questID:3": 1678,
       "preRequisites:11": [
         1661
@@ -126324,7 +126297,7 @@
         }
       }
     },
-    "1667:10": {
+    "1664:10": {
       "questID:3": 1679,
       "preRequisites:11": [
         1677
@@ -126395,7 +126368,7 @@
         }
       }
     },
-    "1668:10": {
+    "1665:10": {
       "questID:3": 1680,
       "preRequisites:11": [
         1649,
@@ -126496,7 +126469,7 @@
         }
       }
     },
-    "1669:10": {
+    "1666:10": {
       "questID:3": 1681,
       "preRequisites:11": [
         1661
@@ -126566,7 +126539,7 @@
         }
       }
     },
-    "1670:10": {
+    "1667:10": {
       "questID:3": 1682,
       "preRequisites:11": [
         1664
@@ -126630,7 +126603,7 @@
         }
       }
     },
-    "1671:10": {
+    "1668:10": {
       "questID:3": 1683,
       "preRequisites:11": [
         1671
@@ -126694,7 +126667,7 @@
         }
       }
     },
-    "1672:10": {
+    "1669:10": {
       "questID:3": 1684,
       "preRequisites:11": [
         1685
@@ -126764,7 +126737,7 @@
         }
       }
     },
-    "1673:10": {
+    "1670:10": {
       "questID:3": 1685,
       "preRequisites:11": [
         1669
@@ -126828,7 +126801,7 @@
         }
       }
     },
-    "1674:10": {
+    "1671:10": {
       "questID:3": 1686,
       "preRequisites:11": [
         1687,
@@ -126920,7 +126893,7 @@
         }
       }
     },
-    "1675:10": {
+    "1672:10": {
       "questID:3": 1687,
       "preRequisites:11": [
         1661
@@ -126990,7 +126963,7 @@
         }
       }
     },
-    "1676:10": {
+    "1673:10": {
       "questID:3": 1688,
       "preRequisites:11": [
         1685
@@ -127060,7 +127033,7 @@
         }
       }
     },
-    "1677:10": {
+    "1674:10": {
       "questID:3": 1689,
       "preRequisites:11": [
         1690,
@@ -127131,7 +127104,7 @@
         }
       }
     },
-    "1678:10": {
+    "1675:10": {
       "questID:3": 1690,
       "preRequisites:11": [
         1671
@@ -127201,7 +127174,7 @@
         }
       }
     },
-    "1679:10": {
+    "1676:10": {
       "questID:3": 1691,
       "preRequisites:11": [
         1659
@@ -127274,7 +127247,7 @@
         }
       }
     },
-    "1680:10": {
+    "1677:10": {
       "questID:3": 1692,
       "preRequisites:11": [
         1693,
@@ -127349,7 +127322,7 @@
         }
       }
     },
-    "1681:10": {
+    "1678:10": {
       "questID:3": 1693,
       "preRequisites:11": [
         1656
@@ -127419,7 +127392,7 @@
         }
       }
     },
-    "1682:10": {
+    "1679:10": {
       "questID:3": 1694,
       "preRequisites:11": [
         1647,
@@ -127499,7 +127472,7 @@
         }
       }
     },
-    "1683:10": {
+    "1680:10": {
       "questID:3": 1695,
       "preRequisites:11": [
         1652
@@ -127563,7 +127536,7 @@
         }
       }
     },
-    "1684:10": {
+    "1681:10": {
       "questID:3": 1696,
       "preRequisites:11": [
         1677
@@ -127627,7 +127600,7 @@
         }
       }
     },
-    "1685:10": {
+    "1682:10": {
       "questID:3": 1697,
       "preRequisites:11": [
         1685
@@ -127698,7 +127671,7 @@
         }
       }
     },
-    "1686:10": {
+    "1683:10": {
       "questID:3": 1698,
       "preRequisites:11": [
         1685
@@ -127762,7 +127735,7 @@
         }
       }
     },
-    "1687:10": {
+    "1684:10": {
       "questID:3": 1699,
       "preRequisites:11": [
         1680
@@ -127838,7 +127811,7 @@
         }
       }
     },
-    "1688:10": {
+    "1685:10": {
       "questID:3": 1700,
       "preRequisites:11": [
         1525
@@ -132977,302 +132950,281 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 144,
-          "id:3": 1482,
-          "sizeY:3": 24
-        },
-        "17:10": {
-          "sizeX:3": 24,
           "x:3": 144,
           "y:3": 0,
           "id:3": 1483,
           "sizeY:3": 24
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": 272,
           "y:3": 0,
           "id:3": 1484,
           "sizeY:3": 24
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": 128,
           "y:3": 24,
           "id:3": 1485,
           "sizeY:3": 24
         },
-        "20:10": {
-          "sizeX:3": 24,
-          "x:3": 112,
-          "y:3": 0,
-          "id:3": 1486,
-          "sizeY:3": 24
-        },
-        "21:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 72,
           "id:3": 1487,
           "sizeY:3": 24
         },
-        "22:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": 176,
           "y:3": 48,
           "id:3": 1488,
           "sizeY:3": 24
         },
-        "23:10": {
-          "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 144,
-          "id:3": 1489,
-          "sizeY:3": 24
-        },
-        "24:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": 208,
           "y:3": 96,
           "id:3": 1490,
           "sizeY:3": 24
         },
-        "25:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 144,
           "id:3": 1491,
           "sizeY:3": 24
         },
-        "26:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 120,
           "id:3": 1492,
           "sizeY:3": 24
         },
-        "27:10": {
+        "24:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 96,
+          "x:3": 64,
+          "y:3": 120,
           "id:3": 1493,
           "sizeY:3": 24
         },
-        "28:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 208,
           "y:3": 48,
           "id:3": 1494,
           "sizeY:3": 24
         },
-        "29:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": 256,
           "y:3": 24,
           "id:3": 1495,
           "sizeY:3": 24
         },
-        "30:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": 192,
           "y:3": 24,
           "id:3": 1496,
           "sizeY:3": 24
         },
-        "31:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": 160,
           "y:3": 24,
           "id:3": 1497,
           "sizeY:3": 24
         },
-        "32:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": 208,
           "y:3": 0,
           "id:3": 1498,
           "sizeY:3": 24
         },
-        "33:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 240,
           "y:3": 0,
           "id:3": 1499,
           "sizeY:3": 24
         },
-        "34:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 16,
           "y:3": 96,
           "id:3": 1500,
           "sizeY:3": 24
         },
-        "35:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 32,
           "y:3": 72,
           "id:3": 1501,
           "sizeY:3": 24
         },
-        "36:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 96,
           "id:3": 1502,
           "sizeY:3": 24
         },
-        "37:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 112,
           "y:3": 96,
           "id:3": 1503,
           "sizeY:3": 24
         },
-        "38:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": 64,
           "y:3": 72,
           "id:3": 1504,
           "sizeY:3": 24
         },
-        "39:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 72,
           "id:3": 1505,
           "sizeY:3": 24
         },
-        "40:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": 16,
           "y:3": 48,
           "id:3": 1506,
           "sizeY:3": 24
         },
-        "41:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": 16,
           "y:3": 0,
           "id:3": 1507,
           "sizeY:3": 24
         },
-        "42:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": 80,
           "y:3": 0,
           "id:3": 1508,
           "sizeY:3": 24
         },
-        "43:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": 224,
           "y:3": 24,
           "id:3": 1509,
           "sizeY:3": 24
         },
-        "44:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": 176,
           "y:3": 0,
           "id:3": 1510,
           "sizeY:3": 24
         },
-        "45:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": 304,
           "y:3": 0,
           "id:3": 1511,
           "sizeY:3": 24
         },
-        "46:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": 256,
           "y:3": 120,
           "id:3": 1512,
           "sizeY:3": 24
         },
-        "47:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 48,
           "id:3": 1513,
           "sizeY:3": 24
         },
-        "48:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 96,
           "y:3": 24,
           "id:3": 1514,
           "sizeY:3": 24
         },
-        "49:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 64,
           "y:3": 24,
           "id:3": 1515,
           "sizeY:3": 24
         },
-        "50:10": {
+        "47:10": {
           "sizeX:3": 24,
           "x:3": 272,
           "y:3": 96,
           "id:3": 1516,
           "sizeY:3": 24
         },
-        "51:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": 176,
           "y:3": 96,
           "id:3": 1517,
           "sizeY:3": 24
         },
-        "52:10": {
+        "49:10": {
           "sizeX:3": 24,
           "x:3": 288,
           "y:3": 72,
           "id:3": 1518,
           "sizeY:3": 24
         },
-        "53:10": {
+        "50:10": {
           "sizeX:3": 24,
           "x:3": 112,
           "y:3": 48,
           "id:3": 1519,
           "sizeY:3": 24
         },
-        "54:10": {
+        "51:10": {
           "sizeX:3": 24,
           "x:3": 0,
           "y:3": 72,
           "id:3": 1520,
           "sizeY:3": 24
         },
-        "55:10": {
+        "52:10": {
           "sizeX:3": 40,
           "x:3": 8,
           "y:3": 160,
           "id:3": 1521,
           "sizeY:3": 40
         },
-        "56:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": 160,
           "y:3": 120,
           "id:3": 1522,
           "sizeY:3": 24
         },
-        "57:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": 48,
           "y:3": 0,
           "id:3": 1523,
           "sizeY:3": 24
         },
-        "58:10": {
+        "55:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": 120,
+          "x:3": 80,
+          "y:3": 96,
           "id:3": 1524,
           "sizeY:3": 24
         }

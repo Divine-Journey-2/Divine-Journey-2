@@ -7,6 +7,10 @@ recipes.addShaped(<atum:deadwood_crate>, [[<atum:deadwood_log>,<atum:deadwood_pl
 recipes.remove(<atum:palm_crate>);
 recipes.addShaped(<atum:palm_crate>, [[<atum:palm_log>,<atum:palm_planks>,<atum:palm_log>],[<atum:palm_planks>,<minecraft:iron_nugget>,<atum:palm_planks>],[<atum:palm_log>,<atum:palm_planks>,<atum:palm_log>]]);
 
+# Limestone Chest
+recipes.remove(<atum:limestone_chest>);
+recipes.addShaped(<atum:limestone_chest>, [[<atum:limestone>,<atum:limestone>,<atum:limestone>],[<atum:limestone>,<minecraft:iron_nugget>,<atum:limestone>],[<atum:limestone>,<atum:limestone>,<atum:limestone>]]);
+
 # Limestone Furnace
 recipes.remove(<atum:limestone_furnace>);
 recipes.addShaped(<atum:limestone_furnace>, [[<atum:limestone_cracked>,<atum:limestone_cracked_slab>,<atum:limestone_cracked>],[<immersiveengineering:material:1>,<ore:blockCoal>,<immersiveengineering:material:1>],[<atum:limestone_cracked>,<atum:limestone_cracked_slab>,<atum:limestone_cracked>]]);
