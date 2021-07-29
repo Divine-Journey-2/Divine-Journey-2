@@ -357,7 +357,7 @@ recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials
 
 # Silver Block
 recipes.removeShaped(<thermalfoundation:storage:2>, [[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]]);
-recipes.addShaped(<thermalfoundation:storage:2>, [[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>]]);
+#recipes.addShaped(<thermalfoundation:storage:2>, [[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>]]);
 
 # Lead Ingot
 recipes.remove(<galacticraftplanets:atomic_battery>);
@@ -381,7 +381,7 @@ mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:67>,
 
 # Lead Block
 recipes.removeShaped(<thermalfoundation:storage:3>, [[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>]]);
-recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>]]);
+#recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>]]);
 
 # Electrum Ingot
 <ore:ingotElectrum>.remove(<immersiveengineering:metal:7>);

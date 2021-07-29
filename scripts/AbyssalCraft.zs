@@ -622,4 +622,7 @@ mods.abyssalcraft.SummonRitual.addRitual("summonAntiCow", 1, 50, 2500, false, "a
 game.setLocalization("ac.ritual.summonAntiCow", "Anti Milking");
 game.setLocalization("ac.ritual.summonAntiCow.desc", "Summon an Anti Cow in the Abyssal Wasteland. Milking this Cow will yield a bucket of Antimatter.");
 
+# Removing the Mass Enchantment Ritual
+mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
+
 print("ENDING AbyssalCraft.zs");

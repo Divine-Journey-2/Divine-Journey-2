@@ -61,4 +61,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<tconstruct:materials:50>,
 [<alchemistry:ingot:91>,<divinerpg:golden_fury>,<tconstruct:materials:16>,<divinerpg:golden_fury>,<alchemistry:ingot:91>],
 [<extendedcrafting:singularity:5>,<alchemistry:ingot:91>,<divinerpg:golden_fury>,<alchemistry:ingot:91>,<extendedcrafting:singularity:5>]]);
 
+# Piggybackpack
+recipes.remove(<tconstruct:piggybackpack>);
+recipes.addShaped(<tconstruct:piggybackpack>, [[null,<minecraft:string>,null],[<contenttweaker:industrial_leather>,<mekanism:enrichedalloy>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<minecraft:string>,<contenttweaker:industrial_leather>]]);
+
 print("ENDING TinkersConstruct.zs");

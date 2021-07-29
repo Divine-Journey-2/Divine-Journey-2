@@ -21,7 +21,9 @@ recipes.addShaped(<minecraft:stone_axe>, [[null,<contenttweaker:stone_axe_head>]
 recipes.addShaped(<minecraft:wooden_pickaxe>, [[null,<contenttweaker:wooden_pickaxe_head>],[<contenttweaker:tool_rod>,null]]);
 recipes.addShaped(<minecraft:wooden_axe>, [[null,<contenttweaker:wooden_axe_head>],[<contenttweaker:tool_rod>,null]]);
 recipes.addShaped(<contenttweaker:stone_pickaxe_head>, [[<ore:cobblestone>,<ore:cobblestone>],[null,<ore:cobblestone>]]);
+recipes.addShaped(<contenttweaker:stone_pickaxe_head>, [[<ore:stone>,<ore:stone>],[null,<ore:stone>]]);
 recipes.addShaped(<contenttweaker:stone_axe_head>, [[<ore:cobblestone>,<ore:cobblestone>],[<ore:cobblestone>,null]]);
+recipes.addShaped(<contenttweaker:stone_axe_head>, [[<ore:stone>,<ore:stone>],[<ore:stone>,null]]);
 recipes.addShaped(<contenttweaker:wooden_pickaxe_head>, [[<ore:plankWood>,<ore:plankWood>],[null,<ore:plankWood>]]);
 recipes.addShaped(<contenttweaker:wooden_axe_head>, [[<ore:plankWood>,<ore:plankWood>],[<ore:plankWood>,null]]);
 recipes.addShaped(<contenttweaker:tool_rod>, [[<ore:stickWood>],[<ore:stickWood>]]);
@@ -249,5 +251,17 @@ recipes.addShapeless(<minecraft:fireworks>, [<minecraft:firework_charge>,<minecr
 <ore:string>.removeItems([<atum:linen_thread>,<mysticalworld:silk_thread>]);
 <ore:chestWood>.removeItems([<atum:palm_crate>,<atum:deadwood_crate>]);
 <ore:rodBlaze>.remove(<atum:efreet_heart>);
+
+# Stone Tools with Stone, not just Cobblestone
+recipes.addShaped(<minecraft:stone_sword>, [[<ore:stone>],[<ore:stone>],[<ore:stickWood>]]);
+recipes.addShaped(<minecraft:stone_pickaxe>, [[<ore:stone>,<ore:stone>,<ore:stone>],[null,<ore:stickWood>,null],[null,<ore:stickWood>,null]]);
+recipes.addShaped(<minecraft:stone_shovel>, [[<ore:stone>],[<ore:stickWood>],[<ore:stickWood>]]);
+recipes.addShapedMirrored(<minecraft:stone_axe>, [[<ore:stone>,<ore:stone>],[<ore:stone>,<ore:stickWood>],[null,<ore:stickWood>]]);
+recipes.addShapedMirrored(<minecraft:stone_hoe>, [[<ore:stone>,<ore:stone>],[null,<ore:stickWood>],[null,<ore:stickWood>]]);
+
+# Book
+recipes.remove(<minecraft:book>);
+recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<minecraft:leather>]);
+recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<minecraft:string>,<tconstruct:pattern>,<tconstruct:pattern>]);
 
 print("ENDING MinecraftRecipes.zs");
