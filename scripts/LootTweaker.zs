@@ -4,6 +4,7 @@ import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
 
 print("STARTING LootTweaker.zs");
 
@@ -258,5 +259,10 @@ add_entry("divinerpg:entities/boss/twilight_demon", "apalachia_heart", <divinerp
 # Soul Fiend -> Wildwood Boss, Feather of the Wild Woods
 remove_entry("divinerpg:entities/boss/soul_fiend", "divinerpg:mortum_heart_drop", "divinerpg:mortum_heart");
 add_entry("divinerpg:entities/boss/soul_fiend", "feather_of_the_wild_woods", <contenttweaker:feather_of_the_wild_woods>, 4, 4, 0, 0, 100);
+
+# Increased Crimson Rite drop rate
+val cultist_table = LootTweaker.getTable("thaumcraft:cultist");
+val cultist_pool = cultist_table.getPool("special_1");
+cultist_pool.addItemEntry(<thaumcraft:curio:6>, 1);
 
 print("ENDING LootTweaker.zs");

@@ -40,20 +40,20 @@ val gravel_tooltip1 = "Can be converted into vanilla Gravel by crafting" as stri
 val gravel_tooltip2 = "2 of them together in a horizontal line." as string;
 
 # Sand conversion tooltips
-<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
-<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
-<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
-<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
-<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip1)));
-<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkRed(format.italic(sand_tooltip2)));
+<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
+<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
 
 # Gravel conversion tooltips
-<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
-<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
-<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
-<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
-<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip1)));
-<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkRed(format.italic(gravel_tooltip2)));
+<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
+<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
 
 # UB Stone to materialStoneTool OreDict
 <ore:materialStoneTool>.addAll(<ore:stone>);

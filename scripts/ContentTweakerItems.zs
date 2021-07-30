@@ -1430,5 +1430,16 @@ moon_door_key.itemRightClick = function(stack, world, player, hand) {
 moon_door_key.register();
 var moon_key_fragment = VanillaFactory.createItem("moon_key_fragment");
 moon_key_fragment.register();
+var unwarpification_talisman = VanillaFactory.createItem("unwarpification_talisman");
+unwarpification_talisman.maxStackSize = 1;
+unwarpification_talisman.rarity = "EPIC";
+unwarpification_talisman.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("tc warp @p set 0 PERM", player, world, false, true);
+    Commands.call("tc warp @p set 0", player, world, false, true);
+    Commands.call("tc warp @p set 0 TEMP", player, world, false, true);
+    Commands.call('/tellraw @p {"text":"Your warp has been set to 0!","bold":true}', player, world, false, true);
+    return "Pass";
+};
+unwarpification_talisman.register();
 
 print("ENDING ContentTweakerItems.zs");

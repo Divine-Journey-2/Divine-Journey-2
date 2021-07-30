@@ -413,9 +413,9 @@ recipes.remove(<thermalexpansion:augment:401>);
 
 # Augment: Parabolic Flux Coupling
 recipes.remove(<thermalexpansion:augment:402>);
-recipes.addShaped(<thermalexpansion:augment:402>, [[<thermalfoundation:material:322>,<thermalfoundation:material:295>,<thermalfoundation:material:322>],[<thermalfoundation:material:295>,<contenttweaker:rf_powder>,<thermalfoundation:material:295>],[<thermalfoundation:material:322>,<thermalfoundation:material:512>,<thermalfoundation:material:322>]]);
+recipes.addShaped(<thermalexpansion:augment:402>, [[<thermalfoundation:material:322>,<thermalfoundation:material:295>,<thermalfoundation:material:322>],[<thermalfoundation:material:295>,<contenttweaker:rf_powder>,<thermalfoundation:material:295>],[<thermalfoundation:material:322>,<enderio:block_normal_wireless_charger>,<thermalfoundation:material:322>]]);
 
-# Augment: Auxillary Transmission Coil
+# Augment: Auxiliary Transmission Coil
 recipes.remove(<thermalexpansion:augment:512>);
 recipes.addShaped(<thermalexpansion:augment:512>, [[<thermalfoundation:material:322>,<ore:ingotOsgloglas>,<thermalfoundation:material:322>],[<ore:ingotOsgloglas>,<thermalfoundation:material:514>,<ore:ingotOsgloglas>],[<thermalfoundation:material:322>,<ore:ingotOsgloglas>,<thermalfoundation:material:322>]]);
 
@@ -431,9 +431,113 @@ recipes.addShaped(<thermalexpansion:augment:514>, [[null,<thermalfoundation:mate
 recipes.remove(<thermalexpansion:augment:515>);
 recipes.addShaped(<thermalexpansion:augment:515>, [[<thermalfoundation:material:322>,<ore:ingotOsgloglas>,<thermalfoundation:material:322>],[<ore:ingotOsgloglas>,<thermalfoundation:material:161>,<ore:ingotOsgloglas>],[<thermalfoundation:material:322>,<ore:ingotOsgloglas>,<thermalfoundation:material:322>]]);
 
-# Augment: Auxillary Reception Coil
+# Augment: Auxiliary Reception Coil
 recipes.remove(<thermalexpansion:augment:128>);
 recipes.addShaped(<thermalexpansion:augment:128>, [[<minecraft:gold_ingot>,<thermalfoundation:material:866>,<minecraft:gold_ingot>],[<thermalfoundation:material:866>,<thermalfoundation:material:513>,<thermalfoundation:material:866>],[<minecraft:gold_ingot>,<thermalfoundation:material:866>,<minecraft:gold_ingot>]]);
+
+# Augment: Auxiliary Sieve
+recipes.remove(<thermalexpansion:augment:129>);
+recipes.addShaped(<thermalexpansion:augment:129>, [[<industrialforegoing:plastic>,<contenttweaker:crystalline_brown_slime_ingot>,<industrialforegoing:plastic>],[<contenttweaker:crystalline_brown_slime_ingot>,<contenttweaker:rf_powder>,<contenttweaker:crystalline_brown_slime_ingot>],[<industrialforegoing:plastic>,<contenttweaker:crystalline_brown_slime_ingot>,<industrialforegoing:plastic>]]);
+
+# Augment: Trivection Chamber
+recipes.remove(<thermalexpansion:augment:256>);
+recipes.addShaped(<thermalexpansion:augment:256>, [[<thermalfoundation:material:322>,<mysticalagriculture:crafting:6>,<thermalfoundation:material:322>],[<mysticalagriculture:crafting:6>,<divinerpg:chicken_dinner>,<mysticalagriculture:crafting:6>],[<thermalfoundation:material:322>,<mysticalagriculture:crafting:6>,<thermalfoundation:material:322>]]);
+
+# Augment: Flux Anodizers
+recipes.remove(<thermalexpansion:augment:257>);
+recipes.addShaped(<thermalexpansion:augment:257>, [[<thermalfoundation:material:322>,<thermalfoundation:material:135>,<thermalfoundation:material:322>],[<thermalfoundation:material:135>,<contenttweaker:steaming_restonia_crystal>,<thermalfoundation:material:135>],[<thermalfoundation:material:322>,<thermalfoundation:material:135>,<thermalfoundation:material:322>]]);
+
+# Augment: Pyrolytic Conversion
+recipes.remove(<thermalexpansion:augment:258>);
+recipes.addShaped(<thermalexpansion:augment:258>, [[<thermalfoundation:material:322>,<immersiveengineering:stone_decoration>,<thermalfoundation:material:322>],[<immersiveengineering:stone_decoration>,<enderio:item_material:41>,<immersiveengineering:stone_decoration>],[<thermalfoundation:material:322>,<immersiveengineering:stone_decoration>,<thermalfoundation:material:322>]]);
+
+# Augment: Resin Funnel
+recipes.remove(<thermalexpansion:augment:288>);
+recipes.addShaped(<thermalexpansion:augment:288>, [[<thermalfoundation:material:322>,<contenttweaker:rf_powder>,<thermalfoundation:material:322>],[<thermalfoundation:material:512>,<immersiveengineering:wooden_device0:7>,<thermalfoundation:material:512>],[<thermalfoundation:material:322>,<contenttweaker:rf_powder>,<thermalfoundation:material:322>]]);
+
+# Augment: Numismatic Press
+recipes.remove(<thermalexpansion:augment:336>);
+recipes.addShaped(<thermalexpansion:augment:336>, [[<thermalfoundation:material:322>,<atum:coin_gold>,<thermalfoundation:material:322>],[<atum:coin_gold>,<contenttweaker:crystalline_brown_slime_ingot>,<atum:coin_gold>],[<thermalfoundation:material:322>,<atum:coin_gold>,<thermalfoundation:material:322>]]);
+
+# Augment: Gearworking Die
+recipes.remove(<thermalexpansion:augment:337>);
+recipes.addShaped(<thermalexpansion:augment:337>, [[<thermalfoundation:material:322>,<thermalfoundation:material:264>,<thermalfoundation:material:322>],[<thermalfoundation:material:264>,<enderio:item_material:13>,<thermalfoundation:material:264>],[<thermalfoundation:material:322>,<thermalfoundation:material:264>,<thermalfoundation:material:322>]]);
+
+# Augment: Pyroconvective Loop
+recipes.remove(<thermalexpansion:augment:352>);
+recipes.addShaped(<thermalexpansion:augment:352>, [[<thermalfoundation:material:322>,<bloodmagic:component:1>,<thermalfoundation:material:322>],[<bloodmagic:component:1>,<contenttweaker:steaming_restonia_crystal>,<bloodmagic:component:1>],[<thermalfoundation:material:322>,<bloodmagic:component:1>,<thermalfoundation:material:322>]]);
+
+# Augment: Reflux Column
+recipes.remove(<thermalexpansion:augment:368>);
+recipes.addShaped(<thermalexpansion:augment:368>, [[<thermalfoundation:material:322>,<enderio:item_alloy_ingot:6>,<thermalfoundation:material:322>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:73>,<enderio:item_alloy_ingot:6>],[<contenttweaker:flux_crystal>,<thermalfoundation:material:322>,<plustic:osmiridiumingot>]]);
+
+# Augment: Alchemical Retort
+recipes.remove(<thermalexpansion:augment:369>);
+recipes.addShaped(<thermalexpansion:augment:369>, [[<thermalfoundation:material:322>,<minecraft:glass_bottle>,<thermalfoundation:material:322>],[<minecraft:glass_bottle>,<minecraft:brewing_stand>,<minecraft:glass_bottle>],[<thermalfoundation:material:322>,<minecraft:cauldron>,<thermalfoundation:material:322>]]);
+
+# Augment: Flux Linkage Concentrator
+recipes.remove(<thermalexpansion:augment:400>);
+recipes.addShaped(<thermalexpansion:augment:400>, [[<thermalfoundation:material:322>,<contenttweaker:steaming_restonia_crystal>,<thermalfoundation:material:322>],[<plustic:osgloglasblock>,<contenttweaker:steaming_restonia_crystal>,<plustic:osgloglasblock>],[<thermalfoundation:material:322>,<contenttweaker:steaming_restonia_crystal>,<thermalfoundation:material:322>]]);
+
+# Augment: Enstabulation Apparatus
+recipes.remove(<thermalexpansion:augment:416>);
+recipes.addShaped(<thermalexpansion:augment:416>, [[<thermalfoundation:material:322>,<enderio:item_material:18>,<thermalfoundation:material:322>],[<enderio:item_material:42>,<minecraft:diamond_sword>,<enderio:item_material:42>],[<thermalfoundation:material:322>,<simplyjetpacks:metaitemmods:11>,<thermalfoundation:material:322>]]);
+
+# Augment: Pattern Validation
+recipes.remove(<thermalexpansion:augment:432>);
+recipes.addShaped(<thermalexpansion:augment:432>, [[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>],[<industrialforegoing:plastic>,<appliedenergistics2:material:52>,<industrialforegoing:plastic>],[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>]]);
+
+# Augment: Fluidic Fabrication
+recipes.remove(<thermalexpansion:augment:433>);
+recipes.addShaped(<thermalexpansion:augment:433>, [[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>],[<industrialforegoing:plastic>,<extracells:fluidfiller>,<industrialforegoing:plastic>],[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>]]);
+
+# Augment: Reagnet Recovery
+recipes.remove(<thermalexpansion:augment:448>);
+recipes.addShaped(<thermalexpansion:augment:448>, [[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>],[<contenttweaker:sanctus>,<thermalexpansion:augment:369>,<contenttweaker:incendium>],[<thermalfoundation:material:322>,<industrialforegoing:plastic>,<thermalfoundation:material:322>]]);
+
+# Augment: Pyroclastic Injection
+recipes.remove(<thermalexpansion:augment:496>);
+recipes.addShaped(<thermalexpansion:augment:496>, [[<thermalfoundation:material:322>,<thermalfoundation:material:512>,<thermalfoundation:material:322>],[<thermalfoundation:material:354>,<roots:unending_bowl>,<thermalfoundation:material:354>],[<thermalfoundation:material:322>,<thermalfoundation:material:512>,<thermalfoundation:material:322>]]);
+
+# Augment: Clastic Deposition
+recipes.remove(<thermalexpansion:augment:497>);
+recipes.addShaped(<thermalexpansion:augment:497>, [[<thermalfoundation:material:322>,<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),<thermalfoundation:material:322>],[<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),<contenttweaker:compressed_obsidian1>,<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000})],[<thermalfoundation:material:322>,<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),<thermalfoundation:material:322>]]);
+
+# Augment: Boiler Conversion
+recipes.remove(<thermalexpansion:augment:576>);
+recipes.addShaped(<thermalexpansion:augment:576>, [[<industrialforegoing:plastic>,<contenttweaker:gusty_core>,<industrialforegoing:plastic>],[<contenttweaker:gusty_core>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:gusty_core>],[<industrialforegoing:plastic>,<contenttweaker:gusty_core>,<industrialforegoing:plastic>]]);
+
+# Augment: Turbine Conversion
+recipes.remove(<thermalexpansion:augment:640>);
+recipes.addShaped(<thermalexpansion:augment:640>, [[<industrialforegoing:plastic>,<thermalfoundation:material:264>,<industrialforegoing:plastic>],[<thermalfoundation:material:264>,<contenttweaker:steaming_restonia_crystal_block>,<thermalfoundation:material:264>],[<industrialforegoing:plastic>,<thermalfoundation:material:264>,<industrialforegoing:plastic>]]);
+
+# Augment: Isentropic Reservoir
+recipes.remove(<thermalexpansion:augment:656>);
+recipes.addShaped(<thermalexpansion:augment:656>, [[<thermalfoundation:material:322>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:322>],[<thermalfoundation:material:352>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:352>],[<thermalfoundation:material:322>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:322>]]);
+
+# Augment: Closed-Loop Cooling
+recipes.remove(<thermalexpansion:augment:672>);
+recipes.addShaped(<thermalexpansion:augment:672>, [[<thermalfoundation:material:322>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:322>],[<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:264>,<simplyjetpacks:metaitemmods:30>],[<thermalfoundation:material:322>,<simplyjetpacks:metaitemmods:30>,<thermalfoundation:material:322>]]);
+
+# Augment: Ignition Plus
+recipes.remove(<thermalexpansion:augment:673>);
+recipes.addShaped(<thermalexpansion:augment:673>, [[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>],[<forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}),<thermalfoundation:material:264>,<forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000})],[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>]]);
+
+# Augment: Agitative Manifold
+recipes.remove(<thermalexpansion:augment:674>);
+recipes.addShaped(<thermalexpansion:augment:674>, [[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>],[<forge:bucketfilled>.withTag({FluidName: "refined_biofuel", Amount: 1000}),<thermalfoundation:material:264>,<forge:bucketfilled>.withTag({FluidName: "refined_biofuel", Amount: 1000})],[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>]]);
+
+# Augment: Elemental Catalyzer
+recipes.remove(<thermalexpansion:augment:688>);
+recipes.addShaped(<thermalexpansion:augment:688>, [[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>],[<forge:bucketfilled>.withTag({FluidName: "tree_oil", Amount: 1000}),<thermalfoundation:material:264>,<forge:bucketfilled>.withTag({FluidName: "tree_oil", Amount: 1000})],[<thermalfoundation:material:322>,<contenttweaker:fluxed_electrum_ingot>,<thermalfoundation:material:322>]]);
+
+# Augment: Disjunctive Extraction
+recipes.remove(<thermalexpansion:augment:704>);
+recipes.addShaped(<thermalexpansion:augment:704>, [[<thermalfoundation:material:322>,<thermalfoundation:material:293>,<thermalfoundation:material:322>],[<extrautils2:simpledecorative>,<enderio:block_alloy:6>,<extrautils2:simpledecorative>],[<thermalfoundation:material:322>,<thermalfoundation:material:293>,<thermalfoundation:material:322>]]);
+
+# Augment: Lapidary Calibration
+recipes.remove(<thermalexpansion:augment:720>);
+recipes.addShaped(<thermalexpansion:augment:720>, [[<thermalfoundation:material:322>,<contenttweaker:flux_crystal>,<thermalfoundation:material:322>],[<contenttweaker:flux_crystal>,<minecraft:emerald_block>,<contenttweaker:flux_crystal>],[<thermalfoundation:material:322>,<contenttweaker:flux_crystal>,<thermalfoundation:material:322>]]);
 
 # Phytogenic Insolator tooltip
 <thermalexpansion:machine:4>.addTooltip(format.red(format.bold("Machine disabled.")));
@@ -457,10 +561,10 @@ recipes.addShaped(<thermalexpansion:augment:304>, [[<thermalfoundation:material:
 # Change cycling Hardened Glass recipes to use regular Hardened Glass:
 recipes.remove(<thermalexpansion:augment:303>);
 recipes.addShaped(<thermalexpansion:augment:303>, [[null,<thermalfoundation:material:258>,null],[<thermalfoundation:material:865>,<thermalfoundation:material:512>,<thermalfoundation:material:865>],[null,<thermalfoundation:glass:3>,null]]);
-recipes.remove(<thermalexpansion:augment:368>);
-recipes.addShaped(<thermalexpansion:augment:368>, [[null,<thermalfoundation:material:292>,null],[<thermalfoundation:glass:3>,<thermalfoundation:material:515>,<thermalfoundation:glass:3>],[null,<minecraft:blaze_rod>,null]]);
-recipes.remove(<thermalexpansion:augment:576>);
-recipes.addShaped(<thermalexpansion:augment:576>, [[null,<thermalfoundation:material:24>,null],[<thermalfoundation:material:320>,<minecraft:bucket>,<thermalfoundation:material:320>],[null,<thermalfoundation:glass:3>,null]]);
+#recipes.remove(<thermalexpansion:augment:368>);
+#recipes.addShaped(<thermalexpansion:augment:368>, [[null,<thermalfoundation:material:292>,null],[<thermalfoundation:glass:3>,<thermalfoundation:material:515>,<thermalfoundation:glass:3>],[null,<minecraft:blaze_rod>,null]]);
+#recipes.remove(<thermalexpansion:augment:576>);
+#recipes.addShaped(<thermalexpansion:augment:576>, [[null,<thermalfoundation:material:24>,null],[<thermalfoundation:material:320>,<minecraft:bucket>,<thermalfoundation:material:320>],[null,<thermalfoundation:glass:3>,null]]);
 
 # Tier III-IV Potion tooltips
 val all_tier_iii_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leaping3"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness3"}),<minecraft:potion>.withTag({Potion: "cofhcore:healing3"}),<minecraft:potion>.withTag({Potion: "cofhcore:harming3"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison3"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration3"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength3"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste3"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance3"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption3"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck3"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck3"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither3"}),<minecraft:potion>.withTag({Potion: "cofhcore:leaping3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck3+"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither3+"})] as IItemStack[];

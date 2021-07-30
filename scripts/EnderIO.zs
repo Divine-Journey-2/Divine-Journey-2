@@ -709,6 +709,22 @@ mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);
 recipes.remove(<enderio:item_dark_steel_shears>);
 recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_ingot:6>,null],[<ore:plankWood>,<minecraft:string>,<enderio:item_alloy_ingot:6>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
 
+# Stellar Helmet
+recipes.remove(<enderio:item_stellar_alloy_helmet>);
+recipes.addShaped(<enderio:item_stellar_alloy_helmet>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>]]);
+
+# Stellar Chestplate
+recipes.remove(<enderio:item_stellar_alloy_chestplate>);
+recipes.addShaped(<enderio:item_stellar_alloy_chestplate>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>]]);
+
+# Stellar Leggings
+recipes.remove(<enderio:item_stellar_alloy_leggings>);
+recipes.addShaped(<enderio:item_stellar_alloy_leggings>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
+
+# Stellar Booots
+recipes.remove(<enderio:item_stellar_alloy_boots>);
+recipes.addShaped(<enderio:item_stellar_alloy_boots>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
+
 # Creative Capacitor Bank
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
 [[<enderio:block_alloy:6>, <enderio:block_alloy:6>, <solarflux:solar_panel_draconic>, <enderio:block_alloy:6>, <enderio:block_alloy:6>], 

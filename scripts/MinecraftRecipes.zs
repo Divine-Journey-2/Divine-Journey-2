@@ -136,6 +136,7 @@ recipes.addShaped(<minecraft:tnt>, [[null,<minecraft:fire_charge>,null],[<minecr
 # Beacon
 recipes.remove(<minecraft:beacon>);
 recipes.addShaped(<minecraft:beacon>, [[<ore:blockGlassColorless>,<minecraft:nether_star>,<ore:blockGlassColorless>],[<ore:blockGlassColorless>,<botania:storage:3>,<ore:blockGlassColorless>],[<contenttweaker:compressed_obsidian1>,<atum:radiant_beacon>,<contenttweaker:compressed_obsidian1>]]);
+recipes.addShaped(<minecraft:beacon>, [[<ore:blockGlassColorless>,<minecraft:nether_star>,<ore:blockGlassColorless>],[<ore:blockGlassColorless>,<botania:storage:3>,<ore:blockGlassColorless>],[<contenttweaker:compressed_obsidian1>,<enderio:block_alloy_endergy:3>,<contenttweaker:compressed_obsidian1>]]);
 
 # Enchanted Golden Apple
 recipes.remove(<minecraft:golden_apple:1>);

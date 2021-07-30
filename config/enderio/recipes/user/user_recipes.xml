@@ -85,6 +85,7 @@
       <entity name="aether_legacy:ice_ball" soulvial="false" disabled="true"/>
       <entity name="aether_legacy:mini_cloud" soulvial="false" disabled="true"/>
       <entity name="aether_legacy:whirlwind" soulvial="false" disabled="true"/>
+      <entity name="aether_legacy:mimic" soulvial="false" disabled="true"/>
     </spawning>
   </recipe>
 
@@ -105,7 +106,7 @@
 
   <recipe name="Spawner, Bewitchment" required="false">
     <spawning>
-      <entity name="bewitchment:demon" soulvial="false" disabled="true"/><enderio:item_soul_vial:1>.withTag({entityId: "bewitchment:demon"})
+      <entity name="bewitchment:demon" soulvial="false" disabled="true"/>
       <entity name="bewitchment:demoness" soulvial="false" disabled="true"/>
       <entity name="bewitchment:imp" soulvial="false" disabled="true"/>
       <entity name="bewitchment:bafometyr" soulvial="false" disabled="true"/>
