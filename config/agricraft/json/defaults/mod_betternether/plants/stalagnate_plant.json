@@ -1,0 +1,67 @@
+{
+  "path": "mod_betternether/plants/stalagnate_plant.json",
+  "enabled": true,
+  "id": "betternether:stalagnate_plant",
+  "plant_name": "Stalagnate",
+  "seed_name": "Stalagnate Seed",
+  "seed_items": [
+    {
+      "item": "betternether:stalagnate_seed",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "Long and sturdy."
+  },
+  "growth_chance": 0.75,
+  "growth_bonus": 0.025,
+  "bonemeal": false,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.1,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 2,
+        "chance": 0.75,
+        "required": true,
+        "item": "betternether:stalagnate_stem",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 0,
+    "max_light": 16,
+    "soils": [
+      "netherrack_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "betternether:items/stalagnate_seed",
+    "plant_textures": [
+      "betternether:blocks/stalagnate_seed",
+      "betternether:blocks/stalagnate_trunk_leaves",
+      "betternether:blocks/stalagnate_trunk_leaves_2"
+    ]
+  }
+}

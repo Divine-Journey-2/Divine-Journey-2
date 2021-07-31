@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/stabilized_end_crystal",
       "particle": "contenttweaker:blocks/stabilized_end_crystal"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

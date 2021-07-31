@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/dark_realm_soul_block",
       "particle": "contenttweaker:blocks/dark_realm_soul_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

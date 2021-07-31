@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/reinforced_machine_electrolyzer",
       "particle": "contenttweaker:blocks/reinforced_machine_electrolyzer"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

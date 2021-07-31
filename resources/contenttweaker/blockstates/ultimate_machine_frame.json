@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/ultimate_machine_frame",
       "particle": "contenttweaker:blocks/ultimate_machine_frame"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

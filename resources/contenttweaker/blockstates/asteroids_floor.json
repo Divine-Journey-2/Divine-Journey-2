@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/asteroids_floor",
       "particle": "contenttweaker:blocks/asteroids_floor"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

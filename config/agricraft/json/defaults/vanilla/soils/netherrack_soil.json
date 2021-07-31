@@ -1,0 +1,18 @@
+{
+  "path": "vanilla/soils/netherrack_soil.json",
+  "enabled": true,
+  "id": "netherrack_soil",
+  "name": "Netherrack",
+  "varients": [
+    {
+      "item": "minecraft:netherrack",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

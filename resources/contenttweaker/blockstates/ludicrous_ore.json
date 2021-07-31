@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/ludicrous_ore",
       "particle": "contenttweaker:blocks/ludicrous_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

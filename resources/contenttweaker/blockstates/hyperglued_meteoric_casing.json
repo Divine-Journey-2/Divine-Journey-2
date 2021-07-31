@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/hyperglued_meteoric_casing",
       "particle": "contenttweaker:blocks/hyperglued_meteoric_casing"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

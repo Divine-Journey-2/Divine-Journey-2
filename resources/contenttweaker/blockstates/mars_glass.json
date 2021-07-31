@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/mars_glass",
       "particle": "contenttweaker:blocks/mars_glass"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

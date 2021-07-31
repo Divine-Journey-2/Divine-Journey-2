@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/hyper_diamond_block",
       "particle": "contenttweaker:blocks/hyper_diamond_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

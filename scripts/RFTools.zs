@@ -76,7 +76,7 @@ recipes.addShaped(<rftools:screen>, [[<enderio:item_alloy_ingot:6>,<ore:dyeBlack
 
 # Timer
 recipes.remove(<rftools:timer_block>);
-recipes.addShaped(<rftools:timer_block>, [[<minecraft:redstone>,<minecraft:clock>,<minecraft:redstone>],[<minecraft:clock>,<rftools:machine_base>,<minecraft:clock>],[<minecraft:redstone>,<minecraft:clock>,<minecraft:redstone>]]);
+recipes.addShaped(<rftools:timer_block>, [[<projectred-integration:gate:17>,<extrautils2:redstoneclock>,<projectred-integration:gate:17>],[<extrautils2:redstoneclock>,<rftools:machine_base>,<extrautils2:redstoneclock>],[<projectred-integration:gate:17>,<extrautils2:redstoneclock>,<projectred-integration:gate:17>]]);
 
 # Sequencer
 recipes.remove(<rftools:sequencer_block>);

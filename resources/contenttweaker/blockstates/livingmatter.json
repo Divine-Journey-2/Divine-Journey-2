@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/livingmatter",
       "particle": "contenttweaker:blocks/livingmatter"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/gerc_crystal",
       "particle": "contenttweaker:blocks/gerc_crystal"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -1387,6 +1387,10 @@ recipes.addShapeless(<contenttweaker:perfectium_block> * 9, [<contenttweaker:com
 # Compressed Perfectium Block
 recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>],[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>],[<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>,<contenttweaker:perfectium_block>]]);
 
+# Solar Seeds
+# recipe in config/modularmachinery/recipes/weak_fusion_plant_contenttweaker_solar_seeds.json
+<contenttweaker:solar_seeds>.addTooltip(format.white("Can only be planted on Crop Sticks."));
+
 # Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
 <contenttweaker:apalachia_door_key2>.addTooltip(format.red("Use it the same way as the previous key to ascend further."));

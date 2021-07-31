@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/mystical_iron_block",
       "particle": "contenttweaker:blocks/mystical_iron_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

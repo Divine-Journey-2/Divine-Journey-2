@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/celestial_crystal_core",
       "particle": "contenttweaker:blocks/celestial_crystal_core"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

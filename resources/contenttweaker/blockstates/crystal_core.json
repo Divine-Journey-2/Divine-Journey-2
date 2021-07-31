@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/crystal_core",
       "particle": "contenttweaker:blocks/crystal_core"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/alchemical_machine_frame",
       "particle": "contenttweaker:blocks/alchemical_machine_frame"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

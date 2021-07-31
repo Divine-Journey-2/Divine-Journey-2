@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/portion_of_the_sun",
       "particle": "contenttweaker:blocks/portion_of_the_sun"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -1,0 +1,71 @@
+{
+  "path": "mod_bewitchment/plants/wormwood_plant.json",
+  "enabled": true,
+  "id": "bewitchment:wormwood_plant",
+  "plant_name": "Wormwood",
+  "seed_name": "Wormwood Seeds",
+  "seed_items": [
+    {
+      "item": "bewitchment:wormwood_seeds",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "Seed from an weedy herb."
+  },
+  "growth_chance": 0.75,
+  "growth_bonus": 0.025,
+  "bonemeal": true,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.1,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 1,
+        "chance": 1.0,
+        "required": true,
+        "item": "bewitchment:wormwood",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "farmland_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "bewitchment:items/wormwood_seeds",
+    "plant_textures": [
+      "bewitchment:blocks/crop/crop_wormwood_0",
+      "bewitchment:blocks/crop/crop_wormwood_1",
+      "bewitchment:blocks/crop/crop_wormwood_2",
+      "bewitchment:blocks/crop/crop_wormwood_3",
+      "bewitchment:blocks/crop/crop_wormwood_4",
+      "bewitchment:blocks/crop/crop_wormwood_5",
+      "bewitchment:blocks/crop/crop_wormwood_6"
+    ]
+  }
+}

@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/tin_sheetmetal",
       "particle": "contenttweaker:blocks/tin_sheetmetal"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

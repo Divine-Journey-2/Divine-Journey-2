@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/angelic_silicon_crystal_block",
       "particle": "contenttweaker:blocks/angelic_silicon_crystal_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

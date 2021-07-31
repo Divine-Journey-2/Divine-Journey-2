@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/tough_purified_paste",
       "particle": "contenttweaker:blocks/tough_purified_paste"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

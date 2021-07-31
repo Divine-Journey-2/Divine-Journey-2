@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/moon_stone",
       "particle": "contenttweaker:blocks/moon_stone"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

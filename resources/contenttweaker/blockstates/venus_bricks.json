@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/venus_bricks",
       "particle": "contenttweaker:blocks/venus_bricks"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

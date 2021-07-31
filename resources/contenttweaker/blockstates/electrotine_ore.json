@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/electrotine_ore",
       "particle": "contenttweaker:blocks/electrotine_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

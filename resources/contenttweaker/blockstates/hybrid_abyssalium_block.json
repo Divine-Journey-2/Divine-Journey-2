@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/hybrid_abyssalium_block",
       "particle": "contenttweaker:blocks/hybrid_abyssalium_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

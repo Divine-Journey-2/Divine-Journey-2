@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/titanium_box",
       "particle": "contenttweaker:blocks/titanium_box"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

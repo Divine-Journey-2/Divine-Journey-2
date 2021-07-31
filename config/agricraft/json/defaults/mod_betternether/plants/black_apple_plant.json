@@ -1,0 +1,66 @@
+{
+  "path": "mod_betternether/plants/black_apple_plant.json",
+  "enabled": true,
+  "id": "betternether:black_apple_plant",
+  "plant_name": "Black Apple Plant",
+  "seed_name": "Black Apple Seed",
+  "seed_items": [
+    {
+      "item": "betternether:black_apple_seed",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "Black Apples! I'm sure they taste juuuust fine."
+  },
+  "growth_chance": 0.75,
+  "growth_bonus": 0.025,
+  "bonemeal": false,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.1,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 0.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 1,
+        "chance": 1.0,
+        "required": true,
+        "item": "betternether:black_apple",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 0,
+    "max_light": 16,
+    "soils": [
+      "netherrack_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "betternether:items/black_apple_seed",
+    "plant_textures": [
+      "betternether:blocks/black_apple_seed",
+      "betternether:blocks/black_apple"
+    ]
+  }
+}

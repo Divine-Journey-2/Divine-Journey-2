@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/apalachia_door2",
       "particle": "contenttweaker:blocks/apalachia_door2"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

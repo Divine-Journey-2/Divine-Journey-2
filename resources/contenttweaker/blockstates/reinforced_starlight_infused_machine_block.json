@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/reinforced_starlight_infused_machine_block",
       "particle": "contenttweaker:blocks/reinforced_starlight_infused_machine_block"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },
