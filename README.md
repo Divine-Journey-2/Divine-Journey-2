@@ -11,7 +11,7 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 
 ##### Dimensions & IDs
 
-| Mod | Name  | ID | Should be reset?* |
+| Mod | Name  | ID | Should be reset?(*) |
 | ------------- | ------------- | ------------- | ------------- |
 | Minecraft | Nether | -1 | yes |
 | DivineRPG | End | 1 | yes |
@@ -33,7 +33,7 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 | AbyssalCraft | Abyssal Wasteland | 50 | yes |
 | AbyssalCraft | Dreadlands | 51 | yes |
 | AbyssalCraft | Omothol | 52 | yes |
-| AbyssalCraft | The Dark Realm | 53 | probably not** |
+| AbyssalCraft | The Dark Realm | 53 | probably not (unless the stone in the dimension is being quarried out) |
 | LightningCraft | Underworld | -9 | yes |
 | Aether Legacy | Aether | 4 | yes |
 | Atum 2 | Atum | 17 | yes |
@@ -43,5 +43,4 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 | RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 5, 6, ... | no |
 
 
-* if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
-** unless the stone in the dimension is being quarried out
+(*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
