@@ -9,7 +9,7 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 
 ### Info for server owners:
 
-##### Dimensions & IDs
+### Dimensions & IDs
 
 | Mod | Name  | ID | Should be reset?(*) |
 | ------------- | ------------- | ------------- | ------------- |
@@ -44,3 +44,7 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 
 
 (*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
+
+### Client-only mods
+
+...
