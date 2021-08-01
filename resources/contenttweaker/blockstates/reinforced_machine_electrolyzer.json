@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/reinforced_machine_electrolyzer",
+      "all": "contenttweaker:blocks/reinforced_machine_electrolyzer",
       "particle": "contenttweaker:blocks/reinforced_machine_electrolyzer"
     },
     "model": "cube_all",

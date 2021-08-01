@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Black Apples! I'm sure they taste juuuust fine."
+    "default": "Black Apples! I\u0027m sure they taste juuuust fine."
   },
   "growth_chance": 0.75,
   "growth_bonus": 0.025,

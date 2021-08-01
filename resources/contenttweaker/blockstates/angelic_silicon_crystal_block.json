@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/angelic_silicon_crystal_block",
+      "all": "contenttweaker:blocks/angelic_silicon_crystal_block",
       "particle": "contenttweaker:blocks/angelic_silicon_crystal_block"
     },
     "model": "cube_all",

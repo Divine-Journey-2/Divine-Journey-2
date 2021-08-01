@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/dreammatter",
+      "all": "contenttweaker:blocks/dreammatter",
       "particle": "contenttweaker:blocks/dreammatter"
     },
     "model": "cube_all",

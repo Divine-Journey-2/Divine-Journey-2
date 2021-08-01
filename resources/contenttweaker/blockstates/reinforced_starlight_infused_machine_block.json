@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/reinforced_starlight_infused_machine_block",
+      "all": "contenttweaker:blocks/reinforced_starlight_infused_machine_block",
       "particle": "contenttweaker:blocks/reinforced_starlight_infused_machine_block"
     },
     "model": "cube_all",

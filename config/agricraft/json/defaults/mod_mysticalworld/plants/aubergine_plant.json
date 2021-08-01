@@ -1,5 +1,5 @@
 {
-  "path": "mod_roots/plants/aubergine_plant.json",
+  "path": "mod_mysticalworld/plants/aubergine_plant.json",
   "enabled": true,
   "id": "roots:aubergine_plant",
   "plant_name": "Aubergine Plant",

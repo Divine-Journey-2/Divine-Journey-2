@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/undermeld",
+      "all": "contenttweaker:blocks/undermeld",
       "particle": "contenttweaker:blocks/undermeld"
     },
     "model": "cube_all",

@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/mars_roof",
+      "all": "contenttweaker:blocks/mars_roof",
       "particle": "contenttweaker:blocks/mars_roof"
     },
     "model": "cube_all",

@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/hybrid_abyssalium_block",
+      "all": "contenttweaker:blocks/hybrid_abyssalium_block",
       "particle": "contenttweaker:blocks/hybrid_abyssalium_block"
     },
     "model": "cube_all",

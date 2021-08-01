@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/celestial_crystal_core",
+      "all": "contenttweaker:blocks/celestial_crystal_core",
       "particle": "contenttweaker:blocks/celestial_crystal_core"
     },
     "model": "cube_all",

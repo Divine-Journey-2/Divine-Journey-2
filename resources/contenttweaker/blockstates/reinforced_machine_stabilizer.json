@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/reinforced_machine_stabilizer",
+      "all": "contenttweaker:blocks/reinforced_machine_stabilizer",
       "particle": "contenttweaker:blocks/reinforced_machine_stabilizer"
     },
     "model": "cube_all",

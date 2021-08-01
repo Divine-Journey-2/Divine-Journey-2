@@ -16,6 +16,10 @@ import moretweaker.lightningcraft.LightningCrusher;
 import mods.thermalexpansion.InductionSmelter;
 import mods.roots.Mortar;
 import mods.immersiveengineering.AlloySmelter;
+import mods.mekanism.enrichment;
+import mods.mekanism.purification;
+import mods.mekanism.chemical.injection;
+import mods.mekanism.chemical.dissolution;
 
 print("STARTING OreProcessingAdditions.zs");
 
@@ -32,7 +36,7 @@ function addMaterialToDustCrushingWOPetrotheum(ingot as IItemStack, dust as IIte
 	Grinder.addRecipe(dust, ingot, 4);
 	mods.thermalexpansion.Pulverizer.addRecipe(dust, ingot, 2000);
 	EUCrusher.add(dust, ingot);
-	mods.enderio.SagMill.addRecipe([dust], [100], ingot);
+	mods.enderio.SagMill.addRecipe([dust], [1.0], ingot);
 	LightningCrusher.add(dust, ingot);
 	mods.mekanism.crusher.addRecipe(ingot, dust);
 }
@@ -48,7 +52,7 @@ function addOreDoubling(ore as IItemStack, dust as IItemStack, ingot as IItemSta
 	Grinder.addRecipe(dust, ore, 4, dust, 0.9);
 	mods.thermalexpansion.Pulverizer.addRecipe(dust * 2, ore, 4000);
 	EUCrusher.add(dust * 2, ore);
-	mods.enderio.SagMill.addRecipe([dust * 2], [100], ore);
+	mods.enderio.SagMill.addRecipe([dust * 2], [1.0], ore);
 	LightningCrusher.add(dust * 2, ore);
 	mods.mekanism.enrichment.addRecipe(ore, dust * 2);
 	mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
@@ -89,7 +93,7 @@ function addOreToGemProcessing(ore as IItemStack, gem as IItemStack, secondaryOu
 	mods.thermalexpansion.Pulverizer.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 15);
 	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.15);
 	EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.15);
-	mods.enderio.SagMill.addRecipe([gem * gemAmount], [100], ore, "NONE", 4000);
+	mods.enderio.SagMill.addRecipe([gem * gemAmount], [1.0], ore, "NONE", 4000);
 }
 
 # Gem -> Dust
@@ -100,7 +104,7 @@ function addGemToDustProcessing(gem as IItemStack, dust as IItemStack, secondary
 	mods.thermalexpansion.Pulverizer.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 15);
 	IECrusher.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 0.15);
 	EUCrusher.add(dust * dustAmount, gem, secondaryOutput, 0.15);
-	mods.enderio.SagMill.addRecipe([dust * dustAmount], [100], gem, "NONE", 4000);
+	mods.enderio.SagMill.addRecipe([dust * dustAmount], [1.0], gem, "NONE", 4000);
 }
 
 
@@ -237,7 +241,7 @@ mods.astralsorcery.Grindstone.addRecipe(<quantumflux:graphiteore>, <quantumflux:
 Grinder.addRecipe(<quantumflux:graphitedust>, <quantumflux:graphiteore>, 4, <quantumflux:graphitedust>, 0.9);
 mods.thermalexpansion.Pulverizer.addRecipe(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>, 4000);
 EUCrusher.add(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>);
-mods.enderio.SagMill.addRecipe([<quantumflux:graphitedust> * 2], [100], <quantumflux:graphiteore>);
+mods.enderio.SagMill.addRecipe([<quantumflux:graphitedust> * 2], [1.0], <quantumflux:graphiteore>);
 LightningCrusher.add(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>);
 mods.mekanism.enrichment.addRecipe(<quantumflux:graphiteore>, <quantumflux:graphitedust> * 2);
 
@@ -249,7 +253,7 @@ recipes.addShapeless(<mekanism:otherdust:4>, [<alchemistry:ingot:3>, <ore:dustPe
 IECrusher.addRecipe(<mekanism:otherdust:4>, <alchemistry:ingot:3>, 4000);
 Grinder.addRecipe(<mekanism:otherdust:4>, <alchemistry:ingot:3>, 4);
 EUCrusher.add(<mekanism:otherdust:4>, <alchemistry:ingot:3>);
-mods.enderio.SagMill.addRecipe([<mekanism:otherdust:4>], [100], <alchemistry:ingot:3>);
+mods.enderio.SagMill.addRecipe([<mekanism:otherdust:4>], [1.0], <alchemistry:ingot:3>);
 LightningCrusher.add(<mekanism:otherdust:4>, <alchemistry:ingot:3>);
 mods.mekanism.crusher.addRecipe(<alchemistry:ingot:3>, <mekanism:otherdust:4>);
 
@@ -312,14 +316,14 @@ for aby_ore in aby_coralium_ores {
 	mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:coralium> * 3, false, 1, 200);
 	mods.mekanism.enrichment.addRecipe(aby_ore, <abyssalcraft:coralium> * 2);
 	EUCrusher.add(<abyssalcraft:coralium> * 2, aby_ore, null, 0.15);
-	mods.enderio.SagMill.addRecipe([<abyssalcraft:coralium> * 2], [100], aby_ore, "NONE", 4000);
+	mods.enderio.SagMill.addRecipe([<abyssalcraft:coralium> * 2], [1.0], aby_ore, "NONE", 4000);
 }
 
 # Abyssalnite Ore -> Abyssalnite Dust/Ingot
 val aby_abyssalnite_ores = [<abyssalcraft:abyore>, <abyssalcraft:abydreadore>] as IItemStack[];
 for aby_ore in aby_abyssalnite_ores {
 	Grinder.addRecipe(<acintegration:dust>, aby_ore, 4, <acintegration:dust>, 0.9);
-	mods.enderio.SagMill.addRecipe([<acintegration:dust> * 2], [100], aby_ore);
+	mods.enderio.SagMill.addRecipe([<acintegration:dust> * 2], [1.0], aby_ore);
 	mods.mekanism.enrichment.addRecipe(aby_ore, <acintegration:dust> * 2);
 	mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:abyingot> * 3, false, 1, 200);
 }
@@ -327,7 +331,7 @@ addOreDoubling(<abyssalcraft:dreadore>, <acintegration:dust>, <abyssalcraft:abyi
 
 # Abyssalnite Ingot -> Dust
 Grinder.addRecipe(<acintegration:dust>, <abyssalcraft:abyingot>, 4);
-mods.enderio.SagMill.addRecipe([<acintegration:dust>], [100], <abyssalcraft:abyingot>);
+mods.enderio.SagMill.addRecipe([<acintegration:dust>], [1.0], <abyssalcraft:abyingot>);
 mods.mekanism.crusher.addRecipe(<abyssalcraft:abyingot>, <acintegration:dust>);
 
 # Pearlescent Coralium Ore -> Coralium Pearl
@@ -338,17 +342,17 @@ mods.mekanism.enrichment.addRecipe(<abyssalcraft:abypcorore>, <abyssalcraft:cpea
 mods.thermalexpansion.Pulverizer.addRecipe(<abyssalcraft:cpearl> * 2, <abyssalcraft:abypcorore>, 4000, null, 15);
 IECrusher.addRecipe(<abyssalcraft:cpearl> * 2, <abyssalcraft:abypcorore>, 4000, null, 0.15);
 EUCrusher.add(<abyssalcraft:cpearl> * 2, <abyssalcraft:abypcorore>, null, 0.15);
-mods.enderio.SagMill.addRecipe([<abyssalcraft:cpearl> * 2], [100], <abyssalcraft:abypcorore>, "NONE", 4000);
+mods.enderio.SagMill.addRecipe([<abyssalcraft:cpearl> * 2], [1.0], <abyssalcraft:abypcorore>, "NONE", 4000);
 
 # Liquified Coralium Ore -> Refined Coralium Dust/Ingot
 Grinder.addRecipe(<acintegration:dust:1>, <abyssalcraft:abylcorore>, 4, <acintegration:dust:1>, 0.9);
-mods.enderio.SagMill.addRecipe([<acintegration:dust:1>* 2], [100], <abyssalcraft:abylcorore>);
+mods.enderio.SagMill.addRecipe([<acintegration:dust:1>* 2], [1.0], <abyssalcraft:abylcorore>);
 mods.mekanism.enrichment.addRecipe(<abyssalcraft:abylcorore>, <acintegration:dust:1> * 2);
 mods.astralsorcery.StarlightInfusion.addInfusion(<abyssalcraft:abylcorore>, <abyssalcraft:cingot> * 3, false, 1, 200);
 
 # Refined Coralium Ingot -> Dust
 Grinder.addRecipe(<acintegration:dust:1>, <abyssalcraft:cingot>, 4);
-mods.enderio.SagMill.addRecipe([<acintegration:dust:1>], [100], <abyssalcraft:cingot>);
+mods.enderio.SagMill.addRecipe([<acintegration:dust:1>], [1.0], <abyssalcraft:cingot>);
 mods.mekanism.crusher.addRecipe(<abyssalcraft:cingot>, <acintegration:dust:1>);
 
 # Crushed Dark Gem
@@ -396,7 +400,7 @@ IECrusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>, 4000);
 AACrusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
 mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>, 2000);
 EUCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
-mods.enderio.SagMill.addRecipe([<minecraft:wheat> * 9], [100], <minecraft:hay_block>);
+mods.enderio.SagMill.addRecipe([<minecraft:wheat> * 9], [1.0], <minecraft:hay_block>);
 LightningCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
 mods.mekanism.crusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
 
@@ -489,25 +493,25 @@ addAdditionalNetherGemProcessing(<mysticalagriculture:nether_prosperity_ore>,<my
 
 # Redstone Ore SAG Milling can produce a Resonating Redstone Crystal
 mods.enderio.SagMill.removeRecipe(<minecraft:redstone_ore>);
-mods.enderio.SagMill.addRecipe([<minecraft:redstone> * 6, <thermalfoundation:material:866>, <minecraft:cobblestone>, <extrautils2:ingredients>], [1,0.25,0.1,0.01], <minecraft:redstone_ore>, "NONE", 3600);
+mods.enderio.SagMill.addRecipe([<minecraft:redstone> * 6, <thermalfoundation:material:866>, <extrautils2:ingredients>], [1,0.25,0.01], <ore:oreRedstone>, "NONE", 3600);
 
 # Sky Stone Dust
 recipes.addShapeless(<appliedenergistics2:material:45>, [<appliedenergistics2:sky_stone_block>, <ore:dustPetrotheum>]);
 IECrusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>, 4000);
 AACrusher.addRecipe(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
 EUCrusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
-mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>], [100], <appliedenergistics2:sky_stone_block>);
+mods.enderio.SagMill.addRecipe([<appliedenergistics2:material:45>], [1.0], <appliedenergistics2:sky_stone_block>);
 LightningCrusher.add(<appliedenergistics2:material:45>, <appliedenergistics2:sky_stone_block>);
 mods.mekanism.crusher.addRecipe(<appliedenergistics2:sky_stone_block>, <appliedenergistics2:material:45>);
 
 # Pulverized Iridium
 Grinder.addRecipe(<thermalfoundation:material:71>, <thermalfoundation:material:135>, 4);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:71>], [100], <thermalfoundation:material:135>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:71>], [1.0], <thermalfoundation:material:135>);
 
 # Crushed Black Quartz
 recipes.addShapeless(<actuallyadditions:item_dust:7>, [<actuallyadditions:item_misc:5>, <ore:dustPetrotheum>]);
 Grinder.addRecipe(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>, 4);
-mods.enderio.SagMill.addRecipe([<actuallyadditions:item_dust:7>], [100], <actuallyadditions:item_misc:5>);
+mods.enderio.SagMill.addRecipe([<actuallyadditions:item_dust:7>], [1.0], <actuallyadditions:item_misc:5>);
 
 # Resonating Redstone Crystal
 mods.thermalexpansion.Pulverizer.removeRecipe(<extrautils2:ingredients>);
@@ -587,19 +591,19 @@ addMaterialToDustCrushingWOPetrotheum(<openblocks:trophy:*>, <mysticalagricultur
 # Electricium Dust
 Grinder.addRecipe(<lightningcraft:dust>, <lightningcraft:ingot>, 4);
 EUCrusher.add(<lightningcraft:dust>, <lightningcraft:ingot>);
-mods.enderio.SagMill.addRecipe([<lightningcraft:dust>], [100], <lightningcraft:ingot>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust>], [1.0], <lightningcraft:ingot>);
 mods.mekanism.crusher.addRecipe(<lightningcraft:ingot>, <lightningcraft:dust>);
 
 # Skyfather Dust
 Grinder.addRecipe(<lightningcraft:dust:1>, <lightningcraft:ingot:1>, 4);
 EUCrusher.add(<lightningcraft:dust:1>, <lightningcraft:ingot:1>);
-mods.enderio.SagMill.addRecipe([<lightningcraft:dust:1>], [100], <lightningcraft:ingot:1>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust:1>], [1.0], <lightningcraft:ingot:1>);
 mods.mekanism.crusher.addRecipe(<lightningcraft:ingot:1>, <lightningcraft:dust:1>);
 
 # Mystic Dust
 Grinder.addRecipe(<lightningcraft:dust:2>, <lightningcraft:ingot:2>, 4);
 EUCrusher.add(<lightningcraft:dust:2>, <lightningcraft:ingot:2>);
-mods.enderio.SagMill.addRecipe([<lightningcraft:dust:2>], [100], <lightningcraft:ingot:2>);
+mods.enderio.SagMill.addRecipe([<lightningcraft:dust:2>], [1.0], <lightningcraft:ingot:2>);
 mods.mekanism.crusher.addRecipe(<lightningcraft:ingot:2>, <lightningcraft:dust:2>);
 
 # Stardust from Starmetal
@@ -630,7 +634,7 @@ mods.astralsorcery.Grindstone.addRecipe(<galacticraftplanets:venus:13>, <galacti
 Grinder.addRecipe(<galacticraftplanets:basic_item_venus:4>, <galacticraftplanets:venus:13>, 4, <galacticraftplanets:basic_item_venus:4>, 0.9);
 mods.thermalexpansion.Pulverizer.addRecipe(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>, 4000);
 EUCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
-mods.enderio.SagMill.addRecipe([<galacticraftplanets:basic_item_venus:4> * 2], [100], <galacticraftplanets:venus:13>);
+mods.enderio.SagMill.addRecipe([<galacticraftplanets:basic_item_venus:4> * 2], [1.0], <galacticraftplanets:venus:13>);
 LightningCrusher.add(<galacticraftplanets:basic_item_venus:4> * 2, <galacticraftplanets:venus:13>);
 mods.mekanism.enrichment.addRecipe(<galacticraftplanets:venus:13>, <galacticraftplanets:basic_item_venus:4> * 2);
 
@@ -651,71 +655,232 @@ mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimension
 # Corrupted Draconium Dust
 addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>, <contenttweaker:corrupted_draconium_dust>);
 
-# Jade Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_jade>);
-mods.enderio.SagMill.addRecipe([<erebus:materials:1> * 2, <erebus:materials:1>, <erebus:umberstone:1>], [100, 50, 15], <erebus:ore_jade>, "CHANCE_ONLY");
-
-# Erebus Iron Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_iron>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material> * 2, <thermalfoundation:material:65>, <thermalfoundation:material:69>, <erebus:umberstone:1>], [100, 5, 10, 15], <erebus:ore_iron>, "CHANCE_ONLY");
-
-# Erebus Gold Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_gold>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:64>, <erebus:umberstone:1>], [100, 20, 15], <erebus:ore_gold>, "CHANCE_ONLY");
-
-# Erebus Coal Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_coal>);
-mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>, <erebus:umberstone:1>], [100, 60, 0.1, 15], <erebus:ore_coal>, "CHANCE_ONLY");
-
-# Erebus Diamond Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_diamond>);
-mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:umberstone:1>], [100, 25, 5, 15], <erebus:ore_diamond>, "CHANCE_ONLY");
-
-# Erebus Emerald Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_emerald>);
-mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>, <erebus:umberstone:1>], [100, 25, 15], <erebus:ore_emerald>, "CHANCE_ONLY");
-
-# Erebus Lapis Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_lapis>);
-mods.enderio.SagMill.addRecipe([<minecraft:dye:4> * 8, <minecraft:dye:4>, <erebus:umberstone:1>], [100, 20, 15], <erebus:ore_lapis>, "CHANCE_ONLY");
-
-# Erebus Quartz Ore
-mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_quartz>, "CHANCE_ONLY");
-
-# Petrified Quartz Ore
-mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:petrified_log_inner>], [100, 10, 15], <erebus:ore_petrified_quartz>, "CHANCE_ONLY");
-
-# Erebus Copper Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_copper>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64> * 2, <thermalfoundation:material:1>, <erebus:umberstone:1>], [100, 12, 15], <erebus:ore_copper>, "CHANCE_ONLY");
-
-# Erebus Silver Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_silver>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2, <thermalfoundation:material:67>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_silver>, "CHANCE_ONLY");
-
-# Erebus Tin Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_tin>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:65> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_tin>, "CHANCE_ONLY");
-
-# Erebus Lead Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_lead>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:67> * 2, <thermalfoundation:material:66>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_lead>, "CHANCE_ONLY");
-
-# Erebus Alumium Ore
-mods.enderio.SagMill.removeRecipe(<erebus:ore_aluminium>);
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [100, 10, 15], <erebus:ore_aluminium>, "CHANCE_ONLY");
-
-# Volcanic Diamond Ore
-mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:volcanic_rock>], [100, 25, 5, 15], <erebus:ore_encrusted_diamond>, "CHANCE_ONLY");
-
 # Ultimate Ingot
 IECrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4000);
 AACrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
 Grinder.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4);
 mods.thermalexpansion.Pulverizer.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 2000);
 EUCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
-mods.enderio.SagMill.addRecipe([<extendedcrafting:material:32> * 64], [100], <extendedcrafting:singularity_ultimate>);
+mods.enderio.SagMill.addRecipe([<extendedcrafting:material:32> * 64], [1.0], <extendedcrafting:singularity_ultimate>);
 LightningCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>);
 mods.mekanism.crusher.addRecipe(<extendedcrafting:singularity_ultimate>, <extendedcrafting:material:32> * 64);
+
+# UB Ores -> SAG Mill
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:892>,<thermalfoundation:material:892>,<thermalfoundation:material:833>], [1.0,0.25,0.15], <ore:oreClathrateOilSand>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:67> * 2,<thermalfoundation:material:66>], [1.0,0.2], <ore:oreLead>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2,<appliedenergistics2:material:3>], [1.0,0.1], <ore:oreQuartz>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2,<thermalfoundation:material:67>], [1.0,0.2], <ore:oreSilver>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64> * 2,<thermalfoundation:material:1>], [1.0,0.2], <ore:oreCopper>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<minecraft:dye:4> * 8,<minecraft:dye:4>], [1.0,0.5], <ore:oreLapis>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:0> * 2,<thermalfoundation:material:65> * 2,<thermalfoundation:material:69> * 2], [1.0,0.15,0.1], <ore:oreIron>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:72> * 2], [1.0], <ore:oreMithril>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>], [1.0, 0.25, 0.05], <ore:oreDiamond>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<draconicevolution:draconium_dust> * 3,<draconicevolution:draconium_dust> * 2,<draconicevolution:draconium_dust> * 2], [1.0, 0.4, 0.15], <ore:oreDraconium>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>], [1.0, 0.6, 0.001], <ore:oreCoal>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>], [1.0, 0.25], <ore:oreEmerald>, "CHANCE_ONLY");
+
+# UB Ores -> Enrichment Chamber
+val UBLeadOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];
+val UBCertusQuartzOres = [<undergroundbiomes:igneous_stone_appliedenergistics2_quartz_ore:*>,<undergroundbiomes:metamorphic_stone_appliedenergistics2_quartz_ore:*>,<undergroundbiomes:sedimentary_stone_appliedenergistics2_quartz_ore:*>,<undergroundbiomes:igneous_stone_appliedenergistics2_charged_quartz_ore:*>,<undergroundbiomes:metamorphic_stone_appliedenergistics2_charged_quartz_ore:*>,<undergroundbiomes:sedimentary_stone_appliedenergistics2_charged_quartz_ore:*>] as IItemStack[];
+val UBAmethystOres = [<undergroundbiomes:igneous_stone_mysticalworld_amethyst_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalworld_amethyst_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalworld_amethyst_ore:*>] as IItemStack[];
+val UBIridiumOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.iridium.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.iridium.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.iridium.name:*>] as IItemStack[];
+val UBNickelOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:igneous_stone_immersiveengineering_ore_4:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_4:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_4:*>] as IItemStack[];
+val UBOsmiumOres = [<undergroundbiomes:igneous_stone_mekanism_oreblock:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock:*>] as IItemStack[];
+val UBSilverOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:igneous_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.silver.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.silver.name:*>] as IItemStack[];
+val UBGoldOres = [<undergroundbiomes:igneous_stone_gold_ore:*>,<undergroundbiomes:metamorphic_stone_gold_ore:*>,<undergroundbiomes:sedimentary_stone_gold_ore:*>] as IItemStack[];
+val UBQuartzOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_quartz:*>,<undergroundbiomes:metamorphic_stone_thaumcraft_ore_quartz:*>,<undergroundbiomes:sedimentary_stone_thaumcraft_ore_quartz:*>] as IItemStack[];
+val UBAmberOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:metamorphic_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:sedimentary_stone_thaumcraft_ore_amber:*>] as IItemStack[];
+val UBAluminumOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.aluminum.name:*>] as IItemStack[];
+val UBLapisOres = [<undergroundbiomes:igneous_stone_lapis_ore:*>,<undergroundbiomes:metamorphic_stone_lapis_ore:*>,<undergroundbiomes:sedimentary_stone_lapis_ore:*>] as IItemStack[];
+val UBMithrilOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name:*>] as IItemStack[];
+val UBRedstoneOres = [<undergroundbiomes:igneous_stone_redstone_ore:*>,<undergroundbiomes:metamorphic_stone_redstone_ore:*>,<undergroundbiomes:sedimentary_stone_redstone_ore:*>] as IItemStack[];
+val UBPlatinumOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.platinum.name:*>] as IItemStack[];
+val UBDimensionalShardOres = [<undergroundbiomes:igneous_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:metamorphic_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:sedimentary_stone_rftools_dimensional_shard_ore:*>] as IItemStack[];
+val UBDiamondOres = [<undergroundbiomes:igneous_stone_diamond_ore:*>,<undergroundbiomes:metamorphic_stone_diamond_ore:*>,<undergroundbiomes:sedimentary_stone_diamond_ore:*>] as IItemStack[];
+val UBDraconiumOres = [<undergroundbiomes:igneous_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:metamorphic_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:sedimentary_stone_draconicevolution_draconium_ore:*>] as IItemStack[];
+val UBCoalOres = [<undergroundbiomes:igneous_stone_coal_ore:*>,<undergroundbiomes:metamorphic_stone_coal_ore:*>,<undergroundbiomes:sedimentary_stone_coal_ore:*>] as IItemStack[];
+val UBEmeraldOres = [<undergroundbiomes:igneous_stone_emerald_ore:*>,<undergroundbiomes:metamorphic_stone_emerald_ore:*>,<undergroundbiomes:sedimentary_stone_emerald_ore:*>] as IItemStack[];
+val UBCopperOres = [<undergroundbiomes:igneous_stone_thermalfoundation_ore:*>,<undergroundbiomes:metamorphic_stone_thermalfoundation_ore:*>,<undergroundbiomes:sedimentary_stone_thermalfoundation_ore:*>,<undergroundbiomes:igneous_stone_immersiveengineering_ore:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore:*>,<undergroundbiomes:igneous_stone_mekanism_oreblock_1:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock_1:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock_1:*>] as IItemStack[];
+val UBTinOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:igneous_stone_mekanism_oreblock_2:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock_2:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock_2:*>] as IItemStack[];
+val UBIronOres = [<undergroundbiomes:igneous_stone_iron_ore:*>,<undergroundbiomes:metamorphic_stone_iron_ore:*>,<undergroundbiomes:sedimentary_stone_iron_ore:*>] as IItemStack[];
+
+for o in UBLeadOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:67> * 2);
+}
+for o in UBCertusQuartzOres {
+	mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:1> * 4);
+}
+for o in UBAmethystOres {
+	mods.mekanism.enrichment.addRecipe(o, <mysticalworld:amethyst_gem> * 2);
+}
+for o in UBIridiumOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:71> * 2);
+}
+for o in UBNickelOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:69> * 2);
+}
+for o in UBOsmiumOres {
+	mods.mekanism.enrichment.addRecipe(o, <mekanism:dust:2> * 2);
+}
+for o in UBSilverOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:66> * 2);
+}
+for o in UBGoldOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:1> * 2);
+}
+for o in UBQuartzOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:quartz> * 6);
+}
+for o in UBAmberOres {
+	mods.mekanism.enrichment.addRecipe(o, <thaumcraft:amber> * 2);
+}
+for o in UBAluminumOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:68> * 2);
+}
+for o in UBLapisOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:dye:4> * 12);
+}
+for o in UBMithrilOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
+}
+for o in UBRedstoneOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
+}
+for o in UBPlatinumOres {
+	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:70> * 2);
+}
+for o in UBDimensionalShardOres {
+	mods.mekanism.enrichment.addRecipe(o, <rftools:dimensional_shard> * 4);
+}
+for o in UBDiamondOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:diamond> * 2);
+}
+for o in UBDraconiumOres {
+	mods.mekanism.enrichment.addRecipe(o, <draconicevolution:draconium_dust> * 2);
+}
+for o in UBCoalOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:coal> * 2);
+}
+for o in UBEmeraldOres {
+	mods.mekanism.enrichment.addRecipe(o, <minecraft:emerald> * 2);
+}
+
+# UB Ores -> Purification Chamber, Chemical Injection Chamber, Chemical Dissolution Chamber
+for o in UBLeadOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:6> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:6> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:lead> * 1000);
+}
+for o in UBOsmiumOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:2> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:2> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:osmium> * 1000);
+}
+for o in UBSilverOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:5> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:5> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:silver> * 1000);
+}
+for o in UBCopperOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:3> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:3> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:copper> * 1000);
+}
+for o in UBGoldOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:1> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:1> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:gold> * 1000);
+}
+for o in UBTinOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:4> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:4> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:tin> * 1000);
+}
+for o in UBIronOres {
+	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:0> * 3);
+	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:0> * 4);
+	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:iron> * 1000);
+}
+
+# UB Inferium Ores
+val UBInferiumOres = [<undergroundbiomes:igneous_stone_mysticalagriculture_inferium_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalagriculture_inferium_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalagriculture_inferium_ore:*>] as IItemStack[];
+recipes.addShapeless(<mysticalagriculture:crafting> * 4, [<ore:oreInferium>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<mysticalagriculture:crafting> * 4, <ore:oreInferium>, 4000);
+AACrusher.addRecipe(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
+Grinder.addRecipe(<mysticalagriculture:crafting> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting>, 0.9);
+LightningCrusher.add(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
+for o in UBInferiumOres {
+	mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting> * 4);
+}
+mods.mekanism.enrichment.addRecipe(<ore:oreInferium>, <mysticalagriculture:crafting> * 4);
+
+# UB Prosperity Ores
+val UBProsperityOres = [<undergroundbiomes:igneous_stone_mysticalagriculture_prosperity_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalagriculture_prosperity_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalagriculture_prosperity_ore:*>] as IItemStack[];
+recipes.addShapeless(<mysticalagriculture:crafting:5> * 4, [<ore:oreProsperity>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>, 4000);
+AACrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
+Grinder.addRecipe(<mysticalagriculture:crafting:5> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting:5>, 0.9);
+LightningCrusher.add(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
+for o in UBProsperityOres {
+	mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting:5> * 4);
+}
+mods.mekanism.enrichment.addRecipe(<ore:oreProsperity>, <mysticalagriculture:crafting:5> * 4);
+
+# Jade Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_jade>);
+mods.enderio.SagMill.addRecipe([<erebus:materials:1> * 2, <erebus:materials:1>, <erebus:umberstone:1>], [1.0, 0.5, 0.15], <erebus:ore_jade>, "CHANCE_ONLY");
+
+# Erebus Iron Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_iron>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material> * 2, <thermalfoundation:material:65>, <thermalfoundation:material:69>, <erebus:umberstone:1>], [1.0, 0.5, 0.1, 0.15], <erebus:ore_iron>, "CHANCE_ONLY");
+
+# Erebus Gold Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_gold>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:64>, <erebus:umberstone:1>], [1.0, 0.2, 0.15], <erebus:ore_gold>, "CHANCE_ONLY");
+
+# Erebus Coal Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_coal>);
+mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>, <erebus:umberstone:1>], [1.0, 0.6, 0.001, 0.15], <erebus:ore_coal>, "CHANCE_ONLY");
+
+# Erebus Diamond Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_diamond>);
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:umberstone:1>], [1.0, 0.25, 0.05, 15], <erebus:ore_diamond>, "CHANCE_ONLY");
+
+# Erebus Emerald Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_emerald>);
+mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>, <erebus:umberstone:1>], [1.0, 0.25, 0.15], <erebus:ore_emerald>, "CHANCE_ONLY");
+
+# Erebus Lapis Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_lapis>);
+mods.enderio.SagMill.addRecipe([<minecraft:dye:4> * 8, <minecraft:dye:4>, <erebus:umberstone:1>], [1.0, 0.2, 0.15], <erebus:ore_lapis>, "CHANCE_ONLY");
+
+# Erebus Quartz Ore
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:umberstone:1>], [1.0, 0.1, 0.15], <erebus:ore_quartz>, "CHANCE_ONLY");
+
+# Petrified Quartz Ore
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>, <erebus:petrified_log_inner>], [1.0, 0.1, 0.15], <erebus:ore_petrified_quartz>, "CHANCE_ONLY");
+
+# Erebus Copper Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_copper>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64> * 2, <thermalfoundation:material:1>, <erebus:umberstone:1>], [1.0, 0.12, 0.15], <erebus:ore_copper>, "CHANCE_ONLY");
+
+# Erebus Silver Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_silver>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2, <thermalfoundation:material:67>, <erebus:umberstone:1>], [1.0, 0.1, 0.15], <erebus:ore_silver>, "CHANCE_ONLY");
+
+# Erebus Tin Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_tin>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:65> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [1.0, 0.1, 0.15], <erebus:ore_tin>, "CHANCE_ONLY");
+
+# Erebus Lead Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_lead>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:67> * 2, <thermalfoundation:material:66>, <erebus:umberstone:1>], [1.0, 0.1, 0.15], <erebus:ore_lead>, "CHANCE_ONLY");
+
+# Erebus Alumium Ore
+mods.enderio.SagMill.removeRecipe(<erebus:ore_aluminium>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfoundation:material>, <erebus:umberstone:1>], [1.0, 0.1, 0.15], <erebus:ore_aluminium>, "CHANCE_ONLY");
+
+# Volcanic Diamond Ore
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:volcanic_rock>], [1.0, 0.25, 0.05, 0.15], <erebus:ore_encrusted_diamond>, "CHANCE_ONLY");
 
 print("ENDING OreProcessingAdditions.zs");

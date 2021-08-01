@@ -57,8 +57,6 @@ var realmite_dust = VanillaFactory.createItem("realmite_dust");
 realmite_dust.register();
 var netherite_dust = VanillaFactory.createItem("netherite_dust");
 netherite_dust.register();
-var infinitum_essence = VanillaFactory.createItem("infinitum_essence");
-infinitum_essence.register();
 var perfectium_essence = VanillaFactory.createItem("perfectium_essence");
 perfectium_essence.register();
 var perfectium_ball = VanillaFactory.createItem("perfectium_ball");

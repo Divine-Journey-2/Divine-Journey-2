@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/hyperglued_meteoric_casing",
+      "all": "contenttweaker:blocks/hyperglued_meteoric_casing",
       "particle": "contenttweaker:blocks/hyperglued_meteoric_casing"
     },
     "model": "cube_all",

@@ -65,7 +65,7 @@
         "item": "mysticalagradditions:special",
         "meta": 4,
         "tags": "",
-        "ignoreMeta": true,
+        "ignoreMeta": false,
         "ignoreTags": [],
         "useOreDict": false
       }

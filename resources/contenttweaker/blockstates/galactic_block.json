@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/galactic_block",
+      "all": "contenttweaker:blocks/galactic_block",
       "particle": "contenttweaker:blocks/galactic_block"
     },
     "model": "cube_all",

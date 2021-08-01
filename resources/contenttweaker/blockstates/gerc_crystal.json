@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/gerc_crystal",
+      "all": "contenttweaker:blocks/gerc_crystal",
       "particle": "contenttweaker:blocks/gerc_crystal"
     },
     "model": "cube_all",

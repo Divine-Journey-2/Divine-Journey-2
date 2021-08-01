@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/electrotine_ore",
+      "all": "contenttweaker:blocks/electrotine_ore",
       "particle": "contenttweaker:blocks/electrotine_ore"
     },
     "model": "cube_all",

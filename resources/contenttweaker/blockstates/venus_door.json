@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/venus_door",
+      "all": "contenttweaker:blocks/venus_door",
       "particle": "contenttweaker:blocks/venus_door"
     },
     "model": "cube_all",

@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/asteroids_stone",
+      "all": "contenttweaker:blocks/asteroids_stone",
       "particle": "contenttweaker:blocks/asteroids_stone"
     },
     "model": "cube_all",

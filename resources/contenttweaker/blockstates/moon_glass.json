@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/moon_glass",
+      "all": "contenttweaker:blocks/moon_glass",
       "particle": "contenttweaker:blocks/moon_glass"
     },
     "model": "cube_all",
