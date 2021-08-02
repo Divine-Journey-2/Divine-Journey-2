@@ -9,6 +9,9 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 
 ### Info for server owners:
 
+### Modlist
+https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/dependents
+
 ### Dimensions & IDs
 
 | Mod | Name  | ID | Should be reset?(*) |
