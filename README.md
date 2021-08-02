@@ -46,5 +46,26 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 (*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
 
 ### Client-only mods
-
-...
+| Name | File |
+| ------------- | ------------- |
+| Better Advancements | BetterAdvancements-1.12.2-0.1.0.77 |
+| Controlling | Controlling-3.0.10 |
+| Connected Textures Mod | CTM-MC1.12.2-1.0.2.31 |
+| Custom Main Menu | CustomMainMenu-MC1.12.2-2.0.9.1 |
+| Default Options | DefaultOptions_1.12.2-9.2.8 |
+| Featured Servers | FeaturedServers-1.12-1.0.6 |
+| Just Enough Throwing In Fluids | jetif-1.12.2-1.5.2 |
+| Just Enough Resources | JustEnoughResources-1.12.2-0.9.2.60 |
+| More Overlays | moreoverlays-1.15.1-mc1.12.2 |
+| Mouse Tweaks | MouseTweaks-2.10-mc1.12.2 |
+| Neat | Neat 1.4-17 |
+| No Night Vision Flash | NoNVFlash-1.12.2-1.2.0.3-universal |
+| No Recipe Book | noRecipeBook_v1.2.2formc1.12.2 |
+| ReAuth | reauth-3.6.0 |
+| Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
+| Smooth Font | SmoothFont-mc1.12.2-2.1.2 |
+| Thaumic JEI | ThaumicJEI-1.12.2-1.6.0.27 |
+| Tips | Tips-1.12.2-1.0.9 |
+| Tip The Scales | TipTheScales-1.12.2-1.0.4 |
+| Toast Control | Toast Control-1.12.2-1.8.1 |
+| Waila Harvestability | WailaHarvestability-mc1.12-1.1.12 |
