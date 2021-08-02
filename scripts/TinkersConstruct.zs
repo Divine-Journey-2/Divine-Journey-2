@@ -249,4 +249,8 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 1296, <twilightf
 mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 144, <twilightforest:knightmetal_ingot>, 4000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 288, <twilightforest:armor_shard_cluster>, 8000);
 
+# Graveyard Soil
+recipes.remove(<tconstruct:soil:3>);
+recipes.addShapedMirrored(<tconstruct:soil:3>, [[<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>],[<contenttweaker:sanctus>,<contenttweaker:livingmatter>,<contenttweaker:terrae>],[<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>]]);
+
 print("ENDING TinkersConstruct.zs");

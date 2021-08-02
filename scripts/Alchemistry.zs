@@ -591,4 +591,25 @@ recipes.addShaped(<alchemistry:fusion_core>, [[<alchemistry:fusion_casing>,<avar
 recipes.remove(<alchemistry:fusion_controller>);
 recipes.addShaped(<alchemistry:fusion_controller>, [[<alchemistry:fusion_casing>,<contenttweaker:essence_of_matter>,<alchemistry:fusion_casing>],[<avaritia:resource:4>,<contenttweaker:ultimate_machine_frame>,<avaritia:resource:4>],[<alchemistry:fusion_casing>,<alchemistry:fission_controller>,<alchemistry:fusion_casing>]]);
 
+# Lights
+function addAlchemistryLightRecipe(output as IItemStack, element as IItemStack) {
+  recipes.remove(output);
+  recipes.addShaped(output, [[<mekanism:basicblock:10>,element,<mekanism:basicblock:10>],[element,element,element],[<mekanism:basicblock:10>,element,<mekanism:basicblock:10>]]);
+}
+
+# Neon Light
+addAlchemistryLightRecipe(<alchemistry:neon_light>,<alchemistry:element:10>);
+
+# Helium Light
+addAlchemistryLightRecipe(<alchemistry:helium_light>,<alchemistry:element:2>);
+
+# Argon Light
+addAlchemistryLightRecipe(<alchemistry:argon_light>,<alchemistry:element:18>);
+
+# Krypton Light
+addAlchemistryLightRecipe(<alchemistry:krypton_light>,<alchemistry:element:36>);
+
+# Xenon Light
+addAlchemistryLightRecipe(<alchemistry:xenon_light>,<alchemistry:element:54>);
+
 print("ENDING Alchemistry.zs");

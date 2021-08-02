@@ -179,4 +179,9 @@ recipes.addShapedMirrored(<immersiveengineering:tool>, [[null,<divinerpg:luna_br
 <divinerpg:luna_bricks>.addTooltip(format.white("Found on the top layer of Vethea,"));
 <divinerpg:luna_bricks>.addTooltip(format.white("in small rectangular arenas."));
 
+# Moon Clock
+recipes.addShaped(<divinerpg:moon_clock>, [[<divinerpg:shiny_pearls>,<minecraft:clock>,<divinerpg:shiny_pearls>],[<minecraft:clock>,<contenttweaker:eye_of_the_nightmare>,<minecraft:clock>],[<divinerpg:shiny_pearls>,<minecraft:clock>,<divinerpg:shiny_pearls>]]);
+<divinerpg:moon_clock>.addTooltip(format.white("It is NOT advised to use this to fight Lady Luna,"));
+<divinerpg:moon_clock>.addTooltip(format.white("unless you're REALLY up for a challenge..."));
+
 print("ENDING DivineRPGVetheaRecipes.zs");

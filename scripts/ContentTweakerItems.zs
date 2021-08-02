@@ -1439,5 +1439,10 @@ unwarpification_talisman.itemRightClick = function(stack, world, player, hand) {
     return "Pass";
 };
 unwarpification_talisman.register();
+var goddess_pearl = VanillaFactory.createItem("goddess_pearl");
+goddess_pearl.rarity = "EPIC";
+goddess_pearl.glowing = true;
+goddess_pearl.maxStackSize = 1;
+goddess_pearl.register();
 
 print("ENDING ContentTweakerItems.zs");

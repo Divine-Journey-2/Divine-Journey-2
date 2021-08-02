@@ -50,6 +50,7 @@ import mods.alchemistry.Liquifier;
 import mods.astralsorcery.Altar;
 import mods.roots.Fey;
 import mods.inworldcrafting.FluidToItem;
+import mods.alchemistry.Combiner;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -1027,6 +1028,7 @@ TCCrucible.registerRecipe("contenttweaker:cold_void_metal_ingot", "BASEELDRITCH"
 
 # Impetus Crystal
 recipes.addShapeless(<contenttweaker:impetus_crystal>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
+recipes.addShapeless(<contenttweaker:impetus_crystal>, [<contenttweaker:goddess_pearl>.reuse(),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
 
 # Printed Thaumium Circuit
 Inscriber.addRecipe(<contenttweaker:printed_thaumium_circuit>, <thaumcraft:ingot>, true, <contenttweaker:inscriber_scheduling_press>);
@@ -1106,6 +1108,7 @@ recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft
 
 # Primordial Fragment
 recipes.addShapeless(<contenttweaker:primordial_fragment>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1)]);
+recipes.addShapeless(<contenttweaker:primordial_fragment>, [<contenttweaker:goddess_pearl>.reuse()]);
 <contenttweaker:primordial_fragment>.addTooltip(format.white("Takes 1 durability of a ") + format.gold("Primordial Pearl") + format.white(" to craft."));
 
 # Ritualistic Biome Checker
@@ -1835,5 +1838,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:unwarpification_ta
 [<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>], 
 [<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>]]);
 <contenttweaker:unwarpification_talisman>.addTooltip(format.white("Right Click to set your Thaumcraft Warp level to 0!"));
+
+# Goddess' Pearl
+mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<alchemistry:ingot:42>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>]);
+<contenttweaker:goddess_pearl>.addTooltip(format.red("Does not get consumed by regular crafting."));
+<contenttweaker:goddess_pearl>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 print("ENDING ContentTweakerRecipes.zs");

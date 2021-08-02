@@ -636,4 +636,25 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalfoundation:upgrade:256>,
 [<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>], 
 [<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>]]);
 
+# Energy Cells to JEI
+mods.jei.JEI.addItem(<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}));
+mods.jei.JEI.addItem(<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}));
+mods.jei.JEI.addItem(<thermalexpansion:cell>.withTag({Recv: 16000, Level: 3 as byte, Send: 16000}));
+mods.jei.JEI.addItem(<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}));
+
+# Portable Tanks to JEI
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+
+# Energy Cell Frames to JEI
+mods.jei.JEI.addItem(<thermalexpansion:frame:129>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:130>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:131>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:132>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:146>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:147>);
+mods.jei.JEI.addItem(<thermalexpansion:frame:148>);
+
 print("ENDING ThermalExpansion.zs");

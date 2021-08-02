@@ -356,6 +356,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:ArcanePedestal"
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:AlchemicalConstruct", "TUBES", <thaumcraft:metal_alchemical>, 0, [<aspect:alkimia> * 20, <aspect:machina> * 20], <contenttweaker:cosmic_alloy>, [<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>,<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>]);
 
+# Advanced Alchemical Construct
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:advanced_alchemical_construct2", "", 200, [<aspect:terra>,<aspect:ignis>], <thaumcraft:metal_alchemical_advanced>, [[null,<thaumcraft:metal_alchemical>,null],[<thaumcraft:plate:3>,<contenttweaker:primordial_fragment>,<thaumcraft:plate:3>],[null,<thaumcraft:metal_alchemical>,null]]);
+
 # Auxillary Slurry Pump
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_aux>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:SmelterAux", "IMPROVEDSMELTING", 40, [<aspect:aer> * 5,<aspect:ignis> * 5], <thaumcraft:smelter_aux>, [[<thaumcraft:plank_greatwood>,<thaumcraft:tube_filter>,<thaumcraft:plank_greatwood>],[<thaumcraft:bellows>,<thaumcraft:metal_alchemical>,<thaumcraft:bellows>],[<thaumcraft:plank_greatwood>,<industrialforegoing:fluid_pump>,<thaumcraft:plank_greatwood>]]);
