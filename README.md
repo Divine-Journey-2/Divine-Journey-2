@@ -27,8 +27,8 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 | Galacticraft | Orbit | -27 | no |
 | Galacticraft | Moon | -28 | yes |
 | Galacticraft | Mars | -29 | yes |
-| Galacticraft | Venus | -30 | yes |
-| Galacticraft | Asteroids | -21 | yes |
+| Galacticraft | Asteroids | -30 | yes |
+| Galacticraft | Venus | -31 | yes |
 | Twilight Forest | Twilight Forest | 7 | yes |
 | AbyssalCraft | Abyssal Wasteland | 50 | yes |
 | AbyssalCraft | Dreadlands | 51 | yes |
