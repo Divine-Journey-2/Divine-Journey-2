@@ -14,7 +14,7 @@ Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/main/issues
 | Mod | Name  | ID | Should be reset?(*) |
 | ------------- | ------------- | ------------- | ------------- |
 | Minecraft | Nether | -1 | yes |
-| DivineRPG | End | 1 | yes |
+| Minecraft | End | 1 | yes |
 | DivineRPG | Iceika | 419 | yes |
 | DivineRPG | Eden | 420 | yes |
 | DivineRPG | Wildwood | 421 | yes |
