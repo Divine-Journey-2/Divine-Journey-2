@@ -434,6 +434,11 @@ recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conve
 recipes.remove(<immersiveengineering:metal_device1:13>);
 recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagriculture:soul_glass>,<immersiveengineering:material:26>,<mysticalagriculture:soul_glass>],[<mysticalagriculture:soul_glass>,<mysticalagriculture:crafting:36>,<mysticalagriculture:soul_glass>],[<ore:plankTreatedWood>,<immersiveengineering:material:8>,<ore:plankTreatedWood>]]);
 
+# Concrete from Gravel OreDict
+recipes.remove(<immersiveengineering:stone_decoration:5>);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<minecraft:clay_ball>,<ore:sand>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:sand>,<minecraft:clay_ball>,<ore:sand>]]);
+
 # Creative Capacitor
 mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,
 [[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>], 

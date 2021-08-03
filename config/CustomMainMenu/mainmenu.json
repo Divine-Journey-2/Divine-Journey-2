@@ -86,7 +86,7 @@
             "action" : 
             {
                 "type" : "openLink",
-				"link" : "changelog will go here"
+				"link" : "https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files"
             }
         },         
         "discord":
@@ -182,7 +182,7 @@
             "alignment" : "bottom_left"
 		},
 		"modpack":{
-			"text" : "Divine Journey 2 version alpha-0.1.0",
+			"text" : "Divine Journey 2 version beta-0.1",
             "posX" : 3,
             "posY" : -24,
 			"fontSize" : 0.6,

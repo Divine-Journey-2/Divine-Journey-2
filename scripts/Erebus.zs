@@ -102,6 +102,10 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 <erebus:cabbage_seeds>.addTooltip(format.white("Break any tallgrass in Erebus to obtain."));
 <erebus:cabbage_seeds>.addTooltip(format.white("Swamp Plants always drop these."));
 
+# Whetstone with Sand OreDict
+recipes.remove(<erebus:whetstone>);
+recipes.addShaped(<erebus:whetstone>, [[<ore:sand>,<ore:sand>,<ore:sand>],[<erebus:materials:7>,<erebus:materials:7>,<erebus:materials:7>],[<erebus:umberstone>,<erebus:umberstone>,<erebus:umberstone>]]);
+
 # Wand of Animation
 mods.extendedcrafting.TableCrafting.addShaped(<erebus:wand_of_animation>,
 [[null, null, null, null, null, null, null, null, <extrautils2:itemdestructionwand>], 

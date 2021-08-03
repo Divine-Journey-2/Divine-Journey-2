@@ -28,6 +28,10 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<quantumflux:graphiteore>, <quant
 EIOAlloySmelter.addRecipe(<quantumflux:graphiteore>, [<quantumflux:darkstone>, <bigreactors:ingotgraphite>, <immersiveengineering:material:19>], 24000);
 <quantumflux:graphitedust>.addTooltip("Blow it up to create a Hyper Diamond!");
 
+# Graphite Dust & Hyper Diamond JEI description
+mods.jei.JEI.addDescription(<quantumflux:graphitedust>,"Turned into a Hyper Diamond with an explosion.");
+mods.jei.JEI.addDescription(<quantumflux:craftingpiece:6>,"Explode a QuantumFlux Graphite Dust to create this item!");
+
 # Advanced Circuit
 recipes.remove(<quantumflux:craftingpiece:5>);
 recipes.addShaped(<quantumflux:craftingpiece:5>, [[<enderio:item_alloy_ingot:2>,<quantumflux:craftingpiece:3>,<enderio:item_alloy_ingot:2>],[<contenttweaker:printed_estimation_circuit>,<quantumflux:craftingpiece:6>,<contenttweaker:printed_estimation_circuit>],[<enderio:item_alloy_ingot:2>,<quantumflux:craftingpiece:3>,<enderio:item_alloy_ingot:2>]]);

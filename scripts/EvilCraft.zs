@@ -30,6 +30,9 @@ EIOAlloySmelter.addRecipe(<evilcraft:darkened_apple>, [<minecraft:apple>, <evilc
 IEAlloySmelter.addRecipe(<evilcraft:darkened_apple>, <minecraft:apple>, <evilcraft:dark_block> * 3, 300);
 mods.thermalexpansion.InductionSmelter.addRecipe(<evilcraft:darkened_apple>, <minecraft:apple>, <evilcraft:dark_block> * 3, 32000);
 
+# Removing Dark Stick from ore:stickWood
+<ore:stickWood>.remove(<evilcraft:dark_stick>);
+
 # Obscured Glass
 recipes.remove(<evilcraft:obscured_glass>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:obscured_glass>, <extrautils2:decorativeglass:3>, null, 120, 512, [<evilcraft:dark_gem>, <ore:dyeBrown>], "Alloying");

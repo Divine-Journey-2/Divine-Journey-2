@@ -145,23 +145,23 @@ recipes.addShaped(<enderio:item_redstone_conduit> * 6, [[<enderio:item_material:
 
 # Crude Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit>);
-recipes.addShaped(<enderio:item_endergy_conduit> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_endergy_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+#recipes.addShaped(<enderio:item_endergy_conduit> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_endergy_ingot>,<enderio:item_alloy_endergy_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Iron Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:1>);
-recipes.addShaped(<enderio:item_endergy_conduit:1> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<minecraft:iron_ingot>,<enderio:item_material:75>,<minecraft:iron_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+#recipes.addShaped(<enderio:item_endergy_conduit:1> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<minecraft:iron_ingot>,<enderio:item_material:75>,<minecraft:iron_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Aluminum Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:2>);
-recipes.addShaped(<enderio:item_endergy_conduit:2> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<thermalfoundation:material:132>,<enderio:item_material:75>,<thermalfoundation:material:132>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+#recipes.addShaped(<enderio:item_endergy_conduit:2> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<thermalfoundation:material:132>,<enderio:item_material:75>,<thermalfoundation:material:132>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Gold Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:3>);
-recipes.addShaped(<enderio:item_endergy_conduit:3> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<minecraft:gold_ingot>,<enderio:item_material:75>,<minecraft:gold_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+#recipes.addShaped(<enderio:item_endergy_conduit:3> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<minecraft:gold_ingot>,<enderio:item_material:75>,<minecraft:gold_ingot>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Copper Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:4>);
-recipes.addShaped(<enderio:item_endergy_conduit:4> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<thermalfoundation:material:128>,<enderio:item_material:75>,<thermalfoundation:material:128>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+#recipes.addShaped(<enderio:item_endergy_conduit:4> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<thermalfoundation:material:128>,<enderio:item_material:75>,<thermalfoundation:material:128>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
 # Silver Energy Conduit
 recipes.remove(<enderio:item_endergy_conduit:5>);

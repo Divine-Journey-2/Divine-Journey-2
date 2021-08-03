@@ -6,6 +6,7 @@ import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Transposer;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter;
+import mods.thermalexpansion.InductionSmelter;
 
 print("STARTING ThermalFoundation.zs");
 
@@ -95,6 +96,7 @@ mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalf
 <ore:blockGlassHardened>.removeItems([<enderio:block_fused_quartz:*>, <thermalfoundation:glass:*>, <thermalfoundation:glass_alloy:*>]);
 <ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
+mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:67>);
 
 # Enderium
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:167>); 

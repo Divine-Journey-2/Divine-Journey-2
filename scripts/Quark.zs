@@ -22,4 +22,8 @@ recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecr
 <quark:enderdragon_scale>.addTooltip(format.white("Obtained after defeating the Ender Dragon for the second or more time."));
 recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysticalagradditions:stuff:2>]);
 
+# Sandy Bricks with Sand OreDict
+recipes.remove(<quark:sandy_bricks>);
+recipes.addShapeless(<quark:sandy_bricks>, [<minecraft:brick_block>,<ore:sand>]);
+
 print("ENDING Quark.zs");

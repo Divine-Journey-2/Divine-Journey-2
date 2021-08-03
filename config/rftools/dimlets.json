@@ -1,6 +1,16 @@
 [
   {
     "filter": {
+      "mod": "undergroundbiomes",
+      "type": "material"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
       "name": "owner",
       "type": "special"
     },

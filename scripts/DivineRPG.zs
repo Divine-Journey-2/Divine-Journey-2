@@ -210,6 +210,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:arcana_portal_frame> * 
 [<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>,<contenttweaker:arcanium_base>,<contenttweaker:arcanium_base>,<divinerpg:bluefire_stone>]]);
 
 # Dungeon Bookshelf
+recipes.remove(<divinerpg:dungeon_bookshelf>);
 <divinerpg:dungeon_bookshelf>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white("."));
 <divinerpg:dungeon_bookshelf>.addTooltip(format.white("Use Silk Touch to obtain."));
 

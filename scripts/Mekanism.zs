@@ -601,6 +601,12 @@ function(out,ins,cInfo) {
 	}
 }, null);
 
+# Plastic Roads with Sand OreDict
+for i in 0 to 16 {
+	recipes.removeShaped(<mekanism:roadplasticblock>.withDamage(i), [[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>],[<*>,<*>,<*>],[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>]]);
+	recipes.addShaped(<mekanism:roadplasticblock>.withDamage(i), [[<ore:sand>,<ore:sand>,<ore:sand>],[<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i)],[<ore:sand>,<ore:sand>,<ore:sand>]]);
+}
+
 # Creative Energy Cube
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}),
 [[<alchemistry:ingot:108>, <plustic:osgloglasblock>, <alchemistry:ingot:100>, <plustic:osgloglasblock>, <alchemistry:ingot:108>], 
