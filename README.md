@@ -26,7 +26,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | DivineRPG | Mortum | 424 | yes |
 | DivineRPG | Arcana | 426 | yes |
 | DivineRPG | Vethea | 427 | yes |
-| Galacticraft | OribtStatic | -26 | no |
+| Galacticraft | OrbitStatic | -26 | no |
 | Galacticraft | Orbit | -27 | no |
 | Galacticraft | Moon | -28 | yes |
 | Galacticraft | Mars | -29 | yes |
