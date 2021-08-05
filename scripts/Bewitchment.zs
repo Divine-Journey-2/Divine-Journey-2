@@ -189,8 +189,9 @@ WitchesOven.removeRecipe(<minecraft:chorus_fruit_popped>);
 <bewitchment:heart>.addTooltip(format.white("Illusioners & Vindicators when slain with a Athame."));
 
 # Hoof
-<bewitchment:hoof>.addTooltip(format.white("Dropped by Pigs, Sheep, Cows, Horses, Zombie Pigmen,"));
-<bewitchment:hoof>.addTooltip(format.white("Mooshrooms, Llamas, Donkeys & Mules when slain with a Athame."));
+<bewitchment:hoof>.addTooltip(format.white("Can be obtain from Pigs, Sheep, Cows, Horses, Zombie Pigmen,"));
+<bewitchment:hoof>.addTooltip(format.white("Mooshrooms, Llamas, Donkeys & Mules when slain with a Athame,"));
+<bewitchment:hoof>.addTooltip(format.white("Or simply from a Cursed Earth mobfarm."));
 
 # Spectral Dust
 <bewitchment:spectral_dust>.addTooltip(format.white("Dropped by all Undead mobs when slain with an Athame."));

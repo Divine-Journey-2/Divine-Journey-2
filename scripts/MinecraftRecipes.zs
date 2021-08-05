@@ -34,7 +34,12 @@ recipes.addShapeless(<contenttweaker:rough_iron_mesh>, [<contenttweaker:rough_ha
 recipes.addShapeless(<contenttweaker:burning_essence>, [<ore:dyeYellow>, <minecraft:coal>.anyDamage()]);
 recipes.addShaped(<contenttweaker:rough_hammer>, [[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[null,<ore:stickWood>,null]]);
 recipes.remove(<minecraft:furnace>);
-recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>,<minecraft:stone_slab:3>,<ore:compressed1xCobblestone>],[<immersiveengineering:material:1>,<ore:blockCoal>,<immersiveengineering:material:1>],[<ore:compressed1xCobblestone>,<minecraft:stone_slab:3>,<ore:compressed1xCobblestone>]]);
+<ore:slabCobblestone>.addItems([<undergroundbiomes:igneous_cobble_halfslab:*>,<undergroundbiomes:metamorphic_cobble_halfslab:*>,<undergroundbiomes:sedimentary_stone_halfslab:*>]);
+recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>,<ore:slabCobblestone>,<ore:compressed1xCobblestone>],[<immersiveengineering:material:1>,<ore:blockCoal>,<immersiveengineering:material:1>],[<ore:compressed1xCobblestone>,<ore:slabCobblestone>,<ore:compressed1xCobblestone>]]);
+
+# Stone Slab
+recipes.remove(<minecraft:stone_slab>);
+recipes.addShaped(<minecraft:stone_slab>, [[<ore:stone>,<ore:stone>,<ore:stone>]]);
 
 # Chests (check other Chests too)
 recipes.remove(<minecraft:chest>); # Add Mini Chest -> Chest conversion
@@ -179,7 +184,10 @@ mods.mekanism.enrichment.removeRecipe(<immersiveengineering:material:25>);
 mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 
 # Dragon's Breath
-<minecraft:dragon_breath>.addTooltip(format.bold(format.white("If you're having trouble collecting this item because of Botania's ")) + format.bold(format.gray("Ender Air Bottles")) + format.bold(format.white(", try the following: Do ")) + format.bold(format.red("NOT")) + format.bold(format.white(" Right Click on blocks, instead, angle your clicks so you only reach the purple ")) + format.bold(format.lightPurple("Dragon's Breath particles")) + format.bold(format.white(", and ")) + format.bold(format.red("NOT")) + format.bold(format.white(" the blocks below.")));
+<minecraft:dragon_breath>.addTooltip(format.white("If you're having trouble collecting this item because of Botania's"));
+<minecraft:dragon_breath>.addTooltip(format.gray("Ender Air Bottles") + format.white(", try the following: Do ") + format.red("NOT") + format.white(" Right Click on blocks,"));
+<minecraft:dragon_breath>.addTooltip(format.white("instead, angle your clicks so you only reach the purple ") + format.lightPurple("Dragon's Breath"));
+<minecraft:dragon_breath>.addTooltip(format.lightPurple("particles") + format.white(", and ") + format.red("NOT") + format.white(" the blocks below."));
 recipes.addShaped(<minecraft:dragon_breath>, [[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<minecraft:glass_bottle>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>]]);
 
 # Additional Wither Skeleton Skull recipe

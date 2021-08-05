@@ -678,6 +678,8 @@ mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <t
 mods.enderio.SagMill.addRecipe([<draconicevolution:draconium_dust> * 3,<draconicevolution:draconium_dust> * 2,<draconicevolution:draconium_dust> * 2], [1.0, 0.4, 0.15], <ore:oreDraconium>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>], [1.0, 0.6, 0.001], <ore:oreCoal>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>], [1.0, 0.25], <ore:oreEmerald>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:65> * 2, <thermalfoundation:material>], [1.0, 0.1], <ore:oreTin>, "CHANCE_ONLY");
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfoundation:material>], [1.0, 0.1], <ore:oreAluminum>, "CHANCE_ONLY");
 
 # UB Ores -> Enrichment Chamber
 val UBLeadOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];

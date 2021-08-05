@@ -489,6 +489,30 @@
 					-9999
 				]
 			}
+		},
+		"dimensional_shard_nether": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "rftools:dimensional_shard_ore:",
+					"properties": {
+						"metadata": 1
+					}
+				},
+				"cluster-size": 0
+			},
+			"cluster-count": 0,
+			"min-height": 0,
+			"max-height": 0,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1
+				]
+			}
 		}
 	}
 }
