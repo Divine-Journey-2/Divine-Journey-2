@@ -13,6 +13,13 @@ recipes.remove(<divinerpg:ghast_pumpkin>);
 recipes.addShaped(<divinerpg:ghast_pumpkin>, [[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>],[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>],[<minecraft:ghast_tear>,<minecraft:ghast_tear>,<minecraft:ghast_tear>]]);
 recipes.addShapeless(<minecraft:ghast_tear> * 9, [<divinerpg:ghast_pumpkin>]);
 
+# Bedrock Pickaxe too OP
+recipes.remove(<divinerpg:bedrock_pickaxe>);
+
+# Bedrock Chunk
+recipes.remove(<divinerpg:bedrock_chunk>);
+recipes.addShaped(<divinerpg:bedrock_chunk>, [[<extrautils2:compressedcobblestone:3>,<extrautils2:compressedcobblestone:3>,<extrautils2:compressedcobblestone:3>],[<extrautils2:compressedcobblestone:3>,<contenttweaker:compressed_obsidian2>,<extrautils2:compressedcobblestone:3>],[<extrautils2:compressedcobblestone:3>,<extrautils2:compressedcobblestone:3>,<extrautils2:compressedcobblestone:3>]]);
+
 # Snowflake Shurikens into Snowflakes
 mods.immersiveengineering.ArcFurnace.addRecipe(<divinerpg:snowflake>, <divinerpg:snowflake_shuriken> * 16, null, 40, 100, [<minecraft:ice> * 4]);
 mods.enderio.AlloySmelter.addRecipe(<divinerpg:snowflake>, [<divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4], 2500);

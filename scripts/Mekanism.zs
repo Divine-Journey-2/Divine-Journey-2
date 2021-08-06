@@ -15,7 +15,7 @@ recipes.addShapedMirrored(<mekanism:machineblock:8>, [[<immersiveengineering:she
 
 # Enrichment Chamber
 recipes.remove(<mekanism:machineblock>);
-recipes.addShaped(<mekanism:machineblock>, [[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>],[<thermalfoundation:material:352>,<mekanism:basicblock:8>,<thermalfoundation:material:352>],[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>]]);
+recipes.addShaped(<mekanism:machineblock>, [[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>],[<appliedenergistics2:quartz_growth_accelerator>,<mekanism:basicblock:8>,<appliedenergistics2:quartz_growth_accelerator>],[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>]]);
 
 # Crusher
 recipes.remove(<mekanism:machineblock:3>);

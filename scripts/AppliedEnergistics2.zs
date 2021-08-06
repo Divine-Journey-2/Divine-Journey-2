@@ -419,13 +419,4 @@ mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_stor
 recipes.remove(<appliedenergistics2:material:58>);
 recipes.addShapedMirrored(<appliedenergistics2:material:58>, [[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null],[<appliedenergistics2:interface>,<appliedenergistics2:material:28>,<thermalfoundation:material:160>],[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null]]);
 
-# Pure Crystals shouldn't be made in the Enrichment Chamber
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:2>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed:1200>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:8>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:7>);
-mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:crystal_seed:600>);
-
 print("ENDING AppliedEnergistics2.zs");

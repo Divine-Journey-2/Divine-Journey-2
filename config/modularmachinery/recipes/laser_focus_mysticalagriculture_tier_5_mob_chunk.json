@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriculture_tier_5_mob_chunk",
-    "recipeTime": 800,
+    "recipeTime": 200,
     "requirements": [
         {
             "type": "item",

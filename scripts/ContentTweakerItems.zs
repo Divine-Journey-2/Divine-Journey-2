@@ -1444,5 +1444,7 @@ goddess_pearl.rarity = "EPIC";
 goddess_pearl.glowing = true;
 goddess_pearl.maxStackSize = 1;
 goddess_pearl.register();
+var industrial_grade_graphite_dust = VanillaFactory.createItem("industrial_grade_graphite_dust");
+industrial_grade_graphite_dust.register();
 
 print("ENDING ContentTweakerItems.zs");

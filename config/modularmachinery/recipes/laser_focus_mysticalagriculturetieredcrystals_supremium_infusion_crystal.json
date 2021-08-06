@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriculturetieredcrystals_supremium_infusion_crystal",
-    "recipeTime": 3200,
+    "recipeTime": 400,
     "requirements": [
         {
             "type": "item",
@@ -23,7 +23,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 32000
+            "energyPerTick": 128000
         },
         {
             "type": "meklaser",

@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriculture_inferium_seeds_tier_5",
-    "recipeTime": 800,
+    "recipeTime": 200,
     "requirements": [
         {
             "type": "item",

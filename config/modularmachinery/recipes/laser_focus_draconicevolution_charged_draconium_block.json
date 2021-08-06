@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_draconicevolution_charged_draconium_block",
-    "recipeTime": 800,
+    "recipeTime": 40,
     "requirements": [
         {
             "type": "item",

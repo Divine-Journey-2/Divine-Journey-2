@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriculture_end_steel_seeds",
-    "recipeTime": 800,
+    "recipeTime": 200,
     "requirements": [
         {
             "type": "item",

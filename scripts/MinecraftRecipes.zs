@@ -186,8 +186,8 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 # Dragon's Breath
 <minecraft:dragon_breath>.addTooltip(format.white("If you're having trouble collecting this item because of Botania's"));
 <minecraft:dragon_breath>.addTooltip(format.gray("Ender Air Bottles") + format.white(", try the following: Do ") + format.red("NOT") + format.white(" Right Click on blocks,"));
-<minecraft:dragon_breath>.addTooltip(format.white("instead, angle your clicks so you only reach the purple ") + format.lightPurple("Dragon's Breath"));
-<minecraft:dragon_breath>.addTooltip(format.lightPurple("particles") + format.white(", and ") + format.red("NOT") + format.white(" the blocks below."));
+<minecraft:dragon_breath>.addTooltip(format.white("instead, angle your clicks so you only reach the purple ") + format.lightPurple("Dragon's"));
+<minecraft:dragon_breath>.addTooltip(format.lightPurple("Breath particles") + format.white(", and ") + format.red("NOT") + format.white(" the blocks below."));
 recipes.addShaped(<minecraft:dragon_breath>, [[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<minecraft:glass_bottle>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>]]);
 
 # Additional Wither Skeleton Skull recipe

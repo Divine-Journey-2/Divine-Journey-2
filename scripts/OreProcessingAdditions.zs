@@ -233,17 +233,17 @@ Mortar.addRecipe(<natura:materials:2> * 4, [<minecraft:wheat>, <minecraft:wheat>
 Mortar.addRecipe(<natura:materials:2> * 5, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]);
 
 # QuantumFlux Industrial Grade Graphite Ore to Graphite Dust
-addOreToIngotSmelting(<quantumflux:graphiteore>, <quantumflux:graphitedust>);
-recipes.addShapeless(<quantumflux:graphitedust> * 2, [<quantumflux:graphiteore>, <ore:dustPetrotheum>]);
-IECrusher.addRecipe(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>, 4000);
-AACrusher.addRecipe(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>);
-mods.astralsorcery.Grindstone.addRecipe(<quantumflux:graphiteore>, <quantumflux:graphitedust>);
-Grinder.addRecipe(<quantumflux:graphitedust>, <quantumflux:graphiteore>, 4, <quantumflux:graphitedust>, 0.9);
-mods.thermalexpansion.Pulverizer.addRecipe(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>, 4000);
-EUCrusher.add(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>);
-mods.enderio.SagMill.addRecipe([<quantumflux:graphitedust> * 2], [1.0], <quantumflux:graphiteore>);
-LightningCrusher.add(<quantumflux:graphitedust> * 2, <quantumflux:graphiteore>);
-mods.mekanism.enrichment.addRecipe(<quantumflux:graphiteore>, <quantumflux:graphitedust> * 2);
+addOreToIngotSmelting(<quantumflux:graphiteore>, <contenttweaker:industrial_grade_graphite_dust>);
+recipes.addShapeless(<contenttweaker:industrial_grade_graphite_dust> * 2, [<quantumflux:graphiteore>, <ore:dustPetrotheum>]);
+IECrusher.addRecipe(<contenttweaker:industrial_grade_graphite_dust> * 2, <quantumflux:graphiteore>, 4000);
+AACrusher.addRecipe(<contenttweaker:industrial_grade_graphite_dust> * 2, <quantumflux:graphiteore>);
+mods.astralsorcery.Grindstone.addRecipe(<quantumflux:graphiteore>, <contenttweaker:industrial_grade_graphite_dust>);
+Grinder.addRecipe(<contenttweaker:industrial_grade_graphite_dust>, <quantumflux:graphiteore>, 4, <contenttweaker:industrial_grade_graphite_dust>, 0.9);
+mods.thermalexpansion.Pulverizer.addRecipe(<contenttweaker:industrial_grade_graphite_dust> * 2, <quantumflux:graphiteore>, 4000);
+EUCrusher.add(<contenttweaker:industrial_grade_graphite_dust> * 2, <quantumflux:graphiteore>);
+mods.enderio.SagMill.addRecipe([<contenttweaker:industrial_grade_graphite_dust> * 2], [1.0], <quantumflux:graphiteore>);
+LightningCrusher.add(<contenttweaker:industrial_grade_graphite_dust> * 2, <quantumflux:graphiteore>);
+mods.mekanism.enrichment.addRecipe(<quantumflux:graphiteore>, <contenttweaker:industrial_grade_graphite_dust> * 2);
 
 # Mekanism Lithium Dust -> Alchemistry Lithium Ingot
 addDustSmelting(<mekanism:otherdust:4>, <alchemistry:ingot:3>);

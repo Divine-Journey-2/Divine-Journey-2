@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_draconicevolution_wyvern_energy_relay_crystal",
-    "recipeTime": 800,
+    "recipeTime": 200,
     "requirements": [
         {
             "type": "item",

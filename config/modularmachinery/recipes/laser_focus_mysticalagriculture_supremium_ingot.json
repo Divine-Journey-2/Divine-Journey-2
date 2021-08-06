@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriculture_supremium_ingot",
-    "recipeTime": 10,
+    "recipeTime": 5,
     "requirements": [
         {
             "type": "item",

@@ -1282,7 +1282,7 @@
     },
     {
       "item": "projecte:item.pe_matter|1",
-      "emc": 16777216
+      "emc": 8388608
     },
     {
       "item": "projectred-core:resource_item|105",
@@ -1738,7 +1738,7 @@
     },
     {
       "item": "contenttweaker:white_matter|0",
-      "emc": 268435456
+      "emc": 67108864
     },
     {
       "item": "mysticalagradditions:stuff|2",

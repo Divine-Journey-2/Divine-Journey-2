@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_plustic_mirion_ingot",
-    "recipeTime": 100,
+    "recipeTime": 5,
     "requirements": [
         {
             "type": "item",

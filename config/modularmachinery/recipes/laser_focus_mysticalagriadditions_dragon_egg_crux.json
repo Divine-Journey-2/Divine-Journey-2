@@ -1,7 +1,7 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_mysticalagriadditions_dragon_egg_crux",
-    "recipeTime": 3200,
+    "recipeTime": 600,
     "requirements": [
         {
             "type": "item",

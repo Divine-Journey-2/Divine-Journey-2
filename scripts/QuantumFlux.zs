@@ -2,6 +2,7 @@
 
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import mods.inworldcrafting.ExplosionCrafting;
 
 print("STARTING QuantumFlux.zs");
 
@@ -29,8 +30,11 @@ EIOAlloySmelter.addRecipe(<quantumflux:graphiteore>, [<quantumflux:darkstone>, <
 <quantumflux:graphitedust>.addTooltip("Blow it up to create a Hyper Diamond!");
 
 # Graphite Dust & Hyper Diamond JEI description
-mods.jei.JEI.addDescription(<quantumflux:graphitedust>,"Turned into a Hyper Diamond with an explosion.");
-mods.jei.JEI.addDescription(<quantumflux:craftingpiece:6>,"Explode a QuantumFlux Graphite Dust to create this item!");
+#mods.jei.JEI.addDescription(<quantumflux:graphitedust>,"Turned into a Hyper Diamond with an explosion.");
+
+# Hyper Diamond
+ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <contenttweaker:industrial_grade_graphite_dust>);
+mods.jei.JEI.addDescription(<quantumflux:craftingpiece:6>, "Explode some Industrial Grade Graphite Dust to create this item!");
 
 # Advanced Circuit
 recipes.remove(<quantumflux:craftingpiece:5>);
