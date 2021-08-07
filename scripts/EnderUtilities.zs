@@ -259,11 +259,11 @@ recipes.addShaped(<enderutilities:quickstacker>, [[<enderio:item_alloy_ingot:3>,
 
 # Portal Scaler
 recipes.remove(<enderutilities:portalscaler>);
-<enderutilities:portalscaler>.addTooltip(format.darkRed("Item disabled. Can be used to quicktravel to the world border, or in Multiplayer to mess up others' Nether Portals."));
+<enderutilities:portalscaler>.addTooltip(format.darkRed("Item disabled. Can be used to quick travel to the world border, or in Multiplayer to mess up others' Nether Portals."));
 
 # Syringe (empty)
 recipes.remove(<enderutilities:syringe>);
-<enderutilities:syringe>.addTooltip(format.darkRed("Item disabled. Items originally crafted from this are deemed to OP."));
+<enderutilities:syringe>.addTooltip(format.darkRed("Item disabled. Items originally crafted from this are deemed too OP."));
 
 # Paralyzer Syringe
 recipes.remove(<enderutilities:syringe:1>);

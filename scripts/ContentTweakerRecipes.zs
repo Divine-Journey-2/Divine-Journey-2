@@ -650,7 +650,7 @@ recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:elec
 <contenttweaker:electrotine_ore>.addTooltip(format.white("to summon a Meteor containing ") + format.aqua("Electrotine Ore") + format.white("."));
 <contenttweaker:electrotine_ore>.addTooltip(format.darkGray(format.italic("<Hold Shift for more info>")));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("1) Get a Master Ritual Stone and an additional 100 Ritual Stones."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("2) Use a ") + format.gray("Ritual Diviner [Dusk]") + format.white(" to setup the Ritual."));
+<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("2) Use a ") + format.gray("Ritual Diviner [Dusk]") + format.white(" to set up the Ritual."));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("3) Place an Obsidian Block about 10-11 blocks above the Master"));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   Ritual Stone to catch the falling Meteor, so your Ritual Stones"));
 <contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   aren't ruined."));
@@ -970,7 +970,7 @@ mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal",
 # Woodland Mansion Locator Token
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, empowered_glod_crystal_block, 10000, 100, [0.222, 0.1641, 0.0508]);
 <contenttweaker:woodland_mansion_locator_token>.addTooltip(format.white(format.bold("One time use!")));
-<minecraft:totem_of_undying>.addTooltip(format.white("No luck findng a Woodland Mansion?"));
+<minecraft:totem_of_undying>.addTooltip(format.white("No luck finding a Woodland Mansion?"));
 <minecraft:totem_of_undying>.addTooltip(format.white("Craft a ") + format.white(format.bold("Woodland Mansion Locator Token")) + format.white("!"));
 
 # Brew of the Void
@@ -1104,7 +1104,7 @@ recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft
 <contenttweaker:arcanium_base>.addTooltip(format.darkPurple("Mortum") + format.white(" biome, ") + format.red("Hell (Nether)") + format.white(" biome, ") + format.green("Magical Forest"));
 <contenttweaker:arcanium_base>.addTooltip(format.white("biome, and ") + format.aqua("Ocean") + format.white(" biome. To do this, use an Arcane"));
 <contenttweaker:arcanium_base>.addTooltip(format.white("Terraformer. Check the quest book -> Chapter 21:"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("'Ritual of the Arcane' quest a better explanation!"));
+<contenttweaker:arcanium_base>.addTooltip(format.white("'Ritual of the Arcane' quest for a better explanation!"));
 
 # Primordial Fragment
 recipes.addShapeless(<contenttweaker:primordial_fragment>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1)]);
@@ -1507,7 +1507,7 @@ mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>
 # Anti Air
 mods.abyssalcraft.InfusionRitual.addRitual("anti_air", 4, 53, 20000, false, <contenttweaker:anti_air>, <contenttweaker:white_matter>, [<extendedcrafting:singularity_custom:141>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>,<contenttweaker:condensed_vis_crystal_aer>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>], false);
 game.setLocalization("ac.ritual.anti_air", "Anti Air");
-game.setLocalization("ac.ritual.anti_air.desc", "The environment in the Dark Realm makes it perfect to infuse Anti Hydrogen into Anti Air. Make sure not to breath it in!");
+game.setLocalization("ac.ritual.anti_air.desc", "The environment in the Dark Realm makes it perfect to infuse Anti Hydrogen into Anti Air. Make sure not to breathe it in!");
 
 # Essence of Enlargement
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_enlargement>,
@@ -1622,7 +1622,7 @@ function(out,ins,cInfo) {
 <contenttweaker:essence_of_logic>.addTooltip(format.white("Craft the Book of Logic and solve the puzzle!"));
 <contenttweaker:essence_of_logic>.addTooltip(format.white("Use Steve, Alex and Herobrine with the correct"));
 <contenttweaker:essence_of_logic>.addTooltip(format.white("Age, Number of friends and Height to craft this item!"));
-<contenttweaker:essence_of_logic>.addTooltip(format.white(format.bold("It can only be manually crated!")));
+<contenttweaker:essence_of_logic>.addTooltip(format.white(format.bold("It can only be manually crafted!")));
 
 # Age Modifier
 recipes.addShapeless(<contenttweaker:age_modifier>, [<extrautils2:ingredients:9>,<minecraft:bone>]);

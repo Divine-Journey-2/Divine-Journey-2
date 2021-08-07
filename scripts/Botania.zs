@@ -959,7 +959,7 @@ for i in 0 to 8 {
 mods.botania.Orechid.removeOre("oreMithril");
 
 # Lexica Botania tooltip
-<botania:lexicon>.addTooltip(format.red(format.bold("Warninrg:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
+<botania:lexicon>.addTooltip(format.red(format.bold("Warning:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
 <botania:lexicon>.addTooltip(format.white(format.bold("Always refer to JEI when crafting.")));
 
 # Rod of the Seas

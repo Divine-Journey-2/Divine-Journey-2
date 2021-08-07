@@ -44,7 +44,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:golf_club_gold>,
 
 # Electricium Ingot
 <lightningcraft:ingot>.addTooltip(format.white("Create this for the first time by"));
-<lightningcraft:ingot>.addTooltip(format.white("strinking a piece of Diamond, Gold"));
+<lightningcraft:ingot>.addTooltip(format.white("striking a piece of Diamond, Gold"));
 <lightningcraft:ingot>.addTooltip(format.white("Ingot and Iron Ingot with lightning!"));
 
 # Lightning Energy Cell
@@ -127,7 +127,7 @@ recipes.addShaped(<lightningcraft:wireless_block:3>, [[null,<lightningcraft:air_
 
 # Demon Blood
 LightningCrusher.remove(<lightningcraft:material:5>);
-<lightningcraft:material:5>.addTooltip(format.white("Dropped by Demon Soliders spawning"));
+<lightningcraft:material:5>.addTooltip(format.white("Dropped by Demon Soldiers spawning"));
 <lightningcraft:material:5>.addTooltip(format.white("naturally in the Nether."));
 
 # Ichor

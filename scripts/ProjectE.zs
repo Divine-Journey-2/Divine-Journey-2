@@ -24,7 +24,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_philosophers_sto
 [null,<contenttweaker:gerc_crystal>,<contenttweaker:celestial_crystal_core>,<contenttweaker:ruby_rubidium>,<contenttweaker:ruby_rubidium>,<contenttweaker:ruby_rubidium>,<contenttweaker:celestial_crystal_core>,<contenttweaker:gerc_crystal>,null],
 [null,null,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,null,null]]);
 <projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("It's said that the main ingredient for")));
-<projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("a Philosphers's Stone ... is human soul.")));
+<projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("a Philosopher's Stone ... is human soul.")));
 <projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("How odd.")));
 
 # Low Covalence Dust
