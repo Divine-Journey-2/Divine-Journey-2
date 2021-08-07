@@ -165,7 +165,7 @@ recipes.addShapeless(<thermaldynamics:duct_32:6>.withTag({DenseType: 1 as byte})
 recipes.remove(<thermaldynamics:duct_32:7>);
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_32:5>, <liquid:glowstone>);
 mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_32:7>, <thermaldynamics:duct_32:5>, <liquid:glowstone> * 400, 800);
-recipes.addShapeless(<thermaldynamics:duct_32:7> * 3, [<thermaldynamics:duct_32:6>,<thermaldynamics:duct_32:6>,<thermaldynamics:duct_32:6>,<ore:blockGlassColorless>]);
+recipes.addShapeless(<thermaldynamics:duct_32:7> * 3, [<thermaldynamics:duct_32:6>,<thermaldynamics:duct_32:6>,<thermaldynamics:duct_32:6>,<thermalfoundation:material:323>]);
 
 # Vacuum Signalum-Plated Impulse Itemduct (Opaque)
 recipes.addShapeless(<thermaldynamics:duct_32:7>.withTag({DenseType: 2 as byte}), [<thermaldynamics:duct_32:7>,<thermalfoundation:material:322>]);
