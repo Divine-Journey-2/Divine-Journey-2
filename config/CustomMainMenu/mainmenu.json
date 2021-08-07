@@ -4,10 +4,10 @@
 		"modpack":
 		{
             "image" : "mainmenu:modpack_icon.png",
-            "posX" : -400,
-            "posY" : -6,
-            "width" : 393,
-            "height" : 140.5,
+            "posX" : -270,
+            "posY" : 0,
+            "width" : 262,
+            "height" : 94,
             "alignment" : "top_right"
 		}
     },
@@ -18,10 +18,10 @@
         {
             "text" : "",
             "texture" : "mainmenu:singleplayer.png",
-            "posX" : -336,
-            "posY" : 130,
-            "width" : 283,
-            "height" : 35,
+            "posX" : -232,
+            "posY" : 100,
+            "width" : 189,
+            "height" : 23,
 			"alignment" : "top_right",
             "action" : 
             {
@@ -32,10 +32,10 @@
         "multiplayer":
         {
             "text" : "",
-            "posX" : -336,
-            "posY" : 163,
-            "width" : 283,
-            "height" : 35,
+            "posX" : -232,
+            "posY" : 123,
+            "width" : 189,
+            "height" : 23,
 			"alignment" : "top_right",
 			"texture" : "mainmenu:multiplayer.png",
             "action" : 
@@ -47,10 +47,10 @@
         "options":
         {
             "text" : "",
-            "posX" : -336,
-            "posY" : 196,
-            "width" : 283,
-            "height" : 35,
+            "posX" : -232,
+            "posY" : 146,
+            "width" : 189,
+            "height" : 23,
 			"alignment" : "top_right",
 			"texture" : "mainmenu:options.png",
             "action" : 
@@ -62,10 +62,10 @@
         "mods":
         {
             "text" : "",
-            "posX" : -336,
-            "posY" : 229,
-            "width" : 283,
-            "height" : 35,
+            "posX" : -232,
+            "posY" : 169,
+            "width" : 189,
+            "height" : 23,
 			"alignment" : "top_right",
 			"texture" : "mainmenu:mods.png",
             "action" : 
@@ -77,10 +77,10 @@
         "version_history":
         {
             "text" : "",
-            "posX" : -336,
-            "posY" : 262,
-            "width" : 283,
-            "height" : 35,
+            "posX" : -232,
+            "posY" : 192,
+            "width" : 189,
+            "height" : 23,
 			"alignment" : "top_right",
 			"texture" : "mainmenu:version_history.png",
             "action" : 
@@ -92,10 +92,10 @@
         "discord":
         {
             "text" : "",
-            "posX" : -336,
-            "posY" : 295,
-            "width" : 78,
-            "height" : 79,
+            "posX" : -232,
+            "posY" : 215,
+            "width" : 52,
+            "height" : 53,
 			"tooltip": "Join the Divine Journey 2 Discord Server!",
 			"alignment" : "top_right",
 			"texture" : "mainmenu:discord.png",
@@ -108,10 +108,10 @@
         "language":
         {
             "text" : "",
-            "posX" : -260,
-            "posY" : 295,
-            "width" : 78,
-            "height" : 79,
+            "posX" : -181,
+            "posY" : 215,
+            "width" : 52,
+            "height" : 53,
 			"tooltip": "Language",
 			"alignment" : "top_right",
 			"texture" : "mainmenu:language.png",
@@ -124,10 +124,10 @@
         "quit_game":
         {
             "text" : "",
-            "posX" : -184,
-            "posY" : 295,
-            "width" : 131,
-            "height" : 79,
+            "posX" : -130,
+            "posY" : 215,
+            "width" : 87,
+            "height" : 53,
 			"alignment" : "top_right",
 			"texture" : "mainmenu:quit_game.png",
             "action" : 

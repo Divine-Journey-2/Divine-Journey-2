@@ -58,8 +58,11 @@ recipes.remove(<thermalfoundation:material:261>);
 # Iridium Gear
 recipes.remove(<thermalfoundation:material:263>);
 
-# Mithril Gear
+# Platinum Gear
 recipes.remove(<thermalfoundation:material:262>);
+
+# Mithril Gear
+recipes.remove(<thermalfoundation:material:264>);
 
 # Steel Gear
 recipes.remove(<thermalfoundation:material:288>);
