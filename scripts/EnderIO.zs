@@ -344,7 +344,7 @@ recipes.addShaped(<enderio:item_material:53>, [[<enderio:item_alloy_ingot:7>,<en
 
 # Endervoir
 recipes.remove(<enderio:block_reservoir>);
-Fey.addRecipe("enderio:block_reservoir", <enderio:block_reservoir>, [<minecraft:water_bucket>, <roots:dewgonia>, <roots:dewgonia>, <roots:terra_moss>, <roots:mortar>]);
+Fey.addRecipe("enderio:block_reservoir", <enderio:block_reservoir>, [<minecraft:potion>.withTag({Potion: "minecraft:water"}), <roots:dewgonia>, <roots:dewgonia>, <roots:terra_moss>, <roots:mortar>]);
 
 # Slice'n'Splice
 recipes.remove(<enderio:block_slice_and_splice>);

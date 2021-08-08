@@ -6,7 +6,8 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:water_bucket"
+            "item": "minecraft:potion",
+            "nbt": {"Potion":"minecraft:water"}
         },
         {
             "type": "item",

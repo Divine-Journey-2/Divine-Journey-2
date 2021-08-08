@@ -124,8 +124,18 @@ recipes.addShaped(<enderutilities:enderpart:50>, [[<appliedenergistics2:memory_c
 recipes.remove(<enderutilities:enderpart:51>);
 recipes.addShaped(<enderutilities:enderpart:51>, [[<enderutilities:enderpart:2>,<appliedenergistics2:memory_card>,<enderutilities:enderpart:2>],[<enderio:item_alloy_endergy_ingot:6>,<enderutilities:enderpart:50>,<enderio:item_alloy_endergy_ingot:6>],[<enderutilities:enderpart:2>,<enderio:item_alloy_endergy_ingot:6>,<enderutilities:enderpart:2>]]);
 
+# Memory Card (items) 8 B
+recipes.removeShapeless(<enderutilities:enderpart:52> * 4, [<enderutilities:enderpart:53>]);
+recipes.addShapeless(<enderutilities:enderpart:52> * 2, [<enderutilities:enderpart:53>]);
+
 # Memory Card (items) 10 B
-recipes.removeShaped(<enderutilities:enderpart:53>, [[null,<minecraft:gold_ingot>,null],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
+recipes.remove(<enderutilities:enderpart:53>);
+recipes.addShaped(<enderutilities:enderpart:53>, [[<enderutilities:enderpart:52>,<enderutilities:enderpart:52>],[<ore:slimeball>,<ore:slimeball>]]);
+recipes.addShapeless(<enderutilities:enderpart:53> * 2, [<enderutilities:enderpart:54>]);
+
+# Memory Card (items) 12 B
+recipes.remove(<enderutilities:enderpart:54>);
+recipes.addShaped(<enderutilities:enderpart:54>, [[<enderutilities:enderpart:53>,<enderutilities:enderpart:53>],[<ore:slimeball>,<ore:slimeball>]]);
 
 # Ender Lasso
 recipes.remove(<enderutilities:enderlasso>);

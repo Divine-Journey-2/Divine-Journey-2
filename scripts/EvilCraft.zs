@@ -15,7 +15,7 @@ recipes.remove(<evilcraft:dark_spike>);
 recipes.addShaped(<evilcraft:dark_spike>, [[null,<evilcraft:dark_gem>,null],[<evilcraft:dark_gem>,<mob_grinding_utils:spikes>,<evilcraft:dark_gem>]]);
 
 # Blood Extractor
-recipes.remove(<evilcraft:blood_extractor>);
+recipes.removeShaped(<evilcraft:blood_extractor>);
 mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:blood_extractor>.withTag({}),
 [[null,null,null,<rftools:syringe>,null],
 [null,<evilcraft:dark_block>,<evilcraft:dark_block>,<rftools:syringe>,<rftools:syringe>],
@@ -91,6 +91,7 @@ mods.thermalexpansion.Transposer.removeFillRecipe(<evilcraft:dark_block>, <liqui
 # Bowl of Empty Promises
 recipes.remove(<evilcraft:bowl_of_promises:1>);
 recipes.addShaped(<evilcraft:bowl_of_promises:1>, [[<evilcraft:dark_power_gem>,<contenttweaker:aquasalus>,<evilcraft:dark_power_gem>],[<evilcraft:dark_power_gem>,<evilcraft:dark_power_gem>,<evilcraft:dark_power_gem>]]);
+<evilcraft:bowl_of_promises:1>.removeTooltip("Not used up in crafting.");
 
 # Filled Bowl of Empty Promises
 recipes.remove(<evilcraft:bowl_of_promises>);
