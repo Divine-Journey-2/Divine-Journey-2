@@ -53,7 +53,12 @@ for item in atumNecklaceArtifactOreDict.items {
 <atum:relic_ore>.addTooltip(format.blue(format.bold("Silk Touch")) + format.white(" to obtain the Ore for further processing."));
 
 # Atum Equipment
-recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumRangedArtifactOreDict, atumArmorArtifactOreDict, atumNecklaceArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumRangedArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumArmorArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumNecklaceArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumRangedArtifactOreDict, atumArmorArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumRangedArtifactOreDict, atumNecklaceArtifactOreDict]);
+recipes.addShapeless(<contenttweaker:atum_equipment>, [atumArmorArtifactOreDict, atumNecklaceArtifactOreDict]);
 
 # Atum Warrior
 recipes.addShapedMirrored(<contenttweaker:atum_warrior>, [[<contenttweaker:atum_equipment>,<contenttweaker:atum_poppet>,<atum:golden_date_enchanted>],[null,<atum:idol_of_labor>,null]]);
