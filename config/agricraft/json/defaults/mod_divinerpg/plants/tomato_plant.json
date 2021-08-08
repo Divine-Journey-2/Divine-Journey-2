@@ -1,12 +1,12 @@
 {
-  "path": "mod_atum2/plants/emmer_plant.json",
+  "path": "mod_divinerpg/plants/tomato_plant.json",
   "enabled": true,
-  "id": "atum2:emmer_plant",
-  "plant_name": "Emmer",
-  "seed_name": "Emmer Seeds",
+  "id": "divinerpg:tomato_plant",
+  "plant_name": "Tomato Plant",
+  "seed_name": "Tomato Seeds",
   "seed_items": [
     {
-      "item": "atum:emmer_seeds",
+      "item": "divinerpg:tomato_seeds",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Atum\u0027s nurishment."
+    "default": "Some say it's a fruit, some say it's a vegetable."
   },
   "growth_chance": 0.75,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 1,
         "chance": 1.0,
         "required": true,
-        "item": "atum:emmer",
+        "item": "divinerpg:tomato",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -48,7 +48,7 @@
     ]
   },
   "requirement": {
-    "min_light": 10,
+    "min_light": 7,
     "max_light": 16,
     "soils": [
       "farmland_soil"
@@ -57,16 +57,16 @@
   },
   "texture": {
     "render_type": "hash",
-    "seed_texture": "atum:items/emmer_seeds",
+    "seed_texture": "divinerpg:items/tomato_seeds",
     "plant_textures": [
-      "atum:blocks/emmer_wheat_0",
-      "atum:blocks/emmer_wheat_1",
-      "atum:blocks/emmer_wheat_2",
-      "atum:blocks/emmer_wheat_3",
-      "atum:blocks/emmer_wheat_4",
-      "atum:blocks/emmer_wheat_5",
-      "atum:blocks/emmer_wheat_6",
-      "atum:blocks/emmer_wheat_7"
+      "divinerpg:blocks/tomato_plant_0",
+      "divinerpg:blocks/tomato_plant_1",
+      "divinerpg:blocks/tomato_plant_2",
+      "divinerpg:blocks/tomato_plant_3",
+      "divinerpg:blocks/tomato_plant_4",
+      "divinerpg:blocks/tomato_plant_5",
+      "divinerpg:blocks/tomato_plant_6",
+      "divinerpg:blocks/tomato_plant_7"
     ]
   }
 }

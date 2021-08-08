@@ -1,12 +1,12 @@
 {
-  "path": "mod_atum2/plants/emmer_plant.json",
+  "path": "mod_divinerpg/plants/firestock_plant.json",
   "enabled": true,
-  "id": "atum2:emmer_plant",
-  "plant_name": "Emmer",
-  "seed_name": "Emmer Seeds",
+  "id": "divinerpg:firestock_plant",
+  "plant_name": "Firestock Plant",
+  "seed_name": "Firestock Seeds",
   "seed_items": [
     {
-      "item": "atum:emmer_seeds",
+      "item": "divinerpg:firestock_seeds",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Atum\u0027s nurishment."
+    "default": "Very very hot."
   },
   "growth_chance": 0.75,
   "growth_bonus": 0.025,
@@ -38,7 +38,7 @@
         "max": 1,
         "chance": 1.0,
         "required": true,
-        "item": "atum:emmer",
+        "item": "divinerpg:firestock",
         "meta": 0,
         "tags": "",
         "ignoreMeta": false,
@@ -48,7 +48,7 @@
     ]
   },
   "requirement": {
-    "min_light": 10,
+    "min_light": 7,
     "max_light": 16,
     "soils": [
       "farmland_soil"
@@ -57,16 +57,10 @@
   },
   "texture": {
     "render_type": "hash",
-    "seed_texture": "atum:items/emmer_seeds",
+    "seed_texture": "divinerpg:items/firestock_seeds",
     "plant_textures": [
-      "atum:blocks/emmer_wheat_0",
-      "atum:blocks/emmer_wheat_1",
-      "atum:blocks/emmer_wheat_2",
-      "atum:blocks/emmer_wheat_3",
-      "atum:blocks/emmer_wheat_4",
-      "atum:blocks/emmer_wheat_5",
-      "atum:blocks/emmer_wheat_6",
-      "atum:blocks/emmer_wheat_7"
+      "divinerpg:blocks/firestock_plant_bottom",
+      "divinerpg:blocks/firestock_plant_top"
     ]
   }
 }
