@@ -143,7 +143,7 @@ recipes.addShaped(<roots:runestone_trample>, [[<roots:chiseled_runestone>,<roots
 
 # Unending Bowl
 Fey.removeRecipe(<roots:unending_bowl>);
-Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>,<enderio:block_reservoir>]);
+Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>]);
 recipes.addShaped(<roots:unending_bowl>, [[<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>],[<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>]]);
 
 # Apothecary Pouch
