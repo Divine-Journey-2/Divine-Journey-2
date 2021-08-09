@@ -273,4 +273,7 @@ recipes.remove(<minecraft:book>);
 recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<minecraft:leather>]);
 recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<minecraft:paper>,<minecraft:string>,<tconstruct:pattern>,<tconstruct:pattern>]);
 
+# Seeds from Wheat
+recipes.addShapeless(<minecraft:wheat_seeds>, [<minecraft:wheat>]);
+
 print("ENDING MinecraftRecipes.zs");
