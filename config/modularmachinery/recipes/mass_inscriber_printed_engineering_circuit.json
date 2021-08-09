@@ -1,7 +1,7 @@
 {
     "machine": "mass_inscriber",
     "registryName": "mass_inscriber_printed_engineering_circuit",
-    "recipeTime": 4,
+    "recipeTime": 1,
     "requirements": [
         {
             "type": "item",
