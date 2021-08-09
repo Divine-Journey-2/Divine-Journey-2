@@ -42,6 +42,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | Atum 2 | Atum | 17 | yes |
 | Extra Utilities 2 | Deep Dark | -11325 | yes |
 | Extra Utilities 2 | (Quantum) Quarry Dim | -9999 | yes |
+| Thaumic Augmentation | Emptiness | 14676 | yes |
 | Applied Energistics 2 | Storage Cell | 2 | no |
 | RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 5, 6, ... | no |
 
