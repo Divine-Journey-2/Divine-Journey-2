@@ -68,7 +68,7 @@ recipes.removeShaped(<minecraft:quartz>, [[<thaumcraft:nugget:9>,<thaumcraft:nug
 
 # Vis Resonator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:vis_resonator", "UNLOCKAUROMANCY@2", 20, [<aspect:aer> * 2,<aspect:aqua> * 2], <thaumcraft:vis_resonator>, [[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>],[<botania:shimmerrock>,<contenttweaker:reduction_core>,<botania:shimmerrock>],[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:vis_resonator", "UNLOCKAUROMANCY@2", 10, [<aspect:aer>,<aspect:aqua>], <thaumcraft:vis_resonator>, [[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>],[<botania:shimmerrock>,<contenttweaker:reduction_core>,<botania:shimmerrock>],[<botania:shimmerrock>,<botania:shimmerrock>,<botania:shimmerrock>]]);
 
 # Caster's Gauntlet
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:caster_basic>);
@@ -80,11 +80,11 @@ mods.thaumcraft.Crucible.registerRecipe("thaumcraft:focus_1", "UNLOCKAUROMANCY",
 
 # Alumentum
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:alumentum>);
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:alumentum", "INFUSION", <thaumcraft:alumentum>, <abyssalcraft:crystal:22>, [<aspect:potentia> * 20, <aspect:ignis> * 20, <aspect:metallum> * 20, <aspect:perditio> * 10]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:alumentum", "INFUSION", <thaumcraft:alumentum>, <abyssalcraft:crystal:22>, [<aspect:potentia> * 5, <aspect:ignis> * 2, <aspect:metallum> * 2, <aspect:perditio> * 2]);
 
 # Enchanted Fabric
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:fabric>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "MINDBIOTHAUMIC", 2, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[null,<thaumcraft:salis_mundus>,null],[<thaumcraft:alumentum>,<botania:spellcloth>,<thaumcraft:alumentum>],[null,<thaumcraft:salis_mundus>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "UNLOCKINFUSION", 2, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[null,<thaumcraft:salis_mundus>,null],[<thaumcraft:alumentum>,<botania:spellcloth>,<thaumcraft:alumentum>],[null,<thaumcraft:salis_mundus>,null]]);
 
 # Thaumaturge's Robe
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:cloth_chest>);
@@ -177,7 +177,7 @@ recipes.addShaped(<thaumcraft:filter> * 2, [[empowered_glod_crystal,<thaumcraft:
 
 # Thaumium Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <thaumcraft:ingot:2>, [<aspect:praecantatio> * 20,<aspect:metallum> * 15,<aspect:alkimia> * 10,<aspect:exanimis> * 10]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <thaumcraft:ingot:2>, [<aspect:praecantatio> * 10,<aspect:metallum> * 10,<aspect:alkimia> * 10,<aspect:exanimis> * 10]);
 
 # Goggles of Revealing
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
@@ -185,7 +185,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Goggles", "UNLO
 
 # Simple Arcane Mechanism
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_simple>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mechanism_simple", "BASEARTIFICE", 10, [<aspect:ignis> * 2,<aspect:perditio> * 2], <thaumcraft:mechanism_simple>, [[null,<thaumcraft:plate>,null],[<thaumcraft:plate>,<enderio:item_material:73>,<thaumcraft:plate>],[null,<simplyjetpacks:metaitemmods:16>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mechanism_simple", "BASEARTIFICE", 5, [<aspect:ignis>,<aspect:perditio>], <thaumcraft:mechanism_simple>, [[null,<thaumcraft:plate>,null],[<thaumcraft:plate>,<enderio:item_material:73>,<thaumcraft:plate>],[null,<simplyjetpacks:metaitemmods:16>,null]]);
 
 # Arcane Lamp
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:lamp_arcane>);
@@ -275,7 +275,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Levitator", "LE
 
 # Complex Arcane Mechanism
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:mechanism_complex>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mechanism_complex", "BASEARTIFICE", 25, [<aspect:ignis> * 10,<aspect:perditio> * 10,<aspect:aer> * 4], <thaumcraft:mechanism_complex>, [[null,<thaumcraft:mechanism_simple>,null],[<thaumcraft:plate:2>,<contenttweaker:rune_of_wrath>,<thaumcraft:plate:2>],[null,<thaumcraft:mechanism_simple>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:mechanism_complex", "BASEARTIFICE", 10, [<aspect:ignis> * 3,<aspect:perditio> * 3,<aspect:aer>], <thaumcraft:mechanism_complex>, [[null,<thaumcraft:mechanism_simple>,null],[<thaumcraft:plate:2>,<contenttweaker:rune_of_wrath>,<thaumcraft:plate:2>],[null,<thaumcraft:mechanism_simple>,null]]);
 
 # Liquid Death Bucket
 mods.thaumcraft.Crucible.removeRecipe(<forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}));
@@ -466,11 +466,11 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:MatrixCost", "I
 
 # Flux Condenser
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:condenser>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Condenser", "FLUXCLEANUP", 500, [<aspect:aer> * 32,<aspect:aqua> * 32,<aspect:perditio> * 32], <thaumcraft:condenser>, [[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>],[<thaumcraft:morphic_resonator>,<contenttweaker:condensed_vis_crystal_vitium>,<thaumcraft:morphic_resonator>],[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Condenser", "FLUXCLEANUP", 50, [<aspect:aer> * 8,<aspect:aqua> * 8,<aspect:perditio> * 8], <thaumcraft:condenser>, [[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>],[<thaumcraft:vis_resonator>,<contenttweaker:condensed_vis_crystal_vitium>,<thaumcraft:vis_resonator>],[<thaumcraft:plate:2>,<thaumcraft:mechanism_complex>,<thaumcraft:plate:2>]]);
 
 # Flux Condenser Lattice
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:condenser_lattice>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:CondenserLattice", "FLUXCLEANUP", 200, [<aspect:aer> * 16,<aspect:terra> * 16], <thaumcraft:condenser_lattice>, [[<botania:quartz:6>,<thaumcraft:void_seed>,<botania:quartz:6>],[<contenttweaker:condensed_vis_crystal_vitreus>,<thaumcraft:filter>,<contenttweaker:condensed_vis_crystal_vitreus>],[<botania:quartz:6>,<thaumcraft:void_seed>,<botania:quartz:6>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:CondenserLattice", "FLUXCLEANUP", 10, [<aspect:aer> * 4,<aspect:terra> * 4], <thaumcraft:condenser_lattice>, [[<botania:quartz:6>,<thaumcraft:ingot>,<botania:quartz:6>],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]}),<thaumcraft:filter>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitreus"}]})],[<botania:quartz:6>,<thaumcraft:ingot>,<botania:quartz:6>]]);
 
 # Boots of the Traveller
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:traveller_boots>);

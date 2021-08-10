@@ -944,7 +944,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:infused_magi
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:base_focal_sphere>, 400000, 5000, <evilcraft:blood_orb>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>]);
 
 # Magical Leather
-mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <contenttweaker:magical_leather>, <contenttweaker:blood_infused_leather>, [<aspect:praecantatio> * 40, <aspect:bestia> * 15, <aspect:auram> * 10, <aspect:spiritus> * 5]);
+mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <contenttweaker:magical_leather>, <contenttweaker:blood_infused_leather>, [<aspect:praecantatio> * 10, <aspect:bestia> * 5, <aspect:auram> * 5, <aspect:spiritus> * 5]);
 
 # Knowledge of the Sky
 <contenttweaker:knowledge_of_the_sky>.addTooltip(format.white("Found in Skythern Dungeons."));

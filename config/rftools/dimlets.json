@@ -11,6 +11,44 @@
   },
   {
     "filter": {
+      "mod": "chisel",
+      "type": "material"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "mod": "minecraft",
+      "name": "log",
+      "type": "material",
+      "property": {
+        "type": "6"
+      }
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "mod": "minecraft",
+      "name": "log2",
+      "type": "material",
+      "property": {
+        "type": "4"
+      }
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
       "name": "owner",
       "type": "special"
     },

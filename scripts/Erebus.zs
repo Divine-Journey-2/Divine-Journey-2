@@ -71,7 +71,7 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 
 # Exoskeleton Plate Tooltip
 <erebus:materials>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials>.addTooltip(format.white("- Bettles (in Underground Jungles,"));
+<erebus:materials>.addTooltip(format.white("- Beetles (in Underground Jungles,"));
 <erebus:materials>.addTooltip(format.white("           Subterranean Savannahs and Elysian Fields)"));
 <erebus:materials>.addTooltip(format.white("- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)"));
 
