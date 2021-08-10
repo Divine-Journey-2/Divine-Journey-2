@@ -44,7 +44,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | Extra Utilities 2 | (Quantum) Quarry Dim | -9999 | yes |
 | Thaumic Augmentation | Emptiness | 14676 | yes |
 | Applied Energistics 2 | Storage Cell | 2 | no |
-| RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 5, 6, ... | no |
+| RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 3, 5, 6, ... | no |
 
 
 (*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
