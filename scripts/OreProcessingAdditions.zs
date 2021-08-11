@@ -885,4 +885,10 @@ mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfou
 # Volcanic Diamond Ore
 mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>, <erebus:volcanic_rock>], [1.0, 0.25, 0.05, 0.15], <erebus:ore_encrusted_diamond>, "CHANCE_ONLY");
 
+# Blaze, Blitz, Blizz, Basalz Powder to Mek Crusher
+mods.mekanism.crusher.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 4);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+
 print("ENDING OreProcessingAdditions.zs");

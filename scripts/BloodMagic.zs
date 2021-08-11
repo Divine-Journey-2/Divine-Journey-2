@@ -261,6 +261,10 @@ recipes.addShaped(<bloodmagic:path>, [[<evilcraft:undead_plank>,<evilcraft:undea
 recipes.remove(<bloodmagic:path:2>);
 recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>],[<bloodmagic:path>,blood_orb_at_least_tier_3.reuse(),<bloodmagic:path>],[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>]]);
 
+# Worn Stone Brick Path
+recipes.remove(<bloodmagic:path:4>);
+recipes.addShaped(<bloodmagic:path:4> * 2, [[<extrautils2:compressedcobblestone:2>,<bloodmagic:path:2>,<extrautils2:compressedcobblestone:2>],[<bloodmagic:path:2>,blood_orb_at_least_tier_4.reuse(),<bloodmagic:path:2>],[<extrautils2:compressedcobblestone:2>,<bloodmagic:path:2>,<extrautils2:compressedcobblestone:2>]]);
+
 # Binding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
 mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<contenttweaker:rune_of_water>,<contenttweaker:rune_of_fire>,<contenttweaker:rune_of_earth>,<contenttweaker:rune_of_air>], 64, 64);
@@ -548,7 +552,7 @@ recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,
 
 # Obsidian Brick Path
 recipes.remove(<bloodmagic:path:6>);
-recipes.addShaped(<bloodmagic:path:6>, [[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>],[<contenttweaker:compressed_obsidian1>,blood_orb_at_least_tier_4.reuse(),<contenttweaker:compressed_obsidian1>],[<botania:quartz>,<contenttweaker:compressed_obsidian1>,<botania:quartz>]]);
+recipes.addShaped(<bloodmagic:path:6> * 2, [[<botania:quartz>,<bloodmagic:path:4>,<botania:quartz>],[<bloodmagic:path:4>,blood_orb_at_least_tier_5.reuse(),<bloodmagic:path:4>],[<botania:quartz>,<bloodmagic:path:4>,<botania:quartz>]]);
 
 # Weak Blood Shard tooltip
 <bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));

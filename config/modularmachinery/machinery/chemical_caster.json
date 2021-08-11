@@ -61,7 +61,10 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "tconstruct:faucet@3"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -138,7 +141,10 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "tconstruct:faucet@2"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -192,7 +198,10 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "tconstruct:faucet@4"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -200,7 +209,10 @@
             "y": 3,
             "z": 3,
             "elements": [
-                "tconstruct:faucet@3"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -224,6 +236,9 @@
             "y": 1,
             "z": 2,
             "elements": [
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
                 "tconstruct:faucet@5"
             ]
         },
@@ -308,7 +323,10 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "tconstruct:faucet@4"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -349,6 +367,9 @@
             "y": 2,
             "z": 2,
             "elements": [
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
                 "tconstruct:faucet@5"
             ]
         },
@@ -442,7 +463,10 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "tconstruct:faucet@4"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -474,7 +498,10 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "tconstruct:faucet@2"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -482,6 +509,9 @@
             "y": 3,
             "z": 2,
             "elements": [
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
                 "tconstruct:faucet@5"
             ]
         },
@@ -528,7 +558,10 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "tconstruct:faucet@3"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         },
         {
@@ -576,7 +609,10 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "tconstruct:faucet@2"
+                "tconstruct:faucet@2",
+                "tconstruct:faucet@3",
+                "tconstruct:faucet@4",
+                "tconstruct:faucet@5"
             ]
         }
     ]}
