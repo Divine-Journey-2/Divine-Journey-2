@@ -603,10 +603,13 @@ add_abyssalcraft_omothol_PE_transfer_item_recipe(<abyssalcraft:tieredenergyconta
 
 # Abyssalnomicon
 recipes.remove(<abyssalcraft:abyssalnomicon>);
+/*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade4", <abyssalcraft:abyssalnomicon>, [[<abyssalcraft:ingotblock:3>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:ingotblock:3>],[<abyssalcraft:eldritchscale>,<abyssalcraft:necronomicon_omt>.marked("necronomicon"),<abyssalcraft:eldritchscale>],[<abyssalcraft:ingotblock:3>,<abyssalcraft:eldritchscale>,<abyssalcraft:ingotblock:3>]],
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
+*/
+recipes.addShaped(<abyssalcraft:abyssalnomicon>, [[<abyssalcraft:ingotblock:3>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:ingotblock:3>],[<abyssalcraft:eldritchscale>,<abyssalcraft:necronomicon_omt>,<abyssalcraft:eldritchscale>],[<abyssalcraft:ingotblock:3>,<abyssalcraft:eldritchscale>,<abyssalcraft:ingotblock:3>]]);
 
 # Ritual of Shadows
 mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:shadowboss");
@@ -624,5 +627,9 @@ game.setLocalization("ac.ritual.summonAntiCow.desc", "Summon an Anti Cow in the 
 
 # Removing the Mass Enchantment Ritual
 mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
+
+# Crystallized Cluster tooltips
+#<abyssalcraft:crystalcluster:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 8."));
+#<abyssalcraft:crystalcluster2:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 10."));
 
 print("ENDING AbyssalCraft.zs");

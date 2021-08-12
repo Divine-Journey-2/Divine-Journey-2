@@ -255,4 +255,14 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 288, <twilightfo
 recipes.remove(<tconstruct:soil:3>);
 recipes.addShapedMirrored(<tconstruct:soil:3>, [[<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>],[<contenttweaker:sanctus>,<contenttweaker:livingmatter>,<contenttweaker:terrae>],[<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>,<extrautils2:compresseddirt:1>]]);
 
+# Toolkits
+recipes.remove(<tinkersaddons:modifier_item:1>);
+recipes.addShaped(<tinkersaddons:modifier_item:1>, [[<tconstruct:large_plate>.withTag({Material: "iron"}),<thermalfoundation:storage_alloy>,<tconstruct:large_plate>.withTag({Material: "iron"})],[<thermalfoundation:storage_alloy>,<tconstruct:metal:4>,<thermalfoundation:storage_alloy>],[<tconstruct:large_plate>.withTag({Material: "iron"}),<thermalfoundation:storage_alloy>,<tconstruct:large_plate>.withTag({Material: "iron"})]]);
+recipes.remove(<tinkersaddons:modifier_item:2>);
+recipes.addShaped(<tinkersaddons:modifier_item:2>, [[<tconstruct:large_plate>.withTag({Material: "ardite"}),<aether_legacy:golden_amber>,<tconstruct:large_plate>.withTag({Material: "ardite"})],[<aether_legacy:golden_amber>,<enderio:block_alloy:1>,<aether_legacy:golden_amber>],[<tconstruct:large_plate>.withTag({Material: "ardite"}),<aether_legacy:golden_amber>,<tconstruct:large_plate>.withTag({Material: "ardite"})]]);
+recipes.remove(<tinkersaddons:modifier_item:3>);
+recipes.addShaped(<tinkersaddons:modifier_item:3>, [[<tconstruct:large_plate>.withTag({Material: "prismarine"}),<contenttweaker:ingot_of_elevation>,<tconstruct:large_plate>.withTag({Material: "prismarine"})],[<contenttweaker:ingot_of_elevation>,<actuallyadditions:block_crystal_empowered:2>,<contenttweaker:ingot_of_elevation>],[<tconstruct:large_plate>.withTag({Material: "prismarine"}),<contenttweaker:ingot_of_elevation>,<tconstruct:large_plate>.withTag({Material: "prismarine"})]]);
+recipes.remove(<tinkersaddons:modifier_item:4>);
+recipes.addShaped(<tinkersaddons:modifier_item:4>, [[<tconstruct:large_plate>.withTag({Material: "obsidian"}),<enderutilities:enderpart:2>,<tconstruct:large_plate>.withTag({Material: "obsidian"})],[<enderutilities:enderpart:2>,<contenttweaker:compressed_obsidian3>,<enderutilities:enderpart:2>],[<tconstruct:large_plate>.withTag({Material: "obsidian"}),<enderutilities:enderpart:2>,<tconstruct:large_plate>.withTag({Material: "obsidian"})]]);
+
 print("ENDING TinkersConstruct.zs");

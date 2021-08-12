@@ -1825,7 +1825,7 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:infinite_sin
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:singularity_singularity>, <extendedcrafting:singularity_ultimate>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Creative Mesh
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_mesh>, <appliedenergistics2:creative_storage_cell>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_mesh>, <appliedenergistics2:creative_storage_cell>, 2000000, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Creative Singularity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_singularity>, <contenttweaker:creative_mesh>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
