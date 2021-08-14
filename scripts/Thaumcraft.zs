@@ -343,7 +343,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:ArcaneSpa", "AR
 
 # Runic Matrix
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:infusion_matrix>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:InfusionMatrix", "INFUSION@2", 150, [<aspect:aer> * 64,<aspect:aqua> * 64,<aspect:ordo> * 64,<aspect:perditio> * 64,<aspect:terra> * 64,<aspect:ignis> * 64], <thaumcraft:infusion_matrix>, [[<thaumcraft:stone_arcane>,<contenttweaker:matrix_multiplication_unit>,<thaumcraft:stone_arcane>],[<thaumcraft:metal_thaumium>,<botania:dice>,<thaumcraft:metal_thaumium>],[<thaumcraft:stone_arcane>,<alchemistry:ingot:30>,<thaumcraft:stone_arcane>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:InfusionMatrix", "INFUSION@2", 150, [<aspect:aer> * 64,<aspect:aqua> * 64,<aspect:ordo> * 64,<aspect:perditio> * 64,<aspect:terra> * 64,<aspect:ignis> * 64], <thaumcraft:infusion_matrix>, [[<thaumcraft:stone_arcane>,<contenttweaker:matrix_multiplication_unit>,<thaumcraft:stone_arcane>],[<thaumcraft:metal_thaumium>,<botania:dice>,<thaumcraft:metal_thaumium>],[<thaumcraft:stone_arcane>,<alchemistry:ingot:11>,<thaumcraft:stone_arcane>]]);
 
 # Essentia Resonator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:resonator>);
@@ -390,11 +390,11 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:PotionSprayer",
 
 # Filling Essentia Transfuser
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_input>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportIn", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_input>, [[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:30>],[<thaumcraft:smelter_aux>,<thaumcraft:metal_alchemical>,<thaumcraft:tube_buffer>],[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:30>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportIn", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_input>, [[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:11>],[<thaumcraft:smelter_aux>,<thaumcraft:metal_alchemical>,<thaumcraft:tube_buffer>],[<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>,<alchemistry:ingot:11>]]);
 
 # Emptying Essentia Transfuser
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:essentia_output>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportOut", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_output>, [[<alchemistry:ingot:30>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>],[<thaumcraft:tube_buffer>,<thaumcraft:metal_alchemical>,<thaumcraft:smelter_vent>],[<alchemistry:ingot:30>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTransportOut", "ESSENTIATRANSPORT", 100, [<aspect:aqua> * 24,<aspect:aer> * 24], <thaumcraft:essentia_output>, [[<alchemistry:ingot:11>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>],[<thaumcraft:tube_buffer>,<thaumcraft:metal_alchemical>,<thaumcraft:smelter_vent>],[<alchemistry:ingot:11>,<thaumcraft:stone_arcane>,<thaumcraft:stone_arcane>]]);
 
 # Fancy Amulet
 recipes.remove(<thaumcraft:baubles:4>);
@@ -410,7 +410,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyBelt", "", <thaumcraft:
 
 # Blank Advanced Focus
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_2", "FOCUSADVANCED@1", <thaumcraft:focus_2>, 3, [<aspect:vitreus> * 80,<aspect:praecantatio> * 40,<aspect:ordo> * 40,<aspect:instrumentum> * 40,<aspect:auram> * 20], <thaumcraft:focus_1>, [<alchemistry:ingot:30>,<thaumcraft:alumentum>,<thaumcraft:ingot>,<thaumcraft:vis_resonator>,<thaumcraft:alumentum>,<thaumcraft:ingot>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_2", "FOCUSADVANCED@1", <thaumcraft:focus_2>, 3, [<aspect:vitreus> * 80,<aspect:praecantatio> * 40,<aspect:ordo> * 40,<aspect:instrumentum> * 40,<aspect:auram> * 20], <thaumcraft:focus_1>, [<alchemistry:ingot:11>,<thaumcraft:alumentum>,<thaumcraft:ingot>,<thaumcraft:vis_resonator>,<thaumcraft:alumentum>,<thaumcraft:ingot>]);
 
 # Arcane Lamp
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:lamp_arcane>);
@@ -426,7 +426,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:LampGrowth", "LAMPGROWTH", <
 
 # Magic Mirror
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mirror>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Mirror", "MIRROR", <thaumcraft:mirror>, 1, [<aspect:permutatio> * 40,<aspect:motus> * 30,<aspect:desiderium> * 30,<aspect:vacuos> * 20], <thaumcraft:mirrored_glass>, [<contenttweaker:holy_core>,<contenttweaker:rune_of_deception>,<contenttweaker:holy_core>,<alchemistry:ingot:30>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:Mirror", "MIRROR", <thaumcraft:mirror>, 1, [<aspect:permutatio> * 40,<aspect:motus> * 30,<aspect:desiderium> * 30,<aspect:vacuos> * 20], <thaumcraft:mirrored_glass>, [<contenttweaker:holy_core>,<contenttweaker:rune_of_deception>,<contenttweaker:holy_core>,<alchemistry:ingot:11>]);
 
 # Magic Hand Mirror
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:hand_mirror>);
@@ -634,7 +634,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EldritchPedesta
 
 # Blank Greater Focus
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_3", "FOCUSGREATER@1", <thaumcraft:focus_3>, 8, [<aspect:vacuos> * 150,<aspect:vitreus> * 150,<aspect:ordo> * 100,<aspect:praecantatio> * 100,<aspect:instrumentum> * 50,<aspect:auram> * 50], <thaumcraft:focus_2>, [<alchemistry:ingot:30>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:30>,<contenttweaker:primordial_fragment>,<alchemistry:ingot:30>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:30>,<minecraft:nether_star>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:focus_3", "FOCUSGREATER@1", <thaumcraft:focus_3>, 8, [<aspect:vacuos> * 150,<aspect:vitreus> * 150,<aspect:ordo> * 100,<aspect:praecantatio> * 100,<aspect:instrumentum> * 50,<aspect:auram> * 50], <thaumcraft:focus_2>, [<alchemistry:ingot:11>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:11>,<contenttweaker:primordial_fragment>,<alchemistry:ingot:11>,<thaumcraft:mirrored_glass>,<alchemistry:ingot:11>,<minecraft:nether_star>]);
 
 # Void Thaumaturge Hood
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_helm>);

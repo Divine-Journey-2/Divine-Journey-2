@@ -12,6 +12,9 @@ print("STARTING Alchemistry.zs");
 # Zinc Ingot from AbyssalCraft Crystallized Zinc Cluster
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<abyssalcraft:crystalcluster2:8>, <alchemistry:ingot:30>, 1.0);
 
+# Sodium Ingot rom AbyssalCraft Crystallized Zinc Cluster
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<contenttweaker:crystallized_sodium_cluster>, <alchemistry:ingot:11>, 1.0);
+
 # Alchemistry Guidebook
 recipes.remove(<patchouli:guide_book>.withTag({"patchouli:book": "alchemistry:alchemistry_book"}), true);
 recipes.addShapeless(<patchouli:guide_book>.withTag({"patchouli:book": "alchemistry:alchemistry_book"}), [<minecraft:book>,<minecraft:glass_bottle>]);

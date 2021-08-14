@@ -1787,6 +1787,10 @@
     {
       "item": "contenttweaker:relic_ingot|0",
       "emc": 64
+    },
+    {
+      "item": "mysticalagriculture:xp_droplet|0",
+      "emc": 8
     }
   ]
 }

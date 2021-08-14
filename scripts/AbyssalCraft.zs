@@ -416,9 +416,9 @@ mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:mater
 mods.abyssalcraft.Crystallizer.removeCrystallizationOutput(<mekanism:crystal:4>);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:65>, <abyssalcraft:crystal:16>, 0.1);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:storage_alloy:3>, <abyssalcraft:crystal:17> * 6, <abyssalcraft:crystal:16> * 2, 0.9);
-mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:ingot:2>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:24> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:ingot:2>, <abyssalcraft:crystalshard:17> * 6, <contenttweaker:crystallized_sodium_shard> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:8>);
-mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:nugget:8>, <abyssalcraft:crystalfragment:17> * 6, <abyssalcraft:crystalfragment:24> * 2, 0.1);
+mods.abyssalcraft.Crystallizer.addCrystallization(<thaumcraft:nugget:8>, <abyssalcraft:crystalfragment:17> * 6, <contenttweaker:crystallized_sodium_fragment> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:163>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:16> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.addCrystallization(<thermalfoundation:material:99>, <abyssalcraft:crystalshard:17> * 6, <abyssalcraft:crystalshard:16> * 2, 0.1);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thermalfoundation:material:227>);

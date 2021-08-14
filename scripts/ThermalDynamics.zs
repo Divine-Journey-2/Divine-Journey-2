@@ -259,7 +259,7 @@ recipes.addShaped(<thermaldynamics:relay>, [[<thermalfoundation:material:357>,<c
 
 # Cryo-Stabilized Fluxduct (Empty)
 recipes.remove(<thermaldynamics:duct_0:9>);
-mods.thaumcraft.Infusion.registerRecipe("thermaldynamics:cryo_stabilized_fluxduct_empty", "", <thermaldynamics:duct_0:9>, 5, [<aspect:gelum> * 100,<aspect:potentia> * 100,<aspect:motus> * 50,<aspect:machina> * 20], <thermaldynamics:duct_0:4>, [<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<evilcraft:potentia_sphere>,<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<alchemistry:ingot:30>]);
+mods.thaumcraft.Infusion.registerRecipe("thermaldynamics:cryo_stabilized_fluxduct_empty", "", <thermaldynamics:duct_0:9>, 5, [<aspect:gelum> * 100,<aspect:potentia> * 100,<aspect:motus> * 50,<aspect:machina> * 20], <thermaldynamics:duct_0:4>, [<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<evilcraft:potentia_sphere>,<botania:elfglass>,<simplyjetpacks:metaitemmods:26>,<botania:elfglass>,<alchemistry:ingot:11>]);
 
 # Cryo-Stabilized Fluxduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_0:9>, <liquid:cryotheum>);

@@ -21,7 +21,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "alchemistry:ingot@30",
+            "item": "alchemistry:ingot@11",
             "amount": 2
         },
         {

@@ -686,6 +686,20 @@ recipes.addShapeless(<contenttweaker:crystallized_mana_fragment> * 9, [<contentt
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource:1>, <contenttweaker:crystallized_mana_fragment>, 0.1);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:manaresource>, <contenttweaker:crystallized_mana_fragment> * 3, 0.1);
 
+# Crystallized Sodium Cluster
+recipes.addShaped(<contenttweaker:crystallized_sodium_cluster>, [[<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>],[<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>],[<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>,<contenttweaker:crystallized_sodium>]]);
+
+# Crystallized Sodium
+recipes.addShaped(<contenttweaker:crystallized_sodium>, [[<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>],[<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>],[<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>,<contenttweaker:crystallized_sodium_shard>]]);
+recipes.addShapeless(<contenttweaker:crystallized_sodium> * 9, [<contenttweaker:crystallized_sodium_cluster>]);
+
+# Crystallized Sodium Shard
+recipes.addShaped(<contenttweaker:crystallized_sodium_shard>, [[<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>],[<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>],[<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>,<contenttweaker:crystallized_sodium_fragment>]]);
+recipes.addShapeless(<contenttweaker:crystallized_sodium_shard> * 9, [<contenttweaker:crystallized_sodium>]);
+
+# Crystallized Sodium Fragment
+recipes.addShapeless(<contenttweaker:crystallized_sodium_fragment> * 9, [<contenttweaker:crystallized_sodium_shard>]);
+
 # Manastar Petal
 mods.botania.Apothecary.addRecipe(<contenttweaker:manastar_petal>, [<ore:petalBlue>,<ore:petalBlue>,<ore:petalRed>,<ore:petalWhite>]);
 

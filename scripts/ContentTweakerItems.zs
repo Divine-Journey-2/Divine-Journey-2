@@ -573,6 +573,14 @@ var crystallized_mana_shard = VanillaFactory.createItem("crystallized_mana_shard
 crystallized_mana_shard.register();
 var crystallized_mana_fragment = VanillaFactory.createItem("crystallized_mana_fragment");
 crystallized_mana_fragment.register();
+var crystallized_sodium_cluster = VanillaFactory.createItem("crystallized_sodium_cluster");
+crystallized_sodium_cluster.register();
+var crystallized_sodium = VanillaFactory.createItem("crystallized_sodium");
+crystallized_sodium.register();
+var crystallized_sodium_shard = VanillaFactory.createItem("crystallized_sodium_shard");
+crystallized_sodium_shard.register();
+var crystallized_sodium_fragment = VanillaFactory.createItem("crystallized_sodium_fragment");
+crystallized_sodium_fragment.register();
 var manastar_petal = VanillaFactory.createItem("manastar_petal");
 manastar_petal.register();
 var thermal_petal = VanillaFactory.createItem("thermal_petal");
@@ -675,7 +683,7 @@ omothol_teleporter.itemRightClick = function(stack, world, player, hand) {
         return "PASS";
     }
     stack.damage(2, player);
-	player.executeCommand("tpx @p 0 80 0 52");
+	Commands.call("tpx @p 0 80 0 52", player, world, false, true);
     return "SUCCESS";
 };
 omothol_teleporter.register();
@@ -706,7 +714,7 @@ woodland_mansion_locator_token.itemRightClick = function(stack, world, player, h
         return "PASS";
     }
     stack.damage(2, player);
-	player.executeCommand("locate Mansion");
+	Commands.call("locate Mansion", player, world, false, true);
     return "SUCCESS";
 };
 woodland_mansion_locator_token.register();
@@ -719,7 +727,7 @@ abyssal_wasteland_teleporter.itemRightClick = function(stack, world, player, han
         return "PASS";
     }
     stack.damage(1, player);
-	player.executeCommand("tpx @p 0 80 0 50");
+	Commands.call("tpx @p 0 80 0 50", player, world, false, true);
     return "SUCCESS";
 };
 abyssal_wasteland_teleporter.register();

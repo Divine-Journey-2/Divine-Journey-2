@@ -308,9 +308,9 @@ null,null,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]
 mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.discidia", crystalProperties: {collectiveCapability: 50, size: 150, fract: 0, purity: 50, sizeOverride: -1}, collectorType: 0}, BlockEntityTag: {ticksExisted: 0, purity: 50, sizeOverride: -1, doesSeeSky: 1 as byte, multiBlockPresent: 0 as byte, collectorType: 0, size: 150, fract: 0, playerRefMost: 433871007885182809 as long, ForgeCaps: {"abyssalcraft:itemtransfer": {isRunning: 0 as byte, configurations: []}}, constellationName: "astralsorcery.constellation.discidia", id: "astralsorcery:tilecollectorcrystal", playerRefLeast: -4822218405563622703 as long, wasLinkedBefore: 0 as byte, collect: 50,linked: []}}),
 [[null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null],
 [null,null,<astralsorcery:itemcraftingcomponent:3>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:itemcraftingcomponent:3>,null,null],
-[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
-[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
-[null,<alchemistry:ingot:30>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:30>,null],
+[null,<alchemistry:ingot:11>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:11>,null],
+[null,<alchemistry:ingot:11>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:11>,null],
+[null,<alchemistry:ingot:11>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:11>,null],
 [null,null,<astralsorcery:itemcraftingcomponent:3>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:itemcraftingcomponent:3>,null,null],
 [null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null]]);  
 
@@ -329,10 +329,10 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal
 # Conversion Wand
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_exchange");
 mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_exchange", <astralsorcery:itemexchangewand>, 1000, 100,
-[null,<alchemistry:ingot:30>,<botania:manaresource:22>,
-<astralsorcery:blockmarble:6>,<botania:manaresource:22>,<alchemistry:ingot:30>,
+[null,<alchemistry:ingot:11>,<botania:manaresource:22>,
+<astralsorcery:blockmarble:6>,<botania:manaresource:22>,<alchemistry:ingot:11>,
 <astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,null,
-<astralsorcery:itemcraftingcomponent:1>,<alchemistry:ingot:30>,<lightningcraft:rod:9>,<astralsorcery:itemcraftingcomponent:1>]);
+<astralsorcery:itemcraftingcomponent:1>,<alchemistry:ingot:11>,<lightningcraft:rod:9>,<astralsorcery:itemcraftingcomponent:1>]);
 
 # Formation Wand
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_architect");
@@ -364,7 +364,7 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal
 [<astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
 <astralsorcery:itemcraftingcomponent:1>,<contenttweaker:condensed_vis_crystal_stellae>,<astralsorcery:itemcraftingcomponent:1>,
 <astralsorcery:blockmarble:6>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,
-<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>]);
+<alchemistry:ingot:11>,<alchemistry:ingot:11>,<alchemistry:ingot:11>,<alchemistry:ingot:11>]);
 
 # Attunement Altar
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/attunementaltar");
@@ -395,10 +395,10 @@ Utils.getCrystalORIngredient(false, false),<astralsorcery:blockmarble:4>,Utils.g
 # Starlight Infuser
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/starlightinfuser");
 mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/starlightinfuser", <astralsorcery:blockstarlightinfuser>, 1200, 100,
-[<alchemistry:ingot:30>,<alchemistry:ingot:30>,<alchemistry:ingot:30>,
+[<alchemistry:ingot:11>,<alchemistry:ingot:11>,<alchemistry:ingot:11>,
 <astralsorcery:blockmarble:6>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:blockmarble:6>,
 <contenttweaker:condensed_vis_crystal_stellae>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:condensed_vis_crystal_stellae>,
-<alchemistry:ingot:30>,<alchemistry:ingot:30>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,
+<alchemistry:ingot:11>,<alchemistry:ingot:11>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>,
 <astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockmarble:6>,<astralsorcery:blockblackmarble:3>,<astralsorcery:blockblackmarble:3>]);
 
 # Resonating Gem
@@ -462,8 +462,8 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/inter
 # Illumination Wand
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination");
 mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination", <astralsorcery:itemilluminationwand>.withTag({astralsorcery: {}}), 1000, 100,
-[null,<alchemistry:ingot:30>,<astralsorcery:itemusabledust>,
-null,<astralsorcery:itemcraftingcomponent:4>,<alchemistry:ingot:30>,
+[null,<alchemistry:ingot:11>,<astralsorcery:itemusabledust>,
+null,<astralsorcery:itemcraftingcomponent:4>,<alchemistry:ingot:11>,
 <lightningcraft:rod:9>,null,null,
 null,<astralsorcery:itemusabledust>,<astralsorcery:blockmarble:6>,null,
 null,<astralsorcery:itemusabledust>,null,<astralsorcery:itemusabledust>,<astralsorcery:blockmarble:6>,null,<astralsorcery:blockmarble:6>,null]);
