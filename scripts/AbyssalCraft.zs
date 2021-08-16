@@ -632,4 +632,9 @@ mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
 #<abyssalcraft:crystalcluster:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 8."));
 #<abyssalcraft:crystalcluster2:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 10."));
 
+# Evoker from Woodland Mansion Locator Token
+mods.abyssalcraft.SummonRitual.addRitual("summonEvoker_from_WMLT", 0, 0, 2000, false, "minecraft:evocation_illager", [<contenttweaker:woodland_mansion_locator_token>,<abyssalcraft:corflesh>,<minecraft:emerald>,<abyssalcraft:corflesh>]);
+game.setLocalization("ac.ritual.summonEvoker_from_WMLT", "Summon Evoker");
+game.setLocalization("ac.ritual.summonEvoker_from_WMLT.desc", "No luck finding a Woodland Mansion...? Dark Magic might be able to help with that.");
+
 print("ENDING AbyssalCraft.zs");

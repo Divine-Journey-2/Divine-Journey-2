@@ -1791,6 +1791,22 @@
     {
       "item": "mysticalagriculture:xp_droplet|0",
       "emc": 8
+    },
+    {
+      "item": "evilcraft:undead_log|0",
+      "emc": 24
+    },
+    {
+      "item": "divinerpg:cyclops_eye_shards|0",
+      "emc": 32
+    },
+    {
+      "item": "divinerpg:cyclops_eye|0",
+      "emc": 288
+    },
+    {
+      "item": "mysticalagriculture:glowstone_essence|0",
+      "emc": 2
     }
   ]
 }

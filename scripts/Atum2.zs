@@ -124,4 +124,7 @@ recipes.remove(<atum:linen_bandage>);
 <ore:woolRed>.remove(<atum:linen_red>);
 <ore:woolBlack>.remove(<atum:linen_black>);
 
+# Gold Coin duplication reipe
+recipes.addShaped(<atum:coin_gold> * 4, [[<minecraft:gold_nugget>,<minecraft:gold_nugget>,<minecraft:gold_nugget>],[<minecraft:gold_nugget>,<atum:coin_gold>,<minecraft:gold_nugget>],[<minecraft:gold_nugget>,<minecraft:gold_nugget>,<minecraft:gold_nugget>]]);
+
 print("ENDING Atum2.zs");
