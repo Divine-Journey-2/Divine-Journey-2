@@ -214,6 +214,7 @@ recipes.addShapedMirrored(<contenttweaker:aether_power_core>, [[<ore:ingotEnerge
 # Golder Molder Folder
 recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ring>,<aether_legacy:ice_ring>,null],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<aether_legacy:ice_pendant>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,null]]);
 <contenttweaker:golder_molder_folder>.addTooltip(format.darkRed(format.italic("An older boulder told 'er: Hold 'er shoulder!")));
+<contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
 
 # Enchanted Golden Berry
 recipes.addShaped(<contenttweaker:enchanted_golden_berry>, [[<minecraft:gold_ingot>,<aether_legacy:enchanted_blueberry>,<minecraft:gold_ingot>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<minecraft:gold_ingot>,<aether_legacy:enchanted_gravitite>,<minecraft:gold_ingot>]]);
@@ -1854,7 +1855,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:unwarpification_ta
 <contenttweaker:unwarpification_talisman>.addTooltip(format.white("Right Click to set your Thaumcraft Warp level to 0!"));
 
 # Goddess' Pearl
-mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<alchemistry:ingot:42>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:30>,<thaumcraft:primordial_pearl>]);
+mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<alchemistry:ingot:42>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>]);
 <contenttweaker:goddess_pearl>.addTooltip(format.red("Does not get consumed by regular crafting."));
 <contenttweaker:goddess_pearl>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 

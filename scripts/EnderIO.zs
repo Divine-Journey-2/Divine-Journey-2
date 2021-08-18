@@ -19,7 +19,7 @@ print("STARTING EnderIO.zs");
 
 # Fluid Tank
 recipes.remove(<enderio:block_tank>);
-recipes.addShaped(<enderio:block_tank>, [[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>],[<immersiveengineering:metal_decoration1:1>,<ore:blockGlass>,<immersiveengineering:metal_decoration1:1>],[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}), [[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>],[<immersiveengineering:metal_decoration1:1>,<ore:blockGlass>,<immersiveengineering:metal_decoration1:1>],[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>]]);
 # .withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}})
 
 # Conductive Iron in the Immersive Alloy Smelter
@@ -250,17 +250,17 @@ recipes.remove(<enderio:block_buffer:1>);
 recipes.addShaped(<enderio:block_buffer:1>, [[<enderio:item_alloy_ingot>,<enderio:item_power_conduit:2>,<enderio:item_alloy_ingot>],[<enderio:item_power_conduit:2>,<enderio:item_material:1>,<enderio:item_power_conduit:2>],[<enderio:item_alloy_ingot>,<enderio:item_power_conduit:2>,<enderio:item_alloy_ingot>]]);
 
 # Lava Heat Exchanger
-addEnderIOBaseMachineRecipe(<enderio:block_lava_generator>, <enderio:item_material:72>, <enderio:block_tank>);
+addEnderIOBaseMachineRecipe(<enderio:block_lava_generator>, <enderio:item_material:72>, <enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}));
 
 # Painting Machine
 addEnderIOBaseMachineRecipe(<enderio:block_painter>, <openblocks:paintbrush>, <minecraft:diamond>);
 
 # The Vat
-addEnderIOBaseMachineRecipe(<enderio:block_vat>, <enderio:block_tank>, <enderio:block_simple_furnace>);
+addEnderIOBaseMachineRecipe(<enderio:block_vat>, <enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}), <enderio:block_simple_furnace>);
 
 # Pressurized Fluid Tank
 recipes.remove(<enderio:block_tank:1>);
-recipes.addShaped("enderio_pressurized_fluid_tank", <enderio:block_tank:1>, [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
+recipes.addShaped("enderio_pressurized_fluid_tank", <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
 function(out, ins, cInfo) {
 	if(ins.tank.tag has "enderio:data") {
 		return out.withTag(ins.tank.tag);
@@ -270,10 +270,10 @@ function(out, ins, cInfo) {
 }, null);
 
 # Combustion Generator
-addEnderIOBaseMachineRecipe(<enderio:block_combustion_generator>, <enderio:block_tank>, <enderio:block_simple_stirling_generator>);
+addEnderIOBaseMachineRecipe(<enderio:block_combustion_generator>, <enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}), <enderio:block_simple_stirling_generator>);
 
 # Niard
-addEnderIOBaseMachineRecipe(<enderio:block_niard>, <minecraft:piston>, <enderio:block_tank>);
+addEnderIOBaseMachineRecipe(<enderio:block_niard>, <minecraft:piston>, <enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}));
 
 # Experience Rod
 recipes.remove(<enderio:item_xp_transfer>);

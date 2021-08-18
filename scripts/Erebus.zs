@@ -106,6 +106,13 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 recipes.remove(<erebus:whetstone>);
 recipes.addShaped(<erebus:whetstone>, [[<ore:sand>,<ore:sand>,<ore:sand>],[<erebus:materials:7>,<erebus:materials:7>,<erebus:materials:7>],[<erebus:umberstone>,<erebus:umberstone>,<erebus:umberstone>]]);
 
+# Mushroom uncrafting recipes
+recipes.addShapeless(<erebus:dark_capped_mushroom> * 9, [<erebus:dark_capped_mushroom_block>]);
+recipes.addShapeless(<erebus:sarcastic_czech_mushroom> * 9, [<erebus:sarcastic_czech_mushroom_block>]);
+recipes.addShapeless(<erebus:grandmas_shoes_mushroom> * 9, [<erebus:grandmas_shoes_mushroom_block>]);
+recipes.addShapeless(<erebus:dutch_cap_mushroom> * 9, [<erebus:dutch_cap_mushroom_block>]);
+recipes.addShapeless(<erebus:kaizers_fingers_mushroom> * 9, [<erebus:kaizers_fingers_mushroom_block>]);
+
 # Wand of Animation
 mods.extendedcrafting.TableCrafting.addShaped(<erebus:wand_of_animation>,
 [[null, null, null, null, null, null, null, null, <extrautils2:itemdestructionwand>], 

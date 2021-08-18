@@ -64,4 +64,8 @@ global allThaumcraftAspects as string[] = ["aer", "terra", "ignis", "aqua", "ord
 # Astral Sorcery Crystals
 global as_crystal as IIngredient = <astralsorcery:itemrockcrystalsimple> | <astralsorcery:itemtunedrockcrystal> | <astralsorcery:itemcelestialcrystal> | <astralsorcery:itemtunedcelestialcrystal>;
 
+# EnderIO regular or configued Basic Tank
+global EIOFluidTank as IIngredient = <enderio:block_tank> | <enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}});
+global EIOPressurizedFluidTank as IIngredient = <enderio:block_tank:1> | <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+
 print("ENDING GlobalVariables.zs");
