@@ -317,11 +317,11 @@ recipes.addShaped(<mekanism:electrolyticcore>, [[<enderio:item_material:68>,null
 
 # Electrolytic Separator
 recipes.remove(<mekanism:machineblock2:4>);
-recipes.addShaped(<mekanism:machineblock2:4>, [[<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),null,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}})],[<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<mekanism:electrolyticcore>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}})],[<enderio:block_alloy:6>,<mekanism:basicblock:8>,<enderio:block_alloy:6>]]);
+recipes.addShaped(<mekanism:machineblock2:4>, [[<enderio:block_tank:1>,null,<enderio:block_tank:1>],[<enderio:block_tank:1>,<mekanism:electrolyticcore>,<enderio:block_tank:1>],[<enderio:block_alloy:6>,<mekanism:basicblock:8>,<enderio:block_alloy:6>]]);
 
 # Basic Gas Tank
 recipes.remove(<mekanism:gastank>);
-recipes.addShaped(<mekanism:gastank>.withTag({tier: 0}), [[<enderio:item_alloy_ingot:6>,<contenttweaker:energized_osmium_ingot>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShaped(<mekanism:gastank>.withTag({tier: 0}), [[<enderio:item_alloy_ingot:6>,<contenttweaker:energized_osmium_ingot>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:block_tank:1>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>]]);
 
 function mekGasTankUpgrade(input_tag as IData, out as IItemStack, level as int) as IItemStack {
 	if(input_tag has "mekData") {
