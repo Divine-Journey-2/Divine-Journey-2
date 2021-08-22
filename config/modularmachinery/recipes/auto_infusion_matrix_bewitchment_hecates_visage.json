@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_bewitchment_hecates_visage",
+    "recipeTime": 250,
     "requirements": [
         {
             "type": "energy",
@@ -11,71 +11,58 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "bewitchment:pure_filament",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "bewitchment:bottled_hellfire"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
-            "amount": 2
+            "item": "bewitchment:cold_iron_ingot",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
+            "item": "bewitchment:oil_of_vitriol"
         },
         {
-            "type": "aspect",
+            "type": "item",
             "io-type": "input",
-            "aspect": "machina",
-            "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "herba",
-            "amount": 25
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
+            "item": "bewitchment:ritual_chalk"
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "ordo",
-            "amount": 15
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "desiderium",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 50
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "bewitchment:hecates_visage"
         }
     ]
 }

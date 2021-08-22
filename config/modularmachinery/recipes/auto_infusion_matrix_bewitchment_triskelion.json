@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_pentacle",
+    "registryName": "auto_infusion_matrix_bewitchment_triskelion",
     "recipeTime": 400,
     "requirements": [
         {
@@ -11,42 +11,57 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:stone_ichor",
-            "amount": 2
+            "item": "bewitchment:stone_ichor"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:diabolical_vein",
-            "amount": 2
+            "item": "contenttweaker:condensed_vis_crystal_desiderium"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:block_of_cold_iron_pentacle",
-            "amount": 2
+            "item": "contenttweaker:travelers_tenacity"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:coralium_decorated_blood_star"
+            "item": "minecraft:potion",
+			"nbt": {"Potion":"cofhcore:strength4"}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "evilcraft:promise_acceptor@1"
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "instrumentum",
-            "amount": 200
+            "amount": 150
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "desiderium",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aversio",
+            "amount": 100
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "diabolus",
-            "amount": 200
+            "amount": 50
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:pentacle"
+            "item": "bewitchment:triskelion"
         }
     ]
 }

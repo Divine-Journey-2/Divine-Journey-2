@@ -105,7 +105,6 @@ mods.biggercraftingtables.Giant.addShaped(<contenttweaker:it5>,
 [<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrr>, <contenttweaker:puzzle_tile_rrgog>, <contenttweaker:puzzle_tile_ooror>, <contenttweaker:puzzle_tile_ooorr>, <contenttweaker:puzzle_tile_rroro>, <contenttweaker:puzzle_tile_rrrkr>, <contenttweaker:puzzle_tile_kkrkr>, <contenttweaker:puzzle_tile_kkkbr>], 
 [<contenttweaker:puzzle_tile_rrbrg>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rogro>, <contenttweaker:puzzle_tile_roroo>, <contenttweaker:puzzle_tile_orrro>, <contenttweaker:puzzle_tile_rrork>, <contenttweaker:puzzle_tile_rkrrk>, <contenttweaker:puzzle_tile_rkrbk>], 
 [<contenttweaker:puzzle_tile_grbgb>, <contenttweaker:puzzle_tile_grggb>, <contenttweaker:puzzle_tile_gggob>, <contenttweaker:puzzle_tile_orgob>, <contenttweaker:puzzle_tile_oroob>, <contenttweaker:puzzle_tile_oookb>, <contenttweaker:puzzle_tile_krokb>, <contenttweaker:puzzle_tile_krkkb>, <contenttweaker:puzzle_tile_krkbb>]]);
-mods.jei.JEI.hide(<contenttweaker:it5>);
 mods.jei.JEI.hideCategory("biggerct.big");
 mods.jei.JEI.hideCategory("biggerct.huge");
 mods.jei.JEI.hideCategory("biggerct.giant");

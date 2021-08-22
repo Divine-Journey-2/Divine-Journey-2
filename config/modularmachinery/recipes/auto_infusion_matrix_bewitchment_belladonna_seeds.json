@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_bewitchment_belladonna_seeds",
+    "recipeTime": 430,
     "requirements": [
         {
             "type": "energy",
@@ -11,71 +11,64 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "thaumcraft:nitor_green",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "mysticalagriculture:guardian_seeds"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
+            "item": "bewitchment:essence_of_vitality",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
+            "item": "thaumcraft:mind@1"
         },
         {
-            "type": "aspect",
+            "type": "item",
             "io-type": "input",
-            "aspect": "machina",
-            "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
+            "item": "contenttweaker:mysterious_leaking_soul"
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "herba",
-            "amount": 25
+            "amount": 200
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
+            "aspect": "vinculum",
+            "amount": 160
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
+            "aspect": "sensus",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "humanus",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 10
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "bewitchment:belladonna_seeds"
         }
     ]
 }

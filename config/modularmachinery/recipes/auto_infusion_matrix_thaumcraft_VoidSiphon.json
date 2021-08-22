@@ -1,81 +1,74 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_thaumcraft_VoidSiphon",
+    "recipeTime": 550,
     "requirements": [
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 3500
+            "energyPerTick": 5000
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
+            "item": "thaumcraft:plate",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "bewitchment:stone_ichor"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:swirl_of_depths",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "thaumcraft:metal_void"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
-            "amount": 2
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
+            "item": "thaumcraft:centrifuge"
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "machina",
+            "aspect": "vacuos",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alienis",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "fabrico",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitium",
             "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "herba",
-            "amount": 25
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "thaumcraft:void_siphon"
         }
     ]
 }

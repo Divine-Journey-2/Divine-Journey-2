@@ -13,7 +13,6 @@ global relicIngot as IItemStack = <contenttweaker:relic_ingot>;
 global relicOre as IItemStack = <atum:relic_ore>;
 global relicBlock as IItemStack = <contenttweaker:relic_block>;
 
-<ore:blockCharcoal>.removeItems([<mekanism:basicblock:3>,<actuallyadditions:block_misc:5>]);
 global allCoalBlocks as IOreDictEntry = <ore:allCoalBlocks>;
 allCoalBlocks.addAll(<ore:blockCoal>);
 allCoalBlocks.addAll(<ore:blockCharcoal>);

@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_bewitchment_girdle_of_the_dryads",
+    "recipeTime": 400,
     "requirements": [
         {
             "type": "energy",
@@ -11,71 +11,64 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "bewitchment:stone_ichor",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "bewitchment:pure_filament"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
+            "item": "contenttweaker:condensed_vis_crystal_herba"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:magical_leather",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
+            "item": "bewitchment:block_of_garnet"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:oak_spirit",
+            "amount": 2
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "machina",
-            "amount": 50
+            "aspect": "praemunio",
+            "amount": 150
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
+            "aspect": "instrumentum",
+            "amount": 100
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "herba",
-            "amount": 25
+            "amount": 100
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
+            "aspect": "luna",
+            "amount": 50
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "bewitchment:girdle_of_the_dryads"
         }
     ]
 }

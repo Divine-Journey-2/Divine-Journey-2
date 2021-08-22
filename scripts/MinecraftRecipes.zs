@@ -9,7 +9,7 @@ import mods.immersiveengineering.Crusher as IECrusher;
 import mods.extrautils2.Crusher as EUCrusher;
 import mods.enderio.SagMill;
 import crafttweaker.item.WeightedItemStack;
-import moretweaker.bewitchment.Distillery;
+import moretweaker.bewitchment.WitchesRitual;
 
 print("STARTING MinecraftRecipes.zs");
 
@@ -246,7 +246,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, <minecraft:d
 vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);
 
 # Spawn Villager
-Distillery.addRecipe([<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:villager"}})], [<minecraft:egg>,<bewitchment:heaven_extract>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})]);
+WitchesRitual.addRecipe("Rite of the Haaaaah", [<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:villager"}})], [<minecraft:egg>,<bewitchment:heaven_extract>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})], null, null, 2200, WitchesRitual.RITUAL, WitchesRitual.FIERY, WitchesRitual.RITUAL);
 
 # Firework Star (basic)
 recipes.addShapeless(<minecraft:firework_charge>, [<minecraft:fire_charge>,<minecraft:gunpowder>]);

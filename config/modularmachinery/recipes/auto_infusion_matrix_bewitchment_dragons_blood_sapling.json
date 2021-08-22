@@ -1,81 +1,70 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_bewitchment_dragons_blood_sapling",
+    "recipeTime": 800,
     "requirements": [
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 3500
+            "energyPerTick": 5000
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
+            "item": "bewitchment:dragons_blood_resin",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "natura:nether_sapling2"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:cleansing_balm",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "minecraft:nether_brick",
+            "item": "bewitchment:ebb_of_death",
             "amount": 2
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "machina",
-            "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "herba",
-            "amount": 25
+            "amount": 250
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
+            "aspect": "victus",
+            "amount": 200
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
+            "aspect": "mortuus",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "perditio",
+            "amount": 50
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "bewitchment:dragons_blood_sapling"
         }
     ]
 }

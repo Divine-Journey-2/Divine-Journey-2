@@ -11,7 +11,8 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:witches_stonebrew"
+            "item": "bewitchment:stone_ichor",
+            "amount": 2
         },
         {
             "type": "item",

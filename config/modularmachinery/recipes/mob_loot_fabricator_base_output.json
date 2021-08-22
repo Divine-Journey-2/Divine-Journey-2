@@ -430,12 +430,6 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:hellhound_horn",
-            "chance": 0.005
-        },
-        {
-            "type": "item",
-            "io-type": "output",
             "item": "botania:manaresource@5",
             "chance": 0.005
         },

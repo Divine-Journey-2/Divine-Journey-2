@@ -316,9 +316,6 @@ recipes.addShaped(<evilcraft:spikey_claws>, [[<evilcraft:dark_spike>,<evilcraft:
 recipes.remove(<evilcraft:biome_extract>);
 recipes.addShaped(<evilcraft:biome_extract>, [[null,<evilcraft:dark_gem>,null],[<astralsorcery:itemcraftingcomponent:3>,null,<astralsorcery:itemcraftingcomponent:3>],[<astralsorcery:itemcraftingcomponent:3>,<thaumcraft:jar_normal>,<astralsorcery:itemcraftingcomponent:3>]]);
 
-# Bound Blood Drop
-mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:bound_blood_drop>);
-
 # Creative Blood Droplet
 mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:creative_blood_drop>.withTag({}),
 [[null, null, null, <bloodmagic:decorative_brick>, null, null, null], 

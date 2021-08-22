@@ -1,81 +1,73 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_harness_base",
+    "recipeTime": 300,
     "requirements": [
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 3500
+            "energyPerTick": 2000
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
+            "item": "minecraft:leather_chestplate"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "thaumcraft:baubles@2"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "bewitchment:heaven_extract"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
-            "amount": 2
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:elder_wood",
+            "item": "contenttweaker:magical_leather",
             "amount": 3
         },
         {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:travelers_tenacity"
+        },
+        {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "machina",
+            "aspect": "praemunio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "volatus",
+            "amount": 75
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 75
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
             "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "herba",
-            "amount": 25
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "thaumicaugmentation:material@4"
         }
     ]
 }

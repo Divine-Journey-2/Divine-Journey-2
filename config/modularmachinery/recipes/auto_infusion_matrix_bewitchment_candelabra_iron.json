@@ -1,52 +1,52 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_pentacle",
-    "recipeTime": 400,
+    "registryName": "auto_infusion_matrix_bewitchment_candelabra_iron",
+    "recipeTime": 160,
     "requirements": [
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 3500
+            "energyPerTick": 3000
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:stone_ichor",
-            "amount": 2
+            "item": "bewitchment:cloudy_oil",
+            "amount": 5
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:diabolical_vein",
-            "amount": 2
+            "item": "thaumcraft:candle_white",
+            "amount": 5
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:block_of_cold_iron_pentacle",
-            "amount": 2
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "contenttweaker:coralium_decorated_blood_star"
+            "item": "minecraft:iron_block"
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "instrumentum",
-            "amount": 200
+            "aspect": "lux",
+            "amount": 100
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "diabolus",
-            "amount": 200
+            "aspect": "auram",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "stellae",
+            "amount": 10
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:pentacle"
+            "item": "bewitchment:candelabra_iron"
         }
     ]
 }

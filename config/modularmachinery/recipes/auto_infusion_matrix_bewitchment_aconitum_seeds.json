@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_nether_brick_witches_altar",
-    "recipeTime": 165,
+    "registryName": "auto_infusion_matrix_bewitchment_aconitum_seeds",
+    "recipeTime": 430,
     "requirements": [
         {
             "type": "energy",
@@ -11,71 +11,64 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:incense_altar"
+            "item": "mysticalagriculture:nether_quartz_seeds"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:spruce_heart",
+            "item": "bewitchment:ebb_of_death",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:birch_soul"
+            "item": "thaumcraft:mind@1"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:nether_brick",
+            "item": "thaumcraft:nitor_silver",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:elder_wood",
-            "amount": 3
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "machina",
-            "amount": 50
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "terra",
-            "amount": 30
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "auram",
-            "amount": 30
+            "item": "contenttweaker:mysterious_leaking_soul"
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "herba",
-            "amount": 25
+            "amount": 200
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "praecantatio",
-            "amount": 15
+            "aspect": "exanimis",
+            "amount": 160
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "ordo",
-            "amount": 15
+            "aspect": "bestia",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "motus",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 10
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:nether_brick_witches_altar"
+            "item": "bewitchment:aconitum_seeds"
         }
     ]
 }

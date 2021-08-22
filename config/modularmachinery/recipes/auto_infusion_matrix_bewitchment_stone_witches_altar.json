@@ -16,7 +16,13 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:lively_nature"
+            "item": "bewitchment:spruce_heart",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:birch_soul"
         },
         {
             "type": "item",

@@ -1,52 +1,60 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_bewitchment_pentacle",
-    "recipeTime": 400,
+    "registryName": "auto_infusion_matrix_bewitchment_brazier",
+    "recipeTime": 550,
     "requirements": [
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 3500
+            "energyPerTick": 5000
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:stone_ichor",
-            "amount": 2
+            "item": "bewitchment:demonic_elixir"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:diabolical_vein",
-            "amount": 2
+            "item": "bewitchment:bottled_hellfire"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:block_of_cold_iron_pentacle",
-            "amount": 2
+            "item": "bewitchment:otherworldly_tears"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:coralium_decorated_blood_star"
+            "item": "bewitchment:caduceus"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bewitchment:witches_oven"
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "instrumentum",
+            "aspect": "machina",
+            "amount": 200
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
             "amount": 200
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "diabolus",
-            "amount": 200
+            "amount": 150
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "bewitchment:pentacle"
+            "item": "bewitchment:brazier"
         }
     ]
 }

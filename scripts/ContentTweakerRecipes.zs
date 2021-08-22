@@ -601,7 +601,7 @@ Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence>, [<natura:o
 
 # Custom AE2 Press duping and crafting
 val custom_ae2_presses = [<contenttweaker:inscriber_estimation_press>,<contenttweaker:inscriber_operation_press>,<contenttweaker:inscriber_methodology_press>,<contenttweaker:inscriber_clearance_press>,<contenttweaker:inscriber_scheduling_press>] as IItemStack[];
-val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<botania:manaresource:7>,<thaumcraft:ingot>] as IItemStack[];
+val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<botania:manaresource:7>,<draconicevolution:draconic_ingot>] as IItemStack[];
 for i in 0 to 5 {
 	Inscriber.addRecipe(custom_ae2_presses[i], <thermalfoundation:storage_alloy>, true, custom_ae2_presses[i]);
 	recipes.addShaped(custom_ae2_presses[i], [[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,custom_ae2_press_materials[i],<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>]]);
@@ -1002,23 +1002,6 @@ Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bew
 
 # Traveler's Tenacity
 Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<contenttweaker:rune_of_lust>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
-
-# Lively Nature
-recipes.addShapeless(<contenttweaker:lively_nature>, [<bewitchment:spruce_heart>.noReturn(),<bewitchment:spruce_heart>.noReturn(),<bewitchment:birch_soul>.noReturn()]);
-
-# Witches' Delicacy
-recipes.addShapeless(<contenttweaker:witches_delicacy>, [<bewitchment:liquid_witchcraft>.noReturn(),<bewitchment:droplet_of_wisdom>.noReturn()]);
-
-# Dense Demonic Elixir
-recipes.addShaped(<contenttweaker:dense_demonic_elixir>, [[<bewitchment:demonic_elixir>.noReturn(),<bewitchment:demonic_elixir>.noReturn()],[<bewitchment:demonic_elixir>.noReturn(),<bewitchment:demonic_elixir>.noReturn()]]);
-recipes.addShapeless(<bewitchment:demonic_elixir> * 4, [<contenttweaker:dense_demonic_elixir>]);
-
-# Stirring Strength
-recipes.addShapeless(<contenttweaker:stirring_strength>, [<bewitchment:swirl_of_depths>.noReturn(),<bewitchment:pure_filament>,<bewitchment:pure_filament>]);
-
-# Witches' Stonebrew
-recipes.addShapeless(<contenttweaker:witches_stonebrew>, [<bewitchment:stone_ichor>.noReturn(),<bewitchment:stone_ichor>.noReturn()]);
-recipes.addShapeless(<bewitchment:stone_ichor> * 2, [<contenttweaker:witches_stonebrew>]);
 
 # Flame Devourer Pendant
 recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<contenttweaker:rune_of_wrath>,<contenttweaker:travelers_tenacity>,<contenttweaker:rune_of_wrath>]]);
