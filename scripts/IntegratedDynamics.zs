@@ -7,8 +7,6 @@ import mods.integrateddynamics.MechanicalSqueezer;
 
 print("STARTING IntegratedDynamics.zs");
 
-val anyMenrilLog as IIngredient = <integrateddynamics:menril_log> | <integrateddynamics:menril_log_filled>;
-
 # Menril Sapling
 recipes.addShaped(<integrateddynamics:menril_sapling>, [[null,<thermalfoundation:material:136>,null],[<thermalfoundation:material:136>,<ore:treeSapling>,<thermalfoundation:material:136>],[<thermalfoundation:material:136>,<quantumflux:craftingpiece:6>,<thermalfoundation:material:136>]]);
 
@@ -18,7 +16,7 @@ recipes.addShaped(<integrateddynamics:squeezer>, [[<enderio:item_alloy_ingot:6>,
 
 # Drying Basin
 recipes.remove(<integrateddynamics:drying_basin>);
-recipes.addShaped(<integrateddynamics:drying_basin>, [[<enderio:item_alloy_ingot:6>,null,<enderio:item_alloy_ingot:6>],[anyMenrilLog,null,anyMenrilLog],[anyMenrilLog,<minecraft:cauldron>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:drying_basin>, [[<enderio:item_alloy_ingot:6>,null,<enderio:item_alloy_ingot:6>],[<integrateddynamics:menril_log>,null,<integrateddynamics:menril_log>],[<integrateddynamics:menril_log>,<minecraft:cauldron>,<integrateddynamics:menril_log>]]);
 
 # Logic Cable
 recipes.remove(<integrateddynamics:cable>);
@@ -30,7 +28,7 @@ recipes.addShaped(<integrateddynamics:variable> * 8, [[<enderio:item_alloy_nugge
 
 # Logic Programmer
 recipes.removeShapeless(<integrateddynamics:logic_programmer>, [<*>,<*>]);
-recipes.addShaped(<integrateddynamics:logic_programmer>, [[<appliedenergistics2:material:22>,anyMenrilLog,<appliedenergistics2:material:22>],[<integrateddynamics:crystalized_menril_block>,<appliedenergistics2:controller>,<integrateddynamics:crystalized_menril_block>],[<appliedenergistics2:material:22>,anyMenrilLog,<appliedenergistics2:material:22>]]);
+recipes.addShaped(<integrateddynamics:logic_programmer>, [[<appliedenergistics2:material:22>,<integrateddynamics:menril_log>,<appliedenergistics2:material:22>],[<integrateddynamics:crystalized_menril_block>,<appliedenergistics2:controller>,<integrateddynamics:crystalized_menril_block>],[<appliedenergistics2:material:22>,<integrateddynamics:menril_log>,<appliedenergistics2:material:22>]]);
 
 # Variable Store
 recipes.remove(<integrateddynamics:variablestore>);
@@ -38,19 +36,19 @@ recipes.addShaped(<integrateddynamics:variablestore>, [[<contenttweaker:operatio
 
 # Materializer
 recipes.remove(<integrateddynamics:materializer>);
-recipes.addShaped(<integrateddynamics:materializer>, [[anyMenrilLog,<contenttweaker:operation_processor>,anyMenrilLog],[<contenttweaker:operation_processor>,<integrateddynamics:variablestore>,<contenttweaker:operation_processor>],[anyMenrilLog,<contenttweaker:operation_processor>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:materializer>, [[<integrateddynamics:menril_log>,<contenttweaker:operation_processor>,<integrateddynamics:menril_log>],[<contenttweaker:operation_processor>,<integrateddynamics:variablestore>,<contenttweaker:operation_processor>],[<integrateddynamics:menril_log>,<contenttweaker:operation_processor>,<integrateddynamics:menril_log>]]);
 
 # Energy Battery
 recipes.removeShaped(<integrateddynamics:energy_battery>);
-recipes.addShaped(<integrateddynamics:energy_battery>.withTag({energy: 0}), [[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog],[anyMenrilLog,<enderio:block_cap_bank:1>,anyMenrilLog],[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:energy_battery>.withTag({energy: 0}), [[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>],[<integrateddynamics:menril_log>,<enderio:block_cap_bank:1>,<integrateddynamics:menril_log>],[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>]]);
 
 # Mechanical Squeezer
 recipes.remove(<integrateddynamics:mechanical_squeezer>);
-recipes.addShaped(<integrateddynamics:mechanical_squeezer>, [[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog],[<integrateddynamics:energy_battery>,<integrateddynamics:squeezer>,<integrateddynamics:energy_battery>],[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:mechanical_squeezer>, [[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>],[<integrateddynamics:energy_battery>,<integrateddynamics:squeezer>,<integrateddynamics:energy_battery>],[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>]]);
 
 # Mechanical Drying Basin
 recipes.remove(<integrateddynamics:mechanical_drying_basin>);
-recipes.addShaped(<integrateddynamics:mechanical_drying_basin>, [[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog],[<integrateddynamics:energy_battery>,<integrateddynamics:drying_basin>,<integrateddynamics:energy_battery>],[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:mechanical_drying_basin>, [[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>],[<integrateddynamics:energy_battery>,<integrateddynamics:drying_basin>,<integrateddynamics:energy_battery>],[<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_block>,<integrateddynamics:menril_log>]]);
 
 # Facade
 recipes.remove(<integrateddynamics:facade>);
@@ -58,7 +56,7 @@ recipes.addShaped(<integrateddynamics:facade> * 8, [[<integrateddynamics:crystal
 
 # Generator
 recipes.remove(<integrateddynamics:coal_generator>);
-recipes.addShaped(<integrateddynamics:coal_generator>, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],[<thermalfoundation:material:802>,<enderio:item_material>,<thermalfoundation:material:802>],[anyMenrilLog,<integrateddynamics:energy_battery>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:coal_generator>, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],[<thermalfoundation:material:802>,<enderio:item_material>,<thermalfoundation:material:802>],[<integrateddynamics:menril_log>,<integrateddynamics:energy_battery>,<integrateddynamics:menril_log>]]);
 
 # Proxy
 recipes.remove(<integrateddynamics:proxy>);
@@ -70,19 +68,19 @@ recipes.addShaped(<integrateddynamics:delay>, [[<integrateddynamics:crystalized_
 
 # Wrench
 recipes.remove(<integrateddynamics:wrench>);
-recipes.addShapedMirrored(<integrateddynamics:wrench>, [[null,<integrateddynamics:crystalized_menril_chunk>,null],[null,anyMenrilLog,<integrateddynamics:crystalized_menril_chunk>],[anyMenrilLog,null,null]]);
+recipes.addShapedMirrored(<integrateddynamics:wrench>, [[null,<integrateddynamics:crystalized_menril_chunk>,null],[null,<integrateddynamics:menril_log>,<integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:menril_log>,null,null]]);
 
 # Labeller
 recipes.remove(<integrateddynamics:labeller>);
-recipes.addShapedMirrored(<integrateddynamics:labeller>, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:crystalized_menril_chunk>,anyMenrilLog],[anyMenrilLog,null]]);
+recipes.addShapedMirrored(<integrateddynamics:labeller>, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:menril_log>],[<integrateddynamics:menril_log>,null]]);
 
 # Output Variable Transformer
 recipes.remove(<integrateddynamics:variable_transformer>);
-recipes.addShaped(<integrateddynamics:variable_transformer> * 4, [[null,<integrateddynamics:variable>,anyMenrilLog],[<integrateddynamics:variable>,<appliedenergistics2:material:43>,anyMenrilLog],[null,<integrateddynamics:variable>,anyMenrilLog]]);
+recipes.addShaped(<integrateddynamics:variable_transformer> * 4, [[null,<integrateddynamics:variable>,<integrateddynamics:menril_log>],[<integrateddynamics:variable>,<appliedenergistics2:material:43>,<integrateddynamics:menril_log>],[null,<integrateddynamics:variable>,<integrateddynamics:menril_log>]]);
 
 # Input Variable Transformer
 recipes.remove(<integrateddynamics:variable_transformer:1>);
-recipes.addShaped(<integrateddynamics:variable_transformer:1> * 4, [[anyMenrilLog,<integrateddynamics:variable>,null],[anyMenrilLog,<appliedenergistics2:material:44>,<integrateddynamics:variable>],[anyMenrilLog,<integrateddynamics:variable>,null]]);
+recipes.addShaped(<integrateddynamics:variable_transformer:1> * 4, [[<integrateddynamics:menril_log>,<integrateddynamics:variable>,null],[<integrateddynamics:menril_log>,<appliedenergistics2:material:44>,<integrateddynamics:variable>],[<integrateddynamics:menril_log>,<integrateddynamics:variable>,null]]);
 
 # Static Light Panel
 recipes.remove(<integrateddynamics:part_static_light_panel_item>);
