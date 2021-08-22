@@ -16,8 +16,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:demonic_elixir",
-            "amount": 4
+            "item": "contenttweaker:dense_demonic_elixir"
         },
         {
             "type": "item",

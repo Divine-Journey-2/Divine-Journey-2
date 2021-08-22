@@ -53,7 +53,7 @@ recipes.remove(<integrateddynamics:mechanical_drying_basin>);
 recipes.addShaped(<integrateddynamics:mechanical_drying_basin>, [[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog],[<integrateddynamics:energy_battery>,<integrateddynamics:drying_basin>,<integrateddynamics:energy_battery>],[anyMenrilLog,<integrateddynamics:crystalized_menril_block>,anyMenrilLog]]);
 
 # Facade
-recipes.remove(<integrateddynamics:facade>);
+recipes.removeShaped(<integrateddynamics:facade>);
 recipes.addShaped(<integrateddynamics:facade> * 8, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:crystalized_menril_chunk>,<enderio:item_conduit_facade>,<integrateddynamics:crystalized_menril_chunk>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>]]);
 
 # Generator

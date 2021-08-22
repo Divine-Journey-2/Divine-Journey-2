@@ -1807,6 +1807,10 @@
     {
       "item": "mysticalagriculture:glowstone_essence|0",
       "emc": 2
+    },
+    {
+      "item": "bewitchment:hellhound_horn|0",
+      "emc": 32
     }
   ]
 }

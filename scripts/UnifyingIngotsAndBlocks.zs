@@ -396,9 +396,15 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, null, 100, 512, [<thermalfoundation:material:66>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, null, 100, 512, [<thermalfoundation:material:130>], "Alloying");
 
-
 # Nickel Ingot
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
+
+# Charcoal Block
+recipes.remove(<mekanism:basicblock:3>);
+recipes.remove(<actuallyadditions:block_misc:5>);
+recipes.removeShaped(<minecraft:coal:1> * 9, [[<*>]]);
+recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5>]);
+
 
 print("ENDING UnifyingIngotsAndBlocks.zs");
