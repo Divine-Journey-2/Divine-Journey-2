@@ -86,10 +86,10 @@ addIFMachineRecipe(<industrialforegoing:tree_fluid_extractor>, <mob_grinding_uti
 addIFMachineRecipe(<industrialforegoing:latex_processing_unit>, <industrialforegoing:plastic>, <thermalfoundation:material:295>, <thermalexpansion:device:6>);
 
 # Sewage Composter
-addIFMachineRecipe(<industrialforegoing:sewage_composter_solidifier>, <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <minecraft:dirt:2>, <enderio:block_stirling_generator>);
+addIFMachineRecipe(<industrialforegoing:sewage_composter_solidifier>, <enderio:block_tank:1>, <minecraft:dirt:2>, <enderio:block_stirling_generator>);
 
 # Animal Sewer
-addIFMachineRecipe(<industrialforegoing:animal_byproduct_recolector>, <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <thermalfoundation:material:25>, <industrialforegoing:animal_resource_harvester>);
+addIFMachineRecipe(<industrialforegoing:animal_byproduct_recolector>, <enderio:block_tank:1>, <thermalfoundation:material:25>, <industrialforegoing:animal_resource_harvester>);
 
 # Sludge Refiner
 addIFMachineRecipe(<industrialforegoing:sludge_refiner>, <thermalfoundation:material:25>, <extrautils2:compresseddirt>, <enderio:block_vat>);
@@ -98,13 +98,13 @@ addIFMachineRecipe(<industrialforegoing:sludge_refiner>, <thermalfoundation:mate
 addIFMachineRecipe(<industrialforegoing:mob_detector>, <enderio:item_alloy_ingot:3>, <minecraft:heavy_weighted_pressure_plate>, <enderio:item_alloy_ingot:3>);
 
 # Lava Fabricator
-addIFMachineRecipe(<industrialforegoing:lava_fabricator>, <minecraft:lava_bucket>.noReturn(), <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <thermalexpansion:machine:15>);
+addIFMachineRecipe(<industrialforegoing:lava_fabricator>, <minecraft:lava_bucket>.noReturn(), <enderio:block_tank:1>, <thermalexpansion:machine:15>);
 
 # Bioreactor
 addIFMachineRecipe(<industrialforegoing:bioreactor>, <minecraft:brewing_stand>, <forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}).noReturn(), <enderio:block_combustion_generator>);
 
 # Biofuel Generator
-addIFMachineRecipe(<industrialforegoing:biofuel_generator>, <thermalfoundation:material:295>, <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <enderio:block_combustion_generator>);
+addIFMachineRecipe(<industrialforegoing:biofuel_generator>, <thermalfoundation:material:295>, <enderio:block_tank:1>, <enderio:block_combustion_generator>);
 
 # Ore Processor
 addIFMachineRecipe(<industrialforegoing:ore_processor>, <thermalexpansion:machine>, <thermalfoundation:material:25>, <thermalexpansion:machine:1>);
@@ -149,13 +149,13 @@ addIFMachineRecipeAsymmetrical(<industrialforegoing:protein_generator>, <thermal
 
 # Hydrator
 recipes.remove(<industrialforegoing:hydrator>);
-recipes.addShaped(<industrialforegoing:hydrator>, [[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>],[<industrialforegoing:crop_enrich_material_injector>,<contenttweaker:draconic_machine_frame>,<industrialforegoing:crop_enrich_material_injector>],[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>]]);
+recipes.addShaped(<industrialforegoing:hydrator>, [[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>],[<botania:manaresource:4>,<teslacorelib:machine_case>,<botania:manaresource:4>],[<industrialforegoing:plastic>,<industrialforegoing:crop_enrich_material_injector>,<industrialforegoing:plastic>]]);
 
 # Wither Builder
 addIFMachineRecipe(<industrialforegoing:wither_builder>, <minecraft:skull:1>, <minecraft:soul_sand>, <industrialforegoing:block_placer>);
 
 # Fluid Pump
-addIFMachineRecipe(<industrialforegoing:fluid_pump>, <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <thermalfoundation:material:26>, <mekanism:machineblock:12>);
+addIFMachineRecipe(<industrialforegoing:fluid_pump>, <enderio:block_tank:1>, <thermalfoundation:material:26>, <mekanism:machineblock:12>);
 
 # Fluid Crafter
 addIFMachineRecipe(<industrialforegoing:fluid_crafter>, <thermalfoundation:material:25>, <minecraft:bucket>, <mekanism:machineblock3:5>);
@@ -164,7 +164,7 @@ addIFMachineRecipe(<industrialforegoing:fluid_crafter>, <thermalfoundation:mater
 addIFMachineRecipe(<industrialforegoing:item_splitter>, <thermalfoundation:material:24>, <minecraft:hopper>, <thermalfoundation:material:24>);
 
 # Fluid Dictionary Converter
-addIFMachineRecipe(<industrialforegoing:fluiddictionary_converter>, <thermalfoundation:material:26>, <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), <thermalfoundation:material:26>);
+addIFMachineRecipe(<industrialforegoing:fluiddictionary_converter>, <thermalfoundation:material:26>, <enderio:block_tank:1>, <thermalfoundation:material:26>);
 
 # Froster
 addIFMachineRecipe(<industrialforegoing:froster>, <thermalfoundation:material:25>, <thermalfoundation:material:25>, <thermalexpansion:machine:14>);
@@ -172,6 +172,10 @@ addIFMachineRecipe(<industrialforegoing:froster>, <thermalfoundation:material:25
 # Pitful Fuel Generator
 recipes.remove(<industrialforegoing:pitiful_fuel_generator>);
 recipes.addShaped(<industrialforegoing:pitiful_fuel_generator>, [[<ore:cobblestone>,<minecraft:furnace>,<ore:cobblestone>],[<minecraft:furnace>,<teslacorelib:machine_case>,<minecraft:furnace>],[<ore:cobblestone>,<minecraft:furnace>,<ore:cobblestone>]]);
+
+# Mob Duplicator
+recipes.remove(<industrialforegoing:mob_duplicator>);
+recipes.addShaped(<industrialforegoing:mob_duplicator>, [[<industrialforegoing:plastic>,<industrialforegoing:fortune_addon>,<industrialforegoing:plastic>],[<actuallyadditions:block_crystal_empowered:4>,<teslacorelib:machine_case>,<actuallyadditions:block_crystal_empowered:4>],[<industrialforegoing:plastic>,<enderio:block_powered_spawner>,<industrialforegoing:plastic>]]);
 
 function addIFRangeAddonRecipe(output as IItemStack, sides as IIngredient, center as IIngredient) {
 	recipes.remove(output);

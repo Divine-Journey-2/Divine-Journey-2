@@ -72,7 +72,7 @@ function addDustSmelting(dust as IItemStack, ingot as IItemStack) {
 	mods.immersiveengineering.ArcFurnace.addRecipe(ingot, dust, null, 100, 512);
 	mods.thermalexpansion.RedstoneFurnace.addRecipe(ingot, dust, 2000);
 	mods.thermalexpansion.InductionSmelter.addRecipe(ingot, <minecraft:sand:*>, dust, 1000, <thermalfoundation:material:864>, 25);
-	mods.enderio.AlloySmelter.addRecipe(ingot, [dust], 2000);
+	#mods.enderio.AlloySmelter.addRecipe(ingot, [dust], 2000);
 }
 
 # Ore -> 1x Ingot (Smelting)

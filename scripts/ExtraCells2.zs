@@ -112,37 +112,37 @@ recipes.remove(<extracells:storage.casing:2>);
 addExtraCellsGasDisableString(<extracells:storage.casing:2>);
 
 # ME 1k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas>);
+recipes.remove(<extracells:storage.gas>);
 #recipes.addShaped(<extracells:storage.gas>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:11>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas>);
 
 # ME 4k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:1>);
+recipes.remove(<extracells:storage.gas:1>);
 #recipes.addShaped(<extracells:storage.gas:1>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:12>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:1>);
 
 # ME 16k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:2>);
+recipes.remove(<extracells:storage.gas:2>);
 #recipes.addShaped(<extracells:storage.gas:2>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:13>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:2>);
 
 # ME 64k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:3>);
+recipes.remove(<extracells:storage.gas:3>);
 #recipes.addShaped(<extracells:storage.gas:3>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:14>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:3>);
 
 # ME 256k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:4>);
+recipes.remove(<extracells:storage.gas:4>);
 #recipes.addShaped(<extracells:storage.gas:4>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:15>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:4>);
 
 # ME 1024k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:5>);
+recipes.remove(<extracells:storage.gas:5>);
 #recipes.addShaped(<extracells:storage.gas:5>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:16>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:5>);
 
 # ME 4096k Gas Storage Cell
-recipes.removeShaped(<extracells:storage.gas:6>);
+recipes.remove(<extracells:storage.gas:6>);
 #recipes.addShaped(<extracells:storage.gas:6>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:17>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
 addExtraCellsGasDisableString(<extracells:storage.gas:6>);
 

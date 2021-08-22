@@ -393,6 +393,10 @@ for i in 0 to 4 {
 recipes.remove(<appliedenergistics2:entropy_manipulator>);
 recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}), [[null,<appliedenergistics2:energy_cell>,<appliedenergistics2:fluix_block>],[null,<enderio:item_alloy_ingot:6>,<contenttweaker:operation_processor>],[<enderio:item_alloy_ingot:6>,null,null]]);
 
+# Matter Condenser
+recipes.remove(<appliedenergistics2:condenser>);
+recipes.addShaped(<appliedenergistics2:condenser>, [[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:fluix_block>,<appliedenergistics2:dense_energy_cell>,<appliedenergistics2:fluix_block>],[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>]]);
+
 # Creative Energy Cell
 mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_energy_cell>,
 [[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 

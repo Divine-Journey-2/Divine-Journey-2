@@ -17,12 +17,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:liquid_witchcraft"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:droplet_of_wisdom"
+            "item": "contenttweaker:witches_delicacy"
         },
         {
             "type": "item",

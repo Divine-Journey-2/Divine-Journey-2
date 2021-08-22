@@ -11,19 +11,13 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bewitchment:pure_filament",
-            "amount": 2
+            "item": "contenttweaker:stirring_strength"
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "bewitchment:cold_iron_plate",
             "amount": 5
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "bewitchment:swirl_of_depths"
         },
         {
             "type": "item",

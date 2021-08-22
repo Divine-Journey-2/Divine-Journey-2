@@ -461,11 +461,11 @@ recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<o
 
 # Chicken Wing Ring
 recipes.remove(<extrautils2:chickenring>);
-recipes.addShaped(<extrautils2:chickenring>, [[<contenttweaker:condensed_vis_crystal_volatus>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}, No_Place: 1 as byte}),<contenttweaker:condensed_vis_crystal_volatus>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}),<thaumcraft:baubles:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]})],[null,<thaumcraft:mirrored_glass>,null]]);
+recipes.addShaped(<extrautils2:chickenring>, [[<contenttweaker:condensed_vis_crystal_volatus>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}}),<contenttweaker:condensed_vis_crystal_volatus>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}),<thaumcraft:baubles:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]})],[null,<thaumcraft:mirrored_glass>,null]]);
 
 # Ring of the Flying Squid
 recipes.remove(<extrautils2:chickenring:1>);
-recipes.addShaped(<extrautils2:chickenring:1>, [[<mysticalworld:raw_squid>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}, No_Place: 1 as byte}),<mysticalworld:raw_squid>],[<contenttweaker:condensed_vis_crystal_motus>,<extrautils2:chickenring>,<contenttweaker:condensed_vis_crystal_motus>],[<mysticalworld:raw_squid>,<contenttweaker:mystical_tablet>,<mysticalworld:raw_squid>]]);
+recipes.addShaped(<extrautils2:chickenring:1>, [[<mysticalworld:raw_squid>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}}),<mysticalworld:raw_squid>],[<contenttweaker:condensed_vis_crystal_motus>,<extrautils2:chickenring>,<contenttweaker:condensed_vis_crystal_motus>],[<mysticalworld:raw_squid>,<contenttweaker:mystical_tablet>,<mysticalworld:raw_squid>]]);
 
 # Angel Rings
 function addExtraUtilsAngelRingRecipe(dam as int, input_item as IIngredient) {

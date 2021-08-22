@@ -145,7 +145,7 @@ recipes.addShaped(<rftools:shape_card:7>, [[<enderio:block_fused_quartz>,<enderi
 
 # Shape Card (Pump)
 recipes.remove(<rftools:shape_card:8>);
-recipes.addShaped(<rftools:shape_card:8>, [[<enderio:item_alloy_ingot>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<enderio:item_alloy_ingot>],[<mekanism:machineblock:12>,<rftools:shape_card>,<mekanism:machineblock:12>],[<enderio:item_alloy_ingot>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<rftools:shape_card:8>, [[<enderio:item_alloy_ingot>,<enderio:block_tank:1>,<enderio:item_alloy_ingot>],[<mekanism:machineblock:12>,<rftools:shape_card>,<mekanism:machineblock:12>],[<enderio:item_alloy_ingot>,<enderio:block_tank:1>,<enderio:item_alloy_ingot>]]);
 
 # Shape Card (Clearing Pump)
 recipes.remove(<rftools:shape_card:9>);
@@ -153,7 +153,7 @@ recipes.addShaped(<rftools:shape_card:9>, [[<ore:fusedQuartz>,<ore:fusedQuartz>,
 
 # Shape Card (Placing Liquids)
 recipes.remove(<rftools:shape_card:10>);
-recipes.addShaped(<rftools:shape_card:10>, [[<enderio:item_alloy_ingot>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<enderio:item_alloy_ingot>],[<enderio:block_niard>,<rftools:shape_card>,<enderio:block_niard>],[<enderio:item_alloy_ingot>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<rftools:shape_card:10>, [[<enderio:item_alloy_ingot>,<enderio:block_tank:1>,<enderio:item_alloy_ingot>],[<enderio:block_niard>,<rftools:shape_card>,<enderio:block_niard>],[<enderio:item_alloy_ingot>,<enderio:block_tank:1>,<enderio:item_alloy_ingot>]]);
 
 # Simple Powercell
 recipes.remove(<rftools:powercell_simple>);
@@ -187,7 +187,7 @@ recipes.addShaped(<rftools:rf_monitor>, [[<thermalfoundation:material:352>,<ther
 
 # Liquid Monitor
 recipes.remove(<rftools:liquid_monitor>);
-recipes.addShaped(<rftools:liquid_monitor>, [[<thermalfoundation:material:352>,<thermalfoundation:material:264>,<thermalfoundation:material:352>],[<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}),<rftools:machine_frame>,<enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}})],[<thermalfoundation:material:352>,<thermalfoundation:material:264>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<rftools:liquid_monitor>, [[<thermalfoundation:material:352>,<thermalfoundation:material:264>,<thermalfoundation:material:352>],[<enderio:block_tank:1>,<rftools:machine_frame>,<enderio:block_tank:1>],[<thermalfoundation:material:352>,<thermalfoundation:material:264>,<thermalfoundation:material:352>]]);
 
 # Environmental Controller
 recipes.remove(<rftools:environmental_controller>);
