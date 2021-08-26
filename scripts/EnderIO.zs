@@ -263,9 +263,9 @@ recipes.remove(<enderio:block_tank:1>);
 recipes.addShaped("enderio_pressurized_fluid_tank", <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
 function(out, ins, cInfo) {
 	if(ins.tank.tag has "enderio:data") {
-		if(ins.tank.tag["enderio:data"] has "tank") {
-			if(ins.tag.tag["enderio:data"].tank has "FluidName" && ins.tag.tag["enderio:data"].tank has "Amount") {
-				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag["enderio:data"].tank.FluidName, Capacity: 32000, Amount: ins.tank.tag["enderio:data"].tank.Amount}}});
+		if(ins.tank.tag.memberGet("enderio:data") has "tank") {
+			if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
+				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
 			}
 			else {
 				return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
@@ -279,12 +279,21 @@ function(out, ins, cInfo) {
 }, null);
 
 recipes.remove(<enderio:block_tank:1>);
-recipes.addShaped("enderio_pressurized_fluid_tank2", <enderio:block_tank:1>, [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}).marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
+recipes.addHiddenShaped("enderio_pressurized_fluid_tank2", <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}).marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
 function(out, ins, cInfo) {
 	if(ins.tank.tag has "enderio:data") {
-		return out.withTag(ins.tank.tag);
+		if(ins.tank.tag.memberGet("enderio:data") has "tank") {
+			if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
+				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
+			}
+			else {
+				return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+			}
+		} else {
+			return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+		}
 	} else {
-		return out;
+		return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
 	}
 }, null);
 
