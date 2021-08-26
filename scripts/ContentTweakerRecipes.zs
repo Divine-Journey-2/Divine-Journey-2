@@ -294,6 +294,8 @@ recipes.addShapeless(<contenttweaker:open_ingot> * 9, [<contenttweaker:open_bloc
 
 # Thermal Conductor Rod
 recipes.addShapedMirrored(<contenttweaker:thermal_conductor_rod>, [[null,<extrautils2:suncrystal>,<extrautils2:decorativesolidwood:1>],[<extrautils2:suncrystal>,<extrautils2:ingredients:5>,<extrautils2:suncrystal>],[<extrautils2:decorativesolidwood:1>,<extrautils2:suncrystal>,null]]);
+<contenttweaker:thermal_conductor_rod>.addTooltip(format.white("Has 800 uses."));
+<contenttweaker:thermal_conductor_rod>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # RF Powder
 recipes.addShapeless(<contenttweaker:rf_powder> * 2, [<contenttweaker:thermal_conductor_rod>.anyDamage().transformDamage(1),<contenttweaker:gp_powder>,<thermalfoundation:material:99>,<minecraft:experience_bottle>]);
@@ -435,7 +437,7 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:vibrant_slate>, <contenttwe
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:perfect_slate>, <contenttweaker:vibrant_slate>, 5, 1000000, 500, 250);
 
 # Simple Catalyst
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:simple_catalyst>, [<minecraft:glass_bottle>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gunpowder>,<minecraft:sugar>,<thermalfoundation:material:99>], 50, 10, 1);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:simple_catalyst>, [<minecraft:glass_bottle>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gunpowder>,<minecraft:sugar>,<thermalfoundation:material:99>], 25, 5, 1);
 
 # Aether
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:aether>, [<contenttweaker:simple_catalyst>,<minecraft:ghast_tear>,<minecraft:glowstone_dust>,<aether_legacy:aerogel>,<roots:cloud_berry>,<minecraft:feather>], 100, 25, 1);
@@ -450,7 +452,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:incendium>, [<contenttwea
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:terrae>, [<contenttweaker:simple_catalyst>,<extrautils2:compresseddirt>,<extrautils2:compressedsand>,<extrautils2:compressedgravel>,<minecraft:obsidian>,<roots:wildroot>], 100, 25, 1);
 
 # Strengthened Catalyst
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:strengthened_catalyst>, [<contenttweaker:simple_catalyst>,<contenttweaker:simple_catalyst>,<mekanism:clump>,<mekanism:clump:4>,<thermalfoundation:material:2053>,<thermalfoundation:material:2053>], 200, 25, 2);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:strengthened_catalyst>, [<contenttweaker:simple_catalyst>,<contenttweaker:simple_catalyst>,<mekanism:clump>,<mekanism:clump:4>,<thermalfoundation:material:2053>,<thermalfoundation:material:2053>], 100, 10, 2);
 
 # Sanctus
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:sanctus>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:aether>,glod_crystal,<thermalfoundation:glass_alloy:1>,<minecraft:glowstone>,<aether_legacy:holystone>], 400, 50, 2);
@@ -468,7 +470,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:orbis_terrae>, [<contentt
 recipes.addShaped(<contenttweaker:coralium_decorated_blood_star>, [[<abyssalcraft:cingot>,<evilcraft:dark_power_gem>,<abyssalcraft:cingot>],[<evilcraft:dark_power_gem>,<evilcraft:blood_infusion_core>,<evilcraft:dark_power_gem>],[<abyssalcraft:cingot>,<evilcraft:dark_power_gem>,<abyssalcraft:cingot>]]);
 
 # Concentrated Catalyst
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:concentrated_catalyst>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:strengthened_catalyst>,<mekanism:shard>,<mekanism:shard:4>,<contenttweaker:rf_powder>,<contenttweaker:rf_powder>], 800, 80, 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:concentrated_catalyst>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:strengthened_catalyst>,<mekanism:shard>,<mekanism:shard:4>,<contenttweaker:rf_powder>,<contenttweaker:rf_powder>], 400, 25, 3);
 
 # Crepitous
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:crepitous>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:terrae>,<contenttweaker:orbis_terrae>,<contenttweaker:mobgrindium_ingot>,<extrautils2:compressedcobblestone:1>,<enderio:item_material:20>], 1600, 80, 3);
@@ -480,10 +482,10 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:tempestas>, [<contenttwea
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:offensa>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:incendium>,<contenttweaker:magicales>,<enderio:item_dark_steel_sword>,<divinerpg:eden_arrow>,<minecraft:splash_potion>.withTag({Potion: "minecraft:strong_harming"})], 1600, 80, 3);
 
 # Virtus
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:virtus>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:incendium>,<contenttweaker:sanctus>,<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:5>], 1600, 80, 3);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:virtus>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:incendium>,<contenttweaker:sanctus>,<enderio:item_alloy_endergy_ingot:4>,<contenttweaker:fluxed_electrum_ingot>,<actuallyadditions:item_crystal_empowered:5>], 1600, 80, 3);
 
 # Intensive Catalyst
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:intensive_catalyst>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:concentrated_catalyst>,<mekanism:crystal>,<mekanism:crystal:4>,<thermalfoundation:material:1028>,<thermalfoundation:material:1028>], 10000, 100, 4);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:intensive_catalyst>, [<contenttweaker:concentrated_catalyst>,<contenttweaker:concentrated_catalyst>,<mekanism:crystal>,<mekanism:crystal:4>,<thermalfoundation:material:1028>,<thermalfoundation:material:1028>], 3000, 25, 4);
 
 # Reductus
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:reductus>, [<contenttweaker:intensive_catalyst>,<contenttweaker:orbis_terrae>,<contenttweaker:magicales>,<actuallyadditions:item_crystal_empowered:4>,<alchemistry:ingot:3>,<contenttweaker:livingmatter>], 20000, 160, 4);
@@ -597,7 +599,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:cracked_runic_plate>, [<b
 mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:cracked_runic_plate>, <liquid:evilcraftblood> * 200000, 3, <contenttweaker:clean_runic_plate>, 400, 0);
 
 # Arboreal Essence
-Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence>, [<natura:overworld_sapling:1>,<natura:overworld_sapling2:2>,<natura:overworld_sapling2>,<natura:overworld_sapling:3>,<contenttweaker:hardened_blood_droplet>]);
+Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence> * 5, [<natura:overworld_sapling:1>,<natura:overworld_sapling2:2>,<natura:overworld_sapling2>,<natura:overworld_sapling:3>,<contenttweaker:hardened_blood_droplet>]);
 
 # Custom AE2 Press duping and crafting
 val custom_ae2_presses = [<contenttweaker:inscriber_estimation_press>,<contenttweaker:inscriber_operation_press>,<contenttweaker:inscriber_methodology_press>,<contenttweaker:inscriber_clearance_press>,<contenttweaker:inscriber_scheduling_press>] as IItemStack[];

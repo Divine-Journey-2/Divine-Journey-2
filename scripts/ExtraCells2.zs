@@ -148,7 +148,9 @@ addExtraCellsGasDisableString(<extracells:storage.gas:6>);
 
 # ME Gas Level Emitter
 recipes.remove(<extracells:part.base:17>);
-recipes.addShaped(<extracells:part.base:17>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:methodology_processor>]]);
+#recipes.addShaped(<extracells:part.base:17>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:methodology_processor>]]);
+<extracells:part.base:17>.addTooltip(format.red(format.italic("Disabled due to a bug where it completely")));
+<extracells:part.base:17>.addTooltip(format.red(format.italic("behaves as a Fluid Level Emitter.")));
 
 # ME Gas Storage Bus
 recipes.remove(<extracells:part.base:16>);
