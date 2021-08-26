@@ -267,6 +267,11 @@ function(out, ins, cInfo) {
 			if(ins.tag.tag["enderio:data"].tank has "FluidName" && ins.tag.tag["enderio:data"].tank has "Amount") {
 				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag["enderio:data"].tank.FluidName, Capacity: 32000, Amount: ins.tank.tag["enderio:data"].tank.Amount}}});
 			}
+			else {
+				return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+			}
+		} else {
+			return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
 		}
 	} else {
 		return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
