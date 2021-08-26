@@ -18,7 +18,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | ------------- | ------------- | ------------- | ------------- |
 | Minecraft | Nether | -1 | yes |
 | Minecraft | End | 1 | yes |
-| DivineRPG | Iceika | 419 | yes |
+| DivineRPG | Iceika | 425 | yes |
 | DivineRPG | Eden | 420 | yes |
 | DivineRPG | Wildwood | 421 | yes |
 | DivineRPG | Apalachia | 422 | yes |
@@ -40,6 +40,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | LightningCraft | Underworld | -9 | yes |
 | Aether Legacy | Aether | 4 | yes |
 | Atum 2 | Atum | 17 | yes |
+| Erebus | Erebus | 66 | yes |
 | Extra Utilities 2 | Deep Dark | -11325 | yes |
 | Extra Utilities 2 | (Quantum) Quarry Dim | -9999 | yes |
 | Thaumic Augmentation | Emptiness | 14676 | yes |
