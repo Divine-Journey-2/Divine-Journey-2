@@ -1432,6 +1432,10 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
 <contenttweaker:apalachia_door_key2>.addTooltip(format.red("Use it the same way as the previous key to ascend further."));
 
+# Skythern Door Key from Fragments
+recipes.addShaped(<contenttweaker:skythern_door_key2>, [[null,<contenttweaker:skythern_door_key_fragment>,null],[<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>],[null,<contenttweaker:skythern_door_key_fragment>,null]]);
+<contenttweaker:skythern_door_key2>.addTooltip(format.red("Use it on the Apalachia Boss Door!"));
+
 # Moon Door Key from Fragments
 recipes.addShaped(<contenttweaker:moon_door_key>, [[<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>]]);
 

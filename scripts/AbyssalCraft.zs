@@ -203,6 +203,8 @@ recipes.addShaped("abyssalcraft_necronomicon_upgrade1", <abyssalcraft:necronomic
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
+#recipes.addShaped(<abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>,<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]]);
+
 
 # Eye of the Abyss
 <abyssalcraft:eoa>.addTooltip(format.white("To obtain, summon and defeat Asorah,"));
@@ -214,7 +216,7 @@ function(out, ins, cInfo) {
 
 # Asorah, the Fallen
 mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:dragonboss");
-mods.abyssalcraft.SummonRitual.addRitual("summonAsorah", 1, 50, 10000 as float, true, "abyssalcraft:dragonboss", [<enderutilities:enderpart:17>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>,<abyssalcraft:transmutationgem>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>] as IIngredient[], true);
+mods.abyssalcraft.SummonRitual.addRitual("summonAsorah", 1, 50, 10000 as float, true, "abyssalcraft:dragonboss", [<enderutilities:enderpart:17>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>,<abyssalcraft:transmutationgem:*>,<abyssalcraft:corflesh>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:corflesh>] as IIngredient[], true);
 game.setLocalization("ac.ritual.summonAsorah", "Ritual of The Sleeper");
 game.setLocalization("ac.ritual.summonAsorah.desc", "Summons Asorah, The Fallen, from the Dark Realm. The afterlife is commonly referred to as an eternal slumber, in which a sleeper is an entity beyond life and death. Requires a pristine Transmutation Gem.");
 
@@ -283,6 +285,8 @@ recipes.addShaped("abyssalcraft_necronomicon_upgrade2", <abyssalcraft:necronomic
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
+#recipes.addShaped(<abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>,<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]]);
+
 
 # Dreadium Sword
 recipes.remove(<abyssalcraft:dreadiumsword>);
@@ -575,11 +579,14 @@ add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredsacrific
 add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer:2>, <abyssalcraft:tieredenergycontainer:1>, "econDLupgrade");
 
 # Omothol Necronomicon
+/*
 recipes.remove(<abyssalcraft:necronomicon_omt>);
 recipes.addShaped("abyssalcraft_necronomicon_upgrade3", <abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>.marked("necronomicon"),<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]],
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
+*/
+recipes.addShaped(<abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>,<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]]);
 
 function add_abyssalcraft_omothol_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
 	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);

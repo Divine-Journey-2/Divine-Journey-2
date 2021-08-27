@@ -417,6 +417,15 @@ apalachia_door_key.itemRightClick = function(stack, world, player, hand) {
     Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door", player, world, false, true);
     return "Pass";
 };
+var apalachia_key_fragment = VanillaFactory.createItem("apalachia_key_fragment");
+apalachia_key_fragment.register();
+var apalachia_door_key2 = VanillaFactory.createItem("apalachia_door_key2");
+apalachia_door_key2.maxStackSize = 1;
+apalachia_door_key2.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door2", player, world, false, true);
+    return "Pass";
+};
+apalachia_door_key2.register();
 apalachia_door_key.register();
 var skythern_door_key = VanillaFactory.createItem("skythern_door_key");
 skythern_door_key.maxStackSize = 1;
@@ -425,6 +434,15 @@ skythern_door_key.itemRightClick = function(stack, world, player, hand) {
     return "Pass";
 };
 skythern_door_key.register();
+var skythern_door_key2 = VanillaFactory.createItem("skythern_door_key2");
+skythern_door_key2.maxStackSize = 1;
+skythern_door_key2.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:skythern_door2", player, world, false, true);
+    return "Pass";
+};
+skythern_door_key2.register();
+var skythern_door_key_fragment = VanillaFactory.createItem("skythern_door_key_fragment");
+skythern_door_key_fragment.register();
 var mortum_door_key = VanillaFactory.createItem("mortum_door_key");
 mortum_door_key.maxStackSize = 1;
 mortum_door_key.itemRightClick = function(stack, world, player, hand) {
@@ -432,6 +450,34 @@ mortum_door_key.itemRightClick = function(stack, world, player, hand) {
     return "Pass";
 };
 mortum_door_key.register();
+var asteroids_door_key = VanillaFactory.createItem("asteroids_door_key");
+asteroids_door_key.maxStackSize = 1;
+asteroids_door_key.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:asteroids_door", player, world, false, true);
+    return "Pass";
+};
+asteroids_door_key.register();
+var asteroids_key_fragment = VanillaFactory.createItem("asteroids_key_fragment");
+asteroids_key_fragment.register();
+var moon_door_key = VanillaFactory.createItem("moon_door_key");
+moon_door_key.maxStackSize = 1;
+moon_door_key.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:moon_door", player, world, false, true);
+    return "Pass";
+};
+moon_door_key.register();
+var moon_key_fragment = VanillaFactory.createItem("moon_key_fragment");
+moon_key_fragment.register();
+var unwarpification_talisman = VanillaFactory.createItem("unwarpification_talisman");
+unwarpification_talisman.maxStackSize = 1;
+unwarpification_talisman.rarity = "EPIC";
+unwarpification_talisman.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("tc warp @p set 0 PERM", player, world, false, true);
+    Commands.call("tc warp @p set 0", player, world, false, true);
+    Commands.call("tc warp @p set 0 TEMP", player, world, false, true);
+    Commands.call('/tellraw @p {"text":"Your warp has been set to 0!","bold":true}', player, world, false, true);
+    return "Pass";
+};
 var feather_of_the_wild_woods = VanillaFactory.createItem("feather_of_the_wild_woods");
 feather_of_the_wild_woods.rarity = "RARE";
 feather_of_the_wild_woods.register();
@@ -1137,15 +1183,6 @@ var rune_of_autumn = VanillaFactory.createItem("rune_of_autumn");
 rune_of_autumn.register();
 var rune_of_winter = VanillaFactory.createItem("rune_of_winter");
 rune_of_winter.register();
-var apalachia_key_fragment = VanillaFactory.createItem("apalachia_key_fragment");
-apalachia_key_fragment.register();
-var apalachia_door_key2 = VanillaFactory.createItem("apalachia_door_key2");
-apalachia_door_key2.maxStackSize = 1;
-apalachia_door_key2.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:apalachia_door2", player, world, false, true);
-    return "Pass";
-};
-apalachia_door_key2.register();
 var solar_seeds = VanillaFactory.createItem("solar_seeds");
 solar_seeds.register();
 var solar_essence = VanillaFactory.createItem("solar_essence");
@@ -1428,34 +1465,6 @@ si.itemRightClick = function(stack, world, player, hand) {
 };
 si.rarity = "EPIC";
 si.register();
-var asteroids_door_key = VanillaFactory.createItem("asteroids_door_key");
-asteroids_door_key.maxStackSize = 1;
-asteroids_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:asteroids_door", player, world, false, true);
-    return "Pass";
-};
-asteroids_door_key.register();
-var asteroids_key_fragment = VanillaFactory.createItem("asteroids_key_fragment");
-asteroids_key_fragment.register();
-var moon_door_key = VanillaFactory.createItem("moon_door_key");
-moon_door_key.maxStackSize = 1;
-moon_door_key.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:moon_door", player, world, false, true);
-    return "Pass";
-};
-moon_door_key.register();
-var moon_key_fragment = VanillaFactory.createItem("moon_key_fragment");
-moon_key_fragment.register();
-var unwarpification_talisman = VanillaFactory.createItem("unwarpification_talisman");
-unwarpification_talisman.maxStackSize = 1;
-unwarpification_talisman.rarity = "EPIC";
-unwarpification_talisman.itemRightClick = function(stack, world, player, hand) {
-    Commands.call("tc warp @p set 0 PERM", player, world, false, true);
-    Commands.call("tc warp @p set 0", player, world, false, true);
-    Commands.call("tc warp @p set 0 TEMP", player, world, false, true);
-    Commands.call('/tellraw @p {"text":"Your warp has been set to 0!","bold":true}', player, world, false, true);
-    return "Pass";
-};
 unwarpification_talisman.register();
 var goddess_pearl = VanillaFactory.createItem("goddess_pearl");
 goddess_pearl.rarity = "EPIC";

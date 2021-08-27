@@ -369,6 +369,15 @@ apalachia_door2.setToolLevel(16777215);
 apalachia_door2.setBlockSoundType(<soundtype:metal>);
 apalachia_door2.register();
 
+var skythern_door2 = VanillaFactory.createBlock("skythern_door2", <blockmaterial:iron>);
+skythern_door2.setBlockHardness(-1);
+skythern_door2.setBlockResistance(16777215);
+skythern_door2.setToolClass(null);
+skythern_door2.setWitherProof(true);
+skythern_door2.setToolLevel(16777215);
+skythern_door2.setBlockSoundType(<soundtype:metal>);
+skythern_door2.register();
+
 var livingmatter = VanillaFactory.createBlock("livingmatter", <blockmaterial:ground>);
 livingmatter.setBlockHardness(1.0);
 livingmatter.setBlockResistance(1.0);
