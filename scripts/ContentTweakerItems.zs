@@ -459,6 +459,20 @@ asteroids_door_key.itemRightClick = function(stack, world, player, hand) {
 asteroids_door_key.register();
 var asteroids_key_fragment = VanillaFactory.createItem("asteroids_key_fragment");
 asteroids_key_fragment.register();
+var venus_door_key = VanillaFactory.createItem("venus_door_key");
+venus_door_key.maxStackSize = 1;
+venus_door_key.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:venus_door", player, world, false, true);
+    return "Pass";
+};
+venus_door_key.register();
+var venus_door_key2 = VanillaFactory.createItem("venus_door_key2");
+venus_door_key2.maxStackSize = 1;
+venus_door_key2.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("execute @p ~ ~ ~ /fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:air 0 replace contenttweaker:venus_door2", player, world, false, true);
+    return "Pass";
+};
+venus_door_key2.register();
 var moon_door_key = VanillaFactory.createItem("moon_door_key");
 moon_door_key.maxStackSize = 1;
 moon_door_key.itemRightClick = function(stack, world, player, hand) {

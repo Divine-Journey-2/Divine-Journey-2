@@ -412,11 +412,11 @@ recipes.addShapedMirrored(<contenttweaker:redstone_star>, [[<minecraft:redstone>
 # Unholy Token
 recipes.addShaped(<contenttweaker:unholy_token>, [[<contenttweaker:ayeraco_wing>,<contenttweaker:eye_of_the_watcher>,<contenttweaker:ayeraco_wing>],[<contenttweaker:ayeraco_wing>,<contenttweaker:ancient_leg>,<contenttweaker:ayeraco_wing>],[null,<contenttweaker:ancient_leg>,null]]);
 
-# Eden, Wildwood, Apalachia, Skythern, Mortum & Asteroids Door Key Tooltips
-val divinerpg_galacticraft_keys = [<contenttweaker:eden_door_key>,<contenttweaker:wildwood_door_key>,<contenttweaker:apalachia_door_key>,<contenttweaker:skythern_door_key>,<contenttweaker:mortum_door_key>,<contenttweaker:moon_door_key>,<contenttweaker:asteroids_door_key>] as IItemStack[];
-for i in 0 to 6 {
+# Eden, Wildwood, Apalachia, Skythern, Mortum, Moon & Asteroids Door Key Tooltips
+val divinerpg_galacticraft_keys = [<contenttweaker:eden_door_key>,<contenttweaker:wildwood_door_key>,<contenttweaker:apalachia_door_key>,<contenttweaker:skythern_door_key>,<contenttweaker:mortum_door_key>,<contenttweaker:moon_door_key>,<contenttweaker:venus_door_key>,<contenttweaker:asteroids_door_key>] as IItemStack[];
+for i in 0 to 8 {
 	divinerpg_galacticraft_keys[i].addTooltip(format.red("Right Click to clear any " + divinerpg_galacticraft_dimension_names_upper[i] + " Door Blocks in a 5 block radius."));
-	divinerpg_galacticraft_keys[i].addTooltip(format.red("If none are found, it shows an error message in chat."));
+	#divinerpg_galacticraft_keys[i].addTooltip(format.red("If none are found, it shows an error message in chat."));
 }
 
 # Dread Crystal
@@ -1282,7 +1282,7 @@ recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:chees
 recipes.addShaped(<contenttweaker:titanium_box>, [[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>],[<galacticraftplanets:item_basic_asteroids:6>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:6>],[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>]]);
 
 # Portion of the Sun
-recipes.addShaped(<contenttweaker:portion_of_the_sun> * 4, [[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>],[<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>],[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>]]);
+recipes.addShaped(<contenttweaker:portion_of_the_sun> * 5, [[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>],[<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>],[<contenttweaker:solar_ingot>,<contenttweaker:fragment_of_the_sun>,<contenttweaker:solar_ingot>]]);
 
 # Hyperglued Meteoric Casing
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:hyperglued_meteoric_casing>,
@@ -1434,7 +1434,10 @@ recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalach
 
 # Skythern Door Key from Fragments
 recipes.addShaped(<contenttweaker:skythern_door_key2>, [[null,<contenttweaker:skythern_door_key_fragment>,null],[<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>],[null,<contenttweaker:skythern_door_key_fragment>,null]]);
-<contenttweaker:skythern_door_key2>.addTooltip(format.red("Use it on the Apalachia Boss Door!"));
+<contenttweaker:skythern_door_key2>.addTooltip(format.red("Use it on the Skythern Boss Door!"));
+
+# Venus Boss Door Key tooltip
+<contenttweaker:venus_door_key2>.addTooltip(format.red("Right Click to clear any Venus Boss Door Blocks in a 5 block radius."));
 
 # Moon Door Key from Fragments
 recipes.addShaped(<contenttweaker:moon_door_key>, [[<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>]]);
