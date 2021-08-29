@@ -178,6 +178,7 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:spinning_wheel", "", <bewit
 # Athame
 recipes.remove(<bewitchment:athame>);
 recipes.addShapedMirrored(<bewitchment:athame>, [[null,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<bewitchment:pure_filament>,<contenttweaker:gypsum>,<thermalfoundation:material:130>],[<bloodmagic:dagger_of_sacrifice>,<bewitchment:pure_filament>,null]]);
+recipes.addShapedMirrored(<bewitchment:athame>, [[null,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<lightningcraft:nugget:1>,<contenttweaker:gypsum>,<thermalfoundation:material:130>],[<bloodmagic:dagger_of_sacrifice>,<lightningcraft:nugget:1>,null]]);
 
 # Dimensional Sand: Only form the Athame
 WitchesOven.removeRecipe(<minecraft:blaze_powder>);
@@ -337,6 +338,8 @@ WitchesCauldron.addRecipe([<bewitchment:stew_of_the_grotesque>], [<bewitchment:d
 # Demon Heart
 <bewitchment:demon_heart>.addTooltip(format.white("Dropped by Lesser and Higher Demons. Check"));
 <bewitchment:demon_heart>.addTooltip(format.white("your Codex Infernalis on how to summon them."));
+mods.immersiveengineering.ArcFurnace.addRecipe(<bewitchment:demon_heart> * 20, <bewitchment:demon_heart> * 10, null, 200, 1000, [<bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10]);
+EIOAlloySmelter.addRecipe(<bewitchment:demon_heart> * 20, [<bewitchment:demon_heart> * 10, <bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10], 80000);
 
 # Broom
 recipes.remove(<bewitchment:broom>);

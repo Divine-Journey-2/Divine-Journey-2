@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Some say it's a fruit, some say it's a vegetable."
+    "default": "Some say it\u0027s a fruit, some say it\u0027s a vegetable."
   },
   "growth_chance": 0.75,
   "growth_bonus": 0.025,

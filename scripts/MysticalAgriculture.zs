@@ -735,6 +735,7 @@ mods.alchemistry.Combiner.addRecipe(<mysticalagriculture:mystical_fertilizer> * 
 # Base Eseence Ingot
 recipes.remove(<mysticalagriculture:crafting:32>);
 recipes.addShaped(<mysticalagriculture:crafting:32>, [[null,<mysticalagriculture:crafting:5>,null],[<mysticalagriculture:crafting:5>,<botania:manaresource>,<mysticalagriculture:crafting:5>],[null,<mysticalagriculture:crafting:5>,null]]);
+recipes.addShapeless(<mysticalagriculture:crafting:32> * 9, [<mysticalagriculture:ingot_storage>]);
 
 # Mystical Machine Frame
 recipes.remove(<mysticalagriculture:mystical_machine_frame>);

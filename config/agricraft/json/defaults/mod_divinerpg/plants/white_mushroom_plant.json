@@ -18,7 +18,7 @@
   ],
   "description": {
     "translations": {},
-    "default": "Fungi come in many colors. This one's white."
+    "default": "Fungi come in many colors. This one\u0027s white."
   },
   "growth_chance": 0.75,
   "growth_bonus": 0.025,
