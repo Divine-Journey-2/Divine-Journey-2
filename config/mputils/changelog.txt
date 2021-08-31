@@ -21,3 +21,7 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 - Amethyst tools now have less durability (1561 -> 600) to be more in line with Diamond tools.
 - Hid some unused Planet Progression items from JEI.
 - Added some water to the drop in the Eden dungeon maze section.
+
+Version 2.1.1
+
+- TickCentral causes a bug with EnderIO Conduits. The newest EnderIO version fixes it, but it's imcompatible with the newest EvilCraftCompat version. In short, removed LagGoggles and TickCentral for now.
