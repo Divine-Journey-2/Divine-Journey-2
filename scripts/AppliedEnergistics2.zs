@@ -401,9 +401,9 @@ recipes.addShaped(<appliedenergistics2:condenser>, [[<enderio:item_alloy_endergy
 mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_energy_cell>,
 [[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
-[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <solarflux:solar_panel_chaotic>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
 [<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <draconicevolution:draconium_capacitor:2>, <projecte:item.pe_klein_star:5>, <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <enderio:block_buffer:3>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <enderio:block_cap_bank>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>]]);
 

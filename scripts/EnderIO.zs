@@ -764,9 +764,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({
 
 # Creative Buffer
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_buffer:3>,
-[[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <solarflux:solar_panel_chaotic>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>], 
+[[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>], 
 [<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
-[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_cap_bank>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <mekanism:basicblock:6>.withTag({tier: 4}), <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
 [<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
 [<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>]]);
 

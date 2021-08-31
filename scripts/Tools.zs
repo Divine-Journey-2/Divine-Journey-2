@@ -104,6 +104,14 @@ recipes.remove(<bewitchment:silver_hoe>);
 <divinerpg:realmite_shovel>.maxDamage = 600;
 <divinerpg:realmite_sword>.maxDamage = 600;
 
+# Mystical World Amethyst Tools
+<mysticalworld:amethyst_pickaxe>.maxDamage = 600;
+<mysticalworld:amethyst_axe>.maxDamage = 600;
+<mysticalworld:amethyst_shovel>.maxDamage = 600;
+<mysticalworld:amethyst_sword>.maxDamage = 600;
+<mysticalworld:amethyst_hoe>.maxDamage = 600;
+<mysticalworld:amethyst_knife>.maxDamage = 600;
+
 # Thermal Copper Tools
 <thermalfoundation:tool.pickaxe_copper>.maxDamage = 180;
 <thermalfoundation:tool.axe_copper>.maxDamage = 180;
