@@ -1,1 +1,1 @@
-give @p simple_trophies:trophy 1 0 {TrophyName:"Roots Thropy",TrophyVariant:"neon",TrophyItem:{id:"roots:bonfire",Count:1b,Damage:0s},TrophyColorRed:134,TrophyColorGreen:95,TrophyColorBlue:32}
+give @p simple_trophies:trophy 1 0 {TrophyName:"Roots Trophy",TrophyVariant:"neon",TrophyItem:{id:"roots:bonfire",Count:1b,Damage:0s},TrophyColorRed:134,TrophyColorGreen:95,TrophyColorBlue:32}
