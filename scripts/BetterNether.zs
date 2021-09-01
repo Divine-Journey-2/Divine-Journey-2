@@ -27,4 +27,7 @@ recipes.addShaped(<betternether:cincinnasite_frame> * 4, [[<betternether:cincinn
 # Cincinnasite into Gold Nuggets
 recipes.addShapeless(<minecraft:gold_nugget>, [<betternether:cincinnasite>]);
 
+# Remove unneeded stick recipe
+recipes.removeShaped(<minecraft:stick> * 4, [[<betternether:stalagnate_planks>],[<betternether:stalagnate_planks>]]);
+
 print("ENDING BetterNether.zs");
