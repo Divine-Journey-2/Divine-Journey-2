@@ -276,4 +276,7 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<min
 # Seeds from Wheat
 recipes.addShapeless(<minecraft:wheat_seeds>, [<minecraft:wheat>]);
 
+# Sticks from Logs
+recipes.addShaped(<minecraft:stick> * 16, [[<ore:logWood>], [<ore:logWood>]]);
+
 print("ENDING MinecraftRecipes.zs");
