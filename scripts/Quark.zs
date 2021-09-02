@@ -26,4 +26,11 @@ recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysti
 recipes.remove(<quark:sandy_bricks>);
 recipes.addShapeless(<quark:sandy_bricks>, [<minecraft:brick_block>,<ore:sand>]);
 
+# Quark iron grate recipe conflits with galacticraft grate recipe.
+# Also going to have the galacticraft exchanging recipe here.    
+recipes.removeByRecipeName("quark:grate");
+recipes.addShapeless(<quark:grate>, [<galacticraftcore:grating>]);
+recipes.addShapeless(<galacticraftcore:grating>, [<quark:grate>]);
+
+
 print("ENDING Quark.zs");
