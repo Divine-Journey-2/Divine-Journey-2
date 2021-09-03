@@ -285,4 +285,10 @@ recipes.remove(<divinerpg:reyvor_crystal>);
 recipes.remove(<divinerpg:karot_crystal>);
 recipes.remove(<divinerpg:densos_crystal>);
 
+# Inferno sword
+recipes.remove(<divinerpg:inferno_sword>);
+recipes.addShaped(<divinerpg:inferno_sword>, [[<minecraft:blaze_powder>, <ore:oreRedstone>, <minecraft:blaze_powder>],
+											  [<minecraft:blaze_powder>, <ore:oreRedstone>, <minecraft:blaze_powder>],
+											  [<minecraft:blaze_powder>, <ore:stickWood>, <minecraft:blaze_powder>]]);
+
 print("ENDING DivineRPG.zs");
