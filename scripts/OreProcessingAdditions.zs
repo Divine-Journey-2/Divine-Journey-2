@@ -226,11 +226,7 @@ Grinder.removeRecipe(<thermalfoundation:material:895>);
 
 # Wheat to Flour
 addMaterialToDustCrushing(<minecraft:wheat>, <natura:materials:2>);
-Mortar.addRecipe(<natura:materials:2>, [<minecraft:wheat>, null, null, null, null]);
-Mortar.addRecipe(<natura:materials:2> * 2, [<minecraft:wheat>, <minecraft:wheat>, null, null, null]);
-Mortar.addRecipe(<natura:materials:2> * 3, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, null, null]);
-Mortar.addRecipe(<natura:materials:2> * 4, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, null]);
-Mortar.addRecipe(<natura:materials:2> * 5, [<minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]);
+Mortar.addRecipe("flour", <natura:materials:2>, [<minecraft:wheat>]);
 
 # QuantumFlux Industrial Grade Graphite Ore to Graphite Dust
 addOreToIngotSmelting(<quantumflux:graphiteore>, <contenttweaker:industrial_grade_graphite_dust>);

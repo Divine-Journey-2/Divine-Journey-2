@@ -220,7 +220,7 @@ addProjectERingRecipe(<projecte:item.pe_black_hole>, <draconicevolution:magnet:1
 addProjectERingRecipe(<projecte:item.pe_archangel_smite>, <contenttweaker:angelic_silicon_crystal_mixture>, <mysticalagriculture:supremium_arrow>);
 
 # Harvest Goddess Band
-addProjectERingRecipe(<projecte:item.pe_harvest_god>, <botania:goddesscharm>, <roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_harvest", selectedSlot: 0, lastCooldown: 0, cooldown: 0}}));
+addProjectERingRecipe(<projecte:item.pe_harvest_god>, <botania:goddesscharm>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_harvest"}}));
 
 # Ignition Ring
 addProjectERingRecipe(<projecte:item.pe_ignition>, <astralsorcery:itemcoloredlens>, <bloodmagic:lava_crystal>);

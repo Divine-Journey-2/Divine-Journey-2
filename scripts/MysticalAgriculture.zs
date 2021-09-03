@@ -948,7 +948,7 @@ addMysticalAgricultureCharmRecipe(<mysticalagriculture:charm:10>,<enderio:item_d
 addMysticalAgricultureCharmRecipe(<mysticalagriculture:charm:11>,<astralsorcery:blockworldilluminator>);
 
 # Charm: Quick Draw
-addMysticalAgricultureCharmRecipe(<mysticalagriculture:charm:13>,<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_radiance", selectedSlot: 0, lastCooldown: 0, cooldown: 0}}));
+addMysticalAgricultureCharmRecipe(<mysticalagriculture:charm:13>,<roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_radiance"}}));
 
 # Mystical Stick
 recipes.remove(<mysticalagriculture:crafting:22>);
