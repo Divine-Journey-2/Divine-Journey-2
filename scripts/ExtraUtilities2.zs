@@ -93,7 +93,7 @@ recipes.addShaped(<extrautils2:redstoneclock>, [[<projectred-core:resource_item>
 # Red Coal
 mods.extrautils2.Resonator.remove(<extrautils2:ingredients:4>);
 mods.extrautils2.Resonator.add(<extrautils2:ingredients:4>, <minecraft:coal_block>, 1600);
-mods.extrautils2.Resonator.add(<extrautils2:ingredients:4>, <actuallyadditions:block_misc:5>, 1600);
+mods.extrautils2.Resonator.add(<extrautils2:ingredients:4>, <thermalfoundation:storage_resource:0>, 1600);
 
 # Lunar Reactive Dust
 mods.extrautils2.Resonator.remove(<extrautils2:ingredients:3>);
