@@ -206,7 +206,7 @@ recipes.addShapedMirrored(<contenttweaker:power_egg>, [[<erebus:materials:27>,<e
 
 # Crown of Skies
 recipes.addShaped(<contenttweaker:crown_of_skies>, [[null,<ore:woolWhite>,null],[<contenttweaker:hardened_amber_moosh>,<contenttweaker:power_egg>,<contenttweaker:hardened_amber_moosh>],[<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>]]);
-recipes.addShaped(<contenttweaker:crown_of_skies>, [[<contenttweaker:hardened_amber_moosh>,<contenttweaker:crown_of_skies>,<contenttweaker:hardened_amber_moosh>]]);
+recipes.addShaped(<contenttweaker:crown_of_skies>, [[<contenttweaker:hardened_amber_moosh>,<contenttweaker:crown_of_skies>.reuse(),<contenttweaker:hardened_amber_moosh>]]);
 <contenttweaker:crown_of_skies>.addTooltip(format.red(format.bold("Right click on an Aether Portal block to gain access to the dimension!")));
 <contenttweaker:crown_of_skies>.addTooltip(format.red(format.bold("Warning: This CONSUMES the item.")));
 <contenttweaker:crown_of_skies>.addTooltip(format.white(format.bold("Can be duplicated so other team members can also use it!")));
