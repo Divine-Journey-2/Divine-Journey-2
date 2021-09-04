@@ -265,4 +265,8 @@ recipes.addShaped(<tinkersaddons:modifier_item:3>, [[<tconstruct:large_plate>.wi
 recipes.remove(<tinkersaddons:modifier_item:4>);
 recipes.addShaped(<tinkersaddons:modifier_item:4>, [[<tconstruct:large_plate>.withTag({Material: "obsidian"}),<enderutilities:enderpart:2>,<tconstruct:large_plate>.withTag({Material: "obsidian"})],[<enderutilities:enderpart:2>,<contenttweaker:compressed_obsidian3>,<enderutilities:enderpart:2>],[<tconstruct:large_plate>.withTag({Material: "obsidian"}),<enderutilities:enderpart:2>,<tconstruct:large_plate>.withTag({Material: "obsidian"})]]);
 
+# Congealed Slime Block
+recipes.remove(<tconstruct:slime_congealed:5>);
+recipes.addShaped(<tconstruct:slime_congealed:5>, [[null,<ore:slimeball>,null],[<ore:slimeball>,null,<ore:slimeball>],[null,<ore:slimeball>,null]]);
+
 print("ENDING TinkersConstruct.zs");

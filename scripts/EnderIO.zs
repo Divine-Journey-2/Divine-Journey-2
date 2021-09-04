@@ -591,6 +591,22 @@ EIOAlloySmelter.addRecipe(<enderio:item_dark_steel_upgrade>, [<enderio:block_dar
 recipes.remove(<enderio:item_dark_steel_bow>);
 recipes.addShaped(<enderio:item_dark_steel_bow>, [[<enderio:item_alloy_ingot:6>,<enderio:item_material:8>,<minecraft:string>],[<enderio:item_material:45>,null,<minecraft:string>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:8>,<minecraft:string>]]);
 
+# Ender Helm
+recipes.remove(<enderio:item_end_steel_helmet>);
+recipes.addShaped(<enderio:item_end_steel_helmet>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_helmet>,<enderio:item_alloy_ingot:8>]]);
+
+# Ender Plate
+recipes.remove(<enderio:item_end_steel_chestplate>);
+recipes.addShaped(<enderio:item_end_steel_chestplate>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_chestplate>,<enderio:item_alloy_ingot:8>],[<enderio:block_alloy:8>,<enderio:item_alloy_ingot:8>,<enderio:block_alloy:8>]]);
+
+# Ender Leggings
+recipes.remove(<enderio:item_end_steel_leggings>);
+recipes.addShaped(<enderio:item_end_steel_leggings>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_leggings>,<enderio:item_alloy_ingot:8>],[<enderio:item_alloy_ingot:8>,null,<enderio:item_alloy_ingot:8>]]);
+
+# Ender Boots
+recipes.remove(<enderio:item_end_steel_boots>);
+recipes.addShaped(<enderio:item_end_steel_boots>, [[<enderio:item_alloy_ingot:8>,<enderio:item_material:56>,<enderio:item_alloy_ingot:8>],[<enderio:block_alloy:8>,<enderio:item_dark_steel_boots>,<enderio:block_alloy:8>]]);
+
 # Soul Vial
 recipes.remove(<enderio:item_soul_vial>);
 recipes.addShaped(<enderio:item_soul_vial>, [[<ore:fusedQuartz>,<enderio:block_alloy:7>,<ore:fusedQuartz>],[<ore:fusedQuartz>,<enderio:item_material:41>,<ore:fusedQuartz>],[<ore:fusedQuartz>,<ore:fusedQuartz>,<ore:fusedQuartz>]]);
@@ -740,19 +756,19 @@ recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_i
 
 # Stellar Helmet
 recipes.remove(<enderio:item_stellar_alloy_helmet>);
-recipes.addShaped(<enderio:item_stellar_alloy_helmet>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>]]);
+recipes.addShaped(<enderio:item_stellar_alloy_helmet>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_helmet>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Stellar Chestplate
 recipes.remove(<enderio:item_stellar_alloy_chestplate>);
-recipes.addShaped(<enderio:item_stellar_alloy_chestplate>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>]]);
+recipes.addShaped(<enderio:item_stellar_alloy_chestplate>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_chestplate>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Stellar Leggings
 recipes.remove(<enderio:item_stellar_alloy_leggings>);
-recipes.addShaped(<enderio:item_stellar_alloy_leggings>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
+recipes.addShaped(<enderio:item_stellar_alloy_leggings>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_leggings>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Stellar Booots
 recipes.remove(<enderio:item_stellar_alloy_boots>);
-recipes.addShaped(<enderio:item_stellar_alloy_boots>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
+recipes.addShaped(<enderio:item_stellar_alloy_boots>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_boots>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Creative Capacitor Bank
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),

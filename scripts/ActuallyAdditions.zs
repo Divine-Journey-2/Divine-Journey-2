@@ -449,7 +449,7 @@ function(out,ins,cInfo) {
 
 # Traveler's Sack
 recipes.remove(<actuallyadditions:item_bag>);
-recipes.addShaped(<actuallyadditions:item_bag>, [[<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>],[<danknull:dank_null_panel_0>,<ironbackpacks:backpack>.withTag({packInfo: {type: "ironbackpacks:iron", spec: "STORAGE"}}),<danknull:dank_null_panel_0>],[null,<ore:stickWood>,null]]);
+recipes.addShaped(<actuallyadditions:item_bag>, [[<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>],[<danknull:dank_null_panel_0>,<simplybackpacks:uncommonbackpack>,<danknull:dank_null_panel_0>],[null,<ore:stickWood>,null]]);
 
 # Void Sack
 recipes.remove(<actuallyadditions:item_void_bag>);

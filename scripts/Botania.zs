@@ -775,8 +775,8 @@ recipes.addShapedMirrored(<botania:speedupbelt>.withTag({}), [[<contenttweaker:b
 
 # Bauble Case
 recipes.remove(<botania:baublebox>);
-recipes.addShaped(<botania:baublebox>, [[<botania:manaresource>,<botania:manaresource>,<botania:manaresource>],[<botania:manaresource>,<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}}),<botania:manaresource>],[<botania:manaresource>,<minecraft:gold_ingot>,<botania:manaresource>]]);
-<botania:baublebox>.addTooltip(format.darkRed(format.italic("Requires a Basic Backpack you've just crafted.")));
+recipes.addShaped(<botania:baublebox>, [[<botania:manaresource>,<botania:manaresource>,<botania:manaresource>],[<botania:manaresource>,<simplybackpacks:commonbackpack>.withTag({inv: {Size: 18, Items: []}, filter: {Size: 16, Items: []}}),<botania:manaresource>],[<botania:manaresource>,<minecraft:gold_ingot>,<botania:manaresource>]]);
+<botania:baublebox>.addTooltip(format.darkRed(format.italic("Requires a Common Backpack you've just crafted.")));
 
 # Invisibility Cloak
 recipes.remove(<botania:invisibilitycloak>);

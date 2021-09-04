@@ -18,6 +18,10 @@ recipes.remove(<galacticraftcore:enclosed:15>);
 recipes.remove(<galacticraftcore:enclosed:14>);
 recipes.remove(<galacticraftplanets:walkway:1>);
 
+# Grating
+recipes.remove(<galacticraftcore:grating>);
+recipes.addShaped(<galacticraftcore:grating> * 4, [[null,<enderio:block_dark_iron_bars>,null],[<enderio:block_dark_iron_bars>,<galacticraftcore:basic_item:9>,<enderio:block_dark_iron_bars>],[null,<enderio:block_dark_iron_bars>,null]]);
+
 # Circuit Fabricator
 recipes.remove(<galacticraftcore:machine2:4>);
 mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:machine2:4>,
@@ -506,7 +510,5 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>
 [<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:infinite_battery>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
 [<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
 [<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
-
-
 
 print("ENDING GalacticraftCore.zs");

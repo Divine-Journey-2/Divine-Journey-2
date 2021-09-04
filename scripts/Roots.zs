@@ -41,7 +41,7 @@ recipes.addShaped("imposer", <roots:imposer>, [[<ore:ingotBronze>,null,<ore:ingo
 recipes.remove(<roots:staff>);
 recipes.addShaped("staff", <roots:staff>, [[null,<ore:blockAmethyst>,<contenttweaker:root_of_the_fallen>],[null,<ore:blockOpal>,<ore:blockGarnet>],[<totemic:eagle_bone_whistle>,null,null]]);
 
-# Gramary
+# Gramary of the Forest
 recipes.remove(<roots:gramary>);
 recipes.addShaped("gramary", <roots:gramary>, [[<ore:rootsBark>,<roots:terra_moss>,<ore:rootsBark>],[<ore:rootsBark>,<minecraft:emerald>,<ore:rootsBark>],[<ore:rootsBark>,<roots:terra_moss>,<ore:rootsBark>]]);
 
@@ -55,7 +55,7 @@ Fey.removeRecipe(<roots:component_pouch>);
 Fey.addRecipe("component_pouch", <roots:component_pouch>, [<roots:herb_pouch>, <ore:rootsBark>, <roots:wildroot>, <roots:spirit_herb>, <minecraft:gold_nugget>]);
 <roots:component_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
 
-# Fey Pouch
+# Fey Leather Pouch
 <roots:fey_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
 
 # Apothecary Pouch
@@ -81,7 +81,7 @@ recipes.addShaped("fey_crafter", <roots:fey_crafter>, [[<ore:treeSapling>,null,<
 
 # Runic Crafter
 Fey.removeRecipe(<roots:runic_crafter>);
-Fey.addRecipe("runic_crafter", <roots:runic_crafter>, [<roots:fey_crafter>, <roots:runic_dust>, <roots:runic_dust>, <roots:chiseled_runed_obsidian>, <roots:chiseled_runed_obsidian>]);
+Fey.addRecipe("runic_crafter", <roots:runic_crafter>, [<roots:fey_crafter>, <roots:runic_dust>, <roots:runic_dust>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]);
 
 # Elemental Soil
 Fey.removeRecipe(<roots:elemental_soil>);
@@ -154,8 +154,8 @@ Fey.addRecipe("wildwood_bow", <roots:wildwood_bow>, [<minecraft:bow>, <roots:spi
 Fey.removeRecipe(<roots:living_arrow>);
 Fey.addRecipe("living_arrow", <roots:living_arrow> * 6, [<minecraft:arrow>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 Fey.removeRecipe(<roots:wildwood_quiver>);
-Fey.addRecipe("wildwood_quiver", <roots:wildwood_quiver>, [<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}}), <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
-<roots:wildwood_quiver>.addTooltip(format.darkRed(format.italic("Crafting this requires a Basic Backpack you've just crafted.")));
+Fey.addRecipe("wildwood_quiver", <roots:wildwood_quiver>, [<simplybackpacks:commonbackpack>.withTag({inv: {Size: 18, Items: []}, filter: {Size: 16, Items: []}}), <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
+<roots:wildwood_quiver>.addTooltip(format.darkRed(format.italic("Crafting this requires a Common Backpack you've just crafted.")));
 Fey.removeRecipe(<roots:living_pickaxe>);
 Fey.addRecipe("living_pickaxe", <roots:living_pickaxe>, [<immersiveengineering:pickaxe_steel>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 Fey.removeRecipe(<roots:living_shovel>);

@@ -2,7 +2,7 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/skythern_door2",
+      "all": "contenttweaker:blocks/skythern_door2",
       "particle": "contenttweaker:blocks/skythern_door2"
     },
     "model": "cube_all",

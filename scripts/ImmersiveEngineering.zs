@@ -17,6 +17,7 @@ import mods.extrautils2.Crusher as EUCrusher;
 import moretweaker.lightningcraft.LightningCrusher;
 import mods.immersiveengineering.Fermenter;
 import mods.immersiveengineering.Squeezer;
+import mods.immersiveengineering.Excavator;
 
 print("STARTING ImmersiveEngineering.zs");
 
@@ -438,6 +439,11 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagricultur
 recipes.remove(<immersiveengineering:stone_decoration:5>);
 recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<minecraft:clay_ball>,<ore:sand>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:sand>,<minecraft:clay_ball>,<ore:sand>]]);
+
+# Excavator changes
+mods.immersiveengineering.Excavator.removeMineral("Platinum Ore");
+mods.immersiveengineering.Excavator.removeMineral("Iridium Ore");
+mods.immersiveengineering.Excavator.removeMineral("Uranium Ore");
 
 # Creative Capacitor
 mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,

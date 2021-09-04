@@ -209,7 +209,7 @@ recipes.addShapedMirrored(<enderutilities:enderarrow>, [[null,null,<enderutiliti
 
 # Ender Bag
 recipes.remove(<enderutilities:enderbag>);
-recipes.addShaped(<enderutilities:enderbag>, [[<alchemistry:ingot:3>,<enderutilities:enderpart:17>,<alchemistry:ingot:3>],[<enderutilities:enderpart:2>,<actuallyadditions:block_misc:8>,<enderutilities:enderpart:2>],[<minecraft:ender_chest>,<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:diamond", spec: "STORAGE"}}),<minecraft:ender_chest>]]);
+recipes.addShaped(<enderutilities:enderbag>, [[<alchemistry:ingot:3>,<enderutilities:enderpart:17>,<alchemistry:ingot:3>],[<enderutilities:enderpart:2>,<actuallyadditions:block_misc:8>,<enderutilities:enderpart:2>],[<minecraft:ender_chest>,<simplybackpacks:epicbackpack>,<minecraft:ender_chest>]]);
 
 # Ender Pearl (reusable)
 recipes.remove(<enderutilities:enderpearlreusable>);

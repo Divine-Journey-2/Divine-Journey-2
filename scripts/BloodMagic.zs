@@ -295,7 +295,7 @@ recipes.addShaped(<bloodmagic:ritual_stone> * 16, [[<minecraft:obsidian>,<bloodm
 
 # Master Ritual Stone
 recipes.removeShaped(<bloodmagic:ritual_controller>, [[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
-recipes.addShaped(<bloodmagic:ritual_controller>, [[<roots:runed_obsidian>,<bloodmagic:ritual_stone>,<roots:runed_obsidian>],[<bloodmagic:ritual_stone>,blood_orb_at_least_tier_4.reuse(),<bloodmagic:ritual_stone>],[<roots:runed_obsidian>,<bloodmagic:ritual_stone>,<roots:runed_obsidian>]]);
+recipes.addShaped(<bloodmagic:ritual_controller>, [[<contenttweaker:compressed_obsidian1>,<bloodmagic:ritual_stone>,<contenttweaker:compressed_obsidian1>],[<bloodmagic:ritual_stone>,blood_orb_at_least_tier_4.reuse(),<bloodmagic:ritual_stone>],[<contenttweaker:compressed_obsidian1>,<bloodmagic:ritual_stone>,<contenttweaker:compressed_obsidian1>]]);
 
 # Lava Crystal
 recipes.remove(<bloodmagic:lava_crystal>);
@@ -612,4 +612,5 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:sacrificial_dagger:1>.
 [null, <alchemistry:ingot:112>, <bloodmagic:activation_crystal:2>, null, null],
 [null, <bloodmagic:sacrificial_dagger>, <alchemistry:ingot:112>, null, null],
 [<alchemistry:ingot:110>, null, null, <alchemistry:ingot:112>, null]]);
+
 print("ENDING BloodMagic.zs");

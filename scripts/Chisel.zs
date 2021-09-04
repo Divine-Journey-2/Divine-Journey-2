@@ -24,4 +24,9 @@ recipes.addShaped(<chisel:stonebrick2:8>, [[<minecraft:stone_slab>],[<minecraft:
 recipes.remove(<chisel:auto_chisel>);
 recipes.addShaped(<chisel:auto_chisel>, [[<enderio:block_fused_quartz>,<enderio:block_fused_quartz>,<enderio:block_fused_quartz>],[<chisel:chisel_iron>,<thermalexpansion:frame>,<chisel:chisel_iron>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
 
+# Removing Chisel Charcoal recipe.  Conflicts with Thermal recipe.  
+recipes.remove(<chisel:block_charcoal:*>);
+recipes.remove(<chisel:block_charcoal1:*>);
+recipes.remove(<chisel:block_charcoal2:*>);
+
 print("ENDING Chisel.zs");

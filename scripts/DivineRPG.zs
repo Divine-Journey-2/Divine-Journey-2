@@ -92,6 +92,10 @@ divinerpg_new_gem_and_chunk_recipes(<divinerpg:skythern_fragments>, <divinerpg:s
 # Mortum Gem & Chunk
 divinerpg_new_gem_and_chunk_recipes(<divinerpg:mortum_fragments>, <divinerpg:mortum_gem>, <divinerpg:mortum_chunk>);
 
+# Inferno sword
+recipes.remove(<divinerpg:inferno_sword>);
+recipes.addShaped(<divinerpg:inferno_sword>, [[<minecraft:blaze_powder>,<ore:oreRedstone>,<minecraft:blaze_powder>],[<minecraft:blaze_powder>,<ore:oreRedstone>,<minecraft:blaze_powder>],[<minecraft:blaze_powder>,<ore:stickWood>,<minecraft:blaze_powder>]]);
+
 # Eden Chest
 recipes.remove(<divinerpg:eden_chest>);
 recipes.addShaped(<divinerpg:eden_chest>, [[<divinerpg:eden_gem>,<divinerpg:eden_gem>,<divinerpg:eden_gem>],[<divinerpg:eden_gem>,<minecraft:iron_nugget>,<divinerpg:eden_gem>],[<divinerpg:eden_gem>,<divinerpg:eden_gem>,<divinerpg:eden_gem>]]);
