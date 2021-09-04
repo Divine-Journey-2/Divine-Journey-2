@@ -23,5 +23,13 @@ mods.jei.JEI.hideCategory("mysticalagriculture:reprocessor_jei");
 mods.jei.JEI.hideCategory("moretweaker.erebus.compost.recipes");
 mods.jei.JEI.hideCategory("bloodmagic:binding");
 mods.jei.JEI.hideCategory("abyssalcraft.materialization");
+mods.jei.JEI.hideCategory("roots.chrysopoeia");
+mods.jei.JEI.hideCategory("roots.runed_wood");
+mods.jei.JEI.hideCategory("roots.loot");
+mods.jei.JEI.hideCategory("roots.runic_shears_summon_entity");
+mods.jei.JEI.hideCategory("roots.pyre_light");
+mods.jei.JEI.hideCategory("roots.ritual_visualise");
+mods.jei.JEI.hideCategory("roots.spell_imbuing");
+mods.jei.JEI.hideCategory("roots.spell_imposing");
 
 print("ENDING JEICategories.zs");
