@@ -13,4 +13,8 @@ recipes.addShapedMirrored(<betterbuilderswands:wandiron>, [[null,<industrialfore
 recipes.remove(<betterbuilderswands:wanddiamond>);
 recipes.addShapedMirrored(<betterbuilderswands:wanddiamond>, [[null,<botania:manaresource:2>,<botania:storage:3>],[null,<extrautils2:itembuilderswand>,<botania:manaresource:2>],[<ore:stickWood>,null,null]]);
 
+# Unbreakable Wand
+recipes.remove(<betterbuilderswands:wandunbreakable>);
+recipes.addShapedMirrored(<betterbuilderswands:wandunbreakable>, [[null,<enderio:item_alloy_endergy_ingot:3>,<botania:storage:4>],[null,<betterbuilderswands:wanddiamond>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,null]]);
+
 print("ENDING BetterBuildersWands.zs");

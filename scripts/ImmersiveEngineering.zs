@@ -299,7 +299,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:6>, [[<thermalfoundati
 
 # Radiator Block
 recipes.remove(<immersiveengineering:metal_decoration0:7>);
-recipes.addShaped(<immersiveengineering:metal_decoration0:7>, [[<thermalfoundation:material:352>,<immersiveengineering:material:19>,<thermalfoundation:material:352>],[<immersiveengineering:material:19>,<ore:blockCopper>,<immersiveengineering:material:19>],[<thermalfoundation:material:352>,<immersiveengineering:material:19>,<thermalfoundation:material:352>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 2, [[<thermalfoundation:material:352>,<immersiveengineering:material:19>,<thermalfoundation:material:352>],[<immersiveengineering:material:19>,<ore:blockCopper>,<immersiveengineering:material:19>],[<thermalfoundation:material:352>,<immersiveengineering:material:19>,<thermalfoundation:material:352>]]);
 
 # Transformer
 recipes.remove(<immersiveengineering:connector:7>);

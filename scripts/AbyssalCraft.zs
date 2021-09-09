@@ -183,6 +183,7 @@ recipes.removeShaped(<abyssalcraft:cstonebrick>);
 recipes.addShaped(<abyssalcraft:cstonebrick>, [[null,<abyssalcraft:cbrick>,null],[<abyssalcraft:cbrick>,<abyssalcraft:stone:7>,<abyssalcraft:cbrick>],[null,<abyssalcraft:cbrick>,null]]);
 
 # Coralium Stone
+<abyssalcraft:stone:4>.addTooltip(format.white("Coralium Cobblestone can be found in the Abyssal Wasteland."));
 <abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter"));
 <abyssalcraft:stone:4>.addTooltip(format.white("over ") + format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
 <abyssalcraft:stone:4>.addTooltip(format.white("(If you can't find any Liquid Antimatter, use the"));
@@ -199,11 +200,13 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:transmutator>,
 
 # Abyssal Wasteland Necronomicon
 recipes.remove(<abyssalcraft:necronomicon_cor>);
+/*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade1", <abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>.marked("necronomicon"),<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]],
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
-#recipes.addShaped(<abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>,<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]]);
+*/
+recipes.addShaped(<abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>,<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]]);
 
 
 # Eye of the Abyss
@@ -281,11 +284,13 @@ recipes.addShaped(<abyssalcraft:dreadcloth>, [[<ore:string>,<abyssalcraft:dreadf
 
 # Dreadlands Necronomicon
 recipes.remove(<abyssalcraft:necronomicon_dre>);
+/*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade2", <abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>.marked("necronomicon"),<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]],
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);
 }, null);
-#recipes.addShaped(<abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>,<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]]);
+*/
+recipes.addShaped(<abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>,<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]]);
 
 
 # Dreadium Sword
@@ -579,8 +584,8 @@ add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredsacrific
 add_abyssalcraft_dreadlands_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer:2>, <abyssalcraft:tieredenergycontainer:1>, "econDLupgrade");
 
 # Omothol Necronomicon
-/*
 recipes.remove(<abyssalcraft:necronomicon_omt>);
+/*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade3", <abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>.marked("necronomicon"),<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]],
 function(out, ins, cInfo) {
 	return out.withTag(ins.necronomicon.tag);

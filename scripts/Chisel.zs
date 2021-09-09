@@ -19,6 +19,9 @@ furnace.addRecipe(<chisel:stonebrick2:9>, <chisel:stonebrick2:8>);
 # Fixing Chiseled Double Stone Slab conflict
 recipes.removeShapeless(<minecraft:stone>, [<minecraft:stone_slab>, <minecraft:stone_slab>]);
 recipes.addShaped(<chisel:stonebrick2:8>, [[<minecraft:stone_slab>],[<minecraft:stone_slab>]]);
+<ore:stone>.remove(<chisel:stonebrick2:9>);
+<ore:bricksStone>.remove(<chisel:stonebrick2:9>);
+<ore:brickStone>.remove(<chisel:stonebrick2:9>);
 
 # Auto Chisel
 recipes.remove(<chisel:auto_chisel>);

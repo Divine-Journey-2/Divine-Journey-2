@@ -8,7 +8,7 @@ hideLines()
 alwaysVisible()
 
 criteria = addCriteria("hasPyre", "minecraft:inventory_changed")
-criteria.addItem(<roots:bonfire>)
+criteria.addItem(<roots:pyre>)
 
 addRewardFunction("triumph:fireworks")
 addRewardFunction("triumph:03_root_3")

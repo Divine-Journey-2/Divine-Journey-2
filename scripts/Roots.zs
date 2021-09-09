@@ -225,7 +225,7 @@ Mortar.changeSpell("spell_sky_soarer", [<roots:cloud_berry>, <betternether:bone_
 Mortar.changeSpell("spell_saturate", [<minecraft:mushroom_stew>, <divinerpg:donut>, <roots:wildewheet>, <mysticalworld:cooked_aubergine>, <roots:petals>]);
 Mortar.changeSpell("spell_wild_fire", [<minecraft:diamond_sword>, <minecraft:tnt>, <roots:infernal_bulb>, <roots:stalicripe>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_natures_scythe", [<roots:wildroot>, <roots:wildroot>, <ore:tallgrass>, <mysticalworld:aubergine>, <roots:diamond_knife>]);
-Mortar.changeSpell("spell_acid_cloud", [<spartanshields:shield_tower_invar>, <roots:baffle_cap_mushroom>, <betternether:egg_plant>, <minecraft:splash_potion>.withTag({Potion: "minecraft:strong_poison"}), <ore:blockAmethyst>]);
+Mortar.changeSpell("spell_acid_cloud", [<enderio:item_end_steel_shield>, <roots:baffle_cap_mushroom>, <betternether:egg_plant>, <minecraft:potion>.withTag({Potion: "cofhcore:poison4"}), <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_radiance", [<minecraft:glowstone>, <roots:stalicripe>, <roots:cloud_berry>, <betternether:black_apple>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_fey_light", [<minecraft:glowstone>, <roots:cloud_berry>, <betternether:eye_seed>, <minecraft:double_plant>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_desaturate", [<minecraft:bowl>, <minecraft:rotten_flesh>, <roots:baffle_cap_mushroom>, <betternether:stalagnate_bowl_mushroom>, <roots:petals>]);

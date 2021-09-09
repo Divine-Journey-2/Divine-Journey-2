@@ -147,6 +147,14 @@ val decorative_diffuser = <thermalexpansion:device:9>.withTag({RSControl: 0 as b
 recipes.remove(decorative_diffuser);
 recipes.addShaped(decorative_diffuser, [[<thermalfoundation:material:323>,<thermalfoundation:material:323>,<thermalfoundation:material:323>],[<minecraft:dragon_breath>,<thermalexpansion:frame:64>,<minecraft:dragon_breath>],[<thermalfoundation:material:26>,<thermalfoundation:material:512>,<thermalfoundation:material:26>]]);
 
+# Morb
+recipes.remove(<thermalexpansion:morb>);
+recipes.addShaped(<thermalexpansion:morb>, [[null,<thermalfoundation:material:167>,null],[<ore:itemSlag>,<contenttweaker:rf_powder>,<ore:itemSlag>],[null,<thermalfoundation:material:167>,null]]);
+
+# Morb (Reusable)
+recipes.remove(<thermalexpansion:morb:1>);
+recipes.addShaped(<thermalexpansion:morb:1>, [[null,<thermalfoundation:material:293>,null],[<enderio:item_alloy_ingot:7>,<thermalexpansion:morb>,<enderio:item_alloy_ingot:7>],[null,<thermalfoundation:material:293>,null]]);
+
 # Creature Encaptulator
 val creature_encaptulator = <thermalexpansion:device:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[]});
 recipes.remove(creature_encaptulator);

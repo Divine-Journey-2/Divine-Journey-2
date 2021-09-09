@@ -481,7 +481,7 @@ recipes.addShaped(<mekanism:filterupgrade>, [[<enderio:item_alloy_ingot>,<conten
 
 # Solar Neutron Activator
 recipes.remove(<mekanism:machineblock3:1>);
-recipes.addShaped(<mekanism:machineblock3:1>, [[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],[null,<enderio:item_alloy_ingot:6>,null],[<enderio:block_alloy:6>,<mekanism:basicblock2:3>.withTag({tier: 2}),<enderio:block_alloy:6>]]);
+recipes.addShaped(<mekanism:machineblock3:1>, [[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],[null,<enderio:item_alloy_ingot:6>,null],[<enderio:block_alloy:6>,<mekanism:basicblock2:3>.withTag({tier: 1}),<enderio:block_alloy:6>]]);
 
 # Chemical Infuser
 recipes.remove(<mekanism:machineblock2:2>);
