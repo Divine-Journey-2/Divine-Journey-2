@@ -105,6 +105,9 @@ recipes.addShaped(<thermalfoundation:material:833> * 3, [[<mysticalagriculture:b
 # Obsidian Seeds
 addTier2MysticalAgricultureSeed(<mysticalagriculture:obsidian_seeds>,<contenttweaker:compressed_obsidian2>);
 
+# Soulium Dagger
+recipes.remove(<mysticalagriculture:soulium_dagger>);
+
 # Tier 1 Mob Chunk
 # in OreProcessingAdditions.zs
 

@@ -27,4 +27,8 @@ recipes.addShaped(<betternether:cincinnasite_frame> * 4, [[<betternether:cincinn
 # Cincinnasite into Gold Nuggets
 recipes.addShapeless(<minecraft:gold_nugget>, [<betternether:cincinnasite>]);
 
+# Large Nether Brick Tile
+recipes.remove(<betternether:nether_brick_tile_large>);
+recipes.addShaped(<betternether:nether_brick_tile_large> * 4, [[<minecraft:nether_brick>,<minecraft:nether_brick>],[<minecraft:nether_brick>,<minecraft:nether_brick>]]);
+
 print("ENDING BetterNether.zs");

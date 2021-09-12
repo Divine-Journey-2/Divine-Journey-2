@@ -278,4 +278,10 @@ val basicMCTable = LootTweaker.getTable("minecraft:chests/simple_dungeon");
 val basicMCTableMain = basicMCTable.getPool("main");
 basicMCTableMain.addItemEntry(<divinerpg:tomato_seeds>, 2);
 
+# MysticalWorld Copper fix
+val MystWorldHut = LootTweaker.getTable("mysticalworld:chests/hut");
+val MystWorldHutGems = MystWorldHut.getPool("gems");
+MystWorldHutGems.removeEntry("mysticalworld:copper_ingot");
+MystWorldHutGems.addItemEntry(<thermalfoundation:material:128>, 16);
+
 print("ENDING LootTweaker.zs");

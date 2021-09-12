@@ -262,9 +262,13 @@ Rituals.modifyRitual("ritual_flower_growth", [<roots:petals>, <roots:pereskia>, 
 Rituals.modifyRitual("ritual_transmutation", [<roots:moonglow_leaf>, <roots:fey_leather>, <roots:living_arrow>, <ore:gemAmethyst>, <roots:chiseled_runestone>]);
 Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry>, <minecraft:redstone>, <minecraft:wooden_hoe>, <minecraft:bowl>]);
 
+# Wildwood Sapling
+Fey.addRecipe("wildwood_sapling_custom", <roots:wildwood_sapling>, [<totemic:cedar_sapling>,<roots:wildroot>,<mysticalworld:antlers>,<roots:wildwood_log>,<roots:wildwood_log>]);
+
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
 SummonCreatures.addEntity(<entity:natura:imp>, [<natura:nether_thorn_vines>, <divinerpg:bloodgem>, <betternether:eye_seed>]);
+<natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);

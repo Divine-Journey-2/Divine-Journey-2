@@ -16,52 +16,19 @@ print("STARTING BloodMagic.zs");
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:dirt:*>,<minecraft:dye:15>,<minecraft:wheat_seeds>]);
 
 # No Cutting Fluid recipes
-var allOres = <ore:allOres>;
-allOres.addAll(<ore:oreSaltpeter>);
-allOres.addAll(<ore:oreSalt>);
-allOres.addAll(<ore:oreSilver>);
-allOres.addAll(<ore:oreLead>);
-allOres.addAll(<ore:oreDilithium>);
-allOres.addAll(<ore:oreRedstone>);
-allOres.addAll(<ore:oreCertusQuartz>);
-allOres.addAll(<ore:oreDraconium>);
-allOres.addAll(<ore:oreSilicon>);
-allOres.addAll(<ore:oreIron>);
-allOres.addAll(<ore:oreNickel>);
-allOres.addAll(<ore:oreTitanium>);
-allOres.addAll(<ore:oreOsmium>);
-allOres.addAll(<ore:oreAstralStarmetal>);
-allOres.addAll(<ore:oreAbyssalnite>);
-allOres.addAll(<ore:oreCopper>);
-allOres.addAll(<ore:oreGold>);
-allOres.addAll(<ore:oreIridium>);
-allOres.addAll(<ore:oreLead>);
-allOres.addAll(<ore:oreQuartz>);
-allOres.addAll(<ore:oreYellorite>);
-allOres.addAll(<ore:oreLapis>);
-allOres.addAll(<ore:oreAluminium>);
-allOres.addAll(<ore:oreNaturalAluminum>);
-allOres.addAll(<ore:oreAluminum>);
-allOres.addAll(<ore:oreMithril>);
-allOres.addAll(<ore:oreLiquifiedCoralium>);
-allOres.addAll(<ore:oreTin>);
-allOres.addAll(<ore:oreDiamond>);
-allOres.addAll(<ore:oreQuartzBlack>);
-allOres.addAll(<ore:oreEmerald>);
-allOres.addAll(<ore:oreCoal>);
-allOres.addAll(<ore:orePlatinum>);
-allOres.addAll(<ore:oreNetherEmerald>);
-allOres.addAll(<ore:oreNetherDiamond>);
-allOres.addAll(<ore:oreNetherRedstone>);
-allOres.addAll(<ore:oreNetherLapis>);
-allOres.addAll(<ore:oreNetherCoal>);
-allOres.addAll(<ore:oreNetherGold>);
-allOres.addAll(<ore:oreNetherIron>);
-allOres.addAll(<ore:oreNetherCopper>);
-allOres.addAll(<ore:oreNetherTin>);
-for ore in allOres.items {
-	mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
+var allOres = [<ore:oreSaltpeter>,<ore:oreSalt>,<ore:oreSilver>,<ore:oreLead>,<ore:oreDilithium>,<ore:oreRedstone>,<ore:oreCertusQuartz>,<ore:oreDraconium>,
+<ore:oreSilicon>,<ore:oreIron>,<ore:oreNickel>,<ore:oreTitanium>,<ore:oreOsmium>,<ore:oreAstralStarmetal>,<ore:oreAbyssalnite>,<ore:oreCopper>,<ore:oreGold>,
+<ore:oreIridium>,<ore:oreLead>,<ore:oreQuartz>,<ore:oreYellorite>,<ore:oreLapis>,<ore:oreAluminium>,<ore:oreAluminum>,<ore:oreMithril>,
+<ore:oreLiquifiedCoralium>,<ore:oreTin>,<ore:oreDiamond>,<ore:oreQuartzBlack>,<ore:oreEmerald>,<ore:oreCoal>,<ore:orePlatinum>,<ore:oreNetherEmerald>,
+<ore:oreNetherDiamond>,<ore:oreNetherRedstone>,<ore:oreNetherLapis>,<ore:oreNetherCoal>,<ore:oreNetherGold>,<ore:oreNetherIron>,
+<ore:oreNetherCopper>,<ore:oreNetherTin>] as IIngredient[];
+
+for oreDict in allOres {
+	for ore in oreDict.items {
+		mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
+	}
 }
+
 for ore in <ore:oreNaturalAluminum>.items {
 	mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
 }

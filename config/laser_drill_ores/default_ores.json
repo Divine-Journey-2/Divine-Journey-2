@@ -454,8 +454,8 @@
 		"color": 15,
 		"rarity": [
 			{
-				"whitelist": "traverse:arid_highland, traverse:red_desert, traverse:mountainous_desert, traverse:desert_shrubland, atum:dead_oasis, atum:deadwood_forest, atum:dried_river, atum:limestone_crags, atum:limestone_mountains, atum:sand_dunes, atum:sand_hills, atum:sand_plains, atum:oasis",
-				"blacklist": "",
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
 				"depth_min": 1,
 				"depth_max": 24,
 				"weight": 10
@@ -506,8 +506,8 @@
 		"color": 9,
 		"rarity": [
 			{
-				"whitelist": "abyssalcraft:coralium_infested_swamp",
-				"blacklist": "",
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
 				"depth_min": 1,
 				"depth_max": 64,
 				"weight": 10

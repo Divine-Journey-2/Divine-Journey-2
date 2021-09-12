@@ -151,6 +151,7 @@ recipes.addShaped(<minecraft:golden_apple:1>, [[<ore:blockGold>,<ore:blockGold>,
 recipes.remove(<minecraft:paper>);
 recipes.addShaped(<minecraft:paper>, [[<ore:sugarcane>,<ore:sugarcane>,<ore:sugarcane>]]);
 recipes.addShaped(<minecraft:paper>, [[<roots:wildroot>,<roots:wildroot>,<roots:wildroot>]]);
+recipes.addShaped(<minecraft:paper>, [[<betternether:nether_reed>,<betternether:nether_reed>,<betternether:nether_reed>]]);
 
 #Shears
 recipes.remove(<minecraft:shears>);

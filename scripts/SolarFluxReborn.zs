@@ -13,9 +13,13 @@ recipes.addShaped(<solarflux:solar_panel_1>, [[<solarflux:mirror>,<solarflux:mir
 recipes.remove(<solarflux:photovoltaic_cell_1>);
 recipes.addShaped(<solarflux:photovoltaic_cell_1> * 3, [[<ore:blockGlassLightBlue>,<ore:blockGlassLightBlue>,<ore:blockGlassLightBlue>],[<enderio:item_alloy_ingot:4>,<enderio:item_alloy_ingot:4>,<enderio:item_alloy_ingot:4>],[<solarflux:mirror>,<solarflux:mirror>,<solarflux:mirror>]]);
 
+# Solar Panel II
+recipes.remove(<solarflux:solar_panel_2>);
+recipes.addShaped(<solarflux:solar_panel_2> * 4, [[<solarflux:solar_panel_1>,<solarflux:solar_panel_1>,<solarflux:solar_panel_1>],[<solarflux:solar_panel_1>,<minecraft:piston>,<solarflux:solar_panel_1>],[<solarflux:solar_panel_1>,<solarflux:solar_panel_1>,<solarflux:solar_panel_1>]]);
+
 # Solar Panel III
 recipes.remove(<solarflux:solar_panel_3>);
-recipes.addShaped(<solarflux:solar_panel_3>, [[<solarflux:photovoltaic_cell_1>,<solarflux:photovoltaic_cell_1>,<solarflux:photovoltaic_cell_1>],[<solarflux:solar_panel_2>,<thermalfoundation:material:290>,<solarflux:solar_panel_2>],[<solarflux:solar_panel_2>,<thermalfoundation:material:290>,<solarflux:solar_panel_2>]]);
+recipes.addShaped(<solarflux:solar_panel_3> * 2, [[<solarflux:photovoltaic_cell_1>,<solarflux:photovoltaic_cell_1>,<solarflux:photovoltaic_cell_1>],[<solarflux:solar_panel_2>,<thermalfoundation:material:290>,<solarflux:solar_panel_2>],[<solarflux:solar_panel_2>,<thermalfoundation:material:290>,<solarflux:solar_panel_2>]]);
 
 # Photovoltaic Cell II
 recipes.remove(<solarflux:photovoltaic_cell_2>);
@@ -23,7 +27,7 @@ recipes.addShaped(<solarflux:photovoltaic_cell_2> * 3, [[<ore:blockGlassCyan>,<o
 
 # Solar Panel IV
 recipes.remove(<solarflux:solar_panel_4>);
-recipes.addShaped(<solarflux:solar_panel_4>, [[<solarflux:photovoltaic_cell_2>,<solarflux:photovoltaic_cell_2>,<solarflux:photovoltaic_cell_2>],[<solarflux:solar_panel_3>,<enderio:item_material:73>,<solarflux:solar_panel_3>],[<solarflux:solar_panel_3>,<enderio:item_material:73>,<solarflux:solar_panel_3>]]);
+recipes.addShaped(<solarflux:solar_panel_4> * 2, [[<solarflux:photovoltaic_cell_2>,<solarflux:photovoltaic_cell_2>,<solarflux:photovoltaic_cell_2>],[<solarflux:solar_panel_3>,<enderio:item_material:73>,<solarflux:solar_panel_3>],[<solarflux:solar_panel_3>,<enderio:item_material:73>,<solarflux:solar_panel_3>]]);
 
 # Photovoltaic Cell III
 recipes.remove(<solarflux:photovoltaic_cell_3>);
@@ -31,7 +35,7 @@ recipes.addShaped(<solarflux:photovoltaic_cell_3> * 3, [[<ore:blockGlassBlue>,<o
 
 # Solar Panel V
 recipes.remove(<solarflux:solar_panel_5>);
-recipes.addShaped(<solarflux:solar_panel_5>, [[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>]]);
+recipes.addShaped(<solarflux:solar_panel_5> * 2, [[<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>,<solarflux:photovoltaic_cell_3>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>],[<solarflux:solar_panel_4>,<actuallyadditions:item_crystal_empowered:5>,<solarflux:solar_panel_4>]]);
 
 # Photovoltaic Cell IV
 recipes.remove(<solarflux:photovoltaic_cell_4>);
@@ -39,7 +43,7 @@ recipes.addShaped(<solarflux:photovoltaic_cell_4> * 3, [[<ore:blockGlassBlue>,<o
 
 # Solar Panel VI
 recipes.remove(<solarflux:solar_panel_6>);
-recipes.addShaped(<solarflux:solar_panel_6>, [[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>]]);
+recipes.addShaped(<solarflux:solar_panel_6> * 2, [[<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>,<solarflux:photovoltaic_cell_4>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>],[<solarflux:solar_panel_5>,<botania:manaresource>,<solarflux:solar_panel_5>]]);
 
 # Photovoltaic Cell V
 recipes.remove(<solarflux:photovoltaic_cell_5>);
@@ -47,7 +51,7 @@ recipes.addShaped(<solarflux:photovoltaic_cell_5> * 3, [[<ore:blockGlassLime>,<o
 
 # Solar Panel VII
 recipes.remove(<solarflux:solar_panel_7>);
-recipes.addShaped(<solarflux:solar_panel_7>, [[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>]]);
+recipes.addShaped(<solarflux:solar_panel_7> * 2, [[<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>,<solarflux:photovoltaic_cell_5>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>],[<solarflux:solar_panel_6>,<bewitchment:cold_iron_ingot>,<solarflux:solar_panel_6>]]);
 
 # Photovoltaic Cell VI
 recipes.remove(<solarflux:photovoltaic_cell_6>);
@@ -55,26 +59,26 @@ recipes.addShaped(<solarflux:photovoltaic_cell_6> * 3, [[<ore:blockGlassGreen>,<
 
 # Solar Panel VIII
 recipes.remove(<solarflux:solar_panel_8>);
-recipes.addShaped(<solarflux:solar_panel_8>, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>]]);
+recipes.addShaped(<solarflux:solar_panel_8> * 2, [[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>],[<solarflux:solar_panel_7>,<astralsorcery:itemcraftingcomponent:1>,<solarflux:solar_panel_7>]]);
 
 # Wyvern Solar Panel
 recipes.remove(<solarflux:solar_panel_wyvern>);
-recipes.addShaped(<solarflux:solar_panel_wyvern>, [[<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>]]);
+recipes.addShaped(<solarflux:solar_panel_wyvern> * 2, [[<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>,<contenttweaker:photovoltaic_cell_vii>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>],[<solarflux:solar_panel_8>,<draconicevolution:wyvern_core>,<solarflux:solar_panel_8>]]);
 
 # Draconic Solar Panel
 recipes.remove(<solarflux:solar_panel_draconic>);
-recipes.addShaped(<solarflux:solar_panel_draconic>, [[<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>]]);
+recipes.addShaped(<solarflux:solar_panel_draconic> * 2, [[<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>],[<solarflux:solar_panel_wyvern>,<draconicevolution:awakened_core>,<solarflux:solar_panel_wyvern>]]);
 
 # Chaotic Solar Panel
-recipes.addShaped(<solarflux:solar_panel_chaotic>, [[<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>],[<solarflux:solar_panel_draconic>,<draconicevolution:chaotic_core>,<solarflux:solar_panel_draconic>],[<solarflux:solar_panel_draconic>,<draconicevolution:chaotic_core>,<solarflux:solar_panel_draconic>]]);
+recipes.addShaped(<solarflux:solar_panel_chaotic> * 2, [[<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>,<contenttweaker:photovoltaic_cell_ix>],[<solarflux:solar_panel_draconic>,<draconicevolution:chaotic_core>,<solarflux:solar_panel_draconic>],[<solarflux:solar_panel_draconic>,<draconicevolution:chaotic_core>,<solarflux:solar_panel_draconic>]]);
 
 # Neutronium Solar Panel
 mods.avaritia.ExtremeCrafting.remove(<solarflux:solar_panel_neutronium>);
-recipes.addShaped(<solarflux:solar_panel_neutronium>, [[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>]]);
+recipes.addShaped(<solarflux:solar_panel_neutronium> * 2, [[<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>,<contenttweaker:photovoltaic_cell_x>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>],[<solarflux:solar_panel_chaotic>,<contenttweaker:neutronium_singularity>,<solarflux:solar_panel_chaotic>]]);
 
 # Solar Panel of Infinity
 mods.avaritia.ExtremeCrafting.remove(<solarflux:solar_panel_infinity>);
-recipes.addShaped(<solarflux:solar_panel_infinity>, [[<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>]]);
+recipes.addShaped(<solarflux:solar_panel_infinity> * 2, [[<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>,<contenttweaker:photovoltaic_cell_xi>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>],[<solarflux:solar_panel_neutronium>,<contenttweaker:infinite_singularity>,<solarflux:solar_panel_neutronium>]]);
 
 # Blank Upgrade
 recipes.remove(<solarflux:blank_upgrade>);

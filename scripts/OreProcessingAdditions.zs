@@ -169,6 +169,11 @@ for ore in allBlackQuartzOresListed {
 	EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
 }
 
+# Sand -> Gravel in the Pulverizer
+for s in <ore:sand>.items {
+	mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gravel>, s, 2000);
+}
+
 # Zanite
 val zaniteGem = <aether_legacy:zanite_gemstone>;
 val zaniteOre = <aether_legacy:zanite_ore>;

@@ -242,42 +242,54 @@ recipes.addShaped(<mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:ingotOs
 # Advanced Fluid Tank
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 1}));
 recipes.addShaped("mek_fluidtank_upgrade1", <mekanism:machineblock2:11>.withTag({tier: 1}), [[<mekanism:enrichedalloy>,<thermalfoundation:material:352>,<mekanism:enrichedalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 0}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:enrichedalloy>,<thermalfoundation:material:352>,<mekanism:enrichedalloy>]],
-	function(out, ins, cInfo) { 
+function(out, ins, cInfo) { 
 	if(ins.tank.tag has "mekData") {
-		return out.withTag({tier: 1, mekData:{fluidTank: ins.tank.tag.mekData.fluidTank}});
+		if(ins.tank.tag.mekData has "fluidTank") {
+			return out.withTag({tier: 1, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+		} else {
+			return out.withTag({tier: 1, mekData: ins.tank.tag.mekData});
+		}
 	} else {
 		return out;
-	}}, null);
+}}, null);
 
 # Elite Fluid Tank
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 2}));
 recipes.addShaped("mek_fluidtank_upgrade2", <mekanism:machineblock2:11>.withTag({tier: 2}), [[<mekanism:reinforcedalloy>,<thermalfoundation:material:352>,<mekanism:reinforcedalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 1}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:reinforcedalloy>,<thermalfoundation:material:352>,<mekanism:reinforcedalloy>]],
-	function(out, ins, cInfo) { 
+function(out, ins, cInfo) { 
 	if(ins.tank.tag has "mekData") {
-		return out.withTag({tier: 2, mekData:{fluidTank: ins.tank.tag.mekData.fluidTank}});
+		if(ins.tank.tag.mekData has "fluidTank") {
+			return out.withTag({tier: 2, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+		} else {
+			return out.withTag({tier: 2, mekData: ins.tank.tag.mekData});
+		}
 	} else {
 		return out;
-	}}, null);
+}}, null);
 
 # Ultimate Fluid Tank
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 3}));
 recipes.addShaped("mek_fluidtank_upgrade3", <mekanism:machineblock2:11>.withTag({tier: 3}), [[<mekanism:atomicalloy>,<thermalfoundation:material:352>,<mekanism:atomicalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 2}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:atomicalloy>,<thermalfoundation:material:352>,<mekanism:atomicalloy>]],
-	function(out, ins, cInfo) { 
+function(out, ins, cInfo) { 
 	if(ins.tank.tag has "mekData") {
-		return out.withTag({tier: 3, mekData:{fluidTank: ins.tank.tag.mekData.fluidTank}});
+		if(ins.tank.tag.mekData has "fluidTank") {
+			return out.withTag({tier: 3, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+		} else {
+			return out.withTag({tier: 3, mekData: ins.tank.tag.mekData});
+		}
 	} else {
 		return out;
-	}}, null);
+}}, null);
 
 # Fluidic Plenisher
 recipes.remove(<mekanism:machineblock2:12>);
 recipes.addShaped("mek_fluidic_plenisher", <mekanism:machineblock2:12>, [[<thermalfoundation:material:321>,<mekanism:controlcircuit>,<thermalfoundation:material:321>],[<thermalfoundation:material:321>,<mekanism:machineblock:12>.marked("pump"),<thermalfoundation:material:321>],[<thermalfoundation:material:321>,<mekanism:controlcircuit>,<thermalfoundation:material:321>]],
-	function(out, ins, cInfo) {
+function(out, ins, cInfo) {
 	if(ins.pump.tag has "mekData") {
 		return out.withTag({mekData: {energyStored: ins.pump.tag.mekData.energyStored}});
 	} else {
 		return out;
-	}}, null);
+}}, null);
 
 # Security Desk
 recipes.remove(<mekanism:basicblock2:9>);
@@ -286,10 +298,12 @@ recipes.addShaped(<mekanism:basicblock2:9>, [[<thermalfoundation:material:352>,<
 # Speed Upgrade
 recipes.remove(<mekanism:speedupgrade>);
 recipes.addShaped(<mekanism:speedupgrade>, [[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>],[<mekanism:enrichedalloy>,<ore:dustOsmium>,<mekanism:enrichedalloy>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
+<mekanism:speedupgrade>.maxStackSize = 64;
 
 # Energy Upgrade
 recipes.remove(<mekanism:energyupgrade>);
 recipes.addShaped(<mekanism:energyupgrade>, [[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>],[<mekanism:enrichedalloy>,<ore:ingotOsgloglas>,<mekanism:enrichedalloy>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
+<mekanism:energyupgrade>.maxStackSize = 64;
 
 # Muffling Upgrade
 recipes.remove(<mekanism:mufflingupgrade>);
@@ -474,6 +488,7 @@ recipes.addShaped(<mekanism:transmitter:3>.withTag({tier: 3}) * 3, [[<mekanism:c
 # Gas Upgrade
 recipes.remove(<mekanism:gasupgrade>);
 recipes.addShaped(<mekanism:gasupgrade>, [[<enderio:item_alloy_ingot>,<mekanism:speedupgrade>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>,<thermalfoundation:material:136>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:1>]]);
+<mekanism:gasupgrade>.maxStackSize = 64;
 
 # Filter Upgrade
 recipes.remove(<mekanism:filterupgrade>);

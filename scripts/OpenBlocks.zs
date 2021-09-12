@@ -160,6 +160,6 @@ for i in 0 to 16 {
 
 # /dev/null
 recipes.remove(<openblocks:dev_null>);
-recipes.addShaped(<openblocks:dev_null>.withTag({}), [[null,<contenttweaker:open_ingot>,null],[<contenttweaker:open_ingot>,<danknull:dank_null_panel_0>,<contenttweaker:open_ingot>],[null,<contenttweaker:open_ingot>,null]]);
+recipes.addShaped(<openblocks:dev_null>.withTag({}), [[null,<minecraft:paper>,null],[<minecraft:paper>,<danknull:dank_null_panel_0>,<minecraft:paper>],[null,<minecraft:paper>,null]]);
 
 print("ENDING OpenBlocks.zs");

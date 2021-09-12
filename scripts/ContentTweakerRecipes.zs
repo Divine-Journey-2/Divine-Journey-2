@@ -166,11 +166,16 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:industrial_slime_
 
 # Energized Osmium Ingot
 recipes.addShaped(<contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]]);
+/*
 recipes.addHiddenShaped("energized_osmium_tank", <contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<thermalexpansion:tank>.reuse().marked("input_tank"),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]],
 function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "Fluid") {
-		if(ins.input_tank.tag.Fluid.FluidName == "biodiesel" && ins.input_tank.tag.Fluid.Amount >= 1000) {
-			return out;
+	if(!isNull(cInfo.inventory as bool)) {
+		if(ins.input_tank.tag has "Fluid") {
+			if(ins.input_tank.tag.Fluid.FluidName == "biodiesel" && ins.input_tank.tag.Fluid.Amount >= 1000) {
+				return out;
+			} else {
+				return null;
+			}
 		} else {
 			return null;
 		}
@@ -179,17 +184,19 @@ function(out,ins,cInfo) {
 	}
 },
 function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <thermalexpansion:tank>.name) {
-				tank_position = i;
-				break;
+	if(!isNull(cInfo.inventory as bool)) {
+		var tank_position = 0 as int;
+		for i in 0 to cInfo.inventory.size {
+			if(!isNull(cInfo.inventory.getStack(i))) {
+				if(cInfo.inventory.getStack(i).name == <thermalexpansion:tank>.name) {
+					tank_position = i;
+					break;
+				}
 			}
 		}
+		val fluid_amount = cInfo.inventory.getStack(tank_position).tag.Fluid.Amount;
+		cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {Fluid: {FluidName: "biodiesel", Amount: fluid_amount - 1000}}));
 	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.Fluid.Amount;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {Fluid: {FluidName: "biodiesel", Amount: fluid_amount - 1000}}));
 });
 recipes.addHiddenShaped("energized_osmium_tank2", <contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<enderio:block_tank:*>.reuse().marked("input_tank"),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]],
 function(out,ins,cInfo) {
@@ -221,6 +228,7 @@ function(out, cInfo, player){
 	val tank_capacity = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Capacity;
 	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {"enderio:data": {tank: {FluidName: "biodiesel", Capacity: tank_capacity, Amount: fluid_amount - 1000}}}));
 });
+*/
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_osmium_ingot>, <mekanism:ingot:1>, <liquid:biodiesel> * 100, 1000);
 recipes.addShapeless(<contenttweaker:energized_osmium_ingot> * 9, [<contenttweaker:energized_osmium_block>]);
 
@@ -230,6 +238,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_osmium_
 
 # Energized Certus Quartz Crystal
 recipes.addShaped(<contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}),<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]]);
+/*
 recipes.addHiddenShaped("energized_certus_tank", <contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<thermalexpansion:tank>.reuse().marked("input_tank"),<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]],
 function(out,ins,cInfo) {
 	if(ins.input_tank.tag has "Fluid") {
@@ -285,6 +294,7 @@ function(out, cInfo, player){
 	val tank_capacity = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Capacity;
 	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {"enderio:data": {tank: {FluidName: "biodiesel", Capacity: tank_capacity, Amount: fluid_amount - 1000}}}));
 });
+*/
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_crystal>, <appliedenergistics2:material>, <liquid:biodiesel> * 100, 1000);
 recipes.addShapeless(<contenttweaker:energized_certus_quartz_crystal> * 4, [<contenttweaker:energized_certus_quartz_block>]);
 
