@@ -442,8 +442,10 @@ recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<m
 
 # Excavator changes
 mods.immersiveengineering.Excavator.removeMineral("Platinum");
+mods.immersiveengineering.Excavator.removeMineral("Iridium");
 mods.immersiveengineering.Excavator.removeMineral("Uranium");
-mods.immersiveengineering.Excavator.addMineral("Osmium", 35, 0.005, ["ore:oreOsmium"], [1.0], [0, -1]);
+mods.immersiveengineering.Excavator.addMineral("Osmium", 35, 0.005, ["oreOsmium"], [1.0], [0, -1]);
+mods.immersiveengineering.Excavator.getMineral("Nickel").removeOre("orePlatinum");
 
 # Creative Capacitor
 mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,
