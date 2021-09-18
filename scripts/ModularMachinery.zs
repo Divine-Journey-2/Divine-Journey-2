@@ -7,7 +7,8 @@ print("STARTING ModularMachinery.zs");
 
 # Modularium
 recipes.remove(<modularmachinery:itemmodularium>);
-EIOAlloySmelter.addRecipe(<modularmachinery:itemmodularium> * 16, [<plustic:mirioningot>,<enderutilities:enderpart:2>,<botania:quartz> * 4], 24000);
+#EIOAlloySmelter.addRecipe(<modularmachinery:itemmodularium> * 16, [<plustic:mirioningot>,<enderutilities:enderpart:2>,<botania:quartz> * 4], 24000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium> * 16, <plustic:mirioningot>, null, 120, 400, [<enderutilities:enderpart:2>,<botania:quartz> * 4]);
 
 # Tender Ender Blender Machine Blueprint

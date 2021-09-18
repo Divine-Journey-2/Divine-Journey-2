@@ -243,6 +243,10 @@ recipes.addShapedMirrored(<enderutilities:endertool:3>, [[<enderutilities:enderp
 recipes.remove(<enderutilities:handybag>);
 recipes.addShaped(<enderutilities:handybag>, [[<contenttweaker:industrial_leather>,<enderstorage:ender_pouch>,<contenttweaker:industrial_leather>],[<enderutilities:enderpart:2>,<actuallyadditions:block_misc:8>,<enderutilities:enderpart:2>],[<contenttweaker:industrial_leather>,<enderstorage:ender_pouch>,<contenttweaker:industrial_leather>]]);
 
+# Handy Bag (Large)
+recipes.remove(<enderutilities:handybag:1>);
+recipes.addShaped(<enderutilities:handybag:1>, [[<contenttweaker:magical_leather>,<enderstorage:ender_pouch>,<contenttweaker:magical_leather>],[<contenttweaker:infused_magical_core>,<extendedcrafting:frame>,<contenttweaker:infused_magical_core>],[<contenttweaker:magical_leather>,<enderstorage:ender_pouch>,<contenttweaker:magical_leather>]]);
+
 # Inventory Swapper
 recipes.remove(<enderutilities:inventoryswapper>);
 recipes.addShaped(<enderutilities:inventoryswapper>, [[<enderutilities:enderpart:21>,<enderutilities:enderpart:2>,<enderutilities:enderpart:21>],[<enderio:item_alloy_endergy_ingot:4>,<enderstorage:ender_pouch>,<enderio:item_alloy_endergy_ingot:4>],[<minecraft:sticky_piston>,<enderutilities:enderpart:2>,<minecraft:sticky_piston>]]);

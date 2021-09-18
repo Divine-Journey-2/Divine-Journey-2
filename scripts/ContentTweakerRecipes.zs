@@ -415,14 +415,13 @@ recipes.addShapeless(<contenttweaker:aechomedirus> * 9, [<contenttweaker:aechome
 
 # Resonating Orb
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:resonating_orb>, <contenttweaker:healing_stone_block> * 2, null, 240, 800, [<contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2]);
-EIOAlloySmelter.addRecipe(<contenttweaker:resonating_orb>, [<contenttweaker:healing_stone_block> * 2, <contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2], 40000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:resonating_orb>, [<contenttweaker:healing_stone_block> * 2, <contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2], 40000);
 
 # Santa Armor Set
 recipes.addShapeless(<contenttweaker:santa_armor_set>, [<divinerpg:santa_helmet>,<divinerpg:santa_chestplate>,<divinerpg:santa_leggings>,<divinerpg:santa_boots>]);
 
 # Festive Ball
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:festive_ball>, <contenttweaker:santa_armor_set>, null, 240, 800, [<divinerpg:workshop_lamp> * 16, <divinerpg:ice_shards> * 16]);
-EIOAlloySmelter.addRecipe(<contenttweaker:festive_ball>, [<contenttweaker:santa_armor_set>, <divinerpg:workshop_lamp> * 16, <divinerpg:ice_shards> * 16], 40000);
 
 # Festive Powder
 IECrusher.addRecipe(<contenttweaker:festive_powder>, <contenttweaker:festive_ball>, 4000);
@@ -535,7 +534,8 @@ mods.jei.JEI.addItem(empowered_glod_crystal);
 mods.jei.JEI.addItem(empowered_glod_crystal_block);
 
 # Crystal Bundle
-EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 6, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 6, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 6, empowered_glod_crystal * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
 
 # Empowered Crystal Bundle
@@ -1422,7 +1422,8 @@ recipes.addShaped(<contenttweaker:galactic_block>, [[<contenttweaker:galactic_in
 
 # Tough Galactic Plating
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:tough_galactic_plating>, <thermalfoundation:material:327> * 4, null, 300, 1000, [<thermalfoundation:material:325> * 4, <thermalfoundation:material:328> * 4]);
-EIOAlloySmelter.addRecipe(<contenttweaker:tough_galactic_plating>, [<thermalfoundation:material:327> * 4, <thermalfoundation:material:325> * 4, <thermalfoundation:material:328> * 4], 60000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:tough_galactic_plating>, [<thermalfoundation:material:327> * 4, <thermalfoundation:material:325> * 4, <thermalfoundation:material:328> * 4], 60000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Galactic Machine Frame
 recipes.addShaped(<contenttweaker:galactic_machine_frame>, [[<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>],[<contenttweaker:galactic_ingot>,<extendedcrafting:frame>,<contenttweaker:galactic_ingot>],[<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>]]);
@@ -1432,7 +1433,8 @@ recipes.addShaped(<contenttweaker:tin_sheetmetal> * 4, [[<thermalfoundation:mate
 
 # Cheesy Silicon Compound
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, null, 160, 240, [<galacticraftcore:cheese_curd> * 12], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, [<projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12], 10000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, [<projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12], 10000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12, 400);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cheesy_silicon_compound>, <projectred-core:resource_item:301>, <galacticraftcore:cheese_curd> * 12, 10000);
 
@@ -1546,7 +1548,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:corrupted_core>,
 
 # Cadmium Arsenic Compound
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, null, 200, 1024, [<alchemistry:ingot:33> * 4], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, [<alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4], 32000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, [<alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4, 320);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:cadmium_arsenic_compound>, <alchemistry:ingot:48> * 4, <alchemistry:ingot:33> * 4, 32000);
 
@@ -1558,13 +1561,15 @@ mods.alchemistry.Liquifier.addRecipe(<liquid:mercury>, <alchemistry:element:80> 
 
 # Chromium Barium Compound
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, null, 200, 1024, [<alchemistry:ingot:56> * 4], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, [<alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4], 32000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, [<alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4, 320);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chromium_barium_compound>, <alchemistry:ingot:24> * 4, <alchemistry:ingot:56> * 4, 32000);
 
 # Antimony Strontium Compound
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, null, 200, 1024, [<alchemistry:ingot:51> * 4], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, [<alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4], 32000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, [<alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4, 320);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:antimony_strontium_compound>, <alchemistry:ingot:38> * 4, <alchemistry:ingot:51> * 4, 32000);
 
@@ -1576,13 +1581,15 @@ recipes.addShaped(<contenttweaker:copper_bismid_carbonate_sheet> * 2, [[<alchemi
 
 # Ruby Rubidium
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, null, 200, 1024, [<alchemistry:ingot:37> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, [<projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8], 32000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, [<projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 320);
 mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:ruby_rubidium>, <projectred-core:resource_item:200> * 8, <alchemistry:ingot:37> * 8, 32000);
 
 # V.M.B. Compund
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:vmb_compound>, <alchemistry:ingot:23> * 8, null, 200, 2048, [<alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:vmb_compound>, [<alchemistry:ingot:23> * 8, <alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], 64000);
+#EIOAlloySmelter.addRecipe(<contenttweaker:vmb_compound>, [<alchemistry:ingot:23> * 8, <alchemistry:ingot:101> * 2, <alchemistry:ingot:5> * 8], 64000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Fission Coolant Unit
 recipes.addShaped(<contenttweaker:fission_coolant> * 16, [[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>],[<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>],[<alchemistry:neon_light>,<contenttweaker:cadmium_arsenic_compound>,<alchemistry:neon_light>]]);

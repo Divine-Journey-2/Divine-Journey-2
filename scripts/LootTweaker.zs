@@ -65,7 +65,7 @@ add_entry("divinerpg:entities/boss/ancient_entity", "ancient_leg", <contenttweak
 # The Watcher: Eye of the Watcher
 add_entry("divinerpg:entities/boss/the_watcher", "eye_of_the_watcher", <contenttweaker:eye_of_the_watcher>, 1, 1, 0, 0, 100);
 <contenttweaker:eye_of_the_watcher>.addTooltip(format.white("Dropped by ") + format.red("The Watcher") + format.white(", who's summoned by "));
-<contenttweaker:eye_of_the_watcher>.addTooltip(format.white("the ") + format.blue("Eye of the Watcher") + format.white(" in the Nether."));
+<contenttweaker:eye_of_the_watcher>.addTooltip(format.white("the ") + format.blue("Call of the Watcher") + format.white(" in the Nether."));
 
 # Ayeraco Horde: Ayeraco Wing
 add_entry("divinerpg:entities/boss/ayeraco_blue", "ayeraco_wing", <contenttweaker:ayeraco_wing>, 1, 2, 0, 0, 100);

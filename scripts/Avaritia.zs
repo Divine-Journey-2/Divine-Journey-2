@@ -11,7 +11,8 @@ print("STARTING Avaritia.zs");
 # Crystal Matrix Ingot
 recipes.removeShaped(<avaritia:resource:1>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<avaritia:resource:1>, <avaritia:resource> * 5, null, 600, 800, [<minecraft:nether_star> * 2]);
-EIOAlloySmelter.addRecipe(<avaritia:resource:1>, [<avaritia:resource> * 5, <minecraft:nether_star> * 2], 80000);
+#EIOAlloySmelter.addRecipe(<avaritia:resource:1>, [<avaritia:resource> * 5, <minecraft:nether_star> * 2], 80000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<avaritia:resource:1>, <avaritia:resource> * 5, <minecraft:nether_star> * 2, 1200);
 mods.thermalexpansion.InductionSmelter.addRecipe(<avaritia:resource:1>, <avaritia:resource> * 5, <minecraft:nether_star> * 2, 80000);
 

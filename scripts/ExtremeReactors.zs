@@ -61,7 +61,8 @@ recipes.removeShapeless(<bigreactors:ingotcyanite>, [<ore:sand>,<bigreactors:ing
 # Blutonium Ingot
 recipes.removeShaped(<bigreactors:ingotblutonium>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<bigreactors:ingotblutonium>, <bigreactors:ingotcyanite> * 4, null, 80, 256, [<contenttweaker:mystical_iron_ingot>], "Alloying");
-EIOAlloySmelter.addRecipe(<bigreactors:ingotblutonium>, [<bigreactors:ingotcyanite> * 4, <contenttweaker:mystical_iron_ingot>], 4000);
+#EIOAlloySmelter.addRecipe(<bigreactors:ingotblutonium>, [<bigreactors:ingotcyanite> * 4, <contenttweaker:mystical_iron_ingot>], 4000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<bigreactors:ingotblutonium>, <bigreactors:ingotcyanite> * 4, <contenttweaker:mystical_iron_ingot>, 160);
 mods.thermalexpansion.InductionSmelter.addRecipe(<bigreactors:ingotblutonium>, <bigreactors:ingotcyanite> * 4, <contenttweaker:mystical_iron_ingot>, 4000);
 

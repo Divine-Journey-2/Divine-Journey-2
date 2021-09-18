@@ -9,8 +9,9 @@ print("STARTING SimplyJetpacks.zs");
 
 # Dark Soularium
 mods.enderio.AlloySmelter.removeRecipe(<simplyjetpacks:metaitemmods:12>);
-mods.enderio.AlloySmelter.addRecipe(<simplyjetpacks:metaitemmods:12>, [<enderio:item_alloy_ingot:6> * 10, <enderio:item_alloy_ingot:7> * 3, <contenttweaker:ingot_of_elevation>], 32000);
-mods.immersiveengineering.ArcFurnace.addRecipe(<simplyjetpacks:metaitemmods:12>, <enderio:item_alloy_ingot:6> * 10, null, 200, 512, [<enderio:item_alloy_ingot:7> * 3, <contenttweaker:ingot_of_elevation>], "Alloying");
+mods.enderio.AlloySmelter.addRecipe(<simplyjetpacks:metaitemmods:12>, [<enderio:block_alloy:6>, <enderio:item_alloy_ingot:7>, <contenttweaker:ingot_of_elevation>], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
+mods.immersiveengineering.ArcFurnace.addRecipe(<simplyjetpacks:metaitemmods:12>, <enderio:block_alloy:6>, null, 200, 512, [<enderio:item_alloy_ingot:7>, <contenttweaker:ingot_of_elevation>], "Alloying");
 
 # Leadstone Thruster
 recipes.remove(<simplyjetpacks:metaitemmods:20>);

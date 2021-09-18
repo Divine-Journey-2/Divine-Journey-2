@@ -17,7 +17,8 @@ recipes.remove(<extendedcrafting:handheld_table>);
 # Black Iron Ingot
 recipes.removeShapeless(<extendedcrafting:material>, [<minecraft:iron_ingot>,<*>]);
 mods.immersiveengineering.ArcFurnace.addRecipe(<extendedcrafting:material> * 4, <ore:ingot_dark_soularium>, null, 1200, 512, [<quantumflux:darkstone> * 3], "Alloying");
-EIOAlloySmelter.addRecipe(<extendedcrafting:material> * 4, [<ore:ingot_dark_soularium>, <quantumflux:darkstone> * 3], 120000);
+#EIOAlloySmelter.addRecipe(<extendedcrafting:material> * 4, [<ore:ingot_dark_soularium>, <quantumflux:darkstone> * 3], 120000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<extendedcrafting:material> * 4, <ore:ingot_dark_soularium>, <quantumflux:darkstone> * 3, 6000);
 mods.thermalexpansion.InductionSmelter.addRecipe(<extendedcrafting:material> * 4, <simplyjetpacks:metaitemmods:12>, <quantumflux:darkstone> * 3, 120000);
 

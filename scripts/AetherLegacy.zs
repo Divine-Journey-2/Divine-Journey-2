@@ -55,4 +55,7 @@ recipes.remove(<aether_legacy:aerogel_slab>);
 # Moa Egg removal from Egg OreDict
 <ore:egg>.remove(<aether_legacy:moa_egg>);
 
+# Aerogel recipe with Mystical Agriculture Essences
+recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>],[<mysticalagriculture:fire_essence>,<mysticalagriculture:saltpeter_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>]]);
+
 print("ENDING AetherLegacy.zs");

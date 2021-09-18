@@ -156,7 +156,8 @@ EIOAlloySmelter.addRecipe(<abyssalcraft:powerstonetracker>, [<minecraft:ender_ey
 # Chunk of Coralium
 recipes.remove(<abyssalcraft:cchunk>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<abyssalcraft:cchunk>, <abyssalcraft:ccluster9> * 9, null, 40, 512, [<abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], "Alloying");
-EIOAlloySmelter.addRecipe(<abyssalcraft:cchunk>, [<abyssalcraft:ccluster9> * 9, <abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], 16000);
+#EIOAlloySmelter.addRecipe(<abyssalcraft:cchunk>, [<abyssalcraft:ccluster9> * 9, <abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], 16000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Refined Coralium Sword
 recipes.remove(<abyssalcraft:corsword>);

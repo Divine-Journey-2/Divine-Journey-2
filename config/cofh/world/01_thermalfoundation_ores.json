@@ -495,7 +495,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-					"name": "rftools:dimensional_shard_ore:",
+					"name": "rftools:dimensional_shard_ore",
 					"properties": {
 						"metadata": 1
 					}
@@ -511,6 +511,72 @@
 				"restriction": "blacklist",
 				"value": [
 					-1
+				]
+			}
+		},
+		"fossil": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "erebus:ore_fossil"
+				},
+				"material": "erebus:umberstone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 1,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					66
+				]
+			}
+		},
+		"temple": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "erebus:ore_temple"
+				},
+				"material": "erebus:umberstone",
+				"cluster-size": 2
+			},
+			"cluster-count": 3,
+			"min-height": 1,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					66
+				]
+			}
+		},
+		"gneiss": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "erebus:ore_gneiss"
+				},
+				"material": "erebus:umberstone",
+				"cluster-size": 1
+			},
+			"cluster-count": 2,
+			"min-height": 1,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					66
 				]
 			}
 		}

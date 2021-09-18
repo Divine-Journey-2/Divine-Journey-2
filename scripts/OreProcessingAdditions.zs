@@ -667,7 +667,9 @@ LightningCrusher.add(<extendedcrafting:material:32> * 64, <extendedcrafting:sing
 mods.mekanism.crusher.addRecipe(<extendedcrafting:singularity_ultimate>, <extendedcrafting:material:32> * 64);
 
 # UB Ores -> SAG Mill
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:892>,<thermalfoundation:material:892>,<thermalfoundation:material:833>], [1.0,0.25,0.15], <ore:oreClathrateOilSand>, "CHANCE_ONLY");
+mods.enderio.SagMill.removeRecipe(<thermalfoundation:ore_fluid>);
+mods.enderio.SagMill.removeRecipe(<thermalfoundation:ore_fluid:5>);
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:892> * 2,<thermalfoundation:material:892> * 2,<thermalfoundation:material:833>], [1.0,0.25,0.15], <ore:oreClathrateOilSand>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:67> * 2,<thermalfoundation:material:66>], [1.0,0.2], <ore:oreLead>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2,<appliedenergistics2:material:3>], [1.0,0.1], <ore:oreQuartz>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2,<thermalfoundation:material:67>], [1.0,0.2], <ore:oreSilver>, "CHANCE_ONLY");
@@ -895,5 +897,20 @@ mods.mekanism.crusher.addRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> 
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2050>, <thermalfoundation:material:2051> * 4);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2048>, <thermalfoundation:material:2049> * 4);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2052>, <thermalfoundation:material:2053> * 4);
+
+# Certus Quartz Dust from Certus Quartz
+val certusQuartzCrystals = [<appliedenergistics2:material>, <appliedenergistics2:material:1>] as IItemStack[];
+for c in certusQuartzCrystals {
+	recipes.addShapeless(<appliedenergistics2:material:2>, [c, <ore:dustPetrotheum>]);
+	IECrusher.addRecipe(<appliedenergistics2:material:2>, c, 4000);
+	AACrusher.addRecipe(<appliedenergistics2:material:2>, c);
+	EUCrusher.add(<appliedenergistics2:material:2>, c);
+	LightningCrusher.add(<appliedenergistics2:material:2>, c);
+}
+Grinder.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000);
+
+# Gold Ore in the SAG Mill
+mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:866>], [1.0,0.05], <ore:oreGold>, "CHANCE_ONLY");
 
 print("ENDING OreProcessingAdditions.zs");

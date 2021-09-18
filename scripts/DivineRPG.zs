@@ -22,7 +22,8 @@ recipes.addShaped(<divinerpg:bedrock_chunk>, [[<extrautils2:compressedcobbleston
 
 # Snowflake Shurikens into Snowflakes
 mods.immersiveengineering.ArcFurnace.addRecipe(<divinerpg:snowflake>, <divinerpg:snowflake_shuriken> * 16, null, 40, 100, [<minecraft:ice> * 4]);
-mods.enderio.AlloySmelter.addRecipe(<divinerpg:snowflake>, [<divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4], 2500);
+#mods.enderio.AlloySmelter.addRecipe(<divinerpg:snowflake>, [<divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4], 2500);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.thermalexpansion.InductionSmelter.addRecipe(<divinerpg:snowflake>, <divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4, 2500);
 
 # Shadow Stone
@@ -44,17 +45,23 @@ recipes.addShaped(<divinerpg:snow_globe>, [[<ore:blockGlassColorless>,<minecraft
 recipes.remove(<divinerpg:mysterious_clock>);
 recipes.addShaped(<divinerpg:mysterious_clock>, [[<contenttweaker:steaming_restonia_crystal_block>,<minecraft:clock>,<contenttweaker:steaming_restonia_crystal_block>],[<minecraft:clock>,<extrautils2:decorativesolid:8>,<minecraft:clock>],[<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>]]);
 <divinerpg:mysterious_clock>.addTooltip(format.bold(format.white("Used to summon the ")) + format.bold(format.darkRed("Ancient Entity")) + format.bold(format.white(" in the Overworld.")));
+<divinerpg:mysterious_clock>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
+<divinerpg:mysterious_clock>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Call of the Watcher
 recipes.remove(<divinerpg:call_of_the_watcher>);
 recipes.addShaped(<divinerpg:call_of_the_watcher>, [[<enderutilities:enderpart:2>,<divinerpg:watching_eye>,<enderutilities:enderpart:2>],[<divinerpg:watching_eye>,<extrautils2:decorativesolid:8>,<divinerpg:watching_eye>],[<divinerpg:molten_stone>,<divinerpg:molten_stone>,<divinerpg:molten_stone>]]);
 <divinerpg:call_of_the_watcher>.addTooltip(format.bold(format.white("Used to summon ")) + format.bold(format.red("The Watcher")) + format.bold(format.white(" in the Nether.")));
+<divinerpg:call_of_the_watcher>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
+<divinerpg:call_of_the_watcher>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Horde Horn
 recipes.remove(<divinerpg:horde_horn>);
 recipes.addShaped(<divinerpg:horde_horn>, [[<thermalfoundation:storage:7>,<actuallyadditions:item_misc:15>,<thermalfoundation:storage:7>],[<actuallyadditions:item_misc:15>,<extrautils2:decorativesolid:8>,<actuallyadditions:item_misc:15>],[<divinerpg:ender_stone>,<divinerpg:ender_stone>,<divinerpg:ender_stone>]]);
 <divinerpg:horde_horn>.addTooltip(format.white("Used to summon the ") + format.gray("Ayeraco Horde") + format.white(" in the End."));
 <divinerpg:horde_horn>.addTooltip(format.white("It consists of the ") + format.blue("Blue") + format.white(", ") + format.green("Green") + format.white(", ") + format.yellow("Yellow") + format.white(", ") + format.red("Red") + format.white(" & ") + format.lightPurple("Purple") + format.white(" Ayeraco."));
+<divinerpg:horde_horn>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
+<divinerpg:horde_horn>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Angelic Chestplate
 recipes.remove(<divinerpg:angelic_chestplate>);
@@ -186,10 +193,17 @@ add_DivineRPG_dimensional_armor_recipes(<divinerpg:mortum_helmet>,<divinerpg:mor
 recipes.remove(<divinerpg:wildwood_block>);
 mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:wildwood_block> * 14,
 [[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>],
+[<divinerpg:wildwood_chunk>,<botania:manaresource:22>,<botania:managlass>,<botania:manaresource:22>,<divinerpg:wildwood_chunk>],
+[<botania:storage:3>,<botania:managlass>,<botania:managlass>,<botania:managlass>,<botania:storage:3>],
+[<divinerpg:wildwood_chunk>,<botania:manaresource:22>,<botania:managlass>,<botania:manaresource:22>,<divinerpg:wildwood_chunk>],
+[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>]]);
+/*
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:wildwood_block> * 14,
+[[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>],
 [<divinerpg:wildwood_chunk>,<botania:spellcloth>.noReturn(),<botania:managlass>,<botania:spellcloth>.noReturn(),<divinerpg:wildwood_chunk>],
 [<botania:storage:3>,<botania:managlass>,<botania:managlass>,<botania:managlass>,<botania:storage:3>],
 [<divinerpg:wildwood_chunk>,<botania:spellcloth>.noReturn(),<botania:managlass>,<botania:spellcloth>.noReturn(),<divinerpg:wildwood_chunk>],
-[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>]]);
+[<botania:storage>,<divinerpg:wildwood_chunk>,<botania:storage:3>,<divinerpg:wildwood_chunk>,<botania:storage>]]);*/
 
 # Apalachia Block
 recipes.remove(<divinerpg:apalachia_block>);

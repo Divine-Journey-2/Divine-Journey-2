@@ -414,7 +414,7 @@ addActuallyRingRecipe(<actuallyadditions:item_potion_ring:5>, <thermalfoundation
 
 # Ring of Growth
 recipes.remove(<actuallyadditions:item_growth_ring>);
-recipes.addShaped(<actuallyadditions:item_growth_ring>.withTag({Energy: 0}), [[<industrialforegoing:fertilizer>,<actuallyadditions:block_crystal_empowered:4>,<industrialforegoing:fertilizer>],[<actuallyadditions:item_misc:8>,<actuallyadditions:item_misc:6>,<actuallyadditions:item_misc:8>],[<industrialforegoing:fertilizer>,<roots:spell_dust>.withTag({spell_holder: {spell_0: "spell_rampant_growth"}}),<industrialforegoing:fertilizer>]]);
+recipes.addShaped(<actuallyadditions:item_growth_ring>.withTag({Energy: 0}), [[<industrialforegoing:fertilizer>,<actuallyadditions:block_crystal_empowered:4>,<industrialforegoing:fertilizer>],[<actuallyadditions:item_misc:8>,<actuallyadditions:item_misc:6>,<actuallyadditions:item_misc:8>],[<industrialforegoing:fertilizer>,<actuallyadditions:block_crystal_empowered:4>,<industrialforegoing:fertilizer>]]);
 
 # Ring of Liquid Banning
 recipes.remove(<actuallyadditions:item_water_removal_ring>);

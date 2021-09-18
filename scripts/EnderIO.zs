@@ -556,6 +556,10 @@ recipes.addShaped(<enderio:item_material:60>, [[<enderio:item_alloy_ingot:3>,<en
 recipes.remove(<enderio:item_conduit_probe>);
 recipes.addShaped(<enderio:item_conduit_probe>, [[<enderio:item_alloy_nugget>,null,<enderio:item_alloy_nugget>],[<enderio:item_alloy_ingot>,<enderio:item_yeta_wrench>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>,<contenttweaker:energized_dark_dust>,<enderio:item_alloy_ingot>]]);
 
+# Conduit Facade
+recipes.remove(<enderio:item_conduit_facade>);
+recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_material:4>,null,<enderio:item_material:4>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+
 # Glider Wing
 recipes.remove(<enderio:item_material:6>);
 recipes.addShapedMirrored(<enderio:item_material:6>, [[null,<enderio:item_alloy_ingot:6>,<contenttweaker:industrial_leather>],[<enderio:item_alloy_ingot:6>,<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>,<openblocks:generic>]]);
@@ -584,8 +588,7 @@ recipes.remove(<enderio:item_dark_steel_boots>);
 recipes.addShaped(<enderio:item_dark_steel_boots>, [[<enderio:block_alloy:6>,null,<enderio:block_alloy:6>],[<thermalfoundation:storage_alloy:7>,<minecraft:diamond_boots>,<thermalfoundation:storage_alloy:7>]]);
 
 # Blank Dark Steel Upgrade
-EIOAlloySmelter.removeRecipe(<enderio:item_dark_steel_upgrade>);
-EIOAlloySmelter.addRecipe(<enderio:item_dark_steel_upgrade>, [<enderio:block_dark_iron_bars> * 64, <contenttweaker:energized_dark_dust> * 32, <thermalfoundation:material:136> * 4], 60000);
+# recipe in enderio/recipes/user/user_recipes.xml
 
 # Dark Bow
 recipes.remove(<enderio:item_dark_steel_bow>);
@@ -741,9 +744,10 @@ recipes.remove(<enderio:item_dark_steel_shield>);
 recipes.addShaped(<enderio:item_dark_steel_shield>, [[<enderio:item_alloy_ingot:6>,<minecraft:iron_ingot>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,null,<enderio:item_alloy_ingot:6>],[null,<enderio:item_alloy_ingot:6>,null]]);
 
 # Organic Black Dye
-EIOAlloySmelter.removeRecipe(<enderio:item_material:50>);
-EIOAlloySmelter.addRecipe(<enderio:item_material:50> * 2, [<ore:allCoalDusts> * 6, <ore:slimeball>, <minecraft:coal:*>], 2000);
-EIOAlloySmelter.addRecipe(<enderio:item_material:50>, [<ore:allCoalDusts> * 3, <minecraft:egg>, <minecraft:coal:*>], 1500);
+#EIOAlloySmelter.removeRecipe(<enderio:item_material:50>);
+#EIOAlloySmelter.addRecipe(<enderio:item_material:50> * 2, [<ore:allCoalDusts> * 6, <ore:slimeball>, <minecraft:coal:*>], 2000);
+#EIOAlloySmelter.addRecipe(<enderio:item_material:50>, [<ore:allCoalDusts> * 3, <minecraft:egg>, <minecraft:coal:*>], 1500);
+# recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Life Stealing Enchantment in the Enchanter
 mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);

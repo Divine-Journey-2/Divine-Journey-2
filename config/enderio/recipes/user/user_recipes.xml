@@ -304,4 +304,306 @@
     </spawning>
   </recipe>
 
+  <recipe name="Dark Steel Upgrade" required="true">
+    <alloying energy="60000">
+      <input name="enderio:block_dark_iron_bars" amount="64" />
+      <input name="contenttweaker:energized_dark_dust" amount="32" />
+      <input name="thermalfoundation:material:136" amount="4" />
+      <output name="enderio:item_dark_steel_upgrade:0" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Snowflake" required="true">
+    <alloying energy="2500">
+      <input name="divinerpg:snowflake_shuriken" amount="16" />
+      <input name="minecraft:ice" amount="4" />
+      <output name="divinerpg:snowflake" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Electrotine Silicon Compound" required="true">
+    <alloying energy="10000">
+      <input name="projectred-core:resource_item:301" />
+      <input name="contenttweaker:electrotine" amount="24" />
+      <output name="projectred-core:resource_item:312" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Red Silicon Compound" required="true">
+    <alloying energy="10000">
+      <input name="projectred-core:resource_item:301" />
+      <input name="minecraft:redstone" amount="24" />
+      <output name="projectred-core:resource_item:310" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Glowing Silicon Compound" required="true">
+    <alloying energy="10000">
+      <input name="projectred-core:resource_item:301" />
+      <input name="minecraft:glowstone_dust" amount="24" />
+      <output name="projectred-core:resource_item:311" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Modularium" required="true">
+    <alloying energy="24000">
+      <input name="plustic:mirioningot" />
+      <input name="enderutilities:enderpart:2" />
+      <input name="botania:quartz:0" amount="4" />
+      <output name="modularmachinery:itemmodularium" amount="16" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Raw Meteoric Iron" required="true">
+    <alloying energy="16000">
+      <input name="galacticraftcore:basic_block_moon:4" amount="8" />
+      <input name="galacticraftcore:basic_block_moon:5" amount="8" />
+      <input name="contenttweaker:cheesy_wafer" />
+      <output name="galacticraftcore:meteoric_iron_raw" amount="3" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Blutonium" required="true">
+    <alloying energy="4000">
+      <input name="bigreactors:ingotcyanite" amount="4" />
+      <input name="contenttweaker:mystical_iron_ingot" />
+      <output name="bigreactors:ingotblutonium" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Black Iron Ingot" required="true">
+    <alloying energy="120000">
+      <input name="simplyjetpacks:metaitemmods:12" />
+      <input name="quantumflux:darkstone:0" amount="3" />
+      <output name="extendedcrafting:material:0" amount="4" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Potentia Sphere" required="true">
+    <alloying energy="10000">
+      <input name="contenttweaker:potency_core" />
+      <input name="contenttweaker:orbis_terrae" amount="4" />
+      <input name="minecraft:slime_ball" amount="12" />
+      <output name="evilcraft:potentia_sphere" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Materialized Vengeance Spirit" required="true">
+    <alloying energy="20000">
+      <input name="evilcraft:vengeance_essence:0" amount="4" />
+      <input name="contenttweaker:praesidium" amount="4" />
+      <input name="contenttweaker:magicales" amount="4" />
+      <output name="evilcraft:vengeance_essence:1" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Darkened Apple" required="true">
+    <alloying energy="32000">
+      <input name="minecraft:apple" />
+      <input name="evilcraft:dark_block" amount="3" />
+      <output name="evilcraft:darkened_apple" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Black Dye" required="true">
+    <alloying energy="2000">
+      <input name="dustCoal,dustCharcoal" amount="6" />
+      <input name="oredict:slimeball" />
+      <input name="itemCoal,itemCharcoal" />
+      <output name="enderio:item_material:50" amount="2" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Black Dye, Variant" required="true">
+    <alloying energy="1500" exp="0.125">
+      <input name="dustCoal,dustCharcoal" amount="3" />
+      <input name="oredict:egg" />
+      <input name="itemCoal,itemCharcoal" />
+      <output name="enderio:item_material:50" />
+    </alloying>
+  </recipe>
+
+  <recipe name="V.M.B. Compound" required="true">
+    <alloying energy="64000">
+      <input name="alchemistry:ingot:23" amount="8" />
+      <input name="alchemistry:ingot:101" amount="2" />
+      <input name="alchemistry:ingot:5" amount="8" />
+      <output name="contenttweaker:vmb_compound" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Ruby Rubidium" required="true">
+    <alloying energy="32000">
+      <input name="projectred-core:resource_item:200" amount="8" />
+      <input name="alchemistry:ingot:37" amount="8" />
+      <output name="contenttweaker:ruby_rubidium" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Antimony Strontium Compound" required="true">
+    <alloying energy="32000">
+      <input name="alchemistry:ingot:38" amount="4" />
+      <input name="alchemistry:ingot:51" amount="4" />
+      <output name="contenttweaker:antimony_strontium_compound" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Chromium Barium Compound" required="true">
+    <alloying energy="32000">
+      <input name="alchemistry:ingot:24" amount="4" />
+      <input name="alchemistry:ingot:56" amount="4" />
+      <output name="contenttweaker:chromium_barium_compound" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Cadmium Arsenic Compound" required="true">
+    <alloying energy="32000">
+      <input name="alchemistry:ingot:48" amount="4" />
+      <input name="alchemistry:ingot:33" amount="4" />
+      <output name="contenttweaker:cadmium_arsenic_compound" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Cheesy Silicon Compound" required="true">
+    <alloying energy="32000">
+      <input name="projectred-core:resource_item:301" />
+      <input name="galacticraftcore:cheese_curd" amount="12" />
+      <output name="contenttweaker:cheesy_silicon_compound" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Tough Galactic Plating" required="true">
+    <alloying energy="32000">
+      <input name="thermalfoundation:material:327" amount="4" />
+      <input name="thermalfoundation:material:325" amount="4" />
+      <input name="thermalfoundation:material:328" amount="4" />
+      <output name="contenttweaker:tough_galactic_plating" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Crystal Bundle" required="true">
+    <alloying energy="32000">
+      <input name="actuallyadditions:item_crystal_empowered:4" />
+      <input name="contenttweaker:empowered_glod_crystal" nbt='{"display":{"Name":"§6Empowered Glod Crystal"}}' amount="3" />
+      <input name="actuallyadditions:item_crystal_empowered:2" />
+      <output name="contenttweaker:crystal_bundle" amount="6" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Rune of the Orb" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:7" />
+      <input name="enderutilities:enderpart:17" />
+      <input name="bloodmagic:slate:4" amount="2" />
+      <output name="bloodmagic:blood_rune:8" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Acceleration Rune" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:1" />
+      <input name="contenttweaker:aether" amount="3" />
+      <input name="bloodmagic:slate:4" amount="2" />
+      <output name="bloodmagic:blood_rune:9" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Displacement Rune" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="contenttweaker:rune_of_water" />
+      <input name="bloodmagic:slate:4" amount="2" />
+      <output name="bloodmagic:blood_rune:5" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Charging Rune" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:1" />
+      <input name="botania:manaresource:8" amount="3" />
+      <input name="bloodmagic:slate:4" amount="2" />
+      <output name="bloodmagic:blood_rune:10" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Efficiency Rune" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="contenttweaker:rune_of_mana" />
+      <input name="bloodmagic:slate:3" amount="2" />
+      <output name="bloodmagic:blood_rune:2" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Rune of Augmented Capacity" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:6" />
+      <input name="extrautils2:drum:3" />
+      <input name="bloodmagic:slate:3" amount="2" />
+      <output name="bloodmagic:blood_rune:7" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Rune of Capacity" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="enderio:block_tank:1" />
+      <input name="bloodmagic:slate:2" amount="2" />
+      <output name="bloodmagic:blood_rune:6" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Rune of Sacrifice" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="thermalfoundation:storage_alloy:5" />
+      <input name="bloodmagic:slate:2" amount="2" />
+      <output name="bloodmagic:blood_rune:3" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Rune of Self-Sacrifice" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="thermalfoundation:storage_alloy:6" />
+      <input name="bloodmagic:slate:1" amount="2" />
+      <output name="bloodmagic:blood_rune:4" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Speed Rune" required="true">
+    <alloying energy="24000">
+      <input name="bloodmagic:blood_rune:0" />
+      <input name="actuallyadditions:item_drill_upgrade_speed_iii" />
+      <input name="bloodmagic:slate:1" amount="2" />
+      <output name="bloodmagic:blood_rune:1" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Demon Heart" required="true">
+    <alloying energy="80000">
+      <input name="bewitchment:demon_heart" amount="10" />
+      <input name="bewitchment:heart" amount="10" />
+      <input name="bloodmagic:item_demon_crystal:0" amount="10" />
+      <output name="bewitchment:demon_heart" amount="20" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Crystal Matrix Ingot" required="true">
+    <alloying energy="80000">
+      <input name="avaritia:resource:0" amount="5" />
+      <input name="minecraft:nether_star" amount="2" />
+      <output name="avaritia:resource:1" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Chunk of Coralium" required="true">
+    <alloying energy="80000">
+      <input name="abyssalcraft:ccluster9" amount="9" />
+      <input name="abyssalcraft:stone:1" amount="48" />
+      <input name="enderutilities:enderpart:0" amount="8" />
+      <output name="abyssalcraft:cchunk" />
+    </alloying>
+  </recipe>
+
 </enderio:recipes>

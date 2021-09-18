@@ -615,6 +615,7 @@ function(out,ins,cInfo) {
 		return out;
 	}
 }, null);
+#<mekanism:atomicdisassembler>.addTooltip(format.red(format.bold("Warning: ")) + format.white("DESTROYS most blocks."));
 
 # Plastic Roads with Sand OreDict
 for i in 0 to 16 {

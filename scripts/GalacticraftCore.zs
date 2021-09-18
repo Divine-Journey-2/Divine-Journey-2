@@ -278,7 +278,8 @@ recipes.addShaped(<galacticraftcore:steel_boots>, [[<galacticraftcore:heavy_plat
 
 # Raw Meteoric Iron (alt. recipe)
 mods.immersiveengineering.ArcFurnace.addRecipe(<galacticraftcore:meteoric_iron_raw> * 3, <galacticraftcore:basic_block_moon:4> * 8, null, 240, 320, [<galacticraftcore:basic_block_moon:5> * 8, <contenttweaker:cheesy_wafer>]);
-EIOAlloySmelter.addRecipe(<galacticraftcore:meteoric_iron_raw> * 3, [<galacticraftcore:basic_block_moon:4> * 8, <galacticraftcore:basic_block_moon:5> * 8, <contenttweaker:cheesy_wafer>], 16000);
+#EIOAlloySmelter.addRecipe(<galacticraftcore:meteoric_iron_raw> * 3, [<galacticraftcore:basic_block_moon:4> * 8, <galacticraftcore:basic_block_moon:5> * 8, <contenttweaker:cheesy_wafer>], 16000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 <galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("Obtained by mining Meteors on any Galacticraft Planet."));
 <galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("They're pretty rare, so an alternative recipe was also added."));
 

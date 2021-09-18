@@ -26,7 +26,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:blood_extractor>.withTa
 # Darkened Apple
 recipes.remove(<evilcraft:darkened_apple>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:darkened_apple>, <minecraft:apple>, null, 120, 512, [<evilcraft:dark_block> * 3], "Alloying");
-EIOAlloySmelter.addRecipe(<evilcraft:darkened_apple>, [<minecraft:apple>, <evilcraft:dark_block> * 3], 32000);
+#EIOAlloySmelter.addRecipe(<evilcraft:darkened_apple>, [<minecraft:apple>, <evilcraft:dark_block> * 3], 32000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 IEAlloySmelter.addRecipe(<evilcraft:darkened_apple>, <minecraft:apple>, <evilcraft:dark_block> * 3, 300);
 mods.thermalexpansion.InductionSmelter.addRecipe(<evilcraft:darkened_apple>, <minecraft:apple>, <evilcraft:dark_block> * 3, 32000);
 
@@ -231,7 +232,8 @@ mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:blood_orb>, <liquid:evilcraftbl
 
 # Materialized Vengeance Essence
 recipes.remove(<evilcraft:vengeance_essence:1>);
-EIOAlloySmelter.addRecipe(<evilcraft:vengeance_essence:1>, [<evilcraft:vengeance_essence> * 4, <contenttweaker:magicales> * 4, <contenttweaker:praesidium> * 4], 20000);
+#EIOAlloySmelter.addRecipe(<evilcraft:vengeance_essence:1>, [<evilcraft:vengeance_essence> * 4, <contenttweaker:magicales> * 4, <contenttweaker:praesidium> * 4], 20000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:vengeance_essence:1>, <evilcraft:vengeance_essence> * 4, null, 120, 400, [<contenttweaker:magicales> * 4, <contenttweaker:praesidium> * 4]);
 
 # Garmonbozia
@@ -260,7 +262,8 @@ recipes.remove(<evilcraft:lightning_bomb>);
 
 # Potentia Sphere
 recipes.remove(<evilcraft:potentia_sphere>);
-EIOAlloySmelter.addRecipe(<evilcraft:potentia_sphere>, [<contenttweaker:potency_core>, <contenttweaker:orbis_terrae> * 4, <minecraft:slime_ball> * 12], 10000);
+#EIOAlloySmelter.addRecipe(<evilcraft:potentia_sphere>, [<contenttweaker:potency_core>, <contenttweaker:orbis_terrae> * 4, <minecraft:slime_ball> * 12], 10000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.immersiveengineering.ArcFurnace.addRecipe(<evilcraft:potentia_sphere>, <contenttweaker:potency_core>, null, 120, 200, [<contenttweaker:orbis_terrae> * 4, <minecraft:slime_ball> * 12]);
 
 # Ender Pearl from Potentia Sphere

@@ -339,7 +339,8 @@ WitchesCauldron.addRecipe([<bewitchment:stew_of_the_grotesque>], [<bewitchment:d
 <bewitchment:demon_heart>.addTooltip(format.white("Dropped by Lesser and Higher Demons. Check"));
 <bewitchment:demon_heart>.addTooltip(format.white("your Codex Infernalis on how to summon them."));
 mods.immersiveengineering.ArcFurnace.addRecipe(<bewitchment:demon_heart> * 20, <bewitchment:demon_heart> * 10, null, 200, 1000, [<bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10]);
-EIOAlloySmelter.addRecipe(<bewitchment:demon_heart> * 20, [<bewitchment:demon_heart> * 10, <bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10], 80000);
+#EIOAlloySmelter.addRecipe(<bewitchment:demon_heart> * 20, [<bewitchment:demon_heart> * 10, <bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10], 80000);
+# Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Broom
 recipes.remove(<bewitchment:broom>);

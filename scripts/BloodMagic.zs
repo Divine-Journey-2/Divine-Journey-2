@@ -149,7 +149,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:alchemy_table>,
 function blood_magic_add_rune_recipe_with_unique_input(rune as IItemStack, runeInput as IItemStack, input1 as IIngredient, input2 as IIngredient) {
 	recipes.remove(rune);
 	mods.immersiveengineering.ArcFurnace.addRecipe(rune, runeInput, null, 160, 512, [input1, input2], "Alloying");
-	EIOAlloySmelter.addRecipe(rune, [runeInput, input1, input2], 24000);
+	#EIOAlloySmelter.addRecipe(rune, [runeInput, input1, input2], 24000);
+	# Alloy Smelter recipes in config/enderio/recipes/user/user_recipes.xml
 }
 
 function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, input2 as IIngredient) {
@@ -396,7 +397,7 @@ addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_fast_miner>, <bloodmagic:comp
 
 # Sight Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:sigil_divination>,<ore:blockGlass>.firstItem,<ore:blockGlass>.firstItem,<minecraft:glowstone_dust>]);
-mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:7>, [<bloodmagic:sigil_divination>,<botania:monocle>,<actuallyadditions:item_engineer_goggles_advanced>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 69 as short}]})], 32, 16);
+mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:component:7>, [<bloodmagic:sigil_divination>,<botania:monocle>,<actuallyadditions:item_engineer_goggles_advanced>,<minecraft:splash_potion>.withTag({Potion: "minecraft:long_night_vision"})], 32, 16);
 
 # Seer's Sigil
 addBloodMagicSigilRecipe(<bloodmagic:sigil_seer>, <bloodmagic:component:7>, <bloodmagic:slate:1>, <bloodmagic:slate:3>, <bloodmagic:component:7>);

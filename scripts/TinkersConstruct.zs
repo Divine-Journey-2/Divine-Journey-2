@@ -91,7 +91,7 @@ addMagmaCrucibleTinkersMoltenMetalRecipe(<liquid:brass>, <thaumcraft:metal_brass
 mods.thermalexpansion.Crucible.addRecipe(<liquid:brass> * 144, <thaumcraft:ingot:2>, 4000);
 
 # Obsidian
-mods.thermalexpansion.Crucible.addRecipe(<liquid:brass> * 48, <thermalfoundation:material:770>, 1000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 250, <thermalfoundation:material:770>, 75000);
 
 # Clay
 mods.thermalexpansion.Crucible.addRecipe(<liquid:clay> * 144, <minecraft:clay_ball>, 4000);

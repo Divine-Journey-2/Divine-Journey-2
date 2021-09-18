@@ -68,7 +68,8 @@ mods.mekanism.sawmill.addRecipe(<projectred-core:resource_item:300>, <projectred
 function addProjectRedSiliconCompoundRecipe(output as IItemStack, input_material as IItemStack) {
 	recipes.remove(output);
 	mods.immersiveengineering.ArcFurnace.addRecipe(output, <projectred-core:resource_item:301>, null, 160, 240, [input_material], "Alloying");
-	EIOAlloySmelter.addRecipe(output, [<projectred-core:resource_item:301>, input_material], 10000);
+	#EIOAlloySmelter.addRecipe(output, [<projectred-core:resource_item:301>, input_material], 10000);
+	# Alloy Smelter recipes in enderio/recipes/user/user_recipes.xml
 	IEAlloySmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 400);
 	mods.thermalexpansion.InductionSmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 10000);
 }
