@@ -45,5 +45,6 @@ Version 2.5.0
 - Added warnings to all Extra Utilities machine quests in Chapter 9 that breaking them with a Pickaxe that has "Direct" on it causes the server to crash.
 - Fixed the Fluxed Thruster quest in Chapter 12 asking for a Cryotheum Coolant Unit, not a Fluxed Thruster.
 - Fixed a typo in the Chapter 16 Thermal Seeds quest: "Menril" -> "Mithril".
+- Fixed the Snow Queen quest in Chapter 5 giving the wrong kind of Amethyst Ore.
 - Added a tooltip for the Meteorite Compass that "Meteorites can ONLY be found in Atum."
 - Removed some config files that have been left inside the config folder after removing some mods.
