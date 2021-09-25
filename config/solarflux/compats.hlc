@@ -12,7 +12,7 @@
   +B:draconicevolution=true
 
   # Should Solar Flux Reborn enable compat for 'Thaumcraft'? (Default: true)
-  +B:thaumcraft=true
+  +B:thaumcraft=false
 
 }
 
