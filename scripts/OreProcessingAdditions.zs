@@ -913,4 +913,12 @@ mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <ap
 # Gold Ore in the SAG Mill
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:866>], [1.0,0.05], <ore:oreGold>, "CHANCE_ONLY");
 
+# Ingot crushing in the Mekanism Crusher
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:164>, <thermalfoundation:material:100>);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:165>, <thermalfoundation:material:101>);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:166>, <thermalfoundation:material:102>);
+mods.mekanism.crusher.addRecipe(<thermalfoundation:material:167>, <thermalfoundation:material:103>);
+
 print("ENDING OreProcessingAdditions.zs");

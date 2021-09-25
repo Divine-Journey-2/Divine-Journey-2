@@ -273,16 +273,6 @@
       }
     },
     {
-      "weight": 0.646636426448822,
-      "min": 1,
-      "max": 6,
-      "item": {
-        "id": "contenttweaker:knowledge_of_the_sky",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
       "weight": 1.0950840711593628,
       "min": 1,
       "max": 2,

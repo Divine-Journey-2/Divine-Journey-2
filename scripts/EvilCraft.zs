@@ -45,12 +45,17 @@ recipes.addShaped(<evilcraft:dark_tank>.withTag({capacity: 16000}), [[<enderio:i
 recipes.addShapeless("evilcraft_tank_upgrade", <evilcraft:dark_tank>, [<evilcraft:dark_tank>.marked("tank1"),<evilcraft:dark_tank>.marked("tank2")],
 function(out,ins,cInfo) {
 	var final_tag = {} as IData;
+
 	if(ins.tank1.tag has "Fluid") {
 		final_tag += {Fluid: ins.tank1.tag.Fluid};
-	}
-	if(ins.tank2.tag has "Fluid") {
-		if(ins.tank2.tag.Fluid.FluidName == ins.tank1.tag.Fluid.FluidName) {
-			final_tag = {Fluid: {FluidName: ins.tank2.tag.Fluid.FluidName, Amount: ins.tank1.tag.Fluid.Amount + ins.tank2.tag.Fluid.Amount}};
+		if(ins.tank2.tag has "Fluid") {
+			if(ins.tank2.tag.Fluid.FluidName == ins.tank1.tag.Fluid.FluidName) {
+				final_tag = {Fluid: {FluidName: ins.tank2.tag.Fluid.FluidName, Amount: ins.tank1.tag.Fluid.Amount + ins.tank2.tag.Fluid.Amount}};
+			}
+		}
+	} else {
+		if(ins.tank2.tag has "Fluid") {
+			final_tag += {Fluid: ins.tank2.tag.Fluid};
 		}
 	}
 	if(ins.tank1.tag.capacity + ins.tank2.tag.capacity <= 65536000) {

@@ -160,6 +160,9 @@ addIFMachineRecipe(<industrialforegoing:fluid_pump>, <enderio:block_tank:1>, <th
 # Fluid Crafter
 addIFMachineRecipe(<industrialforegoing:fluid_crafter>, <thermalfoundation:material:25>, <minecraft:bucket>, <mekanism:machineblock3:5>);
 
+# Plant Interactor
+addIFMachineRecipeAsymmetrical(<industrialforegoing:plant_interactor>, <divinerpg:realmite_hoe>, <divinerpg:arlemite_hoe>, <divinerpg:rupee_hoe>, <thermalfoundation:material:25>);
+
 # Item Splitter
 addIFMachineRecipe(<industrialforegoing:item_splitter>, <thermalfoundation:material:24>, <minecraft:hopper>, <thermalfoundation:material:24>);
 

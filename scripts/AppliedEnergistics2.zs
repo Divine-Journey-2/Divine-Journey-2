@@ -28,6 +28,7 @@ recipes.addShapedMirrored(<appliedenergistics2:inscriber>, [[<thermalfoundation:
 # Meteorite Compass
 recipes.remove(<appliedenergistics2:sky_compass>);
 recipes.addShaped(<appliedenergistics2:sky_compass>, [[null,<thermalfoundation:material:160>,null],[<thermalfoundation:material:160>,<contenttweaker:energized_certus_quartz_crystal>,<thermalfoundation:material:160>],[null,<thermalfoundation:material:160>,null]]);
+<appliedenergistics2:sky_compass>.addTooltip(format.white(format.bold("Meteorites can ONLY be found in Atum.")));
 
 # Tiny TNT
 recipes.remove(<appliedenergistics2:tiny_tnt>);

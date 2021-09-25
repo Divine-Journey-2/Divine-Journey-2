@@ -606,4 +606,17 @@
     </alloying>
   </recipe>
 
+  <recipe name="Growth Infusion Liquid" required="true">
+    <fermenting energy="30000">
+      <inputgroup>
+        <input name="bloodmagic:item_demon_crystal:1" multiplier="1.0"/>
+      </inputgroup>
+      <inputgroup>
+        <input name="bigreactors:dustblutonium" multiplier="1.0"/>
+      </inputgroup>
+      <inputfluid name="cloud_seed_concentrated" multiplier="0.2"/>
+      <outputfluid name="growth_infusion_liquid"/>
+    </fermenting>
+  </recipe>
+
 </enderio:recipes>

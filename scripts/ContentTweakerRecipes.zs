@@ -51,6 +51,7 @@ import mods.astralsorcery.Altar;
 import mods.roots.Fey;
 import mods.inworldcrafting.FluidToItem;
 import mods.alchemistry.Combiner;
+import mods.enderio.Vat;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -968,7 +969,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:dreaming_petal>, [<ore:petalPu
 mods.botania.Apothecary.addRecipe(<contenttweaker:morphing_petal>, [<ore:petalLightGray>,<ore:petalCyan>,<ore:petalGreen>,<ore:petalRed>]);
 
 # Orechid Petallius
-mods.botania.Apothecary.addRecipe(<contenttweaker:morphing_petal>, [<ore:petalLightGray>,<ore:petalCyan>,<ore:petalGreen>,<ore:petalRed>]);
+mods.botania.Apothecary.addRecipe(<contenttweaker:orechid_petallius>, [<ore:petalGray>,<ore:petalGray>,<ore:petalBrown>,<ore:petalLightBlue>]);
 
 # Orechid Ignem Petallius
 mods.botania.Apothecary.addRecipe(<contenttweaker:orechid_ignem_petallius>, [<ore:petalRed>,<ore:petalLightBlue>,<ore:petalBrown>,<ore:petalRed>]);
@@ -1353,6 +1354,10 @@ recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pe
 # Shattered Mystical Iron Crystal
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal>, <contenttweaker:mystical_iron_ingot>);
 ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
+
+# Growth Infusion Liquid
+#mods.enderio.Vat.addRecipe(<liquid:growth_infusion_liquid> * 100, <liquid:cloud_seed_concentrated> * 100, [<bloodmagic:item_demon_crystal:1>], [1], [<bigreactors:dustblutonium>], [1], 30000);
+# this crashes, so I'll add it directly to config/enderio/recipes/user/user_recipes.xml
 
 # Sparkling Aquamarine
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sparkling_aquamarine>, <astralsorcery:itemcraftingcomponent>, <liquid:blutonium> * 72, 6000);

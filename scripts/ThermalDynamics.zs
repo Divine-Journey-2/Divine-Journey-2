@@ -110,16 +110,17 @@ mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_32:2>, <the
 recipes.addShapeless(<thermaldynamics:duct_32:2> * 6, [<thermaldynamics:duct_32:3>,<thermaldynamics:duct_32:3>,<thermaldynamics:duct_32:3>,<thermaldynamics:duct_32:3>,<thermaldynamics:duct_32:3>,<thermaldynamics:duct_32:3>,<ore:blockGlassColorless>]);
 
 # Vacuum Impulse Itemduct
+recipes.removeShapeless(<thermaldynamics:duct_32:2>.withTag({DenseType: 2 as byte}), [<thermaldynamics:duct_32:2>,<*>,<*>,<*>]);
 recipes.addShapeless(<thermaldynamics:duct_32:2>.withTag({DenseType: 2 as byte}), [<thermaldynamics:duct_32:2>,<thermalfoundation:material:322>]);
 
 # Dense Impulse Itemduct
+recipes.removeShapeless(<thermaldynamics:duct_32:2>.withTag({DenseType: 1 as byte}), [<thermaldynamics:duct_32:2>,<*>,<*>,<*>]);
 recipes.addShapeless(<thermaldynamics:duct_32:2>.withTag({DenseType: 1 as byte}), [<thermaldynamics:duct_32:2>,<thermalfoundation:material:323>]);
 
 # Impulse Itemduct (Opaque)
 recipes.remove(<thermaldynamics:duct_32:3>);
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_32:1>, <liquid:glowstone>);
 mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_32:3>, <thermaldynamics:duct_32:1>, <liquid:glowstone> * 400, 800);
-recipes.addShapeless(<thermaldynamics:duct_32:3>, [<thermaldynamics:duct_32>,<thermaldynamics:duct_32>,<thermaldynamics:duct_32>,<thermaldynamics:duct_32>,<thermaldynamics:duct_32>,<thermaldynamics:duct_32>,<thermalfoundation:material:323>]);
 
 # Vacuum Impulse Itemduct (Opaque)
 recipes.addShapeless(<thermaldynamics:duct_32:3>.withTag({DenseType: 2 as byte}), [<thermaldynamics:duct_32:3>,<thermalfoundation:material:322>]);

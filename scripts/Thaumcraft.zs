@@ -80,11 +80,11 @@ mods.thaumcraft.Crucible.registerRecipe("thaumcraft:focus_1", "UNLOCKAUROMANCY",
 
 # Alumentum
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:alumentum>);
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:alumentum", "INFUSION", <thaumcraft:alumentum>, <abyssalcraft:crystal:22>, [<aspect:potentia> * 5, <aspect:ignis> * 2, <aspect:metallum> * 2, <aspect:perditio> * 2]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:alumentum", "ALUMENTUM", <thaumcraft:alumentum>, <abyssalcraft:crystal:22>, [<aspect:potentia> * 5, <aspect:ignis> * 2, <aspect:metallum> * 2, <aspect:perditio> * 2]);
 
 # Enchanted Fabric
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:fabric>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "UNLOCKINFUSION", 2, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[null,<thaumcraft:salis_mundus>,null],[<thaumcraft:alumentum>,<botania:spellcloth>,<thaumcraft:alumentum>],[null,<thaumcraft:salis_mundus>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:fabric", "UNLOCKINFUSION", 2, [<aspect:ordo> * 1], <thaumcraft:fabric>, [[<botania:manaresource:22>,<thaumcraft:salis_mundus>,<botania:manaresource:22>],[<thaumcraft:alumentum>,<botania:manaresource:1>,<thaumcraft:alumentum>],[<botania:manaresource:22>,<thaumcraft:salis_mundus>,<botania:manaresource:22>]]);
 
 # Thaumaturge's Robe
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:cloth_chest>);

@@ -232,6 +232,8 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storag
 mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:storage_alloy>, <minecraft:iron_block>, 10800, <immersiveengineering:material:7> * 9);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:8>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <minecraft:iron_ingot>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
+mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:iron_ingot>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <ore:oreIron>, <immersiveengineering:material:7>, 200, 512, null, "Ores");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <thermalfoundation:material>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
 furnace.remove(<immersiveengineering:metal:8>);
 recipes.remove(<immersiveengineering:metal:28>);
@@ -405,6 +407,5 @@ recipes.remove(<mekanism:basicblock:3>);
 recipes.remove(<actuallyadditions:block_misc:5>);
 recipes.removeShaped(<minecraft:coal:1> * 9, [[<*>]]);
 recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5>]);
-
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

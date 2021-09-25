@@ -7,6 +7,10 @@ import mods.thaumcraft.Crucible;
 
 print("STARTING ThaumicAugmentation.zs");
 
+# Glass Essentia Tube
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:glass_tube>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:glass_tube", "TUBES", 10, [<aspect:aqua> * 4,<aspect:aer> * 3], <thaumicaugmentation:glass_tube> * 16, [[<enderio:item_alloy_ingot:6>,<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_ingot:6>],[<enderio:block_fused_glass>,<contenttweaker:rune_of_water>,<enderio:block_fused_glass>],[<enderio:item_alloy_ingot:6>,<simplyjetpacks:metaitemmods:12>,<enderio:item_alloy_ingot:6>]]);
+
 # Warding Sigil
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:material:1>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:warding_sigil", "", <thaumicaugmentation:material:1>, 5, [<aspect:vinculum> * 100,<aspect:auram> * 50,<aspect:praecantatio> * 50,<aspect:instrumentum> * 20], <thaumcraft:seal>, [<thaumcraft:plate:2>,<thaumcraft:plate:2>,<thaumcraft:tallow>,<thaumcraft:plate:2>,<thaumcraft:plate:2>,<contenttweaker:infused_magical_core>]);

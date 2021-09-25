@@ -754,6 +754,10 @@ mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);
 #mods.enderio.Enchanter.addRecipe(<enchantment:evilcraft:life_stealing>, <evilcraft:dark_power_gem>, 4, 12);
 # wish this didn't crash my game :(
 
+# Arrow of Decay
+recipes.remove(<minecraft:tipped_arrow>.withTag({Potion: "enderio:withering"}));
+recipes.addShaped(<minecraft:tipped_arrow>.withTag({Potion: "enderio:withering"}) * 8, [[<minecraft:arrow>,<minecraft:arrow>,<minecraft:arrow>],[<minecraft:arrow>,<minecraft:lingering_potion>.withTag({Potion: "cofhcore:wither"}),<minecraft:arrow>],[<minecraft:arrow>,<minecraft:arrow>,<minecraft:arrow>]]);
+
 # Dark Shears
 recipes.remove(<enderio:item_dark_steel_shears>);
 recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_ingot:6>,null],[<ore:plankWood>,<minecraft:string>,<enderio:item_alloy_ingot:6>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);

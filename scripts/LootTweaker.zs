@@ -282,6 +282,11 @@ basicMCTableMain.addItemEntry(<divinerpg:tomato_seeds>, 2);
 val MystWorldHut = LootTweaker.getTable("mysticalworld:chests/hut");
 val MystWorldHutGems = MystWorldHut.getPool("gems");
 MystWorldHutGems.removeEntry("mysticalworld:copper_ingot");
+MystWorldHutGems.removeEntry("mysticalworld:silver_ingot");
 MystWorldHutGems.addItemEntry(<thermalfoundation:material:128>, 16);
+MystWorldHutGems.addItemEntry(<thermalfoundation:material:130>, 16);
+
+# Gaia Guardian Runes
+clear_pool("botania:gaia_guardian_2", "runes");
 
 print("ENDING LootTweaker.zs");

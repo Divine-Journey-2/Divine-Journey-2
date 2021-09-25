@@ -240,6 +240,11 @@ recipes.addShaped(<immersiveengineering:sheetmetal:7> * 4, [[<thermalfoundation:
 recipes.remove(<immersiveengineering:sheetmetal:5>);
 recipes.addShaped(<immersiveengineering:sheetmetal:5> * 4, [[<immersiveengineering:metal:35>,<ore:ingotUranium>,<immersiveengineering:metal:35>],[<ore:ingotUranium>,null,<ore:ingotUranium>],[<immersiveengineering:metal:35>,<ore:ingotUranium>,<immersiveengineering:metal:35>]]);
 
+# Sheetmetal Slabs back into Sheetmetal
+for i in 0 to 11 {
+	recipes.addShaped(<immersiveengineering:sheetmetal>.withDamage(i), [[<immersiveengineering:sheetmetal_slab>.withDamage(i)],[<immersiveengineering:sheetmetal_slab>.withDamage(i)]]);
+}
+
 # External Heater
 recipes.remove(<immersiveengineering:metal_device1:1>);
 recipes.addShaped(<immersiveengineering:metal_device1:1>, [[<ore:ingotSteel>,<ore:ingotOsmium>,<ore:ingotSteel>],[<ore:ingotOsmium>,<immersiveengineering:metal_decoration0>,<ore:ingotOsmium>],[<ore:ingotSteel>,<minecraft:redstone>,<ore:ingotSteel>]]);
@@ -433,7 +438,7 @@ recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conve
 
 # Garden Cloche
 recipes.remove(<immersiveengineering:metal_device1:13>);
-recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagriculture:soul_glass>,<immersiveengineering:material:26>,<mysticalagriculture:soul_glass>],[<mysticalagriculture:soul_glass>,<mysticalagriculture:crafting:35>,<mysticalagriculture:soul_glass>],[<ore:plankTreatedWood>,<immersiveengineering:material:8>,<ore:plankTreatedWood>]]);
+recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagriculture:soul_glass>,<immersiveengineering:material:26>,<mysticalagriculture:soul_glass>],[<mysticalagriculture:soul_glass>,<mysticalagriculture:crafting:34>,<mysticalagriculture:soul_glass>],[<ore:plankTreatedWood>,<immersiveengineering:material:8>,<ore:plankTreatedWood>]]);
 
 # Concrete from Gravel OreDict
 recipes.remove(<immersiveengineering:stone_decoration:5>);

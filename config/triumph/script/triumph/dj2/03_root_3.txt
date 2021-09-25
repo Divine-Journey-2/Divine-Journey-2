@@ -1,4 +1,4 @@
-setIcon(<roots:bonfire>)
+setIcon(<roots:pyre>)
 setTitle("Root 3")
 setDescription("Open up the third Chapter, Roots, and craft a Pyre!")
 

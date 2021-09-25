@@ -88,7 +88,7 @@ function simplyjetpacks_upgrade_fluxpack(input_cell_tag as IData, input_pack_tag
 
 # Leadstone Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:7>, [[<*>,<*>,<*>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade1", <simplyjetpacks:itemfluxpack:7>, [[<thermalfoundation:material:161>,<thermalfoundation:material:323>,<thermalfoundation:material:161>],[<thermalfoundation:material:323>,<thermalexpansion:cell>.withTag({Recv: 1000, Level: 0 as byte, Send: 1000}).marked("cell"),<thermalfoundation:material:323>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade1", <simplyjetpacks:itemfluxpack:7>.withTag({Energy: 0}), [[<thermalfoundation:material:161>,<thermalfoundation:material:323>,<thermalfoundation:material:161>],[<thermalfoundation:material:323>,<thermalexpansion:cell>.withTag({Recv: 1000, Level: 0 as byte, Send: 1000}).marked("cell"),<thermalfoundation:material:323>],[<thermalfoundation:material:161>,<simplyjetpacks:metaitem:4>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	if(ins.cell.tag has "Energy") {
 		if(ins.cell.tag.Energy < 1500000) {
@@ -103,21 +103,21 @@ function(out,ins,cInfo) {
 
 # Hardened Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:8>, [[null,<*>,null],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:354>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:354>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade2", <simplyjetpacks:itemfluxpack:8>.withTag({Energy: 0}), [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 4000, Level: 1 as byte, Send: 4000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:354>,<simplyjetpacks:itemfluxpack:7>.marked("pack"),<thermalfoundation:material:354>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 12000000);
 }, null);
 
 # Reinforced Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:9>, [[null,<*>,null],[<thermalfoundation:material:161>,<*>,<thermalfoundation:material:161>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade3", <simplyjetpacks:itemfluxpack:9>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:353>,<simplyjetpacks:itemfluxpack:8>.marked("pack"),<thermalfoundation:material:353>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade3", <simplyjetpacks:itemfluxpack:9>.withTag({Energy: 0}), [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 9000, Level: 2 as byte, Send: 9000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:353>,<simplyjetpacks:itemfluxpack:8>.marked("pack"),<thermalfoundation:material:353>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 40000000);
 }, null);
 
 # Resonant Flux Pack
 recipes.removeShaped(<simplyjetpacks:itemfluxpack:10>, [[null,<*>,null],[<thermalfoundation:material:167>,<*>,<thermalfoundation:material:167>],[<*>,<*>,<*>]]);
-recipes.addShaped("simplyjetpacks_fluxpack_upgrade4", <simplyjetpacks:itemfluxpack:10>, [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:359>,<simplyjetpacks:itemfluxpack:9>.marked("pack"),<thermalfoundation:material:359>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
+recipes.addShaped("simplyjetpacks_fluxpack_upgrade4", <simplyjetpacks:itemfluxpack:10>.withTag({Energy: 0}), [[<thermalfoundation:material:161>,<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte, Send: 25000}).marked("cell"),<thermalfoundation:material:161>],[<thermalfoundation:material:359>,<simplyjetpacks:itemfluxpack:9>.marked("pack"),<thermalfoundation:material:359>],[<thermalfoundation:material:161>,<thermalfoundation:material:515>,<thermalfoundation:material:161>]],
 function(out,ins,cInfo) {
 	return simplyjetpacks_upgrade_fluxpack(ins.cell.tag, ins.pack.tag, out, 80000000);
 }, null);
