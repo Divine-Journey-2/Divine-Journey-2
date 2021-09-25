@@ -53,6 +53,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 ### Client-only mods
 | Name | File |
 | ------------- | ------------- |
+| AutoRun | simpleautorun-1.12.2-1.2.0 | 
 | Better Advancements | BetterAdvancements-1.12.2-0.1.0.77 |
 | Controlling | Controlling-3.0.10 |
 | Connected Textures Mod | CTM-MC1.12.2-1.0.2.31 |
