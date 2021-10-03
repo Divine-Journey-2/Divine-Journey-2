@@ -15,7 +15,7 @@ Version 2.6.0
 - All Builders Wands are now much cheaper. They're now available in Chapter 1/4/9/11/14 (instead of 9/11/13/17/18).  Also moved the Destruction Wand to Chapter 9. Moved the ExtraUtils Wand quests to Chapter 9 and created a new quest in Chapter 13 for the Unbreakable Wand. Additionally, increased the durability of all (non-unbrakable) Better Builder's Wands: Stone: 130 -> 1000, Iron: 250 - > 3000, Diamond: 1561 -> 8000.
 - Reenabled the Imperfect Ritual Stone night time ritual, but gated the Stone to Chapter 23. Also added a quest for it there.
 - Disabled LightningCraft Pickaxes, Shovels, Axes, Hoes and Hammers. They are pretty broken, can dupe mined blocks, can randomly break, etc. Heavy Duty tools are now crafted from Cold Iron tools. Noted this in the Wyvern tool quest in Chapter 25.
-- JEI Resources is now up-to-date for all dimensions and every block that can be found in them. (Huge thanks to Auti for regenerating the world-gen file!)
+- JEI Resources is now up-to-date for and every block in the overworld. (Huge thanks to Auti for regenerating the world-gen file!)
 - Increased the spawn rate of Ghasts in the Nether, because there is barely enough space for them to spawn.
 - Ctrl+Delete no longer deletes an item in the inventory (could lead to accidents).
 - Pinfly Seeds no longer have a broken texture and are now working correctly.
