@@ -39,6 +39,7 @@ Version 2.6.0
 - Reduced the transfer rate of Stellar Energy Conduits from 2 Billion RF/tick to 10,485,760 RF/tick (32x the previous tier), to make it more inline with Cryoducts.
 - I accidentally saved a previously pregenerated version of the Skythern dungeon in 2.5.0 (the loot wasn't random and still included Knowledges of the Sky) - I fixed it now.
 - Gas Storage Monitors and Gas Conversion Monitors now take a Basic Pressurized Tube instead of a Gas Level Emitter, because the latter was disabled.
+- Baubley Heart Canisters can now be converted into themselves to clear their NBT.
 - Added a quest to Chapter 21 on how to automate Essentia production. Huge thanks to jehlpxyz, legendcrazyman, and ming3012 for writing it!
 - Added info to the Engraver quest in Chapter 18 that it can also be found in some Omothol houses.
 - Fixed misinformation in the Chapter 18 "From the depths... Rise!" quest that the Ritual is located on page 20 of the Abyssalnomicon, not 21.

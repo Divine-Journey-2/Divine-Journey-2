@@ -17,6 +17,7 @@ recipes.addShaped(<bhc:canister>, [[<thermalfoundation:material:32>,<thermalfoun
 # Red Heart Canister
 recipes.remove(<bhc:red_heart_canister>);
 recipes.addShapeless(<bhc:red_heart_canister>, [<bhc:red_heart>,<thermalfoundation:material:1028>,<tconstruct:materials:17>,<bhc:canister>]);
+recipes.addShapeless(<bhc:red_heart_canister>, [<bhc:red_heart_canister>]);
 
 # Relic Apple
 recipes.remove(<bhc:relic_apple>);
@@ -31,6 +32,7 @@ recipes.addShaped(<bhc:orange_heart>, [[<mysticalagradditions:stuff:1>,<mystical
 # Orange Heart Canister
 recipes.remove(<bhc:orange_heart_canister>);
 recipes.addShapeless(<bhc:orange_heart_canister>, [<bhc:red_heart_canister>,<bhc:relic_apple>,<bhc:orange_heart>,<minecraft:totem_of_undying>]);
+recipes.addShapeless(<bhc:orange_heart_canister>, [<bhc:orange_heart_canister>]);
 
 # Green Heart
 mods.botania.RuneAltar.addRecipe(<bhc:green_heart>, [<bhc:red_heart>,<bhc:red_heart>,<bhc:orange_heart>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:defensive_core>,<contenttweaker:defensive_core>,<bloodmagic:blood_shard:1>,<contenttweaker:angelic_silicon_crystal_mixture>], 100000);
@@ -39,6 +41,7 @@ mods.botania.RuneAltar.addRecipe(<bhc:green_heart>, [<bhc:red_heart>,<bhc:red_he
 # Green Heart Canister
 recipes.remove(<bhc:green_heart_canister>);
 recipes.addShapeless(<bhc:green_heart_canister>, [<bhc:orange_heart_canister>,<bhc:green_heart>,<forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}),<botania:storage:1>]);
+recipes.addShapeless(<bhc:green_heart_canister>, [<bhc:green_heart_canister>]);
 
 function addAstralSorceryIrridescentAltarRecipeWithConstellation(name as string, output as IItemStack, starlight as int, i as IIngredient[][], additionals as IIngredient[], constellation as string) {
 
@@ -62,6 +65,7 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("bhc:blue_heart", <bhc:b
 # Blue Heart Canister
 recipes.remove(<bhc:blue_heart_canister>);
 recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:green_heart_canister>,<bhc:blue_heart>,<galacticraftplanets:asteroids_block:7>,<contenttweaker:galactic_block>,<contenttweaker:galactic_block>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>]);
+recipes.addShapeless(<bhc:blue_heart_canister>, [<bhc:blue_heart_canister>]);
 
 # Heart Amulet
 recipes.remove(<bhc:heart_amulet>);
