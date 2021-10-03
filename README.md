@@ -46,6 +46,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | Thaumic Augmentation | Emptiness | 14676 | yes |
 | Applied Energistics 2 | Storage Cell | 2 | no |
 | RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 3, 5, 6, ... | no |
+| Simple Void World | Void World | -100 | no |
 
 
 (*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
@@ -53,7 +54,6 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 ### Client-only mods
 | Name | File |
 | ------------- | ------------- |
-| AutoRun | simpleautorun-1.12.2-1.2.0 | 
 | Better Advancements | BetterAdvancements-1.12.2-0.1.0.77 |
 | Controlling | Controlling-3.0.10 |
 | Connected Textures Mod | CTM-MC1.12.2-1.0.2.31 |
@@ -69,7 +69,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | No Recipe Book | noRecipeBook_v1.2.2formc1.12.2 |
 | ReAuth | reauth-3.6.0 |
 | Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
-| Smooth Font | SmoothFont-mc1.12.2-2.1.2 |
+| AutoRun | simpleautorun-1.12.2-1.2.0 | 
 | Thaumic JEI | ThaumicJEI-1.12.2-1.6.0.27 |
 | Tips | Tips-1.12.2-1.0.9 |
 | Tip The Scales | TipTheScales-1.12.2-1.0.4 |
