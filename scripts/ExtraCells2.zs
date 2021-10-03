@@ -174,11 +174,11 @@ recipes.addShaped(<extracells:part.base:18>, [[null,<mekanism:transmitter:2>.wit
 
 # ME Fluid Conversion Monitor
 recipes.remove(<extracells:part.base:11>);
-recipes.addShapedMirrored(<extracells:part.base:11>, [[null,<mekanism:transmitter:2>.withTag({tier: 0}),null],[<appliedenergistics2:material:43>,<extracells:part.base:10>,<appliedenergistics2:material:44>],[null,<contenttweaker:operation_processor>,null]]);
+recipes.addShapedMirrored(<extracells:part.base:11>, [[null,<appliedenergistics2:part:281>,null],[<appliedenergistics2:material:43>,<extracells:part.base:10>,<appliedenergistics2:material:44>],[null,<contenttweaker:operation_processor>,null]]);
 
 # ME Gas Conversion Monitor
 recipes.remove(<extracells:part.base:19>);
-recipes.addShapedMirrored(<extracells:part.base:19>, [[null,<extracells:part.base:17>,null],[<appliedenergistics2:material:43>,<extracells:part.base:18>,<appliedenergistics2:material:44>],[null,<contenttweaker:methodology_processor>,null]]);
+recipes.addShapedMirrored(<extracells:part.base:19>, [[null,<mekanism:transmitter:2>.withTag({tier: 0}),null],[<appliedenergistics2:material:43>,<extracells:part.base:18>,<appliedenergistics2:material:44>],[null,<contenttweaker:methodology_processor>,null]]);
 
 # ME Gas Terminal
 recipes.remove(<extracells:part.base:15>);
