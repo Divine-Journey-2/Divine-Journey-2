@@ -4,6 +4,7 @@ import mods.tconstruct.Casting;
 import mods.thermalexpansion.Crucible;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import mods.tconstruct.Melting;
 
 print("STARTING TinkersConstruct.zs");
 
@@ -250,6 +251,13 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:fierymetal> * 144, <twilightfor
 mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 1296, <twilightforest:knightmetal_block>, 32000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 144, <twilightforest:knightmetal_ingot>, 4000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:knightmetal> * 288, <twilightforest:armor_shard_cluster>, 8000);
+
+# Cobalt
+mods.tconstruct.Casting.removeBasinRecipe(<chisel:blockcobalt>);
+mods.tconstruct.Casting.addBasinRecipe(<tconstruct:metal>, null, <liquid:cobalt>, 1296);
+
+# Refined Obsidian
+mods.tconstruct.Melting.removeRecipe(<liquid:refinedobsidian>, <mekanism:otherdust:5>);
 
 # Graveyard Soil
 recipes.remove(<tconstruct:soil:3>);

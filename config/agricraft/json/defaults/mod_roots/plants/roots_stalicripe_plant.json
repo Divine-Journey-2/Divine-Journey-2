@@ -51,6 +51,10 @@
     "min_light": 10,
     "max_light": 16,
     "soils": [
+      "elemental_soil_soil",
+      "aqueous_soil_soil",
+      "caelic_soil_soil",
+      "magmatic_soil_soil",
       "terran_soil_soil"
     ],
     "conditions": []

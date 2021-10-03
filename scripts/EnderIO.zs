@@ -101,7 +101,7 @@ recipes.addShapedMirrored(<enderio:item_yeta_wrench>, [[null,<thermalfoundation:
 
 # Binder Composite
 recipes.remove(<enderio:item_material:22>);
-recipes.addShaped(<enderio:item_material:22> * 2, [[<ore:gravel>,<ore:clay>,<ore:gravel>],[<ore:sand>,<contenttweaker:energized_dark_dust>,<ore:sand>],[<ore:gravel>,<ore:clay>,<ore:gravel>]]);
+recipes.addShaped(<enderio:item_material:22> * 4, [[<ore:gravel>,<ore:clay>,<ore:gravel>],[<ore:sand>,<contenttweaker:energized_dark_dust>,<ore:sand>],[<ore:gravel>,<ore:clay>,<ore:gravel>]]);
 
 # Conduit Binder
 furnace.remove(<enderio:item_material:4>);

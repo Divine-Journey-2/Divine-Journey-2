@@ -453,14 +453,14 @@ recipes.remove(<mysticalagriculture:chunk:18>);
 recipes.addShaped(<mysticalagriculture:chunk:18>, [[null,<divinerpg:ghast_pumpkin>,null],[<divinerpg:ghast_pumpkin>,<mysticalagriculture:chunk:3>,<divinerpg:ghast_pumpkin>],[null,<divinerpg:ghast_pumpkin>,null]]);
 
 # Ghast Seeds
-addTier4MysticalAgricultureSeed(<mysticalagriculture:ghast_seeds>, <mysticalagriculture:chunk:18>, "gelu");
+addTier4MysticalAgricultureSeed(<mysticalagriculture:ghast_seeds>, <mysticalagriculture:chunk:18>, "vicio");
 
 # Enderman Chunk
 recipes.remove(<mysticalagriculture:chunk:19>);
 recipes.addShaped(<mysticalagriculture:chunk:19>, [[<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,],[<actuallyadditions:block_misc:6>,<mysticalagriculture:chunk:3>,<actuallyadditions:block_misc:6>],[<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_misc:6>]]);
 
 # Enderman Seeds
-addTier4MysticalAgricultureSeed(<mysticalagriculture:enderman_seeds>, <mysticalagriculture:chunk:19>, "ulteria");
+addTier4MysticalAgricultureSeed(<mysticalagriculture:enderman_seeds>, <mysticalagriculture:chunk:19>, "pelotrio");
 
 # Signalum Seeds
 recipes.remove(<mysticalagriculture:signalum_seeds>);
@@ -490,7 +490,7 @@ null,null,null,
 <mysticalagriculture:redstone_alloy_seeds>,null,<mysticalagriculture:blaze_seeds>,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
 null,null,null,null,null,null,null,null,
-<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>], "astralsorcery.constellation.vorux");
+<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>,<contenttweaker:fluxed_electrum_block>], "astralsorcery.constellation.mineralis");
 
 # Fluxed Electum Essence -> Fluxed Electrum Ingot
 recipes.addShaped(<contenttweaker:fluxed_electrum_ingot> * 3, [[<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>],[<mysticalagriculture:fluxed_electrum_essence>,null,<mysticalagriculture:fluxed_electrum_essence>],[<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>,<mysticalagriculture:fluxed_electrum_essence>]]);
@@ -532,7 +532,7 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/conducti
 null,null,null,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
 null,null,null,null,null,null,null,null,
-<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>,<tconstruct:metal:2>], "astralsorcery.constellation.bootes");
+<enderio:block_alloy:4>,<enderio:block_alloy:4>,<enderio:block_alloy:4>,<enderio:block_alloy:4>], "astralsorcery.constellation.bootes");
 
 # Dark Steel Seeds
 recipes.remove(<mysticalagriculture:dark_steel_seeds>);
@@ -542,7 +542,7 @@ mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/dark_ste
 null,null,null,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
 null,null,null,null,null,null,null,null,
-<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>], "astralsorcery.constellation.vorux");
+<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>], "astralsorcery.constellation.armara");
 
 # Pulsating Iron Seeds
 recipes.remove(<mysticalagriculture:pulsating_iron_seeds>);
@@ -578,7 +578,7 @@ null,null,null,null,null,null,null,null,
 addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:manasteel_seeds>, <botania:storage>, "octans", <mysticalagriculture:mithril_seeds>);
 
 # Elementium Seeds
-addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:elementium_seeds>, <botania:storage:2>, "alcara", <mysticalagriculture:manasteel_seeds>);
+addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:elementium_seeds>, <botania:storage:2>, "horologium", <mysticalagriculture:manasteel_seeds>);
 
 # Electrotine Seeds
 addTier4MysticalAgricultureSeed(<mysticalagriculture:electrotine_seeds>, <projectred-core:resource_item:342>, "vicio");
@@ -591,10 +591,10 @@ null,null,null,
 <mysticalagriculture:iron_seeds>,null,<mysticalagriculture:obsidian_seeds>,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
 null,null,null,null,null,null,null,null,
-<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>], "astralsorcery.constellation.alcara");
+<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>,<plustic:alumiteblock>], "astralsorcery.constellation.bootes");
 
 # Coralium Seeds
-addTier4MysticalAgricultureSeed(<mysticalagriculture:coralium_seeds>, <abyssalcraft:ingotblock:1>, "ulteria");
+addTier4MysticalAgricultureSeed(<mysticalagriculture:coralium_seeds>, <abyssalcraft:ingotblock:1>, "aevitas");
 
 # Abyssalnite Seeds
 addTier4MysticalAgricultureSeedWithInput(<mysticalagriculture:abyssalnite_seeds>, <abyssalcraft:ingotblock>, "bootes", <mysticalagriculture:coralium_seeds>);

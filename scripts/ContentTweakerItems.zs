@@ -1487,5 +1487,7 @@ goddess_pearl.maxStackSize = 1;
 goddess_pearl.register();
 var industrial_grade_graphite_dust = VanillaFactory.createItem("industrial_grade_graphite_dust");
 industrial_grade_graphite_dust.register();
+var redstone_inlay_package = VanillaFactory.createItem("redstone_inlay_package");
+redstone_inlay_package.register();
 
 print("ENDING ContentTweakerItems.zs");

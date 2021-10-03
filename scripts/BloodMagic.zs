@@ -531,6 +531,10 @@ recipes.addShaped(<bloodmagic:path:6> * 2, [[<botania:quartz>,<bloodmagic:path:4
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:decorative_brick:2>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}), <evilcraft:blood_orb:1>, 5, 240000, 120, 120);
 
+# Imperfect Ritual Stone
+recipes.remove(<bloodmagic:ritual_controller:1>);
+recipes.addShaped(<bloodmagic:ritual_controller:1>, [[<contenttweaker:vibrant_slate>,<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:vibrant_slate>],[<astralsorcery:itemcraftingcomponent:4>,<bloodmagic:ritual_controller>,<astralsorcery:itemcraftingcomponent:4>],[<contenttweaker:vibrant_slate>,<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:vibrant_slate>]]);
+
 # Teleposition Focus
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ender_pearl>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:teleposition_focus>, <draconicevolution:dislocator_bound:1>, 5, 500000, 500, 500);

@@ -333,19 +333,19 @@ recipes.addShaped(<galacticraftcore:steel_sword>, [[<galacticraftcore:heavy_plat
 
 # Heavy Duty Pickaxe
 recipes.remove(<galacticraftcore:steel_pickaxe>);
-recipes.addShaped(<galacticraftcore:steel_pickaxe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<lightningcraft:mystic_pick>,null],[null,<contenttweaker:galactic_ingot>,null]]);
+recipes.addShaped(<galacticraftcore:steel_pickaxe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<bewitchment:cold_iron_pickaxe>,null],[null,<contenttweaker:galactic_ingot>,null]]);
 
 # Heavy Duty Shovel
 recipes.remove(<galacticraftcore:steel_shovel>);
-recipes.addShaped(<galacticraftcore:steel_shovel>, [[<galacticraftcore:heavy_plating>],[<lightningcraft:mystic_shovel>],[<contenttweaker:galactic_ingot>]]);
+recipes.addShaped(<galacticraftcore:steel_shovel>, [[<galacticraftcore:heavy_plating>],[<bewitchment:cold_iron_shovel>],[<contenttweaker:galactic_ingot>]]);
 
 # Heavy Duty Axe
 recipes.remove(<galacticraftcore:steel_axe>);
-recipes.addShapedMirrored(<galacticraftcore:steel_axe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<lightningcraft:mystic_axe>],[null,<contenttweaker:galactic_ingot>]]);
+recipes.addShapedMirrored(<galacticraftcore:steel_axe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[<galacticraftcore:heavy_plating>,<bewitchment:cold_iron_axe>],[null,<contenttweaker:galactic_ingot>]]);
 
 # Heavy Duty Hoe
 recipes.remove(<galacticraftcore:steel_hoe>);
-recipes.addShapedMirrored(<galacticraftcore:steel_hoe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<lightningcraft:mystic_hoe>],[null,<contenttweaker:galactic_ingot>]]);
+recipes.addShapedMirrored(<galacticraftcore:steel_hoe>, [[<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>],[null,<bewitchment:cold_iron_hoe>],[null,<contenttweaker:galactic_ingot>]]);
 
 # Pre-Launch Checklist
 recipes.remove(<galacticraftcore:prelaunch_checklist>);

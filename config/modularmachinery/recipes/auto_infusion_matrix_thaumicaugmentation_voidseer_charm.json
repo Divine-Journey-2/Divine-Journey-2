@@ -49,25 +49,25 @@
             "type": "aspect",
             "io-type": "input",
             "aspect": "cognitio",
-            "amount": 250
+            "amount": 240
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "vacuos",
-            "amount": 250
+            "amount": 240
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "praecantatio",
-            "amount": 250
+            "amount": 240
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "alienis",
-            "amount": 250
+            "amount": 240
         },
         {
             "type": "item",

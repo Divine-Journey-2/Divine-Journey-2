@@ -1899,7 +1899,7 @@ recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_
 recipes.addShapeless(<contenttweaker:modifier_m1000>, [<contenttweaker:modifier_m100>]);
 
 # Essence of Destruction
-mods.thaumcraft.Infusion.registerRecipe("essence_of_destruction", "", <contenttweaker:essence_of_destruction>, 10, [<aspect:perditio> * 250,<aspect:diabolus> * 100,<aspect:motus> * 100,<aspect:tenebrae> * 50,<aspect:praecantatio> * 50,<aspect:luna> * 20], <projecte:item.pe_destruction_catalyst>, [<thaumcraft:primal_crusher>,<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:antimatter_cluster>]);
+mods.thaumcraft.Infusion.registerRecipe("essence_of_destruction", "", <contenttweaker:essence_of_destruction>, 10, [<aspect:perditio> * 240,<aspect:diabolus> * 100,<aspect:motus> * 100,<aspect:tenebrae> * 50,<aspect:praecantatio> * 50,<aspect:luna> * 20], <projecte:item.pe_destruction_catalyst>, [<thaumcraft:primal_crusher>,<contenttweaker:antimatter_cluster>,<contenttweaker:antimatter_cluster>,<contenttweaker:condensed_vis_crystal_perditio>,<contenttweaker:antimatter_cluster>]);
 
 # Essence of Peace
 mods.astralsorcery.Altar.addTraitAltarRecipe("astralsorcery:shaped/internal/altar/essence_of_peace", <contenttweaker:essence_of_peace>, 7500, 100,

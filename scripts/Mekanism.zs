@@ -471,7 +471,7 @@ recipes.addShaped(<mekanism:transmitter:6>.withTag({tier: 3}) * 3, [[<enderio:it
 
 # Teleportation Core
 recipes.remove(<mekanism:teleportationcore>);
-recipes.addShaped(<mekanism:teleportationcore>, [[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>],[<enderio:item_material:18>,<contenttweaker:cosmic_alloy>,<enderio:item_material:18>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>]]);
+recipes.addShaped(<mekanism:teleportationcore> * 2, [[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>],[<enderio:item_material:18>,<contenttweaker:cosmic_alloy>,<enderio:item_material:18>],[<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>,<enderio:item_alloy_endergy_ingot:1>]]);
 
 # Portable Teleporter
 recipes.remove(<mekanism:portableteleporter>);

@@ -3,18 +3,21 @@ print("STARTING BetterBuildersWands.zs");
 
 # Stone Wand
 recipes.remove(<betterbuilderswands:wandstone>);
-recipes.addShapedMirrored(<betterbuilderswands:wandstone>, [[null,null,<extrautils2:decorativesolid:3>],[null,<ore:stickWood>,null],[<ore:stickWood>,null,null]]);
+recipes.addShapedMirrored(<betterbuilderswands:wandstone>, [[null,null,<extrautils2:compressedcobblestone>],[null,<ore:stickWood>,null],[<ore:stickWood>,null,null]]);
+<betterbuilderswands:wandstone>.maxDamage = 1000;
 
 # Iron Wand
 recipes.remove(<betterbuilderswands:wandiron>);
-recipes.addShapedMirrored(<betterbuilderswands:wandiron>, [[null,<industrialforegoing:plastic>,<enderio:item_alloy_ingot:6>],[null,<betterbuilderswands:wandstone>,<industrialforegoing:plastic>],[<ore:stickWood>,null,null]]);
+recipes.addShapedMirrored(<betterbuilderswands:wandiron>, [[null,null,<thermalfoundation:material:160>],[null,<betterbuilderswands:wandstone>,null],[<ore:stickWood>,null,null]]);
+<betterbuilderswands:wandiron>.maxDamage = 3000;
 
 # Diamond Wand
 recipes.remove(<betterbuilderswands:wanddiamond>);
-recipes.addShapedMirrored(<betterbuilderswands:wanddiamond>, [[null,<botania:manaresource:2>,<botania:storage:3>],[null,<extrautils2:itembuilderswand>,<botania:manaresource:2>],[<ore:stickWood>,null,null]]);
+recipes.addShapedMirrored(<betterbuilderswands:wanddiamond>, [[null,null,<quantumflux:craftingpiece:6>],[null,<extrautils2:itembuilderswand>,null],[<ore:stickWood>,null,null]]);
+<betterbuilderswands:wanddiamond>.maxDamage = 8000;
 
 # Unbreakable Wand
 recipes.remove(<betterbuilderswands:wandunbreakable>);
-recipes.addShapedMirrored(<betterbuilderswands:wandunbreakable>, [[null,<enderio:item_alloy_endergy_ingot:3>,<botania:storage:4>],[null,<betterbuilderswands:wanddiamond>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,null]]);
+recipes.addShapedMirrored(<betterbuilderswands:wandunbreakable>, [[null,<enderio:item_alloy_endergy_ingot:1>,<extrautils2:decorativesolid:8>],[null,<betterbuilderswands:wanddiamond>,<enderio:item_alloy_endergy_ingot:1>],[<enderio:item_alloy_endergy_ingot:1>,null,null]]);
 
 print("ENDING BetterBuildersWands.zs");

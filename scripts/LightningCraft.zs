@@ -141,7 +141,7 @@ mods.thaumcraft.Infusion.registerRecipe("lightningcraft:demonstone", "", <lightn
 
 # Underworld Charge
 LightningInfusion.remove(<lightningcraft:material:6>);
-mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", <lightningcraft:material:6>, 8, [<aspect:diabolus> * 250,<aspect:tenebrae> * 250,<aspect:potentia> * 250,<aspect:ignis> * 250,<aspect:perditio> * 250], <evilcraft:inverted_potentia>, [<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>,<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>]);
+mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", <lightningcraft:material:6>, 8, [<aspect:diabolus> * 240,<aspect:tenebrae> * 240,<aspect:potentia> * 240,<aspect:ignis> * 240,<aspect:perditio> * 240], <evilcraft:inverted_potentia>, [<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>,<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>]);
 
 # Underpowder
 <lightningcraft:material:12>.addTooltip(format.white("Dropped by Undercreeps in the Underworld."));
@@ -282,23 +282,23 @@ recipes.addShaped(<lightningcraft:elec_sword>, [[<lightningcraft:ingot>],[<light
 
 # Electricium Pickaxe
 recipes.remove(<lightningcraft:elec_pick>);
-recipes.addShaped(<lightningcraft:elec_pick>, [[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_pickaxe>,null],[null,<lightningcraft:rod:7>,null]]);
+#recipes.addShaped(<lightningcraft:elec_pick>, [[<lightningcraft:ingot>,<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_pickaxe>,null],[null,<lightningcraft:rod:7>,null]]);
 
 # Electricium Shovel
 recipes.remove(<lightningcraft:elec_shovel>);
-recipes.addShaped(<lightningcraft:elec_shovel>, [[<lightningcraft:ingot>],[<bewitchment:cold_iron_shovel>],[<lightningcraft:rod:7>]]);
+#recipes.addShaped(<lightningcraft:elec_shovel>, [[<lightningcraft:ingot>],[<bewitchment:cold_iron_shovel>],[<lightningcraft:rod:7>]]);
 
 # Electricium Axe
 recipes.remove(<lightningcraft:elec_axe>);
-recipes.addShapedMirrored(<lightningcraft:elec_axe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_axe>],[null,<lightningcraft:rod:7>]]);
+#recipes.addShapedMirrored(<lightningcraft:elec_axe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_axe>],[null,<lightningcraft:rod:7>]]);
 
 # Electricium Hoe
 recipes.remove(<lightningcraft:elec_hoe>);
-recipes.addShapedMirrored(<lightningcraft:elec_hoe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_hoe>],[null,<lightningcraft:rod:7>]]);
+#recipes.addShapedMirrored(<lightningcraft:elec_hoe>, [[<lightningcraft:ingot>,<lightningcraft:ingot>],[null,<bewitchment:cold_iron_hoe>],[null,<lightningcraft:rod:7>]]);
 
 # Electricium Hammer
 recipes.remove(<lightningcraft:elec_hammer>);
-recipes.addShaped(<lightningcraft:elec_hammer>, [[<lightningcraft:plate:7>,<lightningcraft:plate:7>,<lightningcraft:plate:7>],[<lightningcraft:plate:7>,<lightningcraft:elec_sword>,<lightningcraft:plate:7>],[null,<lightningcraft:rod:7>,null]]);
+#recipes.addShaped(<lightningcraft:elec_hammer>, [[<lightningcraft:plate:7>,<lightningcraft:plate:7>,<lightningcraft:plate:7>],[<lightningcraft:plate:7>,<lightningcraft:elec_sword>,<lightningcraft:plate:7>],[null,<lightningcraft:rod:7>,null]]);
 
 # Electricium Helmet
 recipes.remove(<lightningcraft:elec_helm>);
@@ -324,23 +324,23 @@ function addLightningCraftToolRecipes(new_item_str as string, old_item_str as st
 
 	# Skyfather & Mystic Pickaxe
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"), [[new_material,new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_pick"),null],[null,new_rod,null]]);
+	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"), [[new_material,new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_pick"),null],[null,new_rod,null]]);
 
 	# Skyfather & Mystic Shovel
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"), [[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_shovel")],[new_rod]]);
+	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"), [[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_shovel")],[new_rod]]);
 
 	# Skyfather & Mystic Axe
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"));
-	recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"), [[new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_axe")],[null,new_rod]]);
+	#recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"), [[new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_axe")],[null,new_rod]]);
 
 	# Skyfather & Mystic Hoe
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"));
-	recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"), [[new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_hoe")],[null,new_rod]]);
+	#recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"), [[new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_hoe")],[null,new_rod]]);
 
 	# Skyfather & Mystic Hammer
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
+	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
 
 }
 
@@ -374,6 +374,12 @@ LightningInfusion.remove(<lightningcraft:mystic_chest>);
 LightningInfusion.remove(<lightningcraft:mystic_legs>);
 LightningInfusion.remove(<lightningcraft:mystic_boots>);
 addLightningCraftArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>);
+
+# Removing Mystic Tools (incredibly buggy)
+LightningInfusion.remove(<lightningcraft:mystic_pick>);
+LightningInfusion.remove(<lightningcraft:mystic_shovel>);
+LightningInfusion.remove(<lightningcraft:mystic_axe>);
+LightningInfusion.remove(<lightningcraft:mystic_hoe>);
 
 # Kinetic Armor and Tools (don't work)
 recipes.remove(<lightningcraft:kinetic_helm>);

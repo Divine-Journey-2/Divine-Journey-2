@@ -584,7 +584,8 @@ addMaterialToDustCrushingWOPetrotheum(<contenttweaker:rainbow_tablet>, <thaumcra
 addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> * 16);
 
 # Tier 1 Mob Chunk
-addMaterialToDustCrushingWOPetrotheum(<openblocks:trophy:*>, <mysticalagriculture:chunk>);
+Grinder.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 4);
+mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 2000);
 
 # Bewitchment Silver Ore removal
 <ore:oreSilver>.remove(<bewitchment:silver_ore>);
@@ -920,5 +921,12 @@ mods.mekanism.crusher.addRecipe(<thermalfoundation:material:164>, <thermalfounda
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:165>, <thermalfoundation:material:101>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:166>, <thermalfoundation:material:102>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:167>, <thermalfoundation:material:103>);
+
+# HOP Graphite crushing
+Grinder.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>, 4);
+EUCrusher.add(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+mods.enderio.SagMill.addRecipe([<immersiveengineering:material:18>], [1.0], <immersiveengineering:material:19>);
+mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 
 print("ENDING OreProcessingAdditions.zs");

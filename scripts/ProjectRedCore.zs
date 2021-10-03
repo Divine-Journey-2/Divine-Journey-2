@@ -23,6 +23,13 @@ import mods.alchemistry.Dissolver;
 
 print("STARTING ProjectRedCore.zs");
 
+# Circuit Plate
+furnace.remove(<projectred-core:resource_item>);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stone>);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stoneIgneous>);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stoneMetamorphic>);
+furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stoneSedimentary>);
+
 # Red Alloy Ingot
 IEAlloySmelter.removeRecipe(<projectred-core:resource_item:103>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<projectred-core:resource_item:103>);

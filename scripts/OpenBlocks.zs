@@ -67,7 +67,7 @@ recipes.addShaped(<openblocks:guide>, [[<contenttweaker:open_ingot>,<ore:blockGl
 
 # Enhanced Building Guide
 recipes.remove(<openblocks:builder_guide>);
-recipes.addShaped(<openblocks:builder_guide>, [[<contenttweaker:open_block>,<ore:blockGlassColorless>,<contenttweaker:open_block>],[<ore:blockGlassColorless>,<openblocks:guide>.withTag({}),<ore:blockGlassColorless>],[<contenttweaker:open_block>,<ore:blockGlassColorless>,<contenttweaker:open_block>]]);
+recipes.addShaped(<openblocks:builder_guide>, [[<contenttweaker:open_block>,<ore:blockGlassColorless>,<contenttweaker:open_block>],[<ore:blockGlassColorless>,<openblocks:guide>,<ore:blockGlassColorless>],[<contenttweaker:open_block>,<ore:blockGlassColorless>,<contenttweaker:open_block>]]);
 
 # Big Stone Button
 recipes.remove(<openblocks:big_button>);

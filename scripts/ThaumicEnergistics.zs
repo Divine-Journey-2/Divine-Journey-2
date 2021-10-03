@@ -72,7 +72,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("thaumicenergistics:upgr
 
 # Essentia Infusion Provider
 mods.thaumcraft.Infusion.removeRecipe(<thaumicenergistics:infusion_provider>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:infusion_provider", "INFUSIONPROVIDER", <thaumicenergistics:infusion_provider>, 8, [<aspect:machina> * 250,<aspect:praecantatio> * 200,<aspect:permutatio> * 200,<aspect:aqua> * 50], <thaumicaugmentation:material:3>, [<appliedenergistics2:interface>,<thaumicenergistics:coalescence_core>,<thaumcraft:salis_mundus>,<contenttweaker:condensed_vis_crystal_machina>,<appliedenergistics2:interface>,<thaumicenergistics:diffusion_core>,<thaumcraft:salis_mundus>,<thaumicaugmentation:impetus_mirror>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:infusion_provider", "INFUSIONPROVIDER", <thaumicenergistics:infusion_provider>, 8, [<aspect:machina> * 240,<aspect:praecantatio> * 200,<aspect:permutatio> * 200,<aspect:aqua> * 50], <thaumicaugmentation:material:3>, [<appliedenergistics2:interface>,<thaumicenergistics:coalescence_core>,<thaumcraft:salis_mundus>,<contenttweaker:condensed_vis_crystal_machina>,<appliedenergistics2:interface>,<thaumicenergistics:diffusion_core>,<thaumcraft:salis_mundus>,<thaumicaugmentation:impetus_mirror>]);
 
 # Creative ME Essentia Storage Cell
 mods.extendedcrafting.TableCrafting.addShaped(<thaumicenergistics:essentia_cell_creative>,

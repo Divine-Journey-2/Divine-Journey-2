@@ -6,7 +6,7 @@
   "seed_name": "Pinfly Seeds",
   "seed_items": [
     {
-      "item": "divinerpg:divinerpg:pinfly_seeds",
+      "item": "divinerpg:pinfly_seeds",
       "meta": 0,
       "tags": "",
       "ignoreMeta": false,
@@ -57,7 +57,7 @@
   },
   "texture": {
     "render_type": "hash",
-    "seed_texture": "divinerpg:items/:pinfly_seeds",
+    "seed_texture": "divinerpg:items/pinfly_seeds",
     "plant_textures": [
       "divinerpg:blocks/pinfly_plant_bottom",
       "divinerpg:blocks/pinfly_plant_top"

@@ -544,7 +544,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:modaggression",
 
 # Redstone Inlay
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:inlay>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTABLE", <thaumcraft:inlay> * 4, 2, [<aspect:potentia> * 20,<aspect:ignis> * 10], <thermaldynamics:relay>, [<contenttweaker:fire_core>,<thaumcraft:ingot>,<enderio:block_alloy:3>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:RedstoneInlay", "INFUSIONSTABLE", <contenttweaker:redstone_inlay_package>, 2, [<aspect:potentia> * 20,<aspect:ignis> * 10], <thermaldynamics:relay>, [<contenttweaker:fire_core>,<thaumcraft:ingot>,<enderio:block_alloy:3>]);
+recipes.addShapeless(<thaumcraft:inlay> * 4, [<contenttweaker:redstone_inlay_package>]);
 
 # Stabilizer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:stabilizer>);

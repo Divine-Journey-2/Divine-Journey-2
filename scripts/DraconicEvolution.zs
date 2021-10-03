@@ -122,7 +122,7 @@ recipes.addShaped(<draconicevolution:entity_detector:1>, [[null,<minecraft:skull
 
 # Energy Core
 recipes.remove(<draconicevolution:energy_storage_core>);
-mods.thaumcraft.Infusion.registerRecipe("draconic_energy_storage_core", "", <draconicevolution:energy_storage_core>, 9, [<aspect:potentia> * 250, <aspect:ignis> * 120, <aspect:lux> * 120, <aspect:auram> * 80, <aspect:diabolus> * 40], <draconicevolution:wyvern_core>, [<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>]);
+mods.thaumcraft.Infusion.registerRecipe("draconic_energy_storage_core", "", <draconicevolution:energy_storage_core>, 9, [<aspect:potentia> * 240, <aspect:ignis> * 120, <aspect:lux> * 120, <aspect:auram> * 80, <aspect:diabolus> * 40], <draconicevolution:wyvern_core>, [<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<enderio:block_cap_bank:3>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>,<galacticraftplanets:basic_item_venus:6>]);
 
 # Energy Pylon
 recipes.remove(<draconicevolution:energy_pylon>);

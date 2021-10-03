@@ -170,11 +170,11 @@ recipes.addShaped(<extracells:part.base:10>, [[null,<appliedenergistics2:part:28
 
 # ME Gas Storage Monitor
 recipes.remove(<extracells:part.base:18>);
-recipes.addShaped(<extracells:part.base:18>, [[null,<extracells:part.base:17>,null],[<appliedenergistics2:material:8>,<ore:itemIlluminatedPanel>,<appliedenergistics2:material:8>],[null,<mekanism:gastank>.withTag({tier: 0}),null]]);
+recipes.addShaped(<extracells:part.base:18>, [[null,<mekanism:transmitter:2>.withTag({tier: 0}),null],[<appliedenergistics2:material:8>,<ore:itemIlluminatedPanel>,<appliedenergistics2:material:8>],[null,<mekanism:gastank>.withTag({tier: 0}),null]]);
 
 # ME Fluid Conversion Monitor
 recipes.remove(<extracells:part.base:11>);
-recipes.addShapedMirrored(<extracells:part.base:11>, [[null,<appliedenergistics2:part:281>,null],[<appliedenergistics2:material:43>,<extracells:part.base:10>,<appliedenergistics2:material:44>],[null,<contenttweaker:operation_processor>,null]]);
+recipes.addShapedMirrored(<extracells:part.base:11>, [[null,<mekanism:transmitter:2>.withTag({tier: 0}),null],[<appliedenergistics2:material:43>,<extracells:part.base:10>,<appliedenergistics2:material:44>],[null,<contenttweaker:operation_processor>,null]]);
 
 # ME Gas Conversion Monitor
 recipes.remove(<extracells:part.base:19>);

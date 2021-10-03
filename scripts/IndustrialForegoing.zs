@@ -59,7 +59,7 @@ addIFMachineRecipeAsymmetrical(<industrialforegoing:crop_recolector>, <divinerpg
 
 # Black Hole Unit
 recipes.removeShaped(<industrialforegoing:black_hole_unit>);
-recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<industrialforegoing:plastic>,<appliedenergistics2:storage_cell_64k>.withTag({}).noReturn(),<industrialforegoing:plastic>],[<appliedenergistics2:storage_cell_64k>.withTag({}).noReturn(),<teslacorelib:machine_case>,<appliedenergistics2:storage_cell_64k>.withTag({}).noReturn()],[<mekanism:machineblock3>,<appliedenergistics2:storage_cell_64k>.withTag({}).noReturn(),<mekanism:machineblock3>]]);
+recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<industrialforegoing:plastic>,<appliedenergistics2:storage_cell_64k>.noReturn(),<industrialforegoing:plastic>],[<appliedenergistics2:storage_cell_64k>.noReturn(),<teslacorelib:machine_case>,<appliedenergistics2:storage_cell_64k>.noReturn()],[<mekanism:machineblock3>,<appliedenergistics2:storage_cell_64k>.noReturn(),<mekanism:machineblock3>]]);
 
 # Water Condensator
 addIFMachineRecipe(<industrialforegoing:water_condensator>, <thermalfoundation:material:24>, <thermalfoundation:material:24>, <thermalexpansion:device>);

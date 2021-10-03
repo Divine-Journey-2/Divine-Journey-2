@@ -412,11 +412,11 @@ recipes.addShaped(<extrautils2:interactionproxy>, [[<extrautils2:spike_iron>,<al
 
 # Builders Wand
 recipes.remove(<extrautils2:itembuilderswand>);
-recipes.addShapedMirrored(<extrautils2:itembuilderswand>, [[null,<enderio:item_alloy_endergy_ingot:1>,<extrautils2:decorativesolid:8>],[null,<extrautils2:decorativesolidwood:1>,<enderio:item_alloy_endergy_ingot:1>],[<betterbuilderswands:wandiron>,null,null]]);
+recipes.addShapedMirrored(<extrautils2:itembuilderswand>, [[null,null,<extrautils2:decorativesolidwood:1>],[null,<extrautils2:decorativesolidwood:1>,null],[<betterbuilderswands:wandiron>,null,null]]);
 
 # Destruction Wand
 recipes.remove(<extrautils2:itemdestructionwand>);
-recipes.addShapedMirrored(<extrautils2:itemdestructionwand>, [[null,<extrautils2:decorativesolid:8>,<enderio:item_alloy_endergy_ingot:1>],[null,<extrautils2:decorativesolidwood:1>,<extrautils2:decorativesolid:8>],[<betterbuilderswands:wandiron>,null,null]]);
+recipes.addShapedMirrored(<extrautils2:itemdestructionwand>, [[null,<contenttweaker:mobgrindium_ingot>,<extrautils2:decorativesolidwood:1>],[null,<extrautils2:decorativesolidwood:1>,<contenttweaker:mobgrindium_ingot>],[<betterbuilderswands:wandiron>,null,null]]);
 
 # Klein Bottle
 recipes.remove(<extrautils2:klein>);
@@ -474,7 +474,7 @@ function addExtraUtilsAngelRingRecipe(dam as int, input_item as IIngredient) {
 	mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring" + dam, <extrautils2:angelring>.withDamage(dam), 2500, 100,
 	[<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:rainbow_tablet>,<astralsorcery:itemcraftingcomponent:4>,
 	<contenttweaker:rainbow_tablet>,<extrautils2:chickenring:1>,<contenttweaker:rainbow_tablet>,
-	<astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara>,<astralsorcery:itemcraftingcomponent:4>,
+	<astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara:*>,<astralsorcery:itemcraftingcomponent:4>,
 	input_item,input_item,input_item,input_item,
 	<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>]);
 	recipes.addShapeless(<extrautils2:angelring>.withDamage(dam), [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);

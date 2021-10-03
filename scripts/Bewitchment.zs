@@ -25,7 +25,7 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:mandrake_seeds", "", <bewit
 
 # Witches' Oven
 recipes.remove(<bewitchment:witches_oven>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_oven", "", <bewitchment:witches_oven>, 6, [<aspect:machina> * 250,<aspect:ignis> * 150,<aspect:sensus> * 150,<aspect:alkimia> * 100,<aspect:fabrico> * 30,<aspect:herba> * 30], <thaumcraft:smelter_thaumium>, [<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>,<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_oven", "", <bewitchment:witches_oven>, 6, [<aspect:machina> * 240,<aspect:ignis> * 150,<aspect:sensus> * 150,<aspect:alkimia> * 100,<aspect:fabrico> * 30,<aspect:herba> * 30], <thaumcraft:smelter_thaumium>, [<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>,<bewitchment:mandrake_root>,<divinerpg:mortum_chunk>,<bewitchment:hellebore>,<thaumcraft:morphic_resonator>]);
 
 # Wood Ash (only in Witches' Oven)
 furnace.remove(<bewitchment:wood_ash>);
@@ -99,11 +99,11 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_iron", "", <bewi
 
 # Witches' Cauldron
 recipes.remove(<bewitchment:witches_cauldron>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_cauldron", "", <bewitchment:witches_cauldron>, 4, [<aspect:alkimia> * 250,<aspect:metallum> * 200,<aspect:machina> * 100,<aspect:fabrico> * 100], <thaumcraft:crucible>, [<bewitchment:liquid_witchcraft>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>,<bewitchment:droplet_of_wisdom>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:witches_cauldron", "", <bewitchment:witches_cauldron>, 4, [<aspect:alkimia> * 240,<aspect:metallum> * 200,<aspect:machina> * 100,<aspect:fabrico> * 100], <thaumcraft:crucible>, [<bewitchment:liquid_witchcraft>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>,<bewitchment:droplet_of_wisdom>,<divinerpg:mortum_chunk>,<thaumcraft:metal_alchemical>]);
 
 # Distillery
 recipes.remove(<bewitchment:distillery>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchment:distillery>, 6, [<aspect:machina> * 250,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <bewitchment:witches_oven>, [<bewitchment:block_of_opal>,<thaumcraft:essentia_input>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<thaumcraft:essentia_input>,<bewitchment:block_of_opal>,<bewitchment:block_of_opal>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchment:distillery>, 6, [<aspect:machina> * 240,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <bewitchment:witches_oven>, [<bewitchment:block_of_opal>,<thaumcraft:essentia_input>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<thaumcraft:essentia_input>,<bewitchment:block_of_opal>,<bewitchment:block_of_opal>]);
 
 # White Sage Seeds
 <bewitchment:white_sage_seeds>.addTooltip(format.white("Sometimes dropped by a Dead Bush."));
@@ -145,7 +145,7 @@ mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <l
 <ore:dyeRed>.remove(<bewitchment:dragons_blood_resin>);
 
 # Dragon's Blood Sapling
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 250,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:dragons_blood_sapling", "", <bewitchment:dragons_blood_sapling>, 7, [<aspect:herba> * 240,<aspect:victus> * 200,<aspect:mortuus> * 200,<aspect:diabolus> * 100,<aspect:perditio> * 50], <natura:nether_sapling2>, [<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>,<bewitchment:cleansing_balm>,<bewitchment:dragons_blood_resin>,<bewitchment:ebb_of_death>,<bewitchment:dragons_blood_resin>]);
 
 # Dragon's Blood Chest
 recipes.remove(<bewitchment:dragons_blood_chest>);
@@ -173,7 +173,7 @@ Distillery.addRecipe([<bewitchment:stone_ichor>], [<bewitchment:oil_of_vitriol>,
 
 # Spinning Wheel
 recipes.remove(<bewitchment:spinning_wheel>);
-mods.thaumcraft.Infusion.registerRecipe("bewitchment:spinning_wheel", "", <bewitchment:spinning_wheel>, 6, [<aspect:machina> * 250,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <atum:spinning_wheel>, [<bewitchment:stone_ichor>,<bewitchment:wormwood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:wormwood>,<bewitchment:stone_ichor>,<immersiveengineering:wooden_device1>]);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:spinning_wheel", "", <bewitchment:spinning_wheel>, 6, [<aspect:machina> * 240,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <atum:spinning_wheel>, [<bewitchment:stone_ichor>,<bewitchment:wormwood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_wood>,<bewitchment:wormwood>,<bewitchment:stone_ichor>,<immersiveengineering:wooden_device1>]);
 
 # Athame
 recipes.remove(<bewitchment:athame>);

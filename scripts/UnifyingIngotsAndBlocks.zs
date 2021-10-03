@@ -408,4 +408,8 @@ recipes.remove(<actuallyadditions:block_misc:5>);
 recipes.removeShaped(<minecraft:coal:1> * 9, [[<*>]]);
 recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5>]);
 
+# Lumium in the Arc Furnace
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:glowstone_dust> * 4], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <ore:glowstone>], "Alloying");
+
 print("ENDING UnifyingIngotsAndBlocks.zs");

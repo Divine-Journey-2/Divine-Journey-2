@@ -49,7 +49,7 @@ mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cast_
 
 # Impetus Cell
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:material:3>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_cell", "", <thaumicaugmentation:material:3>, 8, [<aspect:alienis> * 250,<aspect:vacuos> * 250,<aspect:potentia> * 250], <enderutilities:enderpart:17>, [<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_vacuos>,<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_alienis>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:impetus_cell", "", <thaumicaugmentation:material:3>, 8, [<aspect:alienis> * 240,<aspect:vacuos> * 240,<aspect:potentia> * 240], <enderutilities:enderpart:17>, [<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_vacuos>,<contenttweaker:impetus_crystal>,<thaumcraft:amber_block>,<contenttweaker:impetus_crystal>,<contenttweaker:condensed_vis_crystal_alienis>]);
 
 # Impetus Conductor
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:augment_caster_rift_energy_storage>);
@@ -69,7 +69,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:thaumostatic_harnes
 
 # Fracture Locator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:fracture_locator>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:fracture_locator", "", <thaumicaugmentation:fracture_locator>, 8, [<aspect:vacuos> * 250,<aspect:auram> * 200,<aspect:perditio> * 100], <contenttweaker:impetus_crystal>, [<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>,<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:fracture_locator", "", <thaumicaugmentation:fracture_locator>, 8, [<aspect:vacuos> * 240,<aspect:auram> * 200,<aspect:perditio> * 100], <contenttweaker:impetus_crystal>, [<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>,<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>]);
 
 # Void Stone
 <thaumicaugmentation:stone>.addTooltip(format.white("Base Stone of the Emptiness dimension."));
@@ -158,7 +158,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:impetu
 
 # Arcane Terraformer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:arcane_terraformer>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:arcane_terraformer", "", <thaumicaugmentation:arcane_terraformer>, 8, [<aspect:machina> * 250,<aspect:terra> * 250,<aspect:permutatio> * 200,<aspect:potentia> * 150,<aspect:auram> * 150,<aspect:sensus> * 100], <thaumicaugmentation:impetus_diffuser>, [<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:metal_thaumium>,<thaumcraft:mechanism_complex>,<thaumcraft:potion_sprayer>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_thaumium>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicaugmentation:material:5>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:arcane_terraformer", "", <thaumicaugmentation:arcane_terraformer>, 8, [<aspect:machina> * 240,<aspect:terra> * 240,<aspect:permutatio> * 200,<aspect:potentia> * 150,<aspect:auram> * 150,<aspect:sensus> * 100], <thaumicaugmentation:impetus_diffuser>, [<contenttweaker:condensed_vis_crystal_terra>,<thaumcraft:metal_thaumium>,<thaumcraft:mechanism_complex>,<thaumcraft:potion_sprayer>,<thaumcraft:mechanism_complex>,<thaumcraft:metal_thaumium>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicaugmentation:material:5>]);
 
 # Vis Regenerator Lattice
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:material>);
@@ -198,7 +198,7 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:elytra_harness_augm
 
 # Voidseer's Pearl
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:voidseer_charm>);
-mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:voidseer_charm", "", <thaumcraft:voidseer_charm>, 8, [<aspect:cognitio> * 250,<aspect:vacuos> * 250,<aspect:praecantatio> * 250,<aspect:alienis> * 250], <thaumcraft:baubles:4>, [<alchemistry:ingot:11>,<contenttweaker:rune_of_pride>,<thaumcraft:void_seed>,<thaumicaugmentation:material:5>,<thaumcraft:void_seed>,<contenttweaker:rune_of_greed>,<alchemistry:ingot:11>,<contenttweaker:primordial_fragment>]);
+mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:voidseer_charm", "", <thaumcraft:voidseer_charm>, 8, [<aspect:cognitio> * 240,<aspect:vacuos> * 240,<aspect:praecantatio> * 240,<aspect:alienis> * 240], <thaumcraft:baubles:4>, [<alchemistry:ingot:11>,<contenttweaker:rune_of_pride>,<thaumcraft:void_seed>,<thaumicaugmentation:material:5>,<thaumcraft:void_seed>,<contenttweaker:rune_of_greed>,<alchemistry:ingot:11>,<contenttweaker:primordial_fragment>]);
 
 # Seal Copier
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:seal_copier>);
