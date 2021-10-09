@@ -277,4 +277,7 @@ recipes.addShapeless(<minecraft:book>, [<minecraft:paper>,<minecraft:paper>,<min
 # Seeds from Wheat
 recipes.addShapeless(<minecraft:wheat_seeds>, [<minecraft:wheat>]);
 
+# Quark Bookshelves -> vanilla Bookshelf
+recipes.addShapeless(<minecraft:bookshelf>, [<quark:custom_bookshelf:*>]);
+
 print("ENDING MinecraftRecipes.zs");

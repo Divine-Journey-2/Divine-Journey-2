@@ -179,6 +179,9 @@ recipes.addShaped(<industrialforegoing:pitiful_fuel_generator>, [[<ore:cobblesto
 # Mob Duplicator
 recipes.remove(<industrialforegoing:mob_duplicator>);
 recipes.addShaped(<industrialforegoing:mob_duplicator>, [[<industrialforegoing:plastic>,<industrialforegoing:fortune_addon>,<industrialforegoing:plastic>],[<actuallyadditions:block_crystal_empowered:4>,<teslacorelib:machine_case>,<actuallyadditions:block_crystal_empowered:4>],[<industrialforegoing:plastic>,<enderio:block_powered_spawner>,<industrialforegoing:plastic>]]);
+<industrialforegoing:mob_duplicator>.addTooltip(format.red(format.bold("Warning: ")) + format.white("The Mob Imprisonment Tool is gated"));
+<industrialforegoing:mob_duplicator>.addTooltip(format.white("until Chapter 25. ") + format.white(format.italic("(This is because there is")));
+<industrialforegoing:mob_duplicator>.addTooltip(format.white(format.italic("no blacklist for it in the configs.)")));
 
 function addIFRangeAddonRecipe(output as IItemStack, sides as IIngredient, center as IIngredient) {
 	recipes.remove(output);
