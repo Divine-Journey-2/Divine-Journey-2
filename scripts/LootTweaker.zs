@@ -289,4 +289,7 @@ MystWorldHutGems.addItemEntry(<thermalfoundation:material:130>, 16);
 # Gaia Guardian Runes
 clear_pool("botania:gaia_guardian_2", "runes");
 
+# Roots inject clear
+clear_pool("roots:chests/inject", "main");
+
 print("ENDING LootTweaker.zs");
