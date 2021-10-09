@@ -20,6 +20,8 @@ Version 2.7.0
 - Unhid Yellow Stained Glass.
 - Moss can now be harvested from Underground Biomes Mossy Stones too, not just Cobblestones.
 - Quark Bookshelves can now be converted into the vanilla Bookshelf.
+- Fortune no longer increases the number of blocks dropped with autosmelt.
+- The Supernatural Velocity quest in Chapter 7 now requires 8 items instead of 6, because that's how many you need to upgrade to the block.
 - Added a Checkbox quest in Chapter 14 notifying the player that Command Blocks need to be enabled on the server on order for custom dungeons to work.
 - Changed the recommended automation method for the Hellfire Forge that has 2 identical inputs to use Integrated Dynamics in Chapter 15.
 - Corrected the Terrasteel quest in Chapter 18 to require the correct amount (6, not 5) for the Elven Gateway.
