@@ -929,4 +929,14 @@ mods.enderio.SagMill.addRecipe([<immersiveengineering:material:18>], [1.0], <imm
 mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 
+# Dense Construction Chunk: additional crushing recipes
+EUCrusher.add(<buildinggadgets:construction_chunk_dense> * 4, <buildinggadgets:constructionblock_dense>);
+mods.enderio.SagMill.addRecipe([<buildinggadgets:construction_chunk_dense> * 4], [1.0], <buildinggadgets:constructionblock_dense>);
+LightningCrusher.add(<buildinggadgets:construction_chunk_dense> * 4, <buildinggadgets:constructionblock_dense>);
+
+# Construction Paste: additional crushing recipes
+EUCrusher.add(<buildinggadgets:constructionpaste>, <buildinggadgets:construction_chunk_dense>);
+mods.enderio.SagMill.addRecipe([<buildinggadgets:constructionpaste>], [1.0], <buildinggadgets:construction_chunk_dense>);
+LightningCrusher.add(<buildinggadgets:constructionpaste>, <buildinggadgets:construction_chunk_dense>);
+
 print("ENDING OreProcessingAdditions.zs");

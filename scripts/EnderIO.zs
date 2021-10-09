@@ -560,6 +560,10 @@ recipes.addShaped(<enderio:item_conduit_probe>, [[<enderio:item_alloy_nugget>,nu
 recipes.remove(<enderio:item_conduit_facade>);
 recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_material:4>,null,<enderio:item_material:4>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
+# Transparent Conduit Facade
+recipes.remove(<enderio:item_conduit_facade:2>);
+recipes.addShaped(<enderio:item_conduit_facade:2> * 4, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_material:4>,<ore:fusedGlass>,<enderio:item_material:4>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+
 # Glider Wing
 recipes.remove(<enderio:item_material:6>);
 recipes.addShapedMirrored(<enderio:item_material:6>, [[null,<enderio:item_alloy_ingot:6>,<contenttweaker:industrial_leather>],[<enderio:item_alloy_ingot:6>,<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<contenttweaker:industrial_leather>,<openblocks:generic>]]);

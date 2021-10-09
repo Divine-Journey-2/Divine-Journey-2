@@ -1186,7 +1186,7 @@ Distillery.addRecipe([<contenttweaker:gypsum> * 3], [<bewitchment:wood_ash>,<bew
 Distillery.addRecipe([<contenttweaker:travelers_tenacity>], [<bewitchment:oil_of_vitriol>,<bewitchment:hoof>,<bewitchment:belladonna>,<bewitchment:wormwood>,<contenttweaker:rune_of_lust>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
 
 # Lively Nature
-recipes.addShapeless(<contenttweaker:lively_nature>, [<bewitchment:spruce_heart>.noReturn(),<bewitchment:spruce_heart>.noReturn(),<bewitchment:birch_soul>.noReturn()]);
+recipes.addShapeless(<contenttweaker:lively_nature>, [<bewitchment:oak_spirit>.noReturn(),<bewitchment:spruce_heart>.noReturn(),<bewitchment:birch_soul>.noReturn()]);
 
 # Witches' Delicacy
 recipes.addShapeless(<contenttweaker:witches_delicacy>, [<bewitchment:liquid_witchcraft>.noReturn(),<bewitchment:droplet_of_wisdom>.noReturn()]);

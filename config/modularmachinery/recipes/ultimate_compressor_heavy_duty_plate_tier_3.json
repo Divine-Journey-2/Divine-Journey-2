@@ -6,13 +6,13 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "galacticraftplanets:item_basic_mars@3",
+            "item": "galacticraftplanets:item_basic_mars@5",
             "amount": 6
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "galacticraftplanets:item_basic_mars@5",
+            "item": "galacticraftplanets:item_basic_mars@3",
             "amount": 3
         },
         {

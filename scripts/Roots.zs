@@ -267,7 +267,7 @@ Fey.addRecipe("wildwood_sapling_custom", <roots:wildwood_sapling>, [<totemic:ced
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
-SummonCreatures.addEntity(<entity:natura:imp>, [<natura:nether_thorn_vines>, <divinerpg:bloodgem>, <betternether:eye_seed>]);
+SummonCreatures.addEntity(<entity:natura:imp>, [<natura:nether_thorn_vines>, <contenttweaker:bloodgem_dust>, <betternether:eye_seed>]);
 <natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
 
 # Artificial Scarab Wings
