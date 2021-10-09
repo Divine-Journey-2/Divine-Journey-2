@@ -579,8 +579,9 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
 for s in <ore:sand>.items {
 	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
+	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>, 4000, <thermalfoundation:material:865>, 20);
 	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), 4000, <thermalfoundation:material:865>, 20);
-
+	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>, 4000, <thermalfoundation:material:865>, 20);
 }
 
 # Tier III-IV Potion tooltips
