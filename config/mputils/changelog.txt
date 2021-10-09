@@ -4,7 +4,7 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 
 Version 2.7.0
 
-- Added Building Gadgets, set max build distance to 16, added a lot of blocks to its blacklist that would break or crash the game when moved and a lot of blocks gated by mining level, set the max energy of all tools to 20M, energy cost per operation to 2500 (Building Gadget) / 5000 (Exchaning & Copy-Paste Gadget) / 10,000 (Destruction Gadget), added custom recipes for all items, added more crushing recipes for Construction Paste, and added 5 quests for the 4 Gadgets and the Template Manager.
+- Added Building Gadgets, set max build distance to 16, added a lot of blocks to its blacklist that would break or crash the game when moved and a lot of blocks gated by mining level, set the max energy of all tools to 20M, energy cost per operation to 2500 (Building Gadget) / 5000 (Exchanging & Copy-Paste Gadget) / 10,000 (Destruction Gadget), added custom recipes for all items, added more crushing recipes for Construction Paste, and added 5 quests for the 4 Gadgets and the Template Manager.
 - Added the Clumps mod, making it so Experience Orbs clump together, reducing lag when there is a large number of them.
 - Void World changes: Tinkers' Slime islands no longer spawn there, J'zahar Portals can no longer lead there,  it can no longer contain Immersive Excavator ores, GalactiCraft Rockets can no longer launch from there.
 - Tier 3 Heavy Duty Plates now require the correct amount of inputs in the Ultimate Compressor.
