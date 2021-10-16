@@ -17,7 +17,7 @@ Recipe changes:
 - Osglolapis now crafts 2 at a time (up from 1).
 - Fixed a bug where Lead Ore would get smelted into Lead Dust in the Redstone Furnace.
 - Added a missing recipe for the Nutritious Stick, making the Dark Bow craftable.
-- Added conversion between Covered Cables and Dense Covered Cables, and conversion between Smart Cables and Dense Smart Cables.
+- Added conversion between Covered Cables and Dense Covered Cables, conversion between Smart Cables and Dense Smart Cables, and conversion between ME Conduits and ME Dense Conduits.
 - The ME Interface and Fluid Interface now only require Industrial Machine Chassis' instead of RFTools Machine Frames.
 - Added a missing recipe for Tier 3 Mob Chunks in the Auto Infusion Matrix.
 - The following Ores can now be crafted from Mystical Agriculture Essences + Stone: Iron, Coal, Gold, Redstone, Lapis, Diamond, Emerald, Tin, Copper, Silver, Lead, Aluminum & Nickel.

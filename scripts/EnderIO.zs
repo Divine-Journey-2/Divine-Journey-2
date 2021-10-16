@@ -475,8 +475,9 @@ recipes.addShaped(<enderio:block_ender_generator>, [[<enderio:block_alloy:8>,<en
 # ME Conduit
 recipes.remove(<enderio:item_me_conduit>);
 recipes.addShaped(<enderio:item_me_conduit> * 3, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<appliedenergistics2:part:16>,<appliedenergistics2:part:16>,<appliedenergistics2:part:16>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+recipes.addShapeless(<enderio:item_me_conduit> * 4, [<enderio:item_me_conduit:1>]);
 
-# ME Dense Conduit
+# Dense ME Conduit
 recipes.remove(<enderio:item_me_conduit:1>);
 recipes.addShaped(<enderio:item_me_conduit:1>, [[<enderio:item_me_conduit>,<enderio:item_me_conduit>],[<enderio:item_me_conduit>,<enderio:item_me_conduit>]]);
 
