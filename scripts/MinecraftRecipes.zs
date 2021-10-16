@@ -39,7 +39,7 @@ recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>,<ore:slab
 
 # Stone Slab
 recipes.remove(<minecraft:stone_slab>);
-recipes.addShaped(<minecraft:stone_slab>, [[<ore:stone>,<ore:stone>,<ore:stone>]]);
+recipes.addShaped(<minecraft:stone_slab> * 6, [[<ore:stone>,<ore:stone>,<ore:stone>]]);
 
 # Chests (check other Chests too)
 recipes.remove(<minecraft:chest>); # Add Mini Chest -> Chest conversion

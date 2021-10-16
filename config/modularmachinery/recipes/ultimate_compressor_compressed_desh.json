@@ -1,24 +1,25 @@
 {
     "machine": "ultimate_compressor",
     "registryName": "ultimate_compressor_compressed_desh",
-    "recipeTime": 10,
+    "recipeTime": 1,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
             "item": "galacticraftplanets:item_basic_mars@2",
-            "amount": 6
+            "amount": 24
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "contenttweaker:tough_galactic_plating",
-            "amount": 2
+            "amount": 8
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:galactic_ingot"
+            "item": "contenttweaker:galactic_ingot",
+            "amount": 4
         },
         {
             "type": "energy",
@@ -28,7 +29,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "galacticraftplanets:item_basic_mars@5"
+            "item": "galacticraftplanets:item_basic_mars@5",
+            "amount": 4
         }
     ]
 }

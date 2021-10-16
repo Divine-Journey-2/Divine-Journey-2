@@ -332,7 +332,7 @@ mods.thaumcraft.Crucible.registerRecipe("JarLabel", "", <thaumcraft:label>, <aby
 # Purifying Bath Salts
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:bath_salts>);
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:BathSalts", "BATHSALTS", <thaumcraft:bath_salts>, <thaumcraft:salis_mundus>, [<aspect:victus> * 80, <aspect:aqua> * 60, <aspect:cognitio> * 60, <aspect:sensus> * 40, <aspect:ordo> * 40]);
-<thaumcraft:bath_salts>.addTooltip(format.white("Place this into an Arcane Spa underneith a small pool"));
+<thaumcraft:bath_salts>.addTooltip(format.white("Place this into an Arcane Spa underneath a small pool"));
 <thaumcraft:bath_salts>.addTooltip(format.white("of water to turn the Water into Purifying Liquid."));
 
 # Sanitizing Soap

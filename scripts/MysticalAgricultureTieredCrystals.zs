@@ -20,7 +20,7 @@ mods.thaumcraft.Infusion.registerRecipe("matc:intermediumcrystal", "", <matc:int
 
 # Superium Infusion Crystal
 recipes.remove(<matc:superiumcrystal>);
-mods.astralsorcery.Altar.addTraitAltarRecipe("matc:superiumcrystal", <matc:superiumcrystal>, 8000, 100,
+mods.astralsorcery.Altar.addTraitAltarRecipe("matc:superiumcrystal", <matc:superiumcrystal>, 4000, 100,
 [null,null,null,
 null,<matc:intermediumcrystal>,null,
 null,null,null,

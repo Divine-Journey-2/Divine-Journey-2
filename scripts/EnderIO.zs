@@ -14,6 +14,7 @@ import mods.thermalexpansion.Compactor;
 import mods.roots.Fey;
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import mods.enderio.Enchanter;
+import mods.thermalexpansion.Transposer;
 
 print("STARTING EnderIO.zs");
 
@@ -761,6 +762,9 @@ mods.enderio.Enchanter.removeRecipe(<enchantment:evilcraft:life_stealing>);
 # Arrow of Decay
 recipes.remove(<minecraft:tipped_arrow>.withTag({Potion: "enderio:withering"}));
 recipes.addShaped(<minecraft:tipped_arrow>.withTag({Potion: "enderio:withering"}) * 8, [[<minecraft:arrow>,<minecraft:arrow>,<minecraft:arrow>],[<minecraft:arrow>,<minecraft:lingering_potion>.withTag({Potion: "cofhcore:wither"}),<minecraft:arrow>],[<minecraft:arrow>,<minecraft:arrow>,<minecraft:arrow>]]);
+
+# Nutritious Stick
+mods.thermalexpansion.Transposer.addFillRecipe(<enderio:item_material:8>, <minecraft:stick>, <liquid:nutrient_distillation> * 500, 3000);
 
 # Dark Shears
 recipes.remove(<enderio:item_dark_steel_shears>);

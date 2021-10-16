@@ -1,17 +1,19 @@
 {
     "machine": "ultimate_compressor",
     "registryName": "ultimate_compressor_compressed_bronze",
-    "recipeTime": 10,
+    "recipeTime": 1,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "galacticraftcore:basic_item@6"
+            "item": "galacticraftcore:basic_item@6",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "galacticraftcore:basic_item@7"
+            "item": "galacticraftcore:basic_item@7",
+            "amount": 4
         },
         {
             "type": "energy",
@@ -21,7 +23,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "galacticraftcore:basic_item@10"
+            "item": "galacticraftcore:basic_item@10",
+            "amount": 4
         }
     ]
 }

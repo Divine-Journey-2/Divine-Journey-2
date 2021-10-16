@@ -1,7 +1,7 @@
 {
     "machine": "weak_fusion_plant",
     "registryName": "weak_fusion_plant_plutonium",
-    "recipeTime": 1200,
+    "recipeTime": 120,
     "requirements": [
         {
             "type": "item",
@@ -23,7 +23,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 300000
+            "energyPerTick": 3000000
         },
         {
             "type": "item",

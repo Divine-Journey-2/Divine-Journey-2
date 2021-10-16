@@ -1,7 +1,7 @@
 {
     "machine": "weak_fusion_plant",
     "registryName": "weak_fusion_plant_mysticalagriculture_peridot_seeds",
-    "recipeTime": 1200,
+    "recipeTime": 30,
     "requirements": [
         {
             "type": "item",
@@ -34,7 +34,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 300000
+            "energyPerTick": 12000000
         },
         {
             "type": "item",

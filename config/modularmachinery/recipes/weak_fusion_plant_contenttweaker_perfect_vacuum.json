@@ -1,7 +1,7 @@
 {
     "machine": "weak_fusion_plant",
     "registryName": "weak_fusion_plant_contenttweaker_perfect_vacuum",
-    "recipeTime": 20,
+    "recipeTime": 1,
     "requirements": [
         {
             "type": "item",
@@ -41,7 +41,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 300000
+            "energyPerTick": 6000000
         },
         {
             "type": "item",

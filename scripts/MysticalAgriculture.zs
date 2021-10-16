@@ -1093,4 +1093,22 @@ recipes.addShaped(<alchemistry:ingot:24> * 3, [[<mysticalagriculture:chrome_esse
 # Rock Crystal Seeds
 # recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_rock_crystal_seeds.json
 
+# Ores from Essence
+function addMysticalAgricultureEssenceToOreRecipe(ore as IItemStack, essence as IItemStack, amount as int) {
+	recipes.addShaped(ore * amount, [[essence,essence,essence],[essence,<ore:stone>,essence],[essence,essence,essence]]);
+}
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:iron_ore>,<mysticalagriculture:iron_essence>,2);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:coal_ore>,<mysticalagriculture:coal_essence>,3);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:gold_ore>,<mysticalagriculture:gold_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:redstone_ore>,<mysticalagriculture:redstone_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:lapis_ore>,<mysticalagriculture:lapis_lazuli_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:diamond_ore>,<mysticalagriculture:diamond_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<minecraft:emerald_ore>,<mysticalagriculture:emerald_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore:1>,<mysticalagriculture:tin_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore>,<mysticalagriculture:copper_essence>,2);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore:2>,<mysticalagriculture:silver_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore:3>,<mysticalagriculture:lead_essence>,1);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore:4>,<mysticalagriculture:aluminum_essence>,2);
+addMysticalAgricultureEssenceToOreRecipe(<thermalfoundation:ore:5>,<mysticalagriculture:nickel_essence>,1);
+
 print("ENDING MysticalAgriculture.zs");

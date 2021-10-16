@@ -103,7 +103,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:lightning_infuser>
 
 # Skyfather Ingot
 LightningInfusion.remove(<lightningcraft:ingot:1>);
-LightningInfusion.add(<lightningcraft:ingot:1>, <divinerpg:skythern_chunk>, 85, [<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>]);
+LightningInfusion.add(<lightningcraft:ingot:1> * 4, <divinerpg:skythern_chunk>, 85, [<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>]);
 
 # Electrostatic Generator
 recipes.remove(<lightningcraft:static_generator>);
@@ -151,7 +151,7 @@ mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", 
 
 # Mystic Ingot
 LightningInfusion.remove(<lightningcraft:ingot:2>);
-LightningInfusion.add(<lightningcraft:ingot:2> * 8, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+LightningInfusion.add(<lightningcraft:ingot:2> * 16, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
 
 # Lightning Furnace
 recipes.remove(<lightningcraft:lightning_furnace>);
@@ -179,7 +179,7 @@ LightningInfusion.add(<lightningcraft:material:13>, <lightningcraft:material:12>
 
 # Divine Underpowder
 LightningInfusion.remove(<lightningcraft:material:14>);
-LightningInfusion.add(<lightningcraft:material:14> * 2, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
+LightningInfusion.add(<lightningcraft:material:14> * 8, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
 
 # Mystic Lightning Cell
 recipes.remove(<lightningcraft:lightning_cell:2>);

@@ -378,7 +378,7 @@ furnace.addRecipe(<thermalfoundation:material:131>, <ore:oreLead>);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<thermalfoundation:material:67>);
 mods.thermalexpansion.RedstoneFurnace.removeRecipe(<ore:oreLead>.firstItem);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>, 3600);
-mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:67>, <ore:oreLead>.firstItem, 3600);
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:131>, <ore:oreLead>.firstItem, 3600);
 
 # Lead Block
 recipes.removeShaped(<thermalfoundation:storage:3>, [[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>]]);

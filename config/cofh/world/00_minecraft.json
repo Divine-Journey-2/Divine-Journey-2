@@ -296,7 +296,7 @@
 				"material": "minecraft:stone",
 				"cluster-size": 4
 			},
-			"cluster-count": 1,
+			"cluster-count": 3,
 			"min-height": 0,
 			"max-height": 32,
 			"retrogen": false,

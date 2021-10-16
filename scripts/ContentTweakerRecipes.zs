@@ -440,10 +440,10 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:gp_powder>, <cont
 recipes.addShapeless(<contenttweaker:gp_powder> * 2, [<contenttweaker:gp_powder>, <mekanism:otherdust> , <minecraft:glowstone_dust>, <minecraft:redstone>, <actuallyadditions:item_dust:7>]);
 
 # Osglolapis & Block
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:osglolapis>, <minecraft:dye:4>, null, 80, 256, [<ore:ingotOsgloglas>], "Alloying");
-EIOAlloySmelter.addRecipe(<contenttweaker:osglolapis>, [<minecraft:dye:4>, <ore:ingotOsgloglas>], 4000);
-IEAlloySmelter.addRecipe(<contenttweaker:osglolapis>, <minecraft:dye:4>, <ore:ingotOsgloglas>, 160);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:osglolapis>, <minecraft:dye:4>, <plustic:osgloglasingot>, 4000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:osglolapis> * 2, <minecraft:dye:4>, null, 80, 256, [<ore:ingotOsgloglas>], "Alloying");
+EIOAlloySmelter.addRecipe(<contenttweaker:osglolapis> * 2, [<minecraft:dye:4>, <ore:ingotOsgloglas>], 4000);
+IEAlloySmelter.addRecipe(<contenttweaker:osglolapis> * 2, <minecraft:dye:4>, <ore:ingotOsgloglas>, 160);
+mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:osglolapis> * 2, <minecraft:dye:4>, <plustic:osgloglasingot>, 4000);
 recipes.addShaped(<contenttweaker:osglolapis_block>, [[<contenttweaker:osglolapis>,<contenttweaker:osglolapis>,<contenttweaker:osglolapis>],[<contenttweaker:osglolapis>,<contenttweaker:osglolapis>,<contenttweaker:osglolapis>],[<contenttweaker:osglolapis>,<contenttweaker:osglolapis>,<contenttweaker:osglolapis>]]);
 recipes.addShapeless(<contenttweaker:osglolapis> * 9, [<contenttweaker:osglolapis_block>]);
 
@@ -1341,8 +1341,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:undermeld>, <ligh
 EIOAlloySmelter.addRecipe(<contenttweaker:undermeld>, [<lightningcraft:corrupt_stone>, <lightningcraft:light_block>, <lightningcraft:under_sand>], 36000);
 
 # Mystical Iron Ingot
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:mystical_iron_ingot> * 3, <lightningcraft:material:14>, null, 200, 400, [<extendedcrafting:material>, <bewitchment:cold_iron_ingot>]);
-EIOAlloySmelter.addRecipe(<contenttweaker:mystical_iron_ingot> * 3, [<lightningcraft:material:14>, <extendedcrafting:material>, <bewitchment:cold_iron_ingot>], 24000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:mystical_iron_ingot> * 6, <lightningcraft:material:14>, null, 200, 400, [<extendedcrafting:material>, <bewitchment:cold_iron_ingot>]);
+EIOAlloySmelter.addRecipe(<contenttweaker:mystical_iron_ingot> * 6, [<lightningcraft:material:14>, <extendedcrafting:material>, <bewitchment:cold_iron_ingot>], 24000);
 recipes.addShapeless(<contenttweaker:mystical_iron_ingot> * 9, [<contenttweaker:mystical_iron_block>]);
 
 # Mystical Iron Block

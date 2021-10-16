@@ -308,6 +308,7 @@ recipes.addShaped(<mekanism:energyupgrade>, [[<thermalfoundation:material:160>,<
 # Muffling Upgrade
 recipes.remove(<mekanism:mufflingupgrade>);
 recipes.addShaped(<mekanism:mufflingupgrade>, [[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>],[<mekanism:enrichedalloy>,<minecraft:noteblock>,<mekanism:enrichedalloy>],[<thermalfoundation:material:160>,<thermalfoundation:material:160>,<thermalfoundation:material:160>]]);
+<mekanism:mufflingupgrade>.maxStackSize = 64;
 
 # Robit
 recipes.remove(<mekanism:robit>);

@@ -283,11 +283,11 @@ recipes.addShaped(<appliedenergistics2:part:520>, [[null,<appliedenergistics2:ma
 
 # ME Interface
 recipes.removeShaped(<appliedenergistics2:interface>);
-recipes.addShapedMirrored(<appliedenergistics2:interface>, [[<enderio:item_alloy_ingot>,<contenttweaker:methodology_processor>,<enderio:item_alloy_ingot>],[<appliedenergistics2:material:44>,<rftools:machine_frame>,<appliedenergistics2:material:43>],[<enderio:item_alloy_ingot>,<contenttweaker:methodology_processor>,<enderio:item_alloy_ingot>]]);
+recipes.addShapedMirrored(<appliedenergistics2:interface>, [[<enderio:item_alloy_ingot>,<contenttweaker:methodology_processor>,<enderio:item_alloy_ingot>],[<appliedenergistics2:material:44>,<enderio:item_material:1>,<appliedenergistics2:material:43>],[<enderio:item_alloy_ingot>,<contenttweaker:methodology_processor>,<enderio:item_alloy_ingot>]]);
 
 # ME Fluid Interface
 recipes.remove(<appliedenergistics2:fluid_interface>);
-recipes.addShaped(<appliedenergistics2:fluid_interface>, [[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:material:44>,<rftools:machine_frame>,<appliedenergistics2:material:43>],[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>]]);
+recipes.addShaped(<appliedenergistics2:fluid_interface>, [[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:material:44>,<enderio:item_material:1>,<appliedenergistics2:material:43>],[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>]]);
 
 # Molecular Assembler
 recipes.removeShaped(<appliedenergistics2:molecular_assembler>);
@@ -397,6 +397,11 @@ recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}),
 # Matter Condenser
 recipes.remove(<appliedenergistics2:condenser>);
 recipes.addShaped(<appliedenergistics2:condenser>, [[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:fluix_block>,<appliedenergistics2:dense_energy_cell>,<appliedenergistics2:fluix_block>],[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>]]);
+
+# Covered, Smart, Dense Cable conversion recipes
+recipes.addShapeless(<appliedenergistics2:part:36> * 4, [<appliedenergistics2:part:516>]);
+recipes.addShapeless(<appliedenergistics2:part:56> * 4, [<appliedenergistics2:part:76>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]);
+recipes.addShaped(<appliedenergistics2:part:76>, [[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>],[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>]]);
 
 # Creative Energy Cell
 mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_energy_cell>,

@@ -1,7 +1,7 @@
 {
     "machine": "weak_fusion_plant",
     "registryName": "weak_fusion_plant_contenttweaker_proton_electron",
-    "recipeTime": 10,
+    "recipeTime": 1,
     "requirements": [
         {
             "type": "item",
@@ -22,7 +22,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 300000
+            "energyPerTick": 3000000
         },
         {
             "type": "item",
