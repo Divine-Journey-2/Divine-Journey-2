@@ -1,0 +1,6 @@
+
+{
+  "Name": "botania:pinkWither",
+  "Registry ID": "botania:pink_wither",
+  "Class": "vazkii.botania.common.entity.EntityPinkWither"
+}

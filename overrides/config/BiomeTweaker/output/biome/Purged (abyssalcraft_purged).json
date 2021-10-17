@@ -1,0 +1,32 @@
+
+{
+  "ID": 143,
+  "Name": "Purged",
+  "Resource Location": "abyssalcraft:purged",
+  "Class": "com.shinoow.abyssalcraft.common.world.biome.BiomePurged",
+  "Root Height": 0.1,
+  "Height Variation": 0.2,
+  "Top Block": "abyssalcraft:calcifiedstone",
+  "Filler Block": "abyssalcraft:calcifiedstone",
+  "Ocean Top Block": "Disabled. Activate in BiomeTweakerCore.",
+  "Ocean Filler Block": "Disabled. Activate in BiomeTweakerCore.",
+  "Actual Filler Blocks": "Disabled. Activate in BiomeTweakerCore.",
+  "Grass Color": "Disabled. Activate in BiomeTweakerCore.",
+  "Foliage Color": "Disabled. Activate in BiomeTweakerCore.",
+  "Water Color": "14145753",
+  "Temperature": 0.5,
+  "Humidity": 0.5,
+  "Water Tint": 14145753,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "DEAD"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Spawn Biome": false,
+  "Tweaked": false
+}

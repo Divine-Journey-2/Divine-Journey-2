@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.karos",
+  "Registry ID": "divinerpg:karos",
+  "Class": "divinerpg.objects.entities.entity.boss.EntityKaros"
+}

@@ -1,0 +1,6 @@
+
+{
+  "Name": "CultistCleric",
+  "Registry ID": "thaumcraft:cultistcleric",
+  "Class": "thaumcraft.common.entities.monster.cult.EntityCultistCleric"
+}

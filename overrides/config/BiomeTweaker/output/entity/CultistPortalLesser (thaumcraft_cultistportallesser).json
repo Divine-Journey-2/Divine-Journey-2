@@ -1,0 +1,6 @@
+
+{
+  "Name": "CultistPortalLesser",
+  "Registry ID": "thaumcraft:cultistportallesser",
+  "Class": "thaumcraft.common.entities.monster.cult.EntityCultistPortalLesser"
+}

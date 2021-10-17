@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.cave_crawler",
+  "Registry ID": "divinerpg:cave_crawler",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityCaveCrawler"
+}

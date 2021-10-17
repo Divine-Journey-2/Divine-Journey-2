@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.hell_spider",
+  "Registry ID": "divinerpg:hell_spider",
+  "Class": "divinerpg.objects.entities.entity.nether.EntityHellSpider"
+}

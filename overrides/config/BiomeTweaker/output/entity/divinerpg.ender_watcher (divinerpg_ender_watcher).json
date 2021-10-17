@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.ender_watcher",
+  "Registry ID": "divinerpg:ender_watcher",
+  "Class": "divinerpg.objects.entities.entity.end.EntityEnderWatcher"
+}

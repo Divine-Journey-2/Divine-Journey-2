@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.cyclops",
+  "Registry ID": "divinerpg:cyclops",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityCyclops"
+}

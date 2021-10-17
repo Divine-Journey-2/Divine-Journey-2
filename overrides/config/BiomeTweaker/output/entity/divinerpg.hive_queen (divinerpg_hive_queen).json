@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.hive_queen",
+  "Registry ID": "divinerpg:hive_queen",
+  "Class": "divinerpg.objects.entities.entity.boss.EntityHiveQueen"
+}

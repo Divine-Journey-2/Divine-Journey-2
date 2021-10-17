@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.angry_bunny",
+  "Registry ID": "divinerpg:angry_bunny",
+  "Class": "divinerpg.objects.entities.entity.mortum.EntityAngryBunny"
+}

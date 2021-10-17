@@ -1,0 +1,6 @@
+
+{
+  "Name": "divinerpg.kobblin",
+  "Registry ID": "divinerpg:kobblin",
+  "Class": "divinerpg.objects.entities.entity.vanilla.EntityKobblin"
+}
