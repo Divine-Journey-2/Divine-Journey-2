@@ -1811,6 +1811,10 @@
     {
       "item": "bewitchment:hellhound_horn|0",
       "emc": 32
+    },
+    {
+      "item": "projecte:item.pe_tome|0",
+      "emc": 10000000
     }
   ]
 }
