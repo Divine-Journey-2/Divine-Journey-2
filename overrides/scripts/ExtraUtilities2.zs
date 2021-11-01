@@ -388,7 +388,7 @@ recipes.addShaped(<extrautils2:crafter>, [[<extrautils2:decorativesolid:8>,<extr
 
 # Scanner
 recipes.remove(<extrautils2:scanner>);
-recipes.addShaped(<extrautils2:scanner>, [[<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:8>,<extrautils2:decorativesolid:3>],[<extrautils2:decorativesolid:3>,<extrautils2:machine>,<extrautils2:decorativesolid:3>],[<extrautils2:decorativesolid:3>,<rftools:storage_scanner>,<extrautils2:decorativesolid:3>]]);
+recipes.addShaped(<extrautils2:scanner>, [[<extrautils2:decorativesolid:3>,<extrautils2:ingredients:2>,<extrautils2:decorativesolid:3>],[<extrautils2:decorativesolid:3>,<extrautils2:machine>,<extrautils2:decorativesolid:3>],[<extrautils2:decorativesolid:3>,<extrautils2:decorativesolid:8>,<extrautils2:decorativesolid:3>]]);
 
 # Mechanical Miner
 recipes.remove(<extrautils2:miner>);
