@@ -403,7 +403,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:wheat> * 9, <minecraft:hay
 EUCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
 mods.enderio.SagMill.addRecipe([<minecraft:wheat> * 9], [1.0], <minecraft:hay_block>);
 LightningCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
-mods.mekanism.crusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
+mods.mekanism.crusher.addRecipe(<minecraft:hay_block>, <minecraft:wheat> * 9);
 
 # Nether Ore fixes & additions
 <ore:oreEmerald>.remove(<bno:ore_netheremerald>);
@@ -926,8 +926,7 @@ mods.mekanism.crusher.addRecipe(<thermalfoundation:material:167>, <thermalfounda
 Grinder.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>, 4);
 EUCrusher.add(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 mods.enderio.SagMill.addRecipe([<immersiveengineering:material:18>], [1.0], <immersiveengineering:material:19>);
-mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
-mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+mods.mekanism.crusher.addRecipe(<immersiveengineering:material:19>, <immersiveengineering:material:18>);
 
 # Dense Construction Chunk: additional crushing recipes
 EUCrusher.add(<buildinggadgets:construction_chunk_dense> * 4, <buildinggadgets:constructionblock_dense>);
