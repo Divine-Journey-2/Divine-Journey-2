@@ -914,6 +914,10 @@ mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <ap
 # Gold Ore in the SAG Mill
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:866>], [1.0,0.05], <ore:oreGold>, "CHANCE_ONLY");
 
+# Remove Cyanite Dust from Yellorite Ore Sag Mill
+mods.enderio.SagMill.removeRecipe(<bigreactors:oreyellorite>);
+mods.enderio.SagMill.addRecipe([<bigreactors:dustyellorium> * 2, <minecraft:cobblestone>], [1.0,0.15], <bigreactors:oreyellorite>, "CHANCE_ONLY");
+
 # Ingot crushing in the Mekanism Crusher
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>);
