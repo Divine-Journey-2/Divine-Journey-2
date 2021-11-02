@@ -17,7 +17,6 @@ Bugfixes and progression skips:
 - Dice of Fate can no longer reward multiple of the same Relic, allowed Botania's Advancements to be registered.
 - Emerald and Peridot Mystical Agriculture Seeds now spread.
 
-
 Balance changes:
 
 - Extra Utilities 2 Scanner no longer costs the RFTools Scanner.
