@@ -489,6 +489,19 @@
 		]
 	},
 	{
+		"item": "actuallyadditions:block_misc:3",
+		"color": 15,
+		"rarity": [
+			{
+				"whitelist": "",
+				"blacklist": "minecraft:hell, minecraft:sky",
+				"depth_min": 0,
+				"depth_max": 50,
+				"weight": 8
+			}
+		]
+	},
+	{
 		"item": "mekanism:oreblock",
 		"color": 7,
 		"rarity": [

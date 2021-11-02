@@ -239,7 +239,7 @@ recipes.addShaped(<rftools:ender_monitor>, [[<enderio:item_alloy_ingot:3>,<therm
 
 # Storage Scanner
 recipes.remove(<rftools:storage_scanner>);
-recipes.addShaped(<rftools:storage_scanner>, [[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<alchemistry:ingot:90>,<thermalfoundation:material:295>,<alchemistry:ingot:90>]]);
+recipes.addShaped(<rftools:storage_scanner>, [[<alchemistry:ingot:90>,<appliedenergistics2:wireless_access_point>,<alchemistry:ingot:90>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<alchemistry:ingot:90>,<extrautils2:scanner>,<alchemistry:ingot:90>]]);
 
 # Elevator
 recipes.remove(<rftools:elevator>);

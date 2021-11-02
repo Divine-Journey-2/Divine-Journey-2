@@ -38,7 +38,7 @@ global divinerpg_dimension_names_lower as string[] = ["eden", "wildwood", "apala
 global divinerpg_galacticraft_dimension_names_upper as string[] = ["Eden", "Wildwood", "Apalachia", "Skythern", "Mortum", "Moon", "Venus Treasure", "Asteroids"];
 # itemUtils.getItem("minecraft:apple");
 
-global dimensional_stones as IItemStack[] = [<divinerpg:frozen_stone>,<divinerpg:twilight_stone>,<aether_legacy:holystone:*>,<atum:limestone>,<erebus:umberstone>,<abyssalcraft:stone:1>,<abyssalcraft:stone:2>,<abyssalcraft:stone:3>];
+global dimensional_stones as IItemStack[] = [<divinerpg:frozen_stone>,<divinerpg:twilight_stone>,<divinerpg:dream_stone>,<aether_legacy:holystone:*>,<atum:limestone>,<erebus:umberstone>,<abyssalcraft:stone:1>,<abyssalcraft:stone:2>,<abyssalcraft:stone:3>];
 
 # Blood Orb Variables
 global blood_orb_at_least_tier_1 as IIngredient = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}) | <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"});

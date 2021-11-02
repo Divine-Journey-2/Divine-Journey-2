@@ -403,7 +403,7 @@ mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:wheat> * 9, <minecraft:hay
 EUCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
 mods.enderio.SagMill.addRecipe([<minecraft:wheat> * 9], [1.0], <minecraft:hay_block>);
 LightningCrusher.add(<minecraft:wheat> * 9, <minecraft:hay_block>);
-mods.mekanism.crusher.addRecipe(<minecraft:wheat> * 9, <minecraft:hay_block>);
+mods.mekanism.crusher.addRecipe(<minecraft:hay_block>, <minecraft:wheat> * 9);
 
 # Nether Ore fixes & additions
 <ore:oreEmerald>.remove(<bno:ore_netheremerald>);
@@ -914,6 +914,10 @@ mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <ap
 # Gold Ore in the SAG Mill
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 2, <thermalfoundation:material:866>], [1.0,0.05], <ore:oreGold>, "CHANCE_ONLY");
 
+# Remove Cyanite Dust from Yellorite Ore Sag Mill
+mods.enderio.SagMill.removeRecipe(<bigreactors:oreyellorite>);
+mods.enderio.SagMill.addRecipe([<bigreactors:dustyellorium> * 2, <minecraft:cobblestone>], [1.0,0.15], <bigreactors:oreyellorite>, "CHANCE_ONLY");
+
 # Ingot crushing in the Mekanism Crusher
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>);
@@ -926,8 +930,7 @@ mods.mekanism.crusher.addRecipe(<thermalfoundation:material:167>, <thermalfounda
 Grinder.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>, 4);
 EUCrusher.add(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
 mods.enderio.SagMill.addRecipe([<immersiveengineering:material:18>], [1.0], <immersiveengineering:material:19>);
-mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
-mods.mekanism.crusher.addRecipe(<immersiveengineering:material:18>, <immersiveengineering:material:19>);
+mods.mekanism.crusher.addRecipe(<immersiveengineering:material:19>, <immersiveengineering:material:18>);
 
 # Dense Construction Chunk: additional crushing recipes
 EUCrusher.add(<buildinggadgets:construction_chunk_dense> * 4, <buildinggadgets:constructionblock_dense>);

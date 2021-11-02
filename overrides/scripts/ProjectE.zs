@@ -56,7 +56,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_transmutation_ta
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:techy_singularity>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>]]);
-<projecte:item.pe_transmutation_tablet>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Crafting uses up the input Philosopher's Stone."));
+# Commented out due to Extended Crafting not supporting noReturn()
+# <projecte:item.pe_transmutation_tablet>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Crafting uses up the input Philosopher's Stone."));
 
 # Energy Condenser
 recipes.remove(<projecte:condenser_mk1>);
