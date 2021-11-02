@@ -58,14 +58,14 @@ recipes.addShapeless(<abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as floa
 <abyssalcraft:abyore>.addTooltip(format.white("Generates in Darklands biomes."));
 
 # Coralium Gem Cluster itemstack amounts
-<abyssalcraft:ccluster2>.maxStackSize = 64
-<abyssalcraft:ccluster3>.maxStackSize = 64
-<abyssalcraft:ccluster4>.maxStackSize = 64
-<abyssalcraft:ccluster5>.maxStackSize = 64
-<abyssalcraft:ccluster6>.maxStackSize = 64
-<abyssalcraft:ccluster7>.maxStackSize = 64
-<abyssalcraft:ccluster8>.maxStackSize = 64
-<abyssalcraft:ccluster9>.maxStackSize = 64
+<abyssalcraft:ccluster2>.maxStackSize = 64;
+<abyssalcraft:ccluster3>.maxStackSize = 64;
+<abyssalcraft:ccluster4>.maxStackSize = 64;
+<abyssalcraft:ccluster5>.maxStackSize = 64;
+<abyssalcraft:ccluster6>.maxStackSize = 64;
+<abyssalcraft:ccluster7>.maxStackSize = 64;
+<abyssalcraft:ccluster8>.maxStackSize = 64;
+<abyssalcraft:ccluster9>.maxStackSize = 64;
 
 # ODB Core
 recipes.remove(<abyssalcraft:odbcore>);
