@@ -7,6 +7,7 @@ Version 2.9.0
 Mod updates:
 
 - Updated ExtendedCrafting OmniFactory Edition to 1.6.1.2, fixing the issue where Quantum Compressors wouldn't accept inputs unless the input slot is already filled.
+- Replaced LootTweaker 0.3.0 with the "old-parser" version, as the previously used version has been removed from CurseForge.
 
 Bugfixes and progression skips:
 
