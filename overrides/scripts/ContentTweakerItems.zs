@@ -902,7 +902,7 @@ ritualistic_biome_checker.itemRightClick = function(stack, world, player, hand) 
 	val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
 	val oceanBiomeLocations = [[0,0]] as int[][];
 	var cur_pos = player.position as crafttweaker.util.Position3f;
-	
+
 	val mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, world) as int;
 	val hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, world) as int;
 	val magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, world) as int;
