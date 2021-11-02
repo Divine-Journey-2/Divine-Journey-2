@@ -893,6 +893,10 @@ ritualistic_biome_checker.itemRightClick = function(stack, world, player, hand) 
 	if(world.remote) {
         return "PASS";
     }
+    if(player.getDimension() != 0) {
+      player.sendChat("You must be in the Overworld to perform this craft!");
+      return "PASS";
+    }
 	val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
 	val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
 	val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
