@@ -398,9 +398,14 @@ recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}),
 recipes.remove(<appliedenergistics2:condenser>);
 recipes.addShaped(<appliedenergistics2:condenser>, [[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:fluix_block>,<appliedenergistics2:dense_energy_cell>,<appliedenergistics2:fluix_block>],[<enderio:item_alloy_endergy_ingot:1>,<appliedenergistics2:fluix_block>,<enderio:item_alloy_endergy_ingot:1>]]);
 
+# Dense Smart Cables
+recipes.removeShapeless(<appliedenergistics2:part:76>, [<appliedenergistics2:part:516>,<minecraft:redstone>,<minecraft:glowstone_dust>]);
+recipes.addShapeless(<appliedenergistics2:part:76>, [<appliedenergistics2:part:516>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]);
+recipes.addShapeless(<appliedenergistics2:part:76>, [<appliedenergistics2:part:516>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:glowstone>]);
+
 # Covered, Smart, Dense Cable conversion recipes
 recipes.addShapeless(<appliedenergistics2:part:36> * 4, [<appliedenergistics2:part:516>]);
-recipes.addShapeless(<appliedenergistics2:part:56> * 4, [<appliedenergistics2:part:76>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>,<minecraft:glowstone_dust>]);
+recipes.addShapeless(<appliedenergistics2:part:56> * 4, [<appliedenergistics2:part:76>]);
 recipes.addShaped(<appliedenergistics2:part:76>, [[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>],[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>]]);
 
 # Creative Energy Cell
