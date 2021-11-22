@@ -17,6 +17,9 @@ recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "mod
 # Auto Infusion Matrix Machine Blueprint
 recipes.addShapedMirrored(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:auto_infusion_matrix"}), [[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>],[<thaumcraft:matrix_speed>,<thaumicaugmentation:material:3>,<thaumcraft:matrix_cost>],[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>]]);
 
+# Lightningcraft Infusion Machine Blueprint
+recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:lightningcraft_infusion_multiblock"}), [[<minecraft:paper>,<lightningcraft:material:4>,<minecraft:paper>],[<lightningcraft:material:4>,<lightningcraft:static_generator>,<lightningcraft:material:4>],[<minecraft:paper>,<lightningcraft:material:4>,<minecraft:paper>]]);
+
 # Liquicrafter Blueprint
 recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:liquicrafter"}), [[<galacticraftcore:heavy_plating>,<minecraft:paper>,<galacticraftcore:heavy_plating>],[<industrialforegoing:fluid_crafter>,<lightningcraft:material:9>,<industrialforegoing:fluid_crafter>],[<galacticraftcore:heavy_plating>,<minecraft:paper>,<galacticraftcore:heavy_plating>]]);
 

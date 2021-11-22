@@ -7,6 +7,8 @@ import moretweaker.lightningcraft.LightningInfusion;
 import mods.thaumcraft.Infusion;
 import moretweaker.lightningcraft.LightningCrusher;
 import mods.thermalexpansion.Crucible;
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipePrimer;
 
 print("STARTING LightningCraft.zs");
 
@@ -103,7 +105,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:lightning_infuser>
 
 # Skyfather Ingot
 LightningInfusion.remove(<lightningcraft:ingot:1>);
-LightningInfusion.add(<lightningcraft:ingot:1> * 4, <divinerpg:skythern_chunk>, 85, [<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>]);
+LightningInfusion.add(<lightningcraft:ingot:1>, <divinerpg:skythern_chunk>, 85, [<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>]);
+
+RecipeBuilder.newBuilder("skyfather_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(3000)
+	.addItemInput(<divinerpg:skythern_chunk>)
+	.addItemInput(<lightningcraft:stone_block> * 4)
+	.addItemOutput(<lightningcraft:ingot:1> * 4)
+	.build();
+
 
 # Electrostatic Generator
 recipes.remove(<lightningcraft:static_generator>);
@@ -151,7 +161,15 @@ mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", 
 
 # Mystic Ingot
 LightningInfusion.remove(<lightningcraft:ingot:2>);
-LightningInfusion.add(<lightningcraft:ingot:2> * 16, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+# LightningInfusion.add(<lightningcraft:ingot:2> * 16, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
+
+RecipeBuilder.newBuilder("mystic_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(30000)
+	.addItemInput(<lightningcraft:stone_block:3>)
+	.addItemInput(<lightningcraft:material:11> * 2)
+	.addItemInput(<lightningcraft:material:13> * 2)
+	.addItemOutput(<lightningcraft:ingot:2> * 8)
+	.build();
 
 # Lightning Furnace
 recipes.remove(<lightningcraft:lightning_furnace>);
@@ -175,15 +193,30 @@ LightningCrusher.add(<lightningcraft:material:8> * 3, <lightningcraft:material:7
 
 # Empowered Underpowder
 LightningInfusion.remove(<lightningcraft:material:13>);
-LightningInfusion.add(<lightningcraft:material:13>, <lightningcraft:material:12>, 50, [<lightningcraft:material:8>,<lightningcraft:dust>,<lightningcraft:material:8>,<lightningcraft:dust>]);
+# LightningInfusion.add(<lightningcraft:material:13>, <lightningcraft:material:12>, 50, [<lightningcraft:material:8>,<lightningcraft:dust>,<lightningcraft:material:8>,<lightningcraft:dust>]);
+
+RecipeBuilder.newBuilder("empowered_underpowder_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(7500)
+	.addItemInput(<lightningcraft:material:12>)
+	.addItemInput(<lightningcraft:material:8> * 2)
+	.addItemInput(<lightningcraft:dust> * 2)
+	.addItemOutput(<lightningcraft:material:13>)
+	.build();
 
 # Divine Underpowder
 LightningInfusion.remove(<lightningcraft:material:14>);
-LightningInfusion.add(<lightningcraft:material:14> * 8, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
+# LightningInfusion.add(<lightningcraft:material:14> * 8, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
+
+RecipeBuilder.newBuilder("divine_underpowder_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(15000)
+	.addItemInput(<lightningcraft:material:13>)
+	.addItemInput(<lightningcraft:dust:1> * 4)
+	.addItemOutput(<lightningcraft:material:14> * 4)
+	.build();
 
 # Mystic Lightning Cell
 recipes.remove(<lightningcraft:lightning_cell:2>);
-recipes.addShaped(<lightningcraft:lightning_cell:2>, [[<lightningcraft:plate:9>,<lightningcraft:plate:9>,<lightningcraft:plate:9>],[<lightningcraft:plate:9>,<lightningcraft:lightning_cell:1>,<lightningcraft:plate:9>],[<lightningcraft:plate:9>,<lightningcraft:plate:9>,<lightningcraft:plate:9>]]);
+recipes.addShaped(<lightningcraft:lightning_cell:2>, [[<lightningcraft:plate:9>,<lightningcraft:material:9>,<lightningcraft:plate:9>],[<lightningcraft:material:9>,<lightningcraft:lightning_cell:1>,<lightningcraft:material:9>],[<lightningcraft:plate:9>,<lightningcraft:material:9>,<lightningcraft:plate:9>]]);
 
 # LE Transmitter (Tier 2)
 recipes.remove(<lightningcraft:wireless_block:1>);
@@ -266,7 +299,15 @@ recipes.addShaped(<lightningcraft:lightning_miner>, [[<minecraft:gold_block>,<th
 
 # Ensorcelled Core
 LightningInfusion.remove(<lightningcraft:material:9>);
-LightningInfusion.add(<lightningcraft:material:9>, <lightningcraft:material:4>, 250, [<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>,<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>]);
+# LightningInfusion.add(<lightningcraft:material:9>, <lightningcraft:material:4>, 250, [<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>,<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>]);
+
+RecipeBuilder.newBuilder("encorcelled_core_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(50000)
+	.addItemInput(<lightningcraft:material:13>)
+	.addItemInput(<contenttweaker:mystical_iron_ingot> * 2)
+	.addItemInput(<lightningcraft:metal_block> * 2)
+	.addItemOutput(<lightningcraft:material:9>)
+	.build();
 
 # Enchantment Reallocator
 recipes.remove(<lightningcraft:ench_reallocator>);
@@ -317,7 +358,7 @@ recipes.remove(<lightningcraft:elec_boots>);
 recipes.addShaped(<lightningcraft:elec_boots>, [[<lightningcraft:ingot>,null,<lightningcraft:ingot>],[<lightningcraft:ingot>,<bewitchment:cold_iron_boots>,<lightningcraft:ingot>]]);
 
 function addLightningCraftToolRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient, new_rod as IIngredient, new_plate as IIngredient) {
-	
+
 	# Skyfather & Mystic Sword
 	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"));
 	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"), [[new_material],[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_sword")]]);
@@ -376,10 +417,43 @@ LightningInfusion.remove(<lightningcraft:mystic_boots>);
 addLightningCraftArmorRecipes("mystic", "sky", <lightningcraft:ingot:2>);
 
 # Removing Mystic Tools (incredibly buggy)
+LightningInfusion.remove(<lightningcraft:mystic_hammer>);
 LightningInfusion.remove(<lightningcraft:mystic_pick>);
 LightningInfusion.remove(<lightningcraft:mystic_shovel>);
 LightningInfusion.remove(<lightningcraft:mystic_axe>);
 LightningInfusion.remove(<lightningcraft:mystic_hoe>);
+
+# Add Electricium to Modular Machine
+RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(1000)
+	.addItemInput(<minecraft:diamond>)
+	.addItemInput(<minecraft:iron_ingot>)
+	.addItemInput(<minecraft:gold_ingot>)
+	.addItemOutput(<lightningcraft:ingot:0>)
+	.build();
+
+RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(1000)
+	.addItemInput(<ore:blockDiamond>)
+	.addItemInput(<minecraft:iron_block>)
+	.addItemInput(<minecraft:gold_block>)
+	.addItemOutput(<lightningcraft:metal_block:0>)
+	.build();
+
+# Removing excess Lightning Infuser recipes
+LightningInfusion.remove(<minecraft:deadbush>);
+LightningInfusion.remove(<minecraft:clay>);
+LightningInfusion.remove(<minecraft:sponge>);
+LightningInfusion.remove(<minecraft:packed_ice>);
+LightningInfusion.remove(<minecraft:mossy_cobblestone>);
+LightningInfusion.remove(<minecraft:bookshelf>);
+LightningInfusion.remove(<minecraft:quartz>);
+LightningInfusion.remove(<minecraft:diamond>);
+LightningInfusion.remove(<minecraft:emerald>);
+LightningInfusion.remove(<minecraft:lava_bucket>);
+LightningInfusion.remove(<minecraft:netherrack>);
+LightningInfusion.remove(<minecraft:nether_brick>);
+LightningInfusion.remove(<minecraft:nether_wart>);
 
 # Kinetic Armor and Tools (don't work)
 recipes.remove(<lightningcraft:kinetic_helm>);
@@ -411,10 +485,10 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:mystic> * 144, <lightningcraft:
 
 # Creative Lightning Cell
 mods.extendedcrafting.TableCrafting.addShaped(0, <lightningcraft:lightning_cell:3>,
-[[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:material:9>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>], 
-[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>], 
-[<lightningcraft:material:9>, <lightningcraft:lightning_cell:2>, <integrateddynamics:creative_energy_battery>, <lightningcraft:lightning_cell:2>, <lightningcraft:material:9>], 
-[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>], 
-[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:material:9>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>]]);
+[[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:rf_receiver>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>],
+[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>],
+[<lightningcraft:rf_receiver>, <lightningcraft:lightning_cell:2>, <integrateddynamics:creative_energy_battery>, <lightningcraft:lightning_cell:2>, <lightningcraft:rf_receiver>],
+[<bigreactors:blockblutonium>, <astralsorcery:iteminfusedglass>, <lightningcraft:lightning_cell:2>, <astralsorcery:iteminfusedglass>, <bigreactors:blockblutonium>],
+[<bigreactors:blockblutonium>, <bigreactors:blockblutonium>, <lightningcraft:rf_receiver>, <bigreactors:blockblutonium>, <bigreactors:blockblutonium>]]);
 
 print("ENDING LightningCraft.zs");

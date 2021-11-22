@@ -10,6 +10,8 @@ import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
 import mods.alchemistry.Combiner;
 import moretweaker.lightningcraft.LightningInfusion;
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipePrimer;
 
 print("STARTING MysticalAgriculture.zs");
 
@@ -770,7 +772,14 @@ mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:intermedium_seed", 
 
 # Superium Ingot
 recipes.removeShapeless(<mysticalagriculture:crafting:36>, [<*>,<*>,<*>]);
-LightningInfusion.add(<mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:35>, 10, [<mysticalagriculture:crafting:3>,<lightningcraft:material:12>,<mysticalagriculture:crafting:3>,<lightningcraft:material:12>]);
+RecipeBuilder.newBuilder("superium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
+	.addEnergyPerTickInput(50000)
+	.addItemInput(<mysticalagriculture:crafting:35>)
+	.addItemInput(<lightningcraft:material:12> * 2)
+	.addItemInput(<mysticalagriculture:crafting:3> * 2)
+	.addItemOutput(<mysticalagriculture:crafting:36>)
+	.build();
+
 
 # Supremium Ingot
 recipes.removeShapeless(<mysticalagriculture:crafting:37>, [<*>,<*>,<*>]);

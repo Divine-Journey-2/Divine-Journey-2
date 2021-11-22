@@ -1,0 +1,295 @@
+{
+    "registryname": "lightningcraft_infusion_multiblock",
+    "localizedname": "Lightningcraft Infusion Multiblock",
+    "requires-blueprint": true,
+    "color": "5d2e2e",
+    "modifiers": [
+        {
+            "elements": "lightningcraft:wireless_block@5",
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "description": "Replace the Skyfather Air Terminal with an LE Reciever (Tier 3) to decrease the energy cost by 50%.",
+            "modifier": {
+                "io": "input",
+                "target": "energy",
+                "operation": 1,
+                "multiplier": 0.5
+            }
+        },
+        {
+            "elements": "lightningcraft:lightning_cell@2",
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "description": "Replace the Advanced Lightning Cell with a Mystic Lightning Cell to multiply the processing speed by 2.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.5
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.5
+                }
+            ]
+        },
+        {
+            "elements": "lightningcraft:rf_receiver",
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "description": "Replace the Advanced Lightning Cell with an RF Lightning Generator to multiply the processing speed by 5.",
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.2
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.2
+                }
+            ]
+
+        }
+    ],
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockoutputbus@0",
+                "modularmachinery:blockoutputbus@1",
+                "modularmachinery:blockoutputbus@2",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "lightningcraft:lightning_infuser@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockinputbus@1",
+                "modularmachinery:blockinputbus@2",
+                "modularmachinery:blockinputbus@3",
+                "modularmachinery:blockinputbus@4",
+                "modularmachinery:blockinputbus@5",
+                "modularmachinery:blockinputbus@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch@5",
+                "modularmachinery:blockenergyinputhatch@6",
+                "modularmachinery:blockenergyinputhatch@7"
+
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "lightningcraft:lightning_cell@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "lightningcraft:stone_block@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "lightningcraft:air_terminal@8"
+            ]
+        }
+    ]}
