@@ -2,6 +2,10 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 /bq_admin default load
 (This has to only be done once in multiplayer, by an admin.)
 
+Version 2.9.1
+
+- Added a new Modular Machine called "Lightningcraft Infusion Multiblock", which does the same as the Lightning Infusion Table, except faster and without huge TPS issues. It will also be required to create some of the LightningCraft materials. Also adjusted the Lightningcraft questline to support it.
+
 Version 2.9.0
 
 Mod updates:
