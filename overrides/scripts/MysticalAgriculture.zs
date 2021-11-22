@@ -773,7 +773,7 @@ mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:intermedium_seed", 
 # Superium Ingot
 recipes.removeShapeless(<mysticalagriculture:crafting:36>, [<*>,<*>,<*>]);
 RecipeBuilder.newBuilder("superium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(100000)
+	.addEnergyPerTickInput(50000)
 	.addItemInput(<mysticalagriculture:crafting:35>)
 	.addItemInput(<lightningcraft:material:12> * 2)
 	.addItemInput(<mysticalagriculture:crafting:3> * 2)

@@ -23,12 +23,20 @@
             "y": -1,
             "z": 1,
             "description": "Replace the Advanced Lightning Cell with a Mystic Lightning Cell to multiply the processing speed by 2.",
-            "modifier": {
-                "io": "input",
-                "target": "duration",
-                "operation": 1,
-                "multiplier": 0.5
-            }
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.5
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.5
+                }
+            ]
         },
         {
             "elements": "lightningcraft:rf_receiver",
@@ -36,12 +44,21 @@
             "y": -1,
             "z": 1,
             "description": "Replace the Advanced Lightning Cell with an RF Lightning Generator to multiply the processing speed by 5.",
-            "modifier": {
-                "io": "input",
-                "target": "duration",
-                "operation": 1,
-                "multiplier": 0.2
-            }
+            "modifiers": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.2
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.2
+                }
+            ]
+
         }
     ],
     "parts": [
