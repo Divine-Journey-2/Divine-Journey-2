@@ -199,9 +199,10 @@ recipes.removeShapeless(<minecraft:skull:1> * 3, [<mysticalagradditions:stuff:1>
 recipes.removeShaped(<minecraft:wheat> * 9, [[<minecraft:hay_block>]]);
 # Crushing recipes in OreProcessingAdditions.zs
 
-# Snowball, Enderpearl max stack size
+# Snowball, Enderpearl, Egg max stack size
 <minecraft:snowball>.maxStackSize = 64;
 <minecraft:ender_pearl>.maxStackSize = 64;
+<minecraft:egg>.maxStackSize = 64;
 
 # Iron Horse Armor
 AACrusher.removeRecipe(<thermalfoundation:material>);

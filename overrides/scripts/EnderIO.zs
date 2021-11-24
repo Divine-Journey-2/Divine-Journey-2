@@ -21,7 +21,7 @@ print("STARTING EnderIO.zs");
 # Fluid Tank
 recipes.remove(<enderio:block_tank>);
 recipes.addShaped(<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}), [[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>],[<immersiveengineering:metal_decoration1:1>,<ore:blockGlass>,<immersiveengineering:metal_decoration1:1>],[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>]]);
-# 
+#
 
 # Conductive Iron in the Immersive Alloy Smelter
 IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>, <minecraft:iron_ingot>, <minecraft:redstone>, 200);
@@ -619,6 +619,7 @@ recipes.addShaped(<enderio:item_end_steel_boots>, [[<enderio:item_alloy_ingot:8>
 # Soul Vial
 recipes.remove(<enderio:item_soul_vial>);
 recipes.addShaped(<enderio:item_soul_vial>, [[<ore:fusedQuartz>,<enderio:block_alloy:7>,<ore:fusedQuartz>],[<ore:fusedQuartz>,<enderio:item_material:41>,<ore:fusedQuartz>],[<ore:fusedQuartz>,<ore:fusedQuartz>,<ore:fusedQuartz>]]);
+<enderio:item_soul_vial>.maxStackSize = 64;
 
 # Dark Steel Upgrade "Elytra"
 recipes.remove(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:elytra"}));
@@ -789,18 +790,18 @@ recipes.addShaped(<enderio:item_stellar_alloy_boots>, [[<enderio:item_alloy_ende
 
 # Creative Capacitor Bank
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
-[[<enderio:block_alloy:6>, <enderio:block_alloy:6>, <solarflux:solar_panel_draconic>, <enderio:block_alloy:6>, <enderio:block_alloy:6>], 
-[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>], 
-[<enderio:item_material:44>, <enderio:item_capacitor_stellar>, <quantumflux:quibitcluster>, <enderio:item_capacitor_stellar>, <enderio:item_material:44>], 
-[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>], 
+[[<enderio:block_alloy:6>, <enderio:block_alloy:6>, <solarflux:solar_panel_draconic>, <enderio:block_alloy:6>, <enderio:block_alloy:6>],
+[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>],
+[<enderio:item_material:44>, <enderio:item_capacitor_stellar>, <quantumflux:quibitcluster>, <enderio:item_capacitor_stellar>, <enderio:item_material:44>],
+[<enderio:block_alloy:6>, <enderio:block_cap_bank:3>, <enderio:item_capacitor_stellar>, <enderio:block_cap_bank:3>, <enderio:block_alloy:6>],
 [<enderio:block_alloy:6>, <enderio:block_alloy:6>, <ore:skullSentientEnder>, <enderio:block_alloy:6>, <enderio:block_alloy:6>]]);
 
 # Creative Buffer
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_buffer:3>,
-[[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>], 
-[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
-[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <mekanism:basicblock:6>.withTag({tier: 4}), <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
-[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>], 
+[[<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>],
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>],
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <mekanism:basicblock:6>.withTag({tier: 4}), <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>],
+[<galacticraftcore:basic_item:12>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <enderio:block_buffer:2>, <galacticraftcore:basic_item:12>],
 [<enderio:block_alloy:6>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <galacticraftcore:basic_item:12>, <enderio:block_alloy:6>]]);
 
 print("ENDING EnderIO.zs");
