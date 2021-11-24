@@ -57,5 +57,6 @@ recipes.remove(<aether_legacy:aerogel_slab>);
 
 # Aerogel recipe with Mystical Agriculture Essences
 recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>],[<mysticalagriculture:fire_essence>,<mysticalagriculture:saltpeter_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>]]);
+<aether_legacy:aerogel>.addTooltip(format.red(format.bold("Attempting to automate this with a mechanical user may result in crashes.")));
 
 print("ENDING AetherLegacy.zs");
