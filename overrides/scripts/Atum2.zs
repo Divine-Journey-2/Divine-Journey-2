@@ -1,4 +1,7 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
+
+import mods.chisel.Carving;
+
 print("STARTING Atum2.zs");
 
 # Crates
@@ -126,5 +129,31 @@ recipes.remove(<atum:linen_bandage>);
 
 # Gold Coin duplication reipe
 recipes.addShaped(<atum:coin_gold> * 4, [[<minecraft:gold_nugget>,<minecraft:gold_nugget>,<minecraft:gold_nugget>],[<minecraft:gold_nugget>,<atum:coin_gold>,<minecraft:gold_nugget>],[<minecraft:gold_nugget>,<minecraft:gold_nugget>,<minecraft:gold_nugget>]]);
+
+# Adding Atum Limestone to Chisel
+Carving.addVariation("limestone", <atum:limestone>);
+Carving.addVariation("limestone", <atum:limestone_brick_small>);
+Carving.addVariation("limestone", <atum:limestone_brick_large>);
+Carving.addVariation("limestone", <atum:limestone_brick_cracked_brick>);
+Carving.addVariation("limestone", <atum:limestone_brick_chiseled>);
+Carving.addVariation("limestone", <atum:limestone_brick_carved>);
+
+# Adding Atum Porphyry to Chisel
+Carving.addGroup("porphyry");
+Carving.addVariation("porphyry", <atum:porphyry>);
+Carving.addVariation("porphyry", <atum:porphyry_brick_smooth>);
+Carving.addVariation("porphyry", <atum:porphyry_brick_polished>);
+Carving.addVariation("porphyry", <atum:porphyry_brick_carved>);
+Carving.addVariation("porphyry", <atum:porphyry_brick_tiled>);
+Carving.addVariation("porphyry", <atum:porphyry_brick_pillar>);
+
+# Adding Atum Alabaster to Chisel
+Carving.addGroup("alabaster");
+Carving.addVariation("alabaster", <atum:alabaster>);
+Carving.addVariation("alabaster", <atum:alabaster_brick_smooth>);
+Carving.addVariation("alabaster", <atum:alabaster_brick_polished>);
+Carving.addVariation("alabaster", <atum:alabaster_brick_carved>);
+Carving.addVariation("alabaster", <atum:alabaster_brick_tiled>);
+Carving.addVariation("alabaster", <atum:alabaster_brick_pillar>);
 
 print("ENDING Atum2.zs");
