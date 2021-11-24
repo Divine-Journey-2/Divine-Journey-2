@@ -480,6 +480,12 @@
             "io-type": "output",
             "item": "quantumflux:craftingpiece@3",
             "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "evilcraft:vengeance_essence",
+            "chance": 0.01
         }
     ]
 }
