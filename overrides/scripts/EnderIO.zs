@@ -26,6 +26,14 @@ recipes.addShaped(<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "
 # Conductive Iron in the Immersive Alloy Smelter
 IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>, <minecraft:iron_ingot>, <minecraft:redstone>, 200);
 
+# Electrical Steel Alt recipes with Steel and Silicon
+EIOAlloySmelter.addRecipe(<enderio:item_alloy_ingot>, [<thermalfoundation:material:160>, <appliedenergistics2:material:5>], 10000);
+EIOAlloySmelter.addRecipe(<enderio:item_alloy_ingot>, [<thermalfoundation:material:96>, <appliedenergistics2:material:5>], 10000);
+IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot>, <thermalfoundation:material:160>, <appliedenergistics2:material:5>, 200);
+IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot>, <thermalfoundation:material:96>, <appliedenergistics2:material:5>, 200);
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <appliedenergistics2:material:5>, null, 200, 512, [<thermalfoundation:material:160>], "Alloying");
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <appliedenergistics2:material:5>, null, 200, 512, [<thermalfoundation:material:96>], "Alloying");
+
 # Vibrant Alloy in the Arc Furnace
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:1>, null, 200, 512, [<minecraft:ender_pearl>], "Alloying");
 
