@@ -94,8 +94,12 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_silver", "", <be
 recipes.remove(<bewitchment:candelabra_iron>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_iron", "", <bewitchment:candelabra_iron>, 4, [<aspect:lux> * 100,<aspect:auram> * 50,<aspect:stellae> * 10], <minecraft:iron_block>, [<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>]);
 
+# Gold Candelabra
+recipes.remove(<bewitchment:candelabra_gold>);
+mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_gold", "", <bewitchment:candelabra_gold>, 4, [<aspect:lux> * 100,<aspect:auram> * 50,<aspect:stellae> * 10], <minecraft:gold_block>, [<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>]);
+
 # Candelabra OreDict
-<ore:bewitchmentCandelabra>.addItems([<bewitchment:candelabra_silver>,<bewitchment:candelabra_iron>]);
+<ore:bewitchmentCandelabra>.addItems([<bewitchment:candelabra_silver>,<bewitchment:candelabra_iron>,<bewitchment:candelabra_gold>]);
 
 # Witches' Cauldron
 recipes.remove(<bewitchment:witches_cauldron>);
@@ -465,14 +469,14 @@ recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherr
 
 # Blessed Stone
 mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
-[[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bloodmagic:sacrificial_dagger:1>, <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
-[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>], 
+[[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bloodmagic:sacrificial_dagger:1>, <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <bewitchment:heaven_extract>.noReturn(), <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
+[<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
 [<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>]]);
 
 print("ENDING Bewitchment.zs");
