@@ -430,6 +430,36 @@
         {
             "type": "item",
             "io-type": "output",
+            "item": "divinerpg:ender_shards",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:ice_shards",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:jungle_shards",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:molten_shards",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:terran_shards",
+            "chance": 0.005
+        },
+        {
+            "type": "item",
+            "io-type": "output",
             "item": "bewitchment:hellhound_horn",
             "chance": 0.005
         },
