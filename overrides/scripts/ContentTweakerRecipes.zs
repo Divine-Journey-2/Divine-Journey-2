@@ -148,7 +148,7 @@ recipes.addShapeless(<contenttweaker:raw_industrial_leather>, [<contenttweaker:t
 recipes.addShapeless(<contenttweaker:twilight_rock>, [<contenttweaker:baykoks_bloodied_stone>, <immersiveengineering:material:18>, <roots:stalicripe>, <ore:dyeBrown>]);
 recipes.addShapeless(<contenttweaker:twilight_rock>, [<twilightforest:block_storage:4>, <twilightforest:cooked_venison>, <twilightforest:root>, <twilightforest:charm_of_keeping_1>]);
 <contenttweaker:twilight_rock>.addTooltip(format.red(format.bold("This is the item used to enter the Twilight Forest.")));
-<contenttweaker:twilight_rock>.addTooltip("If your portal gets destroyed while you are inside, there is a Twilight Forest receipe so you can escape.");
+<contenttweaker:twilight_rock>.addTooltip("If your portal gets destroyed while you are inside, there is a Twilight Forest recipe so you can escape.");
 
 # Twilight Key
 recipes.addShaped(<contenttweaker:twilight_key>, [[<ore:ingotConstantan>,<ore:nuggetConstantan>],[<ore:ingotConstantan>,null],[<contenttweaker:twilight_rock>,null]]);
