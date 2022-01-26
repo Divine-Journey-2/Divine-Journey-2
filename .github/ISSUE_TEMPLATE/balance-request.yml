@@ -1,0 +1,43 @@
+name: Balance request
+description: Requesting something because something's too easy / difficult to craft, easy
+  / difficult to fight against, etc.
+labels: ["Balance Request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        Please be aware that significant changes, such as altering the progression of mods, are unlikely to be considered.
+        If you are not using the latest version, make sure that the request has not already been fufilled.
+  - type: textarea
+    id: request-description
+    attributes:
+      label: Describe the request
+      description: A clear and concise description of what the request is.
+      placeholder: "Example: I think ... is too expensive/grindy ..., the recipe should instead be ..."
+    validations:
+      required: true
+  - type: textarea
+    id: change-reason
+    attributes:
+      label: Reasons why this should be changed
+      description: Sensible points on why the modpack would be "better" if this was changed.
+      placeholder: "Example: The automation setup comes too late ... / There is nothing to do in the meantime ..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions you've considered.
+      placeholder: "Example: If the proposed recipe isn't added, then ... / Setting up automation differently would be ..."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+      placeholder: "Example: This mainly occurs when ... / It's not an issue in Singleplayer, because ..."
+    validations:
+      required: false
