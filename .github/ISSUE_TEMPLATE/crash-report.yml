@@ -19,7 +19,7 @@ body:
     id: java-version
     attributes:
       label: Java version
-      description: Note: if you are using Curseforge as the launcher, due to a bug with Curseforge, you are using Java 8.0_51 (check your crash log). As you are using a Java version that dates to late 2015, you will run into a number of issues you wouldn't otherwise.
+      description: "Note: if you are using Curseforge as the launcher, due to a bug with Curseforge, you are using Java 1.8.0_51 (check your crash log). As you are using a Java version that dates to late 2015, you will run into a number of issues you wouldn't otherwise."
       placeholder: "Example: 1.8.0_311"
     validations:
       required: true
