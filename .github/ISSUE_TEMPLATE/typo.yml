@@ -1,0 +1,38 @@
+name: Typo
+about: There is a typo / misspelling / grammatical error somewhere.
+title: ""
+labels: ["Typo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Modpack version
+      description: |
+        If you are not using the latest version, make sure that the request has not already been fufilled.
+      placeholder: |
+        Example: 2.X.X
+    validations:
+      required: true
+  - type: textarea
+    id: typo-location
+    attributes:
+      label: Where is the typo located?
+      description: |
+        eg Quests / Title Screen / Tooltips / Advancements
+        If possible, link the location in the DJ2 code it occurs.
+      placeholder: |
+        Example: "In the 19th Chapter in the description of the Quest called ... "
+    validations:
+      required: true
+  - type: textarea
+    id: exact-fix
+    attributes:
+      label: Exact fix
+      placeholder: |
+        Example: "It should be 'assignments' not 'assingments'." / " It should be 'that you used to make', not 'that you used to made'. " / ...
+    validations:
+      required: true
