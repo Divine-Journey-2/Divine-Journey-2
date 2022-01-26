@@ -1,0 +1,36 @@
+name: Mod request
+about: Suggest a mod to be added to the pack.
+title: ""
+labels: ["Feature Request", "Mod Request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        Please be aware that new mods are unlikely to be added, given the effort required to balance and integrate them. Remember that you are free to add any mod to your personal version of the pack.
+  - type: input
+    id: mod-name
+    attributes:
+      label: Mod Name
+      description: |
+        Provide the name of the mod, and link its Curseforge page. If it does not have a Curseforge page and is not on the Curseforge approved 3rd party mods list, the mod cannot be added.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reasons why this should be added
+      description: |
+        Sensible points on why the modpack would be "better" if this mod was added. What features does the mod you are suggesting have? Does it add features not already in the pack?
+      placeholder: |
+        Example: "Would improve the gameplay because ..."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: |
+        Add any other context or screenshots about the mod request here.
+    validations:
+      required: false
