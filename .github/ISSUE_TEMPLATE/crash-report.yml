@@ -62,6 +62,7 @@ body:
       label: Minecraft crash report
       description: |
         Crash reports are found in the `your_minecraft_instance/crash-reports` folder.
+        If no crash report generated, please include the `your_mincraft_instance/logs/latest.log` file. Note that the latest.log is overwritten every time you launch the game, and so this must happen as soon as you crash.
         You can attach any number of crash reports, but please describe when each of them occurred.
         You can either upload the file directly to github, or use [pastebin](https://pastebin.com/), [paste.ee](https://paste.ee/), or any other paste site.
     validations:
