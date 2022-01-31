@@ -448,6 +448,56 @@ RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_mu
 	.addItemOutput(<lightningcraft:metal_block:0>)
 	.build();
 
+# Add weapons to Modular Machine
+RecipeBuilder.newBuilder("soul_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:soul_sand> * 4)
+    .addItemOutput(<lightningcraft:soul_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("zombie_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:rotten_flesh> * 4)
+    .addItemOutput(<lightningcraft:zombie_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("feather_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:feather> * 4)
+    .addItemOutput(<lightningcraft:feather_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("ender_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:ender_pearl> * 4)
+    .addItemOutput(<lightningcraft:ender_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("blaze_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:blaze_rod> * 4)
+    .addItemOutput(<lightningcraft:blaze_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("ice_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<minecraft:stone_sword>)
+    .addItemInput(<minecraft:packed_ice> * 4)
+    .addItemOutput(<lightningcraft:ice_sword>)
+    .build();
+
+RecipeBuilder.newBuilder("mystic_sword", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<lightningcraft:sky_sword>)
+    .addItemInput(<lightningcraft:dust:2> * 4)
+    .addItemOutput(<lightningcraft:mystic_sword>)
+    .build();
+
 # Removing excess Lightning Infuser recipes
 LightningInfusion.remove(<minecraft:deadbush>);
 LightningInfusion.remove(<minecraft:clay>);
