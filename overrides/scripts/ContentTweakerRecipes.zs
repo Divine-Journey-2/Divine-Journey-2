@@ -2051,7 +2051,7 @@ recipes.addShaped(<contenttweaker:reinforced_machine_stabilizer>, [[<alchemistry
 mods.astralsorcery.StarlightInfusion.addInfusion(<modularmachinery:blockcasing:4>, <contenttweaker:reinforced_starlight_infused_machine_block>, false, 1.0, 30);
 
 # Neutronium Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:block_resource>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:block_resource>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Infinite Singularity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:infinite_singularity>, <avaritia:block_resource:1>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);

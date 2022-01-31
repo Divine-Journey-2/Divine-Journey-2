@@ -120,16 +120,16 @@ mods.extendedcrafting.TableCrafting.addShaped(<extendedcrafting:compressor>,
 [<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<draconicevolution:awakened_core>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:5>]]);
 
 # Fluxed Electrum Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:12>, <contenttweaker:fluxed_electrum_ingot>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<avaritia:singularity:12>, <contenttweaker:fluxed_electrum_ingot>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Titanium Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:31>, <galacticraftplanets:item_basic_asteroids>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:31>, <galacticraftplanets:item_basic_asteroids>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Alchemical Brass Singularity
 <extendedcrafting:singularity:21>.displayName = "Alchemical Brass Singularity";
 
 # Chome Singualrity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 #  Ender Star
 mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
