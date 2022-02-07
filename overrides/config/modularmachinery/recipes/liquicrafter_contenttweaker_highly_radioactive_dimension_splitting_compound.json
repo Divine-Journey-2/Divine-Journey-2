@@ -23,8 +23,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "alchemistry:ingot@94",
-            "amount": 2
+            "item": "alchemistry:ingot@94"
         },
         {
             "type": "item",

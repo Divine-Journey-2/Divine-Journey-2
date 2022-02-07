@@ -82,7 +82,7 @@ recipes.addShaped(<rftoolsdim:phased_field_generator>, [[<alchemistry:ingot:70>,
 
 # Dimlet Parcel
 recipes.remove(<rftoolsdim:dimlet_parcel>);
-recipes.addShaped(<rftoolsdim:dimlet_parcel> * 4, [[<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:94>],[<rftools:infused_diamond>,<rftoolsdim:dimlet_base>,<rftools:infused_diamond>],[<appliedenergistics2:material:28>,<rftoolsdim:known_dimlet:7>.withTag({dkey: "None"}),<appliedenergistics2:material:28>]]);
+recipes.addShaped(<rftoolsdim:dimlet_parcel> * 16, [[<appliedenergistics2:material:28>,<alchemistry:ingot:94>,<appliedenergistics2:material:28>],[<rftools:infused_diamond>,<rftoolsdim:dimlet_base>,<rftools:infused_diamond>],[<appliedenergistics2:material:28>,<rftoolsdim:known_dimlet:7>.withTag({dkey: "None"}),<appliedenergistics2:material:28>]]);
 
 # Dimplet Template
 recipes.remove(<rftoolsdim:dimlet_template>);

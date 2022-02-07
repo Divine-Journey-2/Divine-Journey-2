@@ -602,7 +602,7 @@
       <input name="abyssalcraft:ccluster9" amount="9" />
       <input name="abyssalcraft:stone:1" amount="48" />
       <input name="enderutilities:enderpart:0" amount="8" />
-      <output name="abyssalcraft:cchunk" />
+      <output name="abyssalcraft:cchunk" amount="4" />
     </alloying>
   </recipe>
 

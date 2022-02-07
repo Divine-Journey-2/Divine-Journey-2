@@ -292,4 +292,12 @@ clear_pool("botania:gaia_guardian_2", "runes");
 # Roots inject clear
 clear_pool("roots:chests/inject", "main");
 
+# Toe of Frog from all the Frogs
+add_entry("quark:entities/frog", "toe", <bewitchment:toe_of_frog>, 1, 2, 0, 0, 100);
+add_entry("mysticalworld:entity/frog", "toe", <bewitchment:toe_of_frog>, 1, 2, 0, 0, 100);
+
+# Aquatic Pellets from other Crabs
+add_entry("divinerpg:entities/vanilla/crab", "pellets", <divinerpg:aquatic_pellets>, 0, 1, 0, 0, 100);
+add_entry("quark:entities/crab", "pellets", <divinerpg:aquatic_pellets>, 0, 1, 0, 0, 100);
+
 print("ENDING LootTweaker.zs");

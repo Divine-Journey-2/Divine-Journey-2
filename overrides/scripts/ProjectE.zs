@@ -67,7 +67,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:condenser_mk1>,
 [<alchemistry:ingot:60>,<alchemistry:ingot:66>,<projecte:item.pe_covalence_dust:1>,<alchemistry:ingot:66>,<projecte:item.pe_covalence_dust:1>,<alchemistry:ingot:66>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<rftoolsdim:mediocre_efficiency_essence>,<contenttweaker:penultimate_machine_frame>,<rftoolsdim:mediocre_efficiency_essence>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:alchemic_singularity>,<draconicadditions:chaos_stabilizer_core>,<contenttweaker:alchemic_singularity>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
-[<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<projecte:alchemical_chest>,<contenttweaker:alchemic_singularity>,<projecte:alchemical_chest>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:alchemic_singularity>,<projecte:alchemical_chest>,<contenttweaker:alchemic_singularity>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>]]);
 
 # Tome of Knowledge
@@ -95,7 +95,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:condenser_mk2>,
 [<alchemistry:ingot:60>,<alchemistry:ingot:72>,<projecte:item.pe_covalence_dust:2>,<alchemistry:ingot:72>,<projecte:item.pe_covalence_dust:2>,<alchemistry:ingot:72>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<rftoolsdim:efficiency_essence>,<contenttweaker:penultimate_machine_frame>,<rftoolsdim:efficiency_essence>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:alchemic_singularity>,<draconicadditions:chaos_stabilizer_core>,<contenttweaker:alchemic_singularity>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
-[<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<projecte:condenser_mk1>,<contenttweaker:alchemic_singularity>,<projecte:condenser_mk1>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
+[<alchemistry:ingot:60>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:alchemic_singularity>,<projecte:condenser_mk1>,<contenttweaker:alchemic_singularity>,<contenttweaker:corrupted_draconium_ingot>,<alchemistry:ingot:60>],
 [<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>]]);
 
 # Transmutation Table

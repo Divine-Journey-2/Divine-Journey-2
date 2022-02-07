@@ -162,7 +162,7 @@ mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, t
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:hybrid_abyssalium_block>, true, 1, [[100, <alchemistry:compound:42> * 18, <alchemistry:compound:21> * 36, <alchemistry:element:25> * 144]]);
 
 # Cadmium Sulfide, Magnesium Sulfate <- Flying Ointment
-mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[50, <alchemistry:compound:45> * 96,<alchemistry:compound:43> * 3,<alchemistry:element:8> * 32,<alchemistry:element:7> * 32],[50, <alchemistry:compound:43> * 6,<alchemistry:element:8> * 64,<alchemistry:element:7> * 64]]);
+mods.alchemistry.Dissolver.addRecipe(<bewitchment:flying_ointment>, true, 1, [[100, <alchemistry:compound:45> * 192,<alchemistry:compound:43> * 3,<alchemistry:element:8> * 32,<alchemistry:element:7> * 32]]);
 
 # Chromium Oxide, Magnesium Sulfate <- Bottled Frostfire
 mods.alchemistry.Dissolver.addRecipe(<bewitchment:bottled_frostfire>, true, 1, [[50, <alchemistry:compound:46> * 24,<alchemistry:compound:43> * 24,<alchemistry:element:8> * 8,<alchemistry:element:7> * 8],[50, <alchemistry:compound:43> * 32,<alchemistry:element:8> * 16,<alchemistry:element:7> * 16]]);

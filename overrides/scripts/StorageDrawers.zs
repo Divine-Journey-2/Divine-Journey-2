@@ -10,6 +10,7 @@ recipes.remove(<storagedrawers:upgrade_storage:3>);
 recipes.addShaped(<storagedrawers:upgrade_storage:3>, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<minecraft:diamond>,<storagedrawers:upgrade_storage:2>,<minecraft:diamond>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
 recipes.remove(<storagedrawers:upgrade_storage:4>);
 recipes.addShaped(<storagedrawers:upgrade_storage:4>, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<minecraft:emerald>,<storagedrawers:upgrade_storage:3>,<minecraft:emerald>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
+recipes.remove(<storagedrawers:upgrade_conversion>);
 
 # Compacting Drawer
 recipes.remove(<storagedrawers:compdrawers>);

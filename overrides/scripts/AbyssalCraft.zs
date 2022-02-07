@@ -75,7 +75,7 @@ recipes.remove(<abyssalcraft:odb>);
 
 # Coralium Infused Stone
 recipes.remove(<abyssalcraft:coraliumstone>);
-recipes.addShaped(<abyssalcraft:coraliumstone>, [[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>],[<abyssalcraft:ccluster9>,<ore:ingot_dark_soularium>,<abyssalcraft:ccluster9>],[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>]]);
+recipes.addShaped(<abyssalcraft:coraliumstone> * 4, [[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>],[<abyssalcraft:ccluster9>,<ore:ingot_dark_soularium>,<abyssalcraft:ccluster9>],[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>]]);
 
 # Monolith Stone Pillar
 recipes.remove(<abyssalcraft:monolithpillar>);
@@ -165,8 +165,8 @@ EIOAlloySmelter.addRecipe(<abyssalcraft:powerstonetracker>, [<minecraft:ender_ey
 
 # Chunk of Coralium
 recipes.remove(<abyssalcraft:cchunk>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<abyssalcraft:cchunk>, <abyssalcraft:ccluster9> * 9, null, 40, 512, [<abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], "Alloying");
-#EIOAlloySmelter.addRecipe(<abyssalcraft:cchunk>, [<abyssalcraft:ccluster9> * 9, <abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], 16000);
+mods.immersiveengineering.ArcFurnace.addRecipe(<abyssalcraft:cchunk> * 4, <abyssalcraft:ccluster9> * 9, null, 40, 512, [<abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], "Alloying");
+#EIOAlloySmelter.addRecipe(<abyssalcraft:cchunk> * 4, [<abyssalcraft:ccluster9> * 9, <abyssalcraft:stone:1> * 48, <enderutilities:enderpart> * 8], 16000);
 # Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 
 # Refined Coralium Sword
@@ -206,7 +206,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:transmutator>,
 [[<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>,<abyssalcraft:cstonebrick>],
 [<abyssalcraft:cstonebrick>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:cstonebrick>],
 [<abyssalcraft:cstonebrick>,<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<openblocks:tank>.withTag({tank: {FluidName: "liquidcoralium", Amount: 16000}}),<abyssalcraft:cstonebrick>],
-[<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>,<abyssalcraft:transmutationgem>.noReturn(),<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>],
+[<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>,<abyssalcraft:transmutationgem:*>,<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>],
 [<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>,<enderutilities:enderpart:17>,<abyssalcraft:ingotblock:1>,<abyssalcraft:ingotblock:1>]]);
 
 # Abyssal Wasteland Necronomicon
