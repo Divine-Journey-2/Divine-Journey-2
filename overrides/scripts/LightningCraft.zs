@@ -385,14 +385,6 @@ function addLightningCraftToolRecipes(new_item_str as string, old_item_str as st
 
 }
 
-# Mystic Sword in the Lightningcraft Infusion Multiblock
-RecipeBuilder.newBuilder("mystic_sword_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(1000)
-	.addItemInput(<lightningcraft:sky_sword>)
-	.addItemInput(<lightningcraft:dust:2> * 4)
-	.addItemOutput(<lightningcraft:mystic_sword>)
-	.build();
-
 function addLightningCraftArmorRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient) {
 
 	# Mystic Helmet
