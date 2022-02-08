@@ -128,7 +128,7 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularit
 # Alchemical Brass Singularity
 <extendedcrafting:singularity:21>.displayName = "Alchemical Brass Singularity";
 
-# Chome Singualrity
+# Chrome Singualrity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 #  Ender Star

@@ -2025,7 +2025,7 @@ recipes.addShaped(<contenttweaker:cosmic_neutronium_burger>, [[<avaritia:resourc
 recipes.addShaped(<contenttweaker:cosmic_neutronium_taco>, [[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>],[<avaritia:resource:3>,<contenttweaker:taco>,<avaritia:resource:3>],[<avaritia:resource:3>,<avaritia:resource:3>,<avaritia:resource:3>]]);
 
 # Essence of Opening
-mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_opening>, 1000, <minecraft:wooden_door>, true);
+mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_opening>, 1024, <minecraft:wooden_door>, true);
 
 # Ultimate Machine Frame
 recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>]]);

@@ -527,7 +527,7 @@ recipes.addShaped(<bloodmagic:path:6> * 2, [[<botania:quartz>,<bloodmagic:path:4
 <bloodmagic:blood_shard>.addTooltip(format.white("to obtain. Be wary though. While it's active,"));
 <bloodmagic:blood_shard>.addTooltip(format.white("it constantly drains LP from your Life Network!"));
 
-# Tartaric Gem tooltip
+# Tartaric Gem tooltips
 <bloodmagic:soul_gem:0>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("64") + format.white(" Will Quality."));
 <bloodmagic:soul_gem:1>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("256") + format.white(" Will Quality."));
 <bloodmagic:soul_gem:2>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("1024") + format.white(" Will Quality."));
