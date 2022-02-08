@@ -146,7 +146,9 @@ recipes.addShapeless(<contenttweaker:raw_industrial_leather>, [<contenttweaker:t
 
 # Twilight Rock
 recipes.addShapeless(<contenttweaker:twilight_rock>, [<contenttweaker:baykoks_bloodied_stone>, <immersiveengineering:material:18>, <roots:stalicripe>, <ore:dyeBrown>]);
+recipes.addShapeless(<contenttweaker:twilight_rock>, [<twilightforest:block_storage:4>, <twilightforest:cooked_venison>, <twilightforest:root>, <twilightforest:charm_of_keeping_1>]);
 <contenttweaker:twilight_rock>.addTooltip(format.red(format.bold("This is the item used to enter the Twilight Forest.")));
+<contenttweaker:twilight_rock>.addTooltip("If your portal gets destroyed while you are inside, there is a Twilight Forest recipe so you can escape.");
 
 # Twilight Key
 recipes.addShaped(<contenttweaker:twilight_key>, [[<ore:ingotConstantan>,<ore:nuggetConstantan>],[<ore:ingotConstantan>,null],[<contenttweaker:twilight_rock>,null]]);
@@ -1020,8 +1022,8 @@ function(out, ins, cInfo) {
 }, null);
 */
 /*
-recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [ <contenttweaker:soul_extractor>.anyDamage().transformDamage(1), <abyssalcraft:soulreaper:*>.only( function(item) { 
-	return item.tag has "souls" && item.tag.souls >= 1; 
+recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [ <contenttweaker:soul_extractor>.anyDamage().transformDamage(1), <abyssalcraft:soulreaper:*>.only( function(item) {
+	return item.tag has "souls" && item.tag.souls >= 1;
 } ).transform( function(item, player) {
 	return item.withTag({souls: item.tag.souls - 1});
 } ).reuse() ]);
@@ -1932,12 +1934,12 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:essence_of_the_unbrok
 
 # Essence of Ways
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:essence_of_ways>,
-[[<galacticraftplanets:walkway>, <contenttweaker:clay>, <bewitchment:waystone>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <bewitchment:waystone>, <galacticraftplanets:walkway>], 
-[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
-[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
-[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <botania:alfheimportal>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>], 
-[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>], 
-[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>], 
+[[<galacticraftplanets:walkway>, <contenttweaker:clay>, <bewitchment:waystone>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <bewitchment:waystone>, <galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>, <contenttweaker:clay>, <projecte:item.pe_matter>, <astralsorcery:blockcelestialgateway>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <botania:alfheimportal>, <botania:alfheimportal>, <projecte:item.pe_matter>, <galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>],
+[<galacticraftplanets:walkway>, <projecte:item.pe_matter>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <projecte:item.pe_matter>, <contenttweaker:clay>, <galacticraftplanets:walkway>],
 [<galacticraftplanets:walkway>, <bewitchment:waystone>, <botania:alfheimportal>, <astralsorcery:blockcelestialgateway>, <bewitchment:waystone>, <contenttweaker:clay>, <galacticraftplanets:walkway>]]);
 # Essence of Length
 mods.avaritia.Compressor.add("essence_of_length", <contenttweaker:essence_of_length>, 200, <enderutilities:ruler>, true);
@@ -1971,6 +1973,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:essence_of_contin
 
 # Ultimate Singularity
 mods.extendedcrafting.CombinationCrafting.addRecipe(<extendedcrafting:singularity_ultimate>, 1200000, 30000, <contenttweaker:plasma_core>, [<contenttweaker:techy_singularity>,<contenttweaker:magical_singularity>,<contenttweaker:beginners_singularity>,<contenttweaker:powerful_singularity>]);
+<extendedcrafting:singularity_ultimate>.maxStackSize = 64;
 
 # Essence of Matter
 # recipe in config/modularmachinery/recipes/high_voltage_plasmafier_contenttweaker_essence_of_matter.json
@@ -2048,7 +2051,7 @@ recipes.addShaped(<contenttweaker:reinforced_machine_stabilizer>, [[<alchemistry
 mods.astralsorcery.StarlightInfusion.addInfusion(<modularmachinery:blockcasing:4>, <contenttweaker:reinforced_starlight_infused_machine_block>, false, 1.0, 30);
 
 # Neutronium Singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:block_resource>, 1000, <contenttweaker:singularification_catalyst>, 100000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:block_resource>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Infinite Singularity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:infinite_singularity>, <avaritia:block_resource:1>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
@@ -2064,10 +2067,10 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_sin
 
 # Unwarpification Talisman
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:unwarpification_talisman>,
-[[<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>], 
-[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>], 
-[<projecte:item.pe_covalence_dust:2>, <alchemistry:ingot:96>, <bloodmagic:decorative_brick:2>, <alchemistry:ingot:96>, <projecte:item.pe_covalence_dust:2>], 
-[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>], 
+[[<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>],
+[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>],
+[<projecte:item.pe_covalence_dust:2>, <alchemistry:ingot:96>, <bloodmagic:decorative_brick:2>, <alchemistry:ingot:96>, <projecte:item.pe_covalence_dust:2>],
+[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>],
 [<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>]]);
 <contenttweaker:unwarpification_talisman>.addTooltip(format.white("Right Click to set your Thaumcraft Warp level to 0!"));
 
