@@ -76,6 +76,9 @@ val glyphs = [<contenttweaker:glyph_route>,<contenttweaker:glyph_bag>,<contenttw
 val glyph_inputs = [<contenttweaker:essence_of_ways>,<projecte:item.pe_alchemical_bag:14>,<totemic:tipi>,<mysticalagriculture:watering_can:4>,<bewitchment:tongue_of_dog>,<mysticalagriculture:supremium_scythe>,<extrautils2:compressedcobblestone:7>,<bewitchment:hellhound_horn>,<divinerpg:sandslash>,<lightningcraft:rod:9>,<contenttweaker:highly_radioactive_dimension_splitting_compound>,<spartanshields:shield_tc_void>,<avaritia:infinity_sword>,<rftoolsdim:dimensional_cross_block>,<openblocks:stencil>,<actuallyadditions:item_phantom_connector>,<agricraft:rake:1>,<contenttweaker:aquasalus>,<contenttweaker:lightning_charge>,<draconicevolution:dislocator_bound:1>,<minecraft:fish>,<botania:manaresource:22>,<minecraft:armor_stand>,<erebus:antlion_egg>,<thaumicaugmentation:impetus_mirror>,<extendedcrafting:singularity_custom:103>] as IItemStack[];
 for i in 0 to 26 {
 	recipes.addShapeless(glyphs[i], [<mysticalagradditions:stuff:69>,glyph_inputs[i]]);
+	glyphs[i].addTooltip(format.darkRed(format.italic("I think I might have seen characters like")));
+	glyphs[i].addTooltip(format.darkRed(format.italic("these written on Tablets and the highest")));
+	glyphs[i].addTooltip(format.darkRed(format.italic("tier Blood Orb back in Chapter 18...")));
 }
 
 # IT1
