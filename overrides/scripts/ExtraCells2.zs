@@ -108,49 +108,49 @@ function addExtraCellsGasDisableString(item as IItemStack) {
 
 # Gas Storage Housing
 recipes.remove(<extracells:storage.casing:2>);
-#recipes.addShaped(<extracells:storage.casing:2>, [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,null,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.casing:2>);
+recipes.addShaped(<extracells:storage.casing:2>, [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,null,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.casing:2>);
 
 # ME 1k Gas Storage Cell
 recipes.remove(<extracells:storage.gas>);
-#recipes.addShaped(<extracells:storage.gas>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:11>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas>);
+recipes.addShaped(<extracells:storage.gas>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:11>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas>);
 
 # ME 4k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:1>);
-#recipes.addShaped(<extracells:storage.gas:1>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:12>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:1>);
+recipes.addShaped(<extracells:storage.gas:1>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:12>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:1>);
 
 # ME 16k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:2>);
-#recipes.addShaped(<extracells:storage.gas:2>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:13>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:2>);
+recipes.addShaped(<extracells:storage.gas:2>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:13>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:2>);
 
 # ME 64k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:3>);
-#recipes.addShaped(<extracells:storage.gas:3>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:14>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:3>);
+recipes.addShaped(<extracells:storage.gas:3>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:14>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:3>);
 
 # ME 256k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:4>);
-#recipes.addShaped(<extracells:storage.gas:4>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:15>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:4>);
+recipes.addShaped(<extracells:storage.gas:4>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:15>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:4>);
 
 # ME 1024k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:5>);
-#recipes.addShaped(<extracells:storage.gas:5>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:16>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:5>);
+recipes.addShaped(<extracells:storage.gas:5>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:16>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:5>);
 
 # ME 4096k Gas Storage Cell
 recipes.remove(<extracells:storage.gas:6>);
-#recipes.addShaped(<extracells:storage.gas:6>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:17>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
-addExtraCellsGasDisableString(<extracells:storage.gas:6>);
+recipes.addShaped(<extracells:storage.gas:6>.withTag({fuzzyMode: "IGNORE_ALL"}), [[empowered_glod_crystal,<thermalfoundation:material:72>,empowered_glod_crystal],[<thermalfoundation:material:72>,<extracells:storage.component:17>,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
+#addExtraCellsGasDisableString(<extracells:storage.gas:6>);
 
 # ME Gas Level Emitter
 recipes.remove(<extracells:part.base:17>);
-#recipes.addShaped(<extracells:part.base:17>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:methodology_processor>]]);
-<extracells:part.base:17>.addTooltip(format.red(format.italic("Disabled due to a bug where it completely")));
-<extracells:part.base:17>.addTooltip(format.red(format.italic("behaves as a Fluid Level Emitter.")));
+recipes.addShaped(<extracells:part.base:17>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:methodology_processor>]]);
+#<extracells:part.base:17>.addTooltip(format.red(format.italic("Disabled due to a bug where it completely")));
+#<extracells:part.base:17>.addTooltip(format.red(format.italic("behaves as a Fluid Level Emitter.")));
 
 # ME Gas Storage Bus
 recipes.remove(<extracells:part.base:16>);

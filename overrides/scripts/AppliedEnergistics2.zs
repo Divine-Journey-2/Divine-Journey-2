@@ -434,4 +434,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_stor
 recipes.remove(<appliedenergistics2:material:58>);
 recipes.addShapedMirrored(<appliedenergistics2:material:58>, [[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null],[<appliedenergistics2:interface>,<appliedenergistics2:material:28>,<thermalfoundation:material:160>],[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null]]);
 
+# ME Extended Processing Pattern Terminal
+recipes.remove(<appliedenergistics2:part:341>);
+recipes.addShapedMirrored(<appliedenergistics2:part:341>, [[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>],[<appliedenergistics2:part:340>,<appliedenergistics2:material:24>,<appliedenergistics2:part:340>],[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>]]);
+
 print("ENDING AppliedEnergistics2.zs");

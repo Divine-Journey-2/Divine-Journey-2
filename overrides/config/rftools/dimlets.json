@@ -209,6 +209,27 @@
   },
   {
     "filter": {
+      "mod": "evilcraft",
+      "name": "blood",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "name": "evilcraftblood",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
       "mod": "tconstruct",
       "name": [
         "ore",

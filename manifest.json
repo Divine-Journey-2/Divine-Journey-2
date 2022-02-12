@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Divine Journey 2",
-  "version": "2.10.0",
+  "version": "first half of 2.11.0",
   "author": "AtricosHU",
   "files": [
     {
@@ -175,6 +175,11 @@
       "required": true
     },
     {
+      "projectID": 485225,
+      "fileID": 3329212,
+      "required": true
+    },
+    {
       "projectID": 222880,
       "fileID": 2926428,
       "required": true
@@ -197,6 +202,11 @@
     {
       "projectID": 270790,
       "fileID": 2713714,
+      "required": true
+    },
+    {
+      "projectID": 570458,
+      "fileID": 3644382,
       "required": true
     },
     {
@@ -607,11 +617,6 @@
     {
       "projectID": 293268,
       "fileID": 2925430,
-      "required": true
-    },
-    {
-      "projectID": 229218,
-      "fileID": 2855967,
       "required": true
     },
     {

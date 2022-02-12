@@ -169,6 +169,10 @@ for ore in allBlackQuartzOresListed {
 	EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
 }
 
+# MysticalWorld Quartz in the SAG Mill
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:quartz_ore>, "MULTIPLY_OUTPUT");
+mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:granite_quartz_ore>, "MULTIPLY_OUTPUT");
+
 # Sand -> Gravel in the Pulverizer
 for s in <ore:sand>.items {
 	mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gravel>, s, 2000);

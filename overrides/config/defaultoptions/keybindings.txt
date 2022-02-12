@@ -40,14 +40,12 @@ key_key.configurator_filter.desc:0:NONE
 key_key.configurator_path.desc:0:NONE
 key_roots.keybinds.pouch:0:NONE
 key_roots.keybinds.quiver:0:NONE
-key_roots.keybinds.spell_slot_previous:0:NONE
-key_roots.keybinds.spell_slot_next:0:NONE
-key_roots.keybinds.spell_slot_5:0:NONE
-key_roots.keybinds.spell_slot_4:0:NONE
-key_roots.keybinds.spell_slot_1:0:NONE
-key_roots.keybinds.spell_slot_2:0:NONE
-key_roots.keybinds.spell_slot_3:0:NONE
+key_roots.keybinds.spell_library:24:SHIFT
+key_roots.keybinds.cycle:0:NONE
+key_roots.keybinds.delete_spell:0:NONE
 key_keybind.baublesinventory:48:NONE
+key_quark.keybind.toggleAutojump:0:NONE
+key_quark.keybind.lockBuilding:0:NONE
 key_quark.emote.no:0:NONE
 key_quark.emote.yes:0:NONE
 key_quark.emote.wave:0:NONE
@@ -66,10 +64,8 @@ key_quark.emote.dab:0:NONE
 key_quark.emote.jet:0:NONE
 key_quark.emote.exorcist:0:NONE
 key_quark.emote.zombie:0:NONE
-key_quark.keybind.toggleAutojump:0:NONE
 key_quark.keybind.dropoff:0:NONE
 key_quark.keybind.changeHotbar:0:NONE
-key_quark.keybind.lockBuilding:0:NONE
 key_pe.key.armor_toggle:0:NONE
 key_pe.key.charge:47:NONE
 key_pe.key.extra_function:0:NONE
@@ -97,8 +93,6 @@ key_[GC] Galaxy Map:0:NONE
 key_[GC] Open Spaceship Inventory:18:NONE
 key_[GC] Toggle Sensor Goggles Mode:0:NONE
 key_keybind.hammercorerenderstack:77:NONE
-key_key.ironbackpacks.equip:0:NONE
-key_key.ironbackpacks.open:0:NONE
 key_key.moreoverlays.lightoverlay.desc:65:NONE
 key_key.moreoverlays.chunkbounds.desc:67:NONE
 key_neat.keybind.toggle:0:NONE
@@ -114,7 +108,6 @@ key_key.cycle_magnet_mode.desc:0:NONE
 key_key.open_wft.desc:0:NONE
 key_key.dismount:42:NONE
 key_key.narrator:0:NONE
-key_smoothfont.key.guiOpen:199:NONE
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -127,20 +120,29 @@ key_key.jei.nextPage:209:NONE
 key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_key.cofh.multimode:0:NONE
-key_key.placeItem:-97:NONE
-key_key.toolConfig:45:NONE
-key_key.toolProfileChange:0:NONE
-key_key.armorProfileChange:0:NONE
-key_key.toggleFlight:0:NONE
-key_key.toggleDislocator:0:NONE
-key_key.cycleDigAOE:0:NONE
-key_key.cycleAttackAOE:0:NONE
-key_key.toggleShields:0:NONE
+key_key.draconicevolution.placeItem:-97:NONE
+key_key.draconicevolution.toolConfig:45:NONE
+key_key.draconicevolution.toolProfileChange:43:NONE
+key_key.draconicevolution.armorProfileChange:43:ALT
+key_key.draconicevolution.toggleFlight:0:NONE
+key_key.draconicevolution.toggleDislocator:0:NONE
+key_key.draconicevolution.cycleDigAOE:0:NONE
+key_key.draconicevolution.cycleAttackAOE:0:NONE
+key_key.draconicevolution.toggleShields:0:NONE
 key_key.toggle_focus.desc:15:NONE
 key_key.aether.accessory_menu:23:NONE
 key_bbw.key.mode:0:NONE
 key_bbw.key.fluidmode:0:NONE
 key_nei.options.keys.gui.botania_corporea_request:0:NONE
+key_bqtweaker.key.pageback:14:NONE
+key_key.settings_menu:34:NONE
+key_key.range:19:NONE
+key_key.undo:22:NONE
+key_key.anchor:35:NONE
+key_key.fuzzy:0:NONE
+key_key.connected_area:0:NONE
+key_key.rotate_mirror:0:NONE
+key_key.material_list:50:NONE
 key_mod.chiselsandbits.chiselmode.single:0:NONE
 key_mod.chiselsandbits.chiselmode.snap2:0:NONE
 key_mod.chiselsandbits.chiselmode.snap4:0:NONE
@@ -202,9 +204,9 @@ key_key.integrateddynamics.logic_programmer_open_rename:19:ALT
 key_invtweaks.key.sort:74:NONE
 key_jecalculation.key.gui_craft:0:NONE
 key_jecalculation.key.gui_math:0:NONE
-key_Quick Commands:83:NONE
 key_key.immersiveengineering.magnetEquip:0:NONE
 key_key.immersiveengineering.chemthrowerSwitch:0:NONE
+key_Quick Commands:83:NONE
 key_keybind.simplyjetpacks.gui:44:NONE
 key_keybind.simplyjetpacks.engine:34:NONE
 key_keybind.simplyjetpacks.charger:25:NONE
@@ -225,12 +227,13 @@ key_key.porterNextDestination:27:NONE
 key_key.porterPrevDestination:26:NONE
 key_key.debugDumpNBTItem:0:NONE
 key_key.debugDumpNBTBlock:0:NONE
-key_bqtweaker.key.pageback:14:NONE
-key_key.journeymap.zoom_in:0:NONE
-key_key.journeymap.zoom_out:0:NONE
+key_key.simplybackpacks.backpackpickup.desc:0:NONE
+key_key.simplybackpacks.backpackopen.desc:0:NONE
+key_key.journeymap.zoom_in:73:NONE
+key_key.journeymap.zoom_out:72:NONE
 key_key.journeymap.minimap_type:0:NONE
 key_key.journeymap.minimap_preset:43:NONE
-key_key.journeymap.create_waypoint:49:NONE
+key_key.journeymap.create_waypoint:51:NONE
 key_key.journeymap.toggle_waypoints:0:NONE
 key_key.journeymap.fullscreen_create_waypoint:0:NONE
 key_key.journeymap.fullscreen_chat_position:0:NONE

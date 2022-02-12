@@ -660,4 +660,14 @@ mods.abyssalcraft.SummonRitual.addRitual("summonEvoker_from_WMLT", 0, 0, 2000, f
 game.setLocalization("ac.ritual.summonEvoker_from_WMLT", "Summon Evoker");
 game.setLocalization("ac.ritual.summonEvoker_from_WMLT.desc", "No luck finding a Woodland Mansion...? Dark Magic might be able to help with that.");
 
+# Removing Cha'rcoal
+<ore:coal>.remove(<abyssalcraft:charcoal>);
+furnace.remove(<abyssalcraft:charcoal>);
+furnace.addRecipe(<minecraft:coal:1>, <abyssalcraft:dreadlog>);
+recipes.removeShaped(<minecraft:torch> * 4, [[<abyssalcraft:charcoal>],[<minecraft:stick>]]);
+recipes.removeShapeless(<minecraft:fire_charge> *3, [<minecraft:gunpowder>,<minecraft:blaze_powder>,<abyssalcraft:charcoal>]);
+
+# SAG Mill shouldn't produce Crystallized Redstone
+<ore:crystalRedstone>.remove(<abyssalcraft:crystal:11>);
+
 print("ENDING AbyssalCraft.zs");

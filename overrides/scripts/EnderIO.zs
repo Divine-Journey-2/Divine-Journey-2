@@ -390,6 +390,13 @@ recipes.addShapedMirrored(<enderio:block_slice_and_splice>, [[<enderio:item_allo
 # Farming Station
 recipes.remove(<enderio:block_farm_station>);
 recipes.addShapedMirrored(<enderio:block_farm_station>, [[<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>],[<divinerpg:arlemite_hoe>,<enderio:item_material:53>,<divinerpg:rupee_hoe>],[<enderio:item_material:12>,<enderio:item_material:42>,<enderio:item_material:12>]]);
+<enderio:block_farm_station>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Do NOT use this machine to harvest crops"));
+<enderio:block_farm_station>.addTooltip(format.white("crops from Crop Sticks. It will always CRASH your game."));
+<enderio:block_farm_station>.addTooltip(format.white(format.italic("<Press Shift for alternatives>")));
+<enderio:block_farm_station>.addShiftTooltip(format.white("Instead, use either a Botania Drum of the Wild /"));
+<enderio:block_farm_station>.addShiftTooltip(format.white(" / Horn of the Wild, an Actually Additions Farmer,"));
+<enderio:block_farm_station>.addShiftTooltip(format.white("or an Industrial Foregoing Plant Interactor;"));
+<enderio:block_farm_station>.addShiftTooltip(format.white("along with a Ranged Collector or an Absorption Hopper."));
 
 # Pulsating Crystal
 recipes.remove(<enderio:item_material:14>);

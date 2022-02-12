@@ -1075,9 +1075,10 @@ function(out, cInfo, player){
 			}
 		}
 	}
+	var sword_tag = cInfo.inventory.getStack(sword_position).tag as IData;
 	val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
 	val sword_damage = cInfo.inventory.getStack(sword_position).damage;
-	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag({souls: number_of_souls - 1}));
+	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag(sword_tag + {souls: number_of_souls - 1}));
 });
 
 

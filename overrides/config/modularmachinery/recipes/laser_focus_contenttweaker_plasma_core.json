@@ -16,7 +16,7 @@
         {
             "type": "meklaser",
             "io-type": "input",
-            "energy": 12800000
+            "energy": 1280000
         },
         {
             "type": "item",
