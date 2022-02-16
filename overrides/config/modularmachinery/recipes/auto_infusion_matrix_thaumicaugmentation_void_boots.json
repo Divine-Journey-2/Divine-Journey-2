@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_void_boots",
-    "recipeTime": 255,
+    "recipeTime": 51,
     "requirements": [
         {
             "type": "energy",

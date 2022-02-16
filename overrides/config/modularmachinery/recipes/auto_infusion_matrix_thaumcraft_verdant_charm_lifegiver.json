@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_verdant_charm_lifegiver",
-    "recipeTime": 160,
+    "recipeTime": 32,
     "requirements": [
         {
             "type": "energy",

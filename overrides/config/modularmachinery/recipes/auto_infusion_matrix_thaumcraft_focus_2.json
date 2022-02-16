@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_focus_2",
-    "recipeTime": 220,
+    "recipeTime": 44,
     "requirements": [
         {
             "type": "energy",

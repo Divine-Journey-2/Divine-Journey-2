@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_mysticalagriculture_nether_quartz_seeds",
-    "recipeTime": 200,
+    "recipeTime": 40,
     "requirements": [
         {
             "type": "energy",

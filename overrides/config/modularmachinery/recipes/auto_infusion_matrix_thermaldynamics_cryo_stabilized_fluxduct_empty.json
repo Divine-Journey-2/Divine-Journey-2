@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thermaldynamics_cryo_stabilized_fluxduct_empty",
-    "recipeTime": 270,
+    "recipeTime": 54,
     "requirements": [
         {
             "type": "energy",

@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_mysticalagriculture_tier3_crafting_seed",
-    "recipeTime": 150,
+    "recipeTime": 30,
     "requirements": [
         {
             "type": "energy",

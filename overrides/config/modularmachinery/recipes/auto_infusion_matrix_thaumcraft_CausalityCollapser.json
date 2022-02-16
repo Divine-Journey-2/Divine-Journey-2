@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_CausalityCollapser",
-    "recipeTime": 130,
+    "recipeTime": 26,
     "requirements": [
         {
             "type": "energy",

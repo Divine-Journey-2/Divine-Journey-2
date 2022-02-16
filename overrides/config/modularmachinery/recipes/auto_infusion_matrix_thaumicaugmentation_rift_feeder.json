@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_rift_feeder",
-    "recipeTime": 600,
+    "recipeTime": 120,
     "requirements": [
         {
             "type": "energy",

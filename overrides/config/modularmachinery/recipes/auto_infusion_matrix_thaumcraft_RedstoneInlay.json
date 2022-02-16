@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_RedstoneInlay",
-    "recipeTime": 30,
+    "recipeTime": 6,
     "requirements": [
         {
             "type": "energy",

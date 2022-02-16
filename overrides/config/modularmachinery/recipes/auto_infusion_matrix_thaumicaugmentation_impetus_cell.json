@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_impetus_cell",
-    "recipeTime": 750,
+    "recipeTime": 150,
     "requirements": [
         {
             "type": "energy",

@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_LampGrowth",
-    "recipeTime": 120,
+    "recipeTime": 24,
     "requirements": [
         {
             "type": "energy",

@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_CuriosityBand",
-    "recipeTime": 500,
+    "recipeTime": 100,
     "requirements": [
         {
             "type": "energy",

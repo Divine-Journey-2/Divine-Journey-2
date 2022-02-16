@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_bewitchment_hellebore_seeds",
-    "recipeTime": 420,
+    "recipeTime": 84,
     "requirements": [
         {
             "type": "energy",

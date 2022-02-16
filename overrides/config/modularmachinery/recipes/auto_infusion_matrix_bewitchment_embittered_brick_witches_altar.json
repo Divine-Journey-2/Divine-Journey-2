@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_bewitchment_embittered_brick_witches_altar",
-    "recipeTime": 165,
+    "recipeTime": 33,
     "requirements": [
         {
             "type": "energy",

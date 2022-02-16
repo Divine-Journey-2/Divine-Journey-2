@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_thaumostatic_harness_augment_1",
-    "recipeTime": 225,
+    "recipeTime": 45,
     "requirements": [
         {
             "type": "energy",

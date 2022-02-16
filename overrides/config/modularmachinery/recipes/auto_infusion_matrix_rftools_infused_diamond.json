@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_rftools_infused_diamond",
-    "recipeTime": 290,
+    "recipeTime": 58,
     "requirements": [
         {
             "type": "energy",

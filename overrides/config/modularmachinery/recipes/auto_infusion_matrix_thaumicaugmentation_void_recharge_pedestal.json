@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_void_recharge_pedestal",
-    "recipeTime": 790,
+    "recipeTime": 158,
     "requirements": [
         {
             "type": "energy",

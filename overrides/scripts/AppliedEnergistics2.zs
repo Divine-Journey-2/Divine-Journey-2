@@ -438,4 +438,9 @@ recipes.addShapedMirrored(<appliedenergistics2:material:58>, [[<appliedenergisti
 recipes.remove(<appliedenergistics2:part:341>);
 recipes.addShapedMirrored(<appliedenergistics2:part:341>, [[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>],[<appliedenergistics2:part:340>,<appliedenergistics2:material:24>,<appliedenergistics2:part:340>],[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>]]);
 
+# ME OreDict Storage Bus
+recipes.remove(<appliedenergistics2:part:222>);
+recipes.addShaped(<appliedenergistics2:part:222>, [[null,<contenttweaker:estimation_processor>,null],[<mekanism:dictionary>,<appliedenergistics2:part:220>,<mekanism:dictionary>],[null,<contenttweaker:estimation_processor>,null]]);
+
+
 print("ENDING AppliedEnergistics2.zs");

@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_vis_regenerator",
-    "recipeTime": 210,
+    "recipeTime": 42,
     "requirements": [
         {
             "type": "energy",

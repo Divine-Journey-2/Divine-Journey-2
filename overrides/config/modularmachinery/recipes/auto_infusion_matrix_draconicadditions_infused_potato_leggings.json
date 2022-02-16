@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_draconicadditions_infused_potato_leggings",
-    "recipeTime": 230,
+    "recipeTime": 46,
     "requirements": [
         {
             "type": "energy",

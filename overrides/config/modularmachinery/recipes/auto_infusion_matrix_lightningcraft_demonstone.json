@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_lightningcraft_demonstone",
-    "recipeTime": 80,
+    "recipeTime": 16,
     "requirements": [
         {
             "type": "energy",

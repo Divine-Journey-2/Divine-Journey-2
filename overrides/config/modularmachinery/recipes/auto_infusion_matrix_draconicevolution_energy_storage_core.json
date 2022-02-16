@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_draconicevolution_energy_storage_core",
-    "recipeTime": 610,
+    "recipeTime": 122,
     "requirements": [
         {
             "type": "energy",

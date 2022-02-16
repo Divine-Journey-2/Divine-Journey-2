@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_ElementalShovel",
-    "recipeTime": 280,
+    "recipeTime": 56,
     "requirements": [
         {
             "type": "energy",

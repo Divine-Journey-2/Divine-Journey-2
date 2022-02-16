@@ -209,6 +209,26 @@
   },
   {
     "filter": {
+      "name": "evilcraftblood",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "name": "block_blood",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
       "mod": "evilcraft",
       "name": "blood",
       "type": "liquid"
@@ -220,7 +240,18 @@
   },
   {
     "filter": {
-      "name": "evilcraftblood",
+      "name": "flux_goo",
+      "type": "liquid"
+    },
+    "settings": {
+      "worldgen": false,
+      "dimlet": false
+    }
+  },
+  {
+    "filter": {
+      "mod": "thaumcraft",
+      "name": "flux_goo",
       "type": "liquid"
     },
     "settings": {

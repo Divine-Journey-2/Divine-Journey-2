@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumcraft_fancyAmulet",
-    "recipeTime": 60,
+    "recipeTime": 12,
     "requirements": [
         {
             "type": "energy",

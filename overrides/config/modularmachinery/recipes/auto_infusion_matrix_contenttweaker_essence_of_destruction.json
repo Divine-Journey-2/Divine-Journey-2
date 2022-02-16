@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_contenttweaker_essence_of_destruction",
-    "recipeTime": 570,
+    "recipeTime": 114,
     "requirements": [
         {
             "type": "energy",

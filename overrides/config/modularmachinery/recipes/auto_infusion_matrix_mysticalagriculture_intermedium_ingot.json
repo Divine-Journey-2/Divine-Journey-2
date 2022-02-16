@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_mysticalagriculture_intermedium_ingot",
-    "recipeTime": 20,
+    "recipeTime": 4,
     "requirements": [
         {
             "type": "energy",

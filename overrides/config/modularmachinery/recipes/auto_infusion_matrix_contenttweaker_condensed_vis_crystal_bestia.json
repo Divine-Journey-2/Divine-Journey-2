@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_contenttweaker_condensed_vis_crystal_bestia",
-    "recipeTime": 30,
+    "recipeTime": 6,
     "requirements": [
         {
             "type": "energy",

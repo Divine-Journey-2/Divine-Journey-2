@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_seal_copier",
-    "recipeTime": 85,
+    "recipeTime": 17,
     "requirements": [
         {
             "type": "energy",

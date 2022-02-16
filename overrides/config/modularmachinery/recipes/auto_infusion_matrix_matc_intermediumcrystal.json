@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_matc_intermediumcrystal",
-    "recipeTime": 390,
+    "recipeTime": 78,
     "requirements": [
         {
             "type": "energy",

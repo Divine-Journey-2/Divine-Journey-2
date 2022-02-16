@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_arcane_terraformer",
-    "recipeTime": 1100,
+    "recipeTime": 220,
     "requirements": [
         {
             "type": "energy",

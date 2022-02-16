@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_contenttweaker_stabilized_end_crystal",
-    "recipeTime": 360,
+    "recipeTime": 72,
     "requirements": [
         {
             "type": "energy",

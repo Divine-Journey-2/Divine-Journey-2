@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_draconicevolution_tool_upgrade_4",
-    "recipeTime": 140,
+    "recipeTime": 28,
     "requirements": [
         {
             "type": "energy",

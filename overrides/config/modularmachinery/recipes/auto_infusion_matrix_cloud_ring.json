@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_cloud_ring",
-    "recipeTime": 50,
+    "recipeTime": 10,
     "requirements": [
         {
             "type": "energy",

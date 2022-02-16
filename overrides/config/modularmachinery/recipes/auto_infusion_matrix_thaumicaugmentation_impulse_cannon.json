@@ -1,7 +1,7 @@
 {
     "machine": "auto_infusion_matrix",
     "registryName": "auto_infusion_matrix_thaumicaugmentation_impulse_cannon",
-    "recipeTime": 760,
+    "recipeTime": 152,
     "requirements": [
         {
             "type": "energy",
