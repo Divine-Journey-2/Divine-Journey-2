@@ -1,0 +1,30 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_special_unstackables",
+    "recipeTime": 1,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:saddle",
+            "amount": 1
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 500
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:saddle",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "quark:witch_hat",
+            "amount": 1
+        }
+    ]
+}
