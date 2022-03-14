@@ -60,4 +60,7 @@ recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<
 <aether_legacy:aerogel>.addTooltip(format.red(format.bold("Due to a bug with Aether Legacy, attempted automation of Aerogel creation will cause crashes.")));
 <aether_legacy:aerogel>.addTooltip(format.red(format.bold("It is highly recommended to wait until Mystical Agriculture to automate this.")));
 
+# Skyroot Plank to plankWood OreDict
+<ore:plankWood>.add(<aether_legacy:skyroot_plank>);
+
 print("ENDING AetherLegacy.zs");

@@ -456,6 +456,9 @@ mods.immersiveengineering.Excavator.removeMineral("Bauxite");
 mods.immersiveengineering.Excavator.addMineral("Osmium", 35, 0.005, ["oreOsmium"], [1.0], [0, -1]);
 mods.immersiveengineering.Excavator.addMineral("Aluminum", 10, 0.005, ["oreAluminum"], [1.0], [0, -1]);
 mods.immersiveengineering.Excavator.getMineral("Nickel").removeOre("orePlatinum");
+mods.immersiveengineering.Excavator.getMineral("Coal").removeOre("oreDiamond");
+mods.immersiveengineering.Excavator.getMineral("Coal").addOre("oreDiamond", 0.1);
+mods.immersiveengineering.Excavator.getMineral("Quartzite").addOre("oreQuartzBlack", 0.1);
 
 # Creative Capacitor
 mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,

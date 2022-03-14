@@ -1,0 +1,15 @@
+enchantment.bibliocraft.bibliocraft.readingench.desc=Permits reading contents of some Bibliocraft blocks, such as the Printing Press.
+enchantment.bibliocraft.bibliocraft.deathcompassench.desc=With this upgrade on the Atlas, when you die, you will spawn with an Eternal Compass that will lead you back to your point of death.
+enchantment.divinerpg.rive.desc=Breaks additional blocks when mining.
+enchantment.divinerpg.aftershock.desc=Has a 5 percent chance per level to double the damage done by melee weapons.
+enchantment.extrautils2.xu.kaboomerang.desc=Causes the Boomerang to create an explosion on impact with a block or a mob.
+enchantment.extrautils2.xu.zoomerang.desc=Increases the speed at which the Boomerang is launched by 30 percent per level.
+enchantment.extrautils2.xu.burnerang.desc=Causes the Boomerang to set anything it damages on fire for 5 seconds.
+enchantment.extrautils2.xu.bladerang.desc=Increases the damage dealt by the Boomerang by 4 damage per level.
+enchantment.extrautils2.xu.boomereaperang.desc=Causes the Boomerang to destroy any plant or flower in its path, collecting their drops as it does so.
+enchantment.lightningcraft.hand_of_thor.desc=Grants weapons the possibility to strike enemies with lightning.
+enchantment.lightningcraft.elec_aura.desc=Shoots electricity at attackers when applied on armor.
+enchantment.openblocks.explosive.desc=When a piece of armor enchanted with Unstable is worn, it will trigger explosions of varying size when certain events happen.
+enchantment.openblocks.last_stand.desc=When a player wearing armor enchanted with Last Stand takes damage that would otherwise kill them, the player is instead left with 1 health at the cost of experience, with the cost based on the damage and reduced by the total level of Last Stand on all equipment.
+enchantment.openblocks.flim_flam.desc=Causes a number of negative effects to nearby players when equipped.
+enchantment.simplyjetpacks.fuel_efficiency.desc=Decreases the amount of power used by jetpacks and flux packs when flying or being damaged.

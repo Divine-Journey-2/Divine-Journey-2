@@ -1,6 +1,7 @@
 #priority 10
 
 import crafttweaker.item.IItemStack;
+import mods.thermalexpansion.Transposer;
 
 # Author: Atricos
 print("STARTING UndergroundBiomes.zs");
@@ -68,5 +69,19 @@ recipes.addShaped(<undergroundbiomes:metamorphic_stone:2> * 9, [[<chisel:marble2
 # UB Limestone <-> Chisel Limestone
 recipes.addShaped(<chisel:limestone2:7> * 9, [[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>],[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>],[<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>,<undergroundbiomes:sedimentary_stone>]]);
 recipes.addShaped(<undergroundbiomes:sedimentary_stone> * 9, [[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>],[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>],[<chisel:limestone2:7>,<chisel:limestone2:7>,<chisel:limestone2:7>]]);
+
+# UB Mossy Cobble with the Fluid Tranposer method
+for i in 0 to 8 {
+	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:igneous_cobble_mossy>.withDamage(i), <undergroundbiomes:igneous_cobble>.withDamage(i), <liquid:water> * 250, 4000);
+	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i), <undergroundbiomes:metamorphic_cobble>.withDamage(i), <liquid:water> * 250, 4000);
+	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:sedimentary_stone_mossy>.withDamage(i), <undergroundbiomes:sedimentary_stone>.withDamage(i), <liquid:water> * 250, 4000);
+}
+
+# UB Mossy Cobble with the Metallurgic Infuser method
+for i in 0 to 8 {
+	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:igneous_cobble>.withDamage(i), <undergroundbiomes:igneous_cobble_mossy>.withDamage(i));
+	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:metamorphic_cobble>.withDamage(i), <undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i));
+	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:sedimentary_stone>.withDamage(i), <undergroundbiomes:sedimentary_stone_mossy>.withDamage(i));
+}
 
 print("ENDING UndergroundBiomes.zs");
