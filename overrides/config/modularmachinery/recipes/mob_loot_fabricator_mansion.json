@@ -1,0 +1,36 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_special_unstackables",
+    "recipeTime": 1,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:woodland_mansion_locator_token",
+            "amount": 1
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:woodland_mansion_locator_token",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:emerald",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:totem_of_undying",
+            "amount": 1
+        }
+    ]
+}

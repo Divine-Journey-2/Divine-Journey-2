@@ -1022,9 +1022,13 @@ recipes.addShapedMirrored(<botania:miningring>.withTag({}), [[<minecraft:potion>
 recipes.removeShapeless(<botania:lens:3>, [<*>,<*>]);
 recipes.addShapeless(<botania:lens:3>.withTag({}), [<botania:lens>,<contenttweaker:rune_of_earth>]);
 
-# Shard of Laputa I
-recipes.remove(<botania:laputashard>);
-recipes.addShapedMirrored(<botania:laputashard>, [[<botania:manaresource:5>,<botania:miniisland:*>,<botania:manaresource:5>],[<minecraft:prismarine_shard>,<botania:manaresource:9>,<minecraft:prismarine_shard>],[<contenttweaker:rune_of_earth>,<botania:manaresource:5>,<contenttweaker:rune_of_air>]]);
+# Shard of Laputa I-XX (1-20)
+recipes.remove(<botania:laputashard:*>);
+recipes.addShapedMirrored(<botania:laputashard:0>, [[<contenttweaker:rune_of_air>,<botania:lightrelay:0>,<contenttweaker:rune_of_air>],[<contenttweaker:crystallized_mana_shard>,<botania:worldseed>,<contenttweaker:crystallized_mana_shard>],[<contenttweaker:rune_of_earth>,<botania:manaresource:5>,<contenttweaker:rune_of_earth>]]);
+
+for i in 0 to 19 {
+    recipes.addShapedMirrored(<botania:laputashard>.withDamage(i + 1), [[<contenttweaker:rune_of_air>,<botania:lightrelay:0>,<contenttweaker:rune_of_air>],[<contenttweaker:crystallized_mana_shard>,<botania:laputashard>.withDamage(i),<contenttweaker:crystallized_mana_shard>],[<contenttweaker:rune_of_earth>,<botania:manaresource:5>,<contenttweaker:rune_of_earth>]]);
+}
 
 # Rod of the Lands
 recipes.remove(<botania:dirtrod>);
@@ -1086,22 +1090,22 @@ recipes.addShaped(<botania:elementiumshears>, [[null,<botania:manaresource:7>,nu
 
 # Mana Tablet (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}),
-[[<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>], 
-[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <botania:manatablet>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
-[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <thaumicenergistics:essentia_cell_creative>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
-[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <avaritia:resource:6>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>], 
+[[<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <botania:manatablet>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <thaumicenergistics:essentia_cell_creative>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>],
+[<contenttweaker:crystallized_mana_cluster>, <botania:manatablet>, <avaritia:resource:6>, <botania:manatablet>, <contenttweaker:crystallized_mana_cluster>],
 [<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>]]);
 
 # Everlasting Guilty Mana Pool
 mods.extendedcrafting.TableCrafting.addShaped(<botania:pool:1>,
-[[null, null, null, null, null, null, null, null, null], 
-[null, null, null, null, null, null, null, null, null], 
-[null, null, null, null, null, null, null, null, null], 
-[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
-[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <contenttweaker:neutronium_singularity>, <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
-[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>], 
-[<botania:pool:3>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <botania:pool:3>], 
-[<botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>], 
+[[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null],
+[null, null, null, null, null, null, null, null, null],
+[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>],
+[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <contenttweaker:natures_blessing>, <contenttweaker:neutronium_singularity>, <contenttweaker:natures_blessing>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>],
+[<botania:pool:3>, <avaritia:block_resource>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:resource:4>, <avaritia:block_resource>, <botania:pool:3>],
+[<botania:pool:3>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <avaritia:block_resource>, <botania:pool:3>],
+[<botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>, <botania:pool:3>],
 [null, null, null, null, null, null, null, null, null]]);
 
 print("ENDING Botania.zs");
