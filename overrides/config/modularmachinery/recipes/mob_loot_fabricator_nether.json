@@ -1,7 +1,7 @@
 {
     "machine": "mob_loot_fabricator",
     "registryName": "mob_loot_fabricator_nether",
-    "recipeTime": 1,
+    "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
@@ -10,21 +10,13 @@
             "nbt": {
                 "id": "thaumicaugmentation:strength_nether"
             },
-            "amount": 1
+            "amount": 1,
+            "chance": 0
         },
         {
             "type": "lifeessence",
             "io-type": "input",
             "essenceamount": 500
-        },
-        {
-            "type": "item",
-            "io-type": "output",
-            "item": "thaumicaugmentation:augment_builder_power",
-            "nbt": {
-                "id": "thaumicaugmentation:strength_nether"
-            },
-            "amount": 1
         },
         {
             "type": "item",

@@ -3,6 +3,21 @@
     "localizedname": "Mob Loot Fabricator",
     "requires-blueprint": true,
     "color": "151515",
+    "modifiers": [
+        {
+            "elements": "astralsorcery:blockcelestialcollectorcrystal@0",
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "description": "Note: The Celestial Collector Crystal must be attuned to Lucerna for the multiblock to form.",
+            "modifier": {
+                "io": "input",
+                "target": "energy",
+                "operation": 1,
+                "multiplier": 0
+            }
+        }
+    ],
     "parts": [
         {
             "x": 0,

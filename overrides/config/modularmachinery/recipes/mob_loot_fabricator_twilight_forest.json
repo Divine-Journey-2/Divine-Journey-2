@@ -1,24 +1,19 @@
 {
     "machine": "mob_loot_fabricator",
     "registryName": "mob_loot_fabricator_twilight_forest",
-    "recipeTime": 1,
+    "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
             "item": "bewitchment:ravens_feather",
-            "amount": 1
+            "amount": 1,
+            "chance": 0
         },
         {
             "type": "lifeessence",
             "io-type": "input",
             "essenceamount": 500
-        },
-        {
-            "type": "item",
-            "io-type": "output",
-            "item": "bewitchment:ravens_feather",
-            "amount": 1
         },
         {
             "type": "item",

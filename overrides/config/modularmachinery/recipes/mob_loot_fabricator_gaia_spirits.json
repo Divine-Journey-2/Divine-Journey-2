@@ -1,24 +1,19 @@
 {
     "machine": "mob_loot_fabricator",
     "registryName": "mob_loot_fabricator_gaia_spirits",
-    "recipeTime": 1,
+    "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
             "item": "botania:laputashard@19",
-            "amount": 1
+            "amount": 1,
+            "chance": 0
         },
         {
             "type": "lifeessence",
             "io-type": "input",
             "essenceamount": 20000
-        },
-        {
-            "type": "item",
-            "io-type": "output",
-            "item": "botania:laputashard@19",
-            "amount": 1
         },
         {
             "type": "item",

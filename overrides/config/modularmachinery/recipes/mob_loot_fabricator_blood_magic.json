@@ -1,13 +1,14 @@
 {
     "machine": "mob_loot_fabricator",
     "registryName": "mob_loot_fabricator_blood_magic",
-    "recipeTime": 1,
+    "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
             "item": "bloodmagic:blood_shard@0",
-            "amount": 1
+            "amount": 1,
+            "chance": 0
         },
         {
             "type": "lifeessence",
@@ -64,7 +65,7 @@
             "type": "item",
             "io-type": "output",
             "item": "bloodmagic:blood_shard@0",
-            "amount": 2
+            "amount": 1
         }
     ]
 }
