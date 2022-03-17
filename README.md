@@ -67,7 +67,7 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | Neat | Neat 1.4-17 |
 | No Night Vision Flash | NoNVFlash-1.12.2-1.2.0.3-universal |
 | No Recipe Book | noRecipeBook_v1.2.2formc1.12.2 |
-| ReAuth | reauth-3.6.0 |
+| Oauth | oauth-1.06.3 |
 | Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
 | AutoRun | simpleautorun-1.12.2-1.2.0 | 
 | Thaumic JEI | ThaumicJEI-1.12.2-1.6.0.27 |
