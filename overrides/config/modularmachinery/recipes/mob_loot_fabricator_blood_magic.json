@@ -51,11 +51,6 @@
             "min": 0
         },
         {
-            "type": "lifeessence",
-            "io-type": "output",
-            "essenceamount": 2500
-        },
-        {
             "type": "fluid",
             "io-type": "output",
             "fluid": "lifeessence",

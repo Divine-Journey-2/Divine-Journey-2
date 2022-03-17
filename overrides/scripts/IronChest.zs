@@ -59,7 +59,11 @@ addIronChestRecipe(<ironchest:diamond_obsidian_chest_upgrade>, <minecraft:diamon
 # Shulker Box upgrade function
 function ironchest_shulkerbox_recipe_tag(input_tag as IData, out as IItemStack, size as int) as IItemStack {
 	if(input_tag has "BlockEntityTag") {
-		return out.withTag({BlockEntityTag: {Items: input_tag.BlockEntityTag.Items, ShulkerBoxSize: size}});
+		if(input_tag.BlockEntityTag has "Items") {
+			return out.withTag({BlockEntityTag: {Items: input_tag.BlockEntityTag.Items, ShulkerBoxSize: size}});
+		} else {
+			return out;
+		}
 	} else {
 		return out;
 	}

@@ -430,6 +430,7 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 20, <natu
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:moonglow_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:spirit_herb_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:wildewheet_seed>, 6400);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:pereskia_bulb>, 6400);
 
 # Conveyor fix
 recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);

@@ -34,6 +34,10 @@ IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot>, <thermalfoundation:material
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <appliedenergistics2:material:5>, null, 200, 512, [<thermalfoundation:material:160>], "Alloying");
 ArcFurnace.addRecipe(<enderio:item_alloy_ingot>, <appliedenergistics2:material:5>, null, 200, 512, [<thermalfoundation:material:96>], "Alloying");
 
+# Pulsating Iron in the Arc Furnace
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:5>, <minecraft:iron_ingot>, null, 200, 512, [<minecraft:ender_pearl>], "Alloying");
+ArcFurnace.addRecipe(<enderio:item_alloy_ingot:5>, <thermalfoundation:material:0>, null, 200, 512, [<minecraft:ender_pearl>], "Alloying");
+
 # Vibrant Alloy in the Arc Furnace
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:1>, null, 200, 512, [<minecraft:ender_pearl>], "Alloying");
 
