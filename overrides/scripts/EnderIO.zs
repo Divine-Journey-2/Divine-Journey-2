@@ -67,8 +67,6 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:6>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_ingot:6>, <contenttweaker:energized_dark_ingot>, null, 400, 512, [<thermalfoundation:material:160>,<mekanism:ingot>], "Alloying");
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:96>, <thermalfoundation:material:770>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:770>);
-EIOAlloySmelter.removeRecipe(<enderio:item_alloy_ingot:6>);
-EIOAlloySmelter.addRecipe(<enderio:item_alloy_ingot:6>, [<contenttweaker:energized_dark_ingot>, <thermalfoundation:material:160>, <mekanism:ingot>], 20000);
 mods.tconstruct.Alloy.removeRecipe(<liquid:dark_steel>);
 
 # Industrial Dye Blend
@@ -77,7 +75,6 @@ recipes.addShapedMirrored(<enderio:item_material:51> * 2, [[<actuallyadditions:i
 
 # Industrial Machine Chassis
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
-EIOAlloySmelter.removeRecipe(<enderio:item_material:1>);
 recipes.addShaped(<enderio:item_material:1>, [[<enderio:item_alloy_ingot:6>,<enderio:item_material:51>,<enderio:item_alloy_ingot:6>],[<enderio:item_material:51>,<enderio:item_material>,<enderio:item_material:51>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:51>,<enderio:item_alloy_ingot:6>]]);
 
 # Basic Capacitor
@@ -136,6 +133,15 @@ recipes.addShaped(<enderio:item_liquid_conduit:1> * 6, [[<enderio:item_material:
 recipes.remove(<enderio:item_liquid_conduit:2>);
 recipes.addShaped(<enderio:item_liquid_conduit:2> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_alloy_ingot:2>,<enderio:item_liquid_conduit:1>,<enderio:item_alloy_ingot:2>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 
+# Remove Data Conduit
+recipes.remove(<enderio:item_data_conduit:0>);
+
+# Gas Conduits
+recipes.remove(<enderio:item_gas_conduit:0>);
+recipes.remove(<enderio:item_gas_conduit:1>);
+recipes.remove(<enderio:item_gas_conduit:2>);
+recipes.addShaped(<enderio:item_gas_conduit:2> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<mekanism:transmitter:2>.withTag({tier: 3}),<enderio:item_liquid_conduit:2>,<mekanism:transmitter:2>.withTag({tier: 3})],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
+
 # Energy Conduit
 recipes.remove(<enderio:item_power_conduit>);
 recipes.addShaped(<enderio:item_power_conduit> * 6, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_alloy_ingot:4>,<enderio:item_alloy_ingot:4>,<enderio:item_alloy_ingot:4>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
@@ -150,8 +156,6 @@ recipes.addShaped(<enderio:item_power_conduit:2> * 6, [[<enderio:item_material:4
 
 # Redstone Alloy
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_alloy_ingot:3>, <projectred-core:resource_item:103>, <appliedenergistics2:material:5>, 10000);
-EIOAlloySmelter.removeRecipe(<enderio:item_alloy_ingot:3>);
-EIOAlloySmelter.addRecipe(<enderio:item_alloy_ingot:3>, [<projectred-core:resource_item:103>, <appliedenergistics2:material:5>], 10000);
 
 # Redstone Conduit
 recipes.remove(<enderio:item_redstone_conduit>);
@@ -332,6 +336,26 @@ recipes.addShaped(<enderio:block_omni_reservoir> * 16, [[<enderio:item_alloy_ing
 recipes.remove(<enderio:block_enchanter>);
 recipes.addShaped(<enderio:block_enchanter>, [[<minecraft:diamond_block>,<minecraft:book>,<minecraft:diamond_block>],[<enderio:block_alloy:6>,<openblocks:auto_enchantment_table>,<enderio:block_alloy:6>],[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
 
+# Remove Death Urn
+recipes.remove(<enderio:item_material:81>);
+
+# Remove Inventory Panel related things
+recipes.remove(<enderio:item_material:64>);
+recipes.remove(<enderio:block_inventory_panel>);
+recipes.remove(<enderio:item_inventory_remote:0>);
+recipes.remove(<enderio:item_inventory_remote:1>);
+recipes.remove(<enderio:item_inventory_remote:2>);
+recipes.remove(<enderio:block_inventory_panel_sensor>);
+recipes.remove(<enderio:block_inventory_chest_tiny>);
+recipes.remove(<enderio:block_inventory_chest_small>);
+recipes.remove(<enderio:block_inventory_chest_medium>);
+recipes.remove(<enderio:block_inventory_chest_big>);
+recipes.remove(<enderio:block_inventory_chest_large>);
+recipes.remove(<enderio:block_inventory_chest_huge>);
+recipes.remove(<enderio:block_inventory_chest_enormous>);
+recipes.remove(<enderio:block_inventory_chest_warehouse>);
+recipes.remove(<enderio:block_inventory_chest_warehouse13>);
+
 # Basic Capacitor Bank
 recipes.remove(<enderio:block_cap_bank:1>);
 recipes.addShaped(<enderio:block_cap_bank:1>, [[<enderio:item_alloy_ingot:6>,<enderio:item_basic_capacitor>,<enderio:item_alloy_ingot:6>],[<enderio:item_basic_capacitor>,<plustic:osgloglasblock>,<enderio:item_basic_capacitor>],[<enderio:item_alloy_ingot:6>,<enderio:item_basic_capacitor>,<enderio:item_alloy_ingot:6>]]);
@@ -379,7 +403,6 @@ recipes.remove(<enderio:item_material:52>);
 recipes.addShaped(<enderio:item_material:52> * 2, [[<enderio:item_material:49>,<appliedenergistics2:material:3>,<enderio:item_material:49>],[<appliedenergistics2:material:3>,<enderio:item_material:50>,<appliedenergistics2:material:3>],[<enderio:item_material:49>,<appliedenergistics2:material:3>,<enderio:item_material:49>]]);
 
 # Soul Machine Chassis
-EIOAlloySmelter.removeRecipe(<enderio:item_material:53>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
 recipes.addShaped(<enderio:item_material:53>, [[<enderio:item_alloy_ingot:7>,<enderio:item_material:52>,<enderio:item_alloy_ingot:7>],[<enderio:item_material:52>,<enderio:item_material:1>,<enderio:item_material:52>],[<enderio:item_alloy_ingot:7>,<enderio:item_material:52>,<enderio:item_alloy_ingot:7>]]);
 
@@ -413,10 +436,6 @@ recipes.remove(<enderio:item_material:15>);
 recipes.addShaped(<enderio:item_material:15>, [[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<minecraft:emerald>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>]]);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
 mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:15>, <minecraft:emerald>, <liquid:vibrant_alloy>, 1152, true, 60);
-
-# Enticing Crystal
-mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:17>);
-mods.enderio.SoulBinder.addRecipe(<enderio:item_material:17>, <enderio:item_material:18>, ["divinerpg:scorcher"], 100000, 4);
 
 function addEnderIOObeliskRecipe(output as IItemStack, top_input as IItemStack, mid_input as IItemStack) {
 	recipes.remove(output);
@@ -452,7 +471,6 @@ recipes.remove(<enderio:item_material:67>);
 recipes.addShaped(<enderio:item_material:67> * 2, [[<enderio:item_material:36>,<appliedenergistics2:material:3>,<enderio:item_material:36>],[<appliedenergistics2:material:3>,<enderio:item_material:50>,<appliedenergistics2:material:3>],[<enderio:item_material:36>,<appliedenergistics2:material:3>,<enderio:item_material:36>]]);
 
 # Enhanced Machine Chassis
-EIOAlloySmelter.removeRecipe(<enderio:item_material:54>);
 recipes.addShaped(<enderio:item_material:54>, [[<enderio:item_alloy_endergy_ingot:2>,<enderio:item_material:67>,<enderio:item_alloy_endergy_ingot:2>],[<enderio:item_material:67>,<enderio:item_material:66>,<enderio:item_material:67>],[<enderio:item_alloy_endergy_ingot:2>,<enderio:item_material:67>,<enderio:item_alloy_endergy_ingot:2>]]);
 
 function addEnderIOEnhancedMachineRecipe(output as IItemStack, machine_input as IItemStack) {
@@ -513,8 +531,6 @@ recipes.remove(<enderio:item_material:38>);
 recipes.addShapeless(<enderio:item_material:38> * 2, [<contenttweaker:rf_powder>,<actuallyadditions:item_dust:4>,<appliedenergistics2:material:5>,<contenttweaker:energized_dark_dust>]);
 
 # Photovoltaic Plate
-EIOAlloySmelter.removeRecipe(<enderio:item_material:3>);
-EIOAlloySmelter.addRecipe(<enderio:item_material:3>, [<enderio:item_material:38>, <contenttweaker:energized_dark_ingot>, <appliedenergistics2:material:46>], 15000);
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:3>, <enderio:item_material:38>, null, 100, 512, [<contenttweaker:energized_dark_ingot>, <appliedenergistics2:material:46>], "Alloying");
 
 # Simple Photovoltaic Cell
@@ -661,13 +677,9 @@ recipes.remove(<enderio:item_material:68>);
 recipes.addShaped(<enderio:item_material:68> * 8, [[<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>,<enderio:item_material:54>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot>]]);
 
 # Crystalline Alloy Ingot
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:1>);
-mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:1>, [<enderio:item_alloy_endergy_ingot:6>, <enderio:item_material:36>, <contenttweaker:ingot_of_elevation>], 16000);
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:1>, <enderio:item_alloy_endergy_ingot:6>, null, 120, 512, [<enderio:item_material:36>, <contenttweaker:ingot_of_elevation>], "Alloying");
 
 # Stellar Alloy Ingot
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
-mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:3>, [<enderio:item_alloy_endergy_ingot:1>, <contenttweaker:crystalline_brown_slime_ingot>, <botania:manaresource:5>], 100000);
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_alloy_endergy_ingot:3>, <enderio:item_alloy_endergy_ingot:1>, null, 400, 512, [<contenttweaker:crystalline_brown_slime_ingot>, <botania:manaresource:5>], "Alloying");
 
 # Crystalline Capacitor
@@ -761,7 +773,6 @@ recipes.remove(<enderio:item_alloy_ingot:9>);
 recipes.remove(<enderio:block_alloy:9>);
 recipes.remove(<enderio:item_alloy_nugget:9>);
 recipes.remove(<enderio:item_alloy_ball:9>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:9>);
 recipes.remove(<enderio:block_electric_light:2>);
 recipes.addShaped(<enderio:block_electric_light:2>, [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<minecraft:iron_ingot>,<ore:glowstone>,<minecraft:iron_ingot>]]);
 recipes.remove(<enderio:block_exit_rail>);
