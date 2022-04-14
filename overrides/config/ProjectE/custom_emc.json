@@ -405,6 +405,10 @@
       "emc": 32
     },
     {
+      "item": "aether_legacy:aerogel|0",
+      "emc": 8
+    },
+    {
       "item": "aether_legacy:holystone|0",
       "emc": 1
     },
