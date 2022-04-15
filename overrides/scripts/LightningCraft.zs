@@ -1,4 +1,4 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
 
 import mods.immersiveengineering.MetalPress;
 import crafttweaker.item.IItemStack;
@@ -141,9 +141,17 @@ LightningCrusher.remove(<lightningcraft:material:5>);
 <lightningcraft:material:5>.addTooltip(format.white("naturally in the Nether."));
 
 # Ichor
-<lightningcraft:material:11>.addTooltip(format.white("Created by striking Demon Blood,"));
+<lightningcraft:material:11>.addTooltip(format.white("Initially created by striking Demon Blood,"));
 <lightningcraft:material:11>.addTooltip(format.white("Skyfather Ingot and an Emerald"));
 <lightningcraft:material:11>.addTooltip(format.white("on the ground with lightning."));
+
+RecipeBuilder.newBuilder("ichor", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(5000)
+    .addItemInput(<lightningcraft:material:5>)
+    .addItemInput(<lightningcraft:ingot:1>)
+    .addItemInput(<minecraft:emerald>)
+    .addItemOutput(<lightningcraft:material:11>)
+    .build();
 
 # Demonstone
 LightningInfusion.remove(<lightningcraft:stone_block:3>);
