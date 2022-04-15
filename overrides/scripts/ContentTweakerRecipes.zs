@@ -1111,6 +1111,7 @@ mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contentt
 
 # Rainbow Tablet
 recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbow_slate>,null],[<contenttweaker:mystical_tablet>,blood_orb_at_least_tier_6.reuse(),<contenttweaker:mystical_tablet>],[null,<contenttweaker:rainbow_slate>,null]]);
+mods.thaumcraft.Infusion.registerRecipe("contenttweaker:RainbowTablet", "INFUSION", <contenttweaker:rainbow_tablet>, 8, [<aspect:victus> * 99, <aspect:ignis> * 99, <aspect:sol> * 99, <aspect:herba> * 99, <aspect:instrumentum> * 99, <aspect:praecantatio> * 99], <contenttweaker:rainbow_slate> * 32, [<botania:manaresource:14>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<botania:manaresource:14>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>]);
 
 # Abyssal Wasteland Teleporter
 <contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
