@@ -7,7 +7,7 @@ recipes.addShaped(<solarflux:mirror> * 3, [[<ore:blockGlassColorless>,<ore:block
 
 # Solar Panel I
 recipes.remove(<solarflux:solar_panel_1>);
-recipes.addShaped(<solarflux:solar_panel_1>, [[<solarflux:mirror>,<solarflux:mirror>,<solarflux:mirror>],[<ore:plankWood>,<minecraft:redstone>,<ore:plankWood>],[<ore:stone>,<enderio:item_alloy_ingot>,<ore:stone>]]);
+recipes.addShaped(<solarflux:solar_panel_1> * 2, [[<solarflux:mirror>,<solarflux:mirror>,<solarflux:mirror>],[<ore:plankWood>,<minecraft:redstone>,<ore:plankWood>],[<ore:stone>,<enderio:item_alloy_ingot>,<ore:stone>]]);
 
 # Photovoltaic Cell I
 recipes.remove(<solarflux:photovoltaic_cell_1>);
