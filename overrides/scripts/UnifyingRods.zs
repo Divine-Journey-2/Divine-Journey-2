@@ -6,6 +6,10 @@ import mods.tconstruct.Melting;
 
 print("STARTING Rods.zs");
 
+# Stone Rod
+recipes.remove(<microblockcbe:stone_rod>);
+<ore:rodStone>.remove(<microblockcbe:stone_rod>);
+
 # Iron Rod
 recipes.remove(<immersiveengineering:material:1>);
 mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:material:1>);
