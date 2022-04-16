@@ -611,12 +611,15 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:hardened_blood_droplet>, <t
 
 # Rainbow Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:rainbow_slate>, <bloodmagic:slate:4>, 5, 120000, 300, 250);
+<contenttweaker:rainbow_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Vibrant Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:vibrant_slate>, <contenttweaker:rainbow_slate>, 5, 300000, 400, 250);
+<contenttweaker:vibrant_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Perfect Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:perfect_slate>, <contenttweaker:vibrant_slate>, 5, 1000000, 500, 250);
+<contenttweaker:perfect_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Simple Catalyst
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:simple_catalyst>, [<minecraft:glass_bottle>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gunpowder>,<minecraft:sugar>,<thermalfoundation:material:99>], 25, 2, 1);
