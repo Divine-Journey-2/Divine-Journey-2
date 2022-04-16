@@ -3,6 +3,9 @@
 
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Melting;
+import crafttweaker.item.IItemStack;
+import mods.thermalexpansion.Sawmill;
+import mods.mekanism.sawmill;
 
 print("STARTING Rods.zs");
 
@@ -123,5 +126,25 @@ mods.immersiveengineering.MetalPress.removeRecipe(<lightningcraft:rod:9>);
 mods.immersiveengineering.MetalPress.addRecipe(<lightningcraft:rod:9>, <ore:ingotMystic>, <immersiveengineering:mold:2>, 2400, 1);
 mods.tconstruct.Melting.removeRecipe(<liquid:mystic>, <lightningcraft:rod:9>);
 mods.tconstruct.Melting.addRecipe(<liquid:mystic> * 144, <lightningcraft:rod:9>, 735);
+
+# Add rods to sawmills
+function addRodToSawmill(input as IItemStack, output as IItemStack) {
+    mods.thermalexpansion.Sawmill.addRecipe(output, input, 4000);
+    mods.mekanism.sawmill.addRecipe(input, output);
+}
+
+addRodToSawmill(<thermalfoundation:material:135>, <libvulpes:productrod:10>);
+addRodToSawmill(<thermalfoundation:material:132>, <immersiveengineering:material:3>);
+addRodToSawmill(<minecraft:iron_ingot>, <immersiveengineering:material:1>);
+addRodToSawmill(<thermalfoundation:material:130>, <contenttweaker:silver_rod>);
+addRodToSawmill(<galacticraftplanets:item_basic_asteroids>, <contenttweaker:titanium_rod>);
+addRodToSawmill(<thermalfoundation:material:131>, <lightningcraft:rod:2>);
+addRodToSawmill(<thermalfoundation:material:129>, <lightningcraft:rod:3>);
+addRodToSawmill(<minecraft:gold_ingot>, <lightningcraft:rod:5>);
+addRodToSawmill(<thermalfoundation:material:128>, <lightningcraft:rod:6>);
+addRodToSawmill(<thermalfoundation:material:160>, <immersiveengineering:material:2>);
+addRodToSawmill(<lightningcraft:ingot:2>, <lightningcraft:rod:9>);
+addRodToSawmill(<lightningcraft:ingot>, <lightningcraft:rod:7>);
+addRodToSawmill(<lightningcraft:ingot:1>, <lightningcraft:rod:8>);
 
 print("ENDING Rods.zs");
