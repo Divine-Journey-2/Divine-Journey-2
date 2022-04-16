@@ -7,6 +7,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.thermalexpansion.Transposer;
 import mods.evilcraft.BloodInfuser;
 import crafttweaker.data.IData;
+import mods.bloodmagic.TartaricForge;
 
 print("STARTING EvilCraft.zs");
 
@@ -101,7 +102,7 @@ recipes.addShaped(<evilcraft:bowl_of_promises:1>, [[<evilcraft:dark_power_gem>,<
 
 # Filled Bowl of Empty Promises
 recipes.remove(<evilcraft:bowl_of_promises>);
-recipes.addShaped(<evilcraft:bowl_of_promises>, [[null,<evilcraft:dark_gem_crushed>,null],[<evilcraft:dark_gem_crushed>,<contenttweaker:magicales>,<evilcraft:dark_gem_crushed>],[null,<evilcraft:bowl_of_promises:1>,null]]);
+mods.bloodmagic.TartaricForge.addRecipe(<evilcraft:bowl_of_promises>, [<evilcraft:bowl_of_promises:1>,<contenttweaker:magicales>,<evilcraft:dark_gem_crushed>,<evilcraft:dark_spike>], 200, 16);
 
 # Bowl of Promises (Strength 0)
 mods.thermalexpansion.Transposer.removeFillRecipe(<evilcraft:bowl_of_promises>, <liquid:evilcraftblood>);
