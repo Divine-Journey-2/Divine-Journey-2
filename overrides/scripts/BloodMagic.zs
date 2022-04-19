@@ -533,6 +533,21 @@ recipes.addShaped(<bloodmagic:path:6> * 2, [[<botania:quartz>,<bloodmagic:path:4
 <bloodmagic:soul_gem:3>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("4096") + format.white(" Will Quality."));
 <bloodmagic:soul_gem:4>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("16,384") + format.white(" Will Quality."));
 
+# Blood Orb tooltips
+function add_blood_orb_tooltip(id as string, amount as string, tier as string) {
+	var item = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:"~id as string});
+	item.addTooltip(format.white("This Blood Orb can store a base of ") + format.red(amount) + format.white(" Life Essence."));
+	if (tier > 1) {
+		item.addTooltip(format.white("This Blood Orb can only be filled in a tier ") + format.red(tier) + format.white(" or above Blood Altar"));
+	}
+}
+add_blood_orb_tooltip("weak", "5,000", 1);
+add_blood_orb_tooltip("apprentice", "25,000", 2);
+add_blood_orb_tooltip("magician", "150,000", 3);
+add_blood_orb_tooltip("master", "1,000,000", 4);
+add_blood_orb_tooltip("archmage", "10,000,000", 5);
+add_blood_orb_tooltip("transcendent", "30,000,000", 6);
+
 # Transcendent Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:decorative_brick:2>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}), <evilcraft:blood_orb:1>, 5, 240000, 120, 120);
