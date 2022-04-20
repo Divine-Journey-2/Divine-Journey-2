@@ -59,7 +59,7 @@
             "type": "fluid",
             "io-type": "output",
             "fluid": "lifeessence",
-            "amount": 1000
+            "amount": 8000
         },
         {
             "type": "item",
