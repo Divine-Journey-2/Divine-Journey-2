@@ -11,19 +11,20 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:rainbow_slate"
+            "item": "contenttweaker:rainbow_slate",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "botania:manaresource@14",
-            "amount": 2
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "bloodmagic:blood_shard",
-            "amount": 12
+            "amount": 1
         },
         {
             "type": "aspect",
