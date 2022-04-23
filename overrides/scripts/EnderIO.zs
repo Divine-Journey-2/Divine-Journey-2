@@ -430,12 +430,16 @@ recipes.remove(<enderio:item_material:14>);
 recipes.addShaped(<enderio:item_material:14>, [[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot:5>,<minecraft:diamond>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>]]);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:14>);
 mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:14>, <minecraft:diamond>, <liquid:pulsating_iron>, 1152, true, 60);
+recipes.addShaped(<enderio:item_material:14> * 4, [[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot:5>,<actuallyadditions:item_crystal:2>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:5>]]);
+mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:14> * 4, <actuallyadditions:item_crystal:2>, <liquid:pulsating_iron>, 1152, true, 60);
 
 # Vibrant Crystal
 recipes.remove(<enderio:item_material:15>);
 recipes.addShaped(<enderio:item_material:15>, [[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<minecraft:emerald>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>]]);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
 mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:15>, <minecraft:emerald>, <liquid:vibrant_alloy>, 1152, true, 60);
+recipes.addShaped(<enderio:item_material:15> * 4, [[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<actuallyadditions:item_crystal:4>,<enderio:item_alloy_ingot:2>],[<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>,<enderio:item_alloy_ingot:2>]]);
+mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:15> * 4, <actuallyadditions:item_crystal:4>, <liquid:vibrant_alloy>, 1152, true, 60);
 
 function addEnderIOObeliskRecipe(output as IItemStack, top_input as IItemStack, mid_input as IItemStack) {
 	recipes.remove(output);

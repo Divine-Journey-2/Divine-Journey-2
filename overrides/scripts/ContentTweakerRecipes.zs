@@ -611,12 +611,15 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:hardened_blood_droplet>, <t
 
 # Rainbow Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:rainbow_slate>, <bloodmagic:slate:4>, 5, 120000, 300, 250);
+<contenttweaker:rainbow_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Vibrant Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:vibrant_slate>, <contenttweaker:rainbow_slate>, 5, 300000, 400, 250);
+<contenttweaker:vibrant_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Perfect Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:perfect_slate>, <contenttweaker:vibrant_slate>, 5, 1000000, 500, 250);
+<contenttweaker:perfect_slate>.addTooltip("Infused stone inside of a Blood Altar.");
 
 # Simple Catalyst
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:simple_catalyst>, [<minecraft:glass_bottle>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gunpowder>,<minecraft:sugar>,<thermalfoundation:material:99>], 25, 2, 1);
@@ -1111,6 +1114,7 @@ mods.botania.ManaInfusion.addAlchemy(<contenttweaker:mystical_tablet>, <contentt
 
 # Rainbow Tablet
 recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbow_slate>,null],[<contenttweaker:mystical_tablet>,blood_orb_at_least_tier_6.reuse(),<contenttweaker:mystical_tablet>],[null,<contenttweaker:rainbow_slate>,null]]);
+mods.thaumcraft.Infusion.registerRecipe("contenttweaker:RainbowTablet", "INFUSION", <contenttweaker:rainbow_tablet> * 32, 8, [<aspect:victus> * 99, <aspect:ignis> * 99, <aspect:sol> * 99, <aspect:herba> * 99, <aspect:instrumentum> * 99, <aspect:praecantatio> * 99], <bloodmagic:blood_shard>, [<botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>]);
 
 # Abyssal Wasteland Teleporter
 <contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));

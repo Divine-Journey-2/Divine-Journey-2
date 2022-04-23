@@ -1,6 +1,7 @@
 # Author: Atricos, WaitingIdly
 
 import mods.chisel.Carving;
+import mods.aether_legacy.Enchanter;
 
 print("STARTING Atum2.zs");
 
@@ -101,7 +102,9 @@ recipes.addShapedMirrored(<atum:linen_cloth> * 2, [[null,<atum:linen_thread>,<or
 
 # Enchanted Golden Date
 recipes.remove(<atum:golden_date_enchanted>);
-<atum:golden_date_enchanted>.addTooltip(format.darkRed(format.bold("Obtained by trading with Sunspeakers.")));
+<atum:golden_date_enchanted>.addTooltip(format.darkRed(format.bold("Primarily obtained by trading with Sunspeakers.")));
+<atum:golden_date_enchanted>.addTooltip(format.red("Can also be enchanted in The Aether Altar."));
+mods.aether_legacy.Enchanter.registerEnchantment(<atum:golden_date>, <atum:golden_date_enchanted>, 100);
 
 # Emmer Flour Tooltip
 <atum:emmer_flour>.addTooltip(format.darkRed(format.italic("Right Click me on a Water source block to convert me into Emmer Dough!")));
