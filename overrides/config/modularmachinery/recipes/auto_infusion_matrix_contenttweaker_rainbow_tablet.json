@@ -23,7 +23,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "bloodmagic:blood_shard",
+            "item": "contenttweaker:plasma_core",
             "amount": 1
         },
         {
