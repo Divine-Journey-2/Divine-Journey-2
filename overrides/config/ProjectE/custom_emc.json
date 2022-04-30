@@ -1815,6 +1815,18 @@
     {
       "item": "projecte:item.pe_tome|0",
       "emc": 10000000
+    },
+    {
+      "item": "minecraft:brick|0",
+      "emc": 4
+    },
+    {
+      "item": "minecraft:brick_block|0",
+      "emc": 16
+    },
+    {
+      "item": "aether_legacy:aerogel|0",
+      "emc": 8
     }
   ]
 }

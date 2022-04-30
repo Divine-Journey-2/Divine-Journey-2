@@ -949,4 +949,24 @@ EUCrusher.add(<buildinggadgets:constructionpaste>, <buildinggadgets:construction
 mods.enderio.SagMill.addRecipe([<buildinggadgets:constructionpaste>], [1.0], <buildinggadgets:construction_chunk_dense>);
 LightningCrusher.add(<buildinggadgets:constructionpaste>, <buildinggadgets:construction_chunk_dense>);
 
+# Diamond Horse Armor + Diamond Camel Armor + Diamond Desert Wolf Armor
+AACrusher.removeRecipe(<mekanism:otherdust>);
+AACrusher.addRecipe(<mekanism:otherdust>, <minecraft:diamond>);
+AACrusher.addRecipe(<minecraft:diamond> * 4, <bno:ore_netherdiamond>);
+mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:diamond_horse_armor>);
+for a in [<minecraft:diamond_horse_armor>,<atum:camel_diamond_armor>,<atum:desert_wolf_diamond_armor>] {
+	AACrusher.addRecipe(<minecraft:diamond> * 4, a);
+	IECrusher.addRecipe(<minecraft:diamond> * 4, a, 6000);
+	EUCrusher.add(<minecraft:diamond> * 4, a);
+	mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 4], [100], a, "NONE", 6000);
+	mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, a, 6000);
+}
+
+# Diamond Gloves
+AACrusher.addRecipe(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>);
+IECrusher.addRecipe(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>, 6000);
+EUCrusher.add(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>);
+mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2], [100], <aether_legacy:diamond_gloves>, "NONE", 6000);
+mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>, 6000);
+
 print("ENDING OreProcessingAdditions.zs");

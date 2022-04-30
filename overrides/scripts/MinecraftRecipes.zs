@@ -230,17 +230,6 @@ EUCrusher.add(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 4], [100], <minecraft:golden_horse_armor>, "NONE", 6000);
 mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>, 6000);
 
-# Diamond Horse Armor
-AACrusher.removeRecipe(<mekanism:otherdust>);
-AACrusher.addRecipe(<mekanism:otherdust>, <minecraft:diamond>);
-AACrusher.addRecipe(<minecraft:diamond> * 4, <bno:ore_netherdiamond>);
-AACrusher.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>);
-IECrusher.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>, 6000);
-EUCrusher.add(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>);
-mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 4], [100], <minecraft:diamond_horse_armor>, "NONE", 6000);
-mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:diamond_horse_armor>);
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, <minecraft:diamond_horse_armor>, 6000);
-
 # Lilipad
 <minecraft:waterlily>.addTooltip(format.white(format.italic("A Resources Fisher can occasionally fish this up.")));
 

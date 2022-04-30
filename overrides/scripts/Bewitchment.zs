@@ -467,6 +467,9 @@ recipes.addShapedMirrored(<bewitchment:cold_iron_hoe>, [[<bewitchment:cold_iron_
 recipes.removeShapeless(<bewitchment:scorned_bricks>, [<ore:obsidian>,<ore:obsidian>,<ore:netherrack>,<ore:netherrack>]);
 recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>],[<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>],[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>]]);
 
+# Removing the Biome Shifting Ritual
+WitchesRitual.removeByInput(<bewitchment:boline>);
+
 # Blessed Stone
 mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 [[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>],

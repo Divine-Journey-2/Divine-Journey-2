@@ -2035,7 +2035,7 @@ mods.avaritia.Compressor.add("essence_of_opening", <contenttweaker:essence_of_op
 # Ultimate Machine Frame
 recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>],[<contenttweaker:celestial_crystal_core>,<contenttweaker:penultimate_machine_frame>,<contenttweaker:celestial_crystal_core>],[<rftools:creative_screen>,<avaritia:resource:4>,<rftools:creative_screen>]]);
 
-# Colored Light Antigelatinous Yielding (C.L.A.Y.)
+# Colored Light Adhesive Yielding (C.L.A.Y.)
 # recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_clay.json
 <contenttweaker:clay>.addTooltip(format.darkPurple(format.italic("Finally balanced!")));
 

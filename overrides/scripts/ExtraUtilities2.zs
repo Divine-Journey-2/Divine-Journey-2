@@ -459,6 +459,9 @@ recipes.addShaped(<extrautils2:compressedsand>, [[<ore:sand>,<ore:sand>,<ore:san
 recipes.removeShaped(<extrautils2:compressedgravel>);
 recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>]]);
 
+# Demon Ingot from Mystical Agriculture Essences
+recipes.addShaped(<extrautils2:ingredients:11> * 4, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>]]);
+
 # Chicken Wing Ring
 recipes.remove(<extrautils2:chickenring>);
 recipes.addShaped(<extrautils2:chickenring>, [[<contenttweaker:condensed_vis_crystal_volatus>,<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}}),<contenttweaker:condensed_vis_crystal_volatus>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]}),<thaumcraft:baubles:5>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 2 as short}]})],[null,<thaumcraft:mirrored_glass>,null]]);
