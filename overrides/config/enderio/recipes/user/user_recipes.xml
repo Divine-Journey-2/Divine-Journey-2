@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
 
-  <recipe name="Tweak: Stick from Wood" disabled="true" />
-  <recipe name="Tweak: Chest from Wood" disabled="true" />
-  <recipe name="Tweak: Wood Hopper" disabled="true" />
+  <recipe name="Tweak: Stick from Wood">
+    <disabled />
+  </recipe>
+  <recipe name="Tweak: Chest from Wood">
+    <disabled />
+  </recipe>
+  <recipe name="Tweak: Wood Hopper">
+    <disabled />
+  </recipe>
 
   <recipe name="Spawner, defaults" required="true">
     <spawning>
@@ -617,6 +623,83 @@
       <inputfluid name="cloud_seed_concentrated" multiplier="0.2"/>
       <outputfluid name="growth_infusion_liquid"/>
     </fermenting>
+  </recipe>
+
+  <recipe name="Alloy: Dark Soularium Alloy" required="true">
+    <alloying energy="32000">
+      <input name="enderio:block_alloy:6" />
+      <input name="enderio:item_alloy_ingot:7" />
+      <input name="contenttweaker:ingot_of_elevation" />
+      <output name="simplyjetpacks:metaitemmods:12" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Dark Steel" required="true">
+    <alloying energy="20000">
+      <input name="contenttweaker:energized_dark_ingot" />
+      <input name="thermalfoundation:material:160" />
+      <input name="mekanism:ingot:0" />
+      <output name="enderio:item_alloy_ingot:6" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Dark Steel, Variant">
+    <disabled />
+  </recipe>
+
+  <recipe name="Alloy: Redstone Alloy" required="true">
+    <alloying energy="10000">
+      <input name="projectred-core:resource_item:103" />
+      <input name="appliedenergistics2:material:5" />
+      <output name="enderio:item_alloy_ingot:3" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Photovoltaic Plate" required="true">
+    <alloying energy="15000">
+      <input name="enderio:item_material:38" />
+      <input name="contenttweaker:energized_dark_ingot" />
+      <input name="appliedenergistics2:material:46" />
+      <output name="enderio:item_material:3" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Endergy Crystalline Alloy" required="true">
+    <alloying energy="16000">
+      <input name="enderio:item_alloy_endergy_ingot:6" />
+      <input name="enderio:item_material:36" />
+      <input name="contenttweaker:ingot_of_elevation" />
+      <output name="enderio:item_alloy_endergy_ingot:1" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Endergy Stellar Alloy" required="true">
+    <alloying energy="100000">
+      <input name="enderio:item_alloy_endergy_ingot:1" />
+      <input name="contenttweaker:crystalline_brown_slime_ingot" />
+      <input name="botania:manaresource:5" />
+      <output name="enderio:item_alloy_endergy_ingot:3" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: Construction Alloy">
+    <disabled />
+  </recipe>
+
+  <recipe name="Chassis">
+    <disabled />
+  </recipe>
+
+  <recipe name="Enhanced Chassis">
+    <disabled />
+  </recipe>
+
+  <recipe name="Soul Chassis">
+    <disabled />
+  </recipe>
+
+  <recipe name="Death Urn">
+    <disabled />
   </recipe>
 
 </enderio:recipes>

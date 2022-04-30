@@ -447,6 +447,9 @@ mods.abyssalcraft.Crystallizer.addSingleCrystallization(<alchemistry:ingot:4>, <
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:methane>);
 mods.abyssalcraft.Crystallizer.addCrystallization(<abyssalcraft:methane>, <abyssalcraft:crystal:3> * 9, <abyssalcraft:crystal:5> * 36, 0.1);
 
+# Additional Methane recipe
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<roots:unending_bowl>, <abyssalcraft:crystal:10> * 32, 0.1);
+
 # Transmutator recipes
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:2>, <thermalfoundation:material:771>, 0.1);
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:3>, <minecraft:coal>, 0.1);

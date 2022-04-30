@@ -1,0 +1,72 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_contenttweaker_rainbow_tablet",
+    "recipeTime": 24,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1500
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:rainbow_slate",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:manaresource@14",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:plasma_core",
+            "amount": 1
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "victus",
+            "amount": 99
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 99
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sol",
+            "amount": 99
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 99
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 99
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 99
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:rainbow_tablet",
+            "amount": 32
+        }
+    ]
+}

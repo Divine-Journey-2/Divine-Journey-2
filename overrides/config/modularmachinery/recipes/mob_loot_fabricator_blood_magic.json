@@ -16,6 +16,11 @@
             "essenceamount": 500
         },
         {
+            "type": "lifeessence",
+            "io-type": "output",
+            "essenceamount": 2500
+        },
+        {
             "type": "will",
             "io-type": "output",
             "willtype": "raw",
@@ -54,7 +59,7 @@
             "type": "fluid",
             "io-type": "output",
             "fluid": "lifeessence",
-            "amount": 1000
+            "amount": 8000
         },
         {
             "type": "item",

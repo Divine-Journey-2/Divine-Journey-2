@@ -360,6 +360,9 @@ Grinder.addRecipe(<acintegration:dust:1>, <abyssalcraft:cingot>, 4);
 mods.enderio.SagMill.addRecipe([<acintegration:dust:1>], [1.0], <abyssalcraft:cingot>);
 mods.mekanism.crusher.addRecipe(<abyssalcraft:cingot>, <acintegration:dust:1>);
 
+# Dark Gem
+mods.enderio.SagMill.addRecipe([<evilcraft:dark_gem> * 2, <evilcraft:dark_gem_crushed>], [1,0.5], <ore:oreDark>, "NONE", 3600);
+
 # Crushed Dark Gem
 recipes.addShapeless(<evilcraft:dark_gem_crushed>, [<evilcraft:dark_gem>, <ore:dustPetrotheum>]);
 AACrusher.addRecipe(<evilcraft:dark_gem_crushed>, <evilcraft:dark_gem>);

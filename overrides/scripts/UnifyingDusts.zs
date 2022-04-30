@@ -5,7 +5,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.oredict.IOreDict;
 import moretweaker.lightningcraft.LightningCrusher;
-import mods.enderio.AlloySmelter;
 import mods.tconstruct.Melting;
 import mods.immersiveengineering.Crusher as IECrusher;
 import mods.astralsorcery.Grindstone;

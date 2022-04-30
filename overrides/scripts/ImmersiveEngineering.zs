@@ -1,4 +1,4 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
 
 import mods.immersiveengineering.MetalPress;
 import mods.thermalexpansion.Transposer;
@@ -78,33 +78,28 @@ mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_woo
 recipes.remove(<immersiveengineering:wooden_device0:2>);
 recipes.addShaped(<immersiveengineering:wooden_device0:2>, [[<bibliocraft:paintingpress>,null,null],[<ore:plankTreatedWood>,<ore:plankTreatedWood>,<ore:plankTreatedWood>],[<ore:fenceTreatedWood>,<ore:workbench>,<ore:fenceTreatedWood>]]);
 
+# Wires
+function wires_function(input as IItemStack, output as IItemStack) {
+	recipes.remove(output);
+	recipes.addShapeless(output, [input, <minecraft:shears>.anyDamage().transformDamage(1)]);
+	recipes.addShapeless(output, [input, <immersiveengineering:tool:1>]);
+	mods.immersiveengineering.MetalPress.removeRecipe(output);
+	mods.immersiveengineering.MetalPress.addRecipe(output * 2, input, <immersiveengineering:mold:4>, 3000);
+    mods.thermalexpansion.Sawmill.addRecipe(output * 2, input, 4000);
+    mods.mekanism.sawmill.addRecipe(input, output * 2);
+}
+
 # Copper Wire
-recipes.remove(<immersiveengineering:material:20>);
-recipes.addShapeless(<immersiveengineering:material:20>, [<thermalfoundation:material:320>,<minecraft:shears>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<immersiveengineering:material:20>, [<thermalfoundation:material:320>,<immersiveengineering:tool:1>]);
-mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:material:20>);
-mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:20> * 2, <thermalfoundation:material:320>, <immersiveengineering:mold:4>, 3000);
+wires_function(<thermalfoundation:material:320>, <immersiveengineering:material:20>);
 
 # Electrum Wire
-recipes.remove(<immersiveengineering:material:21>);
-recipes.addShapeless(<immersiveengineering:material:21>, [<thermalfoundation:material:353>,<minecraft:shears>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<immersiveengineering:material:21>, [<thermalfoundation:material:353>,<immersiveengineering:tool:1>]);
-mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:material:21>);
-mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:21> * 2, <thermalfoundation:material:353>, <immersiveengineering:mold:4>, 3000);
+wires_function(<thermalfoundation:material:353>, <immersiveengineering:material:21>);
 
 # Aluminium Wire
-recipes.remove(<immersiveengineering:material:22>);
-recipes.addShapeless(<immersiveengineering:material:22>, [<thermalfoundation:material:324>,<minecraft:shears>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<immersiveengineering:material:22>, [<thermalfoundation:material:324>,<immersiveengineering:tool:1>]);
-mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:material:22>);
-mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:22> * 2, <thermalfoundation:material:324>, <immersiveengineering:mold:4>, 3000);
+wires_function(<thermalfoundation:material:324>, <immersiveengineering:material:22>);
 
 # Steel Wire
-recipes.remove(<immersiveengineering:material:23>);
-recipes.addShapeless(<immersiveengineering:material:23>, [<thermalfoundation:material:352>,<minecraft:shears>.anyDamage().transformDamage(1)]);
-recipes.addShapeless(<immersiveengineering:material:23>, [<thermalfoundation:material:352>,<immersiveengineering:tool:1>]);
-mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:material:23>);
-mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:23> * 2, <thermalfoundation:material:352>, <immersiveengineering:mold:4>, 3000);
+wires_function(<thermalfoundation:material:352>, <immersiveengineering:material:23>);
 
 # Blueprints
 recipes.remove(<immersiveengineering:blueprint>);

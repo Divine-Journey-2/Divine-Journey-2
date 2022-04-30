@@ -7,7 +7,7 @@
             "type": "fluid",
             "io-type": "input",
             "fluid": "experience",
-            "amount": 64000
+            "amount": 2048000
         },
         {
             "type": "energy",
