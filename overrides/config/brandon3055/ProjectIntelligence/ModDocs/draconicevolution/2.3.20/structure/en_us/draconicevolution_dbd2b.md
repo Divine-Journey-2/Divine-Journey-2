@@ -67,7 +67,7 @@ Enchanted diamond armor? Ha! You would probably have better luck wrapping yourse
 §table{width:100%,colour:0x0,render_cells:false} 
 <table column_layout="1*,90">
 <tr padding="2,0,1,3" align="middle">
-	<td>§colour[0x088700]§link[http://partners.creeper.host/r/brandon30557nc]{tooltip:"Use this link to get a 15% discount on your first month!",alt_text:I am partnered with Creeper Host. If you need to rent a server at a fair price, I suggest you check them out!}</td>
+	<td>§colour[0x088700]§link[http://partners.creeper.host/r/brandon30557nc]{tooltip:"Use this link to get a 15% discount on your first month!",alt_text:"I am partnered with Creeper Host. If you need to rent a server at a fair price, I suggest you check them out!"}</td>
 	<td>§img[http://ss.brandon3055.com/0f927]{tooltip:"Use this link to get a 15% discount on your first month!",width:100%,link_to:"http://partners.creeper.host/r/brandon30557nc"}</td>
 </tr>
 </table>

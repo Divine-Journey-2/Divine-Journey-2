@@ -31,4 +31,14 @@ recipes.addShapeless(<minecraft:gold_nugget>, [<betternether:cincinnasite>]);
 recipes.remove(<betternether:nether_brick_tile_large>);
 recipes.addShaped(<betternether:nether_brick_tile_large> * 4, [[<minecraft:nether_brick>,<minecraft:nether_brick>],[<minecraft:nether_brick>,<minecraft:nether_brick>]]);
 
+# Nether Reeds from Reeds Block, Reeds Button change to avoid conflict
+recipes.remove(<betternether:reeds_button>);
+recipes.addShapeless(<betternether:nether_reed> * 9, [<betternether:reeds_block>]);
+recipes.addShapeless(<betternether:reeds_button>, [<minecraft:wooden_button>,<betternether:nether_reed>]);
+recipes.addShapeless(<betternether:reeds_button>, [<quark:spruce_button>,<betternether:nether_reed>]);
+recipes.addShapeless(<betternether:reeds_button>, [<quark:birch_button>,<betternether:nether_reed>]);
+recipes.addShapeless(<betternether:reeds_button>, [<quark:jungle_button>,<betternether:nether_reed>]);
+recipes.addShapeless(<betternether:reeds_button>, [<quark:acacia_button>,<betternether:nether_reed>]);
+recipes.addShapeless(<betternether:reeds_button>, [<quark:dark_oak_button>,<betternether:nether_reed>]);
+
 print("ENDING BetterNether.zs");
