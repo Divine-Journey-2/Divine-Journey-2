@@ -12,6 +12,7 @@ import moretweaker.bewitchment.WitchesRitual;
 import moretweaker.bewitchment.FrostFire;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import crafttweaker.event.PlayerInteractEntityEvent;
 
 print("STARTING Bewitchment.zs");
 
@@ -468,7 +469,8 @@ recipes.removeShapeless(<bewitchment:scorned_bricks>, [<ore:obsidian>,<ore:obsid
 recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>],[<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>],[<extrautils2:compressednetherrack>,<contenttweaker:compressed_obsidian1>,<extrautils2:compressednetherrack>]]);
 
 # Removing the Biome Shifting Ritual
-WitchesRitual.removeByInput(<bewitchment:boline>);
+#WitchesRitual.removeByInput(<bewitchment:boline>);
+# Nevermind, this crashes the Bewitchment guide book...
 
 # Blessed Stone
 mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
@@ -481,5 +483,13 @@ mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 [<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
 [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
 [<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>]]);
+
+# Bewitchment Demon Trading disable
+events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent){
+    if(e.target.definition.id == "bewitchment:demon" || e.target.definition.id == "bewitchment:demoness") {
+		e.cancel();
+		#e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
+    }
+});
 
 print("ENDING Bewitchment.zs");

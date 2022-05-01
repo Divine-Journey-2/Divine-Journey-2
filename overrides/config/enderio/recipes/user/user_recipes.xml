@@ -686,6 +686,10 @@
     <disabled />
   </recipe>
 
+  <recipe name="Sagmill: oreMithril Ore">
+    <disabled />
+  </recipe>
+
   <recipe name="Chassis">
     <disabled />
   </recipe>

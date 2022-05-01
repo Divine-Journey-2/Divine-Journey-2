@@ -90,7 +90,9 @@ mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:smoldering_tar> * 200,
 recipes.addShapeless(<thermalfoundation:material:1028>, [<contenttweaker:rf_powder>,<thermalfoundation:material:1024>,<thermalfoundation:material:1025>,<thermalfoundation:material:1026>,<thermalfoundation:material:1027>]);
 
 # Mithril Ingot
+mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:136>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:1028>, null, 200, 512, [<contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:72>, null, 100, 512);
 mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalfoundation:material:1028>, <contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>], 24000);
 
 # Regular Hardened Glass recipes should only require regular Hardened Glass, otherwise it's impossible to figure out which one you need from JEI

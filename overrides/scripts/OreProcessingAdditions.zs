@@ -20,6 +20,7 @@ import mods.mekanism.enrichment;
 import mods.mekanism.purification;
 import mods.mekanism.chemical.injection;
 import mods.mekanism.chemical.dissolution;
+import mods.integrateddynamics.MechanicalSqueezer;
 
 print("STARTING OreProcessingAdditions.zs");
 
@@ -684,7 +685,7 @@ mods.enderio.SagMill.addRecipe([<thermalfoundation:material:66> * 2,<thermalfoun
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:64> * 2,<thermalfoundation:material:1>], [1.0,0.2], <ore:oreCopper>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:dye:4> * 8,<minecraft:dye:4>], [1.0,0.5], <ore:oreLapis>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:0> * 2,<thermalfoundation:material:65> * 2,<thermalfoundation:material:69> * 2], [1.0,0.15,0.1], <ore:oreIron>, "CHANCE_ONLY");
-mods.enderio.SagMill.addRecipe([<thermalfoundation:material:72> * 2], [1.0], <ore:oreMithril>, "CHANCE_ONLY");
+#mods.enderio.SagMill.addRecipe([<thermalfoundation:material:72> * 2], [1.0], <ore:oreMithril>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2, <minecraft:diamond>, <thermalfoundation:material:768>], [1.0, 0.25, 0.05], <ore:oreDiamond>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<draconicevolution:draconium_dust> * 3,<draconicevolution:draconium_dust> * 2,<draconicevolution:draconium_dust> * 2], [1.0, 0.4, 0.15], <ore:oreDraconium>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<minecraft:coal> * 3, <thermalfoundation:material:768>, <minecraft:diamond>], [1.0, 0.6, 0.001], <ore:oreCoal>, "CHANCE_ONLY");
@@ -706,7 +707,7 @@ val UBQuartzOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_quartz:*>,<u
 val UBAmberOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:metamorphic_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:sedimentary_stone_thaumcraft_ore_amber:*>] as IItemStack[];
 val UBAluminumOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.aluminum.name:*>] as IItemStack[];
 val UBLapisOres = [<undergroundbiomes:igneous_stone_lapis_ore:*>,<undergroundbiomes:metamorphic_stone_lapis_ore:*>,<undergroundbiomes:sedimentary_stone_lapis_ore:*>] as IItemStack[];
-val UBMithrilOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name:*>] as IItemStack[];
+#val UBMithrilOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name:*>] as IItemStack[];
 val UBRedstoneOres = [<undergroundbiomes:igneous_stone_redstone_ore:*>,<undergroundbiomes:metamorphic_stone_redstone_ore:*>,<undergroundbiomes:sedimentary_stone_redstone_ore:*>] as IItemStack[];
 val UBPlatinumOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.platinum.name:*>] as IItemStack[];
 val UBDimensionalShardOres = [<undergroundbiomes:igneous_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:metamorphic_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:sedimentary_stone_rftools_dimensional_shard_ore:*>] as IItemStack[];
@@ -757,9 +758,9 @@ for o in UBAluminumOres {
 for o in UBLapisOres {
 	mods.mekanism.enrichment.addRecipe(o, <minecraft:dye:4> * 12);
 }
-for o in UBMithrilOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
-}
+#for o in UBMithrilOres {
+#	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
+#}
 for o in UBRedstoneOres {
 	mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
 }
@@ -954,7 +955,8 @@ AACrusher.removeRecipe(<mekanism:otherdust>);
 AACrusher.addRecipe(<mekanism:otherdust>, <minecraft:diamond>);
 AACrusher.addRecipe(<minecraft:diamond> * 4, <bno:ore_netherdiamond>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:diamond_horse_armor>);
-for a in [<minecraft:diamond_horse_armor>,<atum:camel_diamond_armor>,<atum:desert_wolf_diamond_armor>] {
+val crushableDiamondArmors = [<minecraft:diamond_horse_armor>,<atum:camel_diamond_armor>,<atum:desert_wolf_diamond_armor>] as IItemStack[];
+for a in crushableDiamondArmors {
 	AACrusher.addRecipe(<minecraft:diamond> * 4, a);
 	IECrusher.addRecipe(<minecraft:diamond> * 4, a, 6000);
 	EUCrusher.add(<minecraft:diamond> * 4, a);
@@ -968,5 +970,37 @@ IECrusher.addRecipe(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>, 600
 EUCrusher.add(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>);
 mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 2], [100], <aether_legacy:diamond_gloves>, "NONE", 6000);
 mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 2, <aether_legacy:diamond_gloves>, 6000);
+
+# Removing Mithril Ore (Mithril Ingots are gotten through crafting)
+recipes.removeShapeless(<thermalfoundation:material:72>, [<ore:oreMithril>,<thermalfoundation:material:1027>]);
+recipes.removeShapeless(<thermalfoundation:material:136>, [<ore:oreMithril>,<thermalfoundation:material:1024>]);
+recipes.removeShapeless(<thermalfoundation:material:136>, [<ore:oreMithril>,<thermalfoundation:material:1024>,<thermalfoundation:material:1027>]);
+furnace.remove(<thermalfoundation:material:136>);
+furnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:72>);
+mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:72>);
+mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:72>, <thermalfoundation:material:136>);
+for mithrilOre in <ore:oreMithril>.items {
+	mods.thermalexpansion.Pulverizer.removeRecipe(mithrilOre);
+	#Squeezer.removeRecipe(mithrilOre, <thermalfoundation:material:72>, 1.0, <thermalfoundation:material:72>, 0.75);
+	#MechanicalSqueezer.removeRecipe(mithrilOre, <thermalfoundation:material:72> * 2, 1.0, <thermalfoundation:material:72>, 0.5);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, mithrilOre);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, mithrilOre);
+	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, mithrilOre);
+	mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, mithrilOre);
+}
+#Squeezer.removeRecipe(<thermalfoundation:material:72>); # removed in config/intergrateddynamics/_override/squeezer_ores.xml
+
+mods.integrateddynamics.MechanicalSqueezer.removeRecipesWithOutput(<thermalfoundation:material:72> * 2, 1.0, <thermalfoundation:material:72>, 0.5);
+#MechanicalSqueezer.removeRecipe(<thermalfoundation:material:72>);
+mods.mekanism.enrichment.removeRecipe(<thermalfoundation:ore:8>);
+IECrusher.removeRecipe(<thermalfoundation:material:72>);
+IECrusher.addRecipe(<thermalfoundation:material:72>, <thermalfoundation:material:136>, 2000);
+mods.astralsorcery.Grindstone.removeRecipe(<thermalfoundation:material:72>);
+EUCrusher.remove(<thermalfoundation:material:72>);
+EUCrusher.remove(<thermalfoundation:material:72> * 2);
+EUCrusher.remove(<thermalfoundation:ore:8>);
+#EUCrusher.add(<thermalfoundation:material:72>, <thermalfoundation:material:136>);
+LightningCrusher.remove(<thermalfoundation:material:72>);
+LightningCrusher.add(<thermalfoundation:material:72>, <thermalfoundation:material:136>);
 
 print("ENDING OreProcessingAdditions.zs");

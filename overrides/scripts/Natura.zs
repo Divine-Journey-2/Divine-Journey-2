@@ -104,4 +104,7 @@ game.setLocalization("ac.ritual.bloodwood_sapling_creation", "Bloodwood Sapling 
 game.setLocalization("ac.ritual.bloodwood_sapling_creation.desc", "Having trouble finding Bloodwood Saplings? Try dark magic!");
 addNaturaSaplingAbyCreationTooltip2(<natura:nether_sapling2:0>);
 
+# Imp Leather from Mystical Agriculture Essences
+recipes.addShaped(<natura:materials:6> * 4, [[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>]]);
+
 print("ENDING Natura.zs");

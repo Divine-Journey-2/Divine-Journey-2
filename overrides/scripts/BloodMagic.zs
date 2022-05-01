@@ -1,4 +1,4 @@
-# Author: Atricos
+# Author: Atricos, ByThePowerOfScience a.k.a Haiku
 
 import mods.bloodmagic.AlchemyTable;
 import mods.bloodmagic.BloodAltar;
@@ -9,6 +9,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
+import mods.dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
 
 print("STARTING BloodMagic.zs");
 
@@ -605,5 +606,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:sacrificial_dagger:1>.
 [null, <alchemistry:ingot:112>, <bloodmagic:activation_crystal:2>, null, null],
 [null, <bloodmagic:sacrificial_dagger>, <alchemistry:ingot:112>, null, null],
 [<alchemistry:ingot:110>, null, null, <alchemistry:ingot:112>, null]]);
+
+# Speeding up the Hellfire Forge
+DJ2AddonsHellFireForge.setCraftingTicksRequired(10);
+
+# Speeding up Will Transfer rate
+DJ2AddonsHellFireForge.setWorldWillTransferRate(10);
+
+# Crafting with all Will types
+DJ2AddonsHellFireForge.setCraftWithAllWillTypes(true);
 
 print("ENDING BloodMagic.zs");

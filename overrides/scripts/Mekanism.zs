@@ -660,4 +660,65 @@ mods.extendedcrafting.TableCrafting.addShaped(<mekanism:basicblock:6>.withTag({t
 [<alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>], 
 [<alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>]]);
 
+# Clear Mekanism machines via crafting
+recipes.addHiddenShapeless("mek_0_clear", <mekanism:machineblock:0>, [<mekanism:machineblock:0>]);
+recipes.addHiddenShapeless("mek_1_clear", <mekanism:machineblock:1>, [<mekanism:machineblock:1>]);
+recipes.addHiddenShapeless("mek_3_clear", <mekanism:machineblock:3>, [<mekanism:machineblock:3>]);
+recipes.addHiddenShapeless("mek_4_clear", <mekanism:machineblock:4>, [<mekanism:machineblock:4>]);
+recipes.addHiddenShapeless("mek_5_0_clear", <mekanism:machineblock:5>.withTag({recipeType: 0}), [<mekanism:machineblock:5>.withTag({recipeType: 0})]);
+recipes.addHiddenShapeless("mek_5_1_clear", <mekanism:machineblock:5>.withTag({recipeType: 1}), [<mekanism:machineblock:5>.withTag({recipeType: 1})]);
+recipes.addHiddenShapeless("mek_5_2_clear", <mekanism:machineblock:5>.withTag({recipeType: 2}), [<mekanism:machineblock:5>.withTag({recipeType: 2})]);
+recipes.addHiddenShapeless("mek_5_3_clear", <mekanism:machineblock:5>.withTag({recipeType: 3}), [<mekanism:machineblock:5>.withTag({recipeType: 3})]);
+recipes.addHiddenShapeless("mek_5_5_clear", <mekanism:machineblock:5>.withTag({recipeType: 5}), [<mekanism:machineblock:5>.withTag({recipeType: 5})]);
+recipes.addHiddenShapeless("mek_5_6_clear", <mekanism:machineblock:5>.withTag({recipeType: 6}), [<mekanism:machineblock:5>.withTag({recipeType: 6})]);
+recipes.addHiddenShapeless("mek_5_7_clear", <mekanism:machineblock:5>.withTag({recipeType: 7}), [<mekanism:machineblock:5>.withTag({recipeType: 7})]);
+recipes.addHiddenShapeless("mek_5_8_clear", <mekanism:machineblock:5>.withTag({recipeType: 8}), [<mekanism:machineblock:5>.withTag({recipeType: 8})]);
+recipes.addHiddenShapeless("mek_6_0_clear", <mekanism:machineblock:6>.withTag({recipeType: 0}), [<mekanism:machineblock:6>.withTag({recipeType: 0})]);
+recipes.addHiddenShapeless("mek_6_1_clear", <mekanism:machineblock:6>.withTag({recipeType: 1}), [<mekanism:machineblock:6>.withTag({recipeType: 1})]);
+recipes.addHiddenShapeless("mek_6_2_clear", <mekanism:machineblock:6>.withTag({recipeType: 2}), [<mekanism:machineblock:6>.withTag({recipeType: 2})]);
+recipes.addHiddenShapeless("mek_6_3_clear", <mekanism:machineblock:6>.withTag({recipeType: 3}), [<mekanism:machineblock:6>.withTag({recipeType: 3})]);
+recipes.addHiddenShapeless("mek_6_5_clear", <mekanism:machineblock:6>.withTag({recipeType: 5}), [<mekanism:machineblock:6>.withTag({recipeType: 5})]);
+recipes.addHiddenShapeless("mek_6_6_clear", <mekanism:machineblock:6>.withTag({recipeType: 6}), [<mekanism:machineblock:6>.withTag({recipeType: 6})]);
+recipes.addHiddenShapeless("mek_6_7_clear", <mekanism:machineblock:6>.withTag({recipeType: 7}), [<mekanism:machineblock:6>.withTag({recipeType: 7})]);
+recipes.addHiddenShapeless("mek_6_8_clear", <mekanism:machineblock:6>.withTag({recipeType: 8}), [<mekanism:machineblock:6>.withTag({recipeType: 8})]);
+recipes.addHiddenShapeless("mek_7_0_clear", <mekanism:machineblock:7>.withTag({recipeType: 0}), [<mekanism:machineblock:7>.withTag({recipeType: 0})]);
+recipes.addHiddenShapeless("mek_7_1_clear", <mekanism:machineblock:7>.withTag({recipeType: 1}), [<mekanism:machineblock:7>.withTag({recipeType: 1})]);
+recipes.addHiddenShapeless("mek_7_2_clear", <mekanism:machineblock:7>.withTag({recipeType: 2}), [<mekanism:machineblock:7>.withTag({recipeType: 2})]);
+recipes.addHiddenShapeless("mek_7_3_clear", <mekanism:machineblock:7>.withTag({recipeType: 3}), [<mekanism:machineblock:7>.withTag({recipeType: 3})]);
+recipes.addHiddenShapeless("mek_7_5_clear", <mekanism:machineblock:7>.withTag({recipeType: 5}), [<mekanism:machineblock:7>.withTag({recipeType: 5})]);
+recipes.addHiddenShapeless("mek_7_6_clear", <mekanism:machineblock:7>.withTag({recipeType: 6}), [<mekanism:machineblock:7>.withTag({recipeType: 6})]);
+recipes.addHiddenShapeless("mek_7_7_clear", <mekanism:machineblock:7>.withTag({recipeType: 7}), [<mekanism:machineblock:7>.withTag({recipeType: 7})]);
+recipes.addHiddenShapeless("mek_7_8_clear", <mekanism:machineblock:7>.withTag({recipeType: 8}), [<mekanism:machineblock:7>.withTag({recipeType: 8})]);
+recipes.addHiddenShapeless("mek_8_clear", <mekanism:machineblock:8>, [<mekanism:machineblock:8>]);
+recipes.addHiddenShapeless("mek_9_clear", <mekanism:machineblock:9>, [<mekanism:machineblock:9>]);
+recipes.addHiddenShapeless("mek_10_clear", <mekanism:machineblock:10>, [<mekanism:machineblock:10>]);
+recipes.addHiddenShapeless("mek_12_clear", <mekanism:machineblock:12>, [<mekanism:machineblock:12>]);
+recipes.addHiddenShapeless("mek2_0_clear", <mekanism:machineblock2:0>, [<mekanism:machineblock2:0>]);
+recipes.addHiddenShapeless("mek2_1_clear", <mekanism:machineblock2:1>, [<mekanism:machineblock2:1>]);
+recipes.addHiddenShapeless("mek2_2_clear", <mekanism:machineblock2:2>, [<mekanism:machineblock2:2>]);
+recipes.addHiddenShapeless("mek2_3_clear", <mekanism:machineblock2:3>, [<mekanism:machineblock2:3>]);
+recipes.addHiddenShapeless("mek2_4_clear", <mekanism:machineblock2:4>, [<mekanism:machineblock2:4>]);
+recipes.addHiddenShapeless("mek2_5_clear", <mekanism:machineblock2:5>, [<mekanism:machineblock2:5>]);
+recipes.addHiddenShapeless("mek2_6_clear", <mekanism:machineblock2:6>, [<mekanism:machineblock2:6>]);
+recipes.addHiddenShapeless("mek2_7_clear", <mekanism:machineblock2:7>, [<mekanism:machineblock2:7>]);
+recipes.addHiddenShapeless("mek2_8_clear", <mekanism:machineblock2:8>, [<mekanism:machineblock2:8>]);
+recipes.addHiddenShapeless("mek2_9_clear", <mekanism:machineblock2:9>, [<mekanism:machineblock2:9>]);
+recipes.addHiddenShapeless("mek2_10_clear", <mekanism:machineblock2:10>, [<mekanism:machineblock2:10>]);
+recipes.addHiddenShapeless("mek2_12_clear", <mekanism:machineblock2:12>, [<mekanism:machineblock2:12>]);
+recipes.addHiddenShapeless("mek2_13_clear", <mekanism:machineblock2:13>, [<mekanism:machineblock2:13>]);
+recipes.addHiddenShapeless("mek2_14_clear", <mekanism:machineblock2:14>, [<mekanism:machineblock2:14>]);
+recipes.addHiddenShapeless("mek2_15_clear", <mekanism:machineblock2:15>, [<mekanism:machineblock2:15>]);
+recipes.addHiddenShapeless("mek3_0_clear", <mekanism:machineblock3:0>, [<mekanism:machineblock3:0>]);
+recipes.addHiddenShapeless("mek3_1_clear", <mekanism:machineblock3:1>, [<mekanism:machineblock3:1>]);
+recipes.addHiddenShapeless("mek3_3_clear", <mekanism:machineblock3:3>, [<mekanism:machineblock3:3>]);
+recipes.addHiddenShapeless("mek3_4_clear", <mekanism:machineblock3:4>, [<mekanism:machineblock3:4>]);
+recipes.addHiddenShapeless("mek3_5_clear", <mekanism:machineblock3:5>, [<mekanism:machineblock3:5>]);
+recipes.addHiddenShapeless("mek3_6_clear", <mekanism:machineblock3:6>, [<mekanism:machineblock3:6>]);
+
+# Dynamic Tank warning tooltip
+<mekanism:basicblock:9>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Sometimes the Dynamic Tank can FORGET"));
+<mekanism:basicblock:9>.addTooltip(format.white("its liquid. NOT recommended to craft / use."));
+<mekanism:basicblock:11>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Sometimes the Dynamic Tank can FORGET"));
+<mekanism:basicblock:11>.addTooltip(format.white("its liquid. NOT recommended to craft / use."));
+
 print("ENDING Mekanism.zs");

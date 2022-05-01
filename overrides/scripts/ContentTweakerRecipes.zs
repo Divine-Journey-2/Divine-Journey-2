@@ -1100,7 +1100,7 @@ mods.botania.RuneAltar.addRecipe(<contenttweaker:rune_of_deception>, [<contenttw
 #<ore:runeDeceptionB>.add(<contenttweaker:rune_of_deception>);
 
 # Purified Tablet
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_tablet>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<contenttweaker:rune_of_sloth>], 60000, 400, 5);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:purified_tablet>, [<bloodmagic:slate:4>,<bloodmagic:blood_shard>,<bloodmagic:blood_shard>,<contenttweaker:clean_runic_plate>,<contenttweaker:clean_runic_plate>,<contenttweaker:rune_of_sloth>], 60000, 20, 5);
 
 # Hyper Diamond Block
 recipes.addShaped(<contenttweaker:hyper_diamond_block>, [[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>],[<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>,<quantumflux:craftingpiece:6>]]);
@@ -1657,7 +1657,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thermal_sing
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:mixed_thermal_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:19>,<extendedcrafting:singularity:27>,<extendedcrafting:singularity:28>,<extendedcrafting:singularity:26>,<extendedcrafting:singularity:24>,<extendedcrafting:singularity:48>,<extendedcrafting:singularity:49>,<extendedcrafting:singularity:50>,<extendedcrafting:singularity:29>]);
 
 # Tinkers Singularity
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:tinkers_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:64>,<extendedcrafting:singularity:65>,<extendedcrafting:singularity:66>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:tinkers_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:159>,<extendedcrafting:singularity:64>,<extendedcrafting:singularity:65>,<extendedcrafting:singularity:66>]);
 
 # EnderIO Singularity
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:enderio_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:119>,<extendedcrafting:singularity_custom:103>,<extendedcrafting:singularity_custom:104>,<extendedcrafting:singularity_custom:105>,<extendedcrafting:singularity_custom:106>,<extendedcrafting:singularity_custom:107>,<extendedcrafting:singularity_custom:108>,<extendedcrafting:singularity_custom:109>,<extendedcrafting:singularity_custom:110>]);

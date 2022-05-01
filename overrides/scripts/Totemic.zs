@@ -43,6 +43,9 @@ recipes.addShaped(<totemic:rattle>, [[null,<minecraft:redstone_block>,<minecraft
 recipes.remove(<totemic:eagle_bone_whistle>);
 recipes.addShaped(<totemic:eagle_bone_whistle>, [[null,<ore:string>,<ore:ingotOsmium>],[<ore:string>,<totemic:eagle_drops>,<totemic:eagle_drops:1>],[<totemic:eagle_drops>,<totemic:eagle_drops:1>,null]]);
 
+# Buffalo Hide from Mystical Agriculture Essences
+recipes.addShaped(<totemic:buffalo_items> * 4, [[null,<mysticalagriculture:cow_essence>,null],[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>],[null,<mysticalagriculture:cow_essence>,null]]);
+
 # Baykok's Bow Tooltip
 <totemic:baykok_bow>.addTooltip(format.red("Uses up 1 durability point per craft."));
 
