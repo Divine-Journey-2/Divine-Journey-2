@@ -2,6 +2,11 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 /bq_admin default load
 (This has to only be done once in multiplayer, by an admin.)
 
+Version 2.14.1:
+
+- Updated Divine Journey 2 Addons from 1.0 to 1.0.1
+- Fixed missing resources.
+
 Version 2.14.0:
 
 Mod additions:
