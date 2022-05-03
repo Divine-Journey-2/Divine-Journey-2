@@ -486,10 +486,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 
 # Bewitchment Demon Trading disable
 events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent){
-    if(e.target.definition.id == "bewitchment:demon" || e.target.definition.id == "bewitchment:demoness") {
-		e.cancel();
-		#e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
-    }
+	if(e.target has "definition") {
+		if(e.target.definition has "id") {
+		    if(e.target.definition.id == "bewitchment:demon" || e.target.definition.id == "bewitchment:demoness") {
+				e.cancel();
+				#e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
+		    }
+		}
+	}
 });
 
 print("ENDING Bewitchment.zs");
