@@ -486,8 +486,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 
 # Bewitchment Demon Trading disable
 events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent){
-	if(e.target has "definition") {
-		if(e.target.definition has "id") {
+	if(!isNull(e.target.definition)) {
+		if(!isNull(e.target.definition.id)) {
 		    if(e.target.definition.id == "bewitchment:demon" || e.target.definition.id == "bewitchment:demoness") {
 				e.cancel();
 				#e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
@@ -495,5 +495,6 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent){
 		}
 	}
 });
+# maybe needed: IWorld.isRemote, returns True on client
 
 print("ENDING Bewitchment.zs");
