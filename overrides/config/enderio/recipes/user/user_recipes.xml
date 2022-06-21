@@ -706,4 +706,26 @@
     <disabled />
   </recipe>
 
+  <recipe name="Soul Binder: Reanimation" required="true">
+    <soulbinding energy="100000" levels="4">
+      <input name="ZOMBIE_CONTROLLER" />
+      <soul name="minecraft:zombie" />
+      <soul name="minecraft:zombie_villager" />
+      <soul name="minecraft:husk" />
+      <soul name="abyssalcraft:abyssalzombie" />
+      <soul name="galacticraftcore:evolved_zombie" />
+      <soul name="thaumcraft:brainyzombie" />
+      <soul name="thaumcraft:giantbrainyzombie" />
+      <output name="FRANKEN_ZOMBIE" />
+    </soulbinding>
+  </recipe>
+
+  <recipe name="Soul Binder: Attractor Crystal" required="true">
+    <soulbinding energy="100000" levels="4">
+      <input name="item:enderio:item_material:18" />
+      <soul name="divinerpg:scorcher" />
+      <output name="ATTRACTOR_CRYSTAL" />
+    </soulbinding>
+  </recipe>
+
 </enderio:recipes>
