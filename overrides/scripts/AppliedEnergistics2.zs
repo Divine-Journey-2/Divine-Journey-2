@@ -353,11 +353,11 @@ recipes.addShaped(<appliedenergistics2:material:32>, [[<alchemistry:ingot:3>,<ap
 
 # 16^3 Spatial Component
 recipes.remove(<appliedenergistics2:material:33>);
-recipes.addShaped(<appliedenergistics2:material:33>, [[<alchemistry:ingot:3>,<appliedenergistics2:material:32>,<alchemistry:ingot:3>],[<appliedenergistics2:material:32>,<contenttweaker:clearance_processor>,<appliedenergistics2:material:32>],[<alchemistry:ingot:3>,<appliedenergistics2:material:32>,<alchemistry:ingot:3>]]);
+recipes.addShaped(<appliedenergistics2:material:33>, [[<alchemistry:ingot:3>,<appliedenergistics2:material:32>,<alchemistry:ingot:3>],[<appliedenergistics2:material:32>,<contenttweaker:methodology_processor>,<appliedenergistics2:material:32>],[<alchemistry:ingot:3>,<appliedenergistics2:material:32>,<alchemistry:ingot:3>]]);
 
 # 128^3 Spatial Component
 recipes.remove(<appliedenergistics2:material:34>);
-recipes.addShaped(<appliedenergistics2:material:34>, [[<alchemistry:ingot:3>,<appliedenergistics2:material:33>,<alchemistry:ingot:3>],[<appliedenergistics2:material:33>,<contenttweaker:scheduling_processor>,<appliedenergistics2:material:33>],[<alchemistry:ingot:3>,<appliedenergistics2:material:33>,<alchemistry:ingot:3>]]);
+recipes.addShaped(<appliedenergistics2:material:34>, [[<alchemistry:ingot:3>,<appliedenergistics2:material:33>,<alchemistry:ingot:3>],[<appliedenergistics2:material:33>,<contenttweaker:methodology_processor>,<appliedenergistics2:material:33>],[<alchemistry:ingot:3>,<appliedenergistics2:material:33>,<alchemistry:ingot:3>]]);
 
 # Spatial IO Port
 recipes.remove(<appliedenergistics2:spatial_io_port>);
@@ -410,24 +410,24 @@ recipes.addShaped(<appliedenergistics2:part:76>, [[<appliedenergistics2:part:56>
 
 # Creative Energy Cell
 mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_energy_cell>,
-[[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
-[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
-[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <solarflux:solar_panel_chaotic>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <draconicevolution:draconium_capacitor:2>, <projecte:item.pe_klein_star:5>, <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <enderio:block_cap_bank>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>], 
-[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>], 
+[[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>],
+[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>],
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <solarflux:solar_panel_chaotic>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <draconicevolution:draconium_capacitor:2>, <projecte:item.pe_klein_star:5>, <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <enderio:block_cap_bank>, <appliedenergistics2:dense_energy_cell>, <appliedenergistics2:dense_energy_cell>, <contenttweaker:white_matter>],
+[<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>],
 [<extendedcrafting:storage>, <extendedcrafting:storage>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <extendedcrafting:storage>, <extendedcrafting:storage>]]);
 
 # Creative ME Storage Cell
 mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_storage_cell>.withTag({}),
-[[<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>], 
-[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>], 
-[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>], 
-[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:58>], 
-[<alchemistry:ingot:58>, <extracells:storage.component:10>, <extracells:storage.component:17>, <thaumicenergistics:essentia_component_64k>, <erebus:wand_of_animation>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:17>, <extracells:storage.component:10>, <alchemistry:ingot:58>], 
-[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:58>], 
-[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>], 
-[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>], 
+[[<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>],
+[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>],
+[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>],
+[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:58>],
+[<alchemistry:ingot:58>, <extracells:storage.component:10>, <extracells:storage.component:17>, <thaumicenergistics:essentia_component_64k>, <erebus:wand_of_animation>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:17>, <extracells:storage.component:10>, <alchemistry:ingot:58>],
+[<alchemistry:ingot:58>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:3>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <thaumicenergistics:essentia_component_64k>, <extracells:storage.component:3>, <appliedenergistics2:creative_energy_cell>, <alchemistry:ingot:58>],
+[<alchemistry:ingot:69>, <contenttweaker:essence_of_space>, <extracells:storage.component:3>, <extracells:storage.component:3>, <extracells:storage.component:17>, <extracells:storage.component:3>, <extracells:storage.component:3>, <contenttweaker:essence_of_space>, <alchemistry:ingot:69>],
+[<alchemistry:ingot:69>, <botania:pool:1>, <contenttweaker:essence_of_space>, <appliedenergistics2:creative_energy_cell>, <extracells:storage.component:10>, <appliedenergistics2:creative_energy_cell>, <contenttweaker:essence_of_space>, <botania:pool:1>, <alchemistry:ingot:69>],
 [<alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:58>, <alchemistry:ingot:69>, <alchemistry:ingot:69>, <alchemistry:ingot:69>]]);
 
 # Pattern Expansion Card
