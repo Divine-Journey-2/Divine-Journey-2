@@ -399,7 +399,7 @@ recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ri
 <contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
 
 # Enchanted Golden Berry
-recipes.addShaped(<contenttweaker:enchanted_golden_berry>, [[<minecraft:gold_ingot>,<aether_legacy:enchanted_blueberry>,<minecraft:gold_ingot>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<minecraft:gold_ingot>,<aether_legacy:enchanted_gravitite>,<minecraft:gold_ingot>]]);
+recipes.addShaped(<contenttweaker:enchanted_golden_berry> * 4, [[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>]]);
 
 # Enchanted Golden Berry Stem
 recipes.addShaped(<contenttweaker:enchanted_golden_berry_stem>, [[<contenttweaker:enchanted_golden_berry>,<lightningcraft:rod:2>,<contenttweaker:enchanted_golden_berry>],[null,<lightningcraft:rod:2>,null],[<contenttweaker:enchanted_golden_berry>,<lightningcraft:rod:2>,<contenttweaker:enchanted_golden_berry>]]);
