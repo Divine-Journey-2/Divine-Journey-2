@@ -177,6 +177,11 @@ recipes.addShaped(<enderutilities:linkcrystal:1>, [[null,<enderio:item_material:
 recipes.remove(<enderutilities:linkcrystal:2>);
 recipes.addShaped(<enderutilities:linkcrystal:2>, [[null,<enderio:item_material:18>,null],[<enderio:item_material:18>,<enderutilities:enderpart:2>,<enderio:item_material:18>],[null,<enderio:item_material:18>,null]]);
 
+# NBT-clearing recipes for Link Crystals
+recipes.addHiddenShapeless("ender_utils_clear_crystal_location", <enderutilities:linkcrystal>, [<enderutilities:linkcrystal>]);
+recipes.addHiddenShapeless("ender_utils_clear_crystal_block", <enderutilities:linkcrystal:1>, [<enderutilities:linkcrystal:1>]);
+recipes.addHiddenShapeless("ender_utils_clear_crystal_portal", <enderutilities:linkcrystal:2>, [<enderutilities:linkcrystal:2>]);
+
 # Wand of the Lazy Builder (W.o.t.L.B.)
 recipes.remove(<enderutilities:builderswand>);
 recipes.addShapedMirrored(<enderutilities:builderswand>, [[null,null,<enderutilities:enderpart:17>],[null,<extrautils2:itembuilderswand>,null],[<enderutilities:enderpart:20>,null,null]]);
@@ -348,7 +353,7 @@ function(out,ins,cInfo) {
 		if(ins.black_hole_unit.tag has "stack_nbt") {
 			item_nbt = {tag: ins.black_hole_unit.tag.stack_nbt};
 		}
-		return out.withTag({Items: [{Slot: 0 as byte, id: ins.black_hole_unit.tag.itemstack, Count: ins.black_hole_unit.tag.amount as byte} + item_nbt + {Damage: ins.black_hole_unit.tag.meta as short}]});	
+		return out.withTag({Items: [{Slot: 0 as byte, id: ins.black_hole_unit.tag.itemstack, Count: ins.black_hole_unit.tag.amount as byte} + item_nbt + {Damage: ins.black_hole_unit.tag.meta as short}]});
 	} else {
 		return out;
 }}, null);
