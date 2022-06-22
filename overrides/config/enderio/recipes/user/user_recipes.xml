@@ -713,7 +713,6 @@
       <soul name="minecraft:zombie_villager" />
       <soul name="minecraft:husk" />
       <soul name="abyssalcraft:abyssalzombie" />
-      <soul name="galacticraftcore:evolved_zombie" />
       <soul name="thaumcraft:brainyzombie" />
       <soul name="thaumcraft:giantbrainyzombie" />
       <output name="FRANKEN_ZOMBIE" />
