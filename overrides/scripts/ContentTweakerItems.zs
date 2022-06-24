@@ -13,6 +13,7 @@ import mods.contenttweaker.World;
 import mods.contenttweaker.IItemUpdate;
 import mods.contenttweaker.Player;
 import crafttweaker.player.IPlayer;
+import crafttweaker.util.IRandom;
 
 print("STARTING ContentTweakerItems.zs");
 
@@ -374,6 +375,21 @@ empowered_crystal_bundle.register();
 var cosmic_alloy = VanillaFactory.createItem("cosmic_alloy");
 cosmic_alloy.register();
 var ingot_of_elevation = VanillaFactory.createItem("ingot_of_elevation");
+ingot_of_elevation.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+    if(world.remote) {
+        return;
+    }
+	if(owner instanceof IPlayer) {
+		val player as IPlayer = owner;
+		if(isSelected) {
+			val randomInt = world.random.nextInt(240) as int;
+			if(randomInt == 0) {
+				Commands.call("effect @p minecraft:levitation 3 0 true", player, world, false, true);
+			}
+		}
+	}
+	return;
+};
 ingot_of_elevation.register();
 var fluxed_electrum_ingot = VanillaFactory.createItem("fluxed_electrum_ingot");
 fluxed_electrum_ingot.register();
@@ -770,9 +786,9 @@ var woodland_mansion_locator_token = VanillaFactory.createItem("woodland_mansion
 woodland_mansion_locator_token.maxStackSize = 1;
 woodland_mansion_locator_token.maxDamage = 1;
 woodland_mansion_locator_token.itemRightClick = function(stack, world, player, hand) {
-    if(world.remote) {
-        return "PASS";
-    }
+    #if(world.remote) {
+    #    return "PASS";
+    #}
     stack.damage(2, player);
     player.executeCommand("locate Mansion");
 	Commands.call("locate Mansion", player, world, false, true);
