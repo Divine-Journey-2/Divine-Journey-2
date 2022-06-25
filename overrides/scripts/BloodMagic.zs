@@ -224,7 +224,7 @@ recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,nul
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);
-mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path>, [<immersiveengineering:treated_wood>, <extrautils2:decorativesolidwood:1>, <evilcraft:undead_log>, <roots:wildwood_log>, <totemic:cedar_log>, <openblocks:path>], 25, 10, 1);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path>, [<immersiveengineering:treated_wood>, <extrautils2:decorativesolidwood:1>, <evilcraft:undead_plank>, <roots:wildwood_planks>, <totemic:cedar_plank>, <openblocks:path>], 25, 10, 1);
 
 # Stone Brick Path
 recipes.remove(<bloodmagic:path:2>);
