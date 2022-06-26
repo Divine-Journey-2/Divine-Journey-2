@@ -250,6 +250,11 @@ glod_crystal_block.setBlockResistance(6);
 glod_crystal_block.setToolClass("pickaxe");
 glod_crystal_block.setToolLevel(2);
 glod_crystal_block.setBlockSoundType(<soundtype:metal>);
+glod_crystal_block.setDropHandler(function(drops, world, position, state, fortune) {
+	drops.clear();
+	drops.add(<item:contenttweaker:glod_crystal_block>.withTag({display: {Name: "§6Glod Crystal Block"}}));
+	return;
+});
 glod_crystal_block.register();
 
 var empowered_glod_crystal_block = VanillaFactory.createBlock("empowered_glod_crystal_block", <blockmaterial:iron>);
@@ -258,6 +263,11 @@ empowered_glod_crystal_block.setBlockResistance(6);
 empowered_glod_crystal_block.setToolClass("pickaxe");
 empowered_glod_crystal_block.setToolLevel(2);
 empowered_glod_crystal_block.setBlockSoundType(<soundtype:metal>);
+empowered_glod_crystal_block.setDropHandler(function(drops, world, position, state, fortune) {
+	drops.clear();
+	drops.add(<item:contenttweaker:empowered_glod_crystal_block>.withTag({display: {Name: "§6Empowered Glod Crystal Block"}}));
+	return;
+});
 empowered_glod_crystal_block.register();
 
 var block_of_elevation = VanillaFactory.createBlock("block_of_elevation", <blockmaterial:iron>);
@@ -414,7 +424,7 @@ electrotine_ore.setToolLevel(1);
 electrotine_ore.setBlockSoundType(<soundtype:stone>);
 electrotine_ore.register();
 electrotine_ore.setDropHandler(function(drops, world, position, state, fortune) {
-	
+
 	drops.clear();
 	drops.add(<item:contenttweaker:electrotine> * 2);
 	drops.add(<item:contenttweaker:electrotine> % 50);
@@ -422,7 +432,7 @@ electrotine_ore.setDropHandler(function(drops, world, position, state, fortune) 
 	if(fortune > 0) {
 		drops.add(<item:contenttweaker:electrotine> * fortune);
 	}
-	
+
 	return;
 });
 
