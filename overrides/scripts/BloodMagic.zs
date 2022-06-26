@@ -220,7 +220,7 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
-recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,blood_orb_at_least_tier_1.reuse(),<bloodmagic:blood_rune:4>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
+recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);
