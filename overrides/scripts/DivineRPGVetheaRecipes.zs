@@ -115,6 +115,9 @@ recipes.addShapeless(<minecraft:melon>, [<divinerpg:dream_melon>]);
 
 # Eye of the Nightmare recipe is in ContentTweakerRecipes.zs
 
+# Warp Ward Vial
+recipes.addShapeless(<botania:brewvial>.withTag({brewKey: "thaumcraft:warpward"}), [<divinerpg:firelight>, <divinerpg:fire_crystal>, <mekanism:salt>, <minecraft:glass_bottle>]);
+
 # Ender Chest (EnderStorage)
 recipes.addShaped(<enderstorage:ender_storage>, [[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>],[<contenttweaker:eye_of_the_nightmare>,<mekanism:basicblock:8>,<contenttweaker:eye_of_the_nightmare>],[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>]]);
 

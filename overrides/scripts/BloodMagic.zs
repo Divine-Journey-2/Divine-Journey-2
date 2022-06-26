@@ -9,7 +9,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
-import mods.dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
+import dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
 
 print("STARTING BloodMagic.zs");
 
