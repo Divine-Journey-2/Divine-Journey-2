@@ -224,6 +224,11 @@ addIFRangeAddonRecipe(<industrialforegoing:range_addon:10>, <thermalfoundation:m
 # Range Addon +12
 addIFRangeAddonRecipe(<industrialforegoing:range_addon:11>, <minecraft:emerald>, <industrialforegoing:range_addon:10>);
 
+# Change Range Addon Stack Size
+for i in 0 to 11 {
+	<industrialforegoing:range_addon>.definition.makeStack(i).maxStackSize = 64;
+}
+
 # Adult Filter
 recipes.remove(<industrialforegoing:adult_filter>);
 recipes.addShaped(<industrialforegoing:adult_filter>, [[<enderio:item_alloy_ingot>,<industrialforegoing:plastic>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot:4>,<minecraft:egg>,<enderio:item_alloy_ingot:4>],[<enderio:item_alloy_ingot>,<industrialforegoing:plastic>,<enderio:item_alloy_ingot>]]);
@@ -300,7 +305,7 @@ recipes.addShaped(<industrialforegoing:laser_base>, [[<industrialforegoing:plast
 recipes.remove(<industrialforegoing:laser_drill>);
 recipes.addShaped(<industrialforegoing:laser_drill>, [[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>],[<contenttweaker:steaming_restonia_crystal>,<teslacorelib:machine_case>,<contenttweaker:steaming_restonia_crystal>],[<industrialforegoing:plastic>,<contenttweaker:steaming_restonia_crystal>,<industrialforegoing:plastic>]]);
 
-# Pink Slime 
+# Pink Slime
 <ore:slimeball>.remove(<industrialforegoing:pink_slime>);
 recipes.addShaped(<industrialforegoing:pink_slime> * 8, [[<mysticalagriculture:slime_essence>,<ore:dyePink>,<mysticalagriculture:slime_essence>],[<ore:dyePink>,<mysticalagriculture:slime_essence>,<ore:dyePink>],[<mysticalagriculture:slime_essence>,<ore:dyePink>,<mysticalagriculture:slime_essence>]]);
 

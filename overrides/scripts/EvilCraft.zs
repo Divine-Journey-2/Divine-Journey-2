@@ -297,7 +297,7 @@ recipes.addShaped(<evilcraft:blood_pearl_of_teleportation>.withTag({}), [[<evilc
 
 # Vengeance Pickaxe
 recipes.remove(<evilcraft:vengeance_pickaxe>);
-recipes.addShaped(<evilcraft:vengeance_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 35 as short}, {lvl: 3 as short, id: 58 as short}]}), [[<contenttweaker:offensive_core>,<minecraft:diamond_block>,<contenttweaker:offensive_core>],[<minecraft:diamond_block>,<evilcraft:dark_stick>,<minecraft:diamond_block>],[null,<evilcraft:dark_stick>,null]]);
+recipes.addShaped(<evilcraft:vengeance_pickaxe>.withTag({ench: [{lvl: 5 as short, id: 35 as short}, {lvl: 3 as short, id: 47 as short}]}), [[<contenttweaker:offensive_core>,<minecraft:diamond_block>,<contenttweaker:offensive_core>],[<minecraft:diamond_block>,<evilcraft:dark_stick>,<minecraft:diamond_block>],[null,<evilcraft:dark_stick>,null]]);
 
 # Burning GemStone
 furnace.remove(<evilcraft:burning_gem_stone>);
@@ -330,12 +330,12 @@ mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:bound_blood_drop>
 
 # Creative Blood Droplet
 mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:creative_blood_drop>.withTag({}),
-[[null, null, null, <bloodmagic:decorative_brick>, null, null, null], 
-[null, null, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, null, null], 
-[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null], 
-[null, <evilcraft:blood_orb:1>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <thermalexpansion:reservoir:32000>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <evilcraft:blood_orb:1>, null], 
-[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null], 
-[null, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, null], 
+[[null, null, null, <bloodmagic:decorative_brick>, null, null, null],
+[null, null, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, null, null],
+[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null],
+[null, <evilcraft:blood_orb:1>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <thermalexpansion:reservoir:32000>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <evilcraft:blood_orb:1>, null],
+[null, <bloodmagic:decorative_brick>, <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <openblocks:tank>.withTag({tank: {FluidName: "evilcraftblood", Amount: 16000}}), <bloodmagic:decorative_brick>, null],
+[null, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, <evilcraft:blood_orb:1>, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, null],
 [null, null, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, <bloodmagic:decorative_brick>, null, null]]);
 
 print("ENDING EvilCraft.zs");

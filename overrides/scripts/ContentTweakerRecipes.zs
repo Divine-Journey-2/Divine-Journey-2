@@ -399,7 +399,7 @@ recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ri
 <contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
 
 # Enchanted Golden Berry
-recipes.addShaped(<contenttweaker:enchanted_golden_berry>, [[<minecraft:gold_ingot>,<aether_legacy:enchanted_blueberry>,<minecraft:gold_ingot>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<minecraft:gold_ingot>,<aether_legacy:enchanted_gravitite>,<minecraft:gold_ingot>]]);
+recipes.addShaped(<contenttweaker:enchanted_golden_berry> * 4, [[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>]]);
 
 # Enchanted Golden Berry Stem
 recipes.addShaped(<contenttweaker:enchanted_golden_berry_stem>, [[<contenttweaker:enchanted_golden_berry>,<lightningcraft:rod:2>,<contenttweaker:enchanted_golden_berry>],[null,<lightningcraft:rod:2>,null],[<contenttweaker:enchanted_golden_berry>,<lightningcraft:rod:2>,<contenttweaker:enchanted_golden_berry>]]);
@@ -2071,12 +2071,13 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_mes
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:creative_singularity>, <contenttweaker:creative_mesh>, 100000000, <contenttweaker:singularification_catalyst>, 100000000);
 
 # Unwarpification Talisman
-mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:unwarpification_talisman>,
-[[<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>],
-[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>],
-[<projecte:item.pe_covalence_dust:2>, <alchemistry:ingot:96>, <bloodmagic:decorative_brick:2>, <alchemistry:ingot:96>, <projecte:item.pe_covalence_dust:2>],
-[<thaumcraft:sanity_checker>, <botania:blackholetalisman>, <alchemistry:ingot:96>, <botania:blackholetalisman>, <thaumcraft:sanity_checker>],
-[<extendedcrafting:singularity_custom:158>, <thaumcraft:sanity_checker>, <projecte:item.pe_covalence_dust:2>, <thaumcraft:sanity_checker>, <extendedcrafting:singularity_custom:158>]]);
+mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/unwarpification_talisman", <contenttweaker:unwarpification_talisman>, 500, 100,
+[<botania:bloodpendant>.withTag({brewKey: "thaumcraft:warpward"}),<botania:blackholetalisman>,<botania:bloodpendant>.withTag({brewKey: "thaumcraft:warpward"}),
+<botania:blackholetalisman>,<thaumcraft:sanity_checker>,<botania:blackholetalisman>,
+<botania:bloodpendant>.withTag({brewKey: "thaumcraft:warpward"}),<botania:blackholetalisman>,<botania:bloodpendant>.withTag({brewKey: "thaumcraft:warpward"}),
+<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),
+<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>
+]);
 <contenttweaker:unwarpification_talisman>.addTooltip(format.white("Right Click to set your Thaumcraft Warp level to 0!"));
 
 # Goddess' Pearl

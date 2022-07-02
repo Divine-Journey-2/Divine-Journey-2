@@ -4,24 +4,28 @@ import crafttweaker.item.IItemStack;
 
 print("STARTING DankNull.zs");
 
-function removeDarkNullEasyRecipe(output as IItemStack, input_panel as IItemStack) {
+function removeDankNullEasyRecipe(output as IItemStack, input_panel as IItemStack) {
 	recipes.removeShaped(output, [[null,input_panel,null],[input_panel,input_panel,input_panel],[null,input_panel,null]]);
 }
 
+# /dank/null/MK I
+recipes.remove(<danknull:dank_null_0>);
+recipes.addShaped(<danknull:dank_null_0>.withTag({ench: [{lvl: 10 as short, id: 67 as short}]}), [[null, <danknull:dank_null_panel_0>, null], [<danknull:dank_null_panel_0>, <danknull:dank_null_panel_0>, <danknull:dank_null_panel_0>], [null, <danknull:dank_null_panel_0>, null]]);
+
 # /dank/null/MK II
-removeDarkNullEasyRecipe(<danknull:dank_null_1>, <danknull:dank_null_panel_1>);
+removeDankNullEasyRecipe(<danknull:dank_null_1>, <danknull:dank_null_panel_1>);
 
 # /dank/null/MK III
-removeDarkNullEasyRecipe(<danknull:dank_null_2>, <danknull:dank_null_panel_2>);
+removeDankNullEasyRecipe(<danknull:dank_null_2>, <danknull:dank_null_panel_2>);
 
 # /dank/null/MK IV
-removeDarkNullEasyRecipe(<danknull:dank_null_3>, <danknull:dank_null_panel_3>);
+removeDankNullEasyRecipe(<danknull:dank_null_3>, <danknull:dank_null_panel_3>);
 
 # /dank/null/MK V
-removeDarkNullEasyRecipe(<danknull:dank_null_4>, <danknull:dank_null_panel_4>);
+removeDankNullEasyRecipe(<danknull:dank_null_4>, <danknull:dank_null_panel_4>);
 
 # /dank/null/MK VI
-removeDarkNullEasyRecipe(<danknull:dank_null_5>, <danknull:dank_null_panel_5>);
+removeDankNullEasyRecipe(<danknull:dank_null_5>, <danknull:dank_null_panel_5>);
 
 # RedStone /dank/null Panel
 recipes.remove(<danknull:dank_null_panel_0>);

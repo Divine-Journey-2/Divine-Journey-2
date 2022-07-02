@@ -9,7 +9,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
-import mods.dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
+import dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
 
 print("STARTING BloodMagic.zs");
 
@@ -220,19 +220,23 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
-recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<contenttweaker:holy_core>,<evilcraft:promise_acceptor:1>,<contenttweaker:holy_core>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
+recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);
-recipes.addShaped(<bloodmagic:path>, [[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>],[<evilcraft:undead_plank>,blood_orb_at_least_tier_2.reuse(),<evilcraft:undead_plank>],[<evilcraft:undead_plank>,<evilcraft:undead_plank>,<evilcraft:undead_plank>]]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path>, [<immersiveengineering:treated_wood>, <extrautils2:decorativesolidwood:1>, <evilcraft:undead_plank>, <roots:wildwood_planks>, <totemic:cedar_plank>, <openblocks:path>], 25, 10, 1);
 
 # Stone Brick Path
 recipes.remove(<bloodmagic:path:2>);
-recipes.addShaped(<bloodmagic:path:2> * 2, [[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>],[<bloodmagic:path>,blood_orb_at_least_tier_3.reuse(),<bloodmagic:path>],[<extrautils2:compressedcobblestone:1>,<bloodmagic:path>,<extrautils2:compressedcobblestone:1>]]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path:2>, [<bloodmagic:path>, <bloodmagic:path>, <extrautils2:compressedcobblestone:1>, <extrautils2:compressedcobblestone:1>, <roots:runestone>, <roots:runestone>], 100, 10, 2);
 
 # Worn Stone Brick Path
 recipes.remove(<bloodmagic:path:4>);
-recipes.addShaped(<bloodmagic:path:4> * 2, [[<extrautils2:compressedcobblestone:2>,<bloodmagic:path:2>,<extrautils2:compressedcobblestone:2>],[<bloodmagic:path:2>,blood_orb_at_least_tier_4.reuse(),<bloodmagic:path:2>],[<extrautils2:compressedcobblestone:2>,<bloodmagic:path:2>,<extrautils2:compressedcobblestone:2>]]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path:4>, [<bloodmagic:path:2>, <bloodmagic:path:2>, <extrautils2:compressedcobblestone:2>, <extrautils2:compressedcobblestone:2>, <appliedenergistics2:material:45>, <appliedenergistics2:material:45>], 400, 10, 3);
+
+# Obsidian Brick Path
+recipes.remove(<bloodmagic:path:6>);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:path:6>, [<bloodmagic:path:4>, <bloodmagic:path:4>, <roots:runed_obsidian>, <roots:runed_obsidian>, <mekanism:basicblock:2>, <mekanism:basicblock:2>], 1600, 10, 3);
 
 # Binding Reagent
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
@@ -517,10 +521,6 @@ recipes.removeShapeless(<bloodmagic:ritual_stone>, [<bloodmagic:ritual_stone:6>]
 
 # Crystal Cluster
 recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_tablet>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_tablet>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>]]);
-
-# Obsidian Brick Path
-recipes.remove(<bloodmagic:path:6>);
-recipes.addShaped(<bloodmagic:path:6> * 2, [[<botania:quartz>,<bloodmagic:path:4>,<botania:quartz>],[<bloodmagic:path:4>,blood_orb_at_least_tier_5.reuse(),<bloodmagic:path:4>],[<botania:quartz>,<bloodmagic:path:4>,<botania:quartz>]]);
 
 # Weak Blood Shard tooltip
 <bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));

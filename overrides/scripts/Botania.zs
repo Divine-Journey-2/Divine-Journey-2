@@ -1,4 +1,4 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -15,6 +15,8 @@ import mods.botania.RuneAltar;
 import mods.botania.ElvenTrade;
 import mods.bloodmagic.AlchemyTable;
 import mods.botania.Orechid;
+import dj2addons.botania.Brews;
+import dj2addons.botania.Brew;
 
 print("STARTING Botania.zs");
 
@@ -907,7 +909,7 @@ recipes.addShaped(<botania:cellblock> * 4, [[<mysticalagriculture:nature_essence
 
 # Botanical Brewery
 recipes.remove(<botania:brewery>);
-recipes.addShaped(<botania:brewery>, [[<contenttweaker:purified_tablet>,null,<contenttweaker:purified_tablet>],[<botania:livingrock>,<contenttweaker:rune_of_mana>,<botania:livingrock>],[<botania:livingrock>,<botania:storage:4>,<botania:livingrock>]]);
+recipes.addShaped(<botania:brewery>, [[<contenttweaker:purified_tablet>,null,<contenttweaker:purified_tablet>],[<botania:livingrock>,<contenttweaker:rune_of_mana>,<botania:livingrock>],[<botania:livingrock>,<botania:alchemycatalyst>,<botania:livingrock>]]);
 
 # Tainted Blood Pendant
 recipes.remove(<botania:bloodpendant>);
@@ -920,6 +922,31 @@ recipes.addShapedMirrored(<botania:incensestick>.withTag({}), [[null,null,<botan
 # Incense Plate
 recipes.remove(<botania:incenseplate>);
 recipes.addShaped(<botania:incenseplate>, [[null,<botania:manaresource:5>,null],[<botania:livingwood>,<minecraft:beacon>,<botania:livingwood>]]);
+
+# Saturation Brew
+Brews.addBrewRecipe(
+    Brews.makeBrew(
+        "dj2addons.saturegen",
+        "dj2addons.brew.saturegen",
+        100000,
+        16262179,
+        <potion:dj2addons:saturegen>.makePotionEffect(12000, 1)
+    ),
+    [<minecraft:nether_wart>, <totemic:cooked_buffalo_meat>, <contenttweaker:chicken_nugget>, <contenttweaker:burger>, <contenttweaker:taco>]
+);
+
+# Warp Ward Brew
+mods.botania.Brew.removeRecipe("warpWard");
+Brews.addBrewRecipe(
+    Brews.makeBrew(
+        "thaumcraft:warpward",
+        "Sane Thoughts",
+        100000,
+        16503291,
+        <potion:thaumcraft:warpward>.makePotionEffect(12000, 0)
+    ),
+    [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>, <contenttweaker:conducted_impetus>, <thaumcraft:sanity_checker>]
+);
 
 # Corporea Spark
 recipes.remove(<botania:corporeaspark>);
