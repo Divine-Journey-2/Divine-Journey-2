@@ -68,22 +68,34 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:arcane_
 
 # Arcane Charging Upgrade
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:upgrade_arcane>);
-mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("thaumicenergistics:upgrade_arcane", "WORKBENCHCHARGER", 50, [<aspect:aer> * 10], <thaumicenergistics:upgrade_arcane>, [<appliedenergistics2:material:28>,<thaumcraft:arcane_workbench_charger>,<thaumicenergistics:coalescence_core>]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:upgrade_arcane", "WORKBENCHCHARGER", 50, [<aspect:aer> * 10], <thaumicenergistics:upgrade_arcane>, [[<thaumicenergistics:coalescence_core>,<thaumcraft:ingot:1>,null],[<thaumcraft:arcane_workbench_charger>,<appliedenergistics2:material:28>,<thaumcraft:ingot:1>],[<thaumicenergistics:coalescence_core>,<thaumcraft:ingot:1>,null]]);
 
 # Essentia Infusion Provider
 mods.thaumcraft.Infusion.removeRecipe(<thaumicenergistics:infusion_provider>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:infusion_provider", "INFUSIONPROVIDER", <thaumicenergistics:infusion_provider>, 8, [<aspect:machina> * 240,<aspect:praecantatio> * 200,<aspect:permutatio> * 200,<aspect:aqua> * 50], <thaumicaugmentation:material:3>, [<appliedenergistics2:interface>,<thaumicenergistics:coalescence_core>,<thaumcraft:salis_mundus>,<contenttweaker:condensed_vis_crystal_machina>,<appliedenergistics2:interface>,<thaumicenergistics:diffusion_core>,<thaumcraft:salis_mundus>,<thaumicaugmentation:impetus_mirror>]);
 
+# Arcane Assembler
+mods.thaumcraft.Infusion.removeRecipe(<thaumicenergistics:arcane_assembler>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:arcane_assembler", "ARCANEASSEMBLER", <thaumicenergistics:arcane_assembler>, 8, [<aspect:potentia> * 120,<aspect:praecantatio> * 100,<aspect:permutatio> * 100,<aspect:fabrico> * 100], <thaumcraft:arcane_workbench>,[<appliedenergistics2:molecular_assembler>,<contenttweaker:condensed_vis_crystal_aer>,<contenttweaker:condensed_vis_crystal_terra>,<thaumicenergistics:essentia_storage>,<contenttweaker:condensed_vis_crystal_ignis>,<appliedenergistics2:molecular_assembler>,<contenttweaker:condensed_vis_crystal_aqua>,<contenttweaker:condensed_vis_crystal_ordo>,<thaumicenergistics:essentia_storage>,<contenttweaker:condensed_vis_crystal_perditio>]);
+
+# Blank Knowledge Core
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:blank_knowledge_core>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:blank_knowledge_core", "KNOWLEDGECORE", <thaumicenergistics:blank_knowledge_core>, 10,[<aspect:cognitio> * 180,<aspect:fabrico> * 100,<aspect:praemunio> * 100,<aspect:potentia> * 80,<aspect:vinculum> * 80,<aspect:exanimis> * 10,<aspect:vacuos> * 10], <thaumcraft:jar_brain>, [<thaumcraft:focus_3>,<thaumicaugmentation:fortified_glass>,<thaumcraft:focus_3>,<thaumicaugmentation:fortified_glass>]);
+
+# Arcane Inscriber
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:arcane_inscriber>);
+mods.thaumcraft.Infusion.registerRecipe("thaumicenergistics:arcane_inscriber", "ARCANEINSCRIBER", <thaumicenergistics:arcane_inscriber>, 6, [<aspect:machina> * 180,<aspect:cognitio> * 180,<aspect:fabrico> * 100,<aspect:praecantatio> * 60,<aspect:permutatio> * 60,<aspect:vitium> * 50], <thaumicenergistics:arcane_terminal>, [<thaumcraft:mind>,<appliedenergistics2:part:340>,<contenttweaker:estimation_processor>,<thaumcraft:mind>,<appliedenergistics2:part:340>,<contenttweaker:estimation_processor>]);
+
 # Creative ME Essentia Storage Cell
 mods.extendedcrafting.TableCrafting.addShaped(<thaumicenergistics:essentia_cell_creative>,
-[[<alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:114>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:117>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <extracells:storage.component:3>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <contenttweaker:thaumium_processor>, <thaumicenergistics:infusion_provider>, <contenttweaker:thaumium_processor>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <extracells:storage.component:3>, <thaumicenergistics:infusion_provider>, <bewitchment:blessed_stone>, <thaumicenergistics:infusion_provider>, <extracells:storage.component:3>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>], 
-[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <contenttweaker:thaumium_processor>, <thaumicenergistics:infusion_provider>, <contenttweaker:thaumium_processor>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:117>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <extracells:storage.component:3>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <alchemistry:ingot:117>], 
-[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>], 
+[[<alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:114>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:117>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <extracells:storage.component:3>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <contenttweaker:thaumium_processor>, <thaumicenergistics:infusion_provider>, <contenttweaker:thaumium_processor>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <extracells:storage.component:3>, <thaumicenergistics:infusion_provider>, <bewitchment:blessed_stone>, <thaumicenergistics:infusion_provider>, <extracells:storage.component:3>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>],
+[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <contenttweaker:thaumium_processor>, <thaumicenergistics:infusion_provider>, <contenttweaker:thaumium_processor>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:117>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <extracells:storage.component:3>, <contenttweaker:clay>, <thaumicenergistics:essentia_cell_64k>, <contenttweaker:clay>, <alchemistry:ingot:117>],
+[<alchemistry:ingot:117>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <thaumicenergistics:essentia_cell_64k>, <alchemistry:ingot:114>, <contenttweaker:clay>, <alchemistry:ingot:114>, <alchemistry:ingot:117>],
 [<alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:114>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>, <alchemistry:ingot:117>]]);
 
 print("ENDING ThaumicEnergistics.zs");
