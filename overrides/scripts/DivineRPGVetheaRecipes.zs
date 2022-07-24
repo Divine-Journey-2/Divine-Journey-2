@@ -57,7 +57,7 @@ recipes.addShaped(<thaumcraft:ore_quartz>, [[<divinerpg:dream_stone>,null,<divin
 recipes.addShaped(<minecraft:emerald_ore>, [[null,<divinerpg:dream_dirt>,null],[<divinerpg:dream_dirt>,<minecraft:diamond_ore>,<divinerpg:dream_dirt>],[null,<divinerpg:dream_dirt>,null]]);
 
 # Salt Ore
-recipes.addShaped(<bewitchment:salt_ore>, [[<divinerpg:dream_dirt>,null,<divinerpg:dream_dirt>],[null,null,null],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>]]);
+recipes.addShaped(<mekanism:saltblock>, [[<divinerpg:dream_dirt>,null,<divinerpg:dream_dirt>],[null,null,null],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>]]);
 
 # Realmite Ore
 recipes.addShaped(<divinerpg:realmite_ore>, [[<divinerpg:dream_stone>,<thermalfoundation:ore>,<divinerpg:dream_stone>]]);
