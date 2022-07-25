@@ -43,7 +43,7 @@ recipes.remove(<minecraft:stone_slab>);
 recipes.addShaped(<minecraft:stone_slab> * 6, [[<ore:stone>,<ore:stone>,<ore:stone>]]);
 
 # Stone Button
-recipes.remove(<minecraft:stone_button>);
+recipes.removeShapeless(<minecraft:stone_button>, [<minecraft:stone>]);
 recipes.addShapeless(<minecraft:stone_button> * 8, [<minecraft:stone>]);
 
 # Chests (check other Chests too)
