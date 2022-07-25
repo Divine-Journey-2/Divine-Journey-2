@@ -10,7 +10,7 @@ furnace.remove(<mysticalworld:cooked_seeds>);
 
 # Fix conflicting recipe for uncrafting Pearl blocks
 recipes.remove(<mysticalworld:pearl_button>);
-recipes.addShapeless(<mysticalworld:pearl_button>, [<mysticalworld:pearl>]);
+recipes.addShapeless(<mysticalworld:pearl_button> * 8, [<mysticalworld:pearl>]);
 
 # Silver Nuggets
 RunicShears.removeRecipe(<mysticalworld:silver_nugget>);
