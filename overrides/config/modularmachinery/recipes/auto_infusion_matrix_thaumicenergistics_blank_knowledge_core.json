@@ -16,22 +16,14 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:focus_3"
+            "item": "thaumcraft:focus_3",
+            "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumicaugmentation:fortified_glass"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "thaumcraft:focus_3"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "thaumicaugmentation:fortified_glass"
+            "item": "thaumicaugmentation:fortified_glass",
+            "amount": 2
         },
         {
             "type": "aspect",
