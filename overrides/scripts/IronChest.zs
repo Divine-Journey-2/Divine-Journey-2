@@ -113,7 +113,7 @@ for i in 0 to 16 {
 
 	# Silver Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(4));
-	recipes.addShaped("ironchest_silver_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:32>,<thermalfoundation:material:322>,<thermalfoundation:material:322>],[<thermalfoundation:material:322>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:322>],[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>]],
+	recipes.addShaped("ironchest_silver_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>],[<thermalfoundation:material:322>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:322>],[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 72);
 	}, null);
