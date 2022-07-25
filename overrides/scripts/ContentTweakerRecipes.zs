@@ -2006,7 +2006,9 @@ recipes.addShaped(<contenttweaker:photovoltaic_cell_xi> * 3, [[<ore:blockGlassWh
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, null, 80, 256, [<ore:foodFlour>]);
 EIOAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, [<minecraft:chicken>, <ore:foodFlour>], 4000);
 IEAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>, 160);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>.firstItem, 4000);
+for entry in <ore:foodFlour>.items {
+    mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, entry, 4000);
+}
 
 # Burger
 val cheeses = [<actuallyadditions:item_food>,<galacticraftcore:food:4>,<divinerpg:cheese>,<galacticraftcore:cheese_curd>] as IItemStack[];
