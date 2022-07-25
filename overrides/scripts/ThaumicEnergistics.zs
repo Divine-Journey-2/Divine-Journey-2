@@ -16,7 +16,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:coalesc
 
 # 1k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_1k>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k", "ESSENTIASTORAGE1k", 10, [], <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,allCertus,<thaumcraft:stone_eldritch_tile>],[allCertus,<contenttweaker:thaumium_processor>,allCertus],[<thaumcraft:stone_eldritch_tile>,allCertus,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k_base", "ESSENTIASTORAGE1k", 10, [], <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,<appliedenergistics2:material>,<thaumcraft:stone_eldritch_tile>],[<appliedenergistics2:material>,<contenttweaker:thaumium_processor>,<appliedenergistics2:material>],[<thaumcraft:stone_eldritch_tile>,<appliedenergistics2:material>,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k_charged", "ESSENTIASTORAGE1k", 10, [], <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,<appliedenergistics2:material:1>,<thaumcraft:stone_eldritch_tile>],[<appliedenergistics2:material:1>,<contenttweaker:thaumium_processor>,<appliedenergistics2:material:1>],[<thaumcraft:stone_eldritch_tile>,<appliedenergistics2:material:1>,<thaumcraft:salis_mundus>]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:essentia_component_1k_pure", "ESSENTIASTORAGE1k", 10, [], <thaumicenergistics:essentia_component_1k>, [[<thaumcraft:salis_mundus>,<appliedenergistics2:material:10>,<thaumcraft:stone_eldritch_tile>],[<appliedenergistics2:material:10>,<contenttweaker:thaumium_processor>,<appliedenergistics2:material:10>],[<thaumcraft:stone_eldritch_tile>,<appliedenergistics2:material:10>,<thaumcraft:salis_mundus>]]);
 
 # 4k ME Essentia Storage Component
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:essentia_component_4k>);
@@ -68,7 +70,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:arcane_
 
 # Arcane Charging Upgrade
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicenergistics:upgrade_arcane>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:upgrade_arcane", "WORKBENCHCHARGER", 50, [<aspect:aer> * 10], <thaumicenergistics:upgrade_arcane>, [[<thaumicenergistics:coalescence_core>,<thaumcraft:ingot:1>,null],[<thaumcraft:arcane_workbench_charger>,<appliedenergistics2:material:28>,<thaumcraft:ingot:1>],[<thaumicenergistics:coalescence_core>,<thaumcraft:ingot:1>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicenergistics:upgrade_arcane", "WORKBENCHCHARGER", 50, [<aspect:aer> * 10], <thaumicenergistics:upgrade_arcane>, [[<thaumicenergistics:diffusion_core>,<thaumcraft:ingot:1>,null],[<thaumcraft:arcane_workbench_charger>,<appliedenergistics2:material:28>,<thaumcraft:ingot:1>],[<thaumicenergistics:coalescence_core>,<thaumcraft:ingot:1>,null]]);
 
 # Essentia Infusion Provider
 mods.thaumcraft.Infusion.removeRecipe(<thaumicenergistics:infusion_provider>);
