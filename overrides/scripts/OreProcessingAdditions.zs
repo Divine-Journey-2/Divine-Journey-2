@@ -177,7 +177,7 @@ IECrusher.addRecipe(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:bloc
 EUCrusher.add(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>);
 mods.thermalexpansion.Pulverizer.addRecipe(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 2000);
 mods.botania.ManaInfusion.addAlchemy(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 5000);
-mods.abyssalcraft.Transmutator.addTransmutation(<actuallyadditions:block_misc:2>, <actuallyadditions:item_misc:5>, 0);
+mods.abyssalcraft.Transmutator.addTransmutation(<actuallyadditions:block_misc:2>, <actuallyadditions:item_misc:5> * 4, 0);
 
 # MysticalWorld Quartz in the SAG Mill
 mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:quartz_ore>, "MULTIPLY_OUTPUT");
