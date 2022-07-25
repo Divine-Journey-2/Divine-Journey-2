@@ -42,10 +42,6 @@ recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>,<ore:slab
 recipes.remove(<minecraft:stone_slab>);
 recipes.addShaped(<minecraft:stone_slab> * 6, [[<ore:stone>,<ore:stone>,<ore:stone>]]);
 
-# Stone Button
-recipes.removeShapeless(<minecraft:stone_button>, [<minecraft:stone>]);
-recipes.addShapeless(<minecraft:stone_button> * 8, [<minecraft:stone>]);
-
 # Chests (check other Chests too)
 recipes.remove(<minecraft:chest>); # Add Mini Chest -> Chest conversion
 recipes.addShaped(<minecraft:chest>, [[<ore:logWood>,<ore:plankWood>,<ore:logWood>],[<ore:plankWood>,<ore:nuggetIron>,<ore:plankWood>],[<ore:logWood>,<ore:plankWood>,<ore:logWood>]]);
