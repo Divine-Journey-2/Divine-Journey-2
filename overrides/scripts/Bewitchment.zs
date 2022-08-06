@@ -12,7 +12,6 @@ import moretweaker.bewitchment.WitchesRitual;
 import moretweaker.bewitchment.FrostFire;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
-import crafttweaker.event.PlayerInteractEntityEvent;
 
 print("STARTING Bewitchment.zs");
 
@@ -484,17 +483,5 @@ mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 [<thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>],
 [<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>]]);
 
-# Bewitchment Demon Trading disable
-events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent){
-	if(!isNull(e.target.definition)) {
-		if(!isNull(e.target.definition.id)) {
-		    if(e.target.definition.id == "bewitchment:demon" || e.target.definition.id == "bewitchment:demoness") {
-				e.cancel();
-				#e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
-		    }
-		}
-	}
-});
-# maybe needed: IWorld.isRemote, returns True on client
 
 print("ENDING Bewitchment.zs");
