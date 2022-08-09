@@ -134,7 +134,7 @@ recipes.addShapedMirrored(<divinerpg:kraken_skin>, [[<contenttweaker:treated_lea
 
 # Aqua Ball
 recipes.remove(<divinerpg:aqua_ball>);
-recipes.addShaped(<divinerpg:aqua_ball>, [[<minecraft:water_bucket>,<ore:slimeball>,<minecraft:water_bucket>],[<minecraft:water_bucket>,<divinerpg:kraken_skin>,<minecraft:water_bucket>],[<minecraft:water_bucket>,<ore:slimeball>,<minecraft:water_bucket>]]);
+recipes.addShaped(<divinerpg:aqua_ball>, [[<liquid:water> * 1000,<ore:slimeball>,<liquid:water> * 1000],[<liquid:water> * 1000,<divinerpg:kraken_skin>,<liquid:water> * 1000],[<liquid:water> * 1000,<ore:slimeball>,<liquid:water> * 1000]]);
 
 # Arlemite Armor
 recipes.remove(<divinerpg:arlemite_helmet>);

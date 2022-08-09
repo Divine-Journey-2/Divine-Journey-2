@@ -335,7 +335,7 @@ recipes.addShapedMirrored(<immersiveengineering:toolupgrade>, [[<minecraft:bucke
 
 # Advanced Lubrication System
 recipes.remove(<immersiveengineering:toolupgrade:1>);
-recipes.addShapedMirrored(<immersiveengineering:toolupgrade:1>, [[<forge:bucketfilled>.withTag({FluidName: "plantoil", Amount: 1000}),<thermalfoundation:material:32>,null],[<thermalfoundation:material:32>,<forge:bucketfilled>.withTag({FluidName: "plantoil", Amount: 1000}),<thermalfoundation:material:32>],[null,<thermalfoundation:material:32>,<immersiveengineering:material:8>]]);
+recipes.addShapedMirrored(<immersiveengineering:toolupgrade:1>, [[<liquid:plantoil> * 1000,<thermalfoundation:material:32>,null],[<thermalfoundation:material:32>,<liquid:plantoil> * 1000,<thermalfoundation:material:32>],[null,<thermalfoundation:material:32>,<immersiveengineering:material:8>]]);
 
 # Large Tank
 recipes.remove(<immersiveengineering:toolupgrade:3>);
@@ -441,8 +441,8 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<mysticalagricultur
 
 # Concrete from Gravel OreDict
 recipes.remove(<immersiveengineering:stone_decoration:5>);
-recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>]]);
-recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<minecraft:clay_ball>,<ore:sand>],[<ore:gravel>,<minecraft:water_bucket>,<ore:gravel>],[<ore:sand>,<minecraft:clay_ball>,<ore:sand>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>],[<ore:gravel>,<liquid:water> * 1000,<ore:gravel>],[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<minecraft:clay_ball>,<ore:sand>],[<ore:gravel>,<liquid:water> * 1000,<ore:gravel>],[<ore:sand>,<minecraft:clay_ball>,<ore:sand>]]);
 
 # Excavator changes
 mods.immersiveengineering.Excavator.removeMineral("Platinum");
