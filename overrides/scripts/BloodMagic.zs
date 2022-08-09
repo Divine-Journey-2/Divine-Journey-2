@@ -262,6 +262,17 @@ recipes.addShaped(<bloodmagic:ritual_controller>, [[<contenttweaker:compressed_o
 recipes.remove(<bloodmagic:lava_crystal>);
 recipes.addShaped(<bloodmagic:lava_crystal>, [[<abyssalcraft:crystalcluster:3>,<abyssalcraft:crystalcluster:15>,<abyssalcraft:crystalcluster:3>],[<abyssalcraft:crystalcluster:15>,<contenttweaker:rune_of_fire>,<abyssalcraft:crystalcluster:15>],[<abyssalcraft:crystalcluster:3>,blood_orb_at_least_tier_4.reuse(),<abyssalcraft:crystalcluster:3>]]);
 
+# Blood Tank
+for i in 1 to 16 {
+    val target = <bloodmagic:blood_tank>.definition.makeStack(i);
+    val origin = <bloodmagic:blood_tank>.definition.makeStack(i - 1);
+    val amount = 1000 + ((i + 1) * (i + 1));
+
+	recipes.remove(target);
+    recipes.addHiddenShapeless("blood_magic_tank_clearing_"~i, target, [target]);
+	mods.bloodmagic.BloodAltar.addRecipe(target, origin, 4, amount, 50, 50);
+}
+
 # Weak Activation Crystal
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:lava_crystal>);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:activation_crystal>, <bloodmagic:lava_crystal>, 3, 100000, 60, 60);
