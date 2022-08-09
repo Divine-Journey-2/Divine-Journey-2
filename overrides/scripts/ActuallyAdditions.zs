@@ -17,6 +17,22 @@ recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<m
 recipes.remove(<actuallyadditions:block_misc:4>);
 recipes.addShaped(<actuallyadditions:block_misc:4> * 3, [[<ore:logWood>,<ore:logWood>,<ore:logWood>],[<ore:logWood>,<rftools:machine_frame>,<ore:logWood>],[<ore:logWood>,<ore:logWood>,<ore:logWood>]]);
 
+# Crate (Small)
+recipes.remove(<actuallyadditions:block_giant_chest>);
+recipes.addShaped(<actuallyadditions:block_giant_chest>, [[<minecraft:chest>,<ore:plankWood>,<minecraft:chest>],[<ore:plankWood>,<ironchest:iron_chest:2>,<ore:plankWood>],[<minecraft:chest>,<ore:plankWood>,<minecraft:chest>]]);
+
+# Crate (Medium)
+recipes.remove(<actuallyadditions:block_giant_chest_medium>);
+recipes.addShaped(<actuallyadditions:block_giant_chest_medium>, [[<roots:runed_obsidian>,<immersiveengineering:wooden_device0>,<roots:runed_obsidian>],[<immersiveengineering:wooden_device0>,<actuallyadditions:block_giant_chest>,<immersiveengineering:wooden_device0>],[<roots:runed_obsidian>,<immersiveengineering:wooden_device0>,<roots:runed_obsidian>]]);
+
+# Crate (Large)
+recipes.remove(<actuallyadditions:block_giant_chest_large>);
+recipes.addShaped(<actuallyadditions:block_giant_chest_large>, [[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:block_misc:4>,<actuallyadditions:block_crystal_empowered:3>],[<actuallyadditions:block_misc:4>,<actuallyadditions:block_giant_chest_medium>,<actuallyadditions:block_misc:4>],[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:block_misc:4>,<actuallyadditions:block_crystal_empowered:3>]]);
+
+# Storage Crate Keeper
+recipes.remove(<actuallyadditions:item_crate_keeper>);
+recipes.addShaped(<actuallyadditions:item_crate_keeper>, [[<thermalfoundation:material:160>,<actuallyadditions:item_misc:5>,<thermalfoundation:material:160>],[<actuallyadditions:item_misc:5>,<roots:runed_obsidian>,<actuallyadditions:item_misc:5>],[<thermalfoundation:material:160>,<actuallyadditions:item_misc:5>,<thermalfoundation:material:160>]]);
+
 # Iron Casing
 recipes.remove(<actuallyadditions:block_misc:9>);
 recipes.addShaped(<actuallyadditions:block_misc:9>, [[<actuallyadditions:block_misc:2>,<thermalfoundation:material:32>,<actuallyadditions:block_misc:2>],[<thermalfoundation:material:32>,<rftools:machine_frame>,<thermalfoundation:material:32>],[<actuallyadditions:block_misc:2>,<thermalfoundation:material:32>,<actuallyadditions:block_misc:2>]]);
@@ -477,10 +493,6 @@ recipes.addShaped(<actuallyadditions:item_spawner_changer>, [[<contenttweaker:mo
 # Knife Handle
 recipes.remove(<actuallyadditions:item_misc:3>);
 recipes.addShapeless(<actuallyadditions:item_misc:3>, [<ore:stickWood>,<contenttweaker:treated_leather>]);
-
-# Storage Crate Keeper
-recipes.remove(<actuallyadditions:item_crate_keeper>);
-recipes.addShaped(<actuallyadditions:item_crate_keeper>, [[glod_crystal,<thermalfoundation:material:160>,glod_crystal],[<thermalfoundation:material:160>,<actuallyadditions:item_misc:5>,<thermalfoundation:material:160>],[glod_crystal,<thermalfoundation:material:160>,glod_crystal]]);
 
 # Teleport Staff
 recipes.remove(<actuallyadditions:item_tele_staff>);
