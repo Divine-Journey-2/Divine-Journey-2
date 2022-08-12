@@ -4,8 +4,10 @@
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.CommandEvent;
+import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
+import crafttweaker.item.IItemStack;
 import mods.zenutils.command.CommandUtils;
 
 static astralTiers as string[] = [
@@ -28,6 +30,32 @@ function progressAstral(player as IPlayer, level as int) {
     }
 }
 
+// Add Ender Core activations to all dimensions
+function activateEnderCore(player as IPlayer) as void {
+    val goal = <enderutilities:enderpart>.definition;
+
+    var target as IEntityEquipmentSlot;
+    var item as IItemStack;
+
+    if (!isNull(player.mainHandHeldItem) && player.mainHandHeldItem.definition.id == goal.id) {
+        item = player.mainHandHeldItem;
+        target = crafttweaker.entity.IEntityEquipmentSlot.mainHand();
+    } else if (!isNull(player.offHandHeldItem) && player.offHandHeldItem.definition.id == goal.id) {
+        item = player.offHandHeldItem;
+        target = crafttweaker.entity.IEntityEquipmentSlot.offhand();
+    } else {
+        return;
+    }
+
+    val meta as int = item.metadata;
+
+    // 10, 11, and 12 are the valid meta values for Inactive Ender Cores.
+    if (meta >= 10 && meta <= 12) {
+        // Change the item from uncharged to charged
+        player.setItemToSlot(target, goal.makeStack(meta + 5) * item.amount);
+    }
+}
+
 events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     if (e.player.world.isRemote()) {
         return;
@@ -41,6 +69,11 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     // Grant the user the Astral Sorcery Knowledge to use the table they just right clicked on.
     if (e.block.definition.id == <astralsorcery:blockaltar>.definition.id) {
         progressAstral(e.player, e.block.meta);
+    }
+
+    // Activate the held ender core if the target block was a stabilized end crystal
+    if (e.block.definition.id == <contenttweaker:stabilized_end_crystal>.definition.id) {
+        activateEnderCore(e.player);
     }
 });
 
@@ -59,6 +92,11 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
     if (id == "bewitchment:demon" || id == "bewitchment:demoness") {
         e.cancel();
         #e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
+    }
+
+    // Activate the held ender core if the target entity was an end crystal
+    if (id == "minecraft:ender_crystal") {
+        activateEnderCore(e.player);
     }
 });
 

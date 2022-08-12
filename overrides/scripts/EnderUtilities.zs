@@ -49,20 +49,20 @@ recipes.addShaped(<enderutilities:machine_1:2>, [[<enderutilities:enderpart:1>,<
 # Inactive Ender Core (Basic)
 recipes.remove(<enderutilities:enderpart:10>);
 recipes.addShaped(<enderutilities:enderpart:10>, [[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>],[<enderutilities:enderpart>,<quantumflux:craftingpiece:3>,<enderutilities:enderpart>],[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>]]);
-<enderutilities:enderpart:15>.addTooltip(format.white("Before being able to automate this, you have to"));
-<enderutilities:enderpart:15>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
+<enderutilities:enderpart:15>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
+<enderutilities:enderpart:15>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
 
 # Inactive Ender Core (Enhanced)
 recipes.remove(<enderutilities:enderpart:11>);
 recipes.addShaped(<enderutilities:enderpart:11>, [[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>],[<enderutilities:enderpart:1>,<enderutilities:enderpart:10>,<enderutilities:enderpart:1>],[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>]]);
-<enderutilities:enderpart:16>.addTooltip(format.white("Before being able to automate this, you have to"));
-<enderutilities:enderpart:16>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
+<enderutilities:enderpart:16>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
+<enderutilities:enderpart:16>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
 
 # Inactive Ender Core (Advanced)
 recipes.remove(<enderutilities:enderpart:12>);
 recipes.addShaped(<enderutilities:enderpart:12>, [[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>],[<enderutilities:enderpart:2>,<enderutilities:enderpart:11>,<enderutilities:enderpart:2>],[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>]]);
-<enderutilities:enderpart:17>.addTooltip(format.white("Before being able to automate this, you have to"));
-<enderutilities:enderpart:17>.addTooltip(format.white("Right Click an End Crystal in the End to obtain it!"));
+<enderutilities:enderpart:17>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
+<enderutilities:enderpart:17>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
 
 # Ender Capacitor (Basic)
 recipes.remove(<enderutilities:endercapacitor>);
