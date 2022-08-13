@@ -1827,6 +1827,670 @@
     {
       "item": "aether_legacy:aerogel|0",
       "emc": 8
+    },
+    {
+      "item": "abyssalcraft:ccluster9|0",
+      "emc": 288
+    },
+    {
+      "item": "abyssalcraft:ccluster8|0",
+      "emc": 256
+    },
+    {
+      "item": "abyssalcraft:ccluster7|0",
+      "emc": 224
+    },
+    {
+      "item": "abyssalcraft:ccluster6|0",
+      "emc": 192
+    },
+    {
+      "item": "abyssalcraft:ccluster5|0",
+      "emc": 160
+    },
+    {
+      "item": "abyssalcraft:ccluster4|0",
+      "emc": 128
+    },
+    {
+      "item": "abyssalcraft:ccluster3|0",
+      "emc": 96
+    },
+    {
+      "item": "abyssalcraft:ccluster2|0",
+      "emc": 64
+    },
+    {
+      "item": "abyssalcraft:abybrick|0",
+      "emc": 4
+    },
+    {
+      "item": "abyssalcraft:abydreadbrick|0",
+      "emc": 4
+    },
+    {
+      "item": "abyssalcraft:darkstone_brick|0",
+      "emc": 4
+    },
+    {
+      "item": "abyssalcraft:dreadbrick|0",
+      "emc": 4
+    },
+    {
+      "item": "abyssalcraft:ethaxiumbrick|0",
+      "emc": 256
+    },
+    {
+      "item": "abyssalcraft:ingotblock|0",
+      "emc": 144
+    },
+    {
+      "item": "abyssalcraft:ingotblock|2",
+      "emc": 144
+    },
+    {
+      "item": "abyssalcraft:ingotblock|3",
+      "emc": 4608
+    },
+    {
+      "item": "actuallyadditions:block_misc|2",
+      "emc": 64
+    },
+    {
+      "item": "actuallyadditions:block_misc|6",
+      "emc": 512
+    },
+    {
+      "item": "aether_legacy:holystone_brick|0",
+      "emc": 4
+    },
+    {
+      "item": "aether_legacy:zanite_block|0",
+      "emc": 288
+    },
+    {
+      "item": "appliedenergistics2:fluix_block|0",
+      "emc": 200
+    },
+    {
+      "item": "appliedenergistics2:quartz_block|0",
+      "emc": 128
+    },
+    {
+      "item": "atum:fertile_soil|0",
+      "emc": 9
+    },
+    {
+      "item": "atum:khnumite_block|0",
+      "emc": 36
+    },
+    {
+      "item": "betternether:cincinnasite_block|0",
+      "emc": 288
+    },
+    {
+      "item": "bewitchment:block_of_cold_iron|0",
+      "emc": 53928
+    },
+    {
+      "item": "bewitchment:block_of_garnet|0",
+      "emc": 576
+    },
+    {
+      "item": "bewitchment:block_of_opal|0",
+      "emc": 576
+    },
+    {
+      "item": "bewitchment:coquina_bricks|0",
+      "emc": 4
+    },
+    {
+      "item": "bewitchment:dragons_blood_resin_block|0",
+      "emc": 72
+    },
+    {
+      "item": "bigreactors:blockcyanite|0",
+      "emc": 1152
+    },
+    {
+      "item": "bigreactors:blockgraphite|0",
+      "emc": 144
+    },
+    {
+      "item": "bigreactors:blockyellorium|0",
+      "emc": 1152
+    },
+    {
+      "item": "botania:blazeblock|0",
+      "emc": 576
+    },
+    {
+      "item": "botania:manaresource|17",
+      "emc": 302
+    },
+    {
+      "item": "botania:storage|0",
+      "emc": 24462
+    },
+    {
+      "item": "botania:storage|1",
+      "emc": 48726
+    },
+    {
+      "item": "botania:storage|2",
+      "emc": 48906
+    },
+    {
+      "item": "contenttweaker:dark_realm_soul_block|0",
+      "emc": 1152
+    },
+    {
+      "item": "contenttweaker:demonlord_block|0",
+      "emc": 15318
+    },
+    {
+      "item": "contenttweaker:fluxed_electrum_block|0",
+      "emc": 7101
+    },
+    {
+      "item": "contenttweaker:hyper_diamond_block|0",
+      "emc": 18432
+    },
+    {
+      "item": "contenttweaker:osglolapis_block|0",
+      "emc": 13014
+    },
+    {
+      "item": "contenttweaker:relic_block|0",
+      "emc": 576
+    },
+    {
+      "item": "divinerpg:arlemite_block|0",
+      "emc": 1152
+    },
+    {
+      "item": "divinerpg:bloodgem_block|0",
+      "emc": 1152
+    },
+    {
+      "item": "divinerpg:collector|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:corrupted_stone|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:divine_stone|0",
+      "emc": 9216
+    },
+    {
+      "item": "divinerpg:ender_stone|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:ghast_pumpkin|0",
+      "emc": 2304
+    },
+    {
+      "item": "divinerpg:ice_stone|0",
+      "emc": 576
+    },
+    {
+      "item": "divinerpg:jungle_stone|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:molten_stone|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:netherite_block|0",
+      "emc": 576
+    },
+    {
+      "item": "divinerpg:pure_aquatic_pellets|0",
+      "emc": 288
+    },
+    {
+      "item": "divinerpg:realmite_block|0",
+      "emc": 576
+    },
+    {
+      "item": "divinerpg:rupee_block|0",
+      "emc": 1152
+    },
+    {
+      "item": "divinerpg:terran_stone|0",
+      "emc": 288
+    },
+    {
+      "item": "draconicevolution:draconic_block|0",
+      "emc": 73728
+    },
+    {
+      "item": "draconicevolution:draconium_block|0",
+      "emc": 18432
+    },
+    {
+      "item": "enderio:block_alloy_endergy|5",
+      "emc": 1188
+    },
+    {
+      "item": "enderio:block_alloy_endergy|6",
+      "emc": 2340
+    },
+    {
+      "item": "enderio:block_alloy|0",
+      "emc": 729
+    },
+    {
+      "item": "enderio:block_alloy|1",
+      "emc": 2916
+    },
+    {
+      "item": "enderio:block_alloy|2",
+      "emc": 4068
+    },
+    {
+      "item": "enderio:block_alloy|3",
+      "emc": 5193
+    },
+    {
+      "item": "enderio:block_alloy|4",
+      "emc": 1152
+    },
+    {
+      "item": "enderio:block_alloy|5",
+      "emc": 1728
+    },
+    {
+      "item": "enderio:block_alloy|6",
+      "emc": 12258
+    },
+    {
+      "item": "enderio:block_alloy|7",
+      "emc": 2340
+    },
+    {
+      "item": "enderio:block_alloy|8",
+      "emc": 12339
+    },
+    {
+      "item": "enderio:block_infinity|0",
+      "emc": 144
+    },
+    {
+      "item": "enderio:item_alloy_nugget|0",
+      "emc": 9
+    },
+    {
+      "item": "enderio:item_alloy_nugget|1",
+      "emc": 36
+    },
+    {
+      "item": "erebus:amber_bricks|0",
+      "emc": 64
+    },
+    {
+      "item": "erebus:gneiss|0",
+      "emc": 32
+    },
+    {
+      "item": "erebus:jade_block|0",
+      "emc": 1152
+    },
+    {
+      "item": "erebus:materials|15",
+      "emc": 576
+    },
+    {
+      "item": "erebus:planks_petrified_wood|0",
+      "emc": 256
+    },
+    {
+      "item": "erebus:planks|8",
+      "emc": 32
+    },
+    {
+      "item": "erebus:temple_brick|0",
+      "emc": 32
+    },
+    {
+      "item": "erebus:velocity_block|0",
+      "emc": 288
+    },
+    {
+      "item": "evilcraft:dark_block|0",
+      "emc": 576
+    },
+    {
+      "item": "extendedcrafting:storage|2",
+      "emc": 73728
+    },
+    {
+      "item": "extrautils2:simpledecorative|1",
+      "emc": 2304
+    },
+    {
+      "item": "galacticraftcore:basic_block_core|12",
+      "emc": 9216
+    },
+    {
+      "item": "galacticraftcore:basic_block_core|13",
+      "emc": 9
+    },
+    {
+      "item": "galacticraftplanets:asteroids_block|7",
+      "emc": 1152
+    },
+    {
+      "item": "galacticraftplanets:mars|8",
+      "emc": 1152
+    },
+    {
+      "item": "immersiveengineering:storage|5",
+      "emc": 1062
+    },
+    {
+      "item": "integrateddynamics:crystalized_menril_block|0",
+      "emc": 144
+    },
+    {
+      "item": "lightningcraft:stone_block|7",
+      "emc": 4
+    },
+    {
+      "item": "mekanism:basicblock|0",
+      "emc": 1152
+    },
+    {
+      "item": "mekanism:basicblock|2",
+      "emc": 10386
+    },
+    {
+      "item": "mekanism:basicblock|4",
+      "emc": 1188
+    },
+    {
+      "item": "mekanism:saltblock|0",
+      "emc": 144
+    },
+    {
+      "item": "minecraft:clay|0",
+      "emc": 16
+    },
+    {
+      "item": "minecraft:coal_block|0",
+      "emc": 144
+    },
+    {
+      "item": "minecraft:diamond_block|0",
+      "emc": 9216
+    },
+    {
+      "item": "minecraft:emerald_block|0",
+      "emc": 18432
+    },
+    {
+      "item": "minecraft:glowstone|0",
+      "emc": 16
+    },
+    {
+      "item": "minecraft:gold_block|0",
+      "emc": 2304
+    },
+    {
+      "item": "minecraft:hay_block|0",
+      "emc": 72
+    },
+    {
+      "item": "minecraft:iron_block|0",
+      "emc": 576
+    },
+    {
+      "item": "minecraft:lapis_block|0",
+      "emc": 288
+    },
+    {
+      "item": "minecraft:melon_block|0",
+      "emc": 27
+    },
+    {
+      "item": "minecraft:nether_wart_block|0",
+      "emc": 288
+    },
+    {
+      "item": "minecraft:prismarine|0",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:prismarine|1",
+      "emc": 72
+    },
+    {
+      "item": "minecraft:quartz_block|0",
+      "emc": 16
+    },
+    {
+      "item": "minecraft:redstone_block|0",
+      "emc": 576
+    },
+    {
+      "item": "minecraft:slime|0",
+      "emc": 144
+    },
+    {
+      "item": "minecraft:snow|0",
+      "emc": 4
+    },
+    {
+      "item": "minecraft:wool|0",
+      "emc": 27
+    },
+    {
+      "item": "mysticalagriculture:storage|0",
+      "emc": 9
+    },
+    {
+      "item": "mysticalagriculture:storage|5",
+      "emc": 36
+    },
+    {
+      "item": "mysticalworld:amethyst_block|0",
+      "emc": 2304
+    },
+    {
+      "item": "natura:seed_bags|1",
+      "emc": 72
+    },
+    {
+      "item": "natura:seed_bags|2",
+      "emc": 72
+    },
+    {
+      "item": "plustic:alumiteblock|0",
+      "emc": 1395
+    },
+    {
+      "item": "plustic:osgloglasblock|0",
+      "emc": 12726
+    },
+    {
+      "item": "projecte:fuel_block|0",
+      "emc": 576
+    },
+    {
+      "item": "projecte:fuel_block|1",
+      "emc": 2304
+    },
+    {
+      "item": "projecte:fuel_block|2",
+      "emc": 9216
+    },
+    {
+      "item": "projecte:matter_block|0",
+      "emc": 4194304
+    },
+    {
+      "item": "projecte:matter_block|1",
+      "emc": 33554432
+    },
+    {
+      "item": "quark:reed_block|0",
+      "emc": 72
+    },
+    {
+      "item": "quark:soul_sandstone|0",
+      "emc": 16
+    },
+    {
+      "item": "quark:thatch|0",
+      "emc": 32
+    },
+    {
+      "item": "tconstruct:metal|0",
+      "emc": 9216
+    },
+    {
+      "item": "tconstruct:metal|1",
+      "emc": 9216
+    },
+    {
+      "item": "tconstruct:metal|2",
+      "emc": 18432
+    },
+    {
+      "item": "tconstruct:metal|3",
+      "emc": 738
+    },
+    {
+      "item": "tconstruct:metal|5",
+      "emc": 576
+    },
+    {
+      "item": "tconstruct:seared|3",
+      "emc": 12
+    },
+    {
+      "item": "tconstruct:slime_congealed|0",
+      "emc": 64
+    },
+    {
+      "item": "thaumcraft:amber_block|0",
+      "emc": 256
+    },
+    {
+      "item": "thaumcraft:flesh_block|0",
+      "emc": 144
+    },
+    {
+      "item": "thaumcraft:metal_brass|0",
+      "emc": 50004
+    },
+    {
+      "item": "thaumcraft:metal_thaumium|0",
+      "emc": 53928
+    },
+    {
+      "item": "thaumcraft:metal_void|0",
+      "emc": 238140
+    },
+    {
+      "item": "thaumcraft:nugget|7",
+      "emc": 2940
+    },
+    {
+      "item": "thermalfoundation:material|200",
+      "emc": 302
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|0",
+      "emc": 1152
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|1",
+      "emc": 1440
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|2",
+      "emc": 765
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|3",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|4",
+      "emc": 864
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|5",
+      "emc": 963
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|6",
+      "emc": 1008
+    },
+    {
+      "item": "thermalfoundation:storage_alloy|7",
+      "emc": 2160
+    },
+    {
+      "item": "thermalfoundation:storage_resource|0",
+      "emc": 144
+    },
+    {
+      "item": "thermalfoundation:storage|0",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage|1",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage|2",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage|3",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage|4",
+      "emc": 576
+    },
+    {
+      "item": "thermalfoundation:storage|5",
+      "emc": 1152
+    },
+    {
+      "item": "thermalfoundation:storage|6",
+      "emc": 2304
+    },
+    {
+      "item": "thermalfoundation:storage|7",
+      "emc": 4608
+    },
+    {
+      "item": "thermalfoundation:storage|8",
+      "emc": 24462
+    },
+    {
+      "item": "tinkersaether:valkyrie_block|0",
+      "emc": 9216
+    },
+    {
+      "item": "twilightforest:block_storage|1",
+      "emc": 2304
+    },
+    {
+      "item": "twilightforest:block_storage|2",
+      "emc": 144
+    },
+    {
+      "item": "twilightforest:knightmetal_block|0",
+      "emc": 1152
     }
   ]
 }
