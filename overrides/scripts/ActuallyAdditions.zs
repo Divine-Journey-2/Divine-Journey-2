@@ -19,7 +19,7 @@ recipes.addShaped(<actuallyadditions:block_misc:4> * 3, [[<ore:logWood>,<ore:log
 
 # Crate (Small)
 recipes.remove(<actuallyadditions:block_giant_chest>);
-recipes.addShaped(<actuallyadditions:block_giant_chest>, [[<minecraft:chest>,<ore:plankWood>,<minecraft:chest>],[<ore:plankWood>,<ironchest:iron_chest:2>,<ore:plankWood>],[<minecraft:chest>,<ore:plankWood>,<minecraft:chest>]]);
+recipes.addShaped(<actuallyadditions:block_giant_chest>, [[<ore:logWood>,<minecraft:chest>,<ore:logWood>],[<minecraft:chest>,<ironchest:iron_chest:2>,<minecraft:chest>],[<ore:logWood>,<minecraft:chest>,<ore:logWood>]]);
 
 # Crate (Medium)
 recipes.remove(<actuallyadditions:block_giant_chest_medium>);
