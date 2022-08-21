@@ -7,6 +7,8 @@ import mods.thermalexpansion.InductionSmelter;
 import mods.immersiveengineering.AlloySmelter as IEAlloySmelter;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import mods.immersiveengineering.ArcFurnace;
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.PlayerInteractBlockEvent;
 
 print("STARTING TwilightForest.zs");
 
@@ -20,5 +22,18 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<twilightforest:steeleaf_ingot>, 
 EIOAlloySmelter.addRecipe(<twilightforest:steeleaf_ingot>, [<thermalfoundation:material:160>, <roots:spirit_herb>], 4000);
 IEAlloySmelter.addRecipe(<twilightforest:steeleaf_ingot>, <thermalfoundation:material:160>, <roots:spirit_herb>, 160);
 mods.thermalexpansion.InductionSmelter.addRecipe(<twilightforest:steeleaf_ingot>, <thermalfoundation:material:160>, <roots:spirit_herb>, 4000);
+
+# Prevent users to use uncrafting table
+events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent){
+    if (!isNull(e.block)) {
+        if (!isNull(e.block.definition)) {
+            if (!isNull(e.block.definition.id)) {
+                if (e.block.definition.id == "twilightforest:uncrafting_table") {
+                    e.cancel();
+                }
+            }
+        }
+    }
+});
 
 print("ENDING TwilightForest.zs");
