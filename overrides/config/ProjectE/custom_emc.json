@@ -1218,7 +1218,7 @@
     },
     {
       "item": "natura:materials|3",
-      "emc": 3
+      "emc": 4
     },
     {
       "item": "natura:materials|0",
@@ -2286,7 +2286,7 @@
     },
     {
       "item": "minecraft:wool|0",
-      "emc": 27
+      "emc": 32
     },
     {
       "item": "mysticalagriculture:storage|0",
