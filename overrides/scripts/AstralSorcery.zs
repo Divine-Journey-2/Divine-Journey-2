@@ -11,6 +11,7 @@ import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import dj2addons.astralsorcery.Crystals;
 
 print("STARTING AstralSorcery.zs");
 
@@ -238,6 +239,9 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal
 <astralsorcery:blockinfusedwood:5>,<contenttweaker:condensed_vis_crystal_fabrico>,<astralsorcery:blockinfusedwood:5>,
 <lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:5>,<astralsorcery:itemusabledust>,
 <astralsorcery:itemhandtelescope>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
+
+# Fix Starmetal ore reverting to Iron ore
+Crystals.setStarmetalConversion(<contenttweaker:ludicrous_ore>);
 
 # Linking Tool
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking");
