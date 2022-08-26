@@ -462,6 +462,7 @@ recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<o
 
 # Alternative ways to obtain the Demon Ingot
 FluidToItem.transform(<extrautils2:ingredients:11>, <liquid:fire_water>, [<minecraft:gold_ingot>], false);
+FluidToItem.transform(<extrautils2:simpledecorative:1>, <liquid:fire_water>, [<minecraft:gold_block>], false);
 
 recipes.addShaped(<extrautils2:ingredients:11> * 4, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>]]);
 
