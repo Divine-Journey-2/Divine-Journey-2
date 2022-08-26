@@ -444,24 +444,13 @@ recipes.remove(<immersiveengineering:stone_decoration:5>);
 recipes.addShaped(<immersiveengineering:stone_decoration:5> * 12, [[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>],[<ore:gravel>,<liquid:water> * 1000,<ore:gravel>],[<ore:crystalSlag>,<minecraft:clay_ball>,<ore:crystalSlag>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:5> * 8, [[<ore:sand>,<minecraft:clay_ball>,<ore:sand>],[<ore:gravel>,<liquid:water> * 1000,<ore:gravel>],[<ore:sand>,<minecraft:clay_ball>,<ore:sand>]]);
 
-# Excavator changes
-mods.immersiveengineering.Excavator.removeMineral("Platinum");
-mods.immersiveengineering.Excavator.removeMineral("Iridium");
-mods.immersiveengineering.Excavator.removeMineral("Uranium");
-mods.immersiveengineering.Excavator.removeMineral("Bauxite");
-mods.immersiveengineering.Excavator.addMineral("Osmium", 35, 0.005, ["oreOsmium"], [1.0], [0, -1]);
-mods.immersiveengineering.Excavator.addMineral("Aluminum", 10, 0.005, ["oreAluminum"], [1.0], [0, -1]);
-mods.immersiveengineering.Excavator.getMineral("Nickel").removeOre("orePlatinum");
-mods.immersiveengineering.Excavator.getMineral("Coal").removeOre("oreDiamond");
-mods.immersiveengineering.Excavator.getMineral("Coal").addOre("oreDiamond", 0.1);
-mods.immersiveengineering.Excavator.getMineral("Quartzite").addOre("oreQuartzBlack", 0.1);
 
 # Creative Capacitor
 mods.extendedcrafting.TableCrafting.addShaped(<immersiveengineering:metal_device0:3> * 3,
-[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>], 
-[<alchemistry:ingot:114>, <immersiveengineering:metal_device0:2>, <lightningcraft:lightning_cell:3>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:114>], 
-[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>], 
+[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>],
+[<alchemistry:ingot:114>, <immersiveengineering:metal_device0:2>, <lightningcraft:lightning_cell:3>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:114>],
+[<alchemistry:ingot:115>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <immersiveengineering:metal_device0:2>, <alchemistry:ingot:115>],
 [<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>]]);
 
 print("ENDING ImmersiveEngineering.zs");
