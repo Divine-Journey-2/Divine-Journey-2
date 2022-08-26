@@ -129,7 +129,7 @@ recipes.addShapeless(<contenttweaker:energized_certus_quartz_crystal> * 4, [<con
 
 # Energized Certus Quartz Block
 recipes.addShaped(<contenttweaker:energized_certus_quartz_block>, [[<contenttweaker:energized_certus_quartz_crystal>,<contenttweaker:energized_certus_quartz_crystal>],[<contenttweaker:energized_certus_quartz_crystal>,<contenttweaker:energized_certus_quartz_crystal>]]);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_block>, <appliedenergistics2:quartz_block>, <liquid:biodiesel> * 400, 9000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_block>, <appliedenergistics2:quartz_block>, <liquid:biodiesel> * 400, 4000);
 
 # The Perfect Squad
 recipes.addShapeless(<contenttweaker:the_perfect_squad>, [<contenttweaker:arkas_wittyness>, <contenttweaker:guudes_sanity>, <contenttweaker:nebris_justice>, <contenttweaker:pakratts_endurance>]);
