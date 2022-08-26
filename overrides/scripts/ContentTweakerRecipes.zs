@@ -1513,7 +1513,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:botanic_sing
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thaumic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:158>,<extendedcrafting:singularity_custom:157>,<extendedcrafting:singularity:21>,<extendedcrafting:singularity_custom:150>,<extendedcrafting:singularity_custom:152>]);
 
 # Alchemical Singularity
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:alchemic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:alchemic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity_custom:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
 
 # Draglactic Singularity
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:draglactic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:102>,<extendedcrafting:singularity:31>,<extendedcrafting:singularity_custom:155>]);
