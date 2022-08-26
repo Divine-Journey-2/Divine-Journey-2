@@ -7,6 +7,7 @@ import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Melting;
 import mods.astralsorcery.Altar;
+import mods.inworldcrafting.FluidToItem;
 
 print("STARTING ExtraUtilities2.zs");
 
@@ -459,7 +460,9 @@ recipes.addShaped(<extrautils2:compressedsand>, [[<ore:sand>,<ore:sand>,<ore:san
 recipes.removeShaped(<extrautils2:compressedgravel>);
 recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>]]);
 
-# Demon Ingot from Mystical Agriculture Essences
+# Alternative ways to obtain the Demon Ingot
+FluidToItem.transform(<extrautils2:ingredients:11>, <liquid:fire_water>, [<minecraft:gold_ingot>], false);
+
 recipes.addShaped(<extrautils2:ingredients:11> * 4, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>]]);
 
 # Chicken Wing Ring
@@ -514,10 +517,13 @@ for i in 0 to 8 {
 	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
-# Sun Crystal filling with Mystical Agriculture essences
+# Alternative Sun Crystal filling recipes
+FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extrautils2:suncrystal:*>], false);
+
 recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
-<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground."));
-<extrautils2:suncrystal>.addTooltip(format.white("Later you can use Glowstone Essence to fill it."));
+
+<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground when exposed to the sun."));
+<extrautils2:suncrystal>.addTooltip(format.white("Later, you can use Liquid Sunshine or Glowstone Essence to fill it."));
 
 # Opinium Core (Pathetic)
 recipes.remove(<extrautils2:opinium>);
