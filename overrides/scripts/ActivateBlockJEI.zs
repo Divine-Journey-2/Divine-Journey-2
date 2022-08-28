@@ -41,12 +41,6 @@ addInteraction(<enderutilities:enderpart:10>, <contenttweaker:stabilized_end_cry
 addInteraction(<enderutilities:enderpart:11>, <contenttweaker:stabilized_end_crystal>, <enderutilities:enderpart:16>);
 addInteraction(<enderutilities:enderpart:12>, <contenttweaker:stabilized_end_crystal>, <enderutilities:enderpart:17>);
 
-// Energizing Potato Armor with a Chaos Stabilizer Core
-addInteraction(<draconicadditions:infused_potato_helm>, <draconicadditions:chaos_stabilizer_core>, <draconicadditions:potato_helm>.withTag({Energy: 0}));
-addInteraction(<draconicadditions:infused_potato_chest>, <draconicadditions:chaos_stabilizer_core>, <draconicadditions:potato_chest>.withTag({Energy: 0}));
-addInteraction(<draconicadditions:infused_potato_legs>, <draconicadditions:chaos_stabilizer_core>, <draconicadditions:potato_legs>.withTag({Energy: 0}));
-addInteraction(<draconicadditions:infused_potato_boots>, <draconicadditions:chaos_stabilizer_core>, <draconicadditions:potato_boots>.withTag({Energy: 0}));
-
 // Indicating how to obtain Ignition
 addInteraction(<contenttweaker:flame_devourer_pendant>.withTag({display:{Lore: ["§r§bMust be afflicted with the §cHell Fire§b status","§r§bUses Durability"]}}), <bewitchment:brazier>, <contenttweaker:ignition>);
 
