@@ -266,7 +266,7 @@ recipes.addShaped(<bloodmagic:lava_crystal>, [[<abyssalcraft:crystalcluster:3>,<
 for i in 1 to 16 {
     val target = <bloodmagic:blood_tank>.definition.makeStack(i);
     val origin = <bloodmagic:blood_tank>.definition.makeStack(i - 1);
-    val amount = 1000 + ((i + 1) * (i + 1));
+    val amount = 1000 * ((i + 1) * (i + 1));
 
 	recipes.remove(target);
     recipes.addHiddenShapeless("blood_magic_tank_clearing_"~i, target, [target]);
