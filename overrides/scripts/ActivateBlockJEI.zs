@@ -51,6 +51,7 @@ addInteraction(<minecraft:dye:15>, <minecraft:double_plant:4>, <minecraft:double
 addInteraction(<minecraft:dye:15>, <minecraft:double_plant:5>, <minecraft:double_plant:5> * 2);
 
 // Basic Salis Mundus tranformations
+addInteraction(<thaumcraft:salis_mundus>, <minecraft:bookshelf>, <thaumcraft:thaumonomicon>);
 addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 
