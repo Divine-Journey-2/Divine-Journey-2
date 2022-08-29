@@ -1,0 +1,82 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicenergistics_blank_knowledge_core",
+    "recipeTime": 16,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 8000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:jar_brain"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:focus_3",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:fortified_glass",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "diabolus",
+            "amount": 40
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 180
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "fabrico",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praemunio",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "potentia",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vinculum",
+            "amount": 80
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "exanimis",
+            "amount": 10
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vacuos",
+            "amount": 10
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicenergistics:blank_knowledge_core"
+        }
+    ]
+}

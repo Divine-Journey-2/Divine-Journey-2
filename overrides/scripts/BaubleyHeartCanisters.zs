@@ -40,7 +40,7 @@ mods.botania.RuneAltar.addRecipe(<bhc:green_heart>, [<bhc:red_heart>,<bhc:red_he
 
 # Green Heart Canister
 recipes.remove(<bhc:green_heart_canister>);
-recipes.addShapeless(<bhc:green_heart_canister>, [<bhc:orange_heart_canister>,<bhc:green_heart>,<forge:bucketfilled>.withTag({FluidName: "lifeessence", Amount: 1000}),<botania:storage:1>]);
+recipes.addShapeless(<bhc:green_heart_canister>, [<bhc:orange_heart_canister>,<bhc:green_heart>,<liquid:lifeessence> * 1000,<botania:storage:1>]);
 recipes.addHiddenShapeless("bhc_clear3", <bhc:green_heart_canister>, [<bhc:green_heart_canister>]);
 
 function addAstralSorceryIrridescentAltarRecipeWithConstellation(name as string, output as IItemStack, starlight as int, i as IIngredient[][], additionals as IIngredient[], constellation as string) {

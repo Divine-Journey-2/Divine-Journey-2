@@ -57,7 +57,7 @@ recipes.addShaped(<thaumcraft:ore_quartz>, [[<divinerpg:dream_stone>,null,<divin
 recipes.addShaped(<minecraft:emerald_ore>, [[null,<divinerpg:dream_dirt>,null],[<divinerpg:dream_dirt>,<minecraft:diamond_ore>,<divinerpg:dream_dirt>],[null,<divinerpg:dream_dirt>,null]]);
 
 # Salt Ore
-recipes.addShaped(<bewitchment:salt_ore>, [[<divinerpg:dream_dirt>,null,<divinerpg:dream_dirt>],[null,null,null],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>]]);
+recipes.addShaped(<mekanism:saltblock>, [[<divinerpg:dream_dirt>,null,<divinerpg:dream_dirt>],[null,null,null],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>]]);
 
 # Realmite Ore
 recipes.addShaped(<divinerpg:realmite_ore>, [[<divinerpg:dream_stone>,<thermalfoundation:ore>,<divinerpg:dream_stone>]]);
@@ -78,7 +78,7 @@ recipes.addShaped(<minecraft:sand> * 2, [[null,<divinerpg:dream_dirt>,null],[<di
 recipes.addShaped(<minecraft:gravel> * 2, [[<divinerpg:dream_dirt>,<divinerpg:dream_stone>,<divinerpg:dream_dirt>],[<divinerpg:dream_stone>,null,<divinerpg:dream_stone>],[<divinerpg:dream_dirt>,<divinerpg:dream_stone>,<divinerpg:dream_dirt>]]);
 
 # Clay
-recipes.addShaped(<minecraft:clay_ball> * 8, [[null,<divinerpg:dream_dirt>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<divinerpg:dream_dirt>,null]]);
+recipes.addShaped(<minecraft:clay_ball> * 8, [[null,<divinerpg:dream_dirt>,null],[<divinerpg:dream_dirt>,<liquid:water> * 1000,<divinerpg:dream_dirt>],[null,<divinerpg:dream_dirt>,null]]);
 
 # Water Bucket
 recipes.addShaped(<minecraft:water_bucket>, [[null,<divinerpg:firelight>,null],[<divinerpg:firelight>,<minecraft:bucket>,<divinerpg:firelight>],[null,<divinerpg:firelight>,null]]);
@@ -90,10 +90,10 @@ recipes.addShaped(<minecraft:lava_bucket>, [[null,<divinerpg:fire_crystal>,null]
 recipes.addShaped(<minecraft:glowstone> * 2, [[<divinerpg:fire_crystal>,<divinerpg:dream_stone>,<divinerpg:fire_crystal>],[<divinerpg:dream_stone>,<divinerpg:fire_crystal>,<divinerpg:dream_stone>],[<divinerpg:fire_crystal>,<divinerpg:dream_stone>,<divinerpg:fire_crystal>]]);
 
 # Brown Mushroom
-recipes.addShaped(<minecraft:brown_mushroom> * 4, [[null,<contenttweaker:planks_mintwood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_mintwood>,null]]);
+recipes.addShaped(<minecraft:brown_mushroom> * 4, [[null,<contenttweaker:planks_mintwood>,null],[<divinerpg:dream_dirt>,<liquid:water> * 1000,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_mintwood>,null]]);
 
 # Red Mushroom
-recipes.addShaped(<minecraft:red_mushroom> * 4, [[null,<contenttweaker:planks_firewood>,null],[<divinerpg:dream_dirt>,<minecraft:water_bucket>,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_firewood>,null]]);
+recipes.addShaped(<minecraft:red_mushroom> * 4, [[null,<contenttweaker:planks_firewood>,null],[<divinerpg:dream_dirt>,<liquid:water> * 1000,<divinerpg:dream_dirt>],[null,<contenttweaker:planks_firewood>,null]]);
 
 # Biodiesel Bucket
 recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}), [[null,<divinerpg:crypt_wall>,null],[<divinerpg:clean_pearls>,<minecraft:water_bucket>.noReturn(),<divinerpg:clean_pearls>],[null,<divinerpg:crypt_wall>,null]]);
@@ -105,7 +105,7 @@ recipes.addShaped(<immersiveengineering:stone_decoration:1> * 2, [[<thermalfound
 recipes.addShaped(<immersiveengineering:stone_decoration> * 2, [[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>],[<minecraft:brick>,<divinerpg:polished_pearls>,<minecraft:brick>],[<mekanism:ingot:1>,<minecraft:brick>,<mekanism:ingot:1>]]);
 
 # Blaze Rod
-recipes.addShaped(<minecraft:blaze_rod> * 8, [[null,<divinerpg:clean_pearls>,null],[<divinerpg:clean_pearls>,<minecraft:lava_bucket>,<divinerpg:clean_pearls>],[null,<divinerpg:clean_pearls>,null]]);
+recipes.addShaped(<minecraft:blaze_rod> * 8, [[null,<divinerpg:clean_pearls>,null],[<divinerpg:clean_pearls>,<liquid:lava> * 1000,<divinerpg:clean_pearls>],[null,<divinerpg:clean_pearls>,null]]);
 
 # Ender Pearl
 recipes.addShapeless(<minecraft:ender_pearl>, [<divinerpg:dirty_pearls>,<divinerpg:acid>,<minecraft:emerald>]);
@@ -122,7 +122,7 @@ recipes.addShapeless(<botania:brewvial>.withTag({brewKey: "thaumcraft:warpward"}
 recipes.addShaped(<enderstorage:ender_storage>, [[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>],[<contenttweaker:eye_of_the_nightmare>,<mekanism:basicblock:8>,<contenttweaker:eye_of_the_nightmare>],[<botania:blazeblock>,<divinerpg:heliosis_lump>,<botania:blazeblock>]]);
 
 # Soul Sand
-recipes.addShaped(<minecraft:soul_sand> * 3, [[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>],[<minecraft:sand>,<minecraft:lava_bucket>,<minecraft:sand>],[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>]]);
+recipes.addShaped(<minecraft:soul_sand> * 3, [[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>],[<minecraft:sand>,<liquid:lava> * 1000,<minecraft:sand>],[<minecraft:sand>,<divinerpg:polished_pearls>,<minecraft:sand>]]);
 
 # Soul Vial
 var all_pearls = [<divinerpg:dirty_pearls>,<divinerpg:clean_pearls>,<divinerpg:polished_pearls>,<divinerpg:shiny_pearls>] as IItemStack[];

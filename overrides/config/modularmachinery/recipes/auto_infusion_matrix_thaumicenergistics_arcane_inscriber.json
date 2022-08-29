@@ -1,0 +1,76 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_thaumicenergistics_arcane_inscriber",
+    "recipeTime": 16,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 4000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicenergistics:arcane_terminal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:mind",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "appliedenergistics2:part@340",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:estimation_processor",
+            "amount": 2
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "machina",
+            "amount": 180
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "cognitio",
+            "amount": 180
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "fabrico",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "permutatio",
+            "amount": 60
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitium",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "thaumicenergistics:arcane_inscriber"
+        }
+    ]
+}

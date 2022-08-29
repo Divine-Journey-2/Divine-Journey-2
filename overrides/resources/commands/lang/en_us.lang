@@ -1,0 +1,8 @@
+commands.curseforge.usage=Sends a link to the curseforge page in chat.
+commands.discord.usage=Sends a link to the discord page in chat.
+commands.issues.usage=Sends a link to the issues page in chat.
+commands.guides.usage=Sends a link to the guides page in chat.
+commands.curseforge.text=Click here to open the DJ2 Curseforge page
+commands.discord.text=Click here to join the Discord
+commands.issues.text=Click here to report a bug or issue
+commands.guides.text=Click here to view a few community-developed guides

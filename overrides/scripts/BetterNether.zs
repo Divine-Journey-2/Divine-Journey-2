@@ -15,7 +15,7 @@ recipes.addShapeless(<betternether:cincinnasite> * 9, [<betternether:cincinnasit
 recipes.remove(<betternether:cincinnasite_forged>);
 furnace.remove(<betternether:cincinnasite_forged>);
 mods.atum.Kiln.blacklist("betternether:cincinnasite_forged");
-recipes.addShaped(<betternether:cincinnasite_forged> * 2, [[null,<thermalfoundation:material:356>,null],[<ore:ingotSteel>,<betternether:cincinnasite_block>,<ore:ingotSteel>],[null,<minecraft:lava_bucket>,null]]);
+recipes.addShaped(<betternether:cincinnasite_forged> * 2, [[null,<thermalfoundation:material:356>,null],[<ore:ingotSteel>,<betternether:cincinnasite_block>,<ore:ingotSteel>],[null,<liquid:lava> * 1000,null]]);
 
 # Cincinnasite Forge
 recipes.remove(<betternether:cincinnasite_forge>);

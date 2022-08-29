@@ -11,6 +11,7 @@ import mods.astralsorcery.LightTransmutation;
 import mods.astralsorcery.StarlightInfusion;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import dj2addons.astralsorcery.Crystals;
 
 print("STARTING AstralSorcery.zs");
 
@@ -107,8 +108,6 @@ recipes.addShaped(<astralsorcery:blockblackmarble:6> * 4, [[null,<astralsorcery:
 
 # Luminous Crafting Table
 recipes.remove(<astralsorcery:blockaltar>);
-recipes.addShaped(<astralsorcery:blockaltar>, [[<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>],[<astralsorcery:blockmarble:6>,<bigreactors:blockblutonium>,<astralsorcery:blockmarble:6>],[<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>]]);
-/*
 mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockaltar>,
 [[<astralsorcery:blockmarble:6>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<astralsorcery:blockmarble:6>],
 [<astralsorcery:blockmarble:6>,<bigreactors:ingotblutonium>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<extendedcrafting:table_basic>,<bigreactors:ingotblutonium>,<astralsorcery:blockmarble:6>],
@@ -117,7 +116,6 @@ mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockaltar>,
 [null,null,<bigreactors:ingotblutonium>,<contenttweaker:condensed_vis_crystal_stellae>,<bigreactors:ingotblutonium>,null,null],
 [null,null,<bigreactors:ingotblutonium>,<contenttweaker:condensed_vis_crystal_stellae>,<bigreactors:ingotblutonium>,null,null],
 [<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>,<lightningcraft:ingot:2>]]);
-*/
 
 # Resonating Wand
 recipes.remove(<astralsorcery:itemwand>);
@@ -242,6 +240,9 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal
 <lightningcraft:rod:9>,<astralsorcery:blockinfusedwood:5>,<astralsorcery:itemusabledust>,
 <astralsorcery:itemhandtelescope>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>]);
 
+# Fix Starmetal ore reverting to Iron ore
+Crystals.setStarmetalConversion(<contenttweaker:ludicrous_ore>);
+
 # Linking Tool
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking");
 mods.astralsorcery.Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking", <astralsorcery:itemlinkingtool>, 950, 100,
@@ -262,7 +263,7 @@ null,null,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]
 /*
 <astralsorcery:blockcollectorcrystal>.withTag(
 	{
-		astralsorcery: 
+		astralsorcery:
 		{
 			constellationName: "astralsorcery.constellation.discidia",
 			crystalProperties:
@@ -312,7 +313,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:blockcollectorcryst
 [null,<alchemistry:ingot:11>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:11>,null],
 [null,<alchemistry:ingot:11>,<contenttweaker:conducted_impetus>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<contenttweaker:conducted_impetus>,<alchemistry:ingot:11>,null],
 [null,null,<astralsorcery:itemcraftingcomponent:3>,<openblocks:tank>.withTag({tank: {FluidName: "astralsorcery.liquidstarlight", Amount: 16000}}),<astralsorcery:itemcraftingcomponent:3>,null,null],
-[null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null]]);  
+[null,null,null,<astralsorcery:itemcraftingcomponent:3>,null,null,null]]);
 
 # Starmetal Ore
 mods.astralsorcery.LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>, false);
@@ -640,7 +641,7 @@ addAstralSorceryIrradiantStarRecipe("armara", <astralsorcery:itemshiftingstar>.w
 # Irradiant Star: Vicio
 addAstralSorceryIrradiantStarRecipe("vicio", <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}), <bewitchment:flying_ointment>);
 
-# Irradiant Star: Aevitas 
+# Irradiant Star: Aevitas
 addAstralSorceryIrradiantStarRecipe("aevitas", <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}), <contenttweaker:rainbow_tablet>);
 
 # Irradiant Star: Evorsio

@@ -11,6 +11,9 @@ for i in 0 to 2 {
 	recipes.addShaped(<bibliocraft:framedchest>.withDamage(i+4), [[<minecraft:log2>.withDamage(i),<minecraft:planks>.withDamage(i+4),<minecraft:log2>.withDamage(i)],[<minecraft:planks>.withDamage(i+4),<bibliocraft:label>.withDamage(i+4),<minecraft:planks>.withDamage(i+4)],[<minecraft:log2>.withDamage(i),<minecraft:planks>.withDamage(i+4),<minecraft:log2>.withDamage(i)]]);
 }
 
+# Remove Bibliocraft Bell (causes errors)
+recipes.remove(<bibliocraft:bell>);
+
 # Print Press Chase
 recipes.remove(<bibliocraft:bibliochase>);
 recipes.addShaped(<bibliocraft:bibliochase>, [[null,<bibliocraft:framingboard>,null],[<bibliocraft:framingboard>,<avaritia:resource>,<bibliocraft:framingboard>],[null,<bibliocraft:framingboard>,null]]);
