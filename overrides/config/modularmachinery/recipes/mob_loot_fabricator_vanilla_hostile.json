@@ -48,6 +48,18 @@
         {
             "type": "item",
             "io-type": "output",
+            "item": "minecraft:sugar",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:stick",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
             "item": "minecraft:glowstone_dust",
             "amount": 64
         },
@@ -74,6 +86,12 @@
             "io-type": "output",
             "item": "mysticalagriculture:chunk",
             "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:glass_bottle",
+            "amount": 16
         }
     ]
 }

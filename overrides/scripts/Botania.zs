@@ -930,7 +930,7 @@ Brews.addBrewRecipe(
         "dj2addons.brew.saturegen",
         100000,
         16262179,
-        <potion:dj2addons:saturegen>.makePotionEffect(12000, 1)
+        <potion:dj2addons:saturegen>.makePotionEffect(20 * 60 * 10, 1) // brew will last 10 minutes
     ),
     [<minecraft:nether_wart>, <totemic:cooked_buffalo_meat>, <contenttweaker:chicken_nugget>, <contenttweaker:burger>, <contenttweaker:taco>]
 );
@@ -943,7 +943,7 @@ Brews.addBrewRecipe(
         "Sane Thoughts",
         100000,
         16503291,
-        <potion:thaumcraft:warpward>.makePotionEffect(12000, 0)
+        <potion:thaumcraft:warpward>.makePotionEffect(20 * 60 * 60 * 2, 0) // brew will last an hour
     ),
     [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>, <contenttweaker:conducted_impetus>, <thaumcraft:sanity_checker>]
 );

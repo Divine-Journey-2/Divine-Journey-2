@@ -1,15 +1,15 @@
 {
     "images":
     {
-		"modpack":
-		{
+        "modpack":
+        {
             "image" : "mainmenu:modpack_icon.png",
             "posX" : -270,
             "posY" : 0,
             "width" : 262,
             "height" : 94,
             "alignment" : "top_right"
-		}
+        }
     },
 
     "buttons":
@@ -22,13 +22,13 @@
             "posY" : 95,
             "width" : 224,
             "height" : 27,
-			"alignment" : "top_right",
-            "action" : 
+            "alignment" : "top_right",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "singleplayer"
             }
-        },        
+        },
         "multiplayer":
         {
             "text" : "",
@@ -36,14 +36,14 @@
             "posY" : 122,
             "width" : 224,
             "height" : 27,
-			"alignment" : "top_right",
-			"texture" : "mainmenu:multiplayer.png",
-            "action" : 
+            "alignment" : "top_right",
+            "texture" : "mainmenu:multiplayer.png",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "multiplayer"
             }
-        },    		
+        },
         "options":
         {
             "text" : "",
@@ -51,14 +51,14 @@
             "posY" : 149,
             "width" : 224,
             "height" : 27,
-			"alignment" : "top_right",
-			"texture" : "mainmenu:options.png",
-            "action" : 
+            "alignment" : "top_right",
+            "texture" : "mainmenu:options.png",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "options"
             }
-        },     
+        },
         "mods":
         {
             "text" : "",
@@ -66,14 +66,14 @@
             "posY" : 176,
             "width" : 224,
             "height" : 27,
-			"alignment" : "top_right",
-			"texture" : "mainmenu:mods.png",
-            "action" : 
+            "alignment" : "top_right",
+            "texture" : "mainmenu:mods.png",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "mods"
             }
-        },	
+        },
         "version_history":
         {
             "text" : "",
@@ -81,14 +81,14 @@
             "posY" : 203,
             "width" : 224,
             "height" : 27,
-			"alignment" : "top_right",
-			"texture" : "mainmenu:version_history.png",
-            "action" : 
+            "alignment" : "top_right",
+            "texture" : "mainmenu:version_history.png",
+            "action" :
             {
                 "type" : "openLink",
-				"link" : "https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files"
+                "link" : "https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files"
             }
-        },         
+        },
         "discord":
         {
             "text" : "",
@@ -96,15 +96,15 @@
             "posY" : 230,
             "width" : 62,
             "height" : 63,
-			"tooltip": "Join the Divine Journey 2 Discord Server!",
-			"alignment" : "top_right",
-			"texture" : "mainmenu:discord.png",
-            "action" : 
+            "tooltip": "Join the Divine Journey 2 Discord Server!",
+            "alignment" : "top_right",
+            "texture" : "mainmenu:discord.png",
+            "action" :
             {
                 "type" : "openLink",
-				"link" : "https://discord.gg/rH9pyS7"
+                "link" : "https://discord.gg/rH9pyS7"
             }
-        },	 
+        },
         "language":
         {
             "text" : "",
@@ -112,15 +112,15 @@
             "posY" : 230,
             "width" : 62,
             "height" : 63,
-			"tooltip": "Language",
-			"alignment" : "top_right",
-			"texture" : "mainmenu:language.png",
-            "action" : 
+            "tooltip": "Language",
+            "alignment" : "top_right",
+            "texture" : "mainmenu:language.png",
+            "action" :
             {
                 "type" : "openGui",
                 "gui" : "languages"
             }
-        },   
+        },
         "quit_game":
         {
             "text" : "",
@@ -128,13 +128,13 @@
             "posY" : 230,
             "width" : 100,
             "height" : 63,
-			"alignment" : "top_right",
-			"texture" : "mainmenu:quit_game.png",
-            "action" : 
+            "alignment" : "top_right",
+            "texture" : "mainmenu:quit_game.png",
+            "action" :
             {
                 "type" : "quit"
             }
-        },	
+        },
         "refresh":
         {
             "text" : "",
@@ -142,15 +142,15 @@
             "posY" : 0,
             "width" : 20,
             "height" : 20,
-			"alignment" : "top_right",
+            "alignment" : "top_right",
             "texture" : "mainmenu:largebutton.png",
-            "action" : 
-		{
+            "action" :
+        {
                 "type" : "refresh"
-		}
+        }
         }
     },
-    
+
     "labels":
     {
         "mojang":
@@ -158,82 +158,82 @@
             "text" : "Copyright Mojang AB",
             "posX" : -65,
             "posY" : -6,
-			"fontSize" : 0.6,
+            "fontSize" : 0.6,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "bottom_right"
         },
-		"forge":{
-			"text" : "Minecraft #mcversion#",
+        "forge":{
+            "text" : "Minecraft #mcversion#",
             "posX" : 3,
             "posY" : -12,
-			"fontSize" : 0.6,
+            "fontSize" : 0.6,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "bottom_left"
-		},
-		"modsloaded":{
-			"text" : "#modsloaded# Mods Loaded",
+        },
+        "modsloaded":{
+            "text" : "#modsloaded# Mods Loaded",
             "posX" : 3,
             "posY" : -6,
-			"fontSize" : 0.6,
+            "fontSize" : 0.6,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "bottom_left"
-		},
-		"modpack":{
-			"text" : "Divine Journey 2.15.0",
+        },
+        "modpack":{
+            "text" : "Divine Journey 2.16.0",
             "posX" : 3,
             "posY" : -24,
-			"fontSize" : 0.6,
+            "fontSize" : 0.6,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "bottom_left"
-		},
-		"creator":{
-			"text" : "- modpack by Atricos",
+        },
+        "creator":{
+            "text" : "- modpack by Atricos",
             "posX" : 3,
             "posY" : -18,
-			"fontSize" : 0.6,
+            "fontSize" : 0.6,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "bottom_left"
-		},
-		"newsLine1":{
-			"text" : "",
+        },
+        "newsLine1":{
+            "text" : "",
             "posX" : -140,
             "posY" : 5,
-			"fontSize" : 1.3,
-			"color" : -1,
-			"hoverColor" : -1,
+            "fontSize" : 1.3,
+            "color" : -1,
+            "hoverColor" : -1,
             "alignment" : "top_right"
-		},
-		"newsLine2":{
-			"text" : "",
+        },
+        "newsLine2":{
+            "text" : "",
             "posX" : -140,
             "posY" : 19,
-			"fontSize" : 1.3,
+            "fontSize" : 1.3,
             "color" : -1,
-			"hoverColor" : -1,
+            "hoverColor" : -1,
             "alignment" : "top_right"
-		},
-		"newsLine3":{
-			"text" : "",
+        },
+        "newsLine3":{
+            "text" : "",
             "posX" : -140,
             "posY" : 33,
-			"fontSize" : 0.8,
+            "fontSize" : 0.8,
             "color" : -1,
-			"hoverColor" : 13158400,
+            "hoverColor" : 13158400,
             "alignment" : "top_right"
-		}
+        }
     },
-    
+
     "other":
     {
-		"background":
-		{
-			"image" : "mainmenu:background.png",
-			"mode" : "center"
-		}
+        "background":
+        {
+            "image" : "mainmenu:background.png",
+            "mode" : "center"
+        }
     }
 }

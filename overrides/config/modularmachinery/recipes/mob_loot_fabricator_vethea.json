@@ -1,0 +1,49 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_vethea",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "divinerpg:moon_clock",
+            "amount": 1,
+            "chance": 0
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:clean_pearls",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:dirty_pearls",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:shiny_pearls",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:polished_pearls",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:acid",
+            "amount": 32
+        }
+    ]
+}

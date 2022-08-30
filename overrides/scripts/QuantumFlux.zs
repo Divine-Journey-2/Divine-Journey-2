@@ -50,7 +50,7 @@ recipes.addShaped(<quantumflux:craftingpiece:4>, [[<quantumflux:darkstone>,<cont
 
 # Exciter Upgrade
 recipes.remove(<quantumflux:exciterupgrade>);
-recipes.addShaped(<quantumflux:exciterupgrade>, [[<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>],[<enderio:item_alloy_ingot:3>,<quantumflux:craftingpiece:5>,<enderio:item_alloy_ingot:3>],[<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>]]);
+recipes.addShaped(<quantumflux:exciterupgrade> * 4, [[<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>],[<enderio:item_alloy_ingot:3>,<quantumflux:craftingpiece:5>,<enderio:item_alloy_ingot:3>],[<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>]]);
 
 # Gold Casing
 recipes.remove(<quantumflux:craftingpiece:1>);
@@ -128,10 +128,10 @@ recipes.remove(<quantumflux:imaginarytime>);
 
 # Creative Quibit Cluster
 mods.extendedcrafting.TableCrafting.addShaped(<quantumflux:quibitcluster>,
-[[<quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>], 
-[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>], 
-[<quantumflux:darkstone>, <quantumflux:quibitcluster:5>, <rftools:powercell_creative>, <quantumflux:quibitcluster:5>, <quantumflux:darkstone>], 
-[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>], 
+[[<quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>],
+[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>],
+[<quantumflux:darkstone>, <quantumflux:quibitcluster:5>, <rftools:powercell_creative>, <quantumflux:quibitcluster:5>, <quantumflux:darkstone>],
+[<quantumflux:darkstone>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:craftingpiece:2>, <quantumflux:darkstone>],
 [<quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>, <quantumflux:darkstone>]]);
 
 print("ENDING QuantumFlux.zs");

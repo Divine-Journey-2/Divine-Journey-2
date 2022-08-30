@@ -270,6 +270,6 @@ recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering
 
 # Solar Essence -> Solar Dust, Venus Volcanic Rock
 recipes.addShaped(<galacticraftplanets:basic_item_venus:4> * 3, [[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,null,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>]]);
-recipes.addShaped(<galacticraftplanets:venus:2> * 3, [[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>],[<contenttweaker:solar_essence>,<minecraft:lava_bucket>,<contenttweaker:solar_essence>],[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>]]);
+recipes.addShaped(<galacticraftplanets:venus:2> * 3, [[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>],[<contenttweaker:solar_essence>,<liquid:lava> * 1000,<contenttweaker:solar_essence>],[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>]]);
 
 print("ENDING GalacticraftPlanets.zs");
