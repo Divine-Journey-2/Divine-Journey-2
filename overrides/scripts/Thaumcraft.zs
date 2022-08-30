@@ -164,7 +164,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:sanitychecker",
 # Essentia Filter
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "TUBES", 5, [<aspect:aqua> * 2], <thaumcraft:filter> * 3, [[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal],[empowered_glod_crystal,<contenttweaker:rune_of_water>,empowered_glod_crystal],[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal]]);
-recipes.addShaped(<thaumcraft:filter> * 2, [[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal],[empowered_glod_crystal,<contenttweaker:rune_of_water>,empowered_glod_crystal],[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal]]);
 
 # Rare Earths
 <thaumcraft:nugget:10>.addTooltip(format.gray(format.italic("<Hold Shift for info on how to acquire>")));

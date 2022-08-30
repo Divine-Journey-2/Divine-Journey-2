@@ -59,6 +59,9 @@ recipes.addShaped(<tconstruct:materials:17>, [[<quark:black_ash>,<quark:black_as
 # Plate Cast
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 
+# Gear Cast
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:4>);
+
 # Creative Modifier
 mods.extendedcrafting.TableCrafting.addShaped(<tconstruct:materials:50>,
 [[<extendedcrafting:singularity:5>,<alchemistry:ingot:91>,<divinerpg:golden_fury>,<alchemistry:ingot:91>,<extendedcrafting:singularity:5>],

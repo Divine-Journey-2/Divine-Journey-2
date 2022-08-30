@@ -377,6 +377,7 @@ recipes.addShaped(<appliedenergistics2:part:340>, [[null,<contenttweaker:methodo
 
 # Interface Terminal
 recipes.remove(<appliedenergistics2:part:480>);
+recipes.addShapeless(<appliedenergistics2:part:480>, [<appliedenergistics2:part:521>]);
 recipes.addShaped(<appliedenergistics2:part:480>, [[null,<contenttweaker:methodology_processor>,null],[<appliedenergistics2:interface>,<appliedenergistics2:part:360>,<appliedenergistics2:interface>],[null,<contenttweaker:methodology_processor>,null]]);
 
 # ME Fluid Level Emitter

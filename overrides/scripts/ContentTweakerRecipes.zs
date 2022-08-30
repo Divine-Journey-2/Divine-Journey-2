@@ -74,62 +74,8 @@ recipes.addShapeless(<contenttweaker:compressed_obsidian2> * 9, [<contenttweaker
 recipes.addShaped(<contenttweaker:baykoks_bloodied_stone> * 8, [[<tconstruct:edible:3>,<minecraft:obsidian>,<tconstruct:edible:3>],[<minecraft:obsidian>,<totemic:baykok_bow>.anyDamage().transformDamage(1),<minecraft:obsidian>],[<tconstruct:edible:3>,<minecraft:obsidian>,<tconstruct:edible:3>]]);
 
 # Treated Leather
-recipes.addShapeless(<contenttweaker:treated_leather>, [<minecraft:leather>,<minecraft:water_bucket>,<ore:dyeLime>,<minecraft:flint>]);
-recipes.addHiddenShapeless("treated_leather_tank", <contenttweaker:treated_leather>, [<minecraft:leather>,<thermalexpansion:tank>.reuse().marked("input_tank"),<ore:dyeLime>,<minecraft:flint>],
-function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "Fluid") {
-		if(ins.input_tank.tag.Fluid.FluidName == "water" && ins.input_tank.tag.Fluid.Amount >= 1000) {
-			return out;
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <thermalexpansion:tank>.name) {
-				tank_position = i;
-				break;
-			}
-		}
-	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.Fluid.Amount;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {Fluid: {FluidName: "water", Amount: fluid_amount - 1000}}));
-});
-recipes.addHiddenShapeless("treated_leather_tank2", <contenttweaker:treated_leather>, [<minecraft:leather>,<enderio:block_tank:*>.reuse().marked("input_tank"),<ore:dyeLime>,<minecraft:flint>],
-function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "enderio:data") {
-		if(ins.input_tank.tag.memberGet("enderio:data") has "tank") {
-			if(ins.input_tank.tag.memberGet("enderio:data").tank.FluidName == "water" && ins.input_tank.tag.memberGet("enderio:data").tank.Amount >= 1000) {
-				return out;
-			} else {
-				return null;
-			}
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <enderio:block_tank>.name || cInfo.inventory.getStack(i).name == <enderio:block_tank:1>.name) {
-				tank_position = i;
-				break;
-			}
-		}
-	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Amount;
-	val tank_capacity = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Capacity;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {"enderio:data": {tank: {FluidName: "water", Capacity: tank_capacity, Amount: fluid_amount - 1000}}}));
-});
+recipes.addShapeless(<contenttweaker:treated_leather>, [<minecraft:leather>,<liquid:water> * 1000,<ore:dyeLime>,<minecraft:flint>]);
+recipes.addHiddenShapeless("treated_leather_tank", <contenttweaker:treated_leather>, [<minecraft:leather>,<liquid:water> * 1000,<ore:dyeLime>,<minecraft:flint>]);
 
 # Buffalo Hide Scrap
 recipes.addShaped(<contenttweaker:buffao_hide_scrap> * 8, [[<totemic:buffalo_items>],[<totemic:buffalo_items>]]);
@@ -168,70 +114,7 @@ recipes.addShaped(<contenttweaker:flawless_scarab_wings>, [[<minecraft:blaze_pow
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:industrial_slime_ball>, <ore:slimeball>, null, 150, 80, [<minecraft:porkchop>, <minecraft:beef>, <mekanism:salt>, <minecraft:clay_ball>]);
 
 # Energized Osmium Ingot
-recipes.addShaped(<contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]]);
-/*
-recipes.addHiddenShaped("energized_osmium_tank", <contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<thermalexpansion:tank>.reuse().marked("input_tank"),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]],
-function(out,ins,cInfo) {
-	if(!isNull(cInfo.inventory as bool)) {
-		if(ins.input_tank.tag has "Fluid") {
-			if(ins.input_tank.tag.Fluid.FluidName == "biodiesel" && ins.input_tank.tag.Fluid.Amount >= 1000) {
-				return out;
-			} else {
-				return null;
-			}
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	if(!isNull(cInfo.inventory as bool)) {
-		var tank_position = 0 as int;
-		for i in 0 to cInfo.inventory.size {
-			if(!isNull(cInfo.inventory.getStack(i))) {
-				if(cInfo.inventory.getStack(i).name == <thermalexpansion:tank>.name) {
-					tank_position = i;
-					break;
-				}
-			}
-		}
-		val fluid_amount = cInfo.inventory.getStack(tank_position).tag.Fluid.Amount;
-		cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {Fluid: {FluidName: "biodiesel", Amount: fluid_amount - 1000}}));
-	}
-});
-recipes.addHiddenShaped("energized_osmium_tank2", <contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<enderio:block_tank:*>.reuse().marked("input_tank"),<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]],
-function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "enderio:data") {
-		if(ins.input_tank.tag.memberGet("enderio:data") has "tank") {
-			if(ins.input_tank.tag.memberGet("enderio:data").tank.FluidName == "biodiesel" && ins.input_tank.tag.memberGet("enderio:data").tank.Amount >= 1000) {
-				return out;
-			} else {
-				return null;
-			}
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <enderio:block_tank>.name || cInfo.inventory.getStack(i).name == <enderio:block_tank:1>.name) {
-				tank_position = i;
-				break;
-			}
-		}
-	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Amount;
-	val tank_capacity = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Capacity;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {"enderio:data": {tank: {FluidName: "biodiesel", Capacity: tank_capacity, Amount: fluid_amount - 1000}}}));
-});
-*/
+recipes.addShaped(<contenttweaker:energized_osmium_ingot> * 8, [[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>],[<ore:ingotOsmium>,<liquid:biodiesel> * 1000,<ore:ingotOsmium>],[<ore:ingotOsmium>,<ore:ingotOsmium>,<ore:ingotOsmium>]]);
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_osmium_ingot>, <mekanism:ingot:1>, <liquid:biodiesel> * 100, 1000);
 recipes.addShapeless(<contenttweaker:energized_osmium_ingot> * 9, [<contenttweaker:energized_osmium_block>]);
 
@@ -240,70 +123,13 @@ recipes.addShaped(<contenttweaker:energized_osmium_block>, [[<contenttweaker:ene
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_osmium_block>, <mekanism:basicblock>, <liquid:biodiesel> * 900, 9000);
 
 # Energized Certus Quartz Crystal
-recipes.addShaped(<contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<forge:bucketfilled>.withTag({FluidName: "biodiesel", Amount: 1000}),<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]]);
-/*
-recipes.addHiddenShaped("energized_certus_tank", <contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<thermalexpansion:tank>.reuse().marked("input_tank"),<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]],
-function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "Fluid") {
-		if(ins.input_tank.tag.Fluid.FluidName == "biodiesel" && ins.input_tank.tag.Fluid.Amount >= 1000) {
-			return out;
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <thermalexpansion:tank>.name) {
-				tank_position = i;
-				break;
-			}
-		}
-	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.Fluid.Amount;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {Fluid: {FluidName: "biodiesel", Amount: fluid_amount - 1000}}));
-});
-recipes.addHiddenShaped("energized_certus_tank2", <contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<enderio:block_tank:*>.reuse().marked("input_tank"),<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]],
-function(out,ins,cInfo) {
-	if(ins.input_tank.tag has "enderio:data") {
-		if(ins.input_tank.tag.memberGet("enderio:data") has "tank") {
-			if(ins.input_tank.tag.memberGet("enderio:data").tank.FluidName == "biodiesel" && ins.input_tank.tag.memberGet("enderio:data").tank.Amount >= 1000) {
-				return out;
-			} else {
-				return null;
-			}
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
-},
-function(out, cInfo, player){
-	var tank_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <enderio:block_tank>.name || cInfo.inventory.getStack(i).name == <enderio:block_tank:1>.name) {
-				tank_position = i;
-				break;
-			}
-		}
-	}
-	val fluid_amount = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Amount;
-	val tank_capacity = cInfo.inventory.getStack(tank_position).tag.memberGet("enderio:data").tank.Capacity;
-	cInfo.inventory.setStack(tank_position, cInfo.inventory.getStack(tank_position).withTag(cInfo.inventory.getStack(tank_position).tag + {"enderio:data": {tank: {FluidName: "biodiesel", Capacity: tank_capacity, Amount: fluid_amount - 1000}}}));
-});
-*/
+recipes.addShaped(<contenttweaker:energized_certus_quartz_crystal> * 8, [[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<liquid:biodiesel> * 1000,<ore:crystalCertusQuartz>],[<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>,<ore:crystalCertusQuartz>]]);
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_crystal>, <appliedenergistics2:material>, <liquid:biodiesel> * 100, 1000);
 recipes.addShapeless(<contenttweaker:energized_certus_quartz_crystal> * 4, [<contenttweaker:energized_certus_quartz_block>]);
 
 # Energized Certus Quartz Block
 recipes.addShaped(<contenttweaker:energized_certus_quartz_block>, [[<contenttweaker:energized_certus_quartz_crystal>,<contenttweaker:energized_certus_quartz_crystal>],[<contenttweaker:energized_certus_quartz_crystal>,<contenttweaker:energized_certus_quartz_crystal>]]);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_block>, <appliedenergistics2:quartz_block>, <liquid:biodiesel> * 400, 9000);
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_certus_quartz_block>, <appliedenergistics2:quartz_block>, <liquid:biodiesel> * 400, 4000);
 
 # The Perfect Squad
 recipes.addShapeless(<contenttweaker:the_perfect_squad>, [<contenttweaker:arkas_wittyness>, <contenttweaker:guudes_sanity>, <contenttweaker:nebris_justice>, <contenttweaker:pakratts_endurance>]);
@@ -497,7 +323,7 @@ recipes.addShaped(<contenttweaker:dark_block>, [[<contenttweaker:dark_ingot>,<co
 recipes.addShapeless(<contenttweaker:dark_ingot> * 9, [<contenttweaker:dark_block>]);
 
 # Energized Dark Ingot & Block
-recipes.addShaped(<contenttweaker:energized_dark_ingot> * 8, [[<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>],[<contenttweaker:dark_ingot>,<forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}),<contenttweaker:dark_ingot>],[<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>]]);
+recipes.addShaped(<contenttweaker:energized_dark_ingot> * 8, [[<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>],[<contenttweaker:dark_ingot>,<liquid:refined_fuel> * 1000,<contenttweaker:dark_ingot>],[<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>,<contenttweaker:dark_ingot>]]);
 recipes.addShapeless(<contenttweaker:energized_dark_ingot> * 9, [<contenttweaker:energized_dark_block>]);
 recipes.addShaped(<contenttweaker:energized_dark_block>, [[<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>],[<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>],[<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>,<contenttweaker:energized_dark_ingot>]]);
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_dark_ingot>, <contenttweaker:dark_ingot>, <liquid:refined_fuel> * 100, 1000);
@@ -508,7 +334,7 @@ recipes.addShapeless(<contenttweaker:titanium_nugget> * 9 , [<galacticraftplanet
 recipes.addShaped(<galacticraftplanets:item_basic_asteroids>, [[<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>],[<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>],[<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>,<contenttweaker:titanium_nugget>]]);
 
 # Energized Dark Dust (Crushing recipes are in OreProcessingAdditions.zs)
-recipes.addShaped(<contenttweaker:energized_dark_dust> * 8, [[<contenttweaker:dark_dust>,<contenttweaker:dark_dust>,<contenttweaker:dark_dust>],[<contenttweaker:dark_dust>,<forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}),<contenttweaker:dark_dust>],[<contenttweaker:dark_dust>,<contenttweaker:dark_dust>,<contenttweaker:dark_dust>]]);
+recipes.addShaped(<contenttweaker:energized_dark_dust> * 8, [[<contenttweaker:dark_dust>,<contenttweaker:dark_dust>,<contenttweaker:dark_dust>],[<contenttweaker:dark_dust>,<liquid:refined_fuel> * 1000,<contenttweaker:dark_dust>],[<contenttweaker:dark_dust>,<contenttweaker:dark_dust>,<contenttweaker:dark_dust>]]);
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:energized_dark_dust>, <contenttweaker:dark_dust>, <liquid:refined_fuel> * 100, 1000);
 
 # Crystalline Brown Slime Ingot & Block
@@ -1687,7 +1513,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:botanic_sing
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:thaumic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:158>,<extendedcrafting:singularity_custom:157>,<extendedcrafting:singularity:21>,<extendedcrafting:singularity_custom:150>,<extendedcrafting:singularity_custom:152>]);
 
 # Alchemical Singularity
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:alchemic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:alchemic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity:20>,<extendedcrafting:singularity_custom:33>,<extendedcrafting:singularity:32>,<extendedcrafting:singularity:30>]);
 
 # Draglactic Singularity
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:draglactic_singularity>, 400000, 10000, <contenttweaker:empty_core>, [<extendedcrafting:singularity_custom:102>,<extendedcrafting:singularity:31>,<extendedcrafting:singularity_custom:155>]);
@@ -2006,7 +1832,9 @@ recipes.addShaped(<contenttweaker:photovoltaic_cell_xi> * 3, [[<ore:blockGlassWh
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, null, 80, 256, [<ore:foodFlour>]);
 EIOAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, [<minecraft:chicken>, <ore:foodFlour>], 4000);
 IEAlloySmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>, 160);
-mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, <ore:foodFlour>.firstItem, 4000);
+for entry in <ore:foodFlour>.items {
+    mods.thermalexpansion.InductionSmelter.addRecipe(<contenttweaker:chicken_nugget>, <minecraft:chicken>, entry, 4000);
+}
 
 # Burger
 val cheeses = [<actuallyadditions:item_food>,<galacticraftcore:food:4>,<divinerpg:cheese>,<galacticraftcore:cheese_curd>] as IItemStack[];

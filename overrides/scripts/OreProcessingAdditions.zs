@@ -21,6 +21,8 @@ import mods.mekanism.purification;
 import mods.mekanism.chemical.injection;
 import mods.mekanism.chemical.dissolution;
 import mods.integrateddynamics.MechanicalSqueezer;
+import mods.abyssalcraft.Transmutator;
+import mods.botania.ManaInfusion;
 
 print("STARTING OreProcessingAdditions.zs");
 
@@ -169,6 +171,13 @@ for i in 0 to 8 {
 for ore in allBlackQuartzOresListed {
 	EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
 }
+
+mods.enderio.SagMill.addRecipe([<actuallyadditions:item_misc:5> * 4], [1.0], <actuallyadditions:block_misc:2>, "NONE");
+IECrusher.addRecipe(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 4000);
+EUCrusher.add(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>);
+mods.thermalexpansion.Pulverizer.addRecipe(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 2000);
+mods.botania.ManaInfusion.addAlchemy(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 5000);
+mods.abyssalcraft.Transmutator.addTransmutation(<actuallyadditions:block_misc:2>, <actuallyadditions:item_misc:5> * 4, 0);
 
 # MysticalWorld Quartz in the SAG Mill
 mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:quartz_ore>, "MULTIPLY_OUTPUT");

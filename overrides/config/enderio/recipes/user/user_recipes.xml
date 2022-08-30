@@ -612,6 +612,13 @@
     </alloying>
   </recipe>
 
+  <recipe name="HOP Graphite Ingot" required="true">
+    <alloying energy="8000">
+      <input name="immersiveengineering:material:17" amount="8" />
+      <output name="immersiveengineering:material:19" />
+    </alloying>
+  </recipe>
+
   <recipe name="Growth Infusion Liquid" required="true">
     <fermenting energy="30000">
       <inputgroup>

@@ -7,6 +7,7 @@ import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Melting;
 import mods.astralsorcery.Altar;
+import mods.inworldcrafting.FluidToItem;
 
 print("STARTING ExtraUtilities2.zs");
 
@@ -154,7 +155,7 @@ recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_en
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_slime"}), [[<alchemistry:ingot:3>,<extrautils2:decorativesolidwood:1>,<alchemistry:ingot:3>],[<ore:blockSlime>,<extrautils2:machine>.withTag({Type: "extrautils2:generator"}),<ore:blockSlime>],[<alchemistry:ingot:3>,<extrautils2:decorativesolidwood:1>,<alchemistry:ingot:3>]]);
 
 # Magmatic Generator
-recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}), [[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>],[<minecraft:lava_bucket>,<extrautils2:machine>.withTag({Type: "extrautils2:generator"}),<minecraft:lava_bucket>],[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>]]);
+recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}), [[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>],[<minecraft:lava_bucket>.noReturn(),<extrautils2:machine>.withTag({Type: "extrautils2:generator"}),<minecraft:lava_bucket>.noReturn()],[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>]]);
 
 # Heated Redstone Generator
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_redstone"}), [[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>],[<minecraft:redstone_block>,<extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}),<minecraft:redstone_block>],[<contenttweaker:steaming_restonia_crystal>,<contenttweaker:demonlord_ingot>,<contenttweaker:steaming_restonia_crystal>]]);
@@ -215,7 +216,7 @@ recipes.addShaped(<extrautils2:drum>, [[<extrautils2:decorativesolid:3>,<minecra
 # Iron Drum
 recipes.removeShaped(<extrautils2:drum:1>);
 recipes.addShaped("extrautils2_drum_upgrade1", <extrautils2:drum:1>, [[<thermalfoundation:material:32>,<minecraft:cauldron>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<extrautils2:drum>.marked("tank"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<minecraft:cauldron>,<thermalfoundation:material:32>]],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag(ins.tank.tag);
 	} else {
@@ -225,7 +226,7 @@ recipes.addShaped("extrautils2_drum_upgrade1", <extrautils2:drum:1>, [[<thermalf
 # Reinforced Large Drum
 recipes.removeShaped(<extrautils2:drum:2>);
 recipes.addShaped("extrautils2_drum_upgrade2", <extrautils2:drum:2>, [[<contenttweaker:demonlord_ingot>,<thermalfoundation:material:33>,<contenttweaker:demonlord_ingot>],[<contenttweaker:demonlord_block>,<extrautils2:drum:1>.marked("tank"),<contenttweaker:demonlord_block>],[<contenttweaker:demonlord_ingot>,<thermalfoundation:material:33>,<contenttweaker:demonlord_ingot>]],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag(ins.tank.tag);
 	} else {
@@ -425,7 +426,7 @@ recipes.addShaped(<extrautils2:klein>, [[null,<mekanism:teleportationcore>,null]
 # Demonically Gargantuan Drum
 recipes.removeShaped(<extrautils2:drum:3>);
 recipes.addShaped("extrautils2_drum_upgrade3", <extrautils2:drum:3>, [[<extrautils2:simpledecorative:1>,<extrautils2:klein>,<extrautils2:simpledecorative:1>],[<contenttweaker:steaming_restonia_crystal_block>,<extrautils2:drum:2>.marked("tank"),<contenttweaker:steaming_restonia_crystal_block>],[<extrautils2:simpledecorative:1>,<extrautils2:klein>,<extrautils2:simpledecorative:1>]],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag(ins.tank.tag);
 	} else {
@@ -459,7 +460,10 @@ recipes.addShaped(<extrautils2:compressedsand>, [[<ore:sand>,<ore:sand>,<ore:san
 recipes.removeShaped(<extrautils2:compressedgravel>);
 recipes.addShaped(<extrautils2:compressedgravel>, [[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>],[<ore:gravel>,<ore:gravel>,<ore:gravel>]]);
 
-# Demon Ingot from Mystical Agriculture Essences
+# Alternative ways to obtain the Demon Ingot
+FluidToItem.transform(<extrautils2:ingredients:11>, <liquid:fire_water>, [<minecraft:gold_ingot>], false);
+FluidToItem.transform(<extrautils2:simpledecorative:1>, <liquid:fire_water>, [<minecraft:gold_block>], false);
+
 recipes.addShaped(<extrautils2:ingredients:11> * 4, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>]]);
 
 # Chicken Wing Ring
@@ -514,10 +518,13 @@ for i in 0 to 8 {
 	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
-# Sun Crystal filling with Mystical Agriculture essences
+# Alternative Sun Crystal filling recipes
+FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extrautils2:suncrystal:*>], false);
+
 recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
-<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground."));
-<extrautils2:suncrystal>.addTooltip(format.white("Later you can use Glowstone Essence to fill it."));
+
+<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground when exposed to the sun."));
+<extrautils2:suncrystal>.addTooltip(format.white("Later, you can use Liquid Sunshine or Glowstone Essence to fill it."));
 
 # Opinium Core (Pathetic)
 recipes.remove(<extrautils2:opinium>);
@@ -552,36 +559,36 @@ recipes.addShaped(<extrautils2:passivegenerator:6> * 4, [[<extrautils2:passivege
 
 # Creative Energy Source
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>,
-[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>], 
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
+[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>],
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
 [<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>]]);
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>,
-[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>], 
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>], 
+[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>],
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
 [<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>]]);
 
 # Creative Drum
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:drum:4>,
-[[<alchemistry:ingot:112>, <extrautils2:drum:3>, <extrautils2:drum:3>, <extrautils2:drum:3>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:reactorcreativecoolantport>, <extrautils2:drum:3>, <alchemistry:ingot:57>], 
-[<alchemistry:ingot:112>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:turbinecreativesteamgenerator>, <extrautils2:drum:3>, <alchemistry:ingot:57>], 
+[[<alchemistry:ingot:112>, <extrautils2:drum:3>, <extrautils2:drum:3>, <extrautils2:drum:3>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:reactorcreativecoolantport>, <extrautils2:drum:3>, <alchemistry:ingot:57>],
+[<alchemistry:ingot:112>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:57>, <extrautils2:drum:3>, <bigreactors:turbinecreativesteamgenerator>, <extrautils2:drum:3>, <alchemistry:ingot:57>],
 [<alchemistry:ingot:112>, <extrautils2:drum:3>, <extrautils2:drum:3>, <extrautils2:drum:3>, <alchemistry:ingot:112>]]);
 
 # Creative Chest
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativechest>,
-[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <roots:creative_pouch>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <roots:creative_pouch>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <draconicadditions:chaos_stabilizer_core>, <extrautils2:lawsword>, <draconicadditions:chaos_stabilizer_core>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <contenttweaker:neutronium_singularity>, <botania:pool:1>, <contenttweaker:neutronium_singularity>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_order>, <avaritia:resource:6>, <contenttweaker:essence_of_order>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <roots:creative_pouch>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <roots:creative_pouch>, <alchemistry:ingot:112>], 
-[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>], 
+[[<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <roots:creative_pouch>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <roots:creative_pouch>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <draconicadditions:chaos_stabilizer_core>, <extrautils2:lawsword>, <draconicadditions:chaos_stabilizer_core>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <contenttweaker:neutronium_singularity>, <botania:pool:1>, <contenttweaker:neutronium_singularity>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:essence_of_enclosement>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_order>, <avaritia:resource:6>, <contenttweaker:essence_of_order>, <bibliocraft:bookcasecreative>, <contenttweaker:essence_of_enclosement>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <roots:creative_pouch>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <extendedcrafting:storage:4>, <roots:creative_pouch>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:114>, <alchemistry:ingot:112>],
 [<alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>]]);
 
 print("ENDING ExtraUtilities2.zs");

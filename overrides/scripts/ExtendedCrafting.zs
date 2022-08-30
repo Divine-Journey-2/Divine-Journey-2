@@ -128,12 +128,9 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularit
 # Alchemical Brass Singularity
 <extendedcrafting:singularity:21>.displayName = "Alchemical Brass Singularity";
 
-# Chrome Singualrity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:33>, <alchemistry:ingot:24>, 1024, <contenttweaker:singularification_catalyst>, 100000000);
-
 #  Ender Star
 mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
-mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:40>, [[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>],[<extendedcrafting:singularity_custom:154>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}),<extendedcrafting:singularity_custom:154>],[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>]], 10);  
+mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:40>, [[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>],[<extendedcrafting:singularity_custom:154>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}),<extendedcrafting:singularity_custom:154>],[<extendedcrafting:material:48>,<extendedcrafting:singularity_custom:154>,<extendedcrafting:material:48>]], 10);
 
 # Ultimate Ingot
 # recipe in OreProcessingAdditions.zs

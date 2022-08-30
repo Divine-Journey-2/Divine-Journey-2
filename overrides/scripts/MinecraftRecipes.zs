@@ -15,6 +15,7 @@ print("STARTING MinecraftRecipes.zs");
 
 # Crafting Table and related recipes
 recipes.remove(<minecraft:crafting_table>);
+recipes.addShapeless(<minecraft:crafting_table> * 9, [<avaritia:compressed_crafting_table>]);
 recipes.addShapedMirrored(<minecraft:crafting_table>, [[<minecraft:stone_pickaxe>,<minecraft:stone_axe>],[<contenttweaker:crafting_base>,<contenttweaker:crafting_base>]]);
 recipes.addShaped(<minecraft:stone_pickaxe>, [[null,<contenttweaker:stone_pickaxe_head>],[<contenttweaker:tool_rod>,null]]);
 recipes.addShaped(<minecraft:stone_axe>, [[null,<contenttweaker:stone_axe_head>],[<contenttweaker:tool_rod>,null]]);
