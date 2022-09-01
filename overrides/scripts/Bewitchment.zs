@@ -117,11 +117,11 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchme
 
 # Ritualistic Salt
 <bewitchment:salt>.displayName = "Ritualistic Salt";
-WitchesCauldron.addRecipe([<bewitchment:salt> * 3], [<mekanism:salt>,<mekanism:salt>,<mekanism:salt>,<bloodmagic:ritual_stone>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]);
+WitchesCauldron.addRecipe([<bewitchment:salt> * 3], [<mekanism:salt>,<mekanism:salt>,<mekanism:salt>,<bloodmagic:ritual_stone>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alienis"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]}, false)]);
 
 # Cleansing Balm
 Distillery.removeRecipe(<bewitchment:cleansing_balm>);
-Distillery.addRecipe([<bewitchment:cleansing_balm>], [<bewitchment:acacia_resin>,<bewitchment:white_sage>,<bewitchment:salt>,<bewitchment:garlic>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]})]);
+Distillery.addRecipe([<bewitchment:cleansing_balm>], [<bewitchment:acacia_resin>,<bewitchment:white_sage>,<bewitchment:salt>,<bewitchment:garlic>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "sensus"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "spiritus"}]}, false)]);
 
 # Tallow
 WitchesOven.removeRecipe(<minecraft:cooked_beef>);
@@ -134,11 +134,11 @@ WitchesCauldron.addRecipe([<bewitchment:tallow> * 3], [<thaumcraft:tallow>,<thau
 
 # Fiery Unguent
 Distillery.removeRecipe(<bewitchment:fiery_unguent>);
-Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<contenttweaker:incendium>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
+Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<contenttweaker:incendium>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}, false)]);
 
 # Swirl of the Depths
 Distillery.removeRecipe(<bewitchment:swirl_of_depths>);
-Distillery.addRecipe([<bewitchment:swirl_of_depths>], [<bewitchment:ebb_of_death>,<contenttweaker:omothol_soul>,<bewitchment:coquina>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]})]);
+Distillery.addRecipe([<bewitchment:swirl_of_depths>], [<bewitchment:ebb_of_death>,<contenttweaker:omothol_soul>,<bewitchment:coquina>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "permutatio"}]}, false)]);
 
 # Dragon's Blood Resin
 mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <liquid:evilcraftblood>, [<contenttweaker:dragon_resin>], true);
@@ -169,11 +169,11 @@ recipes.addShaped(<bewitchment:boline>, [[<thermalfoundation:storage:2>,<bewitch
 
 # Oil of Vitriol
 Distillery.removeRecipe(<bewitchment:oil_of_vitriol>);
-Distillery.addRecipe([<bewitchment:oil_of_vitriol>], [<bewitchment:cloudy_oil>,<thermalexpansion:florb>.withTag({Fluid: "empoweredoil"}),<bewitchment:dragons_blood_resin>,<bewitchment:aconitum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]})]);
+Distillery.addRecipe([<bewitchment:oil_of_vitriol>], [<bewitchment:cloudy_oil>,<thermalexpansion:florb>.withTag({Fluid: "empoweredoil"}),<bewitchment:dragons_blood_resin>,<bewitchment:aconitum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "gelum"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}, false)]);
 
 # Stone Ichor
 Distillery.removeRecipe(<bewitchment:stone_ichor>);
-Distillery.addRecipe([<bewitchment:stone_ichor>], [<bewitchment:oil_of_vitriol>,<extrautils2:compressedcobblestone:2>,<bewitchment:ectoplasm>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})]);
+Distillery.addRecipe([<bewitchment:stone_ichor>], [<bewitchment:oil_of_vitriol>,<extrautils2:compressedcobblestone:2>,<bewitchment:ectoplasm>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}, false)]);
 
 # Spinning Wheel
 recipes.remove(<bewitchment:spinning_wheel>);
@@ -211,7 +211,7 @@ Distillery.addRecipe([<bewitchment:otherworldly_tears>,<bewitchment:empty_jar>],
 
 # Bone Needle
 recipes.remove(<bewitchment:bone_needle>);
-recipes.addShapedMirrored(<bewitchment:bone_needle>, [[null,null,<minecraft:bone>],[null,<minecraft:bone>,null],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),null,null]]);
+recipes.addShapedMirrored(<bewitchment:bone_needle>, [[null,null,<minecraft:bone>],[null,<minecraft:bone>,null],[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}, false),null,null]]);
 
 # Poppet
 recipes.remove(<bewitchment:poppet>);
@@ -301,7 +301,7 @@ recipes.addShapeless(<bewitchment:taglock>, [<thaumcraft:phial>,<bewitchment:bon
 
 # Bottled Hellfire
 Distillery.removeRecipe(<bewitchment:bottled_hellfire>);
-Distillery.addRecipe([<bewitchment:bottled_hellfire>], [<bewitchment:fiery_unguent>,<bewitchment:hellebore>,<bewitchment:dragons_blood_resin_block>,<contenttweaker:gypsum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]})]);
+Distillery.addRecipe([<bewitchment:bottled_hellfire>], [<bewitchment:fiery_unguent>,<bewitchment:hellebore>,<bewitchment:dragons_blood_resin_block>,<contenttweaker:gypsum>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]}, false)]);
 
 # Fiery Chalk
 WitchesCauldron.removeRecipe(<bewitchment:fiery_chalk>);
@@ -313,7 +313,7 @@ Distillery.addRecipe([<bewitchment:demonic_elixir> * 4], [<bewitchment:fiery_ung
 
 # Flying Ointment
 recipes.remove(<bewitchment:flying_ointment>);
-Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travelers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
+Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travelers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}, false),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]}, false)]);
 
 # Caduceus
 <bewitchment:caduceus>.addTooltip(format.white("Dropped by Baphomet. Consult your"));
@@ -400,7 +400,7 @@ recipes.addShaped(<bewitchment:witches_pants>, [[null,<contenttweaker:magical_le
 
 # Filled Goblet
 WitchesCauldron.removeRecipe(<bewitchment:filled_goblet>);
-WitchesCauldron.addRecipe([<bewitchment:filled_goblet>,<bewitchment:empty_jar>], [<bewitchment:goblet>,<bewitchment:demonic_elixir>,<thermalexpansion:florb>.withTag({Fluid: "moltendreadium"}),<bewitchment:dragons_blood_resin_block>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]})]);
+WitchesCauldron.addRecipe([<bewitchment:filled_goblet>,<bewitchment:empty_jar>], [<bewitchment:goblet>,<bewitchment:demonic_elixir>,<thermalexpansion:florb>.withTag({Fluid: "moltendreadium"}),<bewitchment:dragons_blood_resin_block>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "diabolus"}]}, false)]);
 
 # Nazar
 recipes.remove(<bewitchment:nazar>);
