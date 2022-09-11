@@ -205,7 +205,6 @@ addOreToGemProcessing(<galacticraftplanets:venus:10>, <appliedenergistics2:mater
 
 # Ilmenite Ore to Titanium, Rutile Ore to Titanium
 addOreProcessingWithDustAndIngot(<galacticraftplanets:asteroids_block:4>, <galacticraftplanets:item_basic_asteroids:9>, <galacticraftplanets:item_basic_asteroids>);
-addOreProcessingWithDustAndIngot(<libvulpes:ore0:8>, <galacticraftplanets:item_basic_asteroids:9>, <galacticraftplanets:item_basic_asteroids>);
 
 # Tin
 val additionalTinOres = [<erebus:ore_tin>, <galacticraftcore:basic_block_core:6>, <galacticraftplanets:mars:1>, <galacticraftplanets:venus:11>, <galacticraftcore:basic_block_moon:1>, <abyssalcraft:abytinore>] as IItemStack[];

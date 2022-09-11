@@ -27,52 +27,26 @@ print("STARTING UnifyingIngotsAndBlocks.zs");
 
 # Titanium
 #recipes.replaceAllOccurences(<ore:ingotTitanium>, <galacticraftplanets:item_basic_asteroids>, <*>);
-<ore:ingotTitanium>.removeItems([<alchemistry:ingot:22>, <libvulpes:productingot:7>]);
 #recipes.replaceAllOccurences(<ore:blockTitanium>, <galacticraftplanets:asteroids_block:7>, <*>);
-<ore:blockTitanium>.remove(<libvulpes:metal0:7>);
-recipes.remove(<libvulpes:productingot:7>);
-recipes.remove(<libvulpes:metal0:7>);
-furnace.remove(<libvulpes:productingot:7>);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:item_basic_asteroids:9>, 0.5);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:asteroids_block:4>, 0.5);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:item_basic_asteroids:4>, 0.5);
 mods.appliedenergistics2.Grinder.removeRecipe(<galacticraftplanets:asteroids_block:4>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:ore0:8>);
-#mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:productdust:7>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, <libvulpes:ore0:8>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, <libvulpes:ore0:8>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:7>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<galacticraftplanets:item_basic_asteroids> * 2, <libvulpes:ore0:8>, <immersiveengineering:material:7>, 1000, 512);
-mods.astralsorcery.StarlightInfusion.removeInfusion(<libvulpes:productingot:7>);
-mods.alchemistry.Combiner.removeRecipe(<libvulpes:productingot:7>);
 mods.alchemistry.Combiner.addRecipe(<galacticraftplanets:item_basic_asteroids>, [<alchemistry:element:22> * 16]);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productingot:7>);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productdust:7>);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <galacticraftplanets:item_basic_asteroids:9>, 984);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:metal0:7>);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 1296, <galacticraftplanets:asteroids_block:7>, 984);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productnugget:7>);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 16, <contenttweaker:titanium_nugget>, 984);
-mods.tconstruct.Casting.removeTableRecipe(<libvulpes:productingot:7>);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:item_basic_asteroids>, <tconstruct:cast_custom>, <liquid:titanium>, 144, false);
-mods.tconstruct.Casting.removeBasinRecipe(<libvulpes:metal0:7>);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
-mods.tconstruct.Casting.removeTableRecipe(<libvulpes:productnugget:7>);
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_nugget>, <tconstruct:cast_custom:1>, <liquid:titanium>, 16, false);
 mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:31>);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productingot:7>);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids>, false, 1, [[100, <alchemistry:element:22> * 16]]);
-#recipes.replaceAllOccurences(<libvulpes:coil0:7>, <galacticraftplanets:asteroids_block:7>);
-#recipes.replaceAllOccurences(<libvulpes:metal0:7>, <galacticraftplanets:asteroids_block:7>);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:metal0:7>);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:asteroids_block:7>, false, 1, [[100, <alchemistry:element:22> * 144]]);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productnugget:7>);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_nugget>, false, 1, [[100, <alchemistry:element:22>]]);
 mods.thermalexpansion.Factorizer.removeRecipeSplit(<galacticraftplanets:item_basic_asteroids>);
-mods.thermalexpansion.Factorizer.removeRecipeCombine(<libvulpes:productnugget:7>);
 
 # Copper
-val wrongCopperIngots = [<libvulpes:productingot:4>, <galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>, <projectred-core:resource_item:100>] as IItemStack[];
+val wrongCopperIngots = [<galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>, <projectred-core:resource_item:100>] as IItemStack[];
 <ore:ingotCopper>.removeItems(wrongCopperIngots);
 #recipes.replaceAllOccurences(<ore:ingotCopper>, <thermalfoundation:material:128>);
 for copper in wrongCopperIngots {
@@ -110,7 +84,7 @@ recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 
 # Tin
-val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <libvulpes:productingot:5>, <projectred-core:resource_item:101>, <erebus:materials:46>] as IItemStack[];
+val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <projectred-core:resource_item:101>, <erebus:materials:46>] as IItemStack[];
 <ore:ingotTin>.removeItems(wrongTinIngots);
 #recipes.replaceAllOccurences(<ore:ingotTin>, <thermalfoundation:material:129>);
 for tin in wrongTinIngots {
@@ -140,45 +114,25 @@ recipes.removeShaped(<thermalfoundation:storage:1>, [[<galacticraftcore:basic_it
 recipes.remove(<galacticraftcore:basic_item:2>);
 recipes.addShapeless(<appliedenergistics2:material:5> * 9, [<galacticraftcore:basic_block_core:13>]);
 mods.actuallyadditions.Crusher.removeRecipe(<galacticraftcore:basic_item:2>);
-recipes.remove(<libvulpes:productdust:3>);
 for silicon in <ore:ingotSilicon>.items {
 	mods.thermalexpansion.Pulverizer.removeRecipe(silicon);
 }
 for silicon_ore in <ore:oreSilicon>.items {
-	mods.thermalexpansion.Pulverizer.removeRecipe(silicon_ore);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, silicon_ore);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, silicon_ore);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, silicon_ore);
 }
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:productplate:3>);
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:productdust:3>);
-IECrusher.removeRecipe(<libvulpes:productdust:3>);
-mods.astralsorcery.Grindstone.removeRecipe(<libvulpes:productdust:3>);
-AACrusher.removeRecipe(<libvulpes:productdust:3>);
-LightningCrusher.remove(<libvulpes:productdust:3>);
-EUCrusher.remove(<galacticraftcore:basic_block_core:8>);
 EUCrusher.remove(<galacticraftplanets:venus:10>);
-EUCrusher.remove(<libvulpes:productingot:3>);
 EUCrusher.remove(<alchemistry:ingot:14>);
-recipes.remove(<libvulpes:productingot:3>);
 mods.thermalexpansion.Factorizer.removeRecipeSplit(<galacticraftcore:basic_block_core:13>);
-mods.thermalexpansion.Factorizer.removeRecipeCombine(<libvulpes:productnugget:3>);
 mods.thermalexpansion.Factorizer.removeRecipeCombine(<alchemistry:ingot:14>);
-mods.thermalexpansion.Factorizer.removeRecipeCombine(<libvulpes:productingot:3>);
 mods.thermalexpansion.Factorizer.removeRecipeSplit(<alchemistry:ingot:14>);
-mods.thermalexpansion.Factorizer.removeRecipeSplit(<libvulpes:productingot:3>);
-mods.immersiveengineering.ArcFurnace.removeRecipe(<libvulpes:productingot:3>);
-mods.alchemistry.Combiner.removeRecipe(<libvulpes:productingot:3>);
-mods.alchemistry.Combiner.removeRecipe(<libvulpes:productdust:3>);
 mods.alchemistry.Dissolver.removeRecipe(<alchemistry:ingot:14>);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productingot:3>);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productnugget:3>);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productdust:3>);
 Inscriber.removeRecipe(<appliedenergistics2:material:20>);
 Inscriber.addRecipe(<appliedenergistics2:material:20>, <appliedenergistics2:material:5>, true, <appliedenergistics2:material:19>);
 
 # Aluminum
-val wrongAlumIngots = [<alchemistry:ingot:13>,<libvulpes:productingot:9>,<erebus:materials:42>,<galacticraftcore:basic_item:5>,<immersiveengineering:metal:1>] as IItemStack[];
+val wrongAlumIngots = [<alchemistry:ingot:13>,<erebus:materials:42>,<galacticraftcore:basic_item:5>,<immersiveengineering:metal:1>] as IItemStack[];
 <ore:ingotAluminum>.removeItems(wrongAlumIngots);
 <ore:ingotAluminium>.removeItems([<erebus:materials:42>,<galacticraftcore:basic_item:5>,<immersiveengineering:storage:1>]);
 <ore:blockAluminium>.remove(<galacticraftcore:basic_block_core:11>);
@@ -201,7 +155,6 @@ recipes.removeShaped(<thermalfoundation:storage:4>, [[<immersiveengineering:stor
 recipes.remove(<galacticraftcore:basic_item:5>);
 mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:68>, <galacticraftcore:basic_item:5>);
 mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:68>, <immersiveengineering:metal:1>);
-mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:68>, <libvulpes:productingot:9>);
 mods.tconstruct.Melting.removeRecipe(<liquid:aluminum>, <immersiveengineering:metal:1>);
 furnace.remove(<galacticraftcore:basic_item:5>);
 recipes.remove(<immersiveengineering:metal:1>);
@@ -213,7 +166,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132> , <thermalfoundation:material:68>, null, 100, 512);
 
 # Steel
-<ore:ingotSteel>.removeItems([<mekanism:ingot:4>,<bigreactors:ingotsteel>,<immersiveengineering:metal:8>,<libvulpes:productingot:6>]);
+<ore:ingotSteel>.removeItems([<mekanism:ingot:4>,<bigreactors:ingotsteel>,<immersiveengineering:metal:8>]);
 <ore:blockSteel>.removeItems([<mekanism:basicblock:5>,<bigreactors:blocksteel>]);
 recipes.remove(<mekanism:basicblock:5>);
 recipes.remove(<mekanism:ingot:4>);
@@ -294,11 +247,6 @@ recipes.removeShaped(<minecraft:emerald>, [[<ore:nuggetEmerald>,<*>,<*>],[<*>,<*
 recipes.addShaped(<minecraft:emerald>, [[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>]]);
 mods.tconstruct.Melting.removeRecipe(<liquid:emerald>, <thermalfoundation:material:17>);
 
-# Iridium
-<ore:ingotIridium>.remove(<libvulpes:productingot:10>);
-<ore:dustIridium>.remove(<libvulpes:productdust:10>);
-mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:71>, <libvulpes:productingot:10>);
-
 # Diamond Nugget
 <ore:nuggetDiamond>.removeItems([<agricraft:agri_nugget:1>,<extendedcrafting:material:128>]);
 recipes.remove(<extendedcrafting:material:128>);
@@ -309,11 +257,8 @@ recipes.remove(<immersiveengineering:metal:29>);
 <ore:nuggetIron>.removeItems([<immersiveengineering:metal:29>,<agricraft:agri_nugget:3>,<thaumcraft:nugget>]);
 recipes.removeShapeless(<minecraft:iron_nugget>, [<thaumcraft:nugget>]);
 
-# Tin Block
-<ore:blockTin>.remove(<libvulpes:metal0:5>);
-
 # Tin Nugget
-<ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<libvulpes:productnugget:5>,<agricraft:agri_nugget:5>,<bno:nugget_tin>]);
+<ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<agricraft:agri_nugget:5>,<bno:nugget_tin>]);
 recipes.remove(<thaumcraft:nugget:2>);
 recipes.remove(<mekanism:nugget:6>);
 recipes.remove(<bno:nugget_tin>);
@@ -325,11 +270,11 @@ recipes.addShaped(<thermalfoundation:material:129>, [[<thermalfoundation:materia
 recipes.remove(<mekanism:nugget:2>);
 
 # Copper Block
-<ore:blockCopper>.removeItems([<libvulpes:metal0:4>,<galacticraftcore:basic_block_core:9>]);
+<ore:blockCopper>.removeItems([<galacticraftcore:basic_block_core:9>]);
 recipes.remove(<galacticraftcore:basic_block_core:9>);
 
 # Copper Nugget
-<ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<libvulpes:productnugget:4>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>,<bno:nugget_copper>]);
+<ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>,<bno:nugget_copper>]);
 recipes.remove(<mekanism:nugget:5>);
 recipes.remove(<thaumcraft:nugget:1>);
 recipes.remove(<bno:nugget_copper>);
