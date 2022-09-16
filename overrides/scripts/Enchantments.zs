@@ -102,7 +102,7 @@ for item in thermalRemoveList {
 }
 
 for ench, item in additionList {
-	val max as int = ench.maxLevel;
+    val max as int = ench.maxLevel;
     val mult as int = (max == 1) ? 100 : (item.amount * max);
     val book as IItemStack = <minecraft:enchanted_book>.withTag(ench.makeEnchantment(ench.minLevel).makeTag());
 
