@@ -315,6 +315,8 @@ var titanium_nugget = VanillaFactory.createItem("titanium_nugget");
 titanium_nugget.register();
 var titanium_rod = VanillaFactory.createItem("titanium_rod");
 titanium_rod.register();
+var silicon_plate = VanillaFactory.createItem("silicon_plate");
+silicon_plate.register();
 var essence_of_logic = VanillaFactory.createItem("essence_of_logic");
 essence_of_logic.glowing = true;
 essence_of_logic.rarity = "EPIC";

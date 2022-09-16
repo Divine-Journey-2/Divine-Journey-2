@@ -89,13 +89,6 @@ recipes.remove(<thermalfoundation:material:294>);
 recipes.remove(<thermalfoundation:material:295>);
 
 # Titanium Gear
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:productgear:7>);
-mods.tconstruct.Casting.removeTableRecipe(<libvulpes:productgear:7>);
-recipes.remove(<libvulpes:productgear:7>);
-#mods.thermalexpansion.Compactor.removeGearRecipe(<libvulpes:productingot:7>);
-mods.thermalexpansion.Compactor.removeGearRecipe(<galacticraftplanets:item_basic_asteroids>);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productgear:7>);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productgear:7>);
 mods.thermalexpansion.InductionSmelter.addRecipe(<galacticraftplanets:item_basic_asteroids> * 4, <minecraft:sand:*>, <contenttweaker:titanium_gear>, 3000, <thermalfoundation:material:864>, 20);
 #recipes.addShaped(<contenttweaker:titanium_gear>, [[null,<galacticraftplanets:item_basic_asteroids>,null],[<galacticraftplanets:item_basic_asteroids>,<minecraft:iron_ingot>,<galacticraftplanets:item_basic_asteroids>],[null,<galacticraftplanets:item_basic_asteroids>,null]]);
 #mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_gear>, <tconstruct:cast_custom:4>, <liquid:titanium>, 576, false);

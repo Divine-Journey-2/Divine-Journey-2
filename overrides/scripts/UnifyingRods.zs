@@ -20,7 +20,6 @@ recipes.addShaped(<immersiveengineering:material:1>, [[<minecraft:iron_ingot>],[
 mods.immersiveengineering.MetalPress.addRecipe(<immersiveengineering:material:1>, <minecraft:iron_ingot>, <immersiveengineering:mold:2>, 2400, 1);
 #recipes.replaceAllOccurences(<ore:stickIron>, <immersiveengineering:material:1>, <*>);
 #recipes.replaceAllOccurences(<ore:rodIron>, <immersiveengineering:material:1>, <*>);
-<ore:stickIron>.remove(<libvulpes:productrod:1>);
 recipes.remove(<lightningcraft:rod>);
 <ore:rodIron>.remove(<lightningcraft:rod>);
 recipes.remove(<immersiveengineering:metal_ladder>);
@@ -37,7 +36,6 @@ mods.tconstruct.Melting.addRecipe(<liquid:gold> * 144, <lightningcraft:rod:5>, 4
 # Copper Rod
 #recipes.replaceAllOccurences(<ore:stickCopper>, <lightningcraft:rod:6>, <*>);
 #recipes.replaceAllOccurences(<ore:rodCopper>, <lightningcraft:rod:6>, <*>);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:4>);
 mods.tconstruct.Melting.removeRecipe(<liquid:copper>, <lightningcraft:rod:6>);
 mods.tconstruct.Melting.addRecipe(<liquid:copper> * 144, <lightningcraft:rod:6>, 450);
 
@@ -87,21 +85,9 @@ mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <immersiveengineering:ma
 
 # Titanium Rod
 recipes.addShaped(<contenttweaker:titanium_rod>, [[<galacticraftplanets:item_basic_asteroids>],[<galacticraftplanets:item_basic_asteroids>]]);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:7>);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:titanium_rod>, <galacticraftplanets:item_basic_asteroids>, <immersiveengineering:mold:2>, 2400, 1);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productrod:7>);
 mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <contenttweaker:titanium_rod>);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <contenttweaker:titanium_rod>, 984);
-#recipes.replaceAllOccurences(<libvulpes:productrod:7>,<contenttweaker:titanium_rod>);
-recipes.remove(<libvulpes:enhancedmotor>);
-recipes.remove(<libvulpes:advstructuremachine>);
-
-# Iridium Rod
-recipes.addShaped(<libvulpes:productrod:10>, [[<ore:ingotIridium>],[<ore:ingotIridium>]]);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productrod:10>);
-mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productrod:10>, <ore:ingotIridium>, <immersiveengineering:mold:2>, 2400, 1);
-mods.tconstruct.Melting.removeRecipe(<liquid:iridium>, <libvulpes:productrod:10>);
-mods.tconstruct.Melting.addRecipe(<liquid:iridium> * 144, <libvulpes:productrod:10>, 984);
 
 # Electricium Rod
 recipes.remove(<lightningcraft:rod:7>);
@@ -133,7 +119,6 @@ function addRodToSawmill(input as IItemStack, output as IItemStack) {
     mods.mekanism.sawmill.addRecipe(input, output);
 }
 
-addRodToSawmill(<thermalfoundation:material:135>, <libvulpes:productrod:10>);
 addRodToSawmill(<thermalfoundation:material:132>, <immersiveengineering:material:3>);
 addRodToSawmill(<minecraft:iron_ingot>, <immersiveengineering:material:1>);
 addRodToSawmill(<thermalfoundation:material:130>, <contenttweaker:silver_rod>);

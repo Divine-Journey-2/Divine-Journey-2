@@ -73,26 +73,26 @@ recipes.remove(<immersiveengineering:metal:39>);
 recipes.remove(<lightningcraft:plate>);
 recipes.remove(<thaumcraft:plate:1>);
 val ironPlates = <ore:plateIron>;
-ironPlates.removeItems([<lightningcraft:plate>, <thaumcraft:plate:1>, <libvulpes:productplate:1>, <immersiveengineering:metal:39>]);
+ironPlates.removeItems([<lightningcraft:plate>, <thaumcraft:plate:1>, <immersiveengineering:metal:39>]);
 
 # Removing Gold Plate recipes
 mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:40>);
 recipes.remove(<immersiveengineering:metal:40>);
 recipes.remove(<lightningcraft:plate:5>);
 val goldPlates = <ore:plateGold>;
-goldPlates.removeItems([<immersiveengineering:metal:40>, <lightningcraft:plate:5>, <libvulpes:productplate:2>]);
+goldPlates.removeItems([<immersiveengineering:metal:40>, <lightningcraft:plate:5>]);
 
 # Removing Copper Plate recipes
 mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:30>);
 recipes.remove(<immersiveengineering:metal:30>);
 recipes.remove(<lightningcraft:plate:6>);
 val copperPlates = <ore:plateCopper>;
-copperPlates.removeItems([<immersiveengineering:metal:30>, <lightningcraft:plate:6>, <libvulpes:productplate:4>]);
+copperPlates.removeItems([<immersiveengineering:metal:30>, <lightningcraft:plate:6>]);
 
 # Removing Tin Plate recipes
 recipes.remove(<lightningcraft:plate:3>);
 val tinPlates = <ore:plateTin>;
-tinPlates.removeItems([<lightningcraft:plate:3>, <libvulpes:productplate:5>]);
+tinPlates.removeItems([<lightningcraft:plate:3>]);
 
 # Removing Silver Plate recipes
 recipes.remove(<bewitchment:silver_plate>);
@@ -113,7 +113,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:31
 recipes.remove(<immersiveengineering:metal:31>);
 recipes.remove(<lightningcraft:plate:4>);
 val aluminumPlates = <ore:plateAluminum>;
-aluminumPlates.removeItems([<immersiveengineering:metal:31>, <lightningcraft:plate:4>, <libvulpes:productplate:9>]);
+aluminumPlates.removeItems([<immersiveengineering:metal:31>, <lightningcraft:plate:4>]);
 
 # Removing Nickel Plate recipes
 mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:34>);
@@ -126,7 +126,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:38
 recipes.remove(<immersiveengineering:metal:38>);
 recipes.remove(<lightningcraft:plate:1>);
 val steelPlates = <ore:plateSteel>;
-steelPlates.removeItems([<immersiveengineering:metal:38>, <lightningcraft:plate:1>, <libvulpes:productplate:6>]);
+steelPlates.removeItems([<immersiveengineering:metal:38>, <lightningcraft:plate:1>]);
 
 # Removing Electrum Plate recipes
 mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:37>);
@@ -142,23 +142,15 @@ constantanPlates.removeItems([<immersiveengineering:metal:36>]);
 
 # Silicon Plate
 mods.alchemistry.Combiner.addRecipe(<appliedenergistics2:material:5>, [<alchemistry:element:14> * 16]);
-mods.thermalexpansion.Compactor.removeStorageRecipe(<libvulpes:productingot:3>);
-mods.thermalexpansion.Compactor.addPressRecipe(<libvulpes:productplate:3>, <appliedenergistics2:material:5>, 4000);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productplate:3>);
-mods.immersiveengineering.MetalPress.addRecipe(<libvulpes:productplate:3>, <appliedenergistics2:material:5>, <immersiveengineering:mold>, 4000);
-recipes.addShapeless(<libvulpes:productplate:3>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<appliedenergistics2:material:5>,<appliedenergistics2:material:5>]);
+mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:silicon_plate>, <appliedenergistics2:material:5>, 4000);
+mods.immersiveengineering.MetalPress.removeRecipe(<contenttweaker:silicon_plate>);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:silicon_plate>, <appliedenergistics2:material:5>, <immersiveengineering:mold>, 4000);
+recipes.addShapeless(<contenttweaker:silicon_plate>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<appliedenergistics2:material:5>,<appliedenergistics2:material:5>]);
 
 # Titanium Plate
-mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <libvulpes:productplate:7>);
-mods.thermalexpansion.Compactor.removeStorageRecipe(<galacticraftplanets:item_basic_asteroids>);
-mods.immersiveengineering.MetalPress.removeRecipe(<libvulpes:productplate:7>);
-#recipes.replaceAllOccurences(<libvulpes:productplate:7>, <contenttweaker:titanium_plate>);
-mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <libvulpes:productplate:7>);
-mods.tconstruct.Casting.removeTableRecipe(<libvulpes:productplate:7>);
 recipes.addShapeless(<contenttweaker:titanium_plate>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, 3000);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, <immersiveengineering:mold>, 3000);
-mods.alchemistry.Dissolver.removeRecipe(<libvulpes:productplate:7>);
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_plate>, false, 1, [[100, <alchemistry:element:22> * 144]]);
 
 # Black Iron Slate
