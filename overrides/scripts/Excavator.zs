@@ -216,7 +216,7 @@ function addExcavator(name as string, rarity as int, ores as string[], chances a
 
 <ore:oreEndBiotite>.add(<quark:biotite_ore>);
 
-<ore:oreOverworldQuartz>.add(<mysticalworld:quartz_ore>);
+<ore:oreOverworldQuartz>.add(<thaumcraft:quartz_ore>);
 
 
 addExcavator("Asteroids Illemite", 25, ["oreIlmenite", "oreAsteroidsAluminum"], [0.8, 0.2], [-30]);
