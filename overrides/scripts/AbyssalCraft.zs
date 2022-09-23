@@ -408,18 +408,14 @@ mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:blazeblock>, <a
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:129>, <abyssalcraft:crystal:16>, 0.1);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:6>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:2>);
-mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:productnugget:5>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<agricraft:agri_nugget:5>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:2>);
-mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:metal0:4>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<galacticraftcore:basic_block_core:9>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thaumcraft:nugget:1>);
-mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:productnugget:4>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<mekanism:nugget:5>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<agricraft:agri_nugget:4>);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<galacticraftcore:basic_block_core:13>, <abyssalcraft:crystalcluster2:2>, 0.9);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<appliedenergistics2:material:5>, <abyssalcraft:crystal:18>, 0.1);
-mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<libvulpes:ore0:9>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<galacticraftcore:basic_block_core:7>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:ore:1>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<thermalfoundation:ore:4>);

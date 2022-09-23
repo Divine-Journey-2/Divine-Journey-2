@@ -55,7 +55,7 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:16>, [[<thermalfoundation:materia
 
 # Silicon Armor Plating
 recipes.remove(<simplyjetpacks:metaitemmods:3>);
-recipes.addShaped(<simplyjetpacks:metaitemmods:3>, [[<libvulpes:productplate:3>,<contenttweaker:ingot_of_elevation>,<libvulpes:productplate:3>],[<contenttweaker:ingot_of_elevation>,<libvulpes:productplate:3>,<contenttweaker:ingot_of_elevation>],[<libvulpes:productplate:3>,<contenttweaker:ingot_of_elevation>,<libvulpes:productplate:3>]]);
+recipes.addShaped(<simplyjetpacks:metaitemmods:3>, [[<contenttweaker:silicon_plate>,<contenttweaker:ingot_of_elevation>,<contenttweaker:silicon_plate>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:silicon_plate>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:silicon_plate>,<contenttweaker:ingot_of_elevation>,<contenttweaker:silicon_plate>]]);
 
 # Glowstone Elevation Unit (Empty)
 recipes.remove(<simplyjetpacks:metaitemmods:27>);
@@ -128,18 +128,18 @@ recipes.addShaped(<simplyjetpacks:metaitemmods:26>, [[<contenttweaker:fluxed_ele
 
 # Creative Fluxpack
 mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemfluxpack>.withTag({Energy: 200000}),
-[[<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>], 
-[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <extrautils2:passivegenerator:6>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>], 
+[[<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>],
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <extrautils2:passivegenerator:6>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <simplyjetpacks:itemfluxpack:14>, <contenttweaker:white_matter>],
 [<projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>]]);
 
 # Creative Jetpack
 mods.extendedcrafting.TableCrafting.addShaped(<simplyjetpacks:itemjetpack>.withTag({Energy: 200000, JetpackParticle: 0}),
-[[null, <botania:storage:2>, null, <botania:storage:2>, null], 
-[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, null, <thermalfoundation:storage_alloy:6>, <botania:storage:2>], 
-[<botania:storage:2>, <tconstruct:metal:2>, <simplyjetpacks:itemfluxpack>, <tconstruct:metal:2>, <botania:storage:2>], 
-[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, <projecte:item.pe_arcana_ring>.noReturn(), <thermalfoundation:storage_alloy:6>, <botania:storage:2>], 
+[[null, <botania:storage:2>, null, <botania:storage:2>, null],
+[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, null, <thermalfoundation:storage_alloy:6>, <botania:storage:2>],
+[<botania:storage:2>, <tconstruct:metal:2>, <simplyjetpacks:itemfluxpack>, <tconstruct:metal:2>, <botania:storage:2>],
+[<botania:storage:2>, <thermalfoundation:storage_alloy:6>, <projecte:item.pe_arcana_ring>.noReturn(), <thermalfoundation:storage_alloy:6>, <botania:storage:2>],
 [null, <botania:storage:2>, null, <botania:storage:2>, null]]);
 
 print("ENDING SimplyJetpacks.zs");

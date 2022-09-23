@@ -224,7 +224,7 @@ recipes.addShaped(<enderio:block_simple_stirling_generator>, [[<thermalfoundatio
 
 # Simple Crafter
 recipes.remove(<enderio:block_simple_crafter>);
-recipes.addShaped(<enderio:block_simple_crafter>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<minecraft:crafting_table>,<enderio:item_material>,<minecraft:crafting_table>],[<enderio:item_material:11>,<libvulpes:productplate:3>,<enderio:item_material:11>]]);
+recipes.addShaped(<enderio:block_simple_crafter>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<minecraft:crafting_table>,<enderio:item_material>,<minecraft:crafting_table>],[<enderio:item_material:11>,<contenttweaker:silicon_plate>,<enderio:item_material:11>]]);
 
 # Simple Alloy Smelter
 recipes.remove(<enderio:block_simple_alloy_smelter>);
