@@ -5,6 +5,7 @@ import mods.extrautils2.Resonator;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.immersiveengineering.MetalPress;
+import mods.thermalexpansion.Transposer;
 import mods.tconstruct.Melting;
 import mods.astralsorcery.Altar;
 import mods.inworldcrafting.FluidToItem;
@@ -518,8 +519,8 @@ for i in 0 to 8 {
 	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
-# Alternative Sun Crystal filling recipes
-FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extrautils2:suncrystal:*>], false);
+# Alternative Sun Crystal filling recipe
+mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:suncrystal>, <extrautils2:suncrystal:*>, <liquid:liquid_sunshine> * 200, 2400);
 
 recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
 
