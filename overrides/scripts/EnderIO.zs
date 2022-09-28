@@ -21,7 +21,9 @@ print("STARTING EnderIO.zs");
 # Fluid Tank
 recipes.remove(<enderio:block_tank>);
 recipes.addShaped(<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}), [[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>],[<immersiveengineering:metal_decoration1:1>,<ore:blockGlass>,<immersiveengineering:metal_decoration1:1>],[<thermalfoundation:material:352>,<immersiveengineering:metal_decoration1:1>,<thermalfoundation:material:352>]]);
-#
+
+<enderio:block_tank>.maxStackSize = 1;
+<enderio:block_tank:1>.maxStackSize = 1;
 
 # Conductive Iron in the Immersive Alloy Smelter
 IEAlloySmelter.addRecipe(<enderio:item_alloy_ingot:4>, <minecraft:iron_ingot>, <minecraft:redstone>, 200);
