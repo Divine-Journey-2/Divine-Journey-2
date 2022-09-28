@@ -734,4 +734,12 @@
     </soulbinding>
   </recipe>
 
+  <recipe name="Alloy: Steel (Oredict)" required="true">
+    <alloying energy="4000">
+      <input name="ingotIron" />
+      <input name="immersiveengineering:material:17" />
+      <output name="ingotSteel" amount="2" />
+    </alloying>
+  </recipe>
+
 </enderio:recipes>
