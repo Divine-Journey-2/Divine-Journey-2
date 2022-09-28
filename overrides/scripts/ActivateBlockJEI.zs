@@ -32,7 +32,7 @@ function addInteraction(input as IItemStack, blockEntity as IItemStack, output a
 }
 
 // Tinkers Construct Mending Moss
-addInteraction(<tconstruct:materials:18>.withTag({display:{Lore: ["§r§bWith 10 Levels"]}}), <minecraft:bookshelf>, <tconstruct:materials:19>);
+addInteraction(<tconstruct:materials:18>, <minecraft:bookshelf>, <tconstruct:materials:19>);
 
 // Activating Ender Cores on End Crystals
 addInteraction(<enderutilities:enderpart:10>, <minecraft:end_crystal>, <enderutilities:enderpart:15>);
