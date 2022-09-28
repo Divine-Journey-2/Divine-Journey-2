@@ -186,26 +186,6 @@
 		]
 	},
 	{
-		"item": "oreSulfur",
-		"color": 4,
-		"rarity": [
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 5,
-				"depth_max": 10,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
 		"item": "oreIridium",
 		"color": 0,
 		"rarity": [
