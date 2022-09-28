@@ -306,8 +306,8 @@ addExcavator("Nether Cassiterite", 15, ["oreNetherTin"], [1.0], [-1]);
 addExcavator("Nether Gold", 20, ["oreNetherGold", "oreNetherCopper", "blockGlowstone"], [0.65, 0.25, 0.1], [-1]);
 addExcavator("Nether Coal", 25, ["oreNetherCoal", "oreNetherDiamond", "oreNetherEmerald"], [0.7, 0.25, 0.05], [-1]);
 addExcavator("Nether Blood", 25, ["oreNetherRedstone", "oreArdite", "oreBloodgem", "oreNetherite"], [0.4, 0.2, 0.2, 0.2], [-1]);
-addExcavator("Nether Lapis", 25, ["oreCobalt", "oreArdite", "oreCincinnasite"], [0.4, 0.3, 0.3], [-1]);
-addExcavator("Nether Cobalt", 25, ["oreNetherLapis", "oreCincinnasite", "oreCobalt"], [0.5, 0.3, 0.2], [-1]);
+addExcavator("Nether Cobalt", 25, ["oreCobalt", "oreArdite", "oreCincinnasite"], [0.4, 0.3, 0.3], [-1]);
+addExcavator("Nether Lapis", 25, ["oreNetherLapis", "oreCincinnasite", "oreCobalt"], [0.5, 0.3, 0.2], [-1]);
 addExcavator("Nether Cincinnasite", 25, ["oreCincinnasite", "dustSulfur"], [0.9, 0.1], [-1]);
 
 addExcavator("Iron", 25, ["oreIron", "oreNickel", "oreTin"], [0.55, 0.25, 0.20], [0, 9, -11325]);
