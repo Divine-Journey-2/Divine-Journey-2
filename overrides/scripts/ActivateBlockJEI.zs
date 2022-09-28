@@ -31,6 +31,9 @@ function addInteraction(input as IItemStack, blockEntity as IItemStack, output a
     <assembly:activate_block_or_entity>.addJEIRecipe(recipe);
 }
 
+// Tinkers Construct Mending Moss
+addInteraction(<tconstruct:materials:18>.withTag({display:{Lore: ["§r§bWith 10 Levels"]}}), <minecraft:bookshelf>, <tconstruct:materials:19>);
+
 // Activating Ender Cores on End Crystals
 addInteraction(<enderutilities:enderpart:10>, <minecraft:end_crystal>, <enderutilities:enderpart:15>);
 addInteraction(<enderutilities:enderpart:11>, <minecraft:end_crystal>, <enderutilities:enderpart:16>);
