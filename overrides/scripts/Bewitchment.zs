@@ -134,7 +134,7 @@ WitchesCauldron.addRecipe([<bewitchment:tallow> * 3], [<thaumcraft:tallow>,<thau
 
 # Fiery Unguent
 Distillery.removeRecipe(<bewitchment:fiery_unguent>);
-Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<contenttweaker:incendium>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]})]);
+Distillery.addRecipe([<bewitchment:fiery_unguent>], [<bewitchment:cloudy_oil>,<contenttweaker:incendium>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "alkimia"}]})]);
 
 # Swirl of the Depths
 Distillery.removeRecipe(<bewitchment:swirl_of_depths>);
