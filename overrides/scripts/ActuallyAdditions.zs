@@ -254,7 +254,7 @@ recipes.addShaped(<actuallyadditions:item_laser_upgrade_range>, [[<actuallyaddit
 
 # Laser Relay Modifier: Invisility
 recipes.remove(<actuallyadditions:item_laser_upgrade_invisibility>);
-recipes.addShaped(<actuallyadditions:item_laser_upgrade_invisibility>, [[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal_empowered:3>,<extrautils2:ingredients:15>,<actuallyadditions:item_crystal_empowered:3>],[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>]]);
+recipes.addShaped(<actuallyadditions:item_laser_upgrade_invisibility>*16, [[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal_empowered:3>,<extrautils2:ingredients:15>,<actuallyadditions:item_crystal_empowered:3>],[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>]]);
 
 # Farmer
 recipes.remove(<actuallyadditions:block_farmer>);
