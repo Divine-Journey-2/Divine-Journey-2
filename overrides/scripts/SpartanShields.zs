@@ -13,4 +13,7 @@ recipes.addShaped(<spartanshields:shield_botania_elementium>, [[<botania:manares
 recipes.remove(<spartanshields:shield_botania_terrasteel>);
 recipes.addShaped(<spartanshields:shield_botania_terrasteel>, [[<botania:manaresource:4>,<contenttweaker:rune_of_pride>,<botania:manaresource:4>],[<botania:manaresource:4>,<botania:manaresource:3>,<botania:manaresource:4>],[null,<contenttweaker:rune_of_mana>,null]]);
 
+# Flux-Infused Shield
+recipes.addShaped(<spartanshields:shield_flux_ra>, [[null,<contenttweaker:fluxed_electrum_plate>,null],[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:flux_crystal>,<contenttweaker:fluxed_electrum_plate>],[null,<contenttweaker:fluxed_electrum_plate>,null]]);
+
 print("ENDING SpartanShields.zs");
