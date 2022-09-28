@@ -1231,7 +1231,7 @@ function(out, ins, cInfo) {
 
 }, null);
 <contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.blue("Attuned Celestial Crystals"));
-<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Dim Constellation:"));
+<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Faint Constellation:"));
 <contenttweaker:astral_core>.addTooltip(format.lightPurple("Alcara") + format.white(", ") + format.gray("Gelu") + format.white(", ") + format.green("Ulteria") + format.white(", and ") + format.gold("Vorux") + format.white(". To add a trait to a Crystal:"));
 <contenttweaker:astral_core>.addTooltip(format.white("1. Attune it to any Constellation."));
 <contenttweaker:astral_core>.addTooltip(format.white("2. Wait until a Dim Constellation is available at night."));
