@@ -355,7 +355,7 @@ recipes.addShaped(<actuallyadditions:block_inputter_advanced>, [[<actuallyadditi
 
 # Fishing Net
 recipes.remove(<actuallyadditions:block_fishing_net>);
-recipes.addShaped(<actuallyadditions:block_fishing_net>, [[<ore:string>,<ore:string>,<ore:string>],[<thermalfoundation:tool.fishing_rod_diamond>,<actuallyadditions:block_crystal_empowered:4>,<thermalfoundation:tool.fishing_rod_diamond>],[<ore:string>,<industrialforegoing:water_resources_collector>,<ore:string>]]);
+recipes.addShaped(<actuallyadditions:block_fishing_net>, [[<immersiveengineering:material:4>,<immersiveengineering:material:4>,<immersiveengineering:material:4>],[<immersiveengineering:material:4>,<thermalfoundation:tool.fishing_rod_diamond>,<immersiveengineering:material:4>],[<ore:string>,<immersiveengineering:material:4>,<immersiveengineering:material:4>]]);
 
 # Solar Panel
 recipes.remove(<actuallyadditions:block_furnace_solar>);
