@@ -15,5 +15,7 @@ recipes.addShaped(<spartanshields:shield_botania_terrasteel>, [[<botania:manares
 
 # Flux-Infused Shield
 recipes.addShaped(<spartanshields:shield_flux_ra>, [[null,<contenttweaker:fluxed_electrum_plate>,null],[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:flux_crystal>,<contenttweaker:fluxed_electrum_plate>],[null,<contenttweaker:fluxed_electrum_plate>,null]]);
+<spartanshields:shield_flux_ra>.removeTooltip("Cannot be crafted. Missing Mods:");
+<spartanshields:shield_flux_ra>.removeTooltip("Redstone Arsenal");
 
 print("ENDING SpartanShields.zs");
