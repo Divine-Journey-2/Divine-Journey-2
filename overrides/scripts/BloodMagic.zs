@@ -9,6 +9,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
+import mods.inworldcrafting.FluidToItem;
 import dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
 
 print("STARTING BloodMagic.zs");
@@ -137,6 +138,19 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "blood
 # Blank Rune
 recipes.remove(<bloodmagic:blood_rune>);
 recipes.addShaped(<bloodmagic:blood_rune>, [[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>],[<bloodmagic:slate>,blood_orb_at_least_tier_1.reuse(),<bloodmagic:slate>],[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
+
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:1>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:2>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:3>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:4>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:5>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:6>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:7>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:8>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:9>], false);
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:10>], false);
+
+
 
 # Alchemy Table
 recipes.remove(<bloodmagic:alchemy_table>);
