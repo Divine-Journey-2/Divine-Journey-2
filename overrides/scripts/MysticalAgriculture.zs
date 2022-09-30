@@ -738,6 +738,9 @@ recipes.remove(<mysticalagriculture:cold_iron_seeds>);
 # Cold Iron from Cold-Iron Essence
 recipes.addShaped(<bewitchment:cold_iron_ingot> * 3, [[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,null,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>]]);
 
+# Coquina from Stone Essence and Cold-Iron Essence
+recipes.addShaped(<bewitchment:coquina> * 8, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>]]);
+
 # Meteoric Iron Seeds
 recipes.remove(<mysticalagriculture:meteoric_iron_seeds>);
 # recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_meteoric_iron_seeds.json
