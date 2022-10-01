@@ -1,5 +1,6 @@
 # Author: WaitingIdly
 
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
@@ -20,7 +21,7 @@ activate.setJEIDecoration(3, 0, "indicator_arrow", SlotVisual.arrowRight());
 activate.setJEIItemSlot(4, 0, "item_output", SlotVisual.itemSlot());
 
 
-function addInteraction(input as IItemStack, blockEntity as IItemStack, output as IItemStack) as void {
+function addInteraction(input as IIngredient, blockEntity as IIngredient, output as IItemStack) as void {
     val recipe = AssemblyRecipe.create(function(container) {
         container.addItemOutput("item_output", output);
     });
@@ -58,6 +59,24 @@ addInteraction(<thaumcraft:salis_mundus>, <minecraft:bookshelf>, <thaumcraft:tha
 addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 
+// Botania Seeds (convert area of dirt/grass into target)
+var soil = <minecraft:dirt> | <minecraft:grass>;
+addInteraction(<botania:grassseeds:0>, <minecraft:dirt>, <minecraft:grass>);
+addInteraction(<botania:grassseeds:1>, soil, <minecraft:dirt:2>);
+addInteraction(<botania:grassseeds:2>, soil, <minecraft:mycelium>);
+addInteraction(<botania:grassseeds:3>, soil, <botania:altgrass:0>);
+addInteraction(<botania:grassseeds:4>, soil, <botania:altgrass:1>);
+addInteraction(<botania:grassseeds:5>, soil, <botania:altgrass:2>);
+addInteraction(<botania:grassseeds:6>, soil, <botania:altgrass:3>);
+addInteraction(<botania:grassseeds:7>, soil, <botania:altgrass:4>);
+addInteraction(<botania:grassseeds:8>, soil, <botania:altgrass:5>);
+addInteraction(<botania:overgrowthseed>, <minecraft:grass>, <botania:enchantedsoil>);
+
+// Drop of Evil
+addInteraction(<extrautils2:ingredients:10>, soil, <extrautils2:cursedearth>);
+
+// Unlock the Aether Portal
+addInteraction(<contenttweaker:crown_of_skies>, <aether_legacy:aether_portal>, <aether_legacy:aether_portal>.withTag({display:{Name:"§dUnlock the Aether Dimension"}}));
 
 
 print("ENDING ActivateBlockJEI.zs");
