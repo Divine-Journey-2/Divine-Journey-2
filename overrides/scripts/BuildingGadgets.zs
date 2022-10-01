@@ -1,30 +1,30 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
- import crafttweaker.formatting.IFormattedText;
+import crafttweaker.formatting.IFormattedText;
 
 print("STARTING BuildingGadgets.zs");
 
 # Building Gadget
 recipes.remove(<buildinggadgets:buildingtool>);
-recipes.addShaped(<buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}}), [[<thermalfoundation:material:322>,<mekanism:controlcircuit:3>,<thermalfoundation:material:322>],[<appliedenergistics2:material:24>,<plustic:osgloglasblock>,<appliedenergistics2:material:24>],[<thermalfoundation:material:322>,<mekanism:controlcircuit:3>,<thermalfoundation:material:322>]]);
+recipes.addShaped(<buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}}), [[<thermalfoundation:material:322>,<mekanism:controlcircuit:3>,<thermalfoundation:material:322>],[<appliedenergistics2:material:24>,<plustic:osgloglasblock>,<appliedenergistics2:material:24>],[<thermalfoundation:material:322>,<extrautils2:itembuilderswand>,<thermalfoundation:material:322>]]);
 
 # Destruction Gadget
 recipes.remove(<buildinggadgets:destructiontool>);
-recipes.addShaped(<buildinggadgets:destructiontool>.withTag({overlay: 1 as byte, fuzzy: 1 as byte}), [[<thermalfoundation:material:359>,<mekanism:controlcircuit:3>,<thermalfoundation:material:359>],[<contenttweaker:estimation_processor>,<enderio:block_alloy:3>,<contenttweaker:estimation_processor>],[<thermalfoundation:material:359>,<mekanism:controlcircuit:3>,<thermalfoundation:material:359>]]);
+recipes.addShaped(<buildinggadgets:destructiontool>.withTag({overlay: 1 as byte, fuzzy: 1 as byte}), [[<thermalfoundation:material:359>,<extrautils2:itemdestructionwand>,<thermalfoundation:material:359>],[<contenttweaker:estimation_processor>,<enderio:block_alloy:3>,<contenttweaker:estimation_processor>],[<thermalfoundation:material:359>,<mekanism:controlcircuit:3>,<thermalfoundation:material:359>]]);
 
 # Exchanging Gadget
 recipes.remove(<buildinggadgets:exchangertool>);
-recipes.addShaped(<buildinggadgets:exchangertool>.withTag({blockstate: {Name: "minecraft:air"}}), [[<thermalfoundation:material:327>,<contenttweaker:cosmic_alloy>,<thermalfoundation:material:327>],[<contenttweaker:methodology_processor>,<enderio:block_alloy:2>,<contenttweaker:methodology_processor>],[<thermalfoundation:material:327>,<contenttweaker:cosmic_alloy>,<thermalfoundation:material:327>]]);
+recipes.addShaped(<buildinggadgets:exchangertool>.withTag({blockstate: {Name: "minecraft:air"}}), [[<quantumflux:craftingpiece:6>,<extrautils2:itemdestructionwand>,<quantumflux:craftingpiece:6>],[<contenttweaker:operation_processor>,<enderio:block_alloy:2>,<contenttweaker:operation_processor>],[<quantumflux:craftingpiece:6>,<extrautils2:itembuilderswand>,<quantumflux:craftingpiece:6>]]);
 
 # Copy-Paste Gadget
 recipes.remove(<buildinggadgets:copypastetool>);
-recipes.addShaped(<buildinggadgets:copypastetool>.withTag({mode: "Copy"}), [[<contenttweaker:defensive_core>,<bloodmagic:component:12>,<contenttweaker:defensive_core>],[<contenttweaker:clearance_processor>,<botania:storage:1>,<contenttweaker:clearance_processor>],[<contenttweaker:defensive_core>,<bloodmagic:component:12>,<contenttweaker:defensive_core>]]);
+recipes.addShaped(<buildinggadgets:copypastetool>.withTag({mode: "Copy"}), [[<thermalfoundation:material:327>,<enderio:item_conduit_probe>,<thermalfoundation:material:327>],[<contenttweaker:methodology_processor>,<actuallyadditions:block_crystal_empowered:4>,<contenttweaker:methodology_processor>],[<thermalfoundation:material:327>,<contenttweaker:cosmic_alloy>,<thermalfoundation:material:327>]]);
 
 # Template Manager
 recipes.remove(<buildinggadgets:templatemanager>);
-recipes.addShaped(<buildinggadgets:templatemanager>, [[<buildinggadgets:constructionblock_dense>,<contenttweaker:environmental_core>,<buildinggadgets:constructionblock_dense>],[<botania:storage:4>,<buildinggadgets:copypastetool>,<botania:storage:4>],[<buildinggadgets:constructionblock_dense>,<contenttweaker:environmental_core>,<buildinggadgets:constructionblock_dense>]]);
+recipes.addShaped(<buildinggadgets:templatemanager>, [[<buildinggadgets:constructionblock_dense>,<thermalfoundation:diagram_redprint>,<buildinggadgets:constructionblock_dense>],[<thermalfoundation:storage:7>,<buildinggadgets:copypastetool>,<thermalfoundation:storage:7>],[<buildinggadgets:constructionblock_dense>,<thermalfoundation:diagram_redprint>,<buildinggadgets:constructionblock_dense>]]);
 
 # Construction Block Powder
 recipes.remove(<buildinggadgets:constructionblockpowder>);
