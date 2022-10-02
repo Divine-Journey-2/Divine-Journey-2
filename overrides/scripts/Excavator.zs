@@ -255,7 +255,7 @@ addExcavator("Dreadlands", 25, ["oreDreadedAbyssalnite", "oreDreadAbyssalnite"],
 addExcavator("Abyssal Wasteland Iron", 25, ["oreAbyssalWastelandIron", "oreAbyssalWastelandTin", "oreAbyssalWastelandCoralium"], [0.4, 0.4, 0.2], [50]);
 addExcavator("Abyssal Wasteland Gold", 25, ["oreAbyssalWastelandGold", "oreAbyssalWastelandCopper"], [0.7, 0.3], [50]);
 addExcavator("Abyssal Wasteland Cassiterite", 25, ["oreAbyssalWastelandTin"], [1.0], [50]);
-addExcavator("Abyssal Wasteland Diamond", 25, ["oreAbyssalWastelandDiamond", "oreAbyssalWastelandCoralium"], [0.6, 0.4], [50]);
+addExcavator("Abyssal Wasteland Diamond", 15, ["oreAbyssalWastelandDiamond", "oreAbyssalWastelandCoralium"], [0.6, 0.4], [50]);
 addExcavator("Abyssal Wasteland Coralium", 25, ["oreAbyssalWastelandCoralium"], [1.0], [50]);
 addExcavator("Abyssal Wasteland Coralium Pearls", 5, ["oreAbyssalWastelandCoralium", "orePearlescentCoralium"], [0.9, 0.1], [50]);
 
@@ -272,7 +272,7 @@ addExcavator("Skythern", 25, ["oreSkythern"], [1.0], [423]);
 addExcavator("Mortum", 25, ["oreMortum"], [1.0], [424]);
 
 addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17]);
-addExcavator("Atum Diamond", 25, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17]);
+addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17]);
 addExcavator("Atum Magnetite", 25, ["oreAtumIron", "oreAtumGold"], [0.85, 0.15], [17]);
 addExcavator("Atum Lapis", 10, ["oreAtumLapis", "oreAtumIron", "oreBone"], [0.6, 0.3, 0.1], [17]);
 addExcavator("Atum Redstone", 15, ["oreAtumRedstone", "oreBone", "strangeSand"], [0.75, 0.20, 0.05], [17]);
@@ -306,7 +306,7 @@ addExcavator("Nether Magnetite", 25, ["oreNetherIron", "oreNetherGold"], [0.85, 
 addExcavator("Nether Copper", 30, ["oreNetherCopper", "oreNetherGold", "blockGlowstone"], [0.65, 0.25, 0.1], [-1]);
 addExcavator("Nether Cassiterite", 15, ["oreNetherTin"], [1.0], [-1]);
 addExcavator("Nether Gold", 20, ["oreNetherGold", "oreNetherCopper", "blockGlowstone"], [0.65, 0.25, 0.1], [-1]);
-addExcavator("Nether Coal", 25, ["oreNetherCoal", "oreNetherDiamond", "oreNetherEmerald"], [0.7, 0.25, 0.05], [-1]);
+addExcavator("Nether Coal", 15, ["oreNetherCoal", "oreNetherDiamond", "oreNetherEmerald"], [0.7, 0.25, 0.05], [-1]);
 addExcavator("Nether Blood", 25, ["oreNetherRedstone", "oreArdite", "oreBloodgem", "oreNetherite"], [0.4, 0.2, 0.2, 0.2], [-1]);
 addExcavator("Nether Cobalt", 25, ["oreCobalt", "oreArdite", "oreCincinnasite"], [0.4, 0.3, 0.3], [-1]);
 addExcavator("Nether Lapis", 25, ["oreNetherLapis", "oreCincinnasite", "oreCobalt"], [0.5, 0.3, 0.2], [-1]);
