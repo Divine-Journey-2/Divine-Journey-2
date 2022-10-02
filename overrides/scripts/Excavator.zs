@@ -173,6 +173,8 @@ function addExcavator(name as string, rarity as int, ores as string[], chances a
 <ore:oreUnderworldDiamond>.add(<lightningcraft:ore_block:2>);
 <ore:oreUnderworldEmerald>.add(<lightningcraft:ore_block:3>);
 
+<ore:oreDreadAbyssalnite>.add(<abyssalcraft:dreadore>);
+
 <ore:oreAbyssalWastelandIron>.add(<abyssalcraft:abyiroore>);
 <ore:oreAbyssalWastelandGold>.add(<abyssalcraft:abygolore>);
 <ore:oreAbyssalWastelandTin>.add(<abyssalcraft:abytinore>);
@@ -248,7 +250,7 @@ addExcavator("Underworld Iron", 25, ["oreUnderworldIron"], [1.0], [-9]);
 addExcavator("Underworld Gold", 25, ["oreUnderworldGold"], [1.0], [-9]);
 addExcavator("Underworld Diamond", 25, ["oreUnderworldDiamond", "oreUnderworldEmerald"], [0.8, 0.2], [-9]);
 
-addExcavator("Dreadlands", 25, ["oreDreadedAbyssalnite", "oreAbyssalnite"], [0.5, 0.5], [51]);
+addExcavator("Dreadlands", 25, ["oreDreadedAbyssalnite", "oreDreadAbyssalnite"], [0.5, 0.5], [51]);
 
 addExcavator("Abyssal Wasteland Iron", 25, ["oreAbyssalWastelandIron", "oreAbyssalWastelandTin", "oreAbyssalWastelandCoralium"], [0.4, 0.4, 0.2], [50]);
 addExcavator("Abyssal Wasteland Gold", 25, ["oreAbyssalWastelandGold", "oreAbyssalWastelandCopper"], [0.7, 0.3], [50]);
