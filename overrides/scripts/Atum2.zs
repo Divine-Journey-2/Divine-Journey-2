@@ -5,6 +5,12 @@ import mods.aether_legacy.Enchanter;
 
 print("STARTING Atum2.zs");
 
+# Sticks
+recipes.remove(<atum:palm_stick>);
+recipes.addShaped(<atum:palm_stick>, [[<atum:palm_planks>,null],[null,<atum:palm_planks>]]);
+recipes.removeByRecipeName("atum:deadwood_stick");
+recipes.addShaped(<atum:deadwood_stick>, [[<atum:deadwood_planks>,null],[null,<atum:deadwood_planks>]]);
+
 # Crates
 recipes.remove(<atum:deadwood_crate>);
 recipes.addShaped(<atum:deadwood_crate>, [[<atum:deadwood_log>,<atum:deadwood_planks>,<atum:deadwood_log>],[<atum:deadwood_planks>,<minecraft:iron_nugget>,<atum:deadwood_planks>],[<atum:deadwood_log>,<atum:deadwood_planks>,<atum:deadwood_log>]]);
