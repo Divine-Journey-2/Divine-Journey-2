@@ -35,15 +35,11 @@ function addInteraction(input as IIngredient, blockEntity as IIngredient, output
 // Tinkers Construct Mending Moss
 addInteraction(<tconstruct:materials:18>, <minecraft:bookshelf>, <tconstruct:materials:19>);
 
-// Activating Ender Cores on End Crystals
-addInteraction(<enderutilities:enderpart:10>, <minecraft:end_crystal>, <enderutilities:enderpart:15>);
-addInteraction(<enderutilities:enderpart:11>, <minecraft:end_crystal>, <enderutilities:enderpart:16>);
-addInteraction(<enderutilities:enderpart:12>, <minecraft:end_crystal>, <enderutilities:enderpart:17>);
-
-// Activating Ender Cores on Stabilized End Crystals
-addInteraction(<enderutilities:enderpart:10>, <contenttweaker:stabilized_end_crystal>, <enderutilities:enderpart:15>);
-addInteraction(<enderutilities:enderpart:11>, <contenttweaker:stabilized_end_crystal>, <enderutilities:enderpart:16>);
-addInteraction(<enderutilities:enderpart:12>, <contenttweaker:stabilized_end_crystal>, <enderutilities:enderpart:17>);
+// Activating Ender Cores on End Crystals and Stabilized End Crystals
+var endCrystal = <minecraft:end_crystal> | <contenttweaker:stabilized_end_crystal>;
+addInteraction(<enderutilities:enderpart:10>, endCrystal, <enderutilities:enderpart:15>);
+addInteraction(<enderutilities:enderpart:11>, endCrystal, <enderutilities:enderpart:16>);
+addInteraction(<enderutilities:enderpart:12>, endCrystal, <enderutilities:enderpart:17>);
 
 // Indicating how to obtain Ignition
 addInteraction(<contenttweaker:flame_devourer_pendant>.withTag({display:{Lore: ["§r§bMust be afflicted with the §cHell Fire§b status","§r§bUses Durability"]}}), <bewitchment:brazier>, <contenttweaker:ignition>);
