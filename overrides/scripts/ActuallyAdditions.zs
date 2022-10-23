@@ -3,6 +3,7 @@
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.actuallyadditions.BallOfFur;
+import mods.actuallyadditions.MiningLens;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.data.IData;
@@ -117,6 +118,10 @@ recipes.addShaped(<actuallyadditions:item_more_damage_lens>, [[<contenttweaker:m
 # Lens of the Miner
 recipes.remove(<actuallyadditions:item_mining_lens>);
 recipes.addShapeless(<actuallyadditions:item_mining_lens>, [<actuallyadditions:item_misc:18>,<industrialforegoing:block_destroyer>,<thermalfoundation:storage:8>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>]);
+
+# Remove Bewitchment Salt (progression skip) from the Mining Lens
+MiningLens.removeStoneOre(<ore:oreSalt>);
+MiningLens.removeStoneOre(<ore:oreAluminium>);
 
 # Lens of Disenchanting
 recipes.remove(<actuallyadditions:item_disenchanting_lens>);
