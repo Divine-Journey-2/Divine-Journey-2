@@ -287,6 +287,7 @@ recipes.addShapedMirrored(<appliedenergistics2:interface>, [[<enderio:item_alloy
 
 # ME Fluid Interface
 recipes.remove(<appliedenergistics2:fluid_interface>);
+recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 recipes.addShaped(<appliedenergistics2:fluid_interface>, [[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:material:44>,<enderio:item_material:1>,<appliedenergistics2:material:43>],[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>]]);
 
 # Molecular Assembler
