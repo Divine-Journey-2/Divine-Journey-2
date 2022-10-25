@@ -133,7 +133,7 @@ recipes.remove(<evilcraft:blood_chest>);
 
 # Gold Promise Acceptor
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:promise_acceptor:1>);
-mods.evilcraft.BloodInfuser.addRecipe(empowered_glod_crystal_block, <liquid:evilcraftblood> * 40000, 1, <evilcraft:promise_acceptor:1>, 200, 8);
+mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:empowered_glod_crystal_block>, <liquid:evilcraftblood> * 40000, 1, <evilcraft:promise_acceptor:1>, 200, 8);
 
 # Bowl of Promises (Strength I)
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:bowl_of_promises:3>);
@@ -141,7 +141,7 @@ mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:bowl_of_promises:2>, <liquid:ev
 
 # Promise of Tenacity II
 recipes.remove(<evilcraft:promise:1>);
-recipes.addShaped(<evilcraft:promise:1>, [[empowered_glod_crystal,<evilcraft:bowl_of_promises:3>.noReturn(),empowered_glod_crystal],[<contenttweaker:holy_core>,<evilcraft:promise_acceptor:1>,<contenttweaker:holy_core>],[empowered_glod_crystal,<evilcraft:bowl_of_promises:3>.noReturn(),empowered_glod_crystal]]);
+recipes.addShaped(<evilcraft:promise:1>, [[<contenttweaker:empowered_glod_crystal>,<evilcraft:bowl_of_promises:3>.noReturn(),<contenttweaker:empowered_glod_crystal>],[<contenttweaker:holy_core>,<evilcraft:promise_acceptor:1>,<contenttweaker:holy_core>],[<contenttweaker:empowered_glod_crystal>,<evilcraft:bowl_of_promises:3>.noReturn(),<contenttweaker:empowered_glod_crystal>]]);
 
 # Diamond Promise Acceptor
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:promise_acceptor:2>);
@@ -211,7 +211,7 @@ recipes.addShaped(<evilcraft:piercing_vengeance_focus>, [[<contenttweaker:potenc
 
 # Golden String
 recipes.remove(<evilcraft:golden_string>);
-recipes.addShaped(<evilcraft:golden_string>, [[glod_crystal,<ore:string>,glod_crystal],[<ore:string>,<ore:string>,<ore:string>],[glod_crystal,<ore:string>,glod_crystal]]);
+recipes.addShaped(<evilcraft:golden_string>, [[<contenttweaker:glod_crystal>,<ore:string>,<contenttweaker:glod_crystal>],[<ore:string>,<ore:string>,<ore:string>],[<contenttweaker:glod_crystal>,<ore:string>,<contenttweaker:glod_crystal>]]);
 
 # Spirit Reanimator
 recipes.remove(<evilcraft:spirit_reanimator>);

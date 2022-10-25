@@ -11,8 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:empowered_glod_crystal",
-            "nbt": {"display":{"Name":"§6Empowered Glod Crystal"}}
+            "item": "contenttweaker:empowered_glod_crystal"
         },
         {
             "type": "item",

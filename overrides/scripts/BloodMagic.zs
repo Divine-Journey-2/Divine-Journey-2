@@ -156,7 +156,7 @@ FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:bloo
 recipes.remove(<bloodmagic:alchemy_table>);
 mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:alchemy_table>,
 [[<thermalfoundation:glass:7>,<minecraft:glass_bottle>,<minecraft:glass_bottle>,<minecraft:glass_bottle>,<thermalfoundation:glass:7>],
-[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,empowered_glod_crystal_block,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],
+[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<contenttweaker:hardened_blood_droplet>,<enderio:block_alloy:6>,<enderio:block_alloy:6>],
 [null,<abyssalcraft:ingotblock:2>,<enderio:block_alloy:6>,<abyssalcraft:ingotblock:2>,null],
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
@@ -234,7 +234,7 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
-recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
+recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[<contenttweaker:empowered_glod_crystal_block>,<betternether:cincinnasite_forge>,<contenttweaker:empowered_glod_crystal_block>]]);
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);

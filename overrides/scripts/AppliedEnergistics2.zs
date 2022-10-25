@@ -308,7 +308,7 @@ recipes.addShaped(<appliedenergistics2:crafting_storage_1k>, [[<enderio:item_all
 
 # 4k Crafting Storage
 recipes.remove(<appliedenergistics2:crafting_storage_4k>);
-recipes.addShaped(<appliedenergistics2:crafting_storage_4k>, [[<enderio:item_alloy_ingot>,glod_crystal,<enderio:item_alloy_ingot>],[glod_crystal,<appliedenergistics2:crafting_storage_1k>.noReturn(),glod_crystal],[<enderio:item_alloy_ingot>,<appliedenergistics2:material:36>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<appliedenergistics2:crafting_storage_4k>, [[<enderio:item_alloy_ingot>,<contenttweaker:glod_crystal>,<enderio:item_alloy_ingot>],[<contenttweaker:glod_crystal>,<appliedenergistics2:crafting_storage_1k>.noReturn(),<contenttweaker:glod_crystal>],[<enderio:item_alloy_ingot>,<appliedenergistics2:material:36>,<enderio:item_alloy_ingot>]]);
 
 # 16k Crafting Storage
 recipes.remove(<appliedenergistics2:crafting_storage_16k>);

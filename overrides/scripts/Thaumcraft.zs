@@ -163,7 +163,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:sanitychecker",
 
 # Essentia Filter
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "TUBES", 5, [<aspect:aqua> * 2], <thaumcraft:filter> * 3, [[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal],[empowered_glod_crystal,<contenttweaker:rune_of_water>,empowered_glod_crystal],[empowered_glod_crystal,<thaumcraft:plank_silverwood>,empowered_glod_crystal]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "TUBES", 5, [<aspect:aqua> * 2], <thaumcraft:filter> * 3, [[<contenttweaker:empowered_glod_crystal>,<thaumcraft:plank_silverwood>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<contenttweaker:rune_of_water>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<thaumcraft:plank_silverwood>,<contenttweaker:empowered_glod_crystal>]]);
 
 # Rare Earths
 <thaumcraft:nugget:10>.addTooltip(format.gray(format.italic("<Hold Shift for info on how to acquire>")));
@@ -399,15 +399,15 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:EssentiaTranspo
 
 # Fancy Amulet
 recipes.remove(<thaumcraft:baubles:4>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyAmulet", "", <thaumcraft:baubles:4>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyAmulet", "", <thaumcraft:baubles:4>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,<contenttweaker:empowered_glod_crystal>]);
 
 # Fancy Ring
 recipes.remove(<thaumcraft:baubles:5>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyRing", "", <thaumcraft:baubles:5>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:1>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyRing", "", <thaumcraft:baubles:5>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:1>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,<contenttweaker:empowered_glod_crystal>]);
 
 # Fancy Belt
 recipes.remove(<thaumcraft:baubles:6>);
-mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyBelt", "", <thaumcraft:baubles:6>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:2>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,empowered_glod_crystal]);
+mods.thaumcraft.Infusion.registerRecipe("thaumcraft:fancyBelt", "", <thaumcraft:baubles:6>, 1, [<aspect:desiderium> * 40, <aspect:instrumentum> * 10, <aspect:vitreus> * 10], <thaumcraft:baubles:2>, [<thaumcraft:ingot:2>,<actuallyadditions:item_crystal_empowered:2>,<thaumcraft:ingot:2>,<contenttweaker:empowered_glod_crystal>]);
 
 # Blank Advanced Focus
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
