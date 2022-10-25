@@ -8,7 +8,7 @@ import mods.requious.SlotVisual;
 
 print("STARTING ActivateBlockJEI.zs");
 
-var activate = <assembly:activate_block_or_entity>;
+val activate = <assembly:activate_block_or_entity>;
 activate.addJEICatalyst(<botania:cosmetic:32>.withTag({
     display:{
         Name: "§r§cRight Clicking"
@@ -36,7 +36,7 @@ function addInteraction(input as IIngredient, blockEntity as IIngredient, output
 addInteraction(<tconstruct:materials:18>, <minecraft:bookshelf>, <tconstruct:materials:19>);
 
 // Activating Ender Cores on End Crystals and Stabilized End Crystals
-var endCrystal = <minecraft:end_crystal> | <contenttweaker:stabilized_end_crystal>;
+val endCrystal = <minecraft:end_crystal> | <contenttweaker:stabilized_end_crystal>;
 addInteraction(<enderutilities:enderpart:10>, endCrystal, <enderutilities:enderpart:15>);
 addInteraction(<enderutilities:enderpart:11>, endCrystal, <enderutilities:enderpart:16>);
 addInteraction(<enderutilities:enderpart:12>, endCrystal, <enderutilities:enderpart:17>);
@@ -72,7 +72,47 @@ addInteraction(<botania:overgrowthseed>, <minecraft:grass>, <botania:enchantedso
 addInteraction(<extrautils2:ingredients:10>, soil, <extrautils2:cursedearth>);
 
 // Unlock the Aether Portal
-addInteraction(<contenttweaker:crown_of_skies>, <aether_legacy:aether_portal>, <aether_legacy:aether_portal>.withTag({display:{Name:"§dUnlock the Aether Dimension"}}));
+addInteraction(<contenttweaker:crown_of_skies>, <aether_legacy:aether_portal>, <aether_legacy:aether_portal>.withTag({display:{Name:"§r§dUnlock the Aether Dimension"}}));
+
+// P2P Tunnel Attunement
+// https://github.com/PrototypeTrousers/Applied-Energistics-2/blob/AE2-Omnifactory/src/main/java/appeng/core/features/registries/P2PTunnelRegistry.java
+val allTunnels = <appliedenergistics2:part:460> | <appliedenergistics2:part:461> | <appliedenergistics2:part:462> | <appliedenergistics2:part:463> | <appliedenergistics2:part:467> | <appliedenergistics2:part:469>;
+addInteraction(
+    <appliedenergistics2:part:16>.withTag({display:{Name:"§r§dAny AE2 Cable"}}),
+    allTunnels,
+    <appliedenergistics2:part:460> // ME
+);
+
+addInteraction(
+    <minecraft:torch> | <minecraft:glowstone>,
+    allTunnels,
+    <appliedenergistics2:part:467> // LIGHT
+);
+
+addInteraction(
+    <thermaldynamics:duct_0>.withTag({display:{Name:"§r§dNearly anything that can hold or transfer RF/FE/CF/AE"}}),
+    allTunnels,
+    <appliedenergistics2:part:469> // FE
+);
+
+addInteraction(
+    <minecraft:redstone> | <minecraft:redstone_block> | <minecraft:repeater> | <minecraft:redstone_lamp> | <minecraft:daylight_detector> | <minecraft:lever>,
+    allTunnels,
+    <appliedenergistics2:part:461> // REDSTONE
+);
+
+addInteraction(
+    <appliedenergistics2:interface> | <appliedenergistics2:part:440> | <appliedenergistics2:part:220> | <appliedenergistics2:part:260> | <appliedenergistics2:part:261> | <minecraft:hopper> | <minecraft:chest> | <minecraft:trapped_chest> | <mekanism:transmitter:3> | <mekanism:transmitter:4> | <mekanism:transmitter:5>,
+    allTunnels,
+    <appliedenergistics2:part:462> // ITEM
+);
+
+addInteraction(
+    <minecraft:bucket>.withTag({display:{Name:"§r§dNearly anything that can hold or transfer fluids"}}),
+    allTunnels,
+    <appliedenergistics2:part:463> // FLUID
+);
+
 
 
 print("ENDING ActivateBlockJEI.zs");
