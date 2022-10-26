@@ -1,6 +1,0 @@
-
-{
-  "Name": "Golem",
-  "Registry ID": "thaumcraft:golem",
-  "Class": "thaumcraft.common.golems.EntityThaumcraftGolem"
-}

@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.pumpkin_spider",
-  "Registry ID": "divinerpg:pumpkin_spider",
-  "Class": "divinerpg.objects.entities.entity.vanilla.EntityPumpkinSpider"
-}

@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.desert_crawler",
-  "Registry ID": "divinerpg:desert_crawler",
-  "Class": "divinerpg.objects.entities.entity.vanilla.EntityDesertCrawler"
-}

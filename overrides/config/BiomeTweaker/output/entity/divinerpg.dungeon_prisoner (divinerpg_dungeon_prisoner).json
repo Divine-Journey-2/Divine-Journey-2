@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.dungeon_prisoner",
-  "Registry ID": "divinerpg:dungeon_prisoner",
-  "Class": "divinerpg.objects.entities.entity.arcana.EntityDungeonPrisoner"
-}

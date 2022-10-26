@@ -1,6 +1,0 @@
-
-{
-  "Name": "TaintSwarm",
-  "Registry ID": "thaumcraft:taintswarm",
-  "Class": "thaumcraft.common.entities.monster.tainted.EntityTaintSwarm"
-}
