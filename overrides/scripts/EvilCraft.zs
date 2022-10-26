@@ -8,6 +8,7 @@ import mods.thermalexpansion.Transposer;
 import mods.evilcraft.BloodInfuser;
 import crafttweaker.data.IData;
 import mods.bloodmagic.TartaricForge;
+import mods.inworldcrafting.FluidToItem;
 
 print("STARTING EvilCraft.zs");
 
@@ -218,7 +219,7 @@ recipes.remove(<evilcraft:spirit_reanimator>);
 
 # Sceptre of Thunder
 recipes.remove(<evilcraft:sceptre_of_thunder>);
-recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<contenttweaker:rune_of_autumn>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
+FluidToItem.transform(<evilcraft:sceptre_of_thunder>, <liquid:cloud_seed_concentrated>, [<abyssalcraft:crystalcluster:1>, <contenttweaker:power_core>], true);
 
 # Kineticator
 #recipes.remove(<evilcraft:kineticator>);
