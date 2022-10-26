@@ -12,7 +12,7 @@ print("STARTING ActuallyAdditions.zs");
 
 # Crafting Table on a Stick
 recipes.remove(<actuallyadditions:item_crafter_on_a_stick>);
-recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<minecraft:crafting_table>],[<enderutilities:enderpart:20>,null]]);
+recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<minecraft:crafting_table>],[<immersiveengineering:material>,null]]);
 
 # Wood Casing
 recipes.remove(<actuallyadditions:block_misc:4>);
