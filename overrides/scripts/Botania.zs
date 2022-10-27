@@ -724,6 +724,10 @@ recipes.addShaped(<botania:autocraftinghalo>, [[null,<botania:manaresource:4>,nu
 recipes.remove(<botania:monocle>);
 recipes.addShaped(<botania:monocle>, [[null,<botania:manaresource>,null],[<botania:manaresource>,<actuallyadditions:item_engineer_goggles_advanced>,<botania:manaresource>],[null,<contenttweaker:empowered_glod_crystal>,null]]);
 
+# Glimmering Dreamwood
+recipes.remove(<botania:dreamwood:5>);
+recipes.addShaped(<botania:dreamwood:5>, [[null,<contenttweaker:sanctus>,null],[<botania:manaresource:17>,<botania:dreamwood>,<botania:manaresource:17>],[null,<contenttweaker:sanctus>,null]]);
+
 # Lens Clip
 recipes.remove(<botania:clip>);
 recipes.addShapedMirrored(<botania:clip>, [[null,<botania:dreamwood>,<botania:dreamwood>],[<botania:dreamwood>,<contenttweaker:purified_tablet>,<botania:dreamwood>],[<botania:dreamwood>,<botania:dreamwood>,null]]);
