@@ -248,6 +248,7 @@ mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<cont
 # Large Bloodstone Tile
 recipes.remove(<bloodmagic:decorative_brick>);
 recipes.addShaped(<bloodmagic:decorative_brick>, [[<contenttweaker:hybrid_abyssalium_ingot>,<bloodmagic:blood_shard>,<contenttweaker:hybrid_abyssalium_ingot>],[<bloodmagic:blood_shard>,<contenttweaker:power_core>,<bloodmagic:blood_shard>],[<contenttweaker:hybrid_abyssalium_ingot>,<bloodmagic:blood_shard>,<contenttweaker:hybrid_abyssalium_ingot>]]);
+recipes.addShapeless(<bloodmagic:decorative_brick>, [<bloodmagic:decorative_brick:1>]);
 
 # Master Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
@@ -526,6 +527,8 @@ recipes.removeShapeless(<bloodmagic:ritual_stone>, [<bloodmagic:ritual_stone:6>]
 
 # Crystal Cluster
 recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_tablet>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_tablet>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>]]);
+recipes.addShapeless(<bloodmagic:decorative_brick:2>, [<bloodmagic:decorative_brick:3>]);
+recipes.addShaped(<bloodmagic:decorative_brick:3> * 4, [[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>],[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>]]);
 
 # Weak Blood Shard tooltip
 <bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));
