@@ -22,6 +22,10 @@ recipes.removeShaped(<minecraft:blaze_powder>, [[<thaumcraft:cinderpearl>]]);
 <thaumcraft:thaumonomicon>.addTooltip(format.red(format.bold("Warning:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
 <thaumcraft:thaumonomicon>.addTooltip(format.white(format.bold("Always refer to JEI when crafting.")));
 
+# Cheaters Thaumonomicon
+<thaumcraft:thaumonomicon:1>.addTooltip(format.lightPurple("Unlocks all research when opened"));
+mods.extendedcrafting.CombinationCrafting.addRecipe(<thaumcraft:thaumonomicon:1>, 5000000, 5000, <thaumcraft:thaumonomicon>, [<contenttweaker:infused_magical_core>,<minecraft:bookshelf>,<contenttweaker:matrix_multiplication_unit>,<minecraft:bookshelf>,<contenttweaker:infused_magical_core>,<minecraft:bookshelf>,<contenttweaker:matrix_multiplication_unit>,<minecraft:bookshelf>]);
+
 # Salis Mundus
 # Original in OreProcessingAdditions.zs, duplication here
 recipes.remove(<thaumcraft:salis_mundus>);
