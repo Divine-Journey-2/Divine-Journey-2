@@ -252,6 +252,9 @@ addTier3MysticalAgricultureSeed(<mysticalagriculture:redstone_seeds>, <minecraft
 # Gold Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:gold_seeds>, <minecraft:gold_block>, <contenttweaker:condensed_vis_crystal_desiderium>, <aspect:desiderium>);
 
+# Cincinnasite from Gold and Nether Essence
+recipes.addShaped(<betternether:cincinnasite> * 8, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>]]);
+
 # Lapis Lazuli Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:lapis_lazuli_seeds>, <minecraft:lapis_block>, <contenttweaker:condensed_vis_crystal_terra>, <aspect:terra>);
 
