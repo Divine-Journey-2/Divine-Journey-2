@@ -98,6 +98,19 @@ for i in 0 to 16 {
     Carving.addVariation("quarkstainedplanks", <quark:stained_planks>.withDamage(i));
 }
 
+// Quark Candle
+Carving.addGroup("quarkcandle");
+for i in 0 to 16 {
+    Carving.addVariation("quarkcandle", <quark:candle>.withDamage(i));
+}
+
+// Quark Item Frames
+Carving.addGroup("quarkitemframe");
+Carving.addVariation("quarkitemframe", <minecraft:item_frame>);
+for i in 0 to 16 {
+    Carving.addVariation("quarkitemframe", <quark:colored_item_frame>.withDamage(i));
+}
+
 // Bewitchment Candle
 Carving.addGroup("bewitchmentcandle");
 for i in 0 to 16 {
