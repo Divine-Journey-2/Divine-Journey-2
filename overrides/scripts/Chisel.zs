@@ -89,7 +89,7 @@ for i in 0 to 16 {
 Carving.addGroup("quarkflowerpot");
 Carving.addVariation("quarkflowerpot", <minecraft:flower_pot>);
 for i in 0 to 16 {
-    Carving.addVariation("quarkflowerpot", itemUtils.getItem("quark:colored_flowerpot_"~lightBlueWrapper(colors[i])));
+    Carving.addVariation("quarkflowerpot", itemUtils.getItem("quark:colored_flowerpot_"~silverWrapper(lightBlueWrapper(colors[i]))));
 }
 
 // Quark Stained Planks
