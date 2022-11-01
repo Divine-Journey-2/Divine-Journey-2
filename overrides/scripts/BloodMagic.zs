@@ -285,25 +285,27 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:activation_crystal>, <bloodmagi
 recipes.remove(<bloodmagic:activation_crystal:1>);
 recipes.addShaped(<bloodmagic:activation_crystal:1>, [[null,<evilcraft:weather_container:3>,null],[<minecraft:nether_star>,<bloodmagic:activation_crystal>,<abyssalcraft:lifecrystal>],[null,<contenttweaker:rune_of_mana>,null]]);
 
+# Elemental Inscription Tools
+function newInscriptionToolRecipe(old as IItemStack, tool as IItemStack, new as IItemStack) {
+    BloodAltar.removeRecipe(old);
+    BloodAltar.addRecipe(tool.withTag({uses: 10}), new, 3, 40000, 60, 60);
+    tool.addTooltip(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!"));
+}
+
 # Elemental Inscription Tool: Water
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:lapis_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>.withTag({uses: 10}), <contenttweaker:rune_of_water>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:lapis_block>, <bloodmagic:inscription_tool:1>, <contenttweaker:rune_of_water>);
 
 # Elemental Inscription Tool: Fire
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:magma_cream>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>.withTag({uses: 10}), <contenttweaker:rune_of_fire>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:magma_cream>, <bloodmagic:inscription_tool:2>, <contenttweaker:rune_of_fire>);
 
 # Elemental Inscription Tool: Earth
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:obsidian>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>.withTag({uses: 10}), <contenttweaker:rune_of_earth>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:obsidian>, <bloodmagic:inscription_tool:3>, <contenttweaker:rune_of_earth>);
 
 # Elemental Inscription Tool: Air
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ghast_tear>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>.withTag({uses: 10}), <contenttweaker:rune_of_air>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:ghast_tear>, <bloodmagic:inscription_tool:4>, <contenttweaker:rune_of_air>);
 
 # Elemental Inscription Tool: Dusk
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:coal_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <contenttweaker:rune_of_mana>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:coal_block>, <bloodmagic:inscription_tool:5>, <contenttweaker:rune_of_mana>);
 
 # Elemental Inscription Tool: Dawn
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:glowstone>);
