@@ -3,6 +3,7 @@
 import mods.actuallyadditions.AtomicReconstructor;
 import mods.actuallyadditions.Empowerer;
 import mods.actuallyadditions.BallOfFur;
+import mods.actuallyadditions.MiningLens;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.data.IData;
@@ -11,7 +12,7 @@ print("STARTING ActuallyAdditions.zs");
 
 # Crafting Table on a Stick
 recipes.remove(<actuallyadditions:item_crafter_on_a_stick>);
-recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<minecraft:crafting_table>],[<enderutilities:enderpart:20>,null]]);
+recipes.addShapedMirrored(<actuallyadditions:item_crafter_on_a_stick>, [[null,<minecraft:crafting_table>],[<immersiveengineering:material>,null]]);
 
 # Wood Casing
 recipes.remove(<actuallyadditions:block_misc:4>);
@@ -51,7 +52,7 @@ recipes.addShapedMirrored(<actuallyadditions:item_misc:7>, [[null,null,<contentt
 
 # Advanced Coil
 recipes.remove(<actuallyadditions:item_misc:8>);
-recipes.addShaped(<actuallyadditions:item_misc:8>, [[null,glod_crystal,null,],[glod_crystal,<actuallyadditions:item_misc:7>,glod_crystal],[null,glod_crystal,null,]]);
+recipes.addShaped(<actuallyadditions:item_misc:8>, [[null,<contenttweaker:glod_crystal>,null,],[<contenttweaker:glod_crystal>,<actuallyadditions:item_misc:7>,<contenttweaker:glod_crystal>],[null,<contenttweaker:glod_crystal>,null,]]);
 
 # Single Battery
 recipes.removeShaped(<actuallyadditions:item_battery>);
@@ -117,6 +118,10 @@ recipes.addShaped(<actuallyadditions:item_more_damage_lens>, [[<contenttweaker:m
 # Lens of the Miner
 recipes.remove(<actuallyadditions:item_mining_lens>);
 recipes.addShapeless(<actuallyadditions:item_mining_lens>, [<actuallyadditions:item_misc:18>,<industrialforegoing:block_destroyer>,<thermalfoundation:storage:8>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:4>]);
+
+# Remove Bewitchment Salt (progression skip) from the Mining Lens
+MiningLens.removeStoneOre(<ore:oreSalt>);
+MiningLens.removeStoneOre(<ore:oreAluminium>);
 
 # Lens of Disenchanting
 recipes.remove(<actuallyadditions:item_disenchanting_lens>);
@@ -214,7 +219,7 @@ recipes.addShapedMirrored(<actuallyadditions:block_breaker>, [[<actuallyaddition
 
 # Long-Range Breaker
 recipes.remove(<actuallyadditions:block_directional_breaker>);
-recipes.addShaped(<actuallyadditions:block_directional_breaker>, [[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_breaker>,<actuallyadditions:block_breaker>,<actuallyadditions:block_breaker>],[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>]]);
+recipes.addShaped(<actuallyadditions:block_directional_breaker>, [[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_breaker>,<actuallyadditions:block_breaker>,<actuallyadditions:block_breaker>],[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>]]);
 
 # Phantomface
 recipes.remove(<actuallyadditions:block_phantomface>);
@@ -222,11 +227,11 @@ recipes.addShaped(<actuallyadditions:block_phantomface>, [[<actuallyadditions:it
 
 # Phantom Placer
 recipes.remove(<actuallyadditions:block_phantom_placer>);
-recipes.addShaped(<actuallyadditions:block_phantom_placer>, [[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_placer>,<actuallyadditions:block_phantomface>,<actuallyadditions:block_placer>],[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>]]);
+recipes.addShaped(<actuallyadditions:block_phantom_placer>, [[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_placer>,<actuallyadditions:block_phantomface>,<actuallyadditions:block_placer>],[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>]]);
 
 # Phantom Breaker
 recipes.remove(<actuallyadditions:block_phantom_breaker>);
-recipes.addShaped(<actuallyadditions:block_phantom_breaker>, [[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_breaker>,<actuallyadditions:block_phantomface>,<actuallyadditions:block_breaker>],[<actuallyadditions:item_crystal:3>,empowered_glod_crystal,<actuallyadditions:item_crystal:3>]]);
+recipes.addShaped(<actuallyadditions:block_phantom_breaker>, [[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>],[<actuallyadditions:block_breaker>,<actuallyadditions:block_phantomface>,<actuallyadditions:block_breaker>],[<actuallyadditions:item_crystal:3>,<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal:3>]]);
 
 # Phantom Liquiface
 recipes.remove(<actuallyadditions:block_phantom_liquiface>);
@@ -254,7 +259,7 @@ recipes.addShaped(<actuallyadditions:item_laser_upgrade_range>, [[<actuallyaddit
 
 # Laser Relay Modifier: Invisility
 recipes.remove(<actuallyadditions:item_laser_upgrade_invisibility>);
-recipes.addShaped(<actuallyadditions:item_laser_upgrade_invisibility>, [[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal_empowered:3>,<extrautils2:ingredients:15>,<actuallyadditions:item_crystal_empowered:3>],[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>]]);
+recipes.addShaped(<actuallyadditions:item_laser_upgrade_invisibility>*16, [[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>],[<actuallyadditions:item_crystal_empowered:3>,<extrautils2:ingredients:15>,<actuallyadditions:item_crystal_empowered:3>],[<actuallyadditions:item_crystal:5>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:5>]]);
 
 # Farmer
 recipes.remove(<actuallyadditions:block_farmer>);
@@ -262,7 +267,7 @@ recipes.addShapedMirrored(<actuallyadditions:block_farmer>, [[<actuallyadditions
 
 # Bioreactor
 recipes.remove(<actuallyadditions:block_bio_reactor>);
-recipes.addShaped(<actuallyadditions:block_bio_reactor>, [[glod_crystal,<actuallyadditions:block_misc:9>,glod_crystal],[<actuallyadditions:item_crystal_empowered:4>,<ore:treeSapling>,<actuallyadditions:item_crystal_empowered:4>],[glod_crystal,<actuallyadditions:block_misc:9>,glod_crystal]]);
+recipes.addShaped(<actuallyadditions:block_bio_reactor>, [[<contenttweaker:glod_crystal>,<actuallyadditions:block_misc:9>,<contenttweaker:glod_crystal>],[<actuallyadditions:item_crystal_empowered:4>,<ore:treeSapling>,<actuallyadditions:item_crystal_empowered:4>],[<contenttweaker:glod_crystal>,<actuallyadditions:block_misc:9>,<contenttweaker:glod_crystal>]]);
 
 # Drill Core
 recipes.remove(<actuallyadditions:item_misc:16>);
@@ -270,7 +275,7 @@ recipes.addShaped(<actuallyadditions:item_misc:16>, [[<actuallyadditions:block_c
 
 # Drill
 recipes.removeShaped(<actuallyadditions:item_drill:3>);
-recipes.addShapedMirrored(<actuallyadditions:item_drill:3>.withTag({Energy: 0}), [[<actuallyadditions:item_misc:8>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:2>],[empowered_glod_crystal_block,<actuallyadditions:item_misc:16>,<actuallyadditions:block_crystal_empowered:2>],[empowered_glod_crystal_block,empowered_glod_crystal_block,<actuallyadditions:item_misc:8>]]);
+recipes.addShapedMirrored(<actuallyadditions:item_drill:3>.withTag({Energy: 0}), [[<actuallyadditions:item_misc:8>,<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_crystal_empowered:2>],[<contenttweaker:empowered_glod_crystal_block>,<actuallyadditions:item_misc:16>,<actuallyadditions:block_crystal_empowered:2>],[<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,<actuallyadditions:item_misc:8>]]);
 
 # Vertical Digger
 recipes.remove(<actuallyadditions:block_miner>);
@@ -284,11 +289,11 @@ recipes.addShaped(<actuallyadditions:block_shock_suppressor>, [[<actuallyadditio
 
 # Ranged Collector
 recipes.remove(<actuallyadditions:block_ranged_collector>);
-recipes.addShaped(<actuallyadditions:block_ranged_collector>, [[glod_crystal,<actuallyadditions:item_crystal:3>,glod_crystal],[<actuallyadditions:item_crystal:3>,<openblocks:vacuum_hopper>,<actuallyadditions:item_crystal:3>],[glod_crystal,<actuallyadditions:block_misc:9>,glod_crystal]]);
+recipes.addShaped(<actuallyadditions:block_ranged_collector>, [[<contenttweaker:glod_crystal>,<actuallyadditions:item_crystal:3>,<contenttweaker:glod_crystal>],[<actuallyadditions:item_crystal:3>,<openblocks:vacuum_hopper>,<actuallyadditions:item_crystal:3>],[<contenttweaker:glod_crystal>,<actuallyadditions:block_misc:9>,<contenttweaker:glod_crystal>]]);
 
 # Leaf Eating Generator
 recipes.remove(<actuallyadditions:block_leaf_generator>);
-recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[empowered_glod_crystal,<actuallyadditions:item_misc:8>,empowered_glod_crystal],[<actuallyadditions:item_crystal_empowered>,<actuallyadditions:block_misc:9>,<actuallyadditions:item_crystal_empowered>],[empowered_glod_crystal,<actuallyadditions:item_misc:8>,empowered_glod_crystal]]);
+recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_misc:8>,<contenttweaker:empowered_glod_crystal>],[<actuallyadditions:item_crystal_empowered>,<actuallyadditions:block_misc:9>,<actuallyadditions:item_crystal_empowered>],[<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_misc:8>,<contenttweaker:empowered_glod_crystal>]]);
 
 # All colors of Lamps
 for i in 0 to 16 {
@@ -311,7 +316,7 @@ recipes.addShaped(<actuallyadditions:block_lava_factory_controller>, [[<actually
 
 # Casing
 recipes.remove(<actuallyadditions:block_misc:7>);
-recipes.addShaped(<actuallyadditions:block_misc:7> * 4, [[empowered_glod_crystal,<actuallyadditions:item_crystal_empowered:3>,empowered_glod_crystal],[null,<actuallyadditions:block_misc:9>,null],[empowered_glod_crystal,<actuallyadditions:item_crystal_empowered:3>,empowered_glod_crystal]]);
+recipes.addShaped(<actuallyadditions:block_misc:7> * 4, [[<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:empowered_glod_crystal>],[null,<actuallyadditions:block_misc:9>,null],[<contenttweaker:empowered_glod_crystal>,<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:empowered_glod_crystal>]]);
 
 # Canola Press
 recipes.removeShaped(<actuallyadditions:block_canola_press>);
@@ -355,7 +360,7 @@ recipes.addShaped(<actuallyadditions:block_inputter_advanced>, [[<actuallyadditi
 
 # Fishing Net
 recipes.remove(<actuallyadditions:block_fishing_net>);
-recipes.addShaped(<actuallyadditions:block_fishing_net>, [[<ore:string>,<ore:string>,<ore:string>],[<thermalfoundation:tool.fishing_rod_diamond>,<actuallyadditions:block_crystal_empowered:4>,<thermalfoundation:tool.fishing_rod_diamond>],[<ore:string>,<industrialforegoing:water_resources_collector>,<ore:string>]]);
+recipes.addShaped(<actuallyadditions:block_fishing_net>, [[<immersiveengineering:material:4>,<immersiveengineering:material:4>,<immersiveengineering:material:4>],[<immersiveengineering:material:4>,<thermalfoundation:tool.fishing_rod_diamond>,<immersiveengineering:material:4>],[<immersiveengineering:material:4>,<immersiveengineering:material:4>,<immersiveengineering:material:4>]]);
 
 # Solar Panel
 recipes.remove(<actuallyadditions:block_furnace_solar>);
@@ -375,11 +380,11 @@ recipes.addShaped(<actuallyadditions:block_dropper>, [[<thermalfoundation:materi
 
 # Coffee Maker
 recipes.remove(<actuallyadditions:block_coffee_machine>);
-recipes.addShaped(<actuallyadditions:block_coffee_machine>, [[null,empowered_glod_crystal,null],[<minecraft:brewing_stand>,<actuallyadditions:block_misc:9>,<minecraft:brewing_stand>],[<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_misc:8>]]);
+recipes.addShaped(<actuallyadditions:block_coffee_machine>, [[null,<contenttweaker:empowered_glod_crystal>,null],[<minecraft:brewing_stand>,<actuallyadditions:block_misc:9>,<minecraft:brewing_stand>],[<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_misc:8>]]);
 
 # Ring
 recipes.remove(<actuallyadditions:item_misc:6>);
-recipes.addShaped(<actuallyadditions:item_misc:6>, [[<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],[<minecraft:gold_ingot>,empowered_glod_crystal,<minecraft:gold_ingot>],[<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>]]);
+recipes.addShaped(<actuallyadditions:item_misc:6>, [[<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>],[<minecraft:gold_ingot>,<contenttweaker:empowered_glod_crystal>,<minecraft:gold_ingot>],[<minecraft:gold_ingot>,<minecraft:gold_ingot>,<minecraft:gold_ingot>]]);
 
 # Ring of Magnetizing
 recipes.removeShaped(<actuallyadditions:item_suction_ring>);
@@ -394,7 +399,7 @@ function addActuallyRingRecipe(output as IItemStack, corner_inputs as IIngredien
 addActuallyRingRecipe(<actuallyadditions:item_potion_ring>, <minecraft:sugar>, <minecraft:potion>.withTag({Potion: "cofhcore:swiftness3"}), <actuallyadditions:block_crystal_empowered:2>, <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:speedboost3"}));
 
 # Ring of Haste
-addActuallyRingRecipe(<actuallyadditions:item_potion_ring:1>, <thermalfoundation:material:2053>, <minecraft:potion>.withTag({Potion: "cofhcore:haste3"}), empowered_glod_crystal_block, <enderio:item_dark_steel_pickaxe>);
+addActuallyRingRecipe(<actuallyadditions:item_potion_ring:1>, <thermalfoundation:material:2053>, <minecraft:potion>.withTag({Potion: "cofhcore:haste3"}), <contenttweaker:empowered_glod_crystal_block>, <enderio:item_dark_steel_pickaxe>);
 
 # Ring of Strength
 addActuallyRingRecipe(<actuallyadditions:item_potion_ring:2>, <minecraft:blaze_powder>, <minecraft:potion>.withTag({Potion: "cofhcore:strength3"}), <actuallyadditions:block_crystal_empowered>, <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:energyupgrade4"}));
@@ -496,7 +501,7 @@ recipes.addShapeless(<actuallyadditions:item_misc:3>, [<ore:stickWood>,<contentt
 
 # Teleport Staff
 recipes.remove(<actuallyadditions:item_tele_staff>);
-recipes.addShaped(<actuallyadditions:item_tele_staff>, [[null,<bewitchment:otherworldly_tears>.noReturn(),<actuallyadditions:block_misc:8>],[empowered_glod_crystal_block,<actuallyadditions:block_misc:8>,<bewitchment:otherworldly_tears>.noReturn()],[<actuallyadditions:block_misc:8>,empowered_glod_crystal_block,null]]);
+recipes.addShaped(<actuallyadditions:item_tele_staff>, [[null,<bewitchment:otherworldly_tears>.noReturn(),<actuallyadditions:block_misc:8>],[<contenttweaker:empowered_glod_crystal_block>,<actuallyadditions:block_misc:8>,<bewitchment:otherworldly_tears>.noReturn()],[<actuallyadditions:block_misc:8>,<contenttweaker:empowered_glod_crystal_block>,null]]);
 
 # Drill Speed Augment I
 recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
@@ -550,11 +555,11 @@ for i in AABallOfFurToRemove {
 
 # Leaf Blower
 recipes.remove(<actuallyadditions:item_leaf_blower>);
-recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower>, [[<actuallyadditions:item_crystal_empowered:3>,empowered_glod_crystal,null],[<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:block_misc:9>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal_empowered:5>]]);
+recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower>, [[<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:empowered_glod_crystal>,null],[<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:block_misc:9>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal_empowered:5>]]);
 
 # Advanced Leaf Blower
 recipes.remove(<actuallyadditions:item_leaf_blower_advanced>);
-recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower_advanced>, [[<actuallyadditions:item_crystal_empowered:3>,empowered_glod_crystal,null],[<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_leaf_blower>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:2>]]);
+recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower_advanced>, [[<actuallyadditions:item_crystal_empowered:3>,<contenttweaker:empowered_glod_crystal>,null],[<actuallyadditions:item_crystal_empowered:3>,<actuallyadditions:item_leaf_blower>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:2>]]);
 
 # Removing Shards
 for i in 0 to 6 {

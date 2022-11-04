@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 # Author: WaitingIdly
 
 import crafttweaker.event.PlayerInteractEntityEvent;
@@ -32,29 +32,33 @@ function progressAstral(player as IPlayer, level as int) {
     }
 }
 
+// Return the hand the target item is in, ignoring metadata. Returns `head` if in neither hand.
+function whatHand(player as IPlayer, target as IItemStack) as IEntityEquipmentSlot {
+    if (!isNull(player.mainHandHeldItem) && player.mainHandHeldItem.definition.id == target.definition.id) {
+        return crafttweaker.entity.IEntityEquipmentSlot.mainHand();
+    }
+    if (!isNull(player.offHandHeldItem) && player.offHandHeldItem.definition.id == target.definition.id) {
+        return crafttweaker.entity.IEntityEquipmentSlot.offhand();
+    }
+    // Since Crafttweaker hasn't implemented IAny/multi-typed returns so this could be null, using `head` as a workaround
+    // This isn't best practices
+    return crafttweaker.entity.IEntityEquipmentSlot.head();
+}
+
 // Add Ender Core activations to all dimensions
 function activateEnderCore(player as IPlayer) as void {
-    val goal = <enderutilities:enderpart>.definition;
+    val goal = <enderutilities:enderpart>;
 
-    var target as IEntityEquipmentSlot;
-    var item as IItemStack;
-
-    if (!isNull(player.mainHandHeldItem) && player.mainHandHeldItem.definition.id == goal.id) {
-        item = player.mainHandHeldItem;
-        target = crafttweaker.entity.IEntityEquipmentSlot.mainHand();
-    } else if (!isNull(player.offHandHeldItem) && player.offHandHeldItem.definition.id == goal.id) {
-        item = player.offHandHeldItem;
-        target = crafttweaker.entity.IEntityEquipmentSlot.offhand();
-    } else {
-        return;
-    }
+    var target as IEntityEquipmentSlot = whatHand(player, goal);
+    if (target == crafttweaker.entity.IEntityEquipmentSlot.head()) return;
+    var item as IItemStack = player.getItemInSlot(target);
 
     val meta as int = item.metadata;
 
     // 10, 11, and 12 are the valid meta values for Inactive Ender Cores.
     if (meta >= 10 && meta <= 12) {
         // Change the item from uncharged to charged
-        player.setItemToSlot(target, goal.makeStack(meta + 5) * item.amount);
+        player.setItemToSlot(target, goal.definition.makeStack(meta + 5) * item.amount);
     }
 }
 
@@ -79,6 +83,14 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     // Grant the user the Astral Sorcery Knowledge to use the table they just right clicked on.
     if (e.block.definition.id == <astralsorcery:blockaltar>.definition.id) {
         progressAstral(e.player, e.block.meta);
+    }
+
+    // Disable individual Elemental Inscription Tools
+    // Without the `whatHand` part and just using `e.item` it constantly caused NPEs.
+    if (whatHand(e.player, <bloodmagic:inscription_tool>) != crafttweaker.entity.IEntityEquipmentSlot.head())  {
+        e.player.sendStatusMessage(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!") +
+        format.gold("\nDurability not actually consumed, just a desync."));
+        e.cancel();
     }
 
     // Activate the held ender core if the target block was a stabilized end crystal

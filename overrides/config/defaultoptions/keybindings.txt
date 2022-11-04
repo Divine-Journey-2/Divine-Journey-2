@@ -120,7 +120,7 @@ key_key.jei.nextPage:209:NONE
 key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_key.cofh.multimode:0:NONE
-key_key.draconicevolution.placeItem:-97:NONE
+key_key.draconicevolution.placeItem:25:NONE
 key_key.draconicevolution.toolConfig:45:NONE
 key_key.draconicevolution.toolProfileChange:43:NONE
 key_key.draconicevolution.armorProfileChange:43:ALT
@@ -208,8 +208,8 @@ key_key.immersiveengineering.magnetEquip:0:NONE
 key_key.immersiveengineering.chemthrowerSwitch:0:NONE
 key_Quick Commands:83:NONE
 key_keybind.simplyjetpacks.gui:44:NONE
-key_keybind.simplyjetpacks.engine:34:NONE
-key_keybind.simplyjetpacks.charger:25:NONE
+key_keybind.simplyjetpacks.engine:0:NONE
+key_keybind.simplyjetpacks.charger:34:NONE
 key_keybind.simplyjetpacks.hover:35:NONE
 key_keybind.simplyjetpacks.emergency_hover:0:NONE
 key_key.plustic_release_entity.desc:0:NONE

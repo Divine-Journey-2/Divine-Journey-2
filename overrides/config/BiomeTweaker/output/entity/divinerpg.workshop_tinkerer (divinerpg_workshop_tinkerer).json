@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.workshop_tinkerer",
-  "Registry ID": "divinerpg:workshop_tinkerer",
-  "Class": "divinerpg.objects.entities.entity.npc.EntityWorkshopTinkerer"
-}

@@ -1,6 +1,0 @@
-
-{
-  "Name": "Wisp",
-  "Registry ID": "thaumcraft:wisp",
-  "Class": "thaumcraft.common.entities.monster.EntityWisp"
-}

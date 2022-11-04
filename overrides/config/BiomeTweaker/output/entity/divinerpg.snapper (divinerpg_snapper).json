@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.snapper",
-  "Registry ID": "divinerpg:snapper",
-  "Class": "divinerpg.objects.entities.entity.vanilla.EntitySnapper"
-}

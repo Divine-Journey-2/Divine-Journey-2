@@ -125,7 +125,7 @@ recipes.addShaped(arboreal_extractor, [[<thermalfoundation:material:323>,<therma
 # Aquatic Entangler
 val aquatic_entangler = <thermalexpansion:device:4>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[]});
 recipes.remove(aquatic_entangler);
-recipes.addShaped(aquatic_entangler, [[<thermalfoundation:material:323>,<thermalfoundation:material:323>,<thermalfoundation:material:323>],[<thermalfoundation:tool.fishing_rod_diamond>,<thermalexpansion:frame:64>,<thermalfoundation:tool.fishing_rod_diamond>],[<thermalfoundation:material:26>,<thermalfoundation:material:512>,<thermalfoundation:material:26>]]);
+recipes.addShaped(aquatic_entangler, [[<thermalfoundation:material:323>,<thermalfoundation:material:323>,<thermalfoundation:material:323>],[<actuallyadditions:block_fishing_net>,<thermalexpansion:frame:64>,<actuallyadditions:block_fishing_net>],[<thermalfoundation:material:26>,<thermalfoundation:material:512>,<thermalfoundation:material:26>]]);
 
 # Item Allocator
 val item_allocator = <thermalexpansion:device:5>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]});
@@ -326,7 +326,7 @@ recipes.addShaped(<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte
 
 # Portable Tank (Hardened)
 recipes.addShapeless("thermal_tank_upgrade1", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}).marked("tank"),<thermalfoundation:upgrade>],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 1 as byte});
 	} else {
@@ -335,7 +335,7 @@ recipes.addShapeless("thermal_tank_upgrade1", <thermalexpansion:tank>.withTag({R
 
 # Portable Tank (Reinforced)
 recipes.addShapeless("thermal_tank_upgrade2", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}).marked("tank"),<thermalfoundation:upgrade:1>],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 2 as byte});
 	} else {
@@ -344,7 +344,7 @@ recipes.addShapeless("thermal_tank_upgrade2", <thermalexpansion:tank>.withTag({R
 
 # Portable Tank (Signalum)
 recipes.addShapeless("thermal_tank_upgrade3", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}).marked("tank"),<thermalfoundation:upgrade:2>],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 3 as byte});
 	} else {
@@ -353,7 +353,7 @@ recipes.addShapeless("thermal_tank_upgrade3", <thermalexpansion:tank>.withTag({R
 
 # Portable Tank (Resonant)
 recipes.addShapeless("thermal_tank_upgrade4", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}).marked("tank"),<thermalfoundation:upgrade:3>],
-	function(out, ins, cInfo) { 
+	function(out, ins, cInfo) {
 	if(ins.tank.tag has "Fluid") {
 		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 4 as byte});
 	} else {
@@ -615,43 +615,43 @@ for i in 0 to 8 {
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 
 # Flux Capacitor (Creative)
-mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}), 
-[[<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>], 
-[<projecte:item.pe_matter:1>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <projecte:item.pe_matter:1>], 
-[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <simplyjetpacks:itemjetpack>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>], 
+mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}),
+[[<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>],
+[<projecte:item.pe_matter:1>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <projecte:item.pe_matter:1>],
+[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <simplyjetpacks:itemjetpack>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <thermalexpansion:capacitor:4>, <contenttweaker:white_matter>],
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
 
 # Reservoir (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>.withTag({}),
-[[null, null, <alchemistry:ingot:110>, null, null], 
-[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null], 
-[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.onlyWithTag({tier: 4}), null], 
-[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null], 
+[[null, null, <alchemistry:ingot:110>, null, null],
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
+[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.onlyWithTag({tier: 4}), null],
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
 
 # Satchel (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:satchel:32000>.withTag({Accessible: 1 as byte}),
-[[<alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:65>, <alchemistry:ingot:87>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>], 
-[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>], 
-[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>], 
-[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>], 
-[<alchemistry:ingot:65>, <solarflux:solar_panel_infinity>, <contenttweaker:infinite_singularity>, <thermalexpansion:satchel:4>, <mekanism:basicblock:6>.withTag({tier: 4}), <thermalexpansion:satchel:4>, <contenttweaker:infinite_singularity>, <solarflux:solar_panel_infinity>, <alchemistry:ingot:65>], 
-[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>], 
-[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>], 
-[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>], 
+[[<alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:65>, <alchemistry:ingot:87>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>],
+[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>],
+[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>],
+[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>],
+[<alchemistry:ingot:65>, <solarflux:solar_panel_infinity>, <contenttweaker:infinite_singularity>, <thermalexpansion:satchel:4>, <mekanism:basicblock:6>.withTag({tier: 4}), <thermalexpansion:satchel:4>, <contenttweaker:infinite_singularity>, <solarflux:solar_panel_infinity>, <alchemistry:ingot:65>],
+[<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>],
+[<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>],
+[<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>],
 [<alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:65>, <alchemistry:ingot:87>, <alchemistry:ingot:64>, <alchemistry:ingot:64>, <alchemistry:ingot:64>]]);
 
 # Creative Conversion Kit
 mods.extendedcrafting.TableCrafting.addShaped(<thermalfoundation:upgrade:256>,
-[[<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <thermalfoundation:upgrade:35>, <thermalexpansion:satchel:32000>, <thermalfoundation:upgrade:35>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>], 
-[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>], 
+[[<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <thermalfoundation:upgrade:35>, <thermalexpansion:satchel:32000>, <thermalfoundation:upgrade:35>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <thermalfoundation:upgrade:35>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>],
+[<alchemistry:ingot:71>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <alchemistry:ingot:105>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>],
 [<alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>]]);
 
 # Energy Cells to JEI

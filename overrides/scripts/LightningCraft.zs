@@ -303,7 +303,7 @@ recipes.addShaped(<lightningcraft:lightning_breaker>, [[<minecraft:iron_block>,<
 
 # Lightning Miner
 recipes.remove(<lightningcraft:lightning_miner>);
-recipes.addShaped(<lightningcraft:lightning_miner>, [[<minecraft:gold_block>,<thaumcraft:turret:2>,<minecraft:gold_block>],[<lightningcraft:lightning_breaker>,<extendedcrafting:frame>,<lightningcraft:lightning_breaker>],[<minecraft:gold_block>,<lightningcraft:elec_pick>,<minecraft:gold_block>]]);
+recipes.addShaped(<lightningcraft:lightning_miner>, [[<minecraft:gold_block>,<thaumcraft:turret:2>,<minecraft:gold_block>],[<lightningcraft:lightning_breaker>,<extendedcrafting:frame>,<lightningcraft:lightning_breaker>],[<minecraft:gold_block>,<lightningcraft:item_magnet:2>,<minecraft:gold_block>]]);
 
 # Ensorcelled Core
 LightningInfusion.remove(<lightningcraft:material:9>);

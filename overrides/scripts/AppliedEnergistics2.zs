@@ -287,6 +287,7 @@ recipes.addShapedMirrored(<appliedenergistics2:interface>, [[<enderio:item_alloy
 
 # ME Fluid Interface
 recipes.remove(<appliedenergistics2:fluid_interface>);
+recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
 recipes.addShaped(<appliedenergistics2:fluid_interface>, [[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>],[<appliedenergistics2:material:44>,<enderio:item_material:1>,<appliedenergistics2:material:43>],[<enderio:item_alloy_endergy_ingot:1>,<contenttweaker:methodology_processor>,<enderio:item_alloy_endergy_ingot:1>]]);
 
 # Molecular Assembler
@@ -307,7 +308,7 @@ recipes.addShaped(<appliedenergistics2:crafting_storage_1k>, [[<enderio:item_all
 
 # 4k Crafting Storage
 recipes.remove(<appliedenergistics2:crafting_storage_4k>);
-recipes.addShaped(<appliedenergistics2:crafting_storage_4k>, [[<enderio:item_alloy_ingot>,glod_crystal,<enderio:item_alloy_ingot>],[glod_crystal,<appliedenergistics2:crafting_storage_1k>.noReturn(),glod_crystal],[<enderio:item_alloy_ingot>,<appliedenergistics2:material:36>,<enderio:item_alloy_ingot>]]);
+recipes.addShaped(<appliedenergistics2:crafting_storage_4k>, [[<enderio:item_alloy_ingot>,<contenttweaker:glod_crystal>,<enderio:item_alloy_ingot>],[<contenttweaker:glod_crystal>,<appliedenergistics2:crafting_storage_1k>.noReturn(),<contenttweaker:glod_crystal>],[<enderio:item_alloy_ingot>,<appliedenergistics2:material:36>,<enderio:item_alloy_ingot>]]);
 
 # 16k Crafting Storage
 recipes.remove(<appliedenergistics2:crafting_storage_16k>);
