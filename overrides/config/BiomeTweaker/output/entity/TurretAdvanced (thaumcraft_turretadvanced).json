@@ -1,6 +1,0 @@
-
-{
-  "Name": "TurretAdvanced",
-  "Registry ID": "thaumcraft:turretadvanced",
-  "Class": "thaumcraft.common.entities.construct.EntityTurretCrossbowAdvanced"
-}

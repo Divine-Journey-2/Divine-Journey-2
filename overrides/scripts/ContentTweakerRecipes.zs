@@ -346,26 +346,20 @@ recipes.addShaped(<contenttweaker:crystalline_brown_slime_block>, [[<contenttwea
 recipes.addShapeless(<contenttweaker:crystalline_brown_slime_ingot> * 9, [<contenttweaker:crystalline_brown_slime_block>]);
 
 # Glod Crystal & Block
-mods.actuallyadditions.AtomicReconstructor.addRecipe(glod_crystal, <minecraft:gold_ingot>, 80);
-mods.actuallyadditions.AtomicReconstructor.addRecipe(glod_crystal_block, <minecraft:gold_block>, 800);
-recipes.addShaped(glod_crystal_block, [[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal],[glod_crystal,glod_crystal,glod_crystal]]);
-recipes.addShapeless(glod_crystal * 9, [glod_crystal_block]);
-recipes.addShapeless(glod_crystal_block, [<contenttweaker:glod_crystal_block>]);
-mods.jei.JEI.addItem(glod_crystal);
-mods.jei.JEI.addItem(glod_crystal_block);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:glod_crystal>, <minecraft:gold_ingot>, 80);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:glod_crystal_block>, <minecraft:gold_block>, 800);
+recipes.addShaped(<contenttweaker:glod_crystal_block>, [[<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>],[<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>],[<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>]]);
+recipes.addShapeless(<contenttweaker:glod_crystal> * 9, [<contenttweaker:glod_crystal_block>]);
 
 # Empowered Glod Crystal & Block
-mods.actuallyadditions.Empowerer.addRecipe(empowered_glod_crystal, glod_crystal, <enderio:item_material:12>, <thermalfoundation:material:294>, <roots:wildewheet>, <minecraft:blaze_rod>, 3000, 100, [0.976, 0.972, 0.184]);
-recipes.addShaped(empowered_glod_crystal_block, [[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal],[empowered_glod_crystal,empowered_glod_crystal,empowered_glod_crystal]]);
-recipes.addShapeless(empowered_glod_crystal * 9, [empowered_glod_crystal_block]);
-recipes.addShapeless(empowered_glod_crystal_block, [<contenttweaker:empowered_glod_crystal_block>]);
-mods.jei.JEI.addItem(empowered_glod_crystal);
-mods.jei.JEI.addItem(empowered_glod_crystal_block);
+mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_glod_crystal>, <contenttweaker:glod_crystal>, <enderio:item_material:12>, <thermalfoundation:material:294>, <roots:wildewheet>, <minecraft:blaze_rod>, 3000, 100, [0.976, 0.972, 0.184]);
+recipes.addShaped(<contenttweaker:empowered_glod_crystal_block>, [[<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>,<contenttweaker:empowered_glod_crystal>]]);
+recipes.addShapeless(<contenttweaker:empowered_glod_crystal> * 9, [<contenttweaker:empowered_glod_crystal_block>]);
 
 # Crystal Bundle
 #EIOAlloySmelter.addRecipe(<contenttweaker:crystal_bundle> * 6, [<actuallyadditions:item_crystal_empowered:2>,empowered_glod_crystal * 3,<actuallyadditions:item_crystal_empowered:4>], 6000);
 # Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
-mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 6, empowered_glod_crystal * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:crystal_bundle> * 6, <contenttweaker:empowered_glod_crystal> * 3, null, 120, 100, [<actuallyadditions:item_crystal_empowered:2>,<actuallyadditions:item_crystal_empowered:4>], "Alloying");
 
 # Empowered Crystal Bundle
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_crystal_bundle>, <contenttweaker:crystal_bundle>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, <actuallyadditions:item_solidified_experience>, 8000, 200, [0.596, 0.835, 0.403]);
@@ -374,7 +368,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:empowered_crystal_bun
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:ingot_of_elevation>, <contenttweaker:empowered_crystal_bundle>, 100000);
 recipes.addShaped(<contenttweaker:block_of_elevation>, [[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>],[<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>,<contenttweaker:ingot_of_elevation>]]);
 recipes.addShapeless(<contenttweaker:ingot_of_elevation> * 9, [<contenttweaker:block_of_elevation>]);
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 12, 100000, 5000, <actuallyadditions:item_solidified_experience>, [empowered_glod_crystal, empowered_glod_crystal, empowered_glod_crystal, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 12, 100000, 5000, <actuallyadditions:item_solidified_experience>, [<contenttweaker:empowered_glod_crystal>, <contenttweaker:empowered_glod_crystal>, <contenttweaker:empowered_glod_crystal>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
 
 function addVetheaPlankRecipes(log as IItemStack, plank as IItemStack) {
 	recipes.addShaped(plank * 4, [[log]]);
@@ -466,7 +460,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:terrae>, [<contenttweaker
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:strengthened_catalyst>, [<contenttweaker:simple_catalyst>,<contenttweaker:simple_catalyst>,<mekanism:clump>,<mekanism:clump:4>,<thermalfoundation:material:2053>,<thermalfoundation:material:2053>], 100, 5, 2);
 
 # Sanctus
-mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:sanctus>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:aether>,glod_crystal,<thermalfoundation:glass_alloy:1>,<minecraft:glowstone>,<aether_legacy:holystone>], 400, 10, 2);
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:sanctus>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:aether>,<contenttweaker:glod_crystal>,<thermalfoundation:glass_alloy:1>,<minecraft:glowstone>,<aether_legacy:holystone>], 400, 10, 2);
 
 # Crystallos
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:crystallos>, [<contenttweaker:strengthened_catalyst>,<contenttweaker:aquasalus>,<minecraft:packed_ice>,<minecraft:packed_ice>,<minecraft:snow>,<minecraft:snow>], 400, 10, 2);
@@ -998,7 +992,7 @@ mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal",
 <contenttweaker:mysterious_leaking_soul>.addTooltip(format.darkGray("Found in Mortum Dungeons."));
 
 # Woodland Mansion Locator Token
-mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, empowered_glod_crystal_block, 10000, 100, [0.222, 0.1641, 0.0508]);
+mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, <contenttweaker:empowered_glod_crystal_block>, 10000, 100, [0.222, 0.1641, 0.0508]);
 <contenttweaker:woodland_mansion_locator_token>.addTooltip(format.white(format.bold("One time use!")));
 <minecraft:totem_of_undying>.addTooltip(format.white("No luck finding a Woodland Mansion?"));
 <minecraft:totem_of_undying>.addTooltip(format.white("Craft a ") + format.white(format.bold("Woodland Mansion Locator Token")) + format.white("!"));
@@ -1231,7 +1225,7 @@ function(out, ins, cInfo) {
 
 }, null);
 <contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.blue("Attuned Celestial Crystals"));
-<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Dim Constellation:"));
+<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Faint Constellation:"));
 <contenttweaker:astral_core>.addTooltip(format.lightPurple("Alcara") + format.white(", ") + format.gray("Gelu") + format.white(", ") + format.green("Ulteria") + format.white(", and ") + format.gold("Vorux") + format.white(". To add a trait to a Crystal:"));
 <contenttweaker:astral_core>.addTooltip(format.white("1. Attune it to any Constellation."));
 <contenttweaker:astral_core>.addTooltip(format.white("2. Wait until a Dim Constellation is available at night."));

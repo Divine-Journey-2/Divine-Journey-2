@@ -490,7 +490,7 @@
   <recipe name="Crystal Bundle" required="true">
     <alloying energy="32000">
       <input name="actuallyadditions:item_crystal_empowered:4" />
-      <input name="contenttweaker:empowered_glod_crystal" nbt='{"display":{"Name":"§6Empowered Glod Crystal"}}' amount="3" />
+      <input name="contenttweaker:empowered_glod_crystal" amount="3" />
       <input name="actuallyadditions:item_crystal_empowered:2" />
       <output name="contenttweaker:crystal_bundle" amount="6" />
     </alloying>
@@ -732,6 +732,14 @@
       <soul name="divinerpg:scorcher" />
       <output name="ATTRACTOR_CRYSTAL" />
     </soulbinding>
+  </recipe>
+
+  <recipe name="Alloy: Steel (Oredict)" required="true">
+    <alloying energy="4000">
+      <input name="ingotIron" />
+      <input name="immersiveengineering:material:17" />
+      <output name="ingotSteel" amount="2" />
+    </alloying>
   </recipe>
 
 </enderio:recipes>

@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.miner",
-  "Registry ID": "divinerpg:miner",
-  "Class": "divinerpg.objects.entities.entity.vanilla.EntityMiner"
-}

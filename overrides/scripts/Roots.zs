@@ -6,6 +6,7 @@ import mods.roots.Fey;
 import mods.roots.Rituals;
 import mods.roots.RunicShears;
 import mods.roots.SummonCreatures;
+import mods.roots.Modifiers;
 import crafttweaker.formatting.IFormattedText;
 
 print("STARTING Roots.zs");
@@ -225,7 +226,6 @@ Mortar.changeSpell("spell_sky_soarer", [<roots:cloud_berry>, <betternether:bone_
 Mortar.changeSpell("spell_saturate", [<minecraft:mushroom_stew>, <divinerpg:donut>, <roots:wildewheet>, <mysticalworld:cooked_aubergine>, <roots:petals>]);
 Mortar.changeSpell("spell_wild_fire", [<minecraft:diamond_sword>, <minecraft:tnt>, <roots:infernal_bulb>, <roots:stalicripe>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_natures_scythe", [<roots:wildroot>, <roots:wildroot>, <ore:tallgrass>, <mysticalworld:aubergine>, <roots:diamond_knife>]);
-Mortar.changeSpell("spell_acid_cloud", [<enderio:item_end_steel_shield>, <roots:baffle_cap_mushroom>, <betternether:egg_plant>, <minecraft:potion>.withTag({Potion: "cofhcore:poison4"}), <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_radiance", [<minecraft:glowstone>, <roots:stalicripe>, <roots:cloud_berry>, <betternether:black_apple>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_fey_light", [<minecraft:glowstone>, <roots:cloud_berry>, <betternether:eye_seed>, <minecraft:double_plant>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_desaturate", [<minecraft:bowl>, <minecraft:rotten_flesh>, <roots:baffle_cap_mushroom>, <betternether:stalagnate_bowl_mushroom>, <roots:petals>]);
@@ -233,15 +233,20 @@ Mortar.changeSpell("spell_augment", [<minecraft:iron_block>, <mysticalworld:aube
 Mortar.changeSpell("spell_storm_cloud", [<minecraft:obsidian>, <roots:cloud_berry>, <roots:runic_dust>, <roots:dewgonia>, <chisel:cloud>]);
 Mortar.changeSpell("spell_dandelion_winds", [<minecraft:yellow_flower>, <roots:cloud_berry>, <roots:runic_dust>, <minecraft:piston>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_harvest", [<roots:wildewheet>, <betternether:nether_cactus>, <minecraft:diamond_hoe>, <minecraft:water_bucket>, <ore:blockAmethyst>]);
-# Disabled Spell names:
-# spell_geas
-# spell_disarm
-# spell_time_stop
-# spell_shatter
-# spell_life_drain
-# spell_extension
-# spell_petal_shell
-# spell_chrysopoeia
+// These spells are gated to somewhat further in the game due to being too powerful
+Mortar.changeSpell("spell_acid_cloud", [<enderio:item_end_steel_shield>, <roots:baffle_cap_mushroom>, <betternether:egg_plant>, <minecraft:potion>.withTag({Potion: "cofhcore:poison4"}), <ore:blockAmethyst>]);
+Mortar.changeSpell("spell_shatter", [<enderio:item_alloy_endergy_ingot:3>, <roots:stalicripe>, <roots:runic_dust>, <actuallyadditions:item_drill_upgrade_speed_iii>, <mysticalworld:amethyst_block>]);
+Mortar.changeSpell("spell_life_drain", [<contenttweaker:hardened_blood_droplet>, <roots:moonglow_leaf>, <roots:baffle_cap_mushroom>, <abyssalcraft:oblivionshard>, <mysticalworld:amethyst_block>]);
+Mortar.changeSpell("spell_extension", [<contenttweaker:mobgrindium_block>, <roots:wildroot>, <minecraft:compass>, <minecraft:golden_carrot>, <ore:oreAmethyst>]);
+Mortar.changeSpell("spell_petal_shell", [<astralsorcery:itemcraftingcomponent:2>, <roots:petals>, <spartanshields:shield_tc_void>, <spartanshields:shield_tower_platinum>, <mysticalworld:amethyst_block>]);
+
+Modifiers.disableModifier("roots:spectral_drain");
+Modifiers.disableModifier("roots:gifts_of_undeath");
+# Disabled Spell names: reason
+# spell_geas: prevents any mob from attacking
+# spell_disarm: obtain weapons/armor mob is holding/wearing (custom bosses)
+# spell_time_stop: prevents any mob from moving
+# spell_chrysopoeia: transmutation, doesnt fit into progression (although it could!)
 
 # Rituals
 Rituals.modifyRitual("ritual_healing_aura", [<roots:spirit_herb>, <minecraft:sapling:2>, <roots:bark_birch>, <minecraft:splash_potion>.withTag({Potion: "minecraft:regeneration"}), <roots:terra_moss>]);

@@ -23,11 +23,6 @@ global allCoalDusts as IOreDictEntry = <ore:allCoalDusts>;
 allCoalDusts.addAll(<ore:dustCoal>);
 allCoalDusts.addAll(<ore:dustCharcoal>);
 
-global glod_crystal as IItemStack = <contenttweaker:glod_crystal>.withTag({display: {Name:"§6Glod Crystal"}});
-global empowered_glod_crystal as IItemStack = <contenttweaker:empowered_glod_crystal>.withTag({display: {Name:"§6Empowered Glod Crystal"}});
-global glod_crystal_block as IItemStack = <contenttweaker:glod_crystal_block>.withTag({display: {Name:"§6Glod Crystal Block"}});
-global empowered_glod_crystal_block as IItemStack = <contenttweaker:empowered_glod_crystal_block>.withTag({display: {Name:"§6Empowered Glod Crystal Block"}});
-
 global allDyes as IIngredient[] = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLightBlue>,<ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,<ore:dyeLightGray>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,<ore:dyeBrown>,<ore:dyeGreen>,<ore:dyeRed>,<ore:dyeBlack>];
 
 <ore:plankWood>.addItems([<contenttweaker:planks_hyrewood>, <contenttweaker:planks_mintwood>, <contenttweaker:planks_firewood>]);

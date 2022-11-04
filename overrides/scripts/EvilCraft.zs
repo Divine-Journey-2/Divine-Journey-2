@@ -8,6 +8,7 @@ import mods.thermalexpansion.Transposer;
 import mods.evilcraft.BloodInfuser;
 import crafttweaker.data.IData;
 import mods.bloodmagic.TartaricForge;
+import mods.inworldcrafting.FluidToItem;
 
 print("STARTING EvilCraft.zs");
 
@@ -133,7 +134,7 @@ recipes.remove(<evilcraft:blood_chest>);
 
 # Gold Promise Acceptor
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:promise_acceptor:1>);
-mods.evilcraft.BloodInfuser.addRecipe(empowered_glod_crystal_block, <liquid:evilcraftblood> * 40000, 1, <evilcraft:promise_acceptor:1>, 200, 8);
+mods.evilcraft.BloodInfuser.addRecipe(<contenttweaker:empowered_glod_crystal_block>, <liquid:evilcraftblood> * 40000, 1, <evilcraft:promise_acceptor:1>, 200, 8);
 
 # Bowl of Promises (Strength I)
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:bowl_of_promises:3>);
@@ -141,7 +142,7 @@ mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:bowl_of_promises:2>, <liquid:ev
 
 # Promise of Tenacity II
 recipes.remove(<evilcraft:promise:1>);
-recipes.addShaped(<evilcraft:promise:1>, [[empowered_glod_crystal,<evilcraft:bowl_of_promises:3>.noReturn(),empowered_glod_crystal],[<contenttweaker:holy_core>,<evilcraft:promise_acceptor:1>,<contenttweaker:holy_core>],[empowered_glod_crystal,<evilcraft:bowl_of_promises:3>.noReturn(),empowered_glod_crystal]]);
+recipes.addShaped(<evilcraft:promise:1>, [[<contenttweaker:empowered_glod_crystal>,<evilcraft:bowl_of_promises:3>.noReturn(),<contenttweaker:empowered_glod_crystal>],[<contenttweaker:holy_core>,<evilcraft:promise_acceptor:1>,<contenttweaker:holy_core>],[<contenttweaker:empowered_glod_crystal>,<evilcraft:bowl_of_promises:3>.noReturn(),<contenttweaker:empowered_glod_crystal>]]);
 
 # Diamond Promise Acceptor
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:promise_acceptor:2>);
@@ -211,14 +212,14 @@ recipes.addShaped(<evilcraft:piercing_vengeance_focus>, [[<contenttweaker:potenc
 
 # Golden String
 recipes.remove(<evilcraft:golden_string>);
-recipes.addShaped(<evilcraft:golden_string>, [[glod_crystal,<ore:string>,glod_crystal],[<ore:string>,<ore:string>,<ore:string>],[glod_crystal,<ore:string>,glod_crystal]]);
+recipes.addShaped(<evilcraft:golden_string>, [[<contenttweaker:glod_crystal>,<ore:string>,<contenttweaker:glod_crystal>],[<ore:string>,<ore:string>,<ore:string>],[<contenttweaker:glod_crystal>,<ore:string>,<contenttweaker:glod_crystal>]]);
 
 # Spirit Reanimator
 recipes.remove(<evilcraft:spirit_reanimator>);
 
 # Sceptre of Thunder
 recipes.remove(<evilcraft:sceptre_of_thunder>);
-recipes.addShapedMirrored(<evilcraft:sceptre_of_thunder>, [[null,<contenttweaker:tempestas>,<contenttweaker:power_core>],[null,<contenttweaker:rune_of_autumn>,<contenttweaker:tempestas>],[<abyssalcraft:crystalcluster:1>,null,null]]);
+FluidToItem.transform(<evilcraft:sceptre_of_thunder>, <liquid:cloud_seed_concentrated>, [<abyssalcraft:crystalcluster:1>, <contenttweaker:power_core>], true);
 
 # Kineticator
 #recipes.remove(<evilcraft:kineticator>);

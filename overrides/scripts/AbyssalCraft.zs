@@ -31,7 +31,7 @@ function add_abyssalcraft_statue_recipe(output as IItemStack, main_input as IIte
 add_abyssalcraft_statue_recipe(<abyssalcraft:statue>, <mysticalworld:raw_squid>);
 
 # Hastur Statue
-add_abyssalcraft_statue_recipe(<abyssalcraft:statue:1>, empowered_glod_crystal);
+add_abyssalcraft_statue_recipe(<abyssalcraft:statue:1>, <contenttweaker:empowered_glod_crystal>);
 
 # J'zahar Statue
 add_abyssalcraft_statue_recipe(<abyssalcraft:statue:2>, <enderutilities:enderpart:1>);
@@ -145,9 +145,9 @@ recipes.remove(<abyssalcraft:gatewaykey>);
 mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:gatewaykey>,
 [[null,<enderutilities:enderpart:17>,<abyssalcraft:cpearl>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:steaming_restonia_crystal_block>],
 [null,null,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:oc>,<contenttweaker:steaming_restonia_crystal_block>],
-[null,empowered_glod_crystal_block,empowered_glod_crystal_block,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:cpearl>],
-[empowered_glod_crystal_block,empowered_glod_crystal_block,empowered_glod_crystal_block,null,<enderutilities:enderpart:17>],
-[empowered_glod_crystal_block,empowered_glod_crystal_block,null,null,null]]);
+[null,<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:steaming_restonia_crystal_block>,<abyssalcraft:cpearl>],
+[<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,null,<enderutilities:enderpart:17>],
+[<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,null,null,null]]);
 
 # Staff of Rending
 recipes.remove(<abyssalcraft:drainstaff>);
@@ -568,7 +568,7 @@ furnace.remove(<minecraft:iron_ingot> * 4, <abyssalcraft:coin>);
 
 # Small Crystal bag
 recipes.remove(<abyssalcraft:crystalbag_small>);
-recipes.addShaped(<abyssalcraft:crystalbag_small>, [[<evilcraft:golden_string>,<contenttweaker:blood_infused_leather>,<evilcraft:golden_string>],[<contenttweaker:blood_infused_leather>,glod_crystal_block,<contenttweaker:blood_infused_leather>],[<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>]]);
+recipes.addShaped(<abyssalcraft:crystalbag_small>, [[<evilcraft:golden_string>,<contenttweaker:blood_infused_leather>,<evilcraft:golden_string>],[<contenttweaker:blood_infused_leather>,<contenttweaker:glod_crystal_block>,<contenttweaker:blood_infused_leather>],[<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>]]);
 
 # Essence of The Gatekeeper
 <abyssalcraft:gatekeeperessence>.addTooltip(format.white("Dropped by ") + format.gray("J'zahar") + format.white(", the final boss of Omothol."));

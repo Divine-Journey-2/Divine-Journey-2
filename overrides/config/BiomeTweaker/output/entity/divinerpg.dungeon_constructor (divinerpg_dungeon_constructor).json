@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.dungeon_constructor",
-  "Registry ID": "divinerpg:dungeon_constructor",
-  "Class": "divinerpg.objects.entities.entity.arcana.EntityDungeonConstructor"
-}

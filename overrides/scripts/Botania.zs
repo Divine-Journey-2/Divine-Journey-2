@@ -65,7 +65,7 @@ recipes.addShaped(<botania:pool>, [[<botania:livingrock>,<contenttweaker:aquasal
 
 # Mana Spreader
 recipes.remove(<botania:spreader>);
-recipes.addShapedMirrored(<botania:spreader>, [[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>],[<botania:livingwood>,glod_crystal_block,<contenttweaker:magical_core>],[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>]]);
+recipes.addShapedMirrored(<botania:spreader>, [[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>],[<botania:livingwood>,<contenttweaker:glod_crystal_block>,<contenttweaker:magical_core>],[<botania:livingwood>,<botania:livingwood>,<botania:livingwood>]]);
 
 # Wand of the Forest
 recipes.remove(<botania:twigwand>);
@@ -379,7 +379,7 @@ recipes.addShaped(<botania:grassseeds:3>, [[null,<roots:stalicripe>,null],[<mine
 
 # Golden Pasture Seeds
 recipes.remove(<botania:grassseeds:4>);
-recipes.addShaped(<botania:grassseeds:4>, [[null,<roots:wildewheet>,null],[glod_crystal,<botania:grassseeds>,glod_crystal],[null,<roots:wildewheet>,null]]);
+recipes.addShaped(<botania:grassseeds:4>, [[null,<roots:wildewheet>,null],[<contenttweaker:glod_crystal>,<botania:grassseeds>,<contenttweaker:glod_crystal>],[null,<roots:wildewheet>,null]]);
 
 # Vivid Pasture Seeds
 recipes.remove(<botania:grassseeds:5>);
@@ -456,7 +456,7 @@ recipes.addShaped(<botania:alfheimportal>, [[<botania:livingwood>,<botania:livin
 
 # Mana Pylon
 recipes.remove(<botania:pylon>);
-recipes.addShaped(<botania:pylon>, [[<actuallyadditions:item_crystal_empowered:2>,<contenttweaker:crystallized_mana>,<actuallyadditions:item_crystal_empowered:2>],[empowered_glod_crystal,<botania:storage:3>,empowered_glod_crystal],[<actuallyadditions:item_crystal_empowered:2>,<contenttweaker:crystallized_mana>,<actuallyadditions:item_crystal_empowered:2>]]);
+recipes.addShaped(<botania:pylon>, [[<actuallyadditions:item_crystal_empowered:2>,<contenttweaker:crystallized_mana>,<actuallyadditions:item_crystal_empowered:2>],[<contenttweaker:empowered_glod_crystal>,<botania:storage:3>,<contenttweaker:empowered_glod_crystal>],[<actuallyadditions:item_crystal_empowered:2>,<contenttweaker:crystallized_mana>,<actuallyadditions:item_crystal_empowered:2>]]);
 
 # Natura Pylon
 recipes.remove(<botania:pylon:1>);
@@ -722,7 +722,11 @@ recipes.addShaped(<botania:autocraftinghalo>, [[null,<botania:manaresource:4>,nu
 
 # Manaseer Monocle
 recipes.remove(<botania:monocle>);
-recipes.addShaped(<botania:monocle>, [[null,<botania:manaresource>,null],[<botania:manaresource>,<actuallyadditions:item_engineer_goggles_advanced>,<botania:manaresource>],[null,empowered_glod_crystal,null]]);
+recipes.addShaped(<botania:monocle>, [[null,<botania:manaresource>,null],[<botania:manaresource>,<actuallyadditions:item_engineer_goggles_advanced>,<botania:manaresource>],[null,<contenttweaker:empowered_glod_crystal>,null]]);
+
+# Glimmering Dreamwood
+recipes.remove(<botania:dreamwood:5>);
+recipes.addShaped(<botania:dreamwood:5>, [[null,<contenttweaker:sanctus>,null],[<botania:manaresource:17>,<botania:dreamwood>,<botania:manaresource:17>],[null,<contenttweaker:sanctus>,null]]);
 
 # Lens Clip
 recipes.remove(<botania:clip>);
@@ -765,7 +769,7 @@ recipes.addShapedMirrored(<botania:obediencestick>, [[null,null,<botania:storage
 
 # Cacophonium
 recipes.remove(<botania:cacophonium>);
-recipes.addShapedMirrored(<botania:cacophonium>.withTag({}), [[null,glod_crystal,<botania:manaresource>],[glod_crystal,<minecraft:noteblock>,glod_crystal],[null,glod_crystal,glod_crystal]]);
+recipes.addShapedMirrored(<botania:cacophonium>.withTag({}), [[null,<contenttweaker:glod_crystal>,<botania:manaresource>],[<contenttweaker:glod_crystal>,<minecraft:noteblock>,<contenttweaker:glod_crystal>],[null,<contenttweaker:glod_crystal>,<contenttweaker:glod_crystal>]]);
 
 # Rod of the Shifting Crust
 recipes.remove(<botania:exchangerod>);
