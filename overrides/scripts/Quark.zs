@@ -1,4 +1,5 @@
-# Author: Atricos
+# Author: Atricos, WaitingIdly
+
 print("STARTING Quark.zs");
 
 # Iron Rod
@@ -25,5 +26,8 @@ recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysti
 # Sandy Bricks with Sand OreDict
 recipes.remove(<quark:sandy_bricks>);
 recipes.addShapeless(<quark:sandy_bricks>, [<minecraft:brick_block>,<ore:sand>]);
+
+# Quark Wither Ash
+recipes.addShapeless(<quark:black_ash> * 8, [<mysticalagradditions:stuff:1>]);
 
 print("ENDING Quark.zs");

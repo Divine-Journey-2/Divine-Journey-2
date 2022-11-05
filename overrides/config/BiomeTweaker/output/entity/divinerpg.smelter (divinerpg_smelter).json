@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.smelter",
-  "Registry ID": "divinerpg:smelter",
-  "Class": "divinerpg.objects.entities.entity.vanilla.EntitySmelter"
-}

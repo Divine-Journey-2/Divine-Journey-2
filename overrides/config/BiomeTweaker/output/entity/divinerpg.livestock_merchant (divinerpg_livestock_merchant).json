@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.livestock_merchant",
-  "Registry ID": "divinerpg:livestock_merchant",
-  "Class": "divinerpg.objects.entities.entity.npc.EntityLivestockMerchant"
-}

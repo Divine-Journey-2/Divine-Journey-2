@@ -4,6 +4,8 @@ print("STARTING MysticalAgriadditions.zs");
 # Dragon Egg Seeds
 recipes.remove(<mysticalagradditions:dragon_egg_seeds>);
 # recipes in config/modularmachinery/recipes/laser_focus_mysticalagriculture_dragon_egg_seeds.json
+<mysticalagradditions:dragon_egg_seeds>.removeTooltip("5");
+<mysticalagradditions:dragon_egg_seeds>.addTooltip("Tier: " + format.red("5"));
 
 # Dragon Egg Crux
 recipes.remove(<mysticalagradditions:special:1>);

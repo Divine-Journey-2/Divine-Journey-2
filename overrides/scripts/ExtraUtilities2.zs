@@ -518,13 +518,14 @@ for i in 0 to 8 {
 	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
-# Alternative Sun Crystal filling recipes
-FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extrautils2:suncrystal:*>], false);
+# Alternative Sun Crystal filling recipe
+FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extrautils2:suncrystal:250>], false);
 
 recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
 
 <extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground when exposed to the sun."));
 <extrautils2:suncrystal>.addTooltip(format.white("Later, you can use Liquid Sunshine or Glowstone Essence to fill it."));
+<extrautils2:suncrystal>.addTooltip(format.red("Must have 0 durability when thrown in Liquid Sunshine."));
 
 # Opinium Core (Pathetic)
 recipes.remove(<extrautils2:opinium>);

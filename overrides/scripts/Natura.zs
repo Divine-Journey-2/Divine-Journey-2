@@ -4,6 +4,16 @@ import crafttweaker.item.IItemStack;
 
 print("STARTING Natura.zs");
 
+# Stick recipes
+recipes.remove(<natura:sticks:9>);
+recipes.addShaped(<natura:sticks:9> * 4, [[<natura:nether_planks:0>,null],[null,<natura:nether_planks:0>]]);
+recipes.remove(<natura:sticks:10>);
+recipes.addShaped(<natura:sticks:10> * 4, [[<natura:nether_planks:2>,null],[null,<natura:nether_planks:2>]]);
+recipes.remove(<natura:sticks:11>);
+recipes.addShaped(<natura:sticks:11> * 4, [[<natura:nether_planks:3>,null],[null,<natura:nether_planks:3>]]);
+recipes.remove(<natura:sticks:12>);
+recipes.addShaped(<natura:sticks:12> * 4, [[<natura:nether_planks:1>,null],[null,<natura:nether_planks:1>]]);
+
 # Disabling the Nether Furnace since it's already added by Better Nether
 recipes.remove(<natura:netherrack_furnace>);
 

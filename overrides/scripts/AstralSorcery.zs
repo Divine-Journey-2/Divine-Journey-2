@@ -142,6 +142,10 @@ mods.astralsorcery.Lightwell.addLiquefaction(<contenttweaker:sparkling_aquamarin
 # No Starlight from regular Aquamarine
 mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent>, null);
 
+# Infused Wood
+mods.inworldcrafting.FluidToItem.transform(<astralsorcery:blockinfusedwood>, <liquid:astralsorcery.liquidstarlight>, [<botania:dreamwood:5>], false);
+<astralsorcery:blockinfusedwood>.addTooltip(format.white("Only accepts Glimmering Livingwood"));
+
 # Fosic Resonator
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator");
 mods.extendedcrafting.TableCrafting.addShaped(<astralsorcery:itemskyresonator>.withTag({astralsorcery: {}}),

@@ -252,6 +252,9 @@ addTier3MysticalAgricultureSeed(<mysticalagriculture:redstone_seeds>, <minecraft
 # Gold Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:gold_seeds>, <minecraft:gold_block>, <contenttweaker:condensed_vis_crystal_desiderium>, <aspect:desiderium>);
 
+# Cincinnasite from Gold and Nether Essence
+recipes.addShaped(<betternether:cincinnasite> * 8, [[<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:gold_essence>],[<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>,<mysticalagriculture:gold_essence>]]);
+
 # Lapis Lazuli Seeds
 addTier3MysticalAgricultureSeed(<mysticalagriculture:lapis_lazuli_seeds>, <minecraft:lapis_block>, <contenttweaker:condensed_vis_crystal_terra>, <aspect:terra>);
 
@@ -737,6 +740,9 @@ recipes.remove(<mysticalagriculture:cold_iron_seeds>);
 
 # Cold Iron from Cold-Iron Essence
 recipes.addShaped(<bewitchment:cold_iron_ingot> * 3, [[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,null,<mysticalagriculture:cold_iron_essence>],[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:cold_iron_essence>]]);
+
+# Coquina from Stone Essence and Cold-Iron Essence
+recipes.addShaped(<bewitchment:coquina> * 8, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>]]);
 
 # Meteoric Iron Seeds
 recipes.remove(<mysticalagriculture:meteoric_iron_seeds>);

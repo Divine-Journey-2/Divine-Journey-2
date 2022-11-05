@@ -58,6 +58,9 @@ recipes.remove(<aether_legacy:aerogel_slab>);
 # Aerogel recipe with Mystical Agriculture Essences
 recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>],[<mysticalagriculture:fire_essence>,<mysticalagriculture:saltpeter_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>]]);
 
+# Warning for servers with TickProfiler
+<aether_legacy:aerogel>.addTooltip(format.red(format.bold("On servers with TickProfiler, attemting to automate this will cause crashes.")));
+
 # Skyroot Plank to plankWood OreDict (breaks the Skyroot Bucket recipe among others)
 #<ore:plankWood>.add(<aether_legacy:skyroot_plank>);
 

@@ -1,6 +1,0 @@
-
-{
-  "Name": "divinerpg.war_general",
-  "Registry ID": "divinerpg:war_general",
-  "Class": "divinerpg.objects.entities.entity.npc.EntityWarGeneral"
-}

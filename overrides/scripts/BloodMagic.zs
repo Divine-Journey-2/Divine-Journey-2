@@ -9,6 +9,7 @@ import mods.enderio.AlloySmelter as EIOAlloySmelter;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
+import mods.inworldcrafting.FluidToItem;
 import dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
 
 print("STARTING BloodMagic.zs");
@@ -138,11 +139,13 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "blood
 recipes.remove(<bloodmagic:blood_rune>);
 recipes.addShaped(<bloodmagic:blood_rune>, [[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>],[<bloodmagic:slate>,blood_orb_at_least_tier_1.reuse(),<bloodmagic:slate>],[<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
 
+FluidToItem.transform(<bloodmagic:blood_rune>, <liquid:water>, [<bloodmagic:blood_rune:1> | <bloodmagic:blood_rune:2> | <bloodmagic:blood_rune:3> | <bloodmagic:blood_rune:4> | <bloodmagic:blood_rune:5> | <bloodmagic:blood_rune:6> | <bloodmagic:blood_rune:7> | <bloodmagic:blood_rune:8> | <bloodmagic:blood_rune:9> | <bloodmagic:blood_rune:10>], false);
+
 # Alchemy Table
 recipes.remove(<bloodmagic:alchemy_table>);
 mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:alchemy_table>,
 [[<thermalfoundation:glass:7>,<minecraft:glass_bottle>,<minecraft:glass_bottle>,<minecraft:glass_bottle>,<thermalfoundation:glass:7>],
-[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,empowered_glod_crystal_block,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],
+[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:empowered_glod_crystal_block>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<contenttweaker:hardened_blood_droplet>,<enderio:block_alloy:6>,<enderio:block_alloy:6>],
 [null,<abyssalcraft:ingotblock:2>,<enderio:block_alloy:6>,<abyssalcraft:ingotblock:2>,null],
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
@@ -220,7 +223,7 @@ blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
-recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[empowered_glod_crystal_block,<betternether:cincinnasite_forge>,empowered_glod_crystal_block]]);
+recipes.addShaped(<bloodmagic:incense_altar>, [[<enderutilities:enderpart:1>,null,<enderutilities:enderpart:1>],[<bloodmagic:blood_rune:4>,<contenttweaker:hardened_blood_droplet>,<bloodmagic:blood_rune:4>],[<contenttweaker:empowered_glod_crystal_block>,<betternether:cincinnasite_forge>,<contenttweaker:empowered_glod_crystal_block>]]);
 
 # Wooden Path
 recipes.remove(<bloodmagic:path>);
@@ -245,6 +248,7 @@ mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:binding_reagent>, [<cont
 # Large Bloodstone Tile
 recipes.remove(<bloodmagic:decorative_brick>);
 recipes.addShaped(<bloodmagic:decorative_brick>, [[<contenttweaker:hybrid_abyssalium_ingot>,<bloodmagic:blood_shard>,<contenttweaker:hybrid_abyssalium_ingot>],[<bloodmagic:blood_shard>,<contenttweaker:power_core>,<bloodmagic:blood_shard>],[<contenttweaker:hybrid_abyssalium_ingot>,<bloodmagic:blood_shard>,<contenttweaker:hybrid_abyssalium_ingot>]]);
+recipes.addShapeless(<bloodmagic:decorative_brick>, [<bloodmagic:decorative_brick:1>]);
 
 # Master Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<bloodmagic:blood_shard>);
@@ -281,25 +285,27 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:activation_crystal>, <bloodmagi
 recipes.remove(<bloodmagic:activation_crystal:1>);
 recipes.addShaped(<bloodmagic:activation_crystal:1>, [[null,<evilcraft:weather_container:3>,null],[<minecraft:nether_star>,<bloodmagic:activation_crystal>,<abyssalcraft:lifecrystal>],[null,<contenttweaker:rune_of_mana>,null]]);
 
+# Elemental Inscription Tools
+function newInscriptionToolRecipe(old as IItemStack, tool as IItemStack, new as IItemStack) {
+    BloodAltar.removeRecipe(old);
+    BloodAltar.addRecipe(tool.withTag({uses: 10}), new, 3, 40000, 60, 60);
+    tool.addTooltip(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!"));
+}
+
 # Elemental Inscription Tool: Water
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:lapis_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:1>.withTag({uses: 10}), <contenttweaker:rune_of_water>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:lapis_block>, <bloodmagic:inscription_tool:1>, <contenttweaker:rune_of_water>);
 
 # Elemental Inscription Tool: Fire
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:magma_cream>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:2>.withTag({uses: 10}), <contenttweaker:rune_of_fire>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:magma_cream>, <bloodmagic:inscription_tool:2>, <contenttweaker:rune_of_fire>);
 
 # Elemental Inscription Tool: Earth
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:obsidian>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:3>.withTag({uses: 10}), <contenttweaker:rune_of_earth>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:obsidian>, <bloodmagic:inscription_tool:3>, <contenttweaker:rune_of_earth>);
 
 # Elemental Inscription Tool: Air
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:ghast_tear>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:4>.withTag({uses: 10}), <contenttweaker:rune_of_air>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:ghast_tear>, <bloodmagic:inscription_tool:4>, <contenttweaker:rune_of_air>);
 
 # Elemental Inscription Tool: Dusk
-mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:coal_block>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:inscription_tool:5>.withTag({uses: 10}), <contenttweaker:rune_of_mana>, 3, 40000, 60, 60);
+newInscriptionToolRecipe(<minecraft:coal_block>, <bloodmagic:inscription_tool:5>, <contenttweaker:rune_of_mana>);
 
 # Elemental Inscription Tool: Dawn
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:glowstone>);
@@ -523,6 +529,8 @@ recipes.removeShapeless(<bloodmagic:ritual_stone>, [<bloodmagic:ritual_stone:6>]
 
 # Crystal Cluster
 recipes.addShaped(<bloodmagic:decorative_brick:2>, [[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>],[<contenttweaker:magical_tablet>,<contenttweaker:angelic_silicon_crystal_block>,<contenttweaker:magical_tablet>],[<bloodmagic:blood_shard:1>,<contenttweaker:magical_tablet>,<bloodmagic:blood_shard:1>]]);
+recipes.addShapeless(<bloodmagic:decorative_brick:2>, [<bloodmagic:decorative_brick:3>]);
+recipes.addShaped(<bloodmagic:decorative_brick:3> * 4, [[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>],[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>]]);
 
 # Weak Blood Shard tooltip
 <bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));

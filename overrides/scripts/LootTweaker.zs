@@ -106,6 +106,7 @@ for pool in nether_bridge_pools_to_clear {
 }
 
 remove_entry("minecraft:chests/simple_dungeon", "main", "rftoolsdim:parcel");
+remove_entry("minecraft:chests/simple_dungeon", "main", "quark:ancient_tome");
 
 val simple_dungeon_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in simple_dungeon_pools_to_clear {
@@ -118,6 +119,7 @@ clear_pool("minecraft:chests/stronghold_crossing", "bewitchment_materials_pool")
 
 remove_entry("minecraft:chests/stronghold_library", "main", "astralsorcery:constellation_paper");
 remove_entry("minecraft:chests/stronghold_library", "main", "blueprint_electrode");
+remove_entry("minecraft:chests/stronghold_library", "main", "quark:ancient_tome");
 clear_pool("minecraft:chests/stronghold_library", "bewitchment_materials_pool");
 
 remove_entry("minecraft:chests/village_blacksmith", "main", "rftoolsdim:parcel");
@@ -142,9 +144,9 @@ for table in tables_with_general_injected_loot {
 
 # Vanilla mob Loot Tables
 
-var vanilla_eb_wizardry_injected_tables = ["blaze", "cave_spider", "creeper", "elder_guardian", "enderman", "endermite", 
+var vanilla_eb_wizardry_injected_tables = ["blaze", "cave_spider", "creeper", "elder_guardian", "enderman", "endermite",
 										"evocation_illager", "ghast", "giant", "guardian", "husk", "magma_cube", "shulker",
-										"silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager", 
+										"silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager",
 										"witch", "wither_skeleton", "zombie", "zombie_pigman", "zombie_villager"] as string[];
 /*
 for table_name in vanilla_eb_wizardry_injected_tables {
@@ -158,7 +160,7 @@ remove_entry("astralsorcery:chest_shrine", "astralsorcery:chest_shrine", "astral
 # Orange Heart from bosses
 val bosses = ["minecraft:entities/ender_dragon", "abyssalcraft:entities/asorah", "abyssalcraft:entities/chagaroth", "abyssalcraft:entities/jzahar",
 				"abyssalcraft:entities/sacthoth", "bewitchment:entities/leonard", "botania:gaia_guardian", "botania:gaia_guardian_2",
-				"divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers", 
+				"divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers",
 				"totemic:entities/baykok", "twilightforest:entities/giant_miner", "twilightforest:entities/hydra", "twilightforest:entities/lich",
 				"twilightforest:entities/minoshroom", "twilightforest:entities/naga", "twilightforest:entities/snow_queen",
 				"twilightforest:entities/yeti_alpha", "twilightforest:structures/darktower_boss/darktower_boss"] as string[];

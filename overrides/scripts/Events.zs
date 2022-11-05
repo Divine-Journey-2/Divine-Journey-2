@@ -1,14 +1,16 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 # Author: WaitingIdly
 
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.CommandEvent;
+import crafttweaker.world.IBlockPos;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.zenutils.command.CommandUtils;
+import mods.zenutils.I18n;
 
 static astralTiers as string[] = [
     "BASIC_CRAFT",
@@ -30,29 +32,41 @@ function progressAstral(player as IPlayer, level as int) {
     }
 }
 
+// Return the hand the target item is in, ignoring metadata. Returns `head` if in neither hand.
+function whatHand(player as IPlayer, target as IItemStack) as IEntityEquipmentSlot {
+    if (!isNull(player.mainHandHeldItem) && player.mainHandHeldItem.definition.id == target.definition.id) {
+        return crafttweaker.entity.IEntityEquipmentSlot.mainHand();
+    }
+    if (!isNull(player.offHandHeldItem) && player.offHandHeldItem.definition.id == target.definition.id) {
+        return crafttweaker.entity.IEntityEquipmentSlot.offhand();
+    }
+    // Since Crafttweaker hasn't implemented IAny/multi-typed returns so this could be null, using `head` as a workaround
+    // This isn't best practices
+    return crafttweaker.entity.IEntityEquipmentSlot.head();
+}
+
 // Add Ender Core activations to all dimensions
 function activateEnderCore(player as IPlayer) as void {
-    val goal = <enderutilities:enderpart>.definition;
+    val goal = <enderutilities:enderpart>;
 
-    var target as IEntityEquipmentSlot;
-    var item as IItemStack;
-
-    if (!isNull(player.mainHandHeldItem) && player.mainHandHeldItem.definition.id == goal.id) {
-        item = player.mainHandHeldItem;
-        target = crafttweaker.entity.IEntityEquipmentSlot.mainHand();
-    } else if (!isNull(player.offHandHeldItem) && player.offHandHeldItem.definition.id == goal.id) {
-        item = player.offHandHeldItem;
-        target = crafttweaker.entity.IEntityEquipmentSlot.offhand();
-    } else {
-        return;
-    }
+    var target as IEntityEquipmentSlot = whatHand(player, goal);
+    if (target == crafttweaker.entity.IEntityEquipmentSlot.head()) return;
+    var item as IItemStack = player.getItemInSlot(target);
 
     val meta as int = item.metadata;
 
     // 10, 11, and 12 are the valid meta values for Inactive Ender Cores.
     if (meta >= 10 && meta <= 12) {
         // Change the item from uncharged to charged
-        player.setItemToSlot(target, goal.makeStack(meta + 5) * item.amount);
+        player.setItemToSlot(target, goal.definition.makeStack(meta + 5) * item.amount);
+    }
+}
+
+function removeItemFromHand(player as IPlayer, item as IItemStack) {
+    if (!isNull(player.mainHandHeldItem) && item.matches(player.mainHandHeldItem)) {
+        player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand(), null);
+    } else if (!isNull(player.offHandHeldItem) && item.matches(player.offHandHeldItem)) {
+        player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), null);
     }
 }
 
@@ -71,9 +85,62 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
         progressAstral(e.player, e.block.meta);
     }
 
+    // Disable individual Elemental Inscription Tools
+    // Without the `whatHand` part and just using `e.item` it constantly caused NPEs.
+    if (whatHand(e.player, <bloodmagic:inscription_tool>) != crafttweaker.entity.IEntityEquipmentSlot.head())  {
+        e.player.sendStatusMessage(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!") +
+        format.gold("\nDurability not actually consumed, just a desync."));
+        e.cancel();
+    }
+
     // Activate the held ender core if the target block was a stabilized end crystal
     if (e.block.definition.id == <contenttweaker:stabilized_end_crystal>.definition.id) {
         activateEnderCore(e.player);
+    }
+
+    // DivineRPG always removes an item from the main hand when using one of these boss spawning items.
+    // https://github.com/DivineRPG/DivineRPG/blob/1a3b87972f9a0ccf7686723541d9cae2ae2b6d24/src/main/java/divinerpg/objects/items/twilight/ItemBossSpawner.java#L61
+    // This contains code which does virtually the same thing, but removes the correct item.
+    if (<divinerpg:horde_horn>.matches(e.item)) {
+        if (e.dimension == 1) {
+            val spawnLocation as IBlockPos = e.position.getOffset(crafttweaker.world.IFacing.up(), 1);
+            if (e.world.isAirBlock(spawnLocation)) {
+                // Sounds aren't accessible via crafttweaker, so we run a command instead
+                // Note that this command is modified from the original - the original is on channel `master` and with a volume of 20
+                server.commandManager.executeCommandSilent(server, "/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1");
+                e.world.setBlockState(<blockstate:divinerpg:ayeraco_spawn>, spawnLocation);
+                removeItemFromHand(e.player, <divinerpg:horde_horn>);
+            } else {
+                e.player.sendChat("§bFailed to spawn - please use in open air.");
+            }
+        } else {
+            e.player.sendChat("§b" + I18n.format("message.ayeraco_horde"));
+        }
+        e.cancel();
+    } else if (<divinerpg:call_of_the_watcher>.matches(e.item)) {
+        if (e.dimension == -1) {
+            <entity:divinerpg:the_watcher>.spawnEntity(e.world, e.position);
+            removeItemFromHand(e.player, <divinerpg:call_of_the_watcher>);
+        } else {
+            e.player.sendChat("§b" + I18n.format("message.watcher"));
+        }
+        e.cancel();
+    } else if (<divinerpg:infernal_flame>.matches(e.item)) {
+        if (e.dimension == -1) {
+            <entity:divinerpg:king_of_scorchers>.spawnEntity(e.world, e.position);
+            removeItemFromHand(e.player, <divinerpg:infernal_flame>);
+        } else {
+            e.player.sendChat("§b" + I18n.format("message.king_of_scorchers"));
+        }
+        e.cancel();
+    } else if (<divinerpg:mysterious_clock>.matches(e.item)) {
+        if (e.dimension == 0) {
+            <entity:divinerpg:ancient_entity>.spawnEntity(e.world, e.position);
+            removeItemFromHand(e.player, <divinerpg:mysterious_clock>);
+        } else {
+            e.player.sendChat("§b" + I18n.format("message.ancient_entity"));
+        }
+        e.cancel();
     }
 });
 

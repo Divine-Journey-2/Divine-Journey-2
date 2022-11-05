@@ -1,6 +1,0 @@
-
-{
-  "Name": "TaintacleTiny",
-  "Registry ID": "thaumcraft:taintacletiny",
-  "Class": "thaumcraft.common.entities.monster.tainted.EntityTaintacleSmall"
-}
