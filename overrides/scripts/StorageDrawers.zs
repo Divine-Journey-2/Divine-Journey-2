@@ -1,6 +1,9 @@
 # Author: Atricos
 print("STARTING StorageDrawers.zs");
 
+# Framing Table
+<storagedrawers:framingtable>.addTooltip(format.gold("Consider using the Hand Framing Tool instead!"));
+
 # Upgrade Template from Framed Drawers
 recipes.addShaped(<storagedrawers:upgrade_template> * 2, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<ore:stickWood>,<storagedrawers:customdrawers:*>,<ore:stickWood>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
 
