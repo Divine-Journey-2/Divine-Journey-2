@@ -47,3 +47,9 @@ body:
       description: Add any other context about the problem here. If applicable, add screenshots or videos to help explain your problem.
     validations:
       required: false
+  - type: input
+    id: discord-id
+    attributes:
+      label: Your Divine Journey 2 Discord Username
+      description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
+      placeholder: "Example: Dyno#3861"

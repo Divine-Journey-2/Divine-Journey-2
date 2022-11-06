@@ -28,3 +28,9 @@ body:
       placeholder: "Example: It should be 'assignments' not 'assingments'. / It should be 'that you used to make', not 'that you used to made'."
     validations:
       required: true
+  - type: input
+    id: discord-id
+    attributes:
+      label: Your Divine Journey 2 Discord Username
+      description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
+      placeholder: "Example: Dyno#3861"
