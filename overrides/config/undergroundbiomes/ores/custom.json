@@ -1,0 +1,58 @@
+[
+  {
+    "internalOreName": "evilcraft:dark_ore",
+    "meta": 0,
+    "overlay": "customub:blocks/dark_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "abyssalcraft:coraliumore",
+    "meta": -1,
+    "overlay": "customub:blocks/coralium_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "bewitchment:garnet_ore",
+    "meta": -1,
+    "overlay": "customub:blocks/garnet_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "bewitchment:opal_ore",
+    "meta": -1,
+    "overlay": "customub:blocks/opal_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "divinerpg:arlemite_ore",
+    "meta": -1,
+    "overlay": "customub:blocks/arlemite_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "divinerpg:realmite_ore",
+    "meta": -1,
+    "overlay": "customub:blocks/realmite_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "divinerpg:rupee_ore",
+    "meta": -1,
+    "overlay": "customub:blocks/rupee_ore",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  }
+]

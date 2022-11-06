@@ -54,5 +54,21 @@
     "lightValue": -1,
     "alphaOverlay": false,
     "oreDirectories": []
+  },
+  {
+    "internalOreName": "techreborn:ore2",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/techreborn/copper",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "techreborn:ore2",
+    "meta": 1,
+    "overlay": "undergroundbiomes:blocks/overlays/techreborn/tin",
+    "lightValue": -1,
+    "alphaOverlay": false,
+    "oreDirectories": []
   }
 ]

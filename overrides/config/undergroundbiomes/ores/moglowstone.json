@@ -1,6 +1,6 @@
 [
   {
-    "internalOreName": "mubble:vanadium_ore",
+    "internalOreName": "moglowstone:glowstone_ore",
     "meta": -1,
     "overlay": "undergroundbiomes:blocks/overlays/moglowstone/glowstone_ore",
     "lightValue": -1,
