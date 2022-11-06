@@ -3,6 +3,31 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 (This has to only be done once in multiplayer, by an admin.)
 
 
+Version 2.17.1:
+
+Mod Updates: 
+- DJ2Addons 1.2.2.1 -> 1.2.1.1.1
+
+Bugfixes:
+- Bewitchment Ovens now function properly again.
+- Roots tools can no longer be used to bypass some unbreakable dungeon blocks.
+
+Balance Changes:
+- Reduce the rate of Quartz Ore in the Overworld by disabling one of the two types.
+
+QoL:
+- Add multiple ores to Underground Biomes generation:
+	- Evilcraft's Dark Ore
+	- Abyssalcraft's Coralium Ore
+	- Bewitchment's Garnet and Opal ores
+	- DivineRPG's Arlemite, Realmite, and Rupee ores
+
+Text changes and quest fixes:
+- Correct Sylvan armor questbook info
+
+
+
+
 Version 2.17.0:
 
 Mod Updates:
@@ -16,7 +41,7 @@ Mod Updates:
 - LootTweaker 0.3.0old parser -> 0.3.1 
 - Planet Progression 0.4.6 -> 0.4.8 
 - ZenUtils 1.11.0 -> 1.12.2
-- DJ2Addons 1.2.0.1 -> 1.2.2.1
+- DJ2Addons 1.2.0.1 -> 1.2.1.1
 - Thaumic Augmentation 2.1.7 -> 2.1.8
 
 Mod Additions:
