@@ -36,6 +36,7 @@ mods.alchemistry.Combiner.addRecipe(<galacticraftplanets:item_basic_asteroids>, 
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 144, <galacticraftplanets:item_basic_asteroids:9>, 984);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 1296, <galacticraftplanets:asteroids_block:7>, 984);
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 16, <contenttweaker:titanium_nugget>, 984);
+mods.tconstruct.Casting.removeTableRecipe(<alchemistry:element:22>);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:item_basic_asteroids>, <tconstruct:cast_custom>, <liquid:titanium>, 144, false);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_nugget>, <tconstruct:cast_custom:1>, <liquid:titanium>, 16, false);
