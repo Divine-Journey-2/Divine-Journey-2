@@ -144,7 +144,7 @@ mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcompo
 
 # Infused Wood
 mods.inworldcrafting.FluidToItem.transform(<astralsorcery:blockinfusedwood>, <liquid:astralsorcery.liquidstarlight>, [<botania:dreamwood:5>], false);
-<astralsorcery:blockinfusedwood>.addTooltip(format.white("Only accepts Glimmering Livingwood"));
+<astralsorcery:blockinfusedwood>.addTooltip(format.white("Only accepts Glimmering Dreamwood"));
 
 # Fosic Resonator
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator");
