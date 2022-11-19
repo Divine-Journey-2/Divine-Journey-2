@@ -352,7 +352,7 @@ recipes.addShaped(<actuallyadditions:block_furnace_double>, [[<actuallyadditions
 
 # ESD
 recipes.remove(<actuallyadditions:block_inputter>);
-recipes.addShaped(<actuallyadditions:block_inputter>, [[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal:3>],[<minecraft:hopper>,<actuallyadditions:block_misc:9>,<minecraft:hopper>],[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered>,<actuallyadditions:item_crystal:3>]]);
+recipes.addShaped(<actuallyadditions:block_inputter>, [[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal:3>],[<minecraft:hopper>,<actuallyadditions:block_misc:4>,<minecraft:hopper>],[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered>,<actuallyadditions:item_crystal:3>]]);
 
 # Advanced ESD
 recipes.remove(<actuallyadditions:block_inputter_advanced>);
