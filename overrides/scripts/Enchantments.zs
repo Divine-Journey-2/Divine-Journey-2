@@ -111,7 +111,7 @@ for item in thermalRemoveList {
 for ench, item in additionList {
     val max as int = ench.maxLevel;
     val mult as int = (max == 1) ? 100 : (item.amount * max);
-    val book as IItemStack = <minecraft:enchanted_book>.withTag(ench.makeEnchantment(ench.minLevel).makeTag());
+    val book as IItemStack = <minecraft:enchanted_book>.withTag(ench.makeEnchantment(ench.minLevel).makeBookTag());
 
     EIO.addRecipe(ench, item.definition.makeStack(item.metadata), item.amount, 2);
     Thermal.addRecipe(book, <minecraft:book>, item, 1000 * mult, 100 * mult, false);
@@ -122,8 +122,8 @@ for ench, item in additionList {
 // don't calculate level required properly via the normal way
 EIO.addRecipe(<enchantment:abyssalcraft:coralium>, <abyssalcraft:ccluster9>, 8, 0);
 EIO.addRecipe(<enchantment:abyssalcraft:dread>, <abyssalcraft:dreadfragment>, 8, 0);
-Thermal.addRecipe(<minecraft:enchanted_book>.withTag(<enchantment:abyssalcraft:coralium>.makeEnchantment(1).makeTag()), <minecraft:book>, <abyssalcraft:ccluster9>*8, 10000, 10000, false);
-Thermal.addRecipe(<minecraft:enchanted_book>.withTag(<enchantment:abyssalcraft:dread>.makeEnchantment(1).makeTag()), <minecraft:book>, <abyssalcraft:dreadfragment>*8, 10000, 10000, false);
+Thermal.addRecipe(<minecraft:enchanted_book>.withTag(<enchantment:abyssalcraft:coralium>.makeEnchantment(1).makeBookTag()), <minecraft:book>, <abyssalcraft:ccluster9>*8, 10000, 10000, false);
+Thermal.addRecipe(<minecraft:enchanted_book>.withTag(<enchantment:abyssalcraft:dread>.makeEnchantment(1).makeBookTag()), <minecraft:book>, <abyssalcraft:dreadfragment>*8, 10000, 10000, false);
 
 
 print("ENDING Enchantments.zs");
