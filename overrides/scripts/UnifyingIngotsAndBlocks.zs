@@ -46,6 +46,8 @@ mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:asteroids_block:7>, fa
 mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_nugget>, false, 1, [[100, <alchemistry:element:22>]]);
 mods.thermalexpansion.Factorizer.removeRecipeSplit(<galacticraftplanets:item_basic_asteroids>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <galacticraftplanets:item_basic_asteroids:9>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<galacticraftplanets:item_basic_asteroids>, <minecraft:sand:*>, <galacticraftplanets:item_basic_asteroids:9>, 1000, <thermalfoundation:material:864>, 25);
+mods.alchemistry.Combiner.removeRecipe(<alchemistry:element:22>);
 
 # Copper
 val wrongCopperIngots = [<galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>, <projectred-core:resource_item:100>] as IItemStack[];
