@@ -715,8 +715,9 @@ recipes.remove(<mysticalagriculture:brass_seeds>);
 
 # Titanium Seeds
 recipes.remove(<mysticalagriculture:titanium_seeds>);
+recipes.remove(<alchemistry:element:22>);
 # recipe in config/modularmachinery/recipes/laser_focus_mysticalagriculture_titanium_seeds.json
-recipes.addShaped(<galacticraftplanets:item_basic_asteroids> * 3, [[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>]]);
+recipes.addShaped(<galacticraftplanets:item_basic_asteroids> * 3, [[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,null,<mysticalagriculture:titanium_essence>],[<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>,<mysticalagriculture:titanium_essence>]]);
 
 # End Steel Seeds
 recipes.remove(<mysticalagriculture:end_steel_seeds>);
