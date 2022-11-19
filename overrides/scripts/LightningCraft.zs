@@ -15,6 +15,7 @@ print("STARTING LightningCraft.zs");
 # Copper Rod
 recipes.remove(<lightningcraft:rod:6>);
 recipes.addShaped(<lightningcraft:rod:6>, [[<ore:ingotCopper>],[<ore:ingotCopper>]]);
+mods.immersiveengineering.MetalPress.removeRecipe(<lightningcraft:rod:6>);
 mods.immersiveengineering.MetalPress.addRecipe(<lightningcraft:rod:6>, <ore:ingotCopper>, <immersiveengineering:mold:2>, 2400);
 
 # Gold Rod
