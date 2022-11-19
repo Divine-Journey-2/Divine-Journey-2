@@ -1,6 +1,12 @@
 # Author: Atricos
 print("STARTING StorageDrawers.zs");
 
+# Framing Table
+<storagedrawers:framingtable>.addTooltip(format.gold("Consider using the Hand Framing Tool instead!"));
+
+# Upgrade Template from Framed Drawers
+recipes.addShaped(<storagedrawers:upgrade_template> * 2, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<ore:stickWood>,<storagedrawers:customdrawers:*>,<ore:stickWood>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
+
 # Upgrades
 recipes.remove(<storagedrawers:upgrade_storage:1>);
 recipes.addShaped(<storagedrawers:upgrade_storage:1>, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<minecraft:iron_ingot>,<storagedrawers:upgrade_storage>,<minecraft:iron_ingot>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
@@ -33,14 +39,17 @@ recipes.addShaped(<storagedrawers:upgrade_creative>, [[<contenttweaker:white_mat
 
 # Creative Vending Upgrade
 mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1>,
-[[<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>], 
-[<storagedrawers:upgrade_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
-[<storagedrawers:upgrade_creative>, <enderio:block_cap_bank>, <enderio:block_cap_bank>, <enderio:block_cap_bank>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>], 
-[<storagedrawers:upgrade_creative>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <alchemistry:ingot:71>], 
-[<storagedrawers:upgrade_creative>, <rftools:powercell_creative>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <extrautils2:creativechest>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <rftools:powercell_creative>, <storagedrawers:upgrade_creative>], 
-[<storagedrawers:upgrade_creative>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <storagedrawers:upgrade_creative>], 
-[<storagedrawers:upgrade_creative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <contenttweaker:singularity_singularity>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <storagedrawers:upgrade_creative>], 
-[<storagedrawers:upgrade_creative>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <storagedrawers:upgrade_creative>], 
+[[<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>],
+[<storagedrawers:upgrade_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>],
+[<storagedrawers:upgrade_creative>, <enderio:block_cap_bank>, <enderio:block_cap_bank>, <enderio:block_cap_bank>, <contenttweaker:singularity_singularity>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>],
+[<storagedrawers:upgrade_creative>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <alchemistry:ingot:71>, <bigreactors:turbinecreativesteamgenerator>, <bigreactors:turbinecreativesteamgenerator>, <alchemistry:ingot:71>],
+[<storagedrawers:upgrade_creative>, <rftools:powercell_creative>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <extrautils2:creativechest>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <rftools:powercell_creative>, <storagedrawers:upgrade_creative>],
+[<storagedrawers:upgrade_creative>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <contenttweaker:singularity_singularity>, <mysticalagradditions:stuff:69>, <contenttweaker:singularity_singularity>, <bigreactors:reactorcreativecoolantport>, <bigreactors:reactorcreativecoolantport>, <storagedrawers:upgrade_creative>],
+[<storagedrawers:upgrade_creative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <contenttweaker:singularity_singularity>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <storagedrawers:upgrade_creative>],
+[<storagedrawers:upgrade_creative>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <storagedrawers:upgrade_creative>],
 [<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>]]);
+
+# Remove recipes for all Storage Drawers Extras
+recipes.removeByMod("storagedrawersextra");
 
 print("ENDING StorageDrawers.zs");

@@ -352,7 +352,7 @@ recipes.addShaped(<actuallyadditions:block_furnace_double>, [[<actuallyadditions
 
 # ESD
 recipes.remove(<actuallyadditions:block_inputter>);
-recipes.addShaped(<actuallyadditions:block_inputter>, [[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal:3>],[<minecraft:hopper>,<actuallyadditions:block_misc:9>,<minecraft:hopper>],[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered>,<actuallyadditions:item_crystal:3>]]);
+recipes.addShaped(<actuallyadditions:block_inputter>, [[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal:3>],[<minecraft:hopper>,<actuallyadditions:block_misc:4>,<minecraft:hopper>],[<actuallyadditions:item_crystal:3>,<actuallyadditions:item_crystal_empowered>,<actuallyadditions:item_crystal:3>]]);
 
 # Advanced ESD
 recipes.remove(<actuallyadditions:block_inputter_advanced>);
@@ -517,7 +517,7 @@ recipes.addShaped(<actuallyadditions:item_drill_upgrade_speed_iii>, [[<actuallya
 
 # Drill Silk Touch Augment
 recipes.remove(<actuallyadditions:item_drill_upgrade_silk_touch>);
-recipes.addShaped(<actuallyadditions:item_drill_upgrade_silk_touch>, [[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]}),<actuallyadditions:block_crystal_empowered:2>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]})],[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_silk_touch>, [[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>],[<tconstruct:materials:16>,<actuallyadditions:block_crystal_empowered:2>,<tconstruct:materials:16>],[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>]]);
 
 # Drill Fortune Augment I
 recipes.remove(<actuallyadditions:item_drill_upgrade_fortune>);
