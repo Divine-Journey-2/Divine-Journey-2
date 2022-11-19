@@ -517,7 +517,7 @@ recipes.addShaped(<actuallyadditions:item_drill_upgrade_speed_iii>, [[<actuallya
 
 # Drill Silk Touch Augment
 recipes.remove(<actuallyadditions:item_drill_upgrade_silk_touch>);
-recipes.addShaped(<actuallyadditions:item_drill_upgrade_silk_touch>, [[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>],[<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]}),<actuallyadditions:block_crystal_empowered:2>,<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 33 as short}]})],[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>]]);
+recipes.addShaped(<actuallyadditions:item_drill_upgrade_silk_touch>, [[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>],[<tconstruct:materials:16>,<actuallyadditions:block_crystal_empowered:2>,<tconstruct:materials:16>],[<actuallyadditions:item_crystal_empowered:4>,<actuallyadditions:item_crystal_empowered:1>,<actuallyadditions:item_crystal_empowered:4>]]);
 
 # Drill Fortune Augment I
 recipes.remove(<actuallyadditions:item_drill_upgrade_fortune>);
