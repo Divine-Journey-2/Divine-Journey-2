@@ -105,6 +105,11 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:clay> * 576, <minecraft:clay>, 
 mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <ore:sand>.firstItem, 8000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <ore:blockGlass>.firstItem, 8000);
 
+# Ender Block
+mods.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 80000);
+mods.tconstruct.Melting.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 900);
+mods.tconstruct.Casting.addBasinRecipe(<actuallyadditions:block_misc:6>, null, <liquid:ender>, 1000);
+
 # Electrical Steel
 addMagmaCrucibleTinkersMoltenMetalRecipe(<liquid:electrical_steel>, <enderio:block_alloy>, <enderio:item_alloy_ingot>, <enderio:item_alloy_nugget>);
 
