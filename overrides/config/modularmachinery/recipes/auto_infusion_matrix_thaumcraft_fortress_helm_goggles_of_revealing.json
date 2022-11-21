@@ -32,8 +32,8 @@
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "cognitio",
-            "amount": 80
+            "aspect": "auram",
+            "amount": 20
         },
         {
             "type": "aspect",
