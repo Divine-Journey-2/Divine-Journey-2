@@ -14,6 +14,9 @@ for i in 0 to 2 {
 # Remove Bibliocraft Bell (causes errors)
 recipes.remove(<bibliocraft:bell>);
 
+# Remove Bibliocraft Fancy Workbench (dupe bug)
+recipes.remove(<bibliocraft:fancyworkbench:*>);
+
 # Print Press Chase
 recipes.remove(<bibliocraft:bibliochase>);
 recipes.addShaped(<bibliocraft:bibliochase>, [[null,<bibliocraft:framingboard>,null],[<bibliocraft:framingboard>,<avaritia:resource>,<bibliocraft:framingboard>],[null,<bibliocraft:framingboard>,null]]);
