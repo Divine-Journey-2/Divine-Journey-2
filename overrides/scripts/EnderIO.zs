@@ -634,28 +634,51 @@ recipes.addShaped(<enderio:item_dark_steel_leggings>, [[<thermalfoundation:stora
 recipes.remove(<enderio:item_dark_steel_boots>);
 recipes.addShaped(<enderio:item_dark_steel_boots>, [[<enderio:block_alloy:6>,null,<enderio:block_alloy:6>],[<thermalfoundation:storage_alloy:7>,<minecraft:diamond_boots>,<thermalfoundation:storage_alloy:7>]]);
 
+# Armor Upgrade
+static armorSets as string[][string] = {
+    end: ["enderio:item_end_steel_", "enderio:item_dark_steel_", "enderio:item_material:56", "enderio:item_alloy_ingot:8", "enderio:block_alloy:8"],
+    stellar: ["enderio:item_stellar_alloy_", "enderio:item_end_steel_", "bewitchment:heaven_extract", "enderio:item_alloy_endergy_ingot:3", "enderio:item_alloy_endergy_ingot:3"]
+} as string[][string];
+
+function getItem(target as string) as IItemStack {
+    val mod = target.indexOf(":");
+    val split = target.lastIndexOf(":");
+    if (mod == split) return itemUtils.getItem(target);
+    val item = target.substring(0, split);
+    val meta = target.substring(split + 1);
+    return itemUtils.getItem(item, meta);
+}
+
+function upgradeArmor(tier as string, type as string) {
+    val entry = armorSets[tier];
+    val new = getItem(entry[0] + type);
+    val old = getItem(entry[1] + type).marked("mark");
+    val unique = getItem(entry[2]);
+    val type1 = getItem(entry[3]);
+    val type2 = getItem(entry[4]);
+    val fun as IRecipeFunction = function(out, ins, cInfo) { return out.withTag(ins.mark.tag); };
+
+    recipes.remove(new);
+    new.addTooltip(format.gold("Keeps Enchantments and Upgrades when crafted."));
+    if (type == "helmet") recipes.addShaped(new, [[type2,old,type2],[type1,unique,type1]], fun);
+    else if (type == "chestplate") recipes.addShaped(new, [[type2,unique,type2],[type1,old,type1],[type2,type1,type2]], fun);
+    else if (type == "leggings") recipes.addShaped(new, [[type2,old,type2],[type1,unique,type1],[type1,null,type1]], fun);
+    else if (type == "boots") recipes.addShaped(new, [[type1,unique,type1],[type2,old,type2]], fun);
+}
+
+for tier, i in armorSets {
+    upgradeArmor(tier, "helmet");
+    upgradeArmor(tier, "chestplate");
+    upgradeArmor(tier, "leggings");
+    upgradeArmor(tier, "boots");
+}
+
 # Blank Dark Steel Upgrade
 # recipe in enderio/recipes/user/user_recipes.xml
 
 # Dark Bow
 recipes.remove(<enderio:item_dark_steel_bow>);
 recipes.addShaped(<enderio:item_dark_steel_bow>, [[<enderio:item_alloy_ingot:6>,<enderio:item_material:8>,<minecraft:string>],[<enderio:item_material:45>,null,<minecraft:string>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:8>,<minecraft:string>]]);
-
-# Ender Helm
-recipes.remove(<enderio:item_end_steel_helmet>);
-recipes.addShaped(<enderio:item_end_steel_helmet>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_helmet>,<enderio:item_alloy_ingot:8>]]);
-
-# Ender Plate
-recipes.remove(<enderio:item_end_steel_chestplate>);
-recipes.addShaped(<enderio:item_end_steel_chestplate>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_chestplate>,<enderio:item_alloy_ingot:8>],[<enderio:block_alloy:8>,<enderio:item_alloy_ingot:8>,<enderio:block_alloy:8>]]);
-
-# Ender Leggings
-recipes.remove(<enderio:item_end_steel_leggings>);
-recipes.addShaped(<enderio:item_end_steel_leggings>, [[<enderio:block_alloy:8>,<enderio:item_material:56>,<enderio:block_alloy:8>],[<enderio:item_alloy_ingot:8>,<enderio:item_dark_steel_leggings>,<enderio:item_alloy_ingot:8>],[<enderio:item_alloy_ingot:8>,null,<enderio:item_alloy_ingot:8>]]);
-
-# Ender Boots
-recipes.remove(<enderio:item_end_steel_boots>);
-recipes.addShaped(<enderio:item_end_steel_boots>, [[<enderio:item_alloy_ingot:8>,<enderio:item_material:56>,<enderio:item_alloy_ingot:8>],[<enderio:block_alloy:8>,<enderio:item_dark_steel_boots>,<enderio:block_alloy:8>]]);
 
 # Soul Vial
 recipes.remove(<enderio:item_soul_vial>);
@@ -807,22 +830,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<enderio:item_material:8>, <minec
 # Dark Shears
 recipes.remove(<enderio:item_dark_steel_shears>);
 recipes.addShaped(<enderio:item_dark_steel_shears>, [[null,<enderio:item_alloy_ingot:6>,null],[<ore:plankWood>,<minecraft:string>,<enderio:item_alloy_ingot:6>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
-
-# Stellar Helmet
-recipes.remove(<enderio:item_stellar_alloy_helmet>);
-recipes.addShaped(<enderio:item_stellar_alloy_helmet>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_helmet>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>]]);
-
-# Stellar Chestplate
-recipes.remove(<enderio:item_stellar_alloy_chestplate>);
-recipes.addShaped(<enderio:item_stellar_alloy_chestplate>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_chestplate>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>,<enderio:item_alloy_endergy_ingot:3>]]);
-
-# Stellar Leggings
-recipes.remove(<enderio:item_stellar_alloy_leggings>);
-recipes.addShaped(<enderio:item_stellar_alloy_leggings>, [[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_leggings>,<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,null,<enderio:item_alloy_endergy_ingot:3>]]);
-
-# Stellar Booots
-recipes.remove(<enderio:item_stellar_alloy_boots>);
-recipes.addShaped(<enderio:item_stellar_alloy_boots>, [[<enderio:item_alloy_endergy_ingot:3>,<bewitchment:heaven_extract>.noReturn(),<enderio:item_alloy_endergy_ingot:3>],[<enderio:item_alloy_endergy_ingot:3>,<enderio:item_end_steel_boots>,<enderio:item_alloy_endergy_ingot:3>]]);
 
 # Creative Capacitor Bank
 mods.extendedcrafting.TableCrafting.addShaped(<enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
