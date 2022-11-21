@@ -116,6 +116,11 @@ addInteraction(
     <appliedenergistics2:part:463> // FLUID
 );
 
-
+// Add Potato Armor
+val air = <thaumcraft:barrier>.withTag({display:{Name:"§r§dRight Click into the air"}});
+addInteraction(<draconicadditions:infused_potato_helm>, air, <draconicadditions:potato_helm>);
+addInteraction(<draconicadditions:infused_potato_chest>, air, <draconicadditions:potato_chest>);
+addInteraction(<draconicadditions:infused_potato_legs>, air, <draconicadditions:potato_legs>);
+addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions:potato_boots>);
 
 print("ENDING ActivateBlockJEI.zs");
