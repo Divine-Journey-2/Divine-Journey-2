@@ -45,23 +45,17 @@ recipes.addShaped(<divinerpg:snow_globe>, [[<ore:blockGlassColorless>,<minecraft
 recipes.remove(<divinerpg:mysterious_clock>);
 recipes.addShaped(<divinerpg:mysterious_clock>, [[<contenttweaker:steaming_restonia_crystal_block>,<minecraft:clock>,<contenttweaker:steaming_restonia_crystal_block>],[<minecraft:clock>,<extrautils2:decorativesolid:8>,<minecraft:clock>],[<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>]]);
 <divinerpg:mysterious_clock>.addTooltip(format.bold(format.white("Used to summon the ")) + format.bold(format.darkRed("Ancient Entity")) + format.bold(format.white(" in the Overworld.")));
-<divinerpg:mysterious_clock>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
-<divinerpg:mysterious_clock>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Call of the Watcher
 recipes.remove(<divinerpg:call_of_the_watcher>);
 recipes.addShaped(<divinerpg:call_of_the_watcher>, [[<enderutilities:enderpart:2>,<divinerpg:watching_eye>,<enderutilities:enderpart:2>],[<divinerpg:watching_eye>,<extrautils2:decorativesolid:8>,<divinerpg:watching_eye>],[<divinerpg:molten_stone>,<divinerpg:molten_stone>,<divinerpg:molten_stone>]]);
 <divinerpg:call_of_the_watcher>.addTooltip(format.bold(format.white("Used to summon ")) + format.bold(format.red("The Watcher")) + format.bold(format.white(" in the Nether.")));
-<divinerpg:call_of_the_watcher>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
-<divinerpg:call_of_the_watcher>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Horde Horn
 recipes.remove(<divinerpg:horde_horn>);
 recipes.addShaped(<divinerpg:horde_horn>, [[<thermalfoundation:storage:7>,<actuallyadditions:item_misc:15>,<thermalfoundation:storage:7>],[<actuallyadditions:item_misc:15>,<extrautils2:decorativesolid:8>,<actuallyadditions:item_misc:15>],[<divinerpg:ender_stone>,<divinerpg:ender_stone>,<divinerpg:ender_stone>]]);
 <divinerpg:horde_horn>.addTooltip(format.white("Used to summon the ") + format.gray("Ayeraco Horde") + format.white(" in the End."));
 <divinerpg:horde_horn>.addTooltip(format.white("It consists of the ") + format.blue("Blue") + format.white(", ") + format.green("Green") + format.white(", ") + format.yellow("Yellow") + format.white(", ") + format.red("Red") + format.white(" & ") + format.lightPurple("Purple") + format.white(" Ayeraco."));
-<divinerpg:horde_horn>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Do NOT use this from your off-hand, it"));
-<divinerpg:horde_horn>.addTooltip(format.white("could delete a different item in your inventory."));
 
 # Angelic Chestplate
 recipes.remove(<divinerpg:angelic_chestplate>);
