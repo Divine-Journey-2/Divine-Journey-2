@@ -497,7 +497,7 @@ recipes.addShaped(<mysticalagriculture:chunk:19>, [[<actuallyadditions:block_mis
 addTier4MysticalAgricultureSeed(<mysticalagriculture:enderman_seeds>, <mysticalagriculture:chunk:19>, "pelotrio");
 
 # Enderman Head
-recipes.addShaped(<enderio:block:EndermanSkull>, [[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:crafting:15>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>]]);
+recipes.addShaped(<EnderIO:blockEndermanSkull>, [[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:crafting:15>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>]]);
 
 # Signalum Seeds
 recipes.remove(<mysticalagriculture:signalum_seeds>);
