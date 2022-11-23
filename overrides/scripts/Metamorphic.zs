@@ -13,7 +13,7 @@ metamorphic.addJEICatalyst(<botania:floatingspecialflower>.withTag({type: "marim
 metamorphic.addJEICatalyst(<botania:floatingspecialflower>.withTag({type: "marimorphosisChibi"}));
 
 metamorphic.setJEIItemSlot(0, 0, "input", SlotVisual.itemSlot());
-charge.setJEIDecoration(1, 0, "indicator_arrow", SlotVisual.arrowRight());
+metamorphic.setJEIDecoration(1, 0, "indicator_arrow", SlotVisual.arrowRight());
 
 for x in 0 to 8 {
     metamorphic.setJEIItemSlot(2 + x, 0, "output" ~ x, SlotVisual.itemSlot());
