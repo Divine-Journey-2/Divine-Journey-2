@@ -123,4 +123,7 @@ addInteraction(<draconicadditions:infused_potato_chest>, air, <draconicadditions
 addInteraction(<draconicadditions:infused_potato_legs>, air, <draconicadditions:potato_legs>);
 addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions:potato_boots>);
 
+# Botnia Ender Air
+addInteraction(<minecraft:glass_bottle>, <minecraft:end_stone>, <botania:manaresource:15>);
+
 print("ENDING ActivateBlockJEI.zs");
