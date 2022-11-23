@@ -598,9 +598,6 @@ for p in all_tier_iv_potions {
 	p.addTooltip(format.white("in a Fractionating Still with an Alchemical Retort Augment."));
 }
 
-# Fluxed Phyto-Gro tooltip
-<thermalfoundation:fertilizer:2>.addTooltip(format.white("To obtain, charge ") + format.green("Rich Phyto-Gro") + format.white(" in an Energetic Infuser."));
-
 # Magma Crucible should accept any Cobblestone variant
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
 for cobble in <ore:cobblestone>.items {
