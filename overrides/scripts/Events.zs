@@ -3,8 +3,10 @@
 
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
+import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
+import crafttweaker.block.IBlock;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
@@ -164,6 +166,46 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
     // Activate the held ender core if the target entity was an end crystal
     if (id == "minecraft:ender_crystal") {
         activateEnderCore(e.player);
+    }
+});
+
+// Fixing Immersive Engineering's Engineers Workbench voiding contents when broken on the wrong side
+events.onBlockBreak(function(e as BlockBreakEvent) {
+    if (e.world.isRemote()) {
+        return;
+    }
+    // If its not the Engineers Workbench, cancel out
+    if (
+        !(e.world.getBlock(e.position).definition.id == <immersiveengineering:wooden_device0:2>.asBlock().definition.id &&
+        e.world.getBlock(e.position).meta == <immersiveengineering:wooden_device0:2>.asBlock().meta)
+    ) {
+        return;
+    }
+
+    var pos as IBlockPos = e.position;
+    var target as IBlockPos = pos;
+
+    // If its not the dummy block, IE already drops it correctly. Otherwise, use its internal facing attribute
+    // to figure out which block stores the inventory, and save its position.
+    if (!isNull(e.world.getBlock(pos).data)) {
+        if (e.world.getBlock(pos).data.dummy == 0) return;
+        else {
+            target = e.position.getOffset(
+                crafttweaker.world.IFacing.fromString(
+                    // UP and DOWN are the 0 and 1 values of facing, so offset it by -2
+                    (["WEST", "EAST", "SOUTH", "NORTH"] as string[])[e.world.getBlock(pos).data.facing - 2]
+                ),
+                1
+            );
+        }
+    }
+
+    // Then, run though all the items and drop them in world, with the appropriate quanties and tags.
+    for drop in e.world.getBlock(target).data.inventory.asList() {
+        var item as IItemStack = itemUtils.getItem(drop.id, drop.Damage) * drop.Count;
+        if (!isNull(drop.tag)) item = item.withTag(drop.tag);
+        e.world.spawnEntity(item.createEntityItem(e.world, target));
+
     }
 });
 
