@@ -55,8 +55,8 @@ recipes.remove(<lightningcraft:lightning_cell>);
 recipes.addShaped(<lightningcraft:lightning_cell>, [[<lightningcraft:ingot>,<contenttweaker:lightning_charge>,<lightningcraft:ingot>],[<contenttweaker:lightning_charge>,<extendedcrafting:frame>,<contenttweaker:lightning_charge>],[<lightningcraft:ingot>,<contenttweaker:lightning_charge>,<lightningcraft:ingot>]]);
 
 function addLightningCraftTerminalRecipe(output as IItemStack, prev_tier as IItemStack, block as IIngredient, rod as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[null,rod,null],[null,prev_tier,null],[block,block,block]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[null,rod,null],[null,prev_tier,null],[block,block,block]]);
 }
 
 # Iron Air Terminal
@@ -109,11 +109,11 @@ LightningInfusion.remove(<lightningcraft:ingot:1>);
 LightningInfusion.add(<lightningcraft:ingot:1>, <divinerpg:skythern_chunk>, 85, [<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>,<lightningcraft:stone_block>]);
 
 RecipeBuilder.newBuilder("skyfather_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(3000)
-	.addItemInput(<divinerpg:skythern_chunk>)
-	.addItemInput(<lightningcraft:stone_block> * 4)
-	.addItemOutput(<lightningcraft:ingot:1> * 4)
-	.build();
+    .addEnergyPerTickInput(3000)
+    .addItemInput(<divinerpg:skythern_chunk>)
+    .addItemInput(<lightningcraft:stone_block> * 4)
+    .addItemOutput(<lightningcraft:ingot:1> * 4)
+    .build();
 
 
 # Electrostatic Generator
@@ -173,12 +173,12 @@ LightningInfusion.remove(<lightningcraft:ingot:2>);
 # LightningInfusion.add(<lightningcraft:ingot:2> * 16, <lightningcraft:stone_block:3>, 160, [<lightningcraft:material:11>,<lightningcraft:material:13>,<lightningcraft:material:11>,<lightningcraft:material:13>]);
 
 RecipeBuilder.newBuilder("mystic_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(30000)
-	.addItemInput(<lightningcraft:stone_block:3>)
-	.addItemInput(<lightningcraft:material:11> * 2)
-	.addItemInput(<lightningcraft:material:13> * 2)
-	.addItemOutput(<lightningcraft:ingot:2> * 8)
-	.build();
+    .addEnergyPerTickInput(30000)
+    .addItemInput(<lightningcraft:stone_block:3>)
+    .addItemInput(<lightningcraft:material:11> * 2)
+    .addItemInput(<lightningcraft:material:13> * 2)
+    .addItemOutput(<lightningcraft:ingot:2> * 8)
+    .build();
 
 # Lightning Furnace
 recipes.remove(<lightningcraft:lightning_furnace>);
@@ -205,23 +205,23 @@ LightningInfusion.remove(<lightningcraft:material:13>);
 # LightningInfusion.add(<lightningcraft:material:13>, <lightningcraft:material:12>, 50, [<lightningcraft:material:8>,<lightningcraft:dust>,<lightningcraft:material:8>,<lightningcraft:dust>]);
 
 RecipeBuilder.newBuilder("empowered_underpowder_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(7500)
-	.addItemInput(<lightningcraft:material:12>)
-	.addItemInput(<lightningcraft:material:8> * 2)
-	.addItemInput(<lightningcraft:dust> * 2)
-	.addItemOutput(<lightningcraft:material:13>)
-	.build();
+    .addEnergyPerTickInput(7500)
+    .addItemInput(<lightningcraft:material:12>)
+    .addItemInput(<lightningcraft:material:8> * 2)
+    .addItemInput(<lightningcraft:dust> * 2)
+    .addItemOutput(<lightningcraft:material:13>)
+    .build();
 
 # Divine Underpowder
 LightningInfusion.remove(<lightningcraft:material:14>);
 # LightningInfusion.add(<lightningcraft:material:14> * 8, <lightningcraft:material:13>, 100, [<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>,<lightningcraft:dust:1>]);
 
 RecipeBuilder.newBuilder("divine_underpowder_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(15000)
-	.addItemInput(<lightningcraft:material:13>)
-	.addItemInput(<lightningcraft:dust:1> * 4)
-	.addItemOutput(<lightningcraft:material:14> * 4)
-	.build();
+    .addEnergyPerTickInput(15000)
+    .addItemInput(<lightningcraft:material:13>)
+    .addItemInput(<lightningcraft:dust:1> * 4)
+    .addItemOutput(<lightningcraft:material:14> * 4)
+    .build();
 
 # Mystic Lightning Cell
 recipes.remove(<lightningcraft:lightning_cell:2>);
@@ -311,12 +311,12 @@ LightningInfusion.remove(<lightningcraft:material:9>);
 # LightningInfusion.add(<lightningcraft:material:9>, <lightningcraft:material:4>, 250, [<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>,<lightningcraft:metal_block>,<contenttweaker:mystical_iron_ingot>]);
 
 RecipeBuilder.newBuilder("encorcelled_core_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(50000)
-	.addItemInput(<lightningcraft:material:13>)
-	.addItemInput(<contenttweaker:mystical_iron_ingot> * 2)
-	.addItemInput(<lightningcraft:metal_block> * 2)
-	.addItemOutput(<lightningcraft:material:9>)
-	.build();
+    .addEnergyPerTickInput(50000)
+    .addItemInput(<lightningcraft:material:13>)
+    .addItemInput(<contenttweaker:mystical_iron_ingot> * 2)
+    .addItemInput(<lightningcraft:metal_block> * 2)
+    .addItemOutput(<lightningcraft:material:9>)
+    .build();
 
 # Enchantment Reallocator
 recipes.remove(<lightningcraft:ench_reallocator>);
@@ -368,49 +368,49 @@ recipes.addShaped(<lightningcraft:elec_boots>, [[<lightningcraft:ingot>,null,<li
 
 function addLightningCraftToolRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient, new_rod as IIngredient, new_plate as IIngredient) {
 
-	# Skyfather & Mystic Sword
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"), [[new_material],[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_sword")]]);
+    # Skyfather & Mystic Sword
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"));
+    recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"), [[new_material],[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_sword")]]);
 
-	# Skyfather & Mystic Pickaxe
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"));
-	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"), [[new_material,new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_pick"),null],[null,new_rod,null]]);
+    # Skyfather & Mystic Pickaxe
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"));
+    #recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_pick"), [[new_material,new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_pick"),null],[null,new_rod,null]]);
 
-	# Skyfather & Mystic Shovel
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"));
-	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"), [[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_shovel")],[new_rod]]);
+    # Skyfather & Mystic Shovel
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"));
+    #recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_shovel"), [[new_material],[itemUtils.getItem("lightningcraft:" + old_item_str + "_shovel")],[new_rod]]);
 
-	# Skyfather & Mystic Axe
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"));
-	#recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"), [[new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_axe")],[null,new_rod]]);
+    # Skyfather & Mystic Axe
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"));
+    #recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_axe"), [[new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_axe")],[null,new_rod]]);
 
-	# Skyfather & Mystic Hoe
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"));
-	#recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"), [[new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_hoe")],[null,new_rod]]);
+    # Skyfather & Mystic Hoe
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"));
+    #recipes.addShapedMirrored(itemUtils.getItem("lightningcraft:" + new_item_str + "_hoe"), [[new_material,new_material],[null,itemUtils.getItem("lightningcraft:" + old_item_str + "_hoe")],[null,new_rod]]);
 
-	# Skyfather & Mystic Hammer
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"));
-	#recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
+    # Skyfather & Mystic Hammer
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"));
+    #recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_hammer"), [[new_plate,new_plate,new_plate],[new_plate,itemUtils.getItem("lightningcraft:" + new_item_str + "_sword"),new_plate],[null,new_rod,null]]);
 
 }
 
 function addLightningCraftArmorRecipes(new_item_str as string, old_item_str as string, new_material as IIngredient) {
 
-	# Mystic Helmet
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_helm"),new_material]]);
+    # Mystic Helmet
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"));
+    recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_helm"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_helm"),new_material]]);
 
-	# Mystic Chestplate
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"), [[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_chest"),new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
+    # Mystic Chestplate
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"));
+    recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_chest"), [[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_chest"),new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
 
-	# Mystic Leggings
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_legs"),new_material],[new_material,null,new_material]]);
+    # Mystic Leggings
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"));
+    recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_legs"), [[new_material,new_material,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_legs"),new_material],[new_material,null,new_material]]);
 
-	# Mystic Boots
-	recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"));
-	recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"), [[new_material,null,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_boots"),new_material]]);
+    # Mystic Boots
+    recipes.remove(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"));
+    recipes.addShaped(itemUtils.getItem("lightningcraft:" + new_item_str + "_boots"), [[new_material,null,new_material],[new_material,itemUtils.getItem("lightningcraft:" + old_item_str + "_boots"),new_material]]);
 
 }
 
@@ -432,22 +432,32 @@ LightningInfusion.remove(<lightningcraft:mystic_shovel>);
 LightningInfusion.remove(<lightningcraft:mystic_axe>);
 LightningInfusion.remove(<lightningcraft:mystic_hoe>);
 
+# Add Guard's Bonemeal to Modular Machine
+LightningCrusher.remove(<lightningcraft:material:8>);
+RecipeBuilder.newBuilder("bonemeal_recipe", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(1000)
+    .addItemInput(<lightningcraft:material:7>)
+    .addItemInput(<thermalfoundation:material:1027> * 16)
+    .addItemInput(<bloodmagic:cutting_fluid:0>)
+    .addItemOutput(<lightningcraft:material:8> * 3)
+    .build();
+
 # Add Electricium to Modular Machine
 RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(1000)
-	.addItemInput(<minecraft:diamond>)
-	.addItemInput(<minecraft:iron_ingot>)
-	.addItemInput(<minecraft:gold_ingot>)
-	.addItemOutput(<lightningcraft:ingot:0>)
-	.build();
+    .addEnergyPerTickInput(1000)
+    .addItemInput(<minecraft:diamond>)
+    .addItemInput(<minecraft:iron_ingot>)
+    .addItemInput(<minecraft:gold_ingot>)
+    .addItemOutput(<lightningcraft:ingot:0>)
+    .build();
 
 RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(1000)
-	.addItemInput(<ore:blockDiamond>)
-	.addItemInput(<minecraft:iron_block>)
-	.addItemInput(<minecraft:gold_block>)
-	.addItemOutput(<lightningcraft:metal_block:0>)
-	.build();
+    .addEnergyPerTickInput(1000)
+    .addItemInput(<ore:blockDiamond>)
+    .addItemInput(<minecraft:iron_block>)
+    .addItemInput(<minecraft:gold_block>)
+    .addItemOutput(<lightningcraft:metal_block:0>)
+    .build();
 
 # Add weapons to Modular Machine
 RecipeBuilder.newBuilder("soul_sword", "lightningcraft_infusion_multiblock", 300)
