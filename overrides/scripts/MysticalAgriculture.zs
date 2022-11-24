@@ -496,6 +496,9 @@ recipes.addShaped(<mysticalagriculture:chunk:19>, [[<actuallyadditions:block_mis
 # Enderman Seeds
 addTier4MysticalAgricultureSeed(<mysticalagriculture:enderman_seeds>, <mysticalagriculture:chunk:19>, "pelotrio");
 
+# Enderman Head
+recipes.addShaped(<enderio:block_enderman_skull>, [[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:crafting:15>,<mysticalagriculture:enderman_essence>],[<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>,<mysticalagriculture:enderman_essence>]]);
+
 # Signalum Seeds
 recipes.remove(<mysticalagriculture:signalum_seeds>);
 mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/signalum_seeds", <mysticalagriculture:signalum_seeds>, 3000, 100,
