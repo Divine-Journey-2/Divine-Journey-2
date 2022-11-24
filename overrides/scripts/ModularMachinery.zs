@@ -11,9 +11,6 @@ recipes.remove(<modularmachinery:itemmodularium>);
 # Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.immersiveengineering.ArcFurnace.addRecipe(<modularmachinery:itemmodularium> * 16, <plustic:mirioningot>, null, 120, 400, [<enderutilities:enderpart:2>,<botania:quartz> * 4]);
 
-# Tender Ender Blender Machine Blueprint
-recipes.addShaped(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tender_ender_blender"}), [[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>],[<minecraft:paper>,<botania:endereyeblock>,<minecraft:paper>],[<modularmachinery:itemmodularium>,<thaumcraft:plate:2>,<modularmachinery:itemmodularium>]]);
-
 # Auto Infusion Matrix Machine Blueprint
 recipes.addShapedMirrored(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:auto_infusion_matrix"}), [[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>],[<thaumcraft:matrix_speed>,<thaumicaugmentation:material:3>,<thaumcraft:matrix_cost>],[<minecraft:paper>,<contenttweaker:condensed_vis_crystal_cognitio>,<minecraft:paper>]]);
 
