@@ -28,12 +28,6 @@
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "diabolus",
-            "amount": 40
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
             "aspect": "cognitio",
             "amount": 180
         },
