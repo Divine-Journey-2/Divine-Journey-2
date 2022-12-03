@@ -49,8 +49,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood", "", 5, [], <th
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood2", "", 5, [], <thaumcraft:table_wood>, [[null,null,null],[<botania:livingwood:5>,<botania:livingwood:5>,<botania:livingwood:5>],[<botania:livingwood:5>,null,<botania:livingwood:5>]]);
 
 # Research Table
-<thaumcraft:research_table>.addTooltip(format.white("Created by placing Scribing Tools"));
-<thaumcraft:research_table>.addTooltip(format.white("on a Thaumcraft Wood Table."));
+#<thaumcraft:research_table>.addTooltip(format.white("Created by placing Scribing Tools"));
+#<thaumcraft:research_table>.addTooltip(format.white("on a Thaumcraft Wood Table."));
 
 # Scribing Tools
 recipes.removeShapeless(<thaumcraft:scribing_tools>, [<*>,<*>,<*>]);
