@@ -55,6 +55,9 @@ addInteraction(<thaumcraft:salis_mundus>, <minecraft:bookshelf>, <thaumcraft:tha
 addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 
+// Research Table
+addInteraction(<thaumcraft:scribing_tools>, <thaumcraft:table_wood>, <thaumcraft:research_table>);
+
 // Botania Phantom Ink makes Spark not (well, less) visible
 addInteraction(<botania:phantomink>.withTag({display:{Lore:["§r§bNot consumed."]}}), <botania:spark>, <botania:spark>.withTag({display:{Lore:["§r§bSignificantly less visible."]}}));
 
