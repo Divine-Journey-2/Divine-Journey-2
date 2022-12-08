@@ -571,14 +571,14 @@ for i in 0 to 6 {
 recipes.remove(<actuallyadditions:block_testifi_bucks_green_stairs>);
 recipes.addShaped(<actuallyadditions:block_testifi_bucks_green_stairs>*8, [[<actuallyadditions:block_testifi_bucks_green_wall>,null,null],[<actuallyadditions:block_testifi_bucks_green_wall>, <actuallyadditions:block_testifi_bucks_green_wall>, null],[<actuallyadditions:block_testifi_bucks_green_wall>,<actuallyadditions:block_testifi_bucks_green_wall>, <actuallyadditions:block_testifi_bucks_green_wall>]]);
 recipes.remove(<actuallyadditions:block_testifi_bucks_white_stairs>);
-recipes.addShaped(<actuallyadditions:block_testifi_bucks_white_stairs>*8, [[<actuallyadditions:block_testifi_bucks_white_wall>,null,null],[<actuallyadadditions:block_testifi_bucks_white_wall>, <actuallyadditions:block_testifi_bucks_white_wall>, null],[<actuallyadditions:block_testifi_bucks_white_wall>,<actuallyadditions:block_testifi_bucks_white_wall>, <actuallyadditions:block_testifi_bucks_white_wall>]]);
+recipes.addShaped(<actuallyadditions:block_testifi_bucks_white_stairs>*8, [[<actuallyadditions:block_testifi_bucks_white_wall>,null,null],[<actuallyadditions:block_testifi_bucks_white_wall>, <actuallyadditions:block_testifi_bucks_white_wall>, null],[<actuallyadditions:block_testifi_bucks_white_wall>,<actuallyadditions:block_testifi_bucks_white_wall>, <actuallyadditions:block_testifi_bucks_white_wall>]]);
 
 # Black Quartz Stairs
 recipes.remove(<actuallyadditions:block_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_quartz_stair>*8, [[<actuallyadditions:block_misc:2>,null,null],[<actuallyadadditions:misc:2>, <actuallyadditions:block_misc:2>, null],[<actuallyadditions:block_misc:2>,<actuallyadditions:block_misc:2>, <actuallyadditions:block_misc:2>]]);
+recipes.addShaped(<actuallyadditions:block_quartz_stair>*8, [[<actuallyadditions:block_misc:2>,null,null],[<actuallyadadditions:block_misc:2>, <actuallyadditions:block_misc:2>, null],[<actuallyadditions:block_misc:2>,<actuallyadditions:block_misc:2>, <actuallyadditions:block_misc:2>]]);
 recipes.remove(<actuallyadditions:block_chiseled_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_chiseled_quartz_stair>*8, [[<actuallyadditions:block_misc:1>,null,null],[<actuallyadadditions:misc:1>, <actuallyadditions:block_misc:1>, null],[<actuallyadditions:block_misc:1>,<actuallyadditions:block_misc:1>, <actuallyadditions:block_misc:1>]]);
+recipes.addShaped(<actuallyadditions:block_chiseled_quartz_stair>*8, [[<actuallyadditions:block_misc:1>,null,null],[<actuallyadadditions:block_misc:1>, <actuallyadditions:block_misc:1>, null],[<actuallyadditions:block_misc:1>,<actuallyadditions:block_misc:1>, <actuallyadditions:block_misc:1>]]);
 recipes.remove(<actuallyadditions:block_pillar_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_pillar_quartz_stair>*8, [[<actuallyadditions:block_misc>,null,null],[<actuallyadadditions:misc>, <actuallyadditions:block_misc>, null],[<actuallyadditions:block_misc>,<actuallyadditions:block_misc>, <actuallyadditions:block_misc>]]);
+recipes.addShaped(<actuallyadditions:block_pillar_quartz_stair>*8, [[<actuallyadditions:block_misc>,null,null],[<actuallyadadditions:block_misc>, <actuallyadditions:block_misc>, null],[<actuallyadditions:block_misc>,<actuallyadditions:block_misc>, <actuallyadditions:block_misc>]]);
 
 print("ENDING ActuallyAdditions.zs");
