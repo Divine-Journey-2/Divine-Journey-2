@@ -36,7 +36,7 @@ for i in 1 to 7 {
 	<ore:blockMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
 	<ore:stoneMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
 	mods.chisel.Carving.removeVariation("marble", <astralsorcery:blockmarble>.withDamage(i));
-
+}
 # Marble Bricks
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_bricks");
 recipes.remove(<astralsorcery:blockmarble:1>);
