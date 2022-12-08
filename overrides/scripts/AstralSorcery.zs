@@ -46,7 +46,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 <astralsorcery:blockmarble>,<astralsorcery:blockmarble>,<astralsorcery:blockmarble>]);
 
 # Marble Bricks
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marblestairs");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_bricks");
 recipes.remove(<astralsorcery:blockmarble:1>);
 recipes.addShaped(<astralsorcery:blockmarble:1> * 4, [[null,<ore:stoneMarble>,null],[<ore:stoneMarble>,<lightningcraft:stone_block:1>,<ore:stoneMarble>],[null,<ore:stoneMarble>,null]]);
 
