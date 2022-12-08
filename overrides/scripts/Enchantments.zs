@@ -71,7 +71,7 @@ val additionList as IItemStack[IEnchantmentDefinition] = {
     <enchantment:cofhcore:soulbound>: <minecraft:nether_star>*1,
     <enchantment:cofhcore:vorpal>: <industrialforegoing:mob_relocator>*8,
     <enchantment:divinerpg:aftershock>: <enderio:block_killer_joe>*4,
-    <enchantment:divinerpg:rive>: <actuallyadditions:item_drill_upgrade_five_by_five>*2,
+    <enchantment:divinerpg:rive>: <actuallyadditions:item_drill_upgrade_five_by_five>*1,
     <enchantment:draconicevolution:enchant_reaper>: <mekanism:electrolyticcore>*1,
     <enchantment:endercore:autosmelt>: <tconstruct:seared_furnace_controller>*16,
     <enchantment:endercore:xpboost>: <actuallyadditions:item_solidified_experience>*16,
