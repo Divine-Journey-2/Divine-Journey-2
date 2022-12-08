@@ -575,10 +575,10 @@ recipes.addShaped(<actuallyadditions:block_testifi_bucks_white_stairs>*8, [[<act
 
 # Black Quartz Stairs
 recipes.remove(<actuallyadditions:block_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_quartz_stair>*8, [[<actuallyadditions:block_misc:2>,null,null],[<actuallyadadditions:block_misc:2>, <actuallyadditions:block_misc:2>, null],[<actuallyadditions:block_misc:2>,<actuallyadditions:block_misc:2>, <actuallyadditions:block_misc:2>]]);
+recipes.addShaped(<actuallyadditions:block_quartz_stair>*8, [[<actuallyadditions:block_misc:2>,null,null],[<actuallyadditions:block_misc:2>, <actuallyadditions:block_misc:2>, null],[<actuallyadditions:block_misc:2>,<actuallyadditions:block_misc:2>, <actuallyadditions:block_misc:2>]]);
 recipes.remove(<actuallyadditions:block_chiseled_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_chiseled_quartz_stair>*8, [[<actuallyadditions:block_misc:1>,null,null],[<actuallyadadditions:block_misc:1>, <actuallyadditions:block_misc:1>, null],[<actuallyadditions:block_misc:1>,<actuallyadditions:block_misc:1>, <actuallyadditions:block_misc:1>]]);
+recipes.addShaped(<actuallyadditions:block_chiseled_quartz_stair>*8, [[<actuallyadditions:block_misc:1>,null,null],[<actuallyadditions:block_misc:1>, <actuallyadditions:block_misc:1>, null],[<actuallyadditions:block_misc:1>,<actuallyadditions:block_misc:1>, <actuallyadditions:block_misc:1>]]);
 recipes.remove(<actuallyadditions:block_pillar_quartz_stair>);
-recipes.addShaped(<actuallyadditions:block_pillar_quartz_stair>*8, [[<actuallyadditions:block_misc>,null,null],[<actuallyadadditions:block_misc>, <actuallyadditions:block_misc>, null],[<actuallyadditions:block_misc>,<actuallyadditions:block_misc>, <actuallyadditions:block_misc>]]);
+recipes.addShaped(<actuallyadditions:block_pillar_quartz_stair>*8, [[<actuallyadditions:block_misc>,null,null],[<actuallyadditions:block_misc>, <actuallyadditions:block_misc>, null],[<actuallyadditions:block_misc>,<actuallyadditions:block_misc>, <actuallyadditions:block_misc>]]);
 
 print("ENDING ActuallyAdditions.zs");

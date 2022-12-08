@@ -36,14 +36,6 @@ for i in 1 to 7 {
 	<ore:blockMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
 	<ore:stoneMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
 	mods.chisel.Carving.removeVariation("marble", <astralsorcery:blockmarble>.withDamage(i));
-# Marble Stairs
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_stairs");
-recipes.remove(<astralsorcery:blockmarblestairs>);
-recipes.addShaped(<astralsorcery:blockmarblestairs>*8, [[<astralsorcery:blockmarble>,null,null],[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, null],[<astralsorcery:blockmarble>,<astralsorcery:blockmarble>, <astralsorcery:blockmarble>]]);
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/blockmarblestairs", <astralsorcery:blockmarblestairs>*8, 100, 100,
-[<astralsorcery:blockmarble>,null,null,
-<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,null,
-<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,<astralsorcery:blockmarble>]);
 
 # Marble Bricks
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_bricks");
@@ -171,6 +163,15 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/
 <mekanism:polyethene:2>,<contenttweaker:sparkling_aquamarine>,<mekanism:polyethene:2>,
 <ore:paneGlassWhite>,<mekanism:polyethene:2>,<ore:paneGlassWhite>]);
 mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:itemcraftingcomponent:3>);
+
+# Marble Stairs
+recipes.remove(<astralsorcery:blockmarblestairs>);
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_stairs");
+recipes.addShaped(<astralsorcery:blockmarblestairs>*8, [[<astralsorcery:blockmarble>,null,null],[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, null],[<astralsorcery:blockmarble>,<astralsorcery:blockmarble>, <astralsorcery:blockmarble>]]);
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/marble_stairs", <astralsorcery:blockmarblestairs>*8, 100, 100,
+[<astralsorcery:blockmarble>,null,null,
+<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,null,
+<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,<astralsorcery:blockmarble>]);
 
 # Looking Glass
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/handtelescope");
