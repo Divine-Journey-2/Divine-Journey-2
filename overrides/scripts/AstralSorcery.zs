@@ -37,6 +37,14 @@ for i in 1 to 7 {
 	<ore:stoneMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
 	mods.chisel.Carving.removeVariation("marble", <astralsorcery:blockmarble>.withDamage(i));
 }
+# Marble Stairs
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/blockmarblestairs");
+recipes.remove(<astralsorcery:blockmarblestairs>);
+recipes.addShaped(<astralsorcery:blockmarblestairs>*8, [[<astralsorcery:blockmarble>,null,null],[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, null],[<astralsorcery:blockmarble>,<astralsorcery:blockmarble>, <astralsorcery:blockmarble>]]);
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/blockmarblestairs", <astralsorcery:blockmarblestairs>*8, 100, 100,
+[<astralsorcery:blockmarble>,null,null,
+<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,null,
+<astralsorcery:blockmarble>,<astralsorcery:blockmarble>,<astralsorcery:blockmarble>]);
 
 # Marble Bricks
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_bricks");
