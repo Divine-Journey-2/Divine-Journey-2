@@ -166,7 +166,7 @@ mods.astralsorcery.StarlightInfusion.removeInfusion(<astralsorcery:itemcraftingc
 
 # Marble Stairs
 recipes.remove(<astralsorcery:blockmarblestairs>);
-mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_stairs");
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/marble_stairs");
 recipes.addShaped(<astralsorcery:blockmarblestairs>*8, [[<astralsorcery:blockmarble>,null,null],[<astralsorcery:blockmarble>, <astralsorcery:blockmarble>, null],[<astralsorcery:blockmarble>,<astralsorcery:blockmarble>, <astralsorcery:blockmarble>]]);
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/marble_stairs", <astralsorcery:blockmarblestairs>*8, 100, 100,
 [<astralsorcery:blockmarble>,null,null,
