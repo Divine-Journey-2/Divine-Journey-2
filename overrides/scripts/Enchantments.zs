@@ -46,7 +46,7 @@ val additionList as IItemStack[IEnchantmentDefinition] = {
     <enchantment:minecraft:sharpness>: <mob_grinding_utils:saw_upgrade>*1,
     <enchantment:minecraft:silk_touch>: <actuallyadditions:item_drill_upgrade_silk_touch>*1,
     <enchantment:minecraft:smite>: <thaumcraft:flesh_block>*1,
-    <enchantment:minecraft:sweeping>: <minecraft:end_rod>*4,
+    <enchantment:minecraft:sweeping>: <minecraft:blaze_rod>*16,
     <enchantment:minecraft:thorns>: <minecraft:cactus>*16,
     <enchantment:minecraft:unbreaking>: <enderio:block_reinforced_obsidian>*1,
     <enchantment:minecraft:vanishing_curse>: <minecraft:ghast_tear>*4,
