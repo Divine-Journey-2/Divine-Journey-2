@@ -223,6 +223,8 @@ recipes.addShapedMirrored(<contenttweaker:aether_power_core>, [[<ore:ingotEnerge
 recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ring>,<aether_legacy:ice_ring>,null],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<aether_legacy:ice_pendant>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,null]]);
 <contenttweaker:golder_molder_folder>.addTooltip(format.darkRed(format.italic("An older boulder told 'er: Hold 'er shoulder!")));
 <contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
+<contenttweaker:golder_molder_folder>.addTooltip(format.red("Does not get consumed by regular crafting."));
+<contenttweaker:golder_molder_folder>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # Enchanted Golden Berry
 recipes.addShaped(<contenttweaker:enchanted_golden_berry> * 4, [[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>]]);
