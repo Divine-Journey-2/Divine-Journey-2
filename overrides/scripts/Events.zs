@@ -109,7 +109,7 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
             if (e.world.isAirBlock(spawnLocation)) {
                 // Sounds aren't accessible via crafttweaker, so we run a command instead
                 // Note that this command is modified from the original - the original is on channel `master` and with a volume of 20
-                Commands.call("/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1", player, player.world, false, true);
+                Commands.call("/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1", e.player, e.player.world, false, true);
                 e.world.setBlockState(<blockstate:divinerpg:ayeraco_spawn>, spawnLocation);
                 removeItemFromHand(e.player, <divinerpg:horde_horn>);
             } else {
