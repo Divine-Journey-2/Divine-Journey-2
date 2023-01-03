@@ -224,7 +224,7 @@ recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ri
 <contenttweaker:golder_molder_folder>.addTooltip(format.darkRed(format.italic("An older boulder told 'er: Hold 'er shoulder!")));
 <contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
 <contenttweaker:golder_molder_folder>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:golder_molder_folder>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:golder_molder_folder>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # Enchanted Golden Berry
 recipes.addShaped(<contenttweaker:enchanted_golden_berry> * 4, [[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>]]);
@@ -248,7 +248,7 @@ recipes.addShapeless(<contenttweaker:aechomedirus> * 9, [<contenttweaker:aechome
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:resonating_orb>, <contenttweaker:healing_stone_block> * 2, null, 240, 800, [<contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2]);
 #EIOAlloySmelter.addRecipe(<contenttweaker:resonating_orb>, [<contenttweaker:healing_stone_block> * 2, <contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2], 40000);
 <contenttweaker:resonating_orb>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:resonating_orb>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:resonating_orb>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # Santa Armor Set
 recipes.addShapeless(<contenttweaker:santa_armor_set>, [<divinerpg:santa_helmet>,<divinerpg:santa_chestplate>,<divinerpg:santa_leggings>,<divinerpg:santa_boots>]);
@@ -306,7 +306,7 @@ recipes.addShapeless(<contenttweaker:open_ingot> * 9, [<contenttweaker:open_bloc
 # Thermal Conductor Rod
 recipes.addShapedMirrored(<contenttweaker:thermal_conductor_rod>, [[null,<extrautils2:suncrystal>,<extrautils2:decorativesolidwood:1>],[<extrautils2:suncrystal>,<extrautils2:ingredients:5>,<extrautils2:suncrystal>],[<extrautils2:decorativesolidwood:1>,<extrautils2:suncrystal>,null]]);
 <contenttweaker:thermal_conductor_rod>.addTooltip(format.white("Has 800 uses."));
-<contenttweaker:thermal_conductor_rod>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:thermal_conductor_rod>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # RF Powder
 recipes.addShapeless(<contenttweaker:rf_powder> * 2, [<contenttweaker:thermal_conductor_rod>.anyDamage().transformDamage(1),<contenttweaker:gp_powder>,<thermalfoundation:material:99>,<minecraft:experience_bottle>]);
@@ -1247,7 +1247,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation
 [<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
 [<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>]]);
 <contenttweaker:star_of_revelation>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:star_of_revelation>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:star_of_revelation>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 # Galactic Ingot
 recipes.addShapeless(<contenttweaker:galactic_ingot> * 5, [<contenttweaker:star_of_revelation>.reuse(),<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:4>]);
@@ -1909,6 +1909,6 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/
 # Goddess' Pearl
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<alchemistry:ingot:42>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>]);
 <contenttweaker:goddess_pearl>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:goddess_pearl>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:goddess_pearl>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
 
 print("ENDING ContentTweakerRecipes.zs");
