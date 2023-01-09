@@ -34,6 +34,8 @@ recipes.addShapeless(<thaumcraft:salis_mundus> * 2, [<thaumcraft:salis_mundus>,<
 # Arcane Workbench
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:arcane_workbench>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<extendedcrafting:ender_crafter>.asBlock(), <thaumcraft:arcane_workbench>, "FIRSTSTEPS@1");
+<thaumcraft:arcane_workbench>.addTooltip(format.white("Created by Right Clicking on an Extended Crafting"));	
+<thaumcraft:arcane_workbench>.addTooltip(format.white("Ender Crafter with some ") + format.lightPurple("Salis Mundus") + format.white("."));
 
 # Thaumometer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
@@ -42,6 +44,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:thaumometer", "
 # Crucible
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<evilcraft:purifier>.asBlock(), <thaumcraft:crucible>, "UNLOCKALCHEMY@1");
+<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an EvilCraft"));	
+<thaumcraft:crucible>.addTooltip(format.white("Purifier with some ") + format.lightPurple("Salis Mundus") + format.white("."));
 
 # Wood Table
 recipes.remove(<thaumcraft:table_wood>);
@@ -49,8 +53,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood", "", 5, [], <th
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood2", "", 5, [], <thaumcraft:table_wood>, [[null,null,null],[<botania:livingwood:5>,<botania:livingwood:5>,<botania:livingwood:5>],[<botania:livingwood:5>,null,<botania:livingwood:5>]]);
 
 # Research Table
-#<thaumcraft:research_table>.addTooltip(format.white("Created by placing Scribing Tools"));
-#<thaumcraft:research_table>.addTooltip(format.white("on a Thaumcraft Wood Table."));
+<thaumcraft:research_table>.addTooltip(format.white("Created by placing Scribing Tools"));
+<thaumcraft:research_table>.addTooltip(format.white("on a Thaumcraft Wood Table."));
 
 # Scribing Tools
 recipes.removeShapeless(<thaumcraft:scribing_tools>, [<*>,<*>,<*>]);
