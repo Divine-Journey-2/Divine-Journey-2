@@ -197,8 +197,8 @@ recipes.addShaped(<abyssalcraft:cstonebrick>, [[null,<abyssalcraft:cbrick>,null]
 <abyssalcraft:stone:4>.addTooltip(format.white("Coralium Cobblestone can be found in the Abyssal Wasteland."));
 <abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter"));
 <abyssalcraft:stone:4>.addTooltip(format.white("over ") + format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
-<abyssalcraft:stone:4>.addTooltip(format.white("(If you can't find any Liquid Antimatter, use the"));
-<abyssalcraft:stone:4>.addTooltip(format.white("Anti Milking Ritual in the Abyssal Wasteland.)"));
+<abyssalcraft:stone:4>.addTooltip(format.white("(If you can't find any Liquid Antimatter, summon an"));
+<abyssalcraft:stone:4>.addTooltip(format.white("Antimatter Cow with Roots.)"));
 
 # Transmutator
 recipes.remove(<abyssalcraft:transmutator>);
@@ -653,11 +653,6 @@ mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
 # Crystallized Cluster tooltips
 #<abyssalcraft:crystalcluster:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 8."));
 #<abyssalcraft:crystalcluster2:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 10."));
-
-# Evoker from Woodland Mansion Locator Token
-mods.abyssalcraft.SummonRitual.addRitual("summonEvoker_from_WMLT", 0, 0, 2000, false, "minecraft:evocation_illager", [<contenttweaker:woodland_mansion_locator_token>,<abyssalcraft:corflesh>,<minecraft:emerald>,<abyssalcraft:corflesh>]);
-game.setLocalization("ac.ritual.summonEvoker_from_WMLT", "Summon Evoker");
-game.setLocalization("ac.ritual.summonEvoker_from_WMLT.desc", "No luck finding a Woodland Mansion...? Dark Magic might be able to help with that.");
 
 # Removing Cha'rcoal
 <ore:coal>.remove(<abyssalcraft:charcoal>);
