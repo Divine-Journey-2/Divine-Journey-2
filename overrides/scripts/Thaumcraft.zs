@@ -61,6 +61,12 @@ recipes.removeShapeless(<thaumcraft:scribing_tools>, [<*>,<*>,<*>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("scribingtoolscraft1", "", 10, [], <thaumcraft:scribing_tools>, [<mysticalagriculture:crafting:24>,<botania:vial:1>,<botania:manaresource:22>,<divinerpg:kraken_skin>,<contenttweaker:rune_of_pride>]);
 <thaumcraft:scribing_tools>.addTooltip(format.gray(format.italic("Fill me up with some Ink to complete my Research!")));
 
+# Veined Scribing Tools
+recipes.remove(<evilcraft:veined_scribing_tools>);
+recipes.removeByRecipeName("evilcraftcompat:veined_scribing_tools_11");
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("veinedscribingtools", "", 50, [], <evilcraft:veined_scribing_tools>, [<thaumcraft:scribing_tools>,<evilcraft:blood_orb:1>]);
+<evilcraft:veined_scribing_tools>.addTooltip(format.gray(format.italic("Has twice the \"ink\" capacity and can be filled with Evilcraft Blood instead of Ink!")));
+
 # Yellow Nitor
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:nitor", "UNLOCKALCHEMY@3", <thaumcraft:nitor_yellow>, <thermalfoundation:storage_alloy:6>, [<aspect:potentia> * 20, <aspect:ignis> * 20, <aspect:lux> * 20]);
