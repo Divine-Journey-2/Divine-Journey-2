@@ -135,4 +135,10 @@ addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:
 # Aechor from Aechor Plant
 addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
 
+# Botania Double-tall Flowers
+for x in 0 to 8 {
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x), <botania:doubleflower1>.withDamage(x));
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
+}
+
 print("ENDING ActivateBlockJEI.zs");
