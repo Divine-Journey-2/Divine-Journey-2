@@ -110,8 +110,15 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> 
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:165>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:165> * 4, <thermalfoundation:material:128> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:redstone> * 10], "Alloying");
 
+# Destabilized Clathrate from Mystical Agriculture Essences
+recipes.addShaped(<thermalfoundation:material:893>, [[null,<mysticalagriculture:redstone_alloy_essence>,null],[<mysticalagriculture:redstone_alloy_essence>,<minecraft:flint>,<mysticalagriculture:redstone_alloy_essence>],[null,<mysticalagriculture:redstone_alloy_essence>,null]]);
+
+# Energized Clathrate from Mystical Agriculture Essences
+recipes.addShaped(<thermalfoundation:material:894>, [[null,<mysticalagriculture:glowstone_ingot_essence>,null],[<mysticalagriculture:glowstone_ingot_essence>,<minecraft:flint>,<mysticalagriculture:glowstone_ingot_essence>],[null,<mysticalagriculture:glowstone_ingot_essence>,null]]);
+
 # Resonant Clathrate from Mystical Agriculture Essences
 recipes.addShaped(<thermalfoundation:material:895>, [[null,<mysticalagriculture:enderium_essence>,null],[<mysticalagriculture:enderium_essence>,<minecraft:flint>,<mysticalagriculture:enderium_essence>],[null,<mysticalagriculture:enderium_essence>,null]]);
+
 
 # Destabilized Clathrate <-> AC Redstone Shard conversion fix
 <ore:crystalRedstone>.remove(<thermalfoundation:material:893>);
