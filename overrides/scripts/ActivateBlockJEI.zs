@@ -126,4 +126,13 @@ addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions
 # Botania Ender Air
 addInteraction(<minecraft:glass_bottle>, <minecraft:end_stone>, <botania:manaresource:15>);
 
+# Milk from Cow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"minecraft:cow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"minecraft:cow"}), <minecraft:milk_bucket>);
+
+# Antimatter from Anticow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"abyssalcraft:anticow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"abyssalcraft:anticow"}), <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}));
+
+# Aechor from Aechor Plant
+addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
+
 print("ENDING ActivateBlockJEI.zs");
