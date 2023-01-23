@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_leggings",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_leggings.withTag({color: 11360678})",
     "recipeTime": 36,
     "requirements": [
         {
@@ -11,12 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:cloth_chest"
-        },
-        {
-            "type": "item",
-            "io-type": "input",
-            "item": "thaumcraft:baubles@2"
+            "item": "thaumcraft:cloth_legs"
         },
         {
             "type": "item",
@@ -61,7 +56,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "thaumicaugmentation:thaumium_robes_leggings"
+            "item": "thaumicaugmentation:thaumium_robes_leggings.withTag({color: 11360678})"
         }
     ]
 }

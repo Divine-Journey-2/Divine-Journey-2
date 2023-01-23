@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_chestplate",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_chestplate.withTag({color: 11360678})",
     "recipeTime": 36,
     "requirements": [
         {
@@ -57,7 +57,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "thaumicaugmentation:thaumium_robes_chestplate"
+            "item": "thaumicaugmentation:thaumium_robes_chestplate.withTag({color: 11360678})"
         }
     ]
 }

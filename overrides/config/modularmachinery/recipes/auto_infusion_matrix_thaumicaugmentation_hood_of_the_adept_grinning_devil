@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_hood.withTag({color: 11360678})",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_hood.withTag({maskType: 1, color: 11360678})",
     "recipeTime": 36,
     "requirements": [
         {
@@ -11,7 +11,12 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:goggles"
+            "item": "ore:dyeBlack"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumicaugmentation:thaumium_robes_hood.withTag({color: 11360678})"
         },
         {
             "type": "item",
@@ -21,36 +26,30 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:plate@2"
+            "item": "thaumcraft:brain"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:fabric",
+            "item": "thermalfoundation:material@32",
             "amount": 2
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:salis_mundus"
+            "item": "thaumcraft:shimmerleaf"
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "metallum",
-            "amount": 15
-        },
-        {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "potenia",
+            "aspect": "cognitio",
             "amount": 80
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "auram",
-            "amount": 20
+            "aspect": "victus",
+            "amount": 80
         },
         {
             "type": "aspect",
@@ -59,15 +58,9 @@
             "amount": 20
         },
         {
-            "type": "aspect",
-            "io-type": "input",
-            "aspect": "sensus",
-            "amount": 35
-        },
-        {
             "type": "item",
             "io-type": "output",
-            "item": "thaumicaugmentation:thaumium_robes_hood.withTag({color: 11360678})"
+            "item": "thaumicaugmentation:thaumicaugmentation:thaumium_robes_hood.withTag({maskType: 1, color: 11360678})"
         }
     ]
 }
