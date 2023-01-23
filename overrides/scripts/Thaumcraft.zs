@@ -34,7 +34,7 @@ recipes.addShapeless(<thaumcraft:salis_mundus> * 2, [<thaumcraft:salis_mundus>,<
 # Arcane Workbench
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:arcane_workbench>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<extendedcrafting:ender_crafter>.asBlock(), <thaumcraft:arcane_workbench>, "FIRSTSTEPS@1");
-<thaumcraft:arcane_workbench>.addTooltip(format.white("Created by Right Clicking on an Extended Crafting"));	
+<thaumcraft:arcane_workbench>.addTooltip(format.white("Created by Right Clicking on an Extended Crafting"));
 <thaumcraft:arcane_workbench>.addTooltip(format.white("Ender Crafter with some ") + format.lightPurple("Salis Mundus") + format.white("."));
 
 # Thaumometer
@@ -44,7 +44,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:thaumometer", "
 # Crucible
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<evilcraft:purifier>.asBlock(), <thaumcraft:crucible>, "UNLOCKALCHEMY@1");
-<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an EvilCraft"));	
+<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an EvilCraft"));
 <thaumcraft:crucible>.addTooltip(format.white("Purifier with some ") + format.lightPurple("Salis Mundus") + format.white("."));
 
 # Wood Table
