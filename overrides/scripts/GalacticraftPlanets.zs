@@ -3,6 +3,7 @@
 import moretweaker.galacticraft.CircuitFabricator;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
 
 print("STARTING GalacticraftPlanets.zs");
 
@@ -271,5 +272,14 @@ recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering
 # Solar Essence -> Solar Dust, Venus Volcanic Rock
 recipes.addShaped(<galacticraftplanets:basic_item_venus:4> * 3, [[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,null,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>]]);
 recipes.addShaped(<galacticraftplanets:venus:2> * 3, [[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>],[<contenttweaker:solar_essence>,<liquid:lava> * 1000,<contenttweaker:solar_essence>],[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>]]);
+
+# Adding Ore-Dict to Rockets
+val oreDictEnt2 = <ore:rocket_t2>;
+
+oreDictEnt2.addItems([<galacticraftplanets:rocket_t2>,<galacticraftplanets:rocket_t2:1>,<galacticraftplanets:rocket_t2:2>,<galacticraftplanets:rocket_t2:3>]);
+
+val oreDictEnt3 = <ore:rocket_t3>;
+
+oreDictEnt3.addItems([<galacticraftplanets:rocket_t3>,<galacticraftplanets:rocket_t3:1>,<galacticraftplanets:rocket_t3:2>,<galacticraftplanets:rocket_t3:3>]);
 
 print("ENDING GalacticraftPlanets.zs");
