@@ -6,6 +6,7 @@ import crafttweaker.item.IIngredient;
 import moretweaker.galacticraft.CircuitFabricator;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter as EIOAlloySmelter;
+import crafttweaker.oredict.IOreDictEntry;
 
 print("STARTING GalacticraftCore.zs");
 
@@ -511,5 +512,18 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>
 [<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:infinite_battery>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
 [<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
 [<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
+
+# Adding Ore-Dict to Rockets
+val oreDictEnt = <ore:rocket_t1>
+
+oreDictEnt.addItems([<galacticraftcore:rocket_t1>,<galacticraftcore:rocket_t1:1>,<galacticraftcore:rocket_t1:2>,<galacticraftcore:rocket_t1:3>]);
+
+val oreDictEnt = <ore:rocket_t2>
+
+oreDictEnt.addItems([<galacticraftcore:rocket_t2>,<galacticraftcore:rocket_t2:1>,<galacticraftcore:rocket_t2:2>,<galacticraftcore:rocket_t2:3>]);
+
+val oreDictEnt = <ore:rocket_t3>
+
+oreDictEnt.addItems([<galacticraftcore:rocket_t3>,<galacticraftcore:rocket_t3:1>,<galacticraftcore:rocket_t3:2>,<galacticraftcore:rocket_t3:3>]);
 
 print("ENDING GalacticraftCore.zs");
