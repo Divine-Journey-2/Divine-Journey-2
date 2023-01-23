@@ -11,19 +11,23 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:cloth_legs"
+            "item": "thaumcraft:goggles"
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:plate@2",
-            "amount": 2
+            "item": "minecraft:leather"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thaumcraft:plate@2"
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "thaumcraft:fabric",
-            "amount": 3
+            "amount": 2
         },
         {
             "type": "item",
@@ -34,24 +38,30 @@
             "type": "aspect",
             "io-type": "input",
             "aspect": "metallum",
-            "amount": 30
+            "amount": 15
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "potenia",
-            "amount": 40
+            "amount": 80
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "auram",
-            "amount": 10
+            "amount": 20
         },
         {
             "type": "aspect",
             "io-type": "input",
             "aspect": "praemunio",
+            "amount": 20
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "sensus",
             "amount": 35
         },
         {
