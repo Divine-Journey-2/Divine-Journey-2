@@ -514,15 +514,15 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>
 [<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
 
 # Adding Ore-Dict to Rockets
-val oreDictEnt = <ore:rocket_t1>
+val oreDictEnt = <ore:rocket_t1>;
 
 oreDictEnt.addItems([<galacticraftcore:rocket_t1>,<galacticraftcore:rocket_t1:1>,<galacticraftcore:rocket_t1:2>,<galacticraftcore:rocket_t1:3>]);
 
-val oreDictEnt = <ore:rocket_t2>
+val oreDictEnt = <ore:rocket_t2>;
 
 oreDictEnt.addItems([<galacticraftcore:rocket_t2>,<galacticraftcore:rocket_t2:1>,<galacticraftcore:rocket_t2:2>,<galacticraftcore:rocket_t2:3>]);
 
-val oreDictEnt = <ore:rocket_t3>
+val oreDictEnt = <ore:rocket_t3>;
 
 oreDictEnt.addItems([<galacticraftcore:rocket_t3>,<galacticraftcore:rocket_t3:1>,<galacticraftcore:rocket_t3:2>,<galacticraftcore:rocket_t3:3>]);
 
