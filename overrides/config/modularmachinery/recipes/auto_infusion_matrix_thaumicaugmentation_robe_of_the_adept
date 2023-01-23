@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_chestplate.withTag({color: 11360678})",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation)robe_of_the_adept",
     "recipeTime": 36,
     "requirements": [
         {
@@ -11,7 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:cloth_legs"
+            "item": "thaumcraft:cloth_chestplate"
         },
         {
             "type": "item",
@@ -57,7 +57,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "thaumicaugmentation:thaumium_robes_chestplate.withTag({color: 11360678})"
+            "item": "thaumicaugmentation:thaumium_robes_chestplate",
+            "nbt": {"color": 11360678}
         }
     ]
 }

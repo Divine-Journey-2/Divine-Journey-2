@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation:thaumium_robes_hood.withTag({maskType: 3, color: 11360678})",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_hood_of_the_adept_sipping_fiend",
     "recipeTime": 36,
     "requirements": [
         {
@@ -16,7 +16,8 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumicaugmentation:thaumium_robes_hood.withTag({color: 11360678})"
+            "item": "thaumicaugmentation:thaumium_robes_hood",
+            "nbt": {"color": 11360678}
         },
         {
             "type": "item",
@@ -60,7 +61,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "thaumicaugmentation:thaumicaugmentation:thaumium_robes_hood.withTag({maskType: 3, color: 11360678})"
+            "item": "thaumicaugmentation:thaumicaugmentation:thaumium_robes_hood",
+            "nbt": {"damage":3,"color": 11360678} 
         }
     ]
 }
