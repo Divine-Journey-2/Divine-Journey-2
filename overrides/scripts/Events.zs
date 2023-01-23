@@ -11,6 +11,7 @@ import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import mods.contenttweaker.Commands;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.I18n;
 
@@ -25,11 +26,10 @@ function progressAstral(player as IPlayer, level as int) {
     val data as IData = player.data.divine_journey_2;
 
     val progressingFrom = (!isNull(data) && !isNull(data.astral_level)) ? data.astral_level : -1;
-
     // Only progress them up to the tier once, otherwise it spams the chat.
     // This cannot be done via simply changing the tier in the playerdata because Astral stores its data in its own file
     if (level > progressingFrom) {
-        server.commandManager.executeCommandSilent(server, "/astralsorcery research " + player.name + " " + astralTiers[level]);
+        Commands.call("/astralsorcery research " + player.name + " " + astralTiers[level], player, player.world, false, true);
         player.update({ divine_journey_2: { astral_level: level } });
     }
 }
@@ -109,7 +109,7 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
             if (e.world.isAirBlock(spawnLocation)) {
                 // Sounds aren't accessible via crafttweaker, so we run a command instead
                 // Note that this command is modified from the original - the original is on channel `master` and with a volume of 20
-                server.commandManager.executeCommandSilent(server, "/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1");
+                Commands.call("/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1", e.player, e.player.world, false, true);
                 e.world.setBlockState(<blockstate:divinerpg:ayeraco_spawn>, spawnLocation);
                 removeItemFromHand(e.player, <divinerpg:horde_horn>);
             } else {
