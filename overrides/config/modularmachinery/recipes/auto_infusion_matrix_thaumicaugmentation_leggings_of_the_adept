@@ -11,7 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumcraft:cloth_legs"
+            "item": "thaumcraft:cloth_chest"
         },
         {
             "type": "item",
