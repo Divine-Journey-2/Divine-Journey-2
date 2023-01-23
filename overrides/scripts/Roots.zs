@@ -260,7 +260,7 @@ Rituals.modifyRitual("ritual_germination", [<roots:spirit_herb>, <roots:wildewhe
 Rituals.modifyRitual("ritual_purity", [<roots:baffle_cap_mushroom>, <mysticalworld:aubergine>, <roots:pereskia>, <minecraft:snowball>, <minecraft:milk_bucket>]);
 Rituals.modifyRitual("ritual_frost_lands", [<roots:dewgonia>, <minecraft:snowball>, <minecraft:snow>, <minecraft:ice>, <roots:moonglow_leaf>]);
 Rituals.modifyRitual("ritual_animal_harvest", [<roots:wildewheet>, <minecraft:shears>, <roots:wildroot>, <ore:wool>, <minecraft:wheat_seeds>]);
-Rituals.modifyRitual("ritual_summon_creatures", [<roots:stalicripe>, <minecraft:egg>, <minecraft:rotten_flesh>, <roots:wildroot>, <roots:wildewheet>]);
+Rituals.modifyRitual("ritual_summon_creatures", [<roots:stalicripe>, <minecraft:egg>, <minecraft:rotten_flesh>, <roots:wildwood_log>, <roots:moonglow_seeds>]);
 Rituals.modifyRitual("ritual_wildroot_growth", [<roots:spirit_herb>, <roots:wildroot>, <roots:dewgonia>, <roots:bark_dark_oak>, <minecraft:dye:15>]);
 Rituals.modifyRitual("ritual_overgrowth", [<roots:dewgonia>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <roots:terra_moss>, <minecraft:tallgrass:1>, <ore:rootsBark>]);
 Rituals.modifyRitual("ritual_flower_growth", [<roots:petals>, <roots:pereskia>, <minecraft:dye:15>, <roots:terra_moss>, <minecraft:tallgrass:1>]);
