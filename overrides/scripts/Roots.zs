@@ -260,19 +260,15 @@ Rituals.modifyRitual("ritual_germination", [<roots:spirit_herb>, <roots:wildewhe
 Rituals.modifyRitual("ritual_purity", [<roots:baffle_cap_mushroom>, <mysticalworld:aubergine>, <roots:pereskia>, <minecraft:snowball>, <minecraft:milk_bucket>]);
 Rituals.modifyRitual("ritual_frost_lands", [<roots:dewgonia>, <minecraft:snowball>, <minecraft:snow>, <minecraft:ice>, <roots:moonglow_leaf>]);
 Rituals.modifyRitual("ritual_animal_harvest", [<roots:wildewheet>, <minecraft:shears>, <roots:wildroot>, <ore:wool>, <minecraft:wheat_seeds>]);
-Rituals.modifyRitual("ritual_summon_creatures", [<roots:stalicripe>, <minecraft:egg>, <minecraft:rotten_flesh>, <roots:wildroot>, <roots:wildewheet>]);
+Rituals.modifyRitual("ritual_summon_creatures", [<roots:stalicripe>, <minecraft:egg>, <minecraft:rotten_flesh>, <roots:wildwood_log>, <roots:moonglow_seed>]);
 Rituals.modifyRitual("ritual_wildroot_growth", [<roots:spirit_herb>, <roots:wildroot>, <roots:dewgonia>, <roots:bark_dark_oak>, <minecraft:dye:15>]);
 Rituals.modifyRitual("ritual_overgrowth", [<roots:dewgonia>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <roots:terra_moss>, <minecraft:tallgrass:1>, <ore:rootsBark>]);
 Rituals.modifyRitual("ritual_flower_growth", [<roots:petals>, <roots:pereskia>, <minecraft:dye:15>, <roots:terra_moss>, <minecraft:tallgrass:1>]);
-Rituals.modifyRitual("ritual_transmutation", [<roots:moonglow_leaf>, <roots:fey_leather>, <roots:living_arrow>, <ore:gemAmethyst>, <roots:chiseled_runestone>]);
+Rituals.modifyRitual("ritual_transmutation", [<roots:runestone_trample>, <thermalfoundation:material:894>, <roots:petals>, <totemic:cedar_sapling>, <thermalfoundation:storage:3>]);
 Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry>, <minecraft:redstone>, <minecraft:wooden_hoe>, <minecraft:bowl>]);
-
-# Wildwood Sapling
-Fey.addRecipe("wildwood_sapling_custom", <roots:wildwood_sapling>, [<totemic:cedar_sapling>,<roots:wildroot>,<mysticalworld:antlers>,<roots:wildwood_log>,<roots:wildwood_log>]);
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
-SummonCreatures.addEntity(<entity:natura:imp>, [<natura:nether_thorn_vines>, <contenttweaker:bloodgem_dust>, <betternether:eye_seed>]);
 <natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
 
 # Artificial Scarab Wings

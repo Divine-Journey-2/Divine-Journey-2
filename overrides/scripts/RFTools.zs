@@ -58,6 +58,15 @@ recipes.addShaped(<rftools:storage_module:1>, [[<enderio:item_alloy_ingot:5>,<en
 recipes.removeShaped(<rftools:storage_module:2>, [[null,<*>,null],[<*>,<rftools:storage_module:1>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped(<rftools:storage_module:2>, [[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot:3>,<rftools:storage_module:1>,<enderio:item_alloy_ingot:3>],[<enderio:item_alloy_ingot:5>,<ironchest:iron_chest:2>,<enderio:item_alloy_ingot:5>]]);
 
+# Button Screen Module
+recipes.remove(<rftools:button_module>);
+recipes.addShaped(<rftools:button_module>, [[null,<minecraft:stone_button>,null],[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>],[null,<ore:dyeBlack>,null]]);
+recipes.addShapeless(<rftools:button_module>, [<rftools:button_module>]);
+
+# Elevator Button Screen Module
+recipes.remove(<rftools:elevator_button_module>);
+recipes.addShaped(<rftools:elevator_button_module>, [[<minecraft:stone_button>,<minecraft:stone_button>,<minecraft:stone_button>],[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>],[null,<ore:dyeBlack>,null]]);
+
 # Remote Storage Module
 recipes.remove(<rftools:storage_module:6>);
 recipes.addShaped(<rftools:storage_module:6>, [[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot:5>],[<enderio:item_alloy_ingot>,<quantumflux:craftingpiece:4>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot:5>,<enderio:item_alloy_ingot>,<enderio:item_alloy_ingot:5>]]);

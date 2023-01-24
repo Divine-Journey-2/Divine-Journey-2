@@ -9,6 +9,14 @@ recipes.remove(<agricraft:crop_sticks>);
 for stick in <ore:stickWood>.items {
 	mods.thermalexpansion.Transposer.addFillRecipe(<agricraft:crop_sticks>, stick * 4, <liquid:growth_infusion_liquid> * 10, 1000);
 }
+<agricraft:crop_sticks>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Do NOT use these with the Ender IO"));
+<agricraft:crop_sticks>.addTooltip(format.white("Farming Station. It will always CRASH your game."));
+<agricraft:crop_sticks>.addTooltip(format.white(format.italic("<Press Shift for alternatives>")));
+<agricraft:crop_sticks>.addShiftTooltip(format.white("Instead, use either a Botania Drum of the Wild /"));
+<agricraft:crop_sticks>.addShiftTooltip(format.white(" / Horn of the Wild, an Actually Additions Farmer,"));
+<agricraft:crop_sticks>.addShiftTooltip(format.white("or an Industrial Foregoing Plant Interactor;"));
+<agricraft:crop_sticks>.addShiftTooltip(format.white("along with a Ranged Collector or an Absorption Hopper."));
+
 
 # Seed Analyzer
 recipes.remove(<agricraft:seed_analyzer>);
