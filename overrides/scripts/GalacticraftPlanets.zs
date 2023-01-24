@@ -272,4 +272,8 @@ recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering
 recipes.addShaped(<galacticraftplanets:basic_item_venus:4> * 3, [[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,null,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>]]);
 recipes.addShaped(<galacticraftplanets:venus:2> * 3, [[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>],[<contenttweaker:solar_essence>,<liquid:lava> * 1000,<contenttweaker:solar_essence>],[<ore:netherrack>,<contenttweaker:solar_essence>,<ore:netherrack>]]);
 
+# Adding Ore-Dict to Rockets
+<ore:rocket_t2>.addItems([<galacticraftplanets:rocket_t2>,<galacticraftplanets:rocket_t2:1>,<galacticraftplanets:rocket_t2:2>,<galacticraftplanets:rocket_t2:3>])
+<ore:rocket_t3>.addItems([<galacticraftplanets:rocket_t3>,<galacticraftplanets:rocket_t3:1>,<galacticraftplanets:rocket_t3:2>,<galacticraftplanets:rocket_t3:3>]);
+
 print("ENDING GalacticraftPlanets.zs");

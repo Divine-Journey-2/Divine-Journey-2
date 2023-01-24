@@ -512,4 +512,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>
 [<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
 [<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
 
+# Adding Ore-Dict to Rockets
+<ore:rocket_t1>.addItems([<galacticraftcore:rocket_t1>,<galacticraftcore:rocket_t1:1>,<galacticraftcore:rocket_t1:2>,<galacticraftcore:rocket_t1:3>]);
+
 print("ENDING GalacticraftCore.zs");
