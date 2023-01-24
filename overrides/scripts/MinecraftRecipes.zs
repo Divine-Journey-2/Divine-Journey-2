@@ -237,9 +237,6 @@ mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:1> * 4, <
 # Beetroot as Seed drop
 vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);
 
-# Spawn Villager
-Distillery.addRecipe([<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:villager"}})], [<minecraft:egg>,<bewitchment:heaven_extract>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})]);
-
 # Firework Star (basic)
 recipes.addShapeless(<minecraft:firework_charge>, [<minecraft:fire_charge>,<minecraft:gunpowder>]);
 

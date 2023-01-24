@@ -17,7 +17,7 @@ recipes.addShapedMirrored(<betterbuilderswands:wanddiamond>, [[null,null,<quantu
 <betterbuilderswands:wanddiamond>.maxDamage = 8000;
 
 # Unbreakable Wand
-recipes.remove(<betterbuilderswands:wandunbreakable>);
-recipes.addShapedMirrored(<betterbuilderswands:wandunbreakable>, [[null,<enderio:item_alloy_endergy_ingot:1>,<extrautils2:decorativesolid:8>],[null,<betterbuilderswands:wanddiamond>,<enderio:item_alloy_endergy_ingot:1>],[<enderio:item_alloy_endergy_ingot:1>,null,null]]);
+recipes.remove(<betterbuilderswands:wandunbreakable:12>);
+recipes.addShapedMirrored(<betterbuilderswands:wandunbreakable:12>, [[null,<enderio:item_alloy_endergy_ingot:1>,<extrautils2:decorativesolid:8>],[null,<betterbuilderswands:wanddiamond>,<enderio:item_alloy_endergy_ingot:1>],[<enderio:item_alloy_endergy_ingot:1>,null,null]]);
 
 print("ENDING BetterBuildersWands.zs");

@@ -55,6 +55,9 @@ addInteraction(<thaumcraft:salis_mundus>, <minecraft:bookshelf>, <thaumcraft:tha
 addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
 
+// Research Table
+addInteraction(<thaumcraft:scribing_tools>, <thaumcraft:table_wood>*2, <thaumcraft:research_table>);
+
 // Botania Phantom Ink makes Spark not (well, less) visible
 addInteraction(<botania:phantomink>.withTag({display:{Lore:["§r§bNot consumed."]}}), <botania:spark>, <botania:spark>.withTag({display:{Lore:["§r§bSignificantly less visible."]}}));
 
@@ -125,5 +128,20 @@ addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions
 
 # Botania Ender Air
 addInteraction(<minecraft:glass_bottle>, <minecraft:end_stone>, <botania:manaresource:15>);
+
+# Milk from Cow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"minecraft:cow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"minecraft:cow"}), <minecraft:milk_bucket>);
+
+# Antimatter from Anticow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"abyssalcraft:anticow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"abyssalcraft:anticow"}), <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}));
+
+# Aechor from Aechor Plant
+addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
+
+# Botania Double-tall Flowers
+for x in 0 to 8 {
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x), <botania:doubleflower1>.withDamage(x));
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
+}
 
 print("ENDING ActivateBlockJEI.zs");
