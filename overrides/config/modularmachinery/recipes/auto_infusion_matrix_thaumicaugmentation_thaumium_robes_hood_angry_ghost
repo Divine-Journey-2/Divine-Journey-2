@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_thaumicaugmentation_hood_of_the_adept_sipping_fiend",
+    "registryName": "auto_infusion_matrix_thaumicaugmentation_thaumium_robes_hood_ghost",
     "recipeTime": 36,
     "requirements": [
         {
@@ -11,13 +11,13 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "ore:dyeBlack"
+            "item": "thaumicaugmentation:thaumium_robes_hood",
+            "nbt": {"color": 11360678}
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "thaumicaugmentation:thaumium_robes_hood",
-            "nbt": {"color": 11360678}
+            "item": "ore:dyeWhite"
         },
         {
             "type": "item",
@@ -27,7 +27,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:ghast_tear"
+            "item": "minecraft:skull@1"
         },
         {
             "type": "item",
@@ -38,18 +38,18 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:milk_bucket"
+            "item": "minecraft:poisonous_potato"
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "exanimis",
+            "aspect": "mortuus",
             "amount": 80
         },
         {
             "type": "aspect",
             "io-type": "input",
-            "aspect": "victus",
+            "aspect": "perditio",
             "amount": 80
         },
         {
@@ -62,7 +62,7 @@
             "type": "item",
             "io-type": "output",
             "item": "thaumicaugmentation:thaumicaugmentation:thaumium_robes_hood",
-            "nbt": {"damage":3,"color": 11360678} 
+            "nbt": {"damage":2,"color": 11360678} 
         }
     ]
 }
