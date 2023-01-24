@@ -129,4 +129,19 @@ addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions
 # Botania Ender Air
 addInteraction(<minecraft:glass_bottle>, <minecraft:end_stone>, <botania:manaresource:15>);
 
+# Milk from Cow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"minecraft:cow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"minecraft:cow"}), <minecraft:milk_bucket>);
+
+# Antimatter from Anticow
+addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"abyssalcraft:anticow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"abyssalcraft:anticow"}), <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}));
+
+# Aechor from Aechor Plant
+addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
+
+# Botania Double-tall Flowers
+for x in 0 to 8 {
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x), <botania:doubleflower1>.withDamage(x));
+    addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
+}
+
 print("ENDING ActivateBlockJEI.zs");
