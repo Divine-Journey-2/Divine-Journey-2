@@ -119,7 +119,6 @@ recipes.addShaped(<thermalfoundation:material:894>, [[null,<mysticalagriculture:
 # Resonant Clathrate from Mystical Agriculture Essences
 recipes.addShaped(<thermalfoundation:material:895>, [[null,<mysticalagriculture:enderium_essence>,null],[<mysticalagriculture:enderium_essence>,<minecraft:flint>,<mysticalagriculture:enderium_essence>],[null,<mysticalagriculture:enderium_essence>,null]]);
 
-
 # Destabilized Clathrate <-> AC Redstone Shard conversion fix
 <ore:crystalRedstone>.remove(<thermalfoundation:material:893>);
 
