@@ -13,6 +13,9 @@ print("STARTING PlusTiC.zs");
 mods.immersiveengineering.ArcFurnace.addRecipe(<plustic:osgloglasingot>, <ore:ingotOsmium>, null, 200, 256, [<mekanism:ingot>, <mekanism:ingot:3>]);
 mods.enderio.AlloySmelter.addRecipe(<plustic:osgloglasingot>, [<ore:ingotOsmium>, <mekanism:ingot>, <mekanism:ingot:3>], 20000);
 
+# Osgloglas Mystical Agriculture Recipe
+recipes.addShaped(<plustic:osgloglasingot>, [[<mysticalagriculture:glowstone_ingot_essence>,<mysticalagriculture:glowstone_ingot_essence>,<mysticalagriculture:glowstone_ingot_essence>],[<mysticalagriculture:refined_obsidian_essence>,<mysticalagriculture:refined_obsidian_essence>,<mysticalagriculture:refined_obsidian_essence>],[<mysticalagriculture:osmium_essence>,<mysticalagriculture:osmium_essence>,<mysticalagriculture:osmium_essence>]]);
+
 # Osmiridium in the Arc Furnace, EnderIO Alloy Smelter, Immersive Alloy Smelter, Induction Smelter
 mods.immersiveengineering.ArcFurnace.addRecipe(<plustic:osmiridiumingot> * 2, <mekanism:ingot:1>, null, 80, 200, [<thermalfoundation:material:135>], "Alloying");
 EIOAlloySmelter.addRecipe(<plustic:osmiridiumingot> * 2, [<mekanism:ingot:1>, <thermalfoundation:material:135>], 4000);
