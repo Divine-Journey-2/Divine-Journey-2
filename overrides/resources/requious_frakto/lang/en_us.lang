@@ -4,3 +4,5 @@ requious.jei.recipe.metamorphic=Marimorphosis Conversion
 requious.jei.recipe.charge=Charge Item
 requious.jei.recipe.configure=Configure Block
 requious.jei.recipe.terra_plate=Terrestrial Agglomeration Plate
+requious.jei.recipe.roots_entity_spawning=Roots Entity Summoning Helper
+requious.jei.recipe.roots_block_conversion=Roots Block Conversion Helper
