@@ -46,7 +46,6 @@ function displayConversion(input as IIngredient, catalyst as IIngredient, output
 displayConversion(<minecraft:redstone_torch>, <minecraft:dirt:2>, <minecraft:red_mushroom>);
 displayConversion(<minecraft:carpet>, <minecraft:stone:3>, <minecraft:snow_layer>);
 displayConversion(<minecraft:lever>, <minecraft:dirt:2>, <minecraft:brown_mushroom>);
-displayConversion(<minecraft:leaves:2>, null, <minecraft:leaves:3>);
 displayConversion(<minecraft:pumpkin>, <minecraft:water_bucket>, <minecraft:melon_block>);
 displayConversion(<minecraft:dye:3>, null, <minecraft:carrot>);
 displayConversion(<minecraft:deadbush>, null, <minecraft:dye:3> * 3);
@@ -228,14 +227,14 @@ Transmutation.addStateToStateRecipe("bewitchment_elder", PropertyPredicate.creat
 displayConversion(<minecraft:sapling:2>, <bewitchment:coquina>, <bewitchment:elder_sapling>);
 
 // Juniper Sapling
-Transmutation.addStateToStateRecipe("bewitchment_juniper", PropertyPredicate.create(<blockstate:minecraft:sapling:type=aracia>, "type"), <blockstate:bewitchment:juniper_sapling>, BlockStateAbove.create(StatePredicate.create(<blockstate:bewitchment:scorned_bricks>)));
+Transmutation.addStateToStateRecipe("bewitchment_juniper", PropertyPredicate.create(<blockstate:minecraft:sapling:type=acacia>, "type"), <blockstate:bewitchment:juniper_sapling>, BlockStateAbove.create(StatePredicate.create(<blockstate:bewitchment:scorned_bricks>)));
 displayConversion(<minecraft:sapling:4>, <bewitchment:scorned_bricks>, <bewitchment:juniper_sapling>);
 
 
 // Thaumcraft Saplings
 
 // Greatwood Sapling
-Transmutation.addStateToStateRecipe("bewitchment_cypress", PropertyPredicate.create(<blockstate:minecraft:sapling:type=dark_oak>, "type"), <blockstate:thaumcraft:sapling_greatwood>, BlockStateAbove.create(StatePredicate.create(<blockstate:contenttweaker:crystalline_brown_slime_block>)));
+Transmutation.addStateToStateRecipe("thaumcraft_greatwood", PropertyPredicate.create(<blockstate:minecraft:sapling:type=dark_oak>, "type"), <blockstate:thaumcraft:sapling_greatwood>, BlockStateAbove.create(StatePredicate.create(<blockstate:contenttweaker:crystalline_brown_slime_block>)));
 displayConversion(<minecraft:sapling:5>, <contenttweaker:crystalline_brown_slime_block>, <thaumcraft:sapling_greatwood>);
 
 // Silverwood Sapling
