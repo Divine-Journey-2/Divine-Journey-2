@@ -65,7 +65,6 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | More Overlays | moreoverlays-1.15.1-mc1.12.2 |
 | Mouse Tweaks | MouseTweaks-2.10-mc1.12.2 |
 | Neat | Neat 1.4-17 |
-| No Night Vision Flash | NoNVFlash-1.12.2-1.2.0.3-universal |
 | Oauth | oauth-1.06.4 |
 | Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
 | AutoRun | simpleautorun-1.12.2-1.2.0 |
