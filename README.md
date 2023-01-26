@@ -65,11 +65,9 @@ https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/depende
 | More Overlays | moreoverlays-1.15.1-mc1.12.2 |
 | Mouse Tweaks | MouseTweaks-2.10-mc1.12.2 |
 | Neat | Neat 1.4-17 |
-| No Night Vision Flash | NoNVFlash-1.12.2-1.2.0.3-universal |
-| No Recipe Book | noRecipeBook_v1.2.2formc1.12.2 |
 | Oauth | oauth-1.06.4 |
 | Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
-| AutoRun | simpleautorun-1.12.2-1.2.0 | 
+| AutoRun | simpleautorun-1.12.2-1.2.0 |
 | Thaumic JEI | ThaumicJEI-1.12.2-1.6.0.27 |
 | Tips | Tips-1.12.2-1.0.9 |
 | Tip The Scales | TipTheScales-1.12.2-1.0.4 |
