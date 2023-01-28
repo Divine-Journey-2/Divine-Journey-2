@@ -444,5 +444,8 @@ recipes.addShapedMirrored(<appliedenergistics2:part:341>, [[<contenttweaker:esti
 recipes.remove(<appliedenergistics2:part:222>);
 recipes.addShaped(<appliedenergistics2:part:222>, [[null,<contenttweaker:estimation_processor>,null],[<mekanism:dictionary>,<appliedenergistics2:part:220>,<mekanism:dictionary>],[null,<contenttweaker:estimation_processor>,null]]);
 
+# Not Enough Energistics Pattern Interface(WIP)
+recipes.remove(<neenergistics:pattern_interface>);
+
 
 print("ENDING AppliedEnergistics2.zs");
