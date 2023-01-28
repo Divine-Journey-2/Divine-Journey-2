@@ -15,6 +15,7 @@ recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<
 recipes.remove(<quantumflux:craftingpiece:3>);
 recipes.addShapedMirrored(<quantumflux:craftingpiece:3>, [[null,<thermalfoundation:material:295>,<thermalfoundation:material:295>],[<thermalfoundation:material:167>,<thermalfoundation:material:295>,null],[<thermalfoundation:material:167>,null,null]]);
 mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <quantumflux:craftingpiece:3>);
+<quantumflux:craftingpiece:3>.addTooltip("Dropped from Endermen.");
 
 # Amplification Crystal
 recipes.remove(<quantumflux:craftingpiece:2>);
