@@ -233,6 +233,7 @@ recipes.addShaped(<rftools:orphaning_card>, [[null,<enderio:item_alloy_ingot>,nu
 # Powercell Card
 recipes.remove(<rftools:powercell_card>);
 recipes.addShaped(<rftools:powercell_card>, [[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>],[<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>],[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>]]);
+recipes.addShapeless(<rftools:powercell_card>, [<rftools:powercell_card>]);
 
 # Endergenic Generator
 recipes.remove(<rftools:endergenic>);
