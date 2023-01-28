@@ -51,7 +51,6 @@
             "x": -1,
             "y": 0,
             "z": 2,
-            "nbt": {"Items":[{"Slot":"0b","id":"tconstruct:cast_custom","Count":"1b","Damage":"0s"}]},
             "elements": [
                 "tconstruct:casting@0"
             ]
@@ -87,7 +86,6 @@
             "x": 1,
             "y": 0,
             "z": 2,
-            "nbt": {"Items":[{"Slot":"0b","id":"tconstruct:cast_custom","Count":"1b","Damage":"0s"}]},
             "elements": [
                 "tconstruct:casting@0"
             ]
@@ -357,7 +355,6 @@
             "x": 0,
             "y": 0,
             "z": 1,
-            "nbt": {"Items":[{"Slot":"0b","id":"tconstruct:cast_custom","Count":"1b","Damage":"0s"}]},
             "elements": [
                 "tconstruct:casting@0"
             ]
@@ -415,7 +412,6 @@
             "x": 0,
             "y": 0,
             "z": 3,
-            "nbt": {"Items":[{"Slot":"0b","id":"tconstruct:cast_custom","Count":"1b","Damage":"0s"}]},
             "elements": [
                 "tconstruct:casting@0"
             ]
