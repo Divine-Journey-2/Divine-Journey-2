@@ -626,4 +626,12 @@ DJ2AddonsHellFireForge.setWorldWillTransferRate(10);
 # Crafting with all Will types
 DJ2AddonsHellFireForge.setCraftWithAllWillTypes(true);
 
+# Blood Orb Clearing Recipes
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})]);
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"})]);
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"})]);
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"})]);
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"})]);
+recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"})]);
+
 print("ENDING BloodMagic.zs");
