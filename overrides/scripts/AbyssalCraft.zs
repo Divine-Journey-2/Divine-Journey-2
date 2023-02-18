@@ -664,4 +664,21 @@ recipes.removeShapeless(<minecraft:fire_charge> *3, [<minecraft:gunpowder>,<mine
 # SAG Mill shouldn't produce Crystallized Redstone
 <ore:crystalRedstone>.remove(<abyssalcraft:crystal:11>);
 
+# Necronomicon Ownership Clearing recipes
+val toClear as IItemStack[] = [
+    <abyssalcraft:necronomicon>,
+    <abyssalcraft:necronomicon_cor>,
+    <abyssalcraft:necronomicon_dre>,
+    <abyssalcraft:necronomicon_omt>,
+    <abyssalcraft:abyssalnomicon>,
+] as IItemStack[];
+
+for i, item in toClear {
+    item.addTooltip("Gain ownership of the book via shapeless crafting.");
+    recipes.addHiddenShapeless("necronomicon_ownership_removal_" ~ i, item, [item.marked("target").noReturn()], function(out, ins, cInfo) {
+        var tag = ins.target.tag - "owner";
+        return tag == {} ? out : out.withTag(tag);
+    }, null);
+}
+
 print("ENDING AbyssalCraft.zs");
