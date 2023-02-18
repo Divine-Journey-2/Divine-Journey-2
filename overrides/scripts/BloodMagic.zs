@@ -626,12 +626,58 @@ DJ2AddonsHellFireForge.setWorldWillTransferRate(10);
 # Crafting with all Will types
 DJ2AddonsHellFireForge.setCraftWithAllWillTypes(true);
 
-# Blood Orb Clearing Recipes
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})]);
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"})]);
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"})]);
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"})]);
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"})]);
-recipes.addShapeless(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"})>, [<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"})]);
+# Binding Clearing Recipes
+val toClear as IItemStack[] = [
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}),
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"}),
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}),
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}),
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}),
+    <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:transcendent"}),
+    <bloodmagic:inscription_tool>,
+    <bloodmagic:inscription_tool:1>,
+    <bloodmagic:inscription_tool:2>,
+    <bloodmagic:inscription_tool:3>,
+    <bloodmagic:inscription_tool:4>,
+    <bloodmagic:inscription_tool:5>,
+    <bloodmagic:sigil_divination>,
+    <bloodmagic:sigil_air>,
+    <bloodmagic:sigil_water>,
+    <bloodmagic:sigil_lava>,
+    <bloodmagic:sigil_void>,
+    <bloodmagic:sigil_green_grove>,
+    <bloodmagic:sigil_blood_light>,
+    <bloodmagic:sigil_elemental_affinity>,
+    <bloodmagic:sigil_magnetism>,
+    <bloodmagic:sigil_suppression>,
+    <bloodmagic:sigil_haste>,
+    <bloodmagic:sigil_fast_miner>,
+    <bloodmagic:sigil_seer>,
+    <bloodmagic:sigil_phantom_bridge>,
+    <bloodmagic:sigil_compression>,
+    <bloodmagic:sigil_ender_severance>,
+    <bloodmagic:sigil_holding>,
+    <bloodmagic:sigil_claw>,
+    <bloodmagic:sigil_bounce>,
+    <bloodmagic:sigil_frost>,
+    <bloodmagic:sigil_transposition>,
+    <bloodmagic:sigil_teleposition>,
+    <bloodmagic:sigil_whirlwind>,
+    <bloodmagic:lava_crystal>,
+    <bloodmagic:activation_crystal>,
+    <bloodmagic:activation_crystal:1>,
+    <bloodmagic:activation_crystal:2>,
+    <bloodmagic:bound_sword>,
+    <bloodmagic:bound_pickaxe>,
+    <bloodmagic:bound_axe>,
+    <bloodmagic:bound_shovel>,
+] as IItemStack[];
+
+for i, item in toClear {
+    recipes.addHiddenShapeless("blood_magic_removal_" ~ i, item, [item.marked("target").noReturn()], function(out, ins, cInfo) {
+        var tag = ins.target.tag - "binding";
+        return tag == {} ? out : out.withTag(tag);
+    }, null);
+}
 
 print("ENDING BloodMagic.zs");
