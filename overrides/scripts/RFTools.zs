@@ -234,6 +234,9 @@ recipes.addShaped(<rftools:orphaning_card>, [[null,<enderio:item_alloy_ingot>,nu
 recipes.remove(<rftools:powercell_card>);
 recipes.addShaped(<rftools:powercell_card>, [[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>],[<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>],[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>]]);
 
+# Shapeless Hidden Craft for Powercell Card 
+recipes.addHiddenShapeless(<rftools:powercell_card>, [<rftools:powercell_card>]);
+
 # Endergenic Generator
 recipes.remove(<rftools:endergenic>);
 recipes.addShaped(<rftools:endergenic>, [[<actuallyadditions:block_misc:6>,<thermalfoundation:material:295>,<actuallyadditions:block_misc:6>],[<thermalfoundation:material:295>,<rftools:machine_frame>,<thermalfoundation:material:295>],[<actuallyadditions:block_misc:6>,<thermalfoundation:material:295>,<actuallyadditions:block_misc:6>]]);

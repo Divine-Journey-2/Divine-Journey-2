@@ -196,7 +196,7 @@ WitchesOven.removeRecipe(<minecraft:chorus_fruit_popped>);
 # Hoof
 <bewitchment:hoof>.addTooltip(format.white("Can be obtained from Pigs, Sheep, Cows, Horses, Zombie Pigmen,"));
 <bewitchment:hoof>.addTooltip(format.white("Mooshrooms, Llamas, Donkeys & Mules when slain with an Athame,"));
-<bewitchment:hoof>.addTooltip(format.white("Or simply from a Cursed Earth mob farm."));
+<bewitchment:hoof>.addTooltip(format.white("Or simply from a Cursed Earth mob farm in the Nether."));
 
 # Spectral Dust
 <bewitchment:spectral_dust>.addTooltip(format.white("Dropped by all Undead mobs when slain with an Athame."));
