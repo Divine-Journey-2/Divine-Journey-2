@@ -98,6 +98,12 @@
             "io-type": "output",
             "item": "natura:materials@6",
             "amount": 64
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "meat",
+            "amount": 8000
         }
     ]
 }

@@ -1,0 +1,55 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_slime",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:slimebottle",
+            "amount": 1,
+            "chance": 0
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 500
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:slime_ball",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "industrialforegoing:pink_slime",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "aether_legacy:swetty_ball",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "tconstruct:edible@1",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "tconstruct:edible@2",
+            "amount": 8
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "tconstruct:edible@4",
+            "amount": 8
+        }
+    ]
+}
