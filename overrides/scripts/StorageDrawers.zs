@@ -57,6 +57,20 @@ mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1
 # Remove recipes for all Storage Drawers Extras
 recipes.removeByMod("storagedrawersextra");
 
+for x in [
+    <storagedrawersextra:extra_trim_3>,
+    <storagedrawersextra:extra_trim_0>,
+    <storagedrawersextra:extra_drawers>,
+    <storagedrawersextra:extra_drawers:1>,
+    <storagedrawersextra:extra_drawers:2>,
+    <storagedrawersextra:extra_drawers:3>,
+    <storagedrawersextra:extra_drawers:4>,
+] as IItemStack[] {
+    x.addTooltip("Storage Drawers Extras is planned to be §4§lremoved§r in an upcoming update! (Likely ~2.22.0)");
+    x.addTooltip("Use the §6\"Hand Framing Tool\"§r to convert these into Framed Drawers to prevent anything they contain from being deleted!");
+}
+
+
 # Drawer Tooltips
 function getNested(inTag as IData, keys as string[], alt as IData) as IData {
     var tag = inTag;
