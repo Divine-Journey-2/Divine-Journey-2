@@ -118,14 +118,14 @@ function addLogRecipes(output as IItemStack, sapling_input as IIngredient)
 }
 
 addLogRecipes(<minecraft:log>, <minecraft:sapling>);
-addLogRecipes(minecraft:log2:1>, <minecraft:sapling:5>);
-addLogRecipes(minecraft:log:2>, <minecraft:sapling:2>);
-addLogRecipes(minecraft:log:1>, <minecraft:sapling:1>);
-addLogRecipes(minecraft:log2>, <minecraft:sapling:4>);
-addLogRecipes(minecraft:log:3>, <minecraft:sapling:3>);
-addLogRecipes(thaumcraft:log_greatwood>, <thaumcraft:sapling_greatwood>);
-addLogRecipes(thaumcraft:log_silverwood>, <thaumcraft:sapling_silverwood>);
-addLogRecipes(totemic:cedar_log>, <totemic:cedar_sapling>);
+addLogRecipes(<minecraft:log2:1>, <minecraft:sapling:5>);
+addLogRecipes(<minecraft:log:2>, <minecraft:sapling:2>);
+addLogRecipes(<minecraft:log:1>, <minecraft:sapling:1>);
+addLogRecipes(<minecraft:log2>, <minecraft:sapling:4>);
+addLogRecipes(<minecraft:log:3>, <minecraft:sapling:3>);
+addLogRecipes(<thaumcraft:log_greatwood>, <thaumcraft:sapling_greatwood>);
+addLogRecipes(<thaumcraft:log_silverwood>, <thaumcraft:sapling_silverwood>);
+addLogRecipes(<totemic:cedar_log>, <totemic:cedar_sapling>);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
