@@ -61,6 +61,7 @@
       <entity name="minecraft:zombie_horse"        costMultiplier="2.0" disabled="false"/> <!-- Zombie Horse -->
       <entity name="minecraft:zombie_pigman"       costMultiplier="5.0" disabled="false"/> <!-- Zombie Pigman -->
       <entity name="minecraft:zombie_villager"     costMultiplier="2.5" disabled="false"/> <!-- Zombie Villager -->
+      <entity name="thaumicaugmentation:shield_focus" soulvial="false"/> <!-- Void Shield -->
     </spawning>
   </recipe>
 
