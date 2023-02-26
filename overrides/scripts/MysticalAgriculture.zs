@@ -97,7 +97,7 @@ recipes.addShaped(<bewitchment:dragons_blood_sapling> * 4, [[null,<mysticalagric
 
 recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:redstone>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<thaumcraft:sapling_silverwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<thaumcraft:quicksilver>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:sapling:2>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:sapling:5>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
 # Removing Mystical Agriculture Log Recipes
 for L in [
@@ -107,6 +107,7 @@ for L in [
     <minecraft:log:1>,
 	<minecraft:log2>,
 	<minecraft:log:3>,
+	<integrateddynamics:menril_log>,
 ] as IItemStack[] {
     recipes.remove(L);
 }
@@ -126,6 +127,7 @@ addLogRecipes(<minecraft:log:3>, <minecraft:sapling:3>);
 addLogRecipes(<thaumcraft:log_greatwood>, <thaumcraft:sapling_greatwood>);
 addLogRecipes(<thaumcraft:log_silverwood>, <thaumcraft:sapling_silverwood>);
 addLogRecipes(<totemic:cedar_log>, <totemic:cedar_sapling>);
+addLogRecipes(<integrateddynamics:menril_log>, <integrateddynamics:menril_sapling>);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
