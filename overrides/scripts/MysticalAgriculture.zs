@@ -99,11 +99,12 @@ recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_
 
 # Removing Mystical Agriculture Log Recipes
 for L in [
-    <minecraft:oak_log>,
-    <minecraft:dark_oak_log,
-    <minecraft:birch:log>,
-    <minecraft:spruce_log>,
-	<minecraft:acacia_log>,
+    <minecraft:log>,
+    <minecraft:log2:1,
+    <minecraft:log:2>,
+    <minecraft:log:1>,
+	<minecraft:log2>,
+	<minecraft:log:3>,
 ] as IItemStack[] {
     recipes.remove(L);
 }
@@ -111,17 +112,17 @@ for L in [
 # Adding Mystical Agriculture Recipes for all Logs
 function addLogRecipes(output as IItemStack, sapling_input as IIngredient)
 {
-	recipes.addShaped(output*16, [input_seed, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
+	recipes.addShaped(output*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
 }
 
-addLogRecipes(<minecraft:oak_log>, <minecraft:oak_sapling>);
-addLogRecipes(minecraft:dark_oak_log>, <minecraft:dark_oak_sapling>);
-addLogRecipes(minecraft:birch_log>, <minecraft:birch_sapling>);
-addLogRecipes(minecraft:spruce_log>, <minecraft:spruce_sapling>);
-addLogRecipes(minecraft:acacia_log>, <minecraft:acacia_sapling>);
-addLogRecipes(minecraft:oak_log>, <minecraft:oak_sapling>);
-addLogRecipes(thaumcraft:log_greatwood>, <thaumcraft:greatwood_sapling>);
-addLogRecipes(thaumcraft:log_silverwood>, <thaumcraft:silverwood_sapling>);
+addLogRecipes(<minecraft:log>, <minecraft:sapling>);
+addLogRecipes(minecraft:log2:1>, <minecraft:sapling:5>);
+addLogRecipes(minecraft:log:2>, <minecraft:sapling:2>);
+addLogRecipes(minecraft:log:1>, <minecraft:sapling:1>);
+addLogRecipes(minecraft:log2>, <minecraft:sapling:4>);
+addLogRecipes(minecraft:log:3>, <minecraft:sapling:3>);
+addLogRecipes(thaumcraft:log_greatwood>, <thaumcraft:sapling_greatwood>);
+addLogRecipes(thaumcraft:log_silverwood>, <thaumcraft:sapling_silverwood>);
 addLogRecipes(totemic:cedar_log>, <totemic:cedar_sapling>);
 
 # Water Seeds
