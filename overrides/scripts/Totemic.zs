@@ -59,7 +59,4 @@ recipes.addShaped(<totemic:medicine_bag>.withTag({charge: -1}), [[<mysticalagric
 # Creative Ceremony Cheat
 recipes.addShapedMirrored(<totemic:ceremony_cheat>, [[<contenttweaker:taste_the_rainbow>,<contenttweaker:taste_the_rainbow>,<totemic:medicine_bag>.withTag({charge: -1})],[null,<totemic:totemic_staff>,<contenttweaker:taste_the_rainbow>],[<alchemistry:ingot:72>,null,<contenttweaker:taste_the_rainbow>]]);
 
-# Red Cedar Log Mystical Agriculture Recipe
-recipes.addShaped(<totemic:cedar_log>*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<minecraft:redstone>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
-
 print("ENDING Totemic.zs");

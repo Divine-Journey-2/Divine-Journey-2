@@ -95,6 +95,35 @@ recipes.addShaped(<bewitchment:juniper_sapling> * 4, [[null,<mysticalagriculture
 recipes.addShaped(<bewitchment:cypress_sapling> * 4, [[<mysticalagriculture:wood_essence>,null,<mysticalagriculture:cold_iron_essence>],[null,<mysticalagriculture:nature_essence>,null],[<mysticalagriculture:cold_iron_essence>,null,<mysticalagriculture:wood_essence>]]);
 recipes.addShaped(<bewitchment:dragons_blood_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:nature_essence>,<mysticalagriculture:cold_iron_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
+recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:redstone>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+
+# Removing Mystical Agriculture Log Recipes
+for L in [
+    <minecraft:oak_log>,
+    <minecraft:dark_oak_log,
+    <minecraft:birch:log>,
+    <minecraft:spruce_log>,
+	<minecraft:acacia_log>,
+] as IItemStack[] {
+    recipes.remove(L);
+}
+
+# Adding Mystical Agriculture Recipes for all Logs
+function addLogRecipes(output as IItemStack, sapling_input as IIngredient)
+{
+	recipes.addShaped(output*16, [input_seed, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
+}
+
+addLogRecipes(<minecraft:oak_log>, <minecraft:oak_sapling>);
+addLogRecipes(minecraft:dark_oak_log>, <minecraft:dark_oak_sapling>);
+addLogRecipes(minecraft:birch_log>, <minecraft:birch_sapling>);
+addLogRecipes(minecraft:spruce_log>, <minecraft:spruce_sapling>);
+addLogRecipes(minecraft:acacia_log>, <minecraft:acacia_sapling>);
+addLogRecipes(minecraft:oak_log>, <minecraft:oak_sapling>);
+addLogRecipes(thaumcraft:log_greatwood>, <thaumcraft:greatwood_sapling>);
+addLogRecipes(thaumcraft:log_silverwood>, <thaumcraft:silverwood_sapling>);
+addLogRecipes(totemic:cedar_log>, <totemic:cedar_sapling>);
+
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
 mods.thermalexpansion.Transposer.addFillRecipe(<mysticalagriculture:water_seeds>, <mysticalagriculture:ice_seeds>, <liquid:water> * 10000, 8000);

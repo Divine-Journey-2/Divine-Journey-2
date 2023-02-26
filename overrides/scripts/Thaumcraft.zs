@@ -655,8 +655,4 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeHelm", "VOIDROBEARMO
 # Brass Block -> Alchemical Brass Block
 <thaumcraft:metal_brass>.displayName = "Alchemical Brass Block";
 
-# Greatwood and Silverwood from Mystical Agriculture Essences
-recipes.addShaped(<thaumcraft:log_greatwood>*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<minecraft:dark_oak_sapling>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
-recipes.addShaped(<thaumcraft:log_silverwood>*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:quicksilver_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
-
 print("ENDING Thaumcraft.zs");
