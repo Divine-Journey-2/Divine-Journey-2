@@ -102,7 +102,7 @@ recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagricultur
 # Removing Mystical Agriculture Log Recipes
 for L in [
     <minecraft:log>,
-    <minecraft:log2:1,
+    <minecraft:log2:1>,
     <minecraft:log:2>,
     <minecraft:log:1>,
 	<minecraft:log2>,
