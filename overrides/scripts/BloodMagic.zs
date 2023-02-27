@@ -163,12 +163,15 @@ function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, 
 
 # Speed Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:1>, <actuallyadditions:item_drill_upgrade_speed_iii>, <bloodmagic:slate:1> * 2);
+<bloodmagic:blood_rune:1>.addTooltip("Increases the speed LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.");
 
 # Rune of Self-Sacrifice
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:4>, <thermalfoundation:storage_alloy:6>, <bloodmagic:slate:1> * 2);
+<bloodmagic:blood_rune:4>.addTooltip("Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.");
 
 # Rune of Sacrifice
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:3>, <thermalfoundation:storage_alloy:5>, <bloodmagic:slate:2> * 2);
+<bloodmagic:blood_rune:3>.addTooltip("Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.");
 
 # Apprentice Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:redstone_block>);
@@ -220,6 +223,8 @@ mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:1>.withTag({}), [<b
 
 # Rune of Capacity
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <bloodmagic:slate:2> * 2);
+<bloodmagic:blood_rune:6>.addTooltip("Increases the capacity of the Blood Altar by §62,000§r LP per rune, additively.");
+<bloodmagic:blood_rune:6>.addTooltip("Does §4§onot§r stack with Runes of Augmented Capacity!");
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
@@ -344,21 +349,29 @@ recipes.addShaped(<bloodmagic:demon_will_gauge>, [[null,<contenttweaker:praesidi
 
 # Rune of Augmented Capacity
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:7>, <bloodmagic:blood_rune:6>, <extrautils2:drum:3>, <bloodmagic:slate:3> * 2);
+<bloodmagic:blood_rune:7>.addTooltip("Increases the capacity of the Blood Altar by §610%§r per rune, multiplicitively.");
+<bloodmagic:blood_rune:7>.addTooltip("Does §4§onot§r stack with Runes of Capacity! Only switch when you will have §6>15§r.");
 
 # Efficiency Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:2>, <contenttweaker:rune_of_mana>, <bloodmagic:slate:3> * 2);
+<bloodmagic:blood_rune:2>.addTooltip("Reduces the progress drain when out of LP in the Blood Altar by §615%§r per rune, multiplicitively.");
 
 # Charging Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:10>, <bloodmagic:blood_rune:1>, <botania:manaresource:8> * 3, <bloodmagic:slate:4> * 2);
+<bloodmagic:blood_rune:10>.addTooltip("Stores crafting progress while idle to speed up recipes. Too complex to list effects.");
 
 # Displacement Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <contenttweaker:rune_of_water>, <bloodmagic:slate:4> * 2);
+<bloodmagic:blood_rune:5>.addTooltip("Increases the LP I/O rate by §620%§r per rune, multiplicitively.");
 
 # Acceleration Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
+<bloodmagic:blood_rune:9>.addTooltip("Reduces the operation interval by §61 tick§r per rune. Stacks to §619§r. Affects recipes both recipe and LP I/O.");
 
 # Rune of the Orb
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <enderutilities:enderpart:17>, <bloodmagic:slate:4> * 2);
+<bloodmagic:blood_rune:8>.addTooltip("Increases the amount of LP that can be inserted into the Orb by §62%§r per rune, additively.");
+<bloodmagic:blood_rune:8>.addTooltip("Does §4§onot§r increase the speed.");
 
 # Air Sigil
 addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_air>, <bloodmagic:component:2>, <bloodmagic:slate:1>, "airsigil");
