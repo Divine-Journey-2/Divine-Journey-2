@@ -65,7 +65,7 @@ recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<
 recipes.addShaped(<aether_legacy:holystone>*8, [[<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:ghast_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>]]);
 
 # Aether Dirt Recipes with Mystical Agriculture Essences
-recipes.addShaped(<aether_legacy:aether_dirt> * 8, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:ghast_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>]]);
+recipes.addShaped(<aether_legacy:aether_dirt> * 8, [[<mysticalagriculture:chicken_essence>,<mysticalagriculture:dirt_essence>,<mysticalagriculture:chicken_essence>],[<mysticalagriculture:dirt_essence>,<mysticalagriculture:ghast_essence>,<mysticalagriculture:dirt_essence>],[<mysticalagriculture:chicken_essence>,<mysticalagriculture:dirt_essence>,<mysticalagriculture:chicken_essence>]]);
 
 # Skyroot Plank to plankWood OreDict (breaks the Skyroot Bucket recipe among others)
 #<ore:plankWood>.add(<aether_legacy:skyroot_plank>);
