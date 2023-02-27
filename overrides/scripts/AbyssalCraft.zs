@@ -642,11 +642,6 @@ game.setLocalization("ac.ritual.summonSacthoth.desc", "Summons Sacthoth, Harbing
 # Sacthoth's Soul Reaper Blade
 <abyssalcraft:soulreaper>.addTooltip(format.white("Dropped by ") + format.gray("Sacthoth, Harbinger of Doom") + format.white(", the final boss of AbyssalCraft."));
 
-# Summoning an Anti Cow in the Abyssal Wasteland
-mods.abyssalcraft.SummonRitual.addRitual("summonAntiCow", 1, 50, 2500, false, "abyssalcraft:anticow", [<abyssalcraft:ingotblock:1>,<minecraft:beef>,<forge:bucketfilled>.withTag({FluidName: "liquidcoralium", Amount: 1000}),<minecraft:leather>,<abyssalcraft:powerstonetracker>,<minecraft:beef>,<forge:bucketfilled>.withTag({FluidName: "liquidcoralium", Amount: 1000}),<minecraft:leather>]);
-game.setLocalization("ac.ritual.summonAntiCow", "Anti Milking");
-game.setLocalization("ac.ritual.summonAntiCow.desc", "Summon an Anti Cow in the Abyssal Wasteland. Milking this Cow will yield a bucket of Antimatter.");
-
 # Removing the Mass Enchantment Ritual
 mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
 
