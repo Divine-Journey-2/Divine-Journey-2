@@ -119,7 +119,7 @@ recipes.addShaped(<erebus:sapling_mossbark> * 4, [[<mysticalagriculture:stone_es
 recipes.addShaped(<erebus:sapling_eucalyptus> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
 recipes.addShaped(<divinerpg:eden_sapling> * 4, [[<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<divinerpg:mortum_sapling> * 4, [[<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>,<null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<divinerpg:mortum_sapling> * 4, [[<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>,null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<divinerpg:apalachia_sapling> * 4, [[<mysticalagriculture:water_essence>,null,null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<divinerpg:wildwood_sapling> * 4, [[<mysticalagriculture:water_essence>,null,<mysticalagriculture:water_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<divinerpg:divine_sapling> * 4, [[null,null,<mysticalagriculture:water_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
@@ -178,7 +178,7 @@ addLogRecipes(<erebus:log_mossbark>, <erebus:sapling_mossbark>);
 addLogRecipes(<erebus:log_asper>, <erebus:sapling_asper>);
 addLogRecipes(<erebus:log_baobab>, <erebus:sapling_baobab>);
 addLogRecipes(<erebus:log_mahogany>, <erebus:sapling_mahogany>);
-addLogRecipes(<erebus:log_eucalyptus>, <erebus:sapling_eucalyptus>)
+addLogRecipes(<erebus:log_eucalyptus>, <erebus:sapling_eucalyptus>);
 addLogRecipes(<abyssalcraft:dltlog>, <abyssalcraft:dltsapling>);
 addLogRecipes(<abyssalcraft:dreadlog>, <abyssalcraft:dreadsapling>);
 addLogRecipes(<atum:palm_log>, <atum:palm_sapling>);
