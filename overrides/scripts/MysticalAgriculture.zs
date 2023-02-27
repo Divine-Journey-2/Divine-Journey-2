@@ -118,6 +118,14 @@ recipes.addShaped(<erebus:sapling_mahogany> * 4, [[<mysticalagriculture:stone_es
 recipes.addShaped(<erebus:sapling_mossbark> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<erebus:sapling_eucalyptus> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
+#recipes.addShaped(<divinerpg:eden_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:mortum_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:apalachia_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:wildwood_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:divine_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:frozen_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+#recipes.addShaped(<divinerpg:skythern_sapling> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+
 # Removing Mystical Agriculture Log Recipes
 for L in [
     mysticalagriculture:log,
@@ -127,7 +135,7 @@ for L in [
     mysticalagriculture:log2,
     mysticalagriculture:log_3,
     mysticalagriculture:menril_log,
-] as IItemStack[] {
+] as string[] {
     recipes.removeByRecipeName("L");
 }
 
