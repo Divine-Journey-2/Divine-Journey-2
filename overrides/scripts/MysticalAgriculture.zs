@@ -101,15 +101,15 @@ recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagricultur
 
 # Removing Mystical Agriculture Log Recipes
 for L in [
-    <minecraft:log>,
-    <minecraft:log2:1>,
-    <minecraft:log:2>,
-    <minecraft:log:1>,
-    <minecraft:log2>,
-    <minecraft:log:3>,
-    <integrateddynamics:menril_log>,
+    mysticalagriculture:log,
+    mysticalagriculture:log2_1,
+    mysticalagriculture:log_2,
+    mysticalagriculture:log_1,
+    mysticalagriculture:log2,
+    mysticalagriculture:log_3,
+    mysticalagriculture:menril_log,
 ] as IItemStack[] {
-    recipes.remove(L);
+    recipes.removeByRecipeName("L");
 }
 
 # Adding Mystical Agriculture Recipes for all Logs
