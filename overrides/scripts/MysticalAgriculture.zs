@@ -128,15 +128,15 @@ recipes.addShaped(<erebus:sapling_eucalyptus> * 4, [[<mysticalagriculture:stone_
 
 # Removing Mystical Agriculture Log Recipes
 for L in [
-    mysticalagriculture:log,
-    mysticalagriculture:log2_1,
-    mysticalagriculture:log_2,
-    mysticalagriculture:log_1,
-    mysticalagriculture:log2,
-    mysticalagriculture:log_3,
-    mysticalagriculture:menril_log,
+    "mysticalagriculture:log",
+    "mysticalagriculture:log2_1",
+    "mysticalagriculture:log_2",
+    "mysticalagriculture:log_1",
+    "mysticalagriculture:log2",
+    "mysticalagriculture:log_3",
+    "mysticalagriculture:menril_log",
 ] as string[] {
-    recipes.removeByRecipeName("L");
+    recipes.removeByRecipeName(L);
 }
 
 # Adding Mystical Agriculture Recipes for most Logs
