@@ -112,7 +112,7 @@ for L in [
     recipes.removeByRecipeName("L");
 }
 
-# Adding Mystical Agriculture Recipes for all Logs
+# Adding Mystical Agriculture Recipes for most Logs
 function addLogRecipes(output as IItemStack, sapling_input as IIngredient){
     recipes.addShaped(output*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
 }
@@ -146,6 +146,28 @@ addLogRecipes(<bewitchment:cypress_wood>, <bewitchment:cypress_sapling>);
 addLogRecipes(<bewitchment:elder_wood>, <bewitchment:elder_sapling>);
 addLogRecipes(<bewitchment:juniper_wood>, <bewitchment:juniper_sapling>);
 addLogRecipes(<traverse:fir_log>, <traverse:fir_sapling>);
+addLogRecipes(<erebus:log_balsam>, <erebus:sapling_balsam>);
+addLogRecipes(<erebus:log_mossbark>, <erebus:sapling_mossbark>);
+addLogRecipes(<erebus:log_asper>, <erebus:sapling_asper>);
+addLogRecipes(<erebus:log_baobab>, <erebus:sapling_baobab>);
+addLogRecipes(<erebus:log_eucalyptus>, <erebus:sapling_eucalyptus>)
+addLogRecipes(<abyssalcraft:dltlog>, <abyssalcraft:dltsapling>);
+addLogRecipes(<abyssalcraft:dreadlog>, <abyssalcraft:dreadsapling>);
+addLogRecipes(<atum:palm_log>, <atum:palm_sapling>);
+addLogRecipes(<natura:nether_logs2>, <natura:nether_sapling2>);
+addLogRecipes(<natura:nether_logs>, <natura:nether_sapling>);
+addLogRecipes(<natura:nether_logs:1>, <natura:nether_sapling:2>);
+addLogRecipes(<natura:nether_logs:2>, <natura:nether_sapling:1>);
+addLogRecipes(<natura:overworld_logs2:1>, <natura:overworld_sapling2:1>);
+addLogRecipes(<natura:overworld_logs2:3>, <natura:overworld_sapling2:3>);
+addLogRecipes(<natura:overworld_logs2:2>, <natura:overworld_sapling2:2>);
+addLogRecipes(<natura:overworld_logs2>, <natura:overworld_sapling2>);
+addLogRecipes(<natura:overworld_logs>, <natura:overworld_sapling>);
+addLogRecipes(<natura:overworld_logs:3>, <natura:overworld_sapling:3>);
+addLogRecipes(<natura:overworld_logs:2>, <natura:overworld_sapling:2>);
+addLogRecipes(<natura:overworld_logs:1>, <natura:overworld_sapling:1>);
+addLogRecipes(<natura:redwood_logs:1>, <natura:redwood_sapling>);
+addLogRecipes(<evilcraft:undead_log>, <evilcraft:undead_sapling>);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
