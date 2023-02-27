@@ -127,6 +127,25 @@ addLogRecipes(<thaumcraft:log_greatwood>, <thaumcraft:sapling_greatwood>);
 addLogRecipes(<thaumcraft:log_silverwood>, <thaumcraft:sapling_silverwood>);
 addLogRecipes(<totemic:cedar_log>, <totemic:cedar_sapling>);
 addLogRecipes(<integrateddynamics:menril_log>, <integrateddynamics:menril_sapling>);
+addLogRecipes(<divinerpg:mortum_log>, <divinerpg:mortum_sapling>);
+addLogRecipes(<divinerpg:eden_log>, <divinerpg:eden_sapling>);
+addLogRecipes(<divinerpg:apalachia_log>, <divinerpg:apalachia_sapling>);
+addLogRecipes(<divinerpg:skythern_log>, <divinerpg:skythern_sapling>);
+addLogRecipes(<divinerpg:wildwood_log>, <divinerpg:wildwood_sapling>);
+addLogRecipes(<divinerpg:divine_log>, <divinerpg:divine_sapling>);
+addLogRecipes(<divinerpg:frozen_log>, <divinerpg:frozen_sapling>);
+addLogRecipes(<twilightforest:twilight_log>, <twilightforest:twilight_sapling>);
+addLogRecipes(<twilightforest:twilight_log:2>, <twilightforest:twilight_sapling:2>);
+addLogRecipes(<twilightforest:twilight_log:1>, <twilightforest:twilight_sapling:1>);
+addLogRecipes(<twilightforest:magic_log:3>, <twilightforest:twilight_sapling:8>);
+addLogRecipes(<twilightforest:twilight_log:3>, <twilightforest:twilight_sapling:3>);
+addLogRecipes(<aether_legacy:aether_log>, <aether_legacy:aether_sapling>);
+addLogRecipes(<aether_legacy:aether_log:1>, <aether_legacy:golden_oak_sapling>);
+addLogRecipes(<bewitchment:dragons_blood_wood>, <bewitchment:dragons_blood_sapling>);
+addLogRecipes(<bewitchment:cypress_wood>, <bewitchment:cypress_sapling>);
+addLogRecipes(<bewitchment:elder_wood>, <bewitchment:elder_sapling>);
+addLogRecipes(<bewitchment:juniper_wood>, <bewitchment:juniper_sapling>);
+addLogRecipes(<traverse:fir_log>, <traverse:fir_sapling>);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
