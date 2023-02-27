@@ -166,7 +166,7 @@ addLogRecipes(<twilightforest:twilight_log:2>, <twilightforest:twilight_sapling:
 addLogRecipes(<twilightforest:twilight_log:1>, <twilightforest:twilight_sapling:1>);
 addLogRecipes(<twilightforest:magic_log:3>, <twilightforest:twilight_sapling:8>);
 addLogRecipes(<twilightforest:twilight_log:3>, <twilightforest:twilight_sapling:3>);
-addLogRecipes(<aether_legacy:aether_log>, <aether_legacy:aether_sapling>);
+addLogRecipes(<aether_legacy:aether_log>, <aether_legacy:skyroot_sapling>);
 addLogRecipes(<aether_legacy:aether_log:1>, <aether_legacy:golden_oak_sapling>);
 addLogRecipes(<bewitchment:dragons_blood_wood>, <bewitchment:dragons_blood_sapling>);
 addLogRecipes(<bewitchment:cypress_wood>, <bewitchment:cypress_sapling>);
