@@ -129,30 +129,6 @@ for i in 0 to 16 {
     Carving.addVariation("bibliocraftswordpedestal", <bibliocraft:swordpedestal>.withDamage(i));
 }
 
-// Bibliocraft Iron Lantern
-Carving.addGroup("bibliocraftlanterniron");
-for i in 0 to 16 {
-    Carving.addVariation("bibliocraftlanterniron", <bibliocraft:lanterniron>.withDamage(i));
-}
-
-// Bibliocraft Gold Lantern
-Carving.addGroup("bibliocraftlanterngold");
-for i in 0 to 16 {
-    Carving.addVariation("bibliocraftlanterngold", <bibliocraft:lanterngold>.withDamage(i));
-}
-
-// Bibliocraft Iron Lamp
-Carving.addGroup("bibliocraftlampiron");
-for i in 0 to 16 {
-    Carving.addVariation("bibliocraftlampiron", <bibliocraft:lampiron>.withDamage(i));
-}
-
-// Bibliocraft Gold Lamp
-Carving.addGroup("bibliocraftlampgold");
-for i in 0 to 16 {
-    Carving.addVariation("bibliocraftlampgold", <bibliocraft:lampgold>.withDamage(i));
-}
-
 // AE2 Paint Ball
 Carving.addGroup("ae2paintball");
 for i in 0 to 16 {

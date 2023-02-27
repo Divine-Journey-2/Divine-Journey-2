@@ -45,19 +45,36 @@ recipes.addShapedMirrored(<thermalfoundation:material:515>, [[<ore:ingotRedAlloy
 recipes.remove(<thermalfoundation:material:657>);
 recipes.addShaped(<thermalfoundation:material:657>, [[<immersiveengineering:material:2>,<immersiveengineering:material:2>,<immersiveengineering:material:2>],[<immersiveengineering:material:2>,<thermalfoundation:material:352>,<immersiveengineering:material:2>],[<immersiveengineering:material:2>,<immersiveengineering:material:2>,<immersiveengineering:material:2>]]);
 
+# Add Tooltips to Kits
+function thermalKitTooltip(item as IItemStack, machine as int, container as int, box as int) {
+    item.addShiftTooltip("Increase the base energy capacity of a Machine or Dynamo by §c" ~ machine ~ "%§r of the (variable) base.");
+    item.addShiftTooltip("Increase the base fluid capacity of a Portable Tank by §cx" ~ container ~ "§r of the base of §c20,000mb§r.");
+    item.addShiftTooltip("Increase the base item capacity of a Cache by §cx" ~ container ~ "§r of the base of §c20,000§r items.");
+    item.addShiftTooltip("Increase the base slot amount of a Storage Box by §c" ~ box ~ "§r from the base of §c18§r.");
+}
+
+# Conversion Kits
+thermalKitTooltip(<thermalfoundation:upgrade:33>, 100, 9, 36);
+thermalKitTooltip(<thermalfoundation:upgrade:34>, 150, 16, 54);
+thermalKitTooltip(<thermalfoundation:upgrade:35>, 200, 25, 82);
+
 # Hardened Upgrade Kit
+thermalKitTooltip(<thermalfoundation:upgrade>, 50, 4, 18);
 recipes.remove(<thermalfoundation:upgrade>);
 recipes.addShaped(<thermalfoundation:upgrade>, [[<thermalfoundation:material:354>,<thermalfoundation:material:354>,<thermalfoundation:material:354>],[<thermalfoundation:material:354>,<thermalfoundation:material:264>,<thermalfoundation:material:354>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
 
 # Reinforced Upgrade Kit
+thermalKitTooltip(<thermalfoundation:upgrade:1>, 100, 9, 36);
 recipes.remove(<thermalfoundation:upgrade:1>);
 recipes.addShaped(<thermalfoundation:upgrade:1>, [[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_plate>],[<contenttweaker:fluxed_electrum_plate>,<enderio:item_material:41>,<contenttweaker:fluxed_electrum_plate>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
 
 # Signalum Upgrade Kit
+thermalKitTooltip(<thermalfoundation:upgrade:2>, 150, 16, 54);
 recipes.remove(<thermalfoundation:upgrade:2>);
 recipes.addShaped(<thermalfoundation:upgrade:2>, [[<thermalfoundation:material:327>,<thermalfoundation:material:327>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:material:327>],[<thermalfoundation:material:514>,<thermalfoundation:material:514>,<thermalfoundation:material:514>]]);
 
 # Resonant Upgrade Kit
+thermalKitTooltip(<thermalfoundation:upgrade:3>, 200, 25, 82);
 recipes.remove(<thermalfoundation:upgrade:3>);
 recipes.addShaped(<thermalfoundation:upgrade:3>, [[<extendedcrafting:material:2>,<extendedcrafting:material:2>,<extendedcrafting:material:2>],[<extendedcrafting:material:2>,<thermalfoundation:storage_alloy:7>,<extendedcrafting:material:2>],[<thermalfoundation:material:515>,<thermalfoundation:material:515>,<thermalfoundation:material:515>]]);
 

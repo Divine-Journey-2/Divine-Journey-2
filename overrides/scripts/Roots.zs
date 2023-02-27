@@ -8,6 +8,7 @@ import mods.roots.RunicShears;
 import mods.roots.SummonCreatures;
 import mods.roots.Modifiers;
 import crafttweaker.formatting.IFormattedText;
+import crafttweaker.item.IItemStack;
 
 print("STARTING Roots.zs");
 
@@ -88,6 +89,16 @@ Fey.addRecipe("runic_crafter", <roots:runic_crafter>, [<roots:fey_crafter>, <roo
 Fey.removeRecipe(<roots:elemental_soil>);
 Fey.addRecipe("elemental_soil", <roots:elemental_soil>*4, [<extrautils2:compresseddirt>, <ore:compressed1xGravel>, <minecraft:bone_block>, <roots:petals>, <roots:terra_moss>]);
 
+# Crop Growth Tooltips
+for x in [
+    <roots:cloud_berry>,
+    <roots:infernal_bulb>,
+    <roots:dewgonia>,
+    <roots:stalicripe>,
+] as IItemStack[] {
+    x.addTooltip("Can be grown on any Elemental Soil.");
+}
+
 # Runestone
 Fey.removeRecipe(<roots:runestone>);
 Fey.addRecipe("runestone", <roots:runestone>*3, [<contenttweaker:charred_stone>, <contenttweaker:charred_stone>, <contenttweaker:charred_stone>, <ore:gemAmethyst>, <minecraft:dye:4>]);
@@ -107,6 +118,7 @@ Pyre.addRecipe("pereskia", <roots:pereskia>, [<roots:dewgonia>, <minecraft:doubl
 # Baffle Cap
 Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
 Pyre.addRecipe("baffle_cap", <roots:baffle_cap_mushroom>, [<roots:pereskia>, <minecraft:red_mushroom>, <minecraft:brown_mushroom>, <betternether:lucis_spore>, <betternether:orange_mushroom>]);
+<roots:baffle_cap_mushroom>.addTooltip("Grows exactly like a vanilla mushroom.");
 
 # Infernal Bulb
 Pyre.removeRecipe(<roots:infernal_bulb>);

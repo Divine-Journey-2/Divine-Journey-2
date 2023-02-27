@@ -274,6 +274,7 @@
       <entity name="thaumicaugmentation:autocaster" soulvial="false" disabled="true"/>
       <entity name="thaumicaugmentation:autocaster_eldritch" soulvial="false" disabled="true"/>
       <entity name="thaumicaugmentation:celestial_observer" soulvial="false" disabled="true"/>
+      <entity name="thaumicaugmentation:shield_focus" soulvial="false" disabled="true"/>
     </spawning>
   </recipe>
 
