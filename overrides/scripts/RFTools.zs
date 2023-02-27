@@ -234,8 +234,8 @@ recipes.addShaped(<rftools:orphaning_card>, [[null,<enderio:item_alloy_ingot>,nu
 recipes.remove(<rftools:powercell_card>);
 recipes.addShaped(<rftools:powercell_card>, [[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>],[<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>],[<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:1>,<enderio:item_alloy_ingot:3>]]);
 
-# Shapeless Hidden Craft for Powercell Card 
-recipes.addHiddenShapeless(<rftools:powercell_card>, [<rftools:powercell_card>]);
+# Shapeless Hidden Craft for Powercell Card
+recipes.addHiddenShapeless("powercell_card", <rftools:powercell_card>, [<rftools:powercell_card>]);
 
 # Endergenic Generator
 recipes.remove(<rftools:endergenic>);
@@ -424,10 +424,10 @@ recipes.addShaped(<rftools:creative_screen>, [[<rftools:screen>,<projecte:item.p
 
 # Creative Powercell
 mods.extendedcrafting.TableCrafting.addShaped(<rftools:powercell_creative>,
-[[<enderio:block_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <enderio:block_alloy:6>], 
-[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <divinerpg:molten_furnace>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>], 
-[<thermalfoundation:storage_alloy:6>, <divinerpg:molten_furnace>, <contenttweaker:ultimate_machine_frame>, <divinerpg:molten_furnace>, <thermalfoundation:storage_alloy:6>], 
-[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <galacticraftcore:infinite_battery>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>], 
+[[<enderio:block_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <enderio:block_alloy:6>],
+[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <divinerpg:molten_furnace>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>],
+[<thermalfoundation:storage_alloy:6>, <divinerpg:molten_furnace>, <contenttweaker:ultimate_machine_frame>, <divinerpg:molten_furnace>, <thermalfoundation:storage_alloy:6>],
+[<thermalfoundation:storage_alloy:6>, <rftools:powercell_advanced>, <galacticraftcore:infinite_battery>, <rftools:powercell_advanced>, <thermalfoundation:storage_alloy:6>],
 [<enderio:block_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <thermalfoundation:storage_alloy:6>, <enderio:block_alloy:6>]]);
 
 print("ENDING RFTools.zs");
