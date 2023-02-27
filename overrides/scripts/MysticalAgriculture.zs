@@ -95,9 +95,9 @@ recipes.addShaped(<bewitchment:juniper_sapling> * 4, [[null,<mysticalagriculture
 recipes.addShaped(<bewitchment:cypress_sapling> * 4, [[<mysticalagriculture:wood_essence>,null,<mysticalagriculture:cold_iron_essence>],[null,<mysticalagriculture:nature_essence>,null],[<mysticalagriculture:cold_iron_essence>,null,<mysticalagriculture:wood_essence>]]);
 recipes.addShaped(<bewitchment:dragons_blood_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:cold_iron_essence>,<mysticalagriculture:nature_essence>,<mysticalagriculture:cold_iron_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
-recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:redstone>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<thaumcraft:sapling_silverwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<thaumcraft:quicksilver>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<minecraft:sapling:5>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:redstone_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<thaumcraft:sapling_silverwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:quicksilver_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 
 # Removing Mystical Agriculture Log Recipes
 for L in [
@@ -105,17 +105,16 @@ for L in [
     <minecraft:log2:1>,
     <minecraft:log:2>,
     <minecraft:log:1>,
-	<minecraft:log2>,
-	<minecraft:log:3>,
-	<integrateddynamics:menril_log>,
+    <minecraft:log2>,
+    <minecraft:log:3>,
+    <integrateddynamics:menril_log>,
 ] as IItemStack[] {
     recipes.remove(L);
 }
 
 # Adding Mystical Agriculture Recipes for all Logs
-function addLogRecipes(output as IItemStack, sapling_input as IIngredient)
-{
-	recipes.addShaped(output*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
+function addLogRecipes(output as IItemStack, sapling_input as IIngredient){
+    recipes.addShaped(output*16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
 }
 
 addLogRecipes(<minecraft:log>, <minecraft:sapling>);
