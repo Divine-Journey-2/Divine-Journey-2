@@ -1,75 +1,27 @@
 # Divine Journey 2
-by Atricos (and a lot of others that helped!)
 
-An Expert mode modpack for Minecraft 1.12.2.
+An Expert modpack for Minecraft 1.12.2.
 
-Find more information and download links on the official CurseForge page: https://www.curseforge.com/minecraft/modpacks/divine-journey-2
+By Atricos and a number of others - see the [Credits](CREDITS.md).
 
-Report bugs HERE on GitHub: https://github.com/Divine-Journey-2/Divine-Journey-2/issues
+[![Total CurseForge Downloads](https://cf.way2muchnoise.eu/full_370666_Downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/divine-journey-2)
+![Minecraft Version](https://img.shields.io/badge/For%20MC-1.12.2-yellow.svg?style=for-the-badge)
+[![Most recent GitHub release](https://img.shields.io/github/v/release/divine-journey-2/divine-journey-2?color=%23C82A26&label=Latest%20Release&style=for-the-badge)](https://github.com/Divine-Journey-2/Divine-Journey-2/releases)
+[![Repository License](https://img.shields.io/badge/License-GPL--3.0-yellow.svg?style=for-the-badge)](https://github.com/Divine-Journey-2/Divine-Journey-2/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/691927762755387402?label=Discord&colorB=7289DA&style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAABWAgMAAABnZYq0AAAACVBMVEUAAB38%2FPz%2F%2F%2F%2Bm8P%2F9AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfhBxwQJhxy2iqrAAABoElEQVRIx7WWzdGEIAyGgcMeKMESrMJ6rILZCiiBg4eYKr%2Fd1ZAfgXFm98sJfAyGNwno3G9sLucgYGpQ4OGVRxQTREMDZjF7ILSWjoiHo1n%2BE03Aw8p7CNY5IhkYd%2F%2F6MtO3f8BNhR1QWnarCH4tr6myl0cWgUVNcfMcXACP1hKrGMt8wcAyxide7Ymcgqale7hN6846uJCkQxw6GG7h2MH4Czz3cLqD1zHu0VOXMfZjHLoYvsdd0Q7ZvsOkafJ1P4QXxrWFd14wMc60h8JKCbyQvImzlFjyGoZTKzohwWR2UzSONHhYXBQOaKKsySsahwGGDnb%2FiYPJw22sCqzirSULYy1qtHhXGbtgrM0oagBV4XiTJok3GoLoDNH8ooTmBm7ZMsbpFzi2bgPGoXWXME6XT%2BRJ4GLddxJ4PpQy7tmfoU2HPN6cKg%2BledKHBKlF8oNSt5w5g5o8eXhu1IOlpl5kGerDxIVT%2BztzKepulD8utXqpChamkzzuo7xYGk%2FkpSYuviLXun5bzdRf0Krejzqyz7Z3p0I1v2d6HmA07dofmS48njAiuMgAAAAASUVORK5CYII%3D)](https://discord.gg/rH9pyS7)
 
-### Info for server owners:
+For more information, browse the GitHub or visit the official [CurseForge page](https://www.curseforge.com/minecraft/modpacks/divine-journey-2).
 
-### Modlist
-https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/dependencies
+Report bugs and other issues to the [issues](https://github.com/Divine-Journey-2/Divine-Journey-2/issues) tab on GitHub.
 
-### Dimensions & IDs
+## Info for server owners
 
-| Mod | Name  | ID | Should be reset?(*) |
-| ------------- | ------------- | ------------- | ------------- |
-| Minecraft | Nether | -1 | yes |
-| Minecraft | End | 1 | yes |
-| DivineRPG | Iceika | 425 | yes |
-| DivineRPG | Eden | 420 | yes |
-| DivineRPG | Wildwood | 421 | yes |
-| DivineRPG | Apalachia | 422 | yes |
-| DivineRPG | Skythern | 423 | yes |
-| DivineRPG | Mortum | 424 | yes |
-| DivineRPG | Arcana | 426 | yes |
-| DivineRPG | Vethea | 427 | yes |
-| Galacticraft | OrbitStatic | -26 | no |
-| Galacticraft | Orbit | -27 | no |
-| Galacticraft | Moon | -28 | yes |
-| Galacticraft | Mars | -29 | yes |
-| Galacticraft | Asteroids | -30 | yes |
-| Galacticraft | Venus | -31 | yes |
-| Twilight Forest | Twilight Forest | 7 | yes |
-| AbyssalCraft | Abyssal Wasteland | 50 | yes |
-| AbyssalCraft | Dreadlands | 51 | yes |
-| AbyssalCraft | Omothol | 52 | yes |
-| AbyssalCraft | The Dark Realm | 53 | probably not (unless the stone in the dimension is being quarried out) |
-| LightningCraft | Underworld | -9 | yes |
-| Aether Legacy | Aether | 4 | yes |
-| Atum 2 | Atum | 17 | yes |
-| Erebus | Erebus | 66 | yes |
-| Extra Utilities 2 | Deep Dark | -11325 | yes |
-| Extra Utilities 2 | (Quantum) Quarry Dim | -9999 | yes |
-| Thaumic Augmentation | Emptiness | 14676 | yes |
-| Applied Energistics 2 | Storage Cell | 2 | no |
-| RFTools Dimensions | RFTools Dimensions | personal IDs that fill unused values from 3, 5, 6, ... | no |
-| Simple Void World | Void World | -100 | no |
+View [Server Info](SERVER_INFO.md) for information on what dimensions to reset and what mods are clientside.
 
+## Modlist
 
-(*) if **yes**, then the dimension should be periodically reset / regenerated on public servers, so new players can collect resources again.
+View the modlist on [GitHub](modlist.html) or [CurseForge](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/dependencies).
 
-### Client-only mods
-| Name | File |
-| ------------- | ------------- |
-| Better Advancements | BetterAdvancements-1.12.2-0.1.0.77 |
-| Controlling | Controlling-3.0.10 |
-| Connected Textures Mod | CTM-MC1.12.2-1.0.2.31 |
-| Custom Main Menu | CustomMainMenu-MC1.12.2-2.0.9.1 |
-| Default Options | DefaultOptions_1.12.2-9.2.8 |
-| Featured Servers | FeaturedServers-1.12-1.0.6 |
-| Just Enough Throwing In Fluids | jetif-1.12.2-1.5.2 |
-| Just Enough Resources | JustEnoughResources-1.12.2-0.9.2.60 |
-| More Overlays | moreoverlays-1.15.1-mc1.12.2 |
-| Mouse Tweaks | MouseTweaks-2.10-mc1.12.2 |
-| Neat | Neat 1.4-17 |
-| Oauth | oauth-1.06.4 |
-| Resouce Loader | ResourceLoader-MC1.12.1-1.5.3 |
-| AutoRun | simpleautorun-1.12.2-1.2.0 |
-| Thaumic JEI | ThaumicJEI-1.12.2-1.6.0.27 |
-| Tips | Tips-1.12.2-1.0.9 |
-| Tip The Scales | TipTheScales-1.12.2-1.0.4 |
-| Toast Control | Toast Control-1.12.2-1.8.1 |
-| Waila Harvestability | WailaHarvestability-mc1.12-1.1.12 |
+## Preview Image
+
+![Preview Image](https://i.imgur.com/3MM86zr.jpg)
