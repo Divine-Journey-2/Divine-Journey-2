@@ -232,9 +232,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<natura:redwood_logs:1> * 64, [
 [<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
 
 # Congealed Slime from Mystical Agriculture Essences
-recipes.addShaped(<tconstruct:slime_congealed>*8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
-recipes.addShaped(<tconstruct:slime_congealed>*8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling:1>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
-recipes.addShaped(<tconstruct:slime_congealed:4>*8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling:2>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
+recipes.addShaped(<tconstruct:slime_congealed> * 8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling> | <tconstruct:slime_sapling:1>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
+recipes.addShaped(<tconstruct:slime_congealed:4> * 8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling:2>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
