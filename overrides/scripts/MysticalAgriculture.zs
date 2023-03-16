@@ -99,6 +99,8 @@ recipes.addShaped(<bewitchment:dragons_blood_sapling> * 4, [[null,<mysticalagric
 recipes.addShaped(<totemic:cedar_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:redstone_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<thaumcraft:sapling_silverwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:quicksilver_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<evilcraft:undead_sapling> * 4, [[<mysticalagriculture:redstone_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:redstone_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:redstone_essence>,<mysticalagriculture:nature_essence>],[<mysticalagriculture:redstone_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:redstone_essence>]]);
+recipes.addShaped(<extrautils2:ironwood_sapling> * 4, [[<mysticalagriculture:iron_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:iron_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[<mysticalagriculture:iron_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:iron_essence>]]);
 
 recipes.addShaped(<traverse:fir_sapling> * 4, [[<mysticalagriculture:fire_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<traverse:red_autumnal_sapling> * 4, [[<mysticalagriculture:fire_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
@@ -131,6 +133,9 @@ recipes.addShaped(<erebus:sapling_baobab> * 4, [[null,null,<mysticalagriculture:
 recipes.addShaped(<erebus:sapling_mahogany> * 4, [[<mysticalagriculture:stone_essence>,null,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<erebus:sapling_mossbark> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<erebus:sapling_eucalyptus> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<erebus:sapling_marshwood> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,<mysticalagriculture:stone_essence>]]);
+recipes.addShaped(<erebus:sapling_cypress> * 4, [[<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:wood_essence>,null]]);
+recipes.addShaped(<erebus:sapling_bamboo> * 4, [[<mysticalagriculture:stone_essence>,null,<mysticalagriculture:stone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:wood_essence>,null]]);
 
 recipes.addShaped(<divinerpg:eden_sapling> * 4, [[<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<divinerpg:mortum_sapling> * 4, [[<mysticalagriculture:water_essence>,<mysticalagriculture:water_essence>,null],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
@@ -221,6 +226,7 @@ addLogRecipes(<natura:overworld_logs:2>, <natura:overworld_sapling:2>);
 addLogRecipes(<natura:overworld_logs:1>, <natura:overworld_sapling:1>);
 addLogRecipes(<evilcraft:undead_log>, <evilcraft:undead_sapling>);
 addLogRecipes(<roots:wildwood_log>, <roots:wildwood_sapling>);
+addLogRecipes(<extrautils2:ironwood_log>, <extrautils2:ironwood_sapling>);
 
 mods.extendedcrafting.TableCrafting.addShaped(<natura:redwood_logs:1> * 64, [
 [<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],
@@ -234,6 +240,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<natura:redwood_logs:1> * 64, [
 # Congealed Slime from Mystical Agriculture Essences
 recipes.addShaped(<tconstruct:slime_congealed> * 8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling> | <tconstruct:slime_sapling:1>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
 recipes.addShaped(<tconstruct:slime_congealed:4> * 8, [[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<tconstruct:slime_sapling:2>,<mysticalagriculture:slime_essence>],[<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>,<mysticalagriculture:slime_essence>]]);
+
+# Bamboo from Mystical Agriculture Essences
+recipes.addShaped(<erebus:materials:3> * 8, [[<mysticalagriculture:dirt_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:dirt_essence>],[<mysticalagriculture:wood_essence>,<erebus:sapling_bamboo>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:dirt_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:dirt_essence>]]);
 
 # Water Seeds
 recipes.remove(<mysticalagriculture:water_seeds>);
