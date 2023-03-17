@@ -1,6 +1,7 @@
 #loader crafttweaker reloadable
 # Author: WaitingIdly
 
+import crafttweaker.event.PlayerDeathDropsEvent;
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.BlockBreakEvent;
@@ -8,6 +9,7 @@ import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
 import crafttweaker.entity.IEntityEquipmentSlot;
+import crafttweaker.entity.IEntityItem;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
@@ -223,4 +225,19 @@ events.onCommand(function(e as CommandEvent) {
             player.update({ divine_journey_2: { astral_level: -1 } });
         }
     }
+});
+
+
+// Remove the TMG Death List from the inventory and drop it on the ground. This prevents a nested NBT issue.
+<tombmanygraves:death_list>.addTooltip(format.red("Dropped into the world on death."));
+
+// Doesnt get called if keepInventory is true, so we dont have to factor that possibility in.
+events.onPlayerDeathDrops(function(e as PlayerDeathDropsEvent) {
+    var drops = [] as IEntityItem[];
+    for item in e.items {
+        // If its a Death List, spawn the item as an entity in-world. Otherwise, keep it in the droplist.
+        if (item.item.definition.id == "tombmanygraves:death_list") e.player.world.spawnEntity(item);
+        else drops += item;
+    }
+    e.items = drops;
 });
