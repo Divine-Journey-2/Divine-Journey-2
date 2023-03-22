@@ -60,7 +60,6 @@ static oreConversion as IItemStack[string] = {
     oreTin: <thermalfoundation:ore:1>,
     oreUranium: <immersiveengineering:ore:5>,
     oreYellorite: <bigreactors:oreyellorite>,
-    oreYellorium: <bigreactors:oreyellorite>,
 } as IItemStack[string];
 
 static correctOreDict as string[] = [
@@ -70,12 +69,17 @@ static correctOreDict as string[] = [
 
 
 events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
-    if (e.player.world.isRemote()) {
+    if (e.world.isRemote()) {
+        return;
+    }
+
+    // If we aren't a player or aren't harvesting with Silk Touch, return early.
+    if (!e.isPlayer || !e.silkTouch) {
         return;
     }
 
     // If we are using silk touch on UB ores, give the ore block of the mod the ore is from instead of the UB %stonetype% ore block.
-    if (e.silkTouch && e.drops.length == 1 && e.block.definition.id.startsWith("undergroundbiomes")) {
+    if (e.drops.length == 1 && e.block.definition.id.startsWith("undergroundbiomes")) {
         var ores = e.drops[0].stack.ores;
         if (!isNull(ores)) {
             if (ores.length == 1) {
