@@ -4,6 +4,7 @@
 import crafttweaker.event.PlayerDeathDropsEvent;
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
+import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
@@ -13,9 +14,92 @@ import crafttweaker.entity.IEntityItem;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.contenttweaker.Commands;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.I18n;
+
+static oreConversion as IItemStack[string] = {
+    oreAluminum: <thermalfoundation:ore:4>,
+    oreAmber: <thaumcraft:ore_amber>,
+    oreAmethyst: <mysticalworld:amethyst_ore>,
+    oreAquamarine: <astralsorcery:blockcustomsandore>,
+    oreArlemite: <divinerpg:arlemite_ore>,
+    oreAstralStarmetal: <astralsorcery:blockcustomore:1>,
+    oreCertusQuartz: <appliedenergistics2:quartz_ore>,
+    oreChargedCertusQuartz: <appliedenergistics2:charged_quartz_ore>,
+    oreCinnabar: <thaumcraft:ore_cinnabar>,
+    oreClathrateOilShale: <thermalfoundation:ore_fluid:1>,
+    oreClathrateRedstone: <thermalfoundation:ore_fluid:2>,
+    oreCoal: <minecraft:coal_ore>,
+    oreCopper: <thermalfoundation:ore>,
+    oreCoralium: <abyssalcraft:coraliumore>,
+    oreDark: <evilcraft:dark_ore>,
+    oreDiamond: <minecraft:diamond_ore>,
+    oreDimensionalShard: <rftools:dimensional_shard_ore>,
+    oreDraconium: <draconicevolution:draconium_ore>,
+    oreEmerald: <minecraft:emerald_ore>,
+    oreGarnet: <bewitchment:garnet_ore>,
+    oreGold: <minecraft:gold_ore>,
+    oreInferium: <mysticalagriculture:inferium_ore>,
+    oreIridium: <thermalfoundation:ore:7>,
+    oreIron: <minecraft:iron_ore>,
+    oreLapis: <minecraft:lapis_ore>,
+    oreLead: <thermalfoundation:ore:3>,
+    oreMithril: <thermalfoundation:ore:8>,
+    oreNickel: <thermalfoundation:ore:5>,
+    oreOpal: <bewitchment:opal_ore>,
+    oreOsmium: <mekanism:oreblock>,
+    oreOverworldQuartz: <thaumcraft:ore_quartz>,
+    orePlatinum: <thermalfoundation:ore:6>,
+    oreProsperity: <mysticalagriculture:prosperity_ore>,
+    oreQuartzBlack: <actuallyadditions:block_misc:3>,
+    oreRealmite: <divinerpg:realmite_ore>,
+    oreRedstone: <minecraft:redstone_ore>,
+    oreRupee: <divinerpg:rupee_ore>,
+    oreSilver: <thermalfoundation:ore:2>,
+    oreTin: <thermalfoundation:ore:1>,
+    oreUranium: <immersiveengineering:ore:5>,
+    oreYellorite: <bigreactors:oreyellorite>,
+} as IItemStack[string];
+
+static correctOreDict as string[] = [
+    "oreYellorite",
+    "oreChargedCertusQuartz"
+] as string[];
+
+
+events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
+    if (e.world.isRemote()) {
+        return;
+    }
+
+    // If we aren't a player or aren't harvesting with Silk Touch, return early.
+    if (!e.isPlayer || !e.silkTouch) {
+        return;
+    }
+
+    // If we are using silk touch on UB ores, give the ore block of the mod the ore is from instead of the UB %stonetype% ore block.
+    if (e.drops.length == 1 && e.block.definition.id.startsWith("undergroundbiomes")) {
+        var ores = e.drops[0].stack.ores;
+        if (!isNull(ores)) {
+            if (ores.length == 1) {
+                val desiredDrop = oreConversion[ores[0].name];
+                if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
+            } else if (ores.length >= 1) {
+                // If we have multiple oredicts possible, iterate through until we find the predetermined "correct" oredict
+                for ore in ores {
+                    if (correctOreDict has ore.name) {
+                        val desiredDrop = oreConversion[ore.name];
+                        if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+});
 
 static astralTiers as string[] = [
     "BASIC_CRAFT",
