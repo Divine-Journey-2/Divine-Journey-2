@@ -78,7 +78,7 @@ recipes.remove(<abyssalcraft:coraliumstone>);
 recipes.addShaped(<abyssalcraft:coraliumstone> * 4, [[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>],[<abyssalcraft:ccluster9>,<ore:ingot_dark_soularium>,<abyssalcraft:ccluster9>],[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>]]);
 
 # Abyssal Stone with Mystical Agriculture Essences
-recipes.addShaped(<abyssalcraft:stone:1>*16, [[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:dirt_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>]]);
+recipes.addShaped(<abyssalcraft:stone:1>*16, [[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>]]);
 
 # Monolith Stone Pillar
 recipes.remove(<abyssalcraft:monolithpillar>);
