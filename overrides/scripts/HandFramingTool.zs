@@ -113,7 +113,7 @@ handFramingTool.onItemUse = function(
     val definition as IBlockDefinition = ctstate.block.definition;
     if (isFrameable(definition)) {
         var state as IBlockState = definition.getStateFromMeta(ctstate.meta);
-        var tag as IData = player.currentItem.tag;
+        var tag as IData = player.getHeldItem(hand).tag;
         if (isNull(tag) || isNull(tag.MatS)) return ActionResult.fail();
 
         if (!isReframing(definition)) {
@@ -130,10 +130,6 @@ handFramingTool.onItemUse = function(
         world.setBlockState(definition.getStateFromMeta(ctstate.meta), overrideData(block.data), pos); // clear storage
         world.setBlockState(<block:minecraft:air>, pos); // ensure re-render
         world.setBlockState(state, blockTag, pos);
-        player.setItemToSlot(hand == Hand.main() ?
-                             IEntityEquipmentSlot.mainHand() :
-                             IEntityEquipmentSlot.offhand(),
-                             player.currentItem.withTag(tag));
         return ActionResult.success();
     }
     return ActionResult.pass();

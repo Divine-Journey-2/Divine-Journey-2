@@ -717,7 +717,6 @@ val UBAluminumOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_
 val UBLapisOres = [<undergroundbiomes:igneous_stone_lapis_ore:*>,<undergroundbiomes:metamorphic_stone_lapis_ore:*>,<undergroundbiomes:sedimentary_stone_lapis_ore:*>] as IItemStack[];
 #val UBMithrilOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name:*>] as IItemStack[];
 val UBRedstoneOres = [<undergroundbiomes:igneous_stone_redstone_ore:*>,<undergroundbiomes:metamorphic_stone_redstone_ore:*>,<undergroundbiomes:sedimentary_stone_redstone_ore:*>] as IItemStack[];
-val UBPlatinumOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.platinum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.platinum.name:*>] as IItemStack[];
 val UBDimensionalShardOres = [<undergroundbiomes:igneous_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:metamorphic_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:sedimentary_stone_rftools_dimensional_shard_ore:*>] as IItemStack[];
 val UBDiamondOres = [<undergroundbiomes:igneous_stone_diamond_ore:*>,<undergroundbiomes:metamorphic_stone_diamond_ore:*>,<undergroundbiomes:sedimentary_stone_diamond_ore:*>] as IItemStack[];
 val UBDraconiumOres = [<undergroundbiomes:igneous_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:metamorphic_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:sedimentary_stone_draconicevolution_draconium_ore:*>] as IItemStack[];
@@ -771,9 +770,6 @@ for o in UBLapisOres {
 #}
 for o in UBRedstoneOres {
 	mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
-}
-for o in UBPlatinumOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:70> * 2);
 }
 for o in UBDimensionalShardOres {
 	mods.mekanism.enrichment.addRecipe(o, <rftools:dimensional_shard> * 4);
