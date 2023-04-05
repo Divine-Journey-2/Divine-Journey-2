@@ -180,19 +180,18 @@ recipes.addShaped(<thermaldynamics:duct_48> * 6, [[<thermalfoundation:material:3
 
 # Viaduct (Untreated)
 recipes.remove(<thermaldynamics:duct_64:3>);
-recipes.addShaped(<thermaldynamics:duct_64:3> * 4, [[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>],[<thermalfoundation:glass:3>,<contenttweaker:rf_powder>,<thermalfoundation:glass:3>],[<thermalfoundation:material:355>,<thermalfoundation:glass:3>,<thermalfoundation:material:355>]]);
 
 # Viaduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_64:3>, <liquid:aerotheum>);
-mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_64>, <thermaldynamics:duct_64:3>, <liquid:aerotheum> * 200, 800);
+recipes.addShaped(<thermaldynamics:duct_64> * 16, [[<thermalfoundation:material:355>,<immersiveengineering:stone_decoration:8>,<thermalfoundation:material:355>],[<immersiveengineering:stone_decoration:8>,<mekanism:controlcircuit:2>,<immersiveengineering:stone_decoration:8>],[<thermalfoundation:material:355>,<immersiveengineering:stone_decoration:8>,<thermalfoundation:material:355>]]);
 
 # Long Range Viaduct
 recipes.remove(<thermaldynamics:duct_64:1>);
-recipes.addShaped(<thermaldynamics:duct_64:1> * 4, [[<thermalfoundation:material:323>,<thermalfoundation:glass:3>,<thermalfoundation:material:323>],[<thermalfoundation:glass:3>,<contenttweaker:rf_powder>,<thermalfoundation:glass:3>],[<thermalfoundation:material:323>,<thermalfoundation:glass:3>,<thermalfoundation:material:323>]]);
+recipes.addShaped(<thermaldynamics:duct_64:1> * 4, [[<thermalfoundation:material:323>,<thermaldynamics:duct_64>,<thermalfoundation:material:323>],[<thermaldynamics:duct_64>,<mob_grinding_utils:fan_upgrade:2>,<thermaldynamics:duct_64>],[<thermalfoundation:material:323>,<thermaldynamics:duct_64>,<thermalfoundation:material:323>]]);
 
 # Long Range Linking Viaduct
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermaldynamics:duct_64>, <liquid:ender>);
-mods.thermalexpansion.Transposer.addFillRecipe(<thermaldynamics:duct_64:2>, <thermaldynamics:duct_64>, <liquid:ender> * 2000, 8000);
+recipes.addShaped(<thermaldynamics:duct_64:2> * 2, [[<appliedenergistics2:material:30>,<appliedenergistics2:material:30>,<appliedenergistics2:material:30>],[<thermaldynamics:duct_64:1>,<mekanism:controlcircuit:3>,<thermaldynamics:duct_64:1>],[<appliedenergistics2:material:30>,<appliedenergistics2:material:30>,<appliedenergistics2:material:30>]]);
 
 # Servo
 recipes.remove(<thermaldynamics:servo>);
