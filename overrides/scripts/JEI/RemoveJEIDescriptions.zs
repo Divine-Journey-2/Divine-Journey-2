@@ -2,7 +2,7 @@
 
 import moretweaker.jei.MoreJei;
 
-print("STARTING MoreTweaker.zs");
+print("STARTING RemoveJEIDescriptions.zs");
 
 # Remove various Information pages
 MoreJei.removeDescription(<minecraft:diamond>);
@@ -20,4 +20,4 @@ MoreJei.removeDescription(<thaumcraft:salis_mundus>);
 MoreJei.removeDescription(<thaumcraft:crystal_essence>);
 MoreJei.removeDescription(<extrautils2:ingredients:10>);
 
-print("ENDING MoreTweaker.zs");
+print("ENDING RemoveJEIDescriptions.zs");
