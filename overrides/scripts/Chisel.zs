@@ -271,7 +271,7 @@ Carving.addVariation("UBGoldOre", <minecraft:gold_ore>);
 Carving.addVariation("UBGoldOre", <abyssalcraft:abygolore>);
 Carving.addVariation("UBGoldOre", <atum:gold_ore>);
 Carving.addVariation("UBGoldOre", <erebus:ore_gold>);
-Carving.addVariation("UBGoldOre", <lightningcraft:ore_block>.withDamage(1));
+Carving.addVariation("UBGoldOre", <lightningcraft:ore_block:1>);
 for i in 0 to 8 {
     Carving.addVariation("UBGoldOre", <undergroundbiomes:igneous_stone_gold_ore>.withDamage(i)); 
     Carving.addVariation("UBGoldOre", <undergroundbiomes:metamorphic_stone_gold_ore>.withDamage(i));
@@ -285,7 +285,7 @@ Carving.addVariation("UBDiamondOre", <abyssalcraft:abydiaore>);
 Carving.addVariation("UBDiamondOre", <atum:diamond_ore>);
 Carving.addVariation("UBDiamondOre", <erebus:ore_diamond>);
 Carving.addVariation("UBDiamondOre", <erebus:ore_encrusted_diamond>);
-Carving.addVariation("UBDiamondOre", <lightningcraft:ore_block>.withDamage(2));
+Carving.addVariation("UBDiamondOre", <lightningcraft:ore_block:2>);
 for i in 0 to 8 {
     Carving.addVariation("UBDiamondOre", <undergroundbiomes:igneous_stone_diamond_ore>.withDamage(i)); 
     Carving.addVariation("UBDiamondOre", <undergroundbiomes:metamorphic_stone_diamond_ore>.withDamage(i));
@@ -297,7 +297,7 @@ Carving.addGroup("UBEmeraldOre");
 Carving.addVariation("UBEmeraldOre", <minecraft:emerald_ore>);
 Carving.addVariation("UBEmeraldOre", <atum:emerald_ore>);
 Carving.addVariation("UBEmeraldOre", <erebus:ore_emerald>);
-Carving.addVariation("UBEmeraldOre", <lightningcraft:ore_block>.withDamage(3));
+Carving.addVariation("UBEmeraldOre", <lightningcraft:ore_block:3>);
 for i in 0 to 8 {
     Carving.addVariation("UBEmeraldOre", <undergroundbiomes:igneous_stone_emerald_ore>.withDamage(i)); 
     Carving.addVariation("UBEmeraldOre", <undergroundbiomes:metamorphic_stone_emerald_ore>.withDamage(i));
@@ -327,14 +327,14 @@ for i in 0 to 8 {
 Carving.addGroup("UBChargedCertusQuartzOre");
 Carving.addVariation("UBChargedCertusQuartzOre", <appliedenergistics2:charged_quartz_ore>);
 for i in 0 to 8 {
-Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:igneous_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i)); 
-Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:metamorphic_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i));
-Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:sedimentary_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i));
+    Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:igneous_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i)); 
+    Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:metamorphic_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i));
+    Carving.addVariation("UBChargedCertusQuartzOre", <undergroundbiomes:sedimentary_stone_appliedenergistics2_charged_quartz_ore>.withDamage(i));
 }
 
 // Underground Biomes Black Quartz Ore
 Carving.addGroup("UBBlackQuartzOre");
-Carving.addVariation("UBBlackQuartzOre", <actuallyadditions:block_misc>.withDamage(3));
+Carving.addVariation("UBBlackQuartzOre", <actuallyadditions:block_misc:3>);
 for i in 0 to 8 {
     Carving.addVariation("UBBlackQuartzOre", <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3>.withDamage(i)); 
     Carving.addVariation("UBBlackQuartzOre", <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3>.withDamage(i));
@@ -352,7 +352,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Dark Ore
 Carving.addGroup("UBDarkOre");
-Carving.addVariation("UBDarkOre", <evilcraft:dark_ore>.withDamage(0));
+Carving.addVariation("UBDarkOre", <evilcraft:dark_ore:0>);
 for i in 0 to 8 {
     Carving.addVariation("UBDarkOre", <undergroundbiomes:igneous_stone_evilcraft_dark_ore>.withDamage(i)); 
     Carving.addVariation("UBDarkOre", <undergroundbiomes:metamorphic_stone_evilcraft_dark_ore>.withDamage(i));
@@ -361,7 +361,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Aquamarine Shale
 Carving.addGroup("UBAquamarineShale");
-Carving.addVariation("UBAquamarineShale", <astralsorcery:blockcustomsandore>.withDamage(0));
+Carving.addVariation("UBAquamarineShale", <astralsorcery:blockcustomsandore:0>);
 for i in 0 to 8 {
     Carving.addVariation("UBAquamarineShale", <undergroundbiomes:igneous_stone_astralsorcery_blockcustomsandore_1>.withDamage(i)); 
     Carving.addVariation("UBAquamarineShale", <undergroundbiomes:metamorphic_stone_astralsorcery_blockcustomsandore_1>.withDamage(i));
@@ -489,7 +489,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Osmium Ore
 Carving.addGroup("UBOsmiumOre");
-Carving.addVariation("UBOsmiumOre", <mekanism:oreblock>.withDamage(0));
+Carving.addVariation("UBOsmiumOre", <mekanism:oreblock:0>);
 for i in 0 to 8 {
     Carving.addVariation("UBOsmiumOre", <undergroundbiomes:igneous_stone_mekanism_oreblock>.withDamage(i)); 
     Carving.addVariation("UBOsmiumOre", <undergroundbiomes:metamorphic_stone_mekanism_oreblock>.withDamage(i));
@@ -507,9 +507,9 @@ for i in 0 to 8 {
 
 // Underground Biomes Oil Sand
 Carving.addGroup("UBOilSand");
-Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid>.withDamage(0));
-Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid>.withDamage(1));
-Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid>.withDamage(5));
+Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid:0>);
+Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid:1>);
+Carving.addVariation("UBOilSand", <thermalfoundation:ore_fluid:5>);
 for i in 0 to 8 {
     Carving.addVariation("UBOilSand", <undergroundbiomes:igneous_stone_thermalfoundation_ore_fluid>.withDamage(i)); 
     Carving.addVariation("UBOilSand", <undergroundbiomes:metamorphic_stone_thermalfoundation_ore_fluid>.withDamage(i));
@@ -518,7 +518,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Destabilized Redstone Ore
 Carving.addGroup("UBDestabilizedRedstoneOre");
-Carving.addVariation("UBDestabilizedRedstoneOre", <thermalfoundation:ore_fluid>.withDamage(2));
+Carving.addVariation("UBDestabilizedRedstoneOre", <thermalfoundation:ore_fluid:2>);
 for i in 0 to 8 {
     Carving.addVariation("UBDestabilizedRedstoneOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.redstone.name>.withDamage(i)); 
     Carving.addVariation("UBDestabilizedRedstoneOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.redstone.name>.withDamage(i));
@@ -527,12 +527,12 @@ for i in 0 to 8 {
 
 // Underground Biomes Copper Ore
 Carving.addGroup("UBCopperOre");
-Carving.addVariation("UBCopperOre", <thermalfoundation:ore>.withDamage(0));
+Carving.addVariation("UBCopperOre", <thermalfoundation:ore:0>);
 Carving.addVariation("UBCopperOre", <abyssalcraft:abycopore>);
 Carving.addVariation("UBCopperOre", <erebus:ore_copper>);
-Carving.addVariation("UBCopperOre", <galacticraftcore:basic_block_moon>.withDamage(0));
-Carving.addVariation("UBCopperOre", <galacticraftplanets:mars>.withDamage(0));
-Carving.addVariation("UBCopperOre", <galacticraftplanets:venus>.withDamage(7));
+Carving.addVariation("UBCopperOre", <galacticraftcore:basic_block_moon:0>);
+Carving.addVariation("UBCopperOre", <galacticraftplanets:mars:0>);
+Carving.addVariation("UBCopperOre", <galacticraftplanets:venus:7>);
 for i in 0 to 8 {
     Carving.addVariation("UBCopperOre", <undergroundbiomes:igneous_stone_thermalfoundation_ore>.withDamage(i)); 
     Carving.addVariation("UBCopperOre", <undergroundbiomes:metamorphic_stone_thermalfoundation_ore>.withDamage(i));
@@ -541,12 +541,12 @@ for i in 0 to 8 {
 
 // Underground Biomes Tin Ore
 Carving.addGroup("UBTinOre");
-Carving.addVariation("UBTinOre", <thermalfoundation:ore>.withDamage(1));
+Carving.addVariation("UBTinOre", <thermalfoundation:ore:1>);
 Carving.addVariation("UBTinOre", <abyssalcraft:abytinore>);
 Carving.addVariation("UBTinOre", <erebus:ore_tin>);
-Carving.addVariation("UBTinOre", <galacticraftcore:basic_block_moon>.withDamage(1));
-Carving.addVariation("UBTinOre", <galacticraftplanets:mars>.withDamage(1));
-Carving.addVariation("UBTinOre", <galacticraftplanets:venus>.withDamage(11));
+Carving.addVariation("UBTinOre", <galacticraftcore:basic_block_moon:1>);
+Carving.addVariation("UBTinOre", <galacticraftplanets:mars:1>);
+Carving.addVariation("UBTinOre", <galacticraftplanets:venus:11>);
 for i in 0 to 8 {
     Carving.addVariation("UBTinOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin.name>.withDamage(i)); 
     Carving.addVariation("UBTinOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.tin.name>.withDamage(i));
@@ -555,7 +555,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Silver Ore
 Carving.addGroup("UBSilverOre");
-Carving.addVariation("UBSilverOre", <thermalfoundation:ore>.withDamage(2));
+Carving.addVariation("UBSilverOre", <thermalfoundation:ore:2>);
 Carving.addVariation("UBSilverOre", <erebus:ore_silver>);
 for i in 0 to 8 {
     Carving.addVariation("UBSilverOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name>.withDamage(i)); 
@@ -565,9 +565,9 @@ for i in 0 to 8 {
 
 // Underground Biomes Lead Ore
 Carving.addGroup("UBLeadOre");
-Carving.addVariation("UBLeadOre", <thermalfoundation:ore>.withDamage(3));
+Carving.addVariation("UBLeadOre", <thermalfoundation:ore:3>);
 Carving.addVariation("UBLeadOre", <erebus:ore_lead>);
-Carving.addVariation("UBLeadOre", <galacticraftplanets:venus>.withDamage(8));
+Carving.addVariation("UBLeadOre", <galacticraftplanets:venus:8>);
 for i in 0 to 8 {
     Carving.addVariation("UBLeadOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name>.withDamage(i)); 
     Carving.addVariation("UBLeadOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name>.withDamage(i));
@@ -576,10 +576,10 @@ for i in 0 to 8 {
 
 // Underground Biomes Aluminum Ore
 Carving.addGroup("UBAluminumOre");
-Carving.addVariation("UBAluminumOre", <thermalfoundation:ore>.withDamage(4));
+Carving.addVariation("UBAluminumOre", <thermalfoundation:ore:4>);
 Carving.addVariation("UBAluminumOre", <erebus:ore_aluminium>);
-Carving.addVariation("UBAluminumOre", <galacticraftplanets:asteroids_block>.withDamage(3));
-Carving.addVariation("UBAluminumOre", <galacticraftplanets:venus>.withDamage(6));
+Carving.addVariation("UBAluminumOre", <galacticraftplanets:asteroids_block:3>);
+Carving.addVariation("UBAluminumOre", <galacticraftplanets:venus:6>);
 for i in 0 to 8 {
     Carving.addVariation("UBAluminumOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.aluminum.name>.withDamage(i)); 
     Carving.addVariation("UBAluminumOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.aluminum.name>.withDamage(i));
@@ -588,7 +588,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Nickel Ore
 Carving.addGroup("UBNickelOre");
-Carving.addVariation("UBNickelOre", <thermalfoundation:ore>.withDamage(5));
+Carving.addVariation("UBNickelOre", <thermalfoundation:ore:5>);
 for i in 0 to 8 {
     Carving.addVariation("UBNickelOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.nickel.name>.withDamage(i)); 
     Carving.addVariation("UBNickelOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.nickel.name>.withDamage(i));
@@ -597,7 +597,7 @@ for i in 0 to 8 {
 
 // Underground Biomes Iridium Ore
 Carving.addGroup("UBIridiumOre");
-Carving.addVariation("UBIridiumOre", <thermalfoundation:ore>.withDamage(7));
+Carving.addVariation("UBIridiumOre", <thermalfoundation:ore:7>);
 for i in 0 to 8 {
     Carving.addVariation("UBIridiumOre", <undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.iridium.name>.withDamage(i)); 
     Carving.addVariation("UBIridiumOre", <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.iridium.name>.withDamage(i));
