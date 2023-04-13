@@ -1,0 +1,6 @@
+commands.curseforge.usage=在聊天栏中发送一条前往 Curseforge 页面的链接。
+commands.discord.usage=在聊天栏中发送一条前往 Discord 页面的链接。
+commands.issues.usage=在聊天栏中发送一条前往问题汇报页面的链接。
+commands.curseforge.text=点击此处打开 DJ2 的 Curseforge 页面
+commands.discord.text=点击此处加入 Discord 频道
+commands.issues.text=点击此处汇报 Bug 或问题
