@@ -350,13 +350,13 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 # Nickel Ingot
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
-<ore:ingotNickel>.remove(<immersiveengineering:metal:4>)
+<ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
 
 # Platinum Ingot
 <ore:ingotPlatinum>.remove(<alchemistry:ingot:78>);
 
 # Cobalt Ingot
-<ore:ingotPlatinum>.remove(<alchemistry:ingot:27>);
+<ore:ingotCobalt>.remove(<alchemistry:ingot:27>);
 
 # Charcoal Block
 recipes.remove(<mekanism:basicblock:3>);
