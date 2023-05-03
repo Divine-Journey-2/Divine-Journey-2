@@ -67,7 +67,7 @@ recipes.addShaped(<aether_legacy:holystone>*8, [[<mysticalagriculture:chicken_es
 # Aether Dirt recipe with Mystical Agriculture Essences
 recipes.addShaped(<aether_legacy:aether_dirt> * 8, [[<mysticalagriculture:chicken_essence>,<mysticalagriculture:dirt_essence>,<mysticalagriculture:chicken_essence>],[<mysticalagriculture:dirt_essence>,<mysticalagriculture:ghast_essence>,<mysticalagriculture:dirt_essence>],[<mysticalagriculture:chicken_essence>,<mysticalagriculture:dirt_essence>,<mysticalagriculture:chicken_essence>]]);
 
-# Enchanted Berry recipe with Mystical Agriculture Essences
+# Golden Berry recipe with Mystical Agriculture Essences
 recipes.addShaped(<aether_legacy:enchanted_blueberry> * 4, [[<mysticalagriculture:nature_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:nature_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:dye_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:nature_essence>]]);
 
 # Skyroot Plank to plankWood OreDict (breaks the Skyroot Bucket recipe among others)
