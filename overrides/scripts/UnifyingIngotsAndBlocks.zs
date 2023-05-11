@@ -88,7 +88,7 @@ recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 
 # Tin
-val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <projectred-core:resource_item:101>, <erebus:materials:46>] as IItemStack[];
+val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <projectred-core:resource_item:101>, <erebus:materials:46>, <bno:ingot_tin>] as IItemStack[];
 <ore:ingotTin>.removeItems(wrongTinIngots);
 #recipes.replaceAllOccurences(<ore:ingotTin>, <thermalfoundation:material:129>);
 for tin in wrongTinIngots {
@@ -350,6 +350,13 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 # Nickel Ingot
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
+<ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
+
+# Platinum Ingot
+<ore:ingotPlatinum>.remove(<alchemistry:ingot:78>);
+
+# Cobalt Ingot
+<ore:ingotCobalt>.remove(<alchemistry:ingot:27>);
 
 # Charcoal Block
 recipes.remove(<mekanism:basicblock:3>);
