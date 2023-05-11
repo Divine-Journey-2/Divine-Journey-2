@@ -30,6 +30,7 @@ static oreConversion as IItemStack[string] = {
     oreCertusQuartz: <appliedenergistics2:quartz_ore>,
     oreChargedCertusQuartz: <appliedenergistics2:charged_quartz_ore>,
     oreCinnabar: <thaumcraft:ore_cinnabar>,
+    oreClathrateOilSand: <thermalfoundation:ore_fluid>,
     oreClathrateOilShale: <thermalfoundation:ore_fluid:1>,
     oreClathrateRedstone: <thermalfoundation:ore_fluid:2>,
     oreCoal: <minecraft:coal_ore>,
