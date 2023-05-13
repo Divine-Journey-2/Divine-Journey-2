@@ -1119,6 +1119,9 @@ recipes.addShaped(<botania:manasteelshears>, [[null,<botania:manaresource:0>,nul
 recipes.remove(<botania:elementiumshears>);
 recipes.addShaped(<botania:elementiumshears>, [[null,<botania:manaresource:7>,null],[<ore:plankWood>,<minecraft:string>,<botania:manaresource:7>],[<immersiveengineering:material:1>,<ore:plankWood>,null]]);
 
+# Ender Air Bottle 
+recipes.addShaped(<botania:manaresource:15>, [[<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>],[<mysticalagriculture:end_essence>,<minecraft:glass_bottle>,<mysticalagriculture:end_essence>],[<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>]]);
+
 # Mana Tablet (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}),
 [[<contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>, <contenttweaker:crystallized_mana_cluster>],
