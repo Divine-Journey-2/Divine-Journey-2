@@ -549,6 +549,7 @@ mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:prosperity_ore>, <m
 # Nether Prosperity Ore
 recipes.addShapeless(<mysticalagriculture:crafting:5> * 5, [<mysticalagriculture:nether_prosperity_ore>,<ore:dustPetrotheum>]);
 mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:nether_prosperity_ore>, <mysticalagriculture:crafting:5> * 6, false, 1, 200);
+Grinder.removeRecipe(<mysticalagriculture:nether_prosperity_ore>);
 
 # End Prosperity Ore
 recipes.addShapeless(<mysticalagriculture:crafting:5> * 5, [<mysticalagriculture:end_prosperity_ore>,<ore:dustPetrotheum>]);
@@ -577,6 +578,7 @@ mods.astralsorcery.Grindstone.addRecipe(<mysticalagriculture:inferium_ore>, <mys
 # Nether Inferium Ore
 recipes.addShapeless(<mysticalagriculture:crafting> * 5, [<mysticalagriculture:nether_inferium_ore>,<ore:dustPetrotheum>]);
 mods.astralsorcery.StarlightInfusion.addInfusion(<mysticalagriculture:nether_inferium_ore>, <mysticalagriculture:crafting> * 6, false, 1, 200);
+Grinder.removeRecipe(<mysticalagriculture:nether_inferium_ore>);
 
 # End Inferium Ore
 recipes.addShapeless(<mysticalagriculture:crafting> * 5, [<mysticalagriculture:end_inferium_ore>,<ore:dustPetrotheum>]);
