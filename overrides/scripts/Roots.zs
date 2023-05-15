@@ -281,7 +281,6 @@ Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
-<natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);
