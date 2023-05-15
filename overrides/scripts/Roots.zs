@@ -5,6 +5,7 @@ import mods.roots.Mortar;
 import mods.roots.Fey;
 import mods.roots.Rituals;
 import mods.roots.RunicShears;
+import mods.roots.AnimalHarvest;
 import mods.roots.SummonCreatures;
 import mods.roots.Modifiers;
 import crafttweaker.formatting.IFormattedText;
@@ -281,6 +282,12 @@ Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
+
+# Animal Harvest Ritual
+AnimalHarvest.addEntity(<entity:natura:imp>);
+AnimalHarvest.addEntity(<entity:totemic:buffalo>);
+AnimalHarvest.addEntity(<entity:totemic:bald_eagle>);
+AnimalHarvest.addEntity(<entity:thaumcraft:wisp>);
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);
