@@ -86,6 +86,10 @@ mods.thaumcraft.Infusion.registerRecipe("bewitchment:belladonna_seeds", "", <bew
 vanilla.seeds.removeSeed(<bewitchment:wormwood_seeds>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:wormwood_seeds", "", <bewitchment:wormwood_seeds>, 5, [<aspect:herba> * 200,<aspect:tenebrae> * 120,<aspect:aversio> * 40,<aspect:vitium> * 20,<aspect:diabolus> * 10], <mysticalagriculture:rubber_seeds>, [<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<thaumcraft:mind:1>,<bewitchment:acacia_resin>,<thaumcraft:nitor_black>,<contenttweaker:mysterious_leaking_soul>]);
 
+# Candles
+recipes.removeByRecipeName("bewitchment:candle/white_candle");
+recipes.addShaped(<bewitchment:white_candle>, [[<botania:manaresource:12>],[<bewitchment:tallow>],[<bewitchment:tallow>]]);
+
 # Silver Candelabra
 recipes.remove(<bewitchment:candelabra_silver>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:candelabra_silver", "", <bewitchment:candelabra_silver>, 4, [<aspect:lux> * 100,<aspect:auram> * 50,<aspect:stellae> * 10], <thermalfoundation:storage:2>, [<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>,<bewitchment:cloudy_oil>,<thaumcraft:candle_white>]);
