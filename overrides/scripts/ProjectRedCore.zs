@@ -38,8 +38,8 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<projectred-core:resource_item
 mods.immersiveengineering.ArcFurnace.addRecipe(<projectred-core:resource_item:103>, <projectred-core:resource_item:251>, null,  200, 128);
 
 # Using a custom Electrotine item, because CraftTweaker Block Drops can't recognize mod names with a dash, like 'projectred-core'
-# Removing and Hiding Electrotine (rest is in ContentTweakerRecipes.zs under # Electrotine)
-mods.jei.JEI.removeAndHide(<projectred-core:resource_item:105>);
+# Removing Electrotine (rest is in ContentTweakerRecipes.zs under # Electrotine)
+recipes.remove(<projectred-core:resource_item:105>);
 
 # Electrotine Ore Processing (has to be lower priority than the item's creation)
 # Removals
