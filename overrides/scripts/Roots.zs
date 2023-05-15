@@ -67,7 +67,7 @@ Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:component_po
 <roots:apothecary_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
 
 # Grove Supplication Ritual
-Rituals.modifyRitual("grove_supplication", [<ore:mossyCobblestone>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
+Rituals.modifyRitual("grove_supplication", [<ore:blockMossy>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
 
 # Dewgonia
 Pyre.removeRecipe(<roots:dewgonia>);
