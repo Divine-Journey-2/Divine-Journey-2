@@ -33,7 +33,7 @@ recipes.remove(<mysticalagradditions:nether_star_seeds>);
 # Nether Star Crux
 recipes.remove(<mysticalagradditions:special>);
 recipes.addShaped(<mysticalagradditions:special>, [[<contenttweaker:compressed_perfectium_block>,<extendedcrafting:storage:2>,<contenttweaker:compressed_perfectium_block>],[<extendedcrafting:storage:2>,<mysticalagradditions:storage:1>,<extendedcrafting:storage:2>],[<contenttweaker:compressed_perfectium_block>,<extendedcrafting:storage:2>,<contenttweaker:compressed_perfectium_block>]]);
-recipes.addShaped(<mysticalagradditions:special>, [[<mysticalagriadditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagriadditions:nether_star_essence>],[<extendedcrafting:storage:2>,<mysticalagradditions:storage:1>,<extendedcrafting:storage:2>],[<mysticalagriadditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagriadditions:nether_star_essence>]]);
+recipes.addShaped(<mysticalagradditions:special>, [[<mysticalagradditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagradditions:nether_star_essence>],[<extendedcrafting:storage:2>,<mysticalagradditions:storage:1>,<extendedcrafting:storage:2>],[<mysticalagradditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagradditions:nether_star_essence>]]);
 
 # Awakened Draconium Seeds
 recipes.remove(<mysticalagradditions:awakened_draconium_seeds>);
