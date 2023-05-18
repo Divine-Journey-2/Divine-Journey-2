@@ -33,6 +33,7 @@ recipes.remove(<mysticalagradditions:nether_star_seeds>);
 # Nether Star Crux
 recipes.remove(<mysticalagradditions:special>);
 recipes.addShaped(<mysticalagradditions:special>, [[<contenttweaker:compressed_perfectium_block>,<extendedcrafting:storage:2>,<contenttweaker:compressed_perfectium_block>],[<extendedcrafting:storage:2>,<mysticalagradditions:storage:1>,<extendedcrafting:storage:2>],[<contenttweaker:compressed_perfectium_block>,<extendedcrafting:storage:2>,<contenttweaker:compressed_perfectium_block>]]);
+recipes.addShaped(<mysticalagradditions:special>, [[<mysticalagriadditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagriadditions:nether_star_essence>],[<extendedcrafting:storage:2>,<mysticalagradditions:storage:1>,<extendedcrafting:storage:2>],[<mysticalagriadditions:nether_star_essence>,<extendedcrafting:storage:2>,<mysticalagriadditions:nether_star_essence>]]);
 
 # Awakened Draconium Seeds
 recipes.remove(<mysticalagradditions:awakened_draconium_seeds>);
@@ -41,6 +42,7 @@ recipes.remove(<mysticalagradditions:awakened_draconium_seeds>);
 # Awakened Draconium Crux
 recipes.remove(<mysticalagradditions:special:4>);
 recipes.addShaped(<mysticalagradditions:special:4>, [[<draconicevolution:draconic_block>,<draconicevolution:dragon_heart>,<draconicevolution:draconic_block>],[<draconicevolution:dragon_heart>,<contenttweaker:corrupted_dragon_token>,<draconicevolution:dragon_heart>],[<draconicevolution:draconic_block>,<draconicevolution:dragon_heart>,<draconicevolution:draconic_block>]]);
+recipes.addShaped(<mysticalagradditions:special:4>, [[<draconicevolution:draconic_block>,<mysticalagradditions:awakened_draconium_essence>,<draconicevolution:draconic_block>],[<mysticalagradditions:awakened_draconium_essence>,<contenttweaker:corrupted_dragon_token>,<mysticalagradditions:awakened_draconium_essence>],[<draconicevolution:draconic_block>,<mysticalagradditions:awakened_draconium_essence>,<draconicevolution:draconic_block>]]);
 
 # Neutronium Seeds
 recipes.remove(<mysticalagradditions:neutronium_seeds>);
@@ -49,6 +51,7 @@ recipes.remove(<mysticalagradditions:neutronium_seeds>);
 # Neutronium Crux
 recipes.remove(<mysticalagradditions:special:5>);
 recipes.addShaped(<mysticalagradditions:special:5>, [[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>],[<avaritia:block_resource>,<contenttweaker:white_matter>,<avaritia:block_resource>],[<contenttweaker:antimatter_cluster>,<avaritia:block_resource>,<contenttweaker:antimatter_cluster>]]);
+recipes.addShaped(<mysticalagradditions:special:5>, [[<mysticalagradditions:neutronium_essence>,<avaritia:block_resource>,<mysticalagradditions:neutronium_essence>],[<avaritia:block_resource>,<contenttweaker:white_matter>,<avaritia:block_resource>],[<mysticalagradditions:neutronium_essence>,<avaritia:block_resource>,<mysticalagradditions:neutronium_essence>]]);
 
 # Creative Essence
 recipes.addShapedMirrored(<mysticalagradditions:stuff:69>, [[<mysticalagriculture:fertilized_essence>,<mysticalagradditions:neutronium_essence>,<mysticalagriculture:fertilized_essence>],[<mysticalagradditions:awakened_draconium_essence>,<contenttweaker:infinite_singularity>,<mysticalagradditions:nether_star_essence>,],[<mysticalagriculture:fertilized_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagriculture:fertilized_essence>]]);
