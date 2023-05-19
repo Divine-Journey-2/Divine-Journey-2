@@ -186,10 +186,10 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<ore:ingotSteel>
 # Redstone Engineering Block
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:3>, [[<minecraft:iron_ingot>,<projectred-core:resource_item:1>,<minecraft:iron_ingot>],[<projectred-core:resource_item:1>,<thermalfoundation:material:320>,<projectred-core:resource_item:1>],[<minecraft:iron_ingot>,<projectred-core:resource_item:1>,<minecraft:iron_ingot>]]);
-<immersiveengineering:metal_decoration0:3>.addTooltip(format.red("Warning: ") + format.white("Do NOT build Immersive Engineering "));
-<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("multiblocks on a chunk border. Press F9 twice"));
-<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("to show them. Otherwise the machine could get"));
-<immersiveengineering:metal_decoration0:3>.addTooltip(format.white("corrupted and eventually crash your world."));
+<immersiveengineering:metal_decoration0:3>.addTooltip(game.localize("dj2.immersive_engineering_chunk_border_warning.desc0"));
+<immersiveengineering:metal_decoration0:3>.addTooltip(game.localize("dj2.immersive_engineering_chunk_border_warning.desc1"));
+<immersiveengineering:metal_decoration0:3>.addTooltip(game.localize("dj2.immersive_engineering_chunk_border_warning.desc2"));
+<immersiveengineering:metal_decoration0:3>.addTooltip(game.localize("dj2.immersive_engineering_chunk_border_warning.desc3"));
 
 # Iron Sheetmetal
 recipes.remove(<immersiveengineering:sheetmetal:9>);
@@ -429,11 +429,11 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roo
 
 # Conveyor fix
 recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);
-<immersiveengineering:conveyor>.addShiftTooltip(format.darkGray(format.italic("If you obtained a broken/bugged Conveyor, put you can craft it into a regular one.")));
+<immersiveengineering:conveyor>.addShiftTooltip(game.localize("dj2.conveyor.desc0"));
 
 # Engineer's Manual tooltip
-<immersiveengineering:tool:3>.addTooltip(format.italic("Some text for custom recipes have"));
-<immersiveengineering:tool:3>.addTooltip(format.italic("overflown, use JEI to look those up!"));
+<immersiveengineering:tool:3>.addTooltip(game.localize("dj2.engineers_manual.desc0"));
+<immersiveengineering:tool:3>.addTooltip(game.localize("dj2.engineers_manual.desc1"));
 
 # Garden Cloche
 recipes.remove(<immersiveengineering:metal_device1:13>);

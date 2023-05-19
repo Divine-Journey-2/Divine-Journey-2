@@ -28,7 +28,7 @@ recipes.addShapedMirrored(<appliedenergistics2:inscriber>, [[<thermalfoundation:
 # Meteorite Compass
 recipes.remove(<appliedenergistics2:sky_compass>);
 recipes.addShaped(<appliedenergistics2:sky_compass>, [[null,<thermalfoundation:material:160>,null],[<thermalfoundation:material:160>,<contenttweaker:energized_certus_quartz_crystal>,<thermalfoundation:material:160>],[null,<thermalfoundation:material:160>,null]]);
-<appliedenergistics2:sky_compass>.addTooltip(format.white(format.bold("Meteorites can ONLY be found in Atum.")));
+<appliedenergistics2:sky_compass>.addTooltip(game.localize("dj2.meteorite_compass.desc0"));
 
 # Tiny TNT
 recipes.remove(<appliedenergistics2:tiny_tnt>);
@@ -321,8 +321,8 @@ recipes.addShaped(<appliedenergistics2:crafting_storage_64k>, [[<enderio:item_al
 # Crafting Card
 recipes.remove(<appliedenergistics2:material:53>);
 recipes.addShapedMirrored(<appliedenergistics2:material:53>, [[<thermalfoundation:material:160>,<contenttweaker:methodology_processor>,null],[<appliedenergistics2:crafting_unit>,<appliedenergistics2:material:25>,<thermalfoundation:material:160>],[<thermalfoundation:material:160>,<contenttweaker:methodology_processor>,null]]);
-<appliedenergistics2:material:53>.addTooltip(format.white("Use it sparingly! If you use it a lot, it could"));
-<appliedenergistics2:material:53>.addTooltip(format.white("cause your ME Network to completely lag out!"));
+<appliedenergistics2:material:53>.addTooltip(game.localize("dj2.crafting_card.desc0"));
+<appliedenergistics2:material:53>.addTooltip(game.localize("dj2.crafting_card.desc1"));
 
 # Fluix Pearl
 recipes.remove(<appliedenergistics2:material:9>);

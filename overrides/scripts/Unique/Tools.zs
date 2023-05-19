@@ -189,8 +189,8 @@ recipes.remove(<bewitchment:silver_hoe>);
 val hoes = [<minecraft:wooden_hoe>,<minecraft:stone_hoe>,<minecraft:iron_hoe>,<minecraft:golden_hoe>,<minecraft:diamond_hoe>,<abyssalcraft:dhoe>,<actuallyadditions:item_hoe_emerald>,<actuallyadditions:item_hoe_quartz>,<actuallyadditions:item_hoe_obsidian>,<atum:limestone_hoe>,<appliedenergistics2:nether_quartz_hoe>,<appliedenergistics2:certus_quartz_hoe>,<divinerpg:arlemite_hoe>,<divinerpg:rupee_hoe>,<divinerpg:realmite_hoe>,<thermalfoundation:tool.hoe_copper>,<thermalfoundation:tool.hoe_tin>,<thermalfoundation:tool.hoe_silver>,<thermalfoundation:tool.hoe_lead>,<thermalfoundation:tool.hoe_aluminum>,<thermalfoundation:tool.hoe_nickel>,<thermalfoundation:tool.hoe_platinum>,<thermalfoundation:tool.hoe_electrum>,<thermalfoundation:tool.hoe_invar>,<thermalfoundation:tool.hoe_bronze>,<thermalfoundation:tool.hoe_constantan>,<mysticalworld:amethyst_hoe>] as IItemStack[];
 for tool in hoes {
 	tool.maxDamage = 10;
-	tool.addTooltip(format.red(format.bold("Warning: ")) + format.white("Very low base durability item!"));
-	tool.addTooltip(format.white("Use a Tinkers' Construct Mattock instead!"));
+	tool.addTooltip(game.localize("dj2.hoe_durability.desc0"));
+	tool.addTooltip(game.localize("dj2.hoe_durability.desc1"));
 }
 
 # Sickles

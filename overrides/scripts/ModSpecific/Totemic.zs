@@ -51,11 +51,11 @@ recipes.addShaped(<totemic:eagle_bone_whistle>, [[null,<ore:string>,<ore:ingotOs
 recipes.addShaped(<totemic:buffalo_items> * 4, [[null,<mysticalagriculture:cow_essence>,null],[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>],[null,<mysticalagriculture:cow_essence>,null]]);
 
 # Baykok's Bow Tooltip
-<totemic:baykok_bow>.addTooltip(format.red("Uses up 1 durability point per craft."));
+<totemic:baykok_bow>.addTooltip(game.localize("dj2.baykok_bow.desc0"));
 
 # Totempedia Tooltip
-<totemic:totempedia>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Recipes shown may be incorrect."));
-<totemic:totempedia>.addTooltip(format.white("Always refer to JEI when crafting!"));
+<totemic:totempedia>.addTooltip(game.localize("dj2.totempedia.desc0"));
+<totemic:totempedia>.addTooltip(game.localize("dj2.totempedia.desc1"));
 
 # Creative Medicine Bag
 recipes.addShaped(<totemic:medicine_bag>.withTag({charge: -1}), [[<mysticalagriculture:charm:12>,<totemic:medicine_bag>,<mysticalagriculture:charm:12>],[<totemic:medicine_bag>,<storagedrawers:upgrade_creative>,<totemic:medicine_bag>],[<mysticalagriculture:charm:12>,<totemic:medicine_bag>,<mysticalagriculture:charm:12>]]);

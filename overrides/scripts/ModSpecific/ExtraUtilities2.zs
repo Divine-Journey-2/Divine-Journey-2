@@ -325,11 +325,11 @@ recipes.addShaped(<extrautils2:redstonelantern>, [[<ore:stone>,<projectred-core:
 
 # Drop of Evil
 recipes.addShaped(<extrautils2:ingredients:10>, [[<contenttweaker:mobgrindium_ingot>,<tconstruct:materials:17>,<contenttweaker:mobgrindium_ingot>],[<tconstruct:materials:17>,<minecraft:skull:1>,<tconstruct:materials:17>],[<contenttweaker:mobgrindium_ingot>,<tconstruct:materials:17>,<contenttweaker:mobgrindium_ingot>]]);
-<extrautils2:ingredients:10>.addTooltip(format.red(format.bold("Does not get dropped by Wither Skeletons.")));
-<extrautils2:ingredients:10>.addTooltip(format.red(format.bold("Only available through crafting.")));
-<extrautils2:ingredients:10>.addTooltip(format.darkRed("Right Click on Grass to transform an area into Cursed Earth."));
-<extrautils2:ingredients:10>.addTooltip(format.darkRed("Mobs will constantly spawn on this type of Soil."));
-<extrautils2:ingredients:10>.addTooltip(format.darkRed("Watch out, Cursed Earth burns in the daylight!"));
+<extrautils2:ingredients:10>.addTooltip(game.localize("dj2.drop_of_evil.desc0"));
+<extrautils2:ingredients:10>.addTooltip(game.localize("dj2.drop_of_evil.desc1"));
+<extrautils2:ingredients:10>.addTooltip(game.localize("dj2.drop_of_evil.desc2"));
+<extrautils2:ingredients:10>.addTooltip(game.localize("dj2.drop_of_evil.desc3"));
+<extrautils2:ingredients:10>.addTooltip(game.localize("dj2.drop_of_evil.desc4"));
 
 # Deep Dark Portal
 recipes.remove(<extrautils2:teleporter:1>);
@@ -523,9 +523,9 @@ FluidToItem.transform(<extrautils2:suncrystal>, <liquid:liquid_sunshine>, [<extr
 
 recipes.addShaped(<extrautils2:suncrystal>, [[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<extrautils2:suncrystal:250>,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>,<mysticalagriculture:glowstone_essence>]]);
 
-<extrautils2:suncrystal>.addTooltip(format.white("Filled by throwing onto the ground when exposed to the sun."));
-<extrautils2:suncrystal>.addTooltip(format.white("Later, you can use Liquid Sunshine or Glowstone Essence to fill it."));
-<extrautils2:suncrystal>.addTooltip(format.red("Must have 0 durability when thrown in Liquid Sunshine."));
+<extrautils2:suncrystal>.addTooltip(game.localize("dj2.suncrystal.desc0"));
+<extrautils2:suncrystal>.addTooltip(game.localize("dj2.suncrystal.desc1"));
+<extrautils2:suncrystal>.addTooltip(game.localize("dj2.suncrystal.desc2"));
 
 # Opinium Core (Pathetic)
 recipes.remove(<extrautils2:opinium>);

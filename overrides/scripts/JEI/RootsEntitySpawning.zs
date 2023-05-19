@@ -83,7 +83,7 @@ createSpawner(<entity:minecraft:witch>, [<minecraft:stick>, <minecraft:glowstone
 
 // Add Natura Imps and include note on their drops.
 createSpawner(<entity:natura:imp>, [<natura:nether_thorn_vines>, <contenttweaker:bloodgem_dust>, <betternether:eye_seed>]);
-<natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
+<natura:materials:6>.addTooltip(game.localize("dj2.imp_leather.desc0"));
 
 // Add a Villager summoning placed in the middle of Bewitchment
 createSpawner(<entity:minecraft:villager>, [<bewitchment:heaven_extract>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "humanus"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "victus"}]}), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "cognitio"}]})]);

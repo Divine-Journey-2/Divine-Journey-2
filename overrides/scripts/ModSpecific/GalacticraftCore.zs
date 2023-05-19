@@ -31,7 +31,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:machine2:4>,
 [<quantumflux:craftingpiece:4>,<contenttweaker:thaumium_processor>,<contenttweaker:clearance_processor>,<contenttweaker:galactic_machine_frame>,<contenttweaker:clearance_processor>,<contenttweaker:thaumium_processor>,<quantumflux:craftingpiece:4>],
 [<contenttweaker:tough_galactic_plating>,<enderio:item_endergy_conduit:10>,<mekanism:controlcircuit:3>,<contenttweaker:clearance_processor>,<mekanism:controlcircuit:3>,<enderio:item_endergy_conduit:10>,<contenttweaker:tough_galactic_plating>],
 [<contenttweaker:tough_galactic_plating>,<enderio:item_endergy_conduit:10>,<enderio:item_endergy_conduit:10>,<contenttweaker:thaumium_processor>,<enderio:item_endergy_conduit:10>,<enderio:item_endergy_conduit:10>,<contenttweaker:tough_galactic_plating>],
-[<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<quantumflux:craftingpiece:4>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>]]);  
+[<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<quantumflux:craftingpiece:4>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>,<contenttweaker:tough_galactic_plating>]]);
 
 # Basic Wafer
 CircuitFabricator.remove(<galacticraftcore:basic_item:13> * 3);
@@ -280,8 +280,8 @@ recipes.addShaped(<galacticraftcore:steel_boots>, [[<galacticraftcore:heavy_plat
 mods.immersiveengineering.ArcFurnace.addRecipe(<galacticraftcore:meteoric_iron_raw> * 3, <galacticraftcore:basic_block_moon:4> * 8, null, 240, 320, [<galacticraftcore:basic_block_moon:5> * 8, <contenttweaker:cheesy_wafer>]);
 #EIOAlloySmelter.addRecipe(<galacticraftcore:meteoric_iron_raw> * 3, [<galacticraftcore:basic_block_moon:4> * 8, <galacticraftcore:basic_block_moon:5> * 8, <contenttweaker:cheesy_wafer>], 16000);
 # Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
-<galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("Obtained by mining Meteors on any Galacticraft Planet."));
-<galacticraftcore:meteoric_iron_raw>.addTooltip(format.white("They're pretty rare, so an alternative recipe was also added."));
+<galacticraftcore:meteoric_iron_raw>.addTooltip(game.localize("dj2.meteoric_iron_raw.desc0"));
+<galacticraftcore:meteoric_iron_raw>.addTooltip(game.localize("dj2.meteoric_iron_raw.desc1"));
 
 # Compressed Meteoric Iron
 addGalacticraftBasicCompressedRecipe(<galacticraftcore:item_basic_moon:1>, <galacticraftcore:item_basic_moon>);
@@ -296,13 +296,13 @@ recipes.addShaped(<galacticraftcore:engine:1>, [[<contenttweaker:sapphire_accele
 
 # NASA Workbench Schematic (Moon Buggy)
 recipes.addShapeless(<galacticraftcore:schematic>, [<galacticraftcore:schematic:1>]);
-<galacticraftcore:schematic>.addTooltip(format.white("Can be found in underground ") + format.gray("Moon") + format.white(" Dungeons."));
-<galacticraftcore:schematic>.addTooltip(format.white("Can also be converted from the ") + format.blue("Tier 2 Rocket Schematic") + format.white("."));
+<galacticraftcore:schematic>.addTooltip(game.localize("dj2.schematic_moon_buggy.desc0"));
+<galacticraftcore:schematic>.addTooltip(game.localize("dj2.schematic_moon_buggy.desc1"));
 
 # NASA Workbench Schematic (Tier 2 Rocket)
 recipes.addShapeless(<galacticraftcore:schematic:1>, [<galacticraftcore:schematic>]);
-<galacticraftcore:schematic:1>.addTooltip(format.white("Can be found in underground ") + format.gray("Moon") + format.white(" Dungeons."));
-<galacticraftcore:schematic:1>.addTooltip(format.white("Can also be converted from the ") + format.blue("Moon Buggy Schematic") + format.white("."));
+<galacticraftcore:schematic:1>.addTooltip(game.localize("dj2.schematic_tier_2_rocket.desc0"));
+<galacticraftcore:schematic:1>.addTooltip(game.localize("dj2.schematic_tier_2_rocket.desc1"));
 
 # Dungeon Locator
 mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:dungeonfinder>,
@@ -356,8 +356,8 @@ recipes.remove(<galacticraftcore:machine>);
 recipes.addShaped(<galacticraftcore:machine>, [[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>],[<enderio:block_stirling_generator>,<contenttweaker:galactic_machine_frame>,<enderio:block_stirling_generator>],[<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>,<galacticraftcore:basic_item:9>]]);
 
 # Tier 1 Dungeon Key
-<galacticraftcore:key>.addTooltip(format.white("Dropped by the ") + format.gray("Evolved Skeleton Boss"));
-<galacticraftcore:key>.addTooltip(format.white("in the underground ") + format.gray("Moon Dungeon."));
+<galacticraftcore:key>.addTooltip(game.localize("dj2.evolved_skeleton_key.desc0"));
+<galacticraftcore:key>.addTooltip(game.localize("dj2.evolved_skeleton_key.desc1"));
 
 # Basic Solar Panel
 recipes.remove(<galacticraftcore:solar>);
@@ -498,18 +498,18 @@ recipes.addShapedMirrored(<galacticraftcore:basic_item:20>, [[<contenttweaker:ch
 
 # Infinite Battery
 mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_battery>,
-[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>], 
-[<projecte:item.pe_matter:1>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <projecte:item.pe_matter:1>], 
-[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <extrautils2:passivegenerator:6>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>], 
-[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>], 
+[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
+[<projecte:item.pe_matter:1>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <projecte:item.pe_matter:1>],
+[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <extrautils2:passivegenerator:6>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>],
+[<contenttweaker:white_matter>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <galacticraftcore:battery:*>, <contenttweaker:white_matter>],
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
 
 # Infinite Oxygen Supply
 mods.extendedcrafting.TableCrafting.addShaped(<galacticraftcore:infinite_oxygen>,
-[[<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>], 
-[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
-[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:infinite_battery>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
-[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>], 
+[[<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>],
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>],
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:infinite_battery>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>],
+[<galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_tank_heavy_full:*>, <galacticraftcore:oxygen_concentrator>],
 [<contenttweaker:oxygen_rich_barium_calcite_perpetuator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <galacticraftcore:oxygen_concentrator>, <contenttweaker:oxygen_rich_barium_calcite_perpetuator>]]);
 
 # Adding Ore-Dict to Rockets

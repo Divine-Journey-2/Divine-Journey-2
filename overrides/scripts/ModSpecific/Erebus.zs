@@ -35,13 +35,13 @@ val gliders =  [<erebus:glider_chestplate>, <erebus:glider_chestplate_powered>] 
 
 for g in gliders {
 	recipes.remove(g);
-	g.addTooltip(format.bold(format.red("WARNING: Can corrupt your world when taking it off. Item disabled.")));
-	g.addTooltip(format.italic(format.darkRed("How did you even find me?!")));
+	g.addTooltip(game.localize("dj2.erebus_glider.desc0"));
+	g.addTooltip(game.localize("dj2.erebus_glider.desc1"));
 }
 
 recipes.remove(<erebus:materials:49>);
-<erebus:materials:49>.addTooltip(format.bold(format.red("WARNING: Riding Beetles can crash the game and corrupt your world.")));
-<erebus:materials:49>.addTooltip(format.italic(format.darkRed("How did you even find me?!")));
+<erebus:materials:49>.addTooltip(game.localize("dj2.riding_beetles.desc0"));
+<erebus:materials:49>.addTooltip(game.localize("dj2.riding_beetles.desc1"));
 
 # Wand of Animation
 recipes.remove(<erebus:wand_of_animation>);
@@ -55,52 +55,52 @@ recipes.remove(<erebus:umber_furnace>);
 recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:bucket>,<erebus:umberstone:1>],[<immersiveengineering:material:1>,allCoalBlocks,<immersiveengineering:material:1>],[<erebus:umberstone:1>,<minecraft:bucket>,<erebus:umberstone:1>]]);
 
 # Gneiss Tooltip
-<erebus:gneiss>.addTooltip(format.white("Mining this transforms the block into Lava."));
-<erebus:gneiss>.addTooltip(format.white("To obtain, mine it with flowing Water all around,"));
-<erebus:gneiss>.addTooltip(format.white("to minimize the chance for the drop to burn."));
+<erebus:gneiss>.addTooltip(game.localize("dj2.gneiss.desc0"));
+<erebus:gneiss>.addTooltip(game.localize("dj2.gneiss.desc1"));
+<erebus:gneiss>.addTooltip(game.localize("dj2.gneiss.desc2"));
 
 # Bio-Velocity Tooltip
-<erebus:materials:8>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:8>.addTooltip(format.white("- Solifuges (in the Ulterior Outback biome)"));
-<erebus:materials:8>.addTooltip(format.white("- Centipedes (in most biomes)"));
+<erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc0"));
+<erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc1"));
+<erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc2"));
 
 # Supernatural Velocity Tooltip
-<erebus:materials:13>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:13>.addTooltip(format.white("- Solifuges (in the Ulterior Outback biome)"));
-<erebus:materials:13>.addTooltip(format.white("- Centipedes (in most biomes)"));
+<erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc0"));
+<erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc1"));
+<erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc2"));
 
 # Exoskeleton Plate Tooltip
-<erebus:materials>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials>.addTooltip(format.white("- Beetles (in Underground Jungles,"));
-<erebus:materials>.addTooltip(format.white("           Subterranean Savannahs and Elysian Fields)"));
-<erebus:materials>.addTooltip(format.white("- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)"));
+<erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc0"));
+<erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc1"));
+<erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc2"));
+<erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc3"));
 
 # Magma Crawler Eye Tooltip
-<erebus:materials:60>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:60>.addTooltip(format.white("- Magma Crawlers (in Antlion Overlord Pyramids)"));
+<erebus:materials:60>.addTooltip(game.localize("dj2.magma_crawler_eye.desc0"));
+<erebus:materials:60>.addTooltip(game.localize("dj2.magma_crawler_eye.desc1"));
 
 # Tarantula Leg Tooltip
-<erebus:erebus_food:4>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:erebus_food:4>.addTooltip(format.white("- Tarantulas (in most biomes)"));
+<erebus:erebus_food:4>.addTooltip(game.localize("dj2.tarantula_leg.desc0"));
+<erebus:erebus_food:4>.addTooltip(game.localize("dj2.tarantula_leg.desc1"));
 
 # Fly Wing Tooltip
-<erebus:materials:6>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:6>.addTooltip(format.white("- Flies (in all biomes)"));
-<erebus:materials:6>.addTooltip(format.white("- Botflies (in most biomes)"));
+<erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc0"));
+<erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc1"));
+<erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc2"));
 
 # Dragonfly Wing Tooltip
-<erebus:materials:24>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:24>.addTooltip(format.white("- Dragonflies (on Dragonfly Lilypads in"));
-<erebus:materials:24>.addTooltip(format.white("large water bodies within Submerged Swamps)"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc0"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc1"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc2"));
 
 # Elastic Fibre Tooltip
-<erebus:materials:9>.addTooltip(format.red(format.underline("Dropped by the following mobs:")));
-<erebus:materials:9>.addTooltip(format.white("- Locusts (in Elysian Fields and Subterranean Savannahs)"));
-<erebus:materials:9>.addTooltip(format.white("- Punchrooms (in Fungal Forests as an uncommon drop)"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc0"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc1"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc2"));
 
 # Cabbage Seeds Tooltip
-<erebus:cabbage_seeds>.addTooltip(format.white("Break any tallgrass in Erebus to obtain."));
-<erebus:cabbage_seeds>.addTooltip(format.white("Swamp Plants always drop these."));
+<erebus:cabbage_seeds>.addTooltip(game.localize("dj2.cabbage_seeds.desc0"));
+<erebus:cabbage_seeds>.addTooltip(game.localize("dj2.cabbage_seeds.desc1"));
 
 # Whetstone with Sand OreDict
 recipes.remove(<erebus:whetstone>);
@@ -115,14 +115,14 @@ recipes.addShapeless(<erebus:kaizers_fingers_mushroom> * 9, [<erebus:kaizers_fin
 
 # Wand of Animation
 mods.extendedcrafting.TableCrafting.addShaped(<erebus:wand_of_animation>,
-[[null, null, null, null, null, null, null, null, <extrautils2:itemdestructionwand>], 
-[null, null, null, null, null, null, <astralsorcery:itemilluminationwand>, <extrautils2:itembuilderswand>, null], 
-[null, null, null, null, <betterbuilderswands:wandstone>, <betterbuilderswands:wandiron>, <chisel:offsettool>, <enderutilities:icemelter>, null], 
-[null, null, null, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wanddiamond>, null, null], 
-[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:256>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wandunbreakable:12>, null, null], 
-[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, null, null, null], 
-[null, <astralsorcery:itemarchitectwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, null, null, null, null], 
-[<enderutilities:builderswand>, <astralsorcery:itemexchangewand>, <astralsorcery:itemgrapplewand>, null, null, null, null, null, null], 
+[[null, null, null, null, null, null, null, null, <extrautils2:itemdestructionwand>],
+[null, null, null, null, null, null, <astralsorcery:itemilluminationwand>, <extrautils2:itembuilderswand>, null],
+[null, null, null, null, <betterbuilderswands:wandstone>, <betterbuilderswands:wandiron>, <chisel:offsettool>, <enderutilities:icemelter>, null],
+[null, null, null, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wanddiamond>, null, null],
+[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <thermalfoundation:upgrade:256>, <contenttweaker:singularity_singularity>, <betterbuilderswands:wandunbreakable:12>, null, null],
+[null, null, <astralsorcery:itemwand>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, <contenttweaker:singularity_singularity>, null, null, null],
+[null, <astralsorcery:itemarchitectwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, <astralsorcery:itemwand>, null, null, null, null],
+[<enderutilities:builderswand>, <astralsorcery:itemexchangewand>, <astralsorcery:itemgrapplewand>, null, null, null, null, null, null],
 [<bewitchment:leonards_wand>, <botania:twigwand>, null, null, null, null, null, null, null]]);
 
 print("ENDING Erebus.zs");

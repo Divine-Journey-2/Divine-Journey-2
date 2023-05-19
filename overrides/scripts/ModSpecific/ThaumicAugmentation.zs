@@ -22,12 +22,12 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:fortif
 # Thaumium Caster's Gauntlet
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:gauntlet>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumicaugmentation:gauntlet", "GAUNTLET_THAUMIUM", 250, [<aspect:aer> * 24,<aspect:aqua> * 24,<aspect:ordo> * 24,<aspect:perditio> * 24,<aspect:terra> * 24,<aspect:ignis> * 24], <thaumicaugmentation:gauntlet>.withTag({color: 8022208}), [[null,<thaumcraft:plate:2>,<thaumcraft:plate:2>],[<thaumcraft:plate:2>,<thaumcraft:caster_basic>,<thaumcraft:fabric>],[<thaumcraft:plate:2>,<thaumcraft:thaumometer>,<thaumcraft:vis_resonator>]]);
-<thaumicaugmentation:gauntlet>.addTooltip(format.white("Remove your current Foci before crafting this!"));
+<thaumicaugmentation:gauntlet>.addTooltip(game.localize("dj2.gauntlet_warning.desc0"));
 
 # Voidseer Caster's Gauntlet
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:gauntlet:1>);
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:gauntlet_2", "GAUNTLET_VOID", <thaumicaugmentation:gauntlet:1>.withTag({color: 2498903}), 7, [<aspect:alienis> * 150,<aspect:vacuos> * 150,<aspect:potentia> * 100,<aspect:instrumentum> * 100], <thaumicaugmentation:gauntlet>, [<thaumcraft:fabric>,<bewitchment:diabolical_vein>,<thaumcraft:thaumometer>,<alchemistry:ingot:11>,<thaumcraft:plate:3>,<alchemistry:ingot:11>,<thaumcraft:vis_resonator>,<bewitchment:diabolical_vein>,<thaumcraft:fabric>,<thaumcraft:voidseer_charm>]);
-<thaumicaugmentation:gauntlet:1>.addTooltip(format.white("Remove your current Foci before crafting this!"));
+<thaumicaugmentation:gauntlet:1>.addTooltip(game.localize("dj2.gauntlet_warning.desc0"));
 
 # Harness Base
 recipes.remove(<thaumicaugmentation:material:4>);
@@ -72,25 +72,25 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:fracture_locat
 mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:fracture_locator", "", <thaumicaugmentation:fracture_locator>, 8, [<aspect:vacuos> * 240,<aspect:auram> * 200,<aspect:perditio> * 100], <contenttweaker:impetus_crystal>, [<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>,<thaumcraft:plate>,<contenttweaker:condensed_vis_crystal_vacuos>,<thaumcraft:plate>,<thaumcraft:nugget:10>]);
 
 # Void Stone
-<thaumicaugmentation:stone>.addTooltip(format.white("Base Stone of the Emptiness dimension."));
+<thaumicaugmentation:stone>.addTooltip(game.localize("dj2.emptiness_stone.desc0"));
 
 # Ancient Stone
-<thaumcraft:stone_ancient>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumcraft:stone_ancient>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Ancient Pedestal
-<thaumcraft:pedestal_ancient>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumcraft:pedestal_ancient>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Crusted Stone
-<thaumicaugmentation:stone:6>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumicaugmentation:stone:6>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Glowing Crusted Stone
-<thaumicaugmentation:stone:7>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumicaugmentation:stone:7>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Glyphed Stone
-<thaumcraft:stone_ancient_glyphed>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumcraft:stone_ancient_glyphed>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Ancient Bars
-<thaumicaugmentation:bars>.addTooltip(format.white("Found in Eldritch Spires in the Emptiness dimension."));
+<thaumicaugmentation:bars>.addTooltip(game.localize("dj2.emptiness_spires.desc0"));
 
 # Eldritch Stone
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:stone_eldritch_tile>);

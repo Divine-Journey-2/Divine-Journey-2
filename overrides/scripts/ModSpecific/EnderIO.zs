@@ -419,13 +419,13 @@ recipes.addShapedMirrored(<enderio:block_slice_and_splice>, [[<enderio:item_allo
 # Farming Station
 recipes.remove(<enderio:block_farm_station>);
 recipes.addShapedMirrored(<enderio:block_farm_station>, [[<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>],[<divinerpg:arlemite_hoe>,<enderio:item_material:53>,<divinerpg:rupee_hoe>],[<enderio:item_material:12>,<enderio:item_material:42>,<enderio:item_material:12>]]);
-<enderio:block_farm_station>.addTooltip(format.red(format.bold("WARNING: ")) + format.white("Do NOT use this machine to harvest crops"));
-<enderio:block_farm_station>.addTooltip(format.white("from Crop Sticks. It will always CRASH your game."));
-<enderio:block_farm_station>.addTooltip(format.white(format.italic("<Press Shift for alternatives>")));
-<enderio:block_farm_station>.addShiftTooltip(format.white("Instead, use either a Botania Drum of the Wild /"));
-<enderio:block_farm_station>.addShiftTooltip(format.white(" / Horn of the Wild, an Actually Additions Farmer,"));
-<enderio:block_farm_station>.addShiftTooltip(format.white("or an Industrial Foregoing Plant Interactor;"));
-<enderio:block_farm_station>.addShiftTooltip(format.white("along with a Ranged Collector or an Absorption Hopper."));
+<enderio:block_farm_station>.addTooltip(game.localize("dj2.farming_station.desc0"));
+<enderio:block_farm_station>.addTooltip(game.localize("dj2.farming_station.desc1"));
+<enderio:block_farm_station>.addTooltip(game.localize("dj2.farming_station.desc2"));
+<enderio:block_farm_station>.addShiftTooltip(game.localize("dj2.farming_station.desc3"));
+<enderio:block_farm_station>.addShiftTooltip(game.localize("dj2.farming_station.desc4"));
+<enderio:block_farm_station>.addShiftTooltip(game.localize("dj2.farming_station.desc5"));
+<enderio:block_farm_station>.addShiftTooltip(game.localize("dj2.farming_station.desc6"));
 
 # Pulsating Crystal
 recipes.remove(<enderio:item_material:14>);
@@ -659,7 +659,7 @@ function upgradeArmor(tier as string, type as string) {
     val fun as IRecipeFunction = function(out, ins, cInfo) { return out.withTag(ins.mark.tag); };
 
     recipes.remove(new);
-    new.addTooltip(format.gold("Keeps Enchantments and Upgrades when crafted."));
+    new.addTooltip(game.localize("dj2.upgrade_enderio_armor.desc0"));
     if (type == "helmet") recipes.addShaped(new, [[type2,old,type2],[type1,unique,type1]], fun);
     else if (type == "chestplate") recipes.addShaped(new, [[type2,unique,type2],[type1,old,type1],[type2,type1,type2]], fun);
     else if (type == "leggings") recipes.addShaped(new, [[type2,old,type2],[type1,unique,type1],[type1,null,type1]], fun);

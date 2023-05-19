@@ -64,10 +64,10 @@ mods.avaritia.ExtremeCrafting.addShaped("neutron_collector2",<avaritia:neutron_c
 [<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>,<extendedcrafting:material:32>]]);
 
 # Pile of Neutrons
-<avaritia:resource:2>.addTooltip(format.white("Created by the Neutron Collector every"));
-<avaritia:resource:2>.addTooltip(format.white("7111 ticks, or ~355 seconds/~6 minutes."));
-<avaritia:resource:2>.addTooltip(format.white("You can speed this up significantly"));
-<avaritia:resource:2>.addTooltip(format.white("with Watches of Flowing Time."));
+<avaritia:resource:2>.addTooltip(game.localize("dj2.pile_of_neutronium.desc0"));
+<avaritia:resource:2>.addTooltip(game.localize("dj2.pile_of_neutronium.desc1"));
+<avaritia:resource:2>.addTooltip(game.localize("dj2.pile_of_neutronium.desc2"));
+<avaritia:resource:2>.addTooltip(game.localize("dj2.pile_of_neutronium.desc3"));
 
 # Cosmic Meatballs
 mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);

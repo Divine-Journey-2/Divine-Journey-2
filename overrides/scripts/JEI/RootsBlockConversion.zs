@@ -36,7 +36,7 @@ function displayConversion(input as IIngredient, catalyst as IIngredient, output
     recipe.requireItem("input", input);
 
     if (!isNull(catalyst)) recipe.requireItem("catalyst", catalyst);
-    else recipe.requireItem("catalyst", <thaumcraft:barrier>.withTag({display:{Name:"§r§dNo catalyst"}}));
+    else recipe.requireItem("catalyst", <thaumcraft:barrier>.withTag({display:{Name:game.localize("dj2.roots_block_conversion.barrier.name")}}));
 
 
     <assembly:roots_block_conversion>.addJEIRecipe(recipe);

@@ -27,7 +27,7 @@ recipes.addShaped(<natura:blaze_hopper>, [[<ore:rodBlaze>,<ore:rodBlaze>,<ore:ro
 
 # Tooltip informing of sapling creation via Root's Transmutation Ritual
 for sapling in [<natura:overworld_sapling:0>, <natura:overworld_sapling:1>, <natura:overworld_sapling:2>, <natura:overworld_sapling:3>, <natura:overworld_sapling2:0>, <natura:overworld_sapling2:1>, <natura:overworld_sapling2:2>, <natura:overworld_sapling2:3>, <natura:redwood_sapling>, <natura:nether_sapling:0>, <natura:nether_sapling:1>, <natura:nether_sapling:2>, <natura:nether_sapling2:0>] as IItemStack[] {
-	sapling.addTooltip(format.white("Can be created using the Roots Transmutation Ritual."));
+	sapling.addTooltip(game.localize("dj2.transmutation_sapling.desc0"));
 }
 
 # Imp Leather from Mystical Agriculture Essences

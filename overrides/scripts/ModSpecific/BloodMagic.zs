@@ -11,6 +11,7 @@ import crafttweaker.item.IIngredient;
 import mods.botania.Apothecary;
 import mods.inworldcrafting.FluidToItem;
 import dj2addons.bloodmagic.HellfireForge as DJ2AddonsHellFireForge;
+import mods.zenutils.I18n;
 
 print("STARTING BloodMagic.zs");
 
@@ -163,15 +164,15 @@ function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, 
 
 # Speed Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:1>, <actuallyadditions:item_drill_upgrade_speed_iii>, <bloodmagic:slate:1> * 2);
-<bloodmagic:blood_rune:1>.addTooltip("Increases the speed LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.");
+<bloodmagic:blood_rune:1>.addTooltip(game.localize("dj2.rune_speed.desc0"));
 
 # Rune of Self-Sacrifice
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:4>, <thermalfoundation:storage_alloy:6>, <bloodmagic:slate:1> * 2);
-<bloodmagic:blood_rune:4>.addTooltip("Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.");
+<bloodmagic:blood_rune:4>.addTooltip(game.localize("dj2.rune_self_sacrifice.desc0"));
 
 # Rune of Sacrifice
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:3>, <thermalfoundation:storage_alloy:5>, <bloodmagic:slate:2> * 2);
-<bloodmagic:blood_rune:3>.addTooltip("Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.");
+<bloodmagic:blood_rune:3>.addTooltip(game.localize("dj2.rune_sacrifice.desc0"));
 
 # Apprentice Blood Orb
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:redstone_block>);
@@ -223,8 +224,8 @@ mods.bloodmagic.TartaricForge.addRecipe(<bloodmagic:soul_gem:1>.withTag({}), [<b
 
 # Rune of Capacity
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:6>, <enderio:block_tank:1>, <bloodmagic:slate:2> * 2);
-<bloodmagic:blood_rune:6>.addTooltip("Increases the capacity of the Blood Altar by §62,000§r LP per rune, additively.");
-<bloodmagic:blood_rune:6>.addTooltip("Does §4§onot§r stack with Runes of Augmented Capacity!");
+<bloodmagic:blood_rune:6>.addTooltip(game.localize("dj2.rune_capacity.desc0"));
+<bloodmagic:blood_rune:6>.addTooltip(game.localize("dj2.rune_capacity.desc1"));
 
 # Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
@@ -294,7 +295,7 @@ recipes.addShaped(<bloodmagic:activation_crystal:1>, [[null,<evilcraft:weather_c
 function newInscriptionToolRecipe(old as IItemStack, tool as IItemStack, new as IItemStack) {
     BloodAltar.removeRecipe(old);
     BloodAltar.addRecipe(tool.withTag({uses: 10}), new, 3, 40000, 60, 60);
-    tool.addTooltip(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!"));
+    tool.addTooltip(game.localize("dj2.elemental_tool.desc0"));
 }
 
 # Elemental Inscription Tool: Water
@@ -349,29 +350,29 @@ recipes.addShaped(<bloodmagic:demon_will_gauge>, [[null,<contenttweaker:praesidi
 
 # Rune of Augmented Capacity
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:7>, <bloodmagic:blood_rune:6>, <extrautils2:drum:3>, <bloodmagic:slate:3> * 2);
-<bloodmagic:blood_rune:7>.addTooltip("Increases the capacity of the Blood Altar by §610%§r per rune, multiplicitively.");
-<bloodmagic:blood_rune:7>.addTooltip("Does §4§onot§r stack with Runes of Capacity! Only switch when you will have §6>15§r.");
+<bloodmagic:blood_rune:7>.addTooltip(game.localize("dj2.rune_augmented_capacity.desc0"));
+<bloodmagic:blood_rune:7>.addTooltip(game.localize("dj2.rune_augmented_capacity.desc1"));
 
 # Efficiency Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:2>, <contenttweaker:rune_of_mana>, <bloodmagic:slate:3> * 2);
-<bloodmagic:blood_rune:2>.addTooltip("Reduces the progress drain when out of LP in the Blood Altar by §615%§r per rune, multiplicitively.");
+<bloodmagic:blood_rune:2>.addTooltip(game.localize("dj2.rune_efficiency.desc0"));
 
 # Charging Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:10>, <bloodmagic:blood_rune:1>, <botania:manaresource:8> * 3, <bloodmagic:slate:4> * 2);
-<bloodmagic:blood_rune:10>.addTooltip("Stores crafting progress while idle to speed up recipes. Too complex to list effects.");
+<bloodmagic:blood_rune:10>.addTooltip(game.localize("dj2.rune_charging.desc0"));
 
 # Displacement Rune
 blood_magic_add_rune_recipe(<bloodmagic:blood_rune:5>, <contenttweaker:rune_of_water>, <bloodmagic:slate:4> * 2);
-<bloodmagic:blood_rune:5>.addTooltip("Increases the LP I/O rate by §620%§r per rune, multiplicitively.");
+<bloodmagic:blood_rune:5>.addTooltip(game.localize("dj2.rune_displacement.desc0"));
 
 # Acceleration Rune
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:1>, <contenttweaker:aether> * 3, <bloodmagic:slate:4> * 2);
-<bloodmagic:blood_rune:9>.addTooltip("Reduces the operation interval by §61 tick§r per rune. Stacks to §619§r. Affects recipes both recipe and LP I/O.");
+<bloodmagic:blood_rune:9>.addTooltip(game.localize("dj2.rune_acceleration.desc0"));
 
 # Rune of the Orb
 blood_magic_add_rune_recipe_with_unique_input(<bloodmagic:blood_rune:8>, <bloodmagic:blood_rune:7>, <enderutilities:enderpart:17>, <bloodmagic:slate:4> * 2);
-<bloodmagic:blood_rune:8>.addTooltip("Increases the amount of LP that can be inserted into the Orb by §62%§r per rune, additively.");
-<bloodmagic:blood_rune:8>.addTooltip("Does §4§onot§r increase the speed.");
+<bloodmagic:blood_rune:8>.addTooltip(game.localize("dj2.rune_orb.desc0"));
+<bloodmagic:blood_rune:8>.addTooltip(game.localize("dj2.rune_orb.desc1"));
 
 # Air Sigil
 addBloodMagicSigilRecipeJustSwap(<bloodmagic:sigil_air>, <bloodmagic:component:2>, <bloodmagic:slate:1>, "airsigil");
@@ -546,23 +547,23 @@ recipes.addShapeless(<bloodmagic:decorative_brick:2>, [<bloodmagic:decorative_br
 recipes.addShaped(<bloodmagic:decorative_brick:3> * 4, [[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>],[<bloodmagic:decorative_brick:2>,<bloodmagic:decorative_brick:2>]]);
 
 # Weak Blood Shard tooltip
-<bloodmagic:blood_shard>.addTooltip(format.white("Slay mobs with your activated ") + format.red("Bound Blade"));
-<bloodmagic:blood_shard>.addTooltip(format.white("to obtain. Be wary though. While it's active,"));
-<bloodmagic:blood_shard>.addTooltip(format.white("it constantly drains LP from your Life Network!"));
+<bloodmagic:blood_shard>.addTooltip(game.localize("dj2.blood_shard.desc0"));
+<bloodmagic:blood_shard>.addTooltip(game.localize("dj2.blood_shard.desc1"));
+<bloodmagic:blood_shard>.addTooltip(game.localize("dj2.blood_shard.desc2"));
 
 # Tartaric Gem tooltips
-<bloodmagic:soul_gem:0>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("64") + format.white(" Will Quality."));
-<bloodmagic:soul_gem:1>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("256") + format.white(" Will Quality."));
-<bloodmagic:soul_gem:2>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("1024") + format.white(" Will Quality."));
-<bloodmagic:soul_gem:3>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("4096") + format.white(" Will Quality."));
-<bloodmagic:soul_gem:4>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("16,384") + format.white(" Will Quality."));
+<bloodmagic:soul_gem:0>.addTooltip(I18n.format("dj2.soul_gem.desc0", "64"));
+<bloodmagic:soul_gem:1>.addTooltip(I18n.format("dj2.soul_gem.desc0", "256"));
+<bloodmagic:soul_gem:2>.addTooltip(I18n.format("dj2.soul_gem.desc0", "1024"));
+<bloodmagic:soul_gem:3>.addTooltip(I18n.format("dj2.soul_gem.desc0", "4096"));
+<bloodmagic:soul_gem:4>.addTooltip(I18n.format("dj2.soul_gem.desc0", "16,384"));
 
 # Blood Orb tooltips
 function add_blood_orb_tooltip(id as string, amount as string, tier as string) {
 	var item = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:"~id as string});
-	item.addTooltip(format.white("This Blood Orb can store a base of ") + format.red(amount) + format.white(" Life Essence."));
+	item.addTooltip(I18n.format("dj2.blood_orb.desc0", amount));
 	if (tier > 1) {
-		item.addTooltip(format.white("This Blood Orb can only be filled in a tier ") + format.red(tier) + format.white(" or above Blood Altar"));
+		item.addTooltip(I18n.format("dj2.blood_orb.desc1", tier));
 	}
 }
 add_blood_orb_tooltip("weak", "5,000", 1);

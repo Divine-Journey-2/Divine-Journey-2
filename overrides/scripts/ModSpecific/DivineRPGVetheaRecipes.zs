@@ -167,24 +167,24 @@ recipes.addShapeless(<thermalfoundation:dye:4>, [<divinerpg:luna_bricks>,<divine
 recipes.addShapedMirrored(<immersiveengineering:tool>, [[null,<divinerpg:luna_bricks>,<thermalfoundation:material:32>],[null,<lightningcraft:rod:6>,<divinerpg:luna_bricks>],[<lightningcraft:rod:6>,null,null]]);
 
 # Crypt Wall
-<divinerpg:crypt_wall>.addTooltip(format.white("Found on all layers on Vethea. Simply"));
-<divinerpg:crypt_wall>.addTooltip(format.white("mine up the walls of these brown dungeons."));
+<divinerpg:crypt_wall>.addTooltip(game.localize("dj2.vethea_crypt_wall.desc0"));
+<divinerpg:crypt_wall>.addTooltip(game.localize("dj2.vethea_crypt_wall.desc1"));
 
 # Heliosis Lump
-<divinerpg:heliosis_lump>.addTooltip(format.white("Found on the top layer on Vethea,"));
-<divinerpg:heliosis_lump>.addTooltip(format.white("in special (brown) dungeons."));
+<divinerpg:heliosis_lump>.addTooltip(game.localize("dj2.vethea_heliosis_lump.desc0"));
+<divinerpg:heliosis_lump>.addTooltip(game.localize("dj2.vethea_heliosis_lump.desc1"));
 
 # Dream Melon
-<divinerpg:dream_melon>.addTooltip(format.white("Found inside Chests in small Crypts"));
-<divinerpg:dream_melon>.addTooltip(format.white("on the bottom layer of Vethea."));
+<divinerpg:dream_melon>.addTooltip(game.localize("dj2.vethea_dream_melon.desc0"));
+<divinerpg:dream_melon>.addTooltip(game.localize("dj2.vethea_dream_melon.desc1"));
 
 # Luna Brick
-<divinerpg:luna_bricks>.addTooltip(format.white("Found on the top layer of Vethea,"));
-<divinerpg:luna_bricks>.addTooltip(format.white("in small rectangular arenas."));
+<divinerpg:luna_bricks>.addTooltip(game.localize("dj2.vethea_luna_bricks.desc0"));
+<divinerpg:luna_bricks>.addTooltip(game.localize("dj2.vethea_luna_bricks.desc1"));
 
 # Moon Clock
 recipes.addShaped(<divinerpg:moon_clock>, [[<divinerpg:shiny_pearls>,<minecraft:clock>,<divinerpg:shiny_pearls>],[<minecraft:clock>,<contenttweaker:eye_of_the_nightmare>,<minecraft:clock>],[<divinerpg:shiny_pearls>,<minecraft:clock>,<divinerpg:shiny_pearls>]]);
-<divinerpg:moon_clock>.addTooltip(format.white("It is NOT advised to use this to fight Lady Luna,"));
-<divinerpg:moon_clock>.addTooltip(format.white("unless you're REALLY up for a challenge..."));
+<divinerpg:moon_clock>.addTooltip(game.localize("dj2.vethea_moon_clock.desc0"));
+<divinerpg:moon_clock>.addTooltip(game.localize("dj2.vethea_moon_clock.desc1"));
 
 print("ENDING DivineRPGVetheaRecipes.zs");

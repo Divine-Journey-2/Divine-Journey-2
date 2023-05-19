@@ -1,6 +1,7 @@
 #loader crafttweaker reloadable
 # Author: WaitingIdly
 
+import crafttweaker.text.ITextComponent;
 import crafttweaker.event.PlayerDeathDropsEvent;
 import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
@@ -177,8 +178,7 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     // Disable individual Elemental Inscription Tools
     // Without the `whatHand` part and just using `e.item` it constantly caused NPEs.
     if (whatHand(e.player, <bloodmagic:inscription_tool>) != crafttweaker.entity.IEntityEquipmentSlot.head())  {
-        e.player.sendStatusMessage(format.lightPurple("Elemental Inscription Tools cannot be used outside of an Elemental Diviner!") +
-        format.gold("\nDurability not actually consumed, just a desync."));
+        e.player.sendStatusMessage(game.localize("dj2.event.elemental_tool.desc0") + "\n" + game.localize("dj2.event.elemental_tool.desc1"));
         e.cancel();
     }
 
@@ -200,7 +200,7 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
                 e.world.setBlockState(<blockstate:divinerpg:ayeraco_spawn>, spawnLocation);
                 removeItemFromHand(e.player, <divinerpg:horde_horn>);
             } else {
-                e.player.sendChat("§bFailed to spawn - please use in open air.");
+                e.player.sendChat(game.localize("dj2.event.horde_horn.message"));
             }
         } else {
             e.player.sendChat("§b" + I18n.format("message.ayeraco_horde"));
@@ -314,7 +314,7 @@ events.onCommand(function(e as CommandEvent) {
 
 
 // Remove the TMG Death List from the inventory and drop it on the ground. This prevents a nested NBT issue.
-<tombmanygraves:death_list>.addTooltip(format.red("Dropped into the world on death."));
+<tombmanygraves:death_list>.addTooltip(game.localize("dj2.death_list.desc0"));
 
 // Doesnt get called if keepInventory is true, so we dont have to factor that possibility in.
 events.onPlayerDeathDrops(function(e as PlayerDeathDropsEvent) {

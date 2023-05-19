@@ -35,26 +35,21 @@ for i, name in sedimentaryStoneNames {
 	<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
 }
 
-val sand_tooltip1 = "Can be converted into vanilla Sand by crafting" as string;
-val sand_tooltip2 = "2 of them together in a horizontal line." as string;
-val gravel_tooltip1 = "Can be converted into vanilla Gravel by crafting" as string;
-val gravel_tooltip2 = "2 of them together in a horizontal line." as string;
-
 # Sand conversion tooltips
-<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
-<undergroundbiomes:igneous_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
-<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
-<undergroundbiomes:metamorphic_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
-<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip1)));
-<undergroundbiomes:sedimentary_sand:*>.addTooltip(format.darkPurple(format.italic(sand_tooltip2)));
+<undergroundbiomes:igneous_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc0"));
+<undergroundbiomes:igneous_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc1"));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc0"));
+<undergroundbiomes:metamorphic_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc1"));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc0"));
+<undergroundbiomes:sedimentary_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc1"));
 
 # Gravel conversion tooltips
-<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
-<undergroundbiomes:igneous_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
-<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
-<undergroundbiomes:metamorphic_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
-<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip1)));
-<undergroundbiomes:sedimentary_gravel:*>.addTooltip(format.darkPurple(format.italic(gravel_tooltip2)));
+<undergroundbiomes:igneous_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc0"));
+<undergroundbiomes:igneous_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc1"));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc0"));
+<undergroundbiomes:metamorphic_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc1"));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc0"));
+<undergroundbiomes:sedimentary_gravel:*>.addTooltip(game.localize("dj2.undergroundbiomes_gravel.desc1"));
 
 # UB Stone to materialStoneTool OreDict
 <ore:materialStoneTool>.addAll(<ore:stone>);

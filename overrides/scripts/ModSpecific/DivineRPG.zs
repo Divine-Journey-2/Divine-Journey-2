@@ -39,23 +39,23 @@ recipes.remove(<divinerpg:snow_globe>);
 recipes.addShaped(<divinerpg:snow_globe>, [[<ore:blockGlassColorless>,<minecraft:snow>,<ore:blockGlassColorless>],[<minecraft:snow>,<contenttweaker:atum_warrior>,<minecraft:snow>],[<divinerpg:shadow_stone>,<divinerpg:shadow_stone>,<divinerpg:shadow_stone>]]);
 
 # Infernal Flame
-<divinerpg:infernal_flame>.addTooltip(format.bold(format.white("Used to summon the ")) + format.bold(format.red("King of Scorchers")) + format.bold(format.white(" in the Nether.")));
+<divinerpg:infernal_flame>.addTooltip(game.localize("dj2.infernal_flame.desc0"));
 
 # Mysterious Clock
 recipes.remove(<divinerpg:mysterious_clock>);
 recipes.addShaped(<divinerpg:mysterious_clock>, [[<contenttweaker:steaming_restonia_crystal_block>,<minecraft:clock>,<contenttweaker:steaming_restonia_crystal_block>],[<minecraft:clock>,<extrautils2:decorativesolid:8>,<minecraft:clock>],[<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>,<divinerpg:corrupted_stone>]]);
-<divinerpg:mysterious_clock>.addTooltip(format.bold(format.white("Used to summon the ")) + format.bold(format.darkRed("Ancient Entity")) + format.bold(format.white(" in the Overworld.")));
+<divinerpg:mysterious_clock>.addTooltip(game.localize("dj2.mysterious_clock.desc0"));
 
 # Call of the Watcher
 recipes.remove(<divinerpg:call_of_the_watcher>);
 recipes.addShaped(<divinerpg:call_of_the_watcher>, [[<enderutilities:enderpart:2>,<divinerpg:watching_eye>,<enderutilities:enderpart:2>],[<divinerpg:watching_eye>,<extrautils2:decorativesolid:8>,<divinerpg:watching_eye>],[<divinerpg:molten_stone>,<divinerpg:molten_stone>,<divinerpg:molten_stone>]]);
-<divinerpg:call_of_the_watcher>.addTooltip(format.bold(format.white("Used to summon ")) + format.bold(format.red("The Watcher")) + format.bold(format.white(" in the Nether.")));
+<divinerpg:call_of_the_watcher>.addTooltip(game.localize("dj2.call_of_the_watcher.desc0"));
 
 # Horde Horn
 recipes.remove(<divinerpg:horde_horn>);
 recipes.addShaped(<divinerpg:horde_horn>, [[<thermalfoundation:storage:7>,<actuallyadditions:item_misc:15>,<thermalfoundation:storage:7>],[<actuallyadditions:item_misc:15>,<extrautils2:decorativesolid:8>,<actuallyadditions:item_misc:15>],[<divinerpg:ender_stone>,<divinerpg:ender_stone>,<divinerpg:ender_stone>]]);
-<divinerpg:horde_horn>.addTooltip(format.white("Used to summon the ") + format.gray("Ayeraco Horde") + format.white(" in the End."));
-<divinerpg:horde_horn>.addTooltip(format.white("It consists of the ") + format.blue("Blue") + format.white(", ") + format.green("Green") + format.white(", ") + format.yellow("Yellow") + format.white(", ") + format.red("Red") + format.white(" & ") + format.lightPurple("Purple") + format.white(" Ayeraco."));
+<divinerpg:horde_horn>.addTooltip(game.localize("dj2.horde_horn.desc0"));
+<divinerpg:horde_horn>.addTooltip(game.localize("dj2.horde_horn.desc1"));
 
 # Angelic Chestplate
 recipes.remove(<divinerpg:angelic_chestplate>);
@@ -68,8 +68,8 @@ recipes.addShaped(<divinerpg:divine_rock> * 14, [[<divinerpg:divine_shards>,<div
 # Twilight Clock
 recipes.remove(<divinerpg:twilight_clock>);
 recipes.addShaped(<divinerpg:twilight_clock>, [[<openblocks:tank>.withTag({tank: {FluidName: "cryotheum", Amount: 16000}}),<divinerpg:bluefire_stone>,<openblocks:tank>.withTag({tank: {FluidName: "cryotheum", Amount: 16000}})],[<divinerpg:bluefire_stone>,<enderutilities:enderpart:54>,<divinerpg:bluefire_stone>],[<enderio:block_alloy:6>,<minecraft:clock>,<enderio:block_alloy:6>]]);
-<divinerpg:twilight_clock>.addTooltip(format.white("Used to light the portals for ") + format.yellow("Eden") + format.white(", "));
-<divinerpg:twilight_clock>.addTooltip(format.blue("Wildwood") + format.white(", ") + format.lightPurple("Apalachia") + format.white(", Skythern & ") + format.darkGray("Mortum") + format.white("."));
+<divinerpg:twilight_clock>.addTooltip(game.localize("dj2.twilight_clock.desc0"));
+<divinerpg:twilight_clock>.addTooltip(game.localize("dj2.twilight_clock.desc1"));
 
 function divinerpg_new_gem_and_chunk_recipes(fragments as IItemStack, gem as IItemStack, chunk as IItemStack) {
 	recipes.remove(gem);
@@ -106,8 +106,8 @@ recipes.remove(<divinerpg:bone_chest>);
 recipes.addShaped(<divinerpg:bone_chest>, [[<minecraft:bone_block>,<minecraft:bone>,<minecraft:bone_block>],[<minecraft:bone>,<minecraft:iron_nugget>,<minecraft:bone>],[<minecraft:bone_block>,<minecraft:bone>,<minecraft:bone_block>]]);
 
 # Heart of the Sunstorm
-<divinerpg:eden_heart>.addTooltip(format.white("To obtain, find a Sun Altar in Eden!"));
-<divinerpg:eden_heart>.addTooltip(format.white("Offer an Eden Chunk and defeat the Sunstorm!"));
+<divinerpg:eden_heart>.addTooltip(game.localize("dj2.eden_heart.desc0"));
+<divinerpg:eden_heart>.addTooltip(game.localize("dj2.eden_heart.desc1"));
 
 # Eden Block
 recipes.remove(<divinerpg:eden_block>);
@@ -230,27 +230,27 @@ mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:arcana_portal_frame> * 
 
 # Dungeon Bookshelf
 recipes.remove(<divinerpg:dungeon_bookshelf>);
-<divinerpg:dungeon_bookshelf>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white("."));
-<divinerpg:dungeon_bookshelf>.addTooltip(format.white("Use Silk Touch to obtain."));
+<divinerpg:dungeon_bookshelf>.addTooltip(game.localize("dj2.dungeon_bookshelf.desc0"));
+<divinerpg:dungeon_bookshelf>.addTooltip(game.localize("dj2.dungeon_bookshelf.desc1"));
 
 # Acceleron
-<divinerpg:acceleron>.addTooltip(format.white("Bought from ") + format.aqua("Datticon") + format.white(" in the ") + format.blue("Dungeon of Arcana") + format.white("."));
+<divinerpg:acceleron>.addTooltip(game.localize("dj2.acceleron.desc0"));
 
 # Raw Arcanium
-<divinerpg:raw_arcanium>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white(","));
-<divinerpg:raw_arcanium>.addTooltip(format.white("behind closed doors."));
+<divinerpg:raw_arcanium>.addTooltip(game.localize("dj2.raw_arcanium.desc0"));
+<divinerpg:raw_arcanium>.addTooltip(game.localize("dj2.raw_arcanium.desc1"));
 
 # Molten Furnace
-<divinerpg:molten_furnace>.addTooltip(format.white("Found in the ") + format.blue("Dungeon of Arcana") + format.white(","));
-<divinerpg:molten_furnace>.addTooltip(format.white("in special NPC rooms."));
+<divinerpg:molten_furnace>.addTooltip(game.localize("dj2.molten_furnace.desc0"));
+<divinerpg:molten_furnace>.addTooltip(game.localize("dj2.molten_furnace.desc1"));
 
 # Dungeon Tokens
-<divinerpg:dungeon_tokens>.addTooltip(format.white("Dropped by Parasecta and Dramix in the ") + format.blue("Dungeon"));
-<divinerpg:dungeon_tokens>.addTooltip(format.blue("of Arcana") + format.white(". They're summoned at their respective"));
-<divinerpg:dungeon_tokens>.addTooltip(format.white("Altars by placing a Wizards Book on top."));
+<divinerpg:dungeon_tokens>.addTooltip(game.localize("dj2.dungeon_tokens.desc0"));
+<divinerpg:dungeon_tokens>.addTooltip(game.localize("dj2.dungeon_tokens.desc1"));
+<divinerpg:dungeon_tokens>.addTooltip(game.localize("dj2.dungeon_tokens.desc2"));
 
 # Wizards Book
-<divinerpg:wizards_book>.addTooltip(format.white("Bought from ") + format.darkRed("Lord Vatticus") + format.white(" in the ") + format.blue("Dungeon of Arcana") + format.white("."));
+<divinerpg:wizards_book>.addTooltip(game.localize("dj2.wizards_book.desc0"));
 
 # Mortum Block
 recipes.remove(<divinerpg:mortum_block>);

@@ -44,23 +44,23 @@ atumNecklaceArtifactOreDict.addItems([<atum:atums_homecoming>, <atum:shus_swiftn
 
 # Tooltips
 for item in atumMeleeArtifactOreDict.items {
-	item.addTooltip(format.darkRed(format.bold("Considered as an Atum Melee Artifact.")));
+	item.addTooltip(game.localize("dj2.atum_artifact_melee.desc0"));
 }
 
 for item in atumRangedArtifactOreDict.items {
-	item.addTooltip(format.darkRed(format.bold("Considered as an Atum Ranged Artifact.")));
+	item.addTooltip(game.localize("dj2.atum_artifact_ranged.desc1"));
 }
 
 for item in atumArmorArtifactOreDict.items {
-	item.addTooltip(format.darkRed(format.bold("Considered as an Atum Armor Artifact.")));
+	item.addTooltip(game.localize("dj2.atum_artifact_armor.desc2"));
 }
 
 for item in atumNecklaceArtifactOreDict.items {
-	item.addTooltip(format.darkRed(format.bold("Considered as an Atum Necklace Artifact.")));
+	item.addTooltip(game.localize("dj2.atum_artifact_necklace.desc3"));
 }
 
-<atum:relic_ore>.addTooltip(format.white("Mine it up regularly for ") + format.darkRed(format.bold("Dirty Idols, ")) + format.white("or use "));
-<atum:relic_ore>.addTooltip(format.blue(format.bold("Silk Touch")) + format.white(" to obtain the Ore for further processing."));
+<atum:relic_ore>.addTooltip(game.localize("dj2.relic_ore.desc0"));
+<atum:relic_ore>.addTooltip(game.localize("dj2.relic_ore.desc1"));
 
 # Atum Equipment
 recipes.addShapeless(<contenttweaker:atum_equipment>, [atumMeleeArtifactOreDict, atumRangedArtifactOreDict]);
@@ -108,12 +108,12 @@ recipes.addShapedMirrored(<atum:linen_cloth> * 2, [[null,<atum:linen_thread>,<or
 
 # Enchanted Golden Date
 recipes.remove(<atum:golden_date_enchanted>);
-<atum:golden_date_enchanted>.addTooltip(format.darkRed(format.bold("Primarily obtained by trading with Sunspeakers.")));
-<atum:golden_date_enchanted>.addTooltip(format.red("Can also be enchanted in The Aether Altar."));
+<atum:golden_date_enchanted>.addTooltip(game.localize("dj2.golden_date_enchanted.desc0"));
+<atum:golden_date_enchanted>.addTooltip(game.localize("dj2.golden_date_enchanted.desc1"));
 mods.aether_legacy.Enchanter.registerEnchantment(<atum:golden_date>, <atum:golden_date_enchanted>, 100);
 
 # Emmer Flour Tooltip
-<atum:emmer_flour>.addTooltip(format.darkRed(format.italic("Right Click me on a Water source block to convert me into Emmer Dough!")));
+<atum:emmer_flour>.addTooltip(game.localize("dj2.emmer_flour.desc0"));
 
 # Linen Bandage
 recipes.remove(<atum:linen_bandage>);

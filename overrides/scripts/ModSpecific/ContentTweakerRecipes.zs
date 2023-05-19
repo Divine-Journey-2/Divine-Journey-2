@@ -52,6 +52,7 @@ import mods.roots.Fey;
 import mods.inworldcrafting.FluidToItem;
 import mods.alchemistry.Combiner;
 import mods.enderio.Vat;
+import mods.zenutils.I18n;
 
 print("STARTING ContentTweakerRecipes.zs");
 
@@ -93,13 +94,13 @@ recipes.addShapeless(<contenttweaker:raw_industrial_leather>, [<contenttweaker:t
 # Twilight Rock
 recipes.addShapeless(<contenttweaker:twilight_rock>, [<contenttweaker:baykoks_bloodied_stone>, <immersiveengineering:material:18>, <roots:stalicripe>, <ore:dyeBrown>]);
 recipes.addShapeless(<contenttweaker:twilight_rock>, [<twilightforest:block_storage:4>, <twilightforest:cooked_venison>, <twilightforest:root>, <twilightforest:charm_of_keeping_1>]);
-<contenttweaker:twilight_rock>.addTooltip(format.red(format.bold("This is the item used to enter the Twilight Forest.")));
-<contenttweaker:twilight_rock>.addTooltip("If your portal gets destroyed while you are inside, there is a Twilight Forest recipe so you can escape.");
+<contenttweaker:twilight_rock>.addTooltip(game.localize("dj2.twilight_rock.desc0"));
+<contenttweaker:twilight_rock>.addTooltip(game.localize("dj2.twilight_rock.desc1"));
 
 # Twilight Key
 recipes.addShaped(<contenttweaker:twilight_key>, [[<ore:ingotConstantan>,<ore:nuggetConstantan>],[<ore:ingotConstantan>,null],[<contenttweaker:twilight_rock>,null]]);
-<contenttweaker:twilight_key>.addTooltip(format.red(format.bold("Only use this item if you wish to skip the Twilight Forest.")));
-<contenttweaker:twilight_key>.addTooltip(format.red(format.bold("It can be used to craft the Lamp of Cinders, which is the final item of the Twilight Forest progression.")));
+<contenttweaker:twilight_key>.addTooltip(game.localize("dj2.twilight_key.desc0"));
+<contenttweaker:twilight_key>.addTooltip(game.localize("dj2.twilight_key.desc1"));
 
 # Artificial Scarab Body
 recipes.addShaped(<contenttweaker:artificial_scarab_body>, [[<lightningcraft:rod:5>,<immersiveengineering:material:19>,<lightningcraft:rod:5>],[<contenttweaker:industrial_leather>,<mysticalworld:carapace>,<contenttweaker:industrial_leather>],[null,<minecraft:gold_block>,null]]);
@@ -203,7 +204,7 @@ recipes.addShapeless(<contenttweaker:mixed_mushroom_compound_block>, [<erebus:da
 
 # Hardened Ember Moosh
 recipes.addShaped(<contenttweaker:hardened_amber_moosh>, [[<erebus:amber_glass>,<contenttweaker:mixed_mushroom_compound_block>,<erebus:amber_glass>],[<contenttweaker:mixed_mushroom_compound_block>,<erebus:amber_glass>,<contenttweaker:mixed_mushroom_compound_block>],[<erebus:amber_glass>,<contenttweaker:mixed_mushroom_compound_block>,<erebus:amber_glass>]]);
-<contenttweaker:hardened_amber_moosh>.addTooltip(format.italic(format.darkPurple("Surprisingly tough!")));
+<contenttweaker:hardened_amber_moosh>.addTooltip(game.localize("dj2.hardened_amber_moosh.desc0"));
 
 # Power Egg
 recipes.addShapedMirrored(<contenttweaker:power_egg>, [[<erebus:materials:27>,<erebus:materials:9>,<erebus:materials:16>],[<erebus:tarantula_egg>,<erebus:jade_block>,<erebus:antlion_egg>],[<erebus:materials:27>,<erebus:materials:9>,<erebus:materials:16>]]);
@@ -211,20 +212,20 @@ recipes.addShapedMirrored(<contenttweaker:power_egg>, [[<erebus:materials:27>,<e
 # Crown of Skies
 recipes.addShaped(<contenttweaker:crown_of_skies>, [[null,<ore:woolWhite>,null],[<contenttweaker:hardened_amber_moosh>,<contenttweaker:power_egg>,<contenttweaker:hardened_amber_moosh>],[<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>]]);
 recipes.addShaped(<contenttweaker:crown_of_skies>, [[<contenttweaker:hardened_amber_moosh>,<contenttweaker:crown_of_skies>.reuse(),<contenttweaker:hardened_amber_moosh>]]);
-<contenttweaker:crown_of_skies>.addTooltip(format.red(format.bold("Right click on an Aether Portal block to gain access to the dimension!")));
-<contenttweaker:crown_of_skies>.addTooltip(format.red(format.bold("Warning: This CONSUMES the item.")));
-<contenttweaker:crown_of_skies>.addTooltip(format.white(format.bold("Can be duplicated so other team members can also use it!")));
-<contenttweaker:crown_of_skies>.addTooltip(format.white("(The duplication recipe doesn't use up the input Crown.)"));
+<contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc0"));
+<contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc1"));
+<contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc2"));
+<contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc3"));
 
 # Aether Power Core
 recipes.addShapedMirrored(<contenttweaker:aether_power_core>, [[<ore:ingotEnergeticAlloy>,<ore:blockEnergeticAlloy>,<ore:ingotEnergeticAlloy>],[<contenttweaker:bronze_aether_coin>,<contenttweaker:silver_aether_coin>,<contenttweaker:golden_aether_coin>],[<ore:ingotEnergeticAlloy>,<ore:blockEnergeticAlloy>,<ore:ingotEnergeticAlloy>]]);
 
 # Golder Molder Folder
 recipes.addShaped(<contenttweaker:golder_molder_folder>, [[<aether_legacy:ice_ring>,<aether_legacy:ice_ring>,null],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<aether_legacy:ice_pendant>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,null]]);
-<contenttweaker:golder_molder_folder>.addTooltip(format.darkRed(format.italic("An older boulder told 'er: Hold 'er shoulder!")));
-<contenttweaker:golder_molder_folder>.addTooltip(format.white(format.italic("Has 16 uses!")));
-<contenttweaker:golder_molder_folder>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:golder_molder_folder>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:golder_molder_folder>.addTooltip(game.localize("dj2.golder_molder_folder.desc0"));
+<contenttweaker:golder_molder_folder>.addTooltip(game.localize("dj2.golder_molder_folder.desc1"));
+<contenttweaker:golder_molder_folder>.addTooltip(game.localize("dj2.golder_molder_folder.desc2"));
+<contenttweaker:golder_molder_folder>.addTooltip(game.localize("dj2.golder_molder_folder.desc3"));
 
 # Enchanted Golden Berry
 recipes.addShaped(<contenttweaker:enchanted_golden_berry> * 4, [[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>],[<aether_legacy:golden_amber>,<contenttweaker:golder_molder_folder>.anyDamage().transformDamage(1),<aether_legacy:golden_amber>],[<aether_legacy:enchanted_blueberry>,<aether_legacy:enchanted_gravitite>,<aether_legacy:enchanted_blueberry>]]);
@@ -247,8 +248,8 @@ recipes.addShapeless(<contenttweaker:aechomedirus> * 9, [<contenttweaker:aechome
 # Resonating Orb
 mods.immersiveengineering.ArcFurnace.addRecipe(<contenttweaker:resonating_orb>, <contenttweaker:healing_stone_block> * 2, null, 240, 800, [<contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2]);
 #EIOAlloySmelter.addRecipe(<contenttweaker:resonating_orb>, [<contenttweaker:healing_stone_block> * 2, <contenttweaker:aechomedirus_block> * 2, <contenttweaker:enchanted_golden_berry_necklace> * 2], 40000);
-<contenttweaker:resonating_orb>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:resonating_orb>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:resonating_orb>.addTooltip(game.localize("dj2.resonating_orb.desc0"));
+<contenttweaker:resonating_orb>.addTooltip(game.localize("dj2.resonating_orb.desc1"));
 
 # Santa Armor Set
 recipes.addShapeless(<contenttweaker:santa_armor_set>, [<divinerpg:santa_helmet>,<divinerpg:santa_chestplate>,<divinerpg:santa_leggings>,<divinerpg:santa_boots>]);
@@ -305,8 +306,8 @@ recipes.addShapeless(<contenttweaker:open_ingot> * 9, [<contenttweaker:open_bloc
 
 # Thermal Conductor Rod
 recipes.addShapedMirrored(<contenttweaker:thermal_conductor_rod>, [[null,<extrautils2:suncrystal>,<extrautils2:decorativesolidwood:1>],[<extrautils2:suncrystal>,<extrautils2:ingredients:5>,<extrautils2:suncrystal>],[<extrautils2:decorativesolidwood:1>,<extrautils2:suncrystal>,null]]);
-<contenttweaker:thermal_conductor_rod>.addTooltip(format.white("Has 800 uses."));
-<contenttweaker:thermal_conductor_rod>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:thermal_conductor_rod>.addTooltip(game.localize("dj2.thermal_conductor_rod.desc0"));
+<contenttweaker:thermal_conductor_rod>.addTooltip(game.localize("dj2.thermal_conductor_rod.desc1"));
 
 # RF Powder
 recipes.addShapeless(<contenttweaker:rf_powder> * 2, [<contenttweaker:thermal_conductor_rod>.anyDamage().transformDamage(1),<contenttweaker:gp_powder>,<thermalfoundation:material:99>,<minecraft:experience_bottle>]);
@@ -421,8 +422,7 @@ recipes.addShaped(<contenttweaker:unholy_token>, [[<contenttweaker:ayeraco_wing>
 # Eden, Wildwood, Apalachia, Skythern, Mortum, Moon & Asteroids Door Key Tooltips
 val divinerpg_galacticraft_keys = [<contenttweaker:eden_door_key>,<contenttweaker:wildwood_door_key>,<contenttweaker:apalachia_door_key>,<contenttweaker:skythern_door_key>,<contenttweaker:mortum_door_key>,<contenttweaker:moon_door_key>,<contenttweaker:venus_door_key>,<contenttweaker:asteroids_door_key>] as IItemStack[];
 for i in 0 to 8 {
-	divinerpg_galacticraft_keys[i].addTooltip(format.red("Right Click to clear any " + divinerpg_galacticraft_dimension_names_upper[i] + " Door Blocks in a 5 block radius."));
-	#divinerpg_galacticraft_keys[i].addTooltip(format.red("If none are found, it shows an error message in chat."));
+    divinerpg_galacticraft_keys[i].addTooltip(I18n.format("dj2.divinerpg_galacticraft_keys.desc", divinerpg_galacticraft_dimension_names_upper[i]));
 }
 
 # Dread Crystal
@@ -435,15 +435,15 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:hardened_blood_droplet>, <t
 
 # Rainbow Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:rainbow_slate>, <bloodmagic:slate:4>, 5, 120000, 300, 250);
-<contenttweaker:rainbow_slate>.addTooltip("Infused stone inside of a Blood Altar.");
+<contenttweaker:rainbow_slate>.addTooltip(game.localize("tooltip.bloodmagic.slate.desc"));
 
 # Vibrant Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:vibrant_slate>, <contenttweaker:rainbow_slate>, 5, 300000, 400, 250);
-<contenttweaker:vibrant_slate>.addTooltip("Infused stone inside of a Blood Altar.");
+<contenttweaker:vibrant_slate>.addTooltip(game.localize("tooltip.bloodmagic.slate.desc"));
 
 # Perfect Slate
 mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:perfect_slate>, <contenttweaker:vibrant_slate>, 5, 1000000, 500, 250);
-<contenttweaker:perfect_slate>.addTooltip("Infused stone inside of a Blood Altar.");
+<contenttweaker:perfect_slate>.addTooltip(game.localize("tooltip.bloodmagic.slate.desc"));
 
 # Simple Catalyst
 mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:simple_catalyst>, [<minecraft:glass_bottle>,<minecraft:redstone>,<minecraft:glowstone_dust>,<minecraft:gunpowder>,<minecraft:sugar>,<thermalfoundation:material:99>], 25, 2, 1);
@@ -593,10 +593,10 @@ addCustomBloodMagicCore(<contenttweaker:suppression_core>, <contenttweaker:praes
 addCustomBloodMagicCore(<contenttweaker:potency_core>, <contenttweaker:potentia>, <contenttweaker:potent_reagent>, blood_orb_at_least_tier_4);
 
 # Unholy Essence
-<contenttweaker:unholy_essence>.addTooltip(format.yellow("Found in Eden Dungeons."));
+<contenttweaker:unholy_essence>.addTooltip(game.localize("dj2.unholy_essence.desc0"));
 
 # Feather of the Wild Woods
-<contenttweaker:feather_of_the_wild_woods>.addTooltip(format.blue("Found in Wildwood Dungeons."));
+<contenttweaker:feather_of_the_wild_woods>.addTooltip(game.localize("dj2.feather_of_the_wild_woods.desc0"));
 
 # Bloodied Dust
 mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:dull_dust>, <liquid:evilcraftblood> * 10000, 2, <contenttweaker:bloodied_dust>, 100, 0);
@@ -632,9 +632,9 @@ val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg
 for dim_dirt in dimensionalDirts {
 	mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
 }
-<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("It seems only certain Dimensional Dirts")));
-<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("have the ability to be transformed")));
-<contenttweaker:livingmatter>.addTooltip(format.white(format.italic("into Livingmatter... How peculiar.")));
+<contenttweaker:livingmatter>.addTooltip(game.localize("dj2.livingmatter.desc0"));
+<contenttweaker:livingmatter>.addTooltip(game.localize("dj2.livingmatter.desc1"));
+<contenttweaker:livingmatter>.addTooltip(game.localize("dj2.livingmatter.desc2"));
 
 # Hydrid Abyssalium Ingot & Block
 EIOAlloySmelter.addRecipe(<contenttweaker:hybrid_abyssalium_ingot>, [<abyssalcraft:abychunk>, <abyssalcraft:abyingot>, <abyssalcraft:dreadiumingot>], 16000);
@@ -645,7 +645,7 @@ recipes.addShaped(<contenttweaker:hybrid_abyssalium_block>, [[<contenttweaker:hy
 recipes.addShapeless(<contenttweaker:hybrid_abyssalium_ingot> * 9, [<contenttweaker:hybrid_abyssalium_block>]);
 
 # Effulgent Spike of Apalachia
-<contenttweaker:effulgent_spike_of_apalachia>.addTooltip(format.lightPurple("Found in Apalachia Dungeons."));
+<contenttweaker:effulgent_spike_of_apalachia>.addTooltip(game.localize("dj2.effulgent_spike_of_apalachia.desc0"));
 
 # Effulgent Apalachian Spike Crown
 recipes.addShaped(<contenttweaker:effulgent_apalachian_spike_crown>, [[null,<contenttweaker:effulgent_spike_of_apalachia>,null],[<contenttweaker:effulgent_spike_of_apalachia>,<contenttweaker:effulgent_spike_of_apalachia>,<contenttweaker:effulgent_spike_of_apalachia>]]);
@@ -658,18 +658,18 @@ recipes.addShaped(<contenttweaker:effulgent_apalachian_spike_crown>, [[null,<con
 <ore:dustElectrotine>.remove(<projectred-core:resource_item:105>);
 recipes.addShaped(<contenttweaker:electrotine> * 16, [[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>],[<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>,<mysticalagriculture:electrotine_essence>]]);
 
-<contenttweaker:electrotine_ore>.addTooltip(format.white("Use the Blood Magic ") + format.red("Mark of the Fallen Tower") + format.white(" Ritual"));
-<contenttweaker:electrotine_ore>.addTooltip(format.white("to summon a Meteor containing ") + format.aqua("Electrotine Ore") + format.white("."));
-<contenttweaker:electrotine_ore>.addTooltip(format.darkGray(format.italic("<Hold Shift for more info>")));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("1) Get a Master Ritual Stone and an additional 100 Ritual Stones."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("2) Use a ") + format.gray("Ritual Diviner [Dusk]") + format.white(" to set up the Ritual."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("3) Place an Obsidian Block about 10-11 blocks above the Master"));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   Ritual Stone to catch the falling Meteor, so your Ritual Stones"));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("   aren't ruined."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("4) Have at least ") + format.red("1,000,000 LP") + format.white(" in your Life Network."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("5) Activate the Ritual with an ") + format.darkAqua("Awakened Activation Crystal") + format.white("."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("6) Throw a ") + format.blue("Potency Core") + format.white(" on top of the Master Ritual Stone."));
-<contenttweaker:electrotine_ore>.addShiftTooltip(format.white("7) Mine up the results. You can automate the process with a Builder."));
+<contenttweaker:electrotine_ore>.addTooltip(game.localize("dj2.electrotine_ore.desc0"));
+<contenttweaker:electrotine_ore>.addTooltip(game.localize("dj2.electrotine_ore.desc1"));
+<contenttweaker:electrotine_ore>.addTooltip(game.localize("dj2.electrotine_ore.desc2"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc3"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc4"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc5"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc6"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc7"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc8"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc9"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc10"));
+<contenttweaker:electrotine_ore>.addShiftTooltip(game.localize("dj2.electrotine_ore.desc11"));
 
 # Angelic Silicon/Crystal Mixture
 recipes.addShaped(<contenttweaker:angelic_silicon_crystal_mixture>, [[<bloodmagic:item_demon_crystal:2>,<projectred-core:resource_item:341>,<bloodmagic:item_demon_crystal:2>],[<bloodmagic:item_demon_crystal:3>,<projectred-core:resource_item:320>,<bloodmagic:item_demon_crystal:3>],[<bloodmagic:item_demon_crystal:4>,<projectred-core:resource_item:342>,<bloodmagic:item_demon_crystal:4>]]);
@@ -729,7 +729,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_narslimmus>, [<or
 
 # Jaded Petal
 mods.botania.Apothecary.addRecipe(<contenttweaker:jaded_petal>, [<ore:petalRed>,<ore:petalPurple>,<ore:petalLime>,<ore:petalBlack>]);
-<contenttweaker:jaded_petal>.addTooltip(format.darkGreen(format.italic("A certain server owner's favorite Petal!")));
+<contenttweaker:jaded_petal>.addTooltip(game.localize("dj2.jaded_petal.desc0"));
 
 # Thorny Belle Petal
 mods.botania.Apothecary.addRecipe(<contenttweaker:thorny_belle_petal>, [<ore:petalRed>,<ore:petalRed>,<ore:petalRed>,<ore:petalBlack>]);
@@ -910,8 +910,8 @@ function(out, cInfo, player){
 
 
 recipes.addShapeless(<contenttweaker:soul_of_the_dark_realm> * 9, [<contenttweaker:dark_realm_soul_block>]);
-<contenttweaker:soul_of_the_dark_realm>.addTooltip(format.white("Obtained by removing Souls from ") + format.gray("Sacthoth's Soul Reaper Blade") + format.white("."));
-<contenttweaker:soul_of_the_dark_realm>.addTooltip(format.white("To obtain Souls, slay monsters with the sword."));
+<contenttweaker:soul_of_the_dark_realm>.addTooltip(game.localize("dj2.soul_of_the_dark_realm.desc0"));
+<contenttweaker:soul_of_the_dark_realm>.addTooltip(game.localize("dj2.soul_of_the_dark_realm.desc1"));
 
 # Dark Realm Soul Block
 recipes.addShaped(<contenttweaker:dark_realm_soul_block>, [[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>],[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>],[<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>,<contenttweaker:soul_of_the_dark_realm>]]);
@@ -941,30 +941,29 @@ recipes.addShaped(<contenttweaker:rainbow_tablet>, [[null,<contenttweaker:rainbo
 mods.thaumcraft.Infusion.registerRecipe("contenttweaker:RainbowTablet", "INFUSION", <contenttweaker:rainbow_tablet> * 32, 8, [<aspect:victus> * 99, <aspect:ignis> * 99, <aspect:sol> * 99, <aspect:herba> * 99, <aspect:instrumentum> * 99, <aspect:praecantatio> * 99], <contenttweaker:plasma_core>, [<botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>, <botania:manaresource:14>, <contenttweaker:rainbow_slate>]);
 
 # Abyssal Wasteland Teleporter
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("you'd have to fly a long way to find any Abyssal"));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("Wasteland Strongholds, then simply Right Click with"));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("this item to teleport to (0,80,0)."));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold("Has 3 uses.")));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
-<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(format.white("or Hang Glider equipped before you teleport."));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc0"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc1"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc2"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc3"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc4"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc5"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc6"));
+<contenttweaker:abyssal_wasteland_teleporter>.addTooltip(game.localize("dj2.abyssal_wasteland_teleporter.desc7"));
 
 # Omothol Teleporter
-<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold(format.underline("For multiplayer purposes:"))));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("If your portal is very far away from (0,0), and"));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("you'd have to fly a long way to reach the Omothol "));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("Dungeon, then simply Right Click with this item"));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("to teleport to (0,80,0)."));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("One time use.")));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white(format.bold("Warning:")) + format.white(" You definitely want to have a Jetpack"));
-<contenttweaker:omothol_teleporter>.addTooltip(format.white("or Hang Glider equipped before you teleport."));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc0"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc1"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc2"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc3"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc4"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc5"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc6"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc7"));
 /*
-<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("* May or may not cause horrible nightmares from")));
-<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  this point on in your life. Please consult your")));
-<contenttweaker:omothol_teleporter>.addTooltip(format.gray(format.italic("  local psychiatrist for further information.")));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc8"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc9"));
+<contenttweaker:omothol_teleporter>.addTooltip(game.localize("dj2.omothol_teleporter.desc10"));
 */
-
 # Infused Magical Core
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:infused_magical_core>, 2000000, 5000, <contenttweaker:magical_core>, [<minecraft:experience_bottle>,<thaumcraft:salis_mundus>,<minecraft:experience_bottle>,<evilcraft:garmonbozia>,<minecraft:experience_bottle>,<thaumcraft:salis_mundus>]);
 
@@ -975,7 +974,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:base_focal_s
 mods.thaumcraft.Crucible.registerRecipe("contenttweaker:magical_leather", "", <contenttweaker:magical_leather>, <contenttweaker:blood_infused_leather>, [<aspect:praecantatio> * 10, <aspect:bestia> * 5, <aspect:auram> * 5, <aspect:spiritus> * 5]);
 
 # Knowledge of the Sky
-<contenttweaker:knowledge_of_the_sky>.addTooltip(format.white("Found in Skythern Dungeons."));
+<contenttweaker:knowledge_of_the_sky>.addTooltip(game.localize("dj2.knowledge_of_the_sky.desc0"));
 
 # Matrix Multiplication Unit
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:matrix_multiplication_unit> * 8, 2500000, 5000, <industrialforegoing:black_hole_unit>, [<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>,<contenttweaker:knowledge_of_the_sky>,<contenttweaker:rainbow_tablet>]);
@@ -993,13 +992,13 @@ for aspect in allThaumcraftAspects {
 mods.thaumcraft.Infusion.registerRecipe("contenttweaker:stabilized_end_crystal", "", <contenttweaker:stabilized_end_crystal>, 4, [<aspect:alienis> * 100,<aspect:auram> * 100,<aspect:sol> * 80,<aspect:lux> * 40,<aspect:fabrico> * 40], <minecraft:end_crystal>, [<thaumcraft:plate:2>,<thaumcraft:vis_resonator>,<thaumcraft:plate:2>,<enderutilities:enderpart:17>]);
 
 # Mysterious Leaking Soul
-<contenttweaker:mysterious_leaking_soul>.addTooltip(format.darkGray("Found in Mortum Dungeons."));
+<contenttweaker:mysterious_leaking_soul>.addTooltip(game.localize("dj2.mysterious_leaking_soul.desc0"));
 
 # Woodland Mansion Locator Token
 mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_locator_token>, <minecraft:map>, <actuallyadditions:block_crystal_empowered:2>, <actuallyadditions:block_crystal_empowered:1>, <actuallyadditions:block_crystal_empowered:4>, <contenttweaker:empowered_glod_crystal_block>, 10000, 100, [0.222, 0.1641, 0.0508]);
-<contenttweaker:woodland_mansion_locator_token>.addTooltip(format.white(format.bold("One time use!")));
-<minecraft:totem_of_undying>.addTooltip(format.white("No luck finding a Woodland Mansion?"));
-<minecraft:totem_of_undying>.addTooltip(format.white("Craft a ") + format.white(format.bold("Woodland Mansion Locator Token")) + format.white("!"));
+<contenttweaker:woodland_mansion_locator_token>.addTooltip(game.localize("dj2.woodland_mansion_locator_token.desc0"));
+<minecraft:totem_of_undying>.addTooltip(game.localize("dj2.totem_of_undying.desc0"));
+<minecraft:totem_of_undying>.addTooltip(game.localize("dj2.totem_of_undying.desc1"));
 
 # Brew of the Void
 WitchesCauldron.addRecipe([<contenttweaker:brew_of_the_void>], [<bewitchment:bottle_of_blood>,<bewitchment:belladonna>,<bewitchment:aconitum>,<bewitchment:wormwood>,<thaumcraft:ingot>,<thaumcraft:ingot>,<minecraft:mycelium>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})]);
@@ -1035,26 +1034,26 @@ recipes.addShapeless(<bewitchment:stone_ichor> * 2, [<contenttweaker:witches_sto
 
 # Flame Devourer Pendant
 recipes.addShapedMirrored(<contenttweaker:flame_devourer_pendant>, [[<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>,<bewitchment:bottled_hellfire>],[<bewitchment:fiery_unguent>.noReturn(),<bewitchment:sigil_purity>,<bewitchment:demonic_elixir>.noReturn()],[<contenttweaker:rune_of_wrath>,<contenttweaker:travelers_tenacity>,<contenttweaker:rune_of_wrath>]]);
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("When you are inflicted with the ") + format.red("Hell Fire") + format.white(" status"));
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("effect by the Brazier, Right Clicking this item"));
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("will yield a piece of ") + format.gold("Ignition") + format.white(", which is used to"));
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("unlock ") + format.gold("LightningCraft") + format.white("."));
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("Check Codex Infernalis / Curses / Conflagration,"));
-<contenttweaker:flame_devourer_pendant>.addTooltip(format.white("and use it with your own Taglock!"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc0"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc1"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc2"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc3"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc4"));
+<contenttweaker:flame_devourer_pendant>.addTooltip(game.localize("dj2.flame_devourer_pendant.desc5"));
 
 # Ignition
-<contenttweaker:ignition>.addTooltip(format.white("Obtained by using a Flame Devourer Pendant"));
-<contenttweaker:ignition>.addTooltip(format.white("while the Hellfire Curse is on the user."));
-<contenttweaker:ignition>.addTooltip(format.white("Check Codex Infernalis / Curses / Conflagration,"));
-<contenttweaker:ignition>.addTooltip(format.white("and use it with your own Taglock!"));
+<contenttweaker:ignition>.addTooltip(game.localize("dj2.ignition.desc0"));
+<contenttweaker:ignition>.addTooltip(game.localize("dj2.ignition.desc1"));
+<contenttweaker:ignition>.addTooltip(game.localize("dj2.ignition.desc2"));
+<contenttweaker:ignition>.addTooltip(game.localize("dj2.ignition.desc3"));
 
 # Death Core
 recipes.addShaped(<contenttweaker:death_core>, [[<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>],[<bewitchment:poppet_deathprotection>,<thermalexpansion:florb>.withTag({Fluid: "liquid_death"}),<bewitchment:poppet_deathprotection>],[<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>,<bewitchment:poppet_deathprotection>]]);
 
 # Shard of the Grotesque
-<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Obtained by slaying Ghosts spawned by"));
-<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("the Spiritual Rift Ritual. Consult your"));
-<contenttweaker:shard_of_the_grotesque>.addTooltip(format.white("Book of Shadows for more info."));
+<contenttweaker:shard_of_the_grotesque>.addTooltip(game.localize("dj2.shard_of_the_grotesque.desc0"));
+<contenttweaker:shard_of_the_grotesque>.addTooltip(game.localize("dj2.shard_of_the_grotesque.desc1"));
+<contenttweaker:shard_of_the_grotesque>.addTooltip(game.localize("dj2.shard_of_the_grotesque.desc2"));
 
 # Molten Cold Iron
 MagmaCrucible.addRecipe(<liquid:cold_iron> * 144, <bewitchment:cold_iron_ingot>, 4000);
@@ -1090,8 +1089,8 @@ function(out, ins, cInfo) {
 		return null;
 	}
 }, null);
-<contenttweaker:conducted_impetus>.addTooltip(format.white("Requires an ") + format.lightPurple("Impetus Conductor") + format.white(" with"));
-<contenttweaker:conducted_impetus>.addTooltip(format.white("Impetus Level: ") + format.darkGreen("Maximum") + format.white("."));
+<contenttweaker:conducted_impetus>.addTooltip(game.localize("dj2.conducted_impetus.desc0"));
+<contenttweaker:conducted_impetus>.addTooltip(game.localize("dj2.conducted_impetus.desc1"));
 
 function checkBiomesAtPositions(biomeName as string, player_pos as Position3f, biomeLocations as int[][], cInfo as ICraftingInfo) as int {
 	var numOfMatches = 0 as int;
@@ -1143,23 +1142,23 @@ recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft
 			return null;
 		}
 	}, null);
-<contenttweaker:arcanium_base>.addTooltip(format.white("This item is only craftable if you stand in a 7x7"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("concentric square of the following biomes (from"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("the outermost layer to the innermost square):"));
-<contenttweaker:arcanium_base>.addTooltip(format.darkPurple("Mortum") + format.white(" biome, ") + format.red("Hell (Nether)") + format.white(" biome, ") + format.green("Magical Forest"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("biome, and ") + format.aqua("Ocean") + format.white(" biome. To do this, use an Arcane"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("Terraformer. Check the quest book -> Chapter 21:"));
-<contenttweaker:arcanium_base>.addTooltip(format.white("'Ritual of the Arcane' quest for a better explanation!"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc0"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc1"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc2"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc3"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc4"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc5"));
+<contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc6"));
 
 # Primordial Fragment
 recipes.addShapeless(<contenttweaker:primordial_fragment>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1)]);
 recipes.addShapeless(<contenttweaker:primordial_fragment>, [<contenttweaker:goddess_pearl>.reuse()]);
-<contenttweaker:primordial_fragment>.addTooltip(format.white("Takes 1 durability of a ") + format.gold("Primordial Pearl") + format.white(" to craft."));
+<contenttweaker:primordial_fragment>.addTooltip(game.localize("dj2.primordial_fragment.desc0"));
 
 # Ritualistic Biome Checker
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:ritualistic_biome_checker", "", 25, [<aspect:terra> * 5,<aspect:aer> * 3], <contenttweaker:ritualistic_biome_checker>, [[<botania:managlasspane>,<thaumicaugmentation:material:5>,<botania:managlasspane>],[<thaumcraft:plate>,<thaumcraft:morphic_resonator>,<thaumcraft:plate>],[null,<thaumcraft:plate>,null]]);
-<contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("Used for the Ritual of the Arcane,"));
-<contenttweaker:ritualistic_biome_checker>.addTooltip(format.white("detailed in Chapter 21 of the quest book."));
+<contenttweaker:ritualistic_biome_checker>.addTooltip(game.localize("dj2.ritualistic_biome_checker.desc0"));
+<contenttweaker:ritualistic_biome_checker>.addTooltip(game.localize("dj2.ritualistic_biome_checker.desc1"));
 
 # Dungeon Token
 recipes.addShapeless(<contenttweaker:dungeon_token> * 5, [<divinerpg:dungeon_tokens>]);
@@ -1228,14 +1227,14 @@ function(out, ins, cInfo) {
 	}
 
 }, null);
-<contenttweaker:astral_core>.addTooltip(format.white("To craft this, you will need 4 ") + format.blue("Attuned Celestial Crystals"));
-<contenttweaker:astral_core>.addTooltip(format.white("that each have a ") + format.red("unique trait") + format.white(" of a Faint Constellation:"));
-<contenttweaker:astral_core>.addTooltip(format.lightPurple("Alcara") + format.white(", ") + format.gray("Gelu") + format.white(", ") + format.green("Ulteria") + format.white(", and ") + format.gold("Vorux") + format.white(". To add a trait to a Crystal:"));
-<contenttweaker:astral_core>.addTooltip(format.white("1. Attune it to any Constellation."));
-<contenttweaker:astral_core>.addTooltip(format.white("2. Wait until a Dim Constellation is available at night."));
-<contenttweaker:astral_core>.addTooltip(format.white("3. Attune it again to the Dim Constellation (this will add a"));
-<contenttweaker:astral_core>.addTooltip(format.white("   ") + format.blue("Trait") + format.white(" modifier to it)."));
-<contenttweaker:astral_core>.addTooltip(format.white(format.bold("CANNOT BE AUTOCRAFTED.")));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc0"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc1"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc2"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc3"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc4"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc5"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc6"));
+<contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc7"));
 
 # Star of Revelation
 mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation>,
@@ -1246,8 +1245,8 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:star_of_revelation
 [null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null],
 [<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>,<astralsorcery:blockbore>,<astralsorcery:itemusabledust>,<astralsorcery:iteminfusedglass>,<astralsorcery:itemusabledust>],
 [<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemusabledust>,null,<astralsorcery:itemcraftingcomponent:1>,null,<astralsorcery:itemusabledust>,<astralsorcery:itemcraftingcomponent:1>]]);
-<contenttweaker:star_of_revelation>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:star_of_revelation>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:star_of_revelation>.addTooltip(game.localize("dj2.star_of_revelation.desc0"));
+<contenttweaker:star_of_revelation>.addTooltip(game.localize("dj2.star_of_revelation.desc1"));
 
 # Galactic Ingot
 recipes.addShapeless(<contenttweaker:galactic_ingot> * 5, [<contenttweaker:star_of_revelation>.reuse(),<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemcraftingcomponent:4>]);
@@ -1284,16 +1283,16 @@ mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<contenttweaker:cheesy_wafer
 recipes.addShaped(<contenttweaker:sapphire_accelerator>, [[<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>,<contenttweaker:cheesy_wafer>],[<galacticraftcore:item_basic_moon:2>,<galacticraftcore:heavy_plating>,<galacticraftcore:item_basic_moon:2>],[<galacticraftcore:item_basic_moon:2>,<simplyjetpacks:metaitemmods:11>,<galacticraftcore:item_basic_moon:2>]]);
 
 # Spacerock
-<contenttweaker:spacerock>.addTooltip(format.white("Found in custom ") + format.gray("Moon") + format.white(" Dungeons."));
+<contenttweaker:spacerock>.addTooltip(game.localize("dj2.spacerock.desc0"));
 
 # Secret Alien Technology
-<contenttweaker:secret_alien_technology>.addTooltip(format.white("Found in custom ") + format.red("Mars") + format.white(" dungeons."));
+<contenttweaker:secret_alien_technology>.addTooltip(game.localize("dj2.secret_alien_technology.desc0"));
 
 # Chunk of the Meteor that ended the Era of Dinosaurs
-<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>.addTooltip(format.white("Found in custom dungeons in the ") + format.gray("Asteroid Belt") + format.white("."));
+<contenttweaker:chunk_of_the_meteor_that_ended_the_era_of_dinosaurs>.addTooltip(game.localize("dj2.chunk_of_the_meteor_that_ended_the_era_of_dinosaurs.desc0"));
 
 # Fragment of the Sun
-<contenttweaker:fragment_of_the_sun>.addTooltip(format.white("Found in custom ") + format.gold("Venus") + format.white(" dungeons."));
+<contenttweaker:fragment_of_the_sun>.addTooltip(game.localize("dj2.fragment_of_the_sun.desc0"));
 
 # Titanium Box
 recipes.addShaped(<contenttweaker:titanium_box>, [[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>],[<galacticraftplanets:item_basic_asteroids:6>,<galacticraftplanets:item_basic_asteroids:5>,<galacticraftplanets:item_basic_asteroids:6>],[<contenttweaker:titanium_plate>,<galacticraftplanets:item_basic_asteroids:6>,<contenttweaker:titanium_plate>]]);
@@ -1341,11 +1340,11 @@ function(out,ins,cInfo) {
 	return null;
 }, null);
 recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<rftools:infused_diamond>,<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]]);
-<contenttweaker:crystal_core>.addTooltip(format.white("If using the Rock Crystal recipe,"));
-<contenttweaker:crystal_core>.addTooltip(format.white("the input Rock Crystal has to have:"));
-<contenttweaker:crystal_core>.addTooltip(format.blue("Size >= 300") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
-<contenttweaker:crystal_core>.addTooltip(format.white("Before unlocking the Infused Diamond recipe,"));
-<contenttweaker:crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
+<contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc0"));
+<contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc1"));
+<contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc2"));
+<contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc3"));
+<contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc4"));
 
 # Celestial Crystal Core
 recipes.addShaped("celestial_crystal_core", <contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<astralsorcery:itemcelestialcrystal>.marked("celestial_crystal"),<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]],
@@ -1362,11 +1361,11 @@ function(out,ins,cInfo) {
 	return null;
 }, null);
 recipes.addShaped(<contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<avaritia:resource:3>,<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]]);
-<contenttweaker:celestial_crystal_core>.addTooltip(format.white("If using the Celestial Crystal recipe,"));
-<contenttweaker:celestial_crystal_core>.addTooltip(format.white("the input Celestial Crystal has to have:"));
-<contenttweaker:celestial_crystal_core>.addTooltip(format.blue("Size >= 700") + format.white(" and ") + format.blue("Purity >= 75%") + format.white("."));
-<contenttweaker:celestial_crystal_core>.addTooltip(format.white("Before unlocking the Neutronium Nugget recipe,"));
-<contenttweaker:celestial_crystal_core>.addTooltip(format.white("it can only be ") + format.red("manually crafted") + format.white("."));
+<contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc0"));
+<contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc1"));
+<contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc2"));
+<contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc3"));
+<contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc4"));
 
 # Photovoltaic Cell VII
 recipes.addShaped(<contenttweaker:photovoltaic_cell_vii> * 3, [[<ore:blockGlassMagenta>,<ore:blockGlassMagenta>,<ore:blockGlassMagenta>],[<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>,<draconicevolution:wyvern_energy_core>],[<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>,<solarflux:photovoltaic_cell_6>]]);
@@ -1448,18 +1447,18 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 
 # Solar Seeds
 # recipe in config/modularmachinery/recipes/weak_fusion_plant_contenttweaker_solar_seeds.json
-<contenttweaker:solar_seeds>.addTooltip(format.white("Can only be planted on Crop Sticks."));
+<contenttweaker:solar_seeds>.addTooltip(game.localize("dj2.solar_seeds.desc0"));
 
 # Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
-<contenttweaker:apalachia_door_key2>.addTooltip(format.red("Use it the same way as the previous key to ascend further."));
+<contenttweaker:apalachia_door_key2>.addTooltip(game.localize("dj2.apalachia_door_key2.desc0"));
 
 # Skythern Door Key from Fragments
 recipes.addShaped(<contenttweaker:skythern_door_key2>, [[null,<contenttweaker:skythern_door_key_fragment>,null],[<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>,<contenttweaker:skythern_door_key_fragment>],[null,<contenttweaker:skythern_door_key_fragment>,null]]);
-<contenttweaker:skythern_door_key2>.addTooltip(format.red("Use it on the Skythern Boss Door!"));
+<contenttweaker:skythern_door_key2>.addTooltip(game.localize("dj2.skythern_door_key2.desc0"));
 
 # Venus Boss Door Key tooltip
-<contenttweaker:venus_door_key2>.addTooltip(format.red("Right Click to clear any Venus Boss Door Blocks in a 5 block radius."));
+<contenttweaker:venus_door_key2>.addTooltip(game.localize("dj2.venus_door_key2.desc0"));
 
 # Moon Door Key from Fragments
 recipes.addShaped(<contenttweaker:moon_door_key>, [[<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>,<contenttweaker:moon_key_fragment>]]);
@@ -1564,8 +1563,8 @@ mods.avaritia.Compressor.add("tnt_singularity", <contenttweaker:tnt_singularity>
 # recipe in config/brandon3055/CustomFusionRecipes.json
 
 # White Matter
-<contenttweaker:white_matter>.addTooltip(format.white("Can only be created from EMC."));
-<contenttweaker:white_matter>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
+<contenttweaker:white_matter>.addTooltip(game.localize("dj2.white_matter.desc0"));
+<contenttweaker:white_matter>.addTooltip(game.localize("dj2.white_matter.desc1"));
 
 # Anti Air
 mods.abyssalcraft.InfusionRitual.addRitual("anti_air", 4, 53, 20000, false, <contenttweaker:anti_air>, <contenttweaker:white_matter>, [<extendedcrafting:singularity_custom:141>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>,<contenttweaker:condensed_vis_crystal_aer>,<botania:manaresource:15>,<contenttweaker:anti_hydrogen>,<contenttweaker:rune_of_air>], false);
@@ -1667,7 +1666,15 @@ for c in logic_puzzle_characters {
 }
 
 # Book of Logic
-val book_of_logic = <minecraft:written_book>.withTag({pages: ["{\"text\":\"What is the §c§lAge§r, §c§lNumber of friends§r \\u0026 §c§lHeight (in cm)§r of §lSteve§r, §lAlex§r and §lHerobine§r?\\n\\nUse the following 9 statements to figure it out:\"}", "{\"text\":\"1) Herobrine\\u0027s only got one friend, Notch.\\n\\n2) Steve is one year older than Alex.\\n\\n3) Steve and Herobrine are the same height.\"}", "{\"text\":\"4) 20 years ago, Herobrine was twice as old as the combined age of Steve and Alex.\\n\\n5) Steve is accumulating 61 friends every year. Impressive!\"}","{\"text\":\"6) The difference between the number of friends of Alex and Steve is exactly Herobrine\\u0027s height.\\n\\n7) Alex was born 66 cm tall. She gained 4 cm of height every year since then.\"}", "{\"text\":\"8) If every year, starting from now, Herobrine were to double his friend count, then in 11 years he would have 331 fewer friends than Steve. (Remember, Steve also gains friends every year!)\"}", "{\"text\":\"9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\\n\\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an\"}", "{\"text\":\"Essence of Thought in the Crafting Table!\\n\\nGood luck!\"}"], author: "Atricos", title: "§lBook of Logic", resolved: 1 as byte}) as IItemStack;
+val book_of_logic = <minecraft:written_book>.withTag({pages: [
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc0") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc1") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc2") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc3") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc4") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc5") + "\"}",
+        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc6") + "\"}"
+    ], author: "Atricos", title: game.localize("dj2.book_of_logic.name"), resolved: 1 as byte}) as IItemStack;
 recipes.addShapeless(book_of_logic, [<contenttweaker:essence_of_foundation>,<minecraft:book>]);
 mods.jei.JEI.addItem(book_of_logic);
 
@@ -1682,10 +1689,10 @@ function(out,ins,cInfo) {
 	}
 	return null;
 }, null);
-<contenttweaker:essence_of_logic>.addTooltip(format.white("Craft the Book of Logic and solve the puzzle!"));
-<contenttweaker:essence_of_logic>.addTooltip(format.white("Use Steve, Alex and Herobrine with the correct"));
-<contenttweaker:essence_of_logic>.addTooltip(format.white("Age, Number of friends and Height to craft this item!"));
-<contenttweaker:essence_of_logic>.addTooltip(format.white(format.bold("It can only be manually crafted!")));
+<contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc0"));
+<contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc1"));
+<contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc2"));
+<contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc3"));
 
 # Age Modifier
 recipes.addShapeless(<contenttweaker:age_modifier>, [<extrautils2:ingredients:9>,<minecraft:bone>]);
@@ -1815,7 +1822,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<extendedcrafting:singularit
 
 # Essence of Infinity
 mods.botania.RuneAltar.addRecipe(<contenttweaker:essence_of_infinity>, [<contenttweaker:essence_of_matter>,<contenttweaker:essence_of_time>,<contenttweaker:essence_of_repetition>], 50000000);
-<contenttweaker:essence_of_infinity>.addTooltip(format.white(format.bold("Requires 50 full Mana Pools to craft.")));
+<contenttweaker:essence_of_infinity>.addTooltip(game.localize("dj2.essence_of_infinity.desc0"));
 
 # Photovoltaic Cell IX
 recipes.addShaped(<contenttweaker:photovoltaic_cell_ix> * 3, [[<ore:blockGlassBlack>,<ore:blockGlassBlack>,<ore:blockGlassBlack>],[<draconicadditions:chaotic_energy_core>,<draconicadditions:chaotic_energy_core>,<draconicadditions:chaotic_energy_core>],[<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>,<contenttweaker:photovoltaic_cell_viii>]]);
@@ -1863,11 +1870,11 @@ recipes.addShaped(<contenttweaker:ultimate_machine_frame>, [[<rftools:creative_s
 
 # Colored Light Adhesive Yielding (C.L.A.Y.)
 # recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_clay.json
-<contenttweaker:clay>.addTooltip(format.darkPurple(format.italic("Finally balanced!")));
+<contenttweaker:clay>.addTooltip(game.localize("dj2.clay.desc0"));
 
 # Nature's Blessing
 mods.botania.RuneAltar.addRecipe(<contenttweaker:natures_blessing>, [<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<botania:overgrowthseed>,<contenttweaker:rune_of_pride>,<contenttweaker:rune_of_envy>,<contenttweaker:rune_of_wrath>,<contenttweaker:rune_of_sloth>,<contenttweaker:rune_of_greed>,<contenttweaker:rune_of_gluttony>,<contenttweaker:rune_of_lust>,<contenttweaker:rune_of_mana>,<contenttweaker:rune_of_deception>], 1000000);
-<contenttweaker:natures_blessing>.addTooltip(format.white("Requires 1 full Mana Pool to craft."));
+<contenttweaker:natures_blessing>.addTooltip(game.localize("dj2.natures_blessing.desc0"));
 
 # Reinforced Machine Accelerator
 recipes.addShaped(<contenttweaker:reinforced_machine_accelerator>, [[<alchemistry:ingot:104>,<bloodmagic:blood_rune:9>,<alchemistry:ingot:104>],[<bloodmagic:blood_rune:9>,<modularmachinery:blockcasing:4>,<bloodmagic:blood_rune:9>],[<alchemistry:ingot:104>,<bloodmagic:blood_rune:9>,<alchemistry:ingot:104>]]);
@@ -1904,11 +1911,11 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/
 <botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),<botania:brewflask>.withTag({brewKey: "thaumcraft:warpward"}),
 <thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>,<thaumicaugmentation:material:5>
 ]);
-<contenttweaker:unwarpification_talisman>.addTooltip(format.white("Right Click to set your Thaumcraft Warp level to 0!"));
+<contenttweaker:unwarpification_talisman>.addTooltip(game.localize("dj2.unwarpification_talisman.desc0"));
 
 # Goddess' Pearl
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<alchemistry:ingot:42>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>,<alchemistry:ingot:12>,<thaumcraft:primordial_pearl>]);
-<contenttweaker:goddess_pearl>.addTooltip(format.red("Does not get consumed by regular crafting."));
-<contenttweaker:goddess_pearl>.addTooltip(format.red(format.bold("WARNING: ")) + format.gray(format.bold("AE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!")));
+<contenttweaker:goddess_pearl>.addTooltip(game.localize("dj2.goddess_pearl.desc0"));
+<contenttweaker:goddess_pearl>.addTooltip(game.localize("dj2.goddess_pearl.desc1"));
 
 print("ENDING ContentTweakerRecipes.zs");

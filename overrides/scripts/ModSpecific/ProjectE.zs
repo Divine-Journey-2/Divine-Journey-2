@@ -23,9 +23,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_philosophers_sto
 [<contenttweaker:gerc_crystal>,<contenttweaker:ruby_rubidium>,<rftoolsdim:biome_absorber>,<contenttweaker:zysc_baach_sheet>,<contenttweaker:corrupted_dragon_token>,<contenttweaker:zysc_baach_sheet>,<rftoolsdim:time_absorber>,<contenttweaker:ruby_rubidium>,<contenttweaker:gerc_crystal>],
 [null,<contenttweaker:gerc_crystal>,<contenttweaker:celestial_crystal_core>,<contenttweaker:ruby_rubidium>,<contenttweaker:ruby_rubidium>,<contenttweaker:ruby_rubidium>,<contenttweaker:celestial_crystal_core>,<contenttweaker:gerc_crystal>,null],
 [null,null,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,null,null]]);
-<projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("It's said that the main ingredient for")));
-<projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("a Philosopher's Stone ... is human life.")));
-<projecte:item.pe_philosophers_stone>.addShiftTooltip(format.darkPurple(format.italic("How odd.")));
+<projecte:item.pe_philosophers_stone>.addShiftTooltip(game.localize("dj2.pe_philosophers_stone.desc0"));
+<projecte:item.pe_philosophers_stone>.addShiftTooltip(game.localize("dj2.pe_philosophers_stone.desc1"));
+<projecte:item.pe_philosophers_stone>.addShiftTooltip(game.localize("dj2.pe_philosophers_stone.desc2"));
 
 # Low Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust>);
@@ -57,7 +57,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_transmutation_ta
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>]]);
 # Commented out due to Extended Crafting not supporting noReturn()
-# <projecte:item.pe_transmutation_tablet>.addTooltip(format.red(format.bold("Warning: ")) + format.white("Crafting uses up the input Philosopher's Stone."));
+# <projecte:item.pe_transmutation_tablet>.addTooltip(game.localize("dj2.pe_transmutation_tablet.desc0"));
 
 # Energy Condenser
 recipes.remove(<projecte:condenser_mk1>);
@@ -75,13 +75,13 @@ recipes.addShaped(<projecte:item.pe_tome>, [[<alchemistry:ingot:66>,<contenttwea
 
 # Dark Matter
 recipes.removeShaped(<projecte:item.pe_matter>);
-<projecte:item.pe_matter>.addTooltip(format.white("Can only be created from EMC."));
-<projecte:item.pe_matter>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
+<projecte:item.pe_matter>.addTooltip(game.localize("dj2.projecte_matter.desc0"));
+<projecte:item.pe_matter>.addTooltip(game.localize("dj2.projecte_matter.desc1"));
 
 # Red Matter
 recipes.removeShaped(<projecte:item.pe_matter:1>);
-<projecte:item.pe_matter:1>.addTooltip(format.white("Can only be created from EMC."));
-<projecte:item.pe_matter:1>.addTooltip(format.white("Use the Tome of Knowledge to learn all transmutations."));
+<projecte:item.pe_matter:1>.addTooltip(game.localize("dj2.projecte_matter.desc0"));
+<projecte:item.pe_matter:1>.addTooltip(game.localize("dj2.projecte_matter.desc1"));
 
 # High Covalence Dust
 recipes.remove(<projecte:item.pe_covalence_dust:2>);

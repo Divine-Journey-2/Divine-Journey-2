@@ -17,10 +17,10 @@ recipes.removeShaped(<quark:iron_plate:1> * 24, [[<minecraft:iron_ingot>,<minecr
 <ore:tallow>.remove(<quark:tallow>);
 
 # Witch Hat
-<quark:witch_hat>.addTooltip(format.white("Dropped rarely by Witches."));
+<quark:witch_hat>.addTooltip(game.localize("dj2.witch_hat.desc0"));
 
 # Dragon Scale tooltip & recipe from Mystical Agriculture Essences
-<quark:enderdragon_scale>.addTooltip(format.white("Obtained after defeating the Ender Dragon for the second or more time."));
+<quark:enderdragon_scale>.addTooltip(game.localize("dj2.enderdragon_scale.desc0"));
 recipes.addShapeless(<quark:enderdragon_scale>, [<divinerpg:kraken_scale>,<mysticalagradditions:stuff:2>]);
 
 # Sandy Bricks with Sand OreDict

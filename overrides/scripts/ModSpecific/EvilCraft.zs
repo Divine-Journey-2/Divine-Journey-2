@@ -130,7 +130,7 @@ mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:mossy_cobblestone>,
 
 # Blood Chest
 recipes.remove(<evilcraft:blood_chest>);
-<evilcraft:blood_chest>.addTooltip(format.red("Item disabled. Makes repairing items trivial."));
+<evilcraft:blood_chest>.addTooltip(game.localize("dj2.blood_chest.desc0"));
 
 # Gold Promise Acceptor
 mods.evilcraft.BloodInfuser.removeRecipesWithOutput(<evilcraft:promise_acceptor:1>);

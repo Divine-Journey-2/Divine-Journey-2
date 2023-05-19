@@ -20,8 +20,8 @@ recipes.addShaped(<abyssalcraft:crate>, [[<ore:logWood>,<ore:plankWood>,<ore:log
 
 # Monolith Stone
 recipes.addShaped(<abyssalcraft:stone:7> * 32, [[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>],[<quantumflux:darkstone>,<extrautils2:decorativesolid:8>,<quantumflux:darkstone>],[<enderio:item_alloy_ingot:6>,<quantumflux:darkstone>,<enderio:item_alloy_ingot:6>]]);
-<abyssalcraft:stone:7>.addTooltip(format.gray("Can be obtained by mining the walls of "));
-<abyssalcraft:stone:7>.addTooltip(format.gray("Shoggoth dens, but can also be crafted."));
+<abyssalcraft:stone:7>.addTooltip(game.localize("dj2.monolith_stone.desc0"));
+<abyssalcraft:stone:7>.addTooltip(game.localize("dj2.monolith_stone.desc1"));
 
 function add_abyssalcraft_statue_recipe(output as IItemStack, main_input as IItemStack) {
 	recipes.addShaped(output, [[main_input,<abyssalcraft:shoggothflesh>,main_input],[main_input,<contenttweaker:unholy_essence>,main_input],[<abyssalcraft:stone:7>,<abyssalcraft:stone:7>,<abyssalcraft:stone:7>]]);
@@ -51,11 +51,11 @@ add_abyssalcraft_statue_recipe(<abyssalcraft:statue:6>, <actuallyadditions:item_
 # Necronomicon
 recipes.remove(<abyssalcraft:necronomicon>);
 recipes.addShapeless(<abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as float}), [<abyssalcraft:statue:2>.reuse(),<abyssalcraft:statue:3>.reuse(),<abyssalcraft:statue:4>.reuse(),<abyssalcraft:statue:1>.reuse(),<minecraft:book>,<abyssalcraft:statue:5>.reuse(),<abyssalcraft:statue:0>.reuse(),<abyssalcraft:shadowgem>,<abyssalcraft:statue:6>.reuse()]);
-<abyssalcraft:necronomicon>.addTooltip(format.gray("Crafting doesn't consume the input Statues."));
+<abyssalcraft:necronomicon>.addTooltip(game.localize("dj2.necronomicon.desc0"));
 
 # Ore Tooltips
-<abyssalcraft:coraliumore>.addTooltip(format.white("Generates in Ocean and Swamp biomes."));
-<abyssalcraft:abyore>.addTooltip(format.white("Generates in Darklands biomes."));
+<abyssalcraft:coraliumore>.addTooltip(game.localize("dj2.coralium_ore.desc0"));
+<abyssalcraft:abyore>.addTooltip(game.localize("dj2.abyore.desc0"));
 
 # Coralium Gem Cluster itemstack amounts
 <abyssalcraft:ccluster2>.maxStackSize = 64;
@@ -197,11 +197,11 @@ recipes.removeShaped(<abyssalcraft:cstonebrick>);
 recipes.addShaped(<abyssalcraft:cstonebrick>, [[null,<abyssalcraft:cbrick>,null],[<abyssalcraft:cbrick>,<abyssalcraft:stone:7>,<abyssalcraft:cbrick>],[null,<abyssalcraft:cbrick>,null]]);
 
 # Coralium Stone
-<abyssalcraft:stone:4>.addTooltip(format.white("Coralium Cobblestone can be found in the Abyssal Wasteland."));
-<abyssalcraft:stone:4>.addTooltip(format.white("You can also obtain this by dumping Liquid Antimatter"));
-<abyssalcraft:stone:4>.addTooltip(format.white("over ") + format.aqua("Liquid Coralium") + format.white(", and mining up the resulting Stone!"));
-<abyssalcraft:stone:4>.addTooltip(format.white("(If you can't find any Liquid Antimatter, summon an"));
-<abyssalcraft:stone:4>.addTooltip(format.white("Antimatter Cow with Roots.)"));
+<abyssalcraft:stone:4>.addTooltip(game.localize("dj2.coralium_stone.desc0"));
+<abyssalcraft:stone:4>.addTooltip(game.localize("dj2.coralium_stone.desc1"));
+<abyssalcraft:stone:4>.addTooltip(game.localize("dj2.coralium_stone.desc2"));
+<abyssalcraft:stone:4>.addTooltip(game.localize("dj2.coralium_stone.desc3"));
+<abyssalcraft:stone:4>.addTooltip(game.localize("dj2.coralium_stone.desc4"));
 
 # Transmutator
 recipes.remove(<abyssalcraft:transmutator>);
@@ -224,12 +224,12 @@ recipes.addShaped(<abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abys
 
 
 # Eye of the Abyss
-<abyssalcraft:eoa>.addTooltip(format.white("To obtain, summon and defeat Asorah,"));
-<abyssalcraft:eoa>.addTooltip(format.white("the Fallen in the ") + format.darkGreen("Abyssal Wasteland") + format.white("."));
-<abyssalcraft:eoa>.addTooltip(format.white("(You first need an Abyssal Wasteland  "));
-<abyssalcraft:eoa>.addTooltip(format.white("Necronomicon. Open it, and read the "));
-<abyssalcraft:eoa>.addTooltip(format.white("Rituals/Abyssal Wasteland/Ritual of "));
-<abyssalcraft:eoa>.addTooltip(format.white("The Sleeper section.)"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc0"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc1"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc2"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc3"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc4"));
+<abyssalcraft:eoa>.addTooltip(game.localize("dj2.eye_of_the_abyss.desc5"));
 
 # Asorah, the Fallen
 mods.abyssalcraft.SummonRitual.removeRitual("abyssalcraft:dragonboss");
@@ -239,8 +239,8 @@ game.setLocalization("ac.ritual.summonAsorah.desc", "Summons Asorah, The Fallen,
 
 # Coralium Plagued Flesh on a Bone -> Coralium Plagued Flesh and Tooltips
 recipes.addShapeless(<abyssalcraft:corflesh>, [<abyssalcraft:corbone>]);
-<abyssalcraft:corflesh>.addTooltip(format.white("Drops from Zombies in the Abyssal Wasteland."));
-<abyssalcraft:corbone>.addTooltip(format.white("Drops from Skeletal Zombies in the Abyssal Wasteland."));
+<abyssalcraft:corflesh>.addTooltip(game.localize("dj2.coralium_flesh.desc0"));
+<abyssalcraft:corbone>.addTooltip(game.localize("dj2.coralium_bone.desc0"));
 
 function add_abyssalcraft_overworld_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
 	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
@@ -287,10 +287,10 @@ mods.abyssalcraft.InfusionRitual.removeRitual(<abyssalcraft:gatewaykeydl>);
 mods.abyssalcraft.InfusionRitual.addRitual("asorahGatewayKey", 1, 50, 10000, false, <abyssalcraft:gatewaykeydl>, <abyssalcraft:gatewaykey>, [<divinerpg:wildwood_heart>,<abyssalcraft:powerstonetracker>,<divinerpg:wildwood_heart>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:steaming_restonia_crystal_block>,<contenttweaker:feather_of_the_wild_woods>,<contenttweaker:feather_of_the_wild_woods>]);
 
 # Dreaded Shard of Abyssalnite
-<abyssalcraft:dreadshard>.addTooltip(format.white("Dropped by ") + format.red("Dreadguards") + format.white(" in the Dreadlands."));
+<abyssalcraft:dreadshard>.addTooltip(game.localize("dj2.dreadshard.desc0"));
 
 # Dread Fragment
-<abyssalcraft:dreadfragment>.addTooltip(format.white("Dropped by Zombies in the Dreadlands."));
+<abyssalcraft:dreadfragment>.addTooltip(game.localize("dj2.dreadfragment.desc0"));
 
 # Dread Cloth
 recipes.remove(<abyssalcraft:dreadcloth>);
@@ -336,16 +336,16 @@ for sapling in <ore:treeSapling>.items {
 }
 
 # Dreadlands Infused Powerstone tooltip
-<abyssalcraft:psdl>.addTooltip(format.white("To obtain, craft a ") + format.darkAqua("Refined Coralium Pickaxe") + format.white(" and about 6"));
-<abyssalcraft:psdl>.addTooltip(format.darkAqua("Powerstone Trackers") + format.white(", then enter the ") + format.darkAqua("Abyssal Wasteland") + format.white(", find"));
-<abyssalcraft:psdl>.addTooltip(format.white("the ") + format.darkAqua("Abyssal Stronghold") + format.white(" with your ") + format.darkAqua("Powerstone Trackers") + format.white(","));
-<abyssalcraft:psdl>.addTooltip(format.white("and in the center mine up your ") + format.red("Dreadlands Infused Powerstone") + format.white("!"));
+<abyssalcraft:psdl>.addTooltip(game.localize("dj2.dreadlands_infused_powerstone.desc0"));
+<abyssalcraft:psdl>.addTooltip(game.localize("dj2.dreadlands_infused_powerstone.desc1"));
+<abyssalcraft:psdl>.addTooltip(game.localize("dj2.dreadlands_infused_powerstone.desc2"));
+<abyssalcraft:psdl>.addTooltip(game.localize("dj2.dreadlands_infused_powerstone.desc3"));
 
 # Chunk of Abyssalnite
-<abyssalcraft:abychunk>.addTooltip(format.white("Dropped by ") + format.red("Abyssalnite Golems") + format.white(" in the Dreadlands."));
+<abyssalcraft:abychunk>.addTooltip(game.localize("dj2.abyssalnite_chunk.desc0"));
 
 # Dreaded Chunk of Abyssalnite
-<abyssalcraft:dreadchunk>.addTooltip(format.white("Dropped by ") + format.red("Dreaded Abyssalnite Golems") + format.white(" in the Dreadlands."));
+<abyssalcraft:dreadchunk>.addTooltip(game.localize("dj2.dreadium_chunk.desc0"));
 
 # Altar of Cha'garoth (bottom)
 mods.abyssalcraft.CreationRitual.removeRitual(<abyssalcraft:dreadaltarbottom>);
@@ -366,10 +366,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<abyssalcraft:crystallizer>,
 
 # Dread-plagued Gateway Key
 <abyssalcraft:dreadkey>.maxStackSize = 1;
-<abyssalcraft:dreadkey>.addTooltip(format.white("Dropped by ") + format.red("Cha'garoth") + format.white(" at the end of the ") + format.red("Dreadlands"));
-<abyssalcraft:dreadkey>.addTooltip(format.white("dungeon. You can enter it by placing down the "));
-<abyssalcraft:dreadkey>.addTooltip(format.red("Altar of Cha'garoth (bottom & top)") + format.white(" at Y=40 in"));
-<abyssalcraft:dreadkey>.addTooltip(format.white("in a Dreadlands Mountains biome."));
+<abyssalcraft:dreadkey>.addTooltip(game.localize("dj2.dread_plagued_key.desc0"));
+<abyssalcraft:dreadkey>.addTooltip(game.localize("dj2.dread_plagued_key.desc1"));
+<abyssalcraft:dreadkey>.addTooltip(game.localize("dj2.dread_plagued_key.desc2"));
+<abyssalcraft:dreadkey>.addTooltip(game.localize("dj2.dread_plagued_key.desc3"));
 
 # Cha'garoth's R'lyehian Gateway Key
 mods.abyssalcraft.Transmutator.removeTransmutationInput(<abyssalcraft:dreadkey>);
@@ -510,11 +510,11 @@ recipes.remove(<abyssalcraft:dreadiumboots>);
 recipes.addShaped(<abyssalcraft:dreadiumboots>, [[<abyssalcraft:dreadiumingot>,null,<abyssalcraft:dreadiumingot>],[<abyssalcraft:dreadiumingot>,<abyssalcraft:corboots>,<abyssalcraft:dreadiumingot>]]);
 
 # Eldritch Scale
-<abyssalcraft:eldritchscale>.addTooltip(format.white("Dropped by ") + format.gray("Remnants") + format.white(" and ") + format.gray("Minions of The Gatekeeper") + format.white(" in ") + format.gray("Omothol") + format.white("."));
+<abyssalcraft:eldritchscale>.addTooltip(game.localize("dj2.eldritch_scale.desc0"));
 
 # Omothol Ghoul Flesh
-<abyssalcraft:omotholflesh>.addTooltip(format.white("Dropped by Omothol Ghouls in... Omothol."));
-<abyssalcraft:omotholflesh>.addTooltip(format.white(format.italic("Incredible, I know.")));
+<abyssalcraft:omotholflesh>.addTooltip(game.localize("dj2.omothol_flesh.desc0"));
+<abyssalcraft:omotholflesh>.addTooltip(game.localize("dj2.omothol_flesh.desc1"));
 
 # Ethaxium <-> End Stone conversion removal
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<minecraft:end_stone>);
@@ -574,7 +574,7 @@ recipes.remove(<abyssalcraft:crystalbag_small>);
 recipes.addShaped(<abyssalcraft:crystalbag_small>, [[<evilcraft:golden_string>,<contenttweaker:blood_infused_leather>,<evilcraft:golden_string>],[<contenttweaker:blood_infused_leather>,<contenttweaker:glod_crystal_block>,<contenttweaker:blood_infused_leather>],[<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>,<contenttweaker:blood_infused_leather>]]);
 
 # Essence of The Gatekeeper
-<abyssalcraft:gatekeeperessence>.addTooltip(format.white("Dropped by ") + format.gray("J'zahar") + format.white(", the final boss of Omothol."));
+<abyssalcraft:gatekeeperessence>.addTooltip(game.localize("dj2.gatekeeper_essence.desc0"));
 
 function add_abyssalcraft_dreadlands_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
 	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
@@ -643,14 +643,14 @@ game.setLocalization("ac.ritual.summonSacthoth", "Ritual of Shadows");
 game.setLocalization("ac.ritual.summonSacthoth.desc", "Summons Sacthoth, Harbinger of Doom, from the Dark Realm. Offer him your most valuable items and as much PE as you can hold... Maybe he'll appear...");
 
 # Sacthoth's Soul Reaper Blade
-<abyssalcraft:soulreaper>.addTooltip(format.white("Dropped by ") + format.gray("Sacthoth, Harbinger of Doom") + format.white(", the final boss of AbyssalCraft."));
+<abyssalcraft:soulreaper>.addTooltip(game.localize("dj2.soul_reaper.desc0"));
 
 # Removing the Mass Enchantment Ritual
 mods.abyssalcraft.Rituals.removeRitual("massEnchantment");
 
 # Crystallized Cluster tooltips
-#<abyssalcraft:crystalcluster:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 8."));
-#<abyssalcraft:crystalcluster2:*>.addTooltip(format.white("Can only be mined with a pickaxe of Mining Level at least 10."));
+#<abyssalcraft:crystalcluster:*>.addTooltip(game.localize("dj2.crystalcluster.desc0"));
+#<abyssalcraft:crystalcluster2:*>.addTooltip(game.localize("dj2.crystalcluster2.desc0"));
 
 # Removing Cha'rcoal
 <ore:coal>.remove(<abyssalcraft:charcoal>);
@@ -672,7 +672,7 @@ val toClear as IItemStack[] = [
 ] as IItemStack[];
 
 for i, item in toClear {
-    item.addTooltip("Gain ownership of the book via shapeless crafting.");
+    item.addTooltip(game.localize("dj2.necronomicon_ownership.desc0"));
     recipes.addHiddenShapeless("necronomicon_ownership_removal_" ~ i, item, [item.marked("target").noReturn()], function(out, ins, cInfo) {
         var tag = ins.target.tag - "owner";
         return tag == {} ? out : out.withTag(tag);

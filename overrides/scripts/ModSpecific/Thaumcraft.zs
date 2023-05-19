@@ -19,11 +19,13 @@ print("STARTING Thaumcraft.zs");
 recipes.removeShaped(<minecraft:blaze_powder>, [[<thaumcraft:cinderpearl>]]);
 
 # Thaumonomicon tooltip
-<thaumcraft:thaumonomicon>.addTooltip(format.red(format.bold("Warning:")) + format.white(format.bold(" Recipes shown may be incorrect.")));
-<thaumcraft:thaumonomicon>.addTooltip(format.white(format.bold("Always refer to JEI when crafting.")));
+<thaumcraft:thaumonomicon>.addTooltip(game.localize("dj2.thaumonomicon.desc0"));
+<thaumcraft:thaumonomicon>.addTooltip(game.localize("dj2.thaumonomicon.desc1"));
 
 # Cheaters Thaumonomicon
-<thaumcraft:thaumonomicon:1>.addTooltip(format.lightPurple("Unlocks all research when opened"));
+<thaumcraft:thaumonomicon:1>.addTooltip(game.localize("dj2.creative_thaumonomicon.desc0"));
+<thaumcraft:thaumonomicon:1>.addTooltip(game.localize("dj2.thaumonomicon.desc0"));
+<thaumcraft:thaumonomicon:1>.addTooltip(game.localize("dj2.thaumonomicon.desc1"));
 mods.extendedcrafting.CombinationCrafting.addRecipe(<thaumcraft:thaumonomicon:1>, 5000000, 5000, <thaumcraft:thaumonomicon>, [<contenttweaker:infused_magical_core>,<minecraft:bookshelf>,<contenttweaker:matrix_multiplication_unit>,<minecraft:bookshelf>,<contenttweaker:infused_magical_core>,<minecraft:bookshelf>,<contenttweaker:matrix_multiplication_unit>,<minecraft:bookshelf>]);
 
 # Salis Mundus
@@ -34,8 +36,8 @@ recipes.addShapeless(<thaumcraft:salis_mundus> * 2, [<thaumcraft:salis_mundus>,<
 # Arcane Workbench
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:arcane_workbench>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<extendedcrafting:ender_crafter>.asBlock(), <thaumcraft:arcane_workbench>, "FIRSTSTEPS@1");
-<thaumcraft:arcane_workbench>.addTooltip(format.white("Created by Right Clicking on an Extended Crafting"));
-<thaumcraft:arcane_workbench>.addTooltip(format.white("Ender Crafter with some ") + format.lightPurple("Salis Mundus") + format.white("."));
+<thaumcraft:arcane_workbench>.addTooltip(game.localize("dj2.arcane_workbench.desc0"));
+<thaumcraft:arcane_workbench>.addTooltip(game.localize("dj2.arcane_workbench.desc1"));
 
 # Thaumometer
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:thaumometer>);
@@ -44,8 +46,8 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:thaumometer", "
 # Crucible
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 mods.thaumcraft.SalisMundus.addSingleConversion(<evilcraft:purifier>.asBlock(), <thaumcraft:crucible>, "UNLOCKALCHEMY@1");
-<thaumcraft:crucible>.addTooltip(format.white("Created by Right Clicking on an EvilCraft"));
-<thaumcraft:crucible>.addTooltip(format.white("Purifier with some ") + format.lightPurple("Salis Mundus") + format.white("."));
+<thaumcraft:crucible>.addTooltip(game.localize("dj2.crucible.desc0"));
+<thaumcraft:crucible>.addTooltip(game.localize("dj2.crucible.desc1"));
 
 # Wood Table
 recipes.remove(<thaumcraft:table_wood>);
@@ -53,19 +55,19 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood", "", 5, [], <th
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tablewood2", "", 5, [], <thaumcraft:table_wood>, [[null,null,null],[<botania:livingwood:5>,<botania:livingwood:5>,<botania:livingwood:5>],[<botania:livingwood:5>,null,<botania:livingwood:5>]]);
 
 # Research Table
-<thaumcraft:research_table>.addTooltip(format.white("Created by placing Scribing Tools"));
-<thaumcraft:research_table>.addTooltip(format.white("on a Thaumcraft Wood Table."));
+<thaumcraft:research_table>.addTooltip(game.localize("dj2.research_table.desc0"));
+<thaumcraft:research_table>.addTooltip(game.localize("dj2.research_table.desc1"));
 
 # Scribing Tools
 recipes.removeShapeless(<thaumcraft:scribing_tools>, [<*>,<*>,<*>]);
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("scribingtoolscraft1", "", 10, [], <thaumcraft:scribing_tools>, [<mysticalagriculture:crafting:24>,<botania:vial:1>,<botania:manaresource:22>,<divinerpg:kraken_skin>,<contenttweaker:rune_of_pride>]);
-<thaumcraft:scribing_tools>.addTooltip(format.gray(format.italic("Fill me up with some Ink to complete my Research!")));
+<thaumcraft:scribing_tools>.addTooltip(game.localize("dj2.scribing_tools.desc0"));
 
 # Veined Scribing Tools
 recipes.remove(<evilcraft:veined_scribing_tools>);
 recipes.removeByRecipeName("evilcraftcompat:veined_scribing_tools_11");
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("veinedscribingtools", "", 50, [], <evilcraft:veined_scribing_tools>, [<thaumcraft:scribing_tools>,<evilcraft:blood_orb:1>]);
-<evilcraft:veined_scribing_tools>.addTooltip(format.gray(format.italic("Has twice the \"ink\" capacity and can be filled with Evilcraft Blood instead of Ink!")));
+<evilcraft:veined_scribing_tools>.addTooltip(game.localize("dj2.veined_scribing_tools.desc0"));
 
 # Yellow Nitor
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:nitor_yellow>);
@@ -152,12 +154,10 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:rechargepedesta
 
 # Workbench Charger
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:arcane_workbench_charger>);
-#<thaumcraft:arcane_workbench_charger>.addTooltip("Item disabled. Causes irreversible");
-#<thaumcraft:arcane_workbench_charger>.addTooltip("crashes and world corruption.");
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:workbenchcharger", "WORKBENCHCHARGER", 350, [<aspect:ordo> * 5,<aspect:aer> * 5,<aspect:aqua> * 5], <thaumcraft:arcane_workbench_charger>, [[null,<thaumcraft:vis_resonator>,null],[<thaumcraft:plank_greatwood>,null,<thaumcraft:plank_greatwood>],[<thaumcraft:ingot:2>,null,<thaumcraft:ingot:2>]]);
-<thaumcraft:arcane_workbench_charger>.addTooltip(format.white("Find the perfect chunk in a Magical"));
-<thaumcraft:arcane_workbench_charger>.addTooltip(format.white("Forest biome and have a full set of"));
-<thaumcraft:arcane_workbench_charger>.addTooltip(format.white("Thaumaturge Armor on to craft this!"));
+<thaumcraft:arcane_workbench_charger>.addTooltip(game.localize("dj2.arcane_workbench_charger.desc0"));
+<thaumcraft:arcane_workbench_charger>.addTooltip(game.localize("dj2.arcane_workbench_charger.desc1"));
+<thaumcraft:arcane_workbench_charger>.addTooltip(game.localize("dj2.arcane_workbench_charger.desc2"));
 
 # Glass Phial
 recipes.remove(<thaumcraft:phial>);
@@ -176,13 +176,13 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:filter>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "TUBES", 5, [<aspect:aqua> * 2], <thaumcraft:filter> * 3, [[<contenttweaker:empowered_glod_crystal>,<thaumcraft:plank_silverwood>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<contenttweaker:rune_of_water>,<contenttweaker:empowered_glod_crystal>],[<contenttweaker:empowered_glod_crystal>,<thaumcraft:plank_silverwood>,<contenttweaker:empowered_glod_crystal>]]);
 
 # Rare Earths
-<thaumcraft:nugget:10>.addTooltip(format.gray(format.italic("<Hold Shift for info on how to acquire>")));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("Dropped rarely by any of the following Ores:"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("Coal, Redstone, Quartz, Amber, Diamond;"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("in ascending order of drop rate."));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("Alternatively, smelt any of the following Ores"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("in the Infernal Furnace: Iron, Gold, Silver,"));
-<thaumcraft:nugget:10>.addShiftTooltip(format.white("Copper, Tin, Lead, Cinnabar."));
+<thaumcraft:nugget:10>.addTooltip(game.localize("dj2.rare_earths.desc0"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc1"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc2"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc3"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc4"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc5"));
+<thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc6"));
 
 # Thaumium Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
@@ -210,7 +210,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:Bellows", "BELL
 
 # Grappler can crash the game
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:grapple_gun_spool>);
-<thaumcraft:grapple_gun_spool>.addTooltip("Item disabled. It can crash the game.");
+<thaumcraft:grapple_gun_spool>.addTooltip(game.localize("dj2.grapple_gun_spool.desc0"));
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:grapple_gun_tip>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:grapple_gun>);
 
@@ -341,8 +341,8 @@ mods.thaumcraft.Crucible.registerRecipe("JarLabel", "", <thaumcraft:label>, <aby
 # Purifying Bath Salts
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:bath_salts>);
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:BathSalts", "BATHSALTS", <thaumcraft:bath_salts>, <thaumcraft:salis_mundus>, [<aspect:victus> * 80, <aspect:aqua> * 60, <aspect:cognitio> * 60, <aspect:sensus> * 40, <aspect:ordo> * 40]);
-<thaumcraft:bath_salts>.addTooltip(format.white("Place this into an Arcane Spa underneath a small pool"));
-<thaumcraft:bath_salts>.addTooltip(format.white("of water to turn the Water into Purifying Liquid."));
+<thaumcraft:bath_salts>.addTooltip(game.localize("dj2.bath_salts.desc0"));
+<thaumcraft:bath_salts>.addTooltip(game.localize("dj2.bath_salts.desc1"));
 
 # Sanitizing Soap
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:sanity_soap>);
@@ -453,7 +453,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:AutomatedCrossb
 
 # Advanced Automated Crossbow
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:turret:1>);
-<thaumcraft:turret:1>.addTooltip(format.white("Item disabled. unmodifiable loot table."));
+<thaumcraft:turret:1>.addTooltip(game.localize("dj2.turret.desc0"));
 
 # Biothaumic Mind
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:mind:1>);
@@ -565,8 +565,8 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:causality_collapser>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:CausalityCollapser", "RIFTCLOSER", <thaumcraft:causality_collapser>, 7, [<aspect:perditio> * 40,<aspect:potentia> * 30,<aspect:alienis> * 30,<aspect:vitium> * 30], <mekanism:obsidiantnt>, [<thaumcraft:vis_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>,<thaumcraft:morphic_resonator>,<thaumcraft:nitor_pink>,<thaumcraft:alumentum>,<contenttweaker:brew_of_the_void>]);
 
 # Void Seed
-<thaumcraft:void_seed>.addTooltip(format.white("Obtained by throwing a Causality Collapser on a"));
-<thaumcraft:void_seed>.addTooltip(format.white("Flux Rift, or using a Void Siphon in the same chunk."));
+<thaumcraft:void_seed>.addTooltip(game.localize("dj2.void_seed.desc0"));
+<thaumcraft:void_seed>.addTooltip(game.localize("dj2.void_seed.desc1"));
 
 # Void Metal Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot:1>);
@@ -633,8 +633,8 @@ recipes.addShapeless("thaumcraft_primordial_pearl_repair", <thaumcraft:primordia
 			return out;
 		}
 	}, null);
-<thaumcraft:primordial_pearl>.addTooltip(format.white("Dropped rarely by ") + format.darkPurple("Void Rifts") + format.white(" when"));
-<thaumcraft:primordial_pearl>.addTooltip(format.white("closed by a ") + format.lightPurple("Causality Collapser") + format.white("."));
+<thaumcraft:primordial_pearl>.addTooltip(game.localize("dj2.primordial_pearl.desc0"));
+<thaumcraft:primordial_pearl>.addTooltip(game.localize("dj2.primordial_pearl.desc1"));
 
 # Ancient Pedestal
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:pedestal_ancient>);

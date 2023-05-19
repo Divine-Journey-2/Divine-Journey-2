@@ -485,7 +485,7 @@ function(out,ins,cInfo) {
 
 # Player Probe
 recipes.remove(<actuallyadditions:item_player_probe>);
-<actuallyadditions:item_player_probe>.addTooltip(format.red("Item disabled."));
+<actuallyadditions:item_player_probe>.addTooltip(game.localize("dj2.item_player_probe.desc0"));
 
 # Item Filter
 recipes.remove(<actuallyadditions:item_filter>);

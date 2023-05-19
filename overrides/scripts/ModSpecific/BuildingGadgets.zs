@@ -3,6 +3,7 @@
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.formatting.IFormattedText;
+import mods.zenutils.I18n;
 
 print("STARTING BuildingGadgets.zs");
 
@@ -77,12 +78,9 @@ pasteContainerTierIncrease("paste_container_T2", <buildinggadgets:constructionpa
 pasteContainerTierIncrease("paste_container_T3", <buildinggadgets:constructionpastecontainert3>, <buildinggadgets:constructionpastecontainert2>, <avaritia:resource>, <contenttweaker:hyper_diamond_block>);
 
 # Paste Container Tooltips
-function pasteTooltip(amount as string) as IFormattedText {
-    return format.white("This Paste Container can store a maximum of ") + format.red(amount) + format.white(" Paste.");
-}
-<buildinggadgets:constructionpastecontainer>.addTooltip(pasteTooltip(512));
-<buildinggadgets:constructionpastecontainert2>.addTooltip(pasteTooltip(2048));
-<buildinggadgets:constructionpastecontainert3>.addTooltip(pasteTooltip(8192));
+<buildinggadgets:constructionpastecontainer>.addTooltip(I18n.format("dj2.constructionpastecontainer.desc0", 512));
+<buildinggadgets:constructionpastecontainert2>.addTooltip(I18n.format("dj2.constructionpastecontainer.desc0", 2048));
+<buildinggadgets:constructionpastecontainert3>.addTooltip(I18n.format("dj2.constructionpastecontainer.desc0", 8192));
 
 # Creative Paste Container
 recipes.remove(<buildinggadgets:constructionpastecontainercreative>);

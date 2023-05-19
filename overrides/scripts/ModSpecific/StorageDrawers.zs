@@ -3,11 +3,12 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.ITooltipFunction;
 import crafttweaker.data.IData;
+import mods.zenutils.I18n;
 
 print("STARTING StorageDrawers.zs");
 
 # Framing Table
-<storagedrawers:framingtable>.addTooltip(format.gold("Consider using the Hand Framing Tool instead!"));
+<storagedrawers:framingtable>.addTooltip(game.localize("dj2.framing_table.desc0"));
 
 # Upgrade Template from Framed Drawers
 recipes.addShaped(<storagedrawers:upgrade_template> * 2, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<ore:stickWood>,<storagedrawers:customdrawers:*>,<ore:stickWood>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
@@ -66,8 +67,8 @@ for x in [
     <storagedrawersextra:extra_drawers:3>,
     <storagedrawersextra:extra_drawers:4>,
 ] as IItemStack[] {
-    x.addTooltip("Storage Drawers Extras is planned to be §4§lremoved§r in an upcoming update! (Likely ~2.22.0)");
-    x.addTooltip("Use the §6\"Hand Framing Tool\"§r to convert these into Framed Drawers to prevent anything they contain from being deleted!");
+    x.addTooltip(game.localize("dj2.storage_drawers_removal.desc0"));
+    x.addTooltip(game.localize("dj2.storage_drawers_removal.desc1"));
 }
 
 
@@ -130,11 +131,11 @@ function capacity(passBase as int) as ITooltipFunction {
             if (isNull(x)) continue;
             if (x.id == "storagedrawers:upgrade_storage") total += upgradeMultiplier[x.Damage];
             else if (x.id == "storagedrawers:upgrade_one_stack") base = 1;
-            else if (x.id == "storagedrawers:upgrade_creative" && x.Damage == 0) return "Infinite Storage";
-            else if (x.id == "storagedrawers:upgrade_creative" && x.Damage == 1) return "Vending";
+            else if (x.id == "storagedrawers:upgrade_creative" && x.Damage == 0) return game.localize("dj2.upgrade_creative.desc0");
+            else if (x.id == "storagedrawers:upgrade_creative" && x.Damage == 1) return game.localize("dj2.upgrade_vending.desc0");
         }
         val capacity = (base * (total > 0 ? total : 1));
-        return "Capacity: §c" + capacity + "§r stack" + (capacity == 1 ? "" : "s");
+        return I18n.format("dj2.upgrade_normal.desc0", capacity) + (capacity == 1 ? "" : "s");
     } as ITooltipFunction;
 }
 
@@ -150,7 +151,7 @@ function normalDrawer() as ITooltipFunction {
             val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage);
             end += contents(item.displayName, x.Count);
         }
-        if (end.length == 0) return "§6Contains nothing§r";
+        if (end.length == 0) return game.localize("dj2.empty_drawer.desc0");
         return arrayToList(end, "and");
     } as ITooltipFunction;
 }
@@ -168,7 +169,7 @@ function compactingDrawer() as ITooltipFunction {
             val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage);
             end += contents(item.displayName, count / x.Conv);
         }
-        if (end.length == 0) return "§6Contains nothing§r";
+        if (end.length == 0) return game.localize("dj2.empty_drawer.desc0");
         return arrayToList(end, "or");
     } as ITooltipFunction;
 }

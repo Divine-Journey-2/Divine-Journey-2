@@ -548,7 +548,7 @@ recipes.remove(<thermalexpansion:augment:720>);
 recipes.addShaped(<thermalexpansion:augment:720>, [[<thermalfoundation:material:322>,<contenttweaker:flux_crystal>,<thermalfoundation:material:322>],[<contenttweaker:flux_crystal>,<minecraft:emerald_block>,<contenttweaker:flux_crystal>],[<thermalfoundation:material:322>,<contenttweaker:flux_crystal>,<thermalfoundation:material:322>]]);
 
 # Phytogenic Insolator tooltip
-<thermalexpansion:machine:4>.addTooltip(format.red(format.bold("Machine disabled.")));
+<thermalexpansion:machine:4>.addTooltip(game.localize("dj2.phytogenic_insolator.desc0"));
 
 # Additional Enderium Ingot recipes
 mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:167>, <enderio:item_material:39>, <minecraft:sand:*>, 25000);
@@ -589,13 +589,13 @@ val all_tier_iii_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leapin
 val all_tier_iv_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<minecraft:potion>.withTag({Potion: "cofhcore:healing4"}),<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison4"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance4"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither4"})] as IItemStack[];
 
 for p in all_tier_iii_potions {
-	p.addTooltip(format.white("To obtain, create the Tier III liquid potion in a"));
-	p.addTooltip(format.white("Fractionating Still with an Alchemical Retort Augment."));
+	p.addTooltip(game.localize("dj2.tier_iii_potion.desc0"));
+	p.addTooltip(game.localize("dj2.tier_iii_potion.desc1"));
 }
 
 for p in all_tier_iv_potions {
-	p.addTooltip(format.white("To obtain, create the Tier III then the Tier IV liquid potion"));
-	p.addTooltip(format.white("in a Fractionating Still with an Alchemical Retort Augment."));
+	p.addTooltip(game.localize("dj2.tier_iv_potion.desc0"));
+	p.addTooltip(game.localize("dj2.tier_iv_potion.desc1"));
 }
 
 # Magma Crucible should accept any Cobblestone variant

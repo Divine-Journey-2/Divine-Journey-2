@@ -50,20 +50,20 @@ recipes.addShaped("gramary", <roots:gramary>, [[<ore:rootsBark>,<roots:terra_mos
 # Herb Pouch
 recipes.remove(<roots:herb_pouch>);
 recipes.addShaped("herb_pouch", <roots:herb_pouch>.withTag({}), [[<contenttweaker:charred_stone>,<ore:string>,<contenttweaker:charred_stone>],[<totemic:buffalo_items>,null,<totemic:buffalo_items>],[<totemic:buffalo_items>,<totemic:buffalo_items>,<totemic:buffalo_items>]]);
-<roots:herb_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
+<roots:herb_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
 # Apothecary Pouch
 Fey.removeRecipe(<roots:component_pouch>);
 Fey.addRecipe("component_pouch", <roots:component_pouch>, [<roots:herb_pouch>, <ore:rootsBark>, <roots:wildroot>, <roots:spirit_herb>, <minecraft:gold_nugget>]);
-<roots:component_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
+<roots:component_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
 # Fey Leather Pouch
-<roots:fey_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
+<roots:fey_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
 # Apothecary Pouch
 Fey.removeRecipe(<roots:apothecary_pouch>);
 Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:component_pouch>, <roots:stalicripe>, <roots:fey_pouch>, <roots:spirit_herb>, <minecraft:gold_block>]);
-<roots:apothecary_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
+<roots:apothecary_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
 # Grove Supplication Ritual
 Rituals.modifyRitual("grove_supplication", [<minecraft:mossy_cobblestone>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
@@ -96,7 +96,7 @@ for x in [
     <roots:dewgonia>,
     <roots:stalicripe>,
 ] as IItemStack[] {
-    x.addTooltip("Can be grown on any Elemental Soil.");
+    x.addTooltip(game.localize("dj2.elemental_soul_crop.desc0"));
 }
 
 # Runestone
@@ -118,7 +118,7 @@ Pyre.addRecipe("pereskia", <roots:pereskia>, [<roots:dewgonia>, <minecraft:doubl
 # Baffle Cap
 Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
 Pyre.addRecipe("baffle_cap", <roots:baffle_cap_mushroom>, [<roots:pereskia>, <minecraft:red_mushroom>, <minecraft:brown_mushroom>, <betternether:lucis_spore>, <betternether:orange_mushroom>]);
-<roots:baffle_cap_mushroom>.addTooltip("Grows exactly like a vanilla mushroom.");
+<roots:baffle_cap_mushroom>.addTooltip(game.localize("dj2.baffle_cap_mushroom.desc0"));
 
 # Infernal Bulb
 Pyre.removeRecipe(<roots:infernal_bulb>);
@@ -168,7 +168,7 @@ Fey.removeRecipe(<roots:living_arrow>);
 Fey.addRecipe("living_arrow", <roots:living_arrow> * 6, [<minecraft:arrow>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 Fey.removeRecipe(<roots:wildwood_quiver>);
 Fey.addRecipe("wildwood_quiver", <roots:wildwood_quiver>, [<simplybackpacks:commonbackpack>.withTag({inv: {Size: 18, Items: []}, filter: {Size: 16, Items: []}}), <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
-<roots:wildwood_quiver>.addTooltip(format.darkRed(format.italic("Crafting this requires a Common Backpack you've just crafted.")));
+<roots:wildwood_quiver>.addTooltip(game.localize("dj2.wildwood_quiver.desc0"));
 Fey.removeRecipe(<roots:living_pickaxe>);
 Fey.addRecipe("living_pickaxe", <roots:living_pickaxe>, [<immersiveengineering:pickaxe_steel>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 Fey.removeRecipe(<roots:living_shovel>);
@@ -281,7 +281,7 @@ Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
-<natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
+<natura:materials:6>.addTooltip(game.localize("dj2.imp_leather.desc0"));
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);

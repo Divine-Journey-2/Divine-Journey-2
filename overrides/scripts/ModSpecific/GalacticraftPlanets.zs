@@ -16,16 +16,16 @@ mods.GalacticraftTweaker.addCircuitFabricatorRecipe(<galacticraftplanets:basic_i
 
 # NASA Workbench Schematic (Automatic Cargo Rocket)
 recipes.addShapeless(<galacticraftplanets:schematic:1>, [<galacticraftplanets:schematic>]);
-<galacticraftplanets:schematic:1>.addTooltip(format.white("Can be found in underground ") + format.red("Mars") + format.white(" Dungeons."));
-<galacticraftplanets:schematic:1>.addTooltip(format.white("Can also be converted from the ") + format.blue("Tier 3 Rocket Schematic") + format.white("."));
+<galacticraftplanets:schematic:1>.addTooltip(game.localize("dj2.schematic_cargo_rocket.desc0"));
+<galacticraftplanets:schematic:1>.addTooltip(game.localize("dj2.schematic_cargo_rocket.desc1"));
 
 # NASA Workbench Schematic (Tier 3 Rocket)
 recipes.addShapeless(<galacticraftplanets:schematic>, [<galacticraftplanets:schematic:1>]);
-<galacticraftplanets:schematic>.addTooltip(format.white("Can be found in underground ") + format.red("Mars") + format.white(" Dungeons."));
-<galacticraftplanets:schematic>.addTooltip(format.white("Can also be converted from the ") + format.blue("Automatic Cargo Rocket Schematic") + format.white("."));
+<galacticraftplanets:schematic>.addTooltip(game.localize("dj2.schematic_tier_3_rocket.desc0"));
+<galacticraftplanets:schematic>.addTooltip(game.localize("dj2.schematic_tier_3_rocket.desc1"));
 
 # NASA Workbench Schematic (Astro Miner)
-<galacticraftplanets:schematic:2>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
+<galacticraftplanets:schematic:2>.addTooltip(game.localize("dj2.schematic_astro_miner.desc0"));
 
 # Geothermal Generator
 recipes.remove(<galacticraftplanets:geothermal_generator>);
@@ -39,12 +39,12 @@ mods.extendedcrafting.TableCrafting.addShaped(<galacticraftplanets:geothermal_ge
 [<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<quantumflux:craftingpiece:4>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>,<galacticraftcore:heavy_plating>]]);
 
 # Tier 2 Dungeon Key
-<galacticraftplanets:key>.addTooltip(format.white("Dropped by the ") + format.green("Evolved Creeper Boss"));
-<galacticraftplanets:key>.addTooltip(format.white("in the underground ") + format.red("Mars Dungeon") + format.white("."));
+<galacticraftplanets:key>.addTooltip(game.localize("dj2.evolved_creeper_key.desc0"));
+<galacticraftplanets:key>.addTooltip(game.localize("dj2.evolved_creeper_key.desc1"));
 
 # Tier 3 Dungeon Key
-<galacticraftplanets:key_t3>.addTooltip(format.white("Dropped by the ") + format.red("Spider Queen Boss"));
-<galacticraftplanets:key_t3>.addTooltip(format.white("in the underground ") + format.gold("Venus Dungeon") + format.white("."));
+<galacticraftplanets:key_t3>.addTooltip(game.localize("dj2.spider_queen_key.desc0"));
+<galacticraftplanets:key_t3>.addTooltip(game.localize("dj2.spider_queen_key.desc1"));
 
 # Compressed Desh
 mods.GalacticraftTweaker.removeCompressorRecipe(<galacticraftplanets:item_basic_mars:5>);
@@ -259,14 +259,14 @@ recipes.remove(<galacticraftplanets:grapple>);
 recipes.addShapedMirrored(<galacticraftplanets:grapple>, [[<immersiveengineering:skyhook>,null,null],[null,<galacticraftcore:basic_item:13>,<galacticraftplanets:item_basic_mars:1>],[null,<galacticraftplanets:item_basic_mars:1>,<galacticraftcore:basic_item:13>]]);
 
 # Web Strings
-<galacticraftplanets:web_torch>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
-<galacticraftplanets:web_torch:1>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
+<galacticraftplanets:web_torch>.addTooltip(game.localize("dj2.galacticraft_web_torch.desc0"));
+<galacticraftplanets:web_torch:1>.addTooltip(game.localize("dj2.galacticraft_web_torch.desc0"));
 
 # Shield Controller
-<galacticraftplanets:basic_item_venus>.addTooltip(format.white("Can be found in underground ") + format.gold("Venus") + format.white(" Dungeons."));
+<galacticraftplanets:basic_item_venus>.addTooltip(game.localize("dj2.galacticraft_basic_item_venus.desc0"));
 
 # Dense Ice
-<galacticraftplanets:dense_ice>.addTooltip(format.white("Found in the ") + format.blue("Asteroids") + format.white(" dimension."));
+<galacticraftplanets:dense_ice>.addTooltip(game.localize("dj2.galacticraft_dense_ice.desc0"));
 
 # Solar Essence -> Solar Dust, Venus Volcanic Rock
 recipes.addShaped(<galacticraftplanets:basic_item_venus:4> * 3, [[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,null,<contenttweaker:solar_essence>],[<contenttweaker:solar_essence>,<contenttweaker:solar_essence>,<contenttweaker:solar_essence>]]);

@@ -43,14 +43,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:grinder>,
 # Wyvern Core
 recipes.remove(<draconicevolution:wyvern_core>);
 mods.botania.RuneAltar.addRecipe(<draconicevolution:wyvern_core>, [<minecraft:nether_star>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconic_core>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>,<draconicevolution:draconium_ingot>], 250000);
-<draconicevolution:wyvern_core>.addTooltip(format.white("Takes a quarter of a Mana Pool to craft."));
-<draconicevolution:wyvern_core>.addTooltip(format.italic("JEI shows 10x the Mana you need, so that's why the bar is full."));
+<draconicevolution:wyvern_core>.addTooltip(game.localize("dj2.wyvern_core.desc0"));
+<draconicevolution:wyvern_core>.addTooltip(game.localize("dj2.wyvern_core.desc1"));
 
 # Draconic Evolution Information Tablet
 recipes.remove(<draconicevolution:info_tablet>);
 recipes.addShaped(<draconicevolution:info_tablet>, [[<contenttweaker:energized_dark_ingot>,<draconicevolution:draconium_dust>,<contenttweaker:energized_dark_ingot>],[<draconicevolution:draconium_dust>,<minecraft:book>,<draconicevolution:draconium_dust>],[<contenttweaker:energized_dark_ingot>,<draconicevolution:draconium_dust>,<contenttweaker:energized_dark_ingot>]]);
-<draconicevolution:info_tablet>.addTooltip(format.white("Contains information about EnderIO & Thaumic Energistics,"));
-<draconicevolution:info_tablet>.addTooltip(format.white("not just Draconic Evolution & Draconic Additions."));
+<draconicevolution:info_tablet>.addTooltip(game.localize("dj2.info_tablet.desc0"));
+<draconicevolution:info_tablet>.addTooltip(game.localize("dj2.info_tablet.desc1"));
 
 # Wyvern Energy Core
 recipes.remove(<draconicevolution:wyvern_energy_core>);
@@ -365,8 +365,8 @@ recipes.remove(<draconicevolution:draconium_capacitor:1>);
 # Dragon Heart from Mystical Agriaddons
 recipes.remove(<draconicevolution:dragon_heart>);
 recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>],[<mysticalagradditions:stuff:2>,<bhc:green_heart>,<mysticalagradditions:stuff:2>],[<mysticalagriculture:crafting:37>,<mysticalagradditions:stuff:2>,<mysticalagriculture:crafting:37>]]);
-<draconicevolution:dragon_heart>.addTooltip(format.white("Obtained after slaying the Ender Dragon."));
-<draconicevolution:dragon_heart>.addTooltip(format.white("Can also be crafted using Mystical Agriculture."));
+<draconicevolution:dragon_heart>.addTooltip(game.localize("dj2.dragon_heart.desc0"));
+<draconicevolution:dragon_heart>.addTooltip(game.localize("dj2.dragon_heart.desc1"));
 
 # Reaper enchantment
 # mods.enderio.Enchanter.removeRecipe(<enchantment:draconicevolution:enchant_reaper>);
@@ -374,8 +374,8 @@ recipes.addShaped(<draconicevolution:dragon_heart>, [[<mysticalagriculture:craft
 # causes a crash
 
 # Chaos Shard
-<draconicevolution:chaos_shard>.addTooltip(format.white("Obtained after slaying the Chaos Guardian."));
-<draconicevolution:chaos_shard>.addTooltip(format.white("Can also be crafted using Alchemistry."));
+<draconicevolution:chaos_shard>.addTooltip(game.localize("dj2.chaos_shard.desc0"));
+<draconicevolution:chaos_shard>.addTooltip(game.localize("dj2.chaos_shard.desc1"));
 
 # Reactor Stabilizer Inner Rotor
 recipes.remove(<draconicevolution:reactor_part:1>);
@@ -422,19 +422,19 @@ mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:celestial_manip
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:94>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:celestial_crystal_core>]]);
 
 # Creative Flux Capacitor
-mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:draconium_capacitor:2>, 
-[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>], 
-[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
-[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <extrautils2:passivegenerator:6>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
-[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>], 
+mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:draconium_capacitor:2>,
+[[<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>],
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>],
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <extrautils2:passivegenerator:6>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>],
+[<projecte:item.pe_matter:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <draconicevolution:draconium_capacitor:1>, <projecte:item.pe_matter:1>],
 [<projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>, <projecte:item.pe_matter:1>]]);
 
 # Creative RF Source
 mods.extendedcrafting.TableCrafting.addShaped(<draconicevolution:creative_rf_source>,
-[[<draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>, <draconicevolution:energy_crystal:8>, <draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>], 
-[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>], 
-[<draconicevolution:energy_crystal:8>, <contenttweaker:corrupted_dragon_token>, <extrautils2:creativeenergy>, <contenttweaker:corrupted_dragon_token>, <draconicevolution:energy_crystal:8>], 
-[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>], 
+[[<draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>, <draconicevolution:energy_crystal:8>, <draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>],
+[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>],
+[<draconicevolution:energy_crystal:8>, <contenttweaker:corrupted_dragon_token>, <extrautils2:creativeenergy>, <contenttweaker:corrupted_dragon_token>, <draconicevolution:energy_crystal:8>],
+[<draconicevolution:infused_obsidian>, <draconicevolution:particle_generator:2>, <draconicevolution:energy_storage_core>, <draconicevolution:particle_generator:2>, <draconicevolution:infused_obsidian>],
 [<draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>, <draconicevolution:energy_crystal:8>, <draconicevolution:infused_obsidian>, <draconicevolution:infused_obsidian>]]);
 
 print("ENDING DraconicEvolution.zs");

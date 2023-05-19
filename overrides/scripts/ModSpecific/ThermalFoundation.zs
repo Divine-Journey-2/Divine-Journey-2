@@ -7,6 +7,7 @@ import mods.thermalexpansion.Transposer;
 import mods.immersiveengineering.ArcFurnace;
 import mods.enderio.AlloySmelter;
 import mods.thermalexpansion.InductionSmelter;
+import mods.zenutils.I18n;
 
 print("STARTING ThermalFoundation.zs");
 
@@ -47,10 +48,10 @@ recipes.addShaped(<thermalfoundation:material:657>, [[<immersiveengineering:mate
 
 # Add Tooltips to Kits
 function thermalKitTooltip(item as IItemStack, machine as int, container as int, box as int) {
-    item.addShiftTooltip("Increase the base energy capacity of a Machine or Dynamo by §c" ~ machine ~ "%§r of the (variable) base.");
-    item.addShiftTooltip("Increase the base fluid capacity of a Portable Tank by §cx" ~ container ~ "§r of the base of §c20,000mb§r.");
-    item.addShiftTooltip("Increase the base item capacity of a Cache by §cx" ~ container ~ "§r of the base of §c20,000§r items.");
-    item.addShiftTooltip("Increase the base slot amount of a Storage Box by §c" ~ box ~ "§r from the base of §c18§r.");
+    item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc0", machine));
+    item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc1", container));
+    item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc2", container));
+    item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc3", box));
 }
 
 # Conversion Kits
@@ -143,6 +144,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:866>,
 <ore:crystalRedstone>.remove(<thermalfoundation:material:893>);
 
 # Silver Plate, S'il vous plaît
-<thermalfoundation:material:322>.addShiftTooltip(format.darkPurple(format.italic("S'il vous plaît")));
+<thermalfoundation:material:322>.addShiftTooltip(game.localize("dj2.silver_plate.desc0"));
 
 print("ENDING ThermalFoundation.zs");

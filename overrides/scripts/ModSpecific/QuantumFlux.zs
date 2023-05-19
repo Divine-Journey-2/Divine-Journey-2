@@ -15,7 +15,7 @@ recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<
 recipes.remove(<quantumflux:craftingpiece:3>);
 recipes.addShapedMirrored(<quantumflux:craftingpiece:3>, [[null,<thermalfoundation:material:295>,<thermalfoundation:material:295>],[<thermalfoundation:material:167>,<thermalfoundation:material:295>,null],[<thermalfoundation:material:167>,null,null]]);
 mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <quantumflux:craftingpiece:3>);
-<quantumflux:craftingpiece:3>.addTooltip("Dropped from Endermen.");
+<quantumflux:craftingpiece:3>.addTooltip(game.localize("dj2.ender_crystal.desc0"));
 
 # Amplification Crystal
 recipes.remove(<quantumflux:craftingpiece:2>);
@@ -28,7 +28,7 @@ recipes.addShaped(<quantumflux:darkstone> * 2, [[<ore:stone>,<enderio:item_alloy
 # Industrial Grade Graphite Ore
 mods.immersiveengineering.ArcFurnace.addRecipe(<quantumflux:graphiteore>, <quantumflux:darkstone>, null, 200, 512, [<bigreactors:ingotgraphite>, <immersiveengineering:material:19>], "Ores");
 EIOAlloySmelter.addRecipe(<quantumflux:graphiteore>, [<quantumflux:darkstone>, <bigreactors:ingotgraphite>, <immersiveengineering:material:19>], 24000);
-<quantumflux:graphitedust>.addTooltip("Blow it up to create a Hyper Diamond!");
+<quantumflux:graphitedust>.addTooltip(game.localize("dj2.graphitedust.desc0"));
 
 # Graphite Dust & Hyper Diamond JEI description
 #mods.jei.JEI.addDescription(<quantumflux:graphitedust>,"Turned into a Hyper Diamond with an explosion.");

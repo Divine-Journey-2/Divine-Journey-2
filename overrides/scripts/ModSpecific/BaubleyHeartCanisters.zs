@@ -12,7 +12,7 @@ recipes.remove(<bhc:canister>);
 recipes.addShaped(<bhc:canister>, [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<ore:blockSteel>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]]);
 
 # Red Heart
-<bhc:red_heart>.addTooltip(format.white("Drops rarely from all non-boss mobs."));
+<bhc:red_heart>.addTooltip(game.localize("dj2.bhc_red_heart.desc0"));
 
 # Red Heart Canister
 recipes.remove(<bhc:red_heart_canister>);
@@ -25,8 +25,8 @@ recipes.addShaped(<bhc:relic_apple>, [[null,<actuallyadditions:block_crystal_emp
 recipes.addShaped(<bhc:relic_apple>, [[null,<actuallyadditions:block_crystal_empowered:4>,null],[<actuallyadditions:block_crystal_empowered:2>,<minecraft:golden_apple:1>,<actuallyadditions:block_crystal_empowered:2>],[null,<actuallyadditions:block_crystal_empowered:4>,null]]);
 
 # Orange Heart
-<bhc:orange_heart>.addTooltip(format.white("Drops rarely from most boss mobs,"));
-<bhc:orange_heart>.addTooltip(format.white("and can be crafted from Withering Souls."));
+<bhc:orange_heart>.addTooltip(game.localize("dj2.bhc_orange_heart.desc0"));
+<bhc:orange_heart>.addTooltip(game.localize("dj2.bhc_orange_heart.desc1"));
 recipes.addShaped(<bhc:orange_heart>, [[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>],[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>],[<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>,<mysticalagradditions:stuff:1>]]);
 
 # Orange Heart Canister
@@ -36,7 +36,7 @@ recipes.addHiddenShapeless("bhc_clear2", <bhc:orange_heart_canister>, [<bhc:oran
 
 # Green Heart
 mods.botania.RuneAltar.addRecipe(<bhc:green_heart>, [<bhc:red_heart>,<bhc:red_heart>,<bhc:orange_heart>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:environmental_core>,<contenttweaker:defensive_core>,<contenttweaker:defensive_core>,<bloodmagic:blood_shard:1>,<contenttweaker:angelic_silicon_crystal_mixture>], 100000);
-<bhc:green_heart>.addTooltip("Does not drop. Can only be crafted.");
+<bhc:green_heart>.addTooltip(game.localize("dj2.bhc_green_heart.desc0"));
 
 # Green Heart Canister
 recipes.remove(<bhc:green_heart_canister>);
@@ -60,7 +60,7 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("bhc:blue_heart", <bhc:b
 [<bhc:red_heart>,<contenttweaker:galactic_block>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.vicio"}}),<contenttweaker:galactic_block>,<bhc:red_heart>],
 [<bhc:orange_heart>,<bhc:red_heart>,<contenttweaker:galactic_block>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.aevitas"}}),<contenttweaker:galactic_block>],
 [<bhc:green_heart>,<bhc:orange_heart>,<bhc:red_heart>,<contenttweaker:galactic_block>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {starAttunement: "astralsorcery.constellation.evorsio"}})]], [], "astralsorcery.constellation.horologium");
-<bhc:blue_heart>.addTooltip("Does not drop. Can only be crafted.");
+<bhc:blue_heart>.addTooltip(game.localize("dj2.bhc_blue_heart.desc0"));
 
 # Blue Heart Canister
 recipes.remove(<bhc:blue_heart_canister>);

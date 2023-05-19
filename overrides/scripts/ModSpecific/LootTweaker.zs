@@ -54,18 +54,18 @@ remove_entry("minecraft:entities/wither_skeleton", "xuLootDropOfEvil", "xuLootDr
 
 # King of Scorchers: More Fury Fire
 add_entry("divinerpg:entities/boss/king_of_scorchers", "additional_fury_fire", <divinerpg:fury_fire>, 3, 3, 0, 0, 100);
-<divinerpg:fury_fire>.addTooltip(format.white("Dropped by the ") + format.darkRed("King of Scorchers") + format.white(", who's summoned by the ") + format.blue("Infernal Flame") + format.white(" in the Nether. It always drops 4 of them."));
+<divinerpg:fury_fire>.addTooltip(game.localize("dj2.fury_fire.desc0"));
 
 # Ancient Entity: Ancient Leg
 add_entry("divinerpg:entities/boss/ancient_entity", "ancient_leg", <contenttweaker:ancient_leg>, 2, 4, 0, 0, 100);
-<contenttweaker:ancient_leg>.addTooltip(format.white("Dropped by the ") + format.darkRed("Ancient Entity") + format.white(", who's summoned by "));
-<contenttweaker:ancient_leg>.addTooltip(format.white("the ") + format.blue("Mysterious Clock") + format.white(" in the Overworld. "));
-<contenttweaker:ancient_leg>.addTooltip(format.white("It has a chance to drop 2-4 Legs."));
+<contenttweaker:ancient_leg>.addTooltip(game.localize("dj2.ancient_leg.desc0"));
+<contenttweaker:ancient_leg>.addTooltip(game.localize("dj2.ancient_leg.desc1"));
+<contenttweaker:ancient_leg>.addTooltip(game.localize("dj2.ancient_leg.desc2"));
 
 # The Watcher: Eye of the Watcher
 add_entry("divinerpg:entities/boss/the_watcher", "eye_of_the_watcher", <contenttweaker:eye_of_the_watcher>, 1, 1, 0, 0, 100);
-<contenttweaker:eye_of_the_watcher>.addTooltip(format.white("Dropped by ") + format.red("The Watcher") + format.white(", who's summoned by "));
-<contenttweaker:eye_of_the_watcher>.addTooltip(format.white("the ") + format.blue("Call of the Watcher") + format.white(" in the Nether."));
+<contenttweaker:eye_of_the_watcher>.addTooltip(game.localize("dj2.eye_of_the_watcher.desc0"));
+<contenttweaker:eye_of_the_watcher>.addTooltip(game.localize("dj2.eye_of_the_watcher.desc1"));
 
 # Ayeraco Horde: Ayeraco Wing
 add_entry("divinerpg:entities/boss/ayeraco_blue", "ayeraco_wing", <contenttweaker:ayeraco_wing>, 1, 2, 0, 0, 100);
@@ -73,9 +73,9 @@ add_entry("divinerpg:entities/boss/ayeraco_green", "ayeraco_wing", <contenttweak
 add_entry("divinerpg:entities/boss/ayeraco_purple", "ayeraco_wing", <contenttweaker:ayeraco_wing>, 1, 2, 0, 0, 100);
 add_entry("divinerpg:entities/boss/ayeraco_red", "ayeraco_wing", <contenttweaker:ayeraco_wing>, 1, 2, 0, 0, 100);
 add_entry("divinerpg:entities/boss/ayeraco_yellow", "ayeraco_wing", <contenttweaker:ayeraco_wing>, 1, 2, 0, 0, 100);
-<contenttweaker:ayeraco_wing>.addTooltip(format.white("Dropped by the ") + format.blue("Blue") + format.white(", ") + format.green("Green") + format.white(", ") + format.yellow("Yellow") + format.white(", ") + format.red("Red") + format.white(" & ") + format.lightPurple("Purple "));
-<contenttweaker:ayeraco_wing>.addTooltip(format.white("Ayeraco. They are summoned by the ") + format.yellow("Horde Horn "));
-<contenttweaker:ayeraco_wing>.addTooltip(format.white("in the End. Each Ayeraco has a chance to drop 1 or 2."));
+<contenttweaker:ayeraco_wing>.addTooltip(game.localize("dj2.ayeraco_wing.desc0"));
+<contenttweaker:ayeraco_wing>.addTooltip(game.localize("dj2.ayeraco_wing.desc1"));
+<contenttweaker:ayeraco_wing>.addTooltip(game.localize("dj2.ayeraco_wing.desc2"));
 
 # Vanilla Chest Loot Tables
 val tables = ["abandoned_mineshaft", "desert_pyramid", "igloo_chest", "jungle_temple"] as string[];

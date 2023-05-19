@@ -42,7 +42,7 @@ recipes.addShaped(<extendedcrafting:table_advanced>, [[<extendedcrafting:table_b
 
 # Block of Ender
 recipes.addShaped(<extendedcrafting:storage:5>, [[<contenttweaker:orbis_terrae>,<alchemistry:ingot:3>,<contenttweaker:orbis_terrae>],[<alchemistry:ingot:3>,<evilcraft:box_of_eternal_closure>.withTag({spiritTag: {playerName:"", innerEntity: "net.minecraft.entity.monster.EntityEnderman"}}),<alchemistry:ingot:3>],[<contenttweaker:orbis_terrae>,<alchemistry:ingot:3>,<contenttweaker:orbis_terrae>]]);
-<extendedcrafting:storage:5>.addTooltip(format.white("Recipe requires a Box with an Enderman Spirit."));
+<extendedcrafting:storage:5>.addTooltip(game.localize("dj2.block_of_ender.desc0"));
 
 # Ender Ingot
 recipes.removeShapeless(<extendedcrafting:material:36>, [<minecraft:iron_ingot>,<minecraft:ender_pearl>]);

@@ -46,9 +46,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:golf_club_gold>,
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null]]);
 
 # Electricium Ingot
-<lightningcraft:ingot>.addTooltip(format.white("Create this for the first time by"));
-<lightningcraft:ingot>.addTooltip(format.white("striking a piece of Diamond, Gold"));
-<lightningcraft:ingot>.addTooltip(format.white("Ingot and Iron Ingot with lightning!"));
+<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc0"));
+<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc1"));
+<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc2"));
 
 # Lightning Energy Cell
 recipes.remove(<lightningcraft:lightning_cell>);
@@ -138,13 +138,13 @@ recipes.addShaped(<lightningcraft:wireless_block:3>, [[null,<lightningcraft:air_
 
 # Demon Blood
 LightningCrusher.remove(<lightningcraft:material:5>);
-<lightningcraft:material:5>.addTooltip(format.white("Dropped by Demon Soldiers spawning"));
-<lightningcraft:material:5>.addTooltip(format.white("naturally in the Nether."));
+<lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc0"));
+<lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc1"));
 
 # Ichor
-<lightningcraft:material:11>.addTooltip(format.white("Initially created by striking Demon Blood,"));
-<lightningcraft:material:11>.addTooltip(format.white("Skyfather Ingot and an Emerald"));
-<lightningcraft:material:11>.addTooltip(format.white("on the ground with lightning."));
+<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc0"));
+<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc1"));
+<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc2"));
 
 RecipeBuilder.newBuilder("ichor", "lightningcraft_infusion_multiblock", 300)
     .addEnergyPerTickInput(5000)
@@ -163,10 +163,10 @@ LightningInfusion.remove(<lightningcraft:material:6>);
 mods.thaumcraft.Infusion.registerRecipe("lightningcraft:underworld_charge", "", <lightningcraft:material:6>, 8, [<aspect:diabolus> * 240,<aspect:tenebrae> * 240,<aspect:potentia> * 240,<aspect:ignis> * 240,<aspect:perditio> * 240], <evilcraft:inverted_potentia>, [<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>,<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_potentia>,<lightningcraft:stone_block:3>]);
 
 # Underpowder
-<lightningcraft:material:12>.addTooltip(format.white("Dropped by Undercreeps in the Underworld."));
+<lightningcraft:material:12>.addTooltip(game.localize("dj2.underpowder.desc0"));
 
 # Guard's Bone
-<lightningcraft:material:7>.addTooltip(format.white("Dropped by Skeleton Guards in the Underworld."));
+<lightningcraft:material:7>.addTooltip(game.localize("dj2.guards_bone.desc0"));
 
 # Mystic Ingot
 LightningInfusion.remove(<lightningcraft:ingot:2>);

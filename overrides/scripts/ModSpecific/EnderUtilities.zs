@@ -49,20 +49,20 @@ recipes.addShaped(<enderutilities:machine_1:2>, [[<enderutilities:enderpart:1>,<
 # Inactive Ender Core (Basic)
 recipes.remove(<enderutilities:enderpart:10>);
 recipes.addShaped(<enderutilities:enderpart:10>, [[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>],[<enderutilities:enderpart>,<quantumflux:craftingpiece:3>,<enderutilities:enderpart>],[<wrcbe:material>,<enderutilities:enderpart>,<wrcbe:material>]]);
-<enderutilities:enderpart:15>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
-<enderutilities:enderpart:15>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
+<enderutilities:enderpart:15>.addTooltip(game.localize("dj2.inactive_ender_core.desc0"));
+<enderutilities:enderpart:15>.addTooltip(game.localize("dj2.inactive_ender_core.desc1"));
 
 # Inactive Ender Core (Enhanced)
 recipes.remove(<enderutilities:enderpart:11>);
 recipes.addShaped(<enderutilities:enderpart:11>, [[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>],[<enderutilities:enderpart:1>,<enderutilities:enderpart:10>,<enderutilities:enderpart:1>],[<wrcbe:material>,<enderutilities:enderpart:1>,<wrcbe:material>]]);
-<enderutilities:enderpart:16>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
-<enderutilities:enderpart:16>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
+<enderutilities:enderpart:16>.addTooltip(game.localize("dj2.inactive_ender_core.desc0"));
+<enderutilities:enderpart:16>.addTooltip(game.localize("dj2.inactive_ender_core.desc1"));
 
 # Inactive Ender Core (Advanced)
 recipes.remove(<enderutilities:enderpart:12>);
 recipes.addShaped(<enderutilities:enderpart:12>, [[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>],[<enderutilities:enderpart:2>,<enderutilities:enderpart:11>,<enderutilities:enderpart:2>],[<wrcbe:material>,<enderutilities:enderpart:2>,<wrcbe:material>]]);
-<enderutilities:enderpart:17>.addTooltip(format.white("Can be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal."));
-<enderutilities:enderpart:17>.addTooltip(format.white("Can be done in ") + format.italic(format.red("any")) + format.white(" Dimension, not just the End Dimension."));
+<enderutilities:enderpart:17>.addTooltip(game.localize("dj2.inactive_ender_core.desc0"));
+<enderutilities:enderpart:17>.addTooltip(game.localize("dj2.inactive_ender_core.desc1"));
 
 # Ender Capacitor (Basic)
 recipes.remove(<enderutilities:endercapacitor>);
@@ -191,10 +191,10 @@ recipes.remove(<enderutilities:chairwand>);
 recipes.addShapedMirrored(<enderutilities:chairwand>, [[null,null,<ore:stairWood>],[null,<enderutilities:enderpart:20>,null],[<enderutilities:enderpart:20>,null,null]]);
 
 # Chair Wand
-<enderutilities:chairwand>.addTooltip("1. Right Click on the Ground to add location to sit.");
-<enderutilities:chairwand>.addTooltip("2. Place a Stair with Shift+Right Click");
-<enderutilities:chairwand>.addTooltip("3. Right Click to sit in the Chair!");
-<enderutilities:chairwand>.addTooltip("(4. Left Click with the Wand to remove sit location.)");
+<enderutilities:chairwand>.addTooltip(game.localize("dj2.chairwand.desc0"));
+<enderutilities:chairwand>.addTooltip(game.localize("dj2.chairwand.desc1"));
+<enderutilities:chairwand>.addTooltip(game.localize("dj2.chairwand.desc2"));
+<enderutilities:chairwand>.addTooltip(game.localize("dj2.chairwand.desc3"));
 
 # Dolly
 recipes.remove(<enderutilities:dolly>);
@@ -222,7 +222,7 @@ recipes.addShaped(<enderutilities:enderpearlreusable>, [[<thermalfoundation:stor
 
 # Elite Ender Pearl (reusable)
 recipes.remove(<enderutilities:enderpearlreusable:1>);
-<enderutilities:enderpearlreusable:1>.addTooltip(format.darkRed("Item disabled, because it's very buggy. Can get you stuck inside blocks."));
+<enderutilities:enderpearlreusable:1>.addTooltip(game.localize("dj2.enderpearl_reusable.desc0"));
 
 # Ender Sword
 recipes.remove(<enderutilities:endersword>);
@@ -278,23 +278,23 @@ recipes.addShaped(<enderutilities:quickstacker>, [[<enderio:item_alloy_ingot:3>,
 
 # Portal Scaler
 recipes.remove(<enderutilities:portalscaler>);
-<enderutilities:portalscaler>.addTooltip(format.darkRed("Item disabled. Can be used to quick travel to the world border, or in Multiplayer to mess up others' Nether Portals."));
+<enderutilities:portalscaler>.addTooltip(game.localize("dj2.portal_scaler.desc0"));
 
 # Syringe (empty)
 recipes.remove(<enderutilities:syringe>);
-<enderutilities:syringe>.addTooltip(format.darkRed("Item disabled. Items originally crafted from this are deemed too OP."));
+<enderutilities:syringe>.addTooltip(game.localize("dj2.syringe_disabled.desc0"));
 
 # Paralyzer Syringe
 recipes.remove(<enderutilities:syringe:1>);
-<enderutilities:syringe:1>.addTooltip(format.darkRed("Item disabled. Makes fighting against various mobs trivial."));
+<enderutilities:syringe:1>.addTooltip(game.localize("dj2.syringe_disabled.desc1"));
 
 # Stimulant Syringe
 recipes.remove(<enderutilities:syringe:2>);
-<enderutilities:syringe:2>.addTooltip(format.darkRed("Item disabled, since the Paralyzer Syringe is also disabled."));
+<enderutilities:syringe:2>.addTooltip(game.localize("dj2.syringe_disabled.desc2"));
 
 # Passifier Syringe
 recipes.remove(<enderutilities:syringe:3>);
-<enderutilities:syringe:3>.addTooltip(format.darkRed("Item disabled. Makes fighting against various mobs trivial."));
+<enderutilities:syringe:3>.addTooltip(game.localize("dj2.syringe_disabled.desc3"));
 
 # Adjustable Storage Unit
 recipes.remove(<enderutilities:asu>);

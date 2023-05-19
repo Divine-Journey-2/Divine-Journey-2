@@ -114,10 +114,10 @@ recipes.remove(<bewitchment:distillery>);
 mods.thaumcraft.Infusion.registerRecipe("bewitchment:distillery", "", <bewitchment:distillery>, 6, [<aspect:machina> * 240,<aspect:aqua> * 200,<aspect:vacuos> * 150,<aspect:alkimia> * 100,<aspect:ignis> * 100], <bewitchment:witches_oven>, [<bewitchment:block_of_opal>,<thaumcraft:essentia_input>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<enderio:block_enhanced_vat>,<thaumcraft:essentia_input>,<bewitchment:block_of_opal>,<bewitchment:block_of_opal>]);
 
 # White Sage Seeds
-<bewitchment:white_sage_seeds>.addTooltip(format.white("Sometimes dropped by a Dead Bush."));
+<bewitchment:white_sage_seeds>.addTooltip(game.localize("dj2.white_sage_seeds.desc0"));
 
 # Garlic Seeds
-<bewitchment:garlic_seeds>.addTooltip(format.white("Sometimes dropped by an Allium."));
+<bewitchment:garlic_seeds>.addTooltip(game.localize("dj2.garlic_seeds.desc0"));
 
 # Ritualistic Salt
 <bewitchment:salt>.displayName = "Ritualistic Salt";
@@ -146,9 +146,9 @@ Distillery.addRecipe([<bewitchment:swirl_of_depths>], [<bewitchment:ebb_of_death
 
 # Dragon's Blood Resin
 mods.inworldcrafting.FluidToItem.transform(<bewitchment:dragons_blood_resin>, <liquid:evilcraftblood>, [<contenttweaker:dragon_resin>], true);
-<bewitchment:dragons_blood_resin>.addTooltip(format.white("After initially crafting this, obtain it by"));
-<bewitchment:dragons_blood_resin>.addTooltip(format.white("Right Clicking on a Dragon's Blood Tree with"));
-<bewitchment:dragons_blood_resin>.addTooltip(format.white("a Boline, and waiting for it to bleed!"));
+<bewitchment:dragons_blood_resin>.addTooltip(game.localize("dj2.dragons_blood_resin.desc0"));
+<bewitchment:dragons_blood_resin>.addTooltip(game.localize("dj2.dragons_blood_resin.desc1"));
+<bewitchment:dragons_blood_resin>.addTooltip(game.localize("dj2.dragons_blood_resin.desc2"));
 <ore:dye>.remove(<bewitchment:dragons_blood_resin>);
 <ore:dyeRed>.remove(<bewitchment:dragons_blood_resin>);
 
@@ -191,19 +191,19 @@ recipes.addShapedMirrored(<bewitchment:athame>, [[null,<thermalfoundation:materi
 # Dimensional Sand: Only form the Athame
 WitchesOven.removeRecipe(<minecraft:blaze_powder>);
 WitchesOven.removeRecipe(<minecraft:chorus_fruit_popped>);
-<bewitchment:dimensional_sand>.addTooltip(format.white("Dropped by Enderman and Endermite slain with an Athame."));
+<bewitchment:dimensional_sand>.addTooltip(game.localize("dj2.dimensional_sand.desc0"));
 
 # Heart
-<bewitchment:heart>.addTooltip(format.white("Dropped by Players, Villagers, Witches, Evokers,"));
-<bewitchment:heart>.addTooltip(format.white("Illusioners & Vindicators when slain with an Athame."));
+<bewitchment:heart>.addTooltip(game.localize("dj2.heart.desc0"));
+<bewitchment:heart>.addTooltip(game.localize("dj2.heart.desc1"));
 
 # Hoof
-<bewitchment:hoof>.addTooltip(format.white("Can be obtained from Pigs, Sheep, Cows, Horses, Zombie Pigmen,"));
-<bewitchment:hoof>.addTooltip(format.white("Mooshrooms, Llamas, Donkeys & Mules when slain with an Athame,"));
-<bewitchment:hoof>.addTooltip(format.white("Or simply from a Cursed Earth mob farm in the Nether."));
+<bewitchment:hoof>.addTooltip(game.localize("dj2.hoof.desc0"));
+<bewitchment:hoof>.addTooltip(game.localize("dj2.hoof.desc1"));
+<bewitchment:hoof>.addTooltip(game.localize("dj2.hoof.desc2"));
 
 # Spectral Dust
-<bewitchment:spectral_dust>.addTooltip(format.white("Dropped by all Undead mobs when slain with an Athame."));
+<bewitchment:spectral_dust>.addTooltip(game.localize("dj2.spectral_dust.desc0"));
 
 # Heaven Extract
 Distillery.removeRecipe(<bewitchment:heaven_extract>);
@@ -232,12 +232,12 @@ FrostFire.removeAll();
 FrostFire.addRecipe(<bewitchment:cold_iron_ingot>, <thaumcraft:ingot>);
 
 # Perpetual Ice
-<bewitchment:perpetual_ice>.addTooltip(format.white("Created by throwing an Iceworld Potion on Stone,"));
-<bewitchment:perpetual_ice>.addTooltip(format.white("Granite or Diorite. To create the Potion, place a"));
-<bewitchment:perpetual_ice>.addTooltip(format.white("Witches' Cauldron near a Witches' Altar, fill it"));
-<bewitchment:perpetual_ice>.addTooltip(format.white("with Water, and throw a Mandrake Root, Ice OR Snow,"));
-<bewitchment:perpetual_ice>.addTooltip(format.white("Glowstone Dust, then Gunpowder in, and Right Click"));
-<bewitchment:perpetual_ice>.addTooltip(format.white("with an empty Bottle three times!"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc0"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc1"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc2"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc3"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc4"));
+<bewitchment:perpetual_ice>.addTooltip(game.localize("dj2.perpetual_ice.desc5"));
 
 # Pentacle
 recipes.remove(<bewitchment:pentacle>);
@@ -285,7 +285,7 @@ addBewitchmentPoppetRecipe(<bewitchment:poppet_tool>, <enderio:block_alloy_ender
 
 # Vampiric Poppet
 recipes.remove(<bewitchment:poppet_vampiric>);
-<bewitchment:poppet_vampiric>.addTooltip(format.white("Item removed. Deemed too OP."));
+<bewitchment:poppet_vampiric>.addTooltip(game.localize("dj2.poppet_vampiric.desc0"));
 
 # Woodoo Poppet
 addBewitchmentPoppetRecipe(<bewitchment:poppet_voodoo>, <contenttweaker:rune_of_wrath>, <thermalexpansion:florb>.withTag({Fluid: "liquid_death"}), <bewitchment:otherworldly_tears>.noReturn());
@@ -320,12 +320,12 @@ recipes.remove(<bewitchment:flying_ointment>);
 Distillery.addRecipe([<bewitchment:flying_ointment>], [<contenttweaker:travelers_tenacity>,<bewitchment:belladonna>,<bewitchment:tallow>,<bewitchment:tallow>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "volatus"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "motus"}]})]);
 
 # Caduceus
-<bewitchment:caduceus>.addTooltip(format.white("Dropped by Baphomet. Consult your"));
-<bewitchment:caduceus>.addTooltip(format.white("Codex Infernalis on how to summon him."));
+<bewitchment:caduceus>.addTooltip(game.localize("dj2.caduceus.desc0"));
+<bewitchment:caduceus>.addTooltip(game.localize("dj2.caduceus.desc1"));
 
 # Leonard's Wand
-<bewitchment:leonards_wand>.addTooltip(format.white("Dropped by Leonard. Consult your"));
-<bewitchment:leonards_wand>.addTooltip(format.white("Codex Infernalis on how to summon him."));
+<bewitchment:leonards_wand>.addTooltip(game.localize("dj2.leonards_wand.desc0"));
+<bewitchment:leonards_wand>.addTooltip(game.localize("dj2.leonards_wand.desc1"));
 
 # Brazier
 recipes.remove(<bewitchment:brazier>);
@@ -344,8 +344,8 @@ WitchesCauldron.removeRecipe(<bewitchment:stew_of_the_grotesque>);
 WitchesCauldron.addRecipe([<bewitchment:stew_of_the_grotesque>], [<bewitchment:demonic_elixir>,<contenttweaker:death_core>,<contenttweaker:shard_of_the_grotesque>,<contenttweaker:shard_of_the_grotesque>,<bewitchment:lizard_leg>,<bewitchment:toe_of_frog>,<bewitchment:adders_fork>,<bewitchment:hellebore>,<bewitchment:belladonna>]);
 
 # Demon Heart
-<bewitchment:demon_heart>.addTooltip(format.white("Dropped by Lesser and Higher Demons. Check"));
-<bewitchment:demon_heart>.addTooltip(format.white("your Codex Infernalis on how to summon them."));
+<bewitchment:demon_heart>.addTooltip(game.localize("dj2.demon_heart.desc0"));
+<bewitchment:demon_heart>.addTooltip(game.localize("dj2.demon_heart.desc1"));
 mods.immersiveengineering.ArcFurnace.addRecipe(<bewitchment:demon_heart> * 20, <bewitchment:demon_heart> * 10, null, 200, 1000, [<bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10]);
 #EIOAlloySmelter.addRecipe(<bewitchment:demon_heart> * 20, [<bewitchment:demon_heart> * 10, <bewitchment:heart> * 10, <bloodmagic:item_demon_crystal> * 10], 80000);
 # Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
@@ -434,7 +434,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<bewitchment:nethersteel> * 4, <s
 EIOAlloySmelter.addRecipe(<bewitchment:nethersteel> * 4, [<simplyjetpacks:metaitemmods:12>, <minecraft:nether_brick>,<bewitchment:cold_iron_ingot>], 60000);
 
 # Demonic Horn
-<bewitchment:hellhound_horn>.addTooltip(format.white("Dropped by various Bewitchment Demons."));
+<bewitchment:hellhound_horn>.addTooltip(game.localize("dj2.hellhound_horn.desc0"));
 
 # Hellish Bauble
 recipes.remove(<bewitchment:hellish_bauble>);
@@ -445,7 +445,7 @@ recipes.remove(<bewitchment:waystone>);
 recipes.addShaped(<bewitchment:waystone>, [[<bewitchment:cold_iron_ingot>,<bewitchment:pentacle>,<bewitchment:cold_iron_ingot>],[<bewitchment:cold_iron_ingot>,<bewitchment:otherworldly_tears>.noReturn(),<bewitchment:cold_iron_ingot>],[null,<bewitchment:cold_iron_ingot>,null]]);
 
 # Spanish Moss
-<bewitchment:spanish_moss>.addTooltip(format.white("Found in Swamp Biomes. Use Shears to harvest."));
+<bewitchment:spanish_moss>.addTooltip(game.localize("dj2.spanish_moss.desc0"));
 
 # Cold Iron Sword
 recipes.remove(<bewitchment:cold_iron_sword>);

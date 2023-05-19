@@ -11,7 +11,7 @@ print("STARTING ActivateBlockJEI.zs");
 val activate = <assembly:activate_block_or_entity>;
 activate.addJEICatalyst(<botania:cosmetic:32>.withTag({
     display:{
-        Name: "§r§cRight Clicking"
+        Name: game.localize("dj2.activate_block_jei.hand.name")
     },
 }));
 activate.setJEIItemSlot(0, 0, "item_input", SlotVisual.itemSlot());
@@ -42,7 +42,7 @@ addInteraction(<enderutilities:enderpart:11>, endCrystal, <enderutilities:enderp
 addInteraction(<enderutilities:enderpart:12>, endCrystal, <enderutilities:enderpart:17>);
 
 // Indicating how to obtain Ignition
-addInteraction(<contenttweaker:flame_devourer_pendant>.withTag({display:{Lore: ["§r§bMust be afflicted with the §cHell Fire§b status","§r§bUses Durability"]}}), <bewitchment:brazier>, <contenttweaker:ignition>);
+addInteraction(<contenttweaker:flame_devourer_pendant>.withTag({display:{Lore: [game.localize("dj2.activate_block_jei.flame_devourer_pendant.desc0"),game.localize("dj2.activate_block_jei.flame_devourer_pendant.desc1")]}}), <bewitchment:brazier>, <contenttweaker:ignition>);
 
 // Vanilla doubling tall flowers function
 addInteraction(<minecraft:dye:15>, <minecraft:double_plant>, <minecraft:double_plant> * 2);
@@ -55,14 +55,14 @@ addInteraction(<totemic:bark_stripper>, <totemic:cedar_log>, <totemic:stripped_c
 
 // Basic Salis Mundus tranformations
 addInteraction(<thaumcraft:salis_mundus>, <minecraft:bookshelf>, <thaumcraft:thaumonomicon>);
-addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
-addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:["§r§bMust be unlocked in the Thaumonomicon."]}}));
+addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <thaumcraft:arcane_workbench>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.arcane_workbench.desc0")]}}));
+addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.crucible.desc0")]}}));
 
 // Research Table
 addInteraction(<thaumcraft:scribing_tools>, <thaumcraft:table_wood>*2, <thaumcraft:research_table>);
 
 // Botania Phantom Ink makes Spark not (well, less) visible
-addInteraction(<botania:phantomink>.withTag({display:{Lore:["§r§bNot consumed."]}}), <botania:spark>, <botania:spark>.withTag({display:{Lore:["§r§bSignificantly less visible."]}}));
+addInteraction(<botania:phantomink>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.phantomink.desc0")]}}), <botania:spark>, <botania:spark>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.spark.desc0")]}}));
 
 // Botania Seeds (convert area of dirt/grass into target)
 var soil = <minecraft:dirt> | <minecraft:grass>;
@@ -81,13 +81,13 @@ addInteraction(<botania:overgrowthseed>, <minecraft:grass>, <botania:enchantedso
 addInteraction(<extrautils2:ingredients:10>, soil, <extrautils2:cursedearth>);
 
 // Unlock the Aether Portal
-addInteraction(<contenttweaker:crown_of_skies>, <aether_legacy:aether_portal>, <aether_legacy:aether_portal>.withTag({display:{Name:"§r§dUnlock the Aether Dimension"}}));
+addInteraction(<contenttweaker:crown_of_skies>, <aether_legacy:aether_portal>, <aether_legacy:aether_portal>.withTag({display:{Name:game.localize("dj2.activate_block_jei.aether_portal.desc0")}}));
 
 // P2P Tunnel Attunement
 // https://github.com/PrototypeTrousers/Applied-Energistics-2/blob/AE2-Omnifactory/src/main/java/appeng/core/features/registries/P2PTunnelRegistry.java
 val allTunnels = <appliedenergistics2:part:460> | <appliedenergistics2:part:461> | <appliedenergistics2:part:462> | <appliedenergistics2:part:463> | <appliedenergistics2:part:467> | <appliedenergistics2:part:469>;
 addInteraction(
-    <appliedenergistics2:part:16>.withTag({display:{Name:"§r§dAny AE2 Cable"}}),
+    <appliedenergistics2:part:16>.withTag({display:{Name:game.localize("dj2.activate_block_jei.glass_cable.desc0")}}),
     allTunnels,
     <appliedenergistics2:part:460> // ME
 );
@@ -99,7 +99,7 @@ addInteraction(
 );
 
 addInteraction(
-    <thermaldynamics:duct_0>.withTag({display:{Name:"§r§dNearly anything that can hold or transfer RF/FE/CF/AE"}}),
+    <thermaldynamics:duct_0>.withTag({display:{Name:game.localize("dj2.activate_block_jei.rf_duct.desc0")}}),
     allTunnels,
     <appliedenergistics2:part:469> // FE
 );
@@ -117,13 +117,13 @@ addInteraction(
 );
 
 addInteraction(
-    <minecraft:bucket>.withTag({display:{Name:"§r§dNearly anything that can hold or transfer fluids"}}),
+    <minecraft:bucket>.withTag({display:{Name:game.localize("dj2.activate_block_jei.bucket.desc0")}}),
     allTunnels,
     <appliedenergistics2:part:463> // FLUID
 );
 
 // Add Potato Armor
-val air = <thaumcraft:barrier>.withTag({display:{Name:"§r§dRight Click into the air"}});
+val air = <thaumcraft:barrier>.withTag({display:{Name:game.localize("dj2.activate_block_jei.barrier.desc0")}});
 addInteraction(<draconicadditions:infused_potato_helm>, air, <draconicadditions:potato_helm>);
 addInteraction(<draconicadditions:infused_potato_chest>, air, <draconicadditions:potato_chest>);
 addInteraction(<draconicadditions:infused_potato_legs>, air, <draconicadditions:potato_legs>);

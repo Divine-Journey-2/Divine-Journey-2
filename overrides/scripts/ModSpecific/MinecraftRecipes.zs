@@ -186,10 +186,10 @@ mods.mekanism.enrichment.removeRecipe(<immersiveengineering:material:25>);
 mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 
 # Dragon's Breath
-<minecraft:dragon_breath>.addTooltip(format.white("If you're having trouble collecting this item because of Botania's"));
-<minecraft:dragon_breath>.addTooltip(format.gray("Ender Air Bottles") + format.white(", try the following: Do ") + format.red("NOT") + format.white(" Right Click on blocks,"));
-<minecraft:dragon_breath>.addTooltip(format.white("instead, angle your clicks so you only reach the purple ") + format.lightPurple("Dragon's"));
-<minecraft:dragon_breath>.addTooltip(format.lightPurple("Breath particles") + format.white(", and ") + format.red("NOT") + format.white(" the blocks below."));
+<minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc0"));
+<minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc1"));
+<minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc2"));
+<minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc3"));
 recipes.addShaped(<minecraft:dragon_breath>, [[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<minecraft:glass_bottle>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>]]);
 
 # Additional Wither Skeleton Skull recipe
@@ -232,7 +232,7 @@ mods.enderio.SagMill.addRecipe([<thermalfoundation:material:1> * 4], [100], <min
 mods.thermalexpansion.Pulverizer.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>, 6000);
 
 # Lilipad
-<minecraft:waterlily>.addTooltip(format.white(format.italic("A Resources Fisher can occasionally fish this up.")));
+<minecraft:waterlily>.addTooltip(game.localize("dj2.waterlily.desc0"));
 
 # Beetroot as Seed drop
 vanilla.seeds.addSeed(<minecraft:beetroot_seeds> % 1);

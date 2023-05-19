@@ -64,21 +64,21 @@ mods.avaritia.ExtremeCrafting.addShaped("Key to Infinity", <contenttweaker:key_t
 [<avaritia:block_resource:1>,<avaritia:block_resource:1>,null,<avaritia:block_resource:1>,null,null,null,null,null]]);
 
 # Bag of Truth and Key to Infinity tooltips
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red(format.bold("LOCKED")));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red("Requires a ") + format.lightPurple(format.bold("Key to Infinity")) + format.red(" to open."));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.red("(This is the entire goal of the modpack.)"));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.darkRed(format.italic("This is craftable, if you ever lose it.")));
-<contenttweaker:bag_of_truth_locked>.addTooltip(format.darkRed(format.italic("Warning: Crafting deletes the input bag's inventory.")));
-<contenttweaker:key_to_infinity>.addTooltip(format.red("Craft together with a ") + format.lightPurple(format.bold("Bag of Truth (Locked)")) + format.red(" to open it!"));
+<contenttweaker:bag_of_truth_locked>.addTooltip(game.localize("dj2.bag_of_truth_locked.desc0"));
+<contenttweaker:bag_of_truth_locked>.addTooltip(game.localize("dj2.bag_of_truth_locked.desc1"));
+<contenttweaker:bag_of_truth_locked>.addTooltip(game.localize("dj2.bag_of_truth_locked.desc2"));
+<contenttweaker:bag_of_truth_locked>.addTooltip(game.localize("dj2.bag_of_truth_locked.desc3"));
+<contenttweaker:bag_of_truth_locked>.addTooltip(game.localize("dj2.bag_of_truth_locked.desc4"));
+<contenttweaker:key_to_infinity>.addTooltip(game.localize("dj2.key_to_infinity.desc0"));
 
 # Glyphs
 val glyphs = [<contenttweaker:glyph_route>,<contenttweaker:glyph_bag>,<contenttweaker:glyph_tent>,<contenttweaker:glyph_waterfall>,<contenttweaker:glyph_tongue>,<contenttweaker:glyph_scythe>,<contenttweaker:glyph_blockade>,<contenttweaker:glyph_lash>,<contenttweaker:glyph_slash>,<contenttweaker:glyph_rod>,<contenttweaker:glyph_split>,<contenttweaker:glyph_shield>,<contenttweaker:glyph_war>,<contenttweaker:glyph_cross>,<contenttweaker:glyph_stamp>,<contenttweaker:glyph_connection>,<contenttweaker:glyph_fork>,<contenttweaker:glyph_wave>,<contenttweaker:glyph_lightning>,<contenttweaker:glyph_pair>,<contenttweaker:glyph_fish>,<contenttweaker:glyph_weaving>,<contenttweaker:glyph_stand>,<contenttweaker:glyph_lion>,<contenttweaker:glyph_mirror>,<contenttweaker:glyph_electricity>] as IItemStack[];
 val glyph_inputs = [<contenttweaker:essence_of_ways>,<projecte:item.pe_alchemical_bag:14>,<totemic:tipi>,<mysticalagriculture:watering_can:4>,<bewitchment:tongue_of_dog>,<mysticalagriculture:supremium_scythe>,<extrautils2:compressedcobblestone:7>,<bewitchment:hellhound_horn>,<divinerpg:sandslash>,<lightningcraft:rod:9>,<contenttweaker:highly_radioactive_dimension_splitting_compound>,<spartanshields:shield_tc_void>,<avaritia:infinity_sword>,<rftoolsdim:dimensional_cross_block>,<openblocks:stencil>,<actuallyadditions:item_phantom_connector>,<agricraft:rake:1>,<contenttweaker:aquasalus>,<contenttweaker:lightning_charge>,<draconicevolution:dislocator_bound:1>,<minecraft:fish>,<botania:manaresource:22>,<minecraft:armor_stand>,<erebus:antlion_egg>,<thaumicaugmentation:impetus_mirror>,<extendedcrafting:singularity_custom:103>] as IItemStack[];
 for i in 0 to 26 {
 	recipes.addShapeless(glyphs[i], [<mysticalagradditions:stuff:69>,glyph_inputs[i]]);
-	glyphs[i].addTooltip(format.darkRed(format.italic("I think I might have seen characters like")));
-	glyphs[i].addTooltip(format.darkRed(format.italic("these written on Tablets and the highest")));
-	glyphs[i].addTooltip(format.darkRed(format.italic("tier Blood Orb back in Chapter 18...")));
+	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc0"));
+	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc1"));
+	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc2"));
 }
 
 # IT1
@@ -99,14 +99,14 @@ mods.jei.JEI.hide(<contenttweaker:it4>);
 
 # IT5
 mods.biggercraftingtables.Giant.addShaped(<contenttweaker:it5>,
-[[<contenttweaker:puzzle_tile_gbbgr>, <contenttweaker:puzzle_tile_gbggr>, <contenttweaker:puzzle_tile_gbgog>, <contenttweaker:puzzle_tile_obgoo>, <contenttweaker:puzzle_tile_obooo>, <contenttweaker:puzzle_tile_obokr>, <contenttweaker:puzzle_tile_kbokk>, <contenttweaker:puzzle_tile_kbkkr>, <contenttweaker:puzzle_tile_kbkbk>], 
-[<contenttweaker:puzzle_tile_rgbrr>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_ggror>, <contenttweaker:puzzle_tile_oogoo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rookr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_kkrbr>], 
-[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rggor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkk>, <contenttweaker:puzzle_tile_krrrk>, <contenttweaker:puzzle_tile_rkkbr>], 
-[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkrr>, <contenttweaker:puzzle_tile_rrkbk>], 
-[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_krrbk>], 
-[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkbk>], 
-[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrr>, <contenttweaker:puzzle_tile_rrgog>, <contenttweaker:puzzle_tile_ooror>, <contenttweaker:puzzle_tile_ooorr>, <contenttweaker:puzzle_tile_rroro>, <contenttweaker:puzzle_tile_rrrkr>, <contenttweaker:puzzle_tile_kkrkr>, <contenttweaker:puzzle_tile_kkkbr>], 
-[<contenttweaker:puzzle_tile_rrbrg>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rogro>, <contenttweaker:puzzle_tile_roroo>, <contenttweaker:puzzle_tile_orrro>, <contenttweaker:puzzle_tile_rrork>, <contenttweaker:puzzle_tile_rkrrk>, <contenttweaker:puzzle_tile_rkrbk>], 
+[[<contenttweaker:puzzle_tile_gbbgr>, <contenttweaker:puzzle_tile_gbggr>, <contenttweaker:puzzle_tile_gbgog>, <contenttweaker:puzzle_tile_obgoo>, <contenttweaker:puzzle_tile_obooo>, <contenttweaker:puzzle_tile_obokr>, <contenttweaker:puzzle_tile_kbokk>, <contenttweaker:puzzle_tile_kbkkr>, <contenttweaker:puzzle_tile_kbkbk>],
+[<contenttweaker:puzzle_tile_rgbrr>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_ggror>, <contenttweaker:puzzle_tile_oogoo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rookr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_kkrbr>],
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rggor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkk>, <contenttweaker:puzzle_tile_krrrk>, <contenttweaker:puzzle_tile_rkkbr>],
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkrr>, <contenttweaker:puzzle_tile_rrkbk>],
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrokr>, <contenttweaker:puzzle_tile_kkrrr>, <contenttweaker:puzzle_tile_rkkkk>, <contenttweaker:puzzle_tile_krrbk>],
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrg>, <contenttweaker:puzzle_tile_rrgor>, <contenttweaker:puzzle_tile_ooroo>, <contenttweaker:puzzle_tile_oooro>, <contenttweaker:puzzle_tile_rrorr>, <contenttweaker:puzzle_tile_rkrkr>, <contenttweaker:puzzle_tile_krrkk>, <contenttweaker:puzzle_tile_kkkbk>],
+[<contenttweaker:puzzle_tile_rrbgr>, <contenttweaker:puzzle_tile_ggrrr>, <contenttweaker:puzzle_tile_rrgog>, <contenttweaker:puzzle_tile_ooror>, <contenttweaker:puzzle_tile_ooorr>, <contenttweaker:puzzle_tile_rroro>, <contenttweaker:puzzle_tile_rrrkr>, <contenttweaker:puzzle_tile_kkrkr>, <contenttweaker:puzzle_tile_kkkbr>],
+[<contenttweaker:puzzle_tile_rrbrg>, <contenttweaker:puzzle_tile_rgrgg>, <contenttweaker:puzzle_tile_grrrg>, <contenttweaker:puzzle_tile_rogro>, <contenttweaker:puzzle_tile_roroo>, <contenttweaker:puzzle_tile_orrro>, <contenttweaker:puzzle_tile_rrork>, <contenttweaker:puzzle_tile_rkrrk>, <contenttweaker:puzzle_tile_rkrbk>],
 [<contenttweaker:puzzle_tile_grbgb>, <contenttweaker:puzzle_tile_grggb>, <contenttweaker:puzzle_tile_gggob>, <contenttweaker:puzzle_tile_orgob>, <contenttweaker:puzzle_tile_oroob>, <contenttweaker:puzzle_tile_oookb>, <contenttweaker:puzzle_tile_krokb>, <contenttweaker:puzzle_tile_krkkb>, <contenttweaker:puzzle_tile_krkbb>]]);
 mods.jei.JEI.hide(<contenttweaker:it5>);
 mods.jei.JEI.hideCategory("biggerct.big");
@@ -132,7 +132,7 @@ recipes.addHiddenShapeless("boct", bag_of_corrupted_truth, [<contenttweaker:bag_
 
 # Call of the Underworld
 mods.jei.JEI.hide(<contenttweaker:call_of_the_underworld>);
-<contenttweaker:call_of_the_underworld>.addTooltip(format.darkRed("Dropped by Immortus."));
+<contenttweaker:call_of_the_underworld>.addTooltip(game.localize("dj2.call_of_the_underworld.desc0"));
 
 # Heaven's Cleansing
 recipes.addHiddenShapeless("hc", <contenttweaker:heavens_cleansing>, [<contenttweaker:call_of_the_underworld>,<contenttweaker:essence_of_the_contrary>]);

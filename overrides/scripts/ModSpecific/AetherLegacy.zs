@@ -59,7 +59,7 @@ recipes.remove(<aether_legacy:aerogel_slab>);
 recipes.addShaped(<aether_legacy:aerogel>, [[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>],[<mysticalagriculture:fire_essence>,<mysticalagriculture:saltpeter_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:ice_essence>,<mysticalagriculture:fire_essence>,<mysticalagriculture:ice_essence>]]);
 
 # Warning for servers with TickProfiler
-<aether_legacy:aerogel>.addTooltip(format.red(format.bold("On servers with TickProfiler, attemting to automate this will cause crashes.")));
+<aether_legacy:aerogel>.addTooltip(game.localize("dj2.aerogel_warning.desc0"));
 
 # Holystone recipe with Mystical Agriculture Essences
 recipes.addShaped(<aether_legacy:holystone>*8, [[<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:ghast_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:chicken_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:chicken_essence>]]);

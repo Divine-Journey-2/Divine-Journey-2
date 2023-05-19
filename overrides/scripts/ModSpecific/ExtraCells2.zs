@@ -100,12 +100,6 @@ recipes.addShaped(<extracells:storage.component:16>, [[<mekanism:atomicalloy>,<e
 recipes.remove(<extracells:storage.component:17>);
 recipes.addShaped(<extracells:storage.component:17>, [[<contenttweaker:cosmic_alloy>,<extracells:storage.component:16>,<contenttweaker:cosmic_alloy>],[<extracells:storage.component:16>,<contenttweaker:scheduling_processor>,<extracells:storage.component:16>],[<contenttweaker:cosmic_alloy>,<extracells:storage.component:16>,<contenttweaker:cosmic_alloy>]]);
 
-function addExtraCellsGasDisableString(item as IItemStack) {
-	item.addTooltip(format.red(format.italic("Disabled due to a duplication bug. Use a Gas Tank")));
-	item.addTooltip(format.red(format.italic("as external storage with an ME Gas Storage Bus")));
-	item.addTooltip(format.red(format.italic("if you'd like to store gases in your ME System.")));
-}
-
 # Gas Storage Housing
 recipes.remove(<extracells:storage.casing:2>);
 recipes.addShaped(<extracells:storage.casing:2>, [[<contenttweaker:empowered_glod_crystal>,<thermalfoundation:material:72>,<contenttweaker:empowered_glod_crystal>],[<thermalfoundation:material:72>,null,<thermalfoundation:material:72>],[<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0}),<mekanism:gastank>.withTag({tier: 0})]]);
@@ -148,8 +142,6 @@ recipes.addShaped(<extracells:storage.gas:6>.withTag({fuzzyMode: "IGNORE_ALL"}),
 # ME Gas Level Emitter
 recipes.remove(<extracells:part.base:17>);
 recipes.addShaped(<extracells:part.base:17>, [[<projectred-core:resource_item:11>],[<ore:stickWood>],[<contenttweaker:methodology_processor>]]);
-#<extracells:part.base:17>.addTooltip(format.red(format.italic("Disabled due to a bug where it completely")));
-#<extracells:part.base:17>.addTooltip(format.red(format.italic("behaves as a Fluid Level Emitter.")));
 
 # ME Gas Storage Bus
 recipes.remove(<extracells:part.base:16>);
