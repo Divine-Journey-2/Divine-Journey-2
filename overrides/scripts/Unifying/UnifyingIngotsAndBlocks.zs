@@ -1,10 +1,10 @@
 #priority 20
-# Author: Atricos
+// Author: Atricos
 
 import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.RedstoneFurnace;
 import mods.appliedenergistics2.Grinder;
-#import moretweaker.galacticraft.CircuitFabricator;
+//import moretweaker.galacticraft.CircuitFabricator;
 import mods.actuallyadditions.Crusher;
 import mods.thermalexpansion.Factorizer;
 import mods.immersiveengineering.Crusher as IECrusher;
@@ -25,9 +25,9 @@ import mods.immersiveengineering.AlloySmelter;
 
 print("STARTING UnifyingIngotsAndBlocks.zs");
 
-# Titanium
-#recipes.replaceAllOccurences(<ore:ingotTitanium>, <galacticraftplanets:item_basic_asteroids>, <*>);
-#recipes.replaceAllOccurences(<ore:blockTitanium>, <galacticraftplanets:asteroids_block:7>, <*>);
+// Titanium
+//recipes.replaceAllOccurences(<ore:ingotTitanium>, <galacticraftplanets:item_basic_asteroids>, <*>);
+//recipes.replaceAllOccurences(<ore:blockTitanium>, <galacticraftplanets:asteroids_block:7>, <*>);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:item_basic_asteroids:9>, 0.5);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:asteroids_block:4>, 0.5);
 furnace.addRecipe(<galacticraftplanets:item_basic_asteroids>, <galacticraftplanets:item_basic_asteroids:4>, 0.5);
@@ -49,10 +49,10 @@ mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, <galacti
 mods.thermalexpansion.InductionSmelter.addRecipe(<galacticraftplanets:item_basic_asteroids>, <minecraft:sand:*>, <galacticraftplanets:item_basic_asteroids:9>, 1000, <thermalfoundation:material:864>, 25);
 mods.alchemistry.Combiner.removeRecipe(<alchemistry:ingot:22>);
 
-# Copper
+// Copper
 val wrongCopperIngots = [<galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <immersiveengineering:metal>, <abyssalcraft:copperingot>, <alchemistry:ingot:29>, <erebus:materials:43>, <bno:ingot_copper>, <projectred-core:resource_item:100>] as IItemStack[];
 <ore:ingotCopper>.removeItems(wrongCopperIngots);
-#recipes.replaceAllOccurences(<ore:ingotCopper>, <thermalfoundation:material:128>);
+//recipes.replaceAllOccurences(<ore:ingotCopper>, <thermalfoundation:material:128>);
 for copper in wrongCopperIngots {
 	mods.abyssalcraft.Materializer.removeMaterialization(copper);
 	mods.appliedenergistics2.Grinder.removeRecipe(copper);
@@ -83,14 +83,14 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:64>, null, 5, 512);
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
-#recipes.replaceAllOccurences(<ore:blockCopper>, <thermalfoundation:storage>);
+//recipes.replaceAllOccurences(<ore:blockCopper>, <thermalfoundation:storage>);
 <ore:blockCopper>.removeItems([<mekanism:basicblock:12>, <bno:block_copper>, <immersiveengineering:storage>]);
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 
-# Tin
+// Tin
 val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism:ingot:6>, <galacticraftcore:basic_item:4>, <projectred-core:resource_item:101>, <erebus:materials:46>, <bno:ingot_tin>] as IItemStack[];
 <ore:ingotTin>.removeItems(wrongTinIngots);
-#recipes.replaceAllOccurences(<ore:ingotTin>, <thermalfoundation:material:129>);
+//recipes.replaceAllOccurences(<ore:ingotTin>, <thermalfoundation:material:129>);
 for tin in wrongTinIngots {
 	mods.abyssalcraft.Materializer.removeMaterialization(tin);
 	mods.appliedenergistics2.Grinder.removeRecipe(tin);
@@ -111,10 +111,10 @@ recipes.removeByRecipeName("unidict:nuggettin_x9_size.1");
 recipes.removeShaped(<thermalfoundation:storage:1>, [[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>]]);
 <ore:blockTin>.removeItems([<galacticraftcore:basic_block_core:10>,<bno:block_tin>,<mekanism:basicblock:13>]);
 
-# Silicon
+// Silicon
 <ore:itemSilicon>.removeItems([<enderio:item_material:5>,<galacticraftcore:basic_item:2>]);
-#recipes.replaceAllOccurences(<ore:itemSilicon>, <appliedenergistics2:material:5>);
-#CircuitFabricator.remove(<galacticraftplanets:basic_item_venus:6>);
+//recipes.replaceAllOccurences(<ore:itemSilicon>, <appliedenergistics2:material:5>);
+//CircuitFabricator.remove(<galacticraftplanets:basic_item_venus:6>);
 recipes.remove(<galacticraftcore:basic_item:2>);
 recipes.addShapeless(<appliedenergistics2:material:5> * 9, [<galacticraftcore:basic_block_core:13>]);
 mods.actuallyadditions.Crusher.removeRecipe(<galacticraftcore:basic_item:2>);
@@ -135,7 +135,7 @@ mods.alchemistry.Dissolver.removeRecipe(<alchemistry:ingot:14>);
 Inscriber.removeRecipe(<appliedenergistics2:material:20>);
 Inscriber.addRecipe(<appliedenergistics2:material:20>, <appliedenergistics2:material:5>, true, <appliedenergistics2:material:19>);
 
-# Aluminum
+// Aluminum
 val wrongAlumIngots = [<alchemistry:ingot:13>,<erebus:materials:42>,<galacticraftcore:basic_item:5>,<immersiveengineering:metal:1>] as IItemStack[];
 <ore:ingotAluminum>.removeItems(wrongAlumIngots);
 <ore:ingotAluminium>.removeItems([<erebus:materials:42>,<galacticraftcore:basic_item:5>,<immersiveengineering:storage:1>]);
@@ -169,7 +169,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132> * 2, <ore:oreAluminium>, <immersiveengineering:material:7>, 200, 512, null, "Ores");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:132> , <thermalfoundation:material:68>, null, 100, 512);
 
-# Steel
+// Steel
 <ore:ingotSteel>.removeItems([<mekanism:ingot:4>,<bigreactors:ingotsteel>,<immersiveengineering:metal:8>]);
 <ore:blockSteel>.removeItems([<mekanism:basicblock:5>,<bigreactors:blocksteel>]);
 recipes.remove(<mekanism:basicblock:5>);
@@ -195,7 +195,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> 
 furnace.remove(<immersiveengineering:metal:8>);
 recipes.remove(<immersiveengineering:metal:28>);
 
-# Bronze
+// Bronze
 <ore:ingotBronze>.remove(<mekanism:ingot:2>);
 <ore:blockBronze>.remove(<mekanism:basicblock:1>);
 recipes.remove(<mekanism:basicblock:1>);
@@ -205,7 +205,7 @@ mods.mekanism.infuser.addRecipe("TIN", 10, <thermalfoundation:material:128> * 3,
 mods.tconstruct.Melting.removeRecipe(<liquid:bronze>, <mekanism:ingot:2>);
 <ore:nuggetSteel>.remove(<immersiveengineering:metal:28>);
 
-# Constantan
+// Constantan
 <ore:blockConstantan>.remove(<immersiveengineering:storage:6>);
 <ore:ingotConstantan>.remove(<immersiveengineering:metal:6>);
 recipes.remove(<immersiveengineering:metal:6>);
@@ -222,7 +222,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:164> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:164> * 2, <thermalfoundation:material:64>, null, 100, 512, [<thermalfoundation:material:69>], "Alloying");
 mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:164> * 2, <thermalfoundation:material:64>, <thermalfoundation:material:69>, 4800);
 
-# Coal Coke
+// Coal Coke
 <ore:fuelCoke>.remove(<immersiveengineering:material:6>);
 <ore:blockFuelCoke>.remove(<immersiveengineering:stone_decoration:3>);
 recipes.remove(<immersiveengineering:material:6>);
@@ -232,36 +232,36 @@ mods.immersiveengineering.CokeOven.addRecipe(<thermalfoundation:material:802>, 5
 mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:stone_decoration:3>);
 mods.immersiveengineering.CokeOven.addRecipe(<thermalfoundation:storage_resource:1>, 4500, <minecraft:coal_block>, 16200);
 
-# Nether Star Nugget
+// Nether Star Nugget
 <ore:nuggetNetherStar>.remove(<extendedcrafting:material:140>);
 recipes.remove(<extendedcrafting:material:140>);
 recipes.removeShaped(<minecraft:nether_star>, [[<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>],[<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>],[<extendedcrafting:material:140>,<extendedcrafting:material:140>,<extendedcrafting:material:140>]]);
 
-# Amethyst
+// Amethyst
 <ore:gemAmethyst>.remove(<bewitchment:amethyst>);
 <ore:blockAmethyst>.remove(<bewitchment:block_of_amethyst>);
 <ore:gemAll>.remove(<bewitchment:amethyst>);
 recipes.remove(<bewitchment:amethyst>);
 recipes.remove(<bewitchment:block_of_amethyst>);
 
-# Emerald Nugget
+// Emerald Nugget
 <ore:nuggetEmerald>.removeItems([<agricraft:agri_nugget>,<thermalfoundation:material:17>]);
 recipes.remove(<thermalfoundation:material:17>);
 recipes.removeShaped(<minecraft:emerald>, [[<ore:nuggetEmerald>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]);
 recipes.addShaped(<minecraft:emerald>, [[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>],[<extendedcrafting:material:129>,<extendedcrafting:material:129>,<extendedcrafting:material:129>]]);
 mods.tconstruct.Melting.removeRecipe(<liquid:emerald>, <thermalfoundation:material:17>);
 
-# Diamond Nugget
+// Diamond Nugget
 <ore:nuggetDiamond>.removeItems([<agricraft:agri_nugget:1>,<extendedcrafting:material:128>]);
 recipes.remove(<extendedcrafting:material:128>);
 recipes.removeShaped(<minecraft:diamond>, [[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>],[<extendedcrafting:material:128>,<extendedcrafting:material:128>,<extendedcrafting:material:128>]]);
 
-# Iron Nugget
+// Iron Nugget
 recipes.remove(<immersiveengineering:metal:29>);
 <ore:nuggetIron>.removeItems([<immersiveengineering:metal:29>,<agricraft:agri_nugget:3>,<thaumcraft:nugget>]);
 recipes.removeShapeless(<minecraft:iron_nugget>, [<thaumcraft:nugget>]);
 
-# Tin Nugget
+// Tin Nugget
 <ore:nuggetTin>.removeItems([<mekanism:nugget:6>,<thaumcraft:nugget:2>,<agricraft:agri_nugget:5>,<bno:nugget_tin>]);
 recipes.remove(<thaumcraft:nugget:2>);
 recipes.remove(<mekanism:nugget:6>);
@@ -269,15 +269,15 @@ recipes.remove(<bno:nugget_tin>);
 recipes.removeShaped(<thermalfoundation:material:129>, [[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>],[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>],[<thaumcraft:nugget:2>,<thaumcraft:nugget:2>,<thaumcraft:nugget:2>]]);
 recipes.addShaped(<thermalfoundation:material:129>, [[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>],[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>],[<thermalfoundation:material:193>,<thermalfoundation:material:193>,<thermalfoundation:material:193>]]);
 
-# Bronze Nugget
+// Bronze Nugget
 <ore:nuggetBronze>.remove(<mekanism:nugget:2>);
 recipes.remove(<mekanism:nugget:2>);
 
-# Copper Block
+// Copper Block
 <ore:blockCopper>.removeItems([<galacticraftcore:basic_block_core:9>]);
 recipes.remove(<galacticraftcore:basic_block_core:9>);
 
-# Copper Nugget
+// Copper Nugget
 <ore:nuggetCopper>.removeItems([<thaumcraft:nugget:1>,<mekanism:nugget:5>,<agricraft:agri_nugget:4>,<bno:nugget_copper>]);
 recipes.remove(<mekanism:nugget:5>);
 recipes.remove(<thaumcraft:nugget:1>);
@@ -285,7 +285,7 @@ recipes.remove(<bno:nugget_copper>);
 recipes.removeShaped(<thermalfoundation:material:128>, [[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>],[<thaumcraft:nugget:1>,<thaumcraft:nugget:1>,<thaumcraft:nugget:1>]]);
 recipes.addShaped(<thermalfoundation:material:128>, [[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>],[<thermalfoundation:material:192>,<thermalfoundation:material:192>,<thermalfoundation:material:192>]]);
 
-# Silver Ingot
+// Silver Ingot
 <ore:ingotSilver>.removeItems([<bewitchment:silver_ingot>,<immersiveengineering:metal:3>,<projectred-core:resource_item:102>,<erebus:materials:45>,<alchemistry:ingot:47>]);
 recipes.remove(<bewitchment:silver_ingot>);
 furnace.remove(<bewitchment:silver_ingot>);
@@ -300,17 +300,17 @@ Grinder.removeRecipe(<bewitchment:silver_ingot>);
 Grinder.removeRecipe(<alchemistry:ingot:47>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
 
-# Silver Nugget
+// Silver Nugget
 <ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
 recipes.remove(<bewitchment:silver_nugget>);
 recipes.remove(<immersiveengineering:metal:23>);
 recipes.removeShapeless(<thermalfoundation:material:194> * 9, [<erebus:materials:45>]);
 
-# Silver Block
+// Silver Block
 recipes.removeShaped(<thermalfoundation:storage:2>, [[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>],[<immersiveengineering:metal:3>,<immersiveengineering:metal:3>,<immersiveengineering:metal:3>]]);
-#recipes.addShaped(<thermalfoundation:storage:2>, [[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>]]);
+//recipes.addShaped(<thermalfoundation:storage:2>, [[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>],[<thermalfoundation:material:130>,<thermalfoundation:material:130>,<thermalfoundation:material:130>]]);
 
-# Lead Ingot
+// Lead Ingot
 recipes.remove(<galacticraftplanets:atomic_battery>);
 <ore:ingotLead>.removeItems([<galacticraftplanets:basic_item_venus:1>,<erebus:materials:44>,<alchemistry:ingot:82>,<immersiveengineering:metal:2>]);
 mods.appliedenergistics2.Grinder.removeRecipe(<galacticraftplanets:basic_item_venus:1>);
@@ -329,11 +329,11 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<ore:oreLead>.firstItem);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>, 3600);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<thermalfoundation:material:131>, <ore:oreLead>.firstItem, 3600);
 
-# Lead Block
+// Lead Block
 recipes.removeShaped(<thermalfoundation:storage:3>, [[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>],[<immersiveengineering:metal:2>,<immersiveengineering:metal:2>,<immersiveengineering:metal:2>]]);
-#recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>]]);
+//recipes.addShaped(<thermalfoundation:storage:3>, [[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>],[<thermalfoundation:material:131>,<thermalfoundation:material:131>,<thermalfoundation:material:131>]]);
 
-# Electrum Ingot
+// Electrum Ingot
 <ore:ingotElectrum>.remove(<immersiveengineering:metal:7>);
 mods.appliedenergistics2.Grinder.removeRecipe(<immersiveengineering:metal:7>);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:7>);
@@ -347,24 +347,24 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <minecraft:gold_ingot>, null, 100, 512, [<thermalfoundation:material:66>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> * 2, <thermalfoundation:material:1>, null, 100, 512, [<thermalfoundation:material:130>], "Alloying");
 
-# Nickel Ingot
+// Nickel Ingot
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
 
-# Platinum Ingot
+// Platinum Ingot
 <ore:ingotPlatinum>.remove(<alchemistry:ingot:78>);
 
-# Cobalt Ingot
+// Cobalt Ingot
 <ore:ingotCobalt>.remove(<alchemistry:ingot:27>);
 
-# Charcoal Block
+// Charcoal Block
 recipes.remove(<mekanism:basicblock:3>);
 recipes.remove(<actuallyadditions:block_misc:5>);
 recipes.removeShaped(<minecraft:coal:1> * 9, [[<*>]]);
 recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5>]);
 
-# Lumium in the Arc Furnace
+// Lumium in the Arc Furnace
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:glowstone_dust> * 4], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <ore:glowstone>], "Alloying");
 

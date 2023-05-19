@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -129,19 +129,19 @@ addInteraction(<draconicadditions:infused_potato_chest>, air, <draconicadditions
 addInteraction(<draconicadditions:infused_potato_legs>, air, <draconicadditions:potato_legs>);
 addInteraction(<draconicadditions:infused_potato_boots>, air, <draconicadditions:potato_boots>);
 
-# Botania Ender Air
+// Botania Ender Air
 addInteraction(<minecraft:glass_bottle>, <minecraft:end_stone>, <botania:manaresource:15>);
 
-# Milk from Cow
+// Milk from Cow
 addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"minecraft:cow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"minecraft:cow"}), <minecraft:milk_bucket>);
 
-# Antimatter from Anticow
+// Antimatter from Anticow
 addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"abyssalcraft:anticow"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"abyssalcraft:anticow"}), <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}));
 
-# Aechor from Aechor Plant
+// Aechor from Aechor Plant
 addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
 
-# Botania Double-tall Flowers
+// Botania Double-tall Flowers
 for x in 0 to 8 {
     addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x), <botania:doubleflower1>.withDamage(x));
     addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));

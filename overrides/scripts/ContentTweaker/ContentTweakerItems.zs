@@ -1,5 +1,5 @@
 #loader contenttweaker
-# Author: Atricos
+// Author: Atricos
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
@@ -788,9 +788,9 @@ var woodland_mansion_locator_token = VanillaFactory.createItem("woodland_mansion
 woodland_mansion_locator_token.maxStackSize = 1;
 woodland_mansion_locator_token.maxDamage = 1;
 woodland_mansion_locator_token.itemRightClick = function(stack, world, player, hand) {
-    #if(world.remote) {
-    #    return "PASS";
-    #}
+    //if(world.remote) {
+    //    return "PASS";
+    //}
     stack.damage(2, player);
     player.executeCommand("locate Mansion");
 	Commands.call("locate Mansion", player, world, false, true);
@@ -845,7 +845,7 @@ flame_devourer_pendant.itemRightClick = function(stack, world, player, hand) {
     }
     var found = false as bool;
     for p in player.activePotionEffects {
-		#Commands.call("say " + p.effectName, player, world);
+		//Commands.call("say " + p.effectName, player, world);
     	if(p.effectName == "bewitchment.hellfire") {
     		found = true;
     	}

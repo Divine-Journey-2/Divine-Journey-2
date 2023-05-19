@@ -1,5 +1,5 @@
 #loader contenttweaker
-# Author: Atricos
+// Author: Atricos
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
@@ -285,13 +285,13 @@ steaming_restonia_crystal_block.setBlockSoundType(<soundtype:stone>);
 steaming_restonia_crystal_block.register();
 
 val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortum", "moon", "mars", "venus", "asteroids"] as string[];
-# itemUtils.getItem("minecraft:apple");
+// itemUtils.getItem("minecraft:apple");
 
 for dim in dimension_names_lower {
 
 	var dim_stone = VanillaFactory.createBlock(dim + "_stone", <blockmaterial:rock>);
-	#dim_stone.setBlockHardness(18000000);
-	#dim_stone.setBlockResistance(3600000);
+	//dim_stone.setBlockHardness(18000000);
+	//dim_stone.setBlockResistance(3600000);
 	dim_stone.setBlockHardness(-1);
 	dim_stone.setBlockResistance(16777215);
 	dim_stone.setToolClass(null);

@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import mods.enderio.Enchanter as EIO;
 import mods.thermalexpansion.Enchanter as Thermal;

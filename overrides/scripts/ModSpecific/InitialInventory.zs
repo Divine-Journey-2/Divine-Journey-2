@@ -1,4 +1,4 @@
-# Author: Atricos, WaitingIdly
+// Author: Atricos, WaitingIdly
 
 import mods.initialinventory.InvHandler.addStartingItem as add;
 

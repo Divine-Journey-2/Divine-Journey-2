@@ -1,7 +1,7 @@
-# Author: WaitingIdly
-# Inspired by Multiblock Madness [1] and Enigmatica 2 Expert Extended [2]
-# 1 https://github.com/Filostorm/Multiblock-Madness
-# 2 https://github.com/Krutoy242/Enigmatica2Expert-Extended
+// Author: WaitingIdly
+// Inspired by Multiblock Madness [1] and Enigmatica 2 Expert Extended [2]
+// 1 https://github.com/Filostorm/Multiblock-Madness
+// 2 https://github.com/Krutoy242/Enigmatica2Expert-Extended
 
 import mods.immersiveengineering.Excavator;
 import crafttweaker.item.IItemStack;

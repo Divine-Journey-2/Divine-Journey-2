@@ -1,5 +1,5 @@
 #loader contenttweaker
-# Author: Atricos
+// Author: Atricos
 
 import mods.alchemistry.Util.createCompound;
 

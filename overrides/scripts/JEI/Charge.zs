@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import crafttweaker.item.IItemStack;
 import mods.requious.Assembly;

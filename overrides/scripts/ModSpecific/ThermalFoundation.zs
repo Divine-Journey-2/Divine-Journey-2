@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 
 import mods.immersiveengineering.MetalPress;
 import crafttweaker.game.IGame;
@@ -11,7 +11,7 @@ import mods.zenutils.I18n;
 
 print("STARTING ThermalFoundation.zs");
 
-# Renaming Mana Infused to Mithril
+// Renaming Mana Infused to Mithril
 game.setLocalization("tile.thermalfoundation.ore.mithril.name", "Mithril Ore");
 game.setLocalization("tile.thermalfoundation.storage.mithril.name", "Mithril Block");
 game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mithril Glass");
@@ -23,30 +23,30 @@ game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mith
 <thermalfoundation:material:328>.displayName = "Mithril Plate";
 mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:glass:8> * 2, <thermalfoundation:glass:3> * 2, <thermalfoundation:material:72>, 6000, <thermalfoundation:material:865>, 15);
 
-# Steel Tools are already added by Immersive Engineering
+// Steel Tools are already added by Immersive Engineering
 recipes.remove(<thermalfoundation:tool.sword_steel>);
 recipes.remove(<thermalfoundation:tool.pickaxe_steel>);
 recipes.remove(<thermalfoundation:tool.shovel_steel>);
 recipes.remove(<thermalfoundation:tool.axe_steel>);
 recipes.remove(<thermalfoundation:tool.hoe_steel>);
 
-# Redstone Reception Coil
+// Redstone Reception Coil
 recipes.remove(<thermalfoundation:material:513>);
 recipes.addShapedMirrored(<thermalfoundation:material:513>, [[null,null,<ore:ingotRedAlloy>],[null,<thermalfoundation:material:25>,null],[<ore:ingotRedAlloy>,null,null]]);
 
-# Redstone Transmission Coil
+// Redstone Transmission Coil
 recipes.remove(<thermalfoundation:material:514>);
 recipes.addShapedMirrored(<thermalfoundation:material:514>, [[null,null,<ore:ingotRedAlloy>],[null,<thermalfoundation:material:258>,null],[<ore:ingotRedAlloy>,null,null]]);
 
-# Redstone Conductance Coil
+// Redstone Conductance Coil
 recipes.remove(<thermalfoundation:material:515>);
 recipes.addShapedMirrored(<thermalfoundation:material:515>, [[<ore:ingotRedAlloy>,null,null],[null,<thermalfoundation:material:289>,null],[null,null,<ore:ingotRedAlloy>]]);
 
-# Saw Blade
+// Saw Blade
 recipes.remove(<thermalfoundation:material:657>);
 recipes.addShaped(<thermalfoundation:material:657>, [[<immersiveengineering:material:2>,<immersiveengineering:material:2>,<immersiveengineering:material:2>],[<immersiveengineering:material:2>,<thermalfoundation:material:352>,<immersiveengineering:material:2>],[<immersiveengineering:material:2>,<immersiveengineering:material:2>,<immersiveengineering:material:2>]]);
 
-# Add Tooltips to Kits
+// Add Tooltips to Kits
 function thermalKitTooltip(item as IItemStack, machine as int, container as int, box as int) {
     item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc0", machine));
     item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc1", container));
@@ -54,96 +54,96 @@ function thermalKitTooltip(item as IItemStack, machine as int, container as int,
     item.addShiftTooltip(I18n.format("dj2.thermal_kit.desc3", box));
 }
 
-# Conversion Kits
+// Conversion Kits
 thermalKitTooltip(<thermalfoundation:upgrade:33>, 100, 9, 36);
 thermalKitTooltip(<thermalfoundation:upgrade:34>, 150, 16, 54);
 thermalKitTooltip(<thermalfoundation:upgrade:35>, 200, 25, 82);
 
-# Hardened Upgrade Kit
+// Hardened Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade>, 50, 4, 18);
 recipes.remove(<thermalfoundation:upgrade>);
 recipes.addShaped(<thermalfoundation:upgrade>, [[<thermalfoundation:material:354>,<thermalfoundation:material:354>,<thermalfoundation:material:354>],[<thermalfoundation:material:354>,<thermalfoundation:material:264>,<thermalfoundation:material:354>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
 
-# Reinforced Upgrade Kit
+// Reinforced Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade:1>, 100, 9, 36);
 recipes.remove(<thermalfoundation:upgrade:1>);
 recipes.addShaped(<thermalfoundation:upgrade:1>, [[<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_plate>,<contenttweaker:fluxed_electrum_plate>],[<contenttweaker:fluxed_electrum_plate>,<enderio:item_material:41>,<contenttweaker:fluxed_electrum_plate>],[<ore:ingotRedAlloy>,<ore:ingotRedAlloy>,<ore:ingotRedAlloy>]]);
 
-# Signalum Upgrade Kit
+// Signalum Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade:2>, 150, 16, 54);
 recipes.remove(<thermalfoundation:upgrade:2>);
 recipes.addShaped(<thermalfoundation:upgrade:2>, [[<thermalfoundation:material:327>,<thermalfoundation:material:327>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:material:327>],[<thermalfoundation:material:514>,<thermalfoundation:material:514>,<thermalfoundation:material:514>]]);
 
-# Resonant Upgrade Kit
+// Resonant Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade:3>, 200, 25, 82);
 recipes.remove(<thermalfoundation:upgrade:3>);
 recipes.addShaped(<thermalfoundation:upgrade:3>, [[<extendedcrafting:material:2>,<extendedcrafting:material:2>,<extendedcrafting:material:2>],[<extendedcrafting:material:2>,<thermalfoundation:storage_alloy:7>,<extendedcrafting:material:2>],[<thermalfoundation:material:515>,<thermalfoundation:material:515>,<thermalfoundation:material:515>]]);
 
-# Signalum Security Lock
+// Signalum Security Lock
 recipes.remove(<thermalfoundation:security>);
 recipes.addShaped(<thermalfoundation:security>, [[null,<thermalfoundation:material:165>,null],[<thermalfoundation:material:165>,<thermalfoundation:material:291>,<thermalfoundation:material:165>],[<thermalfoundation:material:165>,<thermalfoundation:material:165>,<thermalfoundation:material:165>]]);
 
-# Multimeter
+// Multimeter
 recipes.remove(<thermalfoundation:meter>);
 recipes.addShaped(<thermalfoundation:meter>, [[<thermalfoundation:material:322>,<lightningcraft:rod:2>,<thermalfoundation:material:322>],[<thermalfoundation:material:352>,<thermalfoundation:material:25>,<thermalfoundation:material:352>],[<thermalfoundation:material:352>,<contenttweaker:rf_powder>,<thermalfoundation:material:352>]]);
 
-# Redprint
+// Redprint
 recipes.remove(<thermalfoundation:diagram_redprint>);
 recipes.addShaped(<thermalfoundation:diagram_redprint>, [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],[<ore:ingotRedAlloy>,<contenttweaker:rf_powder>,<ore:ingotRedAlloy>],[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);
 
-# Tome of Knowledge
+// Tome of Knowledge
 recipes.remove(<thermalfoundation:tome_experience>);
 recipes.addShaped(<thermalfoundation:tome_experience>, [[null,<minecraft:experience_bottle>,null],[<minecraft:emerald>,<minecraft:book>,<minecraft:emerald>],[null,<minecraft:experience_bottle>,null]]);
 
-# Tar from Smoldering Tar
+// Tar from Smoldering Tar
 val slimeballs = [<minecraft:slime_ball>,<actuallyadditions:item_misc:12>,<aether_legacy:swetty_ball>,<industrialforegoing:pink_slime>,<tconstruct:edible:1>,<tconstruct:edible:2>,<tconstruct:edible:3>,<tconstruct:edible:4>] as IItemStack[];
 for item in slimeballs {
 	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:833>, item, <liquid:smoldering_tar> * 200, 6000);
 }
 
-# Smoldering Tar from Tar
+// Smoldering Tar from Tar
 mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:smoldering_tar> * 200, <thermalfoundation:material:833>, 800);
 
-# Mana Dust
+// Mana Dust
 recipes.addShapeless(<thermalfoundation:material:1028>, [<contenttweaker:rf_powder>,<thermalfoundation:material:1024>,<thermalfoundation:material:1025>,<thermalfoundation:material:1026>,<thermalfoundation:material:1027>]);
 
-# Mithril Ingot
+// Mithril Ingot
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:136>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:1028>, null, 200, 512, [<contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>]);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:72>, null, 100, 512);
 mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalfoundation:material:1028>, <contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>], 24000);
 
-# Regular Hardened Glass recipes should only require regular Hardened Glass, otherwise it's impossible to figure out which one you need from JEI
+// Regular Hardened Glass recipes should only require regular Hardened Glass, otherwise it's impossible to figure out which one you need from JEI
 <ore:blockGlassHardened>.removeItems([<enderio:block_fused_quartz:*>, <thermalfoundation:glass:*>, <thermalfoundation:glass_alloy:*>]);
 <ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:67>);
 
-# Enderium
+// Enderium
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:167>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 4, <minecraft:ender_pearl> * 4, null, 100, 384, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 2, <enderio:item_material:39> * 2, null, 80, 256, [<ore:sand>], "Alloying");
 
-# Signalum
+// Signalum
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:165>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:165> * 4, <thermalfoundation:material:128> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:redstone> * 10], "Alloying");
 
-# Destabilized Clathrate from Mystical Agriculture Essences
+// Destabilized Clathrate from Mystical Agriculture Essences
 recipes.addShaped(<thermalfoundation:material:893>, [[null,<mysticalagriculture:redstone_alloy_essence>,null],[<mysticalagriculture:redstone_alloy_essence>,<minecraft:flint>,<mysticalagriculture:redstone_alloy_essence>],[null,<mysticalagriculture:redstone_alloy_essence>,null]]);
 
-# Energized Clathrate from Mystical Agriculture Essences
+// Energized Clathrate from Mystical Agriculture Essences
 recipes.addShaped(<thermalfoundation:material:894>, [[null,<mysticalagriculture:glowstone_ingot_essence>,null],[<mysticalagriculture:glowstone_ingot_essence>,<minecraft:flint>,<mysticalagriculture:glowstone_ingot_essence>],[null,<mysticalagriculture:glowstone_ingot_essence>,null]]);
 
-# Resonant Clathrate from Mystical Agriculture Essences
+// Resonant Clathrate from Mystical Agriculture Essences
 recipes.addShaped(<thermalfoundation:material:895>, [[null,<mysticalagriculture:enderium_essence>,null],[<mysticalagriculture:enderium_essence>,<minecraft:flint>,<mysticalagriculture:enderium_essence>],[null,<mysticalagriculture:enderium_essence>,null]]);
 
-# Quicksilver into cryotheum
+// Quicksilver into cryotheum
 mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:866>, <thaumcraft:quicksilver>, <liquid:cryotheum> * 50, 1000);
 
-# Destabilized Clathrate <-> AC Redstone Shard conversion fix
+// Destabilized Clathrate <-> AC Redstone Shard conversion fix
 <ore:crystalRedstone>.remove(<thermalfoundation:material:893>);
 
-# Silver Plate, S'il vous plaît
+// Silver Plate, S'il vous plaît
 <thermalfoundation:material:322>.addShiftTooltip(game.localize("dj2.silver_plate.desc0"));
 
 print("ENDING ThermalFoundation.zs");

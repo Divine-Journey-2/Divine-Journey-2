@@ -1,5 +1,5 @@
 #loader preinit
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import dj2addons.bewitchment.Rituals;
 

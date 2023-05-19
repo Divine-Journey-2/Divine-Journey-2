@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import mods.roots.predicates.BlockStateAbove;
 import mods.roots.predicates.BlockStateBelow;

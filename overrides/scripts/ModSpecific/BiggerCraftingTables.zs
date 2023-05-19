@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 print("STARTING BiggerCraftingTables.zs");
 
 recipes.remove(<biggercraftingtables:biggercraftingtable>);

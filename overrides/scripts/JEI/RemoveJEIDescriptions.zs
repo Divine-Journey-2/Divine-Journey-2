@@ -1,10 +1,10 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import moretweaker.jei.MoreJei;
 
 print("STARTING RemoveJEIDescriptions.zs");
 
-# Remove various Information pages
+// Remove various Information pages
 MoreJei.removeDescription(<minecraft:diamond>);
 MoreJei.removeDescription(<minecraft:gold_ingot>);
 MoreJei.removeDescription(<enderio:item_material:81>);

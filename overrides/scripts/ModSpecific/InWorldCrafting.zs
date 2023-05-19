@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 
 import mods.inworldcrafting.FluidToItem;
 

@@ -1,7 +1,7 @@
-# Author: Atricos
+// Author: Atricos
 print("STARTING AE2WirelessTerminal.zs");
 
-# Infinity Booster Card
+// Infinity Booster Card
 recipes.remove(<ae2wtlib:infinity_booster_card>);
 mods.extendedcrafting.TableCrafting.addShaped(<ae2wtlib:infinity_booster_card>,
 [[null, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, null],

@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 print("STARTING JEICategories.zs");
 
 mods.jei.JEI.hideCategory("mysticalagradditions:tier_6_crop_jei");

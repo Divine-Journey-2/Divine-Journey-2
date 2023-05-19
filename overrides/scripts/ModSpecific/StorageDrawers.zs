@@ -1,4 +1,4 @@
-# Author: Atricos, WaitingIdly
+// Author: Atricos, WaitingIdly
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.ITooltipFunction;
@@ -7,13 +7,13 @@ import mods.zenutils.I18n;
 
 print("STARTING StorageDrawers.zs");
 
-# Framing Table
+// Framing Table
 <storagedrawers:framingtable>.addTooltip(game.localize("dj2.framing_table.desc0"));
 
-# Upgrade Template from Framed Drawers
+// Upgrade Template from Framed Drawers
 recipes.addShaped(<storagedrawers:upgrade_template> * 2, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<ore:stickWood>,<storagedrawers:customdrawers:*>,<ore:stickWood>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
 
-# Upgrades
+// Upgrades
 recipes.remove(<storagedrawers:upgrade_storage:1>);
 recipes.addShaped(<storagedrawers:upgrade_storage:1>, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<minecraft:iron_ingot>,<storagedrawers:upgrade_storage>,<minecraft:iron_ingot>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
 recipes.remove(<storagedrawers:upgrade_storage:2>);
@@ -24,26 +24,26 @@ recipes.remove(<storagedrawers:upgrade_storage:4>);
 recipes.addShaped(<storagedrawers:upgrade_storage:4>, [[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>],[<minecraft:emerald>,<storagedrawers:upgrade_storage:3>,<minecraft:emerald>],[<ore:stickWood>,<ore:stickWood>,<ore:stickWood>]]);
 recipes.remove(<storagedrawers:upgrade_conversion>);
 
-# Compacting Drawer
+// Compacting Drawer
 recipes.remove(<storagedrawers:compdrawers>);
 recipes.addShaped(<storagedrawers:compdrawers>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<minecraft:piston>,<ore:drawerBasic>,<minecraft:piston>],[<ore:stone>,<thermalfoundation:material:32>,<ore:stone>]]);
 
-# Drawer Controller
+// Drawer Controller
 recipes.remove(<storagedrawers:controller>);
 recipes.addShaped(<storagedrawers:controller>, [[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],[<draconicevolution:potentiometer>,<ore:drawerBasic>,<draconicevolution:potentiometer>],[<ore:ingotSteel>,<avaritia:resource>,<ore:ingotSteel>]]);
 
-# Controller Slave
+// Controller Slave
 recipes.remove(<storagedrawers:controllerslave>);
 recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<ore:dustDraconium>,<ore:drawerBasic>,<ore:dustDraconium>],[<ore:stone>,<minecraft:diamond>,<ore:stone>]]);
 
-# Ore Dictionaries
+// Ore Dictionaries
 <ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
 <ore:drawerTrim>.add(<storagedrawersextra:extra_trim_0:*>);
 
-# Creative Storage Upgrade
+// Creative Storage Upgrade
 recipes.addShaped(<storagedrawers:upgrade_creative>, [[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>],[<tconstruct:materials:50>,<projecte:condenser_mk2>,<tconstruct:materials:50>],[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>]]);
 
-# Creative Vending Upgrade
+// Creative Vending Upgrade
 mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1>,
 [[<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <alchemistry:ingot:71>],
 [<storagedrawers:upgrade_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <thaumicenergistics:essentia_cell_creative>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>, <alchemistry:ingot:71>],
@@ -55,7 +55,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1
 [<storagedrawers:upgrade_creative>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <storagedrawers:upgrade_creative>],
 [<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>]]);
 
-# Remove recipes for all Storage Drawers Extras
+// Remove recipes for all Storage Drawers Extras
 recipes.removeByMod("storagedrawersextra");
 
 for x in [
@@ -72,7 +72,7 @@ for x in [
 }
 
 
-# Drawer Tooltips
+// Drawer Tooltips
 function getNested(inTag as IData, keys as string[], alt as IData) as IData {
     var tag = inTag;
     for key in keys {
@@ -82,7 +82,7 @@ function getNested(inTag as IData, keys as string[], alt as IData) as IData {
     return isNull(tag) ? alt : tag;
 }
 
-# Indicate materials framing Framed Drawers
+// Indicate materials framing Framed Drawers
 function makeTagFunc(name as string) as ITooltipFunction {
     val matTag = "Mat" + name[0];
     return function(stack as IItemStack) as string {
@@ -93,12 +93,12 @@ function makeTagFunc(name as string) as ITooltipFunction {
     } as ITooltipFunction;
 }
 
-# Format item & amount
+// Format item & amount
 function contents(name as string, count as int) as string {
     return "§c" + count + "§r §6" + name + "§r";
 }
 
-# Convert an array of strings into a comma separated string, with a custom joiner if >2 entries. Uses an Oxford Comma
+// Convert an array of strings into a comma separated string, with a custom joiner if >2 entries. Uses an Oxford Comma
 function arrayToList(list as string[], joiner as string) as string {
     var output as string = "";
     for index, entry in list {
@@ -111,7 +111,7 @@ function arrayToList(list as string[], joiner as string) as string {
     return output;
 }
 
-# Metadata to Multiplier for Drawer Upgrades
+// Metadata to Multiplier for Drawer Upgrades
 static upgradeMultiplier as int[int] = {
     0:  2,
     1:  4,
@@ -120,7 +120,7 @@ static upgradeMultiplier as int[int] = {
     4: 32,
 } as int[int];
 
-# Determine the current capacity of a drawer using its current upgrades based on an input base.
+// Determine the current capacity of a drawer using its current upgrades based on an input base.
 function capacity(passBase as int) as ITooltipFunction {
     return function(drawer as IItemStack) as string {
         val g as IData = getNested(drawer.tag, ["tile", "Upgrades"], []);
@@ -139,8 +139,8 @@ function capacity(passBase as int) as ITooltipFunction {
     } as ITooltipFunction;
 }
 
-# Convert a non-compacting drawer into a comma separated list containing all its items.
-# Note that multiple of the same type of item are *not* combined.
+// Convert a non-compacting drawer into a comma separated list containing all its items.
+// Note that multiple of the same type of item are *not* combined.
 function normalDrawer() as ITooltipFunction {
     return function(drawer as IItemStack) as string {
         val items as IData = getNested(drawer.tag, ["tile", "Drawers"], []);
@@ -156,7 +156,7 @@ function normalDrawer() as ITooltipFunction {
     } as ITooltipFunction;
 }
 
-# Convert a compacting drawer into a comma separated list containing its items, indicating that the quantity is exclusive between types.
+// Convert a compacting drawer into a comma separated list containing its items, indicating that the quantity is exclusive between types.
 function compactingDrawer() as ITooltipFunction {
     return function(drawer as IItemStack) as string {
         val count as IData = getNested(drawer.tag, ["tile", "Drawers", "Count"], "0");
@@ -174,7 +174,7 @@ function compactingDrawer() as ITooltipFunction {
     } as ITooltipFunction;
 }
 
-# Setup the drawer tooltips
+// Setup the drawer tooltips
 function setupDrawerTooltip(drawer as IItemStack, trim as bool, slots as int, stack as int) {
     if (trim) {
         drawer.addAdvancedTooltip(makeTagFunc("Side"));

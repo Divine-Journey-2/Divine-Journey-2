@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 
 import mods.roots.Pyre;
 import mods.roots.Mortar;
@@ -12,84 +12,84 @@ import crafttweaker.item.IItemStack;
 
 print("STARTING Roots.zs");
 
-# Root of the Fallen
+// Root of the Fallen
 recipes.addShapeless(<contenttweaker:root_of_the_fallen>, [<totemic:baykok_bow>.anyDamage().transformDamage(1),<roots:wildroot>]);
 
-# Pyre
+// Pyre
 recipes.remove(<roots:pyre>);
 recipes.addShaped("pyre", <roots:pyre>, [[null,<ore:rootsBark>,null],[<ore:rootsBark>,<contenttweaker:root_of_the_fallen>,<ore:rootsBark>],[<contenttweaker:baykoks_bloodied_stone>,<roots:terra_moss>,<contenttweaker:baykoks_bloodied_stone>]]);
 
-# Charred Stone
+// Charred Stone
 Pyre.addRecipe("charred_stone", <contenttweaker:charred_stone> * 3, [<ore:stone>,<ore:stone>,<ore:stone>,<roots:terra_moss>,<ore:rootsBark>]);
 
-# Mortar
+// Mortar
 recipes.remove(<roots:mortar>);
 recipes.addShaped("mortar", <roots:mortar>, [[<contenttweaker:charred_stone>,null,<contenttweaker:charred_stone>],[<contenttweaker:charred_stone>,<minecraft:paper>,<contenttweaker:charred_stone>],[null,<contenttweaker:charred_stone>,null]]);
 
-# Pestle
+// Pestle
 recipes.remove(<roots:pestle>);
 recipes.addShaped("pestle", <roots:pestle>, [[null,null,<contenttweaker:charred_stone>],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,null],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,null]]);
 recipes.addShaped(<roots:pestle>, [[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,null],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,null],[null,null,<contenttweaker:charred_stone>]]);
 
-# Imbuer
+// Imbuer
 recipes.remove(<roots:imbuer>);
 recipes.addShaped("imbuer", <roots:imbuer>, [[<ore:ingotBronze>,null,<ore:ingotBronze>],[<ore:ingotBronze>,<roots:terra_moss>,<ore:ingotBronze>],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,<contenttweaker:charred_stone>]]);
 
-# Imposer
+// Imposer
 recipes.remove(<roots:imposer>);
 recipes.addShaped("imposer", <roots:imposer>, [[<ore:ingotBronze>,null,<ore:ingotBronze>],[null,<roots:imbuer>,null],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,<contenttweaker:charred_stone>]]);
 
-# Staff
+// Staff
 recipes.remove(<roots:staff>);
 recipes.addShaped("staff", <roots:staff>, [[null,<ore:blockAmethyst>,<contenttweaker:root_of_the_fallen>],[null,<ore:blockOpal>,<ore:blockGarnet>],[<totemic:eagle_bone_whistle>,null,null]]);
 
-# Gramary of the Forest
+// Gramary of the Forest
 recipes.remove(<roots:gramary>);
 recipes.addShaped("gramary", <roots:gramary>, [[<ore:rootsBark>,<roots:terra_moss>,<ore:rootsBark>],[<ore:rootsBark>,<minecraft:emerald>,<ore:rootsBark>],[<ore:rootsBark>,<roots:terra_moss>,<ore:rootsBark>]]);
 
-# Herb Pouch
+// Herb Pouch
 recipes.remove(<roots:herb_pouch>);
 recipes.addShaped("herb_pouch", <roots:herb_pouch>.withTag({}), [[<contenttweaker:charred_stone>,<ore:string>,<contenttweaker:charred_stone>],[<totemic:buffalo_items>,null,<totemic:buffalo_items>],[<totemic:buffalo_items>,<totemic:buffalo_items>,<totemic:buffalo_items>]]);
 <roots:herb_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
-# Apothecary Pouch
+// Apothecary Pouch
 Fey.removeRecipe(<roots:component_pouch>);
 Fey.addRecipe("component_pouch", <roots:component_pouch>, [<roots:herb_pouch>, <ore:rootsBark>, <roots:wildroot>, <roots:spirit_herb>, <minecraft:gold_nugget>]);
 <roots:component_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
-# Fey Leather Pouch
+// Fey Leather Pouch
 <roots:fey_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
-# Apothecary Pouch
+// Apothecary Pouch
 Fey.removeRecipe(<roots:apothecary_pouch>);
 Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:component_pouch>, <roots:stalicripe>, <roots:fey_pouch>, <roots:spirit_herb>, <minecraft:gold_block>]);
 <roots:apothecary_pouch>.addTooltip(game.localize("dj2.roots_wipes_input_bag.desc0"));
 
-# Grove Supplication Ritual
+// Grove Supplication Ritual
 Rituals.modifyRitual("grove_supplication", [<minecraft:mossy_cobblestone>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
 
-# Dewgonia
+// Dewgonia
 Pyre.removeRecipe(<roots:dewgonia>);
 Pyre.addRecipe("dewgonia", <roots:dewgonia>*3, [<minecraft:waterlily>, <roots:terra_moss>, <quark:sugar_block>, <minecraft:lapis_block>, <roots:petals>]);
 
-# Grove Stone
+// Grove Stone
 recipes.remove(<roots:grove_stone>);
 recipes.addShaped("grove_stone", <roots:grove_stone>, [[null,<contenttweaker:charred_stone>,null],[<totemic:eagle_drops>,<contenttweaker:charred_stone>,<totemic:buffalo_items:1>],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,<contenttweaker:charred_stone>]]);
 recipes.addShaped(<roots:grove_stone>, [[null,<contenttweaker:charred_stone>,null],[<totemic:buffalo_items:1>,<contenttweaker:charred_stone>,<totemic:eagle_drops>],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,<contenttweaker:charred_stone>]]);
 
-# Fey Crafter
+// Fey Crafter
 recipes.remove(<roots:fey_crafter>);
 recipes.addShaped("fey_crafter", <roots:fey_crafter>, [[<ore:treeSapling>,null,<ore:treeSapling>],[<ore:blockAmethyst>,<roots:petals>,<ore:blockAmethyst>],[<contenttweaker:charred_stone>,<contenttweaker:charred_stone>,<contenttweaker:charred_stone>]]);
 
-# Runic Crafter
+// Runic Crafter
 Fey.removeRecipe(<roots:runic_crafter>);
 Fey.addRecipe("runic_crafter", <roots:runic_crafter>, [<roots:fey_crafter>, <roots:runic_dust>, <roots:runic_dust>, <modularmachinery:itemmodularium>, <modularmachinery:itemmodularium>]);
 
-# Elemental Soil
+// Elemental Soil
 Fey.removeRecipe(<roots:elemental_soil>);
 Fey.addRecipe("elemental_soil", <roots:elemental_soil>*4, [<extrautils2:compresseddirt>, <ore:compressed1xGravel>, <minecraft:bone_block>, <roots:petals>, <roots:terra_moss>]);
 
-# Crop Growth Tooltips
+// Crop Growth Tooltips
 for x in [
     <roots:cloud_berry>,
     <roots:infernal_bulb>,
@@ -99,47 +99,47 @@ for x in [
     x.addTooltip(game.localize("dj2.elemental_soul_crop.desc0"));
 }
 
-# Runestone
+// Runestone
 Fey.removeRecipe(<roots:runestone>);
 Fey.addRecipe("runestone", <roots:runestone>*3, [<contenttweaker:charred_stone>, <contenttweaker:charred_stone>, <contenttweaker:charred_stone>, <ore:gemAmethyst>, <minecraft:dye:4>]);
 
-# Runed Obsidian
+// Runed Obsidian
 Fey.removeRecipe(<roots:runed_obsidian>);
 Fey.addRecipe("runed_obsidian", <roots:runed_obsidian>*3, [<roots:runestone>, <roots:runestone>, <roots:runestone>, <thermalfoundation:material:770>, <contenttweaker:compressed_obsidian1>]);
 
-# Cloud Berry
+// Cloud Berry
 Pyre.removeRecipe(<roots:cloud_berry>);
 Pyre.addRecipe("cloud_berry", <roots:cloud_berry>, [<roots:dewgonia>, <minecraft:red_flower:1>, <ore:wool>, <ore:treeLeaves>, <minecraft:tallgrass:1>]);
 
-# Pereskia
+// Pereskia
 Pyre.removeRecipe(<roots:pereskia>);
 Pyre.addRecipe("pereskia", <roots:pereskia>, [<roots:dewgonia>, <minecraft:double_plant:1>, <minecraft:beetroot>, <minecraft:speckled_melon>, <ore:dyeMagenta>]);
 
-# Baffle Cap
+// Baffle Cap
 Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
 Pyre.addRecipe("baffle_cap", <roots:baffle_cap_mushroom>, [<roots:pereskia>, <minecraft:red_mushroom>, <minecraft:brown_mushroom>, <betternether:lucis_spore>, <betternether:orange_mushroom>]);
 <roots:baffle_cap_mushroom>.addTooltip(game.localize("dj2.baffle_cap_mushroom.desc0"));
 
-# Infernal Bulb
+// Infernal Bulb
 Pyre.removeRecipe(<roots:infernal_bulb>);
 Pyre.addRecipe("infernal_bulb", <roots:infernal_bulb>, [<roots:baffle_cap_mushroom>, <minecraft:lava_bucket>, <minecraft:magma_cream>, <betternether:magma_flower>, <betternether:agave>]);
 
-# Moonglow Leaf
+// Moonglow Leaf
 Pyre.removeRecipe(<roots:moonglow_leaf>);
 Pyre.addRecipe("moonglow_leaf", <roots:moonglow_leaf>, [<roots:cloud_berry>, <minecraft:quartz_block>, <minecraft:glowstone>, <roots:bark_birch>, <betternether:nether_reed>]);
 
-# Runic Shears
+// Runic Shears
 Fey.removeRecipe(<roots:runic_shears>);
 Fey.addRecipe("runic_shears", <roots:runic_shears>, [<minecraft:shears>, <roots:runestone>, <roots:runestone>, <roots:pereskia>, <contenttweaker:compressed_obsidian1>]);
 
-# Stalicripe
+// Stalicripe
 Pyre.removeRecipe(<roots:stalicripe>);
 Pyre.addRecipe("stalicripe", <roots:stalicripe>, [<roots:infernal_bulb>, <roots:wildewheet>, <roots:wildwood_log>, <roots:runestone>, <betternether:stalagnate_stem>]);
 
-# Fey Leather
+// Fey Leather
 <ore:leather>.remove(<roots:fey_leather>);
 
-# Sylvan Armor
+// Sylvan Armor
 Fey.removeRecipe(<roots:sylvan_helmet>);
 Fey.addRecipe("sylvan_helmet", <roots:sylvan_helmet>, [<thermalfoundation:armor.helmet_steel>, <roots:fey_leather>, <contenttweaker:treated_leather>, <roots:bark_birch>, <ore:gemAmethyst>]);
 Fey.removeRecipe(<roots:sylvan_chestplate>);
@@ -149,7 +149,7 @@ Fey.addRecipe("sylvan_leggings", <roots:sylvan_leggings>, [<thermalfoundation:ar
 Fey.removeRecipe(<roots:sylvan_boots>);
 Fey.addRecipe("sylvan_boots", <roots:sylvan_boots>, [<thermalfoundation:armor.boots_steel>, <roots:fey_leather>, <contenttweaker:treated_leather>, <roots:bark_birch>, <ore:gemAmethyst>]);
 
-# Wildwood Armor
+// Wildwood Armor
 Fey.removeRecipe(<roots:wildwood_helmet>);
 Fey.addRecipe("wildwood_helmet", <roots:wildwood_helmet>, [<roots:sylvan_helmet>, <roots:wildwood_log>, <roots:bark_wildwood>, <minecraft:diamond>, <mysticalworld:antlers>]);
 Fey.removeRecipe(<roots:wildwood_chestplate>);
@@ -159,7 +159,7 @@ Fey.addRecipe("wildwood_leggings", <roots:wildwood_leggings>, [<roots:sylvan_leg
 Fey.removeRecipe(<roots:wildwood_boots>);
 Fey.addRecipe("wildwood_boots", <roots:wildwood_boots>, [<roots:sylvan_boots>, <roots:wildwood_log>, <roots:bark_wildwood>, <minecraft:diamond>, <mysticalworld:cooked_squid>]);
 
-# Living and Wildwood Toools & Weapons
+// Living and Wildwood Toools & Weapons
 Fey.removeRecipe(<roots:living_sword>);
 Fey.addRecipe("living_sword", <roots:living_sword>, [<immersiveengineering:sword_steel>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 Fey.removeRecipe(<roots:wildwood_bow>);
@@ -178,7 +178,7 @@ Fey.addRecipe("living_axe", <roots:living_axe>, [<immersiveengineering:axe_steel
 Fey.removeRecipe(<roots:living_hoe>);
 Fey.addRecipe("living_hoe", <roots:living_hoe>, [<immersiveengineering:hoe_steel>, <roots:spirit_herb>, <roots:bark_wildwood>, <contenttweaker:root_of_the_fallen>, <roots:stalicripe>]);
 
-# Terrastone Toools & Weapons
+// Terrastone Toools & Weapons
 Fey.removeRecipe(<roots:terrastone_sword>);
 Fey.addRecipe("terrastone_sword", <roots:terrastone_sword>, [<roots:living_sword>, <roots:terra_moss>, <roots:runestone>, <minecraft:emerald>, <roots:runic_dust>]);
 Fey.removeRecipe(<roots:terrastone_pickaxe>);
@@ -190,7 +190,7 @@ Fey.addRecipe("terrastone_axe", <roots:terrastone_axe>, [<roots:living_axe>, <ro
 Fey.removeRecipe(<roots:terrastone_hoe>);
 Fey.addRecipe("terrastone_hoe", <roots:terrastone_hoe>, [<roots:living_hoe>, <roots:terra_moss>, <roots:runestone>, <minecraft:emerald>, <roots:runic_dust>]);
 
-# Runed Toools & Weapons
+// Runed Toools & Weapons
 Fey.removeRecipe(<roots:runed_dagger>);
 Fey.addRecipe("runed_dagger", <roots:runed_dagger>, [<roots:diamond_knife>, <roots:moonglow_leaf>, <roots:fey_leather>, <ore:gemAmethyst>, <roots:runed_obsidian>]);
 Fey.removeRecipe(<roots:runed_sword>);
@@ -204,32 +204,32 @@ Fey.addRecipe("runed_axe", <roots:runed_axe>, [<roots:terrastone_axe>, <roots:cl
 Fey.removeRecipe(<roots:runed_hoe>);
 Fey.addRecipe("runed_hoe", <roots:runed_hoe>, [<roots:terrastone_hoe>, <roots:wildewheet>, <roots:fey_leather>, <mysticalworld:amethyst_hoe>, <roots:runed_obsidian>]);
 
-# Sure-Footed Stone
+// Sure-Footed Stone
 recipes.remove(<roots:runestone_trample>);
 recipes.addShaped("runestone_trample", <roots:runestone_trample>, [[<roots:chiseled_runestone>,<roots:terra_moss>,<roots:chiseled_runestone>],[<roots:terra_moss>,<roots:dewgonia>,<roots:terra_moss>],[<roots:chiseled_runestone>,<roots:terra_moss>,<roots:chiseled_runestone>]]);
 
-# Unending Bowl
+// Unending Bowl
 Fey.removeRecipe(<roots:unending_bowl>);
 Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>]);
 recipes.addShaped(<roots:unending_bowl>, [[<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>],[<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>]]);
 
-# Salmon of Knowledge
+// Salmon of Knowledge
 Fey.removeRecipe(<roots:salmon_of_knowledge>);
 
-# Wooden Shears
+// Wooden Shears
 recipes.remove(<roots:wooden_shears>);
 
-# Fire Starter
+// Fire Starter
 recipes.remove(<roots:fire_starter>);
 
-# Spirit Bag
+// Spirit Bag
 RunicShears.removeRecipe(<roots:spirit_bag>);
 
-# Glass Eye
+// Glass Eye
 recipes.remove(<roots:glass_eye>);
 recipes.addShaped("glass_eye", <roots:glass_eye>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [<ore:blockGlass>, <divinerpg:cyclops_eye>, <ore:blockGlass>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
 
-# Spell Dusts
+// Spell Dusts
 Mortar.changeSpell("spell_rose_thorns", [<minecraft:double_plant:4>, <minecraft:cactus>, <minecraft:iron_trapdoor>, <roots:stalicripe>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_aqua_bubble", [<minecraft:ice>, <minecraft:snow>, <roots:dewgonia>, <roots:moonglow_leaf>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_sanctuary", [<minecraft:armor_stand>, <roots:moonglow_leaf>, <betternether:barrel_cactus>, <minecraft:piston>, <ore:blockAmethyst>]);
@@ -254,13 +254,13 @@ Mortar.changeSpell("spell_petal_shell", [<astralsorcery:itemcraftingcomponent:2>
 
 Modifiers.disableModifier("roots:spectral_drain");
 Modifiers.disableModifier("roots:gifts_of_undeath");
-# Disabled Spell names: reason
-# spell_geas: prevents any mob from attacking
-# spell_disarm: obtain weapons/armor mob is holding/wearing (custom bosses)
-# spell_time_stop: prevents any mob from moving
-# spell_chrysopoeia: transmutation, doesnt fit into progression (although it could!)
+// Disabled Spell names: reason
+// spell_geas: prevents any mob from attacking
+// spell_disarm: obtain weapons/armor mob is holding/wearing (custom bosses)
+// spell_time_stop: prevents any mob from moving
+// spell_chrysopoeia: transmutation, doesnt fit into progression (although it could!)
 
-# Rituals
+// Rituals
 Rituals.modifyRitual("ritual_healing_aura", [<roots:spirit_herb>, <minecraft:sapling:2>, <roots:bark_birch>, <minecraft:splash_potion>.withTag({Potion: "minecraft:regeneration"}), <roots:terra_moss>]);
 Rituals.modifyRitual("ritual_heavy_storms", [<roots:dewgonia>, <roots:cloud_berry>, <minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:vine>, <minecraft:melon>]);
 Rituals.modifyRitual("ritual_divine_protection", [<roots:cloud_berry>, <roots:pereskia>, <minecraft:glowstone>, <minecraft:double_plant>, <minecraft:flint_and_steel>]);
@@ -279,18 +279,18 @@ Rituals.modifyRitual("ritual_flower_growth", [<roots:petals>, <roots:pereskia>, 
 Rituals.modifyRitual("ritual_transmutation", [<roots:runestone_trample>, <thermalfoundation:material:894>, <roots:petals>, <totemic:cedar_sapling>, <thermalfoundation:storage:3>]);
 Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry>, <minecraft:redstone>, <minecraft:wooden_hoe>, <minecraft:bowl>]);
 
-# Summon Creatures Ritual
+// Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
 <natura:materials:6>.addTooltip(game.localize("dj2.imp_leather.desc0"));
 
-# Artificial Scarab Wings
+// Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);
 
-# UB Gravel -> Flint in the Mortar
+// UB Gravel -> Flint in the Mortar
 Mortar.removeRecipe(<minecraft:flint>);
 Mortar.addRecipe("flint", <minecraft:flint>, [<ore:gravel>]);
 
-# Creative Component Pouch
+// Creative Component Pouch
 recipes.addShaped(<roots:creative_pouch>, [[<contenttweaker:beginners_singularity>,<roots:component_pouch>,<contenttweaker:beginners_singularity>],[<roots:component_pouch>,<storagedrawers:upgrade_creative>,<roots:component_pouch>],[<contenttweaker:beginners_singularity>,<roots:component_pouch>,<contenttweaker:beginners_singularity>]]);
 
 print("ENDING Roots.zs");

@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import crafttweaker.server.IServer;
 import crafttweaker.player.IPlayer;

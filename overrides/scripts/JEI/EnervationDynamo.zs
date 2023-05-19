@@ -1,4 +1,4 @@
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;

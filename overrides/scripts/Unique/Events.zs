@@ -1,5 +1,5 @@
 #loader crafttweaker reloadable
-# Author: WaitingIdly
+// Author: WaitingIdly
 
 import crafttweaker.text.ITextComponent;
 import crafttweaker.event.PlayerDeathDropsEvent;
@@ -247,7 +247,7 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
     // Disable Bewitchment Demon Trading
     if (id == "bewitchment:demon" || id == "bewitchment:demoness") {
         e.cancel();
-        #e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
+        //e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
     }
 
     // Activate the held ender core if the target entity was an end crystal

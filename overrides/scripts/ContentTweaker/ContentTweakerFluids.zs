@@ -1,5 +1,5 @@
 #loader contenttweaker
-# Author: Atricos
+// Author: Atricos
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;

@@ -1,5 +1,5 @@
 #priority 18
-# Author: Atricos
+// Author: Atricos
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -44,22 +44,22 @@ function unifyMekanismDust(mekDust as IItemStack, correctDust as IItemStack, enr
 	furnace.remove(ingot, mekDust);
 }
 
-# Diamond Dust
-#recipes.replaceAllOccurences(<ore:dustDiamond>, <mekanism:otherdust>, <*>);
+// Diamond Dust
+//recipes.replaceAllOccurences(<ore:dustDiamond>, <mekanism:otherdust>, <*>);
 <ore:dustDiamond>.removeItems([<lightningcraft:material:1>, <actuallyadditions:item_dust:2>]);
 removeDustSmeltingLightningCraft(<lightningcraft:material:1>, <mekanism:otherdust>, 3, <minecraft:diamond>, <ore:oreDiamond>);
 removeDustSmeltingSimple(<actuallyadditions:item_dust:2>, <minecraft:diamond>);
 removeDustSmeltingSimple(<lightningcraft:material:1>, <minecraft:diamond>);
 
-# Emerald Dust
-#recipes.replaceAllOccurences(<ore:dustEmerald>, <actuallyadditions:item_dust:3>, <*>);
+// Emerald Dust
+//recipes.replaceAllOccurences(<ore:dustEmerald>, <actuallyadditions:item_dust:3>, <*>);
 <ore:dustEmerald>.remove(<lightningcraft:material:2>);
 removeDustSmeltingLightningCraft(<lightningcraft:material:2>, <actuallyadditions:item_dust:3>, 3, <minecraft:emerald>, <ore:oreEmerald>);
 removeDustSmeltingSimple(<lightningcraft:material:2>, <minecraft:emerald>);
 
-# Quartz Dust
-#recipes.replaceAllOccurences(<ore:dustNetherQuartz>, <appliedenergistics2:material:3>, <*>);
-#recipes.replaceAllOccurences(<ore:dustQuartz>, <appliedenergistics2:material:3>, <*>);
+// Quartz Dust
+//recipes.replaceAllOccurences(<ore:dustNetherQuartz>, <appliedenergistics2:material:3>, <*>);
+//recipes.replaceAllOccurences(<ore:dustQuartz>, <appliedenergistics2:material:3>, <*>);
 <ore:dustNetherQuartz>.removeItems([<lightningcraft:material:3>, <enderio:item_material:33>, <actuallyadditions:item_dust:5>]);
 <ore:dustQuartz>.removeItems([<lightningcraft:material:3>, <actuallyadditions:item_dust:5>]);
 removeDustSmeltingLightningCraft(<lightningcraft:material:3>, <appliedenergistics2:material:3>, 4, <minecraft:quartz>, <ore:oreQuartz>);
@@ -69,8 +69,8 @@ removeDustSmeltingSimple(<actuallyadditions:item_dust:5>, <appliedenergistics2:m
 mods.mekanism.enrichment.removeRecipe(<actuallyadditions:item_dust:5>, <minecraft:quartz>);
 mods.mekanism.enrichment.removeRecipe(<enderio:item_material:33>, <minecraft:quartz>);
 
-# Obsidian Dust
-#recipes.replaceAllOccurences(<ore:dustObsidian>, <thermalfoundation:material:770>, <*>);
+// Obsidian Dust
+//recipes.replaceAllOccurences(<ore:dustObsidian>, <thermalfoundation:material:770>, <*>);
 <ore:dustObsidian>.removeItems([<mekanism:otherdust:6>, <enderio:item_material:29>]);
 mods.mekanism.enrichment.removeRecipe(<minecraft:obsidian>);
 mods.mekanism.enrichment.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 4);
@@ -79,55 +79,55 @@ mods.mekanism.infuser.addRecipe("DIAMOND", 10, <thermalfoundation:material:770>,
 mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <mekanism:otherdust:6>);
 mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <enderio:item_material:29>);
 
-# Iron Dust
-#recipes.replaceAllOccurences(<ore:dustIron>, <thermalfoundation:material>, <*>);
+// Iron Dust
+//recipes.replaceAllOccurences(<ore:dustIron>, <thermalfoundation:material>, <*>);
 <ore:dustIron>.removeItems([<mekanism:dust>, <appliedenergistics2:material:49>]);
 val ironOres = [<atum:iron_ore>,<lightningcraft:ore_block>,<bno:ore_netheriron>,<abyssalcraft:abyiroore>,<minecraft:iron_ore>,<erebus:ore_iron>] as IItemStack[];
 val undergroundBiomesIronOres = [<undergroundbiomes:igneous_stone_iron_ore:*>, <undergroundbiomes:metamorphic_stone_iron_ore:*>, <undergroundbiomes:sedimentary_stone_iron_ore:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust>, <thermalfoundation:material>, ironOres, undergroundBiomesIronOres, <mekanism:dirtydust>, <minecraft:iron_ingot>);
 furnace.remove(<minecraft:iron_ingot>, <appliedenergistics2:material:49>);
 
-# Gold Dust
-#recipes.replaceAllOccurences(<ore:dustGold>, <thermalfoundation:material:1>, <*>);
+// Gold Dust
+//recipes.replaceAllOccurences(<ore:dustGold>, <thermalfoundation:material:1>, <*>);
 <ore:dustGold>.remove(<mekanism:dust:1>);
 val goldOres = [<lightningcraft:ore_block:1>,<abyssalcraft:abygolore>,<bno:ore_nethergold>,<minecraft:gold_ore>,<atum:gold_ore>,<erebus:ore_gold>] as IItemStack[];
 val undergroundBiomesGoldOres = [<undergroundbiomes:igneous_stone_gold_ore:*>, <undergroundbiomes:metamorphic_stone_gold_ore:*>, <undergroundbiomes:sedimentary_stone_gold_ore:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:1>, <thermalfoundation:material:1>, goldOres, undergroundBiomesGoldOres, <mekanism:dirtydust:1>, <minecraft:gold_ingot>);
 
-# Copper Dust
-#recipes.replaceAllOccurences(<ore:dustCopper>, <thermalfoundation:material:64>, <*>);
+// Copper Dust
+//recipes.replaceAllOccurences(<ore:dustCopper>, <thermalfoundation:material:64>, <*>);
 <ore:dustCopper>.removeItems([<enderio:item_material:26>,<mekanism:dust:3>,<immersiveengineering:metal:9>]);
 val copperOres = [<erebus:ore_copper>,<immersiveengineering:ore>,<bno:ore_nethercopper>,<galacticraftcore:basic_block_moon>,<mekanism:oreblock:1>,<abyssalcraft:abycopore>,<galacticraftcore:basic_block_core:5>,<thermalfoundation:ore>] as IItemStack[];
 val undergroundBiomesCopperOres = [<undergroundbiomes:igneous_stone_thermalfoundation_ore:*>,<undergroundbiomes:metamorphic_stone_thermalfoundation_ore:*>,<undergroundbiomes:sedimentary_stone_thermalfoundation_ore:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:3>, <thermalfoundation:material:64>, copperOres, undergroundBiomesCopperOres, <mekanism:dirtydust:3>, <thermalfoundation:material:128>);
 furnace.remove(<mekanism:ingot:5>);
 
-# Tin Dust
-#recipes.replaceAllOccurences(<ore:dustTin>, <thermalfoundation:material:65>, <*>);
+// Tin Dust
+//recipes.replaceAllOccurences(<ore:dustTin>, <thermalfoundation:material:65>, <*>);
 <ore:dustTin>.removeItems([<mekanism:dust:4>,<enderio:item_material:27>]);
 val tinOres = [<bno:ore_nethertin>,<galacticraftcore:basic_block_moon:1>,<mekanism:oreblock:2>,<abyssalcraft:abytinore>,<galacticraftcore:basic_block_core:6>,<erebus:ore_tin>,<thermalfoundation:ore:1>] as IItemStack[];
 val undergroundBiomesTinOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.tin.name:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:4>, <thermalfoundation:material:65>, tinOres, undergroundBiomesTinOres, <mekanism:dirtydust:4>, <thermalfoundation:material:129>);
-#furnace.remove(<thermalfoundation:material:129>, <mekanism:dust:4>);
+//furnace.remove(<thermalfoundation:material:129>, <mekanism:dust:4>);
 
-# Silver Dust
-#recipes.replaceAllOccurences(<ore:dustSilver>, <thermalfoundation:material:66>, <*>);
+// Silver Dust
+//recipes.replaceAllOccurences(<ore:dustSilver>, <thermalfoundation:material:66>, <*>);
 <ore:dustSilver>.remove(<mekanism:dust:5>);
 val silverOres = [<bewitchment:silver_ore>,<immersiveengineering:ore:3>,<erebus:ore_silver>,<thermalfoundation:ore:2>] as IItemStack[];
 val undergroundBiomesSilverOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.silver.name:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:5>, <thermalfoundation:material:66>, silverOres, undergroundBiomesSilverOres, <mekanism:dirtydust:5>, <thermalfoundation:material:130>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130>, <thermalfoundation:material:66>, null, 100, 512);
 
-# Lead Dust
-#recipes.replaceAllOccurences(<ore:dustLead>, <thermalfoundation:material:67>, <*>);
+// Lead Dust
+//recipes.replaceAllOccurences(<ore:dustLead>, <thermalfoundation:material:67>, <*>);
 <ore:dustLead>.remove(<mekanism:dust:6>);
 val leadOres = [<erebus:ore_lead>,<immersiveengineering:ore:2>,<thermalfoundation:ore:3>] as IItemStack[];
 val undergroundBiomesLeadOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];
 unifyMekanismDust(<mekanism:dust:6>, <thermalfoundation:material:67>, leadOres, undergroundBiomesLeadOres, <mekanism:dirtydust:6>, <thermalfoundation:material:131>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>, null, 100, 512);
 
-# Aluminum Dust
-#recipes.replaceAllOccurences(<ore:dustAluminum>, <thermalfoundation:material:68>, <*>);
+// Aluminum Dust
+//recipes.replaceAllOccurences(<ore:dustAluminum>, <thermalfoundation:material:68>, <*>);
 <ore:dustAluminum>.removeItems([<galacticraftcore:ic2compat>,<immersiveengineering:metal:10>]);
 <ore:dustAluminium>.remove(<galacticraftcore:ic2compat>);
 recipes.remove(<galacticraftcore:ic2compat>);
@@ -157,8 +157,8 @@ furnace.remove(<thermalfoundation:material:132>, <galacticraftcore:ic2compat>);
 furnace.remove(<galacticraftcore:basic_item:5>, <galacticraftcore:ic2compat>);
 furnace.addRecipe(<thermalfoundation:material:132>, <thermalfoundation:material:68>);
 
-# Saltpeter / Niter
-#recipes.replaceAllOccurences(<ore:dustSaltpeter>, <thermalfoundation:material:772>, <*>);
+// Saltpeter / Niter
+//recipes.replaceAllOccurences(<ore:dustSaltpeter>, <thermalfoundation:material:772>, <*>);
 <ore:dustSaltpeter>.removeItems([<bloodmagic:component:24>,<immersiveengineering:material:24>,<abyssalcraft:nitre>]);
 mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:component:22>,<bloodmagic:component:22>,<thermalfoundation:material:768>]);
 for item in <ore:sandstone>.items {
@@ -173,15 +173,15 @@ mods.abyssalcraft.Materializer.addMaterialization(<thermalfoundation:material:77
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<abyssalcraft:nitre>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:material:24>);
 
-# Salt
+// Salt
 val saltOreDicts = [<ore:itemSalt>,<ore:dustSalt>,<ore:foodSalt>,<ore:salt>,<ore:listAllSalt>,<ore:ingredientSalt>,<ore:pinchSalt>,<ore:portionSalt>,<ore:lumpSalt>,<ore:materialSalt>] as IOreDictEntry[];
 for oredict in saltOreDicts {
-	#recipes.replaceAllOccurences(oredict, <mekanism:salt>, <*>);
+	//recipes.replaceAllOccurences(oredict, <mekanism:salt>, <*>);
 	oredict.remove(<bewitchment:salt>);
 }
 mods.alchemistry.Combiner.removeRecipe(<bewitchment:salt>);
-#recipes.replaceAllOccurences(<bewitchment:salt>, <mekanism:salt>);
-#recipes.replaceAllOccurences(<ore:blockSalt>,<mekanism:saltblock>);
+//recipes.replaceAllOccurences(<bewitchment:salt>, <mekanism:salt>);
+//recipes.replaceAllOccurences(<ore:blockSalt>,<mekanism:saltblock>);
 <ore:blockSalt>.remove(<bewitchment:block_of_salt>);
 recipes.remove(<bewitchment:salt>);
 recipes.remove(<bewitchment:block_of_salt>);
@@ -199,14 +199,14 @@ mods.alchemistry.Dissolver.addRecipe(<mekanism:salt>, false, 1, [[100,<alchemist
 mods.mekanism.enrichment.removeRecipe(<mekanism:saltblock>);
 
 
-# Titanium Dust
+// Titanium Dust
 mods.enderio.SagMill.removeRecipe(<galacticraftplanets:item_basic_asteroids>);
 mods.enderio.SagMill.removeRecipe(<galacticraftplanets:asteroids_block:7>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<galacticraftplanets:item_basic_asteroids>);
 mods.thermalexpansion.Pulverizer.addRecipe(<galacticraftplanets:item_basic_asteroids:9>, <galacticraftplanets:item_basic_asteroids>, 2000);
 
-# Sulfur
-#recipes.replaceAllOccurences(<ore:dustSulfur>,<thermalfoundation:material:771>);
+// Sulfur
+//recipes.replaceAllOccurences(<ore:dustSulfur>,<thermalfoundation:material:771>);
 val wrongSulfurs = [<immersiveengineering:material:25>,<abyssalcraft:sulfur>,<natura:materials:4>,<mekanism:otherdust:3>] as IItemStack[];
 <ore:dustSulfur>.removeItems(wrongSulfurs);
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
@@ -225,28 +225,28 @@ mods.mekanism.reaction.addRecipe(allCoalBlocks, <liquid:water>, <gas:oxygen>, <t
 mods.mekanism.chemical.injection.removeRecipe(<mekanism:otherdust:3>);
 mods.mekanism.chemical.injection.addRecipe(<minecraft:gunpowder>, <gas:hydrogen>, <thermalfoundation:material:771>);
 
-# Steel
+// Steel
 <ore:dustSteel>.removeItems([<mekanism:otherdust:1>,<immersiveengineering:metal:17>,<bigreactors:duststeel>]);
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:1>);
 mods.mekanism.infuser.addRecipe("CARBON", 10, <mekanism:enrichediron>, <thermalfoundation:material:96>);
 mods.mekanism.crusher.removeRecipe(<mekanism:otherdust:1>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>);
 
-# Bronze
+// Bronze
 mods.mekanism.crusher.removeRecipe(<thermalfoundation:material:99>);
 mods.mekanism.crusher.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:99>);
 Grinder.removeRecipe(<mekanism:ingot:2>);
 
-# Constantan
+// Constantan
 <ore:dustConstantan>.remove(<immersiveengineering:metal:15>);
 recipes.remove(<immersiveengineering:metal:15>);
 furnace.remove(<immersiveengineering:metal:15>);
 
-# Crushed Lapis
+// Crushed Lapis
 <ore:dustLapis>.remove(<enderio:item_material:32>);
 mods.mekanism.enrichment.removeRecipe(<enderio:item_material:32>);
 
-# Sawdust
+// Sawdust
 val erebusPlanks = <ore:erebusPlank>;
 for i in 0 to 13 {
 	erebusPlanks.add(<erebus:planks>.withDamage(i));
@@ -373,7 +373,7 @@ mods.mekanism.enrichment.removeRecipe(<mekanism:sawdust>);
 <ore:pulpWood>.add(<thermalfoundation:material:800>);
 <ore:pulpWood>.remove(<mekanism:sawdust>);
 
-# Flour
+// Flour
 <ore:dustWheat>.add(<natura:materials:2>);
 <ore:dustWheat>.removeItems([<appliedenergistics2:material:4>, <enderio:item_material:21>, <roots:flour>]);
 mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:wheat>);
@@ -384,14 +384,14 @@ recipes.remove(<natura:materials:2>);
 furnace.remove(<minecraft:bread>, <appliedenergistics2:material:4>);
 furnace.remove(<minecraft:bread>, <enderio:item_material:21>);
 furnace.remove(<minecraft:bread>, <roots:flour>);
-# More recipes in OreProcessingAdditions.zs
+// More recipes in OreProcessingAdditions.zs
 
-# Electrum Dust
+// Electrum Dust
 <ore:dustElectrum>.remove(<immersiveengineering:metal:16>);
 recipes.remove(<immersiveengineering:metal:16>);
 furnace.remove(<thermalfoundation:material:161>, <immersiveengineering:metal:16>);
 
-# Crushed Coal -> Pulverized Coal, other Coal Dust removals
+// Crushed Coal -> Pulverized Coal, other Coal Dust removals
 mods.actuallyadditions.Crusher.removeRecipe(<actuallyadditions:item_dust:6>);
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:768>, <minecraft:coal>);
 mods.mekanism.enrichment.removeRecipe(<actuallyadditions:item_dust:6>, <minecraft:coal>);
@@ -400,17 +400,17 @@ mods.mekanism.enrichment.removeRecipe(<bloodmagic:component:21>, <minecraft:coal
 furnace.remove(<minecraft:coal>, <actuallyadditions:item_dust:6>);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:coal>,<minecraft:coal>,<minecraft:flint>]);
 
-# Pulverized Charcoal
+// Pulverized Charcoal
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:769>, <minecraft:coal:1>);
 
-# Iron Dust
+// Iron Dust
 <ore:dustIron>.removeItems([<enderio:item_material:24>,<bloodmagic:component:19>,<immersiveengineering:metal:18>,<actuallyadditions:item_dust>]);
 furnace.remove(<minecraft:iron_ingot>, <bloodmagic:component:19>);
 furnace.remove(<minecraft:iron_ingot>, <enderio:item_material:24>);
 furnace.remove(<minecraft:iron_ingot>, <actuallyadditions:item_dust>);
 furnace.remove(<minecraft:iron_ingot>, <immersiveengineering:metal:18>);
 
-# Gold Dust
+// Gold Dust
 <ore:dustGold>.removeItems([<actuallyadditions:item_dust:1>,<immersiveengineering:metal:19>,<enderio:item_material:25>,<appliedenergistics2:material:51>,<bloodmagic:component:20>]);
 furnace.remove(<minecraft:gold_ingot>, <bloodmagic:component:20>);
 furnace.remove(<minecraft:gold_ingot>, <appliedenergistics2:material:51>);

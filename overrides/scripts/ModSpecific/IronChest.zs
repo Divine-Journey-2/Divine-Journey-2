@@ -1,4 +1,4 @@
-# Author: Atricos
+// Author: Atricos
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -11,52 +11,52 @@ function addIronChestRecipe(output as IItemStack, center_input as IIngredient, s
 	recipes.addShaped(output, [[sourrounding_input,sourrounding_input,sourrounding_input],[sourrounding_input,center_input,sourrounding_input],[sourrounding_input,sourrounding_input,sourrounding_input]]);
 }
 
-# Iron Chest
+// Iron Chest
 addIronChestRecipe(<ironchest:iron_chest>, <ore:chestWood>, <thermalfoundation:material:32>);
 addIronChestRecipe(<ironchest:iron_chest>, <ironchest:iron_chest:3>, <thermalfoundation:material:32>);
 
-# Gold Chest
+// Gold Chest
 addIronChestRecipe(<ironchest:iron_chest:1>, <ironchest:iron_chest>, <thermalfoundation:material:33>);
 addIronChestRecipe(<ironchest:iron_chest:1>, <ironchest:iron_chest:4>, <thermalfoundation:material:33>);
 
-# Diamond Chest
+// Diamond Chest
 addIronChestRecipe(<ironchest:iron_chest:2>, <ironchest:iron_chest:1>, <minecraft:diamond>);
 
-# Copper Chest
+// Copper Chest
 addIronChestRecipe(<ironchest:iron_chest:3>, <minecraft:chest>, <thermalfoundation:material:320>);
 
-# Silver Chest
+// Silver Chest
 addIronChestRecipe(<ironchest:iron_chest:4>, <ironchest:iron_chest:3>, <thermalfoundation:material:322>);
 addIronChestRecipe(<ironchest:iron_chest:4>, <ironchest:iron_chest>, <thermalfoundation:material:322>);
 
-# Wood to Iron Chest Upgrade
+// Wood to Iron Chest Upgrade
 addIronChestRecipe(<ironchest:wood_iron_chest_upgrade>, <ore:plankWood>, <thermalfoundation:material:32>);
 
-# Wood to Copper Chest Upgrade
+// Wood to Copper Chest Upgrade
 addIronChestRecipe(<ironchest:wood_copper_chest_upgrade>, <ore:plankWood>, <thermalfoundation:material:320>);
 
-# Copper to Silver Chest Upgrade
+// Copper to Silver Chest Upgrade
 addIronChestRecipe(<ironchest:copper_silver_chest_upgrade>, <thermalfoundation:material:128>, <thermalfoundation:material:322>);
 
-# Copper to Iron Chest Upgrade
+// Copper to Iron Chest Upgrade
 addIronChestRecipe(<ironchest:copper_iron_chest_upgrade>, <thermalfoundation:material:128>, <thermalfoundation:material:32>);
 
-# Iron to Gold Chest Upgrade
+// Iron to Gold Chest Upgrade
 addIronChestRecipe(<ironchest:iron_gold_chest_upgrade>, <minecraft:iron_ingot>, <thermalfoundation:material:33>);
 
-# Silver to Gold Chest Upgrade
+// Silver to Gold Chest Upgrade
 addIronChestRecipe(<ironchest:silver_gold_chest_upgrade>, <thermalfoundation:material:130>, <thermalfoundation:material:33>);
 
-# Gold to Diamond Chest Upgrade
+// Gold to Diamond Chest Upgrade
 addIronChestRecipe(<ironchest:gold_diamond_chest_upgrade>, <minecraft:gold_ingot>, <minecraft:diamond>);
 
-# Diamond to Crystal Chest Upgrade
+// Diamond to Crystal Chest Upgrade
 addIronChestRecipe(<ironchest:diamond_crystal_chest_upgrade>, <minecraft:diamond>, <ore:blockGlass>);
 
-# Diamond to Obsidian Chest Upgrade
+// Diamond to Obsidian Chest Upgrade
 addIronChestRecipe(<ironchest:diamond_obsidian_chest_upgrade>, <minecraft:diamond>, <minecraft:obsidian>);
 
-# Shulker Box upgrade function
+// Shulker Box upgrade function
 function ironchest_shulkerbox_recipe_tag(input_tag as IData, out as IItemStack, size as int) as IItemStack {
 	if(input_tag has "BlockEntityTag") {
 		if(input_tag.BlockEntityTag has "Items") {
@@ -75,7 +75,7 @@ val num_strings = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
 
 for i in 0 to 16 {
 
-	# Iron Shulker Box
+	// Iron Shulker Box
 	recipes.remove(iron_shulker_box_names[i]);
 	recipes.addShaped("ironchest_iron_shulker_box_" + num_strings[i], iron_shulker_box_names[i], [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,shulker_box_names[i].marked("box"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]],
 	function(out,ins,cInfo) {
@@ -86,7 +86,7 @@ for i in 0 to 16 {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 54);
 	}, null);
 
-	# Gold Shulker Box
+	// Gold Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(1));
 	recipes.addShaped("ironchest_gold_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(1), [[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>]],
 	function(out,ins,cInfo) {
@@ -97,21 +97,21 @@ for i in 0 to 16 {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 81);
 	}, null);
 
-	# Diamond Shulker Box
+	// Diamond Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(2));
 	recipes.addShaped("ironchest_diamond_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(2), [[<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>],[<minecraft:diamond>,iron_shulker_box_names[i].withDamage(1).marked("box"),<minecraft:diamond>],[<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
 	}, null);
 
-	# Copper Shulker Box
+	// Copper Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(3));
 	recipes.addShaped("ironchest_copper_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(3), [[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>],[<thermalfoundation:material:320>,shulker_box_names[i].marked("box"),<thermalfoundation:material:320>],[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 45);
 	}, null);
 
-	# Silver Shulker Box
+	// Silver Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(4));
 	recipes.addShaped("ironchest_silver_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(4), [[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>],[<thermalfoundation:material:322>,iron_shulker_box_names[i].marked("box"),<thermalfoundation:material:322>],[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>]],
 	function(out,ins,cInfo) {
@@ -122,14 +122,14 @@ for i in 0 to 16 {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 72);
 	}, null);
 
-	# Obsidian Shulker Box
+	// Obsidian Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(6));
 	recipes.addShaped("ironchest_obsidian_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(6), [[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,iron_shulker_box_names[i].withDamage(2).marked("box"),<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]],
 	function(out,ins,cInfo) {
 		return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
 	}, null);
 
-	# Crystal Shulker Box
+	// Crystal Shulker Box
 	recipes.remove(iron_shulker_box_names[i].withDamage(5));
 	recipes.addShaped("ironchest_crystal_shulker_box_" + num_strings[i], iron_shulker_box_names[i].withDamage(5), [[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<ore:blockGlass>,iron_shulker_box_names[i].withDamage(2).marked("box"),<ore:blockGlass>],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>]],
 	function(out,ins,cInfo) {
@@ -138,39 +138,39 @@ for i in 0 to 16 {
 
 }
 
-# Vanilla to Iron Shulker Box Upgrade
+// Vanilla to Iron Shulker Box Upgrade
 recipes.remove(<ironchest:vanilla_iron_shulker_upgrade>);
 recipes.addShaped(<ironchest:vanilla_iron_shulker_upgrade>, [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<minecraft:shulker_shell>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]]);
 
-# Vanilla to Copper Shulker Box Upgrade
+// Vanilla to Copper Shulker Box Upgrade
 recipes.remove(<ironchest:vanilla_copper_shulker_upgrade>);
 recipes.addShaped(<ironchest:vanilla_copper_shulker_upgrade>, [[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>],[<thermalfoundation:material:320>,<minecraft:shulker_shell>,<thermalfoundation:material:320>],[<thermalfoundation:material:320>,<thermalfoundation:material:320>,<thermalfoundation:material:320>]]);
 
-# Copper to Silver Shulker Box Upgrade
+// Copper to Silver Shulker Box Upgrade
 recipes.remove(<ironchest:copper_silver_shulker_upgrade>);
 recipes.addShaped(<ironchest:copper_silver_shulker_upgrade>, [[<thermalfoundation:material:322>,<thermalfoundation:material:128>,<thermalfoundation:material:322>],[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>],[<thermalfoundation:material:322>,<thermalfoundation:material:322>,<thermalfoundation:material:322>]]);
 
-# Copper to Iron Shulker Box Upgrade
+// Copper to Iron Shulker Box Upgrade
 recipes.remove(<ironchest:copper_iron_shulker_upgrade>);
 recipes.addShaped(<ironchest:copper_iron_shulker_upgrade>, [[<thermalfoundation:material:32>,<thermalfoundation:material:128>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>]]);
 
-# Iron to Gold Shulker Box Upgrade
+// Iron to Gold Shulker Box Upgrade
 recipes.remove(<ironchest:iron_gold_shulker_upgrade>);
 recipes.addShaped(<ironchest:iron_gold_shulker_upgrade>, [[<thermalfoundation:material:33>,<minecraft:iron_ingot>,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>]]);
 
-# Silver to Gold Shulker Box Upgrade
+// Silver to Gold Shulker Box Upgrade
 recipes.remove(<ironchest:silver_gold_shulker_upgrade>);
 recipes.addShaped(<ironchest:silver_gold_shulker_upgrade>, [[<thermalfoundation:material:33>,<thermalfoundation:material:130>,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>],[<thermalfoundation:material:33>,<thermalfoundation:material:33>,<thermalfoundation:material:33>]]);
 
-# Gold to Diamond Shulker Box Upgrade
+// Gold to Diamond Shulker Box Upgrade
 recipes.remove(<ironchest:gold_diamond_shulker_upgrade>);
 recipes.addShaped(<ironchest:gold_diamond_shulker_upgrade>, [[<minecraft:diamond>,<minecraft:gold_ingot>,<minecraft:diamond>],[<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>],[<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>]]);
 
-# Diamond to Obsidian Shulker Box Upgrade
+// Diamond to Obsidian Shulker Box Upgrade
 recipes.remove(<ironchest:diamond_obsidian_shulker_upgrade>);
 recipes.addShaped(<ironchest:diamond_obsidian_shulker_upgrade>, [[<minecraft:obsidian>,<minecraft:diamond>,<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>],[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
 
-# Diamond to Crystal Shulker Box Upgrade
+// Diamond to Crystal Shulker Box Upgrade
 recipes.remove(<ironchest:diamond_crystal_shulker_upgrade>);
 recipes.addShaped(<ironchest:diamond_crystal_shulker_upgrade>, [[<ore:blockGlass>,<minecraft:diamond>,<ore:blockGlass>],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>],[<ore:blockGlass>,<ore:blockGlass>,<ore:blockGlass>]]);
 
