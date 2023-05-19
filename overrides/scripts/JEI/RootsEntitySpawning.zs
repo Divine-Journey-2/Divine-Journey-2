@@ -61,7 +61,7 @@ addSpawnerJEI(<entity:minecraft:stray>, [<minecraft:snowball>, <minecraft:flint>
 addSpawnerJEI(<entity:minecraft:parrot>, [<roots:bark_jungle>, <minecraft:beetroot_seeds>]);
 addSpawnerJEI(<entity:minecraft:zombie>, [<minecraft:dye:15>, <minecraft:rotten_flesh>, <minecraft:potato>]);
 addSpawnerJEI(<entity:minecraft:squid>, [<minecraft:reeds>, <minecraft:paper>]);
-addSpawnerJEI(<entity:minecraft:pigmen>, [<minecraft:gold_nugget>, <minecraft:porkchop>, <minecraft:fishing_rod>]);
+addSpawnerJEI(<entity:minecraft:zombie_pigman>, [<minecraft:gold_nugget>, <minecraft:porkchop>, <minecraft:fishing_rod>]);
 addSpawnerJEI(<entity:minecraft:skeleton>, [<minecraft:dye:15>, <minecraft:flint>, <minecraft:bow>]);
 addSpawnerJEI(<entity:minecraft:horse>, [<minecraft:wheat>, <minecraft:apple>]);
 addSpawnerJEI(<entity:minecraft:wolf>, [<ore:bone>, <minecraft:flint>]);
