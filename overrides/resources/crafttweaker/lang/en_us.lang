@@ -644,3 +644,10 @@ dj2.chaos_shard.desc0=§fObtained after slaying the Chaos Guardian.
 dj2.chaos_shard.desc1=§fCan also be crafted using Alchemistry.
 
 dj2.constructionpastecontainer.desc0=§fThis Paste Container can store a maximum of §c%d§r §fPaste.
+
+
+dj2.jei.industrial_graphite_dust.desc0=Explode some Industrial Grade Graphite Dust to create this item!
+dj2.jei.hand_framing_tool.desc0=Frame your tools by hand!
+dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame drawers already placed in the world.
+dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
+dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking any drawers in-world will frame them.

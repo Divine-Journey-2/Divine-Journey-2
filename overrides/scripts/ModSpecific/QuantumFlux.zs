@@ -35,7 +35,7 @@ EIOAlloySmelter.addRecipe(<quantumflux:graphiteore>, [<quantumflux:darkstone>, <
 
 // Hyper Diamond
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <contenttweaker:industrial_grade_graphite_dust>);
-mods.jei.JEI.addDescription(<quantumflux:craftingpiece:6>, "Explode some Industrial Grade Graphite Dust to create this item!");
+mods.jei.JEI.addDescription(<quantumflux:craftingpiece:6>, "dj2.jei.industrial_graphite_dust.desc0");
 
 // Advanced Circuit
 recipes.remove(<quantumflux:craftingpiece:5>);

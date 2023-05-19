@@ -174,8 +174,8 @@ recipes.addShaped(
 
 JEI.addDescription(
     <contenttweaker:hand_framing_tool>,
-    "Frame your tools by hand!",
-    "The Hand Framing Tool lets you frame drawers already placed in the world.",
-    "To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.",
-    "Then, once the tool is framed, right clicking any drawers in-world will frame them."
+    "dj2.jei.hand_framing_tool.desc0",
+    "dj2.jei.hand_framing_tool.desc1",
+    "dj2.jei.hand_framing_tool.desc2",
+    "dj2.jei.hand_framing_tool.desc3"
 );
