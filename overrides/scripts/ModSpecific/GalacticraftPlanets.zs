@@ -124,21 +124,21 @@ recipes.addShaped(<galacticraftplanets:item_basic_asteroids:7>, [[<abyssalcraft:
 
 function addGalacticraftPlanetsArmorRecipes(old_helmet as IItemStack, old_chestplate as IItemStack, old_leggings as IItemStack, old_booots as IItemStack, new_helmet as IItemStack, new_chestplate as IItemStack, new_leggings as IItemStack, new_booots as IItemStack,  new_material as IIngredient) {
 
-	// Helmet
-	recipes.remove(new_helmet);
-	recipes.addShaped(new_helmet, [[new_material,new_material,new_material],[new_material,old_helmet,new_material]]);
+    // Helmet
+    recipes.remove(new_helmet);
+    recipes.addShaped(new_helmet, [[new_material,new_material,new_material],[new_material,old_helmet,new_material]]);
 
-	// Chestplate
-	recipes.remove(new_chestplate);
-	recipes.addShaped(new_chestplate, [[new_material,old_chestplate,new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
+    // Chestplate
+    recipes.remove(new_chestplate);
+    recipes.addShaped(new_chestplate, [[new_material,old_chestplate,new_material],[new_material,new_material,new_material],[new_material,new_material,new_material]]);
 
-	// Leggings
-	recipes.remove(new_leggings);
-	recipes.addShaped(new_leggings, [[new_material,new_material,new_material],[new_material,old_leggings,new_material],[new_material,null,new_material]]);
+    // Leggings
+    recipes.remove(new_leggings);
+    recipes.addShaped(new_leggings, [[new_material,new_material,new_material],[new_material,old_leggings,new_material],[new_material,null,new_material]]);
 
-	// Boots
-	recipes.remove(new_booots);
-	recipes.addShaped(new_booots, [[new_material,null,new_material],[new_material,old_booots,new_material]]);
+    // Boots
+    recipes.remove(new_booots);
+    recipes.addShaped(new_booots, [[new_material,null,new_material],[new_material,old_booots,new_material]]);
 
 }
 
@@ -164,25 +164,25 @@ addGalacticraftPlanetsArmorRecipes(<galacticraftplanets:desh_helmet>,<galacticra
 
 function addGalacticraftPlanetsToolRecipes(old_sword as IItemStack, old_pickaxe as IItemStack, old_shovel as IItemStack, old_axe as IItemStack, old_hoe as IItemStack, new_sword as IItemStack, new_pickaxe as IItemStack, new_shovel as IItemStack, new_axe as IItemStack, new_hoe as IItemStack, new_material as IIngredient, new_stick as IIngredient) {
 
-	// Sword
-	recipes.remove(new_sword);
-	recipes.addShaped(new_sword, [[new_material],[new_material],[old_sword]]);
+    // Sword
+    recipes.remove(new_sword);
+    recipes.addShaped(new_sword, [[new_material],[new_material],[old_sword]]);
 
-	// Pickaxe
-	recipes.remove(new_pickaxe);
-	recipes.addShaped(new_pickaxe, [[new_material,new_material,new_material],[null,old_pickaxe,null],[null,new_stick,null]]);
+    // Pickaxe
+    recipes.remove(new_pickaxe);
+    recipes.addShaped(new_pickaxe, [[new_material,new_material,new_material],[null,old_pickaxe,null],[null,new_stick,null]]);
 
-	// Shovel
-	recipes.remove(new_shovel);
-	recipes.addShaped(new_shovel, [[new_material],[old_shovel],[new_stick]]);
+    // Shovel
+    recipes.remove(new_shovel);
+    recipes.addShaped(new_shovel, [[new_material],[old_shovel],[new_stick]]);
 
-	// Axe
-	recipes.remove(new_axe);
-	recipes.addShapedMirrored(new_axe, [[new_material,new_material],[new_material,old_axe],[null,new_stick]]);
+    // Axe
+    recipes.remove(new_axe);
+    recipes.addShapedMirrored(new_axe, [[new_material,new_material],[new_material,old_axe],[null,new_stick]]);
 
-	// Hoe
-	recipes.remove(new_hoe);
-	recipes.addShapedMirrored(new_hoe, [[new_material,new_material],[null,old_hoe],[null,new_stick]]);
+    // Hoe
+    recipes.remove(new_hoe);
+    recipes.addShapedMirrored(new_hoe, [[new_material,new_material],[null,old_hoe],[null,new_stick]]);
 
 }
 

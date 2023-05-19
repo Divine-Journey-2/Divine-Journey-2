@@ -626,13 +626,13 @@ mods.thaumcraft.Infusion.registerRecipe("thaumcraft:VoidRobeLegs", "VOIDROBEARMO
 
 // Primordial Pearl repair
 recipes.addShapeless("thaumcraft_primordial_pearl_repair", <thaumcraft:primordial_pearl>, [<thaumcraft:primordial_pearl>.anyDamage().noReturn().marked("pearl"),<bewitchment:poppet_tool>],
-	function(out,ins,cInfo) {
-		if(ins.pearl.damage != 0) {
-			return out.withDamage(ins.pearl.damage - 1);
-		} else {
-			return out;
-		}
-	}, null);
+    function(out,ins,cInfo) {
+        if(ins.pearl.damage != 0) {
+            return out.withDamage(ins.pearl.damage - 1);
+        } else {
+            return out;
+        }
+    }, null);
 <thaumcraft:primordial_pearl>.addTooltip(game.localize("dj2.primordial_pearl.desc0"));
 <thaumcraft:primordial_pearl>.addTooltip(game.localize("dj2.primordial_pearl.desc1"));
 

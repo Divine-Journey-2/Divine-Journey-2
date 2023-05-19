@@ -216,22 +216,22 @@ recipes.addShaped(<extrautils2:drum>, [[<extrautils2:decorativesolid:3>,<minecra
 // Iron Drum
 recipes.removeShaped(<extrautils2:drum:1>);
 recipes.addShaped("extrautils2_drum_upgrade1", <extrautils2:drum:1>, [[<thermalfoundation:material:32>,<minecraft:cauldron>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<extrautils2:drum>.marked("tank"),<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<minecraft:cauldron>,<thermalfoundation:material:32>]],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag(ins.tank.tag);
-	} else {
-		return out;
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag(ins.tank.tag);
+    } else {
+        return out;
+    }}, null);
 
 // Reinforced Large Drum
 recipes.removeShaped(<extrautils2:drum:2>);
 recipes.addShaped("extrautils2_drum_upgrade2", <extrautils2:drum:2>, [[<contenttweaker:demonlord_ingot>,<thermalfoundation:material:33>,<contenttweaker:demonlord_ingot>],[<contenttweaker:demonlord_block>,<extrautils2:drum:1>.marked("tank"),<contenttweaker:demonlord_block>],[<contenttweaker:demonlord_ingot>,<thermalfoundation:material:33>,<contenttweaker:demonlord_ingot>]],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag(ins.tank.tag);
-	} else {
-		return out;
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag(ins.tank.tag);
+    } else {
+        return out;
+    }}, null);
 
 // Transfer Pipe
 recipes.remove(<extrautils2:pipe>);
@@ -426,12 +426,12 @@ recipes.addShaped(<extrautils2:klein>, [[null,<mekanism:teleportationcore>,null]
 // Demonically Gargantuan Drum
 recipes.removeShaped(<extrautils2:drum:3>);
 recipes.addShaped("extrautils2_drum_upgrade3", <extrautils2:drum:3>, [[<extrautils2:simpledecorative:1>,<extrautils2:klein>,<extrautils2:simpledecorative:1>],[<contenttweaker:steaming_restonia_crystal_block>,<extrautils2:drum:2>.marked("tank"),<contenttweaker:steaming_restonia_crystal_block>],[<extrautils2:simpledecorative:1>,<extrautils2:klein>,<extrautils2:simpledecorative:1>]],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag(ins.tank.tag);
-	} else {
-		return out;
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag(ins.tank.tag);
+    } else {
+        return out;
+    }}, null);
 
 // Golden Lasso
 recipes.remove(<extrautils2:goldenlasso>);
@@ -476,15 +476,15 @@ recipes.addShaped(<extrautils2:chickenring:1>, [[<mysticalworld:raw_squid>,<extr
 
 // Angel Rings
 function addExtraUtilsAngelRingRecipe(dam as int, input_item as IIngredient) {
-	recipes.removeShaped(<extrautils2:angelring>.withDamage(dam));
-	recipes.removeShapeless(<extrautils2:angelring>.withDamage(dam), [<*>,<*>,<*>]);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring" + dam, <extrautils2:angelring>.withDamage(dam), 2500, 100,
-	[<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:rainbow_tablet>,<astralsorcery:itemcraftingcomponent:4>,
-	<contenttweaker:rainbow_tablet>,<extrautils2:chickenring:1>,<contenttweaker:rainbow_tablet>,
-	<astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara:*>,<astralsorcery:itemcraftingcomponent:4>,
-	input_item,input_item,input_item,input_item,
-	<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>]);
-	recipes.addShapeless(<extrautils2:angelring>.withDamage(dam), [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);
+    recipes.removeShaped(<extrautils2:angelring>.withDamage(dam));
+    recipes.removeShapeless(<extrautils2:angelring>.withDamage(dam), [<*>,<*>,<*>]);
+    mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/angelring" + dam, <extrautils2:angelring>.withDamage(dam), 2500, 100,
+    [<astralsorcery:itemcraftingcomponent:4>,<contenttweaker:rainbow_tablet>,<astralsorcery:itemcraftingcomponent:4>,
+    <contenttweaker:rainbow_tablet>,<extrautils2:chickenring:1>,<contenttweaker:rainbow_tablet>,
+    <astralsorcery:itemcraftingcomponent:4>,<botania:flighttiara:*>,<astralsorcery:itemcraftingcomponent:4>,
+    input_item,input_item,input_item,input_item,
+    <contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>,<contenttweaker:condensed_vis_crystal_desiderium>]);
+    recipes.addShapeless(<extrautils2:angelring>.withDamage(dam), [<extrautils2:angelring:*>,input_item,input_item,input_item,input_item]);
 }
 
 addExtraUtilsAngelRingRecipe(0,<ore:blockGlassColorless>);
@@ -495,7 +495,7 @@ addExtraUtilsAngelRingRecipe(4,<simplyjetpacks:metaitemmods:24>);
 addExtraUtilsAngelRingRecipe(5,<lightningcraft:ingot:1>);
 
 for i in 0 to 6 {
-	<ore:angelring>.add(<extrautils2:angelring>.withDamage(i));
+    <ore:angelring>.add(<extrautils2:angelring>.withDamage(i));
 }
 
 // Chunk Loading Ward
@@ -505,17 +505,17 @@ recipes.addShaped(<extrautils2:chunkloader>, [[<astralsorcery:blockinfusedwood:6
 // Lux Sabers
 val luxSaberGlasses = [<ore:blockGlassBlue>,<ore:blockGlassPink>,<ore:blockGlassRed>,<ore:blockGlassYellow>,<ore:blockGlassGreen>,<ore:blockGlassCyan>,<ore:blockGlassWhite>,<ore:blockGlassBlack>] as IIngredient[];
 for i in 0 to 8 {
-	recipes.remove(<extrautils2:luxsaber>.withDamage(i));
-	mods.avaritia.ExtremeCrafting.addShaped("extrautils2:luxsaber" + i, <extrautils2:luxsaber>.withDamage(i),
-	[[null,null,null,null,luxSaberGlasses[i],null,null,null,null],
-	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
-	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
-	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
-	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
-	[null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
-	[null,null,<extrautils2:ingredients:17>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:2>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:17>,null,null],
-	[null,null,null,<extrautils2:ingredients:17>,<extrautils2:ingredients:2>,<extrautils2:ingredients:17>,null,null,null],
-	[null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
+    recipes.remove(<extrautils2:luxsaber>.withDamage(i));
+    mods.avaritia.ExtremeCrafting.addShaped("extrautils2:luxsaber" + i, <extrautils2:luxsaber>.withDamage(i),
+    [[null,null,null,null,luxSaberGlasses[i],null,null,null,null],
+    [null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+    [null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+    [null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+    [null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+    [null,null,null,luxSaberGlasses[i],<extrautils2:suncrystal>,luxSaberGlasses[i],null,null,null],
+    [null,null,<extrautils2:ingredients:17>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:2>,<draconicevolution:wyvern_energy_core>,<extrautils2:ingredients:17>,null,null],
+    [null,null,null,<extrautils2:ingredients:17>,<extrautils2:ingredients:2>,<extrautils2:ingredients:17>,null,null,null],
+    [null,null,null,null,<extrautils2:ingredients:17>,null,null,null,null]]);
 }
 
 // Alternative Sun Crystal filling recipe

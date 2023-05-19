@@ -15,13 +15,13 @@ print("STARTING IndustrialForegoing.zs");
 mods.thermalexpansion.Transposer.addFillRecipe(<industrialforegoing:plastic>, <mekanism:polyethene:2> * 4, <liquid:nutrient_distillation> * 500, 6000);
 
 function addIFMachineRecipe(output as IItemStack, top_input as IIngredient, side_input as IIngredient, bottom_input as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[<industrialforegoing:plastic>,top_input,<industrialforegoing:plastic>],[side_input,<teslacorelib:machine_case>,side_input],[<industrialforegoing:plastic>,bottom_input,<industrialforegoing:plastic>]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[<industrialforegoing:plastic>,top_input,<industrialforegoing:plastic>],[side_input,<teslacorelib:machine_case>,side_input],[<industrialforegoing:plastic>,bottom_input,<industrialforegoing:plastic>]]);
 }
 
 function addIFMachineRecipeAsymmetrical(output as IItemStack, top_input as IIngredient, left_input as IIngredient, right_input as IIngredient, bottom_input as IIngredient) {
-	recipes.remove(output);
-	recipes.addShapedMirrored(output, [[<industrialforegoing:plastic>,top_input,<industrialforegoing:plastic>],[left_input,<teslacorelib:machine_case>,right_input],[<industrialforegoing:plastic>,bottom_input,<industrialforegoing:plastic>]]);
+    recipes.remove(output);
+    recipes.addShapedMirrored(output, [[<industrialforegoing:plastic>,top_input,<industrialforegoing:plastic>],[left_input,<teslacorelib:machine_case>,right_input],[<industrialforegoing:plastic>,bottom_input,<industrialforegoing:plastic>]]);
 }
 
 // Petrified Fuel Generator
@@ -184,8 +184,8 @@ recipes.addShaped(<industrialforegoing:mob_duplicator>, [[<industrialforegoing:p
 <industrialforegoing:mob_duplicator>.addTooltip(game.localize("dj2.mob_duplicator.desc2"));
 
 function addIFRangeAddonRecipe(output as IItemStack, sides as IIngredient, center as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[sides,<industrialforegoing:plastic>,sides],[sides,center,sides],[sides,<industrialforegoing:plastic>,sides]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[sides,<industrialforegoing:plastic>,sides],[sides,center,sides],[sides,<industrialforegoing:plastic>,sides]]);
 }
 
 // Range Addon +1
@@ -226,7 +226,7 @@ addIFRangeAddonRecipe(<industrialforegoing:range_addon:11>, <minecraft:emerald>,
 
 // Change Range Addon Stack Size
 for i in 0 to 11 {
-	<industrialforegoing:range_addon>.definition.makeStack(i).maxStackSize = 64;
+    <industrialforegoing:range_addon>.definition.makeStack(i).maxStackSize = 64;
 }
 
 // Adult Filter
@@ -248,20 +248,20 @@ recipes.remove(<industrialforegoing:mob_imprisonment_tool>);
 recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>, [[<industrialforegoing:plastic>,<draconicevolution:wyvern_core>,<industrialforegoing:plastic>],[<draconicevolution:wyvern_core>,<enderio:item_soul_vial>,<draconicevolution:wyvern_core>],[<industrialforegoing:plastic>,<draconicevolution:wyvern_core>,<industrialforegoing:plastic>]]);
 
 function addIFLaserLensRecipe(output as IItemStack, input_glass_pane as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[<industrialforegoing:pink_slime_ingot>,<industrialforegoing:plastic>,<industrialforegoing:pink_slime_ingot>],[<industrialforegoing:plastic>,input_glass_pane,<industrialforegoing:plastic>],[<industrialforegoing:pink_slime_ingot>,<industrialforegoing:plastic>,<industrialforegoing:pink_slime_ingot>]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[<industrialforegoing:pink_slime_ingot>,<industrialforegoing:plastic>,<industrialforegoing:pink_slime_ingot>],[<industrialforegoing:plastic>,input_glass_pane,<industrialforegoing:plastic>],[<industrialforegoing:pink_slime_ingot>,<industrialforegoing:plastic>,<industrialforegoing:pink_slime_ingot>]]);
 }
 
 // All Laser Lenses
 val glass_panes = [<ore:paneGlassWhite>, <ore:paneGlassOrange>, <ore:paneGlassMagenta>, <ore:paneGlassLightBlue>, <ore:paneGlassYellow>, <ore:paneGlassLime>, <ore:paneGlassPink>, <ore:paneGlassGray>, <ore:paneGlassLightGray>, <ore:paneGlassCyan>, <ore:paneGlassPurple>, <ore:paneGlassBlue>, <ore:paneGlassBrown>, <ore:paneGlassGreen>, <ore:paneGlassRed>, <ore:paneGlassBlack>] as IIngredient[];
 for i in 0 to 16 {
-	addIFLaserLensRecipe(<industrialforegoing:laser_lens>.withDamage(i), glass_panes[i]);
-	recipes.remove(<industrialforegoing:laser_lens_inverted>.withDamage(i));
+    addIFLaserLensRecipe(<industrialforegoing:laser_lens>.withDamage(i), glass_panes[i]);
+    recipes.remove(<industrialforegoing:laser_lens_inverted>.withDamage(i));
 }
 
 function addIFConveyorUpgradeRecipe(output as IItemStack, center as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[<thermalfoundation:material:32>,<industrialforegoing:plastic>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,center,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<industrialforegoing:conveyor:*>,<thermalfoundation:material:32>]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[<thermalfoundation:material:32>,<industrialforegoing:plastic>,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,center,<thermalfoundation:material:32>],[<thermalfoundation:material:32>,<industrialforegoing:conveyor:*>,<thermalfoundation:material:32>]]);
 }
 
 // Extraction Conveyor Upgrade

@@ -69,8 +69,8 @@ recipes.remove(<galacticraftcore:machine2>);
 recipes.addShaped(<galacticraftcore:machine2>, [[<contenttweaker:tough_galactic_plating>,<mekanism:basicblock2:5>,<contenttweaker:tough_galactic_plating>],[<galacticraftcore:basic_item:14>,<galacticraftcore:machine:12>,<galacticraftcore:basic_item:14>],[<contenttweaker:tough_galactic_plating>,<mekanism:basicblock2:5>,<contenttweaker:tough_galactic_plating>]]);
 
 function addGalacticraftBasicCompressedRecipe(output as IItemStack, input_sheetmetal as IItemStack) {
-	mods.GalacticraftTweaker.removeCompressorRecipe(output);
-	mods.GalacticraftTweaker.addCompressorShapelessRecipe(output, input_sheetmetal,input_sheetmetal,input_sheetmetal,<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>,input_sheetmetal,input_sheetmetal,input_sheetmetal);
+    mods.GalacticraftTweaker.removeCompressorRecipe(output);
+    mods.GalacticraftTweaker.addCompressorShapelessRecipe(output, input_sheetmetal,input_sheetmetal,input_sheetmetal,<contenttweaker:tough_galactic_plating>,<contenttweaker:galactic_ingot>,<contenttweaker:tough_galactic_plating>,input_sheetmetal,input_sheetmetal,input_sheetmetal);
 }
 
 // Compressed Copper

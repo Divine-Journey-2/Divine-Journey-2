@@ -241,8 +241,8 @@ recipes.remove(<enderio:block_simple_wired_charger>);
 recipes.addShaped(<enderio:block_simple_wired_charger>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:258>,<enderio:item_material>,<thermalfoundation:material:258>],[<enderio:item_material:11>,<enderio:block_alloy>,<enderio:item_material:11>]]);
 
 function addEnderIOBaseMachineRecipe(output_item as IItemStack, side_item as IItemStack, bottom_item as IItemStack) {
-	recipes.remove(output_item);
-	recipes.addShaped(output_item, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[side_item,<enderio:item_material:1>,side_item],[<enderio:item_material:73>,bottom_item,<enderio:item_material:73>]]);
+    recipes.remove(output_item);
+    recipes.addShaped(output_item, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[side_item,<enderio:item_material:1>,side_item],[<enderio:item_material:73>,bottom_item,<enderio:item_material:73>]]);
 }
 
 // Alloy Smelter
@@ -281,39 +281,39 @@ addEnderIOBaseMachineRecipe(<enderio:block_vat>, <enderio:block_tank>, <enderio:
 recipes.remove(<enderio:block_tank:1>);
 recipes.addShaped("enderio_pressurized_fluid_tank", <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
 function(out, ins, cInfo) {
-	if(ins.tank.tag has "enderio:data") {
-		if(ins.tank.tag.memberGet("enderio:data") has "tank") {
-			if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
-				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
-			}
-			else {
-				return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-			}
-		} else {
-			return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-		}
-	} else {
-		return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-	}
+    if(ins.tank.tag has "enderio:data") {
+        if(ins.tank.tag.memberGet("enderio:data") has "tank") {
+            if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
+                return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
+            }
+            else {
+                return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+            }
+        } else {
+            return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+        }
+    } else {
+        return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+    }
 }, null);
 
 recipes.remove(<enderio:block_tank:1>);
 recipes.addHiddenShaped("enderio_pressurized_fluid_tank2", <enderio:block_tank:1>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}}), [[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>],[<enderio:block_dark_iron_bars>,<enderio:block_tank>.withTag({"enderio:data": {tank: {Empty: "", Capacity: 16000}}}).marked("tank"),<enderio:block_dark_iron_bars>],[<enderio:item_alloy_ingot:6>,<enderio:block_dark_iron_bars>,<enderio:item_alloy_ingot:6>]],
 function(out, ins, cInfo) {
-	if(ins.tank.tag has "enderio:data") {
-		if(ins.tank.tag.memberGet("enderio:data") has "tank") {
-			if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
-				return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
-			}
-			else {
-				return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-			}
-		} else {
-			return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-		}
-	} else {
-		return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
-	}
+    if(ins.tank.tag has "enderio:data") {
+        if(ins.tank.tag.memberGet("enderio:data") has "tank") {
+            if(ins.tank.tag.memberGet("enderio:data").tank has "FluidName" && ins.tank.tag.memberGet("enderio:data").tank has "Amount") {
+                return out.withTag({"enderio:data": {tank: {FluidName: ins.tank.tag.memberGet("enderio:data").tank.FluidName, Capacity: 32000, Amount: ins.tank.tag.memberGet("enderio:data").tank.Amount}}});
+            }
+            else {
+                return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+            }
+        } else {
+            return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+        }
+    } else {
+        return out.withTag({"enderio:data": {tank: {Empty: "", Capacity: 32000}}});
+    }
 }, null);
 
 // Combustion Generator
@@ -363,14 +363,14 @@ recipes.remove(<enderio:block_cap_bank:1>);
 recipes.addShaped(<enderio:block_cap_bank:1>, [[<enderio:item_alloy_ingot:6>,<enderio:item_basic_capacitor>,<enderio:item_alloy_ingot:6>],[<enderio:item_basic_capacitor>,<plustic:osgloglasblock>,<enderio:item_basic_capacitor>],[<enderio:item_alloy_ingot:6>,<enderio:item_basic_capacitor>,<enderio:item_alloy_ingot:6>]]);
 
 val enderIOCapBankUpgrade as IRecipeFunction = function(out, ins, cInfo) {
-	var total_energy = 0;
-	if(ins.left_capbank.tag has "enderio:energy") {
-		total_energy += ins.left_capbank.tag.memberGet("enderio:energy");
-	}
-	if(ins.right_capbank.tag has "enderio:energy") {
-		total_energy += ins.right_capbank.tag.memberGet("enderio:energy");
-	}
-	return out.updateTag({"enderio:energy": total_energy});
+    var total_energy = 0;
+    if(ins.left_capbank.tag has "enderio:energy") {
+        total_energy += ins.left_capbank.tag.memberGet("enderio:energy");
+    }
+    if(ins.right_capbank.tag has "enderio:energy") {
+        total_energy += ins.right_capbank.tag.memberGet("enderio:energy");
+    }
+    return out.updateTag({"enderio:energy": total_energy});
 };
 
 // Capacitor Bank
@@ -444,8 +444,8 @@ recipes.addShaped(<enderio:item_material:15> * 4, [[<enderio:item_alloy_ingot:2>
 mods.tconstruct.Casting.addTableRecipe(<enderio:item_material:15> * 4, <actuallyadditions:item_crystal:4>, <liquid:vibrant_alloy>, 1152, true, 60);
 
 function addEnderIOObeliskRecipe(output as IItemStack, top_input as IItemStack, mid_input as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[null,top_input,null],[<enderio:item_material:12>,mid_input,<enderio:item_material:12>],[<enderio:item_alloy_ingot:7>,<enderio:item_material:53>,<enderio:item_alloy_ingot:7>]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[null,top_input,null],[<enderio:item_material:12>,mid_input,<enderio:item_material:12>],[<enderio:item_alloy_ingot:7>,<enderio:item_material:53>,<enderio:item_alloy_ingot:7>]]);
 }
 
 // Attractor Obelisk
@@ -480,8 +480,8 @@ recipes.addShaped(<enderio:item_material:67> * 2, [[<enderio:item_material:36>,<
 recipes.addShaped(<enderio:item_material:54>, [[<enderio:item_alloy_endergy_ingot:2>,<enderio:item_material:67>,<enderio:item_alloy_endergy_ingot:2>],[<enderio:item_material:67>,<enderio:item_material:66>,<enderio:item_material:67>],[<enderio:item_alloy_endergy_ingot:2>,<enderio:item_material:67>,<enderio:item_alloy_endergy_ingot:2>]]);
 
 function addEnderIOEnhancedMachineRecipe(output as IItemStack, machine_input as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[machine_input,machine_input,machine_input],[<enderio:item_alloy_endergy_ingot:2>,machine_input,<enderio:item_alloy_endergy_ingot:2>],[<enderio:item_material:13>,<enderio:item_material:54>,<enderio:item_material:13>]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[machine_input,machine_input,machine_input],[<enderio:item_alloy_endergy_ingot:2>,machine_input,<enderio:item_alloy_endergy_ingot:2>],[<enderio:item_material:13>,<enderio:item_material:54>,<enderio:item_material:13>]]);
 }
 
 // Enhanced Alloy Smelter

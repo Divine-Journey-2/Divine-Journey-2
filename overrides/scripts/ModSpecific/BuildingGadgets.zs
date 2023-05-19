@@ -39,18 +39,18 @@ recipes.remove(<buildinggadgets:constructionpastecontainer>);
 recipes.addShaped(<buildinggadgets:constructionpastecontainer>, [[<thermalfoundation:material:32>,<thermalfoundation:material:32>,<thermalfoundation:material:32>],[<contenttweaker:energized_dark_ingot>,<buildinggadgets:constructionpaste>,<contenttweaker:energized_dark_ingot>],[<contenttweaker:energized_dark_ingot>,<buildinggadgets:constructionpaste>,<contenttweaker:energized_dark_ingot>]]);
 
 function pasteContainerTierIncrease(
-		name as string,
-		output as IItemStack,
-		priorContainer as IItemStack,
-		outsideItems as IItemStack,
-		centerItem as IItemStack
-	) {
+        name as string,
+        output as IItemStack,
+        priorContainer as IItemStack,
+        outsideItems as IItemStack,
+        centerItem as IItemStack
+    ) {
     recipes.remove(output);
     recipes.addShaped(name, output, [
-		[priorContainer.marked("container1"),outsideItems,priorContainer.marked("container2")],
-		[outsideItems,centerItem,outsideItems],
-		[priorContainer.marked("container3"),outsideItems,priorContainer.marked("container4")]
-	], function(out, ins, cInfo) {
+        [priorContainer.marked("container1"),outsideItems,priorContainer.marked("container2")],
+        [outsideItems,centerItem,outsideItems],
+        [priorContainer.marked("container3"),outsideItems,priorContainer.marked("container4")]
+    ], function(out, ins, cInfo) {
 
         var amount = 0 as IData;
 

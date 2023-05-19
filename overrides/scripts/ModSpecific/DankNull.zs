@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 print("STARTING DankNull.zs");
 
 function removeDankNullEasyRecipe(output as IItemStack, input_panel as IItemStack) {
-	recipes.removeShaped(output, [[null,input_panel,null],[input_panel,input_panel,input_panel],[null,input_panel,null]]);
+    recipes.removeShaped(output, [[null,input_panel,null],[input_panel,input_panel,input_panel],[null,input_panel,null]]);
 }
 
 // /dank/null/MK I

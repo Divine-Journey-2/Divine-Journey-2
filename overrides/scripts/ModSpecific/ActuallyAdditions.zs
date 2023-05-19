@@ -59,11 +59,11 @@ recipes.removeShaped(<actuallyadditions:item_battery>);
 recipes.addShaped(<actuallyadditions:item_battery>, [[null,<actuallyadditions:item_crystal:5>,null],[<actuallyadditions:item_crystal:4>,<actuallyadditions:item_misc:8>,<actuallyadditions:item_crystal:4>],[<actuallyadditions:item_crystal:4>,<actuallyadditions:item_crystal:4>,<actuallyadditions:item_crystal:4>]]);
 
 function actuallyBatteryUpgrade(input_battery_tag as IData, out as IItemStack) {
-	if(input_battery_tag has "Energy") {
-		return out.withTag(input_battery_tag);
-	} else {
-		return out;
-	}
+    if(input_battery_tag has "Energy") {
+        return out.withTag(input_battery_tag);
+    } else {
+        return out;
+    }
 }
 
 // Double Battery
@@ -280,7 +280,7 @@ recipes.addShapedMirrored(<actuallyadditions:item_drill:3>.withTag({Energy: 0}),
 // Vertical Digger
 recipes.remove(<actuallyadditions:block_miner>);
 for i in 0 to 16 {
-	recipes.addShaped(<actuallyadditions:block_miner>, [[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:block_misc:8>,<actuallyadditions:block_crystal_empowered:3>],[<actuallyadditions:block_misc:8>,<actuallyadditions:block_crystal_empowered>,<actuallyadditions:block_misc:8>],[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:item_drill>.withDamage(i).withTag({Energy: 250000}),<actuallyadditions:block_crystal_empowered:3>]]);
+    recipes.addShaped(<actuallyadditions:block_miner>, [[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:block_misc:8>,<actuallyadditions:block_crystal_empowered:3>],[<actuallyadditions:block_misc:8>,<actuallyadditions:block_crystal_empowered>,<actuallyadditions:block_misc:8>],[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:item_drill>.withDamage(i).withTag({Energy: 250000}),<actuallyadditions:block_crystal_empowered:3>]]);
 }
 
 // Shock Absorber
@@ -297,8 +297,8 @@ recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<contenttweaker:em
 
 // All colors of Lamps
 for i in 0 to 16 {
-	recipes.remove(<actuallyadditions:block_colored_lamp>.withDamage(i));
-	recipes.addShaped(<actuallyadditions:block_colored_lamp>.withDamage(i), [[<minecraft:redstone_lamp>,<actuallyadditions:item_crystal:1>,<minecraft:redstone_lamp>],[allDyes[i],<actuallyadditions:block_misc:2>,allDyes[i]],[<minecraft:redstone_lamp>,<actuallyadditions:item_crystal:1>,<minecraft:redstone_lamp>]]);
+    recipes.remove(<actuallyadditions:block_colored_lamp>.withDamage(i));
+    recipes.addShaped(<actuallyadditions:block_colored_lamp>.withDamage(i), [[<minecraft:redstone_lamp>,<actuallyadditions:item_crystal:1>,<minecraft:redstone_lamp>],[allDyes[i],<actuallyadditions:block_misc:2>,allDyes[i]],[<minecraft:redstone_lamp>,<actuallyadditions:item_crystal:1>,<minecraft:redstone_lamp>]]);
 }
 
 // Lamp Controller
@@ -391,8 +391,8 @@ recipes.removeShaped(<actuallyadditions:item_suction_ring>);
 recipes.addShapedMirrored(<actuallyadditions:item_suction_ring>, [[<actuallyadditions:item_crystal>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal:1>],[<enderio:item_magnet>,<actuallyadditions:item_misc:6>,<enderio:item_magnet>],[<actuallyadditions:item_crystal:1>,<actuallyadditions:item_crystal_empowered:5>,<actuallyadditions:item_crystal>]]);
 
 function addActuallyRingRecipe(output as IItemStack, corner_inputs as IIngredient, side_inputs as IIngredient, top_input as IIngredient, bottom_input as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[corner_inputs,top_input,corner_inputs],[side_inputs,<actuallyadditions:item_misc:6>,side_inputs],[corner_inputs,bottom_input,corner_inputs]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[corner_inputs,top_input,corner_inputs],[side_inputs,<actuallyadditions:item_misc:6>,side_inputs],[corner_inputs,bottom_input,corner_inputs]]);
 }
 
 // Ring of Speed
@@ -417,11 +417,11 @@ addActuallyRingRecipe(<actuallyadditions:item_potion_ring:9>, <minecraft:golden_
 recipes.remove(<actuallyadditions:item_potion_ring:8>);
 recipes.addShaped("actually_ring_of_invisibility", <actuallyadditions:item_potion_ring:8>, [[<minecraft:fermented_spider_eye>,<actuallyadditions:block_crystal_empowered:2>,<minecraft:fermented_spider_eye>],[<minecraft:potion>.withTag({Potion: "minecraft:long_invisibility"}),<actuallyadditions:item_potion_ring:9>.marked("ring"),<minecraft:potion>.withTag({Potion: "minecraft:long_invisibility"})],[<minecraft:fermented_spider_eye>,<thermalfoundation:glass:6>,<minecraft:fermented_spider_eye>]],
 function(out,ins,cInfo) {
-	if(ins.ring.tag has "Blaze") {
-		return out.withTag(ins.ring.tag);
-	} else {
-		return out;
-	}
+    if(ins.ring.tag has "Blaze") {
+        return out.withTag(ins.ring.tag);
+    } else {
+        return out;
+    }
 }, null);
 
 // Ring of Jump Boost
@@ -457,15 +457,15 @@ recipes.addShaped(<actuallyadditions:item_misc:19>, [[<minecraft:dragon_breath>,
 recipes.remove(<actuallyadditions:item_filling_wand>);
 recipes.addShaped("actually_handheld_filler", <actuallyadditions:item_filling_wand>, [[<enderio:item_alloy_ingot>,<rftools:shape_card>,<enderio:item_alloy_ingot>],[<actuallyadditions:block_crystal_empowered:3>,<rftools:screen>,<actuallyadditions:block_crystal_empowered:3>],[<enderio:item_alloy_ingot>,<actuallyadditions:item_battery_quintuple>.marked("battery"),<enderio:item_alloy_ingot>]],
 function(out,ins,cInfo) {
-	if(ins.battery.tag has "Energy") {
-		if(ins.battery.tag.Energy < 500000) {
-			return out.withTag(ins.battery.tag);
-		} else {
-			return out.withTag({Energy: 500000});
-		}
-	} else {
-		return out;
-	}
+    if(ins.battery.tag has "Energy") {
+        if(ins.battery.tag.Energy < 500000) {
+            return out.withTag(ins.battery.tag);
+        } else {
+            return out.withTag({Energy: 500000});
+        }
+    } else {
+        return out;
+    }
 }, null);
 
 // Traveler's Sack
@@ -476,11 +476,11 @@ recipes.addShaped(<actuallyadditions:item_bag>, [[<contenttweaker:industrial_lea
 recipes.remove(<actuallyadditions:item_void_bag>);
 recipes.addShaped("actually_void_sack", <actuallyadditions:item_void_bag>, [[null,<thermalfoundation:material:167>,null],[<actuallyadditions:block_crystal:3>,<actuallyadditions:item_bag>.marked("sack"),<actuallyadditions:block_crystal:3>],[null,<thermalfoundation:material:167>,null]],
 function(out,ins,cInfo) {
-	if(ins.sack.tag has "Filter") {
-		return out.withTag({Filter: ins.sack.tag.Filter, AutoInsert: ins.sack.tag.AutoInsert});
-	} else {
-		return out;
-	}
+    if(ins.sack.tag has "Filter") {
+        return out.withTag({Filter: ins.sack.tag.Filter, AutoInsert: ins.sack.tag.AutoInsert});
+    } else {
+        return out;
+    }
 }, null);
 
 // Player Probe
@@ -550,7 +550,7 @@ recipes.addShapeless(<actuallyadditions:item_resonant_rice>, [<actuallyadditions
 // Removing some items from the Ball of Fur Loot Table
 val AABallOfFurToRemove = [<minecraft:experience_bottle>,<minecraft:web>,<minecraft:diamond>,<minecraft:ender_pearl>,<minecraft:fish:3>,<actuallyadditions:item_solidified_experience>,<minecraft:vine>] as IItemStack[];
 for i in AABallOfFurToRemove {
-	mods.actuallyadditions.BallOfFur.removeReturn(i);
+    mods.actuallyadditions.BallOfFur.removeReturn(i);
 }
 
 // Leaf Blower
@@ -563,8 +563,8 @@ recipes.addShapedMirrored(<actuallyadditions:item_leaf_blower_advanced>, [[<actu
 
 // Removing Shards
 for i in 0 to 6 {
-	recipes.removeShapeless(<actuallyadditions:item_crystal_shard>.withDamage(i) * 9, [<actuallyadditions:item_crystal>.withDamage(i)]);
-	recipes.removeShaped(<actuallyadditions:item_crystal>.withDamage(i), [[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)]]);
+    recipes.removeShapeless(<actuallyadditions:item_crystal_shard>.withDamage(i) * 9, [<actuallyadditions:item_crystal>.withDamage(i)]);
+    recipes.removeShaped(<actuallyadditions:item_crystal>.withDamage(i), [[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)],[<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i),<actuallyadditions:item_crystal_shard>.withDamage(i)]]);
 }
 
 // Ethetic Stairs

@@ -33,9 +33,9 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<astralsorcery:blockcustomore>,
 
 // Marbles in general
 for i in 1 to 7 {
-	<ore:blockMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
-	<ore:stoneMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
-	mods.chisel.Carving.removeVariation("marble", <astralsorcery:blockmarble>.withDamage(i));
+    <ore:blockMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
+    <ore:stoneMarble>.remove(<astralsorcery:blockmarble>.withDamage(i));
+    mods.chisel.Carving.removeVariation("marble", <astralsorcery:blockmarble>.withDamage(i));
 }
 // Marble Bricks
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_bricks");
@@ -72,7 +72,7 @@ mods.chisel.Carving.removeGroup("sooty_marble");
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/marble_black_raw");
 recipes.remove(<astralsorcery:blockblackmarble>);
 for m in <ore:stoneMarble>.items {
-	mods.thermalexpansion.Transposer.addFillRecipe(<astralsorcery:blockblackmarble>, m, <liquid:skyfather> * 18, 2000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<astralsorcery:blockblackmarble>, m, <liquid:skyfather> * 18, 2000);
 }
 
 // Sooty Marble Bricks
@@ -274,47 +274,47 @@ null,null,<astralsorcery:blockinfusedwood:4>,<astralsorcery:blockinfusedwood:4>]
 // <astralsorcery:blockcollectorcrystal>.withCapNBT({astralsorcery: {cap_item_amulet_holder: {AS_Amulet_HolderLeast: -4822218405563622703, AS_Amulet_HolderMost: 433871007885182809}}})
 /*
 <astralsorcery:blockcollectorcrystal>.withTag(
-	{
-		astralsorcery:
-		{
-			constellationName: "astralsorcery.constellation.discidia",
-			crystalProperties:
-			{
-				collectiveCapability: 50,
-				size: 150,
-				fract: 0,
-				purity: 50,
-				sizeOverride: -1
-			},
-			collectorType: 0
-		},
-		BlockEntityTag:
-		{
-			ticksExisted: 0,
-			purity: 50,
-			sizeOverride: -1,
-			doesSeeSky: 1 as byte,
-			multiBlockPresent: 0 as byte,
-			collectorType: 0,
-			size: 150,
-			fract: 0,
-			playerRefMost: 433871007885182809 as long,
-			ForgeCaps:
-			{
-				"abyssalcraft:itemtransfer":
-				{
-					isRunning: 0 as byte,
-					configurations: []
-				}
-			},
-			constellationName: "astralsorcery.constellation.discidia",
-			id: "astralsorcery:tilecollectorcrystal",
-			playerRefLeast: -4822218405563622703 as long,
-			wasLinkedBefore: 0 as byte,
-			collect: 50,
-			linked: []
-		}
-	})
+    {
+        astralsorcery:
+        {
+            constellationName: "astralsorcery.constellation.discidia",
+            crystalProperties:
+            {
+                collectiveCapability: 50,
+                size: 150,
+                fract: 0,
+                purity: 50,
+                sizeOverride: -1
+            },
+            collectorType: 0
+        },
+        BlockEntityTag:
+        {
+            ticksExisted: 0,
+            purity: 50,
+            sizeOverride: -1,
+            doesSeeSky: 1 as byte,
+            multiBlockPresent: 0 as byte,
+            collectorType: 0,
+            size: 150,
+            fract: 0,
+            playerRefMost: 433871007885182809 as long,
+            ForgeCaps:
+            {
+                "abyssalcraft:itemtransfer":
+                {
+                    isRunning: 0 as byte,
+                    configurations: []
+                }
+            },
+            constellationName: "astralsorcery.constellation.discidia",
+            id: "astralsorcery:tilecollectorcrystal",
+            playerRefLeast: -4822218405563622703 as long,
+            wasLinkedBefore: 0 as byte,
+            collect: 50,
+            linked: []
+        }
+    })
 */
 
 // Collector Crystal (more difficult, one-time recipe)
@@ -424,13 +424,13 @@ mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:blockinfusedwood
 
 // Colored Lenses
 function addAstralSorceryLensRecipe(recipeName as string, output as IItemStack, input_item as IIngredient) {
-	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName, output, 600, 100,
-	[<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
-	<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
-	<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
-	input_item,input_item,input_item,input_item,
-	<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>]);
+    mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName);
+    mods.astralsorcery.Altar.addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/" + recipeName, output, 600, 100,
+    [<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+    <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+    <astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,<astralsorcery:itemcraftingcomponent:3>,
+    input_item,input_item,input_item,input_item,
+    <astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>]);
 }
 
 // Colored Lens: Ignition
@@ -533,7 +533,7 @@ function addAstralSorceryIrridescentAltarRecipe(name as string, output as IItemS
 
 var recipe_list = [i[1][1], i[1][2], i[1][3], i[2][1], i[2][2], i[2][3], i[3][1], i[3][2], i[3][3], i[0][0], i[0][4], i[4][0], i[4][4], i[0][1], i[0][3], i[1][0], i[1][4], i[3][0], i[3][4], i[4][1], i[4][3], i[0][2], i[2][0], i[2][4], i[4][2]] as IIngredient[];
 for item in additionals {
-	recipe_list += item;
+    recipe_list += item;
 }
 
 mods.astralsorcery.Altar.removeAltarRecipe(name);
@@ -545,7 +545,7 @@ function addAstralSorceryIrridescentAltarRecipeWithConstellation(name as string,
 
 var recipe_list = [i[1][1], i[1][2], i[1][3], i[2][1], i[2][2], i[2][3], i[3][1], i[3][2], i[3][3], i[0][0], i[0][4], i[4][0], i[4][4], i[0][1], i[0][3], i[1][0], i[1][4], i[3][0], i[3][4], i[4][1], i[4][3], i[0][2], i[2][0], i[2][4], i[4][2]] as IIngredient[];
 for item in additionals {
-	recipe_list += item;
+    recipe_list += item;
 }
 
 mods.astralsorcery.Altar.removeAltarRecipe(name);
@@ -563,12 +563,12 @@ addAstralSorceryIrridescentAltarRecipe("astralsorcery:shaped/internal/altar/cape
 
 // Resonating Wand Upgrades
 function addAstralSorceryResonatingWandUpgradeRecipe(name as string, output as IItemStack, special_input as IIngredient) {
-	addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/wand/" + name, output, 3000,
-		[[null,null,special_input,special_input,<actuallyadditions:block_crystal_empowered:2>],
-		[null,null,special_input,<astralsorcery:itemwand>,null],
-		[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
-		[null,<lightningcraft:ingot:2>,null,null,null],
-		[<astralsorcery:blockmarble:5>,null,null,null,null]], [], "astralsorcery.constellation." + name);
+    addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/wand/" + name, output, 3000,
+        [[null,null,special_input,special_input,<actuallyadditions:block_crystal_empowered:2>],
+        [null,null,special_input,<astralsorcery:itemwand>,null],
+        [null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
+        [null,<lightningcraft:ingot:2>,null,null,null],
+        [<astralsorcery:blockmarble:5>,null,null,null,null]], [], "astralsorcery.constellation." + name);
 
 }
 
@@ -635,12 +635,12 @@ addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/in
 [<bibliocraft:seat>,<astralsorcery:blockritualpedestal>,<astralsorcery:blockmapdrawingtable>,null,null]], [], "astralsorcery.constellation.lucerna");
 
 function addAstralSorceryIrradiantStarRecipe(name as string, output as IItemStack, special_input as IIngredient) {
-	addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/shiftingstar/enhanced/" + name, output, 3300,
-	[[<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>],
-	[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
-	[special_input,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}),<astralsorcery:itemcraftingcomponent:1>,special_input],
-	[null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
-	[<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>]], [], "astralsorcery.constellation." + name);
+    addAstralSorceryIrridescentAltarRecipeWithConstellation("astralsorcery:shaped/internal/altar/shiftingstar/enhanced/" + name, output, 3300,
+    [[<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>],
+    [null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
+    [special_input,<astralsorcery:itemcraftingcomponent:1>,<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}),<astralsorcery:itemcraftingcomponent:1>,special_input],
+    [null,null,<astralsorcery:itemcraftingcomponent:1>,null,null],
+    [<astralsorcery:itemusabledust>,null,special_input,null,<astralsorcery:itemusabledust>]], [], "astralsorcery.constellation." + name);
 
 }
 

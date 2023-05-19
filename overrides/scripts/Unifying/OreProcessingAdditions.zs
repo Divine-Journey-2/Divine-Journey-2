@@ -28,103 +28,103 @@ print("STARTING OreProcessingAdditions.zs");
 
 // Ingot/Gem -> Dust
 function addMaterialToDustCrushing(ingot as IItemStack, dust as IItemStack) {
-	recipes.addShapeless(dust, [ingot, <ore:dustPetrotheum>]);
-	addMaterialToDustCrushingWOPetrotheum(ingot, dust);
+    recipes.addShapeless(dust, [ingot, <ore:dustPetrotheum>]);
+    addMaterialToDustCrushingWOPetrotheum(ingot, dust);
 }
 
 // Ingot/Gem -> Dust, w/o Petrotheum
 function addMaterialToDustCrushingWOPetrotheum(ingot as IItemStack, dust as IItemStack) {
-	IECrusher.addRecipe(dust, ingot, 4000);
-	AACrusher.addRecipe(dust, ingot);
-	Grinder.addRecipe(dust, ingot, 4);
-	mods.thermalexpansion.Pulverizer.addRecipe(dust, ingot, 2000);
-	EUCrusher.add(dust, ingot);
-	mods.enderio.SagMill.addRecipe([dust], [1.0], ingot);
-	LightningCrusher.add(dust, ingot);
-	mods.mekanism.crusher.addRecipe(ingot, dust);
+    IECrusher.addRecipe(dust, ingot, 4000);
+    AACrusher.addRecipe(dust, ingot);
+    Grinder.addRecipe(dust, ingot, 4);
+    mods.thermalexpansion.Pulverizer.addRecipe(dust, ingot, 2000);
+    EUCrusher.add(dust, ingot);
+    mods.enderio.SagMill.addRecipe([dust], [1.0], ingot);
+    LightningCrusher.add(dust, ingot);
+    mods.mekanism.crusher.addRecipe(ingot, dust);
 }
 
 // Ore -> 2x Dust
 function addOreDoubling(ore as IItemStack, dust as IItemStack, ingot as IItemStack) {
-	recipes.addShapeless(dust * 2, [ore, <ore:dustPetrotheum>]);
-	recipes.addShapeless(ingot * 2, [ore, <ore:dustPetrotheum>, <ore:dustPyrotheum>]);
-	recipes.addShapeless(ingot, [ore, <ore:dustPyrotheum>]);
-	IECrusher.addRecipe(dust * 2, ore, 4000);
-	AACrusher.addRecipe(dust * 2, ore);
-	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
-	Grinder.addRecipe(dust, ore, 4, dust, 0.9);
-	mods.thermalexpansion.Pulverizer.addRecipe(dust * 2, ore, 4000);
-	EUCrusher.add(dust * 2, ore);
-	mods.enderio.SagMill.addRecipe([dust * 2], [1.0], ore);
-	LightningCrusher.add(dust * 2, ore);
-	mods.mekanism.enrichment.addRecipe(ore, dust * 2);
-	mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
+    recipes.addShapeless(dust * 2, [ore, <ore:dustPetrotheum>]);
+    recipes.addShapeless(ingot * 2, [ore, <ore:dustPetrotheum>, <ore:dustPyrotheum>]);
+    recipes.addShapeless(ingot, [ore, <ore:dustPyrotheum>]);
+    IECrusher.addRecipe(dust * 2, ore, 4000);
+    AACrusher.addRecipe(dust * 2, ore);
+    mods.astralsorcery.Grindstone.addRecipe(ore, dust);
+    Grinder.addRecipe(dust, ore, 4, dust, 0.9);
+    mods.thermalexpansion.Pulverizer.addRecipe(dust * 2, ore, 4000);
+    EUCrusher.add(dust * 2, ore);
+    mods.enderio.SagMill.addRecipe([dust * 2], [1.0], ore);
+    LightningCrusher.add(dust * 2, ore);
+    mods.mekanism.enrichment.addRecipe(ore, dust * 2);
+    mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
 }
 
 // Ore -> 2x Ingot / 3x Ingot (InductionSmelter)
 function addInductionSmelterOreMultiplying(ore as IItemStack, ingot as IItemStack) {
-	mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 2, <minecraft:sand:*>, ore, 4000, <thermalfoundation:material:865>, 5);
-	mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 3, <thermalfoundation:material:865>, ore, 4000, <thermalfoundation:material:864>, 75);
-	mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 3, <thermalfoundation:material:866>, ore, 4000, <thermalfoundation:material:865>, 75);
+    mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 2, <minecraft:sand:*>, ore, 4000, <thermalfoundation:material:865>, 5);
+    mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 3, <thermalfoundation:material:865>, ore, 4000, <thermalfoundation:material:864>, 75);
+    mods.thermalexpansion.InductionSmelter.addRecipe(ingot * 3, <thermalfoundation:material:866>, ore, 4000, <thermalfoundation:material:865>, 75);
 }
 
 // Dust -> Ingot
 function addDustSmelting(dust as IItemStack, ingot as IItemStack) {
-	recipes.addShapeless(ingot, [dust, <ore:dustPyrotheum>]);
-	furnace.addRecipe(ingot, dust);
-	mods.immersiveengineering.ArcFurnace.addRecipe(ingot, dust, null, 100, 512);
-	mods.thermalexpansion.RedstoneFurnace.addRecipe(ingot, dust, 2000);
-	mods.thermalexpansion.InductionSmelter.addRecipe(ingot, <minecraft:sand:*>, dust, 1000, <thermalfoundation:material:864>, 25);
-	//mods.enderio.AlloySmelter.addRecipe(ingot, [dust], 2000);
+    recipes.addShapeless(ingot, [dust, <ore:dustPyrotheum>]);
+    furnace.addRecipe(ingot, dust);
+    mods.immersiveengineering.ArcFurnace.addRecipe(ingot, dust, null, 100, 512);
+    mods.thermalexpansion.RedstoneFurnace.addRecipe(ingot, dust, 2000);
+    mods.thermalexpansion.InductionSmelter.addRecipe(ingot, <minecraft:sand:*>, dust, 1000, <thermalfoundation:material:864>, 25);
+    //mods.enderio.AlloySmelter.addRecipe(ingot, [dust], 2000);
 }
 
 // Ore -> 1x Ingot (Smelting)
 function addOreToIngotSmelting(ore as IItemStack, ingot as IItemStack) {
-	furnace.addRecipe(ingot, ore);
-	mods.thermalexpansion.RedstoneFurnace.addRecipe(ingot, ore, 2000);
-	mods.enderio.AlloySmelter.addRecipe(ingot, [ore], 2000);
+    furnace.addRecipe(ingot, ore);
+    mods.thermalexpansion.RedstoneFurnace.addRecipe(ingot, ore, 2000);
+    mods.enderio.AlloySmelter.addRecipe(ingot, [ore], 2000);
 }
 
 // Ore -> 2x Gem
 function addOreToGemProcessing(ore as IItemStack, gem as IItemStack, secondaryOutput as IItemStack, gemAmount as int, starlightInfusionGemAmount as int) {
-	recipes.addShapeless(gem * gemAmount, [ore,<ore:dustPetrotheum>]);
-	furnace.addRecipe(gem, ore);
-	mods.astralsorcery.StarlightInfusion.addInfusion(ore, gem * starlightInfusionGemAmount, false, 1, 200);
-	AACrusher.addRecipe(gem * gemAmount, ore, secondaryOutput, 50);
-	mods.mekanism.enrichment.addRecipe(ore, gem * gemAmount);
-	mods.thermalexpansion.RedstoneFurnace.addRecipe(gem, ore, 2000);
-	mods.thermalexpansion.Pulverizer.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 15);
-	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.15);
-	EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.15);
-	mods.enderio.SagMill.addRecipe([gem * gemAmount], [1.0], ore, "NONE", 4000);
+    recipes.addShapeless(gem * gemAmount, [ore,<ore:dustPetrotheum>]);
+    furnace.addRecipe(gem, ore);
+    mods.astralsorcery.StarlightInfusion.addInfusion(ore, gem * starlightInfusionGemAmount, false, 1, 200);
+    AACrusher.addRecipe(gem * gemAmount, ore, secondaryOutput, 50);
+    mods.mekanism.enrichment.addRecipe(ore, gem * gemAmount);
+    mods.thermalexpansion.RedstoneFurnace.addRecipe(gem, ore, 2000);
+    mods.thermalexpansion.Pulverizer.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 15);
+    IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.15);
+    EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.15);
+    mods.enderio.SagMill.addRecipe([gem * gemAmount], [1.0], ore, "NONE", 4000);
 }
 
 // Gem -> Dust
 function addGemToDustProcessing(gem as IItemStack, dust as IItemStack, secondaryOutput as IItemStack, dustAmount as int) {
-	AACrusher.addRecipe(dust * dustAmount, gem, secondaryOutput, 50);
-	mods.mekanism.enrichment.addRecipe(gem, dust * dustAmount);
-	mods.thermalexpansion.RedstoneFurnace.addRecipe(dust, gem, 2000);
-	mods.thermalexpansion.Pulverizer.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 15);
-	IECrusher.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 0.15);
-	EUCrusher.add(dust * dustAmount, gem, secondaryOutput, 0.15);
-	mods.enderio.SagMill.addRecipe([dust * dustAmount], [1.0], gem, "NONE", 4000);
+    AACrusher.addRecipe(dust * dustAmount, gem, secondaryOutput, 50);
+    mods.mekanism.enrichment.addRecipe(gem, dust * dustAmount);
+    mods.thermalexpansion.RedstoneFurnace.addRecipe(dust, gem, 2000);
+    mods.thermalexpansion.Pulverizer.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 15);
+    IECrusher.addRecipe(dust * dustAmount, gem, 4000, secondaryOutput, 0.15);
+    EUCrusher.add(dust * dustAmount, gem, secondaryOutput, 0.15);
+    mods.enderio.SagMill.addRecipe([dust * dustAmount], [1.0], gem, "NONE", 4000);
 }
 
 
 // Putting together Ore Doubling, Ore Smelting, Ingot Smelting, Ingot Crushing, InductionSmelter Ore Multiplying
 function addOreProcessingWithDustAndIngot(ore as IItemStack, dust as IItemStack, ingot as IItemStack) {
-	addOreDoubling(ore, dust, ingot);
-	addOreToIngotSmelting(ore, ingot);
-	addMaterialToDustCrushing(ingot, dust);
-	addDustSmelting(dust, ingot);
-	addInductionSmelterOreMultiplying(ore, ingot);
+    addOreDoubling(ore, dust, ingot);
+    addOreToIngotSmelting(ore, ingot);
+    addMaterialToDustCrushing(ingot, dust);
+    addDustSmelting(dust, ingot);
+    addInductionSmelterOreMultiplying(ore, ingot);
 }
 
 // Adding Dust & Ore Doubling for materials that don't have one
 function addDustProcessing(ore as IItemStack, dust as IItemStack, ingot as IItemStack) {
-	addOreDoubling(ore, dust, ingot);
-	addMaterialToDustCrushing(ingot, dust);
-	addDustSmelting(dust, ingot);
+    addOreDoubling(ore, dust, ingot);
+    addMaterialToDustCrushing(ingot, dust);
+    addDustSmelting(dust, ingot);
 }
 
 // Cincinnasite
@@ -160,16 +160,16 @@ mods.mekanism.crusher.addRecipe(<actuallyadditions:item_misc:5>, <actuallyadditi
 // Black Quartz
 val allBlackQuartzOres = [<actuallyadditions:block_misc:3>, <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3:*>, <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3:*>, <undergroundbiomes:sedimentary_stone_actuallyadditions_block_misc_3:*>] as IItemStack[];
 for ore in allBlackQuartzOres {
-	mods.mekanism.enrichment.addRecipe(ore, <actuallyadditions:item_misc:5> * 2);
+    mods.mekanism.enrichment.addRecipe(ore, <actuallyadditions:item_misc:5> * 2);
 }
 var allBlackQuartzOresListed = [<actuallyadditions:block_misc:3>] as IItemStack[];
 for i in 0 to 8 {
-	allBlackQuartzOresListed += <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3>.withDamage(i);
-	allBlackQuartzOresListed += <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3>.withDamage(i);
-	allBlackQuartzOresListed += <undergroundbiomes:sedimentary_stone_actuallyadditions_block_misc_3>.withDamage(i);
+    allBlackQuartzOresListed += <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3>.withDamage(i);
+    allBlackQuartzOresListed += <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3>.withDamage(i);
+    allBlackQuartzOresListed += <undergroundbiomes:sedimentary_stone_actuallyadditions_block_misc_3>.withDamage(i);
 }
 for ore in allBlackQuartzOresListed {
-	EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
+    EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
 }
 
 mods.enderio.SagMill.addRecipe([<actuallyadditions:item_misc:5> * 4], [1.0], <actuallyadditions:block_misc:2>, "NONE");
@@ -185,7 +185,7 @@ mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:mat
 
 // Sand -> Gravel in the Pulverizer
 for s in <ore:sand>.items {
-	mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gravel>, s, 2000);
+    mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gravel>, s, 2000);
 }
 
 // Zanite
@@ -209,7 +209,7 @@ addOreProcessingWithDustAndIngot(<galacticraftplanets:asteroids_block:4>, <galac
 // Tin
 val additionalTinOres = [<erebus:ore_tin>, <galacticraftcore:basic_block_core:6>, <galacticraftplanets:mars:1>, <galacticraftplanets:venus:11>, <galacticraftcore:basic_block_moon:1>, <abyssalcraft:abytinore>] as IItemStack[];
 for ore in additionalTinOres {
-	addOreToIngotSmelting(ore, <thermalfoundation:material:129>);
+    addOreToIngotSmelting(ore, <thermalfoundation:material:129>);
 }
 
 // Aluminum
@@ -218,7 +218,7 @@ addOreToIngotSmelting(<erebus:ore_aluminium>,<thermalfoundation:material:132>);
 // Copper
 val additionalCopperOres = [<erebus:ore_copper>, <galacticraftcore:basic_block_core:5>, <galacticraftcore:basic_block_moon>, <galacticraftplanets:mars>, <galacticraftplanets:venus:7>, <abyssalcraft:abycopore>, <immersiveengineering:ore>] as IItemStack[];
 for ore in additionalCopperOres {
-	addOreToIngotSmelting(ore,<thermalfoundation:material:128>);
+    addOreToIngotSmelting(ore,<thermalfoundation:material:128>);
 }
 
 // Dark Dust
@@ -297,16 +297,16 @@ mods.actuallyadditions.Crusher.removeRecipe(<divinerpg:mortum_gem>);
 addGemToDustProcessing(<divinerpg:mortum_ore>, <divinerpg:mortum_fragments>, null, 3);
 
 function divinerpg_gem_to_dust(gem as IItemStack, dust as IItemStack) {
-	mods.thermalexpansion.Pulverizer.removeRecipe(gem);
-	mods.actuallyadditions.Crusher.removeRecipe(dust);
-	addGemToDustProcessing(gem, dust, null, 2);
+    mods.thermalexpansion.Pulverizer.removeRecipe(gem);
+    mods.actuallyadditions.Crusher.removeRecipe(dust);
+    addGemToDustProcessing(gem, dust, null, 2);
 }
 
 function divinerpg_dust_additions(plants as IItemStack[], gem as IItemStack, dust as IItemStack) {
-	for plant in plants {
-		addGemToDustProcessing(plant, dust, null, 4);
-	}
-	divinerpg_gem_to_dust(gem, dust);
+    for plant in plants {
+        addGemToDustProcessing(plant, dust, null, 4);
+    }
+    divinerpg_gem_to_dust(gem, dust);
 }
 
 // Sun Blossom, Eden Brush, Sunbloom, Eden Gem -> Eden Dust
@@ -327,19 +327,19 @@ divinerpg_dust_additions([<divinerpg:demon_brambles>, <divinerpg:mortum_brush>, 
 // Coralium Ore -> Coralium Gems
 val aby_coralium_ores = [<abyssalcraft:coraliumore>, <abyssalcraft:abycorore>] as IItemStack[];
 for aby_ore in aby_coralium_ores {
-	mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:coralium> * 3, false, 1, 200);
-	mods.mekanism.enrichment.addRecipe(aby_ore, <abyssalcraft:coralium> * 2);
-	EUCrusher.add(<abyssalcraft:coralium> * 2, aby_ore, null, 0.15);
-	mods.enderio.SagMill.addRecipe([<abyssalcraft:coralium> * 2], [1.0], aby_ore, "NONE", 4000);
+    mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:coralium> * 3, false, 1, 200);
+    mods.mekanism.enrichment.addRecipe(aby_ore, <abyssalcraft:coralium> * 2);
+    EUCrusher.add(<abyssalcraft:coralium> * 2, aby_ore, null, 0.15);
+    mods.enderio.SagMill.addRecipe([<abyssalcraft:coralium> * 2], [1.0], aby_ore, "NONE", 4000);
 }
 
 // Abyssalnite Ore -> Abyssalnite Dust/Ingot
 val aby_abyssalnite_ores = [<abyssalcraft:abyore>, <abyssalcraft:abydreadore>] as IItemStack[];
 for aby_ore in aby_abyssalnite_ores {
-	Grinder.addRecipe(<acintegration:dust>, aby_ore, 4, <acintegration:dust>, 0.9);
-	mods.enderio.SagMill.addRecipe([<acintegration:dust> * 2], [1.0], aby_ore);
-	mods.mekanism.enrichment.addRecipe(aby_ore, <acintegration:dust> * 2);
-	mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:abyingot> * 3, false, 1, 200);
+    Grinder.addRecipe(<acintegration:dust>, aby_ore, 4, <acintegration:dust>, 0.9);
+    mods.enderio.SagMill.addRecipe([<acintegration:dust> * 2], [1.0], aby_ore);
+    mods.mekanism.enrichment.addRecipe(aby_ore, <acintegration:dust> * 2);
+    mods.astralsorcery.StarlightInfusion.addInfusion(aby_ore, <abyssalcraft:abyingot> * 3, false, 1, 200);
 }
 addOreDoubling(<abyssalcraft:dreadore>, <acintegration:dust>, <abyssalcraft:abyingot>);
 
@@ -392,9 +392,9 @@ mods.mekanism.enrichment.removeRecipe(<mysticalworld:amethyst_ore>);
 mods.mekanism.enrichment.removeRecipe(<bewitchment:amethyst_ore>);
 mods.mekanism.enrichment.addRecipe(<ore:oreAmethyst>, <mysticalworld:amethyst_gem> * 2);
 for amethyst_ore in <ore:oreAmethyst>.items {
-	mods.thermalexpansion.RedstoneFurnace.removeRecipe(amethyst_ore);
-	mods.thermalexpansion.RedstoneFurnace.addRecipe(<mysticalworld:amethyst_gem>, amethyst_ore, 2000);
-	EUCrusher.add(<mysticalworld:amethyst_gem> * 2, amethyst_ore, null, 0.15);
+    mods.thermalexpansion.RedstoneFurnace.removeRecipe(amethyst_ore);
+    mods.thermalexpansion.RedstoneFurnace.addRecipe(<mysticalworld:amethyst_gem>, amethyst_ore, 2000);
+    EUCrusher.add(<mysticalworld:amethyst_gem> * 2, amethyst_ore, null, 0.15);
 }
 IECrusher.removeRecipe(<bewitchment:amethyst>);
 IECrusher.addRecipe(<mysticalworld:amethyst_gem> * 2, <ore:oreAmethyst>, 4000, null, 0.15);
@@ -445,36 +445,36 @@ mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:64>);
 AACrusher.addRecipe(<thermalfoundation:material:64>, <thermalfoundation:material:128>);
 AACrusher.addRecipe(<thermalfoundation:material:64> * 4, <bno:ore_nethercopper>, <thermalfoundation:material:1>, 20);
 for copper_ore in <ore:oreCopper>.items {
-	AACrusher.addRecipe(<thermalfoundation:material:64> * 2, copper_ore, <thermalfoundation:material:1>, 20);
+    AACrusher.addRecipe(<thermalfoundation:material:64> * 2, copper_ore, <thermalfoundation:material:1>, 20);
 }
 
 mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:65>);
 AACrusher.addRecipe(<thermalfoundation:material:65>, <thermalfoundation:material:129>);
 AACrusher.addRecipe(<thermalfoundation:material:65> * 4, <bno:ore_nethertin>, <thermalfoundation:material>, 20);
 for tin_ore in <ore:oreTin>.items {
-	AACrusher.addRecipe(<thermalfoundation:material:65> * 2, tin_ore, <thermalfoundation:material>, 20);
+    AACrusher.addRecipe(<thermalfoundation:material:65> * 2, tin_ore, <thermalfoundation:material>, 20);
 }
 
 mods.actuallyadditions.Crusher.removeRecipe(<minecraft:redstone>);
 AACrusher.addRecipe(<minecraft:redstone> * 6, <bno:ore_netherredstone>, <thermalfoundation:material:866>, 25);
 for redstone_ore in <ore:oreRedstone>.items {
-	AACrusher.addRecipe(<minecraft:redstone> * 6, redstone_ore, <thermalfoundation:material:866>, 25);
+    AACrusher.addRecipe(<minecraft:redstone> * 6, redstone_ore, <thermalfoundation:material:866>, 25);
 }
 
 function addNetherOreToGemProcessing(ore as IItemStack, dust as IItemStack, gem as IItemStack, dustAmount as int, gemAmount as int, secondaryOutput as IItemStack) {
-	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.1);
-	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
-	EUCrusher.add(gem * gemAmount, ore, gem, 0.2f);
-	LightningCrusher.add(dust * dustAmount, ore);
-	mods.astralsorcery.StarlightInfusion.addInfusion(ore, gem * gemAmount, false, 1, 200);
+    IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.1);
+    mods.astralsorcery.Grindstone.addRecipe(ore, dust);
+    EUCrusher.add(gem * gemAmount, ore, gem, 0.2f);
+    LightningCrusher.add(dust * dustAmount, ore);
+    mods.astralsorcery.StarlightInfusion.addInfusion(ore, gem * gemAmount, false, 1, 200);
 }
 
 function addNetherOreToIngotProcessing(ore as IItemStack, dust as IItemStack, ingot as IItemStack, secondaryOutput as IItemStack) {
-	IECrusher.addRecipe(dust * 2, ore, 4000, secondaryOutput, 0.1);
-	mods.astralsorcery.Grindstone.addRecipe(ore, dust);
-	EUCrusher.add(dust * 2, ore, secondaryOutput, 0.1f);
-	LightningCrusher.add(dust * 2, ore);
-	mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
+    IECrusher.addRecipe(dust * 2, ore, 4000, secondaryOutput, 0.1);
+    mods.astralsorcery.Grindstone.addRecipe(ore, dust);
+    EUCrusher.add(dust * 2, ore, secondaryOutput, 0.1f);
+    LightningCrusher.add(dust * 2, ore);
+    mods.astralsorcery.StarlightInfusion.addInfusion(ore, ingot * 3, false, 1, 200);
 }
 
 addNetherOreToGemProcessing(<bno:ore_netheremerald>, <actuallyadditions:item_dust:3>, <minecraft:emerald>, 3, 2, null);
@@ -493,13 +493,13 @@ addNetherOreToIngotProcessing(<bno:ore_nethercopper>, <thermalfoundation:materia
 addNetherOreToIngotProcessing(<bno:ore_nethertin>, <thermalfoundation:material:65>, <thermalfoundation:material:129>, null);
 
 function addAdditionalNetherGemProcessing(ore as IItemStack, gem as IItemStack, gemAmount as int, secondaryOutput as IItemStack) {
-	IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.4);
-	AACrusher.addRecipe(gem * gemAmount, ore, secondaryOutput, 0.4);
-	mods.astralsorcery.Grindstone.addRecipe(ore, gem);
-	Grinder.addRecipe(gem, ore, 4, gem, 0.9);
-	EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.4f);
-	LightningCrusher.add(gem * gemAmount, ore);
-	mods.mekanism.enrichment.addRecipe(ore, gem * gemAmount);
+    IECrusher.addRecipe(gem * gemAmount, ore, 4000, secondaryOutput, 0.4);
+    AACrusher.addRecipe(gem * gemAmount, ore, secondaryOutput, 0.4);
+    mods.astralsorcery.Grindstone.addRecipe(ore, gem);
+    Grinder.addRecipe(gem, ore, 4, gem, 0.9);
+    EUCrusher.add(gem * gemAmount, ore, secondaryOutput, 0.4f);
+    LightningCrusher.add(gem * gemAmount, ore);
+    mods.mekanism.enrichment.addRecipe(ore, gem * gemAmount);
 }
 
 addAdditionalNetherGemProcessing(<thermalfoundation:ore_fluid:3>,<thermalfoundation:material:894>,3,<thermalfoundation:material:771>);
@@ -663,7 +663,7 @@ AACrusher.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>);
 mods.astralsorcery.Grindstone.addRecipe(<ore:oreDimensionalShard>, <rftools:dimensional_shard>);
 Grinder.addRecipe(<rftools:dimensional_shard>, <ore:oreDimensionalShard>, 4, <rftools:dimensional_shard>, 0.9);
 /*for ds in <ore:oreDimensionalShard>.items {
-	mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>, 4000, <rftools:dimensional_shard> * 4, 50);
+    mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>, 4000, <rftools:dimensional_shard> * 4, 50);
 }*/
 mods.thermalexpansion.Pulverizer.addRecipe(<rftools:dimensional_shard> * 4, <ore:oreDimensionalShard>.firstItem, 4000, <rftools:dimensional_shard> * 4, 50);
 EUCrusher.add(<rftools:dimensional_shard> * 4, <rftools:dimensional_shard_ore>);
@@ -726,98 +726,98 @@ val UBTinOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin
 val UBIronOres = [<undergroundbiomes:igneous_stone_iron_ore:*>,<undergroundbiomes:metamorphic_stone_iron_ore:*>,<undergroundbiomes:sedimentary_stone_iron_ore:*>] as IItemStack[];
 
 for o in UBLeadOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:67> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:67> * 2);
 }
 for o in UBCertusQuartzOres {
-	mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:0> * 4);
+    mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:0> * 4);
 }
 for o in UBChargedCertusQuartzOres {
-	mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:1> * 4);
+    mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:1> * 4);
 }
 for o in UBAmethystOres {
-	mods.mekanism.enrichment.addRecipe(o, <mysticalworld:amethyst_gem> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <mysticalworld:amethyst_gem> * 2);
 }
 for o in UBNickelOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:69> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:69> * 2);
 }
 for o in UBOsmiumOres {
-	mods.mekanism.enrichment.addRecipe(o, <mekanism:dust:2> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <mekanism:dust:2> * 2);
 }
 for o in UBSilverOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:66> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:66> * 2);
 }
 for o in UBGoldOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:1> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:1> * 2);
 }
 for o in UBQuartzOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:quartz> * 6);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:quartz> * 6);
 }
 for o in UBAmberOres {
-	mods.mekanism.enrichment.addRecipe(o, <thaumcraft:amber> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thaumcraft:amber> * 2);
 }
 for o in UBAluminumOres {
-	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:68> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:68> * 2);
 }
 for o in UBLapisOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:dye:4> * 12);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:dye:4> * 12);
 }
 //for o in UBMithrilOres {
-//	mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
+//    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
 //}
 for o in UBRedstoneOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
 }
 for o in UBDimensionalShardOres {
-	mods.mekanism.enrichment.addRecipe(o, <rftools:dimensional_shard> * 4);
+    mods.mekanism.enrichment.addRecipe(o, <rftools:dimensional_shard> * 4);
 }
 for o in UBDiamondOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:diamond> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:diamond> * 2);
 }
 for o in UBDraconiumOres {
-	mods.mekanism.enrichment.addRecipe(o, <draconicevolution:draconium_dust> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <draconicevolution:draconium_dust> * 2);
 }
 for o in UBCoalOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:coal> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:coal> * 2);
 }
 for o in UBEmeraldOres {
-	mods.mekanism.enrichment.addRecipe(o, <minecraft:emerald> * 2);
+    mods.mekanism.enrichment.addRecipe(o, <minecraft:emerald> * 2);
 }
 
 // UB Ores -> Purification Chamber, Chemical Injection Chamber, Chemical Dissolution Chamber
 for o in UBLeadOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:6> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:6> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:lead> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:6> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:6> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:lead> * 1000);
 }
 for o in UBOsmiumOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:2> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:2> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:osmium> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:2> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:2> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:osmium> * 1000);
 }
 for o in UBSilverOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:5> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:5> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:silver> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:5> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:5> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:silver> * 1000);
 }
 for o in UBCopperOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:3> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:3> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:copper> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:3> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:3> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:copper> * 1000);
 }
 for o in UBGoldOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:1> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:1> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:gold> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:1> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:1> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:gold> * 1000);
 }
 for o in UBTinOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:4> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:4> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:tin> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:4> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:4> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:tin> * 1000);
 }
 for o in UBIronOres {
-	mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:0> * 3);
-	mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:0> * 4);
-	mods.mekanism.chemical.dissolution.addRecipe(o, <gas:iron> * 1000);
+    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:0> * 3);
+    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:0> * 4);
+    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:iron> * 1000);
 }
 
 // UB Inferium Ores
@@ -828,7 +828,7 @@ AACrusher.addRecipe(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
 Grinder.addRecipe(<mysticalagriculture:crafting> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting>, 0.9);
 LightningCrusher.add(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
 for o in UBInferiumOres {
-	mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting> * 4);
+    mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting> * 4);
 }
 mods.mekanism.enrichment.addRecipe(<ore:oreInferium>, <mysticalagriculture:crafting> * 4);
 
@@ -840,7 +840,7 @@ AACrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
 Grinder.addRecipe(<mysticalagriculture:crafting:5> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting:5>, 0.9);
 LightningCrusher.add(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
 for o in UBProsperityOres {
-	mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting:5> * 4);
+    mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting:5> * 4);
 }
 mods.mekanism.enrichment.addRecipe(<ore:oreProsperity>, <mysticalagriculture:crafting:5> * 4);
 
@@ -910,11 +910,11 @@ mods.mekanism.crusher.addRecipe(<thermalfoundation:material:2052>, <thermalfound
 // Certus Quartz Dust from Certus Quartz
 val certusQuartzCrystals = [<appliedenergistics2:material>, <appliedenergistics2:material:1>] as IItemStack[];
 for c in certusQuartzCrystals {
-	recipes.addShapeless(<appliedenergistics2:material:2>, [c, <ore:dustPetrotheum>]);
-	IECrusher.addRecipe(<appliedenergistics2:material:2>, c, 4000);
-	AACrusher.addRecipe(<appliedenergistics2:material:2>, c);
-	EUCrusher.add(<appliedenergistics2:material:2>, c);
-	LightningCrusher.add(<appliedenergistics2:material:2>, c);
+    recipes.addShapeless(<appliedenergistics2:material:2>, [c, <ore:dustPetrotheum>]);
+    IECrusher.addRecipe(<appliedenergistics2:material:2>, c, 4000);
+    AACrusher.addRecipe(<appliedenergistics2:material:2>, c);
+    EUCrusher.add(<appliedenergistics2:material:2>, c);
+    LightningCrusher.add(<appliedenergistics2:material:2>, c);
 }
 Grinder.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 4);
 mods.thermalexpansion.Pulverizer.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>, 2000);
@@ -957,11 +957,11 @@ AACrusher.addRecipe(<minecraft:diamond> * 4, <bno:ore_netherdiamond>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:diamond_horse_armor>);
 val crushableDiamondArmors = [<minecraft:diamond_horse_armor>,<atum:camel_diamond_armor>,<atum:desert_wolf_diamond_armor>] as IItemStack[];
 for a in crushableDiamondArmors {
-	AACrusher.addRecipe(<minecraft:diamond> * 4, a);
-	IECrusher.addRecipe(<minecraft:diamond> * 4, a, 6000);
-	EUCrusher.add(<minecraft:diamond> * 4, a);
-	mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 4], [100], a, "NONE", 6000);
-	mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, a, 6000);
+    AACrusher.addRecipe(<minecraft:diamond> * 4, a);
+    IECrusher.addRecipe(<minecraft:diamond> * 4, a, 6000);
+    EUCrusher.add(<minecraft:diamond> * 4, a);
+    mods.enderio.SagMill.addRecipe([<minecraft:diamond> * 4], [100], a, "NONE", 6000);
+    mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond> * 4, a, 6000);
 }
 
 // Diamond Gloves
@@ -980,13 +980,13 @@ furnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:
 mods.actuallyadditions.Crusher.removeRecipe(<thermalfoundation:material:72>);
 mods.actuallyadditions.Crusher.addRecipe(<thermalfoundation:material:72>, <thermalfoundation:material:136>);
 for mithrilOre in <ore:oreMithril>.items {
-	mods.thermalexpansion.Pulverizer.removeRecipe(mithrilOre);
-	//Squeezer.removeRecipe(mithrilOre, <thermalfoundation:material:72>, 1.0, <thermalfoundation:material:72>, 0.75);
-	//MechanicalSqueezer.removeRecipe(mithrilOre, <thermalfoundation:material:72> * 2, 1.0, <thermalfoundation:material:72>, 0.5);
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, mithrilOre);
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, mithrilOre);
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, mithrilOre);
-	mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, mithrilOre);
+    mods.thermalexpansion.Pulverizer.removeRecipe(mithrilOre);
+    //Squeezer.removeRecipe(mithrilOre, <thermalfoundation:material:72>, 1.0, <thermalfoundation:material:72>, 0.75);
+    //MechanicalSqueezer.removeRecipe(mithrilOre, <thermalfoundation:material:72> * 2, 1.0, <thermalfoundation:material:72>, 0.5);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, mithrilOre);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, mithrilOre);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, mithrilOre);
+    mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, mithrilOre);
 }
 //Squeezer.removeRecipe(<thermalfoundation:material:72>); // removed in config/intergrateddynamics/_override/squeezer_ores.xml
 

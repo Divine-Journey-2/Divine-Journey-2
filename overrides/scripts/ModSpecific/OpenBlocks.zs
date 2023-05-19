@@ -157,10 +157,10 @@ recipes.addShaped(<openblocks:block_placer>, [[<contenttweaker:open_ingot>,<cont
 
 // Elevators
 for i in 0 to 16 {
-	recipes.remove(<openblocks:elevator:5>.withDamage(i));
-	recipes.addShaped(<openblocks:elevator:5>.withDamage(i), [[<contenttweaker:open_ingot>,<minecraft:wool>.withDamage(i),<contenttweaker:open_ingot>],[<minecraft:wool>.withDamage(i),<actuallyadditions:block_misc:6>,<minecraft:wool>.withDamage(i)],[<contenttweaker:open_ingot>,<minecraft:wool>.withDamage(i),<contenttweaker:open_ingot>]]);
-	recipes.remove(<openblocks:elevator_rotating>.withDamage(i));
-	recipes.addShapeless(<openblocks:elevator_rotating>.withDamage(i), [<openblocks:elevator:5>.withDamage(i), <minecraft:piston>]);
+    recipes.remove(<openblocks:elevator:5>.withDamage(i));
+    recipes.addShaped(<openblocks:elevator:5>.withDamage(i), [[<contenttweaker:open_ingot>,<minecraft:wool>.withDamage(i),<contenttweaker:open_ingot>],[<minecraft:wool>.withDamage(i),<actuallyadditions:block_misc:6>,<minecraft:wool>.withDamage(i)],[<contenttweaker:open_ingot>,<minecraft:wool>.withDamage(i),<contenttweaker:open_ingot>]]);
+    recipes.remove(<openblocks:elevator_rotating>.withDamage(i));
+    recipes.addShapeless(<openblocks:elevator_rotating>.withDamage(i), [<openblocks:elevator:5>.withDamage(i), <minecraft:piston>]);
 }
 
 // /dev/null

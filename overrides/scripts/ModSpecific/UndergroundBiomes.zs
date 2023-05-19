@@ -8,15 +8,15 @@ print("STARTING UndergroundBiomes.zs");
 
 // Stone conversion
 for i in 0 to 8 {
-	mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:igneous_stone>.withDamage(i));
-	mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:metamorphic_stone>.withDamage(i));
-	mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:sedimentary_stone>.withDamage(i));
+    mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:igneous_stone>.withDamage(i));
+    mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:metamorphic_stone>.withDamage(i));
+    mods.chisel.Carving.addVariation("stonebrick", <undergroundbiomes:sedimentary_stone>.withDamage(i));
 }
 
 // Cobblestone conversion
 for i in 0 to 8 {
-	mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:igneous_cobble>.withDamage(i));
-	mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:metamorphic_cobble>.withDamage(i));
+    mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:igneous_cobble>.withDamage(i));
+    mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:metamorphic_cobble>.withDamage(i));
 }
 
 // Sand conversion tooltips
@@ -51,16 +51,16 @@ recipes.addShaped(<undergroundbiomes:sedimentary_stone> * 9, [[<chisel:limestone
 
 // UB Mossy Cobble with the Fluid Tranposer method
 for i in 0 to 8 {
-	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:igneous_cobble_mossy>.withDamage(i), <undergroundbiomes:igneous_cobble>.withDamage(i), <liquid:water> * 250, 4000);
-	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i), <undergroundbiomes:metamorphic_cobble>.withDamage(i), <liquid:water> * 250, 4000);
-	mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:sedimentary_stone_mossy>.withDamage(i), <undergroundbiomes:sedimentary_stone>.withDamage(i), <liquid:water> * 250, 4000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:igneous_cobble_mossy>.withDamage(i), <undergroundbiomes:igneous_cobble>.withDamage(i), <liquid:water> * 250, 4000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i), <undergroundbiomes:metamorphic_cobble>.withDamage(i), <liquid:water> * 250, 4000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<undergroundbiomes:sedimentary_stone_mossy>.withDamage(i), <undergroundbiomes:sedimentary_stone>.withDamage(i), <liquid:water> * 250, 4000);
 }
 
 // UB Mossy Cobble with the Metallurgic Infuser method
 for i in 0 to 8 {
-	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:igneous_cobble>.withDamage(i), <undergroundbiomes:igneous_cobble_mossy>.withDamage(i));
-	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:metamorphic_cobble>.withDamage(i), <undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i));
-	mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:sedimentary_stone>.withDamage(i), <undergroundbiomes:sedimentary_stone_mossy>.withDamage(i));
+    mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:igneous_cobble>.withDamage(i), <undergroundbiomes:igneous_cobble_mossy>.withDamage(i));
+    mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:metamorphic_cobble>.withDamage(i), <undergroundbiomes:metamorphic_cobble_mossy>.withDamage(i));
+    mods.mekanism.infuser.addRecipe("BIO", 10, <undergroundbiomes:sedimentary_stone>.withDamage(i), <undergroundbiomes:sedimentary_stone_mossy>.withDamage(i));
 }
 
 print("ENDING UndergroundBiomes.zs");

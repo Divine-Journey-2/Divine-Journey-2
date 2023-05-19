@@ -75,10 +75,10 @@ mods.avaritia.ExtremeCrafting.addShaped("Key to Infinity", <contenttweaker:key_t
 val glyphs = [<contenttweaker:glyph_route>,<contenttweaker:glyph_bag>,<contenttweaker:glyph_tent>,<contenttweaker:glyph_waterfall>,<contenttweaker:glyph_tongue>,<contenttweaker:glyph_scythe>,<contenttweaker:glyph_blockade>,<contenttweaker:glyph_lash>,<contenttweaker:glyph_slash>,<contenttweaker:glyph_rod>,<contenttweaker:glyph_split>,<contenttweaker:glyph_shield>,<contenttweaker:glyph_war>,<contenttweaker:glyph_cross>,<contenttweaker:glyph_stamp>,<contenttweaker:glyph_connection>,<contenttweaker:glyph_fork>,<contenttweaker:glyph_wave>,<contenttweaker:glyph_lightning>,<contenttweaker:glyph_pair>,<contenttweaker:glyph_fish>,<contenttweaker:glyph_weaving>,<contenttweaker:glyph_stand>,<contenttweaker:glyph_lion>,<contenttweaker:glyph_mirror>,<contenttweaker:glyph_electricity>] as IItemStack[];
 val glyph_inputs = [<contenttweaker:essence_of_ways>,<projecte:item.pe_alchemical_bag:14>,<totemic:tipi>,<mysticalagriculture:watering_can:4>,<bewitchment:tongue_of_dog>,<mysticalagriculture:supremium_scythe>,<extrautils2:compressedcobblestone:7>,<bewitchment:hellhound_horn>,<divinerpg:sandslash>,<lightningcraft:rod:9>,<contenttweaker:highly_radioactive_dimension_splitting_compound>,<spartanshields:shield_tc_void>,<avaritia:infinity_sword>,<rftoolsdim:dimensional_cross_block>,<openblocks:stencil>,<actuallyadditions:item_phantom_connector>,<agricraft:rake:1>,<contenttweaker:aquasalus>,<contenttweaker:lightning_charge>,<draconicevolution:dislocator_bound:1>,<minecraft:fish>,<botania:manaresource:22>,<minecraft:armor_stand>,<erebus:antlion_egg>,<thaumicaugmentation:impetus_mirror>,<extendedcrafting:singularity_custom:103>] as IItemStack[];
 for i in 0 to 26 {
-	recipes.addShapeless(glyphs[i], [<mysticalagradditions:stuff:69>,glyph_inputs[i]]);
-	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc0"));
-	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc1"));
-	glyphs[i].addTooltip(game.localize("dj2.glyphs.desc2"));
+    recipes.addShapeless(glyphs[i], [<mysticalagradditions:stuff:69>,glyph_inputs[i]]);
+    glyphs[i].addTooltip(game.localize("dj2.glyphs.desc0"));
+    glyphs[i].addTooltip(game.localize("dj2.glyphs.desc1"));
+    glyphs[i].addTooltip(game.localize("dj2.glyphs.desc2"));
 }
 
 // IT1

@@ -127,7 +127,7 @@ recipes.addShaped(<minecraft:soul_sand> * 3, [[<minecraft:sand>,<divinerpg:polis
 // Soul Vial
 var all_pearls = [<divinerpg:dirty_pearls>,<divinerpg:clean_pearls>,<divinerpg:polished_pearls>,<divinerpg:shiny_pearls>] as IItemStack[];
 for p in all_pearls {
-	recipes.addShaped(<enderio:item_soul_vial>, [[<minecraft:soul_sand>,<minecraft:soul_sand>,<minecraft:soul_sand>],[<minecraft:glass>,p,<minecraft:glass>],[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>]]);
+    recipes.addShaped(<enderio:item_soul_vial>, [[<minecraft:soul_sand>,<minecraft:soul_sand>,<minecraft:soul_sand>],[<minecraft:glass>,p,<minecraft:glass>],[<minecraft:glass>,<minecraft:glass>,<minecraft:glass>]]);
 }
 
 // Red Pigment

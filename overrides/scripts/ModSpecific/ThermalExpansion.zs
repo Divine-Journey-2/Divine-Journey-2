@@ -222,22 +222,22 @@ recipes.addShaped(<thermalexpansion:capacitor>.withTag({Energy: 0}), [[<ore:ingo
 // Flux Capacitor (Hardened)
 recipes.removeShaped(<thermalexpansion:capacitor:1>);
 recipes.addShaped("thermal_capacitor_upgrade1", <thermalexpansion:capacitor:1>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<thermalfoundation:material:257>,<ore:ingotRedAlloy>],[<thermalfoundation:material:354>,<thermalexpansion:capacitor>.marked("capacitor"),<thermalfoundation:material:354>],[<thermalfoundation:material:354>,<ore:ingotRedAlloy>,<thermalfoundation:material:354>]],
-	function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
 
 // Flux Capacitor (Reinforced)
 recipes.removeShaped(<thermalexpansion:capacitor:2>);
 recipes.addShaped("thermal_capacitor_upgrade2", <thermalexpansion:capacitor:2>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<thermalfoundation:glass:3>,<ore:ingotRedAlloy>],[<thermalfoundation:material:353>,<thermalexpansion:capacitor:1>.marked("capacitor"),<thermalfoundation:material:353>],[<thermalfoundation:material:353>,<ore:ingotRedAlloy>,<thermalfoundation:material:353>]],
-	function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
 
 // Flux Capacitor (Signalum)
 recipes.removeShaped(<thermalexpansion:capacitor:3>);
 recipes.addShaped("thermal_capacitor_upgrade3", <thermalexpansion:capacitor:3>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<thermalfoundation:material:1025>,<ore:ingotRedAlloy>],[<thermalfoundation:material:357>,<thermalexpansion:capacitor:2>.marked("capacitor"),<thermalfoundation:material:357>],[<thermalfoundation:material:357>,<ore:ingotRedAlloy>,<thermalfoundation:material:357>]],
-	function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
 
 // Flux Capacitor (Enderium)
 recipes.removeShaped(<thermalexpansion:capacitor:4>);
 recipes.addShaped("thermal_capacitor_upgrade4", <thermalexpansion:capacitor:4>.withTag({Energy: 0}), [[<ore:ingotRedAlloy>,<thermalfoundation:material:1024>,<ore:ingotRedAlloy>],[<thermalfoundation:material:359>,<thermalexpansion:capacitor:3>.marked("capacitor"),<thermalfoundation:material:359>],[<thermalfoundation:material:359>,<ore:ingotRedAlloy>,<thermalfoundation:material:359>]],
-	function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.capacitor.tag); }, null);
 
 // Reservoir (Basic)
 recipes.removeShaped(<thermalexpansion:reservoir>);
@@ -246,22 +246,22 @@ recipes.addShaped(<thermalexpansion:reservoir>.withTag({}), [[null,<thermalfound
 // Reservoir (Hardened)
 recipes.removeShaped(<thermalexpansion:reservoir:1>);
 recipes.addShaped("thermal_reservoir_upgrade1", <thermalexpansion:reservoir:1>.withTag({}), [[null,<thermalfoundation:glass:3>,null],[<thermalfoundation:material:354>,<thermalexpansion:reservoir>.marked("reservoir"),<thermalfoundation:material:354>],[null,<thermalfoundation:material:257>,null]],
-	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 // Reservoir (Reinforced)
 recipes.removeShaped(<thermalexpansion:reservoir:2>);
 recipes.addShaped("thermal_reservoir_upgrade2", <thermalexpansion:reservoir:2>.withTag({}), [[null,<thermalfoundation:glass:3>,null],[<thermalfoundation:material:353>,<thermalexpansion:reservoir:1>.marked("reservoir"),<thermalfoundation:material:353>],[null,<thermalfoundation:material:290>,null]],
-	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 // Reservoir (Reinforced)
 recipes.removeShaped(<thermalexpansion:reservoir:3>);
 recipes.addShaped("thermal_reservoir_upgrade3", <thermalexpansion:reservoir:3>.withTag({}), [[null,<thermalfoundation:material:1025>,null],[<thermalfoundation:material:357>,<thermalexpansion:reservoir:2>.marked("reservoir"),<thermalfoundation:material:357>],[null,<thermalfoundation:material:289>,null]],
-	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 // Reservoir (Resonant)
 recipes.removeShaped(<thermalexpansion:reservoir:4>);
 recipes.addShaped("thermal_reservoir_upgrade4", <thermalexpansion:reservoir:4>.withTag({}), [[null,<thermalfoundation:material:1024>,null],[<thermalfoundation:material:359>,<thermalexpansion:reservoir:3>.marked("reservoir"),<thermalfoundation:material:359>],[null,<thermalfoundation:material:293>,null]],
-	function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.reservoir.tag); }, null);
 
 // Satchel (Basic)
 recipes.removeShaped(<thermalexpansion:satchel>);
@@ -270,22 +270,22 @@ recipes.addShaped(<thermalexpansion:satchel>.withTag({Inventory: {}, Accessible:
 // Satchel (Hardened)
 recipes.removeShaped(<thermalexpansion:satchel:1>);
 recipes.addShaped("thermal_satchel_upgrade1", <thermalexpansion:satchel:1>.withTag({Accessible: 1 as byte}), [[null,<thermalfoundation:material:354>,null],[<contenttweaker:treated_leather>,<thermalexpansion:satchel>.marked("satchel"),<contenttweaker:treated_leather>],[null,<thermalfoundation:material:354>,null]],
-	function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
 
 // Satchel (Reinforced)
 recipes.removeShaped(<thermalexpansion:satchel:2>);
 recipes.addShaped("thermal_satchel_upgrade2", <thermalexpansion:satchel:2>.withTag({Accessible: 1 as byte}), [[<thermalfoundation:material:354>,<thermalfoundation:material:353>,<thermalfoundation:material:354>],[<contenttweaker:treated_leather>,<thermalexpansion:satchel:1>.marked("satchel"),<contenttweaker:treated_leather>],[<thermalfoundation:material:354>,<thermalfoundation:material:353>,<thermalfoundation:material:354>]],
-	function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
 
 // Satchel (Signalum)
 recipes.removeShaped(<thermalexpansion:satchel:3>);
 recipes.addShaped("thermal_satchel_upgrade3", <thermalexpansion:satchel:3>.withTag({Accessible: 1 as byte}), [[<thermalfoundation:material:353>,<thermalfoundation:material:357>,<thermalfoundation:material:353>],[<contenttweaker:treated_leather>,<thermalexpansion:satchel:2>.marked("satchel"),<contenttweaker:treated_leather>],[<thermalfoundation:material:353>,<thermalfoundation:material:357>,<thermalfoundation:material:353>]],
-	function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
 
 // Satchel (Resonant)
 recipes.removeShaped(<thermalexpansion:satchel:4>);
 recipes.addShaped("thermal_satchel_upgrade4", <thermalexpansion:satchel:4>.withTag({Accessible: 1 as byte}), [[<thermalfoundation:material:357>,<thermalfoundation:material:359>,<thermalfoundation:material:357>],[<contenttweaker:treated_leather>,<thermalexpansion:satchel:3>.marked("satchel"),<contenttweaker:treated_leather>],[<thermalfoundation:material:357>,<thermalfoundation:material:359>,<thermalfoundation:material:357>]],
-	function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
+    function(out, ins, cInfo) { return out.withTag(ins.satchel.tag); }, null);
 
 // Satchel (Void)
 recipes.remove(<thermalexpansion:satchel:100>);
@@ -326,39 +326,39 @@ recipes.addShaped(<thermalexpansion:cell>.withTag({Recv: 25000, Level: 4 as byte
 
 // Portable Tank (Hardened)
 recipes.addShapeless("thermal_tank_upgrade1", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}).marked("tank"),<thermalfoundation:upgrade>],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 1 as byte});
-	} else {
-		return out.withTag({RSControl: 0 as byte, Level: 1 as byte});
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 1 as byte});
+    } else {
+        return out.withTag({RSControl: 0 as byte, Level: 1 as byte});
+    }}, null);
 
 // Portable Tank (Reinforced)
 recipes.addShapeless("thermal_tank_upgrade2", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 1 as byte}).marked("tank"),<thermalfoundation:upgrade:1>],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 2 as byte});
-	} else {
-		return out.withTag({RSControl: 0 as byte, Level: 2 as byte});
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 2 as byte});
+    } else {
+        return out.withTag({RSControl: 0 as byte, Level: 2 as byte});
+    }}, null);
 
 // Portable Tank (Signalum)
 recipes.addShapeless("thermal_tank_upgrade3", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}).marked("tank"),<thermalfoundation:upgrade:2>],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 3 as byte});
-	} else {
-		return out.withTag({RSControl: 0 as byte, Level: 3 as byte});
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 3 as byte});
+    } else {
+        return out.withTag({RSControl: 0 as byte, Level: 3 as byte});
+    }}, null);
 
 // Portable Tank (Resonant)
 recipes.addShapeless("thermal_tank_upgrade4", <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}), [<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}).marked("tank"),<thermalfoundation:upgrade:3>],
-	function(out, ins, cInfo) {
-	if(ins.tank.tag has "Fluid") {
-		return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 4 as byte});
-	} else {
-		return out.withTag({RSControl: 0 as byte, Level: 4 as byte});
-	}}, null);
+    function(out, ins, cInfo) {
+    if(ins.tank.tag has "Fluid") {
+        return out.withTag({RSControl: 0 as byte, Fluid: ins.tank.tag.Fluid, Level: 4 as byte});
+    } else {
+        return out.withTag({RSControl: 0 as byte, Level: 4 as byte});
+    }}, null);
 
 // Crescent Hammer
 recipes.remove(<thermalfoundation:wrench>);
@@ -366,42 +366,42 @@ recipes.addShapedMirrored(<thermalfoundation:wrench>, [[null,<immersiveengineeri
 
 // Function to upgrade Caches and Strongboxes while keeping their contents, locked state, owner ID, etc.
 function thermalUpgrade(input_tag as IData, out as IItemStack, new_level as byte) as IItemStack {
-	val new_level_tag = {Level: new_level as byte} as IData;
-	val new_tag = input_tag + new_level_tag;
-	return out.withTag(new_tag);
+    val new_level_tag = {Level: new_level as byte} as IData;
+    val new_tag = input_tag + new_level_tag;
+    return out.withTag(new_tag);
 }
 
 // Cache (Hardened)
 recipes.addShapeless("thermal_cache_upgrade1", <thermalexpansion:cache>.withTag({Level: 1 as byte}), [<thermalexpansion:cache>.withTag({Level: 0 as byte}).marked("cache"),<thermalfoundation:upgrade>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 1); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 1); }, null);
 
 // Cache (Reinforced)
 recipes.addShapeless("thermal_cache_upgrade2", <thermalexpansion:cache>.withTag({Level: 2 as byte}), [<thermalexpansion:cache>.withTag({Level: 1 as byte}).marked("cache"),<thermalfoundation:upgrade:1>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 2); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 2); }, null);
 
 // Cache (Signalum)
 recipes.addShapeless("thermal_cache_upgrade3", <thermalexpansion:cache>.withTag({Level: 3 as byte}), [<thermalexpansion:cache>.withTag({Level: 2 as byte}).marked("cache"),<thermalfoundation:upgrade:2>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 3); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 3); }, null);
 
 // Cache (Resonant)
 recipes.addShapeless("thermal_cache_upgrade4", <thermalexpansion:cache>.withTag({Level: 4 as byte}), [<thermalexpansion:cache>.withTag({Level: 3 as byte}).marked("cache"),<thermalfoundation:upgrade:3>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 4); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.cache.tag, out, 4); }, null);
 
 // Strongbox (Hardened)
 recipes.addShapeless("thermal_strongbox_upgrade1", <thermalexpansion:strongbox>.withTag({Level: 1 as byte}), [<thermalexpansion:strongbox>.withTag({Level: 0 as byte}).marked("strongbox"),<thermalfoundation:upgrade>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 1); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 1); }, null);
 
 // Strongbox (Reinforced)
 recipes.addShapeless("thermal_strongbox_upgrade2", <thermalexpansion:strongbox>.withTag({Level: 2 as byte}), [<thermalexpansion:strongbox>.withTag({Level: 1 as byte}).marked("strongbox"),<thermalfoundation:upgrade:1>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 2); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 2); }, null);
 
 // Strongbox (Signalum)
 recipes.addShapeless("thermal_strongbox_upgrade3", <thermalexpansion:strongbox>.withTag({Level: 3 as byte}), [<thermalexpansion:strongbox>.withTag({Level: 2 as byte}).marked("strongbox"),<thermalfoundation:upgrade:2>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 3); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 3); }, null);
 
 // Strongbox (Resonant)
 recipes.addShapeless("thermal_strongbox_upgrade4", <thermalexpansion:strongbox>.withTag({Level: 4 as byte}), [<thermalexpansion:strongbox>.withTag({Level: 3 as byte}).marked("strongbox"),<thermalfoundation:upgrade:3>],
-	function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 4); }, null);
+    function(out, ins, cInfo) { return thermalUpgrade(ins.strongbox.tag, out, 4); }, null);
 
 // Augment: Nullification Chamber
 recipes.remove(<thermalexpansion:augment:130>);
@@ -578,10 +578,10 @@ recipes.addShaped(<thermalexpansion:augment:303>, [[null,<thermalfoundation:mate
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
 for s in <ore:sand>.items {
-	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>, 4000, <thermalfoundation:material:865>, 20);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), 4000, <thermalfoundation:material:865>, 20);
-	mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>, 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>, 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>, 4000, <thermalfoundation:material:865>, 20);
 }
 
 // Tier III-IV Potion tooltips
@@ -589,25 +589,25 @@ val all_tier_iii_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leapin
 val all_tier_iv_potions = [<minecraft:potion>.withTag({Potion: "cofhcore:leaping4"}),<minecraft:potion>.withTag({Potion: "cofhcore:swiftness4"}),<minecraft:potion>.withTag({Potion: "cofhcore:healing4"}),<minecraft:potion>.withTag({Potion: "cofhcore:harming4"}),<minecraft:potion>.withTag({Potion: "cofhcore:poison4"}),<minecraft:potion>.withTag({Potion: "cofhcore:regeneration4"}),<minecraft:potion>.withTag({Potion: "cofhcore:strength4"}),<minecraft:potion>.withTag({Potion: "cofhcore:haste4"}),<minecraft:potion>.withTag({Potion: "cofhcore:resistance4"}),<minecraft:potion>.withTag({Potion: "cofhcore:absorption4"}),<minecraft:potion>.withTag({Potion: "cofhcore:luck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:unluck4"}),<minecraft:potion>.withTag({Potion: "cofhcore:wither4"})] as IItemStack[];
 
 for p in all_tier_iii_potions {
-	p.addTooltip(game.localize("dj2.tier_iii_potion.desc0"));
-	p.addTooltip(game.localize("dj2.tier_iii_potion.desc1"));
+    p.addTooltip(game.localize("dj2.tier_iii_potion.desc0"));
+    p.addTooltip(game.localize("dj2.tier_iii_potion.desc1"));
 }
 
 for p in all_tier_iv_potions {
-	p.addTooltip(game.localize("dj2.tier_iv_potion.desc0"));
-	p.addTooltip(game.localize("dj2.tier_iv_potion.desc1"));
+    p.addTooltip(game.localize("dj2.tier_iv_potion.desc0"));
+    p.addTooltip(game.localize("dj2.tier_iv_potion.desc1"));
 }
 
 // Magma Crucible should accept any Cobblestone variant
 mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
 for cobble in <ore:cobblestone>.items {
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, cobble, 300000);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, cobble, 300000);
 }
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:red_rock_cobblestone>, 300000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:blue_rock_cobblestone>, 300000);
 for i in 0 to 8 {
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:igneous_cobble>.withDamage(i), 300000);
-	mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:metamorphic_cobble>.withDamage(i), 300000);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:igneous_cobble>.withDamage(i), 300000);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:metamorphic_cobble>.withDamage(i), 300000);
 }
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 

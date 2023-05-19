@@ -210,7 +210,7 @@ AACrusher.removeRecipe(<thermalfoundation:material>);
 AACrusher.addRecipe(<thermalfoundation:material>, <minecraft:iron_ingot>);
 AACrusher.addRecipe(<thermalfoundation:material> * 4, <bno:ore_netheriron>);
 for iron_ore in <ore:oreIron>.items {
-	AACrusher.addRecipe(<thermalfoundation:material> * 2, iron_ore, <thermalfoundation:material:1>, 20);
+    AACrusher.addRecipe(<thermalfoundation:material> * 2, iron_ore, <thermalfoundation:material:1>, 20);
 }
 AACrusher.addRecipe(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>);
 IECrusher.addRecipe(<thermalfoundation:material> * 4, <minecraft:iron_horse_armor>, 6000);
@@ -223,7 +223,7 @@ AACrusher.removeRecipe(<thermalfoundation:material:1>);
 AACrusher.addRecipe(<thermalfoundation:material:1>, <minecraft:gold_ingot>);
 AACrusher.addRecipe(<thermalfoundation:material:1> * 4, <bno:ore_nethergold>);
 for gold_ore in <ore:oreGold>.items {
-	AACrusher.addRecipe(<thermalfoundation:material:1> * 2, gold_ore);
+    AACrusher.addRecipe(<thermalfoundation:material:1> * 2, gold_ore);
 }
 AACrusher.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>);
 IECrusher.addRecipe(<thermalfoundation:material:1> * 4, <minecraft:golden_horse_armor>, 6000);

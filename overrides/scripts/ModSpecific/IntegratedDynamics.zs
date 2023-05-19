@@ -93,8 +93,8 @@ recipes.remove(<integrateddynamics:part_display_panel_item>);
 recipes.addShaped(<integrateddynamics:part_display_panel_item>, [[null,<contenttweaker:crystalline_brown_slime_ingot>],[<integrateddynamics:variable_transformer>,<integrateddynamics:part_static_light_panel_item>],[null,<contenttweaker:crystalline_brown_slime_ingot>]]);
 
 function addIntegratedDynamicsReaderRecipe(input_item as IIngredient, output as IItemStack) {
-	recipes.remove(output);
-	recipes.addShapedMirrored(output, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null],[input_item,<integrateddynamics:variable_transformer:1>,<appliedenergistics2:part:220>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null]]);
+    recipes.remove(output);
+    recipes.addShapedMirrored(output, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null],[input_item,<integrateddynamics:variable_transformer:1>,<appliedenergistics2:part:220>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null]]);
 }
 
 // Inventory Reader
@@ -128,8 +128,8 @@ addIntegratedDynamicsReaderRecipe(<industrialforegoing:mob_detector>,<integrated
 addIntegratedDynamicsReaderRecipe(<enderio:block_tele_pad>,<integrateddynamics:part_extradimensional_reader_item>);
 
 function addIntegratedDynamicsWriterRecipe(input_item as IIngredient, output as IItemStack) {
-	recipes.remove(output);
-	recipes.addShapedMirrored(output, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null],[input_item,<integrateddynamics:variable_transformer>,<appliedenergistics2:part:220>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null]]);
+    recipes.remove(output);
+    recipes.addShapedMirrored(output, [[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null],[input_item,<integrateddynamics:variable_transformer>,<appliedenergistics2:part:220>],[<integrateddynamics:crystalized_menril_chunk>,<integrateddynamics:crystalized_menril_chunk>,null]]);
 }
 
 // Entity Writer

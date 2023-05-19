@@ -43,7 +43,7 @@ Fey.addRecipe("endoflame", <botania:specialflower>.withTag({type: "endoflame"}),
 // Livingrock
 mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 for dim_stone in dimensional_stones {
-	mods.botania.PureDaisy.addRecipe(dim_stone, <botania:livingrock>, 75);
+    mods.botania.PureDaisy.addRecipe(dim_stone, <botania:livingrock>, 75);
 }
 <botania:livingrock>.addTooltip(game.localize("dj2.livingrock.desc0"));
 <botania:livingrock>.addTooltip(game.localize("dj2.livingrock.desc1"));
@@ -53,7 +53,7 @@ for dim_stone in dimensional_stones {
 mods.botania.PureDaisy.removeRecipe(<botania:livingwood>);
 val dimensionalLogs = [<divinerpg:frozen_log>,<divinerpg:divine_log>,<divinerpg:eden_log>,<divinerpg:wildwood_log>,<divinerpg:apalachia_log>,<divinerpg:skythern_log>,<divinerpg:mortum_log>,<divinerpg:dreamwood_log>,<divinerpg:firewood_log>,<divinerpg:hyrewood_log>,<divinerpg:mintwood_log>,<atum:palm_log>,<atum:deadwood_log>,<aether_legacy:aether_log:2>,<aether_legacy:aether_log:3>,<erebus:log_baobab>,<erebus:log_eucalyptus>,<erebus:log_mahogany>,<erebus:log_mossbark>,<erebus:log_asper>,<erebus:log_cypress>,<erebus:log_balsam>,<erebus:log_rotten>,<erebus:log_marshwood>,<erebus:log_scorched>,<abyssalcraft:dreadlog>,<twilightforest:twilight_log:0>,<twilightforest:twilight_log:1>,<twilightforest:twilight_log:2>,<twilightforest:twilight_log:3>,<twilightforest:magic_log:0>,<twilightforest:magic_log:1>,<twilightforest:magic_log:2>,<twilightforest:magic_log:3>] as IItemStack[];
 for dim_log in dimensionalLogs {
-	mods.botania.PureDaisy.addRecipe(dim_log, <botania:livingwood>, 75);
+    mods.botania.PureDaisy.addRecipe(dim_log, <botania:livingwood>, 75);
 }
 <botania:livingwood>.addTooltip(game.localize("dj2.livingwood.desc0"));
 <botania:livingwood>.addTooltip(game.localize("dj2.livingwood.desc1"));
@@ -71,7 +71,7 @@ recipes.addShapedMirrored(<botania:spreader>, [[<botania:livingwood>,<botania:li
 recipes.remove(<botania:twigwand>);
 recipes.addShapedMirrored("wand_of_the_forest", <botania:twigwand>, [[<botania:petal:*>.marked("petal1"),null,<botania:petal:*>.marked("petal2")],[null,<botania:manaresource:3>,<contenttweaker:environmental_core>],[<botania:manaresource:3>,null,null]],
 function(out, ins, cInfo) {
-	return out.withTag({color1: ins.petal1.damage, color2: ins.petal2.damage, boundTileZ: 0, boundTileX: 0, boundTileY: -1});
+    return out.withTag({color1: ins.petal1.damage, color2: ins.petal2.damage, boundTileZ: 0, boundTileX: 0, boundTileY: -1});
 }, null);
 
 // Manasteel Ingot
@@ -463,8 +463,8 @@ recipes.remove(<botania:pylon:1>);
 recipes.addShaped(<botania:pylon:1>, [[<botania:manaresource:18>,null,<botania:manaresource:18>],[<botania:livingwood:5>,<botania:manaresource:4>,<botania:livingwood:5>],[<botania:livingwood>,<botania:pylon>,<botania:livingwood>]]);
 
 function addBotaniaTier3RuneRecipe(output as IItemStack, new_rune as IItemStack, input_rune1 as IItemStack, input_rune2 as IItemStack) {
-	mods.botania.RuneAltar.removeRecipe(output);
-	mods.botania.RuneAltar.addRecipe(new_rune, [input_rune1, input_rune2, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
+    mods.botania.RuneAltar.removeRecipe(output);
+    mods.botania.RuneAltar.addRecipe(new_rune, [input_rune1, input_rune2, <botania:manaresource:8>, <contenttweaker:dreammatter>, <botania:storage:3>], 20000);
 }
 
 // Rune of Lust
@@ -507,24 +507,24 @@ recipes.addShaped(<botania:manamirror>.withTag({mana: 0}), [[<contenttweaker:pur
 // Band of Mana
 recipes.remove(<botania:manaring>);
 recipes.addShapedMirrored("band_of_mana", <botania:manaring>, [[<botania:manatablet>.marked("tablet"),<botania:storage>,null],[<botania:storage>,<contenttweaker:purified_tablet>,<botania:storage>],[null,<botania:storage>,null]],
-	function(out,ins,cInfo) {
-			if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
-				return out.withTag({mana: ins.tablet.tag.mana});
-			} else {
-				return out.withTag({});
-			}
-		}, null);
+    function(out,ins,cInfo) {
+            if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
+                return out.withTag({mana: ins.tablet.tag.mana});
+            } else {
+                return out.withTag({});
+            }
+        }, null);
 
 // Greater Band of Mana
 recipes.remove(<botania:manaringgreater>);
 recipes.addShaped("greater_ring_of_mana", <botania:manaringgreater>, [[<contenttweaker:purified_tablet>,<botania:manaresource:4>,null],[<botania:manaresource:4>,<botania:manaring>.marked("ring"),<botania:manaresource:4>],[null,<botania:manaresource:4>,null]],
-	function(out,ins,cInfo) {
-			if(ins.ring.tag has "mana" && ins.ring.tag.mana > 0) {
-				return out.withTag({mana: ins.ring.tag.mana});
-			} else {
-				return out.withTag({});
-			}
-		}, null);
+    function(out,ins,cInfo) {
+            if(ins.ring.tag has "mana" && ins.ring.tag.mana > 0) {
+                return out.withTag({mana: ins.ring.tag.mana});
+            } else {
+                return out.withTag({});
+            }
+        }, null);
 
 // Soujourner's Sash
 recipes.remove(<botania:travelbelt>);
@@ -557,13 +557,13 @@ recipes.addShapedMirrored(<botania:terraaxe>, [[<botania:manaresource:4>,<botani
 // Terra Shatterer
 recipes.removeShaped(<botania:terrapick>);
 recipes.addShaped("terra_shatterer", <botania:terrapick>, [[<botania:manaresource:4>,<botania:manatablet>.marked("tablet"),<botania:manaresource:4>],[<botania:manaresource:4>,<botania:elementiumpick>,<botania:manaresource:4>],[null,<botania:manaresource:3>,null]],
-	function(out,ins,cInfo) {
-			if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
-				return out.withTag({mana: ins.tablet.tag.mana});
-			} else {
-				return out.withTag({});
-			}
-		}, null);
+    function(out,ins,cInfo) {
+            if(ins.tablet.tag has "mana" && ins.tablet.tag.mana > 0) {
+                return out.withTag({mana: ins.tablet.tag.mana});
+            } else {
+                return out.withTag({});
+            }
+        }, null);
 
 // Elementium Helmet
 recipes.remove(<botania:elementiumhelm>);
@@ -684,8 +684,8 @@ recipes.addShaped(<botania:itemfinder>, [[<botania:manaresource>,<botania:manare
 recipes.remove(<botania:enderhand>);
 
 function addBotaniaSparkAugmentRecipe(output as IItemStack, input_rune as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[null,<botania:manaresource>,null],[<botania:manaresource>,<botania:manaresource:8>,<botania:manaresource>],[null,input_rune,null]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[null,<botania:manaresource>,null],[<botania:manaresource>,<botania:manaresource:8>,<botania:manaresource>],[null,input_rune,null]]);
 }
 
 // Spark Augment: Dispersive
@@ -982,8 +982,8 @@ recipes.addShaped(<botania:manaresource:6>, [[<enderio:item_alloy_ingot:3>,<mine
 
 // Metamorphic Stone oredict and tooptips
 for i in 0 to 8 {
-	<ore:stoneBotaniaMetamorphic>.add(<botania:biomestonea>.withDamage(i));
-	<botania:biomestonea>.withDamage(i).addTooltip(game.localize("dj2.biomestonea.desc0"));
+    <ore:stoneBotaniaMetamorphic>.add(<botania:biomestonea>.withDamage(i));
+    <botania:biomestonea>.withDamage(i).addTooltip(game.localize("dj2.biomestonea.desc0"));
 }
 
 // Orechid Mithril Ore removal

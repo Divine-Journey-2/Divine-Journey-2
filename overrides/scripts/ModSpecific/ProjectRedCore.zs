@@ -27,9 +27,9 @@ print("STARTING ProjectRedCore.zs");
 furnace.remove(<projectred-core:resource_item>);
 furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stone>);
 for i in 0 to 8 {
-	furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:sedimentary_stone>.withDamage(i));
-	furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:igneous_stone>.withDamage(i));
-	furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:metamorphic_stone>.withDamage(i));
+    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:sedimentary_stone>.withDamage(i));
+    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:igneous_stone>.withDamage(i));
+    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:metamorphic_stone>.withDamage(i));
 }
 
 // Red Alloy Ingot
@@ -75,12 +75,12 @@ mods.thermalexpansion.Sawmill.addRecipe(<projectred-core:resource_item:301> * 4,
 mods.mekanism.sawmill.addRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 4);
 
 function addProjectRedSiliconCompoundRecipe(output as IItemStack, input_material as IItemStack) {
-	recipes.remove(output);
-	mods.immersiveengineering.ArcFurnace.addRecipe(output, <projectred-core:resource_item:301>, null, 160, 240, [input_material], "Alloying");
-	//EIOAlloySmelter.addRecipe(output, [<projectred-core:resource_item:301>, input_material], 10000);
-	// Alloy Smelter recipes in enderio/recipes/user/user_recipes.xml
-	IEAlloySmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 400);
-	mods.thermalexpansion.InductionSmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 10000);
+    recipes.remove(output);
+    mods.immersiveengineering.ArcFurnace.addRecipe(output, <projectred-core:resource_item:301>, null, 160, 240, [input_material], "Alloying");
+    //EIOAlloySmelter.addRecipe(output, [<projectred-core:resource_item:301>, input_material], 10000);
+    // Alloy Smelter recipes in enderio/recipes/user/user_recipes.xml
+    IEAlloySmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 400);
+    mods.thermalexpansion.InductionSmelter.addRecipe(output, <projectred-core:resource_item:301>, input_material, 10000);
 }
 
 // Glowing Silicon Compound

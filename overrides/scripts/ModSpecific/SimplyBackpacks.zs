@@ -7,11 +7,11 @@ recipes.addShaped(<simplybackpacks:commonbackpack>.withTag({inv: {Size: 18, Item
 
 /*
 function(out,ins,cInfo) {
-	if(ins.input_bag.tag has "Items") {
-		return out.withTag({inv: {Size: 33, Items: ins.input_bag.tag.Items}, filter: {Size: 16, Items: []}});
-	} else {
-		return out.withTag({inv: {Size: 33, Items: []}, filter: {Size: 16, Items: []}});
-	}
+    if(ins.input_bag.tag has "Items") {
+        return out.withTag({inv: {Size: 33, Items: ins.input_bag.tag.Items}, filter: {Size: 16, Items: []}});
+    } else {
+        return out.withTag({inv: {Size: 33, Items: []}, filter: {Size: 16, Items: []}});
+    }
 }
 */
 

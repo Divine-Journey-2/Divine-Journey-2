@@ -54,8 +54,8 @@ val wrongCopperIngots = [<galacticraftcore:basic_item:3>, <mekanism:ingot:5>, <i
 <ore:ingotCopper>.removeItems(wrongCopperIngots);
 //recipes.replaceAllOccurences(<ore:ingotCopper>, <thermalfoundation:material:128>);
 for copper in wrongCopperIngots {
-	mods.abyssalcraft.Materializer.removeMaterialization(copper);
-	mods.appliedenergistics2.Grinder.removeRecipe(copper);
+    mods.abyssalcraft.Materializer.removeMaterialization(copper);
+    mods.appliedenergistics2.Grinder.removeRecipe(copper);
 }
 <ore:nuggetCopper>.remove(<immersiveengineering:metal:20>);
 furnace.remove(<erebus:materials:43>);
@@ -92,8 +92,8 @@ val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism
 <ore:ingotTin>.removeItems(wrongTinIngots);
 //recipes.replaceAllOccurences(<ore:ingotTin>, <thermalfoundation:material:129>);
 for tin in wrongTinIngots {
-	mods.abyssalcraft.Materializer.removeMaterialization(tin);
-	mods.appliedenergistics2.Grinder.removeRecipe(tin);
+    mods.abyssalcraft.Materializer.removeMaterialization(tin);
+    mods.appliedenergistics2.Grinder.removeRecipe(tin);
 }
 furnace.remove(<erebus:materials:46>);
 furnace.remove(<galacticraftcore:basic_item:4>);
@@ -119,12 +119,12 @@ recipes.remove(<galacticraftcore:basic_item:2>);
 recipes.addShapeless(<appliedenergistics2:material:5> * 9, [<galacticraftcore:basic_block_core:13>]);
 mods.actuallyadditions.Crusher.removeRecipe(<galacticraftcore:basic_item:2>);
 for silicon in <ore:ingotSilicon>.items {
-	mods.thermalexpansion.Pulverizer.removeRecipe(silicon);
+    mods.thermalexpansion.Pulverizer.removeRecipe(silicon);
 }
 for silicon_ore in <ore:oreSilicon>.items {
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, silicon_ore);
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, silicon_ore);
-	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, silicon_ore);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:866>, silicon_ore);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:material:865>, silicon_ore);
+    mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand:*>, silicon_ore);
 }
 EUCrusher.remove(<galacticraftplanets:venus:10>);
 EUCrusher.remove(<alchemistry:ingot:14>);
@@ -143,7 +143,7 @@ val wrongAlumIngots = [<alchemistry:ingot:13>,<erebus:materials:42>,<galacticraf
 <ore:blockAluminum>.removeItems([<galacticraftcore:basic_block_core:11>,<immersiveengineering:storage:1>]);
 <ore:nuggetAluminum>.remove(<immersiveengineering:metal:21>);
 for ingot in wrongAlumIngots {
-	mods.abyssalcraft.Crystallizer.removeCrystallizationInput(ingot);
+    mods.abyssalcraft.Crystallizer.removeCrystallizationInput(ingot);
 }
 recipes.remove(<erebus:materials:42>);
 furnace.remove(<erebus:materials:42>);

@@ -49,8 +49,8 @@ WitchesOven.removeRecipe(<minecraft:dye:15>);
 WitchesOven.addRecipe(<thaumcraft:alumentum>, <abyssalcraft:crystalshard:22> * 5, <bewitchment:ectoplasm>, 0.1, false);
 
 function addBewitchmentWitchesAltarRecipe(output as IItemStack, input_material as IIngredient) {
-	recipes.remove(output);
-	mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 5, [<aspect:machina> * 50,<aspect:terra> * 30,<aspect:auram> * 30,<aspect:herba> * 25,<aspect:praecantatio> * 15,<aspect:ordo> * 15], <bloodmagic:incense_altar>, [<bewitchment:spruce_heart>,input_material,<bewitchment:elder_wood>,<bewitchment:elder_wood>,<bewitchment:elder_wood>,input_material,<bewitchment:oak_spirit>,<bewitchment:birch_soul>]);
+    recipes.remove(output);
+    mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 5, [<aspect:machina> * 50,<aspect:terra> * 30,<aspect:auram> * 30,<aspect:herba> * 25,<aspect:praecantatio> * 15,<aspect:ordo> * 15], <bloodmagic:incense_altar>, [<bewitchment:spruce_heart>,input_material,<bewitchment:elder_wood>,<bewitchment:elder_wood>,<bewitchment:elder_wood>,input_material,<bewitchment:oak_spirit>,<bewitchment:birch_soul>]);
 }
 
 // Stone Witches' Altar
@@ -255,8 +255,8 @@ WitchesCauldron.removeRecipe(<bewitchment:iron_gall_ink>);
 WitchesCauldron.addRecipe([<bewitchment:iron_gall_ink>], [<bewitchment:cold_iron_ingot>,<bewitchment:oak_apple_gall>,<bewitchment:oak_apple_gall>,<minecraft:dye>]);
 
 function addBewitchmentPoppetRecipe(output as IItemStack, sides as IIngredient, bottom_sides as IIngredient, bottom as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[<contenttweaker:magical_leather>,<abyssalcraft:lifecrystal>,<contenttweaker:magical_leather>],[sides,<bewitchment:poppet>,sides],[bottom_sides,bottom,bottom_sides]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[<contenttweaker:magical_leather>,<abyssalcraft:lifecrystal>,<contenttweaker:magical_leather>],[sides,<bewitchment:poppet>,sides],[bottom_sides,bottom,bottom_sides]]);
 }
 
 // Poppet of Binding

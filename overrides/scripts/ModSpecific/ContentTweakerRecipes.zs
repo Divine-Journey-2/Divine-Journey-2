@@ -376,10 +376,10 @@ recipes.addShapeless(<contenttweaker:ingot_of_elevation> * 9, [<contenttweaker:b
 mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ingot_of_elevation> * 12, 100000, 5000, <actuallyadditions:item_solidified_experience>, [<contenttweaker:empowered_glod_crystal>, <contenttweaker:empowered_glod_crystal>, <contenttweaker:empowered_glod_crystal>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>]);
 
 function addVetheaPlankRecipes(log as IItemStack, plank as IItemStack) {
-	recipes.addShaped(plank * 4, [[log]]);
-	mods.mekanism.sawmill.addRecipe(log, plank * 6, <thermalfoundation:material:800>, 1);
-	mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [100,90,50,10], log, "CHANCE_ONLY", 2400);
-	mods.thermalexpansion.Sawmill.addRecipe(plank * 6, log, 1000, <thermalfoundation:material:800>, 100);
+    recipes.addShaped(plank * 4, [[log]]);
+    mods.mekanism.sawmill.addRecipe(log, plank * 6, <thermalfoundation:material:800>, 1);
+    mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [100,90,50,10], log, "CHANCE_ONLY", 2400);
+    mods.thermalexpansion.Sawmill.addRecipe(plank * 6, log, 1000, <thermalfoundation:material:800>, 100);
 }
 
 // Hyrewood Planks
@@ -541,7 +541,7 @@ recipes.addShaped(<contenttweaker:empty_core>, [[<thermalfoundation:glass:7>,<co
 
 // Function to add custom Blood Magic Cores
 function addCustomBloodMagicCore(core as IItemStack, essence as IIngredient, reagent as IIngredient, blood_orb as IIngredient) {
-	recipes.addShaped(core, [[essence,reagent,essence],[reagent,<contenttweaker:empty_core>,reagent],[essence,blood_orb,essence]]);
+    recipes.addShaped(core, [[essence,reagent,essence],[reagent,<contenttweaker:empty_core>,reagent],[essence,blood_orb,essence]]);
 }
 
 // Gusty Core
@@ -614,8 +614,8 @@ Pyre.addRecipe("arboreal_essence", <contenttweaker:arboreal_essence> * 5, [<natu
 val custom_ae2_presses = [<contenttweaker:inscriber_estimation_press>,<contenttweaker:inscriber_operation_press>,<contenttweaker:inscriber_methodology_press>,<contenttweaker:inscriber_clearance_press>,<contenttweaker:inscriber_scheduling_press>] as IItemStack[];
 val custom_ae2_press_materials = [<contenttweaker:coated_clathrate>,<thermalfoundation:material:136>,<plustic:osmiridiumingot>,<botania:manaresource:7>,<thaumcraft:ingot>] as IItemStack[];
 for i in 0 to 5 {
-	Inscriber.addRecipe(custom_ae2_presses[i], <thermalfoundation:storage_alloy>, true, custom_ae2_presses[i]);
-	recipes.addShaped(custom_ae2_presses[i], [[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,custom_ae2_press_materials[i],<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>]]);
+    Inscriber.addRecipe(custom_ae2_presses[i], <thermalfoundation:storage_alloy>, true, custom_ae2_presses[i]);
+    recipes.addShaped(custom_ae2_presses[i], [[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,custom_ae2_press_materials[i],<mysticalagriculture:certus_quartz_essence>],[<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>,<mysticalagriculture:certus_quartz_essence>]]);
 }
 
 // Petal of the Daisy
@@ -630,7 +630,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_inner_flame>, [<o
 // Livingmatter
 val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:abyssalsand>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
 for dim_dirt in dimensionalDirts {
-	mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
+    mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
 }
 <contenttweaker:livingmatter>.addTooltip(game.localize("dj2.livingmatter.desc0"));
 <contenttweaker:livingmatter>.addTooltip(game.localize("dj2.livingmatter.desc1"));
@@ -838,74 +838,74 @@ recipes.addShapedMirrored(<contenttweaker:soul_extractor>, [[<contenttweaker:dar
 /*
 
 recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.marked("sword").transform( function(item, player) {
-	return item.withTag({souls: item.tag.souls - 1});
+    return item.withTag({souls: item.tag.souls - 1});
 })],
 function(out, ins, cInfo) {
-	if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
-		return out;
-	} else {
-		return null;
-	}
+    if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
+        return out;
+    } else {
+        return null;
+    }
 }, null);
 */
 /*
 recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [ <contenttweaker:soul_extractor>.anyDamage().transformDamage(1), <abyssalcraft:soulreaper:*>.only( function(item) {
-	return item.tag has "souls" && item.tag.souls >= 1;
+    return item.tag has "souls" && item.tag.souls >= 1;
 } ).transform( function(item, player) {
-	return item.withTag({souls: item.tag.souls - 1});
+    return item.withTag({souls: item.tag.souls - 1});
 } ).reuse() ]);
 
 
 recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.reuse().marked("sword")],
 function(out, ins, cInfo) {
-	if(ins.sword.tag has "souls") {
-		if(ins.sword.tag.souls > 0) {
-			return out;
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
+    if(ins.sword.tag has "souls") {
+        if(ins.sword.tag.souls > 0) {
+            return out;
+        } else {
+            return null;
+        }
+    } else {
+        return null;
+    }
 },
 function(out, cInfo, player){
-	var sword_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
-				sword_position = i;
-				break;
-			}
-		}
-	}
-	val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
-	val sword_damage = cInfo.inventory.getStack(sword_position).damage;
-	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag({souls: number_of_souls - 1}));
+    var sword_position = 0 as int;
+    for i in 0 to cInfo.inventory.size {
+        if(!isNull(cInfo.inventory.getStack(i))) {
+            if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
+                sword_position = i;
+                break;
+            }
+        }
+    }
+    val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
+    val sword_damage = cInfo.inventory.getStack(sword_position).damage;
+    cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag({souls: number_of_souls - 1}));
 });
 */
 
 recipes.addShapeless("soul_of_the_dark_realm", <contenttweaker:soul_of_the_dark_realm>, [<contenttweaker:soul_extractor>.anyDamage().transformDamage(1),<abyssalcraft:soulreaper:*>.reuse().marked("sword")],
 function(out, ins, cInfo) {
-	if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
-		return out;
-	} else {
-		return null;
-	}
+    if(ins.sword.tag has "souls" && ins.sword.tag.souls > 0) {
+        return out;
+    } else {
+        return null;
+    }
 },
 function(out, cInfo, player){
-	var sword_position = 0 as int;
-	for i in 0 to cInfo.inventory.size {
-		if(!isNull(cInfo.inventory.getStack(i))) {
-			if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
-				sword_position = i;
-				break;
-			}
-		}
-	}
-	var sword_tag = cInfo.inventory.getStack(sword_position).tag as IData;
-	val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
-	val sword_damage = cInfo.inventory.getStack(sword_position).damage;
-	cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag(sword_tag + {souls: number_of_souls - 1}));
+    var sword_position = 0 as int;
+    for i in 0 to cInfo.inventory.size {
+        if(!isNull(cInfo.inventory.getStack(i))) {
+            if(cInfo.inventory.getStack(i).name == <abyssalcraft:soulreaper>.name) {
+                sword_position = i;
+                break;
+            }
+        }
+    }
+    var sword_tag = cInfo.inventory.getStack(sword_position).tag as IData;
+    val number_of_souls = cInfo.inventory.getStack(sword_position).tag.souls;
+    val sword_damage = cInfo.inventory.getStack(sword_position).damage;
+    cInfo.inventory.setStack(sword_position, <abyssalcraft:soulreaper>.withDamage(sword_damage).withTag(sword_tag + {souls: number_of_souls - 1}));
 });
 
 
@@ -983,9 +983,9 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:matrix_multi
 var aspect_counter = 0 as int;
 val allThaumcraftCTAspectStacks = [<aspect:aer>, <aspect:terra>, <aspect:ignis>, <aspect:aqua>, <aspect:ordo>, <aspect:perditio>, <aspect:vacuos>, <aspect:lux>, <aspect:motus>, <aspect:gelum>, <aspect:vitreus>, <aspect:metallum>, <aspect:victus>, <aspect:mortuus>, <aspect:potentia>, <aspect:permutatio>, <aspect:praecantatio>, <aspect:auram>, <aspect:alkimia>, <aspect:vitium>, <aspect:tenebrae>, <aspect:alienis>, <aspect:volatus>, <aspect:herba>, <aspect:instrumentum>, <aspect:fabrico>, <aspect:machina>, <aspect:vinculum>, <aspect:spiritus>, <aspect:cognitio>, <aspect:sensus>, <aspect:aversio>, <aspect:praemunio>, <aspect:desiderium>, <aspect:exanimis>, <aspect:bestia>, <aspect:humanus>, <aspect:sol>, <aspect:luna>, <aspect:stellae>, <aspect:diabolus>] as CTAspectStack[];
 for aspect in allThaumcraftAspects {
-	var cur_vis_crystal = <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]});
-	mods.thaumcraft.Infusion.registerRecipe("condensed_vis_crystal_" + aspect + "_crafting", "", itemUtils.getItem("contenttweaker:condensed_vis_crystal_" + aspect), 2, [allThaumcraftCTAspectStacks[aspect_counter] * 30], <thaumcraft:salis_mundus>, [cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal]);
-	aspect_counter += 1;
+    var cur_vis_crystal = <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: aspect}]});
+    mods.thaumcraft.Infusion.registerRecipe("condensed_vis_crystal_" + aspect + "_crafting", "", itemUtils.getItem("contenttweaker:condensed_vis_crystal_" + aspect), 2, [allThaumcraftCTAspectStacks[aspect_counter] * 30], <thaumcraft:salis_mundus>, [cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal,cur_vis_crystal]);
+    aspect_counter += 1;
 }
 
 // Stabilized End Crystal
@@ -1083,65 +1083,65 @@ Inscriber.addRecipe(<contenttweaker:thaumium_processor>, <minecraft:redstone>, f
 // Conducted Impetus
 recipes.addShapeless("conducted_impetus", <contenttweaker:conducted_impetus>, [<thaumicaugmentation:augment_caster_rift_energy_storage>.reuse().marked("conductor"),<contenttweaker:impetus_crystal>],
 function(out, ins, cInfo) {
-	if(ins.conductor.getCapNBT() has "Parent" && ins.conductor.getCapNBT().Parent has "energy" && ins.conductor.getCapNBT().Parent.energy has "energy" && ins.conductor.getCapNBT().Parent.energy.energy == 300) {
-		return out;
-	} else {
-		return null;
-	}
+    if(ins.conductor.getCapNBT() has "Parent" && ins.conductor.getCapNBT().Parent has "energy" && ins.conductor.getCapNBT().Parent.energy has "energy" && ins.conductor.getCapNBT().Parent.energy.energy == 300) {
+        return out;
+    } else {
+        return null;
+    }
 }, null);
 <contenttweaker:conducted_impetus>.addTooltip(game.localize("dj2.conducted_impetus.desc0"));
 <contenttweaker:conducted_impetus>.addTooltip(game.localize("dj2.conducted_impetus.desc1"));
 
 function checkBiomesAtPositions(biomeName as string, player_pos as Position3f, biomeLocations as int[][], cInfo as ICraftingInfo) as int {
-	var numOfMatches = 0 as int;
-	var check_pos as Position3f;
-	var add_x = 0 as int;
-	var add_z = 0 as int;
-	for coord_pair in biomeLocations {
-		add_x = coord_pair[0];
-		add_z = coord_pair[1];
-		check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
-		if(cInfo.player.world.getBiome(check_pos).name == biomeName) {
-			numOfMatches += 1;
-		}
-	}
-	return numOfMatches;
+    var numOfMatches = 0 as int;
+    var check_pos as Position3f;
+    var add_x = 0 as int;
+    var add_z = 0 as int;
+    for coord_pair in biomeLocations {
+        add_x = coord_pair[0];
+        add_z = coord_pair[1];
+        check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
+        if(cInfo.player.world.getBiome(check_pos).name == biomeName) {
+            numOfMatches += 1;
+        }
+    }
+    return numOfMatches;
 }
 
 // Arcanium Base
 recipes.addShaped("arcanium_base", <contenttweaker:arcanium_base>, [[<thaumcraft:stone_ancient_glyphed>,<enderio:block_alloy_endergy:1>,<thaumcraft:stone_ancient_glyphed>],[<contenttweaker:condensed_vis_crystal_stellae>,<contenttweaker:conducted_impetus>,<contenttweaker:condensed_vis_crystal_praecantatio>],[<thaumcraft:mechanism_complex>,<enderio:block_alloy_endergy:1>,<thaumcraft:mechanism_complex>]],
-	function(out, ins, cInfo) {
-		val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
-		val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
-		val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
-		val oceanBiomeLocations = [[0,0]] as int[][];
-		var cur_pos = cInfo.player.position as Position3f;
+    function(out, ins, cInfo) {
+        val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
+        val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
+        val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
+        val oceanBiomeLocations = [[0,0]] as int[][];
+        var cur_pos = cInfo.player.position as Position3f;
 
-		var mortumMatches = 0 as int;
-		var hellMatches = 0 as int;
-		var magicalForestMatches = 0 as int;
-		var oceanMatches = 0 as int;
+        var mortumMatches = 0 as int;
+        var hellMatches = 0 as int;
+        var magicalForestMatches = 0 as int;
+        var oceanMatches = 0 as int;
 
-		mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, cInfo);
-		hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, cInfo);
-		magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, cInfo);
-		oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, cInfo);
+        mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, cInfo);
+        hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, cInfo);
+        magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, cInfo);
+        oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, cInfo);
 
-		/*
-		cInfo.player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
-		cInfo.player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
-		cInfo.player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
-		cInfo.player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
-		*/
+        /*
+        cInfo.player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
+        cInfo.player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
+        cInfo.player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
+        cInfo.player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
+        */
 
-		if(mortumMatches >= 22 && hellMatches >= 15 && magicalForestMatches >= 7 && oceanMatches == 1 && cInfo.player.getDimension() == 0) {
-			//cInfo.player.sendChat("OUTPUT");
-			return out;
-		} else {
-			//cInfo.player.sendChat("NULL");
-			return null;
-		}
-	}, null);
+        if(mortumMatches >= 22 && hellMatches >= 15 && magicalForestMatches >= 7 && oceanMatches == 1 && cInfo.player.getDimension() == 0) {
+            //cInfo.player.sendChat("OUTPUT");
+            return out;
+        } else {
+            //cInfo.player.sendChat("NULL");
+            return null;
+        }
+    }, null);
 <contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc0"));
 <contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc1"));
 <contenttweaker:arcanium_base>.addTooltip(game.localize("dj2.arcanium_base.desc2"));
@@ -1204,27 +1204,27 @@ recipes.addShapedMirrored(<contenttweaker:enchanters_phd>, [[null,<minecraft:enc
 // Astral Core
 recipes.addShapedMirrored("contenttweaker_astral_core", <contenttweaker:astral_core>, [[<astralsorcery:itemtunedcelestialcrystal>.marked("c1"),null,<astralsorcery:itemtunedcelestialcrystal>.marked("c2")],[null,<astralsorcery:itemenchantmentamulet>,null],[<astralsorcery:itemtunedcelestialcrystal>.marked("c3"),null,<astralsorcery:itemtunedcelestialcrystal>.marked("c4")]],
 function(out, ins, cInfo) {
-	if(ins.c1.tag has "astralsorcery" && ins.c2.tag has "astralsorcery" && ins.c3.tag has "astralsorcery" && ins.c4.tag has "astralsorcery") {
-		if(ins.c1.tag.astralsorcery has "constellationName" && ins.c2.tag.astralsorcery has "constellationName" && ins.c3.tag.astralsorcery has "constellationName" && ins.c4.tag.astralsorcery has "constellationName") {
-			if(ins.c1.tag.astralsorcery has "trait" && ins.c2.tag.astralsorcery has "trait" && ins.c3.tag.astralsorcery has "trait" && ins.c4.tag.astralsorcery has "trait") {
+    if(ins.c1.tag has "astralsorcery" && ins.c2.tag has "astralsorcery" && ins.c3.tag has "astralsorcery" && ins.c4.tag has "astralsorcery") {
+        if(ins.c1.tag.astralsorcery has "constellationName" && ins.c2.tag.astralsorcery has "constellationName" && ins.c3.tag.astralsorcery has "constellationName" && ins.c4.tag.astralsorcery has "constellationName") {
+            if(ins.c1.tag.astralsorcery has "trait" && ins.c2.tag.astralsorcery has "trait" && ins.c3.tag.astralsorcery has "trait" && ins.c4.tag.astralsorcery has "trait") {
 
-				val traits = [ins.c1.tag.astralsorcery.trait,ins.c2.tag.astralsorcery.trait,ins.c3.tag.astralsorcery.trait,ins.c4.tag.astralsorcery.trait] as string[];
-				if(traits has "astralsorcery.constellation.alcara" && traits has "astralsorcery.constellation.gelu" && traits has "astralsorcery.constellation.ulteria" && traits has "astralsorcery.constellation.vorux") {
-					return out;
-				} else {
-					return null;
-				}
+                val traits = [ins.c1.tag.astralsorcery.trait,ins.c2.tag.astralsorcery.trait,ins.c3.tag.astralsorcery.trait,ins.c4.tag.astralsorcery.trait] as string[];
+                if(traits has "astralsorcery.constellation.alcara" && traits has "astralsorcery.constellation.gelu" && traits has "astralsorcery.constellation.ulteria" && traits has "astralsorcery.constellation.vorux") {
+                    return out;
+                } else {
+                    return null;
+                }
 
 
-			} else {
-				return null;
-			}
-		} else {
-			return null;
-		}
-	} else {
-		return null;
-	}
+            } else {
+                return null;
+            }
+        } else {
+            return null;
+        }
+    } else {
+        return null;
+    }
 
 }, null);
 <contenttweaker:astral_core>.addTooltip(game.localize("dj2.astral_core.desc0"));
@@ -1328,16 +1328,16 @@ recipes.addShaped(<contenttweaker:awakened_dragon_token>, [[<draconicevolution:d
 // Crystal Core
 recipes.addShaped("crystal_core", <contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<astralsorcery:itemrockcrystalsimple>.marked("rock_crystal"),<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]],
 function(out,ins,cInfo) {
-	if(ins.rock_crystal.tag has "astralsorcery") {
-		if(ins.rock_crystal.tag.astralsorcery has "crystalProperties") {
-			if(ins.rock_crystal.tag.astralsorcery.crystalProperties has "size" && ins.rock_crystal.tag.astralsorcery.crystalProperties has "purity") {
-				if(ins.rock_crystal.tag.astralsorcery.crystalProperties.size >= 300 && ins.rock_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
-					return out;
-				}
-			}
-		}
-	}
-	return null;
+    if(ins.rock_crystal.tag has "astralsorcery") {
+        if(ins.rock_crystal.tag.astralsorcery has "crystalProperties") {
+            if(ins.rock_crystal.tag.astralsorcery.crystalProperties has "size" && ins.rock_crystal.tag.astralsorcery.crystalProperties has "purity") {
+                if(ins.rock_crystal.tag.astralsorcery.crystalProperties.size >= 300 && ins.rock_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
+                    return out;
+                }
+            }
+        }
+    }
+    return null;
 }, null);
 recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>],[<extendedcrafting:material:24>,<rftools:infused_diamond>,<extendedcrafting:material:24>],[<contenttweaker:titanium_box>,<contenttweaker:condensed_vis_crystal_vitreus>,<contenttweaker:titanium_box>]]);
 <contenttweaker:crystal_core>.addTooltip(game.localize("dj2.crystal_core.desc0"));
@@ -1349,16 +1349,16 @@ recipes.addShaped(<contenttweaker:crystal_core>, [[<contenttweaker:titanium_box>
 // Celestial Crystal Core
 recipes.addShaped("celestial_crystal_core", <contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<astralsorcery:itemcelestialcrystal>.marked("celestial_crystal"),<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]],
 function(out,ins,cInfo) {
-	if(ins.celestial_crystal.tag has "astralsorcery") {
-		if(ins.celestial_crystal.tag.astralsorcery has "crystalProperties") {
-			if(ins.celestial_crystal.tag.astralsorcery.crystalProperties has "size" && ins.celestial_crystal.tag.astralsorcery.crystalProperties has "purity") {
-				if(ins.celestial_crystal.tag.astralsorcery.crystalProperties.size >= 700 && ins.celestial_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
-					return out;
-				}
-			}
-		}
-	}
-	return null;
+    if(ins.celestial_crystal.tag has "astralsorcery") {
+        if(ins.celestial_crystal.tag.astralsorcery has "crystalProperties") {
+            if(ins.celestial_crystal.tag.astralsorcery.crystalProperties has "size" && ins.celestial_crystal.tag.astralsorcery.crystalProperties has "purity") {
+                if(ins.celestial_crystal.tag.astralsorcery.crystalProperties.size >= 700 && ins.celestial_crystal.tag.astralsorcery.crystalProperties.purity >= 75) {
+                    return out;
+                }
+            }
+        }
+    }
+    return null;
 }, null);
 recipes.addShaped(<contenttweaker:celestial_crystal_core>, [[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>],[<mysticalagradditions:storage:1>,<avaritia:resource:3>,<mysticalagradditions:storage:1>],[<contenttweaker:crystal_core>,<draconicevolution:chaotic_core>,<contenttweaker:crystal_core>]]);
 <contenttweaker:celestial_crystal_core>.addTooltip(game.localize("dj2.celestial_crystal_core.desc0"));
@@ -1636,33 +1636,33 @@ val logic_puzzle_modifiers = [<contenttweaker:age_modifier>,<contenttweaker:frie
 val logic_puzzle_adders = [<contenttweaker:modifier_1>,<contenttweaker:modifier_m1>,<contenttweaker:modifier_10>,<contenttweaker:modifier_m10>,<contenttweaker:modifier_100>,<contenttweaker:modifier_m100>,<contenttweaker:modifier_1000>,<contenttweaker:modifier_m1000>] as IItemStack[];
 val logic_puzzle_adder_vals = [1, -1, 10, -10, 100, -100, 1000, -1000] as int[];
 for c in logic_puzzle_characters {
-	for m in 0 to 3 { // modifiers
-		for a in 0 to 8 { // adders
-			recipes.addShapeless(c.name + (m as string) + (a as string), c, [c.marked("input"),logic_puzzle_modifiers[m],logic_puzzle_adders[a]],
-				function(out,ins,cInfo) {
+    for m in 0 to 3 { // modifiers
+        for a in 0 to 8 { // adders
+            recipes.addShapeless(c.name + (m as string) + (a as string), c, [c.marked("input"),logic_puzzle_modifiers[m],logic_puzzle_adders[a]],
+                function(out,ins,cInfo) {
 
-					var age = ins.input.tag.Age as int;
-					var friends = ins.input.tag.Friends as int;
-					var height = ins.input.tag.Height as int;
+                    var age = ins.input.tag.Age as int;
+                    var friends = ins.input.tag.Friends as int;
+                    var height = ins.input.tag.Height as int;
 
-					if(m == 0) {
-						age += logic_puzzle_adder_vals[a];
-						age = max(0,age);
-					}
-					if(m == 1) {
-						friends += logic_puzzle_adder_vals[a];
-						friends = max(0,friends);
-					}
-					if(m == 2) {
-						height += logic_puzzle_adder_vals[a];
-						height = max(0,height);
-					}
+                    if(m == 0) {
+                        age += logic_puzzle_adder_vals[a];
+                        age = max(0,age);
+                    }
+                    if(m == 1) {
+                        friends += logic_puzzle_adder_vals[a];
+                        friends = max(0,friends);
+                    }
+                    if(m == 2) {
+                        height += logic_puzzle_adder_vals[a];
+                        height = max(0,height);
+                    }
 
-					return out.withTag({Age: age, Friends: friends, Height: height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
+                    return out.withTag({Age: age, Friends: friends, Height: height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
 
-				}, null);
-		}
-	}
+                }, null);
+        }
+    }
 }
 
 // Book of Logic
@@ -1682,12 +1682,12 @@ mods.jei.JEI.addItem(book_of_logic);
 // If you're here because you're a dirty cheater, feel really-really ashamed of yourself!
 recipes.addShapeless("essence_of_logic", <contenttweaker:essence_of_logic>, [<contenttweaker:essence_of_thought>,<contenttweaker:steve>.marked("steve"),<contenttweaker:alex>.marked("alex"),<contenttweaker:herobrine>.marked("herobrine")],
 function(out,ins,cInfo) {
-	if(ins.steve.tag has "Age" && ins.steve.tag has "Friends" && ins.steve.tag has "Height" && ins.alex.tag has "Age" && ins.alex.tag has "Friends" && ins.alex.tag has "Height" && ins.herobrine.tag has "Age" && ins.herobrine.tag has "Friends" && ins.herobrine.tag has "Height") {
-		if(ins.steve.tag.Age == 28 && ins.steve.tag.Friends == 1708 && ins.steve.tag.Height == 181 && ins.alex.tag.Age == 27 && ins.alex.tag.Friends == 1889 && ins.alex.tag.Height == 174 && ins.herobrine.tag.Age == 50 && ins.herobrine.tag.Friends == 1 && ins.herobrine.tag.Height == 181) {
-			return out;
-		}
-	}
-	return null;
+    if(ins.steve.tag has "Age" && ins.steve.tag has "Friends" && ins.steve.tag has "Height" && ins.alex.tag has "Age" && ins.alex.tag has "Friends" && ins.alex.tag has "Height" && ins.herobrine.tag has "Age" && ins.herobrine.tag has "Friends" && ins.herobrine.tag has "Height") {
+        if(ins.steve.tag.Age == 28 && ins.steve.tag.Friends == 1708 && ins.steve.tag.Height == 181 && ins.alex.tag.Age == 27 && ins.alex.tag.Friends == 1889 && ins.alex.tag.Height == 174 && ins.herobrine.tag.Age == 50 && ins.herobrine.tag.Friends == 1 && ins.herobrine.tag.Height == 181) {
+            return out;
+        }
+    }
+    return null;
 }, null);
 <contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc0"));
 <contenttweaker:essence_of_logic>.addTooltip(game.localize("dj2.essence_of_logic.desc1"));
@@ -1844,13 +1844,13 @@ for entry in <ore:foodFlour>.items {
 // Burger
 val cheeses = [<actuallyadditions:item_food>,<galacticraftcore:food:4>,<divinerpg:cheese>,<galacticraftcore:cheese_curd>] as IItemStack[];
 for c in cheeses {
-	recipes.addShapedMirrored(<contenttweaker:burger>, [[null,<actuallyadditions:item_food:10>,null],[<erebus:erebus_food:15>,<minecraft:cooked_beef>,c],[null,<actuallyadditions:item_food:10>,null]]);
+    recipes.addShapedMirrored(<contenttweaker:burger>, [[null,<actuallyadditions:item_food:10>,null],[<erebus:erebus_food:15>,<minecraft:cooked_beef>,c],[null,<actuallyadditions:item_food:10>,null]]);
 }
 
 // Taco
 val doughs = [<actuallyadditions:item_misc:4>,<actuallyadditions:item_misc:9>] as IItemStack[];
 for d in doughs {
-	recipes.addShapedMirrored(<contenttweaker:taco>, [[<erebus:erebus_food:15>,<minecraft:beetroot>,d],[<minecraft:cooked_porkchop>,<minecraft:cooked_chicken>,d],[d,d,d]]);
+    recipes.addShapedMirrored(<contenttweaker:taco>, [[<erebus:erebus_food:15>,<minecraft:beetroot>,d],[<minecraft:cooked_porkchop>,<minecraft:cooked_chicken>,d],[d,d,d]]);
 }
 
 // Cosmic Neutronium Nugget

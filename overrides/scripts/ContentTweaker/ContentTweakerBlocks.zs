@@ -289,74 +289,74 @@ val dimension_names_lower = ["eden", "wildwood", "apalachia", "skythern", "mortu
 
 for dim in dimension_names_lower {
 
-	var dim_stone = VanillaFactory.createBlock(dim + "_stone", <blockmaterial:rock>);
-	//dim_stone.setBlockHardness(18000000);
-	//dim_stone.setBlockResistance(3600000);
-	dim_stone.setBlockHardness(-1);
-	dim_stone.setBlockResistance(16777215);
-	dim_stone.setToolClass(null);
-	dim_stone.setWitherProof(true);
-	dim_stone.setToolLevel(16777215);
-	dim_stone.setBlockSoundType(<soundtype:stone>);
-	dim_stone.register();
+    var dim_stone = VanillaFactory.createBlock(dim + "_stone", <blockmaterial:rock>);
+    //dim_stone.setBlockHardness(18000000);
+    //dim_stone.setBlockResistance(3600000);
+    dim_stone.setBlockHardness(-1);
+    dim_stone.setBlockResistance(16777215);
+    dim_stone.setToolClass(null);
+    dim_stone.setWitherProof(true);
+    dim_stone.setToolLevel(16777215);
+    dim_stone.setBlockSoundType(<soundtype:stone>);
+    dim_stone.register();
 
-	var dim_bricks = VanillaFactory.createBlock(dim + "_bricks", <blockmaterial:rock>);
-	dim_bricks.setBlockHardness(-1);
-	dim_bricks.setBlockResistance(16777215);
-	dim_bricks.setToolClass(null);
-	dim_bricks.setWitherProof(true);
-	dim_bricks.setToolLevel(16777215);
-	dim_bricks.setBlockSoundType(<soundtype:stone>);
-	dim_bricks.register();
+    var dim_bricks = VanillaFactory.createBlock(dim + "_bricks", <blockmaterial:rock>);
+    dim_bricks.setBlockHardness(-1);
+    dim_bricks.setBlockResistance(16777215);
+    dim_bricks.setToolClass(null);
+    dim_bricks.setWitherProof(true);
+    dim_bricks.setToolLevel(16777215);
+    dim_bricks.setBlockSoundType(<soundtype:stone>);
+    dim_bricks.register();
 
-	var dim_pillar = VanillaFactory.createBlock(dim + "_pillar", <blockmaterial:rock>);
-	dim_pillar.setBlockHardness(-1);
-	dim_pillar.setBlockResistance(16777215);
-	dim_pillar.setToolClass(null);
-	dim_pillar.setWitherProof(true);
-	dim_pillar.setToolLevel(16777215);
-	dim_pillar.setBlockSoundType(<soundtype:stone>);
-	dim_pillar.register();
+    var dim_pillar = VanillaFactory.createBlock(dim + "_pillar", <blockmaterial:rock>);
+    dim_pillar.setBlockHardness(-1);
+    dim_pillar.setBlockResistance(16777215);
+    dim_pillar.setToolClass(null);
+    dim_pillar.setWitherProof(true);
+    dim_pillar.setToolLevel(16777215);
+    dim_pillar.setBlockSoundType(<soundtype:stone>);
+    dim_pillar.register();
 
-	var dim_floor = VanillaFactory.createBlock(dim + "_floor", <blockmaterial:rock>);
-	dim_floor.setBlockHardness(-1);
-	dim_floor.setBlockResistance(16777215);
-	dim_floor.setToolClass(null);
-	dim_floor.setWitherProof(true);
-	dim_floor.setToolLevel(16777215);
-	dim_floor.setBlockSoundType(<soundtype:stone>);
-	dim_floor.register();
+    var dim_floor = VanillaFactory.createBlock(dim + "_floor", <blockmaterial:rock>);
+    dim_floor.setBlockHardness(-1);
+    dim_floor.setBlockResistance(16777215);
+    dim_floor.setToolClass(null);
+    dim_floor.setWitherProof(true);
+    dim_floor.setToolLevel(16777215);
+    dim_floor.setBlockSoundType(<soundtype:stone>);
+    dim_floor.register();
 
-	var dim_roof = VanillaFactory.createBlock(dim + "_roof", <blockmaterial:rock>);
-	dim_roof.setBlockHardness(-1);
-	dim_roof.setBlockResistance(16777215);
-	dim_roof.setToolClass(null);
-	dim_roof.setWitherProof(true);
-	dim_roof.setToolLevel(16777215);
-	dim_roof.setBlockSoundType(<soundtype:stone>);
-	dim_roof.register();
+    var dim_roof = VanillaFactory.createBlock(dim + "_roof", <blockmaterial:rock>);
+    dim_roof.setBlockHardness(-1);
+    dim_roof.setBlockResistance(16777215);
+    dim_roof.setToolClass(null);
+    dim_roof.setWitherProof(true);
+    dim_roof.setToolLevel(16777215);
+    dim_roof.setBlockSoundType(<soundtype:stone>);
+    dim_roof.register();
 
-	var dim_glass = VanillaFactory.createBlock(dim + "_glass", <blockmaterial:glass>);
-	dim_glass.setBlockHardness(-1);
-	dim_glass.setBlockResistance(16777215);
-	dim_glass.setBlockLayer("TRANSLUCENT");
-	dim_glass.setToolClass(null);
-	dim_glass.setLightOpacity(0);
-	dim_glass.setTranslucent(true);
-	dim_glass.setFullBlock(false);
-	dim_glass.setWitherProof(true);
-	dim_glass.setToolLevel(16777215);
-	dim_glass.setBlockSoundType(<soundtype:glass>);
-	dim_glass.register();
+    var dim_glass = VanillaFactory.createBlock(dim + "_glass", <blockmaterial:glass>);
+    dim_glass.setBlockHardness(-1);
+    dim_glass.setBlockResistance(16777215);
+    dim_glass.setBlockLayer("TRANSLUCENT");
+    dim_glass.setToolClass(null);
+    dim_glass.setLightOpacity(0);
+    dim_glass.setTranslucent(true);
+    dim_glass.setFullBlock(false);
+    dim_glass.setWitherProof(true);
+    dim_glass.setToolLevel(16777215);
+    dim_glass.setBlockSoundType(<soundtype:glass>);
+    dim_glass.register();
 
-	var dim_door = VanillaFactory.createBlock(dim + "_door", <blockmaterial:iron>);
-	dim_door.setBlockHardness(-1);
-	dim_door.setBlockResistance(16777215);
-	dim_door.setToolClass(null);
-	dim_door.setWitherProof(true);
-	dim_door.setToolLevel(16777215);
-	dim_door.setBlockSoundType(<soundtype:metal>);
-	dim_door.register();
+    var dim_door = VanillaFactory.createBlock(dim + "_door", <blockmaterial:iron>);
+    dim_door.setBlockHardness(-1);
+    dim_door.setBlockResistance(16777215);
+    dim_door.setToolClass(null);
+    dim_door.setWitherProof(true);
+    dim_door.setToolLevel(16777215);
+    dim_door.setBlockSoundType(<soundtype:metal>);
+    dim_door.register();
 
 }
 
@@ -415,15 +415,15 @@ electrotine_ore.setBlockSoundType(<soundtype:stone>);
 electrotine_ore.register();
 electrotine_ore.setDropHandler(function(drops, world, position, state, fortune) {
 
-	drops.clear();
-	drops.add(<item:contenttweaker:electrotine> * 2);
-	drops.add(<item:contenttweaker:electrotine> % 50);
-	drops.add(<item:contenttweaker:electrotine> % 50);
-	if(fortune > 0) {
-		drops.add(<item:contenttweaker:electrotine> * fortune);
-	}
+    drops.clear();
+    drops.add(<item:contenttweaker:electrotine> * 2);
+    drops.add(<item:contenttweaker:electrotine> % 50);
+    drops.add(<item:contenttweaker:electrotine> % 50);
+    if(fortune > 0) {
+        drops.add(<item:contenttweaker:electrotine> * fortune);
+    }
 
-	return;
+    return;
 });
 
 var angelic_silicon_crystal_block = VanillaFactory.createBlock("angelic_silicon_crystal_block", <blockmaterial:rock>);

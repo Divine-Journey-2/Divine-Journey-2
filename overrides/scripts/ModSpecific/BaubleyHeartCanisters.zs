@@ -47,7 +47,7 @@ function addAstralSorceryIrridescentAltarRecipeWithConstellation(name as string,
 
 var recipe_list = [i[1][1], i[1][2], i[1][3], i[2][1], i[2][2], i[2][3], i[3][1], i[3][2], i[3][3], i[0][0], i[0][4], i[4][0], i[4][4], i[0][1], i[0][3], i[1][0], i[1][4], i[3][0], i[3][4], i[4][1], i[4][3], i[0][2], i[2][0], i[2][4], i[4][2]] as IIngredient[];
 for item in additionals {
-	recipe_list += item;
+    recipe_list += item;
 }
 mods.astralsorcery.Altar.addTraitAltarRecipe(name, output, starlight, 100, recipe_list, constellation);
 

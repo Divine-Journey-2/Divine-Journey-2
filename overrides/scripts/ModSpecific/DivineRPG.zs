@@ -72,10 +72,10 @@ recipes.addShaped(<divinerpg:twilight_clock>, [[<openblocks:tank>.withTag({tank:
 <divinerpg:twilight_clock>.addTooltip(game.localize("dj2.twilight_clock.desc1"));
 
 function divinerpg_new_gem_and_chunk_recipes(fragments as IItemStack, gem as IItemStack, chunk as IItemStack) {
-	recipes.remove(gem);
-	recipes.addShaped(gem, [[null,fragments,null],[fragments,fragments,fragments],[null,fragments,null]]);
-	recipes.remove(chunk);
-	recipes.addShaped(chunk, [[null,gem,null],[gem,gem,gem],[null,gem,null]]);
+    recipes.remove(gem);
+    recipes.addShaped(gem, [[null,fragments,null],[fragments,fragments,fragments],[null,fragments,null]]);
+    recipes.remove(chunk);
+    recipes.addShaped(chunk, [[null,gem,null],[gem,gem,gem],[null,gem,null]]);
 }
 
 // Eden Gem & Chunk
@@ -151,8 +151,8 @@ recipes.remove(<divinerpg:rupee_boots>);
 recipes.addShaped(<divinerpg:rupee_boots>, [[<thermalfoundation:material:136>,null,<thermalfoundation:material:136>],[<divinerpg:rupee_block>,null,<divinerpg:rupee_block>]]);
 
 function add_DivineRPG_dimensional_armor_recipes(cur_helmet as IItemStack, cur_chestplate as IItemStack, cur_leggings as IItemStack, cur_boots as IItemStack,
-												prev_helmet as IItemStack, prev_chestplate as IItemStack, prev_leggings as IItemStack, prev_boots as IItemStack,
-												drpg_chunk as IItemStack, extra_material as IItemStack) {
+                                                prev_helmet as IItemStack, prev_chestplate as IItemStack, prev_leggings as IItemStack, prev_boots as IItemStack,
+                                                drpg_chunk as IItemStack, extra_material as IItemStack) {
 recipes.remove(cur_helmet);
 recipes.addShaped(cur_helmet, [[extra_material,drpg_chunk,extra_material],[drpg_chunk,prev_helmet,drpg_chunk]]);
 recipes.remove(cur_chestplate);
@@ -165,23 +165,23 @@ recipes.addShaped(cur_boots, [[drpg_chunk,null,drpg_chunk],[extra_material,prev_
 
 // Wildwood Armor
 add_DivineRPG_dimensional_armor_recipes(<divinerpg:wildwood_helmet>,<divinerpg:wildwood_chestplate>,<divinerpg:wildwood_leggings>,<divinerpg:wildwood_boots>,
-										<divinerpg:eden_helmet>,<divinerpg:eden_chestplate>,<divinerpg:eden_leggings>,<divinerpg:eden_boots>,
-										<divinerpg:wildwood_chunk>,<botania:storage>);
+                                        <divinerpg:eden_helmet>,<divinerpg:eden_chestplate>,<divinerpg:eden_leggings>,<divinerpg:eden_boots>,
+                                        <divinerpg:wildwood_chunk>,<botania:storage>);
 
 // Apalachia Armor
 add_DivineRPG_dimensional_armor_recipes(<divinerpg:apalachia_helmet>,<divinerpg:apalachia_chestplate>,<divinerpg:apalachia_leggings>,<divinerpg:apalachia_boots>,
-										<divinerpg:wildwood_helmet>,<divinerpg:wildwood_chestplate>,<divinerpg:wildwood_leggings>,<divinerpg:wildwood_boots>,
-										<divinerpg:apalachia_chunk>,<botania:storage:2>);
+                                        <divinerpg:wildwood_helmet>,<divinerpg:wildwood_chestplate>,<divinerpg:wildwood_leggings>,<divinerpg:wildwood_boots>,
+                                        <divinerpg:apalachia_chunk>,<botania:storage:2>);
 
 // Skythern Armor
 add_DivineRPG_dimensional_armor_recipes(<divinerpg:skythern_helmet>,<divinerpg:skythern_chestplate>,<divinerpg:skythern_leggings>,<divinerpg:skythern_boots>,
-										<divinerpg:apalachia_helmet>,<divinerpg:apalachia_chestplate>,<divinerpg:apalachia_leggings>,<divinerpg:apalachia_boots>,
-										<divinerpg:skythern_chunk>,<thaumcraft:plate:3>);
+                                        <divinerpg:apalachia_helmet>,<divinerpg:apalachia_chestplate>,<divinerpg:apalachia_leggings>,<divinerpg:apalachia_boots>,
+                                        <divinerpg:skythern_chunk>,<thaumcraft:plate:3>);
 
 // Mortum Armor
 add_DivineRPG_dimensional_armor_recipes(<divinerpg:mortum_helmet>,<divinerpg:mortum_chestplate>,<divinerpg:mortum_leggings>,<divinerpg:mortum_boots>,
-										<divinerpg:skythern_helmet>,<divinerpg:skythern_chestplate>,<divinerpg:skythern_leggings>,<divinerpg:skythern_boots>,
-										<divinerpg:mortum_chunk>,<bewitchment:cold_iron_ingot>);
+                                        <divinerpg:skythern_helmet>,<divinerpg:skythern_chestplate>,<divinerpg:skythern_leggings>,<divinerpg:skythern_boots>,
+                                        <divinerpg:mortum_chunk>,<bewitchment:cold_iron_ingot>);
 
 // Wildwood Block
 recipes.remove(<divinerpg:wildwood_block>);
@@ -269,8 +269,8 @@ recipes.addShaped(<divinerpg:nightmare_bed>, [[<divinerpg:acceleron>,<divinerpg:
 
 // Eden to Mortum Bows
 function addDivineRPGBowRecipe(new_bow as IItemStack, old_bow as IItemStack, new_material as IIngredient) {
-	recipes.remove(new_bow);
-	recipes.addShapedMirrored(new_bow, [[null,new_material,<botania:manaresource:16>],[new_material,old_bow,<botania:manaresource:16>],[null,new_material,<botania:manaresource:16>]]);
+    recipes.remove(new_bow);
+    recipes.addShapedMirrored(new_bow, [[null,new_material,<botania:manaresource:16>],[new_material,old_bow,<botania:manaresource:16>],[null,new_material,<botania:manaresource:16>]]);
 }
 
 // Eden Bow

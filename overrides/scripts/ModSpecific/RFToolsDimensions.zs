@@ -39,8 +39,8 @@ recipes.remove(<rftoolsdim:dimlet_workbench>);
 recipes.addShaped(<rftoolsdim:dimlet_workbench>, [[<alchemistry:ingot:90>,<avaritia:extreme_crafting_table>,<alchemistry:ingot:90>],[<rftoolsdim:empty_dimension_tab>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftoolsdim:empty_dimension_tab>],[<alchemistry:ingot:90>,<avaritia:extreme_crafting_table>,<alchemistry:ingot:90>]]);
 
 function addRFToolsDimensionsAbsorberRecipe(output as IItemStack, input_material as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[input_material,<actuallyadditions:block_shock_suppressor>,input_material],[<actuallyadditions:block_shock_suppressor>,<contenttweaker:stabilized_dimensional_machine_frame>,<actuallyadditions:block_shock_suppressor>],[input_material,<actuallyadditions:block_shock_suppressor>,input_material]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[input_material,<actuallyadditions:block_shock_suppressor>,input_material],[<actuallyadditions:block_shock_suppressor>,<contenttweaker:stabilized_dimensional_machine_frame>,<actuallyadditions:block_shock_suppressor>],[input_material,<actuallyadditions:block_shock_suppressor>,input_material]]);
 }
 
 // Material Absorber
@@ -97,12 +97,12 @@ recipes.remove(<rftoolsdim:dimensional_pattern2_block>);
 recipes.addShaped(<rftoolsdim:dimensional_pattern2_block>, [[<rftoolsdim:dimensional_blank_block>,<ore:dyeWhite>,<rftoolsdim:dimensional_blank_block>],[<rftoolsdim:dimensional_blank_block>,<rftoolsdim:dimensional_blank_block>,<rftoolsdim:dimensional_blank_block>],[<rftoolsdim:dimensional_blank_block>,<ore:dyeWhite>,<rftoolsdim:dimensional_blank_block>]]);
 
 function addRFToolsDimensionsDimletRecipe(output as IItemStack, input as IIngredient, isAdvanced as bool) {
-	recipes.remove(output);
-	if(!isAdvanced) {
-		recipes.addShaped(output, [[input,input,input],[<appliedenergistics2:material:28>,<contenttweaker:copper_bismid_carbonate_sheet>,<appliedenergistics2:material:28>],[input,input,input]]);
-	} else {
-		recipes.addShaped(output, [[input,input,input],[<appliedenergistics2:material:28>,<rftoolsdim:dimlet_template>,<appliedenergistics2:material:28>],[input,input,input]]);
-	}
+    recipes.remove(output);
+    if(!isAdvanced) {
+        recipes.addShaped(output, [[input,input,input],[<appliedenergistics2:material:28>,<contenttweaker:copper_bismid_carbonate_sheet>,<appliedenergistics2:material:28>],[input,input,input]]);
+    } else {
+        recipes.addShaped(output, [[input,input,input],[<appliedenergistics2:material:28>,<rftoolsdim:dimlet_template>,<appliedenergistics2:material:28>],[input,input,input]]);
+    }
 }
 
 // Feature Dimlet (None)

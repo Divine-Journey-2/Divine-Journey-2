@@ -381,16 +381,16 @@ ingot_of_elevation.onItemUpdate = function(itemStack, world, owner, slot, isSele
     if(world.remote) {
         return;
     }
-	if(owner instanceof IPlayer) {
-		val player as IPlayer = owner;
-		if(isSelected) {
-			val randomInt = world.random.nextInt(240) as int;
-			if(randomInt == 0) {
-				Commands.call("effect @p minecraft:levitation 3 0 true", player, world, false, true);
-			}
-		}
-	}
-	return;
+    if(owner instanceof IPlayer) {
+        val player as IPlayer = owner;
+        if(isSelected) {
+            val randomInt = world.random.nextInt(240) as int;
+            if(randomInt == 0) {
+                Commands.call("effect @p minecraft:levitation 3 0 true", player, world, false, true);
+            }
+        }
+    }
+    return;
 };
 ingot_of_elevation.register();
 var fluxed_electrum_ingot = VanillaFactory.createItem("fluxed_electrum_ingot");
@@ -761,7 +761,7 @@ omothol_teleporter.itemRightClick = function(stack, world, player, hand) {
         return "PASS";
     }
     stack.damage(2, player);
-	Commands.call("tpx @p 0 80 0 52", player, world, false, true);
+    Commands.call("tpx @p 0 80 0 52", player, world, false, true);
     return "SUCCESS";
 };
 omothol_teleporter.register();
@@ -781,8 +781,8 @@ matrix_multiplication_unit.glowing = true;
 matrix_multiplication_unit.register();
 val allThaumcraftAspects_ = ["aer", "terra", "ignis", "aqua", "ordo", "perditio", "vacuos", "lux", "motus", "gelum", "vitreus", "metallum", "victus", "mortuus", "potentia", "permutatio", "praecantatio", "auram", "alkimia", "vitium", "tenebrae", "alienis", "volatus", "herba", "instrumentum", "fabrico", "machina", "vinculum", "spiritus", "cognitio", "sensus", "aversio", "praemunio", "desiderium", "exanimis", "bestia", "humanus", "sol", "luna", "stellae", "diabolus"] as string[];
 for aspect in allThaumcraftAspects_ {
-	var condensed_vis_crystal = VanillaFactory.createItem("condensed_vis_crystal_" + aspect);
-	condensed_vis_crystal.register();
+    var condensed_vis_crystal = VanillaFactory.createItem("condensed_vis_crystal_" + aspect);
+    condensed_vis_crystal.register();
 }
 var woodland_mansion_locator_token = VanillaFactory.createItem("woodland_mansion_locator_token");
 woodland_mansion_locator_token.maxStackSize = 1;
@@ -793,7 +793,7 @@ woodland_mansion_locator_token.itemRightClick = function(stack, world, player, h
     //}
     stack.damage(2, player);
     player.executeCommand("locate Mansion");
-	Commands.call("locate Mansion", player, world, false, true);
+    Commands.call("locate Mansion", player, world, false, true);
     return "SUCCESS";
 };
 woodland_mansion_locator_token.register();
@@ -806,7 +806,7 @@ abyssal_wasteland_teleporter.itemRightClick = function(stack, world, player, han
         return "PASS";
     }
     stack.damage(1, player);
-	Commands.call("tpx @p 0 80 0 50", player, world, false, true);
+    Commands.call("tpx @p 0 80 0 50", player, world, false, true);
     return "SUCCESS";
 };
 abyssal_wasteland_teleporter.register();
@@ -845,15 +845,15 @@ flame_devourer_pendant.itemRightClick = function(stack, world, player, hand) {
     }
     var found = false as bool;
     for p in player.activePotionEffects {
-		//Commands.call("say " + p.effectName, player, world);
-    	if(p.effectName == "bewitchment.hellfire") {
-    		found = true;
-    	}
+        //Commands.call("say " + p.effectName, player, world);
+        if(p.effectName == "bewitchment.hellfire") {
+            found = true;
+        }
     }
     if(found) {
-	    stack.damage(1, player);
-		Commands.call("give @p contenttweaker:ignition 1 0", player, world, false, true);
-    	return "SUCCESS";
+        stack.damage(1, player);
+        Commands.call("give @p contenttweaker:ignition 1 0", player, world, false, true);
+        return "SUCCESS";
     }
     return "FAIL";
 };
@@ -889,49 +889,49 @@ primordial_fragment.glowing = true;
 primordial_fragment.register();
 
 function checkBiomesAtPositions(biomeName as string, player_pos as crafttweaker.util.Position3f, biomeLocations as int[][], world as crafttweaker.world.IWorld) as int {
-	var numOfMatches = 0 as int;
-	var check_pos as crafttweaker.util.Position3f;
-	var add_x = 0 as int;
-	var add_z = 0 as int;
-	for coord_pair in biomeLocations {
-		add_x = coord_pair[0];
-		add_z = coord_pair[1];
-		check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
-		if(world.getBiome(check_pos).name == biomeName) {
-			numOfMatches += 1;
-		}
-	}
-	return numOfMatches;
+    var numOfMatches = 0 as int;
+    var check_pos as crafttweaker.util.Position3f;
+    var add_x = 0 as int;
+    var add_z = 0 as int;
+    for coord_pair in biomeLocations {
+        add_x = coord_pair[0];
+        add_z = coord_pair[1];
+        check_pos = crafttweaker.util.Position3f.create(player_pos.x + add_x, player_pos.y, player_pos.z + add_z);
+        if(world.getBiome(check_pos).name == biomeName) {
+            numOfMatches += 1;
+        }
+    }
+    return numOfMatches;
 }
 
 var ritualistic_biome_checker = VanillaFactory.createItem("ritualistic_biome_checker");
 ritualistic_biome_checker.rarity = "RARE";
 ritualistic_biome_checker.maxStackSize = 1;
 ritualistic_biome_checker.itemRightClick = function(stack, world, player, hand) {
-	if(world.remote) {
+    if(world.remote) {
         return "PASS";
     }
     if(player.getDimension() != 0) {
         player.sendChat("You must be in the Overworld to perform this craft!");
         return "PASS";
     }
-	val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
-	val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
-	val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
-	val oceanBiomeLocations = [[0,0]] as int[][];
-	var cur_pos = player.position as crafttweaker.util.Position3f;
+    val mortumBiomeLocations = [[3,3],[3,2],[3,1],[3,0],[3,-1],[3,-2],[3,-3],[2,3],[2,-3],[1,3],[1,-3],[0,3],[0,-3],[-1,3],[-1,-3],[-2,3],[-2,-3],[-3,3],[-3,2],[-3,1],[-3,0],[-3,-1],[-3,-2],[-3,-3]] as int[][];
+    val hellBiomeLocations = [[2,2],[2,1],[2,0],[2,-1],[2,-2],[1,2],[1,-2],[0,2],[0,-2],[-1,2],[-1,-2],[-2,2],[-2,1],[-2,0],[-2,-1],[-2,-2]] as int[][];
+    val magicalForestBiomeLocations = [[1,1],[1,0],[1,-1],[0,1],[0,-1],[-1,1],[-1,0],[-1,-1]] as int[][];
+    val oceanBiomeLocations = [[0,0]] as int[][];
+    var cur_pos = player.position as crafttweaker.util.Position3f;
 
-	val mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, world) as int;
-	val hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, world) as int;
-	val magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, world) as int;
-	val oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, world) as int;
+    val mortumMatches = checkBiomesAtPositions("Mortum", cur_pos, mortumBiomeLocations, world) as int;
+    val hellMatches = checkBiomesAtPositions("Hell", cur_pos, hellBiomeLocations, world) as int;
+    val magicalForestMatches = checkBiomesAtPositions("Magical Forest", cur_pos, magicalForestBiomeLocations, world) as int;
+    val oceanMatches = checkBiomesAtPositions("Ocean", cur_pos, oceanBiomeLocations, world) as int;
 
-	player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
-	player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
-	player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
-	player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
+    player.sendChat("Mortum biome matches: " ~ mortumMatches ~ " / 24");
+    player.sendChat("Hell biome matches: " ~ hellMatches ~ " / 16");
+    player.sendChat("Magical Forest biome matches: " ~ magicalForestMatches ~ " / 8");
+    player.sendChat("Ocean biome matches: " ~ oceanMatches ~ " / 1");
 
-	return "SUCCESS";
+    return "SUCCESS";
 };
 ritualistic_biome_checker.register();
 var essence_of_space = VanillaFactory.createItem("essence_of_space");
@@ -1171,19 +1171,19 @@ fission_coolant.register();
 var highly_radioactive_dimension_splitting_compound = VanillaFactory.createItem("highly_radioactive_dimension_splitting_compound");
 highly_radioactive_dimension_splitting_compound.rarity = "EPIC";
 highly_radioactive_dimension_splitting_compound.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
-	if (owner instanceof IPlayer) {
-	    val player as IPlayer = owner;
+    if (owner instanceof IPlayer) {
+        val player as IPlayer = owner;
 
-	    Commands.call("effect @p minecraft:poison 5 3 true", player, world, false, true);
-	    Commands.call("effect @p minecraft:wither 5 2 true", player, world, false, true);
-		player.setFire(5);
+        Commands.call("effect @p minecraft:poison 5 3 true", player, world, false, true);
+        Commands.call("effect @p minecraft:wither 5 2 true", player, world, false, true);
+        player.setFire(5);
 
-		if(isSelected) {
-	    	Commands.call("effect @p minecraft:blindness 5 1 true", player, world, false, true);
-	    	Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
-		}
-	}
-	return;
+        if(isSelected) {
+            Commands.call("effect @p minecraft:blindness 5 1 true", player, world, false, true);
+            Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
+        }
+    }
+    return;
 };
 highly_radioactive_dimension_splitting_compound.register();
 var slice_of_dragon_egg = VanillaFactory.createItem("slice_of_dragon_egg");
@@ -1496,7 +1496,7 @@ heavens_cleansing.rarity = "EPIC";
 heavens_cleansing.register();
 var si = VanillaFactory.createItem("si");
 si.itemRightClick = function(stack, world, player, hand) {
-	stack.shrink(1);
+    stack.shrink(1);
     Commands.call('summon bewitchment:demon ~ ~ ~ {CustomName:"Immortus",CustomNameVisible:1b,Health:100000,HandItems:[{id:"contenttweaker:call_of_the_underworld",Count:3}],HandDropChances:[1.00f],Attributes:[{Name:"generic.maxHealth",Base:100000F}]}', player, world, false, true);
     return "Pass";
 };

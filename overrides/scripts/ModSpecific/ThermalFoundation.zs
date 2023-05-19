@@ -98,7 +98,7 @@ recipes.addShaped(<thermalfoundation:tome_experience>, [[null,<minecraft:experie
 // Tar from Smoldering Tar
 val slimeballs = [<minecraft:slime_ball>,<actuallyadditions:item_misc:12>,<aether_legacy:swetty_ball>,<industrialforegoing:pink_slime>,<tconstruct:edible:1>,<tconstruct:edible:2>,<tconstruct:edible:3>,<tconstruct:edible:4>] as IItemStack[];
 for item in slimeballs {
-	mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:833>, item, <liquid:smoldering_tar> * 200, 6000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<thermalfoundation:material:833>, item, <liquid:smoldering_tar> * 200, 6000);
 }
 
 // Smoldering Tar from Tar

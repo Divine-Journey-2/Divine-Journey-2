@@ -34,9 +34,9 @@ recipes.addShaped(<erebus:smoothie_maker>, [[<erebus:materials:59>,<minecraft:bu
 val gliders =  [<erebus:glider_chestplate>, <erebus:glider_chestplate_powered>] as IItemStack[];
 
 for g in gliders {
-	recipes.remove(g);
-	g.addTooltip(game.localize("dj2.erebus_glider.desc0"));
-	g.addTooltip(game.localize("dj2.erebus_glider.desc1"));
+    recipes.remove(g);
+    g.addTooltip(game.localize("dj2.erebus_glider.desc0"));
+    g.addTooltip(game.localize("dj2.erebus_glider.desc1"));
 }
 
 recipes.remove(<erebus:materials:49>);

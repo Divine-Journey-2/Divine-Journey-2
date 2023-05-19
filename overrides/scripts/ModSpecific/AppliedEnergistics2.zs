@@ -388,8 +388,8 @@ recipes.addShaped(<appliedenergistics2:part:281>, [[<projectred-core:resource_it
 // Press Duplication recipes
 val ae2_presses = [<appliedenergistics2:material:13>,<appliedenergistics2:material:14>,<appliedenergistics2:material:15>,<appliedenergistics2:material:19>] as IItemStack[];
 for i in 0 to 4 {
-	Inscriber.removeRecipe(ae2_presses[i]);
-	Inscriber.addRecipe(ae2_presses[i], <thermalfoundation:storage_alloy>, true, ae2_presses[i]);
+    Inscriber.removeRecipe(ae2_presses[i]);
+    Inscriber.addRecipe(ae2_presses[i], <thermalfoundation:storage_alloy>, true, ae2_presses[i]);
 }
 
 // Entropy Manipulator

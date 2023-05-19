@@ -27,13 +27,13 @@ var allOres = [<ore:oreSaltpeter>,<ore:oreSalt>,<ore:oreSilver>,<ore:oreLead>,<o
 <ore:oreNetherCopper>,<ore:oreNetherTin>] as IIngredient[];
 
 for oreDict in allOres {
-	for ore in oreDict.items {
-		mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
-	}
+    for ore in oreDict.items {
+        mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
+    }
 }
 
 for ore in <ore:oreNaturalAluminum>.items {
-	mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
+    mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
 }
 
 // Blood Altar
@@ -113,7 +113,7 @@ addBloodMagicSigilRecipe(<bloodmagic:sigil_divination>, <minecraft:redstone>, <b
 // Blank Slate
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 for ds in dimensional_stones {
-	mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, ds, 0, 1000, 40, 40);
+    mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:slate>, ds, 0, 1000, 40, 40);
 }
 
 // Reinforced Slate
@@ -152,14 +152,14 @@ mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:alchemy_table>,
 [<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>,<enderio:block_alloy:6>]]);
 
 function blood_magic_add_rune_recipe_with_unique_input(rune as IItemStack, runeInput as IItemStack, input1 as IIngredient, input2 as IIngredient) {
-	recipes.remove(rune);
-	mods.immersiveengineering.ArcFurnace.addRecipe(rune, runeInput, null, 160, 512, [input1, input2], "Alloying");
-	//EIOAlloySmelter.addRecipe(rune, [runeInput, input1, input2], 24000);
-	// Alloy Smelter recipes in config/enderio/recipes/user/user_recipes.xml
+    recipes.remove(rune);
+    mods.immersiveengineering.ArcFurnace.addRecipe(rune, runeInput, null, 160, 512, [input1, input2], "Alloying");
+    //EIOAlloySmelter.addRecipe(rune, [runeInput, input1, input2], 24000);
+    // Alloy Smelter recipes in config/enderio/recipes/user/user_recipes.xml
 }
 
 function blood_magic_add_rune_recipe(rune as IItemStack, input1 as IIngredient, input2 as IIngredient) {
-	blood_magic_add_rune_recipe_with_unique_input(rune, <bloodmagic:blood_rune>, input1, input2);
+    blood_magic_add_rune_recipe_with_unique_input(rune, <bloodmagic:blood_rune>, input1, input2);
 }
 
 // Speed Rune
@@ -278,9 +278,9 @@ for i in 1 to 16 {
     val origin = <bloodmagic:blood_tank>.definition.makeStack(i - 1);
     val amount = 1000 * ((i + 1) * (i + 1));
 
-	recipes.remove(target);
+    recipes.remove(target);
     recipes.addHiddenShapeless("blood_magic_tank_clearing_"~i, target, [target]);
-	mods.bloodmagic.BloodAltar.addRecipe(target, origin, 4, amount, 50, 50);
+    mods.bloodmagic.BloodAltar.addRecipe(target, origin, 4, amount, 50, 50);
 }
 
 // Weak Activation Crystal
@@ -560,11 +560,11 @@ recipes.addShaped(<bloodmagic:decorative_brick:3> * 4, [[<bloodmagic:decorative_
 
 // Blood Orb tooltips
 function add_blood_orb_tooltip(id as string, amount as string, tier as string) {
-	var item = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:"~id as string});
-	item.addTooltip(I18n.format("dj2.blood_orb.desc0", amount));
-	if (tier > 1) {
-		item.addTooltip(I18n.format("dj2.blood_orb.desc1", tier));
-	}
+    var item = <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:"~id as string});
+    item.addTooltip(I18n.format("dj2.blood_orb.desc0", amount));
+    if (tier > 1) {
+        item.addTooltip(I18n.format("dj2.blood_orb.desc1", tier));
+    }
 }
 add_blood_orb_tooltip("weak", "5,000", 1);
 add_blood_orb_tooltip("apprentice", "25,000", 2);

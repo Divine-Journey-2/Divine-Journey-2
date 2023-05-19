@@ -75,10 +75,10 @@ recipes.remove(<tconstruct:piggybackpack>);
 recipes.addShaped(<tconstruct:piggybackpack>, [[null,<minecraft:string>,null],[<contenttweaker:industrial_leather>,<mekanism:enrichedalloy>,<contenttweaker:industrial_leather>],[<contenttweaker:industrial_leather>,<minecraft:string>,<contenttweaker:industrial_leather>]]);
 
 function addMagmaCrucibleTinkersMoltenMetalRecipe(molten_metal as ILiquidStack, block as IItemStack, ingot as IItemStack, nugget as IItemStack) {
-	// Energy: block: 32000, ingot: 4000, dust: 2000, plate: 4000, nugget: 500
-	mods.thermalexpansion.Crucible.addRecipe(molten_metal * 1296, block, 32000);
-	mods.thermalexpansion.Crucible.addRecipe(molten_metal * 144, ingot, 4000);
-	mods.thermalexpansion.Crucible.addRecipe(molten_metal * 16, nugget, 500);
+    // Energy: block: 32000, ingot: 4000, dust: 2000, plate: 4000, nugget: 500
+    mods.thermalexpansion.Crucible.addRecipe(molten_metal * 1296, block, 32000);
+    mods.thermalexpansion.Crucible.addRecipe(molten_metal * 144, ingot, 4000);
+    mods.thermalexpansion.Crucible.addRecipe(molten_metal * 16, nugget, 500);
 }
 
 // Pig Iron

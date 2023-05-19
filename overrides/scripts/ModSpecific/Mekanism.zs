@@ -138,61 +138,61 @@ recipes.addShaped(<mekanism:transmitter:5>.withTag({tier: 0}), [[null,<minecraft
 
 // Function to upgrade Caches and Strongboxes while keeping their contents, locked state, owner ID, etc.
 function thermalUpgrade(input_tag as IData, out as IItemStack, new_level as byte) as IItemStack {
-	val new_level_tag = {Level: new_level as byte} as IData;
-	val new_tag = input_tag + new_level_tag;
-	return out.withTag(new_tag);
+    val new_level_tag = {Level: new_level as byte} as IData;
+    val new_tag = input_tag + new_level_tag;
+    return out.withTag(new_tag);
 }
 
 // Basic Energy Cube
 recipes.remove(<mekanism:energycube>.withTag({tier: 0}));
 recipes.addShaped("mek_energycube", <mekanism:energycube>.withTag({tier: 0}), [[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet1"),<ore:ingotOsgloglas>],[<thermalfoundation:material:160>,<immersiveengineering:metal_device0:2>,<thermalfoundation:material:160>],[<ore:ingotOsgloglas>,<mekanism:energytablet>.marked("tablet2"),<ore:ingotOsgloglas>]],
 function(out, ins, cInfo) {
-	if(ins.tablet1.tag has "mekData") {
-		if(ins.tablet2.tag has "mekData") {
-			return out.withTag({tier: 0, mekData: {energyStored: ins.tablet1.tag.mekData.energyStored + ins.tablet2.tag.mekData.energyStored}});
-		} else {
-			return out.withTag({tier: 0, mekData: {energyStored: ins.tablet1.tag.mekData.energyStored}});
-		}
-	} else {
-		if(ins.tablet2.tag has "mekData") {
-			return out.withTag({tier: 0, mekData: {energyStored: ins.tablet2.tag.mekData.energyStored}});
-		} else {
-			return out;
-		}
-	}
+    if(ins.tablet1.tag has "mekData") {
+        if(ins.tablet2.tag has "mekData") {
+            return out.withTag({tier: 0, mekData: {energyStored: ins.tablet1.tag.mekData.energyStored + ins.tablet2.tag.mekData.energyStored}});
+        } else {
+            return out.withTag({tier: 0, mekData: {energyStored: ins.tablet1.tag.mekData.energyStored}});
+        }
+    } else {
+        if(ins.tablet2.tag has "mekData") {
+            return out.withTag({tier: 0, mekData: {energyStored: ins.tablet2.tag.mekData.energyStored}});
+        } else {
+            return out;
+        }
+    }
 }, null);
 
 // Function to add up current Energy values when upgrading to a higher tier Energy Cube
 function mekEnergyCellUpgrade(tag_cube as IData, tag_tablet1 as IData, tag_tablet2 as IData, out as IItemStack, level as int) as IItemStack {
-	if(tag_cube has "mekData") {
-		if(tag_tablet1 has "mekData") {
-			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
-			} else {
-				return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet1.mekData.energyStored}});
-			}
-		} else {
-			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet2.mekData.energyStored}});
-			} else {
-				return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored}});
-			}
-		}
-	} else {
-		if(tag_tablet1 has "mekData") {
-			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
-			} else {
-				return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored}});
-			}
-		} else {
-			if(tag_tablet2 has "mekData") {
-				return out.withTag({tier: level, mekData: {energyStored: tag_tablet2.mekData.energyStored}});
-			} else {
-				return out.withTag({tier: level});
-			}
-		}
-	}
+    if(tag_cube has "mekData") {
+        if(tag_tablet1 has "mekData") {
+            if(tag_tablet2 has "mekData") {
+                return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
+            } else {
+                return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet1.mekData.energyStored}});
+            }
+        } else {
+            if(tag_tablet2 has "mekData") {
+                return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored + tag_tablet2.mekData.energyStored}});
+            } else {
+                return out.withTag({tier: level, mekData: {energyStored: tag_cube.mekData.energyStored}});
+            }
+        }
+    } else {
+        if(tag_tablet1 has "mekData") {
+            if(tag_tablet2 has "mekData") {
+                return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored + tag_tablet2.mekData.energyStored}});
+            } else {
+                return out.withTag({tier: level, mekData: {energyStored: tag_tablet1.mekData.energyStored}});
+            }
+        } else {
+            if(tag_tablet2 has "mekData") {
+                return out.withTag({tier: level, mekData: {energyStored: tag_tablet2.mekData.energyStored}});
+            } else {
+                return out.withTag({tier: level});
+            }
+        }
+    }
 }
 
 // Advanced Energy Cube
@@ -243,52 +243,52 @@ recipes.addShaped(<mekanism:machineblock2:11>.withTag({tier: 0}), [[<ore:ingotOs
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 1}));
 recipes.addShaped("mek_fluidtank_upgrade1", <mekanism:machineblock2:11>.withTag({tier: 1}), [[<mekanism:enrichedalloy>,<thermalfoundation:material:352>,<mekanism:enrichedalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 0}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:enrichedalloy>,<thermalfoundation:material:352>,<mekanism:enrichedalloy>]],
 function(out, ins, cInfo) {
-	if(ins.tank.tag has "mekData") {
-		if(ins.tank.tag.mekData has "fluidTank") {
-			return out.withTag({tier: 1, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
-		} else {
-			return out.withTag({tier: 1, mekData: ins.tank.tag.mekData});
-		}
-	} else {
-		return out;
+    if(ins.tank.tag has "mekData") {
+        if(ins.tank.tag.mekData has "fluidTank") {
+            return out.withTag({tier: 1, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+        } else {
+            return out.withTag({tier: 1, mekData: ins.tank.tag.mekData});
+        }
+    } else {
+        return out;
 }}, null);
 
 // Elite Fluid Tank
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 2}));
 recipes.addShaped("mek_fluidtank_upgrade2", <mekanism:machineblock2:11>.withTag({tier: 2}), [[<mekanism:reinforcedalloy>,<thermalfoundation:material:352>,<mekanism:reinforcedalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 1}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:reinforcedalloy>,<thermalfoundation:material:352>,<mekanism:reinforcedalloy>]],
 function(out, ins, cInfo) {
-	if(ins.tank.tag has "mekData") {
-		if(ins.tank.tag.mekData has "fluidTank") {
-			return out.withTag({tier: 2, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
-		} else {
-			return out.withTag({tier: 2, mekData: ins.tank.tag.mekData});
-		}
-	} else {
-		return out;
+    if(ins.tank.tag has "mekData") {
+        if(ins.tank.tag.mekData has "fluidTank") {
+            return out.withTag({tier: 2, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+        } else {
+            return out.withTag({tier: 2, mekData: ins.tank.tag.mekData});
+        }
+    } else {
+        return out;
 }}, null);
 
 // Ultimate Fluid Tank
 recipes.remove(<mekanism:machineblock2:11>.withTag({tier: 3}));
 recipes.addShaped("mek_fluidtank_upgrade3", <mekanism:machineblock2:11>.withTag({tier: 3}), [[<mekanism:atomicalloy>,<thermalfoundation:material:352>,<mekanism:atomicalloy>],[<immersiveengineering:material:2>,<mekanism:machineblock2:11>.withTag({tier: 2}).marked("tank"),<immersiveengineering:material:2>],[<mekanism:atomicalloy>,<thermalfoundation:material:352>,<mekanism:atomicalloy>]],
 function(out, ins, cInfo) {
-	if(ins.tank.tag has "mekData") {
-		if(ins.tank.tag.mekData has "fluidTank") {
-			return out.withTag({tier: 3, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
-		} else {
-			return out.withTag({tier: 3, mekData: ins.tank.tag.mekData});
-		}
-	} else {
-		return out;
+    if(ins.tank.tag has "mekData") {
+        if(ins.tank.tag.mekData has "fluidTank") {
+            return out.withTag({tier: 3, mekData: {fluidTank: ins.tank.tag.mekData.fluidTank}});
+        } else {
+            return out.withTag({tier: 3, mekData: ins.tank.tag.mekData});
+        }
+    } else {
+        return out;
 }}, null);
 
 // Fluidic Plenisher
 recipes.remove(<mekanism:machineblock2:12>);
 recipes.addShaped("mek_fluidic_plenisher", <mekanism:machineblock2:12>, [[<thermalfoundation:material:321>,<mekanism:controlcircuit>,<thermalfoundation:material:321>],[<thermalfoundation:material:321>,<mekanism:machineblock:12>.marked("pump"),<thermalfoundation:material:321>],[<thermalfoundation:material:321>,<mekanism:controlcircuit>,<thermalfoundation:material:321>]],
 function(out, ins, cInfo) {
-	if(ins.pump.tag has "mekData") {
-		return out.withTag({mekData: {energyStored: ins.pump.tag.mekData.energyStored}});
-	} else {
-		return out;
+    if(ins.pump.tag has "mekData") {
+        return out.withTag({mekData: {energyStored: ins.pump.tag.mekData.energyStored}});
+    } else {
+        return out;
 }}, null);
 
 // Security Desk
@@ -313,17 +313,17 @@ recipes.addShaped(<mekanism:mufflingupgrade>, [[<thermalfoundation:material:160>
 // Robit
 recipes.remove(<mekanism:robit>);
 recipes.addShaped("mek_robit", <mekanism:robit>, [[null,<thermalfoundation:material:352>,null],[<ore:ingotOsgloglas>,<mekanism:energycube>.withTag({tier: 0}),<ore:ingotOsgloglas>],[<mekanism:atomicalloy>,<mekanism:machineblock:13>.marked("chest"),<mekanism:atomicalloy>]],
-	function(out, ins, cInfo) {
-		if(ins.chest.tag has "mekData") {
-			if(ins.chest.tag.mekData has "Items") {
-				return out.withTag({mekData: {Items: ins.chest.tag.mekData.Items}});
-			} else {
-				return out;
-			}
-		} else {
-			return out;
-		}
-	}, null);
+    function(out, ins, cInfo) {
+        if(ins.chest.tag has "mekData") {
+            if(ins.chest.tag.mekData has "Items") {
+                return out.withTag({mekData: {Items: ins.chest.tag.mekData.Items}});
+            } else {
+                return out;
+            }
+        } else {
+            return out;
+        }
+    }, null);
 <mekanism:robit>.addTooltip(game.localize("dj2.robit.desc0"));
 
 // Electrolytic Core
@@ -339,11 +339,11 @@ recipes.remove(<mekanism:gastank>);
 recipes.addShaped(<mekanism:gastank>.withTag({tier: 0}), [[<enderio:item_alloy_ingot:6>,<contenttweaker:energized_osmium_ingot>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:block_tank:1>,<enderio:item_alloy_ingot:6>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>]]);
 
 function mekGasTankUpgrade(input_tag as IData, out as IItemStack, level as int) as IItemStack {
-	if(input_tag has "mekData") {
-		return out.withTag({tier: level, mekData: input_tag.mekData});
-	} else {
-		return out.withTag({tier: level});
-	}
+    if(input_tag has "mekData") {
+        return out.withTag({tier: level, mekData: input_tag.mekData});
+    } else {
+        return out.withTag({tier: level});
+    }
 }
 
 // Advanced Gas Tank
@@ -532,10 +532,10 @@ recipes.remove(<mekanism:machineblock3>);
 recipes.addShaped(<mekanism:machineblock3>, [[<enderio:block_alloy:6>,<contenttweaker:cosmic_alloy>,<enderio:block_alloy:6>],[<contenttweaker:steaming_restonia_crystal>,<enderio:block_transceiver>,<contenttweaker:steaming_restonia_crystal>],[<enderio:block_alloy:6>,<contenttweaker:cosmic_alloy>,<enderio:block_alloy:6>]]);
 
 function addMekAdvancedAndEliteFactoryRecipe(basic_factory as IItemStack, advanced_factory as IItemStack, elite_factory as IItemStack) {
-	recipes.remove(advanced_factory);
-	recipes.addShaped(advanced_factory, [[<enderio:item_alloy_ingot:6>,<mekanism:controlcircuit:1>,<enderio:item_alloy_ingot:6>],[<mekanism:controlcircuit:1>,basic_factory,<mekanism:controlcircuit:1>],[<enderio:item_alloy_ingot:6>,<contenttweaker:cosmic_alloy>,<enderio:item_alloy_ingot:6>]]);
-	recipes.remove(elite_factory);
-	recipes.addShaped(elite_factory, [[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],[<contenttweaker:cosmic_alloy>,advanced_factory,<contenttweaker:cosmic_alloy>],[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>]]);
+    recipes.remove(advanced_factory);
+    recipes.addShaped(advanced_factory, [[<enderio:item_alloy_ingot:6>,<mekanism:controlcircuit:1>,<enderio:item_alloy_ingot:6>],[<mekanism:controlcircuit:1>,basic_factory,<mekanism:controlcircuit:1>],[<enderio:item_alloy_ingot:6>,<contenttweaker:cosmic_alloy>,<enderio:item_alloy_ingot:6>]]);
+    recipes.remove(elite_factory);
+    recipes.addShaped(elite_factory, [[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>],[<contenttweaker:cosmic_alloy>,advanced_factory,<contenttweaker:cosmic_alloy>],[<enderio:block_alloy:6>,<contenttweaker:steaming_restonia_crystal_block>,<enderio:block_alloy:6>]]);
 }
 
 // Advanced & Elite Sawing Factory
@@ -610,18 +610,18 @@ mods.mekanism.sawmill.removeRecipe(<minecraft:bed:*>);
 recipes.remove(<mekanism:atomicdisassembler>);
 recipes.addShaped("mekanism_atomic_disassembler", <mekanism:atomicdisassembler>, [[<contenttweaker:cosmic_alloy>,<mekanism:energytablet>.marked("tablet"),<contenttweaker:cosmic_alloy>],[<contenttweaker:cosmic_alloy>,<enderio:item_alloy_endergy_ingot:3>,<contenttweaker:cosmic_alloy>],[null,<enderio:item_alloy_endergy_ingot:3>,null]],
 function(out,ins,cInfo) {
-	if(ins.tablet.tag has "mekData") {
-		return out.withTag({mekData: {energyStored: ins.tablet.tag.mekData.energyStored}});
-	} else {
-		return out;
-	}
+    if(ins.tablet.tag has "mekData") {
+        return out.withTag({mekData: {energyStored: ins.tablet.tag.mekData.energyStored}});
+    } else {
+        return out;
+    }
 }, null);
 //<mekanism:atomicdisassembler>.addTooltip(format.red(format.bold("Warning: ")) + format.white("DESTROYS most blocks."));
 
 // Plastic Roads with Sand OreDict
 for i in 0 to 16 {
-	recipes.removeShaped(<mekanism:roadplasticblock>.withDamage(i), [[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>],[<*>,<*>,<*>],[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>]]);
-	recipes.addShaped(<mekanism:roadplasticblock>.withDamage(i), [[<ore:sand>,<ore:sand>,<ore:sand>],[<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i)],[<ore:sand>,<ore:sand>,<ore:sand>]]);
+    recipes.removeShaped(<mekanism:roadplasticblock>.withDamage(i), [[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>],[<*>,<*>,<*>],[<minecraft:sand>,<minecraft:sand>,<minecraft:sand>]]);
+    recipes.addShaped(<mekanism:roadplasticblock>.withDamage(i), [[<ore:sand>,<ore:sand>,<ore:sand>],[<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i),<mekanism:slickplasticblock>.withDamage(i)],[<ore:sand>,<ore:sand>,<ore:sand>]]);
 }
 
 // Creative Energy Cube

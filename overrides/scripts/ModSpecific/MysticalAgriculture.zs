@@ -29,8 +29,8 @@ recipes.remove(<mysticalagriculture:tier1_inferium_seeds>);
 mods.extendedcrafting.EnderCrafting.addShaped(<mysticalagriculture:tier1_inferium_seeds>, [[<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>],[<mysticalagriculture:crafting>,<minecraft:wheat_seeds>,<mysticalagriculture:crafting>],[<mysticalagriculture:crafting>,<mysticalagriculture:crafting>,<mysticalagriculture:crafting>]]);
 
 function addTier1MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient) {
-	recipes.remove(output);
-	mods.extendedcrafting.EnderCrafting.addShaped(output, [[input_material,<mysticalagriculture:crafting>,input_material], [<mysticalagriculture:crafting>,<mysticalagriculture:crafting:17>,<mysticalagriculture:crafting>], [input_material,<mysticalagriculture:crafting>,input_material]]);
+    recipes.remove(output);
+    mods.extendedcrafting.EnderCrafting.addShaped(output, [[input_material,<mysticalagriculture:crafting>,input_material], [<mysticalagriculture:crafting>,<mysticalagriculture:crafting:17>,<mysticalagriculture:crafting>], [input_material,<mysticalagriculture:crafting>,input_material]]);
 }
 
 // Stone Seeds
@@ -257,12 +257,12 @@ recipes.remove(<mysticalagriculture:tier2_inferium_seeds>);
 mods.botania.RuneAltar.addRecipe(<mysticalagriculture:tier2_inferium_seeds>, [<mysticalagriculture:tier1_inferium_seeds>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
 
 function addTier2MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient) {
-	addTier2MysticalAgricultureSeedWithInput(output,input_material,<mysticalagriculture:crafting:18>);
+    addTier2MysticalAgricultureSeedWithInput(output,input_material,<mysticalagriculture:crafting:18>);
 }
 
 function addTier2MysticalAgricultureSeedWithInput(output as IItemStack, input_material as IIngredient, input_seed as IIngredient) {
-	recipes.remove(output);
-	mods.botania.RuneAltar.addRecipe(output, [input_seed,input_material,input_material,input_material,input_material,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
+    recipes.remove(output);
+    mods.botania.RuneAltar.addRecipe(output, [input_seed,input_material,input_material,input_material,input_material,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
 }
 
 // Fire Seeds
@@ -371,12 +371,12 @@ recipes.remove(<mysticalagriculture:tier3_inferium_seeds>);
 mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:tier3_inferium_seeds", "", <mysticalagriculture:tier3_inferium_seeds>, 3, [<aspect:herba> * 100,<aspect:praecantatio> * 50], <mysticalagriculture:tier2_inferium_seeds>, [<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>]);
 
 function addTier3MysticalAgricultureSeedWithInput(output as IItemStack, input_material as IIngredient, input_vis_crystal as IItemStack, input_aspect as CTAspectStack, input_seed as IItemStack) {
-	recipes.remove(output);
-	mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 4, [<aspect:herba> * 100,input_aspect * 100], input_seed, [input_material,input_material,input_material,input_material,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,input_vis_crystal]);
+    recipes.remove(output);
+    mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 4, [<aspect:herba> * 100,input_aspect * 100], input_seed, [input_material,input_material,input_material,input_material,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,<mysticalagriculture:crafting:2>,input_vis_crystal]);
 }
 
 function addTier3MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient, input_vis_crystal as IItemStack, input_aspect as CTAspectStack) {
-	addTier3MysticalAgricultureSeedWithInput(output, input_material, input_vis_crystal, input_aspect, <mysticalagriculture:crafting:19>);
+    addTier3MysticalAgricultureSeedWithInput(output, input_material, input_vis_crystal, input_aspect, <mysticalagriculture:crafting:19>);
 }
 
 // Dye Cluster
@@ -601,18 +601,18 @@ null,null,null,null,null,null,null,null,
 <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>]);
 
 function addTier4MysticalAgricultureSeedWithInput(output as IItemStack, input_material as IIngredient, constellation as string, input_seed as IItemStack) {
-	recipes.remove(output);
-	mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/" + output.name, output, 3000, 100,
-	[null,null,null,
-	null,input_seed,null,
-	null,null,null,
-	<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
-	null,null,null,null,null,null,null,null,
-	input_material,input_material,input_material,input_material], "astralsorcery.constellation." + constellation);
+    recipes.remove(output);
+    mods.astralsorcery.Altar.addTraitAltarRecipe("dj2:shaped/internal/altar/" + output.name, output, 3000, 100,
+    [null,null,null,
+    null,input_seed,null,
+    null,null,null,
+    <mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,<mysticalagriculture:crafting:3>,
+    null,null,null,null,null,null,null,null,
+    input_material,input_material,input_material,input_material], "astralsorcery.constellation." + constellation);
 }
 
 function addTier4MysticalAgricultureSeed(output as IItemStack, input_material as IIngredient, constellation as string) {
-	addTier4MysticalAgricultureSeedWithInput(output, input_material, constellation, <mysticalagriculture:crafting:20>);
+    addTier4MysticalAgricultureSeedWithInput(output, input_material, constellation, <mysticalagriculture:crafting:20>);
 }
 
 // Diamond Seeds
@@ -814,8 +814,8 @@ null,null,null,
 /*
 // Inferium to Supremium Bows
 function addMysticalAgricultureBowRecipe(new_bow as IItemStack, old_bow as IItemStack, new_material as IIngredient, tool_core as IIngredient) {
-	recipes.remove(new_bow);
-	recipes.addShapedMirrored(new_bow, [[null,new_material,<mysticalagriculture:crafting:23>],[tool_core,old_bow,<mysticalagriculture:crafting:23>],[null,new_material,<mysticalagriculture:crafting:23>]]);
+    recipes.remove(new_bow);
+    recipes.addShapedMirrored(new_bow, [[null,new_material,<mysticalagriculture:crafting:23>],[tool_core,old_bow,<mysticalagriculture:crafting:23>],[null,new_material,<mysticalagriculture:crafting:23>]]);
 }
 
 // Inferium Bow
@@ -961,12 +961,12 @@ mods.thaumcraft.Infusion.registerRecipe("mysticalagriculture:intermedium_seed", 
 // Superium Ingot
 recipes.removeShapeless(<mysticalagriculture:crafting:36>, [<*>,<*>,<*>]);
 RecipeBuilder.newBuilder("superium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-	.addEnergyPerTickInput(50000)
-	.addItemInput(<mysticalagriculture:crafting:35>)
-	.addItemInput(<lightningcraft:material:12> * 2)
-	.addItemInput(<mysticalagriculture:crafting:3> * 2)
-	.addItemOutput(<mysticalagriculture:crafting:36>)
-	.build();
+    .addEnergyPerTickInput(50000)
+    .addItemInput(<mysticalagriculture:crafting:35>)
+    .addItemInput(<lightningcraft:material:12> * 2)
+    .addItemInput(<mysticalagriculture:crafting:3> * 2)
+    .addItemOutput(<mysticalagriculture:crafting:36>)
+    .build();
 
 
 // Supremium Ingot
@@ -1067,21 +1067,21 @@ recipes.addShaped(<mysticalagriculture:gear:15>, [[null,<mysticalagriculture:cra
 
 function addMysticalAgricultureArmorRecipes(input_armor as IItemStack[], output_armor as IItemStack[], new_ingot as IIngredient, new_core as IIngredient) {
 
-	// Helmet
-	recipes.remove(output_armor[0]);
-	recipes.addShaped(output_armor[0], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[0],new_ingot]]);
+    // Helmet
+    recipes.remove(output_armor[0]);
+    recipes.addShaped(output_armor[0], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[0],new_ingot]]);
 
-	// Chestplate
-	recipes.remove(output_armor[1]);
-	recipes.addShaped(output_armor[1], [[new_ingot,input_armor[1],new_ingot],[new_ingot,new_core,new_ingot],[new_ingot,new_ingot,new_ingot]]);
+    // Chestplate
+    recipes.remove(output_armor[1]);
+    recipes.addShaped(output_armor[1], [[new_ingot,input_armor[1],new_ingot],[new_ingot,new_core,new_ingot],[new_ingot,new_ingot,new_ingot]]);
 
-	// Leggings
-	recipes.remove(output_armor[2]);
-	recipes.addShaped(output_armor[2], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[2],new_ingot],[new_ingot,null,new_ingot]]);
+    // Leggings
+    recipes.remove(output_armor[2]);
+    recipes.addShaped(output_armor[2], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[2],new_ingot],[new_ingot,null,new_ingot]]);
 
-	// Boots
-	recipes.remove(output_armor[3]);
-	recipes.addShaped(output_armor[3], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[3],new_ingot]]);
+    // Boots
+    recipes.remove(output_armor[3]);
+    recipes.addShaped(output_armor[3], [[new_ingot,new_core,new_ingot],[new_ingot,input_armor[3],new_ingot]]);
 
 }
 
@@ -1109,8 +1109,8 @@ recipes.remove(<mysticalagriculture:charm>);
 recipes.addShaped(<mysticalagriculture:charm>, [[<mysticalagriculture:crafting:5>,<mysticalagriculture:storage:5>,<mysticalagriculture:crafting:5>],[<mysticalagriculture:storage:5>,<mysticalagriculture:ingot_storage:4>,<mysticalagriculture:storage:5>],[<mysticalagriculture:crafting:5>,<mysticalagriculture:storage:5>,<mysticalagriculture:crafting:5>]]);
 
 function addMysticalAgricultureCharmRecipe(output as IItemStack, input_material as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[input_material,<mysticalagriculture:crafting:36>,input_material],[<mysticalagriculture:crafting:36>,<mysticalagriculture:charm>,<mysticalagriculture:crafting:36>],[input_material,<mysticalagriculture:crafting:36>,input_material]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[input_material,<mysticalagriculture:crafting:36>,input_material],[<mysticalagriculture:crafting:36>,<mysticalagriculture:charm>,<mysticalagriculture:crafting:36>],[input_material,<mysticalagriculture:crafting:36>,input_material]]);
 }
 
 // Charm: Night Vision
@@ -1173,41 +1173,41 @@ recipes.addShaped(<mysticalagriculture:supremium_shears>.withTag({}), [[null,<my
 // Order: [sword, pickaxe, shovel, axe, hoe, bow, sickle, scythe, fishing rod]
 function addMysticalAgricultureToolRecipes(input_tools as IItemStack[], output_tools as IItemStack[], new_ingot as IIngredient, new_core as IIngredient) {
 
-	// Sword
-	recipes.remove(output_tools[0]);
-	recipes.addShaped(output_tools[0], [[new_ingot],[new_core],[input_tools[0]]]);
+    // Sword
+    recipes.remove(output_tools[0]);
+    recipes.addShaped(output_tools[0], [[new_ingot],[new_core],[input_tools[0]]]);
 
-	// Pickaxe
-	recipes.remove(output_tools[1]);
-	recipes.addShaped(output_tools[1], [[new_ingot,new_core,new_ingot],[null,input_tools[1],null],[null,<mysticalagriculture:crafting:22>,null]]);
+    // Pickaxe
+    recipes.remove(output_tools[1]);
+    recipes.addShaped(output_tools[1], [[new_ingot,new_core,new_ingot],[null,input_tools[1],null],[null,<mysticalagriculture:crafting:22>,null]]);
 
-	// Shovel
-	recipes.remove(output_tools[2]);
-	recipes.addShaped(output_tools[2], [[new_core],[input_tools[2]],[<mysticalagriculture:crafting:22>]]);
+    // Shovel
+    recipes.remove(output_tools[2]);
+    recipes.addShaped(output_tools[2], [[new_core],[input_tools[2]],[<mysticalagriculture:crafting:22>]]);
 
-	// Axe
-	recipes.remove(output_tools[3]);
-	recipes.addShapedMirrored(output_tools[3], [[new_ingot,new_ingot],[new_core,input_tools[3]],[null,<mysticalagriculture:crafting:22>]]);
+    // Axe
+    recipes.remove(output_tools[3]);
+    recipes.addShapedMirrored(output_tools[3], [[new_ingot,new_ingot],[new_core,input_tools[3]],[null,<mysticalagriculture:crafting:22>]]);
 
-	// Hoe
-	recipes.remove(output_tools[4]);
-	recipes.addShapedMirrored(output_tools[4], [[new_ingot,new_core],[null,input_tools[4]],[null,<mysticalagriculture:crafting:22>]]);
+    // Hoe
+    recipes.remove(output_tools[4]);
+    recipes.addShapedMirrored(output_tools[4], [[new_ingot,new_core],[null,input_tools[4]],[null,<mysticalagriculture:crafting:22>]]);
 
-	// Bow
-	recipes.remove(output_tools[5]);
-	recipes.addShapedMirrored(output_tools[5], [[null,new_ingot,<mysticalagriculture:crafting:23>],[new_core,input_tools[5],<mysticalagriculture:crafting:23>],[null,new_ingot,<mysticalagriculture:crafting:23>]]);
+    // Bow
+    recipes.remove(output_tools[5]);
+    recipes.addShapedMirrored(output_tools[5], [[null,new_ingot,<mysticalagriculture:crafting:23>],[new_core,input_tools[5],<mysticalagriculture:crafting:23>],[null,new_ingot,<mysticalagriculture:crafting:23>]]);
 
-	// Sickle
-	recipes.remove(output_tools[6]);
-	recipes.addShapedMirrored(output_tools[6], [[null,new_ingot,null],[null,null,new_core],[input_tools[6],new_ingot,null]]);
+    // Sickle
+    recipes.remove(output_tools[6]);
+    recipes.addShapedMirrored(output_tools[6], [[null,new_ingot,null],[null,null,new_core],[input_tools[6],new_ingot,null]]);
 
-	// Scythe
-	recipes.remove(output_tools[7]);
-	recipes.addShapedMirrored(output_tools[7], [[new_ingot,new_core,input_tools[7]],[null,<mysticalagriculture:crafting:22>,null],[<mysticalagriculture:crafting:22>,null,null]]);
+    // Scythe
+    recipes.remove(output_tools[7]);
+    recipes.addShapedMirrored(output_tools[7], [[new_ingot,new_core,input_tools[7]],[null,<mysticalagriculture:crafting:22>,null],[<mysticalagriculture:crafting:22>,null,null]]);
 
-	// Fishing Rod
-	recipes.remove(output_tools[8]);
-	recipes.addShapedMirrored(output_tools[8], [[null,null,new_ingot],[null,new_core,<mysticalagriculture:crafting:23>],[input_tools[8],null,<mysticalagriculture:crafting:23>]]);
+    // Fishing Rod
+    recipes.remove(output_tools[8]);
+    recipes.addShapedMirrored(output_tools[8], [[null,null,new_ingot],[null,new_core,<mysticalagriculture:crafting:23>],[input_tools[8],null,<mysticalagriculture:crafting:23>]]);
 
 }
 
@@ -1235,8 +1235,8 @@ recipes.remove(<mysticalagriculture:supremium_scythe>);
 addMysticalAgricultureToolRecipes([<mysticalagriculture:superium_sword>,<mysticalagriculture:superium_pickaxe>,<mysticalagriculture:superium_shovel>,<mysticalagriculture:superium_axe>,<mysticalagriculture:superium_hoe>,<mysticalagriculture:superium_bow>,<mysticalagriculture:superium_sickle>,<mysticalagriculture:superium_scythe>,<mysticalagriculture:superium_fishing_rod>],[<mysticalagriculture:supremium_sword>.withTag({}),<mysticalagriculture:supremium_pickaxe>.withTag({}),<mysticalagriculture:supremium_shovel>.withTag({}),<mysticalagriculture:supremium_axe>.withTag({}),<mysticalagriculture:supremium_hoe>.withTag({}),<mysticalagriculture:supremium_bow>.withTag({}),<mysticalagriculture:supremium_sickle>.withTag({}),<mysticalagriculture:supremium_scythe>.withTag({}),<mysticalagriculture:supremium_fishing_rod>],<mysticalagriculture:crafting:37>,<mysticalagriculture:gear:4>);
 
 function addMysticalAgricultureTinkeringTableRecipe(input as IItemStack, output as IItemStack, input_material as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[<mysticalagriculture:soulstone>,<mysticalagriculture:soulstone>,<mysticalagriculture:soulstone>],[input_material,input,input_material],[input_material,null,input_material]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[<mysticalagriculture:soulstone>,<mysticalagriculture:soulstone>,<mysticalagriculture:soulstone>],[input_material,input,input_material],[input_material,null,input_material]]);
 }
 
 // Tinkering Table (Inferium)
@@ -1292,7 +1292,7 @@ recipes.addShaped(<alchemistry:ingot:24> * 3, [[<mysticalagriculture:chrome_esse
 
 // Ores from Essence
 function addMysticalAgricultureEssenceToOreRecipe(ore as IItemStack, essence as IItemStack, amount as int) {
-	recipes.addShaped(ore * amount, [[essence,essence,essence],[essence,<ore:stone>,essence],[essence,essence,essence]]);
+    recipes.addShaped(ore * amount, [[essence,essence,essence],[essence,<ore:stone>,essence],[essence,essence,essence]]);
 }
 addMysticalAgricultureEssenceToOreRecipe(<minecraft:iron_ore>,<mysticalagriculture:iron_essence>,2);
 addMysticalAgricultureEssenceToOreRecipe(<minecraft:coal_ore>,<mysticalagriculture:coal_essence>,3);

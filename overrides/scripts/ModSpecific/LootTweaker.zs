@@ -9,21 +9,21 @@ import crafttweaker.data.IData;
 print("STARTING LootTweaker.zs");
 
 function remove_entry(tableName as string, poolName as string, entryName as string) {
-	val table = LootTweaker.getTable(tableName);
-	val pool = table.getPool(poolName);
-	pool.removeEntry(entryName);
+    val table = LootTweaker.getTable(tableName);
+    val pool = table.getPool(poolName);
+    pool.removeEntry(entryName);
 }
 
 function add_entry(tableName as string, newPoolName as string, itemEntry as IItemStack, minRolls as int, maxRolls as int, minBonusRolls as int, maxBonusRolls as int, weight as int) {
-	val table = LootTweaker.getTable(tableName);
-	val pool = table.addPool(newPoolName, minRolls, maxRolls, minBonusRolls, maxBonusRolls);
-	pool.addItemEntry(itemEntry, weight);
+    val table = LootTweaker.getTable(tableName);
+    val pool = table.addPool(newPoolName, minRolls, maxRolls, minBonusRolls, maxBonusRolls);
+    pool.addItemEntry(itemEntry, weight);
 }
 
 function clear_pool(tableName as string, poolName as string) {
-	val table = LootTweaker.getTable(tableName);
-	val pool = table.getPool(poolName);
-	pool.clearEntries();
+    val table = LootTweaker.getTable(tableName);
+    val pool = table.getPool(poolName);
+    pool.clearEntries();
 }
 
 // Removing broken Aether loot
@@ -46,7 +46,7 @@ remove_entry("aether_legacy:travel/enter_aether", "lore_book", "aether_legacy:lo
 // Removing Santa Armor from Iceika Chests
 val santaSet = ["divinerpg:santa_helmet", "divinerpg:santa_chestplate", "divinerpg:santa_leggings", "divinerpg:santa_boots"] as string[];
 for armorPiece in santaSet {
-	remove_entry("divinerpg:chests/iceika/iceika_chest_hut", "divinerpg:iceika_chest_hut", armorPiece);
+    remove_entry("divinerpg:chests/iceika/iceika_chest_hut", "divinerpg:iceika_chest_hut", armorPiece);
 }
 
 // Removing Drop of Evil from Wither Skeletons
@@ -82,19 +82,19 @@ val tables = ["abandoned_mineshaft", "desert_pyramid", "igloo_chest", "jungle_te
 val loot_to_remove = ["rftoolsdim:parcel", "astralsorcery:constellation_paper"] as string[];
 
 for table in tables {
-	for loot in loot_to_remove {
-		remove_entry("minecraft:chests/" + table, "main", loot);
-	}
+    for loot in loot_to_remove {
+        remove_entry("minecraft:chests/" + table, "main", loot);
+    }
 }
 
 val abandoned_mineshaft_pools_to_clear = ["bewitchment_materials_pool", "AE2 Crystals", "AE2 DUSTS", "botania_inject_pool"] as string[];
 for pool in abandoned_mineshaft_pools_to_clear {
-	clear_pool("minecraft:chests/abandoned_mineshaft", pool);
+    clear_pool("minecraft:chests/abandoned_mineshaft", pool);
 }
 
 val jungle_temple_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in jungle_temple_pools_to_clear {
-	clear_pool("minecraft:chests/jungle_temple", pool);
+    clear_pool("minecraft:chests/jungle_temple", pool);
 }
 
 //clear_pool("minecraft:chests/jungle_temple_dispenser", "ebwizardry_ebwizardry_additional_dispenser_loot");
@@ -102,7 +102,7 @@ for pool in jungle_temple_pools_to_clear {
 remove_entry("minecraft:chests/nether_bridge", "main", "rftoolsdim:parcel");
 val nether_bridge_pools_to_clear = ["xuLootDropOfEvil", "bewitchment_nether_materials_pool", "bewitchment_materials_pool"] as string[];
 for pool in nether_bridge_pools_to_clear {
-	clear_pool("minecraft:chests/nether_bridge", pool);
+    clear_pool("minecraft:chests/nether_bridge", pool);
 }
 
 remove_entry("minecraft:chests/simple_dungeon", "main", "rftoolsdim:parcel");
@@ -110,7 +110,7 @@ remove_entry("minecraft:chests/simple_dungeon", "main", "quark:ancient_tome");
 
 val simple_dungeon_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in simple_dungeon_pools_to_clear {
-	clear_pool("minecraft:chests/simple_dungeon", pool);
+    clear_pool("minecraft:chests/simple_dungeon", pool);
 }
 
 clear_pool("minecraft:chests/spawn_bonus_chest", "botania_inject_pool");
@@ -126,7 +126,7 @@ remove_entry("minecraft:chests/village_blacksmith", "main", "rftoolsdim:parcel")
 remove_entry("minecraft:chests/village_blacksmith", "main", "blueprint_electrode");
 val village_blacksmith_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for pool in village_blacksmith_pools_to_clear {
-	clear_pool("minecraft:chests/village_blacksmith", pool);
+    clear_pool("minecraft:chests/village_blacksmith", pool);
 }
 
 clear_pool("minecraft:chests/woodland_mansion", "bewitchment_materials_pool");
@@ -137,20 +137,20 @@ clear_pool("minecraft:chests/end_city_treasure", "bewitchment_materials_pool");
 val tables_with_general_injected_loot = ["desert_pyramid", "stronghold_corridor"] as string[];
 val general_pools_to_clear = ["bewitchment_materials_pool", "botania_inject_pool"] as string[];
 for table in tables_with_general_injected_loot {
-	for pool in general_pools_to_clear {
-		clear_pool("minecraft:chests/" + table, pool);
-	}
+    for pool in general_pools_to_clear {
+        clear_pool("minecraft:chests/" + table, pool);
+    }
 }
 
 // Vanilla mob Loot Tables
 
 var vanilla_eb_wizardry_injected_tables = ["blaze", "cave_spider", "creeper", "elder_guardian", "enderman", "endermite",
-										"evocation_illager", "ghast", "giant", "guardian", "husk", "magma_cube", "shulker",
-										"silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager",
-										"witch", "wither_skeleton", "zombie", "zombie_pigman", "zombie_villager"] as string[];
+                                        "evocation_illager", "ghast", "giant", "guardian", "husk", "magma_cube", "shulker",
+                                        "silverfish", "skeleton", "slime", "spider", "stray", "vindication_illager",
+                                        "witch", "wither_skeleton", "zombie", "zombie_pigman", "zombie_villager"] as string[];
 /*
 for table_name in vanilla_eb_wizardry_injected_tables {
-	clear_pool("minecraft:entities/" + table_name, "ebwizardry_ebwizardry_additional_mob_drops");
+    clear_pool("minecraft:entities/" + table_name, "ebwizardry_ebwizardry_additional_mob_drops");
 }
 */
 
@@ -159,13 +159,13 @@ remove_entry("astralsorcery:chest_shrine", "astralsorcery:chest_shrine", "astral
 
 // Orange Heart from bosses
 val bosses = ["minecraft:entities/ender_dragon", "abyssalcraft:entities/asorah", "abyssalcraft:entities/chagaroth", "abyssalcraft:entities/jzahar",
-				"abyssalcraft:entities/sacthoth", "bewitchment:entities/leonard", "botania:gaia_guardian", "botania:gaia_guardian_2",
-				"divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers",
-				"totemic:entities/baykok", "twilightforest:entities/giant_miner", "twilightforest:entities/hydra", "twilightforest:entities/lich",
-				"twilightforest:entities/minoshroom", "twilightforest:entities/naga", "twilightforest:entities/snow_queen",
-				"twilightforest:entities/yeti_alpha", "twilightforest:structures/darktower_boss/darktower_boss"] as string[];
+                "abyssalcraft:entities/sacthoth", "bewitchment:entities/leonard", "botania:gaia_guardian", "botania:gaia_guardian_2",
+                "divinerpg:entities/boss/ancient_entity", "divinerpg:entities/boss/the_watcher", "divinerpg:entities/boss/king_of_scorchers",
+                "totemic:entities/baykok", "twilightforest:entities/giant_miner", "twilightforest:entities/hydra", "twilightforest:entities/lich",
+                "twilightforest:entities/minoshroom", "twilightforest:entities/naga", "twilightforest:entities/snow_queen",
+                "twilightforest:entities/yeti_alpha", "twilightforest:structures/darktower_boss/darktower_boss"] as string[];
 for boss in bosses {
-	add_entry(boss, "heart", <bhc:orange_heart>, 1, 1, 0, 0, 100);
+    add_entry(boss, "heart", <bhc:orange_heart>, 1, 1, 0, 0, 100);
 }
 
 /*

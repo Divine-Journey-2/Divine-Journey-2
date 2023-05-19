@@ -44,19 +44,19 @@ atumNecklaceArtifactOreDict.addItems([<atum:atums_homecoming>, <atum:shus_swiftn
 
 // Tooltips
 for item in atumMeleeArtifactOreDict.items {
-	item.addTooltip(game.localize("dj2.atum_artifact_melee.desc0"));
+    item.addTooltip(game.localize("dj2.atum_artifact_melee.desc0"));
 }
 
 for item in atumRangedArtifactOreDict.items {
-	item.addTooltip(game.localize("dj2.atum_artifact_ranged.desc1"));
+    item.addTooltip(game.localize("dj2.atum_artifact_ranged.desc1"));
 }
 
 for item in atumArmorArtifactOreDict.items {
-	item.addTooltip(game.localize("dj2.atum_artifact_armor.desc2"));
+    item.addTooltip(game.localize("dj2.atum_artifact_armor.desc2"));
 }
 
 for item in atumNecklaceArtifactOreDict.items {
-	item.addTooltip(game.localize("dj2.atum_artifact_necklace.desc3"));
+    item.addTooltip(game.localize("dj2.atum_artifact_necklace.desc3"));
 }
 
 <atum:relic_ore>.addTooltip(game.localize("dj2.relic_ore.desc0"));

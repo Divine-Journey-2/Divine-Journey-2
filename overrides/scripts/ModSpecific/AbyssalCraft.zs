@@ -24,7 +24,7 @@ recipes.addShaped(<abyssalcraft:stone:7> * 32, [[<enderio:item_alloy_ingot:6>,<q
 <abyssalcraft:stone:7>.addTooltip(game.localize("dj2.monolith_stone.desc1"));
 
 function add_abyssalcraft_statue_recipe(output as IItemStack, main_input as IItemStack) {
-	recipes.addShaped(output, [[main_input,<abyssalcraft:shoggothflesh>,main_input],[main_input,<contenttweaker:unholy_essence>,main_input],[<abyssalcraft:stone:7>,<abyssalcraft:stone:7>,<abyssalcraft:stone:7>]]);
+    recipes.addShaped(output, [[main_input,<abyssalcraft:shoggothflesh>,main_input],[main_input,<contenttweaker:unholy_essence>,main_input],[<abyssalcraft:stone:7>,<abyssalcraft:stone:7>,<abyssalcraft:stone:7>]]);
 }
 
 // Cthulu Statue
@@ -217,7 +217,7 @@ recipes.remove(<abyssalcraft:necronomicon_cor>);
 /*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade1", <abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>.marked("necronomicon"),<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]],
 function(out, ins, cInfo) {
-	return out.withTag(ins.necronomicon.tag);
+    return out.withTag(ins.necronomicon.tag);
 }, null);
 */
 recipes.addShaped(<abyssalcraft:necronomicon_cor>, [[<abyssalcraft:platec>,<abyssalcraft:cstonebrick>,<abyssalcraft:platec>],[<abyssalcraft:cstonebrick>,<abyssalcraft:necronomicon>,<abyssalcraft:cstonebrick>],[<abyssalcraft:platec>,<abyssalcraft:skin>,<abyssalcraft:platec>]]);
@@ -243,8 +243,8 @@ recipes.addShapeless(<abyssalcraft:corflesh>, [<abyssalcraft:corbone>]);
 <abyssalcraft:corbone>.addTooltip(game.localize("dj2.coralium_bone.desc0"));
 
 function add_abyssalcraft_overworld_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
-	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
-	mods.abyssalcraft.InfusionRitual.addRitual(name, 0, -1, 1200 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<extrautils2:compressedcobblestone:2>,<abyssalcraft:ccluster3>,<abyssalcraft:stone>,<abyssalcraft:shadowshard>,<extrautils2:compressedcobblestone:2>,<abyssalcraft:ccluster3>,<abyssalcraft:stone>] as IIngredient[], false, ["PotEnergy"]);
+    mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+    mods.abyssalcraft.InfusionRitual.addRitual(name, 0, -1, 1200 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<extrautils2:compressedcobblestone:2>,<abyssalcraft:ccluster3>,<abyssalcraft:stone>,<abyssalcraft:shadowshard>,<extrautils2:compressedcobblestone:2>,<abyssalcraft:ccluster3>,<abyssalcraft:stone>] as IIngredient[], false, ["PotEnergy"]);
 }
 
 // Overworld Energy Collector
@@ -263,8 +263,8 @@ add_abyssalcraft_overworld_PE_transfer_item_recipe(<abyssalcraft:tieredsacrifici
 add_abyssalcraft_overworld_PE_transfer_item_recipe(<abyssalcraft:tieredenergycontainer>, <abyssalcraft:energycontainer>, "econOWupgrade");
 
 function add_abyssalcraft_abyssal_wasteland_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
-	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
-	mods.abyssalcraft.InfusionRitual.addRitual(name, 1, 50, 2400 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>,<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>] as IIngredient[], false, ["PotEnergy"]);
+    mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+    mods.abyssalcraft.InfusionRitual.addRitual(name, 1, 50, 2400 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>,<abyssalcraft:shadowshard>,<abyssalcraft:cstonebrick>,<abyssalcraft:ccluster5>,<abyssalcraft:cingot>] as IIngredient[], false, ["PotEnergy"]);
 }
 
 // Abyssal Wasteland Energy Collector
@@ -301,7 +301,7 @@ recipes.remove(<abyssalcraft:necronomicon_dre>);
 /*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade2", <abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>.marked("necronomicon"),<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]],
 function(out, ins, cInfo) {
-	return out.withTag(ins.necronomicon.tag);
+    return out.withTag(ins.necronomicon.tag);
 }, null);
 */
 recipes.addShaped(<abyssalcraft:necronomicon_dre>, [[<abyssalcraft:dreadplate>,<abyssalcraft:dreadbrick>,<abyssalcraft:dreadplate>],[<abyssalcraft:dreadbrick>,<abyssalcraft:necronomicon_cor>,<abyssalcraft:dreadbrick>],[<abyssalcraft:dreadplate>,<abyssalcraft:skin:1>,<abyssalcraft:dreadplate>]]);
@@ -330,9 +330,9 @@ recipes.addShapedMirrored(<abyssalcraft:dreadiumhoe>, [[<abyssalcraft:dreadiumin
 // Removing Materializer Sapling recipes
 val non_materializable_saplings = [<totemic:cedar_sapling>,<traverse:red_autumnal_sapling>,<traverse:brown_autumnal_sapling>,<traverse:orange_autumnal_sapling>,<traverse:yellow_autumnal_sapling>] as IItemStack[];
 for sapling in <ore:treeSapling>.items {
-	if(!(non_materializable_saplings has sapling)) {
-		mods.abyssalcraft.Materializer.removeMaterialization(sapling);
-	}
+    if(!(non_materializable_saplings has sapling)) {
+        mods.abyssalcraft.Materializer.removeMaterialization(sapling);
+    }
 }
 
 // Dreadlands Infused Powerstone tooltip
@@ -577,8 +577,8 @@ recipes.addShaped(<abyssalcraft:crystalbag_small>, [[<evilcraft:golden_string>,<
 <abyssalcraft:gatekeeperessence>.addTooltip(game.localize("dj2.gatekeeper_essence.desc0"));
 
 function add_abyssalcraft_dreadlands_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
-	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
-	mods.abyssalcraft.InfusionRitual.addRitual(name, 2, 51, 3600 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>,<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>] as IIngredient[], false, ["PotEnergy"]);
+    mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+    mods.abyssalcraft.InfusionRitual.addRitual(name, 2, 51, 3600 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>,<abyssalcraft:shadowshard>,<abyssalcraft:dreadiumingot>,<abyssalcraft:ccluster7>,<abyssalcraft:abyingot>] as IIngredient[], false, ["PotEnergy"]);
 }
 
 // Dreadlands Energy Collector
@@ -601,14 +601,14 @@ recipes.remove(<abyssalcraft:necronomicon_omt>);
 /*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade3", <abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>.marked("necronomicon"),<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]],
 function(out, ins, cInfo) {
-	return out.withTag(ins.necronomicon.tag);
+    return out.withTag(ins.necronomicon.tag);
 }, null);
 */
 recipes.addShaped(<abyssalcraft:necronomicon_omt>, [[<ore:engravedAbyssalCoin>,<abyssalcraft:stone:5>,<ore:engravedAbyssalCoin>],[<abyssalcraft:stone:5>,<abyssalcraft:necronomicon_dre>,<abyssalcraft:stone:5>],[<ore:engravedAbyssalCoin>,<abyssalcraft:skin:2>,<ore:engravedAbyssalCoin>]]);
 
 function add_abyssalcraft_omothol_PE_transfer_item_recipe(cur_tier as IItemStack, prev_tier as IItemStack, name as string) {
-	mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
-	mods.abyssalcraft.InfusionRitual.addRitual(name, 3, 52, 4800 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>,<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>] as IIngredient[], false, ["PotEnergy"]);
+    mods.abyssalcraft.InfusionRitual.removeRitual(cur_tier);
+    mods.abyssalcraft.InfusionRitual.addRitual(name, 3, 52, 4800 as float, false, cur_tier, prev_tier, [<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>,<abyssalcraft:shadowgem>,<abyssalcraft:ingotblock:3>,<abyssalcraft:ccluster9>,<abyssalcraft:darkethaxiumbrick>] as IIngredient[], false, ["PotEnergy"]);
 }
 
 // Omothol Energy Collector
@@ -631,7 +631,7 @@ recipes.remove(<abyssalcraft:abyssalnomicon>);
 /*
 recipes.addShaped("abyssalcraft_necronomicon_upgrade4", <abyssalcraft:abyssalnomicon>, [[<abyssalcraft:ingotblock:3>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:ingotblock:3>],[<abyssalcraft:eldritchscale>,<abyssalcraft:necronomicon_omt>.marked("necronomicon"),<abyssalcraft:eldritchscale>],[<abyssalcraft:ingotblock:3>,<abyssalcraft:eldritchscale>,<abyssalcraft:ingotblock:3>]],
 function(out, ins, cInfo) {
-	return out.withTag(ins.necronomicon.tag);
+    return out.withTag(ins.necronomicon.tag);
 }, null);
 */
 recipes.addShaped(<abyssalcraft:abyssalnomicon>, [[<abyssalcraft:ingotblock:3>,<abyssalcraft:gatekeeperessence>,<abyssalcraft:ingotblock:3>],[<abyssalcraft:eldritchscale>,<abyssalcraft:necronomicon_omt>,<abyssalcraft:eldritchscale>],[<abyssalcraft:ingotblock:3>,<abyssalcraft:eldritchscale>,<abyssalcraft:ingotblock:3>]]);

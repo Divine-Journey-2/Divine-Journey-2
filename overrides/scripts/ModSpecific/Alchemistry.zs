@@ -392,10 +392,10 @@ mods.alchemistry.Dissolver.removeRecipe(<minecraft:lapis_block>);
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:flint>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:flint>, true, 1, [[100, <alchemistry:compound:1>]]);
 for i in 0 to 16 {
-	mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete_powder>.withDamage(i));
-	mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete_powder>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
-	mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete>.withDamage(i));
-	mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
+    mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete_powder>.withDamage(i));
+    mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete_powder>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
+    mods.alchemistry.Dissolver.removeRecipe(<minecraft:concrete>.withDamage(i));
+    mods.alchemistry.Dissolver.addRecipe(<minecraft:concrete>.withDamage(i), true, 1, [[100, <alchemistry:compound:1>]]);
 }
 mods.alchemistry.Dissolver.removeRecipe(<minecraft:soul_sand>);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:soul_sand>, true, 1, [[100, <alchemistry:compound:1>, <alchemistry:element:14> * 2]]);

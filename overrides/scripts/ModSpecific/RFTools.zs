@@ -169,11 +169,11 @@ recipes.remove(<rftools:powercell_simple>);
 recipes.addShaped(<rftools:powercell_simple>, [[<enderio:item_alloy_ingot:6>,<ore:fusedQuartz>,<enderio:item_alloy_ingot:6>],[<ore:fusedQuartz>,<rftools:machine_frame>,<ore:fusedQuartz>],[<enderio:item_alloy_ingot:6>,<ore:fusedQuartz>,<enderio:item_alloy_ingot:6>]]);
 
 function rftoolsPowercellUpgrade(out as IItemStack, input_powercell_tag as IData) {
-	if(!isNull(input_powercell_tag)) {
-		return out.withTag(input_powercell_tag);
-	} else {
-		return out;
-	}
+    if(!isNull(input_powercell_tag)) {
+        return out.withTag(input_powercell_tag);
+    } else {
+        return out;
+    }
 }
 
 // Powercell
@@ -347,13 +347,13 @@ recipes.remove(<rftools:block_protector>);
 recipes.addShaped(<rftools:block_protector>, [[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>],[<rftools:infused_enderpearl>,<contenttweaker:stabilized_dimensional_machine_frame>,<rftools:infused_enderpearl>],[<alchemistry:ingot:90>,<bewitchment:poppet_earthprotection>,<alchemistry:ingot:90>]]);
 
 function addRFToolsEnvironmentalModualeRecipe(output as IItemStack, input_syringe as IItemStack, input_potion as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[null,input_syringe.noReturn(),null],[<evilcraft:golden_string>,<immersiveengineering:sheetmetal:10>,<evilcraft:golden_string>],[input_potion,input_potion,input_potion]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[null,input_syringe.noReturn(),null],[<evilcraft:golden_string>,<immersiveengineering:sheetmetal:10>,<evilcraft:golden_string>],[input_potion,input_potion,input_potion]]);
 }
 
 function addRFToolsEnvironmentalModualePlusRecipe(output as IItemStack, input_module as IItemStack, input_potion as IItemStack, input_vis_crystal as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output, [[input_potion,input_potion,input_potion],[input_vis_crystal,input_module,input_vis_crystal],[input_potion,input_potion,input_potion]]);
+    recipes.remove(output);
+    recipes.addShaped(output, [[input_potion,input_potion,input_potion],[input_vis_crystal,input_module,input_vis_crystal],[input_potion,input_potion,input_potion]]);
 }
 
 // Regeneration Environmental Module

@@ -20,28 +20,28 @@ import mods.bloodmagic.AlchemyTable;
 print("STARTING UnifyingDusts.zs");
 
 function removeDustSmeltingSimple(dust as IItemStack, gem as IItemStack) {
-	furnace.remove(gem, dust);
+    furnace.remove(gem, dust);
 }
 
 function removeDustSmeltingLightningCraft(dust as IItemStack, correctDust as IItemStack, crushAmount as int, gem as IItemStack, ore as IOreDictEntry) {
-	LightningCrusher.remove(dust);
-	LightningCrusher.add(correctDust * crushAmount, ore);
-	LightningCrusher.add(correctDust, gem);
+    LightningCrusher.remove(dust);
+    LightningCrusher.add(correctDust * crushAmount, ore);
+    LightningCrusher.add(correctDust, gem);
 }
 
 function unifyMekanismDust(mekDust as IItemStack, correctDust as IItemStack, enrichableOres as IItemStack[], undergroundBiomesOres as IItemStack[], dirtyDust as IItemStack, ingot as IItemStack) {
-	mods.mekanism.enrichment.removeRecipe(dirtyDust);
-	mods.mekanism.enrichment.addRecipe(dirtyDust, correctDust);
-	for ore in enrichableOres {
-		mods.mekanism.enrichment.removeRecipe(ore);
-		mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
-	}
-	for ore in undergroundBiomesOres {
-		mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
-	}
-	mods.mekanism.crusher.removeRecipe(mekDust);
-	mods.mekanism.crusher.addRecipe(ingot, correctDust);
-	furnace.remove(ingot, mekDust);
+    mods.mekanism.enrichment.removeRecipe(dirtyDust);
+    mods.mekanism.enrichment.addRecipe(dirtyDust, correctDust);
+    for ore in enrichableOres {
+        mods.mekanism.enrichment.removeRecipe(ore);
+        mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
+    }
+    for ore in undergroundBiomesOres {
+        mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
+    }
+    mods.mekanism.crusher.removeRecipe(mekDust);
+    mods.mekanism.crusher.addRecipe(ingot, correctDust);
+    furnace.remove(ingot, mekDust);
 }
 
 // Diamond Dust
@@ -141,7 +141,7 @@ Grinder.removeRecipe(<galacticraftplanets:asteroids_block:3>);
 Grinder.removeRecipe(<galacticraftcore:basic_block_core:7>);
 
 for ore in <ore:oreNaturalAluminum>.items {
-	Grinder.removeRecipe(ore);
+    Grinder.removeRecipe(ore);
 }
 
 recipes.addShapeless(<thermalfoundation:material:68>, [<galacticraftcore:ic2compat>]);
@@ -162,7 +162,7 @@ furnace.addRecipe(<thermalfoundation:material:132>, <thermalfoundation:material:
 <ore:dustSaltpeter>.removeItems([<bloodmagic:component:24>,<immersiveengineering:material:24>,<abyssalcraft:nitre>]);
 mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:component:22>,<bloodmagic:component:22>,<thermalfoundation:material:768>]);
 for item in <ore:sandstone>.items {
-	IECrusher.removeRecipesForInput(item);
+    IECrusher.removeRecipesForInput(item);
 }
 IECrusher.addRecipe(<minecraft:sand> * 2, <ore:sandstone>, 4000, <thermalfoundation:material:772>, 0.3);
 furnace.remove(<abyssalcraft:nitre>);
@@ -176,8 +176,8 @@ mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:
 // Salt
 val saltOreDicts = [<ore:itemSalt>,<ore:dustSalt>,<ore:foodSalt>,<ore:salt>,<ore:listAllSalt>,<ore:ingredientSalt>,<ore:pinchSalt>,<ore:portionSalt>,<ore:lumpSalt>,<ore:materialSalt>] as IOreDictEntry[];
 for oredict in saltOreDicts {
-	//recipes.replaceAllOccurences(oredict, <mekanism:salt>, <*>);
-	oredict.remove(<bewitchment:salt>);
+    //recipes.replaceAllOccurences(oredict, <mekanism:salt>, <*>);
+    oredict.remove(<bewitchment:salt>);
 }
 mods.alchemistry.Combiner.removeRecipe(<bewitchment:salt>);
 //recipes.replaceAllOccurences(<bewitchment:salt>, <mekanism:salt>);
@@ -212,7 +212,7 @@ val wrongSulfurs = [<immersiveengineering:material:25>,<abyssalcraft:sulfur>,<na
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:blaze_powder>);
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:blaze_powder> * 4, <ore:rodBlaze>, 4000, <thermalfoundation:material:771>, 0.5);
 for sulfur in wrongSulfurs {
-	mods.mekanism.chemical.oxidizer.removeRecipe(<gas:sulfurdioxide>, sulfur);
+    mods.mekanism.chemical.oxidizer.removeRecipe(<gas:sulfurdioxide>, sulfur);
 }
 recipes.remove(<natura:materials:4>);
 recipes.addShaped(<thermalfoundation:material:771>, [[<natura:clouds:3>,<natura:clouds:3>],[<natura:clouds:3>,<natura:clouds:3>]]);
@@ -249,123 +249,123 @@ mods.mekanism.enrichment.removeRecipe(<enderio:item_material:32>);
 // Sawdust
 val erebusPlanks = <ore:erebusPlank>;
 for i in 0 to 13 {
-	erebusPlanks.add(<erebus:planks>.withDamage(i));
+    erebusPlanks.add(<erebus:planks>.withDamage(i));
 }
 
 for plank in <ore:plankWood>.items {
-	if(!(vetheaPlanks has plank | erebusPlanks has plank)) {
-		mods.mekanism.sawmill.removeRecipe(plank);
-	}
-	mods.mekanism.sawmill.addRecipe(plank, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25);
+    if(!(vetheaPlanks has plank | erebusPlanks has plank)) {
+        mods.mekanism.sawmill.removeRecipe(plank);
+    }
+    mods.mekanism.sawmill.addRecipe(plank, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25);
 }
 
 val logWoodNoYield = <ore:logWoodNoYield>;
 logWoodNoYield.addItems([<abyssalcraft:dltlog2>, <betternether:stalagnate_stem>, <erebus:log_bamboo>, <natura:redwood_logs>, <natura:redwood_logs:2>]);
 
 val logs_and_planks = [
-					[<minecraft:log>,<minecraft:planks>],
-					[<minecraft:log:1>,<minecraft:planks:1>],
-					[<minecraft:log:2>,<minecraft:planks:2>],
-					[<minecraft:log:3>,<minecraft:planks:3>],
-					[<minecraft:log2>,<minecraft:planks:4>],
-					[<minecraft:log2:1>,<minecraft:planks:5>],
-					[<abyssalcraft:dltlog>,<abyssalcraft:dltplank>],
-					[<abyssalcraft:dreadlog>,<abyssalcraft:dreadplanks>],
-					[<aether_legacy:aether_log>,<aether_legacy:skyroot_plank>],
-					[<aether_legacy:aether_log:1>,<aether_legacy:skyroot_plank>],
-					[<atum:palm_log>,<atum:palm_planks>],
-					[<atum:deadwood_log>,<atum:deadwood_planks>],
-					[<bewitchment:cypress_wood>,<bewitchment:cypress_planks>],
-					[<bewitchment:elder_wood>,<bewitchment:elder_planks>],
-					[<bewitchment:juniper_wood>,<bewitchment:juniper_planks>],
-					[<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_planks>],
-					[<divinerpg:divine_log>,<divinerpg:divine_planks>],
-					[<divinerpg:frozen_log>,<divinerpg:frozen_planks>],
-					[<divinerpg:eden_log>,<divinerpg:eden_planks>],
-					[<divinerpg:wildwood_log>,<divinerpg:wildwood_planks>],
-					[<divinerpg:apalachia_log>,<divinerpg:apalachia_planks>],
-					[<divinerpg:skythern_log>,<divinerpg:skythern_planks>],
-					[<divinerpg:mortum_log>,<divinerpg:mortum_planks>],
-					[<divinerpg:eucalyptus_log>,<divinerpg:eucalyptus_planks>],
-					[<erebus:log_baobab>,<erebus:planks>],
-					[<erebus:log_eucalyptus>,<erebus:planks:1>],
-					[<erebus:log_mahogany>,<erebus:planks:2>],
-					[<erebus:log_mossbark>,<erebus:planks:3>],
-					[<erebus:log_asper>,<erebus:planks:4>],
-					[<erebus:log_cypress>,<erebus:planks:5>],
-					[<erebus:log_balsam>,<erebus:planks:6>],
-					[<erebus:log_rotten>,<erebus:planks:9>],
-					[<erebus:log_marshwood>,<erebus:planks:10>],
-					[<erebus:log_scorched>,<erebus:planks:11>],
-					[<evilcraft:undead_log>,<evilcraft:undead_plank>],
-					[<extrautils2:ironwood_log>,<extrautils2:ironwood_planks>],
-					[<extrautils2:ironwood_log:1>,<extrautils2:ironwood_planks:1>],
-					[<lightningcraft:wood_log>,<lightningcraft:wood_plank>],
-					[<mysticalworld:charred_log>,<mysticalworld:charred_planks>],
-					[<natura:overworld_logs>,<natura:overworld_planks>],
-					[<natura:overworld_logs:1>,<natura:overworld_planks:1>],
-					[<natura:overworld_logs:2>,<natura:overworld_planks:2>],
-					[<natura:overworld_logs:3>,<natura:overworld_planks:3>],
-					[<natura:overworld_logs2>,<natura:overworld_planks:4>],
-					[<natura:overworld_logs2:1>,<natura:overworld_planks:5>],
-					[<natura:overworld_logs2:2>,<natura:overworld_planks:6>],
-					[<natura:overworld_logs2:3>,<natura:overworld_planks:7>],
-					[<natura:redwood_logs:1>,<natura:overworld_planks:8>],
-					[<natura:nether_logs>,<natura:nether_planks>],
-					[<natura:nether_logs:1>,<natura:nether_planks:2>],
-					[<natura:nether_logs:2>,<natura:nether_planks:3>],
-					[<natura:nether_logs2>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:1>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:2>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:3>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:4>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:5>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:6>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:7>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:8>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:9>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:10>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:11>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:12>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:13>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:14>,<natura:nether_planks:1>],
-					[<natura:nether_logs2:15>,<natura:nether_planks:1>],
-					[<roots:wildwood_log>,<roots:wildwood_planks>],
-					[<thaumcraft:log_greatwood>,<thaumcraft:plank_greatwood>],
-					[<thaumcraft:log_silverwood>,<thaumcraft:plank_silverwood>],
-					[<twilightforest:twilight_log>,<twilightforest:twilight_oak_planks>],
-					[<twilightforest:twilight_log:1>,<twilightforest:canopy_planks>],
-					[<twilightforest:twilight_log:2>,<twilightforest:mangrove_planks>],
-					[<twilightforest:twilight_log:3>,<twilightforest:dark_planks>],
-					[<twilightforest:magic_log>,<twilightforest:time_planks>],
-					[<twilightforest:magic_log:1>,<twilightforest:trans_planks>],
-					[<twilightforest:magic_log:2>,<twilightforest:mine_planks>],
-					[<twilightforest:magic_log:3>,<twilightforest:sort_planks>],
-					[<totemic:cedar_log>,<totemic:cedar_plank>],
-					[<traverse:fir_log>,<traverse:fir_planks>]] as IItemStack[][];
+                    [<minecraft:log>,<minecraft:planks>],
+                    [<minecraft:log:1>,<minecraft:planks:1>],
+                    [<minecraft:log:2>,<minecraft:planks:2>],
+                    [<minecraft:log:3>,<minecraft:planks:3>],
+                    [<minecraft:log2>,<minecraft:planks:4>],
+                    [<minecraft:log2:1>,<minecraft:planks:5>],
+                    [<abyssalcraft:dltlog>,<abyssalcraft:dltplank>],
+                    [<abyssalcraft:dreadlog>,<abyssalcraft:dreadplanks>],
+                    [<aether_legacy:aether_log>,<aether_legacy:skyroot_plank>],
+                    [<aether_legacy:aether_log:1>,<aether_legacy:skyroot_plank>],
+                    [<atum:palm_log>,<atum:palm_planks>],
+                    [<atum:deadwood_log>,<atum:deadwood_planks>],
+                    [<bewitchment:cypress_wood>,<bewitchment:cypress_planks>],
+                    [<bewitchment:elder_wood>,<bewitchment:elder_planks>],
+                    [<bewitchment:juniper_wood>,<bewitchment:juniper_planks>],
+                    [<bewitchment:dragons_blood_wood>,<bewitchment:dragons_blood_planks>],
+                    [<divinerpg:divine_log>,<divinerpg:divine_planks>],
+                    [<divinerpg:frozen_log>,<divinerpg:frozen_planks>],
+                    [<divinerpg:eden_log>,<divinerpg:eden_planks>],
+                    [<divinerpg:wildwood_log>,<divinerpg:wildwood_planks>],
+                    [<divinerpg:apalachia_log>,<divinerpg:apalachia_planks>],
+                    [<divinerpg:skythern_log>,<divinerpg:skythern_planks>],
+                    [<divinerpg:mortum_log>,<divinerpg:mortum_planks>],
+                    [<divinerpg:eucalyptus_log>,<divinerpg:eucalyptus_planks>],
+                    [<erebus:log_baobab>,<erebus:planks>],
+                    [<erebus:log_eucalyptus>,<erebus:planks:1>],
+                    [<erebus:log_mahogany>,<erebus:planks:2>],
+                    [<erebus:log_mossbark>,<erebus:planks:3>],
+                    [<erebus:log_asper>,<erebus:planks:4>],
+                    [<erebus:log_cypress>,<erebus:planks:5>],
+                    [<erebus:log_balsam>,<erebus:planks:6>],
+                    [<erebus:log_rotten>,<erebus:planks:9>],
+                    [<erebus:log_marshwood>,<erebus:planks:10>],
+                    [<erebus:log_scorched>,<erebus:planks:11>],
+                    [<evilcraft:undead_log>,<evilcraft:undead_plank>],
+                    [<extrautils2:ironwood_log>,<extrautils2:ironwood_planks>],
+                    [<extrautils2:ironwood_log:1>,<extrautils2:ironwood_planks:1>],
+                    [<lightningcraft:wood_log>,<lightningcraft:wood_plank>],
+                    [<mysticalworld:charred_log>,<mysticalworld:charred_planks>],
+                    [<natura:overworld_logs>,<natura:overworld_planks>],
+                    [<natura:overworld_logs:1>,<natura:overworld_planks:1>],
+                    [<natura:overworld_logs:2>,<natura:overworld_planks:2>],
+                    [<natura:overworld_logs:3>,<natura:overworld_planks:3>],
+                    [<natura:overworld_logs2>,<natura:overworld_planks:4>],
+                    [<natura:overworld_logs2:1>,<natura:overworld_planks:5>],
+                    [<natura:overworld_logs2:2>,<natura:overworld_planks:6>],
+                    [<natura:overworld_logs2:3>,<natura:overworld_planks:7>],
+                    [<natura:redwood_logs:1>,<natura:overworld_planks:8>],
+                    [<natura:nether_logs>,<natura:nether_planks>],
+                    [<natura:nether_logs:1>,<natura:nether_planks:2>],
+                    [<natura:nether_logs:2>,<natura:nether_planks:3>],
+                    [<natura:nether_logs2>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:1>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:2>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:3>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:4>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:5>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:6>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:7>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:8>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:9>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:10>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:11>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:12>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:13>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:14>,<natura:nether_planks:1>],
+                    [<natura:nether_logs2:15>,<natura:nether_planks:1>],
+                    [<roots:wildwood_log>,<roots:wildwood_planks>],
+                    [<thaumcraft:log_greatwood>,<thaumcraft:plank_greatwood>],
+                    [<thaumcraft:log_silverwood>,<thaumcraft:plank_silverwood>],
+                    [<twilightforest:twilight_log>,<twilightforest:twilight_oak_planks>],
+                    [<twilightforest:twilight_log:1>,<twilightforest:canopy_planks>],
+                    [<twilightforest:twilight_log:2>,<twilightforest:mangrove_planks>],
+                    [<twilightforest:twilight_log:3>,<twilightforest:dark_planks>],
+                    [<twilightforest:magic_log>,<twilightforest:time_planks>],
+                    [<twilightforest:magic_log:1>,<twilightforest:trans_planks>],
+                    [<twilightforest:magic_log:2>,<twilightforest:mine_planks>],
+                    [<twilightforest:magic_log:3>,<twilightforest:sort_planks>],
+                    [<totemic:cedar_log>,<totemic:cedar_plank>],
+                    [<traverse:fir_log>,<traverse:fir_planks>]] as IItemStack[][];
 
 val logWoodNoOrigMekRecipe = [<divinerpg:divine_log>,<divinerpg:frozen_log>,<divinerpg:eden_log>,<divinerpg:wildwood_log>,<divinerpg:apalachia_log>,<divinerpg:skythern_log>,<divinerpg:mortum_log>,<divinerpg:eucalyptus_log>,<totemic:cedar_log>,<traverse:fir_log>] as IItemStack[];
 
 for pair in logs_and_planks {
-	if (!(logWoodNoOrigMekRecipe has pair[0])) {
-		mods.mekanism.sawmill.removeRecipe(pair[0]);
-	}
-	mods.mekanism.sawmill.addRecipe(pair[0], pair[1] * 6, <thermalfoundation:material:800>, 1);
+    if (!(logWoodNoOrigMekRecipe has pair[0])) {
+        mods.mekanism.sawmill.removeRecipe(pair[0]);
+    }
+    mods.mekanism.sawmill.addRecipe(pair[0], pair[1] * 6, <thermalfoundation:material:800>, 1);
 }
 for log in <ore:logWood>.items {
-	mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [100,90,50,10], log, "CHANCE_ONLY", 2400);
+    mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [100,90,50,10], log, "CHANCE_ONLY", 2400);
 }
 for stair in <ore:stairWood>.items {
-	mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], stair, "MULTIPLY_OUTPUT", 1200);
+    mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], stair, "MULTIPLY_OUTPUT", 1200);
 }
 for slab in <ore:slabWood>.items {
-	mods.mekanism.sawmill.removeRecipe(slab);
-	mods.mekanism.sawmill.addRecipe(slab, <minecraft:stick> * 3, <thermalfoundation:material:800>, 13);
-	mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], slab, "MULTIPLY_OUTPUT", 1200);
+    mods.mekanism.sawmill.removeRecipe(slab);
+    mods.mekanism.sawmill.addRecipe(slab, <minecraft:stick> * 3, <thermalfoundation:material:800>, 13);
+    mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], slab, "MULTIPLY_OUTPUT", 1200);
 }
 for stick in <ore:stickWood>.items {
-	mods.mekanism.sawmill.addRecipe(stick, <thermalfoundation:material:800>);
-	mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], stick, "MULTIPLY_OUTPUT", 800);
+    mods.mekanism.sawmill.addRecipe(stick, <thermalfoundation:material:800>);
+    mods.enderio.SagMill.addRecipe([<thermalfoundation:material:800>], [100], stick, "MULTIPLY_OUTPUT", 800);
 }
 mods.mekanism.enrichment.removeRecipe(<mekanism:sawdust>);
 

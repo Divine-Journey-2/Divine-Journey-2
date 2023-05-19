@@ -210,8 +210,8 @@ recipes.remove(<projecte:item.pe_ring_iron_band>);
 // recipe in config/brandon3055/CustomFusionRecipes.json
 
 function addProjectERingRecipe(output as IItemStack, top_bottom_material as IIngredient, corner_material as IIngredient) {
-	recipes.remove(output);
-	recipes.addShaped(output.withTag({}), [[corner_material,top_bottom_material,corner_material],[<projecte:item.pe_matter>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter>],[corner_material,top_bottom_material,corner_material]]);
+    recipes.remove(output);
+    recipes.addShaped(output.withTag({}), [[corner_material,top_bottom_material,corner_material],[<projecte:item.pe_matter>,<projecte:item.pe_ring_iron_band>,<projecte:item.pe_matter>],[corner_material,top_bottom_material,corner_material]]);
 }
 
 // Black Hole Band

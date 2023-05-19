@@ -72,22 +72,22 @@ recipes.addShaped(<enderutilities:endercapacitor>, [[<enderutilities:enderpart>,
 recipes.remove(<enderutilities:endercapacitor:1>);
 recipes.addShaped("enderutilites_capacitor_upgrade1", <enderutilities:endercapacitor:1>, [[<enderutilities:enderpart:1>,<enderutilities:enderpart:16>,<enderutilities:enderpart:1>],[<enderutilities:enderpart:1>,<enderutilities:endercapacitor>.marked("capacitor"),<enderutilities:enderpart:1>],[<enderutilities:enderpart:1>,<enderutilities:enderpart:1>,<enderutilities:enderpart:1>]],
 function(out, ins, cInfo) {
-	if(ins.capacitor.tag has "EnderChargeAmount") {
-		return out.withTag(ins.capacitor.tag);
-	} else {
-		return out;
-	}
+    if(ins.capacitor.tag has "EnderChargeAmount") {
+        return out.withTag(ins.capacitor.tag);
+    } else {
+        return out;
+    }
 }, null);
 
 // Ender Capacitor (Advanced)
 recipes.remove(<enderutilities:endercapacitor:2>);
 recipes.addShaped("enderutilites_capacitor_upgrade2", <enderutilities:endercapacitor:2>, [[<enderutilities:enderpart:2>,<enderutilities:enderpart:17>,<enderutilities:enderpart:2>],[<enderutilities:enderpart:2>,<enderutilities:endercapacitor:1>.marked("capacitor"),<enderutilities:enderpart:2>],[<enderutilities:enderpart:2>,<enderutilities:enderpart:2>,<enderutilities:enderpart:2>]],
 function(out, ins, cInfo) {
-	if(ins.capacitor.tag has "EnderChargeAmount") {
-		return out.withTag(ins.capacitor.tag);
-	} else {
-		return out;
-	}
+    if(ins.capacitor.tag has "EnderChargeAmount") {
+        return out.withTag(ins.capacitor.tag);
+    } else {
+        return out;
+    }
 }, null);
 
 // Ender Infused Stick
@@ -98,11 +98,11 @@ recipes.addShapedMirrored(<enderutilities:enderpart:20>, [[null,null,<enderutili
 recipes.remove(<enderutilities:enderbucket>);
 recipes.addShaped("enderutilites_enderbucket", <enderutilities:enderbucket>, [[null,<enderutilities:enderpart:15>,null],[<enderutilities:enderpart>,<thermalexpansion:reservoir>.marked("reservoir"),<enderutilities:enderpart>],[null,<enderutilities:enderpart>,null]],
 function(out,ins,cInfo) {
-	if(ins.reservoir.tag has "Fluid") {
-		return out.withTag({Fluid: ins.reservoir.tag.Fluid});
-	} else {
-		return out;
-	}
+    if(ins.reservoir.tag has "Fluid") {
+        return out.withTag({Fluid: ins.reservoir.tag.Fluid});
+    } else {
+        return out;
+    }
 }, null);
 
 // Creative Breaking Module
@@ -348,14 +348,14 @@ recipes.addShaped(<enderutilities:molecular_exciter>, [[<enderutilities:enderpar
 recipes.remove(<enderutilities:msu>);
 recipes.addShaped("enderutilities_msu", <enderutilities:msu>, [[<enderutilities:enderpart:2>,<enderutilities:enderpart:12>,<enderutilities:enderpart:2>],[<enderutilities:enderpart:12>,<industrialforegoing:black_hole_unit>.marked("black_hole_unit"),<enderutilities:enderpart:12>],[<enderutilities:enderpart:2>,<enderutilities:enderpart:12>,<enderutilities:enderpart:2>]],
 function(out,ins,cInfo) {
-	if(ins.black_hole_unit.tag has "itemstack") {
-		var item_nbt = {} as IData;
-		if(ins.black_hole_unit.tag has "stack_nbt") {
-			item_nbt = {tag: ins.black_hole_unit.tag.stack_nbt};
-		}
-		return out.withTag({Items: [{Slot: 0 as byte, id: ins.black_hole_unit.tag.itemstack, Count: ins.black_hole_unit.tag.amount as byte} + item_nbt + {Damage: ins.black_hole_unit.tag.meta as short}]});
-	} else {
-		return out;
+    if(ins.black_hole_unit.tag has "itemstack") {
+        var item_nbt = {} as IData;
+        if(ins.black_hole_unit.tag has "stack_nbt") {
+            item_nbt = {tag: ins.black_hole_unit.tag.stack_nbt};
+        }
+        return out.withTag({Items: [{Slot: 0 as byte, id: ins.black_hole_unit.tag.itemstack, Count: ins.black_hole_unit.tag.amount as byte} + item_nbt + {Damage: ins.black_hole_unit.tag.meta as short}]});
+    } else {
+        return out;
 }}, null);
 
 // Phasing Block
