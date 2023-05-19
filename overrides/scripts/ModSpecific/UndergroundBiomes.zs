@@ -19,22 +19,6 @@ for i in 0 to 8 {
 	mods.chisel.Carving.addVariation("cobblestone", <undergroundbiomes:metamorphic_cobble>.withDamage(i));
 }
 
-val igneousStoneNames = ["Red Granite", "Black Granite", "Rhyolite", "Andesite", "Gabbro", "Basalt", "Komatiite", "Dacite"] as string[];
-val metamorphicStoneNames = ["Gneiss", "Eclogite", "Marble", "Quartzite", "Blue Schist", "Green Schist", "Soapstone", "Migmatite"] as string[];
-val sedimentaryStoneNames = ["Limestone", "Chalk", "Shale", "Siltstone", "Lignite", "Dolomite", "Greywacke", "Chert"] as string[];
-val allNames = [igneousStoneNames, metamorphicStoneNames, sedimentaryStoneNames] as string[][];
-
-# Renaming Mana Infused to Mithril
-for i, name in igneousStoneNames {
-	<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
-}
-for i, name in metamorphicStoneNames {
-	<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
-}
-for i, name in sedimentaryStoneNames {
-	<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name>.withDamage(i).displayName = name + " Mithril Ore";
-}
-
 # Sand conversion tooltips
 <undergroundbiomes:igneous_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc0"));
 <undergroundbiomes:igneous_sand:*>.addTooltip(game.localize("dj2.undergroundbiomes_sand.desc1"));
