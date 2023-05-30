@@ -5,6 +5,7 @@ import mods.roots.Mortar;
 import mods.roots.Fey;
 import mods.roots.Rituals;
 import mods.roots.RunicShears;
+import mods.roots.AnimalHarvest;
 import mods.roots.SummonCreatures;
 import mods.roots.Modifiers;
 import crafttweaker.formatting.IFormattedText;
@@ -66,7 +67,7 @@ Fey.addRecipe("apothecary_pouch", <roots:apothecary_pouch>, [<roots:component_po
 <roots:apothecary_pouch>.addTooltip(format.bold(format.red("WARNING: ") + format.gray("Crafting this item will wipe the input bag's inventory!")));
 
 # Grove Supplication Ritual
-Rituals.modifyRitual("grove_supplication", [<minecraft:mossy_cobblestone>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
+Rituals.modifyRitual("grove_supplication", [<ore:blockMossy>,<totemic:cedar_sapling>,<totemic:eagle_drops:1>,<contenttweaker:root_of_the_fallen>,<roots:petals>]);
 
 # Dewgonia
 Pyre.removeRecipe(<roots:dewgonia>);
@@ -281,7 +282,12 @@ Rituals.modifyRitual("ritual_gathering", [<roots:wildewheet>, <roots:cloud_berry
 
 # Summon Creatures Ritual
 SummonCreatures.clearLifeEssence();
-<natura:materials:6>.addTooltip(format.white("Imps can be spawned by the Roots 'Summon Creatures' ritual."));
+
+# Animal Harvest Ritual
+AnimalHarvest.addEntity(<entity:natura:imp>);
+AnimalHarvest.addEntity(<entity:totemic:buffalo>);
+AnimalHarvest.addEntity(<entity:totemic:bald_eagle>);
+AnimalHarvest.addEntity(<entity:thaumcraft:wisp>);
 
 # Artificial Scarab Wings
 Fey.addRecipe("artificial_scarab_wings", <contenttweaker:artificial_scarab_wings>, [<roots:moonglow_leaf>,<roots:wildewheet>,<roots:stalicripe>,<roots:fey_leather>,<roots:spirit_herb>]);

@@ -59,7 +59,7 @@ recipes.addShaped(<divinerpg:horde_horn>, [[<thermalfoundation:storage:7>,<actua
 
 # Angelic Chestplate
 recipes.remove(<divinerpg:angelic_chestplate>);
-recipes.addShaped(<divinerpg:angelic_chestplate>, [[<divinerpg:bluefire_stone>,<extrautils2:angelring:*>,<divinerpg:bluefire_stone>],[<divinerpg:ice_stone>,<divinerpg:bluefire_stone>,<divinerpg:ice_stone>],[<divinerpg:ice_stone>,<divinerpg:ice_stone>,<divinerpg:ice_stone>]]);
+recipes.addShaped(<divinerpg:angelic_chestplate>, [[<divinerpg:bluefire_stone>,null,<divinerpg:bluefire_stone>],[<divinerpg:ice_stone>,<contenttweaker:block_of_elevation>,<divinerpg:ice_stone>],[<divinerpg:ice_stone>,<divinerpg:ice_stone>,<divinerpg:ice_stone>]]);
 
 # Divine Rock
 recipes.remove(<divinerpg:divine_rock>);
