@@ -22,7 +22,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "mysticalagradditions:special"
+            "item": "mysticalagradditions:special",
+            "amount": 2
         }
     ]
 }
