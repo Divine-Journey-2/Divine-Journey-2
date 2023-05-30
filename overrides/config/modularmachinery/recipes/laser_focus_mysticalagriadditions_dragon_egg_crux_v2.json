@@ -1,7 +1,7 @@
 {
-    "machine": "weak_fusion_plant",
-    "registryName": "weak_fusion_plant_mysticalagriadditions_dragon_egg_crux",
-    "recipeTime": 30,
+    "machine": "laser_focus",
+    "registryName": "laser_focus_mysticalagriadditions_dragon_egg_crux_v2",
+    "recipeTime": 600,
     "requirements": [
         {
             "type": "item",
@@ -17,7 +17,12 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 12000000
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 102400000
         },
         {
             "type": "item",
