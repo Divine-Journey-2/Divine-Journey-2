@@ -1,0 +1,28 @@
+{
+    "machine": "weak_fusion_plant",
+    "registryName": "weak_fusion_plant_mysticalagriadditions_dragon_egg_crux",
+    "recipeTime": 30,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:special@1"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:dragon_egg_essence",
+            "amount": 8
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 12000000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "mysticalagradditions:special@1"
+        }
+    ]
+}
