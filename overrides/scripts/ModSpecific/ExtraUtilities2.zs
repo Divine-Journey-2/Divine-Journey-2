@@ -64,6 +64,7 @@ recipes.remove(<extrautils2:unstableingots:0>);
 recipes.removeShaped(<extrautils2:unstableingots:1>, [[<*>],[<*>],[<minecraft:diamond>]]);
 recipes.addShaped(<extrautils2:unstableingots>, [[<minecraft:iron_ingot>],[<contenttweaker:gp_powder>],[<minecraft:diamond>]]);
 recipes.addShaped(<extrautils2:unstableingots:1>, [[<minecraft:iron_nugget>],[<contenttweaker:gp_powder>],[<minecraft:diamond>]]);
+<extrautils2:unstableingots:0>.removeTooltip("Must be crafted in a vanilla crafting table.");
 
 // Moon Stone
 recipes.remove(<extrautils2:ingredients:5>);
