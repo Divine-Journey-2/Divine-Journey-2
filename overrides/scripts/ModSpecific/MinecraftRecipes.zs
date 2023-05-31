@@ -190,7 +190,6 @@ mods.mekanism.crusher.removeRecipe(<minecraft:gunpowder>);
 <minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc1"));
 <minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc2"));
 <minecraft:dragon_breath>.addTooltip(game.localize("dj2.dragon_breath.desc3"));
-recipes.addShaped(<minecraft:dragon_breath>, [[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<minecraft:glass_bottle>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>]]);
 
 // Additional Wither Skeleton Skull recipe
 recipes.addShaped(<minecraft:skull:1>, [[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>],[<quark:black_ash>,<minecraft:skull>,<quark:black_ash>],[<quark:black_ash>,<quark:black_ash>,<quark:black_ash>]]);

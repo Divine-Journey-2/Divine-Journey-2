@@ -161,17 +161,26 @@ function removeItemFromHand(player as IPlayer, item as IItemStack) {
 }
 
 events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
+
+    val blockID = e.block.definition.id;
+
+    // Prevents the Matter Transporter from duping IF Black Hole stuff.
+    if (whatHand(e.player, <quantumflux:mattertransporter>) != crafttweaker.entity.IEntityEquipmentSlot.head() &&
+        (blockID == <industrialforegoing:black_hole_unit>.definition.id || blockID == <industrialforegoing:black_hole_tank>.definition.id)) {
+        e.cancel();
+    }
+
     if (e.player.world.isRemote()) {
         return;
     }
 
     // The Uncrafting Table should never be openable, to prevent a duplication bug
-    if (e.block.definition.id == <twilightforest:uncrafting_table>.definition.id) {
+    if (blockID == <twilightforest:uncrafting_table>.definition.id) {
         e.cancel();
     }
 
     // Grant the user the Astral Sorcery Knowledge to use the table they just right clicked on.
-    if (e.block.definition.id == <astralsorcery:blockaltar>.definition.id) {
+    if (blockID == <astralsorcery:blockaltar>.definition.id) {
         progressAstral(e.player, e.block.meta);
     }
 
@@ -183,7 +192,7 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     }
 
     // Activate the held ender core if the target block was a stabilized end crystal
-    if (e.block.definition.id == <contenttweaker:stabilized_end_crystal>.definition.id) {
+    if (blockID == <contenttweaker:stabilized_end_crystal>.definition.id) {
         activateEnderCore(e.player);
     }
 
