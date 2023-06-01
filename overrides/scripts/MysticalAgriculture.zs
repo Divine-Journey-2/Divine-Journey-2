@@ -1290,6 +1290,12 @@ recipes.addShaped(<alchemistry:ingot:24> * 3, [[<mysticalagriculture:chrome_esse
 # Rock Crystal Seeds
 # recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriculture_rock_crystal_seeds.json
 
+# Ender Air
+recipes.addShaped(<botania:manaresource:15>, [[<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>],[<mysticalagriculture:end_essence>,<minecraft:glass_bottle>,<mysticalagriculture:end_essence>],[<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>,<mysticalagriculture:end_essence>]]);
+
+# Dragon's Breath
+recipes.addShaped(<minecraft:dragon_breath>, [[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<botania:manaresource:15>,<mysticalagradditions:dragon_egg_essence>],[<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>,<mysticalagradditions:dragon_egg_essence>]]);
+
 # Ores from Essence
 function addMysticalAgricultureEssenceToOreRecipe(ore as IItemStack, essence as IItemStack, amount as int) {
 	recipes.addShaped(ore * amount, [[essence,essence,essence],[essence,<ore:stone>,essence],[essence,essence,essence]]);
