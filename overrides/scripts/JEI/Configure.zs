@@ -9,7 +9,7 @@ import mods.requious.SlotVisual;
 print("STARTING Configure.zs");
 
 var configure = <assembly:configure>;
-configure.addJEICatalyst(<thermalfoundation:material:288>.withTag({display:{Name:"§r§dConfigure Block"}}));
+configure.addJEICatalyst(<thermalfoundation:material:288>.withTag({display:{Name:game.localize("dj2.configure_jei.gear.name")}}));
 configure.setJEIItemSlot(0, 0, "input", SlotVisual.itemSlot());
 configure.setJEIDecoration(1, 0, "indicator_arrow", SlotVisual.arrowRight());
 configure.setJEIItemSlot(2, 0, "output", SlotVisual.itemSlot());
@@ -33,7 +33,7 @@ function assembePreview(itemList as IIngredient, lore as string) as IIngredient 
     return temp;
 }
 
-val reconstructor = assembePreview(<actuallyadditions:block_atomic_reconstructor>, "§r§bToggles between Deactivation and Pulse mode.");
+val reconstructor = assembePreview(<actuallyadditions:block_atomic_reconstructor>, game.localize("dj2.configure_jei.atomic_reconstructor.desc"));
 
 val lasers = <actuallyadditions:block_laser_relay_item_whitelist> | <actuallyadditions:block_laser_relay_item> | <actuallyadditions:block_laser_relay_fluids> | <actuallyadditions:block_laser_relay_extreme> | <actuallyadditions:block_laser_relay_advanced> | <actuallyadditions:block_laser_relay>;
 
@@ -45,7 +45,7 @@ val golem = <thaumcraft:golem>.withTag({props: 0 as long});
 
 val cropSticks = <agricraft:crop_sticks>;
 
-val starlightTransfer = assembePreview(<astralsorcery:blockcollectorcrystal> | <astralsorcery:blockcelestialcollectorcrystal> | <astralsorcery:blocklens> | <astralsorcery:blockprism>, "§r§bAnything that can transfer or recive starlight.");
+val starlightTransfer = assembePreview(<astralsorcery:blockcollectorcrystal> | <astralsorcery:blockcelestialcollectorcrystal> | <astralsorcery:blocklens> | <astralsorcery:blockprism>, game.localize("dj2.configure_jei.starlight.desc"));
 
 val ritual = <bloodmagic:ritual_controller>;
 
@@ -55,7 +55,7 @@ val gauntletConfigures = <thaumcraft:tube> | <thaumcraft:tube_valve> | <thaumcra
 
 val p2pTunnels = <appliedenergistics2:part:460> | <appliedenergistics2:part:461> | <appliedenergistics2:part:462> | <appliedenergistics2:part:463> | <appliedenergistics2:part:467> | <appliedenergistics2:part:469>;
 
-val conduits = assembePreview(<enderio:item_item_conduit> | <enderio:item_liquid_conduit:*> | <enderio:item_power_conduit:*> | <enderio:item_me_conduit:*> | <enderio:item_gas_conduit:2> | <enderio:item_redstone_conduit> | <enderio:item_endergy_conduit:5> | <enderio:item_endergy_conduit:6> | <enderio:item_endergy_conduit:7> | <enderio:item_endergy_conduit:8> | <enderio:item_endergy_conduit:9> | <enderio:item_endergy_conduit:10> | <enderio:item_endergy_conduit:11>, "§r§bAny EnderIO Conduit.");
+val conduits = assembePreview(<enderio:item_item_conduit> | <enderio:item_liquid_conduit:*> | <enderio:item_power_conduit:*> | <enderio:item_me_conduit:*> | <enderio:item_gas_conduit:2> | <enderio:item_redstone_conduit> | <enderio:item_endergy_conduit:5> | <enderio:item_endergy_conduit:6> | <enderio:item_endergy_conduit:7> | <enderio:item_endergy_conduit:8> | <enderio:item_endergy_conduit:9> | <enderio:item_endergy_conduit:10> | <enderio:item_endergy_conduit:11>, game.localize("dj2.configure_jei.enderio_conduit.desc"));
 
 val generatingFlowers = <botania:specialflower>.withTag({type: "endoflame"}) | <botania:specialflower>.withTag({type: "hydroangeas"}) | <botania:specialflower>.withTag({type: "thermalily"}) | <botania:specialflower>.withTag({type: "arcanerose"}) | <botania:specialflower>.withTag({type: "munchdew"}) | <botania:specialflower>.withTag({type: "entropinnyum"}) | <botania:specialflower>.withTag({type: "kekimurus"}) | <botania:specialflower>.withTag({type: "gourmaryllis"}) | <botania:specialflower>.withTag({type: "narslimmus"}) | <botania:specialflower>.withTag({type: "spectrolus"}) | <botania:specialflower>.withTag({type: "rafflowsia"}) | <botania:specialflower>.withTag({type: "shulk_me_not"}) | <botania:specialflower>.withTag({type: "dandelifeon"});
 
@@ -63,35 +63,35 @@ val wires = <immersiveengineering:connector> | <immersiveengineering:connector:1
 
 val variable = <integrateddynamics:variable>;
 
-val renamer = assembePreview(variable, "§r§bCan rename anything, primarily intended for Variable Cards.");
+val renamer = assembePreview(variable, game.localize("dj2.configure_jei.labeller.desc"));
 
 val bambooPipes = <erebus:bamboo_pipe_extract_active> | <erebus:bamboo_pipe> | <erebus:bamboo_pipe_extract>;
 
 val wandUses = generatingFlowers | <botania:pool> | <botania:spark> | <botania:spreader> | <botania:spreader:1> | <botania:spreader:2> | <botania:spreader:3> | <botania:hourglass> | <botania:platform:*> | <botania:animatedtorch> | <botania:turntable> | <botania:pistonrelay> | <botania:lightrelay:*>;
 
-val redprintUses = assembePreview(<thermaldynamics:servo:*> | <thermaldynamics:filter:*> | <thermaldynamics:retriever:*> | <thermaldynamics:relay:*> | <thermalexpansion:machine:*> | <thermalexpansion:device:*> | <thermalexpansion:dynamo:*> | <thermalexpansion:cell:*>, "§r§bMost Thermal Blocks.");
+val redprintUses = assembePreview(<thermaldynamics:servo:*> | <thermaldynamics:filter:*> | <thermaldynamics:retriever:*> | <thermaldynamics:relay:*> | <thermalexpansion:machine:*> | <thermalexpansion:device:*> | <thermalexpansion:dynamo:*> | <thermalexpansion:cell:*>, game.localize("dj2.configure_jei.redprint.desc"));
 
-val configurationCardUses = assembePreview(<mekanism:machineblock:*>, "§r§bMost Mekanism Machines.");
+val configurationCardUses = assembePreview(<mekanism:machineblock:*>, game.localize("dj2.configure_jei.configuration_card.desc"));
 
 val totemicBase = <totemic:totem_base>;
 
 val illuminator = <astralsorcery:blockworldilluminator>;
 
-val fluix = assembePreview(<appliedenergistics2:part:16>, "§r§bMost Applied Energistics 2 Blocks.");
+val fluix = assembePreview(<appliedenergistics2:part:16>, game.localize("dj2.configure_jei.fluix_cable.desc"));
 
 val reactorPorts = <bigreactors:reactorcoolantport> | <bigreactors:reactoraccessport>;
 
-val hammer = assembePreview(<immersiveengineering:stone_decoration> | <immersiveengineering:stone_decoration:1> | <immersiveengineering:stone_decoration:2> | <immersiveengineering:metal_decoration0:3> | <immersiveengineering:metal_decoration0:4> | <immersiveengineering:metal_decoration0:5> | <immersiveengineering:metal_decoration0:6> | <immersiveengineering:metal_decoration0:7>, "§r§bForming Immersive Engineering Multiblocks.");
+val hammer = assembePreview(<immersiveengineering:stone_decoration> | <immersiveengineering:stone_decoration:1> | <immersiveengineering:stone_decoration:2> | <immersiveengineering:metal_decoration0:3> | <immersiveengineering:metal_decoration0:4> | <immersiveengineering:metal_decoration0:5> | <immersiveengineering:metal_decoration0:6> | <immersiveengineering:metal_decoration0:7>, game.localize("dj2.configure_jei.immersive_engineering_hammer.desc"));
 
-val chest = assembePreview(<minecraft:chest>, "§r§bRotate (most) blocks.");
+val chest = assembePreview(<minecraft:chest>, game.localize("dj2.configure_jei.rotate_chest.desc"));
 
-val integratedDynamics = assembePreview(<integrateddynamics:cable>, "§r§bAny Integrated Dynamics Blocks.");
+val integratedDynamics = assembePreview(<integrateddynamics:cable>, game.localize("dj2.configure_jei.integrated_dynamics.desc"));
 
-val tesla = assembePreview(<teslacorelib:machine_case>, "§r§bAny Industrial Foregoing Machine.");
+val tesla = assembePreview(<teslacorelib:machine_case>, game.localize("dj2.configure_jei.industrial_foregoing.desc"));
 
 val enderDrawer = <enderutilities:barrel>;
 
-val rftools = assembePreview(<rftools:machine_frame>, "§r§bAny RFTools Machine.");
+val rftools = assembePreview(<rftools:machine_frame>, game.localize("dj2.configure_jei.rftools.desc"));
 
 val shield = <rftools:shield_block1> | <rftools:shield_block2> | <rftools:shield_block3> | <rftools:shield_block4> | <rftools:shield_template_block:*>;
 

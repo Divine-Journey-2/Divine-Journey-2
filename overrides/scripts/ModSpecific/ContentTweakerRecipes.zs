@@ -3,6 +3,7 @@
 import crafttweaker.formatting.IFormattedText;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.ITooltipFunction;
 import crafttweaker.data.IData;
 import crafttweaker.enchantments.IEnchantment;
 import mods.immersiveengineering.ArcFurnace;
@@ -1621,44 +1622,67 @@ recipes.addShaped(<contenttweaker:essence_of_foundation>, [[null,<bewitchment:st
 // Essence of Thought
 // recipe in config/modularmachinery/recipes/liquicrafter_contenttweaker_essence_of_thought.json
 
+// Indicate materials framing Framed Drawers
+function makeTagFunc(type as string) as ITooltipFunction {
+    return function(stack as IItemStack) as string {
+        if (isNull(stack) || isNull(stack.tag) || isNull(stack.tag.memberGet(type))) return I18n.format("dj2.book_of_logic." ~ type ~ ".desc", "§k???§r");
+        val data as IData = stack.tag.memberGet(type);
+        // If we are displaying the crafting recipe, if the amount is >0 add a + to the front.
+        return I18n.format("dj2.book_of_logic." ~ type ~ ".desc", (!isNull(stack.tag.memberGet("display")) && data.asInt() > 0 ? "+" : "") + data);
+    } as ITooltipFunction;
+}
+
+<contenttweaker:steve>.addAdvancedTooltip(makeTagFunc("age"));
+<contenttweaker:steve>.addAdvancedTooltip(makeTagFunc("friends"));
+<contenttweaker:steve>.addAdvancedTooltip(makeTagFunc("height"));
+
+<contenttweaker:alex>.addAdvancedTooltip(makeTagFunc("age"));
+<contenttweaker:alex>.addAdvancedTooltip(makeTagFunc("friends"));
+<contenttweaker:alex>.addAdvancedTooltip(makeTagFunc("height"));
+
+<contenttweaker:herobrine>.addAdvancedTooltip(makeTagFunc("age"));
+<contenttweaker:herobrine>.addAdvancedTooltip(makeTagFunc("friends"));
+<contenttweaker:herobrine>.addAdvancedTooltip(makeTagFunc("height"));
+
 // Steve
-recipes.addShapeless(<contenttweaker:steve>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeBrown>]);
+recipes.addShapeless(<contenttweaker:steve>.withTag({age: 0, friends: 0, height: 0}), [<contenttweaker:essence_of_foundation>,<ore:dyeBrown>]);
 
 // Alex
-recipes.addShapeless(<contenttweaker:alex>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeOrange>]);
+recipes.addShapeless(<contenttweaker:alex>.withTag({age: 0, friends: 0, height: 0}), [<contenttweaker:essence_of_foundation>,<ore:dyeOrange>]);
 
 // Herobine
-recipes.addShapeless(<contenttweaker:herobrine>.withTag({Age: 0, Friends: 0, Height: 0, display: {Lore: ["§cAge:§f " + (0 as string), "§cNumber of friends:§f " + (0 as string), "§cHeight (in cm):§f " + (0 as string)]}}), [<contenttweaker:essence_of_foundation>,<ore:dyeWhite>]);
+recipes.addShapeless(<contenttweaker:herobrine>.withTag({age: 0, friends: 0, height: 0}), [<contenttweaker:essence_of_foundation>,<ore:dyeWhite>]);
 
 // Essence of Logic ingredients
 val logic_puzzle_characters = [<contenttweaker:steve>,<contenttweaker:alex>,<contenttweaker:herobrine>] as IItemStack[];
 val logic_puzzle_modifiers = [<contenttweaker:age_modifier>,<contenttweaker:friends_modifier>,<contenttweaker:height_modifier>] as IItemStack[];
+val logic_puzzle_modifier_types = ["age","friends","height"] as string[];
 val logic_puzzle_adders = [<contenttweaker:modifier_1>,<contenttweaker:modifier_m1>,<contenttweaker:modifier_10>,<contenttweaker:modifier_m10>,<contenttweaker:modifier_100>,<contenttweaker:modifier_m100>,<contenttweaker:modifier_1000>,<contenttweaker:modifier_m1000>] as IItemStack[];
 val logic_puzzle_adder_vals = [1, -1, 10, -10, 100, -100, 1000, -1000] as int[];
 for c in logic_puzzle_characters {
     for m in 0 to 3 { // modifiers
         for a in 0 to 8 { // adders
-            recipes.addShapeless(c.name + (m as string) + (a as string), c, [c.marked("input"),logic_puzzle_modifiers[m],logic_puzzle_adders[a]],
+            recipes.addShapeless(c.name + (m as string) + (a as string), c.withTag({logic_puzzle_modifier_types[m]: logic_puzzle_adder_vals[a], display: true}), [c.marked("input"),logic_puzzle_modifiers[m],logic_puzzle_adders[a]],
                 function(out,ins,cInfo) {
 
-                    var age = ins.input.tag.Age as int;
-                    var friends = ins.input.tag.Friends as int;
-                    var height = ins.input.tag.Height as int;
+                    var new_age = ins.input.tag.age as int;
+                    var new_friends = ins.input.tag.friends as int;
+                    var new_height = ins.input.tag.height as int;
 
                     if(m == 0) {
-                        age += logic_puzzle_adder_vals[a];
-                        age = max(0,age);
+                        new_age += logic_puzzle_adder_vals[a];
+                        new_age = max(0,new_age);
                     }
                     if(m == 1) {
-                        friends += logic_puzzle_adder_vals[a];
-                        friends = max(0,friends);
+                        new_friends += logic_puzzle_adder_vals[a];
+                        new_friends = max(0,new_friends);
                     }
                     if(m == 2) {
-                        height += logic_puzzle_adder_vals[a];
-                        height = max(0,height);
+                        new_height += logic_puzzle_adder_vals[a];
+                        new_height = max(0,new_height);
                     }
 
-                    return out.withTag({Age: age, Friends: friends, Height: height, display: {Lore: ["§cAge:§f " + (age as string), "§cNumber of friends:§f " + (friends as string), "§cHeight (in cm):§f " + (height as string)]}});
+                    return out.withTag({age: new_age, friends: new_friends, height: new_height});
 
                 }, null);
         }
@@ -1682,8 +1706,8 @@ mods.jei.JEI.addItem(book_of_logic);
 // If you're here because you're a dirty cheater, feel really-really ashamed of yourself!
 recipes.addShapeless("essence_of_logic", <contenttweaker:essence_of_logic>, [<contenttweaker:essence_of_thought>,<contenttweaker:steve>.marked("steve"),<contenttweaker:alex>.marked("alex"),<contenttweaker:herobrine>.marked("herobrine")],
 function(out,ins,cInfo) {
-    if(ins.steve.tag has "Age" && ins.steve.tag has "Friends" && ins.steve.tag has "Height" && ins.alex.tag has "Age" && ins.alex.tag has "Friends" && ins.alex.tag has "Height" && ins.herobrine.tag has "Age" && ins.herobrine.tag has "Friends" && ins.herobrine.tag has "Height") {
-        if(ins.steve.tag.Age == 28 && ins.steve.tag.Friends == 1708 && ins.steve.tag.Height == 181 && ins.alex.tag.Age == 27 && ins.alex.tag.Friends == 1889 && ins.alex.tag.Height == 174 && ins.herobrine.tag.Age == 50 && ins.herobrine.tag.Friends == 1 && ins.herobrine.tag.Height == 181) {
+    if(ins.steve.tag has "age" && ins.steve.tag has "friends" && ins.steve.tag has "height" && ins.alex.tag has "age" && ins.alex.tag has "friends" && ins.alex.tag has "height" && ins.herobrine.tag has "age" && ins.herobrine.tag has "friends" && ins.herobrine.tag has "height") {
+        if(ins.steve.tag.age == 28 && ins.steve.tag.friends == 1708 && ins.steve.tag.height == 181 && ins.alex.tag.age == 27 && ins.alex.tag.friends == 1889 && ins.alex.tag.height == 174 && ins.herobrine.tag.age == 50 && ins.herobrine.tag.friends == 1 && ins.herobrine.tag.height == 181) {
             return out;
         }
     }
