@@ -550,6 +550,33 @@ recipes.addShaped(<bloodmagic:decorative_brick:3> * 4, [[<bloodmagic:decorative_
 <bloodmagic:blood_shard>.addTooltip(format.white("to obtain. Be wary though. While it's active,"));
 <bloodmagic:blood_shard>.addTooltip(format.white("it constantly drains LP from your Life Network!"));
 
+# Tartaric Gem
+recipes.remove(<bloodmagic:soul_gem:4>);
+function addSoulGemConversion(gem as IItemStack, converter as IItemStack, target as string) {
+    val base = target == "";
+    recipes.addShapeless(gem.name + target, base ? gem : gem.withTag({demonWillType:target}), [gem.marked("gem"), converter],
+        function(out, ins, cInfo) {
+            val newSouls = isNull(ins.gem.tag.souls) ? 0 : ins.gem.tag.souls;
+            return base ? ins.gem.withTag({souls:newSouls}) : ins.gem.withTag({demonWillType:target,souls:newSouls});
+        },
+        null
+    );
+}
+
+for gem in [
+    <bloodmagic:soul_gem:0>,
+    <bloodmagic:soul_gem:1>,
+    <bloodmagic:soul_gem:2>,
+    <bloodmagic:soul_gem:3>,
+    <bloodmagic:soul_gem:4>
+] as IItemStack[] {
+    addSoulGemConversion(gem, <bloodmagic:item_demon_crystal>, "");
+    addSoulGemConversion(gem, <bloodmagic:item_demon_crystal:1>, "corrosive");
+    addSoulGemConversion(gem, <bloodmagic:item_demon_crystal:2>, "destructive");
+    addSoulGemConversion(gem, <bloodmagic:item_demon_crystal:3>, "vengeful");
+    addSoulGemConversion(gem, <bloodmagic:item_demon_crystal:4>, "steadfast");
+}
+
 # Tartaric Gem tooltips
 <bloodmagic:soul_gem:0>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("64") + format.white(" Will Quality."));
 <bloodmagic:soul_gem:1>.addTooltip(format.white("This Tartaric Gem can store a maximum of ") + format.red("256") + format.white(" Will Quality."));
