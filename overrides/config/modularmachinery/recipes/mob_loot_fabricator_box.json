@@ -1,0 +1,29 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_box",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "evilcraft:box_of_eternal_closure",
+            "nbt": {
+                "spiritTag": {
+                    "innerEntity": "net.minecraft.entity.monster.EntityEnderman"
+                }
+            },
+            "amount": 1,
+            "chance": 0
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "extendedcrafting:material@37"
+        }
+    ]
+}

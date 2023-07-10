@@ -46,6 +46,7 @@ recipes.remove(<projectred-core:resource_item:105>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<contenttweaker:electrotine_ore>);
 mods.actuallyadditions.Crusher.removeRecipe(<contenttweaker:electrotine>);
 mods.astralsorcery.Grindstone.removeRecipe(<contenttweaker:electrotine>);
+
 # Additions
 recipes.addShapeless(<contenttweaker:electrotine> * 4, [<contenttweaker:electrotine_ore>, <ore:dustPetrotheum>]);
 IECrusher.addRecipe(<contenttweaker:electrotine> * 4, <contenttweaker:electrotine_ore>, 4000);
