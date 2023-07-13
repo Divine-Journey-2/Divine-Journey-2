@@ -448,14 +448,14 @@ dj2.thermal_kit.desc3=基于 §c18§r 个槽位的初始数值，将保险箱的
 
 dj2.silver_plate.desc0=§5§oS'il vous plaît
 
-dj2.rune_speed.desc0=Increases the speed LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.
-dj2.rune_self_sacrifice.desc0=Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.
-dj2.rune_sacrifice.desc0=Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.
-dj2.rune_capacity.desc0=Increases the capacity of the Blood Altar by §62,000§r LP per rune, additively.
-dj2.rune_capacity.desc1=Does §4§onot§r stack with Runes of Augmented Capacity!
+dj2.rune_speed.desc0=每个符文增加 §620%§r 合成时的 LP 消耗速度以及灌注气血宝珠的速率，线性叠加。
+dj2.rune_self_sacrifice.desc0=每个符文增加 §610%§r 玩家自我献祭时获得的 LP 量，线性叠加。
+dj2.rune_sacrifice.desc0=每个符文增加 §610%§r 献祭生物时获得的 LP 量，线性叠加。
+dj2.rune_capacity.desc0=每个符文为血之祭坛增加 §62,000§r 点的 LP 容量上限，线性叠加。
+dj2.rune_capacity.desc1=§4§o不§r与超容符文的效果叠加！
 dj2.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
-dj2.rune_augmented_capacity.desc0=Increases the capacity of the Blood Altar by §610%§r per rune, multiplicitively.
-dj2.rune_augmented_capacity.desc1=Does §4§onot§r stack with Runes of Capacity! Only switch when you will have §6>15§r.
+dj2.rune_augmented_capacity.desc0=每个符文为血之祭坛增加 §610%§r 的 LP 容量上限，乘法叠加。
+dj2.rune_augmented_capacity.desc1=§4§o不§r与增容符文的效果叠加！只有当超容符文数量 §6>15§r 时，增加的容量才会比增容符文多。
 dj2.rune_efficiency.desc0=每个符文减少 §615%§r 的进度倒退速度（LP 耗尽时），乘法叠加。
 dj2.rune_charging.desc0=闲置时累积充能点数用于加速合成。效果过于复杂，故不在此列出。
 dj2.rune_displacement.desc0=每个符文增加 §620%§r 的 LP 传输速率，乘法叠加。
