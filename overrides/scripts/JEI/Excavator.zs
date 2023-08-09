@@ -239,7 +239,7 @@ addExcavator("Mars Iron", 25, ["oreMarsIron", "oreMarsTin", "oreDesh"], [0.5, 0.
 addExcavator("Moon Cheese", 25, ["oreCheese"], [1.0], [-28]);
 addExcavator("Moon Sapphire", 25, ["oreMoonSapphire", "oreCheese"], [0.95, 0.05], [-28]);
 addExcavator("Moon Copper", 25, ["oreMoonCopper", "oreMoonTin"], [0.65, 0.35], [-28]);
-addExcavator("Moon Copper", 25, ["oreMoonTin", "oreCheese", "oreMoonSapphire"], [0.75, 0.20, 0.05], [-28]);
+addExcavator("Moon Cassiterite", 25, ["oreMoonTin", "oreCheese", "oreMoonSapphire"], [0.75, 0.20, 0.05], [-28]);
 
 addExcavator("Aether Ambrosium", 25, ["oreGravitite", "oreZanite", "oreAmbrosium", "icestone"], [0.25, 0.3, 0.3, 0.15], [4]);
 addExcavator("Aether Zanite", 25, ["oreZanite", "oreAmbrosium"], [0.5, 0.5], [4]);
