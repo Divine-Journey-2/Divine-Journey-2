@@ -59,7 +59,7 @@ addInteraction(<thaumcraft:salis_mundus>, <extendedcrafting:ender_crafter>, <tha
 addInteraction(<thaumcraft:salis_mundus>, <evilcraft:purifier>, <thaumcraft:crucible>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.crucible.desc0")]}}));
 
 // Research Table
-addInteraction(<thaumcraft:scribing_tools>, <thaumcraft:table_wood>*2, <thaumcraft:research_table>);
+addInteraction(<thaumcraft:scribing_tools>, <thaumcraft:table_wood>, <thaumcraft:research_table>);
 
 // Botania Phantom Ink makes Spark not (well, less) visible
 addInteraction(<botania:phantomink>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.phantomink.desc0")]}}), <botania:spark>, <botania:spark>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.spark.desc0")]}}));
