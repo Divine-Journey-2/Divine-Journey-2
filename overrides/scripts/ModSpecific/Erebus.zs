@@ -60,43 +60,43 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 <erebus:gneiss>.addTooltip(game.localize("dj2.gneiss.desc2"));
 
 // Bio-Velocity Tooltip
+<erebus:materials:8>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc0"));
 <erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc1"));
-<erebus:materials:8>.addTooltip(game.localize("dj2.bio_velocity.desc2"));
 
 // Supernatural Velocity Tooltip
+<erebus:materials:13>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc0"));
 <erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc1"));
-<erebus:materials:13>.addTooltip(game.localize("dj2.supernatural_velocity.desc2"));
 
 // Exoskeleton Plate Tooltip
+<erebus:materials>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc0"));
 <erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc1"));
 <erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc2"));
-<erebus:materials>.addTooltip(game.localize("dj2.exoskeleton_plate.desc3"));
 
 // Magma Crawler Eye Tooltip
+<erebus:materials:60>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:60>.addTooltip(game.localize("dj2.magma_crawler_eye.desc0"));
-<erebus:materials:60>.addTooltip(game.localize("dj2.magma_crawler_eye.desc1"));
 
 // Tarantula Leg Tooltip
+<erebus:erebus_food:4>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:erebus_food:4>.addTooltip(game.localize("dj2.tarantula_leg.desc0"));
-<erebus:erebus_food:4>.addTooltip(game.localize("dj2.tarantula_leg.desc1"));
 
 // Fly Wing Tooltip
+<erebus:materials:6>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc0"));
 <erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc1"));
-<erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc2"));
 
 // Dragonfly Wing Tooltip
+<erebus:materials:24>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc0"));
 <erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc1"));
-<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc2"));
 
 // Elastic Fibre Tooltip
+<erebus:materials:9>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
 <erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc0"));
 <erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc1"));
-<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc2"));
 
 // Cabbage Seeds Tooltip
 <erebus:cabbage_seeds>.addTooltip(game.localize("dj2.cabbage_seeds.desc0"));

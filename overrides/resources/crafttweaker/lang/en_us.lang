@@ -1,3 +1,4 @@
+# Commands
 commands.curseforge.usage=Sends a link to the curseforge page in chat.
 commands.discord.usage=Sends a link to the discord page in chat.
 commands.issues.usage=Sends a link to the issues page in chat.
@@ -5,13 +6,16 @@ commands.curseforge.text=Click here to open the DJ2 Curseforge page
 commands.discord.text=Click here to join the Discord
 commands.issues.text=Click here to report a bug or issue
 
+# Moretweaker Bewitchment Rituals
 ritual.moretweaker.moretweakerrecipe0=Rite of the Tough and Pure
 ritual.moretweaker.moretweakerrecipe1=Rite of Cycles
 
+# Custom player event messages
 dj2.event.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
 dj2.event.elemental_tool.desc1=§6Durability not actually consumed, just a desync.
 dj2.event.horde_horn.message=§bFailed to spawn - please use in open air.
 
+# Activate Block JEI category
 dj2.activate_block_jei.hand.name=§r§cRight Clicking
 dj2.activate_block_jei.flame_devourer_pendant.desc0=§r§bMust be afflicted with the §cHell Fire§b status
 dj2.activate_block_jei.flame_devourer_pendant.desc1=§r§bUses Durability
@@ -25,6 +29,7 @@ dj2.activate_block_jei.rf_duct.desc0=§r§dNearly anything that can hold or tran
 dj2.activate_block_jei.bucket.desc0=§r§dNearly anything that can hold or transfer fluids
 dj2.activate_block_jei.barrier.desc0=§r§dRight Click into the air
 
+# Configure JEI category
 dj2.configure_jei.gear.name=§r§dConfigure Block
 dj2.configure_jei.atomic_reconstructor.desc=§r§bToggles between Deactivation and Pulse mode.
 dj2.configure_jei.starlight.desc=§r§bAnything that can transfer or receive starlight.
@@ -39,6 +44,7 @@ dj2.configure_jei.integrated_dynamics.desc=§r§bAny Integrated Dynamics Blocks.
 dj2.configure_jei.industrial_foregoing.desc=§r§bAny Industrial Foregoing Machine.
 dj2.configure_jei.rftools.desc=§r§bAny RFTools Machine.
 
+# Excavator JEI category
 dj2.excavator.rarity.extremely_common=Extremely Common
 dj2.excavator.rarity.very_common=Very Common
 dj2.excavator.rarity.common=Common
@@ -67,10 +73,13 @@ dj2.excavator.dimension.apalachia=Apalachia
 dj2.excavator.dimension.shythern=Shythern
 dj2.excavator.dimension.mortum=Mortum
 
+# Roots Block Conversion JEI category
 dj2.roots_block_conversion.barrier.name=§r§dNo catalyst
 
+# Death list tooltip
 dj2.death_list.desc0=Dropped into the world on death.
 
+# Book of logic
 dj2.book_of_logic.age.desc=§cAge: §b%d§r
 dj2.book_of_logic.friends.desc=§cNumber of friends: §b%d§r
 dj2.book_of_logic.height.desc=§cHeight (in cm): §b%d§r
@@ -83,6 +92,7 @@ dj2.book_of_logic.desc4=8) If every year, starting from now, Herobrine were to d
 dj2.book_of_logic.desc5=9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\n\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an
 dj2.book_of_logic.desc6=Essence of Thought in the Crafting Table!\n\nGood luck!
 
+# Custom DJ2 item descriptions
 dj2.twilight_rock.desc0=§c§lThis is the item used to enter the Twilight Forest.
 dj2.twilight_rock.desc1=If your portal gets destroyed while you are inside, there is a Twilight Forest recipe so you can escape.
 dj2.twilight_key.desc0=§c§lOnly use this item if you wish to skip the Twilight Forest.
@@ -215,8 +225,10 @@ dj2.goddess_pearl.desc0=§cDoes not get consumed by regular crafting.
 dj2.goddess_pearl.desc1=§c§lWARNING: §7§lAE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!
 dj2.divinerpg_galacticraft_keys.desc=Right Click to clear any %s Door Blocks in a 5 block radius.
 
+# Imp leather info tooltip
 dj2.imp_leather.desc0=Imps can be spawned by the Roots 'Summon Creatures' ritual.
 
+# Bag of Truth and related endgame items.
 dj2.bag_of_truth_unlocked.name=§d§lBag of Truth
 dj2.bag_of_truth_unlocked.desc0=§c§lUNLOCKED
 dj2.bag_of_truth_locked.name=§d§lBag of Truth (Locked)
@@ -231,6 +243,7 @@ dj2.glyphs.desc1=§4§othese written on Tablets and the highest
 dj2.glyphs.desc2=§4§otier Blood Orb back in Chapter 18...
 dj2.call_of_the_underworld.desc0=§4Dropped by Immortus.
 
+# Starting items
 dj2.introduction.paper.name=§r§lRead the tooltip for important keybind information!
 dj2.introduction.paper.desc0=§r§5- Press §6K§r§5 to open your quests
 dj2.introduction.paper.desc1=§r§5- Press §6`§r§5 while breaking blocks to veinmine
@@ -248,9 +261,11 @@ dj2.introduction.book.desc8=in 1.12.2, I highly suggest checking out Celestial J
 dj2.introduction.book.desc9=lategame, much fewer recipes that involve instability (like Thaumcraft Infusion), and much less grind in general. For example, you no longer have to setup the Demon Invasion a trillion times, you no longer need to defeat every Witchery (or Bewitchment) boss
 dj2.introduction.book.desc10=a quadrillion times, and quest rewards tend to be a bit more generous this time.\n\nNow go ahead, §lpress K to open your quests§r, and I hope you'll have fun in Divine Journey 2!
 
+# Hoe Durability tooltip
 dj2.hoe_durability.desc0=§c§lWarning: §r§fVery low base durability item!
 dj2.hoe_durability.desc1=§fUse a Tinkers' Construct Mattock instead!
 
+# Extra Utilities 2 tooltips
 dj2.drop_of_evil.desc0=§c§lDoes not get dropped by Wither Skeletons.
 dj2.drop_of_evil.desc1=§c§lOnly available through crafting.
 dj2.drop_of_evil.desc2=§4Right Click on Grass to transform an area into Cursed Earth.
@@ -260,24 +275,30 @@ dj2.suncrystal.desc0=§fFilled by throwing onto the ground when exposed to the s
 dj2.suncrystal.desc1=§fLater, you can use Liquid Sunshine or Glowstone Essence to fill it.
 dj2.suncrystal.desc2=§cMust have 0 durability when thrown in Liquid Sunshine.
 
+# Draconic Additions tooltips
 dj2.potato_helm.desc0=§fObtained by Right Clicking with an Infused Potato Helmet.
 dj2.potato_chest.desc0=§fObtained by Right Clicking with an Infused Potato Chestplate.
 dj2.potato_legs.desc0=§fObtained by Right Clicking with an Infused Potato Leggings.
 dj2.potato_boots.desc0=§fObtained by Right Clicking with an Infused Potato Boots.
 
+# Twilight Forest tooltips
 dj2.lamp_of_cinders.desc0=§cDoes not get consumed by regular crafting.
 dj2.lamp_of_cinders.desc1=§c§lWARNING: §r§7§lAE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!
 
+# RFTools tooltips
 dj2.phased_field_generator.desc0=§fMax Power storage: §r§c100,000,000 RF
 dj2.phased_field_generator.desc1=§fRF/tick usage: §r§c10,000
 dj2.phased_field_generator.desc2=§fLasts §r§c500 seconds§r§f when fully charged.
 
+# Thaumic Augmentation tooltips
 dj2.gauntlet_warning.desc0=§fRemove your current Foci before crafting this!
 dj2.emptiness_stone.desc0=§fBase Stone of the Emptiness dimension.
 dj2.emptiness_spires.desc0=§fFound in Eldritch Spires in the Emptiness dimension.
 
+# Ender Storage tooltips
 dj2.ender_storage_tank.desc0=§4Crafting this takes a Portable Tank (Basic) full of §r§6Blazing Pyrotheum§r§4!
 
+# DivineRPG tooltips
 dj2.infernal_flame.desc0=§l§fUsed to summon the §r§l§cKing of Scorchers§r§l§f in the Nether.
 dj2.mysterious_clock.desc0=§l§fUsed to summon the §r§l§4Ancient Entity§r§l§f in the Overworld.
 dj2.call_of_the_watcher.desc0=§l§fUsed to summon §r§l§cThe Watcher§r§l§f in the Nether.
@@ -299,12 +320,15 @@ dj2.dungeon_tokens.desc1=§9of Arcana§r§f. They're summoned at their respectiv
 dj2.dungeon_tokens.desc2=§fAltars by placing a Wizards Book on top.
 dj2.wizards_book.desc0=§fBought from §r§4Lord Vatticus§r§f in the §r§9Dungeon of Arcana§r§f.
 
+# AE2 Wireless Terminal tooltips
 dj2.infinity_booster_card.desc0=§fCan only be crafted, is not consumed by operation.
 
+# Mekanism tooltips
 dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the input Chest will remain in Robit's inventory!
 dj2.dynamic_tank_warning.desc0=§c§lWarning: §r§fSometimes the Dynamic Tank can FORGET
 dj2.dynamic_tank_warning.desc1=§fits liquid. NOT recommended to craft / use.
 
+# Lightningcraft tooltips
 dj2.electricium.desc0=§fCreate this for the first time by
 dj2.electricium.desc1=§fstriking a piece of Diamond, Gold
 dj2.electricium.desc2=§fIngot and Iron Ingot with lightning!
@@ -316,8 +340,10 @@ dj2.ichor.desc2=§fon the ground with lightning.
 dj2.underpowder.desc0=§fDropped by Undercreeps in the Underworld.
 dj2.guards_bone.desc0=§fDropped by Skeleton Guards in the Underworld.
 
+# Extended Crafting tooltips
 dj2.block_of_ender.desc0=§fRecipe requires a Box with an Enderman Spirit.
 
+# DivineRPG loottable tweaked boss drops
 dj2.fury_fire.desc0=§fDropped by the §r§4King of Scorchers§r§f, who's summoned by the §r§9Infernal Flame§r§f in the Nether. It always drops 4 of them.
 dj2.ancient_leg.desc0=§fDropped by the §r§4Ancient Entity§r§f, who's summoned by
 dj2.ancient_leg.desc1=§fthe §r§9Mysterious Clock§r§f in the Overworld.
@@ -328,6 +354,7 @@ dj2.ayeraco_wing.desc0=§fDropped by the §r§9Blue§r§f, §r§aGreen§r§f, §
 dj2.ayeraco_wing.desc1=§fAyeraco. They are summoned by the §r§eHorde Horn
 dj2.ayeraco_wing.desc2=§fin the End. Each Ayeraco has a chance to drop 1 or 2.
 
+# Ender Utilities tooltips
 dj2.inactive_ender_core.desc0=§fCan be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal.
 dj2.inactive_ender_core.desc1=§fCan be done in §r§o§cany§r§f Dimension, not just the End Dimension.
 dj2.chairwand.desc0=1. Right Click on the Ground to add location to sit.
@@ -341,8 +368,10 @@ dj2.syringe_disabled.desc1=§4Item disabled. Makes fighting against various mobs
 dj2.syringe_disabled.desc2=§4Item disabled, since the Paralyzer Syringe is also disabled.
 dj2.syringe_disabled.desc3=§4Item disabled. Makes fighting against various mobs trivial.
 
+# EvilCraft tooltips
 dj2.blood_chest.desc0=§cItem disabled. Makes repairing items trivial.
 
+# EnderIO tooltips
 dj2.farming_station.desc0=§c§lWARNING: §r§fDo NOT use this machine to harvest crops
 dj2.farming_station.desc1=§ffrom Crop Sticks. It will always CRASH your game.
 dj2.farming_station.desc2=§f§o<Press Shift for alternatives>
@@ -352,6 +381,7 @@ dj2.farming_station.desc5=§for an Industrial Foregoing Plant Interactor;
 dj2.farming_station.desc6=§falong with a Ranged Collector or an Absorption Hopper.
 dj2.upgrade_enderio_armor.desc0=§6Keeps Enchantments and Upgrades when crafted.
 
+# Just Enough Calculation tooltips
 dj2.item_calculator.desc0=§c§lWarning: §r§fIncluding certain machines in
 dj2.item_calculator.desc1=§fyour calculations might crash the game!
 dj2.item_calculator.desc2=§fSo far we could only find the Lightning
@@ -359,6 +389,7 @@ dj2.item_calculator.desc3=§fInfusion Table that does this,
 dj2.item_calculator.desc4=§fbut there might be more.
 dj2.item_calculator.desc5=§c§lUse with care!
 
+# Bewitchment tooltips
 dj2.white_sage_seeds.desc0=§fSometimes dropped by a Dead Bush.
 dj2.garlic_seeds.desc0=§fSometimes dropped by an Allium.
 dj2.dragons_blood_resin.desc0=§fAfter initially crafting this, obtain it by
@@ -387,6 +418,7 @@ dj2.demon_heart.desc1=§fyour Codex Infernalis on how to summon them.
 dj2.hellhound_horn.desc0=§fDropped by various Bewitchment Demons.
 dj2.spanish_moss.desc0=§fFound in Swamp Biomes. Use Shears to harvest.
 
+# Thaumcraft tooltips
 dj2.thaumonomicon.desc0=§c§lWarning:§r§f§l Recipes shown may be incorrect.
 dj2.thaumonomicon.desc1=§f§lAlways refer to JEI when crafting.
 dj2.creative_thaumonomicon.desc0=§dUnlocks all research when opened
@@ -417,12 +449,14 @@ dj2.void_seed.desc1=§fFlux Rift, or using a Void Siphon in the same chunk.
 dj2.primordial_pearl.desc0=§fDropped rarely by §r§5Void Rifts§r§f when
 dj2.primordial_pearl.desc1=§fclosed by a §r§dCausality Collapser§r§f.
 
+# Thermal Expansion tooltips
 dj2.phytogenic_insolator.desc0=§c§lMachine disabled.
 dj2.tier_iii_potion.desc0=§fTo obtain, create the Tier III liquid potion in a
 dj2.tier_iii_potion.desc1=§fFractionating Still with an Alchemical Retort Augment.
 dj2.tier_iv_potion.desc0=§fTo obtain, create the Tier III then the Tier IV liquid potion
 dj2.tier_iv_potion.desc1=§fin a Fractionating Still with an Alchemical Retort Augment.
 
+# Botania tooltips
 dj2.livingrock.desc0=§f§oIt seems only certain Dimensional Stones
 dj2.livingrock.desc1=§f§ohave the ability to be transformed
 dj2.livingrock.desc2=§f§ointo Livingrock... How peculiar.
@@ -441,13 +475,16 @@ dj2.biomestonea.desc0=§fGenerated by the §r§7Marimorphosis§r§f Flower.
 dj2.lexicon.desc0=§c§lWarning:§r§f§l Recipes shown may be incorrect.
 dj2.lexicon.desc1=§f§lAlways refer to JEI when crafting.
 
+# Thermal augment tooltips
 dj2.thermal_kit.desc0=Increase the base energy capacity of a Machine or Dynamo by §c%d%§r of the (variable) base.
 dj2.thermal_kit.desc1=Increase the base fluid capacity of a Portable Tank by §cx%d§r of the base of §c20,000mb§r.
 dj2.thermal_kit.desc2=Increase the base item capacity of a Cache by §cx%d§r of the base of §c20,000§r items.
 dj2.thermal_kit.desc3=Increase the base slot amount of a Storage Box by §c%d§r from the base of §c18§r.
 
+# Silver plate
 dj2.silver_plate.desc0=§5§oS'il vous plaît
 
+# Blood Magic: Alchemical Wizardy tooltips
 dj2.rune_speed.desc0=Increases the speed LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.
 dj2.rune_self_sacrifice.desc0=Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.
 dj2.rune_sacrifice.desc0=Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.
@@ -469,6 +506,7 @@ dj2.soul_gem.desc0=§fThis Tartaric Gem can store a maximum of §r§c%s§r§f Wi
 dj2.blood_orb.desc0=§fThis Blood Orb can store a base of §r§c%s§r§f Life Essence.
 dj2.blood_orb.desc1=§fThis Blood Orb can only be filled in a tier §r§c%d§r§f or above Blood Altar
 
+# Atum tooltips
 dj2.atum_artifact_melee.desc0=§4§lConsidered as an Atum Melee Artifact.
 dj2.atum_artifact_ranged.desc1=§4§lConsidered as an Atum Ranged Artifact.
 dj2.atum_artifact_armor.desc2=§4§lConsidered as an Atum Armor Artifact.
@@ -479,8 +517,10 @@ dj2.golden_date_enchanted.desc0=§4§lPrimarily obtained by trading with Sunspea
 dj2.golden_date_enchanted.desc1=§cCan also be enchanted in The Aether Altar.
 dj2.emmer_flour.desc0=§4§oRight Click me on a Water source block to convert me into Emmer Dough!
 
+# Natura sapling tooltips
 dj2.transmutation_sapling.desc0=§fCan be created using the Roots Transmutation Ritual.
 
+# Immersive Engineering tooltips
 dj2.immersive_engineering_chunk_border_warning.desc0=§cWarning: §r§fDo NOT build Immersive Engineering
 dj2.immersive_engineering_chunk_border_warning.desc1=§fmultiblocks on a chunk border. Press F9 twice
 dj2.immersive_engineering_chunk_border_warning.desc2=§fto show them. Otherwise the machine could get
@@ -489,17 +529,21 @@ dj2.conveyor.desc0=§8§oIf you obtained a broken/bugged Conveyor, put you can c
 dj2.engineers_manual.desc0=§oSome text for custom recipes have
 dj2.engineers_manual.desc1=§ooverflown, use JEI to look those up!
 
+# Mystical Agriculture tooltips
 dj2.dragon_egg_seeds.desc0=Tier: §r§c5
 
+# Quantum Flux tooltips
 dj2.ender_crystal.desc0=Dropped from Endermen.
 dj2.graphitedust.desc0=Blow it up to create a Hyper Diamond!
 
+# Baubly Heart Canisters tooltips
 dj2.bhc_red_heart.desc0=§fDrops rarely from all non-boss mobs.
 dj2.bhc_orange_heart.desc0=§fDrops rarely from most boss mobs,
 dj2.bhc_orange_heart.desc1=§fand can be crafted from Withering Souls.
 dj2.bhc_green_heart.desc0=Does not drop. Can only be crafted.
 dj2.bhc_blue_heart.desc0=Does not drop. Can only be crafted.
 
+# ProjectE tooltips
 dj2.pe_philosophers_stone.desc0=§5§oIt's said that the main ingredient for
 dj2.pe_philosophers_stone.desc1=§5§oa Philosopher's Stone ... is human life.
 dj2.pe_philosophers_stone.desc2=§5§oHow odd.
@@ -507,19 +551,31 @@ dj2.pe_transmutation_tablet.desc0=§c§lWarning: §r§fCrafting uses up the inpu
 dj2.projecte_matter.desc0=§fCan only be created from EMC.
 dj2.projecte_matter.desc1=§fUse the Tome of Knowledge to learn all transmutations.
 
+# Industrial Foregoing tooltips
 dj2.mob_duplicator.desc0=§c§lWarning: §r§fThe Mob Imprisonment Tool is gated
 dj2.mob_duplicator.desc1=§funtil Chapter 25. §r§f§o(This is because there is
 dj2.mob_duplicator.desc2=§f§ono blacklist for it in the configs.)
 
+# Avaritia tooltips
 dj2.pile_of_neutronium.desc0=§fCreated by the Neutron Collector every
 dj2.pile_of_neutronium.desc1=§f7111 ticks, or ~355 seconds/~6 minutes.
 dj2.pile_of_neutronium.desc2=§fYou can speed this up significantly
 dj2.pile_of_neutronium.desc3=§fwith Watches of Flowing Time.
 
+# Applied Energistics 2 tooltips
 dj2.meteorite_compass.desc0=§f§lMeteorites can ONLY be found in Atum.
 dj2.crafting_card.desc0=§fUse it sparingly! If you use it a lot, it could
 dj2.crafting_card.desc1=§fcause your ME Network to completely lag out!
 
+# Galacticraft tooltips
+dj2.meteoric_iron_raw.desc0=§fObtained by mining Meteors on any Galacticraft Planet.
+dj2.meteoric_iron_raw.desc1=§fThey're pretty rare, so an alternative recipe was also added.
+dj2.schematic_moon_buggy.desc0=§fCan be found in underground §r§7Moon§r§f Dungeons.
+dj2.schematic_moon_buggy.desc1=§fCan also be converted from the §r§9Tier 2 Rocket Schematic§r§f.
+dj2.schematic_tier_2_rocket.desc0=§fCan be found in underground §r§7Moon§r§f Dungeons.
+dj2.schematic_tier_2_rocket.desc1=§fCan also be converted from the §r§9Moon Buggy Schematic§r§f.
+dj2.evolved_skeleton_key.desc0=§fDropped by the §r§7Evolved Skeleton Boss
+dj2.evolved_skeleton_key.desc1=§fin the underground §r§7Moon Dungeon.
 dj2.schematic_cargo_rocket.desc0=§fCan be found in underground §r§cMars§r§f Dungeons.
 dj2.schematic_cargo_rocket.desc1=§fCan also be converted from the §r§9Tier 3 Rocket Schematic§r§f.
 dj2.schematic_tier_3_rocket.desc0=§fCan be found in underground §r§cMars§r§f Dungeons.
@@ -533,6 +589,7 @@ dj2.galacticraft_web_torch.desc0=§fCan be found in underground §r§6Venus§r§
 dj2.galacticraft_basic_item_venus.desc0=§fCan be found in underground §r§6Venus§r§f Dungeons.
 dj2.galacticraft_dense_ice.desc0=§fFound in the §r§9Asteroids§r§f dimension.
 
+# AbyssalCraft tooltips
 dj2.monolith_stone.desc0=§7Can be obtained by mining the walls of
 dj2.monolith_stone.desc1=§7Shoggoth dens, but can also be crafted.
 dj2.necronomicon.desc0=§7Crafting doesn't consume the input Statues.
@@ -572,6 +629,7 @@ dj2.crystalcluster.desc0=§fCan only be mined with a pickaxe of Mining Level at 
 dj2.crystalcluster2.desc0=§fCan only be mined with a pickaxe of Mining Level at least 10.
 dj2.necronomicon_ownership.desc0=Gain ownership of the book via shapeless crafting.
 
+# Erebus tooltips
 dj2.erebus_glider.desc0=§l§cWARNING: Can corrupt your world when taking it off. Item disabled.
 dj2.erebus_glider.desc1=§o§4How did you even find me?!
 dj2.riding_beetles.desc0=§l§cWARNING: Riding Beetles can crash the game and corrupt your world.
@@ -579,32 +637,26 @@ dj2.riding_beetles.desc1=§o§4How did you even find me?!
 dj2.gneiss.desc0=§fMining this transforms the block into Lava.
 dj2.gneiss.desc1=§fTo obtain, mine it with flowing Water all around,
 dj2.gneiss.desc2=§fto minimize the chance for the drop to burn.
-dj2.bio_velocity.desc0=§c§nDropped by the following mobs:
-dj2.bio_velocity.desc1=§f- Solifuges (in the Ulterior Outback biome)
-dj2.bio_velocity.desc2=§f- Centipedes (in most biomes)
-dj2.supernatural_velocity.desc0=§c§nDropped by the following mobs:
-dj2.supernatural_velocity.desc1=§f- Solifuges (in the Ulterior Outback biome)
-dj2.supernatural_velocity.desc2=§f- Centipedes (in most biomes)
-dj2.exoskeleton_plate.desc0=§c§nDropped by the following mobs:
-dj2.exoskeleton_plate.desc1=§f- Beetles (in Underground Jungles,
-dj2.exoskeleton_plate.desc2=§f           Subterranean Savannahs and Elysian Fields)
-dj2.exoskeleton_plate.desc3=§f- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)
-dj2.magma_crawler_eye.desc0=§c§nDropped by the following mobs:
-dj2.magma_crawler_eye.desc1=§f- Magma Crawlers (in Antlion Overlord Pyramids)
-dj2.tarantula_leg.desc0=§c§nDropped by the following mobs:
-dj2.tarantula_leg.desc1=§f- Tarantulas (in most biomes)
-dj2.fly_wing.desc0=§c§nDropped by the following mobs:
-dj2.fly_wing.desc1=§f- Flies (in all biomes)
-dj2.fly_wing.desc2=§f- Botflies (in most biomes)
-dj2.dragonfly_wing.desc0=§c§nDropped by the following mobs:
-dj2.dragonfly_wing.desc1=§f- Dragonflies (on Dragonfly Lilypads in)
-dj2.dragonfly_wing.desc2=§flarge water bodies within Submerged Swamps
-dj2.elastic_fibre.desc0=§c§nDropped by the following mobs:
-dj2.elastic_fibre.desc1=§f- Locusts (in Elysian Fields and Subterranean Savannahs)
-dj2.elastic_fibre.desc2=§f- Punchrooms (in Fungal Forests as an uncommon drop)
+dj2.erebus_drops.desc0=§c§nDropped by the following mobs:
+dj2.bio_velocity.desc0=§f- Solifuges (in the Ulterior Outback biome)
+dj2.bio_velocity.desc1=§f- Centipedes (in most biomes)
+dj2.supernatural_velocity.desc0=§f- Solifuges (in the Ulterior Outback biome)
+dj2.supernatural_velocity.desc1=§f- Centipedes (in most biomes)
+dj2.exoskeleton_plate.desc0=§f- Beetles (in Underground Jungles,
+dj2.exoskeleton_plate.desc1=§f           Subterranean Savannahs and Elysian Fields)
+dj2.exoskeleton_plate.desc2=§f- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)
+dj2.magma_crawler_eye.desc0=§f- Magma Crawlers (in Antlion Overlord Pyramids)
+dj2.tarantula_leg.desc0=§f- Tarantulas (in most biomes)
+dj2.fly_wing.desc0=§f- Flies (in all biomes)
+dj2.fly_wing.desc1=§f- Botflies (in most biomes)
+dj2.dragonfly_wing.desc0=§f- Dragonflies (on Dragonfly Lilypads in)
+dj2.dragonfly_wing.desc1=§flarge water bodies within Submerged Swamps
+dj2.elastic_fibre.desc0=§f- Locusts (in Elysian Fields and Subterranean Savannahs)
+dj2.elastic_fibre.desc1=§f- Punchrooms (in Fungal Forests as an uncommon drop)
 dj2.cabbage_seeds.desc0=§fBreak any tallgrass in Erebus to obtain.
 dj2.cabbage_seeds.desc1=§fSwamp Plants always drop these.
 
+# Agricraft tooltips
 dj2.crop_sticks.desc0=§c§lWARNING: §r§fDo NOT use these with the Ender IO
 dj2.crop_sticks.desc1=§fFarming Station. It will always CRASH your game.
 dj2.crop_sticks.desc2=§f§o<Press Shift for alternatives>
@@ -613,37 +665,36 @@ dj2.crop_sticks.desc4=§f / Horn of the Wild, an Actually Additions Farmer,
 dj2.crop_sticks.desc5=§for an Industrial Foregoing Plant Interactor;
 dj2.crop_sticks.desc6=§falong with a Ranged Collector or an Absorption Hopper.
 
+# Quark tooltips
 dj2.witch_hat.desc0=§fDropped rarely by Witches.
 dj2.enderdragon_scale.desc0=§fObtained after defeating the Ender Dragon for the second or more time.
 
-dj2.meteoric_iron_raw.desc0=§fObtained by mining Meteors on any Galacticraft Planet.
-dj2.meteoric_iron_raw.desc1=§fThey're pretty rare, so an alternative recipe was also added.
-dj2.schematic_moon_buggy.desc0=§fCan be found in underground §r§7Moon§r§f Dungeons.
-dj2.schematic_moon_buggy.desc1=§fCan also be converted from the §r§9Tier 2 Rocket Schematic§r§f.
-dj2.schematic_tier_2_rocket.desc0=§fCan be found in underground §r§7Moon§r§f Dungeons.
-dj2.schematic_tier_2_rocket.desc1=§fCan also be converted from the §r§9Moon Buggy Schematic§r§f.
-dj2.evolved_skeleton_key.desc0=§fDropped by the §r§7Evolved Skeleton Boss
-dj2.evolved_skeleton_key.desc1=§fin the underground §r§7Moon Dungeon.
-
+# Roots tooltips
 dj2.roots_wipes_input_bag.desc0=§l§cWARNING: §r§7Crafting this item will wipe the input bag's inventory!
 dj2.elemental_soul_crop.desc0=Can be grown on any Elemental Soil.
 dj2.baffle_cap_mushroom.desc0=Grows exactly like a vanilla mushroom.
 dj2.wildwood_quiver.desc0=§4§oCrafting this requires a Common Backpack you've just crafted.
 dj2.imp_leather.desc0=§fImps can be spawned by the Roots 'Summon Creatures' ritual.
 
+# Astral Sorcery tooltips
 dj2.infused_wood.desc0=§fOnly accepts Glimmering Dreamwood
 
+# Underground Biomes tooltips
 dj2.undergroundbiomes_sand.desc0=§5§oCan be converted into vanilla Sand by crafting
 dj2.undergroundbiomes_sand.desc1=§5§o2 of them together in a horizontal line.
 dj2.undergroundbiomes_gravel.desc0=§5§oCan be converted into vanilla Gravel by crafting
 dj2.undergroundbiomes_gravel.desc1=§5§o2 of them together in a horizontal line.
 
+# Dragon's Breath tooltips
 dj2.dragon_breath.desc0=§fIf you're having trouble collecting this item because of Botania's
 dj2.dragon_breath.desc1=§7Ender Air Bottles§r§f, try the following: Do §r§cNOT§r§f Right Click on blocks,
 dj2.dragon_breath.desc2=§finstead, angle your clicks so you only reach the purple §r§dDragon's
 dj2.dragon_breath.desc3=§dBreath particles§r§f, and §r§cNOT§r§f the blocks below.
+
+# Lilypad tooltip
 dj2.waterlily.desc0=§f§oA Resources Fisher can occasionally fish this up.
 
+# Storage Drawers tooltips
 dj2.framing_table.desc0=§6Consider using the Hand Framing Tool instead!
 dj2.storage_drawers_removal.desc0=Storage Drawers Extras is planned to be §4§lremoved§r in an upcoming update! (Likely ~2.22.0)
 dj2.storage_drawers_removal.desc1=Use the §6Hand Framing Tool§r to convert these into Framed Drawers to prevent anything they contain from being deleted!
@@ -652,6 +703,7 @@ dj2.upgrade_vending.desc0=Vending
 dj2.upgrade_normal.desc0=Capacity: §c%d§r stack
 dj2.empty_drawer.desc0=§6Contains nothing§r
 
+# DivineRPG Vethea tooltips
 dj2.vethea_crypt_wall.desc0=§fFound on all layers on Vethea. Simply
 dj2.vethea_crypt_wall.desc1=§fmine up the walls of these brown dungeons.
 dj2.vethea_heliosis_lump.desc0=§fFound on the top layer on Vethea,
@@ -663,14 +715,18 @@ dj2.vethea_luna_bricks.desc1=§fin small rectangular arenas.
 dj2.vethea_moon_clock.desc0=§fIt is NOT advised to use this to fight Lady Luna,
 dj2.vethea_moon_clock.desc1=§funless you're REALLY up for a challenge...
 
+# Actually Additions tooltips
 dj2.item_player_probe.desc0=§cItem disabled.
 
+# Totemic tooltips
 dj2.baykok_bow.desc0=§cUses up 1 durability point per craft.
 dj2.totempedia.desc0=§c§lWARNING: §r§fRecipes shown may be incorrect.
 dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
+# Aether tooltips
 dj2.aerogel_warning.desc0=§c§lOn servers with TickProfiler, attemting to automate this will cause crashes.
 
+# Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§fTakes a quarter of a Mana Pool to craft.
 dj2.wyvern_core.desc1=§oJEI shows 10x the Mana you need, so that's why the bar is full.
 dj2.info_tablet.desc0=§fContains information about EnderIO & Thaumic Energistics,
@@ -680,10 +736,13 @@ dj2.dragon_heart.desc1=§fCan also be crafted using Mystical Agriculture.
 dj2.chaos_shard.desc0=§fObtained after slaying the Chaos Guardian.
 dj2.chaos_shard.desc1=§fCan also be crafted using Alchemistry.
 
+# Construction Paste Container tooltip
 dj2.constructionpastecontainer.desc0=§fThis Paste Container can store a maximum of §c%d§r §fPaste.
 
-
+# Graphite Dust tooltip
 dj2.jei.industrial_graphite_dust.desc0=Explode some Industrial Grade Graphite Dust to create this item!
+
+# Hand Framing Tool tooltips
 dj2.jei.hand_framing_tool.desc0=Frame your tools by hand!
 dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame drawers already placed in the world.
 dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
