@@ -2,6 +2,15 @@ YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
 /bq_admin default load
 (This has to only be done once in multiplayer, by an admin.)
 
+Version 2.19.4:
+
+Mod Changes:
+
+- Add SerializationIsBad 1.3
+
+Nothing else was changed.
+
+
 Version 2.19.3:
 
 Mod Changes:

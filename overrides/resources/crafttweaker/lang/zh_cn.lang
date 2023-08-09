@@ -747,3 +747,5 @@ dj2.jei.hand_framing_tool.desc0=手动镶框！
 dj2.jei.hand_framing_tool.desc1=手持式镶框工具能为放置在世界上的抽屉镶框。
 dj2.jei.hand_framing_tool.desc2=要执行此操作，工具本身需要在合成网格里进行镶框。详情请在 JEI 中查看该物品参与的合成表。
 dj2.jei.hand_framing_tool.desc3=工具镶框后，对任意已放置的抽屉右击即可为其镶框。
+ritual.moretweaker.moretweakerrecipe0=坚韧净化仪式
+ritual.moretweaker.moretweakerrecipe1=周期仪式
