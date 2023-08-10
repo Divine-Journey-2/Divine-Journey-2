@@ -36,7 +36,7 @@ overrideWidth:0
 overrideHeight:0
 heldItemTooltips:true
 chatHeightFocused:1.0
-chatHeightUnfocused:0.45
+chatHeightUnfocused:0.5
 chatScale:1.0
 chatWidth:1.0
 mipmapLevels:0
