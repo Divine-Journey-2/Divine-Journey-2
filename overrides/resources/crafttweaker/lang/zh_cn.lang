@@ -320,9 +320,6 @@ dj2.dungeon_tokens.desc1=§f地牢监管者掉落。通过在对应祭坛上放�
 dj2.dungeon_tokens.desc2=§f巫师之书来召唤它们。
 dj2.wizards_book.desc0=§f从位于r§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
 
-# AE2 Wireless Terminal tooltips
-dj2.infinity_booster_card.desc0=§f只能通过合成获得，使用不消耗。
-
 # Mekanism tooltips
 dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前 3 行的物品！
 dj2.dynamic_tank_warning.desc0=§c§l警告：§r§f动态储罐有时会丢失存储
@@ -747,5 +744,7 @@ dj2.jei.hand_framing_tool.desc0=手动镶框！
 dj2.jei.hand_framing_tool.desc1=手持式镶框工具能为放置在世界上的抽屉镶框。
 dj2.jei.hand_framing_tool.desc2=要执行此操作，工具本身需要在合成网格里进行镶框。详情请在 JEI 中查看该物品参与的合成表。
 dj2.jei.hand_framing_tool.desc3=工具镶框后，对任意已放置的抽屉右击即可为其镶框。
-ritual.moretweaker.moretweakerrecipe0=坚韧净化仪式
-ritual.moretweaker.moretweakerrecipe1=周期仪式
+
+# Deprecated
+dj2.deprecated.deprecated.desc=§c已弃用
+dj2.deprecated.convert.desc=§c通过无序合成来转换为替代物品。
