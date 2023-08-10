@@ -8,7 +8,7 @@ enchantment.enderio.witherweapon.desc=对命中的实体施加凋零效果。
 enchantment.enderio.shimmer.desc=使物品拥有附魔闪光。
 enchantment.enderio.witherarrow.desc=对命中的实体施加凋零效果。
 enchantment.enderio.repellent.desc=有概率将攻击玩家的实体传送走，根据魔咒等级提高传送概率和距离。
-enchantment.endercore.xpboost.desc=从采掘方块和击杀生物中汲取更多经验
+enchantment.endercore.xpboost.desc=从采掘方块和击杀生物中汲取更多经验。
 enchantment.endercore.autosmelt.desc=自动烧炼采掘的方块或生物掉落物，就像熔炉一样。
 enchantment.endercore.soulbound.desc=使物品免于死亡掉落。
 
