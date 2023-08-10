@@ -320,9 +320,6 @@ dj2.dungeon_tokens.desc1=§9of Arcana§r§f. They're summoned at their respectiv
 dj2.dungeon_tokens.desc2=§fAltars by placing a Wizards Book on top.
 dj2.wizards_book.desc0=§fBought from §r§4Lord Vatticus§r§f in the §r§9Dungeon of Arcana§r§f.
 
-# AE2 Wireless Terminal tooltips
-dj2.infinity_booster_card.desc0=§fCan only be crafted, is not consumed by operation.
-
 # Mekanism tooltips
 dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the input Chest will remain in Robit's inventory!
 dj2.dynamic_tank_warning.desc0=§c§lWarning: §r§fSometimes the Dynamic Tank can FORGET
@@ -747,3 +744,7 @@ dj2.jei.hand_framing_tool.desc0=Frame your tools by hand!
 dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame drawers already placed in the world.
 dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
 dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking any drawers in-world will frame them.
+
+# Deprecated
+dj2.deprecated.deprecated.desc=§cDeprecated
+dj2.deprecated.convert.desc=§cConvert into the replacement item via shapeless craft.

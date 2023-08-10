@@ -392,6 +392,10 @@ for i in 0 to 4 {
     Inscriber.addRecipe(ae2_presses[i], <thermalfoundation:storage_alloy>, true, ae2_presses[i]);
 }
 
+// Magnet Card
+Inscriber.removeRecipe(<appliedenergistics2:material:60>);
+recipes.addShapedMirrored(<appliedenergistics2:material:60>.withTag({MagnetMode: 0}), [[<appliedenergistics2:part:300>,<thermalfoundation:material:160>,null],[<quantumflux:magnet:*>,<appliedenergistics2:material:28>,<thermalfoundation:material:160>],[<appliedenergistics2:part:300>,<thermalfoundation:material:160>,null]]);
+
 // Entropy Manipulator
 recipes.remove(<appliedenergistics2:entropy_manipulator>);
 recipes.addShapedMirrored(<appliedenergistics2:entropy_manipulator>.withTag({}), [[null,<appliedenergistics2:energy_cell>,<appliedenergistics2:fluix_block>],[null,<enderio:item_alloy_ingot:6>,<contenttweaker:operation_processor>],[<enderio:item_alloy_ingot:6>,null,null]]);
@@ -436,6 +440,17 @@ mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:creative_stor
 recipes.remove(<appliedenergistics2:material:58>);
 recipes.addShapedMirrored(<appliedenergistics2:material:58>, [[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null],[<appliedenergistics2:interface>,<appliedenergistics2:material:28>,<thermalfoundation:material:160>],[<appliedenergistics2:material:52>,<thermalfoundation:material:160>,null]]);
 
+// Quantum Link Card
+Inscriber.removeRecipe(<appliedenergistics2:material:59>);
+mods.extendedcrafting.TableCrafting.addShaped(<appliedenergistics2:material:59>,
+[[null,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,null],
+[<appliedenergistics2:material:42>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<thaumcraft:ingot:1>,<appliedenergistics2:material:42>],
+[<thaumcraft:ingot:1>,<contenttweaker:conducted_impetus>,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,<appliedenergistics2:material:42>,<contenttweaker:conducted_impetus>,<thaumcraft:ingot:1>],
+[null,<appliedenergistics2:material:42>,<thaumcraft:ingot:1>,<appliedenergistics2:material:28>,<thaumcraft:ingot:1>,<appliedenergistics2:material:42>,null],
+[null,null,<contenttweaker:thaumium_processor>,<appliedenergistics2:material:42>,<contenttweaker:thaumium_processor>,null,null],
+[null,null,<contenttweaker:thaumium_processor>,<thaumcraft:ingot:1>,<contenttweaker:thaumium_processor>,null,null],
+[null,null,null,<contenttweaker:thaumium_processor>,null,null,null]]);
+
 // ME Extended Processing Pattern Terminal
 recipes.remove(<appliedenergistics2:part:341>);
 recipes.addShapedMirrored(<appliedenergistics2:part:341>, [[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>],[<appliedenergistics2:part:340>,<appliedenergistics2:material:24>,<appliedenergistics2:part:340>],[<contenttweaker:estimation_processor>,null,<contenttweaker:estimation_processor>]]);
@@ -444,8 +459,17 @@ recipes.addShapedMirrored(<appliedenergistics2:part:341>, [[<contenttweaker:esti
 recipes.remove(<appliedenergistics2:part:222>);
 recipes.addShaped(<appliedenergistics2:part:222>, [[null,<contenttweaker:estimation_processor>,null],[<mekanism:dictionary>,<appliedenergistics2:part:220>,<mekanism:dictionary>],[null,<contenttweaker:estimation_processor>,null]]);
 
-// Not Enough Energistics Pattern Interface(WIP)
-recipes.remove(<neenergistics:pattern_interface>);
+// Wireless Terminals
+function wirelessTerminal(output as IItemStack, processor as IItemStack, terminal as IItemStack) {
+    recipes.remove(output);
+    recipes.addShapedMirrored(output, [[null,processor,null],[<appliedenergistics2:wireless_terminal>,<botania:corporeaspark:1>,terminal],[null,processor,null]]);
+}
+
+wirelessTerminal(<appliedenergistics2:wireless_crafting_terminal>, <contenttweaker:estimation_processor>, <appliedenergistics2:part:360>);
+wirelessTerminal(<appliedenergistics2:wireless_pattern_terminal>, <contenttweaker:methodology_processor>, <appliedenergistics2:part:340>);
+wirelessTerminal(<appliedenergistics2:wireless_fluid_terminal>, <contenttweaker:operation_processor>, <appliedenergistics2:part:520>);
+
+recipes.remove(<extracells:terminal.universal.wireless>);
 
 
 print("ENDING AppliedEnergistics2.zs");
