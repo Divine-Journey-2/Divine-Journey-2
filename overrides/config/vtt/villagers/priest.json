@@ -1,8 +1,0 @@
-{
-	profession: {
-		name: "minecraft:priest"
-	},
-	careers: [
-		"necromancer"
-	]
-}
