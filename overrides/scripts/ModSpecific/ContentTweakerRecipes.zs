@@ -1449,6 +1449,7 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 // Solar Seeds
 // recipe in config/modularmachinery/recipes/weak_fusion_plant_contenttweaker_solar_seeds.json
 <contenttweaker:solar_seeds>.addTooltip(game.localize("dj2.solar_seeds.desc0"));
+<ore:seedsTier6>.add(<contenttweaker:solar_seeds>);
 
 // Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);
