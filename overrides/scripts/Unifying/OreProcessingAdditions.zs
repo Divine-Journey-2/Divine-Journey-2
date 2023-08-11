@@ -599,10 +599,6 @@ addMaterialToDustCrushingWOPetrotheum(<contenttweaker:rainbow_tablet>, <thaumcra
 // Quartz Sliver
 addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> * 16);
 
-// Tier 1 Mob Chunk
-Grinder.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 4);
-mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 2000);
-
 // Bewitchment Silver Ore removal
 <ore:oreSilver>.remove(<bewitchment:silver_ore>);
 
