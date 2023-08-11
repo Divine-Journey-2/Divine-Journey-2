@@ -188,10 +188,8 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:material:160
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:storage_alloy>, <minecraft:iron_block>, 10800, <immersiveengineering:material:7> * 9);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:8>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <minecraft:iron_ingot>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
-mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:iron_ingot>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <ore:oreIron>, <immersiveengineering:material:7>, 200, 512, null, "Ores");
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <thermalfoundation:material>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <immersiveengineering:material:17>, null, 100, 512, [<minecraft:iron_ingot>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <immersiveengineering:material:17>, null, 100, 512, [<thermalfoundation:material>], "Alloying");
 furnace.remove(<immersiveengineering:metal:8>);
 recipes.remove(<immersiveengineering:metal:28>);
 
