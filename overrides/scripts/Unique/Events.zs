@@ -12,6 +12,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.entity.IEntityItem;
+ import crafttweaker.entity.IEntityLiving;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
@@ -257,6 +258,16 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
     if (id == "bewitchment:demon" || id == "bewitchment:demoness") {
         e.cancel();
         //e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
+    }
+
+    // Fix Natura Imps converting Leads into Raw Imphide when trying to unequip leads.
+    // https://github.com/progwml6/Natura/blob/d5b4bdd1767176dfb17da2298c5f9458f1839588/src/main/java/com/progwml6/natura/entities/entity/passive/EntityImp.java#L108
+    if (id == "natura:imp" && e.target instanceof IEntityLiving) {
+        val goal as IEntityLiving = e.target;
+        if (!goal.isLeashed) return;
+        goal.clearLeashed(true, false);
+        goal.world.spawnEntity(<minecraft:lead>.createEntityItem(goal.world, goal.position));
+        e.cancel();
     }
 
     // Activate the held ender core if the target entity was an end crystal
