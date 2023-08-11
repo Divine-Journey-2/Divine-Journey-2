@@ -12,7 +12,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.entity.IEntityItem;
- import crafttweaker.entity.IEntityLiving;
+import crafttweaker.entity.IEntityLiving;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
@@ -312,7 +312,6 @@ events.onBlockBreak(function(e as BlockBreakEvent) {
         var item as IItemStack = itemUtils.getItem(drop.id, drop.Damage) * drop.Count;
         if (!isNull(drop.tag)) item = item.withTag(drop.tag);
         e.world.spawnEntity(item.createEntityItem(e.world, target));
-
     }
 });
 

@@ -97,7 +97,7 @@ val shield = <rftools:shield_block1> | <rftools:shield_block2> | <rftools:shield
 
 val pipe = <extrautils2:pipe>;
 
-val stairs = <minecraft:stone_stairs>;
+val stairs = assemblePreview(<minecraft:stone_stairs>, game.localize("dj2.configure_jei.stairs.desc"));
 
 val configurator = stairs | chest | configurationCardUses | <mekanism:machineblock:*> | <mekanism:machineblock2:*> | <mekanism:transmitter:*> | <mekanism:gastank> | <mekanism:energycube>;
 

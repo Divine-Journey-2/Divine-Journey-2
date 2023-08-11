@@ -31,6 +31,7 @@ dj2.activate_block_jei.barrier.desc0=§r§dRight Click into the air
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§dConfigure Block
+dj2.configure_jei.stairs.desc=Rotate Block
 dj2.configure_jei.atomic_reconstructor.desc=§r§bToggles between Deactivation and Pulse mode.
 dj2.configure_jei.starlight.desc=§r§bAnything that can transfer or receive starlight.
 dj2.configure_jei.enderio_conduit.desc=§r§bAny EnderIO Conduit.
