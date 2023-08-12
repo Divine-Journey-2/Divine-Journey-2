@@ -49,22 +49,6 @@
   },
   {
     "internalOreName": "thermalfoundation:ore",
-    "meta": 6,
-    "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/platinum",
-    "lightValue": -1,
-    "alphaOverlay": false,
-    "oreDirectories": []
-  },
-  {
-    "internalOreName": "thermalfoundation:ore",
-    "meta": 7,
-    "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/iridium",
-    "lightValue": -1,
-    "alphaOverlay": false,
-    "oreDirectories": []
-  },
-  {
-    "internalOreName": "thermalfoundation:ore",
     "meta": 8,
     "overlay": "undergroundbiomes:blocks/overlays/thermalfoundation/mana_infused",
     "lightValue": -1,
