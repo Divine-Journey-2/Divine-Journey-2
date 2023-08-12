@@ -427,6 +427,10 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roo
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:wildewheet_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:pereskia_bulb>, 6400);
 
+// HOP Graphite Dust
+mods.immersiveengineering.Squeezer.removeItemRecipe(<immersiveengineering:material:19>);
+Squeezer.addRecipe(<immersiveengineering:material:19>, <liquid:stone>*288, <immersiveengineering:material:17> * 8, 6400);
+
 // Conveyor fix
 recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);
 <immersiveengineering:conveyor>.addShiftTooltip(game.localize("dj2.conveyor.desc0"));
