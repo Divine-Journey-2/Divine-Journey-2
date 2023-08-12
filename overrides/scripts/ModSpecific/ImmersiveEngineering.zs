@@ -378,6 +378,15 @@ for ore in UraniumOres {
     EUCrusher.remove(ore);
 }
 
+// Squeezer reset
+// In order to remove the bugged 8 Coke Dust -> 1 HOP Graphite recipe, we must remove all Squeezer recipes. Nothing else removes it.
+Squeezer.removeAll();
+Squeezer.addRecipe(<minecraft:leather>, <liquid:blood> * 5, <minecraft:rotten_flesh>, 6400);
+Squeezer.addRecipe(null, <liquid:canolaoil> * 80, <actuallyadditions:item_misc:13>, 6400);
+
+// HOP Graphite Dust
+Squeezer.addRecipe(<immersiveengineering:material:19>, <liquid:stone> * 288, <immersiveengineering:material:17> * 8, 6400);
+
 // More Ethanol recipes
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <minecraft:pumpkin>, 6400);
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <minecraft:wheat>, 6400);
@@ -413,6 +422,11 @@ mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <root
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 300, <minecraft:golden_apple>, 18000);
 
 // More Plant Oil recipes
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <minecraft:wheat_seeds>, 6400);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 60, <minecraft:beetroot_seeds>, 6400);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 40, <minecraft:pumpkin_seeds>, 6400);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 20, <minecraft:melon_seeds>, 6400);
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 120, <immersiveengineering:seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <actuallyadditions:item_rice_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <actuallyadditions:item_canola_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 20, <actuallyadditions:item_flax_seed>, 6400);
@@ -426,10 +440,6 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roo
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:spirit_herb_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:wildewheet_seed>, 6400);
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 100, <roots:pereskia_bulb>, 6400);
-
-// HOP Graphite Dust
-mods.immersiveengineering.Squeezer.removeItemRecipe(<immersiveengineering:material:19>);
-Squeezer.addRecipe(<immersiveengineering:material:19>, <liquid:stone>*288, <immersiveengineering:material:17> * 8, 6400);
 
 // Conveyor fix
 recipes.addHiddenShapeless("immersive_conveyor_fix", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), [<immersiveengineering:conveyor>]);
