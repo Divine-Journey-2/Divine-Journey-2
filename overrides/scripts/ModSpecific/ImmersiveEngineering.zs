@@ -265,11 +265,11 @@ mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:graphite
 
 // LV Capacitor
 recipes.remove(<immersiveengineering:metal_device0:0>);
-recipes.addShaped(<immersiveengineering:metal_device0:0>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<ore:ingotSteel>,<immersiveengineering:metal_decoration0>,<ore:ingotSteel>],[<immersiveengineering:treated_wood>,<minecraft:redstone>,<immersiveengineering:treated_wood>]]);
+recipes.addShaped(<immersiveengineering:metal_device0:0>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<ore:ingotSteel>,<immersiveengineering:metal_decoration0>,<ore:ingotSteel>],[<immersiveengineering:treated_wood>,<ore:blockRedstone>,<immersiveengineering:treated_wood>]]);
 
 // MV Capacitor
 recipes.remove(<immersiveengineering:metal_device0:1>);
-recipes.addShaped("immersive_capacitor_upgrade1", <immersiveengineering:metal_device0:1>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:353>,<immersiveengineering:metal_device0>.marked("capacitor"),<thermalfoundation:material:353>],[<immersiveengineering:treated_wood>,<ore:blockRedstone>,<immersiveengineering:treated_wood>]],
+recipes.addShaped("immersive_capacitor_upgrade1", <immersiveengineering:metal_device0:1>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:353>,<immersiveengineering:metal_device0>.marked("capacitor"),<thermalfoundation:material:353>],[<immersiveengineering:treated_wood>,<ore:blockYellorium>,<immersiveengineering:treated_wood>]],
 function(out,ins,cInfo) {
     if(ins.capacitor.tag has "energyStorage") {
         return out.withTag({energyStorage: ins.capacitor.tag.energyStorage});
@@ -280,7 +280,7 @@ function(out,ins,cInfo) {
 
 // HV Capacitor
 recipes.remove(<immersiveengineering:metal_device0:2>);
-recipes.addShaped("immersive_capacitor_upgrade2", <immersiveengineering:metal_device0:2>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:322>,<immersiveengineering:metal_device0:1>.marked("capacitor"),<thermalfoundation:material:322>],[<ore:blockLead>,<ore:blockRedstone>,<ore:blockLead>]],
+recipes.addShaped("immersive_capacitor_upgrade2", <immersiveengineering:metal_device0:2>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<thermalfoundation:material:322>,<immersiveengineering:metal_device0:1>.marked("capacitor"),<thermalfoundation:material:322>],[<immersiveengineering:treated_wood>,<ore:blockLead>,<immersiveengineering:treated_wood>]],
 function(out,ins,cInfo) {
     if(ins.capacitor.tag has "energyStorage") {
         return out.withTag({energyStorage: ins.capacitor.tag.energyStorage});
