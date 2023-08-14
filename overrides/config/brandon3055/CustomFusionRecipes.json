@@ -633,30 +633,6 @@
     },
     {
         "mode": "REMOVE",
-        "result": "draconicadditions:chaotic_bow",
-        "catalyst": "draconicevolution:draconic_bow"
-    },
-    {
-        "mode": "ADD",
-        "result": "draconicadditions:chaotic_bow",
-        "catalyst": "draconicevolution:draconic_bow",
-        "energy": 2000000000,
-        "tier": 3,
-        "ingredients": [
-            "contenttweaker:corrupted_dragon_token",
-            "contenttweaker:corrupted_dragon_token",
-            "draconicevolution:reactor_core",
-            "alchemistry:ingot,1,94",
-            "alchemistry:ingot,1,94",
-            "alchemistry:ingot,1,94",
-            "alchemistry:ingot,1,90",
-            "alchemistry:ingot,1,90",
-            "alchemistry:ingot,1,90",
-            "alchemistry:ingot,1,90"
-        ]
-    },
-    {
-        "mode": "REMOVE",
         "result": "draconicadditions:chaotic_helm",
         "catalyst": "draconicevolution:draconic_helm"
     },
