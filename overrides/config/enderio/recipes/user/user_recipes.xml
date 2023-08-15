@@ -743,4 +743,12 @@
     </alloying>
   </recipe>
 
+  <recipe name="Soul Binder: Uber Conduit Probe" required="true">
+    <soulbinding energy="100000" levels="4">
+      <input name="item:enderio:item_conduit_probe" />
+      <soul name="minecraft:ghast" />
+      <output name="uberconduitprobe:uber_conduit_probe_item" />
+    </soulbinding>
+  </recipe>
+
 </enderio:recipes>

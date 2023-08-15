@@ -76,6 +76,8 @@ recipes.remove(<abyssalcraft:odb>);
 // Coralium Infused Stone
 recipes.remove(<abyssalcraft:coraliumstone>);
 recipes.addShaped(<abyssalcraft:coraliumstone> * 4, [[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>],[<abyssalcraft:ccluster9>,<ore:ingot_dark_soularium>,<abyssalcraft:ccluster9>],[<quantumflux:darkstone>,<abyssalcraft:ccluster9>,<quantumflux:darkstone>]]);
+// Remove from the oredict to prevent Flux Anodizers from applying
+<ore:oreCoraliumStone>.remove(<abyssalcraft:coraliumstone>);
 
 // Abyssal Stone with Mystical Agriculture Essences
 recipes.addShaped(<abyssalcraft:stone:1>*16, [[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>],[<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>],[<mysticalagriculture:coralium_essence>,<mysticalagriculture:stone_essence>,<mysticalagriculture:coralium_essence>]]);

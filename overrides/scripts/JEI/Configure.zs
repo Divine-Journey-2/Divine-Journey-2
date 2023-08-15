@@ -23,7 +23,7 @@ function addConfiguration(user as IItemStack, target as IIngredient) as void {
 }
 
 // Take an IIngredient containing >0 items, and apply the given lore tag to each item before packing it back into an IIngredient.
-function assembePreview(itemList as IIngredient, lore as string) as IIngredient {
+function assemblePreview(itemList as IIngredient, lore as string) as IIngredient {
     // Can't init as a null for some reason, so heres the workaround.
     var temp as IIngredient = itemList.items[0].withTag({display:{Lore:[lore]}});
     for i, item in itemList.items {
@@ -33,7 +33,7 @@ function assembePreview(itemList as IIngredient, lore as string) as IIngredient 
     return temp;
 }
 
-val reconstructor = assembePreview(<actuallyadditions:block_atomic_reconstructor>, game.localize("dj2.configure_jei.atomic_reconstructor.desc"));
+val reconstructor = assemblePreview(<actuallyadditions:block_atomic_reconstructor>, game.localize("dj2.configure_jei.atomic_reconstructor.desc"));
 
 val lasers = <actuallyadditions:block_laser_relay_item_whitelist> | <actuallyadditions:block_laser_relay_item> | <actuallyadditions:block_laser_relay_fluids> | <actuallyadditions:block_laser_relay_extreme> | <actuallyadditions:block_laser_relay_advanced> | <actuallyadditions:block_laser_relay>;
 
@@ -45,7 +45,7 @@ val golem = <thaumcraft:golem>.withTag({props: 0 as long});
 
 val cropSticks = <agricraft:crop_sticks>;
 
-val starlightTransfer = assembePreview(<astralsorcery:blockcollectorcrystal> | <astralsorcery:blockcelestialcollectorcrystal> | <astralsorcery:blocklens> | <astralsorcery:blockprism>, game.localize("dj2.configure_jei.starlight.desc"));
+val starlightTransfer = assemblePreview(<astralsorcery:blockcollectorcrystal> | <astralsorcery:blockcelestialcollectorcrystal> | <astralsorcery:blocklens> | <astralsorcery:blockprism>, game.localize("dj2.configure_jei.starlight.desc"));
 
 val ritual = <bloodmagic:ritual_controller>;
 
@@ -55,7 +55,7 @@ val gauntletConfigures = <thaumcraft:tube> | <thaumcraft:tube_valve> | <thaumcra
 
 val p2pTunnels = <appliedenergistics2:part:460> | <appliedenergistics2:part:461> | <appliedenergistics2:part:462> | <appliedenergistics2:part:463> | <appliedenergistics2:part:467> | <appliedenergistics2:part:469>;
 
-val conduits = assembePreview(<enderio:item_item_conduit> | <enderio:item_liquid_conduit:*> | <enderio:item_power_conduit:*> | <enderio:item_me_conduit:*> | <enderio:item_gas_conduit:2> | <enderio:item_redstone_conduit> | <enderio:item_endergy_conduit:5> | <enderio:item_endergy_conduit:6> | <enderio:item_endergy_conduit:7> | <enderio:item_endergy_conduit:8> | <enderio:item_endergy_conduit:9> | <enderio:item_endergy_conduit:10> | <enderio:item_endergy_conduit:11>, game.localize("dj2.configure_jei.enderio_conduit.desc"));
+val conduits = assemblePreview(<enderio:item_item_conduit> | <enderio:item_liquid_conduit:*> | <enderio:item_power_conduit:*> | <enderio:item_me_conduit:*> | <enderio:item_gas_conduit:2> | <enderio:item_redstone_conduit> | <enderio:item_endergy_conduit:5> | <enderio:item_endergy_conduit:6> | <enderio:item_endergy_conduit:7> | <enderio:item_endergy_conduit:8> | <enderio:item_endergy_conduit:9> | <enderio:item_endergy_conduit:10> | <enderio:item_endergy_conduit:11>, game.localize("dj2.configure_jei.enderio_conduit.desc"));
 
 val generatingFlowers = <botania:specialflower>.withTag({type: "endoflame"}) | <botania:specialflower>.withTag({type: "hydroangeas"}) | <botania:specialflower>.withTag({type: "thermalily"}) | <botania:specialflower>.withTag({type: "arcanerose"}) | <botania:specialflower>.withTag({type: "munchdew"}) | <botania:specialflower>.withTag({type: "entropinnyum"}) | <botania:specialflower>.withTag({type: "kekimurus"}) | <botania:specialflower>.withTag({type: "gourmaryllis"}) | <botania:specialflower>.withTag({type: "narslimmus"}) | <botania:specialflower>.withTag({type: "spectrolus"}) | <botania:specialflower>.withTag({type: "rafflowsia"}) | <botania:specialflower>.withTag({type: "shulk_me_not"}) | <botania:specialflower>.withTag({type: "dandelifeon"});
 
@@ -63,41 +63,41 @@ val wires = <immersiveengineering:connector> | <immersiveengineering:connector:1
 
 val variable = <integrateddynamics:variable>;
 
-val renamer = assembePreview(variable, game.localize("dj2.configure_jei.labeller.desc"));
+val renamer = assemblePreview(variable, game.localize("dj2.configure_jei.labeller.desc"));
 
 val bambooPipes = <erebus:bamboo_pipe_extract_active> | <erebus:bamboo_pipe> | <erebus:bamboo_pipe_extract>;
 
 val wandUses = generatingFlowers | <botania:pool> | <botania:spark> | <botania:spreader> | <botania:spreader:1> | <botania:spreader:2> | <botania:spreader:3> | <botania:hourglass> | <botania:platform:*> | <botania:animatedtorch> | <botania:turntable> | <botania:pistonrelay> | <botania:lightrelay:*>;
 
-val redprintUses = assembePreview(<thermaldynamics:servo:*> | <thermaldynamics:filter:*> | <thermaldynamics:retriever:*> | <thermaldynamics:relay:*> | <thermalexpansion:machine:*> | <thermalexpansion:device:*> | <thermalexpansion:dynamo:*> | <thermalexpansion:cell:*>, game.localize("dj2.configure_jei.redprint.desc"));
+val redprintUses = assemblePreview(<thermaldynamics:servo:*> | <thermaldynamics:filter:*> | <thermaldynamics:retriever:*> | <thermaldynamics:relay:*> | <thermalexpansion:machine:*> | <thermalexpansion:device:*> | <thermalexpansion:dynamo:*> | <thermalexpansion:cell:*>, game.localize("dj2.configure_jei.redprint.desc"));
 
-val configurationCardUses = assembePreview(<mekanism:machineblock:*>, game.localize("dj2.configure_jei.configuration_card.desc"));
+val configurationCardUses = assemblePreview(<mekanism:machineblock:*>, game.localize("dj2.configure_jei.configuration_card.desc"));
 
 val totemicBase = <totemic:totem_base>;
 
 val illuminator = <astralsorcery:blockworldilluminator>;
 
-val fluix = assembePreview(<appliedenergistics2:part:16>, game.localize("dj2.configure_jei.fluix_cable.desc"));
+val fluix = assemblePreview(<appliedenergistics2:part:16>, game.localize("dj2.configure_jei.fluix_cable.desc"));
 
 val reactorPorts = <bigreactors:reactorcoolantport> | <bigreactors:reactoraccessport>;
 
-val hammer = assembePreview(<immersiveengineering:stone_decoration> | <immersiveengineering:stone_decoration:1> | <immersiveengineering:stone_decoration:2> | <immersiveengineering:metal_decoration0:3> | <immersiveengineering:metal_decoration0:4> | <immersiveengineering:metal_decoration0:5> | <immersiveengineering:metal_decoration0:6> | <immersiveengineering:metal_decoration0:7>, game.localize("dj2.configure_jei.immersive_engineering_hammer.desc"));
+val hammer = assemblePreview(<immersiveengineering:stone_decoration> | <immersiveengineering:stone_decoration:1> | <immersiveengineering:stone_decoration:2> | <immersiveengineering:metal_decoration0:3> | <immersiveengineering:metal_decoration0:4> | <immersiveengineering:metal_decoration0:5> | <immersiveengineering:metal_decoration0:6> | <immersiveengineering:metal_decoration0:7>, game.localize("dj2.configure_jei.immersive_engineering_hammer.desc"));
 
-val chest = assembePreview(<minecraft:chest>, game.localize("dj2.configure_jei.rotate_chest.desc"));
+val chest = assemblePreview(<minecraft:chest>, game.localize("dj2.configure_jei.rotate_chest.desc"));
 
-val integratedDynamics = assembePreview(<integrateddynamics:cable>, game.localize("dj2.configure_jei.integrated_dynamics.desc"));
+val integratedDynamics = assemblePreview(<integrateddynamics:cable>, game.localize("dj2.configure_jei.integrated_dynamics.desc"));
 
-val tesla = assembePreview(<teslacorelib:machine_case>, game.localize("dj2.configure_jei.industrial_foregoing.desc"));
+val tesla = assemblePreview(<teslacorelib:machine_case>, game.localize("dj2.configure_jei.industrial_foregoing.desc"));
 
 val enderDrawer = <enderutilities:barrel>;
 
-val rftools = assembePreview(<rftools:machine_frame>, game.localize("dj2.configure_jei.rftools.desc"));
+val rftools = assemblePreview(<rftools:machine_frame>, game.localize("dj2.configure_jei.rftools.desc"));
 
 val shield = <rftools:shield_block1> | <rftools:shield_block2> | <rftools:shield_block3> | <rftools:shield_block4> | <rftools:shield_template_block:*>;
 
 val pipe = <extrautils2:pipe>;
 
-val stairs = <minecraft:stone_stairs>;
+val stairs = assemblePreview(<minecraft:stone_stairs>, game.localize("dj2.configure_jei.stairs.desc"));
 
 val configurator = stairs | chest | configurationCardUses | <mekanism:machineblock:*> | <mekanism:machineblock2:*> | <mekanism:transmitter:*> | <mekanism:gastank> | <mekanism:energycube>;
 
@@ -110,7 +110,6 @@ addConfiguration(<appliedenergistics2:network_tool>, fluix);
 addConfiguration(<astralsorcery:itemilluminationwand>, illuminator);
 addConfiguration(<astralsorcery:itemlinkingtool>, starlightTransfer);
 addConfiguration(<base:wrench>, chest);
-addConfiguration(<betterp2p_plusplus:advanced_memory_card>, p2pTunnels);
 addConfiguration(<bigreactors:wrench>, reactorPorts);
 addConfiguration(<bloodmagic:ritual_dismantler>, ritual);
 addConfiguration(<bloodmagic:ritual_diviner:1>, ritual);

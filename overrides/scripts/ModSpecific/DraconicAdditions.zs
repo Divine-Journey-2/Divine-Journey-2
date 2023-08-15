@@ -1,6 +1,7 @@
 // Author: Atricos
 
 import mods.thaumcraft.Infusion;
+import mods.astralsorcery.Altar;
 
 print("STARTING DraconicAdditions.zs");
 
@@ -78,7 +79,12 @@ recipes.addShaped(<draconicadditions:vampiric_shirt>, [[<draconicevolution:draco
 
 // Ring of Inertia Cancellation
 recipes.remove(<draconicadditions:inertia_cancel_ring>);
-recipes.addShaped(<draconicadditions:inertia_cancel_ring>, [[<draconicevolution:wyvern_energy_core>,<contenttweaker:condensed_vis_crystal_motus>,<draconicevolution:wyvern_energy_core>],[<contenttweaker:condensed_vis_crystal_motus>,<thaumcraft:baubles:5>,<contenttweaker:condensed_vis_crystal_motus>],[<draconicevolution:wyvern_energy_core>,<contenttweaker:condensed_vis_crystal_motus>,<draconicevolution:wyvern_energy_core>]]);
+mods.astralsorcery.Altar.addConstellationAltarRecipe("dj2:shaped/internal/altar/inertiaring", <draconicadditions:inertia_cancel_ring>, 2500, 100,
+[<astralsorcery:itemcraftingcomponent:4>,<mob_grinding_utils:fan>,<astralsorcery:itemcraftingcomponent:4>,
+<mob_grinding_utils:fan>,<thaumcraft:baubles:5>,<mob_grinding_utils:fan>,
+<astralsorcery:itemcraftingcomponent:4>,<thaumicaugmentation:thaumostatic_harness_augment>,<astralsorcery:itemcraftingcomponent:4>,
+<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcraftingcomponent:4>,
+<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>,<contenttweaker:condensed_vis_crystal_motus>]);
 
 // Portable Wired Chargers
 recipes.remove(<draconicadditions:portable_wired_charger>);
