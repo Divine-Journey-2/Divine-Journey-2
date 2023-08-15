@@ -29,7 +29,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<planetprogression:satellite_contr
 
 // Communication Dish Keycard
 recipes.remove(<planetprogression:dish_keycard>);
-recipes.addShaped(<planetprogression:dish_keycard>, [[<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>],[<wct:magnet_card>,<rftools:shape_card>,<wct:magnet_card>],[<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>]]);
+recipes.addShaped(<planetprogression:dish_keycard>, [[<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>],[<appliedenergistics2:material:60>,<rftools:shape_card>,<appliedenergistics2:material:60>],[<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>,<galacticraftcore:basic_item:11>]]);
 
 // Telescope
 recipes.remove(<planetprogression:telescope>);
