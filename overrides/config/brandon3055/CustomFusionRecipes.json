@@ -826,5 +826,73 @@
         "mode": "REMOVE",
         "result": "solarflux:solar_panel_chaotic",
         "catalyst": "draconicevolution:chaotic_core"
+    },
+    {
+        "mode": "ADD",
+        "result": "mysticalagradditions:special,2,1",
+        "catalyst": "mysticalagradditions:special,1,1",
+        "energy": 4000000,
+        "tier": 2,
+        "ingredients": [
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence",
+            "mysticalagradditions:dragon_egg_essence"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "mysticalagradditions:special,2,4",
+        "catalyst": "mysticalagradditions:special,1,4",
+        "energy": 4000000,
+        "tier": 3,
+        "ingredients": [
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence",
+            "mysticalagradditions:awakened_draconium_essence"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "mysticalagradditions:special,2",
+        "catalyst": "mysticalagradditions:special",
+        "energy": 4000000,
+        "tier": 3,
+        "ingredients": [
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence",
+            "mysticalagradditions:nether_star_essence"
+        ]
+    },
+    {
+        "mode": "ADD",
+        "result": "mysticalagradditions:special,2,5",
+        "catalyst": "mysticalagradditions:special,1,5",
+        "energy": 4000000,
+        "tier": 3,
+        "ingredients": [
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence",
+            "mysticalagradditions:neutronium_essence"
+        ]
     }
 ]
