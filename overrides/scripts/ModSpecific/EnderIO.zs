@@ -599,6 +599,10 @@ recipes.addShaped(<enderio:item_material:60>, [[<enderio:item_alloy_ingot:3>,<en
 recipes.remove(<enderio:item_conduit_probe>);
 recipes.addShaped(<enderio:item_conduit_probe>, [[<enderio:item_alloy_nugget>,null,<enderio:item_alloy_nugget>],[<enderio:item_alloy_ingot>,<enderio:item_yeta_wrench>,<enderio:item_alloy_ingot>],[<enderio:item_alloy_ingot>,<contenttweaker:energized_dark_dust>,<enderio:item_alloy_ingot>]]);
 
+// Uber Conduit Probe
+recipes.remove(<uberconduitprobe:uber_conduit_probe_item>);
+// Recipe added in the Soul Binder in config/enderio/recipes/user/user_recipes.xml
+
 // Conduit Facade
 recipes.remove(<enderio:item_conduit_facade>);
 recipes.addShaped(<enderio:item_conduit_facade> * 4, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<enderio:item_material:4>,null,<enderio:item_material:4>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);

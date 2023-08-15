@@ -4,6 +4,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.bloodmagic.TartaricForge;
 import mods.thermalexpansion.Transposer;
+import mods.enderio.AlloySmelter;
+import mods.immersiveengineering.ArcFurnace;
 import mods.botania.RuneAltar;
 import thaumcraft.aspect.CTAspectStack;
 import mods.thaumcraft.Infusion;
@@ -285,11 +287,16 @@ recipes.addShaped(<thermalfoundation:material:833> * 3, [[<mysticalagriculture:b
 // Obsidian Seeds
 addTier2MysticalAgricultureSeed(<mysticalagriculture:obsidian_seeds>,<contenttweaker:compressed_obsidian2>);
 
+// Soulium
+furnace.remove(<mysticalagriculture:crafting:38>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:29>, null, 100, 512, [<simplyjetpacks:metaitemmods:12>]);
+mods.enderio.AlloySmelter.addRecipe(<mysticalagriculture:crafting:38>, [<mysticalagriculture:crafting:29>, <simplyjetpacks:metaitemmods:12>], 10000);
+
 // Soulium Dagger
 recipes.remove(<mysticalagriculture:soulium_dagger>);
 
 // Tier 1 Mob Chunk
-// in OreProcessingAdditions.zs
+recipes.addShaped(<mysticalagriculture:chunk>, [[<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>],[<mysticalagriculture:crafting:38>,<openblocks:trophy:*>,<mysticalagriculture:crafting:38>],[<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>]]);
 
 // Tier 2 Mob Chunk
 recipes.remove(<mysticalagriculture:chunk:1>);
