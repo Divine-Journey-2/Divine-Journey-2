@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "contenttweaker:items/bag_of_truth_locked"
-  }
-}
