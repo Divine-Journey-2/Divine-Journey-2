@@ -8,7 +8,7 @@
 # https://github.com/t0su4
 #
 # Adapted from Nomifactory by WaitingIdly, adding configurable java version and instructions
-# https://github.com/Nomifactory/Nomifactory/blob/f05d2f552ca8441c3f26fff76e16392c74f12337/launchscripts/launch.bat
+# https://github.com/Nomifactory/Nomifactory/blob/f05d2f552ca8441c3f26fff76e16392c74f12337/launchscripts/launch.sh
 #
 
 # DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING
