@@ -120,7 +120,7 @@ def generateModlist(manifest, key: str, modlistServer: list, modlistClient: list
     # Curseforge api key
     if (key == None):
         with open(basePath + "/buildtools/API-KEY", "r") as file:
-            key = file.readline()
+            key = file.readline().replace("\n", "")
 
     if (key == None):
         os.getenv("CFAPIKEY")
