@@ -75,7 +75,7 @@ recipes.addShaped(<rftoolsdim:dimension_monitor>, [[<alchemistry:ingot:41>,<rfto
 
 // Phased Field Generator
 recipes.remove(<rftoolsdim:phased_field_generator>);
-recipes.addShaped(<rftoolsdim:phased_field_generator>, [[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>],[<rftools:infused_enderpearl>,<draconicevolution:dislocator_advanced>.withTag({}),<rftools:infused_enderpearl>],[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>]]);
+recipes.addShaped(<rftoolsdim:phased_field_generator>, [[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>],[<rftools:infused_enderpearl>,<draconicevolution:dislocator_advanced>,<rftools:infused_enderpearl>],[<alchemistry:ingot:70>,<rftools:infused_enderpearl>,<alchemistry:ingot:70>]]);
 <rftoolsdim:phased_field_generator>.addTooltip(game.localize("dj2.phased_field_generator.desc0"));
 <rftoolsdim:phased_field_generator>.addTooltip(game.localize("dj2.phased_field_generator.desc1"));
 <rftoolsdim:phased_field_generator>.addTooltip(game.localize("dj2.phased_field_generator.desc2"));

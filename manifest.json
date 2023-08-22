@@ -11,1182 +11,1450 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Divine Journey 2",
-  "version": "2.19.4",
+  "version": "2.20.0",
   "author": "AtricosHU",
   "files": [
     {
+      "slug": "journeymap",
       "projectID": 32274,
       "fileID": 2916002,
       "required": true
     },
     {
+      "slug": "abyssalcraft",
       "projectID": 53686,
       "fileID": 3425234,
       "required": true
     },
     {
+      "slug": "atum",
       "projectID": 59621,
       "fileID": 3116599,
       "required": true
     },
     {
+      "slug": "mouse-tweaks",
       "projectID": 60089,
       "fileID": 3359843,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "ender-io",
       "projectID": 64578,
-      "fileID": 3328811,
+      "fileID": 4674244,
       "required": true
     },
     {
+      "slug": "morpheus",
       "projectID": 69118,
       "fileID": 2664449,
       "required": true
     },
     {
+      "slug": "cofh-core",
       "projectID": 69162,
       "fileID": 2920433,
       "required": true
     },
     {
+      "slug": "thermal-expansion",
       "projectID": 69163,
       "fileID": 2926431,
       "required": true
     },
     {
+      "slug": "tinkers-construct",
       "projectID": 74072,
       "fileID": 2902483,
       "required": true
     },
     {
+      "slug": "natura",
       "projectID": 74120,
       "fileID": 2711439,
       "required": true
     },
     {
+      "slug": "evilcraft",
       "projectID": 74610,
       "fileID": 2811267,
       "required": true
     },
     {
+      "slug": "mantle",
       "projectID": 74924,
       "fileID": 2713386,
       "required": true
     },
     {
+      "slug": "waila-harvestability",
       "projectID": 79287,
       "fileID": 2481605,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "the-erebus",
       "projectID": 220698,
       "fileID": 3211974,
       "required": true
     },
     {
+      "slug": "modtweaker",
       "projectID": 220954,
       "fileID": 3840577,
       "required": true
     },
     {
+      "slug": "thermal-foundation",
       "projectID": 222880,
       "fileID": 2926428,
       "required": true
     },
     {
+      "slug": "inventory-tweaks",
       "projectID": 223094,
       "fileID": 2482481,
       "required": true
     },
     {
+      "slug": "recurrent-complex",
       "projectID": 223150,
-      "fileID": 4356582,
+      "fileID": 4643434,
       "required": true
     },
     {
+      "slug": "draconic-evolution",
       "projectID": 223565,
       "fileID": 3431261,
       "required": true
     },
     {
+      "slug": "thaumcraft",
       "projectID": 223628,
       "fileID": 2629023,
       "required": true
     },
     {
+      "slug": "storage-drawers",
       "projectID": 223852,
-      "fileID": 2952606,
+      "fileID": 4655859,
       "required": true
     },
     {
+      "slug": "ender-utilities",
       "projectID": 224320,
       "fileID": 2977010,
       "required": true
     },
     {
+      "slug": "ivtoolkit",
       "projectID": 224535,
       "fileID": 2443253,
       "required": true
     },
     {
+      "slug": "rftools",
       "projectID": 224641,
       "fileID": 2861573,
       "required": true
     },
     {
+      "slug": "wawla",
       "projectID": 224712,
       "fileID": 2916368,
       "required": true
     },
     {
+      "slug": "blood-magic",
       "projectID": 224791,
       "fileID": 2822288,
       "required": true
     },
     {
+      "slug": "additional-resources",
       "projectID": 225124,
       "fileID": 2447369,
       "required": true
     },
     {
+      "slug": "extra-utilities",
       "projectID": 225561,
       "fileID": 2678374,
       "required": true
     },
     {
+      "slug": "agricraft",
       "projectID": 225635,
       "fileID": 3317747,
       "required": true
     },
     {
+      "slug": "botania",
       "projectID": 225643,
       "fileID": 3330934,
       "required": true
     },
     {
+      "slug": "mmmmmmmmmmmm",
       "projectID": 225738,
       "fileID": 2503041,
       "required": true
     },
     {
+      "slug": "custom-main-menu",
       "projectID": 226406,
       "fileID": 2857869,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "projecte",
       "projectID": 226410,
       "fileID": 2702991,
       "required": true
     },
     {
+      "slug": "resource-loader",
       "projectID": 226447,
       "fileID": 2477566,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "baubles",
       "projectID": 227083,
       "fileID": 2518667,
       "required": true
     },
     {
+      "slug": "thermal-dynamics",
       "projectID": 227443,
       "fileID": 2920505,
       "required": true
     },
     {
+      "slug": "the-twilight-forest",
       "projectID": 227639,
       "fileID": 3051450,
       "required": true
     },
     {
+      "slug": "ruins-structure-spawning-system",
       "projectID": 227873,
       "fileID": 2721268,
       "required": true
     },
     {
+      "slug": "bibliocraft",
       "projectID": 228027,
       "fileID": 3647708,
       "required": true
     },
     {
+      "slug": "restricted-portals",
       "projectID": 228266,
       "fileID": 2519739,
       "required": true
     },
     {
+      "slug": "actually-additions",
       "projectID": 228404,
       "fileID": 3117927,
       "required": true
     },
     {
+      "slug": "bookshelf",
       "projectID": 228525,
       "fileID": 2836960,
       "required": true
     },
     {
+      "slug": "quantumflux",
       "projectID": 228609,
       "fileID": 2703415,
       "required": true
     },
     {
+      "slug": "project-red-core",
       "projectID": 228702,
       "fileID": 2745545,
       "required": true
     },
     {
+      "slug": "iron-chests",
       "projectID": 228756,
       "fileID": 2747935,
       "required": true
     },
     {
+      "slug": "openmodslib",
       "projectID": 228815,
       "fileID": 2699055,
       "required": true
     },
     {
+      "slug": "openblocks",
       "projectID": 228816,
       "fileID": 2699056,
       "required": true
     },
     {
+      "slug": "guide-api",
       "projectID": 228832,
       "fileID": 2645992,
       "required": true
     },
     {
+      "slug": "biometweaker",
       "projectID": 228895,
       "fileID": 3112142,
       "required": true
     },
     {
+      "slug": "mrtjpcore",
       "projectID": 229002,
       "fileID": 2735197,
       "required": true
     },
     {
+      "slug": "project-red-integration",
       "projectID": 229045,
       "fileID": 2745548,
       "required": true
     },
     {
+      "slug": "bnbgaminglib",
       "projectID": 229587,
       "fileID": 2698688,
       "required": true
     },
     {
+      "slug": "betterfps",
       "projectID": 229876,
       "fileID": 2483393,
       "required": true
     },
     {
+      "slug": "chameleon",
       "projectID": 230497,
       "fileID": 2450900,
       "required": true
     },
     {
+      "slug": "chisels-bits",
       "projectID": 231095,
       "fileID": 2720655,
       "required": true
     },
     {
+      "slug": "brandons-core",
       "projectID": 231382,
       "fileID": 3408276,
       "required": true
     },
     {
+      "slug": "endercore",
       "projectID": 231868,
-      "fileID": 2972849,
+      "fileID": 4671384,
       "required": true
     },
     {
+      "slug": "immersive-engineering",
       "projectID": 231951,
       "fileID": 2974106,
       "required": true
     },
     {
+      "slug": "default-options",
       "projectID": 232131,
       "fileID": 2624732,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "cyclops-core",
       "projectID": 232758,
       "fileID": 3159497,
       "required": true
     },
     {
+      "slug": "crafting-tweaks",
       "projectID": 233071,
       "fileID": 2562139,
       "required": true
     },
     {
+      "slug": "mcjtylib",
       "projectID": 233105,
       "fileID": 2745846,
       "required": true
     },
     {
+      "slug": "bad-mobs",
       "projectID": 233258,
       "fileID": 2810152,
       "required": true
     },
     {
+      "slug": "autorun",
       "projectID": 233577,
       "fileID": 2502492,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "abyssalcraft-integration",
       "projectID": 234851,
       "fileID": 3425537,
       "required": true
     },
     {
+      "slug": "notenoughids",
       "projectID": 235107,
       "fileID": 2695044,
       "required": true
     },
     {
+      "slug": "chisel",
       "projectID": 235279,
       "fileID": 2915375,
       "required": true
     },
     {
+      "slug": "triumph",
       "projectID": 235492,
       "fileID": 2825547,
       "required": true
     },
     {
+      "slug": "integrated-dynamics",
       "projectID": 236307,
       "fileID": 3159505,
       "required": true
     },
     {
+      "slug": "contenttweaker",
       "projectID": 237065,
       "fileID": 3331364,
       "required": true
     },
     {
+      "slug": "ftb-utilities-forge",
       "projectID": 237102,
       "fileID": 3157548,
       "required": true
     },
     {
+      "slug": "ftb-library-legacy-forge",
       "projectID": 237167,
       "fileID": 2985811,
       "required": true
     },
     {
+      "slug": "lightningcraft",
       "projectID": 237422,
       "fileID": 2872478,
       "required": true
     },
     {
+      "slug": "totemic",
       "projectID": 237541,
       "fileID": 4111310,
       "required": true
     },
     {
+      "slug": "reborncore",
       "projectID": 237903,
       "fileID": 3330308,
       "required": true
     },
     {
+      "slug": "thaumcraft-inventory-scanning",
       "projectID": 238003,
       "fileID": 2559089,
       "required": true
     },
     {
+      "slug": "jei",
       "projectID": 238222,
       "fileID": 3043174,
       "required": true
     },
     {
+      "slug": "neat",
       "projectID": 238372,
       "fileID": 2595310,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "better-builders-wands",
       "projectID": 238403,
       "fileID": 2691084,
       "required": true
     },
     {
+      "slug": "better-questing",
       "projectID": 238856,
       "fileID": 2950248,
       "required": true
     },
     {
+      "slug": "better-questing-standard-expansion",
       "projectID": 238857,
       "fileID": 2863771,
       "required": true
     },
     {
+      "slug": "crafttweaker",
       "projectID": 239197,
       "fileID": 4379998,
       "required": true
     },
     {
+      "slug": "mcmultipart",
       "projectID": 239431,
       "fileID": 2615930,
       "required": true
     },
     {
+      "slug": "just-enough-resources-jer",
       "projectID": 240630,
       "fileID": 2728585,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "rftools-dimensions",
       "projectID": 240950,
       "fileID": 2707390,
       "required": true
     },
     {
+      "slug": "astral-sorcery",
       "projectID": 241721,
       "fileID": 3044416,
       "required": true
     },
     {
+      "slug": "just-enough-calculation",
       "projectID": 242223,
       "fileID": 3524685,
       "required": true
     },
     {
+      "slug": "codechicken-lib-1-8",
       "projectID": 242818,
       "fileID": 2779848,
       "required": true
     },
     {
+      "slug": "quark",
       "projectID": 243121,
       "fileID": 2924091,
       "required": true
     },
     {
+      "slug": "more-overlays",
       "projectID": 243478,
       "fileID": 2745657,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "unidict",
       "projectID": 244258,
       "fileID": 3553627,
       "required": true
     },
     {
+      "slug": "wireless-crafting-terminal",
       "projectID": 244559,
       "fileID": 2830252,
       "required": true
     },
     {
+      "slug": "villagertradingban",
       "projectID": 244930,
       "fileID": 2571285,
       "required": true
     },
     {
+      "slug": "mputils",
       "projectID": 244940,
       "fileID": 2685162,
       "required": true
     },
     {
+      "slug": "ender-storage-1-8",
       "projectID": 245174,
       "fileID": 2755787,
       "required": true
     },
     {
+      "slug": "morph-o-tool",
       "projectID": 245287,
       "fileID": 2658176,
       "required": true
     },
     {
+      "slug": "valkyrielib",
       "projectID": 245480,
       "fileID": 2691542,
       "required": true
     },
     {
+      "slug": "tinkers-addons",
       "projectID": 245549,
       "fileID": 2476626,
       "required": true
     },
     {
+      "slug": "mputils-basic-tools",
       "projectID": 245889,
       "fileID": 2686355,
       "required": true
     },
     {
+      "slug": "roots",
       "projectID": 246183,
       "fileID": 3905074,
       "required": true
     },
     {
+      "slug": "mystical-agriculture",
       "projectID": 246640,
       "fileID": 2704562,
       "required": true
     },
     {
+      "slug": "solar-flux-reborn",
       "projectID": 246974,
       "fileID": 3050838,
       "required": true
     },
     {
+      "slug": "base",
       "projectID": 246996,
       "fileID": 3440963,
       "required": true
     },
     {
+      "slug": "common-capabilities",
       "projectID": 247007,
       "fileID": 3053017,
       "required": true
     },
     {
+      "slug": "hammer-lib",
       "projectID": 247401,
       "fileID": 3611193,
       "required": true
     },
     {
+      "slug": "zerocore",
       "projectID": 247921,
       "fileID": 3194743,
       "required": true
     },
     {
+      "slug": "shadowfacts-forgelin",
       "projectID": 248453,
       "fileID": 2785465,
       "required": true
     },
     {
+      "slug": "appleskin",
       "projectID": 248787,
       "fileID": 2987247,
       "required": true
     },
     {
+      "slug": "avaritiaddons",
       "projectID": 248873,
       "fileID": 3065384,
       "required": true
     },
     {
+      "slug": "extreme-reactors",
       "projectID": 250277,
       "fileID": 3194746,
       "required": true
     },
     {
+      "slug": "autoreglib",
       "projectID": 250363,
       "fileID": 2746011,
       "required": true
     },
     {
+      "slug": "controlling",
       "projectID": 250398,
       "fileID": 3025548,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "akashic-tome",
       "projectID": 250577,
       "fileID": 2648656,
       "required": true
     },
     {
+      "slug": "ore-excavation",
       "projectID": 250898,
       "fileID": 2897369,
       "required": true
     },
     {
+      "slug": "integrated-tunnels",
       "projectID": 251389,
       "fileID": 3159511,
       "required": true
     },
     {
+      "slug": "infinitylib",
       "projectID": 251396,
       "fileID": 3317119,
       "required": true
     },
     {
+      "slug": "simply-jetpacks-2",
       "projectID": 251792,
       "fileID": 3294422,
       "required": true
     },
     {
+      "slug": "spartan-shields",
       "projectID": 252239,
       "fileID": 3567495,
       "required": true
     },
     {
+      "slug": "natures-compass",
+      "projectID": 252848,
+      "fileID": 2893527,
+      "required": true
+    },
+    {
+      "slug": "bigger-crafting-tables",
       "projectID": 252907,
       "fileID": 3983598,
       "required": true
     },
     {
+      "slug": "wanionlib",
       "projectID": 253043,
       "fileID": 3597087,
       "required": true
     },
     {
+      "slug": "mtlib",
       "projectID": 253211,
       "fileID": 3308160,
       "required": true
     },
     {
+      "slug": "initial-inventory",
       "projectID": 253230,
       "fileID": 2465617,
       "required": true
     },
     {
+      "slug": "hwyla",
       "projectID": 253449,
       "fileID": 2568751,
       "required": true
     },
     {
+      "slug": "guidebook",
       "projectID": 253874,
       "fileID": 2989594,
       "required": true
     },
     {
+      "slug": "mob-grinding-utils",
       "projectID": 254241,
       "fileID": 2656683,
       "required": true
     },
     {
+      "slug": "torchmaster",
       "projectID": 254268,
       "fileID": 3529742,
       "required": true
     },
     {
+      "slug": "simple-void-world",
       "projectID": 254466,
       "fileID": 2498115,
       "required": true
     },
     {
+      "slug": "tesla-core-lib",
       "projectID": 254602,
       "fileID": 3438487,
       "required": true
     },
     {
+      "slug": "storage-drawers-extras",
       "projectID": 254879,
       "fileID": 2443623,
       "required": true
     },
     {
+      "slug": "p455w0rds-library",
       "projectID": 255232,
       "fileID": 2830265,
       "required": true
     },
     {
+      "slug": "loottweaker",
       "projectID": 255257,
       "fileID": 3507866,
       "required": true
     },
     {
+      "slug": "aether",
       "projectID": 255308,
       "fileID": 3280119,
       "required": true
     },
     {
+      "slug": "mystical-agradditions",
       "projectID": 256247,
       "fileID": 2704832,
       "required": true
     },
     {
+      "slug": "clumps",
       "projectID": 256717,
       "fileID": 2666198,
       "required": true
     },
     {
+      "slug": "cb-multipart",
       "projectID": 258426,
       "fileID": 2755790,
       "required": true
     },
     {
+      "slug": "wireless-redstone-cbe",
       "projectID": 260824,
       "fileID": 2755798,
       "required": true
     },
     {
+      "slug": "bad-wither-no-cookie-reloaded",
       "projectID": 261251,
       "fileID": 3045651,
       "required": true
     },
     {
+      "slug": "avaritia-1-10",
       "projectID": 261348,
       "fileID": 3143349,
       "required": true
     },
     {
+      "slug": "tomb-many-graves-2",
       "projectID": 262823,
       "fileID": 2619249,
       "required": true
     },
     {
+      "slug": "moar-tinkers",
       "projectID": 263624,
       "fileID": 2579934,
       "required": true
     },
     {
+      "slug": "industrial-foregoing",
       "projectID": 266515,
       "fileID": 2745321,
       "required": true
     },
     {
+      "slug": "tool-progression",
       "projectID": 266550,
       "fileID": 3270468,
       "required": true
     },
     {
+      "slug": "ctm",
       "projectID": 267602,
       "fileID": 2915363,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "traverse-reforged",
       "projectID": 267769,
       "fileID": 2613657,
       "required": true
     },
     {
+      "slug": "mekanism",
       "projectID": 268560,
       "fileID": 2835175,
       "required": true
     },
     {
+      "slug": "redstone-flux",
       "projectID": 270789,
       "fileID": 2920436,
       "required": true
     },
     {
+      "slug": "modular-machinery",
       "projectID": 270790,
       "fileID": 2713714,
       "required": true
     },
     {
+      "slug": "forgiving-void",
       "projectID": 271009,
       "fileID": 2863246,
       "required": true
     },
     {
+      "slug": "cofh-world",
       "projectID": 271384,
       "fileID": 2920434,
       "required": true
     },
     {
+      "slug": "toast-control",
       "projectID": 271740,
       "fileID": 2707353,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "cucumber",
       "projectID": 272335,
       "fileID": 2645867,
       "required": true
     },
     {
+      "slug": "dank-null",
       "projectID": 272514,
       "fileID": 2962052,
       "required": true
     },
     {
+      "slug": "better-advancements",
       "projectID": 272515,
       "fileID": 2685984,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "actually-baubles",
       "projectID": 273430,
       "fileID": 2459131,
       "required": true
     },
     {
+      "slug": "bnbgamingcore",
       "projectID": 274341,
       "fileID": 2991671,
       "required": true
     },
     {
+      "slug": "mysticallib",
       "projectID": 277064,
       "fileID": 3483816,
       "required": true
     },
     {
+      "slug": "foamfix-optimization-mod",
       "projectID": 278494,
       "fileID": 3973967,
       "required": true
     },
     {
+      "slug": "modular-diversity",
       "projectID": 280506,
       "fileID": 2738135,
       "required": true
     },
     {
+      "slug": "tipthescales",
       "projectID": 282313,
       "fileID": 2689835,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "tweakers-construct",
       "projectID": 282623,
       "fileID": 3280750,
       "required": true
     },
     {
+      "slug": "mystical-world",
       "projectID": 282940,
       "fileID": 3460961,
       "required": true
     },
     {
+      "slug": "baubley-heart-canisters",
       "projectID": 282947,
       "fileID": 2682612,
       "required": true
     },
     {
+      "slug": "bed-patch",
       "projectID": 282963,
       "fileID": 2532663,
       "required": true
     },
     {
+      "slug": "laggoggles",
       "projectID": 283525,
-      "fileID": 2947622,
+      "fileID": 4493884,
       "required": true
     },
     {
+      "slug": "placebo",
       "projectID": 283644,
-      "fileID": 2694382,
+      "fileID": 4629597,
       "required": true
     },
     {
+      "slug": "mjrlegendslib",
       "projectID": 284331,
       "fileID": 3344068,
       "required": true
     },
     {
+      "slug": "bewitchment-legacy",
       "projectID": 285439,
       "fileID": 3256343,
       "required": true
     },
     {
+      "slug": "thaumic-jei",
       "projectID": 285492,
       "fileID": 2705304,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "randompatches-forge",
       "projectID": 285612,
       "fileID": 3133651,
       "required": true
     },
     {
+      "slug": "galacticrafttweaker",
       "projectID": 286116,
       "fileID": 2647978,
       "required": true
     },
     {
+      "slug": "planet-progression",
       "projectID": 287275,
       "fileID": 4000252,
       "required": true
     },
     {
+      "slug": "mystagrad-cloche-compat",
       "projectID": 288959,
       "fileID": 2535057,
       "required": true
     },
     {
+      "slug": "basic-nether-ores",
       "projectID": 289647,
       "fileID": 2989956,
       "required": true
     },
     {
+      "slug": "tinkers-jei",
       "projectID": 291786,
       "fileID": 2701203,
       "required": true
     },
     {
+      "slug": "vanillafix",
       "projectID": 292785,
       "fileID": 2915154,
       "required": true
     },
     {
+      "slug": "just-enough-reactors",
       "projectID": 292952,
       "fileID": 2671784,
       "required": true
     },
     {
+      "slug": "underground-biomes",
       "projectID": 293268,
       "fileID": 3832678,
       "required": true
     },
     {
+      "slug": "alchemistry",
       "projectID": 293425,
       "fileID": 3186612,
       "required": true
     },
     {
+      "slug": "alchemylib",
       "projectID": 293426,
       "fileID": 2761706,
       "required": true
     },
     {
+      "slug": "building-gadgets",
       "projectID": 298187,
       "fileID": 3005950,
       "required": true
     },
     {
+      "slug": "mystical-agriculture-tiered-crystals",
       "projectID": 299045,
       "fileID": 2650681,
       "required": true
     },
     {
+      "slug": "simple-trophies",
       "projectID": 301310,
       "fileID": 2863053,
       "required": true
     },
     {
+      "slug": "jetif",
       "projectID": 303122,
       "fileID": 2919936,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "demagnetize",
       "projectID": 301356,
       "fileID": 3091010,
       "required": true
     },
     {
+      "slug": "wireless-fluid-terminal",
       "projectID": 304022,
       "fileID": 2830253,
       "required": true
     },
     {
+      "slug": "ae2wtlib",
       "projectID": 304024,
       "fileID": 2830114,
       "required": true
     },
     {
+      "slug": "ender-io-endergy",
       "projectID": 304346,
-      "fileID": 3328808,
+      "fileID": 4674241,
       "required": true
     },
     {
+      "slug": "project-intelligence",
       "projectID": 306028,
       "fileID": 2833640,
       "required": true
     },
     {
+      "slug": "featured-servers",
       "projectID": 306187,
       "fileID": 2634364,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "tips",
       "projectID": 306549,
       "fileID": 2906537,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "patchouli",
       "projectID": 306770,
       "fileID": 3162874,
       "required": true
     },
     {
+      "slug": "packagedauto",
       "projectID": 308380,
       "fileID": 3614585,
       "required": true
     },
     {
+      "slug": "too-many-efficiency-losses",
       "projectID": 308851,
       "fileID": 2742442,
       "required": true
     },
     {
+      "slug": "gas-conduits",
       "projectID": 309756,
-      "fileID": 3328809,
+      "fileID": 4674242,
       "required": true
     },
     {
+      "slug": "betternether",
       "projectID": 311377,
       "fileID": 2859893,
       "required": true
     },
     {
+      "slug": "simply-backpacks",
       "projectID": 311595,
       "fileID": 3028832,
       "required": true
     },
     {
+      "slug": "inworldcrafting",
       "projectID": 311938,
       "fileID": 2683267,
       "required": true
     },
     {
+      "slug": "endertweaker",
       "projectID": 312195,
       "fileID": 3474382,
       "required": true
     },
     {
+      "slug": "wasaila",
       "projectID": 313252,
       "fileID": 2668865,
       "required": true
     },
     {
+      "slug": "draconicadditions",
       "projectID": 314515,
       "fileID": 3195127,
       "required": true
     },
     {
+      "slug": "ftb-backups-forge",
       "projectID": 314904,
       "fileID": 2819669,
       "required": true
     },
     {
+      "slug": "knowledge-sharer",
       "projectID": 319037,
       "fileID": 2710957,
       "required": true
     },
     {
+      "slug": "thaumic-augmentation",
       "projectID": 319441,
       "fileID": 4081306,
       "required": true
     },
     {
+      "slug": "planefix",
       "projectID": 320254,
       "fileID": 2703755,
       "required": true
     },
     {
+      "slug": "ae2-network-visualiser",
       "projectID": 321720,
       "fileID": 2711427,
       "required": true
     },
     {
+      "slug": "modular-magic",
       "projectID": 324318,
       "fileID": 2737623,
       "required": true
     },
     {
+      "slug": "moretweaker",
       "projectID": 336569,
       "fileID": 3226142,
       "required": true
     },
     {
+      "slug": "requious-frakto",
       "projectID": 336748,
       "fileID": 3218640,
       "required": true
     },
     {
+      "slug": "yungs-better-caves",
       "projectID": 340583,
       "fileID": 3003242,
       "required": true
     },
     {
+      "slug": "dupefix-project",
       "projectID": 356349,
       "fileID": 3424173,
       "required": true
     },
     {
+      "slug": "spark",
       "projectID": 361579,
       "fileID": 3542217,
       "required": true
     },
     {
+      "slug": "official-divinerpg",
       "projectID": 363543,
       "fileID": 3081433,
       "required": true
     },
     {
+      "slug": "super-sound-muffler-revived",
       "projectID": 363856,
       "fileID": 2886150,
       "required": true
     },
     {
+      "slug": "framed-compacting-drawers",
       "projectID": 376351,
       "fileID": 3015136,
       "required": true
     },
     {
+      "slug": "plusticminusbad",
       "projectID": 376903,
       "fileID": 3319812,
       "required": true
     },
     {
+      "slug": "tickcentral",
       "projectID": 377201,
       "fileID": 3140670,
       "required": true
     },
     {
+      "slug": "integrated-nbt",
+      "projectID": 380998,
+      "fileID": 3132891,
+      "required": true
+    },
+    {
+      "slug": "extended-crafting-nomifactory-edition",
       "projectID": 398267,
-      "fileID": 3613140,
+      "fileID": 4592627,
       "required": true
     },
     {
-      "projectID": 400488,
-      "fileID": 3024769,
-      "required": true
-    },
-    {
+      "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 4464343,
+      "fileID": 4681827,
       "required": true
     },
     {
+      "slug": "extracpus",
       "projectID": 408089,
       "fileID": 3479639,
       "required": true
     },
     {
+      "slug": "tinkers-aether-dman-edition",
       "projectID": 419003,
       "fileID": 3215120,
       "required": true
     },
     {
+      "slug": "mixin-booter",
       "projectID": 419286,
       "fileID": 4090558,
       "required": true
     },
     {
+      "slug": "bqtweaker",
       "projectID": 423758,
       "fileID": 4448659,
       "required": true
     },
     {
+      "slug": "astral-level-tweak",
       "projectID": 463445,
       "fileID": 3569685,
       "required": true
     },
     {
+      "slug": "uber-conduit-probe",
+      "projectID": 473325,
+      "fileID": 3407210,
+      "required": true
+    },
+    {
+      "slug": "extra-cells-2-samlam140330s-fork",
       "projectID": 485225,
       "fileID": 3329212,
       "required": true
     },
     {
+      "slug": "oauth",
       "projectID": 513857,
       "fileID": 3739783,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
-      "projectID": 515565,
-      "fileID": 4382001,
-      "required": true
-    },
-    {
-      "projectID": 538092,
-      "fileID": 3817892,
-      "required": true
-    },
-    {
+      "slug": "ae2-extended-life",
       "projectID": 570458,
-      "fileID": 4328930,
+      "fileID": 4673868,
       "required": true
     },
     {
+      "slug": "divine-journey-2-addons",
       "projectID": 605280,
       "fileID": 4069565,
       "required": true
     },
     {
+      "slug": "jei-utilities",
       "projectID": 616190,
-      "fileID": 4318448,
-      "required": true
+      "fileID": 4630499,
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 4473327,
+      "fileID": 4643575,
       "required": true
     },
     {
+      "slug": "startup-timer",
       "projectID": 782070,
       "fileID": 4275356,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
+      "slug": "thaumic-energistics-extended-life",
       "projectID": 849094,
       "fileID": 4513158,
       "required": true
     },
     {
+      "slug": "configanytime",
+      "projectID": 870276,
+      "fileID": 4576653,
+      "required": true
+    },
+    {
+      "slug": "enhancedp2p",
+      "projectID": 876339,
+      "fileID": 4592511,
+      "required": true
+    },
+    {
+      "slug": "serializationisbad",
       "projectID": 896591,
-      "fileID": 4672511,
+      "fileID": 4685926,
       "required": true
     }
   ],

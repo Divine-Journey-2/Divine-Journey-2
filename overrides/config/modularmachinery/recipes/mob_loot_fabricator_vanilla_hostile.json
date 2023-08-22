@@ -84,14 +84,14 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "mysticalagriculture:chunk",
-            "amount": 64
+            "item": "minecraft:glass_bottle",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "output",
-            "item": "minecraft:glass_bottle",
-            "amount": 16
+            "item": "openblocks:trophy",
+            "amount": 1
         }
     ]
 }

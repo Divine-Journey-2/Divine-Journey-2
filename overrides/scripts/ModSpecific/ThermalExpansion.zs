@@ -70,7 +70,7 @@ recipes.addShaped(energetic_infuser, [[<thermalfoundation:material:321>,<thermal
 // Centrifugal Separator
 val centrifugal_separator = <thermalexpansion:machine:10>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 recipes.remove(centrifugal_separator);
-recipes.addShaped(centrifugal_separator, [[<thermalfoundation:material:321>,<thermalfoundation:material:321>,<thermalfoundation:material:321>],[<minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}),<thermalexpansion:frame>,<minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte})],[<thermalfoundation:material:256>,<thermalfoundation:material:513>,<thermalfoundation:material:256>]]);
+recipes.addShaped(centrifugal_separator, [[<thermalfoundation:material:321>,<thermalfoundation:material:321>,<thermalfoundation:material:321>],[<minecraft:compass>,<thermalexpansion:frame>,<minecraft:compass>],[<thermalfoundation:material:256>,<thermalfoundation:material:513>,<thermalfoundation:material:256>]]);
 
 // Sequential Fabricator
 val sequential_fabricator = <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
@@ -581,6 +581,8 @@ for s in <ore:sand>.items {
     mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>.withTag({"quark:clock_calculated": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
     mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:gold_ingot> * 4, s, <minecraft:clock>, 4000, <thermalfoundation:material:865>, 20);
     mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 0 as byte}), 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 0 as byte, "quark:compass_in_nether": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
+    mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>.withTag({"quark:compass_calculated": 1 as byte, "quark:compass_in_nether": 1 as byte}), 4000, <thermalfoundation:material:865>, 20);
     mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:iron_ingot> * 4, s, <minecraft:compass>, 4000, <thermalfoundation:material:865>, 20);
 }
 

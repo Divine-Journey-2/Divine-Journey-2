@@ -179,10 +179,6 @@ mods.thermalexpansion.Pulverizer.addRecipe(<actuallyadditions:item_misc:5> * 4, 
 mods.botania.ManaInfusion.addAlchemy(<actuallyadditions:item_misc:5> * 4, <actuallyadditions:block_misc:2>, 5000);
 mods.abyssalcraft.Transmutator.addTransmutation(<actuallyadditions:block_misc:2>, <actuallyadditions:item_misc:5> * 4, 0);
 
-// MysticalWorld Quartz in the SAG Mill
-mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:quartz_ore>, "MULTIPLY_OUTPUT");
-mods.enderio.SagMill.addRecipe([<minecraft:quartz> * 2, <appliedenergistics2:material:3>], [1.0, 0.1], <mysticalworld:granite_quartz_ore>, "MULTIPLY_OUTPUT");
-
 // Sand -> Gravel in the Pulverizer
 for s in <ore:sand>.items {
     mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:gravel>, s, 2000);
@@ -598,10 +594,6 @@ addMaterialToDustCrushingWOPetrotheum(<contenttweaker:rainbow_tablet>, <thaumcra
 
 // Quartz Sliver
 addMaterialToDustCrushingWOPetrotheum(<botania:quartz:6>, <thaumcraft:nugget:9> * 16);
-
-// Tier 1 Mob Chunk
-Grinder.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 4);
-mods.thermalexpansion.Pulverizer.addRecipe(<mysticalagriculture:chunk>, <openblocks:trophy:*>, 2000);
 
 // Bewitchment Silver Ore removal
 <ore:oreSilver>.remove(<bewitchment:silver_ore>);
