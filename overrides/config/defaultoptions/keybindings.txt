@@ -125,7 +125,7 @@ key_key.jei.nextPage:209:NONE
 key_key.jei.bookmark:30:NONE
 key_key.jei.toggleBookmarkOverlay:0:NONE
 key_key.cofh.multimode:47:NONE
-key_key.draconicevolution.placeItem:25:NONE
+key_key.draconicevolution.placeItem:11:NONE
 key_key.draconicevolution.toolConfig:71:NONE
 key_key.draconicevolution.toolProfileChange:0:NONE
 key_key.draconicevolution.armorProfileChange:0:NONE
@@ -226,7 +226,7 @@ key_keybind.simplyjetpacks.charger:0:NONE
 key_keybind.simplyjetpacks.hover:35:NONE
 key_keybind.simplyjetpacks.emergency_hover:0:NONE
 key_key.plustic_release_entity.desc:0:NONE
-key_key.plustic_toggle_gui.desc:23:NONE
+key_key.plustic_toggle_gui.desc:0:NONE
 key_key.plustic_set_portal.desc:0:NONE
 key_key.plustic_brown_magic.desc:0:NONE
 key_key.plustic_toggle_tool.desc:0:NONE
