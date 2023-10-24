@@ -99,6 +99,7 @@ furnace.remove(<erebus:materials:46>);
 furnace.remove(<galacticraftcore:basic_item:4>);
 furnace.remove(<abyssalcraft:tiningot>);
 furnace.remove(<mekanism:ingot:6>);
+furnace.remove(<bno:ingot_tin>);
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<abyssalcraft:tiningot>);
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystalcluster2>, <thermalfoundation:material:129>, 0.2);
 recipes.remove(<mekanism:ingot:6>);
@@ -349,6 +350,8 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
+mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:4>);
+furnace.remove(<immersiveengineering:metal:4>);
 
 // Platinum Ingot
 <ore:ingotPlatinum>.remove(<alchemistry:ingot:78>);
