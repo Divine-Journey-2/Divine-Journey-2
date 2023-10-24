@@ -107,7 +107,7 @@ recipes.removeShapeless(<thermalfoundation:material:193> * 9, [<erebus:materials
 recipes.removeByRecipeName("unidict:nuggettin_x9_size.1");
 recipes.removeShaped(<thermalfoundation:storage:1>, [[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>]]);
 <ore:blockTin>.removeItems([<galacticraftcore:basic_block_core:10>,<bno:block_tin>,<mekanism:basicblock:13>]);
-furnace.addRecipe(<thermalexpansion:material:129>*2, <bno:ore_nethertin>);
+furnace.addRecipe(<thermalfoundation:material:129>*2, <bno:ore_nethertin>);
 
 // Silicon
 <ore:itemSilicon>.removeItems([<enderio:item_material:5>,<galacticraftcore:basic_item:2>]);
