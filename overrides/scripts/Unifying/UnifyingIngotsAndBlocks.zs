@@ -94,12 +94,12 @@ val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism
 for tin in wrongTinIngots {
     mods.abyssalcraft.Materializer.removeMaterialization(tin);
     mods.appliedenergistics2.Grinder.removeRecipe(tin);
+    furnace.remove(tin);
 }
-furnace.remove(<erebus:materials:46>);
-furnace.remove(<galacticraftcore:basic_item:4>);
-furnace.remove(<abyssalcraft:tiningot>);
-furnace.remove(<mekanism:ingot:6>);
-furnace.remove(<bno:ingot_tin>);
+// furnace.remove(<erebus:materials:46>);
+// furnace.remove(<galacticraftcore:basic_item:4>);
+// furnace.remove(<abyssalcraft:tiningot>);
+// furnace.remove(<mekanism:ingot:6>);
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<abyssalcraft:tiningot>);
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystalcluster2>, <thermalfoundation:material:129>, 0.2);
 recipes.remove(<mekanism:ingot:6>);
@@ -350,7 +350,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
-mods.immersiveengineering.AlloySmelter.removeRecipe(<immersiveengineering:metal:4>);
+mods.immersiveengineering.ArcFurnace.recipes.replaceAllOccurences(<immersiveengineering:metal:4>, <thermalfoundation:material:133>);
 furnace.remove(<immersiveengineering:metal:4>);
 
 // Platinum Ingot
