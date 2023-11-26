@@ -530,6 +530,13 @@ dj2.engineers_manual.desc1=§ooverflown, use JEI to look those up!
 
 # Mystical Agriculture tooltips
 dj2.dragon_egg_seeds.desc0=Tier: §r§c5
+dj2.any_crystal_durability.desc0=Uses Left: §c%s
+dj2.inferium_crystal.desc0=§eInferium§r -> §aPrudentium§r
+dj2.prudentium_crystal.desc0=§aPrudentium§r -> §6Intermedium§r
+dj2.intermedium_crystal.desc0=§6Intermedium§r -> §bSuperium§r
+dj2.superium_crystal.desc0=§bSuperium§r -> §cSupremium§r
+dj2.supremium_crystal.desc0=§cSupremium§r -> §5Insanium§r
+dj2.master_crystal.desc0=§e§kE§a§kS§6§kS§b§kE§c§kN§5§kC§f§kE§r -> §e§kE§a§kS§6§kS§b§kE§c§kN§5§kC§f§kE§r
 
 # Quantum Flux tooltips
 dj2.ender_crystal.desc0=Dropped from Endermen.

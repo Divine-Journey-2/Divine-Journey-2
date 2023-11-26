@@ -1,0 +1,70 @@
+{
+    "machine": "auto_infusion_matrix",
+    "registryName": "auto_infusion_matrix_contenttweaker_intermediumcrystal",
+    "recipeTime": 78,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:prudentiumcrystal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:crafting@2",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "astralsorcery:itemcraftingcomponent@2",
+            "amount": 4
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "vitreus",
+            "amount": 100
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alkimia",
+            "amount": 70
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "herba",
+            "amount": 70
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "praecantatio",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "instrumentum",
+            "amount": 50
+        },
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "ignis",
+            "amount": 50
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:intermediumcrystal"
+        }
+    ]
+}

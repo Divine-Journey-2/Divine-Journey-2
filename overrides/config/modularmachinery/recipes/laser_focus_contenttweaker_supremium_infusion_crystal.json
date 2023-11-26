@@ -1,0 +1,39 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_mysticalagriculturetieredcrystals_supremium_infusion_crystal",
+    "recipeTime": 400,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:superiumcrystal"
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagriculture:crafting@4",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "alchemistry:ingot@45",
+            "amount": 8
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 128000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 102400000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:supremiumcrystal"
+        }
+    ]
+}
