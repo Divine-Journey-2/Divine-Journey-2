@@ -2,6 +2,7 @@
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.ITooltipFunction;
+import crafttweaker.recipes.IRecipeFunction;
 import mods.botania.RuneAltar;
 import mods.thaumcraft.Infusion;
 import mods.astralsorcery.Altar;
@@ -43,7 +44,7 @@ val MASTER as IItemStack[] = [<mysticalagradditions:insanium>, <mysticalagraddit
 // Add essence upgrade recipes
 function addEssenceUpgradeRecipes(crystal as IItemStack, current as IItemStack[], next as IItemStack[]) {
     recipes.addShaped(next[0], [[null,current[0],null],[current[0],crystal.anyDamage().transformDamage(),current[0]],[null,current[0],null]]);
-    recipes.addShaped(next[1], [[null,current[1],null],[current[1],crystal.anyDamage().transformDamage(9),current[1]],[null,current[1],null]]);
+    recipes.addShaped(next[1], [[null,current[1],null],[current[1],crystal.anyDamage().marked("target").transformDamage(9),current[1]],[null,current[1],null]], function(out, ins, cInfo) { return (ins.target.maxDamage - ins.target.damage < 8) ? null : out;} as IRecipeFunction);
 }
 
 addEssenceUpgradeRecipes(<contenttweaker:inferiumcrystal>, INFERIUM, PRUDENTIUM);
