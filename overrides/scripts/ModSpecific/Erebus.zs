@@ -89,14 +89,14 @@ recipes.addShaped(<erebus:umber_furnace>, [[<erebus:umberstone:1>,<minecraft:buc
 <erebus:materials:6>.addTooltip(game.localize("dj2.fly_wing.desc1"));
 
 // Dragonfly Wing Tooltip
-<erebus:materials:9>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
-<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc0"));
-<erebus:materials:9>.addTooltip(game.localize("dj2.dragonfly_wing.desc1"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.dragonfly_wing.desc0"));
+<erebus:materials:24>.addTooltip(game.localize("dj2.dragonfly_wing.desc1"));
 
 // Elastic Fibre Tooltip
-<erebus:materials:24>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
-<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc0"));
-<erebus:materials:24>.addTooltip(game.localize("dj2.elastic_fibre.desc1"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.erebus_drops.desc0"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.elastic_fibre.desc0"));
+<erebus:materials:9>.addTooltip(game.localize("dj2.elastic_fibre.desc1"));
 
 // Cabbage Seeds Tooltip
 <erebus:cabbage_seeds>.addTooltip(game.localize("dj2.cabbage_seeds.desc0"));
