@@ -1,5 +1,11 @@
 
-# Images and descriptions used for the [Curseforge Screenshots page](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/screenshots)
+# Preview Images
+
+These images and descriptions are used for the [Curseforge Screenshots page](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/screenshots)
+
+Note that many of these images were created when the pack was released, and may not be entirely accurate to the current status of the pack.
+
+![Preview Image](images/preview-image.jpg)
 
 The Liquicrafter multiblock is used for a number of recipes, for example: Galacticraft Oil is refined from a combination of Actually Additions and Thermal Expansion Oil.
 
