@@ -4,7 +4,7 @@
         "type": "random",
 	"layer": "SOLID",
 	"extra": {
-	  "size": 2
+	  "size": 3
 	}
     }
 }
