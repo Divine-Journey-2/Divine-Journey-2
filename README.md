@@ -1,4 +1,4 @@
-<img src="readme/divine-journey-2.png" align="left" width="160px"/>
+<img src="readme/images/divine-journey-2.png" align="left" width="160px"/>
 
 # Divine Journey 2
 
@@ -42,4 +42,4 @@ View [Server Info](readme/SERVER_INFO.md) for information on what dimensions to 
 
 Note that this image was created when the pack was launched, and may not be entirely accurate to the current status of the pack.
 
-![Preview Image](readme/preview-image.jpg)
+![Preview Image](readme/images/preview-image.jpg)
