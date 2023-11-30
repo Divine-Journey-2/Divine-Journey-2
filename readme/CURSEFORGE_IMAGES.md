@@ -82,10 +82,9 @@ Some 7x7 recipes for LightningCraft and Extreme Reactors items
 ![Preview Image](images/7x7_recipes.png)
 
 It points you to a secure room underneither a mysterious tree...
+(Thank you to Ringu for the structure!)
 
 ![Preview Image](images/skythern_dungeon.png)
-(Thank you to Ringu for the structure!
-
 
 Who doesn't LOVE nested crafting?!
 
