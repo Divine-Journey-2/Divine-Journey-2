@@ -9,7 +9,7 @@ By Atricos and a number of others - see the [Credits](readme/CREDITS.md).
 <br>
 <br>
 
-<span style="text-align: center;">
+<span align="center">
 
 [![Total CurseForge Downloads](https://cf.way2muchnoise.eu/full_370666_Downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files)
 
