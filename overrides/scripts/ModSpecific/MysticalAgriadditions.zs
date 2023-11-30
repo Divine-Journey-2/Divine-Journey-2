@@ -2,10 +2,14 @@
 print("STARTING MysticalAgriadditions.zs");
 
 // Dragon Egg Seeds
+<ore:seedsTier6>.remove(<mysticalagradditions:dragon_egg_seeds>);
+<ore:seedsTier5>.add(<mysticalagradditions:dragon_egg_seeds>);
 recipes.remove(<mysticalagradditions:dragon_egg_seeds>);
 // recipes in config/modularmachinery/recipes/laser_focus_mysticalagriculture_dragon_egg_seeds.json
 <mysticalagradditions:dragon_egg_seeds>.removeTooltip("5");
 <mysticalagradditions:dragon_egg_seeds>.addTooltip(game.localize("dj2.dragon_egg_seeds.desc0"));
+<ore:essenceTier6>.remove(<mysticalagradditions:dragon_egg_essence>);
+<ore:essenceTier5>.add(<mysticalagradditions:dragon_egg_essence>);
 
 // Dragon Egg Crux
 recipes.remove(<mysticalagradditions:special:1>);

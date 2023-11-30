@@ -72,7 +72,7 @@ addSpawnerJEI(<entity:minecraft:mule>, [<minecraft:wheat>, <minecraft:coal:*>]);
 addSpawnerJEI(<entity:minecraft:husk>, [<minecraft:cactus>, <minecraft:deadbush>, <minecraft:sandstone>]);
 addSpawnerJEI(<entity:minecraft:bat>, [<ore:treeSapling>, <minecraft:web>]);
 addSpawnerJEI(<entity:mysticalworld:entity_fox>, [<roots:bark_spruce>, <minecraft:redstone>]);
-addSpawnerJEI(<entity:mysticalworld:entity_frog>, [<ore:tallgrass>, <minecraft:clay>]);
+addSpawnerJEI(<entity:mysticalworld:entity_frog>, [<ore:tallgrass>, <minecraft:clay_ball>]);
 addSpawnerJEI(<entity:mysticalworld:entity_beetle>, [<ore:tallgrass>, <ore:allFlowers>]);
 addSpawnerJEI(<entity:mysticalworld:entity_sprout>, [<roots:bark_birch>, <ore:listAllveggie>]);
 addSpawnerJEI(<entity:mysticalworld:entity_owl>, [<ore:treeSapling>, <ore:treeLeaves>]);

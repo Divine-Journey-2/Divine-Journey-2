@@ -31,6 +31,7 @@ dj2.activate_block_jei.barrier.desc0=§r§d对空气右击
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§d配置方块
+dj2.configure_jei.stairs.desc=旋转方块
 dj2.configure_jei.atomic_reconstructor.desc=§r§b切换激活和脉冲模式。
 dj2.configure_jei.starlight.desc=§r§b任意能传输或接收星能的东西。
 dj2.configure_jei.enderio_conduit.desc=§r§b任意末影接口导管。
@@ -87,7 +88,7 @@ dj2.book_of_logic.name=§l逻辑之书
 dj2.book_of_logic.desc0=§lSteve§r、§lAlex§r和 §lHerobine§r的§c§l年龄§r、§c§l朋友数量§r以及§c§l身高（厘米）§r各是多少？\n\n依据以下9条陈述推出答案：
 dj2.book_of_logic.desc1=1)Herobrine只有一个朋友，Notch。\n\n2)Steve比Alex大1岁。\n\n3)Steve和Herobrine一样高。\n\n4)20年前，Herobrine的年龄是Steve和Alex年龄之和的2倍。
 dj2.book_of_logic.desc2=5)Steve每年会交到61个朋友。太牛了！\n\n6)Alex和Steve的朋友数量之差正好是Herobrine的身高。\n\n7)Alex生下来就有66厘米高。在那之后她每年都会长高4厘米。
-dj2.book_of_logic.desc3=8)如果从现在开始， Herobrine的朋友数量每年都会翻倍，那么11年后，他的朋友将比Steve少331个。（记住，Steve每年也会交到新朋友！）\n\n9)Alex有114个朋友，比 Steve和她自己身高之和的5倍还要多。
+dj2.book_of_logic.desc3=8)如果从现在开始， Herobrine的朋友数量每年都会翻倍，那么11年后，他的朋友将比Steve少331个。（记住，Steve每年也会交到新朋友！）\n\n9)Alex的朋友比 Steve和她自己身高之和的5倍还要多114个。
 dj2.book_of_logic.desc4=使用任务书提供的修饰符进行简单的无序合成，如果你觉得找到了正确答案，在工作台中将Steve、Alex和 Herobrine与思维本髓进行合成！\n\n祝你好运！
 dj2.book_of_logic.desc5= 
 dj2.book_of_logic.desc6= 
@@ -102,6 +103,7 @@ dj2.crown_of_skies.desc0=§c§l对天境传送门方块右击以获得进入权�
 dj2.crown_of_skies.desc1=§c§l警告：此操作将消耗该物品！
 dj2.crown_of_skies.desc2=§r§l可合成复制以供队伍中其他成员使用！
 dj2.crown_of_skies.desc3=§r合成时不消耗天空之冠。
+dj2.crown_of_skies.robit.desc0=由机器人代劳制作。
 dj2.golder_molder_folder.desc0=§4§o起儿来儿就儿是儿这儿一儿出儿！
 dj2.golder_molder_folder.desc1=§r§o可使用 16 次！
 dj2.golder_molder_folder.desc2=§c常规合成不会消耗该物品。
@@ -247,7 +249,7 @@ dj2.call_of_the_underworld.desc0=§4由 Immortus 掉落。
 dj2.introduction.paper.name=§r§l阅读提示文本获取按键绑定信息！
 dj2.introduction.paper.desc0=§r§5- 按 §6K§r§5 键打开任务书
 dj2.introduction.paper.desc1=§r§5- 按 §6`§r§5 键使用连锁挖掘
-dj2.introduction.paper.desc2=§r§5- 按 §6P§r§5 键将物品放置到世界
+dj2.introduction.paper.desc2=§r§5- 按 §6.§r§5 键将物品放置到世界
 dj2.introduction.book.name=欢迎
 dj2.introduction.book.desc0=§4§n§l欢迎来到神圣之旅2!§r\n\n§8§0你是一位带着目的降临世间的堕天使：寻找生命的意义！\n\n幸运的是，它早已在你的物品栏中，被锁在一个手袋里……\n\n所以要做的事不多，……对吧？
 dj2.introduction.book.desc1=等等，你似乎需要一把钥匙来打开这个袋子：一把通至无尽之钥！\n\n这就让事情变得有点复杂了……\n\n实际上，要复杂得多！\n\n复杂到你必须打通整个专家包，才能知道这袋子里有什么东西！
@@ -319,9 +321,6 @@ dj2.dungeon_tokens.desc0=§f由位于§9秘界地牢§r§f的秘界寄生虫和
 dj2.dungeon_tokens.desc1=§f地牢监管者掉落。通过在对应祭坛上放置
 dj2.dungeon_tokens.desc2=§f巫师之书来召唤它们。
 dj2.wizards_book.desc0=§f从位于r§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
-
-# AE2 Wireless Terminal tooltips
-dj2.infinity_booster_card.desc0=§f只能通过合成获得，使用不消耗。
 
 # Mekanism tooltips
 dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前 3 行的物品！
@@ -747,5 +746,7 @@ dj2.jei.hand_framing_tool.desc0=手动镶框！
 dj2.jei.hand_framing_tool.desc1=手持式镶框工具能为放置在世界上的抽屉镶框。
 dj2.jei.hand_framing_tool.desc2=要执行此操作，工具本身需要在合成网格里进行镶框。详情请在 JEI 中查看该物品参与的合成表。
 dj2.jei.hand_framing_tool.desc3=工具镶框后，对任意已放置的抽屉右击即可为其镶框。
-ritual.moretweaker.moretweakerrecipe0=坚韧净化仪式
-ritual.moretweaker.moretweakerrecipe1=周期仪式
+
+# Deprecated
+dj2.deprecated.deprecated.desc=§c已弃用
+dj2.deprecated.convert.desc=§c通过无序合成来转换为替代物品。

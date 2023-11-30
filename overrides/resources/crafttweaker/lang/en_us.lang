@@ -31,6 +31,7 @@ dj2.activate_block_jei.barrier.desc0=§r§dRight Click into the air
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§dConfigure Block
+dj2.configure_jei.stairs.desc=Rotate Block
 dj2.configure_jei.atomic_reconstructor.desc=§r§bToggles between Deactivation and Pulse mode.
 dj2.configure_jei.starlight.desc=§r§bAnything that can transfer or receive starlight.
 dj2.configure_jei.enderio_conduit.desc=§r§bAny EnderIO Conduit.
@@ -102,6 +103,7 @@ dj2.crown_of_skies.desc0=§c§lRight click on an Aether Portal block to gain acc
 dj2.crown_of_skies.desc1=§c§lWarning: This CONSUMES the item.
 dj2.crown_of_skies.desc2=§r§lCan be duplicated so other team members can also use it!
 dj2.crown_of_skies.desc3=§rThe duplication recipe doesn't use up the input Crown.
+dj2.crown_of_skies.robit.desc0=Made with Robit Labor.
 dj2.golder_molder_folder.desc0=§4§oAn older boulder told 'er: Hold 'er shoulder!
 dj2.golder_molder_folder.desc1=§r§oHas 16 uses!
 dj2.golder_molder_folder.desc2=§cDoes not get consumed by regular crafting.
@@ -247,7 +249,7 @@ dj2.call_of_the_underworld.desc0=§4Dropped by Immortus.
 dj2.introduction.paper.name=§r§lRead the tooltip for important keybind information!
 dj2.introduction.paper.desc0=§r§5- Press §6K§r§5 to open your quests
 dj2.introduction.paper.desc1=§r§5- Press §6`§r§5 while breaking blocks to veinmine
-dj2.introduction.paper.desc2=§r§5- Press §6P§r§5 to place an item in-world
+dj2.introduction.paper.desc2=§r§5- Press §6.§r§5 to place an item in-world
 dj2.introduction.book.name=Welcome
 dj2.introduction.book.desc0=§4§n§lWelcome to Divine Journey 2!§r\n\n§8§0You are a Fallen Angel that has one purpose in this world: Find the Meaning of Life! Fortunately however, it's already in your inventory, locked up in a convenient bag... So there isn't too much to do, huh...?
 dj2.introduction.book.desc1=Hold on, you seem to need a key to open the bag, a Key to Infinity! Well that makes things a bit more complicated... Actually, WAY more complicated! So much so, that you'll have to beat an entire expert mode pack to find out what your bag contains!
@@ -319,9 +321,6 @@ dj2.dungeon_tokens.desc0=§fDropped by Parasecta and Dramix in the §r§9Dungeon
 dj2.dungeon_tokens.desc1=§9of Arcana§r§f. They're summoned at their respective
 dj2.dungeon_tokens.desc2=§fAltars by placing a Wizards Book on top.
 dj2.wizards_book.desc0=§fBought from §r§4Lord Vatticus§r§f in the §r§9Dungeon of Arcana§r§f.
-
-# AE2 Wireless Terminal tooltips
-dj2.infinity_booster_card.desc0=§fCan only be crafted, is not consumed by operation.
 
 # Mekanism tooltips
 dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the input Chest will remain in Robit's inventory!
@@ -747,3 +746,7 @@ dj2.jei.hand_framing_tool.desc0=Frame your tools by hand!
 dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame drawers already placed in the world.
 dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
 dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking any drawers in-world will frame them.
+
+# Deprecated
+dj2.deprecated.deprecated.desc=§cDeprecated
+dj2.deprecated.convert.desc=§cConvert into the replacement item via shapeless craft.

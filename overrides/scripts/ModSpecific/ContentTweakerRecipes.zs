@@ -212,7 +212,8 @@ recipes.addShapedMirrored(<contenttweaker:power_egg>, [[<erebus:materials:27>,<e
 
 // Crown of Skies
 recipes.addShaped(<contenttweaker:crown_of_skies>, [[null,<ore:woolWhite>,null],[<contenttweaker:hardened_amber_moosh>,<contenttweaker:power_egg>,<contenttweaker:hardened_amber_moosh>],[<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>,<contenttweaker:mixed_erebusian_stone>]]);
-recipes.addShaped(<contenttweaker:crown_of_skies>, [[<contenttweaker:hardened_amber_moosh>,<contenttweaker:crown_of_skies>.reuse(),<contenttweaker:hardened_amber_moosh>]]);
+recipes.addShaped(<contenttweaker:crown_of_skies>, [[<erebus:materials:38>,<contenttweaker:crown_of_skies>.reuse(),<erebus:materials:38>]]);
+recipes.addShaped(<contenttweaker:crown_of_skies>.withTag({display: {Lore: [game.localize("dj2.crown_of_skies.robit.desc0")]}}), [[<ore:bricksStone>,<ore:treeLeaves>,<ore:bricksStone>],[<erebus:portal_activator>,<mekanism:robit>,<erebus:portal_activator>],[<ore:bricksStone>,<erebus:gaean_keystone>,<ore:bricksStone>]]);
 <contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc0"));
 <contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc1"));
 <contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc2"));
@@ -1184,6 +1185,7 @@ recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pe
 
 // Shattered Mystical Iron Crystal
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal>, <contenttweaker:mystical_iron_ingot>);
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 
 // Growth Infusion Liquid
@@ -1449,6 +1451,7 @@ recipes.addShaped(<contenttweaker:compressed_perfectium_block>, [[<contenttweake
 // Solar Seeds
 // recipe in config/modularmachinery/recipes/weak_fusion_plant_contenttweaker_solar_seeds.json
 <contenttweaker:solar_seeds>.addTooltip(game.localize("dj2.solar_seeds.desc0"));
+<ore:seedsTier6>.add(<contenttweaker:solar_seeds>);
 
 // Apalachia Door Key from Fragments
 recipes.addShaped(<contenttweaker:apalachia_door_key>, [[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,null,<contenttweaker:apalachia_key_fragment>],[<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>,<contenttweaker:apalachia_key_fragment>]]);

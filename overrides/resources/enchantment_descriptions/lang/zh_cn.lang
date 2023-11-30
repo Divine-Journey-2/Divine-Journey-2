@@ -1,15 +1,28 @@
 enchantment.bibliocraft.bibliocraft.readingench.desc=使玩家可以读取部分 Bibliocraft 模组方块的信息，例如拓印机。
 enchantment.bibliocraft.bibliocraft.deathcompassench.desc=携带附有此魔咒的地图册时，若玩家死亡，则重生时会获得一个指向死亡地点的永恒罗盘。
+
 enchantment.divinerpg.rive.desc=采掘时破坏额外方块。
 enchantment.divinerpg.aftershock.desc=每一级有 5% 概率使近战武器造成的伤害翻倍。
+
+enchantment.enderio.witherweapon.desc=对命中的实体施加凋零效果。
+enchantment.enderio.shimmer.desc=使物品拥有附魔闪光。
+enchantment.enderio.witherarrow.desc=对命中的实体施加凋零效果。
+enchantment.enderio.repellent.desc=有概率将攻击玩家的实体传送走，根据魔咒等级提高传送概率和距离。
+enchantment.endercore.xpboost.desc=从采掘方块和击杀生物中汲取更多经验。
+enchantment.endercore.autosmelt.desc=自动烧炼采掘的方块或生物掉落物，就像熔炉一样。
+enchantment.endercore.soulbound.desc=使物品免于死亡掉落。
+
 enchantment.extrautils2.xu.kaboomerang.desc=回旋镖接触方块或生物时，将造成一次爆炸。
 enchantment.extrautils2.xu.zoomerang.desc=每一级使回旋镖的发射速度提高 30%。
 enchantment.extrautils2.xu.burnerang.desc=回旋镖攻击对象时，对其造成 5 秒的点燃效果。
 enchantment.extrautils2.xu.bladerang.desc=每一级为回旋镖增加 4 点伤害。
 enchantment.extrautils2.xu.boomereaperang.desc=回旋镖将摧毁其路径上的所有植物和花朵，并收集掉落物。
+
 enchantment.lightningcraft.hand_of_thor.desc=武器有概率雷击敌人。
 enchantment.lightningcraft.elec_aura.desc=向攻击者发射电击。
+
 enchantment.openblocks.explosive.desc=装备附有震荡不定魔咒的盔甲时，会在特定事件发生时触发爆炸。
 enchantment.openblocks.last_stand.desc=装备附有屹立不倒魔咒的盔甲时，承受致死攻击不会死亡，而是以消耗经验为代价保留 1 点生命值，消耗量取决于伤害量和全身该魔咒的等级总和。
 enchantment.openblocks.flim_flam.desc=装备时，对周围玩家施加若干负面状态效果。
+
 enchantment.simplyjetpacks.fuel_efficiency.desc=减少飞行或受击时喷气背包和通量背包的能量消耗。

@@ -94,11 +94,8 @@ val wrongTinIngots = [<alchemistry:ingot:50>, <abyssalcraft:tiningot>, <mekanism
 for tin in wrongTinIngots {
     mods.abyssalcraft.Materializer.removeMaterialization(tin);
     mods.appliedenergistics2.Grinder.removeRecipe(tin);
+    furnace.remove(tin);
 }
-furnace.remove(<erebus:materials:46>);
-furnace.remove(<galacticraftcore:basic_item:4>);
-furnace.remove(<abyssalcraft:tiningot>);
-furnace.remove(<mekanism:ingot:6>);
 mods.abyssalcraft.Transmutator.removeTransmutationOutput(<abyssalcraft:tiningot>);
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystalcluster2>, <thermalfoundation:material:129>, 0.2);
 recipes.remove(<mekanism:ingot:6>);
@@ -110,6 +107,7 @@ recipes.removeShapeless(<thermalfoundation:material:193> * 9, [<erebus:materials
 recipes.removeByRecipeName("unidict:nuggettin_x9_size.1");
 recipes.removeShaped(<thermalfoundation:storage:1>, [[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>],[<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>,<galacticraftcore:basic_item:4>]]);
 <ore:blockTin>.removeItems([<galacticraftcore:basic_block_core:10>,<bno:block_tin>,<mekanism:basicblock:13>]);
+furnace.addRecipe(<thermalfoundation:material:129>, <bno:ore_nethertin>);
 
 // Silicon
 <ore:itemSilicon>.removeItems([<enderio:item_material:5>,<galacticraftcore:basic_item:2>]);
@@ -188,10 +186,8 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:material:160
 mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
 mods.immersiveengineering.BlastFurnace.addRecipe(<thermalfoundation:storage_alloy>, <minecraft:iron_block>, 10800, <immersiveengineering:material:7> * 9);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:8>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <minecraft:iron_ingot>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
-mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:iron_ingot>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:iron_ingot> * 2, <ore:oreIron>, <immersiveengineering:material:7>, 200, 512, null, "Ores");
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <thermalfoundation:material>, null, 100, 512, [<immersiveengineering:material:17>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <immersiveengineering:material:17>, null, 100, 512, [<minecraft:iron_ingot>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:160> * 2, <immersiveengineering:material:17>, null, 100, 512, [<thermalfoundation:material>], "Alloying");
 furnace.remove(<immersiveengineering:metal:8>);
 recipes.remove(<immersiveengineering:metal:28>);
 
@@ -351,6 +347,9 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 <ore:ingotNickel>.remove(<alchemistry:ingot:28>);
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:4>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <ore:oreNickel>, <immersiveengineering:material:7>, 10, 512);
+furnace.remove(<immersiveengineering:metal:4>);
 
 // Platinum Ingot
 <ore:ingotPlatinum>.remove(<alchemistry:ingot:78>);
