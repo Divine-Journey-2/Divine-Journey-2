@@ -119,9 +119,12 @@ mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalf
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:67>);
 
+// Enderium Base
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:39> * 4, <minecraft:ender_pearl> * 4, null, 100, 80, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:39> * 4, <actuallyadditions:block_misc:6>, null, 100, 80, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
+
 // Enderium
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:167>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 4, <minecraft:ender_pearl> * 4, null, 100, 384, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 2, <enderio:item_material:39> * 2, null, 80, 256, [<ore:sand>], "Alloying");
 
 // Signalum
