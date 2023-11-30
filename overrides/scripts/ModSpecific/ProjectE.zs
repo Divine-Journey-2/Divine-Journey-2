@@ -57,7 +57,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<projecte:item.pe_transmutation_ta
 [<alchemistry:ingot:60>,<alchemistry:ingot:94>,<contenttweaker:gerc_crystal>,<contenttweaker:gerc_crystal>,<alchemistry:ingot:94>,<alchemistry:ingot:94>,<alchemistry:ingot:60>],
 [<contenttweaker:celestial_crystal_core>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<alchemistry:ingot:60>,<contenttweaker:celestial_crystal_core>]]);
 // Commented out due to Extended Crafting not supporting noReturn()
-// <projecte:item.pe_transmutation_tablet>.addTooltip(game.localize("dj2.pe_transmutation_tablet.desc0"));
+<projecte:item.pe_transmutation_tablet>.addTooltip(game.localize("dj2.pe_transmutation_tablet.desc0"));
 
 // Energy Condenser
 recipes.remove(<projecte:condenser_mk1>);
