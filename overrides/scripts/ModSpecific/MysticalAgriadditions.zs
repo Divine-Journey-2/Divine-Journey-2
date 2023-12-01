@@ -17,6 +17,7 @@ recipes.remove(<mysticalagradditions:special:1>);
 
 // Insanium Ingot
 recipes.remove(<mysticalagradditions:insanium:2>);
+recipes.addShapeless(<mysticalagradditions:insanium:2> * 9, [<mysticalagradditions:storage:1>]);
 // recipe in config/modularmachinery/recipes/weak_fusion_plant_mysticalagriadditions_insanium_ingot.json
 
 // Tier 6 Crafting Seed
