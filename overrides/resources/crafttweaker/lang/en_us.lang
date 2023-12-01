@@ -475,7 +475,7 @@ dj2.lexicon.desc0=§c§lWarning:§r§f§l Recipes shown may be incorrect.
 dj2.lexicon.desc1=§f§lAlways refer to JEI when crafting.
 
 # Thermal augment tooltips
-dj2.thermal_kit.desc0=Increase the base energy capacity of a Machine or Dynamo by §c%d%§r of the (variable) base.
+dj2.thermal_kit.desc0=Increase the base energy capacity of a Machine or Dynamo by §c%d§r of the (variable) base.
 dj2.thermal_kit.desc1=Increase the base fluid capacity of a Portable Tank by §cx%d§r of the base of §c20,000mb§r.
 dj2.thermal_kit.desc2=Increase the base item capacity of a Cache by §cx%d§r of the base of §c20,000§r items.
 dj2.thermal_kit.desc3=Increase the base slot amount of a Storage Box by §c%d§r from the base of §c18§r.
