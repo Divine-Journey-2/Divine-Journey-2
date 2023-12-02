@@ -84,6 +84,10 @@ basePath = os.path.normpath(os.path.abspath(__file__ + "/../../"))
 defaultQuests = basePath + "/overrides/config/betterquesting/DefaultQuests.json"
 lang = basePath + "/overrides/resources/betterquesting/lang"
 
+def convertToLang(line: str) -> str:
+    """replaces any \\n or other json escape sequences with the correct escape character, %"""
+    return line.replace("%", "%%").replace("\\", "%")
+
 def nest(location: dict) -> dict:
     """navigates through a dict to delete anything undesired"""
 
@@ -98,6 +102,8 @@ def nest(location: dict) -> dict:
 def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
     """converts questbook title/desc into lang file"""
 
+    start = "%s.quest" % prefix
+
     alreadyKnownKeys = []
     for entry in dict(book[location]):
         if ("questID:3" in book[location][entry]):
@@ -106,21 +112,22 @@ def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
             id = book[location][entry]["lineID:3"]
         else:
             print("Could not find questid or lineid for location %s %s" % (location, entry))
+            continue
 
-        key = ("%s.quest.%s.%s." % (prefix, place, id))
-        title = key + "title"
-        desc = key + "desc"
+        key = "%s.%s.%s" % (start, place, id)
+        title = key + ".title"
+        desc = key + ".desc"
 
-        if (book[location][entry]["properties:10"]["betterquesting:10"]["name:8"].startswith(prefix + ".quest")):
+        if (book[location][entry]["properties:10"]["betterquesting:10"]["name:8"].startswith(start)):
             alreadyKnownKeys.append(title)
         else:
-            output[title] = book[location][entry]["properties:10"]["betterquesting:10"]["name:8"]
+            output[title] = convertToLang(book[location][entry]["properties:10"]["betterquesting:10"]["name:8"])
             book[location][entry]["properties:10"]["betterquesting:10"]["name:8"] = title.rstrip()
 
-        if (book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"].startswith(prefix + ".quest")):
-            alreadyKnownKeys.append(title)
+        if (book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"].startswith(start)):
+            alreadyKnownKeys.append(desc)
         else:
-            output[desc] = book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"]
+            output[desc] = convertToLang(book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"])
             book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"] = desc.rstrip()
 
     if (len(alreadyKnownKeys) > 0):
@@ -176,8 +183,7 @@ def build(args):
 
     with open(langFile, "w") as file:
         for i in sorted(questKeys, key=key):
-            # Write key=value, replacing any \n with non-formatted \n
-            file.write(i + "=" + questKeys[i].replace("\n", "\x5cn") + "\n")
+            file.write(i + "=" + questKeys[i] + "\n")
 
 
 if (__name__ == "__main__"):
