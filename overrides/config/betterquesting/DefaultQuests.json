@@ -18921,7 +18921,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "galacticraftplanets:web_torch",
-              "Count:3": 7
+              "Count:3": 8
             }
           },
           "taskID:8": "bq_standard:retrieval"
