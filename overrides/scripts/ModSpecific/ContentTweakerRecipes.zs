@@ -1185,6 +1185,7 @@ recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pe
 
 // Shattered Mystical Iron Crystal
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal>, <contenttweaker:mystical_iron_ingot>);
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 
 // Growth Infusion Liquid
