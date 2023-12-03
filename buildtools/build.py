@@ -73,7 +73,8 @@ deleteConfigFiles = [
     "AppliedEnergistics2/items.csv",
     "jei/bookmarks.ini",
     "tconstruct_oredictcache.dat",
-    "brandon3055/contributors.json"
+    "brandon3055/contributors.json",
+    "thaumicjei_itemstack_aspects.json"
 ]
 # Directories that should be copied to the serverfiles
 serverCopyDirs = [
