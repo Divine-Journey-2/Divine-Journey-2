@@ -14,5 +14,4 @@ overrides/config/enderio/recipes/examples/**
 overrides/config/JustEnoughCalculation/record.json
 build
 buildtools/API-KEY
-overrides/config/serializationisbad-remotecache.json
 overrides/config/thaumicjei_itemstack_aspects.json
