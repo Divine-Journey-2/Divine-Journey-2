@@ -7,6 +7,7 @@ import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.BlockBreakEvent;
+import crafttweaker.event.EntityTravelToDimensionEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
@@ -344,4 +345,11 @@ events.onPlayerDeathDrops(function(e as PlayerDeathDropsEvent) {
         else drops += item;
     }
     e.items = drops;
+});
+
+// Prevent falling from the Aether Dimension into the Overworld
+events.onEntityTravelToDimension(function(e as EntityTravelToDimensionEvent) {
+    if (e.dimension == 0 && e.entity.y < 0) {
+        e.cancel();
+    }
 });

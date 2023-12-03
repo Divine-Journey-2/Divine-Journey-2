@@ -22,6 +22,10 @@ addIronChestRecipe(<ironchest:iron_chest:1>, <ironchest:iron_chest:4>, <thermalf
 // Diamond Chest
 addIronChestRecipe(<ironchest:iron_chest:2>, <ironchest:iron_chest:1>, <minecraft:diamond>);
 
+// Crystal/Obsidian -> Diamond Chest
+recipes.addShapeless(<ironchest:iron_chest:2>, [<ironchest:iron_chest:5>]);
+recipes.addShapeless(<ironchest:iron_chest:2>, [<ironchest:iron_chest:6>]);
+
 // Copper Chest
 addIronChestRecipe(<ironchest:iron_chest:3>, <minecraft:chest>, <thermalfoundation:material:320>);
 
@@ -135,6 +139,17 @@ for i in 0 to 16 {
     function(out,ins,cInfo) {
         return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
     }, null);
+
+    // Crystal/Obsidian -> Diamond Shulker Box
+    recipes.addShapeless("ironchest_crystal_shulker_box_downgrade_" + num_strings[i], iron_shulker_box_names[i].withDamage(2), [iron_shulker_box_names[i].withDamage(5).marked("box")],
+    function(out,ins,cInfo) {
+        return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
+    }, null);
+    recipes.addShapeless("ironchest_obsidian_shulker_box_downgrade_" + num_strings[i], iron_shulker_box_names[i].withDamage(2), [iron_shulker_box_names[i].withDamage(6).marked("box")],
+    function(out,ins,cInfo) {
+        return ironchest_shulkerbox_recipe_tag(ins.box.tag, out, 108);
+    }, null);
+
 
 }
 

@@ -475,7 +475,7 @@ dj2.lexicon.desc0=§c§l警告：§r§f§l合成表显示可能不正确。
 dj2.lexicon.desc1=§f§l合成时请参考 JEI。
 
 # Thermal augment tooltips
-dj2.thermal_kit.desc0=基于初始数值，将机器或能源炉的基础能量容量提高 §c%d%§r。
+dj2.thermal_kit.desc0=基于初始数值，将机器或能源炉的基础能量容量提高 §c%d§r。
 dj2.thermal_kit.desc1=基于 §c20,000mb§r 的初始数值，将便携储罐的基础流体容量提高 §cx%d§r。
 dj2.thermal_kit.desc2=基于 §c20,000§r 个物品的初始数值，将储物箱的基础物品容量提高 §cx%d§r。
 dj2.thermal_kit.desc3=基于 §c18§r 个槽位的初始数值，将保险箱的基础槽位数量提高 §cx%d§r。
