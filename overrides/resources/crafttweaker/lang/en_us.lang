@@ -2,6 +2,8 @@
 commands.curseforge.usage=Sends a link to the curseforge page in chat.
 commands.discord.usage=Sends a link to the discord page in chat.
 commands.issues.usage=Sends a link to the issues page in chat.
+commands.book_of_logic.usage=Prints the full text of the book of logic to chat, required for localization
+commands.introduction_book.usage=Prints the full text of the introduction book to chat, required for localization
 commands.curseforge.text=Click here to open the DJ2 Curseforge page
 commands.discord.text=Click here to join the Discord
 commands.issues.text=Click here to report a bug or issue
@@ -251,7 +253,7 @@ dj2.introduction.paper.desc0=§r§5- Press §6K§r§5 to open your quests
 dj2.introduction.paper.desc1=§r§5- Press §6`§r§5 while breaking blocks to veinmine
 dj2.introduction.paper.desc2=§r§5- Press §6.§r§5 to place an item in-world
 dj2.introduction.book.name=Welcome
-dj2.introduction.book.desc0=§4§n§lWelcome to Divine Journey 2!§r\n\n§8§0You are a Fallen Angel that has one purpose in this world: Find the Meaning of Life! Fortunately however, it's already in your inventory, locked up in a convenient bag... So there isn't too much to do, huh...?
+dj2.introduction.book.desc0=§4§n§lWelcome to Divine Journey 2!§r\n\n§8§6You are a Fallen Angel that has one purpose in this world: Find the Meaning of Life! Fortunately however, it's already in your inventory, locked up in a convenient bag... So there isn't too much to do, huh...?
 dj2.introduction.book.desc1=Hold on, you seem to need a key to open the bag, a Key to Infinity! Well that makes things a bit more complicated... Actually, WAY more complicated! So much so, that you'll have to beat an entire expert mode pack to find out what your bag contains!
 dj2.introduction.book.desc2=In Divine Journey 2, you need to progress through all the available mods in order, since recipes are highly gated. A bunch of the recipes are also much more challenging, so you need a large amount of automation to obtain all materials necessary; and
 dj2.introduction.book.desc3=you've been given the tools to set up all the automation your heart desires.\n\nTo succeed in this pack, you need to have a good understanding of Modded Minecraft in general, or at least have played some other modpacks that
