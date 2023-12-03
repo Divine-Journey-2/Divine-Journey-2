@@ -553,6 +553,7 @@ recipes.addShaped(<thermalexpansion:augment:720>, [[<thermalfoundation:material:
 // Additional Enderium Ingot recipes
 mods.thermalexpansion.InductionSmelter.addRecipe(<thermalfoundation:material:167>, <enderio:item_material:39>, <minecraft:sand:*>, 25000);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167>, <minecraft:ender_pearl> * 4, null, 100, 80, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167>, <actuallyadditions:block_misc:6>, null, 100, 80, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167>, <enderio:item_material:39>, null, 400, 512, [<minecraft:sand:*>], "Alloying");
 
 // Additional Signalum Ingot recipes

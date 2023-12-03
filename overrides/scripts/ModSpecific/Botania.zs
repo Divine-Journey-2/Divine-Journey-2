@@ -1,4 +1,4 @@
-// Author: Atricos, WaitingIdly
+// Author: Atricos, WaitingIdly, ByThePowerOfScience
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -16,7 +16,7 @@ import mods.botania.ElvenTrade;
 import mods.bloodmagic.AlchemyTable;
 import mods.botania.Orechid;
 import dj2addons.botania.Brews;
-import dj2addons.botania.Brew;
+import dj2addons.botania.Brew as DJ2ABrew;
 
 print("STARTING Botania.zs");
 
@@ -928,8 +928,8 @@ recipes.remove(<botania:incenseplate>);
 recipes.addShaped(<botania:incenseplate>, [[null,<botania:manaresource:5>,null],[<botania:livingwood>,<minecraft:beacon>,<botania:livingwood>]]);
 
 // Saturation Brew
-Brews.addBrewRecipe(
-    Brews.makeBrew(
+Brews.addStandardBrewRecipe(
+    Brews.newBrew(
         "dj2addons.saturegen",
         "dj2addons.brew.saturegen",
         100000,
@@ -941,15 +941,22 @@ Brews.addBrewRecipe(
 
 // Warp Ward Brew
 mods.botania.Brew.removeRecipe("warpWard");
-Brews.addBrewRecipe(
-    Brews.makeBrew(
-        "thaumcraft:warpward",
-        "Sane Thoughts",
-        100000,
-        16503291,
-        <potion:thaumcraft:warpward>.makePotionEffect(20 * 60 * 60 * 2, 0) // brew will last an hour
-    ),
+val warpward as DJ2ABrew = Brews.newBrew(
+                               "thaumcraft:warpward",
+                               "Sane Thoughts",
+                               100000,
+                               16503291,
+                               <potion:thaumcraft:warpward>.makePotionEffect(20 * 60 * 10, 0) // brew will last 10 minutes
+                           );
+Brews.addOutputRestrictedBrewRecipe( // More expensive recipe for the tainted blood pendant.
+    warpward,
+    [<botania:bloodpendant>],
     [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>, <contenttweaker:conducted_impetus>, <thaumcraft:sanity_checker>]
+);
+Brews.addOutputRestrictedBrewRecipe( // Standard recipe for everything else.
+    warpward,
+    [<botania:vial:0>, <botania:vial:1>, <botania:incensestick>],
+    [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:amber>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>]
 );
 
 // Corporea Spark
