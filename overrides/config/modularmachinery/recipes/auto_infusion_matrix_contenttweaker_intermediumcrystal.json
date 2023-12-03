@@ -1,6 +1,6 @@
 {
     "machine": "auto_infusion_matrix",
-    "registryName": "auto_infusion_matrix_matc_intermediumcrystal",
+    "registryName": "auto_infusion_matrix_contenttweaker_intermediumcrystal",
     "recipeTime": 78,
     "requirements": [
         {
@@ -11,7 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "matc:prudentiumcrystal"
+            "item": "contenttweaker:prudentiumcrystal"
         },
         {
             "type": "item",
@@ -64,7 +64,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "matc:intermediumcrystal"
+            "item": "contenttweaker:intermediumcrystal"
         }
     ]
 }

@@ -6,7 +6,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "matc:superiumcrystal"
+            "item": "contenttweaker:superiumcrystal"
         },
         {
             "type": "item",
@@ -33,7 +33,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "matc:supremiumcrystal"
+            "item": "contenttweaker:supremiumcrystal"
         }
     ]
 }
