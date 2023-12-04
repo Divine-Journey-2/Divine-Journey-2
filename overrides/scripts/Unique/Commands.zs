@@ -33,7 +33,7 @@ function printToTarget(server as IServer, sender as ZenUtilsCommandSender, args 
     } else {
         target.sendRichTextMessage(
             ITextComponent.fromData({
-                "text": ITextComponent.fromTranslation(links[type][0]).unformattedText,
+                "translate": links[type][0],
                 "underlined": true,
                 "color": "blue",
                 "clickEvent": {
@@ -74,15 +74,19 @@ book_of_logic.execute = function(command, server, sender, args) {
     if (isNull(target)) {
         // :(
     } else {
-        target.sendRichTextMessage(ITextComponent.fromData({
-            "text": (game.localize("dj2.book_of_logic.desc0") + "\n" +
-                    game.localize("dj2.book_of_logic.desc1") + "\n" +
-                    game.localize("dj2.book_of_logic.desc2") + "\n" +
-                    game.localize("dj2.book_of_logic.desc3") + "\n" +
-                    game.localize("dj2.book_of_logic.desc4") + "\n" +
-                    game.localize("dj2.book_of_logic.desc5") + "\n" +
-                    game.localize("dj2.book_of_logic.desc6")).replace("\\n", "\n").replace("\n\n", "\n")
-        }));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc0"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc1"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc2"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc3"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc4"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc5"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc6"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc7"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc8"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc9"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc10"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc11"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.book_of_logic.desc12"));
     }
 };
 book_of_logic.register();
@@ -95,19 +99,27 @@ introduction_book.execute = function(command, server, sender, args) {
     if (isNull(target)) {
         // :(
     } else {
-        target.sendRichTextMessage(ITextComponent.fromData({
-            "text": (game.localize("dj2.introduction.book.desc0") + "\n" +
-                    game.localize("dj2.introduction.book.desc1") + "\n" +
-                    game.localize("dj2.introduction.book.desc2") + "\n" +
-                    game.localize("dj2.introduction.book.desc3") + "\n" +
-                    game.localize("dj2.introduction.book.desc4") + "\n" +
-                    game.localize("dj2.introduction.book.desc5") + "\n" +
-                    game.localize("dj2.introduction.book.desc6") + "\n" +
-                    game.localize("dj2.introduction.book.desc7") + "\n" +
-                    game.localize("dj2.introduction.book.desc8") + "\n" +
-                    game.localize("dj2.introduction.book.desc9") + "\n" +
-                    game.localize("dj2.introduction.book.desc10")).replace("\\n", "\n").replace("\n\n", "\n")
-        }));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc0"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc1"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc2"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc3"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc4"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc5"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc6"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc7"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc8"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc9"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc10"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc11"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc12"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc13"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc14"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc15"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc16"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc17"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc18"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc19"));
+        target.sendRichTextMessage(ITextComponent.fromTranslation("dj2.introduction.book.desc20"));
     }
 };
 introduction_book.register();

@@ -27,7 +27,7 @@ val dj2introductionbookdesc10 = "a quadrillion times, and quest rewards tend to 
 
 add(<contenttweaker:bag_of_truth_locked>.withTag({display: {Name:dj2bag_of_truth_lockedname}}));
 add(<minecraft:written_book>.withTag({pages: [
-    "{\"text\":\"" + "Run /dj2 introduction_book" + "\"}",
+    "{\"text\":\"" + "Run /dj2 introduction_book to view translations" + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc0 + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc1 + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc2 + "\"}",
