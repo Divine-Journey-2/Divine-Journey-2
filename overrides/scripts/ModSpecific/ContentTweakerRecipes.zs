@@ -1705,7 +1705,7 @@ val dj2_book_of_logic_desc5="9) Alex has 114 more friends than 5 times the combi
 val dj2_book_of_logic_desc6="Essence of Thought in the Crafting Table!\n\nGood luck!";
 
 val book_of_logic = <minecraft:written_book>.withTag({pages: [
-        "{\"text\":\"" + "Run /dj2 logic_book" + "\"}",
+        "{\"text\":\"" + "Run /dj2 logic_book to view translations" + "\"}",
         "{\"text\":\"" + dj2_book_of_logic_desc0  + "\"}",
         "{\"text\":\"" + dj2_book_of_logic_desc1  + "\"}",
         "{\"text\":\"" + dj2_book_of_logic_desc2  + "\"}",
