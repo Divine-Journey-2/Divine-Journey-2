@@ -3,7 +3,7 @@
   "defaults": {
     "textures": {
       "end": "contenttweaker:blocks/galactic_machine_frame_end",
-      "side": "contenttweaker:blocks/galactic_machine_fram_side",
+      "side": "contenttweaker:blocks/galactic_machine_frame_side",
       "particle": "contenttweaker:blocks/galactic_machine_frame_side"
     },
     "model": "cube_column",
