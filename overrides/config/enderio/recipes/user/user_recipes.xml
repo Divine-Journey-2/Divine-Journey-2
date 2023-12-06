@@ -663,6 +663,15 @@
     </alloying>
   </recipe>
 
+  <recipe name="Alloy: Enderium With Block" required="true">
+    <alloying energy="4000">
+      <input name="thermalfoundation:material:131" amount="3" />
+      <input name="thermalfoundation:material:134" />
+      <input name="actuallyadditions:block_misc:6" />
+      <output name="enderio:item_material:39" amount="4" />
+    </alloying>
+  </recipe>
+
   <recipe name="Alloy: Photovoltaic Plate" required="true">
     <alloying energy="15000">
       <input name="enderio:item_material:38" />

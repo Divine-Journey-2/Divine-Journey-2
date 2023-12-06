@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Divine Journey 2",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "author": "AtricosHU",
   "files": [
     {
@@ -510,7 +510,7 @@
     {
       "slug": "crafttweaker",
       "projectID": 239197,
-      "fileID": 4379998,
+      "fileID": 4814073,
       "required": true
     },
     {
@@ -620,7 +620,7 @@
     {
       "slug": "roots",
       "projectID": 246183,
-      "fileID": 3905074,
+      "fileID": 4460453,
       "required": true
     },
     {
@@ -1253,7 +1253,7 @@
     {
       "slug": "thaumic-augmentation",
       "projectID": 319441,
-      "fileID": 4081306,
+      "fileID": 4486505,
       "required": true
     },
     {
@@ -1349,7 +1349,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 4681827,
+      "fileID": 4914452,
       "required": true
     },
     {
@@ -1404,7 +1404,7 @@
     {
       "slug": "ae2-extended-life",
       "projectID": 570458,
-      "fileID": 4673868,
+      "fileID": 4851091,
       "required": true
     },
     {
@@ -1454,7 +1454,7 @@
     {
       "slug": "serializationisbad",
       "projectID": 896591,
-      "fileID": 4685926,
+      "fileID": 4728250,
       "required": true
     }
   ],

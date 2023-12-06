@@ -4,9 +4,8 @@ import mods.initialinventory.InvHandler.addStartingItem as add;
 
 print("STARTING InitialInventory.zs");
 
-// Currently, localization for initial inventory items is broken in multiplayer.
-// This is a temporary (oh no) workaround
-// TODO fixme
+// Cannot use localization in this section, as it will prevent the book from working properly on servers.
+// As such, english is used as the default, and the first page has instructions to send a command (which can be localized).
 val dj2bag_of_truth_lockedname = "§d§lBag of Truth (Locked)";
 val dj2introductionpapername = "§r§lRead the tooltip for important keybind information!";
 val dj2introductionpaperdesc0 = "§r§5- Press §6K§r§5 to open your quests";
@@ -28,6 +27,7 @@ val dj2introductionbookdesc10 = "a quadrillion times, and quest rewards tend to 
 
 add(<contenttweaker:bag_of_truth_locked>.withTag({display: {Name:dj2bag_of_truth_lockedname}}));
 add(<minecraft:written_book>.withTag({pages: [
+    "{\"text\":\"" + "Run /dj2 introduction_book to view translations" + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc0 + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc1 + "\"}",
     "{\"text\":\"" + dj2introductionbookdesc2 + "\"}",

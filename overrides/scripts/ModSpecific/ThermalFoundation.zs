@@ -109,7 +109,7 @@ recipes.addShapeless(<thermalfoundation:material:1028>, [<contenttweaker:rf_powd
 
 // Mithril Ingot
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:136>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:1028>, null, 200, 512, [<contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>]);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:134>, null, 200, 512, [<contenttweaker:demonlord_ingot>, <thermalfoundation:material:1028>]);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:136>, <thermalfoundation:material:72>, null, 100, 512);
 mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalfoundation:material:1028>, <contenttweaker:demonlord_ingot>, <thermalfoundation:material:134>], 24000);
 
@@ -119,9 +119,12 @@ mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalf
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:67>);
 
+// Enderium Base
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:39> * 4, <thermalfoundation:material:134>, null, 100, 80, [<thermalfoundation:material:131> * 3, <minecraft:ender_pearl> * 4], "Alloying");
+mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:39> * 4, <thermalfoundation:material:134>, null, 100, 80, [<thermalfoundation:material:131> * 3, <actuallyadditions:block_misc:6>], "Alloying");
+
 // Enderium
 mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:167>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 4, <minecraft:ender_pearl> * 4, null, 100, 384, [<thermalfoundation:material:131> * 3, <thermalfoundation:material:134>], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:167> * 2, <enderio:item_material:39> * 2, null, 80, 256, [<ore:sand>], "Alloying");
 
 // Signalum

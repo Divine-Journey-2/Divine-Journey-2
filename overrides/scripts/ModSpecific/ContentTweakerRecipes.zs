@@ -1185,6 +1185,7 @@ recipes.addShapeless(<contenttweaker:eye_of_the_nightmare>, [<minecraft:ender_pe
 
 // Shattered Mystical Iron Crystal
 ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal>, <contenttweaker:mystical_iron_ingot>);
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 ExplosionCrafting.explodeBlockRecipe(<contenttweaker:shattered_mystical_iron_crystal> * 9, <contenttweaker:mystical_iron_block>);
 
 // Growth Infusion Liquid
@@ -1692,15 +1693,27 @@ for c in logic_puzzle_characters {
 }
 
 // Book of Logic
+// Cannot use localization in this section, as it will prevent the book from working properly on servers.
+// As such, english is used as the default, and the first page has instructions to send a command (which can be localized).
+val dj2_book_of_logic_name="§lBook of Logic";
+val dj2_book_of_logic_desc0="What is the §c§lAge§r, §c§lNumber of friends§r & §c§lHeight (in cm)§r of §lSteve§r, §lAlex§r and §lHerobine§r?\n\nUse the following 9 statements to figure it out:";
+val dj2_book_of_logic_desc1="1) Herobrine's only got one friend, Notch.\n\n2) Steve is one year older than Alex.\n\n3) Steve and Herobrine are the same height.";
+val dj2_book_of_logic_desc2="4) 20 years ago, Herobrine was twice as old as the combined age of Steve and Alex.\n\n5) Steve is accumulating 61 friends every year. Impressive!";
+val dj2_book_of_logic_desc3="6) The difference between the number of friends of Alex and Steve is exactly Herobrine's height.\n\n7) Alex was born 66 cm tall. She gained 4 cm of height every year since then.";
+val dj2_book_of_logic_desc4="8) If every year, starting from now, Herobrine were to double his friend count, then in 11 years he would have 331 fewer friends than Steve. (Remember, Steve also gains friends every year!)";
+val dj2_book_of_logic_desc5="9) Alex has 114 more friends than 5 times the combined height of Steve and herself.\n\nUse the Modifiers provided in the quest book and simple Shapeless crafting, and if you think you got it right, combine Steve, Alex and Herobrine with an";
+val dj2_book_of_logic_desc6="Essence of Thought in the Crafting Table!\n\nGood luck!";
+
 val book_of_logic = <minecraft:written_book>.withTag({pages: [
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc0") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc1") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc2") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc3") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc4") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc5") + "\"}",
-        "{\"text\":\"" + game.localize("dj2.book_of_logic.desc6") + "\"}"
-    ], author: "Atricos", title: game.localize("dj2.book_of_logic.name"), resolved: 1 as byte}) as IItemStack;
+        "{\"text\":\"" + "Run /dj2 logic_book to view translations" + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc0  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc1  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc2  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc3  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc4  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc5  + "\"}",
+        "{\"text\":\"" + dj2_book_of_logic_desc6  + "\"}"
+    ], author: "Atricos", title: dj2_book_of_logic_name, resolved: 1 as byte}) as IItemStack;
 recipes.addShapeless(book_of_logic, [<contenttweaker:essence_of_foundation>,<minecraft:book>]);
 mods.jei.JEI.addItem(book_of_logic);
 
