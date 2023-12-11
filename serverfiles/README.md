@@ -30,6 +30,7 @@ On the first launch, it will require that you accept the EULA and restart the la
 Running the `autolaunch.bat` or `autolaunch.sh` files will cause the server to automatically restart after a few seconds when shut down.
 Combined with enabling the `auto_shutdown` feature in `config/ftbutilities.cfg`, you will be able to easily restart the server at specific times.
 This has a number of benefits, as servers will frequently perform worse as time goes on.
+
 Warning: This may make a crashloop harder to identify.
 
 
@@ -38,7 +39,8 @@ Warning: This may make a crashloop harder to identify.
 DJ2 uses a few custom files to allow easier use for launching the pack.
 There are four helper files for launching the pack, called `launch.sh`, `autolaunch.sh`, `launch.bat`, and `autolaunch.bat`.
 These helper files should ***not*** be edited.
-There is also a configuration file, `launch_config.ini`.
+
+There is also a configuration file, `launch_config.ini`. This file **should** be edited.
 Modifying the `launch_config.ini` file can be done in any text editor.
 This will change the settings used to launch the pack in any of the helper files.
 Launching the pack through any of these helper scripts is *optional*, but you may find it easier than the command line.
