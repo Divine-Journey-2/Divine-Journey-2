@@ -346,6 +346,11 @@ def copyServer(manifest):
 
     print("directories copied to build/server")
 
+def saveGithubOutput(location: str, value: str):
+    """Save a value to a location for github to output from the current workflow job"""
+    if os.getenv("GITHUB_OUTPUT") != None:
+        with open(os.getenv("GITHUB_OUTPUT"), "a") as fh:
+            print(f"{location}={value}", file=fh)
 
 
 def buildClient(archive: str):
@@ -439,12 +444,14 @@ def build(args):
     # Zip the client
     if (args.client):
         client_name = archive_name
+        saveGithubOutput("client_name", client_name)
         if (args.zip):
             buildClient(client_name)
 
     # Zip the server
     if (args.server):
         server_name = archive_name + "_Server_Pack"
+        saveGithubOutput("server_name", server_name)
         if (args.zip):
             buildServer(server_name)
 
