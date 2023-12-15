@@ -331,14 +331,6 @@ def copyServer(manifest):
     for dir in serverCopyDirs:
         try:
             shutil.copytree(basePath + "/overrides/" + dir, server + "/" + dir)
-
-    # Copy all lang files
-    # Currently does nothing, as no resources are loaded serverside, which is
-    # incorrect behavior as multiple locations need a lang file loaded serverside
-    # for root, _, files in os.walk(basePath + "/overrides/"):
-    #     for file in files:
-    #         if (os.path.normcase(file)[-4:] == '.lang'):
-    #             shutil.copy(os.path.join(root, root.split(basePath + "/overrides")[-1], file), os.path.join(server + "/", file))
         except:
             pass
 
