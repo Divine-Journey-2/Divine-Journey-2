@@ -302,8 +302,8 @@ def copyClient():
 
     try:
         shutil.copytree(basePath + "/overrides", client + "/overrides")
-    except Exception:
-        print("Directory exists, skipping")
+    except:
+        pass
 
     for file in deleteConfigFiles:
         location = client + "/overrides/config/" + file
@@ -331,8 +331,6 @@ def copyServer(manifest):
     for dir in serverCopyDirs:
         try:
             shutil.copytree(basePath + "/overrides/" + dir, server + "/" + dir)
-        except Exception as e:
-            print("Directory %s exists, skipping" % (e))
 
     # Copy all lang files
     # Currently does nothing, as no resources are loaded serverside, which is
@@ -341,6 +339,8 @@ def copyServer(manifest):
     #     for file in files:
     #         if (os.path.normcase(file)[-4:] == '.lang'):
     #             shutil.copy(os.path.join(root, root.split(basePath + "/overrides")[-1], file), os.path.join(server + "/", file))
+        except:
+            pass
 
     for file in deleteConfigFiles:
         location = server + "/config/" + file
