@@ -43,6 +43,9 @@ def parse_args():
     parser.add_argument("--download", "-D",
                         action="store_true",
                         help="downloads mods from curseforge")
+    parser.add_argument("--zip", "-Z",
+                        action="store_true",
+                        help="Zips up the output files for further use")
     parser.add_argument("--dev",
                         type=str,
                         help="makes a folder with all the files symlinked for development. probably only works on linux")
@@ -236,8 +239,7 @@ Since DJ2 is considered the 2nd primary version, trim those characters from the 
 def getPreReleaseName() -> str:
     """Get the prerelase name based on the date of the last commit and the git sha to name the zip files"""
     try:
-        p = subprocess.run(["git", "rev-parse", "--short",
-                           "HEAD"], capture_output=True, cwd=basePath)
+        p = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, cwd=basePath)
         name = subprocess.getoutput("git log -1 --format=\"%as\"")
         return name + "_" + p.stdout.strip().decode("utf-8")
     except:
@@ -353,23 +355,15 @@ def copyServer(manifest):
     print("directories copied to build/server")
 
 
-def buildClient(version: str, name: str):
-    """Build the client zip"""
-    archive = version
-    if (name):
-        archive = "%s_%s" % (archive, name)
 
+def buildClient(archive: str):
+    """Build the client zip"""
     shutil.make_archive(output + "/" + archive, "zip", client)
     print("client zip \"%s.zip\" made" % (archive))
 
 
-def buildServer(version: str, name: str):
+def buildServer(archive: str):
     """Build the server zip"""
-    archive = version
-    if (name):
-        archive = "%s_%s" % (version, name)
-    archive += "_Server_Pack"
-
     shutil.make_archive(output + "/" + archive, "zip", server)
     print("server zip \"%s.zip\" made" % (archive))
 
@@ -448,13 +442,19 @@ def build(args):
     if (args.prerelease):
         name = getPreReleaseName()
 
+    archive_name = "%s_%s" % (version, name) if name else version
+
     # Zip the client
     if (args.client):
-        buildClient(version, name)
+        client_name = archive_name
+        if (args.zip):
+            buildClient(client_name)
 
     # Zip the server
     if (args.server):
-        buildServer(version, name)
+        server_name = archive_name + "_Server_Pack"
+        if (args.zip):
+            buildServer(server_name)
 
     if (args.dev):
         updateMMCInstance(args.dev)
