@@ -1,48 +1,49 @@
-Mod updates:
+
+## Mod Modifications:
 
 - Updated MysticalLib to 1.13.0 and Roots to 3.1.4, and added a blacklist for many blocks for the Runed Smasher.
 - Updated ExtraCPUs to 1.2.1.
 
-Recipe changes:
+## Bugfixes:
 
-- Nether Reeds Block can now be converted into 9 Nether Reeds.
 - Stone Slabs now correctly craft 6 at a time (instead of 1).
-- Circuit Plates can now actually be crafted for any Underground Biomes Stones.
-- Osglolapis now crafts 2 at a time (up from 1).
 - Fixed a bug where Lead Ore would get smelted into Lead Dust in the Redstone Furnace.
 - Added a missing recipe for the Nutritious Stick, making the Dark Bow craftable.
-- Added conversion between Covered Cables and Dense Covered Cables, and conversion between Smart Cables and Dense Smart Cables.
-- The ME Interface and Fluid Interface now only require Industrial Machine Chassis' instead of RFTools Machine Frames.
 - Added a missing recipe for Tier 3 Mob Chunks in the Auto Infusion Matrix.
+- The Superium Infusion Crystal now only takes 4000 Starlight instead of 8000.
+- Removed the Bauxite deposit (could skip some of Chapter 24's progression because of Rutile Ore). Instead added a pure Aluminum deposit.
+- Soulium parts no longer have the Chunky trait, instead they have Hellish.
+- The Digital Essentia advancement now requires an Infusion Provider, because the 1k Essentia Storage Component could have been gotten much earlier from research. Also changed the rewarded Trophy.
+- All Mystical Agriculture Tiered Crystals now have 2147483647 (practically infinite) durability. [This is to prevent a crash that occurs when they get used up in an RFTools/ExtraUtils/Mekanism Crafter: https://github.com/Divine-Journey-2/main/issues/455]
+- Dragon Egg Seeds can now be planted on Crop Sticks.
+
+## Balance Adjustments:
+
+- Osglolapis now crafts 2 at a time (up from 1).
+- The ME Interface and Fluid Interface now only require Industrial Machine Chassis' instead of RFTools Machine Frames.
 - The following Ores can now be crafted from Mystical Agriculture Essences + Stone: Iron, Coal, Gold, Redstone, Lapis, Diamond, Emerald, Tin, Copper, Silver, Lead, Aluminum & Nickel.
 - Skyfather Ingots now craft 4 at a time (up from 1).
 - Mystic Ingots now craft 16 at a time (up from 8).
 - Divine Underpowder now crafts 8 at a time (up from 2).
 - Mystical Iron Ingots now craft 6 at a time (up from 3).
-- The Superium Infusion Crystal now only takes 4000 Starlight instead of 8000.
 - Tiny Chaos Fragments now craft 12 at a time in the Liquicrafter (up from 6).
-
-Config changes:
-
-- Hid more non-Glass Facades from JEI.
-- Mekanism Muffling Upgrades now also stack to 64 (up from 4).
-- Removed the Bauxite deposit (could skip some of Chapter 24's progression because of Rutile Ore). Instead added a pure Aluminum deposit.
-- Soulium parts no longer have the Chunky trait, instead they have Hellish.
-- The Digital Essentia advancement now requires an Infusion Provider, because the 1k Essentia Storage Component could have been gotten much earlier from research. Also changed the rewarded Trophy.
-- All Mystical Agriculture Tiered Crystals now have 2147483647 (practically infinite) durability. [This is to prevent a crash that occurs when they get used up in an RFTools/ExtraUtils/Mekanism Crafter: https://github.com/Divine-Journey-2/main/issues/455]
 - Extreme Reactor Fuel consumption rate is now 5x faster. This means Cyanite production is also 5x faster.
 - The Ultimate Compressor is now 10x faster and crafts items 4 at a time.
 - The Fission Multiblock is now 20x faster.
 - The Weak Fusion Plant is now 40x faster but consumes 40x more RF/tick.
-- Dragon Egg Seeds can now be planted on Crop Sticks.
-
-Generation changes:
-
 - Emerald Ore in the overworld is now 3x more common.
 - Oil Sand now generates in large quantities in Atum.
 - Apalachia Dungeons no longer contain a Nether Star block inside.
 
-Quest Book changes:
+## QoL Improvements:
+
+- Nether Reeds Block can now be converted into 9 Nether Reeds.
+- Circuit Plates can now actually be crafted for any Underground Biomes Stones.
+- Added conversion between Covered Cables and Dense Covered Cables, and conversion between Smart Cables and Dense Smart Cables.
+- Hid more non-Glass Facades from JEI.
+- Mekanism Muffling Upgrades now also stack to 64 (up from 4).
+
+## Text and Quest Updates:
 
 - Fixed the quests added in the last update not showing up always.
 - Corrected the description of the Diesel Generator quest in Chapter 4, because the Super Sound Muffler CAN mute it.
@@ -55,8 +56,5 @@ Quest Book changes:
 - Chaos Shards now no longer require Awakaned Draconium Armor in Chapter 25, instead just Draconic Fusion Crafting.
 - Added a missing reward for the Draconic Fusion Crafting quest in Chapter 25.
 - Removed misinformation about the Wyvern Armor giving flight in Chapter 25.
-
-Miscellaneous:
-
 - Fixed a typo in the Purifying Bath Salt tooltip: "underneith" -> "underneath".
 - Fixed a typo in Chapter 26, Alchemical Machine Frame quest: "th Lasr" -> "the Laser".

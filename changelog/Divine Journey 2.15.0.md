@@ -1,4 +1,6 @@
-Mod Updates:
+
+## Mod Modifications:
+
 - Update DJ2Addons: 1.0.1 -> 1.1.0
 - Update Thaumic Augmentation: 2.1.5 -> 2.1.7
 - Update Roots: 3.1.4 -> 3.1.5
@@ -11,18 +13,16 @@ Mod Updates:
 - Update WanionLib: 2.5 -> 2.9
 - Update Hammer Lib: 2.0.6.28 -> 2.0.6.32
 
+## Bugfixes:
 
-
-Bugfixes:
 - Fix Gas Storage Housing uses being missing.
 - EnderIO Attractor Crystal recipe is now actually craftable.
 - Fix Evilcraft's Vengeance Pickaxe crafting with an incorrect enchantment.
 - Glod Blocks now drop the correct NBT tagged Glod Block.
 - Fix Roots Bowl duplication glitch.
 
+## Balance Adjustments:
 
-
-Balance Changes:
 - Moved higher tiers of Blood Magic's Incense Altar earlier, adjusted their recipes.
 - Add Saturation providing Botania Brews, comes in all variants (potion, Incense Stick, and Tainted Blood Pendant).
 - Add Warp Ward providing Botania Tainted Blood Pendant, but nerf the Warp Ward recipe (this allows permanent negation of negative Warp effects at a slight mana upkeep - cost).
@@ -34,9 +34,13 @@ Balance Changes:
 - Increase the stack size of Industrial Foregoing Range Addons to 64.
 - Add more types of zombies to the EnderIO Z-Logic Controller.
 
+## QoL Improvements:
 
+- Remove a number of incorrect item descriptions from the JEI tab.
+- NBT removal recipes for Ender Utilities Link Crystals.
 
-Quest Updates:
+## Text and Quest Updates:
+
 - Adjusted and added quests relevant to balance changes.
 - (Chapter 11) Add a quest for RFTools Powercells.
 - (Chapter 21) Improved the description of "Molding the Void".
@@ -44,9 +48,6 @@ Quest Updates:
 - (Chapter 22) Fix an incorrect quest amount requirement in "Zappy!".
 - (Chapter 24) Fix a typo in "Wait WHAT? Aliens?".
 
+## Miscellaneous Changes:
 
-
-Miscellaneous:
-- Remove a number of incorrect item descriptions from the JEI tab.
-- NBT removal recipes for Ender Utilities Link Crystals.
 - Elevatium now applies occasional levitation when held

@@ -29,4 +29,4 @@ View all [changelogs](https://github.com/WaitingIdly/Workflow-Testing/tree/main/
 
 
 
-## Misc Changes:
+## Miscellaneous Changes:

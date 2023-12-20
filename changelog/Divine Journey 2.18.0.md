@@ -1,5 +1,5 @@
 
-## Mod Changes:
+## Mod Modifications:
 
 - Added Framed Compacting Drawers 1.2.7
 
@@ -17,7 +17,7 @@
 - Fix Thaumium Fortress Helm and one of its upgrades having different essentia values in the AIM than in the Runic Matrix.
 - Fix the Thaumic Energistics Knowledge Core recipe having increased aspect cost in the AIM.
 
-## Balance Changes:
+## Balance Adjustments:
 
 - Change the Drill Silk Touch Augment recipe to use silky crystals instead of silk touch enchantment books.
 - Make ESDs require Wood Casing instead of Iron Casing
@@ -29,7 +29,7 @@
 - Add a Mystical Agriculture Essence recipe for Enderman Heads.
 - Make Guard's Bonemeal no longer obtainable via the Lightning Crusher, and make it only obtainable via a recipe in the Lightningcraft Infusion Multiblock.
 
-## QoL:
+## QoL Improvements:
 
 - Hide accidentally added facades from JEI.
 - Add Actually Additions Black Quartz as a Compacting Drawer recipe.

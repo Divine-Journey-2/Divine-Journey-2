@@ -1,22 +1,22 @@
 
-## Mod Updates:
-- AE2-UEL 0.53.3 -> 0.54.9
-- Better Builders Wands 245 -> 271
-- Bigger Crafting Tables 2.3 -> 2.3
-- CraftTweaker 4.1.20.675 -> 4.1.20.681
-- FastWorkbench 1.7.3 -> 1.7.4
-- FoamFix 0.10.14 -> 0.10.15
-- MouseTweaks 2.10.0 -> 2.10.1
-- LootTweaker 0.3.0old parser -> 0.3.1
-- Planet Progression 0.4.6 -> 0.4.8
-- ZenUtils 1.11.0 -> 1.12.2
-- DJ2Addons 1.2.0.1 -> 1.2.2.1
-- Thaumic Augmentation 2.1.7 -> 2.1.8
+## Mod Modifications:
 
-## Mod Additions:
-- JEI Utilities 0.2.8
+- Updated AE2-UEL 0.53.3 -> 0.54.9
+- Updated Better Builders Wands 245 -> 271
+- Updated Bigger Crafting Tables 2.3 -> 2.3
+- Updated CraftTweaker 4.1.20.675 -> 4.1.20.681
+- Updated FastWorkbench 1.7.3 -> 1.7.4
+- Updated FoamFix 0.10.14 -> 0.10.15
+- Updated MouseTweaks 2.10.0 -> 2.10.1
+- Updated LootTweaker 0.3.0old parser -> 0.3.1
+- Updated Planet Progression 0.4.6 -> 0.4.8
+- Updated ZenUtils 1.11.0 -> 1.12.2
+- Updated DJ2Addons 1.2.0.1 -> 1.2.2.1
+- Updated Thaumic Augmentation 2.1.7 -> 2.1.8
+- Added JEI Utilities 0.2.8
 
 ## Bugfixes:
+
 - Update BetterP2P. No longer always crashes, but still crashes if the network has a Security Terminal.
 - Fix Nether Lapis and Nether Cobalt names being flipped for the Immersive Engineering Excavator.
 - Prevent Forgiving Void from activating in Vethea.
@@ -32,7 +32,8 @@
 - Disable the spawning of Hellsprouts (caused extreme amounts of lag when using a Builder to mine the Nether).
 - Prevent Quark x Actually Additions enchantment book dupe.
 
-## Balance Changes:
+## Balance Adjustments:
+
 - Change Firey Ungent recipe to require an Alkima and Ignis Vis Crystal instead of 2 Ignis Crystals.
 - Reduce the cost of the Actually Additions Fishing Net to Hemp from Immersive Engineering and edit related recipes and quests.
 - Reduce the maximum stack size of OpenBlocks and EnderIO Fluid Tanks to 1 to prevent a dupe bug. (If there was another way I knew of to solve this, I would take it).
@@ -55,7 +56,7 @@
 - Reduce the number of possible enchantments for the Astral Sorcery Amulet, allowing only the best and most effective to spawn. Significant buff.
 - Add matching recipes for enchantment books to the EnderIO Enchanter and Thermal Enchanter. Make almost all enchantment books obtainable.
 
-## QoL:
+## QoL Improvements:
 - Increase output of the cosmetic Invisibility Actually Additions Laser Relay upgrade (to 16).
 - Hide a number of unobtainable and non-useful items in JEI.
 - Add Mending Moss to the Activate Block JEI category.
@@ -90,7 +91,8 @@
 - Update the lava tank quest to introduce the Holding enchantment.
 - Display the use of Botania's Phantom Ink in the Activate Block JEI category.
 
-## Text changes and quest fixes:
+## Text and Quest Updates:
+
 - Fix typo in tooltip incorrectly informing about "Dim Constellations" rather than "Faint Constellations".
 - Remove an incorrect tier tooltip from Dragon Egg seeds.
 - Fixed Ender Alloy quest reward rewarding Enhanced when it should be Advanced (and vice versa).
@@ -134,6 +136,7 @@
 - Add information about looting Apalachia dungeons for Radiant Beacons
 - Remove now-obsolete information about automating Essentia with Thaumic Energistics, since the update to the fork in 2.16.0 fixed partitioning.
 
-## Misc:
+## Miscellaneous Changes:
+
 - Remove Sulfur Ore from the Industrial Foregoing Laser Drill config.
 - Remove 744 dev files totaling nearly a megabyte of size. Ow.

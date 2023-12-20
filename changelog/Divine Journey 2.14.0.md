@@ -1,29 +1,30 @@
-Mod additions:
-- Divine Journey 2 Addons 1.0 by ByThePowerOfScience a.k.a Haiku
-- Gas Conduits 5.3.70
-- LagGoggles 5.8-132
-- TickCentral 3.2
-- Wasaila 1.0 (Waila AgriCraft stats addon)
 
+## Mod Modifications:
 
-
-Mod updates:
-- AE2 Unofficial Extended Life v51e -> v0.52.4
-- EnderIO 5.2.61 -> 5.2.70
-- EnderIO Endergy 5.2.61 -> 5.3.70
-- EnderTweaker 1.2.0 -> 1.2.3
-- OAuth 1.06.3 -> 1.06.4
-- Underground Biomes 1.3.8 -> 1.3.11
+- Add Divine Journey 2 Addons 1.0 by ByThePowerOfScience a.k.a Haiku
+- Add Gas Conduits 5.3.70
+- Add LagGoggles 5.8-132
+- Add TickCentral 3.2
+- Add Wasaila 1.0 (Waila AgriCraft stats addon)
+- Update AE2 Unofficial Extended Life v51e -> v0.52.4
+- Update EnderIO 5.2.61 -> 5.2.70
+- Update EnderIO Endergy 5.2.61 -> 5.3.70
+- Update EnderTweaker 1.2.0 -> 1.2.3
+- Update OAuth 1.06.3 -> 1.06.4
+- Update Underground Biomes 1.3.8 -> 1.3.11
 - Removed Lapis Stays in the Enchantment Table, because it has been abandonded, and it cannot be downloaded by third party launchers.
 
+## Bugfixes:
 
-
-Additions:
-- Immersive Engineering Wires and all metal Rods can now be made in the Sawmill and Precision Sawmill as well.
 - Nether Reeds Blocks can once again be converted into Nether Reeds. Added a different recipe for Reeds Buttons to avoid conflict. (This broke at some point.)
+- Chisels and Bits works correctly now, and its Chisels are unbreakable.
+- Bewitchment Demons can no longer be traded with. (This was never intended.)
+
+## Balance Adjustments:
+
+- Immersive Engineering Wires and all metal Rods can now be made in the Sawmill and Precision Sawmill as well.
 - Diamond Camel Armor, Diamond Desert Wolf Armor & Diamond Gloves can now be crushed into Diamonds.
 - Enchanted Golden Dates can now also be made in the Aether Altar from regular Golden Dates. (The player just needs to progress a bit further first.) Noted this in a tooltip and a quest.
-- Mekanism machines can now be cleared via crafting.
 - Pulsating Crystals can now be made 4 at the time if using a Diamatine Crystal instead of a Diamond.
 - Vibrant Crystals can now be made 4 at the time if using an Emeradic Crystal instead of an Emerald.
 - Added a recipe for Gas Conduits, and added a quest for them in Chapter 11.
@@ -33,14 +34,7 @@ Additions:
 - LightningCraft Ichor can now also be made in the Lightningcraft Infusion Multiblock.
 - Rainbow Tablets can now also be made slightly cheaper once the player has access to Plasma Cores.
 - Added an Alumite Singularity, which is now required for the Tinkers' Singularity.
-
-
-
-Balance changes:
-- VanillaFix Toasts no longer appear on the top right side of the screen, instead they are just logged.
-- Chisels and Bits works correctly now, and its Chisels are unbreakable.
 - Slightly more Aechor Plants spawn in the Aether.
-- Removed Mithril Ore and related recipes to avoid confusion. Mithril Ore wasn't obtainable anyway.
 - Solar Panels V-VIII and Photovoltaic Cells III-VI are now cheaper and available much earlier. Instead of unlocking them through Ch11-23, they are now unlocked in through Ch11-13.
 - All Building Gadgets now used 1/10th of the power per click.
 - The Superheating Element now produces 10x more heat for more Boiler Steam production.
@@ -52,14 +46,23 @@ Balance changes:
 - The Wildwood Dungeon Spawners are now all behind breakable Obsidian.
 - The Filled Bowl of Empty Promises is now made in the Hellfire Forge.
 - Increased all Modular Machinery Fluid Hatches 10x. Noted this in relevant quests. (The Essence of Dimensionality & Essence of Thought still take two full Fluid Hatches to create.)
-- Bewitchment Demons can no longer be traded with. (This was never intended.)
 - Life Essence is once again output by the Mob Loot Fabricator; and increased the Life Essence & EvilCraft Blood output/tick 8x.
 - Bricks, Brick blocks and Aerogel now have EMC.
 - The second Neutron Collector recipe takes 1 less Energy Collector Mk2 but 1 more Neutronium Ingot.
 
 
+## QoL Improvements:
 
-Quest book changes:
+- VanillaFix Toasts no longer appear on the top right side of the screen, instead they are just logged.
+- Mekanism machines can now be cleared via crafting.
+- Removed Mithril Ore and related recipes to avoid confusion. Mithril Ore wasn't obtainable anyway.
+- Removed & hid the unused Stone Rod from JEI.
+- Disabled the Death Urn that came with the new EnderIO version.
+- Disabled more Inventory Panel-related items added that came with the new EnderIO version.
+
+
+## Text and Quest Updates:
+
 - (Chapter 1) Corrected information about the workstation display location in the "What is JEI?" quest.
 - (Chapter 3) Corrected "Immersive" -> "Immerse" the Pyre quest description.
 - (Chapter 3) Added more Pigs, Rabbits & Mules to the list of mobs that can drop Fey Leather.
@@ -94,13 +97,9 @@ Quest book changes:
 - (Chapter 29) Rebalanced a bunch of the rewards in the Chapter.
 - (Chapter 29) Noted that the player will need 4 Essences of Englargement overall.
 - (Chapter 29) Changed some bold letter to dark red letters for better visibility.
-
-
-
-Miscellaneous:
-- Removed & hid the unused Stone Rod from JEI.
-- Disabled the Death Urn that came with the new EnderIO version.
-- Disabled more Inventory Panel-related items added that came with the new EnderIO version.
 - Added tooltips to all Blood Orbs of their maximum capacity and Altar tier requirement.
 - Added tooltips to custom Blood Magic Slates, just like the ones on previous tiers.
+
+## Texture Transformations:
+
 - The Rune of Deception now has a slightly clearer icon.

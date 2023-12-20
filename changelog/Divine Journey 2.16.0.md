@@ -1,19 +1,16 @@
-Mod Updates:
-- DJ2Addons: 1.1.0 -> 1.2.0
-- AE2 Extended Life: 0.52.4 -> 0.53.3
-- Roots: 3.1.5 -> 3.1.6
-- Thaumic Additions: 2.2.3 -> 2.2.5
 
+## Mod Modifications:
 
+- Update DJ2Addons: 1.1.0 -> 1.2.0
+- Update AE2 Extended Life: 0.52.4 -> 0.53.3
+- Update Roots: 3.1.5 -> 3.1.6
+- Update Thaumic Additions: 2.2.3 -> 2.2.5
+- Add Requious Frakto 0.12
+- Add Zen Utils 1.11.2
+- Add Tinkers OreDict Cache 1.0
 
-Mod Additions:
-- Requious Frakto 0.12
-- Zen Utils 1.11.2
-- Tinkers OreDict Cache 1.0
+## Bugfixes:
 
-
-
-Bugfixes:
 - Fix Aerogel creation causing crashes
 - Bewitchment now only accepts items with the correct nbt data
 - Fix bug where you couldn't use the Astral Sorcery Luminescent Table if you hadn't manually crafted it
@@ -35,9 +32,8 @@ Bugfixes:
 - Updating Thaumic Energistics to the fork reduces lag when using the Arcane Crafting Terminal on large networks
 - Updating Thaumic Energistics to the fork fixes strange connection issues involving AE2 Security
 
+## Balance Adjustments:
 
-
-Balance Changes:
 - Updating Thaumic Energistics to the fork introduces automated Arcane Crafting
 - Added Immersive Engineering Ore veins to most dimensions
 - Remove the Tender Ender Blender
@@ -48,9 +44,8 @@ Balance Changes:
 - Increased music amount and cap from Totemic Instruments. This makes rituals significantly easier to complete (should solve #213)
 - Buff Spiked Plate damage and blood multiplier, by a total of x64
 
+## QoL Improvements:
 
-
-QoL:
 - Added a JEI tab displaying Immersive Ore veins
 - Added a right-click interaction tab displaying various recipes (most were told as tooltips previously)
 - Make any lava placed in the Aether convert into Aerogel
@@ -75,9 +70,8 @@ QoL:
 - Buff the length of the Warpward Brew
 - Updating Thaumic Energistics adds "ghost aspects", which can be dragged from JEI for configuration
 
+## Text and Quest Updates:
 
-
-Text changes and quest fixes:
 - Added a few commands `/dj2 [command]` to link to various places - curseforge, discord, bugs, and guides
 - Add a tooltip to Builders Gadgets Paste containers indicating their maximum paste amount
 - Fix typo in DJ2's custom advancement for unlocking Roots
@@ -92,7 +86,6 @@ Text changes and quest fixes:
 - (Chapter 23) Remove incorrect information relating to Crop Sticks
 - (Chapter 23) Adjust information pertaining to the Scroll of Written Expertise, and being able to right click to gain the knowledge of how to use the table
 
+## Miscellaneous Changes:
 
-
-Misc:
 - Prevent Underground Biomes from generating in non-overworld Dimensions. Not technically a bug, but an unintended change that players dislike
