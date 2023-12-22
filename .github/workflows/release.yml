@@ -96,32 +96,32 @@ jobs:
           fail_on_unmatched_files: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
-#      # Upload build artifacts to Curseforge
-#      - name: "Upload Client to Curseforge"
-#        uses: itsmeow/curseforge-upload@v3
-#        id: client
-#        with:
-#          release_type: "${{ inputs.release-type }}"
-#          display_name: "${{ steps.build.outputs.client_name }}"
-#          file_path: "build/output/${{ steps.build.outputs.client_name }}.zip"
-#          game_endpoint: "minecraft"
-#          game_versions: "Minecraft 1.12:1.12.2"
-#          project_id: "370666"
-#          token: "${{ secrets.CF_PROJECT_KEY }}"
-#          changelog_type: markdown
-#          changelog: "${{ steps.version.outputs.changelog }}"
-#          # Will output "id", for the id of the project
-#
-#      - name: "Upload Server to Curseforge"
-#        uses: itsmeow/curseforge-upload@v3
-#        id: server
-#        with:
-#          release_type: "${{ inputs.release-type }}"
-#          display_name: "${{ steps.build.outputs.server_name }}"
-#          file_path: "build/output/${{ steps.build.outputs.server_name }}.zip"
-#          game_endpoint: "minecraft"
-#          project_id: "370666"
-#          parent_file_id: ${{ steps.client.outputs.id }}
-#          token: "${{ secrets.CF_PROJECT_KEY }}"
-#          changelog_type: markdown
-#          changelog: changelog/SERVER_UPDATE.md
+      # Upload build artifacts to Curseforge
+      - name: "Upload Client to Curseforge"
+        uses: itsmeow/curseforge-upload@v3
+        id: client
+        with:
+          release_type: "${{ inputs.release-type }}"
+          display_name: "${{ steps.build.outputs.client_name }}"
+          file_path: "build/output/${{ steps.build.outputs.client_name }}.zip"
+          game_endpoint: "minecraft"
+          game_versions: "Minecraft 1.12:1.12.2"
+          project_id: "370666"
+          token: "${{ secrets.CF_PROJECT_KEY }}"
+          changelog_type: markdown
+          changelog: "${{ steps.version.outputs.changelog }}"
+          # Will output "id", for the id of the project
+
+      - name: "Upload Server to Curseforge"
+        uses: itsmeow/curseforge-upload@v3
+        id: server
+        with:
+          release_type: "${{ inputs.release-type }}"
+          display_name: "${{ steps.build.outputs.server_name }}"
+          file_path: "build/output/${{ steps.build.outputs.server_name }}.zip"
+          game_endpoint: "minecraft"
+          project_id: "370666"
+          parent_file_id: ${{ steps.client.outputs.id }}
+          token: "${{ secrets.CF_PROJECT_KEY }}"
+          changelog_type: markdown
+          changelog: changelog/SERVER_UPDATE.md
