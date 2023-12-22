@@ -13,17 +13,21 @@ LICENSE, and an overrides folder on the same level as the buildtools
 folder containing this file.
 """
 
-import argparse
-import hashlib
+from argparse import ArgumentParser
+from hashlib import sha256
+from threading import Thread
 import json
 import os
 import shutil
 import subprocess
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from time import time
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(prog="build", description=__doc__)
+    parser = ArgumentParser(prog="build", description=__doc__)
     parser.add_argument("--prerelease", "-P",
                         action="store_true",
                         help="generates a name based on the manifest version, date of last commit, and sha of last commit")
@@ -99,6 +103,7 @@ def createBaseDir():
     os.makedirs(client, exist_ok=True)
     os.makedirs(server, exist_ok=True)
     os.makedirs(cache, exist_ok=True)
+    os.makedirs(output, exist_ok=True)
     os.makedirs(cache + "/libraries", exist_ok=True)
     os.makedirs(cache + "/mods", exist_ok=True)
     os.makedirs(cache + "/mods/client", exist_ok=True)
@@ -115,90 +120,114 @@ def serverModNotice(failedModDownload: list):
                 f.write(i + "\n")
 
 
-def generateModlist(manifest, key: str, modlistServer: list, modlistClient: list):
+def fetchMod(modlistClient: list, modlistServer: list, failedModDownload: list, mod: dict, headers: dict):
+    """Fetches a mod from the Curseforge API"""
+
+    basicUrl = "https://api.curseforge.com/v1/mods/{0}/files/{1}/download-url".format(mod["projectID"], mod["fileID"])
+    standard = requests.get(basicUrl, headers=headers)
+
+    if (standard.status_code == 403):
+        print("Curseforge returned status code 403 Forbidden, which typically means your API key is invalid")
+        return
+    try:
+        metadata = json.loads(standard.text)
+    except:
+        print("failed to download" + basicUrl)
+        if ("slug" in mod):
+            failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(mod["slug"], mod["fileID"]))
+        else:
+            mod_request = requests.get("https://api.curseforge.com/v1/mods/{0}".format(mod["projectID"]), headers=headers)
+            try:
+                data = mod_request.json()["data"]
+                failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(data["slug"], mod["fileID"]))
+            except:
+                failedModDownload.append("This is the raw mod id and file id, the cf api was being mega fucked: `{0}`, `{1}`".format(mod["projectID"], mod["fileID"]))
+        return
+
+    # Put the mod in a list depending on if its client only
+    if (("clientOnly" in mod and mod["clientOnly"])):
+        modlistClient.append(metadata["data"])
+    else:
+        modlistServer.append(metadata["data"])
+
+
+def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient: list, retries: int):
     """Get the list of URLs of mods from Curseforge"""
-    print("Downloading mods")
+    print("getting the download url of all mods")
 
     failedModDownload = []
 
     # Curseforge api key
     if (key == None):
+        os.getenv("CFAPIKEY")
+
+    if (key == None):
         with open(basePath + "/buildtools/API-KEY", "r") as file:
             key = file.readline().replace("\n", "")
 
-    if (key == None):
-        os.getenv("CFAPIKEY")
-
+    access = requests.Session()
+    access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
     headers = {"Accept": "application/json", "x-api-key": key}
+    standard = requests.get("https://api.curseforge.com/v1/games", headers=headers)
 
-    invalidApiKey = headers["x-api-key"] == None
-    sentWarning = False
-
-    for mod in manifest["files"]:
-        if (invalidApiKey):
-            if (sentWarning):
-                print("Your API key is invalid")
-                print(headers["x-api-key"])
-                print("Skipping downloading mods")
-                sentWarning = True
-            continue
-
-        basicUrl = "https://api.curseforge.com/v1/mods/{0}/files/{1}/download-url".format(mod["projectID"], mod["fileID"])
-        standard = requests.get(basicUrl, headers=headers)
-
-        if (standard.status_code == 403):
-            print("Curseforge returned status code 403 Forbidden, which typically means your API key is invalid")
-            invalidApiKey = True
-            continue
-        try:
-            metadata = json.loads(standard.text)
-        except:
-            print("failed to download" + basicUrl)
-            if ("slug" in mod):
-                failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(mod["slug"], mod["fileID"]))
-            else:
-                mod_request = requests.get("https://api.curseforge.com/v1/mods/{0}".format(mod["projectID"]), headers=headers)
-                try:
-                    data = mod_request.json()["data"]
-                    failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(data["slug"], mod["fileID"]))
-                except:
-                    failedModDownload.append("This is the raw mod id and file id, the cf api was being mega fucked: `{0}`, `{1}`".format(mod["projectID"], mod["fileID"]))
-            continue
-
-        # Put the mod in a list depending on if its client only
-        if (("clientOnly" in mod and mod["clientOnly"])):
-            modlistClient.append(metadata["data"])
-        else:
-            modlistServer.append(metadata["data"])
+    if standard.status_code == 403:
+        print("Curseforge returned status code 403 Forbidden")
+        print("This typically means your API key is invalid")
+        print(headers["x-api-key"])
+        print("Skipping downloading mods")
+    else:
+        threads = []
+        for mod in manifest["files"]:
+            threads.append(Thread(target=fetchMod, args=(modlistClient, modlistServer, failedModDownload, mod, headers,)))
+            threads[-1].start()
+        for thread in threads:
+            thread.join()
 
     serverModNotice(failedModDownload)
     print("modlist compiled")
 
 
 def externalDeps(manifest, retries: int):
-    """If we have external dependancies, try to download them"""
+    """If we have external dependencies, try to download them"""
+    counter = 0
+
     if ("externalDeps" in manifest and len(manifest["externalDeps"]) != 0):
         for mod in manifest["externalDeps"]:
             with open(cache + "/mods/" + mod["url"].split("/")[-1], "w+b") as jar:
+                counter += 1
                 for i in range(retries + 1):
                     if (i == retries):
                         raise Exception("Download failed")
 
                     r = requests.get(mod["url"])
 
-                    hash = hashlib.sha256(r.content).hexdigest()
+                    hash = sha256(r.content).hexdigest()
                     if (str(hash) == mod["hash"]):
                         jar.write(r.content)
                         print("hash succsessful for {}".format(mod["name"]))
                         break
                     else:
                         print("hash unsuccsessful for {}".format(mod["name"]))
-                        print("use", str(hash),
-                              "this if it is consistant across runs")
+                        print("use", str(hash), "this if it is consistant across runs")
                         pass
+    if counter > 0:
+        print("downloaded " + str(counter) + " mods via external dependencies")
 
 
-def downloadModList(modlistServer: list, modlistClient: list):
+def downloadMod(downloadedMods: list, location: str, mod, retries: int):
+    """Downloads a mod to a folder in the cache"""
+
+    access = requests.Session()
+    access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
+    response = access.get(mod)
+
+    with open(cache + "/mods/" + location + "/" + mod.split("/")[-1], "w+b") as jar:
+        jar.write(response.content)
+        print(mod + " downloaded")
+        downloadedMods.append(mod)
+
+
+def downloadModList(modlistServer: list, modlistClient: list, retries: int):
     """Download mods generated by generateModlist"""
 
     # Clear cached mods
@@ -210,22 +239,28 @@ def downloadModList(modlistServer: list, modlistClient: list):
     # Copy mod overrides into cache
     shutil.copytree(basePath + "/overrides/mods", cache + "/mods/server", dirs_exist_ok=True)
 
-    # Download all mods to a location based on their list to the cache,
+    # Download all mods to a location based on their list to the cache
+    threads = []
+    downloadedMods = []
     for mod in modlistServer:
-        with open(cache + "/mods/server/" + mod.split("/")[-1], "w+b") as jar:
-            r = requests.get(mod)
-            jar.write(r.content)
-            print(mod + " Downloaded")
-    print("%s Server Mods Downloaded" % (len(modlistServer)))
-
+        threads.append(Thread(target=downloadMod, args=(downloadedMods, "server", mod, retries)))
+        threads[-1].start()
     for mod in modlistClient:
-        with open(cache + "/mods/client/" + mod.split("/")[-1], "w+b") as jar:
-            r = requests.get(mod)
-            jar.write(r.content)
-            print(mod + " Downloaded")
-    print("%s Client Mods Downloaded" % (len(modlistClient)))
+        threads.append(Thread(target=downloadMod, args=(downloadedMods, "client", mod, retries)))
+        threads[-1].start()
+    for thread in threads:
+        thread.join()
 
-    print("All Mods Downloaded")
+    print("%s mods downloaded" % (len(downloadedMods)))
+
+    if len(downloadedMods) >= (len(modlistServer) + len(modlistClient)):
+        print("all mods were downloaded")
+    else:
+        print("failed to download all mods, the following mods were not downloaded")
+        missingMods = [x for x in (modlistServer + modlistClient) if x not in downloadedMods]
+        for mod in missingMods:
+            print(mod)
+
 
 
 def getVersion(manifest):
@@ -385,11 +420,17 @@ def updateMMCInstance(instancePath: str):
 
 def build(args):
     """Build client, server, and with options for more"""
+
+    print("starting the build process with the following settings")
+    print(args)
+
+    start = time()
+
     modlistServer = []
     modlistClient = []
 
     if (not args.client and not args.server and not args.dev):
-        print("You must specify either client, server, or dev")
+        print("you must specify either client, server, or dev")
         return
 
     # Read the manifest
@@ -407,21 +448,25 @@ def build(args):
     # Ensure the base directories exist
     createBaseDir()
 
-    # Download any external depenancies defined in the manifest, and add sucessful downloads to the modlist
     if (args.download):
+        print("starting download process at " + str(round(time() - start, 2)) + " seconds")
+
+        # Download any external depenancies defined in the manifest, and add sucessful downloads to the modlist
         externalDeps(manifest, args.retries)
+        print("downloaded external dependencies in " + str(round(time() - start, 2)) + " seconds")
 
-    # Create modlist
-    if (args.download):
-        generateModlist(manifest, args.key, modlistServer, modlistClient)
+        # Create modlist
+        generateModlist(manifest, args.key, modlistServer, modlistClient, args.retries)
+        print("generated a modlist to download in " + str(round(time() - start, 2)) + " seconds")
 
-    # Download mods
-    if (args.download):
-        downloadModList(modlistServer, modlistClient)
+        # Download mods
+        downloadModList(modlistServer, modlistClient, args.retries)
+        print("downloaded the modlist in " + str(round(time() - start, 2)) + " seconds")
 
     # Download and install Forge and its libraries
     if (args.server):
         forgeInstaller(manifest)
+        print("installed the forge installer in " + str(round(time() - start, 2)) + " seconds")
 
     # Copy required files to the client instance
     if (args.client):
@@ -458,7 +503,7 @@ def build(args):
     if (args.dev):
         updateMMCInstance(args.dev)
 
-    print("done")
+    print("done in " + str(round(time() - start, 2)) + " seconds")
 
 
 if (__name__ == "__main__"):
