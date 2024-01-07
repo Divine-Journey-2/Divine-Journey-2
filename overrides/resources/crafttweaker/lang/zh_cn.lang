@@ -338,7 +338,7 @@ dj2.molten_furnace.desc1=§f位于特定NPC房间。
 dj2.dungeon_tokens.desc0=§f由位于§9秘界地牢§r§f的秘界寄生虫和
 dj2.dungeon_tokens.desc1=§f地牢监管者掉落。通过在对应祭坛上放置
 dj2.dungeon_tokens.desc2=§f巫师之书来召唤它们。
-dj2.wizards_book.desc0=§f从位于r§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
+dj2.wizards_book.desc0=§f从位于§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
 
 # Mekanism tooltips
 dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前3行的物品！
