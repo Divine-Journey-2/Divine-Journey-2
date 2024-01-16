@@ -390,12 +390,14 @@ def saveGithubOutput(location: str, value: str):
 
 def buildClient(archive: str):
     """Build the client zip"""
+    saveGithubOutput("client_name", archive)
     shutil.make_archive(output + "/" + archive, "zip", client)
     print("client zip \"%s.zip\" made" % (archive))
 
 
 def buildServer(archive: str):
     """Build the server zip"""
+    saveGithubOutput("server_name", archive)
     shutil.make_archive(output + "/" + archive, "zip", server)
     print("server zip \"%s.zip\" made" % (archive))
 
@@ -484,21 +486,16 @@ def build(args):
     if (args.prerelease):
         name = getPreReleaseName()
 
-    archive_name = "%s_%s" % (version, name) if name else version
+    if (args.zip):
+        archive_name = "%s_%s" % (version, name) if name else version
 
-    # Zip the client
-    if (args.client):
-        client_name = archive_name
-        saveGithubOutput("client_name", client_name)
-        if (args.zip):
-            buildClient(client_name)
+        # Zip the client
+        if (args.client):
+            buildClient(archive_name)
 
-    # Zip the server
-    if (args.server):
-        server_name = archive_name + "_Server_Pack"
-        saveGithubOutput("server_name", server_name)
-        if (args.zip):
-            buildServer(server_name)
+        # Zip the server
+        if (args.server):
+            buildServer(archive_name + "_Server_Pack")
 
     if (args.dev):
         updateMMCInstance(args.dev)
