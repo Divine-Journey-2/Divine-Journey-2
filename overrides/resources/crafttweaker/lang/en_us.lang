@@ -1,6 +1,6 @@
 # Commands
-commands.curseforge.usage=Sends a link to the curseforge page in chat.
-commands.discord.usage=Sends a link to the discord page in chat.
+commands.curseforge.usage=Sends a link to the Curseforge page in chat.
+commands.discord.usage=Sends a link to the Discord page in chat.
 commands.issues.usage=Sends a link to the issues page in chat.
 commands.book_of_logic.usage=Prints the full text of the book of logic to chat, required for localization
 commands.introduction_book.usage=Prints the full text of the introduction book to chat, required for localization
@@ -198,25 +198,25 @@ dj2.astral_core.desc1=§rthat each have a §cunique trait§r of a Faint Constell
 dj2.astral_core.desc2=§dAlcara§r, §7Gelu§r, §aUlteria§r, and §6Vorux§r. To add a trait to a Crystal:
 dj2.astral_core.desc3=§r1. Attune it to any Constellation.
 dj2.astral_core.desc4=§r2. Wait until a Dim Constellation is available at night.
-dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation this will add a
-dj2.astral_core.desc6=§r   §9Trait§r modifier to it.
+dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation. 
+dj2.astral_core.desc6=§r   This will add a §9Trait§r modifier to it.
 dj2.astral_core.desc7=§r§lCANNOT BE AUTOCRAFTED.
 dj2.star_of_revelation.desc0=§cDoes not get consumed by regular crafting.
 dj2.star_of_revelation.desc1=§c§lWARNING: §7§lAE2 autocrafting consumes the item! Use an external crafter like an RFTools Crafter when using this item in your ME System!
-dj2.spacerock.desc0=§rFound in custom §7Moon§r Dungeons.
-dj2.secret_alien_technology.desc0=§rFound in custom §cMars§r dungeons.
-dj2.chunk_of_the_meteor_that_ended_the_era_of_dinosaurs.desc0=§rFound in custom dungeons in the §7Asteroid Belt§r.
-dj2.fragment_of_the_sun.desc0=§rFound in custom §6Venus§r dungeons.
+dj2.spacerock.desc0=§rFound in the custom §7Moon§r Dungeons.
+dj2.secret_alien_technology.desc0=§rFound in the custom §cMars§r Dungeons.
+dj2.chunk_of_the_meteor_that_ended_the_era_of_dinosaurs.desc0=§rFound in the custom Dungeons in the §7Asteroid Belt§r.
+dj2.fragment_of_the_sun.desc0=§rFound in the custom §6Venus§r Dungeons.
 dj2.crystal_core.desc0=§rIf using the Rock Crystal recipe,
 dj2.crystal_core.desc1=§rthe input Rock Crystal has to have:
 dj2.crystal_core.desc2=§9Size >= 300§r and §9Purity >= 75%§r.
 dj2.crystal_core.desc3=§rBefore unlocking the Infused Diamond recipe,
-dj2.crystal_core.desc4=§rit can only be §cmanually crafted§r.
+dj2.crystal_core.desc4=§rit can only be §ccrafted manually§r.
 dj2.celestial_crystal_core.desc0=§rIf using the Celestial Crystal recipe,
 dj2.celestial_crystal_core.desc1=§rthe input Celestial Crystal has to have:
 dj2.celestial_crystal_core.desc2=§9Size >= 700§r and §9Purity >= 75%§r.
 dj2.celestial_crystal_core.desc3=§rBefore unlocking the Neutronium Nugget recipe,
-dj2.celestial_crystal_core.desc4=§rit can only be §cmanually crafted§r.
+dj2.celestial_crystal_core.desc4=§rit can only be §ccrafted manually§r.
 dj2.solar_seeds.desc0=§rCan only be planted on Crop Sticks.
 dj2.apalachia_door_key2.desc0=§cUse it the same way as the previous key to ascend further.
 dj2.skythern_door_key2.desc0=§cUse it on the Skythern Boss Door!
@@ -226,7 +226,7 @@ dj2.white_matter.desc1=§rUse the Tome of Knowledge to learn all transmutations.
 dj2.essence_of_logic.desc0=§rCraft the Book of Logic and solve the puzzle!
 dj2.essence_of_logic.desc1=§rUse Steve, Alex and Herobrine with the correct
 dj2.essence_of_logic.desc2=§rAge, Number of friends and Height to craft this item!
-dj2.essence_of_logic.desc3=§r§lIt can only be manually crafted!
+dj2.essence_of_logic.desc3=§r§lIt can only be crafted manually!
 dj2.essence_of_infinity.desc0=§r§lRequires 50 full Mana Pools to craft.
 dj2.clay.desc0=§5§oFinally balanced!
 dj2.natures_blessing.desc0=§rRequires 1 full Mana Pool to craft.
@@ -372,7 +372,7 @@ dj2.ayeraco_wing.desc1=§fAyeraco. They are summoned by the §r§eHorde Horn
 dj2.ayeraco_wing.desc2=§fin the End. Each Ayeraco has a chance to drop 1 or 2.
 
 # Ender Utilities tooltips
-dj2.inactive_ender_core.desc0=§fCan be automated via a Mechanical User on Entity mode on an End Crystal or Stabilized End Crystal.
+dj2.inactive_ender_core.desc0=§fCan be automated via a Mechanical User in "Entity" mode on an End Crystal or in "Use Item On Block" mode on a Stabilized End Crystal.
 dj2.inactive_ender_core.desc1=§fCan be done in §r§o§cany§r§f Dimension, not just the End Dimension.
 dj2.chairwand.desc0=1. Right Click on the Ground to add location to sit.
 dj2.chairwand.desc1=2. Place a Stair with Shift+Right Click
@@ -460,7 +460,7 @@ dj2.rare_earths.desc6=§fCopper, Tin, Lead, Cinnabar.
 dj2.grapple_gun_spool.desc0=Item disabled. It can crash the game.
 dj2.bath_salts.desc0=§fPlace this into an Arcane Spa underneath a small pool
 dj2.bath_salts.desc1=§fof water to turn the Water into Purifying Liquid.
-dj2.turret.desc0=§fItem disabled. unmodifiable loot table.
+dj2.turret.desc0=§fItem disabled, unmodifiable loot table.
 dj2.void_seed.desc0=§fObtained by throwing a Causality Collapser on a
 dj2.void_seed.desc1=§fFlux Rift, or using a Void Siphon in the same chunk.
 dj2.primordial_pearl.desc0=§fDropped rarely by §r§5Void Rifts§r§f when
@@ -480,12 +480,12 @@ dj2.livingrock.desc2=§f§ointo Livingrock... How peculiar.
 dj2.livingwood.desc0=§f§oIt seems only certain Dimensional Logs
 dj2.livingwood.desc1=§f§ohave the ability to be transformed
 dj2.livingwood.desc2=§f§ointo Livingwood... How peculiar.
-dj2.terrasteel.desc0=§fTo obtain, setup a §r§9Terrestrial Agglomeration Plate
-dj2.terrasteel.desc1=§faccording to your §r§eLexica Botania§r§f on top of §r§9Lapis Blocks
+dj2.terrasteel.desc0=§fTo obtain, set up a §r§9Terrestrial Agglomeration Plate
+dj2.terrasteel.desc1=§faccording to your §r§eLexica Botania§r§f, on top of §r§9Lapis Blocks
 dj2.terrasteel.desc2=§fand Livingrock, place a §r§eSpark§r§f on top and also on a
-dj2.terrasteel.desc3=§fnearby Mana Pool, then throw or Right Click a piece of
-dj2.terrasteel.desc4=§bManasteel, Mana Pearl§r§f and §r§bMana Diamond§r§f on top of the
-dj2.terrasteel.desc5=§fPlate! The Spark will take a half a pool of Mana and
+dj2.terrasteel.desc3=§fnearby Mana Pool. Then throw or Right Click a piece of
+dj2.terrasteel.desc4=§bManasteel§r§f, §r§bMana Pearl§r§f and §r§bMana Diamond§r§f on top of the
+dj2.terrasteel.desc5=§fPlate! The Spark will take a half a Pool of Mana and
 dj2.terrasteel.desc6=§fcreate an Ingot of §r§aTerrasteel§r§f.
 dj2.baublebox.desc0=§4§oRequires a Common Backpack you've just crafted.
 dj2.biomestonea.desc0=§fGenerated by the §r§7Marimorphosis§r§f Flower.
@@ -493,16 +493,16 @@ dj2.lexicon.desc0=§c§lWarning:§r§f§l Recipes shown may be incorrect.
 dj2.lexicon.desc1=§f§lAlways refer to JEI when crafting.
 
 # Thermal augment tooltips
-dj2.thermal_kit.desc0=Increase the base energy capacity of a Machine or Dynamo by §c%d§r of the (variable) base.
-dj2.thermal_kit.desc1=Increase the base fluid capacity of a Portable Tank by §cx%d§r of the base of §c20,000mb§r.
-dj2.thermal_kit.desc2=Increase the base item capacity of a Cache by §cx%d§r of the base of §c20,000§r items.
-dj2.thermal_kit.desc3=Increase the base slot amount of a Storage Box by §c%d§r from the base of §c18§r.
+dj2.thermal_kit.desc0=Increases the base energy capacity of a Machine or Dynamo by §c%d§r of the (variable) base.
+dj2.thermal_kit.desc1=Increases the base fluid capacity of a Portable Tank by §cx%d§r of the base of §c20,000mb§r.
+dj2.thermal_kit.desc2=Increases the base item capacity of a Cache by §cx%d§r of the base of §c20,000§r items.
+dj2.thermal_kit.desc3=Increases the base slot amount of a Storage Box by §c%d§r from the base of §c18§r.
 
 # Silver plate
 dj2.silver_plate.desc0=§5§oS'il vous plaît
 
 # Blood Magic: Alchemical Wizardy tooltips
-dj2.rune_speed.desc0=Increases the speed LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.
+dj2.rune_speed.desc0=Increases the speed at which LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.
 dj2.rune_self_sacrifice.desc0=Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.
 dj2.rune_sacrifice.desc0=Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.
 dj2.rune_capacity.desc0=Increases the capacity of the Blood Altar by §62,000§r LP per rune, additively.
@@ -528,7 +528,7 @@ dj2.atum_artifact_melee.desc0=§4§lConsidered as an Atum Melee Artifact.
 dj2.atum_artifact_ranged.desc1=§4§lConsidered as an Atum Ranged Artifact.
 dj2.atum_artifact_armor.desc2=§4§lConsidered as an Atum Armor Artifact.
 dj2.atum_artifact_necklace.desc3=§4§lConsidered as an Atum Necklace Artifact.
-dj2.relic_ore.desc0=§fMine it up regularly for §r§4§lDirty Idols, §r§for use
+dj2.relic_ore.desc0=§fMine it up to regularly obtain §r§4§lDirty Idols, §r§for use
 dj2.relic_ore.desc1=§9§lSilk Touch§r§f to obtain the Ore for further processing.
 dj2.golden_date_enchanted.desc0=§4§lPrimarily obtained by trading with Sunspeakers.
 dj2.golden_date_enchanted.desc1=§cCan also be enchanted in The Aether Altar.
@@ -615,22 +615,22 @@ dj2.galacticraft_dense_ice.desc0=§fFound in the §r§9Asteroids§r§f dimension
 
 # AbyssalCraft tooltips
 dj2.monolith_stone.desc0=§7Can be obtained by mining the walls of
-dj2.monolith_stone.desc1=§7Shoggoth dens, but can also be crafted.
+dj2.monolith_stone.desc1=§7Shoggoth Lairs in Omothol, but can also be crafted.
 dj2.necronomicon.desc0=§7Crafting doesn't consume the input Statues.
 dj2.coralium_ore.desc0=§fGenerates in Ocean and Swamp biomes.
 dj2.coralium_stone.desc0=§fCoralium Cobblestone can be found in the Abyssal Wasteland.
 dj2.coralium_stone.desc1=§fYou can also obtain this by dumping Liquid Antimatter
 dj2.coralium_stone.desc2=§fover §r§bLiquid Coralium§r§f, and mining up the resulting Stone!
 dj2.coralium_stone.desc3=§f(If you can't find any Liquid Antimatter, summon an
-dj2.coralium_stone.desc4=§fAntimatter Cow with Roots.)
+dj2.coralium_stone.desc4=§fAnti-Cow with Roots.)
 dj2.eye_of_the_abyss.desc0=§fTo obtain, summon and defeat Asorah,
 dj2.eye_of_the_abyss.desc1=§fthe Fallen in the §r§2Abyssal Wasteland§r§f.
 dj2.eye_of_the_abyss.desc2=§f(You first need an Abyssal Wasteland
 dj2.eye_of_the_abyss.desc3=§fNecronomicon. Open it, and read the
 dj2.eye_of_the_abyss.desc4=§fRituals/Abyssal Wasteland/Ritual of
 dj2.eye_of_the_abyss.desc5=§fThe Sleeper section.)
-dj2.coralium_flesh.desc0=§fDrops from Zombies in the Abyssal Wasteland.
-dj2.coralium_bone.desc0=§fDrops from Skeletal Zombies in the Abyssal Wasteland.
+dj2.coralium_flesh.desc0=§fDropped by Zombies in the Abyssal Wasteland.
+dj2.coralium_bone.desc0=§fDropped by Skeletal Zombies in the Abyssal Wasteland.
 dj2.dreadshard.desc0=§fDropped by §r§cDreadguards§r§f in the Dreadlands.
 dj2.dreadfragment.desc0=§fDropped by Zombies in the Dreadlands.
 dj2.dreadlands_infused_powerstone.desc0=§fTo obtain, craft a §r§3Refined Coralium Pickaxe§r§f and about 6
@@ -640,7 +640,7 @@ dj2.dreadlands_infused_powerstone.desc3=§fand in the center mine up your §r§c
 dj2.abyssalnite_chunk.desc0=§fDropped by §r§cAbyssalnite Golems§r§f in the Dreadlands.
 dj2.dreadium_chunk.desc0=§fDropped by §r§cDreaded Abyssalnite Golems§r§f in the Dreadlands.
 dj2.dread_plagued_key.desc0=§fDropped by §r§cCha'garoth§r§f at the end of the §r§cDreadlands
-dj2.dread_plagued_key.desc1=§fdungeon. You can enter it by placing down the
+dj2.dread_plagued_key.desc1=§fDungeon. You can enter it by placing down the
 dj2.dread_plagued_key.desc2=§cAltar of Cha'garoth (bottom & top)§r§f at Y=40 in
 dj2.dread_plagued_key.desc3=§fin a Dreadlands Mountains biome.
 dj2.eldritch_scale.desc0=§fDropped by §r§7Remnants§r§f and §r§7Minions of The Gatekeeper§r§f in §r§7Omothol§r§f.
@@ -648,8 +648,8 @@ dj2.omothol_flesh.desc0=§fDropped by Omothol Ghouls in... Omothol.
 dj2.omothol_flesh.desc1=§f§oIncredible, I know.
 dj2.gatekeeper_essence.desc0=§fDropped by §r§7J'zahar§r§f, the final boss of Omothol.
 dj2.soul_reaper.desc0=§fDropped by §r§7Sacthoth, Harbinger of Doom§r§f, the final boss of AbyssalCraft.
-dj2.crystalcluster.desc0=§fCan only be mined with a pickaxe of Mining Level at least 8.
-dj2.crystalcluster2.desc0=§fCan only be mined with a pickaxe of Mining Level at least 10.
+dj2.crystalcluster.desc0=§fCan only be mined with a pickaxe of Mining Level ≥8.
+dj2.crystalcluster2.desc0=§fCan only be mined with a pickaxe of Mining Level ≥10.
 dj2.necronomicon_ownership.desc0=Gain ownership of the book via shapeless crafting.
 
 # Erebus tooltips
@@ -665,17 +665,17 @@ dj2.bio_velocity.desc0=§f- Solifuges (in the Ulterior Outback biome)
 dj2.bio_velocity.desc1=§f- Centipedes (in most biomes)
 dj2.supernatural_velocity.desc0=§f- Solifuges (in the Ulterior Outback biome)
 dj2.supernatural_velocity.desc1=§f- Centipedes (in most biomes)
-dj2.exoskeleton_plate.desc0=§f- Beetles (in Underground Jungles,
-dj2.exoskeleton_plate.desc1=§f           Subterranean Savannahs and Elysian Fields)
-dj2.exoskeleton_plate.desc2=§f- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)
+dj2.exoskeleton_plate.desc0=§f- Beetles (in the Underground Jungle,
+dj2.exoskeleton_plate.desc1=§f           Subterranean Savannah, and Elysian Fields biomes)
+dj2.exoskeleton_plate.desc2=§f- Antlions (in Volcanic Desert biome and in Antlion Overlord Pyramids)
 dj2.magma_crawler_eye.desc0=§f- Magma Crawlers (in Antlion Overlord Pyramids)
 dj2.tarantula_leg.desc0=§f- Tarantulas (in most biomes)
 dj2.fly_wing.desc0=§f- Flies (in all biomes)
 dj2.fly_wing.desc1=§f- Botflies (in most biomes)
-dj2.dragonfly_wing.desc0=§f- Dragonflies (on Dragonfly Lilypads in)
-dj2.dragonfly_wing.desc1=§flarge water bodies within Submerged Swamps
-dj2.elastic_fibre.desc0=§f- Locusts (in Elysian Fields and Subterranean Savannahs)
-dj2.elastic_fibre.desc1=§f- Punchrooms (in Fungal Forests as an uncommon drop)
+dj2.dragonfly_wing.desc0=§f- Dragonflies (on Dragonfly Lilypads in
+dj2.dragonfly_wing.desc1=§flarge water bodies within the Submerged Swamp biome)
+dj2.elastic_fibre.desc0=§f- Locusts (in the Elysian Fields and Subterranean Savannah biomes)
+dj2.elastic_fibre.desc1=§f- Punchrooms (in the Fungal Forest biome as an uncommon drop)
 dj2.cabbage_seeds.desc0=§fBreak any tallgrass in Erebus to obtain.
 dj2.cabbage_seeds.desc1=§fSwamp Plants always drop these.
 
@@ -690,14 +690,13 @@ dj2.crop_sticks.desc6=§falong with a Ranged Collector or an Absorption Hopper.
 
 # Quark tooltips
 dj2.witch_hat.desc0=§fDropped rarely by Witches.
-dj2.enderdragon_scale.desc0=§fObtained after defeating the Ender Dragon for the second or more time.
+dj2.enderdragon_scale.desc0=§fObtained from every Ender Dragon after defeating it for the second time.
 
 # Roots tooltips
 dj2.roots_wipes_input_bag.desc0=§l§cWARNING: §r§7Crafting this item will wipe the input bag's inventory!
 dj2.elemental_soul_crop.desc0=Can be grown on any Elemental Soil.
-dj2.baffle_cap_mushroom.desc0=Grows exactly like a vanilla mushroom.
+dj2.baffle_cap_mushroom.desc0=Grows exactly like a vanilla Mushroom.
 dj2.wildwood_quiver.desc0=§4§oCrafting this requires a Common Backpack you've just crafted.
-dj2.imp_leather.desc0=§fImps can be spawned by the Roots 'Summon Creatures' ritual.
 
 # Astral Sorcery tooltips
 dj2.infused_wood.desc0=§fOnly accepts Glimmering Dreamwood
@@ -730,7 +729,7 @@ dj2.empty_drawer.desc0=§6Contains nothing§r
 dj2.vethea_crypt_wall.desc0=§fFound on all layers on Vethea. Simply
 dj2.vethea_crypt_wall.desc1=§fmine up the walls of these brown dungeons.
 dj2.vethea_heliosis_lump.desc0=§fFound on the top layer on Vethea,
-dj2.vethea_heliosis_lump.desc1=§fin special (brown) dungeons.
+dj2.vethea_heliosis_lump.desc1=§fin special (brown) Dungeons.
 dj2.vethea_dream_melon.desc0=§fFound inside Chests in small Crypts
 dj2.vethea_dream_melon.desc1=§fon the bottom layer of Vethea.
 dj2.vethea_luna_bricks.desc0=§fFound on the top layer of Vethea,
@@ -747,7 +746,7 @@ dj2.totempedia.desc0=§c§lWARNING: §r§fRecipes shown may be incorrect.
 dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
 # Aether tooltips
-dj2.aerogel_warning.desc0=§c§lOn servers with TickProfiler, attemting to automate this will cause crashes.
+dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod, attemting to automate this will cause crashes.
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§fTakes a quarter of a Mana Pool to craft.
@@ -766,10 +765,10 @@ dj2.constructionpastecontainer.desc0=§fThis Paste Container can store a maximum
 dj2.jei.industrial_graphite_dust.desc0=Explode some Industrial Grade Graphite Dust to create this item!
 
 # Hand Framing Tool tooltips
-dj2.jei.hand_framing_tool.desc0=Frame your tools by hand!
-dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame drawers already placed in the world.
-dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a crafting table. See the item's crafting table recipes in JEI.
-dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking any drawers in-world will frame them.
+dj2.jei.hand_framing_tool.desc0=Frame your Drawers by hand!
+dj2.jei.hand_framing_tool.desc1=The Hand Framing Tool lets you frame Drawers already placed in the world.
+dj2.jei.hand_framing_tool.desc2=To do this, the tool itself needs to be framed in a Crafting Table. See the item's Crafting Table recipes in JEI.
+dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking any Drawers in-world will frame them.
 
 # Deprecated
 dj2.deprecated.deprecated.desc=§cDeprecated
