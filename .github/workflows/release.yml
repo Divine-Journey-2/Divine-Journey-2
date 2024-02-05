@@ -5,6 +5,9 @@ name: Publish a Release
 # CFAPIKEY - accesss token to download mods
 # CF_PROJECT_KEY - access token for project
 
+# Required variables:
+# CURSEFORGE_MODPACK_ID - ID of the project on curseforge. For DJ2, this is "370666"
+
 on:
   workflow_dispatch:
     inputs:
@@ -41,6 +44,25 @@ jobs:
       contents: write # give the token the ability to write commits and releases to the repo
 
     steps:
+      # Ensure that the secret(s) required to run the workflow exist
+      - name: "Check for Secret presence"
+        id: secret-check
+        shell: bash
+        run: |
+          if [ "${{ secrets.CFAPIKEY }}" == "" ]; then
+            echo "Unable to access the CFAPIKEY secret, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          if [ "${{ secrets.CF_PROJECT_KEY }}" == "" ]; then
+            echo "Unable to access the CF_PROJECT_KEY secret, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          if [ "${{ vars.CURSEFORGE_MODPACK_ID }}" == "" ]; then
+            echo "Unable to access the CURSEFORGE_MODPACK_ID environment variable, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "Passed access check for required secrets and environment variables" >> $GITHUB_STEP_SUMMARY
+
       # Setup the repo, download all tags, download Python, and install the requests library
       - name: "Checkout Repo"
         uses: actions/checkout@v4
@@ -55,18 +77,18 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Install requests
+      - name: "Install requests"
         run: pip install requests
 
       # Update the various version-specific files from the prior version to the current version,
       # and remove any unused parts of the LATEST.md changelog, before pushing it to the repo
-      - name: Update version
+      - name: "Update version"
         if: ${{ inputs.update-version }}
         id: version
         run: python ./buildtools/update_version.py -V='${{ inputs.version }}'
         # Will output "changelog", for the exact location of the changelog
 
-      - name: Commit and push version changes
+      - name: "Commit and push version changes"
         if: ${{ inputs.update-version }}
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -106,7 +128,7 @@ jobs:
           file_path: "build/output/${{ steps.build.outputs.client_name }}.zip"
           game_endpoint: "minecraft"
           game_versions: "Minecraft 1.12:1.12.2"
-          project_id: "370666"
+          project_id: "${{ vars.CURSEFORGE_MODPACK_ID }}"
           token: "${{ secrets.CF_PROJECT_KEY }}"
           changelog_type: markdown
           changelog: "${{ steps.version.outputs.changelog }}"
@@ -120,8 +142,25 @@ jobs:
           display_name: "${{ steps.build.outputs.server_name }}"
           file_path: "build/output/${{ steps.build.outputs.server_name }}.zip"
           game_endpoint: "minecraft"
-          project_id: "370666"
+          project_id: "${{ vars.CURSEFORGE_MODPACK_ID }}"
           parent_file_id: ${{ steps.client.outputs.id }}
           token: "${{ secrets.CF_PROJECT_KEY }}"
           changelog_type: markdown
           changelog: changelog/SERVER_UPDATE.md
+
+      - name: "Generate report"
+        id: generate-report
+        shell: bash
+        run: |
+          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.version }}/changelog/Divine%20Journey%20${{ inputs.version }}.md)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
+            echo "Uploaded the client zip file with the name ${{ steps.build.outputs.client_name }}.zip" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ steps.build.outputs.server_name }}" != '' ]; then
+            echo "Uploaded the server zip file with the name ${{ steps.build.outputs.server_name }}.zip" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "-----" >> $GITHUB_STEP_SUMMARY
+          echo "\*\*Divine Journey ${{ inputs.version }}\*\* is now available on" >> $GITHUB_STEP_SUMMARY
+          echo "\- Github: \<https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
+          echo "\- Curseforge: \<https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY

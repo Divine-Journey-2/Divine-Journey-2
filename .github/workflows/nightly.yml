@@ -30,6 +30,17 @@ jobs:
     timeout-minutes: 10 # it should take around 2 minutes to build and upload, so 10 minutes should never be passed
 
     steps:
+      # Ensure that the secret(s) required to run the workflow exist
+      - name: "Check for Secret presence"
+        id: secret-check
+        shell: bash
+        run: |
+          if [ "${{ secrets.CFAPIKEY }}" == "" ]; then
+            echo "Unable to access secrets required to run workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "Passed access check for required secrets" >> $GITHUB_STEP_SUMMARY
+
       # Setup the repo, download Python, and install the requests library
       - name: "Checkout Repo"
         uses: actions/checkout@v4
@@ -80,3 +91,18 @@ jobs:
           # - uploading the file path takes significantly longer (minutes instead of seconds)
           # - its already a zip file, compressing it further isn't helpful and takes longer
           compression-level: 0
+
+      # Generate a report for what actions were taken,
+      - name: "Generate report"
+        id: generate-report
+        shell: bash
+        run: |
+          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ github.sha }}/changelog/LATEST.md)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
+            echo "Uploaded the client zip file with the name ${{ steps.build.outputs.client_name }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ steps.build.outputs.server_name }}" != '' ]; then
+            echo "Uploaded the server zip file with the name ${{ steps.build.outputs.server_name }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Download via [Nightly](https://nightly.link/${{ github.repository }}/workflows/nightly/main)" >> $GITHUB_STEP_SUMMARY
