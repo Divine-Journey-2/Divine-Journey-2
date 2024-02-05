@@ -27,7 +27,7 @@ echo.
 echo.
 echo The expected java version is 1.8. Not higher, not lower.
 echo.
-choice /t 3 /n > nul
+timeout /t 3
 
 echo Launching the server...
 echo.

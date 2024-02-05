@@ -21,7 +21,7 @@ echo.
 echo.
 echo The expected java version is 1.8. Not higher, not lower.
 echo.
-choice /t 3 /n > nul
+timeout /t 3
 
 echo.
 echo Starting autorelaunch process.
@@ -31,5 +31,5 @@ echo.
 
 echo.
 echo Server process finished. The server will restart in 5 seconds. Press CTRL+C to cancel.
-choice /t 5 /n > nul
+timeout /t 5
 goto :server_loop
