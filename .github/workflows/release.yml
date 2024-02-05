@@ -81,7 +81,7 @@ jobs:
         run: pip install requests
 
       # Update the various version-specific files from the prior version to the current version,
-      # and remove any unused parts of the LATEST.md changelog. Only commit these changes if the upload steps haven't failed
+      # and remove any unused parts of the LATEST.md changelog. Only commit these changes if the build step didn't fail
       - name: "Update version"
         if: ${{ inputs.update-version }}
         id: version
@@ -94,6 +94,7 @@ jobs:
         run: python ./buildtools/build.py -CSDZ --key='${{ secrets.CFAPIKEY }}'
         # Will output "client_name" and "server_name", for the name of the client and server zips
 
+      # Commit changes after the build process
       - name: "Commit and push version changes"
         if: ${{ inputs.update-version }}
         uses: stefanzweifel/git-auto-commit-action@v5
