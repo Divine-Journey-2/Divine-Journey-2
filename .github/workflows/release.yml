@@ -73,7 +73,7 @@ jobs:
         run: git fetch --prune --unshallow --tags --force
 
       - name: "Setup Python"
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.9"
 
@@ -81,25 +81,25 @@ jobs:
         run: pip install requests
 
       # Update the various version-specific files from the prior version to the current version,
-      # and remove any unused parts of the LATEST.md changelog, before pushing it to the repo
+      # and remove any unused parts of the LATEST.md changelog. Only commit these changes if the upload steps haven't failed
       - name: "Update version"
         if: ${{ inputs.update-version }}
         id: version
         run: python ./buildtools/update_version.py -V='${{ inputs.version }}'
         # Will output "changelog", for the exact location of the changelog
 
-      - name: "Commit and push version changes"
-        if: ${{ inputs.update-version }}
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Update ${{ inputs.version }}"
-          commit_options: "--no-verify"
-
       # Create zip files for the Client and Server after downloading the required mods
       - name: "Build everything"
         id: build
         run: python ./buildtools/build.py -CSDZ --key='${{ secrets.CFAPIKEY }}'
         # Will output "client_name" and "server_name", for the name of the client and server zips
+
+      - name: "Commit and push version changes"
+        if: ${{ inputs.update-version }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update ${{ inputs.version }}"
+          commit_options: "--no-verify"
 
       # Upload build artifacts to Github Releases
       - name: "Upload to GitHub Releases"
