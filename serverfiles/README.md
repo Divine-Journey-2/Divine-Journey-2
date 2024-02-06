@@ -51,7 +51,8 @@ Modifying it in any other way is not supported.
 
 ### Java:
 
-To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION=java` to `JAVA_VERSION=C:\direct\path\to\java` or `JAVA_VERSION=/direct/path/to/java`.
+To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION="java"` to `JAVA_VERSION="C:\direct\path\to\java"` or `JAVA_VERSION="/direct/path/to/java"`.
+Since the path must be wrapped in quotes if it contains any spaces, the path has pre-emptively placed within quotes.
 
 Divine Journey 2 is a forge modpack for 1.12.2.
 This means it requires specifically Java 1.8 64-bit.
