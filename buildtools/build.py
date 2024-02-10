@@ -97,6 +97,17 @@ symLinkDirs = [
     "structures"
 ]
 
+def print_argument_settings(args):
+    """Prints what the build command will do"""
+    print("starting the build process with the following settings")
+    print(f"client: {args.client}")
+    print(f"server: {args.server}")
+    print(f"MultiMC-compatible Instance: {args.dev != None}")
+    print(f"create zip: {args.zip}")
+    print(f"download mods: {args.download}")
+    print(f"pre-release: {args.prerelease}")
+    print(f"deleting prior files: {args.wipe}")
+
 
 def createBaseDir():
     """Create the client, server, cache, and mods directory"""
@@ -428,8 +439,7 @@ def updateMMCInstance(instancePath: str):
 def build(args):
     """Build client, server, and with options for more"""
 
-    print("starting the build process with the following settings")
-    print(args)
+    print_argument_settings(args)
 
     start = time()
 
