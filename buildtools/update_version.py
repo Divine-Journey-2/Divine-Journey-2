@@ -87,6 +87,8 @@ def convertChangelog(version: str):
             file.write("\n" + key + "\n")
             for entry in value:
                 file.write(entry)
+        else:
+            file.write("\nCould not find a changelog")
 
     # Overwrite the in-game changelog file
     with open("overrides/config/mputils/changelog.txt", "w") as file:
