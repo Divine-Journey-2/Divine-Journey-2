@@ -29,7 +29,7 @@ def parse_args():
     return parser.parse_args()
 
 
-basePath = path.normpath(path.abspath(__file__ + "/../../"))
+basePath = path.normpath(path.abspath(f"{__file__}/../../"))
 
 filesToUpdateVersion = [
     "manifest.json",
@@ -85,7 +85,7 @@ def convertChangelog(version: str):
     # Write the remaining headers and their values to the changelog
     with open(changelogFile, "w") as file:
         for (key, value) in goal.items():
-            file.write("\n" + key + "\n")
+            file.write(f"\n{key}\n")
             for entry in value:
                 file.write(entry)
         else:
