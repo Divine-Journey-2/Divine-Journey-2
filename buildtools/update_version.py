@@ -8,6 +8,7 @@
 Presumes that the old version is exactly equal to the tag used
 """
 
+import sys
 from argparse import ArgumentParser
 from subprocess import run
 from os import getenv, path
@@ -111,6 +112,10 @@ def process(args):
     """Converts the pack version in various files and converts the changelog file"""
 
     old_version = args.old if args.old else oldVersion()
+
+    if old_version == "":
+        sys.exit("old version was not found, exiting")
+
     if args.version == old_version:
         print("old version was the same as new version, skipping")
         return
