@@ -153,7 +153,7 @@ jobs:
         id: generate-report
         shell: bash
         run: |
-          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.version }}/changelog/Divine%20Journey%20${{ inputs.version }}.md)" >> $GITHUB_STEP_SUMMARY
+          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.version }}/changelog/Divine_Journey_${{ inputs.version }}.md)" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
             echo "Uploaded the client zip file with the name ${{ steps.build.outputs.client_name }}.zip" >> $GITHUB_STEP_SUMMARY
           fi

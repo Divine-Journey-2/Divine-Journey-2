@@ -64,7 +64,7 @@ def convertChangelog(version: str):
     """Converts and filters the existing changelog in the LATEST.md file to a file named after the version"""
 
     # Create a changelog file for the given version
-    changelogFile = f"changelog/Divine Journey {version}.md"
+    changelogFile = f"changelog/Divine_Journey_{version}.md"
 
     target = OrderedDict()
 
