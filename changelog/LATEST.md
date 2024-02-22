@@ -23,7 +23,7 @@ View all [changelogs](https://github.com/WaitingIdly/Workflow-Testing/tree/main/
 
 ## Texture Transformations:
 
-
+- Convert the Galactic Machine Frame into an actual block, instead of just an item.
 
 ## GitHub Developments:
 
