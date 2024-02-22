@@ -19,7 +19,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+- Update loading screen tip to include the information that Erebus is skippable.
 
 ## Texture Transformations:
 
