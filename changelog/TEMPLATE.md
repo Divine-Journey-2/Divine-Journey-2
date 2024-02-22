@@ -1,5 +1,5 @@
 
-View all [changelogs](https://github.com/WaitingIdly/Workflow-Testing/tree/main/changelog)
+View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/main/changelog)
 
 ## Mod Modifications:
 
