@@ -80,9 +80,9 @@ uselessProps = {
     "editmode:1": 1,
 }
 
-basePath = os.path.normpath(os.path.abspath(__file__ + "/../../"))
-defaultQuests = basePath + "/overrides/config/betterquesting/DefaultQuests.json"
-lang = basePath + "/overrides/resources/betterquesting/lang"
+basePath = os.path.normpath(os.path.abspath(f"{__file__}/../../"))
+defaultQuests = f"{basePath}/overrides/config/betterquesting/DefaultQuests.json"
+lang = f"{basePath}/overrides/resources/betterquesting/lang"
 
 def convertToLang(line: str) -> str:
     """replaces any \\n or other json escape sequences with the correct escape character, %"""
@@ -102,7 +102,7 @@ def nest(location: dict) -> dict:
 def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
     """converts questbook title/desc into lang file"""
 
-    start = "%s.quest" % prefix
+    start = f"{prefix}.quest"
 
     alreadyKnownKeys = []
     for entry in dict(book[location]):
@@ -111,12 +111,12 @@ def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
         elif ("lineID:3" in book[location][entry]):
             id = book[location][entry]["lineID:3"]
         else:
-            print("Could not find questid or lineid for location %s %s" % (location, entry))
+            print(f"Could not find questid or lineid for location {location} {entry}")
             continue
 
-        key = "%s.%s.%s" % (start, place, id)
-        title = key + ".title"
-        desc = key + ".desc"
+        key = f"{start}.{place}.{id}"
+        title = f"{key}.title"
+        desc = f"{key}.desc"
 
         if (book[location][entry]["properties:10"]["betterquesting:10"]["name:8"].startswith(start)):
             alreadyKnownKeys.append(title)
@@ -131,7 +131,7 @@ def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
             book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"] = desc.rstrip()
 
     if (len(alreadyKnownKeys) > 0):
-        print("Already knew %s keys " % (len(alreadyKnownKeys)))
+        print(f"Already knew {len(alreadyKnownKeys)} keys")
 
 
 def delIconCount(book: dict):
@@ -156,7 +156,7 @@ def key(entry):
 
 def build(args):
     os.makedirs(lang, exist_ok=True)
-    langFile = lang + "/" + args.lang + ".lang"
+    langFile = f"{lang}/{args.lang}.lang"
     questKeys = {}
 
     # Read the questbook file
@@ -168,7 +168,7 @@ def build(args):
             for line in file.readlines():
                 questKeys[line.split("=", 1)[0]] = line.split("=", 1)[1].rstrip()
     except FileNotFoundError:
-        print("lang file %s was not found" % (langFile))
+        print(f"lang file {langFile} was not found")
 
 
     nest(questbook)
@@ -183,7 +183,7 @@ def build(args):
 
     with open(langFile, "w") as file:
         for i in sorted(questKeys, key=key):
-            file.write(i + "=" + questKeys[i] + "\n")
+            file.write(f"{i}={questKeys[i]}\n")
 
 
 if (__name__ == "__main__"):
