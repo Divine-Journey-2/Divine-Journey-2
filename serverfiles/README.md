@@ -58,7 +58,9 @@ which may lead to incorrect assumptions about the state of the server.
 
 Divine Journey 2 is a forge modpack for 1.12.2.
 This means it requires specifically Java 1.8 64-bit.
-If you get an error involving `launcher.java.lang.reflect.InvocationTargetException` error, you are using the wrong java version, and need to use Java 1.8.
+If you get an error involving `launcher.java.lang.reflect.InvocationTargetException`, you are using the wrong Java version, and need to use Java 1.8.
+If you get an error involving `Could not reserve enough space for object heap`, you are using the wrong Java architecture, and need to use 64-bit.
+
 If you do not have that version of Java installed, I suggest installing from [Adoptium](https://adoptium.net/temurin/releases/?version=8&os=windows&arch=x64&package=jre), although any distribution will work.
 You should filter the search to your specific platform, which by default presumes Windows.
 
@@ -75,7 +77,7 @@ Having `MIN_RAM` and `MAX_RAM` be equal improves performance slightly.
 By default the `JAVA_PARAMETERS` param is set to `-Dsun.rmi.dgc.server.gcInterval=2147483646 -XX:+DisableExplicitGC`.
 These arguments make the garbage collector only trigger when needed.
 
-The "best" java arguments vary based on Java Version, Minecraft Version, Modpack, server usage, Operating System, time of day, and phase of the moon.
+The "best" Java arguments vary based on Java Version, Minecraft Version, Modpack, server usage, Operating System, time of day, and phase of the moon.
 Test arguments to evaluate their actual performance on your machine. Do your own research.
 Some suggested (and untested!) sets of javaargs are:
 - `-XX:+UseG1GC -Dsun.rmi.dgc.server.gcInterval=2147483646 -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M`
@@ -133,7 +135,7 @@ Before reporting any errors with the pack, ensure that it is unmodified.
 
 0. Visit the Discord for tech support https://discord.gg/rH9pyS7 and upload the relevant `crash-reports` file or the `logs/latest.log` file.
 1. If you get an `launcher.java.lang.reflect.InvocationTargetException` error, you are using the wrong java version.
-2. If you are crashing on startup, make sure you have allocated enough RAM.
+2. If you are otherwise crashing on startup, make sure you have allocated enough RAM and are using 64-bit Java.
 3. If the server is crashing due to `Watching Server` or `ServerHangWatchdog`, change the `max-tick-time` entry in `server.properties` to be `-1`.
 4. If the crash is `net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from EvilCraft-Compat (evilcraftcompat)`, the correct config files were not installed/are broken, and you should reinstall the pack.
 5. If you get an `ENDER IO FATAL RECIPE ERROR` that blames `Could not find a crafting ingredient for 'contenttweaker:energized_dark_dust' in <recipe> 'Dark Steel Upgrade'`, crafttweaker scripts were not installed/are broken, and you should reinstall the pack
