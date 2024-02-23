@@ -1,5 +1,5 @@
 # Commands
-commands.curseforge.usage=Sends a link to the Curseforge page in chat.
+commands.curseforge.usage=Sends a link to the CurseForge page in chat.
 commands.discord.usage=Sends a link to the Discord page in chat.
 commands.issues.usage=Sends a link to the issues page in chat.
 commands.book_of_logic.usage=Prints the full text of the book of logic to chat, required for localization
@@ -528,7 +528,7 @@ dj2.atum_artifact_melee.desc0=§4§lConsidered as an Atum Melee Artifact.
 dj2.atum_artifact_ranged.desc1=§4§lConsidered as an Atum Ranged Artifact.
 dj2.atum_artifact_armor.desc2=§4§lConsidered as an Atum Armor Artifact.
 dj2.atum_artifact_necklace.desc3=§4§lConsidered as an Atum Necklace Artifact.
-dj2.relic_ore.desc0=§fMine it up to regularly obtain §r§4§lDirty Idols, §r§for use
+dj2.relic_ore.desc0=§fMine it up normally to obtain §r§4§lDirty Idols§r§f, or use
 dj2.relic_ore.desc1=§9§lSilk Touch§r§f to obtain the Ore for further processing.
 dj2.golden_date_enchanted.desc0=§4§lPrimarily obtained by trading with Sunspeakers.
 dj2.golden_date_enchanted.desc1=§cCan also be enchanted in The Aether Altar.
@@ -648,8 +648,8 @@ dj2.omothol_flesh.desc0=§fDropped by Omothol Ghouls in... Omothol.
 dj2.omothol_flesh.desc1=§f§oIncredible, I know.
 dj2.gatekeeper_essence.desc0=§fDropped by §r§7J'zahar§r§f, the final boss of Omothol.
 dj2.soul_reaper.desc0=§fDropped by §r§7Sacthoth, Harbinger of Doom§r§f, the final boss of AbyssalCraft.
-dj2.crystalcluster.desc0=§fCan only be mined with a pickaxe of Mining Level ≥8.
-dj2.crystalcluster2.desc0=§fCan only be mined with a pickaxe of Mining Level ≥10.
+dj2.crystalcluster.desc0=§fCan only be mined using a pickaxe with Mining Level of at least 8.
+dj2.crystalcluster2.desc0=§fCan only be mined using a pickaxe with Mining Level of at least 10.
 dj2.necronomicon_ownership.desc0=Gain ownership of the book via shapeless crafting.
 
 # Erebus tooltips
@@ -667,7 +667,7 @@ dj2.supernatural_velocity.desc0=§f- Solifuges (in the Ulterior Outback biome)
 dj2.supernatural_velocity.desc1=§f- Centipedes (in most biomes)
 dj2.exoskeleton_plate.desc0=§f- Beetles (in the Underground Jungle,
 dj2.exoskeleton_plate.desc1=§f           Subterranean Savannah, and Elysian Fields biomes)
-dj2.exoskeleton_plate.desc2=§f- Antlions (in Volcanic Desert biome and in Antlion Overlord Pyramids)
+dj2.exoskeleton_plate.desc2=§f- Antlions (in Volcanic Desert biome)
 dj2.magma_crawler_eye.desc0=§f- Magma Crawlers (in Antlion Overlord Pyramids)
 dj2.tarantula_leg.desc0=§f- Tarantulas (in most biomes)
 dj2.fly_wing.desc0=§f- Flies (in all biomes)
@@ -746,7 +746,7 @@ dj2.totempedia.desc0=§c§lWARNING: §r§fRecipes shown may be incorrect.
 dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
 # Aether tooltips
-dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod, attemting to automate this will cause crashes.
+dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod installed, attemting to automate this will cause crashes.
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§fTakes a quarter of a Mana Pool to craft.
