@@ -1,7 +1,7 @@
 # Divine Journey 2 Server Info:
 
 Written by WaitingIdly, for the pack Divine Journey 2 (DJ2).
-Also visible on GitHub at https://github.com/Divine-Journey-2/Divine-Journey-2/tree/main/serverfiles/readme.md.
+Also visible on GitHub at https://github.com/Divine-Journey-2/Divine-Journey-2/tree/main/serverfiles/README.md.
 
 ---
 
@@ -31,14 +31,14 @@ Running the `autolaunch.bat` or `autolaunch.sh` files will cause the server to a
 Combined with enabling the `auto_shutdown` feature in `config/ftbutilities.cfg`, you will be able to easily restart the server at specific times.
 This has a number of benefits, as servers will frequently perform worse as time goes on.
 
-Warning: This may make a crashloop harder to identify.
+**Warning**: This may make a crashloop harder to identify.
 
 
 ## Configuring the pack:
 
 DJ2 uses a few custom files to allow easier use for launching the pack.
 There are four helper files for launching the pack, called `launch.sh`, `autolaunch.sh`, `launch.bat`, and `autolaunch.bat`.
-These helper files should ***not*** be edited.
+These helper files should generally ***not*** be edited.
 
 There is also a configuration file, `launch_config.ini`. This file **should** be edited.
 Modifying the `launch_config.ini` file can be done in any text editor.
@@ -53,6 +53,8 @@ Modifying it in any other way is not supported.
 
 To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION="java"` to `JAVA_VERSION="C:\direct\path\to\java"` or `JAVA_VERSION="/direct/path/to/java"`.
 Since the path must be wrapped in quotes if it contains any spaces, the path has pre-emptively placed within quotes.
+The file used should be named "java" and not "javaw" - including the "w" will cause the console not to print any text,
+which may lead to incorrect assumptions about the state of the server.
 
 Divine Journey 2 is a forge modpack for 1.12.2.
 This means it requires specifically Java 1.8 64-bit.
@@ -87,12 +89,13 @@ Some suggested (and untested!) sets of javaargs are:
 ## Updating:
 
 In order to ensure you do not lose data, you should take certain steps when updating your server.
+Failure to properly do any one of these steps may result in errors.
 
 1. Shut down your server.
 2. Make a backup of your server, in particular the files deleted in step 4, in case things go wrong.
 3. Download the latest server pack files from Curseforge https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files or GitHub https://github.com/Divine-Journey-2/Divine-Journey-2/releases.
 4. Delete the `config`, `mods`, `scripts`, and `structures` folders.
-5. Copy those folders from the server pack downloaded from Curseforge into the server instance.
+5. Copy those same folders from the server pack downloaded from Curseforge into the server instance.
 6. Apply any unique changes (new mods or custom configs) made that were deleted by step 4.
 7. Start your server.
 8. If a block, entity, item, etc. was removed, the server will make a backup before loading the game with those blocks/entities/items removed. This process may take a significant amount of time.
@@ -118,16 +121,24 @@ Tech support for issues with DJ2 while using one should first be directed to the
 as server hosts frequently control settings that impact the normal launching of DJ2.
 
 
+## Customizing the Pack
+
+Divine Journey 2 does not have every mod in it *[citation needed]*.
+If you and your players want to customize the pack and add a mod, you should feel absolutely free to do so.
+However, you do this at your own risk, as modifying the pack is not and will not be officially supported.
+Before reporting any errors with the pack, ensure that it is unmodified.
+
+
 ## Troubleshooting:
 
-0. Visit the Discord for tech support https://discord.gg/rH9pyS7 and upload the relevant `crash-reports` file or the `latest.log` file.
+0. Visit the Discord for tech support https://discord.gg/rH9pyS7 and upload the relevant `crash-reports` file or the `logs/latest.log` file.
 1. If you get an `launcher.java.lang.reflect.InvocationTargetException` error, you are using the wrong java version.
 2. If you are crashing on startup, make sure you have allocated enough RAM.
 3. If the server is crashing due to `Watching Server` or `ServerHangWatchdog`, change the `max-tick-time` entry in `server.properties` to be `-1`.
-4. If the crash is` net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from EvilCraft-Compat (evilcraftcompat)`, the correct config files were not installed, and you should reinstall the pack.
+4. If the crash is `net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from EvilCraft-Compat (evilcraftcompat)`, the correct config files were not installed/are broken, and you should reinstall the pack.
 5. If you get an `ENDER IO FATAL RECIPE ERROR` that blames `Could not find a crafting ingredient for 'contenttweaker:energized_dark_dust' in <recipe> 'Dark Steel Upgrade'`, crafttweaker scripts were not installed/are broken, and you should reinstall the pack
-6. If the machine running the server lost power or shut down abruptly and now does not start, your worlddata has likely been corrupted, and you should restore a backup. This may also require reinstalling the pack.
-7. If you get a crash `java.lang.NoClassDefFoundError: amu` (or similar), the vanilla jar has been corrupted, typically due to an unsafe shutdown, and you should reinstall the pack.
+6. If the machine running the server lost power or shut down abruptly and now does not start, your worlddata has likely been corrupted, and you should restore a backup. This may also require reinstalling the pack, as files may have been corrupted and are broken.
+7. If you get a crash `java.lang.NoClassDefFoundError: amu` (or similar), the vanilla jar has been corrupted, typically due to an unsafe shutdown (see point 6), and you should reinstall the pack.
 8. If the server stops on the line `[main/INFO] [minecraft/MinecraftServer]: You need to agree to the EULA in order to run the server. Go to the eula.txt for more info.`, you need to accept the EULA.
-9. If the server stops doing anything shortly after a large number of `[THAUMCRAFT]: Stopping aura thread` messages - **the server is up and running, waiting for you to join**.
+9. If the server stops doing anything shortly after a large number of `[THAUMCRAFT]: Stopping aura thread` messages - **the server should be up and running properly, waiting for you to join**.
 

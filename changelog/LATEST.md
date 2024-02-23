@@ -36,3 +36,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Creates a rolling "LATEST" changelog file, for changes to be added to.
 
 ## Miscellaneous Changes:
+
+- Adds an extensive README to server info.
+- Adds a centralized and simplified configuration file for launching the server.
+- Adds an auto-launch script, which will automatically restart the server when it crashes or is shut down.
+- Adds hopefully straightforward instructions on how to launch the pack or update your server for absolute beginners.
+ 
