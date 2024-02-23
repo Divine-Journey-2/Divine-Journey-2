@@ -55,7 +55,6 @@ recipes.addShapeless(<abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as floa
 
 // Ore Tooltips
 <abyssalcraft:coraliumore>.addTooltip(game.localize("dj2.coralium_ore.desc0"));
-<abyssalcraft:abyore>.addTooltip(game.localize("dj2.abyore.desc0"));
 
 // Coralium Gem Cluster itemstack amounts
 <abyssalcraft:ccluster2>.maxStackSize = 64;
