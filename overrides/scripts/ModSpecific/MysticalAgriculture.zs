@@ -296,7 +296,7 @@ mods.enderio.AlloySmelter.addRecipe(<mysticalagriculture:crafting:38>, [<mystica
 recipes.remove(<mysticalagriculture:soulium_dagger>);
 
 // Tier 1 Mob Chunk
-recipes.addShaped(<mysticalagriculture:chunk>, [[<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>],[<mysticalagriculture:crafting:38>,<openblocks:trophy:*>,<mysticalagriculture:crafting:38>],[<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting:38>]]);
+recipes.addShaped(<mysticalagriculture:chunk>, [[<mysticalagriculture:crafting>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting>],[<mysticalagriculture:crafting:38>,<openblocks:trophy:*>,<mysticalagriculture:crafting:38>],[<mysticalagriculture:crafting>,<mysticalagriculture:crafting:38>,<mysticalagriculture:crafting>]]);
 
 // Tier 2 Mob Chunk
 recipes.remove(<mysticalagriculture:chunk:1>);
