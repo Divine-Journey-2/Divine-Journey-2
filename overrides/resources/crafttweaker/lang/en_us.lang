@@ -198,7 +198,7 @@ dj2.astral_core.desc1=§rthat each have a §cunique trait§r of a Faint Constell
 dj2.astral_core.desc2=§dAlcara§r, §7Gelu§r, §aUlteria§r, and §6Vorux§r. To add a trait to a Crystal:
 dj2.astral_core.desc3=§r1. Attune it to any Constellation.
 dj2.astral_core.desc4=§r2. Wait until a Dim Constellation is available at night.
-dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation. 
+dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation.
 dj2.astral_core.desc6=§r   This will add a §9Trait§r modifier to it.
 dj2.astral_core.desc7=§r§lCANNOT BE AUTOCRAFTED.
 dj2.star_of_revelation.desc0=§cDoes not get consumed by regular crafting.
@@ -747,6 +747,7 @@ dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
 # Aether tooltips
 dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod installed, attemting to automate this will cause crashes.
+dj2.enchanter.desc0=Operates with significantly increased speed when placed above a Gravitite Block!
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§fTakes a quarter of a Mana Pool to craft.
