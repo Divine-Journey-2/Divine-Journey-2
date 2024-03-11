@@ -630,7 +630,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:hydrating_petal>, [<ore:petalL
 mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_inner_flame>, [<ore:petalBrown>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalYellow>]);
 
 // Livingmatter
-val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:abyssalsand>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
+val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
 for dim_dirt in dimensionalDirts {
     mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
 }
