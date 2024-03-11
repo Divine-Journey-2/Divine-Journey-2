@@ -334,9 +334,8 @@ recipes.addShaped(<mekanism:electrolyticcore>, [[<enderio:item_material:68>,null
 recipes.remove(<mekanism:machineblock2:4>);
 recipes.addShaped(<mekanism:machineblock2:4>, [[<enderio:block_tank:1>,null,<enderio:block_tank:1>],[<enderio:block_tank:1>,<mekanism:electrolyticcore>,<enderio:block_tank:1>],[<enderio:block_alloy:6>,<mekanism:basicblock:8>,<enderio:block_alloy:6>]]);
 
-
 // Gauge Dropper tooltip
-<mekanism:gauge_dropper>.addTooltip(game.localize("dj2.gauge_dropper.desc0"));
+<mekanism:gaugedropper>.addTooltip(game.localize("dj2.gaugedropper.desc0"));
 
 // Basic Gas Tank
 recipes.remove(<mekanism:gastank>);
