@@ -6,6 +6,7 @@ import crafttweaker.data.IData;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Crucible;
+import mods.thermalexpansion.Sawmill;
 
 print("STARTING ThermalExpansion.zs");
 
@@ -611,6 +612,22 @@ for i in 0 to 8 {
     mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:metamorphic_cobble>.withDamage(i), 300000);
 }
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
+
+
+// Remove Button uncrafting from Sawmills
+Sawmill.removeRecipe(<natura:maple_button>);
+Sawmill.removeRecipe(<natura:silverbell_button>);
+Sawmill.removeRecipe(<natura:amaranth_button>);
+Sawmill.removeRecipe(<natura:tiger_button>);
+Sawmill.removeRecipe(<natura:willow_button>);
+Sawmill.removeRecipe(<natura:eucalyptus_button>);
+Sawmill.removeRecipe(<natura:hopseed_button>);
+Sawmill.removeRecipe(<natura:sakura_button>);
+Sawmill.removeRecipe(<natura:redwood_button>);
+Sawmill.removeRecipe(<natura:ghostwood_button>);
+Sawmill.removeRecipe(<natura:bloodwood_button>);
+Sawmill.removeRecipe(<natura:fusewood_button>);
+Sawmill.removeRecipe(<natura:darkwood_button>);
 
 // Flux Capacitor (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}),
