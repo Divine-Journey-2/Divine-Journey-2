@@ -13,12 +13,12 @@ removes useless betterquesting props, since they are automatically assumed on lo
 this reduces file size by roughly 50% (eg DJ2 4.2mb -> 2.2mb)
 """
 
-import argparse
+from argparse import ArgumentParser
 import json
 import os
 
 def parse_args():
-    parser = argparse.ArgumentParser(prog="build", description=__doc__)
+    parser = ArgumentParser(prog="build", description=__doc__)
     parser.add_argument("--prefix",
                         type=str,
                         default="dj2",
@@ -27,6 +27,9 @@ def parse_args():
                         type=str,
                         default="en_us",
                         help="what language the output language file is, defaults to en_us")
+    parser.add_argument("--inverted", "-I",
+                        action="store_true",
+                        help="inverts the process, replacing the lang keys in the questbook file with text. ignores the prefix setting")
     return parser.parse_args()
 
 # Props that BQ automatically assumes by default, thus only increasing the size of the DefaultQuests json.
@@ -84,9 +87,15 @@ basePath = os.path.normpath(os.path.abspath(f"{__file__}/../../"))
 defaultQuests = f"{basePath}/overrides/config/betterquesting/DefaultQuests.json"
 lang = f"{basePath}/overrides/resources/betterquesting/lang"
 
+PLACEHOLDER_TEXT = "PLACEHOLDER_TEXT"
+
 def convertToLang(line: str) -> str:
-    """replaces any \\n or other json escape sequences with the correct escape character, %"""
-    return line.replace("%", "%%").replace("\\", "%")
+    """replaces any `\\n` or other json escape sequences with the correct escape character, `%`"""
+    return repr(line)[1:-1].replace("%", "%%").replace("\\", "%").replace("%'", "'")
+
+def convertToJSON(line: str) -> str:
+    """replaces any `%n` or other lang escape sequences with the correct escape character, `\`"""
+    return line.replace("%%", PLACEHOLDER_TEXT).replace("%", "\\").replace(PLACEHOLDER_TEXT, "%").replace("\"", "\\\"")
 
 def nest(location: dict) -> dict:
     """navigates through a dict to delete anything undesired"""
@@ -115,23 +124,21 @@ def i18n(output: dict, book: dict, location: str, place: str, prefix: str):
             continue
 
         key = f"{start}.{place}.{id}"
-        title = f"{key}.title"
-        desc = f"{key}.desc"
 
-        if (book[location][entry]["properties:10"]["betterquesting:10"]["name:8"].startswith(start)):
-            alreadyKnownKeys.append(title)
-        else:
-            output[title] = convertToLang(book[location][entry]["properties:10"]["betterquesting:10"]["name:8"])
-            book[location][entry]["properties:10"]["betterquesting:10"]["name:8"] = title.rstrip()
-
-        if (book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"].startswith(start)):
-            alreadyKnownKeys.append(desc)
-        else:
-            output[desc] = convertToLang(book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"])
-            book[location][entry]["properties:10"]["betterquesting:10"]["desc:8"] = desc.rstrip()
+        convert(alreadyKnownKeys, output, book, location, entry, start, target="name:8", key=f"{key}.title")
+        convert(alreadyKnownKeys, output, book, location, entry, start, target="desc:8", key=f"{key}.desc")
 
     if (len(alreadyKnownKeys) > 0):
         print(f"Already knew {len(alreadyKnownKeys)} keys")
+
+
+def convert(alreadyKnownKeys: dict, output: dict, book: dict,
+            location: str, entry: str, start: str, target: str, key: str):
+    if (book[location][entry]["properties:10"]["betterquesting:10"][target].startswith(start)):
+        alreadyKnownKeys.append(key)
+    else:
+        output[key] = convertToLang(book[location][entry]["properties:10"]["betterquesting:10"][target])
+        book[location][entry]["properties:10"]["betterquesting:10"][target] = key.rstrip()
 
 
 def delIconCount(book: dict):
@@ -149,9 +156,9 @@ def delIconCount(book: dict):
             pass
 
 
-def key(entry):
+def key(entry: str) -> bool:
     """put database after questline, sort by int, and then desc after title"""
-    return ("db" in entry, int(entry[13:(-5 if "desc" in entry else -6)]), "desc" in entry)
+    return ("db" in entry, int(entry.split(".")[3]), "desc" in entry)
 
 
 def build(args):
@@ -166,7 +173,8 @@ def build(args):
     try:
         with open(langFile, "r") as file:
             for line in file.readlines():
-                questKeys[line.split("=", 1)[0]] = line.split("=", 1)[1].rstrip()
+                split = line.split("=", 1)
+                questKeys[split[0]] = split[1].rstrip()
     except FileNotFoundError:
         print(f"lang file {langFile} was not found")
 
@@ -175,15 +183,25 @@ def build(args):
 
     delIconCount(questbook)
 
-    i18n(output=questKeys, book=questbook, location="questLines:9", place="ql", prefix=args.prefix)
-    i18n(output=questKeys, book=questbook, location="questDatabase:9", place="db", prefix=args.prefix)
+    if args.inverted:
+        with open(defaultQuests, "r") as file:
+            filedata = file.read()
 
-    with open(defaultQuests, "w") as file:
-        json.dump(questbook, file, indent=2)
+        for entry in questKeys:
+            filedata = filedata.replace(entry, convertToJSON(questKeys[entry]))
 
-    with open(langFile, "w") as file:
-        for i in sorted(questKeys, key=key):
-            file.write(f"{i}={questKeys[i]}\n")
+        with open(defaultQuests, "w") as file:
+            file.write(filedata)
+    else:
+        i18n(output=questKeys, book=questbook, location="questLines:9", place="ql", prefix=args.prefix)
+        i18n(output=questKeys, book=questbook, location="questDatabase:9", place="db", prefix=args.prefix)
+
+        with open(defaultQuests, "w") as file:
+            json.dump(questbook, file, indent=2)
+
+        with open(langFile, "w") as file:
+            for i in sorted(questKeys, key=key):
+                file.write(f"{i}={questKeys[i]}\n")
 
 
 if (__name__ == "__main__"):
