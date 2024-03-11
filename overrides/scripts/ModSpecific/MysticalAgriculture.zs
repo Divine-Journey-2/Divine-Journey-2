@@ -250,6 +250,9 @@ recipes.addShaped(<erebus:materials:3> * 8, [[<mysticalagriculture:dirt_essence>
 recipes.remove(<mysticalagriculture:water_seeds>);
 mods.thermalexpansion.Transposer.addFillRecipe(<mysticalagriculture:water_seeds>, <mysticalagriculture:ice_seeds>, <liquid:water> * 10000, 8000);
 
+// Water Bottle
+recipes.addShaped(<minecraft:potion>.withTag({Potion: "minecraft:water"}), [[<mysticalagriculture:water_essence>], [<minecraft:glass_bottle>]]);
+
 // Tier 2 Crafting Seed
 recipes.remove(<mysticalagriculture:crafting:18>);
 mods.botania.RuneAltar.addRecipe(<mysticalagriculture:crafting:18>, [<mysticalagriculture:crafting:17>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:1>], 30000);
