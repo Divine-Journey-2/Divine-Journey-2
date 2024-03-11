@@ -344,6 +344,7 @@ dj2.wizards_book.desc0=§fBought from §r§4Lord Vatticus§r§f in the §r§9Dun
 dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the input Chest will remain in Robit's inventory!
 dj2.dynamic_tank_warning.desc0=§c§lWarning: §r§fSometimes the Dynamic Tank can FORGET
 dj2.dynamic_tank_warning.desc1=§fits liquid. NOT recommended to craft / use.
+dj2.gauge_dropper.desc0=Empty via Shift Clicking into the air.
 
 # Lightningcraft tooltips
 dj2.electricium.desc0=§fCreate this for the first time by
