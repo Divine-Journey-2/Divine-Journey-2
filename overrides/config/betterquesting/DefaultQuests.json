@@ -35312,6 +35312,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
+          "tasklogic:8": "OR",
           "icon:10": {
             "id:8": "contenttweaker:key_to_infinity"
           },
@@ -35326,8 +35327,15 @@
             "0:10": {
               "id:8": "contenttweaker:key_to_infinity",
               "Count:3": 1
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "id:8": "extrautils2:bagofholding",
               "Count:3": 1,
               "tag:10": {
@@ -38206,6 +38214,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
+          "tasklogic:8": "OR",
           "icon:10": {
             "id:8": "contenttweaker:corrupted_key_to_infinity"
           },
@@ -38220,8 +38229,15 @@
             "0:10": {
               "id:8": "contenttweaker:corrupted_key_to_infinity",
               "Count:3": 1
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "id:8": "extrautils2:bagofholding",
               "Count:3": 1,
               "tag:10": {
@@ -39755,6 +39771,7 @@
       ],
       "properties:10": {
         "betterquesting:10": {
+          "tasklogic:8": "OR",
           "icon:10": {
             "id:8": "contenttweaker:heavenly_key_to_infinity"
           },
@@ -39769,8 +39786,15 @@
             "0:10": {
               "id:8": "contenttweaker:heavenly_key_to_infinity",
               "Count:3": 1
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "index:3": 1,
+          "requiredItems:9": {
+            "0:10": {
               "id:8": "extrautils2:bagofholding",
               "Count:3": 1,
               "tag:10": {
