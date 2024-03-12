@@ -20025,6 +20025,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagradditions:dragon_egg_seeds",
@@ -25227,6 +25228,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:menril_seeds",
@@ -25310,6 +25312,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:amber_seeds",
@@ -25353,6 +25356,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:sulfur_seeds",
@@ -25439,6 +25443,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:ice_seeds",
@@ -25519,6 +25524,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:wood_seeds",
@@ -25558,6 +25564,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:mystical_flower_seeds",
@@ -25597,6 +25604,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:obsidian_seeds",
@@ -25636,6 +25644,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:fire_seeds",
@@ -25680,6 +25689,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:dye_seeds",
@@ -25719,6 +25729,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:iron_seeds",
@@ -25806,6 +25817,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:nature_seeds",
@@ -25846,6 +25858,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:pig_seeds",
@@ -25901,6 +25914,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:coal_seeds",
@@ -25940,6 +25954,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:grains_of_infinity_seeds",
@@ -26022,6 +26037,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:hop_graphite_seeds",
@@ -26104,6 +26120,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:blizz_seeds",
@@ -26152,6 +26169,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:nether_quartz_seeds",
@@ -26200,6 +26218,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:water_seeds",
@@ -26239,6 +26258,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:silicon_seeds",
@@ -26282,6 +26302,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:dirt_seeds",
@@ -26321,6 +26342,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:steel_seeds",
@@ -26405,6 +26427,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:zombie_seeds",
@@ -26471,6 +26494,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:master_infusion_crystal",
@@ -26838,6 +26862,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagradditions:nether_star_seeds",
@@ -27005,6 +27030,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagradditions:awakened_draconium_seeds",
@@ -27050,6 +27076,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:enderman_seeds",
@@ -27090,6 +27117,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:emerald_seeds",
@@ -27142,6 +27170,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:vibrant_alloy_seeds",
@@ -27191,6 +27220,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:mithril_seeds",
@@ -27238,6 +27268,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:coralium_seeds",
@@ -27285,6 +27316,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:cobalt_seeds",
@@ -27333,6 +27365,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:dark_steel_seeds",
@@ -27392,6 +27425,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:brass_seeds",
@@ -27443,6 +27477,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:wither_skeleton_seeds",
@@ -27490,6 +27525,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:zinc_seeds",
@@ -27549,6 +27585,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:ghast_seeds",
@@ -27590,6 +27627,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:terrasteel_seeds",
@@ -27631,6 +27669,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:meteoric_iron_seeds",
@@ -28037,6 +28076,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:ruby_seeds",
@@ -29167,6 +29207,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:uranium_seeds",
@@ -29227,6 +29268,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagriculture:rock_crystal_seeds",
@@ -32512,6 +32554,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagradditions:neutronium_seeds",
@@ -39354,6 +39397,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "mysticalagradditions:stuff",

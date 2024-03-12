@@ -92,6 +92,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes the Dread Lamp and Mega Torch Quests to include the correct information on the size and shape of effect.
 - Makes some quests in Chapter 27 not be NBT-specific.
 - Fixes incorrect information about the Celestial Crystal growth process in the quest.
+- Fixes Mystical Agriculture Seed Quests requiring items without NBT, making Agricraft-enhanced crops invalid.
 
 ## Texture Transformations:
 
