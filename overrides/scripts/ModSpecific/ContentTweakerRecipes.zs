@@ -1073,8 +1073,7 @@ mods.tconstruct.Casting.addTableRecipe(<contenttweaker:cold_void_seed>, <thaumcr
 TCCrucible.registerRecipe("contenttweaker:cold_void_metal_ingot", "BASEELDRITCH", <contenttweaker:cold_void_metal_ingot>, <contenttweaker:cold_void_seed>, [<aspect:metallum> * 50, <aspect:vitium> * 20, <aspect:tenebrae> * 10]);
 
 // Impetus Crystal
-recipes.addShapeless(<contenttweaker:impetus_crystal>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
-recipes.addShapeless(<contenttweaker:impetus_crystal>, [<contenttweaker:goddess_pearl>.reuse(),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
+recipes.addShapeless(<contenttweaker:impetus_crystal>, [<contenttweaker:primordial_fragment>,<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
 
 // Printed Thaumium Circuit
 Inscriber.addRecipe(<contenttweaker:printed_thaumium_circuit>, <thaumcraft:ingot>, true, <contenttweaker:inscriber_scheduling_press>);
