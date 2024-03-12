@@ -23,6 +23,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes Mekansim Sawdust being obtainable in some specific recipes.
 - Prevents a crash when pushing an OpenBlocks Trophy with a Piston by disabling the ability to push Trophies.
 - Disables the abilty to try to teleport to a specific biome via Nature's Compass, as it frequently crashes the server.
+- Fixes a bug preventing sand from converting to Glass in the Thermal Expansion Magma Crucible.
 
 ## Balance Adjustments:
 
