@@ -10,6 +10,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Crafttweaker 4.1.20.695 -> 4.1.20.698
 - Update Thaumic Augmentation 2.1.11 -> 2.1.13
 - Update Journeymap 5.7.1 -> 5.7.1p3
+- Update Enhanced P2P betterp2p_plusplus 1.2.3 -> betterp2p 1.2.3
 
 ## Bugfixes:
 
