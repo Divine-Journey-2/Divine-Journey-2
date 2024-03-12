@@ -94,7 +94,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes incorrect information about the Celestial Crystal growth process in the quest.
 - Fixes Mystical Agriculture Seed Quests requiring items without NBT, making Agricraft-enhanced crops invalid.
 - Fixes endgame quests in Chapter 29 and 30 having NBT issues with the Bag of Holding by allow the quest to complete with either the key or the bag.
-- Add some color formatting to some Chapter 30 items.
+- Adds some color formatting to some Chapter 30 items.
+- Adds a reference to the Mana Mirror in the Nourishment Pendant Quest.
 
 ## Texture Transformations:
 
