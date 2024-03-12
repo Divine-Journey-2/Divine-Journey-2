@@ -18,7 +18,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes Alchemistry Titanium Plate Dissolver recipe giving 9 times what it ought to.
 - Fixes breaking Quantum Flux Graphite Ore dropping their Graphite Dust instead of our fixed Graphite Dust.
 - Fixes the Immersive Engineering Industrial Squeezer returning a HOP Graphite Ingot instead of HOP Graphite Dust.
-- Allow Primordial Fragments to be used in the Impetus Crystal recipe, only use Primordial Fragments.
+- Allows Primordial Fragments to be used in the Impetus Crystal recipe, only use Primordial Fragments.
+- Fixes Mekansim Sawdust being obtainable in some specific recipes.
 
 ## Balance Adjustments:
 

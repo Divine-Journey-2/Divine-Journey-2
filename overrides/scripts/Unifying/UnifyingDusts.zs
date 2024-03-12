@@ -259,8 +259,7 @@ for plank in <ore:plankWood>.items {
     mods.mekanism.sawmill.addRecipe(plank, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25);
 }
 
-mods.mekanism.sawmill.removeRecipe(<ore:stickWood>);
-mods.mekanism.sawmill.addRecipe(<ore:stickWood>, <thermalfoundation:material:800>);
+mods.mekanism.sawmill.addRecipe(<natura:sticks:*>, <thermalfoundation:material:800>);
 
 val logWoodNoYield = <ore:logWoodNoYield>;
 logWoodNoYield.addItems([<abyssalcraft:dltlog2>, <betternether:stalagnate_stem>, <erebus:log_bamboo>, <natura:redwood_logs>, <natura:redwood_logs:2>]);
