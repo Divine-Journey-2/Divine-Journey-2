@@ -49,6 +49,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Reduces the excavation amount of OreExcavation by a single block, so veinmining the maximum amount will return exactly two stacks.
 - Adds a phantom placement marker to show where AE2 Cables and Parts will be placed (AE2-EL).
 - Adds Toasts for completing or cancelling a Crafting Task (AE2-EL).
+- Adds a crafting recipe to convert Better Nether Bone Blocks into Vanilla Bone Blocks.
 
 ## Text and Quest Updates:
 
