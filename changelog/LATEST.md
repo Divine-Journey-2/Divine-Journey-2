@@ -7,15 +7,35 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-
+- Removes Natura Button -> Plank recipes from the Thermal Expansion Sawmill, as it allowed you to duplicate those planks.
+- Fixes the conversion recipe for outdated Mystical Agriculture Tiered Crystals not consuming the crystal.
+- Fixes Alchemistry Titanium Plate Dissolver recipe giving 9 times what it ought to.
+- Fixes breaking Quantum Flux Graphite Ore dropping their Graphite Dust instead of our fixed Graphite Dust.
+- Fixes the Immersive Engineering Industrial Squeezer returning a HOP Graphite Ingot instead of HOP Graphite Dust.
+- Allow Primordial Fragments to be used in the Impetus Crystal recipe, only use Primordial Fragments.
 
 ## Balance Adjustments:
 
-
+- Adds the ability to get Ghastlings without progressing through the Twilight Forest, increases their energy cost to use in the Powered Spawner.
+- Adds the ability to get Red Hearts from the Mob Loot Fabricator via the Vanilla Hostile recipe.
+- Adds the ability to get Yellow Hearts from the Mob Loot Fabricator via the Twilight Forest boss recipe.
+- Tweaks the Mystical Agriculture Chunk recipe to include 4 Inferium Essence instead of an additional 4 Soulium Ingots.
+- Removes the slightly-more-expensive recipe for Roots Unending Bowls that is done in the Vanilla Crafting Table.
+- Reduces the cost of smelting Lead Dust into Ingots, as it was 3600 instead of the 2000 for any other added recipe.
+- Removes Abyssalcraft Sand from the Pure Daisy Livingmatter conversion recipe, as its not dirt and causes lag.
+- Adds EMC to the Dungeon of Arcana boss drops.
+- Reduces the time for Seared Stone to create a Stone Gear from 50 seconds to 5 seconds, making it inline with other operations.
+- Adds the ability to smelt Corrupted Draconium Dust back into Corrupted Draconium Ingots.
 
 ## QoL Improvements:
 
-
+- Adds Plastic to the Compacting Drawer, allowing it to be converted even though it doesn't have a downgrade recipe.
+- Adds Ghasts and Ghastlings to the Roots Spawning Ritual.
+- Adds a direct recipe to create Water Bottles with Mystical Agriculture Water Essence.
+- Adds an Actually Additions Advanced Laser Relay NBT clearing recipe.
+- Adds RFTools Crafter NBT clearing recipes.
+- Increases the Quantum Flux Void Bucket stack size to 64.
+- Reduces the excavation amount of OreExcavation by a single block, so veinmining the maximum amount will return exactly two stacks.
 
 ## Text and Quest Updates:
 
@@ -31,10 +51,28 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Updates loading screen tip to include the information that Erebus is skippable.
 - Updates and improve some tips.
 - Updates Upgrade Kits quest to display upgrades and number of Augments more accurately.
+- Changes the Spores Reactor quest dependency from Plastic to Fertilizer, since that is what it costs.
+- Adds a tooltip to the Aether Legacy Altar to inform about the "sped up while above Gravitite Block" feature.
+- Adds information to the Core Sample Drill Quest that Core Samples can be placed down in-world.
+- Adds information about the Mekanism Gauge Dropper to the PRC Quest, and adds a tooltip about being able to clear it via Shift+Right Click.
+- Fixes a typo in the Mana Spreader Lens quest.
+- Changes the dependency of the Roots Unendling Bowl to be off of Dark Steel (its cost), and adjust Chapter 10 accordingly.
+- Changes the dependency of the Astral Sorcery Attunement Altar to be off the Celestial Altar (what its crafted in), and adjust Chapter 23 accordingly.
+- Adds information about effect of Starlight to the production of the Astral Sorcery Lightwell to the Lightwell Quest.
+- Adds information about the stats of the Astral Sorcery Collector Crystal to the production of Starlight to the Celestial Collector Crystal Quest.
+- Increases the quest reward for obtaining Jetpacks, and attach the JetPlate Quests to the preceeding Jetpack Quests.
+- Updates the Galacticraft Communications Dish Card Quest to indicate the interaction must be with the base of the Communications Dish.
+- Fixes a random double-quote appearing in a tip.
+- Fixes a typo in the name of the Essence of Continuity.
+- Fixes missinformation about Stellar Conduits being enough to power the Weak Fusion Plant, suggest Cryo-Stabilized Fluxducts instead.
+- Fixes a typo where "rename" was incorrectly changed to "redesc" due to renaming lang keys from `x.name=` into `x.desc=`.
+- Fixes an incorrect statement about the logic of the quest being OR when it is AND.
+- Fixes an incorrectly possisive "it's" instead of "its".
+- Fixes Drawer tooltips incorrectly calling any potion "Witches' Brew", should now display the correct name.
 
 ## Texture Transformations:
 
-- Convert the Galactic Machine Frame into an actual block, instead of just an item.
+- Converts the Galactic Machine Frame into an actual block, instead of just an item.
 
 ## GitHub Developments:
 
@@ -46,3 +84,5 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Creates a rolling "LATEST" changelog file, for changes to be added to.
 
 ## Miscellaneous Changes:
+
+- Updates the Serialization Is Bad config file with the latest changes from their GitHub.
