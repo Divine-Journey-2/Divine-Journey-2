@@ -24,6 +24,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Prevents a crash when pushing an OpenBlocks Trophy with a Piston by disabling the ability to push Trophies.
 - Disables the abilty to try to teleport to a specific biome via Nature's Compass, as it frequently crashes the server.
 - Fixes a bug preventing sand from converting to Glass in the Thermal Expansion Magma Crucible.
+- Fixes Mekanism Creative Tank NBT being weird in Creative Reservoir recipe.
 
 ## Balance Adjustments:
 
@@ -46,6 +47,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds a direct recipe to create Water Bottles with Mystical Agriculture Water Essence.
 - Adds an Actually Additions Advanced Laser Relay NBT clearing recipe.
 - Adds RFTools Crafter NBT clearing recipes.
+- Adds Mekanism Tank and Gas Tank NBT clearing recipes.
 - Increases the Quantum Flux Void Bucket stack size to 64.
 - Reduces the excavation amount of OreExcavation by a single block, so veinmining the maximum amount will return exactly two stacks.
 - Adds a phantom placement marker to show where AE2 Cables and Parts will be placed (AE2-EL).
