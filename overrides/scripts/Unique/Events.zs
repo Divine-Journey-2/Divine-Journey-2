@@ -79,6 +79,12 @@ events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
         return;
     }
 
+    // Fix Quantum Flux Graphite Ore dropping their Graphite Dust instead of our fixed version
+    if (!e.silkTouch && e.block.definition.id == "quantumflux:graphiteore") {
+        e.drops = [<contenttweaker:industrial_grade_graphite_dust>] as WeightedItemStack[];
+        return;
+    }
+
     // If we aren't a player or aren't harvesting with Silk Touch, return early.
     if (!e.isPlayer || !e.silkTouch) {
         return;
