@@ -641,13 +641,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>.withTag({}),
 [[null, null, <alchemistry:ingot:110>, null, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
-[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}).marked("tank"), null],
+[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}).marked("wtf_why_does_this_work"), null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
-[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]],
-function(out, ins, cInfo) {
-    if (ins.tank.tag has "tier" && ins.tank.tag.tier == 4) return out;
-    return null;
-});
+[null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
 
 // Satchel (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:satchel:32000>.withTag({Accessible: 1 as byte}),
