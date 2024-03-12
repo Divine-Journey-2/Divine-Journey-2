@@ -3,7 +3,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
-
+- Update AE2 Extended Life 0.55.27 -> 0.56.4
 
 ## Bugfixes:
 
@@ -36,6 +36,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds RFTools Crafter NBT clearing recipes.
 - Increases the Quantum Flux Void Bucket stack size to 64.
 - Reduces the excavation amount of OreExcavation by a single block, so veinmining the maximum amount will return exactly two stacks.
+- Adds a phantom placement marker to show where AE2 Cables and Parts will be placed (AE2-EL).
+- Adds Toasts for completing or cancelling a Crafting Task (AE2-EL).
 
 ## Text and Quest Updates:
 
@@ -69,10 +71,12 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes an incorrect statement about the logic of the quest being OR when it is AND.
 - Fixes an incorrectly possisive "it's" instead of "its".
 - Fixes Drawer tooltips incorrectly calling any potion "Witches' Brew", should now display the correct name.
+- Updates the Meteorite Compass Quest to state that it points to the Sky Stone Chest, due to a change while updating AE2-EL.
 
 ## Texture Transformations:
 
 - Converts the Galactic Machine Frame into an actual block, instead of just an item.
+- Updates a bunch of AE2 textures (AE2-EL).
 
 ## GitHub Developments:
 
