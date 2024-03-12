@@ -88,6 +88,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Notes that DivineRPG Furnaces cannot be automatically extracted from.
 - Updates the Petal Apothecary Quest to include information about how the Roots Unending Bowl automatically fills it up with water.
 - Fixes the Dread Lamp and Mega Torch Quests to include the correct information on the size and shape of effect.
+- Makes some quests in Chapter 27 not be NBT-specific.
 
 ## Texture Transformations:
 
