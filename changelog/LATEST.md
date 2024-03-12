@@ -4,6 +4,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Update AE2 Extended Life 0.55.27 -> 0.56.4
+- Update Thaumic Augmentation 2.1.11 -> 2.1.13
 
 ## Bugfixes:
 
