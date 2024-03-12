@@ -22,6 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Allows Primordial Fragments to be used in the Impetus Crystal recipe, only use Primordial Fragments.
 - Fixes Mekansim Sawdust being obtainable in some specific recipes.
 - Prevents a crash when pushing an OpenBlocks Trophy with a Piston by disabling the ability to push Trophies.
+- Disables the abilty to try to teleport to a specific biome via Nature's Compass, as it frequently crashes the server.
 
 ## Balance Adjustments:
 
