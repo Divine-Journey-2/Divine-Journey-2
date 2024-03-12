@@ -59,7 +59,7 @@ addIFMachineRecipeAsymmetrical(<industrialforegoing:crop_recolector>, <divinerpg
 
 // Black Hole Unit
 recipes.removeShaped(<industrialforegoing:black_hole_unit>);
-recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<industrialforegoing:plastic>,<appliedenergistics2:storage_cell_64k>.noReturn(),<industrialforegoing:plastic>],[<appliedenergistics2:storage_cell_64k>.noReturn(),<teslacorelib:machine_case>,<appliedenergistics2:storage_cell_64k>.noReturn()],[<mekanism:machineblock3>,<appliedenergistics2:storage_cell_64k>.noReturn(),<mekanism:machineblock3>]]);
+recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<industrialforegoing:plastic>,<appliedenergistics2:material:38>,<industrialforegoing:plastic>],[<appliedenergistics2:material:38>,<teslacorelib:machine_case>,<appliedenergistics2:material:38>],[<mekanism:machineblock3>,<appliedenergistics2:material:38>,<mekanism:machineblock3>]]);
 
 // Water Condensator
 addIFMachineRecipe(<industrialforegoing:water_condensator>, <thermalfoundation:material:24>, <thermalfoundation:material:24>, <thermalexpansion:device>);
@@ -129,7 +129,7 @@ addIFMachineRecipeAsymmetrical(<industrialforegoing:material_stonework_factory>,
 
 // Black Hole Tank
 recipes.removeShaped(<industrialforegoing:black_hole_tank>);
-recipes.addShaped(<industrialforegoing:black_hole_tank>, [[<industrialforegoing:plastic>,<appliedenergistics2:fluid_storage_cell_64k>.withTag({}).noReturn(),<industrialforegoing:plastic>],[<appliedenergistics2:fluid_storage_cell_64k>.withTag({}).noReturn(),<teslacorelib:machine_case>,<appliedenergistics2:fluid_storage_cell_64k>.withTag({}).noReturn()],[<mekanism:machineblock3>,<appliedenergistics2:fluid_storage_cell_64k>.withTag({}).noReturn(),<mekanism:machineblock3>]]);
+recipes.addShaped(<industrialforegoing:black_hole_tank>, [[<industrialforegoing:plastic>,<appliedenergistics2:material:57>,<industrialforegoing:plastic>],[<appliedenergistics2:material:57>,<teslacorelib:machine_case>,<appliedenergistics2:material:57>],[<mekanism:machineblock3>,<appliedenergistics2:material:57>,<mekanism:machineblock3>]]);
 
 // Resourceful Furnace
 addIFMachineRecipe(<industrialforegoing:resourceful_furnace>, <minecraft:furnace>, <minecraft:furnace>, <thermalfoundation:material:25>);

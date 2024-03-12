@@ -37,6 +37,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds EMC to the Dungeon of Arcana boss drops.
 - Reduces the time for Seared Stone to create a Stone Gear from 50 seconds to 5 seconds, making it inline with other operations.
 - Adds the ability to smelt Corrupted Draconium Dust back into Corrupted Draconium Ingots.
+- Changes the cost of the Black Hole Tank and Unit to be the 64k Components instead of the 64k Cells.
 
 ## QoL Improvements:
 
