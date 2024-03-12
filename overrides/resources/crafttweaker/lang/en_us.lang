@@ -319,6 +319,7 @@ dj2.emptiness_spires.desc0=§fFound in Eldritch Spires in the Emptiness dimensio
 dj2.ender_storage_tank.desc0=§4Crafting this takes a Portable Tank (Basic) full of §r§6Blazing Pyrotheum§r§4!
 
 # DivineRPG tooltips
+dj2.divinerpg_furnace.desc0=§cCannot be automatically extracted from.
 dj2.infernal_flame.desc0=§l§fUsed to summon the §r§l§cKing of Scorchers§r§l§f in the Nether.
 dj2.mysterious_clock.desc0=§l§fUsed to summon the §r§l§4Ancient Entity§r§l§f in the Overworld.
 dj2.call_of_the_watcher.desc0=§l§fUsed to summon §r§l§cThe Watcher§r§l§f in the Nether.

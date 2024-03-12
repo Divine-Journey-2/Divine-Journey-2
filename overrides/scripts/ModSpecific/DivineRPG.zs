@@ -26,6 +26,15 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<divinerpg:snowflake>, <divinerpg
 // Alloy Smelter recipe in config/enderio/recipes/user/user_recipes.xml
 mods.thermalexpansion.InductionSmelter.addRecipe(<divinerpg:snowflake>, <divinerpg:snowflake_shuriken> * 16, <minecraft:ice> * 4, 2500);
 
+// DivineRPG Furnaces not automatable
+<divinerpg:coalstone_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:greenlight_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:oceanfire_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:molten_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:whitefire_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:moonlight_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+<divinerpg:demon_furnace>.addTooltip(game.localize("dj2.divinerpg_furnace.desc0"));
+
 // Shadow Stone
 recipes.remove(<divinerpg:shadow_stone>);
 recipes.addShaped(<divinerpg:shadow_stone>, [[<divinerpg:shadow_bar>,<divinerpg:shadow_bar>,<divinerpg:shadow_bar>],[<divinerpg:shadow_bar>,<divinerpg:shadow_bar>,<divinerpg:shadow_bar>],[<divinerpg:shadow_bar>,<divinerpg:shadow_bar>,<divinerpg:shadow_bar>]]);

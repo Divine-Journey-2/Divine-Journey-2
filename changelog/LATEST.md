@@ -80,6 +80,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes an incorrectly possisive "it's" instead of "its".
 - Fixes Drawer tooltips incorrectly calling any potion "Witches' Brew", should now display the correct name.
 - Updates the Meteorite Compass Quest to state that it points to the Sky Stone Chest, due to a change while updating AE2-EL.
+- Notes that DivineRPG Furnaces cannot be automatically extracted from.
 
 ## Texture Transformations:
 
