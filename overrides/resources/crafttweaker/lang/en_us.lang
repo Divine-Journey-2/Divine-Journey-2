@@ -776,3 +776,9 @@ dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking an
 # Deprecated
 dj2.deprecated.deprecated.desc=§cDeprecated
 dj2.deprecated.convert.desc=§cConvert into the replacement item via shapeless craft.
+
+
+# Fix Broken Lang Keys from other sources
+
+research.f_MATCOLDIRON.text=Examine Cold Iron.
+research.f_MATSILVER.text=Examine Silver.

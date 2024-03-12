@@ -96,6 +96,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes endgame quests in Chapter 29 and 30 having NBT issues with the Bag of Holding by allow the quest to complete with either the key or the bag.
 - Adds some color formatting to some Chapter 30 items.
 - Adds a reference to the Mana Mirror in the Nourishment Pendant Quest.
+- Fixes unlocalized text in the Thaumonomicon related to Bewitchment.
 
 ## Texture Transformations:
 
