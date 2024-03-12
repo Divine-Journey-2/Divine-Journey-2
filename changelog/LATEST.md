@@ -85,6 +85,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes Drawer tooltips incorrectly calling any potion "Witches' Brew", should now display the correct name.
 - Updates the Meteorite Compass Quest to state that it points to the Sky Stone Chest, due to a change while updating AE2-EL.
 - Notes that DivineRPG Furnaces cannot be automatically extracted from.
+- Updates the Petal Apothecary Quest to include information about how the Roots Unending Bowl automatically fills it up with water.
 
 ## Texture Transformations:
 
