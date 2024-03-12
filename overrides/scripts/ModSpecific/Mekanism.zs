@@ -236,7 +236,7 @@ recipes.remove(<mekanism:machineblock2:9>);
 recipes.addShaped(<mekanism:machineblock2:9>, [[<immersiveengineering:material:2>,<mekanism:atomicalloy>,<immersiveengineering:material:2>],[<mekanism:controlcircuit>,<mekanism:basicblock:8>,<mekanism:controlcircuit>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
 
 // Basic Fluid Tank
-crafting.addHiddenShapeless(<mekanism:machineblock2:11>, [<mekanism:machineblock2:11>.marked("tank")],
+recipes.addHiddenShapeless("mekanism_liquid_tank_clear", <mekanism:machineblock2:11>, [<mekanism:machineblock2:11>.marked("tank")],
 function(out, ins, cInfo) {
     return out.withTag({tier: ins.tank.tag.tier});
 });
@@ -343,7 +343,7 @@ recipes.addShaped(<mekanism:machineblock2:4>, [[<enderio:block_tank:1>,null,<end
 <mekanism:gaugedropper>.addTooltip(game.localize("dj2.gaugedropper.desc0"));
 
 // Basic Gas Tank
-crafting.addHiddenShapeless(<mekanism:gastank>, [<mekanism:gastank>.marked("tank")],
+recipes.addHiddenShapeless("mekanism_gas_tank_clear", <mekanism:gastank>, [<mekanism:gastank>.marked("tank")],
 function(out, ins, cInfo) {
     return out.withTag({tier: ins.tank.tag.tier});
 });
