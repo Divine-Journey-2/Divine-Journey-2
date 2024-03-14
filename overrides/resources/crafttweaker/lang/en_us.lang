@@ -16,6 +16,8 @@ ritual.moretweaker.moretweakerrecipe1=Rite of Cycles
 dj2.event.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
 dj2.event.elemental_tool.desc1=§6Durability not actually consumed, just a desync.
 dj2.event.horde_horn.message=§bFailed to spawn - please use in open air.
+dj2.event.solar_flux_ie_drill.desc0=§cTo prevent a dupe bug,
+dj2.event.solar_flux_ie_drill.desc1=§cyou cannot break Solar Flux Solar Panels with the IE Drill.
 
 # Activate Block JEI category
 dj2.activate_block_jei.hand.name=§r§cRight Clicking

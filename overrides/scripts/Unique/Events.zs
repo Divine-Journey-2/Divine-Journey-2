@@ -283,42 +283,48 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
     }
 });
 
-// Fixing Immersive Engineering's Engineers Workbench voiding contents when broken on the wrong side
+static IE_WORKBENCH as IBlock = <immersiveengineering:wooden_device0:2>.asBlock();
+
 events.onBlockBreak(function(e as BlockBreakEvent) {
     if (e.world.isRemote()) {
         return;
     }
-    // If its not the Engineers Workbench, cancel out
-    if (
-        !(e.world.getBlock(e.position).definition.id == <immersiveengineering:wooden_device0:2>.asBlock().definition.id &&
-        e.world.getBlock(e.position).meta == <immersiveengineering:wooden_device0:2>.asBlock().meta)
-    ) {
+
+    // Fixing the Immersive Engineering Drill duplicating Solar Flux Solar Panels when filled with Biodiesel.
+    // ...and by "fixing" i mean preventing breaking them with the drill entirely. this sledgehammer solves all problems!
+    if (e.block.definition.id.startsWith("solarflux") && e.player.currentItem.definition.id == <immersiveengineering:drill>.definition.id) {
+        e.player.sendStatusMessage(game.localize("dj2.event.solar_flux_ie_drill.desc0") + "\n" + game.localize("dj2.event.solar_flux_ie_drill.desc1"));
+        e.cancel();
         return;
     }
 
-    var pos as IBlockPos = e.position;
-    var target as IBlockPos = pos;
+    val block as IBlock = e.world.getBlock(e.position);
 
-    // If its not the dummy block, IE already drops it correctly. Otherwise, use its internal facing attribute
-    // to figure out which block stores the inventory, and save its position.
-    if (!isNull(e.world.getBlock(pos).data)) {
-        if (e.world.getBlock(pos).data.dummy == 0) return;
-        else {
-            target = e.position.getOffset(
-                crafttweaker.world.IFacing.fromString(
-                    // UP and DOWN are the 0 and 1 values of facing, so offset it by -2
-                    (["WEST", "EAST", "SOUTH", "NORTH"] as string[])[e.world.getBlock(pos).data.facing - 2]
-                ),
-                1
-            );
+    // Fixing Immersive Engineering's Engineers Workbench voiding contents when broken on the wrong side
+    if (block.definition.id == IE_WORKBENCH.definition.id && block.meta == IE_WORKBENCH.meta) {
+        var target as IBlockPos = e.position;
+
+        // If its not the dummy block, IE already drops it correctly. Otherwise, use its internal facing attribute
+        // to figure out which block stores the inventory, and save its position.
+        if (!isNull(block.data)) {
+            if (block.data.dummy == 0) return;
+            else {
+                target = e.position.getOffset(
+                    crafttweaker.world.IFacing.fromString(
+                        // UP and DOWN are the 0 and 1 values of facing, so offset it by -2
+                        (["WEST", "EAST", "SOUTH", "NORTH"] as string[])[block.data.facing - 2]
+                    ),
+                    1
+                );
+            }
         }
-    }
 
-    // Then, run though all the items and drop them in world, with the appropriate quanties and tags.
-    for drop in e.world.getBlock(target).data.inventory.asList() {
-        var item as IItemStack = itemUtils.getItem(drop.id, drop.Damage) * drop.Count;
-        if (!isNull(drop.tag)) item = item.withTag(drop.tag);
-        e.world.spawnEntity(item.createEntityItem(e.world, target));
+        // Then, run though all the items and drop them in world, with the appropriate quanties and tags.
+        for drop in e.world.getBlock(target).data.inventory.asList() {
+            var item as IItemStack = itemUtils.getItem(drop.id, drop.Damage) * drop.Count;
+            if (!isNull(drop.tag)) item = item.withTag(drop.tag);
+            e.world.spawnEntity(item.createEntityItem(e.world, target));
+        }
     }
 });
 

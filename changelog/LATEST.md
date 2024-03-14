@@ -25,6 +25,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disables the abilty to try to teleport to a specific biome via Nature's Compass, as it frequently crashes the server.
 - Fixes a bug preventing sand from converting to Glass in the Thermal Expansion Magma Crucible.
 - Fixes Mekanism Creative Tank NBT being weird in Creative Reservoir recipe.
+- Fixes an interaction between an Immersive Engineering Drill and Solar Flux Solar Panels causing extra Solar Panels to drop.
 
 ## Balance Adjustments:
 
