@@ -31,6 +31,7 @@ dj2.activate_block_jei.glass_cable.desc0=§r§dAny AE2 Cable
 dj2.activate_block_jei.rf_duct.desc0=§r§dNearly anything that can hold or transfer RF/FE/CF/AE
 dj2.activate_block_jei.bucket.desc0=§r§dNearly anything that can hold or transfer fluids
 dj2.activate_block_jei.barrier.desc0=§r§dRight Click into the air
+dj2.activate_block_jei.after_killed.desc0=§r§bAfter being killed.
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§dConfigure Block
