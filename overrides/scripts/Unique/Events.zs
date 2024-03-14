@@ -178,6 +178,13 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
         e.cancel();
     }
 
+    // Disable individual Elemental Inscription Tools
+    // Without the `whatHand` part and just using `e.item` it constantly caused NPEs.
+    if (whatHand(e.player, <bloodmagic:inscription_tool>) != crafttweaker.entity.IEntityEquipmentSlot.head()) {
+        if (!e.player.world.isRemote()) e.player.sendStatusMessage(game.localize("dj2.event.elemental_tool.desc0"));
+        e.cancel();
+    }
+
     if (e.player.world.isRemote()) {
         return;
     }
@@ -190,13 +197,6 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     // Grant the user the Astral Sorcery Knowledge to use the table they just right clicked on.
     if (blockID == <astralsorcery:blockaltar>.definition.id) {
         progressAstral(e.player, e.block.meta);
-    }
-
-    // Disable individual Elemental Inscription Tools
-    // Without the `whatHand` part and just using `e.item` it constantly caused NPEs.
-    if (whatHand(e.player, <bloodmagic:inscription_tool>) != crafttweaker.entity.IEntityEquipmentSlot.head())  {
-        e.player.sendStatusMessage(game.localize("dj2.event.elemental_tool.desc0") + "\n" + game.localize("dj2.event.elemental_tool.desc1"));
-        e.cancel();
     }
 
     // Activate the held ender core if the target block was a stabilized end crystal

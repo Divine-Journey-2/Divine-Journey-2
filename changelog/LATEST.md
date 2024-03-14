@@ -26,6 +26,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes a bug preventing sand from converting to Glass in the Thermal Expansion Magma Crucible.
 - Fixes Mekanism Creative Tank NBT being weird in Creative Reservoir recipe.
 - Fixes an interaction between an Immersive Engineering Drill and Solar Flux Solar Panels causing extra Solar Panels to drop.
+- Fixes a visual desync when attempting to manually use an Elemental Inscription Tool, where the durability would be reduced as if you had successfully used it.
 
 ## Balance Adjustments:
 
