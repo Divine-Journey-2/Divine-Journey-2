@@ -100,6 +100,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds a reference to the Mana Mirror in the Nourishment Pendant Quest.
 - Fixes unlocalized text in the Thaumonomicon related to Bewitchment.
 - Adds the EnderIO Painting Machine to the Questbook.
+- Adds a quest explaining AE2 View Cells, Storage Cells, storage types, and the usefulness of Cell Workbench.
 
 ## Texture Transformations:
 
