@@ -14,8 +14,9 @@ ritual.moretweaker.moretweakerrecipe1=周期仪式
 
 # Custom player event messages
 dj2.event.elemental_tool.desc0=§d元素铭文工具已禁用，仅用于合成仪式推测杖！
-dj2.event.elemental_tool.desc1=§6耐久度实际上不会消耗，只是个不同步问题。
 dj2.event.horde_horn.message=§b生成失败 - 请在开敞空间使用。
+dj2.event.solar_flux_ie_drill.desc0=§c为避免物品复制bug，沉浸工程的采矿机械钻
+dj2.event.solar_flux_ie_drill.desc1=§c无法破坏日光通量模组的太阳能板。
 
 # Activate Block JEI category
 dj2.activate_block_jei.hand.name=§r§c右键点击
@@ -30,6 +31,7 @@ dj2.activate_block_jei.glass_cable.desc0=§r§d任意AE2线缆
 dj2.activate_block_jei.rf_duct.desc0=§r§d几乎所有能存储或传输RF/FE/CF/AE的东西
 dj2.activate_block_jei.bucket.desc0=§r§d几乎所有能存储或传输流体的东西
 dj2.activate_block_jei.barrier.desc0=§r§d对空气右击
+dj2.activate_block_jei.after_killed.desc0=§r§b被击杀后。
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§d配置方块
@@ -319,6 +321,7 @@ dj2.emptiness_spires.desc0=§f于虚域维度的邪术旋塔发现。
 dj2.ender_storage_tank.desc0=§4合成该物品需要一个装满§r§6烈焰之炽焱§r的便携储罐（基础）§4!
 
 # DivineRPG tooltips
+dj2.divinerpg_furnace.desc0=§c无法从中抽取产物。
 dj2.infernal_flame.desc0=§l§f用于在地狱召唤§r§l§c怒焰王§r§l§f。
 dj2.mysterious_clock.desc0=§l§f用于在主世界召唤§r§l§4远古实体§r§l§f。
 dj2.call_of_the_watcher.desc0=§l§f用于在地狱召唤§r§l§c监视者§r§l§f。
@@ -344,6 +347,7 @@ dj2.wizards_book.desc0=§f从位于§9秘界地牢§r§r的§4瓦提库斯领主
 dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前3行的物品！
 dj2.dynamic_tank_warning.desc0=§c§l警告：§r§f动态储罐有时会丢失存储
 dj2.dynamic_tank_warning.desc1=§f的流体。不·推·荐制作/使用。
+dj2.gaugedropper.desc0=对空气Shift+右击可以清空内容物。
 
 # Lightningcraft tooltips
 dj2.electricium.desc0=§f用雷电同时轰击掉落物
@@ -749,6 +753,7 @@ dj2.totempedia.desc1=§f合成时请参考JEI！
 
 # Aether tooltips
 dj2.aerogel_warning.desc0=§c§l在装有TickProfiler的服务器中，尝试自动化该物品会导致崩溃。
+dj2.enchanter.desc0=放置在神炼重力晶矿上可大幅增加工作速度！
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§f合成需要消耗四分之一池魔力。
@@ -775,3 +780,9 @@ dj2.jei.hand_framing_tool.desc3=工具镶框后，对任意已放置的抽屉右
 # Deprecated
 dj2.deprecated.deprecated.desc=§c已弃用
 dj2.deprecated.convert.desc=§c通过无序合成来转换为替代物品。
+
+
+# Fix Broken Lang Keys from other sources
+
+research.f_MATCOLDIRON.text=调查寒铁。
+research.f_MATSILVER.text=调查银。
