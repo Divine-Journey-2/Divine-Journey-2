@@ -11,6 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Thaumic Augmentation 2.1.11 -> 2.1.13
 - Update Journeymap 5.7.1 -> 5.7.1p3
 - Update Enhanced P2P betterp2p_plusplus 1.2.3 -> betterp2p 1.2.3
+- Update Roots 3.1.7 -> 3.1.9.2
 
 ## Bugfixes:
 
@@ -27,6 +28,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes Mekanism Creative Tank NBT being weird in Creative Reservoir recipe.
 - Fixes an interaction between an Immersive Engineering Drill and Solar Flux Solar Panels causing extra Solar Panels to drop.
 - Fixes a visual desync when attempting to manually use an Elemental Inscription Tool, where the durability would be reduced as if you had successfully used it.
+- Fixes a error preventing properly assigning spells to Roots Staffs (Roots).
+- Fixes an issue causing the Light Drifer modifier to not revert player location when the spell ends (Roots).
 
 ## Balance Adjustments:
 
