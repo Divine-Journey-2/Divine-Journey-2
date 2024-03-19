@@ -44,7 +44,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-- Adds Plastic to the Compacting Drawer, allowing it to be converted even though it doesn't have a downgrade recipe.
+- Adds Dry Rubber to the Compacting Drawer, allowing it to be converted even though it doesn't have a downgrade recipe.
 - Adds Ghasts and Ghastlings to the Roots Spawning Ritual.
 - Adds a direct recipe to create Water Bottles with Mystical Agriculture Water Essence.
 - Adds an Actually Additions Advanced Laser Relay NBT clearing recipe.
