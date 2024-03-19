@@ -12,6 +12,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Journeymap 5.7.1 -> 5.7.1p3
 - Update Enhanced P2P betterp2p_plusplus 1.2.3 -> betterp2p 1.2.3
 - Update Roots 3.1.7 -> 3.1.9.2
+- Update Serialization Is Bad 1.5.0 -> 1.5.2
 
 ## Bugfixes:
 
@@ -30,6 +31,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes a visual desync when attempting to manually use an Elemental Inscription Tool, where the durability would be reduced as if you had successfully used it.
 - Fixes a error preventing properly assigning spells to Roots Staffs (Roots).
 - Fixes an issue causing the Light Drifer modifier to not revert player location when the spell ends (Roots).
+- Fixes a crash where users using an old Java verison, such as the one distributed by CurseForge, would be unable to download Serialization Is Bad config files and thus crash (Serialization Is Bad).
 
 ## Balance Adjustments:
 
