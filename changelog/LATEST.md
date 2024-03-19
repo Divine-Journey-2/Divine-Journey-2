@@ -32,6 +32,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes a error preventing properly assigning spells to Roots Staffs (Roots).
 - Fixes an issue causing the Light Drifer modifier to not revert player location when the spell ends (Roots).
 - Fixes a crash where users using an old Java verison, such as the one distributed by CurseForge, would be unable to download Serialization Is Bad config files and thus crash (Serialization Is Bad).
+- Fixes an issue where some Thaumcraft-related crafts that should have research didn't.
 
 ## Balance Adjustments:
 
@@ -46,6 +47,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Reduces the time for Seared Stone to create a Stone Gear from 50 seconds to 5 seconds, making it inline with other operations.
 - Adds the ability to smelt Corrupted Draconium Dust back into Corrupted Draconium Ingots.
 - Changes the cost of the Black Hole Tank and Unit to be the 64k Components instead of the 64k Cells.
+- Changes all Thaumic Augmentation crafts that had research and their recipes replaced to now continue to require that research with the new recipes.
 
 ## QoL Improvements:
 
