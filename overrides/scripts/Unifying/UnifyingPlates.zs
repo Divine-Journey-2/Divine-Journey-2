@@ -151,7 +151,7 @@ recipes.addShapeless(<contenttweaker:silicon_plate>, [<contenttweaker:iron_hamme
 recipes.addShapeless(<contenttweaker:titanium_plate>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1),<galacticraftplanets:item_basic_asteroids>,<galacticraftplanets:item_basic_asteroids>]);
 mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, 3000);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:titanium_plate>, <galacticraftplanets:item_basic_asteroids>, <immersiveengineering:mold>, 3000);
-mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_plate>, false, 1, [[100, <alchemistry:element:22> * 144]]);
+mods.alchemistry.Dissolver.addRecipe(<contenttweaker:titanium_plate>, false, 1, [[100, <alchemistry:element:22> * 16]]);
 
 // Black Iron Slate
 recipes.remove(<extendedcrafting:material:2>);

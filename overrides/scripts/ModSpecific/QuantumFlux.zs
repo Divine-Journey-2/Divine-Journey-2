@@ -58,6 +58,7 @@ recipes.remove(<quantumflux:craftingpiece:1>);
 recipes.addShaped(<quantumflux:craftingpiece:1> * 4, [[<quantumflux:darkstone>,<industrialforegoing:pink_slime_ingot>,<quantumflux:darkstone>],[<minecraft:gold_block>,<teslacorelib:machine_case>,<minecraft:gold_block>],[<quantumflux:darkstone>,<industrialforegoing:pink_slime_ingot>,<quantumflux:darkstone>]]);
 
 // Void Bucket
+<quantumflux:voidbucket>.maxStackSize = 64;
 recipes.remove(<quantumflux:voidbucket>);
 recipes.addShaped(<quantumflux:voidbucket>, [[<thermalfoundation:material:32>,<contenttweaker:crystalline_brown_slime_ingot>,<thermalfoundation:material:32>],[null,<thermalfoundation:material:32>,null]]);
 

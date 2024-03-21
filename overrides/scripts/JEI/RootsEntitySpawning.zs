@@ -114,5 +114,10 @@ createSpawner(<entity:minecraft:guardian>, [<minecraft:fish>, <minecraft:dye>, <
 // Evoker
 createSpawner(<entity:minecraft:evocation_illager>, [<contenttweaker:empowered_glod_crystal>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal_empowered:4>, <mob_grinding_utils:saw_upgrade:1>]);
 
+// Vanilla Minecraft Ghasts
+createSpawner(<entity:minecraft:ghast>, [<divinerpg:ghast_pumpkin>, <minecraft:fire_charge>, <minecraft:tnt>]);
+
+// Twilight Forest Ghastlings
+createSpawner(<entity:twilightforest:mini_ghast>, [<divinerpg:ghast_pumpkin>, <minecraft:fire_charge>, <appliedenergistics2:tiny_tnt>]);
 
 print("ENDING RootsEntitySpawning.zs");

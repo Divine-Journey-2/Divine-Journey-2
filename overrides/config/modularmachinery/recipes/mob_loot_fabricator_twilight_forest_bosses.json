@@ -98,6 +98,12 @@
             "io-type": "output",
             "item": "twilightforest:hydra_chop",
             "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bhc:orange_heart",
+            "amount": 6
         }
     ]
 }

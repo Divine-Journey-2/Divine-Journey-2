@@ -77,11 +77,11 @@ recipes.removeByRecipeName("matc:essence/superium");
 recipes.removeByRecipeName("matc:essence/supremium");
 recipes.removeByRecipeName("matc:essence/insanium");
 
-recipes.addHiddenShapeless("inferiumcrystal_conversion", <contenttweaker:inferiumcrystal>, [<matc:inferiumcrystal>]);
-recipes.addHiddenShapeless("prudentiumcrystal_conversion", <contenttweaker:prudentiumcrystal>, [<matc:prudentiumcrystal>]);
-recipes.addHiddenShapeless("intermediumcrystal_conversion", <contenttweaker:intermediumcrystal>, [<matc:intermediumcrystal>]);
-recipes.addHiddenShapeless("superiumcrystal_conversion", <contenttweaker:superiumcrystal>, [<matc:superiumcrystal>]);
-recipes.addHiddenShapeless("supremiumcrystal_conversion", <contenttweaker:supremiumcrystal>, [<matc:supremiumcrystal>]);
+recipes.addHiddenShapeless("inferiumcrystal_conversion", <contenttweaker:inferiumcrystal>, [<matc:inferiumcrystal>.noReturn()]);
+recipes.addHiddenShapeless("prudentiumcrystal_conversion", <contenttweaker:prudentiumcrystal>, [<matc:prudentiumcrystal>.noReturn()]);
+recipes.addHiddenShapeless("intermediumcrystal_conversion", <contenttweaker:intermediumcrystal>, [<matc:intermediumcrystal>.noReturn()]);
+recipes.addHiddenShapeless("superiumcrystal_conversion", <contenttweaker:superiumcrystal>, [<matc:superiumcrystal>.noReturn()]);
+recipes.addHiddenShapeless("supremiumcrystal_conversion", <contenttweaker:supremiumcrystal>, [<matc:supremiumcrystal>.noReturn()]);
 
 // Inferium Infusion Crystal
 mods.extendedcrafting.EnderCrafting.addShaped(<contenttweaker:inferiumcrystal>, [[<mysticalagriculture:crafting:5>,<botania:manaresource:18>,<mysticalagriculture:crafting:5>],[<botania:manaresource:18>,<botania:manaresource:2>,<botania:manaresource:18>],[<mysticalagriculture:crafting:5>,<botania:manaresource:18>,<mysticalagriculture:crafting:5>]]);

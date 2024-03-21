@@ -14,7 +14,7 @@ print("STARTING UnifyingGears.zs");
 //recipes.replaceAllOccurences(<ore:gearWood>, <thermalfoundation:material:22>, <*>);
 <ore:gearWood>.removeItems([<appliedenergistics2:material:40>, <enderio:item_material:9>]);
 mods.tconstruct.Casting.removeTableRecipe(<thermalfoundation:material:23>);
-mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:23>, <thermalfoundation:material:22>, <liquid:stone>, 288, true, 1000);
+mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:23>, <thermalfoundation:material:22>, <liquid:stone>, 288, true, 100);
 recipes.remove(<appliedenergistics2:material:40>);
 recipes.remove(<enderio:item_material:9>);
 

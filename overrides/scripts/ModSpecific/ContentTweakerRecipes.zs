@@ -630,7 +630,7 @@ mods.botania.Apothecary.addRecipe(<contenttweaker:hydrating_petal>, [<ore:petalL
 mods.botania.Apothecary.addRecipe(<contenttweaker:petal_of_the_inner_flame>, [<ore:petalBrown>,<ore:petalOrange>,<ore:petalOrange>,<ore:petalYellow>]);
 
 // Livingmatter
-val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:abyssalsand>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
+val dimensionalDirts = [<divinerpg:frozen_dirt>,<divinerpg:eden_dirt>,<divinerpg:wildwood_dirt>,<divinerpg:apalachia_dirt>,<divinerpg:skythern_dirt>,<divinerpg:mortum_dirt>,<divinerpg:arcanite_dirt>,<divinerpg:dream_dirt>,<abyssalcraft:dreadlandsdirt>,<aether_legacy:aether_dirt:*>] as IItemStack[];
 for dim_dirt in dimensionalDirts {
     mods.botania.PureDaisy.addRecipe(dim_dirt, <contenttweaker:livingmatter>, 75);
 }
@@ -1073,8 +1073,7 @@ mods.tconstruct.Casting.addTableRecipe(<contenttweaker:cold_void_seed>, <thaumcr
 TCCrucible.registerRecipe("contenttweaker:cold_void_metal_ingot", "BASEELDRITCH", <contenttweaker:cold_void_metal_ingot>, <contenttweaker:cold_void_seed>, [<aspect:metallum> * 50, <aspect:vitium> * 20, <aspect:tenebrae> * 10]);
 
 // Impetus Crystal
-recipes.addShapeless(<contenttweaker:impetus_crystal>, [<thaumcraft:primordial_pearl>.anyDamage().transformDamage(1),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
-recipes.addShapeless(<contenttweaker:impetus_crystal>, [<contenttweaker:goddess_pearl>.reuse(),<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
+recipes.addShapeless(<contenttweaker:impetus_crystal>, [<contenttweaker:primordial_fragment>,<thaumcraft:ingot:1>,<bewitchment:otherworldly_tears>.noReturn(),<contenttweaker:magical_leather>,<bewitchment:witches_stitching>]);
 
 // Printed Thaumium Circuit
 Inscriber.addRecipe(<contenttweaker:printed_thaumium_circuit>, <thaumcraft:ingot>, true, <contenttweaker:inscriber_scheduling_press>);

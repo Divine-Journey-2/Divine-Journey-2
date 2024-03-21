@@ -41,4 +41,7 @@ recipes.addShapeless(<betternether:reeds_button>, [<quark:jungle_button>,<better
 recipes.addShapeless(<betternether:reeds_button>, [<quark:acacia_button>,<betternether:nether_reed>]);
 recipes.addShapeless(<betternether:reeds_button>, [<quark:dark_oak_button>,<betternether:nether_reed>]);
 
+// Bone Block reversion
+recipes.addShaped(<minecraft:bone_block> * 4, [[<betternether:bone_block>,<betternether:bone_block>],[<betternether:bone_block>,<betternether:bone_block>]]);
+
 print("ENDING BetterNether.zs");

@@ -14,8 +14,9 @@ ritual.moretweaker.moretweakerrecipe1=Rite of Cycles
 
 # Custom player event messages
 dj2.event.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
-dj2.event.elemental_tool.desc1=§6Durability not actually consumed, just a desync.
 dj2.event.horde_horn.message=§bFailed to spawn - please use in open air.
+dj2.event.solar_flux_ie_drill.desc0=§cTo prevent a dupe bug,
+dj2.event.solar_flux_ie_drill.desc1=§cyou cannot break Solar Flux Solar Panels with the IE Drill.
 
 # Activate Block JEI category
 dj2.activate_block_jei.hand.name=§r§cRight Clicking
@@ -30,6 +31,7 @@ dj2.activate_block_jei.glass_cable.desc0=§r§dAny AE2 Cable
 dj2.activate_block_jei.rf_duct.desc0=§r§dNearly anything that can hold or transfer RF/FE/CF/AE
 dj2.activate_block_jei.bucket.desc0=§r§dNearly anything that can hold or transfer fluids
 dj2.activate_block_jei.barrier.desc0=§r§dRight Click into the air
+dj2.activate_block_jei.after_killed.desc0=§r§bAfter being killed.
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§dConfigure Block
@@ -37,7 +39,7 @@ dj2.configure_jei.stairs.desc=Rotate Block
 dj2.configure_jei.atomic_reconstructor.desc=§r§bToggles between Deactivation and Pulse mode.
 dj2.configure_jei.starlight.desc=§r§bAnything that can transfer or receive starlight.
 dj2.configure_jei.enderio_conduit.desc=§r§bAny EnderIO Conduit.
-dj2.configure_jei.labeller.desc=§r§bCan redesc anything, primarily intended for Variable Cards.
+dj2.configure_jei.labeller.desc=§r§bCan rename anything, primarily intended for Variable Cards.
 dj2.configure_jei.redprint.desc=§r§bMost Thermal Blocks.
 dj2.configure_jei.configuration_card.desc=§r§bMost Mekanism Machines.
 dj2.configure_jei.fluix_cable.desc=§r§bMost Applied Energistics 2 Blocks.
@@ -198,7 +200,7 @@ dj2.astral_core.desc1=§rthat each have a §cunique trait§r of a Faint Constell
 dj2.astral_core.desc2=§dAlcara§r, §7Gelu§r, §aUlteria§r, and §6Vorux§r. To add a trait to a Crystal:
 dj2.astral_core.desc3=§r1. Attune it to any Constellation.
 dj2.astral_core.desc4=§r2. Wait until a Dim Constellation is available at night.
-dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation. 
+dj2.astral_core.desc5=§r3. Attune it again to the Dim Constellation.
 dj2.astral_core.desc6=§r   This will add a §9Trait§r modifier to it.
 dj2.astral_core.desc7=§r§lCANNOT BE AUTOCRAFTED.
 dj2.star_of_revelation.desc0=§cDoes not get consumed by regular crafting.
@@ -319,6 +321,7 @@ dj2.emptiness_spires.desc0=§fFound in Eldritch Spires in the Emptiness dimensio
 dj2.ender_storage_tank.desc0=§4Crafting this takes a Portable Tank (Basic) full of §r§6Blazing Pyrotheum§r§4!
 
 # DivineRPG tooltips
+dj2.divinerpg_furnace.desc0=§cCannot be automatically extracted from.
 dj2.infernal_flame.desc0=§l§fUsed to summon the §r§l§cKing of Scorchers§r§l§f in the Nether.
 dj2.mysterious_clock.desc0=§l§fUsed to summon the §r§l§4Ancient Entity§r§l§f in the Overworld.
 dj2.call_of_the_watcher.desc0=§l§fUsed to summon §r§l§cThe Watcher§r§l§f in the Nether.
@@ -344,6 +347,7 @@ dj2.wizards_book.desc0=§fBought from §r§4Lord Vatticus§r§f in the §r§9Dun
 dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the input Chest will remain in Robit's inventory!
 dj2.dynamic_tank_warning.desc0=§c§lWarning: §r§fSometimes the Dynamic Tank can FORGET
 dj2.dynamic_tank_warning.desc1=§fits liquid. NOT recommended to craft / use.
+dj2.gaugedropper.desc0=Empty via Shift Clicking into the air.
 
 # Lightningcraft tooltips
 dj2.electricium.desc0=§fCreate this for the first time by
@@ -747,6 +751,7 @@ dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
 # Aether tooltips
 dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod installed, attemting to automate this will cause crashes.
+dj2.enchanter.desc0=Operates with significantly increased speed when placed above a Gravitite Block!
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§fTakes a quarter of a Mana Pool to craft.
@@ -773,3 +778,9 @@ dj2.jei.hand_framing_tool.desc3=Then, once the tool is framed, right clicking an
 # Deprecated
 dj2.deprecated.deprecated.desc=§cDeprecated
 dj2.deprecated.convert.desc=§cConvert into the replacement item via shapeless craft.
+
+
+# Fix Broken Lang Keys from other sources
+
+research.f_MATCOLDIRON.text=Examine Cold Iron.
+research.f_MATSILVER.text=Examine Silver.
