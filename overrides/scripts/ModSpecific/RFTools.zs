@@ -28,14 +28,17 @@ recipes.addShaped(<rftools:coalgenerator>, [[<thermalfoundation:material:352>,<t
 
 // Crafter Tier 1
 recipes.remove(<rftools:crafter1>);
+recipes.addHiddenShapeless("rftools_crafter_1_clear", <rftools:crafter1>, [<rftools:crafter1>]);
 recipes.addShaped(<rftools:crafter1>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<mekanism:machineblock3:5>,<rftools:machine_frame>,<mekanism:machineblock3:5>],[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
 
 // Crafter Tier 2
 recipes.remove(<rftools:crafter2>);
+recipes.addHiddenShapeless("rftools_crafter_2_clear", <rftools:crafter2>, [<rftools:crafter2>]);
 recipes.addShaped(<rftools:crafter2>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<enderio:item_alloy_ingot:6>,<rftools:machine_frame>,<enderio:item_alloy_ingot:6>],[<thermalfoundation:material:352>,<rftools:crafter1>,<thermalfoundation:material:352>]]);
 
 // Crafter Tier 3
 recipes.remove(<rftools:crafter3>);
+recipes.addHiddenShapeless("rftools_crafter_3_clear", <rftools:crafter3>, [<rftools:crafter3>]);
 recipes.addShaped(<rftools:crafter3>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<enderio:item_material:73>,<rftools:machine_frame>,<enderio:item_material:73>],[<thermalfoundation:material:352>,<rftools:crafter2>,<thermalfoundation:material:352>]]);
 
 // Modular Storage

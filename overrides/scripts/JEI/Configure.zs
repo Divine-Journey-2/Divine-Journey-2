@@ -110,7 +110,7 @@ addConfiguration(<appliedenergistics2:network_tool>, fluix);
 addConfiguration(<astralsorcery:itemilluminationwand>, illuminator);
 addConfiguration(<astralsorcery:itemlinkingtool>, starlightTransfer);
 addConfiguration(<base:wrench>, chest);
-addConfiguration(<betterp2p_plusplus:advanced_memory_card>, p2pTunnels);
+addConfiguration(<betterp2p:advanced_memory_card>, p2pTunnels);
 addConfiguration(<bigreactors:wrench>, reactorPorts);
 addConfiguration(<bloodmagic:ritual_dismantler>, ritual);
 addConfiguration(<bloodmagic:ritual_diviner:1>, ritual);

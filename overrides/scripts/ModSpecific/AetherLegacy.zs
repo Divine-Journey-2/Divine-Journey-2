@@ -11,6 +11,7 @@ print("STARTING AetherLegacy.zs");
 <ore:chest>.removeItems([<aether_legacy:treasure_chest>, <aether_legacy:chest_mimic>]);
 
 // Enchanter
+<aether_legacy:enchanter>.addTooltip(game.localize("dj2.enchanter.desc0"));
 recipes.remove(<aether_legacy:enchanter>);
 recipes.addShaped(<aether_legacy:enchanter>, [[<aether_legacy:holystone_brick>,<aether_legacy:zanite_block>,<aether_legacy:holystone_brick>],[<aether_legacy:holystone_brick>,<contenttweaker:aether_power_core>.anyDamage().transformDamage(1),<aether_legacy:holystone_brick>],[<ore:ingotValkyrie>,<ore:ingotValkyrie>,<ore:ingotValkyrie>]]);
 

@@ -664,6 +664,7 @@ mods.mekanism.enrichment.addRecipe(<ore:oreDimensionalShard>, <rftools:dimension
 
 // Corrupted Draconium Dust
 addMaterialToDustCrushingWOPetrotheum(<contenttweaker:corrupted_draconium_ingot>, <contenttweaker:corrupted_draconium_dust>);
+addDustSmelting(<contenttweaker:corrupted_draconium_dust>, <contenttweaker:corrupted_draconium_ingot>);
 
 // Ultimate Ingot
 IECrusher.addRecipe(<extendedcrafting:material:32> * 64, <extendedcrafting:singularity_ultimate>, 4000);
