@@ -124,6 +124,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Creates a Github Action to create a "nightly" release every time the `main` branch gets a push.
 - Creates a Github Action to automate publishing a release.
 - Creates a rolling "LATEST" changelog file, for changes to be added to.
+- Updates the questbook script to make it not error in some situations, and add inversion functionality.
 
 ## Miscellaneous Changes:
 
