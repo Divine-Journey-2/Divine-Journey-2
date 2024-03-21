@@ -172,6 +172,7 @@ mods.actuallyadditions.AtomicReconstructor.removeRecipe(<actuallyadditions:block
 
 // Advanced Item Laser Relay
 recipes.remove(<actuallyadditions:block_laser_relay_item_whitelist>);
+recipes.addHiddenShapeless("block_laser_relay_item_whitelist_clear", <actuallyadditions:block_laser_relay_item_whitelist>, [<actuallyadditions:block_laser_relay_item_whitelist>]);
 recipes.addShaped(<actuallyadditions:block_laser_relay_item_whitelist>, [[null,<actuallyadditions:block_misc:2>,null],[<actuallyadditions:item_misc:8>,<actuallyadditions:block_laser_relay_item>,<actuallyadditions:item_misc:8>],[null,<actuallyadditions:block_misc:2>,null]]);
 
 // Fluid Laser Relay

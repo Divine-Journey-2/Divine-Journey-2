@@ -6,25 +6,20 @@
 :: Added java version check by t0suj4, Public Domain
 :: https://github.com/t0su4
 ::
-:: Adapted from Nomifactory by WaitingIdly, adding configurable java version and instructions
+:: Adapted from Nomifactory by WaitingIdly, splitting off configs into a configuration file
 :: https://github.com/Nomifactory/Nomifactory/blob/f05d2f552ca8441c3f26fff76e16392c74f12337/launchscripts/launch.bat
+:: https://github.com/Divine-Journey-2/Divine-Journey-2/blob/main/serverfiles/launch.bat
 ::
 
-:: DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING
+:: DO NOT EDIT UNLESS YOU KNOW WHAT YOU'RE DOING (and take full responsibility)
 @ECHO OFF
-SET FORGE_JAR=forge-1.12.2-14.23.5.2860.jar
+SET FILE=launch_config.ini
 
-:: these you can edit
-:: this must point to Java 1.8, edit it to point directly to a valid java version if it does not.
-:: if you get a `launcher.java.lang.reflect.InvocationTargetException`, change this
-SET JAVA_VERSION=java
-:: a good rule of thumb is 2gb+1gb per concurrent player.
-SET MIN_RAM=4096M
-SET MAX_RAM=4096M
-SET JAVA_PARAMETERS=
 
-:: DO NOT EDIT ANYTHING PAST THIS LINE
-SET LAUNCHPARAMS=-server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -jar %FORGE_JAR% nogui
+:: Load variables from the config file
+for /f "delims== tokens=1,*" %%G in (%FILE%) do (
+    set %%G=%%H
+)
 
 echo Checking java version...
 echo.
@@ -32,12 +27,13 @@ echo.
 echo.
 echo The expected java version is 1.8. Not higher, not lower.
 echo.
+timeout /t 3
 
 echo Launching the server...
 echo.
-echo ^> %JAVA_VERSION% %LAUNCHPARAMS%
+echo ^> %JAVA_VERSION% -server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -jar %FORGE_JAR% nogui
 echo.
-%JAVA_VERSION% %LAUNCHPARAMS%
+%JAVA_VERSION% -server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -jar %FORGE_JAR% nogui
 
 echo.
 echo ^> The server has stopped. If it's a crash, please read the output above.

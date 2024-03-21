@@ -102,8 +102,10 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:clay> * 144, <minecraft:clay_ba
 mods.thermalexpansion.Crucible.addRecipe(<liquid:clay> * 576, <minecraft:clay>, 16000);
 
 // Glass
-mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <ore:sand>.firstItem, 8000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <ore:blockGlass>.firstItem, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <minecraft:sand>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <minecraft:sand:1>, 8000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:glass> * 1000, <atum:sand>, 8000);
 
 // Ender Block
 mods.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 1000, <actuallyadditions:block_misc:6>, 80000);

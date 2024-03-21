@@ -6,6 +6,7 @@ import crafttweaker.data.IData;
 import mods.immersiveengineering.ArcFurnace;
 import mods.thermalexpansion.InductionSmelter;
 import mods.thermalexpansion.Crucible;
+import mods.thermalexpansion.Sawmill;
 
 print("STARTING ThermalExpansion.zs");
 
@@ -612,6 +613,22 @@ for i in 0 to 8 {
 }
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 
+
+// Remove Button uncrafting from Sawmills
+Sawmill.removeRecipe(<natura:maple_button>);
+Sawmill.removeRecipe(<natura:silverbell_button>);
+Sawmill.removeRecipe(<natura:amaranth_button>);
+Sawmill.removeRecipe(<natura:tiger_button>);
+Sawmill.removeRecipe(<natura:willow_button>);
+Sawmill.removeRecipe(<natura:eucalyptus_button>);
+Sawmill.removeRecipe(<natura:hopseed_button>);
+Sawmill.removeRecipe(<natura:sakura_button>);
+Sawmill.removeRecipe(<natura:redwood_button>);
+Sawmill.removeRecipe(<natura:ghostwood_button>);
+Sawmill.removeRecipe(<natura:bloodwood_button>);
+Sawmill.removeRecipe(<natura:fusewood_button>);
+Sawmill.removeRecipe(<natura:darkwood_button>);
+
 // Flux Capacitor (Creative)
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}),
 [[<contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>, <contenttweaker:white_matter>],
@@ -624,7 +641,7 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>.withTag({}),
 [[null, null, <alchemistry:ingot:110>, null, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
-[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}), null],
+[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}).marked("wtf_why_does_this_work"), null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
 

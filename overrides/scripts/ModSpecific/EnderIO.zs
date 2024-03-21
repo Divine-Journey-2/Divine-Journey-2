@@ -272,7 +272,8 @@ recipes.addShaped(<enderio:block_buffer:1>, [[<enderio:item_alloy_ingot>,<enderi
 addEnderIOBaseMachineRecipe(<enderio:block_lava_generator>, <enderio:item_material:72>, <enderio:block_tank>);
 
 // Painting Machine
-addEnderIOBaseMachineRecipe(<enderio:block_painter>, <openblocks:paintbrush>, <minecraft:diamond>);
+recipes.remove(<enderio:block_painter>);
+recipes.addShaped(<enderio:block_painter>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<openblocks:paintbrush>,<enderio:item_material>,<openblocks:paintbrush>],[<enderio:item_material:11>,<minecraft:diamond>,<enderio:item_material:11>]]);
 
 // The Vat
 addEnderIOBaseMachineRecipe(<enderio:block_vat>, <enderio:block_tank>, <enderio:block_simple_furnace>);

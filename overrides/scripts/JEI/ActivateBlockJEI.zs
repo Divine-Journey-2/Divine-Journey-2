@@ -147,4 +147,11 @@ for x in 0 to 8 {
     addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
 }
 
+// DivineRPG Chunks summoning bosses
+addInteraction(<divinerpg:eden_chunk>, <divinerpg:sunstorm_spawner>, <divinerpg:eden_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:wildwood_chunk>, <divinerpg:termasect_spawner>, <divinerpg:wildwood_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:apalachia_chunk>, <divinerpg:eternal_archer_spawner>, <divinerpg:apalachia_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:skythern_chunk>, <divinerpg:experienced_cori_spawner>, <divinerpg:skythern_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+
+
 print("ENDING ActivateBlockJEI.zs");
