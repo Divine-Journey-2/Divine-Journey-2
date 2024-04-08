@@ -88,7 +88,7 @@ def convertChangelog(version: str):
             file.write(f"\n{key}\n")
             for entry in value:
                 file.write(entry)
-        else:
+        if len(goal.items()) <= 0:
             file.write("\nCould not find a changelog")
 
     # Overwrite the in-game changelog file
