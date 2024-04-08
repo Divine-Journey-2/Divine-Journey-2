@@ -88,6 +88,10 @@ jobs:
         run: python ./buildtools/update_version.py -V='${{ inputs.version }}'
         # Will output "changelog", for the exact location of the changelog
 
+      - name: "Get server changelog"
+        id: server-changelog
+        run: echo "server_changelog=$(cat changelog/SERVER_UPDATE.md)" >> $GITHUB_OUTPUT
+
       # Create zip files for the Client and Server after downloading the required mods
       - name: "Build everything"
         id: build
@@ -147,7 +151,7 @@ jobs:
           parent_file_id: ${{ steps.client.outputs.id }}
           token: "${{ secrets.CF_PROJECT_KEY }}"
           changelog_type: markdown
-          changelog: changelog/SERVER_UPDATE.md
+          changelog: "${{ steps.server-changelog.outputs.server_changelog }}"
 
       - name: "Generate report"
         id: generate-report
