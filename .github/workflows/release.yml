@@ -125,7 +125,7 @@ jobs:
 
       # Upload build artifacts to Curseforge
       - name: "Upload Client to Curseforge"
-        uses: itsmeow/curseforge-upload@v3
+        uses: itsmeow/curseforge-upload@v3.1.0
         id: client
         with:
           release_type: "${{ inputs.release-type }}"
@@ -140,7 +140,7 @@ jobs:
           # Will output "id", for the id of the project
 
       - name: "Upload Server to Curseforge"
-        uses: itsmeow/curseforge-upload@v3
+        uses: itsmeow/curseforge-upload@v3.1.0
         id: server
         with:
           release_type: "${{ inputs.release-type }}"
