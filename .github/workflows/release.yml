@@ -166,6 +166,8 @@ jobs:
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "-----" >> $GITHUB_STEP_SUMMARY
-          echo "\*\*Divine Journey ${{ inputs.version }}\*\* is now available on" >> $GITHUB_STEP_SUMMARY
-          echo "\- Github: \<https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
-          echo "\- Curseforge: \<https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo "**Divine Journey ${{ inputs.version }}** is now available on" >> $GITHUB_STEP_SUMMARY
+          echo "- Github: <https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
+          echo "- Curseforge: <https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
