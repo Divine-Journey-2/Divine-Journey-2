@@ -28,6 +28,14 @@ from time import time
 
 def parse_args():
     parser = ArgumentParser(prog="build", description=__doc__)
+    parser.add_argument("--name", "-N",
+                        type=str,
+                        default="Divine Journey 2",
+                        help="the name of the pack being released")
+    parser.add_argument("--version", "-V",
+                        type=str,
+                        required=False,
+                        help="the version of the pack being released")
     parser.add_argument("--prerelease", "-P",
                         action="store_true",
                         help="generates a name based on the manifest version, date of last commit, and sha of last commit")
@@ -100,6 +108,8 @@ symLinkDirs = [
 def print_argument_settings(args):
     """Prints what the build command will do"""
     print("starting the build process with the following settings")
+    print(f"name: {args.name}")
+    print(f"version: {args.version}")
     print(f"client: {args.client}")
     print(f"server: {args.server}")
     print(f"MultiMC-compatible Instance: {args.dev != None}")

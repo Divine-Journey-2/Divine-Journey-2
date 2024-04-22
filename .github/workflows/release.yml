@@ -95,7 +95,7 @@ jobs:
       # Create zip files for the Client and Server after downloading the required mods
       - name: "Build everything"
         id: build
-        run: python ./buildtools/build.py -CSDZ --key='${{ secrets.CFAPIKEY }}'
+        run: python ./buildtools/build.py -CSDZ -V='${{ inputs.version }}' --key='${{ secrets.CFAPIKEY }}'
         # Will output "client_name" and "server_name", for the name of the client and server zips
 
       # Commit changes after the build process
