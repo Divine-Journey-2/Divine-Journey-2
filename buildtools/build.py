@@ -319,9 +319,10 @@ def getPreReleaseName() -> str:
     return ""
 
 
-def convertPackVersion(version: str):
+def convertPackVersion(location: str, version: str):
     """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
-    for file in filesToUpdateVersion:
+    for target in filesToUpdateVersion:
+        file = f"{location}/{target}"
         f = open(file, "r")
         filedata = f.read()
         f.close()
@@ -484,12 +485,6 @@ def build(args):
         print("you must specify either client, server, or dev")
         return
 
-    # Get the modpack version from git tags if not an argument
-    version = getGitTagVersion() if args.version == None else args.version
-
-    # Converts the version locations of the pack to the version being released
-    convertPackVersion(version)
-
     # Read the manifest
     with open(f"{basePath}/manifest.json", "r") as file:
         manifest = json.load(file)
@@ -525,13 +520,18 @@ def build(args):
         forgeInstaller(manifest)
         print(f"installed the forge installer in {str(round(time() - start, 2))} seconds")
 
+    # Get the modpack version from git tags if not an argument
+    version = getGitTagVersion() if args.version == None else args.version
+
     # Copy required files to the client instance
     if (args.client):
         copyClient()
+        convertPackVersion(client, version)
 
     # Copy required files to the server instance
     if (args.server):
         copyServer(manifest)
+        convertPackVersion(server, version)
 
     if (args.zip):
         # Get the standard name of the pack
