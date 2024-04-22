@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Divine Journey 2",
-  "version": "2.21.0",
+  "version": "@PACK_VERSION@",
   "author": "AtricosHU",
   "files": [
     {
