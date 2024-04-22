@@ -104,6 +104,12 @@ symLinkDirs = [
     "scripts",
     "structures"
 ]
+# Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
+filesToUpdateVersion = [
+    "manifest.json",
+    "overrides/config/CustomMainMenu/mainmenu.json",
+    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
+]
 
 def print_argument_settings(args):
     """Prints what the build command will do"""
@@ -313,6 +319,19 @@ def getPreReleaseName() -> str:
     return ""
 
 
+def convertPackVersion(version: str):
+    """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
+    for file in filesToUpdateVersion:
+        f = open(file, "r")
+        filedata = f.read()
+        f.close()
+
+        newdata = filedata.replace("@PACK_VERSION@", version)
+
+        with open(file, 'w') as new:
+            new.write(newdata)
+
+
 def getForgeVersion(manifest):
     """Get the Forge version"""
     forgeVer = manifest["minecraft"]["modLoaders"][0]["id"].split("-")[-1]
@@ -467,6 +486,9 @@ def build(args):
 
     # Get the modpack version from git tags if not an argument
     version = getGitTagVersion() if args.version == None else args.version
+
+    # Converts the version locations of the pack to the version being released
+    convertPackVersion(version)
 
     # Read the manifest
     with open(f"{basePath}/manifest.json", "r") as file:
