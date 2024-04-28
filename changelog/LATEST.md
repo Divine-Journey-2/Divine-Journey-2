@@ -7,7 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-
+- Fixes the Meteor generated in Atum not being findable via the AE2 Meteor Compass.
 
 ## Balance Adjustments:
 
