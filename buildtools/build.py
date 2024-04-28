@@ -107,6 +107,8 @@ symLinkDirs = [
 # Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
 filesToUpdateVersion = [
     "manifest.json",
+    "config/CustomMainMenu/mainmenu.json",
+    "config/mputils/addons/mpbasic/mpbasic.cfg"
     "overrides/config/CustomMainMenu/mainmenu.json",
     "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
 ]
@@ -323,14 +325,15 @@ def convertPackVersion(location: str, version: str):
     """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
     for target in filesToUpdateVersion:
         file = f"{location}/{target}"
-        f = open(file, "r")
-        filedata = f.read()
-        f.close()
+        if os.path.isfile(file) and os.path.exists(file):
+            f = open(file, "r")
+            filedata = f.read()
+            f.close()
 
-        newdata = filedata.replace("@PACK_VERSION@", version)
+            newdata = filedata.replace("@PACK_VERSION@", version)
 
-        with open(file, 'w') as new:
-            new.write(newdata)
+            with open(file, 'w') as new:
+                new.write(newdata)
 
 
 def getForgeVersion(manifest):
