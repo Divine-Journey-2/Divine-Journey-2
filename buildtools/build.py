@@ -28,6 +28,14 @@ from time import time
 
 def parse_args():
     parser = ArgumentParser(prog="build", description=__doc__)
+    parser.add_argument("--name", "-N",
+                        type=str,
+                        default="Divine Journey 2",
+                        help="the name of the pack being released")
+    parser.add_argument("--version", "-V",
+                        type=str,
+                        required=False,
+                        help="the version of the pack being released")
     parser.add_argument("--prerelease", "-P",
                         action="store_true",
                         help="generates a name based on the manifest version, date of last commit, and sha of last commit")
@@ -96,10 +104,18 @@ symLinkDirs = [
     "scripts",
     "structures"
 ]
+# Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
+filesToUpdateVersion = [
+    "manifest.json",
+    "overrides/config/CustomMainMenu/mainmenu.json",
+    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
+]
 
 def print_argument_settings(args):
     """Prints what the build command will do"""
     print("starting the build process with the following settings")
+    print(f"name: {args.name}")
+    print(f"version: {args.version}")
     print(f"client: {args.client}")
     print(f"server: {args.server}")
     print(f"MultiMC-compatible Instance: {args.dev != None}")
@@ -275,19 +291,24 @@ def downloadModList(modlistServer: list, modlistClient: list, retries: int):
             print(mod)
 
 
+def getGitTagVersion() -> str:
+    """Get the current git tag to determine the version"""
+    try:
+        return subprocess.run(["git", "describe", "--abbrev=0", "--tags"], capture_output=True, cwd=basePath).stdout.strip().decode("utf-8")
+    except:
+        print("could not determine git sha, skipping")
+    return ""
 
-def getVersion(manifest):
-    """Get the name + version from the manifest.
 
-Since DJ2 is considered the 2nd primary version, trim those characters from the name
-    """
-    name = manifest["name"].replace(" ", "_").replace("_2", "")
-    version = manifest["version"]
-    return f"{name}_{version}"
+def getStandardName(name: str, version: str) -> str:
+    """Get the standard name based on the args"""
+    name = name.replace(' ', '_')
+    version = version.replace('2.', '.')
+    return f"{name}{version}"
 
 
 def getPreReleaseName() -> str:
-    """Get the prerelase name based on the date of the last commit and the git sha to name the zip files"""
+    """Get the prerelease name based on the date of the last commit and the git sha to name the zip files"""
     try:
         p = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, cwd=basePath)
         link = p.stdout.strip().decode("utf-8")
@@ -296,6 +317,20 @@ def getPreReleaseName() -> str:
     except:
         print("could not determine git sha, skipping")
     return ""
+
+
+def convertPackVersion(location: str, version: str):
+    """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
+    for target in filesToUpdateVersion:
+        file = f"{location}/{target}"
+        f = open(file, "r")
+        filedata = f.read()
+        f.close()
+
+        newdata = filedata.replace("@PACK_VERSION@", version)
+
+        with open(file, 'w') as new:
+            new.write(newdata)
 
 
 def getForgeVersion(manifest):
@@ -485,24 +520,27 @@ def build(args):
         forgeInstaller(manifest)
         print(f"installed the forge installer in {str(round(time() - start, 2))} seconds")
 
+    # Get the modpack version from git tags if not an argument
+    version = getGitTagVersion() if args.version == None else args.version
+
     # Copy required files to the client instance
     if (args.client):
         copyClient()
+        convertPackVersion(client, version)
 
     # Copy required files to the server instance
     if (args.server):
         copyServer(manifest)
-
-    # Get the modpack name and version from the manifest
-    version = getVersion(manifest)
-
-    # Get the date and sha of the most recent git commit
-    name = ""
-    if (args.prerelease):
-        name = getPreReleaseName()
+        convertPackVersion(server, version)
 
     if (args.zip):
-        archive_name = f"{version}_{name}" if name else version
+        # Get the standard name of the pack
+        standardName = getStandardName(args.name, version)
+
+        # Get the date and sha of the most recent git commit
+        preReleaseName = getPreReleaseName() if args.prerelease else ""
+
+        archive_name = f"{standardName}_{preReleaseName}" if preReleaseName else standardName
 
         # Zip the client
         if (args.client):

@@ -88,10 +88,14 @@ jobs:
         run: python ./buildtools/update_version.py -V='${{ inputs.version }}'
         # Will output "changelog", for the exact location of the changelog
 
+      - name: "Get server changelog"
+        id: server-changelog
+        run: echo "server_changelog=$(cat changelog/SERVER_UPDATE.md)" >> $GITHUB_OUTPUT
+
       # Create zip files for the Client and Server after downloading the required mods
       - name: "Build everything"
         id: build
-        run: python ./buildtools/build.py -CSDZ --key='${{ secrets.CFAPIKEY }}'
+        run: python ./buildtools/build.py -CSDZ -V='${{ inputs.version }}' --key='${{ secrets.CFAPIKEY }}'
         # Will output "client_name" and "server_name", for the name of the client and server zips
 
       # Commit changes after the build process
@@ -104,7 +108,7 @@ jobs:
 
       # Upload build artifacts to Github Releases
       - name: "Upload to GitHub Releases"
-        uses: "softprops/action-gh-release@v0.1.15"
+        uses: "softprops/action-gh-release@v2"
         with:
           name: Divine Journey ${{ inputs.version }}
           tag_name: ${{ inputs.version }}
@@ -121,7 +125,7 @@ jobs:
 
       # Upload build artifacts to Curseforge
       - name: "Upload Client to Curseforge"
-        uses: itsmeow/curseforge-upload@v3
+        uses: itsmeow/curseforge-upload@v3.1.0
         id: client
         with:
           release_type: "${{ inputs.release-type }}"
@@ -136,7 +140,7 @@ jobs:
           # Will output "id", for the id of the project
 
       - name: "Upload Server to Curseforge"
-        uses: itsmeow/curseforge-upload@v3
+        uses: itsmeow/curseforge-upload@v3.1.0
         id: server
         with:
           release_type: "${{ inputs.release-type }}"
@@ -147,7 +151,7 @@ jobs:
           parent_file_id: ${{ steps.client.outputs.id }}
           token: "${{ secrets.CF_PROJECT_KEY }}"
           changelog_type: markdown
-          changelog: changelog/SERVER_UPDATE.md
+          changelog: "${{ steps.server-changelog.outputs.server_changelog }}"
 
       - name: "Generate report"
         id: generate-report
@@ -162,6 +166,8 @@ jobs:
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "-----" >> $GITHUB_STEP_SUMMARY
-          echo "\*\*Divine Journey ${{ inputs.version }}\*\* is now available on" >> $GITHUB_STEP_SUMMARY
-          echo "\- Github: \<https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
-          echo "\- Curseforge: \<https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo "**Divine Journey ${{ inputs.version }}** is now available on" >> $GITHUB_STEP_SUMMARY
+          echo "- Github: <https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
+          echo "- Curseforge: <https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
