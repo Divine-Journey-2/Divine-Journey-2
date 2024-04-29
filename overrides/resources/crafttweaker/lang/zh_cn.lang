@@ -1,10 +1,12 @@
 # Commands
-commands.curseforge.usage=在聊天栏中发送一条前往 Curseforge 页面的链接。
-commands.discord.usage=在聊天栏中发送一条前往 Discord 页面的链接。
+commands.curseforge.usage=在聊天栏中发送一条前往Curseforge页面的链接。
+commands.discord.usage=在聊天栏中发送一条前往Discord页面的链接。
 commands.issues.usage=在聊天栏中发送一条前往问题汇报页面的链接。
-commands.curseforge.text=点击此处打开 DJ2 的 Curseforge 页面
-commands.discord.text=点击此处加入 Discord 频道
-commands.issues.text=点击此处汇报 Bug 或问题
+commands.book_of_logic.usage=在聊天栏中输出逻辑之书的全部文本，用于实现本地化
+commands.introduction_book.usage=在聊天栏中输出介绍书籍的全部文本，用于实现本地化
+commands.curseforge.text=点击此处打开DJ2的Curseforge页面
+commands.discord.text=点击此处加入Discord频道
+commands.issues.text=点击此处汇报Bug或问题
 
 # Moretweaker Bewitchment Rituals
 ritual.moretweaker.moretweakerrecipe0=坚韧净化仪式
@@ -12,8 +14,9 @@ ritual.moretweaker.moretweakerrecipe1=周期仪式
 
 # Custom player event messages
 dj2.event.elemental_tool.desc0=§d元素铭文工具已禁用，仅用于合成仪式推测杖！
-dj2.event.elemental_tool.desc1=§6耐久度实际上不会消耗，只是个不同步问题。
 dj2.event.horde_horn.message=§b生成失败 - 请在开敞空间使用。
+dj2.event.solar_flux_ie_drill.desc0=§c为避免物品复制bug，沉浸工程的采矿机械钻
+dj2.event.solar_flux_ie_drill.desc1=§c无法破坏日光通量模组的太阳能板。
 
 # Activate Block JEI category
 dj2.activate_block_jei.hand.name=§r§c右键点击
@@ -24,10 +27,11 @@ dj2.activate_block_jei.crucible.desc0=§r§b必须在魔导手册中解锁。
 dj2.activate_block_jei.phantomink.desc0=§r§b不消耗。
 dj2.activate_block_jei.spark.desc0=§r§b可见度显著降低。
 dj2.activate_block_jei.aether_portal.desc0=§r§d解锁天境维度
-dj2.activate_block_jei.glass_cable.desc0=§r§d任意 AE2 线缆
-dj2.activate_block_jei.rf_duct.desc0=§r§d几乎所有能存储或传输 RF/FE/CF/AE 的东西
+dj2.activate_block_jei.glass_cable.desc0=§r§d任意AE2线缆
+dj2.activate_block_jei.rf_duct.desc0=§r§d几乎所有能存储或传输RF/FE/CF/AE的东西
 dj2.activate_block_jei.bucket.desc0=§r§d几乎所有能存储或传输流体的东西
 dj2.activate_block_jei.barrier.desc0=§r§d对空气右击
+dj2.activate_block_jei.after_killed.desc0=§r§b被击杀后。
 
 # Configure JEI category
 dj2.configure_jei.gear.name=§r§d配置方块
@@ -38,12 +42,12 @@ dj2.configure_jei.enderio_conduit.desc=§r§b任意末影接口导管。
 dj2.configure_jei.labeller.desc=§r§b可重命名任意物品，主要用于变量卡。
 dj2.configure_jei.redprint.desc=§r§b绝大多数热力模组方块。
 dj2.configure_jei.configuration_card.desc=§r§b绝大多数通用机械模组方块。
-dj2.configure_jei.fluix_cable.desc=§r§b绝大多数应用能源 2 模组方块
+dj2.configure_jei.fluix_cable.desc=§r§b绝大多数应用能源2模组方块
 dj2.configure_jei.immersive_engineering_hammer.desc=§r§b构建沉浸工程模组多方块结构。
 dj2.configure_jei.rotate_chest.desc=§r§b旋转（绝大多数）方块。
 dj2.configure_jei.integrated_dynamics.desc=§r§b任意动态联合模组方块。
 dj2.configure_jei.industrial_foregoing.desc=§r§b任意工业先锋模组机器。
-dj2.configure_jei.rftools.desc=§r§b任意 RF 工具箱模组机器。
+dj2.configure_jei.rftools.desc=§r§b任意RF工具箱模组机器。
 
 # Excavator JEI category
 dj2.excavator.rarity.extremely_common=及其常见
@@ -59,7 +63,7 @@ dj2.excavator.dimension.asteroids=小行星带
 dj2.excavator.dimension.mars=火星
 dj2.excavator.dimension.moon=月球
 dj2.excavator.dimension.underworld=冥界
-dj2.excavator.dimension.nether=下界
+dj2.excavator.dimension.nether=地狱
 dj2.excavator.dimension.overworld=主世界
 dj2.excavator.dimension.end=末地
 dj2.excavator.dimension.aether=天境
@@ -111,13 +115,13 @@ dj2.crown_of_skies.desc2=§r§l可合成复制以供队伍中其他成员使用�
 dj2.crown_of_skies.desc3=§r合成时不消耗天空之冠。
 dj2.crown_of_skies.robit.desc0=由机器人代劳制作。
 dj2.golder_molder_folder.desc0=§4§o起儿来儿就儿是儿这儿一儿出儿！
-dj2.golder_molder_folder.desc1=§r§o可使用 16 次！
+dj2.golder_molder_folder.desc1=§r§o可使用16次！
 dj2.golder_molder_folder.desc2=§c常规合成不会消耗该物品。
-dj2.golder_molder_folder.desc3=§c§l警告：§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
+dj2.golder_molder_folder.desc3=§c§l警告：§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
 dj2.resonating_orb.desc0=§c常规合成不会消耗该物品。
-dj2.resonating_orb.desc1=§c§l警告：§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
-dj2.thermal_conductor_rod.desc0=§r可使用 800 次。
-dj2.thermal_conductor_rod.desc1=§c§l警告：§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
+dj2.resonating_orb.desc1=§c§l警告：§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
+dj2.thermal_conductor_rod.desc0=§r可使用800次。
+dj2.thermal_conductor_rod.desc1=§c§l警告：§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
 dj2.rainbow_slate.desc0=在祭坛中将石头转化
 dj2.vibrant_slate.desc0=在祭坛中将石头转化
 dj2.perfect_slate.desc0=在祭坛中将石头转化
@@ -129,13 +133,13 @@ dj2.livingmatter.desc2=§r§o真是奇特。
 dj2.effulgent_spike_of_apalachia.desc0=§d发现于附魔山脉地牢。
 dj2.electrotine_ore.desc0=§r使用血魔法的§c坠星位标§r仪式
 dj2.electrotine_ore.desc1=§r来召唤包含§3蓝石矿石§r的陨石。
-dj2.electrotine_ore.desc2=§8§o<按住 Shift 显示更多信息>
-dj2.electrotine_ore.desc3=§r1) 准备 1 个主仪式石和 100 个仪式石。
+dj2.electrotine_ore.desc2=§8§o<按住Shift显示更多信息>
+dj2.electrotine_ore.desc3=§r1) 准备1个主仪式石和100个仪式石。
 dj2.electrotine_ore.desc4=§r2) 使用§7仪式推测杖 [薄暮]§r来摆放仪式。
-dj2.electrotine_ore.desc5=§r3) 在主仪式石上方大约 10-11 格处
+dj2.electrotine_ore.desc5=§r3) 在主仪式石上方大约10-11格处
 dj2.electrotine_ore.desc6=§r放置一块黑曜石来承载陨石，这样
 dj2.electrotine_ore.desc7=§r你的仪式石就不会被炸毁
-dj2.electrotine_ore.desc8=§r4) 灵魂网络中至少要有 §c1,000,000 LP§r。
+dj2.electrotine_ore.desc8=§r4) 灵魂网络中至少要有§c1,000,000 LP§r。
 dj2.electrotine_ore.desc9=§r5) 使用§3[觉醒]激活水晶§r激活仪式。
 dj2.electrotine_ore.desc10=§r6) 在主仪式石上扔下一个§9效能核心§r。
 dj2.electrotine_ore.desc11=§r7) 开挖。你可以使用建造机来自动化这一过程。
@@ -143,15 +147,15 @@ dj2.jaded_petal.desc0=§2§o某个服主最喜欢的花瓣！
 dj2.soul_of_the_dark_realm.desc0=§r通过提取§7萨托斯的灵魂收割之刃§r中的灵魂获得。
 dj2.soul_of_the_dark_realm.desc1=§r要获取灵魂，使用这把剑击杀怪物。
 dj2.abyssal_wasteland_teleporter.desc0=§r§l§n针对多人游戏：
-dj2.abyssal_wasteland_teleporter.desc1=§r如果你的传送门距离 (0,0) 很远，
+dj2.abyssal_wasteland_teleporter.desc1=§r如果你的传送门距离(0,0)很远，
 dj2.abyssal_wasteland_teleporter.desc2=§r那你得飞很远才能找到深渊要塞。
 dj2.abyssal_wasteland_teleporter.desc3=§r使用该物品右击会将你传送到
 dj2.abyssal_wasteland_teleporter.desc4=§r(0,80,0)。
-dj2.abyssal_wasteland_teleporter.desc5=§r§l可使用 3 次。
+dj2.abyssal_wasteland_teleporter.desc5=§r§l可使用3次。
 dj2.abyssal_wasteland_teleporter.desc6=§r§l警告：§r传送之前最好装备喷气背包
 dj2.abyssal_wasteland_teleporter.desc7=§r或者滑翔翼。
 dj2.omothol_teleporter.desc0=§r§l§n针对多人游戏：
-dj2.omothol_teleporter.desc1=§r如果你的传送门距离 (0,0) 很远，
+dj2.omothol_teleporter.desc1=§r如果你的传送门距离(0,0)很远，
 dj2.omothol_teleporter.desc2=§r那你得飞很远才能找到奥穆索地牢。
 dj2.omothol_teleporter.desc3=§r使用该物品右击会将你传送到
 dj2.omothol_teleporter.desc4=§r(0,80,0)。
@@ -186,52 +190,52 @@ dj2.arcanium_base.desc1=§r一个7x7的同心方形中，其
 dj2.arcanium_base.desc2=§r生物群系从外到内分别为：
 dj2.arcanium_base.desc3=§5死域§r、§c地狱（下界）§r、§a魔法森林
 dj2.arcanium_base.desc4=§r以及§3海洋§r。要达成该条件，需要使用
-dj2.arcanium_base.desc5=§r奥术群系转换仪。前往任务书第 21 章的
+dj2.arcanium_base.desc5=§r奥术群系转换仪。前往任务书第21章的
 dj2.arcanium_base.desc6=§r“奥秘仪式”任务以获得详细信息！
-dj2.primordial_fragment.desc0=§r合成会消耗 1 点§6元始珍珠§r耐久度。
+dj2.primordial_fragment.desc0=§r合成会消耗1点§6元始珍珠§r耐久度。
 dj2.ritualistic_biome_checker.desc0=§r用于进行奥秘仪式，
-dj2.ritualistic_biome_checker.desc1=§r详情查看第 21 章任务书。
-dj2.astral_core.desc0=§r要制作该物品，你需要 4 个分别共鸣至
-dj2.astral_core.desc1=§c不同§r朦胧星座的§9共鸣天体水晶石§r：
-dj2.astral_core.desc2=§d振变座§r、§7寒冰座§r、§a避役座§r以及§6贪狼座§r。将水晶共鸣至朦胧星座的步骤：
+dj2.ritualistic_biome_checker.desc1=§r详情查看第21章任务书。
+dj2.astral_core.desc0=§r要制作该物品，你需要4个分别共鸣至
+dj2.astral_core.desc1=§c不同§r朦胧星座的§9共鸣天辉水晶石§r：
+dj2.astral_core.desc2=§d振变座§r、§7寒冰座§r、§a疏尘座§r以及§6贪狼座§r。将水晶共鸣至朦胧星座的步骤：
 dj2.astral_core.desc3=§r1. 将其与任意星座共鸣。
 dj2.astral_core.desc4=§r2. 等待所需的朦胧星座出现在夜空。
 dj2.astral_core.desc5=§r3. 将共鸣过的水晶与朦胧星座共鸣，
 dj2.astral_core.desc6=§r   这将为其提供§9特质§r修正。
 dj2.astral_core.desc7=§r§l无·法·自·动·合·成。
 dj2.star_of_revelation.desc0=§c常规合成不会消耗该物品。
-dj2.star_of_revelation.desc1=§c§l警告：§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
+dj2.star_of_revelation.desc1=§c§l警告：§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
 dj2.spacerock.desc0=§r于§7月球§r自定义地牢发现。
 dj2.secret_alien_technology.desc0=§r于§c火星§r自定义地牢发现。
 dj2.chunk_of_the_meteor_that_ended_the_era_of_dinosaurs.desc0=§r于§7小行星带§r自定义地牢发现。
 dj2.fragment_of_the_sun.desc0§r于§6金星§r自定义地牢发现。
 dj2.crystal_core.desc0=§r如果使用水晶石合成，
 dj2.crystal_core.desc1=§r作为材料的水晶石必须符合下列要求：
-dj2.crystal_core.desc2=§9尺寸 >= 300§r 且§9纯度 >= 75%§r。
+dj2.crystal_core.desc2=§9尺寸>=300§r且§9纯度>=75%§r。
 dj2.crystal_core.desc3=§r在解锁注能钻石之前，
 dj2.crystal_core.desc4=§r该物品只能§c手动合成§r。
-dj2.celestial_crystal_core.desc0=如果使用天体水晶石合成，
-dj2.celestial_crystal_core.desc1=§r作为材料的天体水晶石必须符合下列要求：
-dj2.celestial_crystal_core.desc2=§9尺寸 >= 700§r 且§9纯度 >= 75%§r。
+dj2.celestial_crystal_core.desc0=如果使用天辉水晶石合成，
+dj2.celestial_crystal_core.desc1=§r作为材料的天辉水晶石必须符合下列要求：
+dj2.celestial_crystal_core.desc2=§9尺寸>=700§r且§9纯度>=75%§r。
 dj2.celestial_crystal_core.desc3=§r在解锁中子素粒之前，
 dj2.celestial_crystal_core.desc4=§r该物品只能§c手动合成§r。
 dj2.solar_seeds.desc0=§r只能种植在作物架上。
 dj2.apalachia_door_key2.desc0=§c使用方法和先前的钥匙一样。
-dj2.skythern_door_key2.desc0=§c在空境 Boss 门处使用！
-dj2.venus_door_key2.desc0=§c右击以清除 5 格半径内的所有金星 Boss 门方块。
-dj2.white_matter.desc0=§r只能使用 EMC 制作。
+dj2.skythern_door_key2.desc0=§c在空境Boss门处使用！
+dj2.venus_door_key2.desc0=§c右击以清除5格半径内的所有金星Boss门方块。
+dj2.white_matter.desc0=§r只能使用EMC制作。
 dj2.white_matter.desc1=§r使用炼金术秘卷来习得全部转化知识。
 dj2.essence_of_logic.desc0=§r制作逻辑之书来解开谜题！
-dj2.essence_of_logic.desc1=§r将 Steve、Alex 和 Herobrine 与正确的
+dj2.essence_of_logic.desc1=§r将Steve、Alex和Herobrine与正确的
 dj2.essence_of_logic.desc2=§r年龄、朋友数量以及身高组合来合成该物品！
 dj2.essence_of_logic.desc3=§r§l只能手动合成！
-dj2.essence_of_infinity.desc0=§r§l合成需要消耗 50 池魔力。
+dj2.essence_of_infinity.desc0=§r§l合成需要消耗50池魔力。
 dj2.clay.desc0=§5§o终于平衡好了！
-dj2.natures_blessing.desc0=§r合成需要消耗 1 池魔力。
+dj2.natures_blessing.desc0=§r合成需要消耗1池魔力。
 dj2.unwarpification_talisman.desc0=§r右击将你的扭曲等级置零！
 dj2.goddess_pearl.desc0=§c常规合成不会消耗该物品。
-dj2.goddess_pearl.desc1=§c§l警告：§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
-dj2.divinerpg_galacticraft_keys.desc=右击以清除 5 格半径内的所有 %s 门方块。
+dj2.goddess_pearl.desc1=§c§l警告：§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
+dj2.divinerpg_galacticraft_keys.desc=右击以清除5格半径内的所有%s门方块。
 
 # Imp leather info tooltip
 dj2.imp_leather.desc0=可使用根源魔法的仪式：召唤生物来生成小恶魔。
@@ -248,14 +252,14 @@ dj2.bag_of_truth_locked.desc4=§4§o警告：合成将会清空手袋的物品�
 dj2.key_to_infinity.desc0=§c与§r§d§l真相之袋（上锁）§r§c合成来打开它！
 dj2.glyphs.desc0=§4§o我可能在基板和最高级气血宝珠
 dj2.glyphs.desc1=§4§o那里看到过类似的符号，
-dj2.glyphs.desc2=§4§o就在第 18 章……
-dj2.call_of_the_underworld.desc0=§4由 Immortus 掉落。
+dj2.glyphs.desc2=§4§o就在第18章……
+dj2.call_of_the_underworld.desc0=§4由Immortus掉落。
 
 # Starting items
 dj2.introduction.paper.name=§r§l阅读提示文本获取按键绑定信息！
-dj2.introduction.paper.desc0=§r§5- 按 §6K§r§5 键打开任务书
-dj2.introduction.paper.desc1=§r§5- 按 §6`§r§5 键使用连锁挖掘
-dj2.introduction.paper.desc2=§r§5- 按 §6.§r§5 键将物品放置到世界
+dj2.introduction.paper.desc0=§r§5- 按§6K§r§5键打开任务书
+dj2.introduction.paper.desc1=§r§5- 按§6`§r§5键使用连锁挖掘
+dj2.introduction.paper.desc2=§r§5- 按§6.§r§5键将物品放置到世界
 dj2.introduction.book.name=欢迎
 dj2.introduction.book.desc0=§4§n§l欢迎来到神圣之旅2!§r
 dj2.introduction.book.desc1=§8§0你是一位带着目的降临世间的堕天使：寻找生命的意义！
@@ -291,7 +295,7 @@ dj2.drop_of_evil.desc3=§4怪物将会在这种土地上快速生成。
 dj2.drop_of_evil.desc4=§4当心，诅咒之土会在日光下燃烧！
 dj2.suncrystal.desc0=§f扔到太阳直射的地方为其充能。
 dj2.suncrystal.desc1=§f在后续流程中，你可以用液态阳光或荧石精华来充能。
-dj2.suncrystal.desc2=§c液态阳光只能充能耐久度为 0 的晶体。
+dj2.suncrystal.desc2=§c液态阳光只能充能耐久度为0的晶体。
 
 # Draconic Additions tooltips
 dj2.potato_helm.desc0=§f使用充能马铃薯头盔右键点击即可获得。
@@ -301,12 +305,12 @@ dj2.potato_boots.desc0=§f使用充能马铃薯靴子右键点击即可获得。
 
 # Twilight Forest tooltips
 dj2.lamp_of_cinders.desc0=§c常规合成不会消耗该物品。
-dj2.lamp_of_cinders.desc1=§c§l警告：§r§7§lAE2 自动合成将会消耗该物品！利用 AE 进行自动化时，请使用外部合成设备，例如 RF 工具箱的自动合成机！
+dj2.lamp_of_cinders.desc1=§c§l警告：§r§7§lAE2自动合成将会消耗该物品！利用AE进行自动化时，请使用外部合成设备，例如RF工具箱的自动合成机！
 
 # RFTools tooltips
 dj2.phased_field_generator.desc0=§f最大能量存储：§r§c100,000,000 RF
 dj2.phased_field_generator.desc1=§f能量消耗：§r§c10,000 RF/tick
-dj2.phased_field_generator.desc2=§f满电情况下可持续 §r§c500 秒§r§f。
+dj2.phased_field_generator.desc2=§f满电情况下可持续§r§c500秒§r§f。
 
 # Thaumic Augmentation tooltips
 dj2.gauntlet_warning.desc0=§f制作该物品前请卸下核心！
@@ -317,9 +321,10 @@ dj2.emptiness_spires.desc0=§f于虚域维度的邪术旋塔发现。
 dj2.ender_storage_tank.desc0=§4合成该物品需要一个装满§r§6烈焰之炽焱§r的便携储罐（基础）§4!
 
 # DivineRPG tooltips
-dj2.infernal_flame.desc0=§l§f用于在下界召唤§r§l§c怒焰王§r§l§f。
+dj2.divinerpg_furnace.desc0=§c无法从中抽取产物。
+dj2.infernal_flame.desc0=§l§f用于在地狱召唤§r§l§c怒焰王§r§l§f。
 dj2.mysterious_clock.desc0=§l§f用于在主世界召唤§r§l§4远古实体§r§l§f。
-dj2.call_of_the_watcher.desc0=§l§f用于在下界召唤§r§l§c监视者§r§l§f。
+dj2.call_of_the_watcher.desc0=§l§f用于在地狱召唤§r§l§c监视者§r§l§f。
 dj2.horde_horn.desc0=§f用于在末地召唤§r§7空影兽部落§r§f。
 dj2.horde_horn.desc1=§f部落由§r§9蓝色§r§f、§r§a绿色§r§f、§r§e黄色§r§f、§r§c红色§r§f以及§r§d紫色§r§f空影兽组成。
 dj2.twilight_clock.desc0=§f用于点亮§r§e伊甸§r§f、§9原始森林§r§f、
@@ -328,26 +333,27 @@ dj2.eden_heart.desc0=§f要获得该物品，前往伊甸维度寻找太阳祭�
 dj2.eden_heart.desc1=§f献祭伊甸宝石块并击败太阳风暴！
 dj2.dungeon_bookshelf.desc0=§f于§r§9秘界地牢§r§f发现。
 dj2.dungeon_bookshelf.desc1=§f使用精准采集获取。
-dj2.acceleron.desc0=§f从位于r§9秘界地牢§r§r§b达提康§r§f处交易获得。
+dj2.acceleron.desc0=§f从位于§9秘界地牢§r§r§b达提康§r§f处交易获得。
 dj2.raw_arcanium.desc0=§f于§r§9秘界地牢§r§f发现，
 dj2.raw_arcanium.desc1=§f藏在关着的门之后。
 dj2.molten_furnace.desc0=§f于§r§9秘界地牢§r§f发现，
-dj2.molten_furnace.desc1=§f位于特定 NPC 房间。
+dj2.molten_furnace.desc1=§f位于特定NPC房间。
 dj2.dungeon_tokens.desc0=§f由位于§9秘界地牢§r§f的秘界寄生虫和
 dj2.dungeon_tokens.desc1=§f地牢监管者掉落。通过在对应祭坛上放置
 dj2.dungeon_tokens.desc2=§f巫师之书来召唤它们。
-dj2.wizards_book.desc0=§f从位于r§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
+dj2.wizards_book.desc0=§f从位于§9秘界地牢§r§r的§4瓦提库斯领主§r§f处交易获得。
 
 # Mekanism tooltips
-dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前 3 行的物品！
+dj2.robit.desc0=§c§l警告：§r§7§l只会保留作为材料的私人箱子中前3行的物品！
 dj2.dynamic_tank_warning.desc0=§c§l警告：§r§f动态储罐有时会丢失存储
 dj2.dynamic_tank_warning.desc1=§f的流体。不·推·荐制作/使用。
+dj2.gaugedropper.desc0=对空气Shift+右击可以清空内容物。
 
 # Lightningcraft tooltips
 dj2.electricium.desc0=§f用雷电同时轰击掉落物
 dj2.electricium.desc1=§f形式的钻石、金锭以及铁锭
 dj2.electricium.desc2=§f来制作第一块雷电锭！
-dj2.demon_blood.desc0=§f由下界自然生成的
+dj2.demon_blood.desc0=§f由地狱自然生成的
 dj2.demon_blood.desc1=§f恶魔士兵掉落。
 dj2.ichor.desc0=§f用雷电同时轰击掉落物形式的
 dj2.ichor.desc1=§f恶魔之血、天域锭以及绿宝石来
@@ -359,26 +365,26 @@ dj2.guards_bone.desc0=§f由位于冥界的骷髅守卫掉落。
 dj2.block_of_ender.desc0=§f合成需要一个装有末影人灵魂的永恒灵魂箱。
 
 # DivineRPG loottable tweaked boss drops
-dj2.fury_fire.desc0=§f由§r§4怒焰王§r§f掉落，可通过在下界使用§r§9地狱之焰§r§f召唤。固定掉落 4 个怒焰粉。
+dj2.fury_fire.desc0=§f由§r§4怒焰王§r§f掉落，可通过在地狱使用§r§9地狱之焰§r§f召唤。固定掉落 4 个怒焰粉。
 dj2.ancient_leg.desc0=§f由§r§4远古实体§r§f掉落，可通过
 dj2.ancient_leg.desc1=§f在主世界使用§r§9神秘之钟§r§f召唤。
-dj2.ancient_leg.desc2=§f概率掉落 2-4 个远古下肢。
+dj2.ancient_leg.desc2=§f概率掉落2-4个远古下肢。
 dj2.eye_of_the_watcher.desc0=§f由§r§c监视者§r§f掉落，可通过
-dj2.eye_of_the_watcher.desc1=§f在下界使用§r§9监视者之召§r§f召唤。
+dj2.eye_of_the_watcher.desc1=§f在地狱使用§r§9监视者之召§r§f召唤。
 dj2.ayeraco_wing.desc0=§f由§r§9蓝色§r§f、§r§a绿色§r§f、§r§e黄色§r§f、§r§c红色§r§f以及§r§d紫色
 dj2.ayeraco_wing.desc1=§f空影兽掉落。可通过在末地使用§r§e部落号角§r§f召唤。
-dj2.ayeraco_wing.desc2=§f每只空影兽有概率掉落 1-2 个空影兽之翼。
+dj2.ayeraco_wing.desc2=§f每只空影兽有概率掉落1-2个空影兽之翼。
 
 # Ender Utilities tooltips
 dj2.inactive_ender_core.desc0=§f可通过实体模式下的使用者完成自动化。
 dj2.inactive_ender_core.desc1=§r§o§c任意§r§f维度均可制作，不局限于末地维度。
 dj2.chairwand.desc0=1. 右击地面来添加隐形椅子。
-dj2.chairwand.desc1=2. 按住 Shift 右击放置一个台阶。
+dj2.chairwand.desc1=2. 按住Shift右击放置一个台阶。
 dj2.chairwand.desc2=3. 右击坐在台阶上！
 dj2.chairwand.desc3=（4. 使用椅子之杖左击来移除隐形椅子。）
-dj2.enderpearl_reusable.desc0=§4物品已禁用，因为容易出 bug。能把玩家卡在方块里。
-dj2.portal_scaler.desc0=§4物品已禁用。能用来快速传送到世界边界，或者在多人游戏中搞乱别人的下界传送门。
-dj2.syringe_disabled.desc0=§4物品已禁用。制作出的物品太 OP 了。
+dj2.enderpearl_reusable.desc0=§4物品已禁用，因为容易出bug。能把玩家卡在方块里。
+dj2.portal_scaler.desc0=§4物品已禁用。能用来快速传送到世界边界，或者在多人游戏中搞乱别人的地狱传送门。
+dj2.syringe_disabled.desc0=§4物品已禁用。制作出的物品太OP了。
 dj2.syringe_disabled.desc1=§4物品已禁用。让战斗变得太容易了。
 dj2.syringe_disabled.desc2=§4物品已禁用。因为阻滞剂注射器已被禁用。
 dj2.syringe_disabled.desc3=§4物品已禁用。让战斗变得太容易了。
@@ -389,7 +395,7 @@ dj2.blood_chest.desc0=§c物品已禁用。让物品修复变得太容易了。
 # EnderIO tooltips
 dj2.farming_station.desc0=§c§l警告：§r§f不·要用该机器来收割
 dj2.farming_station.desc1=§f作物架上的作物。会导致游戏崩溃。
-dj2.farming_station.desc2=§f§o<按住 Shift 显示替代方案>
+dj2.farming_station.desc2=§f§o<按住Shift显示替代方案>
 dj2.farming_station.desc3=§f作为替代，使用植物魔法的狂野之鼓/
 dj2.farming_station.desc4=§f/狂野号角，实用拓展的农场，或者
 dj2.farming_station.desc5=§f工业先锋的植物收割机；
@@ -399,8 +405,8 @@ dj2.upgrade_enderio_armor.desc0=§6合成时保留魔咒和升级。
 # Just Enough Calculation tooltips
 dj2.item_calculator.desc0=§c§l警告：§r§f计算中若包含特定机器
 dj2.item_calculator.desc1=§f将会导致游戏崩溃！
-dj2.item_calculator.desc2=§f目前为止，只能确定 
-dj2.item_calculator.desc3=§fLE 灌注器会导致崩溃，
+dj2.item_calculator.desc2=§f目前为止，只能确定
+dj2.item_calculator.desc3=§fLE灌注器会导致崩溃，
 dj2.item_calculator.desc4=§f可能还有更多尚未发现。
 dj2.item_calculator.desc5=§c§l小心使用！
 
@@ -415,15 +421,15 @@ dj2.heart.desc0=§f使用仪式刀击杀玩家、村民、女巫、
 dj2.heart.desc1=§f唤魔者、幻术师以及卫道士掉落。
 dj2.hoof.desc0=§f使用仪式刀击杀猪、羊、牛、马、
 dj2.hoof.desc1=§f僵尸猪人、哞菇、骆驼、驴以及骡掉落。
-dj2.hoof.desc2=§f下界诅咒之土上生成的生物也会掉落（无需仪式刀）。
+dj2.hoof.desc2=§f地狱诅咒之土上生成的生物也会掉落（无需仪式刀）。
 dj2.spectral_dust.desc0=§f使用仪式刀击杀亡灵生物掉落。
 dj2.perpetual_ice.desc0=§f对石头、花岗岩或闪长岩使用
 dj2.perpetual_ice.desc1=§f冰霜世界药水来制作。要制作该药水，
 dj2.perpetual_ice.desc2=§f在女巫祭坛附近放置一个女巫釜锅，
 dj2.perpetual_ice.desc3=§f装满水，然后投入曼陀罗根、冰/雪、
 dj2.perpetual_ice.desc4=§f荧石粉，最后是火药，随后用玻璃瓶
-dj2.perpetual_ice.desc5=§f右击盛出 3 瓶药水！
-dj2.poppet_vampiric.desc0=§f物品被移除。过于 OP 了。
+dj2.perpetual_ice.desc5=§f右击盛出3瓶药水！
+dj2.poppet_vampiric.desc0=§f物品被移除。过于OP了。
 dj2.caduceus.desc0=§f由巴弗灭掉落。查看地狱古卷
 dj2.caduceus.desc1=§f来了解如何召唤它。
 dj2.leonards_wand.desc0=§f由伦纳德掉落。查看地狱古卷
@@ -435,7 +441,7 @@ dj2.spanish_moss.desc0=§f于沼泽生物群系发现。使用剪刀来收获。
 
 # Thaumcraft tooltips
 dj2.thaumonomicon.desc0=§c§l警告：§r§f§l合成表显示可能不正确。
-dj2.thaumonomicon.desc1=§f§l合成时请参考 JEI。
+dj2.thaumonomicon.desc1=§f§l合成时请参考JEI。
 dj2.creative_thaumonomicon.desc0=§d打开时解锁所有研究
 dj2.arcane_workbench.desc0=§f使用§r§d世界盐§r§f右击合成拓展模组的
 dj2.arcane_workbench.desc1=§f末影工作台来制作奥术工作台。
@@ -448,7 +454,7 @@ dj2.veined_scribing_tools.desc0=§7§o拥有两倍的“墨水”容量，并且
 dj2.arcane_workbench_charger.desc0=§f在魔法森林找个完美区块，
 dj2.arcane_workbench_charger.desc1=§f并且穿着全套神秘使装备
 dj2.arcane_workbench_charger.desc2=§f来制作该物品！
-dj2.rare_earths.desc0=§7§o<按住 Shift 显示获取方法>
+dj2.rare_earths.desc0=§7§o<按住Shift显示获取方法>
 dj2.rare_earths.desc1=§f小概率由以下矿物掉落：
 dj2.rare_earths.desc2=§f煤炭、红石、石英、琥珀、钻石；
 dj2.rare_earths.desc3=§f按掉落率升序排序。
@@ -467,9 +473,9 @@ dj2.primordial_pearl.desc1=§f时有小概率掉落。
 # Thermal Expansion tooltips
 dj2.phytogenic_insolator.desc0=§c§l机器已禁用。
 dj2.tier_iii_potion.desc0=§f使用装有升级：炼金术反应釜的
-dj2.tier_iii_potion.desc1=§f流体精炼机来制作 III 级药水流体。
+dj2.tier_iii_potion.desc1=§f流体精炼机来制作III级药水流体。
 dj2.tier_iv_potion.desc0=§f使用装有升级：炼金术反应釜的
-dj2.tier_iv_potion.desc1=§f流体精炼机来制作 IV 级药水流体。
+dj2.tier_iv_potion.desc1=§f流体精炼机来制作IV级药水流体。
 
 # Botania tooltips
 dj2.livingrock.desc0=§f§o似乎只有特定维度的
@@ -488,38 +494,38 @@ dj2.terrasteel.desc6=§f一块§r§a泰拉钢§r§f。
 dj2.baublebox.desc0=§4§o合成需要刚制作好、未被使用的普通背包。
 dj2.biomestonea.desc0=§f由§r§7异构花§r§f生成。
 dj2.lexicon.desc0=§c§l警告：§r§f§l合成表显示可能不正确。
-dj2.lexicon.desc1=§f§l合成时请参考 JEI。
+dj2.lexicon.desc1=§f§l合成时请参考JEI。
 
 # Thermal augment tooltips
-dj2.thermal_kit.desc0=基于初始数值，将机器或能源炉的基础能量容量提高 §c%d§r。
-dj2.thermal_kit.desc1=基于 §c20,000mb§r 的初始数值，将便携储罐的基础流体容量提高 §cx%d§r。
-dj2.thermal_kit.desc2=基于 §c20,000§r 个物品的初始数值，将储物箱的基础物品容量提高 §cx%d§r。
-dj2.thermal_kit.desc3=基于 §c18§r 个槽位的初始数值，将保险箱的基础槽位数量提高 §cx%d§r。
+dj2.thermal_kit.desc0=基于初始数值，将机器或能源炉的基础能量容量提高§c%d§r。
+dj2.thermal_kit.desc1=基于§c20,000mb§r的初始数值，将便携储罐的基础流体容量提高§cx%d§r。
+dj2.thermal_kit.desc2=基于§c20,000§r个物品的初始数值，将储物箱的基础物品容量提高§cx%d§r。
+dj2.thermal_kit.desc3=基于§c18§r个槽位的初始数值，将保险箱的基础槽位数量提高§cx%d§r。
 
 # Silver plate
 dj2.silver_plate.desc0=§5§oS'il vous plaît
 
 # Blood Magic: Alchemical Wizardy tooltips
-dj2.rune_speed.desc0=每个符文增加 §620%§r 合成时的 LP 消耗速度以及气血宝珠的灌注速率，线性叠加。
-dj2.rune_self_sacrifice.desc0=每个符文增加 §610%§r 玩家自我献祭时获得的 LP 量，线性叠加。
-dj2.rune_sacrifice.desc0=每个符文增加 §610%§r 献祭生物时获得的 LP 量，线性叠加。
-dj2.rune_capacity.desc0=每个符文为血之祭坛增加 §62,000§r 点的 LP 容量上限，线性叠加。
+dj2.rune_speed.desc0=每个符文增加§620%§r合成时的LP消耗速度以及气血宝珠的灌注速率，线性叠加。
+dj2.rune_self_sacrifice.desc0=每个符文增加§610%§r玩家自我献祭时获得的LP量，线性叠加。
+dj2.rune_sacrifice.desc0=每个符文增加§610%§r献祭生物时获得的LP量，线性叠加。
+dj2.rune_capacity.desc0=每个符文为血之祭坛增加§62,000§r点的LP容量上限，线性叠加。
 dj2.rune_capacity.desc1=§4§o不§r与超容符文的效果叠加！
 dj2.elemental_tool.desc0=§d元素铭文工具已禁用，仅用于合成仪式推测杖！
-dj2.rune_augmented_capacity.desc0=每个符文为血之祭坛增加 §610%§r 的 LP 容量上限，乘法叠加。
-dj2.rune_augmented_capacity.desc1=§4§o不§r与增容符文的效果叠加！只有当超容符文数量 §6>15§r 时，增加的容量才会比增容符文多。
-dj2.rune_efficiency.desc0=每个符文减少 §615%§r 的进度倒退速度（LP 耗尽时），乘法叠加。
+dj2.rune_augmented_capacity.desc0=每个符文为血之祭坛增加§610%§r的LP容量上限，乘法叠加。
+dj2.rune_augmented_capacity.desc1=§4§o不§r与增容符文的效果叠加！只有当超容符文数量§6>15§r时，增加的容量才会比增容符文多。
+dj2.rune_efficiency.desc0=每个符文减少§615%§r的进度倒退速度（LP耗尽时），乘法叠加。
 dj2.rune_charging.desc0=闲置时累积充能点数用于加速合成。效果过于复杂，故不在此列出。
-dj2.rune_displacement.desc0=每个符文增加 §620%§r 的 LP 传输速率，乘法叠加。
-dj2.rune_acceleration.desc0=每个符文减少 §61 tick§r 的操作间隔。最多可堆叠至 §619§r 个。同时作用于合成速度和 LP 传输速率。
-dj2.rune_orb.desc0=每个符文为宝珠增加 §62%§r 的 LP 容量上限，线性叠加。
+dj2.rune_displacement.desc0=每个符文增加§620%§r的LP传输速率，乘法叠加。
+dj2.rune_acceleration.desc0=每个符文减少§61tick§r的操作间隔。最多可堆叠至§619§r个。同时作用于合成速度和LP传输速率。
+dj2.rune_orb.desc0=每个符文为宝珠增加§62%§r的LP容量上限，线性叠加。
 dj2.rune_orb.desc1=§4§o不§r增加速度。
 dj2.blood_shard.desc0=§f用激活的§r§c束缚之剑§r§f击杀生物以
 dj2.blood_shard.desc1=§f获得该物品。不过要小心，被激活时，
-dj2.blood_shard.desc2=§f束缚之剑会持续抽取网络中的 LP。
-dj2.soul_gem.desc0=§f该地狱魂石最多可存储 §r§c%s§r§f 点意志。
-dj2.blood_orb.desc0=§f该气血宝珠的基础 LP 容量为 §r§c%s§r§f。
-dj2.blood_orb.desc1=§f该气血宝珠只能吸收 §r§c%d§r§f 级或更高级别的血之祭坛中的 LP。
+dj2.blood_shard.desc2=§f束缚之剑会持续抽取网络中的LP。
+dj2.soul_gem.desc0=§f该地狱魂石最多可存储§r§c%s§r§f点意志。
+dj2.blood_orb.desc0=§f该气血宝珠的基础LP容量为§r§c%s§r§f。
+dj2.blood_orb.desc1=§f该气血宝珠只能吸收§r§c%d§r§f级或更高级别的血之祭坛中的LP。
 
 # Atum tooltips
 dj2.atum_artifact_melee.desc0=§4§l视作阿图姆近战神器。
@@ -539,21 +545,28 @@ dj2.transmutation_sapling.desc0=§f可使用根源魔法的嬗变仪式制作。
 dj2.immersive_engineering_chunk_border_warning.desc0=§c警告：§r§f不要跨区块搭建
 dj2.immersive_engineering_chunk_border_warning.desc1=§f沉浸工程的多方块结构。
 dj2.immersive_engineering_chunk_border_warning.desc2=§f这样会使世界崩溃。
-dj2.immersive_engineering_chunk_border_warning.desc3=§f按两次 F9 显示区块边界。
-dj2.conveyor.desc0=§8§o如果你获得了一个损坏/出 bug 的传送带，只要重新合成它便可恢复正常。
+dj2.immersive_engineering_chunk_border_warning.desc3=§f按两次F9显示区块边界。
+dj2.conveyor.desc0=§8§o如果你获得了一个损坏/出bug的传送带，只要重新合成它便可恢复正常。
 dj2.engineers_manual.desc0=§o部分自定义合成表的文本溢出界面，
-dj2.engineers_manual.desc1=§o使用 JEI 来查看！
+dj2.engineers_manual.desc1=§o使用JEI来查看！
 
 # Mystical Agriculture tooltips
 dj2.dragon_egg_seeds.desc0=层级：§r§c5
+dj2.any_crystal_durability.desc0=剩余使用次数：§c%s
+dj2.inferium_crystal.desc0=§e下级精华§r -> §a初级精华§r
+dj2.prudentium_crystal.desc0=§a初级精华§r -> §6中级精华§r
+dj2.intermedium_crystal.desc0=§6中级精华§r -> §b高级精华§r
+dj2.superium_crystal.desc0=§b高级精华§r -> §c终极精华§r
+dj2.supremium_crystal.desc0=§c终极精华§r -> §5究极精华§r
+dj2.master_crystal.desc0=§e§kE§a§kS§6§kS§b§kE§c§kN§5§kC§f§kE§r -> §e§kE§a§kS§6§kS§b§kE§c§kN§5§kC§f§kE§r
 
 # Quantum Flux tooltips
 dj2.ender_crystal.desc0=由末影人掉落。
 dj2.graphitedust.desc0=引爆它来制作超级钻石！
 
 # Baubly Heart Canisters tooltips
-dj2.bhc_red_heart.desc0=§f小概率由所有非 Boss 生物掉落。
-dj2.bhc_orange_heart.desc0=§f小概率由大多数 Boss 生物掉落，
+dj2.bhc_red_heart.desc0=§f小概率由所有非Boss生物掉落。
+dj2.bhc_orange_heart.desc0=§f小概率由大多数Boss生物掉落，
 dj2.bhc_orange_heart.desc1=§f也可用凋灵灵魂碎片合成获得。
 dj2.bhc_green_heart.desc0=无掉落。只能通过合成获得。
 dj2.bhc_blue_heart.desc0=无掉落。只能通过合成获得。
@@ -563,24 +576,24 @@ dj2.pe_philosophers_stone.desc0=§5§o据说贤者之石的
 dj2.pe_philosophers_stone.desc1=§5§o主要材料，是……人。
 dj2.pe_philosophers_stone.desc2=§5§o太奇怪了。
 dj2.pe_transmutation_tablet.desc0=§c§l警告：§r§f合成将消耗贤者之石。
-dj2.projecte_matter.desc0=§f只能使用 EMC 制作。
+dj2.projecte_matter.desc0=§f只能使用EMC制作。
 dj2.projecte_matter.desc1=§r使用炼金术秘卷来习得全部转化知识。
 
 # Industrial Foregoing tooltips
-dj2.mob_duplicator.desc0=§c§l警告：§r§f在 25 章之前无法获得
+dj2.mob_duplicator.desc0=§c§l警告：§r§f在25章之前无法获得
 dj2.mob_duplicator.desc1=§f生物捕捉工具。§r§f§o（因为无法设置
 dj2.mob_duplicator.desc2=§f§o它的黑名单。）
 
 # Avaritia tooltips
-dj2.pile_of_neutronium.desc0=§f中子素收集器每 7111 tick（也就是
-dj2.pile_of_neutronium.desc1=§f355 秒或 6分钟）可产生一个中子素尘埃。
+dj2.pile_of_neutronium.desc0=§f中子素收集器每7111 tick（也就是
+dj2.pile_of_neutronium.desc1=§f355秒或6分钟）可产生一个中子素尘埃。
 dj2.pile_of_neutronium.desc2=§f你可以用时间洪流怀表来
 dj2.pile_of_neutronium.desc3=§f显著加速该进程。
 
 # Applied Energistics 2 tooltips
 dj2.meteorite_compass.desc0=§f§l陨石只可于阿图姆发现。
 dj2.crafting_card.desc0=§f尽量少用！如果用得太多，会导致
-dj2.crafting_card.desc1=§f你的 ME 系统严重卡顿！
+dj2.crafting_card.desc1=§f你的ME系统严重卡顿！
 
 # Galacticraft tooltips
 dj2.meteoric_iron_raw.desc0=§f通过在星系模组的任意星球上挖掘陨石获得。
@@ -632,16 +645,16 @@ dj2.dreadlands_infused_powerstone.desc3=§f便可找到§r§c恐惧之地蕴能�
 dj2.abyssalnite_chunk.desc0=§f由位于恐惧之地的§r§c渊素傀儡§r§f掉落。
 dj2.dreadium_chunk.desc0=§f由位于恐惧之地的§r§c恐惧渊素傀儡§r§f掉落。
 dj2.dread_plagued_key.desc0=§f由位于§r§c恐惧之地§r地牢尽头的§c查伽洛斯
-dj2.dread_plagued_key.desc1=§f掉落。可以通过在恐惧山脉 Y=40
+dj2.dread_plagued_key.desc1=§f掉落。可以通过在恐惧山脉Y=40
 dj2.dread_plagued_key.desc2=§f的地方放下§c查伽洛斯祭坛（底部及顶部）
 dj2.dread_plagued_key.desc3=§f来进入地牢。
 dj2.eldritch_scale.desc0=§f由位于§r§7奥穆索§r§f的§r§7残存者§r§f和§r§7守门者仆从§r§f掉落。
 dj2.omothol_flesh.desc0=§f由位于奥穆索的……奥穆索食尸鬼掉落。
 dj2.omothol_flesh.desc1=§f§o真难以置信，我懂。
-dj2.gatekeeper_essence.desc0=§f由奥穆索的最终 Boss §r§7扎哈尔§r§f掉落。
-dj2.soul_reaper.desc0=§f由深渊国度的最终 Boss §r§7末日先驱萨托斯§r§f掉落。
-dj2.crystalcluster.desc0=§f只能用挖掘等级不低于 8 的镐开采。
-dj2.crystalcluster2.desc0=§f只能用挖掘等级不低于 10 的镐开采。
+dj2.gatekeeper_essence.desc0=§f由奥穆索的最终Boss§r§7扎哈尔§r§f掉落。
+dj2.soul_reaper.desc0=§f由深渊国度的最终Boss§r§7末日先驱萨托斯§r§f掉落。
+dj2.crystalcluster.desc0=§f只能用挖掘等级不低于8的镐开采。
+dj2.crystalcluster2.desc0=§f只能用挖掘等级不低于10的镐开采。
 dj2.necronomicon_ownership.desc0=通过无序合成来宣称所有权。
 
 # Erebus tooltips
@@ -674,7 +687,7 @@ dj2.cabbage_seeds.desc1=§f沼泽植物必定掉落种子。
 # Agricraft tooltips
 dj2.crop_sticks.desc0=§c§l警告：§r§f不·要与末影接口的
 dj2.crop_sticks.desc1=§f种植站一起使用。会导致游戏崩溃。
-dj2.crop_sticks.desc2=§f§o<按住 Shift 显示替代方案>
+dj2.crop_sticks.desc2=§f§o<按住Shift显示替代方案>
 dj2.crop_sticks.desc3=§f作为替代，使用植物魔法的狂野之鼓/
 dj2.crop_sticks.desc4=§f/狂野号角，实用拓展的农场，或者
 dj2.crop_sticks.desc5=§f工业先锋的植物收割机；
@@ -695,9 +708,9 @@ dj2.imp_leather.desc0=§f可使用根源魔法的仪式：召唤生物来生成�
 dj2.infused_wood.desc0=§f仅接受微光梦之木
 
 # Underground Biomes tooltips
-dj2.undergroundbiomes_sand.desc0=§5§o可通过将 2 个沙子水平合成
+dj2.undergroundbiomes_sand.desc0=§5§o可通过将2个沙子水平合成
 dj2.undergroundbiomes_sand.desc1=§5§o来转化为原版沙子。
-dj2.undergroundbiomes_gravel.desc0=§5§o可通过将 2 个沙砾水平合成
+dj2.undergroundbiomes_gravel.desc0=§5§o可通过将2个沙砾水平合成
 dj2.undergroundbiomes_gravel.desc1=§5§o来转化为原版沙砾。
 
 # Dragon's Breath tooltips
@@ -711,11 +724,11 @@ dj2.waterlily.desc0=§f§o工业先锋的钓鱼机偶尔会钓上来这个。
 
 # Storage Drawers tooltips
 dj2.framing_table.desc0=§6考虑转用手持式镶框工具吧！
-dj2.storage_drawers_removal.desc0=在即将到来的更新中，Storage Drawers Extras 模组将会被§4§l移除§r！（也许是 2.22.0）
+dj2.storage_drawers_removal.desc0=在即将到来的更新中，Storage Drawers Extras模组将会被§4§l移除§r！（也许是2.22.0）
 dj2.storage_drawers_removal.desc1=用§6手持式镶框工具§r将它们转换成镶框抽屉，以避免存储物品被删除！
 dj2.upgrade_creative.desc0=无限存储容量
 dj2.upgrade_vending.desc0=创造取出
-dj2.upgrade_normal.desc0=容量：§c%d§r 组
+dj2.upgrade_normal.desc0=容量：§c%d§r组
 dj2.empty_drawer.desc0=§6无存储§r
 
 # DivineRPG Vethea tooltips
@@ -734,16 +747,17 @@ dj2.vethea_moon_clock.desc1=§f除非你真·的愿意接受挑战……
 dj2.item_player_probe.desc0=§c物品已禁用.
 
 # Totemic tooltips
-dj2.baykok_bow.desc0=§c每次合成消耗 1 点耐久度。
+dj2.baykok_bow.desc0=§c每次合成消耗1点耐久度。
 dj2.totempedia.desc0=§c§l警告：§r§f合成表显示可能不正确！
-dj2.totempedia.desc1=§f合成时请参考 JEI！
+dj2.totempedia.desc1=§f合成时请参考JEI！
 
 # Aether tooltips
-dj2.aerogel_warning.desc0=§c§l在装有 TickProfiler 的服务器中，尝试自动化该物品会导致崩溃。
+dj2.aerogel_warning.desc0=§c§l在装有TickProfiler的服务器中，尝试自动化该物品会导致崩溃。
+dj2.enchanter.desc0=放置在神炼重力晶矿上可大幅增加工作速度！
 
 # Draconic Evolution tooltips
 dj2.wyvern_core.desc0=§f合成需要消耗四分之一池魔力。
-dj2.wyvern_core.desc1=§oJEI 显示的魔力消耗为所需的 10 倍，所以所显示的魔力条是满的。
+dj2.wyvern_core.desc1=§oJEI显示的魔力消耗为所需的10倍，所以所显示的魔力条是满的。
 dj2.info_tablet.desc0=§f包含末影接口和神秘能源的相关信息，
 dj2.info_tablet.desc1=§f不仅仅只有龙之进化及其拓展信息。
 dj2.dragon_heart.desc0=§f击杀末影龙后获得。
@@ -752,7 +766,7 @@ dj2.chaos_shard.desc0=§f击杀混沌守卫后获得。
 dj2.chaos_shard.desc1=§f也可使用炼金化学合成。
 
 # Construction Paste Container tooltip
-dj2.constructionpastecontainer.desc0=该黏膏容器最多可存储 §c%d§r §f个构建黏膏。
+dj2.constructionpastecontainer.desc0=该黏膏容器最多可存储§c%d§r§f个构建黏膏。
 
 # Graphite Dust tooltip
 dj2.jei.industrial_graphite_dust.desc0=引爆工业级石墨粉来制作该物品。
@@ -760,9 +774,15 @@ dj2.jei.industrial_graphite_dust.desc0=引爆工业级石墨粉来制作该物�
 # Hand Framing Tool tooltips
 dj2.jei.hand_framing_tool.desc0=手动镶框！
 dj2.jei.hand_framing_tool.desc1=手持式镶框工具能为放置在世界上的抽屉镶框。
-dj2.jei.hand_framing_tool.desc2=要执行此操作，工具本身需要在合成网格里进行镶框。详情请在 JEI 中查看该物品参与的合成表。
+dj2.jei.hand_framing_tool.desc2=要执行此操作，工具本身需要在合成网格里进行镶框。详情请在JEI中查看该物品参与的合成表。
 dj2.jei.hand_framing_tool.desc3=工具镶框后，对任意已放置的抽屉右击即可为其镶框。
 
 # Deprecated
 dj2.deprecated.deprecated.desc=§c已弃用
 dj2.deprecated.convert.desc=§c通过无序合成来转换为替代物品。
+
+
+# Fix Broken Lang Keys from other sources
+
+research.f_MATCOLDIRON.text=调查寒铁。
+research.f_MATSILVER.text=调查银。
