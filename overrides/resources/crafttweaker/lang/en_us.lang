@@ -348,6 +348,7 @@ dj2.robit.desc0=§c§lWarning: §r§7§lOnly the items in the top 3 rows of the 
 dj2.dynamic_tank_warning.desc0=§c§lWarning: §r§fSometimes the Dynamic Tank can FORGET
 dj2.dynamic_tank_warning.desc1=§fits liquid. NOT recommended to craft / use.
 dj2.gaugedropper.desc0=Empty via Shift Clicking into the air.
+dj2.gas_upgrade_tooltip.desc0=§fAccepts Gas Upgrades.
 
 # Lightningcraft tooltips
 dj2.electricium.desc0=§fCreate this for the first time by
@@ -438,6 +439,7 @@ dj2.demon_heart.desc0=§fDropped by Lesser and Higher Demons. Check
 dj2.demon_heart.desc1=§fyour Codex Infernalis on how to summon them.
 dj2.hellhound_horn.desc0=§fDropped by various Bewitchment Demons.
 dj2.spanish_moss.desc0=§fFound in Swamp Biomes. Use Shears to harvest.
+dj2.ectoplasm.desc0=§fDropped by Endermen and Ghosts when slaim with an Athame.
 
 # Thaumcraft tooltips
 dj2.thaumonomicon.desc0=§c§lWarning:§r§f§l Recipes shown may be incorrect.
@@ -469,6 +471,9 @@ dj2.void_seed.desc0=§fObtained by throwing a Causality Collapser on a
 dj2.void_seed.desc1=§fFlux Rift, or using a Void Siphon in the same chunk.
 dj2.primordial_pearl.desc0=§fDropped rarely by §r§5Void Rifts§r§f when
 dj2.primordial_pearl.desc1=§fclosed by a §r§dCausality Collapser§r§f.
+
+# Thermal Foundation tooltips
+dj2.hardened_glass.desc0=§fWither proof.
 
 # Thermal Expansion tooltips
 dj2.phytogenic_insolator.desc0=§c§lMachine disabled.
@@ -583,6 +588,8 @@ dj2.projecte_matter.desc1=§fUse the Tome of Knowledge to learn all transmutatio
 dj2.mob_duplicator.desc0=§c§lWarning: §r§fThe Mob Imprisonment Tool is gated
 dj2.mob_duplicator.desc1=§funtil Chapter 25. §r§f§o(This is because there is
 dj2.mob_duplicator.desc2=§f§ono blacklist for it in the configs.)
+dj2.wither_builder.desc0=§fAll Hardened Glasses and Reinforced
+dj2.wither_builder.desc1=§fObsidian are Wither proof.
 
 # Avaritia tooltips
 dj2.pile_of_neutronium.desc0=§fCreated by the Neutron Collector every

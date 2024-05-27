@@ -406,6 +406,7 @@ recipes.addShaped(<mekanism:basicblock:7> * 3, [[<plustic:osgloglasblock>,<ender
 // Purification Chamber
 recipes.remove(<mekanism:machineblock:9>);
 recipes.addShaped(<mekanism:machineblock:9>, [[<enderio:item_alloy_ingot:6>,<mekanism:controlcircuit:3>,<enderio:item_alloy_ingot:6>],[<contenttweaker:cosmic_alloy>,<mekanism:machineblock>,<contenttweaker:cosmic_alloy>],[<enderio:block_alloy:6>,<mekanism:controlcircuit:3>,<enderio:block_alloy:6>]]);
+<mekanism:machineblock:9>.addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Thermal Evaporation Block
 recipes.remove(<mekanism:basicblock2>);
@@ -519,6 +520,7 @@ recipes.addShaped(<mekanism:machineblock2:2>, [[<alchemistry:ingot:3>,null,<alch
 // Chemical Dissolution Chamber
 recipes.remove(<mekanism:machineblock2:6>);
 recipes.addShaped(<mekanism:machineblock2:6>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>],[<mekanism:gastank>.withTag({tier: 3}),<contenttweaker:cosmic_alloy>,<mekanism:gastank>.withTag({tier: 3})],[<ore:blockOsmiridium>,<actuallyadditions:block_misc:8>,<ore:blockOsmiridium>]]);
+<mekanism:machineblock2:6>.addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Chemical Washer
 recipes.remove(<mekanism:machineblock2:7>);
@@ -566,20 +568,27 @@ addMekAdvancedAndEliteFactoryRecipe(<mekanism:machineblock:5>.withTag({recipeTyp
 // Basic Purifying Factory
 recipes.remove(<mekanism:machineblock:5>.withTag({recipeType: 5}));
 recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 5}), [[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>],[<mekanism:machineblock:9>,<contenttweaker:enriched_gum>,<mekanism:machineblock:9>],[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>]]);
+<mekanism:machineblock:5>.withTag({recipeType:5}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Advanced & Elite Purifying Factory
 addMekAdvancedAndEliteFactoryRecipe(<mekanism:machineblock:5>.withTag({recipeType: 5}), <mekanism:machineblock:6>.withTag({recipeType: 5}), <mekanism:machineblock:7>.withTag({recipeType: 5}));
+<mekanism:machineblock:6>.withTag({recipeType:5}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
+<mekanism:machineblock:7>.withTag({recipeType:5}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Chemical Injection Chamber
 recipes.remove(<mekanism:machineblock2:3>);
 recipes.addShaped(<mekanism:machineblock2:3>, [[<enderio:item_alloy_ingot:6>,<alchemistry:ingot:3>,<enderio:item_alloy_ingot:6>],[<alchemistry:ingot:3>,<mekanism:machineblock:9>,<alchemistry:ingot:3>],[<enderio:block_alloy:6>,<alchemistry:ingot:3>,<enderio:block_alloy:6>]]);
+<mekanism:machineblock2:3>.addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Basic Injecting Factory
 recipes.remove(<mekanism:machineblock:5>.withTag({recipeType: 6}));
 recipes.addShaped(<mekanism:machineblock:5>.withTag({recipeType: 6}), [[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>],[<mekanism:machineblock2:3>,<contenttweaker:enriched_gum>,<mekanism:machineblock2:3>],[<ore:ingotRedAlloy>,<mekanism:controlcircuit>,<ore:ingotRedAlloy>]]);
+<mekanism:machineblock:5>.withTag({recipeType:6}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Advanced & Elite Injecting Factory
 addMekAdvancedAndEliteFactoryRecipe(<mekanism:machineblock:5>.withTag({recipeType: 6}), <mekanism:machineblock:6>.withTag({recipeType: 6}), <mekanism:machineblock:7>.withTag({recipeType: 6}));
+<mekanism:machineblock:6>.withTag({recipeType:6}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
+<mekanism:machineblock:7>.withTag({recipeType:6}).addTooltip(game.localize("dj2.gas_upgrade_tooltip.desc0"));
 
 // Advanced & Elite Infusing Factory
 addMekAdvancedAndEliteFactoryRecipe(<mekanism:machineblock:5>.withTag({recipeType: 7}), <mekanism:machineblock:6>.withTag({recipeType: 7}), <mekanism:machineblock:7>.withTag({recipeType: 7}));

@@ -47,6 +47,7 @@ WitchesOven.removeRecipe(<quark:cooked_crab_leg>);
 WitchesOven.removeRecipe(<minecraft:leather>);
 WitchesOven.removeRecipe(<minecraft:dye:15>);
 WitchesOven.addRecipe(<thaumcraft:alumentum>, <abyssalcraft:crystalshard:22> * 5, <bewitchment:ectoplasm>, 0.1, false);
+<bewitchment:ectoplasm>.addTooltip(game.localize("dj2.ectoplasm.desc0"));
 
 function addBewitchmentWitchesAltarRecipe(output as IItemStack, input_material as IIngredient) {
     recipes.remove(output);
