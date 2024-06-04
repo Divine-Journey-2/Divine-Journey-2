@@ -438,7 +438,7 @@ RecipeBuilder.newBuilder("bonemeal_recipe", "lightningcraft_infusion_multiblock"
     .addEnergyPerTickInput(1000)
     .addItemInput(<lightningcraft:material:7>)
     .addItemInput(<thermalfoundation:material:1027> * 16)
-    .addItemInput(<bloodmagic:cutting_fluid:0>)
+    .addItemInput(<contenttweaker:basic_cutting_fluid>)
     .addItemOutput(<lightningcraft:material:8> * 3)
     .build();
 

@@ -1956,4 +1956,7 @@ mods.alchemistry.Combiner.addRecipe(<contenttweaker:goddess_pearl>, [<thaumcraft
 <contenttweaker:goddess_pearl>.addTooltip(game.localize("dj2.goddess_pearl.desc0"));
 <contenttweaker:goddess_pearl>.addTooltip(game.localize("dj2.goddess_pearl.desc1"));
 
+// Basic Cutting Fluid
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:basic_cutting_fluid>, [<thermalfoundation:material:768>,<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:sugar>,<bloodmagic:component:22>,<minecraft:potion>.withTag({Potion:"minecraft:water"})], 1000, 400, 1);
+
 print("ENDING ContentTweakerRecipes.zs");
