@@ -970,12 +970,6 @@
       "required": true
     },
     {
-      "slug": "foamfix-optimization-mod",
-      "projectID": 278494,
-      "fileID": 3973967,
-      "required": true
-    },
-    {
       "slug": "modular-diversity",
       "projectID": 280506,
       "fileID": 2738135,
@@ -1077,12 +1071,6 @@
       "slug": "tinkers-jei",
       "projectID": 291786,
       "fileID": 2701203,
-      "required": true
-    },
-    {
-      "slug": "vanillafix",
-      "projectID": 292785,
-      "fileID": 2915154,
       "required": true
     },
     {
@@ -1367,7 +1355,7 @@
     {
       "slug": "mixin-booter",
       "projectID": 419286,
-      "fileID": 4090558,
+      "fileID": 5079135,
       "required": true
     },
     {
@@ -1455,6 +1443,18 @@
       "slug": "serializationisbad",
       "projectID": 896591,
       "fileID": 5187152,
+      "required": true
+    },
+    {
+      "slug": "fermiumbooter",
+      "projectID": 968474,
+      "fileID": 5346592,
+      "required": true
+    },
+    {
+      "slug": "fermiumasm",
+      "projectID": 971247,
+      "fileID": 5346789,
       "required": true
     }
   ],
