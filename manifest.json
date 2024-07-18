@@ -926,13 +926,6 @@
       "required": true
     },
     {
-      "slug": "toast-control",
-      "projectID": 271740,
-      "fileID": 2707353,
-      "required": true,
-      "clientOnly": true
-    },
-    {
       "slug": "cucumber",
       "projectID": 272335,
       "fileID": 2645867,
@@ -1036,12 +1029,6 @@
       "fileID": 2705304,
       "required": true,
       "clientOnly": true
-    },
-    {
-      "slug": "randompatches-forge",
-      "projectID": 285612,
-      "fileID": 3133651,
-      "required": true
     },
     {
       "slug": "galacticrafttweaker",
@@ -1281,12 +1268,6 @@
       "required": true
     },
     {
-      "slug": "dupefix-project",
-      "projectID": 356349,
-      "fileID": 3424173,
-      "required": true
-    },
-    {
       "slug": "spark",
       "projectID": 361579,
       "fileID": 3542217,
@@ -1411,7 +1392,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 4643575,
+      "fileID": 5529764,
       "required": true
     },
     {
