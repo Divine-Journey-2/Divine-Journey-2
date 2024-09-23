@@ -33,6 +33,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Prevents Keybind names from overflowing the keybinding screen (Universal Tweaks).
 - Fixes sleeping resetting rain/thunder times (Universal Tweaks).
 - Fixes some particles not appearing clientside (Universal Tweaks).
+- Fixes flying into ME Drives occasionally causing a crash.
 
 ## Balance Adjustments:
 
