@@ -7,6 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove FoamFix 0.10.15
 - Remove DupeFix Project 3.1.6
 - Remove Toast Control 1.8.1
+- Remove Forgiving Void 1.1.0
 - Remove RandomPatches 1.22.1.10
 - Update MixinBooter 7.0 -> 9.1
 - Update Universal Tweaks 1.7.1 -> 1.12.0
