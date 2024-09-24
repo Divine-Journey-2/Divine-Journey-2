@@ -60,7 +60,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+- Fix the Celestial Collector Crystal having an invalid character sequence, causing it to not be formatted properly.
 
 ## Texture Transformations:
 
