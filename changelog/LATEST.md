@@ -34,6 +34,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes sleeping resetting rain/thunder times (Universal Tweaks).
 - Fixes some particles not appearing clientside (Universal Tweaks).
 - Fixes flying into ME Drives occasionally causing a crash.
+- Fixes some Advancements requiring specificly a single item.
 
 ## Balance Adjustments:
 

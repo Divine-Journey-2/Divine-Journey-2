@@ -8,7 +8,7 @@ hideLines()
 alwaysVisible()
 
 criteria = addCriteria("hasPureDaisy", "minecraft:inventory_changed")
-criteria.addItem(<botania:specialflower, meta:0, count:1, nbt:{type:"puredaisy"}>)
+criteria.addItem(<botania:specialflower, meta:0, count:1~64, nbt:{type:"puredaisy"}>)
 
 addRewardFunction("triumph:fireworks")
 addRewardFunction("triumph:14_manamana")
