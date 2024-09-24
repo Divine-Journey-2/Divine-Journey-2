@@ -393,6 +393,8 @@ dj2.syringe_disabled.desc3=§4Item disabled. Makes fighting against various mobs
 dj2.blood_chest.desc0=§cItem disabled. Makes repairing items trivial.
 
 # EnderIO tooltips
+dj2.me_conduits.desc0=§c§lWARNING: §r§fME Conduits should be used with caution,
+dj2.me_conduits.desc1=as they can be quite laggy when overused and not carry channels properly.
 dj2.farming_station.desc0=§c§lWARNING: §r§fDo NOT use this machine to harvest crops
 dj2.farming_station.desc1=§ffrom Crop Sticks. It will always CRASH your game.
 dj2.farming_station.desc2=§f§o<Press Shift for alternatives>

@@ -61,6 +61,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Text and Quest Updates:
 
 - Fix the Celestial Collector Crystal having an invalid character sequence, causing it to not be formatted properly.
+- Add a warning tooltip to EnderIO ME Conduits indicating that overuse can be bad and suggesting using them less.
 
 ## Texture Transformations:
 
