@@ -39,13 +39,13 @@ mods.thaumcraft.Infusion.registerRecipe("thaumicaugmentation:thaumostatic_harnes
 
 // Effect Crystal: Vis Discount
 mods.thaumcraft.Crucible.removeRecipe(<thaumicaugmentation:augment_builder_effect>);
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cost", "GAUNTLET_AUGMENTATION", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_cost"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:auram> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cost", "GAUNTLET_AUGMENTATION@1", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_cost"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:auram> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
 
 // Effect Crystal: Focus Power
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_power", "GAUNTLET_AUGMENTATION", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_power"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:aversio> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_power", "GAUNTLET_AUGMENTATION@1", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_power"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:aversio> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
 
 // Effect Crystal: Cast Speed
-mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cast_speed", "GAUNTLET_AUGMENTATION", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_cast_speed"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:potentia> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
+mods.thaumcraft.Crucible.registerRecipe("thaumcraft:augment_builder_effect_cast_speed", "GAUNTLET_AUGMENTATION@1", <thaumicaugmentation:augment_builder_effect>.withTag({id: "thaumicaugmentation:effect_cast_speed"}), <contenttweaker:condensed_vis_crystal_ordo>, [<aspect:potentia> * 50, <aspect:vitreus> * 30, <aspect:praecantatio> * 15]);
 
 // Impetus Cell
 mods.thaumcraft.Infusion.removeRecipe(<thaumicaugmentation:material:3>);

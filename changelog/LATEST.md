@@ -35,6 +35,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes some particles not appearing clientside (Universal Tweaks).
 - Fixes flying into ME Drives occasionally causing a crash.
 - Fixes some Advancements requiring specificly a single item.
+- Fixes Thaumcraft Augmentation Effect Crystal recipes requiring the full research to be completed instead of only the second stage, which prevents them from ever being obtainable without using the Cheater's Thaumonomicon.
 
 ## Balance Adjustments:
 
