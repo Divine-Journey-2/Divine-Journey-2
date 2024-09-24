@@ -476,6 +476,7 @@ recipes.addShaped(<bewitchment:scorned_bricks>, [[<extrautils2:compressednetherr
 // Nevermind, this crashes the Bewitchment guide book...
 
 // Blessed Stone
+<blockstate:bewitchment:blessed_stone>.block.definition.hardness = 50;
 mods.extendedcrafting.TableCrafting.addShaped(<bewitchment:blessed_stone>,
 [[<bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>, <bewitchment:stone_witches_altar>],
 [<thaumcraft:stone_arcane>, <bewitchment:cold_iron_ingot>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>, <thaumcraft:stone_arcane>],
