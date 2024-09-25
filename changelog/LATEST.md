@@ -80,6 +80,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Includes a description of how to construct the Tinkers' Construct Smeltery in the Smeltery Controller quest.
 - Includes a note that using Silk Touch on the Erebus Mushroom blocks results in obtaining the full mushroom block directly in the Erebus Mushroom quest.
 - Fixes a typo in the Goddess Pearl quest.
+- Adds the Tinkers' Construct Materials and You book to the Blank Pattern quest.
 
 ## Texture Transformations:
 
