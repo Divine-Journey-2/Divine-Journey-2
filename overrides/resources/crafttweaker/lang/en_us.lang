@@ -4,7 +4,7 @@ commands.discord.usage=Sends a link to the Discord page in chat.
 commands.issues.usage=Sends a link to the issues page in chat.
 commands.book_of_logic.usage=Prints the full text of the book of logic to chat, required for localization
 commands.introduction_book.usage=Prints the full text of the introduction book to chat, required for localization
-commands.curseforge.text=Click here to open the DJ2 Curseforge page
+commands.curseforge.text=Click here to open the DJ2 CurseForge page
 commands.discord.text=Click here to join the Discord
 commands.issues.text=Click here to report a bug or issue
 

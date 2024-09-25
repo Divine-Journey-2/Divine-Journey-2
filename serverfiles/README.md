@@ -97,9 +97,9 @@ Failure to properly do any one of these steps may result in errors.
 
 1. Shut down your server.
 2. Make a backup of your server, in particular the files deleted in step 4, in case things go wrong.
-3. Download the latest server pack files from Curseforge https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files or GitHub https://github.com/Divine-Journey-2/Divine-Journey-2/releases.
+3. Download the latest server pack files from CurseForge https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files or GitHub https://github.com/Divine-Journey-2/Divine-Journey-2/releases.
 4. Delete the `config`, `mods`, `scripts`, and `structures` folders.
-5. Copy those same folders from the server pack downloaded from Curseforge into the server instance.
+5. Copy those same folders from the server pack downloaded from CurseForge into the server instance.
 6. Apply any unique changes (new mods or custom configs) made that were deleted by step 4.
 7. Start your server.
 8. If a block, entity, item, etc. was removed, the server will make a backup before loading the game with those blocks/entities/items removed. This process may take a significant amount of time.
