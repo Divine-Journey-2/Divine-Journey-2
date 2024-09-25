@@ -1,37 +1,37 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_mirion_ingot",
+    "registryName": "laser_focus_plustic_empowered_enori",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@0",
-            "amount": 4
+            "item": "thermalfoundation:material@288",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:ingots@0",
-            "amount": 4
+            "item": "thermalfoundation:material@24",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@7",
-            "amount": 4
+            "item": "appliedenergistics2:material@5",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@4",
-            "amount": 4
+            "item": "minecraft:snow",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:glass",
-            "amount": 4
+            "item": "actuallyadditions:item_crystal@5",
+            "amount": 16
         },
         {
             "type": "energy",
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "plustic:mirioningot",
+            "item": "actuallyadditions:item_crystal_empowered@5",
             "amount": 16
         }
     ]

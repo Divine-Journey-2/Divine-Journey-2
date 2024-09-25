@@ -1,37 +1,37 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_mirion_ingot",
+    "registryName": "laser_focus_plustic_empowered_restonia",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@0",
-            "amount": 4
+            "item": "thermalfoundation:material@293",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:ingots@0",
-            "amount": 4
+            "item": "enderio:item_alloy_ingot@3",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@7",
-            "amount": 4
+            "item": "minecraft:brick_block",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@4",
-            "amount": 4
+            "item": "roots:infernal_bulb",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:glass",
-            "amount": 4
+            "item": "actuallyadditions:item_crystal@0",
+            "amount": 16
         },
         {
             "type": "energy",
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "plustic:mirioningot",
+            "item": "actuallyadditions:item_crystal_empowered@0",
             "amount": 16
         }
     ]

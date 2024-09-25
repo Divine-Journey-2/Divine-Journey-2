@@ -1,37 +1,37 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_mirion_ingot",
+    "registryName": "laser_focus_plustic_empowered_diamatine",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@0",
-            "amount": 4
+            "item": "thermalfoundation:material@262",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:ingots@0",
-            "amount": 4
+            "item": "enderio:item_alloy_endergy_ingot@6",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@7",
-            "amount": 4
+            "item": "roots:cloud_berry",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@4",
-            "amount": 4
+            "item": "minecraft:clay",
+            "amount": 16
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:glass",
-            "amount": 4
+            "item": "actuallyadditions:item_crystal@2",
+            "amount": 16
         },
         {
             "type": "energy",
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "plustic:mirioningot",
+            "item": "actuallyadditions:item_crystal_empowered@2",
             "amount": 16
         }
     ]
