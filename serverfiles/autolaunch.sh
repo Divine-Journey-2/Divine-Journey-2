@@ -21,6 +21,8 @@ $JAVA_VERSION -version
 echo
 echo "The expected java version is 1.8. Not higher, not lower."
 echo
+echo "To change the values used, edit the launch_config.ini file."
+echo
 sleep 3
 
 echo
