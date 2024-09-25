@@ -39,6 +39,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes the Bewitchment Blessed Stone being unbreakable after being placed.
 - Fixes a console error where PlusTiC attempted to register modifiers for Constructs Armory.
 - Fixes the Crown of Skies recipe involving a Robit for the Erebus Skip recipe being uncraftable in some GUIs on servers.
+- Fixes Immersive Engineering Excavator veins not generated in the Twilight Forest - they were instead generating in an unregistered dimension "9".
 
 ## Balance Adjustments:
 

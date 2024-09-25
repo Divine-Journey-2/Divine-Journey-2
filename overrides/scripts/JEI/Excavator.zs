@@ -48,7 +48,7 @@ static dimensionIdentifier as string[int] = {
     0:      game.localize("dj2.excavator.dimension.overworld"),
     1:      game.localize("dj2.excavator.dimension.end"),
     4:      game.localize("dj2.excavator.dimension.aether"),
-    9:      game.localize("dj2.excavator.dimension.twilight_forest"),
+    7:      game.localize("dj2.excavator.dimension.twilight_forest"),
     17:     game.localize("dj2.excavator.dimension.atum"),
     50:     game.localize("dj2.excavator.dimension.abyssal_wasteland"),
     51:     game.localize("dj2.excavator.dimension.dreadlands"),
@@ -312,31 +312,31 @@ addExcavator("Nether Cobalt", 25, ["oreCobalt", "oreArdite", "oreCincinnasite"],
 addExcavator("Nether Lapis", 25, ["oreNetherLapis", "oreCincinnasite", "oreCobalt"], [0.5, 0.3, 0.2], [-1]);
 addExcavator("Nether Cincinnasite", 25, ["oreCincinnasite", "dustSulfur"], [0.9, 0.1], [-1]);
 
-addExcavator("Iron", 25, ["oreIron", "oreNickel", "oreTin"], [0.55, 0.25, 0.20], [0, 9, -11325]);
-addExcavator("Magnetite", 25, ["oreIron", "oreGold"], [0.85, 0.15], [0, 9, -11325]);
-addExcavator("Pyrite", 20, ["oreIron", "dustSulfur"], [0.5, 0.5], [0, 9, -11325]);
-addExcavator("Copper", 30, ["oreCopper", "oreGold", "oreNickel"], [0.7, 0.25, 0.05], [0, 9, -11325]);
-addExcavator("Cassiterite", 15, ["oreTin"], [1.0], [0, 9, -11325]);
-addExcavator("Gold", 20, ["oreGold", "oreCopper", "oreNickel"], [0.65, 0.25, 0.1], [0, 9, -11325]);
-addExcavator("Nickel", 20, ["oreNickel", "oreIron"], [0.85, 0.15], [0, 9, -11325]);
-addExcavator("Yellorium", 10, ["oreYellorium"], [1.0], [0, 9, -11325]);
-addExcavator("Certus Quartz", 15, ["oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.6, 0.1, 0.3], [0, 9, -11325]);
-addExcavator("Quartzite", 5, ["oreOverworldQuartz", "oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.5, 0.35, 0.05, 0.1], [0, 9, -11325]);
-addExcavator("Galena", 15, ["oreLead", "oreSilver"], [0.50, 0.50], [0, 9, -11325]);
-addExcavator("Lapis", 10, ["oreLapis", "oreIron", "dustSulfur"], [0.65, 0.3, 0.05], [0, 9, -11325]);
-addExcavator("Cinnabar", 15, ["oreRedstone", "oreCinnabar", "oreClathrateRedstone"], [0.65, 0.20, 0.15], [0, 9, -11325]);
-addExcavator("Coal", 25, ["oreCoal", "oreDiamond", "oreEmerald"], [0.84, 0.15, 0.01], [0, 9, -11325]);
-addExcavator("Silt", 25, ["blockClay", "blockSalt", "oreAquamarine", "sand", "gravel"], [0.3, 0.2, 0.1, 0.2, 0.2], [0, 9, -11325]);
-addExcavator("Osmium", 35, ["oreOsmium", "oreIron"], [0.8, 0.2], [0, 9, -11325]);
-addExcavator("Aluminum", 10, ["oreAluminum", "oreTin"], [0.7, 0.3], [0, 9, -11325]);
-addExcavator("Inferium", 25, ["oreInferium", "oreProsperity"], [0.6, 0.4], [0, 9, -11325]);
-addExcavator("Garnet", 25, ["oreGarnet", "oreRedstone", "oreAmethyst"], [0.5, 0.25, 0.25], [0, 9, -11325]);
-addExcavator("Opal", 25, ["oreOpal", "oreDark"], [0.6, 0.4], [0, 9, -11325]);
-addExcavator("Oilsand", 25, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [0, 9, -11325]);
-addExcavator("Oilgravel", 25, ["oreClathrateOilShale", "gravel"], [0.9, 0.1], [0, 9, -11325]);
-addExcavator("Divine", 25, ["oreRupee", "oreRealmite", "oreArlemite"], [0.33, 0.33, 0.33], [0, 9, -11325]);
-addExcavator("Amethyst", 25, ["oreAmethyst", "oreCinnabar", "oreDiamond"], [0.6, 0.3, 0.1], [0, 9, -11325]);
-addExcavator("Coralium", 25, ["oreCoralium"], [1.0], [0, 9, -11325]);
+addExcavator("Iron", 25, ["oreIron", "oreNickel", "oreTin"], [0.55, 0.25, 0.20], [0, 7, -11325]);
+addExcavator("Magnetite", 25, ["oreIron", "oreGold"], [0.85, 0.15], [0, 7, -11325]);
+addExcavator("Pyrite", 20, ["oreIron", "dustSulfur"], [0.5, 0.5], [0, 7, -11325]);
+addExcavator("Copper", 30, ["oreCopper", "oreGold", "oreNickel"], [0.7, 0.25, 0.05], [0, 7, -11325]);
+addExcavator("Cassiterite", 15, ["oreTin"], [1.0], [0, 7, -11325]);
+addExcavator("Gold", 20, ["oreGold", "oreCopper", "oreNickel"], [0.65, 0.25, 0.1], [0, 7, -11325]);
+addExcavator("Nickel", 20, ["oreNickel", "oreIron"], [0.85, 0.15], [0, 7, -11325]);
+addExcavator("Yellorium", 10, ["oreYellorium"], [1.0], [0, 7, -11325]);
+addExcavator("Certus Quartz", 15, ["oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.6, 0.1, 0.3], [0, 7, -11325]);
+addExcavator("Quartzite", 5, ["oreOverworldQuartz", "oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.5, 0.35, 0.05, 0.1], [0, 7, -11325]);
+addExcavator("Galena", 15, ["oreLead", "oreSilver"], [0.50, 0.50], [0, 7, -11325]);
+addExcavator("Lapis", 10, ["oreLapis", "oreIron", "dustSulfur"], [0.65, 0.3, 0.05], [0, 7, -11325]);
+addExcavator("Cinnabar", 15, ["oreRedstone", "oreCinnabar", "oreClathrateRedstone"], [0.65, 0.20, 0.15], [0, 7, -11325]);
+addExcavator("Coal", 25, ["oreCoal", "oreDiamond", "oreEmerald"], [0.84, 0.15, 0.01], [0, 7, -11325]);
+addExcavator("Silt", 25, ["blockClay", "blockSalt", "oreAquamarine", "sand", "gravel"], [0.3, 0.2, 0.1, 0.2, 0.2], [0, 7, -11325]);
+addExcavator("Osmium", 35, ["oreOsmium", "oreIron"], [0.8, 0.2], [0, 7, -11325]);
+addExcavator("Aluminum", 10, ["oreAluminum", "oreTin"], [0.7, 0.3], [0, 7, -11325]);
+addExcavator("Inferium", 25, ["oreInferium", "oreProsperity"], [0.6, 0.4], [0, 7, -11325]);
+addExcavator("Garnet", 25, ["oreGarnet", "oreRedstone", "oreAmethyst"], [0.5, 0.25, 0.25], [0, 7, -11325]);
+addExcavator("Opal", 25, ["oreOpal", "oreDark"], [0.6, 0.4], [0, 7, -11325]);
+addExcavator("Oilsand", 25, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [0, 7, -11325]);
+addExcavator("Oilgravel", 25, ["oreClathrateOilShale", "gravel"], [0.9, 0.1], [0, 7, -11325]);
+addExcavator("Divine", 25, ["oreRupee", "oreRealmite", "oreArlemite"], [0.33, 0.33, 0.33], [0, 7, -11325]);
+addExcavator("Amethyst", 25, ["oreAmethyst", "oreCinnabar", "oreDiamond"], [0.6, 0.3, 0.1], [0, 7, -11325]);
+addExcavator("Coralium", 25, ["oreCoralium"], [1.0], [0, 7, -11325]);
 
 
 print("ENDING Excavator.zs");
