@@ -85,6 +85,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adjusted the Laser crafting advantages quest to require a stack of each of the empowered crystals instead of a stack of Elevatium.
 - Adds a quest for the Astral Sorcery Ritual Pedestal, describing all the rituals.
 - Adds a tooltip to Thaumcraft Porous Stone informing of how it can be obtained.
+- Make the Mantle of Stars quest have the Constellations colored for emphasis.
 
 ## Texture Transformations:
 
