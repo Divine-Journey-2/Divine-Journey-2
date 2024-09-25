@@ -76,6 +76,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes a typo involving the DivineRPG Skythern dimension being typod as "shythern" for the Excavator.
 - Fixes a handful of places incorrect capitalizing CurseForge.
 - Adjust the GalactiCraft questline description to replace the reference to Empowering with building the Laser Focus Multiblock.
+- Improves the quest description wording for the Bewitchment Altar quest.
 
 ## Texture Transformations:
 
