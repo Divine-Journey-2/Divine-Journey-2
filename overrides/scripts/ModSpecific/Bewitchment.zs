@@ -48,6 +48,10 @@ WitchesOven.removeRecipe(<minecraft:leather>);
 WitchesOven.removeRecipe(<minecraft:dye:15>);
 WitchesOven.addRecipe(<thaumcraft:alumentum>, <abyssalcraft:crystalshard:22> * 5, <bewitchment:ectoplasm>, 0.1, false);
 
+// Coquina (can also be worldgen)
+mods.thermalexpansion.Transposer.addFillRecipe(<bewitchment:coquina>, <minecraft:cobblestone>, <liquid:cold_iron> * 18, 16000);
+mods.tconstruct.Casting.addTableRecipe(<bewitchment:coquina>, <minecraft:cobblestone>, <liquid:cold_iron>, 18, true, 400);
+
 function addBewitchmentWitchesAltarRecipe(output as IItemStack, input_material as IIngredient) {
     recipes.remove(output);
     mods.thaumcraft.Infusion.registerRecipe(output.name, "", output, 5, [<aspect:machina> * 50,<aspect:terra> * 30,<aspect:auram> * 30,<aspect:herba> * 25,<aspect:praecantatio> * 15,<aspect:ordo> * 15], <bloodmagic:incense_altar>, [<bewitchment:spruce_heart>,input_material,<bewitchment:elder_wood>,<bewitchment:elder_wood>,<bewitchment:elder_wood>,input_material,<bewitchment:oak_spirit>,<bewitchment:birch_soul>]);

@@ -45,6 +45,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Makes the OpenBlocks Last Stand consider post-armor/potion/enchantment damage for xp reduction instead of pre (Universal Tweaks).
 - Disable the ability to farm Eldritch Autocasters (bug in EnderIO config allows picking them up in Soul Vials).
+- Adds the ability to create Bewitchment Coquina via a Fluid Transposer recipe.
 
 ## QoL Improvements:
 
