@@ -81,6 +81,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Includes a note that using Silk Touch on the Erebus Mushroom blocks results in obtaining the full mushroom block directly in the Erebus Mushroom quest.
 - Fixes a typo in the Goddess Pearl quest.
 - Adds the Tinkers' Construct Materials and You book to the Blank Pattern quest.
+- Adjusted the Laser crafting advantages quest to require a stack of each of the empowered crystals instead of a stack of Elevatium.
 
 ## Texture Transformations:
 
