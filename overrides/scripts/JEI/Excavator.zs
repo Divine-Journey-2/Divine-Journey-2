@@ -56,7 +56,7 @@ static dimensionIdentifier as string[int] = {
     420:    game.localize("dj2.excavator.dimension.eden"),
     421:    game.localize("dj2.excavator.dimension.wildwood"),
     422:    game.localize("dj2.excavator.dimension.apalachia"),
-    423:    game.localize("dj2.excavator.dimension.shythern"),
+    423:    game.localize("dj2.excavator.dimension.skythern"),
     424:    game.localize("dj2.excavator.dimension.mortum"),
 } as string[int];
 

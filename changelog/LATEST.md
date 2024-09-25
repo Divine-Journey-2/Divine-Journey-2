@@ -70,6 +70,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the Celestial Collector Crystal having an invalid character sequence, causing it to not be formatted properly.
 - Add a warning tooltip to EnderIO ME Conduits indicating that overuse can be bad and suggesting using them less.
 - Adds a tooltip to the Extra Utilities 2 Chunk Loading Ward instructing to use FTB Utilities to load chunks.
+- Fixes a typo involving the DivineRPG Skythern dimension being typod as "shythern" for the Excavator.
 
 ## Texture Transformations:
 
