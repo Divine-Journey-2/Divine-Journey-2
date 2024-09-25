@@ -7,13 +7,13 @@
             "type": "item",
             "io-type": "input",
             "item": "contenttweaker:crystal_bundle",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "actuallyadditions:item_solidified_experience",
-            "amount": 64
+            "amount": 16
         },
         {
             "type": "energy",
@@ -29,7 +29,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:empowered_crystal_bundle",
-            "amount": 16
+            "amount": 4
         }
     ]
 }

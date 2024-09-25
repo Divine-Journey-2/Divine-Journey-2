@@ -7,31 +7,31 @@
             "type": "item",
             "io-type": "input",
             "item": "enderio:item_material@12",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "thermalfoundation:material@294",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "roots:wildewheet",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "minecraft:blaze_rod",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "contenttweaker:glod_crystal",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "energy",
@@ -47,7 +47,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:empowered_glod_crystal",
-            "amount": 16
+            "amount": 4
         }
     ]
 }

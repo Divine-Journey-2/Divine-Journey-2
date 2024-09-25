@@ -7,31 +7,31 @@
             "type": "item",
             "io-type": "input",
             "item": "thermalfoundation:material@259",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "minecraft:prismarine_shard",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "roots:moonglow_leaf",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "enderio:item_material@39",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "actuallyadditions:item_crystal@1",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "energy",
@@ -47,7 +47,7 @@
             "type": "item",
             "io-type": "output",
             "item": "actuallyadditions:item_crystal_empowered@1",
-            "amount": 16
+            "amount": 4
         }
     ]
 }
