@@ -220,6 +220,7 @@ recipes.addShaped(<contenttweaker:crown_of_skies>.withTag({robit: 1}), [[<ore:br
 <contenttweaker:crown_of_skies>.addTooltip(game.localize("dj2.crown_of_skies.desc3"));
 <contenttweaker:crown_of_skies>.addAdvancedTooltip(function(item) {
     if (!isNull(item.tag) && item.tag has "robit" && item.tag.robit == 1) return game.localize("dj2.crown_of_skies.robit.desc0");
+    return null;
 });
 
 // Aether Power Core
