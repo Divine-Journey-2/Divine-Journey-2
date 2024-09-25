@@ -49,6 +49,7 @@ WitchesOven.removeRecipe(<minecraft:dye:15>);
 WitchesOven.addRecipe(<thaumcraft:alumentum>, <abyssalcraft:crystalshard:22> * 5, <bewitchment:ectoplasm>, 0.1, false);
 
 // Coquina (can also be worldgen)
+<bewitchment:coquina>.addTooltip(game.localize("dj2.coquina.desc0"));
 mods.thermalexpansion.Transposer.addFillRecipe(<bewitchment:coquina>, <thaumcraft:stone_porous>, <liquid:cold_iron> * 18, 16000);
 mods.tconstruct.Casting.addTableRecipe(<bewitchment:coquina>, <thaumcraft:stone_porous>, <liquid:cold_iron>, 18, true, 400);
 

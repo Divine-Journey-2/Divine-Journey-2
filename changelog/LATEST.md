@@ -91,6 +91,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Makes the Bewitchment Altar quest accept any Vanilla Carpet instead of just Red, and indicate that the Carpet must be Vanilla.
 - Makes the Enter the Emptiness quest require either of the two prerequisite quests, allowing the Fracture Locator quest to be optional.
 - Indicates how to open the Eldritch Spire for the Raiding the Eldritch Spire quest.
+- Adds information about where Bewitchment Coquina can be obtained and that it is also craftable.
 
 ## Texture Transformations:
 
