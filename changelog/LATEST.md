@@ -60,6 +60,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Allows placing Pumpkins and Jack'O'Lanterns without a supporting block and End Crystals without Bedrock or Obsidian (Universal Tweaks).
 - Decreases AbyssalCraft portal cooldown significantly.
 - Allows converting block form of Rotten Flesh and Bonemeal into AbyssalCraft Crystal Shards.
+- Adds Botania Floral Fertilizer to Mystical Flower recipes to the custom Activate Block or Entity JEI Category.
+- Adds Botania Mystical Flower to Tall Mystical Flower recipes to the custom Activate Block or Entity JEI Category.
 
 ## Text and Quest Updates:
 
