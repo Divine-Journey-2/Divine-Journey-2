@@ -78,6 +78,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adjust the GalactiCraft questline description to replace the reference to Empowering with building the Laser Focus Multiblock.
 - Improves the quest description wording for the Bewitchment Altar quest.
 - Includes a description of how to construct the Tinkers' Construct Smeltery in the Smeltery Controller quest.
+- Includes a note that using Silk Touch on the Erebus Mushroom blocks results in obtaining the full mushroom block directly in the Erebus Mushroom quest.
 
 ## Texture Transformations:
 
