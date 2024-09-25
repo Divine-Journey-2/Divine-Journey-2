@@ -37,6 +37,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes some Advancements requiring specificly a single item.
 - Fixes Thaumcraft Augmentation Effect Crystal recipes requiring the full research to be completed instead of only the second stage, which prevents them from ever being obtainable without using the Cheater's Thaumonomicon.
 - Fixes the Bewitchment Blessed Stone being unbreakable after being placed.
+- Fixes a console error where PlusTiC attempted to register modifiers for Constructs Armory.
 
 ## Balance Adjustments:
 
