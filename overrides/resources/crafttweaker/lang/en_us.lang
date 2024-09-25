@@ -293,6 +293,7 @@ dj2.drop_of_evil.desc1=§c§lOnly available through crafting.
 dj2.drop_of_evil.desc2=§4Right Click on Grass to transform an area into Cursed Earth.
 dj2.drop_of_evil.desc3=§4Mobs will constantly spawn on this type of Soil.
 dj2.drop_of_evil.desc4=§4Watch out, Cursed Earth burns in the daylight!
+dj2.chunkloader.desc0=§5§oUse FTB Chunks for Chunkloading!
 dj2.suncrystal.desc0=§fFilled by throwing onto the ground when exposed to the sun.
 dj2.suncrystal.desc1=§fLater, you can use Liquid Sunshine or Glowstone Essence to fill it.
 dj2.suncrystal.desc2=§cMust have 0 durability when thrown in Liquid Sunshine.
