@@ -53,7 +53,9 @@ Modifying it in any other way is not supported.
 
 To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION="java"` to `JAVA_VERSION="C:\direct\path\to\java"` or `JAVA_VERSION="/direct/path/to/java"`.
 Since the path must be wrapped in quotes if it contains any spaces, the path has pre-emptively placed within quotes.
-The file used should be named "java" and not "javaw" - including the "w" will cause the console not to print any text,
+
+The file targeted used should be inside the `bin` folder, and the file name should be `java`.
+While there is also a file called `javaw`, this makes the console not print any text,
 which may lead to incorrect assumptions about the state of the server.
 
 Divine Journey 2 is a forge modpack for 1.12.2.

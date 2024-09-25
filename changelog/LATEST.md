@@ -83,3 +83,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Miscellaneous Changes:
 
 - Updates the server launch scripts to indicate that the user should modify the `launch_config.ini` file.
+- Updates the server README file to improve the description of the `java` file used.
