@@ -34,7 +34,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes sleeping resetting rain/thunder times (Universal Tweaks).
 - Fixes some particles not appearing clientside (Universal Tweaks).
 - Fixes flying into ME Drives occasionally causing a crash.
-- Fixes some Advancements requiring specificly a single item.
+- Fixes some Advancements requiring specifically a single item.
 - Fixes Thaumcraft Augmentation Effect Crystal recipes requiring the full research to be completed instead of only the second stage, which prevents them from ever being obtainable without using the Cheater's Thaumonomicon.
 - Fixes the Bewitchment Blessed Stone being unbreakable after being placed.
 - Fixes a console error where PlusTiC attempted to register modifiers for Constructs Armory.
@@ -45,7 +45,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Makes the OpenBlocks Last Stand consider post-armor/potion/enchantment damage for xp reduction instead of pre (Universal Tweaks).
-- Disable the ability to farm Eldritch Autocasters (bug in EnderIO config allows picking them up in Soul Vials).
+- Disables the ability to farm Eldritch Autocasters (bug in EnderIO config allows picking them up in Soul Vials).
 - Adds the ability to create Bewitchment Coquina via a Fluid Transposer recipe.
 - Removes the ability to create Elevatium via the Laser Focus Multiblock, and add the ability create Empowered Crystals significantly faster than Empowering.
 
@@ -71,21 +71,22 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-- Fix the Celestial Collector Crystal having an invalid character sequence, causing it to not be formatted properly.
-- Add a warning tooltip to EnderIO ME Conduits indicating that overuse can be bad and suggesting using them less.
+- Fixes the Celestial Collector Crystal having an invalid character sequence, causing it to not be formatted properly.
+- Adds a warning tooltip to EnderIO ME Conduits indicating that overuse can be bad and suggesting using them less.
 - Adds a tooltip to the Extra Utilities 2 Chunk Loading Ward instructing to use FTB Utilities to load chunks.
 - Fixes a typo involving the DivineRPG Skythern dimension being typod as "shythern" for the Excavator.
 - Fixes a handful of places incorrect capitalizing CurseForge.
-- Adjust the GalactiCraft questline description to replace the reference to Empowering with building the Laser Focus Multiblock.
+- Adjusts the GalactiCraft questline description to replace the reference to Empowering with building the Laser Focus Multiblock.
 - Improves the quest description wording for the Bewitchment Altar quest.
 - Includes a description of how to construct the Tinkers' Construct Smeltery in the Smeltery Controller quest.
 - Includes a note that using Silk Touch on the Erebus Mushroom blocks results in obtaining the full mushroom block directly in the Erebus Mushroom quest.
 - Fixes a typo in the Goddess Pearl quest.
 - Adds the Tinkers' Construct Materials and You book to the Blank Pattern quest.
-- Adjusted the Laser crafting advantages quest to require a stack of each of the empowered crystals instead of a stack of Elevatium.
+- Adjusts the Laser crafting advantages quest to require a stack of each of the empowered crystals instead of a stack of Elevatium.
 - Adds a quest for the Astral Sorcery Ritual Pedestal, describing all the rituals.
 - Adds a tooltip to Thaumcraft Porous Stone informing of how it can be obtained.
-- Make the Mantle of Stars quest have the Constellations colored for emphasis.
+- Makes the Mantle of Stars quest have the Constellations colored for emphasis.
+- Fixes a large number of typos in the lang files.
 
 ## Texture Transformations:
 

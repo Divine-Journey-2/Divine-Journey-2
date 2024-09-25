@@ -52,7 +52,7 @@ Modifying it in any other way is not supported.
 ### Java:
 
 To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION="java"` to `JAVA_VERSION="C:\direct\path\to\java"` or `JAVA_VERSION="/direct/path/to/java"`.
-Since the path must be wrapped in quotes if it contains any spaces, the path has pre-emptively placed within quotes.
+Since the path must be wrapped in quotes if it contains any spaces, the path has preemptively placed within quotes.
 
 The file targeted used should be inside the `bin` folder, and the file name should be `java`.
 While there is also a file called `javaw`, this makes the console not print any text,

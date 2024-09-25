@@ -11,8 +11,8 @@ Total Mods: 237
 | :gear:        | 30    | Development       | Basically never interacted with by a player                                                                              |
 | :gem:         | 35    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right            |
-| :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a subtantial part of progression                           |
-| :bug:         |  8    | Bugfix/Performace | Solely fixes one or multiple bugs or performace issues present in Vanilla or another mod                                 |
+| :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                           |
+| :bug:         |  8    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                 |
 | :eyes:        |  4    | Visual            | Improves the visual options of the pack                                                                                  |
 | :world_map:   |  5    | Worldgen          | Changes or improves worldgen                                                                                             |
 | :closed_book: |  3    | Questbook         | Related to the Questbook                                                                                                 |
@@ -20,7 +20,7 @@ Total Mods: 237
 
 ## Modlist
 
-Mods are required on both clientside and serverside unless otherwise noted.
+Mods are required on both client-side and server-side unless otherwise noted.
 
 | Type          | Mod                                                                                                                          | Primary Author                                                                       | Client-Only        |
 |---------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------|

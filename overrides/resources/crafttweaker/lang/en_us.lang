@@ -268,7 +268,7 @@ dj2.introduction.book.desc3=In Divine Journey 2, you need to progress through al
 dj2.introduction.book.desc4=you've been given the tools to set up all the automation your heart desires.
 dj2.introduction.book.desc5=To succeed in this pack, you need to have a good understanding of Modded Minecraft in general, or at least have played some other modpacks that
 dj2.introduction.book.desc6=give you a feel on how to autocraft, autoprocess, automate every aspect of any tech or magic mod, and so on.
-dj2.introduction.book.desc7=Don't be discouraged however, since along the way, you'll be exploring wonderous dimensions added by DivineRPG, Twilight Forest,
+dj2.introduction.book.desc7=Don't be discouraged however, since along the way, you'll be exploring wondrous dimensions added by DivineRPG, Twilight Forest,
 dj2.introduction.book.desc8=Aether, Atum 2, AbyssalCraft, The Erebus, Galacticraft, and more. There is plenty of fun to be had with those, especially since you'll have access to them quite early on.
 dj2.introduction.book.desc9=The main progression line consists of the following:
 dj2.introduction.book.desc10=§l1.§r Early Exploration with Tinkers' Tools and Totemic / Roots spells and gadgets.
@@ -510,18 +510,18 @@ dj2.thermal_kit.desc3=Increases the base slot amount of a Storage Box by §c%d§
 # Silver plate
 dj2.silver_plate.desc0=§5§oS'il vous plaît
 
-# Blood Magic: Alchemical Wizardy tooltips
+# Blood Magic: Alchemical Wizardry tooltips
 dj2.rune_speed.desc0=Increases the speed at which LP is consumed by recipes or inserted into a Blood Orb by §620%§r per rune, additively.
 dj2.rune_self_sacrifice.desc0=Increases the amount of LP gained from each heart from a player by §610%§r per rune, additively.
 dj2.rune_sacrifice.desc0=Increases the amount of LP gained from each heart from mobs by §610%§r per rune, additively.
 dj2.rune_capacity.desc0=Increases the capacity of the Blood Altar by §62,000§r LP per rune, additively.
 dj2.rune_capacity.desc1=Does §4§onot§r stack with Runes of Augmented Capacity!
 dj2.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
-dj2.rune_augmented_capacity.desc0=Increases the capacity of the Blood Altar by §610%§r per rune, multiplicitively.
+dj2.rune_augmented_capacity.desc0=Increases the capacity of the Blood Altar by §610%§r per rune, multiplicatively.
 dj2.rune_augmented_capacity.desc1=Does §4§onot§r stack with Runes of Capacity! Only switch when you will have §6>15§r.
-dj2.rune_efficiency.desc0=Reduces the progress drain when out of LP in the Blood Altar by §615%§r per rune, multiplicitively.
+dj2.rune_efficiency.desc0=Reduces the progress drain when out of LP in the Blood Altar by §615%§r per rune, multiplicatively.
 dj2.rune_charging.desc0=Stores crafting progress while idle to speed up recipes. Too complex to list effects.
-dj2.rune_displacement.desc0=Increases the LP I/O rate by §620%§r per rune, multiplicitively.
+dj2.rune_displacement.desc0=Increases the LP I/O rate by §620%§r per rune, multiplicatively.
 dj2.rune_acceleration.desc0=Reduces the operation interval by §61 tick§r per rune. Stacks to §619§r. Affects LP I/O.
 dj2.rune_orb.desc0=Increases the amount of LP that can be inserted into the Orb by §62%§r per rune, additively.
 dj2.rune_orb.desc1=Does §4§onot§r increase the speed.
@@ -569,7 +569,7 @@ dj2.master_crystal.desc0=§e§kE§a§kS§6§kS§b§kE§c§kN§5§kC§f§kE§r ->
 dj2.ender_crystal.desc0=Dropped from Endermen.
 dj2.graphitedust.desc0=Blow it up to create a Hyper Diamond!
 
-# Baubly Heart Canisters tooltips
+# Baubley Heart Canisters tooltips
 dj2.bhc_red_heart.desc0=§fDrops rarely from all non-boss mobs.
 dj2.bhc_orange_heart.desc0=§fDrops rarely from most boss mobs,
 dj2.bhc_orange_heart.desc1=§fand can be crafted from Withering Souls.
@@ -685,7 +685,7 @@ dj2.dragonfly_wing.desc0=§f- Dragonflies (on Dragonfly Lilypads in
 dj2.dragonfly_wing.desc1=§flarge water bodies within the Submerged Swamp biome)
 dj2.elastic_fibre.desc0=§f- Locusts (in the Elysian Fields and Subterranean Savannah biomes)
 dj2.elastic_fibre.desc1=§f- Punchrooms (in the Fungal Forest biome as an uncommon drop)
-dj2.cabbage_seeds.desc0=§fBreak any tallgrass in Erebus to obtain.
+dj2.cabbage_seeds.desc0=§fBreak any tall grass in Erebus to obtain.
 dj2.cabbage_seeds.desc1=§fSwamp Plants always drop these.
 
 # Agricraft tooltips
@@ -755,7 +755,7 @@ dj2.totempedia.desc0=§c§lWARNING: §r§fRecipes shown may be incorrect.
 dj2.totempedia.desc1=§fAlways refer to JEI when crafting!
 
 # Aether tooltips
-dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod installed, attemting to automate this will cause crashes.
+dj2.aerogel_warning.desc0=§c§lOn servers with the TickProfiler mod installed, attempting to automate this will cause crashes.
 dj2.enchanter.desc0=Operates with significantly increased speed when placed above a Gravitite Block!
 
 # Draconic Evolution tooltips
