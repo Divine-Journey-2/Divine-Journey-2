@@ -87,6 +87,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds a tooltip to Thaumcraft Porous Stone informing of how it can be obtained.
 - Makes the Mantle of Stars quest have the Constellations colored for emphasis.
 - Fixes a large number of typos in the lang files.
+- Implements the serial comma (e.g. `a, b and c` -> `a, b, and c`) in places it was missing to ensure consistency.
 
 ## Texture Transformations:
 
