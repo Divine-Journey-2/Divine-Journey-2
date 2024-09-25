@@ -41,6 +41,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Makes the OpenBlocks Last Stand consider post-armor/potion/enchantment damage for xp reduction instead of pre (Universal Tweaks).
+- Disable the ability to farm Eldritch Autocasters (bug in EnderIO config allows picking them up in Soul Vials).
 
 ## QoL Improvements:
 
