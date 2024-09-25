@@ -8,7 +8,7 @@ hideLines()
 alwaysVisible()
 
 criteria = addCriteria("hasEngineersHammer", "minecraft:inventory_changed")
-criteria.addItem(<immersiveengineering:tool>)
+criteria.addItem(<immersiveengineering:tool:0>)
 
 addRewardFunction("triumph:fireworks")
 addRewardFunction("triumph:02_technology")
