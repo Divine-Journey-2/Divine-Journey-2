@@ -38,6 +38,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes Thaumcraft Augmentation Effect Crystal recipes requiring the full research to be completed instead of only the second stage, which prevents them from ever being obtainable without using the Cheater's Thaumonomicon.
 - Fixes the Bewitchment Blessed Stone being unbreakable after being placed.
 - Fixes a console error where PlusTiC attempted to register modifiers for Constructs Armory.
+- Fixes the Crown of Skies recipe involving a Robit for the Erebus Skip recipe being uncraftable in some GUIs on servers.
 
 ## Balance Adjustments:
 
