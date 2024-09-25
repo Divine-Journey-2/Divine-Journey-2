@@ -89,6 +89,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes a large number of typos in the lang files.
 - Implements the serial comma (e.g. `a, b and c` -> `a, b, and c`) in places it was missing to ensure consistency.
 - Makes the Bewitchment Altar quest accept any Vanilla Carpet instead of just Red, and indicate that the Carpet must be Vanilla.
+- Makes the Enter the Emptiness quest require either of the two prerequisite quests, allowing the Fracture Locator quest to be optional.
 
 ## Texture Transformations:
 

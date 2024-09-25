@@ -9189,6 +9189,7 @@
             "id:8": "thaumicaugmentation:stone",
             "Damage:2": 2
           },
+          "questlogic:8": "OR",
           "name:8": "dj2.quest.db.213.title",
           "desc:8": "dj2.quest.db.213.desc"
         }
