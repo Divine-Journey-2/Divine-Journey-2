@@ -75,6 +75,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds a tooltip to the Extra Utilities 2 Chunk Loading Ward instructing to use FTB Utilities to load chunks.
 - Fixes a typo involving the DivineRPG Skythern dimension being typod as "shythern" for the Excavator.
 - Fixes a handful of places incorrect capitalizing CurseForge.
+- Adjust the GalactiCraft questline description to replace the reference to Empowering with building the Laser Focus Multiblock.
 
 ## Texture Transformations:
 
