@@ -57,6 +57,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Changes the third person view to ignore non-solid blocks (Universal Tweaks).
 - Improves Minecart drops by dropping the combined item instead of breaking apart item (Universal Tweaks).
 - Allows placing Pumpkins and Jack'O'Lanterns without a supporting block and End Crystals without Bedrock or Obsidian (Universal Tweaks).
+- Decrease AbyssalCraft portal cooldown significantly.
 
 ## Text and Quest Updates:
 
