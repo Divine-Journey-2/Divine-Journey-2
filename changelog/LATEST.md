@@ -84,6 +84,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Adds the Tinkers' Construct Materials and You book to the Blank Pattern quest.
 - Adjusted the Laser crafting advantages quest to require a stack of each of the empowered crystals instead of a stack of Elevatium.
 - Adds a quest for the Astral Sorcery Ritual Pedestal, describing all the rituals.
+- Adds a tooltip to Thaumcraft Porous Stone informing of how it can be obtained.
 
 ## Texture Transformations:
 
