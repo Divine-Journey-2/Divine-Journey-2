@@ -70,6 +70,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Allows converting block form of Rotten Flesh and Bonemeal into AbyssalCraft Crystal Shards.
 - Adds Botania Floral Fertilizer to Mystical Flower recipes to the custom Activate Block or Entity JEI Category.
 - Adds Botania Mystical Flower to Tall Mystical Flower recipes to the custom Activate Block or Entity JEI Category.
+- Includes the modpack name (Divine Journey 2) in the crash report, via a FermiumASM feature.
 
 ## Text and Quest Updates:
 
