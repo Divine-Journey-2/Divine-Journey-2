@@ -106,7 +106,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improves the release generation scripts
 - Fixes a bug where "Could not find a changelog" was always printed
 - Fixes a bug where the server changelog was not written properly
-- Fixes a handful of places incorrect capitalizing CurseForge.
+- Fixes a handful of places incorrectly capitalizing CurseForge.
 
 
 ## Miscellaneous Changes:
