@@ -41,6 +41,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fixes the Crown of Skies recipe involving a Robit for the Erebus Skip recipe being uncraftable in some GUIs on servers.
 - Fixes Immersive Engineering Excavator veins not generated in the Twilight Forest - they were instead generating in an unregistered dimension "9".
 - Fixes the Technology Advancement from being completable via obtaining any Immersive Engineering tool instead of specifically the Immersive Engineering Engineers' Hammer.
+- Disables the Extended Vein Mining mode for the Atomic Disassembler, as it could void blocks instead of properly breaking them.
 
 ## Balance Adjustments:
 
