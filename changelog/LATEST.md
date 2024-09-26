@@ -103,10 +103,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
-- Improves the release generation scripts
-- Fixes a bug where "Could not find a changelog" was always printed
-- Fixes a bug where the server changelog was not written properly
+- Improves the release generation scripts.
+- Fixes a bug where "Could not find a changelog" was always printed.
+- Fixes a bug where the server changelog was not written properly.
 - Fixes a handful of places incorrectly capitalizing CurseForge.
+- Fixes a few typos in the build script and similar places.
 
 
 ## Miscellaneous Changes:

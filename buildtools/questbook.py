@@ -49,7 +49,7 @@ uselessProps = {
     "repeat_relative:1": 1,
     "ismain:1": 0,
 
-    # task: retrival
+    # task: retrieval
     "partialMatch:1": 0,
     "autoConsume:1": 0,
     "groupDetect:1": 0,
