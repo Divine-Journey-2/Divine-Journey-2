@@ -306,4 +306,15 @@ recipes.remove(<divinerpg:reyvor_crystal>);
 recipes.remove(<divinerpg:karot_crystal>);
 recipes.remove(<divinerpg:densos_crystal>);
 
+// Serenade Striker
+recipes.remove(<divinerpg:serenade_striker>);
+mods.extendedcrafting.TableCrafting.addShaped(<divinerpg:serenade_striker>,
+[[null,null,null,<projectred-core:resource_item:104>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<projectred-core:resource_item:104>],
+[null,null,null,<bewitchment:cold_iron_ingot>,<contenttweaker:lightning_charge>,<projectred-core:resource_item:104>,null],
+[null,null,null,<bewitchment:cold_iron_ingot>,<projectred-core:resource_item:104>,null,null],
+[null,null,null,<projectred-core:resource_item:104>,null,null,null],
+[null,null,<projectred-core:resource_item:104>,<bewitchment:cold_iron_ingot>,null,null,null],
+[null,<projectred-core:resource_item:104>,<contenttweaker:lightning_charge>,<bewitchment:cold_iron_ingot>,null,null,null],
+[<projectred-core:resource_item:104>,<bewitchment:cold_iron_ingot>,<bewitchment:cold_iron_ingot>,<projectred-core:resource_item:104>,null,null,null]]);
+
 print("ENDING DivineRPG.zs");

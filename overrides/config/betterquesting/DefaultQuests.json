@@ -13138,6 +13138,10 @@
             "0:10": {
               "id:8": "lightningcraft:golf_club_gold",
               "Count:3": 1
+            },
+            "1:10": {
+              "id:8": "divinerpg:serenade_striker",
+              "Count:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"

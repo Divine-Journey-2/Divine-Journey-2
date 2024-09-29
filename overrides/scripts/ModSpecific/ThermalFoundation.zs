@@ -118,6 +118,12 @@ mods.enderio.AlloySmelter.addRecipe(<thermalfoundation:material:136>, [<thermalf
 <ore:blockGlassHardened>.add(<thermalfoundation:glass:3>);
 recipes.removeShapeless(<thermalfoundation:glass:3>, [<*>,<thermalfoundation:glass:3>,<*>,<*>]);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<thermalfoundation:glass:3>, <thermalfoundation:material:67>);
+for i in 0 to 9 {
+  <thermalfoundation:glass>.withDamage(i).addTooltip(game.localize("dj2.hardened_glass.desc0"));
+}
+for i in 0 to 8 {
+    <thermalfoundation:glass_alloy>.withDamage(i).addTooltip(game.localize("dj2.hardened_glass.desc0"));
+}
 
 // Enderium Base
 mods.immersiveengineering.ArcFurnace.addRecipe(<enderio:item_material:39> * 4, <thermalfoundation:material:134>, null, 100, 80, [<thermalfoundation:material:131> * 3, <minecraft:ender_pearl> * 4], "Alloying");

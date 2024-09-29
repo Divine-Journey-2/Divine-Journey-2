@@ -153,6 +153,8 @@ recipes.addShaped(<industrialforegoing:hydrator>, [[<industrialforegoing:plastic
 
 // Wither Builder
 addIFMachineRecipe(<industrialforegoing:wither_builder>, <minecraft:skull:1>, <minecraft:soul_sand>, <industrialforegoing:block_placer>);
+<industrialforegoing:wither_builder>.addTooltip(game.localize("dj2._wither_builder.desc0"));
+<industrialforegoing:wither_builder>.addTooltip(game.localize("dj2._wither_builder.desc1"));
 
 // Fluid Pump
 addIFMachineRecipe(<industrialforegoing:fluid_pump>, <enderio:block_tank:1>, <thermalfoundation:material:26>, <mekanism:machineblock:12>);
