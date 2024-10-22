@@ -331,12 +331,6 @@
       "required": true
     },
     {
-      "slug": "betterfps",
-      "projectID": 229876,
-      "fileID": 2483393,
-      "required": true
-    },
-    {
       "slug": "chameleon",
       "projectID": 230497,
       "fileID": 2450900,
