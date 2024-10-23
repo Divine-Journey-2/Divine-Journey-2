@@ -1,36 +1,36 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_empowered_restonia",
+    "registryName": "laser_focus_actuallyadditions_empowered_void",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "thermalfoundation:material@293",
+            "item": "thermalfoundation:material@290",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "enderio:item_alloy_ingot@3",
+            "item": "enderio:item_material@73",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:brick_block",
+            "item": "minecraft:coal@1",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "roots:infernal_bulb",
+            "item": "minecraft:flint",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "actuallyadditions:item_crystal@0",
+            "item": "actuallyadditions:item_crystal@3",
             "amount": 4
         },
         {
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "actuallyadditions:item_crystal_empowered@0",
+            "item": "actuallyadditions:item_crystal_empowered@3",
             "amount": 4
         }
     ]

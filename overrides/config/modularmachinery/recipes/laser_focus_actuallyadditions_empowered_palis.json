@@ -1,36 +1,36 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_empowered_emeradic",
+    "registryName": "laser_focus_actuallyadditions_empowered_palis",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "enderio:item_material@13",
+            "item": "thermalfoundation:material@259",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:slime_congealed",
+            "item": "minecraft:prismarine_shard",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "roots:spirit_herb",
+            "item": "roots:moonglow_leaf",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:cactus",
+            "item": "enderio:item_material@39",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "actuallyadditions:item_crystal@4",
+            "item": "actuallyadditions:item_crystal@1",
             "amount": 4
         },
         {
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "actuallyadditions:item_crystal_empowered@4",
+            "item": "actuallyadditions:item_crystal_empowered@1",
             "amount": 4
         }
     ]
