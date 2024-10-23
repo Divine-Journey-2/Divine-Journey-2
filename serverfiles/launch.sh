@@ -20,7 +20,7 @@ IFS=$'\n'
 while read -r INPUT; do
     declare ${INPUT//\"} # Strip the double-quote " character from the variable
 done < $FILE
-
+IFS=' '
 echo "Checking java version..."
 echo
 $JAVA_VERSION -version
@@ -33,9 +33,9 @@ sleep 3
 
 echo "Launching the server..."
 echo
-echo "> $JAVA_VERSION  -server -Xms$MIN_RAM -Xmx$MAX_RAM $JAVA_PARAMETERS -jar $FORGE_JAR nogui"
+echo "> $JAVA_VERSION -server -Xms$MIN_RAM -Xmx$MAX_RAM $JAVA_PARAMETERS -jar $FORGE_JAR nogui"
 echo
-$JAVA_VERSION  -server -Xms$MIN_RAM -Xmx$MAX_RAM $JAVA_PARAMETERS -jar $FORGE_JAR nogui
+$JAVA_VERSION -server -Xms$MIN_RAM -Xmx$MAX_RAM $JAVA_PARAMETERS -jar $FORGE_JAR nogui
 
 echo
 echo "- The server has stopped. If it's a crash, please read the output above."

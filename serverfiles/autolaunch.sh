@@ -14,7 +14,7 @@ IFS=$'\n'
 while read -r INPUT; do
     declare ${INPUT//\"} # Strip the double-quote " character from the variable
 done < $FILE
-
+IFS=' '
 echo "Checking java version..."
 echo
 $JAVA_VERSION -version
