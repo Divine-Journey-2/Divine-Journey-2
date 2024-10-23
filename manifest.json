@@ -331,12 +331,6 @@
       "required": true
     },
     {
-      "slug": "betterfps",
-      "projectID": 229876,
-      "fileID": 2483393,
-      "required": true
-    },
-    {
       "slug": "chameleon",
       "projectID": 230497,
       "fileID": 2450900,
@@ -914,23 +908,10 @@
       "required": true
     },
     {
-      "slug": "forgiving-void",
-      "projectID": 271009,
-      "fileID": 2863246,
-      "required": true
-    },
-    {
       "slug": "cofh-world",
       "projectID": 271384,
       "fileID": 2920434,
       "required": true
-    },
-    {
-      "slug": "toast-control",
-      "projectID": 271740,
-      "fileID": 2707353,
-      "required": true,
-      "clientOnly": true
     },
     {
       "slug": "cucumber",
@@ -967,12 +948,6 @@
       "slug": "mysticallib",
       "projectID": 277064,
       "fileID": 3483816,
-      "required": true
-    },
-    {
-      "slug": "foamfix-optimization-mod",
-      "projectID": 278494,
-      "fileID": 3973967,
       "required": true
     },
     {
@@ -1044,12 +1019,6 @@
       "clientOnly": true
     },
     {
-      "slug": "randompatches-forge",
-      "projectID": 285612,
-      "fileID": 3133651,
-      "required": true
-    },
-    {
       "slug": "galacticrafttweaker",
       "projectID": 286116,
       "fileID": 2647978,
@@ -1077,12 +1046,6 @@
       "slug": "tinkers-jei",
       "projectID": 291786,
       "fileID": 2701203,
-      "required": true
-    },
-    {
-      "slug": "vanillafix",
-      "projectID": 292785,
-      "fileID": 2915154,
       "required": true
     },
     {
@@ -1293,12 +1256,6 @@
       "required": true
     },
     {
-      "slug": "dupefix-project",
-      "projectID": 356349,
-      "fileID": 3424173,
-      "required": true
-    },
-    {
       "slug": "spark",
       "projectID": 361579,
       "fileID": 3542217,
@@ -1367,7 +1324,7 @@
     {
       "slug": "mixin-booter",
       "projectID": 419286,
-      "fileID": 4090558,
+      "fileID": 5739618,
       "required": true
     },
     {
@@ -1423,7 +1380,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 4643575,
+      "fileID": 5529764,
       "required": true
     },
     {
@@ -1455,6 +1412,18 @@
       "slug": "serializationisbad",
       "projectID": 896591,
       "fileID": 5187152,
+      "required": true
+    },
+    {
+      "slug": "fermiumbooter",
+      "projectID": 968474,
+      "fileID": 5672830,
+      "required": true
+    },
+    {
+      "slug": "fermiumasm",
+      "projectID": 971247,
+      "fileID": 5346789,
       "required": true
     }
   ],

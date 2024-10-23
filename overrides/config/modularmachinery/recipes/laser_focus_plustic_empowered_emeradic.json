@@ -1,36 +1,36 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_mirion_ingot",
+    "registryName": "laser_focus_plustic_empowered_emeradic",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@0",
+            "item": "enderio:item_material@13",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:ingots@0",
+            "item": "tconstruct:slime_congealed",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@7",
+            "item": "roots:spirit_herb",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@4",
+            "item": "minecraft:cactus",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:glass",
+            "item": "actuallyadditions:item_crystal@4",
             "amount": 4
         },
         {
@@ -46,8 +46,8 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "plustic:mirioningot",
-            "amount": 16
+            "item": "actuallyadditions:item_crystal_empowered@4",
+            "amount": 4
         }
     ]
 }

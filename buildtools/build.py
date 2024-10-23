@@ -234,11 +234,11 @@ def externalDeps(manifest, retries: int):
                     hash = sha256(r.content).hexdigest()
                     if (str(hash) == mod["hash"]):
                         jar.write(r.content)
-                        print("hash succsessful for {}".format(mod["name"]))
+                        print("hash successful for {}".format(mod["name"]))
                         break
                     else:
-                        print("hash unsuccsessful for {}".format(mod["name"]))
-                        print("use", str(hash), "this if it is consistant across runs")
+                        print("hash unsuccessful for {}".format(mod["name"]))
+                        print("use", str(hash), "this if it is consistent across runs")
                         pass
     if counter > 0:
         print(f"downloaded {str(counter)} mods via external dependencies")
@@ -506,7 +506,7 @@ def build(args):
     if (args.download):
         print(f"starting download process at {str(round(time() - start, 2))} seconds")
 
-        # Download any external depenancies defined in the manifest, and add sucessful downloads to the modlist
+        # Download any external dependencies defined in the manifest, and add successful downloads to the modlist
         externalDeps(manifest, args.retries)
         print(f"downloaded external dependencies in {str(round(time() - start, 2))} seconds")
 

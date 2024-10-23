@@ -294,6 +294,9 @@ clear_pool("botania:gaia_guardian_2", "runes");
 // Roots inject clear
 clear_pool("roots:chests/inject", "main");
 
+// Remove Eldritch Autocaster
+clear_pool("thaumicaugmentation:entity/autocaster_eldritch", "autocaster_eldritch");
+
 // Toe of Frog from all the Frogs
 add_entry("quark:entities/frog", "toe", <bewitchment:toe_of_frog>, 1, 2, 0, 0, 100);
 add_entry("mysticalworld:entity/frog", "toe", <bewitchment:toe_of_frog>, 1, 2, 0, 0, 100);

@@ -52,8 +52,10 @@ Modifying it in any other way is not supported.
 ### Java:
 
 To change the version of Java used, change line 2 of `launch_config.ini` from `JAVA_VERSION="java"` to `JAVA_VERSION="C:\direct\path\to\java"` or `JAVA_VERSION="/direct/path/to/java"`.
-Since the path must be wrapped in quotes if it contains any spaces, the path has pre-emptively placed within quotes.
-The file used should be named "java" and not "javaw" - including the "w" will cause the console not to print any text,
+Since the path must be wrapped in quotes if it contains any spaces, the path has preemptively placed within quotes.
+
+The file targeted used should be inside the `bin` folder, and the file name should be `java`.
+While there is also a file called `javaw`, this makes the console not print any text,
 which may lead to incorrect assumptions about the state of the server.
 
 Divine Journey 2 is a forge modpack for 1.12.2.
@@ -95,9 +97,9 @@ Failure to properly do any one of these steps may result in errors.
 
 1. Shut down your server.
 2. Make a backup of your server, in particular the files deleted in step 4, in case things go wrong.
-3. Download the latest server pack files from Curseforge https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files or GitHub https://github.com/Divine-Journey-2/Divine-Journey-2/releases.
+3. Download the latest server pack files from CurseForge https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files or GitHub https://github.com/Divine-Journey-2/Divine-Journey-2/releases.
 4. Delete the `config`, `mods`, `scripts`, and `structures` folders.
-5. Copy those same folders from the server pack downloaded from Curseforge into the server instance.
+5. Copy those same folders from the server pack downloaded from CurseForge into the server instance.
 6. Apply any unique changes (new mods or custom configs) made that were deleted by step 4.
 7. Start your server.
 8. If a block, entity, item, etc. was removed, the server will make a backup before loading the game with those blocks/entities/items removed. This process may take a significant amount of time.

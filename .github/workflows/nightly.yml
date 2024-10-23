@@ -2,7 +2,7 @@ name: Nightly Builds
 
 # Required secrets:
 # GITHUB_TOKEN - access the repo to cancel prior ongoing builds (included by default)
-# CFAPIKEY - accesss token to download mods
+# CFAPIKEY - access token to download mods
 
 on:
   push:

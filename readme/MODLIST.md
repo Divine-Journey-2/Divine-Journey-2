@@ -1,18 +1,18 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 237
+Total Mods: 232
 
 ## Type Key
 
 | Icon          | Count | Type of Mod       | Description                                                                                                              |
 |---------------|------ |-------------------|--------------------------------------------------------------------------------------------------------------------------|
 | :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                    |
-| :toolbox:     | 48    | Utility           | Typically visual or minor improvements                                                                                   |
+| :toolbox:     | 46    | Utility           | Typically visual or minor improvements                                                                                   |
 | :gear:        | 30    | Development       | Basically never interacted with by a player                                                                              |
 | :gem:         | 35    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right            |
-| :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a subtantial part of progression                           |
-| :bug:         |  8    | Bugfix/Performace | Solely fixes one or multiple bugs or performace issues present in Vanilla or another mod                                 |
+| :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                          |
+| :bug:         |  5    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
 | :eyes:        |  4    | Visual            | Improves the visual options of the pack                                                                                  |
 | :world_map:   |  5    | Worldgen          | Changes or improves worldgen                                                                                             |
 | :closed_book: |  3    | Questbook         | Related to the Questbook                                                                                                 |
@@ -20,7 +20,7 @@ Total Mods: 237
 
 ## Modlist
 
-Mods are required on both clientside and serverside unless otherwise noted.
+Mods are required on both client-side and server-side unless otherwise noted.
 
 | Type          | Mod                                                                                                                          | Primary Author                                                                       | Client-Only        |
 |---------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------|
@@ -56,7 +56,6 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :toolbox:     | [Better Builder's Wands](https://www.curseforge.com/minecraft/mc-mods/better-builders-wands)                                 | [Portablejim](https://curseforge.com/members/Portablejim)                            |                    |
 | :closed_book: | [Better Questing - Standard Expansion](https://www.curseforge.com/minecraft/mc-mods/better-questing-standard-expansion)      | [Funwayguy](https://curseforge.com/members/Funwayguy)                                |                    |
 | :closed_book: | [Better Questing](https://www.curseforge.com/minecraft/mc-mods/better-questing)                                              | [Funwayguy](https://curseforge.com/members/Funwayguy)                                |                    |
-| :bug:         | [BetterFps](https://www.curseforge.com/minecraft/mc-mods/betterfps)                                                          | [Guichaguri](https://curseforge.com/members/Guichaguri)                              |                    |
 | :gem:         | [BetterNether](https://www.curseforge.com/minecraft/mc-mods/betternether)                                                    | [paulevs](https://curseforge.com/members/paulevs)                                    |                    |
 | :ring:        | [Enhanced P2P](https://www.curseforge.com/minecraft/mc-mods/enhancedp2p)                                                     | [Cyber](https://curseforge.com/members/cyber)                                        |                    |
 | :gem:         | [Bewitchment (Legacy)](https://www.curseforge.com/minecraft/mc-mods/bewitchment-legacy)                                      | [sunconure11](https://curseforge.com/members/sunconure11)                            |                    |
@@ -95,7 +94,6 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :gear:        | [Divine Journey 2 Addons](https://www.curseforge.com/minecraft/mc-mods/divine-journey-2-addons)                              | [ABadHaiku](https://curseforge.com/members/ABadHaiku)                                |                    |
 | :gem:         | [Draconic Evolution](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution)                                        | [brandon3055](https://curseforge.com/members/brandon3055)                            |                    |
 | :ring:        | [Draconic Additions](https://www.curseforge.com/minecraft/mc-mods/draconicadditions)                                         | [FoxMcloud5655](https://curseforge.com/members/FoxMcloud5655)                        |                    |
-| :bug:         | [DupeFix Project](https://www.curseforge.com/minecraft/mc-mods/dupefix-project)                                              | [Focamacho](https://curseforge.com/members/Focamacho)                                |                    |
 | :ring:        | [Ender IO Endergy](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy)                                            | [tterrag1098](https://curseforge.com/members/tterrag1098)                            |                    |
 | :gem:         | [Ender IO](https://www.curseforge.com/minecraft/mc-mods/ender-io)                                                            | [crazypants_mc_the_second](https://curseforge.com/members/crazypants_mc_the_second)  |                    |
 | :toolbox:     | [Ender Storage 1.8.+](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)                                        | [covers1624](https://curseforge.com/members/covers1624)                              |                    |
@@ -109,8 +107,8 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :ring:        | [Extra CPUs](https://www.curseforge.com/minecraft/mc-mods/extracpus)                                                         | [DamnRelentless](https://curseforge.com/members/DamnRelentless)                      |                    |
 | :diamonds:    | [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)                                            | [ZeroNoRyouki](https://curseforge.com/members/ZeroNoRyouki)                          |                    |
 | :gear:        | [Featured Servers](https://www.curseforge.com/minecraft/mc-mods/featured-servers)                                            | [Jake_Evans](https://curseforge.com/members/Jake_Evans)                              | :white_check_mark: |
-| :bug:         | [FoamFix](https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod)                                             | [asiekierka](https://curseforge.com/members/asiekierka)                              |                    |
-| :toolbox:     | [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)                                                | [BlayTheNinth](https://curseforge.com/members/BlayTheNinth)                          |                    |
+| :bug:         | [FermiumASM](https://www.curseforge.com/minecraft/mc-mods/fermiumasm)                                                        | [fonnymunkey](https://www.curseforge.com/members/fonnymunkey)                        |                    |
+| :toolbox:     | [FermiumBooter](https://www.curseforge.com/minecraft/mc-mods/fermiumbooter)                                                  | [fonnymunkey](https://www.curseforge.com/members/fonnymunkey)                        |                    |
 | :eyes:        | [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers)                          | [Eutropium](https://curseforge.com/members/Eutropium)                                |                    |
 | :toolbox:     | [FTB Backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-forge)                                                | [FTB](https://curseforge.com/members/FTB)                                            |                    |
 | :books:       | [FTB Library](https://www.curseforge.com/minecraft/mc-mods/ftb-library-legacy-forge)                                         | [FTB](https://curseforge.com/members/FTB)                                            |                    |
@@ -193,7 +191,6 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :gem:         | [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte)                                                            | [SinKillerJ](https://curseforge.com/members/SinKillerJ)                              |                    |
 | :diamonds:    | [QuantumFlux](https://www.curseforge.com/minecraft/mc-mods/quantumflux)                                                      | [FantasyTeddy](https://curseforge.com/members/FantasyTeddy)                          |                    |
 | :diamonds:    | [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)                                                                  | [Vazkii](https://curseforge.com/members/Vazkii)                                      |                    |
-| :toolbox:     | [RandomPatches](https://www.curseforge.com/minecraft/mc-mods/randompatches-forge)                                            | [TheRandomLabs](https://curseforge.com/members/TheRandomLabs)                        |                    |
 | :books:       | [Reborn Core](https://www.curseforge.com/minecraft/mc-mods/reborncore)                                                       | [modmuss50](https://curseforge.com/members/modmuss50)                                |                    |
 | :gear:        | [Recurrent Complex](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex)                                          | [Ivorforce](https://curseforge.com/members/Ivorforce)                                |                    |
 | :books:       | [Redstone Flux](https://www.curseforge.com/minecraft/mc-mods/redstone-flux)                                                  | [TeamCoFH](https://curseforge.com/members/TeamCoFH)                                  |                    |
@@ -235,7 +232,6 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :ring:        | [Tinker's JEI](https://www.curseforge.com/minecraft/mc-mods/tinkers-jei)                                                     | [possible_triangle](https://curseforge.com/members/possible_triangle)                |                    |
 | :gear:        | [Tips](https://www.curseforge.com/minecraft/mc-mods/tips)                                                                    | [DarkhaxDev](https://curseforge.com/members/DarkhaxDev)                              | :white_check_mark: |
 | :toolbox:     | [TipTheScales](https://www.curseforge.com/minecraft/mc-mods/tipthescales)                                                    | [Jaredlll08](https://curseforge.com/members/Jaredlll08)                              | :white_check_mark: |
-| :toolbox:     | [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)                                                  | [Shadows_of_Fire](https://curseforge.com/members/Shadows_of_Fire)                    | :white_check_mark: |
 | :toolbox:     | [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2)                                        | [M4thG33k](https://curseforge.com/members/M4thG33k)                                  |                    |
 | :ring:        | [Too Many Efficiency Losses](https://www.curseforge.com/minecraft/mc-mods/too-many-efficiency-losses)                        | [ItsPonks](https://curseforge.com/members/ItsPonks)                                  |                    |
 | :gear:        | [Tool Progression](https://www.curseforge.com/minecraft/mc-mods/tool-progression)                                            | [tyra314](https://curseforge.com/members/tyra314)                                    |                    |
@@ -249,7 +245,6 @@ Mods are required on both clientside and serverside unless otherwise noted.
 | :books:       | [UniDict](https://www.curseforge.com/minecraft/mc-mods/unidict)                                                              | [WanionCane](https://curseforge.com/members/WanionCane)                              |                    |
 | :toolbox:     | [Universal Tweaks](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)                                            | [ACGaming56](https://curseforge.com/members/ACGaming56)                              |                    |
 | :books:       | [ValkyrieLib](https://www.curseforge.com/minecraft/mc-mods/valkyrielib)                                                      | [ValkyrieofNight](https://curseforge.com/members/ValkyrieofNight)                    |                    |
-| :bug:         | [VanillaFix](https://www.curseforge.com/minecraft/mc-mods/vanillafix)                                                        | [Runemoro](https://curseforge.com/members/Runemoro)                                  |                    |
 | :gear:        | [VillagerTradingBan](https://www.curseforge.com/minecraft/mc-mods/villagertradingban)                                        | [modmuss50](https://curseforge.com/members/modmuss50)                                |                    |
 | :toolbox:     | [Waila Harvestability](https://www.curseforge.com/minecraft/mc-mods/waila-harvestability)                                    | [squeek502](https://curseforge.com/members/squeek502)                                | :white_check_mark: |
 | :books:       | [WanionLib](https://www.curseforge.com/minecraft/mc-mods/wanionlib)                                                          | [WanionCane](https://curseforge.com/members/WanionCane)                              |                    |

@@ -184,6 +184,10 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "T
 <thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc5"));
 <thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc6"));
 
+// Porous Stone
+<thaumcraft:stone_porous>.addTooltip(game.localize("dj2.porous_stone.desc0"));
+<thaumcraft:stone_porous>.addTooltip(game.localize("dj2.porous_stone.desc1"));
+
 // Thaumium Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <thaumcraft:ingot:2>, [<aspect:praecantatio> * 10,<aspect:metallum> * 10,<aspect:alkimia> * 10,<aspect:exanimis> * 10]);

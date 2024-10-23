@@ -11,7 +11,7 @@ body:
     id: modpack-version
     attributes:
       label: Modpack version
-      description: If you are not using the latest version, make sure that the request has not already been fufilled.
+      description: If you are not using the latest version, make sure that the request has not already been fulfilled.
       placeholder: "Example: 2.X.X"
     validations:
       required: true
@@ -42,7 +42,7 @@ body:
     id: crash-location
     attributes:
       label: When did the crash happen?
-      description: During loadup (at which phase?) / when entering the world / when joining the server / when placing a certain block / ...
+      description: During startup (at which phase?) / when entering the world / when joining the server / when placing a certain block / ...
     validations:
       required: true
   - type: textarea

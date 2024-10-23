@@ -1,8 +1,8 @@
 # Commands
-commands.curseforge.usage=在聊天栏中发送一条前往 Curseforge 页面的链接。
+commands.curseforge.usage=在聊天栏中发送一条前往 CurseForge 页面的链接。
 commands.discord.usage=在聊天栏中发送一条前往 Discord 页面的链接。
 commands.issues.usage=在聊天栏中发送一条前往问题汇报页面的链接。
-commands.curseforge.text=点击此处打开 DJ2 的 Curseforge 页面
+commands.curseforge.text=点击此处打开 DJ2 的 CurseForge 页面
 commands.discord.text=点击此处加入 Discord 频道
 commands.issues.text=点击此处汇报 Bug 或问题
 
@@ -71,7 +71,7 @@ dj2.excavator.dimension.erebus=混沌之地
 dj2.excavator.dimension.eden=伊甸
 dj2.excavator.dimension.wildwood=原始森林
 dj2.excavator.dimension.apalachia=附魔山脉
-dj2.excavator.dimension.shythern=空境
+dj2.excavator.dimension.skythern=空境
 dj2.excavator.dimension.mortum=死域
 
 # Roots Block Conversion JEI category
@@ -109,7 +109,7 @@ dj2.crown_of_skies.desc0=§c§l对天境传送门方块右击以获得进入权�
 dj2.crown_of_skies.desc1=§c§l警告：此操作将消耗该物品！
 dj2.crown_of_skies.desc2=§r§l可合成复制以供队伍中其他成员使用！
 dj2.crown_of_skies.desc3=§r合成时不消耗天空之冠。
-dj2.crown_of_skies.robit.desc0=由机器人代劳制作。
+dj2.crown_of_skies.robit.desc0=§5§o由机器人代劳制作。
 dj2.golder_molder_folder.desc0=§4§o起儿来儿就儿是儿这儿一儿出儿！
 dj2.golder_molder_folder.desc1=§r§o可使用 16 次！
 dj2.golder_molder_folder.desc2=§c常规合成不会消耗该物品。
@@ -399,7 +399,7 @@ dj2.upgrade_enderio_armor.desc0=§6合成时保留魔咒和升级。
 # Just Enough Calculation tooltips
 dj2.item_calculator.desc0=§c§l警告：§r§f计算中若包含特定机器
 dj2.item_calculator.desc1=§f将会导致游戏崩溃！
-dj2.item_calculator.desc2=§f目前为止，只能确定 
+dj2.item_calculator.desc2=§f目前为止，只能确定
 dj2.item_calculator.desc3=§fLE 灌注器会导致崩溃，
 dj2.item_calculator.desc4=§f可能还有更多尚未发现。
 dj2.item_calculator.desc5=§c§l小心使用！

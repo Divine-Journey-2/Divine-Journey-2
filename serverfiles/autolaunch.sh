@@ -14,12 +14,14 @@ IFS=$'\n'
 while read -r INPUT; do
     declare ${INPUT//\"} # Strip the double-quote " character from the variable
 done < $FILE
-
+IFS=' '
 echo "Checking java version..."
 echo
 $JAVA_VERSION -version
 echo
 echo "The expected java version is 1.8. Not higher, not lower."
+echo
+echo "To change the values used, edit the launch_config.ini file."
 echo
 sleep 3
 
