@@ -1,36 +1,36 @@
 {
     "machine": "laser_focus",
-    "registryName": "laser_focus_plustic_empowered_diamatine",
+    "registryName": "laser_focus_actuallyadditions_empowered_emeradic",
     "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "thermalfoundation:material@262",
+            "item": "enderio:item_material@13",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "enderio:item_alloy_endergy_ingot@6",
+            "item": "tconstruct:slime_congealed",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "roots:cloud_berry",
+            "item": "roots:spirit_herb",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:clay",
+            "item": "minecraft:cactus",
             "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "actuallyadditions:item_crystal@2",
+            "item": "actuallyadditions:item_crystal@4",
             "amount": 4
         },
         {
@@ -46,7 +46,7 @@
         {
             "type": "item",
             "io-type": "output",
-            "item": "actuallyadditions:item_crystal_empowered@2",
+            "item": "actuallyadditions:item_crystal_empowered@4",
             "amount": 4
         }
     ]
