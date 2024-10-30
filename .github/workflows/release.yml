@@ -90,7 +90,11 @@ jobs:
 
       - name: "Get server changelog"
         id: server-changelog
-        run: echo "server_changelog=$(cat changelog/SERVER_UPDATE.md)" >> $GITHUB_OUTPUT
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "server_changelog<<$EOF" >> $GITHUB_OUTPUT
+          echo "$(cat changelog/SERVER_UPDATE.md)" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
 
       # Create zip files for the Client and Server after downloading the required mods
       - name: "Build everything"
