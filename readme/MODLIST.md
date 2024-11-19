@@ -12,7 +12,7 @@ Total Mods: 232
 | :gem:         | 35    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right            |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                          |
-| :bug:         |  5    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
+| :bug:         |  6    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
 | :eyes:        |  4    | Visual            | Improves the visual options of the pack                                                                                  |
 | :world_map:   |  5    | Worldgen          | Changes or improves worldgen                                                                                             |
 | :closed_book: |  3    | Questbook         | Related to the Questbook                                                                                                 |
@@ -246,6 +246,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :toolbox:     | [Universal Tweaks](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)                                            | [ACGaming56](https://curseforge.com/members/ACGaming56)                              |                    |
 | :books:       | [ValkyrieLib](https://www.curseforge.com/minecraft/mc-mods/valkyrielib)                                                      | [ValkyrieofNight](https://curseforge.com/members/ValkyrieofNight)                    |                    |
 | :gear:        | [VillagerTradingBan](https://www.curseforge.com/minecraft/mc-mods/villagertradingban)                                        | [modmuss50](https://curseforge.com/members/modmuss50)                                |                    |
+| :bug:         | [VintageFix](https://www.curseforge.com/minecraft/mc-mods/vintagefix)                                                        | [embeddedt](https://curseforge.com/members/embeddedt)                                |                    |
 | :toolbox:     | [Waila Harvestability](https://www.curseforge.com/minecraft/mc-mods/waila-harvestability)                                    | [squeek502](https://curseforge.com/members/squeek502)                                | :white_check_mark: |
 | :books:       | [WanionLib](https://www.curseforge.com/minecraft/mc-mods/wanionlib)                                                          | [WanionCane](https://curseforge.com/members/WanionCane)                              |                    |
 | :ring:        | [Wasaila](https://www.curseforge.com/minecraft/mc-mods/wasaila)                                                              | [Mrbysco](https://curseforge.com/members/Mrbysco)                                    |                    |

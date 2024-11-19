@@ -3,11 +3,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
-
+- Add VintageFix 0.5.1
 
 ## Bugfixes:
 
-
+- Fix the server sometimes freezing on shutdown instead of properly shutting down (VintageFix).
 
 ## Balance Adjustments:
 
@@ -15,7 +15,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-
+- Improve rendering performance and memory usage via a number of optimizations (VintageFix).
+- Cache the entry points of mod jars (VintageFix).
 
 ## Text and Quest Updates:
 
