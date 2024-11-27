@@ -7,7 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-
+- Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
 
 ## Balance Adjustments:
 
@@ -27,6 +27,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
-
+- Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
 
 ## Miscellaneous Changes:

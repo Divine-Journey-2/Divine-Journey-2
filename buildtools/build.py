@@ -105,12 +105,15 @@ symLinkDirs = [
     "structures"
 ]
 # Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
-filesToUpdateVersion = [
+filesToUpdateVersionClient = [
+    "manifest.json",
+    "overrides/config/CustomMainMenu/mainmenu.json",
+    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
+]
+filesToUpdateVersionServer = [
     "manifest.json",
     "config/CustomMainMenu/mainmenu.json",
     "config/mputils/addons/mpbasic/mpbasic.cfg"
-    "overrides/config/CustomMainMenu/mainmenu.json",
-    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
 ]
 
 def print_argument_settings(args):
@@ -321,10 +324,10 @@ def getPreReleaseName() -> str:
     return ""
 
 
-def convertPackVersion(location: str, version: str):
+def convertPackVersion(root: str, version: str, locations: list):
     """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
-    for target in filesToUpdateVersion:
-        file = f"{location}/{target}"
+    for target in locations:
+        file = f"{root}/{target}"
         if os.path.isfile(file) and os.path.exists(file):
             f = open(file, "r")
             filedata = f.read()
@@ -529,12 +532,12 @@ def build(args):
     # Copy required files to the client instance
     if (args.client):
         copyClient()
-        convertPackVersion(client, version)
+        convertPackVersion(client, version, filesToUpdateVersionClient)
 
     # Copy required files to the server instance
     if (args.server):
         copyServer(manifest)
-        convertPackVersion(server, version)
+        convertPackVersion(server, version, filesToUpdateVersionServer)
 
     if (args.zip):
         # Get the standard name of the pack
