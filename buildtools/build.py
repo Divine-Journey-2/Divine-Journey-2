@@ -477,6 +477,11 @@ def updateMMCInstance(instancePath: str):
     print("your instance is now linked to the git repo")
 
 
+def printTime(start: int, description: str):
+    """Print the time since the start for the given task to be accomplished"""
+    print(f"{description} {str(round(time() - start, 2))} seconds")
+
+
 def build(args):
     """Build client, server, and with options for more"""
 
@@ -507,24 +512,24 @@ def build(args):
     createBaseDir()
 
     if (args.download):
-        print(f"starting download process at {str(round(time() - start, 2))} seconds")
+        printTime(start, "starting download process at")
 
         # Download any external dependencies defined in the manifest, and add successful downloads to the modlist
         externalDeps(manifest, args.retries)
-        print(f"downloaded external dependencies in {str(round(time() - start, 2))} seconds")
+        printTime(start, "downloaded external dependencies in")
 
         # Create modlist
         generateModlist(manifest, args.key, modlistServer, modlistClient, args.retries)
-        print(f"generated a modlist to download in {str(round(time() - start, 2))} seconds")
+        printTime(start, "generated a modlist to download in")
 
         # Download mods
         downloadModList(modlistServer, modlistClient, args.retries)
-        print(f"downloaded the modlist in {str(round(time() - start, 2))} seconds")
+        printTime(start, "downloaded the modlist in")
 
     # Download and install Forge and its libraries
     if (args.server):
         forgeInstaller(manifest)
-        print(f"installed the forge installer in {str(round(time() - start, 2))} seconds")
+        printTime(start, "installed the forge installer in")
 
     # Get the modpack version from git tags if not an argument
     version = getGitTagVersion() if args.version == None else args.version
@@ -559,7 +564,7 @@ def build(args):
     if (args.dev):
         updateMMCInstance(args.dev)
 
-    print(f"done in {str(round(time() - start, 2))} seconds")
+    printTime(start, "done in")
 
 
 if (__name__ == "__main__"):
