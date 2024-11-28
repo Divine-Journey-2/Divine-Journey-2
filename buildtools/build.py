@@ -116,7 +116,7 @@ filesToUpdateVersionServer = [
     "config/mputils/addons/mpbasic/mpbasic.cfg"
 ]
 
-def print_argument_settings(args):
+def print_argument_settings(args: dict):
     """Prints what the build command will do"""
     print("starting the build process with the following settings")
     print(f"name: {args.name}")
@@ -223,7 +223,7 @@ def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient
     print("modlist compiled")
 
 
-def externalDeps(manifest, retries: int):
+def externalDeps(manifest: dict, retries: int):
     """If we have external dependencies, try to download them"""
     counter = 0
 
@@ -343,21 +343,21 @@ def convertPackVersion(root: str, version: str, locations: list):
                 new.write(newdata)
 
 
-def getForgeVersion(manifest):
+def getForgeVersion(manifest: dict):
     """Get the Forge version"""
     forgeVer = manifest["minecraft"]["modLoaders"][0]["id"].split("-")[-1]
     mcVer = manifest["minecraft"]["version"]
     return f"forge-{mcVer}-{forgeVer}.jar"
 
 
-def getForgeInstaller(manifest):
+def getForgeInstaller(manifest: dict):
     """Get the URL to the Forge installer"""
     forgeVer = manifest["minecraft"]["modLoaders"][0]["id"].split("-")[-1]
     mcVer = manifest["minecraft"]["version"]
     return f"https://maven.minecraftforge.net/net/minecraftforge/forge/{mcVer}-{forgeVer}/forge-{mcVer}-{forgeVer}-installer.jar"
 
 
-def forgeInstaller(manifest):
+def forgeInstaller(manifest: dict):
     """Download the Forge Installer and install it"""
     with open(f"{cache}/forge-installer.jar", "w+b") as jar:
         url = getForgeInstaller(manifest)
@@ -412,7 +412,7 @@ def copyClient():
             shutil.rmtree(location, ignore_errors=True)
 
 
-def copyServer(manifest):
+def copyServer(manifest: dict):
     """Copy required contents to server instance, and then delete designated files"""
     shutil.copy(f"{basePath}/manifest.json", f"{server}/manifest.json")
     shutil.copy(f"{basePath}/LICENSE", f"{server}/LICENSE")
@@ -486,7 +486,7 @@ def printTime(start: int, description: str):
     print(f"{description} {str(round(time() - start, 2))} seconds")
 
 
-def build(args):
+def build(args: dict):
     """Build client, server, and with options for more"""
 
     print_argument_settings(args)
