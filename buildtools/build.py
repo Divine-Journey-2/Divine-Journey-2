@@ -481,6 +481,25 @@ def updateMMCInstance(instancePath: str):
     print("your instance is now linked to the git repo")
 
 
+def zipPack(version: str, args: dict):
+    """Create a zip for the pack for the client and server, if requested"""
+    # Get the standard name of the pack
+    standardName = getStandardName(args.name, version)
+
+    # Get the date and sha of the most recent git commit
+    preReleaseName = getPreReleaseName() if args.prerelease else ""
+
+    archive_name = f"{standardName}_{preReleaseName}" if preReleaseName else standardName
+
+    # Zip the client
+    if (args.client):
+        buildClient(archive_name)
+
+    # Zip the server
+    if (args.server):
+        buildServer(f"{archive_name}_Server_Pack")
+
+
 def printTime(start: int, description: str):
     """Print the time since the start for the given task to be accomplished"""
     print(f"{description} {str(round(time() - start, 2))} seconds")
@@ -552,21 +571,7 @@ def build(args: dict):
         convertPackVersion(server, version, filesToUpdateVersionServer)
 
     if (args.zip):
-        # Get the standard name of the pack
-        standardName = getStandardName(args.name, version)
-
-        # Get the date and sha of the most recent git commit
-        preReleaseName = getPreReleaseName() if args.prerelease else ""
-
-        archive_name = f"{standardName}_{preReleaseName}" if preReleaseName else standardName
-
-        # Zip the client
-        if (args.client):
-            buildClient(archive_name)
-
-        # Zip the server
-        if (args.server):
-            buildServer(f"{archive_name}_Server_Pack")
+        zipPack(version, args)
 
     if (args.dev):
         updateMMCInstance(args.dev)
