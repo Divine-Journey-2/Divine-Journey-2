@@ -130,6 +130,18 @@ def print_argument_settings(args):
     print(f"deleting prior files: {args.wipe}")
 
 
+def getApiKey(key: str) -> str:
+    """Return the CurseForge API key"""
+    if (key == None):
+        key = os.getenv("CFAPIKEY")
+
+    if (key == None):
+        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
+            key = file.readline().replace("\n", "")
+
+    return key
+
+
 def createBaseDir():
     """Create the client, server, cache, and mods directory"""
     os.makedirs(client, exist_ok=True)
@@ -188,14 +200,6 @@ def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient
     print("getting the download url of all mods")
 
     failedModDownload = []
-
-    # Curseforge api key
-    if (key == None):
-        os.getenv("CFAPIKEY")
-
-    if (key == None):
-        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
-            key = file.readline().replace("\n", "")
 
     access = requests.Session()
     access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
@@ -496,6 +500,9 @@ def build(args):
         print("you must specify either client, server, or dev")
         return
 
+    # Curseforge api key
+    apiKey = getApiKey(args.key)
+
     # Read the manifest
     with open(f"{basePath}/manifest.json", "r") as file:
         manifest = json.load(file)
@@ -519,7 +526,7 @@ def build(args):
         printTime(start, "downloaded external dependencies in")
 
         # Create modlist
-        generateModlist(manifest, args.key, modlistServer, modlistClient, args.retries)
+        generateModlist(manifest, apiKey, modlistServer, modlistClient, args.retries)
         printTime(start, "generated a modlist to download in")
 
         # Download mods
