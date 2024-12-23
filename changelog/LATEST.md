@@ -19,7 +19,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+Info that AbyssalCraft Statues need sky access to work in quest "Gotta catch em all #1496".
 
 ## Texture Transformations:
 
