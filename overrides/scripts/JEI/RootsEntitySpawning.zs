@@ -120,4 +120,16 @@ createSpawner(<entity:minecraft:ghast>, [<divinerpg:ghast_pumpkin>, <minecraft:f
 // Twilight Forest Ghastlings
 createSpawner(<entity:twilightforest:mini_ghast>, [<divinerpg:ghast_pumpkin>, <minecraft:fire_charge>, <appliedenergistics2:tiny_tnt>]);
 
+// Lizard
+createSpawner(<entity:bewitchment:lizard>, [<ore:tallgrass>, <minecraft:spider_eye>]);
+
+// Druden
+createSpawner(<entity:bewitchment:druden>, [<minecraft:sapling>, <minecraft:sapling:1>, <minecraft:sapling:2>, <minecraft:sapling:3>, <minecraft:sapling:4>, <minecraft:sapling:5>]);
+
+// Saguaro Worm
+createSpawner(<entity:divinerpg:saguaro_worm>, [<minecraft:cactus>, <minecraft:sand>]);
+
+// Cyclops
+createSpawner(<entity:divinerpg:cyclops>, [<minecraft:ender_eye>, <minecraft:gold_ingot>, <totemic:buffalo_items>]);
+
 print("ENDING RootsEntitySpawning.zs");
