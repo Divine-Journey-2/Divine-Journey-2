@@ -7034,6 +7034,10 @@
             "2:10": {
               "id:8": "bewitchment:acacia_resin",
               "Count:3": 2
+            },
+            "3:10": {
+              "id:8": "bewitchment:cloudy_oil",
+              "Count:3": 2
             }
           },
           "taskID:8": "bq_standard:retrieval"
