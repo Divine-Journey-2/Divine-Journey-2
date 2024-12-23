@@ -11,7 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Balance Adjustments:
 
-
+Changed the Water Mill nerf from 25% to 50% to make them at all viable.
 
 ## QoL Improvements:
 
