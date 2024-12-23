@@ -1,0 +1,47 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_contenttweaker_elevatium_ingot",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_solidified_experience",
+            "amount": 16
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:empowered_glod_crystal",
+            "amount": 12
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_crystal_empowered@2",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_crystal_empowered@4",
+            "amount": 4
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 320000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:ingot_of_elevation",
+            "amount": 64
+        }
+    ]
+}
