@@ -19,7 +19,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+Corrected and added info in the quest "Yet another Altar! Yay! #143".
 
 ## Texture Transformations:
 
