@@ -11333,10 +11333,6 @@
             "0:10": {
               "id:8": "lightningcraft:wireless_block",
               "Count:3": 1
-            },
-            "1:10": {
-              "id:8": "lightningcraft:wireless_marker",
-              "Count:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -11349,10 +11345,6 @@
               "id:8": "lightningcraft:wireless_block",
               "Count:3": 1,
               "Damage:2": 3
-            },
-            "1:10": {
-              "id:8": "lightningcraft:wireless_marker",
-              "Count:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"
