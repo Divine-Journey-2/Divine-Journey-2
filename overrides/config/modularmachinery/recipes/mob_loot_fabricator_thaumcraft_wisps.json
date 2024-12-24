@@ -22,8 +22,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "aer"
+                        "key": "aer",
+                        "amount": "1"
                     }
                 ]
             },
@@ -36,8 +36,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "terra"
+                        "key": "terra",
+                        "amount": "1"
                     }
                 ]
             },
@@ -50,8 +50,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "ignis"
+                        "key": "ignis",
+                        "amount": "1"
                     }
                 ]
             },
@@ -64,8 +64,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "aqua"
+                        "key": "aqua",
+                        "amount": "1"
                     }
                 ]
             },
@@ -78,8 +78,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "ordo"
+                        "key": "ordo",
+                        "amount": "1"
                     }
                 ]
             },
@@ -92,8 +92,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "perditio"
+                        "key": "perditio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -106,8 +106,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "vacuos"
+                        "key": "vacuos",
+                        "amount": "1"
                     }
                 ]
             },
@@ -120,8 +120,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "lux"
+                        "key": "lux",
+                        "amount": "1"
                     }
                 ]
             },
@@ -134,8 +134,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "motus"
+                        "key": "motus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -148,8 +148,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "gelum"
+                        "key": "gelum",
+                        "amount": "1"
                     }
                 ]
             },
@@ -162,8 +162,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "vitreus"
+                        "key": "vitreus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -176,8 +176,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "metallum"
+                        "key": "metallum",
+                        "amount": "1"
                     }
                 ]
             },
@@ -190,8 +190,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "victus"
+                        "key": "victus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -204,8 +204,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "mortuus"
+                        "key": "mortuus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -218,8 +218,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "potentia"
+                        "key": "potentia",
+                        "amount": "1"
                     }
                 ]
             },
@@ -232,8 +232,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "permutatio"
+                        "key": "permutatio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -246,8 +246,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "praecantatio"
+                        "key": "praecantatio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -260,8 +260,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "auram"
+                        "key": "auram",
+                        "amount": "1"
                     }
                 ]
             },
@@ -274,8 +274,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "alkimia"
+                        "key": "alkimia",
+                        "amount": "1"
                     }
                 ]
             },
@@ -288,8 +288,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "vitium"
+                        "key": "vitium",
+                        "amount": "1"
                     }
                 ]
             },
@@ -302,8 +302,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "tenebrae"
+                        "key": "tenebrae",
+                        "amount": "1"
                     }
                 ]
             },
@@ -316,8 +316,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "alienis"
+                        "key": "alienis",
+                        "amount": "1"
                     }
                 ]
             },
@@ -330,8 +330,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "volatus"
+                        "key": "volatus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -344,8 +344,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "herba"
+                        "key": "herba",
+                        "amount": "1"
                     }
                 ]
             },
@@ -358,8 +358,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "instrumentum"
+                        "key": "instrumentum",
+                        "amount": "1"
                     }
                 ]
             },
@@ -372,8 +372,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "fabrico"
+                        "key": "fabrico",
+                        "amount": "1"
                     }
                 ]
             },
@@ -386,8 +386,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "machina"
+                        "key": "machina",
+                        "amount": "1"
                     }
                 ]
             },
@@ -400,8 +400,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "vinculum"
+                        "key": "vinculum",
+                        "amount": "1"
                     }
                 ]
             },
@@ -414,8 +414,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "spiritus"
+                        "key": "spiritus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -428,8 +428,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "cognitio"
+                        "key": "cognitio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -442,8 +442,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "sensus"
+                        "key": "sensus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -456,8 +456,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "aversio"
+                        "key": "aversio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -470,8 +470,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "praemunio"
+                        "key": "praemunio",
+                        "amount": "1"
                     }
                 ]
             },
@@ -484,8 +484,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "desiderium"
+                        "key": "desiderium",
+                        "amount": "1"
                     }
                 ]
             },
@@ -498,8 +498,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "exanimis"
+                        "key": "exanimis",
+                        "amount": "1"
                     }
                 ]
             },
@@ -512,8 +512,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "bestia"
+                        "key": "bestia",
+                        "amount": "1"
                     }
                 ]
             },
@@ -526,8 +526,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "humanus"
+                        "key": "humanus",
+                        "amount": "1"
                     }
                 ]
             },
@@ -540,8 +540,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "sol"
+                        "key": "sol",
+                        "amount": "1"
                     }
                 ]
             },
@@ -554,8 +554,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "luna"
+                        "key": "luna",
+                        "amount": "1"
                     }
                 ]
             },
@@ -568,8 +568,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "stellae"
+                        "key": "stellae",
+                        "amount": "1"
                     }
                 ]
             },
@@ -582,8 +582,8 @@
             "nbt": {
                 "Aspects": [
                     {
-                        "amount": "1",
-                        "key": "diabolus"
+                        "key": "diabolus",
+                        "amount": "1"
                     }
                 ]
             },
