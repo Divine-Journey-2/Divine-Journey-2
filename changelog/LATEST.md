@@ -15,7 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-
+Added the missing block in the Laser Focus multiblock.
 
 ## Text and Quest Updates:
 

@@ -803,6 +803,14 @@
             ]
         },
         {
+            "x": 0,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "contenttweaker:portion_of_the_sun@0"
+            ]
+        },
+        {
             "x": -1,
             "y": 3,
             "z": 7,
