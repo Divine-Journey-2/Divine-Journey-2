@@ -19,7 +19,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+Added missing Botania multiblock items in quest requirements and added more info to those quests and for the Lexica Botania.
 
 ## Texture Transformations:
 
