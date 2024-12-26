@@ -36,6 +36,10 @@ for ore in <ore:oreNaturalAluminum>.items {
     mods.bloodmagic.AlchemyTable.removeRecipe([ore, <bloodmagic:cutting_fluid>]);
 }
 
+// Remove BM Basic Cutting Fluid
+mods.bloodmagic.AlchemyTable.removeRecipe([<thermalfoundation:material:768>,<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:sugar>,<bloodmagic:component:22>,<minecraft:potion>.withTag({Potion:"minecraft:water"})]);
+mods.jei.JEI.removeAndHide(<bloodmagic:cutting_fluid>);
+
 // Blood Altar
 recipes.remove(<bloodmagic:altar>);
 mods.extendedcrafting.TableCrafting.addShaped(<bloodmagic:altar>,
