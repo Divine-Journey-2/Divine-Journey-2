@@ -15,7 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-Config changes:
+- Config changes:
 - Disabled the special tree generation to remove the need for checkboard Sapling patterns and Fences in Acacia trees.
 - Added the Astral Sorcery Constellations to the Void dimension.
 - Disabled the fireworks on new years which cause massive FPS lag.
