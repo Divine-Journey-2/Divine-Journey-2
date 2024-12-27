@@ -11,7 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Balance Adjustments:
 
-Changed the Empowered Crystal Bundle recipe in the Laser Focus to an Elevatium recipe.
+- Changed the Empowered Crystal Bundle recipe in the Laser Focus to an Elevatium recipe.
 
 ## QoL Improvements:
 

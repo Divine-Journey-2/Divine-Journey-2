@@ -7,25 +7,25 @@
             "type": "item",
             "io-type": "input",
             "item": "actuallyadditions:item_solidified_experience",
-            "amount": 16
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "contenttweaker:empowered_glod_crystal",
-            "amount": 12
+            "amount": 3
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "actuallyadditions:item_crystal_empowered@2",
-            "amount": 4
+            "amount": 1
         },
         {
             "type": "item",
             "io-type": "input",
             "item": "actuallyadditions:item_crystal_empowered@4",
-            "amount": 4
+            "amount": 1
         },
         {
             "type": "energy",
@@ -41,7 +41,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:ingot_of_elevation",
-            "amount": 64
+            "amount": 16
         }
     ]
 }
