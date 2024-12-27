@@ -1601,6 +1601,10 @@ mods.extendedcrafting.TableCrafting.addShaped(<contenttweaker:corruption_core>,
 [<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:death_core>,<contenttweaker:corrupted_draconium_ingot>],
 [<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>,<contenttweaker:corrupted_draconium_ingot>]]);
 
+// Custom Basic Cutting Fluid
+mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:basic_cutting_fluid>,
+[<thermalfoundation:material:768>,<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:sugar>,<bloodmagic:component:22>,<minecraft:potion>.withTag({Potion:"minecraft:water"})], 1000, 400, 1);
+
 // Essence of Life
 mods.avaritia.Compressor.add("essence_of_life", <contenttweaker:essence_of_life>, 100, <contenttweaker:condensed_vis_crystal_victus>, true);
 

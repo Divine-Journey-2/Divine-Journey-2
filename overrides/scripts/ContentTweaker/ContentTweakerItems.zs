@@ -1529,5 +1529,8 @@ var industrial_grade_graphite_dust = VanillaFactory.createItem("industrial_grade
 industrial_grade_graphite_dust.register();
 var redstone_inlay_package = VanillaFactory.createItem("redstone_inlay_package");
 redstone_inlay_package.register();
+var basic_cutting_fluid = VanillaFactory.createItem("basic_cutting_fluid");
+basic_cutting_fluid.maxStackSize = 64;
+basic_cutting_fluid.register();
 
 print("ENDING ContentTweakerItems.zs");
