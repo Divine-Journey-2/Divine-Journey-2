@@ -72,12 +72,12 @@ recipes.addShaped(<thermalfoundation:upgrade:1>, [[<contenttweaker:fluxed_electr
 // Signalum Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade:2>, 150, 16, 54);
 recipes.remove(<thermalfoundation:upgrade:2>);
-recipes.addShaped(<thermalfoundation:upgrade:2>, [[<thermalfoundation:material:327>,<thermalfoundation:material:327>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<thermalfoundation:storage_alloy:5>,<thermalfoundation:material:327>],[<thermalfoundation:material:514>,<thermalfoundation:material:514>,<thermalfoundation:material:514>]]);
+recipes.addShaped(<thermalfoundation:upgrade:2>, [[<extendedcrafting:material:2>,<extendedcrafting:material:2>,<extendedcrafting:material:2>],[<extendedcrafting:material:2>,<thermalfoundation:storage_alloy:5>,<extendedcrafting:material:2>],[<thermalfoundation:material:514>,<thermalfoundation:material:514>,<thermalfoundation:material:514>]]);
 
 // Resonant Upgrade Kit
 thermalKitTooltip(<thermalfoundation:upgrade:3>, 200, 25, 82);
 recipes.remove(<thermalfoundation:upgrade:3>);
-recipes.addShaped(<thermalfoundation:upgrade:3>, [[<extendedcrafting:material:2>,<extendedcrafting:material:2>,<extendedcrafting:material:2>],[<extendedcrafting:material:2>,<thermalfoundation:storage_alloy:7>,<extendedcrafting:material:2>],[<thermalfoundation:material:515>,<thermalfoundation:material:515>,<thermalfoundation:material:515>]]);
+recipes.addShaped(<thermalfoundation:upgrade:3>, [[<thermalfoundation:material:327>,<thermalfoundation:material:327>,<thermalfoundation:material:327>],[<thermalfoundation:material:327>,<thermalfoundation:storage_alloy:7>,<thermalfoundation:material:327>],[<thermalfoundation:material:515>,<thermalfoundation:material:515>,<thermalfoundation:material:515>]]);
 
 // Signalum Security Lock
 recipes.remove(<thermalfoundation:security>);
