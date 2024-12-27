@@ -386,8 +386,8 @@ enderIOCapBankUpgrade, null);
 
 // Impulse Hopper
 recipes.remove(<enderio:block_impulse_hopper>);
-recipes.addShaped(<enderio:block_impulse_hopper>, [[<enderio:item_alloy_ingot:6>,<enderio:item_material:13>,<enderio:item_alloy_ingot:6>],[<mob_grinding_utils:absorption_hopper>,<enderio:item_material:1>,<mob_grinding_utils:absorption_hopper>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:13>,<enderio:item_alloy_ingot:6>]]);
-recipes.addShaped(<enderio:block_impulse_hopper>, [[<enderio:item_alloy_ingot:6>,<mob_grinding_utils:absorption_hopper>,<enderio:item_alloy_ingot:6>],[<enderio:item_material:13>,<enderio:item_material:1>,<enderio:item_material:13>],[<enderio:item_alloy_ingot:6>,<mob_grinding_utils:absorption_hopper>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShaped(<enderio:block_impulse_hopper>.withTag({"enderio:data":{isOutputLocked:1}}), [[<enderio:item_alloy_ingot:6>,<enderio:item_material:13>,<enderio:item_alloy_ingot:6>],[<mob_grinding_utils:absorption_hopper>,<enderio:item_material:1>,<mob_grinding_utils:absorption_hopper>],[<enderio:item_alloy_ingot:6>,<enderio:item_material:13>,<enderio:item_alloy_ingot:6>]]);
+recipes.addShaped(<enderio:block_impulse_hopper>.withTag({"enderio:data":{isOutputLocked:1}}), [[<enderio:item_alloy_ingot:6>,<mob_grinding_utils:absorption_hopper>,<enderio:item_alloy_ingot:6>],[<enderio:item_material:13>,<enderio:item_material:1>,<enderio:item_material:13>],[<enderio:item_alloy_ingot:6>,<mob_grinding_utils:absorption_hopper>,<enderio:item_alloy_ingot:6>]]);
 
 // Energy Gauge
 recipes.remove(<enderio:block_gauge>);
