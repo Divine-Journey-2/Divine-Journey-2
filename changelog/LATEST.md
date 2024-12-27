@@ -15,7 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-Crafted Impulse Hopper is locked by default.
+- Crafted Impulse Hopper is locked by default.
 
 ## Text and Quest Updates:
 
