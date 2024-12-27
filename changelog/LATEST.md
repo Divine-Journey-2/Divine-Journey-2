@@ -7,7 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-Fixed the Blood Magic Basic Cutting Fluid NBT issue by adding a custom version.
+- Fixed the Blood Magic Basic Cutting Fluid NBT issue by adding a custom version.
 
 ## Balance Adjustments:
 
