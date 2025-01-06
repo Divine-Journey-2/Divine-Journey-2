@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Server Launch Script
 #
 # Thrown together by Neeve in under five minutes, Public Domain
