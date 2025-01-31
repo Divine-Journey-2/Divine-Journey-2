@@ -1403,6 +1403,12 @@
       "required": true
     },
     {
+      "slug": "vintagefix",
+      "projectID": 871198,
+      "fileID": 5536276,
+      "required": true
+    },
+    {
       "slug": "enhancedp2p",
       "projectID": 876339,
       "fileID": 4815198,

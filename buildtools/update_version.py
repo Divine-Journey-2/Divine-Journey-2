@@ -26,6 +26,9 @@ def parse_args():
 
 
 basePath = path.normpath(path.abspath(f"{__file__}/../../"))
+UPDATE_QUESTBOOK = f"""YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
+/bq_admin default load
+(This has to only be done once in multiplayer, by an admin.)\n"""
 
 def convertChangelog(version: str):
     """Converts and filters the existing changelog in the LATEST.md file to a file named after the version"""
@@ -60,13 +63,11 @@ def convertChangelog(version: str):
 
     # Overwrite the in-game changelog file
     with open("overrides/config/mputils/changelog.txt", "w") as file:
-        file.write(f"""YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
-/bq_admin default load
-(This has to only be done once in multiplayer, by an admin.)
-""")
+        file.write(UPDATE_QUESTBOOK)
         file.write(f"\nUpdate {version}:\n")
         with open(changelogFile) as changelog:
-            file.write(changelog.read())
+            with open(changelogFile) as changelog:
+                print(f"changelog={UPDATE_QUESTBOOK}{changelog.read()}", file=fh)
 
     if getenv("GITHUB_OUTPUT") != None:
         with open(getenv("GITHUB_OUTPUT"), "a") as fh:
