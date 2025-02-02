@@ -22,7 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+- Updated info in quest "Itching for more Witching #160".
 
 ## Texture Transformations:
 
