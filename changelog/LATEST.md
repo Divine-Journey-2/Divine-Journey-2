@@ -22,7 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+- Added info about blocks with enchanting power to quest "Enchantin' away #1155".
 
 ## Texture Transformations:
 
