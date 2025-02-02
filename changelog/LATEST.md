@@ -9,10 +9,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
 - Fix the server sometimes freezing on shutdown instead of properly shutting down (VintageFix).
+- Fixed the Mob Loot Fabricator Vis Crystal recipe not appearing in JEI when searching for Vis Crystals.
 
 ## Balance Adjustments:
 
-
+- Increased the Mob Loot Fabricator Vis Crystal recipe outputs from 1 to 64 and the cooldown from 1s to 60s to reduce lag.
 
 ## QoL Improvements:
 
