@@ -22,7 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+Added the Lizard, Druden, Saguaro Worm and Cyclops to the Roots Ritual: Summon Creatures.
 
 ## Texture Transformations:
 
