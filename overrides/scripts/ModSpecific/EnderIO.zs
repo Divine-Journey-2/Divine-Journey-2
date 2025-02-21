@@ -272,7 +272,8 @@ recipes.addShaped(<enderio:block_buffer:1>, [[<enderio:item_alloy_ingot>,<enderi
 addEnderIOBaseMachineRecipe(<enderio:block_lava_generator>, <enderio:item_material:72>, <enderio:block_tank>);
 
 // Painting Machine
-addEnderIOBaseMachineRecipe(<enderio:block_painter>, <openblocks:paintbrush>, <minecraft:diamond>);
+recipes.remove(<enderio:block_painter>);
+recipes.addShaped(<enderio:block_painter>, [[<thermalfoundation:material:352>,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<openblocks:paintbrush>,<enderio:item_material>,<openblocks:paintbrush>],[<enderio:item_material:11>,<minecraft:diamond>,<enderio:item_material:11>]]);
 
 // The Vat
 addEnderIOBaseMachineRecipe(<enderio:block_vat>, <enderio:block_tank>, <enderio:block_simple_furnace>);
@@ -516,11 +517,15 @@ recipes.remove(<enderio:block_ender_generator>);
 recipes.addShaped(<enderio:block_ender_generator>, [[<enderio:block_alloy:8>,<enderio:block_alloy:8>,<enderio:block_alloy:8>],[<ore:fusedQuartz>,<enderio:block_franken_zombie_generator>,<ore:fusedQuartz>],[<ore:fusedQuartz>,<enderio:item_material:43>,<ore:fusedQuartz>]]);
 
 // ME Conduit
+<enderio:item_me_conduit>.addTooltip(game.localize("dj2.me_conduits.desc0"));
+<enderio:item_me_conduit>.addTooltip(game.localize("dj2.me_conduits.desc1"));
 recipes.remove(<enderio:item_me_conduit>);
 recipes.addShaped(<enderio:item_me_conduit> * 3, [[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>],[<appliedenergistics2:part:16>,<appliedenergistics2:part:16>,<appliedenergistics2:part:16>],[<enderio:item_material:4>,<enderio:item_material:4>,<enderio:item_material:4>]]);
 recipes.addShapeless(<enderio:item_me_conduit> * 4, [<enderio:item_me_conduit:1>]);
 
 // Dense ME Conduit
+<enderio:item_me_conduit:1>.addTooltip(game.localize("dj2.me_conduits.desc0"));
+<enderio:item_me_conduit:1>.addTooltip(game.localize("dj2.me_conduits.desc1"));
 recipes.remove(<enderio:item_me_conduit:1>);
 recipes.addShaped(<enderio:item_me_conduit:1>, [[<enderio:item_me_conduit>,<enderio:item_me_conduit>],[<enderio:item_me_conduit>,<enderio:item_me_conduit>]]);
 

@@ -1,7 +1,7 @@
 
 # Preview Images
 
-These images and descriptions are used for the [Curseforge Screenshots page](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/screenshots)
+These images and descriptions are used for the [CurseForge Screenshots page](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/screenshots)
 
 Note that many of these images were created when the pack was released, and may not be entirely accurate to the current status of the pack.
 

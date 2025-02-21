@@ -62,6 +62,12 @@
             "io-type": "output",
             "item": "actuallyadditions:item_solidified_experience",
             "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bhc:red_heart",
+            "amount": 4
         }
     ]
 }

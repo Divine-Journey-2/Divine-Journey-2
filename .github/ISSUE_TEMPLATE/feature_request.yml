@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
-        If you are not using the latest version, make sure that the request has not already been fufilled.
+        If you are not using the latest version, make sure that the request has not already been fulfilled.
   - type: textarea
     id: feature-description
     attributes:

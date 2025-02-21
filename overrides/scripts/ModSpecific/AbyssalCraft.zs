@@ -55,7 +55,6 @@ recipes.addShapeless(<abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as floa
 
 // Ore Tooltips
 <abyssalcraft:coraliumore>.addTooltip(game.localize("dj2.coralium_ore.desc0"));
-<abyssalcraft:abyore>.addTooltip(game.localize("dj2.abyore.desc0"));
 
 // Coralium Gem Cluster itemstack amounts
 <abyssalcraft:ccluster2>.maxStackSize = 64;
@@ -450,6 +449,12 @@ mods.abyssalcraft.Crystallizer.addCrystallization(<abyssalcraft:methane>, <abyss
 
 // Additional Methane recipe
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<roots:unending_bowl>, <abyssalcraft:crystal:10> * 32, 0.1);
+
+// Rotten Flesh Block
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thaumcraft:flesh_block>, <abyssalcraft:crystal:7> * 8, 1.8);
+
+// Bone Block
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<minecraft:bone_block>, <abyssalcraft:crystal:7> * 4, 1.8);
 
 // Transmutator recipes
 mods.abyssalcraft.Transmutator.addTransmutation(<abyssalcraft:crystal:2>, <thermalfoundation:material:771>, 0.1);

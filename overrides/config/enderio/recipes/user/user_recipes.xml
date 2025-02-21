@@ -286,6 +286,7 @@
 
   <recipe name="Spawner, Twilight Forest" required="false">
     <spawning>
+      <entity name="twilightforest:mini_ghast" costMultiplier="5" disabled="false" />
       <entity name="twilightforest:naga" soulvial="false" disabled="true"/>
       <entity name="twilightforest:hydra" soulvial="false" disabled="true"/>
       <entity name="twilightforest:lich" soulvial="false" disabled="true"/>

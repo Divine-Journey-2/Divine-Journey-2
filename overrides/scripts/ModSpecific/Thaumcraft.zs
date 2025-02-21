@@ -184,6 +184,10 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumcraft:TubeFilter", "T
 <thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc5"));
 <thaumcraft:nugget:10>.addShiftTooltip(game.localize("dj2.rare_earths.desc6"));
 
+// Porous Stone
+<thaumcraft:stone_porous>.addTooltip(game.localize("dj2.porous_stone.desc0"));
+<thaumcraft:stone_porous>.addTooltip(game.localize("dj2.porous_stone.desc1"));
+
 // Thaumium Ingot
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:ingot>);
 mods.thaumcraft.Crucible.registerRecipe("thaumcraft:thaumiumingot", "METALLURGY@2", <thaumcraft:ingot>, <thaumcraft:ingot:2>, [<aspect:praecantatio> * 10,<aspect:metallum> * 10,<aspect:alkimia> * 10,<aspect:exanimis> * 10]);
@@ -369,7 +373,7 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:metal_alchemical>);
 mods.thaumcraft.Infusion.registerRecipe("thaumcraft:AlchemicalConstruct", "TUBES", <thaumcraft:metal_alchemical>, 0, [<aspect:alkimia> * 20, <aspect:machina> * 20], <contenttweaker:cosmic_alloy>, [<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>,<thaumcraft:tube>,<thaumcraft:stone_arcane>,<thaumcraft:tube_valve>,<thaumcraft:stone_arcane>]);
 
 // Advanced Alchemical Construct
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:advanced_alchemical_construct2", "", 200, [<aspect:terra>,<aspect:ignis>], <thaumcraft:metal_alchemical_advanced>, [[null,<thaumcraft:metal_alchemical>,null],[<thaumcraft:plate:3>,<contenttweaker:primordial_fragment>,<thaumcraft:plate:3>],[null,<thaumcraft:metal_alchemical>,null]]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("contenttweaker:advanced_alchemical_construct2", "ESSENTIASMELTERVOID", 200, [<aspect:terra>,<aspect:ignis>], <thaumcraft:metal_alchemical_advanced>, [[null,<thaumcraft:metal_alchemical>,null],[<thaumcraft:plate:3>,<contenttweaker:primordial_fragment>,<thaumcraft:plate:3>],[null,<thaumcraft:metal_alchemical>,null]]);
 
 // Auxillary Slurry Pump
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:smelter_aux>);

@@ -11,13 +11,13 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Divine Journey 2",
-  "version": "2.20.1",
+  "version": "@PACK_VERSION@",
   "author": "AtricosHU",
   "files": [
     {
       "slug": "journeymap",
       "projectID": 32274,
-      "fileID": 2916002,
+      "fileID": 5172461,
       "required": true
     },
     {
@@ -331,12 +331,6 @@
       "required": true
     },
     {
-      "slug": "betterfps",
-      "projectID": 229876,
-      "fileID": 2483393,
-      "required": true
-    },
-    {
       "slug": "chameleon",
       "projectID": 230497,
       "fileID": 2450900,
@@ -510,7 +504,7 @@
     {
       "slug": "crafttweaker",
       "projectID": 239197,
-      "fileID": 4814073,
+      "fileID": 5013567,
       "required": true
     },
     {
@@ -620,7 +614,7 @@
     {
       "slug": "roots",
       "projectID": 246183,
-      "fileID": 4460453,
+      "fileID": 5193525,
       "required": true
     },
     {
@@ -914,23 +908,10 @@
       "required": true
     },
     {
-      "slug": "forgiving-void",
-      "projectID": 271009,
-      "fileID": 2863246,
-      "required": true
-    },
-    {
       "slug": "cofh-world",
       "projectID": 271384,
       "fileID": 2920434,
       "required": true
-    },
-    {
-      "slug": "toast-control",
-      "projectID": 271740,
-      "fileID": 2707353,
-      "required": true,
-      "clientOnly": true
     },
     {
       "slug": "cucumber",
@@ -967,12 +948,6 @@
       "slug": "mysticallib",
       "projectID": 277064,
       "fileID": 3483816,
-      "required": true
-    },
-    {
-      "slug": "foamfix-optimization-mod",
-      "projectID": 278494,
-      "fileID": 3973967,
       "required": true
     },
     {
@@ -1044,12 +1019,6 @@
       "clientOnly": true
     },
     {
-      "slug": "randompatches-forge",
-      "projectID": 285612,
-      "fileID": 3133651,
-      "required": true
-    },
-    {
       "slug": "galacticrafttweaker",
       "projectID": 286116,
       "fileID": 2647978,
@@ -1077,12 +1046,6 @@
       "slug": "tinkers-jei",
       "projectID": 291786,
       "fileID": 2701203,
-      "required": true
-    },
-    {
-      "slug": "vanillafix",
-      "projectID": 292785,
-      "fileID": 2915154,
       "required": true
     },
     {
@@ -1253,7 +1216,7 @@
     {
       "slug": "thaumic-augmentation",
       "projectID": 319441,
-      "fileID": 4486505,
+      "fileID": 5129455,
       "required": true
     },
     {
@@ -1290,12 +1253,6 @@
       "slug": "yungs-better-caves",
       "projectID": 340583,
       "fileID": 3003242,
-      "required": true
-    },
-    {
-      "slug": "dupefix-project",
-      "projectID": 356349,
-      "fileID": 3424173,
       "required": true
     },
     {
@@ -1349,7 +1306,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 4914452,
+      "fileID": 5162113,
       "required": true
     },
     {
@@ -1367,7 +1324,7 @@
     {
       "slug": "mixin-booter",
       "projectID": 419286,
-      "fileID": 4090558,
+      "fileID": 5739618,
       "required": true
     },
     {
@@ -1404,7 +1361,7 @@
     {
       "slug": "ae2-extended-life",
       "projectID": 570458,
-      "fileID": 4851091,
+      "fileID": 5147702,
       "required": true
     },
     {
@@ -1423,13 +1380,13 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 4643575,
+      "fileID": 5529764,
       "required": true
     },
     {
       "slug": "startup-timer",
       "projectID": 782070,
-      "fileID": 4275356,
+      "fileID": 5001902,
       "required": true,
       "clientOnly": true
     },
@@ -1442,19 +1399,37 @@
     {
       "slug": "configanytime",
       "projectID": 870276,
-      "fileID": 4576653,
+      "fileID": 5169620,
+      "required": true
+    },
+    {
+      "slug": "vintagefix",
+      "projectID": 871198,
+      "fileID": 5536276,
       "required": true
     },
     {
       "slug": "enhancedp2p",
       "projectID": 876339,
-      "fileID": 4592511,
+      "fileID": 4815198,
       "required": true
     },
     {
       "slug": "serializationisbad",
       "projectID": 896591,
-      "fileID": 4728250,
+      "fileID": 5187152,
+      "required": true
+    },
+    {
+      "slug": "fermiumbooter",
+      "projectID": 968474,
+      "fileID": 5672830,
+      "required": true
+    },
+    {
+      "slug": "fermiumasm",
+      "projectID": 971247,
+      "fileID": 5346789,
       "required": true
     }
   ],

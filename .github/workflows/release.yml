@@ -1,0 +1,177 @@
+name: Publish a Release
+
+# Required secrets:
+# GITHUB_TOKEN - access the repo to cancel prior ongoing builds (included by default)
+# CFAPIKEY - access token to download mods
+# CF_PROJECT_KEY - access token for project
+
+# Required variables:
+# CURSEFORGE_MODPACK_ID - ID of the project on curseforge. For DJ2, this is "370666"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "The new version of the pack"
+        required: true
+        type: string
+      update-version:
+        description: "If the version should be updated"
+        type: boolean
+        default: true
+      release-type:
+        description: "Release type, should basically always be release. Beta and Alpha both trigger pre-releases on github"
+        required: true
+        type: choice
+        default: release
+        options:
+          - alpha
+          - beta
+          - release
+
+# Cancel any ongoing instances of this workflow
+concurrency:
+  group: release
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 10 # it should take around 2 minutes to build and upload, so 10 minutes should never be passed
+
+    permissions:
+      contents: write # give the token the ability to write commits and releases to the repo
+
+    steps:
+      # Ensure that the secret(s) required to run the workflow exist
+      - name: "Check for Secret presence"
+        id: secret-check
+        shell: bash
+        run: |
+          if [ "${{ secrets.CFAPIKEY }}" == "" ]; then
+            echo "Unable to access the CFAPIKEY secret, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          if [ "${{ secrets.CF_PROJECT_KEY }}" == "" ]; then
+            echo "Unable to access the CF_PROJECT_KEY secret, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          if [ "${{ vars.CURSEFORGE_MODPACK_ID }}" == "" ]; then
+            echo "Unable to access the CURSEFORGE_MODPACK_ID environment variable, which is required to run this workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "Passed access check for required secrets and environment variables" >> $GITHUB_STEP_SUMMARY
+
+      # Setup the repo, download all tags, download Python, and install the requests library
+      - name: "Checkout Repo"
+        uses: actions/checkout@v4
+
+      - name: "Get all tags"
+        # This is required because 'actions/checkout@v4' only fetches the current version,
+        # and we need to get all tags to determine the prior version
+        run: git fetch --prune --unshallow --tags --force
+
+      - name: "Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: "Install requests"
+        run: pip install requests
+
+      # Update the various version-specific files from the prior version to the current version,
+      # and remove any unused parts of the LATEST.md changelog. Only commit these changes if the build step didn't fail
+      - name: "Update version"
+        if: ${{ inputs.update-version }}
+        id: version
+        run: python ./buildtools/update_version.py -V='${{ inputs.version }}'
+        # Will output "changelog", for the exact location of the changelog
+
+      - name: "Get server changelog"
+        id: server-changelog
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "server_changelog<<$EOF" >> $GITHUB_OUTPUT
+          echo "$(cat changelog/SERVER_UPDATE.md)" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
+
+      # Create zip files for the Client and Server after downloading the required mods
+      - name: "Build everything"
+        id: build
+        run: python ./buildtools/build.py -CSDZ -V='${{ inputs.version }}' --key='${{ secrets.CFAPIKEY }}'
+        # Will output "client_name" and "server_name", for the name of the client and server zips
+
+      # Commit changes after the build process
+      - name: "Commit and push version changes"
+        if: ${{ inputs.update-version }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update ${{ inputs.version }}"
+          commit_options: "--no-verify"
+
+      # Upload build artifacts to Github Releases
+      - name: "Upload to GitHub Releases"
+        uses: "softprops/action-gh-release@v2"
+        with:
+          name: Divine Journey ${{ inputs.version }}
+          tag_name: ${{ inputs.version }}
+          draft: false
+          prerelease: ${{ inputs.release-type != 'release' }}
+          body_path: "${{ steps.version.outputs.changelog }}"
+          generate_release_notes: true
+          append_body: true
+          files: |
+            build/output/${{ steps.build.outputs.client_name }}.zip
+            build/output/${{ steps.build.outputs.server_name }}.zip
+          fail_on_unmatched_files: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Upload build artifacts to Curseforge
+      - name: "Upload Client to Curseforge"
+        uses: itsmeow/curseforge-upload@v3.1.0
+        id: client
+        with:
+          release_type: "${{ inputs.release-type }}"
+          display_name: "${{ steps.build.outputs.client_name }}"
+          file_path: "build/output/${{ steps.build.outputs.client_name }}.zip"
+          game_endpoint: "minecraft"
+          game_versions: "Minecraft 1.12:1.12.2"
+          project_id: "${{ vars.CURSEFORGE_MODPACK_ID }}"
+          token: "${{ secrets.CF_PROJECT_KEY }}"
+          changelog_type: markdown
+          changelog: "${{ steps.version.outputs.changelog }}"
+          # Will output "id", for the id of the project
+
+      - name: "Upload Server to Curseforge"
+        uses: itsmeow/curseforge-upload@v3.1.0
+        id: server
+        with:
+          release_type: "${{ inputs.release-type }}"
+          display_name: "${{ steps.build.outputs.server_name }}"
+          file_path: "build/output/${{ steps.build.outputs.server_name }}.zip"
+          game_endpoint: "minecraft"
+          project_id: "${{ vars.CURSEFORGE_MODPACK_ID }}"
+          parent_file_id: ${{ steps.client.outputs.id }}
+          token: "${{ secrets.CF_PROJECT_KEY }}"
+          changelog_type: markdown
+          changelog: "${{ steps.server-changelog.outputs.server_changelog }}"
+
+      - name: "Generate report"
+        id: generate-report
+        shell: bash
+        run: |
+          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.version }}/changelog/Divine_Journey_${{ inputs.version }}.md)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
+            echo "Uploaded the client zip file with the name ${{ steps.build.outputs.client_name }}.zip" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ steps.build.outputs.server_name }}" != '' ]; then
+            echo "Uploaded the server zip file with the name ${{ steps.build.outputs.server_name }}.zip" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "-----" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo "**Divine Journey ${{ inputs.version }}** is now available on" >> $GITHUB_STEP_SUMMARY
+          echo "- Github: <https://github.com/${{ github.repository }}/releases/tag/${{ inputs.version }}>" >> $GITHUB_STEP_SUMMARY
+          echo "- Curseforge: <https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files/${{ steps.client.outputs.id }}>" >> $GITHUB_STEP_SUMMARY
+          echo "```" >> $GITHUB_STEP_SUMMARY

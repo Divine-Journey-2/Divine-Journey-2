@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "end": "contenttweaker:blocks/galactic_machine_frame_end",
+      "side": "contenttweaker:blocks/galactic_machine_frame_side",
+      "particle": "contenttweaker:blocks/galactic_machine_frame_side"
+    },
+    "model": "cube_column",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

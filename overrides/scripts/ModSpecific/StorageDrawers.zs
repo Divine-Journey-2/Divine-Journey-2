@@ -148,7 +148,7 @@ function normalDrawer() as ITooltipFunction {
         var end as string[] = [];
         for i, x in items.asList() {
             if (isNull(x) || isNull(x.Item)) continue;
-            val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage);
+            val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage).withTag(x.Item.tag);
             end += contents(item.displayName, x.Count);
         }
         if (end.length == 0) return game.localize("dj2.empty_drawer.desc0");
@@ -166,7 +166,7 @@ function compactingDrawer() as ITooltipFunction {
         var end as string[] = [];
         for i, x in items.asList() {
             if (isNull(x) || isNull(x.Item)) continue;
-            val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage);
+            val item as IItemStack = itemUtils.getItem(x.Item.id, x.Item.Damage).withTag(x.Item.tag);
             end += contents(item.displayName, count / x.Conv);
         }
         if (end.length == 0) return game.localize("dj2.empty_drawer.desc0");

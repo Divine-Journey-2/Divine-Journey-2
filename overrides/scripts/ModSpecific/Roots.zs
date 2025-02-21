@@ -212,7 +212,6 @@ recipes.addShaped("runestone_trample", <roots:runestone_trample>, [[<roots:chise
 // Unending Bowl
 Fey.removeRecipe(<roots:unending_bowl>);
 Fey.addRecipe("unending_bowl", <roots:unending_bowl>, [<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>]);
-recipes.addShaped(<roots:unending_bowl>, [[<enderio:block_reservoir>,<enderio:block_reservoir>,<enderio:block_reservoir>],[<enderio:item_alloy_ingot:6>,<enderio:block_reservoir>,<enderio:item_alloy_ingot:6>]]);
 
 // Salmon of Knowledge
 Fey.removeRecipe(<roots:salmon_of_knowledge>);

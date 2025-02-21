@@ -1,0 +1,35 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_contenttweaker_empowered_crystal_bundle",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:crystal_bundle",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_solidified_experience",
+            "amount": 16
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 320000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:empowered_crystal_bundle",
+            "amount": 4
+        }
+    ]
+}

@@ -8,7 +8,7 @@ body:
       value: |
         Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
         Please be aware that significant changes, such as altering the progression of mods, are unlikely to be considered.
-        If you are not using the latest version, make sure that the request has not already been fufilled.
+        If you are not using the latest version, make sure that the request has not already been fulfilled.
   - type: textarea
     id: request-description
     attributes:
