@@ -22,7 +22,7 @@ enchantment.lightningcraft.hand_of_thor.desc=武器有概率雷击敌人。
 enchantment.lightningcraft.elec_aura.desc=向攻击者发射电击。
 
 enchantment.openblocks.explosive.desc=装备附有震荡不定魔咒的盔甲时，会在特定事件发生时触发爆炸。
-enchantment.openblocks.last_stand.desc=装备附有屹立不倒魔咒的盔甲时，承受致死攻击不会死亡，而是以消耗经验为代价保留 1 点生命值，消耗量取决于伤害量和全身该魔咒的等级总和。
+enchantment.openblocks.last_stand.desc=装备附有屹立不倒魔咒的盔甲时，承受致死攻击不会死亡，而是以消耗经验为代价保留1点生命值，消耗量取决于伤害量和全身该魔咒的等级总和。
 enchantment.openblocks.flim_flam.desc=装备时，对周围玩家施加若干负面状态效果。
 
 enchantment.simplyjetpacks.fuel_efficiency.desc=减少飞行或受击时喷气背包和通量背包的能量消耗。
