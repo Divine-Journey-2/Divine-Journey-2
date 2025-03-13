@@ -105,15 +105,18 @@ symLinkDirs = [
     "structures"
 ]
 # Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
-filesToUpdateVersion = [
+filesToUpdateVersionClient = [
     "manifest.json",
-    "config/CustomMainMenu/mainmenu.json",
-    "config/mputils/addons/mpbasic/mpbasic.cfg"
     "overrides/config/CustomMainMenu/mainmenu.json",
     "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
 ]
+filesToUpdateVersionServer = [
+    "manifest.json",
+    "config/CustomMainMenu/mainmenu.json",
+    "config/mputils/addons/mpbasic/mpbasic.cfg"
+]
 
-def print_argument_settings(args):
+def print_argument_settings(args: dict):
     """Prints what the build command will do"""
     print("starting the build process with the following settings")
     print(f"name: {args.name}")
@@ -125,6 +128,18 @@ def print_argument_settings(args):
     print(f"download mods: {args.download}")
     print(f"pre-release: {args.prerelease}")
     print(f"deleting prior files: {args.wipe}")
+
+
+def getApiKey(key: str) -> str:
+    """Return the CurseForge API key"""
+    if (key == None):
+        key = os.getenv("CFAPIKEY")
+
+    if (key == None):
+        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
+            key = file.readline().replace("\n", "")
+
+    return key
 
 
 def createBaseDir():
@@ -186,14 +201,6 @@ def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient
 
     failedModDownload = []
 
-    # Curseforge api key
-    if (key == None):
-        os.getenv("CFAPIKEY")
-
-    if (key == None):
-        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
-            key = file.readline().replace("\n", "")
-
     access = requests.Session()
     access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
     headers = {"Accept": "application/json", "x-api-key": key}
@@ -216,7 +223,7 @@ def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient
     print("modlist compiled")
 
 
-def externalDeps(manifest, retries: int):
+def externalDeps(manifest: dict, retries: int):
     """If we have external dependencies, try to download them"""
     counter = 0
 
@@ -321,10 +328,10 @@ def getPreReleaseName() -> str:
     return ""
 
 
-def convertPackVersion(location: str, version: str):
+def convertPackVersion(root: str, version: str, locations: list):
     """Convert the @PACK_VERSION@ placeholders into the actual pack version being used"""
-    for target in filesToUpdateVersion:
-        file = f"{location}/{target}"
+    for target in locations:
+        file = f"{root}/{target}"
         if os.path.isfile(file) and os.path.exists(file):
             f = open(file, "r")
             filedata = f.read()
@@ -336,21 +343,21 @@ def convertPackVersion(location: str, version: str):
                 new.write(newdata)
 
 
-def getForgeVersion(manifest):
+def getForgeVersion(manifest: dict):
     """Get the Forge version"""
     forgeVer = manifest["minecraft"]["modLoaders"][0]["id"].split("-")[-1]
     mcVer = manifest["minecraft"]["version"]
     return f"forge-{mcVer}-{forgeVer}.jar"
 
 
-def getForgeInstaller(manifest):
+def getForgeInstaller(manifest: dict):
     """Get the URL to the Forge installer"""
     forgeVer = manifest["minecraft"]["modLoaders"][0]["id"].split("-")[-1]
     mcVer = manifest["minecraft"]["version"]
     return f"https://maven.minecraftforge.net/net/minecraftforge/forge/{mcVer}-{forgeVer}/forge-{mcVer}-{forgeVer}-installer.jar"
 
 
-def forgeInstaller(manifest):
+def forgeInstaller(manifest: dict):
     """Download the Forge Installer and install it"""
     with open(f"{cache}/forge-installer.jar", "w+b") as jar:
         url = getForgeInstaller(manifest)
@@ -405,7 +412,7 @@ def copyClient():
             shutil.rmtree(location, ignore_errors=True)
 
 
-def copyServer(manifest):
+def copyServer(manifest: dict):
     """Copy required contents to server instance, and then delete designated files"""
     shutil.copy(f"{basePath}/manifest.json", f"{server}/manifest.json")
     shutil.copy(f"{basePath}/LICENSE", f"{server}/LICENSE")
@@ -474,7 +481,31 @@ def updateMMCInstance(instancePath: str):
     print("your instance is now linked to the git repo")
 
 
-def build(args):
+def zipPack(version: str, args: dict):
+    """Create a zip for the pack for the client and server, if requested"""
+    # Get the standard name of the pack
+    standardName = getStandardName(args.name, version)
+
+    # Get the date and sha of the most recent git commit
+    preReleaseName = getPreReleaseName() if args.prerelease else ""
+
+    archive_name = f"{standardName}_{preReleaseName}" if preReleaseName else standardName
+
+    # Zip the client
+    if (args.client):
+        buildClient(archive_name)
+
+    # Zip the server
+    if (args.server):
+        buildServer(f"{archive_name}_Server_Pack")
+
+
+def printTime(start: int, description: str):
+    """Print the time since the start for the given task to be accomplished"""
+    print(f"{description} {str(round(time() - start, 2))} seconds")
+
+
+def build(args: dict):
     """Build client, server, and with options for more"""
 
     print_argument_settings(args)
@@ -487,6 +518,9 @@ def build(args):
     if (not args.client and not args.server and not args.dev):
         print("you must specify either client, server, or dev")
         return
+
+    # Curseforge api key
+    apiKey = getApiKey(args.key)
 
     # Read the manifest
     with open(f"{basePath}/manifest.json", "r") as file:
@@ -504,24 +538,24 @@ def build(args):
     createBaseDir()
 
     if (args.download):
-        print(f"starting download process at {str(round(time() - start, 2))} seconds")
+        printTime(start, "starting download process at")
 
         # Download any external dependencies defined in the manifest, and add successful downloads to the modlist
         externalDeps(manifest, args.retries)
-        print(f"downloaded external dependencies in {str(round(time() - start, 2))} seconds")
+        printTime(start, "downloaded external dependencies in")
 
         # Create modlist
-        generateModlist(manifest, args.key, modlistServer, modlistClient, args.retries)
-        print(f"generated a modlist to download in {str(round(time() - start, 2))} seconds")
+        generateModlist(manifest, apiKey, modlistServer, modlistClient, args.retries)
+        printTime(start, "generated a modlist to download in")
 
         # Download mods
         downloadModList(modlistServer, modlistClient, args.retries)
-        print(f"downloaded the modlist in {str(round(time() - start, 2))} seconds")
+        printTime(start, "downloaded the modlist in")
 
     # Download and install Forge and its libraries
     if (args.server):
         forgeInstaller(manifest)
-        print(f"installed the forge installer in {str(round(time() - start, 2))} seconds")
+        printTime(start, "installed the forge installer in")
 
     # Get the modpack version from git tags if not an argument
     version = getGitTagVersion() if args.version == None else args.version
@@ -529,34 +563,20 @@ def build(args):
     # Copy required files to the client instance
     if (args.client):
         copyClient()
-        convertPackVersion(client, version)
+        convertPackVersion(client, version, filesToUpdateVersionClient)
 
     # Copy required files to the server instance
     if (args.server):
         copyServer(manifest)
-        convertPackVersion(server, version)
+        convertPackVersion(server, version, filesToUpdateVersionServer)
 
     if (args.zip):
-        # Get the standard name of the pack
-        standardName = getStandardName(args.name, version)
-
-        # Get the date and sha of the most recent git commit
-        preReleaseName = getPreReleaseName() if args.prerelease else ""
-
-        archive_name = f"{standardName}_{preReleaseName}" if preReleaseName else standardName
-
-        # Zip the client
-        if (args.client):
-            buildClient(archive_name)
-
-        # Zip the server
-        if (args.server):
-            buildServer(f"{archive_name}_Server_Pack")
+        zipPack(version, args)
 
     if (args.dev):
         updateMMCInstance(args.dev)
 
-    print(f"done in {str(round(time() - start, 2))} seconds")
+    printTime(start, "done in")
 
 
 if (__name__ == "__main__"):
