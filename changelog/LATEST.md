@@ -23,6 +23,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Text and Quest Updates:
 
 - Ensure Questbook titles and descriptions containing equal signs that should have whitespace around them actually have whitespace.
+- Added the info that higher HP mobs yield more Blood Magic LE and Will and EvilCraft Blood to some quests.
 
 ## Texture Transformations:
 
