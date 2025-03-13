@@ -22,7 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
-
+- Ensure Questbook titles and descriptions containing equal signs that should have whitespace around them actually have whitespace.
 
 ## Texture Transformations:
 
