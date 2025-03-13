@@ -24,8 +24,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Ensure Questbook titles and descriptions containing equal signs that should have whitespace around them actually have whitespace.
 - Add a note that higher HP mobs yield more Blood Magic LE and Will and EvilCraft Blood to some quests.
-- Add more detailed information about Spark Augments to the relevant quest.
+- Fix incomplete information about the function of Spark Augments in the quest describing them.
 - Add information on to tame and breed Eagles in the relevant quest.
+- Add information about how AbyssalCraft Statues need sky access to work in quest to craft them.
+- Add information about how the destructive effects of AbyssalCraft Statues have been disabled to the AbyssalCraft Statues quest.
 
 ## Texture Transformations:
 
