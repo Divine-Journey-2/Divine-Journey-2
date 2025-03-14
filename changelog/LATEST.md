@@ -38,5 +38,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
 - Improve the usability of the `build.py` build tool.
 - Fix `update_version.py` not loading the changelog text onto CurseForge and requiring manual intervention.
+- Change `TEMPLATE.md` to only have two blank lines between entries instead of three with the goal of reducing merge conflicts.
+- Rename releases with only a single digit for their major version to have a `0` prefixed to it.
 
 ## Miscellaneous Changes:
