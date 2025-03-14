@@ -3,7 +3,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
-- Add VintageFix 0.5.1
+- Add VintageFix 0.5.5
 
 ## Bugfixes:
 
