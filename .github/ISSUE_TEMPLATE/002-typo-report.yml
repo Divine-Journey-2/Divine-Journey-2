@@ -1,16 +1,31 @@
-name: Typo
-description: There is a typo / misspelling / grammatical error somewhere.
+name: Typo Report
+description: There is a typo / misspelling / untranslated text / grammatical error somewhere.
 labels: ["Typo"]
+type: Bug
 body:
   - type: markdown
     attributes:
-      value: Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        If the typo occurs in the questbook, please add the Questbook label.
+        If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
   - type: input
     id: modpack-version
     attributes:
       label: Modpack version
       description: If you are not using the latest version, make sure that the request has not already been fulfilled.
       placeholder: "Example: 2.X.X"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: What language does it occur in?
+      description: If there is no localization done, select Unlocalized. Otherwise, select the relevant language.
+      options:
+        - American English (default)
+        - Chinese
+        - Unlocalized
     validations:
       required: true
   - type: textarea
@@ -33,4 +48,8 @@ body:
     attributes:
       label: Your Divine Journey 2 Discord Username
       description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
-      placeholder: "Example: Dyno#3861"
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this typo report!

@@ -1,17 +1,26 @@
-name: Mod request
+name: Mod Request
 description: Suggest a mod to be added to the pack.
 labels: ["Feature Request", "Mod Request"]
+type: Feature
 body:
   - type: markdown
     attributes:
       value: |
         Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
         Please be aware that new mods are unlikely to be added, given the effort required to balance and integrate them. Remember that you are free to add any mod to your personal version of the pack.
+        If you are not using the latest version, make sure that the request has not already been [fulfilled](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
   - type: input
     id: mod-name
     attributes:
       label: Mod Name
-      description: Provide the name of the mod, and link its Curseforge page. If it does not have a Curseforge page and is not on the Curseforge approved 3rd party mods list, the mod cannot be added.
+      description: Provide the name of the mod
+    validations:
+      required: true
+  - type: input
+    id: mod-link
+    attributes:
+      label: CurseForge Link
+      description: Provide a link to its CurseForge page. If it does not have a CurseForge page and is not on the CurseForge approved 3rd party mods list, the mod cannot be added.
     validations:
       required: true
   - type: textarea
@@ -34,4 +43,8 @@ body:
     attributes:
       label: Your Divine Journey 2 Discord Username
       description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
-      placeholder: "Example: Dyno#3861"
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this mod request!
