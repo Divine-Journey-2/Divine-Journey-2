@@ -1210,7 +1210,7 @@
     {
       "slug": "thaumic-augmentation",
       "projectID": 319441,
-      "fileID": 5129455,
+      "fileID": 6047659,
       "required": true
     },
     {
@@ -1424,6 +1424,12 @@
       "slug": "fermiumasm",
       "projectID": 971247,
       "fileID": 5346789,
+      "required": true
+    },
+    {
+      "slug": "thaumcraftfix",
+      "projectID": 1069346,
+      "fileID": 6101011,
       "required": true
     }
   ],

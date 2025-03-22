@@ -4,8 +4,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Add VintageFix 0.5.5
+- Add Thaumcraft Fix 1.1.2
 - Update Aether Legacy 1.5.3.2 -> 1.5.4.1
 - Update Universal Tweaks 1.12.0 -> 1.14.0
+- Update Thaumic Augmentation 2.1.13 -> 2.1.14
 - Remove Bad Wither No Cookie! Reloaded (Universal Tweaks)
 
 ## Bugfixes:
@@ -21,6 +23,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix EnderIO armor + MmmMmmMmmMmm functioning incorrectly together (Universal Tweaks).
 - Fix some memory leaks with EnderIO and Bibliocraft (Universal Tweaks).
 - Disable Vanilla Minecart dropping itself as it occasionally caused crashes.
+- Fix several duplication bugs in Thaumcraft (Thaumcraft Fix).
+- Fix multiple bugs related to the Thaumcraft Focal Manipulator (Thaumcraft Fix).
 
 ## Balance Adjustments:
 
@@ -36,6 +40,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable Actually Additions Item Laser particles based on particle settings (Universal Tweaks).
 - Improve the performance of the EvilCraft Vengeance Spirit config for mob farms (Universal Tweaks).
 - Improve the performance of Iron Chest Crystal Chest/Shulker Box rendering (Universal Tweaks).
+- Remove Thaumcraft Vis Crystals and tree generation from non-Overworld/Deep Dark dimensions (Thaumcraft Fix).
 
 ## Text and Quest Updates:
 
@@ -48,7 +53,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Texture Transformations:
 
-
+- Enhanced the texture for Thaumic Augmentation Railgun (Thaumic Augmentation).
 
 ## GitHub Developments:
 
