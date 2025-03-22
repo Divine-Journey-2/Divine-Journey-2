@@ -841,12 +841,6 @@
       "required": true
     },
     {
-      "slug": "bad-wither-no-cookie-reloaded",
-      "projectID": 261251,
-      "fileID": 3045651,
-      "required": true
-    },
-    {
       "slug": "avaritia-1-10",
       "projectID": 261348,
       "fileID": 3143349,
@@ -1380,7 +1374,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 5529764,
+      "fileID": 6123916,
       "required": true
     },
     {

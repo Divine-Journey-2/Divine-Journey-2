@@ -5,12 +5,22 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Add VintageFix 0.5.5
 - Update Aether Legacy 1.5.3.2 -> 1.5.4.1
+- Update Universal Tweaks 1.12.0 -> 1.14.0
+- Remove Bad Wither No Cookie! Reloaded (Universal Tweaks)
 
 ## Bugfixes:
 
 - Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
 - Fix the server sometimes freezing on shutdown instead of properly shutting down (VintageFix).
 - Fix the Mob Loot Fabricator Vis Crystal recipe not appearing in JEI when searching for Vis Crystals.
+- Fix Astral Sorcery tools rarely causing a Division By Zero error in patterns (Universal Tweaks).
+- Fix the Chorus Fruit mode in the EnderIO Farming Station being capable of looping infinitely (Universal Tweaks).
+- Fix the EnderIO Soul Binder JEI category displaying recipes incorrectly depending on the focus (Universal Tweaks).
+- Fix an issue where some of the EnderIO Filter buttons did not save their state properly (Universal Tweaks).
+- Fix Modular Magic sometimes causing a NPE (Universal Tweaks).
+- Fix EnderIO armor + MmmMmmMmmMmm functioning incorrectly together (Universal Tweaks).
+- Fix some memory leaks with EnderIO and Bibliocraft (Universal Tweaks).
+- Disable Vanilla Minecart dropping itself as it occasionally caused crashes.
 
 ## Balance Adjustments:
 
@@ -22,6 +32,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Improve rendering performance and memory usage via a number of optimizations (VintageFix).
 - Cache the entry points of mod jars (VintageFix).
+- Downgrade pointless logging of potion information on startup to debug-only (Universal Tweaks).
+- Disable Actually Additions Item Laser particles based on particle settings (Universal Tweaks).
+- Improve the performance of the EvilCraft Vengeance Spirit config for mob farms (Universal Tweaks).
+- Improve the performance of Iron Chest Crystal Chest/Shulker Box rendering (Universal Tweaks).
 
 ## Text and Quest Updates:
 
