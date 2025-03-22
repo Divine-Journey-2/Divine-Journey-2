@@ -4,6 +4,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Add VintageFix 0.5.5
+- Update Aether Legacy 1.5.3.2 -> 1.5.4.1
 
 ## Bugfixes:
 
@@ -14,6 +15,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Increase the Mob Loot Fabricator Vis Crystal recipe outputs from 1 to 64 and the cooldown from 1s to 60s to reduce lag.
+- Increase the chance the Aether Legacy Golden Dungeon generates (Aether Legacy).
+- Decrease the chance the Aether Legacy Silver Dungeon generates (Aether Legacy).
 
 ## QoL Improvements:
 
