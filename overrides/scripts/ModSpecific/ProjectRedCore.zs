@@ -26,11 +26,6 @@ print("STARTING ProjectRedCore.zs");
 // Circuit Plate
 furnace.remove(<projectred-core:resource_item>);
 furnace.addRecipe(<projectred-core:resource_item> * 2, <ore:stone>);
-for i in 0 to 8 {
-    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:sedimentary_stone>.withDamage(i));
-    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:igneous_stone>.withDamage(i));
-    furnace.addRecipe(<projectred-core:resource_item> * 2, <undergroundbiomes:metamorphic_stone>.withDamage(i));
-}
 
 // Red Alloy Ingot
 IEAlloySmelter.removeRecipe(<projectred-core:resource_item:103>);

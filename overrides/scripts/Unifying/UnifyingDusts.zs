@@ -83,47 +83,41 @@ mods.tconstruct.Melting.removeRecipe(<liquid:obsidian>, <enderio:item_material:2
 //recipes.replaceAllOccurences(<ore:dustIron>, <thermalfoundation:material>, <*>);
 <ore:dustIron>.removeItems([<mekanism:dust>, <appliedenergistics2:material:49>]);
 val ironOres = [<atum:iron_ore>,<lightningcraft:ore_block>,<bno:ore_netheriron>,<abyssalcraft:abyiroore>,<minecraft:iron_ore>,<erebus:ore_iron>] as IItemStack[];
-val undergroundBiomesIronOres = [<undergroundbiomes:igneous_stone_iron_ore:*>, <undergroundbiomes:metamorphic_stone_iron_ore:*>, <undergroundbiomes:sedimentary_stone_iron_ore:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust>, <thermalfoundation:material>, ironOres, undergroundBiomesIronOres, <mekanism:dirtydust>, <minecraft:iron_ingot>);
+unifyMekanismDust(<mekanism:dust>, <thermalfoundation:material>, ironOres, <mekanism:dirtydust>, <minecraft:iron_ingot>);
 furnace.remove(<minecraft:iron_ingot>, <appliedenergistics2:material:49>);
 
 // Gold Dust
 //recipes.replaceAllOccurences(<ore:dustGold>, <thermalfoundation:material:1>, <*>);
 <ore:dustGold>.remove(<mekanism:dust:1>);
 val goldOres = [<lightningcraft:ore_block:1>,<abyssalcraft:abygolore>,<bno:ore_nethergold>,<minecraft:gold_ore>,<atum:gold_ore>,<erebus:ore_gold>] as IItemStack[];
-val undergroundBiomesGoldOres = [<undergroundbiomes:igneous_stone_gold_ore:*>, <undergroundbiomes:metamorphic_stone_gold_ore:*>, <undergroundbiomes:sedimentary_stone_gold_ore:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust:1>, <thermalfoundation:material:1>, goldOres, undergroundBiomesGoldOres, <mekanism:dirtydust:1>, <minecraft:gold_ingot>);
+unifyMekanismDust(<mekanism:dust:1>, <thermalfoundation:material:1>, goldOres, <mekanism:dirtydust:1>, <minecraft:gold_ingot>);
 
 // Copper Dust
 //recipes.replaceAllOccurences(<ore:dustCopper>, <thermalfoundation:material:64>, <*>);
 <ore:dustCopper>.removeItems([<enderio:item_material:26>,<mekanism:dust:3>,<immersiveengineering:metal:9>]);
 val copperOres = [<erebus:ore_copper>,<immersiveengineering:ore>,<bno:ore_nethercopper>,<galacticraftcore:basic_block_moon>,<mekanism:oreblock:1>,<abyssalcraft:abycopore>,<galacticraftcore:basic_block_core:5>,<thermalfoundation:ore>] as IItemStack[];
-val undergroundBiomesCopperOres = [<undergroundbiomes:igneous_stone_thermalfoundation_ore:*>,<undergroundbiomes:metamorphic_stone_thermalfoundation_ore:*>,<undergroundbiomes:sedimentary_stone_thermalfoundation_ore:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust:3>, <thermalfoundation:material:64>, copperOres, undergroundBiomesCopperOres, <mekanism:dirtydust:3>, <thermalfoundation:material:128>);
+unifyMekanismDust(<mekanism:dust:3>, <thermalfoundation:material:64>, copperOres, <mekanism:dirtydust:3>, <thermalfoundation:material:128>);
 furnace.remove(<mekanism:ingot:5>);
 
 // Tin Dust
 //recipes.replaceAllOccurences(<ore:dustTin>, <thermalfoundation:material:65>, <*>);
 <ore:dustTin>.removeItems([<mekanism:dust:4>,<enderio:item_material:27>]);
 val tinOres = [<bno:ore_nethertin>,<galacticraftcore:basic_block_moon:1>,<mekanism:oreblock:2>,<abyssalcraft:abytinore>,<galacticraftcore:basic_block_core:6>,<erebus:ore_tin>,<thermalfoundation:ore:1>] as IItemStack[];
-val undergroundBiomesTinOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.tin.name:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust:4>, <thermalfoundation:material:65>, tinOres, undergroundBiomesTinOres, <mekanism:dirtydust:4>, <thermalfoundation:material:129>);
+unifyMekanismDust(<mekanism:dust:4>, <thermalfoundation:material:65>, tinOres, <mekanism:dirtydust:4>, <thermalfoundation:material:129>);
 //furnace.remove(<thermalfoundation:material:129>, <mekanism:dust:4>);
 
 // Silver Dust
 //recipes.replaceAllOccurences(<ore:dustSilver>, <thermalfoundation:material:66>, <*>);
 <ore:dustSilver>.remove(<mekanism:dust:5>);
 val silverOres = [<bewitchment:silver_ore>,<immersiveengineering:ore:3>,<erebus:ore_silver>,<thermalfoundation:ore:2>] as IItemStack[];
-val undergroundBiomesSilverOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.silver.name:*>, <undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.silver.name:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust:5>, <thermalfoundation:material:66>, silverOres, undergroundBiomesSilverOres, <mekanism:dirtydust:5>, <thermalfoundation:material:130>);
+unifyMekanismDust(<mekanism:dust:5>, <thermalfoundation:material:66>, silverOres, <mekanism:dirtydust:5>, <thermalfoundation:material:130>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130>, <thermalfoundation:material:66>, null, 100, 512);
 
 // Lead Dust
 //recipes.replaceAllOccurences(<ore:dustLead>, <thermalfoundation:material:67>, <*>);
 <ore:dustLead>.remove(<mekanism:dust:6>);
 val leadOres = [<erebus:ore_lead>,<immersiveengineering:ore:2>,<thermalfoundation:ore:3>] as IItemStack[];
-val undergroundBiomesLeadOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];
-unifyMekanismDust(<mekanism:dust:6>, <thermalfoundation:material:67>, leadOres, undergroundBiomesLeadOres, <mekanism:dirtydust:6>, <thermalfoundation:material:131>);
+unifyMekanismDust(<mekanism:dust:6>, <thermalfoundation:material:67>, leadOres, <mekanism:dirtydust:6>, <thermalfoundation:material:131>);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:131>, <thermalfoundation:material:67>, null, 100, 512);
 
 // Aluminum Dust

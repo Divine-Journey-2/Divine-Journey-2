@@ -607,10 +607,6 @@ for cobble in <ore:cobblestone>.items {
 }
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:red_rock_cobblestone>, 300000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:blue_rock_cobblestone>, 300000);
-for i in 0 to 8 {
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:igneous_cobble>.withDamage(i), 300000);
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <undergroundbiomes:metamorphic_cobble>.withDamage(i), 300000);
-}
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 
 

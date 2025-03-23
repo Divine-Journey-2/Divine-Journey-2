@@ -350,7 +350,7 @@ recipes.remove(<immersiveengineering:toolupgrade:7>);
 recipes.addShapedMirrored(<immersiveengineering:toolupgrade:7>, [[null,<thermalfoundation:material:352>,<thermalfoundation:material:352>],[<immersiveengineering:metal_device1:6>,<immersiveengineering:metal_device1:6>,<minecraft:hopper>],[null,<thermalfoundation:material:352>,<thermalfoundation:material:352>]]);
 
 // Disabling Uranium Ores
-val UraniumOres = [<immersiveengineering:ore:5>, <undergroundbiomes:igneous_stone_immersiveengineering_ore_5:*>, <undergroundbiomes:metamorphic_stone_immersiveengineering_ore_5:*>, <undergroundbiomes:sedimentary_stone_immersiveengineering_ore_5:*>] as IItemStack[];
+val UraniumOres = [<immersiveengineering:ore:5>] as IItemStack[];
 
 mods.mekanism.combiner.removeRecipe(<immersiveengineering:ore:5>);
 mods.botania.Orechid.removeOre(<ore:oreUranium>);

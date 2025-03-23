@@ -158,16 +158,11 @@ EUCrusher.add(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>);
 mods.mekanism.crusher.addRecipe(<actuallyadditions:item_misc:5>, <actuallyadditions:item_dust:7>);
 
 // Black Quartz
-val allBlackQuartzOres = [<actuallyadditions:block_misc:3>, <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3:*>, <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3:*>, <undergroundbiomes:sedimentary_stone_actuallyadditions_block_misc_3:*>] as IItemStack[];
+val allBlackQuartzOres = [<actuallyadditions:block_misc:3>] as IItemStack[];
 for ore in allBlackQuartzOres {
     mods.mekanism.enrichment.addRecipe(ore, <actuallyadditions:item_misc:5> * 2);
 }
 var allBlackQuartzOresListed = [<actuallyadditions:block_misc:3>] as IItemStack[];
-for i in 0 to 8 {
-    allBlackQuartzOresListed += <undergroundbiomes:igneous_stone_actuallyadditions_block_misc_3>.withDamage(i);
-    allBlackQuartzOresListed += <undergroundbiomes:metamorphic_stone_actuallyadditions_block_misc_3>.withDamage(i);
-    allBlackQuartzOresListed += <undergroundbiomes:sedimentary_stone_actuallyadditions_block_misc_3>.withDamage(i);
-}
 for ore in allBlackQuartzOresListed {
     EUCrusher.add(<actuallyadditions:item_misc:5> * 2, ore);
 }
@@ -694,147 +689,18 @@ mods.enderio.SagMill.addRecipe([<minecraft:emerald> * 2, <minecraft:emerald>], [
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:65> * 2, <thermalfoundation:material>], [1.0, 0.1], <ore:oreTin>, "CHANCE_ONLY");
 mods.enderio.SagMill.addRecipe([<thermalfoundation:material:68> * 2, <thermalfoundation:material>], [1.0, 0.1], <ore:oreAluminum>, "CHANCE_ONLY");
 
-// UB Ores -> Enrichment Chamber
-val UBLeadOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_2:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.lead.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.lead.name:*>] as IItemStack[];
-val UBCertusQuartzOres = [<undergroundbiomes:igneous_stone_appliedenergistics2_quartz_ore:*>,<undergroundbiomes:metamorphic_stone_appliedenergistics2_quartz_ore:*>,<undergroundbiomes:sedimentary_stone_appliedenergistics2_quartz_ore:*>] as IItemStack[];
-val UBChargedCertusQuartzOres = [<undergroundbiomes:igneous_stone_appliedenergistics2_charged_quartz_ore:*>,<undergroundbiomes:metamorphic_stone_appliedenergistics2_charged_quartz_ore:*>,<undergroundbiomes:sedimentary_stone_appliedenergistics2_charged_quartz_ore:*>] as IItemStack[];
-val UBAmethystOres = [<undergroundbiomes:igneous_stone_mysticalworld_amethyst_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalworld_amethyst_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalworld_amethyst_ore:*>] as IItemStack[];
-val UBNickelOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.nickel.name:*>,<undergroundbiomes:igneous_stone_immersiveengineering_ore_4:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_4:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_4:*>] as IItemStack[];
-val UBOsmiumOres = [<undergroundbiomes:igneous_stone_mekanism_oreblock:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock:*>] as IItemStack[];
-val UBSilverOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_3:*>,<undergroundbiomes:igneous_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalworld_silver_ore:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.silver.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.silver.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.silver.name:*>] as IItemStack[];
-val UBGoldOres = [<undergroundbiomes:igneous_stone_gold_ore:*>,<undergroundbiomes:metamorphic_stone_gold_ore:*>,<undergroundbiomes:sedimentary_stone_gold_ore:*>] as IItemStack[];
-val UBQuartzOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_quartz:*>,<undergroundbiomes:metamorphic_stone_thaumcraft_ore_quartz:*>,<undergroundbiomes:sedimentary_stone_thaumcraft_ore_quartz:*>] as IItemStack[];
-val UBAmberOres = [<undergroundbiomes:igneous_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:metamorphic_stone_thaumcraft_ore_amber:*>,<undergroundbiomes:sedimentary_stone_thaumcraft_ore_amber:*>] as IItemStack[];
-val UBAluminumOres = [<undergroundbiomes:igneous_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_1:*>,<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.aluminum.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.aluminum.name:*>] as IItemStack[];
-val UBLapisOres = [<undergroundbiomes:igneous_stone_lapis_ore:*>,<undergroundbiomes:metamorphic_stone_lapis_ore:*>,<undergroundbiomes:sedimentary_stone_lapis_ore:*>] as IItemStack[];
-//val UBMithrilOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.mithril.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.mithril.name:*>] as IItemStack[];
-val UBRedstoneOres = [<undergroundbiomes:igneous_stone_redstone_ore:*>,<undergroundbiomes:metamorphic_stone_redstone_ore:*>,<undergroundbiomes:sedimentary_stone_redstone_ore:*>] as IItemStack[];
-val UBDimensionalShardOres = [<undergroundbiomes:igneous_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:metamorphic_stone_rftools_dimensional_shard_ore:*>,<undergroundbiomes:sedimentary_stone_rftools_dimensional_shard_ore:*>] as IItemStack[];
-val UBDiamondOres = [<undergroundbiomes:igneous_stone_diamond_ore:*>,<undergroundbiomes:metamorphic_stone_diamond_ore:*>,<undergroundbiomes:sedimentary_stone_diamond_ore:*>] as IItemStack[];
-val UBDraconiumOres = [<undergroundbiomes:igneous_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:metamorphic_stone_draconicevolution_draconium_ore:*>,<undergroundbiomes:sedimentary_stone_draconicevolution_draconium_ore:*>] as IItemStack[];
-val UBCoalOres = [<undergroundbiomes:igneous_stone_coal_ore:*>,<undergroundbiomes:metamorphic_stone_coal_ore:*>,<undergroundbiomes:sedimentary_stone_coal_ore:*>] as IItemStack[];
-val UBEmeraldOres = [<undergroundbiomes:igneous_stone_emerald_ore:*>,<undergroundbiomes:metamorphic_stone_emerald_ore:*>,<undergroundbiomes:sedimentary_stone_emerald_ore:*>] as IItemStack[];
-val UBCopperOres = [<undergroundbiomes:igneous_stone_thermalfoundation_ore:*>,<undergroundbiomes:metamorphic_stone_thermalfoundation_ore:*>,<undergroundbiomes:sedimentary_stone_thermalfoundation_ore:*>,<undergroundbiomes:igneous_stone_immersiveengineering_ore:*>,<undergroundbiomes:metamorphic_stone_immersiveengineering_ore:*>,<undergroundbiomes:sedimentary_stone_immersiveengineering_ore:*>,<undergroundbiomes:igneous_stone_mekanism_oreblock_1:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock_1:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock_1:*>] as IItemStack[];
-val UBTinOres = [<undergroundbiomes:igneous_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:metamorphic_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:sedimentary_stone_tile.thermalfoundation.ore.tin.name:*>,<undergroundbiomes:igneous_stone_mekanism_oreblock_2:*>,<undergroundbiomes:metamorphic_stone_mekanism_oreblock_2:*>,<undergroundbiomes:sedimentary_stone_mekanism_oreblock_2:*>] as IItemStack[];
-val UBIronOres = [<undergroundbiomes:igneous_stone_iron_ore:*>,<undergroundbiomes:metamorphic_stone_iron_ore:*>,<undergroundbiomes:sedimentary_stone_iron_ore:*>] as IItemStack[];
-
-for o in UBLeadOres {
-    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:67> * 2);
-}
-for o in UBCertusQuartzOres {
-    mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:0> * 4);
-}
-for o in UBChargedCertusQuartzOres {
-    mods.mekanism.enrichment.addRecipe(o, <appliedenergistics2:material:1> * 4);
-}
-for o in UBAmethystOres {
-    mods.mekanism.enrichment.addRecipe(o, <mysticalworld:amethyst_gem> * 2);
-}
-for o in UBNickelOres {
-    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:69> * 2);
-}
-for o in UBOsmiumOres {
-    mods.mekanism.enrichment.addRecipe(o, <mekanism:dust:2> * 2);
-}
-for o in UBSilverOres {
-    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:66> * 2);
-}
-for o in UBGoldOres {
-    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:1> * 2);
-}
-for o in UBQuartzOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:quartz> * 6);
-}
-for o in UBAmberOres {
-    mods.mekanism.enrichment.addRecipe(o, <thaumcraft:amber> * 2);
-}
-for o in UBAluminumOres {
-    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:68> * 2);
-}
-for o in UBLapisOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:dye:4> * 12);
-}
-//for o in UBMithrilOres {
-//    mods.mekanism.enrichment.addRecipe(o, <thermalfoundation:material:72> * 2);
-//}
-for o in UBRedstoneOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:redstone> * 12);
-}
-for o in UBDimensionalShardOres {
-    mods.mekanism.enrichment.addRecipe(o, <rftools:dimensional_shard> * 4);
-}
-for o in UBDiamondOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:diamond> * 2);
-}
-for o in UBDraconiumOres {
-    mods.mekanism.enrichment.addRecipe(o, <draconicevolution:draconium_dust> * 2);
-}
-for o in UBCoalOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:coal> * 2);
-}
-for o in UBEmeraldOres {
-    mods.mekanism.enrichment.addRecipe(o, <minecraft:emerald> * 2);
-}
-
-// UB Ores -> Purification Chamber, Chemical Injection Chamber, Chemical Dissolution Chamber
-for o in UBLeadOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:6> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:6> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:lead> * 1000);
-}
-for o in UBOsmiumOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:2> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:2> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:osmium> * 1000);
-}
-for o in UBSilverOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:5> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:5> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:silver> * 1000);
-}
-for o in UBCopperOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:3> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:3> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:copper> * 1000);
-}
-for o in UBGoldOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:1> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:1> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:gold> * 1000);
-}
-for o in UBTinOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:4> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:4> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:tin> * 1000);
-}
-for o in UBIronOres {
-    mods.mekanism.purification.addRecipe(o, <gas:oxygen>, <mekanism:clump:0> * 3);
-    mods.mekanism.chemical.injection.addRecipe(o, <gas:hydrogenchloride>, <mekanism:shard:0> * 4);
-    mods.mekanism.chemical.dissolution.addRecipe(o, <gas:iron> * 1000);
-}
-
-// UB Inferium Ores
-val UBInferiumOres = [<undergroundbiomes:igneous_stone_mysticalagriculture_inferium_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalagriculture_inferium_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalagriculture_inferium_ore:*>] as IItemStack[];
 recipes.addShapeless(<mysticalagriculture:crafting> * 4, [<ore:oreInferium>, <ore:dustPetrotheum>]);
 IECrusher.addRecipe(<mysticalagriculture:crafting> * 4, <ore:oreInferium>, 4000);
 AACrusher.addRecipe(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
 Grinder.addRecipe(<mysticalagriculture:crafting> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting>, 0.9);
 LightningCrusher.add(<mysticalagriculture:crafting> * 4, <ore:oreInferium>);
-for o in UBInferiumOres {
-    mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting> * 4);
-}
 mods.mekanism.enrichment.addRecipe(<ore:oreInferium>, <mysticalagriculture:crafting> * 4);
 
-// UB Prosperity Ores
-val UBProsperityOres = [<undergroundbiomes:igneous_stone_mysticalagriculture_prosperity_ore:*>,<undergroundbiomes:metamorphic_stone_mysticalagriculture_prosperity_ore:*>,<undergroundbiomes:sedimentary_stone_mysticalagriculture_prosperity_ore:*>] as IItemStack[];
 recipes.addShapeless(<mysticalagriculture:crafting:5> * 4, [<ore:oreProsperity>, <ore:dustPetrotheum>]);
 IECrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>, 4000);
 AACrusher.addRecipe(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
 Grinder.addRecipe(<mysticalagriculture:crafting:5> * 3, <ore:oreInferium>, 4, <mysticalagriculture:crafting:5>, 0.9);
 LightningCrusher.add(<mysticalagriculture:crafting:5> * 4, <ore:oreProsperity>);
-for o in UBProsperityOres {
-    mods.mekanism.enrichment.addRecipe(o, <mysticalagriculture:crafting:5> * 4);
-}
 mods.mekanism.enrichment.addRecipe(<ore:oreProsperity>, <mysticalagriculture:crafting:5> * 4);
 
 // Jade Ore
