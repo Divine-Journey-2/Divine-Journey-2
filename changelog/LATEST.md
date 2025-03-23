@@ -8,6 +8,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Aether Legacy 1.5.3.2 -> 1.5.4.1
 - Update Universal Tweaks 1.12.0 -> 1.14.0
 - Update Thaumic Augmentation 2.1.13 -> 2.1.14
+- Update FermiumASM 5.23 -> 5.24
 - Remove Bad Wither No Cookie! Reloaded (Universal Tweaks)
 
 ## Bugfixes:
