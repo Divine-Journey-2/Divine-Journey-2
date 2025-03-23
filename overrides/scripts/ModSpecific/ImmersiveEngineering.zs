@@ -72,7 +72,6 @@ for i in 0 to 5 {
     mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <twilightforest:tower_wood>.withDamage(i), <liquid:creosote> * 100, 2500);
 }
 mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <totemic:cedar_plank>, <liquid:creosote> * 100, 2500);
-mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <traverse:fir_planks>, <liquid:creosote> * 100, 2500);
 
 // Engineer's Workbench
 recipes.remove(<immersiveengineering:wooden_device0:2>);

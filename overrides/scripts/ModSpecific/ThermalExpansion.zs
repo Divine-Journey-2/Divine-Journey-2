@@ -605,8 +605,6 @@ mods.thermalexpansion.Crucible.removeRecipe(<minecraft:cobblestone>);
 for cobble in <ore:cobblestone>.items {
     mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, cobble, 300000);
 }
-mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:red_rock_cobblestone>, 300000);
-mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 1000, <traverse:blue_rock_cobblestone>, 300000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lava> * 9000, <extrautils2:compressedcobblestone>, 2700000);
 
 

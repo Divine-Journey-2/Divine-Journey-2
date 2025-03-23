@@ -329,7 +329,7 @@ recipes.remove(<abyssalcraft:dreadiumhoe>);
 recipes.addShapedMirrored(<abyssalcraft:dreadiumhoe>, [[<abyssalcraft:dreadiumingot>,<abyssalcraft:dreadiumingot>],[null,<abyssalcraft:corhoe>],[null,<immersiveengineering:material:2>]]);
 
 // Removing Materializer Sapling recipes
-val non_materializable_saplings = [<totemic:cedar_sapling>,<traverse:red_autumnal_sapling>,<traverse:brown_autumnal_sapling>,<traverse:orange_autumnal_sapling>,<traverse:yellow_autumnal_sapling>] as IItemStack[];
+val non_materializable_saplings = [<totemic:cedar_sapling>] as IItemStack[];
 for sapling in <ore:treeSapling>.items {
     if(!(non_materializable_saplings has sapling)) {
         mods.abyssalcraft.Materializer.removeMaterialization(sapling);

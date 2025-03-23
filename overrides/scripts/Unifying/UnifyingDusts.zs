@@ -335,10 +335,9 @@ val logs_and_planks = [
                     [<twilightforest:magic_log:1>,<twilightforest:trans_planks>],
                     [<twilightforest:magic_log:2>,<twilightforest:mine_planks>],
                     [<twilightforest:magic_log:3>,<twilightforest:sort_planks>],
-                    [<totemic:cedar_log>,<totemic:cedar_plank>],
-                    [<traverse:fir_log>,<traverse:fir_planks>]] as IItemStack[][];
+                    [<totemic:cedar_log>,<totemic:cedar_plank>]] as IItemStack[][];
 
-val logWoodNoOrigMekRecipe = [<divinerpg:divine_log>,<divinerpg:frozen_log>,<divinerpg:eden_log>,<divinerpg:wildwood_log>,<divinerpg:apalachia_log>,<divinerpg:skythern_log>,<divinerpg:mortum_log>,<divinerpg:eucalyptus_log>,<totemic:cedar_log>,<traverse:fir_log>] as IItemStack[];
+val logWoodNoOrigMekRecipe = [<divinerpg:divine_log>,<divinerpg:frozen_log>,<divinerpg:eden_log>,<divinerpg:wildwood_log>,<divinerpg:apalachia_log>,<divinerpg:skythern_log>,<divinerpg:mortum_log>,<divinerpg:eucalyptus_log>,<totemic:cedar_log>] as IItemStack[];
 
 for pair in logs_and_planks {
     if (!(logWoodNoOrigMekRecipe has pair[0])) {
