@@ -711,12 +711,6 @@ dj2.wildwood_quiver.desc0=§4§oCrafting this requires a Common Backpack you've 
 # Astral Sorcery tooltips
 dj2.infused_wood.desc0=§fOnly accepts Glimmering Dreamwood
 
-# Underground Biomes tooltips
-dj2.undergroundbiomes_sand.desc0=§5§oCan be converted into vanilla Sand by crafting
-dj2.undergroundbiomes_sand.desc1=§5§o2 of them together in a horizontal line.
-dj2.undergroundbiomes_gravel.desc0=§5§oCan be converted into vanilla Gravel by crafting
-dj2.undergroundbiomes_gravel.desc1=§5§o2 of them together in a horizontal line.
-
 # Dragon's Breath tooltips
 dj2.dragon_breath.desc0=§fIf you're having trouble collecting this item because of Botania's
 dj2.dragon_breath.desc1=§7Ender Air Bottles§r§f, try the following: Do §r§cNOT§r§f Right Click on blocks,
