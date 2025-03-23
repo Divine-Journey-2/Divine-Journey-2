@@ -884,12 +884,6 @@
       "clientOnly": true
     },
     {
-      "slug": "traverse-reforged",
-      "projectID": 267769,
-      "fileID": 2613657,
-      "required": true
-    },
-    {
       "slug": "mekanism",
       "projectID": 268560,
       "fileID": 2835175,
