@@ -35,7 +35,6 @@ recipes.addShapeless(<contenttweaker:rough_iron_mesh>, [<contenttweaker:rough_ha
 recipes.addShapeless(<contenttweaker:burning_essence>, [<ore:dyeYellow>, <minecraft:coal>.anyDamage()]);
 recipes.addShaped(<contenttweaker:rough_hammer>, [[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],[null,<ore:stickWood>,null]]);
 recipes.remove(<minecraft:furnace>);
-<ore:slabCobblestone>.addItems([<undergroundbiomes:igneous_cobble_halfslab:*>,<undergroundbiomes:metamorphic_cobble_halfslab:*>,<undergroundbiomes:sedimentary_stone_halfslab:*>]);
 recipes.addShaped(<minecraft:furnace>, [[<ore:compressed1xCobblestone>,<ore:slabCobblestone>,<ore:compressed1xCobblestone>],[<immersiveengineering:material:1>,<ore:blockCoal>,<immersiveengineering:material:1>],[<ore:compressed1xCobblestone>,<ore:slabCobblestone>,<ore:compressed1xCobblestone>]]);
 
 // Stone Slab
