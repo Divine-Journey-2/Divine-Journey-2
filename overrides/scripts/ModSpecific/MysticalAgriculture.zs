@@ -104,12 +104,6 @@ recipes.addShaped(<thaumcraft:sapling_greatwood> * 4, [[null,<mysticalagricultur
 recipes.addShaped(<evilcraft:undead_sapling> * 4, [[<mysticalagriculture:redstone_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:redstone_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:redstone_essence>,<mysticalagriculture:nature_essence>],[<mysticalagriculture:redstone_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:redstone_essence>]]);
 recipes.addShaped(<extrautils2:ironwood_sapling> * 4, [[<mysticalagriculture:iron_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:iron_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[<mysticalagriculture:iron_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:iron_essence>]]);
 
-recipes.addShaped(<traverse:fir_sapling> * 4, [[<mysticalagriculture:fire_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<traverse:red_autumnal_sapling> * 4, [[<mysticalagriculture:fire_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<traverse:brown_autumnal_sapling> * 4, [[<mysticalagriculture:fire_essence>,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<traverse:orange_autumnal_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,null],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-recipes.addShaped(<traverse:yellow_autumnal_sapling> * 4, [[null,<mysticalagriculture:wood_essence>,<mysticalagriculture:fire_essence>],[<mysticalagriculture:nature_essence>,<mysticalagriculture:iron_essence>,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
-
 recipes.addShaped(<abyssalcraft:dreadsapling> * 4, [[<mysticalagriculture:redstone_essence>,null,<mysticalagriculture:redstone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<abyssalcraft:dltsapling> * 4, [[<mysticalagriculture:obsidian_essence>,null,<mysticalagriculture:obsidian_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
 recipes.addShaped(<aether_legacy:golden_oak_sapling> * 4, [[<mysticalagriculture:glowstone_essence>,null,<mysticalagriculture:glowstone_essence>],[<mysticalagriculture:nature_essence>,null,<mysticalagriculture:nature_essence>],[null,<mysticalagriculture:wood_essence>,null]]);
@@ -171,7 +165,7 @@ function addLogRecipes(output as IItemStack, sapling_input as IIngredient) {
     recipes.addShaped(output * 16, [[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,sapling_input,<mysticalagriculture:wood_essence>],[<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>,<mysticalagriculture:wood_essence>]]);
 }
 
-addLogRecipes(<minecraft:log>, <minecraft:sapling> | <quark:variant_sapling> | <traverse:red_autumnal_sapling> | <traverse:brown_autumnal_sapling> | <traverse:orange_autumnal_sapling>| <traverse:yellow_autumnal_sapling>);
+addLogRecipes(<minecraft:log>, <minecraft:sapling> | <quark:variant_sapling>);
 addLogRecipes(<minecraft:log2:1>, <minecraft:sapling:5>);
 addLogRecipes(<minecraft:log:2>, <minecraft:sapling:2>);
 addLogRecipes(<minecraft:log:1>, <minecraft:sapling:1> | <quark:variant_sapling:1>);
@@ -202,7 +196,6 @@ addLogRecipes(<bewitchment:dragons_blood_wood>, <bewitchment:dragons_blood_sapli
 addLogRecipes(<bewitchment:cypress_wood>, <bewitchment:cypress_sapling>);
 addLogRecipes(<bewitchment:elder_wood>, <bewitchment:elder_sapling>);
 addLogRecipes(<bewitchment:juniper_wood>, <bewitchment:juniper_sapling>);
-addLogRecipes(<traverse:fir_log>, <traverse:fir_sapling>);
 addLogRecipes(<erebus:log_balsam>, <erebus:sapling_balsam>);
 addLogRecipes(<erebus:log_mossbark>, <erebus:sapling_mossbark>);
 addLogRecipes(<erebus:log_asper>, <erebus:sapling_asper>);
