@@ -131,12 +131,6 @@
       "required": true
     },
     {
-      "slug": "thaumcraft",
-      "projectID": 223628,
-      "fileID": 2629023,
-      "required": true
-    },
-    {
       "slug": "storage-drawers",
       "projectID": 223852,
       "fileID": 4655859,
