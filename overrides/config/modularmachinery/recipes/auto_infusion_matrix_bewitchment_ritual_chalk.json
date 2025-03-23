@@ -11,7 +11,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "undergroundbiomes:sedimentary_stone@1"
+            "item": "minecraft:gravel"
         },
         {
             "type": "item",
