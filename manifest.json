@@ -1049,12 +1049,6 @@
       "required": true
     },
     {
-      "slug": "underground-biomes",
-      "projectID": 293268,
-      "fileID": 3832678,
-      "required": true
-    },
-    {
       "slug": "alchemistry",
       "projectID": 293425,
       "fileID": 3186612,
