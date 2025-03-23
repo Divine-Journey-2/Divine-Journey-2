@@ -694,12 +694,6 @@ dj2.imp_leather.desc0=§f可使用根源魔法的仪式：召唤生物来生成�
 # Astral Sorcery tooltips
 dj2.infused_wood.desc0=§f仅接受微光梦之木
 
-# Underground Biomes tooltips
-dj2.undergroundbiomes_sand.desc0=§5§o可通过将 2 个沙子水平合成
-dj2.undergroundbiomes_sand.desc1=§5§o来转化为原版沙子。
-dj2.undergroundbiomes_gravel.desc0=§5§o可通过将 2 个沙砾水平合成
-dj2.undergroundbiomes_gravel.desc1=§5§o来转化为原版沙砾。
-
 # Dragon's Breath tooltips
 dj2.dragon_breath.desc0=§f若在收集龙息时因为植物魔法的§7末地空气§r§f而遇到困难，
 dj2.dragon_breath.desc1=§f可以尝试以下方法：§r§c不要§r§f对着方块右击，调整角度，
