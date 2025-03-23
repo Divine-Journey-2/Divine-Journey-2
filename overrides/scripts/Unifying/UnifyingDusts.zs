@@ -29,14 +29,11 @@ function removeDustSmeltingLightningCraft(dust as IItemStack, correctDust as IIt
     LightningCrusher.add(correctDust, gem);
 }
 
-function unifyMekanismDust(mekDust as IItemStack, correctDust as IItemStack, enrichableOres as IItemStack[], undergroundBiomesOres as IItemStack[], dirtyDust as IItemStack, ingot as IItemStack) {
+function unifyMekanismDust(mekDust as IItemStack, correctDust as IItemStack, enrichableOres as IItemStack[], dirtyDust as IItemStack, ingot as IItemStack) {
     mods.mekanism.enrichment.removeRecipe(dirtyDust);
     mods.mekanism.enrichment.addRecipe(dirtyDust, correctDust);
     for ore in enrichableOres {
         mods.mekanism.enrichment.removeRecipe(ore);
-        mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
-    }
-    for ore in undergroundBiomesOres {
         mods.mekanism.enrichment.addRecipe(ore, correctDust * 2);
     }
     mods.mekanism.crusher.removeRecipe(mekDust);

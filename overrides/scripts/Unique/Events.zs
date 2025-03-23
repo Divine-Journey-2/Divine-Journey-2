@@ -89,26 +89,6 @@ events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
     if (!e.isPlayer || !e.silkTouch) {
         return;
     }
-
-    // If we are using silk touch on UB ores, give the ore block of the mod the ore is from instead of the UB %stonetype% ore block.
-    if (e.drops.length == 1 && e.block.definition.id.startsWith("undergroundbiomes")) {
-        var ores = e.drops[0].stack.ores;
-        if (!isNull(ores)) {
-            if (ores.length == 1) {
-                val desiredDrop = oreConversion[ores[0].name];
-                if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
-            } else if (ores.length >= 1) {
-                // If we have multiple oredicts possible, iterate through until we find the predetermined "correct" oredict
-                for ore in ores {
-                    if (correctOreDict has ore.name) {
-                        val desiredDrop = oreConversion[ore.name];
-                        if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
-                        break;
-                    }
-                }
-            }
-        }
-    }
 });
 
 static astralTiers as string[] = [
