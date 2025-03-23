@@ -42,6 +42,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improve the performance of the EvilCraft Vengeance Spirit config for mob farms (Universal Tweaks).
 - Improve the performance of Iron Chest Crystal Chest/Shulker Box rendering (Universal Tweaks).
 - Remove Thaumcraft Vis Crystals and tree generation from non-Overworld/Deep Dark dimensions (Thaumcraft Fix).
+- Disable Project Red 3D Logic Wires, saving ~100mb of memory.
 
 ## Text and Quest Updates:
 
