@@ -39,10 +39,6 @@ Who doesn't LOVE armor crafting chains...?!?!
 
 ![Preview Image](images/armor_tiering.png)
 
-Totemic requires Parrots for the Eagle transformation Ritual. They have been added to 16 new biomes so they're easier to find. This one's the Canyon biome added by Traverse!
-
-![Preview Image](images/parrot_biomes.png)
-
 Requires Totemic Buffalo Hide!
 
 ![Preview Image](images/bed_recipe.png)
