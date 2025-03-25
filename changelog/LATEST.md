@@ -67,5 +67,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix `update_version.py` not loading the changelog text onto CurseForge and requiring manual intervention.
 - Change `TEMPLATE.md` to only have two blank lines between entries instead of three with the goal of reducing merge conflicts.
 - Rename releases with only a single digit for their major version to have a `0` prefixed to it.
+- Make `nightly.yml` fetch tags when checking out the repo, fixing nightly builds not including the version number.
 
 ## Miscellaneous Changes:

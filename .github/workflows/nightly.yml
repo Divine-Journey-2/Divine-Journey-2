@@ -44,6 +44,8 @@ jobs:
       # Setup the repo, download Python, and install the requests library
       - name: "Checkout Repo"
         uses: actions/checkout@v4
+        with:
+          fetch-tags: true
 
       - name: "Setup Python"
         uses: actions/setup-python@v5
