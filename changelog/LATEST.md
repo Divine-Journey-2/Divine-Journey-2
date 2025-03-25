@@ -9,6 +9,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Universal Tweaks 1.12.0 -> 1.14.0
 - Update Thaumic Augmentation 2.1.13 -> 2.1.14
 - Update FermiumASM 5.23 -> 5.24
+- Update MixinBooter 9.4 -> 10.6
+- Update ConfigAnytime 2.0 -> 3.0
 - Remove Bad Wither No Cookie! Reloaded (Universal Tweaks)
 
 ## Bugfixes:
