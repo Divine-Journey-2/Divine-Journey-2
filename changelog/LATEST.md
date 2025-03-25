@@ -9,6 +9,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Universal Tweaks 1.12.0 -> 1.14.0
 - Update Thaumic Augmentation 2.1.13 -> 2.1.14
 - Update FermiumASM 5.23 -> 5.24
+- Update MixinBooter 9.4 -> 10.6
+- Update ConfigAnytime 2.0 -> 3.0
 - Remove Bad Wither No Cookie! Reloaded (Universal Tweaks)
 
 ## Bugfixes:
@@ -26,6 +28,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable Vanilla Minecart dropping itself as it occasionally caused crashes.
 - Fix several duplication bugs in Thaumcraft (Thaumcraft Fix).
 - Fix multiple bugs related to the Thaumcraft Focal Manipulator (Thaumcraft Fix).
+- Fix the `launch.sh` server file using bash exclusive features with a shebang of sh.
 
 ## Balance Adjustments:
 
@@ -43,6 +46,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improve the performance of Iron Chest Crystal Chest/Shulker Box rendering (Universal Tweaks).
 - Remove Thaumcraft Vis Crystals and tree generation from non-Overworld/Deep Dark dimensions (Thaumcraft Fix).
 - Disable Project Red 3D Logic Wires, saving ~100mb of memory.
+- Enable the Swing Through Grass tweak due to the related bug being fixed.
 
 ## Text and Quest Updates:
 
@@ -64,5 +68,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix `update_version.py` not loading the changelog text onto CurseForge and requiring manual intervention.
 - Change `TEMPLATE.md` to only have two blank lines between entries instead of three with the goal of reducing merge conflicts.
 - Rename releases with only a single digit for their major version to have a `0` prefixed to it.
+- Make `nightly.yml` fetch tags when checking out the repo, fixing nightly builds not including the version number.
 
 ## Miscellaneous Changes:
