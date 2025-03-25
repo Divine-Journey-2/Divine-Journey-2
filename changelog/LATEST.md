@@ -28,6 +28,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable Vanilla Minecart dropping itself as it occasionally caused crashes.
 - Fix several duplication bugs in Thaumcraft (Thaumcraft Fix).
 - Fix multiple bugs related to the Thaumcraft Focal Manipulator (Thaumcraft Fix).
+- Fix the `launch.sh` server file using bash exclusive features with a shebang of sh.
 
 ## Balance Adjustments:
 
