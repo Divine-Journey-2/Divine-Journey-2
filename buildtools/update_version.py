@@ -71,7 +71,7 @@ def convertChangelog(version: str):
     if getenv("GITHUB_OUTPUT") != None:
         with open(getenv("GITHUB_OUTPUT"), "a") as fh:
             with open(changelogFile) as changelog:
-                print(f"changelog={UPDATE_QUESTBOOK}{changelog.read()}", file=fh)
+                print(f"changelog={changelog.read()}", file=fh)
 
     copyfile("changelog/TEMPLATE.md", "changelog/LATEST.md")
 
