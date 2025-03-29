@@ -1,8 +1,3 @@
-YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
-/bq_admin default load
-(This has to only be done once in multiplayer, by an admin.)
-
-Update 2.21.2:
 
 ## Mod Modifications:
 
