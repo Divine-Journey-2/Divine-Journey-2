@@ -1437,6 +1437,30 @@
       "projectID": 258881,
       "fileID": 2512758,
       "required": true
+    },
+    {
+      "slug": "mixin-0.7-0.8-compatibility",
+      "projectID": 405327,
+      "fileID": 4641243,
+      "required": true
+    },
+    {
+      "slug": "better-biome-blend",
+      "projectID": 446253,
+      "fileID": 3554486,
+      "required": true
+    },
+    {
+      "slug": "amidst-for-forge",
+      "projectID": 286811,
+      "fileID": 2771671,
+      "required": true
+    },
+    {
+      "slug": "faster-ladder-climbing",
+      "projectID": 258881,
+      "fileID": 2512758,
+      "required": true
     }
   ],
   "overrides": "overrides"
