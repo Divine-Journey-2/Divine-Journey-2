@@ -135,7 +135,7 @@ Fey.addRecipe("runic_shears", <roots:runic_shears>, [<minecraft:shears>, <roots:
 
 // Stalicripe
 Pyre.removeRecipe(<roots:stalicripe>);
-Pyre.addRecipe("stalicripe", <roots:stalicripe>, [<roots:infernal_bulb>, <roots:wildewheet>, <roots:wildwood_log>, <roots:runestone>, <betternether:stalagnate_stem>]);
+Pyre.addRecipe("stalicripe", <roots:stalicripe>, [<roots:infernal_bulb>, <roots:wildewheet>, <roots:wildwood_log>, <roots:runestone>, <thaumcraft:nugget:10>]);
 
 // Fey Leather
 <ore:leather>.remove(<roots:fey_leather>);
@@ -240,7 +240,7 @@ Mortar.changeSpell("spell_wild_fire", [<minecraft:diamond_sword>, <minecraft:tnt
 Mortar.changeSpell("spell_natures_scythe", [<roots:wildroot>, <roots:wildroot>, <ore:tallgrass>, <mysticalworld:aubergine>, <roots:diamond_knife>]);
 Mortar.changeSpell("spell_radiance", [<minecraft:glowstone>, <roots:stalicripe>, <roots:cloud_berry>, <betternether:black_apple>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_fey_light", [<minecraft:glowstone>, <roots:cloud_berry>, <betternether:eye_seed>, <minecraft:double_plant>, <ore:blockAmethyst>]);
-Mortar.changeSpell("spell_desaturate", [<minecraft:bowl>, <minecraft:rotten_flesh>, <roots:baffle_cap_mushroom>, <betternether:stalagnate_bowl_mushroom>, <roots:petals>]);
+Mortar.changeSpell("spell_desaturate", [<minecraft:bowl>, <minecraft:rotten_flesh>, <roots:baffle_cap_mushroom>, <minecraft:mushroom_stew>, <roots:petals>]);
 Mortar.changeSpell("spell_augment", [<minecraft:iron_block>, <mysticalworld:aubergine>, <roots:cloud_berry>, <roots:wildewheet>, <ore:blockAmethyst>]);
 Mortar.changeSpell("spell_storm_cloud", [<minecraft:obsidian>, <roots:cloud_berry>, <roots:runic_dust>, <roots:dewgonia>, <chisel:cloud>]);
 Mortar.changeSpell("spell_dandelion_winds", [<minecraft:yellow_flower>, <roots:cloud_berry>, <roots:runic_dust>, <minecraft:piston>, <ore:blockAmethyst>]);
