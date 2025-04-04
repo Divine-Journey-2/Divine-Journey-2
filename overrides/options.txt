@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:[]
+resourcePacks:["Modernity-f3-3.10.2.zip","ModernityExtra-v1.0.1.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -98,14 +98,14 @@ key_roots.keybinds.spell_library:24:SHIFT
 key_roots.keybinds.cycle:0
 key_roots.keybinds.delete_spell:0
 key_keybind.baublesinventory:0
-key_quark.keybind.lockBuilding:0
+key_quark.keybind.toggleAutojump:0
 key_quark.keybind.dropoff:0
 key_quark.keybind.changeHotbar:0
 key_quark.keybind.chestSort:0
 key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:45
 key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:44
+key_quark.keybind.chestExtract:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -124,7 +124,7 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.toggleAutojump:0
+key_quark.keybind.lockBuilding:0
 key_pe.key.armor_toggle:0
 key_pe.key.charge:0
 key_pe.key.extra_function:0
@@ -261,7 +261,7 @@ key_Toggle Farting:0
 key_Open Exalted Crafter:0
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:19:ALT
-key_invtweaks.key.sort:74
+key_invtweaks.key.sort:19
 key_key.jeiutilities.displayRecipe:29
 key_key.jeiutilities.pickBookmark:-98
 key_key.jeiutilities.transferRecipe:17:CONTROL
