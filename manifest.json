@@ -1467,6 +1467,30 @@
       "projectID": 242195,
       "fileID": 2813586,
       "required": true
+    },
+    {
+      "slug": "give-me-back-my-hp",
+      "projectID": 527688,
+      "fileID": 3460723,
+      "required": true
+    },
+    {
+      "slug": "torohealth-damage-indicators",
+      "projectID": 245733,
+      "fileID": 2483817,
+      "required": true
+    },
+    {
+      "slug": "armor-toughness-bar",
+      "projectID": 313816,
+      "fileID": 2851670,
+      "required": true
+    },
+    {
+      "slug": "overloaded-armor-bar",
+      "projectID": 314002,
+      "fileID": 2719400,
+      "required": true
     }
   ],
   "overrides": "overrides"
