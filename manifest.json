@@ -1469,12 +1469,6 @@
       "required": true
     },
     {
-      "slug": "give-me-back-my-hp",
-      "projectID": 527688,
-      "fileID": 3460723,
-      "required": true
-    },
-    {
       "slug": "torohealth-damage-indicators",
       "projectID": 245733,
       "fileID": 2483817,
