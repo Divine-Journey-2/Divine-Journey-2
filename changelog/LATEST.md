@@ -21,5 +21,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
+- Update Issue Templates to use types, fix issues, and order in a more valuable way.
 
 ## Miscellaneous Changes:

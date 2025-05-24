@@ -1,0 +1,57 @@
+name: Typo Report
+description: There is a typo / misspelling / untranslated text / grammatical error somewhere.
+labels: ["Typo"]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        If the typo occurs in the questbook, please add the Questbook label.
+        If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Modpack version
+      description: If you are not using the latest version, make sure that the request has not already been fulfilled.
+      placeholder: "Example: 2.X.X"
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: What language does it occur in?
+      description: If there is no localization done, select Unlocalized. Otherwise, select the relevant language.
+      options:
+        - American English (default)
+        - Chinese
+        - Unlocalized
+    validations:
+      required: true
+  - type: textarea
+    id: typo-location
+    attributes:
+      label: Where is the typo located?
+      description: |
+        eg Quests / Title Screen / Tooltips / Advancements. If possible, link the location in the DJ2 code it occurs.
+        Note: *please* do not use the pound symbol (`#`) before the quest id unless it is formatted in code. Doing this will cause it to link to a GitHub issue, causing noise and clutter.
+      placeholder: "Example: quest \\``#57`\\` had ... / quest id 57 had ... / In the 19th Chapter in the description of the Quest called ... "
+    validations:
+      required: true
+  - type: textarea
+    id: exact-fix
+    attributes:
+      label: Exact fix
+      placeholder: "Example: It should be 'assignments' not 'assingments'. / It should be 'that you used to make', not 'that you used to made'."
+    validations:
+      required: true
+  - type: input
+    id: discord-id
+    attributes:
+      label: Your Divine Journey 2 Discord Username
+      description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this typo report!
