@@ -32,8 +32,10 @@ body:
     id: typo-location
     attributes:
       label: Where is the typo located?
-      description: eg Quests / Title Screen / Tooltips / Advancements. If possible, link the location in the DJ2 code it occurs.
-      placeholder: "Example: In the 19th Chapter in the description of the Quest called ... "
+      description: |
+        eg Quests / Title Screen / Tooltips / Advancements. If possible, link the location in the DJ2 code it occurs.
+        Note: *please* do not use the pound symbol (`#`) before the quest id unless it is formatted in code. Doing this will cause it to link to a GitHub issue, causing noise and clutter.
+      placeholder: "Example: quest \\``#57`\\` had ... / quest id 57 had ... / In the 19th Chapter in the description of the Quest called ... "
     validations:
       required: true
   - type: textarea
