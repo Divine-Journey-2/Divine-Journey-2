@@ -28,7 +28,7 @@ timeout /t 3
 echo.
 echo Starting autorelaunch process.
 echo.
-:loop
+:server_loop
 %JAVA_VERSION% -server -Xms%MIN_RAM% -Xmx%MAX_RAM% %JAVA_PARAMETERS% -jar %FORGE_JAR% nogui
 
 echo.
