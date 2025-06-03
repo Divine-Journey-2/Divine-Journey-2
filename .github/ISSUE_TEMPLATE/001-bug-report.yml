@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
-        In particular, check if it is a [Known Issue](https://github.com/Divine-Journey-2/Divine-Journey-2/issues?q=state%3Aopen%20label%3A"Known Issue").
+        In particular, check if it is a [Known Issue](https://github.com/Divine-Journey-2/Divine-Journey-2/issues?q=state%3Aopen%20label%3A"Known%20Issue").
         Then, if you have OptiFine installed and it is a visual bug, remove OptiFine and confirm that it happens without OptiFine.
         If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
   - type: input
