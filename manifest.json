@@ -1353,6 +1353,12 @@
       "clientOnly": true
     },
     {
+      "slug": "galacticraft-legacy",
+      "projectID": 564236,
+      "fileID": 6364107,
+      "required": true
+    },
+    {
       "slug": "ae2-extended-life",
       "projectID": 570458,
       "fileID": 5147702,
