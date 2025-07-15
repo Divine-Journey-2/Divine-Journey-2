@@ -3,9 +3,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
+- Update Thaumcraft Fix 1.1.2 -> 1.1.5
 
 ## Bugfixes:
 
+- Fix Thaumcraft Crystals and vegetation not spawning in dimensions it should.
 
 ## Balance Adjustments:
 
