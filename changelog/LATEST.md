@@ -12,6 +12,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
+- Disable the Fog in Atum that made it extremely difficult to see anything. This fog effect was broken and didn't appear prior to 2.21.1, where it was fixed by accident.
 
 ## Text and Quest Updates:
 
