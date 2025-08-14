@@ -13,6 +13,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Balance Adjustments:
 
+- Change DankNull from being able to convert most oredicts to just a few.
 
 ## QoL Improvements:
 
