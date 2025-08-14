@@ -9,6 +9,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix Thaumcraft Crystals and vegetation not spawning in dimensions it should.
 - Fix Thaumic Augmentation Terraformer not functioning.
+- Fix Observers not functioning as normal in some flying machines.
 
 ## Balance Adjustments:
 
