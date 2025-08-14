@@ -21,6 +21,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable the Fog in Atum that made it extremely difficult to see anything. This fog effect was broken and didn't appear prior to 2.21.1, where it was fixed by accident.
 - Generate Thaumcraft crystals and vegetation in the emptiness dimension.]
 - Add an AbyssalCraft log to the logWood oredict to facilitate using ore excavation on it.
+- Prevent veinmining your entire ME system by preventing cables from being veinmined.
 
 ## Text and Quest Updates:
 
