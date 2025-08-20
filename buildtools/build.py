@@ -136,8 +136,11 @@ def getApiKey(key: str) -> str:
         key = os.getenv("CFAPIKEY")
 
     if (key == None):
-        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
-            key = file.readline().replace("\n", "")
+        try:
+            with open(f"{basePath}/buildtools/API-KEY", "r") as file:
+                key = file.readline().strip()
+        except:
+            None
 
     return key
 
