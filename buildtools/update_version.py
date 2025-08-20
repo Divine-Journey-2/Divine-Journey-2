@@ -8,7 +8,6 @@
 Presumes that the old version is exactly equal to the tag used
 """
 
-import sys
 from argparse import ArgumentParser
 from subprocess import run
 from os import getenv, path

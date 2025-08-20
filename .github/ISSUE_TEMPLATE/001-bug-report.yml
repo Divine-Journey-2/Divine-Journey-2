@@ -1,12 +1,15 @@
-name: Bug report
+name: Bug Report
 description: There is a bug that needs to be fixed.
 labels: ["Bug"]
+type: Bug
 body:
   - type: markdown
     attributes:
       value: |
-        First, check if your request has been submitted before or is a [Known Issue](https://github.com/Divine-Journey-2/main/issues?q=label%253A%22Known+Issue%22). If it is, please don't submit a duplicate.
-        Then, if you have Optifine installed and it is a visual bug, remove Optifine and confirm that it happens without Optifine.
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        In particular, check if it is a [Known Issue](https://github.com/Divine-Journey-2/Divine-Journey-2/issues?q=state%3Aopen%20label%3A"Known%20Issue").
+        Then, if you have OptiFine installed and it is a visual bug, remove OptiFine and confirm that it happens without OptiFine.
+        If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
   - type: input
     id: modpack-version
     attributes:
@@ -52,4 +55,8 @@ body:
     attributes:
       label: Your Divine Journey 2 Discord Username
       description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
-      placeholder: "Example: Dyno#3861"
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this bug report!

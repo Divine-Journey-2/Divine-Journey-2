@@ -14,6 +14,9 @@ print("STARTING AbyssalCraft.zs");
 recipes.removeShaped(<abyssalcraft:ironp>, [[<ore:ingotIron>],[<ore:ingotIron>]]);
 recipes.addShapeless(<abyssalcraft:ironp>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1), <thermalfoundation:material:32>]);
 
+// Darklands Wood - used for oreexcavation purposes
+<ore:logWood>.add(<abyssalcraft:dltlog2:12>);
+
 // Wooden Crate
 recipes.remove(<abyssalcraft:crate>);
 recipes.addShaped(<abyssalcraft:crate>, [[<ore:logWood>,<ore:plankWood>,<ore:logWood>],[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],[<ore:logWood>,<ore:plankWood>,<ore:logWood>]]);
