@@ -1,12 +1,15 @@
-name: Crash report
-description: The game crashed on a certain action
+name: Crash Report
+description: The game crashed on a certain action.
 labels: ["Crash"]
+type: Bug
 body:
   - type: markdown
     attributes:
       value: |
-        First, check if your request has been submitted before or is a [Known Issue](https://github.com/Divine-Journey-2/main/issues?q=label%253A%22Known+Issue%22). If it is, please don't submit a duplicate.
-        Then, if you have Optifine installed and the crash is related to a visual issue, remove Optifine and confirm that it happens without Optifine.
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        In particular, check if it is a [Known Issue](https://github.com/Divine-Journey-2/Divine-Journey-2/issues?q=state%3Aopen%20label%3A"Known%20Issue").
+        Then, if you have OptiFine installed and the crash is related to a visual issue, remove OptiFine and confirm that it happens without OptiFine.
+        If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
   - type: input
     id: modpack-version
     attributes:
@@ -19,7 +22,7 @@ body:
     id: java-version
     attributes:
       label: Java version
-      description: "Note: if you are using Curseforge as the launcher, due to a bug with Curseforge, you are using Java 1.8.0_51 (check your crash log). As you are using a Java version that dates to late 2015, you will run into a number of issues you wouldn't otherwise."
+      description: "Note: if you are using CurseForge as the launcher, due to a bug with CurseForge, you are using Java 1.8.0_51 (check your crash log). As you are using a Java version that dates to late 2015, you will run into a number of issues you wouldn't otherwise."
       placeholder: "Example: 1.8.0_311"
     validations:
       required: true
@@ -64,7 +67,8 @@ body:
         Crash reports are found in the `your_minecraft_instance/crash-reports` folder.
         If no crash report generated, please include the `your_mincraft_instance/logs/latest.log` file. Note that the latest.log is overwritten every time you launch the game, and so this must happen as soon as you crash.
         You can attach any number of crash reports, but please describe when each of them occurred.
-        You can either upload the file directly to github, or use [pastebin](https://pastebin.com/), [paste.ee](https://paste.ee/), or any other paste site.
+        You can either upload the file directly to github, or use [pastebin](https://pastebin.com/), [paste.ee](https://paste.ee/), [mclogs](https://mclo.gs), or any other paste site.
+        **Do not paste the contents of either these files directly into the text box.**
     validations:
       required: true
   - type: textarea
@@ -79,4 +83,8 @@ body:
     attributes:
       label: Your Divine Journey 2 Discord Username
       description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
-      placeholder: "Example: Dyno#3861"
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this crash report!

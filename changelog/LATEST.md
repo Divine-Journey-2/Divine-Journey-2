@@ -32,6 +32,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
+- Update Issue Templates to use types, fix issues, and order in a more valuable way.
 - Fix Python build.py file not functioning properly if the API key is not set and the file does not exist.
 - Add a requirements.txt file for the build.py file.
 
