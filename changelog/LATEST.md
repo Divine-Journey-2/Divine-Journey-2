@@ -37,3 +37,5 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a requirements.txt file for the build.py file.
 
 ## Miscellaneous Changes:
+
+- Change the Featured Server from PixelGaming to Apollo Network
