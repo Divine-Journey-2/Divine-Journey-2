@@ -11,6 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Thaumic Augmentation Terraformer not functioning.
 - Fix Observers not functioning as normal in some flying machines.
 - Add a recipe to fix Holystone with invalid metadata.
+- Fix the `autolaunch.bat` server file trying to goto an undefined label.
 
 ## Balance Adjustments:
 
