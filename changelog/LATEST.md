@@ -3,42 +3,39 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
-- Add VintageFix 0.5.5
+- Update Thaumcraft Fix 1.1.2 -> 1.1.5
 
 ## Bugfixes:
 
-- Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
-- Fix the server sometimes freezing on shutdown instead of properly shutting down (VintageFix).
-- Fix the Mob Loot Fabricator Vis Crystal recipe not appearing in JEI when searching for Vis Crystals.
+- Fix Thaumcraft Crystals and vegetation not spawning in dimensions it should.
+- Fix Thaumic Augmentation Terraformer not functioning.
+- Fix Observers not functioning as normal in some flying machines.
+- Add a recipe to fix Holystone with invalid metadata.
 
 ## Balance Adjustments:
 
-- Increase the Mob Loot Fabricator Vis Crystal recipe outputs from 1 to 64 and the cooldown from 1s to 60s to reduce lag.
+- Change DankNull from being able to convert most oredicts to just a few.
 
 ## QoL Improvements:
 
-- Improve rendering performance and memory usage via a number of optimizations (VintageFix).
-- Cache the entry points of mod jars (VintageFix).
+- Disable the Fog in Atum that made it extremely difficult to see anything. This fog effect was broken and didn't appear prior to 2.21.1, where it was fixed by accident.
+- Disable Atum Sandstorms, as with the fog and sand levels disabled it just adds small particles to the screen.
+- Generate Thaumcraft crystals and vegetation in the emptiness dimension.
+- Add an AbyssalCraft log to the logWood oredict to facilitate using ore excavation on it.
+- Prevent veinmining your entire ME system by preventing cables from being veinmined.
 
 ## Text and Quest Updates:
 
-- Ensure Questbook titles and descriptions containing equal signs that should have whitespace around them actually have whitespace.
-- Add a note that higher HP mobs yield more Blood Magic LE and Will and EvilCraft Blood to some quests.
-- Fix incomplete information about the function of Spark Augments in the quest describing them.
-- Add information on to tame and breed Eagles in the relevant quest.
-- Add information about how AbyssalCraft Statues need sky access to work in quest to craft them.
-- Add information about how the destructive effects of AbyssalCraft Statues have been disabled to the AbyssalCraft Statues quest.
 
 ## Texture Transformations:
 
 
-
 ## GitHub Developments:
 
-- Fix the main menu containing `@PACK_VERSION@` instead of the actual version.
-- Improve the usability of the `build.py` build tool.
-- Fix `update_version.py` not loading the changelog text onto CurseForge and requiring manual intervention.
-- Change `TEMPLATE.md` to only have two blank lines between entries instead of three with the goal of reducing merge conflicts.
-- Rename releases with only a single digit for their major version to have a `0` prefixed to it.
+- Update Issue Templates to use types, fix issues, and order in a more valuable way.
+- Fix Python build.py file not functioning properly if the API key is not set and the file does not exist.
+- Add a requirements.txt file for the build.py file.
 
 ## Miscellaneous Changes:
+
+- Change the Featured Server from PixelGaming to Apollo Network

@@ -813,7 +813,7 @@
     {
       "slug": "aether",
       "projectID": 255308,
-      "fileID": 3280119,
+      "fileID": 6316434,
       "required": true
     },
     {
@@ -838,12 +838,6 @@
       "slug": "wireless-redstone-cbe",
       "projectID": 260824,
       "fileID": 2755798,
-      "required": true
-    },
-    {
-      "slug": "bad-wither-no-cookie-reloaded",
-      "projectID": 261251,
-      "fileID": 3045651,
       "required": true
     },
     {
@@ -1216,7 +1210,7 @@
     {
       "slug": "thaumic-augmentation",
       "projectID": 319441,
-      "fileID": 5129455,
+      "fileID": 6047659,
       "required": true
     },
     {
@@ -1324,7 +1318,7 @@
     {
       "slug": "mixin-booter",
       "projectID": 419286,
-      "fileID": 5739618,
+      "fileID": 6344449,
       "required": true
     },
     {
@@ -1380,7 +1374,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 5529764,
+      "fileID": 6123916,
       "required": true
     },
     {
@@ -1399,7 +1393,7 @@
     {
       "slug": "configanytime",
       "projectID": 870276,
-      "fileID": 5169620,
+      "fileID": 5212709,
       "required": true
     },
     {
@@ -1429,7 +1423,13 @@
     {
       "slug": "fermiumasm",
       "projectID": 971247,
-      "fileID": 5346789,
+      "fileID": 5889652,
+      "required": true
+    },
+    {
+      "slug": "thaumcraftfix",
+      "projectID": 1069346,
+      "fileID": 6645719,
       "required": true
     }
   ],

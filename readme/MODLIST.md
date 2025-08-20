@@ -7,12 +7,12 @@ Total Mods: 232
 | Icon          | Count | Type of Mod       | Description                                                                                                              |
 |---------------|------ |-------------------|--------------------------------------------------------------------------------------------------------------------------|
 | :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                    |
-| :toolbox:     | 46    | Utility           | Typically visual or minor improvements                                                                                   |
+| :toolbox:     | 45    | Utility           | Typically visual or minor improvements                                                                                   |
 | :gear:        | 30    | Development       | Basically never interacted with by a player                                                                              |
 | :gem:         | 35    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right            |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                          |
-| :bug:         |  6    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
+| :bug:         |  7    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
 | :eyes:        |  4    | Visual            | Improves the visual options of the pack                                                                                  |
 | :world_map:   |  5    | Worldgen          | Changes or improves worldgen                                                                                             |
 | :closed_book: |  3    | Questbook         | Related to the Questbook                                                                                                 |
@@ -46,7 +46,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [Avaritia 1.1x](https://www.curseforge.com/minecraft/mc-mods/avaritia-1-10)                                                  | [Morpheus11011](https://curseforge.com/members/Morpheus11011)                        |                    |
 | :ring:        | [Avaritiaddons](https://www.curseforge.com/minecraft/mc-mods/avaritiaddons)                                                  | [WanionCane](https://curseforge.com/members/WanionCane)                              |                    |
 | :toolbox:     | [Bad Mobs](https://www.curseforge.com/minecraft/mc-mods/bad-mobs)                                                            | [DarkhaxDev](https://curseforge.com/members/DarkhaxDev)                              |                    |
-| :toolbox:     | [Bad Wither No Cookie - Reloaded](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded)                | [Kreezxil](https://curseforge.com/members/Kreezxil)                                  |                    |
 | :books:       | [B.A.S.E](https://www.curseforge.com/minecraft/mc-mods/base)                                                                 | [lanse505](https://curseforge.com/members/lanse505)                                  |                    |
 | :world_map:   | [Basic Nether Ores](https://www.curseforge.com/minecraft/mc-mods/basic-nether-ores)                                          | [cScotPlay](https://curseforge.com/members/cScotPlay)                                |                    |
 | :toolbox:     | [Baubles](https://www.curseforge.com/minecraft/mc-mods/baubles)                                                              | [Azanor13](https://curseforge.com/members/Azanor13)                                  |                    |
@@ -217,6 +216,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :books:       | [Tesla Core Lib](https://www.curseforge.com/minecraft/mc-mods/tesla-core-lib)                                                | [face_of_cat](https://curseforge.com/members/face_of_cat)                            |                    |
 | :ring:        | [Thaumic Inventory Scanning](https://www.curseforge.com/minecraft/mc-mods/thaumcraft-inventory-scanning)                     | [BlayTheNinth](https://curseforge.com/members/BlayTheNinth)                          |                    |
 | :gem:         | [Thaumcraft](https://www.curseforge.com/minecraft/mc-mods/thaumcraft)                                                        | [Azanor13](https://curseforge.com/members/Azanor13)                                  |                    |
+| :bug:         | [Thaumcraft Fix](https://www.curseforge.com/minecraft/mc-mods/thaumcraftfix)                                                 | [TheCodex6824](https://curseforge.com/members/thecodex6824)                          |                    |
 | :ring:        | [Thaumic Augmentation](https://www.curseforge.com/minecraft/mc-mods/thaumic-augmentation)                                    | [TheCodex6824](https://curseforge.com/members/TheCodex6824)                          |                    |
 | :ring:        | [Thaumic Energistics Extended Life](https://www.curseforge.com/minecraft/mc-mods/thaumic-energistics-extended-life)          | [Delfayne](https://curseforge.com/members/delfayne)                                  |                    |
 | :ring:        | [Thaumic JEI](https://www.curseforge.com/minecraft/mc-mods/thaumic-jei)                                                      | [Buuz135](https://curseforge.com/members/Buuz135)                                    | :white_check_mark: |

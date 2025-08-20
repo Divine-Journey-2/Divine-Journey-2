@@ -8,7 +8,6 @@
 Presumes that the old version is exactly equal to the tag used
 """
 
-import sys
 from argparse import ArgumentParser
 from subprocess import run
 from os import getenv, path
@@ -66,12 +65,11 @@ def convertChangelog(version: str):
         file.write(UPDATE_QUESTBOOK)
         file.write(f"\nUpdate {version}:\n")
         with open(changelogFile) as changelog:
-            with open(changelogFile) as changelog:
-                print(f"changelog={UPDATE_QUESTBOOK}{changelog.read()}", file=fh)
+            file.write(changelog.read())
 
     if getenv("GITHUB_OUTPUT") != None:
         with open(getenv("GITHUB_OUTPUT"), "a") as fh:
-            print(f"changelog={changelogFile}", file=fh)
+            print(f"changelog_file={changelogFile}", file=fh)
 
     copyfile("changelog/TEMPLATE.md", "changelog/LATEST.md")
 
