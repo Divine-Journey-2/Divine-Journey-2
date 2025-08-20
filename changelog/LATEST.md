@@ -15,6 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Change DankNull from being able to convert most oredicts to just a few.
+- Make Mystical World Amethyst obtainable with the Quantum Quarry.
 
 ## QoL Improvements:
 
@@ -38,4 +39,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Miscellaneous Changes:
 
-- Change the Featured Server from PixelGaming to Apollo Network
+- Change the Featured Server from PixelGaming to Apollo Network.
