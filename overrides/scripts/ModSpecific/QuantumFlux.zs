@@ -28,10 +28,10 @@ recipes.addShaped(<quantumflux:darkstone> * 2, [[<ore:stone>,<enderio:item_alloy
 // Industrial Grade Graphite Ore
 mods.immersiveengineering.ArcFurnace.addRecipe(<quantumflux:graphiteore>, <quantumflux:darkstone>, null, 200, 512, [<bigreactors:ingotgraphite>, <immersiveengineering:material:19>], "Ores");
 EIOAlloySmelter.addRecipe(<quantumflux:graphiteore>, [<quantumflux:darkstone>, <bigreactors:ingotgraphite>, <immersiveengineering:material:19>], 24000);
-<quantumflux:graphitedust>.addTooltip(game.localize("dj2.graphitedust.desc0"));
+<contenttweaker:industrial_grade_graphite_dust>.addTooltip(game.localize("dj2.graphitedust.desc0"));
 
 // Graphite Dust & Hyper Diamond JEI description
-//mods.jei.JEI.addDescription(<quantumflux:graphitedust>,"Turned into a Hyper Diamond with an explosion.");
+//mods.jei.JEI.addDescription(<contenttweaker:industrial_grade_graphite_dust>,"Turned into a Hyper Diamond with an explosion.");
 
 // Hyper Diamond
 ExplosionCrafting.explodeItemRecipe(<quantumflux:craftingpiece:6>, <contenttweaker:industrial_grade_graphite_dust>);
@@ -58,6 +58,7 @@ recipes.remove(<quantumflux:craftingpiece:1>);
 recipes.addShaped(<quantumflux:craftingpiece:1> * 4, [[<quantumflux:darkstone>,<industrialforegoing:pink_slime_ingot>,<quantumflux:darkstone>],[<minecraft:gold_block>,<teslacorelib:machine_case>,<minecraft:gold_block>],[<quantumflux:darkstone>,<industrialforegoing:pink_slime_ingot>,<quantumflux:darkstone>]]);
 
 // Void Bucket
+<quantumflux:voidbucket>.maxStackSize = 64;
 recipes.remove(<quantumflux:voidbucket>);
 recipes.addShaped(<quantumflux:voidbucket>, [[<thermalfoundation:material:32>,<contenttweaker:crystalline_brown_slime_ingot>,<thermalfoundation:material:32>],[null,<thermalfoundation:material:32>,null]]);
 

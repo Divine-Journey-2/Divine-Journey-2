@@ -1,32 +1,37 @@
 {
     "machine": "laser_focus",
     "registryName": "laser_focus_plustic_mirion_ingot",
-    "recipeTime": 5,
+    "recipeTime": 20,
     "requirements": [
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@0"
+            "item": "botania:manaresource@0",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "tconstruct:ingots@0"
+            "item": "tconstruct:ingots@0",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@7"
+            "item": "botania:manaresource@7",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "botania:manaresource@4"
+            "item": "botania:manaresource@4",
+            "amount": 4
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "minecraft:glass"
+            "item": "minecraft:glass",
+            "amount": 4
         },
         {
             "type": "energy",
@@ -42,7 +47,7 @@
             "type": "item",
             "io-type": "output",
             "item": "plustic:mirioningot",
-            "amount": 4
+            "amount": 16
         }
     ]
 }

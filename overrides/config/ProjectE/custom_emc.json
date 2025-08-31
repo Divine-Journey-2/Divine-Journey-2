@@ -893,6 +893,10 @@
       "emc": 16384
     },
     {
+      "item": "divinerpg:dungeon_tokens|0",
+      "emc": 16384
+    },
+    {
       "item": "divinerpg:healing_stone|0",
       "emc": 1024
     },

@@ -15,3 +15,5 @@ overrides/config/JustEnoughCalculation/record.json
 build
 buildtools/API-KEY
 overrides/config/thaumicjei_itemstack_aspects.json
+overrides/config/normalasm
+overrides/config/codechicken

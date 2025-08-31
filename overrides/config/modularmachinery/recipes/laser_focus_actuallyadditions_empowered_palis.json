@@ -1,0 +1,53 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_actuallyadditions_empowered_palis",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thermalfoundation:material@259",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:prismarine_shard",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:moonglow_leaf",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderio:item_material@39",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "actuallyadditions:item_crystal@1",
+            "amount": 4
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 320000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "actuallyadditions:item_crystal_empowered@1",
+            "amount": 4
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "machine": "laser_focus",
+    "registryName": "laser_focus_contenttweaker_empowered_glod",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderio:item_material@12",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "thermalfoundation:material@294",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "roots:wildewheet",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "minecraft:blaze_rod",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:glod_crystal",
+            "amount": 4
+        },
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 32000
+        },
+        {
+            "type": "meklaser",
+            "io-type": "input",
+            "energy": 320000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:empowered_glod_crystal",
+            "amount": 4
+        }
+    ]
+}

@@ -152,6 +152,10 @@ recipes.addShapedMirrored(<appliedenergistics2:material:28>, [[<ore:ingotSignalu
 recipes.remove(<appliedenergistics2:material:26>);
 recipes.addShapedMirrored(<appliedenergistics2:material:26>, [[<ore:ingotRedAlloy>,<thermalfoundation:material:160>,null],[<ore:ingotRedAlloy>,<appliedenergistics2:material:25>,<thermalfoundation:material:160>],[<ore:ingotRedAlloy>,<thermalfoundation:material:160>,null]]);
 
+// Sticky Card
+recipes.remove(<appliedenergistics2:material:61>);
+recipes.addShapedMirrored(<appliedenergistics2:material:61>, [[allCertus,<thermalfoundation:material:160>,null],[<minecraft:slime_ball>,<appliedenergistics2:material:25>,<thermalfoundation:material:160>],[allCertus,<thermalfoundation:material:160>,null]]);
+
 // Capacity Card
 recipes.remove(<appliedenergistics2:material:27>);
 recipes.addShapedMirrored(<appliedenergistics2:material:27>, [[allCertus,<thermalfoundation:material:160>,null],[<ore:chestWood>,<appliedenergistics2:material:25>,<thermalfoundation:material:160>],[allCertus,<thermalfoundation:material:160>,null]]);

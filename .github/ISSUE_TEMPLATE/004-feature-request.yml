@@ -1,0 +1,52 @@
+name: Feature Request
+description: Suggest something that should be added.
+labels: ["Feature Request"]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        If you are not using the latest version, make sure that the request has not already been [fulfilled](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the feature
+      description: Describe the feature you are requesting in a clear and concise way.
+      placeholder: "Example: I would like to see ... in the modpack. / ... should be enabled. / A new ... could be added."
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reasons why this should be added
+      description: Sensible points on why the modpack would be "better" if this was added.
+      placeholder: "Example: The automation setup comes too late ... / There is nothing to do in the meantime ..."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions you've considered.
+      placeholder: "Example: If the proposed recipe isn't added, then ... / Setting up automation differently would be ..."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+      placeholder: "Example: This mainly occurs when ... / It's not an issue in Singleplayer, because ..."
+    validations:
+      required: false
+  - type: input
+    id: discord-id
+    attributes:
+      label: Your Divine Journey 2 Discord Username
+      description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this feature request!

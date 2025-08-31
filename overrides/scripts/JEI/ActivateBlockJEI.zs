@@ -141,10 +141,24 @@ addInteraction(<minecraft:bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:
 // Aechor from Aechor Plant
 addInteraction(<aether_legacy:skyroot_bucket>, <minecraft:spawn_egg>.withTag({EntityTag:{id:"aether_legacy:aechor_plant"}}) | <draconicevolution:mob_soul>.withTag({EntityName:"aether_legacy:aechor_plant"}), <aether_legacy:skyroot_bucket:2>);
 
+// Botania Flowers from Fertilizer
+for x in 0 to 16 {
+    addInteraction(<botania:fertilizer>, soil, <botania:flower>.withDamage(x));
+}
+
 // Botania Double-tall Flowers
 for x in 0 to 8 {
+    addInteraction(<minecraft:dye:15>, <botania:flower>.withDamage(x), <botania:doubleflower1>.withDamage(x));
+    addInteraction(<minecraft:dye:15>, <botania:flower>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
     addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x), <botania:doubleflower1>.withDamage(x));
     addInteraction(<minecraft:dye:15>, <botania:petal>.withDamage(x + 8), <botania:doubleflower2>.withDamage(x));
 }
+
+// DivineRPG Chunks summoning bosses
+addInteraction(<divinerpg:eden_chunk>, <divinerpg:sunstorm_spawner>, <divinerpg:eden_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:wildwood_chunk>, <divinerpg:termasect_spawner>, <divinerpg:wildwood_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:apalachia_chunk>, <divinerpg:eternal_archer_spawner>, <divinerpg:apalachia_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+addInteraction(<divinerpg:skythern_chunk>, <divinerpg:experienced_cori_spawner>, <divinerpg:skythern_heart>.withTag({display:{Lore:[game.localize("dj2.activate_block_jei.after_killed.desc0")]}}));
+
 
 print("ENDING ActivateBlockJEI.zs");

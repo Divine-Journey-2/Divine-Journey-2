@@ -259,6 +259,8 @@ for plank in <ore:plankWood>.items {
     mods.mekanism.sawmill.addRecipe(plank, <minecraft:stick> * 6, <thermalfoundation:material:800>, 0.25);
 }
 
+mods.mekanism.sawmill.addRecipe(<natura:sticks:*>, <thermalfoundation:material:800>);
+
 val logWoodNoYield = <ore:logWoodNoYield>;
 logWoodNoYield.addItems([<abyssalcraft:dltlog2>, <betternether:stalagnate_stem>, <erebus:log_bamboo>, <natura:redwood_logs>, <natura:redwood_logs:2>]);
 
@@ -300,6 +302,7 @@ val logs_and_planks = [
                     [<evilcraft:undead_log>,<evilcraft:undead_plank>],
                     [<extrautils2:ironwood_log>,<extrautils2:ironwood_planks>],
                     [<extrautils2:ironwood_log:1>,<extrautils2:ironwood_planks:1>],
+                    [<integrateddynamics:menril_log>,<integrateddynamics:menril_planks>],
                     [<lightningcraft:wood_log>,<lightningcraft:wood_plank>],
                     [<mysticalworld:charred_log>,<mysticalworld:charred_planks>],
                     [<natura:overworld_logs>,<natura:overworld_planks>],

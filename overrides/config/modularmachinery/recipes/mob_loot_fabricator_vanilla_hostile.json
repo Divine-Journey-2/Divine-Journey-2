@@ -90,6 +90,12 @@
         {
             "type": "item",
             "io-type": "output",
+            "item": "bhc:red_heart",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "output",
             "item": "openblocks:trophy",
             "amount": 1
         }

@@ -500,6 +500,7 @@ for i in 0 to 6 {
 }
 
 // Chunk Loading Ward
+<extrautils2:chunkloader>.addTooltip(game.localize("dj2.chunkloader.desc0"));
 recipes.remove(<extrautils2:chunkloader>);
 recipes.addShaped(<extrautils2:chunkloader>, [[<astralsorcery:blockinfusedwood:6>,<extrautils2:ingredients:2>,<astralsorcery:blockinfusedwood:6>],[<astralsorcery:blockinfusedwood:6>,<enderio:item_capacitor_totemic>,<astralsorcery:blockinfusedwood:6>],[null,<lightningcraft:rod:9>,null]]);
 

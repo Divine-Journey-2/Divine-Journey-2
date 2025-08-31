@@ -1,6 +1,6 @@
 {
   "useRemoteConfig": true,
-  "remoteConfigUrl": "https://raw.githubusercontent.com/dogboy21/serializationisbad/master/serializationisbad.json",
+  "remoteConfigUrl": "https://serializationisbad.dogboy.io/serializationisbad.json",
   "executeBlocking": true,
   "patchModules": [],
   "classAllowlist": [],

@@ -254,6 +254,9 @@ recipes.addShapeless(<minecraft:fireworks>, [<minecraft:firework_charge>,<minecr
 <ore:chestWood>.removeItems([<atum:palm_crate>,<atum:deadwood_crate>]);
 <ore:rodBlaze>.remove(<atum:efreet_heart>);
 
+// Vanilla Carpet Oredict
+<ore:basicCarpet>.addItems([<minecraft:carpet>,<minecraft:carpet:1>,<minecraft:carpet:2>,<minecraft:carpet:3>,<minecraft:carpet:4>,<minecraft:carpet:5>,<minecraft:carpet:6>,<minecraft:carpet:7>,<minecraft:carpet:8>,<minecraft:carpet:9>,<minecraft:carpet:10>,<minecraft:carpet:11>,<minecraft:carpet:12>,<minecraft:carpet:13>,<minecraft:carpet:14>,<minecraft:carpet:15>]);
+
 // Stone Tools with Stone, not just Cobblestone
 recipes.addShaped(<minecraft:stone_sword>, [[<ore:stone>],[<ore:stone>],[<ore:stickWood>]]);
 recipes.addShaped(<minecraft:stone_pickaxe>, [[<ore:stone>,<ore:stone>,<ore:stone>],[null,<ore:stickWood>,null],[null,<ore:stickWood>,null]]);

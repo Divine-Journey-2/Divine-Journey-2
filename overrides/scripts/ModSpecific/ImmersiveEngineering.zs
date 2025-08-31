@@ -385,7 +385,7 @@ Squeezer.addRecipe(<minecraft:leather>, <liquid:blood> * 5, <minecraft:rotten_fl
 Squeezer.addRecipe(null, <liquid:canolaoil> * 80, <actuallyadditions:item_misc:13>, 6400);
 
 // HOP Graphite Dust
-Squeezer.addRecipe(<immersiveengineering:material:19>, <liquid:stone> * 288, <immersiveengineering:material:17> * 8, 6400);
+Squeezer.addRecipe(<immersiveengineering:material:18>, <liquid:stone> * 288, <immersiveengineering:material:17> * 8, 6400);
 
 // More Ethanol recipes
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 80, <minecraft:pumpkin>, 6400);

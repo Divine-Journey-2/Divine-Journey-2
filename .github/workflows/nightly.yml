@@ -1,0 +1,110 @@
+name: Nightly Builds
+
+# Required secrets:
+# GITHUB_TOKEN - access the repo to cancel prior ongoing builds (included by default)
+# CFAPIKEY - access token to download mods
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # we only care to make a new nightly release if it impacts the game.
+      - "overrides/**"
+      - "serverfiles/**"
+      - "manifest.json"
+
+  schedule:
+    # Runs on the first of every 3rd month, which should ensure the nightly never goes down due to artifact timeout.
+    - cron: "0 0 1 */3 *"
+
+# Cancel any ongoing instances of this workflow
+concurrency:
+  group: nightly
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 10 # it should take around 2 minutes to build and upload, so 10 minutes should never be passed
+
+    steps:
+      # Ensure that the secret(s) required to run the workflow exist
+      - name: "Check for Secret presence"
+        id: secret-check
+        shell: bash
+        run: |
+          if [ "${{ secrets.CFAPIKEY }}" == "" ]; then
+            echo "Unable to access secrets required to run workflow" >> $GITHUB_STEP_SUMMARY
+            exit 1
+          fi
+          echo "Passed access check for required secrets" >> $GITHUB_STEP_SUMMARY
+
+      # Setup the repo, download Python, and install the requests library
+      - name: "Checkout Repo"
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+
+      - name: "Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: "Install requests"
+        run: pip install requests
+
+      # Create prerelease zip files for the Client and Server after downloading the required mods
+      - name: "Build everything"
+        id: build
+        run: python ./buildtools/build.py -CSDPZ --key='${{ secrets.CFAPIKEY }}'
+        # Will output client_name and server_name
+
+      # Upload build artifacts to Github Actions
+      - name: "Upload Changelog from latest release"
+        uses: actions/upload-artifact@v4
+        if: ${{ steps.build.outputs.client_name || steps.build.outputs.server_name }}
+        with:
+          name: "changelog-from-latest-release"
+          path: "changelog/LATEST.md"
+          if-no-files-found: warn
+
+      - name: "Upload Client artifact"
+        uses: actions/upload-artifact@v4
+        if: ${{ steps.build.outputs.client_name }}
+        with:
+          name: "${{ steps.build.outputs.client_name }}"
+          path: "build/output/${{ steps.build.outputs.client_name }}.zip"
+          if-no-files-found: warn
+          # We upload the zip file with compression 0 because
+          # - uploading the file path takes significantly longer (minutes instead of seconds)
+          # - its already a zip file, compressing it further isn't helpful and takes longer
+          compression-level: 0
+
+      - name: "Upload Server artifact"
+        uses: actions/upload-artifact@v4
+        if: ${{ steps.build.outputs.server_name }}
+        with:
+          name: "${{ steps.build.outputs.server_name }}"
+          path: "build/output/${{ steps.build.outputs.server_name }}.zip"
+          if-no-files-found: warn
+          # We upload the zip file with compression 0 because
+          # - uploading the file path takes significantly longer (minutes instead of seconds)
+          # - its already a zip file, compressing it further isn't helpful and takes longer
+          compression-level: 0
+
+      # Generate a report for what actions were taken,
+      - name: "Generate report"
+        id: generate-report
+        shell: bash
+        run: |
+          echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ github.sha }}/changelog/LATEST.md)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
+            echo "Uploaded the client zip file with the name `${{ steps.build.outputs.client_name }}.zip`" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ "${{ steps.build.outputs.server_name }}" != '' ]; then
+            echo "Uploaded the server zip file with the name `${{ steps.build.outputs.server_name }}.zip`" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Download via [Nightly](https://nightly.link/${{ github.repository }}/workflows/nightly/main)" >> $GITHUB_STEP_SUMMARY

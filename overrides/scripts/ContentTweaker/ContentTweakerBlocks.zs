@@ -510,6 +510,14 @@ galactic_block.setToolLevel(3);
 galactic_block.setBlockSoundType(<soundtype:metal>);
 galactic_block.register();
 
+var galactic_machine_frame = VanillaFactory.createBlock("galactic_machine_frame", <blockmaterial:iron>);
+galactic_machine_frame.setBlockHardness(4.5);
+galactic_machine_frame.setBlockResistance(4.5);
+galactic_machine_frame.setToolClass("pickaxe");
+galactic_machine_frame.setToolLevel(2);
+galactic_machine_frame.setBlockSoundType(<soundtype:metal>);
+galactic_machine_frame.register();
+
 var tin_sheetmetal = VanillaFactory.createBlock("tin_sheetmetal", <blockmaterial:iron>);
 tin_sheetmetal.setBlockHardness(2.5);
 tin_sheetmetal.setBlockResistance(2.5);
