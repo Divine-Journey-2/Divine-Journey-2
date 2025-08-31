@@ -367,4 +367,9 @@ recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:glowstone_dust> * 4], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <ore:glowstone>], "Alloying");
 
+// Manasteel, Terrasteel, Elementium Block Casting
+mods.tconstruct.Casting.addTableRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+mods.tconstruct.Casting.addTableRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+mods.tconstruct.Casting.addTableRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
+
 print("ENDING UnifyingIngotsAndBlocks.zs");
