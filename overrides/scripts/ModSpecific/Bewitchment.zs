@@ -51,7 +51,7 @@ WitchesOven.addRecipe(<thaumcraft:alumentum>, <abyssalcraft:crystalshard:22> * 5
 // Coquina (can also be worldgen)
 <bewitchment:coquina>.addTooltip(game.localize("dj2.coquina.desc0"));
 mods.thermalexpansion.Transposer.addFillRecipe(<bewitchment:coquina>, <thaumcraft:stone_porous>, <liquid:cold_iron> * 18, 16000);
-mods.tconstruct.Casting.addTableRecipe(<bewitchment:coquina>, <thaumcraft:stone_porous>, <liquid:cold_iron>, 18, true, 400);
+mods.tconstruct.Casting.addBasinRecipe(<bewitchment:coquina>, <thaumcraft:stone_porous>, <liquid:cold_iron>, 18, true, 400);
 
 function addBewitchmentWitchesAltarRecipe(output as IItemStack, input_material as IIngredient) {
     recipes.remove(output);
