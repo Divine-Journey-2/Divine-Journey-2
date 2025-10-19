@@ -274,9 +274,6 @@ def downloadModList(modlistServer: list, modlistClient: list, retries: int):
     os.makedirs(f"{cache}/mods/client", exist_ok=True)
     os.makedirs(f"{cache}/mods/server", exist_ok=True)
 
-    # Copy mod overrides into cache
-    shutil.copytree(f"{basePath}/overrides/mods", f"{cache}/mods/server", dirs_exist_ok=True)
-
     # Download all mods to a location based on their list to the cache
     threads = []
     downloadedMods = []
