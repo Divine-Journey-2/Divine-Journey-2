@@ -9,6 +9,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Update Universal Tweaks 1.14.0 -> 1.17.0
+- Update FermiumASM 5.24 -> 5.28
 - Remove Neat 1.4 (Enders Modpack Tweaks)
 - Remove MPUtils 1.5.7 (Enders Modpack Tweaks)
 - Remove MPUtils Basic Tools 1.4.11 (Enders Modpack Tweaks)
@@ -42,6 +43,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix bugs with Immersive Engingeering tools breaking (Universal Tweaks)
 - Fix DivineRPG water mobs replacing Squid spawns and taking up/exceeding the hostile mob cap (Universal Tweaks)
 - Fix various issues with DivineRPG replacing items in the main hand instead of the used hand (Universal Tweaks)
+- Fix broken particle effects with some ProjectRed blocks (FermiumASM)
 
 ## Balance Adjustments:
 
@@ -58,6 +60,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improve performance significantly when mining with a tool that has the Vengeance Curse (Universal Tweaks)
 - Replace the Morph'O'Tool with the Omniwand, which offers improved usability, and add a recipe converting it (Omniwand)
 - Add borders to the corner of the transformed items for the Omniwand, Morph'O'Tool, and Akashic Tome (Morph Overlay)
+- Enable FermiumASM's onDemandAnimatedTextures setting, improving rendering performance
 
 ## Text and Quest Updates:
 
