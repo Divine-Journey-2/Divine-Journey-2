@@ -396,8 +396,8 @@ dj2.blood_chest.desc0=§cItem disabled. Makes repairing items trivial.
 # EnderIO tooltips
 dj2.me_conduits.desc0=§c§lWARNING: §r§fME Conduits should be used with caution,
 dj2.me_conduits.desc1=§fas they can be quite laggy when overused and not carry channels properly.
-dj2.farming_station.desc0=§c§lWARNING: §r§fDo NOT use this machine to harvest crops
-dj2.farming_station.desc1=§ffrom Crop Sticks. It will always CRASH your game.
+dj2.farming_station.desc0=§c§lWARNING: §r§fThis cannot harvest crops
+dj2.farming_station.desc1=§ffrom AgriCraft Crop Sticks.
 dj2.farming_station.desc2=§f§o<Press Shift for alternatives>
 dj2.farming_station.desc3=§fInstead, use either a Botania Drum of the Wild /
 dj2.farming_station.desc4=§f / Horn of the Wild, an Actually Additions Farmer,
@@ -690,8 +690,8 @@ dj2.cabbage_seeds.desc0=§fBreak any tall grass in Erebus to obtain.
 dj2.cabbage_seeds.desc1=§fSwamp Plants always drop these.
 
 # Agricraft tooltips
-dj2.crop_sticks.desc0=§c§lWARNING: §r§fDo NOT use these with the Ender IO
-dj2.crop_sticks.desc1=§fFarming Station. It will always CRASH your game.
+dj2.crop_sticks.desc0=§c§lWARNING: §r§fThese cannot be harvested by
+dj2.crop_sticks.desc1=§fthe Ender IO Farming Station.
 dj2.crop_sticks.desc2=§f§o<Press Shift for alternatives>
 dj2.crop_sticks.desc3=§fInstead, use either a Botania Drum of the Wild /
 dj2.crop_sticks.desc4=§f / Horn of the Wild, an Actually Additions Farmer,
