@@ -5,6 +5,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Add Galacticraft Legacy 4.0.7
 - Update VintageFix 0.5.5 -> 0.6.2
+- Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
@@ -21,6 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix visual bug and crash when displaying EvilCraft Blood Block (VintageFix)
 - Fix some entities rendering without lighting (VintageFix)
 - Fix a bug preventing a fix from applying, which fixes an occasional crash when the world closes (VintageFix)
+- Fix a frequent startup crash involving the Elemental Shovel (Thaumcraft Fix)
 
 ## Balance Adjustments:
 
@@ -32,6 +34,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
+- Fix a few typos in Thaumonomicon researches (Thaumcraft Fix)
 
 ## Texture Transformations:
 
