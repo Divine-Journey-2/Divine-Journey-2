@@ -10,6 +10,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Update Universal Tweaks 1.14.0 -> 1.17.0
 - Update FermiumASM 5.24 -> 5.28
+- Update Recurrent Complex 1.4.8.5 -> 1.4.8.6
 - Remove Neat 1.4 (Enders Modpack Tweaks)
 - Remove MPUtils 1.5.7 (Enders Modpack Tweaks)
 - Remove MPUtils Basic Tools 1.4.11 (Enders Modpack Tweaks)
@@ -61,6 +62,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Replace the Morph'O'Tool with the Omniwand, which offers improved usability, and add a recipe converting it (Omniwand)
 - Add borders to the corner of the transformed items for the Omniwand, Morph'O'Tool, and Akashic Tome (Morph Overlay)
 - Enable FermiumASM's onDemandAnimatedTextures setting, improving rendering performance
+- Disable Recurrent Complex special saplings, which caused tree farms to be extremely slow and generate fences unless laid out in a checkerboard pattern
 
 ## Text and Quest Updates:
 
@@ -79,3 +81,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove some crafttweaker event usages for spawning DivineRPG bosses due to being made part of Universal Tweaks
 - Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
 - Change the entity health bar display to require being looked at, saving a significant amount of performance
+- Disable Recurrent Complex sending admins a message notifying the status of various structures
