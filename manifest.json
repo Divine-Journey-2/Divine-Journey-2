@@ -1421,6 +1421,12 @@
       "required": true
     },
     {
+      "slug": "omniwand",
+      "projectID": 923677,
+      "fileID": 6460075,
+      "required": true
+    },
+    {
       "slug": "fermiumbooter",
       "projectID": 968474,
       "fileID": 5672830,
@@ -1437,6 +1443,13 @@
       "projectID": 1069346,
       "fileID": 7040753,
       "required": true
+    },
+    {
+      "slug": "morphoverlay",
+      "projectID": 1329068,
+      "fileID": 6902995,
+      "required": true,
+      "clientOnly": true
     }
   ],
   "overrides": "overrides"

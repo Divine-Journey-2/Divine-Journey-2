@@ -4,6 +4,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Add Galacticraft Legacy 4.0.7
+- Add Omniwand 2.0.1
+- Add Morph Overlay 1.0.1
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Update Universal Tweaks 1.14.0 -> 1.17.0
@@ -47,6 +49,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Allow swapping armor when you have some already equipped (Universal Tweaks)
 - Allow the graphics settings to control if Actually Additions Item Lasers display the item being transferred (Universal Tweaks)
 - Improve performance significantly when mining with a tool that has the Vengeance Curse (Universal Tweaks)
+- Replace the Morph'O'Tool with the Omniwand, which offers improved usability, and add a recipe converting it (Omniwand)
+- Add borders to the corner of the transformed items for the Omniwand, Morph'O'Tool, and Akashic Tome (Morph Overlay)
 
 ## Text and Quest Updates:
 
