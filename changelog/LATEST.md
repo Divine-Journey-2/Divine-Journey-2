@@ -9,6 +9,12 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Update Universal Tweaks 1.14.0 -> 1.17.0
+- Remove Neat 1.4 (Enders Modpack Tweaks)
+- Remove MPUtils 1.5.7 (Enders Modpack Tweaks)
+- Remove MPUtils Basic Tools 1.4.11 (Enders Modpack Tweaks)
+- Remove Controlling 3.0.10 (Enders Modpack Tweaks)
+- Remove Featured Servers 1.0.6 (Enders Modpack Tweaks)
+- Remove Startup Timer 1.1.0 (Enders Modpack Tweaks)
 - Remove Additional Resources 0.2.0.28
 - Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
@@ -57,6 +63,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix a few typos in Thaumonomicon researches (Thaumcraft Fix)
 - Change the text warning that the EnderIO Farming Station crashes with AgriCraft Crop Sticks, as instead of crashing it now merely does nothing.
+- Add several more buttons for pack info, including a discord invite (Enders Modpack Tweaks)
 
 ## Texture Transformations:
 
@@ -67,3 +74,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Miscellaneous Changes:
 
 - Remove some crafttweaker event usages for spawning DivineRPG bosses due to being made part of Universal Tweaks
+- Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
