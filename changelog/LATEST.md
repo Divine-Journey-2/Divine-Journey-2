@@ -75,3 +75,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Remove some crafttweaker event usages for spawning DivineRPG bosses due to being made part of Universal Tweaks
 - Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
+- Change the entity health bar display to require being looked at, saving a significant amount of performance
