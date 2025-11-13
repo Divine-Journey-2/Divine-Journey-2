@@ -9,6 +9,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
 - Update Universal Tweaks 1.14.0 -> 1.17.0
+- Remove Additional Resources 0.2.0.28
 - Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)

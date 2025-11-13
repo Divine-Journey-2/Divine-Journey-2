@@ -173,12 +173,6 @@
       "required": true
     },
     {
-      "slug": "additional-resources",
-      "projectID": 225124,
-      "fileID": 2447369,
-      "required": true
-    },
-    {
       "slug": "extra-utilities",
       "projectID": 225561,
       "fileID": 2678374,
