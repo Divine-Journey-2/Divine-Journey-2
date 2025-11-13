@@ -94,9 +94,9 @@ key_key.erebus.beetlemine:0:NONE
 key_key.xu2.searchforitems:20:NONE
 key_key.ftbutilities.nbt:0:NONE
 key_key.ftbutilities.trash:211:NONE
-key_[GC] Galaxy Map:0:NONE
-key_[GC] Open Spaceship Inventory:18:NONE
-key_[GC] Toggle Sensor Goggles Mode:0:NONE
+key_Galaxy Map:0:NONE
+key_Open Spaceship Inventory:0:NONE
+key_Toggle Sensor Goggles Mode:0:NONE
 key_keybind.hammercorerenderstack:77:NONE
 key_key.moreoverlays.lightoverlay.desc:65:NONE
 key_key.moreoverlays.chunkbounds.desc:67:NONE

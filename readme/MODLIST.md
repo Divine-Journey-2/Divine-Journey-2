@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 232
+Total Mods: 234
 
 ## Type Key
 
@@ -9,7 +9,7 @@ Total Mods: 232
 | :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                    |
 | :toolbox:     | 45    | Utility           | Typically visual or minor improvements                                                                                   |
 | :gear:        | 30    | Development       | Basically never interacted with by a player                                                                              |
-| :gem:         | 35    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
+| :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own   |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right            |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                          |
 | :bug:         |  7    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                                |
@@ -112,6 +112,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :toolbox:     | [FTB Backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-forge)                                                | [FTB](https://curseforge.com/members/FTB)                                            |                    |
 | :books:       | [FTB Library](https://www.curseforge.com/minecraft/mc-mods/ftb-library-legacy-forge)                                         | [FTB](https://curseforge.com/members/FTB)                                            |                    |
 | :toolbox:     | [FTB Utilities](https://www.curseforge.com/minecraft/mc-mods/ftb-utilities-forge)                                            | [FTB](https://curseforge.com/members/FTB)                                            |                    |
+| :gem:         | [Galacticraft Legacy](https://www.curseforge.com/minecraft/mc-mods/galacticraft-legacy)                                      | [TeamGalacticraft](https://curseforge.com/members/TeamGalacticraft)                  |                    |
 | :gear:        | [Galacticraft Tweaker](https://www.curseforge.com/minecraft/mc-mods/galacticrafttweaker)                                     | [MJRLegends](https://curseforge.com/members/MJRLegends)                              |                    |
 | :ring:        | [Gas Conduits](https://www.curseforge.com/minecraft/mc-mods/gas-conduits)                                                    | [pupnewfster](https://curseforge.com/members/pupnewfster)                            |                    |
 | :books:       | [Guide-API](https://www.curseforge.com/minecraft/mc-mods/guide-api)                                                          | [TehNut](https://curseforge.com/members/TehNut)                                      |                    |
