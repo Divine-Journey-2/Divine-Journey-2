@@ -4,6 +4,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Add Galacticraft Legacy 4.0.7
+- Update VintageFix 0.5.5 -> 0.6.2
 - Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
@@ -17,6 +18,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix playing weather sounds causing a rare crash (Galacticraft Legacy)
 - Fix Galacticraft inventories breaking Extra Utilities 2 Find Me feature (Galacticraft Legacy)
 - Fix Galacticraft allowing removal of Curse of Binding armor (Galacticraft Legacy)
+- Fix visual bug and crash when displaying EvilCraft Blood Block (VintageFix)
+- Fix some entities rendering without lighting (VintageFix)
+- Fix a bug preventing a fix from applying, which fixes an occasional crash when the world closes (VintageFix)
 
 ## Balance Adjustments:
 
