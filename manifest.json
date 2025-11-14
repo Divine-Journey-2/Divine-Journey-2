@@ -1399,6 +1399,12 @@
       "required": true
     },
     {
+      "slug": "crash-assistant",
+      "projectID": 1154099,
+      "fileID": 7215788,
+      "required": true
+    },
+    {
       "slug": "ender-modpack-tweaks",
       "projectID": 1221029,
       "fileID": 6973315,

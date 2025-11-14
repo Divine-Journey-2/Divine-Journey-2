@@ -6,6 +6,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Galacticraft Legacy 4.0.7
 - Add Omniwand 2.0.1
 - Add Morph Overlay 1.0.1
+- Add Crash Assistant 1.10.20
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -69,6 +70,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add borders to the corner of the transformed items for the Omniwand, Morph'O'Tool, and Akashic Tome (Morph Overlay)
 - Enable FermiumASM's onDemandAnimatedTextures setting, improving rendering performance
 - Disable Recurrent Complex special saplings, which caused tree farms to be extremely slow and generate fences unless laid out in a checkerboard pattern
+- Add a custom GUI post-crash to better share the crash information and link to the DJ2 discord (Crash Assistant)
+- Add an early warning when attempting to load Essential (Crash Assisant)
 
 ## Text and Quest Updates:
 
