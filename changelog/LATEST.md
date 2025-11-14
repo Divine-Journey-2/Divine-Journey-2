@@ -8,6 +8,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Morph Overlay 1.0.1
 - Add Crash Assistant 1.10.20
 - Add Botania CEU 369b
+- Add Twilight Forest - Deforestation Edition 3.14
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -27,6 +28,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
 - Remove Botania 364.4
+- Remove Twilight Forest 3.11.1021
 
 ## Bugfixes:
 
@@ -85,6 +87,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Texture Transformations:
 
+- Fix Twilight Forest Door textures being missing and unhide from JEI (Twilight Forest - Deforestation Edition)
+- Allow some Twilight Forest trophies to be animated when powered by redstone (Twilight Forest - Deforestation Edition)
 
 ## GitHub Developments:
 

@@ -223,12 +223,6 @@
       "required": true
     },
     {
-      "slug": "the-twilight-forest",
-      "projectID": 227639,
-      "fileID": 3051450,
-      "required": true
-    },
-    {
       "slug": "ruins-structure-spawning-system",
       "projectID": 227873,
       "fileID": 2721268,
@@ -1384,6 +1378,12 @@
       "slug": "fermiumasm",
       "projectID": 971247,
       "fileID": 6389447,
+      "required": true
+    },
+    {
+      "slug": "the-twilight-forest-deforestation-edition",
+      "projectID": 1063334,
+      "fileID": 6808448,
       "required": true
     },
     {
