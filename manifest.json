@@ -471,13 +471,6 @@
       "required": true
     },
     {
-      "slug": "neat",
-      "projectID": 238372,
-      "fileID": 2595310,
-      "required": true,
-      "clientOnly": true
-    },
-    {
       "slug": "better-builders-wands",
       "projectID": 238403,
       "fileID": 2691084,
