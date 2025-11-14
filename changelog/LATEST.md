@@ -82,6 +82,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a custom GUI post-crash to better share the crash information and link to the DJ2 discord (Crash Assistant)
 - Add an early warning when attempting to load Essential (Crash Assisant)
 - Switch to the Alfheim lighting engine, improving lighting performance (Alfheim)
+- Enable JEI ResourceID searching as required prefix by default
 
 ## Text and Quest Updates:
 
