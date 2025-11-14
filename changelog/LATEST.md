@@ -88,6 +88,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add an early warning when attempting to load Essential (Crash Assisant)
 - Switch to the Alfheim lighting engine, improving lighting performance (Alfheim)
 - Enable JEI ResourceID searching as required prefix by default
+- Hide NYI items from The Twilight Forest from JEI
 
 ## Text and Quest Updates:
 
