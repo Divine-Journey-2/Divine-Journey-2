@@ -49,6 +49,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix broken particle effects with some ProjectRed blocks (FermiumASM)
 - Fix Bewitchment Distillery crashing when attempting to produce multiple outputs when only one slot is empty (Bewitchment)
 - Fix rendering bug with shaders that required restarting to fix (Hammer Lib)
+- Fix pack info buttons opening a GUI that doesn't scroll properly (Enders Modpack Tweaks)
 
 ## Balance Adjustments:
 
