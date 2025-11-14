@@ -12,6 +12,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update FermiumASM 5.24 -> 5.28
 - Update Recurrent Complex 1.4.8.5 -> 1.4.8.6
 - Update Bewitchment 0.0.22.64 -> 0.0.22.65
+- Update Hammer Lib 2.0.6.32 -> 12.2.58
 - Remove Neat 1.4 (Enders Modpack Tweaks)
 - Remove MPUtils 1.5.7 (Enders Modpack Tweaks)
 - Remove MPUtils Basic Tools 1.4.11 (Enders Modpack Tweaks)
@@ -47,6 +48,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix various issues with DivineRPG replacing items in the main hand instead of the used hand (Universal Tweaks)
 - Fix broken particle effects with some ProjectRed blocks (FermiumASM)
 - Fix Bewitchment Distillery crashing when attempting to produce multiple outputs when only one slot is empty (Bewitchment)
+- Fix rendering bug with shaders that required restarting to fix (Hammer Lib)
 
 ## Balance Adjustments:
 
