@@ -105,6 +105,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
+- Fix error in `questbook.py` by attempting to use a backslash in a comment
+- Adjust `questbook.py` to allow prefixes of a length other than 3 characters
 
 ## Miscellaneous Changes:
 
