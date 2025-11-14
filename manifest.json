@@ -1351,6 +1351,12 @@
       "required": true
     },
     {
+      "slug": "red-core",
+      "projectID": 873867,
+      "fileID": 6147102,
+      "required": true
+    },
+    {
       "slug": "enhancedp2p",
       "projectID": 876339,
       "fileID": 4815198,
@@ -1360,6 +1366,12 @@
       "slug": "serializationisbad",
       "projectID": 896591,
       "fileID": 5187152,
+      "required": true
+    },
+    {
+      "slug": "alfheim-lighting-engine",
+      "projectID": 910715,
+      "fileID": 6687458,
       "required": true
     },
     {

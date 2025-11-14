@@ -19,6 +19,11 @@
     "modId": "mixinbooter",
     "version": "10.7"
   },
+  "!Red-Core-MC-1.8-1.12-0.7-Dev-1.jar": {
+    "jarName": "!Red-Core-MC-1.8-1.12-0.7-Dev-1.jar",
+    "modId": "redcore",
+    "version": "0.7-Dev-1"
+  },
   "`FermiumBooter-1.1.1.jar": {
     "jarName": "`FermiumBooter-1.1.1.jar",
     "modId": "fermiumbooter",
@@ -76,6 +81,11 @@
     "jarName": "alchemistry-1.12.2-42.jar",
     "modId": "alchemistry",
     "version": "1.12.2-42"
+  },
+  "Alfheim-1.6.jar": {
+    "jarName": "Alfheim-1.6.jar",
+    "modId": "alfheim",
+    "version": "1.6"
   },
   "alib-1.0.12.jar": {
     "jarName": "alib-1.0.12.jar"

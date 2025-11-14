@@ -9,6 +9,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Crash Assistant 1.10.20
 - Add Botania CEU 369b
 - Add Twilight Forest - Deforestation Edition 3.14
+- Add Red Core 0.7-Dev-1
+- Add Alfheim 1.6
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -58,6 +60,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix pack info buttons opening a GUI that doesn't scroll properly (Enders Modpack Tweaks)
 - Remove the possibility of chunk banning from the Alfheim Portal (Botania CEU)
 - Fix bug involving Storage Drawers and Corporea (Botania CEU)
+- Fix a few vanilla lighting bugs, including incorrect stair and slab lighting (Alfheim)
 
 ## Balance Adjustments:
 
@@ -78,6 +81,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable Recurrent Complex special saplings, which caused tree farms to be extremely slow and generate fences unless laid out in a checkerboard pattern
 - Add a custom GUI post-crash to better share the crash information and link to the DJ2 discord (Crash Assistant)
 - Add an early warning when attempting to load Essential (Crash Assisant)
+- Switch to the Alfheim lighting engine, improving lighting performance (Alfheim)
 
 ## Text and Quest Updates:
 

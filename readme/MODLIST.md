@@ -1,18 +1,18 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 231
+Total Mods: 233
 
 ## Type Key
 
 | Icon          | Count | Type of Mod       | Description                                                                                                            |
 | ------------- | ----- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                  |
+| :books:       | 49    | Library           | Required for other mods and not doing much on its own                                                                  |
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
-| :bug:         | 8     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
+| :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
 | :world_map:   | 5     | Worldgen          | Changes or improves worldgen                                                                                           |
 | :closed_book: | 3     | Questbook         | Related to the Questbook                                                                                               |
@@ -36,6 +36,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [AgriCraft](https://www.curseforge.com/minecraft/mc-mods/agricraft)                                                                | [InfinityRaider](https://curseforge.com/members/InfinityRaider)                       |                    |
 | :toolbox:     | [Akashic Tome](https://www.curseforge.com/minecraft/mc-mods/akashic-tome)                                                          | [Vazkii](https://curseforge.com/members/Vazkii)                                       |                    |
 | :gem:         | [Alchemistry](https://www.curseforge.com/minecraft/mc-mods/alchemistry)                                                            | [Dark_Arcana](https://curseforge.com/members/Dark_Arcana)                             |                    |
+| :bug:         | [Alfheim](https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine)                                                    | [Desoroxxx](https://curseforge.com/members/desoroxxx)                                 |                    |
 | :toolbox:     | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                                                                | [squeek502](https://curseforge.com/members/squeek502)                                 |                    |
 | :ring:        | [AstralLevelTweak](https://www.curseforge.com/minecraft/mc-mods/astral-level-tweak)                                                | [Mixu_78](https://curseforge.com/members/Mixu_78)                                     |                    |
 | :gem:         | [Astral Sorcery](https://www.curseforge.com/minecraft/mc-mods/astral-sorcery)                                                      | [HellFirePvP](https://curseforge.com/members/HellFirePvP)                             |                    |
@@ -191,6 +192,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :diamonds:    | [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)                                                                        | [Vazkii](https://curseforge.com/members/Vazkii)                                       |                    |
 | :books:       | [Reborn Core](https://www.curseforge.com/minecraft/mc-mods/reborncore)                                                             | [modmuss50](https://curseforge.com/members/modmuss50)                                 |                    |
 | :gear:        | [Recurrent Complex](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex)                                                | [Ivorforce](https://curseforge.com/members/Ivorforce)                                 |                    |
+| :books:       | [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core)                                                                  | [Desoroxxx](https://curseforge.com/members/desoroxxx)                                 |                    |
 | :books:       | [Redstone Flux](https://www.curseforge.com/minecraft/mc-mods/redstone-flux)                                                        | [TeamCoFH](https://curseforge.com/members/TeamCoFH)                                   |                    |
 | :gear:        | [Requious Frakto](https://www.curseforge.com/minecraft/mc-mods/requious-frakto)                                                    | [BordListian](https://curseforge.com/members/BordListian)                             |                    |
 | :gear:        | [Resource Loader](https://www.curseforge.com/minecraft/mc-mods/resource-loader)                                                    | [Lumien231](https://curseforge.com/members/Lumien231)                                 | :white_check_mark: |
