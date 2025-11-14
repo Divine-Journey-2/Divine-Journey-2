@@ -7,6 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Omniwand 2.0.1
 - Add Morph Overlay 1.0.1
 - Add Crash Assistant 1.10.20
+- Add Botania CEU 369b
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -25,6 +26,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
 - Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
+- Remove Botania 364.4
 
 ## Bugfixes:
 
@@ -52,6 +54,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Bewitchment Distillery crashing when attempting to produce multiple outputs when only one slot is empty (Bewitchment)
 - Fix rendering bug with shaders that required restarting to fix (Hammer Lib)
 - Fix pack info buttons opening a GUI that doesn't scroll properly (Enders Modpack Tweaks)
+- Remove the possibility of chunk banning from the Alfheim Portal (Botania CEU)
+- Fix bug involving Storage Drawers and Corporea (Botania CEU)
 
 ## Balance Adjustments:
 

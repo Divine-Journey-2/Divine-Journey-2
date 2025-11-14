@@ -185,12 +185,6 @@
       "required": true
     },
     {
-      "slug": "botania",
-      "projectID": 225643,
-      "fileID": 3330934,
-      "required": true
-    },
-    {
       "slug": "mmmmmmmmmmmmmmmmmmmmm",
       "projectID": 225738,
       "fileID": 2503041,
@@ -1402,6 +1396,12 @@
       "slug": "crash-assistant",
       "projectID": 1154099,
       "fileID": 7215788,
+      "required": true
+    },
+    {
+      "slug": "botania-ceu",
+      "projectID": 1179448,
+      "fileID": 6900692,
       "required": true
     },
     {
