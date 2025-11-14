@@ -11,6 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Twilight Forest - Deforestation Edition 3.14
 - Add Red Core 0.7-Dev-1
 - Add Alfheim 1.6
+- Add Natura Legacy 4.4.0
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -31,6 +32,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
 - Remove Botania 364.4
 - Remove Twilight Forest 3.11.1021
+- Remove Natura 4.3.2.69
 
 ## Bugfixes:
 
@@ -61,12 +63,15 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the possibility of chunk banning from the Alfheim Portal (Botania CEU)
 - Fix bug involving Storage Drawers and Corporea (Botania CEU)
 - Fix a few vanilla lighting bugs, including incorrect stair and slab lighting (Alfheim)
+- Fix Natura Saplings not growing properly in some situations (Natura Legacy)
 
 ## Balance Adjustments:
 
 - Make Galacticraft machines handling gases compatible with Mekanism gas capabilities (Galacticraft Legacy)
 - Allow the Infinity Enchantment to be combined with the Mending Enchantment (Universal Tweaks)
 - Allow CoFH Multishot to apply to any bow (Universal Tweaks)
+- Increase the spawn rate of Natura Imps (Natura Legacy)
+- Natura Imps are now tempted and bred by Natura Nether Mushrooms instead of Soup (Natura Legacy)
 
 ## QoL Improvements:
 
@@ -94,6 +99,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix Twilight Forest Door textures being missing and unhide from JEI (Twilight Forest - Deforestation Edition)
 - Allow some Twilight Forest trophies to be animated when powered by redstone (Twilight Forest - Deforestation Edition)
+- Update many Natura textures (Natura Legacy)
+- Add Natura Imp variant textures (Natura Legacy)
 
 ## GitHub Developments:
 
@@ -101,6 +108,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Miscellaneous Changes:
 
 - Remove some crafttweaker event usages for spawning DivineRPG bosses due to being made part of Universal Tweaks
+- Remove a check fixing lead behavior with Natura Imps due to being fixed in Natura Legacy
 - Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
 - Change the entity health bar display to require being looked at, saving a significant amount of performance
 - Disable Recurrent Complex sending admins a message notifying the status of various structures

@@ -730,10 +730,10 @@
     "modId": "mysticalworld",
     "version": "1.12.2-1.11.0"
   },
-  "natura-1.12.2-4.3.2.69.jar": {
-    "jarName": "natura-1.12.2-4.3.2.69.jar",
+  "natura-legacy-1.12.2-4.4.0.jar": {
+    "jarName": "natura-legacy-1.12.2-4.4.0.jar",
     "modId": "natura",
-    "version": "1.12.2-4.3.2.69"
+    "version": "4.4.0"
   },
   "NaturesCompass-1.12.2-1.8.5.jar": {
     "jarName": "NaturesCompass-1.12.2-1.8.5.jar",

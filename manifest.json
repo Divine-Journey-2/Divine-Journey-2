@@ -70,12 +70,6 @@
       "required": true
     },
     {
-      "slug": "natura",
-      "projectID": 74120,
-      "fileID": 2711439,
-      "required": true
-    },
-    {
       "slug": "evilcraft",
       "projectID": 74610,
       "fileID": 2811267,
@@ -1402,6 +1396,12 @@
       "slug": "thaumcraftfix",
       "projectID": 1069346,
       "fileID": 7040753,
+      "required": true
+    },
+    {
+      "slug": "natura-legacy",
+      "projectID": 1116420,
+      "fileID": 6982881,
       "required": true
     },
     {
