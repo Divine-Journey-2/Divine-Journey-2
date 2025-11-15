@@ -98,6 +98,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Change the text warning that the EnderIO Farming Station crashes with AgriCraft Crop Sticks, as instead of crashing it now merely does nothing.
 - Add several more buttons for pack info, including a discord invite (Enders Modpack Tweaks)
 - Make Roots Moss quest accept any type of knife instead of only Iron
+- Remove the outdated warning for breaking Extra Utilities 2 machines with Direct
+- Remove the outdated comment for using the "Find In Nearby Inventories" keybind
+- Remove the outdated suggest to try the "Extended Vein Mining" feature for the Atomic Disassembler, as it was disabled
 
 ## Texture Transformations:
 
