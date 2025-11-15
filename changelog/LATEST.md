@@ -103,6 +103,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the outdated suggest to try the "Extended Vein Mining" feature for the Atomic Disassembler, as it was disabled
 - Fix a typo in quest 1698
 - Adjust Roots Runestone quest to reflect that you have already made a Ritual, and fix a typo regarding that Ritual
+- Note where and how Energized Clathrate spawns in the Transmutation Ritual quest
+- Note what effect the Tesla Core Lib Speed and Energy upgrades actually have
+- Note that only the primary soil block from the Drop of Evil can be harvested with Silk Touch
+- Note that the size of the rift affects Primordial Pearl drop rate, and that the maximum is 10%
 
 ## Texture Transformations:
 
