@@ -92,6 +92,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Switch to the Alfheim lighting engine, improving lighting performance (Alfheim)
 - Enable JEI ResourceID searching as required prefix by default
 - Hide NYI items from The Twilight Forest from JEI
+- Disable EnderIO celebrating the New Year, as it tends to cause significant lag
 
 ## Text and Quest Updates:
 
