@@ -108,6 +108,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Note what effect the Tesla Core Lib Speed and Energy upgrades actually have
 - Note that only the primary soil block from the Drop of Evil can be harvested with Silk Touch
 - Note that the size of the rift affects Primordial Pearl drop rate, and that the maximum is 10%
+- Remove the LightningCraft Tx/Rx Link Tag requirement from the Wireless LE quest and adjust wording
 
 ## Texture Transformations:
 
