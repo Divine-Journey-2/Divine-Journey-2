@@ -116,6 +116,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the LightningCraft Tx/Rx Link Tag requirement from the Wireless LE quest and adjust wording
 - Describe what heating options exist for the Bewitchment Cauldron
 - Update Imaginary Time Block quest description to include the range
+- Fix Immersive Engineering Blast Furnace quest noting Thermal Expansion instead of Mekanism as when you next get Steel
 
 ## Texture Transformations:
 
