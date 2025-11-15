@@ -97,6 +97,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Hide NYI items from The Twilight Forest from JEI
 - Disable EnderIO celebrating the New Year, as it tends to cause significant lag
 - Add a NBT clearing recipe for the RFTools Filter Module
+- Limit the rendering of items in Storage Drawers to only be if you are within 12 blocks
 
 ## Text and Quest Updates:
 
