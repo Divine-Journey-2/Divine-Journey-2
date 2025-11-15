@@ -74,6 +74,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Increase the spawn rate of Natura Imps (Natura Legacy)
 - Natura Imps are now tempted and bred by Natura Nether Mushrooms instead of Soup (Natura Legacy)
 - Decrease DivineRPG Ent spawn rate from 20% per log to 2%
+- Add a real Bewitchment Toe of Frog drop to the Bewitchment Mob Loot Fabricator recipe
 
 ## QoL Improvements:
 
