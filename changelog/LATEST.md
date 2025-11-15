@@ -114,6 +114,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Note that the size of the rift affects Primordial Pearl drop rate, and that the maximum is 10%
 - Remove the LightningCraft Tx/Rx Link Tag requirement from the Wireless LE quest and adjust wording
 - Describe what heating options exist for the Bewitchment Cauldron
+- Update Imaginary Time Block quest description to include the range
 
 ## Texture Transformations:
 
