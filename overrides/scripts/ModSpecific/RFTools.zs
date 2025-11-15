@@ -225,6 +225,11 @@ function getSyringe(entity as string) as IItemStack {
 recipes.remove(<rftools:peace_essence>);
 recipes.addShapeless(<rftools:peace_essence>, [getSyringe("minecraft:villager_golem"),getSyringe("minecraft:enderman"),getSyringe("minecraft:snowman"),getSyringe("minecraft:bat"),getSyringe("minecraft:ocelot"),getSyringe("minecraft:guardian"),getSyringe("minecraft:wolf"),getSyringe("minecraft:zombie_pigman"),getSyringe("minecraft:mooshroom")]);
 
+// Filter Module
+recipes.remove(<rftools:filter_module>);
+recipes.addShaped(<rftools:filter_module>.withTag({blacklistMode:"White"}), [[null,<minecraft:hopper>,null],[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>],[null,<minecraft:paper>,null]]);
+recipes.addHiddenShapeless("rftools_filter_module_clearing", <rftools:filter_module>.withTag({blacklistMode:"White"}), [<rftools:filter_module>]);
+
 // Item Filter
 recipes.remove(<rftools:item_filter>);
 recipes.addShaped(<rftools:item_filter>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:6>],[<ironchest:iron_chest>,<rftools:machine_frame>,<ironchest:iron_chest>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:6>]]);

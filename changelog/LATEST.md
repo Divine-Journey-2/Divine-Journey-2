@@ -65,6 +65,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix a few vanilla lighting bugs, including incorrect stair and slab lighting (Alfheim)
 - Fix Natura Saplings not growing properly in some situations (Natura Legacy)
 - Fix RFTools Peace Essence not checking NBT data properly, make it a shapeless recipe
+- Fix the RFTools Filter Module not displaying whitelist status properly after being crafted
 
 ## Balance Adjustments:
 
@@ -93,6 +94,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Enable JEI ResourceID searching as required prefix by default
 - Hide NYI items from The Twilight Forest from JEI
 - Disable EnderIO celebrating the New Year, as it tends to cause significant lag
+- Add a NBT clearing recipe for the RFTools Filter Module
 
 ## Text and Quest Updates:
 
