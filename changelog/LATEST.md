@@ -101,6 +101,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the outdated warning for breaking Extra Utilities 2 machines with Direct
 - Remove the outdated comment for using the "Find In Nearby Inventories" keybind
 - Remove the outdated suggest to try the "Extended Vein Mining" feature for the Atomic Disassembler, as it was disabled
+- Fix a typo in quest 1698
 
 ## Texture Transformations:
 
