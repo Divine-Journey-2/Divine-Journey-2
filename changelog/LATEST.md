@@ -136,3 +136,4 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
 - Change the entity health bar display to require being looked at, saving a significant amount of performance
 - Disable Recurrent Complex sending admins a message notifying the status of various structures
+- Add Nightly link to the README
