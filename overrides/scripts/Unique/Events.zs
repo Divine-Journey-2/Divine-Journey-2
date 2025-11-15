@@ -8,6 +8,7 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.event.EntityTravelToDimensionEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
@@ -219,6 +220,15 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
         activateEnderCore(e.player);
     }
 });
+
+
+events.onEntityJoinWorld(function(e as EntityJoinWorldEvent) {
+    // Ents have a 20% spawn chance for each log break, which is a bit excessive
+    // this turns that down to 2%
+    if (isNull(e.entity.definition) || isNull(e.world) || isNull(e.world.random)) return;
+    if (e.entity.definition.id == "divinerpg:ent" && e.world.random.nextInt(10) != 0) e.cancel();
+});
+
 
 static IE_WORKBENCH as IBlock = <immersiveengineering:wooden_device0:2>.asBlock();
 
