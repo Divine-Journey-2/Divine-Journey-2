@@ -64,6 +64,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix bug involving Storage Drawers and Corporea (Botania CEU)
 - Fix a few vanilla lighting bugs, including incorrect stair and slab lighting (Alfheim)
 - Fix Natura Saplings not growing properly in some situations (Natura Legacy)
+- Fix RFTools Peace Essence not checking NBT data properly, make it a shapeless recipe
 
 ## Balance Adjustments:
 
