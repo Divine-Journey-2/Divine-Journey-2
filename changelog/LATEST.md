@@ -66,6 +66,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Natura Saplings not growing properly in some situations (Natura Legacy)
 - Fix RFTools Peace Essence not checking NBT data properly, make it a shapeless recipe
 - Fix the RFTools Filter Module not displaying whitelist status properly after being crafted
+- Fix Extra Utilities 2 Bladerang enchantment book being uncraftable
 
 ## Balance Adjustments:
 
