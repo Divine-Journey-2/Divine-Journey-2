@@ -102,6 +102,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the outdated comment for using the "Find In Nearby Inventories" keybind
 - Remove the outdated suggest to try the "Extended Vein Mining" feature for the Atomic Disassembler, as it was disabled
 - Fix a typo in quest 1698
+- Adjust Roots Runestone quest to reflect that you have already made a Ritual, and fix a typo regarding that Ritual
 
 ## Texture Transformations:
 
