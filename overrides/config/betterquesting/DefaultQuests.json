@@ -78032,7 +78032,8 @@
             },
             "1:10": {
               "id:8": "roots:iron_knife",
-              "Count:3": 1
+              "Count:3": 1,
+              "OreDict:8": "rootsMossKnife"
             },
             "2:10": {
               "id:8": "roots:terra_moss",

@@ -96,6 +96,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix a few typos in Thaumonomicon researches (Thaumcraft Fix)
 - Change the text warning that the EnderIO Farming Station crashes with AgriCraft Crop Sticks, as instead of crashing it now merely does nothing.
 - Add several more buttons for pack info, including a discord invite (Enders Modpack Tweaks)
+- Make Roots Moss quest accept any type of knife instead of only Iron
 
 ## Texture Transformations:
 
