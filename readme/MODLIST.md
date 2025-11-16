@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 233
+Total Mods: 234
 
 ## Type Key
 
@@ -12,7 +12,7 @@ Total Mods: 233
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
 | :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
-| :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
+| :bug:         | 10    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
 | :world_map:   | 5     | Worldgen          | Changes or improves worldgen                                                                                           |
 | :closed_book: | 3     | Questbook         | Related to the Questbook                                                                                               |
@@ -171,6 +171,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :world_map:   | [Natura Legacy](https://www.curseforge.com/minecraft/mc-mods/natura-legacy)                                                        | [ACGaming56](https://curseforge.com/members/ACGaming56)                               |                    |
 | :toolbox:     | [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)                                                   | [Chaosyr](https://curseforge.com/members/chaosyr)                                     |                    |
 | :books:       | [NotEnoughIDs](https://www.curseforge.com/minecraft/mc-mods/notenoughids)                                                          | [fewizz_](https://curseforge.com/members/fewizz_)                                     |                    |
+| :bug:         | [NoiseThreader](https://www.curseforge.com/minecraft/mc-mods/noisethreader)                                                        | [fonnymunkey](https://curseforge.com/members/fonnymunkey)                             |                    |
 | :toolbox:     | [OAuth](https://www.curseforge.com/minecraft/mc-mods/oauth)                                                                        | [Sintinium](https://curseforge.com/members/Sintinium)                                 | :white_check_mark: |
 | :toolbox:     | [Omniwand](https://www.curseforge.com/minecraft/mc-mods/omniwand)                                                                  | [invadermonky](https://www.curseforge.com/members/invadermonky)                       |                    |
 | :gem:         | [DivineRPG (Official)](https://www.curseforge.com/minecraft/mc-mods/official-divinerpg)                                            | [Scimiguy](https://curseforge.com/members/Scimiguy)                                   |                    |

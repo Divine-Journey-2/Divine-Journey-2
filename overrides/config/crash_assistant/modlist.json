@@ -740,6 +740,11 @@
     "modId": "naturescompass",
     "version": "1.12.2-1.8.5"
   },
+  "NoiseThreader-1.1.1.jar": {
+    "jarName": "NoiseThreader-1.1.1.jar",
+    "modId": "noisethreader",
+    "version": "1.1.1"
+  },
   "NotEnoughIDs-1.5.4.4.jar": {
     "jarName": "NotEnoughIDs-1.5.4.4.jar",
     "modId": "neid",

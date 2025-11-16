@@ -12,6 +12,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Red Core 0.7-Dev-1
 - Add Alfheim 1.6
 - Add Natura Legacy 4.4.0
+- Add NoiseThreader 1.1.1
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -99,6 +100,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable EnderIO celebrating the New Year, as it tends to cause significant lag
 - Add a NBT clearing recipe for the RFTools Filter Module
 - Limit the rendering of items in Storage Drawers to only be if you are within 12 blocks
+- Improve worldgen performance (NoiseThreader)
+- Disable excessive warning about cascading terrain generation
 
 ## Text and Quest Updates:
 

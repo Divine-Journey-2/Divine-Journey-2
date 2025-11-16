@@ -1405,6 +1405,12 @@
       "required": true
     },
     {
+      "slug": "noisethreader",
+      "projectID": 1153744,
+      "fileID": 6848878,
+      "required": true
+    },
+    {
       "slug": "crash-assistant",
       "projectID": 1154099,
       "fileID": 7215788,
