@@ -108,7 +108,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the outdated warning for breaking Extra Utilities 2 machines with Direct
 - Remove the outdated comment for using the "Find In Nearby Inventories" keybind
 - Remove the outdated suggest to try the "Extended Vein Mining" feature for the Atomic Disassembler, as it was disabled
-- Fix a typo in quest 1231 and 1698
+- Fix a typo in quest 499, 1231, and 1698
 - Adjust Roots Runestone quest to reflect that you have already made a Ritual, and fix a typo regarding that Ritual
 - Note where and how Energized Clathrate spawns in the Transmutation Ritual quest
 - Note what effect the Tesla Core Lib Speed and Energy upgrades actually have
