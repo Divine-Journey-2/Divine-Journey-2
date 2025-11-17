@@ -130,6 +130,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Immersive Engineering Blast Furnace quest noting Thermal Expansion instead of Mekanism as when you next get Steel
 - Improve quest description of the Integrated Dynamics Mechanical Squeezer and Mechanical Drying Basin by including information on their sides
 - Add missing lang keys for Underground Biomes Chiseled Metamorphic Sandstone
+- Hide a few unused items without lang keys from JEI
 
 ## Texture Transformations:
 
