@@ -14,6 +14,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Natura Legacy 4.4.0
 - Add NoiseThreader 1.1.1
 - Add Forgelin-Continuous 2.1.20.0
+- Add Quark: RotN Edition r1.6-189
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -36,6 +37,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Twilight Forest 3.11.1021
 - Remove Natura 4.3.2.69
 - Remove Shadowfacts' Forgelin 1.8.4
+- Remove Quark r1.6-179
 
 ## Bugfixes:
 
@@ -70,6 +72,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix RFTools Peace Essence not checking NBT data properly, make it a shapeless recipe
 - Fix the RFTools Filter Module not displaying whitelist status properly after being crafted
 - Fix Extra Utilities 2 Bladerang enchantment book being uncraftable
+- Fix Quark Flower Pots being able to cause cascading errors (Quark: RotN Edition)
+- Fix a few issues with Quark Cave Roots terrain generation (Quark: RotN Edition)
+- Fix the possibility of voiding items when inserting into a shulker box via GUI (Quark: RotN Edition)
 
 ## Balance Adjustments:
 
@@ -105,6 +110,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improve worldgen performance (NoiseThreader)
 - Disable excessive warning about cascading terrain generation
 - Disable JEI Color searching by default, speeding up startup time by ~5%
+- Tooltip on the "Merge to Nearby Chests" button in your inventory that holding shift changes its mode (Quark: RotN Edition)
 
 ## Text and Quest Updates:
 
