@@ -102,6 +102,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Limit the rendering of items in Storage Drawers to only be if you are within 12 blocks
 - Improve worldgen performance (NoiseThreader)
 - Disable excessive warning about cascading terrain generation
+- Disable JEI Color searching by default, speeding up startup time by ~5%
 
 ## Text and Quest Updates:
 
