@@ -3,20 +3,14 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
-- Add Galacticraft Legacy 4.0.7
 - Add Omniwand 2.0.1
 - Add Morph Overlay 1.0.1
 - Add Crash Assistant 1.10.20
 - Add Botania CEU 369b
-- Add Twilight Forest - Deforestation Edition 3.14
 - Add Red Core 0.7-Dev-1
 - Add Alfheim 1.6
-- Add Natura Legacy 4.4.0
 - Add NoiseThreader 1.1.1
-- Add Forgelin-Continuous 2.1.20.0
-- Add Quark: RotN Edition r1.6-189
 - Add Integrated Derivitive 1.1.2
-- Add Mouse Tweaks Unofficial 3.1.5
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -25,23 +19,16 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Recurrent Complex 1.4.8.5 -> 1.4.8.6
 - Update Bewitchment 0.0.22.64 -> 0.0.22.65
 - Update Hammer Lib 2.0.6.32 -> 12.2.58
-- Remove Neat 1.4 (Enders Modpack Tweaks)
-- Remove MPUtils 1.5.7 (Enders Modpack Tweaks)
-- Remove MPUtils Basic Tools 1.4.11 (Enders Modpack Tweaks)
-- Remove Controlling 3.0.10 (Enders Modpack Tweaks)
-- Remove Featured Servers 1.0.6 (Enders Modpack Tweaks)
-- Remove Startup Timer 1.1.0 (Enders Modpack Tweaks)
+- Replace Neat 1.4, MPUtils 1.5.7, MPUtils Basic Tools 1.4.11, Featured Servers 1.0.6, Startup Timer 1.1.0 -> Ender Modpack Tweaks 0.5.11
+- Replace MicdoodleCore 4.0.2.280, GalacticraftCore 4.0.2.280, Galacticraft Planets 4.0.2.280 -> Galacticraft Legacy 4.0.7
+- Replace Botania 364.4 -> Botania CEU 369b
+- Replace Twilight Forest 3.11.1021 -> Twilight Forest - Deforestation Edition 3.14
+- Replace Natura 4.3.2.69 -> Natura Legacy 4.4.0
+- Replace Shadowfacts' Forgelin 1.8.4 -> Forgelin-Continuous 2.1.20.0
+- Replace Quark r1.6-179 -> Quark: RotN Edition r1.6-189
+- Replace Mouse Tweaks 2.10.1 -> Mouse Tweaks Unofficial 3.1.5
 - Remove Additional Resources 0.2.0.28
-- Remove Galacticraft Planets 4.0.2.280 (Galacticraft Legacy)
-- Remove GalacticraftCore 4.0.2.280 (Galacticraft Legacy)
-- Remove MicdoodleCore 4.0.2.280 (Galacticraft Legacy)
-- Remove Botania 364.4
-- Remove Twilight Forest 3.11.1021
-- Remove Natura 4.3.2.69
-- Remove Shadowfacts' Forgelin 1.8.4
-- Remove Quark r1.6-179
 - Remove Bed Patch 2.2
-- Remove Mouse Tweaks 2.10.1
 
 ## Bugfixes:
 
@@ -68,7 +55,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix broken particle effects with some ProjectRed blocks (FermiumASM)
 - Fix Bewitchment Distillery crashing when attempting to produce multiple outputs when only one slot is empty (Bewitchment)
 - Fix rendering bug with shaders that required restarting to fix (Hammer Lib)
-- Fix pack info buttons opening a GUI that doesn't scroll properly (Enders Modpack Tweaks)
+- Fix pack info buttons opening a GUI that doesn't scroll properly (Ender Modpack Tweaks)
 - Remove the possibility of chunk banning from the Alfheim Portal (Botania CEU)
 - Fix bug involving Storage Drawers and Corporea (Botania CEU)
 - Fix a few vanilla lighting bugs, including incorrect stair and slab lighting (Alfheim)
@@ -126,7 +113,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix a few typos in Thaumonomicon researches (Thaumcraft Fix)
 - Change the text warning that the EnderIO Farming Station crashes with AgriCraft Crop Sticks, as instead of crashing it now merely does nothing.
-- Add several more buttons for pack info, including a discord invite (Enders Modpack Tweaks)
+- Add several more buttons for pack info, including a discord invite (Ender Modpack Tweaks)
 - Make Roots Moss quest accept any type of knife instead of only Iron
 - Remove the outdated warning for breaking Extra Utilities 2 machines with Direct
 - Remove the outdated comment for using the "Find In Nearby Inventories" keybind
@@ -158,7 +145,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Remove some crafttweaker event usages for spawning DivineRPG bosses due to being made part of Universal Tweaks
 - Remove a check fixing lead behavior with Natura Imps due to being fixed in Natura Legacy
-- Add a message notifying that the server has finished starting up (Enders Modpack Tweaks)
+- Add a message notifying that the server has finished starting up (Ender Modpack Tweaks)
 - Change the entity health bar display to require being looked at, saving a significant amount of performance
 - Disable Recurrent Complex sending admins a message notifying the status of various structures
 - Add Nightly link to the README
