@@ -79,6 +79,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the possibility of voiding items when inserting into a shulker box via GUI (Quark: RotN Edition)
 - Fix Integrated Tunnels being able to break unbreakable blocks (Integrated Derivative)
 - Fix Integrated Dynamics Delayer being formatted incorrectly and missing data (Integrated Derivative)
+- Fix the wrong type of Charcoal Block being used in AbyssalCraft
 
 ## Balance Adjustments:
 

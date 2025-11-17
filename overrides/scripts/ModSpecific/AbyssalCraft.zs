@@ -409,7 +409,7 @@ mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<enderio:item_material:23>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<actuallyadditions:item_dust:6>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<bloodmagic:component:21>);
-mods.abyssalcraft.Crystallizer.addSingleCrystallization(<actuallyadditions:block_misc:5>, <abyssalcraft:crystalcluster:3>, 0.9);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:storage_resource>, <abyssalcraft:crystalcluster:3>, 0.9);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<minecraft:blaze_rod>, <abyssalcraft:crystalshard:15> * 20, 0.5);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:blazeblock>, <abyssalcraft:crystal:15> * 20, 1.0);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:129>, <abyssalcraft:crystal:16>, 0.1);
