@@ -788,5 +788,18 @@ dj2.deprecated.convert.desc=§cConvert into the replacement item via shapeless c
 
 # Fix Broken Lang Keys from other sources
 
+# Missing keys from Bewitchment for Thaumcraft Research
 research.f_MATCOLDIRON.text=Examine Cold Iron.
 research.f_MATSILVER.text=Examine Silver.
+
+# Underground Biomes forgot to translate some of their blocks
+# They instead have duplicate lang keys for sedimentary.
+# https://github.com/LemADEC/UndergroundBiomesConstructs/blob/master/src/main/resources/assets/undergroundbiomes/lang/en_us.lang#L625
+tile.metamorphic_sandstone_chiseled.gneiss.name=Chiseled Gneiss Sandstone
+tile.metamorphic_sandstone_chiseled.eclogite.name=Chiseled Eclogite Sandstone
+tile.metamorphic_sandstone_chiseled.marble.name=Chiseled Marble Sandstone
+tile.metamorphic_sandstone_chiseled.quartzite.name=Chiseled Quartzite Sandstone
+tile.metamorphic_sandstone_chiseled.blueschist.name=Blue Chiseled Schist Sandstone
+tile.metamorphic_sandstone_chiseled.greenschist.name=Green Chiseled Schist Sandstone
+tile.metamorphic_sandstone_chiseled.soapstone.name=Chiseled Soapstone Sandstone
+tile.metamorphic_sandstone_chiseled.migmatite.name=Chiseled Migmatite Sandstone
