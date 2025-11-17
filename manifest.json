@@ -33,13 +33,6 @@
       "required": true
     },
     {
-      "slug": "mouse-tweaks",
-      "projectID": 60089,
-      "fileID": 3359843,
-      "required": true,
-      "clientOnly": true
-    },
-    {
       "slug": "ender-io",
       "projectID": 64578,
       "fileID": 4674244,
@@ -1263,6 +1256,13 @@
       "projectID": 456403,
       "fileID": 7182824,
       "required": true
+    },
+    {
+      "slug": "mouse-tweaks-unofficial",
+      "projectID": 461660,
+      "fileID": 5876158,
+      "required": true,
+      "clientOnly": true
     },
     {
       "slug": "astral-level-tweak",

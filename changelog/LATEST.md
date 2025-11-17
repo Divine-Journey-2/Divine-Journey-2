@@ -16,6 +16,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Forgelin-Continuous 2.1.20.0
 - Add Quark: RotN Edition r1.6-189
 - Add Integrated Derivitive 1.1.2
+- Add Mouse Tweaks Unofficial 3.1.5
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -40,6 +41,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Shadowfacts' Forgelin 1.8.4
 - Remove Quark r1.6-179
 - Remove Bed Patch 2.2
+- Remove Mouse Tweaks 2.10.1
 
 ## Bugfixes:
 
@@ -80,6 +82,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Integrated Tunnels being able to break unbreakable blocks (Integrated Derivative)
 - Fix Integrated Dynamics Delayer being formatted incorrectly and missing data (Integrated Derivative)
 - Fix the wrong type of Charcoal Block being used in AbyssalCraft
+- Fix scrolling before changing GUIs treating the item behind hovered afterwards as just been scrolled (Mouse Tweaks Unofficial)
 
 ## Balance Adjustments:
 
