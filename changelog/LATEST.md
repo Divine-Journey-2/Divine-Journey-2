@@ -128,6 +128,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Describe what heating options exist for the Bewitchment Cauldron
 - Update Imaginary Time Block quest description to include the range
 - Fix Immersive Engineering Blast Furnace quest noting Thermal Expansion instead of Mekanism as when you next get Steel
+- Improve quest description of the Integrated Dynamics Mechanical Squeezer and Mechanical Drying Basin by including information on their sides
 
 ## Texture Transformations:
 
