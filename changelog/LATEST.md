@@ -13,6 +13,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Alfheim 1.6
 - Add Natura Legacy 4.4.0
 - Add NoiseThreader 1.1.1
+- Add Forgelin-Continuous 2.1.20.0
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -34,6 +35,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Botania 364.4
 - Remove Twilight Forest 3.11.1021
 - Remove Natura 4.3.2.69
+- Remove Shadowfacts' Forgelin 1.8.4
 
 ## Bugfixes:
 

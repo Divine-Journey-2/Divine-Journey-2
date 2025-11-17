@@ -433,10 +433,10 @@
     "modId": "normalasm",
     "version": "5.28"
   },
-  "Forgelin-1.8.4.jar": {
-    "jarName": "Forgelin-1.8.4.jar",
-    "modId": "forgelin",
-    "version": "1.8.4"
+  "Forgelin-Continuous-2.2.21.0.jar": {
+    "jarName": "Forgelin-Continuous-2.2.21.0.jar",
+    "modId": "forgelin_continuous",
+    "version": "2.1.20.0"
   },
   "ForgeMultipart-1.12.2-2.6.2.83-universal.jar": {
     "jarName": "ForgeMultipart-1.12.2-2.6.2.83-universal.jar",

@@ -611,12 +611,6 @@
       "required": true
     },
     {
-      "slug": "shadowfacts-forgelin",
-      "projectID": 248453,
-      "fileID": 2785465,
-      "required": true
-    },
-    {
       "slug": "appleskin",
       "projectID": 248787,
       "fileID": 2987247,
@@ -1268,6 +1262,12 @@
       "slug": "bqtweaker",
       "projectID": 423758,
       "fileID": 4448659,
+      "required": true
+    },
+    {
+      "slug": "forgelin-continuous",
+      "projectID": 456403,
+      "fileID": 7182824,
       "required": true
     },
     {
