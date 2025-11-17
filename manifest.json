@@ -920,12 +920,6 @@
       "required": true
     },
     {
-      "slug": "bed-patch",
-      "projectID": 282963,
-      "fileID": 2532663,
-      "required": true
-    },
-    {
       "slug": "laggoggles",
       "projectID": 283525,
       "fileID": 4493884,

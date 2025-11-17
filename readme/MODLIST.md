@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 235
+Total Mods: 234
 
 ## Type Key
 
@@ -12,7 +12,7 @@ Total Mods: 235
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
 | :ring:        | 43    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
-| :bug:         | 10    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
+| :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
 | :world_map:   | 5     | Worldgen          | Changes or improves worldgen                                                                                           |
 | :closed_book: | 3     | Questbook         | Related to the Questbook                                                                                               |
@@ -50,7 +50,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :world_map:   | [Basic Nether Ores](https://www.curseforge.com/minecraft/mc-mods/basic-nether-ores)                                                | [cScotPlay](https://curseforge.com/members/cScotPlay)                                 |                    |
 | :toolbox:     | [Baubles](https://www.curseforge.com/minecraft/mc-mods/baubles)                                                                    | [Azanor13](https://curseforge.com/members/Azanor13)                                   |                    |
 | :toolbox:     | [Baubley Heart Canisters](https://www.curseforge.com/minecraft/mc-mods/baubley-heart-canisters)                                    | [traverse_joe](https://curseforge.com/members/traverse_joe)                           |                    |
-| :bug:         | [Bed Patch](https://www.curseforge.com/minecraft/mc-mods/bed-patch)                                                                | [Mordenkainen3141](https://curseforge.com/members/Mordenkainen3141)                   |                    |
 | :toolbox:     | [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)                                            | [way2muchnoise](https://curseforge.com/members/way2muchnoise)                         | :white_check_mark: |
 | :toolbox:     | [Better Builder's Wands](https://www.curseforge.com/minecraft/mc-mods/better-builders-wands)                                       | [Portablejim](https://curseforge.com/members/Portablejim)                             |                    |
 | :closed_book: | [Better Questing - Standard Expansion](https://www.curseforge.com/minecraft/mc-mods/better-questing-standard-expansion)            | [Funwayguy](https://curseforge.com/members/Funwayguy)                                 |                    |

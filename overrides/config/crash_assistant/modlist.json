@@ -150,11 +150,6 @@
     "modId": "bhc",
     "version": "1.12.2-1.2.3"
   },
-  "bedpatch-2.2-1.12.2.jar": {
-    "jarName": "bedpatch-2.2-1.12.2.jar",
-    "modId": "bedpatch",
-    "version": "2.2-1.12.2"
-  },
   "BetterAdvancements-1.12.2-0.1.0.77.jar": {
     "jarName": "BetterAdvancements-1.12.2-0.1.0.77.jar",
     "modId": "betteradvancements",

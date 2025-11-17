@@ -39,6 +39,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Natura 4.3.2.69
 - Remove Shadowfacts' Forgelin 1.8.4
 - Remove Quark r1.6-179
+- Remove Bed Patch 2.2
 
 ## Bugfixes:
 
