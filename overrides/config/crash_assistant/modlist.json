@@ -512,6 +512,11 @@
     "modId": "InitialInventory",
     "version": "3.0.0"
   },
+  "integratedderivative-1.1.2.jar": {
+    "jarName": "integratedderivative-1.1.2.jar",
+    "modId": "integratedderivative",
+    "version": "1.1.2"
+  },
   "IntegratedDynamics-1.12.2-1.1.11.jar": {
     "jarName": "IntegratedDynamics-1.12.2-1.1.11.jar",
     "modId": "integrateddynamics",

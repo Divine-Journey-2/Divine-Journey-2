@@ -1393,6 +1393,12 @@
       "required": true
     },
     {
+      "slug": "integrated-derivative",
+      "projectID": 1067548,
+      "fileID": 5994116,
+      "required": true
+    },
+    {
       "slug": "thaumcraftfix",
       "projectID": 1069346,
       "fileID": 7040753,

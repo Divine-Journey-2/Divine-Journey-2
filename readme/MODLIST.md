@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 234
+Total Mods: 235
 
 ## Type Key
 
@@ -10,7 +10,7 @@ Total Mods: 234
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
-| :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
+| :ring:        | 43    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
 | :bug:         | 10    | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
@@ -124,6 +124,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [Industrial Foregoing](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing)                                          | [Buuz135](https://curseforge.com/members/Buuz135)                                     |                    |
 | :books:       | [InfinityLib](https://www.curseforge.com/minecraft/mc-mods/infinitylib)                                                            | [InfinityRaider](https://curseforge.com/members/InfinityRaider)                       |                    |
 | :gear:        | [Initial Inventory](https://www.curseforge.com/minecraft/mc-mods/initial-inventory)                                                | [Jaredlll08](https://curseforge.com/members/Jaredlll08)                               |                    |
+| :ring:        | [Integrated Derivative](https://www.curseforge.com/minecraft/mc-mods/integrated-derivative)                                        | [Wizzerinus](https://curseforge.com/members/wizzerinus)                               |                    |
 | :gem:         | [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)                                            | [kroeser](https://curseforge.com/members/kroeser)                                     |                    |
 | :ring:        | [Integrated NBT](https://www.curseforge.com/minecraft/mc-mods/integrated-nbt)                                                      | [scleox](https://curseforge.com/members/scleox)                                       |                    |
 | :ring:        | [Integrated Tunnels](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels)                                              | [kroeser](https://curseforge.com/members/kroeser)                                     |                    |

@@ -15,6 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add NoiseThreader 1.1.1
 - Add Forgelin-Continuous 2.1.20.0
 - Add Quark: RotN Edition r1.6-189
+- Add Integrated Derivitive 1.1.2
 - Update MixinBooter 10.6 -> 10.7
 - Update VintageFix 0.5.5 -> 0.6.2
 - Update Thaumcraft Fix 1.1.2 -> 1.1.8
@@ -75,6 +76,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Quark Flower Pots being able to cause cascading errors (Quark: RotN Edition)
 - Fix a few issues with Quark Cave Roots terrain generation (Quark: RotN Edition)
 - Fix the possibility of voiding items when inserting into a shulker box via GUI (Quark: RotN Edition)
+- Fix Integrated Tunnels being able to break unbreakable blocks (Integrated Derivative)
+- Fix Integrated Dynamics Delayer being formatted incorrectly and missing data (Integrated Derivative)
 
 ## Balance Adjustments:
 
@@ -111,6 +114,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable excessive warning about cascading terrain generation
 - Disable JEI Color searching by default, speeding up startup time by ~5%
 - Tooltip on the "Merge to Nearby Chests" button in your inventory that holding shift changes its mode (Quark: RotN Edition)
+- Add the ability to drag entries from JEI into Integrated Dynamics Logic Programmer (Integrated Derivative)
+- Improve the Integrated Tunnels Omni-Directional Connector channel copy recipe (Integrated Derivative)
 
 ## Text and Quest Updates:
 
