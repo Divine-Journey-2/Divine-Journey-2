@@ -84,6 +84,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make EvilCraft Vengeance Spirits only spawn when the Vengeance Ring is active and a player kills a mob
 - Make EvilCraft Environmental Accumulator require mining level 5 in order to be broken, should prevent breaking earlygame
 - Add a Mob Loot Fabricator entry for Dungeon Tokens
+- Increase the power I/O for Immersive Engineering capacitors
 
 ## QoL Improvements:
 
