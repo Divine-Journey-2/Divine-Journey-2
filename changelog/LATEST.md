@@ -82,6 +82,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a real Bewitchment Toe of Frog drop to the Bewitchment Mob Loot Fabricator recipe
 - Change the Blood Magic Plant Oil and Cutting Fluid recipes, using more varied items and running faster
 - Make EvilCraft Vengeance Spirits only spawn when the Vengeance Ring is active and a player kills a mob
+- Make EvilCraft Environmental Accumulator require mining level 5 in order to be broken, should prevent breaking earlygame
 
 ## QoL Improvements:
 
