@@ -136,6 +136,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Improve quest description of the Integrated Dynamics Mechanical Squeezer and Mechanical Drying Basin by including information on their sides
 - Add missing lang keys for Underground Biomes Chiseled Metamorphic Sandstone
 - Hide a few unused items without lang keys from JEI
+- Adjust the Exploration I Prismarine quest, make it no longer require brewing the Water Breathing potion quest and expand information about it
 
 ## Texture Transformations:
 
