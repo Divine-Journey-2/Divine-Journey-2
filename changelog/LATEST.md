@@ -109,6 +109,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Tooltip on the "Merge to Nearby Chests" button in your inventory that holding shift changes its mode (Quark: RotN Edition)
 - Add the ability to drag entries from JEI into Integrated Dynamics Logic Programmer (Integrated Derivative)
 - Improve the Integrated Tunnels Omni-Directional Connector channel copy recipe (Integrated Derivative)
+- Add Chisel Carving for Sand types, in particular for Underground Biomes
+- Add Chisel Carving variations for Quark Sandstone types
 
 ## Text and Quest Updates:
 
