@@ -35,6 +35,10 @@ val frontIngredient = previewIngredient(<chisel:antiblock:7>, "MatF");
     <contenttweaker:hand_framing_tool>
 );
 
+if (loadedMods in "fluiddrawers") {
+    <ore:handFramedThree>.add(itemUtils.getItem("fluiddrawers:tank_custom"));
+}
+
 <ore:handFramed>.addAll(<ore:handFramedThree>);
 <ore:handFramed>.add(<storagedrawers:customtrim>);
 
