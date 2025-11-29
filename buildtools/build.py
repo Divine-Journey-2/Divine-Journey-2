@@ -108,12 +108,12 @@ symLinkDirs = [
 filesToUpdateVersionClient = [
     "manifest.json",
     "overrides/config/CustomMainMenu/mainmenu.json",
-    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
+    "overrides/config/endermodpacktweaks/modpack.cfg"
 ]
 filesToUpdateVersionServer = [
     "manifest.json",
     "config/CustomMainMenu/mainmenu.json",
-    "config/mputils/addons/mpbasic/mpbasic.cfg"
+    "config/endermodpacktweaks/modpack.cfg",
 ]
 
 def print_argument_settings(args: dict):

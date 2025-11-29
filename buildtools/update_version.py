@@ -60,13 +60,6 @@ def convertChangelog(version: str):
         if len(goal.items()) <= 0:
             file.write("\nCould not find a changelog")
 
-    # Overwrite the in-game changelog file
-    with open("overrides/config/mputils/changelog.txt", "w") as file:
-        file.write(UPDATE_QUESTBOOK)
-        file.write(f"\nUpdate {version}:\n")
-        with open(changelogFile) as changelog:
-            file.write(changelog.read())
-
     if getenv("GITHUB_OUTPUT") != None:
         with open(getenv("GITHUB_OUTPUT"), "a") as fh:
             print(f"changelog_file={changelogFile}", file=fh)

@@ -14,6 +14,10 @@ recipes.addShaped(<natura:sticks:11> * 4, [[<natura:nether_planks:3>,null],[null
 recipes.remove(<natura:sticks:12>);
 recipes.addShaped(<natura:sticks:12> * 4, [[<natura:nether_planks:1>,null],[null,<natura:nether_planks:1>]]);
 
+// Quartz Shears
+recipes.remove(<natura:netherquartz_shears>);
+recipes.addShaped(<natura:netherquartz_shears>, [[null,<minecraft:quartz>,null],[<minecraft:netherbrick>,<minecraft:string>,<minecraft:quartz>],[<immersiveengineering:material:1>,<minecraft:netherbrick>,null]]);
+
 // Disabling the Nether Furnace since it's already added by Better Nether
 recipes.remove(<natura:netherrack_furnace>);
 
@@ -32,5 +36,10 @@ for sapling in [<natura:overworld_sapling:0>, <natura:overworld_sapling:1>, <nat
 
 // Imp Leather from Mystical Agriculture Essences
 recipes.addShaped(<natura:materials:6> * 4, [[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>],[<mysticalagriculture:nether_essence>,<mysticalagriculture:nether_essence>,<mysticalagriculture:nether_essence>],[<mysticalagriculture:cow_essence>,null,<mysticalagriculture:cow_essence>]]);
+
+// Respawn Obelisk
+recipes.remove(<natura:respawn_obelisk>);
+recipes.addShaped(<natura:respawn_obelisk>, [[<natura:nether_glass>,<natura:nether_glass>,<natura:nether_glass>],[<natura:nether_glass>,<betternether:pig_statue_01>,<natura:nether_glass>],[<natura:nether_glass>,<natura:nether_glass>,<natura:nether_glass>]]);
+
 
 print("ENDING Natura.zs");

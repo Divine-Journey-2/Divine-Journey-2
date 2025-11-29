@@ -217,6 +217,19 @@ recipes.addShaped(<rftools:matter_beamer>, [[<enderio:item_material:73>,<ore:glo
 recipes.remove(<rftools:syringe>);
 recipes.addShapedMirrored(<rftools:syringe>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,null],[<enderio:item_alloy_ingot:6>,<enderio:item_soul_vial>,<contenttweaker:crystalline_brown_slime_ingot>],[null,<contenttweaker:crystalline_brown_slime_ingot>,<enderio:item_alloy_ingot:6>]]);
 
+// Peace Essence
+function getSyringe(entity as string) as IItemStack {
+    return <rftools:syringe>.withTag({mobId: entity});
+}
+
+recipes.remove(<rftools:peace_essence>);
+recipes.addShapeless(<rftools:peace_essence>, [getSyringe("minecraft:villager_golem"),getSyringe("minecraft:enderman"),getSyringe("minecraft:snowman"),getSyringe("minecraft:bat"),getSyringe("minecraft:ocelot"),getSyringe("minecraft:guardian"),getSyringe("minecraft:wolf"),getSyringe("minecraft:zombie_pigman"),getSyringe("minecraft:mooshroom")]);
+
+// Filter Module
+recipes.remove(<rftools:filter_module>);
+recipes.addShaped(<rftools:filter_module>.withTag({blacklistMode:"White"}), [[null,<minecraft:hopper>,null],[<minecraft:redstone>,<minecraft:iron_ingot>,<minecraft:redstone>],[null,<minecraft:paper>,null]]);
+recipes.addHiddenShapeless("rftools_filter_module_clearing", <rftools:filter_module>.withTag({blacklistMode:"White"}), [<rftools:filter_module>]);
+
 // Item Filter
 recipes.remove(<rftools:item_filter>);
 recipes.addShaped(<rftools:item_filter>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:6>],[<ironchest:iron_chest>,<rftools:machine_frame>,<ironchest:iron_chest>],[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:3>,<enderio:item_alloy_ingot:6>]]);

@@ -1,0 +1,25 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_dungeon_tokens",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "divinerpg:wizards_book",
+            "amount": 1,
+            "chance": 0
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 2000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "divinerpg:dungeon_tokens",
+            "amount": 1
+        }
+    ]
+}

@@ -30,6 +30,8 @@ For more information, browse the GitHub or visit the official [CurseForge page](
 
 Download the pack on [GitHub](https://github.com/Divine-Journey-2/Divine-Journey-2/releases) or [CurseForge](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files).
 
+Nightly (pre-release) versions of the pack can be downloaded off the [Nightly](https://nightly.link/Divine-Journey-2/Divine-Journey-2/workflows/nightly/main).
+
 ## Modlist
 
 View the modlist on [GitHub](readme/MODLIST.md), via the [auto-generated html](modlist.html), or [CurseForge](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/relations/dependencies)
