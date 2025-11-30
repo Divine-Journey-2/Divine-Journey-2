@@ -507,12 +507,6 @@
       "required": true
     },
     {
-      "slug": "quark",
-      "projectID": 243121,
-      "fileID": 2924091,
-      "required": true
-    },
-    {
       "slug": "more-overlays",
       "projectID": 243478,
       "fileID": 2745657,
@@ -1234,6 +1228,12 @@
       "required": true
     },
     {
+      "slug": "quark-rotn-edition",
+      "projectID": 417392,
+      "fileID": 7215216,
+      "required": true
+    },
+    {
       "slug": "tinkers-aether-dman-edition",
       "projectID": 419003,
       "fileID": 3215120,
@@ -1414,7 +1414,8 @@
       "slug": "crash-assistant",
       "projectID": 1154099,
       "fileID": 7215788,
-      "required": true
+      "required": true,
+      "clientOnly": true
     },
     {
       "slug": "botania-ceu",

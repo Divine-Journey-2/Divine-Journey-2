@@ -19,10 +19,10 @@
     "modId": "mixinbooter",
     "version": "10.7"
   },
-  "!Red-Core-MC-1.8-1.12-0.7-Dev-1.jar": {
-    "jarName": "!Red-Core-MC-1.8-1.12-0.7-Dev-1.jar",
+  "!Red-Core-MC-1.8-1.12-0.6.jar": {
+    "jarName": "!Red-Core-MC-1.8-1.12-0.6.jar",
     "modId": "redcore",
-    "version": "0.7-Dev-1"
+    "version": "0.6"
   },
   "`FermiumBooter-1.1.1.jar": {
     "jarName": "`FermiumBooter-1.1.1.jar",
