@@ -86,6 +86,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make EvilCraft Environmental Accumulator require mining level 5 in order to be broken, should prevent breaking earlygame.
 - Add a Mob Loot Fabricator entry for Dungeon Tokens.
 - Increase the power I/O for Immersive Engineering capacitors.
+- Make Bewitchment Coquina using the Basin instead of the Table for Casting.
+- Add Casting recipes for Botania Manasteel, Terrasteel, and Elementium Blocks.
+- Remove a Casting recipe for making Titanium Blocks with the Casting Table instead of the Casting Basin.
 
 ## QoL Improvements:
 
