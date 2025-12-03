@@ -19,6 +19,7 @@ from threading import Thread
 import json
 import os
 import shutil
+import urllib
 import subprocess
 import requests
 from requests.adapters import HTTPAdapter
@@ -262,6 +263,7 @@ def downloadMod(downloadedMods: list, location: str, mod, retries: int):
     response = access.get(mod)
 
     link = mod.split("/")[-1]
+    link = urllib.parse.unquote(link)
     with open(f"{cache}/mods/{location}/{link}", "w+b") as jar:
         jar.write(response.content)
         print(f"{mod} downloaded")
@@ -312,7 +314,7 @@ def getGitTagVersion() -> str:
 def getStandardName(name: str, version: str) -> str:
     """Get the standard name based on the args"""
     name = name.replace(' ', '_')
-    version = version.replace('2.', '.')
+    version = version.replace('2.', '.', 1)
     return f"{name}{version}"
 
 

@@ -7,7 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add Morph Overlay 1.0.1
 - Add Crash Assistant 1.10.20
 - Add Botania CEU 369b
-- Add Red Core 0.7-Dev-1
+- Add Red Core 0.6
 - Add Alfheim 1.6
 - Add NoiseThreader 1.1.1
 - Add Integrated Derivitive 1.1.2
@@ -70,6 +70,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Integrated Dynamics Delayer being formatted incorrectly and missing data (Integrated Derivative).
 - Fix the wrong type of Charcoal Block being used in AbyssalCraft.
 - Fix scrolling before changing GUIs treating the item behind hovered afterwards as just been scrolled (Mouse Tweaks Unofficial).
+- Fix mixins loading vanilla classes sometimes breaking the FML deobfuscation process.
 
 ## Balance Adjustments:
 
@@ -149,6 +150,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Fix error in `questbook.py` by attempting to use a backslash in a comment.
 - Adjust `questbook.py` to allow prefixes of a length other than 3 characters.
+- Make the server zip contain files with parsed names.
+- Fix a bug where the release number would be incorrect if ending with a 2.
 
 ## Miscellaneous Changes:
 
