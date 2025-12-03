@@ -8,6 +8,7 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.BlockHarvestDropsEvent;
 import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.event.EntityTravelToDimensionEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
@@ -160,14 +161,6 @@ function activateEnderCore(player as IPlayer) as void {
     }
 }
 
-function removeItemFromHand(player as IPlayer, item as IItemStack) {
-    if (!isNull(player.mainHandHeldItem) && item.matches(player.mainHandHeldItem)) {
-        player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand(), null);
-    } else if (!isNull(player.offHandHeldItem) && item.matches(player.offHandHeldItem)) {
-        player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), null);
-    }
-}
-
 events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
 
     val blockID = e.block.definition.id;
@@ -203,51 +196,6 @@ events.onPlayerInteractBlock(function(e as PlayerInteractBlockEvent) {
     if (blockID == <contenttweaker:stabilized_end_crystal>.definition.id) {
         activateEnderCore(e.player);
     }
-
-    // DivineRPG always removes an item from the main hand when using one of these boss spawning items.
-    // https://github.com/DivineRPG/DivineRPG/blob/1a3b87972f9a0ccf7686723541d9cae2ae2b6d24/src/main/java/divinerpg/objects/items/twilight/ItemBossSpawner.java#L61
-    // This contains code which does virtually the same thing, but removes the correct item.
-    if (<divinerpg:horde_horn>.matches(e.item)) {
-        if (e.dimension == 1) {
-            val spawnLocation as IBlockPos = e.position.getOffset(crafttweaker.world.IFacing.up(), 1);
-            if (e.world.isAirBlock(spawnLocation)) {
-                // Sounds aren't accessible via crafttweaker, so we run a command instead
-                // Note that this command is modified from the original - the original is on channel `master` and with a volume of 20
-                Commands.call("/playsound divinerpg:ayeraco_spawn hostile " + e.player.name + " " + e.x + " " + e.y + " " + e.z + " 5 1", e.player, e.player.world, false, true);
-                e.world.setBlockState(<blockstate:divinerpg:ayeraco_spawn>, spawnLocation);
-                removeItemFromHand(e.player, <divinerpg:horde_horn>);
-            } else {
-                e.player.sendChat(game.localize("dj2.event.horde_horn.message"));
-            }
-        } else {
-            e.player.sendChat("§b" + I18n.format("message.ayeraco_horde"));
-        }
-        e.cancel();
-    } else if (<divinerpg:call_of_the_watcher>.matches(e.item)) {
-        if (e.dimension == -1) {
-            <entity:divinerpg:the_watcher>.spawnEntity(e.world, e.position);
-            removeItemFromHand(e.player, <divinerpg:call_of_the_watcher>);
-        } else {
-            e.player.sendChat("§b" + I18n.format("message.watcher"));
-        }
-        e.cancel();
-    } else if (<divinerpg:infernal_flame>.matches(e.item)) {
-        if (e.dimension == -1) {
-            <entity:divinerpg:king_of_scorchers>.spawnEntity(e.world, e.position);
-            removeItemFromHand(e.player, <divinerpg:infernal_flame>);
-        } else {
-            e.player.sendChat("§b" + I18n.format("message.king_of_scorchers"));
-        }
-        e.cancel();
-    } else if (<divinerpg:mysterious_clock>.matches(e.item)) {
-        if (e.dimension == 0) {
-            <entity:divinerpg:ancient_entity>.spawnEntity(e.world, e.position);
-            removeItemFromHand(e.player, <divinerpg:mysterious_clock>);
-        } else {
-            e.player.sendChat("§b" + I18n.format("message.ancient_entity"));
-        }
-        e.cancel();
-    }
 });
 
 events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
@@ -267,21 +215,20 @@ events.onPlayerInteractEntity(function(e as PlayerInteractEntityEvent) {
         //e.player.sendChat("What's a fallen angel doing trying to make a deal with such a foul creature?");
     }
 
-    // Fix Natura Imps converting Leads into Raw Imphide when trying to unequip leads.
-    // https://github.com/progwml6/Natura/blob/d5b4bdd1767176dfb17da2298c5f9458f1839588/src/main/java/com/progwml6/natura/entities/entity/passive/EntityImp.java#L108
-    if (id == "natura:imp" && e.target instanceof IEntityLiving) {
-        val goal as IEntityLiving = e.target;
-        if (!goal.isLeashed) return;
-        goal.clearLeashed(true, false);
-        goal.world.spawnEntity(<minecraft:lead>.createEntityItem(goal.world, goal.position));
-        e.cancel();
-    }
-
     // Activate the held ender core if the target entity was an end crystal
     if (id == "minecraft:ender_crystal") {
         activateEnderCore(e.player);
     }
 });
+
+
+events.onEntityJoinWorld(function(e as EntityJoinWorldEvent) {
+    // Ents have a 20% spawn chance for each log break, which is a bit excessive
+    // this turns that down to 2%
+    if (isNull(e.entity.definition) || isNull(e.world) || isNull(e.world.random)) return;
+    if (e.entity.definition.id == "divinerpg:ent" && e.world.random.nextInt(10) != 0) e.cancel();
+});
+
 
 static IE_WORKBENCH as IBlock = <immersiveengineering:wooden_device0:2>.asBlock();
 

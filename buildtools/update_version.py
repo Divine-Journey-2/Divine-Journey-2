@@ -9,8 +9,7 @@ Presumes that the old version is exactly equal to the tag used
 """
 
 from argparse import ArgumentParser
-from subprocess import run
-from os import getenv, path
+from os import getenv
 from shutil import copyfile
 from collections import OrderedDict
 
@@ -23,11 +22,6 @@ def parse_args():
                         help="the version being updated to")
     return parser.parse_args()
 
-
-basePath = path.normpath(path.abspath(f"{__file__}/../../"))
-UPDATE_QUESTBOOK = f"""YOU'LL NEED TO UPDATE YOUR QUEST BOOK BY TYPING:
-/bq_admin default load
-(This has to only be done once in multiplayer, by an admin.)\n"""
 
 def convertChangelog(version: str):
     """Converts and filters the existing changelog in the LATEST.md file to a file named after the version"""
@@ -59,13 +53,6 @@ def convertChangelog(version: str):
                 file.write(entry)
         if len(goal.items()) <= 0:
             file.write("\nCould not find a changelog")
-
-    # Overwrite the in-game changelog file
-    with open("overrides/config/mputils/changelog.txt", "w") as file:
-        file.write(UPDATE_QUESTBOOK)
-        file.write(f"\nUpdate {version}:\n")
-        with open(changelogFile) as changelog:
-            file.write(changelog.read())
 
     if getenv("GITHUB_OUTPUT") != None:
         with open(getenv("GITHUB_OUTPUT"), "a") as fh:

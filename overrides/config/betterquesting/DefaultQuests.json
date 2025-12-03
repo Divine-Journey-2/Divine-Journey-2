@@ -11333,10 +11333,6 @@
             "0:10": {
               "id:8": "lightningcraft:wireless_block",
               "Count:3": 1
-            },
-            "1:10": {
-              "id:8": "lightningcraft:wireless_marker",
-              "Count:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -11349,10 +11345,6 @@
               "id:8": "lightningcraft:wireless_block",
               "Count:3": 1,
               "Damage:2": 3
-            },
-            "1:10": {
-              "id:8": "lightningcraft:wireless_marker",
-              "Count:3": 1
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -42362,9 +42354,8 @@
           "rewardID:8": "bq_standard:item",
           "rewards:9": {
             "0:10": {
-              "id:8": "natura:soups",
-              "Count:3": 1,
-              "Damage:2": 9
+              "id:8": "natura:berry_medley",
+              "Count:3": 1
             }
           }
         }
@@ -47169,22 +47160,11 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "choices:9": {
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
             "0:10": {
-              "id:8": "natura:soups",
-              "Count:3": 3,
-              "Damage:2": 1
-            },
-            "1:10": {
-              "id:8": "natura:soups",
-              "Count:3": 3,
-              "Damage:2": 2
-            },
-            "2:10": {
-              "id:8": "natura:soups",
-              "Count:3": 3,
-              "Damage:2": 3
+              "id:8": "natura:glowshroom_stew",
+              "Count:3": 3
             }
           }
         }
@@ -48693,7 +48673,7 @@
     "959:10": {
       "questID:3": 959,
       "preRequisites:11": [
-        957
+        941
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -59772,7 +59752,7 @@
           "rewardID:8": "bq_standard:item",
           "rewards:9": {
             "0:10": {
-              "id:8": "morphtool:tool",
+              "id:8": "omniwand:wand",
               "Count:3": 1
             }
           }
@@ -78044,7 +78024,8 @@
             },
             "1:10": {
               "id:8": "roots:iron_knife",
-              "Count:3": 1
+              "Count:3": 1,
+              "OreDict:8": "rootsMossKnife"
             },
             "2:10": {
               "id:8": "roots:terra_moss",
@@ -85804,8 +85785,8 @@
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 144,
+          "x:3": 80,
+          "y:3": 120,
           "id:3": 941,
           "sizeY:3": 24
         },
@@ -85818,8 +85799,8 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": 80,
-          "y:3": 120,
+          "x:3": 0,
+          "y:3": 144,
           "id:3": 943,
           "sizeY:3": 24
         },
@@ -85916,14 +85897,14 @@
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": 64,
-          "y:3": 144,
+          "x:3": 80,
+          "y:3": 168,
           "id:3": 957,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": 32,
+          "x:3": 64,
           "y:3": 144,
           "id:3": 958,
           "sizeY:3": 24

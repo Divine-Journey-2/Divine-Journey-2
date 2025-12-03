@@ -33,13 +33,6 @@
       "required": true
     },
     {
-      "slug": "mouse-tweaks",
-      "projectID": 60089,
-      "fileID": 3359843,
-      "required": true,
-      "clientOnly": true
-    },
-    {
       "slug": "ender-io",
       "projectID": 64578,
       "fileID": 4674244,
@@ -67,12 +60,6 @@
       "slug": "tinkers-construct",
       "projectID": 74072,
       "fileID": 2902483,
-      "required": true
-    },
-    {
-      "slug": "natura",
-      "projectID": 74120,
-      "fileID": 2711439,
       "required": true
     },
     {
@@ -121,7 +108,7 @@
     {
       "slug": "recurrent-complex",
       "projectID": 223150,
-      "fileID": 4643434,
+      "fileID": 5615733,
       "required": true
     },
     {
@@ -173,12 +160,6 @@
       "required": true
     },
     {
-      "slug": "additional-resources",
-      "projectID": 225124,
-      "fileID": 2447369,
-      "required": true
-    },
-    {
       "slug": "extra-utilities",
       "projectID": 225561,
       "fileID": 2678374,
@@ -191,13 +172,7 @@
       "required": true
     },
     {
-      "slug": "botania",
-      "projectID": 225643,
-      "fileID": 3330934,
-      "required": true
-    },
-    {
-      "slug": "mmmmmmmmmmmm",
+      "slug": "mmmmmmmmmmmmmmmmmmmmm",
       "projectID": 225738,
       "fileID": 2503041,
       "required": true
@@ -232,12 +207,6 @@
       "slug": "thermal-dynamics",
       "projectID": 227443,
       "fileID": 2920505,
-      "required": true
-    },
-    {
-      "slug": "the-twilight-forest",
-      "projectID": 227639,
-      "fileID": 3051450,
       "required": true
     },
     {
@@ -477,13 +446,6 @@
       "required": true
     },
     {
-      "slug": "neat",
-      "projectID": 238372,
-      "fileID": 2595310,
-      "required": true,
-      "clientOnly": true
-    },
-    {
       "slug": "better-builders-wands",
       "projectID": 238403,
       "fileID": 2691084,
@@ -545,12 +507,6 @@
       "required": true
     },
     {
-      "slug": "quark",
-      "projectID": 243121,
-      "fileID": 2924091,
-      "required": true
-    },
-    {
       "slug": "more-overlays",
       "projectID": 243478,
       "fileID": 2745657,
@@ -576,12 +532,6 @@
       "required": true
     },
     {
-      "slug": "mputils",
-      "projectID": 244940,
-      "fileID": 2685162,
-      "required": true
-    },
-    {
       "slug": "ender-storage-1-8",
       "projectID": 245174,
       "fileID": 2755787,
@@ -603,12 +553,6 @@
       "slug": "tinkers-addons",
       "projectID": 245549,
       "fileID": 2476626,
-      "required": true
-    },
-    {
-      "slug": "mputils-basic-tools",
-      "projectID": 245889,
-      "fileID": 2686355,
       "required": true
     },
     {
@@ -644,19 +588,13 @@
     {
       "slug": "hammer-lib",
       "projectID": 247401,
-      "fileID": 3611193,
+      "fileID": 6348753,
       "required": true
     },
     {
       "slug": "zerocore",
       "projectID": 247921,
       "fileID": 3194743,
-      "required": true
-    },
-    {
-      "slug": "shadowfacts-forgelin",
-      "projectID": 248453,
-      "fileID": 2785465,
       "required": true
     },
     {
@@ -682,13 +620,6 @@
       "projectID": 250363,
       "fileID": 2746011,
       "required": true
-    },
-    {
-      "slug": "controlling",
-      "projectID": 250398,
-      "fileID": 3025548,
-      "required": true,
-      "clientOnly": true
     },
     {
       "slug": "akashic-tome",
@@ -976,12 +907,6 @@
       "required": true
     },
     {
-      "slug": "bed-patch",
-      "projectID": 282963,
-      "fileID": 2532663,
-      "required": true
-    },
-    {
       "slug": "laggoggles",
       "projectID": 283525,
       "fileID": 4493884,
@@ -1002,7 +927,7 @@
     {
       "slug": "bewitchment-legacy",
       "projectID": 285439,
-      "fileID": 3256343,
+      "fileID": 6379256,
       "required": true
     },
     {
@@ -1120,13 +1045,6 @@
       "projectID": 306028,
       "fileID": 2833640,
       "required": true
-    },
-    {
-      "slug": "featured-servers",
-      "projectID": 306187,
-      "fileID": 2634364,
-      "required": true,
-      "clientOnly": true
     },
     {
       "slug": "tips",
@@ -1310,6 +1228,12 @@
       "required": true
     },
     {
+      "slug": "quark-rotn-edition",
+      "projectID": 417392,
+      "fileID": 7215216,
+      "required": true
+    },
+    {
       "slug": "tinkers-aether-dman-edition",
       "projectID": 419003,
       "fileID": 3215120,
@@ -1318,7 +1242,7 @@
     {
       "slug": "mixin-booter",
       "projectID": 419286,
-      "fileID": 6344449,
+      "fileID": 7049694,
       "required": true
     },
     {
@@ -1326,6 +1250,19 @@
       "projectID": 423758,
       "fileID": 4448659,
       "required": true
+    },
+    {
+      "slug": "forgelin-continuous",
+      "projectID": 456403,
+      "fileID": 7182824,
+      "required": true
+    },
+    {
+      "slug": "mouse-tweaks-unofficial",
+      "projectID": 461660,
+      "fileID": 5876158,
+      "required": true,
+      "clientOnly": true
     },
     {
       "slug": "astral-level-tweak",
@@ -1353,6 +1290,12 @@
       "clientOnly": true
     },
     {
+      "slug": "galacticraft-legacy",
+      "projectID": 564236,
+      "fileID": 6364107,
+      "required": true
+    },
+    {
       "slug": "ae2-extended-life",
       "projectID": 570458,
       "fileID": 5147702,
@@ -1374,15 +1317,8 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 6123916,
+      "fileID": 7156691,
       "required": true
-    },
-    {
-      "slug": "startup-timer",
-      "projectID": 782070,
-      "fileID": 5001902,
-      "required": true,
-      "clientOnly": true
     },
     {
       "slug": "thaumic-energistics-extended-life",
@@ -1399,7 +1335,13 @@
     {
       "slug": "vintagefix",
       "projectID": 871198,
-      "fileID": 6300725,
+      "fileID": 6609247,
+      "required": true
+    },
+    {
+      "slug": "red-core",
+      "projectID": 873867,
+      "fileID": 6147102,
       "required": true
     },
     {
@@ -1415,6 +1357,18 @@
       "required": true
     },
     {
+      "slug": "alfheim-lighting-engine",
+      "projectID": 910715,
+      "fileID": 6687458,
+      "required": true
+    },
+    {
+      "slug": "omniwand",
+      "projectID": 923677,
+      "fileID": 6460075,
+      "required": true
+    },
+    {
       "slug": "fermiumbooter",
       "projectID": 968474,
       "fileID": 5672830,
@@ -1423,14 +1377,64 @@
     {
       "slug": "fermiumasm",
       "projectID": 971247,
-      "fileID": 5889652,
+      "fileID": 6389447,
+      "required": true
+    },
+    {
+      "slug": "the-twilight-forest-deforestation-edition",
+      "projectID": 1063334,
+      "fileID": 6808448,
+      "required": true
+    },
+    {
+      "slug": "integrated-derivative",
+      "projectID": 1067548,
+      "fileID": 5994116,
       "required": true
     },
     {
       "slug": "thaumcraftfix",
       "projectID": 1069346,
-      "fileID": 6645719,
+      "fileID": 7040753,
       "required": true
+    },
+    {
+      "slug": "natura-legacy",
+      "projectID": 1116420,
+      "fileID": 6982881,
+      "required": true
+    },
+    {
+      "slug": "noisethreader",
+      "projectID": 1153744,
+      "fileID": 6848878,
+      "required": true
+    },
+    {
+      "slug": "crash-assistant",
+      "projectID": 1154099,
+      "fileID": 7215788,
+      "required": true,
+      "clientOnly": true
+    },
+    {
+      "slug": "botania-ceu",
+      "projectID": 1179448,
+      "fileID": 6900692,
+      "required": true
+    },
+    {
+      "slug": "ender-modpack-tweaks",
+      "projectID": 1221029,
+      "fileID": 6973315,
+      "required": true
+    },
+    {
+      "slug": "morphoverlay",
+      "projectID": 1329068,
+      "fileID": 6902995,
+      "required": true,
+      "clientOnly": true
     }
   ],
   "overrides": "overrides"

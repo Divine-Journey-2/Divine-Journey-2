@@ -18,6 +18,17 @@ print("STARTING BloodMagic.zs");
 // No Grass crafting in the Alchemy Table
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:dirt:*>,<minecraft:dye:15>,<minecraft:wheat_seeds>]);
 
+// Plant Oil
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:potato>,<minecraft:potato>,<minecraft:dye:15>]);
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:wheat>,<minecraft:wheat>,<minecraft:dye:15>]);
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
+mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:beetroot>,<minecraft:beetroot>,<minecraft:beetroot>,<minecraft:dye:15>]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:component:22> * 4, [<minecraft:potion>.withTag({Potion:"extrautils2:oily"}),<thermalfoundation:material:817>,<thermalfoundation:material:819>,<evilcraft:blood_potash>], 100, 10, 1);
+
+// Cutting Fluid
+mods.bloodmagic.AlchemyTable.removeRecipe([<thermalfoundation:material:768>,<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:sugar>,<bloodmagic:component:22>,<minecraft:potion>.withTag({Potion:"minecraft:water"})]);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:cutting_fluid>.withTag({}), [<thermalfoundation:material:768>,<minecraft:gunpowder>,<minecraft:redstone>,<minecraft:sugar>,<bloodmagic:component:22>,<enderio:item_material:20>], 500, 10, 1);
+
 // No Cutting Fluid recipes
 var allOres = [<ore:oreSaltpeter>,<ore:oreSalt>,<ore:oreSilver>,<ore:oreLead>,<ore:oreDilithium>,<ore:oreRedstone>,<ore:oreCertusQuartz>,<ore:oreDraconium>,
 <ore:oreSilicon>,<ore:oreIron>,<ore:oreNickel>,<ore:oreTitanium>,<ore:oreOsmium>,<ore:oreAstralStarmetal>,<ore:oreAbyssalnite>,<ore:oreCopper>,<ore:oreGold>,
