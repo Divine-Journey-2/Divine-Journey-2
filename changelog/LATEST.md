@@ -23,3 +23,5 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 
 ## Miscellaneous Changes:
+
+- Added compatibility between the custom Hand Framing Tool and the not-installed mod Fluid Drawers.
