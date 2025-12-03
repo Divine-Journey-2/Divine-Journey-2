@@ -38,8 +38,8 @@ mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 1296, <galacticraftplanets
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 16, <contenttweaker:titanium_nugget>, 984);
 mods.tconstruct.Casting.removeTableRecipe(<alchemistry:ingot:22>);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:item_basic_asteroids>, <tconstruct:cast_custom>, <liquid:titanium>, 144, false);
-mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_nugget>, <tconstruct:cast_custom:1>, <liquid:titanium>, 16, false);
+mods.tconstruct.Casting.addBasinRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
 mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:31>);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids>, false, 1, [[100, <alchemistry:element:22> * 16]]);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:asteroids_block:7>, false, 1, [[100, <alchemistry:element:22> * 144]]);
@@ -366,5 +366,10 @@ recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5
 // Lumium in the Arc Furnace
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:glowstone_dust> * 4], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <ore:glowstone>], "Alloying");
+
+// Manasteel, Terrasteel, Elementium Block Casting
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");
