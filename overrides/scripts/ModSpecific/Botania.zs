@@ -939,16 +939,21 @@ Brews.addBrewRecipe(
     [<minecraft:nether_wart>, <totemic:cooked_buffalo_meat>, <contenttweaker:chicken_nugget>, <contenttweaker:burger>, <contenttweaker:taco>]
 );
 
-// Warp Ward Brew
-mods.botania.Brew.removeRecipe("warpWard");
-Brews.addBrewRecipe(
-    Brews.makeBrew(
-        "thaumcraft:warpward",
-        "Sane Thoughts",
-        100000,
-        16503291,
-        <potion:thaumcraft:warpward>.makePotionEffect(20 * 60 * 60 * 2, 0) // brew will last an hour
-    ),
+// Warp Ward Brew Recipes
+val warpWardBrew as Brew = Brews.getBrew("botania.brews.warpWard");
+Brews.removeRecipe("botania.brews.warpWard");
+
+// Add old recipe back for the bottles and incense stick
+Brews.addOutputRestrictedBrewRecipe(
+    warpWardBrew,
+    [<botania:vial:0>, <botania:vial:1>, <botania:incensestick>],
+    [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:amber>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>]
+);
+
+// Add special recipe for the pendant
+Brews.addOutputRestrictedBrewRecipe(
+    warpWardBrew,
+    [<botania:bloodpendant>],
     [<minecraft:nether_wart>, <thaumcraft:salis_mundus>, <thaumcraft:bath_salts>, <thaumcraft:sanity_soap>, <contenttweaker:conducted_impetus>, <thaumcraft:sanity_checker>]
 );
 
