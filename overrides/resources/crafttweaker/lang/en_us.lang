@@ -772,6 +772,9 @@ dj2.chaos_shard.desc1=§fCan also be crafted using Alchemistry.
 # Construction Paste Container tooltip
 dj2.constructionpastecontainer.desc0=§fThis Paste Container can store a maximum of §c%d§r §fPaste.
 
+# Omniwand tooltip
+dj2.omniwand.desc0=Search "##omniwand" in JEI to see what items can be added!
+
 # Graphite Dust tooltip
 dj2.jei.industrial_graphite_dust.desc0=Explode some Industrial Grade Graphite Dust to create this item!
 
