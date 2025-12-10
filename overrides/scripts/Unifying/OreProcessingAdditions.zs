@@ -218,7 +218,7 @@ for ore in additionalCopperOres {
 }
 
 // Silver
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130>*2, <ore:oreSilver>, <ore:itemSlag>, 200, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130>*2, <ore:oreSilver>, <ore:crystalSlag>, 200, 512);
 
 // Dark Dust
 addMaterialToDustCrushing(<contenttweaker:dark_ingot>, <contenttweaker:dark_dust>);
