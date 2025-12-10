@@ -295,6 +295,7 @@ Grinder.removeRecipe(<immersiveengineering:metal:3>);
 Grinder.removeRecipe(<bewitchment:silver_ingot>);
 Grinder.removeRecipe(<alchemistry:ingot:47>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130> * 2, <ore:oreSilver>, <immersiveengineering:material:7>, 200, 512);
 
 // Silver Nugget
 <ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
