@@ -6,11 +6,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-- Added Silver Ore smelting in the Immersive Engineering Arc Furnace.
-- Correct Copper and Nickel Ore smelting time in the Immersive Engineering Arc Furnace.
 
 ## Balance Adjustments:
 
+- Added Silver Ore smelting in the Immersive Engineering Arc Furnace.
+- Correct Copper and Nickel Ore smelting time in the Immersive Engineering Arc Furnace.
 
 ## QoL Improvements:
 
