@@ -79,7 +79,7 @@ recipes.addShaped(<thermalfoundation:storage>, [[<thermalfoundation:material:128
 recipes.removeShapeless(<thermalfoundation:material:192> * 9, [<erebus:materials:43>]);
 recipes.remove(<immersiveengineering:storage_slab>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128> * 2, <ore:oreCopper>, <immersiveengineering:material:7>, 10, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128> * 2, <ore:oreCopper>, <immersiveengineering:material:7>, 200, 512);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:64>, null, 5, 512);
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
@@ -295,6 +295,7 @@ Grinder.removeRecipe(<immersiveengineering:metal:3>);
 Grinder.removeRecipe(<bewitchment:silver_ingot>);
 Grinder.removeRecipe(<alchemistry:ingot:47>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130> * 2, <ore:oreSilver>, <immersiveengineering:material:7>, 200, 512);
 
 // Silver Nugget
 <ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
@@ -348,7 +349,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:4>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <ore:oreNickel>, <immersiveengineering:material:7>, 10, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <ore:oreNickel>, <immersiveengineering:material:7>, 200, 512);
 furnace.remove(<immersiveengineering:metal:4>);
 
 // Platinum Ingot

@@ -24,10 +24,10 @@
     "modId": "redcore",
     "version": "0.6"
   },
-  "`FermiumBooter-1.1.1.jar": {
-    "jarName": "`FermiumBooter-1.1.1.jar",
+  "`FermiumBooter-1.4.1.jar": {
+    "jarName": "`FermiumBooter-1.4.1.jar",
     "modId": "fermiumbooter",
-    "version": "1.1.1"
+    "version": "1.4.1"
   },
   "AbyssalCraft Integration-1.12.2-1.11.3.jar": {
     "jarName": "AbyssalCraft Integration-1.12.2-1.11.3.jar",
@@ -740,10 +740,10 @@
     "modId": "naturescompass",
     "version": "1.12.2-1.8.5"
   },
-  "NoiseThreader-1.1.1.jar": {
-    "jarName": "NoiseThreader-1.1.1.jar",
+  "NoiseThreader-1.1.2.jar": {
+    "jarName": "NoiseThreader-1.1.2.jar",
     "modId": "noisethreader",
-    "version": "1.1.1"
+    "version": "1.1.2"
   },
   "NotEnoughIDs-1.5.4.4.jar": {
     "jarName": "NotEnoughIDs-1.5.4.4.jar",
