@@ -218,12 +218,12 @@ recipes.remove(<rftools:syringe>);
 recipes.addShapedMirrored(<rftools:syringe>, [[<enderio:item_alloy_ingot:6>,<enderio:item_alloy_ingot:6>,null],[<enderio:item_alloy_ingot:6>,<enderio:item_soul_vial>,<contenttweaker:crystalline_brown_slime_ingot>],[null,<contenttweaker:crystalline_brown_slime_ingot>,<enderio:item_alloy_ingot:6>]]);
 
 // Peace Essence
-function getSyringe(entity as string) as IItemStack {
-    return <rftools:syringe>.withTag({mobId: entity});
+function getSyringe(name as string, entity as string) as IItemStack {
+    return <rftools:syringe>.withTag({mobName: name, mobId: entity, level: 10});
 }
 
 recipes.remove(<rftools:peace_essence>);
-recipes.addShapeless(<rftools:peace_essence>, [getSyringe("minecraft:villager_golem"),getSyringe("minecraft:enderman"),getSyringe("minecraft:snowman"),getSyringe("minecraft:bat"),getSyringe("minecraft:ocelot"),getSyringe("minecraft:guardian"),getSyringe("minecraft:wolf"),getSyringe("minecraft:zombie_pigman"),getSyringe("minecraft:mooshroom")]);
+recipes.addShapeless(<rftools:peace_essence>, [getSyringe("Villager", "minecraft:villager_golem"),getSyringe("Enderman", "minecraft:enderman"),getSyringe("Snowman", "minecraft:snowman"),getSyringe("Bat", "minecraft:bat"),getSyringe("Ocelot", "minecraft:ocelot"),getSyringe("Guardian", "minecraft:guardian"),getSyringe("Wolf", "minecraft:wolf"),getSyringe("Zombie Pigman", "minecraft:zombie_pigman"),getSyringe("Mooshroom", "minecraft:mooshroom")]);
 
 // Filter Module
 recipes.remove(<rftools:filter_module>);
