@@ -43,6 +43,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Disable Roots Elemental Soil Redstone ticking (Universal Tweaks).
+- Add Tinkers' Construct Kamas to the toolShears oredict, allowing them to be used in the EnderIO Slice'N'Splice.
 
 ## QoL Improvements:
 

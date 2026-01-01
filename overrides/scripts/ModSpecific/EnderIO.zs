@@ -417,6 +417,9 @@ Fey.addRecipe("enderio:block_reservoir", <enderio:block_reservoir>, [<minecraft:
 recipes.remove(<enderio:block_slice_and_splice>);
 recipes.addShapedMirrored(<enderio:block_slice_and_splice>, [[<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>],[<enderio:item_dark_steel_axe>,<enderio:item_material:53>,<enderio:item_dark_steel_shears>],[<enderio:item_material:12>,<ore:itemSkull>,<enderio:item_material:12>]]);
 
+// Slice'n'Splice Tools
+<ore:toolShears>.add(<tconstruct:kama:*>);
+
 // Farming Station
 recipes.remove(<enderio:block_farm_station>);
 recipes.addShapedMirrored(<enderio:block_farm_station>, [[<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>],[<divinerpg:arlemite_hoe>,<enderio:item_material:53>,<divinerpg:rupee_hoe>],[<enderio:item_material:12>,<enderio:item_material:42>,<enderio:item_material:12>]]);
