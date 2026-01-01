@@ -6,6 +6,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
+- Remove some items from the Omniwand that could delete all NBT data.
 
 ## Balance Adjustments:
 
