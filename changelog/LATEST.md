@@ -19,6 +19,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the Peace Essence recipe not being craftable by the proper items.
 - Fix the BiblioCraft Armor Stand ignoring the Curse of Binding (Universal Tweaks).
 - Fix the BiblioCraft Armor Stand using the wrong slot numbers (Universal Tweaks).
+- Fix the BiblioCraft Fancy Signs rendering items and blocks incorrectly (Universal Tweaks).
+- Fix the BiblioCraft Antique Atlas and Clipboard rendering incorrectly when the player is left-handed (Universal Tweaks).
 - Fix all BiblioCraft Tile Entities not having a critical method for its IItemHandler, causing numerous crashes (Universal Tweaks).
 - Fix BiblioCraft inventories not properly transferring items (Universal Tweaks).
 - Fix removing itemstacks from BiblioCraft shelves incorrectly copying the itemstack, losing critical data (Universal Tweaks).
@@ -51,11 +53,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Text and Quest Updates:
 
+- Fix some typos in a few quests - Hatchs -> Hatches (217), Becuase -> Because (408), and -> an (1731).
 
 ## Texture Transformations:
 
-- Fix the BiblioCraft Fancy Signs rendering items and blocks incorrectly (Universal Tweaks).
-- Fix the BiblioCraft Antique Atlas and Clipboard rendering incorrectly when the player is left-handed (Universal Tweaks).
 - Make sure the Thaumcraft Gauntlet renders properly while in the offhand (ThaumcraftFix).
 
 ## GitHub Developments:
