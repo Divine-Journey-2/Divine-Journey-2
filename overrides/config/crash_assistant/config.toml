@@ -49,6 +49,16 @@
 	#Anti censoring only versions, IP's are kept censored.
 	enable_mclogs_anti_ip_like_version_censorer = true
 
+#A simplified GUI that hides the logs list until the user opts into Expert Mode.
+[simple_mode]
+	#If enabled, the GUI starts in simple mode with logs hidden and a single "Show Logs (Expert Mode)" button.
+	#Disabled by default.
+	enabled = false
+	#If true, modpack creators always see the Expert Mode with logs visible, even if simple mode is enabled.
+	prevent_for_modpack_creators = true
+	#If true, hides the mod list changes section while simple mode is active.
+	hide_modlist_section = false
+
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.
 #You don't need to modify jar. You can change it in config/crash_assistant/lang. For more info read README.md file located where.
@@ -102,6 +112,8 @@
 	#log of small size was uploaded to a single link.
 	#For example, leave just $LINK$ to copy just link.
 	single_link = "$LOG_NAME$$FILE_NAME$: $LINK$"
+	#If enabled, disables the head/tail selection dialog for split logs on individual uploads and always copies message with both links.
+	skip_split_dialog = false
 	#With this option, you can customize how links from individual upload buttons are copied, there
 	#log was split to the 2 parts (head and tail, due to too large size for single upload), but user only decided to copy only one of them (not message with both).
 	single_link_split = "$LOG_NAME$$FILE_NAME$($HEAD_OR_TAIL$): $LINK$ $TOO_BIG_REASONS$"
@@ -158,7 +170,7 @@
 	enabled = true
 
 #Settings of analysis tools feature.
-#Here you can enable disable showing some analysis tools fot end user.
+#Here you can enable or disable showing some analysis tools for end user.
 [analysis_tools]
 	#Here you can disable some Analysis tools by class names.
 	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.gui.analysis
@@ -222,6 +234,10 @@
 	upload_all_button_foreground_color = "0_178_0"
 	#Same as upload_all_button_font_size, but for Request Help button.
 	request_help_button_font_size = 16
+	#Same as upload_all_button_font_size, but for the Simple Mode toggle button.
+	simple_mode_button_font_size = 16
+	#Same as upload_all_button_foreground_color, but for the Simple Mode toggle button.
+	simple_mode_button_foreground_color = "0_0_178"
 	#Will hide Upload All Button from GUI.
 	disable_upload_all_button = false
 	#Same as upload_all_button_font_size, but for Auto-Fix button (in integrated GPU warning).
