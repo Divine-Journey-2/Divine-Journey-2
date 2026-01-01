@@ -7,6 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Bugfixes:
 
 - Remove some items from the Omniwand that could delete all NBT data.
+- Fix the Peace Essence recipe not being craftable by the proper items.
 
 ## Balance Adjustments:
 
