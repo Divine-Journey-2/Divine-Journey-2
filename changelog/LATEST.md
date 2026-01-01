@@ -36,6 +36,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the Roots Summon Creatures Ritual entering an infinite loop when attempting to spawn a mob over the void (Universal Tweaks).
 - Fix some Extended Crafting recipes requiring specific NBT.
 - Fix the Ultimate Crafting Table recipe returning empty Crafting Storages.
+- Fix Totemic Whittling Knifes behaving incorrectly when being repaired.
 
 ## Balance Adjustments:
 

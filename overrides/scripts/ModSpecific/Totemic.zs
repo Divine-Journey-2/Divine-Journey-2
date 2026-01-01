@@ -4,6 +4,7 @@ print("STARTING Totemic.zs");
 // Totem Whittling Knife
 recipes.remove(<totemic:totem_whittling_knife>);
 recipes.addShaped(<totemic:totem_whittling_knife>, [[null,<contenttweaker:compressed_obsidian2>,<ore:blockIron>],[null,<ore:blockCopper>,<ore:logWood>],[<ore:blockCopper>,<ore:logWood>,null]]);
+<totemic:totem_whittling_knife>.definition.setNoRepair();
 
 // Stripped Red Cedar Pillar & Base
 recipes.addShaped(<totemic:wooden_pillar:13> * 6, [[null,<totemic:stripped_cedar_log>,null],[<totemic:totem_whittling_knife>.anyDamage().transformDamage(1),<totemic:stripped_cedar_log>,null],[null,<totemic:stripped_cedar_log>,null]]);
