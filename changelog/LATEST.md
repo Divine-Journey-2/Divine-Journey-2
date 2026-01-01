@@ -34,6 +34,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Roots Spell Dust not being copied and thus the actual recipe being able to be modified by some item collectors (Universal Tweaks).
 - Fix the Roots Shatter Spell being able to break unbreakable blocks (Universal Tweaks).
 - Fix the Roots Summon Creatures Ritual entering an infinite loop when attempting to spawn a mob over the void (Universal Tweaks).
+- Fix some Extended Crafting recipes requiring specific NBT.
+- Fix the Ultimate Crafting Table recipe returning empty Crafting Storages.
 
 ## Balance Adjustments:
 

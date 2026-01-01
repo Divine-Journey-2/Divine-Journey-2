@@ -564,13 +564,9 @@ recipes.addShaped(<extrautils2:passivegenerator:6> * 4, [[<extrautils2:passivege
 mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>,
 [[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>],
 [<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
-[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>],
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
-[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>]]);
-mods.extendedcrafting.TableCrafting.addShaped(<extrautils2:creativeenergy>,
-[[<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>],
-[<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
-[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>],
+[<alchemistry:ingot:112>, <contenttweaker:taste_the_rainbow>, <mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 4;
+}), <contenttweaker:taste_the_rainbow>, <alchemistry:ingot:112>],
 [<alchemistry:ingot:112>, <extrautils2:rainbowgenerator>, <contenttweaker:taste_the_rainbow>, <extrautils2:rainbowgenerator>, <alchemistry:ingot:112>],
 [<extrautils2:powerbattery>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <alchemistry:ingot:112>, <extrautils2:powerbattery>]]);
 
