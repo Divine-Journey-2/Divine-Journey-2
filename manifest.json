@@ -466,7 +466,7 @@
     {
       "slug": "crafttweaker",
       "projectID": 239197,
-      "fileID": 5013567,
+      "fileID": 6929088,
       "required": true
     },
     {
@@ -738,7 +738,7 @@
     {
       "slug": "loottweaker",
       "projectID": 255257,
-      "fileID": 3507866,
+      "fileID": 5420240,
       "required": true
     },
     {
@@ -1212,13 +1212,13 @@
     {
       "slug": "extended-crafting-nomifactory-edition",
       "projectID": 398267,
-      "fileID": 4592627,
+      "fileID": 5778512,
       "required": true
     },
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 5162113,
+      "fileID": 7382928,
       "required": true
     },
     {
@@ -1254,7 +1254,7 @@
     {
       "slug": "forgelin-continuous",
       "projectID": 456403,
-      "fileID": 7182824,
+      "fileID": 7400891,
       "required": true
     },
     {
@@ -1317,7 +1317,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 7156691,
+      "fileID": 7403701,
       "required": true
     },
     {
@@ -1365,7 +1365,7 @@
     {
       "slug": "omniwand",
       "projectID": 923677,
-      "fileID": 6460075,
+      "fileID": 7319522,
       "required": true
     },
     {
@@ -1395,7 +1395,7 @@
     {
       "slug": "thaumcraftfix",
       "projectID": 1069346,
-      "fileID": 7040753,
+      "fileID": 7288369,
       "required": true
     },
     {
