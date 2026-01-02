@@ -72,5 +72,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## GitHub Developments:
 
+- Fix typo in the MODLIST.md
 
 ## Miscellaneous Changes:
