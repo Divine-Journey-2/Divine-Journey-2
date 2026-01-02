@@ -60,13 +60,6 @@
     "curseForgeHash": 1923394747,
     "modrinthHash": "6e5f7deda0d3cf196b38f57eb60ef18a85b0ca2d"
   },
-  "ActuallyBaubles-1.12-1.1.jar": {
-    "jarName": "ActuallyBaubles-1.12-1.1.jar",
-    "modId": "actuallybaubles",
-    "version": "1.1",
-    "curseForgeHash": 4219803846,
-    "modrinthHash": "f9ff7eff30f5de77a67ddf3ff965e51b1d9e0616"
-  },
   "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar": {
     "jarName": "AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar",
     "curseForgeHash": 2521729992,
@@ -196,13 +189,6 @@
     "curseForgeHash": 1949658237,
     "modrinthHash": "52d699a36880185c939434cf35617441bb4314af"
   },
-  "Baubles-1.12-1.5.2.jar": {
-    "jarName": "Baubles-1.12-1.5.2.jar",
-    "modId": "baubles",
-    "version": "1.12-1.5.2",
-    "curseForgeHash": 4247051032,
-    "modrinthHash": "cb13fcfb18a9cb0cbd825fd5fe8d813c77368549"
-  },
   "baubley-heart-canisters-1.12.2-1.2.3.jar": {
     "jarName": "baubley-heart-canisters-1.12.2-1.2.3.jar",
     "modId": "bhc",
@@ -326,6 +312,13 @@
     "version": "1.12.2-2.4.20.22",
     "curseForgeHash": 960878632,
     "modrinthHash": "f6035eb93d9c7b91334ed7bfc17ed36c8c9d86c8"
+  },
+  "Bubbles-2.4.9.jar": {
+    "jarName": "Bubbles-2.4.9.jar",
+    "modId": "baubles",
+    "version": "2.4.9",
+    "curseForgeHash": 3796740524,
+    "modrinthHash": "fc146ba779598154219c383a71cb5302e4e5c449"
   },
   "BuildingGadgets-2.8.4.jar": {
     "jarName": "BuildingGadgets-2.8.4.jar",

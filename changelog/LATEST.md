@@ -13,6 +13,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update UniversalTweaks 1.17.0 -> 1.18.0
 - Update ZenUtils 1.17.1 -> 1.26.11
 - Replace OpenBlocks 4.0.2.280 1.8.1, OpenModsLib 0.12.2 -> OpenBlocksReopened 1.8.3.1
+- Replace Baubles 1.5.2, ActuallyBaubles 1.1 -> Bubbles 2.4.9
 
 ## Bugfixes:
 
@@ -43,6 +44,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix OpenBlocks Glyphs not being named properly in WAILA (OpenBlocks Reopened).
 - Fix OpenBlocks Item Cannon not being able to fire properly in some directions (OpenBlocks Reopened).
 - Prevent non-player entities from being able to enter Vethea.
+- Fix Baubles not respecting the Curse of Binding and Vanishing (Bubbles).
 
 ## Balance Adjustments:
 
@@ -69,6 +71,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Texture Transformations:
 
 - Make sure the Thaumcraft Gauntlet renders properly while in the offhand (ThaumcraftFix).
+- Change the Baubles GUI to be on the left side of the inventory instead of inline (Bubbles).
 
 ## GitHub Developments:
 

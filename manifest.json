@@ -198,12 +198,6 @@
       "clientOnly": true
     },
     {
-      "slug": "baubles",
-      "projectID": 227083,
-      "fileID": 2518667,
-      "required": true
-    },
-    {
       "slug": "thermal-dynamics",
       "projectID": 227443,
       "fileID": 2920505,
@@ -846,12 +840,6 @@
       "clientOnly": true
     },
     {
-      "slug": "actually-baubles",
-      "projectID": 273430,
-      "fileID": 2459131,
-      "required": true
-    },
-    {
       "slug": "bnbgamingcore",
       "projectID": 274341,
       "fileID": 2991671,
@@ -1366,6 +1354,12 @@
       "slug": "fermiumasm",
       "projectID": 971247,
       "fileID": 6389447,
+      "required": true
+    },
+    {
+      "slug": "bubbles-a-baubles-fork",
+      "projectID": 995393,
+      "fileID": 6807550,
       "required": true
     },
     {

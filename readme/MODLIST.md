@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 233
+Total Mods: 232
 
 ## Type Key
 
@@ -10,7 +10,7 @@ Total Mods: 233
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
-| :ring:        | 43    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
+| :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
 | :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
@@ -28,7 +28,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :ring:        | [AbyssalCraft Integration](https://www.curseforge.com/minecraft/mc-mods/abyssalcraft-integration)                                     | [Shinoow](https://curseforge.com/members/Shinoow)                                     |                    |
 | :gem:         | [AbyssalCraft](https://www.curseforge.com/minecraft/mc-mods/abyssalcraft)                                                             | [Shinoow](https://curseforge.com/members/Shinoow)                                     |                    |
 | :gem:         | [Actually Additions](https://www.curseforge.com/minecraft/mc-mods/actually-additions)                                                 | [Ellpeck](https://curseforge.com/members/Ellpeck)                                     |                    |
-| :ring:        | [Actually Baubles](https://www.curseforge.com/minecraft/mc-mods/actually-baubles)                                                     | [Jackyy](https://curseforge.com/members/Jackyy)                                       |                    |
 | :gem:         | [AE2 Unofficial Extended Life](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)                                        | [PrototypeTrousers](https://curseforge.com/members/PrototypeTrousers)                 |                    |
 | :ring:        | [AE2 Network Visualiser](https://www.curseforge.com/minecraft/mc-mods/ae2-network-visualiser)                                         | [brandon3055](https://curseforge.com/members/brandon3055)                             |                    |
 | :wastebasket: | [AE2 Wireless Terminal Library](https://www.curseforge.com/minecraft/mc-mods/ae2wtlib)                                                | [TheRealp455w0rd](https://curseforge.com/members/TheRealp455w0rd)                     |                    |
