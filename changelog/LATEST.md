@@ -42,6 +42,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Totemic Whittling Knifes behaving incorrectly when being repaired.
 - Fix OpenBlocks Glyphs not being named properly in WAILA (OpenBlocks Reopened).
 - Fix OpenBlocks Item Cannon not being able to fire properly in some directions (OpenBlocks Reopened).
+- Prevent non-player entities from being able to enter Vethea.
 
 ## Balance Adjustments:
 

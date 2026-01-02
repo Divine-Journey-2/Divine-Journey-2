@@ -306,9 +306,13 @@ events.onPlayerDeathDrops(function(e as PlayerDeathDropsEvent) {
     e.items = drops;
 });
 
-// Prevent falling from the Aether Dimension into the Overworld
 events.onEntityTravelToDimension(function(e as EntityTravelToDimensionEvent) {
+    // Prevent falling from the Aether Dimension into the Overworld
     if (e.dimension == 0 && e.entity.y < 0) {
+        e.cancel();
+    }
+    // Block non-player entities from going into Vethea
+    if (e.dimension == 427 && !(e.entity instanceof IPlayer)) {
         e.cancel();
     }
 });
