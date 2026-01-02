@@ -21,8 +21,4 @@ enchantment.extrautils2.xu.boomereaperang.desc=Causes the Boomerang to destroy a
 enchantment.lightningcraft.hand_of_thor.desc=Grants weapons the possibility to strike enemies with lightning.
 enchantment.lightningcraft.elec_aura.desc=Shoots electricity at attackers when applied on armor.
 
-enchantment.openblocks.explosive.desc=When a piece of armor enchanted with Unstable is worn, it will trigger explosions of varying size when certain events happen.
-enchantment.openblocks.last_stand.desc=When a player wearing armor enchanted with Last Stand takes damage that would otherwise kill them, the player is instead left with 1 health at the cost of experience, with the cost based on the damage and reduced by the total level of Last Stand on all equipment.
-enchantment.openblocks.flim_flam.desc=Causes a number of negative effects to nearby players when equipped.
-
 enchantment.simplyjetpacks.fuel_efficiency.desc=Decreases the amount of power used by jetpacks and flux packs when flying or being damaged.

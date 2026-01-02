@@ -1066,19 +1066,12 @@
     "curseForgeHash": 2776505875,
     "modrinthHash": "f34f53b08bd95186abcbe7f1b4a1d52f2767fc78"
   },
-  "OpenBlocks-1.12.2-1.8.1.jar": {
-    "jarName": "OpenBlocks-1.12.2-1.8.1.jar",
-    "modId": "openblocks",
-    "version": "1.8.1",
-    "curseForgeHash": 778518540,
-    "modrinthHash": "6c231ff28e0c80025b0ec11f86ce9de1e9d109db"
-  },
-  "OpenModsLib-1.12.2-0.12.2.jar": {
-    "jarName": "OpenModsLib-1.12.2-0.12.2.jar",
+  "OpenBlocksReopened-1.12.2-1.8.3.1.jar": {
+    "jarName": "OpenBlocksReopened-1.12.2-1.8.3.1.jar",
     "modId": "openmods",
-    "version": "0.12.2",
-    "curseForgeHash": 1596478407,
-    "modrinthHash": "210cc6b18b63ae0d3110b8e8ed843bc847627eb0"
+    "version": "0.12.3",
+    "curseForgeHash": 2570592600,
+    "modrinthHash": "d26e0ee0a0b9cf7f0ee0c49e4b10801d14d587b8"
   },
   "OreExcavation-1.4.150.jar": {
     "jarName": "OreExcavation-1.4.150.jar",

@@ -1,12 +1,12 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 234
+Total Mods: 233
 
 ## Type Key
 
 | Icon          | Count | Type of Mod       | Description                                                                                                            |
 | ------------- | ----- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| :books:       | 49    | Library           | Required for other mods and not doing much on its own                                                                  |
+| :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                  |
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
@@ -169,15 +169,14 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)                                          | [BlakeBr0](https://curseforge.com/members/BlakeBr0)                                   |                    |
 | :books:       | [Mystical World](https://www.curseforge.com/minecraft/mc-mods/mystical-world)                                                      | [Noobanidus](https://curseforge.com/members/Noobanidus)                               |                    |
 | :books:       | [MysticalLib](https://www.curseforge.com/minecraft/mc-mods/mysticallib)                                                            | [Noobanidus](https://curseforge.com/members/Noobanidus)                               |                    |
-| :world_map:   | [Natura Legacy](https://www.curseforge.com/minecraft/mc-mods/natura-legacy)                                                        | [ACGaming56](https://curseforge.com/members/ACGaming56)                               |                    |
+| :world_map:   | [Natura Legacy](https://www.curseforge.com/minecraft/mc-mods/natura-legacy)                                                        | [ACGaming](https://curseforge.com/members/ACGaming)                                   |                    |
 | :toolbox:     | [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)                                                   | [Chaosyr](https://curseforge.com/members/chaosyr)                                     |                    |
 | :books:       | [NotEnoughIDs](https://www.curseforge.com/minecraft/mc-mods/notenoughids)                                                          | [fewizz_](https://curseforge.com/members/fewizz_)                                     |                    |
 | :bug:         | [NoiseThreader](https://www.curseforge.com/minecraft/mc-mods/noisethreader)                                                        | [fonnymunkey](https://curseforge.com/members/fonnymunkey)                             |                    |
 | :toolbox:     | [OAuth](https://www.curseforge.com/minecraft/mc-mods/oauth)                                                                        | [Sintinium](https://curseforge.com/members/Sintinium)                                 | :white_check_mark: |
 | :toolbox:     | [Omniwand](https://www.curseforge.com/minecraft/mc-mods/omniwand)                                                                  | [invadermonky](https://www.curseforge.com/members/invadermonky)                       |                    |
 | :gem:         | [DivineRPG (Official)](https://www.curseforge.com/minecraft/mc-mods/official-divinerpg)                                            | [Scimiguy](https://curseforge.com/members/Scimiguy)                                   |                    |
-| :gem:         | [OpenBlocks](https://www.curseforge.com/minecraft/mc-mods/openblocks)                                                              | [OpenMods](https://curseforge.com/members/OpenMods)                                   |                    |
-| :books:       | [OpenModsLib](https://www.curseforge.com/minecraft/mc-mods/openmodslib)                                                            | [OpenMods](https://curseforge.com/members/OpenMods)                                   |                    |
+| :gem:         | [OpenBlocks Reopened](https://www.curseforge.com/minecraft/mc-mods/openblocks-reopened)                                            | [ACGaming](https://curseforge.com/members/ACGaming)                                   |                    |
 | :toolbox:     | [Ore Excavation](https://www.curseforge.com/minecraft/mc-mods/ore-excavation)                                                      | [Funwayguy](https://curseforge.com/members/Funwayguy)                                 |                    |
 | :books:       | [p455w0rd's Library](https://www.curseforge.com/minecraft/mc-mods/p455w0rds-library)                                               | [TheRealp455w0rd](https://curseforge.com/members/TheRealp455w0rd)                     |                    |
 | :ring:        | [PackagedAuto](https://www.curseforge.com/minecraft/mc-mods/packagedauto)                                                          | [TheLMiffy1111](https://curseforge.com/members/TheLMiffy1111)                         |                    |
@@ -244,7 +243,7 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :world_map:   | [Underground Biomes](https://www.curseforge.com/minecraft/mc-mods/underground-biomes)                                              | [Kreezxil](https://curseforge.com/members/Kreezxil)                                   |                    |
 | :toolbox:     | [Uber Conduit Probe](https://www.curseforge.com/minecraft/mc-mods/uber-conduit-probe)                                              | [thanksihadtosignupforthis](https://curseforge.com/members/thanksihadtosignupforthis) |                    |
 | :books:       | [UniDict](https://www.curseforge.com/minecraft/mc-mods/unidict)                                                                    | [WanionCane](https://curseforge.com/members/WanionCane)                               |                    |
-| :toolbox:     | [Universal Tweaks](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)                                                  | [ACGaming56](https://curseforge.com/members/ACGaming56)                               |                    |
+| :toolbox:     | [Universal Tweaks](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)                                                  | [ACGaming](https://curseforge.com/members/ACGaming)                                   |                    |
 | :books:       | [ValkyrieLib](https://www.curseforge.com/minecraft/mc-mods/valkyrielib)                                                            | [ValkyrieofNight](https://curseforge.com/members/ValkyrieofNight)                     |                    |
 | :gear:        | [VillagerTradingBan](https://www.curseforge.com/minecraft/mc-mods/villagertradingban)                                              | [modmuss50](https://curseforge.com/members/modmuss50)                                 |                    |
 | :bug:         | [VintageFix](https://www.curseforge.com/minecraft/mc-mods/vintagefix)                                                              | [embeddedt](https://curseforge.com/members/embeddedt)                                 |                    |

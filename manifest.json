@@ -258,18 +258,6 @@
       "required": true
     },
     {
-      "slug": "openmodslib",
-      "projectID": 228815,
-      "fileID": 2699055,
-      "required": true
-    },
-    {
-      "slug": "openblocks",
-      "projectID": 228816,
-      "fileID": 2699056,
-      "required": true
-    },
-    {
       "slug": "guide-api",
       "projectID": 228832,
       "fileID": 2645992,
@@ -1435,6 +1423,12 @@
       "fileID": 6902995,
       "required": true,
       "clientOnly": true
+    },
+    {
+      "slug": "openblocks-reopened",
+      "projectID": 1342654,
+      "fileID": 7294306,
+      "required": true
     }
   ],
   "overrides": "overrides"

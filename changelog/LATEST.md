@@ -6,12 +6,13 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Crafttweaker 4.1.20.698 -> 4.1.20.709
 - Update Crash Assistant 1.10.20 -> 1.10.28
 - Update Extended Crafting: Nomifactory Edition 1.7.0.6 -> 1.7.0.7
-- Update Forgelin Continuous 2.1.20.0 -> 2.1.0.0
+- Update Forgelin Continuous 2.1.20.0 -> 2.3.0.0
 - Update LootTweaker 0.3.1 -> 0.4.1
 - Update Omniwand 2.0.1 -> 2.0.2
 - Update ThaumcraftFix 1.1.8 -> 1.1.9
 - Update UniversalTweaks 1.17.0 -> 1.18.0
 - Update ZenUtils 1.17.1 -> 1.26.11
+- Replace OpenBlocks 4.0.2.280 1.8.1, OpenModsLib 0.12.2 -> OpenBlocksReopened 1.8.3.1
 
 ## Bugfixes:
 
@@ -39,6 +40,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix some Extended Crafting recipes requiring specific NBT.
 - Fix the Ultimate Crafting Table recipe returning empty Crafting Storages.
 - Fix Totemic Whittling Knifes behaving incorrectly when being repaired.
+- Fix OpenBlocks Glyphs not being named properly in WAILA (OpenBlocks Reopened).
+- Fix OpenBlocks Item Cannon not being able to fire properly in some directions (OpenBlocks Reopened).
 
 ## Balance Adjustments:
 
@@ -51,10 +54,16 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Change the TombManyGraves timestamp to be ordered consistently (Universal Tweaks).
 - When waking from a bed, if the chat had text keep the chat open (Universal Tweaks).
 - Improve the performance of Advancement checks (Universal Tweaks).
+- Allow leaving OpenBlocks inventories to be done with the inventory key (default: `e`) instead of only escape (OpenBlocks Reopened).
+- Allow Elevators to teleport to elevators of other colors (OpenBlocks Reopened).
+- Make holding Shift while standing above an OpenBlocks XP Drain to increase the speed of draining (OpenBlocks Reopened).
+- Make the OpenBlocks Hang Glider only bne affected by weather if it is exposed to the weather (OpenBlocks Reopened).
 
 ## Text and Quest Updates:
 
 - Fix some typos in a few quests - Hatchs -> Hatches (217), Becuase -> Because (408), and -> an (1731).
+- Add information about holding Shift increasing transfer rate of XP drain.
+- Remove the custom enchantment descriptions in English for OpenBlocks enchantments, as they are part of OpenBlocks Reopened.
 
 ## Texture Transformations:
 
