@@ -1291,6 +1291,12 @@
       "clientOnly": true
     },
     {
+      "slug": "groovyscript",
+      "projectID": 687577,
+      "fileID": 7343465,
+      "required": true
+    },
+    {
       "slug": "universal-tweaks",
       "projectID": 705000,
       "fileID": 7403701,

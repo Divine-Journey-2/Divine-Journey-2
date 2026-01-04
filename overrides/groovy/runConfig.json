@@ -1,0 +1,16 @@
+{
+  "packName": "Divine Journey 2",
+  "packId": "divine_journey_2",
+  "author": ["AtricosHU", "WaitingIdly"],
+  "version": "@PACK_VERSION@",
+  "debug": false,
+  "loaders": {
+    "preInit": [
+      "classes/",
+      "preInit/"
+    ],
+    "postInit": [
+      "postInit/"
+    ]
+  }
+}

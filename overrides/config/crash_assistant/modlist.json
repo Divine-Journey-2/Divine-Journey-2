@@ -649,6 +649,13 @@
     "curseForgeHash": 993144871,
     "modrinthHash": "fd5cc679a2fb81b617e3baf17ef00b5bcc9f18af"
   },
+  "groovyscript-1.3.3.jar": {
+    "jarName": "groovyscript-1.3.3.jar",
+    "modId": "groovyscript",
+    "version": "1.3.3",
+    "curseForgeHash": 2499577898,
+    "modrinthHash": "e39f9e6db89884b7060bc01fd9e897c80544ed0a"
+  },
   "Guide-API-1.12-2.1.8-63.jar": {
     "jarName": "Guide-API-1.12-2.1.8-63.jar",
     "modId": "guideapi",

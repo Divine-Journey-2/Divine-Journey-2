@@ -3,6 +3,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
+- Add GroovyScript 1.3.3
 - Update Crafttweaker 4.1.20.698 -> 4.1.20.709
 - Update Crash Assistant 1.10.20 -> 1.10.28
 - Update Extended Crafting: Nomifactory Edition 1.7.0.6 -> 1.7.0.7
