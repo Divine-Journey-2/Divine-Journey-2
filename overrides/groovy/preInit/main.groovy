@@ -9,5 +9,10 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
         event.getAllMappings().forEach {
             if (it.key.toString() == 'morphtool:tool') it.ignore()
         }
+    } else if (type == IFarmerJoe) {
+        event.getAllMappings().forEach {
+            // disabled by Universal Tweaks to prevent crashes
+            if (it.key.toString() == 'agricraft:farmer') it.ignore()
+        }
     }
 }
