@@ -16,7 +16,7 @@ Total Mods: 233
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
 | :world_map:   | 5     | Worldgen          | Changes or improves worldgen                                                                                           |
 | :closed_book: | 3     | Questbook         | Related to the Questbook                                                                                               |
-| :wastebasket: | 4     | Outdated          | Used to be a different category, but is no longer used, but is still in the pack to allow migration of items           |
+| :wastebasket: | 3     | Outdated          | Used to be a different category, but is no longer used, but is still in the pack to allow migration of items           |
 
 ## Modlist
 
@@ -157,7 +157,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :ring:        | [Modular Magic](https://www.curseforge.com/minecraft/mc-mods/modular-magic)                                                           | [frinn38](https://curseforge.com/members/frinn38)                                     |                    |
 | :ring:        | [More Overlays](https://www.curseforge.com/minecraft/mc-mods/more-overlays)                                                           | [feldim245](https://curseforge.com/members/feldim245)                                 | :white_check_mark: |
 | :gear:        | [MoreTweaker](https://www.curseforge.com/minecraft/mc-mods/moretweaker)                                                               | [noeppinoeppi](https://curseforge.com/members/noeppinoeppi)                           |                    |
-| :wastebasket: | [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)                                                             | [Vazkii](https://curseforge.com/members/Vazkii)                                       |                    |
 | :eyes:        | [MorphOverlay](https://www.curseforge.com/minecraft/mc-mods/morphoverlay)                                                             | [blue_beaker](https://curseforge.com/members/blue_beaker)                             | :white_check_mark: |
 | :toolbox:     | [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus)                                                                     | [Quetzi](https://curseforge.com/members/Quetzi)                                       |                    |
 | :toolbox:     | [Mouse Tweaks Unofficial](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks-unofficial)                                       | [CleanroomMC](https://curseforge.com/members/cleanroommc)                             | :white_check_mark: |

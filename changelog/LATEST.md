@@ -15,6 +15,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update ZenUtils 1.17.1 -> 1.26.11
 - Replace OpenBlocks 4.0.2.280 1.8.1, OpenModsLib 0.12.2 -> OpenBlocksReopened 1.8.3.1
 - Replace Baubles 1.5.2, ActuallyBaubles 1.1 -> Bubbles 2.4.9
+- Remove Morph-O-Tool
 
 ## Bugfixes:
 
@@ -46,6 +47,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix OpenBlocks Item Cannon not being able to fire properly in some directions (OpenBlocks Reopened).
 - Prevent non-player entities from being able to enter Vethea.
 - Fix Baubles not respecting the Curse of Binding and Vanishing (Bubbles).
+- Fix Omniwand items behaving incorrectly due to being transformed from the Morphing Tool.
 
 ## Balance Adjustments:
 
@@ -62,6 +64,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Allow Elevators to teleport to elevators of other colors (OpenBlocks Reopened).
 - Make holding Shift while standing above an OpenBlocks XP Drain to increase the speed of draining (OpenBlocks Reopened).
 - Make the OpenBlocks Hang Glider only bne affected by weather if it is exposed to the weather (OpenBlocks Reopened).
+- Migrate Morphing Tool items to Omniwand items.
 
 ## Text and Quest Updates:
 
