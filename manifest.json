@@ -502,12 +502,6 @@
       "required": true
     },
     {
-      "slug": "wireless-crafting-terminal",
-      "projectID": 244559,
-      "fileID": 2830252,
-      "required": true
-    },
-    {
       "slug": "villagertradingban",
       "projectID": 244930,
       "fileID": 2571285,
@@ -990,18 +984,6 @@
       "slug": "demagnetize",
       "projectID": 301356,
       "fileID": 3091010,
-      "required": true
-    },
-    {
-      "slug": "wireless-fluid-terminal",
-      "projectID": 304022,
-      "fileID": 2830253,
-      "required": true
-    },
-    {
-      "slug": "ae2wtlib",
-      "projectID": 304024,
-      "fileID": 2830114,
       "required": true
     },
     {

@@ -15,7 +15,10 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update ZenUtils 1.17.1 -> 1.26.11
 - Replace OpenBlocks 4.0.2.280 1.8.1, OpenModsLib 0.12.2 -> OpenBlocksReopened 1.8.3.1
 - Replace Baubles 1.5.2, ActuallyBaubles 1.1 -> Bubbles 2.4.9
-- Remove Morph-O-Tool
+- Remove Morph-O-Tool 1.2-21
+- Remove AE2WTLib 1.0.34
+- Remove WirelessCraftingTerminal 3.12.97
+- Remove WirelessFluidTerminal 1.0.4
 
 ## Bugfixes:
 

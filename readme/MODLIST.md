@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 233
+Total Mods: 229
 
 ## Type Key
 
@@ -16,7 +16,7 @@ Total Mods: 233
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
 | :world_map:   | 5     | Worldgen          | Changes or improves worldgen                                                                                           |
 | :closed_book: | 3     | Questbook         | Related to the Questbook                                                                                               |
-| :wastebasket: | 3     | Outdated          | Used to be a different category, but is no longer used, but is still in the pack to allow migration of items           |
+| :wastebasket: | 0     | Outdated          | Used to be a different category, but is no longer used, but is still in the pack to allow migration of items           |
 
 ## Modlist
 
@@ -30,7 +30,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [Actually Additions](https://www.curseforge.com/minecraft/mc-mods/actually-additions)                                                 | [Ellpeck](https://curseforge.com/members/Ellpeck)                                     |                    |
 | :gem:         | [AE2 Unofficial Extended Life](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)                                        | [PrototypeTrousers](https://curseforge.com/members/PrototypeTrousers)                 |                    |
 | :ring:        | [AE2 Network Visualiser](https://www.curseforge.com/minecraft/mc-mods/ae2-network-visualiser)                                         | [brandon3055](https://curseforge.com/members/brandon3055)                             |                    |
-| :wastebasket: | [AE2 Wireless Terminal Library](https://www.curseforge.com/minecraft/mc-mods/ae2wtlib)                                                | [TheRealp455w0rd](https://curseforge.com/members/TheRealp455w0rd)                     |                    |
 | :gem:         | [The Aether](https://www.curseforge.com/minecraft/mc-mods/aether)                                                                     | [TheAetherTeam](https://curseforge.com/members/TheAetherTeam)                         |                    |
 | :gem:         | [AgriCraft](https://www.curseforge.com/minecraft/mc-mods/agricraft)                                                                   | [InfinityRaider](https://curseforge.com/members/InfinityRaider)                       |                    |
 | :toolbox:     | [Akashic Tome](https://www.curseforge.com/minecraft/mc-mods/akashic-tome)                                                             | [Vazkii](https://curseforge.com/members/Vazkii)                                       |                    |
@@ -250,8 +249,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :books:       | [WanionLib](https://www.curseforge.com/minecraft/mc-mods/wanionlib)                                                                   | [WanionCane](https://curseforge.com/members/WanionCane)                               |                    |
 | :ring:        | [Wasaila](https://www.curseforge.com/minecraft/mc-mods/wasaila)                                                                       | [Mrbysco](https://curseforge.com/members/Mrbysco)                                     |                    |
 | :ring:        | [Wawla - What Are We Looking At](https://www.curseforge.com/minecraft/mc-mods/wawla)                                                  | [DarkhaxDev](https://curseforge.com/members/DarkhaxDev)                               |                    |
-| :wastebasket: | [Wireless Crafting Terminal](https://www.curseforge.com/minecraft/mc-mods/wireless-crafting-terminal)                                 | [TheRealp455w0rd](https://curseforge.com/members/TheRealp455w0rd)                     |                    |
-| :wastebasket: | [AE2 Wireless Fluid Terminal](https://www.curseforge.com/minecraft/mc-mods/wireless-fluid-terminal)                                   | [TheRealp455w0rd](https://curseforge.com/members/TheRealp455w0rd)                     |                    |
 | :diamonds:    | [Wireless Redstone CBE](https://www.curseforge.com/minecraft/mc-mods/wireless-redstone-cbe)                                           | [covers1624](https://curseforge.com/members/covers1624)                               |                    |
 | :world_map:   | [YUNG's Better Caves](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves)                                                | [YUNGNICKYOUNG](https://curseforge.com/members/YUNGNICKYOUNG)                         |                    |
 | :gear:        | [Zen Utils](https://www.curseforge.com/minecraft/mc-mods/zenutil)                                                                     | [youyihj](https://curseforge.com/members/youyihj)                                     |                    |

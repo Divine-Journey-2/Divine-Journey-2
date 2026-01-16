@@ -72,13 +72,6 @@
     "curseForgeHash": 2521217349,
     "modrinthHash": "9f69460dc8c2306953029126c596f9b5c9d00719"
   },
-  "AE2WTLib-1.12.2-1.0.34.jar": {
-    "jarName": "AE2WTLib-1.12.2-1.0.34.jar",
-    "modId": "ae2wtlib",
-    "version": "1.12.2-1.0.34",
-    "curseForgeHash": 4147363441,
-    "modrinthHash": "d76ffb730d9e02aeb6dd5bb3c5dd5fa39f5fe1b9"
-  },
   "aether-1.12.2-v1.5.4.1.jar": {
     "jarName": "aether-1.12.2-v1.5.4.1.jar",
     "modId": "aether_legacy",
@@ -1572,20 +1565,6 @@
     "version": "2.6.275",
     "curseForgeHash": 1231381817,
     "modrinthHash": "783157c607149875de1e045d72382d370256257c"
-  },
-  "WirelessCraftingTerminal-1.12.2-3.12.97.jar": {
-    "jarName": "WirelessCraftingTerminal-1.12.2-3.12.97.jar",
-    "modId": "wct",
-    "version": "1.12.2-3.12.97",
-    "curseForgeHash": 2705844675,
-    "modrinthHash": "f1ec1a90b4c351cfc17c6d9a3cbd3c1607258c4e"
-  },
-  "WirelessFluidTerminal-1.12.2-1.0.4.jar": {
-    "jarName": "WirelessFluidTerminal-1.12.2-1.0.4.jar",
-    "modId": "wft",
-    "version": "1.12.2-1.0.4",
-    "curseForgeHash": 2485661391,
-    "modrinthHash": "533d9416c9bcae39ba4626caade9fff0a5291fe9"
   },
   "WR-CBE-1.12.2-2.3.2.33-universal.jar": {
     "jarName": "WR-CBE-1.12.2-2.3.2.33-universal.jar",

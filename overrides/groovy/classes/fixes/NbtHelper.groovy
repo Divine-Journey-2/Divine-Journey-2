@@ -18,7 +18,37 @@ class NbtHelper {
     static final int LONG_ARRAY = Constants.NBT.TAG_LONG_ARRAY
     static final int ANY_NUMBER = Constants.NBT.TAG_ANY_NUMERIC
 
+    /// remove any number of tags from a single nbt compound
     static void removeTags(NBTTagCompound compound, String... removal) {
         compound.with { removal.each { removeTag(it) } }
+    }
+
+    /// generate a default itemstack representation
+    static NBTTagCompound itemStackRep(String id, int amount = 1, int damage = 0, NBTTagCompound tag = null) {
+        def stack = new NBTTagCompound()
+        stack.setString('id', id)
+        stack.setByte('Count', amount as byte)
+        stack.setShort('Damage', damage as short)
+        if (tag != null) stack.setTag('tag', tag)
+        stack
+    }
+
+    /// store any number of itemstacks into a matter cluster,
+    /// which can be right-clicked to extract all contained stacks.
+    /// useful for when a single itemstack being removed is effectively 2 itemstacks
+    static NBTTagCompound clusterStacks(List<NBTTagCompound> stacks) {
+        itemStackRep('avaritia:matter_cluster', 1, 0, new NBTTagCompound().tap {
+            setTag('clusteritems', new NBTTagCompound().tap {
+                setInteger('total', stacks.size())
+                setTag('items', new NBTTagList().tap {
+                    stacks.each { e ->
+                        appendTag(new NBTTagCompound().tap {
+                            setInteger('count', 1)
+                            setTag('item', e)
+                        })
+                    }
+                })
+            })
+        })
     }
 }

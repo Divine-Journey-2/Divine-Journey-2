@@ -4,6 +4,9 @@ import net.minecraft.nbt.NBTTagCompound
 
 class OmniwandConversion implements IFixableData {
 
+    public static def MORPHTOOL = 'morphtool:tool'
+    private static def OMNIWAND = 'omniwand:wand'
+
     int getFixVersion() {
         Fixer.VERSION23_0
     }
@@ -18,9 +21,9 @@ class OmniwandConversion implements IFixableData {
     }
 
     NBTTagCompound fixTagCompound(NBTTagCompound compound) {
-        if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == 'morphtool:tool') {
+        if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == MORPHTOOL) {
             // turn morphing tools into omniwands, fix nbt issues
-            compound.setString('id', 'omniwand:wand')
+            compound.setString('id', OMNIWAND)
             compound.setTag('tag', new NBTTagCompound().tap {
                 if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey('tag', NbtHelper.COMPOUND)) {
                     def data = compound.getCompoundTag('tag').getCompoundTag('morphtool:data')
@@ -30,7 +33,7 @@ class OmniwandConversion implements IFixableData {
                 }
                 setBoolean('omniwand:auto', true)
             })
-        } else if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == 'omniwand:wand') {
+        } else if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == OMNIWAND) {
             // fix nbt for omniwands that have already been converted
             if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey('tag', NbtHelper.COMPOUND)) {
                 def data = compound.getCompoundTag('tag').getCompoundTag('omniwand:data')
