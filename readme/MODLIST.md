@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 229
+Total Mods: 228
 
 ## Type Key
 
@@ -10,7 +10,7 @@ Total Mods: 229
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 28    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
-| :ring:        | 42    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
+| :ring:        | 41    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
 | :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
@@ -208,7 +208,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :toolbox:     | [Solar Flux Reborn](https://www.curseforge.com/minecraft/mc-mods/solar-flux-reborn)                                                   | [Zeitheron](https://curseforge.com/members/Zeitheron)                                 |                    |
 | :toolbox:     | [spark](https://www.curseforge.com/minecraft/mc-mods/spark)                                                                           | [Iucko](https://curseforge.com/members/Iucko)                                         |                    |
 | :diamonds:    | [Spartan Shields](https://www.curseforge.com/minecraft/mc-mods/spartan-shields)                                                       | [ObliviousSpartan](https://curseforge.com/members/ObliviousSpartan)                   |                    |
-| :ring:        | [Storage Drawers Extras](https://www.curseforge.com/minecraft/mc-mods/storage-drawers-extras)                                         | [Texelsaur](https://curseforge.com/members/Texelsaur)                                 |                    |
 | :diamonds:    | [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)                                                       | [Texelsaur](https://curseforge.com/members/Texelsaur)                                 |                    |
 | :toolbox:     | [Super Sound Muffler: Revived](https://www.curseforge.com/minecraft/mc-mods/super-sound-muffler-revived)                              | [Firstnecron](https://curseforge.com/members/Firstnecron)                             |                    |
 | :books:       | [Tesla Core Lib](https://www.curseforge.com/minecraft/mc-mods/tesla-core-lib)                                                         | [face_of_cat](https://curseforge.com/members/face_of_cat)                             |                    |

@@ -19,6 +19,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove AE2WTLib 1.0.34
 - Remove WirelessCraftingTerminal 3.12.97
 - Remove WirelessFluidTerminal 1.0.4
+- Remove Storage Drawers Extras 3.1.0
 
 ## Bugfixes:
 
