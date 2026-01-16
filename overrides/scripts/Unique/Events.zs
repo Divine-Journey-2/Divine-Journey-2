@@ -69,12 +69,6 @@ static oreConversion as IItemStack[string] = {
     oreYellorite: <bigreactors:oreyellorite>,
 } as IItemStack[string];
 
-static correctOreDict as string[] = [
-    "oreYellorite",
-    "oreChargedCertusQuartz"
-] as string[];
-
-
 events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
     if (e.world.isRemote()) {
         return;
@@ -95,17 +89,16 @@ events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
     if (e.drops.length == 1 && e.block.definition.id.startsWith("undergroundbiomes")) {
         var ores = e.drops[0].stack.ores;
         if (!isNull(ores)) {
-            if (ores.length == 1) {
-                val desiredDrop = oreConversion[ores[0].name];
-                if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
-            } else if (ores.length >= 1) {
-                // If we have multiple oredicts possible, iterate through until we find the predetermined "correct" oredict
-                for ore in ores {
-                    if (correctOreDict has ore.name) {
-                        val desiredDrop = oreConversion[ore.name];
-                        if (!isNull(desiredDrop)) e.drops = [desiredDrop] as WeightedItemStack[];
-                        break;
-                    }
+            // special case charged certus quartz, since it also has the same oredict as normal certus quartz
+            if (ores has "oreChargedCertusQuartz") {
+                e.drops = [oreConversion["oreChargedCertusQuartz"]] as WeightedItemStack[];
+            }
+            // Iterate through until we find a valid oredict
+            for ore in ores {
+                val desiredDrop = oreConversion[ore.name];
+                if (!isNull(desiredDrop)) {
+                    e.drops = [desiredDrop] as WeightedItemStack[];
+                    break;
                 }
             }
         }
