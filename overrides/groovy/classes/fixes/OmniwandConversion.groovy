@@ -1,3 +1,4 @@
+package classes.fixes
 
 import net.minecraft.util.datafix.IFixableData
 import net.minecraft.nbt.NBTTagCompound

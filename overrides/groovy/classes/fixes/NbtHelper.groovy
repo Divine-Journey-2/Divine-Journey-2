@@ -1,3 +1,4 @@
+package classes.fixes
 
 import net.minecraftforge.common.util.Constants
 

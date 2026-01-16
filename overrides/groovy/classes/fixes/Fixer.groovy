@@ -1,3 +1,4 @@
+package classes.fixes
 
 import net.minecraftforge.fml.common.FMLCommonHandler
 import net.minecraft.util.datafix.FixTypes
