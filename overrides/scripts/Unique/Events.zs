@@ -90,7 +90,7 @@ events.onBlockHarvestDrops(function(e as BlockHarvestDropsEvent) {
         var ores = e.drops[0].stack.ores;
         if (!isNull(ores)) {
             // special case charged certus quartz, since it also has the same oredict as normal certus quartz
-            if (ores has "oreChargedCertusQuartz") {
+            if (ores has <ore:oreChargedCertusQuartz>) {
                 e.drops = [oreConversion["oreChargedCertusQuartz"]] as WeightedItemStack[];
             }
             // Iterate through until we find a valid oredict
