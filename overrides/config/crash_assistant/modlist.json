@@ -119,13 +119,6 @@
     "curseForgeHash": 1189087403,
     "modrinthHash": "d798af79de48be0f00c772943e5ec5a2fb5659fa"
   },
-  "astral-level-nerf-1.0.1-all.jar": {
-    "jarName": "astral-level-nerf-1.0.1-all.jar",
-    "modId": "astral-level-nerf",
-    "version": "1.0.1",
-    "curseForgeHash": 152555130,
-    "modrinthHash": "bacc275792cafae77892a48fbb620553db362755"
-  },
   "astralsorcery-1.12.2-1.10.27.jar": {
     "jarName": "astralsorcery-1.12.2-1.10.27.jar",
     "modId": "astralsorcery",
@@ -1421,13 +1414,6 @@
     "curseForgeHash": 3931414915,
     "modrinthHash": "e63241c7fa81c7fce9f3df0121682bcdcb63929c"
   },
-  "tmel-1.12.2-1.4.0.0.jar": {
-    "jarName": "tmel-1.12.2-1.4.0.0.jar",
-    "modId": "tmel",
-    "version": "1.12.2-1.4.0.0",
-    "curseForgeHash": 3695744742,
-    "modrinthHash": "f11b7b6cfe6bc5ef81f47f195693b2ea87309e3f"
-  },
   "TombManyGraves-1.12-4.2.0.jar": {
     "jarName": "TombManyGraves-1.12-4.2.0.jar",
     "modId": "tombmanygraves",
@@ -1518,11 +1504,6 @@
     "version": "1.12.2-2.0.20.1",
     "curseForgeHash": 791322360,
     "modrinthHash": "e640e231cb83ea9ff7cda8710e6d7c44467b9658"
-  },
-  "VillagerTradingBan-2.0.0.6-universal.jar": {
-    "jarName": "VillagerTradingBan-2.0.0.6-universal.jar",
-    "curseForgeHash": 2570982046,
-    "modrinthHash": "875b2192e4897267d524202805d2dbb1b1877ff7"
   },
   "vintagefix-0.6.2.jar": {
     "jarName": "vintagefix-0.6.2.jar",

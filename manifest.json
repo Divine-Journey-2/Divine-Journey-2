@@ -502,12 +502,6 @@
       "required": true
     },
     {
-      "slug": "villagertradingban",
-      "projectID": 244930,
-      "fileID": 2571285,
-      "required": true
-    },
-    {
       "slug": "ender-storage-1-8",
       "projectID": 245174,
       "fileID": 2755787,
@@ -1012,12 +1006,6 @@
       "required": true
     },
     {
-      "slug": "too-many-efficiency-losses",
-      "projectID": 308851,
-      "fileID": 2742442,
-      "required": true
-    },
-    {
       "slug": "gas-conduits",
       "projectID": 309756,
       "fileID": 4674242,
@@ -1209,12 +1197,6 @@
       "fileID": 5876158,
       "required": true,
       "clientOnly": true
-    },
-    {
-      "slug": "astral-level-tweak",
-      "projectID": 463445,
-      "fileID": 3569685,
-      "required": true
     },
     {
       "slug": "uber-conduit-probe",

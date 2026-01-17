@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 228
+Total Mods: 225
 
 ## Type Key
 
@@ -8,9 +8,9 @@ Total Mods: 228
 | ------------- | ----- | ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | :books:       | 48    | Library           | Required for other mods and not doing much on its own                                                                  |
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
-| :gear:        | 28    | Development       | Basically never interacted with by a player                                                                            |
+| :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
-| :ring:        | 41    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
+| :ring:        | 39    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
 | :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
@@ -36,7 +36,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gem:         | [Alchemistry](https://www.curseforge.com/minecraft/mc-mods/alchemistry)                                                               | [Dark_Arcana](https://curseforge.com/members/Dark_Arcana)                             |                    |
 | :bug:         | [Alfheim](https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine)                                                       | [Desoroxxx](https://curseforge.com/members/desoroxxx)                                 |                    |
 | :toolbox:     | [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)                                                                   | [squeek502](https://curseforge.com/members/squeek502)                                 |                    |
-| :ring:        | [AstralLevelTweak](https://www.curseforge.com/minecraft/mc-mods/astral-level-tweak)                                                   | [Mixu_78](https://curseforge.com/members/Mixu_78)                                     |                    |
 | :gem:         | [Astral Sorcery](https://www.curseforge.com/minecraft/mc-mods/astral-sorcery)                                                         | [HellFirePvP](https://curseforge.com/members/HellFirePvP)                             |                    |
 | :gem:         | [Atum 2: Return to the Sands](https://www.curseforge.com/minecraft/mc-mods/atum)                                                      | [Shadowclaimer](https://curseforge.com/members/Shadowclaimer)                         |                    |
 | :books:       | [AutoRegLib](https://www.curseforge.com/minecraft/mc-mods/autoreglib)                                                                 | [Vazkii](https://curseforge.com/members/Vazkii)                                       |                    |
@@ -230,7 +229,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :gear:        | [Tips](https://www.curseforge.com/minecraft/mc-mods/tips)                                                                             | [DarkhaxDev](https://curseforge.com/members/DarkhaxDev)                               | :white_check_mark: |
 | :toolbox:     | [TipTheScales](https://www.curseforge.com/minecraft/mc-mods/tipthescales)                                                             | [Jaredlll08](https://curseforge.com/members/Jaredlll08)                               | :white_check_mark: |
 | :toolbox:     | [Tomb Many Graves 2](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2)                                                 | [M4thG33k](https://curseforge.com/members/M4thG33k)                                   |                    |
-| :ring:        | [Too Many Efficiency Losses](https://www.curseforge.com/minecraft/mc-mods/too-many-efficiency-losses)                                 | [ItsPonks](https://curseforge.com/members/ItsPonks)                                   |                    |
 | :gear:        | [Tool Progression](https://www.curseforge.com/minecraft/mc-mods/tool-progression)                                                     | [tyra314](https://curseforge.com/members/tyra314)                                     |                    |
 | :toolbox:     | [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)                                                               | [xalcon](https://curseforge.com/members/xalcon)                                       |                    |
 | :gem:         | [Totemic](https://www.curseforge.com/minecraft/mc-mods/totemic)                                                                       | [ljfa2](https://curseforge.com/members/ljfa2)                                         |                    |
@@ -242,7 +240,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :books:       | [UniDict](https://www.curseforge.com/minecraft/mc-mods/unidict)                                                                       | [WanionCane](https://curseforge.com/members/WanionCane)                               |                    |
 | :toolbox:     | [Universal Tweaks](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)                                                     | [ACGaming](https://curseforge.com/members/ACGaming)                                   |                    |
 | :books:       | [ValkyrieLib](https://www.curseforge.com/minecraft/mc-mods/valkyrielib)                                                               | [ValkyrieofNight](https://curseforge.com/members/ValkyrieofNight)                     |                    |
-| :gear:        | [VillagerTradingBan](https://www.curseforge.com/minecraft/mc-mods/villagertradingban)                                                 | [modmuss50](https://curseforge.com/members/modmuss50)                                 |                    |
 | :bug:         | [VintageFix](https://www.curseforge.com/minecraft/mc-mods/vintagefix)                                                                 | [embeddedt](https://curseforge.com/members/embeddedt)                                 |                    |
 | :toolbox:     | [Waila Harvestability](https://www.curseforge.com/minecraft/mc-mods/waila-harvestability)                                             | [squeek502](https://curseforge.com/members/squeek502)                                 | :white_check_mark: |
 | :books:       | [WanionLib](https://www.curseforge.com/minecraft/mc-mods/wanionlib)                                                                   | [WanionCane](https://curseforge.com/members/WanionCane)                               |                    |
