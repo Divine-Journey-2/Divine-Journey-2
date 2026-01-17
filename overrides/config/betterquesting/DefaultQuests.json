@@ -50697,6 +50697,10 @@
             "3:10": {
               "id:8": "contenttweaker:inscriber_clearance_press",
               "Count:3": 1
+            },
+            "4:10": {
+              "id:8": "contenttweaker:inscriber_scheduling_press",
+              "Count:3": 1
             }
           }
         }

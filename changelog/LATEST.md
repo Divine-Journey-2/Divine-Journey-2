@@ -76,6 +76,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix some typos in a few quests - Hatchs -> Hatches (217), Becuase -> Because (408), and -> an (1731).
 - Add information about holding Shift increasing transfer rate of XP drain.
 - Remove the custom enchantment descriptions in English for OpenBlocks enchantments, as they are part of OpenBlocks Reopened.
+- Add the Scheduling Press as a choice reward from the normal press quest.
 
 ## Texture Transformations:
 
