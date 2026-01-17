@@ -17,6 +17,7 @@ class Fixer {
         def fixer = fmlFixer.init(getPackId(), LATEST)
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new OmniwandConversion())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new WirelessAE2Terminal())
+        fixer.registerFix(FixTypes.ITEM_INSTANCE, new ActuallyBaubles())
         log "registered fixes for $LATEST"
     }
 }
