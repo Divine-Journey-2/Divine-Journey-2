@@ -84,7 +84,7 @@ val additionList as IItemStack[IEnchantmentDefinition] = {
     <enchantment:evilcraft:poison_tip>: <betternether:egg_plant>*16,
     <enchantment:evilcraft:unusing>: <evilcraft:blood_waxed_coal>*1,
     <enchantment:evilcraft:vengeance>: <evilcraft:vengeance_essence>*1,
-    <enchantment:extrautils2:xu.bladerang>: <actuallyadditions:item_damage_lens>*4,
+    <enchantment:extrautils2:xu.bladerang>: <actuallyadditions:item_damage_lens>*1,
     <enchantment:extrautils2:xu.boomereaperang>: <contenttweaker:hyper_diamond_block>*1,
     <enchantment:extrautils2:xu.burnerang>: <contenttweaker:dark_ingot>*32,
     <enchantment:extrautils2:xu.kaboomerang>: <minecraft:tnt>*16,

@@ -38,8 +38,8 @@ mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 1296, <galacticraftplanets
 mods.tconstruct.Melting.addRecipe(<liquid:titanium> * 16, <contenttweaker:titanium_nugget>, 984);
 mods.tconstruct.Casting.removeTableRecipe(<alchemistry:ingot:22>);
 mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:item_basic_asteroids>, <tconstruct:cast_custom>, <liquid:titanium>, 144, false);
-mods.tconstruct.Casting.addTableRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:titanium_nugget>, <tconstruct:cast_custom:1>, <liquid:titanium>, 16, false);
+mods.tconstruct.Casting.addBasinRecipe(<galacticraftplanets:asteroids_block:7>, null, <liquid:titanium>, 1296);
 mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:31>);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:item_basic_asteroids>, false, 1, [[100, <alchemistry:element:22> * 16]]);
 mods.alchemistry.Dissolver.addRecipe(<galacticraftplanets:asteroids_block:7>, false, 1, [[100, <alchemistry:element:22> * 144]]);
@@ -79,7 +79,7 @@ recipes.addShaped(<thermalfoundation:storage>, [[<thermalfoundation:material:128
 recipes.removeShapeless(<thermalfoundation:material:192> * 9, [<erebus:materials:43>]);
 recipes.remove(<immersiveengineering:storage_slab>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128> * 2, <ore:oreCopper>, <immersiveengineering:material:7>, 10, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128> * 2, <ore:oreCopper>, <immersiveengineering:material:7>, 200, 512);
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:64>, null, 5, 512);
 recipes.removeShaped(<thermalfoundation:storage>, [[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>],[<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>,<galacticraftcore:basic_item:3>]]);
 recipes.removeByRecipeName("unidict:blockcopper_x1_shape.aaaaaaaaa");
@@ -295,6 +295,7 @@ Grinder.removeRecipe(<immersiveengineering:metal:3>);
 Grinder.removeRecipe(<bewitchment:silver_ingot>);
 Grinder.removeRecipe(<alchemistry:ingot:47>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:3>);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:130> * 2, <ore:oreSilver>, <immersiveengineering:material:7>, 200, 512);
 
 // Silver Nugget
 <ore:nuggetSilver>.removeItems([<bewitchment:silver_nugget>,<immersiveengineering:metal:23>]);
@@ -348,7 +349,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:161> 
 mods.appliedenergistics2.Grinder.removeRecipe(<alchemistry:ingot:28>);
 <ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:4>);
-mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <ore:oreNickel>, <immersiveengineering:material:7>, 10, 512);
+mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:133> * 2, <ore:oreNickel>, <immersiveengineering:material:7>, 200, 512);
 furnace.remove(<immersiveengineering:metal:4>);
 
 // Platinum Ingot
@@ -366,5 +367,10 @@ recipes.removeShapeless(<minecraft:coal:1> * 9, [<actuallyadditions:block_misc:5
 // Lumium in the Arc Furnace
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <minecraft:glowstone_dust> * 4], "Alloying");
 mods.immersiveengineering.ArcFurnace.addRecipe(<thermalfoundation:material:166> * 4, <thermalfoundation:material:129> * 3, null, 100, 512, [<thermalfoundation:material:130>, <ore:glowstone>], "Alloying");
+
+// Manasteel, Terrasteel, Elementium Block Casting
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:0>, null, <liquid:manasteel>, 1296);
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:1>, null, <liquid:terrasteel>, 1296);
+mods.tconstruct.Casting.addBasinRecipe(<botania:storage:2>, null, <liquid:elementium>, 1296);
 
 print("ENDING UnifyingIngotsAndBlocks.zs");

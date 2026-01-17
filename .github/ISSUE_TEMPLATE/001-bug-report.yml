@@ -1,0 +1,62 @@
+name: Bug Report
+description: There is a bug that needs to be fixed.
+labels: ["Bug"]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, check if your request has been submitted before. If it has, please don't submit a duplicate.
+        In particular, check if it is a [Known Issue](https://github.com/Divine-Journey-2/Divine-Journey-2/issues?q=state%3Aopen%20label%3A"Known%20Issue").
+        Then, if you have OptiFine installed and it is a visual bug, remove OptiFine and confirm that it happens without OptiFine.
+        If you are not using the latest version, make sure that the report has not already been [resolved](https://github.com/Divine-Journey-2/Divine-Journey-2/commits/main/).
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Modpack version
+      description: If you are not using the latest version, make sure that the request has not already been fulfilled.
+      placeholder: "Example: 2.X.X"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug in a clear and concise way. If it is caused by a specific mod, indicate which one.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: Steps to reproduce
+      description: |
+        1. Open the game / Start the modpack / Get into a world / ...
+        2. Get the item ... / Go to ... / Open the ... / Place a ... / Break a ... / ...
+        3. Continue providing steps as needed
+        4. ... doesn't craft correctly. / Can't get the ... / ... can't be completed. / ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen instead? If you believe a particular script or config change would solve the problem, say what and where. If applicable, link the line the change would occur on.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here. If applicable, add screenshots or videos to help explain your problem.
+    validations:
+      required: false
+  - type: input
+    id: discord-id
+    attributes:
+      label: Your Divine Journey 2 Discord Username
+      description: If you haven't joined the Discord, this will make it harder to contact you if we need additional info.
+      placeholder: "Example: atricos, waitingidly"
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make this bug report!

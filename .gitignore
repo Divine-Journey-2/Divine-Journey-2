@@ -12,6 +12,7 @@ overrides/config/brandon3055/contributors.json
 overrides/config/enderio/recipes/*.pdf
 overrides/config/enderio/recipes/examples/**
 overrides/config/JustEnoughCalculation/record.json
+overrides/config/teamreborn/configData.nbt
 build
 buildtools/API-KEY
 overrides/config/thaumicjei_itemstack_aspects.json

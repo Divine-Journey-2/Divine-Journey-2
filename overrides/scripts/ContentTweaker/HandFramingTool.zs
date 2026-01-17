@@ -11,6 +11,7 @@ import mods.contenttweaker.MutableItemStack;
 import mods.contenttweaker.World;
 import mods.contenttweaker.Player;
 import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.BlockState;
 import mods.contenttweaker.Hand;
 import mods.contenttweaker.Facing;
 import mods.contenttweaker.ActionResult;
@@ -29,6 +30,9 @@ function isFrameable(block as IBlockDefinition) as bool {
 
         || block.id.startsWith("storagedrawersextra")
 
+        || block.id == "fluiddrawers:tank"
+        || block.id == "fluiddrawers:tank_custom"
+
         || block.id == "storagedrawers:customdrawers"
         || block.id == "storagedrawers:customtrim"
 
@@ -43,6 +47,7 @@ function isFrameable(block as IBlockDefinition) as bool {
 function isReframing(block as IBlockDefinition) as bool {
     if (isNull(block) || isNull(block.id)) return false; // how
     return block.id.startsWith("framedcompactdrawers")
+        || block.id == "fluiddrawers:tank_custom"
         || block.id == "storagedrawers:customdrawers"
         || block.id == "storagedrawers:customtrim";
 }
@@ -56,17 +61,23 @@ function makeFramedState(state as IBlockState) as IBlockState {
     if (id == "storagedrawers:trim" || id == "storagedrawersextra:extra_trim_0" || id == "storagedrawersextra:extra_trim_3") {
         return <block:storagedrawers:customtrim>.block.definition.defaultState;
     }
-    return (
-        (id == "storagedrawers:basicdrawers" || id == "storagedrawersextra:extra_drawers")
-            ? <block:storagedrawers:customdrawers>
-            : id == "storagedrawers:compdrawers"
-                ? <block:framedcompactdrawers:framed_compact_drawer>
-                : id == "storagedrawers:controllerslave"
-                    ? <block:framedcompactdrawers:framed_slave>
-                    : <block:framedcompactdrawers:framed_drawer_controller>)
-        .block.definition.getStateFromMeta(id == "storagedrawers:controller"
-                                          ? state.meta - 2
-                                          : state.meta);
+    var block as BlockState = null;
+    var meta as int = state.meta;
+    if (id == "storagedrawers:basicdrawers" || id == "storagedrawersextra:extra_drawers") {
+        block = <block:storagedrawers:customdrawers>;
+    } else if (id == "storagedrawers:compdrawers") {
+        block = <block:framedcompactdrawers:framed_compact_drawer>;
+    } else if (id == "fluiddrawers:tank") {
+        block = <block:fluiddrawers:tank_custom>;
+    } else if (id == "storagedrawers:controllerslave") {
+        block = <block:framedcompactdrawers:framed_slave>;
+    } else if (id == "storagedrawers:controller") {
+        block = <block:framedcompactdrawers:framed_drawer_controller>;
+        meta = meta - 2;
+    } else {
+        block = <block:storagedrawers:customdrawers>; // fallback
+    }
+    return block.block.definition.getStateFromMeta(meta);
 }
 
 function overrideData(data as IData) as IData {

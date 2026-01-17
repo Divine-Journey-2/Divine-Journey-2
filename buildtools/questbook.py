@@ -94,7 +94,7 @@ def convertToLang(line: str) -> str:
     return repr(line)[1:-1].replace("%", "%%").replace("\\", "%").replace("%'", "'")
 
 def convertToJSON(line: str) -> str:
-    """replaces any `%n` or other lang escape sequences with the correct escape character, `\`"""
+    """replaces any `%n` or other lang escape sequences with the correct escape character, a single backslash"""
     return line.replace("%%", PLACEHOLDER_TEXT).replace("%", "\\").replace(PLACEHOLDER_TEXT, "%").replace("\"", "\\\"")
 
 def nest(location: dict) -> dict:
@@ -156,11 +156,6 @@ def delIconCount(book: dict):
             pass
 
 
-def key(entry: str) -> bool:
-    """put database after questline, sort by int, and then desc after title"""
-    return ("db" in entry, int(entry.split(".")[3]), "desc" in entry)
-
-
 def build(args):
     os.makedirs(lang, exist_ok=True)
     langFile = f"{lang}/{args.lang}.lang"
@@ -200,7 +195,7 @@ def build(args):
             json.dump(questbook, file, indent=2)
 
         with open(langFile, "w") as file:
-            for i in sorted(questKeys, key=key):
+            for i in sorted(questKeys, key=lambda entry: ("db" in entry, int(entry.split(".")[len(args.prefix)]), "desc" in entry)):
                 file.write(f"{i}={questKeys[i]}\n")
 
 

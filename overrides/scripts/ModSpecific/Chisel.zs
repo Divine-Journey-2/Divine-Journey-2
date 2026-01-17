@@ -243,6 +243,12 @@ for i in 0 to 16 {
     Carving.addVariation("mekanismglowpanel", <mekanism:glowpanel>.withDamage(i));
 }
 
+// Underground Biomes Sand
+Carving.addGroup("sand");
+Carving.addVariation("sand", <minecraft:sand>);
+Carving.addVariation("sand", <minecraft:sand:1>);
+
+// Underground Biomes Coal Ore
 Carving.addGroup("ub_coal_ore");
 Carving.addVariation("ub_coal_ore", <minecraft:coal_ore>);
 Carving.addVariation("ub_coal_ore", <atum:coal_ore>);

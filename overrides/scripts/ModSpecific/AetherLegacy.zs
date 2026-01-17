@@ -42,6 +42,9 @@ recipes.addShaped(<aether_legacy:golden_pendant>, [[<atum:linen_thread>,<atum:li
 //mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:milk>);
 //mods.thermalexpansion.Transposer.removeFillRecipe(<aether_legacy:skyroot_bucket:2>, <liquid:remedy>);
 
+// Fix incorrect metadata Holystone
+recipes.addShapeless(<aether_legacy:holystone>, [<aether_legacy:holystone:*>]);
+
 // Disable bugged slabs
 recipes.remove(<aether_legacy:skyroot_slab>);
 recipes.remove(<aether_legacy:carved_slab>);

@@ -85,6 +85,12 @@
             "type": "item",
             "io-type": "output",
             "item": "bewitchment:toe_of_frog",
+            "amount": 64
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bewitchment:toe_of_frog",
             "chance": 0.00001
         }
     ]

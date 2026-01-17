@@ -1,5 +1,7 @@
 // Author: Atricos, WaitingIdly
 
+import mods.chisel.Carving;
+
 print("STARTING Quark.zs");
 
 // Iron Rod
@@ -29,5 +31,17 @@ recipes.addShapeless(<quark:sandy_bricks>, [<minecraft:brick_block>,<ore:sand>])
 
 // Quark Wither Ash
 recipes.addShapeless(<quark:black_ash> * 8, [<mysticalagradditions:stuff:1>]);
+
+// Sandstone Carving
+<ore:sandstone>.add(<quark:sandstone_new>,<quark:sandstone_new:1>,<quark:sandstone_new:2>,<quark:sandstone_new:3>);
+Carving.addVariation("sandstoneyellow", <quark:sandstone_new>);
+Carving.addVariation("sandstoneyellow", <quark:sandstone_new:1>);
+Carving.addVariation("sandstonered", <quark:sandstone_new:2>);
+Carving.addVariation("sandstonered", <quark:sandstone_new:3>);
+
+Carving.addGroup("sandstonesoul");
+Carving.addVariation("sandstonesoul", <quark:soul_sandstone>);
+Carving.addVariation("sandstonesoul", <quark:soul_sandstone:1>);
+Carving.addVariation("sandstonesoul", <quark:soul_sandstone:2>);
 
 print("ENDING Quark.zs");

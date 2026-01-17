@@ -14,6 +14,9 @@ print("STARTING AbyssalCraft.zs");
 recipes.removeShaped(<abyssalcraft:ironp>, [[<ore:ingotIron>],[<ore:ingotIron>]]);
 recipes.addShapeless(<abyssalcraft:ironp>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1), <thermalfoundation:material:32>]);
 
+// Darklands Wood - used for oreexcavation purposes
+<ore:logWood>.add(<abyssalcraft:dltlog2:12>);
+
 // Wooden Crate
 recipes.remove(<abyssalcraft:crate>);
 recipes.addShaped(<abyssalcraft:crate>, [[<ore:logWood>,<ore:plankWood>,<ore:logWood>],[<ore:plankWood>,<ore:chestWood>,<ore:plankWood>],[<ore:logWood>,<ore:plankWood>,<ore:logWood>]]);
@@ -406,7 +409,7 @@ mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<immersiveengineering:
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<enderio:item_material:23>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<actuallyadditions:item_dust:6>);
 mods.abyssalcraft.Crystallizer.removeCrystallizationInput(<bloodmagic:component:21>);
-mods.abyssalcraft.Crystallizer.addSingleCrystallization(<actuallyadditions:block_misc:5>, <abyssalcraft:crystalcluster:3>, 0.9);
+mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:storage_resource>, <abyssalcraft:crystalcluster:3>, 0.9);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<minecraft:blaze_rod>, <abyssalcraft:crystalshard:15> * 20, 0.5);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<botania:blazeblock>, <abyssalcraft:crystal:15> * 20, 1.0);
 mods.abyssalcraft.Crystallizer.addSingleCrystallization(<thermalfoundation:material:129>, <abyssalcraft:crystal:16>, 0.1);

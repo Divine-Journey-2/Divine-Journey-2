@@ -173,10 +173,10 @@ jobs:
         run: |
           echo "[Changelog](https://github.com/${{ github.repository }}/blob/${{ inputs.version }}/changelog/Divine_Journey_${{ inputs.version }}.md)" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.build.outputs.client_name }}" != '' ]; then
-            echo "Uploaded the client zip file with the name ${{ steps.build.outputs.client_name }}.zip" >> $GITHUB_STEP_SUMMARY
+            echo "Uploaded the client zip file with the name `${{ steps.build.outputs.client_name }}.zip`" >> $GITHUB_STEP_SUMMARY
           fi
           if [ "${{ steps.build.outputs.server_name }}" != '' ]; then
-            echo "Uploaded the server zip file with the name ${{ steps.build.outputs.server_name }}.zip" >> $GITHUB_STEP_SUMMARY
+            echo "Uploaded the server zip file with the name `${{ steps.build.outputs.server_name }}.zip`" >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "-----" >> $GITHUB_STEP_SUMMARY

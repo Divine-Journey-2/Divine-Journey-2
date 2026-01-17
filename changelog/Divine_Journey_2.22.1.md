@@ -1,0 +1,31 @@
+
+## Mod Modifications:
+
+- Update FermiumBooter 1.1.1 -> 1.4.1
+- Update Noisethreader 1.1.1 -> 1.1.2
+
+## Bugfixes:
+
+- Fix an uncommon crash when generating chunks in the Ocean (Noisethreader).
+- Remove typo'd items from the Omniwand config - the items were already present in non-typo'd form.
+- Fix the RFTools Syringe Recipe not displaying the proper tooltips.
+
+## Balance Adjustments:
+
+- Added Silver Ore smelting in the Immersive Engineering Arc Furnace.
+- Correct Copper and Nickel Ore smelting time in the Immersive Engineering Arc Furnace.
+
+## QoL Improvements:
+
+- Add a bunch of tooltips to various types of things for searchability.
+- Allow searching "##omniwand" to find everything that goes in the Omniwand.
+- Add a few more items to the Omniwand.
+- Reduce the default backup time from 2 hours to 30 minutes.
+
+## Text and Quest Updates:
+
+- Add a tooltip to the Omniwand suggesting searching in JEI for what items can be added.
+
+## Miscellaneous Changes:
+
+- Added compatibility between the custom Hand Framing Tool and the not-installed mod Fluid Drawers.

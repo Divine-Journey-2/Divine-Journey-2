@@ -23,6 +23,9 @@ recipes.addShaped("pyre", <roots:pyre>, [[null,<ore:rootsBark>,null],[<ore:roots
 // Charred Stone
 Pyre.addRecipe("charred_stone", <contenttweaker:charred_stone> * 3, [<ore:stone>,<ore:stone>,<ore:stone>,<roots:terra_moss>,<ore:rootsBark>]);
 
+// Knife Oredict
+<ore:rootsMossKnife>.add(<roots:wood_knife>,<roots:stone_knife>,<roots:iron_knife>,<roots:diamond_knife>,<roots:gold_knife>,<mysticalworld:amethyst_knife>,<roots:runed_dagger>);
+
 // Mortar
 recipes.remove(<roots:mortar>);
 recipes.addShaped("mortar", <roots:mortar>, [[<contenttweaker:charred_stone>,null,<contenttweaker:charred_stone>],[<contenttweaker:charred_stone>,<minecraft:paper>,<contenttweaker:charred_stone>],[null,<contenttweaker:charred_stone>,null]]);

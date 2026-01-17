@@ -19,6 +19,7 @@ from threading import Thread
 import json
 import os
 import shutil
+import urllib
 import subprocess
 import requests
 from requests.adapters import HTTPAdapter
@@ -108,12 +109,12 @@ symLinkDirs = [
 filesToUpdateVersionClient = [
     "manifest.json",
     "overrides/config/CustomMainMenu/mainmenu.json",
-    "overrides/config/mputils/addons/mpbasic/mpbasic.cfg"
+    "overrides/config/endermodpacktweaks/modpack.cfg"
 ]
 filesToUpdateVersionServer = [
     "manifest.json",
     "config/CustomMainMenu/mainmenu.json",
-    "config/mputils/addons/mpbasic/mpbasic.cfg"
+    "config/endermodpacktweaks/modpack.cfg",
 ]
 
 def print_argument_settings(args: dict):
@@ -136,8 +137,11 @@ def getApiKey(key: str) -> str:
         key = os.getenv("CFAPIKEY")
 
     if (key == None):
-        with open(f"{basePath}/buildtools/API-KEY", "r") as file:
-            key = file.readline().replace("\n", "")
+        try:
+            with open(f"{basePath}/buildtools/API-KEY", "r") as file:
+                key = file.readline().strip()
+        except:
+            None
 
     return key
 
@@ -259,6 +263,7 @@ def downloadMod(downloadedMods: list, location: str, mod, retries: int):
     response = access.get(mod)
 
     link = mod.split("/")[-1]
+    link = urllib.parse.unquote(link)
     with open(f"{cache}/mods/{location}/{link}", "w+b") as jar:
         jar.write(response.content)
         print(f"{mod} downloaded")
@@ -273,9 +278,6 @@ def downloadModList(modlistServer: list, modlistClient: list, retries: int):
     shutil.rmtree(f"{cache}/mods/server", ignore_errors=True)
     os.makedirs(f"{cache}/mods/client", exist_ok=True)
     os.makedirs(f"{cache}/mods/server", exist_ok=True)
-
-    # Copy mod overrides into cache
-    shutil.copytree(f"{basePath}/overrides/mods", f"{cache}/mods/server", dirs_exist_ok=True)
 
     # Download all mods to a location based on their list to the cache
     threads = []
@@ -312,7 +314,7 @@ def getGitTagVersion() -> str:
 def getStandardName(name: str, version: str) -> str:
     """Get the standard name based on the args"""
     name = name.replace(' ', '_')
-    version = version.replace('2.', '.')
+    version = version.replace('2.', '.', 1)
     return f"{name}{version}"
 
 

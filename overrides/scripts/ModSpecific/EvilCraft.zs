@@ -251,6 +251,9 @@ mods.evilcraft.BloodInfuser.addRecipe(<evilcraft:vengeance_essence:1>, <liquid:e
 recipes.remove(<evilcraft:bucket_eternal_water>);
 recipes.addShaped(<evilcraft:bucket_eternal_water>, [[null,<contenttweaker:aquasalus>,null],[<evilcraft:dark_power_gem_block>,<evilcraft:weather_container:2>,<evilcraft:dark_power_gem_block>],[null,<evilcraft:dark_power_gem_block>,null]]);
 
+// Environmental Accumulator
+<block:evilcraft:environmental_accumulator>.block.definition.setHarvestLevel("pickaxe", 5);
+
 // Sanguinary Environmental Accumulator
 recipes.remove(<evilcraft:sanguinary_environmental_accumulator>);
 mods.extendedcrafting.TableCrafting.addShaped(<evilcraft:sanguinary_environmental_accumulator>,
