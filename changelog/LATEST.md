@@ -56,6 +56,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Baubles not respecting the Curse of Binding and Vanishing (Bubbles).
 - Fix Omniwand items behaving incorrectly due to being transformed from the Morphing Tool.
 - Fix custom DJ2 logic for Silk Touch on some Underground Biomes ores breaking, and no longer dropping the base block.
+- Fix some Aether Legacy logs not being valid for Livingwood transformation.
 
 ## Balance Adjustments:
 
