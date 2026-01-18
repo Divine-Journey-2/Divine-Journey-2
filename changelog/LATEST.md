@@ -80,6 +80,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add information about holding Shift increasing transfer rate of XP drain.
 - Remove the custom enchantment descriptions in English for OpenBlocks enchantments, as they are part of OpenBlocks Reopened.
 - Add the Scheduling Press as a choice reward from the normal press quest.
+- Add the growth_accelerator tag to EvilCraft Blood Potash.
 
 ## Texture Transformations:
 
