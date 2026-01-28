@@ -64,6 +64,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Disable Roots Elemental Soil Redstone ticking (Universal Tweaks).
 - Add Tinkers' Construct Kamas to the toolShears oredict, allowing them to be used in the EnderIO Slice'N'Splice.
 - Rebalance Extra Utilities 2 Grid Power Generators to be cleaner and achieve a similar effect while generating less confusion.
+- Add more fertilizer options to the EnderIO Farming Station.
 
 ## QoL Improvements:
 
