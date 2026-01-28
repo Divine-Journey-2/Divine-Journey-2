@@ -420,6 +420,28 @@ recipes.addShapedMirrored(<enderio:block_slice_and_splice>, [[<enderio:item_allo
 // Slice'n'Splice Tools
 <ore:toolShears>.add(<tconstruct:kama:*>);
 
+// Farming Station Tools
+<ore:toolHoe>.add(<erebus:jade_paxel:*>);
+<ore:toolHoe>.add(<mysticalagradditions:inferium_paxel:*>);
+<ore:toolHoe>.add(<mysticalagradditions:prudentium_paxel:*>);
+<ore:toolHoe>.add(<mysticalagradditions:intermedium_paxel:*>);
+<ore:toolHoe>.add(<mysticalagradditions:superium_paxel:*>);
+<ore:toolHoe>.add(<mysticalagradditions:supremium_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:wooden_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:stone_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:iron_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:gold_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:diamond_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:emerald_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:obsidian_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:quartz_paxel:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_red:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_blue:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_light_blue:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_black:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_green:*>);
+<ore:toolHoe>.add(<actuallyadditions:item_paxel_crystal_white:*>);
+
 // Farming Station
 recipes.remove(<enderio:block_farm_station>);
 recipes.addShapedMirrored(<enderio:block_farm_station>, [[<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>,<enderio:item_alloy_ingot:7>],[<divinerpg:arlemite_hoe>,<enderio:item_material:53>,<divinerpg:rupee_hoe>],[<enderio:item_material:12>,<enderio:item_material:42>,<enderio:item_material:12>]]);

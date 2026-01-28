@@ -78,6 +78,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make holding Shift while standing above an OpenBlocks XP Drain to increase the speed of draining (OpenBlocks Reopened).
 - Make the OpenBlocks Hang Glider only bne affected by weather if it is exposed to the weather (OpenBlocks Reopened).
 - Migrate Morphing Tool items to Omniwand items.
+- Make more items that can be used as hoes valid to be used as hoes in the EnderIO Farming Station.
 
 ## Text and Quest Updates:
 
