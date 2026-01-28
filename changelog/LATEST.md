@@ -57,11 +57,13 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Omniwand items behaving incorrectly due to being transformed from the Morphing Tool.
 - Fix custom DJ2 logic for Silk Touch on some Underground Biomes ores breaking, and no longer dropping the base block.
 - Fix some Aether Legacy logs not being valid for Livingwood transformation.
+- Fix Extra Utilities 2 Grid Power Generators breaking when the language is changed.
 
 ## Balance Adjustments:
 
 - Disable Roots Elemental Soil Redstone ticking (Universal Tweaks).
 - Add Tinkers' Construct Kamas to the toolShears oredict, allowing them to be used in the EnderIO Slice'N'Splice.
+- Rebalance Extra Utilities 2 Grid Power Generators to be cleaner and achieve a similar effect while generating less confusion.
 
 ## QoL Improvements:
 
@@ -82,6 +84,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the custom enchantment descriptions in English for OpenBlocks enchantments, as they are part of OpenBlocks Reopened.
 - Add the Scheduling Press as a choice reward from the normal press quest.
 - Add the growth_accelerator tag to EvilCraft Blood Potash.
+- Update quests for the various Extra Utilities 2 Grid Power Generators to reflect their new balance.
 
 ## Texture Transformations:
 
