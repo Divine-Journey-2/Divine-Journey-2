@@ -58,6 +58,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix custom DJ2 logic for Silk Touch on some Underground Biomes ores breaking, and no longer dropping the base block.
 - Fix some Aether Legacy logs not being valid for Livingwood transformation.
 - Fix Extra Utilities 2 Grid Power Generators breaking when the language is changed.
+- Fix some Roots crops not being planted by the EnderIO Farming Station.
 
 ## Balance Adjustments:
 
