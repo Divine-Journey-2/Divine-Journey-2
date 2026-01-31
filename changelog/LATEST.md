@@ -23,6 +23,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove VillagerTradingBan 2.0.0.6
 - Remove Astral Level Nerf 1.0.1
 - Remove Too Many Efficiency Losses 1.4.0.0
+- Remove Mystical Agriculture Tiered Crystals 1.0.1
 
 ## Bugfixes:
 

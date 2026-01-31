@@ -18,6 +18,7 @@ class Fixer {
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new OmniwandConversion())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new WirelessAE2Terminal())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new ActuallyBaubles())
+        fixer.registerFix(FixTypes.ITEM_INSTANCE, new MysticalAgricultureTieredCrystals())
         log "registered fixes for $LATEST"
     }
 }

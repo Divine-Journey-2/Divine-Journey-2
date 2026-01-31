@@ -950,12 +950,6 @@
       "required": true
     },
     {
-      "slug": "mystical-agriculture-tiered-crystals",
-      "projectID": 299045,
-      "fileID": 2650681,
-      "required": true
-    },
-    {
       "slug": "simple-trophies",
       "projectID": 301310,
       "fileID": 2863053,

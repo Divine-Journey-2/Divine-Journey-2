@@ -837,13 +837,6 @@
     "curseForgeHash": 2810798110,
     "modrinthHash": "a1e5d5c197dae3e92637cafb8cd996185191165b"
   },
-  "matc-1.0.1-hotfix.jar": {
-    "jarName": "matc-1.0.1-hotfix.jar",
-    "modId": "matc",
-    "version": "1.0.1-hotfix",
-    "curseForgeHash": 4269727081,
-    "modrinthHash": "1502157b947d16815d5777326f8c58ff596d3c7d"
-  },
   "mcjtylib-1.12-3.5.4.jar": {
     "jarName": "mcjtylib-1.12-3.5.4.jar",
     "modId": "mcjtylib_ng",

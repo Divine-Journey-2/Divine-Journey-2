@@ -1,6 +1,6 @@
 # Divine Journey 2 Modlist
 
-Total Mods: 225
+Total Mods: 224
 
 ## Type Key
 
@@ -10,7 +10,7 @@ Total Mods: 225
 | :toolbox:     | 42    | Utility           | Typically visual or minor improvements                                                                                 |
 | :gear:        | 27    | Development       | Basically never interacted with by a player                                                                            |
 | :gem:         | 36    | Primary           | One of the main mods in the pack, frequently interacted with and makes up a substantial part of progression on its own |
-| :ring:        | 39    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
+| :ring:        | 38    | Addon             | Adds addition features to a Primary or Utility Mod, sometimes containing significant content of its own right          |
 | :diamonds:    | 11    | Minor             | A standalone mod that adds some features, but doesn't make up a substantial part of progression                        |
 | :bug:         | 9     | Bugfix/Performace | Solely fixes one or multiple bugs or performance issues present in Vanilla or another mod                              |
 | :eyes:        | 5     | Visual            | Improves the visual options of the pack                                                                                |
@@ -162,7 +162,6 @@ Mods are required on both client-side and server-side unless otherwise noted.
 | :books:       | [MTLib](https://www.curseforge.com/minecraft/mc-mods/mtlib)                                                                           | [Jaredlll08](https://curseforge.com/members/Jaredlll08)                               |                    |
 | :ring:        | [MystAgrad Cloche Compat](https://www.curseforge.com/minecraft/mc-mods/mystagrad-cloche-compat)                                       | [senilepenguin](https://curseforge.com/members/senilepenguin)                         |                    |
 | :ring:        | [Mystical Agradditions](https://www.curseforge.com/minecraft/mc-mods/mystical-agradditions)                                           | [BlakeBr0](https://curseforge.com/members/BlakeBr0)                                   |                    |
-| :ring:        | [Mystical Agriculture Tiered Crystals](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture-tiered-crystals)             | [Electrolyte](https://curseforge.com/members/Electrolyte)                             |                    |
 | :gem:         | [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)                                             | [BlakeBr0](https://curseforge.com/members/BlakeBr0)                                   |                    |
 | :books:       | [Mystical World](https://www.curseforge.com/minecraft/mc-mods/mystical-world)                                                         | [Noobanidus](https://curseforge.com/members/Noobanidus)                               |                    |
 | :books:       | [MysticalLib](https://www.curseforge.com/minecraft/mc-mods/mysticallib)                                                               | [Noobanidus](https://curseforge.com/members/Noobanidus)                               |                    |
