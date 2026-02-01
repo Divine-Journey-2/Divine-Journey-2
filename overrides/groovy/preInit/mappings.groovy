@@ -12,11 +12,12 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
     def type = event.getGenericType()
     if (type == Item) {
         event.getAllMappings().forEach {
-            if (it.key.toString() == OmniwandConversion.MORPHTOOL) it.ignore()
-            else if (it.key.toString() in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
-            else if (it.key.toString() in StorageDrawersExtras.REMOVED_IDS) it.ignore()
-            else if (it.key.toString() in MysticalAgricultureTieredCrystals.ALL_ITEMS) it.ignore()
-            else if (ActuallyBaubles.CONVERSION_MAP.containsKey(it.key.toString())) it.ignore()
+            def id = it.key.toString()
+            if (id in OmniwandConversion.ALL_ITEMS) it.ignore()
+            else if (id in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
+            else if (id in StorageDrawersExtras.ALL_ITEMS) it.ignore()
+            else if (id in MysticalAgricultureTieredCrystals.ALL_ITEMS) it.ignore()
+            else if (ActuallyBaubles.CONVERSION_MAP.containsKey(id)) it.ignore()
         }
     } else if (type == Block) {
         event.getAllMappings().forEach {

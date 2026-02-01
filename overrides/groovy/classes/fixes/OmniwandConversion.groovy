@@ -5,8 +5,12 @@ import net.minecraft.nbt.NBTTagCompound
 
 class OmniwandConversion implements IFixableData {
 
-    public static def MORPHTOOL = 'morphtool:tool'
+    private static def MORPHTOOL = 'morphtool:tool'
     private static def OMNIWAND = 'omniwand:wand'
+    private static def MORPH_DATA = 'morphtool:data'
+    private static def OMNI_DATA = 'omniwand:data'
+
+    public static def ALL_ITEMS = [MORPHTOOL]
 
     int getFixVersion() {
         Fixer.VERSION23_0
@@ -22,23 +26,26 @@ class OmniwandConversion implements IFixableData {
     }
 
     NBTTagCompound fixTagCompound(NBTTagCompound compound) {
-        if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == MORPHTOOL) {
-            // turn morphing tools into omniwands, fix nbt issues
-            compound.setString('id', OMNIWAND)
-            compound.setTag('tag', new NBTTagCompound().tap {
-                if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey('tag', NbtHelper.COMPOUND)) {
-                    def data = compound.getCompoundTag('tag').getCompoundTag('morphtool:data')
-                    // this is the data for the items
-                    data.each { removeMorphToolData it }
-                    setTag('omniwand:data', data)
+        if (compound.hasKey('id', NbtHelper.STRING)) {
+            def id = compound.getString('id')
+            if (id == MORPHTOOL) {
+                // turn morphing tools into omniwands, fix nbt issues
+                compound.setString('id', OMNIWAND)
+                compound.setTag('tag', new NBTTagCompound().tap {
+                    if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey(MORPH_DATA, NbtHelper.COMPOUND)) {
+                        def data = compound.getCompoundTag('tag').getCompoundTag(MORPH_DATA)
+                        // this is the data for the items
+                        data.getKeySet().each { removeMorphToolData data.getTag(it) }
+                        setTag(OMNI_DATA, data)
+                    }
+                    setBoolean('omniwand:auto', true)
+                })
+            } else if (id == OMNIWAND) {
+                // fix nbt for omniwands that have already been converted
+                if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey(OMNI_DATA, NbtHelper.COMPOUND)) {
+                    def data = compound.getCompoundTag('tag').getCompoundTag(OMNI_DATA)
+                    data.getKeySet().each { removeMorphToolData data.getTag(it) }
                 }
-                setBoolean('omniwand:auto', true)
-            })
-        } else if (compound.hasKey('id', NbtHelper.STRING) && compound.getString('id') == OMNIWAND) {
-            // fix nbt for omniwands that have already been converted
-            if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey('tag', NbtHelper.COMPOUND)) {
-                def data = compound.getCompoundTag('tag').getCompoundTag('omniwand:data')
-                data.each { removeMorphToolData it }
             }
         }
         compound
