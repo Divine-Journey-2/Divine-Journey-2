@@ -1,7 +1,6 @@
 package classes.fixes
 
 import net.minecraft.util.datafix.IFixableData
-import net.minecraft.nbt.NBTTagCompound
 
 class ActuallyBaubles implements IFixableData {
 

@@ -1,7 +1,6 @@
 package classes.fixes
 
 import net.minecraft.util.datafix.IFixableData
-import net.minecraft.nbt.NBTTagCompound
 
 class OmniwandConversion implements IFixableData {
 
@@ -31,7 +30,7 @@ class OmniwandConversion implements IFixableData {
             if (id == MORPHTOOL) {
                 // turn morphing tools into omniwands, fix nbt issues
                 compound.setString('id', OMNIWAND)
-                compound.setTag('tag', new NBTTagCompound().tap {
+                compound.setTag('tag', nbt().tap {
                     if (compound.hasKey('tag', NbtHelper.COMPOUND) && compound.getCompoundTag('tag').hasKey(MORPH_DATA, NbtHelper.COMPOUND)) {
                         def data = compound.getCompoundTag('tag').getCompoundTag(MORPH_DATA)
                         // this is the data for the items

@@ -26,7 +26,7 @@ class NbtHelper {
 
     /// generate a default itemstack representation
     static NBTTagCompound itemStackRep(String id, int amount = 1, int damage = 0, NBTTagCompound tag = null) {
-        def stack = new NBTTagCompound()
+        def stack = nbt()
         stack.setString('id', id)
         stack.setByte('Count', amount as byte)
         stack.setShort('Damage', damage as short)
@@ -38,12 +38,12 @@ class NbtHelper {
     /// which can be right-clicked to extract all contained stacks.
     /// useful for when a single itemstack being removed is effectively 2 itemstacks
     static NBTTagCompound clusterStacks(List<NBTTagCompound> stacks) {
-        itemStackRep('avaritia:matter_cluster', 1, 0, new NBTTagCompound().tap {
-            setTag('clusteritems', new NBTTagCompound().tap {
+        itemStackRep('avaritia:matter_cluster', 1, 0, nbt().tap {
+            setTag('clusteritems', nbt().tap {
                 setInteger('total', stacks.size())
                 setTag('items', new NBTTagList().tap {
                     stacks.each { e ->
-                        appendTag(new NBTTagCompound().tap {
+                        appendTag(nbt().tap {
                             setInteger('count', 1)
                             setTag('item', e)
                         })
