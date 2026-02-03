@@ -88,6 +88,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Migrate Morphing Tool items to Omniwand items.
 - Make more items that can be used as hoes valid to be used as hoes in the EnderIO Farming Station.
 - Prevent the Repellant Enchantment from applying to bosses.
+- Add a "configuration" tag for items that can copy and paste settings.
 
 ## Text and Quest Updates:
 
