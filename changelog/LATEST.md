@@ -72,6 +72,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Rebalance Extra Utilities 2 Grid Power Generators to be cleaner and achieve a similar effect while generating less confusion.
 - Add more fertilizer options to the EnderIO Farming Station.
 - Change the Roots Entity Summoning recipe for Ghasts to only require a single Ghast Tear.
+- Vastly increase the Extreme Reactors power capacity to 10 billion, allowing proper use of its power output increase.
 
 ## QoL Improvements:
 
