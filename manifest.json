@@ -448,7 +448,7 @@
     {
       "slug": "crafttweaker",
       "projectID": 239197,
-      "fileID": 6929088,
+      "fileID": 7406648,
       "required": true
     },
     {
@@ -1146,7 +1146,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 7382928,
+      "fileID": 7498338,
       "required": true
     },
     {
@@ -1293,7 +1293,7 @@
     {
       "slug": "omniwand",
       "projectID": 923677,
-      "fileID": 7319522,
+      "fileID": 7476868,
       "required": true
     },
     {
@@ -1341,7 +1341,7 @@
     {
       "slug": "noisethreader",
       "projectID": 1153744,
-      "fileID": 7313915,
+      "fileID": 7522969,
       "required": true
     },
     {
