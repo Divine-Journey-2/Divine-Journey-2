@@ -63,6 +63,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix some Roots crops not being planted by the EnderIO Farming Station.
 - Fix Extra Utilities 2 Magical Wood not being able to be crafted by all bookshelves.
 - Fix Immersive Engineering Squeezer recipes for EvilCraft erroring.
+- Fix the Vanishing Tinkers Construct Trait from being able to teleport mods that shouldn't move.
 
 ## Balance Adjustments:
 
@@ -84,6 +85,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make the OpenBlocks Hang Glider only bne affected by weather if it is exposed to the weather (OpenBlocks Reopened).
 - Migrate Morphing Tool items to Omniwand items.
 - Make more items that can be used as hoes valid to be used as hoes in the EnderIO Farming Station.
+- Prevent the Repellant Enchantment from applying to bosses.
 
 ## Text and Quest Updates:
 
