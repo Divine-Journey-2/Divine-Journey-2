@@ -62,6 +62,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Extra Utilities 2 Grid Power Generators breaking when the language is changed.
 - Fix some Roots crops not being planted by the EnderIO Farming Station.
 - Fix Extra Utilities 2 Magical Wood not being able to be crafted by all bookshelves.
+- Fix Immersive Engineering Squeezer recipes for EvilCraft erroring.
 
 ## Balance Adjustments:
 
