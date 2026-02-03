@@ -208,6 +208,9 @@ key_mekanism.key.feetMode:0:NONE
 key_mekanism.key.voice:0:NONE
 key_Toggle Farting:0:NONE
 key_Open Exalted Crafter:0:NONE
+key_keybind.groovyscript.reload:0:NONE
+key_keybind.groovyscript.quick_reload:0:NONE
+key_keybind.groovyscript.copy:0:NONE
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT
 key_key.integrateddynamics.logic_programmer_open_rename:19:ALT
 key_invtweaks.key.sort:74:NONE
