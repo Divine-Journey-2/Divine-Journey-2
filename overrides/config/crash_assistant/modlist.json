@@ -996,12 +996,12 @@
     "curseForgeHash": 195298617,
     "modrinthHash": "2c553879a5399c0ecbd6d66ab2f2295ecc8deb89"
   },
-  "natura-legacy-1.12.2-4.4.0.jar": {
-    "jarName": "natura-legacy-1.12.2-4.4.0.jar",
+  "natura-legacy-1.12.2-4.4.1.jar": {
+    "jarName": "natura-legacy-1.12.2-4.4.1.jar",
     "modId": "natura",
-    "version": "4.4.0",
-    "curseForgeHash": 3965769784,
-    "modrinthHash": "efb2328fa9252564fd5bb6566e2d3a52de6d6784"
+    "version": "4.4.1",
+    "curseForgeHash": 1590985989,
+    "modrinthHash": "97ce38cf48f69fbac9528116223ba76f6dbe4b7b"
   },
   "NaturesCompass-1.12.2-1.8.5.jar": {
     "jarName": "NaturesCompass-1.12.2-1.8.5.jar",

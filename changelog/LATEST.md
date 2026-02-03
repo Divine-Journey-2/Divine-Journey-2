@@ -9,6 +9,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Extended Crafting: Nomifactory Edition 1.7.0.6 -> 1.7.0.7
 - Update Forgelin Continuous 2.1.20.0 -> 2.3.0.0
 - Update LootTweaker 0.3.1 -> 0.4.1
+- Update Natura Legacy 4.4.0 -> 4.4.1
 - Update NoiseThreader 1.1.2 -> 1.1.3
 - Update Omniwand 2.0.1 -> 2.0.4
 - Update ThaumcraftFix 1.1.8 -> 1.1.9
@@ -64,6 +65,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Extra Utilities 2 Magical Wood not being able to be crafted by all bookshelves.
 - Fix Immersive Engineering Squeezer recipes for EvilCraft erroring.
 - Fix the Vanishing Tinkers Construct Trait from being able to teleport mods that shouldn't move.
+- Fix Natura Legacy Thornvines not spawning in the Nether (Natura Legacy).
 
 ## Balance Adjustments:
 
