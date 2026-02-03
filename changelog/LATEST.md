@@ -73,6 +73,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add more fertilizer options to the EnderIO Farming Station.
 - Change the Roots Entity Summoning recipe for Ghasts to only require a single Ghast Tear.
 - Vastly increase the Extreme Reactors power capacity to 10 billion, allowing proper use of its power output increase.
+- Add a new Immersive Engineering Excavator vein on Venus for Venus Volcanic Rock.
 
 ## QoL Improvements:
 
