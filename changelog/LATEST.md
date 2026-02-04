@@ -90,7 +90,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Migrate Morphing Tool items to Omniwand items.
 - Make more items that can be used as hoes valid to be used as hoes in the EnderIO Farming Station.
 - Prevent the Repellant Enchantment from applying to bosses.
-- Add a "configuration" tag for items that can copy and paste settings.
 
 ## Text and Quest Updates:
 
@@ -100,6 +99,8 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add the Scheduling Press as a choice reward from the normal press quest.
 - Add the growth_accelerator tag to EvilCraft Blood Potash.
 - Update quests for the various Extra Utilities 2 Grid Power Generators to reflect their new balance.
+- Add a "configuration" tag for items that can copy and paste settings.
+- Add various ProjectE items to their respective tags.
 
 ## Texture Transformations:
 
