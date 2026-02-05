@@ -15,10 +15,10 @@ class Fixer {
     static {
         def fmlFixer = FMLCommonHandler.instance().getDataFixer()
         def fixer = fmlFixer.init(getPackId(), LATEST)
-        fixer.registerFix(FixTypes.ITEM_INSTANCE, new OmniwandConversion())
-        fixer.registerFix(FixTypes.ITEM_INSTANCE, new WirelessAE2Terminal())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new ActuallyBaubles())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new MysticalAgricultureTieredCrystals())
+        fixer.registerFix(FixTypes.ITEM_INSTANCE, new OmniwandConversion())
+        fixer.registerFix(FixTypes.ITEM_INSTANCE, new WirelessAE2Terminal())
         log "registered fixes for $LATEST"
     }
 }

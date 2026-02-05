@@ -1,11 +1,11 @@
 
 import net.minecraftforge.event.RegistryEvent
 import crazypants.enderio.api.farm.IFarmerJoe
-import classes.fixes.OmniwandConversion
-import classes.fixes.WirelessAE2Terminal
-import classes.fixes.StorageDrawersExtras
 import classes.fixes.ActuallyBaubles
 import classes.fixes.MysticalAgricultureTieredCrystals
+import classes.fixes.OmniwandConversion
+import classes.fixes.StorageDrawersExtras
+import classes.fixes.WirelessAE2Terminal
 
 // generic events aren't split properly, so we need to check that manually
 event_manager.listen { RegistryEvent.MissingMappings event ->
@@ -13,11 +13,11 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
     if (type == Item) {
         event.getAllMappings().forEach {
             def id = it.key.toString()
-            if (id in OmniwandConversion.ALL_ITEMS) it.ignore()
-            else if (id in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
-            else if (id in StorageDrawersExtras.ALL_ITEMS) it.ignore()
+            if (id in ActuallyBaubles.CONVERSION_MAP) it.ignore()
             else if (id in MysticalAgricultureTieredCrystals.ALL_ITEMS) it.ignore()
-            else if (ActuallyBaubles.CONVERSION_MAP.containsKey(id)) it.ignore()
+            else if (id in OmniwandConversion.ALL_ITEMS) it.ignore()
+            else if (id in StorageDrawersExtras.ALL_ITEMS) it.ignore()
+            else if (id in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
         }
     } else if (type == Block) {
         event.getAllMappings().forEach {
