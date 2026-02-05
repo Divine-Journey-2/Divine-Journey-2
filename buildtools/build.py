@@ -96,12 +96,14 @@ deleteConfigFiles = [
 serverCopyDirs = [
     "scripts",
     "config",
+    "groovy",
     "structures"
 ]
 # Directories that should be symlinked when creating a mmc-compatible instance
 symLinkDirs = [
     "config",
     "resources",
+    "groovy",
     "scripts",
     "structures"
 ]
