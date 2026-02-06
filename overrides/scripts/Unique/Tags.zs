@@ -44,7 +44,7 @@ omniwand: [<abyssalcraft:gatewaykey>,<abyssalcraft:gatewaykeydl>,<abyssalcraft:g
 
 configuration: [<enderio:item_conduit_probe>,<uberconduitprobe:uber_conduit_probe_item>,<appliedenergistics2:memory_card>,<thermalfoundation:diagram_redprint>,],
 
-weather: [<enderio:block_weather_obelisk>,<evilcraft:environmental_accumulator>,<evilcraft:sanguinary_environmental_accumulator>,<draconicevolution:celestial_manipulator>,<projecte:item.pe_volcanite_amulet>,<projecte:item.pe_evertide_amulet>,],
+weather: [<enderio:block_weather_obelisk>,<bloodmagic:ritual_controller:1>,<evilcraft:environmental_accumulator>,<evilcraft:sanguinary_environmental_accumulator>,<draconicevolution:celestial_manipulator>,<projecte:item.pe_volcanite_amulet>,<projecte:item.pe_evertide_amulet>,],
 
 time: [<minecraft:bed:*>,<draconicevolution:celestial_manipulator>,<bloodmagic:ritual_controller:1>,<aether_legacy:sun_altar>,<astralsorcery:blockcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.lucerna", crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}, collectorType: 0}}),<astralsorcery:blockcelestialcollectorcrystal>.withTag({astralsorcery: {constellationName: "astralsorcery.constellation.lucerna", crystalProperties: {collectiveCapability: 100, size: 900, fract: 0, purity: 100, sizeOverride: -1}, collectorType: 1}}),<aether_legacy:skyroot_bed_item>,<totemic:tipi>,],
 
