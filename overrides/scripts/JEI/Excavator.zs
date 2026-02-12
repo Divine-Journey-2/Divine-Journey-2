@@ -225,6 +225,7 @@ addExcavator("Asteroids Illemite", 25, ["oreIlmenite", "oreAsteroidsAluminum"], 
 addExcavator("Asteroids Iron", 25, ["oreAsteroidsIron"], [1.0], [-30]);
 addExcavator("Asteroids Aluminum", 25, ["oreAsteroidsAluminum", "oreIlmenite"], [0.75, 0.25], [-30]);
 
+addExcavator("Venus Rock", 25, ["blockVenusVolcanicRock","blockVenusPumice"], [0.8, 0.2], [-31]);
 addExcavator("Venus Solar", 25, ["oreSolar", "blockVenusVolcanicRock"], [0.8, 0.2], [-31]);
 addExcavator("Venus Copper", 25, ["oreVenusCopper", "blockVenusVolcanicRock", "blockVenusPumice"], [0.8, 0.15, 0.05], [-31]);
 addExcavator("Venus Aluminum", 25, ["oreVenusAluminum", "oreVenusTin", "blockVenusVolcanicRock"], [0.7, 0.25, 0.05], [-31]);

@@ -638,37 +638,56 @@ for i in 0 to 16 {
 }
 
 // Creative Energy Cube
+val ultimate_induction_cell = <mekanism:basicblock2:3>.withTag({tier: 3}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 3;
+});
+
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:energycube>.withTag({tier: 4, mekData: {energyStored: 1.7976931348623157E308}}),
 [[<alchemistry:ingot:108>, <plustic:osgloglasblock>, <alchemistry:ingot:100>, <plustic:osgloglasblock>, <alchemistry:ingot:108>],
-[<plustic:osgloglasblock>, <mekanism:basicblock2:3>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 3}), <plustic:osgloglasblock>],
-[<alchemistry:ingot:100>, <mekanism:basicblock2:3>.withTag({tier: 3}), <immersiveengineering:metal_device0:3>, <mekanism:basicblock2:3>.withTag({tier: 3}), <alchemistry:ingot:100>],
-[<plustic:osgloglasblock>, <mekanism:basicblock2:3>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 3}), <mekanism:basicblock2:3>.withTag({tier: 3}), <plustic:osgloglasblock>],
+[<plustic:osgloglasblock>, ultimate_induction_cell, ultimate_induction_cell, ultimate_induction_cell, <plustic:osgloglasblock>],
+[<alchemistry:ingot:100>, ultimate_induction_cell, <immersiveengineering:metal_device0:3>, ultimate_induction_cell, <alchemistry:ingot:100>],
+[<plustic:osgloglasblock>, ultimate_induction_cell, ultimate_induction_cell, ultimate_induction_cell, <plustic:osgloglasblock>],
 [<alchemistry:ingot:108>, <plustic:osgloglasblock>, <alchemistry:ingot:100>, <plustic:osgloglasblock>, <alchemistry:ingot:108>]]);
 
 // Creative Fluid Tank
+val ultimate_fluid_tank = <mekanism:machineblock2:11>.withTag({tier: 3}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 3;
+});
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:machineblock2:11>.withTag({tier: 4}),
-[[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>],
-[<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>],
+[[<alchemistry:ingot:97>, ultimate_fluid_tank, <contenttweaker:clay>, ultimate_fluid_tank, <alchemistry:ingot:97>],
+[<alchemistry:ingot:73>, ultimate_fluid_tank, <bigreactors:reactorcreativecoolantport>, ultimate_fluid_tank, <alchemistry:ingot:73>],
 [<alchemistry:ingot:73>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:73>],
-[<alchemistry:ingot:73>, <mekanism:machineblock2:11>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:73>],
-[<alchemistry:ingot:97>, <mekanism:machineblock2:11>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:machineblock2:11>.withTag({tier: 3}), <alchemistry:ingot:97>]]);
+[<alchemistry:ingot:73>, ultimate_fluid_tank, <bigreactors:turbinecreativesteamgenerator>, ultimate_fluid_tank, <alchemistry:ingot:73>],
+[<alchemistry:ingot:97>, ultimate_fluid_tank, <contenttweaker:clay>, ultimate_fluid_tank, <alchemistry:ingot:97>]]);
 
 // Creative Gas Tank
+val ultimate_gas_tank = <mekanism:gastank>.withTag({tier: 3}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 3;
+});
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:gastank>.withTag({tier: 4}),
-[[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>],
-[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:reactorcreativecoolantport>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>],
+[[<alchemistry:ingot:62>, ultimate_gas_tank, <contenttweaker:clay>, ultimate_gas_tank, <alchemistry:ingot:62>],
+[<alchemistry:ingot:62>, ultimate_gas_tank, <bigreactors:reactorcreativecoolantport>, ultimate_gas_tank, <alchemistry:ingot:62>],
 [<alchemistry:ingot:62>, <galacticraftcore:infinite_oxygen>, <draconicevolution:creative_rf_source>, <galacticraftcore:infinite_oxygen>, <alchemistry:ingot:62>],
-[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <bigreactors:turbinecreativesteamgenerator>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>],
-[<alchemistry:ingot:62>, <mekanism:gastank>.withTag({tier: 3}), <contenttweaker:clay>, <mekanism:gastank>.withTag({tier: 3}), <alchemistry:ingot:62>]]);
+[<alchemistry:ingot:62>, ultimate_gas_tank, <bigreactors:turbinecreativesteamgenerator>, ultimate_gas_tank, <alchemistry:ingot:62>],
+[<alchemistry:ingot:62>, ultimate_gas_tank, <contenttweaker:clay>, ultimate_gas_tank, <alchemistry:ingot:62>]]);
 
 // Creative Bin
+val creative_fluid_tank = <mekanism:machineblock2:11>.withTag({tier: 4}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 4;
+});
+val creative_gas_tank = <mekanism:gastank>.withTag({tier: 4}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 4;
+});
+val ultimate_bin = <mekanism:basicblock:6>.withTag({tier: 3}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 3;
+});
 mods.extendedcrafting.TableCrafting.addShaped(<mekanism:basicblock:6>.withTag({tier: 4}),
 [[<alchemistry:ingot:116>, <alchemistry:ingot:116>, <alchemistry:ingot:116>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <alchemistry:ingot:116>, <alchemistry:ingot:116>, <alchemistry:ingot:116>],
-[<alchemistry:ingot:116>, <mekanism:gastank>.withTag({tier: 4}), <mekanism:gastank>.withTag({tier: 4}), <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <mekanism:gastank>.withTag({tier: 4}), <mekanism:gastank>.withTag({tier: 4}), <alchemistry:ingot:116>],
-[<alchemistry:ingot:116>, <mekanism:machineblock2:11>.withTag({tier: 4}), <mekanism:machineblock2:11>.withTag({tier: 4}), <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mekanism:machineblock2:11>.withTag({tier: 4}), <mekanism:machineblock2:11>.withTag({tier: 4}), <alchemistry:ingot:116>],
-[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
-[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <extrautils2:creativechest>, <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
-[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mekanism:basicblock:6>.withTag({tier: 3}), <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
+[<alchemistry:ingot:116>, creative_gas_tank, creative_gas_tank, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, <solarflux:solar_panel_neutronium>, creative_gas_tank, creative_gas_tank, <alchemistry:ingot:116>],
+[<alchemistry:ingot:116>, creative_fluid_tank, creative_fluid_tank, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, creative_fluid_tank, creative_fluid_tank, <alchemistry:ingot:116>],
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, ultimate_bin, ultimate_bin, ultimate_bin, <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, ultimate_bin, <extrautils2:creativechest>, ultimate_bin, <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
+[<bewitchment:blessed_stone>, <contenttweaker:neutronium_singularity>, <mysticalagradditions:stuff:69>, ultimate_bin, ultimate_bin, ultimate_bin, <mysticalagradditions:stuff:69>, <contenttweaker:neutronium_singularity>, <bewitchment:blessed_stone>],
 [<alchemistry:ingot:111>, <storagedrawers:upgrade_creative:1>, <storagedrawers:upgrade_creative:1>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <mysticalagradditions:stuff:69>, <storagedrawers:upgrade_creative:1>, <storagedrawers:upgrade_creative:1>, <alchemistry:ingot:111>],
 [<alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <contenttweaker:neutronium_singularity>, <alchemistry:ingot:111>, <alchemistry:ingot:111>, <alchemistry:ingot:111>],
 [<alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>, <alchemistry:ingot:49>]]);

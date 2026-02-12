@@ -43,6 +43,7 @@ val MASTER as IItemStack[] = [<mysticalagradditions:insanium>, <mysticalagraddit
 
 // Add essence upgrade recipes
 function addEssenceUpgradeRecipes(crystal as IItemStack, current as IItemStack[], next as IItemStack[]) {
+    recipes.addShaped(next[0], [[null,current[0],null],[current[0],<mysticalagriculture:master_infusion_crystal>,current[0]],[null,current[0],null]]);
     recipes.addShaped(next[0], [[null,current[0],null],[current[0],crystal.anyDamage().transformDamage(),current[0]],[null,current[0],null]]);
     recipes.addShaped(next[1], [[null,current[1],null],[current[1],crystal.anyDamage().marked("target").transformDamage(9),current[1]],[null,current[1],null]], function(out, ins, cInfo) { return (ins.target.maxDamage - ins.target.damage < 8) ? null : out;} as IRecipeFunction);
 }
@@ -52,36 +53,6 @@ addEssenceUpgradeRecipes(<contenttweaker:prudentiumcrystal>, PRUDENTIUM, INTERME
 addEssenceUpgradeRecipes(<contenttweaker:intermediumcrystal>, INTERMEDIUM, SUPERIUM);
 addEssenceUpgradeRecipes(<contenttweaker:superiumcrystal>, SUPERIUM, SUPREMIUM);
 addEssenceUpgradeRecipes(<contenttweaker:supremiumcrystal>, SUPREMIUM, MASTER);
-
-// Convert matc into crafttweaker
-<matc:inferiumcrystal>.addTooltip(game.localize("dj2.deprecated.deprecated.desc"));
-<matc:inferiumcrystal>.addTooltip(game.localize("dj2.deprecated.convert.desc"));
-<matc:prudentiumcrystal>.addTooltip(game.localize("dj2.deprecated.deprecated.desc"));
-<matc:prudentiumcrystal>.addTooltip(game.localize("dj2.deprecated.convert.desc"));
-<matc:intermediumcrystal>.addTooltip(game.localize("dj2.deprecated.deprecated.desc"));
-<matc:intermediumcrystal>.addTooltip(game.localize("dj2.deprecated.convert.desc"));
-<matc:superiumcrystal>.addTooltip(game.localize("dj2.deprecated.deprecated.desc"));
-<matc:superiumcrystal>.addTooltip(game.localize("dj2.deprecated.convert.desc"));
-<matc:supremiumcrystal>.addTooltip(game.localize("dj2.deprecated.deprecated.desc"));
-<matc:supremiumcrystal>.addTooltip(game.localize("dj2.deprecated.convert.desc"));
-
-recipes.remove(<matc:inferiumcrystal>);
-recipes.remove(<matc:prudentiumcrystal>);
-recipes.remove(<matc:intermediumcrystal>);
-recipes.remove(<matc:superiumcrystal>);
-recipes.remove(<matc:supremiumcrystal>);
-
-recipes.removeByRecipeName("matc:essence/prudentium");
-recipes.removeByRecipeName("matc:essence/intermedium");
-recipes.removeByRecipeName("matc:essence/superium");
-recipes.removeByRecipeName("matc:essence/supremium");
-recipes.removeByRecipeName("matc:essence/insanium");
-
-recipes.addHiddenShapeless("inferiumcrystal_conversion", <contenttweaker:inferiumcrystal>, [<matc:inferiumcrystal>.noReturn()]);
-recipes.addHiddenShapeless("prudentiumcrystal_conversion", <contenttweaker:prudentiumcrystal>, [<matc:prudentiumcrystal>.noReturn()]);
-recipes.addHiddenShapeless("intermediumcrystal_conversion", <contenttweaker:intermediumcrystal>, [<matc:intermediumcrystal>.noReturn()]);
-recipes.addHiddenShapeless("superiumcrystal_conversion", <contenttweaker:superiumcrystal>, [<matc:superiumcrystal>.noReturn()]);
-recipes.addHiddenShapeless("supremiumcrystal_conversion", <contenttweaker:supremiumcrystal>, [<matc:supremiumcrystal>.noReturn()]);
 
 // Inferium Infusion Crystal
 mods.extendedcrafting.EnderCrafting.addShaped(<contenttweaker:inferiumcrystal>, [[<mysticalagriculture:crafting:5>,<botania:manaresource:18>,<mysticalagriculture:crafting:5>],[<botania:manaresource:18>,<botania:manaresource:2>,<botania:manaresource:18>],[<mysticalagriculture:crafting:5>,<botania:manaresource:18>,<mysticalagriculture:crafting:5>]]);

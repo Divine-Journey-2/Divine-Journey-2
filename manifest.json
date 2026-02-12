@@ -198,12 +198,6 @@
       "clientOnly": true
     },
     {
-      "slug": "baubles",
-      "projectID": 227083,
-      "fileID": 2518667,
-      "required": true
-    },
-    {
       "slug": "thermal-dynamics",
       "projectID": 227443,
       "fileID": 2920505,
@@ -255,18 +249,6 @@
       "slug": "iron-chests",
       "projectID": 228756,
       "fileID": 2747935,
-      "required": true
-    },
-    {
-      "slug": "openmodslib",
-      "projectID": 228815,
-      "fileID": 2699055,
-      "required": true
-    },
-    {
-      "slug": "openblocks",
-      "projectID": 228816,
-      "fileID": 2699056,
       "required": true
     },
     {
@@ -466,7 +448,7 @@
     {
       "slug": "crafttweaker",
       "projectID": 239197,
-      "fileID": 5013567,
+      "fileID": 7406648,
       "required": true
     },
     {
@@ -520,27 +502,9 @@
       "required": true
     },
     {
-      "slug": "wireless-crafting-terminal",
-      "projectID": 244559,
-      "fileID": 2830252,
-      "required": true
-    },
-    {
-      "slug": "villagertradingban",
-      "projectID": 244930,
-      "fileID": 2571285,
-      "required": true
-    },
-    {
       "slug": "ender-storage-1-8",
       "projectID": 245174,
       "fileID": 2755787,
-      "required": true
-    },
-    {
-      "slug": "morph-o-tool",
-      "projectID": 245287,
-      "fileID": 2658176,
       "required": true
     },
     {
@@ -724,12 +688,6 @@
       "required": true
     },
     {
-      "slug": "storage-drawers-extras",
-      "projectID": 254879,
-      "fileID": 2443623,
-      "required": true
-    },
-    {
       "slug": "p455w0rds-library",
       "projectID": 255232,
       "fileID": 2830265,
@@ -738,7 +696,7 @@
     {
       "slug": "loottweaker",
       "projectID": 255257,
-      "fileID": 3507866,
+      "fileID": 5420240,
       "required": true
     },
     {
@@ -856,12 +814,6 @@
       "fileID": 2685984,
       "required": true,
       "clientOnly": true
-    },
-    {
-      "slug": "actually-baubles",
-      "projectID": 273430,
-      "fileID": 2459131,
-      "required": true
     },
     {
       "slug": "bnbgamingcore",
@@ -998,12 +950,6 @@
       "required": true
     },
     {
-      "slug": "mystical-agriculture-tiered-crystals",
-      "projectID": 299045,
-      "fileID": 2650681,
-      "required": true
-    },
-    {
       "slug": "simple-trophies",
       "projectID": 301310,
       "fileID": 2863053,
@@ -1020,18 +966,6 @@
       "slug": "demagnetize",
       "projectID": 301356,
       "fileID": 3091010,
-      "required": true
-    },
-    {
-      "slug": "wireless-fluid-terminal",
-      "projectID": 304022,
-      "fileID": 2830253,
-      "required": true
-    },
-    {
-      "slug": "ae2wtlib",
-      "projectID": 304024,
-      "fileID": 2830114,
       "required": true
     },
     {
@@ -1063,12 +997,6 @@
       "slug": "packagedauto",
       "projectID": 308380,
       "fileID": 3614585,
-      "required": true
-    },
-    {
-      "slug": "too-many-efficiency-losses",
-      "projectID": 308851,
-      "fileID": 2742442,
       "required": true
     },
     {
@@ -1212,13 +1140,13 @@
     {
       "slug": "extended-crafting-nomifactory-edition",
       "projectID": 398267,
-      "fileID": 4592627,
+      "fileID": 5778512,
       "required": true
     },
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 5162113,
+      "fileID": 7498338,
       "required": true
     },
     {
@@ -1254,7 +1182,7 @@
     {
       "slug": "forgelin-continuous",
       "projectID": 456403,
-      "fileID": 7182824,
+      "fileID": 7400891,
       "required": true
     },
     {
@@ -1263,12 +1191,6 @@
       "fileID": 5876158,
       "required": true,
       "clientOnly": true
-    },
-    {
-      "slug": "astral-level-tweak",
-      "projectID": 463445,
-      "fileID": 3569685,
-      "required": true
     },
     {
       "slug": "uber-conduit-probe",
@@ -1315,9 +1237,15 @@
       "clientOnly": true
     },
     {
+      "slug": "groovyscript",
+      "projectID": 687577,
+      "fileID": 7470234,
+      "required": true
+    },
+    {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 7156691,
+      "fileID": 7403701,
       "required": true
     },
     {
@@ -1365,7 +1293,7 @@
     {
       "slug": "omniwand",
       "projectID": 923677,
-      "fileID": 6460075,
+      "fileID": 7476868,
       "required": true
     },
     {
@@ -1378,6 +1306,12 @@
       "slug": "fermiumasm",
       "projectID": 971247,
       "fileID": 6389447,
+      "required": true
+    },
+    {
+      "slug": "bubbles-a-baubles-fork",
+      "projectID": 995393,
+      "fileID": 6807550,
       "required": true
     },
     {
@@ -1395,25 +1329,25 @@
     {
       "slug": "thaumcraftfix",
       "projectID": 1069346,
-      "fileID": 7040753,
+      "fileID": 7288369,
       "required": true
     },
     {
       "slug": "natura-legacy",
       "projectID": 1116420,
-      "fileID": 6982881,
+      "fileID": 7571611,
       "required": true
     },
     {
       "slug": "noisethreader",
       "projectID": 1153744,
-      "fileID": 7313915,
+      "fileID": 7522969,
       "required": true
     },
     {
       "slug": "crash-assistant",
       "projectID": 1154099,
-      "fileID": 7215788,
+      "fileID": 7374723,
       "required": true,
       "clientOnly": true
     },
@@ -1435,6 +1369,12 @@
       "fileID": 6902995,
       "required": true,
       "clientOnly": true
+    },
+    {
+      "slug": "openblocks-reopened",
+      "projectID": 1342654,
+      "fileID": 7294306,
+      "required": true
     }
   ],
   "overrides": "overrides"

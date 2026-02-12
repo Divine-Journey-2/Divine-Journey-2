@@ -638,10 +638,16 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:capacitor:32000>
 [<contenttweaker:white_matter>, <contenttweaker:white_matter>, <projecte:item.pe_matter:1>, <contenttweaker:white_matter>, <contenttweaker:white_matter>]]);
 
 // Reservoir (Creative)
+val ultimate_induction_cell = <mekanism:basicblock2:3>.withTag({tier: 3}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 3;
+});
+
 mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:reservoir:32000>.withTag({}),
 [[null, null, <alchemistry:ingot:110>, null, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
-[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}).marked("wtf_why_does_this_work"), null],
+[null, <extrautils2:drum:4>, <thermalexpansion:reservoir:4>, <mekanism:machineblock2:11>.withTag({tier: 4}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 4;
+}), null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null],
 [null, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, <thermalexpansion:reservoir:4>, null]]);
 
@@ -651,7 +657,9 @@ mods.extendedcrafting.TableCrafting.addShaped(<thermalexpansion:satchel:32000>.w
 [<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>],
 [<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>],
 [<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>],
-[<alchemistry:ingot:65>, <solarflux:solar_panel_infinity>, <contenttweaker:infinite_singularity>, <thermalexpansion:satchel:4>, <mekanism:basicblock:6>.withTag({tier: 4}), <thermalexpansion:satchel:4>, <contenttweaker:infinite_singularity>, <solarflux:solar_panel_infinity>, <alchemistry:ingot:65>],
+[<alchemistry:ingot:65>, <solarflux:solar_panel_infinity>, <contenttweaker:infinite_singularity>, <thermalexpansion:satchel:4>, <mekanism:basicblock:6>.withTag({tier: 4}).only(function(stack as IItemStack) as bool {
+    return !isNull(stack.tag) && stack.tag has "tier" && stack.tag.tier == 4;
+}), <thermalexpansion:satchel:4>, <contenttweaker:infinite_singularity>, <solarflux:solar_panel_infinity>, <alchemistry:ingot:65>],
 [<alchemistry:ingot:87>, <extrautils2:drum:4>, <simplyjetpacks:itemfluxpack>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <thermalexpansion:satchel:4>, <simplyjetpacks:itemfluxpack>, <extrautils2:drum:4>, <alchemistry:ingot:87>],
 [<alchemistry:ingot:64>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <simplyjetpacks:itemfluxpack>, <contenttweaker:infinite_singularity>, <simplyjetpacks:itemfluxpack>, <alchemistry:ingot:103>, <alchemistry:ingot:103>, <alchemistry:ingot:64>],
 [<alchemistry:ingot:64>, <alchemistry:ingot:87>, <alchemistry:ingot:103>, <extrautils2:drum:4>, <solarflux:solar_panel_infinity>, <extrautils2:drum:4>, <alchemistry:ingot:103>, <alchemistry:ingot:87>, <alchemistry:ingot:64>],

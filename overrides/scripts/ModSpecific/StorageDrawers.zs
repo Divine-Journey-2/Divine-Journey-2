@@ -36,10 +36,6 @@ recipes.addShaped(<storagedrawers:controller>, [[<ore:ingotSteel>,<ore:ingotStee
 recipes.remove(<storagedrawers:controllerslave>);
 recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<ore:dustDraconium>,<ore:drawerBasic>,<ore:dustDraconium>],[<ore:stone>,<minecraft:diamond>,<ore:stone>]]);
 
-// Ore Dictionaries
-<ore:drawerBasic>.add(<storagedrawersextra:extra_drawers:*>);
-<ore:drawerTrim>.add(<storagedrawersextra:extra_trim_0:*>);
-
 // Creative Storage Upgrade
 recipes.addShaped(<storagedrawers:upgrade_creative>, [[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>],[<tconstruct:materials:50>,<projecte:condenser_mk2>,<tconstruct:materials:50>],[<contenttweaker:white_matter>,<storagedrawers:upgrade_storage:4>,<contenttweaker:white_matter>]]);
 
@@ -54,22 +50,6 @@ mods.extendedcrafting.TableCrafting.addShaped(<storagedrawers:upgrade_creative:1
 [<storagedrawers:upgrade_creative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <contenttweaker:singularity_singularity>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <bibliocraft:bookcasecreative>, <storagedrawers:upgrade_creative>],
 [<storagedrawers:upgrade_creative>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <divinerpg:dungeon_bookshelf>, <storagedrawers:upgrade_creative>],
 [<storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>, <storagedrawers:upgrade_creative>]]);
-
-// Remove recipes for all Storage Drawers Extras
-recipes.removeByMod("storagedrawersextra");
-
-for x in [
-    <storagedrawersextra:extra_trim_3>,
-    <storagedrawersextra:extra_trim_0>,
-    <storagedrawersextra:extra_drawers>,
-    <storagedrawersextra:extra_drawers:1>,
-    <storagedrawersextra:extra_drawers:2>,
-    <storagedrawersextra:extra_drawers:3>,
-    <storagedrawersextra:extra_drawers:4>,
-] as IItemStack[] {
-    x.addTooltip(game.localize("dj2.storage_drawers_removal.desc0"));
-    x.addTooltip(game.localize("dj2.storage_drawers_removal.desc1"));
-}
 
 
 // Drawer Tooltips

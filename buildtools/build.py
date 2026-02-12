@@ -96,23 +96,27 @@ deleteConfigFiles = [
 serverCopyDirs = [
     "scripts",
     "config",
+    "groovy",
     "structures"
 ]
 # Directories that should be symlinked when creating a mmc-compatible instance
 symLinkDirs = [
     "config",
     "resources",
+    "groovy",
     "scripts",
     "structures"
 ]
 # Files which contain a "@PACK_VERSION@" which must be replaced with the pack variable number
 filesToUpdateVersionClient = [
     "manifest.json",
+    "overrides/groovy/runConfig.json",
     "overrides/config/CustomMainMenu/mainmenu.json",
     "overrides/config/endermodpacktweaks/modpack.cfg"
 ]
 filesToUpdateVersionServer = [
     "manifest.json",
+    "groovy/runConfig.json",
     "config/CustomMainMenu/mainmenu.json",
     "config/endermodpacktweaks/modpack.cfg",
 ]

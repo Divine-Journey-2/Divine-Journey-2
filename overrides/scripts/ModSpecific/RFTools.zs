@@ -223,7 +223,7 @@ function getSyringe(name as string, entity as string) as IItemStack {
 }
 
 recipes.remove(<rftools:peace_essence>);
-recipes.addShapeless(<rftools:peace_essence>, [getSyringe("Villager", "minecraft:villager_golem"),getSyringe("Enderman", "minecraft:enderman"),getSyringe("Snowman", "minecraft:snowman"),getSyringe("Bat", "minecraft:bat"),getSyringe("Ocelot", "minecraft:ocelot"),getSyringe("Guardian", "minecraft:guardian"),getSyringe("Wolf", "minecraft:wolf"),getSyringe("Zombie Pigman", "minecraft:zombie_pigman"),getSyringe("Mooshroom", "minecraft:mooshroom")]);
+recipes.addShapeless(<rftools:peace_essence>, [getSyringe("Iron Golem", "minecraft:villager_golem"),getSyringe("Enderman", "minecraft:enderman"),getSyringe("Snow Golem", "minecraft:snowman"),getSyringe("Bat", "minecraft:bat"),getSyringe("Ocelot", "minecraft:ocelot"),getSyringe("Guardian", "minecraft:guardian"),getSyringe("Wolf", "minecraft:wolf"),getSyringe("Zombie Pigman", "minecraft:zombie_pigman"),getSyringe("Mooshroom", "minecraft:mooshroom")]);
 
 // Filter Module
 recipes.remove(<rftools:filter_module>);

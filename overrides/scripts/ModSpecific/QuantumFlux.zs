@@ -9,7 +9,6 @@ print("STARTING QuantumFlux.zs");
 // Item Magnet
 recipes.remove(<quantumflux:magnet>);
 recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<enderio:block_alloy_endergy:6>],[<enderio:item_alloy_ingot>,<actuallyadditions:item_suction_ring>,<enderio:item_alloy_ingot>],[<quantumflux:craftingpiece:2>,<enderio:block_alloy>,<quantumflux:craftingpiece:2>]]);
-recipes.addShapedMirrored(<quantumflux:magnet>, [[<enderio:block_alloy:3>,null,<enderio:block_alloy_endergy:6>],[<enderio:item_alloy_ingot>,<actuallyadditions:magnet_ring_bauble>,<enderio:item_alloy_ingot>],[<quantumflux:craftingpiece:2>,<enderio:block_alloy>,<quantumflux:craftingpiece:2>]]);
 
 // Ender Crystal
 recipes.remove(<quantumflux:craftingpiece:3>);
