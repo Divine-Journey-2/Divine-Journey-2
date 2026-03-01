@@ -148,7 +148,7 @@ events.onBlockBreak(function(e as BlockBreakEvent) {
 
     // Fixing the Immersive Engineering Drill duplicating Solar Flux Solar Panels when filled with Biodiesel.
     // ...and by "fixing" i mean preventing breaking them with the drill entirely. this sledgehammer solves all problems!
-    if (e.block.definition.id.startsWith("solarflux") && e.player.currentItem.definition.id == <immersiveengineering:drill>.definition.id) {
+    if (e.block.definition.id.startsWith("solarflux") && !isNull(e.player) && !isNull(e.player.currentItem) && e.player.currentItem.definition.id == <immersiveengineering:drill>.definition.id) {
         e.player.sendStatusMessage(game.localize("dj2.event.solar_flux_ie_drill.desc0") + "\n" + game.localize("dj2.event.solar_flux_ie_drill.desc1"));
         e.cancel();
         return;

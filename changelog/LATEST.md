@@ -66,6 +66,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Immersive Engineering Squeezer recipes for EvilCraft erroring.
 - Fix the Vanishing Tinkers Construct Trait from being able to teleport mods that shouldn't move.
 - Fix Natura Legacy Thornvines not spawning in the Nether (Natura Legacy).
+- Fix Industrial Foregoing Plant Interactor causing errors when interacting with SolarFluxReborn Solar Panels.
 
 ## Balance Adjustments:
 
