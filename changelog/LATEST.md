@@ -5,7 +5,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Add GroovyScript 1.3.4
 - Update Crafttweaker 4.1.20.698 -> 4.1.20.711
-- Update Crash Assistant 1.10.20 -> 1.10.28
+- Update Crash Assistant 1.10.20 -> 1.10.30
 - Update Extended Crafting: Nomifactory Edition 1.7.0.6 -> 1.7.0.7
 - Update Forgelin Continuous 2.1.20.0 -> 2.3.0.0
 - Update LootTweaker 0.3.1 -> 0.4.1
@@ -14,7 +14,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update Omniwand 2.0.1 -> 2.0.4
 - Update ThaumcraftFix 1.1.8 -> 1.1.9
 - Update UniversalTweaks 1.17.0 -> 1.18.0
-- Update ZenUtils 1.17.1 -> 1.26.14
+- Update ZenUtils 1.17.1 -> 1.26.15
 - Replace OpenBlocks 4.0.2.280 1.8.1, OpenModsLib 0.12.2 -> OpenBlocksReopened 1.8.3.1
 - Replace Baubles 1.5.2, ActuallyBaubles 1.1 -> Bubbles 2.4.9
 - Remove Morph-O-Tool 1.2-21

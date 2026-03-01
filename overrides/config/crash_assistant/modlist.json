@@ -4,12 +4,12 @@
     "modId": "forge",
     "version": "forge-1.12.2-14.23.5.2860-universal.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.10.28.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.10.28.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.10.30.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.10.30.jar",
     "modId": "crash_assistant",
-    "version": "1.10.28",
-    "curseForgeHash": 1494370398,
-    "modrinthHash": "afec88671087ca9ebefff13893d8b952ff0b5603"
+    "version": "1.10.30",
+    "curseForgeHash": 3581089756,
+    "modrinthHash": "cc73299793b9f2f2418cb2b9a2912da4ce0b326a"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -1540,12 +1540,12 @@
     "curseForgeHash": 1081862882,
     "modrinthHash": "0bab1c02f1fde38f3cc184d12127ee5eafef7395"
   },
-  "zenutils-1.26.14.jar": {
-    "jarName": "zenutils-1.26.14.jar",
+  "zenutils-1.26.15.jar": {
+    "jarName": "zenutils-1.26.15.jar",
     "modId": "zenutils",
-    "version": "1.26.14",
-    "curseForgeHash": 2935523220,
-    "modrinthHash": "473b27eaaeb0eb7e6049a470db46ba3ead46edb5"
+    "version": "1.26.15",
+    "curseForgeHash": 2429515693,
+    "modrinthHash": "9eabc802a169caa3c0c3a60854bf833b7c2c5682"
   },
   "zerocore-1.12.2-0.1.2.9.jar": {
     "jarName": "zerocore-1.12.2-0.1.2.9.jar",
