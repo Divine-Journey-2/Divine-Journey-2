@@ -19,10 +19,6 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
             else if (id in StorageDrawersExtras.ALL_ITEMS) it.ignore()
             else if (id in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
         }
-    } else if (type == Block) {
-        event.getAllMappings().forEach {
-            if (it.key.toString() in StorageDrawersExtras.ALL_ITEMS) it.ignore()
-        }
     } else if (type == IFarmerJoe) {
         event.getAllMappings().forEach {
             // disabled by Universal Tweaks to prevent crashes
