@@ -175,33 +175,26 @@ def serverModNotice(failedModDownload: list):
 def fetchMod(modlistClient: list, modlistServer: list, failedModDownload: list, mod: dict, headers: dict):
     """Fetches a mod from the Curseforge API"""
 
-    basicUrl = "https://api.curseforge.com/v1/mods/{0}/files/{1}/download-url".format(mod["projectID"], mod["fileID"])
-    standard = requests.get(basicUrl, headers=headers)
-
-    if (standard.status_code == 403):
-        print("Curseforge returned status code 403 Forbidden, which typically means your API key is invalid")
+    infoUrl = "https://www.curseforge.com/api/v1/mods/{0}/files/{1}".format(mod["projectID"], mod["fileID"])
+    infoResponse = requests.get(infoUrl, headers=headers)
+    
+    if (infoResponse.status_code != 200):
+        print("Not able to get mod info for MOD {0}/{1}".format(mod["projectID"], mod["fileID"]))
         return
+
+    infoJson: dict
     try:
-        metadata = json.loads(standard.text)
+        infoJson = json.loads(infoResponse.text)
     except:
-        print(f"failed to download {basicUrl}")
-        if ("slug" in mod):
-            failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(mod["slug"], mod["fileID"]))
-        else:
-            mod_request = requests.get("https://api.curseforge.com/v1/mods/{0}".format(mod["projectID"]), headers=headers)
-            try:
-                data = mod_request.json()["data"]
-                failedModDownload.append("https://www.curseforge.com/minecraft/mc-mods/{0}/files/{1}".format(data["slug"], mod["fileID"]))
-            except:
-                failedModDownload.append("This is the raw mod id and file id, the cf api was being mega fucked: `{0}`, `{1}`".format(mod["projectID"], mod["fileID"]))
+        print(f"failed to get a JSON info for {infoUrl}")
+        failedModDownload.append(infoUrl)
         return
 
     # Put the mod in a list depending on if its client only
     if (("clientOnly" in mod and mod["clientOnly"])):
-        modlistClient.append(metadata["data"])
+        modlistClient.append(infoJson["data"])
     else:
-        modlistServer.append(metadata["data"])
-
+        modlistServer.append(infoJson["data"])
 
 def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient: list, retries: int):
     """Get the list of URLs of mods from Curseforge"""
@@ -209,23 +202,13 @@ def generateModlist(manifest: dict, key: str, modlistServer: list, modlistClient
 
     failedModDownload = []
 
-    access = requests.Session()
-    access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
     headers = {"Accept": "application/json", "x-api-key": key}
-    standard = requests.get("https://api.curseforge.com/v1/games", headers=headers)
-
-    if standard.status_code == 403:
-        print("Curseforge returned status code 403 Forbidden")
-        print("This typically means your API key is invalid")
-        print(headers["x-api-key"])
-        print("Skipping downloading mods")
-    else:
-        threads = []
-        for mod in manifest["files"]:
-            threads.append(Thread(target=fetchMod, args=(modlistClient, modlistServer, failedModDownload, mod, headers,)))
-            threads[-1].start()
-        for thread in threads:
-            thread.join()
+    threads = []
+    for mod in manifest["files"]:
+        threads.append(Thread(target=fetchMod, args=(modlistClient, modlistServer, failedModDownload, mod, headers,)))
+        threads[-1].start()
+    for thread in threads:
+        thread.join()
 
     serverModNotice(failedModDownload)
     print("modlist compiled")
@@ -258,20 +241,20 @@ def externalDeps(manifest: dict, retries: int):
     if counter > 0:
         print(f"downloaded {str(counter)} mods via external dependencies")
 
-
-def downloadMod(downloadedMods: list, location: str, mod, retries: int):
+def downloadMod(downloadedMods: list, location: str, modInfo: dict, retries: int):
     """Downloads a mod to a folder in the cache"""
 
     access = requests.Session()
     access.mount("https://", HTTPAdapter(max_retries=Retry(total=retries, backoff_factor=1)))
-    response = access.get(mod)
+    jarFileName = modInfo["fileName"]
+    jarUrl = "https://www.curseforge.com/api/v1/mods/{0}/files/{1}/download".format(modInfo["projectId"], modInfo["id"])
+    response = access.get(jarUrl)
 
-    link = mod.split("/")[-1]
-    link = urllib.parse.unquote(link)
-    with open(f"{cache}/mods/{location}/{link}", "w+b") as jar:
+    print(f"Downloading {jarFileName}")
+    with open(f"{cache}/mods/{location}/{jarFileName}", "w+b") as jar:
         jar.write(response.content)
-        print(f"{mod} downloaded")
-        downloadedMods.append(mod)
+        print(f"{jarFileName} downloaded")
+        downloadedMods.append(modInfo)
 
 
 def downloadModList(modlistServer: list, modlistClient: list, retries: int):
@@ -286,11 +269,11 @@ def downloadModList(modlistServer: list, modlistClient: list, retries: int):
     # Download all mods to a location based on their list to the cache
     threads = []
     downloadedMods = []
-    for mod in modlistServer:
-        threads.append(Thread(target=downloadMod, args=(downloadedMods, "server", mod, retries)))
+    for modInfo in modlistServer:
+        threads.append(Thread(target=downloadMod, args=(downloadedMods, "server", modInfo, retries)))
         threads[-1].start()
-    for mod in modlistClient:
-        threads.append(Thread(target=downloadMod, args=(downloadedMods, "client", mod, retries)))
+    for modInfo in modlistClient:
+        threads.append(Thread(target=downloadMod, args=(downloadedMods, "client", modInfo, retries)))
         threads[-1].start()
     for thread in threads:
         thread.join()
