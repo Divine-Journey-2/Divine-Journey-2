@@ -1146,7 +1146,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 7498338,
+      "fileID": 7609172,
       "required": true
     },
     {
@@ -1347,7 +1347,7 @@
     {
       "slug": "crash-assistant",
       "projectID": 1154099,
-      "fileID": 7374723,
+      "fileID": 7612901,
       "required": true,
       "clientOnly": true
     },
