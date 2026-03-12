@@ -15,6 +15,7 @@ class Fixer {
     static {
         def fmlFixer = FMLCommonHandler.instance().getDataFixer()
         def fixer = fmlFixer.init(getPackId(), LATEST)
+        if (isDedicatedServer()) return // datafixers seem to break on servers - disable them until the cause can be resolved
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new ActuallyBaubles())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new MysticalAgricultureTieredCrystals())
         fixer.registerFix(FixTypes.ITEM_INSTANCE, new OmniwandConversion())
