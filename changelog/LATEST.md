@@ -17,6 +17,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Reduce the size the Germination Ritual checks for crops from 39^3 to 11^3.
+- Add a second Blood Magic Mob Loot Fabricator recipe with increased LE generation
 
 ## QoL Improvements:
 
