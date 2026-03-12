@@ -1,0 +1,71 @@
+{
+    "machine": "mob_loot_fabricator",
+    "registryName": "mob_loot_fabricator_blood_magic_2",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bhc:blue_heart_canister",
+            "amount": 1,
+            "chance": 0
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "input",
+            "essenceamount": 500
+        },
+        {
+            "type": "lifeessence",
+            "io-type": "output",
+            "essenceamount": 25000
+        },
+        {
+            "type": "will",
+            "io-type": "output",
+            "willtype": "raw",
+            "willamount": 100,
+            "min": 0
+        },
+        {
+            "type": "will",
+            "io-type": "output",
+            "willtype": "corrosive",
+            "willamount": 100,
+            "min": 0
+        },
+        {
+            "type": "will",
+            "io-type": "output",
+            "willtype": "destructive",
+            "willamount": 100,
+            "min": 0
+        },
+        {
+            "type": "will",
+            "io-type": "output",
+            "willtype": "vengeful",
+            "willamount": 100,
+            "min": 0
+        },
+        {
+            "type": "will",
+            "io-type": "output",
+            "willtype": "steadfast",
+            "willamount": 100,
+            "min": 0
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "lifeessence",
+            "amount": 16000
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bloodmagic:blood_shard@0",
+            "amount": 1
+        }
+    ]
+}
