@@ -17,6 +17,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Balance Adjustments:
 
 - Reduce the size the Germination Ritual checks for crops from 39^3 to 11^3.
+- Add upgrade to the Chemical Caster multiblock using Celestial Crystal Cores instead of the Crystal Cores for 10x recipe speeds.
 
 ## QoL Improvements:
 
