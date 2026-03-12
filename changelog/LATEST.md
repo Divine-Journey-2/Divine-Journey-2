@@ -13,6 +13,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Roots Baubles not being correctly located (Bubbles).
 - Fix Underground Biomes Mossy Stones not being able to be scaped by Roots knives.
 - Fix being able to generate multiple Dragon Eggs from the same Ender Dragon.
+- Fix some issues with dedicated servers.
 
 ## Balance Adjustments:
 
