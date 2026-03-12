@@ -1,3 +1,4 @@
+// no_run
 
 import net.minecraftforge.event.world.BlockEvent
 import exterminatorjeff.undergroundbiomes.common.block.UBOre
