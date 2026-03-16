@@ -8,6 +8,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
+- Remove Natura Heatscar Spiders, which were inadvertently reintroduced during an update.
 
 ## Balance Adjustments:
 
