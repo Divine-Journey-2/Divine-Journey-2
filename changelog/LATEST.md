@@ -12,6 +12,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Balance Adjustments:
 
+- Increase the maximum output of higher tier Inferium Essence Seeds for crop sticks.
 
 ## QoL Improvements:
 
