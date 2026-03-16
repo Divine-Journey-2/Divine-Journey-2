@@ -1071,13 +1071,6 @@
     "curseForgeHash": 1284405660,
     "modrinthHash": "0febe14bdd007b13f6089a16a57d90e44646f041"
   },
-  "Placebo-1.12.2-1.6.1.jar": {
-    "jarName": "Placebo-1.12.2-1.6.1.jar",
-    "modId": "placebo",
-    "version": "1.12.2-1.6.1",
-    "curseForgeHash": 2278424663,
-    "modrinthHash": "d2142220e0944a8ad9d76ad7f50a5aa8d4e5fd80"
-  },
   "PlaneFix-1.12.2-1.0.0.jar": {
     "jarName": "PlaneFix-1.12.2-1.0.0.jar",
     "modId": "planefix",

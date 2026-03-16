@@ -3,6 +3,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Mod Modifications:
 
+- Remove Placebo 1.6.1
 
 ## Bugfixes:
 

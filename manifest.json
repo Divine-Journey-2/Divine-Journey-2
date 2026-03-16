@@ -865,12 +865,6 @@
       "required": true
     },
     {
-      "slug": "placebo",
-      "projectID": 283644,
-      "fileID": 4629597,
-      "required": true
-    },
-    {
       "slug": "mjrlegendslib",
       "projectID": 284331,
       "fileID": 3344068,
