@@ -572,12 +572,12 @@
     "curseForgeHash": 3266969881,
     "modrinthHash": "69dde2f0c2b2c204a66f5ae5c704a39f6b08c6ef"
   },
-  "fermiumasm-5.28.jar": {
-    "jarName": "fermiumasm-5.28.jar",
+  "fermiumasm-5.31.jar": {
+    "jarName": "fermiumasm-5.31.jar",
     "modId": "normalasm",
-    "version": "5.28",
-    "curseForgeHash": 3947634407,
-    "modrinthHash": "d3b4d15cebe24c822556de2c77e348f20afeb064"
+    "version": "5.31",
+    "curseForgeHash": 1004759708,
+    "modrinthHash": "382ed891484edc122f4d2d4e9e3bd5f2f2b15841"
   },
   "Forgelin-Continuous-2.3.10.0.jar": {
     "jarName": "Forgelin-Continuous-2.3.10.0.jar",
