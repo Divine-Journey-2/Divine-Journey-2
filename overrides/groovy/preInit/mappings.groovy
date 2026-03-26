@@ -2,10 +2,14 @@
 import net.minecraftforge.event.RegistryEvent
 import crazypants.enderio.api.farm.IFarmerJoe
 import classes.fixes.ActuallyBaubles
+import classes.fixes.Fixer
 import classes.fixes.MysticalAgricultureTieredCrystals
 import classes.fixes.OmniwandConversion
 import classes.fixes.StorageDrawersExtras
 import classes.fixes.WirelessAE2Terminal
+
+// datafixers seem to break on servers - disable them until the cause can be resolved
+if (!isDedicatedServer()) Fixer.init()
 
 // generic events aren't split properly, so we need to check that manually
 event_manager.listen { RegistryEvent.MissingMappings event ->
