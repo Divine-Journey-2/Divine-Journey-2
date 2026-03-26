@@ -7,10 +7,10 @@ import com.rwtema.extrautils2.power.IWorldPowerMultiplier
 // base description of generators:
 // solar gives up to 1 gp while daytime, reduced by rain, with reduced efficiency starting at 200
 // lunar gives up to 1.25 gp while nighttime, depending on phase of moon, with reduced efficiency starting at 200
-// lava gives up to 3.5 gp when adjacent to level 1 flowing lava, doubled in the nether, with reduced efficiency starting at 200
+// lava gives up to 3.5 gp when adjacent to flowing lava (less outside nether), with reduced efficiency starting at 200
 // water gives up to 16 gp while flowing water is adjacent, with reduced efficiency starting at 64
 // wind gives up to 5 gp if its thundering, with reduced efficiency starting at 512
-// fire gives 4 gp while a fire is below it, doubled in the nether, with reduced efficiency starting at 40
+// fire gives 4 gp while a fire is below it, with reduced efficiency starting at 40
 // creative gives 10,000 gp
 // manual gives up to 15 while being actively used
 // dragon gives 500 gp with a dragon egg, with reduced efficiency starting at 500
@@ -38,6 +38,20 @@ class WindMult implements IWorldPowerMultiplier {
 // gen.setBasePower(resource('generators:wind'), 4) // doesn't work, unclear why
 gen.setPowerMultiplier(resource('generators:wind'), new WindMult())
 
+// increase gp from lava from 3.5 (2) -> 7 (5)
+gen.setBasePower(resource('generators:lava'), 5.0f)
+gen.setPowerLevel(resource('generators:lava'), { TilePassiveGenerator generator, World world ->
+    float value = 0.0f
+    for (def facing : net.minecraft.util.EnumFacing.HORIZONTALS) {
+        def state = generator.getWorld().getBlockState(generator.getPos().offset(facing))
+        if (state.getBlock() == block('minecraft:flowing_lava') || state.getBlock() == block('minecraft:lava')) {
+            def level = state.getValue(net.minecraft.block.BlockLiquid.LEVEL)
+            if (level == 0) return 5.0f // if its a source block, return 5
+            value = Math.max(value, 8 - level)
+        }
+    }
+    return value
+})
 
 // increase gp from fire by 50%
 gen.setBasePower(resource('generators:fire'), 6.0f)
