@@ -11,6 +11,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Remove Natura Heatscar Spiders, which were inadvertently reintroduced during an update.
 - Fix crashes due to files in the `cache` folder not being invalidated (GroovyScript).
+- Fix LightningCraft conversion recipes failing for some lightning generation.
 
 ## Balance Adjustments:
 
