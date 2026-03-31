@@ -7,6 +7,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Update FermiumASM 5.28 -> 5.31
 - Update GroovyScript 1.3.4 - 1.4.0
 - Update Universal Tweaks 1.18.0 -> 1.19.0
+- Update Crash Assistant 1.11.0 -> 1.11.6
 
 ## Bugfixes:
 
