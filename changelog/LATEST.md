@@ -6,12 +6,15 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove Placebo 1.6.1
 - Update FermiumASM 5.28 -> 5.31
 - Update GroovyScript 1.3.4 - 1.4.0
+- Update Universal Tweaks 1.18.0 -> 1.19.0
 
 ## Bugfixes:
 
 - Remove Natura Heatscar Spiders, which were inadvertently reintroduced during an update.
 - Fix crashes due to files in the `cache` folder not being invalidated (GroovyScript).
 - Fix LightningCraft conversion recipes failing for some lightning generation.
+- Fix mobs having trouble pathfinding across rail blocks (Universal Tweaks).
+- Fix the EnderIO Impulse Hopper allowing insertion of items it cannot transfer due to incorrect NBT data (Universal Tweaks).
 
 ## Balance Adjustments:
 
