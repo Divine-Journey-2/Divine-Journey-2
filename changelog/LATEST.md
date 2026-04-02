@@ -26,6 +26,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
+- Display Runic Shears as a catalyst in JEI for Terra Moss.
 
 ## Text and Quest Updates:
 

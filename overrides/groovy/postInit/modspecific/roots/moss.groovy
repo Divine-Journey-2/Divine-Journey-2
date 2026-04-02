@@ -1,6 +1,10 @@
 
 
+// display runic shears as a catalyst for moss
+mods.jei.catalyst.add('roots.terra_moss', item('roots:runic_shears'))
 
+
+// update moss recipes to add more conversions
 mods.roots.moss.removeAll()
 
 mods.roots.moss.add(item('minecraft:mossy_cobblestone'), item('minecraft:cobblestone'))
