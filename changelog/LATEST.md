@@ -31,6 +31,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Text and Quest Updates:
 
 - Remove incorrect information about Fire and Lava Mills being doubled in the Nether.
+- Add information about the Arcane Terraformer requiring Essentia Tubes and not working with AE2 Essentia Export Buses.
 
 ## Texture Transformations:
 
