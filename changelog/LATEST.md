@@ -17,6 +17,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix mobs having trouble pathfinding across rail blocks (Universal Tweaks).
 - Fix the EnderIO Impulse Hopper allowing insertion of items it cannot transfer due to incorrect NBT data (Universal Tweaks).
 - Remove the EnderIO Conduit Probe from the Omniwand, as some interactions could remove the NBT data.
+- When spawning mobs from the Quark Curse effect, check that the mob is actually eligible to spawn in the given location.
 
 ## Balance Adjustments:
 
