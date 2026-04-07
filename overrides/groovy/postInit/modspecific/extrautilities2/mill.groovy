@@ -38,18 +38,19 @@ class WindMult implements IWorldPowerMultiplier {
 // gen.setBasePower(resource('generators:wind'), 4) // doesn't work, unclear why
 gen.setPowerMultiplier(resource('generators:wind'), new WindMult())
 
-// increase gp from lava from 3.5 (2) -> 7 (5)
-gen.setBasePower(resource('generators:lava'), 5.0f)
+// increase gp from lava from 3.5 (2) -> 5.25 (4)
+gen.setBasePower(resource('generators:lava'), 4.0f)
 gen.setPowerLevel(resource('generators:lava'), { TilePassiveGenerator generator, World world ->
     float value = 0.0f
     for (def facing : net.minecraft.util.EnumFacing.HORIZONTALS) {
         def state = generator.getWorld().getBlockState(generator.getPos().offset(facing))
         if (state.getBlock() == block('minecraft:flowing_lava') || state.getBlock() == block('minecraft:lava')) {
             def level = state.getValue(net.minecraft.block.BlockLiquid.LEVEL)
-            if (level == 0) return 5.0f // if its a source block, return 5
+            if (level == 0) return 4.0f // if its a source block, return 4
             value = Math.max(value, 8 - level)
         }
     }
+    value *= 0.75f
     return value
 })
 
