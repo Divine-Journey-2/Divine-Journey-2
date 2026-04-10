@@ -36,6 +36,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove incorrect information about Fire and Lava Mills being doubled in the Nether.
 - Add information about the Arcane Terraformer requiring Essentia Tubes and not working with AE2 Essentia Export Buses.
 - Add additional information on how the Giant Eucalyptus Tree generates in the Ulterior Outback Biome.
+- Fix a typo in the title of Quest id 816, "preset" -> "present".
 
 ## Texture Transformations:
 
