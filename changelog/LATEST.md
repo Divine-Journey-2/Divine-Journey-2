@@ -37,6 +37,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add information about the Arcane Terraformer requiring Essentia Tubes and not working with AE2 Essentia Export Buses.
 - Add additional information on how the Giant Eucalyptus Tree generates in the Ulterior Outback Biome.
 - Fix a typo in the title of Quest id 816, "preset" -> "present".
+- Make the Greater Tartaric Gem quest accept any Greater Tartaric Gem, not just any empty one.
 
 ## Texture Transformations:
 
