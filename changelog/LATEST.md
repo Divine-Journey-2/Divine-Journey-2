@@ -22,6 +22,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - When spawning mobs from the Quark Curse effect, check that the mob is actually eligible to spawn in the given location.
 - Make the recipe for upgrading Actually Additions Crates keep their inventory.
 - Fix the Omniwand being removed when a Chisel within it breaks.
+- Fix the Omniwand being removed when a ProjectRed Screwdriver within it breaks.
 
 ## Balance Adjustments:
 
