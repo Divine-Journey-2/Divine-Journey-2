@@ -5,9 +5,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Remove Placebo 1.6.1
 - Update FermiumASM 5.28 -> 5.31
-- Update GroovyScript 1.3.4 - 1.4.0
-- Update Universal Tweaks 1.18.0 -> 1.19.0
-- Update Crash Assistant 1.11.0 -> 1.11.6
+- Update Crash Assistant 1.11.0 -> 1.11.8
+- Update Forgelin-Continuous 2.3.10.0 -> 2.3.20.0
+- Update GroovyScript 1.3.4 -> 1.4.3
+- Update Universal Tweaks 1.18.0 -> 1.19.1
+- Update ZenUtils 1.26.15 -> 1.26.19
 
 ## Bugfixes:
 

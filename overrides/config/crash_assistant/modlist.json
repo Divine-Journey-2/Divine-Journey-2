@@ -5,13 +5,13 @@
     "name": "forge",
     "version": "forge-1.12.2-14.23.5.2860-universal.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.11.6.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.6.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.11.8.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.8.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.6",
-    "curseForgeHash": 851394990,
-    "modrinthHash": "b851657ccc881542013a6f94d83826cdb68f2bd3"
+    "version": "1.11.8",
+    "curseForgeHash": 2305784281,
+    "modrinthHash": "6a90ca55bff45580a2d5455899e6fc21f9f3a2a4"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -660,13 +660,13 @@
     "curseForgeHash": 1004759708,
     "modrinthHash": "382ed891484edc122f4d2d4e9e3bd5f2f2b15841"
   },
-  "Forgelin-Continuous-2.3.10.0.jar": {
-    "jarName": "Forgelin-Continuous-2.3.10.0.jar",
+  "Forgelin-Continuous-2.3.20.0.jar": {
+    "jarName": "Forgelin-Continuous-2.3.20.0.jar",
     "modId": "forgelin_continuous",
     "name": "Forgelin-Continuous",
     "version": "2.3.10.0",
-    "curseForgeHash": 845864044,
-    "modrinthHash": "705ec14d492d72235bc331970f143d710d97e0cc"
+    "curseForgeHash": 1069092308,
+    "modrinthHash": "60a0086110cc0854917d359a9ea7153e6a866437"
   },
   "ForgeMultipart-1.12.2-2.6.2.83-universal.jar": {
     "jarName": "ForgeMultipart-1.12.2-2.6.2.83-universal.jar",
@@ -724,13 +724,13 @@
     "curseForgeHash": 993144871,
     "modrinthHash": "fd5cc679a2fb81b617e3baf17ef00b5bcc9f18af"
   },
-  "groovyscript-1.4.1.jar": {
-    "jarName": "groovyscript-1.4.1.jar",
+  "groovyscript-1.4.3.jar": {
+    "jarName": "groovyscript-1.4.3.jar",
     "modId": "groovyscript",
     "name": "GroovyScript",
-    "version": "1.4.1",
-    "curseForgeHash": 2431698068,
-    "modrinthHash": "68ec181be2d0e153e0d95b2b4f6d19d0459dc372"
+    "version": "1.4.3",
+    "curseForgeHash": 3607554496,
+    "modrinthHash": "48ffe55af9173b3f9ee764f678b6b58d70dab90c"
   },
   "Guide-API-1.12-2.1.8-63.jar": {
     "jarName": "Guide-API-1.12-2.1.8-63.jar",
@@ -1683,13 +1683,13 @@
     "curseForgeHash": 1113472475,
     "modrinthHash": "2b72e49682aca50fa55522c5080f2ba20173c565"
   },
-  "UniversalTweaks-1.12.2-1.19.0.jar": {
-    "jarName": "UniversalTweaks-1.12.2-1.19.0.jar",
+  "UniversalTweaks-1.12.2-1.19.1.jar": {
+    "jarName": "UniversalTweaks-1.12.2-1.19.1.jar",
     "modId": "universaltweaks",
     "name": "Universal Tweaks",
-    "version": "1.19.0",
-    "curseForgeHash": 2319097403,
-    "modrinthHash": "ff0a3632352e4dd5cd681c7317ca0760a3c9b861"
+    "version": "1.19.1",
+    "curseForgeHash": 2174474861,
+    "modrinthHash": "2c0b5d34bf6346990ba5a10b76ec3de159adeaa2"
   },
   "valkyrielib-1.12.2-2.0.20.1.jar": {
     "jarName": "valkyrielib-1.12.2-2.0.20.1.jar",
@@ -1747,13 +1747,13 @@
     "curseForgeHash": 1081862882,
     "modrinthHash": "0bab1c02f1fde38f3cc184d12127ee5eafef7395"
   },
-  "zenutils-1.26.15.jar": {
-    "jarName": "zenutils-1.26.15.jar",
+  "zenutils-1.26.19.jar": {
+    "jarName": "zenutils-1.26.19.jar",
     "modId": "zenutils",
     "name": "ZenUtils",
-    "version": "1.26.15",
-    "curseForgeHash": 2429515693,
-    "modrinthHash": "9eabc802a169caa3c0c3a60854bf833b7c2c5682"
+    "version": "1.26.19",
+    "curseForgeHash": 4090587236,
+    "modrinthHash": "3619884c516d310ee447118fa09214228bb10cd1"
   },
   "zerocore-1.12.2-0.1.2.9.jar": {
     "jarName": "zerocore-1.12.2-0.1.2.9.jar",
