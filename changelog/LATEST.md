@@ -21,6 +21,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Remove the EnderIO Conduit Probe from the Omniwand, as some interactions could remove the NBT data.
 - When spawning mobs from the Quark Curse effect, check that the mob is actually eligible to spawn in the given location.
 - Make the recipe for upgrading Actually Additions Crates keep their inventory.
+- Fix the Omniwand being removed when a Chisel within it breaks.
 
 ## Balance Adjustments:
 
@@ -33,6 +34,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Display Runic Shears as a catalyst in JEI for Terra Moss.
 - Add a `witherproof` tag and add it to every non-unbreakable block that the wither cannot break.
+- Disable durability for Chisels.
 
 ## Text and Quest Updates:
 
