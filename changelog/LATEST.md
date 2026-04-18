@@ -23,6 +23,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make the recipe for upgrading Actually Additions Crates keep their inventory.
 - Fix the Omniwand being removed when a Chisel within it breaks.
 - Fix the Omniwand being removed when a ProjectRed Screwdriver within it breaks.
+- Reduce the max stack size of mob_grinding_utils upgrades to match the intended maximum of upgrades.
 
 ## Balance Adjustments:
 

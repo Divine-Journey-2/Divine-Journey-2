@@ -9,6 +9,11 @@ recipes.addShaped(<mob_grinding_utils:spikes>, [[null,<extrautils2:spike_iron>,n
 recipes.remove(<mob_grinding_utils:absorption_hopper>);
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [[<contenttweaker:mobgrindium_ingot>,<minecraft:ender_pearl>,<contenttweaker:mobgrindium_ingot>],[<minecraft:ender_pearl>,<openblocks:vacuum_hopper>,<minecraft:ender_pearl>],[<contenttweaker:mobgrindium_ingot>,<minecraft:ender_pearl>,<contenttweaker:mobgrindium_ingot>]]);
 
+// upgrade stack sizes
+<mob_grinding_utils:absorption_upgrade>.maxStackSize = 6;
+<mob_grinding_utils:fan_upgrade>.maxStackSize = 10; // some of these should be 3, but stack size is per item, not item + meta
+<mob_grinding_utils:saw_upgrade>.maxStackSize = 10;
+
 // Absorption Radius Upgrade
 recipes.remove(<mob_grinding_utils:absorption_upgrade>);
 recipes.addShaped(<mob_grinding_utils:absorption_upgrade>, [[<ore:ingotRedAlloy>,<contenttweaker:mobgrindium_ingot>,<ore:ingotRedAlloy>],[<contenttweaker:mobgrindium_ingot>,<actuallyadditions:block_misc:6>,<contenttweaker:mobgrindium_ingot>],[<ore:ingotRedAlloy>,<contenttweaker:mobgrindium_ingot>,<ore:ingotRedAlloy>]]);
