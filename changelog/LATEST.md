@@ -45,6 +45,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add additional information on how the Giant Eucalyptus Tree generates in the Ulterior Outback Biome.
 - Fix a typo in the title of Quest id 816, "preset" -> "present".
 - Make the Greater Tartaric Gem quest accept any Greater Tartaric Gem, not just any empty one.
+- Make the Runic Crafter quest not require completing the Runed Obsidian quest.
 
 ## Texture Transformations:
 

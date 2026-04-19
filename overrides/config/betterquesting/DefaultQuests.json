@@ -73150,7 +73150,6 @@
     "1489:10": {
       "questID:3": 1489,
       "preRequisites:11": [
-        52,
         45
       ],
       "properties:10": {
