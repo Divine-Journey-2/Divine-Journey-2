@@ -66102,7 +66102,7 @@
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
           "icon:10": {
-            "id:8": "actuallyadditions:battery_double_bauble",
+            "id:8": "actuallyadditions:item_battery_double",
             "tag:10": {
               "Energy:3": 350000
             }
