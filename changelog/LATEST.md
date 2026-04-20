@@ -37,6 +37,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a `witherproof` tag and add it to every non-unbreakable block that the wither cannot break.
 - Disable durability for Chisels.
 - Add a number of additional catalyst items to JEI categories.
+- Reorder JEI categories.
 
 ## Text and Quest Updates:
 
