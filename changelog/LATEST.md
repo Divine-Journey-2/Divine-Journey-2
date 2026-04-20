@@ -34,7 +34,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## QoL Improvements:
 
-- Display Runic Shears as a catalyst in JEI for Terra Moss.
 - Add a `witherproof` tag and add it to every non-unbreakable block that the wither cannot break.
 - Disable durability for Chisels.
 

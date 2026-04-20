@@ -1,7 +1,5 @@
 
 
-// display runic shears as a catalyst for moss
-mods.jei.catalyst.add('roots.terra_moss', item('roots:runic_shears'))
 
 
 // update moss recipes to add more conversions
