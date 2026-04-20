@@ -9,6 +9,9 @@
       "classes/",
       "preInit/"
     ],
+    "init": [
+      "init/"
+    ],
     "postInit": [
       "postInit/"
     ]

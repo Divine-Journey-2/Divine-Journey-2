@@ -66102,7 +66102,7 @@
         "betterquesting:10": {
           "visibility:8": "ALWAYS",
           "icon:10": {
-            "id:8": "actuallyadditions:battery_double_bauble",
+            "id:8": "actuallyadditions:item_battery_double",
             "tag:10": {
               "Energy:3": 350000
             }
@@ -73150,7 +73150,6 @@
     "1489:10": {
       "questID:3": 1489,
       "preRequisites:11": [
-        52,
         45
       ],
       "properties:10": {
@@ -82305,6 +82304,7 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
+          "ignoreNBT:1": 1,
           "requiredItems:9": {
             "0:10": {
               "id:8": "bloodmagic:soul_gem",

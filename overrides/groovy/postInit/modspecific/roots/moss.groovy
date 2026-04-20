@@ -1,6 +1,8 @@
 
 
 
+
+// update moss recipes to add more conversions
 mods.roots.moss.removeAll()
 
 mods.roots.moss.add(item('minecraft:mossy_cobblestone'), item('minecraft:cobblestone'))
@@ -35,14 +37,14 @@ mods.roots.moss.add(item('chisel:cobblestonemossy1', 4), item('chisel:cobbleston
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 5), item('chisel:cobblestone1', 5))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 6), item('chisel:cobblestone1', 6))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 7), item('chisel:cobblestone1', 7))
-mods.roots.moss.add(item('chisel:cobblestonemossy1', 8), item('chisel:cobblestone2')) // how cool
-mods.roots.moss.add(item('chisel:cobblestonemossy1', 9), item('chisel:cobblestone2', 1))
+mods.roots.moss.add(item('chisel:cobblestonemossy1', 8), item('chisel:cobblestone2')) // the order doesn't match.
+mods.roots.moss.add(item('chisel:cobblestonemossy1', 9), item('chisel:cobblestone2', 1)) // how "cool"
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 10), item('chisel:cobblestone2', 2))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 11), item('chisel:cobblestone2', 3))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 12), item('chisel:cobblestone2', 4))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 13), item('chisel:cobblestone2', 5))
 mods.roots.moss.add(item('chisel:cobblestonemossy1', 14), item('chisel:cobblestone2', 6))
-mods.roots.moss.add(item('chisel:cobblestonemossy1', 15), item('chisel:cobblestone1', 8)) // path the earlier bodge
+mods.roots.moss.add(item('chisel:cobblestonemossy1', 15), item('chisel:cobblestone1', 8)) // now go back patch the earlier bodge
 mods.roots.moss.add(item('chisel:cobblestonemossy2'), item('chisel:cobblestone1', 9))
 
 

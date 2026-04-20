@@ -36,6 +36,9 @@
 	#Before uploading the first log, requires the user to accept the privacy policy.
 	#Disabling this option may be illegal in some countries if you are modpack creator. Disable at your own risk.
 	enable_privacy_policy_acceptance = true
+	#If true, Crash Assistant will pop up even if the presence of win_event log is the only sign of a crash.
+	#Can be false positive for some users, since they can have some unrelated spam in the windows event error log.
+	win_event_is_crash = false
 	#If options.txt doesn't exist, the default language will be used.
 	default_lang = "en_us"
 	#Generates "logs/stderr_stream.log" with stderr stream.
@@ -265,6 +268,10 @@
 [scripts]
 	#Enable Scripts IDE in the GUI.
 	ide_enabled = true
+	#If enabled, "logs/crash_assistant/startup_scripts.log" is added to the logs list only when it contains [ERROR].
+	#If it has no errors, its contents are written into "crash_assistant_app.log" instead.
+	#If app logging is disabled, the startup scripts log is kept as a separate log file.
+	attach_startup_scripts_log_only_on_error = true
 	#Enable feature.
 	enabled = true
 	#By changing this value you can disable creating "scripts" folder and placing example scripts there.
@@ -307,6 +314,9 @@
 	#If you prefer standard Swing look and feel, use 'Swing'.
 	#Look out our guide about theme support: https://github.com/KostromDan/Crash-Assistant/blob/pages/guides/Theme%20Support/Getting%20Started.md
 	theme_file_name = "FlatLightLaf"
+	#Same as upload_all_button_foreground_color, but for the Yes button in the privacy policy acceptance dialog.
+	#Default for this button is "0_178_0" (dark green color).
+	privacy_policy_yes_button_foreground_color = "0_178_0"
 	#Color of the button blinking on error (e.g. failed upload).
 	#format is "R_G_B", range is 0-255.
 	#Default is "255_100_100" (light red).
@@ -337,6 +347,9 @@
 	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color.
 	#Default for this is "255_0_0" (red color).
 	screenshot_of_gui_notice_animated_border_color = "255_0_0"
+	#Same as upload_all_button_foreground_color, but for the No button in the privacy policy acceptance dialog.
+	#Default for this button is "255_0_0" (red color).
+	privacy_policy_no_button_foreground_color = "255_0_0"
 	#Same as upload_all_button_foreground_color, but for the Simple Mode toggle button.
 	simple_mode_button_foreground_color = "0_0_178"
 	#Will hide Upload All Button from GUI.

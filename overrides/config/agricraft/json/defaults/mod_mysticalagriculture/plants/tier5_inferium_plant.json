@@ -34,8 +34,8 @@
   "products": {
     "products": [
       {
-        "min": 1,
-        "max": 5,
+        "min": 5,
+        "max": 10,
         "chance": 0.9,
         "required": true,
         "item": "mysticalagriculture:crafting",

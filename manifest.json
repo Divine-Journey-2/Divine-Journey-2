@@ -865,12 +865,6 @@
       "required": true
     },
     {
-      "slug": "placebo",
-      "projectID": 283644,
-      "fileID": 4629597,
-      "required": true
-    },
-    {
       "slug": "mjrlegendslib",
       "projectID": 284331,
       "fileID": 3344068,
@@ -1146,7 +1140,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 7609172,
+      "fileID": 7821694,
       "required": true
     },
     {
@@ -1182,7 +1176,7 @@
     {
       "slug": "forgelin-continuous",
       "projectID": 456403,
-      "fileID": 7700023,
+      "fileID": 7883992,
       "required": true
     },
     {
@@ -1239,13 +1233,13 @@
     {
       "slug": "groovyscript",
       "projectID": 687577,
-      "fileID": 7470234,
+      "fileID": 7925117,
       "required": true
     },
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 7403701,
+      "fileID": 7849634,
       "required": true
     },
     {
@@ -1305,7 +1299,7 @@
     {
       "slug": "fermiumasm",
       "projectID": 971247,
-      "fileID": 6389447,
+      "fileID": 7741058,
       "required": true
     },
     {
@@ -1347,7 +1341,7 @@
     {
       "slug": "crash-assistant",
       "projectID": 1154099,
-      "fileID": 7717556,
+      "fileID": 7913007,
       "required": true,
       "clientOnly": true
     },
