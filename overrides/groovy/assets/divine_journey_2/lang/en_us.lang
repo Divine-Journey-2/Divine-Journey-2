@@ -24,3 +24,9 @@ dj2.jei.bewitchment.cup_add=Modifies §5Magic Power§r gain by %s§r
 dj2.jei.bewitchment.cup_times=Multiplies maximum §5Magic Power§r by %s§r
 dj2.jei.bewitchment.cup_both=Modifies §5Magic Power§r gain by %s§r and multiplies maximum §5Magic Power§r by %s§r
 
+dj2.jei.bewitchment.entry.soul_reaper=Requires §c1024§r souls inside
+dj2.jei.bewitchment.entry.rift_jar=Requires a Rift Jar without a Rift
+dj2.jei.bewitchment.entry.full_rift_jar=Requires a Rift Jar with a Rift of at least size §c90§r (the max size is §c100§r)
+dj2.jei.bewitchment.entry.flower_pot=Requires an empty Flower Pot
+dj2.jei.bewitchment.entry.flower_pot_full=Requires a full Flower Pot
+
