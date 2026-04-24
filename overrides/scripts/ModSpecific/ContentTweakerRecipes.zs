@@ -1608,7 +1608,7 @@ mods.avaritia.Compressor.add("essence_of_life", <contenttweaker:essence_of_life>
 mods.avaritia.Compressor.add("essence_of_death", <contenttweaker:essence_of_death>, 100, <contenttweaker:condensed_vis_crystal_mortuus>, true);
 
 // Essence of Cycles
-WitchesRitual.addRecipe("cycles", [<contenttweaker:essence_of_cycles>], [<contenttweaker:essence_of_life>,<botania:specialflower>.withTag({type: "dandelifeon"}),<contenttweaker:essence_of_death>,<contenttweaker:death_core>], null, null, 8000, WitchesRitual.FIERY, WitchesRitual.RITUAL, WitchesRitual.PHASING);
+WitchesRitual.addRecipe("cycles", [<contenttweaker:essence_of_cycles>], [<contenttweaker:essence_of_life>,<botania:specialflower>.withTag({type: "dandelifeon"}),<contenttweaker:essence_of_death>,<contenttweaker:death_core>], null, null, 32000, WitchesRitual.FIERY, WitchesRitual.RITUAL, WitchesRitual.PHASING);
 
 // Essence of Enclosement
 mods.avaritia.Compressor.add("essence_of_enclosement", <contenttweaker:essence_of_enclosement>, 100, <mekanism:cardboardbox>, true);
