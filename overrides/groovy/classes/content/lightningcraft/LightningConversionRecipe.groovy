@@ -1,4 +1,3 @@
-package classes.content.lightningcraft
 
 import net.minecraft.entity.item.EntityItem
 
