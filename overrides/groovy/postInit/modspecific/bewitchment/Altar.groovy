@@ -85,11 +85,11 @@ addWand(item('thaumicaugmentation:impulse_cannon'), 4)
 addJei(addPentacle(s -> s.getTileEntity() instanceof net.minecraft.tileentity.TileEntitySkull && s.getTileEntity().getSkullType() == 5, 1), item('minecraft:skull', 5))
 addJei(addPentacle(s -> s.getBlockState().getBlock() instanceof vazkii.botania.common.block.decor.BlockTinyPotato, 1), item('botania:tinypotato'))
 addPentacle(item('bewitchment:grimoire_magia'), 2)
-addJei(addPentacle(s -> s.getBlockState().getBlock() instanceof vazkii.botania.common.block.BlockGaiaHead, 2), item('botania:gaiahead'))
-addPentacle(item('bewitchment:pentacle'), 3)
-addPentacle(item('bewitchment:demon_heart'), 4)
-addPentacle(item('thaumicaugmentation:material', 5), 6) // impetus crystal
-addPentacle(item('draconicevolution:ender_energy_manipulator'), 11)
+addJei(addPentacle(s -> s.getBlockState().getBlock() instanceof vazkii.botania.common.block.BlockGaiaHead, 4), item('botania:gaiahead'))
+addPentacle(item('bewitchment:pentacle'), 5)
+addPentacle(item('bewitchment:demon_heart'), 6)
+addPentacle(item('thaumicaugmentation:material', 5), 10) // impetus crystal
+addPentacle(item('draconicevolution:ender_energy_manipulator'), 14)
 addPentacle(item('projecte:item.pe_life_stone'), 20)
 // addPentacle(item('avaritia:resource', 5), 33) // causes all slots afterwards to render as black squares instead - sad!
 
