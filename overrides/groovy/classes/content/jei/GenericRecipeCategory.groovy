@@ -11,7 +11,7 @@ import mezz.jei.api.ingredients.VanillaTypes
 import net.minecraft.client.resources.I18n
 
 /// a generic helper category
-abstract class GenericRecipeCategory implements IRecipeCategory<RecipeWrapper> {
+abstract class GenericRecipeCategory implements IRecipeCategory<IRecipeWrapper> {
 
     public static final int SLOT_SIZE = 18
 
