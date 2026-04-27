@@ -30,3 +30,6 @@ dj2.jei.bewitchment.entry.full_rift_jar=Requires a Rift Jar with a Rift of at le
 dj2.jei.bewitchment.entry.flower_pot=Requires an empty Flower Pot
 dj2.jei.bewitchment.entry.flower_pot_full=Requires a full Flower Pot
 
+# Bewitchment Rituals
+ritual.divine_journey_2.cycles=Rite of Cycles
+ritual.divine_journey_2.tough_and_pure=Rite of the Tough and Pure

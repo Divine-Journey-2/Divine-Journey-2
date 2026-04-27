@@ -8,10 +8,6 @@ commands.curseforge.text=Click here to open the DJ2 CurseForge page
 commands.discord.text=Click here to join the Discord
 commands.issues.text=Click here to report a bug or issue
 
-# Moretweaker Bewitchment Rituals
-ritual.moretweaker.moretweakerrecipe0=Rite of the Tough and Pure
-ritual.moretweaker.moretweakerrecipe1=Rite of Cycles
-
 # Custom player event messages
 dj2.event.elemental_tool.desc0=§dElemental Inscription Tools cannot be used outside of an Elemental Diviner!
 dj2.event.horde_horn.message=§bFailed to spawn - please use in open air.

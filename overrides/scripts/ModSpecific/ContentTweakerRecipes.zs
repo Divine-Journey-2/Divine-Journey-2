@@ -1009,9 +1009,6 @@ mods.actuallyadditions.Empowerer.addRecipe(<contenttweaker:woodland_mansion_loca
 // Brew of the Void
 WitchesCauldron.addRecipe([<contenttweaker:brew_of_the_void>], [<bewitchment:bottle_of_blood>,<bewitchment:belladonna>,<bewitchment:aconitum>,<bewitchment:wormwood>,<thaumcraft:ingot>,<thaumcraft:ingot>,<minecraft:mycelium>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})]);
 
-// Tough Purified Paste
-WitchesRitual.addRecipe("Rite of the Tough and Pure", [<contenttweaker:tough_purified_paste> * 4], [<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<extrautils2:compresseddirt:2>,<bewitchment:salt>,<bewitchment:salt>,<thaumcraft:bath_salts>,<thaumcraft:bath_salts>,<contenttweaker:purified_tablet>], null, null, 200, WitchesRitual.RITUAL, WitchesRitual.RITUAL, WitchesRitual.NONE);
-
 // Dragon Resin
 WitchesCauldron.addRecipe([<contenttweaker:dragon_resin> * 8], [<minecraft:dragon_breath>,<botania:storage:4>,<draconicevolution:draconium_block>,<contenttweaker:tough_purified_paste>,<quark:enderdragon_scale>,<forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),<contenttweaker:condensed_vis_crystal_diabolus>,<contenttweaker:condensed_vis_crystal_bestia>,<bewitchment:fiery_unguent>]);
 
@@ -1606,9 +1603,6 @@ mods.avaritia.Compressor.add("essence_of_life", <contenttweaker:essence_of_life>
 
 // Essence of Death
 mods.avaritia.Compressor.add("essence_of_death", <contenttweaker:essence_of_death>, 100, <contenttweaker:condensed_vis_crystal_mortuus>, true);
-
-// Essence of Cycles
-WitchesRitual.addRecipe("cycles", [<contenttweaker:essence_of_cycles>], [<contenttweaker:essence_of_life>,<botania:specialflower>.withTag({type: "dandelifeon"}),<contenttweaker:essence_of_death>,<contenttweaker:death_core>], null, null, 32000, WitchesRitual.FIERY, WitchesRitual.RITUAL, WitchesRitual.PHASING);
 
 // Essence of Enclosement
 mods.avaritia.Compressor.add("essence_of_enclosement", <contenttweaker:essence_of_enclosement>, 100, <mekanism:cardboardbox>, true);
