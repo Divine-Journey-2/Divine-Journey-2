@@ -1,3 +1,4 @@
+package classes.content.bewitchment
 
 import com.bewitchment.api.registry.AltarUpgrade
 import net.minecraft.util.text.translation.I18n

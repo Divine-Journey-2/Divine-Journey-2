@@ -1,3 +1,4 @@
+package classes.content.jei
 
 import mezz.jei.api.gui.IDrawable
 import mezz.jei.api.gui.IDrawableAnimated

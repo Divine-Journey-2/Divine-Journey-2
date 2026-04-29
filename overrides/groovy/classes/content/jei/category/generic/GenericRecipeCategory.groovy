@@ -1,3 +1,4 @@
+package classes.content.jei.category.generic
 
 import mezz.jei.api.gui.IDrawable
 import mezz.jei.api.gui.IGuiIngredient

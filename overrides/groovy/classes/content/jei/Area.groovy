@@ -1,3 +1,4 @@
+package classes.content.jei
 
 /// used to check if the mouse is within a particular space
 class Area {
