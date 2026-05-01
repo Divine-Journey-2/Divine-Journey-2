@@ -1,6 +1,11 @@
 
 import net.minecraftforge.event.RegistryEvent
 import crazypants.enderio.api.farm.IFarmerJoe
+import com.bewitchment.api.registry.CauldronRecipe
+import com.bewitchment.api.registry.Ritual
+import com.bewitchment.api.registry.DistilleryRecipe
+import com.bewitchment.api.registry.FrostfireRecipe
+import com.bewitchment.api.registry.OvenRecipe
 import classes.fixes.ActuallyBaubles
 import classes.fixes.Fixer
 import classes.fixes.MysticalAgricultureTieredCrystals
@@ -30,6 +35,14 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
         event.getAllMappings().forEach {
             // disabled by Universal Tweaks to prevent crashes
             if (it.key.toString() == 'agricraft:farmer') it.ignore()
+        }
+    } else if (type == CauldronRecipe || type == Ritual || type == DistilleryRecipe || type == FrostfireRecipe || type == OvenRecipe) {
+        // moretweaker generates recipes with a name based on the total number of recipes
+        // moretweaker has added - this means removing any recipes shifts the id of all later recipes,
+        // which means that the bewitchment registries (which save to the world) note that there are recipes missing.
+        // this creates a popup before entering worlds which is undesirable
+        event.getAllMappings().forEach {
+            if (it.key.toString().startsWith('moretweaker:')) it.ignore()
         }
     }
 }
