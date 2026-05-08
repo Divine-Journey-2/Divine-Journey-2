@@ -3,7 +3,7 @@ package classes.content.jei.category
 import classes.content.bewitchment.AltarUpgradeStorage
 import classes.content.jei.Area
 import classes.content.jei.MultiIngredientDrawable
-import classes.content.jei.category.generic.GenericRecipeCategory
+import classes.content.jei.category.GenericRecipeCategory
 
 import mezz.jei.api.gui.IRecipeLayout
 import mezz.jei.api.gui.ITooltipCallback
