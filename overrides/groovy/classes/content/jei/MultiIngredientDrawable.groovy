@@ -8,8 +8,8 @@ import net.minecraft.client.Minecraft
 /// animated drawable that cycles between drawing the listed ingredients
 class MultiIngredientDrawable implements IDrawableAnimated {
 
-    ITickTimer timer
-    List<IDrawable> ingredients
+    final ITickTimer timer
+    final List<IDrawable> ingredients
 
     MultiIngredientDrawable(ITickTimer timer, List<IDrawable> ingredients) {
         this.timer = timer
@@ -25,6 +25,7 @@ class MultiIngredientDrawable implements IDrawableAnimated {
     }
 
 	void draw(Minecraft minecraft, int xOffset, int yOffset) {
+        if (ingredients.isEmpty()) return
         int time = timer.getValue() % ingredients.size()
         ingredients[time].draw(minecraft, xOffset, yOffset)
     }
