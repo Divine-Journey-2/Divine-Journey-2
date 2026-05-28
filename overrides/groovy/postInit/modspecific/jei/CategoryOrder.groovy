@@ -263,13 +263,13 @@ mods.jei.category.setOrder([
 'evilcraft:sanguinaryEnvironmentalAccumulator',
 
 /// botania
-'botania.brewery',
-'botania.pureDaisy',
-'botania.runicAltar',
 'botania.petals',
-'botania.elvenTrade',
-'requious.terra_plate',
+'botania.pureDaisy',
 'botania.manaPool',
+'botania.runicAltar',
+'botania.elvenTrade',
+'botania.terrestrialAgglomeration',
+'botania.brewery',
 'botania.orechid',
 'botania.orechid_ignem',
 'requious.metamorphic',
@@ -277,9 +277,11 @@ mods.jei.category.setOrder([
 /// thaumcraft
 'THAUMCRAFT_ARCANE_WORKBENCH',
 'THAUMCRAFT_CRUCIBLE',
+'divine_journey_2.matrix_stability',
 'THAUMCRAFT_INFUSION',
 
 /// bewitchment
+'divine_journey_2.altar_upgrades',
 'jei.ritual',
 'tile.bewitchment.witches_oven.name',
 'tile.bewitchment.distillery.name',
