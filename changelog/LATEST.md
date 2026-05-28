@@ -34,6 +34,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Thaumcraft Aspect icons on tooltips rendering in the wrong spot in some situations (Thaumcraft Fix).
 - Fix the Twilight Forest portal sometimes breaking when generated (Twilight Forest - Deforestation Edition).
 - Fix AbyssalCraft Engraving plates being stackable, causing them to consume durability from every item in the stack.
+- Remove a recipe that clears NBT from the Phantom Connector, as it served no purpose and could clear the Omniwand when inside.
 
 ## Balance Adjustments:
 
@@ -58,6 +59,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Prevent placing Livingrock as a block after right clicking the Runic Altar with it in some situation (Botania CEu).
 - Prevent items dropped from the Runic Altar being able to enter other nearby Runic Alters (Botania CEu).
 - Fix TurboStitcher crash on some hardware (VintageFix).
+- Add a few more items to the Omniwand.
 
 ## Text and Quest Updates:
 

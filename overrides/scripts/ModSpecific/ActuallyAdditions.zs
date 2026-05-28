@@ -253,6 +253,7 @@ recipes.remove(<actuallyadditions:block_phantom_redstoneface>);
 recipes.addShaped(<actuallyadditions:block_phantom_redstoneface>, [[<enderio:item_alloy_ingot:3>,<actuallyadditions:item_crystal_empowered>,<enderio:item_alloy_ingot:3>],[<actuallyadditions:item_crystal_empowered>,<actuallyadditions:block_phantomface>,<actuallyadditions:item_crystal_empowered>],[<enderio:item_alloy_ingot:3>,<actuallyadditions:item_crystal_empowered>,<enderio:item_alloy_ingot:3>]]);
 
 // Phantom Connector
+recipes.removeShapeless(<actuallyadditions:item_phantom_connector>);
 recipes.removeShaped(<actuallyadditions:item_phantom_connector>);
 recipes.addShapedMirrored(<actuallyadditions:item_phantom_connector>, [[<actuallyadditions:item_crystal_empowered:3>,null,null],[null,<actuallyadditions:block_misc:8>,null],[null,null,<actuallyadditions:item_crystal_empowered:3>]]);
 
