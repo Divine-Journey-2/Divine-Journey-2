@@ -5,12 +5,15 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Remove Placebo 1.6.1
 - Update Botania CEU 369b -> Botania CEu 372
+- Update Crash Assistant 1.11.0 -> 1.11.9
 - Update FermiumASM 5.28 -> 5.31
-- Update Crash Assistant 1.11.0 -> 1.11.8
 - Update Forgelin-Continuous 2.3.10.0 -> 2.3.20.0
 - Update GroovyScript 1.3.4 -> 1.4.3
-- Update Universal Tweaks 1.18.0 -> 1.19.1
-- Update ZenUtils 1.26.15 -> 1.26.19
+- Update Thaumcraft Fix 1.1.9 -> 1.1.11
+- Update Twilight Forest - Deforestation Edition 3.14 -> 3.15.1
+- Update Universal Tweaks 1.18.0 -> 1.20.0
+- Update VintageFix 0.6.2 -> 0.7.0
+- Update ZenUtils 1.26.15 -> 1.27.2
 
 ## Bugfixes:
 
@@ -25,6 +28,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix the Omniwand being removed when a Chisel within it breaks.
 - Fix the Omniwand being removed when a ProjectRed Screwdriver within it breaks.
 - Reduce the max stack size of mob_grinding_utils upgrades to match the intended maximum of upgrades.
+- Fix Industrial Foregoing Black Hole Tank being able to void buckets when interacted while the player's inventory was full (Universal Tweaks).
+- Fix the DivineRPG Nightmare Bed not dropping when being broken (Universal Tweaks).
+- Fix Thaumcraft Rifts collapsing before being able to enter a Rift Jar (Thaumcraft Fix).
+- Fix Thaumcraft Aspect icons on tooltips rendering in the wrong spot in some situations (Thaumcraft Fix).
+- Fix the Twilight Forest portal sometimes breaking when generated (Twilight Forest - Deforestation Edition).
 
 ## Balance Adjustments:
 
@@ -44,6 +52,11 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a JEI category displaying Thaumcraft Matrix Stabilizers.
 - Replace the JEI category for the Botania Terrestrial Agglomeration Plate with an improved one from Botania CEu (Botania CEu).
 - Show the Runic Altar and Petal Apothecary catalysts in JEI (Botania CEu).
+- Increase performance when rendering items that use HammerLib's item color logic (Universal Tweaks).
+- Allow converting Dirt into Path blocks and Paths back into Dirt (Universal Tweaks).
+- Prevent placing Livingrock as a block after right clicking the Runic Altar with it in some situation (Botania CEu).
+- Prevent items dropped from the Runic Altar being able to enter other nearby Runic Alters (Botania CEu).
+- Fix TurboStitcher crash on some hardware (VintageFix).
 
 ## Text and Quest Updates:
 

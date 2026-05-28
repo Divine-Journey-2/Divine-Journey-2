@@ -5,13 +5,13 @@
     "name": "forge",
     "version": "forge-1.12.2-14.23.5.2860-universal.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.11.8.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.8.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.11.9.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.9.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.8",
-    "curseForgeHash": 2305784281,
-    "modrinthHash": "6a90ca55bff45580a2d5455899e6fc21f9f3a2a4"
+    "version": "1.11.9",
+    "curseForgeHash": 2809995661,
+    "modrinthHash": "453e2c12f8726d1af243988a1a571e44574e93fb"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -1486,13 +1486,13 @@
     "curseForgeHash": 1607642850,
     "modrinthHash": "fe0899048f1796df04e9727bbf1898df30492a00"
   },
-  "ThaumcraftFix-1.12.2-1.1.9.jar": {
-    "jarName": "ThaumcraftFix-1.12.2-1.1.9.jar",
+  "ThaumcraftFix-1.12.2-1.1.11.jar": {
+    "jarName": "ThaumcraftFix-1.12.2-1.1.11.jar",
     "modId": "thaumcraftfix",
     "name": "Thaumcraft Fix",
-    "version": "1.12.2-1.1.9",
-    "curseForgeHash": 2661214910,
-    "modrinthHash": "178ea6a2e2667d0d880eefe8a55cd273c16a57c8"
+    "version": "1.12.2-1.1.11",
+    "curseForgeHash": 4130472372,
+    "modrinthHash": "f736723faf8283228b849412a4af1b632bbd1e2b"
   },
   "ThaumicAugmentation-1.12.2-2.1.14.jar": {
     "jarName": "ThaumicAugmentation-1.12.2-2.1.14.jar",
@@ -1651,13 +1651,13 @@
     "curseForgeHash": 1175574842,
     "modrinthHash": "df4e52aa07486b23780102b4ff34df67ce76a2f8"
   },
-  "twilightforest-1.12.2-3.14.jar": {
-    "jarName": "twilightforest-1.12.2-3.14.jar",
+  "twilightforest-1.12.2-3.15.1.jar": {
+    "jarName": "twilightforest-1.12.2-3.15.1.jar",
     "modId": "twilightforest",
     "name": "The Twilight Forest",
-    "version": "3.14",
-    "curseForgeHash": 3380861111,
-    "modrinthHash": "95c66465a64113dc3ce7b86359cc81843f77da24"
+    "version": "3.15.1",
+    "curseForgeHash": 2680003816,
+    "modrinthHash": "1dd68576a3a90ddf776f4463211620475534b038"
   },
   "uberconduitprobe-1.0.3.jar": {
     "jarName": "uberconduitprobe-1.0.3.jar",
@@ -1683,13 +1683,13 @@
     "curseForgeHash": 1113472475,
     "modrinthHash": "2b72e49682aca50fa55522c5080f2ba20173c565"
   },
-  "UniversalTweaks-1.12.2-1.19.1.jar": {
-    "jarName": "UniversalTweaks-1.12.2-1.19.1.jar",
+  "UniversalTweaks-1.12.2-1.20.0.jar": {
+    "jarName": "UniversalTweaks-1.12.2-1.20.0.jar",
     "modId": "universaltweaks",
     "name": "Universal Tweaks",
-    "version": "1.19.1",
-    "curseForgeHash": 2174474861,
-    "modrinthHash": "2c0b5d34bf6346990ba5a10b76ec3de159adeaa2"
+    "version": "1.20.0",
+    "curseForgeHash": 1576929921,
+    "modrinthHash": "85bdffcafb2888cc235580f62fa5c110b5f7b19c"
   },
   "valkyrielib-1.12.2-2.0.20.1.jar": {
     "jarName": "valkyrielib-1.12.2-2.0.20.1.jar",
@@ -1699,13 +1699,13 @@
     "curseForgeHash": 791322360,
     "modrinthHash": "e640e231cb83ea9ff7cda8710e6d7c44467b9658"
   },
-  "vintagefix-0.6.2.jar": {
-    "jarName": "vintagefix-0.6.2.jar",
+  "vintagefix-0.7.0.jar": {
+    "jarName": "vintagefix-0.7.0.jar",
     "modId": "vintagefix",
     "name": "VintageFix",
-    "version": "0.6.2",
-    "curseForgeHash": 1319026169,
-    "modrinthHash": "eb820c6e58a4d091b80311a28650c7a1b99a1b14"
+    "version": "0.7.0",
+    "curseForgeHash": 1803611387,
+    "modrinthHash": "a753529902a23e17da091f15b6dee6690f75b217"
   },
   "WailaHarvestability-mc1.12-1.1.12.jar": {
     "jarName": "WailaHarvestability-mc1.12-1.1.12.jar",
@@ -1747,13 +1747,13 @@
     "curseForgeHash": 1081862882,
     "modrinthHash": "0bab1c02f1fde38f3cc184d12127ee5eafef7395"
   },
-  "zenutils-1.26.19.jar": {
-    "jarName": "zenutils-1.26.19.jar",
+  "zenutils-1.27.2.jar": {
+    "jarName": "zenutils-1.27.2.jar",
     "modId": "zenutils",
     "name": "ZenUtils",
-    "version": "1.26.19",
-    "curseForgeHash": 4090587236,
-    "modrinthHash": "3619884c516d310ee447118fa09214228bb10cd1"
+    "version": "1.27.2",
+    "curseForgeHash": 643850926,
+    "modrinthHash": "dc78b15324f852fc4a633e2f938b765c355a5ea7"
   },
   "zerocore-1.12.2-0.1.2.9.jar": {
     "jarName": "zerocore-1.12.2-0.1.2.9.jar",
