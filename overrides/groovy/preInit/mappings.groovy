@@ -30,6 +30,11 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
             else if (id in StorageDrawersExtras.ALL_ITEMS) it.ignore()
             else if (id in WirelessAE2Terminal.ALL_ITEMS) it.ignore()
             else if (id == 'baubles:ring') it.ignore()
+            else if (id.startsWith('requious:')) it.ignore()
+        }
+    } else if (type == Block) {
+        event.getAllMappings().forEach {
+            if (id.startsWith('requious:')) it.ignore()
         }
     } else if (type == IFarmerJoe) {
         event.getAllMappings().forEach {

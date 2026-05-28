@@ -532,6 +532,17 @@ mods.abyssalcraft.Transmutator.removeTransmutationInput(<minecraft:end_stone>);
 mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:end_stone>, <liquid:liquidcoralium>);
 mods.thermalexpansion.Transposer.removeFillRecipe(<abyssalcraft:stone:5>, <liquid:liquidcoralium>);
 
+// Engraving Plate stack size
+<abyssalcraft:engraving_blank>.maxStackSize = 1;
+<abyssalcraft:engraving_cthulhu>.maxStackSize = 1;
+<abyssalcraft:engraving_elder>.maxStackSize = 1;
+<abyssalcraft:engraving_jzahar>.maxStackSize = 1;
+<abyssalcraft:engraving_hastur>.maxStackSize = 1;
+<abyssalcraft:engraving_azathoth>.maxStackSize = 1;
+<abyssalcraft:engraving_nyarlathotep>.maxStackSize = 1;
+<abyssalcraft:engraving_yogsothoth>.maxStackSize = 1;
+<abyssalcraft:engraving_shubniggurath>.maxStackSize = 1;
+
 // Blank Coin Engraving
 recipes.remove(<abyssalcraft:engraving_blank>);
 recipes.addShaped(<abyssalcraft:engraving_blank>, [[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>],[<minecraft:paper>,<contenttweaker:neutral_reagent>,<minecraft:paper>],[<minecraft:paper>,<minecraft:paper>,<minecraft:paper>]]);

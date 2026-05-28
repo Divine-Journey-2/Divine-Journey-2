@@ -1140,7 +1140,7 @@
     {
       "slug": "zenutil",
       "projectID": 401178,
-      "fileID": 7821694,
+      "fileID": 8135692,
       "required": true
     },
     {
@@ -1239,7 +1239,7 @@
     {
       "slug": "universal-tweaks",
       "projectID": 705000,
-      "fileID": 7849634,
+      "fileID": 8149643,
       "required": true
     },
     {
@@ -1257,7 +1257,7 @@
     {
       "slug": "vintagefix",
       "projectID": 871198,
-      "fileID": 6609247,
+      "fileID": 7958801,
       "required": true
     },
     {
@@ -1311,7 +1311,7 @@
     {
       "slug": "the-twilight-forest-deforestation-edition",
       "projectID": 1063334,
-      "fileID": 6808448,
+      "fileID": 7846443,
       "required": true
     },
     {
@@ -1323,7 +1323,7 @@
     {
       "slug": "thaumcraftfix",
       "projectID": 1069346,
-      "fileID": 7288369,
+      "fileID": 8150308,
       "required": true
     },
     {
@@ -1341,14 +1341,14 @@
     {
       "slug": "crash-assistant",
       "projectID": 1154099,
-      "fileID": 7913007,
+      "fileID": 8049629,
       "required": true,
       "clientOnly": true
     },
     {
       "slug": "botania-ceu",
       "projectID": 1179448,
-      "fileID": 6900692,
+      "fileID": 7925896,
       "required": true
     },
     {
