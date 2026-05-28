@@ -33,6 +33,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Fix Thaumcraft Rifts collapsing before being able to enter a Rift Jar (Thaumcraft Fix).
 - Fix Thaumcraft Aspect icons on tooltips rendering in the wrong spot in some situations (Thaumcraft Fix).
 - Fix the Twilight Forest portal sometimes breaking when generated (Twilight Forest - Deforestation Edition).
+- Fix AbyssalCraft Engraving plates being stackable, causing them to consume durability from every item in the stack.
 
 ## Balance Adjustments:
 
