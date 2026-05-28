@@ -7,3 +7,37 @@ tile.framedcompactdrawers.framed_slave.name=Framed Controller Access Point
 
 # Fix Totemic wording
 totemic.page.fertility0=The §4Rite of Spring§0 is one of the many growth and fertility §4Ceremonies§0 available to a Totemist. After activating, all nearby animals and villagers will sequentially proceed to breed, consuming food items or Emeralds respectively. However there is a decent chance that a food item will not be consumed.<br>Along with that, any nearby saplings will transform into §1Red Cedar Saplings§0.
+
+# Bewitchment Altar Upgrades Category
+jei.category.divine_journey_2.altar_upgrades.name=Altar Upgrades
+
+dj2.jei.bewitchment.type.sword=Sword Altar Modifiers
+dj2.jei.bewitchment.type.wand=Wand Altar Modifiers
+dj2.jei.bewitchment.type.pentacle=Pentacle Altar Modifiers
+dj2.jei.bewitchment.type.cup=Cup Altar Modifiers
+
+dj2.jei.bewitchment.nothing=Does nothing
+dj2.jei.bewitchment.sword=Multiplies maximum §5Magic Power§r by %s§r
+dj2.jei.bewitchment.wand=Modifies base maximum §5Magic Power§r by %s§r
+dj2.jei.bewitchment.pentacle=Modifies §5Magic Power§r gain by %s§r
+dj2.jei.bewitchment.cup_add=Modifies §5Magic Power§r gain by %s§r
+dj2.jei.bewitchment.cup_times=Multiplies maximum §5Magic Power§r by %s§r
+dj2.jei.bewitchment.cup_both=Modifies §5Magic Power§r gain by %s§r and multiplies maximum §5Magic Power§r by %s§r
+
+dj2.jei.bewitchment.entry.soul_reaper=Requires §c1024§r souls inside
+dj2.jei.bewitchment.entry.rift_jar=Requires a Rift Jar without a Rift
+dj2.jei.bewitchment.entry.full_rift_jar=Requires a Rift Jar with a Rift of at least size §c90§r (the max size is §c100§r)
+dj2.jei.bewitchment.entry.flower_pot=Requires an empty Flower Pot
+dj2.jei.bewitchment.entry.flower_pot_full=Requires a full Flower Pot
+
+# Thaumcraft Matrix Stability Category
+jei.category.divine_journey_2.matrix_stability.name=Runic Matrix Stabilizers
+
+dj2.jei.thaumcraft.matrix.base=Modifies Runic Matrix stability when within range, with diminishing returns.
+dj2.jei.thaumcraft.matrix.blockstate_note=§d§oAll blockstates of the given block are considered the same.§r
+dj2.jei.thaumcraft.matrix.increase=§bIncreases§r or §creduces§r stability by §b%s§r, depending on if it is matched.
+dj2.jei.thaumcraft.matrix.decrease=§cReduces§r stability by §c%s§r if not matched.
+
+# Bewitchment Rituals
+ritual.divine_journey_2.cycles=Rite of Cycles
+ritual.divine_journey_2.tough_and_pure=Rite of the Tough and Pure
