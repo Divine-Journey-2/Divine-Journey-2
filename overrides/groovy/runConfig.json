@@ -6,6 +6,7 @@
   "debug": false,
   "loaders": {
     "preInit": [
+      "classes/content/jei/category/GenericRecipeCategory.groovy",
       "classes/",
       "preInit/"
     ],
