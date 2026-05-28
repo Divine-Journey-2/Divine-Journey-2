@@ -81,5 +81,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 - Make the Discord badge use an image icon instead of the svg and color it.
 - Make the Patreon badge use the Patreon icon.
+- Add the ModDex.gg badge.
 
 ## Miscellaneous Changes:

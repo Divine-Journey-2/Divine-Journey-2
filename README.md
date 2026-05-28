@@ -12,6 +12,7 @@ By Atricos and a number of others - see the [Credits](readme/CREDITS.md).
 <div align="center">
 
 [![Total CurseForge Downloads](https://cf.way2muchnoise.eu/full_370666_Downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/modpacks/divine-journey-2/files)
+[![ModDex rating](https://moddex.gg/badges/projects/divine-journey-2/rating.svg?style=for-the-badge)](https://moddex.gg/modpack/divine-journey-2)
 
 [![Minecraft Version](https://img.shields.io/badge/For%20Minecraft-1.12.2-yellow.svg?style=for-the-badge)](/manifest.json)
 [![Most recent GitHub release](https://img.shields.io/github/v/release/divine-journey-2/divine-journey-2?color=%23C82A26&label=Latest%20Release&style=for-the-badge)](https://github.com/Divine-Journey-2/Divine-Journey-2/releases/latest)
