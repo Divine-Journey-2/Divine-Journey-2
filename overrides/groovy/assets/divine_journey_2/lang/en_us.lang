@@ -30,6 +30,14 @@ dj2.jei.bewitchment.entry.full_rift_jar=Requires a Rift Jar with a Rift of at le
 dj2.jei.bewitchment.entry.flower_pot=Requires an empty Flower Pot
 dj2.jei.bewitchment.entry.flower_pot_full=Requires a full Flower Pot
 
+# Thaumcraft Matrix Stability Category
+jei.category.divine_journey_2.matrix_stability.name=Runic Matrix Stabilizers
+
+dj2.jei.thaumcraft.matrix.base=Modifies Runic Matrix stability when within range, with diminishing returns.
+dj2.jei.thaumcraft.matrix.blockstate_note=§d§oAll blockstates of the given block are considered the same.§r
+dj2.jei.thaumcraft.matrix.increase=§bIncreases§r or §creduces§r stability by §b%s§r, depending on if it is matched.
+dj2.jei.thaumcraft.matrix.decrease=§cReduces§r stability by §c%s§r if not matched.
+
 # Bewitchment Rituals
 ritual.divine_journey_2.cycles=Rite of Cycles
 ritual.divine_journey_2.tough_and_pure=Rite of the Tough and Pure
