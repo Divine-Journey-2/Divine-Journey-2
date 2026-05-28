@@ -69,6 +69,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make the Runic Crafter quest not require completing the Runed Obsidian quest.
 - Make the Actually Additions Capacitor quest display the correct item as its icon.
 - Rename references to the Bewitchment "Altar Power" to the more accurate "Magic Power" in the questbook.
+- Improve the description of the Slimesling and Slime Boots in their quest.
 
 ## Texture Transformations:
 
