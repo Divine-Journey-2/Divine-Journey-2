@@ -4,6 +4,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 ## Mod Modifications:
 
 - Remove Placebo 1.6.1
+- Update Botania CEU 369b -> Botania CEu 372
 - Update FermiumASM 5.28 -> 5.31
 - Update Crash Assistant 1.11.0 -> 1.11.8
 - Update Forgelin-Continuous 2.3.10.0 -> 2.3.20.0
@@ -40,7 +41,9 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Add a number of additional catalyst items to JEI categories.
 - Reorder JEI categories.
 - Add a JEI category displaying Bewitchment Altar Upgrades.
-- Add a JEI category displaying Thaumcraft Matrix Stabilizers
+- Add a JEI category displaying Thaumcraft Matrix Stabilizers.
+- Replace the JEI category for the Botania Terrestrial Agglomeration Plate with an improved one from Botania CEu (Botania CEu).
+- Show the Runic Altar and Petal Apothecary catalysts in JEI (Botania CEu).
 
 ## Text and Quest Updates:
 

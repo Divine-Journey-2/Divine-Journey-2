@@ -316,13 +316,13 @@
     "curseForgeHash": 2546524333,
     "modrinthHash": "83a1864dd78f48102609849dd36866d6cf32b907"
   },
-  "Botania r1.10-369b.jar": {
-    "jarName": "Botania r1.10-369b.jar",
+  "botania-r1.10-372.jar": {
+    "jarName": "botania-r1.10-372.jar",
     "modId": "botania",
-    "name": "Botania",
-    "version": "r1.10-369b",
-    "curseForgeHash": 1989024628,
-    "modrinthHash": "bab7808a7f6c2d689ce1ef5bda49af1786ea8092"
+    "name": "Botania CEu",
+    "version": "r1.10-372",
+    "curseForgeHash": 3415584238,
+    "modrinthHash": "98bfad8a161266df8cce803d6d700b79ba9034ed"
   },
   "BQTweaker-1.3.5.jar": {
     "jarName": "BQTweaker-1.3.5.jar",
