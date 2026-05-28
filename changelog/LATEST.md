@@ -70,6 +70,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 - Make the Actually Additions Capacitor quest display the correct item as its icon.
 - Rename references to the Bewitchment "Altar Power" to the more accurate "Magic Power" in the questbook.
 - Improve the description of the Slimesling and Slime Boots in their quest.
+- Make the Roots Terrastone quest have an actual description that describes the Terrastone tools, instead of copying the Living tools.
 
 ## Texture Transformations:
 
