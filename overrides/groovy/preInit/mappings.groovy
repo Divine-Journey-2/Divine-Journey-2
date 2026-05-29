@@ -34,6 +34,7 @@ event_manager.listen { RegistryEvent.MissingMappings event ->
         }
     } else if (type == Block) {
         event.getAllMappings().forEach {
+            def id = it.key.toString()
             if (id.startsWith('requious:')) it.ignore()
         }
     } else if (type == IFarmerJoe) {
