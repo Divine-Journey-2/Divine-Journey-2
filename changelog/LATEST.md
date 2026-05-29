@@ -6,7 +6,6 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
-- Fix a catastrophic skill issue typo that made mappings break.
 
 ## Balance Adjustments:
 
