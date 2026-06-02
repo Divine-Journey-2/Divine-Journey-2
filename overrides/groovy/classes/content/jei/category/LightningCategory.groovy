@@ -1,3 +1,4 @@
+// side: client
 package classes.content.jei.category
 
 import classes.content.lightningcraft.LightningConversionRecipe
@@ -10,6 +11,7 @@ import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
 import mezz.jei.api.recipe.IRecipeWrapper
 import net.minecraft.util.text.translation.I18n
+import net.minecraft.client.Minecraft
 
 class LightningCategory extends GenericRecipeCategory {
 
@@ -53,7 +55,7 @@ class LightningCategory extends GenericRecipeCategory {
         super.setRecipe(recipeLayout, recipeWrapper, ingredients)
     }
 
-    void drawExtras(net.minecraft.client.Minecraft minecraft) {
+    void drawExtras(Minecraft minecraft) {
         rightArrow.draw(minecraft, ARROW_Y, PADDING)
         lightning.draw(minecraft, LIGHTNING_LOCATION.left, LIGHTNING_LOCATION.top)
 	}

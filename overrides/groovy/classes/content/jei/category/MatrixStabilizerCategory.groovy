@@ -1,3 +1,4 @@
+// side: client
 package classes.content.jei.category
 
 import classes.content.thaumcraft.MatrixStabilityStorage

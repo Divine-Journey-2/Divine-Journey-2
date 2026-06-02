@@ -14,7 +14,8 @@
       "init/"
     ],
     "postInit": [
-      "postInit/"
+      "postInit/",
+      "postInit/modspecific/jei/CustomCategories.groovy"
     ]
   }
 }

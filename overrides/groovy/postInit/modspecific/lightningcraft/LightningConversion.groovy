@@ -55,16 +55,3 @@ eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event 
     def entityitem = new EntityLCItem(world, entity.posX, entity.posY, entity.posZ, out)
     world.spawnEntity(entityitem)
 }
-
-import classes.content.jei.category.LightningCategory
-
-mods.jei.description.remove(item('lightningcraft:guide'))
-mods.jei.description.remove(item('lightningcraft:ingot'))
-mods.jei.description.remove(item('lightningcraft:material', 11))
-
-mods.jei.category.categoryBuilder()
-    .id(LightningCategory.UID)
-    .category(guiHelper -> new LightningCategory(guiHelper))
-    .catalyst(item('lightningcraft:golf_club_gold'), item('divinerpg:serenade_striker'), item('evilcraft:lightning_grenade'))
-    .wrapper(LightningCategory.getRecipeWrappers())
-    .register()

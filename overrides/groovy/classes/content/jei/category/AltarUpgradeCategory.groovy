@@ -1,3 +1,4 @@
+// side: client
 package classes.content.jei.category
 
 import classes.content.bewitchment.AltarUpgradeStorage
@@ -11,6 +12,7 @@ import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
 import mezz.jei.api.recipe.IRecipeWrapper
 import net.minecraft.util.text.translation.I18n
+import net.minecraft.client.Minecraft
 import com.bewitchment.api.registry.AltarUpgrade
 
 class AltarUpgradeCategory extends GenericRecipeCategory {
@@ -81,7 +83,7 @@ class AltarUpgradeCategory extends GenericRecipeCategory {
         }
 
         @Override
-        void drawInfo(net.minecraft.client.Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
+        void drawInfo(Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
             displayTypes[type].draw(minecraft, TYPE_LOCATION.left, TYPE_LOCATION.top)
         }
 

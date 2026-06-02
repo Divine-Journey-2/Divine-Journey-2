@@ -66,14 +66,3 @@ add(block('thaumcraft:stabilizer'), 0.25)
 add(block('twilightforest:firefly_jar'), 0.1)
 add(block('twilightforest:trophy_pedestal'), 0.1)
 MatrixStabilityStorage.ENTRIES << new MatrixStabilityStorage.Entry(block('twilightforest:trophy'), 0.1, 0.0, [item('twilightforest:trophy:*')])
-
-
-/// add the category to jei
-import classes.content.jei.category.MatrixStabilizerCategory
-
-mods.jei.category.categoryBuilder()
-    .id(MatrixStabilizerCategory.UID)
-    .category(guiHelper -> new MatrixStabilizerCategory(guiHelper))
-    .catalyst(item('thaumcraft:infusion_matrix'), item('thaumicaugmentation:impetus_matrix'))
-    .wrapper(MatrixStabilizerCategory.getRecipeWrappers())
-    .register()

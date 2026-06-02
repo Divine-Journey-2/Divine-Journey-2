@@ -1,8 +1,10 @@
+// side: client
 package classes.content.jei
 
 import mezz.jei.api.gui.IDrawable
 import mezz.jei.api.gui.IDrawableAnimated
 import mezz.jei.api.gui.ITickTimer
+import net.minecraft.client.Minecraft
 
 /// animated drawable that cycles between drawing the listed ingredients
 class MultiIngredientDrawable implements IDrawableAnimated {
@@ -23,7 +25,7 @@ class MultiIngredientDrawable implements IDrawableAnimated {
         16
     }
 
-	void draw(net.minecraft.client.Minecraft minecraft, int xOffset, int yOffset) {
+	void draw(Minecraft minecraft, int xOffset, int yOffset) {
         if (ingredients.isEmpty()) return
         int time = timer.getValue() % ingredients.size()
         ingredients[time].draw(minecraft, xOffset, yOffset)

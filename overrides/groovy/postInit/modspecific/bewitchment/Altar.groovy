@@ -110,15 +110,3 @@ addJei(addCup(s -> s.getTileEntity() instanceof TileRiftJar && s.getTileEntity()
 
 addCup(item('projecte:item.pe_void_ring'), 4, 10)
 
-
-/// add the category to jei
-import classes.content.jei.category.AltarUpgradeCategory
-
-def altars = [item('bewitchment:stone_witches_altar'), item('bewitchment:nether_brick_witches_altar'), item('bewitchment:obsidian_witches_altar'), item('bewitchment:coquina_witches_altar'), item('bewitchment:embittered_brick_witches_altar'), item('bewitchment:scorned_brick_witches_altar')]
-
-mods.jei.category.categoryBuilder()
-    .id(AltarUpgradeCategory.UID)
-    .category(guiHelper -> new AltarUpgradeCategory(guiHelper, altars))
-    .catalyst(altars)
-    .wrapper(AltarUpgradeCategory.getRecipeWrappers())
-    .register()
