@@ -45,11 +45,6 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:golf_club_gold>,
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null],
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null]]);
 
-// Electricium Ingot
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc0"));
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc1"));
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc2"));
-
 // Lightning Energy Cell
 recipes.remove(<lightningcraft:lightning_cell>);
 recipes.addShaped(<lightningcraft:lightning_cell>, [[<lightningcraft:ingot>,<contenttweaker:lightning_charge>,<lightningcraft:ingot>],[<contenttweaker:lightning_charge>,<extendedcrafting:frame>,<contenttweaker:lightning_charge>],[<lightningcraft:ingot>,<contenttweaker:lightning_charge>,<lightningcraft:ingot>]]);
@@ -140,11 +135,6 @@ recipes.addShaped(<lightningcraft:wireless_block:3>, [[null,<lightningcraft:air_
 LightningCrusher.remove(<lightningcraft:material:5>);
 <lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc0"));
 <lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc1"));
-
-// Ichor
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc0"));
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc1"));
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc2"));
 
 RecipeBuilder.newBuilder("ichor", "lightningcraft_infusion_multiblock", 300)
     .addEnergyPerTickInput(5000)
