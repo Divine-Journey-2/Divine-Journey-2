@@ -10,7 +10,6 @@ import mezz.jei.api.gui.ITooltipCallback
 import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
 import mezz.jei.api.recipe.IRecipeWrapper
-import net.minecraft.client.Minecraft
 import net.minecraft.util.text.translation.I18n
 import com.bewitchment.api.registry.AltarUpgrade
 
@@ -82,7 +81,7 @@ class AltarUpgradeCategory extends GenericRecipeCategory {
         }
 
         @Override
-        void drawInfo(Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
+        void drawInfo(net.minecraft.client.Minecraft minecraft, int recipeWidth, int recipeHeight, int mouseX, int mouseY) {
             displayTypes[type].draw(minecraft, TYPE_LOCATION.left, TYPE_LOCATION.top)
         }
 

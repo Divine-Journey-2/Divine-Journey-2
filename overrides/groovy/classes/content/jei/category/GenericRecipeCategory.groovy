@@ -9,7 +9,7 @@ import mezz.jei.api.recipe.IRecipeWrapper
 import mezz.jei.api.recipe.IIngredientType
 import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
-import net.minecraft.client.resources.I18n
+import net.minecraft.util.text.translation.I18n
 
 /// a generic helper category
 abstract class GenericRecipeCategory implements IRecipeCategory<IRecipeWrapper> {
@@ -63,7 +63,7 @@ abstract class GenericRecipeCategory implements IRecipeCategory<IRecipeWrapper> 
     }
 
     String getTitle() {
-        I18n.format("jei.category.${this.uid}.name")
+        I18n.translateToLocal("jei.category.${this.uid}.name")
     }
 
     String getModName() {
