@@ -296,8 +296,9 @@ mods.jei.category.setOrder([
 'divinerpg:arcana_extractor',
 
 /// lightningcraft
-'lightningcraft.crusher_recipe_category',
+'divine_journey_2.lightning',
 'lightningcraft.infusion_recipe_category',
+'lightningcraft.crusher_recipe_category',
 
 /// astral sorcery
 'astralsorcery.lightwell',
