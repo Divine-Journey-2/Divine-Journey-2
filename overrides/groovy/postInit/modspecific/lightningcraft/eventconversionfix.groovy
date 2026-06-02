@@ -3,6 +3,7 @@
 import classes.content.lightningcraft.LightningConversionRecipe
 import net.minecraftforge.event.entity.EntityStruckByLightningEvent
 import net.minecraft.entity.item.EntityItem
+import sblectric.lightningcraft.recipes.LightningTransformRecipes
 import sblectric.lightningcraft.entities.EntityLCItem
 
 // this script is needed to fix a bug where some lightning generation
@@ -11,6 +12,11 @@ import sblectric.lightningcraft.entities.EntityLCItem
 // also makes some other changes, like not voiding excess of the same item,
 // failing due to unrelated items nearby, and adding a recipe for the blocks.
 
+// remove the lightningcraft recipes
+LightningTransformRecipes.metaClass.makePublic('recipeList')
+LightningTransformRecipes.instance().recipeList.clear()
+
+// add those recipes to our registry
 LightningConversionRecipe.RECIPES.clear()
 LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond'), item('minecraft:iron_ingot'), item('minecraft:gold_ingot')], item('lightningcraft:ingot'))
 LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond_block'), item('minecraft:iron_block'), item('minecraft:gold_block')], item('lightningcraft:metal_block'))
