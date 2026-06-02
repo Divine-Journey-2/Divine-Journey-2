@@ -18,9 +18,9 @@ LightningTransformRecipes.instance().recipeList.clear()
 
 // add those recipes to our registry
 LightningConversionRecipe.RECIPES.clear()
-LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond'), item('minecraft:iron_ingot'), item('minecraft:gold_ingot')], item('lightningcraft:ingot'))
-LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond_block'), item('minecraft:iron_block'), item('minecraft:gold_block')], item('lightningcraft:metal_block'))
-LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('lightningcraft:material', 5), item('lightningcraft:ingot', 1), item('minecraft:emerald')], item('lightningcraft:material', 11))
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('botania:manaresource', 2), item('enderio:item_alloy_endergy_ingot', 1), item('plustic:mirioningot')], item('lightningcraft:ingot'))
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('botania:storage', 3), item('enderio:block_alloy_endergy', 1), item('plustic:mirionblock')], item('lightningcraft:metal_block'))
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('lightningcraft:material', 5), item('lightningcraft:ingot', 1), item('bewitchment:stone_ichor')], item('lightningcraft:material', 11))
 
 // highest so it goes before the normal lightningcraft recipes
 eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event ->
