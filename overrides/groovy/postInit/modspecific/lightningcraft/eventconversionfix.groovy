@@ -25,7 +25,7 @@ eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event 
     def activeItems = [entity]
 
     // find all nearby items that are valid inputs for a recipe
-    for (def nearby : world.getEntitiesInAABBexcluding(entity, entity.getEntityBoundingBox().grow(2), { it instanceof EntityItem && LightningConversionRecipe.isValidInput(it.getItem()) })) {
+    for (def nearby : world.getEntitiesInAABBexcluding(entity, entity.getEntityBoundingBox().grow(2), { it instanceof EntityItem && !it.isDead && LightningConversionRecipe.isValidInput(it.getItem()) })) {
         activeItems << nearby
     }
 

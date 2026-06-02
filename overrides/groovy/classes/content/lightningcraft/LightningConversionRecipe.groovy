@@ -21,10 +21,10 @@ class LightningConversionRecipe {
     /// either empty or the output stack of the recipe
     /// mutates the input list to remove items not part of the recipe
     static ItemStack getRecipeOutput(List<EntityItem> activeItems) {
-        def inputs = activeItems.collect { getItem() }
+        def inputs = activeItems.collect { it.getItem() }
         for (def recipe in RECIPES) {
             if (recipe.inputsMatch(inputs)) {
-                filterInputs(activeItems)
+                recipe.filterInputs(activeItems)
                 return recipe.getOutput()
             }
         }
@@ -62,6 +62,10 @@ class LightningConversionRecipe {
             }
             return true
         }
+    }
+
+    List<ItemStack> getInputs() {
+        inputs
     }
 
     ItemStack getOutput() {
