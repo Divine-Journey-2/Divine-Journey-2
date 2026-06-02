@@ -15,6 +15,8 @@ import net.minecraft.util.text.translation.I18n
 abstract class GenericRecipeCategory implements IRecipeCategory<IRecipeWrapper> {
 
     public static final int SLOT_SIZE = 18
+    public static final int ARROW_WIDTH = 24
+    public static final int ARROW_HEIGHT = 15
 
     static def guiHelper
     static def rightArrow
@@ -38,8 +40,8 @@ abstract class GenericRecipeCategory implements IRecipeCategory<IRecipeWrapper> 
     private static void init(helper) {
         if (guiHelper == null) {
             guiHelper = helper
-            rightArrow = helper.drawableBuilder(resource('groovyscript:textures/jei/arrow_right.png'), 0, 0, 24, 15)
-                .setTextureSize(24, 15)
+            rightArrow = helper.drawableBuilder(resource('groovyscript:textures/jei/arrow_right.png'), 0, 0, ARROW_WIDTH, ARROW_HEIGHT)
+                .setTextureSize(ARROW_WIDTH, ARROW_HEIGHT)
                 .build()
             slot = helper.getSlotDrawable()
         }
