@@ -14,7 +14,7 @@ import sblectric.lightningcraft.entities.EntityLCItem
 LightningConversionRecipe.RECIPES.clear()
 LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond'), item('minecraft:iron_ingot'), item('minecraft:gold_ingot')], item('lightningcraft:ingot'))
 LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond_block'), item('minecraft:iron_block'), item('minecraft:gold_block')], item('lightningcraft:metal_block'))
-
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('lightningcraft:material', 5), item('lightningcraft:ingot', 1), item('minecraft:emerald')], item('lightningcraft:material', 11))
 
 // highest so it goes before the normal lightningcraft recipes
 eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event ->
