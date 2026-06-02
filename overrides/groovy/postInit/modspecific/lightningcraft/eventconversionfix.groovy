@@ -58,7 +58,9 @@ eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event 
 
 import classes.content.jei.category.LightningCategory
 
+mods.jei.description.remove(item('lightningcraft:guide'))
 mods.jei.description.remove(item('lightningcraft:ingot'))
+mods.jei.description.remove(item('lightningcraft:material', 11))
 
 mods.jei.category.categoryBuilder()
     .id(LightningCategory.UID)
