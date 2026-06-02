@@ -38,6 +38,11 @@ dj2.jei.thaumcraft.matrix.blockstate_note=§d§oAll blockstates of the given blo
 dj2.jei.thaumcraft.matrix.increase=§bIncreases§r or §creduces§r stability by §b%s§r, depending on if it is matched.
 dj2.jei.thaumcraft.matrix.decrease=§cReduces§r stability by §c%s§r if not matched.
 
+# Lightning Conversion Category
+jei.category.divine_journey_2.lightning.name=Lightning Conversion
+
+dj2.jei.lightningcraft.lightning.instruction=Strike the input items with lightning
+
 # Bewitchment Rituals
 ritual.divine_journey_2.cycles=Rite of Cycles
 ritual.divine_journey_2.tough_and_pure=Rite of the Tough and Pure
