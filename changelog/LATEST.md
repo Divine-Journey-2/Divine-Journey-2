@@ -6,6 +6,7 @@ View all [changelogs](https://github.com/Divine-Journey-2/Divine-Journey-2/tree/
 
 ## Bugfixes:
 
+- Decrease the Magic Power required for the Essence of Cycles to prevent the recipe from failing on the first tick.
 
 ## Balance Adjustments:
 
