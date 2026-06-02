@@ -26,7 +26,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<lightningcraft:rod:5>, <minecraf
 
 // Electricium Ingot
 LightningInfusion.remove(<lightningcraft:ingot>);
-LightningInfusion.add(<lightningcraft:ingot>, <botania:manaresource:2>, 30, [<enderio:item_alloy_endergy_ingot:1>, <plustic:mirioningot>]);
+LightningInfusion.add(<lightningcraft:ingot>, <botania:manaresource:2>, 30, [<enderio:item_alloy_endergy_ingot:1>, <plustic:mirioningot>, null, null]);
 
 RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
     .addEnergyPerTickInput(1000)
@@ -38,7 +38,7 @@ RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_mu
 
 // Electricium Block
 LightningInfusion.remove(<lightningcraft:metal_block>);
-LightningInfusion.add(<lightningcraft:metal_block>, <botania:storage:3>, 270, [<enderio:block_alloy_endergy:1>, <plustic:mirionblock>]);
+LightningInfusion.add(<lightningcraft:metal_block>, <botania:storage:3>, 270, [<enderio:block_alloy_endergy:1>, <plustic:mirionblock>, null, null]);
 RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_multiblock", 300)
     .addEnergyPerTickInput(1000)
     .addItemInput(<botania:storage:3>)
