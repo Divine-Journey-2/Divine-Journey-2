@@ -36,7 +36,7 @@ eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event 
     }
 
     // get the recipe output, also removes unused items from the list
-    def out = LightningConversionRecipe.getRecipeOutput(activeItems)
+    def out = LightningConversionRecipe.getRecipeOutput(entity, activeItems)
     if (out.isEmpty()) return
 
     // remove the items used
