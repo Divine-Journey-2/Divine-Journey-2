@@ -347,14 +347,8 @@ dj2.dynamic_tank_warning.desc1=§fits liquid. NOT recommended to craft / use.
 dj2.gaugedropper.desc0=Empty via Shift Clicking into the air.
 
 # Lightningcraft tooltips
-dj2.electricium.desc0=§fCreate this for the first time by
-dj2.electricium.desc1=§fstriking a piece of Diamond, Gold
-dj2.electricium.desc2=§fIngot and Iron Ingot with lightning!
 dj2.demon_blood.desc0=§fDropped by Demon Soldiers spawning
 dj2.demon_blood.desc1=§fnaturally in the Nether.
-dj2.ichor.desc0=§fInitially created by striking Demon Blood,
-dj2.ichor.desc1=§fSkyfather Ingot and an Emerald
-dj2.ichor.desc2=§fon the ground with lightning.
 dj2.underpowder.desc0=§fDropped by Undercreeps in the Underworld.
 dj2.guards_bone.desc0=§fDropped by Skeleton Guards in the Underworld.
 

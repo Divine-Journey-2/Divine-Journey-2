@@ -3,6 +3,7 @@
 import classes.content.lightningcraft.LightningConversionRecipe
 import net.minecraftforge.event.entity.EntityStruckByLightningEvent
 import net.minecraft.entity.item.EntityItem
+import sblectric.lightningcraft.recipes.LightningTransformRecipes
 import sblectric.lightningcraft.entities.EntityLCItem
 
 // this script is needed to fix a bug where some lightning generation
@@ -11,10 +12,15 @@ import sblectric.lightningcraft.entities.EntityLCItem
 // also makes some other changes, like not voiding excess of the same item,
 // failing due to unrelated items nearby, and adding a recipe for the blocks.
 
-LightningConversionRecipe.RECIPES.clear()
-LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond'), item('minecraft:iron_ingot'), item('minecraft:gold_ingot')], item('lightningcraft:ingot'))
-LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('minecraft:diamond_block'), item('minecraft:iron_block'), item('minecraft:gold_block')], item('lightningcraft:metal_block'))
+// remove the lightningcraft recipes
+LightningTransformRecipes.metaClass.makePublic('recipeList')
+LightningTransformRecipes.instance().recipeList.clear()
 
+// add those recipes to our registry
+LightningConversionRecipe.RECIPES.clear()
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('botania:manaresource', 2), item('enderio:item_alloy_endergy_ingot', 1), item('plustic:mirioningot')], item('lightningcraft:ingot'))
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('botania:storage', 3), item('enderio:block_alloy_endergy', 1), item('plustic:mirionblock')], item('lightningcraft:metal_block'))
+LightningConversionRecipe.RECIPES << new LightningConversionRecipe([item('lightningcraft:material', 5), item('lightningcraft:ingot', 1), item('bewitchment:stone_ichor')], item('lightningcraft:material', 11))
 
 // highest so it goes before the normal lightningcraft recipes
 eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event ->
@@ -25,12 +31,12 @@ eventManager.listen(EventPriority.HIGHEST) { EntityStruckByLightningEvent event 
     def activeItems = [entity]
 
     // find all nearby items that are valid inputs for a recipe
-    for (def nearby : world.getEntitiesInAABBexcluding(entity, entity.getEntityBoundingBox().grow(2), { it instanceof EntityItem && LightningConversionRecipe.isValidInput(it.getItem()) })) {
+    for (def nearby : world.getEntitiesInAABBexcluding(entity, entity.getEntityBoundingBox().grow(2), { it instanceof EntityItem && !it.isDead && LightningConversionRecipe.isValidInput(it.getItem()) })) {
         activeItems << nearby
     }
 
     // get the recipe output, also removes unused items from the list
-    def out = LightningConversionRecipe.getRecipeOutput(activeItems)
+    def out = LightningConversionRecipe.getRecipeOutput(entity, activeItems)
     if (out.isEmpty()) return
 
     // remove the items used

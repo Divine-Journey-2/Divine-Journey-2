@@ -1,3 +1,4 @@
+// side: client
 package classes.content.jei
 
 import mezz.jei.api.gui.IDrawable

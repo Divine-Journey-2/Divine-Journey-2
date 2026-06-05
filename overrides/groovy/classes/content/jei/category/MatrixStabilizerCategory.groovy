@@ -1,8 +1,7 @@
+// side: client
 package classes.content.jei.category
 
 import classes.content.thaumcraft.MatrixStabilityStorage
-import classes.content.jei.Area
-import classes.content.jei.MultiIngredientDrawable
 import classes.content.jei.category.GenericRecipeCategory
 
 import mezz.jei.api.gui.IRecipeLayout
@@ -10,8 +9,6 @@ import mezz.jei.api.gui.ITooltipCallback
 import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
 import mezz.jei.api.recipe.IRecipeWrapper
-import net.minecraft.client.Minecraft
-import net.minecraft.util.text.translation.I18n
 
 class MatrixStabilizerCategory extends GenericRecipeCategory {
 
@@ -20,7 +17,6 @@ class MatrixStabilizerCategory extends GenericRecipeCategory {
     private static final int ROWS = 6
     private static final int COLUMNS = 9
     private static final int TOTAL_SLOTS = ROWS * COLUMNS
-    private static final int CYCLE_TIME = 20 * 5 * 4
 
     MatrixStabilizerCategory(guiHelper) {
         super(guiHelper, UID, SLOT_SIZE * COLUMNS, SLOT_SIZE * ROWS)

@@ -1,3 +1,4 @@
+// side: client
 package classes.content.jei.category
 
 import classes.content.bewitchment.AltarUpgradeStorage
@@ -10,8 +11,8 @@ import mezz.jei.api.gui.ITooltipCallback
 import mezz.jei.api.ingredients.IIngredients
 import mezz.jei.api.ingredients.VanillaTypes
 import mezz.jei.api.recipe.IRecipeWrapper
-import net.minecraft.client.Minecraft
 import net.minecraft.util.text.translation.I18n
+import net.minecraft.client.Minecraft
 import com.bewitchment.api.registry.AltarUpgrade
 
 class AltarUpgradeCategory extends GenericRecipeCategory {

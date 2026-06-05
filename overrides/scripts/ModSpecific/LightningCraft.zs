@@ -24,6 +24,29 @@ recipes.addShaped(<lightningcraft:rod:5>, [[<minecraft:gold_ingot>],[<minecraft:
 mods.immersiveengineering.MetalPress.removeRecipe(<lightningcraft:rod:5>);
 mods.immersiveengineering.MetalPress.addRecipe(<lightningcraft:rod:5>, <minecraft:gold_ingot>, <immersiveengineering:mold:2>, 2400);
 
+// Electricium Ingot
+LightningInfusion.remove(<lightningcraft:ingot>);
+LightningInfusion.add(<lightningcraft:ingot>, <botania:manaresource:2>, 30, [<enderio:item_alloy_endergy_ingot:1>, <plustic:mirioningot>, null, null]);
+
+RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(1000)
+    .addItemInput(<botania:manaresource:2>)
+    .addItemInput(<enderio:item_alloy_endergy_ingot:1>)
+    .addItemInput(<plustic:mirioningot>)
+    .addItemOutput(<lightningcraft:ingot>)
+    .build();
+
+// Electricium Block
+LightningInfusion.remove(<lightningcraft:metal_block>);
+LightningInfusion.add(<lightningcraft:metal_block>, <botania:storage:3>, 270, [<enderio:block_alloy_endergy:1>, <plustic:mirionblock>, null, null]);
+RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_multiblock", 300)
+    .addEnergyPerTickInput(1000)
+    .addItemInput(<botania:storage:3>)
+    .addItemInput(<enderio:block_alloy_endergy:1>)
+    .addItemInput(<plustic:mirionblock>)
+    .addItemOutput(<lightningcraft:metal_block>)
+    .build();
+
 // Electricium Plate
 recipes.remove(<lightningcraft:plate:7>);
 recipes.addShapeless(<lightningcraft:plate:7>, [<contenttweaker:iron_hammer>.anyDamage().transformDamage(1), <lightningcraft:ingot>, <lightningcraft:ingot>]);
@@ -44,11 +67,6 @@ mods.extendedcrafting.TableCrafting.addShaped(<lightningcraft:golf_club_gold>,
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null],
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null],
 [null,null,null,<minecraft:gold_block>,<bewitchment:cold_iron_ingot>,<minecraft:gold_block>,null]]);
-
-// Electricium Ingot
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc0"));
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc1"));
-<lightningcraft:ingot>.addTooltip(game.localize("dj2.electricium.desc2"));
 
 // Lightning Energy Cell
 recipes.remove(<lightningcraft:lightning_cell>);
@@ -141,16 +159,11 @@ LightningCrusher.remove(<lightningcraft:material:5>);
 <lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc0"));
 <lightningcraft:material:5>.addTooltip(game.localize("dj2.demon_blood.desc1"));
 
-// Ichor
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc0"));
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc1"));
-<lightningcraft:material:11>.addTooltip(game.localize("dj2.ichor.desc2"));
-
 RecipeBuilder.newBuilder("ichor", "lightningcraft_infusion_multiblock", 300)
     .addEnergyPerTickInput(5000)
     .addItemInput(<lightningcraft:material:5>)
     .addItemInput(<lightningcraft:ingot:1>)
-    .addItemInput(<minecraft:emerald>)
+    .addItemInput(<bewitchment:stone_ichor>)
     .addItemOutput(<lightningcraft:material:11>)
     .build();
 
@@ -440,23 +453,6 @@ RecipeBuilder.newBuilder("bonemeal_recipe", "lightningcraft_infusion_multiblock"
     .addItemInput(<thermalfoundation:material:1027> * 16)
     .addItemInput(<bloodmagic:cutting_fluid:0>)
     .addItemOutput(<lightningcraft:material:8> * 3)
-    .build();
-
-// Add Electricium to Modular Machine
-RecipeBuilder.newBuilder("electricium_ingot_recipe", "lightningcraft_infusion_multiblock", 300)
-    .addEnergyPerTickInput(1000)
-    .addItemInput(<minecraft:diamond>)
-    .addItemInput(<minecraft:iron_ingot>)
-    .addItemInput(<minecraft:gold_ingot>)
-    .addItemOutput(<lightningcraft:ingot:0>)
-    .build();
-
-RecipeBuilder.newBuilder("electricium_block_recipe", "lightningcraft_infusion_multiblock", 300)
-    .addEnergyPerTickInput(1000)
-    .addItemInput(<ore:blockDiamond>)
-    .addItemInput(<minecraft:iron_block>)
-    .addItemInput(<minecraft:gold_block>)
-    .addItemOutput(<lightningcraft:metal_block:0>)
     .build();
 
 // Add weapons to Modular Machine
