@@ -8,8 +8,21 @@ import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Melting;
 import mods.astralsorcery.Altar;
 import mods.inworldcrafting.FluidToItem;
+import dj2addons.extrautils2.BiomeMarker;
 
 print("STARTING ExtraUtilities2.zs");
+
+// Blacklist Atum biomes in the Quantum Quarry
+BiomeMarker.excludeBiome(<biome:atum:limestone_crags>);
+BiomeMarker.excludeBiome(<biome:atum:dead_oasis>);
+BiomeMarker.excludeBiome(<biome:atum:deadwood_forest>);
+BiomeMarker.excludeBiome(<biome:atum:dried_river>);
+BiomeMarker.excludeBiome(<biome:atum:limestone_crags>);
+BiomeMarker.excludeBiome(<biome:atum:limestone_mountains>);
+BiomeMarker.excludeBiome(<biome:atum:oasis>);
+BiomeMarker.excludeBiome(<biome:atum:sand_dunes>);
+BiomeMarker.excludeBiome(<biome:atum:sand_hills>);
+BiomeMarker.excludeBiome(<biome:atum:sand_plains>>);
 
 // Snow Globe
 recipes.remove(<extrautils2:snowglobe>);
